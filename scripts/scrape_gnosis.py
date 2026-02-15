@@ -374,6 +374,9 @@ def extract_text(html: str, url: str) -> tuple[str, str, str]:
     # Remove excessive blank lines
     content = re.sub(r"\n{3,}", "\n\n", content)
 
+    # Remove the generic "Manichaean Scriptures" page heading
+    content = re.sub(r"^\s*Manichaean Scriptures\s*\n+", "", content)
+
     # Remove the title from content if it appears at the start
     if title:
         content = re.sub(
