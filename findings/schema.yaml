@@ -1,0 +1,151 @@
+# ============================================================================
+# Manichaean Analysis — Correspondential Findings Schema
+# ============================================================================
+#
+# This file defines the structure for per-text findings files.
+# Each analyzed text gets a YAML file in findings/texts/.
+#
+# The findings system captures what emerges when the Manichaean texts are
+# read through the correspondential lens — the same methodology applied
+# to the Nag Hammadi Library.
+#
+# Manichaeism is the critical bridge tradition: Mani explicitly synthesized
+# Zoroaster, Buddha, and Jesus; the Uyghur Khaganate adopted it as state
+# religion in the heart of "Great Tartary"; the Manichaean Psalm Book
+# converges with Swedenborg's Diary Entry 6077.
+#
+# ============================================================================
+
+# ---------------------------------------------------------------------------
+# Top-Level Text Metadata
+# ---------------------------------------------------------------------------
+# text_id:      Identifier matching the output filename
+# title:        Full text title
+# filename:     Matching filename in output/texts/[category]/
+# category:     Source category from gnosis.org
+#                 psalms_to_jesus | bema_psalms | separate_psalms |
+#                 kephalia | parthian_hymns | writings_of_mani |
+#                 parables | miscellaneous | augustine
+# status:       Analysis progress
+#                 not_started   — Not yet analyzed
+#                 in_progress   — Partially analyzed; more findings expected
+#                 complete      — Fully analyzed; all identifiable findings recorded
+# richness:     Overall correspondential density assessment
+#                 extraordinary — Saturated with correspondential content
+#                 rich          — Multiple deep correspondential patterns throughout
+#                 moderate      — Some clear correspondences; mixed with other material
+#                 sparse        — Few correspondential elements; mostly other register
+#                 resistant     — Does not yield to correspondential reading
+# summary:      Free-form overall assessment (multi-line)
+
+# ---------------------------------------------------------------------------
+# Finding Categories
+# ---------------------------------------------------------------------------
+# correspondence:
+#   A specific natural→spiritual mapping identified in the text.
+#   Example: "ships of light" = doctrinal vessels carrying truth
+#
+# explicit_statement:
+#   The text explicitly teaches or describes correspondence, influx,
+#   or discrete degrees. Passages where the text names its own method.
+#   Example: "The light shall go to the light" — identity principle stated
+#
+# structural_principle:
+#   A correspondential principle operating as organizing structure,
+#   not merely as isolated imagery.
+#   Example: Psalm of Thomas III — the entire ship allegory as the
+#   Ancient Word transmission narrative
+#
+# cosmological_mapping:
+#   Manichaean cosmological entities or structures mapping onto
+#   the correspondential architecture.
+#   Example: Five Shekhinas of the Father = discrete degrees of reception
+#
+# cross_reference:
+#   Connection to NHL tractates, Swedenborg, Zoroastrian tradition,
+#   or other ancient sources — evidence of shared substrate.
+#   Example: Psalms of Thomas ↔ Gospel of Thomas apostolic tradition
+#
+# transmission_evidence:
+#   Evidence bearing on the Ancient Word transmission chain:
+#   Zoroaster → Magi → Essenes → Jamesian community → Manichaeism
+#   Example: Book of Giants fragments at both Qumran and Turfan
+#
+# anomaly:
+#   Resists, complicates, or contradicts the correspondential reading.
+#   Honest reporting of where the framework does not fit.
+
+# ---------------------------------------------------------------------------
+# Framework Principles
+# ---------------------------------------------------------------------------
+# Each finding evidences one or more:
+#
+# correspondence              — Natural→spiritual mapping (the basic unit)
+# discrete_degrees            — Celestial/spiritual/natural stratification
+# influx                      — Divine truth/good flowing into natural forms
+# constant_state_variable_form — Same reality, different perceptual expressions
+# opposite_sense              — Same symbol meaning good or evil by context
+# regeneration                — The spiritual transformation process
+# proprium                    — Self-love claiming what it receives
+# divine_human                — The Grand Man; body-correspondence system
+# ancient_word                — Evidence for pre-literary correspondential knowledge
+# ruling_love                 — Core orientation determining everything else
+# accommodation               — Truth at different levels for different receivers
+# light_captivity             — Manichaean motif of light trapped in matter
+# call_and_response           — The awakening call from the realm of light
+
+# ---------------------------------------------------------------------------
+# Confidence Levels
+# ---------------------------------------------------------------------------
+# strong:     The text explicitly states or clearly demonstrates the finding
+# moderate:   Well-supported but requires some interpretive work
+# tentative:  Plausible reading but alternative interpretations exist
+
+# ---------------------------------------------------------------------------
+# Finding Structure
+# ---------------------------------------------------------------------------
+# - id:          Unique within text. Format: ABBREV-NNN (e.g., PT-001, BM-003)
+#   category:    One of the categories above
+#   passage:     The relevant text (quoted or summarized)
+#   location:    Line reference or section reference
+#   finding:     What was found — the observation itself (multi-line)
+#   principles:  List of framework principles this finding evidences
+#   confidence:  strong | moderate | tentative
+#   notes:       Additional context, cross-references, qualifications
+
+# ---------------------------------------------------------------------------
+# Abbreviations for Finding IDs
+# ---------------------------------------------------------------------------
+# PJ   — Psalms to Jesus (PJ-001, PJ-002, ...)
+# BM   — Bema Psalms (BM-001, BM-002, ...)
+# SP   — Separate Psalms (SP-001, ...)
+# KP   — Kephalia (KP-001, ...)
+# PH   — Parthian Hymns (PH-001, ...)
+# WM   — Writings of Mani (WM-001, ...)
+# PR   — Parables (PR-001, ...)
+# PT   — Psalms of Thomas (PT-001, ...)
+# MM   — Miscellaneous Manichaean (MM-001, ...)
+# AU   — Augustine secondary sources (AU-001, ...)
+
+# ---------------------------------------------------------------------------
+# Example Finding
+# ---------------------------------------------------------------------------
+# - id: PT-001
+#   category: correspondence
+#   passage: >
+#     "He evoked clouds of brightness, dropping down dew and life,
+#      He summoned a holy fire, giving a sweet burning."
+#   location: "Psalm I: Concerning the Light"
+#   finding: >
+#     Fire in positive sense — "sweet burning" = divine love as warmth.
+#     Clouds = natural truths that mediate between celestial source
+#     and the receiver (clouds contain water/truth, filter light/wisdom).
+#     Dew = truth gently received from the celestial degree.
+#   principles:
+#     - correspondence
+#     - opposite_sense
+#     - influx
+#   confidence: strong
+#   notes: >
+#     Compare Philip: "Truth did not come into the world naked."
+#     The clouds are the natural forms through which influx descends.

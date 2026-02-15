@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+secrets/
+
+# Cache
+cache/
+
+# Temp
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Output (PDFs are generated, not tracked)
+output/pdfs/
+
+# Large data
+*.pdf
