@@ -80,3 +80,61 @@ The Samaritan Targum interprets Waheb as "Love" (via the root y-h-b, to give).
 Summary of Findings
 You will not find the verse "Waheb in Suphah" in these texts. The Manichaean tradition generally rejected the specific history of the Jewish Torah (Moses's wars) in favor of the "Enochic" tradition (the history of the Giants and Watchers before the Flood).
 Therefore, the "War" mentioned in these texts is not the conquest of Moab, but the Primordial War of the First Man against the Darkness, and the "Giants" mentioned are the ancestors of the enemies Moses fought in the biblical context of Numbers 21.
+
+------------------------------------------------------------
+
+Additional notes from "The Bible" NotebookLM:
+
+The immense "drift" between these versions stems from a forensic reality: **Numbers 21:14–15** is likely a citation from a document that was already archaic, fragmentary, and contextually lost by the time the Masoretic, Greek, and Samaritan traditions were being standardized. Because the syntax of the original Hebrew fragment is elliptical (it lacks a main verb), translators were forced to invent context, leading to three distinct theological trajectories: a geographical list (Masoretic), a supernatural destruction (Septuagint), and a history of divine love (Samaritan).
+
+Here is the breakdown of the divergence based on the textual strata.
+
+### 1. THE SAMARITAN PENTATEUCH (SP): THE THEOLOGY OF LOVE
+**The Text:** "Wa'eb in Sufa, and the valleys of the Arenan..."
+**The Drift:** The English translation you quoted reflects the **Samaritan Targumic tradition** (the interpretive translation), which radically re-vocalizes the Hebrew consonants to create a theological bridge between the Exodus and the Conquest.
+
+*   **Wa'eb (והב):** The Masoretic Text treats this as a proper noun, a place name (Waheb). However, the Samaritan exegetical tradition derives this from the root *y-h-b* (יהב), meaning "to give" or "to love." Thus, the text is read not as a location, but as **"The Love"** or **"The Gift."**
+*   **Sufa (סופה):** While the MT implies a location (Suphah) or a storm (*sufa*), the Samaritan tradition connects this to *Yam Suph* (the Red Sea).
+*   **The Valleys (הנחלים):** The Hebrew *hanechalim* usually means "wadis" or "torrents." The Samaritan Targum reinterprets this as the active participle of the root *n-h-l* (to lead or guide).
+*   **The Resulting Narrative:** By applying these vocalizations, the Samaritans transform a dry geographical list into a history of salvation: **"With [God's] love in the Red Sea, and with those who pass the Arnon..."** This links the miracle at the Red Sea (the start of the Exodus) directly to the crossing of the Arnon (the entry into the Promised Land).
+
+### 2. THE SEPTUAGINT (LXX): THE SUPERNATURAL WAR
+**The Text:** "The Zoob he consumed with flame..." (*Τὴν Ζωὸβ ἐφλόγισεν*)
+**The Drift:** The Greek translators, confused by the obscure Hebrew phrase *b'suphah* ("in Suphah"), assumed a different root entirely.
+
+*   **Consumed with Flame:** The Greek uses *ephlogisen* (incinerated/burned). The translators likely read the Hebrew *suphah* not as a place or a storm, but associated it with the root *s-p-h* (ספה), meaning to consume or sweep away, often used in contexts of divine judgment or fire.
+*   **Zoob:** They transliterated "Waheb" as "Zoob," but because they added the verb "set on fire," the obscure location becomes the object of divine wrath. The text moves from a map coordinate to a description of supernatural warfare.
+
+### 3. THE MASORETIC TEXT (MT): THE GEOGRAPHIC FRAGMENT
+**The Text:** "Waheb in Suphah, and the wadis of Arnon..."
+**The Drift:** The Masoretes preserved the *lectio difficilior* (the more difficult reading).
+
+*   **Syntactic Brokenness:** The text preserves the prepositional object marker *et* (אֶת־וָהֵב) but lacks the verb. It reads like a sentence fragment: "...[verb missing] Waheb in Suphah..."
+*   **Geography over Theology:** Unlike the Samaritan and Greek traditions, the Masoretic vocalization treats these strictly as toponyms (place names) describing the borders of Moab. It refuses to smooth out the grammar by inserting theological verbs.
+
+### FORENSIC ANALYSIS OF THE "DRIFT"
+
+The immense variation here is a diagnostic marker of **textual antiquity**. When a text is clear, scribes transmit it accurately. When a text is archaic, poetic, or fragmentary—as the "Book of the Wars of YHWH" clearly was—scribes become interpreters.
+
+1.  **Root Confusion:** The drift occurs because the consonants *w-h-b* (Waheb) and *s-w-p* (Suphah) are polysemic. If you vocalize them one way, they are places (MT). If you derive them from roots for "giving" and "sea," they become "Love at the Red Sea" (Samaritan). If you derive them from roots for "consuming," they become "War by Fire" (LXX).
+2.  **Theological Bias:**
+    *   The **Samaritan** version harmonizes the narrative to emphasize God's continuous guidance (*n-h-l*) from Egypt to Canaan.
+    *   The **Greek** version emphasizes the omnipotence of the Lord in war (igniting enemies).
+    *   The **Masoretic** version retains the "jagged" nature of the source, preserving a fragment of a lost geopolitical document defining borders.
+
+The "drift" is essentially a disagreement on whether to treat these words as **names of places** or **descriptions of actions**. The Samaritan tradition, reflected in the translation "which he caused them to inherit," actively converts nouns into verbs to create a coherent theological sentence out of a fragmented geographical list.
+
+---
+
+Based on the **Samaritan Pentateuch** (SP), which retains the same consonantal text as the Masoretic Text for this passage but differs in pronunciation and interpretation (as reflected in your English translation), here is the Hebrew text in consonants only:
+
+**את והב בסופה ואת הנחלים ארנון**
+**ואשד הנחלים אשר נטה לשבת ער ונשען לגבול מואב**
+
+### Breakdown of the Samaritan Reading:
+*   **את והב בסופה** (*Et-Wa'eb b'Sufa*) – "Wa'eb in Sufa"
+*   **ואת הנחלים ארנון** (*W'et-annā̊lǝm Arenan*) – "and the valleys of the Arenan"
+*   **ואשד הנחלים** (*W'ashid annā̊lǝm*) – Interpreted in the Samaritan tradition as "which he caused them to inherit" (deriving *hannechalim* from *n-h-l*, "to inherit/bestow", rather than "streams").
+*   **אשר נטה** (*Ešar nata*) – "and which extends"
+*   **לשבת ער** (*La-shebet Ar*) – "toward the dwelling of a city" (Samaritans interpret the proper name *Ar* as the common noun *Ir*, "City").
+*   **ונשען לגבול מואב** (*W'nish'an lagbul Muwwab*) – "and leans to the border of Muwwab"
