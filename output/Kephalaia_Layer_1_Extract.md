@@ -301,6 +301,25 @@ Yet, [n]ow, authority has been taken from the sin in the organs of the body. The
 
 ---
 
+## Chapter 62 — The Three Rocks
+*(K.155,6–29)*
+
+> **[EDITORIAL NOTE]**: This chapter was initially excluded from the Layer 1 extract because the Third Rock is attributed to "Jesus, the glorious one." However, in Mani's system, "Jesus" (Isa) is a title for the Light Nous — a cosmological principle, not a NT-layer interpolation. The teaching itself — three modes of absolute stability at three discrete degrees — is pure correspondential cosmology. Restored to Layer 1 on 2026-02-16.
+
+### The Three Modes of Absolute Stability
+
+Three great rocks, which exist, were appointed by the greatness. They were set in these outer worlds.
+
+**The first rock** is the Pillar of Glory, the Perfect Man, which was summoned by the glorious Ambassador. He set it in this zone. He brought forth its base from the earth to heaven. It bore up under the entire universe, and became first of all the weight-carriers in its powers. In its firmness it has been set upright, and has made fast every thing above and below.
+
+**The second** great and glorious rock is the new earth of light, which was set upon the earth of darkness. It has squashed the fastenings of the five storehouses of death. It has established firmness, with great firmness, over and beyond the earth of darkness. It has flattened, crushed and fixed the root of death.
+
+**The third rock** is the great thought, which was summoned from Jesus, the glorious one. He set it in the holy church. The church gathered in upon it, and has lived in it. It has stood firm, with a true fixity, for ever.
+
+These are the three great rocks, they that have come forth in great confidence, in three great and honoured places. They were appointed and distributed in three great places of these selfsame worlds. They were made fast according to the will of the greatness.
+
+---
+
 ## Chapter 70 — The Body Constructed After the Pattern of the Universe
 *(K.169–175)*
 
