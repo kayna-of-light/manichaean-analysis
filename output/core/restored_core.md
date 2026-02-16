@@ -10,7 +10,7 @@
 
 **Chapters analyzed**: 7
 **Chapters with core content**: 7
-**Core text words**: ~7,712
+**Core text words**: ~7,784
 
 ## Chapter 0
 ### Introduction
@@ -240,7 +240,9 @@ Again, these three exist in the elements: happiness, wis[d]o]m and power. The ha
 ## Chapter 38
 ### Concerning the Light Mind and the Apostles and the Saints
 
-*Core teaching dominates: a sustained macrocosm–microcosm correspondence (universe-as-man; five sons/qualities; watch-district rebellions; Light Mind’s work in the body; binding/releasing of five members; new man). Later layers frame the discourse with question/answer formulas and end with a self-laudatory apostolate section plus community/leadership language. The only seam-flagged paragraph (¶34) is treated as a pastoral/institutional editorial graft per instructions.*
+*The chapter is built in a Q&A frame, but it contains a long, systematic cosmological–anthropological mapping that is plausibly old (macrocosm as human; five-and-sixfold structures; watch-districts; process mechanics of mingling and revolt; microcosmic binding/loosening of the five intellects vs. the five powers of the Dark Substance). The final third drifts strongly into institutional ‘church/teachers/presbyters’ and Mani self-authorization, matching the chapter’s editorial-fatigue signal; those portions are later pastoral/frame material. One paragraph (¶34) is seam-flagged and treated as a late editorial bridge despite containing cosmological statements.*
+
+You have told us that the Light Mi[nd] is this one who shall come and assume the saints. [You sai]d it to us like this: He too is one among the gods [...] many gods are with him. You have also told us: [W]hen he enters withi[n the body of] the flesh and binds the ol[d ma]n with his five counsels, he [set]s his five [couns]els upon him in the five limbs [of his] body.
 
 [So], no[w], where is he? In that the old man is chained in the body! For I see how rebellions arise there despite his bondage, from time to time.
 
@@ -250,7 +252,9 @@ The third thing I want you to recount to [me ... ] a holy one is the Mind, and h
 
 Fourthly: If truly the Light Mind exists in [the s]aints, why is his likeness not displayed to us, the way that he is?
 
-Then speaks the apostle to him: All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re ... ] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [...] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [...] upon the head of the Porter. His [...] from the [...] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re ...] and the entire zone that belongs [...]
+All that you have unveiled you have [...] in our presence. Yet, I wanted to kno[w ... the] L[igh]t Mind, the way that he is.
+
+All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re ... ] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [...] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [...] upon the head of the Porter. His [...] from the [...] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re ...] and the entire zone that belongs [...]
 
 ⟨p.91⟩
 His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [...] the vessels of the great fire. His [...] of darkness. His gall is the [... His] great intestine is the breadth of the great [...] of the worlds. His veins [...] all [the spri]ngs and wells. His e[yes (?) ...] His feet are his [...]
@@ -268,7 +272,7 @@ Furthermore: Jesus the Youth was set there; who is the image of the living word,
 
 He has made strong these camps, those above and those below [...], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
 
-And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The sin abor[te]d, [it t]angled i]n with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [...] in the third firmament that is above the watch-t[ower ...] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
+And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Dark Substance abor[te]d, [it t]angled i]n with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [...] in the third firmament that is above the watch-t[ower ...] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
 
 Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [...] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [... ] to it.
 
@@ -283,43 +287,43 @@ On account of the earthquake that happened in the watch of the Keeper of Splen[d
 
 Conversely, because of the treachery and the uprising that happened in the watch of the great King of Honour, which is the watchers who came down to earth from the heavens; four angels were called upon about them. They bound the watche[r]s with an eternal chain, in the prison of the blackened ones (?). [Th]ey obliterated their children from upon the earth.
 
-[Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [...] the prayer of the five sons. He assumed them [...] the abortions. He fastened them beneath the [...] the mind of Adam.
+[Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [...] the invocation of the five sons. He assumed them [...] the abortions. He fastened them beneath the [...] the mind of Adam.
 
 ⟨p.94⟩
 Also, because of the earthquake that happened in these three earths, and in that the paths were hindered and the springs of wind and water and fire were impeded, Jesus cast himself down. He assumed Eve; and he straightened the tracks of the [win]d, the water, and the fire. He opened the springs for them, and he set [in ord]er the path of their ascent.
 
 Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [...] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [...] rest.
 
-Then speaks the a[po]stl[e] to him: Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [...]. Uprisings have happened, and treachery, in them. The [...] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
+Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [...]. Uprisings have happened, and treachery, in them. The [...] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
 
-So also is this body! A mighty power lives here, even if it is small in its stature. Nevertheless, sin dwells within, and the old man who is lodged in it. Certainly he is cruel, with great cunning; until the Lig/ht Mind finds how to humble this body, and drive it [according to] his pleasure.
+So also is this body! A mighty power lives here, even if it is small in its stature. Nevertheless, the Dark Substance dwells within, and the old man who is lodged in it. Certainly he is cruel, with great cunning; until the Lig/ht Mind finds how to humble this body, and drive it [according to] his pleasure.
 
-Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. Sin raises [up], from time to time, its agitations in the body.
+Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. The Dark Substance raises [up], from time to time, its agitations in the body.
 
 Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [...] they have acted first with a righteous judgement.
 
 ⟨p.95⟩
 And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [...] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [...]
 
-(Sin) bou]nd (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
+(The Dark Substance) bou]nd (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
 
-(Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [...], pronouncing to the soul and continually leading it on to every evil thi[n]g, to all the sins of lust, to the worship of idols, to erroneous opinions, to humili[ation]; in the humiliation of slavery! As it is set fast, wors[hipping] the things that [...] will not remain; making obeisance [...] idols of wood and gold and silver [...] worshipping beasts that are unclean and polluted! They are ugly in their appearances and their forms.
+(The Dark Substance) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [...], pronouncing to the soul and continually leading it on to every evil thi[n]g, to all the sins of lust, to the worship of idols, to erroneous opinions, to humili[ation]; in the humiliation of slavery!
 
 ⟨p.96⟩
-(The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [...] itself, being wicked [...] its own light [...]
+(The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to invoke him, nor call up to him. It became hostile to its father [...] itself, being wicked [...] its own light [...]
 
-The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the sin in the skin.
+The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the Dark Substance in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the Dark Substance in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the Dark Substance in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the Dark Substance in the skin.
 
 ⟨p.97⟩
-This is how he shall release the members of the soul, and make them free from the five members of sin. Conversely, these five members of sin, which were loose, he shall bind them.
+This is how he shall release the members of the soul, and make them free from the five members of the Dark Substance. Conversely, these five members of the Dark Substance, which were loose, he shall bind them.
 
-He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of sin; and he adds to it his word, so that his [...] becomes nourisher and strengthener [...]
+He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of the Dark Substance; and he adds to it his word, so that his [...] becomes nourisher and strengthener [...]
 
 Now, when he shall perf[ect ... the tw]elve members. This [is how ...] and his wisdom. His [...] becomes righteous, as he perf[ects ...] While formerly he was running [...] but instead of this, now he runs [...] his road and his path and his [...] also [he mounts up] to the heights, to the great aeons [...] thus the old man is bound in the [...] and his lust, his [...] his foolishness in these five members of the bo[dy ...] the dark spirit is imprisoned with them in a bond and in severe misery.
 
-Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [...] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [...], thus sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
+Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [...] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [...], thus the Dark Substance is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
 
-There are occasions when sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [...]
+There are occasions when the Dark Substance shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [...]
 
 [T]hen, have I taught you, and opened your (sg.) [eyes], as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [...] of the [Li]ght [M]ind.
 
@@ -330,76 +334,76 @@ Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are g
 [Even so] the gods in the outer [z]one: they are transcendent and purified, they are set [f]a[st in] the mingling of the totality, (but) are not defiled. [This too is like the] Light [Mind]. While he is placed in hi[s ...]
 
 ⟨p.100⟩
-Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of sin. He limits them and distributes them out. He sets them down at his pleasure.
+Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of the Dark Substance. He limits them and distributes them out. He sets them down at his pleasure.
 
 **Temporal observations:**
-- ¶1: Hagiographic/Q&A wrapper: ‘Once again… a disciple questioned the apostle…’ plus recap of prior teaching; serves as narrative container rather than impersonal exposition.
-- ¶2: Substantive problem-question about mechanism (rebellions despite binding) stated without reverential framing; functions as part of the technical teaching sequence.
-- ¶3: Doctrinal/mechanical question (great god in small body) that cues core explanation; no frame formula.
-- ¶4: Substantive doctrinal query about purity/defilement; part of teaching agenda rather than editorial praise.
-- ¶5: Mechanistic question (visibility/likeness) that leads into the ‘watchers are not visible’ correspondence later; no frame.
-- ¶6: Transitions to biographical/apostolate topic (‘your apostolate… they oppress and persecute you’) which belongs to later hagiographic compilation interests.
-- ¶7: Pure entreaty formula (‘I entreat you… persuade me’) typical of Kephalaia Q&A frame.
-- ¶8: Self-referential disclosure to ‘my church’ in direct speech; editorial/hagiographic setting rather than cosmological exposition.
-- ¶9: Dialogue continuation (‘This disciple says…’) serving narrative scaffolding.
-- ¶10: Oratorical flourish (‘give vision… living fountain…’) in direct address; functions as rhetorical preface, not system mapping.
-- ¶11: Impersonal systematic macrocosm-as-man correspondence with numbered/cosmographic anatomy; classic core vehicle.
-- ¶12: Continuation of structured universe–body mapping; no institutional overlay.
-- ¶13: Moves from mapping to the five-gods/guardian structure; still schematic cosmology despite lacunae.
-- ¶14: Enumerative placement of cosmic officials as intellectual faculties in firmaments/wheels; impersonal hierarchy description is core.
-- ¶15: Numbered structural teaching (five→six; two hexads) with technical entities; core.
-- ¶16: System placement of the Mind/Pillar of Glory/Perfect Man in macrocosm; core cosmological identity statement.
-- ¶17: ‘Jesus the Youth’ as a cosmic functionary (not a Gospel citation) in a systematic list; belongs to core cosmological hierarchy.
-- ¶18: Institutionless description of watch-district security mechanics; part of cosmological process exposition.
-- ¶19: Cosmic-history mechanics (mixing, descent, forming trees/sea uprising) tied to named beings; impersonal process narrative within system.
-- ¶20: Systemic ‘watch-district’ rebellion account anchored to cosmological offices; no NT citation; core mythic-historical mechanism.
-- ¶21: Core portion is the cosmic rebellion leading to Adam/Eve and lust-flooding; the sudden ‘churches/apostles/righteous’ persecution generalization looks like later communal polemic stitched onto the mythic account.
-- ¶22: Tight structural correspondence: counsel/three wheels/three earths with ascent-path mechanics; core cosmological process.
-- ¶23: Cosmic infrastructure disturbance at the Porter/foundation level; continues watch-district sequence; core.
-- ¶24: Named cosmic response (Pillar of Glory) to a specific cosmological event; mechanism-focused; core.
-- ¶25: Corrective cosmic administration (four angels binding watchers) described as process; core mythic mechanism.
-- ¶26: Jesus as cosmic agent dispatched in response to abortions/Adam; embedded in five-sons prayer language; not a Gospel vector; core.
-- ¶27: Mechanistic repair of cosmic ascent-paths tied to elements; systematic cosmology; core.
-- ¶28: Continues cosmic infrastructure repair motif (fastenings beneath Porter); core process narrative.
-- ¶29: Summative, impersonal explanation of recurrent uprisings in watch-districts; sets up microcosm analogy; core.
-- ¶30: Macrocosm→microcosm correspondence (‘So also is this body!’) with Light Mind vs old man mechanics; core teaching voice.
-- ¶31: Explicit correspondence of watch-districts to human body; technical analogy; core.
-- ¶32: Theodicy-like cosmological governance statement framed as mechanism (‘permit… for a moment… then seize’); not institutional; core.
-- ¶33: Explains ‘great in small’ via cosmological analogy (gods enclosed; taproot simile); impersonal explanatory vehicle; core.
-- ¶34: Seam-flagged ‘Now, also…’ paragraph; despite cosmological content, treated as an editorial graft per instructions (bridge connective + application-style transition).
-- ¶35: Five-fold microcosmic mapping of intellectual qualities to body materials; classic core numbered-correspondential structure.
-- ¶36: Systematic five-on-five overlay (evil powers on soul powers) and angelic authorities; exhortative examples (idols) remain embedded within mechanism, not church rules; overall core didactic.
-- ¶37: Psychological-cosmological consequence (forgetting essence/kindred) stated as mechanism of bondage; core anthropogony/psychology.
-- ¶38: Highly structured reversible binding/releasing of the five members; technical core soteriology.
-- ¶39: Concise summary of five-fold exchange; core mechanism.
-- ¶40: Five virtues mapped onto five faculties in a ‘new man’ construction; systematic correspondence is core vehicle.
-- ¶41: Continues systematic numeration (twelve members) plus ascent mechanics and binding of old man/dark spirit; core despite lacunae.
-- ¶42: Summative five-virtue reign and recurring affliction explanation; remains within the mechanistic model; core.
-- ¶43: Process description of relapse (sin clouds faculties); psychological mechanism; core.
-- ¶44: Institutional church offices (‘teachers… presbyters… gather’) and corrective procedure; operational community material rather than cosmological mechanism.
-- ¶45: Continues communal discipline (‘rebuke… edification… brethren/helpers’) and staged relapse in a moralizing register; institutional overlay dominates.
-- ¶46: Behavioral symptoms and social separation (‘eat… drink… alone’) as community guidance; not macro/microcosmic exposition.
-- ¶47: Explicit ‘in the church’ escalation and intervention by ‘wise ones of the church’; institutional discipline register.
-- ¶48: Moral encouragement sentence; part of pastoral relapse/exhortation block.
-- ¶49: Relapse described chiefly in terms of attitude to ‘teacher/instructor/church/brethren’; institutional social bonds foregrounded.
-- ¶50: Separation-from-church scenario and social τύπος (‘worldly men’) in admonitory voice; fits later pastoral drift.
-- ¶51: Re-anchors the analogy back to cosmological watch-district disturbances; returns to core explanatory frame (zone/camps/gods).
-- ¶52: Direct macro–micro correspondence on invisibility of watch-keepers/Mind; core.
-- ¶53: Explains ‘great becoming small’ via cosmological watch-keeper analogy; core teaching logic.
-- ¶54: Purity-without-defilement in mingling; continues doctrinal mechanism answering the disciple’s purity question; core.
-- ¶55: Mechanistic description of Mind’s governance over bodily deliberations; impersonal process language; core.
-- ¶56: Institutional category (‘elect one’) and devotional ascent-to-Father exhortation; aligns with second-half pastoral drift and community spirituality rather than structural cosmology.
-- ¶57: Closure-like didactic epigram in direct address (‘I have taught you… open eye’) functioning as rhetorical wrap-up.
-- ¶58: Transition marker to autobiographical ‘my leadership’ topic; editorial structuring rather than core cosmology.
-- ¶59: Self-laudatory biography (‘I, a single Manichaios… submit to me’) typical of hagiographic apostolate section.
-- ¶60: Boast of conquering cities ‘by the word of God’ and fame; hagiographic/apologetic, not cosmological mapping.
-- ¶61: Continues apologetic self-defense against kings/nobles; biographical frame layer.
-- ¶62: Claims unique liberating work for ‘children/brothers/kin’; community-founder rhetoric.
-- ¶63: ‘Breastplate of wisdom’ protecting ‘my children’; institutional/hagiographic boast.
-- ¶64: Programmatic church-building claims (‘elect[ion]… apostle… church… appointed… sent’)—editorial apostolate propaganda.
-- ¶65: Explicit comparison to ‘former apostles… apart from Jesus only’ uses apostolic/Jesus-in-flesh register dependent on Christian/apostolic tradition; entered via Christian synthesis.
-- ¶66: Grandiose ‘door opened by me’ to gods/angels/mankind; hagiographic summation of Mani’s role.
-- ¶67: Formulaic disciple response/praise and promise to keep ‘faith/commandments’; closing frame typical of compiled Kephalaia chapters.
+- ¶1: Core teaching embedded in a disciple-question wrapper. The fivefold binding of the old man by the Light Mind in the body reads like substrate correspondential mechanics; the only late marker is the narrative setup and 'apostle' attribution (Rule 12).
+- ¶2: Substantive cosmological question about the paradox of continued uprisings despite binding; no citation/church language; continues the technical ‘how it works’ line.
+- ¶3: Substantive problem-question (great deity in small body) that cues the correspondential explanation; no NT/church markers.
+- ¶4: Substantive doctrinal question about purity/defilement interface; ‘holy one’ here functions descriptively, not as ecclesial title.
+- ¶5: Substantive inquiry about invisibility/appearance of the Light Mind; still within technical teaching prompts.
+- ¶6: Question about the speaker’s ‘apostolate’ is part of the Kephalaia hagiographic agenda and leads into Mani self-praise later; not part of the older cosmological system.
+- ¶7: Pure entreaty formula ('I entreat you') without teaching content—standard dialogue frame.
+- ¶8: Church-institution reference ('declared to my chu[r]c[h]') and revelatory self-assertion; editorial/community voice.
+- ¶9: A transitional question retaining substantive focus on the Light Mind, but wrapped in dialogue attribution.
+- ¶10: Dialogue attribution ('Then the apostle says') plus rhetorical flourish about giving vision/fountain; functions as performative frame rather than system exposition.
+- ¶11: Strong core signal: systematic macrocosm-as-human mapping with cosmographic parts (firmaments, zodiac, three earths, Porter). The ‘apostle’ wrapper is late.
+- ¶12: Continues the impersonal, systematic body–cosmos correspondences; no institutional/citation language.
+- ¶13: Still in structural exposition (five gods fastened; Living Spirit/Ambassador/guardians). Note: ‘sinner’ likely renders the cosmic Dark Substance contextually, but too lacunose to safely transform here.
+- ¶14: Core: systematic mapping of five intellectual qualities onto named cosmic watch-keepers (mind/thought/insight/counsel/consideration) and their stations (firmaments, three images/wheels).
+- ¶15: Core: explicit five→six structural expansion (intellectuals + summons/obedience) tied to First Man/Living Spirit—classic systematic layer.
+- ¶16: Core: cosmological identification of the great Mind with Pillar of Glory/Perfect Man in systematic exposition.
+- ¶17: Despite elevated ‘christian’ score, this is not a Gospel citation but a named Manichaean cosmic being placed in the system (sixth function: summons/obedience). Treated as core (explicitly allowed in instructions).
+- ¶18: Core process language about camps/watch-district security; continues macrocosmic mechanics.
+- ¶19: Core cosmic-history mechanics of mingling/rebellion across stations. Vocabulary transformation audit: 'sin'→'the Dark Substance' (personified cosmic agent that mingles with light and triggers uprisings).
+- ¶20: Core: watch-district rebellions narrated as cosmological causation (watchers, descent, disclosure of crafts). No NT citation formula.
+- ¶21: Core mythic account (abortions/Adam-Eve/lust) is integrated into the watch-district cycle; the sudden jump to ‘churches/apostles’ is a register shift typical of later editorial aktualisierung.
+- ¶22: Core: systematic tie of counsel/King of Glory to three wheels and elemental ascent mechanics.
+- ¶23: Core: Porter and cosmic ‘fastenings/foundation’ mechanics; no institutional material despite modest pastoral vocabulary counts.
+- ¶24: Core: causal linkage between cosmic disturbance and emergence/function of Pillar of Glory.
+- ¶25: Core: mythic-cosmological corrective action (four angels, eternal chain, prison) within the watch-district schema.
+- ¶26: Core: Jesus as cosmic agent (not Gospel citation) acting by ‘invocation of the five sons’. Vocabulary transformation audit: 'prayer'→'invocation' (cosmic functional context, not devotional practice).
+- ¶27: Core: elemental ascent infrastructure repaired by a named cosmic rescuer; systematic process voice.
+- ¶28: Core: continued ‘fastenings’ mechanics and descent/ascent actions; no NT citation.
+- ¶29: Core summary of the macrocosmic watch-district pattern, wrapped in ‘apostle’ attribution.
+- ¶30: Core microcosm turn: body as watch-district, Light Mind vs. old man. Vocabulary transformation audit: 'sin'→'the Dark Substance' (paired with ‘old man’ as indwelling hostile power; cosmic antagonism, not moral exhortation).
+- ¶31: Core: explicit macro/micro correspondence (outer watch-keepers ↔ Mind in flesh). Transformation audit: 'Sin'→'the Dark Substance' (cosmic agent ‘raises agitations’).
+- ¶32: Core theodicy-like mechanism in impersonal explanatory voice (permission for a moment; seizure after). No church rules/citations.
+- ¶33: Core analogical explanation (taproot simile) for ‘great in small place’; technical correspondential rhetoric, not NT citation.
+- ¶34: Seam flag present. Bridge connective ‘Now, also’ marks an editorial graft; despite cosmological phrases, the whole paragraph is treated as the editor’s transition into the microcosmic ‘sin/body’ teaching block (Rule: seam paragraphs are not MIXED).
+- ¶35: Core: classic fivefold body map of intellect faculties to bodily substrates in a binding schema. Transformation audit: implied agent '(Sin)'→'(The Dark Substance)' (cosmic builder/binder context).
+- ¶36: Core substrate is the five-powers-over-five-faculties mechanism (Az/Dark Substance). The excised tail shifts into generalized anti-idolatry invective (could be later community polemic); uncertain, but the register is less technical and more sermonic. Transformation audit: '(Sin)'→'(The Dark Substance)' in the five-powers schema; left moral 'sins of lust' unchanged inside retained text as it may be embedded in the older explanation of misdirection.
+- ¶37: Core: psychological-cosmological effect (forgetting essence/kindred) in impersonal explanatory mode. Transformation audit: 'pray'→'invoke' (cosmic calling-up context).
+- ¶38: Core: precise fivefold reversal (release light-faculty; bind dark-faculty) — hallmark substrate mechanics. Transformation audit: '[of the sin in]'→'[of the Dark Substance in]' (personified five-member adversary).
+- ¶39: Core summary of the binding/loosening exchange. Transformation audit: 'sin'→'Dark Substance' (explicit five-members context).
+- ¶40: Core: fivefold virtues mapped onto faculties; constructive ‘new man’ process as technical transformation. Transformation audit: final 'word of sin'→'word of the Dark Substance' (cosmic adversary as source of corrupt utterance).
+- ¶41: Core: continues transformation mechanics (twelve-member perfection; ascent; binding of old man/dark spirit). No institutional voice.
+- ¶42: Core: fivefold reign schema + continuing episodic affliction; cosmic agent is the Dark Substance. Transformation audit: 'sin'→'Dark Substance' (imprisonment language).
+- ¶43: Core: microcosmic mechanics of ‘clouding’ faculties by the Dark Substance (process description, not rules). Transformation audit: 'sin'→'Dark Substance' (active hostile force).
+- ¶44: Institutional church response (‘in the church, the teachers… presbyters’)—community governance layer, not substrate cosmology.
+- ¶45: Continues ecclesial discipline (‘rebuke… edification… brethren/helpers’) and moral correction scenario; institutional/pastoral extension of the faculty-clouding teaching.
+- ¶46: Behavioral signs (separating from teacher, solitary eating/walking) are community pastoral diagnostics; not cosmological system exposition.
+- ¶47: Explicit ‘church’ setting and leaders gathering; moral exhortation and communal correction—later institutional layer.
+- ¶48: General pastoral encouragement about being victorious over sin; no mechanical mapping, embedded in the church-discipline sequence.
+- ¶49: Church-affective language (‘love of the church’, hatred of brethren) belongs to communal moral psychology; not the older cosmological register.
+- ¶50: Separation from church; Mind returns to the ‘apostle who sent him’—institutional framing of apostolic authority and membership boundaries.
+- ¶51: Returns to macro/micro correspondence (zone/camps ↔ Light Mind disturbances). Despite rhetorical address, it resumes the technical watch-district model.
+- ¶52: Core: invisibility explained by correspondence to invisible watch-keepers.
+- ¶53: Core: systematic analogy answering ‘great in small’ via contortion/condescension of cosmic beings into assigned tasks.
+- ¶54: Core: purity-in-mingling principle applied by correspondence to Light Mind in flesh.
+- ¶55: Core: functional description of governance over bodily watch-districts. Transformation audit: 'sin'→'Dark Substance' (beguilements as cosmic adversary action).
+- ¶56: Explicit elect-category and devotional ascent language (‘elect one… ascending to the Father, the God of truth’) reads like community spirituality instruction rather than the older mechanical schema; matches second-half pastoral drift.
+- ¶57: Closing-style saying to the disciple (‘whoever has an open eye…’) plus restoration bracket indicates a didactic wrap-up; functions as editorial closure to the teaching unit.
+- ¶58: Transition to Mani’s ‘work/leadership’—hagiographic shift away from cosmological system.
+- ¶59: Autobiographical self-praise (‘single Manichaios… submit to me’) is compilation hagiography.
+- ¶60: Missionary triumph narrative (‘conquered… by the word of God… bless my name’)—hagiographic, not system exposition.
+- ¶61: Continues autobiographical apologetic about kings/nobles; late self-legitimating layer.
+- ¶62: Ethical-social ‘freedom to children/brothers/kin’ resembles community benefit claims; not cosmological mapping.
+- ¶63: Further hagiographic boasting (‘breastplate of wisdom… my children’); institutional charisma.
+- ¶64: Explicit ‘elect[ion]… emblems of authority… apostle… church’—institution-building layer.
+- ¶65: Comparative claim about ‘former apostles… apart from Jesus only’ uses Christian-apostolic hierarchy language that enters via Christian tradition; this is not the cosmological ‘Jesus the Youth’ placement but a salvation-history comparison.
+- ¶66: Grand concluding proclamation (‘door opened by me…’) continues hagiographic self-authorization.
+- ¶67: Formal closure: disciples rejoice/thank/promise perseverance—standard Kephalaia ending frame with commandments/faith vocabulary.
 
 ---
 
