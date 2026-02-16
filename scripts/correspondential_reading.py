@@ -143,19 +143,19 @@ editorial choices that obscure the original register.
 
 ### Vocabulary Register
 
-The text you receive has been restored to substrate register by the \
-extraction pass. The non-bracket text should already be in the register \
-of the Persian/Iranian cosmological tradition (or deeper, Bene Qedem).
+The text you receive preserves the Coptic translation vocabulary. \
+Personified cosmological entities are capitalized (Sin, Darkness) to \
+mark them as agents rather than moral categories.
 
-When you fill brackets, maintain the same register as the surrounding \
-text. Match the vocabulary the extraction pass established.
+When you fill brackets, maintain the same vocabulary and register as \
+the surrounding text.
 
 ### Previous Editors\u2019 Choices
 
-Existing bracket fills [text] from Gardner and Funk may still carry \
-Coptic/Christian register. Evaluate each against the substrate register \
-of the surrounding restored text. Accept when it fits. Adjust when the \
-correspondential logic and the tradition demand it. Note changes.
+Existing bracket fills [text] from Gardner and Funk are part of the \
+scholarly apparatus. Evaluate each against the correspondential logic \
+and the context. Accept when it fits. Adjust when the correspondential \
+reasoning demands it. Note changes.
 
 ## METHOD: CORRESPONDENTIAL READING
 
