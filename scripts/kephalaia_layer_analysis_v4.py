@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Kephalaia Layer Analysis v4 — Clean-Source Textual Critical Analysis
+Kephalaia Layer Analysis v4 — Temporal-Axis Textual Critical Analysis
 ====================================================================
 
 Reads from LLM-cleaned structured JSON (output/cleaned/chapters/ch_*.json)
@@ -10,28 +10,42 @@ Previous versions (v1–v3) fought raw OCR to separate these layers with regex.
 Now the LLM pipeline has done that work — this script applies the analysis
 to CLEAN data, eliminating noise from parsing heuristics.
 
+CRITICAL METHODOLOGICAL PRINCIPLE:
+  The primary axis of discrimination is TEMPORAL — "when did this language
+  enter this text?" — not THEMATIC ("does it contain cosmology vs. ethics?").
+  Cosmological content IS correspondential. They are the same thing at
+  different levels of description. The five sons, the ships, the body-universe
+  maps ARE correspondences. The vocabulary categories detect different MARKERS
+  but the composite score groups them on a temporal axis:
+    - TEACHING SUBSTRATE (positive): cosmological + correspondential +
+      persian_substrate — all indicators of older material
+    - INSTITUTIONAL OVERLAY (negative): pastoral + nt_christian +
+      hagiographic — all indicators of later editorial layers
+
 Analytical pipeline:
   1. Load cleaned chapters (teaching_text, gardner_synopsis, footnotes)
-  2. Vocabulary profiling across 6 categories (on teaching text only)
+  2. Vocabulary profiling across 6 marker categories (on teaching text only)
   3. TF-IDF vectorization + unsupervised clustering
   4. Paragraph-level segmentation within teaching text
   5. Editor fatigue detection (intra-chapter vocabulary shift)
   6. Gardner editorial flag extraction (from isolated synopsis)
   7. Footnote-based citation analysis (from structured footnote objects)
   8. Formulaic/structural pattern detection
-  9. Composite scoring and tier classification
+  9. Temporal composite scoring and tier classification
   10. Core substrate reconstruction
 
-Layers identified:
-  Layer 1 (Correspondential Core): Original cosmological teaching — five-fold
-      systems, body-universe maps, discrete degree chains, call-and-answer,
-      light-dark cosmology pre-dating Mani.
-  Layer 2 (Pauline/Christian Frame): Mani's Marcionite Christianity overlay —
-      docetic Christology, Pauline vocabulary, NT citations.
+Temporal layers (from oldest to latest):
+  Layer 1 (Teaching Substrate): Systematic correspondential-cosmological
+      teaching — five-fold systems, body-universe maps, discrete degree
+      chains, call-and-answer, numbered enumerations. Some predates Mani;
+      some is Mani's own systematization of ancient material.
+  Layer 2 (Christian Overlay): Mani's Marcionite Christianity framing —
+      NT citations, Pauline vocabulary, Jesus Splendour Christology,
+      Gospel allusions. 3rd century CE.
   Layer 3 (Hagiographic Frame): Community-added biographical material —
-      formulaic Q&A, titles of reverence, miracle claims.
-  Layer 4 (Pastoral/Ecclesiastical): Church instruction — catechumen rules,
-      fasting, alms, commandments.
+      formulaic Q&A, titles of reverence, miracle claims. 3rd-5th century.
+  Layer 4 (Institutional Layer): Church instruction — catechumen/elect
+      distinctions, pastoral rules, fasting, alms, mission. Post-Mani.
 
 Output: output/analysis/v4/
 """
@@ -80,7 +94,7 @@ VOCAB = {
     "cosmological": {
         "phrases": [
             "first man", "living spirit", "mother of life", "father of greatness",
-            "third ambassador", "jesus the splendour", "jesus splendour",
+            "third ambassador",
             "light mind", "virgin of light", "maiden of light", "great builder",
             "beloved of the lights", "king of honour", "king of honor",
             "adamas of light", "adamant of light",
@@ -91,6 +105,7 @@ VOCAB = {
             "ships of light", "ship of living waters", "ship of living fire",
             "land of darkness", "realm of light", "realm of darkness",
             "land of light", "land of rest", "land of the living",
+            "place of rest",
             "garment of light", "garment of fire", "garment of wind",
             "garment of water", "living water", "living ones",
             "new earth", "great fire", "final lump",
@@ -128,7 +143,6 @@ VOCAB = {
     "pastoral": {
         "phrases": [
             "holy church", "alms-giving", "alms-offering",
-            "place of rest",
         ],
         "words": [
             "catechumen", "catechumens", "elect",
@@ -144,6 +158,7 @@ VOCAB = {
     "nt_christian": {
         "phrases": [
             "jesus christ", "christ jesus", "lord jesus",
+            "jesus the splendour", "jesus splendour",
             "son of god", "body of christ",
             "father, son", "holy trinity",
             "resurrection of the dead", "kingdom of heaven",
@@ -174,10 +189,14 @@ VOCAB = {
     "correspondential": {
         "phrases": [
             "after the likeness", "in the likeness",
-            "image of", "resembles", "signifies",
+            "resembles", "signifies",
             "in the manner of", "like unto",
             "is the manner",
-            "these are the", "this is the",
+            "these are the five", "these are the three",
+            "these are the seven", "these are the twelve",
+            "these are the ten",
+            "this is the manner", "this is the interpretation",
+            "this is the explanation",
             "corresponds", "correspondence",
         ],
         "words": [
@@ -187,14 +206,18 @@ VOCAB = {
     },
 }
 
-# Composite score weights
+# Temporal axis weights:
+# POSITIVE = teaching substrate indicators (older material)
+# NEGATIVE = institutional overlay indicators (later material)
+# Cosmological + correspondential + persian_substrate are ALL teaching substrate.
+# They are the same thing at different levels of description.
 WEIGHTS = {
-    "cosmological": 2.0,
-    "persian_substrate": 3.0,
-    "correspondential": 2.5,
-    "pastoral": -1.5,
-    "nt_christian": -2.0,
-    "hagiographic": -1.0,
+    "cosmological": 1.5,         # Teaching content (slightly reduced: includes Mani's own)
+    "persian_substrate": 2.0,    # Ancient substrate markers (Zoroastrian roots)
+    "correspondential": 1.5,     # Teaching method markers
+    "pastoral": -2.0,            # Institutional/community layer
+    "nt_christian": -2.5,        # Christian overlay (Mani-era or later)
+    "hagiographic": -1.5,        # Community veneration frame
 }
 
 # ============================================================
@@ -325,7 +348,11 @@ def score_vocabulary(text: str, word_count: int) -> tuple[dict, dict]:
 
 
 def compute_composite(densities: dict) -> float:
-    """Compute composite originality score from vocabulary densities."""
+    """Compute temporal composite: teaching substrate vs. institutional overlay.
+
+    Positive = teaching substrate dominates (older material).
+    Negative = institutional overlay dominates (later material).
+    """
     score = 0.0
     for cat, weight in WEIGHTS.items():
         score += densities.get(cat, 0) * weight
@@ -608,6 +635,11 @@ class ChapterAnalysis:
     # Gardner flags
     gardner_flags: list = field(default_factory=list)
 
+    # Grouped temporal densities
+    teaching_density: float = 0.0   # cosmological + correspondential + persian_substrate
+    overlay_density: float = 0.0    # pastoral + nt_christian + hagiographic
+    teaching_purity: float = 0.0    # teaching / (teaching + overlay + epsilon)
+
     # Editor fatigue — vocabulary shift within chapter
     first_half_cosmo: float = 0.0
     second_half_cosmo: float = 0.0
@@ -616,7 +648,7 @@ class ChapterAnalysis:
     layer_shift_score: float = 0.0
 
     # Classification
-    tier: str = ""  # core / secondary / pastoral / hagiographic / fragmentary
+    tier: str = ""  # core / secondary / mixed / pastoral / hagiographic / peripheral / fragmentary
     in_manual_extract: bool = False
 
     # Cluster assignment (from TF-IDF)
@@ -648,6 +680,19 @@ def analyze_chapter(chapter: CleanChapter) -> ChapterAnalysis:
     analysis.vocab_densities = densities
     analysis.vocab_terms = terms
     analysis.composite_score = compute_composite(densities)
+
+    # Grouped temporal densities
+    analysis.teaching_density = round(
+        densities.get("cosmological", 0) +
+        densities.get("correspondential", 0) +
+        densities.get("persian_substrate", 0), 4)
+    analysis.overlay_density = round(
+        densities.get("pastoral", 0) +
+        densities.get("nt_christian", 0) +
+        densities.get("hagiographic", 0), 4)
+    total_density = analysis.teaching_density + analysis.overlay_density
+    analysis.teaching_purity = round(
+        analysis.teaching_density / (total_density + 0.01), 4)
 
     # Structure detection
     structure = detect_structure(text)
@@ -703,20 +748,56 @@ def analyze_chapter(chapter: CleanChapter) -> ChapterAnalysis:
 
 
 def classify_tier(analysis: ChapterAnalysis) -> str:
-    """Classify chapter into tiers based on composite analysis."""
+    """Classify chapter by temporal layer dominance.
+
+    Uses both composite score (weighted teaching vs overlay) and
+    teaching purity (ratio of teaching to total vocabulary signal).
+
+    NOTE: Vocabulary analysis has LIMITED ability to distinguish "old
+    teaching with editorial overlays grafted on" from "genuinely mixed
+    or late material." Many chapters in the manual Layer 1 extract have
+    significant pastoral vocabulary from overlays — the LLM extraction
+    (not this tier) is what achieves fine-grained temporal discrimination.
+    These tiers indicate vocabulary-level signal strength, not final
+    temporal classification.
+    """
     if analysis.teaching_words < 30:
         return "fragmentary"
-    if analysis.composite_score > 3.0:
+
+    # Core: high composite AND high purity AND structural markers
+    if (analysis.composite_score > 4.0
+            and analysis.teaching_purity > 0.70
+            and (analysis.correspondence_markers > 0
+                 or analysis.enumeration_markers > 0)):
         return "core"
-    if analysis.composite_score > 0.5:
+
+    # Secondary: teaching signal dominant with reasonable purity
+    if analysis.composite_score > 1.0 and analysis.teaching_purity > 0.55:
         return "secondary"
+
+    # Secondary via structure: positive composite + strong structural markers
+    # (catches chapters with editorial overlays that dilute purity but still
+    # contain systematic correspondential teaching)
+    if (analysis.composite_score > 0.0
+            and (analysis.correspondence_markers >= 2
+                 or analysis.enumeration_markers >= 1)):
+        return "secondary"
+
     d = analysis.vocab_densities
-    if d.get("pastoral", 0) > d.get("cosmological", 0):
-        return "pastoral"
-    if d.get("hagiographic", 0) > 0.5:
+    overlay = (d.get("pastoral", 0) + d.get("nt_christian", 0)
+               + d.get("hagiographic", 0))
+    teaching = (d.get("cosmological", 0) + d.get("correspondential", 0)
+                + d.get("persian_substrate", 0))
+
+    if d.get("hagiographic", 0) > 0.5 and d.get("hagiographic", 0) > teaching:
         return "hagiographic"
-    if analysis.composite_score > -1.0:
+
+    if overlay > teaching * 1.3:
+        return "pastoral"
+
+    if analysis.composite_score > -0.5:
         return "mixed"
+
     return "peripheral"
 
 
@@ -791,11 +872,17 @@ def cluster_chapters(chapters: list[CleanChapter], analyses: list[ChapterAnalysi
         top_idx = center.argsort()[-15:][::-1]
         top_terms = [feature_names[j] for j in top_idx]
 
-        # Name cluster by dominant category
-        if avg_densities.get("cosmological", 0) > avg_densities.get("pastoral", 0) * 1.5:
-            name = "Cosmological"
-        elif avg_densities.get("pastoral", 0) > avg_densities.get("cosmological", 0) * 1.5:
-            name = "Pastoral/Ethical"
+        # Name cluster by temporal dominance
+        teaching_total = (avg_densities.get("cosmological", 0)
+                         + avg_densities.get("correspondential", 0)
+                         + avg_densities.get("persian_substrate", 0))
+        overlay_total = (avg_densities.get("pastoral", 0)
+                        + avg_densities.get("nt_christian", 0)
+                        + avg_densities.get("hagiographic", 0))
+        if teaching_total > overlay_total * 1.5:
+            name = "Teaching Substrate"
+        elif overlay_total > teaching_total * 1.5:
+            name = "Institutional Overlay"
         elif avg_densities.get("hagiographic", 0) > 0.3:
             name = "Hagiographic"
         else:
@@ -891,9 +978,9 @@ def generate_visualizations(analyses: list[ChapterAnalysis], cluster_result: dic
     ax.set_xticks(range(n))
     ax.set_xticklabels([str(c) for c in ch_nums], rotation=90, fontsize=6)
     ax.set_xlabel("Chapter Number")
-    ax.set_ylabel("Composite Score")
-    ax.set_title("Kephalaia v4 — Composite Originality Score per Chapter\n"
-                 "(colored by tier; ▲ = in manual Layer 1 extract)",
+    ax.set_ylabel("Temporal Composite")
+    ax.set_title("Kephalaia v4 — Temporal Composite Score per Chapter\n"
+                 "(teaching substrate vs institutional overlay; ▲ = in manual Layer 1 extract)",
                  fontsize=14, fontweight="bold")
 
     # Legend
@@ -1112,7 +1199,7 @@ def generate_report(analyses: list[ChapterAnalysis], cluster_result: dict,
     kappa = _cohens_kappa(tp, fp, fn, tn)
 
     r = []
-    r.append("# Kephalaia Layer Analysis v4 — Clean-Source Results")
+    r.append("# Kephalaia Layer Analysis v4 — Temporal-Axis Results")
     r.append("")
     r.append(f"**Date**: 2026-02-16")
     r.append(f"**Data Source**: LLM-cleaned structured JSON (output/cleaned/chapters/)")
@@ -1129,12 +1216,12 @@ def generate_report(analyses: list[ChapterAnalysis], cluster_result: dict,
     r.append("| Tier | Count | % | Description |")
     r.append("|------|------:|--:|-------------|")
     tier_desc = {
-        "core": "Original correspondential cosmology — pre-Mani substrate",
-        "secondary": "Cosmological but with mixed signals",
-        "mixed": "Both cosmological and pastoral vocabulary",
-        "pastoral": "Church instruction dominant",
-        "hagiographic": "Biographical Mani material dominant",
-        "peripheral": "Low-signal chapters",
+        "core": "Strong teaching substrate + structural markers, minimal overlay",
+        "secondary": "Teaching dominant with some overlay present",
+        "mixed": "Both teaching and overlay vocabulary present",
+        "pastoral": "Institutional/overlay vocabulary dominant — later layer",
+        "hagiographic": "Biographical/veneration material dominant",
+        "peripheral": "Low vocabulary signal — inconclusive",
         "fragmentary": "Too short for reliable analysis (<30 words)",
     }
     for tier in ["core", "secondary", "mixed", "pastoral", "hagiographic", "peripheral", "fragmentary"]:
@@ -1186,30 +1273,29 @@ def generate_report(analyses: list[ChapterAnalysis], cluster_result: dict,
     # Top core chapters
     r.append("---")
     r.append("")
-    r.append("## 3. Purest Core Chapters (by Composite Score)")
+    r.append("## 3. Strongest Teaching Substrate Chapters (by Temporal Composite)")
     r.append("")
-    r.append("| Rank | Ch. | Title | Score | Cosmo | Corresp | Persian | Pastoral | NT | Hagio | Tier | Manual |")
-    r.append("|------|-----|-------|------:|------:|--------:|--------:|---------:|---:|------:|------|:------:|")
+    r.append("| Rank | Ch. | Title | Score | Teaching | Overlay | Purity | Corr | Struct | Tier | Manual |")
+    r.append("|------|-----|-------|------:|---------:|--------:|-------:|-----:|-------:|------|:------:|")
     for rank, a in enumerate(sorted(analyses, key=lambda x: -x.composite_score)[:25], 1):
         marker = "✅" if a.in_manual_extract else ""
-        d = a.vocab_densities
         r.append(f"| {rank} | {a.chapter_number} | {a.title[:35]} | {a.composite_score:.2f} | "
-                f"{d.get('cosmological', 0):.2f} | {d.get('correspondential', 0):.2f} | "
-                f"{d.get('persian_substrate', 0):.2f} | {d.get('pastoral', 0):.2f} | "
-                f"{d.get('nt_christian', 0):.2f} | {d.get('hagiographic', 0):.2f} | "
+                f"{a.teaching_density:.2f} | {a.overlay_density:.2f} | "
+                f"{a.teaching_purity:.2f} | {a.correspondence_markers} | "
+                f"{a.enumeration_markers} | "
                 f"{a.tier} | {marker} |")
     r.append("")
 
     # Most contaminated
-    r.append("## 4. Most Contaminated Chapters")
+    r.append("## 4. Strongest Overlay Chapters (by Temporal Composite)")
     r.append("")
-    r.append("| Rank | Ch. | Title | Score | Pastoral | NT | Hagio | Tier |")
-    r.append("|------|-----|-------|------:|---------:|---:|------:|------|")
+    r.append("| Rank | Ch. | Title | Score | Pastoral | NT | Hagio | Teaching | Tier |")
+    r.append("|------|-----|-------|------:|---------:|---:|------:|---------:|------|")
     for rank, a in enumerate(sorted(analyses, key=lambda x: x.composite_score)[:20], 1):
         d = a.vocab_densities
         r.append(f"| {rank} | {a.chapter_number} | {a.title[:40]} | {a.composite_score:.2f} | "
                 f"{d.get('pastoral', 0):.2f} | {d.get('nt_christian', 0):.2f} | "
-                f"{d.get('hagiographic', 0):.2f} | {a.tier} |")
+                f"{d.get('hagiographic', 0):.2f} | {a.teaching_density:.2f} | {a.tier} |")
     r.append("")
 
     # Editor fatigue
@@ -1255,7 +1341,7 @@ def generate_report(analyses: list[ChapterAnalysis], cluster_result: dict,
     r.append("")
 
     # Structural patterns
-    r.append("## 8. Structural Patterns")
+    r.append("## 8. Structural Patterns (Temporal Markers)")
     r.append("")
     r.append(f"- Chapters with formulaic opening: "
             f"**{sum(1 for a in analyses if a.has_formulaic_opening)}** "
@@ -1304,16 +1390,14 @@ def generate_report(analyses: list[ChapterAnalysis], cluster_result: dict,
     r.append("")
     r.append("## Appendix: Full Chapter Data")
     r.append("")
-    r.append("| Ch. | Title | Words | Score | Cosmo | Pastoral | NT | Corr | TTR | Lac | Shift | Tier | Manual |")
-    r.append("|-----|-------|------:|------:|------:|---------:|---:|-----:|----:|----:|------:|------|:------:|")
+    r.append("| Ch. | Title | Words | Score | Teach | Overlay | Purity | Shift | Tier | Manual |")
+    r.append("|-----|-------|------:|------:|------:|--------:|-------:|------:|------|:------:|")
     for a in analyses:
         marker = "✅" if a.in_manual_extract else ""
-        d = a.vocab_densities
         r.append(f"| {a.chapter_number} | {a.title[:25]} | {a.teaching_words} | "
-                f"{a.composite_score:.2f} | {d.get('cosmological', 0):.2f} | "
-                f"{d.get('pastoral', 0):.2f} | {d.get('nt_christian', 0):.2f} | "
-                f"{d.get('correspondential', 0):.2f} | {a.type_token_ratio:.3f} | "
-                f"{a.lacunae_density:.2f} | {a.layer_shift_score:.3f} | "
+                f"{a.composite_score:.2f} | {a.teaching_density:.2f} | "
+                f"{a.overlay_density:.2f} | {a.teaching_purity:.2f} | "
+                f"{a.layer_shift_score:.3f} | "
                 f"{a.tier} | {marker} |")
     r.append("")
 
@@ -1332,7 +1416,7 @@ def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     print("=" * 70)
-    print("KEPHALAIA LAYER ANALYSIS v4 — Clean-Source Textual Critical Analysis")
+    print("KEPHALAIA LAYER ANALYSIS v4 — Temporal-Axis Textual Critical Analysis")
     print("=" * 70)
     print()
 
@@ -1356,10 +1440,12 @@ def main():
     tier_counts = Counter(a.tier for a in analyses)
     print(f"  Tier distribution: {dict(tier_counts)}")
 
-    avg_cosmo = statistics.mean([a.vocab_densities.get("cosmological", 0) for a in analyses])
-    avg_pastoral = statistics.mean([a.vocab_densities.get("pastoral", 0) for a in analyses])
-    print(f"  Avg cosmological density: {avg_cosmo:.3f} per 100 words")
-    print(f"  Avg pastoral density: {avg_pastoral:.3f} per 100 words")
+    avg_teaching = statistics.mean([a.teaching_density for a in analyses])
+    avg_overlay = statistics.mean([a.overlay_density for a in analyses])
+    avg_purity = statistics.mean([a.teaching_purity for a in analyses])
+    print(f"  Avg teaching substrate density: {avg_teaching:.3f} per 100 words")
+    print(f"  Avg overlay density: {avg_overlay:.3f} per 100 words")
+    print(f"  Avg teaching purity: {avg_purity:.3f}")
 
     # 3. TF-IDF clustering
     print("[3/7] Running TF-IDF clustering...")
