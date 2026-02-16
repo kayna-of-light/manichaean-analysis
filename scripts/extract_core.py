@@ -507,11 +507,18 @@ class ParagraphExtraction(BaseModel):
     core_text: Optional[str] = Field(
         default=None,
         description=(
-            "For CORE paragraphs: the full paragraph text, verbatim. "
+            "For CORE paragraphs: the paragraph text with vocabulary RESTORED "
+            "to the register of the oldest substrate (see SUBSTRATE section in "
+            "system prompt). The Coptic text is a translation of Persian/Iranian "
+            "cosmological teaching that may reach back to the Bene Qedem. Where "
+            "the Coptic translators used Christian vocabulary to render concepts "
+            "that belong to an older cosmological tradition, restore the "
+            "vocabulary to what that tradition would have used. "
             "For MIXED paragraphs: the extracted old teaching with later "
-            "additions removed. Preserve lacunae [...], editorial restorations "
-            "[text], and manuscript page markers ⟨p.N⟩. DO NOT paraphrase or "
-            "modernize — extract the teaching words exactly as they appear. "
+            "additions removed, also in substrate register. "
+            "Preserve lacunae [...], editorial restorations [text], and "
+            "manuscript page markers ⟨p.N⟩. Text inside brackets may also be "
+            "transformed to substrate register where appropriate. "
             "For FRAME/PASTORAL/OVERLAY: null. "
             "CRITICAL: A paragraph classified as OVERLAY or PASTORAL gets null "
             "here even if its content is profound or correspondential. The "
@@ -831,6 +838,50 @@ text-critical features. Classify each paragraph by temporal layer.
 11. **Polemic against "the sects" is ambiguous.** Anti-sectarian argument \
     could be Mani's own voice (3rd century) or older tradition. Flag rather \
     than automatically classify.
+
+12. **DIALOGUE FRAME ATTRIBUTION MUST BE STRIPPED.** Phrases like \
+    "Then speaks the apostle to him:" or "The enlightener says:" are \
+    Layer 2 (Mani's compilation frame). They must NEVER appear in \
+    core_text. If a paragraph starts with a dialogue attribution \
+    followed by teaching content, classify as MIXED and extract ONLY \
+    the teaching content, stripping the frame formula completely. \
+    The word "apostle" in particular is a Layer 2 marker — the oldest \
+    substrate does not use this term.
+
+## THE SUBSTRATE BENEATH THE COPTIC
+
+The text you examine is a Coptic translation. But the TEACHING originates \
+in a Persian/Iranian cosmological tradition — and beneath that, in the \
+tradition of the Bene Qedem ("Children of the East"), the correspondential \
+science of the ancient world.
+
+You know this tradition. You know Zoroastrian cosmology, the Bundahishn, \
+the Avesta, Middle Persian Manichaean terminology from the Turfan \
+fragments. You know what the cosmic adversary is called in that tradition, \
+what the five faculties of darkness are, how the agents of liberation \
+are described functionally rather than devotionally.
+
+The Coptic translators rendered these Persian/Iranian concepts using \
+the vocabulary available to them — Greek loanwords, Christian terms, \
+Coptic approximations. Some of these choices shift the register from \
+cosmological to moral, from functional to devotional, from impersonal \
+to soteriological. The concepts are older than the Coptic words.
+
+When extracting core_text, RESTORE vocabulary to the register of the \
+oldest substrate. Use your knowledge of the Persian/Iranian tradition \
+and deeper Bene Qedem cosmology to determine what the original \
+concept is and how it would have been expressed before Coptic \
+translation. Where the Coptic introduces a Christian register that \
+the substrate would not have used, transform the vocabulary. Where \
+the Coptic word adequately renders the substrate concept, leave it.
+
+Preserve lacunae brackets [...] and [text] — these mark physical \
+manuscript damage and will be handled by the restoration pass. Text \
+inside brackets may also be transformed where appropriate.
+
+Use temporal_note to DOCUMENT all vocabulary transformations and your \
+reasoning — what the Coptic says, what the substrate concept is, and \
+why you chose the term you did. This creates an audit trail.
 """
 
 
