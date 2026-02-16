@@ -1,0 +1,84 @@
+{
+  "chapter_number": 96,
+  "chapter_title": "The Three Earths that Exist, they bear Fruit.",
+  "total_lacunae": 5,
+  "lacunae_map": {
+    "1": [
+      {
+        "index": 1,
+        "start": 77,
+        "end": 82,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 124,
+        "end": 130,
+        "original": "[good]",
+        "content": "good"
+      }
+    ],
+    "2": [
+      {
+        "index": 1,
+        "start": 86,
+        "end": 91,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 128,
+        "end": 136,
+        "original": "[making]",
+        "content": "making"
+      },
+      {
+        "index": 3,
+        "start": 166,
+        "end": 171,
+        "original": "[...]",
+        "content": "..."
+      }
+    ]
+  },
+  "fills": [
+    {
+      "paragraph": 1,
+      "index": 1,
+      "fill": "receive",
+      "notes": "The sequence is: first the earth is worked, then it ‘receives the farmer’ (i.e., admits the cultivating power into itself); afterwards it ‘bears fruit’ to the laborers. This matches the correspondential order of receptacle → implantation → production.",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 1,
+      "index": 2,
+      "fill": "good",
+      "notes": "",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 1,
+      "fill": "and breaking",
+      "notes": "The description lists successive agricultural acts: ploughing, then breaking/loosening the ground with iron hoes, then cultivating and forming furrows, then turning it over, then harvesting. The missing phrase should be another verb coordinated with ‘ploughing’, governing ‘it with iron hoes’.",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 2,
+      "fill": "making",
+      "notes": "",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 3,
+      "fill": "from it, from its soil.",
+      "notes": "The sentence anticipates ‘Afterwards they harvest fruit from it …’. The oldest-layer register tends to close the natural example with a complete, concrete phrase (‘from it / from its soil’) before transitioning to the second, interior ‘field’.",
+      "confidence": "tentative"
+    }
+  ],
+  "assessment": "Most gaps are syntactically constrained by the agricultural parallelism (receive → bear; plough/break/cultivate → make furrows → turn → harvest). Exact wording is less tightly fixed in ¶2 #3, where only the closure of the example is demanded, not a specific technical term."
+}

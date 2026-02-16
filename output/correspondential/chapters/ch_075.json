@@ -1,0 +1,54 @@
+{
+  "chapter_number": 75,
+  "chapter_title": "[Concerning the Letter (?)]",
+  "total_lacunae": 3,
+  "lacunae_map": {
+    "3": [
+      {
+        "index": 1,
+        "start": 275,
+        "end": 280,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 314,
+        "end": 323,
+        "original": "[... ...]",
+        "content": "... ..."
+      },
+      {
+        "index": 3,
+        "start": 368,
+        "end": 387,
+        "original": "[that would happen]",
+        "content": "that would happen"
+      }
+    ]
+  },
+  "fills": [
+    {
+      "paragraph": 3,
+      "index": 1,
+      "fill": "not lack",
+      "notes": "The clause contrasts the letter-form with its total content: the answer-letter ‘did not lack’ any report. This fits the substrate’s impersonal, exhaustive ‘tidings’ register and avoids later moralizing.",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 3,
+      "index": 2,
+      "fill": "set down",
+      "notes": "After ‘in the answer that the First Man …’ the syntax demands a verb of inscription/reporting parallel to ‘in which all the tidings are written down’. ‘Set down’ preserves the correspondential sense: the inner states (wars/contests) are fixed into a stable form (letter).",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 3,
+      "index": 3,
+      "fill": "that would happen",
+      "notes": "Retained: it matches the fixed triad ‘what has happened / what will happen / what is prepared to be done’, the substrate’s comprehensive foreknowledge schema.",
+      "confidence": "strong"
+    }
+  ],
+  "assessment": "Most of the damage can be restored by tight parallelism: both summons and answer are ‘letters’ containing the total account of past and future effects. Exact verb choices remain somewhat open, but the required sense (no omission; complete inscription) is strongly constrained by the correspondential structure."
+}
