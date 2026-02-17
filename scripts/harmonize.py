@@ -85,63 +85,65 @@ def get_deployment() -> str:
 # ===================================================================
 
 
-class ParagraphReading(BaseModel):
-    """Reading of a single paragraph."""
+class ParagraphTranslation(BaseModel):
+    """Translation of a single paragraph from natural to spiritual sense."""
     paragraph_number: int = Field(
-        description="The paragraph number from the input text."
+        description="The paragraph number from the source text."
     )
-    spiritual_content: str = Field(
+    translation: str = Field(
         description=(
-            "TRANSLATE this paragraph through to its spiritual sense. "
-            "Do NOT describe the natural text and label correspondences. "
-            "Do NOT write 'storehouses (= interiors)' — that is glossing. "
-            "Instead, REPLACE every natural object with what it IS at "
-            "the spiritual level and tell what happens in that register. "
-            "Example: 'He established her in storehouses in quiet and "
-            "silence' becomes 'Love holds wisdom within itself in a "
-            "state of peace before it takes form.' The natural image "
-            "is gone; what remains is what it EXPRESSES. Do this for "
-            "EVERY object in the paragraph — nothing passes through "
-            "untranslated. If a paragraph does NOT yield coherent "
-            "spiritual sense when translated, say so honestly — the "
-            "incoherence itself is evidence."
+            "The paragraph rewritten entirely in the spiritual "
+            "register. Every natural object is REPLACED by the "
+            "spiritual reality it expresses. The result reads as "
+            "continuous prose about spiritual states, with NO "
+            "natural objects remaining.\n\n"
+            "YOUR OUTPUT HAS FAILED IF IT CONTAINS ANY OF THESE:\n"
+            "- Direct quotes from the source text\n"
+            "- Parenthetical glosses like (= interiors) or "
+            "(= unmanifest state)\n"
+            "- The phrases 'corresponds to', 'teaches that', "
+            "'indicates', 'represents'\n"
+            "- Natural objects named and then explained\n\n"
+            "CORRECT: 'Love held wisdom in peace and potency.'\n"
+            "WRONG: 'Storehouses (= interiors) in quiet and "
+            "silence (= unmanifest state).'\n\n"
+            "If the paragraph resists translation, commit to "
+            "your best attempt and flag uncertainty in the notes "
+            "field — but the translation field must still be a "
+            "translation, not a commentary."
         )
     )
-    narrative_flow: str = Field(
+    connection: str = Field(
         description=(
-            "How this paragraph relates to the chapter's spiritual "
-            "story. Does it CONTINUE the thread, DEVELOP it further, "
-            "SHIFT to a new aspect, or BREAK the flow? If it breaks, "
-            "say what breaks and how."
+            "How this translated paragraph joins the chapter's "
+            "spiritual story: CONTINUES, DEVELOPS, SHIFTS, or "
+            "BREAKS. One sentence."
         )
     )
     notes: str = Field(
         description=(
-            "Anything that doesn't fit, forces interpretation, seems "
-            "inserted, or breaks the voice. Named figures that appear "
-            "but don't participate in the teaching. Vocabulary shifts. "
-            "Awkward transitions. Empty string if clean."
+            "Anything that resists translation, forces, seems "
+            "inserted, or breaks the voice. Named figures that "
+            "appear but don't function. Vocabulary shifts. Empty "
+            "string if clean."
         )
     )
 
 
 class SpiritualReadingResult(BaseModel):
-    """Complete spiritual reading for one chapter."""
-    chapter_narrative: str = Field(
+    """Complete spiritual translation for one chapter."""
+    full_translation: str = Field(
         description=(
-            "The complete spiritual story of this chapter, told "
-            "ENTIRELY in the spiritual register. No natural objects "
-            "remain — every image has been translated through to what "
-            "it expresses. Write it as if someone who could only "
-            "perceive the spiritual sense told you what this chapter "
-            "says. If the story becomes incoherent at any point — "
-            "if the translation produces nonsense or contradiction — "
-            "say so at that point in the narrative and continue. The "
-            "incoherence is evidence, not failure."
+            "The chapter's complete spiritual story as ONE continuous "
+            "piece of prose. Every natural image is gone — replaced "
+            "by what it expresses. Write as if someone who perceives "
+            "only spiritual reality told you what this chapter says. "
+            "Where the translation breaks into incoherence, say so "
+            "at that point and continue — the break is evidence."
         )
     )
-    paragraph_readings: list[ParagraphReading] = Field(
-        description="One reading per paragraph. Read EVERY paragraph."
+    paragraph_translations: list[ParagraphTranslation] = Field(
+        description="One translation per source paragraph. Translate EVERY paragraph."
     )
     overall_coherence: str = Field(
         description=(
@@ -267,159 +269,173 @@ class HarmonizationResult(BaseModel):
 # -------------------------------------------------------------------
 
 READING_PROMPT = """\
-You are reading the oldest teaching substrate of the Coptic Kephalaia \
-as a spiritual document. Your task is EXACT, HONEST, paragraph-by-\
-paragraph correspondential reading.
-
-You are NOT editing. You are NOT judging. You are READING — reporting \
-what the text teaches at the spiritual level, paragraph by paragraph.
-
-# CRITICAL RULES
-
-1. Read EVERY paragraph. Do not skip any.
-2. Be EXACT. Report what the text actually teaches, not what you \
-   think it should teach.
-3. If a paragraph does not yield coherent spiritual sense — say so. \
-   Do not force meaning onto text that resists it.
-4. If the narrative breaks — note where and how. A break is evidence, \
-   not a failure of your reading.
-5. If named figures appear that do not participate in the teaching — \
-   note that they are listed but not active in the spiritual content.
-6. If a passage lists entities by jurisdiction rather than teaching \
-   by function — note the vocabulary shift.
-7. The chapter_narrative should read as ONE continuous story. When \
-   it can't — when you have to break the narrative to accommodate \
-   a passage — that break IS the finding. Report it honestly.
-
-# THE CORRESPONDENTIAL SYSTEM
-
-The science of correspondences describes how spiritual reality \
-expresses itself through natural forms. Multiple principles operate \
-simultaneously. Read each chapter for ALL of them:
-
-## Correspondence — The Basic Unit
-Every natural object corresponds to the spiritual reality it \
-expresses, grounded in the object's FUNCTION. The two great \
-poles are: fire/heat = love/will (the active principle); \
-water = truth/understanding (the intellectual counterpart). \
-The FORM of the natural object tells you the STATE — a river \
-is truth flowing with intelligence, a sea is general knowledges \
-in externals, rain is influx of Divine Truth descending, a \
-fountain is interior truth. Light = wisdom (because light \
-enables distinction); animals = affections; seeds = interior \
-truths; mountains = elevated states; garments = external truths.
-
-## Discrete Degrees — One Architecture Among Several
-Reality exists in three discrete degrees — celestial (love/will), \
-spiritual (wisdom/truth), natural (effect/use). These are not a \
-continuum but complete, self-contained levels. Influx flows \
-DOWNWARD: celestial into spiritual into natural. Genuine \
-emanation sequences descend through these degrees.
-
-This is ONE structural principle, not the ONLY one. Many chapters \
-are NOT primarily about discrete degrees.
-
-## Opposite Sense
-The same image can express good or evil depending on context: \
-fire = divine love OR destructive self-love; water = living truth \
-OR falsity; darkness = obscurity before illumination OR active \
-denial. Always determine from context which sense applies.
-
-## Ruling Love
-The core orientation of a soul or system — toward the Divine \
-(love of neighbor) or toward self (love of dominion). This \
-polarity is often the REAL subject of a chapter.
-
-## The Grand Man (Maximus Homo)
-The form of the heavens is the human form. Function determines \
-position: an organ IS its spiritual function in ultimates. \
-Head = celestial; thorax = spiritual; abdomen = natural. \
-Heart = love/will; lungs = wisdom/understanding.
-
-## Regeneration
-The spiritual process of transformation: old state broken, \
-wilderness/combat, reformation through truth, then regeneration \
-through good. Many chapters describe this PROCESS.
-
-## The Proprium
-The sense of self as separate. Not evil in itself — the vessel \
-that must be formed. But when it claims what flows through it \
-as its own, it becomes the obstacle.
-
-## Accommodation
-Truth delivered at the level the receiver can accept. The same \
-spiritual reality may appear differently to different states.
-
-## Numbers as Correspondences
-Numbers are states, not counting:
-- TWO = fundamental polarity (will/understanding, good/truth)
-- THREE = discrete degrees (celestial/spiritual/natural)
-- FOUR = completeness in ultimates (natural plane fully extended)
-- FIVE = sufficiency ("enough," NOT a system number — never \
-  describes degrees or how one level produces the next)
-- SEVEN = complete process (full cycle from beginning to rest)
-- TEN = conjunction with good held inside
-- TWELVE = fullness of organized truths (3 × 4)
-
-## Swedenborg Corrections
-Where Swedenborg's 18th-century science introduced artifacts:
-- The Limbus: rejected. Identity is the biography, not material \
-  remnant.
-- Biological determinism about Jesus: corrected. The Divine Human \
-  achieved alignment through removal of obstruction, not different \
-  origin.
-- Matter as evil: corrected. The physical world is the Fixed Edge \
-  — developmental arena, not prison.
-
-# YOUR TASK: TRANSLATE, DO NOT ANNOTATE
-
-You are translating the text from its natural sense INTO its \
-spiritual sense. This is not annotation. This is not commentary. \
-This is translation — the same way you would translate French \
+You are a TRANSLATOR. You translate text from its natural sense \
+into its spiritual sense — the same way one translates French \
 into English, except you are translating natural images into \
 what they EXPRESS spiritually.
 
-**THE WRONG WAY (glossing/annotating):**
-"The Mother of Life was established in storehouses (= interiors) \
-in quiet and silence (= unmanifest state). When need arose she \
-was called (= influx by use) and came forth."
+You are NOT analysing, NOT commenting, NOT annotating. You are \
+producing a new text in which every natural object has been \
+replaced by the spiritual reality it expresses.
 
-This is wrong because the natural text is still there with \
-parenthetical labels attached. You have not translated.
+# WHAT TRANSLATION LOOKS LIKE — EXAMPLES
 
-**THE RIGHT WAY (translating):**
-"Love held wisdom within itself in a state of peace and potency. \
-When the receiving vessel needed it, love sent wisdom forth, and \
-wisdom immediately perceived all the goods and truths within \
-her reach."
+Study these carefully. This is the ONLY acceptable output mode.
 
-The natural image is GONE. What remains is what the natural \
-image EXPRESSES. Every object has been passed through to its \
-spiritual sense.
+## Example 1
 
-**TRANSLATE EVERYTHING.** Nothing passes through untranslated. \
-Storehouses, quiet, silence, calling, sculpting, garments, \
-borders, heights, earth, rain, dew, mist, birds, fire, trees, \
-fruits — each one IS something at the spiritual level. Translate \
-it. If you cannot determine what a natural object expresses, \
-say so — that gap is evidence.
+NATURAL TEXT:
+"He sculpted the Mother of Life, established her in storehouses \
+in quiet and silence. When need arose she was called and came \
+forth. She looked at all her aeons of light."
+
+WRONG (glossing — natural text with labels attached):
+"The Mother of Life (= wisdom) was established in storehouses \
+(= interiors) in quiet and silence (= unmanifest state). When \
+need arose she was called (= influx by use) and came forth."
+
+RIGHT (translation — natural images gone, spiritual story told):
+"Love formed wisdom within itself and held it in peace and \
+potency before any outward work. When the receiving vessel \
+required it, love sent wisdom forth. Wisdom immediately \
+perceived all the goods and truths within her domain."
+
+## Example 2
+
+NATURAL TEXT:
+"He clothed his five sons in garments and stationed them at the \
+borders. They were anointed and set fast."
+
+WRONG:
+"His five sons (= sufficient operative powers) are clothed in \
+garments (= external truths) and stationed at borders (= \
+ultimates)."
+
+RIGHT:
+"The Divine invested a sufficient complement of operative powers \
+with external truths for action in the outermost degree, and \
+fixed them there by consecration."
+
+## Example 3
+
+NATURAL TEXT:
+"From the thought of death five elements came: smoke, fire, wind, \
+water, darkness. From these grew trees, and from the trees fruits, \
+and the fruits nourished the demons."
+
+WRONG:
+"Five elements (= basic falsities/evils) arose from the thought \
+of death. Trees (= perceptions) grew, fruits (= works) formed, \
+and demons were nourished."
+
+RIGHT:
+"From the intention of spiritual death, a sufficient series of \
+fundamental falsities arose: obscured understanding, self-love, \
+volatile persuasion, falsified truth, and active denial of good. \
+These falsities organized into systems of perverted perception, \
+which produced corresponding works, and those works sustained \
+the hells."
+
+## What makes the RIGHT versions right
+
+- No natural objects remain. Storehouses, garments, borders, \
+  trees, fruits are GONE. What is there instead is what they \
+  EXPRESS.
+- The result reads as continuous prose, not as a gloss-table.
+- Every single object has been translated. Nothing passes through \
+  untranslated.
+- Where translation produces something uncertain, say so: "this \
+  object's spiritual sense is unclear — it may express X."
+
+# REFERENCE: THE CORRESPONDENTIAL LOOKUP TABLE
+
+Use this table when translating. Every natural object in the text \
+should be looked up here (or reasoned from its function if not \
+listed) and REPLACED by its spiritual reality.
+
+**The two poles:** fire/heat = love/will; water = truth/understanding.
+
+**Water forms:** river = truth flowing with intelligence; sea = \
+general knowledges in externals; rain = influx of Divine truth \
+descending; fountain = interior truth rising from within; \
+dew = peaceful truth from celestial love; mist = obscure truth \
+not yet clear.
+
+**Light and darkness:** light = wisdom (enables distinction); \
+darkness = either obscurity before illumination or active falsity.
+
+**Spatial:** mountains = elevated spiritual states; heights = \
+proximity to source of influx; depths/earth = natural degree / \
+ultimates; borders = outermost limits of a domain.
+
+**Objects:** storehouses = interiors where good/truth is held; \
+garments = external truths that clothe spiritual reality; \
+vessels = containing forms; seeds = interior truths in potency; \
+trees = perceptions; fruits = works/deeds that proceed from \
+perceptions.
+
+**Living things:** animals = affections (each species a specific \
+quality); birds = thoughts at the spiritual level.
+
+**Actions:** sculpting/forming = bringing into determinate \
+existence; calling = directed influx; clothing = investing with \
+external truths; anointing = consecration with love for use; \
+sending down = influx descending to lower degrees; stripping = \
+removing external truths.
+
+**Numbers:** 2 = will/understanding polarity; 3 = discrete \
+degrees (celestial/spiritual/natural); 4 = completeness in \
+ultimates; 5 = sufficiency; 7 = full process; 10 = conjunction; \
+12 = fullness of organized truths.
+
+**Degree architecture:** celestial (love/will) → spiritual \
+(wisdom/truth) → natural (effect/use). Influx flows downward.
+
+**Opposite sense:** The same image can express good or evil by \
+context. Fire = divine love OR self-love. Water = living truth \
+OR falsity. Determine from context.
+
+**Named cosmological figures:** Translate by FUNCTION. "Mother \
+of Life" = wisdom-principle; "First Man" = the good that engages \
+directly with evil; "five sons" = sufficient operative powers. \
+If a name appears without a discernible function — note that \
+it resists translation.
+
+**The proprium:** self-sense. Not evil in itself; becomes \
+obstacle when it claims what flows through it as its own.
+
+# RULES FOR HONEST TRANSLATION
+
+1. Translate EVERY paragraph. Do not skip any.
+2. If a paragraph does NOT yield coherent spiritual sense when \
+   translated — say so in the notes and put your best attempt \
+   in the translation field, marking what is uncertain.
+3. If named figures appear that are LISTED but don't participate \
+   in the teaching — note this in the notes field.
+4. If the narrative breaks — mark the break in the notes. A \
+   break IS a finding, not a failure.
+5. The full_translation must be ONE continuous story told \
+   entirely in the spiritual register. Where it breaks, say so \
+   and continue.
+
+# OUTPUT
 
 For each paragraph:
-1. spiritual_content — the paragraph TRANSLATED into spiritual \
-   sense. No natural objects remain.
-2. narrative_flow — how this translated paragraph connects to \
-   the chapter's spiritual story
-3. notes — anything that resists translation, forces, breaks \
-   the voice, or doesn't participate in the teaching
+1. translation — the paragraph in the spiritual register. No \
+   natural objects. Reads as continuous prose about spiritual \
+   states and processes. If your output contains quotes from the \
+   source text, parenthetical glosses, or the phrase "corresponds \
+   to" — you have not translated.
+2. connection — one sentence: CONTINUES / DEVELOPS / SHIFTS / BREAKS
+3. notes — anything that resists, forces, or doesn't participate
 
-Then write the chapter_narrative — the COMPLETE spiritual story \
-told entirely in the inner register, as one continuous piece. \
-Where the translation produces incoherence, say so at that \
-point and continue. The incoherence is evidence.
+Then write full_translation — the complete spiritual story of \
+this chapter as one continuous piece of prose. No natural objects \
+remain anywhere in it.
 
-Your notes remain critical — they are evidence for the next \
-stage. But the spiritual_content and chapter_narrative must be \
-actual translations, not annotated natural text.
+Your notes are critical evidence for the next stage. But \
+translation and full_translation must be actual translations — \
+prose about spiritual realities, not commentary about a text.
 """
 
 # -------------------------------------------------------------------
@@ -680,15 +696,15 @@ def format_chapter_text(
 def format_reading_for_critic(reading: SpiritualReadingResult) -> str:
     """Format the 3a reading output for the 3b critic."""
     lines = []
-    lines.append("## CHAPTER NARRATIVE")
-    lines.append(reading.chapter_narrative)
+    lines.append("## CHAPTER TRANSLATION")
+    lines.append(reading.full_translation)
     lines.append("")
-    lines.append("## PARAGRAPH-BY-PARAGRAPH READING")
+    lines.append("## PARAGRAPH-BY-PARAGRAPH TRANSLATION")
     lines.append("")
-    for pr in reading.paragraph_readings:
+    for pr in reading.paragraph_translations:
         lines.append(f"### ¶{pr.paragraph_number}")
-        lines.append(f"**Spiritual content:** {pr.spiritual_content}")
-        lines.append(f"**Narrative flow:** {pr.narrative_flow}")
+        lines.append(f"**Translation:** {pr.translation}")
+        lines.append(f"**Connection:** {pr.connection}")
         if pr.notes:
             lines.append(f"**Notes:** {pr.notes}")
         lines.append("")
@@ -778,8 +794,14 @@ def run_spiritual_reading(
     chapter_text: str,
     pass2_reading: str | None = None,
 ) -> SpiritualReadingResult | None:
-    """Stage 3a: Paragraph-by-paragraph spiritual reading."""
-    parts = ["## RESTORED CHAPTER TEXT\n", chapter_text]
+    """Stage 3a: Paragraph-by-paragraph spiritual translation."""
+    parts = [
+        "# SOURCE TEXT TO TRANSLATE\n",
+        "Translate every paragraph of this chapter from its natural "
+        "sense into the spiritual sense. Replace every natural object "
+        "with the spiritual reality it expresses.\n",
+        chapter_text,
+    ]
     if pass2_reading:
         parts.append("\n## CONTEXT: SPIRITUAL READING FROM PASS 2\n")
         parts.append(pass2_reading)
@@ -820,7 +842,7 @@ def run_harmonization(
 ) -> HarmonizationResult | None:
     """Stage 3c: Execute the critic's recommendations."""
     criticism_text = format_criticism_for_harmonizer(
-        criticism, reading.chapter_narrative,
+        criticism, reading.full_translation,
     )
     parts = [
         "## RESTORED CHAPTER TEXT\n",
@@ -864,11 +886,11 @@ def process_chapter(
         return None
 
     n_notes = sum(
-        1 for pr in reading.paragraph_readings if pr.notes.strip()
+        1 for pr in reading.paragraph_translations if pr.notes.strip()
     )
 
     if stop_after == "reading":
-        print(f"3a done ({len(reading.paragraph_readings)} ¶s, "
+        print(f"3a done ({len(reading.paragraph_translations)} ¶s, "
               f"{n_notes} with notes)")
         return _build_result(
             ch_num, title, reading=reading,
@@ -940,9 +962,9 @@ def _build_result(
 
     if reading:
         result["spiritual_reading"] = {
-            "chapter_narrative": reading.chapter_narrative,
-            "paragraph_readings": [
-                pr.model_dump() for pr in reading.paragraph_readings
+            "full_translation": reading.full_translation,
+            "paragraph_translations": [
+                pr.model_dump() for pr in reading.paragraph_translations
             ],
             "overall_coherence": reading.overall_coherence,
         }
@@ -1086,7 +1108,7 @@ def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
 
             # Spiritual narrative
             reading = harm_ch.get("spiritual_reading", {})
-            narrative = reading.get("chapter_narrative", "") if reading else ""
+            narrative = reading.get("full_translation", "") if reading else ""
             if narrative:
                 lines.append(f"**Spiritual narrative:** {narrative}")
                 lines.append("")
