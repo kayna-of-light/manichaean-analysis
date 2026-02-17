@@ -1,0 +1,61 @@
+{
+  "chapter_number": 12,
+  "chapter_title": "Concerning the Interpretation of the Five Words th",
+  "stages_completed": [
+    "reading",
+    "criticism",
+    "harmonization"
+  ],
+  "spiritual_reading": {
+    "full_translation": "They turn their understanding toward the inmost Divine, confessing it as Life itself and the prior source of all things. They also confess that this inmost cannot be seized by any created intelligence nor fixed by any defining thought, so that its quality is beyond every name and beyond the grasp of those who receive life from it.\n\nThey then acknowledge a distinct proceeding from that same inmost: a living mediation by which life is brought forth and made present to what is below. This proceeding bears the character of its source and thus acts as a begetting principle with respect to everything that comes from it, yet it remains subsequent and subordinate to the inmost Divine, which alone is the first and unoriginated Life.",
+    "paragraph_translations": [
+      {
+        "paragraph_number": 2,
+        "translation": "They acknowledge an inmost Divine source, the very Life from which all life is, prior to everything that proceeds. They confess that this inmost is beyond comprehension and cannot be defined by any determinate concept, so that its quality is beyond every name and cannot be possessed as knowledge by any finite receiver.",
+        "connection": "CONTINUES the chapter by establishing the first principle as the unknowable inmost source of life.",
+        "notes": "The opening clause is fragmentary (“Those who…”) but the spiritual sense is clear: acknowledgment of the inmost Divine as unnameable and unknowable."
+      },
+      {
+        "paragraph_number": 3,
+        "translation": "They then speak of a second principle: a living proceeding from that inmost source, an active mediation through which life is communicated. Because everything derived from it receives life by its operation, it is spoken of as a begetting origin relative to what follows from it; yet it is confessed to be after and subordinate to the first inmost source.",
+        "connection": "DEVELOPS the teaching by introducing a distinct proceeding that mediates life while remaining secondary to the first.",
+        "notes": "The phrase “Third Ambassador” is numerically odd; it resists a clean internal logic but functions as a living mediating proceeding. The bracketed lacunae force some reconstruction of relationships."
+      }
+    ],
+    "overall_coherence": "Coherent as a two-step teaching: first the inmost Divine as unknowable Life itself, then a living proceeding that mediates and communicates life while remaining subordinate. The only stumble is the inconsistent numbering/title in the second paragraph, which reads like a textual disruption rather than a change of doctrine."
+  },
+  "textual_criticism": {
+    "findings": [
+      {
+        "location": "¶2",
+        "diagnosis": "Clean correspondential/theological substrate: establishes an unknowable first principle (“Father…before all…unnameable”) without administrative jurisdictional listing. The spiritual reading does not need to force a story; it naturally arises from the predicates in the text (prior, unnameable, unknowable).",
+        "voice": "correspondential",
+        "evidence": "Text: “call it by this name is the Father, the l[life, the one who is before all]… this unnameable, whom no one [knows] his name.” The spiritual reading notes only that the opening clause is fragmentary, but says “the spiritual sense is clear,” and its narrative (first principle as unknowable Life) follows the text’s own functional predicates: being ‘before all’ and ‘unnameable/unknown’ explains the theological sense without introducing ranks, territories, or officers.",
+        "recommendation": "none",
+        "scope": ""
+      },
+      {
+        "location": "¶3",
+        "diagnosis": "Localized title/number corruption (or a small seam-expansion) inside an otherwise coherent correspondential progression. The narrative teaches “second word” but the transmitted title “Third Ambassador” introduces an internal numerical mismatch that causes the reader’s only stumble. This looks like either (a) a scribal/translation-level conflation of an epithet with an ordinal, or (b) a later harmonizing gloss that imported a fixed Manichaean title (‘Third Ambassador’) into a list of “Five Words,” producing inconsistent enumeration.",
+        "voice": "mixed",
+        "evidence": "Text begins with enumeration: “The second [word is the Third]d Ambassador [the living envoy] of life… yet he is after] the first Father.” The spiritual reading explicitly stumbles here: “The phrase ‘Third Ambassador’ is numerically odd; it resists a clean internal logic… The only stumble is the inconsistent numbering/title… reads like a textual disruption rather than a change of doctrine.” Removing or neutralizing the intrusive ordinal resolves the narrative immediately: the chapter’s logic is ‘first Father’ → ‘second word/mediator after the first.’ The rest of ¶3 (‘living envoy of life… father of all that is derived… after the first Father’) remains a functional mediation schema and participates in the story; only the embedded “Third” disrupts it.",
+        "recommendation": "excise",
+        "scope": "Excise the intrusive ordinal within the title phrase, keeping the mediator but removing the conflicting enumeration: remove “Third]d” from “The second [word is the Third]d Ambassador …” (i.e., read: “The second [word is the] Ambassador [the living envoy] of life …”)."
+      }
+    ],
+    "summary": "2 findings: ¶2 is clean correspondential substrate (no action). ¶3 contains one localized disruption: an internal numbering/title mismatch (“second word” vs “Third Ambassador”) that matches the spiritual reading’s sole stumble. Recommend excising only the intrusive ordinal element (not the whole mediator paragraph), since the surrounding teaching remains coherent and participatory in the narrative."
+  },
+  "harmonized_paragraphs": [
+    {
+      "paragraph_number": 2,
+      "text": "[Those who] call it by this name is the Father, the l[life, the one who is before all] this unnameable, whom no one [knows] his name.",
+      "changed": false
+    },
+    {
+      "paragraph_number": 3,
+      "text": "⟨p.45⟩\nThe second [word is the] Ambassador [the living envoy] of life, whom they also call the father of [all that is derived from him] [yet he is after] the first Father.",
+      "changed": true
+    }
+  ],
+  "changes_summary": "Applied Finding 2 (¶3) excision: removed the intrusive ordinal element “Third]d” from the title phrase to resolve the internal numbering mismatch (“second word” vs “Third Ambassador”), leaving the mediator paragraph otherwise intact. No changes to ¶2 per Finding 1 (recommendation: none)."
+}
