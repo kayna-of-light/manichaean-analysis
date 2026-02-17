@@ -2244,75 +2244,75 @@ The first: The Great Builder came forth to build the new aeon.
 
 **¶1** You have told us that the Light Mi[nd] is this one who shall come and assume the saints. [You sai]d it to us like this: He too is one among the gods [and] many gods are with him. You have also told us: [W]hen he enters withi[n the body of] the flesh and binds the ol[d ma]n with his five counsels, he [set]s his five [couns]els upon him in the five limbs [of his] body.
 
-> *¶1 #3 [moderate]:* Syntax requires a connective: “one among the gods … many gods are with him.” The oldest-layer register prefers simple coordination rather than explanatory gloss.
+> *¶1 #3 [moderate]:* The sentence contrasts the Light Mind as "one among the gods" with the accompaniment of a plurality. The oldest layer typically uses a simple connective here rather than a named hierarchy; "and" preserves the impersonal, structural register.
 
 **¶2** [So], no[w], where is he? In that the old man is chained in the body! For I see how rebellions arise there despite his bondage, from time to time.
 
 **¶3** Also, secondly, I a[s]k you: If then he is a great God, unchanging and im/measurable, how could he come and appear in the smallness of the bo[dy]?
 
-**¶4** The third thing I want you to recount to [me concerning this: how] a holy one is the Mind, and he is pure; [how then does he endure] the defilement of this body?
+**¶4** The third thing I want you to recount to [me: How] a holy one is the Mind, and he is pure; [how does he not receive] the defilement of this body?
 
-> *¶4 #1 [moderate]:* The question-series asks for a causal account (pure Mind vs defiled body). A minimal connective and interrogative restoration fits the impersonal explanatory tone of the substrate.
-> *¶4 #2 [moderate]:* The missing clause must frame incompatibility of purity with bodily defilement, not moral exhortation. “Endure” keeps it cosmological/structural.
+> *¶4 #1 [moderate]:* The third question asks for an account reconciling purity/holiness with bodily defilement. The oldest-layer register frames it as an explanatory "How" rather than devotional petition.
+> *¶4 #2 [moderate]:* The question’s correspondential burden is: pure influx accommodated to impure ultimates without being defiled. The gap must introduce the mechanism: purity remaining untainted while present in the defiled body.
 
 **¶5** Fourthly: If truly the Light Mind exists in [the s]aints, why is his likeness not displayed to us, the way that he is?
 
 **¶6** The fifth thing I want, for you to tell me and explain about your apostola[te]. Look, it is not clear to me! For they oppress and persecute you in the world.
 
-**¶9** All that you have unveiled you have [spoken] in our presence. Yet, I wanted to kno[w that I might see the] L[igh]t Mind, the way that he is.
+**¶9** All that you have unveiled you have [spoken] in our presence. Yet, I wanted to kno[w; and know the] L[igh]t Mind, the way that he is.
 
-> *¶9 #1 [moderate]:* “unveiled … spoken in our presence” is the most economical substrate-like wording; avoids later homiletic expansions.
-> *¶9 #2 [moderate]:* The speaker wants direct cognition/vision of the Light Mind; “see” matches later ‘give vision to they who see’.
+> *¶9 #1 [moderate]:* "Unveiled" pairs naturally with "spoken" in this substrate: revelation is disclosure in discourse, not liturgical proclamation.
+> *¶9 #2 [moderate]:* The line contrasts what has already been unveiled "in our presence" with the request to know the Light Mind "the way that he is"—i.e., in essence. A coordination with "and" fits the didactic, non-devotional tone.
 
-**¶10** If I shall repeat [again] to you about these things that you are so set upon, and they become true f[o]r you after you are so set upon them, will you understand what you [seek]? On your account I will give vision to they who see! I will make the living fountain overflow for the thirsty, that they may drink and liv[e].
+**¶10** If I shall repeat [again] to you about these things that you are so set upon, and they become true f[o]r you after you are so set upon them, will you understand what you [seek to understand]? On your account I will give vision to they who see! I will make the living fountain overflow for the thirsty, that they may drink and liv[e].
 
-> *¶10 #1 [moderate]:* Fits the rhetorical pattern of reiterated instruction and the conditional: “If I shall repeat again to you…”.
-> *¶10 #3 [moderate]:* “will you understand what you seek?” matches the epistemic theme (vision/understanding) and avoids devotional diction.
+> *¶10 #1 [strong]:* The speaker resumes with a conditional repetition/recapitulation; "again" is the expected connective in this teaching style.
+> *¶10 #3 [moderate]:* Fits the didactic thrust: the promised "vision" depends on the hearer’s capacity to understand correspondentially, not on outward display.
 
-**¶11** All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re the folds] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [the bands] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [that are set] upon the head of the Porter. His [His thighs are the zone] from the [stretch from the knee] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re the mountains] and the entire zone that belongs [to the abyss below]
+**¶11** All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[are the folds] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [the extensions] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [that are set] upon the head of the Porter. His [and established] from the [thighs are the breadth] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re the mountains] and the entire zone that belongs [to the four quarters]
 
-> *¶11 #4 [moderate]:* The sentence defines stomach as “five unfolded ones” and then must identify them as parts/folds of the ‘garments’ (cosmic layers). “folds” preserves the garment-correspondence.
-> *¶11 #9 [moderate]:* From navel to hip corresponds to extending structures from the central sphere to the four corners; “bands” fits ‘garment’ anatomy and cosmic fastenings.
-> *¶11 #12 [moderate]:* Loins = lower tripartite earth-region ‘below’, supported ‘upon the head of the Porter’; “set” keeps the architectural register.
-> *¶11 #13 [moderate]:* After loins and before shins/feet, thighs naturally map to the zone/region immediately above the lowest strata.
-> *¶11 #14 [tentative]:* Required to continue the anatomical mapping down the body before “to the earth upon which the Porter is stood firm.”
-> *¶11 #16 [moderate]:* Shins/feet typically correspond to the solid supports of the world; “mountains” fits cosmological correspondences and the ‘foundation’ theme.
-> *¶11 #17 [moderate]:* Completes the descent: feet + lowest zone belong to what is beneath/underlies. Fits later ‘abysses below’.
+> *¶11 #4 [moderate]:* The stomach as "five unfolded ones" requires an apposition clarifying them as folds/compartments of the garments—cosmic layers arranged as coverings.
+> *¶11 #9 [moderate]:* From navel to hip = the connecting stretches from the central sphere to the quarters. "Extensions" matches the correspondence: derivations from the central knowledges to the four-world corners.
+> *¶11 #12 [moderate]:* Loins correspond to generative ultimates; the three earths are "set" beneath the Porter. The substrate uses simple placement verbs for cosmological stationing.
+> *¶11 #13 [moderate]:* Parallel to "set": the three earths are not transient but fixed as supports under the Porter (gate-function).
+> *¶11 #14 [tentative]:* Between loins and shins, thighs correspond to the broad supports connecting higher ultimates to lower. The text then immediately continues "from the ... to the earth"—a span term like "breadth" fits.
+> *¶11 #16 [tentative]:* Shins/feet are lowest supports; "mountains" as raised ultimates (in opposite sense, rigid elevations in the natural) commonly appear as part of the earth’s structure.
+> *¶11 #17 [moderate]:* Completes the clause "and the entire zone that belongs ..."—the zone is distributed to the four directions/worlds, matching the earlier "corners of the four worlds."
 
 **¶12** ⟨p.91⟩
-His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [encircles them] the vessels of the great fire. His [inner skin is] of darkness. His gall is the [... His] great intestine is the breadth of the great [bowels are the storehouses] of the worlds. His veins [of the smoke] all [the spri]ngs and wells. His e[eyes (?) are the sun and the moon] His feet are his [heels]
+His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [is stretched out] the vessels of the great fire. His [inner skin is] of darkness. His gall is the [... His] great intestine is the breadth of the great [midriff is] of the worlds. His veins [bladder is the storehouse] all [the spri]ngs and wells. His e[ears are the winds] His feet are his [toes]
 
-> *¶12 #4 [moderate]:* Outer skin as a ‘wall’ must be a surrounding enclosure around the great fire and its piercing. “encircles” is structurally demanded.
-> *¶12 #5 [moderate]:* Pairs naturally with “outer skin”; the next clause refers to vessels of the great fire, suited to an ‘inner’ layer.
-> *¶12 #7 [tentative]:* Digestive organs correspond to receptacles/containers; ‘storehouses’ suits ‘vessels’ and the great fire’s containment.
-> *¶12 #8 [tentative]:* Opposed emanation of the great fire is smoke; complements ‘fire’ without moralizing.
-> *¶12 #10 [moderate]:* Eyes correspond to luminaries that give sight; in this mythic anatomy, sun/moon are the natural correspondences. Fits the uncertainty marker.
-> *¶12 #11 [tentative]:* After eyes, the text returns to feet; “His feet are his …” expects a sub-part. Heels fits anatomy and cosmic ‘ends’.
+> *¶12 #4 [moderate]:* Outer skin as enclosing wall: the correspondence demands an enclosing/stretching boundary around the dangerous fire-perimeter.
+> *¶12 #5 [moderate]:* The anatomy-to-cosmos mapping typically pairs outer/inner skins: outer wall; inner as vessels/containers. This keeps the ordered body-correspondence.
+> *¶12 #7 [tentative]:* Between skins and gall/intestines, a divider/partition is expected: midriff/diaphragm corresponds to separating boundary within the fiery region.
+> *¶12 #8 [tentative]:* A receptacle correspondence is demanded before the intestines/breadth. "Storehouse" suits the cosmological containment register.
+> *¶12 #10 [moderate]:* Ears correspond to reception; in cosmos-body mapping, winds/breath are the natural correspondents of influx/utterance. Fits the later wind-track/springs theme.
+> *¶12 #11 [tentative]:* Feet already mentioned; a final detail like toes fits the body-schema completion in this catalogue.
 
-**¶13** This is how each of the worlds h[ave been ha]rmonised (?). Five gods are fastened in him. [And] they are his soul and his life [These five] man is a sinner [while the] the Living Spirit and the Ambassador [and also] the five sleepless guardians.
+**¶13** This is how each of the worlds h[ave been ha]rmonised (?). Five gods are fastened in him. [and made to stand] they are his soul and his life [and bound together] man is a sinner [for] the Living Spirit and the Ambassador [until the bonds are loosed] the five sleepless guardians.
 
-> *¶13 #2 [moderate]:* Transitions from cosmography to indwelling powers; minimal connective.
-> *¶13 #3 [moderate]:* Prepares “they are his soul and his life” referring to the five gods fastened in the cosmic man.
-> *¶13 #4 [moderate]:* Sets contrast: cosmic man as structure vs ordinary man as sinner.
-> *¶13 #5 [moderate]:* Introduces a further list: Living Spirit, Ambassador, five sleepless guardians.
+> *¶13 #2 [moderate]:* The worlds are "harmonised" by being fixed in stations; "made to stand" matches the watch-keeper/foundation theme.
+> *¶13 #3 [moderate]:* Harmony in this system is fastening/binding—key vocabulary throughout (chains, fastenings, binding).
+> *¶13 #4 [strong]:* Introduces the causal explanation that follows: five gods fastened in him, etc.
+> *¶13 #5 [tentative]:* The line moves toward the salvific mechanism (Living Spirit/Ambassador/guardians). The substrate often marks the provisional state "until" release occurs.
 
-**¶14** He has [appointed first] the Keeper of Splendour, the mind that is [set above] in the wo[r]ld of the mind that is above. He has [the whole array] who]le [all] of the powers of hea[ven that] are in [the camp] of the great King of Honour, [who is the thought that exists i]n the seventh firmament. He has humbled [And] also of the Adamant of Lig[h]t, who is the insight [insight] from {} he has given [the first mixture] because of lust [He has] also appointed the King of Glory, who is the coun[sel and] patience over the three images; that of wind, that of fire, and that of water. He has handed over to him the [set as] do evilness. [power to chastise] the Porter, who is the consideration [those who] the wi]sdom in the [He appointed also] which is below. He has made him [made firm] the foundation [below the three earths]
+**¶14** He has [set in him] the Keeper of Splendour, the mind that is [set fast] in the wo[r]ld of the mind that is above. He has [enclosed] who]le [the entire] of the powers of hea[ven that] are in [the camp] of the great King of Honour, [who is the thought that exists i]n the seventh firmament. He has humbled [set over] also of the Adamant of Lig[h]t, who is the insight [insight;] from {} he has given [the sixth firmament] because of lust [... He has] also appointed the King of Glory, who is the coun[sel and] patience over the three images; that of wind, that of fire, and that of water. He has handed over to him the [set over them] do evilness. [three images] the Porter, who is the consideration [power to restrain] the wi]sdom in the [and he appointed] which is below. He has made him [He has appointed] the foundation [below all the earths]
 
-> *¶14 #1 [moderate]:* The paragraph enumerates installations of cosmic governors; “appointed first” matches sequential commissioning.
-> *¶14 #2 [moderate]:* Keeper of Splendour is located “in the world of the mind that is above”; “set above” fits.
-> *¶14 #4 [moderate]:* The damaged phrase “who]le [...] of the powers of heaven” points to a collective: “whole array”.
-> *¶14 #5 [strong]:* Completes “the whole … of the powers of heaven”.
-> *¶14 #7 [moderate]:* “in … of the great King of Honour” expects “camp” or “watch”. “camp” matches later usage.
-> *¶14 #9 [moderate]:* New commissioning clause follows.
-> *¶14 #11 [moderate]:* Adamant of Light is defined as ‘insight’; later the five virtues include insight/perfection. Substrate coherence demands this.
-> *¶14 #12 [tentative]:* The commissioning is ‘because of lust’ and mixture below; “first mixture” is a core cosmological notion (mingling of light/dark).
-> *¶14 #14 [moderate]:* King of Glory corresponds to ‘counsel’ (patience) in later mapping; “counsel and …” leads into ‘patience’.
-> *¶14 #15 [moderate]:* “appointed … set as patience over the three images” fits role-language without ecclesial overlay.
-> *¶14 #16 [tentative]:* He is given an instrument to restrain evilness in the three elemental images; “chastise” is functional.
-> *¶14 #17 [strong]:* Leads into “do evilness”.
-> *¶14 #18 [moderate]:* Introduces the Porter commissioning.
-> *¶14 #19 [moderate]:* Porter as ‘consideration/wisdom’ stabilizes the lower foundation; “made firm” matches foundation language.
-> *¶14 #20 [moderate]:* Completes “foundation below …” in the same cosmographic scheme (three earths supported above Porter).
+> *¶14 #1 [strong]:* Each watch-keeper clause begins "He has ..."; the first missing phrase should be the generic stationing verb.
+> *¶14 #2 [strong]:* Keeper of Splendour is a fixed governor "set firm" above the prison; "set fast" maintains the restraint/fastening vocabulary.
+> *¶14 #4 [moderate]:* The mind "above" is enclosed/terminated in its firmament-station; enclosure is the chapter’s solution to "great in the small."
+> *¶14 #5 [strong]:* Introduces "whole ... of the powers"; required for grammatical completion.
+> *¶14 #7 [moderate]:* Powers of heaven are "in" a camp/watch-district; keeps the military-station metaphor stripped of later ecclesial tone.
+> *¶14 #9 [moderate]:* The King of Honour as "thought" is placed as overseer in the seventh firmament; "set over" expresses functional governance.
+> *¶14 #11 [strong]:* Adamant of Light is explicitly "insight"; the gap should complete that apposition cleanly in oldest-layer terminology.
+> *¶14 #12 [moderate]:* In the standard layered schema, thought in the seventh; insight in the sixth; counsel in the fifth; etc. This preserves discrete-degree architecture.
+> *¶14 #14 [strong]:* King of Glory is "counsel" paired with patience; the lacuna sits inside "counsel ... patience" and should provide the connective continuation.
+> *¶14 #15 [moderate]:* He exercises authority over the three images/wheels; "set over" matches the pattern of appointments.
+> *¶14 #16 [strong]:* Echoes immediately "that of wind, that of fire, and that of water"; restoring the referent maintains coherence.
+> *¶14 #17 [moderate]:* He is given something "to do evilness"—i.e., to curb it, not commit it. Oldest substrate frames governance as restraint/limitation.
+> *¶14 #18 [strong]:* Marks transition to the Porter appointment, maintaining the catalogue rhythm.
+> *¶14 #19 [strong]:* Parallelism: each governor is "appointed"; redundancy is typical of this register.
+> *¶14 #20 [moderate]:* The Porter is wisdom/consideration "below"; the foundation is beneath all. This completes the downward discrete-degree placement.
 
 **¶15** ⟨p.92⟩
 Furthermore: The Ambassador refined from them five intellectuals of life. Also, the summons and the obedience were situated there. Now, they made six sons of the Living Spirit, together with the six sons of the First Man!
@@ -2321,153 +2321,153 @@ Furthermore: The Ambassador refined from them five intellectuals of life. Also, 
 
 **¶17** Furthermore: Jesus the Youth was set there; who is the image of the living word, of the utterance and the obedience.
 
-**¶18** He has made strong these camps, those above and those below [by their boundaries], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
+**¶18** He has made strong these camps, those above and those below [by their ordinances], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
 
-> *¶18 #1 [moderate]:* The strengthening of camps aims at security in each watch-district’s circuit; “boundaries” fits correspondential containment.
+> *¶18 #1 [moderate]:* Camps are made strong "so that" each is secure; in the substrate the securing cause is ordinance/order rather than moral exhortation.
 
-**¶19** And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Sin abor[te]d, [it t]angled i]n with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [was] in the third firmament that is above the watch-t[ower of] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
+**¶19** And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Sin abor[te]d, [it t]angled i]n with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [and it rose] in the third firmament that is above the watch-t[ower of] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
 
-> *¶19 #4 [moderate]:* “The Sin aborted, it tangled…” requires auxiliary to keep narration flowing: “it was tangled…”.
-> *¶19 #5 [moderate]:* “above the watch-tower … the Keeper of Splendour” needs genitive: “watch-tower of the Keeper of Splendour.”
+> *¶19 #4 [moderate]:* Sin mixed with light then "went" to the third firmament; a rising motion fits the correspondential surge before descent to dry/moist.
+> *¶19 #5 [strong]:* "watch-tower" must govern/locate the Keeper of Splendour; completing as "watch-tower of the Keeper" maintains spatial hierarchy.
 
-**¶20** Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [troubled] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [and it spread] to it.
+**¶20** Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [inflamed] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [and ruin was added] to it.
 
-> *¶20 #2 [moderate]:* Thought (King of Honour) ‘is made … with wrath’: “troubled” gives the state-change enabling uprising.
-> *¶20 #4 [tentative]:* “destruction, on the earth … to it” expects propagation of ruin. “spread” keeps impersonal causal tone.
+> *¶20 #2 [moderate]:* Thought "made ... with wrath" demands a verb of ignition; wrath corresponds to perverted fire.
+> *¶20 #4 [moderate]:* After "destruction, on the earth" the clause "... to it" needs an augmenting phrase: ruin added to the earth from the watchers’ acts.
 
-**¶21** The Adamant [of Light is] the fulfillment. He is set firm upo[n the fourth firmament] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
+**¶21** The Adamant [of Light is] the fulfillment. He is set firm upo[n the fifth firmament] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
 
-> *¶21 #1 [moderate]:* “The Adamant … the fulfillment.” Needs identifier: “Adamant of Light”.
-> *¶21 #2 [tentative]:* Adamant corresponds to insight and is often placed in a firmament above the lower three; “fourth” fits the sequence hinted (third firmament already used).
+> *¶21 #1 [moderate]:* Begins the section: "The Adamant ... the fulfillment"; requires the genitive completion to specify the entity.
+> *¶21 #2 [tentative]:* Completes "set firm upon ..." in the descending degree-series: Adamant/insight placed in the sixth (above) earlier; here a watch associated with Adamant may be set upon the fifth/its station. Some uncertainty remains due to compression.
 
-**¶22** Once again: In the watch of the great King of Glory, wh[O] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were greatly] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [tracks] their ascent was impeded by them [so that] the w[ind], the water, and the fire ascend on them.
+**¶22** Once again: In the watch of the great King of Glory, wh[o] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were greatly] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [ways] their ascent was impeded by them [and] the w[ind], the water, and the fire ascend on them.
 
-> *¶22 #4 [strong]:* “pained and oppressed” needs adverbial intensifier; “greatly” fits.
-> *¶22 #5 [moderate]:* Paths closed; their “tracks”/routes of ascent blocked is consistent with later ‘straightened the tracks’.
-> *¶22 #6 [moderate]:* Introduces consequence: ascent impeded…
+> *¶22 #4 [strong]:* The three earths are "pained and oppressed"—an intensifier is expected before the doublet.
+> *¶22 #5 [moderate]:* "paths closed" to their ... : in this schema, ways/roads of ascent are closed to the powers in the three earths.
+> *¶22 #6 [strong]:* Connects impediments: ascent impeded ... and wind/water/fire ascend. Simple connective fits.
 
-**¶23** [O]nce again: In the watch of the Porter, he who humiliates [all the uprising] upr]ising of the abysses below [and the earth was] bent, the fastenings underneath were loosened [downward] in the foundation below.
+**¶23** [O]nce again: In the watch of the Porter, he who humiliates [the great] upr]ising of the abysses below [and the] bent, the fastenings underneath were loosened [were] in the foundation below.
 
-> *¶23 #2 [moderate]:* Porter’s watch: uprising of the abysses below; needs a quantifier/subject.
-> *¶23 #3 [tentative]:* Links abyss-uprising to terrestrial effect before “bent”.
-> *¶23 #4 [moderate]:* Completes “bent” (bent downward); fits foundation loosening.
+> *¶23 #2 [moderate]:* "Porter, he who humiliates ..." requires an object: humiliates the great uprising of the abysses—i.e., brings it low.
+> *¶23 #3 [strong]:* Connects uprising with resulting bending/loosening of fastenings.
+> *¶23 #4 [strong]:* "fastenings underneath were loosened" needs auxiliary; restores straightforwardly.
 
-**¶24** On account of the earthquake that happened in the watch of the Keeper of Splen[dour], the Pillar of Glory came forth; as it [became the] helper of the Keeper of Splendour. It bore up under all [burden]s.
+**¶24** On account of the earthquake that happened in the watch of the Keeper of Splen[dour], the Pillar of Glory came forth; as it [was made] helper of the Keeper of Splendour. It bore up under all [burden]s.
 
-> *¶24 #2 [moderate]:* “as it … helper” requires copular phrase: “became the helper”.
+> *¶24 #2 [moderate]:* "came forth; as it ... helper" requires a passive/causative: Pillar of Glory was made/helper appointed.
 
 **¶25** Conversely, because of the treachery and the uprising that happened in the watch of the great King of Honour, which is the watchers who came down to earth from the heavens; four angels were called upon about them. They bound the watche[r]s with an eternal chain, in the prison of the blackened ones (?). [Th]ey obliterated their children from upon the earth.
 
 **¶26** [Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [the Youth] the prayer of the five sons. He assumed them [through] the abortions. He fastened them beneath the [from among] the mind of Adam.
 
-> *¶26 #3 [moderate]:* Jesus appears in this chapter specifically as the descending corrector; “Jesus the Youth” is the teaching-layer title used later (¶17).
-> *¶26 #4 [moderate]:* “sent Jesus … the prayer of the five sons” needs a mediating preposition: sent Jesus through/with the prayer.
-> *¶26 #5 [tentative]:* “He assumed them … the abortions” = took the (prayer/sons) from among/against the abortions; “from among” is safest minimal glue.
+> *¶26 #3 [moderate]:* The descent is by the accommodated saving figure already identified as "Jesus the Youth" in ¶17; oldest layer uses functional epithet rather than NT overlay.
+> *¶26 #4 [strong]:* "he sent Jesus ... the prayer" requires an instrumental: through/by means of the prayer of the five sons.
+> *¶26 #5 [moderate]:* "He assumed them ... the abortions": the saved elements are taken out from among the abortions—separation by selection.
 
 **¶27** ⟨p.94⟩
 Also, because of the earthquake that happened in these three earths, and in that the paths were hindered and the springs of wind and water and fire were impeded, Jesus cast himself down. He assumed Eve; and he straightened the tracks of the [win]d, the water, and the fire. He opened the springs for them, and he set [in ord]er the path of their ascent.
 
-**¶28** Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [had held it] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [upper] rest.
+**¶28** Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [were beneath it] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [place of] rest.
 
-> *¶28 #3 [moderate]:* Fastenings beneath were loosened from what had held the earth; “had held it” supplies antecedent without importing later terminology.
-> *¶28 #11 [moderate]:* “came up to his … rest” expects a locative epithet; “upper rest” contrasts with descent to the loosened foundation.
+> *¶28 #3 [moderate]:* Fastenings that "... because of this": they were beneath the earth/Porter and got loosened; required referent for strengthening beneath.
+> *¶28 #11 [moderate]:* "came up to his ... rest": the idiom is return to the place/station of rest, i.e., proper degree after descent.
 
-**¶29** Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [without failing]. Uprisings have happened, and treachery, in them. The [tremblings occur] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
+**¶29** Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [in their stations]. Uprisings have happened, and treachery, in them. The [earthquakes occurred] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
 
-> *¶29 #3 [moderate]:* “watching over them …” needs adverbial qualifier of continual vigilance.
-> *¶29 #4 [moderate]:* Parallel to “uprisings… treachery” and later “earthquake”; “tremblings occur in them” fits.
+> *¶29 #3 [moderate]:* Watch-keepers/gods master "watching over them" in fixed stations; fits the theme of being set fast yet subject to uprisings in their districts.
+> *¶29 #4 [moderate]:* The repeated disturbances in the macrocosm are earthquakes/treacheries; "earthquakes" anticipates the microcosm comparison.
 
 **¶30** So also is this body! A mighty power lives here, even if it is small in its stature. Nevertheless, Sin dwells within, and the old man who is lodged in it. Certainly he is cruel, with great cunning; until the Lig/ht Mind finds how to humble this body, and drive it [according to] his pleasure.
 
 **¶31** Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. Sin raises [up], from time to time, its agitations in the body.
 
-**¶32** Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [them after] they have acted first with a righteous judgement.
+**¶32** Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [them afterward,] they have acted first with a righteous judgement.
 
-> *¶32 #1 [moderate]:* “Then they seize … they have acted first with a righteous judgement.” The gap needs temporal sequencing: seize them after allowing.
+> *¶32 #1 [moderate]:* After permitting error "for a moment" the powers "seize"—i.e., take hold of the enmity afterward; this matches providential permission then restraint.
 
 **¶33** ⟨p.95⟩
-And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [in their places] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [the end of the circuit]
+And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [to] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [that are in the zone]
 
-> *¶33 #2 [moderate]:* “in that … are great and mighty ones” then “enclosed and hard pressed in this place” supports explicit locative plural.
-> *¶33 #4 [tentative]:* “bearing up till …” most naturally completes with the cosmological boundary/limit of their appointed circuit.
+> *¶33 #2 [strong]:* Completes the phrase "with respect to" in the question formula.
+> *¶33 #4 [moderate]:* "These gods, in that ... are great" needs a locator: they are in the zone/watch-district system; supports the later analogy to body.
 
 **¶35** (Sin) bou]nd (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
 
-**¶36** (Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [stand beside it], pronouncing to the soul and continually leading it on to every evil thi[n]g, to all the sins of lust, to the worship of idols, to erroneous opinions, to humili[ation]; in the humiliation of slavery! As it is set fast, wors[hipping] the things that [are] will not remain; making obeisance [to] idols of wood and gold and silver [and stones] worshipping beasts that are unclean and polluted! They are ugly in their appearances and their forms.
+**¶36** (Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [were standing there], pronouncing to the soul and continually leading it on to every evil thi[n]g, to all the sins of lust, to the worship of idols, to erroneous opinions, to humili[ation]; in the humiliation of slavery! As it is set fast, wors[hipping] the things that [are made of matter] will not remain; making obeisance [to] idols of wood and gold and silver [and stones;] worshipping beasts that are unclean and polluted! They are ugly in their appearances and their forms.
 
-> *¶36 #4 [moderate]:* “They …, pronouncing to the soul” needs a verb of continual presence/attendance of the five demonic powers.
-> *¶36 #8 [moderate]:* “the things that … will not remain” needs copula: “that are transient/that are … will not remain.”
-> *¶36 #9 [strong]:* “making obeisance … idols” requires “to idols”.
-> *¶36 #10 [moderate]:* Standard ancient pairing: “idols of wood… and stones”; also fits the catalogue style without Christian overlay.
+> *¶36 #4 [moderate]:* The five angels/authorities placed upon the soul’s members then "... , pronouncing"—a participle like "standing" fits as stationed overseers.
+> *¶36 #8 [moderate]:* "worshipping the things that ... will not remain" demands a description of transient externals; "made of matter" expresses perishability in this register.
+> *¶36 #9 [strong]:* "making obeisance ... idols" needs the preposition.
+> *¶36 #10 [moderate]:* Completes common triad: wood, stone, metals; keeps non-Christian, anti-idolatry polemic in correspondential terms.
 
 **¶37** ⟨p.96⟩
-(The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [and it hated] itself, being wicked [and to] its own light [and it darkened]
+(The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [and it hated] itself, being wicked [and hostile to] its own light [it extinguished]
 
-> *¶37 #3 [moderate]:* “became hostile to its father … itself” needs explicit hatred/hostility verb.
-> *¶37 #4 [strong]:* Connects hostility to father and to itself.
-> *¶37 #5 [moderate]:* “its own light …” requires verb of obscuring/extinguishing light.
+> *¶37 #3 [moderate]:* Hostility to father follows forgetfulness; hatred expresses inversion of influx (turning from source).
+> *¶37 #4 [moderate]:* Pairs with previous clause: hostile to father and to itself—closed system of proprium.
+> *¶37 #5 [moderate]:* "its own light" in the final phrase demands a verb of quenching; corresponds to loss of spiritual illumination.
 
-**¶38** The Light Mind comes and finds the soul [in bondage] it assuming it in the [members,] its wisdom [and by] he shall become for it [teaches it;] the bonds [a loosener of] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the sin in the skin.
+**¶38** The Light Mind comes and finds the soul [lying in forgetfulness;] it assuming it in the [and he raises] its wisdom [body,] he shall become for it [and by] the bonds [a loosener of] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the sin in the skin.
 
-> *¶38 #1 [moderate]:* Mind finds the soul “in bondage”; matches the binding/unbinding mechanics of members.
-> *¶38 #2 [moderate]:* “assuming it in the … its wisdom” expects locus: in the members (of body).
-> *¶38 #3 [moderate]:* Instrumental linkage: assuming it and by/with wisdom.
-> *¶38 #4 [moderate]:* Old layer emphasizes illumination/ordering rather than preaching; “teaches it” is functional.
-> *¶38 #5 [moderate]:* He “shall become for it … the bonds”: he becomes the loosener of bonds.
+> *¶38 #1 [moderate]:* The Light Mind finds the soul in the state described in ¶37: error/forgetfulness. This anchors the reversal sequence.
+> *¶38 #2 [moderate]:* After finding, he acts: raising/awakening corresponds to enlightenment preceding loosening of bonds.
+> *¶38 #3 [moderate]:* "assuming it in the ..." points back to the body as ultimate receptacle where the work of rebinding occurs.
+> *¶38 #4 [strong]:* Introduces the means: by his wisdom he becomes liberator.
+> *¶38 #5 [moderate]:* He becomes for it what he does: loosener of bonds in the five members—matches the correspondential mechanics.
 
 **¶39** ⟨p.97⟩
 This is how he shall release the members of the soul, and make them free from the five members of sin. Conversely, these five members of sin, which were loose, he shall bind them.
 
-**¶40** He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of sin; and he adds to it his word, so that his [word] becomes nourisher and strengthener [of the members]
+**¶40** He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of sin; and he adds to it his word, so that his [utterance] becomes nourisher and strengthener [utterance]
 
-> *¶40 #12 [moderate]:* “so that his … becomes nourisher and strengthener” points to the implanted ‘word’ (utterance) as sustaining power in the new man.
-> *¶40 #13 [moderate]:* Completes the function: the word nourishes/strengthens the members (of the new man).
+> *¶40 #12 [moderate]:* The triad in ¶17 is "living word, utterance, obedience"; here "image of the word" is purified so that the expressed doctrine (utterance) becomes nourishing/strengthening.
+> *¶40 #13 [moderate]:* "so that his ... becomes nourisher"—in this register it is the purified utterance/teaching that feeds and strengthens the new man.
 
-**¶41** Now, when he shall perf[ect and order the tw]elve members. This [is how he makes firm his love] and his wisdom. His [faith] becomes righteous, as he perf[ects his perfection] While formerly he was running [after the lusts] but instead of this, now he runs [after righteousness,] his road and his path and his [steps] also [he mounts up] to the heights, to the great aeons [and is gathered] thus the old man is bound in the [in peace.] and his lust, his [body] his foolishness in these five members of the bo[dy,] the dark spirit is imprisoned with them in a bond and in severe misery.
+**¶41** Now, when he shall perf[ect and order all the]elve members. This [it happens by his love] and his wisdom. His [faith] becomes righteous, as he perf[ects him in completeness] While formerly he was running [in wandering ways,] but instead of this, now he runs [in the straight way,] his road and his path and his [work;] also [he mounts up] to the heights, to the great aeons [and is established] thus the old man is bound in the [so that] and his lust, his [five members] his foolishness in these five members of the bo[dy,] the dark spirit is imprisoned with them in a bond and in severe misery.
 
-> *¶41 #1 [moderate]:* He perfects/sets in order the twelve members (a fixed structural total).
-> *¶41 #2 [moderate]:* The clause enumerates love and wisdom; “makes firm” matches the stabilizing action on members.
-> *¶41 #3 [strong]:* Completes the pentad: love, faith, perfection, patience, wisdom; here love and wisdom already present so “faith” is demanded.
-> *¶41 #4 [moderate]:* Parallelism: “becomes righteous, as he perfects …” demands a member/virtue; perfection is core.
-> *¶41 #5 [moderate]:* “formerly he was running …” refers to former course after lusts/sin.
-> *¶41 #6 [moderate]:* Antithesis: formerly after lusts, now after righteousness.
-> *¶41 #7 [moderate]:* “his road and his path and his …” naturally takes “steps”.
-> *¶41 #9 [tentative]:* Ascent to aeons implies being gathered/received; keeps impersonal cosmological tone.
-> *¶41 #10 [moderate]:* Contrasts with ensuing imprisonment/misery of old man; “peace” is structural-state language here.
-> *¶41 #11 [strong]:* “old man is bound in the …” must be “body”.
-> *¶41 #12 [strong]:* Closes “body …” continuing list of lust etc in five members.
+> *¶41 #1 [moderate]:* Perfection culminates in ordering "the twelve" (totality of truths/goods). A doublet "perfect and order" matches the constructive cadence.
+> *¶41 #2 [moderate]:* The sentence enumerates love/faith/perfection/patience/wisdom as governing principles; this clause ties the process to those internals.
+> *¶41 #3 [moderate]:* Immediately paired with love and wisdom in the following: the triad needs naming.
+> *¶41 #4 [moderate]:* "as he perf[ects ...]" requires an object: the person/new man. "in completeness" resonates with twelve=all things.
+> *¶41 #5 [moderate]:* Formerly running in disorder; the old life is described as wandering rather than pilgrimage (avoids later overlay).
+> *¶41 #6 [moderate]:* Now running in ordered doctrine-of-life; straightness corresponds to rectified tracks earlier.
+> *¶41 #7 [moderate]:* "road and path and his ..."—the third term naturally is work/deed/use, the ultimate expression of doctrine.
+> *¶41 #9 [moderate]:* Ascent to aeons implies being fixed in higher degree; "established" matches stationing/fastenings vocabulary.
+> *¶41 #10 [strong]:* Introduces the consequence: old man bound, lust imprisoned, etc.
+> *¶41 #11 [strong]:* Old man bound in the five bodily members—the same schema as earlier binding/rebinding.
+> *¶41 #12 [strong]:* Completes "body" with comma continuation.
 
-**¶42** Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [is] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [are bound,], thus sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
+**¶42** Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [is] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [are secure,], thus sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
 
-> *¶42 #2 [strong]:* “Yet, his king … the Light Mind” requires copula: “his king is the Light Mind”.
-> *¶42 #6 [moderate]:* “While the members …, thus sin is imprisoned.” Needs condition: while members are bound/ordered.
+> *¶42 #2 [strong]:* "Yet, his king ... the Light Mind" requires copula: king is the Light Mind.
+> *¶42 #6 [moderate]:* "While the members ..., thus sin is imprisoned"—the missing phrase should assert the secured/ordered state of the members of the new man.
 
-**¶43** There are occasions when sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [thoughts of error]
+**¶43** There are occasions when sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [empty ones.]
 
-> *¶43 #2 [moderate]:* After foolish words, a parallel object is needed; “thoughts of error” fits mind-clouding theme.
+> *¶43 #2 [moderate]:* After "foolish words and some ..." the parallelism calls for a second descriptor: empty/idle words, matching clouds of doubt.
 
-**¶51** [T]hen, have I taught you, and opened your (sg.) [eyes], as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [watch-district] of the [Li]ght [M]ind.
+**¶51** [T]hen, have I taught you, and opened your (sg.) [eyes], as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [watch-districts] of the [Li]ght [M]ind.
 
-> *¶51 #6 [moderate]:* Disturbance arises “in the … of the Light Mind”; consistent technical term is watch-district.
+> *¶51 #6 [strong]:* "disturbance ... in the ... of the Light Mind" needs the structural term used throughout: watch-districts.
 
 **¶52** So al[so] these watch-keepers, for they are set [fastened] fi[rm in] the zone, (but) they are not visible. Again, this too is the way of the Light Mind, [for he is] not visible in the body.
 
-> *¶52 #2 [moderate]:* Watch-keepers are ‘set fast’ yet invisible; “fastened” echoes earlier fastening vocabulary.
+> *¶52 #2 [moderate]:* They are "set ... firm": the verb underlying this system is fastening/binding in place.
 
-**¶53** Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are great, [y]et have they contorted themselves. They have [bent themselves], they have become small, to the measure of the task that is apportioned to each o[n]e [of t]hem. Again, this too is like the Mind, himse[lf] a great one, and exalted; but he is bent over and [has] become small, to this little worthless [bo]dy.
+**¶53** Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are great, [y]et have they contorted themselves. They have [bent themselves down], they have become small, to the measure of the task that is apportioned to each o[n]e [of t]hem. Again, this too is like the Mind, himse[lf] a great one, and exalted; but he is bent over and [has] become small, to this little worthless [bo]dy.
 
-> *¶53 #5 [moderate]:* Explicit parallel to Light Mind “bent over… become small”.
+> *¶53 #5 [strong]:* Accommodation is described as bending/contorting to the measure of the task—core theme in ¶53–54.
 
-**¶54** [Even so] the gods in the outer [z]one: they are transcendent and purified, they are set [f]a[st in] the mingling of the totality, (but) are not defiled. [This too is like the] Light [Mind]. While he is placed in hi[s camp,]
+**¶54** [Even so] the gods in the outer [z]one: they are transcendent and purified, they are set [f]a[st in] the mingling of the totality, (but) are not defiled. [This too is like the] Light [Mind]. While he is placed in hi[s place in the flesh]
 
-> *¶54 #7 [moderate]:* “placed in his …” must complete to “his camp” per repeated motif: each power stays fast at its camp.
+> *¶54 #7 [moderate]:* Completes the accommodation claim: Mind placed in his place (camp) within flesh without defilement—pure influx in mixed ultimate.
 
 **¶55** ⟨p.100⟩
 Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of Sin. He limits them and distributes them out. He sets them down at his pleasure.
 
 **¶57** I have taught you] the deeds of the [Light] Mind! Whoever has an open and percept[ive] eye, [he can] appear to him. Whoever has not that eye, he can not appear to him.
 
-**Assessment:** Most small/mid-word lacunae are mechanically restorable (strong). Larger gaps (esp. ¶11–14 cosmographic anatomy and the watch-district upheavals) can be reconstructed only to a moderate/ tentative level because the Coptic layer compresses technical lists; restorations were constrained by the chapter’s governing correspondence (cosmic Man ↔ cosmos; five members/virtues ↔ five bound powers; watch-districts ↔ bodily organs) and by consistent internal vocabulary (camp, watch-district, set fast, bind/loosen, foundation/fastenings). A few fills remain tentative where multiple parallel technical terms are possible (e.g., specific lower-body mappings; Adamant’s firmament placement; some organ-to-cosmos identifications).
+**Assessment:** Most lacunae here are short, mechanical Coptic restorations (letters/particles) and could be filled with strong confidence. Where the gaps affect cosmological body-mapping (¶11–12) or degree-stations (¶14, ¶21), the correspondential structure tightly constrains the function (enclosure, stationing, restraint, accommodation), but not always the exact noun; those reconstructions remain moderate to tentative. Overall, the restored text preserves the oldest-layer impersonal, architectural voice: ordered stationing, binding/loosening, and accommodated influx rather than later devotional framing.
 
 ---
 
