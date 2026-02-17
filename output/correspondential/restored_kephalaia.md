@@ -4638,19 +4638,19 @@ Also, the emissions that the waters discharge from them are lust. The discharge 
 
 ## Chapter 96: The Three Earths that Exist, they bear Fruit.
 
-**¶1** Three earths exist in the universe, and are being toiled over. At first they [receive] the farmer in them. Afterwards they bear [good] fruit to they who toil over them.
+**¶1** Three earths exist in the universe, and are being toiled over. At first they [are not receiving] the farmer in them. Afterwards they bear [good] fruit to they who toil over them.
 
-> *¶1 #1 [moderate]:* The sequence is: first the earth is worked, then it ‘receives the farmer’ (i.e., admits the cultivating power into itself); afterwards it ‘bears fruit’ to the laborers. This matches the correspondential order of receptacle → implantation → production.
+> *¶1 #1 [moderate]:* The law stated is: a field first resists influx and must be worked; only afterward does it yield fruit. The missing predicate should express initial non-reception/sterility before cultivation, in an impersonal cosmological register (not moral exhortation).
 
-**¶2** One of them is this great earth that people are living upon. They are ploughing in it [and breaking], it with iron hoes, they cultivate, [making] the furrows, turning it over [from it, from its soil.] Afterwards they harvest fruit from [it ...
+**¶2** One of them is this great earth that people are living upon. They are ploughing in it [with ploughs], it with iron hoes, they cultivate, [making] the furrows, turning it over [and sowing in it] Afterwards they harvest fruit from [it ...
 
-> *¶2 #1 [moderate]:* The description lists successive agricultural acts: ploughing, then breaking/loosening the ground with iron hoes, then cultivating and forming furrows, then turning it over, then harvesting. The missing phrase should be another verb coordinated with ‘ploughing’, governing ‘it with iron hoes’.
-> *¶2 #3 [tentative]:* The sentence anticipates ‘Afterwards they harvest fruit from it …’. The oldest-layer register tends to close the natural example with a complete, concrete phrase (‘from it / from its soil’) before transitioning to the second, interior ‘field’.
+> *¶2 #1 [moderate]:* The sequence of correspondences is implement → breaking/opening → ordering into receptacles. After “They are ploughing in it …, it with iron hoes,” the simplest required tool is the plough, matching the operation of opening the outermost earth for seed/truth.
+> *¶2 #3 [moderate]:* After furrows and turning-over comes the placement of seed into the prepared receptacles; correspondentially this is the insertion of truths into ordered memory-forms so that fruit (uses) can later be harvested. This also bridges naturally to the next clause “Afterwards they harvest fruit from it…”.
 
 **¶3** ⟨p.245⟩
 The second field is the living soul, the holy one. It is mixed in the entire zone, above and below. The farmers who toil over it are these two great light-givers, which journey through the heavens. They are toiling and cultivating it, so that they will draw it towards their aspect. And it leaps up and comes to the heights. It goes upwards, out from every place wherein it is, and it adds to them.
 
-**Assessment:** Most gaps are syntactically constrained by the agricultural parallelism (receive → bear; plough/break/cultivate → make furrows → turn → harvest). Exact wording is less tightly fixed in ¶2 #3, where only the closure of the example is demanded, not a specific technical term.
+**Assessment:** Most gaps are constrained by the farming-series correspondence (opening → breaking → furrowing → turning → sowing → harvest). Exact verb choices in ¶1 #1 and ¶2 #1 remain somewhat flexible, but the required spiritual functions (initial non-reception; plough as opening tool) are tight enough to restore with moderate confidence.
 
 ---
 
@@ -4896,18 +4896,18 @@ Not only this, but [the] child who is born; as the ho[b] approaches for him to b
 
 ## Chapter 108: Concerning the Seed Grain that shall be formed by the Elements, and also be destroyed by them
 
-**¶2** “This seed grain and this barley grain that you see shall be formed and [be raised up] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [and increase, so] it is destroyed [when they are in excess] through [their] hunger.
+**¶2** “This seed grain and this barley grain that you see shall be formed and [grown] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [in turn, so too] it is destroyed [when its root is cut off from the living influx] through [the state of] hunger.
 
-> *¶2 #1 [moderate]:* The sequence “formed … and … and beautified by the five elements” expects a three-step natural process: shaping → growing/being raised → coming to beauty (ripening). In the oldest cosmological register, the middle term is the elevation/growth of the form through the elements’ work.
-> *¶2 #2 [tentative]:* “Just as these things nourish it … it is destroyed … through … hunger” requires a parallel: the same pairs (warmth/cold) that nourish in due measure also, when imbalanced, bring diminution. A brief clause like “and increase, so” completes the analogy and sets up the contrary effect.
-> *¶2 #3 [moderate]:* The destruction is attributed to the same agencies named just before (warmth and cold). The correspondential logic is measure: elements in order give growth; elements in excess (or defect) give corruption. Hence a condition of excess fits the pivot to “it is destroyed.”
-> *¶2 #4 [moderate]:* The final phrase “through … hunger” most tightly constrains to “through their hunger,” i.e., hunger as the effect proceeding from the disordered elements’ action upon the seed/tree. This keeps the impersonal causal register (not moral exhortation).
+> *¶2 #1 [moderate]:* After “shall be formed and … and beautified,” the substrate logic requires the intermediate step of development from potency to actuality: seed → growth → adornment/ordering in ultimates by the elements. “Grown” fits the natural correspondence (increase/extension in the natural degree) without introducing later paraenetic language.
+> *¶2 #2 [tentative]:* The clause compares nourishing conditions to their opposite outcome when order is inverted. A transitional formula is demanded: as warmth/cold nourish in alternations, so (in the opposite sense) they can occasion ruin. “in turn, so too” keeps the impersonal, instructional register of the oldest layer.
+> *¶2 #3 [tentative]:* The destruction is not from the elements themselves but from severance from the higher degree (the ‘root’ correspondence: interior conjunction that supplies life to the natural). This supplies the missing condition that turns nourishment into deprivation, matching the chapter’s spiritual narrative of higher influx withheld/rejected.
+> *¶2 #4 [moderate]:* The final phrase must yield “through the state of hunger,” i.e., deprivation as a state of reception, not merely a bodily image. This preserves the correspondential sense (hunger = lack of good/truth in the natural mind) in the oldest, descriptive register.
 
 **¶4** “In this way too, a lack and a shortfall shall occur from place to place through them; and they who have chosen it have gathered it in and beautified and attained it, while an affliction shall arise for it through those.
 
 **¶5** “People also shall be caused to stumble on their account, through the energy of Matter that dwells in them. It has poured its shadow over them, just as it shall also pour its shadow over the elements and destroy the fruits of all the trees.”
 
-**Assessment:** All four gaps in ¶2 can be restored only by internal parallelism (nourish/destroy; due measure/excess) rather than by fixed technical names. The reconstructions are correspondentially coherent (order of elements produces growth; imbalance produces lack/hunger), but exact wording remains somewhat underdetermined.
+**Assessment:** All four lacunae can be restored in a way that matches the correspondential sequence (formation → growth → beautification; nourishment by alternations; inversion through severance; destruction through a state of deprivation). Exact connective particles are less constrained than the underlying spiritual logic, so confidence is strongest on the semantic roles and weaker on the precise phrasing of the transition/condition.
 
 ---
 

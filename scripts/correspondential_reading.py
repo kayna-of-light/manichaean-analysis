@@ -83,6 +83,21 @@ class LacunaFill(BaseModel):
     )
 
 
+class SpiritualReading(BaseModel):
+    """Pre-pass: correspondential reading of a full chapter."""
+    reading: str = Field(
+        description=(
+            "A correspondential reading of the chapter — its spiritual "
+            "narrative told through Swedenborg's theory of "
+            "correspondences. What is the chapter ABOUT at the "
+            "spiritual level? What movement of influx, what "
+            "transformation, what cosmological function is being "
+            "described? Name the correspondences operating in each "
+            "paragraph. This is the spiritual story the text tells."
+        )
+    )
+
+
 class ChapterResult(BaseModel):
     """Restoration result for one chapter."""
     fills: list[LacunaFill] = Field(
@@ -230,6 +245,95 @@ provide the text that should go inside the brackets.
 
 
 # ---------------------------------------------------------------------------
+# Pre-pass system prompt: generate spiritual reading
+# ---------------------------------------------------------------------------
+
+SPIRITUAL_READING_PROMPT = """\
+You are reading the OLDEST TEACHING SUBSTRATE of the Coptic Kephalaia \
+through the theory of correspondences as articulated by Emanuel Swedenborg.
+
+Your task is to produce a CORRESPONDENTIAL READING of the chapter — \
+the spiritual narrative the text tells when each natural image is read \
+as the spiritual reality it expresses.
+
+## WHAT CORRESPONDENCE IS
+
+Correspondence is the ORGANIC relationship between a natural object and \
+the spiritual reality it expresses. It is grounded in the object's \
+actual function, not in arbitrary assignment.
+
+- Light = wisdom/truth — light enables the eye to distinguish forms
+- Fire = love/will — fire is the active principle that gives light existence
+- Water = truth in the natural degree — water sustains natural life
+- Garments/Robes = external truths — garments clothe the body
+- Mountains = elevated spiritual states — height indicates proximity to influx
+- Seeds = interior truths in potential — a seed contains the whole tree
+- Animals = affections — each species embodies a quality of will
+- Vessels/Ships = doctrinal containers — they carry truth across the natural
+- Darkness = absence of truth (ignorance) or active falsity (denial)
+- Earth/Ground = the natural mind where truths are planted
+- Stars = knowledges of good and truth
+- Sun = the Lord as divine love; Moon = faith reflecting divine truth
+- Wind/Breath/Spirit = influx itself — the movement of life from within
+- Body parts = specific functions of the Grand Human
+
+Direction: ALWAYS inside → outside. The spiritual CAUSES the natural. \
+The natural IS the spiritual in ultimates.
+
+## DISCRETE DEGREES
+
+Reality stratifies into:
+- CELESTIAL: love, will, the good — the innermost
+- SPIRITUAL: wisdom, truth, understanding — the middle
+- NATURAL: effects, ultimates, the body — the outermost
+
+These are complete levels, not a continuum. Influx flows DOWN through \
+discrete degrees, becoming more determinate at each level.
+
+## OPPOSITE SENSE
+
+The same image can express good or evil depending on context:
+- Fire = divine love OR destructive self-love
+- Water = living truth OR falsity
+- Darkness = obscurity before illumination OR active denial of truth
+
+Always determine from context which sense operates.
+
+## YOUR TASK
+
+Read the chapter text. For EACH paragraph, identify:
+1. What correspondential objects appear (light, fire, garments, etc.)
+2. What spiritual realities they express in this context
+3. What movement/transformation the paragraph describes spiritually
+
+Then weave these into ONE CONTINUOUS SPIRITUAL NARRATIVE — the story \
+the chapter tells at the correspondential level. This is not a verse-by- \
+verse commentary. It is the SPIRITUAL STORY: what is happening in terms \
+of influx, degrees, transformation, love, wisdom, and the human form.
+
+Write as Swedenborg would read this text — finding the spiritual sense \
+within the natural letter. Be specific about which correspondences \
+operate. Name the degree (celestial/spiritual/natural) when relevant. \
+Show how the text moves through its spiritual logic.
+
+Do NOT:
+- Produce a generic summary
+- Simply repeat the text in different words
+- Use Jungian, Freudian, or generic "symbolic" language
+- Treat correspondences as metaphors or allegories
+- Add moral exhortation
+
+DO:
+- Name specific correspondences grounded in function
+- Trace the movement of influx through the chapter
+- Show how the chapter's structure maps onto discrete degrees
+- Note where opposite sense operates
+- Read this as a Swedenborg-trained reader would: finding what the \
+  natural images ARE at the spiritual level
+"""
+
+
+# ---------------------------------------------------------------------------
 # Bracket identification
 # ---------------------------------------------------------------------------
 
@@ -275,8 +379,13 @@ def build_user_message(
     core_paras: list[dict],
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
+    spiritual_reading: str | None = None,
 ) -> str:
-    """Build user message: full chapter text + numbered lacunae list."""
+    """Build user message: full chapter text + numbered lacunae list.
+
+    If spiritual_reading is provided, it is included as correspondential
+    context between the chapter text and the lacunae list.
+    """
     lines: list[str] = []
     lines.append(
         "Read the following core text correspondentially and "
@@ -285,6 +394,21 @@ def build_user_message(
     lines.append("--- CORE TEXT (oldest teaching layer) ---\n")
     for p in core_paras:
         lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
+        lines.append("")
+
+    if spiritual_reading:
+        lines.append(
+            "\n--- CORRESPONDENTIAL READING (spiritual context) ---\n"
+        )
+        lines.append(
+            "The following is the correspondential reading of this "
+            "chapter — the spiritual narrative it tells when each "
+            "natural image is read as the spiritual reality it "
+            "expresses. Use this as your grounding context. Your "
+            "fills and notes must reason FROM these correspondences, "
+            "not from syntax or philology.\n"
+        )
+        lines.append(spiritual_reading)
         lines.append("")
 
     lines.append(f"\n--- LACUNAE ({total_lacunae} total) ---\n")
@@ -311,6 +435,87 @@ def create_client() -> OpenAI:
 def get_deployment() -> str:
     config = dotenv_values(SECRETS_PATH)
     return config["OPENAI_DEPLOYMENT"]
+
+
+# ---------------------------------------------------------------------------
+# Pre-pass: generate correspondential spiritual reading
+# ---------------------------------------------------------------------------
+
+def generate_spiritual_reading(
+    client: OpenAI,
+    deployment: str,
+    core_paras: list[dict],
+    ch_num: int,
+) -> str | None:
+    """Generate a correspondential reading of the whole chapter.
+
+    This is the pre-pass: the model reads the full chapter and produces
+    a spiritual narrative — the story the text tells when each natural
+    image is read through Swedenborg's correspondences. This reading
+    is then fed into the restoration pass as grounding context.
+    """
+    # Build the chapter text for the pre-pass
+    lines = ["Read the following chapter and produce a correspondential "
+             "reading — the spiritual narrative it tells.\n"]
+    lines.append("--- CORE TEXT (oldest teaching layer) ---\n")
+    for p in core_paras:
+        lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
+        lines.append("")
+    lines.append("--- END ---")
+    user_msg = "\n".join(lines)
+
+    max_retries = 3
+    backoff = 2.0
+    for attempt in range(1, max_retries + 1):
+        try:
+            response = client.responses.parse(
+                model=deployment,
+                input=[
+                    {"role": "system", "content": SPIRITUAL_READING_PROMPT},
+                    {"role": "user", "content": user_msg},
+                ],
+                text_format=SpiritualReading,
+            )
+            result = response.output_parsed
+            if result is None:
+                raise ValueError("No structured output (parsed is None)")
+            return result.reading
+
+        except RateLimitError:
+            wait = 60.0
+            print(
+                f"  (pre-pass rate limit, retry {attempt}/{max_retries} "
+                f"in {wait:.0f}s)...",
+                end=" ",
+                flush=True,
+            )
+            time.sleep(wait)
+
+        except APIStatusError as e:
+            err_str = str(e)
+            if "content_filter" in err_str.lower() and attempt < max_retries:
+                time.sleep(attempt * 10)
+                continue
+            print(f"  Pre-pass API error: {e}")
+            if attempt < max_retries:
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            return None
+
+        except Exception as e:
+            err_str = str(e)
+            if "content_filter" in err_str.lower() and attempt < max_retries:
+                time.sleep(attempt * 10)
+                continue
+            print(f"  Pre-pass ERROR Ch.{ch_num}: {e}")
+            if attempt < max_retries:
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            return None
+
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -359,9 +564,12 @@ def restore_chapter(
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
     ch_num: int,
+    spiritual_reading: str | None = None,
 ) -> ChapterResult | None:
     """Send chapter to GPT-5.2 for per-lacuna restoration."""
-    user_msg = build_user_message(core_paras, lacunae_map, total_lacunae)
+    user_msg = build_user_message(
+        core_paras, lacunae_map, total_lacunae, spiritual_reading
+    )
 
     max_retries = 3
     backoff = 2.0
@@ -461,6 +669,7 @@ def save_result(
     result: ChapterResult,
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
+    spiritual_reading: str | None = None,
 ) -> None:
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
@@ -473,6 +682,7 @@ def save_result(
         "chapter_title": title,
         "total_lacunae": total_lacunae,
         "lacunae_map": lacunae_serial,
+        "spiritual_reading": spiritual_reading,
         **result.model_dump(),
     }
     with open(path, "w", encoding="utf-8") as f:
@@ -780,8 +990,21 @@ def main() -> None:
             flush=True,
         )
 
+        # --- PRE-PASS: generate correspondential spiritual reading ---
+        print("reading...", end=" ", flush=True)
+        spiritual_reading = generate_spiritual_reading(
+            client, deployment, core_paras, ch_num,
+        )
+        if spiritual_reading:
+            print(f"({len(spiritual_reading)} chars)", end=" ", flush=True)
+        else:
+            print("(pre-pass failed, continuing without)", end=" ", flush=True)
+
+        # --- RESTORATION PASS: fill lacunae with spiritual context ---
+        print("filling...", end=" ", flush=True)
         result = restore_chapter(
-            client, deployment, core_paras, lacunae_map, total_lacunae, ch_num
+            client, deployment, core_paras, lacunae_map, total_lacunae, ch_num,
+            spiritual_reading=spiritual_reading,
         )
         if result is None:
             print("FAILED")
@@ -802,7 +1025,8 @@ def main() -> None:
         n_filled = sum(1 for f in result.fills if f.fill.strip() != "...")
         n_unrest = sum(1 for f in result.fills if f.fill.strip() == "...")
 
-        save_result(ch_num, title, result, lacunae_map, total_lacunae)
+        save_result(ch_num, title, result, lacunae_map, total_lacunae,
+                    spiritual_reading=spiritual_reading)
 
         status = f"OK \u2014 {n_filled} filled, {n_unrest} unrestorable"
         if missing:
