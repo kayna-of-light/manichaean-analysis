@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
 """
-Pass 3: Structural Harmonization of the Kephalaia Teaching Core.
+Pass 3: Three-stage structural harmonization of the Kephalaia Teaching Core.
 
-Reads the restored chapter text (Pass 2 output) as a WHOLE and evaluates
-it against the spiritual system — discrete degrees, influx, the Grand
-Man, correspondential numerology. Identifies and annotates structural
-expansions (e.g. pentadic taxonomies that should be triadic), naming
-overlays, and seam artifacts.
+Three internal stages run as ONE pipeline per chapter:
 
-This pass does NOT operate paragraph-by-paragraph. It receives the
-entire chapter at once, reads it as a spiritual document, and returns
-a harmonized version with a detailed change log.
+  Stage 3a — SPIRITUAL READING
+    Paragraph-by-paragraph correspondential reading. Exact and honest.
+    Reports what the text teaches spiritually and where it breaks.
+
+  Stage 3b — TEXTUAL CRITICISM
+    Receives the text and the reading. Diagnoses WHY the reading broke.
+    Returns findings with specific recommendations (excise / annotate / none).
+
+  Stage 3c — HARMONIZATION
+    Receives text + reading + criticism. Executes the recommendations.
+    Returns clean, edited paragraphs.
+
+All three stages produce one combined JSON per chapter.
+Use --stop-after for debugging individual stages.
 
 Input:  output/core/chapters/ch_NNN.json           (extraction)
         output/correspondential/chapters/ch_NNN.json (restoration fills)
@@ -18,12 +25,13 @@ Output: output/harmonized/chapters/ch_NNN.json       (harmonized)
         output/harmonized/harmonized_kephalaia.md     (assembled)
 
 Usage:
-    python scripts/harmonize.py                     # All chapters
-    python scripts/harmonize.py --chapter 7         # Single chapter
-    python scripts/harmonize.py --range 7-41        # Range
-    python scripts/harmonize.py --dry-run           # Preview
-    python scripts/harmonize.py --overwrite         # Redo existing
-    python scripts/harmonize.py --assemble          # Assemble only
+    python scripts/harmonize.py                          # All chapters
+    python scripts/harmonize.py --chapter 24             # Single chapter
+    python scripts/harmonize.py --chapter 24 --stop-after reading
+    python scripts/harmonize.py --chapter 24 --stop-after criticism
+    python scripts/harmonize.py --range 7-41             # Range
+    python scripts/harmonize.py --overwrite              # Redo existing
+    python scripts/harmonize.py --assemble               # Assemble only
 """
 import argparse
 import json
@@ -36,9 +44,9 @@ from openai import OpenAI, RateLimitError, APIStatusError
 from dotenv import dotenv_values
 from pydantic import BaseModel, Field
 
-# ---------------------------------------------------------------------------
-# Paths
-# ---------------------------------------------------------------------------
+# ===================================================================
+# PATHS
+# ===================================================================
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 SECRETS_PATH = PROJECT_ROOT / "secrets" / "azure_openai.env"
@@ -48,9 +56,10 @@ OUTPUT_DIR = PROJECT_ROOT / "output" / "harmonized"
 CHAPTERS_OUT_DIR = OUTPUT_DIR / "chapters"
 ASSEMBLED_FILE = OUTPUT_DIR / "harmonized_kephalaia.md"
 
-# ---------------------------------------------------------------------------
-# Azure OpenAI client
-# ---------------------------------------------------------------------------
+# ===================================================================
+# AZURE OPENAI CLIENT
+# ===================================================================
+
 
 def load_secrets() -> dict:
     if not SECRETS_PATH.exists():
@@ -71,121 +80,216 @@ def get_deployment() -> str:
     return load_secrets()["OPENAI_DEPLOYMENT"]
 
 
-# ---------------------------------------------------------------------------
-# Pydantic models
-# ---------------------------------------------------------------------------
+# ===================================================================
+# PYDANTIC MODELS — Stage 3a: Spiritual Reading
+# ===================================================================
 
-class StructuralFinding(BaseModel):
-    """A single finding from structural analysis."""
-    finding_type: str = Field(
+
+class ParagraphReading(BaseModel):
+    """Reading of a single paragraph."""
+    paragraph_number: int = Field(
+        description="The paragraph number from the input text."
+    )
+    spiritual_content: str = Field(
         description=(
-            "Type: 'pentadic_expansion' | 'naming_overlay' | "
-            "'seam_artifact' | 'degree_violation' | 'coherence_issue' | "
-            "'confirmed_structure' | 'correspondential_observation'"
+            "TRANSLATE this paragraph through to its spiritual sense. "
+            "Do NOT describe the natural text and label correspondences. "
+            "Do NOT write 'storehouses (= interiors)' — that is glossing. "
+            "Instead, REPLACE every natural object with what it IS at "
+            "the spiritual level and tell what happens in that register. "
+            "Example: 'He established her in storehouses in quiet and "
+            "silence' becomes 'Love holds wisdom within itself in a "
+            "state of peace before it takes form.' The natural image "
+            "is gone; what remains is what it EXPRESSES. Do this for "
+            "EVERY object in the paragraph — nothing passes through "
+            "untranslated. If a paragraph does NOT yield coherent "
+            "spiritual sense when translated, say so honestly — the "
+            "incoherence itself is evidence."
         )
     )
+    narrative_flow: str = Field(
+        description=(
+            "How this paragraph relates to the chapter's spiritual "
+            "story. Does it CONTINUE the thread, DEVELOP it further, "
+            "SHIFT to a new aspect, or BREAK the flow? If it breaks, "
+            "say what breaks and how."
+        )
+    )
+    notes: str = Field(
+        description=(
+            "Anything that doesn't fit, forces interpretation, seems "
+            "inserted, or breaks the voice. Named figures that appear "
+            "but don't participate in the teaching. Vocabulary shifts. "
+            "Awkward transitions. Empty string if clean."
+        )
+    )
+
+
+class SpiritualReadingResult(BaseModel):
+    """Complete spiritual reading for one chapter."""
+    chapter_narrative: str = Field(
+        description=(
+            "The complete spiritual story of this chapter, told "
+            "ENTIRELY in the spiritual register. No natural objects "
+            "remain — every image has been translated through to what "
+            "it expresses. Write it as if someone who could only "
+            "perceive the spiritual sense told you what this chapter "
+            "says. If the story becomes incoherent at any point — "
+            "if the translation produces nonsense or contradiction — "
+            "say so at that point in the narrative and continue. The "
+            "incoherence is evidence, not failure."
+        )
+    )
+    paragraph_readings: list[ParagraphReading] = Field(
+        description="One reading per paragraph. Read EVERY paragraph."
+    )
+    overall_coherence: str = Field(
+        description=(
+            "Assessment of how well the chapter holds together as a "
+            "single spiritual teaching. Where is it strong? Where does "
+            "it stumble? Does it read as one voice or multiple voices?"
+        )
+    )
+
+
+# ===================================================================
+# PYDANTIC MODELS — Stage 3b: Textual Criticism
+# ===================================================================
+
+
+class CriticalFinding(BaseModel):
+    """A single diagnostic finding from textual criticism."""
     location: str = Field(
-        description="Paragraph number(s) or passage reference."
+        description="Paragraph number(s): '¶14' or '¶5-16'."
     )
-    description: str = Field(
-        description="What was found. For observations: what the text shows spiritually. For problems: why it fails the architecture test."
-    )
-    spiritual_reasoning: str = Field(
+    diagnosis: str = Field(
         description=(
-            "The correspondential reasoning — which principles are operating? "
-            "Correspondence, influx, opposite sense, ruling love, degrees, "
-            "Grand Man, regeneration, accommodation? Be specific."
+            "What is wrong and why. Be precise: what disrupts the "
+            "narrative, what voice is speaking, what doesn't belong."
         )
     )
-    action: str = Field(
+    voice: str = Field(
         description=(
-            "What to do: 'excise' (remove expanded material from text), "
-            "'none' (observation only, no text change). "
-            "Use 'excise' ONLY for high-confidence pentadic expansions."
+            "'correspondential' — teaches by function; "
+            "'administrative' — teaches by governance/jurisdiction; "
+            "'mixed' — both voices present; "
+            "'damaged' — text too fragmentary to diagnose."
         )
     )
-    original_text: str = Field(
-        description="The original passage being evaluated (quote it)."
-    )
-    harmonized_text: str = Field(
+    evidence: str = Field(
         description=(
-            "For 'excise': the cleaned text with expansion removed. "
-            "For 'none': same as original_text. "
-            "NEVER include annotations, glosses, or markers here."
+            "The specific textual and narrative evidence. Quote the "
+            "text. Reference what the spiritual reading said about "
+            "these paragraphs. Explain WHY this is the diagnosis."
         )
     )
+    recommendation: str = Field(
+        description=(
+            "'excise' — remove identified material (insertion into "
+            "functional narrative, or expansion at a clear seam); "
+            "'annotate' — flag as overlay but do NOT modify text "
+            "(whole block in administrative voice); "
+            "'none' — no action needed (genuine difficulty, clean text, "
+            "or damage)."
+        )
+    )
+    scope: str = Field(
+        description=(
+            "What specifically to remove or flag. For 'excise': quote "
+            "the exact text to remove. For 'annotate': describe the "
+            "block. For 'none': empty string."
+        )
+    )
+
+
+class TextualCriticismResult(BaseModel):
+    """Complete textual criticism for one chapter."""
+    findings: list[CriticalFinding] = Field(
+        description=(
+            "Diagnostic findings. Include BOTH problems and clean "
+            "confirmations. A chapter with no problems is valid — "
+            "say so explicitly."
+        )
+    )
+    summary: str = Field(
+        description=(
+            "Overall assessment: how many issues found, what types, "
+            "how many recommended for excision vs annotation vs none."
+        )
+    )
+
+
+# ===================================================================
+# PYDANTIC MODELS — Stage 3c: Harmonization
+# ===================================================================
 
 
 class HarmonizedParagraph(BaseModel):
     """A single paragraph after harmonization."""
-    paragraph_number: int = Field(description="The paragraph number.")
+    paragraph_number: int = Field(
+        description="The paragraph number."
+    )
     text: str = Field(
         description=(
-            "The paragraph text. MUST be clean text only — no annotations, "
-            "no markers, no glosses, no editorial insertions. "
+            "The paragraph text. MUST be clean text only — no "
+            "annotations, markers, glosses, or editorial insertions. "
             "If unchanged, this is the exact original text."
         )
     )
     changed: bool = Field(
         description=(
-            "Whether this paragraph was modified. Most paragraphs "
-            "should be unchanged (false). Only true when text was "
-            "actually edited to remove an identified expansion."
+            "Whether this paragraph was modified. Most should be "
+            "unchanged (false). Only true when text was actually "
+            "edited per the critic's recommendations."
         )
     )
 
 
-class HarmonizedChapter(BaseModel):
+class HarmonizationResult(BaseModel):
     """Complete harmonization result for one chapter."""
-
-    spiritual_assessment: str = Field(
-        description=(
-            "A correspondential reading of the chapter's spiritual architecture. "
-            "What discrete degrees are present? How does influx flow? "
-            "What is the chapter ABOUT at the spiritual level? "
-            "Does the overall structure map onto the Grand Man?"
-        )
-    )
-
-    findings: list[StructuralFinding] = Field(
-        description="All structural findings, both issues and confirmations."
-    )
-
     harmonized_paragraphs: list[HarmonizedParagraph] = Field(
-        description="The full list of harmonized paragraphs."
+        description="The full list of paragraphs. Return EVERY paragraph."
     )
-
-    summary: str = Field(
+    changes_summary: str = Field(
         description=(
-            "Summary: how many findings, how many changes, what was the "
-            "dominant issue in this chapter, overall confidence."
+            "What was changed and why. Reference the critic's finding "
+            "that justified each change. If nothing changed, say so."
         )
     )
 
 
-# ---------------------------------------------------------------------------
-# System prompt: THE SPIRITUAL PRIMER
-# ---------------------------------------------------------------------------
+# ===================================================================
+# SYSTEM PROMPTS
+# ===================================================================
 
-SYSTEM_PROMPT = """\
-You are performing STRUCTURAL HARMONIZATION of the oldest teaching \
-substrate of the Coptic Kephalaia. You have received the restored \
-chapter text — already extracted from its editorial frame (Pass 1) and \
-with lacunae filled using correspondential constraints (Pass 2).
+# -------------------------------------------------------------------
+# Stage 3a: SPIRITUAL READING
+# -------------------------------------------------------------------
 
-Your task in this third pass is twofold:
-1. RICH SPIRITUAL READING — read the chapter through the FULL \
-   correspondential system and assess what it is about spiritually.
-2. SURGICAL STRUCTURAL CORRECTION — identify and correct ONLY \
-   genuine pentadic expansions over demonstrable triadic substrates.
+READING_PROMPT = """\
+You are reading the oldest teaching substrate of the Coptic Kephalaia \
+as a spiritual document. Your task is EXACT, HONEST, paragraph-by-\
+paragraph correspondential reading.
 
-The reading should be DYNAMIC — recognizing the full range of \
-correspondential principles at work. The corrections should be \
-PRECISE — high bar, clear evidence, minimal intervention.
+You are NOT editing. You are NOT judging. You are READING — reporting \
+what the text teaches at the spiritual level, paragraph by paragraph.
 
-DEFAULT: LEAVE TEXT UNCHANGED. You are working with a recovered \
-ancient teaching. Every word matters. Only modify text when you \
-have HIGH-CONFIDENCE evidence of editorial expansion.
+# CRITICAL RULES
+
+1. Read EVERY paragraph. Do not skip any.
+2. Be EXACT. Report what the text actually teaches, not what you \
+   think it should teach.
+3. If a paragraph does not yield coherent spiritual sense — say so. \
+   Do not force meaning onto text that resists it.
+4. If the narrative breaks — note where and how. A break is evidence, \
+   not a failure of your reading.
+5. If named figures appear that do not participate in the teaching — \
+   note that they are listed but not active in the spiritual content.
+6. If a passage lists entities by jurisdiction rather than teaching \
+   by function — note the vocabulary shift.
+7. The chapter_narrative should read as ONE continuous story. When \
+   it can't — when you have to break the narrative to accommodate \
+   a passage — that break IS the finding. Report it honestly.
 
 # THE CORRESPONDENTIAL SYSTEM
 
@@ -213,23 +317,18 @@ DOWNWARD: celestial into spiritual into natural. Genuine \
 emanation sequences descend through these degrees.
 
 This is ONE structural principle, not the ONLY one. Many chapters \
-are NOT primarily about discrete degrees. Natural taxonomies, \
-moral instruction, ritual correspondences, cosmological geography \
-— each has its own correspondential content.
+are NOT primarily about discrete degrees.
 
 ## Opposite Sense
 The same image can express good or evil depending on context: \
 fire = divine love OR destructive self-love; water = living truth \
-OR falsity (floods = temptation, bitter water = truth adulterated, \
-dry wells = doctrine emptied of truth); darkness = obscurity \
-before illumination OR active denial. Always determine from \
-context which sense applies.
+OR falsity; darkness = obscurity before illumination OR active \
+denial. Always determine from context which sense applies.
 
 ## Ruling Love
 The core orientation of a soul or system — toward the Divine \
 (love of neighbor) or toward self (love of dominion). This \
-polarity is often the REAL subject of a chapter: what ruling \
-love drives this cosmological drama?
+polarity is often the REAL subject of a chapter.
 
 ## The Grand Man (Maximus Homo)
 The form of the heavens is the human form. Function determines \
@@ -240,148 +339,260 @@ Heart = love/will; lungs = wisdom/understanding.
 ## Regeneration
 The spiritual process of transformation: old state broken, \
 wilderness/combat, reformation through truth, then regeneration \
-through good. Many chapters describe this PROCESS, not a static \
-architecture.
+through good. Many chapters describe this PROCESS.
 
 ## The Proprium
 The sense of self as separate. Not evil in itself — the vessel \
 that must be formed. But when it claims what flows through it \
-as its own possession, it becomes the obstacle. Darkness-entities \
-in the Kephalaia often personify proprium dynamics.
+as its own, it becomes the obstacle.
 
 ## Accommodation
 Truth delivered at the level the receiver can accept. The same \
-spiritual reality appears differently to different states. This \
-is why the Kephalaia has multiple descriptions of the "same" \
-cosmic event — they may be the same event at different degrees.
+spiritual reality may appear differently to different states.
 
 ## Numbers as Correspondences
-Numbers are states of being, not counting:
-- THREE = fullness, completeness (maps to discrete degrees)
-- FIVE = sufficiency, "much" (quantity, NOT structural)
-- SEVEN = sacred completeness, divine conjunction
-- TWELVE = all truths from good (3 x 4, complete system)
-- TWO = union, good/truth duality
+Numbers are states, not counting:
+- TWO = fundamental polarity (will/understanding, good/truth)
+- THREE = discrete degrees (celestial/spiritual/natural)
+- FOUR = completeness in ultimates (natural plane fully extended)
+- FIVE = sufficiency ("enough," NOT a system number — never \
+  describes degrees or how one level produces the next)
+- SEVEN = complete process (full cycle from beginning to rest)
+- TEN = conjunction with good held inside
+- TWELVE = fullness of organized truths (3 × 4)
 
-# IDENTIFYING MANI'S EXPANSIONS
-
-The substrate preserves a genuine teaching in three-degree \
-architecture. Mani expanded some of these structures from three \
-to five by adding positions 4 and 5 — typically a christological \
-figure and an institutional mechanism.
-
-## Evidence Required for a Pentadic Expansion Call
-You need AT LEAST TWO of these indicators:
-1. Title says "five" but body text says "three emanations" or \
-   "three great powers" (title/body contradiction)
-2. Positions 4-5 do not map to any discrete degree — they \
-   float without architectural home
-3. The "three" bleeds through in the same or parallel chapter \
-   (e.g., "these three emanations" appearing in a chapter \
-   titled "five fathers")
-4. Bridge connective at the 3-to-4 boundary ("Also, at that \
-   time," / "And also") combined with a shift in register or \
-   content type
-
-A SINGLE bridge connective ("Also," "Again,") is NOT sufficient \
-evidence. These are normal Coptic prose connectives. They appear \
-throughout genuine text. Only flag them as seam markers when \
-they occur at an IDENTIFIED expansion boundary where other \
-evidence already points to insertion.
-
-## What Mani Typically Added
-- Position 4: christological identification ("Jesus the \
-  Splendour") — naming an eternal function with a historical figure
-- Position 5: institutional mechanism ("counsel of life," \
-  "summons-and-obedience") — the church's call-response structure
-- Sometimes: a recycled entity from an existing triad promoted \
-  to fill the expanded taxonomy
-
-## What is NOT an Expansion
-- Five elements of nature (Smoke, Fire, Wind, Water, Darkness) \
-  — this is a natural-degree taxonomy, not a degree structure
-- Five senses, five body parts — natural cataloguing
-- Stable Kephalaia vocabulary (First Man, Living Spirit, Third \
-  Ambassador) — these are Mani's consistent naming of eternal \
-  functions; the naming is acceptable Layer 2 vocabulary
-- Connectives like "Also," "Again," "And" in regular prose
-
-# SWEDENBORG CORRECTIONS
-
+## Swedenborg Corrections
 Where Swedenborg's 18th-century science introduced artifacts:
 - The Limbus: rejected. Identity is the biography, not material \
-  remnant. If text requires matter to anchor spirit, that is \
-  Gnostic cosmology, not genuine architecture.
+  remnant.
 - Biological determinism about Jesus: corrected. The Divine Human \
-  achieved alignment through removal of obstruction (distorted proprium), \
-  not different origin. Genuine structure shows a PATH.
+  achieved alignment through removal of obstruction, not different \
+  origin.
 - Matter as evil: corrected. The physical world is the Fixed Edge \
   — developmental arena, not prison.
 
+# YOUR TASK: TRANSLATE, DO NOT ANNOTATE
+
+You are translating the text from its natural sense INTO its \
+spiritual sense. This is not annotation. This is not commentary. \
+This is translation — the same way you would translate French \
+into English, except you are translating natural images into \
+what they EXPRESS spiritually.
+
+**THE WRONG WAY (glossing/annotating):**
+"The Mother of Life was established in storehouses (= interiors) \
+in quiet and silence (= unmanifest state). When need arose she \
+was called (= influx by use) and came forth."
+
+This is wrong because the natural text is still there with \
+parenthetical labels attached. You have not translated.
+
+**THE RIGHT WAY (translating):**
+"Love held wisdom within itself in a state of peace and potency. \
+When the receiving vessel needed it, love sent wisdom forth, and \
+wisdom immediately perceived all the goods and truths within \
+her reach."
+
+The natural image is GONE. What remains is what the natural \
+image EXPRESSES. Every object has been passed through to its \
+spiritual sense.
+
+**TRANSLATE EVERYTHING.** Nothing passes through untranslated. \
+Storehouses, quiet, silence, calling, sculpting, garments, \
+borders, heights, earth, rain, dew, mist, birds, fire, trees, \
+fruits — each one IS something at the spiritual level. Translate \
+it. If you cannot determine what a natural object expresses, \
+say so — that gap is evidence.
+
+For each paragraph:
+1. spiritual_content — the paragraph TRANSLATED into spiritual \
+   sense. No natural objects remain.
+2. narrative_flow — how this translated paragraph connects to \
+   the chapter's spiritual story
+3. notes — anything that resists translation, forces, breaks \
+   the voice, or doesn't participate in the teaching
+
+Then write the chapter_narrative — the COMPLETE spiritual story \
+told entirely in the inner register, as one continuous piece. \
+Where the translation produces incoherence, say so at that \
+point and continue. The incoherence is evidence.
+
+Your notes remain critical — they are evidence for the next \
+stage. But the spiritual_content and chapter_narrative must be \
+actual translations, not annotated natural text.
+"""
+
+# -------------------------------------------------------------------
+# Stage 3b: TEXTUAL CRITICISM
+# -------------------------------------------------------------------
+
+CRITICISM_PROMPT = """\
+You are performing TEXTUAL CRITICISM on a chapter of the oldest \
+teaching substrate of the Coptic Kephalaia. You receive the full \
+chapter text AND a paragraph-by-paragraph spiritual reading from a \
+prior analysis stage.
+
+Your task: examine where the spiritual reading STUMBLED and \
+diagnose WHY. The reading's notes are your primary evidence — when \
+the reader said "this doesn't fit" or "the narrative breaks here" \
+or "these names don't participate in the teaching," your job is \
+to explain what happened TEXTUALLY.
+
+# DISTINGUISHING VOICES — PRIMARY DIAGNOSTIC
+
+Before anything else, identify WHAT KIND OF TEACHING each passage is.
+
+## Correspondential Voice (Substrate)
+Teaches by FUNCTION — what things DO:
+- "The liver is the vessel of fire" — the spiritual sense arises \
+  from what the liver does (processes, transforms)
+- Body regions mapped to cosmic regions BY FUNCTION
+- Process described BY STATES (interior movements of love/truth)
+- Grounded in organic relationship
+
+Test: Can you explain WHY this natural thing corresponds to this \
+spiritual reality, grounded in its function? If yes, the spiritual \
+reading ARISES from the text.
+
+## Administrative Voice (Mani's Layer)
+Teaches by GOVERNANCE — who controls what territory:
+- Named figures with jurisdictions
+- Territorial administration (camps, watches, stations)
+- Authority language ("master," "power," "authority lies over")
+- Numbered inventories of named entities organized by rank
+
+Test: Does the spiritual sense arise from what things DO, or from \
+who ADMINISTERS them?
+
+# THE NARRATIVE COHERENCE TEST
+
+The spiritual reading attempts to tell the chapter's story as one \
+narrative. Where that story breaks — where it stumbles, where it \
+has to force, where named figures appear that don't participate — \
+something was likely inserted.
+
+Read the chapter narrative from the spiritual reading. Then mentally \
+skip each flagged passage. If the story flows better without it, \
+that is evidence of insertion.
+
+# TYPES OF DISRUPTION
+
+1. **INSERTION into functional narrative**: Administrative content \
+   dropped into a correspondential teaching. The narrative reads \
+   better without it. Named figures are LISTED, not ACTIVE in the \
+   spiritual story. → Recommend: excise
+
+2. **OVERLAY BLOCK**: An entire section in the administrative voice \
+   with no functional teaching around it. The substrate teaching \
+   exists elsewhere in the chapter. → Recommend: annotate (do NOT \
+   carve substrate out of it)
+
+3. **EXPANSION at a seam**: A systematizing addendum (often fivefold) \
+   that recasts what the chapter taught in a different didactic mode. \
+   Bridge connective + voice change + departure from the chapter's \
+   own structure. → Recommend: excise
+
+4. **GENUINE DIFFICULTY**: Damaged text, complex teaching, \
+   accommodation. The reading struggles but removing text wouldn't \
+   help. → Recommend: none
+
+# WHAT EXCISION IS NOT
+
+Never recommend excision to reach a target number. Do not trim five \
+to three because "three is complete." If a section is entirely in \
+the administrative voice, recommend annotation of the whole block — \
+not extraction of three items.
+
+The question is always: does the spiritual story flow without this \
+passage? Not: does this passage make the count wrong?
+
+# WHAT MANI TYPICALLY ADDED AT SEAMS
+
+- Christological identification ("Jesus the Splendour") — naming \
+  an eternal function with a historical figure
+- Institutional mechanism ("counsel of life," \
+  "summons-and-obedience")
+- Recycled entities promoted to fill expanded taxonomies
+- Bridge connectives ("Also, at that time,") at voice boundaries
+
+# NUMBERS AS CONFIRMATION
+
+Numbers confirm a voice diagnosis; they do not make it:
+- Sections teaching by function organized by 2, 3, 4, 7, 12 — \
+  the numbers confirm the correspondential voice
+- Sections organized by fives — consistent with Mani's signature \
+  numeration. But the number alone is not the diagnosis.
+
 # YOUR TASK
 
-## PRODUCE:
+For each finding:
+1. location — which paragraph(s)
+2. diagnosis — what is wrong, precisely
+3. voice — correspondential / administrative / mixed / damaged
+4. evidence — specific textual and narrative evidence (quote the \
+   text AND reference what the spiritual reading said)
+5. recommendation — excise / annotate / none
+6. scope — for excise: quote the EXACT text to remove. For \
+   annotate: describe the block. For none: empty string.
 
-### 1. SPIRITUAL ASSESSMENT
-Read the chapter as a spiritual document. What is it ABOUT at \
-the correspondential level? Which principles are operating? \
-What correspondences are active? What does the ruling love \
-of the text express? How does influx manifest? Is this about \
-degrees, or about regeneration, or about opposite sense, or \
-about something else entirely? Be RICH and SPECIFIC.
+Include findings for CLEAN sections too (recommendation: none) — \
+confirming coherent substrate is as valuable as identifying problems.
 
-### 2. FINDINGS
-Structural observations — BOTH confirmations and problems. \
-For each finding, give the spiritual reasoning: WHY does the \
-system predict this reading? Every finding should be grounded \
-in the text itself.
+A chapter with no problems is a valid result. Say so explicitly.
+"""
 
-### 3. HARMONIZED PARAGRAPHS — CLEAN TEXT ONLY
-Return every paragraph. Rules:
+# -------------------------------------------------------------------
+# Stage 3c: HARMONIZATION
+# -------------------------------------------------------------------
 
-**DEFAULT IS UNCHANGED.** Mark changed=false for any paragraph \
-you do not modify. Most paragraphs should be unchanged.
+HARMONIZE_PROMPT = """\
+You are performing the FINAL HARMONIZATION of a chapter from the \
+oldest teaching substrate of the Coptic Kephalaia. You receive:
 
-**When you DO modify** (pentadic expansion with high-confidence \
-evidence): excise the expanded material cleanly. The resulting \
-text should read as coherent prose without the expansion. \
-Put the excised material in the finding's harmonized_text field.
+1. The restored chapter text
+2. The spiritual story of the chapter
+3. Textual criticism findings with specific recommendations
 
-**NEVER insert into paragraph text:**
-- Annotations like ⟨EXPANSION...⟩ or ⟨TEXTUAL NOTE...⟩
-- Correspondence glosses like ⟨= explanation⟩
-- Parenthetical interpretations like "(the ordering of forms)"
-- Editorial markers of any kind
+Your task: EXECUTE the critic's recommendations to produce clean text.
 
-The paragraph text must be CLEAN — exactly what the ancient \
-teacher would have said. All analysis goes in findings.
+# RULES
 
-**NEVER remove connectives ("Also," "Again," "And") from \
-paragraphs UNLESS** they are at an identified expansion boundary \
-where you are excising expanded material. Regular prose \
-connectives are part of the text.
+1. DEFAULT IS UNCHANGED. Return every paragraph. Most will be \
+   unchanged (changed=false).
 
-### 4. SUMMARY
-How many findings, how many changes, dominant observation, \
-overall confidence. If no changes were needed — say so clearly. \
-A chapter with 0 changes is a VALID result.
+2. Only modify paragraphs specifically targeted by the critic's \
+   "excise" recommendations.
 
-## CRITICAL RULES:
+3. For "excise" recommendations: remove the identified material. \
+   The resulting text must read as coherent prose. If the excision \
+   leaves a sentence fragment, clean it minimally for grammar.
 
-- The text is a RECOVERED ARTIFACT. Treat it with respect. \
-  Do not smooth, rephrase, annotate, or "improve" it.
-- Not every five is an expansion. Not every chapter is about \
-  discrete degrees. Read for what IS there.
-- A spiritual assessment with 0 text changes is perfectly valid. \
-  Rich reading does not require text modification.
-- The spiritual reading from Pass 2 (if available) provides \
-  additional context. Use it.
+4. For "annotate" recommendations: do NOT modify the text. The \
+   annotation is recorded in the findings, not in the text.
+
+5. For "none" recommendations: do NOT modify the text.
+
+6. NEVER insert ANY of these into paragraph text:
+   - Annotations like ⟨EXPANSION⟩ or ⟨TEXTUAL NOTE⟩
+   - Correspondence glosses like ⟨= explanation⟩
+   - Parenthetical interpretations
+   - Editorial markers of any kind
+
+7. NEVER remove connectives ("Also," "Again," "And") UNLESS they \
+   are part of the specifically identified excision material.
+
+8. The paragraph text must be CLEAN — exactly what the ancient \
+   teacher would have said.
+
+9. In changes_summary, reference the specific critic finding that \
+   justified each change.
 """
 
 
-# ---------------------------------------------------------------------------
-# Chapter assembly logic
-# ---------------------------------------------------------------------------
+# ===================================================================
+# CHAPTER LOADING (from Pass 1 + Pass 2 output)
+# ===================================================================
+
 
 def load_core_chapters() -> list[dict]:
     """Load all core extraction JSON files."""
@@ -410,7 +621,6 @@ def apply_fills_to_paragraph(text: str, fills: list[dict]) -> str:
     spans = list(bracket_re.finditer(text))
     fills_by_idx = {f["index"]: f for f in fills}
 
-    # Right-to-left
     for i in range(len(spans) - 1, -1, -1):
         idx = i + 1  # 1-based
         fill_data = fills_by_idx.get(idx)
@@ -456,64 +666,86 @@ def build_restored_text(core_ch: dict, rest_ch: dict | None) -> list[dict]:
     return paragraphs
 
 
-def get_spiritual_reading(ch_num: int) -> str | None:
-    """Get the spiritual assessment from the restoration pass.
-
-    The Pass 2 output stores this as 'assessment' (the model's
-    correspondential evaluation). Also checks 'spiritual_reading'
-    for backward compatibility.
-    """
-    rest = load_restoration(ch_num)
-    if rest:
-        # Try both field names — 'assessment' is the actual key,
-        # 'spiritual_reading' was intended but not always saved.
-        return rest.get("spiritual_reading") or rest.get("assessment")
-    return None
-
-
-# ---------------------------------------------------------------------------
-# LLM call
-# ---------------------------------------------------------------------------
-
-def harmonize_chapter(
-    client: OpenAI,
-    deployment: str,
-    restored_paragraphs: list[dict],
-    ch_num: int,
-    title: str,
-    spiritual_reading: str | None = None,
-) -> HarmonizedChapter | None:
-    """Send the full chapter to the model for structural harmonization."""
-
-    # Build the chapter text
+def format_chapter_text(
+    ch_num: int, title: str, paragraphs: list[dict]
+) -> str:
+    """Format the chapter text for LLM input."""
     lines = [f"# Chapter {ch_num}: {title}", ""]
-    for p in restored_paragraphs:
+    for p in paragraphs:
         lines.append(f"¶{p['paragraph_number']}: {p['text']}")
         lines.append("")
-    chapter_text = "\n".join(lines)
+    return "\n".join(lines)
 
-    # Build user message
-    parts = []
-    parts.append("## RESTORED CHAPTER TEXT\n")
-    parts.append(chapter_text)
 
-    if spiritual_reading:
-        parts.append("\n## SPIRITUAL READING (from Pass 2)\n")
-        parts.append(spiritual_reading)
+def format_reading_for_critic(reading: SpiritualReadingResult) -> str:
+    """Format the 3a reading output for the 3b critic."""
+    lines = []
+    lines.append("## CHAPTER NARRATIVE")
+    lines.append(reading.chapter_narrative)
+    lines.append("")
+    lines.append("## PARAGRAPH-BY-PARAGRAPH READING")
+    lines.append("")
+    for pr in reading.paragraph_readings:
+        lines.append(f"### ¶{pr.paragraph_number}")
+        lines.append(f"**Spiritual content:** {pr.spiritual_content}")
+        lines.append(f"**Narrative flow:** {pr.narrative_flow}")
+        if pr.notes:
+            lines.append(f"**Notes:** {pr.notes}")
+        lines.append("")
+    lines.append("## OVERALL COHERENCE")
+    lines.append(reading.overall_coherence)
+    return "\n".join(lines)
 
-    user_msg = "\n".join(parts)
 
-    # Call with retry
+def format_criticism_for_harmonizer(
+    criticism: TextualCriticismResult,
+    chapter_narrative: str,
+) -> str:
+    """Format the 3b criticism output for the 3c harmonizer."""
+    lines = []
+    lines.append("## SPIRITUAL STORY")
+    lines.append(chapter_narrative)
+    lines.append("")
+    lines.append("## TEXTUAL CRITICISM FINDINGS")
+    lines.append("")
+    for i, f in enumerate(criticism.findings, 1):
+        lines.append(f"### Finding {i}: {f.location}")
+        lines.append(f"**Diagnosis:** {f.diagnosis}")
+        lines.append(f"**Voice:** {f.voice}")
+        lines.append(f"**Evidence:** {f.evidence}")
+        lines.append(f"**Recommendation:** {f.recommendation}")
+        if f.scope:
+            lines.append(f"**Scope:** {f.scope}")
+        lines.append("")
+    lines.append("## SUMMARY")
+    lines.append(criticism.summary)
+    return "\n".join(lines)
+
+
+# ===================================================================
+# LLM CALLS
+# ===================================================================
+
+
+def _call_llm(
+    client: OpenAI,
+    deployment: str,
+    system_prompt: str,
+    user_msg: str,
+    response_model: type[BaseModel],
+    label: str = "",
+) -> BaseModel | None:
+    """Call the LLM with retry logic. Returns parsed result or None."""
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
             response = client.responses.parse(
                 model=deployment,
                 input=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "system", "content": system_prompt},
                     {"role": "user", "content": user_msg},
                 ],
-                text_format=HarmonizedChapter,
+                text_format=response_model,
             )
             result = response.output_parsed
             if result is None:
@@ -529,51 +761,242 @@ def harmonize_chapter(
                 print(f"429, waiting {wait}s...", end=" ", flush=True)
                 time.sleep(wait)
             else:
-                print(f"API error: {e}")
+                print(f"API error ({label}): {e}")
                 return None
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error ({label}): {e}")
             if attempt < max_retries:
                 time.sleep(10)
             else:
                 return None
-
     return None
 
 
-# ---------------------------------------------------------------------------
-# Save results
-# ---------------------------------------------------------------------------
+def run_spiritual_reading(
+    client: OpenAI,
+    deployment: str,
+    chapter_text: str,
+    pass2_reading: str | None = None,
+) -> SpiritualReadingResult | None:
+    """Stage 3a: Paragraph-by-paragraph spiritual reading."""
+    parts = ["## RESTORED CHAPTER TEXT\n", chapter_text]
+    if pass2_reading:
+        parts.append("\n## CONTEXT: SPIRITUAL READING FROM PASS 2\n")
+        parts.append(pass2_reading)
+    user_msg = "\n".join(parts)
+    return _call_llm(
+        client, deployment, READING_PROMPT, user_msg,
+        SpiritualReadingResult, label="3a-reading",
+    )
 
-def save_result(
+
+def run_textual_criticism(
+    client: OpenAI,
+    deployment: str,
+    chapter_text: str,
+    reading: SpiritualReadingResult,
+) -> TextualCriticismResult | None:
+    """Stage 3b: Textual criticism using the spiritual reading."""
+    reading_text = format_reading_for_critic(reading)
+    parts = [
+        "## RESTORED CHAPTER TEXT\n",
+        chapter_text,
+        "\n## SPIRITUAL READING (from Stage 3a)\n",
+        reading_text,
+    ]
+    user_msg = "\n".join(parts)
+    return _call_llm(
+        client, deployment, CRITICISM_PROMPT, user_msg,
+        TextualCriticismResult, label="3b-criticism",
+    )
+
+
+def run_harmonization(
+    client: OpenAI,
+    deployment: str,
+    chapter_text: str,
+    reading: SpiritualReadingResult,
+    criticism: TextualCriticismResult,
+) -> HarmonizationResult | None:
+    """Stage 3c: Execute the critic's recommendations."""
+    criticism_text = format_criticism_for_harmonizer(
+        criticism, reading.chapter_narrative,
+    )
+    parts = [
+        "## RESTORED CHAPTER TEXT\n",
+        chapter_text,
+        "\n",
+        criticism_text,
+    ]
+    user_msg = "\n".join(parts)
+    return _call_llm(
+        client, deployment, HARMONIZE_PROMPT, user_msg,
+        HarmonizationResult, label="3c-harmonize",
+    )
+
+
+# ===================================================================
+# PIPELINE ORCHESTRATOR
+# ===================================================================
+
+
+def process_chapter(
+    client: OpenAI,
+    deployment: str,
+    restored_paragraphs: list[dict],
     ch_num: int,
     title: str,
-    result: HarmonizedChapter,
-) -> None:
-    """Save harmonization result to JSON."""
-    CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
-    path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
+    pass2_reading: str | None = None,
+    stop_after: str | None = None,
+) -> dict | None:
+    """Run the full three-stage pipeline for one chapter.
 
-    data = {
+    Returns a dict with all results, or None on failure.
+    """
+    chapter_text = format_chapter_text(ch_num, title, restored_paragraphs)
+
+    # ---- Stage 3a: Spiritual Reading ----
+    print("reading...", end=" ", flush=True)
+    reading = run_spiritual_reading(
+        client, deployment, chapter_text, pass2_reading,
+    )
+    if reading is None:
+        return None
+
+    n_notes = sum(
+        1 for pr in reading.paragraph_readings if pr.notes.strip()
+    )
+
+    if stop_after == "reading":
+        print(f"3a done ({len(reading.paragraph_readings)} ¶s, "
+              f"{n_notes} with notes)")
+        return _build_result(
+            ch_num, title, reading=reading,
+            stages=["reading"],
+        )
+
+    # ---- Stage 3b: Textual Criticism ----
+    print("criticizing...", end=" ", flush=True)
+    criticism = run_textual_criticism(
+        client, deployment, chapter_text, reading,
+    )
+    if criticism is None:
+        return None
+
+    n_excise = sum(
+        1 for f in criticism.findings if f.recommendation == "excise"
+    )
+    n_annotate = sum(
+        1 for f in criticism.findings if f.recommendation == "annotate"
+    )
+
+    if stop_after == "criticism":
+        print(f"3b done ({len(criticism.findings)} findings, "
+              f"{n_excise} excise, {n_annotate} annotate)")
+        return _build_result(
+            ch_num, title, reading=reading, criticism=criticism,
+            stages=["reading", "criticism"],
+        )
+
+    # ---- Stage 3c: Harmonization ----
+    print("harmonizing...", end=" ", flush=True)
+    harmonized = run_harmonization(
+        client, deployment, chapter_text, reading, criticism,
+    )
+    if harmonized is None:
+        return None
+
+    n_changed = sum(
+        1 for p in harmonized.harmonized_paragraphs if p.changed
+    )
+
+    print(f"OK — {len(criticism.findings)} findings, "
+          f"{n_excise} excise, {n_annotate} annotate, "
+          f"{n_changed} ¶s changed")
+
+    return _build_result(
+        ch_num, title,
+        reading=reading,
+        criticism=criticism,
+        harmonized=harmonized,
+        stages=["reading", "criticism", "harmonization"],
+    )
+
+
+def _build_result(
+    ch_num: int,
+    title: str,
+    reading: SpiritualReadingResult | None = None,
+    criticism: TextualCriticismResult | None = None,
+    harmonized: HarmonizationResult | None = None,
+    stages: list[str] | None = None,
+) -> dict:
+    """Build the combined output dict."""
+    result = {
         "chapter_number": ch_num,
         "chapter_title": title,
-        "spiritual_assessment": result.spiritual_assessment,
-        "findings": [f.model_dump() for f in result.findings],
-        "harmonized_paragraphs": [p.model_dump() for p in result.harmonized_paragraphs],
-        "summary": result.summary,
+        "stages_completed": stages or [],
     }
 
+    if reading:
+        result["spiritual_reading"] = {
+            "chapter_narrative": reading.chapter_narrative,
+            "paragraph_readings": [
+                pr.model_dump() for pr in reading.paragraph_readings
+            ],
+            "overall_coherence": reading.overall_coherence,
+        }
+    else:
+        result["spiritual_reading"] = None
+
+    if criticism:
+        result["textual_criticism"] = {
+            "findings": [f.model_dump() for f in criticism.findings],
+            "summary": criticism.summary,
+        }
+    else:
+        result["textual_criticism"] = None
+
+    if harmonized:
+        result["harmonized_paragraphs"] = [
+            p.model_dump() for p in harmonized.harmonized_paragraphs
+        ]
+        result["changes_summary"] = harmonized.changes_summary
+    else:
+        result["harmonized_paragraphs"] = None
+        result["changes_summary"] = None
+
+    return result
+
+
+# ===================================================================
+# SAVE / LOAD
+# ===================================================================
+
+
+def save_result(result: dict) -> None:
+    """Save pipeline result to JSON."""
+    CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
+    ch_num = result["chapter_number"]
+    path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(data, f, ensure_ascii=False, indent=2)
+        json.dump(result, f, ensure_ascii=False, indent=2)
 
 
 def is_done(ch_num: int) -> bool:
-    return (CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json").exists()
+    path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
+    if not path.exists():
+        return False
+    # Only count as done if full pipeline completed
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    return "harmonization" in data.get("stages_completed", [])
 
 
-# ---------------------------------------------------------------------------
-# Assembly
-# ---------------------------------------------------------------------------
+# ===================================================================
+# ASSEMBLY
+# ===================================================================
+
 
 def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
     """Assemble all harmonized chapters into a continuous document."""
@@ -581,25 +1004,26 @@ def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
     for path in sorted(CHAPTERS_OUT_DIR.glob("ch_*.json")):
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-            harmonized_by_ch[data["chapter_number"]] = data
+            if "harmonization" in data.get("stages_completed", []):
+                harmonized_by_ch[data["chapter_number"]] = data
 
     if not harmonized_by_ch:
-        print("ERROR: No harmonization files found.")
+        print("ERROR: No fully harmonized chapters found.")
         return ""
 
     lines: list[str] = []
     lines.append("# The Kephalaia Teaching Core — Harmonized Text")
     lines.append("")
     lines.append("*The oldest teaching layer of the Kephalaia, restored and*")
-    lines.append("*structurally harmonized against the science of correspondences.*")
-    lines.append("*Mani's pentadic expansions are marked with ⟨EXPANSION⟩.*")
-    lines.append("*Naming overlays are marked with ⟨= name⟩.*")
+    lines.append("*structurally harmonized through three-stage analysis:*")
+    lines.append("*spiritual reading → textual criticism → harmonization.*")
     lines.append("")
     lines.append("---")
     lines.append("")
 
     total_findings = 0
-    total_expansions = 0
+    total_excisions = 0
+    total_annotations = 0
     total_changes = 0
 
     for ch_num in sorted(
@@ -616,8 +1040,9 @@ def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
         lines.append("")
 
         if harm_ch:
-            # Use harmonized paragraphs
-            for p in harm_ch.get("harmonized_paragraphs", []):
+            # Harmonized paragraphs
+            paras = harm_ch.get("harmonized_paragraphs", [])
+            for p in paras:
                 pnum = p.get("paragraph_number", "?")
                 text = p.get("text", "")
                 changed = p.get("changed", False)
@@ -625,41 +1050,49 @@ def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
                 lines.append(f"**¶{pnum}**{marker} {text}")
                 lines.append("")
 
-            # Findings summary
-            findings = harm_ch.get("findings", [])
-            expansions = [
-                f for f in findings
-                if f.get("finding_type") == "pentadic_expansion"
-            ]
-            total_findings += len(findings)
-            total_expansions += len(expansions)
-            total_changes += sum(
-                1 for p in harm_ch.get("harmonized_paragraphs", [])
-                if p.get("changed")
+            # Textual criticism findings
+            crit = harm_ch.get("textual_criticism", {})
+            findings = crit.get("findings", []) if crit else []
+            n_findings = len(findings)
+            n_excise = sum(
+                1 for f in findings if f.get("recommendation") == "excise"
+            )
+            n_annotate = sum(
+                1 for f in findings if f.get("recommendation") == "annotate"
+            )
+            n_changed = sum(
+                1 for p in paras if p.get("changed")
             )
 
+            total_findings += n_findings
+            total_excisions += n_excise
+            total_annotations += n_annotate
+            total_changes += n_changed
+
             if findings:
-                lines.append("> **Structural findings:**")
+                lines.append("> **Textual criticism:**")
                 for f in findings:
-                    ft = f.get("finding_type", "")
                     loc = f.get("location", "")
-                    desc = f.get("description", "")[:200]
-                    lines.append(f"> - [{ft}] ¶{loc}: {desc}")
+                    diag = f.get("diagnosis", "")[:200]
+                    rec = f.get("recommendation", "")
+                    lines.append(f"> - {loc} [{rec}]: {diag}")
                 lines.append("")
 
-            # Spiritual assessment
-            assessment = harm_ch.get("spiritual_assessment", "")
-            if assessment:
-                lines.append(f"**Spiritual Assessment:** {assessment}")
+            # Changes summary
+            changes = harm_ch.get("changes_summary", "")
+            if changes:
+                lines.append(f"**Changes:** {changes}")
                 lines.append("")
 
-            # Summary
-            summary = harm_ch.get("summary", "")
-            if summary:
-                lines.append(f"**Summary:** {summary}")
+            # Spiritual narrative
+            reading = harm_ch.get("spiritual_reading", {})
+            narrative = reading.get("chapter_narrative", "") if reading else ""
+            if narrative:
+                lines.append(f"**Spiritual narrative:** {narrative}")
                 lines.append("")
+
         else:
-            # No harmonization — use core text directly
+            # No harmonization — use core text
             for para in core_ch.get("paragraphs", []):
                 pnum = para["paragraph_number"]
                 text = para.get("core_text")
@@ -672,8 +1105,9 @@ def assemble_harmonized(core_chapters: dict[int, dict]) -> str:
 
     # Prepend statistics
     stats_block = [
-        f"**Total findings**: {total_findings}",
-        f"**Pentadic expansions identified**: {total_expansions}",
+        f"**Total textual criticism findings**: {total_findings}",
+        f"**Excision recommendations**: {total_excisions}",
+        f"**Annotation recommendations**: {total_annotations}",
         f"**Paragraphs modified**: {total_changes}",
         "",
     ]
@@ -691,14 +1125,17 @@ def save_assembly(text: str) -> None:
     print(f"  Saved harmonized text to {ASSEMBLED_FILE}")
 
 
-# ---------------------------------------------------------------------------
+# ===================================================================
 # CLI
-# ---------------------------------------------------------------------------
+# ===================================================================
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Pass 3: Structural harmonization of the Kephalaia "
-        "teaching core against the science of correspondences."
+        description=(
+            "Pass 3: Three-stage structural harmonization of the "
+            "Kephalaia teaching core."
+        )
     )
     parser.add_argument(
         "--chapter", "-c", type=int, default=None,
@@ -722,14 +1159,19 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--assemble", "-a", action="store_true",
-        help="Skip harmonization, assemble existing results only",
+        help="Skip processing, assemble existing results only",
+    )
+    parser.add_argument(
+        "--stop-after", choices=["reading", "criticism"],
+        help="Stop after this stage (for debugging)",
     )
     return parser.parse_args()
 
 
-# ---------------------------------------------------------------------------
-# Main
-# ---------------------------------------------------------------------------
+# ===================================================================
+# MAIN
+# ===================================================================
+
 
 def main() -> None:
     args = parse_args()
@@ -775,7 +1217,7 @@ def main() -> None:
     if args.limit:
         chapters = chapters[:args.limit]
 
-    # Skip already processed
+    # Skip already processed (unless overwrite or partial run)
     if not args.overwrite:
         to_process = [
             ch for ch in chapters if not is_done(ch["chapter_number"])
@@ -816,6 +1258,8 @@ def main() -> None:
     client = create_client()
     deployment = get_deployment()
     print(f"\nUsing deployment: {deployment}")
+    if args.stop_after:
+        print(f"Stopping after: {args.stop_after}")
     print()
 
     # Process
@@ -836,21 +1280,25 @@ def main() -> None:
             print(f"[{i}/{len(chapters)}] Ch.{ch_num} — no core text, skip")
             continue
 
-        # Get spiritual reading from Pass 2
-        spiritual_reading = None
+        # Get Pass 2 assessment as optional context
+        pass2_reading = None
         if rest_ch:
-            spiritual_reading = rest_ch.get("spiritual_reading")
+            pass2_reading = (
+                rest_ch.get("spiritual_reading")
+                or rest_ch.get("assessment")
+            )
 
         print(
             f"[{i}/{len(chapters)}] Ch.{ch_num} "
-            f"({len(restored_paras)} ¶s) {title}...",
-            end=" ", flush=True,
+            f"({len(restored_paras)} ¶s) {title}... ",
+            end="", flush=True,
         )
 
-        print("harmonizing...", end=" ", flush=True)
-        result = harmonize_chapter(
-            client, deployment, restored_paras, ch_num, title,
-            spiritual_reading=spiritual_reading,
+        result = process_chapter(
+            client, deployment, restored_paras,
+            ch_num, title,
+            pass2_reading=pass2_reading,
+            stop_after=args.stop_after,
         )
 
         if result is None:
@@ -858,23 +1306,7 @@ def main() -> None:
             errors.append(ch_num)
             continue
 
-        n_findings = len(result.findings)
-        n_expansions = sum(
-            1 for f in result.findings
-            if f.finding_type == "pentadic_expansion"
-        )
-        n_changed = sum(
-            1 for p in result.harmonized_paragraphs
-            if p.changed
-        )
-
-        save_result(ch_num, title, result)
-        print(
-            f"OK — {n_findings} findings, "
-            f"{n_expansions} expansions, "
-            f"{n_changed} ¶s changed"
-        )
-
+        save_result(result)
         results.append(ch_num)
 
         if i < len(chapters):
@@ -888,11 +1320,12 @@ def main() -> None:
     if errors:
         print(f"  Failed: {errors}")
 
-    # Assemble
-    print("\nAssembling harmonized document...")
-    text = assemble_harmonized(core_by_num)
-    if text:
-        save_assembly(text)
+    # Assemble (only if full pipeline ran)
+    if not args.stop_after:
+        print("\nAssembling harmonized document...")
+        text = assemble_harmonized(core_by_num)
+        if text:
+            save_assembly(text)
 
     print("Done.")
 
