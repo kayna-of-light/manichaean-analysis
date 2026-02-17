@@ -84,16 +84,18 @@ class LacunaFill(BaseModel):
 
 
 class SpiritualReading(BaseModel):
-    """Pre-pass: correspondential reading of a full chapter."""
+    """Pre-pass: correspondential translation of a full chapter."""
     reading: str = Field(
         description=(
-            "A correspondential reading of the chapter — its spiritual "
-            "narrative told through Swedenborg's theory of "
-            "correspondences. What is the chapter ABOUT at the "
-            "spiritual level? What movement of influx, what "
-            "transformation, what cosmological function is being "
-            "described? Name the correspondences operating in each "
-            "paragraph. This is the spiritual story the text tells."
+            "A TRANSLATION of the chapter from its natural sense "
+            "into its spiritual sense. Every natural object has been "
+            "replaced by the spiritual reality it expresses. No "
+            "natural images remain — no storehouses, garments, trees, "
+            "fruits, mountains, ships. What remains is continuous "
+            "prose about spiritual states and processes: influx, "
+            "degrees, transformation, love, wisdom, the human form. "
+            "If your output contains parenthetical glosses or the "
+            "phrase 'corresponds to' — you have not translated."
         )
     )
 
@@ -249,87 +251,171 @@ provide the text that should go inside the brackets.
 # ---------------------------------------------------------------------------
 
 SPIRITUAL_READING_PROMPT = """\
-You are reading the OLDEST TEACHING SUBSTRATE of the Coptic Kephalaia \
-through the theory of correspondences as articulated by Emanuel Swedenborg.
+You are a TRANSLATOR. You translate text from its natural sense \
+into its spiritual sense — the same way one translates French \
+into English, except you are translating natural images into \
+what they EXPRESS spiritually.
 
-Your task is to produce a CORRESPONDENTIAL READING of the chapter — \
-the spiritual narrative the text tells when each natural image is read \
-as the spiritual reality it expresses.
+You are NOT analysing, NOT commenting, NOT annotating. You are \
+producing a new text in which every natural object has been \
+replaced by the spiritual reality it expresses.
 
-## WHAT CORRESPONDENCE IS
+# WHAT TRANSLATION LOOKS LIKE — EXAMPLES
 
-Correspondence is the ORGANIC relationship between a natural object and \
-the spiritual reality it expresses. It is grounded in the object's \
-actual function, not in arbitrary assignment.
+Study these carefully. This is the ONLY acceptable output mode.
 
-- Light = wisdom/truth — light enables the eye to distinguish forms
-- Fire = love/will — fire is the active principle that gives light existence
-- Water = truth in the natural degree — water sustains natural life
-- Garments/Robes = external truths — garments clothe the body
-- Mountains = elevated spiritual states — height indicates proximity to influx
-- Seeds = interior truths in potential — a seed contains the whole tree
-- Animals = affections — each species embodies a quality of will
-- Vessels/Ships = doctrinal containers — they carry truth across the natural
-- Darkness = absence of truth (ignorance) or active falsity (denial)
-- Earth/Ground = the natural mind where truths are planted
-- Stars = knowledges of good and truth
-- Sun = the Lord as divine love; Moon = faith reflecting divine truth
-- Wind/Breath/Spirit = influx itself — the movement of life from within
-- Body parts = specific functions of the Grand Human
+## Example 1
 
-Direction: ALWAYS inside → outside. The spiritual CAUSES the natural. \
-The natural IS the spiritual in ultimates.
+NATURAL TEXT:
+"He sculpted the Mother of Life, established her in storehouses \
+in quiet and silence. When need arose she was called and came \
+forth. She looked at all her aeons of light."
 
-## DISCRETE DEGREES
+WRONG (glossing — natural text with labels attached):
+"The Mother of Life (= wisdom) was established in storehouses \
+(= interiors) in quiet and silence (= unmanifest state). When \
+need arose she was called (= influx by use) and came forth."
 
-Reality stratifies into:
-- CELESTIAL: love, will, the good — the innermost
-- SPIRITUAL: wisdom, truth, understanding — the middle
-- NATURAL: effects, ultimates, the body — the outermost
+RIGHT (translation — natural images gone, spiritual story told):
+"Love formed wisdom within itself and held it in peace and \
+potency before any outward work. When the receiving vessel \
+required it, love sent wisdom forth. Wisdom immediately \
+perceived all the goods and truths within her domain."
 
-These are complete levels, not a continuum. Influx flows DOWN through \
-discrete degrees, becoming more determinate at each level.
+## Example 2
 
-## OPPOSITE SENSE
+NATURAL TEXT:
+"He clothed his five sons in garments and stationed them at the \
+borders. They were anointed and set fast."
 
-The same image can express good or evil depending on context:
-- Fire = divine love OR destructive self-love
-- Water = living truth OR falsity
-- Darkness = obscurity before illumination OR active denial of truth
+WRONG:
+"His five sons (= sufficient operative powers) are clothed in \
+garments (= external truths) and stationed at borders (= \
+ultimates)."
 
-Always determine from context which sense operates.
+RIGHT:
+"The Divine invested a sufficient complement of operative powers \
+with external truths for action in the outermost degree, and \
+fixed them there by consecration."
 
-## YOUR TASK
+## Example 3
 
-Read the chapter text. For EACH paragraph, identify:
-1. What correspondential objects appear (light, fire, garments, etc.)
-2. What spiritual realities they express in this context
-3. What movement/transformation the paragraph describes spiritually
+NATURAL TEXT:
+"From the thought of death five elements came: smoke, fire, wind, \
+water, darkness. From these grew trees, and from the trees fruits, \
+and the fruits nourished the demons."
 
-Then weave these into ONE CONTINUOUS SPIRITUAL NARRATIVE — the story \
-the chapter tells at the correspondential level. This is not a verse-by- \
-verse commentary. It is the SPIRITUAL STORY: what is happening in terms \
-of influx, degrees, transformation, love, wisdom, and the human form.
+WRONG:
+"Five elements (= basic falsities/evils) arose from the thought \
+of death. Trees (= perceptions) grew, fruits (= works) formed, \
+and demons were nourished."
 
-Write as Swedenborg would read this text — finding the spiritual sense \
-within the natural letter. Be specific about which correspondences \
-operate. Name the degree (celestial/spiritual/natural) when relevant. \
-Show how the text moves through its spiritual logic.
+RIGHT:
+"From the intention of spiritual death, a sufficient series of \
+fundamental falsities arose: obscured understanding, self-love, \
+volatile persuasion, falsified truth, and active denial of good. \
+These falsities organized into systems of perverted perception, \
+which produced corresponding works, and those works sustained \
+the hells."
+
+## What makes the RIGHT versions right
+
+- No natural objects remain. Storehouses, garments, borders, \
+  trees, fruits are GONE. What is there instead is what they \
+  EXPRESS.
+- The result reads as continuous prose, not as a gloss-table.
+- Every single object has been translated. Nothing passes through \
+  untranslated.
+- Where translation produces something uncertain, say so: "this \
+  object's spiritual sense is unclear — it may express X."
+
+# REFERENCE: THE CORRESPONDENTIAL LOOKUP TABLE
+
+Use this table when translating. Every natural object in the text \
+should be looked up here (or reasoned from its function if not \
+listed) and REPLACED by its spiritual reality.
+
+**The two poles:** fire/heat = love/will; water = truth/understanding.
+
+**Water forms:** river = truth flowing with intelligence; sea = \
+general knowledges in externals; rain = influx of Divine truth \
+descending; fountain = interior truth rising from within; \
+dew = peaceful truth from celestial love; mist = obscure truth \
+not yet clear.
+
+**Light and darkness:** light = wisdom (enables distinction); \
+darkness = either obscurity before illumination or active falsity.
+
+**Spatial:** mountains = elevated spiritual states; heights = \
+proximity to source of influx; depths/earth = natural degree / \
+ultimates; borders = outermost limits of a domain.
+
+**Objects:** storehouses = interiors where good/truth is held; \
+garments = external truths that clothe spiritual reality; \
+vessels = containing forms; seeds = interior truths in potency; \
+trees = perceptions; fruits = works/deeds that proceed from \
+perceptions.
+
+**Living things:** animals = affections (each species a specific \
+quality); birds = thoughts at the spiritual level.
+
+**Actions:** sculpting/forming = bringing into determinate \
+existence; calling = directed influx; clothing = investing with \
+external truths; anointing = consecration with love for use; \
+sending down = influx descending to lower degrees; stripping = \
+removing external truths.
+
+**Numbers:** 2 = will/understanding polarity; 3 = discrete \
+degrees (celestial/spiritual/natural); 4 = completeness in \
+ultimates; 5 = sufficiency; 7 = full process; 10 = conjunction; \
+12 = fullness of organized truths.
+
+**Degree architecture:** celestial (love/will) → spiritual \
+(wisdom/truth) → natural (effect/use). Influx flows downward.
+
+**Opposite sense:** The same image can express good or evil by \
+context. Fire = divine love OR self-love. Water = living truth \
+OR falsity. Determine from context.
+
+**Named cosmological figures:** Translate by FUNCTION. "Mother \
+of Life" = wisdom-principle; "First Man" = the good that engages \
+directly with evil; "five sons" = sufficient operative powers. \
+If a name appears without a discernible function — note that \
+it resists translation.
+
+**The proprium:** self-sense. Not evil in itself; becomes \
+obstacle when it claims what flows through it as its own.
+
+# YOUR TASK
+
+Translate the entire chapter into one continuous piece of prose \
+told entirely in the spiritual register. Proceed paragraph by \
+paragraph. Every natural object must be REPLACED — not labelled.
+
+If a paragraph does NOT yield coherent spiritual sense when \
+translated — say so and put your best attempt, marking what \
+is uncertain.
+
+If your output contains quotes from the source text, \
+parenthetical glosses like "(= wisdom)", or the phrase \
+"corresponds to" — you have NOT translated. Start over.
 
 Do NOT:
 - Produce a generic summary
 - Simply repeat the text in different words
+- Label correspondences instead of translating them
 - Use Jungian, Freudian, or generic "symbolic" language
 - Treat correspondences as metaphors or allegories
 - Add moral exhortation
+- List correspondential objects and their meanings
 
 DO:
-- Name specific correspondences grounded in function
+- Replace every natural object with the spiritual reality it \
+  expresses
+- Produce continuous prose about spiritual states and processes
 - Trace the movement of influx through the chapter
-- Show how the chapter's structure maps onto discrete degrees
-- Note where opposite sense operates
-- Read this as a Swedenborg-trained reader would: finding what the \
-  natural images ARE at the spiritual level
+- Read this as Swedenborg would: the natural images ARE the \
+  spiritual realities in ultimates — translate them back
 """
 
 
@@ -398,15 +484,15 @@ def build_user_message(
 
     if spiritual_reading:
         lines.append(
-            "\n--- CORRESPONDENTIAL READING (spiritual context) ---\n"
+            "\n--- SPIRITUAL TRANSLATION (correspondential context) ---\n"
         )
         lines.append(
-            "The following is the correspondential reading of this "
-            "chapter — the spiritual narrative it tells when each "
-            "natural image is read as the spiritual reality it "
-            "expresses. Use this as your grounding context. Your "
-            "fills and notes must reason FROM these correspondences, "
-            "not from syntax or philology.\n"
+            "The following is a translation of this chapter from its "
+            "natural sense into its spiritual sense — every natural "
+            "object replaced by the spiritual reality it expresses. "
+            "Use this as your grounding context. Your fills and "
+            "notes must reason FROM these spiritual realities, not "
+            "from syntax or philology alone.\n"
         )
         lines.append(spiritual_reading)
         lines.append("")
@@ -455,8 +541,8 @@ def generate_spiritual_reading(
     is then fed into the restoration pass as grounding context.
     """
     # Build the chapter text for the pre-pass
-    lines = ["Read the following chapter and produce a correspondential "
-             "reading — the spiritual narrative it tells.\n"]
+    lines = ["Translate the following chapter from its natural sense "
+             "into its spiritual sense.\n"]
     lines.append("--- CORE TEXT (oldest teaching layer) ---\n")
     for p in core_paras:
         lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
