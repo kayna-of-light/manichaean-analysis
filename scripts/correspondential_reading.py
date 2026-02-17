@@ -26,6 +26,8 @@ import json
 import re
 import sys
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 from openai import OpenAI, RateLimitError, APIStatusError
@@ -214,6 +216,17 @@ The text uses square brackets for editorial apparatus:
 You receive a numbered list of all brackets in the chapter. For each, \
 provide the text that should go inside the brackets.
 
+## FORBIDDEN CHARACTERS IN FILLS
+
+NEVER use forward slash (/) in a fill. The scholarly edition used / as a \
+page-break marker inside brackets \u2014 it is NOT content and NOT an \
+alternative notation. If you are uncertain between two readings, COMMIT \
+to the one the spiritual logic demands. Do not hedge with \u201cword1 / word2\u201d.
+
+Your fill must read as continuous ancient text. Use only the punctuation \
+found in the surrounding Coptic-English translation: commas, full stops, \
+colons, semicolons. Never use: /, @, #, %, +, =, ~, ^, |, <, >, {, }.
+
 ## HOW TO FILL
 
 1. Read the ENTIRE chapter text to grasp its correspondential structure.
@@ -226,10 +239,11 @@ provide the text that should go inside the brackets.
 4. For mid-word brackets like garm[ents], your fill must produce a \
    valid word with the surrounding text. The letters outside brackets \
    are fixed \u2014 your fill must join them into a coherent word.
-5. For [...] gaps, provide your best reconstruction in the register of \
-   the OLDEST SUBSTRATE. Think: what would a Persian cosmological \
-   teacher say at this point? What does the correspondential structure \
-   demand?
+5. For [...] gaps, determine what the SPIRITUAL TRANSLATION demands \
+   at this point. The spiritual reading tells you what reality is being \
+   described. Your fill must express that reality in the vocabulary of \
+   the OLDEST SUBSTRATE. Think: what does the correspondential structure \
+   demand? What would Swedenborg recognize here? COMMIT to ONE reading.
 6. For existing editor fills, evaluate whether the fill matches the \
    substrate register. Accept if sound. Adjust if the spiritual logic \
    or the substrate vocabulary demands a different reading. Note the \
@@ -960,6 +974,13 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Skip restoration, assemble existing only",
     )
+    parser.add_argument(
+        "--concurrency",
+        "-j",
+        type=int,
+        default=1,
+        help="Number of chapters to process in parallel (default: 1)",
+    )
     return parser.parse_args()
 
 
@@ -1048,16 +1069,23 @@ def main() -> None:
     # Create client
     client = create_client()
     deployment = get_deployment()
+    concurrency = max(1, args.concurrency)
     print(f"\nUsing deployment: {deployment}")
+    print(f"Concurrency: {concurrency}")
     print()
 
     # Process
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    results = []
-    errors = []
-    for i, ch in enumerate(chapters, 1):
+    # --- Worker function for one chapter ---
+    print_lock = threading.Lock()
+    results_list: list[int] = []
+    errors_list: list[int] = []
+    counter = {"done": 0}
+    total_to_process = len(chapters)
+
+    def process_one(ch: dict) -> None:
         ch_num = ch["chapter_number"]
         title = ch.get("chapter_title", "")[:50]
 
@@ -1066,72 +1094,108 @@ def main() -> None:
         lacunae_map, total_lacunae = find_lacunae(core_paras)
 
         if total_lacunae == 0:
-            print(f"[{i}/{len(chapters)}] Ch.{ch_num} \u2014 no lacunae, skip")
-            continue
+            with print_lock:
+                counter["done"] += 1
+                print(
+                    f"[{counter['done']}/{total_to_process}] "
+                    f"Ch.{ch_num} \u2014 no lacunae, skip"
+                )
+            return
 
-        print(
-            f"[{i}/{len(chapters)}] Ch.{ch_num} "
-            f"({total_lacunae} lacunae) {title}...",
-            end=" ",
-            flush=True,
-        )
+        with print_lock:
+            print(
+                f"  Ch.{ch_num} ({total_lacunae} lacunae) "
+                f"{title}... reading...",
+                flush=True,
+            )
 
-        # --- PRE-PASS: generate correspondential spiritual reading ---
-        print("reading...", end=" ", flush=True)
+        # --- PRE-PASS: generate spiritual reading ---
         spiritual_reading = generate_spiritual_reading(
             client, deployment, core_paras, ch_num,
         )
-        if spiritual_reading:
-            print(f"({len(spiritual_reading)} chars)", end=" ", flush=True)
-        else:
-            print("(pre-pass failed, continuing without)", end=" ", flush=True)
 
-        # --- RESTORATION PASS: fill lacunae with spiritual context ---
-        print("filling...", end=" ", flush=True)
+        with print_lock:
+            sr_info = (
+                f"({len(spiritual_reading)} chars)"
+                if spiritual_reading
+                else "(pre-pass failed)"
+            )
+            print(
+                f"  Ch.{ch_num} {sr_info} filling...",
+                flush=True,
+            )
+
+        # --- RESTORATION PASS ---
         result = restore_chapter(
-            client, deployment, core_paras, lacunae_map, total_lacunae, ch_num,
+            client, deployment, core_paras, lacunae_map,
+            total_lacunae, ch_num,
             spiritual_reading=spiritual_reading,
         )
         if result is None:
-            print("FAILED")
-            errors.append(ch_num)
-            continue
+            with print_lock:
+                counter["done"] += 1
+                errors_list.append(ch_num)
+                print(
+                    f"[{counter['done']}/{total_to_process}] "
+                    f"Ch.{ch_num} FAILED"
+                )
+            return
 
-        # Validate: check for missing fills
+        # Validate
         expected = set()
         for pnum, lacs in lacunae_map.items():
             for lac in lacs:
                 expected.add((pnum, lac["index"]))
-
-        received = set()
-        for fill in result.fills:
-            received.add((fill.paragraph, fill.index))
-
+        received = {(f.paragraph, f.index) for f in result.fills}
         missing = expected - received
         n_filled = sum(1 for f in result.fills if f.fill.strip() != "...")
         n_unrest = sum(1 for f in result.fills if f.fill.strip() == "...")
 
-        save_result(ch_num, title, result, lacunae_map, total_lacunae,
-                    spiritual_reading=spiritual_reading)
+        save_result(
+            ch_num, title, result, lacunae_map, total_lacunae,
+            spiritual_reading=spiritual_reading,
+        )
 
         status = f"OK \u2014 {n_filled} filled, {n_unrest} unrestorable"
         if missing:
             status += f", {len(missing)} MISSING"
-        print(status)
 
-        results.append(ch_num)
+        with print_lock:
+            counter["done"] += 1
+            results_list.append(ch_num)
+            print(
+                f"[{counter['done']}/{total_to_process}] "
+                f"Ch.{ch_num} {status}"
+            )
 
-        # Brief pause between chapters
-        if i < len(chapters):
-            time.sleep(0.5)
+    # --- Run with thread pool ---
+    if concurrency == 1:
+        for ch in chapters:
+            process_one(ch)
+    else:
+        with ThreadPoolExecutor(max_workers=concurrency) as executor:
+            futures = {
+                executor.submit(process_one, ch): ch
+                for ch in chapters
+            }
+            for future in as_completed(futures):
+                exc = future.exception()
+                if exc:
+                    ch = futures[future]
+                    with print_lock:
+                        print(
+                            f"  Ch.{ch['chapter_number']} "
+                            f"EXCEPTION: {exc}"
+                        )
+                        errors_list.append(ch["chapter_number"])
 
     # Summary
     print(f"\n{'='*60}")
     print("RESTORATION COMPLETE")
-    print(f"  Processed: {len(results)}")
-    print(f"  Errors: {len(errors)}")
-    if errors:
-        print(f"  Failed: {errors}")
+    print(f"  Processed: {len(results_list)}")
+    print(f"  Errors: {len(errors_list)}")
+    if errors_list:
+        print(f"  Failed: {sorted(errors_list)}")
 
     # Assemble
     print("\nAssembling restored document...")

@@ -38,7 +38,9 @@ import json
 import re
 import sys
 import time
+import threading
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from openai import OpenAI, RateLimitError, APIStatusError
 from dotenv import dotenv_values
@@ -1187,6 +1189,10 @@ def parse_args() -> argparse.Namespace:
         "--stop-after", choices=["reading", "criticism"],
         help="Stop after this stage (for debugging)",
     )
+    parser.add_argument(
+        "--concurrency", "-j", type=int, default=1,
+        help="Number of chapters to process concurrently (default: 1)",
+    )
     return parser.parse_args()
 
 
@@ -1279,7 +1285,9 @@ def main() -> None:
     # Create client
     client = create_client()
     deployment = get_deployment()
+    concurrency = args.concurrency
     print(f"\nUsing deployment: {deployment}")
+    print(f"Concurrency: {concurrency}")
     if args.stop_after:
         print(f"Stopping after: {args.stop_after}")
     print()
@@ -1288,9 +1296,13 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    results = []
-    errors = []
-    for i, ch in enumerate(chapters, 1):
+    # --- Worker function for one chapter ---
+    print_lock = threading.Lock()
+    counter = [0]         # mutable counter shared across threads
+    results_list = []
+    errors_list = []
+
+    def process_one(ch: dict) -> None:
         ch_num = ch["chapter_number"]
         title = ch.get("chapter_title", f"Chapter {ch_num}")[:50]
 
@@ -1299,8 +1311,13 @@ def main() -> None:
         restored_paras = build_restored_text(ch, rest_ch)
 
         if not restored_paras:
-            print(f"[{i}/{len(chapters)}] Ch.{ch_num} — no core text, skip")
-            continue
+            with print_lock:
+                counter[0] += 1
+                print(
+                    f"[{counter[0]}/{len(chapters)}] Ch.{ch_num} "
+                    f"— no core text, skip"
+                )
+            return
 
         # Get Pass 2 assessment as optional context
         pass2_reading = None
@@ -1310,11 +1327,11 @@ def main() -> None:
                 or rest_ch.get("assessment")
             )
 
-        print(
-            f"[{i}/{len(chapters)}] Ch.{ch_num} "
-            f"({len(restored_paras)} ¶s) {title}... ",
-            end="", flush=True,
-        )
+        with print_lock:
+            print(
+                f"  Ch.{ch_num} ({len(restored_paras)} ¶s) {title}... ",
+                flush=True,
+            )
 
         result = process_chapter(
             client, deployment, restored_paras,
@@ -1323,24 +1340,42 @@ def main() -> None:
             stop_after=args.stop_after,
         )
 
-        if result is None:
-            print("FAILED")
-            errors.append(ch_num)
-            continue
+        with print_lock:
+            counter[0] += 1
+            if result is None:
+                print(f"[{counter[0]}/{len(chapters)}] Ch.{ch_num} FAILED")
+                errors_list.append(ch_num)
+            else:
+                save_result(result)
+                results_list.append(ch_num)
+                print(f"[{counter[0]}/{len(chapters)}] Ch.{ch_num} OK")
 
-        save_result(result)
-        results.append(ch_num)
-
-        if i < len(chapters):
-            time.sleep(0.5)
+    # --- Run sequentially or in parallel ---
+    if concurrency <= 1:
+        for ch in chapters:
+            process_one(ch)
+    else:
+        with ThreadPoolExecutor(max_workers=concurrency) as pool:
+            futures = {pool.submit(process_one, ch): ch for ch in chapters}
+            for fut in as_completed(futures):
+                exc = fut.exception()
+                if exc:
+                    ch = futures[fut]
+                    with print_lock:
+                        counter[0] += 1
+                        print(
+                            f"[{counter[0]}/{len(chapters)}] "
+                            f"Ch.{ch['chapter_number']} EXCEPTION: {exc}"
+                        )
+                        errors_list.append(ch["chapter_number"])
 
     # Summary
     print(f"\n{'=' * 60}")
     print("HARMONIZATION COMPLETE")
-    print(f"  Processed: {len(results)}")
-    print(f"  Errors: {len(errors)}")
-    if errors:
-        print(f"  Failed: {errors}")
+    print(f"  Processed: {len(results_list)}")
+    print(f"  Errors: {len(errors_list)}")
+    if errors_list:
+        print(f"  Failed: {sorted(errors_list)}")
 
     # Assemble (only if full pipeline ran)
     if not args.stop_after:
