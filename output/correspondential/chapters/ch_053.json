@@ -279,6 +279,14 @@
     {
       "paragraph": 5,
       "reconstructed_text": "Just as the body of man has many limbs in it, [the land of Darkness] has [storehouses from] its beginning [...] all [the limbs] that hang from the great head of the [body]. A single root is the root of them all, because they all hang from the great head that is on top of the body. Should a limb be cut from the tip of [the]se small [h]eads, the great head that is on top of them [al]l stays in its place the way that it is [...] you find this person alive. Al[l] these sm[all h]eads are firmly set in it [...]"
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "Just as the body of man has many limbs in it, [the land of Darkness] has [storehouses from] its beginning [...] all [the limbs] that hang from the great head of the [body]. A single root is the root of them all, because they all hang from the great head that is on top of the body. Should a limb be cut from the tip of [the]se small [h]eads, the great head that is on top of them [al]l stays in its place the way that it is [...] you find this person alive. Al[l] these sm[all h]eads are firmly set in it [...]"
+    },
+    {
+      "paragraph": 6,
+      "reconstructed_text": "Wh[en] they will cut from them [...] all of them, these little [heads] shall [...] the corpses, because they might see [...] be firmly set [...] in the body, which they joined wi[th it ...]"
     }
   ],
   "fills": [
@@ -408,7 +416,11 @@
     "¶6: REJECTED — skeleton altered: 'Wh they will cut from them all of them, these little shall the corpses, because ' vs 'Wh they will cut from them all of them, these little shall the corpses, because '",
     "¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'",
     "¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'",
-    "¶5: KEPT ORIGINAL after 2 retries"
+    "¶5: KEPT ORIGINAL after 2 retries",
+    "¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'",
+    "¶6: REJECTED — skeleton altered: 'Wh they will cut from them all of them, these little shall the corpses, because ' vs 'Wh they will cut from them all of them, these little shall the corpses, because '",
+    "¶5: KEPT ORIGINAL after retry-violations",
+    "¶6: KEPT ORIGINAL after retry-violations"
   ],
-  "assessment": "8 restored, 7 already filled, 5 violations"
+  "assessment": "8 restored, 7 already filled, 9 violations"
 }

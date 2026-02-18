@@ -58,7 +58,7 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "One of them is this great earth that people are living upon. They are ploughing in it [...], it with iron hoes, they cultivate, [making] the furrows, turning it over [...] Afterwards they harvest fruit from [it ...]"
+      "reconstructed_text": "One of them is this great earth that people are living upon. They are ploughing in it [and striking], it with iron hoes, they cultivate, [making] the furrows, turning it over [with their labour.] Afterwards they harvest fruit from [it in due season.]"
     },
     {
       "paragraph": 3,
@@ -81,17 +81,40 @@
       "original": "good",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 1,
+      "fill": "and striking",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 2,
+      "fill": "making",
+      "original": "making",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 3,
+      "fill": "with their labour.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 4,
+      "fill": "it in due season.",
+      "original": "it ...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
-    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs 'The second field is the living soul, the holy one. It is mixed in the entire zon'",
-    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
-    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs 'The second field is the living soul, the holy one. It is mixed in the entire zon'",
-    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
-    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs ': The second field is the living soul, the holy one . It is mixed in the entire '",
-    "¶2: KEPT ORIGINAL after 2 retries",
-    "¶3: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "1 restored, 1 already filled, 8 violations"
+  "violations": [],
+  "assessment": "3 restored, 3 already filled"
 }

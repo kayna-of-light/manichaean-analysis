@@ -24,15 +24,27 @@
   "reconstructions": [
     {
       "paragraph": 7,
-      "reconstructed_text": "The Light Mind puts these five signs in the new man, [whom he has] purified, cleansed, supported and chosen [...]"
+      "reconstructed_text": "The Light Mind puts these five signs in the new man, [whom he has] purified, cleansed, supported and chosen [from the mixture of matter.]"
     }
   ],
-  "fills": [],
-  "violations": [
-    "¶7: REJECTED — skeleton altered: 'The Light Mind puts these five signs in the new man, purified, cleansed, support' vs 'The Light Mind puts these five signs in the new man, purified, cleansed, support'",
-    "¶7: REJECTED — skeleton altered: 'The Light Mind puts these five signs in the new man, purified, cleansed, support' vs 'The Light Mind puts these five signs in the new man, purified, cle ansed, suppor'",
-    "¶7: REJECTED — skeleton altered: 'The Light Mind puts these five signs in the new man, purified, cleansed, support' vs 'The Light Mind puts these five signs in the new man , purified , cleansed, suppo'",
-    "¶7: KEPT ORIGINAL after 2 retries"
+  "fills": [
+    {
+      "paragraph": 7,
+      "index": 1,
+      "fill": "whom he has",
+      "original": "whom he has",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 2,
+      "fill": "from the mixture of matter.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    }
   ],
-  "assessment": "0 restored, 4 violations"
+  "violations": [],
+  "assessment": "1 restored, 1 already filled"
 }

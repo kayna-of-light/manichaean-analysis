@@ -153,11 +153,11 @@
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "“In contrast, the ones named ‘rag’: the rags are the devoured enlightening power. It is compounded and entangled in the body of the universe in the rulers who are above, who exist in all the firmaments. Also, its shine is that which lights up and is displayed in the stars of the chain and the powers of the course. And likewise, these rags that are entangled in these three earths below, above the head of the Porter [...] on the earth that is under the Porter. These are named the ‘rags’, because [...] set [...]"
+      "reconstructed_text": "\"In contrast, the ones named 'rag': the rags are the devoured enlightening power. It is compounded and entangled in the body of the universe in the rulers who are above, who exist in all the firmaments. Also, its shine is that which lights up and is displayed in the stars of the chain and the powers of the course. And likewise, these rags that are entangled in these three earths below, above the head of the Porter [and also] on the earth that is under the Porter. These are named the 'rags', because [they have been] set [apart and torn from their wholeness.]"
     },
     {
       "paragraph": 14,
-      "reconstructed_text": "“The one named ‘the soul that is slain’, which is killed, oppressed and murdered; it is this power of fruit, vegetables and seeds. They shall be threshed, plucked and cut down; and they give nourishment to the worlds of the flesh. Further: the wood should it be dry, and the garment should it become ragged, will perish. Again, it is [a pa]rt of this entire soul that is slain and killed; since also even this whole part of it they kill [...]"
+      "reconstructed_text": "\"The one named 'the soul that is slain', which is killed, oppressed and murdered; it is this power of fruit, vegetables and seeds. They shall be threshed, plucked and cut down; and they give nourishment to the worlds of the flesh. Further: the wood should it be dry, and the garment should it become ragged, will perish. Again, it is [a pa]rt of this entire soul that is slain and killed; since also even this whole part of it they kill [and devour without ceasing.]"
     }
   ],
   "fills": [
@@ -240,17 +240,48 @@
       "original": "...",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": "and also",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "they have been",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 3,
+      "fill": "apart and torn from their wholeness.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 14,
+      "index": 1,
+      "fill": "a pa",
+      "original": "a pa",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 14,
+      "index": 2,
+      "fill": "and devour without ceasing.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶8: REJECTED — skeleton altered: 'In contrast, the ones named 'rag': the rags are the devoured enlightening power.' vs 'In contrast, the ones named 'rag': the rags are the devoured enlightening power.'",
-    "¶14: REJECTED — skeleton altered: 'The one named 'the soul that is slain', which is killed, oppressed and murdered;' vs 'The one named 'the soul that is slain', which is killed, oppressed and murdered;'",
-    "¶8: REJECTED — skeleton altered: 'In contrast, the ones named 'rag': the rags are the devoured enlightening power.' vs 'In contrast, the ones named 'rag': the rags are the devoured enlight ening power'",
-    "¶14: REJECTED — skeleton altered: 'The one named 'the soul that is slain', which is killed, oppressed and murdered;' vs 'The one named 'the soul that is slain ', which is killed, oppressed and murdered'",
-    "¶8: REJECTED — skeleton altered: 'In contrast, the ones named 'rag': the rags are the devoured enlightening power.' vs 'In contrast, the ones named 'rag': the rags are the devoured enlightening power.'",
-    "¶14: REJECTED — skeleton altered: 'The one named 'the soul that is slain', which is killed, oppressed and murdered;' vs 'The one named 'the soul that is slain', which is killed, opp ressed and murdered'",
-    "¶8: KEPT ORIGINAL after 2 retries",
-    "¶14: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "6 restored, 4 already filled, 8 violations"
+  "violations": [],
+  "assessment": "10 restored, 5 already filled"
 }

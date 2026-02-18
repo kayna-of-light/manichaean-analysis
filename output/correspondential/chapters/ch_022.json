@@ -396,7 +396,7 @@
     },
     {
       "paragraph": 4,
-      "reconstructed_text": "[His wisdom is a ] light and [it shines upon / his] face [pouring] out; he has [the f] ace of the [Father] in the [aeons of light;] now fi[ve goods] of prais [e and thanksgiving / dwell] in the [land of] living [ am]bros[i]a [ of the Father;] five [goods ] compound [together;] they become an image [of life in] the li[v]ing air [which is] also living."
+      "reconstructed_text": "[His wisdom is a] light and [the radiance / of his] face [going] out; he has [the f]ace of the [Father] in the [fullness.] now fi[ve greatnesses] of prais[e and glory / are given unto the Father] in the [land of] living [am]bros[i]a [of the Father.] five [greatnesses] compound [together;] they become an image [of life in] the li[v]ing air [which is] also living."
     }
   ],
   "fills": [
@@ -667,7 +667,7 @@
     {
       "paragraph": 4,
       "index": 1,
-      "fill": "His wisdom is a\n",
+      "fill": "His wisdom is a",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -675,7 +675,7 @@
     {
       "paragraph": 4,
       "index": 2,
-      "fill": "it shines upon\n / his",
+      "fill": "the radiance / of his",
       "original": " ... / ... ",
       "notes": "",
       "confidence": "moderate"
@@ -683,7 +683,7 @@
     {
       "paragraph": 4,
       "index": 3,
-      "fill": "pouring",
+      "fill": "going",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -707,7 +707,7 @@
     {
       "paragraph": 4,
       "index": 6,
-      "fill": "aeons of light;",
+      "fill": "fullness.",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -715,7 +715,7 @@
     {
       "paragraph": 4,
       "index": 7,
-      "fill": "ve goods",
+      "fill": "ve greatnesses",
       "original": "ve ... ",
       "notes": "",
       "confidence": "moderate"
@@ -723,7 +723,7 @@
     {
       "paragraph": 4,
       "index": 8,
-      "fill": "e and thanksgiving / dwell",
+      "fill": "e and glory / are given unto the Father",
       "original": "e ... / ... ",
       "notes": "",
       "confidence": "moderate"
@@ -739,10 +739,10 @@
     {
       "paragraph": 4,
       "index": 10,
-      "fill": "\nam",
+      "fill": "am",
       "original": "am",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 4,
@@ -755,7 +755,7 @@
     {
       "paragraph": 4,
       "index": 12,
-      "fill": "\nof the Father;",
+      "fill": "of the Father.",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -763,7 +763,7 @@
     {
       "paragraph": 4,
       "index": 13,
-      "fill": "goods\n",
+      "fill": "greatnesses",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -795,15 +795,12 @@
     {
       "paragraph": 4,
       "index": 17,
-      "fill": "which\n is",
+      "fill": "which is",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶4: REJECTED — skeleton altered: 'light and face out; he has ace of the in the now fi of prais in the living brosa' vs 'light and face out; he has ace of the in the Now fi of prais in the living brosa'",
-    "¶4: REJECTED — skeleton altered: 'light and face out; he has ace of the in the now fi of prais in the living brosa' vs 'light and face out; he has ace of the in the now fi of prais in the living brosa'"
-  ],
-  "assessment": "34 restored, 16 already filled, 2 violations"
+  "violations": [],
+  "assessment": "34 restored, 16 already filled"
 }

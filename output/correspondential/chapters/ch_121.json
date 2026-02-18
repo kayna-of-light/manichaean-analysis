@@ -275,7 +275,7 @@
     },
     {
       "paragraph": 6,
-      "reconstructed_text": "The third also, [ which is] below, there are twelve powers standing firm there. However, the number of the twelve images [proceeds from them;] the three great pillars of mightiness that [are the ] pillars supporting the disk [of light;] the other three [also ,] they are the garments that the Living Spirit [fashioned;] he put them at that time [upon the powers] that threw them, together with [the light] which is displayed therein [;] this [that stands] perfect before [the] great Porter [who abides] in his power [;] these are the three great [powers that contend] against [all evil. They] are in the midst of people [; whoever] knows [them and] entrusts his soul to them [is preserved]."
+      "reconstructed_text": "The third also, [the realm that is] below, there are twelve powers standing firm there. However, the number of the twelve images [proceeds from them;] the three great pillars of mightiness that [stand as] pillars supporting the disk [of light;] the other three [also,] they are the garments that the Living Spirit [put on;] he put them at that time [upon those] that threw them, together with [all] which is displayed therein [;] this [that stands] perfect before [the] great Porter [who governs] in his power [;] these are the three great [powers that contend] against [the darkness. They] are in the midst of people [; whoever] knows [them and] entrusts his soul to them [shall be sustained]."
     }
   ],
   "fills": [
@@ -434,7 +434,7 @@
     {
       "paragraph": 6,
       "index": 1,
-      "fill": "\nwhich is",
+      "fill": "the realm that is",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -442,7 +442,7 @@
     {
       "paragraph": 6,
       "index": 2,
-      "fill": "proceeds from\n them;",
+      "fill": "proceeds from them;",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -450,7 +450,7 @@
     {
       "paragraph": 6,
       "index": 3,
-      "fill": "are the\n",
+      "fill": "stand as",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -458,7 +458,7 @@
     {
       "paragraph": 6,
       "index": 4,
-      "fill": "of\n light;",
+      "fill": "of light;",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -466,7 +466,7 @@
     {
       "paragraph": 6,
       "index": 5,
-      "fill": "also\n,",
+      "fill": "also,",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -474,7 +474,7 @@
     {
       "paragraph": 6,
       "index": 6,
-      "fill": "fashioned;",
+      "fill": "put on;",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -482,7 +482,7 @@
     {
       "paragraph": 6,
       "index": 7,
-      "fill": "upon\n the powers",
+      "fill": "upon those",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -490,7 +490,7 @@
     {
       "paragraph": 6,
       "index": 8,
-      "fill": "the light",
+      "fill": "all",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -506,7 +506,7 @@
     {
       "paragraph": 6,
       "index": 10,
-      "fill": "that\n stands",
+      "fill": "that stands",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -522,7 +522,7 @@
     {
       "paragraph": 6,
       "index": 12,
-      "fill": "who abides",
+      "fill": "who governs",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -546,7 +546,7 @@
     {
       "paragraph": 6,
       "index": 15,
-      "fill": "all evil. They",
+      "fill": "the darkness. They",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -570,15 +570,12 @@
     {
       "paragraph": 6,
       "index": 18,
-      "fill": "is preserved",
+      "fill": "shall be sustained",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶6: REJECTED — skeleton altered: 'The third also, below, there are twelve powers standing firm there. However, the' vs 'The third also, below, there are twelve powers standing firm there. However, the'",
-    "¶6: REJECTED — skeleton altered: 'The third also, below, there are twelve powers standing firm there. However, the' vs 'The third also, below, there are twelve powers standing firm there. However, the'"
-  ],
-  "assessment": "36 restored, 1 already filled, 2 violations"
+  "violations": [],
+  "assessment": "36 restored, 1 already filled"
 }

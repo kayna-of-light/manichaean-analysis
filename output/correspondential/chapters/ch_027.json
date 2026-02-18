@@ -170,11 +170,11 @@
     },
     {
       "paragraph": 5,
-      "reconstructed_text": "The first: [His voice is terrible; when he cries out, all] his powers [tr emble with fear before him.]"
+      "reconstructed_text": "The first: [He is mighty and terrible above all] his powers [, and by his fury he compels them to submit before him.]"
     },
     {
       "paragraph": 7,
-      "reconstructed_text": "The third: His body is strong, a[1] [ ... ] nails and claws of his powers are not able to penetrate it. No iron nor copper body will equal him [ ... ]; they will not be able to destroy him, because he was formed and fashioned from the hard-hearted counsel of Matter, the mother of demons and fiends."
+      "reconstructed_text": "The third: His body is strong, a[nd] [impenetrable. The] nails and claws of his powers are not able to penetrate it. No iron nor copper body will equal him [in strength]; they will not be able to destroy him, because he was formed and fashioned from the hard-hearted counsel of Matter, the mother of demons and fiends."
     }
   ],
   "fills": [
@@ -269,7 +269,7 @@
     {
       "paragraph": 5,
       "index": 1,
-      "fill": "His\n voice is terrible; when he cries\n out, all",
+      "fill": "He is mighty and terrible above all",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -277,18 +277,36 @@
     {
       "paragraph": 5,
       "index": 2,
-      "fill": "tr\nemble with fear before him.",
+      "fill": ", and by his fury he compels them to submit before him.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 7,
+      "index": 1,
+      "fill": "nd",
+      "original": "1",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 7,
+      "index": 2,
+      "fill": "impenetrable. The",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 7,
+      "index": 3,
+      "fill": "in strength",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶5: REJECTED — skeleton altered: 'The first: his powers' vs 'The first: his powers .'",
-    "¶7: REJECTED — bracket count mismatch: 3 vs 2",
-    "¶7: REJECTED — skeleton altered: 'The third: His body is strong, a nails and claws of his powers are not able to p' vs 'The third: His body is strong, a nails and claws of his powers are not able to p'",
-    "¶7: REJECTED — skeleton altered: 'The third: His body is strong, a nails and claws of his powers are not able to p' vs 'The third: His body is strong, a nails and cl aws of his powers are not able to '",
-    "¶7: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "8 restored, 5 already filled, 5 violations"
+  "violations": [],
+  "assessment": "10 restored, 6 already filled"
 }

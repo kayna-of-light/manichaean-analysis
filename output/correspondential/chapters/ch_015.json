@@ -242,7 +242,7 @@
     },
     {
       "paragraph": 1,
-      "reconstructed_text": "Did Death arise and stand firm [from below] up? Or else did it turn itself from [within upon] its armour [, enc losing itself] in its [own realm,] but it finished [the corruption of] the two [natures ]."
+      "reconstructed_text": "Did Death arise and stand firm [and set itself] up? Or else did it turn itself from [within and take up] its armour [and enclose itself] in its [own depths,] but it finished [the corruption of] the two [, the mind and the will]."
     }
   ],
   "fills": [
@@ -425,7 +425,7 @@
     {
       "paragraph": 1,
       "index": 1,
-      "fill": "from below",
+      "fill": "and set itself",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -433,7 +433,7 @@
     {
       "paragraph": 1,
       "index": 2,
-      "fill": "within\n upon",
+      "fill": "within and take up",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -441,7 +441,7 @@
     {
       "paragraph": 1,
       "index": 3,
-      "fill": ", enc\nlosing itself",
+      "fill": "and enclose itself",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -449,7 +449,7 @@
     {
       "paragraph": 1,
       "index": 4,
-      "fill": "own\n realm,",
+      "fill": "own depths,",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -457,7 +457,7 @@
     {
       "paragraph": 1,
       "index": 5,
-      "fill": "the\n corruption of",
+      "fill": "the corruption of",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -465,14 +465,12 @@
     {
       "paragraph": 1,
       "index": 6,
-      "fill": "natures\n",
+      "fill": ", the mind and the will",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶1: REJECTED — skeleton altered: 'Did Death arise and stand firm up? Or else did it turn itself from its armour in' vs 'Did Death arise and stand firm up? Or else did it turn itself from its armour in'"
-  ],
-  "assessment": "27 restored, 1 already filled, 1 violations"
+  "violations": [],
+  "assessment": "27 restored, 1 already filled"
 }

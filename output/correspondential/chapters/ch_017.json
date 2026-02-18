@@ -255,7 +255,7 @@
     },
     {
       "paragraph": 10,
-      "reconstructed_text": "If you should say that [you will measure it,] it is small, if you should [rec kon it and say] to him [ the count,] and you consult [him about it,] you will tell him: Twenty times! It is greater again in this other one that you will consult: Thirty times! Less also is this other one [that you will reckon. And] people will receive the of the trees [and they shall count] the years and the generations [from the] earth to the heights. This is [beyond all measure .]"
+      "reconstructed_text": "If you should say that [the time is great,] it is small, if you should [speak] to him [who enquires] and you consult [him,] you will tell him: Twenty times! It is greater again in this other one that you will consult: Thirty times! Less also is this other one [to reckon. And] people will receive the of the trees [and their fruit,] the years and the generations [from the] earth to the heights. This is [beyond all reckoning.]"
     }
   ],
   "fills": [
@@ -414,7 +414,7 @@
     {
       "paragraph": 10,
       "index": 1,
-      "fill": "you will measure it,",
+      "fill": "the time is great,",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -422,7 +422,7 @@
     {
       "paragraph": 10,
       "index": 2,
-      "fill": "rec\nkon it and say",
+      "fill": "speak",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -430,7 +430,7 @@
     {
       "paragraph": 10,
       "index": 3,
-      "fill": "\nthe count,",
+      "fill": "who enquires",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -438,7 +438,7 @@
     {
       "paragraph": 10,
       "index": 4,
-      "fill": "him about it,",
+      "fill": "him,",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -446,7 +446,7 @@
     {
       "paragraph": 10,
       "index": 5,
-      "fill": "that\n you will reckon. And",
+      "fill": "to reckon. And",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -454,7 +454,7 @@
     {
       "paragraph": 10,
       "index": 6,
-      "fill": "and\n they shall count",
+      "fill": "and their fruit,",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -470,14 +470,12 @@
     {
       "paragraph": 10,
       "index": 8,
-      "fill": "beyond all measure\n.",
+      "fill": "beyond all reckoning.",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶10: REJECTED — bracket count mismatch: 8 vs 9"
-  ],
-  "assessment": "27 restored, 1 violations"
+  "violations": [],
+  "assessment": "27 restored"
 }

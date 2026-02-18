@@ -59,6 +59,10 @@
     {
       "paragraph": 4,
       "reconstructed_text": "The third is the Light and the releasing that was purified by his image. That Light is more than the light that he shall [purify on every other day from the mixture]"
+    },
+    {
+      "paragraph": 4,
+      "reconstructed_text": "The third is the Light and the releasing that was purified by his image. That Light is more than the light that he shall [...]"
     }
   ],
   "fills": [
@@ -96,7 +100,9 @@
     }
   ],
   "violations": [
-    "¶4: REJECTED — skeleton altered: 'The third is the Light and the releasing that was purified by his image. That Li' vs 'The third is the Light and the releasing that was purified by his image. That Li'"
+    "¶4: REJECTED — skeleton altered: 'The third is the Light and the releasing that was purified by his image. That Li' vs 'The third is the Light and the releasing that was purified by his image. That Li'",
+    "¶4: REJECTED — skeleton altered: 'The third is the Light and the releasing that was purified by his image. That Li' vs 'The third is the Light and the releasing that was purified by his image. That Li'",
+    "¶4: KEPT ORIGINAL after retry-violations"
   ],
-  "assessment": "3 restored, 1 already filled, 1 violations"
+  "assessment": "3 restored, 1 already filled, 3 violations"
 }

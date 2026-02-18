@@ -208,7 +208,7 @@
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "the Pillar of Glory [ ... ] [ ... ]"
+      "reconstructed_text": "the Pillar of Glory [, the Perfect Man,] [the support of all things.]"
     }
   ],
   "fills": [
@@ -355,13 +355,24 @@
       "original": "att",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": ", the Perfect Man,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "the support of all things.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶8: REJECTED — skeleton altered: 'the Pillar of Glory' vs 'the Pillar of Glory, ,'",
-    "¶8: REJECTED — skeleton altered: 'the Pillar of Glory' vs 'the Pillar of Glory, ,'",
-    "¶8: REJECTED — skeleton altered: 'the Pillar of Glory' vs 'the Pillar of Glory, , .'",
-    "¶8: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "3 restored, 15 already filled, 4 violations"
+  "violations": [],
+  "assessment": "5 restored, 15 already filled"
 }

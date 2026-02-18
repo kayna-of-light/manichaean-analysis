@@ -583,7 +583,7 @@
     },
     {
       "paragraph": 12,
-      "reconstructed_text": "The thir[d night is the five] worlds of flesh [ ... five] male, and five female; that were begotten from the powers [abo]ve. They have fallen upon the earth, being displayed in wh[at is d]ry and what is moist; together with the fire and the lust [that d]we[l]l in them, which drives them inward to one another."
+      "reconstructed_text": "The thir[d night is the five] worlds of flesh [in which are five] male, and five female; that were begotten from the powers [abo]ve. They have fallen upon the earth, being displayed in wh[at is d]ry and what is moist; together with the fire and the lust [that d]we[l]l in them, which drives them inward to one another."
     }
   ],
   "fills": [
@@ -1106,13 +1106,56 @@
       "original": "o ... ",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 1,
+      "fill": "d night is the five",
+      "original": "d night is the five",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 2,
+      "fill": "in which are five",
+      "original": " ... five",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 3,
+      "fill": "abo",
+      "original": "abo",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 4,
+      "fill": "at is d",
+      "original": "at is d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 5,
+      "fill": "that d",
+      "original": "that d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 6,
+      "fill": "l",
+      "original": "l",
+      "notes": "already filled by translator",
+      "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶12: REJECTED — bracket count mismatch: 6 vs 7",
-    "¶12: REJECTED — skeleton altered: 'The thir worlds of flesh male, and five female; that were begotten from the powe' vs 'The th ir worlds of flesh male , and five female; that were beg otten from the p'",
-    "¶12: REJECTED — skeleton altered: 'The thir worlds of flesh male, and five female; that were begotten from the powe' vs 'The thir worlds of flesh male, and five female ; that were begotten from the pow'",
-    "¶12: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "15 restored, 50 already filled, 4 violations"
+  "violations": [],
+  "assessment": "15 restored, 56 already filled"
 }

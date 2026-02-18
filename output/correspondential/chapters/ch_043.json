@@ -190,7 +190,7 @@
     },
     {
       "paragraph": 6,
-      "reconstructed_text": "And the remnant that remains behind from the fire, upon the earth, are all the mountains and islands from where fumes of fire gush up and are visible. For these things are the remnant of the great vessel, the vestige that was conjoined with this fire that comes up from the earth; together with the mountains and hills [ ... ] places where no fruit sprouts on the trees [ ... ] greater than that place from the limb and [ ... / ... ] the trees shall not bear fruit in that place."
+      "reconstructed_text": "And the remnant that remains behind from the fire, upon the earth, are all the mountains and islands from where fumes of fire gush up and are visible. For these things are the remnant of the great vessel, the vestige that was conjoined with this fire that comes up from the earth; together with the mountains and hills [and all the] places where no fruit sprouts on the trees[, for the fire is] greater than that place from the limb and [the root, so that] the trees shall not bear fruit in that place."
     }
   ],
   "fills": [
@@ -313,13 +313,32 @@
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 6,
+      "index": 1,
+      "fill": "and all the",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 6,
+      "index": 2,
+      "fill": ", for the fire is",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 6,
+      "index": 3,
+      "fill": "the root, so that",
+      "original": " ... / ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶6: REJECTED — skeleton altered: 'And the remnant that remains behind from the fire, upon the earth, are all the m' vs 'And the remnant that remains behind from the fire, upon the earth, are all the m'",
-    "¶6: REJECTED — skeleton altered: 'And the remnant that remains behind from the fire, upon the earth, are all the m' vs 'And the remnant that remains behind from the fire, upon the earth, are all the m'",
-    "¶6: REJECTED — skeleton altered: 'And the remnant that remains behind from the fire, upon the earth, are all the m' vs 'And the remnant that remains behind from the fire, upon the earth, are all the m'",
-    "¶6: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "6 restored, 9 already filled, 4 violations"
+  "violations": [],
+  "assessment": "9 restored, 9 already filled"
 }

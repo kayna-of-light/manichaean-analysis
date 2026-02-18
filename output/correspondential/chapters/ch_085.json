@@ -269,7 +269,7 @@
     },
     {
       "paragraph": 12,
-      "reconstructed_text": "Rather, the word that wounds is this: should a person utter a saying for the sake of the murder of a person, or the murder of animals, or for [the sake of] the murder of trees and the Cross of Light, the lying word and the wrathful and the bitter, or a word of envy and [...] only, or a word of accusation, which someone will spread against his brother; this is the [wor]d that wounds [...]. Should the person utter it, it befits [si]n; because [he has br]ought forth from it the demons [...] concerning this [...] the righteous person, or [...] all of them, which I have proclaimed, in order that [...] his word to the fetter; because anyone who would [...] his word to the fetter. And again, he [...] his coming forth, they will bind him in the place wherein he has bound his [...]."
+      "reconstructed_text": "Rather, the word that wounds is this: should a person utter a saying for the sake of the murder of a person, or the murder of animals, or for [the sake of] the murder of trees and the Cross of Light, the lying word and the wrathful and the bitter, or a word of envy and [malice] only, or a word of accusation, which someone will spread against his brother; this is the [wor]d that wounds [the Living Soul]. Should the person utter it, it befits [si]n; because [he has br]ought forth from it the demons [of darkness. I have spoken] concerning this [to] the righteous person, or [concerning] all of them, which I have proclaimed, in order that [he might not bind] his word to the fetter; because anyone who would [bind] his word to the fetter. And again, he [too, at] his coming forth, they will bind him in the place wherein he has bound his [brother]."
     }
   ],
   "fills": [
@@ -432,13 +432,112 @@
       "original": "shall not",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 1,
+      "fill": "the sake of",
+      "original": "the sake of",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 2,
+      "fill": "malice",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 3,
+      "fill": "wor",
+      "original": "wor",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 4,
+      "fill": "the Living Soul",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 5,
+      "fill": "si",
+      "original": "si",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 6,
+      "fill": "he has br",
+      "original": "he has br",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 12,
+      "index": 7,
+      "fill": "of darkness. I have spoken",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 8,
+      "fill": "to",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 9,
+      "fill": "concerning",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 10,
+      "fill": "he might not bind",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 11,
+      "fill": "bind",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 12,
+      "fill": "too, at",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 12,
+      "index": 13,
+      "fill": "brother",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶12: REJECTED — skeleton altered: 'Rather, the word that wounds is this: should a person utter a saying for the sak' vs 'Rather, the word that wounds is this: should a person utter a saying for the sak'",
-    "¶12: REJECTED — skeleton altered: 'Rather, the word that wounds is this: should a person utter a saying for the sak' vs 'Rather, the word that wounds is this: should a person utter a saying for the sak'",
-    "¶12: REJECTED — skeleton altered: 'Rather, the word that wounds is this: should a person utter a saying for the sak' vs 'Rather, the word that wounds is this: should a person utter a saying for the sak'",
-    "¶12: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "9 restored, 11 already filled, 4 violations"
+  "violations": [],
+  "assessment": "18 restored, 15 already filled"
 }

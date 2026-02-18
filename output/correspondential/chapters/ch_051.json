@@ -255,11 +255,11 @@
     },
     {
       "paragraph": 4,
-      "reconstructed_text": "While the fire received a bl[ow and] a wound in its body; yet still, [...] all the powers of da[rk]ness because of it [...] It [...] necessity [...] brothers, to cause them to receive a blow and a woun[d to]o. The power of the en/emy mixed in with them. Rath[er, ex]cept [the air]. The Darkness did not mix in with it, nor was the burning of the enemy able to penet/rate it."
+      "reconstructed_text": "While the fire received a bl[ow and] a wound in its body; yet still, [it held back] all the powers of da[rk]ness because of it[. Yet] It [was of] necessity [for its] brothers, to cause them to receive a blow and a woun[d to]o. The power of the en/emy mixed in with them. Rath[er, ex]cept [the air]. The Darkness did not mix in with it, nor was the burning of the enemy able to penet/rate it."
     },
     {
       "paragraph": 5,
-      "reconstructed_text": "Never-theless, even the one that remained behind without the wound, which is the air, it stripped off garment and power. It gave it to its [fo]ur brothers in its place; so that by that [ga]rment of the living air they would become strong, and [...] profit, and endure, namely its other four brothers. And it [be]came for them [...] life."
+      "reconstructed_text": "Never-theless, even the one that remained behind without the wound, which is the air, it stripped off garment and power. It gave it to its [fo]ur brothers in its place; so that by that [ga]rment of the living air they would become strong, and [find] profit, and endure, namely its other four brothers. And it [be]came for them [the breath of] life."
     }
   ],
   "fills": [
@@ -414,17 +414,120 @@
       "original": "enmi",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 1,
+      "fill": "ow and",
+      "original": "ow and",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 2,
+      "fill": "it held back",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 3,
+      "fill": "rk",
+      "original": "rk",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 4,
+      "fill": ". Yet",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 5,
+      "fill": "was of",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 6,
+      "fill": "for its",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 7,
+      "fill": "d to",
+      "original": "d to",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 8,
+      "fill": "er, ex",
+      "original": "er, ex",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 9,
+      "fill": "the air",
+      "original": "the air",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 1,
+      "fill": "fo",
+      "original": "fo",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 2,
+      "fill": "ga",
+      "original": "ga",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 3,
+      "fill": "find",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 4,
+      "fill": "be",
+      "original": "be",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 5,
+      "fill": "the breath of",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶4: REJECTED — skeleton altered: 'While the fire received a bl a wound in its body; yet still, all the powers of d' vs 'While the fire received a bl a wound in its body; yet still, all the powers of d'",
-    "¶5: REJECTED — skeleton altered: 'Never-theless, even the one that remained behind without the wound, which is the' vs 'Nevertheless, even the one that remained behind without the wound, which is the '",
-    "¶4: REJECTED — skeleton altered: 'While the fire received a bl a wound in its body; yet still, all the powers of d' vs 'While the fire received a bl a wound in its body; yet still, all the powers of d'",
-    "¶5: REJECTED — skeleton altered: 'Never-theless, even the one that remained behind without the wound, which is the' vs 'Never-theless , even the one that remained behind without the wound, which is th'",
-    "¶4: REJECTED — skeleton altered: 'While the fire received a bl a wound in its body; yet still, all the powers of d' vs 'While the fire received a bl a wound in its body; yet still, all the powers of d'",
-    "¶5: REJECTED — skeleton altered: 'Never-theless, even the one that remained behind without the wound, which is the' vs 'Never-theless, even the one that remained behind without the wound, which is the'",
-    "¶4: KEPT ORIGINAL after 2 retries",
-    "¶5: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "2 restored, 17 already filled, 8 violations"
+  "violations": [],
+  "assessment": "8 restored, 25 already filled"
 }

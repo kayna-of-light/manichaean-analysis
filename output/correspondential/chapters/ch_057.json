@@ -150,7 +150,7 @@
     },
     {
       "paragraph": 10,
-      "reconstructed_text": "For the manner of these first generations is that they are richer in their light and purer in stature. Even their years are greater. Thus, again, even their offspring is much more than the offspring of this tim[e]. They were spending a longer time [ ... ] in [the w]omb of their mother. Afterwards, they [ ... ] a number in a single womb. There are times five were brought forth from a single womb, and times six were brought forth from [a] single womb! There are some lesser than this; again, some greater than this. Indeed, because of this the offspring of Eve multiplied, and of her children. The earth was filled by reason of them alone; because the offspring from the generation of the people of old, who they bore into the world, differ greatly from those of today. Their conception and their birth is not like latter births, brought forth nowadays from the woman's uterus."
+      "reconstructed_text": "For the manner of these first generations is that they are richer in their light and purer in stature. Even their years are greater. Thus, again, even their offspring is much more than the offspring of this tim[e]. They were spending a longer time [being formed] in [the w]omb of their mother. Afterwards, they [brought forth] a number in a single womb. There are times five were brought forth from a single womb, and times six were brought forth from [a] single womb! There are some lesser than this; again, some greater than this. Indeed, because of this the offspring of Eve multiplied, and of her children. The earth was filled by reason of them alone; because the offspring from the generation of the people of old, who they bore into the world, differ greatly from those of today. Their conception and their birth is not like latter births, brought forth nowadays from the woman's uterus."
     }
   ],
   "fills": [
@@ -241,13 +241,48 @@
       "original": "than the life span of the ones born",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 1,
+      "fill": "e",
+      "original": "e",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 2,
+      "fill": "being formed",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 3,
+      "fill": "the w",
+      "original": "the w",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 4,
+      "fill": "brought forth",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 5,
+      "fill": "a",
+      "original": "a",
+      "notes": "already filled by translator",
+      "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶10: REJECTED — skeleton altered: 'For the manner of these first generations is that they are richer in their light' vs 'For the manner of these first generations is that they are richer in their light'",
-    "¶10: REJECTED — skeleton altered: 'For the manner of these first generations is that they are richer in their light' vs 'For the manner of these first generations is that they are richer in their light'",
-    "¶10: REJECTED — skeleton altered: 'For the manner of these first generations is that they are richer in their light' vs 'For the manner of these first generations is that they are richer in their light'",
-    "¶10: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "1 restored, 10 already filled, 4 violations"
+  "violations": [],
+  "assessment": "3 restored, 13 already filled"
 }

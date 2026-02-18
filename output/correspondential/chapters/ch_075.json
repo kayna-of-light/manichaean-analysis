@@ -44,7 +44,7 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "Consider the summons, which was sent from the Living Spirit in the beginning. He sent it to the First Man. It is a peace letter and greeting that he wrote and sent to his brother, in which all the tidings are written down, together with everything it will bring about and establish by that summons. That summons, the First Man [... is ordained to happen.]"
+      "reconstructed_text": "Consider the summons, which was sent from the Living Spirit in the beginning. He sent it to the First Man. It is a peace letter and greeting that he wrote and sent to his brother, in which all the tidings are written down, together with everything it will bring about and establish by that summons. That summons, the First Man [received it and knew by it all that is ordained to happen.]"
     }
   ],
   "fills": [
@@ -71,13 +71,16 @@
       "original": "that would happen",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 1,
+      "fill": "received it and knew by it all that is ordained to happen.",
+      "original": "... is ordained to happen.",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
-    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
-    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
-    "¶2: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "2 restored, 1 already filled, 4 violations"
+  "violations": [],
+  "assessment": "2 restored, 2 already filled"
 }

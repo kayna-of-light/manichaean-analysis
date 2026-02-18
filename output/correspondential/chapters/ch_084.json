@@ -461,7 +461,7 @@
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "So, in this way, the wisdom that the person proclaims, speak[ng] it from his heart, shall be advanced more and mor[e]. Its en-hancement and glory shall double from the time when the bea-uty and splendour of the saying will be displayed before the eyes [of t]hey who hear it, and it shall also advance for you [ ... ... ] your hearing, and you are astonished at what you proclai[m]."
+      "reconstructed_text": "So, in this way, the wisdom that the person proclaims, speak[ing] it from his heart, shall be advanced more and mor[e]. Its en-hancement and glory shall double from the time when the bea-uty and splendour of the saying will be displayed before the eyes [of t]hey who hear it, and it shall also advance for you [the more through] your hearing, and you are astonished at what you proclai[m]."
     }
   ],
   "fills": [
@@ -864,13 +864,48 @@
       "original": "it",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": "ing",
+      "original": "ng",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "e",
+      "original": "e",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 3,
+      "fill": "of t",
+      "original": "of t",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 4,
+      "fill": "the more through",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 5,
+      "fill": "m",
+      "original": "m",
+      "notes": "already filled by translator",
+      "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶8: REJECTED — skeleton altered: 'So, in this way, the wisdom that the person proclaims, speak it from his heart, ' vs 'So, in this way, the wisdom that the person proclaims, speakng it from his heart'",
-    "¶8: REJECTED — skeleton altered: 'So, in this way, the wisdom that the person proclaims, speak it from his heart, ' vs 'So, in this way, the wisdom that the person proclaims, speak it from his heart, '",
-    "¶8: REJECTED — skeleton altered: 'So, in this way, the wisdom that the person proclaims, speak it from his heart, ' vs 'So , in this way, the wisdom that the person proclaims, speak it from his heart,'",
-    "¶8: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "4 restored, 46 already filled, 4 violations"
+  "violations": [],
+  "assessment": "5 restored, 50 already filled"
 }

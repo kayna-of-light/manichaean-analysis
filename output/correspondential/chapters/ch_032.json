@@ -387,7 +387,7 @@
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "The [sev]enth: A[t the] time when the Ambass[ador dis]pl[aye]d his glorious imag[e], the L[iving] Spirit [established] many [go]ds and angels. They [ ... ] Th[ey to]ok hold of it, that the entire building [ ... ] not [ ... / ... ] one another against [the] light, which he had [ ... ]"
+      "reconstructed_text": "The [sev]enth: A[t the] time when the Ambass[ador dis]pl[aye]d his glorious imag[e], the L[iving] Spirit [established] many [go]ds and angels. They [were set in their stations.] Th[ey to]ok hold of it, that the entire building [might] not [fall, and that the dark powers might not stir up] one another against [the] light, which he had [planted therein.]"
     }
   ],
   "fills": [
@@ -654,13 +654,120 @@
       "original": " ... t",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": "sev",
+      "original": "sev",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "t the",
+      "original": "t the",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 3,
+      "fill": "ador dis",
+      "original": "ador dis",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 4,
+      "fill": "aye",
+      "original": "aye",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 5,
+      "fill": "e",
+      "original": "e",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 6,
+      "fill": "iving",
+      "original": "iving",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 7,
+      "fill": "established",
+      "original": "established",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 8,
+      "fill": "go",
+      "original": "go",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 9,
+      "fill": "were set in their stations.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 10,
+      "fill": "ey to",
+      "original": "ey to",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 11,
+      "fill": "might",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 12,
+      "fill": "fall, and that the dark powers might not stir up",
+      "original": " ... / ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 13,
+      "fill": "the",
+      "original": "the",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 14,
+      "fill": "planted therein.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶8: REJECTED — skeleton altered: 'The enth: A time when the Ambasspld his glorious imag, the L Spirit many ds and ' vs 'The enth: A time when the Ambasspld his glorious imag, the L Spirit many ds and '",
-    "¶8: REJECTED — skeleton altered: 'The enth: A time when the Ambasspld his glorious imag, the L Spirit many ds and ' vs 'The enth: A time when the Ambass pld his gl orious imag, the L Spirit many ds an'",
-    "¶8: REJECTED — skeleton altered: 'The enth: A time when the Ambasspld his glorious imag, the L Spirit many ds and ' vs 'The enth: A time when the Ambasspl d his glorious imag, the L Spirit many ds and'",
-    "¶8: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "3 restored, 30 already filled, 4 violations"
+  "violations": [],
+  "assessment": "7 restored, 40 already filled"
 }

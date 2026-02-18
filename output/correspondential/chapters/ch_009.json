@@ -337,7 +337,7 @@
     },
     {
       "paragraph": 20,
-      "reconstructed_text": "At the time of their coming forth, the Light Form shall come forth before them; and she redeems them from the darkness to the light [ ... ] This Light Form calms the person, with the kiss and her quiet, from fear of the demons w[ho de]stroy his body. By her asp[ec]t and her image [the] heart of the elect one, who is come forth from his bo[d]y, shall be calm for [him]. Afterwards, the angel who h[o]lds the victory prize extends to him the right hand. And it draws him out of the abyss of his body, and accepts him in with the [k]iss and love. That soul shall make obeisance to its red[eem]er, who is this Light Form. And also, at the inst[ant when ... ] he shall be perfected and increased according to [ ... / ... ] in the household of the living ones, with the go[ds] and the angel[s] [An]d he receives the crown [ ... ] glory in the life for ever."
+      "reconstructed_text": "At the time of their coming forth, the Light Form shall come forth before them; and she redeems them from the darkness to the light [and to the aeons of light.] This Light Form calms the person, with the kiss and her quiet, from fear of the demons w[ho de]stroy his body. By her asp[ec]t and her image [the] heart of the elect one, who is come forth from his bo[d]y, shall be calm for [him]. Afterwards, the angel who h[o]lds the victory prize extends to him the right hand. And it draws him out of the abyss of his body, and accepts him in with the [k]iss and love. That soul shall make obeisance to its red[eem]er, who is this Light Form. And also, at the inst[ant when he makes obeisance,] he shall be perfected and increased according to [his measure of reception] in the household of the living ones, with the go[ds] and the angel[s] [An]d he receives the crown [of light and the] glory in the life for ever."
     }
   ],
   "fills": [
@@ -516,13 +516,128 @@
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 20,
+      "index": 1,
+      "fill": "and to the aeons of light.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 20,
+      "index": 2,
+      "fill": "ho de",
+      "original": "ho de",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 3,
+      "fill": "ec",
+      "original": "ec",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 4,
+      "fill": "the",
+      "original": "the",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 5,
+      "fill": "d",
+      "original": "d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 6,
+      "fill": "him",
+      "original": "him",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 7,
+      "fill": "o",
+      "original": "o",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 8,
+      "fill": "k",
+      "original": "k",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 9,
+      "fill": "eem",
+      "original": "eem",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 10,
+      "fill": "ant when he makes obeisance,",
+      "original": "ant when ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 20,
+      "index": 11,
+      "fill": "his measure of reception",
+      "original": " ... / ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 20,
+      "index": 12,
+      "fill": "ds",
+      "original": "ds",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 13,
+      "fill": "s",
+      "original": "s",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 14,
+      "fill": "An",
+      "original": "An",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 20,
+      "index": 15,
+      "fill": "of light and the",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶20: REJECTED — skeleton altered: 'At the time of their coming forth, the Light Form shall come forth before them; ' vs 'At the time of their coming forth, the Light Form shall come forth before them; '",
-    "¶20: REJECTED — skeleton altered: 'At the time of their coming forth, the Light Form shall come forth before them; ' vs 'At the time of their coming forth, the Light Form shall come forth before them; '",
-    "¶20: REJECTED — skeleton altered: 'At the time of their coming forth, the Light Form shall come forth before them; ' vs 'At the time of their coming forth, the Light Form shall come forth before them; '",
-    "¶20: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "3 restored, 19 already filled, 4 violations"
+  "violations": [],
+  "assessment": "6 restored, 31 already filled"
 }

@@ -50,15 +50,43 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "“This seed grain and this barley grain that you see shall be formed and [...] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [...] it is destroyed [...] through [...] hunger."
+      "reconstructed_text": "\"This seed grain and this barley grain that you see shall be formed and [adorned] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [and cause it to grow, so also] it is destroyed [and laid waste] through [great] hunger."
     }
   ],
-  "fills": [],
-  "violations": [
-    "¶2: REJECTED — skeleton altered: 'This seed grain and this barley grain that you see shall be formed and and beaut' vs 'This seed grain and this barley grain that you see shall be formed and and beaut'",
-    "¶2: REJECTED — skeleton altered: 'This seed grain and this barley grain that you see shall be formed and and beaut' vs 'This seed grain and this barley grain that you see shall be formed and and beaut'",
-    "¶2: REJECTED — skeleton altered: 'This seed grain and this barley grain that you see shall be formed and and beaut' vs 'This seed grain and this barley grain that you see shall be formed and and beaut'",
-    "¶2: KEPT ORIGINAL after 2 retries"
+  "fills": [
+    {
+      "paragraph": 2,
+      "index": 1,
+      "fill": "adorned",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 2,
+      "fill": "and cause it to grow, so also",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 3,
+      "fill": "and laid waste",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 4,
+      "fill": "great",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    }
   ],
-  "assessment": "0 restored, 4 violations"
+  "violations": [],
+  "assessment": "4 restored"
 }

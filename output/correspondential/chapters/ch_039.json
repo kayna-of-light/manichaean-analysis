@@ -208,7 +208,7 @@
     },
     {
       "paragraph": 15,
-      "reconstructed_text": "Now, the second death is the death in which the souls of sinful men shall die; when [they will] be stripped of the shining light that illuminates the world. And also they are separated from the living air, from which they receive [living] breath; and they are deprived of this living soul, which [ ... ] in the world; and they are separated and swept away from this Last Statue [ ... ... ] and bound on [ ... ... ] the female will become [ ... ] their torture and their affliction;"
+      "reconstructed_text": "Now, the second death is the death in which the souls of sinful men shall die; when [they will] be stripped of the shining light that illuminates the world. And also they are separated from the living air, from which they receive [living] breath; and they are deprived of this living soul, which [sustains all things] in the world; and they are separated and swept away from this Last Statue [that gathers all the light at the end;] and bound on [to the globe of darkness; and] the female will become [the cause of] their torture and their affliction;"
     }
   ],
   "fills": [
@@ -323,13 +323,56 @@
       "original": "ond deat",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 15,
+      "index": 1,
+      "fill": "they will",
+      "original": "they will",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 15,
+      "index": 2,
+      "fill": "living",
+      "original": "living",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 15,
+      "index": 3,
+      "fill": "sustains all things",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 15,
+      "index": 4,
+      "fill": "that gathers all the light at the end;",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 15,
+      "index": 5,
+      "fill": "to the globe of darkness; and",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 15,
+      "index": 6,
+      "fill": "the cause of",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶15: REJECTED — skeleton altered: 'Now, the second death is the death in which the souls of sinful men shall die; w' vs 'Now, the second death is the death in which the souls of sinful men shall die; w'",
-    "¶15: REJECTED — skeleton altered: 'Now, the second death is the death in which the souls of sinful men shall die; w' vs 'Now, the second death is the death in which the souls of sinful men shall die; w'",
-    "¶15: REJECTED — skeleton altered: 'Now, the second death is the death in which the souls of sinful men shall die; w' vs 'Now, the second death is the death in which the souls of sinful men shall die; w'",
-    "¶15: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "9 restored, 5 already filled, 4 violations"
+  "violations": [],
+  "assessment": "13 restored, 7 already filled"
 }

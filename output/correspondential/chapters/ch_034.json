@@ -90,15 +90,15 @@
     },
     {
       "paragraph": 5,
-      "reconstructed_text": "The fourth: [...]"
+      "reconstructed_text": "The fourth: [ ... ]"
     },
     {
       "paragraph": 6,
-      "reconstructed_text": "The fifth is the doors of the ships, that they were opened up [to send the refined light to the new aeon.]"
+      "reconstructed_text": "The fifth is the doors of the ships, that they were opened up [upon the upper side, to pour forth the refined light to the aeons of greatness.]"
     },
     {
       "paragraph": 9,
-      "reconstructed_text": "The eighth: Night and day were separated [so that darkness should no longer be confounded with the light .]"
+      "reconstructed_text": "The eighth: Night and day were separated [from one another, so that darkness was distinguished from the light.]"
     }
   ],
   "fills": [
@@ -129,15 +129,15 @@
     {
       "paragraph": 5,
       "index": 1,
-      "fill": "...",
+      "fill": " ... ",
       "original": " ... ",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "unfilled gap",
+      "confidence": ""
     },
     {
       "paragraph": 6,
       "index": 1,
-      "fill": "to send the refined light\n to the new aeon.",
+      "fill": "upon the upper side, to pour forth the refined light to the aeons of greatness.",
       "original": " ...",
       "notes": "",
       "confidence": "moderate"
@@ -145,16 +145,12 @@
     {
       "paragraph": 9,
       "index": 1,
-      "fill": "so that darkness should\n no longer be confounded with the light\n.",
+      "fill": "from one another, so that darkness was distinguished from the light.",
       "original": " ... ... ",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶5: REJECTED — skeleton altered: 'The fourth:' vs ''",
-    "¶6: REJECTED — skeleton altered: 'The fifth is the doors of the ships, that they were opened up' vs 'The fifth is the doors of the ships, that they were opened up .'",
-    "¶9: REJECTED — skeleton altered: 'The eighth: Night and day were separated' vs 'The eighth: Night and day were separated .'"
-  ],
-  "assessment": "2 restored, 3 already filled, 1 unfilled gaps, 3 violations"
+  "violations": [],
+  "assessment": "2 restored, 3 already filled, 1 unfilled gaps"
 }

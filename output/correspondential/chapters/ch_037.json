@@ -80,7 +80,7 @@
     },
     {
       "paragraph": 4,
-      "reconstructed_text": "Also, within the zone are the five sons of the [Living ] Spirit; because the entire edifice is suspended from them, it being [ hung upon them. And he he] ard (?) him too, the oth[ers who come] after them."
+      "reconstructed_text": "Also, within the zone are the five sons of the [Living] Spirit; because the entire edifice is suspended from them, it being [upheld and fastened. They he]ard (?) him too, the oth[ers who came] after them."
     }
   ],
   "fills": [
@@ -127,15 +127,15 @@
     {
       "paragraph": 4,
       "index": 1,
-      "fill": "Living\n",
+      "fill": "Living",
       "original": "Living",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 4,
       "index": 2,
-      "fill": "\nhung upon them. And he he",
+      "fill": "upheld and fastened. They he",
       "original": " ... ... he",
       "notes": "",
       "confidence": "moderate"
@@ -143,14 +143,12 @@
     {
       "paragraph": 4,
       "index": 3,
-      "fill": "ers who come",
+      "fill": "ers who came",
       "original": "ers ... ... ",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶4: REJECTED — skeleton altered: 'Also, within the zone are the five sons of the Spirit; because the entire edific' vs 'Also, within the zone are the five sons of the Spirit; because the entire edific'"
-  ],
-  "assessment": "2 restored, 6 already filled, 1 violations"
+  "violations": [],
+  "assessment": "2 restored, 6 already filled"
 }

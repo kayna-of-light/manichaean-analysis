@@ -166,6 +166,10 @@
     {
       "paragraph": 6,
       "reconstructed_text": "The emissions that the tree shall disgorge, they are the voices of the winds of shame. The emission of winds of shame [is s orrow. The emission of sorrow is weariness.]"
+    },
+    {
+      "paragraph": 6,
+      "reconstructed_text": "The emissions that the tree shall disgorge, they are the voices of the winds of shame. The emission of winds of shame [is ... ]"
     }
   ],
   "fills": [
@@ -307,7 +311,9 @@
     }
   ],
   "violations": [
-    "¶6: REJECTED — skeleton altered: 'The emissions that the tree shall disgorge, they are the voices of the winds of ' vs 'The emissions that the tree shall disgorge, they are the voices of the winds of '"
+    "¶6: REJECTED — skeleton altered: 'The emissions that the tree shall disgorge, they are the voices of the winds of ' vs 'The emissions that the tree shall disgorge, they are the voices of the winds of '",
+    "¶6: REJECTED — skeleton altered: 'The emissions that the tree shall disgorge, they are the voices of the winds of ' vs 'The emissions that the tree shall disgorge, they are the voices of the winds of '",
+    "¶6: KEPT ORIGINAL after retry-violations"
   ],
-  "assessment": "6 restored, 11 already filled, 1 violations"
+  "assessment": "6 restored, 11 already filled, 3 violations"
 }

@@ -183,7 +183,7 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "[...] the gatherer in [... ...] [...] is the Pill[a]r of Gl[or]y [...]"
+      "reconstructed_text": "[The one who is called] the gatherer in [the realms of mixture,] [he who subdues the desires of darkness and raises up the scattered light,] is the Pill[a]r of Gl[or]y [, the sustaining axis of divine truth in its radiance, through which interior wisdom descends from above and elevates all that is below toward the light.]"
     }
   ],
   "fills": [
@@ -322,13 +322,56 @@
       "original": "...",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 1,
+      "fill": "The one who is called",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 2,
+      "fill": "the realms of mixture,",
+      "original": "... ...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 3,
+      "fill": "he who subdues the desires of darkness and raises up the scattered light,",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 2,
+      "index": 4,
+      "fill": "a",
+      "original": "a",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 5,
+      "fill": "or",
+      "original": "or",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 2,
+      "index": 6,
+      "fill": ", the sustaining axis of divine truth in its radiance, through which interior wisdom descends from above and elevates all that is below toward the light.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶2: REJECTED — bracket count mismatch: 6 vs 5",
-    "¶2: REJECTED — skeleton altered: 'the gatherer in is the Pillr of Gly' vs 'the gatherer in is the Pillr of Gl y'",
-    "¶2: REJECTED — skeleton altered: 'the gatherer in is the Pillr of Gly' vs 'the gatherer in is the Pill r of Gly'",
-    "¶2: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "12 restored, 5 already filled, 4 violations"
+  "violations": [],
+  "assessment": "16 restored, 7 already filled"
 }
