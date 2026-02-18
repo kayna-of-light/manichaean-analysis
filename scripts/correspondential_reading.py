@@ -102,6 +102,48 @@ class SpiritualReading(BaseModel):
     )
 
 
+class ParagraphPlan(BaseModel):
+    """Correspondence plan for one paragraph — maps each significant
+    bracket to the correct natural image by verifying its
+    correspondential meaning BEFORE composition begins."""
+    paragraph: int = Field(
+        description="Paragraph number."
+    )
+    spiritual_function: str = Field(
+        description=(
+            "What is this paragraph ABOUT spiritually? Summarise "
+            "what the spiritual reading says is happening here in "
+            "2-3 sentences."
+        )
+    )
+    bracket_plans: str = Field(
+        description=(
+            "For each SUBSTANTIAL bracket (not trivial letter "
+            "fills), state: (a) what spiritual function this gap "
+            "serves, (b) what candidate natural images from the "
+            "Kephalaia could fill it, (c) which image's "
+            "CORRESPONDENTIAL MEANING matches the spiritual "
+            "function, (d) which images would be WRONG and why "
+            "their correspondence doesn't match. For trivial "
+            "letter fills, just note 'trivial — [word]'."
+        )
+    )
+
+
+class CorrespondencePlan(BaseModel):
+    """Layer 2: map every bracket to the correct natural image
+    by checking correspondential meaning against the spiritual reading.
+    This plan is then fed to the reconstruction layer as constraint."""
+    plans: list[ParagraphPlan] = Field(
+        description=(
+            "One entry per paragraph that contains lacunae. For "
+            "each, explain the spiritual function and map each "
+            "bracket to the correct natural image with explicit "
+            "correspondential verification."
+        )
+    )
+
+
 class ParagraphReconstruction(BaseModel):
     """Full reconstructed paragraph — the PRIMARY output."""
     paragraph: int = Field(
@@ -110,10 +152,11 @@ class ParagraphReconstruction(BaseModel):
     reconstructed_text: str = Field(
         description=(
             "COMPOSE the complete paragraph as FLOWING ENGLISH "
-            "PROSE. Start from the spiritual translation: what "
-            "does this paragraph MEAN? Then write a natural-sense "
-            "sentence that expresses that meaning using the "
-            "SURVIVING (non-bracket) words as fixed anchor points. "
+            "PROSE. Start from the CORRESPONDENCE PLAN for this "
+            "paragraph: you have already determined what natural "
+            "images are correct. Now write a natural-sense sentence "
+            "that uses those images, keeping the SURVIVING "
+            "(non-bracket) words as fixed anchor points. "
             "Your additions go inside [square brackets]. The "
             "result must read as a REAL SENTENCE a person would "
             "write — grammatical, with proper clause structure, "
@@ -129,8 +172,9 @@ class ChapterResult(BaseModel):
         description=(
             "YOUR PRIMARY OUTPUT. One entry per paragraph that "
             "contains lacunae. COMPOSE each paragraph as flowing "
-            "prose FIRST — guided by the spiritual translation "
-            "and the surviving text. Do not fill brackets "
+            "prose — guided by the CORRESPONDENCE PLAN (which has "
+            "already determined the correct natural images for each "
+            "bracket) and the surviving text. Do not fill brackets "
             "independently; write the whole sentence."
         )
     )
@@ -271,11 +315,14 @@ colons, semicolons. Never use: /, @, #, %, +, =, ~, ^, |, <, >, {, }.
 4. For mid-word brackets like garm[ents], your fill must produce a \
    valid word with the surrounding text. The letters outside brackets \
    are fixed \u2014 your fill must join them into a coherent word.
-5. For [...] gaps, determine what the SPIRITUAL TRANSLATION demands \
-   at this point. The spiritual reading tells you what reality is being \
-   described. Your fill must express that reality in the vocabulary of \
-   the OLDEST SUBSTRATE. Think: what does the correspondential structure \
-   demand? What would Swedenborg recognize here? COMMIT to ONE reading.
+5. For [...] gaps, consult the CORRESPONDENCE PLAN if provided. \
+   The plan has already determined what natural image is correct for \
+   each significant bracket by verifying that the image's \
+   correspondential meaning matches the spiritual function. USE the \
+   image specified in the plan. If no plan is provided, determine \
+   what the SPIRITUAL TRANSLATION demands at this point, then \
+   express that reality in the NATURAL VOCABULARY of the Kephalaia. \
+   COMMIT to ONE reading.
 6. For existing editor fills, evaluate whether the fill matches the \
    substrate register. Accept if sound. Adjust if the spiritual logic \
    or the substrate vocabulary demands a different reading. Note the \
@@ -290,6 +337,46 @@ colons, semicolons. Never use: /, @, #, %, +, =, ~, ^, |, <, >, {, }.
     reasoning in notes \u2014 including any substrate-register adjustments \
     you made to existing editor fills.
 
+## CRITICAL: THE NATURAL REGISTER
+
+The Kephalaia IS written in correspondence. It is a NATURAL-PLANE text. \
+Its vocabulary \u2014 Light, Darkness, garments, five sons, firmaments, \
+aeons, trees, fruits, fire, water \u2014 is the natural language that \
+EXPRESSES spiritual realities through organic correspondence.
+
+The spiritual reading translates those natural images into spiritual \
+language: wisdom, falsity, external truths, five faculties, discrete \
+degrees, influx, etc.
+
+Your fills must stay in the TEXT\u2019S OWN REGISTER \u2014 the natural \
+counterpart. The spiritual reading tells you WHAT reality the gap \
+describes. Your fill expresses that reality in the KEPHALAIA\u2019S \
+VOCABULARY, not in Swedenborgian vocabulary.
+
+### Examples of the distinction
+
+Spiritual reading says: \u201cby successive influx through discrete degrees\u201d
+\u2192 WRONG fill: \u201cby influx\u201d (spiritual-plane vocabulary)
+\u2192 RIGHT fill: \u201cby the power of the Light\u201d (Kephalaia vocabulary)
+
+Spiritual reading says: \u201cthe five operative faculties of the outer mind\u201d
+\u2192 WRONG fill: \u201cthe five faculties\u201d (spiritual-plane vocabulary)
+\u2192 RIGHT fill: \u201cthe five sons\u201d or \u201cthe five members\u201d (Kephalaia)
+
+Spiritual reading says: \u201cordered extension through degrees\u201d
+\u2192 WRONG fill: \u201cin ordered extension\u201d (Swedenborgian)
+\u2192 RIGHT fill: \u201cthrough the aeons\u201d (Kephalaia vocabulary)
+
+Spiritual reading says: \u201cexternal truths as coverings\u201d
+\u2192 WRONG fill: \u201ccoverings of external truth\u201d (spiritual)
+\u2192 RIGHT fill: \u201cgarments\u201d (Kephalaia vocabulary)
+
+Exception: Where the natural and spiritual terms are essentially the \
+same word (\u201cLight\u201d = truth/wisdom; \u201cDarkness\u201d = falsity), the \
+natural term IS already the right word. No translation needed.
+
+The rule: UNDERSTAND the spiritual sense. WRITE the natural sense.
+
 ## RECONSTRUCTION-FIRST WORKFLOW
 
 Your PRIMARY task is to produce RECONSTRUCTED PARAGRAPHS \u2014 complete, \
@@ -303,15 +390,19 @@ For each paragraph with brackets:
 
 1. Read the SPIRITUAL TRANSLATION for this paragraph. Understand \
    what spiritual reality is being described.
-2. Read the SURVIVING TEXT (everything outside brackets). These are \
+2. Read the CORRESPONDENCE PLAN for this paragraph if provided. \
+   The plan tells you which natural images are CORRECT for each \
+   bracket, verified by correspondential meaning. Use these images.
+3. Read the SURVIVING TEXT (everything outside brackets). These are \
    your fixed anchor points \u2014 they cannot change.
-3. COMPOSE a complete English sentence that:
+4. COMPOSE a complete English sentence that:
+   - Uses the natural images from the CORRESPONDENCE PLAN
    - Expresses the spiritual meaning in the Kephalaia\u2019s vocabulary
    - Uses every surviving word in its original position
    - Fills every bracket with text that creates grammatical flow
    - Reads as a REAL SENTENCE a person would write
-4. Show your additions in [square brackets].
-5. READ IT ALOUD. Does the sentence flow from start to finish? \
+5. Show your additions in [square brackets].
+6. READ IT ALOUD. Does the sentence flow from start to finish? \
    Can you follow the thought? If not, RECOMPOSE.
 
 ### What goes wrong when you don\u2019t compose
@@ -583,6 +674,97 @@ DO:
 
 
 # ---------------------------------------------------------------------------
+# Layer 2 system prompt: correspondence plan
+# ---------------------------------------------------------------------------
+
+CORRESPONDENCE_PLAN_PROMPT = """\
+You are a CORRESPONDENCE VERIFIER. Your task is to prepare a \
+CORRESPONDENCE PLAN for restoring lacunae in the Coptic Kephalaia.
+
+You receive the original text (with brackets marking gaps) and a \
+spiritual reading that translates the text into its spiritual sense. \
+Your job is to determine what NATURAL IMAGE from the Kephalaia's own \
+vocabulary should fill each significant bracket — by checking that \
+the image's correspondential meaning MATCHES the spiritual function \
+described in the reading.
+
+# THE CORE PRINCIPLE
+
+Every natural image has a specific spiritual meaning. Selecting the \
+wrong natural image writes the wrong spiritual sentence — even if it \
+sounds fluent and cosmological.
+
+Example of the MISTAKE this layer prevents:
+
+Text: "they walked in the [ ... ] of the world"
+Spiritual reading: "they lived according to falsity"
+BAD selection: "light" — because light = wisdom/truth. The resulting \
+sentence would spiritually say "they lived according to truth" — the \
+OPPOSITE of what the reading describes.
+GOOD selection: "darkness" — because darkness = falsity/ignorance. \
+"They walked in the darkness of the world" = they lived according \
+to falsity. The correspondential meaning matches the spiritual \
+function.
+
+The point: a fill can sound perfectly fluent and still be \
+correspondentially WRONG. Always verify the candidate image's \
+spiritual meaning against what the reading says should be there.
+
+# YOUR METHOD
+
+For each paragraph with brackets:
+
+1. Read the SPIRITUAL READING for this paragraph. What spiritual \
+   process is being described?
+
+2. For each SUBSTANTIAL bracket (not trivial letter fills):
+   a. Identify what SPIRITUAL FUNCTION this gap serves in the \
+      sentence. What does the spiritual reading say should be here?
+   b. List 2-3 CANDIDATE natural images from the Kephalaia's \
+      vocabulary that could plausibly fill this gap.
+   c. For EACH candidate, state its CORRESPONDENTIAL MEANING:
+      - Light = wisdom/truth
+      - Darkness = falsity/ignorance
+      - Fire = love (divine or self-love by context)
+      - Water = truth in the natural degree
+      - Stars = knowledges of good and truth
+      - Mountains/heights = elevated spiritual states
+      - Garments = external truths
+      - Trees = perceptions
+      - Fruits = works/deeds
+      - Ships = doctrinal vessels
+      - Wheel = mechanism/cycle
+      - Animals/flesh = affections/desires
+      - Aeons = degrees/ages
+      - Five sons/members = sufficient operative powers
+   d. SELECT the candidate whose correspondential meaning MATCHES \
+      the spiritual function. REJECT candidates whose meaning \
+      doesn't match, and explain why.
+
+3. For TRIVIAL brackets (partial words where the reading is \
+   obvious), just note "trivial — [word]".
+
+# CROSS-REFERENCE THE TEXT
+
+The text's OWN vocabulary often tells you the answer. If a paragraph \
+discusses the bad tree's cycling mechanism, and another paragraph in \
+the same chapter explicitly uses the word "transmigration" for that \
+concept — USE the text's own word. Cross-reference surrounding \
+paragraphs.
+
+# OUTPUT
+
+For each paragraph, provide:
+- What it's about spiritually (from the reading)
+- For each bracket: the verified natural image with reasoning
+
+Be SPECIFIC and CONCRETE. Don't say "something related to cycling" — \
+say "birth" or "fate" or "transmigration" with the specific \
+correspondential reasoning.
+"""
+
+
+# ---------------------------------------------------------------------------
 # Bracket identification
 # ---------------------------------------------------------------------------
 
@@ -629,11 +811,14 @@ def build_user_message(
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
     spiritual_reading: str | None = None,
+    correspondence_plan: str | None = None,
 ) -> str:
     """Build user message: full chapter text + numbered lacunae list.
 
     If spiritual_reading is provided, it is included as correspondential
     context between the chapter text and the lacunae list.
+    If correspondence_plan is provided, it is included as the verified
+    mapping of brackets to correct natural images.
     """
     lines: list[str] = []
     lines.append(
@@ -651,13 +836,33 @@ def build_user_message(
         )
         lines.append(
             "The following is a translation of this chapter from its "
-            "natural sense into its spiritual sense — every natural "
+            "natural sense into its spiritual sense \u2014 every natural "
             "object replaced by the spiritual reality it expresses. "
-            "Use this as your grounding context. Your fills and "
-            "notes must reason FROM these spiritual realities, not "
-            "from syntax or philology alone.\n"
+            "Use this to UNDERSTAND what reality each gap describes. "
+            "But your fills must be in the KEPHALAIA\u2019S OWN VOCABULARY "
+            "\u2014 the natural-plane cosmological language of the text "
+            "(Light, Darkness, five sons, garments, aeons, etc.), "
+            "NOT in Swedenborgian spiritual vocabulary (influx, "
+            "discrete degrees, faculties, etc.). Understand the "
+            "spiritual sense; write the natural sense.\n"
         )
         lines.append(spiritual_reading)
+        lines.append("")
+
+    if correspondence_plan:
+        lines.append(
+            "\n--- CORRESPONDENCE PLAN (verified image mappings) ---\n"
+        )
+        lines.append(
+            "The following plan maps each significant bracket to the "
+            "CORRECT natural image, verified by checking that the "
+            "image's correspondential meaning matches the spiritual "
+            "function described in the reading. FOLLOW THIS PLAN. "
+            "Use the natural images specified here in your "
+            "reconstructions. Do NOT substitute different images — "
+            "the plan has already verified the correspondences.\n"
+        )
+        lines.append(correspondence_plan)
         lines.append("")
 
     lines.append(f"\n--- LACUNAE ({total_lacunae} total) ---\n")
@@ -826,6 +1031,162 @@ def generate_spiritual_reading(
 
 
 # ---------------------------------------------------------------------------
+# Layer 2: generate correspondence plan
+# ---------------------------------------------------------------------------
+
+def generate_correspondence_plan(
+    client: OpenAI,
+    deployment: str,
+    core_paras: list[dict],
+    lacunae_map: dict[int, list[dict]],
+    spiritual_reading: str,
+    ch_num: int,
+) -> str | None:
+    """Generate a correspondence plan for bracket restoration.
+
+    This is Layer 2: the model receives the original text, the spiritual
+    reading, and the list of brackets. It produces a per-paragraph plan
+    mapping each significant bracket to the correct natural image by
+    verifying its correspondential meaning against the spiritual reading.
+
+    The plan is then fed to the restoration layer as constraint.
+    """
+    lines: list[str] = []
+    lines.append(
+        "Prepare a correspondence plan for restoring brackets in the "
+        "following chapter. You receive the core text, its spiritual "
+        "reading, and the list of brackets.\n"
+    )
+    lines.append("--- CORE TEXT (oldest teaching layer) ---\n")
+    for p in core_paras:
+        lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
+        lines.append("")
+
+    lines.append(
+        "\n--- SPIRITUAL TRANSLATION ---\n"
+    )
+    lines.append(spiritual_reading)
+
+    # Build a lookup of paragraph texts for context extraction
+    para_text_map = {
+        p["paragraph_number"]: p["core_text"] for p in core_paras
+    }
+
+    lines.append(f"\n--- BRACKETS (paragraphs with lacunae) ---\n")
+    for pnum in sorted(lacunae_map.keys()):
+        text = para_text_map.get(pnum, "")
+        lines.append(f"\u00b6{pnum}:")
+        for lac in lacunae_map[pnum]:
+            start = lac["start"]
+            end = lac["end"]
+            before = text[max(0, start - 40):start].strip()
+            after = text[end:end + 40].strip()
+
+            # Detect trivial (partial word with existing letters)
+            content = lac["content"].strip()
+            glued_right = (
+                end < len(text)
+                and text[end] not in (
+                    " ", "\n", ",", ".", ";", ":", "!", "?", ")"
+                )
+            )
+            glued_left = (
+                start > 0
+                and text[start - 1] not in (" ", "\n", "(")
+            )
+            is_trivial = (
+                (glued_left or glued_right)
+                and len(content) <= 5
+                and "..." not in content
+            )
+
+            if is_trivial:
+                lines.append(
+                    f"  #{lac['index']}: {lac['original']} — trivial "
+                    f"(partial word)"
+                )
+            else:
+                ctx = ""
+                if before:
+                    ctx += f'...{before} '
+                ctx += lac["original"]
+                if after:
+                    ctx += f' {after}...'
+                lines.append(
+                    f"  #{lac['index']}: {ctx}"
+                )
+        lines.append("")
+
+    lines.append("--- END ---")
+    user_msg = "\n".join(lines)
+
+    max_retries = 3
+    backoff = 2.0
+    for attempt in range(1, max_retries + 1):
+        try:
+            response = client.responses.parse(
+                model=deployment,
+                input=[
+                    {
+                        "role": "system",
+                        "content": CORRESPONDENCE_PLAN_PROMPT,
+                    },
+                    {"role": "user", "content": user_msg},
+                ],
+                text_format=CorrespondencePlan,
+            )
+            result = response.output_parsed
+            if result is None:
+                raise ValueError("No structured output (parsed is None)")
+
+            # Format the plan as readable text for the fill layer
+            plan_lines = []
+            for pp in result.plans:
+                plan_lines.append(
+                    f"\u00b6{pp.paragraph}: {pp.spiritual_function}"
+                )
+                plan_lines.append(pp.bracket_plans)
+                plan_lines.append("")
+            return "\n".join(plan_lines)
+
+        except RateLimitError:
+            wait = 60.0
+            print(
+                f"  (plan rate limit, retry {attempt}/{max_retries} "
+                f"in {wait:.0f}s)...",
+                end=" ",
+                flush=True,
+            )
+            time.sleep(wait)
+
+        except APIStatusError as e:
+            err_str = str(e)
+            if "content_filter" in err_str.lower() and attempt < max_retries:
+                time.sleep(attempt * 10)
+                continue
+            print(f"  Plan API error: {e}")
+            if attempt < max_retries:
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            return None
+
+        except Exception as e:
+            err_str = str(e)
+            if "content_filter" in err_str.lower() and attempt < max_retries:
+                time.sleep(attempt * 10)
+                continue
+            print(f"  Plan ERROR Ch.{ch_num}: {e}")
+            if attempt < max_retries:
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            return None
+
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Load extracted core chapters
 # ---------------------------------------------------------------------------
 
@@ -872,10 +1233,12 @@ def restore_chapter(
     total_lacunae: int,
     ch_num: int,
     spiritual_reading: str | None = None,
+    correspondence_plan: str | None = None,
 ) -> ChapterResult | None:
     """Send chapter to GPT-5.2 for per-lacuna restoration."""
     user_msg = build_user_message(
-        core_paras, lacunae_map, total_lacunae, spiritual_reading
+        core_paras, lacunae_map, total_lacunae, spiritual_reading,
+        correspondence_plan,
     )
 
     max_retries = 3
@@ -1002,6 +1365,7 @@ def save_result(
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
     spiritual_reading: str | None = None,
+    correspondence_plan: str | None = None,
 ) -> None:
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
@@ -1015,6 +1379,7 @@ def save_result(
         "total_lacunae": total_lacunae,
         "lacunae_map": lacunae_serial,
         "spiritual_reading": spiritual_reading,
+        "correspondence_plan": correspondence_plan,
         **result.model_dump(),
     }
     with open(path, "w", encoding="utf-8") as f:
@@ -1363,15 +1728,35 @@ def main() -> None:
                 else "(pre-pass failed)"
             )
             print(
-                f"  Ch.{ch_num} {sr_info} filling...",
+                f"  Ch.{ch_num} {sr_info} planning...",
                 flush=True,
             )
 
-        # --- RESTORATION PASS ---
+        # --- LAYER 2: generate correspondence plan ---
+        correspondence_plan = None
+        if spiritual_reading:
+            correspondence_plan = generate_correspondence_plan(
+                client, deployment, core_paras, lacunae_map,
+                spiritual_reading, ch_num,
+            )
+
+        with print_lock:
+            plan_info = (
+                f"({len(correspondence_plan)} chars)"
+                if correspondence_plan
+                else "(plan skipped)"
+            )
+            print(
+                f"  Ch.{ch_num} plan {plan_info} filling...",
+                flush=True,
+            )
+
+        # --- LAYER 3: RESTORATION PASS ---
         result = restore_chapter(
             client, deployment, core_paras, lacunae_map,
             total_lacunae, ch_num,
             spiritual_reading=spiritual_reading,
+            correspondence_plan=correspondence_plan,
         )
         if result is None:
             with print_lock:
@@ -1396,6 +1781,7 @@ def main() -> None:
         save_result(
             ch_num, title, result, lacunae_map, total_lacunae,
             spiritual_reading=spiritual_reading,
+            correspondence_plan=correspondence_plan,
         )
 
         status = f"OK \u2014 {n_filled} filled, {n_unrest} unrestorable"
