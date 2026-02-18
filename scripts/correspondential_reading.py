@@ -113,16 +113,19 @@ Rules:
 # Client setup
 # ---------------------------------------------------------------------------
 
+
 def create_claude_client() -> tuple[AnthropicFoundry, str]:
     """Create Claude client from .env credentials."""
     config = dotenv_values(SECRETS_PATH)
-    endpoint = config.get("ANTHROPIC_ENDPOINT", "").rstrip("/") # type: ignore
+    endpoint = config.get("ANTHROPIC_ENDPOINT", "").rstrip("/")  # type: ignore
     api_key = config.get("ANTHROPIC_API_KEY", "")
     deployment = config.get("ANTHROPIC_DEPLOYMENT", "claude-opus-4-6")
 
     if not endpoint or not api_key:
-        print("ERROR: ANTHROPIC_ENDPOINT and ANTHROPIC_API_KEY required "
-              "in secrets/azure_openai.env")
+        print(
+            "ERROR: ANTHROPIC_ENDPOINT and ANTHROPIC_API_KEY required "
+            "in secrets/azure_openai.env"
+        )
         sys.exit(1)
 
     client = AnthropicFoundry(
@@ -130,12 +133,13 @@ def create_claude_client() -> tuple[AnthropicFoundry, str]:
         base_url=endpoint,
         timeout=httpx.Timeout(1800.0, connect=30.0),  # 30 min read
     )
-    return client, deployment # type: ignore
+    return client, deployment  # type: ignore
 
 
 # ---------------------------------------------------------------------------
 # Data loading
 # ---------------------------------------------------------------------------
+
 
 def load_core_chapters() -> list[dict]:
     """Load all extracted core chapter JSON files."""
@@ -151,10 +155,12 @@ def extract_core_paragraphs(chapter: dict) -> list[dict]:
     result = []
     for para in chapter.get("paragraphs", []):
         if para.get("core_text"):
-            result.append({
-                "paragraph_number": para["paragraph_number"],
-                "core_text": clean_core_text(para["core_text"]),
-            })
+            result.append(
+                {
+                    "paragraph_number": para["paragraph_number"],
+                    "core_text": clean_core_text(para["core_text"]),
+                }
+            )
     return result
 
 
@@ -175,9 +181,11 @@ def clean_core_text(text: str) -> str:
     text = PAGE_MARKER_RE.sub(" ", text)
     # Protect existing bracketed content with placeholder
     placeholders: list[str] = []
+
     def _save_bracket(m: re.Match) -> str:
         placeholders.append(m.group(0))
         return f"\x00BRACKET{len(placeholders) - 1}\x00"
+
     text = LACUNA_RE.sub(_save_bracket, text)
     # Now wrap any remaining bare dots
     text = BARE_DOTS_RE.sub("[ ... ]", text)
@@ -202,13 +210,15 @@ def find_lacunae(
         if matches:
             lacunae_map[pnum] = []
             for i, m in enumerate(matches, 1):
-                lacunae_map[pnum].append({
-                    "index": i,
-                    "start": m.start(),
-                    "end": m.end(),
-                    "original": m.group(0),
-                    "content": m.group(1),
-                })
+                lacunae_map[pnum].append(
+                    {
+                        "index": i,
+                        "start": m.start(),
+                        "end": m.end(),
+                        "original": m.group(0),
+                        "content": m.group(1),
+                    }
+                )
             total += len(matches)
     return lacunae_map, total
 
@@ -216,6 +226,7 @@ def find_lacunae(
 # ---------------------------------------------------------------------------
 # Phase 1: Spiritual Reading
 # ---------------------------------------------------------------------------
+
 
 def generate_spiritual_reading(
     client: AnthropicFoundry,
@@ -294,14 +305,16 @@ def generate_spiritual_reading(
                     elif etype == "message_stop":
                         if debug:
                             print(flush=True)
-                            
+
             return "\n".join(text_parts) if text_parts else None
 
         except Exception as e:
             err_str = str(e)
             if "content_filter" in err_str.lower():
-                print(f"  Phase 1 content filter Ch.{ch_num}, "
-                      f"attempt {attempt}/{max_retries}")
+                print(
+                    f"  Phase 1 content filter Ch.{ch_num}, "
+                    f"attempt {attempt}/{max_retries}"
+                )
                 if attempt < max_retries:
                     time.sleep(attempt * 10)
                     continue
@@ -426,8 +439,10 @@ def restore_chapter(
                 if parsed:
                     return parsed
 
-            print(f"\n  Phase 2 Ch.{ch_num}: no usable output "
-                  f"(attempt {attempt}/{max_retries})")
+            print(
+                f"\n  Phase 2 Ch.{ch_num}: no usable output "
+                f"(attempt {attempt}/{max_retries})"
+            )
             if attempt < max_retries:
                 time.sleep(attempt * 5)
                 continue
@@ -436,8 +451,10 @@ def restore_chapter(
         except Exception as e:
             err_str = str(e)
             if "content_filter" in err_str.lower():
-                print(f"  Phase 2 content filter Ch.{ch_num}, "
-                      f"attempt {attempt}/{max_retries}")
+                print(
+                    f"  Phase 2 content filter Ch.{ch_num}, "
+                    f"attempt {attempt}/{max_retries}"
+                )
                 if attempt < max_retries:
                     time.sleep(attempt * 10)
                     continue
@@ -447,9 +464,11 @@ def restore_chapter(
                 time.sleep(wait)
                 continue
             else:
-                print(f"  Phase 2 error Ch.{ch_num} "
-                      f"(attempt {attempt}/{max_retries}): "
-                      f"{type(e).__name__}: {e}")
+                print(
+                    f"  Phase 2 error Ch.{ch_num} "
+                    f"(attempt {attempt}/{max_retries}): "
+                    f"{type(e).__name__}: {e}"
+                )
                 traceback.print_exc()
                 if attempt < max_retries:
                     time.sleep(attempt * 5)
@@ -500,6 +519,8 @@ def retry_failed_paragraphs(
     spiritual_reading: str,
     accepted: dict[int, str],
     ch_num: int,
+    *,
+    debug: bool = False,
 ) -> dict[int, str] | None:
     """Retry rejected paragraphs with accepted context.
 
@@ -548,6 +569,10 @@ def retry_failed_paragraphs(
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
+            text_parts = []
+            in_thinking = False
+            thinking_chars = 0
+
             with client.messages.stream(
                 model=deployment,
                 system=RETRY_PROMPT,
@@ -555,21 +580,59 @@ def retry_failed_paragraphs(
                 max_tokens=128000,
                 thinking={"type": "adaptive"},
             ) as stream:
-                response = stream.get_final_message()
+                for event in stream:
+                    etype = getattr(event, "type", "")
 
-            # Extract text content (skip thinking blocks)
-            text_parts = []
-            for block in response.content:
-                if block.type == "text":
-                    text_parts.append(block.text)
+                    # Thinking block started
+                    if etype == "content_block_start":
+                        block = getattr(event, "content_block", None)
+                        if block and getattr(block, "type", "") == "thinking":
+                            in_thinking = True
+                            thinking_chars = 0
+                            if debug:
+                                print("\n  [thinking] ", end="", flush=True)
+                        elif block and getattr(block, "type", "") == "text":
+                            in_thinking = False
+                            if debug:
+                                print("\n  [output] ", end="", flush=True)
+
+                    # Thinking delta
+                    elif etype == "content_block_delta":
+                        delta = getattr(event, "delta", None)
+                        if delta:
+                            dtype = getattr(delta, "type", "")
+                            if dtype == "thinking_delta":
+                                chunk = getattr(delta, "thinking", "")
+                                thinking_chars += len(chunk)
+                                if debug:
+                                    print(chunk, end="", flush=True)
+                            elif dtype == "text_delta":
+                                chunk = getattr(delta, "text", "")
+                                text_parts.append(chunk)
+                                if debug:
+                                    print(chunk, end="", flush=True)
+
+                    # Block ended
+                    elif etype == "content_block_stop":
+                        if in_thinking:
+                            if debug:
+                                print(f" [{thinking_chars} chars]", flush=True)
+                            in_thinking = False
+
+                    # Message ended
+                    elif etype == "message_stop":
+                        if debug:
+                            print(flush=True)
             if text_parts:
                 raw = "\n".join(text_parts)
                 parsed = parse_restored_paragraphs(raw)
                 if parsed:
                     return parsed
 
-            print(f"  Retry Ch.{ch_num}: no usable output "
-                  f"(attempt {attempt}/{max_retries})")
+            print(
+                f"  Retry Ch.{ch_num}: no usable output "
+                f"(attempt {attempt}/{max_retries})"
+            )
             if attempt < max_retries:
                 time.sleep(attempt * 5)
                 continue
@@ -578,8 +641,10 @@ def retry_failed_paragraphs(
         except Exception as e:
             err_str = str(e)
             if "content_filter" in err_str.lower():
-                print(f"  Retry content filter Ch.{ch_num}, "
-                      f"attempt {attempt}/{max_retries}")
+                print(
+                    f"  Retry content filter Ch.{ch_num}, "
+                    f"attempt {attempt}/{max_retries}"
+                )
                 if attempt < max_retries:
                     time.sleep(attempt * 10)
                     continue
@@ -589,9 +654,11 @@ def retry_failed_paragraphs(
                 time.sleep(wait)
                 continue
             else:
-                print(f"  Retry error Ch.{ch_num} "
-                      f"(attempt {attempt}/{max_retries}): "
-                      f"{type(e).__name__}: {e}")
+                print(
+                    f"  Retry error Ch.{ch_num} "
+                    f"(attempt {attempt}/{max_retries}): "
+                    f"{type(e).__name__}: {e}"
+                )
                 traceback.print_exc()
                 if attempt < max_retries:
                     time.sleep(attempt * 5)
@@ -603,6 +670,7 @@ def retry_failed_paragraphs(
 # ---------------------------------------------------------------------------
 # Validation: skeleton-based integrity check
 # ---------------------------------------------------------------------------
+
 
 def normalize_skeleton(text: str) -> str:
     """Strip all [bracket content] and normalize whitespace.
@@ -636,7 +704,9 @@ def parse_restored_paragraphs(model_output: str) -> dict[int, str]:
 
 
 def extract_fills_by_diff(
-    original: str, restored: str, pnum: int,
+    original: str,
+    restored: str,
+    pnum: int,
 ) -> list[dict]:
     """Extract fills from bracket pairs between original and restored.
 
@@ -646,30 +716,32 @@ def extract_fills_by_diff(
     rest_brackets = list(LACUNA_RE.finditer(restored))
 
     fills = []
-    for i, (orig_m, rest_m) in enumerate(
-        zip(orig_brackets, rest_brackets), 1
-    ):
+    for i, (orig_m, rest_m) in enumerate(zip(orig_brackets, rest_brackets), 1):
         orig_content = orig_m.group(1)
         rest_content = rest_m.group(1)
 
         if orig_content != rest_content:
-            fills.append({
-                "paragraph": pnum,
-                "index": i,
-                "fill": rest_content,
-                "original": orig_content,
-                "notes": "",
-                "confidence": "moderate",
-            })
+            fills.append(
+                {
+                    "paragraph": pnum,
+                    "index": i,
+                    "fill": rest_content,
+                    "original": orig_content,
+                    "notes": "",
+                    "confidence": "moderate",
+                }
+            )
         else:
-            fills.append({
-                "paragraph": pnum,
-                "index": i,
-                "fill": rest_content,
-                "original": orig_content,
-                "notes": "unchanged",
-                "confidence": "strong" if rest_content.strip() != "..." else "",
-            })
+            fills.append(
+                {
+                    "paragraph": pnum,
+                    "index": i,
+                    "fill": rest_content,
+                    "original": orig_content,
+                    "notes": "unchanged",
+                    "confidence": "strong" if rest_content.strip() != "..." else "",
+                }
+            )
 
     return fills
 
@@ -679,11 +751,11 @@ def validate_restoration(
     restored_paras: dict[int, str],
     lacunae_map: dict[int, list[dict]],
 ) -> tuple[
-    dict[int, str],   # accepted {pnum: restored_text}
-    dict[int, str],   # rejected {pnum: reason}
-    list[dict],       # fills
-    list[dict],       # reconstructions
-    list[str],        # violations (informational)
+    dict[int, str],  # accepted {pnum: restored_text}
+    dict[int, str],  # rejected {pnum: reason}
+    list[dict],  # fills
+    list[dict],  # reconstructions
+    list[str],  # violations (informational)
 ]:
     """Validate restored paragraphs using skeleton invariant.
 
@@ -725,19 +797,19 @@ def validate_restoration(
         orig_n = len(list(LACUNA_RE.finditer(original)))
         rest_n = len(list(LACUNA_RE.finditer(restored_text)))
         if orig_n != rest_n:
-            reason = (
-                f"bracket count mismatch: {orig_n} vs {rest_n}"
-            )
+            reason = f"bracket count mismatch: {orig_n} vs {rest_n}"
             all_violations.append(f"¶{pnum}: REJECTED — {reason}")
             rejected[pnum] = reason
             continue
 
         # --- ACCEPTED ---
         accepted[pnum] = restored_text
-        all_reconstructions.append({
-            "paragraph": pnum,
-            "reconstructed_text": restored_text,
-        })
+        all_reconstructions.append(
+            {
+                "paragraph": pnum,
+                "reconstructed_text": restored_text,
+            }
+        )
 
         # Extract fills if paragraph had lacunae
         if pnum in lacunae_map:
@@ -750,6 +822,7 @@ def validate_restoration(
 # ---------------------------------------------------------------------------
 # Utility
 # ---------------------------------------------------------------------------
+
 
 def fix_stray_brackets(text: str) -> str:
     """Remove unmatched brackets from reconstruction text."""
@@ -773,6 +846,7 @@ def fix_stray_brackets(text: str) -> str:
 # Save / Load
 # ---------------------------------------------------------------------------
 
+
 def save_result(
     ch_num: int,
     title: str,
@@ -791,13 +865,13 @@ def save_result(
     lacunae_serial = {str(k): v for k, v in lacunae_map.items()}
 
     n_filled = sum(
-        1 for f in all_fills
+        1
+        for f in all_fills
         if f.get("fill", "...").strip() != "..."
         and f.get("fill", "") != f.get("original", "")
     )
     n_unchanged = sum(
-        1 for f in all_fills
-        if f.get("fill", "") == f.get("original", "")
+        1 for f in all_fills if f.get("fill", "") == f.get("original", "")
     )
 
     data = {
@@ -829,6 +903,7 @@ def is_done(ch_num: int) -> bool:
 # ---------------------------------------------------------------------------
 # Assembly: build the restored document
 # ---------------------------------------------------------------------------
+
 
 def assemble_restored(core_chapters: dict[int, dict]) -> str:
     """Assemble all restorations into a continuous restored document."""
@@ -942,41 +1017,59 @@ def save_assembly(text: str) -> None:
 # CLI
 # ---------------------------------------------------------------------------
 
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Correspondential restoration of the Kephalaia "
-        "teaching core"
+        description="Correspondential restoration of the Kephalaia " "teaching core"
     )
     parser.add_argument(
-        "--chapter", "-c", type=int, default=None,
+        "--chapter",
+        "-c",
+        type=int,
+        default=None,
         help="Process a single chapter",
     )
     parser.add_argument(
-        "--range", "-r", type=str, default=None,
+        "--range",
+        "-r",
+        type=str,
+        default=None,
         help="Process a range of chapters (e.g., '38-55')",
     )
     parser.add_argument(
-        "--limit", "-l", type=int, default=None,
+        "--limit",
+        "-l",
+        type=int,
+        default=None,
         help="Process only first N chapters",
     )
     parser.add_argument(
-        "--dry-run", "-n", action="store_true",
+        "--dry-run",
+        "-n",
+        action="store_true",
         help="Preview without API calls",
     )
     parser.add_argument(
-        "--overwrite", action="store_true",
+        "--overwrite",
+        action="store_true",
         help="Reprocess existing restorations",
     )
     parser.add_argument(
-        "--assemble", "-a", action="store_true",
+        "--assemble",
+        "-a",
+        action="store_true",
         help="Skip restoration, assemble existing only",
     )
     parser.add_argument(
-        "--concurrency", "-j", type=int, default=1,
+        "--concurrency",
+        "-j",
+        type=int,
+        default=1,
         help="Number of chapters to process in parallel (default: 1)",
     )
     parser.add_argument(
-        "--debug", action="store_true",
+        "--debug",
+        action="store_true",
         help="Show model thinking log (only effective with -j 1)",
     )
     return parser.parse_args()
@@ -985,6 +1078,7 @@ def parse_args() -> argparse.Namespace:
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     args = parse_args()
@@ -1009,9 +1103,7 @@ def main() -> None:
 
     # Determine which to process
     if args.chapter is not None:
-        chapters = [
-            ch for ch in all_chapters if ch["chapter_number"] == args.chapter
-        ]
+        chapters = [ch for ch in all_chapters if ch["chapter_number"] == args.chapter]
         if not chapters:
             print(f"ERROR: Chapter {args.chapter} not found")
             sys.exit(1)
@@ -1021,21 +1113,16 @@ def main() -> None:
             print("ERROR: Invalid range. Use '38-55'")
             sys.exit(1)
         start, end = int(m.group(1)), int(m.group(2))
-        chapters = [
-            ch for ch in all_chapters
-            if start <= ch["chapter_number"] <= end
-        ]
+        chapters = [ch for ch in all_chapters if start <= ch["chapter_number"] <= end]
     else:
         chapters = all_chapters
 
     if args.limit:
-        chapters = chapters[:args.limit]
+        chapters = chapters[: args.limit]
 
     # Skip already processed
     if not args.overwrite:
-        to_process = [
-            ch for ch in chapters if not is_done(ch["chapter_number"])
-        ]
+        to_process = [ch for ch in chapters if not is_done(ch["chapter_number"])]
         skipped = len(chapters) - len(to_process)
         if skipped > 0:
             print(f"  Skipping {skipped} already-done (use --overwrite)")
@@ -1055,8 +1142,10 @@ def main() -> None:
         title = ch.get("chapter_title", "")[:60]
         core_paras = extract_core_paragraphs(ch)
         _, n_lacunae = find_lacunae(core_paras)
-        print(f"  Ch.{num:3d}  ({len(core_paras):3d} core ¶s, "
-              f"{n_lacunae} lacunae)  {title}")
+        print(
+            f"  Ch.{num:3d}  ({len(core_paras):3d} core ¶s, "
+            f"{n_lacunae} lacunae)  {title}"
+        )
 
     if args.dry_run:
         print("\n[DRY RUN] No API calls made.")
@@ -1096,13 +1185,18 @@ def main() -> None:
         if total_lacunae == 0:
             with print_lock:
                 counter["done"] += 1
-                print(f"[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} — no lacunae, skip")
+                print(
+                    f"[{counter['done']}/{total_to_process}] "
+                    f"Ch.{ch_num} — no lacunae, skip"
+                )
             return
 
         with print_lock:
-            print(f"  Ch.{ch_num} ({total_lacunae} lacunae) "
-                  f"{title}...", end="", flush=True)
+            print(
+                f"  Ch.{ch_num} ({total_lacunae} lacunae) " f"{title}...",
+                end="",
+                flush=True,
+            )
 
         # --- Phase 1: Spiritual Reading (use cache if available) ---
         cached_path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
@@ -1123,15 +1217,16 @@ def main() -> None:
             with print_lock:
                 print(f" phase 1...", end="", flush=True)
             spiritual_reading = generate_spiritual_reading(
-                client, deployment, core_paras, ch_num,
-                debug=show_debug
+                client, deployment, core_paras, ch_num, debug=show_debug
             )
             if not spiritual_reading:
                 with print_lock:
                     counter["done"] += 1
                     errors_list.append(ch_num)
-                    print(f"\n[{counter['done']}/{total_to_process}] "
-                          f"Ch.{ch_num} FAILED (spiritual reading)")
+                    print(
+                        f"\n[{counter['done']}/{total_to_process}] "
+                        f"Ch.{ch_num} FAILED (spiritual reading)"
+                    )
                 return
 
         with print_lock:
@@ -1139,20 +1234,26 @@ def main() -> None:
 
         # --- Phase 2: Restoration (single call) ---
         restored_paras = restore_chapter(
-            client, deployment, core_paras, spiritual_reading, ch_num,
+            client,
+            deployment,
+            core_paras,
+            spiritual_reading,
+            ch_num,
             debug=show_debug,
         )
         if not restored_paras:
             with print_lock:
                 counter["done"] += 1
                 errors_list.append(ch_num)
-                print(f"\n[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} FAILED (restoration)")
+                print(
+                    f"\n[{counter['done']}/{total_to_process}] "
+                    f"Ch.{ch_num} FAILED (restoration)"
+                )
             return
 
         # --- Validation with skeleton check ---
-        accepted, rejected, all_fills, all_recons, violations = (
-            validate_restoration(core_paras, restored_paras, lacunae_map)
+        accepted, rejected, all_fills, all_recons, violations = validate_restoration(
+            core_paras, restored_paras, lacunae_map
         )
 
         # --- Retry loop for rejected paragraphs ---
@@ -1162,20 +1263,23 @@ def main() -> None:
                 break
 
             with print_lock:
-                print(f"  Ch.{ch_num} retry {retry_round}: "
-                      f"{len(rejected)} rejected ¶s "
-                      f"({', '.join(str(p) for p in sorted(rejected))})",
-                      flush=True)
+                print(
+                    f"  Ch.{ch_num} retry {retry_round}: "
+                    f"{len(rejected)} rejected ¶s "
+                    f"({', '.join(str(p) for p in sorted(rejected))})",
+                    flush=True,
+                )
 
             # Build context: only paragraphs that need retrying,
             # plus accepted restorations as surrounding context
-            retry_paras = [
-                p for p in core_paras
-                if p["paragraph_number"] in rejected
-            ]
+            retry_paras = [p for p in core_paras if p["paragraph_number"] in rejected]
             retry_result = retry_failed_paragraphs(
-                client, deployment, retry_paras,
-                spiritual_reading, accepted, ch_num,
+                client,
+                deployment,
+                retry_paras,
+                spiritual_reading,
+                accepted,
+                ch_num,
             )
             if not retry_result:
                 break
@@ -1197,21 +1301,30 @@ def main() -> None:
         # For any still-rejected paragraphs, keep original text
         originals = {p["paragraph_number"]: p["core_text"] for p in core_paras}
         for pnum in rejected:
-            violations.append(f"¶{pnum}: KEPT ORIGINAL after {max_para_retries} retries")
-            all_recons.append({
-                "paragraph": pnum,
-                "reconstructed_text": originals.get(pnum, ""),
-            })
+            violations.append(
+                f"¶{pnum}: KEPT ORIGINAL after {max_para_retries} retries"
+            )
+            all_recons.append(
+                {
+                    "paragraph": pnum,
+                    "reconstructed_text": originals.get(pnum, ""),
+                }
+            )
 
         n_changed = sum(
-            1 for f in all_fills
+            1
+            for f in all_fills
             if f.get("fill", "") != f.get("original", "")
             and f.get("fill", "...").strip() != "..."
         )
 
         save_result(
-            ch_num, title, all_fills, all_recons,
-            lacunae_map, total_lacunae,
+            ch_num,
+            title,
+            all_fills,
+            all_recons,
+            lacunae_map,
+            total_lacunae,
             spiritual_reading=spiritual_reading,
             violations=violations,
         )
@@ -1225,8 +1338,7 @@ def main() -> None:
         with print_lock:
             counter["done"] += 1
             results_list.append(ch_num)
-            print(f"\n[{counter['done']}/{total_to_process}] "
-                  f"Ch.{ch_num} {status}")
+            print(f"\n[{counter['done']}/{total_to_process}] " f"Ch.{ch_num} {status}")
 
     # --- Execute ---
     if concurrency == 1:
@@ -1234,9 +1346,7 @@ def main() -> None:
             process_one(ch)
     else:
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = {
-                executor.submit(process_one, ch): ch for ch in chapters
-            }
+            futures = {executor.submit(process_one, ch): ch for ch in chapters}
             for future in as_completed(futures):
                 exc = future.exception()
                 if exc:
