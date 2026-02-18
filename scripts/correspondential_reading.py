@@ -170,15 +170,74 @@ PAGE_MARKER_RE = re.compile(r"\s*\u27E8p\.\d+\u27E9\s*")
 BARE_DOTS_RE = re.compile(r"\.{2,}")
 
 
+def fix_source_brackets(text: str) -> str:
+    """Repair unbalanced brackets in source core_text.
+
+    Handles four categories found in the Kephalaia corpus:
+
+    1. UNCLOSED TRAILING — text ends with `[...` or `[ht ...`
+       → Close with `]`
+    2. DOUBLE CLOSE — `]]` (e.g. `a[l]]` or `[ ... ]]ife`)
+       → Remove the extra `]`
+    3. STRAY CLOSE — `]` without matching `[`
+       → Remove the orphan `]`
+    4. UNCLOSED MID — `[` without matching `]` in middle of text
+       → Close with `]` before next `[` or at text end
+    """
+    # Pass 1: Fix double brackets `]]` → single `]`
+    # But only where one of them is stray (not nested brackets)
+    # Simple heuristic: `]]` is never valid in this corpus
+    text = text.replace("]]", "]")
+
+    # Pass 2: Walk through and fix remaining imbalances
+    result = []
+    depth = 0
+    for i, ch in enumerate(text):
+        if ch == "[":
+            if depth > 0:
+                # Already inside a bracket — close the previous one first
+                result.append("]")
+                depth -= 1
+            result.append(ch)
+            depth += 1
+        elif ch == "]":
+            if depth > 0:
+                result.append(ch)
+                depth -= 1
+            else:
+                # Stray close bracket — skip it
+                pass
+        else:
+            result.append(ch)
+
+    # If we end with unclosed bracket(s), close them
+    while depth > 0:
+        result.append("]")
+        depth -= 1
+
+    return "".join(result)
+
+
 def clean_core_text(text: str) -> str:
     """Clean core text before processing.
 
     1. Strip manuscript page markers (e.g. ⟨p.20⟩)
-    2. Wrap bare ... in [ ... ] so they are counted as lacunae
-    3. Collapse multiple whitespace / newlines
+    2. Normalize translator artifacts: {} → [...] (single-word lacuna marker)
+    3. Fix unbalanced brackets (common in OCR/extraction)
+    4. Wrap bare ... in [ ... ] so they are counted as lacunae
+    5. Collapse multiple whitespace / newlines
     """
     # Strip page markers
     text = PAGE_MARKER_RE.sub(" ", text)
+
+    # Normalize translator's single-word lacuna marker {} → [...]
+    text = re.sub(r"\{\s*\}", "[...]", text)
+    # Strip braces from uncertain readings {word} → word
+    text = re.sub(r"\{([^}.]+)\}", r"\1", text)
+
+    # --- Fix unbalanced brackets ---
+    text = fix_source_brackets(text)
+
     # Protect existing bracketed content with placeholder
     placeholders: list[str] = []
 
@@ -759,14 +818,23 @@ def extract_fills_by_diff(
                 }
             )
         else:
+            # Distinguish: was this already filled by the translator, or an unfilled gap?
+            orig_stripped = orig_content.strip()
+            is_gap = orig_stripped in ("...", ". . .", "") or orig_stripped.replace(".", "").replace("/", "").replace(" ", "") == ""
+            if is_gap:
+                note = "unfilled gap"
+                confidence = ""
+            else:
+                note = "already filled by translator"
+                confidence = "strong"
             fills.append(
                 {
                     "paragraph": pnum,
                     "index": i,
                     "fill": rest_content,
                     "original": orig_content,
-                    "notes": "unchanged",
-                    "confidence": "strong" if rest_content.strip() != "..." else "",
+                    "notes": note,
+                    "confidence": confidence,
                 }
             )
 
@@ -891,15 +959,35 @@ def save_result(
 
     lacunae_serial = {str(k): v for k, v in lacunae_map.items()}
 
-    n_filled = sum(
-        1
-        for f in all_fills
-        if f.get("fill", "...").strip() != "..."
-        and f.get("fill", "") != f.get("original", "")
-    )
-    n_unchanged = sum(
-        1 for f in all_fills if f.get("fill", "") == f.get("original", "")
-    )
+    # Categorize fills into three buckets:
+    #   restored:      was a gap (original is "..." or similar), model filled it
+    #   already_filled: translator already supplied text, model kept it (correct)
+    #   unfilled:       was a gap, model left it as "..."
+    n_restored = 0
+    n_already_filled = 0
+    n_unfilled = 0
+    for f in all_fills:
+        orig = f.get("original", "").strip()
+        fill = f.get("fill", "").strip()
+        orig_is_gap = orig in ("...", ". . .", "") or orig.replace(".", "").replace("/", "").replace(" ", "") == ""
+        if not orig_is_gap:
+            # Translator already had text — nothing to restore
+            n_already_filled += 1
+        elif fill == orig or fill in ("...", ". . .", ""):
+            # Was a gap and model didn't fill it
+            n_unfilled += 1
+        else:
+            # Was a gap and model filled it
+            n_restored += 1
+
+    parts = [f"{n_restored} restored"]
+    if n_already_filled:
+        parts.append(f"{n_already_filled} already filled")
+    if n_unfilled:
+        parts.append(f"{n_unfilled} unfilled gaps")
+    if violations:
+        parts.append(f"{len(violations)} violations")
+    assessment = ", ".join(parts)
 
     data = {
         "chapter_number": ch_num,
@@ -910,11 +998,7 @@ def save_result(
         "reconstructions": all_reconstructions,
         "fills": all_fills,
         "violations": violations or [],
-        "assessment": (
-            f"{n_filled} fills changed, "
-            f"{n_unchanged} unchanged, "
-            f"{len(violations or [])} violations"
-        ),
+        "assessment": assessment,
     }
     if thinking_summary:
         data["thinking_summary"] = thinking_summary
@@ -1338,11 +1422,14 @@ def main() -> None:
                 }
             )
 
-        n_changed = sum(
+        # Count restored gaps (was "...", model filled it)
+        n_restored = sum(
             1
             for f in all_fills
-            if f.get("fill", "") != f.get("original", "")
-            and f.get("fill", "...").strip() != "..."
+            if f.get("original", "").strip() in ("...", ". . .", "")
+            or f.get("original", "").replace(".", "").replace("/", "").replace(" ", "") == ""
+            if f.get("fill", "").strip() not in ("...", ". . .", "")
+            and f.get("fill", "") != f.get("original", "")
         )
 
         save_result(
@@ -1356,7 +1443,7 @@ def main() -> None:
             violations=violations,
         )
 
-        status = f"OK — {n_changed}/{total_lacunae} filled"
+        status = f"OK — {n_restored}/{total_lacunae} gaps restored"
         if rejected:
             status += f", {len(rejected)} kept original"
         if violations:
