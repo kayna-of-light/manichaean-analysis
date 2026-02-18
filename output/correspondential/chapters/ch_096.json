@@ -1,0 +1,97 @@
+{
+  "chapter_number": 96,
+  "chapter_title": "The Three Earths that Exist, they bear Fruit.",
+  "total_lacunae": 6,
+  "lacunae_map": {
+    "1": [
+      {
+        "index": 1,
+        "start": 77,
+        "end": 82,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 124,
+        "end": 130,
+        "original": "[good]",
+        "content": "good"
+      }
+    ],
+    "2": [
+      {
+        "index": 1,
+        "start": 86,
+        "end": 91,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 128,
+        "end": 136,
+        "original": "[making]",
+        "content": "making"
+      },
+      {
+        "index": 3,
+        "start": 166,
+        "end": 171,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 4,
+        "start": 207,
+        "end": 215,
+        "original": "[it ...]",
+        "content": "it ..."
+      }
+    ]
+  },
+  "spiritual_reading": "\n\n\n#\n Spiritual\n Translation\n\n\n**\n¶1:**\n Three grounds\n of\n reception\n exist within\n the whole\n person\n, and each\n is being cultiv\nated by\n the Divine\n. At first they receive\n the working\n of the Lord\n within them. Afterwards they yield\n genuine\n goods\n of\n life to\n the\n powers\n that labor\n upon them.\n\n**¶2\n:** The\n first\n of\n these is the natural\n mind —\n the ou\ntermost plane\n upon\n which human\n beings consc\niously d\nwell. They break\n it\n open with effort\n, applying\n natural truths forc\nibly\n against\n what\n is hardened there\n;\n they prepare\n the understanding in\n ordered\n arrangements\n to\n receive what\n is s\nown,\n over\ntur\nning its\n native\n orientation away\n from self\n and\n toward heaven.\n Afterwards\n they gather the goods\n of\n life that\n are\n produced from\n it\n.\n\n**¶3:** The\n second ground\n of\n reception is the interior spiritual mind,\n which\n is\n alive\n from the Divine\n and set\n apart\n as\n holy\n. It is dispersed through every level\n of consciousness, both the\n higher\n and the\n lower. The powers\n that cultiv\nate it are Divine\n Love\n and Divine Wisdom, which\n flow contin\nually through all heavenly states. They\n labor\n upon\n the interior mind\n and\n tend\n it\n, so that whatever\n good\n and truth lies\n hidden\n there\n may\n be drawn up\nward toward conjunction with themselves\n. And that\n good\n rises\n and\n asc\nends into\n elevated\n states.\n It is\n lifted\n out from every lower\n plane\n in\n which it had\n been held\n capt\nive,\n and it is gathered\n into the Divine\n,\n aug\nmenting the heavenly kingdom.",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "Three earths exist in the universe, and are being toiled over. At first they [receive] the farmer in them. Afterwards they bear [good] fruit to they who toil over them."
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "One of them is this great earth that people are living upon. They are ploughing in it [...], it with iron hoes, they cultivate, [making] the furrows, turning it over [...] Afterwards they harvest fruit from [it ...]"
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The second field is the living soul, the holy one. It is mixed in the entire zone, above and below. The farmers who toil over it are these two great light-givers, which journey through the heavens. They are toiling and cultivating it, so that they will draw it towards their aspect. And it leaps up and comes to the heights. It goes upwards, out from every place wherein it is, and it adds to them."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 1,
+      "index": 1,
+      "fill": "receive",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 1,
+      "index": 2,
+      "fill": "good",
+      "original": "good",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    }
+  ],
+  "violations": [
+    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
+    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs 'The second field is the living soul, the holy one. It is mixed in the entire zon'",
+    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
+    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs 'The second field is the living soul, the holy one. It is mixed in the entire zon'",
+    "¶2: REJECTED — skeleton altered: 'One of them is this great earth that people are living upon. They are ploughing ' vs 'One of them is this great earth that people are living upon. They are ploughing '",
+    "¶3: REJECTED — skeleton altered: 'The second field is the living soul, the holy one. It is mixed in the entire zon' vs ': The second field is the living soul, the holy one . It is mixed in the entire '",
+    "¶2: KEPT ORIGINAL after 2 retries",
+    "¶3: KEPT ORIGINAL after 2 retries"
+  ],
+  "assessment": "1 restored, 1 already filled, 8 violations"
+}

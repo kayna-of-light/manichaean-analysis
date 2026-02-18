@@ -1,0 +1,83 @@
+{
+  "chapter_number": 75,
+  "chapter_title": "[Concerning the Letter (?)]",
+  "total_lacunae": 4,
+  "lacunae_map": {
+    "2": [
+      {
+        "index": 1,
+        "start": 327,
+        "end": 355,
+        "original": "[... is ordained to happen.]",
+        "content": "... is ordained to happen."
+      }
+    ],
+    "3": [
+      {
+        "index": 1,
+        "start": 267,
+        "end": 272,
+        "original": "[...]",
+        "content": "..."
+      },
+      {
+        "index": 2,
+        "start": 306,
+        "end": 315,
+        "original": "[... ...]",
+        "content": "... ..."
+      },
+      {
+        "index": 3,
+        "start": 360,
+        "end": 379,
+        "original": "[that would happen]",
+        "content": "that would happen"
+      }
+    ]
+  },
+  "spiritual_reading": "\n\n\n#\n Spiritual\n Translation\n\n\n**\n¶2:**\n\n\nConsider\n the Divine\n infl\nux, which proceeded\n from the Lord\n's spiritual operation in\n the beginning. It fl\nowed down into the celestial will that\n had\n descended into obsc\nurity and\n combat with evil. It\n is a communication\n of in\nmost peace\n and\n the\n good of charity, ordered\n and\n directed\n toward\n what is conjoined with\n it\n by\n mutual love,\n in\n which all states\n of\n the\n spiritual life from\n first to last are insc\nribed according\n to Divine providence\n,\n together\n with everything that Divine\n truth will accomplish\n and\n establish in\n the course\n of regeneration. That Divine influx\n, received\n by the celest\nial will, ord\nains all that\n is to\n unf\nold in the restoration\n of what\n was\n lost.\n\n\n**¶3:**\n\nThe\n recip\nrocal acknowledgment that\n arose\n from the celest\nial will asc\nended to\n the interior\n and\n higher\n degrees,\n to\n the Lord\n's\n spiritual operation. It is likewise\n an\n ordered communication\n,\n elevated\n from\n the depths\n of tem\nptation toward the Divine, in\n which every\n state of spiritual combat\n is\n laid\n open\n —\n every\n temptation, every struggle\n that\n had\n been end\nured against\n the h\nells.\n All\n that\n had been\n suffered\n and all\n that remained\n to be underg\none,\n all that evil\n had wr\nought and whatever\n yet\n awa\nited resolution\n —\n all\n of it\n was\n contained\n in that\n ascending\n acknowledg\nment.\n And\n the Lord's spiritual\n operation perceived\n with\n perfect compreh\nension every\n tem\nptation,\n every pe\nril, and\n every assault\n that the\n dominant\n ev\nils and falsities of the natural mind\n had waged against the celestial good\n held\n capt\nive among\n them\n.",
+  "reconstructions": [
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The answer that was sent from the First Man came to the heights, to the Living Spirit. That is also a letter, which was sent from the First Man to the Living Spirit, in which all the tidings are written down; and every war and the struggles that he had waged. It did [set forth all these things] in the answer that the First Man [sent up, declaring] everything that had happened and everything [that would happen], all that had been done and whatever is made ready to be done by him. The Living Spirit knew all the wars and the dangers and the contests that the rulers had waged against the First Man."
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "Consider the summons, which was sent from the Living Spirit in the beginning. He sent it to the First Man. It is a peace letter and greeting that he wrote and sent to his brother, in which all the tidings are written down, together with everything it will bring about and establish by that summons. That summons, the First Man [... is ordained to happen.]"
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 3,
+      "index": 1,
+      "fill": "set forth all these things",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 3,
+      "index": 2,
+      "fill": "sent up, declaring",
+      "original": "... ...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 3,
+      "index": 3,
+      "fill": "that would happen",
+      "original": "that would happen",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    }
+  ],
+  "violations": [
+    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
+    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
+    "¶2: REJECTED — skeleton altered: 'Consider the summons, which was sent from the Living Spirit in the beginning. He' vs 'Consider the summons, which was sent from the Living Spirit in the beginning. He'",
+    "¶2: KEPT ORIGINAL after 2 retries"
+  ],
+  "assessment": "2 restored, 1 already filled, 4 violations"
+}

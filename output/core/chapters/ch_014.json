@@ -3,43 +3,43 @@
   "chapter_title": "The Interpretation [of] the S[i]lence, the Fast, [the Peace], the Day, [and] the Rest; [what] they are.",
   "total_paragraphs": 5,
   "core_paragraphs": 3,
-  "core_percentage": 59.0,
-  "chapter_note": "This chapter is largely definitional: it interprets the five proclaimed practices by mapping each to cosmological archetypes (cosmos→cosmos). The opening is a clear dialogue/frame prompt. The only notable intrusion of later layer is a small dialogue-attribution seam in ¶4 (“the enlightener … call it ‘day’”), which is removed in extraction. The closing beatitude in ¶5 reads as devotional/pastoral rather than systematic cosmological teaching.",
+  "core_percentage": 48.0,
+  "chapter_note": "Despite the chapter title’s ritual-sounding keywords (silence/fast/peace/day/rest), the surviving content is mostly cosmological identification/exposition (First Man, ship of living waters, Pillar of Glory, great aeon). The only clear editorial layer is the opening dialogue-question frame and a closing beatitude/doxology. Several paragraphs are heavily lacunose; where a teaching paragraph includes an explicit teacher-attribution (“the enlightener ...”), that phrase is treated as later framing and stripped, leaving the underlying cosmological explanation.",
   "paragraphs": [
     {
       "paragraph_number": 1,
       "classification": "frame",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Dialogue frame: disciples question the enlightener; petition formula (“We implore you, our father…”). This is compilation apparatus rather than the teaching substrate."
+      "temporal_note": "Dialogue/Q&A frame: disciples question the enlightener; petition formula (“We implore you, our father...”). This is compiling-community apparatus, not the systematic substrate."
     },
     {
       "paragraph_number": 2,
-      "classification": "core",
-      "core_text": "[...] the gatherer in [... ...] then he shall cau[se] the body [...] all the lusts of the world [...] of the body in righteousness [...] is the Pill[a]r of Gl[or]y [...] because [...] ⟨p.47⟩ [...] up to the [...]",
-      "removed_material": null,
-      "temporal_note": "Despite lacunae and some moral vocabulary (“lusts”, “righteousness”), the paragraph’s logic appears to ground a proclaimed practice in a cosmological mechanism/agent (“the gatherer…”, “the Pillar of Glory”), i.e., archetype-identification within the Manichaean cosmic system. Uncertain due to heavy damage; no clear audience-address or institutional application is preserved."
+      "classification": "mixed",
+      "core_text": "[...] the gatherer in [... ...] [...] is the Pill[a]r of Gl[or]y [...]",
+      "removed_material": "Removed surrounding ascetic-ethical/moralizing clauses about the body and “lusts of the world” and “righteousness,” which shift from cosmic identification to practical/moral application. Also excluded the manuscript page marker ⟨p.47⟩.",
+      "temporal_note": "Core is the cosmological identification of a ‘gatherer’ with the Pillar of Glory (a fixed element of Manichaean cosmic mechanics). The adjacent language about bodily lusts reads as interpretive/ascetic application rather than impersonal system-description."
     },
     {
       "paragraph_number": 3,
       "classification": "core",
       "core_text": "The one they call [...] it is the [Fi]rst [M]an who dwel[ls i]n the ship of living waters [...] li]ght [...] he is c[alled ...] that they have [...] glorious [...]",
       "removed_material": null,
-      "temporal_note": "Direct cosmological identification of a ritual term with a named cosmic being and locus (“First Man”, “ship of living waters”): classic system-internal mapping (cosmos→cosmos) without exhortation or citation."
+      "temporal_note": "System-internal mapping/identification: a named cosmic hypostasis (First Man) located in a defined cosmic vehicle/domain (ship of living waters). No address to church practice, no citation, no institutional polemic."
     },
     {
       "paragraph_number": 4,
       "classification": "mixed",
-      "core_text": "[...] uni]verse as they shall [...] in the great aeon [...] are spread in the universe, it is [...] established in the [...] and the so[u]ls [...]",
-      "removed_material": "Removed the dialogue attribution/editorial tag introducing the interpretation: \"[...] the enlighten[er ... cal]l it 'day' [...]\" because explicit attribution to the enlightener is a later compilation frame marker.",
-      "temporal_note": "The remaining content defines “day” via cosmological placement/process (“great aeon”, “spread in the universe”, relation to “souls”), which fits the impersonal archetypal register; the excised clause reflects the redactional dialogue wrapper."
+      "core_text": "[...] cal]l it 'day' [...] uni]verse as they shall [...] in the great aeon [...] are spread in the universe, it is [...] established in the [...] and the so[u]ls [...]",
+      "removed_material": "Removed the explicit teacher-attribution phrase “[...] the enlighten[er ...” as dialogue/frame material (Layer 2 attribution) while retaining the cosmological explanation that follows.",
+      "temporal_note": "Underlying content is impersonal cosmological exposition (great aeon; distribution/establishment in the universe; relation to souls). The intrusion of “the enlightener ...” signals a later dialogic presentation layer wrapped around older teaching."
     },
     {
       "paragraph_number": 5,
       "classification": "pastoral",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Devotional/benedictory closure (“Blessed is he…”, eternal praise) lacks systematic cosmological mapping and reads like later liturgical/pastoral diction rather than substrate exposition."
+      "temporal_note": "Beatitude/doxological close (“Blessed is he... remains for ever and ever”), characteristic of devotional/pastoral stitching rather than systematic cosmological correspondence-teaching."
     }
   ]
 }
