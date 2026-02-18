@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """Correspondential restoration of the Kephalaia teaching core.
 
 Architecture:
@@ -24,9 +25,11 @@ import re
 import sys
 import time
 import threading
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+import httpx
 from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
 
@@ -103,43 +106,7 @@ Rules:
 - Write in the register of ancient cosmological teaching — impersonal, \
   structural, expository
 - Do NOT use forward slash (/) in fills
-- Submit your restoration using the submit_restoration tool"""
-
-# Tool definition for structured output in Phase 2
-RESTORATION_TOOL = {
-    "name": "submit_restoration",
-    "description": (
-        "Submit the restored chapter. Every paragraph from the input "
-        "must appear, with additions in [square brackets]."
-    ),
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "paragraphs": {
-                "type": "array",
-                "description": "All restored paragraphs in order",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "number": {
-                            "type": "integer",
-                            "description": "Paragraph number (¶N)",
-                        },
-                        "text": {
-                            "type": "string",
-                            "description": (
-                                "Complete paragraph text with additions "
-                                "in [square brackets]"
-                            ),
-                        },
-                    },
-                    "required": ["number", "text"],
-                },
-            },
-        },
-        "required": ["paragraphs"],
-    },
-}
+- Output every paragraph as ¶N: followed by the complete text"""
 
 
 # ---------------------------------------------------------------------------
@@ -149,7 +116,7 @@ RESTORATION_TOOL = {
 def create_claude_client() -> tuple[AnthropicFoundry, str]:
     """Create Claude client from .env credentials."""
     config = dotenv_values(SECRETS_PATH)
-    endpoint = config.get("ANTHROPIC_ENDPOINT", "").rstrip("/")
+    endpoint = config.get("ANTHROPIC_ENDPOINT", "").rstrip("/") # type: ignore
     api_key = config.get("ANTHROPIC_API_KEY", "")
     deployment = config.get("ANTHROPIC_DEPLOYMENT", "claude-opus-4-6")
 
@@ -161,8 +128,9 @@ def create_claude_client() -> tuple[AnthropicFoundry, str]:
     client = AnthropicFoundry(
         api_key=api_key,
         base_url=endpoint,
+        timeout=httpx.Timeout(1800.0, connect=30.0),  # 30 min read
     )
-    return client, deployment
+    return client, deployment # type: ignore
 
 
 # ---------------------------------------------------------------------------
@@ -185,9 +153,40 @@ def extract_core_paragraphs(chapter: dict) -> list[dict]:
         if para.get("core_text"):
             result.append({
                 "paragraph_number": para["paragraph_number"],
-                "core_text": para["core_text"],
+                "core_text": clean_core_text(para["core_text"]),
             })
     return result
+
+
+# Regex for page markers like ⟨p.18⟩ or ⟨p.N⟩
+PAGE_MARKER_RE = re.compile(r"\s*\u27E8p\.\d+\u27E9\s*")
+# Bare ellipsis (2+ dots)
+BARE_DOTS_RE = re.compile(r"\.{2,}")
+
+
+def clean_core_text(text: str) -> str:
+    """Clean core text before processing.
+
+    1. Strip manuscript page markers (e.g. ⟨p.20⟩)
+    2. Wrap bare ... in [ ... ] so they are counted as lacunae
+    3. Collapse multiple whitespace / newlines
+    """
+    # Strip page markers
+    text = PAGE_MARKER_RE.sub(" ", text)
+    # Protect existing bracketed content with placeholder
+    placeholders: list[str] = []
+    def _save_bracket(m: re.Match) -> str:
+        placeholders.append(m.group(0))
+        return f"\x00BRACKET{len(placeholders) - 1}\x00"
+    text = LACUNA_RE.sub(_save_bracket, text)
+    # Now wrap any remaining bare dots
+    text = BARE_DOTS_RE.sub("[ ... ]", text)
+    # Restore bracketed content
+    for i, orig in enumerate(placeholders):
+        text = text.replace(f"\x00BRACKET{i}\x00", orig)
+    # Collapse whitespace
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def find_lacunae(
@@ -243,7 +242,7 @@ def generate_spiritual_reading(
                 model=deployment,
                 system=SPIRITUAL_READING_PROMPT,
                 messages=[{"role": "user", "content": user_msg}],
-                max_tokens=64000,
+                max_tokens=16000,
                 thinking={"type": "adaptive"},
             ) as stream:
                 response = stream.get_final_message()
@@ -277,8 +276,9 @@ def generate_spiritual_reading(
 
 
 # ---------------------------------------------------------------------------
-# Phase 2: Restoration
+# Phase 2: Restoration (single call — streaming + adaptive, text output)
 # ---------------------------------------------------------------------------
+
 
 def restore_chapter(
     client: AnthropicFoundry,
@@ -287,7 +287,10 @@ def restore_chapter(
     spiritual_reading: str,
     ch_num: int,
 ) -> dict[int, str] | None:
-    """Restore all lacunae using Claude + tool use for structured output.
+    """Restore all lacunae in one call.
+
+    Uses streaming + adaptive thinking. Model outputs text with
+    paragraph-number prefixes. Parsed with regex.
 
     Returns {paragraph_number: restored_text} or None on failure.
     """
@@ -308,44 +311,74 @@ def restore_chapter(
     lines.append("--- END ---")
     lines.append("")
     lines.append(
-        "Restore the lacunae and submit the complete restored "
-        "paragraphs using the submit_restoration tool."
+        "Restore the lacunae and output every paragraph with your "
+        "additions in [square brackets]. Mark each paragraph with ¶N:"
     )
     user_msg = "\n".join(lines)
 
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
+            text_parts = []
+            in_thinking = False
+            thinking_chars = 0
+
             with client.messages.stream(
                 model=deployment,
                 system=RESTORATION_PROMPT,
                 messages=[{"role": "user", "content": user_msg}],
-                max_tokens=64000,
+                max_tokens=128000,
                 thinking={"type": "adaptive"},
-                tools=[RESTORATION_TOOL],
             ) as stream:
-                response = stream.get_final_message()
+                for event in stream:
+                    etype = getattr(event, "type", "")
 
-            # Look for tool_use block (structured output)
-            for block in response.content:
-                if (
-                    block.type == "tool_use"
-                    and block.name == "submit_restoration"
-                ):
-                    paragraphs = block.input.get("paragraphs", [])
-                    return {p["number"]: p["text"] for p in paragraphs}
+                    # Thinking block started
+                    if etype == "content_block_start":
+                        block = getattr(event, "content_block", None)
+                        if block and getattr(block, "type", "") == "thinking":
+                            in_thinking = True
+                            thinking_chars = 0
+                            print("\n  [thinking] ", end="", flush=True)
+                        elif block and getattr(block, "type", "") == "text":
+                            in_thinking = False
+                            print("\n  [output] ", end="", flush=True)
 
-            # Fallback: model returned text instead of tool use
-            text_parts = []
-            for block in response.content:
-                if block.type == "text":
-                    text_parts.append(block.text)
+                    # Thinking delta
+                    elif etype == "content_block_delta":
+                        delta = getattr(event, "delta", None)
+                        if delta:
+                            dtype = getattr(delta, "type", "")
+                            if dtype == "thinking_delta":
+                                chunk = getattr(delta, "thinking", "")
+                                thinking_chars += len(chunk)
+                                print(chunk, end="", flush=True)
+                            elif dtype == "text_delta":
+                                chunk = getattr(delta, "text", "")
+                                text_parts.append(chunk)
+                                print(chunk, end="", flush=True)
+
+                    # Block ended
+                    elif etype == "content_block_stop":
+                        if in_thinking:
+                            print(f" [{thinking_chars} chars]", flush=True)
+                            in_thinking = False
+
+                    # Message ended
+                    elif etype == "message_stop":
+                        print(flush=True)
+
             if text_parts:
-                print(f"  Ch.{ch_num} WARNING: model returned text "
-                      f"instead of tool use, parsing...")
-                raw = "\n".join(text_parts)
-                return parse_restored_paragraphs(raw)
+                raw = "".join(text_parts)
+                parsed = parse_restored_paragraphs(raw)
+                if parsed:
+                    return parsed
 
+            print(f"\n  Phase 2 Ch.{ch_num}: no usable output "
+                  f"(attempt {attempt}/{max_retries})")
+            if attempt < max_retries:
+                time.sleep(attempt * 5)
+                continue
             return None
 
         except Exception as e:
@@ -362,7 +395,10 @@ def restore_chapter(
                 time.sleep(wait)
                 continue
             else:
-                print(f"  Phase 2 error Ch.{ch_num}: {e}")
+                print(f"  Phase 2 error Ch.{ch_num} "
+                      f"(attempt {attempt}/{max_retries}): "
+                      f"{type(e).__name__}: {e}")
+                traceback.print_exc()
                 if attempt < max_retries:
                     time.sleep(attempt * 5)
                     continue
@@ -402,7 +438,7 @@ Rules:
 - If a gap truly cannot be restored, keep it as [...]
 - Write in the register of ancient cosmological teaching
 - Do NOT use forward slash (/) in fills
-- Submit using the submit_restoration tool"""
+- Output every paragraph as ¶N: followed by the complete text"""
 
 
 def retry_failed_paragraphs(
@@ -415,12 +451,8 @@ def retry_failed_paragraphs(
 ) -> dict[int, str] | None:
     """Retry rejected paragraphs with accepted context.
 
-    Sends only the failed paragraphs, but provides accepted
-    neighboring paragraphs as context so the model can see the
-    restoration pattern that works.
+    Single call: streaming + adaptive thinking, text output.
     """
-    failed_pnums = {p["paragraph_number"] for p in failed_paras}
-
     lines = [
         "Some paragraphs in Chapter {} were rejected because text "
         "outside brackets was altered. Restore ONLY the following "
@@ -456,43 +488,64 @@ def retry_failed_paragraphs(
     lines.append("")
     lines.append(
         "Restore ONLY the paragraphs listed under PARAGRAPHS TO RESTORE. "
-        "Submit using the submit_restoration tool."
+        "Output each as ¶N: followed by the complete text."
     )
 
     user_msg = "\n".join(lines)
 
-    try:
-        with client.messages.stream(
-            model=deployment,
-            system=RETRY_PROMPT,
-            messages=[{"role": "user", "content": user_msg}],
-            max_tokens=16000,
-            thinking={"type": "adaptive"},
-            tools=[RESTORATION_TOOL],
-        ) as stream:
-            response = stream.get_final_message()
+    max_retries = 3
+    for attempt in range(1, max_retries + 1):
+        try:
+            with client.messages.stream(
+                model=deployment,
+                system=RETRY_PROMPT,
+                messages=[{"role": "user", "content": user_msg}],
+                max_tokens=128000,
+                thinking={"type": "adaptive"},
+            ) as stream:
+                response = stream.get_final_message()
 
-        for block in response.content:
-            if (
-                block.type == "tool_use"
-                and block.name == "submit_restoration"
-            ):
-                paragraphs = block.input.get("paragraphs", [])
-                return {p["number"]: p["text"] for p in paragraphs}
+            # Extract text content (skip thinking blocks)
+            text_parts = []
+            for block in response.content:
+                if block.type == "text":
+                    text_parts.append(block.text)
+            if text_parts:
+                raw = "\n".join(text_parts)
+                parsed = parse_restored_paragraphs(raw)
+                if parsed:
+                    return parsed
 
-        # Fallback: parse text
-        text_parts = []
-        for block in response.content:
-            if block.type == "text":
-                text_parts.append(block.text)
-        if text_parts:
-            return parse_restored_paragraphs("\n".join(text_parts))
+            print(f"  Retry Ch.{ch_num}: no usable output "
+                  f"(attempt {attempt}/{max_retries})")
+            if attempt < max_retries:
+                time.sleep(attempt * 5)
+                continue
+            return None
 
-        return None
-
-    except Exception as e:
-        print(f"  Ch.{ch_num} retry error: {e}")
-        return None
+        except Exception as e:
+            err_str = str(e)
+            if "content_filter" in err_str.lower():
+                print(f"  Retry content filter Ch.{ch_num}, "
+                      f"attempt {attempt}/{max_retries}")
+                if attempt < max_retries:
+                    time.sleep(attempt * 10)
+                    continue
+            elif "rate" in err_str.lower() or "429" in err_str:
+                wait = 60.0
+                print(f"  Retry rate limit, waiting {wait:.0f}s...")
+                time.sleep(wait)
+                continue
+            else:
+                print(f"  Retry error Ch.{ch_num} "
+                      f"(attempt {attempt}/{max_retries}): "
+                      f"{type(e).__name__}: {e}")
+                traceback.print_exc()
+                if attempt < max_retries:
+                    time.sleep(attempt * 5)
+                    continue
+            return None
+    return None
 
 
 # ---------------------------------------------------------------------------
@@ -987,25 +1040,41 @@ def main() -> None:
 
         with print_lock:
             print(f"  Ch.{ch_num} ({total_lacunae} lacunae) "
-                  f"{title}... phase 1...", flush=True)
+                  f"{title}...", end="", flush=True)
 
-        # --- Phase 1: Spiritual Reading ---
-        spiritual_reading = generate_spiritual_reading(
-            client, deployment, core_paras, ch_num,
-        )
-        if not spiritual_reading:
+        # --- Phase 1: Spiritual Reading (use cache if available) ---
+        cached_path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
+        cached_reading = None
+        if cached_path.exists():
+            try:
+                with open(cached_path, encoding="utf-8") as f:
+                    cached_data = json.load(f)
+                cached_reading = cached_data.get("spiritual_reading")
+            except Exception:
+                pass
+
+        if cached_reading:
+            spiritual_reading = cached_reading
             with print_lock:
-                counter["done"] += 1
-                errors_list.append(ch_num)
-                print(f"[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} FAILED (spiritual reading)")
-            return
+                print(f" [cached reading]", end="", flush=True)
+        else:
+            with print_lock:
+                print(f" phase 1...", end="", flush=True)
+            spiritual_reading = generate_spiritual_reading(
+                client, deployment, core_paras, ch_num,
+            )
+            if not spiritual_reading:
+                with print_lock:
+                    counter["done"] += 1
+                    errors_list.append(ch_num)
+                    print(f"\n[{counter['done']}/{total_to_process}] "
+                          f"Ch.{ch_num} FAILED (spiritual reading)")
+                return
 
         with print_lock:
-            print(f"  Ch.{ch_num} ({len(spiritual_reading)} chars) "
-                  f"phase 2...", flush=True)
+            print(f" phase 2...", end="", flush=True)
 
-        # --- Phase 2: Restoration (returns structured data) ---
+        # --- Phase 2: Restoration (single call) ---
         restored_paras = restore_chapter(
             client, deployment, core_paras, spiritual_reading, ch_num,
         )
@@ -1013,7 +1082,7 @@ def main() -> None:
             with print_lock:
                 counter["done"] += 1
                 errors_list.append(ch_num)
-                print(f"[{counter['done']}/{total_to_process}] "
+                print(f"\n[{counter['done']}/{total_to_process}] "
                       f"Ch.{ch_num} FAILED (restoration)")
             return
 
@@ -1092,7 +1161,7 @@ def main() -> None:
         with print_lock:
             counter["done"] += 1
             results_list.append(ch_num)
-            print(f"[{counter['done']}/{total_to_process}] "
+            print(f"\n[{counter['done']}/{total_to_process}] "
                   f"Ch.{ch_num} {status}")
 
     # --- Execute ---
