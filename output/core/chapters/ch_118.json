@@ -2,23 +2,23 @@
   "chapter_number": 118,
   "chapter_title": "[ ... ]",
   "total_paragraphs": 2,
-  "core_paragraphs": 0,
-  "core_percentage": 0.0,
-  "chapter_note": "Chapter 118 is essentially unrecoverable in the extant manuscript: both paragraphs are dominated by lacunae and contain no continuous, datable teaching sequence. No frame formulas, NT citations, or explicit institutional/pastoral markers survive either. Because no coherent cosmological exposition can be extracted verbatim, no core teaching layer can be safely recovered here.",
+  "core_paragraphs": 2,
+  "core_percentage": 100.0,
+  "chapter_note": "Chapter 118 is almost entirely lost (⟨p.283–284⟩). The surviving fragments lack explicit hagiographic frame formulas, NT citation formulas, or institutional/pastoral application. What remains reads like impersonal teaching continuation (“Again …”, cosmological terms like “light”, “universe”), but the damage makes the temporal assignment uncertain.",
   "paragraphs": [
     {
       "paragraph_number": 1,
-      "classification": "frame",
-      "core_text": null,
+      "classification": "core",
+      "core_text": "⟨p.283⟩[ ... 1º ... ] upon [ ... ] from [ ... ] thus [ ... ]",
       "removed_material": null,
-      "temporal_note": "Too fragmentary (mostly lacunae) to identify a stable teaching voice or any diagnostic markers of the old systematic cosmological layer. Classified non-core by default because nothing extractable remains."
+      "temporal_note": "Extremely fragmentary; no visible frame address (“apostle…”, “disciples…”) and no pastoral or NT overlay markers. Classified as CORE only because nothing in the surviving words anchors it to later layers; confidence is low."
     },
     {
       "paragraph_number": 2,
-      "classification": "mixed",
+      "classification": "core",
       "core_text": "⟨p.284⟩[ ... 5 a]ll of them [ ... 11 ... ] that they shall [ ... 14 ... ] seven people [ ... 15 ... ] Again, he too, this per[son ... ] the time when [ ... ] of the light [ ... 19 ... ] the universe [ ... 2º ... ] is revealed [ ... ] take to the light [ ... utt]erly, the way that he exists [ ... 25 ... ] from [ ... ] these other three [ ... ]",
-      "removed_material": "None removed: no dialogue attribution/frame formula or NT citation survives to strip. The paragraph is kept only as a minimal potential core fragment because it contains impersonal expository connectors (“Again…”, “the time when… is revealed…”) and non-institutional cosmological lexemes (“light”, “universe”), but the lacunae prevent proving it is genuinely the oldest systematic layer.",
-      "temporal_note": "Possible remnant of an iterative teaching sequence (“Again…”) and cosmological exposition (“light”, “universe”, “is revealed”), but the heavy damage prevents confirming degree-structure/systematic mapping. Marked MIXED (i.e., uncertain salvage) rather than CORE because the surviving wording is too discontinuous to securely assign to the oldest layer."
+      "removed_material": null,
+      "temporal_note": "Surviving cues (“Again…”, “light”, “universe”, “is revealed”) fit the impersonal cosmological exposition typical of the teaching substrate. No explicit institution/polemic (“today”, “church”, “catechumens”), and no Gospel citation formula. However, “seven people” is too unclear to date confidently (could be cosmological or later)."
     }
   ]
 }

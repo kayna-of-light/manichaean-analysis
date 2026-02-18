@@ -9,147 +9,114 @@
 ---
 
 **Chapters analyzed**: 123
-**Chapters with core content**: 117
-**Core text words**: ~57,029
+**Chapters with core content**: 110
+**Core text words**: ~51,101
 
 ## Chapter 0
 ### Introduction
 
-*The opening run (¶1–9) preserves a compact cosmogonic survey in impersonal, systematic cosmological voice (separation, assault, emanations, construction, eschatological fire/binding). From ¶10 onward the register shifts to canonical self-referential book-listing, exhortation to write, and institutional categories (elect/catechumens), with explicit NT/Christian-historical overlay (Jesus in the west; apostles; churches). A strong editorial-seam paragraph (¶13) extends the preceding ‘lessons’ material into community/institutional transmission; second-half pastoral drift matches the chapter-level fatigue signal.*
+*The oldest layer is concentrated in ¶1–9: a compact cosmogonic/eschatological survey (Separation of the two principles; assault of Darkness; descent of the First Man; construction/binding of the cosmos by the Living Spirit; redemption by the Third Ambassador; final Fire and binding of Darkness). From ¶10 onward the register shifts to canonical self-authorization, exhortation to record oral teaching, and comparative claims about earlier apostles—classic framing and later institutional/application material, with a clear Jesus/NT narrative overlay in ¶17.*
 
 ⟨p.1⟩
-(1) [ ... ] light [ ... ] which he has unveiled [ ... (2) ... ] his disciples [ ... (3) ... ] entire [ ... ] of wisdom [ ... ... ] word in the beginning [ ... ... ] concerning the separation [ ... ... ] the heights [ ... ] to the heights [ ... ] and they spread out [ ... ... unt]il they should make war [ ... ] kingdom [ ... ... ]ight [ ... ... ] in the heights [ ... f]rom all the aeons [ ... ... ] the light, the one that no [ ... ... ] in it.
+(1) [ ... ] Light [ ... ] entire [ ... ] of wisdom [ ... ... ] word in the beginning [ ... ... ] concerning the separation [ ... ... ] the heights [ ... ] to the heights [ ... ] and they spread out [ ... ... unt]il they should make war [ ... ] kingdom [ ... ... ]ight [ ... ... ] in the heights [ ... f]rom all the aeons [ ... ... ] the Light, the one that no [ ... ... ] in it.
 
-[ ... ] the darkness, the world [ ... ] their root [ ... ] which poured forth [ ... ... ] the one that the earth has [ ... ... ... ] darkness [ ... ... ] it is far from the light [ ... ]
+[ ... ] the Darkness, the world [ ... ] their root [ ... ] which poured forth [ ... ... ] the one that the earth has [ ... ... ... ] Darkness [ ... ... ] it is far from the Light [ ... ]
 
-This is the first [ ... ... ] concerning the eternality; he [ ... ... ] to you, for each one of them exists [ ... ... ] they are divided from one another by their [ ... ... ] in an eternality since the [ ... ] which I have written for you; this is, that [ ... ] (4) the darkness has made war against the light, desiring that it would reign over an essence not its own. It spread a quarrel [ ... ] it disturbed [ ... ... ] came up, it [ ... in this great] need.
+This is the first [ ... ... ] concerning the eternality; [ ... ... ] for each one of them exists [ ... ... ] they are divided from one another by their [ ... ... ] in an eternality since the [ ... ] (4) the Darkness has made war against the Light, desiring that it would reign over an essence not its own. It spread a quarrel [ ... ] it disturbed [ ... ... ] came up, it [ ... in this great] need.
 
-The power came forth from [ ... ... which] is [the Fir]st Man. He [ ... ... ] the armour of light [ ... ] all [the enmity]. He crucified it in [ ... ... ] the armour [ ... ... ]
+The power came forth from [ ... ... which] is [the Fir]st Man. He [ ... ... ] the armour of Light [ ... ] all [the enmity]. He crucified it in [ ... ... ] the armour [ ... ... ]
 
-[ ... ] he brought the sun [ ... ... ] the light aeons [ ... ... the] Living Spirit spread out the universe [ ... ] the earth [ ... ... ] the light and the darkness in the beginning [ ... ] and the garments. He gave [them ... ... ] He set in order the [ ... ... ] and the wheel of the course [ ... ... ] in the heights, that they would [ ... ... ] of the darkness. He stood firm [ ... f]ixed. He constructed the foundation [ ... ] all of it was set up.
+[ ... ] he brought the sun [ ... ... ] the Light aeons [ ... ... the] Living Spirit spread out the universe [ ... ] the earth [ ... ... ] the Light and the Darkness in the beginning [ ... ] and the garments. He gave [them ... ... ] He set in order the [ ... ... ] and the wheel of the course [ ... ... ] in the heights, that they would [ ... ... ] of the Darkness. He stood firm [ ... f]ixed. He constructed the foundation [ ... ] all of it was set up.
 
-Underneath [ ... ... ] all of them; and also above he [ ... ... thre]e earths, they being conjoined. He enclosed the earth in [ ... f]our mountains and three vessels [ ... ] in its seas and its mountains [ ... set in] order upon it. This universe stood firm [ ... ] a bond for the evil powers [ ... ... li]ght that they joined with the darkness [ ... ]
+Underneath [ ... ... ] all of them; and also above he [ ... ... thre]e earths, they being conjoined. He enclosed the earth in [ ... f]our mountains and three vessels [ ... ] in its seas and its mountains [ ... set in] order upon it. This universe stood firm [ ... ] a bond for the evil powers [ ... ... li]ght that they joined with the Darkness [ ... ]
 
-Then the Third Ambassador! [He purified the light] by his image. He became [redeemer of] all things.
+Then the Third Ambassador! [He purified the Light] by his image. He became [redeemer of] all things.
 
-(5) [ ... ] they are in all the [ ... ... ... u]niverse, and the fire blazes in it, and it is devoured [ ... ] all [ ... ] of the light also, and he becomes purifier, and goes up to his essence. Conversely, the darkness which is in [ ... ] out, and it is gathered in to a bond [ ... ] unveil [ ... ... ] and they go in to him and become [ ... ... pe]rfume [ ... s]et up [ ... an]d they reign for ever, and a single God comes to be [ ... ov]er the totality, being above the totality. You find no opponent from this time on against the Father, the King of the Light and the [ ... ... ]
+(5) [ ... ] they are in all the [ ... ... ... u]niverse, and the fire blazes in it, and it is devoured [ ... ] all [ ... ] of the Light also, and he becomes purifier, and goes up to his essence. Conversely, the Darkness which is in [ ... ] out, and it is gathered in to a bond [ ... ] unveil [ ... ... ] and they go in to him and become [ ... ... pe]rfume [ ... s]et up [ ... an]d they reign for ever, and a single God comes to be [ ... ov]er the totality, being above the totality. You find no opponent from this time on against the Father, the King of the Light and the [ ... ... ]
 
 [ ... ] which they occur in, from the beginning [ ... ] they are mixed and joined with one another.
 
-(6) The first great lesson [ ... ] which in the [ ... ... ] that walks in it because of the twelve [ ... ... ] in it, which in the cities and the dwelling places found in the [ ... ] because of the doors that are opened in them [ ... ... ] upon the earth, which in the four corners [ ... ... ... ... ... ... ] and my pains. For also [ ... ... ] and my afflictions [ ... ... ] to them [ ... ... ] suffices for the person [ ... ] wise person.
-
 **Temporal observations:**
-- ¶1: Cosmogonic ‘separation’ of realms and aeons in expository voice; no citation formula or institutional address. Despite lacunae mentioning ‘disciples’, there is no explicit dialogue attribution (‘apostle says’) to mark a frame.
-- ¶2: Binary-principle cosmology (Darkness vs Light) stated as ontological geography (‘far from’), consistent with the oldest systematic layer.
-- ¶3: Despite a hint of first-person ‘I have written for you’ (could be editorial), the paragraph’s substance is the primordial war of Darkness against Light and the ‘two eternalities’ separation—core cosmogonic survey. Uncertain because of the ‘written’ phrase in lacuna context.
-- ¶4: Named cosmological entity (First Man) and ‘armour of light’ combat motif: classic old teaching layer, impersonal narration of cosmic mechanism.
-- ¶5: Systematic cosmogony: Living Spirit constructs universe, ordering ‘wheel of the course’, foundations, cosmic architecture—hallmark core expository style.
-- ¶6: Numbered cosmography (three earths, four mountains, three vessels) and ‘bond’ function of cosmos—strong indicator of pre-compilation systematic teaching.
-- ¶7: Named redeemer-being (Third Ambassador) in cosmological hierarchy, not Gospel-citation Jesus; terse functional statement typical of core summaries.
-- ¶8: Eschatological mechanics: great fire, separation/purification, binding of Darkness, single reign of the Father of Light—core doctrinal closure of the cosmogonic drama.
-- ¶9: Brief statement of mixture/joining of the principles—core conceptual vocabulary; too fragmentary to date more tightly, but fits the preceding cosmogonic sequence.
-- ¶10: Self-referential canonical book list (‘Great Gospel’, ‘Treasury’, epistles, psalms/prayers) and exhortation to ‘discriminate’ via written scriptures: justificatory/authorizing apparatus (Gardner canonical_source), not the oldest impersonal cosmological exposition.
-- ¶11: Normative validation of ‘every writer/teacher’ by adherence to ‘three lessons’; didactic-institutional tone rather than cosmological mechanism.
-- ¶12: Correspondential/numbered mapping signals (twelve; doors; four corners) suggest an older structural teaching; however, the intrusion of ‘my pains/afflictions’ makes dating uncertain—could be editorial personalization or lacuna distortion.
-- ¶13: Seam-flagged institutional extension: ‘my children’, ‘teachers’, ‘leaders’, ‘elect and catechumens’, transmission of homilies/lessons not written. Entire paragraph is an editorial/community graft extending the preceding ‘lessons’ theme into church practice.
-- ¶14: Imperatives to remember/write/gather teachings—programmatic justification for compilation; not cosmological exposition.
-- ¶15: Differentiated instruction by audience (‘elect’, ‘suckling babes’, sects/heresies) is institutional/pedagogical self-presentation, not the old systematic cosmology.
-- ¶16: Appeal to ‘apostles’ and ‘church’ with generalized scriptural/mission language; justificatory and institutional register rather than core teaching.
-- ¶17: Explicit Jesus-in-the-west narrative and reference to disciples writing parables/signs—material entering via NT tradition (apostolic authorship frame), thus Christian overlay.
-- ¶18: Hagiographic titulature (‘apostle of light’, ‘splendrous enlightener’) and biographical notice about Zarathustra and writing: part of the compiler’s justificatory frame rather than impersonal cosmological instruction.
-- ¶19: Biographical comparison with Buddha, ‘churches’, disciples writing scriptures—justificatory narrative framing, not the oldest teaching layer.
-- ¶20: Institutional warning about churches passing away and admonition to write to avoid adulteration; operates as community self-legitimation rather than cosmological mechanism.
-- ¶21: Commandments + exhortation to write ‘so that it leads you not astray’—disciplinary/guardrail rhetoric typical of later community transmission concerns.
-- ¶22: Further exhortation to remember and write teachings ‘city after city’; compilation-justification discourse.
-- ¶23: Rhetoric of edifying benefit from writing (‘enlighten greatly’, ‘benefit’, ‘make free’) reads like closing encouragement within the framing apparatus.
+- ¶1: Underlying content is the impersonal cosmogonic axis (Separation; primordial war), but it is wrapped in an unveiling-to-disciples presentation that points to a later instructional setting.
+- ¶2: Pure cosmological description of the principle/realm of Darkness in relation to Light; no institutional targets, citation formulas, or exhortation.
+- ¶3: Core two-principles teaching (eternal division; aggression of Darkness) is present, but the paragraph is intermittently cast as something written/communicated to an audience—secondary framing.
+- ¶4: Standard Manichaean cosmogony: emanation/descent of the First Man with the armour of Light; no institutional application.
+- ¶5: Impersonal, process-oriented cosmology (ordering the cosmos; setting the courses/wheels; binding functions) characteristic of the substrate.
+- ¶6: Systematic architectural description of the constructed cosmos (three earths; four mountains; three vessels) and its function as a bond—internal cosmos→cosmos mapping.
+- ¶7: Named cosmic redeemer functioning within the cosmological hierarchy (Third Ambassador); no Gospel entry-vector or institutional application.
+- ¶8: Eschatological mechanics (final Fire; purification/ascent; binding of Darkness; reintegration) remain within the cosmic system; the brief second-person turn does not pivot to contemporary institutions.
+- ¶9: Compact statement of mixture—cosmological principle rather than moral exhortation or institutional rule.
+- ¶10: Canonical self-authorization: list of Mani’s books and the claim that all wisdom is written there; this is a justificatory apparatus for the collection, not the impersonal substrate.
+- ¶11: Defines ‘writer/teacher of truth’ in terms of promulgating the ‘three lessons’ and includes self-assertion (‘I also… have revealed…’); editorial self-legitimation rather than cosmological exposition.
+- ¶12: Begins the ‘first great lesson’ but shifts toward lived geography/experience (‘cities… dwelling places… my pains… my afflictions’), i.e., anchored to the speaker’s situation rather than cosmos→cosmos mapping.
+- ¶13: Seam-flagged editorial extension: institutional categories (leaders/teachers/elect/catechumens/free men & women) and a directive to compile oral material; mimics ‘teaching’ cadence but points to community structures.
+- ¶14: Imperative/application voice (‘You must remember… write… gather…’)—explicit audience instruction, characteristic of later institutional use.
+- ¶15: Hagiographic self-presentation of graded instruction to Elect/babes and polemic against sects; not systematic cosmology.
+- ¶16: Generalized appeals to earlier ‘apostles/fathers’, dissemination ‘in each city/land’, and ‘church’ language—editorial legitimation of teaching transmission.
+- ¶17: NT/Gospel narrative vector: Jesus in the west, disciples, parables, signs/wonders, writing a book—material that enters via Christian tradition rather than the substrate.
+- ¶18: Comparative apostolic historiography (Zarathustra, Hystaspes) used to justify writing; includes late titulature (‘apostle of light’, ‘enlightener’) and present-anchored ‘read today’.
+- ¶19: Comparative treatment of Buddha and his ‘churches’ and scriptures—editorial apologetic/justification layer rather than cosmological mechanics.
+- ¶20: Argument that earlier righteous fathers’ churches pass away due to not writing; an institutional-historiographic rationale for canon-making, not the old cosmogonic substrate.
+- ¶21: Direct exhortation to write ‘commandments’ and unwritten wisdom ‘so that it leads you not astray’—application voice and community maintenance.
+- ¶22: Imperatives (‘remember… write’) tied to disciples’ capacity—explicit audience management rather than cosmic exposition.
+- ¶23: Promises of benefit from writing/teaching—paraenetic closure typical of later instructional framing.
 
 ---
 
 ## Chapter 1
 ### Concerning the Ad[vent] of the Apostle.
 
-*This chapter is dominated by late hagiographic/biographical framing and a strong Christian/NT overlay (Jesus/Paul narrative; Paraclete sayings). The oldest recoverable teaching appears mainly as an impersonal agrarian/seasonal analogy for apostolic cycles (¶3–4,7–12) and a compact cosmological-mystery summary (end of ¶24, opening of ¶25). Two seam-flagged paragraphs (¶5, ¶25) mimic teaching-list style but pivot into institutional categories (elect/catechumens/commandments), so they are treated as pastoral editorial grafts; only the clearly cosmological sentence-block at the start of ¶25 is extracted as core via MIXED.*
+*This kephalaion is dominated by hagiographic/dialogue frame, salvation-history narration, and explicit NT (Johannine Paraclete; Jesus passion/resurrection; Pauline material). Most “teaching” here is institutional/apostolic-cycle explanation (apostles/churches) rather than cosmos→cosmos correspondential mapping. A small cosmological substrate fragment appears embedded in Mani’s revelation narrative (mysteries of Heights/Depths, Light/Darkness, and the cosmogony of mingling).*
 
-Understand, O my beloved ones: All the apostles who are on occasion sent to the world resemble farmers; while their churches, which they choose, are like Parmuthi and Paophi. For, the way Parmuthi occurs not in all the months of the year; nor does Paophi [...] in all of them. Rather, the season [...] for it alone, as they know [...] its vegetables [...] the time they are cropped; also the vegetables and the [...] season; and they tend and ripen the pickings, and they [...] to Paophi.
-
-Of course, now that farmer ⟨p.10⟩ [...] Parmuthi; in that, if he will come and sow some corn seed there [...] cereal. And he shall be involved from the beginning [...] a corn seed and toil for it. Yet, when the summer comes each year, and his corn comes to the season of its harvest; then the farmer comes forth and harvests it. Even the gardener from the beginning [...] shall toil for his fruits; and he tends them and he [...] and they ripen; and he comes forth and picks them from the tree.
-
-⟨p.11⟩
-Also the way [...] many years before [...] the world, as he journeys below to the [...] makes the form of his church free, and [...] of the flesh, whose forms he had made free [...]
-
-Like the farmer, for when he will [...] that moment he shall begin [...] tend [...] it reaches Parmuthi also, he may harvest it [...] toil for the fruits of Paophi [...]
-
-Again, this too is [how] the apostles [...] from the beginning of the moulding of humanity [...], as I have told you, that when they [...] before every thing he shall [...] free above, first.
-
-Yet, when it [will be] born in the flesh, he shall come down to it and at once [...] it in the [...] which comes out from the [...] is raised up to the greatness. He shall continue in the world at this time [...] him, corresponding to the season when the world will come to his [...] when the season will mature he is raised up from the world [...] and he leaves his church {behind} and goes forth. Still, he [...] and he helps and aids his church. Whoever comes out from their body after him, he shall become for them a support and a leader; and he goes on before them [...], excepting the others who are set firmly in the flesh. He is the one who will become for them a helper and a guardian; he shall not take [...] in secret, until his church [...] change it [...] when his church [...] he was raised up after it, and went into the land of glory. And he rejoices and rests at the last [...]
-
-Like the farmer who shall be glad of heart in [...] he was bringing in (the harvest). Or like the merchant who shall come up from a country with the doubling of his great cargo; and the riches of his trading.
-
-When the apostle will be raised up from the world, he and his church [...] for every apostle [...] in the [...] Since [...] tree, that still is laden with its first fruits [...], and they are picked; they shall propagate other ones there, and they mature to the season to bring them forth. There is not any time the tree is bare of fruit! Rather, instead, those about to ripen as they pick them shall propagate other ones there. When they bear these [...] them on the tree; they come up and are brought forth upon its branches. They shall pick from it those that mature and ripen. The farmer does not rest at any time from the labour and the pain. At what hour may he cease? When he can finish harvesting the corn in Parmuthi! [...] them in the winter, the fruits of the summer shall [...] grow up and be picked in the month of Paophi.
-
-⟨p.12⟩
-The apostles are like this also. Now, when the apostle will be raised up to the heights, he and his church, and they depart from the world; at that instant another apostle shall be sent to it, to another church [...] it [...]. Yet, first, he shall make the forms of his church free in the heights, as I have told you. When [...]; again, he too shall come down and appear [...] and he releases his church and saves it from the flesh [of sin ...]
-
-⟨p.14⟩
-Like a tree will be plucked, and the fruits on it taken away. And it remains behind without fruit.
-
-Yet, when the church assumed the flesh, the season arrived to redeem the souls; like the month of Parmuthi that cereal shall ripen in, to be harvested.
-
-He unveiled to me the hidden mystery, the one that is hidden from the worlds and the generations, the mystery of the depths and the heights. He unveiled to me the mystery of the light and the darkness; the mystery of the calamity of conflict, and the war, and the great [...], the battle that the darkness spread about. Afterwards, he unveiled to me also: How the light [...] the darkness, through their mingling this universe was set up [...]
-
-He opened my eyes also to the way that the ships were constructed; to enable the gods of light to be in them, to purify the light from creation. Conversely, the dregs and the effluent [...] to the abyss. The mystery of the fashioning of Adam, the first man. He also informed me about the mystery of the tree of knowledge, which Adam ate from; his eyes saw.
+He unveiled to me the hidden mystery, the one that is hidden from the worlds and the generations, the mystery of the depths and the heights. He unveiled to me the mystery of the Light and the Darkness; the mystery of the calamity of conflict, and the war, and the great [...], the battle that the Darkness spread about. Afterwards, he unveiled to me also: How the Light [...] the Darkness, through their mingling this universe was set up [...]
 
 **Temporal observations:**
-- ¶1: Dialogue setup: disciples question; biographical topic of Mani’s apostolate. High frame/Christian register; functions as editorial container.
-- ¶2: Dialogue attribution (‘The apostle says… I will recount…’) is compilation frame; no teaching content present here beyond promise to speak.
-- ¶3: Impersonal, analogical exposition (apostles/churches ↔ seasons/months) without citations or institutional rules; reads like a pre-compilation teaching analogy.
-- ¶4: Continues the systematic seasonal/harvest mechanism as a process description (‘from the beginning… toil… season… harvest’). No frame/citation markers.
-- ¶5: Seam-flagged editorial extension: the farmer/apostle analogy is continued but redirected into institutional categories (‘elect and the catechumens… their forms…’). By rule, entire paragraph is a later pastoral graft, not MIXED.
-- ¶6: Despite lacunae, the voice returns to the cycle-mechanism (‘many years before… makes the form of his church free… flesh’), still structural rather than prescriptive.
-- ¶7: Mechanistic time/season sequencing (begin → tend → reach month → harvest) continues the core analogy; no institutional vocabulary.
-- ¶8: General cosmological-historical scope (‘from the beginning of the moulding of humanity’) and the ‘free above, first’ motif expressed as teaching, not narrative citation.
-- ¶9: Core cycle teaching in process terms: descent/appearance, ascent, continued post-ascent support; ‘corresponding to the season’ sustains the structural analogy rather than biography.
-- ¶10: Brief analogical closure (farmer/merchant profit) consistent with the same impersonal teaching mode.
-- ¶11: Strong systematic perpetuity claim (‘no time the tree is bare of fruit’)—a general law-like formulation of succession, not a historical list or church regulation.
-- ¶12: Completes the succession mechanism in a timeless, procedural way (‘at that instant another… first… make the forms… then come down’). ‘Sin’ here reads as moral category, not personified cosmic agent.
-- ¶13: Enumerative apostolic chain (Sethel… Buddha… Zarathustra… Jesus) is a historiographical list typical of later compilation interests; not systematic cosmological mapping.
-- ¶14: NT narrative overlay: docetic Jesus story plus Judas/Satan episode, twelve/seventy-two; this language enters via Christian tradition.
-- ¶15: Passion/resurrection narrative sequence (cross, three days, appearances, Holy Spirit) is straight NT storyline; later Christian overlay.
-- ¶16: Continuation about Jesus’ apostles and ascent/rest—still dependent on the NT-apostolic narrative frame.
-- ¶17: Paul as apostle reinforcing them—explicit NT figure and episode; overlay.
-- ¶18: Moralizing decline (‘mankind began to stumble… narrow/broad road’) without cosmological mechanism; paraenetic/pastoral register.
-- ¶19: Transitional historiography (‘righteous man… church perished… world without church’), with kingdom/light language but serving the narrative bridge to Mani’s claim.
-- ¶20: Standalone proverb-like correspondential image consistent with the earlier perpetual-fruit analogy; functions as a teaching simile rather than biography.
-- ¶21: Explicit Paraclete saying attributed to the saviour (‘Just like the saviour said… I will send…’)—entry via Gospel of John tradition.
-- ¶22: Paraclete speech about upbraiding the world—Johannine Paraclete discourse material; overlay.
-- ¶23: Paragraph begins in Paraclete-apologetic mode (late), but ends with a compact, impersonal season/harvest correspondential line that matches the earlier core analogy and can be cleanly separated.
-- ¶24: The ‘mystery of the light and the darkness… mingling… universe was set up’ is classic impersonal cosmological mechanism (core), but embedded within a later revelatory autobiography; thus MIXED.
-- ¶25: Opening block is cosmological-technical (ships, gods of light, purification, abyss; Adam/cosmic anthropology). The second half shifts to institutional categories; clean excision yields a coherent core fragment.
-- ¶26: First-person ecstatic self-authorization (‘I have seen the totality… become a single body… single Spirit’) is hagiographic culmination of Mani’s claim, not impersonal mechanism teaching.
-- ¶27: Missionary travel notice (Indians; chose an election) is biographical/apostolic dossier material.
-- ¶28: Extended royal/itinerary narrative (Shapur; provinces) is historical self-presentation; not core cosmological teaching.
-- ¶29: Self-assertion to ‘holy church’, superiority claim (‘Not one among the apostles…’), eschatological prediction—rhetorical-apostolic propaganda layer.
-- ¶30: Meta-textual notice about writing books and repeating the lesson; compilation rhetoric rather than teaching content.
-- ¶31: Formulaic closing: disciples rejoice/thank/confess him as Paraclete—classic hagiographic frame closure (also noted by chapter structure flag).
+- ¶1: Dialogue situation-setting (“His disciples questioned him…”) functions as compilation frame; not cosmological exposition.
+- ¶2: Explicit dialogue attribution (“The apostle says…”) is a later container formula (Layer-2 framing).
+- ¶3: Direct address (“O my beloved ones”) and analogy applied to apostles/churches (institutional salvation-history), not a cosmos→cosmos structural mapping.
+- ¶4: Continues the farmer/gardener analogy as exhortative explanation of apostolic work; stays in worldly analogy and institutional application.
+- ¶5: Seam-flagged institutional extension (elect/catechumens, church-formation language) using teaching-like cadence; treated as a single editorial graft.
+- ¶6: Apostle/church “forms made free” motif is tied to church-institution and apostolic mission cycle rather than impersonal cosmological mechanics.
+- ¶7: Brief continuation of the farmer-cycle analogy in service of apostolic succession teaching (institutional).
+- ¶8: Salvation-history framing (“apostles… from the beginning of the moulding of humanity”) rather than systematic cosmology.
+- ¶9: Describes apostle supporting his church after ascent (church leadership/soteriology) in narrative-applied mode, not degree/correspondence exposition.
+- ¶10: Merchant/harvest comparison continues institutional application (apostolic labor/reward).
+- ¶11: Tree/fruit perpetuity image explicitly serves the succession-of-apostles/churches doctrine (institutional continuity), not cosmic architecture.
+- ¶12: Explicit apostolic-cycle instruction (“another apostle shall be sent… releases his church…”) anchored in church succession; Johannine/Christian conceptual background is nearby in the chapter.
+- ¶13: Canonical chain of named apostles (Sethel… Buddha… Zarathustra… Jesus) is salvation-history/authority listing, not substrate cosmological mechanism.
+- ¶14: NT-derived Jesus narrative with docetic gloss plus Pauline/Philippians-style language (“servant’s form”)—material enters via Christian tradition.
+- ¶15: Passion/resurrection sequence is straight Gospel/NT narrative overlay.
+- ¶16: Continues Jesus-apostles storyline; adjacent to explicit NT narration, best dated as Christian overlay continuation.
+- ¶17: Paul as apostle reinforcing the church is NT-history overlay.
+- ¶18: Moralizing decline with “narrow/broad road” diction echoes Gospel tradition; functions as Christian paraenesis overlay.
+- ¶19: Church-history claim about a “righteous man of truth” in the last church; institutional salvation-history rather than cosmological mapping.
+- ¶20: Aphoristic tree-fruit metaphor applied to church absence; not cosmic-system exposition.
+- ¶21: Explicit Johannine Paraclete citation formula (“Just like the saviour said… I will send…”) marks Christian overlay entry-vector.
+- ¶22: Paraphrase of John 16 (upbraid the world concerning sin/righteousness/judgement) is NT overlay.
+- ¶23: Continues Paraclete-from-Jesus timeline (“from Jesus until now”); even without explicit “as written,” the conceptual material is Johannine overlay.
+- ¶24: Core fragment is the impersonal cosmological mechanism (Light/Darkness conflict and mingling → universe set up; Heights/Depths). It is embedded within later apostolic self-narration of revelation, hence MIXED.
+- ¶25: Seam-flagged list that shifts into explicit church-institution categories (elect/catechumens/commandments/sinners). By the seam rule, treated as an editorial extension even though it includes cosmological vocabulary (“ships… gods of light”).
+- ¶26: Hagiographic self-claim of total revelation and union (“I have become a single body, with a single Spirit!”) belongs to apostolic legitimation frame, not substrate exposition.
+- ¶27: Mission-travel narrative (India; choosing an election) is biographical frame material.
+- ¶28: Extended itinerary and royal audience (Shapur, regions) is hagiographic biography, not cosmological teaching.
+- ¶29: Self-legitimation and superiority claim (“Not one among the apostles…”) plus “holy church” institutional language; functions as concluding apostolic frame.
+- ¶30: Meta-textual reference to prior writings/books and the present repetition (“Today you have again questioned…”) is editorial/compilation framing.
+- ¶31: Formulaic closing response (disciples rejoice, thank, confess him as Paraclete) is the classic Kephalaia hagiographic closure.
 
 ---
 
 ## Chapter 2
 ### The Second, concerning the Parable of the Tree.
 
-*The chapter is framed by disciples’ requests and Gospel proof-texting (overlay/frame), then shifts into a highly systematic five-limb cosmological/intellectual mapping (core). Two paragraphs (13, 16) are flagged as editorial extensions into church/catechumen/alms material and are treated as pastoral grafts (not mixed). NT narrative exempla (Judas, Paul) are overlay. The densest core sequence is ¶15–18 and ¶22–26, which exhibit impersonal, numbered structure and explicit cosmic correspondences (Pillar of Glory, First Man, Third Ambassador, final Lump).*
+*This chapter is built on a Gospel proof-text (parable of the two trees) and begins with heavy Christian overlay (explicit Gospel citation; Judas and Paul exempla). The oldest teaching substrate emerges mid-chapter as a systematic five-limbed correspondential mapping (intellectual faculties ↔ cosmic ships/beings ↔ ascent/descent mechanics). Several later editorial applications graft institutional identifications onto the mapping ("holy church," "catechumens," alms; "sects" and their teachers), and these are classified as PASTORAL (or removed within MIXED paragraphs where the underlying cosmos→cosmos mapping remains intact).*
 
-Great is [ ... ] by his own mouth [ ... ] bad [ ... ] The sects [ ... ] Yet, this that they explain about the two trees, as they reckon them, [ ... ] the trees [ ... ] in an explanation [ ... ] because [ ... ] tree, as it grows on this composite earth, [ ... ] date palm, because [ ... ], for not absolutely every part of the date palm is used!
-
-⟨p.18⟩ [ ... ] their child, as it strikes [ ... ] while first one [ ... ] in them [ ... ] at the end there is one [ ... ] it occurs in its fibres and its branches [ ... ] There is a bad dust in them [ ... ] date palm [ ... ] before the tree that [ ... ] bad; because they give the decision [ ... ] the one that they name [ ... ] the type [ ... ] name it: tree [ ... ] is sweet [ ... ] writing [ ... ] they shall establish [ ... ] man [ ... ] it is sweet [ ... ] seed of the [ ... ] and it is used for their nourishment [ ... ] will explain [ ... ] may not join to the [ ... ] mankind, as they are named [ ... ]
-
-[ ... ] how I will reveal to you [ ... ] the expound[er ... ] the trees [ ... ] the Father [ ... ] all of them, as he [ ... ] in the [ ... ] world [ ... ] this good tree, the [ ... ] the light of this good tree [ ... ] the Pillar [ ... ]
+[ ... ] the expound[er ... ] the trees [ ... ] the Father [ ... ] all of them, as he [ ... ] in the [ ... ] world [ ... ] this good tree, the [ ... ] the light of this good tree [ ... ] the Pillar [ ... ]
 
 ⟨p.20⟩ ... the intellectuals that are cloaked upon its body [ ... ] this good tree. They are the light elements that are mingled, being compounded in the totality.
 
 Behold, this is the good tree [ ... ]
 
-[ ... ] I reveal to you [ ... ] it has five limbs. [They are consideration, counsel, insight, thought, mind.] Its consideration is the holy church. [Its counsel] is the Pillar of Glory, the Perfect Man. [Its insight is the Fir]st Man who dwells in the ship of living waters. Its thought is the Third Ambassador [who dwells in] the ship of living fire, that shines in [ ... ] Also, the mind is the Father who dwells in greatness, who is perfect in the aeons of light.
+[ ... ] it has five limbs. [They are consideration, counsel, insight, thought, mind.] [Its counsel] is the Pillar of Glory, the Perfect Man. [Its insight is the Fir]st Man who dwells in the ship of living waters. Its thought is the Third Ambassador [who dwells in] the ship of living fire, that shines in [ ... ] Also, the mind is the Father who dwells in greatness, who is perfect in the aeons of light.
 
 It is consideration that shall [ ... ] they shall be raised up [ ... ] is counsel; they shall be raised up to insight, which is the First Man who dwells in the ship of the night; from insight they shall rise up to thought, which is the Ambassador who dwells in the ship of the day. And he too, great glorious thought, shall bring them in to mind; which is the Father, the God of truth, the great Mind of all the aeons of glory.
 
@@ -157,57 +124,51 @@ This is the good tree that shall give good fruit, [ ... ] is the entire life and
 
 ⟨p.21⟩ [ ... ] bad [ ... ] happen in [ ... ] from [ ... ] also [ ... ] the way that it is [ ... ] the good tree [ ... ] of the fire [ ... ] they are the ruling-power [ ... ] heaven and the wheel [ ... ] they are the five fleshes that walk [ ... ] fruit [ ... te]aching as of error, the mystery that [ ... wh]ich Satan appointed in the world.
 
-However, the taste of these bad fruits is these evil people, the sects [ ... wh]ich are bound in law after law, they and their teachers [ ... ] the law of death; they taking taste for it, they being thirsty for it [ ... ] the souls of death.
-
-⟨p.22⟩ [ ... I will] reveal to you and you [ ... ] The bad tree has five limbs. They are consideration, counsel, insight, thought, mind. Its consideration is the law of death from which the sects take instruction. Its counsel is transmigration [ ... ] in type after type. Also, its insight is the furnaces of fire [ ... ge]henna; which is full of smoke. Thought [ ... ] vessel. Its mind is the [ ... ] the lump, the last bond, the [ ... ], they that Satan cast away [ ... ] the great [ ... ] and they fall [ ... ] the darkness [ ... ] all [ ... ] and they take away [ ... ] are swallowed in to the lump, and they are bound [ ... ] the fruit of darkness, the one that they [ ... ] for ever and ever [ ... ] his face [ ... ] will arrive at that place; and they have no repentance therein.
+⟨p.22⟩ The bad tree has five limbs. They are consideration, counsel, insight, thought, mind. Its consideration is the law of death. Its counsel is transmigration [ ... ] in type after type. Also, its insight is the furnaces of fire [ ... ge]henna; which is full of smoke. Thought [ ... ] vessel. Its mind is the [ ... ] the lump, the last bond, the [ ... ], they that Satan cast away [ ... ] the great [ ... ] and they fall [ ... ] the darkness [ ... ] all [ ... ] and they take away [ ... ] are swallowed in to the lump, and they are bound [ ... ] the fruit of darkness, the one that they [ ... ] for ever and ever [ ... ] his face [ ... ] will arrive at that place; and they have no repentance therein.
 
 [ ... ] this is the explanation of the bad tree, as I have explained to you, which you [ ... ] to it [ ... ] good fruit [ ... ] its fruit bad [ ... ] in it, in its existent days [ ... ] in it.
 
-Concerning this [ ... ] and my beloved ones [ ... ] them in truth, it being changed from [ ... ] which lies in its good earth [ ... life] and light; as death and darkness do not exist [ ... ] Also, the bad tree is Matter [ ... ] it, I understand it alone among the [ ... wh]ich occurs in its bad earth [ ... ] darkness and death.
+[ ... ] it being changed from [ ... ] which lies in its good earth [ ... life] and light; as death and darkness do not exist [ ... ] Also, the bad tree is Matter [ ... ] alone among the [ ... wh]ich occurs in its bad earth [ ... ] darkness and death.
 
-⟨p.23⟩ Blessed is every one [ ... ] these two trees, and separates them one from another. He understands that they did not arise out of one another, nor did they come from one another. They did not come from one! The person who can separate them out may go up to the aeon of light, [ ... as I have] revealed it to you.
+He understands that they did not arise out of one another, nor did they come from one another. They did not come from one!
 
 And he sees [ ... ] bad fruit did not arise from it [ ... ]; but whoever will not separate out [ ... ] from one another, he falls to the land of darkness [ ... ] until he arrives at the [ ... ]
 
-Blessed is whoever can believe! He [ ... ] darkness; which grows out of the [ ... ] for ever and ever.
-
 **Temporal observations:**
-- ¶1: Brief request/transition line in petition style; functions as narrative setup rather than teaching.
-- ¶2: Direct Gospel citation formula ('As it is written in the Gospel') with Jesus-saying proof text; later Christian entry vector.
-- ¶3: Continues appeal to written 'scriptures' and mystery-language tied to citation; still part of proof-texting request context.
-- ¶4: Editorial reportage about 'sects' and their interpretations; polemical setup without systematic cosmological exposition.
-- ¶5: Teaching begins with a concrete analogical critique of sectarian exegesis (date palm example) but is introduced by explicit Mani-apostle dialogue attribution, which is later frame.
-- ¶6: Impersonal illustrative exposition (no citation formula, no church rules). Despite lacunose state, it continues the analytic argument about composite mixture and judgment.
-- ¶7: NT narrative exemplum (Judas among the twelve; 'Satan entered him'; 'saviour' delivered to Jews). Enters via Gospel tradition.
-- ¶8: Continues Judas exemplum; NT narrative overlay.
-- ¶9: Paul persecution/conversion and 'church of God' language; NT-derived biography used as exemplum (even if pressed into mixture doctrine).
-- ¶10: Uses explicit 'the saviour preached in the parable'—a Christian citation vector introducing the proof-text; later overlay even as it transitions toward revelation.
-- ¶11: Shift into cosmological explication: Father/light/Pillar vocabulary in expository mode without NT citation.
-- ¶12: Systematic cosmological-psychological mapping begins (intellectuals, light elements, mingling/compounding mechanics) in impersonal voice.
-- ¶13: Editorial seam flagged: bridges cosmological scheme to institutional identifications (holy church, teachers, catechumens). Entire paragraph is an ecclesial graft despite cosmic names.
-- ¶14: Brief deictic closure linking into the systematic definition sequence; no citation or institutional material.
-- ¶15: Classic core marker: numbered five-fold structure mapping intellectual faculties to cosmic beings/locations (Pillar of Glory/Perfect Man; First Man; Third Ambassador; Father; ships). Note: 'holy church' here is embedded as one limb within the five-fold system; likely reflects early Manichaean technical usage, but could be a point of later harmonization—kept as core because it is integral to the five-limb schematic rather than a seam-style institutional extension.
-- ¶16: Editorial seam flagged: explicit catechumens/alms/purification-in-church operational language; institutional practice inserted after the schematic.
-- ¶17: Process-oriented ascent mechanics linking inner faculties to cosmic stations (night/day ships; Father/Mind). Impersonal systematic progression—core teaching voice.
-- ¶18: Doxological-sounding but still within the schematic exposition of the good tree’s function (life/light forever) without citation formula.
-- ¶19: Transitions to the negative counterpart with cosmic mechanics ('wheel', 'ruling-power', 'five fleshes') and personified Satan in a cosmological-architectonic register, not NT narrative.
-- ¶20: Anti-sect polemic is integrated as the ‘taste’ correspondence in the dualistic schema (law of death). Could be later sharpening, but it functions as part of the structural mapping rather than an institutional rule.
-- ¶21: Returns to 'scriptures' proof-texting and 'our master called' in a citation-aware register; functions as exegetical authentication rather than core cosmological mapping.
-- ¶22: Exact negative five-fold schema: faculties mapped to eschatological/cosmic punishments (transmigration, furnaces/ge(henna) as a place-name, final Lump/last bond). Strong core structural marker.
-- ¶23: Summative closure in explanatory voice; remains within the schematic discourse.
-- ¶24: Creedal dualism statement: good earth/life-light vs bad earth/Matter/darkness-death; impersonal ontological separation—core dualist substrate.
-- ¶25: Concluding soteriological inference grounded in absolute dualism (‘did not arise out of one another’). Though beatitude-like, it functions as doctrinal closure of the core argument.
-- ¶26: Continues dualist consequence logic (separation vs fall to darkness) as part of the doctrinal close.
-- ¶27: Final beatitude-like closure; still expresses the dualist axiom (darkness grows out of its own root/source), consistent with core separation doctrine.
+- ¶1: Parable-setting without cosmological system; the whole chapter is anchored in a Jesus-parable context, and this line functions as a Christian/parable introduction rather than substrate exposition.
+- ¶2: Explicit Gospel citation formula ("As it is written in the Gospel") and Jesus-saying quotation: material entered via the NT vector.
+- ¶3: Continues the proof-text posture ("it is written ... scriptures") and request for interpretation of Jesus’ parable; this is part of the later Christian-scriptural frame.
+- ¶4: Polemic about "the sects" and their explanations; correspondence is being used to point at contemporary opponents rather than mapping within the cosmic system (ambiguous historically, but not substrate voice).
+- ¶5: Hagiographic/dialogue attribution with honorific titles ("our master Manichaios, the apostle of greatness") marks compilation frame; the ensuing argument is embedded in that frame.
+- ¶6: Extended rhetorical/analogical critique of opponents’ reading (date-palm example, composite mankind); not a systematic cosmos→cosmos degree mapping, and oriented to disputation/application.
+- ¶7: NT narrative exemplum (Judas, Satan entering him; handing over the saviour; crucifixion-wood): entered via Christian story-cycle.
+- ¶8: Continues Judas exemplum; Christian narrative overlay rather than cosmological exposition.
+- ¶9: Paul story (persecutor of the church, revelation) is NT narrative exemplum; even where it supports Manichaean "mingling" doctrine, its entry vector is Christian.
+- ¶10: Explicitly references "the saviour" preaching the parable; functions as transition from sectarian exegesis to Mani’s interpretation but remains anchored in Gospel-parable discourse.
+- ¶11: Begins the shift into system-internal cosmology (Father, Light, Pillar) but still wrapped by a first-person revelatory transition; the internal cosmic referents are treated as the older substrate.
+- ¶12: Cosmos→cosmos description (intellectuals/elements, mingling/compounding) in impersonal explanatory mode; no institutional or scriptural anchoring.
+- ¶13: Editorial application crosses from cosmic mapping to institution ("holy church ... teachers ... catechumens"), flagged as probable editorial extension; even the syntactically correspondential clauses are part of the graft.
+- ¶14: Brief deictic closure within the teaching sequence; no institutional/scriptural anchor present (though minimal content).
+- ¶15: Clear substrate hallmark: numbered five-fold degree structure mapping intellectual faculties to cosmic beings/ships/aeons. One clause is later ecclesial application and is excised.
+- ¶16: Institutional/purificatory economy (alms, catechumens, holy church) is church-operational application language, not the impersonal cosmological system.
+- ¶17: Systematic ascent mechanics linking inner faculties to cosmic stations (ships of night/day; First Man; Ambassador; Father). Despite future/conditional phrasing, the mapping remains internal to the cosmology.
+- ¶18: Summative cosmological valuation (Life/Light forever) without scriptural citation; functions as system-level conclusion rather than church exhortation.
+- ¶19: Moves into the negative counterpart with internal cosmic operators (ruling-power, heaven/wheel, five fleshes, Satan as cosmic agent). Polemical phrasing is present but not tied to institutions.
+- ¶20: Taste-of-fruit mapped to contemporary opponents ("evil people, the sects ... their teachers")—cosmos→social polemic application, not substrate.
+- ¶21: Returns to proof-text posture ("scriptures") and master-citation style; not system exposition, and anchored in scriptural authority discourse.
+- ¶22: Substrate pattern repeats as an exact negative: five-fold faculty structure mapped to death-realms and eschatological endpoints (furnaces, smoke, lump, binding). One clause explicitly applies the mapping to sectarian instruction and is later.
+- ¶23: Closing recap of the bad-tree exposition; lightly dialogic ("as I have explained") but remains within the explanatory sequence rather than institutional regulation.
+- ¶24: Contains a compact dualist cosmological assertion (good earth = Life/Light; bad tree = Matter) but wrapped in direct address; the inner proposition is system-internal and likely older than the homiletic wrapper.
+- ¶25: Semi-creedal dualism statement preserved inside exhortatory packaging; the extracted sentences are the doctrinal core (two principles not derived from one).
+- ¶26: Soteriological consequence stated in cosmological terms (separation vs. fall to land of darkness). Generic conditional form, but still maps within the Light/Darkness system rather than to institutions.
+- ¶27: Beatitude-style exhortation ("Blessed is whoever can believe!") is homiletic/application voice rather than impersonal substrate teaching.
 
 ---
 
 ## Chapter 3
 ### The Interpretation of Happiness, Wisdom and Power; what they signify.
 
-*Core teaching dominates paragraphs 4–8: a systematic, iterative mapping of three hypostases (happiness/wisdom/power) across successive cosmic stations (Father/Light Land; Sun ship; Water ship; Elements) with named Manichaean divinities. Paragraph 1 is a hagiographic frame opening; paragraphs 2–3 are introductory contrast with 'the world' in a homiletic voice (no cosmological mechanism); paragraph 9 is an editorial seam extending the schema into the institutional church (pastoral/institutional); paragraph 10 is a summarizing closure that likely belongs to the same late wrap-up (mentions 'five churches' and a beatitude-style ending). Editorial fatigue signal aligns with the institutional drift in ¶9–10.*
-
-[I will t]each you of another happiness [ ... ] and another wi]sdom [ ... ] and together another power [ ... ] So, now, listen that I may reveal to you [how] it is [with] these three: [ha]ppiness, wisdom and power.
+*The chapter’s oldest layer is the fivefold, systematic cosmos→cosmos identification of happiness/wisdom/power across (1) the Father’s realm, (2) the sun-ship, (3) the ship of living waters, and (4) the elements (¶5–8). The opening (¶1–4) is a later dialogic/pedagogical setup. A clear editorial seam then extends the same triadic pattern into institutional identifications in the holy church (¶9), followed by a concluding beatitude tied to “five churches” (¶10), consistent with the flagged second-half pastoral drift.*
 
 [The happin]ess of the glorious one is the Father, the God of [truth, who] is established in the great land of [light]. ⟨p.24⟩ His glorious wis[d]om is his Great Spirit that [ ... ] below, which flows through all his aeons, and t[h]ey float therein. His great power is all the gods, the rich ones and the angels who were summoned from him as they [ ... ] t]hey that are called aeons [ ... ]
 
@@ -218,23 +179,23 @@ Again, [h]appiness, wisdom and power exist in the s[hip of liv]ing waters [ ... 
 Again, these three exist in the elements: happiness, wis[d]o]m and power. The happiness is [the Pillar of Glory], the Perfect Man. Wisdom is the [five sons of the] Living Spirit; and great powe[r is ... the fi]ve sons of the First Man [ ... who are encl]osed and compounded in the totality, that [ ... ] while he supports the totality.
 
 **Temporal observations:**
-- ¶1: Formulaic scene-setting: 'Once again the enlightener speaks… in the assembly of the church' is a classic Kephalaia compilation frame.
-- ¶2: Homiletic/instructional contrast about what 'people' call happiness/wisdom/power in 'the world'; no systematic cosmological exposition; functions as editorial introduction.
-- ¶3: Continues the worldly-boasting contrast and transitional reassurance ('as I have told you'); lacks the structured cosmological mapping that marks the old teaching layer.
-- ¶4: Begins the impersonal didactic exposition introducing a structured triad that will be mapped; no citation/biography/institutional application.
-- ¶5: Core schema (Father/Light Land; Great Spirit; aeons/angels) but the register scoring suggests a light overlay of compilation voice; still, the underlying content is the systematic triadic mapping typical of the oldest teaching layer.
-- ¶6: Systematic continuation of the triad across a cosmic station (Sun/ship of living fire) with named divinities (Third Ambassador, Living Spirit, Mother of Life). Impersonal, structural voice.
-- ¶7: Iterative formula 'Again… exist in…' mapping the same triad to another cosmic vehicle; named cosmic beings; no institutional vocabulary.
-- ¶8: High-density systematic cosmology: triad mapped to elements plus five-fold structures (five sons) and cosmic mechanics (enclosed/compounded; supports the totality). Strong core signature.
-- ¶9: Editorial seam (explicit bridge 'Now, moreover') extending the cosmic schema into the institutional 'holy church' with offices (Apostle of Light, leaders/teachers, elect/catechumens). Entire paragraph is a later institutional graft.
-- ¶10: Summative beatitude-style closure plus 'five… in the five churches' language; functions as a concluding institutional/catechetical wrap-up rather than the older cosmological mapping.
+- ¶1: Formulaic hagiographic opening attributing speech to “the enlightener” in an assembly setting; this is compilational frame, not cosmological exposition.
+- ¶2: Introductory question about worldly meanings and boasting; functions as setup/problem statement rather than internal cosmic mapping.
+- ¶3: Continuation of the setup with disclosure/transition language (“Now… revealed… as I have told you”); not yet the systematic triadic identifications.
+- ¶4: Pedagogical transition with direct audience address (“listen… reveal to you”); introduces the triad but still operates as a didactic preface rather than the impersonal structural mapping typical of the substrate.
+- ¶5: Systematic triadic correspondence (happiness/wisdom/power) identified with the highest divine realities (Father/Great Spirit/host of gods) within the cosmic system; impersonal expository structure marks the core layer.
+- ¶6: Continues the same triadic mapping across another cosmic level (sun/ship of living fire) with named Manichaean divinities; no institutional or audience-directed application.
+- ¶7: Iterative, formulaic continuation (“Again… exist in…”) mapping the triad to another cosmic vehicle (ship of living waters); classic substrate list-structure.
+- ¶8: Cosmos→cosmos correspondential identifications within the mixed universe (“elements”), including numbered structures (five sons) and functional cosmic mechanics (supporting the totality).
+- ¶9: Editorial seam: bridge connective (“Now, moreover”) extends the prior cosmic iteration into church offices and membership categories (“holy church… Apostle of Light… leaders… teachers… elect… catechumens”). This is cosmos→institution application, not substrate.
+- ¶10: Concluding synthesis ties the fivefold schema to “five churches” and adds a beatitude/exhortative payoff (“Blessed… who will know them”); this is institutional/application closure rather than the internal cosmological mapping.
 
 ---
 
 ## Chapter 4
 ### Concerning the Four Great Days that have come forth from one another, together with the Four Nights
 
-*After a clear hagiographic opening (¶1), the chapter is dominated by a systematic numbered cosmological taxonomy (four days/four nights with twelve hours each, pentadic components, and named Manichaean cosmic beings). No explicit NT citation formulas occur. Two short doxological/beatitude-style closings (¶6, ¶17) look like later editorial piety rather than the technical schema. ¶5 contains 'church' but in the fixed cosmological identification 'Jesus the Splendour' with his twelve wisdoms; this reads like cosmological-systematic exposition rather than an institutional seam.*
+*This chapter is largely systematic cosmological teaching: four “days” (light-side hypostases) and four “nights” (dark-side hypostases), each with a twelvefold internal structuring. Later hands add (a) dialogue-frame attribution (¶1; likely also broken before the colon in ¶7), (b) beatitude-style devotional closures (¶6, ¶17), and (c) a polemical/institutional application that identifies the twelve dark “hours/spirits” with “sects” and the “old man” (¶14–15). The “church” locator in ¶5 also looks like an editorial/institutional anchoring grafted onto an otherwise cosmic identification.*
 
 The first great day is the Father, the God of truth, the fir[st ... ... m]idst the aeons of his greatness, in his [l]iving kingdom. The twelve hours of this great day are the twelve great rich Gods of greatness. These, who are the first evocations that he evoked (to mirror) his greatness, he spread out to the four climes, three by three before his face.
 
@@ -242,13 +203,15 @@ The second day is the Third Ambassador, the one who dwells in the light ship. Hi
 
 [The third day is the Pillar of Glory, the great porter that is greater than] all [the po]rters; the one that supports all [ ... ], those above and those below. Its twelve hours are the five sons of the First Man; the five sons of the Living Spirit, who support all the weights of the universe; together with the summons and the obedience, which are counted to their ten brethren. These are the twelve light hours of the third day.
 
-The fourth day is Jesus the Splendour who [dwells in] his church. His twelve hours are the twelve wisdoms, which are his [light] h[o]u[rs].
+The fourth day is Jesus the Splendour. His twelve hours are the twelve wisdoms, which are his [light] h[o]u[rs].
 
-⟨p.26⟩ [ ... ]: For just as four day[s ex]ist, s[o] too four nights exist.
+These are the four great days that have come forth from one another, which were evoked out of one another.
+
+For just as four day[s ex]ist, s[o] too four nights exist.
 
 The first night is the land of Darkness. It has twelve black [shadows] therein, which are its dark h[o]ur[s]. The twelve shadows of the first night are the five elements of the land of Darkness, [which] poured forth from its five sense organs; and [ ... ] which [ ... ] in its [fi]ve elements and its five [ ... ]; the five [sp]irits that dwell in its elements [ ... ]. These are the twelve shadows and spirits of the first night.
 
-The second night is Matter, the sculptress [ ... ... ] who has sculpted [ ... ] and the entire ruling-power that is in the worl[ds of darkness]. She has fashioned it in five sense organs, five [male] and five female, two per world; together with the fire and the lust [that] dwell in men and women, inflaming [them] inward to one another. These are the twelve spirits of this second night.
+The second night is Matter, the sculptress [ ... ... ] who has sculpted [ ... ] and the entire ruling-power that is in the worl[ds of Darkness]. She has fashioned it in five sense organs, five [male] and five female, two per world; together with the fire and the lust [that] dwell in men and women, inflaming [them] inward to one another. These are the twelve spirits of this second night.
 
 Indeed she, this Matter, the thought of death, ga[ve] the King of the realms of Darkness and his powers strength for the war and the fight, against the aeons of greatness. Yet, he was caught! They laid a snare for him through the Fi[rst M]an. [He] was ta[ken] t[o ... ] through the powers [ ... He] was brought up from the land of death and s[et ... ab]ove and below in the [whole] universe; in the five par[t]s in the heavens above, as well as the five [parts] in the earths below; together with the heat and the cold that are the father and the mother, their fire and their l[u]st.
 
@@ -258,41 +221,43 @@ This is the second night that is begotten from the first night. They laid a snar
 
 [Mat]te[r] herself, the thought of death, is the [mother] of them all; as among them she is named 'the night'. [The worlds] of male and female fleshes, together with the fire and the l[ust], shall [ ... ] twelve hours of [ ... ... ] night. Again, [it] too, the third night that is in the worlds of fl[e]sh, was begotten from the second night; which the Living [Spir]it crucified in the uni[verse ... , ab]ove and below in heaven [ ... ... ].
 
-The fourth night is the law of Sin, which is the dark spirit who speaks in the twelve spirits, the twelve sects. They are the nakedne[ss]es, the twelve zodiacal signs of Matter. They are her thrones; she who is made public, as she sculpts and is displayed in the old man.
+which is the dark spirit who speaks in the twelve spirits. They are the nakedne[ss]es, the twelve zodiacal signs of Matter. They are her thrones;
 
-And, also, the hours of this fourth night that is the old man, who reigns in the sects, are the twelve e[vi]l spirits; the [ ... ] of the old man, which [are ... ... ... ... di]fferentiate the day and night [ ... ... of] death.
+are the twelve e[vi]l spirits; the [ ... ] which [are ... ... ... ... di]fferentiate the day and night [ ... ... of] death.
 
 This is the fourth night [ ... ] that have come forth of one another. One has [ ... ... ] just like the days of lig[ht ... ] they manifested one another. So als[o ... ] they did arise out of one another.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame: 'Once again the enlightener speaks' functions as hagiographic/editorial apparatus.
-- ¶2: Impersonal schematic exposition: numbered day, twelve-hour schema, and spatial four-climes mapping—typical core taxonomic teaching.
-- ¶3: Systematic identification of a cosmic hypostasis with a twelvefold set; no citation/paraenesis.
-- ¶4: Core cosmological mechanics: Pillar of Glory as cosmic support; pentads (Five Sons) expanded to a twelvefold by adding 'summons and obedience'.
-- ¶5: 'Jesus the Splendour' is a Manichaean cosmic entity; this paragraph remains within the four-day/twelve-hour taxonomy. 'Church' here reads as cosmological locus rather than institutional regulation; no seam markers or pastoral rules.
-- ¶6: Concluding beatitude/doxology ('Blessed is every one...') wrapping up the four-days list—pious editorial closure rather than technical exposition.
-- ¶7: Structural transition within the numbered schema (days → nights). No frame attribution or institutional content.
-- ¶8: Classic core dualist cosmology: Darkness as a realm with pentads (elements/sense-organs/spirits) forced into a twelvefold hourly schema.
-- ¶9: Impersonal mythic-mechanistic description of Matter's fashioning via pentads and gendered structures; no exhortation or citation.
-- ¶10: Core salvific-cosmic process language (snare through the First Man; installation 'above and below'; pentadic structuring of cosmos).
-- ¶11: Systematic genealogical sequencing ('begotten from') and cosmographic placement by the Living Spirit—core teaching voice.
-- ¶12: Core taxonomy: five worlds of flesh; descent/fall mechanics; elemental display (dry/moist) plus fire/lust as driving forces.
-- ¶13: Continuing the internal cosmological genealogy and cosmic 'crucifixion' installation; no institutional/NT overlay markers.
-- ¶14: Technical identification of the fourth night with a twelvefold (sects/zodiac) and personified forces; 'Sin' functions as an agent ('speaks'), indicating cosmological hypostasis.
-- ¶15: Completes the fourth-night twelvefold with impersonal schematic language; 'sects' appears as a cosmological category within the system rather than pastoral instruction.
-- ¶16: Structural recapitulation of the four-night chain ('come forth... arise out of one another'), matching the chapter’s schematic aim.
-- ¶17: Beatitude-style closing exhortation ('Blessed is he...') typical of editorial framing/piety rather than the technical schema.
+- ¶1: Formulaic dialogue frame (“Once again the enlightener speaks”) introducing the topic; not part of the impersonal cosmological exposition.
+- ¶2: Impersonal, systematic mapping (Day→divinity; Hours→twelve rich Gods; spatial four climes/three-by-three) stays wholly within the cosmic architecture.
+- ¶3: Pure cosmological identification within a numbered scheme; no citation, exhortation, or institutional targeting.
+- ¶4: Classic substrate-style systematisation: cosmic support-function + pentads + the summons/obedience mechanism as part of a twelvefold count; remains cosmos→cosmos.
+- ¶5: Jesus the Splendour can be a core cosmic hypostasis in Manichaean cosmology, but “in his church” reads as an editorial/institutional application rather than cosmological description.
+- ¶6: The first sentence is a schematic recap of the degree-sequence; the blessing shifts into exhortative/devotional voice typical of later editorial framing.
+- ¶7: The colon after lacunose material suggests an omitted speaker-attribution; the remaining line is a structural hinge continuing the cosmological scheme.
+- ¶8: Systematic dark-side correspondential mapping (Night→realm; Hours→shadows/spirits; pentadic elements/sense-organs) stays internal to the cosmic system.
+- ¶9: Cosmic anthropogony/physiology expressed through pentads and sexed structuring; no audience-address or polemic—expository mechanics.
+- ¶10: Mythic-cosmological process account (snare via First Man; placement above/below; five-fold heavens/earths) is still system-internal description rather than application.
+- ¶11: Genealogical sequencing (begotten from) + cosmic ‘crucifixion/setting’ above-below in the universe; impersonal system mechanics.
+- ¶12: Pentadic world-structure + elemental display (dry/moist) as cosmological correspondences; no institutional mapping.
+- ¶13: Continues the internal genealogical/structural exposition; “crucified” functions as a cosmological fixing mechanism here, not a Gospel citation.
+- ¶14: The paragraph pivots from cosmic description (zodiacal signs/thrones of Matter) to polemical identification with “sects” and ‘old man’ application; this is the key substrate→editorial boundary.
+- ¶15: Underlying twelvefold ‘evil spirits’ fits the night/hour schema, but the ‘sects/old man’ anchoring points outward to the editor’s religious-social landscape.
+- ¶16: Schematic recap of the four-night sequence in the same impersonal structural voice; no exhortation or institutional application inside the surviving text.
+- ¶17: Beatitude-style closure (“Blessed is he...”) functions as editorial devotional framing rather than cosmological system exposition.
 
 ---
 
 ## Chapter 5
-### Concerning Four Hunters of Light and Four of Darkness.
+### Concerning Four Hunters of Light and Four of Darkness
 
-*Core material dominates: a systematic fourfold (Light) and fourfold (Darkness) hunter-net-ship-sea mapping, with standard Manichaean cosmological agents (First Man, Third Ambassador, Living Spirit, Last Statue). Later hands add (a) dialogue frame attributions (¶1, ¶7) and (b) moral beatitudes/exhortations (¶6, ¶12). ¶4 is a Christian/institutional graft: Jesus’ net as “wisdom” cast via the “holy church,” marking later ecclesial integration rather than the oldest schematic teaching. ¶11 reads as a polemical/pastoral expansion about “every sect” and “erroneous teaching,” not impersonal cosmological mechanics.*
+*This kephalaion is largely a systematic correspondential cosmology: four “hunters” of Light and four of Darkness, each mapped by ship/sea/net within the cosmic architecture. Later hands add (a) dialogue-frame attributions (“apostle… speaks”), (b) beatitude-style moral exhortations, and (c) a cosmos→institution graft in the Jesus-hunter paragraph (“holy church”) plus polemical cosmos→sects/“erroneous teaching” in the final dark-hunter paragraph.*
 
 The first hunter is the First Man who was sent from the greatness. He threw himself down to the five storehouses of Darkness, he caught and siezed the enmity [... ...] his net also [... ...] out over all the children of Darkness [... ...]. His ship is his four sons who are swathed over his body. The sea is the land of Darkness [... ...]; his net is [...] and his powers.
 
 The second hunter is the Third Ambassador. This one, for by his light image, which he revealed to the depths below, he hunted after the entire light that is in all things; as it is established in them. His net is his light image, [...] the whole universe and took it prisoner, to this likeness [... His] ship is his light ship. [The sea] is the universe [...] which were hunted after by his net [...] his [glorious] image.
+
+The third hunter is Jesus the Splendour, who came from the greatness, who hunts after the light and life; and he [...] it to the heights. His net is his wisdom, [the] light wisdom with which he hunts the souls, catching them in the net.
 
 The fourth hunter is the great counsel that [...] that lives in the circuit [...] ⟨p.29⟩ entire universe in it today. Yet, at the end, in the dissolution of the universe, this very counsel of life will gather itself in and sculpt its soul in the Last Statue. Its net is its Living Spirit, because with its Spirit it can hunt after the light and the life that is in all things; and build it upon its body. Its ship, in which it is established, is this light cloud whereby it itself travels in the five elements [...], the great fire that will burn all the buildings of [... ...] in its net is the light and the life. It can rescue and free it from all bonds and fetters.
 
@@ -303,29 +268,29 @@ The first hunter is the King of they who belong to the Darkness, who hunted afte
 The third hunter is lust [...] walks in every power of the flesh that walks [...] in the [...] the living souls [... ...] them in its bodies, which [... ...].
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame: “Once again the apostle speaks to his disciples,” with apostolic attribution; this is compilation apparatus, not the oldest expository layer.
-- ¶2: Impersonal, systematic cosmological mapping (hunter/ship/sea/net) using classic entities (First Man; five storehouses; four sons) with no citation or ecclesial framing.
-- ¶3: Systematic cosmological mechanics centered on the Third Ambassador’s Image; continues the same schematic (net/ship/sea) in expository voice.
-- ¶4: Institutional/ecclesial seam: “His ship is his holy church” recasts the schematic into church terms; despite cosmological vocabulary (“Jesus the Splendour”), the paragraph’s net-as-wisdom hunting souls via the church signals later ecclesial integration rather than the oldest layer.
-- ¶5: Highly characteristic core: eschatological cosmology (dissolution; Last Statue), systematic correspondences (net=Living Spirit; ship=light cloud; five elements), process description rather than exhortation.
-- ¶6: Beatitude-style moral exhortation about being perfect in deeds to escape the great fire; not schematic cosmological exposition and reads like later paraenesis.
-- ¶7: Explicit transition frame (“Once again he speaks… I will also teach you…”), marking editorial stitching between two lists.
-- ¶8: Begins the Darkness-counterpart list with impersonal cosmological agents and mechanisms (fire/lust as net; beginning of the worlds), matching the older schematic style.
-- ¶9: Continues systematic Darkness schema (counsel; binding; drawing from abyss to heights) in non-institutional cosmological voice.
-- ¶10: Cosmological-physiological mechanism (lust moving through powers of flesh; ensnaring souls) consistent with core schematic despite lacunae.
-- ¶11: Register shift to institutional/polemical discourse: “rules in every sect,” “erroneous teaching,” repeated moralizing condemnation; this is not the impersonal cosmological mapping but a later anti-sectarian/pastoral expansion.
-- ¶12: Concluding beatitude/exhortation (“recognise… through knowledge”) functioning as paraenetic closure; not part of the schematic exposition.
+- ¶1: Formulaic dialogue attribution with “apostle” addressing “disciples”; a compiling frame marker rather than substrate exposition.
+- ¶2: Pure cosmos→cosmos correspondential mapping (hunter/ship/sea/net) anchored in the First Man descent and the five storehouses; impersonal expository voice.
+- ¶3: Systematic cosmological mechanics (light-image revelation; net/ship/sea all within cosmic domains). No institutional or audience-address application.
+- ¶4: Core-like opening (cosmic agent Jesus the Splendour; net=wisdom) is followed by an ecclesial identification (“holy church”) that crosses the correspondence boundary into institutional application.
+- ¶5: High-density cosmological process teaching (end-time dissolution, Last Statue, Living Spirit, five elements, great fire) in a structural explanatory register.
+- ¶6: Beatitude/exhortation addressed to “every one… perfect in his deeds,” aimed at moral preparation; not systematic cosmological mapping.
+- ¶7: Transitional teaching-frame (“Once again he speaks… I will also teach you…”) functioning as editorial scaffolding between the two fours.
+- ¶8: Cosmic antagonists described in mechanistic terms (“beginning of the worlds,” net=fire/lust) without institutional targeting; corresponds to substrate-style dark-side mapping.
+- ¶9: Systemic cosmological description of capture/transport across levels (earths→heavens; abyss→heights) using net imagery internal to the cosmic map.
+- ¶10: Treats Lust as an operative cosmic force moving through “powers of the flesh,” still framed as ontological mechanics rather than exhortation.
+- ¶11: Cosmos→contemporary-world pointing: “rules in every sect” and the net defined as “erroneous teaching” (polemical/institutional discourse) rather than a purely cosmic register.
+- ¶12: Closing beatitude/exhortation about recognizing hunters “through knowledge,” promising salvation; audience-directed application rather than substrate exposition.
 
 ---
 
 ## Chapter 6
 ### Concerning the Five Storehouses that have poured forth from the Land of Darkness since the [Beginning]; the Five Rulers, the Five Spirits, the Five Bodies, the Five Tastes.
 
-*After a brief dialogue-frame incipit (¶1), the chapter is dominated by a schematic pentadic cosmology of the Land of Darkness (storehouses→elements→trees→genera→worlds/kings/spirits/bodies/tastes) and then a structured description of the King/Ruler of Smoke/Darkness and the five sub-world rulers with their metals/tastes/spirits. Two clear later institutional-moral insertions appear: a long anti-magic exhortation with judgement language (¶7) and a closing address to the elect with behavioral imperatives (¶17). Several paragraphs mix core descriptive cataloguing with polemical application to ‘sects’, ‘baptism’, temples/idols, and ‘principalities and authorities’ (¶12–15), so those are treated as MIXED with only the catalogue retained.*
+*The chapter is dominantly schematic cosmological-correspondential teaching (pentadic architecture; realm→form/metal/taste mappings). A late editorial/application layer concentrates in the second half (esp. ¶7, ¶12–16, ¶17), where the correspondential syntax is used to point outward to contemporary practices/institutions ("nowadays", "reigns today", temples, sects, baptism, soothsayers) and culminates in direct exhortation to the elect (editorial fatigue).*
 
 Five storehouses have arisen since the beginning in the land of darkness! The five elements poured out of them. Also, from the five elements were fashioned the five trees! Again, from the five trees were fashioned the five genera of creatures in each world, male and female. And the five worlds themselves have five kings therein, and five spirits, five bodies, five tastes; in each world, they not resembling one another!
 
-The King of the world of Smoke [ ... ] who came up from the depth of darkness; this is he who is the head of all wickedness, and all malignity. The beginning of the spread of the war occured through him; all the battles, fights, quarrelling, dangers, destructions, fights, wrestling-contests! That is the one who first made arise danger and war, with his worlds and his powers. Afterwards, also, he waged war with the light. He pitched a battle with the exalted kingdom.
+The King of the world of Smoke [ ... ] who came up from the depth of darkness; this is he who is the head of all wickedness, and all malignity. The beginning of the spread of the war occured through him; all the battles, fights, quarrelling, dangers, destructions, fights, wrestling-contests! That is the one who first made arise danger and war, with his worlds and his powers. Afterwards, also, he waged war with the Light. He pitched a battle with the exalted kingdom.
 
 ⟨p.31⟩
 Now, regarding the King of Darkness, there are five shapes on him! His head is lion-faced; his hands and feet are demon- and devil-faced; his shoulders are eagle-faced; while his belly is dragon-faced; his tail is fish-faced. These five shapes, the marks of his five worlds, exist on the King of the realms of Darkness!
@@ -333,6 +298,8 @@ Now, regarding the King of Darkness, there are five shapes on him! His head is l
 Now, there are five other properties in him. The first is his darkness. The second is his putridity. The third is his ugliness. The fourth is his bitterness, his own soul. The fifth is his burning, which burns like an iron () as if poured out from fire.
 
 [There are] also three others in him! The first, that his body is hard and very tough, even as she has formed him [ ... ] cruel-hearted; namely Matter, who is the thought of death, [the o]ne who sculpted him from the nature of the land of darkness. This is the manner of the body of the ruler of Smoke. He is harder than every iron, copper and steel and lead; as there is no cleaver at all, nor any iron implement, can [ ... ] him and cut him. For Matter, his fashioner, has formed him [ ... ] strong and hard.
+
+The second, that he wounds and kills by the word of his magic arts. His recitation and hearing, all his foolish instruction, make magic and invocations for him. When it pleases him, he can make an invocation over himself, and by his magic arts be hidden from his companions. Again, when it pleases him, he can be manifested over his powers and appear to them;
 
 ⟨p.32⟩
 The third, that the King of the realms of Darkness knows the converse and language of his five worlds. He understands every thing he hears from their mouths, as they address one another; each one of them in his language. [Every] design they will consider against him, every snare they debate with one another to bring upon him, he knows them! He can also understand the gesturing they signal between one another. Yet, his powers and his rulers, who are subject to him, can not understand his wordy converse. While all these things are unveiled to him; still, their heart is not manifested to him. He knows not their mind nor their thought; he can not ponder their beginning and their end. Rather, he only knows and apprehends what is before his eyes.
@@ -352,33 +319,33 @@ Again, the King of the worlds of Wind is eagle-face. His body is iron. Also, the
 
 For his part, the King of the world of Water is fish-face. His body is silver. All the other rulers who belong to Water, silver is their body. Also, the taste of their fruit is the sweetness of water, the sweet taste that is in every (form).
 
-Again, [the Kin]g of the world of Darkness is a dragon. His [body is lead] and tin. All the other rulers [who belong to the world of] Darkness, their body is lead and tin. And also, the taste of their fruits is bitterness. Again, the spirit who reigns in them is the spirit who speaks till today in the soothsayers, giving oracles; in the givers of portents, every type; in they who are possessed; and the other spirits that give oracles, every type.
+Again, [the Kin]g of the world of Darkness is a dragon. His [body is lead] and tin. All the other rulers [who belong to the world of] Darkness, their body is lead and tin. And also, the taste of their fruits is bitterness.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic opening attributing speech to ‘the enlightener’ in dialogue-frame style.
-- ¶2: Highly schematic pentadic chain (storehouses→elements→trees→genera→worlds with five-fold attributes) in impersonal expository voice; no citation or institutional address.
-- ¶3: Cosmological antagonist described as a cosmic agent initiating war against Light; mythic-process narration within systematic demonology (no community frame).
-- ¶4: Pentadic ‘five shapes’ body-map marking five worlds; schematic cataloguing characteristic of the older teaching layer.
-- ¶5: Numbered fivefold properties in impersonal descriptive register; continues the schematic profile.
-- ¶6: Cosmological mechanics (Matter as fashioner) and numbered triad continuation; still impersonal and process-oriented despite corruption/lacunae.
-- ¶7: Long exhortation/command (‘I command you… Keep away…’) with moral warning and judgement/sentence language aimed at behavior; this is institutional paraenesis rather than schematic cosmology.
-- ¶8: Continuation of numbered traits (‘The third…’) in descriptive, non-exhortatory voice; systematic psychology of the dark ruler.
-- ¶9: Mythic-physiological description of the ruler’s body/abilities; no frame/citation, consistent with core demonological dossier.
-- ¶10: Summative closure of the descriptive catalogue; still cosmological and impersonal (even if rhetorically charged).
-- ¶11: Fragmentary continuation tying the chief ruler to subordinate rulers across the five worlds; remains within the schematic cosmology.
-- ¶12: Opens with classic correspondential catalogue (metal/body; taste) = core; then shifts to present-world polemic (‘reigns today… principalities and authorities…’) suggestive of later applicative gloss.
-- ¶13: Core is the schematic five-world ruler profile (face/body metal/taste). The ‘reigns in leaders… kings… sects worship fire’ reads as later polemical application, not necessary to complete the pentadic scheme.
-- ¶14: Begins as core catalogue; then turns to polemic against temples/idols in a way that feels like an editor’s applicative gloss.
-- ¶15: Core catalogue is intact (face/metal/taste). The baptism/sect polemic is a clear later Christian-era applicative overlay within the community’s controversy context (not a NT citation, but still later than the schematic base).
-- ¶16: Completes the fivefold ruler-series with face/metal/taste and a spirit-manifestation list; ‘till today’ is applicative but remains within demonological mechanics rather than church instruction.
-- ¶17: Direct address to community ranks (‘perfect faithful… holy elect’) with imperatives (‘stay away… put behind… live not…’)—institutional/pastoral closing rather than cosmological exposition.
+- ¶1: Formulaic hagiographic/dialogue frame: "Once again" + "speaks to his disciples".
+- ¶2: Impersonal schematic pentadic cosmogony; cosmos→cosmos structuring without citation or application.
+- ¶3: Cosmic-historical exposition within the mythic system (Smoke-king as war origin); no audience address or institutional pointing.
+- ¶4: Classic correspondential mapping (five worlds→five composite forms) entirely internal to the cosmic system.
+- ¶5: Numbered pentad of intrinsic properties; impersonal descriptive voice.
+- ¶6: Systematic faculty/property listing continues; Matter functions as a cosmic agent/fashioner within the Darkness mythos.
+- ¶7: Begins as core property-description (faculty of magical concealment/manifestation) but shifts into application voice ("nowadays", "I command you") and disciplinary warning—late editorial use of the teaching.
+- ¶8: Continues the numbered intrinsic properties; cognitive faculty mapped within cosmic hierarchy; no institutional anchoring.
+- ¶9: Mythic-physical description of the Darkness-king’s faculties/limitations; internal analogies (thunder, iron ball) serve cosmic description, not moral exhortation.
+- ¶10: Concluding descriptive summary of the same cosmic figure; still within mythic genealogy of Darkness.
+- ¶11: Fragmentary continuation of the cosmological comparison; no frame or application markers.
+- ¶12: Core correspondences (metal; taste) are followed by an editorial present-tense application to worldly "principalities and authorities".
+- ¶13: Begins with pure realm→form/metal/taste mapping (core), then pivots to sociological polemic (leaders; sects) characteristic of later application.
+- ¶14: Clear substrate mapping until the final sentence, which crosses the boundary into present-world institutions (temples/shrines).
+- ¶15: Core correspondential mapping (form/metal/taste) is intact, then is used for present-tense sectarian polemic (baptism practices).
+- ¶16: Substrate mapping (dragon; metals; taste) followed by late application to living divinatory institutions ("till today").
+- ¶17: Direct second-person exhortation to an institutional audience ("my brethren... the holy elect"), moral/disciplinary imperatives; classic late pastoral/application layer concentrated at chapter end (editorial fatigue).
 
 ---
 
 ## Chapter 7
 ### The Seventh, concerning the Five Fathers
 
-*Core layer dominates the middle: a structured, numbered emanation/evocation schema (five fathers; repeated triads of powers) with impersonal cosmological exposition. The chapter is wrapped in a hagiographic opening (¶1) and ends with a beatitude-style closure (¶23). Strong second-half institutional drift: explicit church/elect/catechumens material (¶13, ¶17–19, ¶21, and likely the paraenetic blessing ¶23) reflects later compilation/pastoral extension; NT/Gospel overlay appears in ¶15 (Jn 8-like saying) and the soteriological Gospel-toned phrasing in ¶10.*
+*This chapter’s oldest layer is a structured emanation schema: five “fathers” emerging one from another, with triadic evocations (Father → three; Third Ambassador → three; Jesus the Splendour → three; Light Mind → three), in an impersonal cosmological voice. In the second half, the register drifts toward ecclesial/institutional identifications (apostle/church/elect/catechumens) and a closing beatitude; one paragraph embeds a Johannine saying (Jn 8), which is a Christian overlay.*
 
 Five fathers exist; they were summoned forth one of one. [Also], one did come out of another!
 
@@ -402,45 +369,51 @@ The third is the Virgin of Light, the glorious wisd[o]m; the one who takes away 
 
 The third father, who came out of the second father: he is glorious Jesus the Splendour. And, again, he too summoned three evocations after the pattern of the second father.
 
+The first power whom he summoned is the Light Min[d],
+
 The second power whom Jesus summo[n]ed is the gre[at Jud]ge, who gives judgement on all the souls of mankind, [his] dwelling being established in the atmosphere under [ ... / ... ] wheel [ ... ] stars.
 
-The fourth father is the Light Mind, the one who chooses all the churches. And, again, he too summoned three powers after the pattern of Jesus.
+The fourth father is the Light Mind. And, again, he too summoned three powers after the pattern of Jesus.
 
-And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body, corresponding to the pattern of the image to the apostle; and the thr[ee] great glorious angels who are come with her.
+And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body; and the thr[ee] great glorious angels who are come with her.
+
+One (angel) ho[ld]s the prize in his hand. The second bears the light garment. The third is the one who possesses the diadem and the wreath and the crown of light. These are the three angels of light, the ones who shall come with this Light Form;
 
 These are the five fathers who have come out of one another. They have appeared and man[ifes]ted through one another!
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic scene-setting: ‘Once again… apostle… disciples… revelation’ — classic Kephalaia frame.
-- ¶2: Numbered cosmological schema announced in impersonal expository voice; no citation or institutional tags.
-- ¶3: Systematic divine taxonomy with Persian-Manichaean theonyms; definitional, non-parenetic exposition.
-- ¶4: Emanation mechanics (‘summoned… three emanations’) in structured sequence; manuscript marker preserved.
-- ¶5: Continues ordered emanation list; purely cosmological naming and procession.
-- ¶6: Emanation/appearance formula; Persian-Manichaean divinity in systematic role list.
-- ¶7: Core cosmological conflict mechanics (Light vs personified Darkness) plus triadic emanations; impersonal declarative style.
-- ¶8: Iterative pattern (‘And again… three powers’) typical of older schematizing instruction.
-- ¶9: Cosmic hypostasis described functionally (support/bearing); no ecclesial application.
-- ¶10: Jesus the Splendour appears here as a named cosmological entity in the triad list; the ‘life eternal’ phrasing is somewhat Gospel-toned, but not a citation or NT narrative and functions as cosmological soteriology.
-- ¶11: Mythic-cosmological agency (rulers/powers subdued by image) in systematic listing.
-- ¶12: Continues the iterative triadic structure (‘after the pattern…’), characteristic of core schemata.
-- ¶13: Institutional graft: ‘father of all the apostles… churches… holy church… appointed’ applies cosmic language to ecclesial offices; this is not the older impersonal cosmological register.
-- ¶14: Returns to cosmological geography (atmosphere, wheel, stars) and functional office (Judge of souls) without church-institution markers.
-- ¶15: Direct NT/Gospel entry: embedded dominical-style quotation (‘what I have seen with my Father…’) aligned with the chapter’s noted Jn 8 footnote; even if adapted, its vector is Gospel tradition.
-- ¶16: Still within the numbered father/triad schema; however ‘chooses all the churches’ is a mild institutional coloration—kept as core because it remains a definitional line inside the emanation list and not an editorial seam into rules/offices.
-- ¶17: Ecclesial office and community-history language (‘Apostle of Light… assume the church of the flesh… inner leader’) reads as institutional role construction rather than cosmological mechanics.
-- ¶18: Companion/assistant to the apostle with practical protection motifs; tied to apostolic office rather than cosmic structure.
-- ¶19: Seam-flagged institutional extension: elect/catechumens and renunciation admonition; editor extends the triad pattern into church categories.
-- ¶20: Eschatological/cosmological apparition on leaving the body plus triadic angelic accompaniment; ‘corresponding… to the apostle’ may be secondary coloration but the paragraph’s main substance is mythic/eschatological description.
-- ¶21: Seam-flagged institutional extension: angelic items listed, then explicitly redirected ‘to the elect and the catechumens’—a classic editorial graft onto a cosmological list.
-- ¶22: Schematic closure of the five-father chain; summary cadence typical of core list endings.
-- ¶23: Beatitude/praise-style concluding exhortation (‘Blessed is he…’) with ethical titles (‘doers of good things’) functions as editorial closure rather than schematic cosmology.
+- ¶1: Hagiographic sitting/preaching scene with titles (“enlightener… apostle of truth”) and revelation-introduction; pure compilation frame.
+- ¶2: Numbered cosmological taxonomy stated as an impersonal structural axiom (emanation sequence).
+- ¶3: Systematic cosmological epithets and timeless ontological predicates; no institutional application or citation.
+- ¶4: Core emanation mechanics (summoning/emanations) with named divinity; impersonal expository voice.
+- ¶5: Continues the internal emanation list; despite elevated devotional adjectives, it remains cosmos→cosmos (being-from-being).
+- ¶6: Named cosmological hypostasis within the emanation sequence; formulaic but not ecclesial.
+- ¶7: Cosmic conflict/result language (“humiliated the Darkness”) stays within the mythic system; no address to church or audience.
+- ¶8: Structured iteration (father → three powers) in cosmological terms; internal hierarchy mapping.
+- ¶9: Cosmic office/titles in a catalogue style; no institutional reach.
+- ¶10: “Jesus the Splendour” here functions as a named cosmological power within a triad; not a Gospel citation formula, so best read as the system’s Jesus-hypostasis (core), though the “life eternal” phrasing is later-sounding.
+- ¶11: Mythic agency of a Light-being acting upon cosmic “rulers and powers”; internal system mechanics (image/power) rather than church application.
+- ¶12: Explicit recursive patterning (“after the pattern…”) is characteristic of the older schematic teaching layer.
+- ¶13: Opens as a cosmological list-item (name of a power), then crosses boundary cosmos→institution (“apostles… churches… holy church”), indicating later editorial application.
+- ¶14: Cosmic geography (“atmosphere… wheel… stars”) and functional role (judge) remain within the system; no citation or ecclesial address.
+- ¶15: Contains a Johannine-style dominical saying (“what I have seen with my Father…”) and “the savio[ur]” language; this entered via NT/Gospel tradition (Jn 8 in apparatus), not the older schematic substrate.
+- ¶16: Core is the continued numbered emanation schema; the ‘churches’ clause signals later ecclesial reuse of the pattern.
+- ¶17: Institutional/apostolic office language (“Apostle of Light… assume the church of the flesh… leader”) frames salvation history in church terms rather than cosmic architecture.
+- ¶18: Continues ecclesial/missionary apparatus (“counterpart… to the apostle… companion… help”), not a cosmos→cosmos mapping.
+- ¶19: Seam-flagged institutional graft: “elect and catechumens… renounce the world” is explicit community discipline/application.
+- ¶20: Core is an eschatological/cosmological manifestation (Light Form + three angels). The ‘apostle’ correspondence is a later institutional anchoring.
+- ¶21: Mostly pure correspondential listing (objects/regalia borne by angelic powers). Final clause applies it to elect/catechumens, marking later pastoral insertion.
+- ¶22: Closes the schematic emanation chain in the same impersonal, structural voice as the opening axiom.
+- ¶23: Beatitude/exhortational closure with salvation reward language (“Blessed is he… righteous… faithful… doers of good things”); late paraenesis rather than schematic cosmology.
 
 ---
 
 ## Chapter 8
 ### Concerning the Fourteen Vehicles that Jesus has boarded.
 
-*Core material is concentrated in ¶3–8: a numbered, systematic listing of the ten cosmological vehicles (ships/elements/summons-obedience) in an impersonal expository mode. ¶1 is hagiographic frame. ¶9 is a classic editorial seam extending the numbered list into institutional categories (holy church, brothers/sisters, catechumens) and is therefore wholly pastoral. ¶2 and ¶10 present a Christianized/kerygmatic overlay voice (incarnation/manifested in flesh, Father-sending, blessing beatitude) that likely entered with later redaction; the chapter-level fatigue signal aligns with the institutional graft in the second half.*
+*The core teaching is a systematic, numbered cosmological list of the ten “vehicles/carriages” Jesus the Son of Greatness boards in the zone (¶2–8). The second half shows strong editorial extension: the pattern is continued by mapping the remaining four “vehicles” onto institutional church categories (holy brothers/sisters; catechumens) (¶9), followed by a summarizing, beatitude-like conclusion praising the mystery/knower (¶10).*
+
+When Jesus the Son of Greatness came to these worlds, at the time that he unveiled the greatness, he boarded ten vehicles. He journeyed in the universe by them.
 
 The first vehicle is the light ship, since he received instructions from the Ambassador there.
 
@@ -455,25 +428,25 @@ The sixth is the living air, and since he assumed it too, he received anointment
 He was journeying in these ten carriages among all the orders and all the [...], those above and those below.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic introduction (“Once again… speaks… to the congregation”) typical of the Kephalaia compilation frame; no teaching content.
-- ¶2: Sets the scene with a Christianized descent/mission statement (“came to these worlds… unveiled the greatness”) and a christological title; functions as narrative/kerygmatic preface rather than impersonal cosmological exposition.
-- ¶3: Begins a numbered cosmological list; uses internal Manichaean hierarchy (“Ambassador”) and vehicle-station logic—hallmark of the systematic teaching layer.
-- ¶4: Continues the numbered vehicle series with a named cosmic being (First Man) in explanatory, non-citational voice.
-- ¶5: Still within the systematic vehicle list; cosmological entities (“Pillar of Glory,” “Perfect Man”) and functional explanation. The descent phrasing remains integrated into the cosmological scheme, not a Gospel citation.
-- ¶6: Abstract redemptive mechanics (Summons/Obedience) expressed as structured items within the numbered sequence—classic core soteriological-cosmological pairing.
-- ¶7: Fivefold elemental/living set embedded in the numbered vehicle list; impersonal cataloguing with brief functional glosses—strong core signature.
-- ¶8: Summative closure of the ‘ten vehicles’ sequence, describing cosmic scope (“orders… above and below”); remains within the impersonal teaching register.
-- ¶9: Editorial seam flagged: extends the enumerative pattern into institutional categories (“holy church,” “holy brothers,” “pure sisters,” “catechumens”). Entire paragraph is an editorial graft, not mixed.
-- ¶10: Redactional theological/praise conclusion: computes 10+4=14, then shifts to kerygmatic salvation language (“Father who sent him,” blessing/beatitude, redeemed vs. strangers). Functions as closing exhortation rather than core structural exposition.
+- ¶1: Dialogue/frame attribution (“Once again … speaks to the congregation”) is a classic compiling-community header and not part of the older teaching substrate.
+- ¶2: Introduces the cosmological teaching topic directly (descent/journey through the universe) without citation or institutional application; “Jesus the Son of Greatness” functions as a defined cosmic being within the Manichaean system, not as a Gospel import.
+- ¶3: Systematic numbered item in a vehicle-list; mapping remains within the cosmic hierarchy (light ship / Ambassador).
+- ¶4: Continues the impersonal enumerative structure; purely cosmological entities and locations (First Man; ship as station).
+- ¶5: Still within the cosmic system: a station (Pillar of Glory/Perfect Man) and a descent-process statement, with no institutional targeting or exhortation.
+- ¶6: Classic correspondential mechanism expressed as clothing/assumption of hypostatized forces (Summons/Obedience) within the salvation-cosmology, not applied to contemporary practice.
+- ¶7: Fully systematic enumeration of the living elements as vehicles; cosmos→cosmos mapping (elemental stations and their roles), no audience address or institutional referent.
+- ¶8: Concluding line for the ten-vehicle cosmological sequence; remains within cosmic geography/orders and preserves manuscript lacuna.
+- ¶9: Editorial seam/extension: applies the ‘vehicle’ scheme to institutional identity (“holy church,” “holy brothers,” “pure sisters,” “catechumens”), i.e., cosmos→contemporary community mapping; per rule, the entire paragraph is a later pastoral graft.
+- ¶10: Summarizing closure with doxological/beatitude-style blessing (“Blessed is he who will know these mysteries”) and evaluative soteriological wrap-up; functions as editorial concluding frame rather than the impersonal enumerative substrate.
 
 ---
 
 ## Chapter 9
 ### The Explanation of the Peace, what it is; the Right Hand; the Kiss; the Salutation.
 
-*Core material dominates the first ~2/3: a tightly structured fivefold ritual-as-archetype exposition anchored in the descent/return of the First Man (and secondarily his rescue by the Living Spirit). Later paragraphs show strong editorial fatigue into institutional exhortation (honour clergy; practice rites). One clear Christian/NT overlay occurs where a voice from the heights quotes the Psalm/NT ‘sit at my right hand… footstool’. Frame formulas appear at the beginning and in dialogue attributions; these are stripped in MIXED extractions.*
+*The first half is dominated by an older, systematic archetype-teaching: the five ritual signs are first located wholly within the primordial drama of the First Man (peace/right hand/kiss/salutation/laying on of hands). In the second half the register drifts strongly into ecclesial and hortatory application (church election process, offices, obedience, exhortation), consistent with editorial fatigue. Several paragraphs are mixed, pivoting from cosmic description to ‘in the midst of mankind/today’ application; one mixed paragraph also contains a likely scriptural (Ps 110:1-style) insertion.*
 
-You have questioned me about these five lessons. Now, they are displayed in the world as miniatures, being made little; and yet indeed they are great and honoured. I am the one who can reveal to you their mystery! So, these five signs are the mystery of the First Man. He came forth with them from the aeon of light. Also, when he finished his contest, he went up with these good signs. They received him into the aeons of light.
+So, these five signs are the mystery of the First Man. He came forth with them from the aeon of light. Also, when he finished his contest, he went up with these good signs. They received him into the aeons of light.
 
 ⟨p.38⟩ The first peace is the one that the gods and the angels in the land of light gave to the First Man; when he comes out against the enemy. The gods and the angels were walking with him; escorting him, giving to him their peace and power, and their blessing and fortification. This is the first peace that the gods and the angels gave to the First Man; as he comes forth from the aeon of light.
 
@@ -489,72 +462,74 @@ By the [se] five signs and these five myst[e]ri[es] the First Man came forth fro
 
 Also, when he ascended from the war, he came in to the kingdom of the household of his people by these five mysteries!
 
-The peace with which [he ascen]ded is the peace that the summons gave to him, [w]hen it was sent forth from the [Fa]ther of Life. It gave him the peace in the world of darkness. Also, that peace with which he descended is th[e sam]e as the one with which he ascended from the struggle! Therefore, appropriate to the my[s]tery of that peace, which the summons gave the First Man, did this peace here and now come about. It was named and heard among the powers of the Father.
+The peace with which [he ascen]ded is the peace that the summons gave to him, [w]hen it was sent forth from the [Fa]ther of Life. It gave him the peace in the world of darkness. Also, that peace with which he descended is th[e sam]e as the one with which he ascended from the struggle!
 
-Again, this second right hand is the one that the Living Spirit gave the First Man, when he [brou]ght him upward out from the struggle. Appropriate to [the] mystery [of t]hat right hand this right hand has come about; the one that occurs in the [midst of] mankind, as they give it to their companions, [it b]eing honoured and [ ... ]
+Again, this second right hand is the one that the Living Spirit gave the First Man, when he [brou]ght him upward out from the struggle.
 
-Also, this second kiss is the one with which the [Father o]f Life and the Mother of the living embraced the First Man, when he ascended from the struggle. Again, this kiss occurs among mankind, as they make to embrace their companions with it; whether then [they] go away from home and be far from their friends, or else [if] they approach one another, according to the mystery of (the First Man).
+Also, this second kiss is the one with which the [Father o]f Life and the Mother of the living embraced the First Man, when he ascended from the struggle.
 
-⟨p.40⟩ [The] second salutation with which the First Man made obeisance [ ... this] time to the God of truth and [ ... ] the blessed aeons and al[l] the aeons [ ... the] whole [land] of light, whe[n] the Father of Life and the Mother of the living brought the Man upward from the abyss of the struggle. Appropriate to the mystery of the second salutation this salutation has come about; this one that occurs today in the midst of mankind, as they make obeisance to one another, doing an honour to their companions.
+⟨p.40⟩ [The] second salutation with which the First Man made obeisance [ ... this] time to the God of truth and [ ... ] the blessed aeons and al[l] the aeons [ ... the] whole [land] of light, whe[n] the Father of Life and the Mother of the living brought the Man upward from the abyss of the struggle.
 
-The second laying on of hands is this: When the Living Spirit brought the First Man upward from the war, he saved him from all the surging waves. He brought him upward, he gave him ease in the great aeons of light, which belong to the household of his people. He set [him] firmly before the Father, the Lord of the totality. He received this great laying on of hands that he may become leader of his brethren in the new aeon. Again, appropriate to the mystery of the second laying on of hands, this laying on of hands has come about; the one that occurs in the midst of mankind as they lay hands on one another, the great giving authority to the lesser.
+The second laying on of hands is this: When the Living Spirit brought the First Man upward from the war, he saved him from all the surging waves. He brought him upward, he gave him ease in the great aeons of light, which belong to the household of his people. He set [him] firmly before the Father, the Lord of the totality. [...] He received this great laying on of hands that he may become leader of his brethren in the new aeon.
 
-These five mysteries and these five signs came about first in the divine. Mankind has been taught them; and they have instituted them in their midst [ ... but] these mysteries were not at the beginning amongst the powers of darkness.
+These five mysteries and these five signs came about first in the divine. [...] these mysteries were not at the beginning amongst the powers of darkness.
 
-Once again: At the time of their coming forth, the Light Form shall come forth before them; and she redeems them from the darkness to the light [ ... ] This Light Form calms the person, with the kiss and her quiet, from fear of the demons w[ho de]stroy his body. By her asp[ec]t and her image [the] heart of the elect one, who is come forth from his bo[d]y, shall be calm for [him]. Afterwards, the angel who h[o]lds the victory prize extends to him the right hand. And it draws him out of the abyss of his body, and accepts him in with the [k]iss and love. That soul shall make obeisance to its red[eem]er, who is this Light Form. And also, at the inst[ant when ... ] he shall be perfected and increased according to [ ... / ... ] in the household of the living ones, with the go[ds] and the angel[s] and all the apostles and the chosen. [An]d he receives the crown [ ... ] glory in the life for ever.
+Once again: At the time of their coming forth, the Light Form shall come forth before them; and she redeems them from the darkness to the light [ ... ] This Light Form calms the person, with the kiss and her quiet, from fear of the demons w[ho de]stroy his body. By her asp[ec]t and her image [the] heart of the elect one, who is come forth from his bo[d]y, shall be calm for [him]. Afterwards, the angel who h[o]lds the victory prize extends to him the right hand. And it draws him out of the abyss of his body, and accepts him in with the [k]iss and love. That soul shall make obeisance to its red[eem]er, who is this Light Form. And also, at the inst[ant when ... ] he shall be perfected and increased according to [ ... / ... ] in the household of the living ones, with the go[ds] and the angel[s] [...] [An]d he receives the crown [ ... ] glory in the life for ever.
 
 **Temporal observations:**
-- ¶1: Pure dialogue frame: disciples question the ‘apostle’ about ritual actions; no cosmological exposition yet. ‘apostle’ + Q&A apparatus marks later compilation frame.
-- ¶2: Underlying teaching is systematic fivefold ‘signs/mysteries’ anchored to First Man’s descent/return (core). Only the speaker-attribution is late framing.
-- ¶3: Impersonal, archetypal mapping of a ritual (‘peace’) to primordial event; cosmic actors (gods/angels/land of light) in systematic exposition.
-- ¶4: Bare, numbered item in a fivefold structure; named Iranian cosmological entity (Mother of Life) in archetypal exposition.
-- ¶5: Mythic-archetypal scene (divine household farewell) explaining a ritual gesture; ‘church tutelaries (?)’ likely a translation/terminological issue but still embedded in the divine household, not institutional rules.
-- ¶6: Ritual salutation mapped to primordial obeisance; cosmological geography (‘depths below’, aeons of light) and impersonal explanatory voice.
-- ¶7: Mechanistic myth explanation (arming/fortifying) of rite; named cosmological agent; not institutional ordination yet.
-- ¶8: Summative closure of fivefold archetype; core teaching voice.
-- ¶9: Continues the same core myth-cycle (descent/contest/ascent) tied to the five mysteries.
-- ¶10: Core cosmological mechanics: ‘summons’ from Father of Life, action in world of darkness; explicit archetype→world derivation (‘appropriate to the mystery… this peace here and now come about’).
-- ¶11: Still core: cosmological rescue by Living Spirit; then derivation to human custom (not yet church discipline). Numbered ‘second’ continues the structured exposition.
-- ¶12: Archetype-to-human-society explanation (generic ‘mankind’, travel/homecoming) remains in the same core explanatory register.
-- ¶13: Same structured ‘second X’ teaching; cosmic ascent scene; then generalized human practice (‘today… in the midst of mankind’)—still not institutional.
-- ¶14: Core narrative/exposition is continuous before/after the quotation; the quoted enthronement formula is the later Christian overlay (also flagged by NT citation in chapter features).
-- ¶15: Underlying statement is core (divine archetype → human institution; light/dark contrast). The ‘apostle’ proclamation line is later legitimating frame.
-- ¶16: Institutional graft: Light Mind ‘chooses his church’ with the five lessons—application to church formation/selection. This is precisely the post-archetype turn noted by strong pastoral drift.
-- ¶17: Catechetical/institutional sequence (receive peace → become ‘child of peace’ → elected to faith → counted to right hand → drawn to church). This is community initiation practice, not primordial cosmological exposition.
-- ¶18: Explicit church obeisance (‘holy church’, ‘hope of the faith, good works’) and ritual progression: institutional instruction rather than core cosmology.
-- ¶19: Edifying/pastoral register: ‘right hand of charity’, ‘built up in the truth’, doxological closure; uses the five signs as church formation language.
-- ¶20: Eschatological/cosmological mechanics (post-mortem encounter with Light Form; angelic right hand; victory prize; ascent) in impersonal explanatory mode. ‘elect’ is present but embedded in cosmological process, not regulations; ‘apostles’ here appears as a class among heavenly beings/chosen—possible translation choice, but not a dialogue frame.
-- ¶21: Direct address/exhortation (‘my brethren and my limbs’, ‘let you find… in your hands’) and self-authorization (‘Father who sent me’)—homiletic institutional closure.
-- ¶22: Paraenetic encouragement tied to knowing the five signs; no new cosmological mechanism; functions as exhortation/assurance to hearers.
-- ¶23: Clear church office structure (‘teachers, deacons, presbyters’), ordination authority, threat language (‘commits sin… against me’)—late institutional layer.
-- ¶24: Heavily lacunose but reads as exhortation and providential assurance about deeds/occasions; fits the late pastoral drift in the chapter’s end.
+- ¶1: Dialogue/Q-frame: disciples question the apostle; sets up the lesson but contains no cosmological substrate.
+- ¶2: Core substrate is the impersonal, mythic claim that the five signs belong to the First Man’s descent/ascent; later editor adds framing voice and explicit ‘in the world’ application.
+- ¶3: Pure cosmic-system narration (land of light; gods/angels; First Man’s sortie) without institutional address or ‘today/in the world’ anchoring.
+- ¶4: Terse, archetypal mapping (ritual sign ↔ primordial action) fully within the cosmic hierarchy.
+- ¶5: Still functions as divine-household/aeon-of-light description; ‘church tutelaries (?)’ is lexically suspicious but remains situated in the aeons/household rather than earthly institutions.
+- ¶6: Cosmic obeisance and petition within the aeons; no shift to church practice or exhortation.
+- ¶7: Archetypal action located in the primordial battle; impersonal mythic exposition.
+- ¶8: Summative, system-internal causality (victory ‘by’ the five mysteries) without social/institutional referents.
+- ¶9: Still purely cosmic geography (‘kingdom/household’) and ascent mechanics.
+- ¶10: Begins as cosmological mechanism (Summons from Father of Life; peace in world of darkness), then pivots to ‘here and now’ institutional/ritual justification.
+- ¶11: Clear seam where archetype (Living Spirit saving First Man) is repurposed to explain a human custom (‘in the midst of mankind’).
+- ¶12: Archetypal embrace in the divine household is core; the explicit ‘among mankind… go away from home…’ is later social application.
+- ¶13: Core is the second obeisance within the land of light; ‘occurs today’ is a strong late marker.
+- ¶14: Core narrative is Living Spirit’s rescue and enthronement-before-the-Father within aeons; later hands add a biblicizing enthronement quote and then a direct mapping to human authority-giving.
+- ¶15: The contrast ‘first in the divine… not at the beginning in darkness’ fits archaic Light-vs-darkness architecture; ‘apostle’ + ‘in this world’ proclamation is later ecclesial framing.
+- ¶16: Cosmos→church move: Light Mind ‘comes to the world’ to ‘choose his church’; this is institutional election language rather than system-internal mapping.
+- ¶17: Catechetical sequence (‘child of peace’, ‘elected to the faith’, approaching the church) is operational church praxis, not primordial cosmology.
+- ¶18: Explicit obeisance to the ‘holy church’ and moral program (‘good works’) marks institutional application.
+- ¶19: Ritual reception as ongoing community-building (‘built up in the truth for ever’) reads as pastoral consolidation, not archetypal exposition.
+- ¶20: Mostly system-internal eschatological mechanics (Light Form; demons; angel; ascent from body-abyss). The insertion of ‘apostles’ as a category alongside gods/angels signals later ecclesial coloration.
+- ¶21: Direct exhortation and audience address (‘my brethren and my limbs’; ‘let you find…’) plus self-authorization (‘Father who sent me’)—late applicatory voice.
+- ¶22: Fragmentary but clearly oriented to hearer benefit (‘you may part from the world… you have understood…’), i.e., pastoral encouragement rather than cosmic description.
+- ¶23: Explicit church offices (teachers/deacons/presbyters) and obedience threat (‘commits sin… against me’)—institutional discipline layer.
+- ¶24: Imperative address (‘my beloved ones, hasten…’) and practical exhortation, with heavy lacunae; fits end-of-chapter pastoral fatigue profile.
 
 ---
 
 ## Chapter 10
 ### Concerning the Interpretation of the Fourteen [Great Aeons] of Light, about which Sethel has spoken in [his Prayer]
 
-*The chapter is wrapped in a dialogue frame (¶1–2). The oldest layer appears in the impersonal, systematic fourteen-fold cosmological mapping (¶3–4) and a fragmentary continuation (¶5) describing the aeons as structural supports of the cosmos and the Ambassador’s kingship. Despite the chapter-level fatigue metric, no explicit institutional/catechetical graft appears in these surviving paragraphs; the late material here is primarily the hagiographic Q&A container and attribution to Sethel’s prayer.*
+*The chapter opens with a clear compilation frame (disciples/apostle Q&A) and then shifts into a compact, systematic fourteenfold cosmological enumeration (elements/sons of First Man + Call/Hearing + sons of Living Spirit + the two fathers). The final paragraph preserves substantial cosmological teaching about the (hidden) Land/Plenitude and the Ambassador’s kingship, but is wrapped in an exegetical reference to Seth’s prayer, suggesting later interpretive anchoring around an older scheme.*
 
-⟨p.43⟩ Happen you know this, that the [ ... ] below abide in fourteen [great aeons ...]: the five elements, the sons of the First Man, together with the call and the hearing. They anoint them, living in them. These shall make seven, five plus two.
+⟨p.43⟩ Happen you know this, that the [ ... ] below abide in fourteen [great aeons ...]: the five elements, the sons of the First Man, together with the Call and the Hearing. They anoint them, living in them. These shall make seven, five plus two.
 
 [ ... the] f[ive s]ons of the Living Spirit who [support] all [the wei]ght of the universe; together with the [Li]vi[ng] Spirit [and the Fir]st Man, their fathers. These are the fourt[een p]raises that he has proclaimed, the praise that is made of fourteen pra[yers], by which the universe is established.
 
-[There are fourt]een aeons of light [ ... ] of Seth [e] ... ] about them in his prayer, for they are expl[ai]ned [ ... the la]nd that is not revealed. This land [ ... ... is estab]lished. They bore up under the enemy [ ... ... equa]ls them. The hidden plenitude that [ ... ] the Ambassador who came from the Father, the [ ... ] He came and stood firm in the midst of these [ ... ]: he is called the good father of [all] the ae[ons and gods] who are holy and conjoined. He has become leader and a great king after the likeness of the first Father, the lord of all these cou[nse]ls. This universe is held together by their will [ ... ] to the end of all things.
+for they are expl[ai]ned [ ... the la]nd that is not revealed. This land [ ... ... is estab]lished. They bore up under the enemy [ ... ... equa]ls them. The hidden plenitude that [ ... ] the Ambassador who came from the Father, the [ ... ] He came and stood firm in the midst of these [ ... ]: he is called the good father of [all] the ae[ons and gods] who are holy and conjoined. He has become leader and a great king after the likeness of the first Father, the lord of all these cou[nse]ls. This universe is held together by their will [ ... ] to the end of all things.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame: disciples question, honorifics ('apostle', 'our master'), request to 'enlighten us'. This is the editorial container, not the teaching core.
-- ¶2: Dialogue attribution ('Then the enlightener speaks…') and promissory interpretive setup. This is a typical Kephalaia frame seam introducing the exposition.
-- ¶3: Systematic numbered mapping (five + two = seven) with standard cosmological entities (First Man; call/hearing) in impersonal expository voice; no citations or institutional register.
-- ¶4: Completes the fourteen-fold structure (five sons + two fathers) and ties it to cosmological mechanics ('support…weight of the universe', 'universe is established')—hallmarks of the core teaching layer even though the surrounding Sethel-prayer rubric is secondary.
-- ¶5: Though fragmentary and retaining a Sethel-prayer linkage, the paragraph’s dominant voice is cosmological and structural: aeons as supports against the enemy, 'hidden plenitude', and the Ambassador’s functional role and rank ('leader', 'king') within the cosmic order. No NT citation formulas or institutional directives appear.
+- ¶1: Formulaic dialogue frame: disciples question “the apostle,” honorific address (“our master”), and a request to be ‘enlightened’ about a written lesson; this is editorial container material rather than cosmological exposition.
+- ¶2: Dialogue attribution (“Then the enlightener speaks…”) plus a promissory transition (“I will interpret…”) without actual teaching content; characteristic hagiographic/compilation framing.
+- ¶3: Systematic numeration and internal cosmos→cosmos mapping (elements/sons, hypostases Call and Hearing, arithmetic closure ‘five plus two’). Impersonal instructional voice; no institutional application or citation formula.
+- ¶4: Continues the fourteenfold architecture with cosmological functions (supporting the universe) and father/son hierarchies; ‘by which the universe is established’ stays within cosmic mechanics rather than exhortation.
+- ¶5: Core-like cosmological content (hidden Land/Plenitude; Ambassador’s descent/standing; kingship ‘after the likeness of the first Father’; universe held together by their will) appears embedded in a later interpretive wrapper referencing Seth’s prayer. The Seth-prayer linkage likely entered with the compiler’s exegetical agenda, while the internal cosmological statements read as older substrate.
 
 ---
 
 ## Chapter 11
 ### [Concerning the Interpretation of] all [the] Fathers of [Light], who are distinguished from one another.
 
-*Core layer is a compact catechetical-style list distinguishing major Light-divinities by functional epithet (“beginning of … is …”). Paragraph 1 is a clear hagiographic dialogue frame. Paragraphs 12–13 shift into beatitude-style exhortation (“Blessed is he…”) characteristic of later framing/pastoralizing closure; no institutional seam extension appears, but the register/voice shifts away from impersonal exposition.*
+*A mostly cosmological-catechetical catalogue identifying major Light-divinities by their archetypal functions (“the beginning of … is …”). The only clear later material is the hagiographic dialogue attribution at the opening and the closing beatitude-style exhortations to lodge the teaching in one’s heart (application to the reader). No NT citation formulas appear; “Jesus the Splendour” functions as a cosmological being, not a Gospel quotation.*
+
+“... that [the beginn]ing of every good grace is the great Father of the [ligh]ts; since [a]ll [graces] are given by his hand.
 
 The beginning of each blessing and every prayer is the Mother of [L]ife, the first Holy Spirit.
 
@@ -578,45 +553,42 @@ The beginning of every wisdom of truth is the Virgin of Light, [.
 The beginning of] all [the great]est honoured ones [ ... ] is the Light Mind; who is the awakene[r of they] who sleep, the gatherer in of the ones who are sc[att]ered.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue attribution (“Once again the enlightener speaks”) marks the compiling hagiographic frame; even though it introduces a doctrinal statement, the vehicle is late.
-- ¶2: Impersonal functional identification of a named cosmological entity (Mother of Life) without citation or institutional instruction; fits the core cataloguing style.
-- ¶3: Systematic functional epithet + Persian cosmological being (Third Ambassador) in expository voice; no frame or NT citation.
-- ¶4: Cataloguing of a Light-being by function (“beginning of …”); impersonal and non-institutional.
-- ¶5: Core cosmological naming (First Man) embedded in the same systematic list structure.
-- ¶6: Cosmological mechanics (“distributed … his five sons from place to place”) plus named being (Living Spirit) indicates older systematic teaching; preserves page marker and lacuna.
-- ¶7: Impersonal functional epithet in the same enumerative chain; no signs of hagiographic frame or NT overlay.
-- ¶8: Named cosmological structure/being (Pillar of Glory) placed in a systematic “first of …” list; expository voice.
-- ¶9: “Jesus the Splendour” functions here as a defined cosmological deliverer, not a Gospel citation; no NT formula (“as it is written”)—so core despite Christian lexeme presence.
-- ¶10: Named Light-entity (Virgin of Light) in impersonal functional mapping; matches core list.
-- ¶11: Cosmological entity (Light Mind) defined by functions in a descriptive, non-citational voice; continues the core catalogue.
-- ¶12: Shift to beatitude/exhortation (“Blessed is he… lodge this treasure…”) is a closing moralizing wrapper rather than impersonal cosmological exposition; functions as editorial framing of the preceding list.
-- ¶13: Continuation of beatitude-style closure plus quotation-ending punctuation; typical editorial ending rather than core systematic teaching.
+- ¶1: Opening attribution (“the enlightener speaks”) + second-person address (“my beloved ones”) marks later frame/application; the remaining clause reads like the catalogue’s impersonal teaching thesis (Father of the Lights as source).
+- ¶2: Impersonal definitional catalogue sentence naming a principal Light-being. “Holy Spirit” is potentially a Christianized title, but here it functions as an internal Manichaean epithet for Mother of Life, without NT citation.
+- ¶3: System-internal hierarchy naming (Third Ambassador; King of the lights) in impersonal expository voice; no exhortation or institutional identification.
+- ¶4: Catalogue-style identification of a Light-father; remains within cosmological personnel/titles.
+- ¶5: Archetypal-function mapping to a core Manichaean cosmic entity (First Man); no address or institutional polemic.
+- ¶6: Strongly cosmological/systematic: Living Spirit + “five sons” distributed spatially—typical internal degree-structure teaching.
+- ¶7: Impersonal catalogue identification; cosmic title “Great Builder” functioning as archetype within the system.
+- ¶8: Internal cosmological being (Pillar of Glory) presented as a ranked ‘first’ within a functional class; no frame or application voice.
+- ¶9: “Jesus the Splendour” appears as a Manichaean cosmic deliverer (not a Gospel citation). The sentence remains definitional rather than quoting NT narrative.
+- ¶10: Catalogue formula + core Light-being (Virgin of Light), impersonal and system-internal.
+- ¶11: Defines a cosmological hypostasis (Light Mind) by functions (awakener/gatherer) within the salvation-mechanics system; still expository, not exhortative.
+- ¶12: Beatitude/exhortation addressed to the reader (“Blessed is he… lodge this treasure… in his heart!”) applies the catalogue devotionally rather than continuing impersonal system description.
+- ¶13: Closing beatitude + perseverance/inheritance formula (“continue in their belief… inherit… eternal life”) is application to the community/reader, not core cosmological mapping.
 
 ---
 
 ## Chapter 12
 ### Concerning the Interpretation of the Five Words that are proclaimed in the Universe
 
-*Paragraph 1 is a clear dialogue/frame setup (disciples question the apostle; sect labels). Paragraphs 2–3 preserve a compact, identificatory teaching: the ‘words/names’ are equated with Manichaean cosmological beings (Father; Third Ambassador). The chapter is fragmentary (lacunae), so the underlying five-fold scheme is only partially extant; what survives is core-style equational exposition rather than institutional or Gospel-citation material.*
+*This chapter fragment is dominated by a late dialogical frame locating the teaching in relation to contemporary sectarian vocabulary (Baptists, ‘Purified Ones’, ‘First/Second Life’). The recoverable older substrate is limited to short, impersonal identifications of cosmic beings (Father; Third Ambassador), which can be extracted by removing the sect-referential ‘they call’ linkage.*
 
-[...] call it by this name is the Father, the l[ife ...] this unnameable, whom no one [...] his name.
+the Father, the L[ife ...] this unnameable, whom no one [...] his name.
 
-⟨p.45⟩
-The second [word is the Thir]d Ambassador [...] of life, whom they also call the father of [...] [...] the first Father.
+The second [word is the Thir]d Ambassador [...] of Life, [...] [...] the first Father.
 
 **Temporal observations:**
-- ¶1: Dialogue frame and hagiographic apparatus: ‘Once again’, ‘disciples questioned’, ‘apostle’, direct address ‘our master’. Also sectarian ethnography (Baptists, ‘Purified Ones’) functions as editorial contextualization rather than impersonal cosmological exposition.
-- ¶2: Impersonal identificatory teaching equating a proclaimed ‘name/word’ with the Father (cosmological entity) and stressing unnameability (apophatic description), with no Gospel citation or institutional regulation. Fragmentary but reads as direct exposition rather than frame.
-- ¶3: Systematic equational mapping (‘The second word is…’) identifying a ‘word/name’ with a major Manichaean cosmic being (Third Ambassador). Numbered sequence + cosmological nomenclature mark the old teaching layer; no frame verbs (‘he says’) or ecclesial application.
+- ¶1: Explicit dialogue frame (“Once again the disciples…”, “our master”), plus contemporary-sect references (Baptists, ‘Purified Ones’) situate the material in the compiler’s hagiographic apparatus rather than the impersonal cosmological teaching voice.
+- ¶2: The surviving core-like element is the impersonal, apophatic cosmological description of the Father/Life as ‘unnameable’. The excised opening clause points outward to how ‘they’ (other groups) name him—an editorial interpretive bridge.
+- ¶3: Core substrate is suggested by direct identification of a named Manichaean cosmological hypostasis (Third Ambassador) within the divine hierarchy. The ‘they also call…’ wording functions as a later explanatory interface with other sect vocabularies, so it is treated as secondary.
 
 ---
 
 ## Chapter 13
 ### Concerning the Five Saviours, the Resurrectors of Those Who Are Dead, Together with the Five Resurrections
 
-*A very brief, heavily lacunose pentadic list. ¶1 is a clear hagiographic/dialogue opening frame. The remaining surviving lines are predominantly impersonal, systematic enumerations of “resurrectors” with cosmological actors (Father, First …, Light Mind) and eschatological mechanics (gathering, receiving, resting, unveiling, drawing, standing up), consistent with an older teaching core. ¶7 is a beatitude-style blessing that reads like an editorial/pastoral closure rather than part of the structured pentad.*
-
-... i]t therein [...].
+*Despite heavy lacunae, the dominant layer is a pentadic, systematic list of “resurrectors” (¶3–6) stated in an impersonal cosmological register. The chapter is wrapped by a brief hagiographic/dialogue incipit (¶1–2) and ends with a beatitude-style exhortation (¶7), which reads as later pastoral/application rather than part of the impersonal degree-teaching.*
 
 The second resurrector is [...].
 
@@ -627,73 +599,75 @@ The fourth resurrector is the Light Mind, because [...]. ⟨p.46⟩
 The fifth resurrector to the good [...] is the Father, the First established one [...]. [He ...] all the powers, and he stands firm [...]. He shall unveil the [...] over them [...], and he draws them to him [...], his will [...], and he [...] them, and he stands them up [...] there, and they remain until [...].
 
 **Temporal observations:**
-- ¶1: Formulaic opening attribution (“Once again the enlightener speaks”) is a compilation frame marker; not part of the older teaching voice.
-- ¶2: Too lacunose to diagnose strongly, but it continues the teaching sequence immediately after the frame; no citation, no institutional vocabulary, and it likely belonged to the enumerative core list.
-- ¶3: Numbered pentadic enumeration (“second…”) is characteristic of the systematic teaching layer; no frame formula or NT citation.
-- ¶4: Impersonal explanatory clause (“because…”) with eschatological mechanics (gathering, receiving, resting) and cosmological agent (the Father, the First …) fits the core didactic register.
-- ¶5: Continues the numbered structure; “Light Mind” is a cosmological functional entity in systematic exposition, not a Gospel vector.
-- ¶6: Extended process-description with repeated verbs (unveil/draw/stand up/remain) in an impersonal eschatological-cosmological key; strongly core despite lacunae.
-- ¶7: Beatitude/blessing formula (“Blessed is every one who… for ever”) functions like an editorial or exhortatory closure rather than the systematic pentadic mapping; not anchored in the impersonal enumerative exposition.
+- ¶1: Formulaic hagiographic incipit (“Once again the enlightener speaks”), typical Kephalaia framing rather than cosmological exposition.
+- ¶2: Extremely lacunose continuation immediately after the formulaic opening; lacks any stable cosmological mapping language and most likely belongs to the same editorial frame/delivery context.
+- ¶3: Begins the pentadic teaching list (“second resurrector”), a structural/degree marker characteristic of the older systematic substrate even though the content is damaged.
+- ¶4: Impersonal cosmological mechanism (“by his word shall all lives gather… receive… rest”) describing what the being does within the system, not applying it to contemporary institutions or audience behavior.
+- ¶5: Continues the numbered pentadic sequence with a named cosmological entity (“Light Mind”) in expository form; no citation or pastoral address.
+- ¶6: Extended impersonal process-description (unveiling, drawing, standing up powers) inside the cosmic system; maintains the systematic list structure rather than shifting to exhortation or institutional identification.
+- ¶7: Beatitude/exhortation (“Blessed is every one who…”) shifts from describing cosmic mechanics to blessing/audience-facing moral application; no longer a cosmos→cosmos mapping.
 
 ---
 
 ## Chapter 14
 ### The Interpretation [of] the S[i]lence, the Fast, [the Peace], the Day, [and] the Rest; [what] they are.
 
-*The chapter is framed as a disciple-question (¶1), then moves into cosmological interpretation of ritual terms (peace/silence/day etc.) via named beings and cosmic structures (Pillar of Glory, First Man, ship of living waters). The end (¶5) reads like a doxological closure rather than systematic teaching. Heavy lacunae make several paragraphs fragmentary, but the presence of systematic cosmological identifications indicates a substantial core layer in ¶2–4.*
+*This chapter is largely definitional: it interprets the five proclaimed practices by mapping each to cosmological archetypes (cosmos→cosmos). The opening is a clear dialogue/frame prompt. The only notable intrusion of later layer is a small dialogue-attribution seam in ¶4 (“the enlightener … call it ‘day’”), which is removed in extraction. The closing beatitude in ¶5 reads as devotional/pastoral rather than systematic cosmological teaching.*
 
 [...] the gatherer in [... ...] then he shall cau[se] the body [...] all the lusts of the world [...] of the body in righteousness [...] is the Pill[a]r of Gl[or]y [...] because [...] ⟨p.47⟩ [...] up to the [...]
 
 The one they call [...] it is the [Fi]rst [M]an who dwel[ls i]n the ship of living waters [...] li]ght [...] he is c[alled ...] that they have [...] glorious [...]
 
-[...] the enlighten[er ... cal]l it 'day' [...] uni]verse as they shall [...] in the great aeon [...] are spread in the universe, it is [...] established in the [...] and the so[u]ls [...]
+[...] uni]verse as they shall [...] in the great aeon [...] are spread in the universe, it is [...] established in the [...] and the so[u]ls [...]
 
 **Temporal observations:**
-- ¶1: Dialogue-frame formula ('Once again the disciples questioned the enlightener', 'They say to him', 'We implore you, our father') is editorial hagiographic apparatus introducing the topic.
-- ¶2: Impersonal cosmological mechanism with technical entity-name 'Pillar of Glory' and process language; no NT citation, no institutional prescriptions. Despite lacunae, the voice is explanatory rather than exhortative.
-- ¶3: Systematic identification of a ritual term with a cosmological being ('First Man') located in a specific cosmic vehicle ('ship of living waters') is characteristic of the oldest correspondential teaching layer.
-- ¶4: Despite damage, the paragraph continues cosmological interpretation ('call it "day"', 'great aeon', 'spread in the universe', 'souls'), in an expository register. No clear frame formula survives beyond the broken attribution; the remaining content reads like core cosmology.
-- ¶5: Beatitude + eternalizing praise ('Blessed is he...', 'remains for ever and ever') functions as a concluding doxology rather than systematic cosmological exposition; typical of editorial closure.
+- ¶1: Dialogue frame: disciples question the enlightener; petition formula (“We implore you, our father…”). This is compilation apparatus rather than the teaching substrate.
+- ¶2: Despite lacunae and some moral vocabulary (“lusts”, “righteousness”), the paragraph’s logic appears to ground a proclaimed practice in a cosmological mechanism/agent (“the gatherer…”, “the Pillar of Glory”), i.e., archetype-identification within the Manichaean cosmic system. Uncertain due to heavy damage; no clear audience-address or institutional application is preserved.
+- ¶3: Direct cosmological identification of a ritual term with a named cosmic being and locus (“First Man”, “ship of living waters”): classic system-internal mapping (cosmos→cosmos) without exhortation or citation.
+- ¶4: The remaining content defines “day” via cosmological placement/process (“great aeon”, “spread in the universe”, relation to “souls”), which fits the impersonal archetypal register; the excised clause reflects the redactional dialogue wrapper.
+- ¶5: Devotional/benedictory closure (“Blessed is he…”, eternal praise) lacks systematic cosmological mapping and reads like later liturgical/pastoral diction rather than substrate exposition.
 
 ---
 
 ## Chapter 15
 ### [Concerning the ... ...] Five [Parts ...] Worlds of [...]
 
-*Core teaching dominates (pentadic structure: five elements/worlds/fruits → ten male/female → twelve with Fire and Lust; zodiacal correspondence). Paragraph 1 is a hagiographic Q&A frame. Paragraph 2 is too fragmentary to securely place. Paragraphs 8–9 apply the combat-pattern to the holy church (likely later ecclesial extension); 10 is a doxological close.*
+*Core teaching dominates: a numbered/pentadic exposition of how Death/Darkness becomes active through a doubled pentad (male/female), yielding twelve parts correlated with the zodiac. The opening and closing are hagiographic frame, and the final unit applies the scheme to the "holy church" (pastoral/editorial application).*
+
+His disciples say to him [...]: Did Death arise and stand firm [...] up? Or else did it turn itself from [...] its armour [...] in its [...] but it finished [...] the two [...].
 
 ⟨p.48⟩ [...] it moved it and [...] they that are in the [...] of the earth of darkness [...] first part.
 
-Yet, after a long time, as there was not [...], it gushed and streamed up [...] the five elements of death that gushed [...] which are smoke, fire, wind, water and darkness [...] the second time [...] they were sculpted [...] those in which death was established [...].
+Yet, after a long time, as there was not [...], it gushed and streamed up [...] the five elements of Death that gushed [...] which are smoke, fire, wind, water and darkness [...] the second time [...] they were sculpted [...] those in which Death was established [...].
 
 The fourth part is the evil fruits [...] in the five trees that are in the five worlds of the land of darkness.
 
-The fifth time it spread itself out to its creatures that exist in the five worlds; the ones that were formed and generated from the five fruits of death. They are the five worlds of flesh, the five creations of darkness in which death has been established. It spread itself out to ten parts, five male parts and five female [...].
+The fifth time it spread itself out to its creatures that exist in the five worlds; the ones that were formed and generated from the five fruits of Death. They are the five worlds of flesh, the five creations of darkness in which Death has been established. It spread itself out to ten parts, five male parts and five female [...].
 
-Now, like the land of darkness, in that its spirit and its [...] they nourished the five elements [...]; this is also [how] the ten parts that are in male and female, the fire and lust of the flesh [...] them, as they yoke them with one another [...] they were established against the First Man. This is [...] of the darkness, it was condemned for ever.
+Now, like the land of darkness, in that its spirit and its [...] they nourished the five elements [...]; this is also [how] the ten parts that are in male and female, the Fire and Lust of the flesh [...] them, as they yoke them with one another [...] they were established against the First Man. This is [...] of the darkness, it was condemned for ever.
 
 Alongside the mystery of these twelve parts that came about in the darkness [...] against the First Man. The twelve [...] the twelve spirits of error that came about from the twelve signs of the zodiac [...].
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic setup (“Once again… enlightener… disciples”) and disciple question; classic editorial dialogue frame.
-- ¶2: Too fragmentary for confident dating; surviving diction fits a numbered cosmological exposition (“first part”), but context is broken.
-- ¶3: Impersonal process-description and systematic five-element list of Darkness/Death; no citations or institutional vocabulary.
-- ¶4: Numbered structural mapping (part/five trees/five worlds) characteristic of the older correspondential-cosmological schema.
-- ¶5: Pentadic structure developed into a decadic male/female doubling; explanatory, systematic voice; no ecclesial frame.
-- ¶6: Mechanistic cosmology (nourishing elements; Fire and Lust as driving forces; opposition to First Man). Doxological-sounding ending (“condemned for ever”) still fits cosmological judgment rather than church rule.
-- ¶7: Completion of the 5→10→12 structure and explicit zodiacal correspondence; classic systematic teaching register.
-- ¶8: Institutional/ecclesial application (“holy church”) and a ‘second living man’ dwelling there; this reads as a later extension of the combat-against-First-Man pattern into church setting.
-- ¶9: Continues the church-directed application (“light that dwells in the church”) and sect polemic (“twelve sects”); likely part of the same later ecclesial graft onto the cosmological scheme.
-- ¶10: Closing doxology fragment (“his holy father for ever and ever”) typical of editorial ending formula rather than cosmological exposition.
+- ¶1: Opening formula "Once again, the enlightener..." is compilation frame; but the disciples’ question is a substantive cosmological prompt about the arisal/activity of Death within the two-essence system, likely preserving the older teaching agenda.
+- ¶2: Highly lacunose, but it appears to belong to the internal, enumerative scheme (“first part” of the earth/land of darkness). No institutional or citation markers.
+- ¶3: Systematic cosmological mechanics (streaming/gushing, five-element list, establishment of Death) in an impersonal explanatory voice—characteristic of the substrate.
+- ¶4: Numbered part within a pentadic structure; internal cosmos→cosmos mapping (fruits/trees/worlds) without contemporary application.
+- ¶5: Continues the internal generative scheme (five→ten by male/female doubling) as cosmological architecture, not exhortation or institutional mapping.
+- ¶6: Process explanation of how the doubled parts are energized/“yoked” and set against a defined cosmic being (First Man). Still entirely within the cosmological system.
+- ¶7: Correspondential internal mapping (twelve parts ↔ twelve zodiac signs ↔ spirits) strongly signals the older systematic layer, though “spirits of error” may reflect later polemical naming within an inherited structure.
+- ¶8: Editorial application: explicitly relocates the conflict to the institutional present (“holy church”) via the figure of the “second living man.” The mapping now points outside cosmic architecture to community identity.
+- ¶9: Continues the church/sect application (“light that dwells in the church… the twelve sects”), using the cosmic episode as contemporary polemic rather than expounding the cosmological system.
+- ¶10: Doxological closure (“for ever and ever”) functions as concluding liturgical/frame material rather than systematic cosmological exposition.
 
 ---
 
 ## Chapter 16
-### [Concerning the Five] Greatnesses who [went forth] against the Darkness.
+### Concerning the Five Greatnesses who went forth against the Darkness
 
-*After a brief hagiographic dialogue-attribution in ¶1, the chapter is overwhelmingly systematic cosmological teaching: a pentadic enumeration of emanational ‘greatnesses’, followed by a sequence of five ‘advents’ explained through extended similes (judge, king inspecting works, burning/planting, butter-in-milk), and concluding with eschatological mechanics (Last Statue, great fire, separation). The only clearly late material is the formulaic opening attribution (FRAME) and the final beatitude/exhortation (PASTORAL). Jesus the Splendour here functions as a named cosmological entity within the pentad and the advent-sequence, not as a Gospel citation, so it remains CORE.*
+*The chapter is predominantly CORE: a systematic pentadic listing of emanational "greatnesses" and a long, internally-cosmic exposition of five "advents" using similes (noble son/judge/king/inspection; butter-in-milk) to describe cosmic process. Later layers appear as (a) a brief dialogue-frame opener, (b) a small audience-address seam within ¶17, (c) a Christianizing/biblical-historical overlay block on Jesus the Splendour reaching Adam and Eve (¶23–25), and (d) a concluding beatitude/exhortation (¶30).*
 
-“[...] the darkness, it was defeated by five greatnesses.
+[...] the Darkness, it was defeated by five greatnesses.
 
 The first greatness is the Father of Greatness who exists in calm and hiddenness; as he is established in his light-earth, in his own essence.
 
@@ -725,10 +699,9 @@ Also, the associates in the mystery and the assistants of this judge, these who 
 
 Now, just as this genuine judge, who was sent from the king to overturn the violence to this man, the noble son: this is also the case with the Living Spirit. He also was sent from the King of the lights to overturn the vengeance and violence to the First Man, against whom the King of the realms of Darkness had sinned. He faulted and sinned against him, and also his rebellious powers. Therefore, when (the Living Spirit) came, he bore up the First Man.
 
-Also, all the rulers, the powers of sin who had faulted and sinned against the sons of the First Man, he has judged them according to a righteous judgement. He has bound them in heaven and earth. He put each one to the place fitting for him; he weighed each of them according to his cruelty and oppression. While some of them he enclosed in the prison, others he hung head down. Some [...] are crucified, others are sat down all the time. Some among them are fixed beneath their associates, restricted by a strong chain; others he made the holders of authority over their companions beneath, so that they may do their pleasure amongst these below them.
+Also, all the rulers, the powers of Sin who had faulted and sinned against the sons of the First Man, he has judged them according to a righteous judgement. He has bound them in heaven and earth. He put each one to the place fitting for him; he weighed each of them according to his cruelty and oppression. While some of them he enclosed in the prison, others he hung head down. Some [...] are crucified, others are sat down all the time. Some among them are fixed beneath their associates, restricted by a strong chain; others he made the holders of authority over their companions beneath, so that they may do their pleasure amongst these below them.
 
-⟨p.52⟩
-Happen you know this [...] that when the Father of Life established the judgements [...] He was revealed to all the powers of darkness. He judged them as a true giver of judgement [...] This is the first judgement that the Living Spirit gave the rulers [in respect of the] First Man. Indeed, he gave victory to the First Man corresponding to his victory; but he condemned the King of the realms of Darkness corresponding to that by which he had erred.
+when the Father of Life established the judgements [...] He was revealed to all the powers of darkness. He judged them as a true giver of judgement [...] This is the first judgement that the Living Spirit gave the rulers [in respect of the] First Man. Indeed, he gave victory to the First Man corresponding to his victory; but he condemned the King of the realms of Darkness corresponding to that by which he had erred.
 
 [...] this chain, of this sort, became [...] the earth till the end time when the universe will be dissolved; and it perishes in the great fire and is separated. While the light goes to its country, the darkness remains in the chain and fetter for ever.
 
@@ -739,13 +712,6 @@ Also, they who are good, of the craftsmen and architects and artisans whom he ha
 Now, just as this great king who comes and inspects his works and fortifications, so also is the advent of the Third Ambassador. For, when he too came, he saw [his works] established and prepared and [...] series of the rulers prepared and established there, above and below, outside and within, in the great pattern that his brothers had made. They had come before him to the contest, they who had fixed and created the universe before he came. He saw the gods and the angels established and controlling the fortifications [...] guarding the entire ruling-power [...] which his first powers had done. They are the First Man and the Living Spirit and the Great Spirit, the Mother of Life.
 
 Therefore, when he saw them, that they had created everything with great wisdom, [...] as they looked he plundered (?) [...] in his advent, by which he came, he was unveiled to them. He says to the Living Spirit: “The judgement that you have [...] good, what you uttered [...] you gave to them correspondingly; so that they were moved and raised up to that of which they were not worthy”.
-
-⟨p.53⟩
-The advent also of Jesus the Splendour, the time when he came to all [...] being just like a man if he is sent to pull out a [...] burn a difficult fig-garden with fire. Therefore, again, when he has first cut the bad trees with his axe and has pulled out [...] and their body with his fire, so that they should not return to sprout from this time, nor bear fruit bad to eat [...]
-
-Afterwards, he also planted good plants: the tree of life that will make good fruit.
-
-Again, this is like this simile of the advent of Jesus the Splendour. It happened like this; because he too set out [...] his power and his wisdom, in his [...]-ness [...] a king and a saviour [...] in his glorious wisdom he destroyed them. He bound and crushed them like the fire that shall burn and destroy trees. This is also how he performed his will in the zone, among the many powers, until he reached the form of the flesh of Adam and Eve, the first humans. [He perfected] his will in Eve, he [...] He also gave hope to Adam, and the good news [...] glorious [...] He went up to the heights [...] of light.
 
 ⟨p.54⟩
 Then the summons and the obedience, the great counsel that came to the elements, which are set in conjunction: it mixed with them, it was established in silence. It bears up [...] until the end time when it can arise and stand firm in the great fire. It will gather to it its own soul, and sculpt it in the Last Statue. You will also find it sweeps out and casts from it the pollution that is foreign to it. However, the life and the light that are in all things it gathers in to it, and builds upon its body.
@@ -758,43 +724,43 @@ Now, this counsel, that summons and obedience, resembles thus cooled butter. If 
 Again, this too is what the advent of that thought is like, the counsel of life, which is the summons and obedience that came to the elements. This is the one that at the end can arise and stand firm, and will gather in to it all the lives, and the light that has remained behind in everything. It can build them upon its body; it will gather them in to it [...] in its image for ever and ever [...] from this time.
 
 **Temporal observations:**
-- ¶1: The opening is a classic Kephalaia frame formula (“Once again… speaks to his disciples”), but the embedded clause states the structural thesis of the chapter (five greatnesses defeating Darkness), which fits the impersonal cosmological teaching voice.
-- ¶2: Systematic enumerative exposition of a cosmological hierarchy; no citation or institutional application; characteristic ‘how things are’ teaching voice.
-- ¶3: Numbered structural calculation (four → ten parts → total twelve) is typical of the older schematic teaching layer.
-- ¶4: Emanational chain with named Manichaean cosmic beings and a pentad (five sons) presented as a definition—core schematic style.
-- ¶5: Continues the pentadic/emanational catalogue in an impersonal definitional register; manuscript marker preserved.
-- ¶6: Numbered hierarchy + cosmic officials; no frame, no exhortation, no NT entry vector.
-- ¶7: Jesus the Splendour is deployed as a cosmological emanation within a pentad, not via Gospel citation; the language is emanational/systematic rather than narrative-Nt.
-- ¶8: Explicit pentadic patterning (“fives… another five”) and cosmic architecture (‘building’, ‘places’, ‘supporting’) are core schematic markers.
-- ¶9: Doctrinal number-work (twelve + two) and personified cosmological hypostases (summons/obedience) within a schematic count; no NT citation formula despite ‘advent’ language.
-- ¶10: Begins the ‘advent’ sequence with a didactic narrative/simile framework explaining cosmic events through a human scenario—still teaching-mechanics, not institutional paraenesis.
-- ¶11: Explicit simile-to-cosmic referent mapping (“Just as… so also…”) is a core correspondential teaching vehicle.
-- ¶12: Structural comparison within the sequence of advents; cosmic officials and process-language (“commandment… came upon rulers”).
-- ¶13: Extended judicial simile mapping cosmic ‘judgement’ mechanics; no institutional rule or NT citation. Violence imagery functions as explanatory rhetoric inside the teaching layer.
-- ¶14: Continues the simile apparatus (judge + assistants) as part of the explanatory model; not ecclesial ‘assistants’ but agents within the figure.
-- ¶15: Classic correspondential pivot (“Now, just as… this is also the case…”) but applied to cosmic kings/rulers; no editorial seam into church matters.
-- ¶16: Process description of cosmic binding/partitioning; ‘Sin’ is personified as an active power-set (capitalized) within cosmological mechanics—core.
-- ¶17: Didactic address plus systematic ‘first judgement’ and explicit correspondence formula (“corresponding to…”), still within cosmological jurisprudence.
-- ¶18: Eschatological mechanics (dissolution, great fire, separation, destinies of Light/Darkness) in impersonal explanatory voice—core.
-- ¶19: Begins next ‘advent’ in the five-advent sequence; simile (‘great king inspecting’) used to explain cosmic function.
-- ¶20: Continuation of the inspection simile; no ecclesial referent; explanatory narrative serves cosmological exposition.
-- ¶21: Strong core markers: patterned cosmic architecture (above/below, outside/within), named beings, and ‘just as… so also…’ mapping.
-- ¶22: Intra-cosmic speech scene without Kephalaia dialogue attribution formula; continues correspondence/judgement logic inside cosmological narrative.
-- ¶23: Agricultural/fire simile for Jesus the Splendour’s cosmic function; no Gospel citation formula, so not an NT entry vector despite ‘trees’ imagery.
-- ¶24: Continues the same simile as explanatory teaching; ‘tree of life’ here functions inside the allegory without explicit NT anchoring.
-- ¶25: Cosmogonic/anthropogonic reach (Adam and Eve) is integrated into the advent-mechanics; no explicit NT episode or citation. ‘Good news’ is generic and not tied to Gospel text here.
-- ¶26: Highly technical soteriological-cosmic mechanics (mixing with elements, silence, great fire, Last Statue, purification/separation) in impersonal expository mode—core.
-- ¶27: Eschatological ascent-mechanics tied to a defined cosmic entity (Last Statue) and its limbs; process-oriented teaching voice.
-- ¶28: Didactic simile explaining the extraction/purification mechanism of summons/obedience; classic core pedagogical analogy.
-- ¶29: Returns from simile to doctrinal restatement (advent of counsel; gathering light into a body/image); eschatological process language—core.
-- ¶30: Beatitude/exhortation (“Blessed is every one who will believe…”) shifts from cosmological mechanics to moral-religious encouragement and promise of salvation; typical paraenetic closure rather than schematic teaching.
+- ¶1: Begins with a formulaic hagiographic/dialogue frame; the embedded clause is a terse cosmological thesis that can stand as the start of the core pentadic teaching.
+- ¶2: Impersonal, systematic cosmological definition of the first term in a pentad; entirely cosmos→cosmos.
+- ¶3: Number-structure bookkeeping (four/ten/twelve) in expository voice; characteristic of the systematic substrate.
+- ¶4: Emanational taxonomy with named cosmic beings and a pentad (five sons); no audience address or institutional reach.
+- ¶5: Continuing the formal pentadic listing; internal correspondential register (names/functions) without external application.
+- ¶6: Systematic fourth member of the pentad; purely cosmological enumeration.
+- ¶7: Jesus the Splendour appears as a defined cosmic greatness within an emanational series (not a Gospel citation), matching core taxonomic style despite later doctrinal development concerns.
+- ¶8: Explicit pentadic correspondential structure (multiple ‘fives’) describing cosmic architecture; substrate hallmark.
+- ¶9: Numerical cosmological accounting extended to ‘summons’ and ‘obedience’ as cosmic hypostases; still cosmos→cosmos (no church/institution mapping).
+- ¶10: Didactic simile used to convey cosmic process; although it borrows worldly imagery, it functions as internal explanatory mapping rather than contemporary polemic or exhortation.
+- ¶11: Explicitly anchors the simile to cosmic actors (‘rulers’ as enemies of the light); explanatory, not applicatory.
+- ¶12: Comparative cosmological mechanics across emanations (‘advents’); still impersonal and structural.
+- ¶13: Extended process-description of cosmic judgment via a juridical simile; no institutional ‘pointing at’—the simile remains a vehicle for cosmic function.
+- ¶14: Still within the simile’s cosmological referents (the judge’s assistants as powers); lacks pastoral imperatives to the reader-community.
+- ¶15: Clear cosmos→cosmos mapping (King of the lights vs King of the realms of Darkness; Living Spirit rescuing First Man) in explanatory style.
+- ¶16: Systematic punitive placement of cosmic rulers; ‘Sin’ functions as a personified cosmic force (powers/agents), consistent with core cosmology.
+- ¶17: Core judicial/correspondential mechanics (‘corresponding to’) are present, but the opening directly addresses the hearer, marking a later homiletic layer woven into the teaching.
+- ¶18: Eschatological cosmic mechanics (dissolution, separation of substances) in impersonal voice; internal to the system.
+- ¶19: Begins another cosmological ‘advent’ with an explanatory simile; still cosmos→cosmos.
+- ¶20: Continuation of inspection simile; no institutional target, functions to describe the Ambassador’s cosmic role.
+- ¶21: Highly systematic cosmic architecture (fortifications, rulers, above/below, angels) and explicit internal hierarchy; classic substrate exposition.
+- ¶22: Intra-cosmic dialogue and correspondential evaluation (‘correspondingly’) embedded in the mythic mechanism; no NT citation formula and no institutional application.
+- ¶23: Agricultural ‘bad trees/good fruit’ imagery strongly aligns with Gospel/Christian parable register and functions as a Jesus-saying style simile; likely entered through Christianizing tradition rather than the oldest substrate.
+- ¶24: ‘Tree of life’ + good fruit shifts into biblical-Edenic imagery; part of the same Christianizing parabolic block.
+- ¶25: Explicit move into Adam-and-Eve/‘good news’/‘saviour’ narrative-historical register (cosmos→biblical human history), indicating Christian synthesis overlay rather than impersonal cosmological substrate.
+- ¶26: Returns to impersonal cosmic mechanics (mixture with elements, end-time separation, Last Statue). Minor explanatory aside (‘You will also find’) does not redirect to institutions; overall system-internal process teaching.
+- ¶27: Eschatological ascent mechanism described structurally (statue/limbs/ascent); fully internal.
+- ¶28: Classic correspondential substrate simile for mixture/separation: sensory-material mapping (butter/milk/taste/clarification) used to describe cosmic extraction without external ‘pointing at’.
+- ¶29: System-internal eschatological consolidation (gathering Light/lives into a body/image); impersonal expository voice.
+- ¶30: Concluding beatitude/exhortation aimed at believers (‘Blessed is every one who will believe… be saved…’); shifts from describing cosmic mechanism to urging/assuring the audience.
 
 ---
 
 ## Chapter 17
 ### The Chapter of the Three Seasons
 
-*Core teaching dominates: a systematic three-season cosmological chronology (descent/struggle of the First Man; construction of the ordered universe; redemption from the Ambassador’s epiphany to the Statue’s ascent). Later compilation frame appears in the opening and in the disciples’ question/answer apparatus (¶1, ¶7, ¶9). No NT/Gospel citation language is present; “Jesus was sent” functions as a Manichaean cosmological actor within the redemptive timeline, not as a Gospel-derivative quotation.*
+*This chapter is overwhelmingly a systematic cosmological time-division (three seasons) anchored in the First Man–Living Spirit–universe-ordering–Ambassador/Statue sequence. The only clear late layer is the dialogue/hagiographic container (“apostle…disciples…says”), which intermittently frames otherwise impersonal teaching; there is no NT citation vector and no institutional (church) application graft.*
 
 From the time when the light came forth and was crucified in the darkness, to the season when the Statue will ascend and the entire light, which was conjoined with the darkness, will be purified and cleansed. From that time on, from that time to the season of the end totals three seasons.
 
@@ -810,7 +776,9 @@ Now, from the time when the Ambassador displayed his image until the season when
 
 [...] lasts long in the time that the First Man spent in the world of darkness. It is a very great count of time, more than the (other) two seasons!
 
-[He replies to them]: If you should say that [... ...] it is small, if you should [... ...] to him [...] and you consult [...] you will tell him: Twenty times! It is greater again in this other one that you will consult: Thirty times! Less also is this other one [... ...] people will receive the {} of the trees [... ...] the years and the generations [...] earth to the heights. This is [...
+The first season, which the First Man spent in the world of darkness, is how much longer than the time that this universe has been? While it is established?
+
+If you should say that [... ...] it is small, if you should [... ...] to him [...] and you consult [...] you will tell him: Twenty times! It is greater again in this other one that you will consult: Thirty times! Less also is this other one [... ...] people will receive the {} of the trees [... ...] the years and the generations [...] earth to the heights. This is [...
 
 This is the third period, from the time when the Ambassador revealed his image until the Statue will ascend from the lump. It again, that time, is greater than the intermediate; but it does not come equal to the time of the First Man. For this intermediate season, in which the Father of Life and the Mother of Life constructed the universe with its orders, is shorter than that of the First Man.
 
@@ -819,26 +787,28 @@ Great is the period of the First Man! It lasts longer than the season in which t
 These are the [...] three periods of time that occur. ⟨p.58⟩
 
 **Temporal observations:**
-- ¶1: Frame marker “Once again the apostle…” indicates editorial wrapping; the rest is impersonal, programmatic cosmological periodization (Light crucified in Darkness; Statue’s ascent; purification), typical of the teaching core.
-- ¶2: Impersonal cosmological narration with named beings (First Man, King of Darkness) and process language (descent, war, binding powers, long duration) fits the old systematic mythic chronology; no institutional or citation apparatus.
-- ¶3: Systematic demarcation of ‘first period’ by cosmological events and actors (Living Spirit/Father of Life) is classic core structuring.
-- ¶4: Ordered-universe construction by named Light beings, with explicit ‘second season’ rubric: systematic cosmological exposition (core).
-- ¶5: Dense mythic-cosmological mechanics (separation of beauty/light vs. waste; abyss/heights; Ambassador’s image; anthropogony) indicates core. “Sin” acts as an agent (spurted up, came, sculpted), hence capitalized. “Jesus was sent” appears as a cosmological mission-event within the periodization, without Gospel citation formula, so not NT-overlay.
-- ¶6: Explicit ‘third season’ boundary statement, impersonal and structural; continuous with the core three-season schema.
-- ¶7: Pure dialogue scaffolding (“Then the disciples asked the apostle…”) with lacunae; this is compilation frame, not teaching.
-- ¶8: Answer content is core (comparative temporal magnitude within the three-season system), but it is introduced by a dialogue tag typical of the hagiographic frame.
-- ¶9: Question formula (“His disciples say to him…”) is frame; even though it references the teaching topic, it is not itself the old expository layer.
-- ¶10: Despite lacunae, the content is technical/comparative measurement of periods (twenty times, thirty times; years/generations), consistent with core chronological teaching. The bracketed “He replies” is not the stereotyped ‘apostle says’ formula and functions as minimal narration within the teaching flow; no institutional or NT citation markers.
-- ¶11: Systematic comparative chronology (third vs. intermediate vs. First Man’s period) with named cosmic agents and cosmic construction language: core.
-- ¶12: Expository, non-citation emphasis on relative durations and cosmic endpoints (dissolution; Statue’s ascent) stays within the core three-season framework.
-- ¶13: Formal summary closure of the three-period schema; not a praise/benediction, so it reads as core schematic conclusion rather than hagiographic ending.
+- ¶1: Cosmic time-span definition (light’s crucifixion in darkness → Statue’s ascent) is system-internal and expository (core), but embedded in explicit apostle-to-disciples speech frame (late).
+- ¶2: System-internal mythic-cosmological narration (First Man’s descent/war/victory) with no citation, no institutional application, and no dialogue frame markers.
+- ¶3: Impersonal structuring (“This is the first period…”) plus named cosmological hypostases (Living Spirit/Father of Life) marks the teaching core.
+- ¶4: Systematic second-period definition tied to cosmic agents and universe-ordering; no church/institution reach-out.
+- ¶5: Continuous internal cosmological sequence (Ambassador’s image, ascent mechanics, Sin as an active cosmic force, Adam/Eve fabrication, “Jesus” as a functional saviour-being within the myth) without Gospel/NT citation formula; thus not an NT-overlay entry vector.
+- ¶6: Impersonal temporal delimitation completing the three-season schema; purely system-internal.
+- ¶7: Pure dialogue apparatus (“disciples asked the apostle…”) with no teaching content recoverable from the extant wording (lacunae).
+- ¶8: Teaching content is comparative temporal measurement (system-internal); late layer is the apostle-speech wrapper.
+- ¶9: Substantive technical question about relative cosmic durations (core inquiry), but carried in the disciples→apostle Q&A frame.
+- ¶10: Uses second-person rhetorical comparison (“if you should…”) but remains an internal attempt to quantify cosmic periods; no institutional/pastoral application or NT citation vector.
+- ¶11: Explicit three-period structuring and internal comparison of durations; impersonal, system-expository voice.
+- ¶12: Summative comparative cosmological chronology; no frame, no exhortation, no cross-system identification.
+- ¶13: Closing summary of the completed internal schema; functions as a terse teaching conclusion rather than a hagiographic doxology.
 
 ---
 
 ## Chapter 18
 ### [Concerning the Five] War[s that the] Sons of [Li]ght waged with the Sons] of Darkness.
 
-*Core material dominates: a numbered five-fold cosmological sequence of “wars” by major Light divinities (First Man → Living Spirit → Third Ambassador → Jesus the glorious one → counsel of life). Paragraph 1 is a dialogue-attribution frame. Paragraph 2 ends with an explicit Gospel-saying citation (“As the saviour has said… axe… tree”), so that paragraph is MIXED (core narrative + Christian overlay tag). Paragraphs 8–9 shift into generic moral/praise language about “the elect” and “good vs wicked,” consistent with later pastoral/editorial closure (also matching the chapter’s strong second-half pastoral drift signal).*
+*The chapter is largely a compact, systematic cosmological sequence: five successive "wars" enacted by key Manichaean divinities (First Man, Living Spirit, Third Ambassador, Jesus the glorious one, Counsel of Life). Later layers appear as (a) a dialogue attribution at the start, (b) a Gospel-based prooftext embedded in War 1 (Mt 3:10), and (c) an editorial/pastoral closing that blesses the elect (with a likely preceding gnomic gloss). Editorial fatigue is visible at the end where the rhetoric shifts from cosmic history to community application.*
+
+The sons of Light waged five wars against the sons of Darkness. The sons of Light humiliated the sons of Darkness in them all.
 
 The first war is that of the First living Man, which he waged against the King of the realms of Darkness, and all the rulers that had come forth from the five worlds of [...]. He hunted them with his net, which is the living soul. He [...] in the snare and [...] the face of the [...] his virgin, the living fire [...] they did not find how to escape his net [...] he caught them like fish [...] the five counsels of the five elements [...]. He cut and dug out the root of the five trees, [...] root of the evil tree, like an axe.
 
@@ -848,38 +818,41 @@ The third war is that of the Third Ambassador who has displayed his image [...] 
 
 This is what the ruling-power is like [...], all riches [...] as they travel [...] light [...]. He cleansed and purified it.
 
-The fourth war is this that Jesus the glorious one waged against all the rebels who had rebelled above and below. When the light was purified from them by the image of the Third Ambassador, their chains loosened [...]. The glorious one in the fourth war; he came and brought [...] a rebellion of the entire ruling-power. He girded himself [...] all of it another time. He constructed the whole structure and he made [...] a great contest; he humiliated therein. [...] he fulfilled the will of the greatness, [he gave the] hope to Adam [...] to his light ship.
+The fourth war is this that Jesus the glorious one waged against all the rebels who had rebelled above and below. When the light was purified from them by the image of the Third Ambassador, their chains loosened [...]. The glorious one in the fourth war; he came and brought [...] a rebellion of the entire ruling-power. He girded himself [...] all of it another time. He constructed the whole structure and he made [...] a great contest; he humiliated therein. [...] he fulfilled the will of the Greatness, [he gave the] hope to Adam [...] to his light ship.
 
-The fifth war is this that the counsel of life [...] which is the summons and the obedience [...] great [...] and it placed [...] upon the [...] and the [...] ⟨p.60⟩ [...] of death, which [...] with it. And it was victorious over [...] for ever, and it gave the kingdom [...].
+The fifth war is this that the counsel of life [...] which is the summons and the obedience [...] great [...] and it placed [...] upon the [...] and the [...] ⟨p.60⟩ [...] of death, which [...] with it. And it was victorious over [...] for ever, and it gave the kingdom [...]
 
 **Temporal observations:**
-- ¶1: Opens with dialogue attribution (“Then the enlightener speaks”), a classic hagiographic/editorial frame marker wrapping the teaching topic.
-- ¶2: Core markers: systematic ‘first war’ cosmological combat; named beings (First living Man; King of Darkness); five-fold structure (five worlds/elements/counsels). Late overlay marker: explicit ‘As the saviour has said…’ citation of the axe/tree saying.
-- ¶3: Impersonal process exposition of cosmic mechanics (construction; chaining rulers; placement in stars/earths/three vessels) with no citation formula—typical core teaching register.
-- ¶4: Numbered cosmological sequence continues with a major Manichaean divinity (Third Ambassador) and the technical motif of displaying the Image to extract Light—core expository style (despite lacunae).
-- ¶5: Appears to be the continuation/explanation (parable-like simile) of the Third Ambassador episode; still cosmological mechanism (‘cleansed and purified it’) rather than institutional exhortation or citation.
-- ¶6: ‘Jesus the glorious one’ functions here as a cosmological actor in the sequence (not as a Gospel-cited teacher), integrated into the Light–Dark mechanics and Adam’s awakening—consistent with core Manichaean cosmology rather than NT overlay.
-- ¶7: Completes the five-fold sequence with an abstract cosmic agency (‘counsel of life’, ‘summons and obedience’) and eschatological victory language; still structural/cosmological rather than ecclesial regulation.
-- ¶8: Generic moral maxim (‘the good… victorious over the wicked… for ever and ever’) with no cosmological mechanism; reads as an editorial/pastoral closing tag.
-- ¶9: Beatitude for ‘every elect one’ and imitation of the five wars—explicit community category (‘elect’) and paraenetic closure; consistent with later institutional/editorial application of the cosmological teaching.
+- ¶1: Initial dialogue attribution is a classic hagiographic/compilation wrapper; the remaining sentence is a programmatic cosmological heading that stays entirely within the cosmic conflict schema (Light vs Darkness).
+- ¶2: Core substrate features: cosmological combat narrative plus internal correspondential identifications ("net" = living soul; fivefold structure: five worlds/elements/trees). The final sentence shifts to an explicit Gospel-derived saying introduced by a saviour-citation formula, marking later overlay.
+- ¶3: Impersonal, system-descriptive cosmological mechanics (construction, chaining, vessels) with no institutional or citation reach; the voice is expository and mythic-processual, typical of the older teaching layer.
+- ¶4: Cosmic action remains within the system (Third Ambassador/image/light extraction). The concluding illustrative vignette functions as an internal parabolic analogy without Gospel citation, consistent with substrate-style exemplification.
+- ¶5: Continuation of the internal analogy applying to "ruling-power" and the purification of light; no audience-address, no institutional mapping, no citation markers.
+- ¶6: Jesus appears as a defined cosmological actor integrated into the Manichaean myth-cycle (not a Gospel citation). The paragraph stays cosmos→cosmos (rebels, chains, structure, Adam/light ship), with no NT quotation or institutional application.
+- ¶7: Eschatological-cosmological closure (Counsel of Life; Summons/Obedience; victory over Death) expressed as system narrative rather than exhortation or church discipline.
+- ¶8: A short, generalized maxim (good vs wicked, forever) functions as a gloss-like moralizing closure; given the chapter’s end-weighted editorial drift and the immediate move to an elect-beatitude in ¶9, this reads as late concluding rhetoric rather than necessary mythic mechanism.
+- ¶9: Direct application to the community category "elect" via a beatitude/blessing form; this is institutional/pastoral voice rather than impersonal cosmological exposition.
 
 ---
 
 ## Chapter 19
 ### Concerning the Five Releases: what they are
 
-*Core teaching dominates in ¶2–¶9, presenting a five-fold, numbered soteriological/cosmological sequence (five releases) with named Manichaean cosmic beings and impersonal process description. ¶1 is a hagiographic/dialogue attribution introducing the teaching. ¶12 is a later institutional/eschatological-pastoral expansion centered on “apostles,” commandment-sealing, judgment, and end-season rhetoric (fits the chapter’s editorial-fatigue signal). ¶6 contains a genuine core cosmological account of Jesus the Splendour but includes a likely later institutional insertion (“all the churches”), so it is treated as MIXED with that phrase removed.*
+*This chapter is largely a systematic, numbered cosmological exposition of five "releases" (redemptive extractions of Light) tied to major cosmic agents (First Man, Living Spirit, Third Ambassador, Jesus the Splendour, Great Counsel/Summons-and-Obedience). Later hands appear mainly as (a) brief dialogue/frame attribution at the start, (b) a Christian/institutional inflection inside the Jesus-the-Splendour section ("churches", possible Phil 2 allusion to "form of flesh"), (c) an apostolic/commandment institutionalization in the eschatological paragraph, and (d) a concluding beatitude-style exhortation.*
 
-[The first loo]sening and saving is that of [the] First Man, since when the First M[a]n was freed fro[m the prison of] the rulers by the Living Spirit, who had come [... ...] of the First Man, much light and [much] power was saved from the entire ruling-power. They ascended with the First Man to the aeons [of] greatn[ess]. This [is the first] release.
+⟨p.60⟩
+[There are] five [releases by] which the Light is saved f[rom] all [the rulers and] powers of Darkness!
 
-The second saving is that of the Liv[ing] Spirit, since whe[n] the Father of Life and [the] Mother of [Li]fe constructed [the ... ...] and [w]orlds [... wo]rlds, the earths and their [rulers; im]measurable light was saved f[r]om them [... the First] Man, who w[a]s devoured [...] lig[ht ...
+[The first loo]sening and saving is that of [the] First Man, since when the First M[a]n was freed fro[m the prison of] the rulers by the Living Spirit, who had come [... ...] of the First Man, much Light and [much] power was saved from the entire ruling-power. They ascended with the First Man to the aeons [of] greatn[ess]. This [is the first] release.
+
+The second saving is that of the Liv[ing] Spirit, since whe[n] the Father of Life and [the] Mother of [Li]fe constructed [the ... ...] and [w]orlds [... wo]rlds, the earths and their [rulers; im]measurable Light was saved f[r]om them [... the First] Man, who w[a]s devoured [...] lig[ht ...
 
 ⟨p.61⟩
 ... ... th]ree wars [... ...] to the time when he [... ...] above [...] them upon the [... ...] universe.
 
 [The third red]emption is that of the Thi[rd Ambassador ... he] displayed [his image ...] he [... ... the r]uling-power; he [... ... ... ...] from them [... ...] So this is [how] the [...] his image that [...] in the Th[ir]d Ambassador.
 
-[Th]e fourth s[av]ing is that of Jesus the Splendour, since whe[n he was] re[ve]aled in the zone he displayed [his im]age in front of the firmaments and purified [the light] that is above. He established the first righteous o[ne ...] . He took the likeness [...] he made himself like the angels in [...] un[til] he travelled and descended to the form of flesh. He set in order [t]he earths and all the fastenings. He also loosen[ed ...] light without measure in the entire structure. He gave [the] summons and the obedience to the elements, he formed [J]esus the Youth. He as[ce]n[d]ed and rested himself in the light [land].
+[Th]e fourth s[av]ing is that of Jesus the Splendour, since whe[n he was] re[ve]aled in the zone he displayed [his im]age in front of the firmaments and purified [the Light] that is above. He set in order [t]he earths and all the fastenings. He also loosen[ed ...] Light without measure in the entire structure. He gave [the] summons and the obedience to the elements, he formed [J]esus the Youth. He as[ce]n[d]ed and rested himself in the Light [land].
 
 The fifth release and saving is that of the great counsel, w[hich is the s]umm[ons an]d the obedience, since it also [...] the soul from the [land] of greatness.
 
@@ -887,36 +860,38 @@ The fifth release and saving is that of the great counsel, w[hich is the s]umm[o
 [...] the Living Spirit [...] as he gave [...] the release [... ...]
 The first [... ... he] ascended and he [... ...] as he [... ...] wisdom [... ...]
 The fourth [... ...] its wisdom [...]
-And also, the fifth [... ...] into it, and it sets it in order [...] its light image in this Last Statue.
+And also, the fifth [... ...] into it, and it sets it in order [...] its Light image in this Last Statue.
 
 These five grea[t] powe[rs ...] were revealed. They came to a profit [... ...] they were established upon [... ...] First Man [...] when he came to/ward [...] from the struggle. He set in order and constructed [...] universe [... ...] the First M[an ...] his advent.
 
 In [t]his way [...] they st[an]d with [...]
 
 ⟨p.63⟩
-... because of the light [th]at had rushed from [... ...] the Amba[s]sa[d]or.
+... because of the Light [th]at had rushed from [... ...] the Amba[s]sa[d]or.
+
+The counse[l] of life, which is the [s]ummons and the obedience, will make [... ...] In this last season they [... the] life of the S[t]at[ue and] he judges the sou[ls ... he] can send [... ...] powers, they [...] from the [... ...] it is alive [...] of the will [of the ...] Father, the establ[ished one ...] powerful; they g[o ...] enemy, they [...] all of them [...] conquer this land that they have [... ...] in it for ever [... ... t]hey came fr[om h]im in the beginning, as t[hey will r]eturn again to the Light. They [as]cend to him at the la[st].
 
 **Temporal observations:**
-- ¶1: Dialogue/frame attribution (“Once again our father speaks”) is a compilation wrapper; introduces the topic rather than expounding mechanics.
-- ¶2: Numbered degree structure (“first…release”) + classic cosmological agents (First Man, Living Spirit, rulers) in impersonal process voice.
-- ¶3: Second item in a systematic five-fold scheme; Persian-substrate cosmological pair (Father of Life/Mother of Life) and world-construction/saving mechanics.
-- ¶4: Though fragmentary, it continues cosmological war/process narration (likely linking releases to wars); no frame/citation/institutional markers.
-- ¶5: Third item in numbered series; key cosmological figure (Third Ambassador) and technical motif of displaying the Image to effect release.
-- ¶6: Core cosmological Jesus-the-Splendour profile (zone/firmaments, purification, ordering fastenings, summons/obedience, Jesus the Youth). The explicit institutional term “churches” is a register intrusion best explained as later editorial overlay within the paragraph.
-- ¶7: Completes the numbered five-fold release list; technical Manichaean mechanism (“summons and the obedience”) in structural style.
-- ¶8: Recap/structural enumeration across the releases (first/fourth/fifth) with technical cosmological terms (Living Spirit; Last Statue) rather than institutional exhortation.
-- ¶9: Summative cosmological synthesis tying the five powers to revelation, profit, struggle, and construction/ordering of the universe; impersonal explanatory voice.
-- ¶10: Very brief but functions like a structural closure sentence within the cosmological explanation; no frame/pastoral markers.
-- ¶11: Fragment continues cosmological causation language (light rushing; Ambassador/Third Ambassador motif) consistent with the core sequence.
-- ¶12: Institutional/communal rhetoric (“apostles,” sealing commandment), end-season/judgment exhortation and moralized conquest language; reads like a later ecclesial-eschatological expansion rather than the older five-fold cosmological schema.
-- ¶13: Beatitude/exhortation (“Blessed is every person… understand these mysteries”) functions as a devotional/moral closing rather than impersonal cosmological exposition.
+- ¶1: The content is a bare, impersonal thesis introducing a numbered cosmological set (old teaching style), but it is introduced by a formulaic speaker-attribution typical of the later compiled dialogue frame.
+- ¶2: Systematic first item in a numbered soteriological mechanism; entirely cosmos→cosmos (entities, prison, ascent to aeons), with impersonal explanatory voice.
+- ¶3: Continues the numbered cosmological sequence (second saving) with purely internal cosmological actors and world-construction language; no citation or exhortation.
+- ¶4: Highly lacunose but still framed as cosmic process/chronology (wars, elevation "above" them, universe). Classified core with uncertainty due to fragmentary state.
+- ¶5: Third item in the numbered list, using classic Manichaean cosmological machinery (Third Ambassador, image-display as redemptive technique), staying within the cosmic system.
+- ¶6: Base layer is cosmic exposition of Jesus the Splendour as a defined redemptive agent (zone/firmaments/elements/Light-land). The sudden reference to "churches" and the "form of flesh" descent reads as later overlay/application that points beyond cosmos→cosmos description and aligns with NT/Pauline imagery noted in the apparatus (Phil 2).
+- ¶7: Final item in the fivefold system; defines a cosmic function (Great Counsel = Summons/Obedience) operating on the soul in relation to the Land of Greatness—still internal, impersonal mechanism.
+- ¶8: Fragmentary recap/coordination of the releases with functional predicates (ascent, wisdom, ordering) and the Last Statue—still a closed cosmological register.
+- ¶9: Despite an elevated application-voice score, the extant wording remains cosmic-historical (revelation of powers, First Man, struggle, construction/order of the universe) with no explicit audience address or institutional target.
+- ¶10: Too short/lacunose for strong diagnostics; treated as core connective within the ongoing cosmological exposition (no institutional anchoring present).
+- ¶11: Cosmic causation language centered on Light and the (Third) Ambassador; no frame/citation/exhortation markers.
+- ¶12: Core layer is eschatological mechanics (Counsel/Summons-Obedience, Last season, Statue judging souls, return/ascent to Light) within the cosmic system. The explicit appeal to "apostles" and "commandment" is a later institutionalization signal.
+- ¶13: Beatitude-style exhortation addressed to "every person" who understands; shifts from describing cosmic structures to moral/audience-facing encouragement—typical pastoral/application closure.
 
 ---
 
 ## Chapter 20
 ### The Chapter of the Name of the Fathers
 
-*After a brief dialogue frame (¶1–2), the chapter consists of a compact, systematic definitional mapping of who may be called “father” and what “his greatness” is (cosmic realm/vehicle where he is established). No pastoral drift is present. ¶5 names Jesus the Splendour as a cosmological being in the same structural series, so it is treated as core rather than NT overlay (no Gospel citation or NT narrative entry vector).*
+*The chapter is a short framed Q&A. The core layer is a tight, systematic correspondential definition of why certain cosmic beings are called “father”: each is designated ‘father’ by virtue of possessing a specific ‘greatness’ (a realm/vehicle) in which he is established. No pastoral/application drift is present; the only clear later material is the dialogue frame in ¶¶1–2 and the attribution clause at the head of ¶3.*
 
 Now, the Father, who is the first established thing, shall be called ‘the Father of Greatness’. His greatness is the great earth where he lives, he being established in it [...] the essence of the light that swathes all the rich gods and the angels and the dwellings [...] is set over it.
 
@@ -925,18 +900,18 @@ Furthermore, they shall call the Third Ambassador ‘father’. His greatness is
 Once again, Jesus the Splendour shall himself also be called ‘father’. His greatness is the ship of living waters where he lives, he being established in it.
 
 **Temporal observations:**
-- ¶1: Formulaic opening attribution (“Once again the enlightener speaks…”) introducing a Q&A setup; hagiographic container language rather than teaching.
-- ¶2: Disciple petition formula (“We beseech you, our master…”) is classic Kephalaia dialogue apparatus.
-- ¶3: Impersonal, cosmological definition using a fixed explanatory pattern (“X shall be called… His greatness is… wherein he lives, being established in it”), plus primordial status (“first established thing”). The only late element is the speech-attribution wrapper.
-- ¶4: Systematic continuation of the definitional mapping to a named cosmological entity (Third Ambassador) with realm/vehicle correspondence; no citation or institutional language.
-- ¶5: Same core mapping syntax applied to Jesus the Splendour as a cosmological figure; no Gospel/NT citation formula or narrative exemplum, so this appears as internal Manichaean cosmology rather than NT-derived overlay.
+- ¶1: Formulaic hagiographic opening (“Once again the enlightener speaks to his disciples”) introducing a question; functions as editorial container rather than teaching.
+- ¶2: Disciples’ petition formula (“We beseech you, our master…”) is characteristic dialogue frame material.
+- ¶3: Core cosmological exposition: defines the title by an internal cosmos→cosmos mapping (being → ‘greatness’ as a realm/place of establishment; hierarchy of gods/angels/dwellings). The impersonal, structural voice begins after the attribution.
+- ¶4: Systematic continuation of the same inner-cosmic mapping: named cosmic being → title ‘father’ → defined ‘greatness’ as a specific cosmic vehicle/realm (light ship of living fire). No institutional pointing.
+- ¶5: Despite the Christian name, the paragraph functions as the same cosmological taxonomy (Jesus the Splendour as a defined cosmic entity, not a Gospel citation): being → title → ‘greatness’ as ship/realm; no NT quotation formula or narrative exemplum.
 
 ---
 
 ## Chapter 21
 ### [C]oncerning the Father of Gr[eat]ness: [ho]w he is established and determined.
 
-*After a brief hagiographic dialogue frame (¶1), the chapter is dominated by systematic, impersonal cosmological exposition: the Father of Greatness established in five light limbs/storehouses and twelve light limbs/wisdoms, followed by a numbered five-fold sequence. No NT citation or institutional extension appears in the preserved text; the chapter-level fatigue flag is not borne out here (no pastoral vocabulary in second half).*
+*This chapter is overwhelmingly systematic cosmological-correspondential teaching: a structured exposition of the Father of Greatness as established in five Light limbs (also called storehouses) and twelve Light limbs (twelve wisdoms). Apart from the opening dialogue-attribution, the voice stays impersonal and intra-cosmic (cosmos→cosmos mappings) with no institutional or Gospel overlay.*
 
 Very great is [land of] light in the presence of they who will hear and know it, due to the first Father of Greatness. How he ex[ists and is] established in his five light limbs, which are [ ... the store]houses that have neither limit nor measure to the[m ... ] mind, thought, insight, counsel and [consideration ... ] his twelve light limbs that are his twelve wisdoms.
 
@@ -953,26 +928,23 @@ The fourth is his [ ... ]-ness [ ... ] gushes forth from him [ ... o]ut [ ... ]
 ⟨p.65⟩ The fif[th] is his great glorio[us ... ] that [ ... , w]hich [has been ma]nifested all the tim[e], whi[ch contin]ues [ ... ] all of them. It was sculpted in them [ ... ] sealed in the [m ... ] sealed [ ... ] as they send [ ... ] in [ ... ... ] they too receive nourishment [ ... ] immediately [ ... his] living voi[ce ... ] joy [ ... ] set up anew. It shall gush forth from it [ ... ] they shall [ ... ] and become rich in the [ ... ] too is beautiful [ ... ] portray[al ... ] adornment [ ... ] and they live [ ... ... ] for ev[e]r.
 
 **Temporal observations:**
-- ¶1: Dialogue-attribution frame: 'Once again the apostle [speaks] to h[is d]isciples' is a compilation wrapper (Layer 2).
-- ¶2: Systematic cosmological-correspondential mapping (five limbs/storehouses ↔ intellectual faculties; twelve limbs ↔ twelve wisdoms) in an impersonal expository voice; no citation formula.
-- ¶3: Numbered five-fold structure continues (limbs/springs/praise), characteristic of the older systematic layer despite lacunae.
-- ¶4: First item of a formal five-part list; cosmological process language ('gushed forth', 'poured') rather than exhortation or narrative.
-- ¶5: Second item in the same five-fold sequence; impersonal, descriptive cosmology.
-- ¶6: Third item in the five-fold sequence; 'living voice' as a cosmic quality/emanation in schematic listing.
-- ¶7: Fourth item continues the emanational mechanics ('gushes forth'); no frame or ecclesial markers.
-- ¶8: Fifth element elaborated with process/mechanics (manifested, sealed, nourishment, joy, renewal) applied to aeonic beings; still within the numbered schematic exposition and free of later citation/pastoral registers.
+- ¶1: Dialogue/hagiographic attribution (“Once again the apostle... to his disciples”) + imperative address; functions as editorial container rather than teaching substance.
+- ¶2: Systematic degree-structure (five limbs/storehouses; twelve limbs/wisdoms) describing what the Father/Light realm IS, not applying it to any contemporary institution; impersonal expository voice.
+- ¶3: Continues the fivefold correspondential structure (limbs ↔ springs of praise), remaining within the cosmological system; no frame formulas or application voice.
+- ¶4: Numbered limb exposition (“The first...”) in a process/mechanics register (gushed forth/poured), mapping the Father’s quality to cosmic effects (aeons).
+- ¶5: Correspondential register (perfume as a divine limb/quality) described as pervading aeons; purely intra-cosmic mapping.
+- ¶6: Third limb identified as “living voice,” a standard Manichaean cosmological quality; still definitional and system-internal.
+- ¶7: Fourth limb continues the numbered fivefold schema with emanation language (“gushes forth”); no institutional or paraenetic turn.
+- ¶8: Extended description of the fifth limb as an immanent glory/manifestation, using intra-cosmic production/inscription imagery (sculpted, sealed, nourishment, joy, renewal) without pivoting to church practice or polemic; despite lacunae, the register remains systematic and cosmological.
 
 ---
 
 ## Chapter 22
 ### [On] the Land of Light
 
-*Highly lacunose but consistently expository/cosmological with no dialogue frame, institutional material, or NT citation. The surviving phrases describe structural features of the Land of Light (five-fold elements, living ambrosia/air, aeons dwelling) in an impersonal teaching voice; final beatitude is also non-NT and functions as a sapiential closure rather than a Gospel citation.*
+*Despite heavy lacunae, the chapter is dominated by impersonal cosmological description of the Land of Light (aeons, living air, gifts of the Father, fivefold structures). There is no NT citation and no institutional/pastoral drift; only a probable editorial cross-reference (¶2) and a closing beatitude-like line (¶9).*
 
-⟨p.65⟩
-[ ... / ... ] the Land of Light.
-
-[ ... ] in the great land of greatness [ ... a]s I will reveal to you [ ... ] above.
+[ ... ] in the great land of greatness [ ... ]
 
 [ ... f]ace is [ ... / ... ] living [ ... / fr]om [ ... / ... ] upon him.
 
@@ -986,36 +958,36 @@ These ar[e ... ] which [ ... / ... ]
 
 The [ ... ]-th [ ... ] great light, the living air [ ... / ... ] in which the aeons of greatness dwell, being established therein. [ ... / ... ang]el[s] that [ ... ] and the [ ... / ... ] the gi[fts] of the great Father [ ... / ... ] in the [ ... ]
 
-Blessed is whoever will k[now ... / ... ]
-
 **Temporal observations:**
-- ¶1: Titular/incipit fragment naming the cosmic realm; no frame formula or citation markers.
-- ¶2: Impersonal revelatory/expository voice about the realm of Greatness; lacks hagiographic Q&A or Mani-titles.
-- ¶3: Cosmological description ("face", "living") in non-institutional register; too fragmentary for finer dating but fits core descriptive mode.
-- ¶4: Systematic five-fold structure ("five ..." repeated) with 'living ambrosia'/'living air' cosmological substances; characteristic core mapping/exposition.
-- ¶5: Continues the five-fold complex and relates it to 'limbs of their body' (body-cosmos correspondence typical of the older teaching layer).
-- ¶6: Cosmic emanation/derivation ('came from the Father') extended to features of the Land of Light (mountains/springs/trees); no institutional/pastoral application.
-- ¶7: Bridging fragment likely continuing the cosmological description; no markers of later layers, but extremely lacunose.
-- ¶8: Enumerative structure ('-th'), 'great light', 'living air', 'aeons of greatness' dwelling—classic core cosmological geography and hierarchy.
-- ¶9: Sapiential beatitude-like closure without Gospel citation formula; functions as internal exhortation appended to cosmological teaching rather than NT overlay.
+- ¶1: Looks like a chapter heading/incipit marker (page marker + title phrase), not teaching exposition.
+- ¶2: Contains a core cosmological locus-name (“great land of greatness”) but also a self-referential editorial link (“reveal… above”), suggesting a teaching fragment embedded in a compiler’s connective.
+- ¶3: Even though very fragmentary, the surviving correspondential register (“face… living… upon him”) reads like internal cosmic description rather than audience-facing application.
+- ¶4: Systematic, internal cosmological-correspondential description (face/light; explicit fivefold structuring; “living ambrosia,” “living air”) with no institutional reference—characteristic of the substrate teaching voice.
+- ¶5: Fivefold entities treated as cosmic components with body/limb correspondence; remains within the system (Land of Light) rather than applying outward to community or ethics.
+- ¶6: Cosmos→cosmos generative pattern (“came from the Father… so also… mountains… springs… trees”) describing ontological derivation inside the Light realm; no contemporary ‘pointing at’.
+- ¶7: Too lacunose to characterize strongly, but functions like a connective within an ongoing cosmological list rather than frame or exhortation.
+- ¶8: Explicit internal architecture of the Light realm (great light/living air/aeons/angels/gifts of the Father) in an expository mode—classic core substrate cosmology.
+- ¶9: Beatitude-style evaluative line (“Blessed is whoever will know…”) shifts from describing what the cosmos IS to praising/urging the knower; not hagiographic frame or NT citation, but an application-like closure.
 
 ---
 
 ## Chapter 23
 ### [ ... ] which [ ... ]
 
-*Despite lacunae and a brief compilation-style transition (¶5) plus a minimal episodic opener (¶1), the chapter is overwhelmingly systematic cosmogonic narration in Manichaean cosmological idiom (Darkness/Death, five dark elements, abyss/storehouses, Father of Greatness, First Man, five garments/sons). No NT citations or pastoral/institutional grafts appear; no seam flags are present.*
+*This chapter is overwhelmingly the cosmological war-myth teaching layer: Darkness/Death stirs, generates the five elemental worlds and bestial powers, then the Father of Greatness responds by emanational strategy culminating in the First Man clothing himself in his five sons/garments. Later editorial material is limited to brief framing/address formulas and a single explicit institutional marker (“apostle[s]”) within an otherwise core paragraph.*
+
+[ ... ] essence in [ ... ] is the land of [ ... ⟨p.67⟩ ... ] and [ ... ] their last.
 
 What the essence of [ ... ]—no person could recount or unveil [or say how it] exists [ ... for ever ... ]—all [ ... ] and [ ... ] unveil [ ... ] [ ... ] eternity [ ... ] great [ ... ] again and the [ ... ] tend [ ... ] the beginning of eternity and the end [ ... ] set that one down.
 
-Now, my [ ... ] the land of death [ ... ... ] nature of the essence [ ... ... ] which exists [ ... for e]ver and ever [ ... ] in [ ... ] with one another.
+the land of Death [ ... ... ] nature of the essence [ ... ... ] which exists [ ... for e]ver and ever [ ... ] in [ ... ] with one another.
 
-As for the eternity of [ ... ... ] which exists from ever, no person is able to [understand] how they exist. For no other power [is manifes]ted to them, in that it might speak or recount about their origin, how [they e]xist. However, from the time when it stirred itself and rose up against the light [ ... ... ] it might come and rule over the land of the living.
+As for the eternity of [ ... ... ] which exists from ever, no person is able to [understand] how they exist. For no other power [is manifes]ted to them, in that it might speak or recount about their origin, how [they e]xist. However, from the time when it stirred itself and rose up against the Light [ ... ... ] it might come and rule over the land of the living.
 
 ⟨p.70⟩
-[The Fi]rst Man came forth against it and prevented it, [he kept] it apart from the house of the living. He prevented it. From that time, when the light was mixed with [the] darkness, and life [wi]th death, there was a measure of approval and an ability for [the] first-born [and the a]postle[s] to teach about it. They speak and unveil how the reproach and the fight did hap[pen], [how] the light [was] entwined with the darkness, which they [ ... ] life in death.
+[The Fi]rst Man came forth against it and prevented it, [he kept] it apart from the house of the living. He prevented it. From that time, when the Light was mixed with [the] darkness, and Life [wi]th Death, they speak and unveil how the reproach and the fight did hap[pen], [how] the Light [was] entwined with the darkness, which they [ ... ] Life in Death.
 
-[ ... after it] stirred itself in its essence, its th[ought ... ] in its own land. It [ ... ... ] the entire land of darkness in its [ ... ... ] of light in the abyss. For ⟨p.68⟩ [ ... ] essence in [i]t [ ... ... ] because a [ ... ] they reckoned [ ... ... ] on its side [ ... ] this first nature [ ... ] it, because its body is made strong [ ... more] than the Adamant [ ... ] every [ ... ] as it exists [in the univer]se.
+[ ... after it] stirred itself in its essence, its th[ought ... ] in its own land. It [ ... ... ] the entire land of darkness in its [ ... ... ] of Light in the abyss. For ⟨p.68⟩ [ ... ] essence in [i]t [ ... ... ] because a [ ... ] they reckoned [ ... ... ] on its side [ ... ] this first nature [ ... ] it, because its body is made strong [ ... more] than the Adamant [ ... ] every [ ... ] as it exists [in the univer]se.
 
 [ ... ] of death [ ... ... ] envy, which [ ... ] the land of [darkness ... consi]deration in [ ... ] wickedness [ ... ] for as it [ ... ] the wounds [ ... ] against this land [ ... ]
 
@@ -1023,9 +995,9 @@ Then he will run [ ... f]rom the land [ ... ] darkness. It drew [ ... ] his memb
 
 [ ... ] every [ ... ] It spread itself out. It generated itself [of the five dark elements]; which [are] smoke, fire, wind, water and darkness. [ ... ... ] sprouted trees. It came up [ ... ... ] it formed its own self in the [ ... ] it generated its own self with its birth [in] numerous [emana]tions, not resembling each other; [in] the storehouses of its abyss, many [dark] creatures [ ... ] destroyers and dragons and evil beasts. It was established and [ ... ] and grew strong [ ... ] in the ugly forms of those in the darkness [ ... ] dark, and by the [ ... ] impetuosity, by their wickedness and hatred they slaughter [ ... ] each other as they war with one another.
 
-Then the counsel of their ruler humbled its world and its powers. It sensed the essence of the [light ... ... ] It conspired to wage a war [ ... ] with the exalted kingdom and the [ ... ]
+Then the counsel of their ruler humbled its world and its powers. It sensed the essence of the [Light ... ... ] It conspired to wage a war [ ... ] with the exalted kingdom and the [ ... ]
 
-However, he, the Father of Great[ness ... ⟨p.69⟩ ... ] it also knew [ ... ] war, to disturb the [land of] light [ ... ] in the wisdom of his [ ... ]-ness [ ... ] he transformed himself against it [ ... ... ] against it.
+However, he, the Father of Great[ness ... ⟨p.69⟩ ... ] it also knew [ ... ] war, to disturb the [land of] Light [ ... ] in the wisdom of his [ ... ]-ness [ ... ] he transformed himself against it [ ... ... ] against it.
 
 Indeed, at that time [ ... ... ... ] go against [ ... ] God [ ... ]
 
@@ -1038,29 +1010,29 @@ And at the time when it generated its own self [f]rom the fruits through its off
 At that very moment the First Man approached his garments, the gods [who sh]ine forth. He spoke with them, that he might entrust to them a [ ... ] he [reve]aled to them and taught them about everything that [ ... ... ] them. He assumed them. He arranged them [ ... ... ] He draped them over one another upon his limbs [ ... ⟨p.70⟩ ... ] danger, it [ ... ... ] the heights of the earth [ ... ... ] with all its powers [ ... beg]inning, it being immeasurable [ ... ... ]
 
 **Temporal observations:**
-- ¶1: Episodic bridge opener (“Once again it happened…as I have told you”) functions as a redactional/hagiographic reset rather than impersonal exposition; too fragmentary to recover an underlying core statement.
-- ¶2: Impersonal apophatic cosmology about the (unknowable) mode of existence of eternal realities; no dialogue attribution, no institutional vocabulary, no citation formula.
-- ¶3: Cosmic geography (“land of death”) and eternalist register (“for ever and ever”) in a descriptive voice; the surviving text is cosmological rather than editorial.
-- ¶4: Programmatic cosmological limitation (no prior revealer) followed by a temporal marker (“from the time when it stirred…against the light”) launching the war narrative; impersonal explanatory style is core.
-- ¶5: Core content (First Man preventing intrusion; mixture of light/darkness, life/death) is old; however, ‘apostle[s]’ and the metadiscursive claim about who is permitted to teach about it suggest later compilation framing interwoven into the line.
-- ¶6: Mechanistic cosmogonic description (stirring in essence/thought; abyss; ‘first nature’; bodily hardness ‘more than the Adamant’) in impersonal explanatory voice.
-- ¶7: Personified-vice/force language (Death-world; envy; aggression) functioning as cosmological agency rather than moral exhortation; no ecclesial or citation markers.
-- ¶8: Fragmentary but still within the war/flight sequence involving Darkness and ‘members’ (somatic/cosmic imagery), not a frame formula.
-- ¶9: Highly diagnostic core cosmogony: explicit five dark elements list; ‘storehouses of its abyss’; generative/emanational mechanics; bestial/demonic taxonomy; impersonal descriptive voice.
-- ¶10: Cosmic polity vocabulary (ruler, world, powers, counsel) and onset of assault on Light; narrative remains within mythic-cosmological register.
-- ¶11: Named Persian substrate entity (“Father of Greatness”) acting within cosmic strategy; impersonal mythic narration, no hagiographic dialogue wrapper preserved.
-- ¶12: Too lacunose for confident diagnostics, but it sits inside the same cosmogonic sequence and shows no frame/pastoral/NT markers in what survives.
-- ¶13: Reiterated five-element scheme and ‘great depth’/trees imagery: systematic cosmological mechanics characteristic of the core teaching layer.
-- ¶14: Core mythic mechanism tying ‘fruits’/generation to the ‘five garments’ explicitly identified as the sons of the First Man; systematic fivefold structure.
-- ¶15: Process description of demonic/archontic consolidation and preparation for war; still cosmological (elements, ruler of demons, ‘great King’), not institutional.
-- ¶16: Core war-preparation motif: First Man ‘assumes’/‘drapes’ the shining gods/garments upon his limbs (systematic body/armour imagery) in the mythic register; no dialogue-attribution formula present to strip.
+- ¶1: A short cosmological identification survives, but it is embedded in a chapter-transition frame (“Once again…”) and second-person recollection (“as I have told you”), both characteristic of the editorial presentation layer.
+- ¶2: Impersonal doctrinal limit-statement (“no person could recount… how it exists… for ever”) fits the older teaching voice describing the eternal principles without hagiographic Q&A or institutional application.
+- ¶3: Core cosmological content (Land of Death; eternal natures existing together) is preceded by direct address, a common editorial/performative wrapper.
+- ¶4: Classic core move: unknowability of the two eternals, then the narratable beginning of conflict (“from the time when it stirred…”). No citations, no ecclesial application.
+- ¶5: The war/mixure account with the First Man is core; the intrusion of “apostle[s]” is a clear later compilation/institution marker that does not belong to the substrate.
+- ¶6: Substrate cosmogenesis in impersonal narrative: the stirring in its own land, abyssal perception of Light, and a correspondential-quality description (“body … stronger … than the Adamant”).
+- ¶7: Darkness/Death passions (envy) and aggression toward the opposing land remain wholly within the cosmic conflict register; no institutional polemic or exhortation appears.
+- ¶8: Despite lacunae, the language stays in mythic action and body/member imagery (cosmic ruler with members), consistent with the older war narrative.
+- ¶9: Highly diagnostic core substrate: five-element structure (smoke/fire/wind/water/darkness), abyss/storehouses, emanational multiplication, and bestial power-taxonomy—all cosmos→cosmos description.
+- ¶10: Mythic decision/counsel of the dark ruler and the perception of Light leading to war—core conflict mechanics without later application.
+- ¶11: Named Iranian-Manichaean deity (Father of Greatness) acting with foreknowledge/wisdom in the cosmic economy is a strong core indicator; no hagiographic praise-frame surrounds it here.
+- ¶12: Too fragmentary for fine stratification, but it reads as a continuation of the cosmological response sequence (no Gospel/NT entry markers; no pastoral address).
+- ¶13: Core elemental deployment (five elements listed again) and depth/trees imagery: a systematic cosmological mechanism rather than institutional application.
+- ¶14: Key substrate motif: ‘fruits’/generation within the dark growth immediately answered by the five garments/sons of the First Man—still entirely within the cosmic dramatis personae.
+- ¶15: Emanational-biology (offspring nourished by elements) and the consolidation of demonic powers under a ruler are core war-architecture statements; no later moralizing pivot occurs.
+- ¶16: Classic core “garment/armour” doctrine: the First Man assumes the five shining gods/sons and drapes them upon his limbs in preparation for combat—cosmic body-degree imagery without institutional or NT overlay.
 
 ---
 
 ## Chapter 24
 ### [... / ...]
 
-*Despite the synopsis’ notice of compositeness, the preserved chapter text is overwhelmingly an impersonal, systematic exposition about measuring durations in the two eternities, the emanation sequence of the divine beings, and the parallel evil ‘emanation’ from Matter. There is minimal hagiographic/NT overlay. The main later layer present is the Kephalaia dialogue/institutional register around ‘apostles/teachers/disciples/chosen’; these occur chiefly in ¶17–18 and ¶30–32 and function as editorial framing of what can be spoken. No clear NT citation formula appears. Paragraph 14 is cosmological and includes Jesus the Splendour as a named cosmic being (core), though one clause (‘to enable them to reveal him’) sounds like a secondary explanatory gloss; I leave it in core since the paragraph otherwise reads as a single emanation-list unit rather than an institutional seam.*
+*Dominated by systematic cosmological time/eternity teaching: immeasurable durations of emanation (Great Spirit, Mother of Life, First Man, five sons), parallel durations of Matter’s uprising, and an eschatological sixfold schema (including the Last Statue and chaining). Later meta-institutional reflection about what “apostles/teachers” can or cannot speak (¶17–19, ¶30–32) appears to be a compilational/editorial layer. Several paragraphs retain minor second-person/teaching-address phrases that look like later delivery/frame residues but do not change the underlying cosmological mechanics (treated as MIXED).*
 
 [...] a great ju[d/ge ...] now also a ti[me ...] that they sculpt[ed ...] he was revealed in the Father, the first established thing.
 
@@ -1074,13 +1046,13 @@ He first sculpted her like this. He established her in his inner storehouses in 
 
 Once again, from the time when she was called to [...] go to [...] she gave [...] upon his [bod]y [...] all the aeons [...]; she also [...] all of them. This [is also the case] with the First Man.
 
-This is how the Man spent a long time being anointed in the Mother, set fast in her inner storehouses [...]; the extent of time that I have recounted to you—from when the First Man went down to the contest, till the time when the [Statue (?) co]mes i[n ...] this time [...] he appeared [...]
+This is how the Man spent a long time being anointed in the Mother, set fast in her inner storehouses [...]; the extent of time —from when the First Man went down to the contest, till the time when the [Statue (?) co]mes i[n ...] this time [...] he appeared [...]
 
 Again, from when he was called and came forth, till the time when he [himse]lf called the five shining [gods] who are his sons; they themselves also spent a long time existing in their father! It is the time that occurred from the coming down of the First Man till the going up of the Last Statue. The five gods spent this much duration being anointed in the First Man. Yet, [at the] time when they were awaited, they were called and came forth.
 
-Listen also to this, how I would teach you it. At the time when the Mother of Life was called from the Father of Greatness, when she expelled herself and came down by her own wish, from the heights of the Father to the earth, [she would spend thousands of] years and many ten thousands until she reached the earth. [Fo]r there is no measure nor rule to the heights of the Father. Rather, [just as] he had called her in his Great Spirit, so he set her upon [the] land of greatness through one of these three that are counted to the twelve hidden ones within the light veil, the ones [esta]blished after the [...] region of the south.
+At the time when the Mother of Life was called from the Father of Greatness, when she expelled herself and came down by her own wish, from the heights of the Father to the earth, [she would spend thousands of] years and many ten thousands until she reached the earth. [Fo]r there is no measure nor rule to the heights of the Father. Rather, [just as] he had called her in his Great Spirit, so he set her upon [the] land of greatness through one of these three that are counted to the twelve hidden ones within the light veil, the ones [esta]blished after the [...] region of the south.
 
-[The] matter of the Mother [of L]ife is like this. When [the Father called her he established her in the place he pleased,] to establish her there as the instruction of the people that [...] many [...]; and she examined everywhere that [...] a blink of an eye, or like a [...] bird [...]
+[The] matter of the Mother [of L]ife is like this. When [the Father called her he established her in the place he pleased,] and she examined everywhere that [...] a blink of an eye, or like a [...] bird [...]
 
 This also is lik[e ... the] Mother of Life in [...] whenever [...] cast her out [...] upon her to the place [...] him. He perfected her in his Great Spirit and set her in [the place he pl]eased, according to [his will].
 
@@ -1090,17 +1062,17 @@ Again, he too, the First Man, spent a long period and [time] until he gave power
 
 Whenever the Father of Greatn[e]ss called the Great Spirit and the First Man and the gods of the glorious one, who are provided to enable them to reveal him; at that very time [he] sculpted the Great Builder in the [land of] light, [and] the Living Spirit with the mighty and active gods who came [from] him. Also, at that time, he sculpted the [Amb]assador, with Jesus the Splendour and the Virgin of Light and the Pillar of Glory, and the gods who came from them. [All these the Father of Greatness sculpted at] a single time. They came forth of one another, one after one; the time when [...] and the work.
 
-[...] from the time when the darkness raised itself up to [...] essence of the light [...] these three emanations [...] from the will of the Father against the enemy [...] darkness [...] according to the will [...] the universe [...] separate out [...] and he rejoices [...] in his kingdom; until [the time when the face] of the Father will be unveiled over [all] the gods of glory, and all the rich ones of [...] the em[anations] who came forth against the enemy.
+[...] to recount it to you [...] from the time when the Darkness raised itself up to [...] essence of the light [...] these three emanations [...] from the will of the Father against the enemy [...] he has [...] Darkness [...] according to the will [...] the universe [...] in it [...] separate out [...] rest him in which way, and he rejoices [...] in his kingdom; until [the time when the face] of the Father will be unveiled over [all] the gods of glory, and all the rich ones of [...] the em[anations] who came forth against the enemy.
 
 [From] that time when he sculpted these three [...] till the time when the Father would unveil his face, [and they] go in to his hidden storehouses, and he calls them [...] establishes each one of them to his place. There is no measure nor rule to this period until that time.
 
-... he gives [...] about this Matter, this thought of death [...] which I have told you; for [this] is the way that [...] came up to its storehouses. It has [...] in its five elements.
+... about this Matter, this thought of death [...] for [this] is the way that [...] came up to its storehouses. It has [...] in its five elements.
 
 Again, it also [...] the period and the time that it spent, until it revealed itself to its elements, before it came to the trees. It spent a great period and a long time established [...] before it came up to the trees. It was [...] in the trees. It spent a long time and duration [...] existing in them, before it sculpted the fru[its ...] and sculpted the fruits.
 
 Again, it spent a long [time] in the fruits. Not little is the period and the time that it spent existing in the fruits, before it sculpted [...] after a long time [...] the d[emon]s of its five worlds in various forms [can not (?) ] be measured [...] in p[erfec]tion of the fruits in the demons and fiends. They fell upon their earth and [...] were nourished. Not little is the period that they [spent in the wo]rlds, until they were nourished amongst [...] to make [...] that land which shines, and the great [King] who dwells there.
 
-[You] know that [...] that in [...] at the time when he [...] its essence. It assumed [...] Matter [...] to the war [...] the Perfect Man. [From the time] when the war occurred [...]
+... at the time when he [...] its essence. It assumed [...] Matter [...] to the war [...] the Perfect Man. [From the time] when the war occurred [...]
 
 [The first is ...] he came to be in some [...] when they ensnared a [...]
 
@@ -1115,61 +1087,61 @@ The third is the [...] the things and the universe will [...] from the time when
 Now, from [the tim]e when this first war occurred, till the time of this chain [...] these five things [...] light.
 
 **Temporal observations:**
-- ¶1: Impersonal cosmological-temporal statement; no citation, no institutional vocabulary. Fragmentary but fits the ‘measurement/time’ topic.
-- ¶2: Emanation vocabulary (‘called’, ‘Mother of Life’, ‘first Father’) in expository mode; no frame formula.
-- ¶3: Classic analogical-measure illustration (counting grains/pebbles/firmaments; four mountains/three vessels) in impersonal voice—core scientific-cosmological rhetoric.
-- ¶4: Continues the measurement analogy to assert immeasurability of the Great Spirit’s duration in the Father—core temporal doctrine.
-- ¶5: Process description of sculpting/establishing/calling a hypostasis (Mother of Life implied) with ‘storehouses’—systematic emanation mechanics.
-- ¶6: Emanation sequence continuation; ‘Once again’ functions as internal didactic connector, not hagiographic frame.
-- ¶7: Cosmic chronology anchored by ‘First Man’ descent and ‘Last Statue’ (restoration uncertain). No institutional seam; ‘I have recounted’ is didactic, not Kephalaia dialogue frame.
-- ¶8: Numbered/structured teaching (five shining gods/sons) with temporal intervals; systematic cosmological account—core.
-- ¶9: Cosmic geography/administration (‘three… counted to the twelve hidden ones’, ‘light veil’, ‘region of the south’) and immeasurability theme—strong core substrate markers.
-- ¶10: Comparative illustration (‘blink of an eye’, ‘bird’) within emanation/placement discourse. Slightly obscured by lacunae; still reads as cosmological explanation rather than institution-rule.
-- ¶11: Continues emanation/placement mechanics (‘perfected’, ‘Great Spirit’, ‘according to his will’) in impersonal style—core.
-- ¶12: Ritualized cosmological action (five gods; ordering/distributing; binding/silence; border of earth). Structural ‘how they called’ exposition—core.
-- ¶13: Highly characteristic core: temporal measurement by natural correspondences (raindrops/dew/mist) plus ‘between the borders’ cosmological stationing.
-- ¶14: Systematic emanation-list of named beings (Great Builder/Living Spirit/Third Ambassador/Jesus the Splendour/Virgin of Light/Pillar of Glory). No NT citation; Jesus is a cosmic hypostasis, so core. One explanatory clause may be secondary but not separable with confidence.
-- ¶15: Underlying core is a cosmological-history arc (Darkness rising; three emanations; final unveiling). The surviving ‘to recount it to you’ sounds like later pedagogical/editorial phrasing; rest is impersonal cosmic chronology.
-- ¶16: Impersonal temporal-span statement (‘no measure nor rule’) tied to cosmic ‘storehouses’ and final ordering—core doctrinal style.
-- ¶17: Institutional/hagiographic compilation register: ‘teachers… saviours… apostles of greatness’ and meta-discussion of what apostles can proclaim (speech-permission logic), not cosmological mechanism.
-- ¶18: Continues the meta-epistemic/authority discourse (‘apostles and teachers… speak and reveal’) about eternal end; reads as editorial framing of discourse limits rather than the old substrate.
-- ¶19: Question/introduction fragment (‘If a person shall ask…’) functioning as a discourse hook; not stable cosmological exposition.
-- ¶20: Core content: Matter, death-thought, storehouses, five elements (systematic evil-side cosmology). The surrounding ‘who asks… disciples’ is compilation discourse management.
-- ¶21: Process description of evil/Matter’s development through elements→trees→fruits with duration emphasis; impersonal mechanism—core.
-- ¶22: Parallel ‘emanation’/formation sequence for evil side (five worlds; demons/fiends; nourishment; shining land; great King) with duration theme—core cosmological mechanics.
-- ¶23: Fragmentary but still cosmological war-frame (Matter; war; Perfect Man) rather than institutional regulation.
-- ¶24: Begins a numbered list (‘The first…’) of doctrinal points; too lacunose to specify, but genre suggests core schematic enumeration.
-- ¶25: Numbered schematic cosmology (building/establishing/dissolution) in impersonal voice—core.
-- ¶26: Continues numbered eschatological-temporal outline; no institutional terms—core.
-- ¶27: Eschatological mechanism with specific duration (1468 years) characteristic of technical cosmological teaching.
-- ¶28: Standard Manichaean eschatology (Last Statue; separation of Light; chaining of Darkness) in procedural form—core.
-- ¶29: Summative temporal bracket tying the five numbered items to ‘first war’ and ‘chain’; connective ‘Now’ here is internal summary, not an institutional seam.
-- ¶30: Returns to compilation/institutional authority register (‘apostles and the chosen and the teachers’) about what can be recounted; meta-discourse, not mechanism.
-- ¶31: Fragmentary continuation of speech-permission topic (‘No person is able…’) attached to chaining; reads as editorial coda rather than core exposition.
-- ¶32: Explicit institutional actors (‘the apostle and the teacher’) and assertion about eternal chaining; compilation register.
+- ¶1: Fragmentary but stays within the cosmic system (“revealed in the Father,” “first established thing”); no institutional mapping or citation formula visible.
+- ¶2: Cosmological emanation vocabulary (summonses, Mother of Life, Father) and duration language; no editorial address beyond lacunae.
+- ¶3: Impersonal correspondential measuring analogy (particles/pebbles/mountains/vessels/firmaments) used to contrast measurable cosmos with immeasurable divine duration; internal cosmos→cosmos mapping.
+- ¶4: Core contrast between measurable created quantities and immeasurable pre-temporal duration in the Father; no institutional application.
+- ¶5: Systematic emanation mechanics (storehouses, calling/forth-coming, aeons of light) in impersonal expository voice.
+- ¶6: Iterative process description (Mother of Life / First Man parallel) characteristic of substrate teaching sequences.
+- ¶7: Underlying content is cosmic chronology (descent to contest; Last Statue horizon) but includes a first-person teaching aside that likely entered with oral/compilational framing.
+- ¶8: Classic core substrate: structured temporal spans tied to emanation sequence (First Man → five sons) and eschatological termini (Last Statue).
+- ¶9: Cosmological geography and measurement teaching (no measure to heights; twelve hidden ones; light veil; south region) is substrate-like; the removed clause is a later didactic wrapper.
+- ¶10: Core here is the cosmic action/locomotion comparison (blink of an eye/bird-like swiftness). The excised segment is the only explicit reach toward ‘people’ as audience-in-world.
+- ¶11: Emanation/establishment language (“perfected,” “set,” “according to will,” “Great Spirit”) remains entirely within divine-cosmic process.
+- ¶12: Cosmic ordering/degree language (calling, setting, ruling, distributing, binding; border of the earth) in systematic exposition.
+- ¶13: Core correspondential measurement (raindrops/dew/mist as measure) tied to First Man’s empowerment/assumption of sons; impersonal mechanics despite vivid imagery.
+- ¶14: Systematic catalog of emanations and their simultaneity; “Jesus the Splendour” is a named cosmological being here (not a Gospel citation), fitting the core hierarchy exposition.
+- ¶15: Despite lacunae and a residual “to recount it to you,” the paragraph is chiefly a cosmic timeline from the uprising of Darkness to final unveiling; no institutional referents.
+- ¶16: Impersonal duration statement and restoration-to-storehouses mechanics; characteristic of the substrate’s time/eternity contrast.
+- ¶17: Meta-discourse about “teachers… saviours… apostles of greatness” and what they can proclaim; institutional vocabulary (“apostle”) indicates compilational/editorial framing rather than the oldest cosmological substrate.
+- ¶18: Continues the same meta-authority theme (apostles/teachers speaking limits) regarding the eternal end; institutional register rather than pure system description.
+- ¶19: Fragmentary question setup (“If a person shall ask…”) suggests Q/A or editorial prompting rather than core exposition.
+- ¶20: Core substrate content is the structural account of Matter’s development and five-element constitution; the opening reads like an editor’s pedagogical setup.
+- ¶21: Parallel to the Light-side emanation durations: a stepwise temporal process for Matter (elements → trees → fruits), still cosmos→cosmos within Manichaean system.
+- ¶22: Core evil-emanation mechanics: Matter’s maturation culminating in demons of five worlds; the imagery remains a process account rather than institutional polemic.
+- ¶23: Underlying content is a cosmological war sequence (Matter vs Perfect Man) consistent with core mythic mechanics; the address marker is later wrapper.
+- ¶24: Begins a numbered schematic (sixfold list) typical of core structural teaching, though heavily lacunose.
+- ¶25: Continues schematic temporal stages (establishment → dissolution) in impersonal cosmic register.
+- ¶26: Another stage in the temporal schema; purely cosmological.
+- ¶27: Eschatological mechanics with specific duration; still system-internal (cosmic fire and dissolution), not institutional application.
+- ¶28: Classic core end-time mechanism (Last Statue; separation of Light; chaining of Darkness). Capitalized Darkness as a personified cosmic power.
+- ¶29: Summative temporal span linking primordial war to final chaining; remains cosmological summary.
+- ¶30: Reintroduces institutional authorities (“apostles and the chosen and the teachers”) as the ones who can speak; this is meta-commentary on proclamation rather than core system description.
+- ¶31: Fragment continues the ‘no person is able…’ meta-speech about the eternal chaining; likely part of the same editorial reflection on who can speak.
+- ¶32: Explicit “the apostle and the teacher” language marks compilational layer; not the oldest impersonal substrate voice.
 
 ---
 
 ## Chapter 25
 ### Concerning the Advent of Five Fathers from the Five Limbs of the Father
 
-*A brief chapter with a clear hagiographic/dialogue incipit followed by a compact five-fold systematic cosmological mapping (mind/thought/insight/counsel/consideration → five named beings). No pastoral drift; the core teaching dominates once the frame incipit is removed.*
+*The chapter is a brief core fivefold emanation/mapping (five Fathers from five inner faculties/“limbs” of the Father), wrapped only by a minimal dialogue-attribution opening. No pastoral/institutional extension and no NT citation overlay are present.*
 
 The [Ambas]sador [came] from his mind; the Beloved of the Lights [from his thought]; the Mother of Life from his insight; [Jesus] the Beloved from his counsel; the Virgin of Lig[ht f]rom his consideration.
 
 So in this way were summone[d these five] fathers. These five advents came from the five limbs [of the Father]. One came from another and was manifested in its season.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic/dialogue attribution (“Once again… the apostle speaks… he speaks thus”) is a compilation frame marker; not part of the oldest teaching layer.
-- ¶2: Systematic five-fold degree/correlation mapping using named cosmological beings in impersonal expository style; no citation formulae or institutional vocabulary. “Jesus” appears as a defined cosmological entity (not a Gospel citation), fitting the core cosmology.
-- ¶3: Continues and closes the structured five-fold advent schema (“five… from the five limbs… manifested in its season”), characteristic of the oldest systematic teaching voice.
+- ¶1: Formulaic hagiographic/dialogue frame: “Once again the apostle speaks … He speaks thus:” The term “apostle” and the speech-introduction are compilation apparatus, not the older substrate.
+- ¶2: Systematic fivefold correspondential mapping entirely within the cosmic system: divine faculty/limb → emanated hypostasis. No address to an audience, no institutional targets, and no citation formula. “Jesus the Beloved” functions here as a named cosmological being within the emanation sequence, not as a Gospel entry-vector.
+- ¶3: Impersonal, process-oriented closure of the fivefold structure (summoning/advent, sequence, manifestation “in its season”), staying cosmos→cosmos with no editorial application pivot.
 
 ---
 
 ## Chapter 26
 ### Concerning the First Man and the Ambassador and the Ship; what they resemble.
 
-*A string of similes about redemption of Light beings (First Man, Living Spirit, Great Spirit in the ship, Ambassador). ¶1 contains a clear dialogue/frame attribution that must be stripped; ¶6 is a late hortatory address to disciples (pastoral frame, not cosmological mechanism). The rest reads like compact mythic correspondential teaching (simile chain) without citation formulas.*
+*This kephalaion is largely a string of redemption-similes (First Man, ship of day/Great Spirit, Living Spirit, Ambassador). The main late material is the dialogue-attribution opening in ¶1 and the final direct exhortation to the disciples in ¶6 (application/pastoral voice).*
 
 The First [Man] is like a great distinguished man whose treasure has been taken away from him. He came to pursue his treasure. This is how the [First] Man too came after his sons from the heights, so that he might redeem them and retrieve his treasure, which had been scattered amongst his enemies.
 
@@ -1182,26 +1154,27 @@ Once again, the Living Spirit is like a combatant who might go towards a king's 
 [The Amba]ssador too is like a great man [ ... ] because of the treasure [ ... ] hand of his prisoners [ ... ] these light powers [ ... ... the] sons and their soul, so that they would [ ... ... (the soul) might] be brought forth in the land wherein it was imprisoned.
 
 **Temporal observations:**
-- ¶1: The simile about the First Man pursuing stolen treasure reads as impersonal mythic exposition (core), but the introductory speech formula is a later Kephalaia frame marker and must be stripped.
-- ¶2: Systematic mythic explanation using First Man + sons/living soul + powers in a quasi-numbered configuration; no Gospel/NT citation and no institutional directives.
-- ¶3: Cosmic geography/entity mapping (ship of the day; Great Spirit enthroned/working within it) expressed as simile with functional description (beautify/set aright), characteristic of core cosmological mechanics.
-- ¶4: Direct mythic function of the Living Spirit as redeemer in a war-capture simile; impersonal, non-institutional, no citation formula.
-- ¶5: Despite lacunae, the content is the Third Ambassador’s redemptive role over 'light powers' and imprisoned soul—standard cosmological soteriology, not church instruction or NT overlay.
-- ¶6: Direct exhortation addressed to 'disciples' with moral/institutional aim ('you must be purifiers... counted to the company of the fathers of light... new aeon'). Begins with a dialogue turn; this is a late hortatory graft rather than impersonal cosmological exposition.
+- ¶1: The simile itself is teaching about the First Man’s descent/redemption (cosmic beings and soteriological mechanics), but the explicit speaker-attribution is later Kephalaia frame.
+- ¶2: Cosmological exposition framed as a simile; no institutional/present-day application, and the content stays within the Manichaean redemption system (First Man, living soul, powers). Some uncertainty remains because the parable style may reflect Mani’s pedagogical redaction rather than the oldest schematic substrate.
+- ¶3: Cosmic-entity mapping (ship of day; Great Spirit) with correspondential simile language; no exhortation/citation/institutional anchoring.
+- ¶4: Impersonal teaching via simile describing a redemption function (Living Spirit as redeemer) within the cosmic drama; no late ecclesial application markers.
+- ¶5: Soteriological mechanics centered on the Ambassador and the extraction of the soul/light from imprisonment; despite lacunae, it remains cosmological and non-institutional.
+- ¶6: Direct second-person exhortation (“You yourselves must…”) addressed to disciples, aiming at purification and future reward; this is application/pastoral voice rather than impersonal cosmological exposition, and fits the chapter’s end-weighted editorial drift.
 
 ---
 
 ## Chapter 27
 ### Concerning the Five Forms that exist in the Rulers of Darkness.
 
-*The chapter opens with a clear hagiographic/dialogue frame attribution, but the dominant body of the chapter (¶2–11) is systematic, impersonal exposition mapping the ruler’s body-forms and capacities to the five dark worlds—typical of the old cosmological teaching layer. The final two paragraphs (¶12–13) shift into direct exhortation to ‘my beloved ones’ with moral/communal protection language, indicating a later pastoral application appended after the descriptive teaching sequence.*
+*This chapter is predominantly a systematic, correspondential cosmology: a five-form body-map for the Ruler of Darkness keyed to the five dark worlds, followed by two triads of additional faculties/qualities. The final two paragraphs pivot into direct exhortation (“my beloved ones… hold yourselves secure…”) consistent with editorial application/fatigue in the second half.*
 
-Consider the ruler, the leader of all the powers of Darkness. Now, five forms exist in his body, corresponding to (the archetype) of the five creations that exist in the five worlds of Darkness.
+⟨p.77⟩
+Consider the ruler, the leader of all the powers of darkness. Now, five forms exist in his body, corresponding to (the archetype) of the five creations that exist in the five worlds of darkness.
 
-Indeed, his head is lion-faced, which came about from the world of fire. His wings and his shoulders are eagle-faced, after the likeness of the children of the wind. His hands and his feet are daemons, after the likeness of the children of the world of smoke. His belly is dragon-faced, after the likeness of the world of Darkness. His tail is the form of the fish, which belongs to the world of the children of water. These five shapes are in him, and they came from the five creations of the five worlds of Darkness.
+Indeed, his head is lion-faced, which came about from the world of fire. His wings and his shoulders are eagle-faced, after the likeness of the children of the wind. His hands and his feet are daemons, after the likeness of the children of the world of smoke. His belly is dragon-faced, after the likeness of the world of darkness. His tail is the form of the fish, which belongs to the world of the children of water. These five shapes are in him, and they came from the five creations of the five worlds of darkness.
 
 ⟨p.78⟩
-Should he wish, he shall walk on his two feet [ ... ] world of smoke. Also, when he wants, he shall [ ... ] four [ ... ] on his hands and feet [ ... ] like the children of fire. Should he wish, he shall rise up on his wings, like the children of the wind. Also, should he wish, he shall plunge down to the waters like the children of water. Again, should he wish, he shall crawl on his belly like the children of Darkness. These five shapes are in him.
+Should he wish, he shall walk on his two feet [ ... ] world of smoke. Also, when he wants, he shall [ ... ] four [ ... ] on his hands and feet [ ... ] like the children of fire. Should he wish, he shall rise up on his wings, like the children of the wind. Also, should he wish, he shall plunge down to the waters like the children of water. Again, should he wish, he shall crawl on his belly like the children of darkness. These five shapes are in him.
 
 Also, there are three other (qualities) in him.
 
@@ -1220,26 +1193,26 @@ Also, when he wishes, he shall send out frost, and his entire body freezes like 
 The third: Whenever his powers are stood before him, he shall look at them and understand; for [whatever ex]ists in their heart he shall understand, what is in their heart and their face so long as they are stood before him. When they retreat before him and distance themselves from him, he shall not understand what is in their heart. There is no life in him whatsoever, but his 'life' is the bile of anger that is apparent on his face and in his fear. Shall a [ ... ] destruction that is establ[ished be]fore him.
 
 **Temporal observations:**
-- ¶1: Core teaching begins with an impersonal correspondential claim (five forms ↔ five creations/five worlds). But the paragraph is introduced by a classic Kephalaia sitting/teaching scene with ‘apostle’ and ‘disciples’, marking compilation frame.
-- ¶2: Systematic five-fold body mapping tied to the five dark worlds; expository voice with no citation or institutional application—hallmarks of the old cosmological layer.
-- ¶3: Continues the same five-fold scheme as process/mechanics (‘should he wish…’) describing capacities by world-likeness; impersonal cosmological description despite lacunae.
-- ¶4: A structural enumerative transition (‘three other qualities’) extending the systematic description; no frame/citation markers.
-- ¶5: Enumeration continues but is badly lacunose; still part of the numbered/graded descriptive sequence typical of the core layer.
-- ¶6: Mechanistic description of demonic capabilities (invocation, concealment, striking) in impersonal ‘when he wishes’ style; no institutional or NT overlay markers.
-- ¶7: Cosmogonic/ontological grounding (‘formed and fashioned… counsel of Matter’) with personified Matter as a cosmic progenitor; characteristic core cosmological register.
-- ¶8: Another enumerative hinge, indicating structured teaching units rather than exhortation or narrative frame.
-- ¶9: Elemental/mechanical capacity statement in the same impersonal conditional style; part of the descriptive catalogue.
-- ¶10: Paired elemental capacity (frost) continuing the same descriptive sequence; no later-layer signals.
-- ¶11: Analytic depiction of limited cognition and pseudo-life (‘no life… but his “life” is…’)—impersonal cosmological anthropology/daemonology rather than church discipline or Gospel citation.
-- ¶12: Register shifts to direct admonition (‘my beloved ones’, ‘Hold yourselves secure’) and moralized application to the audience’s body; this is appended paraenesis rather than core cosmological exposition.
-- ¶13: Continues exhortation toward zeal/perfection and promise of eternal life; institutional/paraenetic wrap-up following completion of the descriptive teaching sequence.
+- ¶1: Frame attribution (“Once again… the apostle… says to his disciples”) is late editorial apparatus; the remaining sentence is impersonal cosmological system-building (five-fold structure; body ↔ five dark worlds) characteristic of the core substrate.
+- ¶2: Pure cosmos→cosmos correspondential mapping (body regions and zoomorphic forms keyed to five dark worlds) with an impersonal expository voice; no audience address or institutional application.
+- ¶3: Operational description of the five-form complex (modes of movement corresponding to each dark-world ‘creation’). Still fully internal to cosmology; lacunae do not alter the systematic voice.
+- ¶4: Structural transition marker introducing a numbered/triadic set—typical of the core’s schematic exposition.
+- ¶5: Numbered list element (triadic faculty set). Although fragmentary, it belongs to the same schematic sequence.
+- ¶6: Describes an internal faculty of the Dark Ruler (magical concealment/manifestation and lethal speech) as ‘what he is able to do’ within the system, not as polemic about contemporary practitioners.
+- ¶7: Cosmic-material constitution (hardness beyond metals) grounded in a mythic-cosmological generator (Matter as a personified cosmic source). No institutional or exhortative turn.
+- ¶8: Second triadic set marker; schematic sequencing indicates the same teaching substrate.
+- ¶9: Elemental transformation as a faculty of the ruler; stays within cosmological/elemental register.
+- ¶10: Continuation of the same internal-faculty list (thermal/elemental powers), with no audience-facing application.
+- ¶11: Defines cognitive/affective mechanics of the Dark Ruler (limited ‘understanding’, anger as pseudo-life) in an impersonal explanatory mode; still a description of what he IS, not what the hearer must do.
+- ¶12: Direct second-person exhortation (“my beloved ones… Hold yourselves secure…”) applying the cosmology to audience conduct; this is the application layer consistent with the chapter’s end-weighted editorial fatigue signal.
+- ¶13: Continues hortatory voice and soteriological encouragement (“become zealous… inherit life for ever”); not a systematic cosmos→cosmos mapping, but behavioral/spiritual application.
 
 ---
 
 ## Chapter 28
 ### [Concerning the T]welve Judges [of] the Father
 
-*A short frame incipit (¶1) introduces a largely systematic cosmological catalogue of the twelve judges (¶2–15). The final paragraph (¶16) shifts register into direct moral exhortation (second-person imperatives, communal ethics, ‘beloved ones’), matching the chapter’s strong second-half pastoral drift signal; it reads as an editorial/pastoral application appended after the core list is complete. No explicit Gospel/NT citation formula occurs; ‘Jesus the Splendour’ functions as a cosmological being within the hierarchy, so it remains core here.*
+*The chapter is dominated by a systematic cosmological catalogue of twelve judges emanating from the Father of Greatness (¶2–15). The main late material is the formulaic dialogue frame (¶1) and a closing exhortation addressed to the community (¶16), matching the strong chapter-level editorial-fatigue drift. Two catalogue entries show later institutional/Christian colouring embedded inside an otherwise core cosmological list (¶10, ¶13).*
 
 Twelve judges exist; the great mighty givers of judgement! They were sent and came from the exalted greatness to this place. They were assigned to different works according to the command that the Judge, who belongs to the greatness, entrusted to all these judges. Now he, the great Judge, he who transcends all the judges, who exists and is established in the aeons of greatness; he is the Father of Greatness.
 
@@ -1258,43 +1231,43 @@ The sixth judge is [the Th]ird Ambassador, he who came and displayed his image. 
 
 The seventh judge is ... ... the worlds [... as he gives the victory to] they who are steadfast; but he condemns the ones who are convicted ... ... he shall become for them the steps of the way (?) [...]; but the convicted he sweeps and casts out to the depths.
 
-The eighth judge is Jesus the Splendour, the father of all the apostles; because after the Ambassador had displayed his image and the light was taken [...] a mass of rulers rose up from above and below. Then they sent Jesus the Splendour. He came ... ... he descended and made a judgement in the firmaments. He separated the steadfast from the convicted.
+The eighth judge is Jesus the Splendour, because after the Ambassador had displayed his image and the light was taken [...] a mass of rulers rose up from above and below. Then they sent Jesus the Splendour. He came ... ... he descended and made a judgement in the firmaments. He separated the steadfast from the convicted.
 
 The ninth judge is the Virgin of Light, [she who took the heart] of the powers by her image, gathering her own ones into her. She makes a judgement on the ruler of the moist, and the ruler of the dry.
 
 The tenth judge is the Judge who dwells in the atmosphere, judging all mankind. He makes a separation between they who are good and they who are evil, setting apart the righteous from the sinners.
 
 ⟨p.81⟩
-The eleventh judge is the Light Mind, he who shall come and appear in the world. And he chooses the holy church, and he unveils [...] and separates light from darkness, and sets the truth apart from lawlessness.
+The eleventh judge is the Light Mind, he who shall come and appear in the world. And he unveils [...] and separates light from darkness,
 
 The twelfth judge is the great counsel, which is the summons and the obedience, which is appointed in the elements. It is the one that makes a separation between the good and the evil ones. At the end also it can gather itself together and sculpt its own self in the Last Statue. And it separates light from darkness.
 
 These are the twelve great and mighty judges who were sent. They came from the great Judge, he who transcends all the judges. He is the Father that is hidden and immeasurable, the one who exists; who is established in the aeons of greatness upon the great throne of honour, which is the King of Honour [...] in his kingdom.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue-frame incipit (‘Once again… to his disciples’), typical hagiographic/editorial wrapper.
-- ¶2: Impersonal, systematic exposition establishing a numbered cosmic structure (twelve judges) and situating them in the aeons of Greatness; no citation or institutional application.
-- ¶3: Numbered catalogue + named Iranian cosmological figure; functional role as judge in primordial conflict; expository voice.
-- ¶4: Continues the systematic numbered list; cosmological agents and mechanics (‘powers of darkness’, ‘garments’).
-- ¶5: Cosmic-building function and restraint of rulers; impersonal system description with lacuna preserved.
-- ¶6: Process/mechanics of cosmic construction (aeon, storehouses, prison, throne) in a structural voice; not ecclesial.
-- ¶7: Numbered cosmological placement (seventh firmament) and universal jurisdiction over firmaments; manuscript marker preserved.
-- ¶8: Core cosmological actor (‘Third Ambassador’) in functional description; lacunae indicate damaged but non-editorial content.
-- ¶9: Despite heavy lacunae, the paragraph continues the numbered judge-catalogue and eschatological sorting motif in the same expository register; no institutional markers.
-- ¶10: ‘Jesus the Splendour’ appears as a defined cosmological being dispatched in response to a cosmic event (after the Ambassador’s image); narrative is internal to Manichaean myth, not an NT citation formula.
-- ¶11: Named cosmological figure with functional role; impersonal catalogue style; restoration brackets preserved.
-- ¶12: Still part of the fixed numbered list; cosmic-locative (‘dwells in the atmosphere’) and eschatological separation; moral vocabulary appears as part of judging function rather than pastoral exhortation.
-- ¶13: Eschatological advent of ‘Light Mind’ is core; ‘holy church’ here reads as Manichaean cosmic-community category within the separation drama rather than a seam-extending institutional rule (no bridge connective; remains within judge-list mechanics). Some uncertainty due to ecclesial term.
-- ¶14: Abstract hypostasis (‘great counsel’) described as cosmic mechanism appointed in elements, culminating in the Last Statue; impersonal systematic eschatology.
-- ¶15: Catalogue closure/summary returning to transcendent Father of Greatness; doxological but still cosmological and structural, not communal liturgy or biography.
-- ¶16: Direct second-person exhortation (‘I am telling you… my beloved ones… walk… Judge… May a brother speak…’) and ethical instruction; functions as appended application after the core list closes in ¶15, matching editorial-fatigue pastoral drift.
+- ¶1: Formulaic hagiographic/dialogue opening (“Once again… to his disciples”), typical compilation frame.
+- ¶2: Impersonal, structural exposition defining the system (emanated judges under the transcendent Father of Greatness); no audience address or institutional pointing.
+- ¶3: Cosmos→cosmos: named aeon-being (First Man) judging the ruler of Darkness; mythic-cosmological mechanism rather than community instruction.
+- ¶4: Systematic list entry with archetypal beings and cosmic conflict; impersonal teaching register.
+- ¶5: Cosmogonic/cosmological description of ordering and binding rulers “above”; remains inside the cosmic architecture.
+- ¶6: Process/mechanism teaching (construction of aeon, prison, throne) in an impersonal voice; no institutional targeting despite some moral vocabulary.
+- ¶7: Cosmic geography (“seventh firmament”) and hierarchical judging function; catalogue style characteristic of core teaching.
+- ¶8: Named cosmological entity (Third Ambassador) in functional mythic role; no citation or exhortation.
+- ¶9: Despite lacunae, the content is still cosmic-judicial mechanism (victory/condemnation, casting to depths) within the system, not applied to institutions.
+- ¶10: Core substrate is the cosmological judge-entry for Jesus the Splendour acting in firmaments after the Ambassador’s image-event. The phrase about “apostles” reaches into later ecclesial/Christian identity and marks secondary insertion.
+- ¶11: Purely cosmological beings and correspondential domains (“moist/dry” rulers); catalogue voice.
+- ¶12: Eschatological mechanism framed as a cosmic function (“dwells in the atmosphere”); although moral terms appear, the paragraph does not pivot to addressing the community or institutions.
+- ¶13: Underlying entry is an eschatological cosmic judge (Light Mind) performing separation (light/darkness). The “holy church” identification is an editorial application into institutional life, consistent with late drift.
+- ¶14: System-internal eschatological architecture (elements, Last Statue) presented impersonally as mechanism; no exhortation or citation.
+- ¶15: Catalogue closure returning to the transcendent Father of Greatness; cosmological summary style rather than community instruction.
+- ¶16: Direct second-person exhortation and community ethics (“my beloved ones… you yourselves… walk… Judge… May a brother speak…”), promising post-mortem reward—classic application/pastoral layer added after the core list.
 
 ---
 
 ## Chapter 29
 ### Concerning the Eighteen Great Thrones of all the Fathers
 
-*Core material dominates: a systematic numbered catalogue of nine thrones in the outer aeons and nine thrones in the zone, with fixed cosmological names and locations (ships, firmament, atmosphere). Paragraph 1 contains the hagiographic dialogue-attribution frame. Paragraph 17 shifts to institutional/Mani-claim language (“apostle in the holy church… at this time”) consistent with the chapter-level pastoral drift; it reads as an editorial extension rather than original cosmological listing.*
+*The chapter is largely a systematic cosmological catalogue (throne-by-throne) that stays inside the Manichaean cosmic hierarchy and geography (outer aeons; ships of day/night; firmaments; atmosphere; Judge and the three destinies). Later editorial layers appear as (a) dialogue framing at the opening, (b) a liturgical/doxological wrap-up for the first set of nine, (c) a strong institutional graft identifying the ninth throne in the zone with the present apostle “in the holy church,” and (d) a damaged concluding summary.*
 
 Eighteen [great thrones for all the fathers] exist and are appointed, which are established in eighteen places! While there are nine among them [appointed in] the outer aeons, they exist [i]n all the worlds of the damage.
 
@@ -1302,23 +1275,19 @@ The first throne is the throne of the Father, the God of [trut]h, the King of th
 
 ⟨p.82⟩ The second throne is that of the [gl]orious Mother of Life. She is the origin of all the emanations that have come to this world.
 
-The third throne is constructed for the father, the First Man. He is the one who humiliated the entire first enmity, which existed in the worlds of darkness.
+The third throne is constructed for the father, the First Man. He is the one who humiliated the entire First Enmity, which existed in the worlds of Darkness.
 
 The fourth throne is that of the Beloved of the Lights, the great honoured Beloved of the aeons of greatness.
 
-The fifth throne is that of the glorious Great Builder; the great architect who built the new aeon for a newness, for [a ...] for [the] fathers of light; also for a place of binding and a prison for the enemy and his powers.
+The fifth throne is that of the glorious Great Builder; the great architect who built the new aeon for a newness, for [a ...] for [the] fathers of light; also for a place of binding and a prison for the Enemy and his powers.
 
-[The sixth thro]n[e] is that of the Living Spirit, the [glorious] mighty one, he who bore up the First Man out from the [land of darkness]; who also set in order and constructed the world [s ...] both for a cleansing of the light, [and] for a binding [of the] powers of the enmity.
+[The sixth thro]n[e] is that of the Living Spirit, the [glorious] mighty one, he who bore up the First Man out from the [land of Darkness]; who also set in order and constructed the world [s ...] both for a cleansing of the light, [and] for a binding [of the] powers of the Enmity.
 
 The seventh th[rone is] that of the Third Ambassador, the king of the zone, also the master of all advices.
 
 The eighth throne is that of Jesus the Splendour, who [is] the releaser and redeemer [of] all souls.
 
-The ninth throne is the throne of the great M[ind, he to whom] all the churches shall gather; and all the [life] that will be purified from the world returns to him.
-
-These are the nine thrones of ho[no]u[r] appointed in the outer aeo[ns], <which are established> for the fathers of the glorious realm; [in the kingdom of the King of] Honour, for ever and ever, amen.
-
-In contrast, these are the other nine thrones that are appointed in this world of the zone.
+The ninth throne is the throne of the great M[ind,] and all the [life] that will be purified from the world returns to him.
 
 Three thrones in the ship of [the d]ay: one is that of the Ambassador, the second i[s that of] the Great Spirit, the third is that of the Living Spirit.
 
@@ -1328,81 +1297,80 @@ Also, the seventh throne is established in the seventh firmament. The great King
 
 The eighth throne is established in the atmosphere. The Judge of truth sits upon it, he who judges all mankind. Three paths shall be distinguished before him: one to death, one to life, on[e] to the mingling.
 
-Th[ese] are the [nin]e great [th]ro[nes ...] that are established in this world of [...] of the glorious realm, the one that the [... ...] honour them [... ...] and the [...].
-
 **Temporal observations:**
-- ¶1: Opening formula and disciple-address are classic Kephalaia frame; the numbered structural thesis that follows (18/9/9, aeons vs worlds of damage) is impersonal catalogue-style teaching.
-- ¶2: Numbered cosmological hierarchy; impersonal descriptive voice; no citation or institutional application.
-- ¶3: Stable Iranian-Manichaean cosmological name and function stated as system description.
-- ¶4: Catalogued throne-list with mythic-cosmological role; no frame markers.
-- ¶5: Numbered list of aeonic beings/titles in schematic succession.
-- ¶6: Cosmological mechanism (building new aeon; prison/binding for Enemy) in expository register; not institutional.
-- ¶7: Mythic-cosmological action stated as functional explanation (cleansing light/binding powers) within numbered schema.
-- ¶8: Standard cosmological office/title in a fixed enumeration.
-- ¶9: Jesus the Splendour appears here as a defined cosmological being within a throne-catalogue, not as a Gospel citation; thus part of the core listing.
-- ¶10: Still schematic throne-list; “churches” can function as Manichaean cosmic-community language here, but it remains within the cosmological return/collection mechanism rather than rules/exhortation.
-- ¶11: Summative closure of the first nine; doxology (“amen”) may be editorial coloration, but the paragraph functions as the structural capstone to the enumeration and lacks institutional grafting.
-- ¶12: Structural hinge introducing the second set (nine in the zone); impersonal catalogue continuation.
-- ¶13: Systematic triad mapped to a cosmological location (“ship of the day”); classic core enumerative style.
-- ¶14: Despite “Once again” connective, the content continues the same cosmological triadic mapping (night ship) and closes the two-ship set; no institutional turn.
-- ¶15: Continuation of place-mapped enumeration (firmament); cosmological office.
-- ¶16: Impersonal eschatological mechanism (“three paths”) tied to a cosmic Judge and location; matches old systematic teaching voice.
-- ¶17: Institutional/temporal self-identification (“apostle in the holy church… has come to you at this time”) functions as an editorial extension of the throne-list to authorize a contemporary office-holder; this is not impersonal cosmological exposition.
-- ¶18: Broken concluding summary of the nine-in-the-zone list; still catalogue-closure language without explicit institutional grafting.
+- ¶1: Opens with a formulaic speech-attribution typical of the Kephalaia frame; the remaining sentence is impersonal, enumerative, and cosmological (core catalogue-voice).
+- ¶2: Impersonal hierarchical description of a cosmic being and his throne; no citation, exhortation, or institutional targeting.
+- ¶3: Direct cosmological ontology (emanations and their origin) in catalogue form.
+- ¶4: Classic Manichaean mythic-cosmological role statement (First Man vs. Darkness) in non-narrative, summary catalogue voice.
+- ¶5: Pure internal hierarchy naming; no move toward audience address or contemporary institutions.
+- ¶6: Cosmic function described structurally (building/ordering/binding) with the Enemy as a cosmic adversary; still cosmos→cosmos.
+- ¶7: Systematic cosmological mechanics (rescue, construction, cleansing/binding) without institutional application.
+- ¶8: Catalogue naming inside the cosmic administration of the zone; no frame markers.
+- ¶9: Jesus the Splendour appears as a defined cosmic agent (not a Gospel citation); the description stays within cosmic soteriology rather than NT quotation.
+- ¶10: Core catalogue statement about Great Mind and the return of purified life is cosmological; the inserted clause about “all the churches” points outward to institutional church plurality.
+- ¶11: Doxological summary/closure (“for ever and ever, amen”) functions as editorial-liturgical wrap rather than cosmological exposition.
+- ¶12: Transitional editorial stitching (“In contrast…”) introducing the next list segment; not itself a throne-teaching unit.
+- ¶13: Numbered sub-structure mapping thrones to cosmic vehicles (ship of day); impersonal list logic typical of the substrate.
+- ¶14: Iterative catalogue logic (day/night ships) is internal cosmography; “Once again” here functions as list iteration rather than disciples-frame.
+- ¶15: Cosmic geography (firmament) + enthroned being; no institutional application.
+- ¶16: Eschatological-cosmological adjudication schema (three destinies) presented structurally, not as exhortation or citation.
+- ¶17: Clear cosmos→institution graft: “apostle in the holy church,” “has come to you at this time,” legitimating the present apostolic office; this is editorial/institutional application rather than substrate cosmography.
+- ¶18: Damaged concluding recapitulation of the nine thrones “in this world…” reads like editorial summary/closure rather than a new cosmological unit.
 
 ---
 
 ## Chapter 30
 ### Concerning the Three Garments
 
-*Despite a brief formulaic dialogue opening in ¶1, the chapter is dominated by impersonal cosmological process-description about the Living Spirit’s three ‘garments’ (wind, fire, water) and their installation/stretching across the universe/zone. No NT overlay or institutional pastoral extension is present; the only later layer is the hagiographic speech-frame at the start of ¶1.*
+*This chapter is largely core cosmological mechanism: the Living Spirit assumes three elemental “garments” (wind, fire, water), establishes them across the universe, then divests and stretches them over the Zone. Paragraph 1 contains a clear dialogue/frame attribution and audience-address that wraps an otherwise systematic cosmological description; paragraph 2 is fully impersonal-process exposition and reads as substrate teaching.*
 
-Happen you know this, my beloved ones, that when the Living Spirit came he brought the three garments; that of wind, that of fire, and that of water. He assumed them from [ ... ] he has [ ... ] in them in those three garments [ ... ] he established [them] for all the things of [this univers]e, both above and below. He arranged them in the [ ... ] he was displayed. Afterwards [ ... ] his works [ ... ] the [ ... h]e stripped them off before [the ri]ghteous ones.
+⟨p.83⟩
+that when the Living Spirit came he brought the three garments; that of wind, that of fire, and that of water. He assumed them from [ ... ] he has [ ... ] in them in those three garments [ ... ] he established [them] for all the things of [this univers]e, both above and below. He arranged them in the [ ... ] he was displayed. Afterwards [ ... ] his works [ ... ] the [ ... h]e stripped them off before [the ri]ghteous ones.
 
 ⟨p.84⟩
 Now, when he was about to loose [n them, ... he] divested himself of them from their (clasp) and he [ ... i]n them, and thus these three g[arme]nts are arranged [ ... ] from below the edges of the zone as they clothe i[t al]l [ ... ] up [ ... ] above [ ... ] up [ ... ] above them strips them of the zone from that place at its topmost point; and it is placed below them and ra[ised u]p to the heights above, from which it had been sent o[u]t at their beginning.
 
 **Temporal observations:**
-- ¶1: Opening speech-to-disciples formula is characteristic compilation frame. The remainder is systematic cosmological exposition: Living Spirit, three garments named and used as world-structuring media ‘for all the things of this universe, both above and below’—impersonal mechanism rather than exhortation or citation.
-- ¶2: Pure process-description of cosmic engineering (divesting/loosening the garments; stretching them from the lower edges of the zone to the topmost point; raising to the heights). No frame formula, no ecclesial/institutional vocabulary, no Gospel/NT citation—fits the oldest systematic teaching layer.
+- ¶1: Opens with a formulaic frame attribution (“Once again…to his disciples”) and second-person address (“my beloved ones”), characteristic of the later compiled Kephalaia container; after that, the voice shifts into impersonal cosmological process about the Living Spirit’s three garments and their universal establishment, which stays within the cosmic system.
+- ¶2: Impersonal, mechanical cosmological description (divesting/arranging the three garments; stretching them over the Zone from its edges to the topmost point). No citation formulas, no ecclesial/institutional application, no exhortation; mapping remains cosmos→cosmos.
 
 ---
 
 ## Chapter 31
 ### Concerning the Summons, in which Limb of the Soul it descended to the First Man.
 
-*¶1 is a late dialogue question with a scriptural citation formula (NT/Christian overlay + compilation frame). ¶2–8 are predominantly systematic cosmological teaching about First Man as head, the scattered limbs/soul, the Virgin of Light, the Pillar of Glory, and the five cognitive powers; the voice is expository and analogical rather than institutional. Despite the chapter-level fatigue flag, no clear institutional graft appears in the extant paragraphs; the slight pastoral vocabulary in ¶8 reads as non-institutional (enemy/crushed soul) and remains within cosmological mechanics.*
+*Apart from the opening Q&A frame (with a citation-to-scripture prompt), this chapter is dominated by systematic, internally-cosmic teaching: First Man as Head; living soul as limbs dispersed in the universe; the Pillar of Glory as the cosmic body/trunk; and a five-fold faculty set (mind, thought, insight, counsel, consideration) emitted to do his will. The discourse stays cosmos→cosmos (body–cosmos analogy included) without pivoting into contemporary institutions or exhortations.*
 
-Indeed, the First Man dispersed himself and he [...] limb of the living soul as I have written for you [...] of the living soul; he has [...] he did not know [... ...] but the blessed, glorious Man came [in] secret; in his image; in his shape; in his love; in his holy virgin, she who is the virgin of light, the soul of the father.
+Indeed, the First Man dispersed himself and he [...] limb of the living soul as I have written for you [...] of the living soul; he has [...] he did not know [... ...] but the blessed, glorious Man came [in] secret; in his image; in his shape; in his love; in his holy virgin, she who is the Virgin of Light, the soul of the father.
 
-After the fashion of this fleshly body: as the root of all the limbs hang upon the head, so that should one of the person's limbs be cut off, while the head exists he has hope for [...] but if his head should be cut off, the entire body will die and he is lost.
+“After the fashion of this fleshly body: as the root of all the limbs hang upon the head, so that should one of the person's limbs be cut off, while the head exists he has hope for [...] but if his head should be cut off, the entire body will die and he is lost.
 
-This is also the case for the Firs[t] Ma[n]. He is the head, while his sons attach to it the limbs [of] his soul. Or, conversely, like the living air, on which all flesh entirely lives as it breathes and [...] therein. His head is placed on the body of the Pillar of Glory in the heights of the universe.
+“This is also the case for the Firs[t] Ma[n]. He is the head, while his sons attach to it the limbs [of] his soul. Or, conversely, like the living air, on which all flesh entirely lives as it breathes and [...] therein. His head is placed on the body of the Pillar of Glory in the heights of the universe.
 
-[This i]s also the case [for] the father, the blessed Man; as he is like the head that is upon the body and the air that upon the Pillar is set i[n ...] being made strong by his light virgin, [she] who is his soul that he clothes [...]
+“[This i]s also the case [for] the father, the blessed Man; as he is like the head that is upon the body and the air that upon the Pillar is set i[n ...] being made strong by his light virgin, [she] who is his soul that he clothes [...]
 
-[ ... ] t[h]ose [...]: the mind, thought, insight, counsel and c[on]sideration that he produced and sent forth from hi[m to] do his will. He sprang and travelled behind them. [...] of his living soul, which is entwined among the rebels; as they are like the limbs of its body, and [...] universe.
+“[ ... ] t[h]ose [...]: the mind, thought, insight, counsel and c[on]sideration that he produced and sent forth from hi[m to] do his will. He sprang and travelled behind them. [...] of his living soul, which is entwined among the rebels; as they are like the limbs of its body, and [...] universe.
 
-And when they were sent, at [that ti]m[e] he was found with the Virgin of [Lig]ht and [he] stood up, asking and entreating for a p[o]wer. [ ... he] gave him peace and a ki[ss ...] he [gave] him goo[d] tidings [...] Man. The Man him[s]elf gave [his ...] his limbs and gathered his soul i[n ...] he built it in its place like this tower [...]
+“And when they were sent, at [that ti]m[e] he was found with the Virgin of [Lig]ht and [he] stood up, asking and entreating for a p[o]wer. [ ... he] gave him peace and a ki[ss ...] he [gave] him goo[d] tidings [...] Man. The Man him[s]elf gave [his ...] his limbs and gathered his soul i[n ...] he built it in its place like this tower [...]
 
-[...] shaped it and beautified it skillfully [...] for[m ...] the voices that he sent [...] he might sink in and quench [... ...] so[u]l that was crushed by the enemy. They were gathered in. They came, set firm once more, in the image of their father.
+“[...] shaped it and beautified it skillfully [...] for[m ...] the voices that he sent [...] he might sink in and quench [... ...] so[u]l that was crushed by the Enemy. They were gathered in. They came, set firm once more, in the image of their father.”
 
 **Temporal observations:**
-- ¶1: Dialogue frame marker ('Once again… questioned the enlightener') plus explicit citation formula ('it is written in the scriptures') indicates later Christian/scriptural overlay entering via authoritative written sources, not core expository cosmology.
-- ¶2: Core cosmological exposition (First Man, dispersion into limb(s) of living soul; Virgin of Light identified as 'soul of the father') in impersonal teaching voice; only the speaker-tag is late frame.
-- ¶3: Impersonal analogical teaching (body-head-limbs correspondence) without citation or institutional directives; typical core correspondential mechanics.
-- ¶4: Systematic cosmological mapping (First Man as head; sons/limbs; Pillar of Glory in cosmic geography) in expository voice—core teaching layer.
-- ¶5: Continues the same structural analogy and cosmological entities (light virgin as soul, Pillar) without frame/citation; reads as continuous core exposition despite lacunae.
-- ¶6: Numbered/fivefold cognitive powers (mind, thought, insight, counsel, consideration) tied to cosmological process (sent forth; living soul entwined among rebels) is a strong marker of the oldest systematic teaching layer.
-- ¶7: Cosmological-narrative within teaching sequence (Virgin of Light; gathering the soul; building as tower) still functions as mythic mechanics rather than NT exemplum or institutional rule; no citation formulas.
-- ¶8: Continuation of the same process language (shaping/beautifying; gathering; restoration 'in the image of their father'). The slight pastoral register signal does not introduce church/catechumen/elect material; it remains within cosmological struggle imagery, so it is treated as core.
+- ¶1: Hagiographic/Q&A container: “Once again… questioned the enlightener… He says to him”. The prompt uses a citation formula (“it is written in the scriptures”), signalling compilation-era framing rather than impersonal substrate exposition.
+- ¶2: Core cosmological content (First Man; living soul dispersal; Virgin of Light as soul) presented as what cosmic beings/relations ARE. Mixed only because of the explicit dialogue attribution introducing the speech.
+- ¶3: Impersonal correspondential analogy (head/limbs/body-life mechanics) used structurally, not exhortatively; maps body-order to cosmic order (a substrate hallmark).
+- ¶4: Systematic internal cosmology: First Man/head; sons/limbs of soul; Pillar of Glory as cosmic body. No institutional or audience-directed application.
+- ¶5: Continuation of the same cosmic body–pillar mapping; ‘light virgin’ as soul remains within the mythic/cosmological system despite lacunae.
+- ¶6: Numbered/set-like faculty schema (five-fold) plus emissive process (“produced and sent forth”) is characteristic of older systematic teaching; ‘rebels’ remain cosmic opponents, not contemporary groups.
+- ¶7: Mythic narrative sequence, but still entirely intra-cosmic (Virgin of Light; power/peace; gathering the soul; tower-image). No frame markers, no church/institutional identification.
+- ¶8: Cosmic restoration mechanics (shaping/beautifying; sending voices; quenching; soul crushed by an agent-like Enemy). Despite slight moral coloration, it does not pivot into exhortation or contemporary referents, so it reads as core process-teaching.
 
 ---
 
 ## Chapter 32
 ### Concerning the Seven Works of the Living Spirit
 
-*Nearly the entire chapter is an old, numbered cosmological dossier on the Living Spirit’s works (1–7 plus an additional eschatological work), with systematic emanational agents (First Man, Living Spirit, five sons, three living words, summons, Third Ambassador) and universe-construction mechanics. Only the opening dialogue attribution is a later hagiographic frame. The final beatitude reads like a devotional/editorial closure rather than the technical teaching voice.*
+*The chapter is dominated by a compact, enumerated cosmological teaching: a seven-fold list of the Living Spirit’s works (plus a final eschatological addition). The only clear editorial frame is the dialogue-attribution in ¶1 and a beatitude-style closing in ¶10. No NT citation formulas appear; most content stays cosmos→cosmos (beings, zones, vessels, powers).*
 
 The Living Spirit has done seven [wo]rks with his strength.
 
@@ -1423,23 +1391,23 @@ The [sev]enth: A[t the] time when the Ambass[ador dis]pl[aye]d his glorious imag
 Also another gr[ea]t and glorious work he will enact at the e[nd] is [the] Last [Statue], which he will bring up to the aeons of [light]; and he [ ... ] in, and [he ta]kes hold, and he smites [ ... ], and [he] builds, and he [ ... ], and he [ ... t]hem.
 
 **Temporal observations:**
-- ¶1: Frame-style incipit/attribution to the enlightener is a compiling-layer container; the remaining sentence is a programmatic heading for a numbered cosmological list.
-- ¶2: Numbered work in impersonal cosmological register; mythic rescue of First Man with correspondential simile (pearl/sea) but no citation apparatus.
-- ¶3: Continues the numbered sequence; mythic-cosmic punitive action language (crucified) used as cosmological mechanism, not NT citation.
-- ¶4: Technical victory/ordering verbs applied to Death’s ‘essences’; impersonal, process-oriented cosmic combat/structuring typical of core dossiers.
-- ¶5: Brief but clearly within the systematic numbered cosmological list (ships of light as standard Manichaean cosmic machinery).
-- ¶6: Strong core markers: five-fold and three-fold structures; cosmos-engineering (zone, vessels, giant); impersonal exposition with systematic enumeration.
-- ¶7: Cosmic administration and architecture (bounding the zone, storehouses, watch-posts) in procedural narrative; no institutional/NT overlay markers.
-- ¶8: Core cosmological personnel (Ambassador/Third Ambassador, Living Spirit) and construction-stabilization logic; lacunae prevent finer analysis but register remains cosmic.
-- ¶9: Eschatological cosmology (Last Statue brought to aeons of light) in the same impersonal ‘work’ dossier style; not framed as Gospel apocalypse citation.
-- ¶10: Beatitude-style closure (‘Blessed is he who knows…’) reads as devotional/homiletic wrap-up rather than the numbered technical dossier; functions like an editorial closing tag.
+- ¶1: Enumerated cosmological topic-statement is core in structure, but the speech-attribution to "the enlightener" is a later hagiographic/dialogue frame marker that must be stripped.
+- ¶2: Cosmic actor (Living Spirit) → cosmic rescue of First Man, expressed through a correspondential simile (pearl/sea) that remains within the system (redeemed light extracted from mixture). Impersonal enumerated-list style.
+- ¶3: Still cosmos→cosmos: a rebel/demonic figure is bound/distributed through bodies. The verb "crucified" may be later Christianized diction, but there is no NT entry-vector (no citation/narrative); the sentence functions as a cosmological mechanism within the seven-works list.
+- ¶4: Mechanical, violent verbs describing subjugation of Death-powers; fits the impersonal action-catalogue of cosmic construction/defeat.
+- ¶5: Direct cosmological construction statement (ships of light) within the enumerated work-list; no audience address or institutional reach.
+- ¶6: Highly diagnostic of the substrate: numbered structuring (five sons; three living words; three vessels), cosmic geography (zone), and functional placement (bearing the universe’s weight). The whole paragraph stays within cosmic architecture and degree-mappings.
+- ¶7: System-building logistics (bounding the zone, storehouses, watch-posts) expressed in impersonal expository narrative; still cosmos→cosmos without polemical or institutional application.
+- ¶8: Cosmic-hierarchical scene (Ambassador’s image; establishment of gods/angels) tied to stabilizing the cosmic building; remains internal to the system despite lacunae.
+- ¶9: Eschatological-cosmological mechanism (Last Statue; ascent to aeons of Light) remains cosmos→cosmos. The phrase "Also another" after the sevenfold list may signal secondary expansion, but it is not an institutional seam and contains no NT entry-vector.
+- ¶10: Beatitude-style closure ("Blessed is he...") functions as an editorial/performative ending rather than part of the impersonal seven-works cosmological catalogue; no additional cosmological mapping is introduced.
 
 ---
 
 ## Chapter 33
 ### Concerning the Five Things that he constructed with the hard Bodies of the Rulers
 
-*After a brief hagiographic opening attribution, the chapter consists of a compact, numbered fivefold cosmological construction list (Living Spirit building cosmic structures from the rulers’ hard bodies). No NT overlay and no institutional/pastoral extension appears in the surviving text; the high editorial-fatigue score is not corroborated at paragraph-level here.*
+*A very brief, mostly substrate-style enumerative teaching: a fivefold construction list attributed to the Living Spirit, describing cosmic architecture (Porter, pillar, great sea, vessels) without moral/pastoral application. Only the opening dialogue-attribution formula is later framing.*
 
 The Living Spirit constructed five great things from veins and skull[s in the] hard [bodies].
 
@@ -1454,19 +1422,19 @@ The fourth are the [seven (?)] pillars that he has erected in the great sea, in 
 The fifth are the four walls that surround the vessels.
 
 **Temporal observations:**
-- ¶1: Opening frame formula marks the compiler’s voice; the ensuing sentence is impersonal cosmological mechanism introducing a numbered fivefold construction list (old teaching style).
-- ¶2: Numbered, schematic cosmological itemization ("The first...") with mythic cosmic figure (Porter) in structural exposition; no citation or institutional register.
-- ¶3: Continues the systematic fivefold list in an impersonal, architectural-cosmological register.
-- ¶4: Still within the enumerated construction schema; cosmological/eschatological architecture described as mechanism rather than exhortation.
-- ¶5: Structured cosmological geography (great sea; seven parts) embedded inside the fivefold construction list—typical core systematic mapping style.
-- ¶6: Closes the fivefold list with another impersonal cosmic-architectural item; no frame/pastoral/NT markers.
+- ¶1: Opening formula ‘Once again the enlightener speaks’ is a classic compilation frame; the remaining sentence is impersonal cosmological construction-teaching (fivefold structure; cosmos→cosmos).
+- ¶2: Enumerative, impersonal architectural mapping within the cosmic system (disc ↔ Porter), no institutional or exhortative reach.
+- ¶3: Continues the fivefold cosmic-construction list in the same systematic register; no frame/citation/application voice.
+- ¶4: Still internal cosmographic/eschatological architecture (forms/gehennas) presented as part of the construction sequence.
+- ¶5: Numbered cosmic correspondential structuring (‘seven pillars… seven parts of the universe’) in an expository voice characteristic of the teaching substrate.
+- ¶6: Concludes the impersonal five-item construction schema; the ‘four walls’ fits degree/numbered cosmology rather than later pastoral application.
 
 ---
 
 ## Chapter 34
 ### Concerning the Ten Things that the Ambassador began by his Advent
 
-*After a brief hagiographic dialogue attribution (¶1), the chapter is an impersonal, enumerated cosmological list of ten effects initiated by the Third Ambassador’s advent. The numbered schematic style and purely cosmic machinery vocabulary indicate an old teaching core preserved with minimal later overlay; lacunae affect items 4–6.*
+*A brief enumerative cosmological teaching: ten system-internal consequences of the Third Ambassador’s advent (builder/new aeon, ships, wheels, separations, falls, transmigrations). Apart from a formulaic speech-introduction, it contains no institutional application, exhortation, or NT citation; the dominant voice is impersonal and schematic.*
 
 ⟨p.87⟩
 The first: The Great Builder came forth to build the new aeon.
@@ -1490,24 +1458,26 @@ The ninth: The abortions [fell] to the ground.
 The tenth: Transmigrations came about in the zone.
 
 **Temporal observations:**
-- ¶1: Formulaic frame attribution (“Once again the enlightener speaks”) marks the later hagiographic container introducing the list.
-- ¶2: Numbered schematic exposition of cosmic agents/events without citation or institutional material; fits the impersonal teaching register.
-- ¶3: List-structure cosmological mechanics (ships/heights/heavens) in impersonal voice suggests pre-compilation teaching item.
-- ¶4: System description (“wheels…send the life…”) is process-oriented cosmology characteristic of the oldest layer.
-- ¶5: Although lacunose, it continues the numbered cosmological sequence with no signs of later frame/overlay.
-- ¶6: Mechanical/cosmic imagery (“doors of the ships…opened”) in the continuing list form; no institutional or citation markers.
-- ¶7: Continuation of the same schematic mechanism (cosmic ‘doors’ handling ‘waste’ as part of purification machine) indicates core teaching despite lacunae.
-- ¶8: Cosmic process account involving the Third Ambassador and the rulers; [the sin] functions as a personified cosmic agent/event within purification mechanics, not moral exhortation.
-- ¶9: Cosmogonic differentiation (night/day separation) presented as an item in the enumerated scheme; no later overlay markers.
-- ¶10: Brief but still an impersonal cosmological event within the tenfold list; no frame/pastoral/NT signals.
-- ¶11: Concludes the tenfold schematic with technical cosmological/eschatological process language; no citation or institutional extension.
+- ¶1: Formulaic hagiographic/dialogue frame: “Once again the enlightener speaks”. This is the compiler’s container, not the substrate.
+- ¶2: System-internal cosmological list item (office/being → cosmic construction). No audience address or institutional anchoring.
+- ¶3: Cosmic mechanics (ships/heights/heavens) stated as process; schematic enumerative style typical of teaching substrate.
+- ¶4: System description (wheels transmitting life between cosmic zones). No polemic/application shift.
+- ¶5: List-structure continuation; content lost to lacuna but position and format match the surrounding core enumeration.
+- ¶6: Cosmic architecture (“doors of the ships”) described in impersonal expository mode; remains within the cosmic system.
+- ¶7: Purificatory mechanism (“receive the waste”) stated as part of cosmic machine-function; no institutional referents.
+- ¶8: Cosmic process involving rulers and the Ambassador; still cosmos→cosmos. “Sin” functions here as a cosmological entity/substance separated from rulers, not moral exhortation.
+- ¶9: Cosmic ordering/separation (time-cycle mechanics) in terse list form; no later citation or application.
+- ¶10: Mythic-cosmic event stated without pastoral use; remains within the cosmological narrative/mechanics register.
+- ¶11: Cosmic/eschatological mechanism (“transmigrations… in the zone”) stated as system-function, not ethical instruction or institutional rule.
 
 ---
 
 ## Chapter 35
 ### Concerning the Four Works of the Ambassador
 
-*After a brief hagiographic/dialogue-style incipit (¶1), the chapter is an impersonal, enumerated fourfold exposition of the Ambassador’s works (¶2–¶5). No NT citation or institutional/pastoral extension is present; the numbered cosmological structure reads as an older teaching unit preserved with minimal editorial framing. Lacunae occur in ¶3–¶5.*
+*This chapter is essentially a compact, systematic fourfold enumeration of cosmic effects associated with the Ambassador’s epiphany. Aside from a brief formulaic dialogue attribution in ¶1, the language stays within the Manichaean cosmological system (image/firmaments/light purification/Light Ship/Living Soul) and lacks pastoral exhortation or NT citation.*
+
+At the time when the Ambassador displayed his image, four great works were revealed that are very excellent and outstanding.
 
 The first is his image that he displayed in a glorious image.
 
@@ -1515,24 +1485,25 @@ The second is all the doors of the firmaments that were opened at that time. The
 
 The third is the light and the releasing that was purified by his image. That light is more than the light that he shall [...]
 
-The fourth: He has [made apparent], by the perfection of people, his light ship. He has [...] the living soul that shone forth in perfection and fullness over the worlds of enmity.
+The fourth: He has [made apparent], by the perfection of people, his Light Ship. He has [...] the Living Soul that shone forth in perfection and fullness over the worlds of enmity.
 
 **Temporal observations:**
-- ¶1: Formulaic opening attribution (“Once again the enlightener speaks”) functions as the Kephalaia’s hagiographic container; it introduces the topic rather than expounding the mechanism.
-- ¶2: Begins the numbered fourfold scheme in an impersonal expository voice; no citation formula, no ecclesial/institutional application.
-- ¶3: Cosmological mechanics (firmaments/doors opening and shutting) in enumerated sequence; lacuna does not affect the structural core.
-- ¶4: Process-description of purification/releasing of Light by a cosmic act; despite one pastoral hit in the register count, the paragraph’s voice remains cosmological and structural, not institutional.
-- ¶5: Continues the fourfold list with named cosmological items (“light ship”, “living soul”) and cosmic geography (“worlds of enmity”); no frame attribution inside the paragraph, only lacunae/restoration markers.
+- ¶1: Opening formula marks later editorial framing, but the remaining sentence introduces a systematic fourfold cosmological teaching (impersonal enumerative voice), consistent with the older teaching substrate.
+- ¶2: Bare enumerative item within a fourfold schema; cosmos→cosmos description with no institutional or citation markers.
+- ¶3: Cosmic mechanics of the firmaments presented as process; lacuna preserved; no shift toward audience or contemporary institutions.
+- ¶4: Purification/release language stays within salvation-cosmology (light as substance/process), not moral exhortation; ends in lacuna.
+- ¶5: Still within cosmic architecture (Light Ship, Living Soul as hypostasis). The phrase “perfection of people” is not framed as exhortation here and functions as a cosmological condition within the system rather than an institutional rule.
 
 ---
 
 ## Chapter 36
 ### Concerning the Wheel that exists in front of the King of Honour
 
-*After stripping the dialogue-attribution in ¶1 ("Again the apostle speaks"), the chapter reads as a continuous, impersonal cosmological exposition: the Wheel before the King of Honour, its seals, its function of binding/revealing the rulers’ attempted escapes, and its display of the five shining men. No NT citation formulas, no ecclesial/institutional extension, and no pastoral prescriptions appear. Despite the chapter-level fatigue warning, no actual pastoral vocabulary or seam-pattern institutional graft is present in these paragraphs; the whole unit is essentially core teaching with a small framing tag in ¶1.*
+*This chapter is overwhelmingly substrate-style cosmological exposition: a structural description of the Wheel before the King of Honour (location, function, seals, and its revelatory mechanism). The only clear later material is the dialogue/attribution tag "again the apostle speaks" at the start (a compilation frame marker), which is stripped, leaving otherwise continuous core teaching. No NT citation, exhortation, or institutional application appears.*
 
 ⟨p.88⟩
-[Agai]n the [...] speaks about the wheel that exists in front [of the King of Honour who dwells in] the seventh firmament [...], the root of the rulers above and below in a great and cruel fetter; as the entire will of the great King of Honour is placed in [it]. Also, their entire enmity, which is in the firmaments, is [...] and ensnared in it.
+
+the wheel that exists in front [of the King of Honour who dwells in] the seventh firmament [...], the root of the rulers above and below in a great and cruel fetter; as the entire will of the great King of Honour is placed in [it]. Also, their entire enmity, which is in the firmaments, is [...] and ensnared in it.
 
 It exists in a blaze of splendour [with] ornamentation and great beauty. Now, there are twelve seals in it. The seal between i[s] every firmament and the rulers who are there [... ...] are in it; for should one of them wish to escape, he will be bound [...]. If he should wish to cause a trick in his bond [... will be] apparent and known in [that] wheel [...]. The spheres and stars and [the] leader of all the powers exist there, and can be known by it, in front of the King of Honour.
 
@@ -1545,21 +1516,21 @@ That wheel rese[m]bles, in this respect, a chain in front of the chief guard, fo
 This is also the case for all the rulers who are in the firmaments, and every power of the zone: If they should wish to escape, they shall be recognised and revealed by that wheel. [As] the wheel is like a great mirror, for [the di]scrimination of all things [... is] in it.
 
 **Temporal observations:**
-- ¶1: Opening attribution with “apostle” is a compilation frame element; the remainder is structural cosmology (King of Honour in seventh firmament; rulers bound/ensnared; ‘root’ and ‘fetter’ mechanics), characteristic of the older teaching voice.
-- ¶2: Impersonal, technical description (twelve seals; firmament-by-firmament binding; detection of ‘trick’; cosmic astronomy) without citation or exhortation points to core teaching.
-- ¶3: Numbered structure (twelfth seal) plus systematic cosmological identification (five shining men spread through the zone; wheel ‘displays’ their state) is a classic old expository layer.
-- ¶4: Process/mechanism language (continuous observation; fear constraining powers of mixture; no-escape bond) remains cosmological and non-institutional; no frame/citation markers.
-- ¶5: Brief analogical simile used to explain cosmic function (wheel ~ chain/guard). No ecclesial referents; reads as a didactic illustration within the same technical exposition.
-- ¶6: Concluding generalization of the mechanism (recognised/revealed; mirror; discrimination of all things) continues the impersonal cosmological register typical of the core layer.
+- ¶1: Core cosmological mechanism (wheel as fetter/root binding rulers in the firmaments) is stated in impersonal expository voice, but it is introduced by a later Mani/Kephalaia framing formula identifying the speaker as “the apostle,” which the oldest substrate would not use.
+- ¶2: Systematic, internal-to-cosmos description (firmaments/rulers/seals; escape prevention; wheel as knowledge device) with no audience address or institutional mapping—typical substrate exposition.
+- ¶3: Cosmos→cosmos mapping continues (seal ↔ five shining men ↔ distribution through the zone; wheel displays their locations). No shift toward contemporary institutions; impersonal structural voice.
+- ¶4: Describes an ongoing cosmic control function (observation opposite the King of Honour; fear restraining powers of mixture) without exhortation or citation—fits core mechanism exposition despite lacunae.
+- ¶5: Brief internal analogy (wheel ↔ chain/guarding restraint) functioning as explanation of the same cosmic fettering mechanism; no explicit institutional referent or polemical “nowadays” application marker.
+- ¶6: Closes the mechanism with a correspondential analogy (wheel as mirror for discrimination/revelation) wholly within the cosmological system; no frame/pastoral/NT overlay signals.
 
 ---
 
 ## Chapter 37
 ### Concerning the Three Zones.
 
-*Aside from a brief formulaic opening attribution, the chapter is a compact, impersonal cosmological exposition describing the universe’s zonal suspension: Darkness hung from the sons of the First Man, and the cosmos suspended from the sons of the Living Spirit. The final paragraph is fragmentary but remains within the same cosmological register (King of Honour in the firmaments), with no NT citation or institutional/pastoral drift.*
+*Apart from a brief formulaic heading (¶1), the chapter is continuous impersonal cosmological exposition: a three-zone structural teaching (Darkness-powers hung from the sons of the Man, and the whole edifice suspended from the sons of the Living Spirit), with a further placement of the King of Honour in/above the firmaments. No NT overlay, no pastoral/application address, and no institutional extension seams are present.*
 
-When he built and constructed the worlds, he suspended the zones on their zones, and within another zone also. The first zone is the five powers of darkness, males and females.
+When he built and constructed the worlds, he suspended the zones on their zones, and within another zone also. The first zone is the five powers of Darkness, males and females.
 
 This is why he hung one zone on a zone! He hung the five powers of Darkness on the five shining men, the sons of the Man; because all the enmity is entwined and bound in them.
 
@@ -1568,19 +1539,20 @@ Also, within the zone are the five sons of the [Living] Spirit; because the enti
 And this is the one who came to [ ... ... the fi]rmaments above [ ... ] which is in one zone, is the great [King of Honour] who e[xists ... ] within the [ ... ... ] of the universe.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic/dialogue attribution (“Once again the enlightener speaks...”) marking editorial framing; not part of the systematic teaching itself.
-- ¶2: Impersonal cosmological mechanics (“built/constructed,” “suspended the zones”) and numbered/structured mapping (first zone = five powers) without citation or institutional register.
-- ¶3: Systematic correspondential linkage of sets (five powers ↔ five shining men/sons of the Man) explaining cosmic constraint mechanics; no frame/citation; Darkness treated as an active cosmological category.
-- ¶4: Continues the structured five-fold cosmological architecture (sons of the Living Spirit) with mechanical function (“entire edifice is suspended from them”); lacunose but clearly within the same old expository register.
-- ¶5: Despite heavy lacunae, the paragraph stays in cosmological geography (firmaments, zone, King of Honour, universe) rather than frame/pastoral/NT citation. No clear editorial seam marker; reads as continuation of the cosmological description.
+- ¶1: Formulaic incipit (“Once again the enlightener speaks…”) marking the hagiographic/editorial container rather than the teaching itself.
+- ¶2: Impersonal, structural cosmological mechanics (“built… constructed… suspended… zones”) with internal cosmic entities only; no citation or audience address.
+- ¶3: Systematic cosmos→cosmos mapping (“five… on five…”) explaining structural dependence within the cosmological architecture; expository causal clause, not polemical application.
+- ¶4: Continues the same architectural teaching (edifice “suspended” from a defined fivefold group). Lacunae/uncertainties appear textual, not a register shift.
+- ¶5: Cosmic geography + named cosmological office (King of Honour) situated within the universe/firmaments; no frame formula, exhortation, or institutional referent despite damage.
 
 ---
 
 ## Chapter 38
 ### Concerning the Light Mind and the Apostles and the Saints
 
-*Core material dominates the first ~3/4: systematic macrocosm↔microcosm mapping (universe-as-man; five sons/intellectuals; watch-districts; rebellion mechanics; body-members mapping; Light Mind’s reversal of bindings; new man with five virtues). A clear hagiographic dialogue frame wraps the teaching (disciple questions; ‘apostle says’; closing thanks). The second half shows pastoral drift: church offices/discipline and Mani’s self-panegyric about his apostolate. Paragraph 34 is flagged as an editorial seam (‘Now, also…’) and is treated as a later graft despite cosmological vocabulary.*
+*The dominant layer is an old, systematic macrocosm↔microcosm teaching: the universe built as a human body, the five intellectuals/watch-keepers, and the Light Mind’s work of unbinding the soul’s faculties and binding Sin’s counter-faculties. The second half shows strong late drift into church discipline (teachers/presbyters, brethren, love of the church) and then hagiographic self-praise about Mani’s apostolate. One paragraph is flagged as an editorial seam (¶34); although its surviving wording reads like core microcosm teaching, it is treated as late per the seam rule.*
 
+⟨p.90⟩
 You have told us that the Light Mi[nd] is this one who shall come and assume the saints. [You sai]d it to us like this: He too is one among the gods [...] many gods are with him. You have also told us: [W]hen he enters withi[n the body of] the flesh and binds the ol[d ma]n with his five counsels, he [set]s his five [couns]els upon him in the five limbs [of his] body.
 
 [So], no[w], where is he? In that the old man is chained in the body! For I see how rebellions arise there despite his bondage, from time to time.
@@ -1591,11 +1563,7 @@ The third thing I want you to recount to [me ... ] a holy one is the Mind, and h
 
 Fourthly: If truly the Light Mind exists in [the s]aints, why is his likeness not displayed to us, the way that he is?
 
-The fifth thing I want, for you to tell me and explain about your apostola[te]. Look, it is not clear to me! For they oppress and persecute you in the world.
-
 All that you have unveiled you have [...] in our presence. Yet, I wanted to kno[w ... the] L[igh]t Mind, the way that he is.
-
-If I shall repeat [...] to you about these things that you are so set upon, and they become true f[o]r you after you are so set upon them, will you understand what you [...]? On your account I will give vision to they who see! I will make the living fountain overflow for the thirsty, that they may drink and liv[e].
 
 All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re ... ] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [...] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [...] upon the head of the Porter. His [...] from the [...] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re ...] and the entire zone that belongs [...]
 
@@ -1619,6 +1587,7 @@ And look, see! The Keeper of Splendour is set firm in the great mind, in the cam
 
 Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [...] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [... ] to it.
 
+⟨p.93⟩
 The Adamant [...] the fulfillment. He is set firm upo[n ...] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
 
 Once again: In the watch of the great King of Glory, wh[o] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were ... ] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [...] their ascent was impeded by them [...] the w[ind], the water, and the fire ascend on them.
@@ -1642,32 +1611,32 @@ So also is this body! A mighty power lives here, even if it is small in its stat
 
 Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. Sin raises [up], from time to time, its agitations in the body.
 
-Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [...] they have acted first with a righteous judgement.
+Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the Enmity to initiate error, and do its pleasure for a moment. Then they seize [...] they have acted first with a righteous judgement.
 
 ⟨p.95⟩
-And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [...] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [...]
+Again, look, see! These gods, in that [...] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [...]
 
 (Sin) bou]nd (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
 
-(Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [...], pronouncing to the soul and continually leading it on to every evil thi[n]g, to all the sins of lust, to the worship of idols, to erroneous opinions, to humili[ation]; in the humiliation of slavery! As it is set fast, wors[hipping] the things that [...] will not remain; making obeisance [...] idols of wood and gold and silver [...] worshipping beasts that are unclean and polluted! They are ugly in their appearances and their forms.
+(Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh.
 
 ⟨p.96⟩
 (The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [...] itself, being wicked [...] its own light [...]
 
-The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the sin in the skin.
+The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the Sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the Sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the Sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the Sin in the skin.
 
 ⟨p.97⟩
-This is how he shall release the members of the soul, and make them free from the five members of sin. Conversely, these five members of sin, which were loose, he shall bind them.
+This is how he shall release the members of the soul, and make them free from the five members of Sin. Conversely, these five members of Sin, which were loose, he shall bind them.
 
-He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of sin; and he adds to it his word, so that his [...] becomes nourisher and strengthener [...]
+He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of Sin; and he adds to it his word, so that his [...] becomes nourisher and strengthener [...]
 
-Now, when he shall perf[ect ... the tw]elve members. This [is how ...] and his wisdom. His [...] becomes righteous, as he perf[ects ...] While formerly he was running [...] but instead of this, now he runs [...] his road and his path and his [...] also [he mounts up] to the heights, to the great aeons [...] thus the old man is bound in the [...] and his lust, his [...] his foolishness in these five members of the bo[dy ...] the dark spirit is imprisoned with them in a bond and in severe misery.
+Now, when he shall perf[ect ... the tw]elve members. This [is how ...] and his wisdom. His [...] becomes righteous, as he perf[ects ...] While formerly he was running [...] but instead of this, now he runs [...] his road and his path and his [...] also [he mounts up] to the heights, to the great aeons [...] thus the old man is bound in the [...] and his lust, his [...] his foolishness in these five members of the bo[dy ...] the Dark Spirit is imprisoned with them in a bond and in severe misery.
 
-Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [...] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [...], thus sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
+Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [...] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [...], thus Sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
 
-There are occasions when sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [...]
+There are occasions when Sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [...]
 
-[T]hen, have I taught you, and opened your (sg.) [eyes], as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [...] of the [Li]ght [M]ind.
+how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [...] of the [Li]ght [M]ind.
 
 So al[so] these watch-keepers, for they are set [...] fi[rm in] the zone, (but) they are not visible. Again, this too is the way of the Light Mind, [for he is] not visible in the body.
 
@@ -1678,83 +1647,85 @@ Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are g
 ⟨p.100⟩
 Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of Sin. He limits them and distributes them out. He sets them down at his pleasure.
 
-I have taught you] the deeds of the [Light] Mind! Whoever has an open and percept[ive] eye, [he can] appear to him. Whoever has not that eye, he can not appear to him.
+Whoever has an open and percept[ive] eye, [he can] appear to him. Whoever has not that eye, he can not appear to him.
 
 **Temporal observations:**
-- ¶1: Frame attribution (‘Once again… disciple… apostle’) is later editorial; the embedded teaching summary about Light Mind binding the old man with five counsels is core-style systematic anthropology.
-- ¶2: Substantive problem statement in technical idiom (old man bound; recurring rebellions) without institutional markers; fits the core teaching sequence as a question that presupposes the cosmological-anthropological mechanism.
-- ¶3: Doctrinal question about divine magnitude vs embodiment; no gospel citation or church discipline; functions as an internal philosophical query within core exposition.
-- ¶4: Question continues the same teaching register (purity/defilement problem) without frame formula; likely part of the old catechetical question-set preserved.
-- ¶5: Still in technical soteriological vocabulary; ‘saints’ can be generic for the saved/elect and does not by itself force a later institutional layer.
-- ¶6: Question about apostolate could belong to Mani’s compilation frame, but here it is presented as part of the same numbered question sequence without explicit hagiographic formula; dating uncertain—kept as core-question material rather than the later panegyric answers.
-- ¶7: Pure entreaty formula (‘I entreat you’) typical of Kephalaia dialogue scaffolding.
-- ¶8: Direct speech attribution + ‘revelation… declared to my church’ functions as editorial/hagiographic apparatus and institutional self-positioning.
-- ¶9: The address to ‘apostle’ is frame; the remaining line is a simple transition back to the core topic (nature of the Light Mind).
-- ¶10: Speech-attribution is later; the remaining rhetoric is still closer to instructional preface than institutional rule or NT citation, and serves as introduction to the technical exposition.
-- ¶11: Classic core macrocosm-as-human mapping in impersonal systematic mode; dialogue attribution is secondary.
-- ¶12: Continues the systematic body-universe correspondence; no frame/citation.
-- ¶13: Still expository, linking macrocosmic structure to named beings and the ‘five sleepless guardians’ scheme—core cosmological taxonomy.
-- ¶14: Numbered/intellectual mapping of cosmic officials to faculties (mind/thought/insight/counsel/consideration) in firmaments—core system exposition.
-- ¶15: Systematic ‘five + summons/obedience = six’ structure with named beings; impersonal doctrinal voice—core.
-- ¶16: Core cosmological identification of the Mind with Pillar of Glory/Perfect Man.
-- ¶17: ‘Jesus the Youth’ appears as a cosmic hypostasis within a functional hierarchy (not a Gospel citation), so it belongs to core cosmology.
-- ¶18: Impersonal mechanics of watch-district security; part of the macrocosmic governance schema.
-- ¶19: Narrated cosmic-process mechanics (rebellion; mixing; descent; formation of trees/sea uprising) with personified Sin—core mythic-historical cosmology.
-- ¶20: Core cosmic history of the Watchers and revelation of crafts; still within watch-district schema.
-- ¶21: Begins as core cosmological myth (abortions, Adam/Eve, lust mechanics) but ends with explicit institutional vocabulary (‘churches’, ‘apostles’) that reads like later community aktualisierung.
-- ¶22: Core: numbered/triadic structures (‘three wheels’, ‘three earths’) and ascent-path mechanics tied to the Ambassador’s image.
-- ¶23: Still within the watch-district disturbance catalog; no church/NT markers.
-- ¶24: Core functional role of Pillar of Glory as cosmic support; process-oriented.
-- ¶25: Core mythic resolution mechanism (four angels; chaining; prison).
-- ¶26: Cosmic Jesus as agent in anthropogony/containment; ‘five sons’ motif; no NT citation formula.
-- ¶27: Core process mechanics of elemental ascent; Jesus as cosmic technician, not Gospel narrative.
-- ¶28: Continuation of core cosmic repair narrative within watch-district schema.
-- ¶29: Speech attribution marks frame; the content is a structural summation of the preceding watch-district catalog (core).
-- ¶30: Macrocosm→microcosm correspondence pivot stated in impersonal doctrinal terms; personified Sin/Light Mind mechanics—core.
-- ¶31: Systematic correspondence (‘watch-district of the Mind’ = body) and recurring agitation motif; core teaching voice.
-- ¶32: Theodicy-like explanation in impersonal expository register; no institutional prescriptions.
-- ¶33: Core analogy explaining containment of great beings in limited stations; no citation or church markers.
-- ¶34: Seam flag: ‘Now, also’ bridge + apparent shift into applied/instructional transition. Treated as an editorial graft; do not extract its cosmological-looking opening as core per seam rule.
-- ¶35: Systematic five-fold body/faculty mapping—hallmark core correspondential anthropology.
-- ¶36: Despite moralizing catalog, the paragraph is driven by a technical five-fold mechanism (Sin’s five powers overlaying soul faculties; five angels/authorities). This is characteristic of core explanatory anthropology, not institutional rule or NT overlay.
-- ¶37: Core soteriological-psychological diagnosis (forgetfulness of origin) in impersonal voice; not church discipline.
-- ¶38: Technical reversal schema (unbind/bind) across the five-member mapping; core mechanics.
-- ¶39: Summative statement of the five-fold liberation/imprisonment mechanism; core.
-- ¶40: Core transformational anthropology: new man construction + five virtues mapped to faculties; strongly systematic and processual.
-- ¶41: Numbered structure (‘twelve members’) + ascent mechanics; binding of old man/dark spirit—core cosmological psychology.
-- ¶42: Core governance metaphor internal to the five-virtue schema; acknowledges recurring affliction as part of mechanics.
-- ¶43: Core psychological mechanism (Sin clouding faculties) stated in process terms, not institutional prescription.
-- ¶44: Institutional vocabulary (‘in the church’, ‘teachers’, ‘presbyters’) and communal corrective procedure; this is church operational material, not the oldest cosmological layer.
-- ¶45: Continues disciplinary scenario (rebuke/edification by brethren/helpers) within church context; pastoral institutional layer.
-- ¶46: Behavioral description tied to separation from ‘teacher and brethren’; solitary practice markers—pastoral admonition layer.
-- ¶47: Explicit church gathering of ‘wise ones of the church’ for correction; pastoral.
-- ¶48: A concluding maxim inside the disciplinary sequence; still part of pastoral paraenesis.
-- ¶49: Institutional relations (‘teacher’, ‘instructor’, ‘love of the church’, ‘brethren’) dominate; this is community management, not core cosmological exposition.
-- ¶50: Outcome described in terms of separation from the church and return to worldliness; ‘apostle who sent him’ reflects institutional hierarchy; late layer.
-- ¶51: Summative correspondence statement returns to macrocosm (‘zone/camps’) and Light Mind disturbance; largely core, though rhetorically addressed to a ‘you’.
-- ¶52: Core analogy: invisible macrocosmic watch-keepers ↔ invisible Light Mind in body.
-- ¶53: Core ‘great-becoming-small’ stationing logic; explanatory, not exhortative.
-- ¶54: Core purity-without-defilement argument via macrocosmic analogy; impersonal doctrinal voice.
-- ¶55: Core: watch-district governance of the body; process mechanics.
-- ¶56: Though it includes ascent-to-the-Father language, it is tied to ‘the elect one’ and devotional ascent practice; given chapter’s strong late pastoral drift here, this reads as community spirituality instruction rather than the older systematic macro/micro mapping.
-- ¶57: Dialogue attribution is late; the remaining aphoristic criterion of perception functions as a closure to the core teaching about invisibility/recognition.
-- ¶58: Transition to Mani’s self-referential ‘my work/leadership’ topic; functions as editorial/hagiographic shift rather than cosmological instruction.
-- ¶59: First-person self-panegyric (‘single Manichaios… submit to me’) typical of hagiographic/apostolic legitimation; not core cosmology.
-- ¶60: Continuation of autobiographical victory narrative; rhetoric of conquest by word; hagiographic frame layer.
-- ¶61: First-person apologetic about kings opposing ‘this truth’; biographical legitimation—frame.
-- ¶62: Claims about granting freedom to ‘children/brothers/kin’; institutional-founder rhetoric—frame.
-- ¶63: ‘Breastplate of wisdom’ applied to Mani’s ‘children’; founder/leader discourse—frame.
-- ¶64: Explicit church-building administration (‘elect[ion]’, ‘church’, appointments, sending apostles/ambassadors) is institutional program material—pastoral layer.
-- ¶65: Comparative boasting over former apostles ‘apart from Jesus’ and repeated ‘apostles’ rhetoric; hagiographic legitimation.
-- ¶66: Triumphal claim about opening a ‘door’ to gods/angels/mankind; still part of the apostolate panegyric rather than systematic cosmology.
-- ¶67: Conventional closing response of disciples (praise, promise obedience/commandments); classic Kephalaia hagiographic closure.
+- ¶1: Substantive doctrinal question about Light Mind/old man/five counsels is teaching content, but the opening ‘Once again… disciple… [apostle]’ is a late dialogue frame.
+- ¶2: Direct problem-statement within the doctrine (old man bound yet rebelling); no citation, no institutional application.
+- ¶3: Cosmological/theological question (great God in small body) preparing systematic answer; no institutional markers.
+- ¶4: Teaching question about purity/defilement tension; still within microcosm teaching register.
+- ¶5: Doctrinal question about invisibility/manifestation; stays within the teaching problem-space.
+- ¶6: Asks about ‘your apostolate’ and persecution ‘in the world’—biographical/institutional turn setting up later hagiographic material rather than substrate cosmology.
+- ¶7: Formulaic entreaty/pleading (‘I entreat you’) functions as dialogue apparatus.
+- ¶8: Self-referential claim about revelation declared to ‘my church’—editorial/institutional framing voice.
+- ¶9: Substantive query about the Light Mind is teaching-directed, but the attributional tag is compilation frame.
+- ¶10: Begins with ‘Then the apostle says…’ and uses rhetorical promise imagery; functions as staged speech rather than systematic cosmological mapping.
+- ¶11: Classic correspondential substrate: cosmos-as-human body-part mapping, impersonal and structural; only the attribution is late.
+- ¶12: Continues systematic body↔cosmos correspondences; internal mapping only.
+- ¶13: Cosmic anthropology and watch-keeper motif; slight moral vocabulary (‘sinner’) but remains within cosmological architecture.
+- ¶14: Old systematic mapping of cosmic rulers to intellectual faculties (mind/thought/insight/counsel/consideration) and their stations; impersonal expository voice.
+- ¶15: Numbered/structured cosmological scheme (five + sixth via summons/obedience) characteristic of substrate teaching.
+- ¶16: Macrocosmic identification of Mind with Pillar of Glory/Perfect Man—systemic cosmology.
+- ¶17: ‘Jesus the Youth’ appears as a defined cosmic function (word/utterance/obedience), not as a Gospel citation; thus part of the cosmological system.
+- ¶18: Watch-district/camp stabilisation belongs to the macrocosmic mechanics; no institutional ‘pointing-at’.
+- ¶19: Mythic-cosmic process narrative; Sin acts as an agent within the system (mixing, descending, forming).
+- ¶20: Cosmic-history account of Watchers; ‘people’ appears as mythic humanity, not contemporary institutional application.
+- ¶21: Begins as cosmic rebellion/mythic anthropology; then crosses boundary into cosmos→community ‘pointing-at’ (church persecution), indicating later application.
+- ¶22: Systemic cosmology (three wheels/three earths; ascent mechanics of wind/water/fire) in impersonal explanatory mode.
+- ¶23: Cosmic ‘Porter’ and foundational fastenings belong to macrocosmic mechanics; no institutional reach.
+- ¶24: Internal cosmological causality (earthquake → Pillar of Glory intervention) in system terms.
+- ¶25: Cosmic enforcement/containment narrative; remains mythic-cosmological.
+- ¶26: Cosmic salvation intervention (Jesus as operative being) tied to five sons; no NT citation formula.
+- ¶27: Mechanistic cosmology (springs/tracks/ascent of elements) expressed through mythic actors; stays internal.
+- ¶28: Continuation of internal macrocosmic repair narrative (fastenings beneath the Porter).
+- ¶29: Summative macrocosmic teaching (‘watches of the zone’) is core; ‘apostle’ attribution is late frame.
+- ¶30: Macrocosm→microcosm correspondence stated directly; Sin/old man as internal cosmic agents.
+- ¶31: Explicit correspondence: outer watch-districts ↔ body of flesh; impersonal explanatory voice.
+- ¶32: Doctrinal theodicy within cosmic system (Light powers’ foreknowledge; Enmity permitted briefly). Direct address, but not institutional application.
+- ¶33: Core here is the analogical explanation (gods ‘enclosed’ in assigned places like trees by taproot), a structural cosmological principle; the question-tag reads like compilation apparatus.
+- ¶34: Editorial seam flag present (“Now, also…”)—treated as a late graft per the seam rule, though the extant wording otherwise resembles core microcosm teaching; dating is uncertain but classified late due to seam detection constraint.
+- ¶35: Canonical substrate microcosm mapping: five faculties ↔ five body tissues; purely internal correspondence.
+- ¶36: Begins as strict faculty-on-faculty binding scheme; then pivots into institutional/polemical ‘idolatry’ application, marking later ‘pointing-at’ usage.
+- ¶37: Religious-psychological mechanism (forgetting essence/kindred) expressed as internal soteriology; no church discipline register.
+- ¶38: Pure substrate mechanics: reversal binding/unbinding at each correspondential site (bone/sinew/vein/flesh/skin) with Sin as a cosmic agent.
+- ¶39: Summative degree-structure (five vs five) in impersonal explanatory voice.
+- ¶40: Systematic five-fold reconstitution (faculties → virtues) still operates by correspondential placement; slightly more ‘virtue’ lexicon, but remains internal mechanism rather than exhortation.
+- ¶41: Degree-structure (‘twelve members’) plus ascent mechanics; ends with imprisonment of the Dark Spirit alongside the bound old man.
+- ¶42: Internal kingship hierarchy (Light Mind over new man’s virtues) and recurrence model (‘from time to time’)—system explanation, not church practice.
+- ¶43: Psychological-correspondential account of relapse as Sin clouding faculties; still within microcosmic mechanics.
+- ¶44: Explicit church institutional scene (‘in the church’, ‘teachers’, ‘presbyters’)—cosmos used to manage community discipline.
+- ¶45: Application/exhortation voice with ‘brethren’, rebuke/edification, communal correction; even with ‘Light Mind and sin’, the whole paragraph functions as pastoral discipline.
+- ¶46: Behavioral portrait (separates from teacher/brethren; solitary eating/walking) is institutional moralising, not cosmological exposition.
+- ¶47: Church-based intervention (‘wise ones of the church’) and conditional counsel (‘if now…’) signal late pastoral application.
+- ¶48: Brief exhortative possibility statement about victory over sin within a pastoral sequence.
+- ¶49: Directly targets ‘love of the church’ and relations with teacher/brethren—explicit institutional horizon.
+- ¶50: Continues institutional consequences (‘separates from the church’, ‘go to the apos[t]le who sent him’) and moralising metaphors—late church layer.
+- ¶51: Core is the macrocosm↔microcosm correspondence summary (disturbance in zone-camps ↔ disturbance in Light Mind’s watch-district); the ‘I taught/opened your eyes’ is a late didactic tag.
+- ¶52: Pure correspondential analogy (invisible outer watch-keepers ↔ invisible Light Mind in body).
+- ¶53: Macrocosmic-to-microcosmic ‘great yet made small’ principle; stays within system (task/place/measure).
+- ¶54: Purity-in-mingling analogy: cosmic gods not defiled despite placement; applied to Light Mind—internal correspondence.
+- ¶55: Systemic functional description of Light Mind as governor over ‘watch-districts’ and deliberations; no institutional ‘pointing-at’.
+- ¶56: Shifts into community category (‘elect one’) and present-tense experiential description (‘now may you find him… stands on the earth’), moving from system mechanics to lived/institutional application.
+- ¶57: Core gnosis criterion (perceptive eye → visibility) remains; attributional staging is late frame.
+- ¶58: Transition to ‘my work… my leadership’ signals hagiographic turn rather than cosmological substrate.
+- ¶59: Autobiographical boast (‘a single Manichaios… the races… submit to me’) is hagiographic/apostolic self-presentation.
+- ¶60: Victory-over-kings rhetoric (‘cities… countries… bless my name’) is biographical propaganda, not substrate mapping.
+- ¶61: Direct address (‘Understand also…’) plus kings/nobles opposition is hagiographic/apologetic voice anchored in the historical world.
+- ¶62: Claims about freeing ‘children/brothers/kin’ are institutional leadership claims; application voice dominates.
+- ¶63: Boast about ‘breastplate of wisdom’ and invincibility of ‘my children’ is community-leader rhetoric, not cosmological correspondence.
+- ¶64: Explicit institutional construction (‘elect[ion]’, ‘apostle… of the church’, ‘I have made my church strong’) is late hagiographic/community layer.
+- ¶65: Comparative apostolic supremacy claim (‘former apostles… apart from Jesus’) is hagiographic/sectarian legitimation.
+- ¶66: ‘Door opened by me’ to gods/angels/mankind is triumphal self-attribution—hagiographic rather than impersonal core.
+- ¶67: Closing response/praise and commitment to ‘commandments’ is standard concluding frame and pastoral reinforcement.
 
 ---
 
 ## Chapter 39
 ### Concerning the Three Days and the Two Deaths
 
-*The chapter’s teaching substance is largely a systematic eschatological-cosmological sequencing (three ‘days’ + two ‘deaths’) in an impersonal explanatory mode. The opening dialogue apparatus (apostle/disciple exchange) is a later hagiographic frame. The latter part shows some institutional/Christianized moral-ecclesial coloring (“sinful men”, “blasphemed… the Holy Spirit”), consistent with the chapter-level editorial-fatigue warning; however most paragraphs remain cosmological-process exposition rather than church rule. No explicit NT citation formulas appear.*
+*Dominantly cosmological-eschatological teaching: a numbered temporal schema (three “days” and two “deaths”) expressed wholly within Mani’s cosmic system (First Man descent/rescue; Ambassador’s purification; dissolution/fire/Last Statue; new aeon/new earth; Father’s unveiling). A thin dialogue frame opens the chapter, and the “second death” section shows a late moral/Christianizing rationale (“blasphemed … the Holy Spirit”), but the mechanism of death remains largely cosmic (loss of light/air/breath; separation from the Last Statue).*
+
+Happen you know, my beloved ones, that there exist three great mighty days in all; and also two great and bitter deaths.
 
 The first day is our father, the Man. From the time when the First Man went down to the abyss of darkness and drowned in it; and the Living Spirit was sent, who went and bore him up. After the Man had ascended, the Father of Life and the Great Spirit set things in order, and the worlds above and below.
 
@@ -1774,89 +1745,89 @@ Now, when they dwell in their aeons, they will become rich beyond measure, for e
 
 These are the three great days, [which the Father of Greatness has given number to in the reckoning].
 
-In contrast, the two deaths that I have proclaimed to you are these.
-
 ⟨p.104⟩ The first death is from the time when the light fell to the darkness, and was mixed in with the rulers of darkness; until the time when the light will become pure, and be separated from the darkness in that great fire. The remainder left behind there can build and add to that Last Statue.
 
-Now, the second death is the death in which the souls of sinful men shall die; when [they will] be stripped of the shining light that illuminates the world. And also they are separated from the living air, from which they receive [living] breath; and they are deprived of this living soul, which [ ... ] in the world; and they are separated and swept away from this Last Statue [ ... ... ] and bound on [ ... ... ] the female will become [ ... ] their torture and their affliction; for their deeds [ ... ] those three places;
+Now, the second death is the death in which the souls of sinful men shall die; when [they will] be stripped of the shining light that illuminates the world. And also they are separated from the living air, from which they receive [living] breath; and they are deprived of this living soul, which [ ... ] in the world; and they are separated and swept away from this Last Statue [ ... ... ] and bound on [ ... ... ] the female will become [ ... ] their torture and their affliction;
 
 These are the two deaths. The first death is temporal; [but] the second death is eternal. It is the sec[ond deat]h!
 
 **Temporal observations:**
-- ¶1: Formulaic opening and dialogue attribution (“Once again the apostle…”) marks the Kephalaia hagiographic frame; even though it introduces the numbered schema, the attribution and address are later editorial packaging.
-- ¶2: Disciples’ question in direct speech is classic dialogue-frame scaffolding used to stage the teaching.
-- ¶3: Minimal dialogue link (“He speaks to them.”) functions purely as editorial connector, not teaching content.
-- ¶4: Systematic cosmological narration using core Manichaean beings (First Man, Living Spirit, Father of Life) in explanatory sequence; impersonal ‘from the time when…until…’ temporal mechanics.
-- ¶5: Core cosmological-process exposition: named cosmic agent (Ambassador), purification mechanics, eschatological dissolution/fire/Last Statue, and the ‘five sons’ degree-structure.
-- ¶6: Concise correspondential definition linking ‘death’ to ontological mixing of Darkness with the five sons—typical core light/dark mechanics, not moral exhortation.
-- ¶7: Systematic eschatological sequencing (‘second day is the time when…’) with cosmic geography (new aeon/new earth) and ‘unveiling’ motif; not framed as citation or church rule.
-- ¶8: Structural correspondential measure/equivalence statement (duration-mapping) in impersonal explanatory voice.
-- ¶9: Extended cosmological-eschatological description of ‘unveiling’, treasury, ambrosia/perfume imagery; no NT citation vector; reads as core visionary teaching despite lacunae.
-- ¶10: Impersonal ‘mechanics’ of restoration: measures, stature, placing each power in its aeon—systematic ordering language characteristic of the teaching layer.
-- ¶11: Eternity/time-nullification motif (‘not count… days… hours’) and permanent unveiling—continuous with the systematic eschatological sequence rather than institutional exhortation.
-- ¶12: Closure of a numbered schema attributed to a high cosmological principle (Father of Greatness) rather than to scripture/church authority; fits core classificatory style.
-- ¶13: Structural transition marker (‘In contrast…’) continuing the same classificatory framework; no institutional or citation signals.
-- ¶14: Classic Manichaean process description: fall/mixing, rulers of Darkness, purification by great fire, remainder contributing to Last Statue—core cosmological mechanics.
-- ¶15: Paragraph largely preserves old ‘second death’ mechanics as separation from cosmic life-substances, but ends with explicitly Christianizing/para-ecclesial diction (‘blasphemed… the Holy Spirit’) functioning as moral condemnation rather than process exposition.
-- ¶16: Schematic summary contrasting temporal vs eternal death; remains within the classificatory teaching voice without citation or church regulation.
+- ¶1: Mixed because a late dialogue-attribution frame (“Once again… apostle… disciples”) introduces a compact numbered cosmological schema (three days/two deaths) that functions as the chapter’s structural teaching.
+- ¶2: Formal Q&A setup (“they say to him… Tell us our father…”) characteristic of the Kephalaia compilation frame.
+- ¶3: Minimal speech-attribution (“He speaks to them.”) serves only as narrative linkage in the dialogue frame.
+- ¶4: System-internal cosmological history in impersonal, process-oriented sequence (First Man descent; Living Spirit rescue; ordering of worlds). No institutional or NT citation vectors.
+- ¶5: Cosmic offices and mechanisms (Ambassador, ship of the day, purification of Light, dissolution/fire, Last Statue, five sons) remain entirely within the Manichaean architecture—typical core substrate exposition.
+- ¶6: A tight definitional correspondence (death = Darkness-mixing with the five sons) inside the cosmological system; no application to contemporary institutions.
+- ¶7: Eschatological scheduling framed as cosmic enthronement/reign in the ‘new aeon/new earth’ until a divine unveiling—still system-internal time-structure teaching.
+- ¶8: Explicit temporal-measure correspondence (duration of reign = measure of earlier affliction) is characteristic of the older classificatory/numbering pedagogy.
+- ¶9: Unveiling/treasury/ambrosia-perfume imagery operates as cosmic process (divine disclosure and reconstitution). No Gospel citation; language reads as internal eschatological ritual of the Father’s realm.
+- ¶10: Degree/order-setting formula (“each power in its aeon… dwelling-place”) and restoration “in same measure” indicate systematic cosmological arrangement rather than pastoral exhortation.
+- ¶11: Timelessness motif is framed cosmologically (cessation of counting days/hours; permanent unveiling of the Father), not as ethical instruction or ecclesial application.
+- ¶12: Closing of a numbered schema (‘given number… in the reckoning’) is a core pedagogical marker (structured cosmological classification).
+- ¶13: Transition in first-person address (“I have proclaimed to you”) functions as discourse management within the dialogue presentation, not as cosmological exposition.
+- ¶14: Defines death as a cosmological mixing/separation process culminating in the great fire and Last Statue—classic system-internal mechanics.
+- ¶15: Mixed: the main body defines ‘second death’ via cosmic deprivation/separation (Light, living air/breath, living soul, Last Statue), but the ending pivots to a moralized, NT-resonant rationale centered on ‘blaspheming… the Holy Spirit’—likely later overlay language.
+- ¶16: Schematic closure distinguishing temporal vs eternal death fits the numbered classificatory teaching; no institutional graft or explicit NT citation formula.
 
 ---
 
 ## Chapter 40
 ### Concerning the Three Things that were established by the Light
 
-*The chapter opens with a clear hagiographic dialogue frame (¶1). The remaining material is predominantly impersonal, systematic eschatological cosmology: a numbered triad (three results established by the Light) with mechanistic purpose (binding/separating the enemy/Darkness) and the technical doctrine of the final lump/coffin/prison (¶2–6). Despite the chapter-level pastoral drift signal, the allegedly ‘pastoral’ vocabulary in ¶5 functions inside a cosmological-eschatological mechanism (condemnation/crucifixion on the enemy) rather than church discipline, so it is retained as core.*
+*After a brief hagiographic opening, the chapter is dominated by a compact, systematic eschatological teaching: a threefold set of necessary results ‘fashioned by the Light’ to bind the Enemy and finalize separation. Despite the chapter-level signal of pastoral drift in the second half, the latter paragraphs remain primarily cosmic-internal (final lump/coffin/prison/boundary/sterilisation). Paragraph 5 shows moral-judgment diction (‘sinners’, ‘deeds’, ‘woe’) that could reflect later moralizing, but it still functions as the third term of the same cosmological necessity-structure.*
 
-Three things would be fashioned by the Light through necessity. For there can be no other way nor other result, to allow them to stay without coming about. For the darkness, the enemy, must be bound by them; he who stood up against the Light from the beginning. Due to this, these things have no (other) result, to allow them to stay without coming about.
+Three things would be fashioned by the Light through necessity. For there can be no other way nor other result, to allow them to stay without coming about. For the Darkness, the Enemy, must be bound by them; he who stood up against the Light from the beginning. Due to this, these things have no (other) result, to allow them to stay without coming about.
 
 Now, the first thing is the new luminous earth, which was set and built on top of this earth [ ... ] it, namely that alien body [ ... ] built upon it.
 
-The second thing is this: They will [ ... ] and they [ ... ] the new earth, the coffin [ ... ] ⟨p.105⟩ of the dark fire, the companion of the enemy.
+The second thing is this: They will [ ... ] and they [ ... ] the new earth, the coffin [ ... ] ⟨p.105⟩ of the dark fire, the companion of the Enemy.
 
-The third thing is the souls of all the sinners who have been condemned by their deeds. They were [ ... ] over them woe; they have been condemned according to the wicked deeds they had committed, and due to this they will be crucified on the enemy, he who had raised himself up against the greatness.
+The third thing is the souls of all the sinners who have been condemned by their deeds. They were [ ... ] over them woe; they have been condemned according to the wicked deeds they had committed, and due to this they will be crucified on the Enemy, he who had raised himself up against the greatness.
 
-They will seal up this final lump when all the likenesses and images of every shape will be nailed in it. Also, those will be bound by this last fetter for eternity, and be placed as a footstool and a mat and a rag for this coffin [ ... ] which is the prison of the enemy. It will be placed, being a boundary-marker and a great void between the two, between the darkness and the enemy, so that they cannot reach one another, nor can they hear their voices; rather they will become sterile as they are separated from each other for ever and ever.
+They will seal up this final lump when all the likenesses and images of every shape will be nailed in it. Also, those will be bound by this last fetter for eternity, and be placed as a footstool and a mat and a rag for this coffin [ ... ] which is the prison of the Enemy. It will be placed, being a boundary-marker and a great void between the two, between the Darkness and the Enemy, so that they cannot reach one another, nor can they hear their voices; rather they will become sterile as they are separated from each other for ever and ever.
 
 **Temporal observations:**
-- ¶1: Formulaic opening attribution (“Once again he speaks to his disciples…”) is a classic Kephalaia hagiographic container, not the teaching substrate.
-- ¶2: Impersonal, necessity-driven cosmological exposition; no citations, no institutional address. Sets up a numbered structure (three things) with explicit Light–enemy mechanics.
-- ¶3: Numbered itemization (“the first thing”) in an eschatological-cosmological register (new luminous earth built over this earth). No frame/pastoral markers.
-- ¶4: Continues the systematic triad with technical eschatological imagery (coffin/prison mechanics) and enemy/dark fire vocabulary characteristic of core cosmology.
-- ¶5: Despite moralizing terms (“sinners”, “deeds”), the paragraph functions as the third member of the cosmological triad and specifies an eschatological mechanism (crucifixion on the enemy) rather than institutional/ethical instruction; no church vocabulary or editorial seam markers.
-- ¶6: Highly mechanistic eschatological cosmology: ‘final lump’, eternal fetter, boundary-marker/void separating Darkness and enemy to prevent communication and ensure sterility—classic impersonal system-description consistent with the oldest teaching layer.
+- ¶1: Formulaic hagiographic frame (‘Once again he speaks to his disciples…’) marking the editorial dialogue container rather than teaching content.
+- ¶2: Impersonal, structural voice (‘through necessity… no other result’) describing cosmic constraint and purpose (binding Darkness/Enemy) wholly within the system; no exhortation, no citation, no institutional application.
+- ¶3: Enumerated degree-structure (‘the first thing’) with cosmological architecture (new earth built over this one); stays cosmos→cosmos.
+- ¶4: Second term of the same threefold necessity; ‘coffin’ imagery functions as cosmological mechanism of confinement, not moral exhortation or institutional targeting.
+- ¶5: Continues the numbered triad (‘The third thing’), preserving the same eschatological mechanism (souls fixed/crucified on the Enemy). The strong moral-judgment diction and the chapter’s second-half pastoral drift could indicate later moral coloring, but the paragraph still reads as part of the closed cosmological necessity-sequence rather than church discipline.
+- ¶6: Fully mechanistic cosmological closure: sealing, fetter, prison/coffin, boundary-marker/void, sensory separation (‘cannot hear’), and sterilisation-by-separation—classic system-internal eschatological engineering with no contemporary-world application.
 
 ---
 
 ## Chapter 41
 ### Concerning the Three Blows that befell the Enemy because of the Light.
 
-*Despite a brief dialogue/frame seam in ¶1, the chapter is dominated by impersonal, systematic eschatological-cosmological exposition: a numbered threefold structure detailing successive defeats/bindings of the Enemy by Light powers. No NT citation or institutional/pastoral extension appears in the transmitted paragraphs; the reported chapter-level fatigue signal is not borne out in this excerpt.*
+*This short chapter is largely continuous cosmological-eschatological exposition structured as a threefold sequence of "blows" (three wars) culminating in final separation and binding. The only clear later layer is the dialogue/frame attribution at the start (paragraph 1). Otherwise the language stays cosmos→cosmos (Enemy/Darkness, Living Soul, fire, fetter, archetype, separation male/female, lump/tomb) without institutional or NT overlay.*
 
 The Darkness itself, the Enemy, has received three bad blows with three wars; and worse dangers from the Light in those three wars.
 
-The first: (The enemy) was brought out to the middle and separated from his dark earth, whence he had departed. He was vanquished in that first war, caught and [bound] by the living soul.
+The first: (The enemy) was brought out to the middle and separated from his dark earth, whence he had departed. He was vanquished in that first war, caught and [bound] by the Living Soul.
 
 The second blow is the time when he will be dissolved and melted, and he perishes in this great fire. He is destroyed and overthrown, from the images that are all by which he exists. And he will be gathered in [to the] fetter corresponding to his archetype, and be made like he was from the first beginning.
 
-The third blow that will befall the Enemy is the 'rolling back' [at the] end when everything will be separated, and male will be divided [from] female. Now, the male will be bound in the lump, but the female [will be thrown] in to the tomb. For it will be divided [ ... by a great] stone in their midst, for generation upon generation, for ever and ever.
+The third blow that will befall the enemy is the 'rolling back' [at the] end when everything will be separated, and male will be divided [from] female. Now, the male will be bound in the lump, but the female [will be thrown] in to the tomb. For it will be divided [ ... by a great] stone in their midst, for generation upon generation, for ever and ever.
 
 ⟨p.106⟩ This is the way that the binding of the enemy will come about, in a fetter that is burdensome and strong, one from which there is never escape; because [they have achieved] his binding and bound him for ever. And they have achieved his being set apart, and he has been set apart for ever.
 
 **Temporal observations:**
-- ¶1: Opening formula (“Once again… says:”) signals compilation frame; the remaining sentence is a schematic, impersonal, numbered teaching incipit typical of the core layer.
-- ¶2: Numbered sequence (“The first”), cosmological geography (“middle”, “dark earth”), and named salvific power (“living soul”) in expository voice indicate core cosmological teaching.
-- ¶3: Systematic eschatological mechanics (dissolution, melting, fire, reconstitution “like… from the first beginning”) and technical correspondential language (“archetype”) in impersonal exposition mark an old teaching stratum.
-- ¶4: Completes the numbered triad with eschatological separation and binding imagery (lump/tomb; great stone). No ecclesial instruction or citation; this reads as core mythic-cosmological exposition (even if rhetorically heightened).
-- ¶5: Summative, process-focused closure of the cosmological sequence (binding/set-apart forever) without hagiographic rejoicing, church discipline, or NT appeal; retains core eschatological mechanism language.
+- ¶1: Opening is a classic compilation frame marker (“Once again… says”), but the remaining sentence is impersonal, structural teaching introducing a numbered threefold cosmological schema (three blows/three wars).
+- ¶2: Systematic first item of a numbered triad; purely cosmological mechanics (spatial relocation, separation from dark earth, binding by a named cosmic hypostasis). No audience-address or institutional application.
+- ¶3: Eschatological process-description remains internal to the mythic system (dissolution, great fire, reduction to archetype, return to first beginning). The correspondential term “archetype” and “fetter corresponding to…” reads like substrate-style cosmological mapping.
+- ¶4: Continues the third item of the triad with final-separation cosmology (male/female division, lump/tomb, stone barrier) without pivoting to polemic, exhortation, or church practice.
+- ¶5: Summative closure of the cosmological mechanism (binding, fetter, irrevocable separation) still expressed as impersonal system-description; no Gospel citation, no institutional extension, no second-person exhortation.
 
 ---
 
 ## Chapter 42
 ### Concerning the Three Vessels
 
-*The chapter is overwhelmingly systematic cosmological exposition (Living Spirit, three vessels/garments, discharge-and-sweeping mechanics, and a numbered list of twelve advantages). The only clearly later material is the dialogue frame (disciples’ question; speech attributions). A small late institutional/pastoral intrusion appears where fasting is invoked as a contemporary benchmark; that sentence is removed as a later graft inside an otherwise cosmological paragraph. The chapter-level “formulaic opening” and the strong editorial-fatigue signal match the presence of heavy frame at the start and a mild drift toward community-referential language later, but most of the second half remains cosmological rather than institutional.*
+*The chapter is dominated by a systematic cosmological explanation (doctor/medicine and childbirth analogies) mapping three dark vessels and three living garments of the Living Spirit, followed by a twelve-fold list of advantages. The opening and a few connective attributions are later dialogue-frame scaffolding. In the second half the rhetoric drifts toward present-tense/human-institutional application (e.g., fasting; “apostles”), consistent with the flagged editorial fatigue; these portions are late additions or expansions rather than the oldest substrate.*
 
-Happen you know, my beloved ones, that when these vessels were discharged, they were discharged in [ ... ] slaughter, but those [ ... ] these vessels from them.
+Tell us, our master, and instruct us about these three vessels that [ ... ] and were discharged from above, and how they were discharged and separated from all the rulers who are arranged in the heavens. For it is a necessity for us to know the manner in which the three vessels have been discharged, while the rulers were flourishing in their body.
+
+when these vessels were discharged, they were discharged in [ ... ] slaughter, but those [ ... ] these vessels from them.
 
 ⟨p.107⟩
 They are like the form of a man who has fallen into a purulent sickness. Other wounds and diseases are in his body, and even bile and other poisons are in his inner limbs. He achieves good health by a wise doctor, who gives him one remedy to drink that causes his purulent sickness to break out above, and gives him another medicine to drink that causes his sickness to discharge below, and he gives him yet another medicine to drink that cures his wounds for him [ ... ] calmly and silently.
@@ -1886,16 +1857,13 @@ The first deed is this: So that evil-doing does not increase in the universe, ne
 
 The [first is / ...]
 
-The second is error [ ... ... ] Indeed, about this I have spoken to you as I [ ... ] For, if it were so, if [the vessel of water] had not been swept down from above, but rather the waters existing up till now in the rulers above [ ... / ... the] torrents that would flow [ ... ] and the droplets that would [ ... ] down, so lust would have sprouted [ ... i]n the trees and in the fruits as well as all flesh [ ... ] down [ ... / t]oday [ ... ] you could not find a single person [ ... ] in the [ ... ... ] a saint does [ ... ] is master of [ ... ]
+The second is Error [ ... ... ] For, if it were so, if [the vessel of water] had not been swept down from above, but rather the waters existing up till now in the rulers above [ ... / ... the] torrents that would flow [ ... ] and the droplets that would [ ... ] down, so lust would have sprouted [ ... i]n the trees and in the fruits as well as all flesh [ ... ] down [ ... /
 
-Not only this, but if the vessel of darkness had not been swept out and thrown down to the earth, nor swept from the earth and cast outside the region of the worlds into this pit; again the drops of darkness, which will drip down from it, and the torrents that will continue to flow down from above to the earth and assume the trees and all flesh, would have multiplied, and the forgetfulness that is in a thousand people today you would have found in just one person. There is not one among mankind [ ... ] him [ ... ] the thought and the knowledge of the [ ... ]
+Not only this, but if the vessel of darkness had not been swept out and thrown down to the earth, nor swept from the earth and cast outside the region of the worlds into this pit; again the drops of darkness, which will drip down from it, and the torrents that will continue to flow down from above to the earth and assume the trees and all flesh, would have multiplied,
 
 Furthermore, if the fire were in the rulers of the worlds of the heavens until today, and had not been swept out and cast down to the earth, and swept from the earth and shut up inside the vessel of fire that surrounds the worlds; [ ... ] this fire [ ... ... ] above through the torrent [ ... the torrent ... ] below;
 
-⟨p.110⟩
-and the dark fire would have multiplied in the tree and in fruit and in all flesh. The power of the fire that is now in a thousand people, you would have found it occurring in a single person today.
-
-Behold, I have taught you about this single evil that was purified by three archetypes [ ... / ... ]
+and the dark fire would have multiplied in the tree and in fruit and in all flesh.
 
 The second deed: Al[l] the heavens [ ... / ... ] of the sediment and the pollution [ ... ... ] so that [ ... / ... ] surpasses in them [ ... ]
 
@@ -1923,59 +1891,62 @@ The twelfth: That you might find all the deeds of loss hidden from the aeons of 
 There was a need for these twelve great deeds because the vessels that were discharged and swept out from the firmaments to the earth, and were also swept from the earth to the {extr[emity) ... / ... ] the three words of life watch over them that [ ... / ... ar]e set over them in great power [ ... ] that they might watch over them at the last time; because of this, they are firmly set thus in these fetters, in the way that I have told you.
 
 **Temporal observations:**
-- ¶1: Classic hagiographic Q&A frame: disciples address ‘the enlightener’ and ‘our master’ and request instruction; this is editorial container language rather than impersonal exposition.
-- ¶2: Underlying content begins cosmological explanation of the discharge of the vessels; the speech-attribution is a later compilation frame.
-- ¶3: Impersonal, analogical exposition (doctor/medicine as mechanism) without citation or community regulation; functions as a systematic teaching metaphor for cosmic processes.
-- ¶4: Continuation of the mechanistic medical analogy; no frame/citation markers; explanatory voice characteristic of the teaching layer.
-- ¶5: High-density systematic cosmology: named entity (Living Spirit), triadic structure (three vessels/three garments), process description (display → fear/derangement → discharge).
-- ¶6: Numbered anatomical layering and correspondential analogy (womb/garments) used to explain containment and emergence; impersonal explanatory mode (no institutional directives).
-- ¶7: Cosmic mechanism via birth analogy; ‘demon’ operates as causal agent within the explanatory model; connects directly to three living garments as the operative means.
-- ¶8: Technical operational detail keyed to one garment (water) and bodily imagery (veins/entrails) as sites of contamination—consistent with core process exposition.
-- ¶9: Stepwise mechanics (revelation → sweeping/discharge → second sweeping → confinement at cosmic boundary). Vocabulary is cosmological and procedural.
-- ¶10: Third garment completes the triad; ‘wall of great fire’ is cosmographic containment language typical of the core cosmology.
-- ¶11: Temporal sequencing (‘one by one at the appropriate time’) explains management logic—impersonal, system-oriented teaching.
-- ¶12: Fragmentary but clearly concluding the preceding process explanation; no frame/institution markers.
-- ¶13: Core introduces a structured numbered scheme (‘twelve great deeds’) and reiterates the discharge/sweeping cosmography; the speaker-attribution is editorial frame.
-- ¶14: Begins enumerated advantage list (systematic structure). ‘evil-doing’ functions as a cosmic effect within the universe/creation, not as church discipline.
-- ¶15: Too lacunose to date by markers, but it is embedded in the numbered-deeds sequence with no frame/pastoral signals.
-- ¶16: Counterfactual cosmological reasoning tied to the vessel of water and the consequences in trees/flesh; the closing ‘saint’ phrase is ambiguous (could be community language), but too fragmentary to isolate as a secure late graft.
-- ¶17: Pure cosmic hydraulics metaphor (drops/torrents) and cognitive effect (‘forgetfulness’) presented as systemic consequence; no citation or institutional rule.
-- ¶18: Third counterfactual in the same mechanistic series; consistent vocabulary (‘swept out’, ‘cast down’, ‘shut up’, ‘surrounds the worlds’).
-- ¶19: Core continues the counterfactual cosmological amplification argument; the ‘fast’ sentence shifts register to community practice and reads as a later illustrative gloss.
-- ¶20: Summative formula tied to triadic purification (‘three archetypes’) remains within the cosmological explanatory register despite the deictic ‘Behold’.
-- ¶21: Advantage list continues; purification of heavens is classic cosmological objective language.
-- ¶22: Cosmic architecture/weight-carriers motif; no institutional markers.
-- ¶23: Purification of dwelling places in heaven—systemic cosmology.
-- ¶24: ‘ships’ as cosmic vehicles (sun/moon) implied; holiness here describes purified cosmic residence rather than ecclesial sanctity.
-- ¶25: Temples/places ‘above’ treated cosmologically; ‘rest’ as salvific/cosmic principle; not a rule or exhortation.
-- ¶26: Mechanistic teleology of vessels moving to assigned cosmic ‘places and sites’; fits impersonal system talk.
-- ¶27: Cosmic boundary construction; standard containment motif.
-- ¶28: Mentions ‘apostles’ in an eschatological-sign context; this is community/compilation diction rather than the impersonal cosmological register, and it reads like a later interpretive insertion into the numbered list.
-- ¶29: Eschatological cosmic purgation (‘end of the universe’, fire’s burning) continues the advantage list without institutional reference.
-- ¶30: Too lacunose for fine dating; remains within the numbered-deed sequence and lacks clear frame/pastoral markers.
-- ¶31: Cosmic geography (‘outer land’, ‘aeons of light’) and eschatological τόποι-list (‘place of peace…’) in elevated but non-citation voice.
-- ¶32: Boundary concealment logic tied to ‘wall of fire’—system-level cosmology.
-- ¶33: Concluding rationale: reiterates the discharge/sweeping sequence and introduces supervisory cosmic agents (‘three words of life’) in a functional, mechanistic way—typical core closure.
+- ¶1: Substantive cosmological question (three vessels; discharge from rulers in the heavens) likely preserves teaching agenda, but is embedded in a stereotyped disciple-to-teacher frame formula.
+- ¶2: Contains a teaching claim about how the discharge occurred, but delivered in direct-address style typical of later redactional presentation of the teaching.
+- ¶3: Impersonal correspondential analogy (body/process mapping) with no institutional reach; functions as system-description (how discharge/purification works).
+- ¶4: Continuation of technical-process analogy (hidden/manifest; above/below) used as cosmological mechanics; no contemporary institutional targeting.
+- ¶5: Classic substrate move: cosmos→cosmos mapping (vessels in rulers; Living Spirit; three garments as “drugs”) stated as mechanism, not exhortation or citation.
+- ¶6: Systematic enumerative correspondence (seven/nine/eighteen coverings; body layers) used to explain containment/release—typical of older structural teaching.
+- ¶7: Cosmic process explained through natural birth correspondence; still internal to the system (vessels/garments/Living Spirit), not a moral or institutional application.
+- ¶8: Mechanistic description of discharge via a specific “aspect” of a garment; vocabulary remains cosmic/physiological, not ecclesial.
+- ¶9: System-internal management sequence (sweep down → sweep out → confine in surrounding vessel) characteristic of cosmological engineering teaching.
+- ¶10: Parallel to ¶9 in a triadic structure; purely cosmological containment (wall of great fire) without institutional extension.
+- ¶11: Timing/sequence control (one-by-one at appropriate time) is part of the cosmic mechanism explanation—core process language.
+- ¶12: Fragmentary but still embedded in the explanatory cosmological register; no markers of later frame or institutional application.
+- ¶13: Begins a numbered, systematic “twelve deeds” sequence (structural teaching), but introduced by a later dialogue-attribution seam.
+- ¶14: Enumerative advantage-list continues in impersonal cosmic register (universe/creations/trees), not church discipline.
+- ¶15: Very fragmentary, but positioned as part of the internal numbered exposition rather than an external frame.
+- ¶16: Core counterfactual cosmological mechanism (if not swept down → torrents/droplets → lust in vegetation/flesh) shifts into present-day moral/social assessment (“today”, “saint”), which is later application.
+- ¶17: Begins as process cosmology (drops/torrents; pit beyond the worlds), then pivots to present-day human psychology scaling (“a thousand people today”), indicating editorial application.
+- ¶18: Despite “until today” (a possible redactional temporal anchor), the paragraph remains entirely within cosmic hydraulics/containment (rulers; vessel of fire; torrents).
+- ¶19: First clause continues the cosmos→nature contamination logic; the conclusion explicitly reaches into church practice (“fast”), a clear late institutional application.
+- ¶20: Direct-address summary (“Behold, I have taught you…”) functions as editorial/pastoral stitching rather than impersonal system exposition; appears in the chapter’s second-half drift zone.
+- ¶21: Returns to impersonal cosmological benefits (heavens cleansed of sediment/pollution), consistent with the twelve-deed structural list.
+- ¶22: Cosmic architecture mechanics (firmaments, weight-carriers) in systematic enumerative mode—core teaching register.
+- ¶23: Short enumerative benefit in impersonal voice; no external institutional identification.
+- ¶24: “Ships” here function as cosmic vessels (sun/moon ships motif); second-person phrasing serves enumeration, not exhortation.
+- ¶25: Although “temples” can trigger pastoral vocabulary, the referent is explicitly “above” (cosmic structures), keeping the mapping within cosmology.
+- ¶26: Cosmological “nature of the vessels” advancing to assigned “places and sites” fits the system-internal spatial mechanics register.
+- ¶27: Impersonal cosmic containment (enclosures/walls) as an advantage; no ecclesial referent.
+- ¶28: Explicitly invokes “apostles” as actors in end-time signaling—an institutional/community concept crossing out of cosmic system into church history/role language.
+- ¶29: Eschatological purification described as cosmic function (“releasers and purifiers… at the end of the universe”), still internal to system mechanism.
+- ¶30: Too lacunose for strong markers; retained as core because it remains in the numbered cosmic-eschatological sequence and lacks clear institutional identifiers.
+- ¶31: Pure cosmological geography (outer land; aeons of light) and degree-language of rest/peace—core eschatological topography.
+- ¶32: System-internal concealment/containment logic (aeons of light; wall of fire) continuing the twelve-fold advantages.
+- ¶33: Concluding rationale stays within cosmic governance (three words of life; fetters; last time) rather than turning to church rule; impersonal causal explanation marks core.
 
 ---
 
 ## Chapter 43
 ### Concerning the Vessels.
 
-*The chapter is dominated by systematic cosmological process-description (discharge/sweeping of the three vessels; purification of firmaments/earths; remnants left as cosmic features). The only clear late layer is the dialogue frame (disciples’ questions; attribution formulas: 'apostle', 'enlightener', 'our master'). No NT overlay and no pastoral/institutional grafts are present. Several paragraphs are MIXED where a brief dialogue attribution introduces otherwise core exposition; those attributions are stripped from core_text per rules.*
+*This chapter is overwhelmingly COSMOS→COSMOS process-teaching (vessels, pits, purification mechanics, ascent routes). The only later material is the dialogue frame (disciples’ questions; ‘apostle/enlightener speaks’) plus minor audience-address imperatives. No NT citation and no institutional/pastoral grafts; the teaching sequence is internally complete and mechanically explanatory.*
 
-As for what you have asked me about the vessels, you must understand this, that when the Father of Life was about to discharge these three vessels he poured the three upon this earth, one by one at its (appointed) hour and season. He discharged them and cast them down to the earth.
+As for what you have asked me about the vessels, that when the Father of Life was about to discharge these three vessels he poured the three upon this earth, one by one at its (appointed) hour and season. He discharged them and cast them down to the earth.
 
 Then he bailed and scooped them from this earth in these three garments, they of wind and of water and of fire, which swathed his body. He poured and made them flow into the three pits [ ... w]hich he had [es]tablished during the construc[tio]n of the worlds [ ... ] they [ ... ] something remained behind on the face of the earth from these three vessels, so that you can find their mark and type displayed in the universe.
 
+⟨p.112⟩
 The element that is left in water is the pungency and the salinity of this salty inner sea that surrounds the worlds.
 
 And the remnant that is left from the darkness is this black mountain that exists in the surroundings of the sunrise. For when the sun would shine over the world no sunlight is visible there, because the darkness that gushes from it manifests above it.
 
+⟨p.118⟩
 And the remnant that remains behind from the fire, upon the earth, are all the mountains and islands from where fumes of fire gush up and are visible. For these things are the remnant of the great vessel, the vestige that was conjoined with this fire that comes up from the earth; together with the mountains and hills [ ... ] places where no fruit sprouts on the trees [ ... ] greater than that place from the limb and [ ... / ... ] the trees shall not bear fruit in that place.
 
-Happen you know this! When the Father of Life discharged these vessels from above upon the earth, he poured them out for this reason: so that also the water and the darkness and the fire that exist in these three earths would be drawn and ascend towards they that had come down from above, and the earths would be purified and cleansed. Due to this he poured these vessels down to the earth, of water and of darkness and of fire, so that also the water and darkness and fire that exist in the earths would be drawn up towards they that had descended from above.
+When the Father of Life discharged these vessels from above upon the earth, he poured them out for this reason: so that also the water and the darkness and the fire that exist in these three earths would be drawn and ascend towards they that had come down from above, and the earths would be purified and cleansed. Due to this he poured these vessels down to the earth, of water and of darkness and of fire, so that also the water and darkness and fire that exist in the earths would be drawn up towards they that had descended from above.
 
+⟨p.113⟩
 Now, first of all, he discharged the water, the waste, the poison of the rulers who are above. He cleansed the firmaments of the [water ... ] he poured down the dark waters. [Just as the] waters fell from heaven to earth, so also the waters below in the earths were drawn and came up from below towards the waters that had come from above to the earths. The waters [were] purified of the dark poison that exists in them. Then he swept them outside and made them a great vessel and a wall of sea that surrounds the universe, and on which the ships sail.
 
 After the water, he discharged the darkness. He purified the firmaments and dried from them the darkness with which they are weighed down. He discharged it down to the earth. Just as he had purified the firmaments, so also he purified the earths. The darkness that is in the earths was drawn up towards the darkness that had been discharged from above. He swept them both out and shut them in that [ ... ] of darkness [ ... / ... ] the water.
@@ -1985,29 +1956,29 @@ And he discharged the fire from heaven to earth, [ ... at] that time again the f
 In the same way that he purified the firmaments above as a place for the light-givers to journey [ ... / ... ] so also he purified the earths below and swept from them the fire and the darkness and the water [ ... ] He has purified them for the ascent of these three powers, they of the wind and the water and the fire, which ascend before the Porter and traverse the earths.
 
 **Temporal observations:**
-- ¶1: Pure dialogue-question frame ('Once again the disciples questioned him...'), setting up the topic; no independent expository teaching voice.
-- ¶2: Core is impersonal procedural cosmology (three vessels discharged to earth in appointed times). The opening attribution is late compilation frame.
-- ¶3: Systematic mechanism: three garments (wind/water/fire) used to scoop the three vessels; pits prepared in cosmic construction; remnant/trace doctrine. Expository, non-citing voice.
-- ¶4: Etiological cosmology (observable feature explained as remnant of a vessel); impersonal teaching sentence.
-- ¶5: Cosmic geography + causal explanation (why no sunlight visible); continues the remnant-of-vessel schema.
-- ¶6: Natural phenomena (volcanic fumes, barren places) interpreted via the vessel-remnant cosmology; no institutional or citation markers.
-- ¶7: Question-and-request formula ('We ask you, our master...') is a classic hagiographic/dialogue frame wrapper.
-- ¶8: Core gives the functional rationale (attraction of like-to-like across levels; purification of the earths). The attribution to 'enlightener' is editorial framing.
-- ¶9: Sequential, technical cosmological process (first water; purification; sympathetic ascent; enclosure as cosmic sea-wall). 'Now, first of all' functions as internal exposition, not an institutional seam.
-- ¶10: Continuation of the three-stage mechanism with parallelism (firmaments/earths; like drawn to like; sweeping/enclosure).
-- ¶11: Completes the triad (water/darkness/fire) with the same mechanism and a defined cosmic repository (outer underworld).
-- ¶12: Generalizing closure: purification creates transit-space for light-givers; ascent of three powers and mention of the Porter as a cosmological functionary—impersonal, systemic register.
+- ¶1: Formulaic Q&A frame: ‘Once again the disciples questioned him…’ Functions as editorial container introducing a cosmological question.
+- ¶2: Core procedural explanation (order/season of discharge) embedded in Mani-compiled dialogue frame marked by ‘apostle’ + direct address.
+- ¶3: Impersonal cosmological mechanics: garments (light elements) used as instruments, pits established in world-construction, and remaining ‘marks/types’ located in the cosmos (no institutional pointing). Minor second-person phrasing does not exit the cosmic system.
+- ¶4: Classic correspondential residue-teaching: cosmic remainder in water mapped to sensory qualities (pungency/salinity) and cosmic geography (encircling sea).
+- ¶5: Cosmic topography + light/dark interaction described as mechanism (‘no sunlight… because…’), staying entirely within the world-architecture.
+- ¶6: Residue of the ‘fire vessel’ mapped to observable cosmic/natural signs (fumes, barren places). Despite ‘fruit/trees’ wording, there is no Gospel citation formula; the passage functions as cosmological etiology.
+- ¶7: Hagiographic dialogue apparatus (‘We ask you, our master…’) framing a request for clarification; not itself part of the substrate mechanics.
+- ¶8: Core ‘reason-for-process’ teaching (attraction of like-to-like across levels; purification of earths) embedded in a dialogue frame with imperative address.
+- ¶9: Systematic step-1 mechanics: discharge → reciprocal attraction across strata → purification → architectural reconfiguration (encircling sea-wall). Entirely cosmological, with degree language (‘first of all’).
+- ¶10: Step-2 of the same mechanical schema (parallelism ‘Just as… so also…’), with cosmic purification and containment; no external institutional pointing.
+- ¶11: Step-3 completion: like-attracts-like (‘Fire was added to fire’) and final segregation into constructed cosmic region (‘outer underworld’).
+- ¶12: Concluding systemic purpose: preparation of routes/levels for the ‘light-givers’ and the ascent of the three powers, including a named cosmic functionary (the Porter). Impersonal architectural-teleological closure typical of the substrate.
 
 ---
 
 ## Chapter 44
 ### Concerning the Sea Giant
 
-*The chapter is largely systematic cosmological exposition (elements, wheels, sphere, zodiac, mechanism of the sea giant). Paragraph 1 is a clear hagiographic frame opener. No explicit NT citation formulas occur; the parable-like comparison in ¶6 is an internal illustrative simile, not a Gospel entry-vector. ¶12 is fragmentary but continues the same mechanistic process-description rather than institutional or devotional material; despite the chapter-level fatigue score, no concrete pastoral/ecclesial graft appears in the provided text.*
+*Apart from the brief hagiographic opening (¶1), the chapter is dominated by impersonal, system-internal cosmological mechanism: the three wheels/vessels, the deposition of waste into the sea, the formation of the sea giant from residue, and a threefold functional purpose (purification, fetter, gathering). No NT citation formulae or institutional/application pivots appear; ¶12 is lacunose but remains within the same cosmological register.*
 
-After the Living Spirit constructed things and the worlds, he came up and set himself upon this earth. He gave a sign to the King of Glory, who turned the three wheels and caused the wheels that are found [ ... ] up above all the mountains; he spread forth the wind to them, he breathed on them, he stirred them up, he washed the earth with the waters. And the waste and the accretion of the three vessels, they of water and of Darkness and of fire, which had been discharged upon the earth, he gathered them and deposited them in the sea that is within the walls and the vessels; because of this sea waters are salty. For they have received salt and bitterness from the washing out and cleansing of the three vessels.
+After the Living Spirit constructed things and the worlds, he came up and set himself upon this earth. He gave a sign to the King of Glory, who turned the three wheels and caused the wheels that are found [ ... ] up above all the mountains; he spread forth the wind to them, he breathed on them, he stirred them up, he washed the earth with the waters. And the waste and the accretion of the three vessels, they of water and of darkness and of fire, which had been discharged upon the earth, he gathered them and deposited them in the sea that is within the walls and the vessels; because of this sea waters are salty. For they have received salt and bitterness from the washing out and cleansing of the three vessels.
 
-When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [ ... ] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own thought collected it together; and the thought gathered the waste together in this way. It made it fast and fixed it [ ... ]
+When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [ ... ] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own Thought collected it together; and the Thought gathered the waste together in this way. It made it fast and fixed it [ ... ]
 
 The sea giant had stamped upon him the seal of the seconds and the hours, the seal of the days and months and years, the impression of the stars and the signs of the zodiac [ ... ] He came into existence from them and was discharged from their power and cast into the sea. The images and the seals and aspects and doctrines and counsels of [ ... ] were sealed upon the body of that giant, because he is the residue of them all. Consequently, each star that will shine, and each sign of the zodiac that will turn: of one he shall be its inducement, and of another its confirmation.
 
@@ -2015,7 +1986,7 @@ He was discharged into the sea like this, the way a cloud might discharge rainwa
 
 This matter is comparable with a craftsman who might take the stamped impressions of many coins and cast them on the fire, and mould them [to a single] image. These thousands of impressions and thousands of shapes [are perfected] and make a single body [ ... ]
 
-This is also the case with the sea giant, who too was moulded and sculpted by the power of the lust inside him from many doctrines and counsels that belong to the residue of the wheel of the sphere.
+This is also the case with the sea giant, who too was moulded and sculpted by the power of the Lust inside him from many doctrines and counsels that belong to the residue of the wheel of the sphere.
 
 The archetype of the giant was constructed for three things.
 
@@ -2028,25 +1999,25 @@ The third thing: That the wind and the water and the fire that gush from the cir
 As for all the power and the life that comes down to the sea, and in the breath that the sea giant will breathe and draw it into him that he might disturb the sea [ ... a] fullness and a [ ... ] becomes between his movement [ ... ] purify; but the sea [ ... ]
 
 **Temporal observations:**
-- ¶1: Formulaic chapter opening: ‘Once again the enlightener speaks to his disciples:’ is a classic Kephalaia hagiographic wrapper.
-- ¶2: Impersonal cosmological mechanism with named beings (Living Spirit, King of Glory) and a three-fold system (three wheels/three vessels) explaining a physical property (salty sea). No citation or institutional register.
-- ¶3: Process-description of cosmic cleansing (wheel of the stars → sediment → sea). The agent ‘thought’ operates as a cosmological force/mechanism, consistent with older systematic teaching.
-- ¶4: Systematic astral/zodiacal mapping onto a cosmological monster; explanatory voice and technical temporal units (hours/days/months/years) indicate structured cosmological doctrine rather than later frame.
-- ¶5: Cosmic mechanics and metaphors (mill; angels as helmsmen; sea as ‘sculptor’) in an explanatory register; no ecclesial or citation markers.
-- ¶6: Didactic simile used to explain a cosmological formation process; no Gospel/NT citation formula, so not an overlay entry-vector.
-- ¶7: Mechanistic explanation of composition (residue of wheel/sphere; lust as formative power) continues the core exposition.
-- ¶8: Numbered triadic purpose statement introducing a structured cosmological list—typical of the older systematic layer.
-- ¶9: Systematic analogy across cosmic structures (ten firmaments ↔ sphere; burden/waste) in an impersonal explanatory voice.
-- ¶10: Detailed functional cosmology (giant as fetter; ascent/descent constraints; watchers; wheel turning) with no institutional extension—core mechanism teaching.
-- ¶11: Three-element schema and cosmological hydraulics describing the sea’s function as a receptacle; continues the triadic plan in core register.
-- ¶12: Fragmentary, but still process-oriented cosmology (power/life entering sea; giant’s breath; purification). No frame, pastoral, or NT-citation signals in the surviving text.
+- ¶1: Formulaic hagiographic opening (“Once again… speaks to his disciples”), typical compilation frame.
+- ¶2: System-internal cosmological process (elements/vessels/wheels; causal etiology of salt sea) with impersonal explanatory voice; no audience address or external application.
+- ¶3: Cosmic mechanics of purgation and deposition; personified Thought functions as an internal cosmic agency (not moral exhortation). Lacunae but register stays cosmological.
+- ¶4: Correspondential/systematic astral sealing (time units, zodiacal signs) wholly within the cosmic architecture; explanatory, non-citative voice.
+- ¶5: Internal cosmological imagery (mill; angels’ helmsmanship; sea as craftsman) describing formation mechanics rather than polemical application.
+- ¶6: Didactic analogy supporting the cosmological explanation; no Gospel/NT citation formula, and the mapping serves the system’s mechanism (many impressions → one body). Slightly more homiletic style but not institutional.
+- ¶7: Returns from analogy to the cosmic referent; Lust functions as an inner active principle in the giant’s formation (system-internal causality).
+- ¶8: Numbered structural purpose statement (threefold plan), typical of systematic teaching organization.
+- ¶9: System-internal parallelism (sphere ↔ ten firmaments ↔ three vessels) explaining purification mechanics; no contemporary-world pointing.
+- ¶10: Pure cosmological function (astral restraint) described mechanistically; no ecclesial/institutional extension. Some syntactic roughness likely from translation/variant readings, but layer remains core.
+- ¶11: Elemental logistics within the cosmic economy (sea as gathering/purification basin), still impersonal explanatory voice.
+- ¶12: Heavily lacunose, but what survives continues the same cosmological mechanism (life/power entering sea; giant’s breath; purification), with no frame, NT citation, or institutional application markers.
 
 ---
 
 ## Chapter 45
 ### Concerning the Vessels
 
-*All paragraphs are impersonal, process-oriented cosmological exposition about foreprepared places of confinement (ditches, sea, mountains, gehennas, hostels, prison, cities) with named Manichaean cosmic beings (Father of Life, Adamant of Light). No dialogue frame, no Gospel/NT citation, and no institutional/pastoral graft despite the chapter-level fatigue warning; ¶8’s “knowledge of righteousness/divinity” remains descriptive within mythic ethnography rather than church discipline.*
+*This chapter is almost entirely in the impersonal, structural cosmological register: a repeated sequence of foreknown events (“Before X… a place was constructed…”) describing prepared containment-sites for hostile beings/substances until the end of the cosmos. No dialogue frame, no institutional exhortation, and no NT/Gospel citation formulas. The Watchers/Giants material likely reflects older Enochic myth-complexes already internalized into the Manichaean cosmic system here.*
 
 Understand also this other (matter): Before these vessels were discharged and swept down from heaven, first three ditches were fashioned and constructed for them, in which they would be bound and fettered.
 
@@ -2054,9 +2025,9 @@ Before the sea giant was discharged from the sphere, the Father of Life construc
 
 Also, before the [ ... ] was displayed to the worlds [ ... ] the earth [ ... ... f]ell to the sea and its thought shaped it, the Father of Life constructed a place for it in [the ... ... ] below the four mountains, above the mountains of the heavens above [ ... ] that [ ... ] a great plain it digs in Matter in the midst of the worlds. When the Adamant of Light was sent to it, he hastened after it to that place, smote it and threw it between mountains in the place made ready for it [ ... ] is set fast upon it till the end of the universe.
 
-Before the waste and dirt of the darkness were swept out from creation, gehennas were constructed in which the waste might be covered till the dissolution of the universe.
+Before the waste and dirt of the Darkness were swept out from creation, gehennas were constructed in which the waste might be covered till the dissolution of the universe.
 
-Before the rebels rose up, they whose corps rebelled in the ruling-power above and below, they [ ... ] outside, and also the tyrants in whose heart it lay [to ty]rannise amongst the murk and the clouds and winds and spirits and storms; for them were constructed in the great outer sea seven hostels, places whence they are thrown into the depths and the darkness [ ... ]
+Before the rebels rose up, they whose corps rebelled in the ruling-power above and below, they [ ... ] outside, and also the tyrants in whose heart it lay [to ty]rannise amongst the murk and the clouds and winds and spirits and storms; for them were constructed in the great outer sea seven hostels, places whence they are thrown into the depths and the Darkness [ ... ]
 
 Also, before the abortions [fell ... ...] to the earth, there was set apart [ ... ]: they are gathered in and dwell therein.
 
@@ -2065,21 +2036,21 @@ Again, before the watchers rebelled and came down from heaven, a prison was fash
 Before the children of the giants were born, they who had [no] knowledge of righteousness in them nor divinity, thirty-six cities were assigned and constructed for them wherein the children of [the giants would] live; they who would come to beget from each other, they who shall spend ten hundred years alive.
 
 **Temporal observations:**
-- ¶1: Impersonal cosmological mechanics (foreconstruction of places of binding) with numbered structure (“three ditches”); no frame/citation markers.
-- ¶2: Systematic mythic geography with a major cosmological figure (Father of Life) acting as craftsman; no hagiographic/NT overlay.
-- ¶3: Core narrative of cosmic combat/confinement using named hierarchy (Father of Life; Adamant of Light) and cosmic topography (four mountains; Matter), told as mechanism not exhortation.
-- ¶4: Cosmic-engineering logic (storage of Darkness-waste until dissolution) in impersonal voice; “gehennas” functions as mythic containment, not NT citation.
-- ¶5: Numbered cosmological allocation (“seven hostels”) and elemental catalogue (clouds, winds, spirits, storms) in a structural, preemptive-containment register.
-- ¶6: Brief but still core: fore-set-apart place for a mythic class (“abortions”) with containment function; no editorial frame.
-- ¶7: Mythic sequence marker (“Again, before…”) continuing the same cosmological-confinement schema; no institutional seam (still cosmic geography).
-- ¶8: Mythic ethnography with numbered allocation (“thirty-six cities”) and longevity motif; “righteousness/divinity” is descriptive of the giants’ nature, not church discipline or NT citation.
+- ¶1: Systematic expository voice; cosmos→cosmos (vessels → three ditches) with no audience-direction or institutional application.
+- ¶2: Cosmological agents and architecture (Sea giant; Father of Life; bounded sea). Despite low teaching-density (likely due to vocabulary list limits + lacuna), the register is pure system-description.
+- ¶3: Old teaching profile: cosmic geography (four mountains; heavens; Matter), impersonal mechanics (place prepared; being confined), named cosmic being (Adamant of Light) in functional role—not Gospel-derived.
+- ¶4: Cosmic process and containment until dissolution; “gehennas” functions here as a cosmological pit/region within the system (not a Gospel/NT citation).
+- ¶5: System-internal correspondential catalogue (murk/clouds/winds/spirits/storms) and a numbered containment-structure (seven hostels in outer sea). No pivot to contemporary institutions.
+- ¶6: Brief but still cosmological logistics (a set-apart place for abortions); impersonal descriptive voice.
+- ¶7: Mythic-cosmological containment statement; “Again” continues the systematic sequence of prepared places (cosmos→cosmos).
+- ¶8: Still functions as cosmological administration (assigned cities; numbered total; lifespan) within the chapter’s vessel/containment schema. The Watchers/Giants complex likely reflects an older Enochic myth-stream already absorbed into the Manichaean cosmic narrative rather than an institutional/pastoral graft.
 
 ---
 
 ## Chapter 46
 ### Concerning the Ambassador.
 
-*After a brief exhortatory opener, the chapter consists largely of impersonal, pre-temporal cosmological sequencing (“before X…, Y was summoned/sent/prepared”), typical of the older deterministic planning motif. Paragraph 5 is a Christian overlay because it introduces “the blessed Christ” in an anti-sect function (likely entering via Christian-Manichaean synthesis vocabulary rather than the older cosmological exposition). No clear institutional/pastoral seam-extension is present; paragraph 4’s ‘righteous/sinners’ language is integrated into a cosmological judiciary mechanism (Judge, throne in living atmosphere), so it remains core rather than pastoral.*
+*This chapter is overwhelmingly systematic, impersonal cosmological teaching arranged as a pre-temporal foreordination sequence (Ambassador, ships, Judge, astral fate, destroyers, new-aeon construction). It has a brief imperative opener as editorial frame (¶1) and one likely Christian/polemical insertion about "the sects" and "the blessed Christ" (¶5).*
 
 Know that before night and day were differentiated in the universe, the Third [Am]bassador was summoned. And afterwards, he was sent to this void and outer waste that he might purify the light, and separate night and day from each other.
 
@@ -2094,21 +2065,21 @@ Again, before the universe is dissolved, [and the] entire earth, the destroyers 
 And before the ne[w] aeon was [built and] made be[auti]ful and marked out, [the] Great Builder [w]as summoned, the first architect and the angels who are with him, who would build and make beautiful the new aeon.
 
 **Temporal observations:**
-- ¶1: Direct address/exhortation (“hear this other lesson that I would teach you!”) functions as a compilational/homiletic lead-in rather than impersonal cosmological exposition.
-- ¶2: Impersonal cosmological process (differentiation of night/day; mission of the Third Ambassador to purify Light) without citation or institutional framing; fits core deterministic sequencing.
-- ¶3: Classic core cosmology: named emanation (Father of Life), “ships of light,” and mechanical purification/ordering of Light in a pre-temporal plan.
-- ¶4: Despite moral-legal vocabulary, the paragraph describes a cosmological judiciary installation (Judge, throne, living atmosphere) as part of the system’s mechanics; “Sin” functions as an agentive power (“multiplied… made a kingdom”).
-- ¶5: Introduction of “the blessed Christ” ordained ‘against’ sects is characteristic of Christian-Manichaean overlay/anti-sect polemic using Christian titulature rather than impersonal cosmological mapping.
-- ¶6: Systematic determinism via astral/zodiacal fate-mechanics (births, compulsion, judgement) in impersonal explanatory voice; no NT citation or church instruction.
-- ¶7: Brief but programmatic cosmological planning statement (appointment of destroyers) continuing the “before X…” sequence; no institutional markers.
-- ¶8: Older cosmic construction register (Great Builder, first architect, angels; building the new aeon) in impersonal plan-sequence form.
+- ¶1: Imperative address to an audience (“hear… lesson… teach you!”) functions as a didactic/frame opener rather than impersonal cosmological exposition.
+- ¶2: Impersonal cosmological process and sequencing “before… afterwards” within the system (differentiation of night/day; salvific purification) with no appeal to institutions, citation, or exhortation.
+- ¶3: Systemic, technical salvific mechanics (ships of light; purification; ascent) in an impersonal explanatory voice; purely cosmos→cosmos mapping of functions and instruments.
+- ¶4: Though it uses ethical categories (righteous/sinners), it remains within the cosmic judiciary architecture (emanation of the Judge; throne in the living atmosphere; eschatological separation) rather than applying to contemporary institutions or issuing commands.
+- ¶5: Christianized/polemical overlay: “blessed Christ” language plus anti-“sects” application (cosmos→contemporary religious landscape). No NT citation formula, but the conceptual entry-point is Mani’s Christian synthesis directed at later sectarian polemic.
+- ¶6: Deterministic astral-cosmology teaching (stars/zodiac determining births and deaths) stated as mechanism (“marked out… appointed… compelled”), not exhortation; fully internal to the cosmological system.
+- ¶7: Brief but purely systemic eschatological planning (appointment/instruction of destroyers) with no institutional application.
+- ¶8: Cosmic construction personnel and function (Great Builder, first architect, angels) in a pre-temporal sequence; characteristic impersonal, architectural cosmology.
 
 ---
 
 ## Chapter 47
 ### Concerning the Four great Things
 
-*The chapter is overwhelmingly systematic cosmological instruction (fourfold partition of the ruling-power; mechanics of binding/weighting on the star-wheel; analogy explaining proportional control). Only the initial dialogue attribution (“Once again the enlightener speaks”) is a later frame wrapper; the rest reads as impersonal expository teaching without NT citation or institutional/pastoral extension despite the chapter-level fatigue flag.*
+*This chapter is overwhelmingly core cosmological instruction: a fourfold apportionment of the total ruling-power into cosmic regions, with a functional explanation of why the leaders are bound on the wheel of stars, and an extended king/kingdom analogy to describe proportional balancing. Only the opening dialogue-attribution formula and a brief closing address-style flourish look like later compilation framing rather than the oldest impersonal substrate.*
 
 The wheel of the stars, which is displayed to you, is a great mighty thing! Also, it is one among the four great things; since the whole ruling-power is assigned to four parts.
 
@@ -2126,25 +2097,25 @@ Still, for its part, the wheel is equal to them in its strength; the powers of t
 
 Behold, the ordinance of the wheel is in this form. For the powers who are entwined on the wheel are like this: a king mastering his kingdom by this mighty legionary force of all the leaders of the kingdom; and with all the armour of the soldiery that is collected together for him; and also with the mass of the property of the kingdom; and the beautiful lustful aspect of the women who are collected together for him; together with [ ... ] property [ ... ] and those cattle [ ... ] that have been distributed about among his retinue. Yet, if you ask about that king, he is matched with all his retinue. His retinue, for its part, is matched against his entire kingdom. Judgement shall come forth from him, vindication and condemnation, to his entire kingdom; by his wisdom, skill and strength.
 
-Now, just as for this king, who is matched against the measure of his entire kingdom by his wisdom, skill and strength; so also is it for the powers who are bound on the sphere as compared to the ruling-power, and the powers who exist in the entire zone. Like the king towards his retinue; so too is it that this totality is gathered to the sphere, to seven leaders, to twelve signs of the zodiac. As all the cities are gathered to the king, again they gather to the leaders of the universe. All that is done in the universe above and below: the battles and the disorders and the captivity and the hunger and the lust and the property; so shall they increase and diminish through these leaders. They are the motivaters of the whole created order; the totality being gathered in to them the way that I have told you. I have opened your eyes!
+Now, just as for this king, who is matched against the measure of his entire kingdom by his wisdom, skill and strength; so also is it for the powers who are bound on the sphere as compared to the ruling-power, and the powers who exist in the entire zone. Like the king towards his retinue; so too is it that this totality is gathered to the sphere, to seven leaders, to twelve signs of the zodiac. As all the cities are gathered to the king, again they gather to the leaders of the universe. All that is done in the universe above and below: the battles and the disorders and the captivity and the hunger and the lust and the property; so shall they increase and diminish through these leaders. They are the motivaters of the whole created order; the totality being gathered in to them
 
 **Temporal observations:**
-- ¶1: Opening attribution to “the enlightener” is a classic Kephalaia frame formula; the ensuing fourfold cosmological partition statement is impersonal, structural teaching.
-- ¶2: Numbered four-part scheme and cosmic geography (ten firmaments; binding/imprisonment of ruling-power) in expository voice indicates core teaching layer.
-- ¶3: Systematic enumeration (eight earths; four+four subdivision; spatial extension below) in cosmological register; no frame/citation.
-- ¶4: Structured cosmological catalog (walls/vessels; four mountains; three vessels; trapped ruling-power) is characteristic of the oldest instructional layer.
-- ¶5: Continuation of the fourfold scheme; named Iranian cosmological beings (Father of Life, Mother of the living) in functional, non-devotional exposition marks core.
-- ¶6: Mechanistic description of cosmic containment (seized/bound/assigned; apportioned; weighted against companions) in impersonal procedural voice is core teaching.
-- ¶7: Extended causal explanation (“for if… again, if… rather… so that… conversely…”) of the wheel’s function mediating forces above/below is classic core ‘how it works’ cosmology.
-- ¶8: Didactic analogy in service of a cosmic proportionality argument; still embedded in the ordinance of the wheel and not institutional/NT—fits core explanatory rhetoric.
-- ¶9: Systematic astral governance schema (seven leaders; twelve zodiac signs; causal influence on events) completes the teaching sequence; no ecclesial/pastoral seam or NT overlay. The closing flourish “I have opened your eyes!” reads as rhetorical, not hagiographic closure.
+- ¶1: Opening formula "Once again... speaks" is a classic Kephalaia frame marker; the remaining sentence shifts immediately into impersonal cosmological partitioning.
+- ¶2: Systematic numbered partition ("first part") and purely cosmological geography (firmaments above the wheel) with no audience-address or institutional application.
+- ¶3: Continues the four-part cosmographic scheme (eight earths; four composite + four Darkness places) in a descriptive, structural voice.
+- ¶4: Core-style enumeration (four mountains/three vessels) and containment mechanics (powers trapped/bound) stay entirely within cosmic architecture.
+- ¶5: Cosmological engineering attributed to Father/Mother of Life fits the systematic creation-mechanics register; no citation or pastoral directive.
+- ¶6: Process description (garnered/collected/bound/assigned/weighted) is characteristic of the impersonal teaching substrate explaining the mechanics of cosmic restraint.
+- ¶7: Functional cosmology (why the wheel can bear the leaders; transfer of power/light; distribution of cold/hot) remains cosmos→cosmos, describing how the system works.
+- ¶8: Extended analogy (king/retinue/kingdom) is explanatory rather than institutional polemic; it serves a proportional-balancing principle within the cosmic teaching sequence.
+- ¶9: Most of the paragraph is still systematic cosmology (seven leaders, twelve zodiac signs; causal governance of the created order). The final self-referential address shifts to a performative teaching voice typical of the compiled Kephalaia layer.
 
 ---
 
 ## Chapter 48
 ### Concerning the Conduits.
 
-*The chapter is dominated by systematic cosmological exposition: three conduits/roots linking heavenly powers, trees, and flesh; ascent of Life and descent of waste; and a deterministic account tying zodiacal authority to the Ambassador episode. Later material is mainly the dialogue frame (opening attribution; disciple petitions/questions; one ‘apostle says’ attribution), which can be stripped to reveal continuous core teaching underneath.*
+*This chapter is overwhelmingly systematic cosmological instruction: three conduits/roots linking heavens, earths, vegetation, flesh, and the astral wheel, with a deterministic explanation for zodiacal authority. The main later material is the dialogue/hagiographic apparatus ("enlightener", "apostle", "disciples", entreaty formulas), especially around the question sequences; one paragraph (¶19) is essentially pure frame.*
 
 There are three conduits that exist through the entire zone, from the abyss to its heights.
 
@@ -2180,7 +2151,7 @@ Therefore, because of this, the stars and signs of the zodiac received authority
 
 However, the[se] other conduits that [the] Living Spirit has bound in the e[a]rths, they that the soul of the elements comes up through to the heavens; those (conduits) are not bound to the wheel. Rather, they are plundered from them by the powers on the wheel, that hang from it.
 
-Just as you have instructed us and put together this lesson on [...] you have told us about the prototype of the conduits. The first is the one that comes from the firmaments to the earths, and the one that comes from the wheel to the sea giant. That is only one. So, the other root is the one that comes [fr]om [the temples] to the trees. The third is bound by means of the abortions in the f[leshes]; also in the fleshes the fathers of the abortions who are in the heavens [...] are bound and twined, and the [y] that [...]
+[...] you have told us about the prototype of the conduits. The first is the one that comes from the firmaments to the earths, and the one that comes from the wheel to the sea giant. That is only one. So, the other root is the one that comes [fr]om [the temples] to the trees. The third is bound by means of the abortions in the f[leshes]; also in the fleshes the fathers of the abortions who are in the heavens [...] are bound and twined, and the [y] that [...]
 
 You have inquired about a [...] and you have asked about this lesson in superiority, great [...] the earth from which much life ascends [...] the Father of Life has drawn them. ⟨p.124⟩ He has fastened them from the powers [...] he has bound them in the earths. (These conduits) are the roots of the ent[ire] ruling-power that the life of the living soul is drawn up through, it coming up from the whole earth, from all the mountains, fields and islands.
 
@@ -2193,37 +2164,37 @@ I have instructed you about the roots [...] them, [I] have taught you that they 
 Now, when the Matter that is in them will be crushed and despoiled, then that Matter too shall [...] its members and overturn them and [...] each other [...] stir [...] ⟨p.125⟩
 
 **Temporal observations:**
-- ¶1: Formulaic ‘Once again… speaks’ is compilation frame; the bare thesis statement about three conduits is impersonal and programmatic, fitting the older teaching layer.
-- ¶2: Systematic cosmological mapping (powers above ↔ bodies/carcasses on earths) in an explanatory voice, without citation or institutional language.
-- ¶3: Cosmogonic mechanism with named Manichaean deity (Father of Life) in functional exposition.
-- ¶4: Impersonal system description (pneumatic/psychic vs somatic/carcass; ascent/purification via roots). No frame/citation markers; lacunae preserved.
-- ¶5: Completes the ascent/descent mechanics (Life up, waste down) in process language typical of core teaching.
-- ¶6: Numbered schematization (‘first conduit’) and bidirectional conduit function—characteristic systematic layer.
-- ¶7: Second item in a triad; five-fold set (five shapes of tree) and cosmic ‘temples/cities’ as heavenly geography, not church institutions.
-- ¶8: Third item; five-fold set (‘five worlds of flesh’); structural exposition and ascent mechanism.
-- ¶9: Cosmic causation of passions via descending waste (not moral exhortation but mechanism); ‘fathers on high’ as cosmic agents.
-- ¶10: Underlying content is schematic cosmology (wheel of stars/roots/life-channels); the attribution is a later redactional wrapper.
-- ¶11: The disciple-question wrapper is frame; the substantive problem-setting (zodiacal determinism vs ‘no root in earth’) belongs to the technical teaching sequence.
-- ¶12: Attribution is frame; the rest is straightforward cosmological construction logic (Living Spirit; binding roots; sea giant) in impersonal explanatory register.
-- ¶13: Named cosmic figure (Ambassador) in cosmogonic mechanism; tri-part division; no Gospel/NT entry vector.
-- ¶14: Triadic distribution + etiological explanation for astral authority over five-fold life-classes; classic core mechanistic style.
-- ¶15: Technical deterministic ‘root’ account; no institutional markers; lacunae preserved.
-- ¶16: Continues deterministic mechanism; ‘Sin’ is personified as a cosmic root-agent (capitalized per rule).
-- ¶17: Clarificatory technical distinction (conduits of elements vs wheel); Living Spirit; process/mechanics voice.
-- ¶18: The beseeching address is frame; the remainder is a technical recap of the three conduits/roots and their bindings, continuous with the core schema (lacunae prevent full certainty at the end).
-- ¶19: Pure entreaty/request formula (‘We entreat you, our master…’) without new cosmological mechanism; functions as Q&A frame.
-- ¶20: Attribution is frame; the answer resumes impersonal schematic ranking logic (greatest root bound in earths; life drawn from whole earth).
-- ¶21: Rank-ordering within the conduit schema; ‘Cross’ here functions as Manichaean cosmic Cross of Light (not NT citation), in a mechanistic ascent context.
-- ¶22: Continues the comparative ranking by spatial distribution (whole earth vs south world); remains within cosmological geography, not institutional discourse; lacunose.
-- ¶23: Summative mechanistic statement about interbinding/stirring and life-transfer; impersonal teaching voice (despite 1st-person ‘I have taught’ typical of direct instruction).
-- ¶24: Eschatological/process continuation about Matter as a cosmic substance/agent; no citation/frame; lacunae preserved.
+- ¶1: Frame formula plus a compact, impersonal cosmological thesis; the statement itself is systematic and non-applied.
+- ¶2: Pure cosmological architecture (root/conduit linking heavens↔earths; stripping-off/garment-body correspondence) with impersonal explanatory voice.
+- ¶3: Etiological cosmological action by a named being (Father of Life) without citation or exhortation; continues the stripping-off mechanism.
+- ¶4: Degree/correspondence mapping (upper=psychic/pneumatic; lower=somatic/carcass) and a process description (ascent/purification) fully within the cosmic system.
+- ¶5: Mechanistic cosmology of ascent/purification with downward discharge; no institutional application.
+- ¶6: Recap in definitional style; symmetric heaven↔earth linkage typical of substrate exposition.
+- ¶7: Cosmos→cosmos mapping (heavenly cities/temples ↔ five tree-shapes). Despite terms like “temples,” they are explicitly located “in the heavens,” not contemporary institutions.
+- ¶8: Systematic third-member definition (firmament powers ↔ five flesh-worlds) and impersonal description of collection/dispersal through conduits.
+- ¶9: Causal cosmological chain (heavenly powers’ residues affecting earthly flesh) framed as process, not moral exhortation; still internal to the system.
+- ¶10: A frame tag introduces an otherwise technical cosmological clarification about the astral wheel’s rooting and life-intake.
+- ¶11: Substantive technical question (roots vs. zodiacal authority) embedded in a late dialogue wrapper; the content itself stays within the deterministic cosmological model.
+- ¶12: Core explanatory cosmology (why the wheel differs; binding by sea giant) introduced by a dialogue tag.
+- ¶13: Mythic-mechanistic cosmology (Ambassador’s image; Matter’s reaction; threefold division) in impersonal narrative-explanation mode, not Gospel-derived.
+- ¶14: Threefold distribution explains astral authority over trees/flesh; still cosmos→cosmos determinism (no institutional “pointing-at”).
+- ¶15: Technical etiological link (nature/abortions → binding of roots) typical of the substrate’s causal explanations.
+- ¶16: Deterministic cosmological rationale for zodiacal authority; “Sin” functions as a hypostatized cosmic principle (root that ‘fell down’).
+- ¶17: System clarification distinguishing element-soul conduits from the wheel; explanatory, internal-cosmology register.
+- ¶18: A late petition introduces a substantive technical recap (prototype list of conduits/roots); content itself is schematic cosmology.
+- ¶19: Pure entreaty formula (“We entreat you, our master…”) with no independent cosmological exposition preserved here (mostly lacunose).
+- ¶20: Dialogue tag precedes systematic ranking/explanation of ‘greater’ roots; content is structural cosmology (roots bound in earths; life drawn up).
+- ¶21: Continues ranked cosmic-root scheme; “temples/buildings above” are heavenly; “Cross” functions as a cosmic structure (not a Gospel citation).
+- ¶22: Cosmic-geographical distribution argument (whole earths vs. southern world) supporting conduit hierarchy; no institutional graft despite comparative rhetoric.
+- ¶23: Concluding summary in first-person voice; still describes cosmic inter-stirring/reciprocal life-drawing within the system (no exhortation or church application). Dating of this self-referential closure is somewhat uncertain.
+- ¶24: Eschatological/mechanical statement about Matter’s breakdown affecting its ‘members’; remains within the cosmological process register.
 
 ---
 
 ## Chapter 49
 ### Concerning the Wheel and the Conduits
 
-*The chapter is largely a compact core teaching explaining a cosmological mechanic (wheel vs. pneumatic conduits) through analogies (ship in water; bird in air). Paragraph 1 is a dialogue/question frame. Paragraph 2 contains a frame attribution at its head (“The enlightener says to them:”) but the remainder is impersonal mechanical teaching; thus MIXED with the attribution removed. No pastoral drift, no NT overlay, no institutional seam extensions.*
+*Chapter is dominated by a compact mechanical/cosmological explanation (conduits are spiritual and thus not cut/entangled by the rotating wheel), illustrated by analogies (ship through water; bird through air). Only the opening disciple-question and the teacher-attribution formulae belong to the later dialogue frame; there is no pastoral/NT overlay drift here.*
 
 The reason that the conduits shall not be cut, for they are not cut, is because they are spiritual. Thus the conduits are like the waters through which ships sail. You shall find the prow that is in position in the front part of the ship divides the waters, casting them back and forth. So, when it parts the waters and that ship opens up the water with its cleaving prow, immediately and without delay the waters mingle with each other again behind the ship; and the path of the ship shall not be discernible in the midst of the waters.
 
@@ -2232,17 +2203,19 @@ Just as when a bird flies up in the air, for its path is not visible in the air,
 This is also the case with the wheel. It turns through the conduits and the air. The wheel shall not cut the conduits, nor are the conduits themselves entangled in the wheel.
 
 **Temporal observations:**
-- ¶1: Direct disciple address and petition formula (“His disciples say to him… Convince us, our master…”) functions as dialogue apparatus introducing the topic, not the teaching layer.
-- ¶2: Core mechanic explanation (pneumatic conduits not severed) with a natural-process analogy; no citation, no institutional instruction. Only the initial speaker tag is later framing.
-- ¶3: Impersonal analogical extension of the same physical/cosmological principle (path not visible; no entanglement). No dialogue apparatus or ecclesial/NT material.
-- ¶4: Concise closure stating the cosmological conclusion in explanatory voice; no framing, citation, or pastoral application.
+- ¶1: Dialogue/Q&A frame: "His disciples say to him" + address "our master"; this functions as editorial staging rather than the impersonal teaching voice.
+- ¶2: Frame marker at the start (teacher attribution). The substance stays cosmos→cosmos (wheel/conduits mechanics) using correspondential analogy (ship/water) without institutional application, consistent with older teaching style.
+- ¶3: Continues the impersonal explanation with a second natural analogy (bird/air) to describe invisibility/non-entanglement; no dialogue frame, citation formula, or institutional application.
+- ¶4: Concise doctrinal summary in expository voice, closing the mechanical argument within the cosmic system (wheel + conduits).
 
 ---
 
 ## Chapter 50
 ### Concerning these Names: God, Rich One, and Angel; who they are.
 
-*The chapter is largely a systematic three-tier emanation teaching (god → rich one → angel) iterated across three contexts (land of light archetypes; emanations in the contest/worlds; then three ‘households’). The main late material is the dialogue/frame apparatus (“Once again…”, “His disciples asked…”, “The apostle speaks…”). Paragraph 9 uses “apostolate/embassy” language that likely reflects Mani’s self-presentation and mission vocabulary; despite cosmological content it reads as a later overlay into the teaching sequence rather than the oldest impersonal explication.*
+*This chapter is overwhelmingly a systematic, intra-cosmic taxonomy of three name-categories (“god / rich one / angel”) across successive emanational levels. Later material is mainly the dialogue/frame attributions (“enlightener…”, “apostle…”, disciples’ request). The final triad using “household of …” retains cosmic referents and reads as part of the same classificatory scheme, despite a slight rise in application-style connectives.*
+
+This one, a name is given to him in the world. For people pronounce it with their mouths: 'god', 'rich one', and 'angel'. Who are they? Who are the gods? Or who are the rich ones? Or who are the angels? Who are these [three] archetypes?
 
 There are these three archetypes [in the land of light, and there is no measure to] them!
 
@@ -2256,6 +2229,8 @@ Once again, listen! Other persons who are named 'god' are the emanations who hav
 
 Conversely, the 'rich ones' are the evocations of these first living words. They too, the rich ones, have come and performed and fulfilled the pleasure of the greatness, in the worlds that are above and below.
 
+On the other hand, the ones who are named the 'angels' are the evocations of the rich ones, who had come from the three living words. They have been sent in an embassy and an apostolate to this building. They have come to the entire divinity, which is established in silence and in hiddenness. And, also, they have come to all the souls who have been entangled in the enemy. They have brought them hope and confidence.
+
 Again, they are called 'god', all the gods who belong to the household of the Great Spirit.
 
 Conversely, the ones who are called 'angel', are all the angels who belong to the household of the Beloved of the Lights.
@@ -2263,74 +2238,76 @@ Conversely, the ones who are called 'angel', are all the angels who belong to th
 The ones who are called 'rich', are all the rich ones who belong to the household of the glorious Ambassador.
 
 **Temporal observations:**
-- ¶1: Formulaic opening with ‘Once again the enlightener speaks’ and rhetorical catechetical questions; functions as hagiographic container for the teaching.
-- ¶2: Pure disciple-question frame (‘Tell us, our master’), no cosmological exposition.
-- ¶3: Underlying sentence is impersonal, structural (‘three archetypes… land of light… no measure’), but introduced by a clear dialogue-frame attribution.
-- ¶4: Impersonal emanation logic (Father summons from himself; likeness of greatness) defining a named tier; no citation or institutional exhortation.
-- ¶5: Second tier defined by generative cascade (evocations of evocations) in a schematic ‘conversely’ style; fits core systematic taxonomy.
-- ¶6: Completes the three-step structure (god → rich → angel) and closes with land-of-light measurelessness; strongly core, expository voice.
-- ¶7: Still systematic definition, now second iteration (‘other persons…’) applying the category to cosmic struggle (‘contest’, ‘enmity’). The attention-getter ‘Once again, listen!’ is not the Kephalaia dialogue frame and reads as internal rhetorical stitching within the teaching.
-- ¶8: Parallel second-tier definition in the same schematic ‘conversely’ pattern; cosmological scope (‘worlds above and below’) without institutional markers.
-- ¶9: Mission-language (‘embassy’, ‘apostolate’) and soteriological address to souls in the ‘building’ reads like Mani/community self-description grafted onto the third tier. Even without explicit NT citation, the register resembles later Christianized/Manichaean apostolic overlay rather than the oldest impersonal taxonomy.
-- ¶10: Underlying line continues the systematic triadic application (now to ‘households’), but the paragraph is introduced by a standard Kephalaia frame tag.
-- ¶11: Schematic category-application (‘conversely… called angel… household of…’) using named cosmological entity; no frame/citation.
-- ¶12: Completes the final triadic mapping to cosmological ‘households’ with a named being (Ambassador); impersonal taxonomic closure typical of core teaching.
+- ¶1: Frame attribution introduces an otherwise impersonal definitional problem (names as categories). The content itself sets up a threefold cosmological classification and does not yet point to institutions.
+- ¶2: Pure Q&A frame: disciples addressing “our master” and requesting instruction; no cosmological explication.
+- ¶3: Core teaching voice is brief and ontological (“in the land of light… no measure”), but introduced by a later dialogue label using “apostle.”
+- ¶4: Systematic intra-cosmic definition: name-category (“god”) is mapped to emanational origin (summoned from the Father) and likeness; impersonal expository voice.
+- ¶5: Second tier of a threefold emanational cascade (Father → first gods → their evocations). The mapping remains entirely within the cosmological system; lacuna preserved.
+- ¶6: Completes the three-step structure (god → rich one → angel) with reiterated “no measure” formula typical of timeless Light-world exposition.
+- ¶7: Shifts from archetypes-in-Light to the same categories manifested in cosmic history (“contest… enmity”), still describing what the beings do within the mythic mechanism, not addressing church life.
+- ¶8: Continues the second-level application of the triad into the created/mixed cosmos (“worlds… above and below”), maintaining the internal emanational logic.
+- ¶9: Still a third-tier definition (angels as evocations) with mission described inside the cosmic drama (souls entangled in the enemy). The term “apostolate” is a later/Christianizing lexical tint, but there is no NT citation or external institutional identification; the paragraph functions as cosmological role-description.
+- ¶10: Returns to a list-like, classificatory scheme (“they are called…”) but prefaced by a compilation frame formula.
+- ¶11: Triadic, parallel taxonomy continues; “household of …” names a cosmic administration rather than a contemporary institution.
+- ¶12: Completes the final triad with a named cosmic figure (the Ambassador) in the same systematic register; no frame/citation markers.
 
 ---
 
 ## Chapter 51
 ### Concerning the First Man.
 
-*The chapter opens with a brief hagiographic dialogue marker, then moves into an impersonal, process-oriented cosmological account of the First Man’s armouring with the five light garments/elements and their interaction with Darkness. No NT citation or institutional material appears in the preserved text; despite the chapter-level fatigue signal, the extant paragraphs after the opening remain in the older expository register.*
+*The chapter is almost entirely a compact cosmological exposition of the First Man’s descent and the five living garments (elements) as battle-armour, with internal (cosmos→cosmos) functional explanations. Only the opening dialogue-attribution is later framing. Although the chapter-level metrics flag pastoral drift in a second half, the provided text does not actually pivot into institutional or exhortative material; ¶5’s elevated application score appears to be a false positive driven by connective/agentive phrasing rather than audience-address.*
 
-When the [First] Man came forth against the ene[my ...] ⟨p.127⟩ garment [...] the darkness with the garment of [of] living fire. With that garment he withered the tumescence (?) of the enemy; he brought down i[t]s foolery and its vanity.
+When the [First] Man came forth against the ene[my ...] ⟨p.127⟩ garment [...] the Darkness with the garment of [of] living fire. With that garment he withered the tumescence (?) of the Enemy; he brought down i[t]s foolery and its vanity.
 
 Now, this one alone was sufficient for them. [Y]et, si[n]ce the living fire was weakened, because of this he added [to it another fou]r garments: that of the wind, that of the water, that of the light, and that of the a[i]r. And this, (why) has he given the four? He gave them s[o] th[a]t they would be helpe[r]s to t[h]at god, wh[ich i]s the living fire; so that [...] not with [in] the living f[ire], and penetrate it; and [the po]ison and the [enmi]ty cut it off.
 
-While the fire received a bl[ow and] a wound in its body; yet still, [...] all the powers of da[rk]ness because of it [...] It [...] necessity [...] brothers, to cause them to receive a blow and a woun[d to]o. The power of the en/emy mixed in with them. Rath[er, ex]cept [the air]. The darkness did not mix in with it, nor was the burning of the enemy able to penet/rate it.
+While the fire received a bl[ow and] a wound in its body; yet still, [...] all the powers of da[rk]ness because of it [...] It [...] necessity [...] brothers, to cause them to receive a blow and a woun[d to]o. The power of the En/emy mixed in with them. Rath[er, ex]cept [the air]. The Darkness did not mix in with it, nor was the burning of the Enemy able to penet/rate it.
 
 Never-theless, even the one that remained behind without the wound, which is the air, it stripped off garment and power. It gave it to its [fo]ur brothers in its place; so that by that [ga]rment of the living air they would become strong, and [...] profit, and endure, namely its other four brothers. And it [be]came for them [...] life.
 
 **Temporal observations:**
-- ¶1: Formulaic discourse attribution (“Once again… speaks”) is a classic Kephalaia hagiographic frame marker; not part of the teaching content.
-- ¶2: Direct cosmological narration of the First Man’s descent and the efficacy of “living fire” as an armour/garment against Darkness; no citation, no institutional vocabulary.
-- ¶3: Systematic five-fold structure (one + four garments/elements) explained as mechanism (“helpers… so that… penetrate… poison… enmity”), in an impersonal expository voice characteristic of the older teaching layer.
-- ¶4: Cosmological mechanics of mixture and injury among the light elements/garments; “darkness” functions as an invading substance/agent in a technical explanation (no ecclesial or citation markers).
-- ¶5: Continues the same structural explanation: redistribution of “garment and power” among the four wounded brothers; impersonal, mechanistic cosmological register with the five-element schema.
+- ¶1: Dialogue-attribution/opening formula (“Once again… speaks”) is hagiographic frame material; it is not part of the impersonal cosmological substrate.
+- ¶2: Pure cosmological combat description internal to the system (First Man vs. Enemy/Darkness) with no citation formula, no institutional application, and no audience address.
+- ¶3: Systematic five-element/garment structure (living fire plus four helpers) explained functionally (“so that…”)—a classic substrate mode of exposition (cosmos→cosmos mechanism).
+- ¶4: Continues the internal mechanics of mixture/wounding among the elements/garments and Darkness; “brothers” reads as intra-cosmic sibling-elements rather than audience address, and there is no institutional referent.
+- ¶5: Despite a higher application-voice score, the paragraph remains entirely within the cosmic system (air-element redistributing power to its four ‘brothers’). No exhortation, no ‘nowadays/till today’, and no church/institutional mapping appears.
 
 ---
 
 ## Chapter 52
 ### Concerning the [ ... ] of the Light
 
-*The chapter opens with a clear hagiographic dialogue frame (¶1). ¶2–5 preserve an older, impersonal argument: unity within the Light vs. division within Darkness, with an illustrative analogy to a worldly kingdom. The second half (¶6–8) shifts into direct second-person exhortation about communal unity and conquering Sin—consistent with the flagged pastoral drift and functioning as an editorial application of the preceding lesson to the community.*
+*This chapter contains a short cosmological teaching on the unity of the Light versus the self-division of Darkness, then pivots into direct exhortation to the community. The shift to second-person address (“you yourselves…”) marks the pastoral/application layer. The opening attribution to “the enlightener” is a later frame wrapper over an older, impersonal teaching claim.*
+
+[Now as to what affects the] light, behold, at the beginning the Darkness was strong against it; [ ... ] no disunity [ ... ] exists in the light.
 
 [ ... ] how far [ ... the lig]ht that came forth from [ ... ] in that place in a [ ... ] alone [ ... ] ⟨p.128⟩ the greatness of the light with one another for ever, and nor did one of them transgress the command and order that his brother had entrusted to him forever.
 
-However, the darkness, the enemy, was doomed and overcome; because of the arising of disharmony it was divided within itself. Even the kingdom was divided within itself; [and] ev[en] the [powers, who had] left their abyss behind and come up fo[llow-ing] it, were doomed because of the disunity that was present in all of them. The darkness was destroyed, and its other powers were humiliated, because the p[ower] of that first light functions in the same way as the kingdom of this world.
+However, the Darkness, the enemy, was doomed and overcome; because of the arising of disharmony it was divided within itself. Even the kingdom was divided within itself; [and] ev[en] the [powers, who had] left their abyss behind and come up fo[llow-ing] it, were doomed because of the disunity that was present in all of them. The Darkness was destroyed, and its other powers were humiliated,
 
 As long as its [associates in the m]ystery are in agreement with it, th[at] kingdom [ ... ] and they marvel at it and it receives glory, the one that [ ... ] and it surpasses and is even more exalted than this other kingdom, which is about [to burst out] against [it].
 
 Still, the kingdom, [the one that] its associates in the mystery [are in agreement] upon, is compelled to condemn that (other) kingdom; and the[y] are humiliated and come under the hand of this kingdom that is set up against it.
 
 **Temporal observations:**
-- ¶1: Formulaic opening and dialogue attribution (“Once again the enlightener speaks to his disciples”) marks the Kephalaia hagiographic frame; the rest introduces the topic in the same editorial voice.
-- ¶2: Impersonal cosmological description of the Light’s internal concord and ordered obedience; no institutional address, no citation formulas, no dialogue framing.
-- ¶3: Core dualist mechanism stated as process (division → defeat) applied to Darkness and its powers; the ‘kingdom of this world’ comparison functions as illustrative analogy within an expository teaching voice rather than as community rule.
-- ¶4: Continues the impersonal analogy about a kingdom’s strength via internal agreement; no direct address to hearers, no institutional categories.
-- ¶5: Completes the analogy sequence (unity → condemnation/subjugation of the opponent). The paragraph reads as the closure of the teaching illustration before the later application.
-- ¶6: Direct second-person exhortation (“you yourselves”) applying the prior lesson to communal harmony in “this living truth”; this is an institutional/pastoral graft rather than cosmological exposition (editorial-fatigue zone).
-- ¶7: Continues admonition against division among the followers, with moral consequences (condemned, humiliated) under Sin and its powers; paraenetic voice rather than impersonal cosmological mapping.
-- ¶8: Imperatival community exhortation (“Neither be divided…”) with promised victory; functions as concluding moral application rather than original systematic teaching.
+- ¶1: Mixed because a formulaic hagiographic opener (“Once again…”) wraps a cosmological claim about Light/Darkness unity and conflict that reads like older teaching.
+- ¶2: Impersonal, descriptive cosmological-ethical mechanics (perpetual concord, non-transgression of an internal ‘command and order’) without audience address or institutional identification; stays within the cosmic system.
+- ¶3: Core cosmological account of Darkness’s defeat through internal division, then a likely later explanatory analogy to worldly kingdoms (cosmos → ‘this world’), creating a boundary within the paragraph.
+- ¶4: Continues the impersonal ‘how victory works’ logic (agreement → glory/exaltation over the opposing kingdom) without second-person exhortation. ‘Associates in the mystery’ is ambiguous but can still read as intra-cosmic solidarity.
+- ¶5: Impersonal continuation of the same cosmological mechanism (united kingdom condemns and subjugates the opposing kingdom). No explicit church/institutional referent appears here.
+- ¶6: Direct second-person application (“you yourselves… from your least to your greatest”) and exhortation using the teaching to motivate group harmony; this is institutional/pastoral use of the cosmological motif. (‘Sin’ appears as an opposing power, but the paragraph’s function is exhortation.)
+- ¶7: Continues second-person warning and consequence language (“you will be condemned… humiliated under the hand of sin”), characteristic of application voice rather than impersonal cosmological exposition.
+- ¶8: Imperative exhortation (“Neither be divided… and you will conquer…”)—pure application voice directed to the community, not a closed-system cosmological mapping.
 
 ---
 
 ## Chapter 53
 ### Concerning the First Man.
 
-*The chapter opens with a formulaic discourse attribution (frame), then proceeds with impersonal, process-oriented cosmological mechanics (First Man/Living Spirit, storehouses, construction of the universe) and extended systematic analogies (marsh-net; body/head/limbs) that read as teaching core. No NT citation/overlay is present. Despite the chapter-level fatigue warning, the extant paragraphs do not show explicit institutional/pastoral grafts; the major late element here is the opening frame formula in ¶1.*
+*This chapter is overwhelmingly CORE: it gives a cosmological mechanism (First Man’s descent and hunting of the dark powers; Living Spirit’s construction of the universe; devastation of the storehouses) and then develops it through internal correspondential analogies (marsh/net; body/head/limbs; corpse after soul’s departure implied). Only a brief hagiographic/dialogue attribution at the start marks later framing; no NT overlay and no institutional/pastoral application is present in the surviving paragraphs.*
 
-At the time when the First Man was sent to the war in the first garment of [living fire], which he gave to the first nature that exists [...] in that single garment. [...] he hunted Matter, the thought of death, [...] and all its other powers.
+At the time when the First Man was sent to the war in the first garment of [living fire], which he gave to the first nature that exists [...] in that single garment. [...] he hunted Matter, the Thought of Death, [...] and all its other powers.
 
 ⟨p.130⟩ When the First Man came up from the abyss, [...] the Living Spirit brought the rulers whom he had hunted [...] element, that [...] of [the land of] darkness, that he might construct from them this universe and fashion everything appropriate for the greatness. From that time on, the place of the storehouses of the elements [...] he destroyed and laid waste the [...] all that were in it.
 
@@ -2345,20 +2322,20 @@ Wh[en] they will cut from them [...] all of them, these little [heads] shall [..
 In exactly this way, it is also the case that the storehouses of darkness are the same, the things from which the [darkness gushed] forth.
 
 **Temporal observations:**
-- ¶1: Initial formulaic speaker-attribution is a classic Kephalaia frame marker; the remainder is impersonal cosmological narrative about the First Man’s descent/garment and hunting Matter and powers (core teaching content).
-- ¶2: Systematic cosmological mechanics (First Man, abyss, Living Spirit, rulers, construction of the universe from captured powers; devastation of storehouses). No citation or institutional register.
-- ¶3: Extended analogical teaching (marsh/net) applied to cosmic storehouses; impersonal explanatory voice characteristic of the teaching layer.
-- ¶4: Concluding summarizing sentence that closes the preceding analogy; remains within cosmological explanatory register.
-- ¶5: Systematic body↔cosmos correspondence (storehouses as limbs dependent on a head/root) in an explanatory, non-institutional voice—typical core pedagogy.
-- ¶6: Continuation of the anatomical analogy logic (head/limbs/corpses) without frame markers; fragmentary but consistent with the core teaching sequence.
-- ¶7: Explicit application/closure of the preceding analogy back to the cosmological referent (storehouses of darkness as source).
+- ¶1: Opening attribution to “the enlightener” is a compilation frame marker; the remainder is impersonal cosmological narration of First Man’s descent and capture of cosmic entities (Matter, Thought of Death) within the system.
+- ¶2: Systematic cosmological process account (capture → extraction → construction of the universe → devastation of storehouses) with named Manichaean beings; no audience-address, no citation, no institutional reference.
+- ¶3: Pure correspondential analogy (marsh/net → storehouses of Death) used to describe cosmic depletion; mapping stays within cosmology/nature register, not into contemporary institutions.
+- ¶4: Concise structural summary closing the preceding analogy; continues impersonal expository voice.
+- ¶5: Classic substrate-style body–cosmos correspondence (storehouses as limbs dependent on a head/root). The mapping remains cosmic/natural, not moral or ecclesial; no frame or exhortation.
+- ¶6: Fragmentary continuation of the head/limb analogy explaining devastation once separated; despite lacunae, it remains within the same correspondential mechanism without later editorial address.
+- ¶7: Formal correspondence closure (“in exactly this way”) tying the body-analogy back to the cosmic storehouses; internal cosmological referents only.
 
 ---
 
 ## Chapter 54
 ### [Concerning] the Quality of the Garments
 
-*Despite the chapter-level fatigue flag, the extant paragraphs show no institutional rules, no NT citation formulas, and no hagiographic Q&A closure. Paragraph 1 contains a brief dialogue attribution (“[Once again] the enlightener [speaks]”) that is later framing; the remainder across ¶1–¶6 is continuous cosmological exposition using architectural/carpentry analogies to explain the Living Spirit/Father of Life’s construction and eschatological separation of Light from Darkness.*
+*Despite the chapter-level “fatigue” signal (cosmological vocabulary dropping in the second half), the extant paragraphs remain overwhelmingly cosmological-correspondential: a systematic account of mixture, the “garments,” and the Living Spirit/Father of Life’s building-work, expressed through architect/carpenter analogies. The only clear later layer is the dialogue attribution opening in ¶1.*
 
 At the time when the F[ir]st [Man ...] he gave the leadership to his five [sons ... the] Living Spirit and the Mother of Life [...] as the entire ruling-power is entwined and crucified [...] they were poured out and mixed with each other, the light with the darkness and the darkness with the light.
 
@@ -2373,23 +2350,23 @@ So is it also with the Father of Life. In his wisdom he has [...] in limbs [...]
 ⟨p.133⟩ ... live. The light, however, that is in it [...] wise, and he takes it up to the land; but the waste and the darkness will be gathered and thrown down to the abyss.
 
 **Temporal observations:**
-- ¶1: Core cosmological mechanics (mixture of light/darkness; named beings First Man, Living Spirit, Mother of Life; five-sons structure) in impersonal explanatory voice, preceded by a standard Kephalaia frame attribution.
-- ¶2: Systematic cosmological construction language (garments, sons, ten firmaments, wheel of stars) without citation or institutional application; reads as technical mythic exposition.
-- ¶3: Extended craft analogy (architect/palace) deployed to explain a cosmic function; no gospel/NT vector and no ecclesial register—typical didactic simile within the core teaching style.
-- ¶4: Although flagged by the vocab counter as ‘pastoral’ (likely due to ‘Furthermore’/imperative-like phrasing), the content is entirely cosmological analogy (carpentry) mapping divine craft/foreknowledge; no institutional discipline or church categories—best read as core continuation of the architect simile.
-- ¶5: Returns from analogy to explicit cosmological identifications (Father of Life; ships of light; Third Ambassador as ‘great king’). This is characteristic core cosmological hierarchy, not later church framing.
-- ¶6: Eschatological separation mechanism (Light raised; Darkness/waste cast to abyss) stated without citation or paraenesis; matches core light–dark process language.
+- ¶1: Opening dialogue attribution (“enlightener speaks”) is a late framing device; the remaining content is impersonal cosmological mechanism (mixture of light/darkness; named hypostases First Man, Living Spirit, Mother of Life) consistent with the older teaching layer.
+- ¶2: Systematic cosmological construction sequence (sons/powers, “garments,” ten firmaments, wheel of stars) stated as how the cosmos is set up, without audience address or institutional application.
+- ¶3: Correspondential analogy (Living Spirit ↔ architect; cosmos ↔ palace) remains cosmos→cosmos in function (building a habitation for the king), with no pivot to contemporary institutions; reads as didactic exposition within the teaching.
+- ¶4: Extended craft-metaphor for cosmic making (Father of Life ↔ carpenter) still functions as a structural description of formation/ordering; low cosmological vocabulary here reflects the sustained analogy, not institutional/pastoral redirection.
+- ¶5: Returns explicitly to cosmological referents (Father of Life, ships of light, Third Ambassador) and the purpose of constructing the universe as a habitation—classic core cosmological teleology expressed in correspondential terms.
+- ¶6: Eschatological sorting mechanism (light raised; waste/darkness cast to abyss) described impersonally as process within the cosmic system; no NT citation, no moral exhortation, no institutional mapping.
 
 ---
 
 ## Chapter 55
 ### Concerning the Fashioning of Adam
 
-*The chapter is dominated by impersonal cosmological explanation (Ambassador’s epiphany, rulers’ lust/imitation, stamp of the image, non-sexual generation examples). Later compilation frame appears mainly as dialogue attribution and wrap-up exhortation (¶1–2, ¶8). The long parable (¶5–6) is integrated as an internal teaching simile rather than a Gospel-citation overlay; the single christian-register blip likely reflects translation vocabulary, not an NT entry-vector.*
+*This chapter is overwhelmingly teaching-text: a sustained cosmological explanation of why the Third Ambassador displayed his Image, how the Rulers copied it into Adam and Eve, and how other composite figures arose. The only clear late layer is a short didactic closure (¶8). The opening Q&A attribution formulas (¶1–2) are compilation frame wrapped around an otherwise continuous teaching unit; the remaining paragraphs maintain internal Manichaean cosmological referents rather than church discipline or NT citation.*
 
 There are some amo]ng us telling us that we [know (?) ... ] that the (Ambassador) consents about [tha]t f[igure] of flesh; he who shall be fashi[oned ... ] at another time. And next, he says: [The Ambassa]dor displayed his image in the un[iverse]. The rulers and the powers of the universe saw h[is image], and they formed their shapes after his likeness, who are Adam and Eve. Behold, you see that god con[sen]ts to its happening; because of this, he has displayed his image to the rulers; and they constructed [ ... ... ] If he was not consenting to humankind, he would not have uncovered his image, nor they fashioned mankind after his likeness!
 
-Regarding the Ambassador, the occasion when he came displaying his image, he [d]id not come so th[a]t he might reveal his image to the ru[l]ers in the universe. Rather, he came and displayed to the universe be[cause of h]is soul and his son, who is [ ... ] every [ ... ], that he might enable him to live [ ... ] and make for him a release; and to free (the soul) from every bond and all the fetters, in which it is entangled and bound.
+⟨p.133⟩ Regarding the Ambassador, the occasion when he came displaying his image, he [d]id not come so th[a]t he might reveal his image to the ru[l]ers in the universe. Rather, he came and displayed to the universe be[cause of h]is soul and his son, who is [ ... ] every [ ... ], that he might enable him to live [ ... ] and make for him a release; and to free (the soul) from every bond and all the fetters, in which it is entangled and bound.
 
 Still, you, look and see! The rulers and the authorities, in that they had no form in [ ... ] him, they lusted for his image. They reflected upon themselves, that [they] had no [one] like him in their creation. They sealed hi[s im]a[g]e in their heart, within their soul. Afterward[s, they] built it according to his likeness; they formed Adam and [Ev]e. They sealed the image of the exalted one in their [soul]. So, they [co]pied with an imitation; but they have not [copied i]n truth! Rather, just as [ ... ... ] it is made as these, for [i]t came [ ... ] but it is not l[ik]e him in truth. [Again, so too] is this figure of ma[nkind. They copi]ed it against the image of the exalted one [ ... ]
 
@@ -2418,38 +2395,39 @@ The second figure is the one [that] fell to the earth. It made the sea its womb.
 So, in accord with the essence they [ ... the dark]ness; but yet th[ey] did not come with the King of Dark[ness to the wo]rld. Rather, their fashioning [came] about [ ... ] they are composite and have been displayed in the world.
 
 **Temporal observations:**
-- ¶1: Core content is the cosmological claim about the Ambassador’s image and rulers fashioning Adam/Eve; the paragraph is introduced by a disciple-question frame typical of Kephalaia redaction.
-- ¶2: Impersonal, process-oriented explanation of why the epiphany occurs (release/freeing of soul) fits core mechanics; only the speech-intro is later framing.
-- ¶3: Systematic cosmological psychology (rulers’ lust → sealing image → imitation/false copy) in expository voice; no citation or institutional register.
-- ¶4: A brief correspondential analogy embedded in the teaching sequence; not introduced as Gospel/Scripture, so not NT overlay.
-- ¶5: Extended simile functioning as internal illustration of the cosmological point (epiphany under constraint, provoking lust). No Gospel-citation formula; thus best read as part of the older didactic repertoire rather than NT overlay.
-- ¶6: Explicit mapping of the parable back onto the Ambassador in an explanatory register; integral to the core teaching sequence.
-- ¶7: Named cosmological entity (Third Ambassador) in systematic explanation of function/intent vs rulers’ lust; ‘crucified in the totality’ is Manichaean cosmic crucifixion motif, not necessarily NT narrative citation.
-- ¶8: Didactic wrap-up/exhortation to memorize (“I have enlightened you…commit it to memory”) functions as editorial closure rather than core cosmological mechanism.
-- ¶9: Systematic extension from Adam/Eve to broader cosmic powers receiving the ‘stamp of the image’; impersonal cosmological psychology with analogical human comparison.
-- ¶10: Continues the ‘stamp/copy’ mechanics in a process voice; no frame/citation signals.
-- ¶11: Cosmological claim about novelty of Adam/Eve’s form and the image’s non-origin in the lower worlds; despite the ‘new birth’ phrasing, there is no institutional or NT entry-vector.
-- ¶12: Programmatic cosmological thesis introducing non-sexual generation; expository, structural.
-- ¶13: Persian/Manichaean cosmological beings (Father of Life) and mechanistic account of formation (‘fire and thought fashioned it’) signal core teaching.
-- ¶14: Mythic-cosmological combat sequence with named entity (Adamant of Light) and functional geography (‘districts of the north’); narrative is cosmological, not NT-hagiographic.
-- ¶15: Third example completing the triad; terse cosmological process account (falling nature → vegetation).
-- ¶16: Concluding cosmological classification (‘composite’, not brought by the King of Darkness) in impersonal explanatory voice; no institutional or Gospel overlay markers.
+- ¶1: Layering is visible: the opening hagiographic/Q&A wrapper is frame, but the content of the question already presupposes a fixed mythic system (Ambassador’s Image → Rulers’ imitation → Adam/Eve), suggesting an older teaching unit embedded in the dialogue format.
+- ¶2: Core-style expository motive statement (display of Image for liberation of the Soul from bonds) is internal to Manichaean cosmology; the only late marker is the speech-attribution formula.
+- ¶3: Sustained internal-cosmos mechanism (Rulers’ lust → sealing Image → imitation-forming Adam/Eve) with no citation, church application, or institutional vocabulary; the voice is explanatory rather than regulatory.
+- ¶4: Brief correspondential analogy supporting the imitation/true-image distinction; no institutional or NT markers.
+- ¶5: Extended simile in a human register (woman/chamber/city) functioning as an illustrative correspondence for the cosmological act explained in the surrounding paragraphs. While it steps outside pure cosmos→cosmos mapping, it is not church-application or polemic and reads as integral homiletic teaching rather than later institutional graft.
+- ¶6: Directly interprets the parable back into the cosmological figure (Ambassador), maintaining teaching continuity and lacking frame/pastoral imperatives.
+- ¶7: Core cosmological motive-and-consequence sequence: Third Ambassador’s epiphany for rescue/liberation; Rulers’ lust; unauthorized fashioning of Adam/Eve. No NT entry-vector, no institutional address.
+- ¶8: Direct audience-address closure and mnemonic exhortation ("I have enlightened you… commit it to memory") functions as instructional wrap-up rather than cosmological exposition.
+- ¶9: Generalizes the Image-impression mechanism across cosmic ranks (powers/angels/divinities). Contains a brief human simile but remains primarily system-internal and explanatory.
+- ¶10: Impersonal mechanistic description of stamping/copying across beings and even ‘rocks’, i.e., cosmic/physical ontology rather than community instruction.
+- ¶11: Cosmological uniqueness claim (Image not originating in the lower worlds) continues the internal mythic logic; “new birth” language is not tied to church practice here.
+- ¶12: Programmatic teaching transition to a numbered/example list about origins of forms—typical of older explanatory strata.
+- ¶13: Named cosmic agent (Father of Life) and process statement (discharged; fire/thought fashioning) are system-internal and non-hortatory.
+- ¶14: Mythic combat/process narrative with technical cosmological actor (Adamant of Light) and spatial cosmic geography (districts of the north); no institutional or NT linkage.
+- ¶15: Third example in the list; ontology-of-forms explanation (nature fell on dry land → fashioned the tree) stays within the cosmological register.
+- ¶16: Concluding doctrinal synthesis about composite beings (not simply imported by the King of Darkness) is impersonal and system-explanatory, characteristic of the teaching layer.
 
 ---
 
 ## Chapter 56
-### Concerning Saklas and his Powers
+### [Concerning Saklas and his Powers]
 
-*This chapter is overwhelmingly teaching-core: (1) a cosmogonic mechanism explaining how the rulers inherited the ‘seal’ of the Ambassador’s image via Matter/Sin; (2) a systematic microcosm exposition of the senses as ‘storehouses’ governed by the heart, plus the watchmen/camp simile for bodily orifices; (3) a Light Mind takeover sequence with strong cosmological agents (Light Mind, Living Spirit). Later layers appear mainly as dialogue/frame attributions (‘Once again…’, ‘the enlightener says/speaks’) and a concluding exhortation in direct address. Pastoral drift is strongest in the ethical-aesthetic applications (¶25–26) and the final admonition (¶29), but these still ride on a core cosmological mechanism; only the final paragraph reads primarily as paraenesis rather than structural teaching.*
+*This chapter is largely dominated by an older, systematic correspondential teaching about (a) Sin/Matter transmitting the seal of the Ambassador’s image through the tree/fruits lineage to the rulers who shape Adam/Eve, and (b) the body as a microcosm: sense-faculties as ‘storehouses’ and gates guarded by sentinels, with the Light Mind taking control. Later layers appear as dialogue-attribution formulas (‘the enlightener says’), a meta-summarizing closure, and especially second-half application drift: concrete moral/institutional exempla (psalms/prayers/hymns/charity; exhortation to ‘my brothers’) and a probable Christianizing terminological gloss (‘Holy Spirit’).*
 
-The sin that spurted out from the rulers, which is Matter, shot up [tow]ards the image of the Ambassador. It was cut off from [tha]t place and came down to the earth, for they did not accept [it wi]thin the firmaments. When it came do[wn to] the earth, it formed the tree. It was established within the wood and formed the fruits. And when [the] abortions fell [to] the ground, to the earth, at the [second] time [ ... / ... ]
+⟨p.137⟩
+All [these a]bortions, amongst them are Saklas and his consort and the ones whom they have served [ ... ], they are the ones that shaped Adam and Eve. How did they find this beautiful image laid over their shape, even though when it was displayed to their fathers they were not in existence? They never saw the image of the Ambassador! And how did they take the seal of the image of the Ambassador? They added it to [the] shape of Adam and Eve.
+
+The Sin that spurted out from the rulers, which is Matter, shot up [tow]ards the image of the Ambassador. It was cut off from [tha]t place and came down to the earth, for they did not accept [it wi]thin the firmaments. When it came do[wn to] the earth, it formed the tree. It was established within the wood and formed the fruits. And when [the] abortions fell [to] the ground, to the earth, at the [second] time [ ... / ... ]
 
 ⟨p.138⟩
 [... in the] fruits, it assumed the[m] and spoke in the ruler, their leader. He says to his companions: Come! Give me your light, and I will construct for you an image aft[er] the likeness of the exalted one. What he said, they did: they gave it to him, and he constructed [ ... ].
 
-The sin that s[purted out ... / ... ] which is the Matter that saw the im[age of the Ambassa]dor and that formed the tre[e and was established i]n [i]t; afterwards it came up in the [fruits ... ]. It went in to the rulers [ ... ] they formed Adam and Eve after the [likeness of the] exalt[ed one]. Through the energy of the sin that had s[een the image of the] Ambassador, it went into the (rulers) [through the fruits. It] assumed them and they [t]oo sculp[ted ... they] begat each of them according to his destiny [ ... ]; one he resembles, one he does not resemble.
-
-Behold, I have taught you this lesson, how the rulers shaped Adam and Eve by the action of the sin that went into the [m] through the fruits, and he was ordained after the image of the exalted one.
+The Sin that s[purted out ... / ... ] which is the Matter that saw the im[age of the Ambassa]dor and that formed the tre[e and was established i]n [i]t; afterwards it came up in the [fruits ... ]. It went in to the rulers [ ... ] they formed Adam and Eve after the [likeness of the] exalt[ed one]. Through the energy of the Sin that had s[een the image of the] Ambassador, it went into the (rulers) [through the fruits. It] assumed them and they [t]oo sculp[ted ... they] begat each of them according to his destiny [ ... ]; one he resembles, one he does not resemble.
 
 The moulder placed in the form of Adam and Eve limbs, outside and within, for perception and activity. He was apportioned house by house. For everything that his perceptions and elements will receive externally there are internal storehouses and repositories and cavities; and what is received in to them is stored in them. Whenever they will be questioned about what is deposited in their internal storehouses, they bring out what they have received within and give it to the questioner who requested it of them.
 
@@ -2486,59 +2464,58 @@ Indeed, watchmen are a[t] these doors guarding them, and bolts are fastened on t
 
 Just like watchmen guarding a camp with towers and watch-posts. As the holding rooms come out from there and the bolts are upon the gates, the guards control the bolts of the gates while they sit at the entrance [of] the watchposts. So, someone who belongs to their city as a fellow [cit]izen of them, belonging to their country, for him they shall open [the ga]te and receive him in by their will. However, the foreigner who comes they shall prevent, and leave him standing at the gate. They shall not yield to let him enter. Again, another one whom they will receive in, with great trouble before [they] take him in, you shall find many holding rooms [ ... / ... ] that [ ... ] there are a mass [ ... / ... ] them. The number of d[oor] bolts [ ... ] are [ ... ] Whenever someone will wish [ ... ] the bolts at his hand, opens the gate and brings out whoever is hidden within.
 
+⟨p.142⟩
 This body too is like the mighty camp. And the gates of the camp with their guards are like the orifices and organs of the body. Now, the orifices of the body are of sight, hearing and smell; and they that send out words. There are many sentinels and a mass of guards placed over the limbs of the body, guarding their orifices. And the faculty in it is the directive of the body, the queen of the entire camp; so that whenever it wishes it can open, or when it wishes it can shut.
 
 However, if and wh[en] the Light Mind comes, it shall tu[rn i]n to the orifices of the body. The rulers, who [a]re the door gua[rds], shall h[in]der and restrain it from en[ter]ing. They shall bind the circu[it] of the body so that the foreign[er] can not enter it.
 
-Nevertheless, the Light Mind by its wisdom and awe and diligence shall hum[ble] the guards who are set at the body's orifices. When it finishes humbling them it shall take fr[o]m them bolts to all the orifices of the body. Now, the orifices that had been opened before to the parades of lust, to receive in the sights of pleasure, to transfer the [wor]ds of the practice of li[f]e's concerns, to receive in the t[astes] of the different foods and unclean meals together with the sin therein; whoever stops receiving th[is] in, his heart and mind shall follow after.
+Nevertheless, the Light Mind by its wisdom and awe and diligence shall hum[ble] the guards who are set at the body's orifices. When it finishes humbling them it shall take fr[o]m them bolts to all the orifices of the body. Now, the orifices that had been opened before to the parades of Lust, to receive in the sights of pleasure, to transfer the [wor]ds of the practice of li[f]e's concerns, to receive in the t[astes] of the different foods and unclean meals together with the Sin therein; whoever stops receiving th[is] in, his heart and mind shall follow after.
 
-So, now, bec[ause] the b[olt]s to the body of the righteous person are in the hands of the Light M[in]d within, he is open [to receive] in all that is pleasing to God. He is op[en to take] in by his eyes the visions of lov[e ... ] and righteousness. Indeed, due to this, the si[ghts and] the [ad]ornme[nt of the gar]ments of kings, which are woven with gold; and the garments of silken wom[en], which are woven with gold and pearls, made beautiful for the shape of lust; first they were lovable before the eyes of the chosen person. Yet, now, by the power of the Light Mind that has suffused him and lived in the body he has humbled lust, the goddess of the body. The parades of lust have become loathsome in the presence of the righteous person. How-ever, the aspects of divinity and righteousness and humility and scorned clothes are pleasing to him.
+So, now, bec[ause] the b[olt]s to the body of the righteous person are in the hands of the Light M[in]d within, he is open [to receive] in all that is pleasing to God. He is op[en to take] in by his eyes the visions of lov[e ... ] and righteousness.
 
-Again, [these] ears were first opening to empty sounds and to the melodies of lust, to the secrecies of [wic]kedness. All these were pleasing at first, at the time when he he[a]rd them. Yet, now, by the power of the Light Mind, the sounds of lust and the words of magic and evil mysteries have become loathsome in his presence; as he is not pleased to hear them from this time on. Rather, he likes all the time to listen to the sounds of the lessons of righteousness, the words of the psalms and of the prayers, the praise of the hymns and the lessons of truth, and the knowledge of charity.
+Again, [these] ears were first opening to empty sounds and to the melodies of Lust, to the secrecies of [wic]kedness. All these were pleasing at first, at the time when he he[a]rd them. Yet, now, by the power of the Light Mind, the sounds of Lust and the words of magic and evil mysteries have become loathsome in his presence; as he is not pleased to hear them from this time on.
 
 [S]imply, all orifices in similar fashion were opening at one time to wickedness, but now have opened to the good. Sin was ruling in the body this time, doing anything it liked, having none in command.
 
-Yet, [n]ow, authority has been taken from the Sin in the org[ans] of the body. The Living Spirit has become lord over all its limbs. It has bound them with a chain of peace, and sealed them with the seal of truth. It has opened the orifices of the body to the good, and because of this the good enters them through the ears and the eyes. It dwells in the heart. The H[o]ly Spirit reigns. It does all that it pleases. It annuls [the] will of [S]in, the begin-ning and the end. [In contrast], the will of the [Holly Spir[it] comes about, and the purpose of the Light Mind.
-
-With wisdom and skill make yourselves secure at the circuit of the body's orifices, so that the sin that dwells in the body has no power over you. Nor does it take from you your light, nor scatter it from place to place, nor (drive) it from site to site in various forms.
+Yet, [n]ow, authority has been taken from the Sin in the org[ans] of the body. The Living Spirit has become lord over all its limbs. It has bound them with a chain of peace, and sealed them with the seal of truth. It has opened the orifices of the body to the good, and because of this the good enters them through the ears and the eyes. It dwells in the heart.
 
 **Temporal observations:**
-- ¶1: Hagiographic/dialogue frame: ‘disciples questioned the enlightener… They say to him…’ Functions as chapter container and question prompt, not core exposition.
-- ¶2: Core cosmological mechanics (Matter/Sin as agent moving between realms; image of the Ambassador; tree/fruits as transmission medium). The only late feature is the speaker-attribution formula.
-- ¶3: Mythic-cosmological narration explaining transmission of the ‘image’ via Matter/Sin; no citation formulas or church institutional language.
-- ¶4: Repetitive, systematic mythic explanation (core) with a late editorial voice marker (‘Again the enlightener says’).
-- ¶5: Summary closure of the mythic explanation; still in teaching voice, not institutional regulation or NT citation.
-- ¶6: Impersonal microcosm teaching (senses as storehouses) is core; the ‘Once again… speaks’ wrapper is late frame.
-- ¶7: Fragmentary continuation of the microcosm teaching; no frame/pastoral markers preserved.
-- ¶8: Systematic faculty-storehouse model; process-oriented, impersonal exposition characteristic of core teaching.
-- ¶9: Continues the systematic ‘storehouses’ mechanism; numeric detail (‘a thousand days’) fits schematic core exposition.
-- ¶10: Formulaic extension of the same mechanism across senses (core iterative teaching).
-- ¶11: Same structured model applied to taste; no editorial wrap or institutional content.
-- ¶12: Iterative completion of the five-sense sequence; impersonal schematic voice.
-- ¶13: Core hierarchical governance model (heart ruling senses) within microcosm scheme.
-- ¶14: Simile used to explain internal governance; still explanatory rather than exhortative.
-- ¶15: Second simile continuing the same explanatory model; no frame markers.
-- ¶16: Lacunose continuation of the ‘cellarman’ image; no detectable later-layer markers.
-- ¶17: Systematic extension: ‘faculty of the body’ as integrator; consistent process exposition.
-- ¶18: Repetitive didactic style typical of core; no institutional vocabulary.
-- ¶19: Closing the sensory series; schematic iteration suggests an older teaching template.
-- ¶20: Core microcosm simile (guards/bolts at ‘doors’ of senses). Framed by a late speaker formula.
-- ¶21: Extended simile unpacking the ‘gates’ model; explanatory, not institutional.
-- ¶22: Core body-as-camp microcosm mapping; the only late element is the attribution formula.
-- ¶23: Core cosmological agents and mechanism (Light Mind vs rulers as guards) expressed structurally, not devotionally.
-- ¶24: Still mechanism-first: Light Mind seizing ‘bolts’ and changing sensory intake; ethical terms appear as consequences within a cosmological-control model (not church regulation).
-- ¶25: Applied ethic-aesthetic exemplification, but anchored in the core mechanism (‘bolts’ held by Light Mind; Lust personified as ‘goddess of the body’). ‘chosen person’ reads as a community term but not an institutional rule; no seam pattern extending a closed cosmological list.
-- ¶26: Strong paraenetic coloration (psalms/prayers/hymns/charity), but still presented as the causal effect of Light Mind’s rule over sensory gates rather than as institutional instruction; no NT citation vector. Borderline late, but integrated into the core ‘orifices/bolts’ mechanism.
-- ¶27: Generalizing summary with personified Sin as a ruling power in the body—fits core anthropological dualism.
-- ¶28: Core cosmological hierarchy language (Living Spirit; personified Sin) within the microcosm. ‘Holy Spirit’ terminology may reflect later Christianized naming, but here it functions as a reigning cosmic power in the same mechanism; no citation formula.
-- ¶29: Begins with a cosmological-control premise (orifices circuit; Sin stealing/scattering light) but the paragraph is dominated by direct second-person exhortation and communal address—late pastoralizing finish layered onto the core model.
+- ¶1: Substantive cosmological question (image/seal of the Ambassador; Saklas and consort as shapers) embedded inside a compiler’s dialogue frame.
+- ¶2: Core cosmological mechanics (Sin/Matter, firmaments, descent, tree/fruits transmission) introduced by a later dialogue tag.
+- ¶3: Cosmos→cosmos narrative: Sin/Matter acting through fruits and rulers to produce the ‘image’; no institutional/application pivot.
+- ¶4: Repetitive systematic explanation of transmission of the ‘seal’ through Sin/Matter; old teaching wrapped with a later ‘again…says’ tag.
+- ¶5: Meta-discursive closure (“Behold, I have taught you this lesson…”) addressing hearers; not the cosmological mechanism itself and reads like a compiler/teacher wrap.
+- ¶6: Systematic microcosm teaching (limbs/senses as internal ‘storehouses’) framed by a later dialogue formula.
+- ¶7: Fragmentary continuation of the sense-faculty/storehouse exposition; no external application markers.
+- ¶8: Impersonal, systematic faculty-mechanics (perception→storage→recall) with correspondential ‘houses/cavities/repositories’ register.
+- ¶9: Old teaching style: procedural description of memory retention (‘a thousand days’) and recall; no institutional anchoring.
+- ¶10: Continuation of the systematic five-sense ‘storehouse’ schema.
+- ¶11: Faculty taxonomy remains internal to the body-as-microcosm system; impersonal explanatory voice.
+- ¶12: Completes the five-faculty sequence in the same ‘storehouse’ mechanics.
+- ¶13: Systematic hierarchy (heart governing faculties) stated as mechanism, not exhortation.
+- ¶14: Correspondential simile (heart↔king/council/army) stays within structural analogy; no institutional ‘pointing at’.
+- ¶15: Second simile (heart↔cellarman/storage) continues the same impersonal analogical register.
+- ¶16: Lacuna continuation of the storage simile; no layer markers.
+- ¶17: Extends the same schema to a summarizing ‘faculty of the body’ function; still procedural.
+- ¶18: Repetition typical of the didactic substrate; no external anchoring.
+- ¶19: Completes the patterned iteration across faculties (systematic list logic).
+- ¶20: Core ‘gates/guards/bolts’ model introduced by a later dialogue tag.
+- ¶21: Extended correspondential simile (body-gates ↔ camp-gates) still functions as system-internal description rather than church application.
+- ¶22: Explicit microcosm mapping (camp↔body; gates↔orifices; queen↔directive faculty) with a later attribution tag stripped.
+- ¶23: Cosmic actors (Light Mind; rulers as guards) operating within the body-microcosm; mechanistic exposition.
+- ¶24: Still describes control-transfer mechanics (Light Mind taking ‘bolts’); moralized content remains embedded in the microcosm system rather than institutional regulation.
+- ¶25: Clear pivot from mechanism (Light Mind controls sensory ‘bolts’) to social-world application (luxury garments; ‘chosen person’), matching the chapter’s second-half application drift.
+- ¶26: Mechanics of sensory transformation under Light Mind is older in register; the turn to psalms/prayers is a later community application.
+- ¶27: General summary remains within the internal ‘Sin ruling the body’ microcosm model; no explicit institutional markers.
+- ¶28: Core microcosm control-transfer is expressed in Living Spirit terms; the sudden ‘Holy Spirit’ rulership reads as a secondary gloss (not an NT citation, but Christianizing terminology in a late-drifting section).
+- ¶29: Direct exhortation with audience address (“my brothers, my loved ones and my limbs”), imperatives (“make yourselves secure… be watchful”), and salvation/rest framing—application voice concentrated at chapter end (editorial fatigue).
 
 ---
 
 ## Chapter 57
 ### Concerning the Generation of Adam.
 
-*Core teaching concentrates in ¶¶3–6: an impersonal, systematic five-fold astral/temporal hierarchy (year/month/day/hour/moment) governing human longevity across generations. The chapter is wrapped in dialogue frame (¶1, ¶3, ¶7–8, ¶10, ¶12) and ends with moralizing/declension rhetoric (¶7, ¶11) typical of later pastoral/homiletic expansion; no explicit NT citation, so the late material is chiefly FRAME + PASTORAL rather than OVERLAY.*
+*A substantial core teaching block explains the decline of human stature/lifespan through a fivefold astrological authority structure (year→month→day→hour→moment) within the zodiacal sphere—systematic and internally cosmological. The chapter is wrapped in a strong dialogue frame (catechumen/enlightener formulas) and shows clear late drift into homiletic ‘last days/today’ application and moralizing, with a closing doxology.*
 
 Now, no[te] that Adam is mighty in his stature, and great is his size. Even his years are many! He spent many years living in the world. And he is not the only one we have found to be mighty; but all the others who were begotten in his generation, many are their years too. Still, these people who are born today, their stature has been diminished in power; even their years are lessened. Also, why is the birth today, of [the]y who are born, altered compared with that of these first [ ... ] place to place? See, even the stars and signs of the zodiac continue in their positions. Why now have the age and the years of these last ones diminished, and he has also become smaller, compared to these ancient ones who belong to these first generations?
 
@@ -2550,78 +2527,80 @@ After they ceased to reign, namely the powers who are masters over the years; th
 
 When the authority of the powers who master the months was completed; the powers of the days received authority after them. Therefore, like the days, for they are less than the months, this also is the case with the offspring who were born in them. Their life span is less than the life span of the ones born in the powers who are masters over the months. Again, even so the offspring who were born in the hours, and of the moments. Their {conduit} is less than that of the months and the days.
 
+The life span of the people has drawn in to nothing. Their days have diminished. Their years have become less; because the life and the ligh[t that] was in the world in these first generations was more than that of today. Indeed, because of this have they diminished in their stature. Their life span has become less for them.
+
 Now, can you recount to me this other (matter): By what sort of birth was the entire offspring of mankind made from one man and one woman, Adam and Eve?
 
 For the manner of these first generations is that they are richer in their light and purer in stature. Even their years are greater. Thus, again, even their offspring is much more than the offspring of this tim[e]. They were spending a longer time [ ... ] in [the w]omb of their mother. Afterwards, they [ ... ] a number in a single womb. There are times five were brought forth from a single womb, and times six were brought forth from [a] single womb! There are some lesser than this; again, some greater than this. Indeed, because of this the offspring of Eve multiplied, and of her children. The earth was filled by reason of them alone; because the offspring from the generation of the people of old, who they bore into the world, differ greatly from those of today. Their conception and their birth is not like latter births, brought forth nowadays from the woman's uterus.
 
 **Temporal observations:**
-- ¶1: Dialogue setup with hagiographic formulae (“Once again… questioned the enlightener”, vocative ‘my master’) and catechumen setting; functions as editorial container.
-- ¶2: Impersonal problem-statement and cosmological premise (stars/zodiac as causal frame) without citation or institutional instruction; reads like pre-compilation teaching prompt preserved in the compilation.
-- ¶3: Core embedded under a compilation frame: systematic five-fold structure (year/month/day/hour/moment) with hierarchical mastery in the zodiacal sphere—classic ‘how the system works’ voice. The removed attribution/encomium is hagiographic frame.
-- ¶4: Process explanation linking astral ‘powers’ to generation-length and lifespan; cosmological mechanism with creation-to-end-of-world scope, not institutional exhortation. Biblical names function here as generational markers within the mechanism, not as NT overlay.
-- ¶5: Continuation of the same structured hierarchy, with analogical scaling (months < years ⇒ lifespan shorter). Strong marker of the oldest systematic layer.
-- ¶6: Completes the five-fold temporal descent into days/hours/moments; impersonal system logic. The odd term “{conduit}” looks like translator’s rendering but still within the mechanism description.
-- ¶7: Homiletic exhortation about imminent end-times and moralized decline (“near the end of the world approaches”; ‘life and light… was more than today’) introduced with dialogue attribution; shifts from astral mechanism to sermonic application.
-- ¶8: Q&A continuator with heavy entreaty formula (“I entreat you, my master!”) and recap of prior teaching; functions as editorial stitching, not cosmological exposition.
-- ¶9: Substantive question that cues a teaching topic (human propagation mechanism). Lacks hagiographic formulae; reads as preserved instructional prompt.
-- ¶10: Underlying layer gives quasi-physiological, comparative mechanism (greater light ⇒ greater stature/years ⇒ higher fecundity; multi-births). The prefixed ‘enlightener speaks…’ plus commendation is compilation frame.
-- ¶11: Moralizing degeneration rhetoric (ugly/feeble, ‘teachings… full of wickedness’, suffering, death) rather than cosmological mechanism; fits late sermonic/pastoral drift noted in chapter fatigue.
-- ¶12: Standard closure: hearer praises, gives thanks, homage; explicit frame function.
+- ¶1: Dialogue frame and institutional identifier (“Babylonian catechumen”), plus address formula (“my master”)—editorial container rather than substrate exposition.
+- ¶2: Impersonal explanatory voice; causal question remains within cosmic architecture (stars/zodiac → human stature/years) without institutional polemic or Gospel citation.
+- ¶3: Core is a systematic fivefold schema (year/month/day/hour/moment) mapped to named ‘masters’ in the zodiac/heavens—classic structural teaching. The removed portion is hagiographic/frame voice.
+- ¶4: Continues the internal mechanism (cosmic ‘powers’ governing births and lifespan) with no institutional mapping; still part of the structured astrological-cosmological explanation.
+- ¶5: Iterative step in the fivefold sequence (year→month) using impersonal, rule-like proportion (time-unit magnitude ↔ lifespan).
+- ¶6: Completes the systematic descent (month→day→hour→moment) in the same proportional-cosmological register; ‘{conduit}’ reads as technical vocabulary within the mechanism.
+- ¶7: Underlying teaching (diminution of ‘life and light’ in the world causing reduced stature/lifespan) is cosmological; the removed material shifts into direct audience-address and ‘end of the world’ preaching tone typical of later application.
+- ¶8: Q&A recap with entreaty formula (“I entreat you, my master!”) and explicit dialogue scaffolding—editorial framing.
+- ¶9: A didactic prompt that directly advances the cosmological-anthropogonic topic (generation mechanics). Lacks overt hagiographic formulas in this paragraph, so it likely belongs to the teaching sequence as transmitted.
+- ¶10: Core content gives an internal cosmological physiology of early generations (‘richer in their light’, altered gestation, multiple births) with lacuna-preserving technical narration. The removed preface is application/teacher-address typical of compiled dialogue.
+- ¶11: Moralizing and condemnatory rhetoric about ‘wickedness’, ugliness, suffering, and hastened death without an explicit internal cosmological mechanism; functions as late homiletic application consistent with second-half drift.
+- ¶12: Closing homage/thanksgiving scene—standard hagiographic/frame closure, not part of the substrate teaching.
 
 ---
 
 ## Chapter 58
 ### The Four Powers that grieve
 
-*The chapter opens with a formulaic dialogue frame (late). The oldest layer appears in ¶2–3: impersonal cosmological exposition about the Mother of Life and the First Man grieving for their afflicted children in the Darkness, including the five sons motif. The second half (¶4–5) shows clear pastoral/institutional drift (holy church, persecution, repentance/gehenna), consistent with the high editorial fatigue score; these read as later editorial/community application rather than the old teaching core.*
+*The chapter begins with a brief hagiographic/dialogue frame, then preserves a compact cosmological substrate describing the grief of the Mother of Life and the First Man for their afflicted children (within the Light–Darkness conflict system). The second half shows strong editorial fatigue: it shifts to autobiographical/hagiographic material about Mani and his church, and finally to moral-soteriological language (repentance/gehenna) likely reflecting later Christianizing overlay.*
 
-⟨p.147⟩ The first who grieves is the first Mother of Life. She is sad because of her children who are set in affliction, for they were conjoined with the Darkness and the [poi]son. They have been bound with the entire ruling-power. For what was she grieving, [wa]tching over them taking these afflictions? Whenever she might [s]ee them and how suffering is brought upon them, she shall grieve and be unhappy on account of them.
+⟨p.147⟩ The first who grieves is the first Mother of Life. She is sad because of her children who are set in affliction, for they were conjoined with the darkness and the [poi]son. They have been bound with the entire ruling-power. For what was she grieving, [wa]tching over them taking these afflictions? Whenever she might [s]ee them and how suffering is brought upon them, she shall grieve and be unhappy on account of them.
 
 ⟨p.148⟩ [The s]econd one who is troubled of heart is the First Man, whose [great]ness and kingdom is established in the li[ght] ship [...]. And he too is troubled of heart because of his five sons who are set in the midst of danger. For any time he may see that they are given trouble, always he might hear the sound of their weeping as they cry out because of the blows and wounds of the enemy who assaults them daily; and as he sees them like this constantly, he shall g[ri]eve and mourn on account of his [s]o[n]s.
 
 **Temporal observations:**
-- ¶1: Formulaic opening attribution (“Once again the enlightener speaks to his disciples”) is hagiographic/compilational framing; not part of the old teaching layer.
-- ¶2: Impersonal cosmological explanation (Mother of Life; children bound in Darkness; ‘ruling-power’ as cosmic constraint) with no ecclesial or citation apparatus; reads as direct systematic mythic mechanics → core teaching.
-- ¶3: Core cosmological beings (First Man; light ship; five sons) in explanatory, process-oriented voice (“whenever… he may see/hear… he shall grieve”), describing ongoing light-dark assault mechanics rather than institutional exhortation.
-- ¶4: First-person self-identification (“The third one who grieves am I”) tied to ‘holy church’, persecution, ‘Light Mind’ placed in the church—an institutional/hagiographic application consistent with second-half pastoral drift. Even if it echoes mythic language, it is not the old impersonal cosmological layer.
-- ¶5: Soteriological exhortation and disciplinary vocabulary (refused hope, certainty of truth, repentance, reconciliation, mercy) plus eschatological threat (“gehenna for ever”) indicates later pastoral/paraenetic layer rather than core cosmological exposition.
+- ¶1: Formulaic opening (“Once again… speaks to his disciples”) and first-person hagiographic staging; functions as editorial container rather than impersonal system exposition.
+- ¶2: Impersonal cosmological exposition: a named divine hypostasis (Mother of Life) and her children within the Light–Darkness bondage mechanism; no institutional application, exhortation, or citation.
+- ¶3: System-internal mythic-cosmological layer: First Man + five sons, Light ship locale, and ongoing assault by the enemy; descriptive, process-oriented voice without church reference.
+- ¶4: Autobiographical Mani-claim and church-centered application (“holy church… I chose… freed… persecution”), characteristic of hagiographic/institutional redaction rather than substrate cosmology.
+- ¶5: Soteriological/moral discourse focused on refusal of truth, repentance, and “gehenna for ever,” using Christian-loaded eschatological vocabulary rather than a cosmos→cosmos mapping; likely entered via Christianizing synthesis rather than the older systematic teaching register.
 
 ---
 
 ## Chapter 59
 ### The Chapter of the Elements that wept
 
-*The chapter opens with a brief hagiographic frame, then delivers a tightly structured, numbered exposition (three weepings + a final fourth at the end) in an impersonal cosmological register: First Man, Living Spirit, darkness/mixture, ascent through the earths, Last Statue and final separation. After the core sequence concludes, there is clear late drift into apostolic/prophetic institutional-heroic admonition (editorial fatigue signal matches: second-half pastoral rise).*
+*The chapter is dominated by a systematic cosmological-eschatological teaching: the four weepings of the garments/sons (light-elements) in relation to Darkness, the First Man’s ascent, the Living Spirit’s separation of the three activity-garments, and the Last Statue at the end. A late turn occurs in the second half (esp. ¶8–9), shifting from cosmic process to apostolic/prophetic exemplarity and admonition, matching the chapter-level pastoral drift signal.*
 
 The garments, the sons of the First Man, wept bitterly three times. Then they were silent. There is a fourth time of weeping, for they will weep at the end. And then their crying can stop, and they will never again weep from this time on.
 
-Now, the first time of their weeping is when they had seen the darkness, the enemy being about to burst out against them. They understood everything that would happen to them. They were aware of the one that would rise and come upon them, but by necessity they hastened to him and fought with him. They mastered him, they detained him. They bound him with their body and their limbs, they overcame his death and his fire and his darkness.
+Now, the first time of their weeping is when they had seen the Darkness, the enemy being about to burst out against them. They understood everything that would happen to them. They were aware of the one that would rise and come upon them, but by necessity they hastened to him and fought with him. They mastered him, they detained him. They bound him with their body and their limbs, they overcame his death and his fire and his Darkness.
 
-[The] second time that they wept is [when the]ir father, the First Man, [ascend]ed from the [abyss] of darkness and left them behind; that is the time when he stripped [them off] and left them below. Indeed, when th[ey] s[aw] how the First Man had risen out of the abyss and [l]eft them behind, and that they were abandoned in the enmit[y, th]ey wept and were sore of heart. Still, what could they do, wishing [ ... / ... ] their heart to every affliction. They [remained b]ehind and grew [s]ick under the pressure of the weighty burden of all the works, until the end time.
+[The] second time that they wept is [when the]ir father, the First Man, [ascend]ed from the [abyss] of Darkness and left them behind; that is the time when he stripped [them off] and left them below. Indeed, when th[ey] s[aw] how the First Man had risen out of the abyss and [l]eft them behind, and that they were abandoned in the enmit[y, th]ey wept and were sore of heart. Still, what could they do, wishing [ ... / ... ] their heart to every affliction. They [remained b]ehind and grew [s]ick under the pressure of the weighty burden of all the works, until the end time.
 
 [The] third time that they wept is when the Living Spirit stripped off the three garments of activity, placing them beneath all things. He gave them a sign to lift their heads and rise to the heights from that place; and to pass and journey through all the earths until they should reach the land of tranquilli[t]y and peace, the place of rest prepared for them. So, when they had seen him, that he had separated himself from them, while they themselves remained behind after him and had not ascended; at that moment when they stayed behind these three garments wept. After their crying, they turned their [hear]t to all the heights that were concealed from them, and were of one mind. For [they would] soar up and come to the heights; and pass over all things until the time that was ordained for them all [ ... ] at the end of the worlds.
 
-[The f]ourth time when they will weep is when the [S]tatue will be taken up on the last day, and they will weep [for] the souls of the liars and blasphemers; for they may give [ ... ] because their limbs have been severed [ ... ] of the darkness. And also [th]ose souls, when the Statue will go up and th]ey are left alo[n]e, they will weep in that they will rema[in] behind in affliction for ever. For they wi[ll be cut off] and separated from the Last Statue. An[d it is] a necessity to take these souls who are ready for loss as retribution for the deeds that they have done. They go i[n to] this [darkne]ss and are bound with the darkness; just as they desired it and loved it, and placed their treasure with it. At that very moment, when the Last Statue rises up, the[y wi]ll weep. And then they will scream out loud because they will be severed from the company of this great Statue. And they remain behind for ever. This great weeping [ ... ] is terrible, it occurs in front of the souls and [ ... ] who are ready for loss in accordance with their deeds. And they [will] weep with that crying, they will never be silent; because they will not attain rest from this time on.
+[The f]ourth time when they will weep is when the [S]tatue will be taken up on the last day, and they will weep [for] the souls of the liars and blasphemers; for they may give [ ... ] because their limbs have been severed [ ... ] of the Darkness. And also [th]ose souls, when the Statue will go up and th]ey are left alo[n]e, they will weep in that they will rema[in] behind in affliction for ever. For they wi[ll be cut off] and separated from the Last Statue. An[d it is] a necessity to take these souls who are ready for loss as retribution for the deeds that they have done. They go i[n to] this [darkne]ss and are bound with the Darkness; just as they desired it and loved it, and placed their treasure with it. At that very moment, when the Last Statue rises up, the[y wi]ll weep. And then they will scream out loud because they will be severed from the company of this great Statue. And they remain behind for ever. This great weeping [ ... ] is terrible, it occurs in front of the souls and [ ... ] who are ready for loss in accordance with their deeds. And they [will] weep with that crying, they will never be silent; because they will not attain rest from this time on.
 
 So, they too are the garments of these elements. This fourth time of weeping is heart-rending for them. It is much worse for them than these other three times of weeping before. This fourth time the weeping is not for themselves. Rather they weep and are heartsore for these soul[s] who will be cut off from peace, because rest will not come about for them, to allow them to rest from torment for ever.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue-frame opener (“Once again…disciple”) typical of the Kephalaia hagiographic container, not the teaching substrate.
-- ¶2: Numbered, schematic teaching statement establishing a fourfold structure (3 + final), with cosmological actors (garments/sons of the First Man) in impersonal expository voice; no citations or institutional exhortation.
-- ¶3: Systematic first-item explication in a numbered sequence; cosmic combat mechanics (binding Darkness with body/limbs; overcoming death/fire/darkness) presented as process, not moral instruction.
-- ¶4: Continuation of the numbered cosmological sequence with Persian cosmological figure (First Man) and mixture/abandonment motif; affective language still embedded in cosmological mechanism (left in the abyss/works until end time).
-- ¶5: Named cosmological agent (Living Spirit) and a precise triad (“three garments of activity”) in a procedural ascent-through-levels description—hallmark of the systematic teaching layer, not later church regulation.
-- ¶6: Still within the numbered fourfold schema; eschatological cosmology (Last Statue taken up; separation; binding with Darkness) explained as cosmic-legal necessity. Though moral labels occur (“liars and blasphemers”), the paragraph’s organizing logic is the cosmological mechanism of final separation, not institutional exhortation or NT citation.
-- ¶7: Concluding gloss that remains tied to the core schema (garments/elements; comparative 4th weeping) and interprets the mechanism (final cut-off from peace/rest) without shifting into church offices or citation formulas.
-- ¶8: Register shift to institutional/hagiographic-ethical rationale: “apostles and the fathers…revealers…true prophets” and exemplary suffering to save souls. This aligns with the chapter’s strong second-half pastoral drift and reads as editorial application/exhortation rather than the older cosmological exposition.
-- ¶9: Admonitory maxim (“not proper…wise person must…”) plus grouping “gods and the apostles” as moral motivation. Functions as closing admonition rather than systematic cosmological instruction; likely part of the late exhortatory tail (editorial fatigue zone).
+- ¶1: Formulaic dialogue frame (“Once again… disciples”), characteristic of the later editorial/hagiographic apparatus; contains no teaching content.
+- ¶2: Impersonal, structural exposition establishing a numbered sequence (three times + a fourth at the end) entirely within the cosmological system (garments/sons of the First Man).
+- ¶3: Core mythic mechanics: the light-garments encounter and bind Darkness; cosmos→cosmos narration without exhortation, citation, or institutional application.
+- ¶4: Cosmological sequence continues (First Man’s ascent; garments left in mixture/hostility). Although affective language appears, it remains internal to the mythic process (no address to audience or contemporary institutions).
+- ¶5: System-internal cosmological staging (Living Spirit; three activity-garments; ascent through “all the earths” toward rest). Still expository and process-oriented, not pastoral.
+- ¶6: Eschatological mechanics articulated within Manichaean cosmic architecture (Statue/Last Statue; separation; binding in Darkness). Moral descriptors appear, but the paragraph still describes cosmic outcomes rather than exhorting an audience or referencing church institutions/NT citation formulas.
+- ¶7: Internal interpretive gloss on the fourth weeping, still staying within the system (elements/garments; souls cut off from peace/rest) and not turning to institutional or audience-directed exhortation.
+- ¶8: Shifts from cosmic description to apostolic/prophetic exemplarity and salvific motive (“apostles… true prophets… second death… crucified in their body”). This is Christianizing/apostolic overlay language entering via Mani’s synthesis and later editorial homiletic use, not the impersonal substrate.
+- ¶9: Admonitory voice (“the wise person must constantly be attentive”) and valorization of “the gods and the apostles” functions as a concluding moral exhortation rather than cosmological mapping; fits late pastoral wrap-up in a chapter with strong second-half drift.
 
 ---
 
 ## Chapter 60
 ### Concerning the Four Fathers; what they are like.
 
-*Core teaching dominates: a systematic body–cosmos correspondence (hidden/visible organs ↔ Father/ships/soul/Jesus the Splendour) in an impersonal explanatory voice. The chapter is bracketed by a hagiographic opening (apostle-to-disciples attribution) and a closing summary line; no institutional/pastoral graft is present, and the lone Christian signal is the named cosmic entity Jesus the Splendour (not a Gospel citation).*
+*A largely continuous correspondential-cosmological exposition (body faculties ↔ cosmic principles) with a thin dialogue frame at the opening and a closing summary address. No NT citation formulae; Jesus the Splendour functions as a defined cosmic revealer within the system.*
 
 Just as the corporeal body has limbs that are hidden, so it also has others that are visible. They can be seen upon it, they can be grasped and receive blows and wounds, whilst others can neither be grasped nor receive blows.
 
@@ -2640,96 +2619,100 @@ This is also what Jesus the Splendour is like, who shall be sent from the greatn
 And regarding this beating and wounding of the living soul, Jesus is the one who reveals it. He also preaches about (the soul) and its peace. He reveals about its cleansing and healing.
 
 **Temporal observations:**
-- ¶1: Opening formula with 'apostle' marks the redactional dialogue frame; the remaining sentences are impersonal analogical teaching that sets up the correspondence scheme.
-- ¶2: Direct systematic analogy extending the hidden/visible + impassible/passible distinction to 'greatness'; no citation, no institutional address.
-- ¶3: Body-faculty ↔ cosmic principle mapping (directive faculty ↔ Father in his kingdom) in explanatory voice; characteristic of the systematic cosmological layer.
-- ¶4: Clear correspondence (eyes ↔ two light ships sun/moon) and light-mechanics statement; no later citation formulas.
-- ¶5: Old teaching on the soul’s passibility and conflict with the 'five fleshes' (cosmic/anthropological mechanism) expressed as process, not exhortation.
-- ¶6: Continues the systematic organ-function exposition (tongue as revealer of hidden/inner states); impersonal descriptive register.
-- ¶7: Jesus the Splendour functions as a defined cosmic revealer within the hierarchy ('sent from the greatness'), not as a Gospel-cited Jesus; integrated into the correspondence sequence (tongue ↔ revealer).
-- ¶8: Still within the same cosmological-revelatory mechanism (Jesus revealing the soul’s affliction and cure). 'Preaches' here lacks any NT citation vector and reads as functional description within the system.
-- ¶9: Concluding deictic summary ('Behold, I have shown you...') typical of editorial wrapping/closure rather than the systematic mapping itself.
+- ¶1: Opens with a Kephalaia dialogue formula naming “the apostle” (frame), but the remainder is impersonal analogical teaching that sets up the cosmos/body visibility schema.
+- ¶2: Continues the structural correspondence (body ↔ “entire greatness”) without institutional or audience-exhortation pivots; stays within the cosmic/ontological system (hidden/visible; suffering/impassibility).
+- ¶3: Systematic mapping of an inner bodily faculty (“directive… hidden”) to the Father’s hiddenness in his kingdom; impersonal explanatory voice characteristic of the substrate.
+- ¶4: Classic cosmos→cosmos correspondence: bodily organs ↔ the two Light Ships (sun/moon), framed as structural visibility/illumination rather than exhortation or polemic.
+- ¶5: Cosmic anthropology expressed through bodily mechanics (wounding, grasping) and the five fleshes; no turn toward contemporary institutions—still describing what the soul undergoes within the system.
+- ¶6: Continues the body-faculty schema in impersonal description (tongue as revealer of internal/external states), preparing the next mapping; no editorial address beyond exposition.
+- ¶7: Jesus the Splendour appears as a defined cosmic revealer (not a Gospel citation). The mapping remains internal (tongue/revelation ↔ aeons/ships/glory).
+- ¶8: Despite the verb “preaches,” there is no NT quotation or ecclesial application; Jesus the Splendour’s revelatory function is applied to cosmic-soteriological processes (wounding/peace/cleansing/healing) within the system.
+- ¶9: Closing demonstrative address (“Behold, I have shown to you…”) summarizing ‘four fathers’ and their appointed works; functions as editorial closure rather than substrate exposition.
 
 ---
 
 ## Chapter 61
 ### Concerning the Garment of the Waters: how great is its Measure.
 
-*The chapter is wrapped in a Persian court/disciples narrative and ends with a praise-response (FRAME). The oldest layer is the impersonal cosmological exposition on the First Man’s elemental garments and the rulers’ consumption of the garment of waters, including the sevenfold river-measure and the binding/destruction-of-universe statements. One paragraph (¶6) contains an explicit Great Gospel reference, a later Christian-overlay citation formula grafted into otherwise core cosmological teaching, so it is MIXED with the citation removed.*
+*The chapter is wrapped in a biographical-hagiographic riverbank scene (Tigris, Shapur, disciples’ praise). The oldest teaching substrate emerges sharply in ¶6–¶10 as an impersonal cosmological mechanism: First Man’s assumption of the elements and the water-garment’s vast measure (seven rivers into the rulers’ mouths; binding of destructive powers; the Tigris as a negligible fraction). Several teaching paragraphs retain later dialogue/address intrusions ("apostle", "elect one", "I told you" / cross-reference to the Great Gospel), so they are treated as MIXED with those secondary accretions removed.*
 
-[At] the time when the First Man assumed the elements, and stood [fi]rm against the first enmity that had come about in the darkness, he defied these great and powerful rulers. They are immeasurable, greater than the extent or size of thousands and ten thousands of parasangs. At the start, when he spread the fight against them, he gave them fire and wind; and afterwards he gave the garment of the waters to the rulers of death. So they, the rulers, drank in and consumed those waters, [the way that I told] you [...]. Many [waters] poured forth from the garment of waters [...] the rivers flow. The mouth of the rulers [...] those [...], the warriors of destruction [...] laboured and brought them forth.
+[At] the time when the First Man assumed the elements, and stood [fi]rm against the first enmity that had come about in the darkness, he defied these great and powerful rulers. They are immeasurable, greater than the extent or size of thousands and ten thousands of parasangs. At the start, when he spread the fight against them, he gave them fire and wind; and afterwards he gave the garment of the waters to the rulers of death. So they, the rulers, drank in and consumed those waters. Many [waters] poured forth from the garment of waters [...] the rivers flow. The mouth of the rulers [...] those [...], the warriors of destruction [...] laboured and brought them forth.
 
 There were seven (rivers), like the great river Tigris [that you] see, flowing in to the mouth of each one of them, as they shall not [...] to a single stomach, to their fill; because in turn the descent to its stomach shall burn them with its fire and heat. Those rulers were like the [...] of [...]; they were not emptied; rain and [...] their existent days.
+
+The measure of that river was expanded seven times, as they flow [...] of the body of the [...] waters [...] now.
 
 [...] is how great a struggle, since it has [...] these creatures of destruction, the mighty giants. Behold, they are entwined, bound, and [...] in every place. They are hidden, not revealed before the eyes of every flesh that exists on the land of death [...]. These rulers [...] revealed. The entire universe of flesh will be destroyed and dissolved [...]; all pass away [...]. They will be destroyed with their angry voice, which is mightier than the thunder.
 
 Now, as this small stream is reckoned [...] before the vastness of these waters of which I have recounted to you. For only one river from thousands of rivers of water, from the secrets that are not revealed, is the river Tigris upon the earth.
 
-See [...] and be amazed at the measure of the elements of the waters. Marvel at the stature of the Man who bore them. And understand how great is that god, active in power, the one whom these waters [...] than the stature of the First Man who [assumed] this garment of such size; and how much was made.
+[...] the measure of the elements of the waters. [...] the stature of the Man who bore them. [...] how great is that god, active in power, the one whom these waters [...] than the stature of the First Man who [assumed] this garment of such size; and how much was made.
 
 **Temporal observations:**
-- ¶1: Hagiographic/biographical scene-setting with ‘the apostle’ before King Shapur; purely narrative frame.
-- ¶2: Narrative description of the Tigris flood (time/month, city gates/market), serving as scenic staging rather than cosmological system exposition.
-- ¶3: Disciples ‘leaders of his church’ + apostle on quay: institutional/narrative framing (apostle/church leadership) rather than core mechanics.
-- ¶4: Dialogue question addressed to ‘the apostle’ embedded in the story-world; functions as a prompt in the compilation frame.
-- ¶5: Dialogue attribution (‘Then the apostle says…’) and rhetorical setup (‘listen…’) are classic Kephalaia frame vehicles, not the old teaching layer itself.
-- ¶6: Core mechanics: First Man + elements + Darkness enmity + rulers’ immeasurable size + sequence fire/wind/waters and ingestion. The Great Gospel reference is a later citation habit (overlay) embedded into the teaching.
-- ¶7: Systematic sevenfold measure + impersonal process description (ingestion/burning/never emptied): characteristic core cosmological mechanics.
-- ¶8: Begins with dialogue attribution (‘The apostle speaks…’) and directly addresses an ‘elect one’; despite cosmological vocabulary, the paragraph’s vehicle is a framed exhortation with heavy lacunose rhetoric rather than clean system exposition.
-- ¶9: Cosmological outcome statements (binding/hidden rulers; dissolution of the universe of flesh) in an impersonal descriptive voice; not institutional instruction or citation.
-- ¶10: Comparative cosmological scaling (earthly river vs ‘thousands of rivers’ from hidden secrets). Though rhetorically addressed, it continues the measurement/scale teaching rather than frame formulae or church discipline.
-- ¶11: Returns to core entities (elements, First Man) and their measure/stature in a cosmological-quantitative register; no citation or institutional regulation.
-- ¶12: Closing doxological response by disciples (‘We revere you, our master… opened our eyes’) is a standard hagiographic frame closure.
+- ¶1: Biographical court-setting with King Shapur and the formulaic opener "Once again"—a classic hagiographic frame, not cosmological exposition.
+- ¶2: Extended scene-setting narrative (month-name, city, flood detail). This functions as story-container for the later lesson; it does not map cosmos→cosmos.
+- ¶3: Narrative continues with institutional markers ("leaders of his church") and the apostle/disciple staging—editorial frame around the teaching.
+- ¶4: Dialogue-question embedded in the Tigris scene; although it asks about the water-garment, it is tightly anchored to the narrative present (Tigris/sea imagery) and presented as a disciple’s speech to the "apostle"—best read as framing prompt rather than substrate exposition.
+- ¶5: Direct-address exhortation ("listen", "be astonished") introduced by dialogue attribution "Then the apostle says"—a didactic transition in the compilation frame.
+- ¶6: Core mechanism (First Man, elements as weapons/garments, immeasurable rulers, hydraulic outflow) is systematic cosmology. The explicit self-reference to prior teaching in a named book (“Great Gospel”) and second-person address marks later editorial/bookish insertion.
+- ¶7: Systematic numeric cosmology (“seven rivers”) describing a cosmic digestive/fire process within the rulers—cosmos→cosmos mapping and mechanism, not institutional application.
+- ¶8: The surviving line preserves a compact quantitative/measure teaching (expansion “seven times”) within the elemental-water system. “apostle”/“elect one” and repeated imperatives to marvel are later pedagogical overlay onto the teaching.
+- ¶9: Cosmic containment and eschatological dissolution described as process (binding, hiddenness, destruction of the flesh-universe). No institutional targeting; “Behold” is rhetorical but remains within cosmic architecture.
+- ¶10: Comparative measure logic (one earthly river vs thousands of hidden rivers) serves the cosmological scale-teaching; despite the second-person “to you,” the mapping remains cosmos→cosmos (secret rivers/waters) with the Tigris as a minimal exemplar.
+- ¶11: Underlying content is a scale-comparison within the elemental/First Man system (measure of waters; the bearer’s stature). The surrounding direct-address marveling is a later sermonic pedagogy layered onto the substrate.
+- ¶12: Formal closing praise/thanks by disciples (“We revere you, our master… opened our eyes”)—a standard compilational/hagiographic closure.
 
 ---
 
 ## Chapter 62
 ### Concerning the Three Rocks
 
-*The chapter opens with a clear hagiographic frame (¶1) and then gives a systematic threefold cosmological exposition (¶2–4, ¶6) in an impersonal, structural voice. ¶5 is an editorial extension into institutional vocabulary (“holy church”), matching the chapter-level pastoral drift signal; despite its similar enumerative syntax (“third rock”), it is best dated as a later pastoral graft rather than part of the oldest teaching layer.*
+*The chapter is predominantly old, systematic cosmological exposition defining three stabilizing “rocks” set into the cosmic architecture (Pillar of Glory/Perfect Man; new Earth of Light over the Earth of Darkness). A late institutional graft appears in ¶5 where the third rock is relocated into the “holy church,” shifting the mapping from cosmos→cosmos to cosmos→community/institution (consistent with the strong second-half pastoral drift).*
 
 Three great rocks, which exist, were appointed by the greatness. They were set in these outer worlds.
 
 So, the first rock is the [Pillar] of Glory, the Perfect Man, which was summoned [by the] glorious Ambassador. He set it in this zone; [ ... he] brought forth its base (?) from the earth to heaven. It bore up under the [en]tire uni[verse], and became first of all the weight-carriers in [it]s powers. In its firmness it has been set upright, and has made fast every [t]hing above and below.
 
-[The] second great and glorious rock is the new earth of light, which was set upon the earth of darkness. It has squashed the fastenings of the five storehouses of death. It has established firmness, with great firmness, over and beyond the earth of darkness. It has flattened, crushed and fixed the root of death.
+[The] second great and glorious rock is the new earth of light, which was set upon the earth of Darkness. It has squashed the fastenings of the five storehouses of Death. It has established firmness, with great firmness, over and beyond the earth of Darkness. It has flattened, crushed and fixed the root of Death.
+
+[The] third rock is the great thought, which was summoned from Jesus, the glorious one.
 
 [These] are the three great rocks, they that have come forth in great confidence, in three great and honoured places. They were appointed and distributed in three great places of these [self]same worlds. They were made fast according to the will of the greatness.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame (“Once again… disciples”) characteristic of the Kephalaia’s hagiographic/editorial apparatus.
-- ¶2: Impersonal, structural introduction of a numbered triad; cosmological placement in “outer worlds” without citation or institutional application.
-- ¶3: Classic core cosmological mechanics: named cosmic entities (Pillar of Glory, Perfect Man, Ambassador) in systematic exposition describing stabilization of the universe.
-- ¶4: Systematic cosmological geography and light–Darkness mechanics; technical motif “five storehouses of death” and process-description voice mark an old teaching layer.
-- ¶5: Editorial seam-like institutional application: the triad is extended to “the holy church” (“He set it in the holy church… The church…”)—fits the chapter’s second-half pastoral drift. Even though “Jesus, the glorious one” appears, the decisive marker is the institutional register and placement of the ‘third rock’ in the church.
-- ¶6: Concluding recapitulation in impersonal enumerative style, closing the threefold cosmological scheme without ecclesial or citation language.
+- ¶1: Formulaic dialogue frame (“Once again… to his disciples”), characteristic of the compiler’s hagiographic apparatus, not the teaching substrate.
+- ¶2: Impersonal, structural cosmological statement establishing a numbered triad and its placement in the worlds; no audience address or institutional application.
+- ¶3: Systematic cosmic architecture: named beings/titles (Pillar of Glory, Perfect Man, Ambassador) and mechanical function (bearing, fastening, vertical axis), entirely within the cosmological system.
+- ¶4: Cosmic-place onto cosmic-effect exposition (Earth of Light vs. Earth of Darkness; storehouses/root of Death). Process/mechanics language without ecclesial or exhortatory turn marks it as substrate-style teaching.
+- ¶5: Opens in substrate register (a third cosmic ‘rock’ defined as a hypostasis/‘great thought’ sourced from Jesus as a cosmic being), then pivots to an ecclesial placement (“holy church”), indicating later editorial application/institutionalization.
+- ¶6: Concluding recapitulation in impersonal cosmological voice, reiterating triadic placement in ‘worlds’ and divine appointment; no frame formula or church-rule language.
 
 ---
 
 ## Chapter 63
-### Concerning Love
+### Concerning Love.
 
-*Core cosmological teaching dominates paragraphs 2, 4–5: definitional identifications of Love with the Father of Greatness and Hate with the first death/Darkness, plus mixture-era mechanics (wounding/killing, Cross of Light). Paragraph 1 is a formulaic dialogue opening (frame). Paragraph 3 is an editorial extension into the holy church with an explicit Gospel-style citation and apostle/church language (overlay/institutional), and should not be mined for core despite mimicking the definitional pattern.*
+*The chapter contains a small hagiographic dialogue frame, then a largely cosmological exposition defining Love (as the Father of Greatness) and Hate (as the First Death/Darkness principle). The only clear late intrusion is the church-application paragraph with an explicit Gospel citation (Jn/"no love greater"), which enters via Christian/NT overlay rather than the older cosmological-correspondential substrate. The second half is more purely cosmological, matching the unusual chapter-level density increase.*
 
-⟨p.156⟩Love is the Father of Greatness, who dwells in his glorious land. The entirety of the divine has been revealed [there]in! These two are a single living body, the Father and his love; because he has given himself for every thing, as he exists in his aeons. Indeed, due to this, they called the Father, the Lord of the totality, 'love'. For he gave the victory to his aeons and his limbs.
+⟨p.156⟩Love is the Father of Greatness, who dwells in his glorious land. The entirety of the divine has been revealed [there]in! These two are a single living body, the Father and his Love; because he has given himself for every thing, as he exists in his aeons. Indeed, due to this, they called the Father, the Lord of the totality, 'Love'. For he gave the victory to his aeons and his limbs.
 
-Hate is the first death that welled up. It revealed the land of darkness. This one called 'hate', because it has ruined all its perdition's offspring; it sinned even against a power foreign to it, and ruined it. Due to this they shall call it 'hated'; for it has caused destruction, both wounding in flesh, and what is not its own.
+Hate is the first death that welled up. It revealed the Land of Darkness. This one called 'hate', because it has ruined all its perdition's offspring; it sinned even against a power foreign to it, and ruined it. Due to this they shall call it 'hated'; for it has caused destruction, both wounding in flesh, and what is not its own.
 
-Today again it causes wounding and destruction in all flesh. It kills them all with diverse deaths; these that are displayed today in every thing, in every type. Even the Cross of Light, the living soul, likewise too it ruins and kills them; as it did at the start. Indeed, due to this have they called it 'hated', this one from the hated; the envy from the envy; the devil from the devil; the bad that came about from the bad.
+Today again it causes wounding and destruction in all flesh. It kills them all with diverse deaths; these that are displayed today in every thing, in every type. Even the Cross of Light, the living soul, likewise too it ruins and kills them; as it did at the start. Indeed, due to this have they called it 'hated', this one from the hated; the Envy from the Envy; the Devil from the Devil; the Bad that came about from the Bad.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame (“Once again he speaks to his disciples”) introducing a question; lacunose and not expository teaching.
-- ¶2: Systematic cosmological definition identifying an abstract (Love) with a primordial entity (Father of Greatness) in the Land/aeons, in impersonal explanatory voice; no citation or institutional application.
-- ¶3: Editorial extension applying ‘love’ to the holy church and the apostle; contains explicit scriptural citation formula (“So is it written”) and a Johannine saying (noted Jn 1 in chapter apparatus) — material entering via NT/Christian synthesis plus institutional register.
-- ¶4: Core-style cosmological definition (Hate = first death; revelation of the land of Darkness; mechanics of ruin/destruction). Initial ‘he speaks’ is a later dialogue-frame wrapper, requiring MIXED extraction.
-- ¶5: Process/mechanics of mixture-era violence against flesh and the Cross of Light/living soul, with impersonal explanatory cadence and etymological chaining; no Gospel citation or institutional instructions.
+- ¶1: Formulaic opening attribution (“Once again he speaks to his disciples”) and a question prompt; this is editorial framing rather than impersonal cosmological exposition.
+- ¶2: System-internal identification: Love is defined as a cosmic hypostasis (Father of Greatness) with aeons/limbs; no institutional application, no citations, and an impersonal definitional voice.
+- ¶3: Church-application plus explicit scriptural citation formula (“So is it written… There is no love greater…”) and institutional terms (holy church, apostle). This language entered via Christian/NT transmission rather than the oldest teaching substrate.
+- ¶4: Core definitional cosmology (First Death/Land of Darkness) embedded under a brief dialogue attribution; the teaching itself remains system-internal (cosmos→cosmos), so the frame is stripped.
+- ¶5: Continues the cosmological mechanism into the present time of mixture ("today"), but without turning outward to church institutions or exhortation. The content remains within the cosmic system (Hate harming flesh/Cross of Light/living soul) rather than mapping to contemporary social structures.
 
 ---
 
 ## Chapter 64
 ### [Concerning Adam]
 
-*Apart from the formulaic opening (¶1), the chapter is a continuous, systematic exposition: a numbered triad of Adam’s preeminence (¶2–5) followed by a numbered heptad of the rulers’ purposes in forming him (¶6–13). No Gospel/NT citation formulas and no ecclesial/institutional grafts appear; the voice remains impersonal and structural (image/seal/elements/zodiac).*
+*This chapter is almost entirely the systematic teaching layer: a structured triad (three distinct greatnesses revealed in Adam) followed by a structured heptad (seven purposes of the rulers). The only clear late material is the brief formulaic opening address to disciples (frame). No NT citation/overlay and no institutional/pastoral application is present; the exposition stays cosmos→cosmos (image of the Exalted One/Ambassador, elements, zodiacal and calendrical powers sealed in Adam).*
 
 Three great things that are distinct were revealed in Adam the first human. Indeed, due to this, he was found to be better and more outstanding than the conjoined powers that are in heaven and on earth.
 
@@ -2757,30 +2740,28 @@ The sixth: That there would come to be a great protection for them through the i
 The seventh: That he might become chief and king and master over all creatures; and they might conceive the kingdom through him.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame: “Once again … disciples … listen,” a classic Kephalaia editorial opening.
-- ¶2: Numbered-structure setup (“Three great things”), impersonal expository voice; no citation or institutional address.
-- ¶3: Systematic cosmological mechanism (image/sealing; creators/moulders) in numbered sequence.
-- ¶4: Characteristic core mapping: five-fold beings (“the five sons”) + elements + anthropology/intelligence as consequence; structural explanatory voice. Lacuna/restoration preserved.
-- ¶5: Classic macrocosm–microcosm sealing (zodiac/stars/time cycles stamped in Adam); cosmological causality (motion, conflict of good/evil) rather than moral exhortation. Manuscript restoration preserved.
-- ¶6: Structural transition into a heptad; still cosmological (rulers, forming Adam) with numbered scheme, not an institutional seam.
-- ¶7: Named cosmological entity (“Ambassador”) in functional exposition; page marker preserved.
-- ¶8: Light-ascent mechanics stated as purpose; impersonal cosmological process language.
-- ¶9: Continues heptad; cosmological humiliation logic tied to image/splendour—no citation frame.
-- ¶10: Technical metaphor (seal-ring/impression) used to explain generative transmission—core correspondential mechanism.
-- ¶11: Totalizing cosmological claim in numbered list; no ecclesial vocabulary; manuscript restoration preserved.
-- ¶12: Still within rulers’ purpose list; protection mechanism via image; lacuna preserved.
-- ¶13: Concludes the heptad; coherent closure of the numbered structure without later institutional extension.
+- ¶1: Formulaic hagiographic opening (“Once again he speaks to his disciples…”) functioning as editorial container rather than teaching content.
+- ¶2: Impersonal, structured expository voice introducing a numbered/degree teaching (triad) wholly within the cosmological system.
+- ¶3: Systematic correspondence (image/form/beauty) explained as cosmic mechanism; no frame, exhortation, or institutional pointing.
+- ¶4: Cosmological causality (first-born, five sons, elements) yielding anthropological differentiation; remains within the system (no contemporary application).
+- ¶5: Microcosm–macrocosm sealing doctrine (zodiac/months/days/years in Adam) expressed as cosmic architecture; still descriptive rather than pastoral.
+- ¶6: Transition into a numbered heptad; still impersonal exposition about rulers’ cosmic intent, not an editorial seam into institutional content.
+- ¶7: Heptad item in cosmological narrative logic (rulers, Ambassador, image) without external referents; page marker preserved.
+- ¶8: Pure light-mechanics statement (capture/obstruction of ascent) characteristic of the older explanatory layer.
+- ¶9: Cosmic rationale tied to image/splendour/beauty; remains within the same systematic register.
+- ¶10: Correspondential device (seal-ring/impression) used to describe generative cosmic reproduction; no later application voice.
+- ¶11: System-totality language (“secret and manifest,” “totality”) continuing the heptad as cosmological explanation.
+- ¶12: Protection/impunity mechanism grounded in the placed image; lacuna retained; still entirely intra-cosmic.
+- ¶13: Closes the heptad with cosmic kingship logic; no framing closure or pastoral add-on detected.
 
 ---
 
 ## Chapter 65
 ### Concerning the Sun.
 
-*Core teaching is dominant: a systematic seven-good/seven-evil sequence and five+three ‘archetypes’ mapping the sun to higher mysteries. The main late layers are (a) the opening hagiographic scene-setting with ‘apostle’ and disciples (¶1), (b) brief dialogue-attribution seams that introduce lists (¶22, ¶37), and (c) explicit Gospel/‘saviour’ citation (¶36). The anti-sect polemic is pervasive but embedded within the teaching exposition; it does not itself force a later date here. ¶2’s Deuteronomic ‘law’ polemic looks like a Christian/Jewish-scriptural overlay vector but is not an explicit citation; it reads like Mani-era polemic rather than later pastoral regulation, so it is retained as core teaching language.*
+*This chapter is largely built from an older, systematic correspondential teaching that maps Sun/day/light and Night/darkness through numbered sets (seven goods, seven evils; five archetypes; three correspondences to the Father). A late hagiographic frame opens the chapter, and the end shows strong editorial/application drift: polemic against “the sects,” direct audience address/blessing, and an explicit ‘saviour’ saying (Gospel/Thomas vector) plus a “children of light/day” formula (Pauline-style). Paragraph 2 also shows a clear pivot from cosmic identification of the Sun to biblical-law polemic (Satan’s law), indicating later application grafted onto an older kernel.*
 
-He says, it is the gate of life and the vessel of peace, to this great aeon of light [...]. ⟨p.159⟩ However, since Satan knows that it is the gate of the souls' departure, he placed an exclusionary judgement in his law that no one worship it, saying: Whoever will worship it can die. He has otherwise called it: The light that will be nullified. He has hindered the souls from themselves turning their faces towards the light. He has caused them to deny the light of their being.
-
-Now, people are blind about everything! They have not understood the greatness of this great light-giver. They have denied the grace of this great light that shines upon them. They have not perceived its greatness and its divinity. Nor, also, have they understood the good things that it does for them, even today, as they are entrenched in their body; when it comes to this world and shines. Behold: How many are the charities that it does for mankind! Yet they, for their part, deny its graces, which they know not.
+it is the gate of life and the vessel of peace, to this great aeon of light [...]. ⟨p.159⟩
 
 Every day, would this great light-giver shine its light, it shall do seven good things for them. Shall they not see them?
 
@@ -2798,9 +2779,7 @@ The sixth: When it shines its light, the wound of any person is eased from pain.
 
 The seventh: (The sun) shall display and manifest to the world the sign of the splendour of the aeons of light, from which it has come out; it here in this world being their sign. It brings light to the whole of creation.
 
-Behold: How great is the foolishness that has befallen the sects of error! Not only that they have not perceived the mystery of the divinity of this great light-giver; but also, even all the benefits that it does for them. They forget them. They do not perceive them.
-
-Now, just as I have shown you the sun, which does seven good things in the world, hear also what I teach you about the night, for it has all wickednesses therein. Every occasion, would the night fall, it shall do seven evils in the world.
+the night, for it has all wickednesses therein. Every occasion, would the night fall, it shall do seven evils in the world.
 
 The first wickedness that the night shall do in the world is the darkness, with which it shall fill the entire world; because when the sun sinks from the world and draws to it its rays, at that instant the shadow of the night shall spread out over the whole world. The eyes of the people fill with blackness. They neither see nor wonder with their eyes, because of the darkness of the night which shall fill the whole world.
 
@@ -2814,9 +2793,7 @@ The fifth is its ugliness; again, when the night would fall, the form of the peo
 
 The sixth occasion is when the night would fall on the world. At that instant evil people shall come out to do wickedness; the adulterers, and the robbers and poisoners. The evil beasts shall come out, and all the reptiles that are filled with wickedness, from their dens. And they stalk in the night. Also, the demons and fiends find power to do wickedness in the night. Again, the blows and buffets and wounds and discharges shall torment people in the night; because in it the whole of evil shall find strength.
 
-The seventh: The night shall display the sign of the darkness, its father. It has arisen out of its essence; because this night that came out of this first darkness has been displayed in the world. Note this night, the shadow of this first darkness, the one that is entwined and bound in all things above and below.
-
-Behold, I have taught you about these seven wickednesses of the black night; the ones that it shall do daily in the world, in the night. The sects have not seen this black night: what it is; nor from whence is its essence. That all these evils find strength in it!
+The seventh: The night shall display the sign of the Darkness, its father. It has arisen out of its essence; because this night that came out of this first Darkness has been displayed in the world. Note this night, the shadow of this first Darkness, the one that is entwined and bound in all things above and below.
 
 There are five archetypes occur in the sun, it making them [...] as it finds the world.
 
@@ -2830,7 +2807,7 @@ The fourth is the life of the living soul, which it shall release from all the b
 
 The fifth: It gives a strength to the elements; and also it gives a scent and a taste to the entire Cross of the Light.
 
-So, you yourselves see that its light illumines more than all lights that occur in the world. Also, its beauty is more beautiful than all the beauties of mankind. Again, its peace is more surpassing than all the powers and guards who exist in the world. Its releasing action, by which it releases the living soul, is a full day ahead of all releasing actions! The strength that it gives to its limbs is a great strength, being mightier than all strengths!
+its light illumines more than all lights that occur in the world. Also, its beauty is more beautiful than all the beauties of mankind. Again, its peace is more surpassing than all the powers and guards who exist in the world. Its releasing action, by which it releases the living soul, is a full day ahead of all releasing actions! The strength that it gives to its limbs is a great strength, being mightier than all strengths!
 
 Once again, there are another three archetypes made apparent by the sun, in respect of the mystery of the first greatness.
 
@@ -2840,89 +2817,83 @@ The second: (The sun's) light surpasses the light of all the stars, and all the 
 
 ⟨p.163⟩ The third: This sun is very high above all else. It surpasses the height of all the mountains and hills that exist upon the entire earth, corresponding to the mystery of the Father of Greatness; for he is high above all the household of his light-earth. Also, because the Father himself is high above all the heights and the mountains of his light-earth. He is 'filled up' in his image [all] the time and every hour from eternity to eternity!
 
-[Beho]ld the two mysteries I have taught you, O my beloved ones! The mystery of the night and that of the day, which daily come forth in the world. Now, the mystery of the light and the mystery of the darkness are displayed daily in the created order. The sects have not seen them in their error!
-
 The mystery of the first great light is the sun, which is this second light-giver, the one that comes daily to the world. It displays all the marks of its graces, displaying and signifying on its own behalf that it is good, out of the essence of the good. It came from the good Father and appeared in this world.
 
-In contrast, this night that is made of fear exists after the mystery of the darkness. Behold too the mystery of its essence! It displays it in the world in all these wickednesses. It displays this mystery daily in the world, but the sects know it not in their error. They do not distinguish the mystery of the light from that of the darkness.
-
-You are the children of the day and the children of the light. However, you <[...] the character of the darkness> are the children of the night and the children of the darkness.
-
-⟨p.164⟩ Yet, blessed are you, my beloved ones! Blessed are your souls, for you have known the mystery of the day and that of the night. You have understood, that the day exists after the mystery of the light, but the night after the mystery of the darkness. They have not arisen from one another. Blessed is he who can know this mystery and distinguish these two essences, that of the light and that of the darkness, the ones that have not arisen from one another; so that he can inherit life eternal!
+In contrast, this night that is made of fear exists after the mystery of the darkness. Behold too the mystery of its essence! It displays it in the world in all these wickednesses.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic setup: ‘Once again’, ‘the apostle’, sitting among disciples; narrative container rather than impersonal exposition.
-- ¶2: Impersonal cosmological valuation of the sun as ‘gate/vessel’ plus dualist antagonist ‘Satan’ obstructing ascent; no explicit Gospel/NT citation formula despite ‘law’ motif (footnoted to Deut.).
-- ¶3: Expository/polemical voice supporting the ensuing numbered structure; no institutional church markers or citation formulas.
-- ¶4: Numbered degree/list-setup (‘seven good things’) is a hallmark of the systematic teaching layer.
-- ¶5: List item in a systematic sevenfold; impersonal functional description (light vs darkness mechanics).
-- ¶6: Process explanation of light displacing Darkness/fear; continues sevenfold structure.
-- ¶7: Functional consequence of sunlight; still within systematic list (no frame/pastoral cues).
-- ¶8: Cosmic-benefit item; impersonal and enumerative.
-- ¶9: List item; Darkness-associated creatures retreat before light—mechanistic dualist imagery.
-- ¶10: List item; light as active force countering harm/‘evil arts’ (still expository, not church rule).
-- ¶11: Explicit cosmological correspondence: sun as ‘sign’ of the aeons of Light; systematic conclusion of sevenfold.
-- ¶12: Polemical amplification embedded in teaching sequence; no institutional/pastoral directives.
-- ¶13: Structural pivot to a second sevenfold (night’s seven evils); systematic teaching transition.
-- ¶14: Enumerated counter-list; mechanistic description of darkness spreading when sun withdraws.
-- ¶15: List item continuing impersonal exposition.
-- ¶16: List item; Darkness provoking ‘revolt’—cosmic-ethical mechanism stated as process.
-- ¶17: List item; impersonal functional effect of night.
-- ¶18: List item; descriptive, not prescriptive; continues sevenfold.
-- ¶19: Expanded list item; cosmic/demonic agency (‘demons and fiends’) with night as empowerment—fits dualist mechanics.
-- ¶20: Systematic correspondential claim: night as ‘sign’/shadow of Darkness (personified as father/essence).
-- ¶21: Closure of the seven-evils unit; polemical but still teaching-summary.
-- ¶22: Core is the numbered archetype structure; the introductory ‘he says to his disciples’ is a classic frame seam.
-- ¶23: List item in a fivefold archetype set; impersonal functional description.
-- ¶24: List item; enumerative archetype teaching.
-- ¶25: List item; still descriptive (no church/institution referents).
-- ¶26: Cosmological liberation motif (‘living soul’, bonds of heaven/earth) typical of Manichaean core mechanics.
-- ¶27: Uses technical cosmological term ‘Cross of the Light’; systematic fifth item.
-- ¶28: Recap/comparative amplification of the five archetypes; no NT citation or institutional directives despite second-person address.
-- ¶29: Numbered threefold tied to ‘mystery of the first greatness’—systematic cosmological structuring.
-- ¶30: Cosmological correspondence (sun-ship fullness ↔ Father’s inexhaustibility); impersonal teaching voice.
-- ¶31: Explicit ‘corresponding to’ mapping; Father/aeons vocabulary signals the core cosmological system.
-- ¶32: Systematic correspondence plus named entity ‘Father of Greatness’ and ‘light-earth’; classic core cosmological diction.
-- ¶33: Teaching-summary; dual-essence contrast stated as structural fact; affectionate address does not introduce institutional layer by itself.
-- ¶34: Cosmological derivation (‘good Father’, ‘essence of the good’) in impersonal explanatory mode.
-- ¶35: Paired antithesis completing the day/night ↔ Light/Darkness teaching.
-- ¶36: Explicit ‘the saviour’ citation of a saying (Thomas/Gospel tradition): language entered via Christian Gospel transmission.
-- ¶37: Binary identity formula fits the teaching; but the ‘apostle speaks’ attribution is a later hagiographic wrapper.
-- ¶38: Concluding beatitude-style praise but still articulates the core dualist metaphysic (‘two essences…not arisen from one another’). No explicit NT citation or church-institutional graft; reads as internal exhortation within the teaching layer.
+- ¶1: Formulaic hagiographic setup: “Once again, the apostle…” sitting among disciples; narrative staging rather than impersonal exposition.
+- ¶2: Opens with a cosmic identification of the Sun (gate/vessel within the aeon of Light), then pivots to anti-law polemic anchored in “Satan… in his law” (later application/sectarian redaction).
+- ¶3: Application voice and present anchoring (“even today”); rhetorical blame of people’s blindness rather than structural cosmological mapping.
+- ¶4: Begins a numbered, systematic heptad (seven goods): a hallmark of the older teaching’s structured exposition, despite the rhetorical question.
+- ¶5: Part of the formal sevenfold sequence: impersonal description of effects of the Sun’s light against Night/darkness.
+- ¶6: Continues the heptad; descriptive mechanism (light dispels darkness/fear) stays within the day–night correspondence.
+- ¶7: Still within the sevenfold schema; functional description of ‘vigil’ as a property effected by sunrise (correspondential register).
+- ¶8: Correspondential sensory/register language (taste/scent/strength) tied to solar action; impersonal exposition.
+- ¶9: Continues the systematic list; portrays light’s ordering power over hostile creatures as a cosmic-day effect.
+- ¶10: Heptad continuation; light as healing/dispelling force (still descriptive, not addressed as command).
+- ¶11: Explicitly correspondential: Sun as ‘sign’ of the Aeons of Light (cosmos→cosmos mapping).
+- ¶12: Polemic against “sects of error” and evaluative rhetoric (“foolishness”); application layer rather than structural exposition.
+- ¶13: Editorial discourse connective and first-person address introduce an otherwise old structural heptad (seven evils of Night).
+- ¶14: Begins the Night heptad in the same systematic mode; descriptive causal language (sun withdraws → shadow spreads).
+- ¶15: Numbered continuation; fear as a property of Night (correspondential register).
+- ¶16: Heptad continuation; Night’s moral/affective effect presented as an impersonal cosmic condition.
+- ¶17: Continues the structured list; sleep as a ‘heaviness’ (quality/archetype register).
+- ¶18: Numbered quality (‘ugliness’) mapped to Night’s obscuring action; stays within day/night phenomenology used as correspondence.
+- ¶19: Still integrated into the numbered heptad as a descriptive ‘night releases evil’ mechanism; no direct exhortation, though it uses social exempla.
+- ¶20: Explicit cosmos→cosmos correspondence: Night as ‘sign/shadow’ of primordial Darkness (personified source).
+- ¶21: Recap plus polemic against “the sects” (they have not seen/known); shifts from impersonal schema to evaluative application.
+- ¶22: Clear frame intrusion (“he says to his disciples”) introducing a structured pentad of ‘archetypes’—the teaching kernel is the numbered schema.
+- ¶23: Pentad continuation; archetype defined by function in the created order.
+- ¶24: Pentad continuation; beauty as a radiated quality.
+- ¶25: Pentad continuation; social harmony presented as an effect/property of Sun (still descriptive, not exhortative).
+- ¶26: Cosmological soteriology (living soul; bonds of heaven/earth) presented as an archetypal function of the Sun.
+- ¶27: Strong correspondential register (elements; scent/taste) plus Manichaean cosmic structure (Cross of the Light).
+- ¶28: Comparative amplification of the pentad’s archetypes; contains rhetorical address but preserves a coherent teaching kernel summarizing the five qualities.
+- ¶29: Introduces a new structured triad tied to the ‘mystery of the first greatness’ (systematic cosmological setup).
+- ¶30: Direct correspondence: solar ‘ship’ fullness ↔ Father’s inexhaustibility; cosmic beings (‘powers and the gods’) remain internal to the system.
+- ¶31: Explicit ‘corresponding to’ formula within cosmology; no external institutional target.
+- ¶32: Triadic correspondence continues; strongly internal cosmic geography (‘light-earth’) and Father of Greatness language marks the old systematic layer.
+- ¶33: High application voice: direct address (“O my beloved ones!”), polemic against sects; recap framed for persuasion rather than exposition.
+- ¶34: Cosmic identification of the Sun within a graded light hierarchy (first/second light-giver) and origin-from-Father explanation; remains cosmos→cosmos.
+- ¶35: Begins as a pure correspondence statement (Night after Darkness), then shifts into anti-sect rhetoric; the latter is a later applicative layer.
+- ¶36: Explicit ‘saviour’ allusion and a quoted saying (Gospel of Thomas vector): material entered via Christian gospel tradition, regardless of correspondential content.
+- ¶37: “Once again the apostle speaks” + ‘children of the day/light’ formula aligns with Pauline/NT idiom; enters through Christian overlay and compilation speech framing.
+- ¶38: Closing benediction/exhortation to “beloved ones” with salvation payoff (“inherit life eternal”); application-layer homiletic ending consistent with editorial fatigue toward chapter end.
 
 ---
 
 ## Chapter 66
 ### Concerning the Ambassador.
 
-*Core teaching dominates ¶2–6 with an impersonal, cosmological exposition using solar correspondence (rising/setting) to map the First Man’s descent/struggle and the eschatological purification/ascension of the Last Statue; ¶1 and ¶8 are hagiographic frame. Strong editorial-fatigue pastoral drift culminates in ¶7 (exhortation to preach/repentance), which reads as later institutional-pastoral application appended after the cosmological lesson is complete.*
+*The chapter contains a compact core teaching sequence (¶2–¶6) using the sun’s daily rising/setting as a correspondential display of two cosmological mysteries: the First Man’s initial encounter with Darkness and the eschatological ascent of the Last Statue. The opening (¶1) and closing reaction scene (¶8) are hagiographic frame. A clear late pastoral/application pivot occurs at ¶7 (direct address + imperative exhortation), matching the chapter’s strong second-half pastoral drift.*
 
 Two great mysteries are apparent in this shining sun, at its rising and setting. Now, at the moment when it rises and is visible in the universe, all creatures of flesh shall lift up their heads fr[om their sleep] towards the splendour of the sun, and open their doors. While at evening time, when the sun sinks from the universe, all people from every place and even all beasts shall go in to their dark hiding places. The population of the entire universe shuts their doors and dark night overcomes them. They go inside and stay within the dark night in their hiding places.
 
 Very great is this mystery revealed by the sun! For when the sun rises and [be]come[s] visible at the beginning of the day all people open their doors, and all of humanity and every creature emerges onto the ear[th] to destroy this Light Cross that is established i[n] silence.
 
-This pertains to the mystery of the First Man, because when he came out from the grea[t]ness he shone forth over all the children of darkness. At that mome[nt] all the children of darkness came forth from their storehouses, its powers and its armies, abandoning their caves and their black abyss. They destroyed the [outer] body of his five sons, who were swathed over hi[s b]o[dy, in t]hat first struggle. ⟨p.165⟩
+This pertains to the mystery of the First Man, because when he came out from the grea[t]ness he shone forth over all the children of Darkness. At that mome[nt] all the children of Darkness came forth from their storehouses, its powers and its armies, abandoning their caves and their black abyss. They destroyed the [outer] body of his five sons, who were swathed over hi[s b]o[dy, in t]hat first struggle. ⟨p.165⟩
 
-Again, when the sun sinks from the universe and sets, and all people go in to their hiding places and houses and conceal themselves; this also pertains to the mystery of the end, as it presages the consummation of the universe. For, when all the light will be purified and redeemed i[n] the universe at the last, the collector of all things, the Last Statue, will gather in and sculpt it/self. It is the last hour of the day, the time when the Last Statue will go up to the aeo[n of] light. The enemy too, death, will go in to bondage; to the prison of the souls of the de[ni]iers and blasphemers who loved the darkness. They will go in with it to bondage and the dark night overcomes th[em]; and thenceforth this name 'light' will not shine upon them.
+Again, when the sun sinks from the universe and sets, and all people go in to their hiding places and houses and conceal themselves; this also pertains to the mystery of the end, as it presages the consummation of the universe. For, when all the Light will be purified and redeemed i[n] the universe at the last, the collector of all things, the Last Statue, will gather in and sculpt it/self. It is the last hour of the day, the time when the Last Statue will go up to the aeo[n of] Light. The enemy too, Death, will go in to bondage; to the prison of the souls of the de[ni]iers and blasphemers who loved the Darkness. They will go in with it to bondage and the dark night overcomes th[em]; and thenceforth this name 'Light' will not shine upon them.
 
 Behold the two mysteries made visible daily in the sun, which is this splendrous light-giver.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue frame (“Once again he speaks to his disciples… Pay attention”) typical of Kephalaia editorial apparatus; no cosmological exposition.
-- ¶2: Impersonal correspondential set-up (two mysteries in the sun; rising/setting as cosmological sign) without citation or institutional address; functions as the structural base for the ensuing First Man / end-time mapping.
-- ¶3: Cosmic-mechanistic voice: the daily emergence of creatures is correlated with assault on the Light Cross (personified cosmic structure), continuing the same explanatory sequence rather than exhortation or frame.
-- ¶4: Classic core cosmology: named being (First Man), Darkness’ powers/armies, five sons, primeval struggle—systematic mythic mechanics in expository mode; no editorial Q&A or church discipline.
-- ¶5: Eschatological mechanism mapped to sunset: purification/redemption of Light, ascent of the Last Statue, imprisonment of Death and the souls—cosmic-process exposition. Though moral labels appear (“deniers/blasphemers”), the paragraph’s backbone is the cosmological scenario rather than institutional rule.
-- ¶6: Closing summary of the two-mystery solar correspondence; remains impersonal and cosmological, completing the teaching unit before later application.
-- ¶7: Second-person exhortation to “my brothers and loved ones” to train/preach/repent while there is time—an appended practical-moral application consistent with chapter-level pastoral drift; not part of the systematic cosmological exposition.
-- ¶8: Reaction-closure formula (“When his disciples heard this…”) with emotive response and lacunose plea; typical hagiographic/frame wrapping rather than core teaching.
+- ¶1: Formulaic dialogue-frame opening (“Once again… to his disciples”), functioning as hagiographic/editorial apparatus rather than substrate exposition.
+- ¶2: Impersonal correspondential exposition: daily solar mechanics mapped to creaturely states within the cosmic order; no institutional address, no citation formula, no contemporary referents.
+- ¶3: Continues the same cosmic correspondence (sunrise → emergence/activity) and introduces a named Manichaean cosmic structure (Light Cross) as the object affected in the mixture; still descriptive rather than exhortative.
+- ¶4: Direct cosmological narrative keyed to a systematic entity-complex (First Man + five sons) and Darkness-powers; fully internal to the mythic system and explanatory in tone.
+- ¶5: Eschatological cosmology (purification of Light, ascent of the Last Statue, binding of Death) presented as the second half of the solar correspondence; no institutional graft, though moral labels (‘deniers… blasphemers’) slightly heighten polemical tone.
+- ¶6: Concluding summation of the correspondential teaching sequence; still impersonal and system-internal.
+- ¶7: Late application pivot: direct audience address (“my brothers and loved ones”), imperatives (“Take trouble… preach”), and time-for-repentance exhortation. This is institutional/pastoral usage of the preceding cosmology rather than substrate description.
+- ¶8: Hagiographic reaction formula (disciples frightened/alarmed + quoted plea). Narrative framing, not cosmological mechanism.
 
 ---
 
 ## Chapter 68
 ### Concerning Fire.
 
-*A short, highly structured five-fold list of fire’s operations. Paragraph 1 contains a minimal dialogue/frame attribution (“Once more he speaks”), but the five-work teaching itself reads as impersonal, systematic exposition consistent with the older classificatory layer; no NT citation or institutional application appears.*
+*This short chapter is dominated by a systematic five-fold classification of Fire’s operations, expressed in an impersonal, enumerative teaching voice. The only clear later element is the dialogue/frame attribution at the start (“Once more he speaks”), which should be stripped; otherwise the content stays in descriptive ‘how it works’ mode without NT citation or institutional application.*
 
 This fire, which burns and is apparent today in the world, it does five works.
 
@@ -2937,65 +2908,65 @@ The fourth work that [it] does: All craftsmen shall work the utensils that they 
 The fifth: It shall display light, and the people see by [it].
 
 **Temporal observations:**
-- ¶1: The colon-introduced speech tag is a compilation-frame device; the remaining sentence introduces a numbered five-fold structure in an impersonal, expository voice.
-- ¶2: Numbered, procedural description of how fire works; no citation, exhortation, or institutional vocabulary.
-- ¶3: Systematic analytical classification (second work; fourfold separation) characteristic of the integrated cosmological/scientific teaching style.
-- ¶4: Continues the enumerated list in the same impersonal explanatory register.
-- ¶5: Still within the numbered five-work scheme; practical exemplification but not church/pastoral regulation.
-- ¶6: Closes the five-fold list; expository and non-citation-based.
+- ¶1: Mixed because it begins with a formulaic speaker-attribution typical of the compilation frame; the remainder introduces a structured five-work schema in an expository voice.
+- ¶2: Core: numbered, impersonal, systematic description of Fire’s operation within an ordered schema (five works), without citation or ecclesial application.
+- ¶3: Core: classificatory/analytical mode (enumerated ‘second’ + fourfold separation) characteristic of the older technical teaching register.
+- ¶4: Core: continues the fivefold sequence, describing sensory/affective effects as part of Fire’s defined functions (still descriptive, not exhortative).
+- ¶5: Core: maintains the impersonal list structure and functional definition of Fire; no institutional ‘pointing at’ beyond ordinary craft activity.
+- ¶6: Core: completes the fivefold set with a final functional operation (illumination), closing the systematic sequence cleanly.
 
 ---
 
 ## Chapter 69
 ### Concerning the Twelve Signs of the Zodiac and the Five Stars
 
-*The chapter is dominated by systematic cosmological exposition: pentadic derivation from the five worlds of Darkness, fourfold spatial distribution, and causal astral effects on creatures and elements. Only the opening dialogue-setting (apostle/congregation/entreaty) is later hagiographic frame. No NT overlay appears; no seam-driven institutional graft is present.*
+*Nearly the whole chapter is systematic cosmological distribution and mechanics (zodiac/stars/ascendants mapped to the five worlds of darkness; fourfold spatial distribution; causal effects when ‘plundered’ by the guardian). The only clear late layer is the opening question-frame; paragraph 2 also has a dialogue attribution that must be stripped. Paragraphs 10–13 read as recap/clarification in a first-person didactic voice but remain internal to the cosmic system (no institutional application or NT overlay).*
 
 Whether these twelve signs of the zodiac that are fixed on the sphere, or these five stars that circle upon them; those and these are rulers, all of them, according to their essence. They are all enemies and rivals to each other ⟨one oppresses another, they threaten each other⟩. They plunder one another by the action of the great craftsman who has formed all the worlds. He has gathered [them] and bound them on the sphere above, which circles constantly. Now, while it circles and tumbles them, so they shall do everything that they desire, above and below, according to their pleasure. Nevertheless, a guardian is over them, a debt-collector above them; compelling, extorting, and taking what is theirs away from them!
 
-Now, this is how it can rightly be understood. They were [s]eized from the five worlds of Darkness, and bound on the sphere. Two zodiacal signs were taken per world. Gemini and Sagittarius belong to the world of smoke, which is the mind. In contrast, Aries and Leo belong to the world of fire. Taurus, Aquarius and Libra belong to the world of wind. Cancer and Virgo and [P]isces belong to the world of water. Capricorn and Scorpio belong to the world of Darkness. These are the twelve rulers of depravity, the ones that wicked[ness] shall not [ ... ] For they cause all the evil and [ ... in the wo]rld, whether in tree or in flesh.
+Now, this is how it can rightly be understood. They were [s]eized from the five worlds of darkness, and bound on the sphere. Two zodiacal signs were taken per world. Gemini and Sagittarius belong to the world of smoke, which is the mind. In contrast, Aries and Leo belong to the world of fire. Taurus, Aquarius and Libra belong to the world of wind. Cancer and Virgo and [P]isces belong to the world of water. Capricorn and Scorpio belong to the world of darkness. These are the twelve rulers of depravity, the ones that wicked[ness] shall not [ ... ] For they cause all the evil and [ ... in the wo]rld, whether in tree or in flesh.
 
-⟨p.168⟩ And understand also about these five stars, the leaders: from where were they formed? The star of Zeus (Jupiter) was generated from the world of smoke, which is the mind. In contrast, Aphrodite (Venus) came about from the world of fire. And then Ares (Mars) belongs to the world of wind. Hermes (Mercury) belongs to the world of water. Cronos (Saturn) belongs to the world [of] Darkness.
+⟨p.168⟩ And understand also about these five stars, the leaders: from where were they formed? The star of Zeus (Jupiter) was generated from the world of smoke, which is the mind. In contrast, Aphrodite (Venus) came about from the world of fire. And then Ares (Mars) belongs to the world of wind. Hermes (Mercury) belongs to the world of water. Cronos (Saturn) belongs to the world [of] darkness.
 
 And also, the two ascendants are counted to fire and desire, the dry and the moist. They are the father and the mother of all these.
 
 And also, the sun and the moon, which are counted in with them as a rule ⟨[counte]d to their kind, but why did they count them in with them?⟩ so that they would reign over them. You will discover they subjugate them at every moment.
 
-These seven we have named, the five stars and the two ascendants: They are the doers of wickedness that do every wicked and bad act in every land, the whole of it, above and below, in every creature, in the dry and the moist, in tree and flesh.
+These seven we have named, the five stars and the two ascendants: They are the doers of wickedness that do every wicked and bad act in every land, the whole of it, above and below, in every creature, in the dry and the moist, in every creature, in the dry and the moist, in tree and flesh.
 
 Once more I reveal to you about these signs of the zodiac: [They] are distributed, appointed on four sides, three per angle in these four places. And they are fixed to this revolving sphere. Aries, Leo and Sagittarius, they three belong to a single side. In contrast, Taurus, Capricorn and Virgo, these other three belong to another side. And then, Gemini, Libra and Aquarius belong to another side. Scorpio, Pisces and Cancer belong to another corner. Now, they are placed like this, appointed to these four parts, and distributed on the sphere.
 
 So, when the side of Aries, Leo and Sagittarius will be plundered by the guardian who is over it, who extorts from it and the leaders who move upon it; at that instant shall affliction strike all the four-footed creatures below. However, when [the side] of Taurus, Virgo and Capricorn will be plundered; [affliction] shall ⟨p.169⟩ at once befall the herbs, together with the vegetables and all the fruits of the trees. Yet again, when the side of Scorpio, Pisces and Cancer will be plundered; scarcity shall befall the waters upon the earth, and drought be from place to place. Conversely, should the side of Gemini, Libra and Aquarius be plundered; deformity and stuntedness shall befall the form of mankind from place to place.
 
-Behold now, I have explained to you about these twelve signs of the zodiac: They were fashioned from the five worlds of Darkness, and bound on the sphere.
+Behold now, I have explained to you about these twelve signs of the zodiac: They were fashioned from the five worlds of darkness, and bound on the sphere.
 
-Also, I have taught you about the other five, the stars: They too came about from the five worlds of the land of Darkness.
+Also, I have taught you about the other five, the stars: They too came about from the five worlds of the land of darkness.
 
 I have recounted to you also about the [t]wo ascendants: They are set to the mystery of fire and desire. They are the dry and the moist, the father and the mother.
 
 Again, I have revealed to you about the sun and the moon: They are strangers to them. Still, because of the constraint of the arrangement, in that the thing receives light, and as they belong and plunder them; because of this they were counted in with them in relation to the calculation of the number. For, the sun and the moon are from out of the greatness, not belonging to the stars and the signs of the zodiac.
 
 **Temporal observations:**
-- ¶1: Hagiographic/dialogue frame: 'Once more', 'the apostle', congregation setting, disciple entreaty/question formula. This is compilation apparatus rather than the teaching layer.
-- ¶2: Core cosmological mechanics (rulers bound on sphere; guardian/debt-collector over them) presented in impersonal explanatory voice; only the initial speech-attribution is later frame.
-- ¶3: Systematic pentadic mapping (five worlds of Darkness → zodiac signs) in numbered/structured distribution language; classic core expository register.
-- ¶4: Pentadic derivation schema repeated for the five planets; impersonal didactic explanation, no institutional or citation markers.
-- ¶5: Concise numbered-element pairing (two ascendants; dry/moist; father/mother) fits core schematic teaching.
-- ¶6: Astral-numbering rationale explained as system mechanics (counted in; reign/subjugate). The parenthetical looks like scribal/reader gloss but does not introduce frame/pastoral/NT material.
-- ¶7: Heptadic summary statement integrated into the astral-cosmic causal account; still impersonal/systemic rather than moral exhortation.
-- ¶8: Fourfold spatial/structural distribution (3 per angle) is characteristic core schematic cosmology; no institutional seam despite mild discourse marker 'Once more I reveal'.
-- ¶9: Causal astral mechanics (plundering by guardian → effects on animals/plants/waters/humans) continues the same core cosmological system explanation.
-- ¶10: Core recap formula closing a teaching unit; reiterates pentadic origin and binding on the sphere.
-- ¶11: Core recap of the pentadic derivation of the five stars; schematic closure.
-- ¶12: Core recap; repeats paired correspondences (fire/desire; dry/moist; father/mother) as part of the system.
-- ¶13: System-justification paragraph resolving the numerical problem (sun/moon counted yet ontologically 'from out of the greatness'); explanatory cosmological voice without frame/NT/pastoral markers.
+- ¶1: Formulaic setting (‘Once more… the apostle… among the congregation’), disciple question, entreaty address (‘our master’). This is hagiographic/dialogue apparatus wrapping the teaching.
+- ¶2: Core mechanics and roles described impassively (rulers bound to the sphere; mutual hostility; constraint by a ‘guardian/debt-collector’). The only later element is the explicit speaker-attribution.
+- ¶3: Systematic correspondential distribution (zodiac → five dark worlds) with internal cosmological identifiers (‘smoke… mind’, fire/wind/water/darkness). No citation, no institutional application.
+- ¶4: Same core distribution logic extended to the five planetary stars (planet → dark world origin). Entirely cosmos→cosmos mapping.
+- ¶5: Compact internal cosmological pairing (ascendants → fire/desire; dry/moist; father/mother). No external application.
+- ¶6: Cosmological reconciliation statement about sun/moon counted in the numerical scheme; bracketed aside suggests a gloss or textual difficulty, but the content remains internal to the system (no pastoral/NT overlay).
+- ¶7: Still cosmological-causal (astral agents producing effects in creation). The language is evaluative (‘wickedness’) but remains within the cosmic mechanism (no audience exhortation or institutional pointing).
+- ¶8: Fourfold spatial/quadrant structuring (three signs per angle) is a systematic architectural mapping; first-person discourse marker does not introduce external application.
+- ¶9: Core causal correspondences: specific zodiacal ‘side’ plundered → specific terrestrial domain afflicted (animals/plants/waters/humans). Cosmos→cosmos/creation mechanics, not exhortation.
+- ¶10: Recap of the core distribution thesis; first-person summary but still purely cosmological.
+- ¶11: Recap reiterating the same core origin-mapping for the five stars.
+- ¶12: Recap of the ascendants’ dyadic correspondence set (fire/desire; dry/moist; father/mother).
+- ¶13: Internal doctrinal reconciliation: sun/moon ‘from out of the greatness’ (i.e., Light side) yet counted in numerically due to arrangement/constraint. No NT citation or institutional application; this reads as core system-clarification (even if possibly secondary elaboration within the teaching tradition).
 
 ---
 
 ## Chapter 70
 ### Concerning the Body: It was constructed after the Pattern of the Universe.
 
-*The chapter is predominantly systematic microcosm–macrocosm exposition (degree-maps, body↔cosmos and body↔zodiac schemata, enumerated watch-stations and rulers). Paragraphs 1, 30, and 37 are compilation-frame dialogue attributions. Paragraphs 17–22 introduce ‘elect’ language and moral mastery formulae that look like a later ethical application of the cosmological watch-station schema; the core pattern is being reapplied to community/ascetic identity, so these are treated as later pastoral graft rather than old substrate. No NT/Gospel overlay is present.*
+*Dominated by an older correspondential-cosmological substrate mapping body ↔ universe (firmaments, wheels, Porter, light ships, zodiac, internal ‘worlds’). Later additions appear as a dialogue/hagiographic frame (¶1, ¶30, ¶37) and a clear institutional-ethical application to the Elect and bodily self-mastery (¶17–22), where the mapping crosses from cosmos→cosmos into cosmos→community discipline.*
 
 This whole universe, above and below, reflects the pattern of the human body; as the formation of this body of flesh accords to the pattern of the universe.
 
@@ -3018,7 +2989,7 @@ The fifth watch is the watch over which the Porter is authoritative. Again, he i
 
 Affliction has come about in these five watches from time to time.
 
-So, in the watch of the Keeper of Splendour, sin desired to spurt up towards the image of the Ambassador. Yet, they barred it from that place, and it fell back down in shame.
+So, in the watch of the Keeper of Splendour, Sin desired to spurt up towards the image of the Ambassador. Yet, they barred it from that place, and it fell back down in shame.
 
 Again, an earthquake and treachery occurred in the watch of the great King of Honour, which the watchers who had arisen at the time and had [ ... ] they who were sent came down, until they were humbled.
 
@@ -3056,73 +3027,75 @@ The six that are down its right are these that I will recount: the right temple 
 
 Conversely, the other six about which we have spoken, which are to its left, in contrast they come from its hip to its head: its left [ ... ] is Libra; its left rib-cage is Scorpio; its left breast and left kidney is Sagittarius; its [left] elbow is Capricorn; its left shoulder is Aquarius; its left temple is Pisces. This is how the creator of the body himself has appointed them. He has [set] them in order and arranged them, one against its companion, head to tail.
 
-Listen to this other lesson that I will proclaim to you. Understand that there exist many powers in this body. They are the house-dwellers who are made the leaders in it. There are eight hundred and forty times ten thousand rulers made chiefs in the human body! They are distributed and set firm, quartered according to house. The count and number of their houses is two hundred and ten times ten thousand.
+There exist many powers in this body. They are the house-dwellers who are made the leaders in it. There are eight hundred and forty times ten thousand rulers made chiefs in the human body! They are distributed and set firm, quartered according to house. The count and number of their houses is two hundred and ten times ten thousand.
 
 When all these rulers come creeping and moving within the body, they will meet one another; and they shall beset and destroy one another, and [ ... ] in them there. When [ ... t/il]] they shall erupt from the body of the person who [will] die; and make putrid boils and sores and burning wounds in the body. Either they might have made him sick within; or else they might come forth upon his outer side. Those wounds shall first be squeezed and discharge their liquid, and empty out their pus, until they are squeezed [ ... ... ] and the suppuration forced out from the wound. Afterwards, their scars shall close over; and they are healed and obtain relief from the places that came out upon them.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic opening with ‘apostle’, ‘church’, ‘congregation’, and dialogue introduction.
-- ¶2: Impersonal correspondential thesis stating a macrocosm–microcosm identity without citation or institutional application.
-- ¶3: Systematic numbered/cosmographic mapping (garments/firmaments/wheels/earths/Porter/fastenings/vessels) in an expository voice—classic core degree-structure teaching.
-- ¶4: Summative closure of the preceding correspondential schema; still expository and cosmographic (no institutional rules/citations).
-- ¶5: Numbered cosmological structure (‘five camps’, ‘five sons of the Living Spirit’) presented as a system, not narrative.
-- ¶6: Cosmic hierarchy and watch-station administration; named beings in structural exposition. Lacuna preserved.
-- ¶7: Numbered station with cosmographic jurisdiction—core schematic style.
-- ¶8: Process/mechanics language (‘invigorates’) tied to cosmic geography; not moral exhortation.
-- ¶9: Core: named cosmic being + numbered watch + threefold wheels/earths schema.
-- ¶10: Completes the five-watch schema; purely cosmological administration.
-- ¶11: General cosmological statement introducing a mechanistic/episodic sequence of disturbances; no institutional register.
-- ¶12: Mythic-cosmological conflict report tied to a watch-station. ‘sin’ functions as an agent; capitalization convention applied: Sin.
-- ¶13: Cosmic disturbance narrative within the watch-station system; no church/disciplinary application.
-- ¶14: Mythic aetiology of flesh-formation in cosmic register; still within the numbered watch sequence.
-- ¶15: Light–matter mechanics and threefold wheel-ascent described as process; core cosmological vocabulary.
-- ¶16: Completes the affliction-in-five-watches cycle; cosmic geography and mechanisms (fastenings/chains).
-- ¶17: Editorial application of the five-watch/camp schema to ‘the elect’ body-wearing identity and moral-psychic actors (‘Light Mind’, ‘new man’). This re-targeting of a completed cosmic sequence to institutional persons reads as a later ascetic/church graft.
-- ¶18: Explicit ‘elect person’ moral mastery instruction; ethical/ascetic control language rather than impersonal cosmological mechanics.
-- ¶19: Continues the same ethical mastery pattern (‘Whoever will become master…’) as institutional paraenesis, not system-explication. Page marker retained but no core extracted.
-- ¶20: Paraenetic chastity/lust subdual language applied to genitals; despite cosmic names, the paragraph’s function is ascetic discipline mapping.
-- ¶21: Diet/purification of nourishment framed as personal discipline; mimics correspondential style but serves ascetic instruction.
-- ¶22: Ethical mastery of ‘ruling-power’ in feet with ‘chain of peace’—paraenetic application rather than cosmological exposition.
-- ¶23: Returns to impersonal correspondential mechanism (‘circulates’) mapped to a named cosmic entity in functional description.
-- ¶24: Cosmic ascent mechanics via ‘two light ships’ articulated as process; virtues serve as correspondential operators, not church rules.
-- ¶25: Numbered internal anatomy-as-worlds schema (four worlds; sevenfold rulers) in classic teaching voice.
-- ¶26: Systematic enumeration of ‘rulers’ as sense-organs; impersonal schematic listing.
-- ¶27: Explicit cross-mapping (‘accord to the pattern’) with structured sevens—core correspondential anatomy teaching.
-- ¶28: Continues the four-world/seven-ruler schema in enumerative style.
-- ¶29: Completes the fourfold body-world schema; generative mechanics stated as aetiology.
-- ¶30: Dialogue attribution ‘enlightener speaks to his hearers’—compilation frame marker.
-- ¶31: Astro-cosmological schema in structural voice; no citation or ecclesial application. Lacunae preserved.
-- ¶32: Direct macro↔micro mapping of zodiac to body parts ‘by order and number’—core correspondential teaching.
-- ¶33: Second schema introduction (side-bent arrangement) retaining technical correspondential language; lacuna preserved.
-- ¶34: Procedural description of the alternative counting method (6+6) consistent with old schematic instruction.
-- ¶35: Enumerative listing completing the 6-right schema; technical body-part correspondence.
-- ¶36: Completes the 6-left schema with aetiological ‘creator appointed’ closure; still system-description. Lacuna/restoration preserved.
-- ¶37: Brief speech-introduction formula (‘Once more he speaks’)—editorial dialogue frame.
-- ¶38: Technical demonological-anatomical numerology (huge counts; ‘distributed/quartered’) in schematic teaching register.
-- ¶39: Process-description of illness/eruption mechanics attributed to internal rulers; impersonal explanatory voice with lacunae preserved.
+- ¶1: Formulaic setting (‘the apostle… among the church… congregation’) and speech-introduction typical of the Kephalaia frame.
+- ¶2: Impersonal macrocosm–microcosm axiom; correspondence stays within cosmic architecture (universe ↔ body).
+- ¶3: Systematic degree-mapping (body parts ↔ cosmic regions/structures) in an expository voice; classic substrate correspondence.
+- ¶4: Summary of the mapping; slight second-person closure but still within the same impersonal correspondential exposition.
+- ¶5: Numbered cosmological structure (‘five… camps’ / ‘five sons…’) presented as system-description.
+- ¶6: Cosmic administration by named beings; internal-to-system ‘watch-station’ hierarchy.
+- ¶7: Systematic watch-station → firmament scope mapping.
+- ¶8: Impersonal cosmological mechanics (reigns/invigorates) and tiered geography; no institutional targeting.
+- ¶9: Cosmic triads (three wheels/three earths) and Porter-station; characteristic substrate architecture.
+- ¶10: Ends the five-watch scheme with the Porter and fastenings; cosmology-only.
+- ¶11: Transition into cosmological ‘events’ affecting the five watches; still system-internal.
+- ¶12: Mythic event within the cosmic administration; Sin acts as an agent (personified).
+- ¶13: Cosmic conflict narrative tied to a watch-station; no church/institutional referent.
+- ¶14: Mythic-cosmological account of flesh-formation; internal narrative of cosmic process.
+- ¶15: Tripartite wheel-mechanics (wind/water/fire) described as cosmic process.
+- ¶16: System-internal ‘fastenings/chains’ mechanics; no later application.
+- ¶17: Editorial application pivot: explicitly ‘the elect’ and moralized microcosmic repetition (‘this is also the case… the elect wear’). Cosmos→community mapping.
+- ¶18: Ethical self-control instruction anchored in ‘elect person’; institutional application voice.
+- ¶19: Continues the Elect self-mastery schema; the correspondence is used to prescribe behavior (master/subdue).
+- ¶20: Sexual-ascetic discipline (‘subdue his lust’) framed as correspondence; late moral application.
+- ¶21: Purification of nourishment/inner fire as practice; application mode rather than cosmological exposition.
+- ¶22: Binds ‘ruling-power’ with ‘chain of peace’ as a behavioral program; still part of the Elect-application run.
+- ¶23: Returns to impersonal correspondence (faculty/teaching ↔ Virgin of Light movement) without institutional categories.
+- ¶24: Virtues are mapped onto cosmic vehicles (‘two light ships’) and ascent-mechanics; still cosmos↔cosmos (with the soul’s cosmic itinerary).
+- ¶25: Numbered schema (four worlds; repeated sevens) in the body-as-cosmos register.
+- ¶26: Systematic septenary of sensory ‘rulers’ within an internal ‘world’ of the body.
+- ¶27: Explicit correspondential recursion (‘accord to the pattern…’) showing a formal microcosmic architecture.
+- ¶28: Continues the four-worlds/seven-rulers body cosmology.
+- ¶29: Completes the fourfold bodily ‘worlds’ with a generative correspondence (seed/begetting forms).
+- ¶30: Dialogue-attribution formula (‘the enlightener speaks…’) marking compilation frame.
+- ¶31: Astro-cosmological system-description (zodiac on sphere/wheel of stars); ‘you can find’ reads as explanatory, not institutional exhortation.
+- ¶32: Classic microcosm mapping (zodiac ↔ vertical body members) in enumerative form.
+- ¶33: Second schema introduction; still purely structural correspondence (body arrangement ↔ wheel arrangement).
+- ¶34: Formal numerical distribution (six left/six right) continuing the correspondential schema.
+- ¶35: Enumerative right-side mapping; remains within technical correspondence register.
+- ¶36: Completes left-side mapping; ‘creator of the body’ functions as cosmological artisan within the system, not a biblical citation.
+- ¶37: Brief speech-introduction seam (‘Once more he speaks’).
+- ¶38: Core content is the numbered internal-‘rulers’ doctrine; opening imperative signals a later teaching-performance wrapper.
+- ¶39: Impersonal causal physiology (inner rulers → illness/boils) as system-mechanics; no institutional address or NT overlay.
 
 ---
 
 ## Chapter 71
 ### Concerning the Gathering in of the [E]lements.
 
-*The chapter is very short: a brief hagiographic/dialogue prompt followed by a compact, systematic eschatological ascent-chain mapping elements and salvific stations up through major cosmological beings. No NT citation, no institutional/pastoral extension. Paragraph 3 is a closing generalization in impersonal style that rounds off the sequence and reads as part of the same old teaching layer.*
+*This chapter is essentially a compact, systematic eschatological chain of ascent (elements → cosmic agencies/stations → aeons). Only the opening dialogue attribution is late framing; the rest stays within the cosmological system with no institutional or Gospel overlay.*
+
+In what way shall the elements be gathered in, from one to another?
 
 The light shall be gathered in to the fire, and the fire itself gathered in to the water, and the water gathered in to the wind, and the wind gathered to the air, and the air gathered to the answer, and the answer gathered to the summons. Also, the summons to the purified Mind, which is the intellectual. The intellectual to the Pillar of Glory, [the Pillar of Glory to the First Man, the Man to the Ambassador, the Ambassador to] the aeons of greatness.
 
 They are gathered in like this; but, they will be gathered on one occasion only, and go up above to the place of rest for ever and ever.
 
 **Temporal observations:**
-- ¶1: Dialogue/frame formula (“Once more the enlightener speaks”) introducing a question; this is characteristic Kephalaia editorial apparatus rather than the older expository substrate.
-- ¶2: Systematic, process-oriented chain of ascent (element-to-element, then to named salvific/cosmic stations: Summons/Answer, purified Mind, Pillar of Glory, First Man, Ambassador, aeons). Impersonal exposition with no citation formulas or institutional markers—strong core-teaching signature.
-- ¶3: Concluding generalization that seals the mechanism (“one occasion only” at the end; ascent to rest). No frame praise, no pastoral instruction; fits as the closure of the same cosmological teaching unit.
+- ¶1: The question itself is a substantive cosmological prompt (eliciting a structured degree-sequence), but the "enlightener speaks" tag is a late framing device and must be stripped from core_text.
+- ¶2: Pure correspondential-systematic ascent list: each term maps internally to the next cosmic station (elements → Answer/Summons → Mind/Intellectual → Pillar → First Man → Ambassador → aeons), with no audience address or institutional pointing.
+- ¶3: Concludes the same eschatological mechanism in impersonal descriptive voice (one-time cosmic gathering and ascent to rest), without pastoral exhortation or citation formulas.
 
 ---
 
 ## Chapter 72
 ### Concerning the worn and torn apart Garments, or the tattered Clothes, or the Elements, the Cross, and the rest too.
 
-*The chapter is a framed Q&A that introduces a compact glossary of cosmic synonyms for the Light-power/soul as it is dispersed and processed in the universe. ¶1, ¶4–6 are clearly hagiographic dialogue apparatus. ¶2–3 function as a scriptural/‘written’ prompt (overlay) rather than the old expository voice. ¶7–15 are predominantly systematic cosmological definitions (core), with ¶15 concluding the teaching by re-unifying the many names into one essence at the end.*
+*The chapter has a clear hagiographic/dialogue opening (¶1–6), then shifts to a systematic gloss of cosmological names for the Light-power/soul across its historical states (¶7–15). The core layer is dominantly cosmos→cosmos: identifications of "garments/rags/elements/Cross/counsel/soul slain" with specific Light powers, cosmic structures (firmaments, stars, three earths, Porter), and salvation mechanics (purification by the Ambassador, reaping/devouring, final regathering). Some late editorial framing remains only in the dialogue apparatus, not inside the teaching proper.*
 
 “It is proper for you to understand this. The garments that are named ‘great garment’ are the five intellectuals that make perfect the body of the Pillar of Glory, the Perfect Man. They were purified by the coming of the Ambassador.
 
@@ -3140,31 +3113,31 @@ They are gathered in like this; but, they will be gathered on one occasion only,
 
 “The one named ‘the soul that is slain’, which is killed, oppressed and murdered; it is this power of fruit, vegetables and seeds. They shall be threshed, plucked and cut down; and they give nourishment to the worlds of the flesh. Further: the wood should it be dry, and the garment should it become ragged, will perish. Again, it is [a pa]rt of this entire soul that is slain and killed; since also even this whole part of it they kill [...]
 
-“For all these names [...] are a single [...] since the beginning, it [...] as it enlightens; but they separated into all these parts in this first contest. They became set in all these altered forms, and these many names. Of course, if now all these varieties are laid bare, and stripped of all these appearances, and parted from all these names; they will gather together and make a single form, and a single name, unaltered and unchangeable for ever in the land of their first essence, from which they were sent forth against the enemy.”
+“For all these names [...] are a single [...] since the beginning, it [...] as it enlightens; but they separated into all these parts in this first contest. They became set in all these altered forms, and these many names. Of course, if now all these varieties are laid bare, and stripped of all these appearances, and parted from all these names; they will gather together and make a single form, and a single name, unaltered and unchangeable for ever in the land of their first essence, from which they were sent forth against the Enemy.”
 
 **Temporal observations:**
-- ¶1: Formulaic setting: ‘Once more the apostle…’ is a compilation-frame dialogue introduction (Layer 2).
-- ¶2: Appeal to ‘lesson… written in the scriptures’ and interrogative catalogue framed as scriptural referent; this ‘scriptures’ entry-vector marks later overlay rather than impersonal cosmological exposition.
-- ¶3: Continues the ‘written and sealed… by a multitude of scriptures’ rationale; the authority-citation posture is characteristic of later editorial/theological overlay.
-- ¶4: Dialogue tag ‘His disciples say to him:’ is hagiographic apparatus.
-- ¶5: Petition/praise formula (‘You, our father… source of all wisdoms… we entreat you’) is classic Kephalaia frame rhetoric.
-- ¶6: Dialogue attribution with ‘apostle’ + speech introducer; must not enter core_text.
-- ¶7: Systematic definition of a term via cosmological correspondences (five-fold structure; Pillar of Glory/Perfect Man/Ambassador) in expository voice—typical old teaching layer.
-- ¶8: Impersonal cosmological mechanics: devoured Light-power dispersed in rulers/firmaments/stars/three earths/Porter; definitional register without citation.
-- ¶9: Process description of Light-power’s damage by the five worlds of flesh; numbered structure + mechanical verbs (‘reaped, cut, devoured’).
-- ¶10: Triadic cosmological set (wind/fire/water) + Living Spirit’s ordering actions; systematic expository mode strongly core.
-- ¶11: Definition of ‘elements’ as remaining Light-power in lower realm; impersonal functional description.
-- ¶12: Gloss-style identification of Cross of Light as bound Light-power spread through dry/moist; no NT citation formula, presented as cosmological term.
-- ¶13: Cosmic-functional agency (‘summons and obedience’) operating across named powers; mechanical/animating description characteristic of older teaching.
-- ¶14: Maps the ‘slain soul’ onto vegetative life consumed by the worlds of flesh; still explanatory cosmological anthropology rather than moral exhortation.
-- ¶15: Concluding doctrinal synthesis: many historical names/forms of the Light-power re-unify into one at the end; impersonal eschatological mechanics in core voice.
+- ¶1: Formulaic hagiographic scene-setting (“Once more… apostle… congregation of his disciples”).
+- ¶2: Dialogue-question that frames the ensuing exposition; anchored to “written in the scriptures” and a catechetical list of terms, rather than impersonal cosmological explanation.
+- ¶3: Meta-textual appeal to “memory” and “a multitude of scriptures,” plus direct Q&A prompting; this is compiling-community discourse, not substrate exposition.
+- ¶4: Q&A formula (“His disciples say to him”).
+- ¶5: Petition/praise address (“You, our father… we entreat you…”), typical of the Kephalaia frame.
+- ¶6: Dialogue attribution with “apostle” + page marker; explicit frame seam before the teaching begins.
+- ¶7: Systematic cosmological identification (name → cosmic constituents: five intellectuals; Pillar of Glory/Perfect Man; purification by the Ambassador) in an expository register.
+- ¶8: Cosmos→cosmos mapping of a term (“rags”) to devoured Light-power, cosmic rulers/firmaments/stars/three earths/Porter; no institutional application.
+- ¶9: Mechanistic process-description of Light-power’s degradation (reaped/cut/devoured) within the five worlds of flesh—classic impersonal system language.
+- ¶10: Numbered/triadic cosmological schema (three garments: wind/fire/water) tied to Living Spirit’s cosmogonic action; fully internal mapping.
+- ¶11: Definition of “elements” as a cosmic Light-power operating in earthly ‘wombs’; process-oriented, non-exhortatory.
+- ¶12: Cosmological identification of the Cross of Light as bound Light-power distributed through dry/moist regions; not a Gospel/NT citation context.
+- ¶13: Functional description of an animating principle (“summons and obedience”) acting within the named powers—system mechanics rather than moral exhortation.
+- ¶14: Correspondential identification of the ‘slain soul’ with Light in vegetation/agricultural processing, feeding the worlds of flesh; still cosmos→cosmos (no audience-address/institutional pointing).
+- ¶15: Core eschatological regathering doctrine stated in impersonal system terms (one essence → dispersed forms/names → final single form/name in the primal land); no institutional graft despite slightly smoother rhetorical style.
 
 ---
 
 ## Chapter 73
 ### Concerning the Envy of Matter
 
-*The chapter opens with a dialogue-attribution frame and then preserves a short core sequence describing Matter’s envy across key cosmological/primordial moments (First Man; image of the Ambassador; Adam). From ¶5 onward the language shifts into Christian overlay (Christ/cross/apostles) and then into explicitly Mani-and-church material with strong pastoral drift (catechumens, exhortation), matching the chapter-level fatigue signal. ¶7–9 are admonitory/paraenetic expansions rather than systematic cosmological exposition.*
+*This chapter opens with a brief hagiographic dialogue attribution but quickly preserves a compact mythic-cosmological sequence: Matter’s intrinsic Envy as a Dark principle and its historic assaults on the First Man, the Ambassador’s image, and Adam. The second half shows strong editorial fatigue: it pivots into Mani/church self-reference, catechumenal categories, and exhortation, and includes a distinct Christian overlay (Christ, apostles, cross).*
 
 [The] entirety of envy is this first nature that occu[red] in the worlds of darkness.
 
@@ -3174,23 +3147,27 @@ In this envy that [ ... ] in it, the First Man [ ... ] its poiso[n ... ] its evi
 
 [The th]ird time it envied Adam, the fir[st hum]an. It seized a power from him, and bore it forth from a [rib of] of Adam's [flesh].
 
+This is the desire [of Mat]ter, the thought of death. This is the envy of its wi[cke]dness, that it casts upon the entire kindred of life from the very beginning
+
 **Temporal observations:**
-- ¶1: Opening attribution to the apostle + disciples is a compilation frame, but the remaining sentence is impersonal cosmological definition (envy as a primordial nature in the worlds of Darkness).
-- ¶2: Systematic mythic-cosmological register (First Man; hostile action of Darkness/Matter; garment imagery) with no citation, exhortation, or institutional vocabulary.
-- ¶3: Core cosmogonic mechanism: Ambassador as named cosmic being; image/seal/impression on flesh described as process (impersonal explanatory voice).
-- ¶4: Primordial-anthropogonic episode stated as a numbered sequence (“third time”); no church address or NT citation formula; fits the older teaching’s mythic causality.
-- ¶5: Christian overlay: explicit “blessed Christ,” “father of all the apostles,” and “wood of the cross” are NT-derived/Christianized narrative identifiers rather than the impersonal cosmological exposition of the core.
-- ¶6: Mani self-reference (“I myself was sent… last generation”), plus explicit institutional vocabulary (church, assembly, catechumens) and direct exhortation to listeners; this matches the strong second-half pastoral drift.
-- ¶7: Paraenetic description of how envy attacks ‘inside’ and ‘outside’ via sickness and slander, aimed at community figures (“teacher,” “righteous elect person”); admonitory/community-protective register rather than systematic cosmology.
-- ¶8: Community-directed warning about the ‘lesser in power’ falling from faith, and the extension “until my time… to my church” ties the passage to Mani/community situation; not a closed cosmological mapping.
-- ¶9: General moral exhortation (“appropriate for the wise person… steadfast… faith/hope”) without cosmological mechanism; classic late admonition/closing material.
+- ¶1: Frame formula + apostolic attribution signals later compilation, but the remaining sentence is impersonal cosmological definition (Envy as a primordial Dark nature), consistent with the substrate’s ‘what it is’ voice.
+- ¶2: Mythic-cosmological narration internal to the system (First Man vs. Dark forces; ‘poison’, ‘garments’ as cosmic mechanisms) with no institutional or citation anchoring.
+- ¶3: System-internal cosmology (Ambassador, archetypal image, ‘seal’, flesh as impressed form). No audience address, no church application, no Gospel vector.
+- ¶4: Although ‘Adam’ is biblical, the paragraph treats him as a node in the Manichaean cosmic anthropology (power seized, generation from flesh), without citation formula; reads as integrated cosmological myth rather than NT/OT overlay.
+- ¶5: Christian overlay: explicit ‘blessed Christ’, ‘apostles’, and ‘wood of the cross’ (NT passion vector). Even if adapted into Manichaean cosmology, this paragraph’s entry is via Christian narrative terminology.
+- ¶6: Strong institutional/hagiographic turn (‘I myself was sent now’, ‘my entire church’, ‘assembly of my catechumens’) and direct community categorization/exhortation; this is cosmos→contemporary community application rather than system-internal exposition.
+- ¶7: Describes social persecution patterns (rumours, accusations, being hated ‘among mankind’), plus community roles (‘teacher’, ‘elect’). This is practical application/polemic, not substrate cosmography.
+- ¶8: Mid-paragraph pivot: the extracted sentences define Matter’s intrinsic drive (‘thought of death’) in an impersonal cosmological register (core), while the surrounding lines apply it to faith-failure and to ‘my time…my church’ (editorial application).
+- ¶9: Pure exhortation/application voice (‘appropriate for the wise person… be steadfast… in God… hope… faith’) with no system-internal mapping; late paraenesis.
 
 ---
 
 ## Chapter 74
 ### Concerning the living Fire: It is present in Eight Places.
 
-*After a brief hagiographic/dialogue-style incipit naming “the apostle,” the chapter is dominated by a systematic eightfold cosmological placement of the Living Fire (Land of Light, Father, First Man/Perfect Man, the day-ship, night light-giver, Living Spirit’s body, new earth/foundation-course, and an eschatological manifestation). No pastoral/institutional extension and no NT citation overlay are present; the core layer reads as an impersonal enumerative map.*
+*This chapter is overwhelmingly an old, systematic correspondential/cosmological enumeration: the living fire is traced through an eight-place cosmic itinerary (Light Land, Father, First Man/Perfect Man, cosmic ships, Living Spirit’s descent, new earth, eschatological revelation). The only clear later hand is the brief dialogue/authority attribution at the opening (“Once again the apostle speaks”), which functions as compilation frame rather than teaching content. No NT citation, no institutional application, and no pastoral exhortation appear.*
+
+The [holy] living f[ire] is present i[n] eight places.
 
 The first place wherein it is, is this [light] land [where it is present and] exists. It is established beneath [it ... ut]terly beyond the totality. It is the foundation and ba]sis of that great earth, and the consideratio[n th]at is beneath them all.
 
@@ -3211,23 +3188,23 @@ The seventh is this living fire that is of the new earth, and is the considerati
 This i[s the way] that the holy living fire exists in these [eight places].
 
 **Temporal observations:**
-- ¶1: Dialogue/frame attribution with “Once again” + “the apostle speaks” is a compilation wrapper; it introduces the topic rather than expounding the system.
-- ¶2: Impersonal, systematic ‘first place’ cosmological topography; no citation or institutional address.
-- ¶3: Systematic placement in the Father with emanational logic (“powers that came from him”); expository voice characteristic of the teaching layer.
-- ¶4: Named Manichaean cosmic beings used in structural enumeration (third place), not narrative anecdote; fits old cosmological mapping.
-- ¶5: Enumerative fourth term; cosmological geography (outer wall; day-ship).
-- ¶6: Continuation of the eightfold list with cosmic vessel/light-body imagery; no frame markers.
-- ¶7: Cosmic process description (swathing/stripping) with standard Manichaean agents (Living Spirit, Porter; summons/obedience) in expository form.
-- ¶8: Systematic eschatological/cosmological architecture (new earth; foundation/course/crown) continues the numbered schema; impersonal descriptive register.
-- ¶9: Eighth term completes the enumerative set with eschatological ‘shall be revealed’ language tied to light ships; no NT entry-vector or institutional seam.
-- ¶10: Formal summation closing the systematic list; not a doxology or community-response frame.
+- ¶1: The attribution formula with “apostle” is characteristic of the Kephalaia’s hagiographic/dialogue frame (Layer 2). The remaining sentence is the chapter’s structural teaching incipit (eightfold cosmological listing), fitting the older expository substrate.
+- ¶2: Impersonal, structural cosmography (“first place… established… beyond the totality… foundation and basis”) mapping element→cosmic location/degree, with no audience address or institutional pointing.
+- ¶3: Cosmic hierarchy and emanational mechanics (Father → powers → revelation), presented as “how it is” rather than as citation or moral exhortation; “consideration” functions as an internal cosmological register.
+- ¶4: Systematic placement of the element in named cosmic beings (First Man/Perfect Man) as part of a numbered structure; no frame formula here, only the teaching sequence.
+- ¶5: Pure cosmos→cosmos mapping: purification mechanics and placement in cosmic architecture (“outer wall,” “ship of the day”), continuing the enumerated list.
+- ¶6: Another numbered station in the same cosmological itinerary (night luminary/ship context), with no editorial application markers.
+- ¶7: Process-oriented mythic mechanics (swathing, descent, stripping) embedded in the cosmic system (Living Spirit, Summons/Obedience, Porter) rather than pointed at contemporary institutions.
+- ¶8: Degree-structure cosmography (“new earth,” “first foundation,” “course/crown,” ‘below the totality’) in an impersonal explanatory voice; “consideration” remains an internal cosmological correspondence register.
+- ¶9: Eschatological/cosmic revelation framed within the system (two light ships; “signifies” as internal correspondential function). “Furthermore” continues the list but does not pivot to church/institution, so it is not an editorial seam.
+- ¶10: Concluding structural recapitulation that closes the eightfold teaching sequence; still impersonal and cosmological rather than hagiographic praise or pastoral address.
 
 ---
 
 ## Chapter 75
 ### [Concerning the Letter (?)]
 
-*Core teaching is concentrated in ¶2–3 as a systematic cosmological-historical exposition (Living Spirit ↔ First Man; summons/answer as divinised ‘letters’ containing total foreknowledge of events). ¶1 is the hagiographic dialogue frame. ¶4–6 show strong second-half pastoral drift and Christian/institutional application (holy church, beloved Christ, exhortation), consistent with an editorial extension of the primordial template to church life; given the chapter’s fatigue pattern, these are best dated as later overlay/pastoral rather than remnants of the oldest teaching.*
+*The chapter opens with a brief hagiographic frame, then preserves a compact cosmological substrate (¶2–3) describing the primordial Summons and Answer as divinised “letters” carrying exhaustive foreknowledge of the First Man’s conflict. The second half (¶4–6) shows strong editorial fatigue: the same “letter” motif is extended into church/institutional application (holy church, good works, fasting/prayer, direct audience address), shifting from cosmos→cosmos mapping to cosmos→contemporary community practice.*
 
 Consider the summons, which was sent from the Living Spirit in the beginning. He sent it to the First Man. It is a peace letter and greeting that he wrote and sent to his brother, in which all the tidings are written down, together with everything it will bring about and establish by that summons. That summons, the First Man [... is ordained to happen.
 
@@ -3235,133 +3212,64 @@ Consider the summons, which was sent from the Living Spirit in the beginning. He
 The answer that was sent from the First Man came to the heights, to the Living Spirit. That is also a letter, which was sent from the First Man to the Living Spirit, in which all the tidings are written down; and every war and the struggles that he had waged. It did [...] in the answer that the First Man [... ...] everything that had happened and everything [that would happen], all that had been done and whatever is made ready to be done by him. The Living Spirit knew all the wars and the dangers and the contests that the rulers had waged against the First Man.
 
 **Temporal observations:**
-- ¶1: Formulaic opening with dialogue-frame attribution (‘Once again he speaks to his disciples…’), a classic Kephalaia editorial wrapper.
-- ¶2: Impersonal, systematic primordial-cosmological exposition (Living Spirit/First Man; summons as hypostasised ‘letter’ containing all tidings and foreordination). No frame formula, no NT citation, no institutional application.
-- ¶3: Continues the same primordial template in a structural ‘call/answer’ pair, with cosmic agents and process-language (‘wars… rulers… against the First Man’) and total-knowledge motif; still non-institutional and non-citational.
-- ¶4: Application of the primordial scheme to the ‘beloved Christ’ and ‘holy church’ (institutional register) with marked Christian overlay vocabulary; this looks like a later Manichaean Christianizing/church-application graft onto the older call/answer teaching.
-- ¶5: Institutional-church material and works piety (good works, fasting, prayers, entreaty) plus appeal to Christ’s response. Matches the chapter’s strong second-half pastoral drift and functions as editorial extension rather than primordial cosmology.
-- ¶6: Direct second-person exhortation about prayer/request (‘I say to you… Everything that you will ask… will be given you’), i.e., operational pastoral instruction rather than cosmological mechanism; likely late concluding admonition.
-
----
-
-## Chapter 77
-### The Chapter of the Four Kingdoms
-
-*This kephalaion is dominated by later dialogue-frame + Gospel-based exhortation about almsgiving to disciples/catechumens, with strong pastoral drift in the second half. The only recoverable older layer is the bare geopolitical four-kingdom schema; the rest enters via Christian citation/exegesis and institutional categories (catechumens/alms/reward/last day).*
-
-⟨p.189⟩ [The first is the kingdom of] the land of Ba[by]lon and of Persia.
-The s[ec]ond is the kingdom of the Romans.
-The thir[d is the k]ingdom of the Axumites.
-The fourth is the kin[g]dom of Silis.
-These four great kingdoms e[xi]st in the world; there is none that surpasses them.
-
-**Temporal observations:**
-- ¶1: Dialogue attribution with 'apostle' and formulaic opening ('Once again') marks hagiographic compilation frame.
-- ¶2: Impersonal enumerative schema (fourfold list of kingdoms) without citation formula, ecclesial categories, or hagiographic Q&A; reads like a pre-exegetical datum that later paragraphs then moralize via Gospel material.
-- ¶3: First-person ‘I say to you in truth’ + almsgiving-to-disciples motif and 'truth I have manifested' functions as Christianized dominical saying/exhortation; it is part of the Gospel-based overlay even though it reuses the four-kingdom comparison.
-- ¶4: Institutional category 'catechumen of the truth' and promissory soteriology ('rest for ever')—an ecclesial/pastoral application rather than cosmological mechanics.
-- ¶5: Explicit citation formula ('Just as the saying that the good saviour uttered') introduces a Gospel saying; by rule this entered the Kephalaia via NT tradition.
-- ¶6: Ongoing exegesis of the saviour’s wording ('is calling these saints “least of the faithful”') and dominical-voice application; despite catechumen content, the paragraph’s engine is Gospel interpretation, so classify as overlay.
-- ¶7: Defines exemplary persons as 'faithful catechumen' and 'faithful righteous one' with indwelling Holy Spirit—ecclesial identity discourse rather than systematic cosmology; no recoverable pre-compilation mechanism.
-- ¶8: Alms/fellowship/reward/last day rationale centered on helping saints/catechumens—classic institutional moral exhortation, consistent with strong second-half pastoral drift.
-- ¶9: Concluding beatitude-style exhortation ('Blessed are these who will hear and believe') reads as homiletic closure to the moral lesson, not core cosmological teaching.
-
----
-
-## Chapter 78
-### Concerning the Four Things over which People kill each other.
-
-*The chapter is mostly a simple fourfold list plus concluding exhortation. ¶1 is a clear hagiographic/dialogue frame. ¶7 introduces a first-person admonitory voice with a ‘physician’ who separates Light and Darkness—this looks like later Manichaean homiletic expansion rather than the impersonal, systematic cosmological core. The oldest recoverable layer here is the fourfold list (food/sex/wealth/war) and its brief mortality conclusion.*
-
-The first thing is [the obsession] of people; in that they would eat [for the swelling] of their body [...]
-
-The second is [sexual inter]course; [...] fornication [...] fornication [...] men and women [...] in it with each other.
-
-The third thing is wealth; and [...] the useless riches in [which] they shall pride themselves without [...] from it.
-
-The fourth is war; and the disputes, the [...] and the trials that they instigate against each other. Someone is victor over another, with each other in tyranny, so that they have received a name in the world.
-
-All people, they who side with these four major things that [a]re on every tongue [in the] world [...] they struggle so that they might generate them [...] among them.
-
-[...] he separates the Light from the Darkness, the good from the wicked;
-
-For they will not remain with them for ete[rni]ty; rather they shall leave them behind and die.
-
-**Temporal observations:**
-- ¶1: Formulaic dialogue opening (“Once again he speaks to his disciples”) is Kephalaia frame apparatus.
-- ¶2: Impersonal enumerative teaching (“The first…”) with no citation or institutional directives; part of a fourfold schematic list.
-- ¶3: Continuation of the enumerated fourfold; lacks frame/citation/institutional markers. Ethicized topic but presented as a structural ‘second’ item.
-- ¶4: Enumerative list item (“The third…”), gnomic/impersonal tone.
-- ¶5: Completes the fourfold scheme; still descriptive rather than prescriptive, with ‘name/glory in the world’ as a motive.
-- ¶6: Summative generalization tied directly to the fourfold list; still impersonal and not church-institutional.
-- ¶7: Register shifts to first-person admonition and a ‘physician whom I have brought’ (rhetorical self-presentation typical of later homily/frame). Embedded within it is a compact, impersonal cosmological mechanic (separating Light/Darkness) that plausibly derives from older teaching.
-- ¶8: Gnomic mortality conclusion to the fourfold-worldly items; no frame, citations, or institutional rules.
+- ¶1: Formulaic hagiographic opener (“Once again he speaks to his disciples…”) functioning as editorial container rather than teaching.
+- ¶2: Impersonal, systematic cosmological exposition: primordial beings (Living Spirit/First Man) and a structural mechanism (“summons” as divinised letter containing total tidings/foreknowledge) without institutional address or church application.
+- ¶3: Continues the same closed cosmological system (First Man ↔ Living Spirit; wars/contests with the rulers) and defines the “answer” as a comprehensive cosmic record; no pivot to the church or exhortation.
+- ¶4: Editorial application of the letter motif to the institutional sphere (“sent to the holy church… as the holy church shall understand all things”), crossing from cosmic mechanism to community-identification; Christian vocabulary (“beloved Christ”) appears in a church-directed register.
+- ¶5: Institutional/operational piety: holy church, good works, entreaty, fasting, prayers, revelation “before the blessed Christ.” This is cosmos→church practice, not substrate mapping.
+- ¶6: Direct audience address and exhortation (“I say to you… Everything that you will ask… will be given you”), characteristic of later pastoral/application voice rather than impersonal cosmological teaching.
 
 ---
 
 ## Chapter 79
 ### Concerning the Fasting of the Saints
 
-*Chapter is dominated by later institutional/pastoral framing about fasting practice, with a small embedded core-like fourfold schematic about fasting’s effects (paras 3–6). Strong formulaic opening (frame) and explicit prescriptive discipline/alms (pastoral) support late compilation layers; the most recoverable old teaching is the impersonal four-work sequence with Light/Darkness mixture language and the living soul motif.*
+*This chapter is largely an institutional/pastoral treatment of fasting (four ‘works’, persistence, Lord’s day fasting, alms), wrapped in a hagiographic dialogue opening. The oldest recoverable teaching appears only as embedded cosmological-soteriological explanations about the soul/light in food and its admixture with Darkness, plus a fragmentary line about not destroying the living soul; these are preserved inside an editorial ascetic framework (the ‘four works’ list).*
 
-The first work: Shall the holy man punish his body by fasting, he subdues the entire ruling-power that exists in him.
+This soul that comes into him in the administration of his food, day by day; it shall be made holy, cleansed, purified, and washed from the adulteration of the Darkness that is mixed in with it.
 
-The second: This soul that comes into him in the administration of his food, day by day; it shall be made holy, cleansed, purified, and washed from the adulteration of the Darkness that is mixed in with it.
+the mystery of [the children] of Light in whom there is neither corruption nor [...] the food, nor wound it. Rather, they are holy, [there is nothing] in them that defiles, as they live in peace.
 
-The third: That person shall make every deed a holy one; the mystery of [the children] of light in whom there is neither corruption nor [...] the food, nor wound it. Rather, they are holy, [there is nothing] in them that defiles, as they live in peace.
-
-The fourth: They make a [... ...] the Cross, they restrain their hands from the hand [... not] destroy the living soul.
+They make a [... ...] the Cross, they restrain their hands from the hand [... not] destroy the living soul.
 
 **Temporal observations:**
-- ¶1: Pure hagiographic dialogue frame (“enlightener…disciples”), a standard Kephalaia editorial container.
-- ¶2: Announces a disciplinary topic (“fasting…saints”) in an institutional voice; functions as chapter rubric/heading for a community practice rather than cosmological exposition.
-- ¶3: Part of an impersonal numbered fourfold scheme describing mechanisms/effects in the person (subduing inner ‘ruling-power’), not a rule-setting instruction.
-- ¶4: Classic core mechanic: mixture language (Darkness ‘mixed in’), purification process tied to ingestion/administration of food; expository rather than regulatory.
-- ¶5: Cosmological-ontological register (‘children of light’, incorruption/defilement) presented as a mystery/description, not institutional instruction; fits a teaching sequence.
-- ¶6: Despite lacunae, continues the numbered schema and invokes the ‘living soul’ as a salvific entity; ‘Cross’ here reads as Manichaean cosmic symbol rather than NT citation (no Gospel formula).
-- ¶7: Moves from fourfold mechanism to exhortation/practice: persistence ‘daily’, making ‘all its members’ fast—institutional discipline voice; likely editorial extension after the schematic teaching.
-- ¶8: Explicit community regulation and institutional piety: inability to fast daily, fasting on ‘the lord’s day’, and alms; late pastoral layer, consistent with noted editorial fatigue.
+- ¶1: Formulaic dialogue attribution (‘Once more the enlightener speaks…’) is a classic compiling-frame marker.
+- ¶2: Programmatic institutional topic statement about fasting ‘saints’ and its ‘profit’ for set ‘works’; this is church/discipline framing rather than cosmological exposition.
+- ¶3: Ascetic instruction cast as benefit of fasting (‘punish his body’), aimed at the holy practitioner; not presented as an impersonal cosmological mechanism.
+- ¶4: Core substrate shows through as a cosmological-soteriological mechanism: soul/light entering via food and needing purification from admixture with Darkness (cosmos→cosmos, no institutional target). The surrounding ‘second work’ catalogue structure is editorial.
+- ¶5: The remaining material describes an internal cosmic/pneumatic state (‘children of Light’, incorruptibility/undefilement), consistent with old correspondential-cosmological anthropology; the excised parts are exhortative and structurally belong to the later ‘four works’ fasting schema.
+- ¶6: Though practice-oriented, the fragment retains cosmological valuation (‘living soul’) and a mythic/cultic symbol (‘the Cross’). Its embedding as ‘the fourth work’ suggests editorial ascetic framing over an older doctrinal motif (protecting the living soul/light).
+- ¶7: Summative exhortation about persistence and making ‘all its members’ fast; this is disciplinary application language rather than cosmological description.
+- ¶8: Explicit institutional scheduling (‘lord’s day’) and almsgiving; this is unambiguously later church practice material (editorial fatigue likely, matching the chapter signal).
 
 ---
 
 ## Chapter 82
 ### The Chapter of Righteous [Judgement]
 
-*Core teaching here is largely ethical/casuistic (types of anger; reprimand leading to repentance) with a correspondential cosmological anchoring (doctor simile → love/fear → heavenly light-givers purifying the soul through the totality). The strongest late material is the dialogue frame (disciple request; apostle-attribution; closing assent) and a likely Gospel echo in ¶10 (“treasure”). No seam-flagged institutional graft is present; the chapter’s late layer is mainly hagiographic framing rather than pastoral regulation.*
-
-Through anger, then, I will [...] before him. That person shall wither and be subdued instantly and come to the place [...] with righteous judgement.
-
-"[...] this anger with which you shall be angry, you are making in it a judgement of righteousness [...] difficult people [...] repentance. Their anger and wickedness and evil-doing [...] is only a scare and a rebuke; because [...] For the anger alone is the scare, and when [...] you would censure and upbraid that brother with words that scare, you are shaming him to good use, so that you might strip him of the obduracy [...] in this [...] his heart [...]."
-
-"However, you have heard [...] the anger. For this is the anger that lets you find occasion to lust after an evil thing with sin in it. [...] listen to him [...] and he is angry with an anger [...] look at him [...] and he is violent [...] he does not utter constructive words [...] composed anger; he is angry in his pride and boastfulness. They speak ill in that they would [...] him. And they do not honour him as he is angry and abuses and curses, and wishes to humiliate the meek, in retaliation and violence against his ill-treated brothers. He engenders the things that [...] or else if someone will falter and commit sin [...] and does not accept judgement. He is angry or he walks in his own [...] not of the opinion of his brothers. They reprimand him about it, and he assumes anger and commits an evil deed in his anger. This is the evil anger [...] and zeal. [...] call it anger."
-
-"[...] Whenever you may produce evil or [...] two or one [...] becomes obdurate and not listen to you. You see him [...] he humiliates himself, assuming up to now a [...] You understand that they [...] harshness to you [...] them with hard words, in cruelty and harshness. And they will not be able to name it anger; rather its name is the strong reprimand that leads to repentance.
-
-For you are like a wise doctor, whose hand is sensitive in [...] the wounds that he shall heal are severe [...] sometimes he shall place on the wound a remedy that is hot, sometimes a remedy that is cool [...] after the blow. Corresponding to the simile [...] this too is how it happens [...] There are some, if he shall take the rebuke [...]
-
-Through the hard word [...] the blow that shall be cured by the remedy [...] of people if he shall take the rebuke [...] with the humbling word, just as this [...] healed by the cool remedy [...] the wise person is like this understanding doctor [...] speaks to him as he is subdued corresponding to error [...] in humility. Also, this one who will speak to him [...] he spoke [...] so that [...] they of godly opinion. And [...] so that he might [...] the brother in two aspects [...] love, but the other one with fear [...] obduracy in one of his brothers [...] foolishness. He may speak with those ones with great fear [...] of evil-doing and hate. Fear, however, leads to repentance [...] Yet, this one [...] as even he is [...] he reckons words and what is [...] in the aspect [...] and he upbraids that brother until he brings him to repentance.
+*This chapter is dominated by later dialogic framing and pastoral/disciplinary instruction about anger, reprimand, repentance, and leadership conduct. The only clear substrate-like fragment is the cosmological-correspondential statement about the heavenly light-givers exhibiting two aspects (love/fear) in relation to the soul’s passage through the totality and the purification of the powers above. A Mt 6 paraphrase enters via NT overlay.*
 
 For the light-givers that are in the heavens shall be revealed with these two aspects, in the aspect of love and the aspect of fear. They display these two aspects of the powers above that are in the heavens, because of their soul that passes through the totality. For in these two appearances, the aspect of love that is beauty and sublimity, together with the other aspect of confrontation that is in them, they shall purify in them the powers above.
 
 **Temporal observations:**
-- ¶1: Dominated by dialogue setup and supplication formula (“Once again…”, “I beseech you…”), with disciple/teacher staging; this is compiling frame, not impersonal teaching.
-- ¶2: Impersonal, maxim-like formulation about effect of anger as corrective judgement; no attribution/citation, no institutional markers.
-- ¶3: Renewed petition to ‘my master’ asking whether there is sin; rhetorical self-questioning inside the dialogue frame rather than direct cosmological exposition.
-- ¶4: Underlying teaching is casuistic/functional (anger as corrective scare/rebuke leading to repentance), but it is introduced by a classic Kephalaia dialogue attribution using ‘apostle’ → later frame wrapping older instruction.
-- ¶5: Systematic typology (distinguishing ‘evil anger’ by traits/effects) in an expository voice, without frame formulas or NT citation.
-- ¶6: Functional clarification of terminology (not ‘anger’ but ‘strong reprimand’ leading to repentance). Despite pastoral vocabulary density, it lacks institutional rules/categories and continues the teaching sequence.
-- ¶7: Classical didactic simile (doctor/hot-cool remedies) used as mechanism for a two-mode pedagogy; impersonal, not framed/cited.
-- ¶8: Continues the hot/cool remedy correspondence into a structured dual-aspect pedagogy (love/fear) with causal language (“leads to repentance”); still non-institutional and non-citational.
-- ¶9: Cosmological-correspondential anchoring (heavenly light-givers; two aspects; soul passing through the totality; purification mechanism). This impersonal cosmological mapping is characteristic of the older teaching layer.
-- ¶10: Contains a recognizable Gospel-saying vector (“wherever your … your treasure will also be…”; chapter note indicates Mt 6 in apparatus). Even if embedded in exhortation, the NT entry-route makes this paragraph Christian overlay.
-- ¶11: Closing response formula (“When that teacher heard… he said… my master”) is hagiographic dialogue closure, not core teaching.
+- ¶1: Strong dialogue frame (“Once again… disciple… he says… I beseech you”), second-person situation-setting, and community-relational problem (brother/sister discipline). Not cosmological exposition.
+- ¶2: Ethical/practical claim about using anger to subdue a person into “righteous judgement”; no cosmos→cosmos mapping, functions as leadership application.
+- ¶3: Petition formula (“I beseech you, my master… instruct me”) and self-referential anxiety about sin; this is Q&A apparatus, not impersonal teaching.
+- ¶4: Begins with explicit attribution (“Then the apostle speaks…”). Content is institutional/pastoral: reprimand, shaming, repentance, heart-obduracy—application to community discipline rather than cosmic mechanics.
+- ¶5: Extended moral taxonomy of ‘evil anger’ (pride, cursing, retaliation, refusing judgement). Even if rhetorically ‘teaching,’ it stays in behavioural ethics, not cosmological correspondence.
+- ¶6: Direct guidance about handling obdurate persons; defines ‘strong reprimand that leads to repentance.’ Pure pastoral discipline.
+- ¶7: Doctor simile (hot/cool remedy) is a pedagogical analogy used to justify rebuke styles; it maps interpersonal correction, not cosmic domains—so it is application material rather than substrate.
+- ¶8: Continues the doctor/rebuke analogy and explicitly applies ‘two aspects’ (love/fear) to speaking with brothers; cosmos is not the referent—this is community instruction.
+- ¶9: Impersonal cosmological-correspondential exposition: heavenly ‘light-givers’ manifest dual aspects (love/fear) tied to the soul’s transit through the totality and purification of ‘powers above.’ Both sides stay within the cosmic system (heavens/light-givers/soul/totality/powers), with no institutional addressee.
+- ¶10: Second-person exhortation plus an identifiable Mt 6 echo (“wherever your heart… your treasure…”). Entry vector is NT/Gospel tradition, so the whole paragraph is Christian overlay even though it is used for moral instruction.
+- ¶11: Closing response of the teacher praising the lesson (“When that teacher heard…”), typical hagiographic/dialogue closure; not teaching substrate.
 
 ---
 
 ## Chapter 83
 ### Concerning the Man who is ugly in his Body, [but] beautiful [in his Soul].
 
-*The chapter opens with a hagiographic anecdote (Mani among the congregation) and a moralizing reprimand that ends in an explicit Gospel-derived saying (Christian overlay). The oldest recoverable teaching layer is concentrated in the technical exposition on pearl formation (¶10–13) and the cosmological decoding of the parable (¶16–17). Paragraphs that explicitly map the pattern onto the ‘holy church’ (¶15) and direct exhortation to the community (¶18) are later pastoral/institutional material. Dialogue attributions (‘+The enlightener says+’) are frame and must be stripped when extracting core.*
+*This chapter is structurally layered: a hagiographic scene-setting narrative (¶1–5,7–8), a moral reprimand that ends in an explicit Gospel citation (¶6 = Christian overlay), then a long impersonal exposition on pearl-formation (¶9–14) that reads like older teaching material once stripped of dialogue-attribution. The parable is then applied to the institutional "holy church" and apostles (¶15–16 = pastoral/application, cosmos→institution), followed by a brief return to intra-cosmic soteriology (¶17 = core) and a closing exhortation (¶18 = pastoral).*
 
 “Pearls shall arise not in every place in the sea, nor be formed in the sea as a whole. Rather, in various places that are in this sea, pearls are formed in them [ ... ... ] that sea, in which the [pearls] shall be formed [ ... ] this [ ... ... ] what the sea shall [ ... ... ] its fire {blazes} above and comes [down ... ... ] and it makes foam like the drop of water that flows [ ... ] down in rainwater [ ... ] is the water [ ... ... d]own first [ ... ... ] foam and comes down [ ... ... ] the sweet waters [ ... ... ] the waters.
 
@@ -3375,42 +3283,36 @@ For the light-givers that are in the heavens shall be revealed with these two as
 
 “Then immediately at the time when [ ... ... ] the pearl divers know it, they shall [ ... ] and they [ ... d]own to those places and they bring pearls up from the depths of the sea, and each pearl diver finds according to the fortune that is [ordai]ned for him. The pearl divers shall [gi]ve them to the traders, and the traders give them to the kings and the nobles.
 
-“[The] booty that shall be seized is like the dr[op of r]ainwater, while the apostles are like the divers. The traders are the light-givers of the heavens; the kings and no[b]les are the aeons of greatness.
-
 “Fo[r a]ll the souls that ascend in the flesh of mankind and are freed shall be brought back to the great aeons of light. A place of rest comes about for them, at that place in the aeons of greatness.
 
 **Temporal observations:**
-- ¶1: Narrative scene-setting with ‘once again it happened’ and ‘the apostle… sitting among a great gathering’—a hagiographic container, not impersonal teaching.
-- ¶2: Institutional category ‘elect’ and virtue-description (‘commandments… holy righteousness… truthfulness’) in ethical register; no cosmological mechanism.
-- ¶3: Continues anecdotal story of the crowd mocking and the elect’s response; narrative reportage typical of the chapter frame.
-- ¶4: Hagiographic action around ‘the glorious one’ embracing/kissing the elect; manuscript page marker; not systematic teaching.
-- ¶5: Speech-introduction ‘He says to them:’ functioning as dialogue apparatus.
-- ¶6: Ends with explicit ‘For the saviour says: … their angel sees the face of the Father daily’—Gospel/NT entry vector; whole paragraph functions as moral admonition framed by that citation.
-- ¶7: Audience reaction and stage directions (‘all heard… they sat… disciples stand’)—editorial narrative linkage.
-- ¶8: Formal disciple request ‘Tell us, our master…’—Q&A frame initiating the teaching unit.
-- ¶9: Underlying text is impersonal technical exposition about pearl formation (system-process voice). The only clear late element is the dialogue attribution.
-- ¶10: Sustained, impersonal causal account (‘shall… formed… breaks… separates…’) without citation or institutional vocabulary—fits oldest systematic teaching style.
-- ¶11: Numbered/quantifying pattern (‘two… three… five’) within a mechanistic exposition; no frame markers.
-- ¶12: Continues the same technical ‘how it works’ register; no hagiographic apparatus or NT citation.
-- ¶13: Didactic summation of the process; still impersonal/structural (chain of generation) rather than institutional exhortation.
-- ¶14: Parable-mechanics in an impersonal iterative style (‘they shall…’), setting up later cosmological decoding; no church categories yet.
-- ¶15: Explicit institutional application ‘This is also what the holy church is like’—an editorial extension mapping the parable onto the community/church; per rule, entire paragraph is late even though it mimics teaching syntax.
-- ¶16: Systematic correspondential decoding into cosmic entities (‘light-givers of the heavens’, ‘aeons of greatness’). ‘apostles’ is a potential layer-2 term, but here functions within the parable’s role-mapping rather than a dialogue frame; retained as core with some uncertainty.
-- ¶17: Cosmological soteriology in impersonal future/passive voice (‘shall be brought back’), oriented to aeons of Light; no citations or institutional rules.
-- ¶18: Direct exhortation to the audience (‘You too, my beloved ones, struggle…’) with salvation encouragement; community-directed paraenesis rather than cosmological exposition.
+- ¶1: Hagiographic scene-setting: "once again it happened", "the apostle", congregational officials. Narrative apparatus rather than teaching.
+- ¶2: Continues the biographical/narrative setup about an elect and his righteousness; institutional vocabulary (elect, commandments) but still within story-frame voice.
+- ¶3: Crowd reaction narrative (mocking, scoffing). No systematic cosmological exposition; functions as exemplum in the frame.
+- ¶4: Hagiographic staging: the "glorious one" rises, embraces/kisses the elect; page marker. Editorial story-layer.
+- ¶5: Speech-introduction formula "He says to them:" embedded in the narrative; dialogue frame, not teaching itself.
+- ¶6: Moral/pastoral reprimand culminates in explicit Gospel-entry formula: "For the saviour says:" with a saying keyed to Matthew (NT vector). Under the rules, NT-citation paragraphs are OVERLAY regardless of internal moral/correspondential quality.
+- ¶7: Narrative transition showing the audience hearing and settling; disciple staging. Frame continuation.
+- ¶8: Disciple question/request formula "Tell us, our master"—classic Kephalaia dialogue apparatus.
+- ¶9: After stripping the attribution, the remaining text is impersonal process-description (how pearls form) without institutional application or NT citation—fits the older expository teaching register.
+- ¶10: Continuous mechanical exposition (process logic, stages, transformations). No audience exhortation and no cosmos→institution pointing.
+- ¶11: Numbered/quantified variation within a natural process; impersonal instructional voice consistent with older systematic teaching.
+- ¶12: Further causal specification of formation; still descriptive rather than applicative; no institutional targets.
+- ¶13: Summative teaching closure within the same expository register; first-person pedagogy but not exhortation/polemic, and still confined to process within the natural/correspondential model.
+- ¶14: Still within the parable’s internal economy (divers→traders→kings/nobles) without explicit identification with contemporary offices; functions as the self-contained parabolic system prior to institutional application.
+- ¶15: Explicit editorial/application pivot: "This is also what the holy church is like" maps the parable onto an institution (cosmos/parable → church). Under the core-diagnostic, this is POINTING-AT, not BEING.
+- ¶16: Continues the institutional allegory: "apostles" as divers and didactic identifications. Even though "light-givers" and "aeons" are cosmic, the mapping explicitly crosses into ecclesial present; therefore the whole paragraph is application-layer.
+- ¶17: Returns to intra-cosmic soteriology (souls’ ascent → aeons of Light/Greatness) stated as mechanism/outcome, not as instruction to an audience or institutional rule.
+- ¶18: Direct address and imperative exhortation ("You too, my beloved ones, struggle...") aiming at audience behavior and salvation outcome—classic application voice.
 
 ---
 
 ## Chapter 84
 ### Concerning Wisdom; it is far superior when on the Tongue than in the Heart of the Person.
 
-*The chapter is dominated by a didactic, impersonal teaching sequence built from two systematic analogies (child birth; fire hidden in wood) and their application to wisdom-as-spoken vs wisdom-silent. The strongest late material is the dialogue frame (disciple/apostle attributions) and the formulaic closing; there is no NT citation overlay and essentially no institutional/pastoral regulation. Several paragraphs are pure analogy/application and can stand as core once dialogue attributions are stripped.*
+*This chapter is largely a non-institutional, non-NT correspondential teaching built from two natural analogies (birth; fire in wood) to explain why wisdom increases when uttered. The main later layer present is the Kephalaia dialogue frame (disciples questioning, apostle-attribution, and formulaic closing). No clear editorial seam extending the cosmological system into church-institutional identifications appears here; the teaching stays at the level of correspondential pedagogy and anthropology (including the category of “Mind”).*
 
-Behold, when a person will be taught wise wisdom in his heart, and he seals it in his doctrine, so shall you find him rejoicing greatly about it. However, [sh]all his [ ... ... ] to him, more th[an] when he may pro-c[laim ... ] and utter it. ⟨p.205⟩ He shall be enlightened by it, and [t]hat [wisdom] shall shine forth the more in him. It is un-veil[ed be]fore him, and through it he assumes power and truth.
-
-I understand [ ... ] that this word I have uttered is correct. I know that the wis-dom I have been taught is spread through my heart and perfected in my soul. (However), it is not found like the splendour in me, so that I regard it [ad]vanced, except when I shall proclaim it by my mouth and utter it to others. Indeed, when I proclaim it, I am giving it to the ears [of] others to hear. Would I do these same things, even if I had never heard it in [my] days of being? Would I desire greatly and my heart be drawn to the wis-dom I now proclaim? [I entreat y]ou, my master, that you might instruct me as to [w/hy] this wisdom becomes more advanced when I proclaim it, than when it is sealed in my heart.
-
-Well [do] you ask! And great is this lesson for which you have sought, [that is] whence comes my great joy, on account of this wis-dom that I utter? [ ... ] it is superior in my mouth when I proclaim it than when it is set in m[y heart]. You yourself rejoice in it; and the other one who hears it from you, he shall rejoice in it, and be enlightened [by] it and receive thereby permanent strength.
+And great is this lesson for which you have sought, [that is] whence comes my great joy, on account of this wisdom that I utter? [ ... ] it is superior in my mouth when I proclaim it than when it is set in m[y heart]. You yourself rejoice in it; and the other one who hears it from you, he shall rejoice in it, and be enlightened [by] it and receive thereby permanent strength.
 
 For like this matter, just so a small b[o]y who is conceived in the belly of his mother. He [ ... he] turns in his mother's womb, filling her womb. The mother knows and understands that this child she conceives is alive within her. She rejoices over him until [the tim]e when she gives birth. And he comes from her alive with his [limbs whole] and perfect in beauty, without defect, ⟨p.206⟩ [in] the living open air that is more sp[ac]ious than the first air he was in. He fills his eyes with the light and speaks with his living voice in the way of they who are born.
 
@@ -3435,80 +3337,68 @@ Just like the light of [the fire, which I] proclaim[ed] to you, that shall come 
 This is also the case with the wisdom, when it will be pro-claimed. The person, in whom is the [Mi]nd, of him is the wisdom. Whenever he may hear it, he shall receive it in to him; but the one who has no Mind in him is a stranger to it. He neither receives it in to him, nor shall he listen to [it].
 
 **Temporal observations:**
-- ¶1: Clear dialogue-frame attribution (disciple, apostle, entreaty) is later compilation framing; the remaining content is impersonal teaching about how wisdom functions (sealed in heart vs proclaimed), matching core expository voice.
-- ¶2: The paragraph is cast as a disciple’s question to the apostle (frame), but most of the language is conceptual exposition about wisdom’s increase through proclamation; no institutional regulation or NT citation.
-- ¶3: Apostle-attribution is a late frame marker; the rest is generalized teaching (effects on speaker and hearer) in an expository mode.
-- ¶4: Impersonal, self-contained analogy with no hagiographic attribution or institutional vocabulary; functions as a core teaching exemplum.
-- ¶5: Continuation of the analogy in an explanatory, comparative register (‘not so… as when…’; ‘a hundred times greater’), typical of the older didactic layer.
-- ¶6: Pure analogy-development; no frame formulas; consistent impersonal explanatory style.
-- ¶7: Direct correspondential application (simile → wisdom) in a generalized voice; no NT citation or ecclesial graft.
-- ¶8: Core didactic ‘how it works’ explanation (increase/doubling through manifestation to hearers), without frame or institutional content.
-- ¶9: Second analogy (fire hidden in wood) presented as an impersonal mechanism of concealment/manifestation, matching core explanatory style.
-- ¶10: Explicit mapping of analogy to wisdom (hidden light/glory → displayed to eyes/ears). No frame, no NT overlay.
-- ¶11: Dialogue re-entry (‘for a second time this disciple speaks to the apostle’) is a compilation device to structure the chapter’s two-part teaching.
-- ¶12: Direct apostle-attribution and promise to ‘teach you with clarity’ functions as narrative hinge rather than substantive teaching.
-- ¶13: Impersonal extension of the child-analogy to reception/rejection by insiders vs strangers; no institutional categories (elect/catechumen) and no NT exempla.
-- ¶14: Generalized ‘teacher’ language but still non-institutional; continues the analogy-application pattern typical of core didactic material.
-- ¶15: Analogy sharpened (seeing vs blindness) without Gospel citation; remains within the chapter’s core exemplum set.
-- ¶16: Cosmological-anthropological diagnostic (‘Mind’ as an inner faculty determining receptivity) is characteristic of older structural teaching; no frame markers or NT overlay.
-- ¶17: Formulaic closing response (rejoicing, persuasion, obeisance, sitting) is hagiographic/narrative wrap typical of the Kephalaia compilation frame.
+- ¶1: Strong dialogue/frame markers: “Once again… one of the disciples stood up… questioned… I entreat you, my master”. The whole paragraph functions as a framed question rather than impersonal systematic exposition.
+- ¶2: Continues the framed disciple-address to “the apostle” with entreaty formulae; Q&A apparatus is characteristic of the later compilation frame.
+- ¶3: Core-like teaching content (impersonal principle about proclamation strengthening wisdom) is embedded inside explicit apostle-attribution, indicating a framed transmission rather than pure substrate.
+- ¶4: Impersonal correspondential simile (natural process described as a mapping-resource) without institutional/NT signals; no frame formulas inside the paragraph.
+- ¶5: Continues the simile with comparative intensification; still teaching-by-correspondence rather than church discipline, despite a faintly homiletic tone.
+- ¶6: Natural-image elaboration preparing the correspondence (hidden/manifest; womb/air; unseen/seen). No editorial anchoring to contemporary institutions.
+- ¶7: Explicit correspondence statement (wisdom-in-heart ↔ conceived child; uttered/manifest ↔ birth/seen beauty). Though applied to the person, it remains an internal microcosm-style mapping, not an institutional identification.
+- ¶8: Teaching continues in the same analogical register (increase/glory through manifestation to eyes/ears). Mild second-person language occurs but without pastoral imperatives or church regulations.
+- ¶9: Second correspondential analogy (hidden fire in wood ↔ hidden wisdom in heart; manifestation produces light for a multitude). Stays within natural-image mechanics rather than citing authorities.
+- ¶10: Explicit interpretive mapping of the fire-analogy; impersonal causal structure (hidden → not displayed; proclaimed → displayed).
+- ¶11: Dialogue apparatus reappears (“Once again… this disciple speaks to the apostle”) introducing the second question; functions as frame rather than substrate exposition.
+- ¶12: Apostle-attribution and promise-to-explain (“I will persuade you… teach you…”)—a transitional frame sentence.
+- ¶13: Correspondential extension: receptivity/non-receptivity is mapped through kin/stranger relations to the child. No explicit sect/church identification is made; remains generic typology.
+- ¶14: Applies the kin/stranger correspondence directly to wisdom and hearing. “Teacher” here remains generic (not ecclesial offices), so it does not cross into institutional pastoral layer.
+- ¶15: Natural correspondence (light visible to seeing; invisible to the blind) setting up the spiritual discrimination without NT citation.
+- ¶16: Manichaean-anthropological criterion (“Mind” as an inner principle) governs reception; still presented as an impersonal mechanism of likeness/strangeness rather than moral exhortation or church rule.
+- ¶17: Formulaic closing reaction (“rejoiced… made obeisance and sat down”), matching the chapter-level ‘formulaic closing’ feature; hagiographic framing rather than teaching substance.
 
 ---
 
 ## Chapter 85
 ### Concerning the Cross of Light: [...] trample upon it.
 
-*Core teaching is present but heavily wrapped in dialogue frame and then extended into institutional/pastoral material (mission travel, alms logistics, church discipline). A clear Christian overlay appears with an explicit ‘saviour’ saying (Mt 6). The oldest layer here is the impersonal, analogical explanation that trampling the Cross of Light/living soul is not reckoned as sin when done for healing/liberation, illustrated through the doctor analogy; later hands embed this in Mani-apostle dialogue and expand into church/alms discipline (editorial fatigue in the second half matches this).*
+*This chapter is dominated by later pastoral/institutional application (elect/catechumens, alms, mission travel) wrapped in a dialogue frame, with clear second-half editorial drift. The oldest recoverable teaching substrate here is a compact correspondential-analogical unit: the Living Soul/Cross of Light is explained through the medical image of a doctor who causes temporary pain to bring healing. A Gospel citation is appended as Christian overlay.*
 
-Now, when you walk on [your] way about some godly matter, as your commanding superior sends you, you do no sin therein. For you are not walking there about some lustful matter, nor concerning [... ...] of advantage, wherein is sin; but you make your walkway due to the work of God, as you hasten [... not] because of your own desire.
-
-Indeed, I, I tell you with a great voice: Every elect and righteous person who walks on a path due to the work of God, and though walking upon the earth and though treading with the soles of his feet on the Cross of Light, he does no sin therein. Rather, a crown and palm-branch is his entire path; because he walks not by his own desire, nor hastens about an acquisition and worthless things, as he tramples upon the earth and the Cross of Light.
-
-However, the other person who hastens on the path because of his own lust and [...] of his body, as he [...] his own about an acquisition and [...] things [...]—a total sin is the walkway of that person, walking on the path of sin and error.
-
-[...] behold, I have told you: Any one who, if his teacher will send him, goes on a path about some godly matter, a total victory is his path. Still, you also recounted this: “I trample upon the earth and the Cross of Light, I oppress with my [sole].” As you say: “Perhaps I have therein sin because of [the de]ed.”
-
-Again, do not be afraid even with this; because the living soul is like this. As a person, ⟨p.210⟩ if a disease will take hold of his limbs, and his heart [is sl]ow, his soul distressed, and he has pain in his disease. He seeks after a doctor to cure him, to make him strong of heart. And he cures, attends to, and gives him health [from] the disease that has risen up against him. So he thinks about this.
+because the Living Soul is like this. As a person, ⟨p.210⟩ if a disease will take hold of his limbs, and his heart [is sl]ow, his soul distressed, and he has pain in his disease. He seeks after a doctor to cure him, to make him strong of heart. And he cures, attends to, and gives him health [from] the disease that has risen up against him. So he thinks about this.
 
 [And] a wise person comes, knowing the formulas proper to a skilled doctor. If he shall achieve a healing of the one whom he [... ...] it, he recites over him the formulas that he knows, and he even tramples with his foot upon all his limbs! That person, who is ill, knows that this person is trampling upon him so that he might achieve a healing; rather, not doing this to him out of some enmity he had against him beforehand. Instead, all that he does, he does to him that he might make a healing of his body. And he expels [the] disease and the pain, trampling upon him to occasion this benefit. That person, who is ill, he can bear no anger nor hatred against this doctor, who tramples upon him. He can not hate him out of enmity, because he knows that he does this to him to his benefit.
 
 However, should someone come and trample upon him in enmity; he may hate, prevent and not permit him! For he knows that he tramples upon him in enmity; and as he strikes out of a wanton whim, he piles another illness upon his disease.
 
-Rather, the word that wounds is this: should a person utter a saying for the sake of the murder of a person, or the murder of animals, or for [the sake of] the murder of trees and the Cross of Light, the lying word and the wrathful and the bitter, or a word of envy and [...] only, or a word of accusation, which someone will spread against his brother; this is the [wor]d that wounds [...]. Should the person utter it, it befits [si]n; because [he has br]ought forth from it the demons [...] concerning this [...] the righteous person, or [...] all of them, which I have proclaimed, in order that [...] his word to the fetter; because anyone who would [...] his word to the fetter. And again, he [...] his coming forth, they will bind him in the place wherein he has bound his [...].
+Again, this too is the case with the Living Soul; whether in the earth, or in the Cross of Light. Should you walk along upon it on the path, should you trample the Cross, it may take no reckoning against you in anger nor wrath. For it knows that [you] walk upon it for relief and healing, to proclaim on its behalf. [You] walk because of it, to reveal its mysteries. Also, the distress of the bones, which you have oppressed, befits not sin, but is set towards the victory.
 
 [He is li]ke this, a wise doctor who might turn back [... ...] his disease. As a wound is in his body, he cuts [...] this person who is ill, in his wisdom, [...] he [...] this wound, and he cuts it. After these things [...] and he places the soluble drugs upon it, so that [they will be able to diss]olve. He might incise it with the iron, and he casts it out ⟨p.212⟩ [f]rom him, with the soluble drugs. And the wound is purified [fr]om the fever. After these events, he shall place the soothing drugs [...] and it heals up. That person, who is ill, he shall give [...] but he shall not [...] he [shall not] generate anger in his heart against him; because he knows that he is making the aspect of his benefit and his healing. After the cut that he may make, and the cauterizing that he may do there, he shall even give rewards to the doctor! He gives his thanks and is a friend to him his whole life through.
 
 **Temporal observations:**
-- ¶1: Dialogue frame and situational setup (‘disciple questioned the apostle’, ‘my master’, ‘in the congregation of the church’). Not impersonal cosmological exposition; functions as narrative container.
-- ¶2: Institutional logistics (superior, teacher, foreign brethren, alms brought to church) dominate; this is church-operational concern rather than systematic cosmology.
-- ¶3: Core ethical-cosmological principle (intent/purpose determines whether ‘trampling’ accrues sin) appears in an impersonal explanatory mode, but embedded within apostolic dialogue markers → mixed.
-- ¶4: Direct expository maxim about Cross of Light and intentionality; no citation formula or institutional regulation mechanics beyond the category ‘elect’, which here functions as a descriptive type within the teaching.
-- ¶5: Antithetical structural teaching (two kinds of ‘path’/intent). Impersonal moral-cosmic causality rather than church administration.
-- ¶6: Continues the same didactic sequence about ‘victory’ vs ‘sin’ in relation to trampling; despite ‘teacher’ language, it functions inside the teaching logic, not as rule-making.
-- ¶7: Impersonal analogical teaching: Living Soul + healing model. No dialogue wrapper; introduces a systematic analogy typical of older explanatory strata.
-- ¶8: Extended process-analogy explaining ‘pain inflicted for healing’—a mechanistic justification, not institutional exhortation or citation.
-- ¶9: Completes the analogy by contrasting benevolent vs hostile trampling; coherent within the same older explanatory unit.
-- ¶10: Although much of the paragraph continues the core analogy (‘living soul… Cross of Light… healing’), it explicitly introduces a Gospel-derived saying with citation formula ‘As the saviour has said…’ (Mt 6). By entry-vector rule, this paragraph’s language entered via NT overlay.
-- ¶11: Returns to institutional scenario (‘teacher… foreign brethren… speak about the alms’) and provides reassurance about speaking for alms—church-operational concern.
-- ¶12: Impersonal causal teaching about speech as a wounding act that produces demons and binding (‘fetter’). Despite ethical content, it is mechanistic/cosmological (demonic production, binding reciprocity) rather than mere discipline.
-- ¶13: Institutional/alms justification (‘word for the release of the soul… speaks to the need of the alms’) framed to authorize alms-asking; reads as church-practice application.
-- ¶14: Second medical analogy elaboration; procedural, explanatory voice; no explicit church offices or NT citation.
-- ¶15: Editorial application of the doctor analogy to alms logistics and church purification (‘elect… encourages alms-giving… bringing it to the church… purified in the image of the saints’). This is institutional extension, consistent with chapter’s fatigue drift.
-- ¶16: Explicit holy-church establishment plus ascetic program list (prayer, self-control, withdrawal, lashings, chains). Institutional/disciplinary material; also shows Christian/monastic register.
-- ¶17: Direct communal command (‘I command you, my brothers and my limbs’), catechumens, eating regulations—clear pastoral discipline.
-- ¶18: Dialogue attribution and concluding reassurance (‘Then speaks the apostle…’). Pure framing closure of the exchange.
-- ¶19: Formulaic response of the disciple (rejoicing, thanks, persuasion) typical of hagiographic/dialogue closure.
+- ¶1: Dialogue-question frame (“Once again… disciple… apostle… my master”) plus congregational setting; functions as editorial setup for a practical concern rather than impersonal cosmological exposition.
+- ¶2: Institutional logistics (superior, teacher, foreign brethren, alms, church) and first-person anxiety about sin while travelling; application-voice dominates.
+- ¶3: Contains a brief dialogue-attribution and then practical reassurance about travel “due to the work of God”; the whole paragraph is audience-directed application rather than system-description.
+- ¶4: Normative rule for “Every elect and righteous person” with reward imagery (crown, palm-branch); explicitly institutional category (elect) and behavioral casuistry.
+- ¶5: Moral contrast case (lust/acquisition → “total sin”); ethical exhortation without cosmological mechanism.
+- ¶6: Continues casuistic reassurance tied to obedience to a teacher; still second-person application rather than impersonal cosmological mapping.
+- ¶7: Older analogical teaching emerges (“Living Soul” explained through the sickness/doctor image). The removed clause is direct pastoral reassurance; the remaining unit reads as a general correspondential analogy rather than church instruction.
+- ¶8: Self-contained correspondential exemplum (doctor inflicts pain → healing) without institutional markers; functions as substrate-style explanatory analogy rather than rule-making.
+- ¶9: Completes the analogy by contrasting hostile trampling with healing trampling; still general and non-institutional.
+- ¶10: Core mechanism is stated cosmologically (the Living Soul/Cross of Light ‘takes no reckoning’ when trampling serves liberation/revelation). The explicit ‘saviour’ citation is later NT overlay.
+- ¶11: Returns to institutional scenario (teacher/foreign brethren/alms) with direct reassurance and casuistry; late operational concern.
+- ¶12: Ethical catalog of “words that wound” (murder, accusation, envy) framed as behavioral sin; although demons/fetter language appears, the paragraph primarily applies moral discipline to community life rather than expounding a systematic cosmic mapping.
+- ¶13: Explicitly about alms-speech as ‘release of the soul’ and ‘gathering in’; application to alms practice.
+- ¶14: A second, fuller medical exemplum (incision/cautery/drugs) continuing the same analogical substrate; no church offices/categories appear inside the exemplum itself.
+- ¶15: Explicit institutional identification of the analogy (doctor = elect; alms to church; purification ‘in the image of the saints’) plus practical digestion-toil motif; late church practice and soteriology-institution linkage.
+- ¶16: Seam-like extension into ‘holy church’ and ascetic disciplines (prayer, self-control, withdrawal, chains); strong institutional/disciplinary register consistent with late editorial fatigue.
+- ¶17: Direct imperative address (“I command you, my brothers and my limbs”) with catechumen/eating rules; classic pastoral discipline layer.
+- ¶18: Dialogue attribution + summary reassurance (“Then speaks the apostle… You have no sin”): closing frame line.
+- ¶19: Formulaic closing response (rejoicing/thanks to ‘my master’); hagiographic closure rather than teaching.
 
 ---
 
 ## Chapter 86
 ### The Chapter of the Man who asks: Why [am] I sometimes at peace, and troubled at other times?
 
-*The chapter is a framed Q&A. The oldest layer is the impersonal, process-oriented explanation of alternating peace/disturbance via (a) the Light Mind’s purification, (b) astral/birth-sign influences via ‘roots’ and ‘conduits’, and (c) mixed nourishment (food/water) carrying ‘difficult/bothersome parts’ that join with the body’s wicked parts/Sin, versus purer nourishment strengthened by ‘justified souls’ present within it. Paragraphs 1,5,12 are explicit hagiographic frame; paragraph 6 is a seam where a dialogue attribution (‘the apostle speaks’) wraps otherwise core teaching, so it is MIXED.*
-
-Sometimes [I] am peaceful in my heart, as my consideration [is constructive], and all my doctrines are ordered and in place. I conduct [ ... ] my works, as I utter my words to all people with sweetness. I am peaceful of heart in the gladness of the Mind. ⟨p.214⟩ Even my body is carefree, and my soul [rejo]ices in wisdom and true knowledge.
-
-There are also times when I shall be troubled. My doctrines are confused. Gloom increases with them, and grief and anger and envy and lust. I am troubled, struggling with all my might that I would subdue them; not finding the strength of mind to subdue them at that hour nor day when they surged up in me. And all these evil teachings and wicked considerations come forth. They have tormented me. I do not comprehend, because there is no single shape in all these counsels that have entered me. Are they revealed to me, or indeed did they enter me from outside and have been shaken into me? I do not know if they have wakened within me alone, have rebelled inside me and set themselves up against me. I do not know about that. However, this only I understand: that I shall be very badly confused in all my doctrines. I shall do [ ... ] in my works, and you find my word is worthless in my mouth. I shall not find how [ ... ], and I become a source of trouble and confusion for my brothers. Even my body rises up against me, and sickens for that entire day.
+*The chapter is built as a framed dialogue (disciple question + closing praise) around a substantial cosmological-psychological mechanism: the Light Mind’s purification, stellar/birth-sign disturbances via “roots/conduits,” and food/water as mixed substances that can transmit troubling or tranquil parts. One paragraph (¶4) is clearly institutional/pastoral (fasting, prayers, psalms). Several explanatory seams (“Then the apostle…”, “Behold, I have explained…”) are later frame wrappers around older, system-internal teaching.*
 
 Well do you ask about this lesson. Behold, I will explain it to you! ⟨p.215⟩ Understand this: The soul that assumes the body, when the Light Mind will come to it, shall be purified by the power of wisdom and obedience, and it is cleansed and made a new man. There is no trouble in (the soul), nor confusion nor disturbance.
 
@@ -3516,224 +3406,167 @@ However, when a disturbance will arise for him and he will be troubled, this dis
 
 Again, there are times you shall find the powers of heaven are peaceful and tranquil for him, and it comes to [ ... ] a difficult part comes into him by the nourishment that he has eaten, or else indeed in some [ ... ] or in the water that they have drunk. Again, trouble and confusion and anger will increase in him, and lust multiplies upon him together with depression and grief; because of the nourishment of the bread he has eaten and the water he has drunk, which are full of bothersome parts, a vengeful counsel. They shall enter his body, [mixed in] with these foods, and they even become joined in with the wicked parts of the body and the sin that is in him; transferring the anger and the lust and the depression and the grief, these wicked thoughts of the body.
 
+that should you be troubled [ ... ... ] them through the conduits and the roots of they above [ ... ... ] the flood that comes into you.
+
 There are times, however, if you shall find that the nourishment that comes into you is pure [ ... ... ], so it is greater in light and life while the waste is less in it, and the evil-doing is diminished from it. Even the atmosphere above is still, being purified through the [ ... ... ] also the image is calmed from [ ... ... ] increases in you through ⟨p.216⟩ those good parts of the food that come into you. And they find you at ease and tranquil, as you are well governed in your abodes because of the living part, which is greater on account of the light of these justified souls that are in it. The ones that have perfected their deeds. Their dues have ceased, while their soul is carefree [ ... ] they have been allied with these living souls that [are p]resent in you. Due to this you shall find them in you, calm in tranquillity, and they come from you without trouble; and you are found flourishing of body. Even your deeds are determined, being well constructed after their manner, and your doctrines are in order, as your words [ ... ] your soul is carefree within you, ascending like a bird.
 
-Behold, I have explained to you the determination of this lesson for which you asked: Whence come these bad counsels and considerations into you, these vengeful thoughts that trouble; and also whence come into you these good counsels and sweet doctrines, when your Mind is calmed for you. I have told you that when [your bo]dy is troubled, you shall be troubled by the conduits of they below, the difficult parts that come into you by food and the act of eating. Again, when the conduits above are calmed from you, even your food that has come into you is clear and pure. Your heart shall be found ordered in its place, your counsels at peace from disturbance.
+I have told you that when [your bo]dy is troubled, you shall be troubled by the conduits of they below, the difficult parts that come into you by food and the act of eating. Again, when the conduits above are calmed from you, even your food that has come into you is clear and pure. Your heart shall be found ordered in its place, your counsels at peace from disturbance.
 
 **Temporal observations:**
-- ¶1: Pure dialogue-frame solicitation (‘Once again… I beseech you, my master’); no cosmological mechanism.
-- ¶2: Phenomenology of inner states anchored in ‘the Mind’ (not Gospel citation, not institutional rule); expository voice describing ordered doctrines/heart-peace.
-- ¶3: Continues the same experiential diagnostic register; no church-institution prescriptions, no citations; sets up causal inquiry about ‘outside’ vs ‘inside’ perturbations.
-- ¶4: Institutional piety bundle (fasting, praying, reciting psalms) in exhortational/devotional mode without cosmological mechanism; reads like community practice overlaying the peace-state description.
-- ¶5: Second-person petition to the master to ‘persuade/explain’; transitional frame.
-- ¶6: Core mechanism begins (Light Mind purifies the embodied soul; ‘new man’; impersonal instructional ‘Understand this’). The ‘apostle’ speech tag is later framing.
-- ¶7: Systemic astral causation (birth-signs, difficult stars, powers of heaven, ‘roots’ attachment) explaining influx of disturbance—classic cosmological-process exposition.
-- ¶8: Light/Dark mixture mechanics applied to nourishment; ‘bothersome parts’ entering with food/water and joining with body’s wicked parts and Sin (as an indwelling force). No NT or church rules; explanatory causal chain.
-- ¶9: Summative ‘Now, behold, I have explained…’ with damaged text; functions as didactic wrap-up/transition rather than adding new cosmological mapping.
-- ¶10: Process explanation of purity in nourishment (more Light/Life, less waste/evil-doing) and the role of ‘justified souls’ present in nourishment (transmigration logic); still mechanistic, not prescriptive institutional regulation.
-- ¶11: Concluding synthesis in the same technical register (‘conduits below/above’, difficult parts via eating); recapitulates the causal model rather than praising/biography.
-- ¶12: Formulaic closing rejoicing/praise of the ‘apostle’ and affirmation of belief—hagiographic compilation frame.
+- ¶1: Formulaic dialogue frame (“Once again…disciple…our enlightener… I beseech you”). Pure hagiographic container.
+- ¶2: First-person disciple speech setting up the question; subjective self-report rather than impersonal cosmological mechanism. Functions as dialogue apparatus rather than substrate exposition.
+- ¶3: Continuation of the disciple’s self-report (confusion, passions, ‘my brothers’). Still part of the dramatic question-setting voice, not system description.
+- ¶4: Institutional piety vocabulary (fasting, praying, recite psalms) and moral self-description; this is lived practice application rather than cosmos→cosmos mapping.
+- ¶5: Beseeching/request formula concluding the disciple’s question—editorial dialogue scaffolding.
+- ¶6: Core mechanism (Light Mind purification; transformation into ‘new man’; absence of disturbance) wrapped in a later dialogue-attribution frame marker (“apostle…to the disciple”).
+- ¶7: System-internal causal account (birth-signs, stars, powers of heaven, roots/attachments) explaining psychic disturbance—cosmos→cosmos mapping without institutional address.
+- ¶8: Old correspondential physiology: food/water as mixed carriers of ‘parts/counsels’ that join bodily components and transmit passions. Despite 2nd-person phrasing, the paragraph remains purely mechanistic and within the cosmic anthropology.
+- ¶9: Brief editorial recap marker (“Now, behold…”) introduces a teaching term-cluster (“conduits…roots…flood”) that belongs to the system description; the recap itself is later framing.
+- ¶10: Extended system-internal teaching on ‘pure’ nourishment as light/life-dominant, and on justified souls present in nourishment (transmigration logic). No institutional mapping; causal cosmology throughout.
+- ¶11: A summarizing editorial voice (“Behold, I have explained…”) introduces a compact piece of core mechanism (conduits above/below; food-based influx of difficult parts; resulting psychic order).
+- ¶12: Formulaic closing praise and glorification of the ‘apostle’; typical hagiographic conclusion.
 
 ---
 
 ## Chapter 87
 ### Concerning the Alms, that [ ... ] life in the Church.
 
-*The chapter is framed as a congregational scene and then dominated by institutional/almsgiving material about the holy church, elect, and catechumens. The oldest teaching layer appears as (a) a brief parabolic/correspondential image (good earth/gardener/good tree) and (b) a compact cosmological mechanism about the living soul’s ascent through the sun and moon (light-givers) to the Land of Light. Several paragraphs show classic editorial-seam behavior: extending a ‘rest/door/place of rest’ pattern from cosmology into church institutions; these are treated as PASTORAL in full, not MIXED.*
+*This chapter is dominated by institutional/almsgiving material about the holy church, elect/catechumens, and polemic about other sects (PASTORAL), wrapped in a brief hagiographic opening (FRAME). The oldest substrate appears as a self-contained cosmological sequence (¶7–¶10) describing the Living Soul’s ascent through the sun and moon (Light-givers) and the final rest of the Light-givers in the Land of Light. The ‘good earth / good tree’ analogy is explicitly anchored to catechumens/church and therefore functions as editorial application rather than cosmos→cosmos mapping.*
 
-What does the assembly of catechu[me]ns resemble? It is like good earth [ ... ] in which the gardener shall plant a good tree. [Beho]ld, [th]at good tree transforms the power and the [ ... / ... ] of all earth, and it produces good fruit. [Th]at [gardener] sets at ease the tree of life, and he r[ests himself].
+Likewise this [liv]ing Sou[l] that today is set in mixture; for it wishes to [as]cend and go to the house of its people, but it kn[ow[s a]nd understands that it has no open door in all the powers of heaven and earth. For they are its oppression that [ ... ] it everywhere. Indeed, it has no open door except the sun and the moon themselves, the Light-givers of the heavens [ ... / ... ] they become the place of rest for it. And they become a door that opens for it [in] the coming forth, and (the soul) comes out through them to the country of the household of i[ts] people.
 
-Likewise this [liv]ing sou[l] that today is set in mixture; for it wishes to [as]cend and go to the house of its people, but it kn[ow[s a]nd understands that it has no open door in all the powers of heaven and earth. For they are its oppression that [ ... ] it everywhere. Indeed, it has no open door except the sun and the moon themselves, the light-givers of the heavens [ ... / ... ] they become the place of rest for it. And they become a door that opens for it [in] the coming forth, and (the soul) comes out through them to the country of the household of i[ts] people.
+Again, further in, also the Light-givers of the heavens have no place of rest amongst all the powers of heaven; except for the Lan[d] of Light, that has indeed been theirs for ever.
 
-Again, further in, also the light-givers of the heavens have no place of rest amongst all the powers of heaven; except for the lan[d] of light, that has indeed been theirs for ever.
+So, thus the Living Soul is purified of all afflictions; and they provide a rest for it, and open a door that opens to the house [of] its people.
 
-So, thus the living soul is purified of all afflictions; and they provide a rest for it, and open a door that opens to the house [of] its people.
-
-Also, it is the case that the land of lig[ht] will become the final receiver for the light-givers of [the] heavens, and they will rest themselves therein and rule in it [for] ever.
+Also, it is the case that the Lan[d] of Lig[ht] will become the final receiver for the Light-givers of [the] heavens, and they will rest themselves therein and rule in it [for] ever.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic opening scene (‘Once again… enlightener… disciples’), a compilation frame marker.
-- ¶2: Institutional comparison of ‘sects’, alms, and the ‘holy church’ with catechumens; explanatory-apologetic church polemic. Seam-flagged institutional extension; no recoverable pre-institutional core.
-- ¶3: Defines the holy church ‘in two forms: brothers and sisters’ and describes alms being redeemed through it—church-structural/institutional language.
-- ¶4: Seam-flagged: ‘place of rest/doorway/conveyance’ applied to the holy church and its dependence on catechumens—an institutional graft using cosmological-sounding transport/rest vocabulary.
-- ¶5: Parabolic correspondential teaching in impersonal explanatory mode (image of earth/tree/fruit/rest) without citation formulae. Although the question mentions ‘catechumens’ (institutional term), the paragraph’s substance is a self-contained teaching image; retained as core with caution.
-- ¶6: Seam-flagged institutional application of the preceding parable to ‘the [holy] church’ and catechumens (‘This too is the case with the [holy] chu[rch]…’). Pattern-mimicry extension; entire paragraph treated as pastoral per seam rule.
-- ¶7: Clear cosmological mechanics (mixture; ascent; ‘powers of heaven and earth’; sun and moon as ‘light-givers’ functioning as door/rest). Impersonal process description characteristic of the teaching core.
-- ¶8: Continuation of the same cosmological-rest sequence: systematic ‘rest’ mapping from soul→light-givers→Land of Light; no institutional markers.
-- ¶9: Concluding line of the ascent mechanism (‘purified… rest… door… house of its people’), still in cosmological/process register.
-- ¶10: Eschatological closure of the same mechanism: Land of Light as final receiver; eternal rest/rule—fits core cosmological exposition.
-- ¶11: Seam-flagged return to institutional mapping (‘holy church’ ↔ alms of catechumens) concluding with Land of Light. This is an editorial extension that applies the cosmological ‘rest’ pattern to church structures; entire paragraph is pastoral.
+- ¶1: Formulaic hagiographic scene-setting (‘Once again… The enlightener sat… says to his disciples’), functioning as compilation frame, not teaching.
+- ¶2: Institutional/polemical application: alms in ‘every sect’, ‘their catechumens’, and the ‘holy church’ as the only valid locus; cosmos→community identification dominates (editorial present-world mapping).
+- ¶3: Defines ‘holy church’ ‘in two forms: in the brothers and the sisters’ and treats alms’ redemption via the church—church-institutional register, not cosmological exposition.
+- ¶4: Seam-like continuation stressing catechumens as the church’s ‘place of rest’; institutional dependency logic (church↔catechumens) indicates later ecclesial application, not substrate cosmology.
+- ¶5: Though cast as a correspondence/parable (‘good earth… gardener… good tree… fruit’), the mapping is explicitly to ‘the assembly of catechumens’ (cosmos/nature → contemporary church category), so it functions as editorial application rather than core substrate.
+- ¶6: Explicitly applies the parable to ‘the [holy] church’ and catechumens as its support/rest; this is institutional extension of the analogy (editorial graft).
+- ¶7: Impersonal cosmological mechanics: mixture → ascent; ‘powers of heaven and earth’, sun and moon as ‘door’/‘place of rest’. ‘today’ is a minor deictic, but the mapping stays within cosmic architecture (no church categories).
+- ¶8: System-internal hierarchy: Light-givers vs. powers of heaven; final rest in the Land of Light. Pure cosmos→cosmos statement.
+- ¶9: Summative cosmological soteriology in mechanistic terms (purification/rest/door) without ecclesial application or citation.
+- ¶10: Closes the cosmological chain: Light-givers’ eschatological station in the Land of Light; structural, non-institutional voice.
+- ¶11: Editorial ‘again’ applies the preceding ‘place of rest’ logic to ‘holy church’, ‘alms of the catechumens’, and concludes with both resting in the Land of Light; cosmos is used to validate institutional relationships (church↔catechumens), marking late application.
 
 ---
 
 ## Chapter 88
 ### Concerning the Catechumen who found fault with the Elect: why he is angry.
 
-*Chapter is dominated by dialogue frame and pastoral exhortation about honoring the elect; core material appears mainly where a cosmological mechanism is invoked (foreign body, Flesh of Sin, mystery of the two essences, Cross of Light). The dialogue attributions (‘apostle’, ‘enlightener’) and the moral instruction are later framing/communal pedagogy rather than the oldest systematic teaching layer.*
+*This chapter is largely a pastoral/homiletic rebuke framed as dialogue, applying Manichaean cosmological anthropology to community discipline (catechumen vs. elect). Only brief doctrinal fragments (divine element from the heights; alien body/flesh of Sin; two essences) plausibly preserve older teaching, but they are embedded in institutional address and may already be Mani-era church redaction rather than the oldest substrate.*
 
-This is also the case with the elect. They are gods as they stand firm in the image of the gods. The divinity that is planted in them came to them from the heights and [dw]elt in them.
+“They are gods as they stand firm in the image of the gods. The divinity that is planted in them came to them from the heights and [dw]elt in them.”
 
-Further, when they will be troubled and angry and resentful, [they] curse each other. However, do not you be troubled in your heart. You know, once and for all, they are established in a body that is not their own, hating the Flesh of Sin that makes the other dwell in a foreign land. Due to this they shall be angry, and say and utter hard words to each others' faces.
+“You know, once and for all, they are established in a body that is not their own, hating the flesh of Sin that makes the other dwell in a foreign land.”
 
-For you have known the mystery of the two essences, you have understood that what is good and what is evil dwell in every person. You have also understood that the saints bear a great burden on their shoulders. For you yourself have understood that they carry a great burden, they are established in the body that is not their own.
-
-Your hands are always free to beat the Cross of Light.
-
-For when quarrelling will arise among the saints [ ... ] because the old man too dwells in their body; and due to this they shall take offence [ ... and] they {dispute} with one another.
+“For you have known the mystery of the two essences, you have understood that what is good and what is evil dwell in every person.”
 
 **Temporal observations:**
-- ¶1: Hagiographic narrative setup (‘Once again…’, catechumen before ‘my master, the apostle’) is compilation frame language.
-- ¶2: A catechumen’s complaint and moral evaluation of the ‘righteous’ is part of the constructed dialogue scenario; no systematic cosmological exposition, functions as a rhetorical prompt in the frame.
-- ¶3: Dialogue attribution (‘Then our enlightener speaks…’) is a classic frame marker.
-- ¶4: Extended ethical parable/exhortation (tree, smoke/ash, cultivate) aimed at correcting speech and attitude; lacks the impersonal cosmological mapping typical of the oldest layer and serves catechetical persuasion within the dialogue.
-- ¶5: Contains older cosmological teaching motifs (divinity from the heights implanted/dwelling; elect as image-bearers). Ends with a devotional/commendatory line that looks like later catechetical moralizing.
-- ¶6: Process/mechanism explanation for affect (anger) grounded in cosmology/anthropology (‘body that is not their own’, personified Flesh of Sin, foreign land). Less institutional, more explanatory.
-- ¶7: Core concepts (‘mystery of the two essences’, good/evil co-dwelling; foreign body) embedded in a strongly prescriptive admonition typical of community catechesis.
-- ¶8: Mostly pastoral policing of catechumen behavior and elect–hearer relations; only a small embedded piece of technical cosmological vocabulary (‘Cross of Light’) likely reflects older teaching terminology.
-- ¶9: Pure exhortation to honor/love elect; no cosmological mechanism; reads as community discipline.
-- ¶10: Narrative transition/response with ‘apostle’ attribution and emotional persuasion (‘weeping’)—frame closure device.
-- ¶11: Core anthropological explanation (the ‘old man’ indwelling in the body) embedded in a staged penitential response typical of the dialogue frame.
-
----
-
-## Chapter 89
-### The Chapter of the Nazorean who questions the Teacher
-
-*This chapter is dominated by hagiographic dialogue frame and moral/judicial exhortation. A clear New Testament/Gospel overlay appears in ¶10 (“the saviour has said…” with the treasure/heart saying; Mt 6 in apparatus). The remaining argument about God-as-judge is presented as situational disputation and ethical reasoning rather than systematic cosmological mechanics; no degree-structures, body↔cosmos maps, or named Manichaean cosmic hypostases appear. Thus only a small, impersonal maxim in ¶11 reads like a detachable older teaching aphorism; most other material is frame/pastoral/overlay.*
-
-“The judge is not a man of wickedness, but rather the work counteracts wickedness, limiting the evil. Nevertheless, what you have recounted is that the judge shall go and punish, kill and slay. He acts like this that he might annul the evil and impede the wickedness in the person; and lay it upon the head of the sinner.
-
-“Nevertheless, God has not done anything that is ev[il to] them, rather they to themselves. It is their own deeds that shall con- demn them and cast them in the gehenna of burning.
-
-**Temporal observations:**
-- ¶1: Formulaic narrative setup (“Once again, it happened…”) and hagiographic scene-setting with “apostle” mark editorial frame.
-- ¶2: Dialogue attribution (“The apostle speaks…”) and rhetorical exchange belong to the compilation’s disputation frame rather than impersonal cosmological teaching.
-- ¶3: Question posed within the staged dialogue; “to the apostle” keeps it inside the redactional frame.
-- ¶4: Repeated dialogue tags (“Then says the apostle…”) plus lacunose rhetorical jab; the ‘judge is my God’ thesis is delivered as a scene-line within the frame.
-- ¶5: Continues the narrated disputation with the Nazorean’s objection; situational rhetoric rather than systematic cosmology; still anchored by ‘says to him’ in-scene voice.
-- ¶6: After stripping the speaker tag, the remainder reads like a general, impersonal principle (how judgement functions to limit Evil), detachable from the narrative wrapper. Still not strongly cosmological, so the ‘core’ here is tentative and limited to the maxim-like teaching.
-- ¶7: Imperatival exhortation (“pay attention”) and moral reassurance about not fearing judgement for those who have not sinned; ethical paraenesis without cosmological mechanics.
-- ¶8: Moral-causal argument about Sin returning on the sinner’s head and reward for good deeds; ethical instruction register rather than systematic cosmology.
-- ¶9: Generalized moral dualism (“obey the devil… won over to the truth and the knowledge…”) presented as exhortation; lacks cosmological hierarchy or technical mapping.
-- ¶10: Explicit Gospel/NT entry vector: “Even as the saviour has said” with the treasure/heart saying (Mt 6 in apparatus). Regardless of suitability to Manichaean ethics, this language enters via NT citation.
-- ¶11: Standalone, aphoristic theodicy principle (evil self-incurred; deeds condemn) with no dialogue tags. ‘Gehenna’ is Judaeo-Christian vocabulary, so the dating is uncertain; however the sentence reads like a detachable maxim not dependent on NT citation formula.
-- ¶12: Recompense-for-deeds exhortation (“people of good deeds… recompense…”)—paraenetic and reward-focused; ‘kingdom of light’ here functions as ethical reward language rather than a mapped cosmological station.
-- ¶13: Concluding exhortation/summary (“Behold now…”) in second-person persuasion voice; matches end-of-chapter paraenesis and the chapter’s strong pastoral drift signal.
+- ¶1: Formulaic narrative setup (“Once again… my master, the apostle”) and dialogue staging mark hagiographic/editorial frame.
+- ¶2: Dialogue content serving as the catechumen’s complaint; functions as narrative scaffold rather than impersonal cosmological exposition.
+- ¶3: Speech-attribution formula (“Then our enlightener speaks…”) is a classic compilation frame marker.
+- ¶4: Direct admonition plus an illustrative analogy (tree/smoke) aimed at correcting behavior; application voice (“know and understand… rather…”) and moral-pastoral purpose dominate, not cosmos→cosmos mapping.
+- ¶5: Embedded doctrinal anthropology (divinity ‘from the heights’ dwelling within) suggests older cosmological teaching, but it is grafted into a community category (‘elect’) in the surrounding sentence, indicating later pastoral deployment.
+- ¶6: Causal mechanics of alien embodiment (“body that is not their own… foreign land”) is characteristic of Manichaean cosmology; the paragraph’s opening and closing are pastoral application to intra-community conflict.
+- ¶7: The ‘two essences’ doctrine is a core cosmological axiom, but here it is pressed into pastoral regulation of speech/attitude toward the elect; the paragraph is dominantly application voice.
+- ¶8: Second-person moral accusation and community-teacher rhetoric (sins, conduct, being taught) are pastoral/institutional, even though ‘Cross of Light’ is cosmological vocabulary.
+- ¶9: Pure exhortation toward honoring the elect; direct application voice throughout.
+- ¶10: Narrative transition and reaction report (“Then, when the apostle had uttered…”)—hagiographic framing/closure mechanics.
+- ¶11: Penitential address (“Forgive me my sins”) and moralizing explanation. Phrase “the old man” may echo later Christian/Pauline idiom, but it appears here within a catechetical/pastoral context rather than impersonal cosmological exposition.
 
 ---
 
 ## Chapter 90
 ### Concerning the Fifteen Paths; and whether the Catechumen would have avoided causing his Wealth to go on the Three Paths to Gehenna
 
-*The chapter is dominated by dialogue frame and institutional/catechumen-focused soteriology, with a flagged editorial seam (¶8) and strong pastoral drift in the second half. The oldest recoverable layer appears only in the initial impersonal cosmological schema of the fifteen paths and the three ‘waste’ paths to Gehenna (¶2–3), plus a brief non-institutional summary statement (¶4). The extended catechumen determinism, seals, fasting/alms, and church-election material (¶8–14, 18–19) reads as later pastoral/institutional elaboration, even where it uses cosmological vocabulary (angels, ships, firmaments).*
+*The chapter is dominated by late ecclesial application about catechumens/elect, “the apostle,” seals of faith, and purification of deeds via fasting/alms; this intensifies in the second half (editorial fatigue). The oldest recoverable substrate appears in (a) the cosmological scheme of fifteen paths (four to Life, eight mixed to purification, three to Gehenna) and the three ‘waste’ paths drawn from flesh, and (b) a non-institutional analogy explaining how ‘deeds’ may precede/accompany/follow a person’s ascent. Paragraph 8 is a clear editorial seam extending the scheme into church-election language.*
 
-For we have heard thus from you: ‘Fifteen paths are drawn out in the zone. Four paths are pure and belong [to the] light, leading up to life. Eight other paths are [mixed], leading above from that place. The light shall go [u]p and become free through them; be purified and go in [to the] ships. However, the waste is separated and thrown [dow]n to transmigr[a]tion and the other three paths of [waste ...] discharged to the gehennas’.
+‘Fifteen paths are drawn out in the zone. Four paths are pure and belong [to the] light, leading up to life. Eight other paths are [mixed], leading above from that place. The light shall go [u]p and become free through them; be purified and go in [to the] ships. However, the waste is separated and thrown [dow]n to transmigr[a]tion and the other three paths of [waste ...] discharged to the gehennas’.
 
-You have explained [that the three] paths that belong to waste, the ones that are drawn to the gehennas, [a]re drawn from the fleshes. O[n]e of them is the appetite for [lawl]essness, that of people and of all flesh. The second is the [ ... ] all bodies, which is slaughter, [with] which all flesh is consumed. The third is the damaging action, which [ ... ] the Cross of Light and every body; together with the rest of the error and the blasphemy that wounds the gods.
+[that the three] paths that belong to waste, the ones that are drawn to the gehennas, [a]re drawn from the fleshes. O[n]e of them is the appetite for [lawl]essness, that of people and of all flesh. The second is the [ ... ] all bodies, which is slaughter, [with] which all flesh is consumed. The third is the damaging action, which [ ... ] the Cross of Light and every body; together with the rest of the error and the blasphemy that wounds the gods.
 
-Th[ese th]ree paths have you taught us, that they lead to the gehennas. And you have also [told] us that every person shall follow after hi[s] de[e]ds, whether to life or indeed to death.
+every person shall follow after hi[s] de[e]ds, whether to life or indeed to death.
+
+Now this matter is like this, the way [som]eone might dwell at a city, while his enti[re] following [is present] in the cities and the dwellings and the villages [of the country]. As long as, overall, the king is living in t[hat] place, you shall find his entire host living in those [dwelli]ngs that surround it. Also, whenever he may [give ... / ...] the sign for departure to the country, when he wishes [ ... ] to it, an indication is given by him to his entire follow[ing] so that he might set out on the road and depart [ ... ] each [pl]ace wherein it is. And he goes to the place where it i[s].
+
+So, there are some among his expedition who shall travel before him and be prior to him. And there are others am[ong t]hem who shall wait for him and travel with him. They depart [at] his departure. Also, there are others among them who shall come after him, travelling behind him. They continue [very] many days and months travelling until they arrive.
+
+His entire following shall not depart a[t] a single time; but someone shall go first and another after him, while others shall depart with him.
+
+There are some among his limbs and his deeds shall be puri[f]ied while he is set in the body. They are cleansed in [the] firmaments of the heavens and go before him. [Th]ere are some also among his limbs shall be freed wi[t]h him, at the time when he comes out from [h]is body. There are others shall be freed [af]ter him from the bonds of the earth and that of the creatures. [They] go and reach him in the land of the living.
 
 **Temporal observations:**
-- ¶1: Classic Kephalaia dialogue frame: ‘Once again…’, ‘an elect stood up…’, ‘I beseech you, my master…’. No impersonal teaching content.
-- ¶2: Impersonal, schematic, numbered cosmology (15/4/8/3) with process-language (separation, ascent, purification) and Manichaean mechanics (ships; waste/light sorting). No citations, no church categories.
-- ¶3: Continues the systematic mapping: enumerated three paths, tied to ‘fleshes’ and cosmic injury (‘Cross of Light’; ‘wounds the gods’) in explanatory, non-hortatory voice—fits core cosmological mechanism.
-- ¶4: Brief doctrinal summary about deeds determining trajectory; still general and non-institutional, functioning as closure/recap of the core schema.
-- ¶5: Question formula (‘Now, I beseech you, my master…’) within the dialogue apparatus; although it mentions ‘catechumen’, it is still petition framing rather than impersonal exposition.
-- ¶6: Continues the petitioner’s problem-setting in 2nd-person rhetorical mode about catechumens; not the impersonal cosmological teaching voice.
-- ¶7: Dialogue attribution and laudatory response (‘Then the apostle speaks…’, ‘You have asked well… I will enlighten you’)—explicit Layer-2 frame marker (‘apostle’).
-- ¶8: Flagged editorial seam: mimics explanatory tone but shifts to institutional determinism (‘elect’, ‘catechumens’, ‘his entire church’, apostle manifested in flesh). Register shift indicates later ecclesial graft, not recoverable core.
-- ¶9: Institutional and polemical (‘sects and heresies’, catechumen status) plus ‘seal’ language; angels/transmigration used to serve catechumen policy—reads as community doctrinal elaboration.
-- ¶10: Analogy deployed to explain ‘seal/mark’ protecting catechumens; tied to the institutional ‘seal of faith’ doctrine rather than cosmological schema.
-- ¶11: Extended catechumen ‘seal of truth’ and pre-chosen ‘form’ in the heights; salvation-assurance for catechumens is institutional soteriology.
-- ¶12: Explicit church-practice material: fasting, prayer, alms to the saints as nullifiers—classic pastoral/institutional layer.
-- ¶13: Catechumenate initiation language (‘right hand of peace’, ‘rank of the true catechumenate’) and ritual efficacy; even with ‘light ship of the night’, it is applied to institutional milestones.
-- ¶14: Prescriptive claim about catechumen freeing deeds ‘by his own hand’ while in body; continues pastoral soteriology rather than cosmological mapping.
-- ¶15: Analogy of king/host used to explain the catechumen’s deeds; despite low pastoral vocabulary, it is part of the catechumen instructional block (post-seam) and functions as homiletic elaboration.
-- ¶16: Continuation of the same analogy sequence (before/with/after) serving catechumen-deed timing; rhetorical illustration rather than foundational cosmological schema.
-- ¶17: Condensed restatement of the analogy; still within the catechumen instructional expansion.
-- ¶18: Explicit application back to catechumen and ‘his deeds’; uses cosmological scenery (‘firmaments of the heavens’) but remains institutional explanation of catechumen salvation timing.
-- ¶19: Closing instructional tone (‘I have instructed you about the catechumen…’) with angels assisting; functions as pastoral wrap-up of the catechumen section.
+- ¶1: Hagiographic/dialogue setup: “Once again… an elect… I beseech you, my master…”. Pure frame address.
+- ¶2: Core substrate is the impersonal, numbered cosmological architecture (15 paths; 4/8/3 division; zone; ships; transmigration/gehennas). The only late element is the questioner’s ‘we heard from you’ wrapper.
+- ¶3: Old teaching voice is the structured threefold enumeration (one/second/third) describing how ‘waste’ channels to the gehennas, with cosmic referents (Cross of Light, gods) rather than church institutions.
+- ¶4: The extracted clause is a general cosmological-mechanical rule (‘follow after his deeds’) without institutional application; the surrounding address is later Q&A wrapping.
+- ¶5: Question + supplication formula (“I beseech you, my master…”) focused on the catechumen; institutional category and problem statement rather than system exposition.
+- ¶6: Continued interrogative framing about catechumens in the world; not an impersonal cosmological mapping.
+- ¶7: Explicit dialogue attribution (“Then the apostle speaks…”)—a compilation frame marker per rules.
+- ¶8: Seam-style editorial extension: applies salvation mechanics to ‘the apostle’ choosing the ‘forms of his entire church’ (elect/catechumens) before birth—cosmos → institutional church-election mapping.
+- ¶9: Institutional/polemical application (sects/heresies; ‘seal of the faith and the knowledge’ on catechumens) with angelic management of deeds; not purely cosmos→cosmos exposition.
+- ¶10: Analogy explicitly serving the catechumen ‘seal’ doctrine (mark of king → mark of faith). Application layer supports institutional teaching.
+- ¶11: Continues catechumen ‘mark/seal of faith’ and predestination of ‘form’; institutional soteriology rather than neutral cosmological mapping.
+- ¶12: Explicit church-practice triad (fasting, prayer, alms to the saints) used as purgative mechanism; institutional discipline dominates.
+- ¶13: Strong catechumenate institutional markers (‘right hand of peace’, ‘rank of the true catechumenate’) and ritual causality (first fasting/prayer) even though it uses cosmic vehicles (‘light ship of the night’).
+- ¶14: Directly applies salvific control of deeds to ‘that catechumen’ and his ability while in the body—late pastoral assurance.
+- ¶15: Impersonal explanatory analogy (natural image used to describe process) with no church categories; functions as a structural teaching about coordinated ‘departure’ and distributed ‘following’ (deeds).
+- ¶16: Continues the same process-model: three temporal relations (before/with/after), a characteristic structural triad.
+- ¶17: Concise completion of the analogy’s mechanism; still non-institutional and process-oriented.
+- ¶18: Underlying substrate is a cosmic-mechanical account of purification and ascent in three temporal phases, mapped onto cosmic locales (firmaments; earth-bonds; land of the living). The catechumen-specific identification is a later application wrapper.
+- ¶19: Closing instructional assurance addressed to the catechumen’s case (‘I have instructed you…’) with angels ensuring none is lost—pastoral conclusion rather than systematic cosmology.
 
 ---
 
 ## Chapter 91
 ### Also concerning the Catechumen; shall he be saved in a single Body?
 
-*This chapter is overwhelmingly institutional/pastoral (catechumen discipline, alms/fasting, forgiveness accounting) wrapped in Kephalaia dialogue frame and occasional NT/‘saviour’ citation. Only a few short segments preserve older, impersonal cosmological mechanics (light–dark separation; ‘mysteries of the living soul’; post-mortem purification and fashioning a light-image; First Light/Mind epistemology). Dialogue attributions (‘the apostle says…’) are later frame and must be stripped when extracting core.*
+*This chapter is overwhelmingly institutional/pastoral (catechumen discipline, merit accounting, church protection) wrapped in dialogue frame. Only brief fragments preserve older-looking cosmological soteriology (post-mortem ascent/purification; formation of a “light image”). A clear NT/Pauline overlay appears in the quotation about wives/buying/rejoicing (1 Cor 7), and a likely Gospel proverb appears at the end of the purification sequence (Mt 6:21).*
 
-The sign of that perfect catechumen is this: You shall find the woman in the house with him, and beside him she is like these strangers. His house, in his reckoning, shall be like these lodging houses. He says: I am living in a house for rent by days and months. His brothers and his relatives shall be, in his reckoning, necessary as foreign people who take up with him, while travelling on the road with him. He [...] they will separate from him, and each one [...] may [...] the gold and the silver and the utensils of the [...] house. To him, they shall be like borrowed vessels; [he] takes them, is served by them, and afterwards gives them to their owner. He does not set his trust on them, nor his treasure.
+When, however, they come forth from their body, they travel on their way and pass by in the place above, and go in to the life. They shall be purified in the heavens, and they are plucked just as a fruit that ripens is plucked from the tree.
 
-When, however, they come forth from their body, they travel on their way and pass by in the place above, and go in to the life. They shall be purified in the heavens, and they are plucked just as a fruit that ripens is plucked from the tree. In just the same way, this alms-offering that passes over to the elect is given likeness in many forms. It is purified and goes in to the land of the living. Similarly, the souls of the catechumens who shall not enter (another) body resemble (the alms).
-
-Every person who has received the hope and the faith and has separated the light from the darkness, and has perceived the mysteries of the living soul, he has received the right hand of peace from the Light Mind
-
-As for the rest, he shall be questioned about a single part; and receive blows for (those sins) and retribution. Afterwards he is purified, whether indeed above or below. He shall be purified according to the worth of his deeds, and cleansed and washed and adorned. Afterwards, he is sculpted a light image; and [he glid]es up and reaches the land of rest, so that the place where his heart is, his treasure also will be there.
-
-the first light, the one that brings understanding through the Mind and [the] riches of its knowledge.
+⟨p.234⟩ As for the rest, he shall be questioned about a single part; and receive blows for (those sins) and retribution. Afterwards he is purified, whether indeed above or below. He shall be purified according to the worth of his deeds, and cleansed and washed and adorned. Afterwards, he is sculpted a light image; and [he glid]es up and reaches the land of rest,
 
 **Temporal observations:**
-- ¶1: Dialogue-frame opening (‘Once again… speaks…’), apostle/master setup; catechumen topic in institutional terms.
-- ¶2: Petition formula (‘Now I beseech you… instruct me…’) and community-pedagogical purpose (‘instruct my other brothers’) mark hagiographic frame/pastoral agenda.
-- ¶3: Underlying teaching uses impersonal ascetic/alienation similes (strangers, lodging house, borrowed vessels) without citation; but it is embedded in explicit Kephalaia dialogue frame and ends in church-devotion language.
-- ¶4: Explicit ‘saviour’/apostle citation of 1 Cor 7 style material indicates NT entry vector; even if ethically consonant, it entered via Christian textual authority.
-- ¶5: Marked by seam-flag; summarizes and applies to ‘perfect catechumens’ and ‘elect’ identity—an editorial institutional wrap-up rather than older cosmological exposition.
-- ¶6: Program of fasting/prayer/alms and ‘helping the church’; institutional categories dominate. ‘Mind… in the holy church’ functions as ecclesial legitimation here, not systematic cosmology.
-- ¶7: Allusion to ‘good pearl’ plus self-reference to a written work (‘Treasure of Life’) signals later literary/authoritative overlay rather than oldest teaching layer.
-- ¶8: Impersonal after-death mechanics (heavens as purificatory stations; process description; simile-driven correspondential explanation) with minimal institutional scaffolding; no citation formula.
-- ¶9: Appeal to written authority (‘I have written down in the Treasure of Life’) and merit ‘contribution to the church’—editorial/institutional accounting.
-- ¶10: Prescriptive instruction (pray for repentance/forgiveness from God and the holy church) and bookkeeping of sins (‘account’) is institutional discipline.
-- ¶11: Typical Kephalaia closing praise response from disciples (‘they praised… blessed are you…’)—hagiographic frame.
-- ¶12: Renewed petition (‘we beseech you… recount’) and catalogue of sins as a question prompt: dialogue frame with pastoral concerns.
-- ¶13: Contains classic impersonal Manichaean cosmological/soteriological language (‘separated the light from the darkness’, ‘mysteries of the living soul’, ‘Light Mind’) but embedded in explicit dialogue frame and immediately applied to church setting.
-- ¶14: Forensic forgiveness doctrine keyed to joining the community (‘received the hope… persist in belief’)—ethical/pastoral regulation rather than cosmological mechanism.
-- ¶15: Backsliding warning and institutional status categories (‘elect… catechumenate’)—church discipline logic.
-- ¶16: Fasting/prayer/alms as means of absolution—pure institutional praxis.
-- ¶17: Detailed calendrical fasting and sexual continence rules; abstention list—catechumen discipline layer.
-- ¶18: Hours of prayer, alms accounting, ‘garment… upon the saints’, ‘daily communion’—institutional devotional regimen.
-- ¶19: Sin partition into ‘five parts’ is arithmetized discipline tied to ‘protection of the holy church’ and elect-love; cosmological phrases are subordinated to institutional absolution scheme.
-- ¶20: Process-oriented eschatological mechanics: post-mortem questioning/punishment, purification ‘above or below’, transformation into a ‘light image’, ascent to ‘land of rest’—impersonal and systematic relative to surrounding pastoral material.
-- ¶21: Conditional exhortation about steadfastness in catechumenate; institutional framing.
-- ¶22: Moral admonition (lying/turning) and judgement threat—pastoral warning.
-- ¶23: General exhortation and promise of release/rest conditioned on faith-boldness; lacks cosmological exposition and reads as paraenesis.
-- ¶24: Contains a compact cosmological epistemology (‘First Light… understanding through the Mind… riches of knowledge’) embedded inside a stereotyped doxological closing.
-
----
-
-## Chapter 93
-### A Catechumen asked the Apostle: When I would give an Offering to the Saints, shall I inflict a Wound on the Alms?
-
-*The chapter is dominated by catechumen/elect/alms framing (late institutional setting), but it contains an older, impersonal analogy (enemy/judge/doctor/wound) that functions as a general mechanism: harm inflicted for healing is not culpable like hostile violence. Paragraph 9 is a classic editorial seam extending the analogy into church/catechumen soteriology; 10 continues that institutional/citation-heavy wrap. The oldest layer is best preserved in ¶4–6 and the non-institutional fragments of ¶7–8; the question/answer frame and all catechumen/elect logistics are later.*
-
-For this matter is like to two people, if a personal enemy and an opponent of theirs will hit one first and make a sore and a wound on his body. Afterwards he smites him again and [...] and he hits over his blows and [...] blows that have made sores on him and [...] ⟨p.237⟩ strikes him these two times [...] accuses his enemy who has struck him. And this judge questions him to his face about the [...] of the sores that he has left as marks on his body. And they [...] on him as if he had split his head. And he is led to judgement and sentence, and is punished before the judge of the world. He makes retribution for a sore in the sore place, and adds to him the wound that he had left on this person who had not yet sinned against him. He shall not omit the retaliation of the opponent, as he is judged [...] according to enmity.
-
-After the end, this enemy is condemned for the retaliation [...] sin against him. Afterwards, the other one is sick [...] the one whom this enemy has struck, and a wound comes out on him [...] and he becomes a sick person by cause of his illness, and he [...] He calls the doctor and shows him his wound. However, that doctor has no [...] nor [...] and he takes the knife to him and cuts this wound. Nevertheless, when he cuts it the blood shall pour out of his wound. That person shall be pained, but he accepts those and these things. This doctor has not retaliated nor was harm imposed on him; because he did this thing to him for healing his wound. All that he did to him was done for the good; and not directly for evil.
-
-After the completion, he cuts this wound and lets blood from it and heals it. He shall even make [...] gifts and compliments. That illness and the healing become a pride for this doctor, and he is given honour.
-
-This is also how this matter of [...] before this living soul. [...] At the time ⟨p.238⟩ [...] it [...] you have struck [...] it is well and [...] ease shall exist for it. [...] A glory comes about for this [...] healing [...] it exists [...] it is painful [...]
-
-Also, [this] is the other person [who] struck the comrade of the [...] sick with his [...] he struck in [...] he being cruel according to [...] living soul [...] upon it [...] that [...] accusation of [...]
-
-**Temporal observations:**
-- ¶1: Dialogue-frame opening with institutional actors (catechumen, apostle, elect) and the alms-offering problem statement; this is compilation/institutional setting rather than impersonal cosmological exposition.
-- ¶2: First-person petition to speak ‘before you’ continuing the catechumen’s Q; belongs to the question apparatus, not a systematic teaching layer.
-- ¶3: Answer introduced by ‘When the apostle heard… he spoke…’; hortatory reassurance about alms and sin. The attribution formula is explicitly late frame, and the focus remains alms praxis.
-- ¶4: Impersonal analogical mechanism (enmity → injury → judge → retribution) without church roles or citation; reads like an older illustrative teaching unit reused to answer a later institutional question.
-- ¶5: Continues the same impersonal ‘doctor who hurts to heal’ logic; no dialogue attribution, no institutional vocabulary—fits the older explanatory layer.
-- ¶6: Closure of the doctor analogy in the same impersonal voice; functions as self-contained teaching.
-- ¶7: Transitional reuse of the older ‘healing despite pain’ mechanism (‘living soul’, ‘ease shall exist’) but interwoven with explicit alms/elect/psalms-prayers vocabulary typical of later community application.
-- ¶8: Fragmentary but appears to resume the ‘hostile striker’ side of the analogy, contrasting with the doctor. The surviving wording is non-institutional and mechanism-focused, but heavy lacunae make dating less secure.
-- ¶9: Seam-flagged editorial extension: catechumens/church language, absolution/intercession/cleansing benefits. This is institutional soteriology grafted onto the analogy; entire paragraph is late pastoral.
-- ¶10: Continues catechumen-apostle scene (‘Then… to the apostle… all the catechumens…’) with strong devotional/register mixing and high christian vocabulary; functions as a later wrap-up rather than core mechanism teaching.
+- ¶1: Dialogue frame (“Once again… speaks… to this apostle”) presenting the topic; catechumen category anchors it to church life.
+- ¶2: Petition formula (“Now I beseech you… my master”) and didactic intent (“instruct my other brothers… proclaim it to the catechumens”) mark editorial framing/institutional use.
+- ¶3: Household/sexual renunciation and orientation to “the holy church” describes idealized catechumen conduct; not cosmos→cosmos mapping but social-ethical application.
+- ¶4: Explicit appeal to “the saviour” and a Pauline-style citation (“let these who have wives be like…”) indicates NT entry-vector (1 Cor 7).
+- ¶5: Seam-like summary applying the preceding to “perfect catechumens… like the elect”; institutional extension rather than substrate.
+- ¶6: Fasting/prayer/alms and repeated “holy church / elect / wife / children” language is institutional discipline, not systematic cosmology.
+- ¶7: Institutional encouragement plus internal book reference (“Treasure of Life”) and catechumen typology; not substrate.
+- ¶8: Opening lines present impersonal ascent/purification mechanics with a natural correspondence (fruit-plucking). The paragraph then pivots to alms-to-elect application, a later institutional graft.
+- ¶9: Appeal to “Treasure of Life” and purification “in accordance with… contribution to the church” is institutional accounting.
+- ¶10: Prescriptive repentance/forgiveness via “God and the holy church” and bookkeeping of sins (“first and the last”) is pastoral/institutional.
+- ¶11: Closing praise scene and exalted address (“Blessed are you… our father”) is hagiographic frame.
+- ¶12: Extended petition-question (“we beseech you… recount…”) embedded in community concerns about prior sins and sects; functions as editorial Q&A apparatus.
+- ¶13: Though it uses Light/Darkness vocabulary, it is cast as church-mediated absolution (“right hand of peace… Light Mind who dwells in the holy church”), i.e., cosmology leveraged for institutional soteriology.
+- ¶14: Doctrinal rule of absolution contingent on persistence in belief; anchored to renouncing “sects and idols of error,” not to cosmic system exposition.
+- ¶15: Moral/pastoral warning about relapse and retribution; explicit catechumen/elect categories.
+- ¶16: Institutional means of absolution (fasting/prayer/alms) stated directly; no cosmological mechanism.
+- ¶17: Detailed rule list (fifty fasts, sexual restraint, diet prohibitions) is catechumen discipline.
+- ¶18: Hours of prayer, alms counting, garments for saints, “daily communion” style institutional practice language.
+- ¶19: Merit arithmetic (“five parts… absolved from four… protection of the holy church… love of the elect”) is explicitly institutional, even if it uses Light/Darkness phrasing.
+- ¶20: Impersonal, process-focused soteriology (purification above/below; formation of a “light image”; ascent to the land of rest) reads like older cosmological teaching; the concluding heart/treasure line is a recognizable NT overlay.
+- ¶21: Conditional exhortation about steadfastness and recompense; catechumen perseverance motif.
+- ¶22: Moral warning about lying/apostasy and renewed judgement; institutional soteriology.
+- ¶23: General promise of destiny/release for steadfast faith; lacks systematic cosmological mapping and remains paraenetic.
+- ¶24: Narrative closure (“When these disciples had heard… they gave glory…”) functions as framing doxology despite brief cosmological vocabulary (“first light… Mind”).
 
 ---
 
 ## Chapter 94
 ### Concerning the Purification of these Four Elements [that have been place]d in the Flesh.
 
-*The chapter opens with a clear hagiographic dialogue frame (¶1), then shifts into impersonal, systematic exposition about the four light elements, their mixture with Darkness, and their purification in the body (¶2–8). The closing paragraph (¶9) applies the process to the elect/sinners and introduces institutional/ethical categories and transmigration in a hortatory register; this looks like later pastoral application rather than the older cosmological mechanism itself. No NT citation overlay is present.*
+*The chapter is dominated by a systematic correspondential teaching on the four light elements and their purification in the body, including a fourfold set of threefold emissions (element → bodily/emotional discharge → further state). It opens with a standard hagiographic sitting/teaching frame (¶1). The final paragraph (¶9) shifts from cosmological mechanics to institutional application (Elect vs sinners), mapping the process onto the community and is therefore later pastoral application.*
 
-The four elements [are what is] purified. From the beginning they are holy ones, living ones, and enlighteners. However, when they undertood [ ... ] in that first struggle, the waste was [mixed] in with them, and the Darkness of the enemy was mixed with them. And when they were come into the body, stripping off these polluted garments, they set them in the flesh. Their pollutions, which they have stripped off, shall be displayed in a [ ... ] and become a danger to the body.
+The four elements [are what is] purified. From the beginning they are holy ones, living ones, and enlighteners. However, when they undertood [ ... ] in that first struggle, the waste was [mixed] in with them, and the Darkness of the Enemy was mixed with them. And when they were come into the body, stripping off these polluted garments, they set them in the flesh. Their pollutions, which they have stripped off, shall be displayed in a [ ... ] and become a danger to the body.
 
 The discharge of this pollution, that [the fir]e shall disgorge and place in the body, is [blo]od. The discharge of the blood is anger. The discharge of anger is the humours.
 
@@ -3749,22 +3582,22 @@ The emission of the [tear] is the [ ... ] of these twelve emissions.
 [ ... ] these four elements shall [ ... ] what are gathered in are [f]ound by the management of this soul food [that] enters the body. When they enter the body, they are cleansed and purified and established [i]n their living image, which is the new man. They shall live [ ... ] and receive the Light Mind and be purified in their image; and they come forth, being cleansed and holy. They attain their first rest.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic opening: 'Once again… the apostle… congregation. He speaks thus:' is compilation frame and must not be in core.
-- ¶2: Impersonal cosmological mechanics: primordial 'first struggle', mixture with Darkness/enemy, descent into body, stripping polluted garments—system description rather than institutional instruction.
-- ¶3: Numbered/chain-style correspondential mapping (element → bodily substance → emotion → bodily state) in expository voice; no frame or church categories.
-- ¶4: Continues the same systematic chain mapping for another element; manuscript page marker preserved.
-- ¶5: Same old-teaching style: element/process language ('disgorge') + triadic chain.
-- ¶6: Though 'tree' is obscure/corrupt, the syntax remains within the same mechanical emission-chain; no institutional register. Likely part of the original fourfold schema, albeit fragmentary.
-- ¶7: Summative line referring to a counted set ('these twelve emissions'), characteristic of the systematic teaching layer even though fragmentary.
-- ¶8: Process-description of purification via 'soul food' entering the body, re-establishment in 'living image'/'new man', ascent/rest—cosmological soteriology stated as mechanism, not rule.
-- ¶9: Institutional application and moral categorization: 'the elect' vs 'sinners' as the hinge for purification; exhortative/administrative register rather than impersonal mechanism. Even if based on core doctrine, this paragraph reads as later community application.
+- ¶1: Formulaic hagiographic setup: ‘Once again… the apostle… sitting… He speaks thus:’ This is the editorial dialogue/container layer, not the teaching itself.
+- ¶2: Impersonal cosmological-process voice: descent/mixing in the ‘first struggle’, pollution stripped off and deposited in flesh. No citations, no exhortation, no institutional mapping—cosmos→cosmos/anthropology mechanics.
+- ¶3: Classic substrate-style triadic chain (element → bodily discharge → affect → humours), purely systemic mapping.
+- ¶4: Continues the same systematic chain-mapping with no audience address; page marker preserved.
+- ¶5: Same schematic correspondential sequence; still descriptive (‘what is’) rather than applicative (‘what you must do’).
+- ¶6: Despite the obscurity (‘tree’), the paragraph remains in the structural ‘emission/disgorge’ register, continuing the fourfold schema; no institutional identification.
+- ¶7: Fragmentary but still meta-structural, summing a ‘twelve emissions’ set—systematic numeration is a core marker.
+- ¶8: Cosmological/anthropological mechanism of purification via ‘soul food’ entering the body, culminating in ascent/rest. No NT citation formula; remains process description within the Manichaean system.
+- ¶9: Institutional/application turn: ‘reach the elect’ vs ‘sinners’, framing the purification pathway in community categories (cosmos→contemporary religious body). This is a later pastoral graft rather than the old correspondential substrate.
 
 ---
 
 ## Chapter 95
 ### The Apostle asks his Disciples: What is Cloud?
 
-*After a heavy dialogue-frame opening and closing (¶1, ¶18) plus a brief Q/A prompt (¶14), the chapter is dominated by systematic cosmological exposition: a five-fold cloud typology keyed to the five light elements, with recurring mechanics (ascent to the Virgin’s likeness, signs in the atmosphere, purification of “lives,” release/stripping of rulers, angelic seizure, and confinement in the seven outer ditches). The only clear mixed case is ¶15, where a dialogue attribution (“[The apostle] says…”) introduces a short cosmological localization teaching.*
+*The chapter is dominated by systematic cosmological teaching: five cloud-types rising from five places/elements, each with signs (lightning, thunder, storm-wind, calm sailing, etc.), purifications of “lives,” and the stripping/seizure of rulers by angels under the Virgin of Light, culminating in confinement in the seven outer ditches/paths of the great sea. The main late layer is the dialogue/hagiographic frame (apostle/disciple scene-setting, Q&A prompt, closing doxology). A couple of paragraphs contain editorial speech markers (“[The apostle] says…”, “Hear also…”, first-person recap) wrapped around otherwise core cosmology, so they are treated as MIXED with the frame stripped.*
 
 Happen you know that it shall be released from five places and ascend over this great earth and [ ... ] and it is revealed and seen in the atmosphere between.
 
@@ -3792,36 +3625,36 @@ Their strippings, that they shall leave behind them in various places they will 
 
 Those ditches and the [ ... ] until they reach the earths below [ ... ] feet of the Porter.
 
-Hear also [ ... ] for sometimes these angels shall be sent to them, to seize the rulers. Whenever the rulers [ ... / ... ] for the angels rush after them. They beseech them [ ... ] they that are given the command. However, [t]hose [rul]ers shall be freed from them alone and assume [ ... ] and [the fle]sh. They are consumed by this offspring [ ... / ... ] tree and that of flesh. The angels shall set a [ ... ] over them, that they might guard them until the hour when [those r]ulers will be stripped of tree and [flesh; a]nd they go up above. They shall be gathered [ ... ] above, and they are poured out [ ... ] in their first for[ms ... im]ages in which they first were. They take the light from them, which had remained behind in them. And they too are cast down to these seven outer [path]s that are in the great sea; the place to where these former ones [were c/as]t. They shall reach their midst [ ... ] and the light that is in them is taken.
+for sometimes these angels shall be sent to them, to seize the rulers. Whenever the rulers [ ... / ... ] for the angels rush after them. They beseech them [ ... ] they that are given the command. However, [t]hose [rul]ers shall be freed from them alone and assume [ ... ] and [the fle]sh. They are consumed by this offspring [ ... / ... ] tree and that of flesh. The angels shall set a [ ... ] over them, that they might guard them until the hour when [those r]ulers will be stripped of tree and [flesh; a]nd they go up above. They shall be gathered [ ... ] above, and they are poured out [ ... ] in their first for[ms ... im]ages in which they first were. They take the light from them, which had remained behind in them. And they too are cast down to these seven outer [path]s that are in the great sea; the place to where these former ones [were c/as]t. They shall reach their midst [ ... ] and the light that is in them is taken.
 
-Behold now, I have instructed you about this cloud: How it shall ascend above, and the lives that are in it are purified. I have also taught you of the rulers that are in it: how they shall make these {rebellions} and how they shall be {caught}. And they are cast to the outer prison by the angels, when the command is given to them through the power of the Virgin of Light. She has authority over the entire zone, and cleanses the life that is in it.
+And they are cast to the outer prison by the angels, when the command is given to them through the power of the Virgin of Light. She has authority over the entire zone, and cleanses the life that is in it.
 
 **Temporal observations:**
-- ¶1: Formulaic scene-setting and hagiographic dialogue frame: “Once again, the apostle… congregation… he says to his disciples… I will reveal.” This is compilation apparatus, not the teaching substrate.
-- ¶2: Impersonal, systematic teaching claim (“five places”; ascent mechanics; atmospheric locus) without citation or institutional drift.
-- ¶3: Cosmological mechanics in a structured, process voice: element→cloud ascent; Virgin of Light as cosmic agent; “sign” diagnostics; purification; rulers released. No NT or church material.
-- ¶4: Mythic-cosmological policing action (angels seizing rulers) with simile; still within the explanatory mechanism of recurrent damage and restraint—no frame formulas.
-- ¶5: Element-specific demonology (“children of fire”) and causal account of destruction; impersonal explanatory register.
-- ¶6: Continues the five-fold typology with repeated structural markers (“In contrast… its sign… Again…”). Cosmic rather than ecclesial vocabulary.
-- ¶7: Natural-phenomenon explanation (hail/frost) as effect of rulers’ activity—still mechanistic cosmology.
-- ¶8: Recurrent capture motif (“Again… angels… seize”) in explanatory voice; no frame markers.
-- ¶9: Third instance in the structured sequence: element→cloud ascent→Virgin’s likeness→diagnostic sign.
-- ¶10: Process account linking purification of “lives” with stripping/release of rulers and ensuing maritime effects—typical cosmological mechanism language.
-- ¶11: Element ‘light’ cloud with signature calmness; repeated scheme (sign → purification → stripping of rulers → angelic seizure). No citation apparatus.
-- ¶12: Completes the five-fold set (fire/water/wind/light/mingled air). The typological structure itself is a strong core marker.
-- ¶13: Technical cosmology: “strippings,” extraction of Light, demons cast into “seven outer ditches” beyond the world—systemic eschatological geography.
-- ¶14: Direct disciples’ question with honorific (“our master”)—a dialogue prompt typical of the Kephalaia frame layer.
-- ¶15: Underlying content is cosmological localization (ditches descending to lower earths; Porter as cosmic figure), but it enters here via a framed response line.
-- ¶16: Extended mechanistic cycle: rulers assume matter (tree/flesh), are guarded, stripped, light extracted, and rulers relegated to outer ditches—impersonal procedural voice typical of the teaching core.
-- ¶17: Summary colophon-like recap, but still purely cosmological (Virgin’s authority over the zone; purification; capture mechanics) without doxology or institutional directives—best read as core conclusion rather than hagiographic closure.
-- ¶18: Formulaic closing praise/thanksgiving by disciples with honorifics (“our father… giver of revelations… glorified him”)—classic hagiographic frame.
+- ¶1: Formulaic hagiographic scene-setting (“Once again, the apostle… sitting in the congregation”), narrative weather detail, and promise-to-teach address. This is the compilation frame rather than impersonal cosmological exposition.
+- ¶2: Impersonal, structural cosmology: a fivefold origin (“five places”) and vertical ascent into the atmospheric ‘between’ zone; no citation, no institutional application.
+- ¶3: Systematic element→cloud mapping with correspondential ‘sign’ language and cosmic agents (Virgin of Light; rulers) acting within the mechanism of purification/stripping.
+- ¶4: Cosmic-process description (angelic seizure; rulers fleeing/assuming forms) using simile but still cosmos→cosmos mechanics; no institutional polemic or pastoral directive.
+- ¶5: Continuation of the same cosmological mechanism (rulers released/stripped; destructive effects) applied to the created order (trees/animals/people) without shifting into contemporary institutional ‘pointing-at’.
+- ¶6: Second element-cloud mapping (water) with ‘sign’ and rulers/constraint/flight; tightly within the cosmological system.
+- ¶7: Natural phenomena presented as effects of cosmic rulers; still explanatory rather than hortatory or institutional.
+- ¶8: Brief mechanistic statement (angelic pursuit/seizure vs. interim destruction); no frame formulas.
+- ¶9: Third mapping (wind) with explicit ‘atmosphere between’ zone and ‘sign’ correspondence; standard core teaching register.
+- ¶10: Impersonal cosmological process: purification of lives, stripping of rulers, and their effects on seas/ships—still descriptive mechanics, not later moral exhortation.
+- ¶11: Despite the observational ‘you shall find,’ the paragraph remains cosmos→cosmos: a ‘cloud of light’ with a sign (calm sailing), purification of lives, and stripping/seizure of rulers under the Virgin’s action.
+- ¶12: Fourth/fifth mapping in the same patterned register: cloud from ‘mingled air,’ sign/purification, rulers stripped and seized—systematic cosmological iteration.
+- ¶13: Core eschatological containment geography (seven outer ditches; great sea; waters outside the world) plus the standard mechanism: angels extract light and cast down demons.
+- ¶14: Dialogue Q&A frame (“Then his disciples say to him… Instruct us, our master”), a classic redactional container for the teaching.
+- ¶15: Underlying content is cosmological topography (ditches descending to the earths below; Porter as cosmic figure), but introduced with a dialogue attribution typical of the compilation frame.
+- ¶16: Core mechanism (rulers assuming tree/flesh, guarded until stripping; light extracted; casting into seven outer paths) survives, but the paragraph is introduced by an oratorical ‘Hear also…’ marker characteristic of the dialogic redactional voice.
+- ¶17: The cosmological assertions about the Virgin of Light’s authority over the zone and the angelic casting to the outer prison read as core system-content, but the surrounding first-person instructional recap is a later dialogic/compilation voice.
+- ¶18: Formulaic closing praise/thanksgiving by disciples (“they glorified him… we give thanks… our father”), characteristic of the hagiographic frame layer.
 
 ---
 
 ## Chapter 96
 ### The Three Earths that Exist, they bear Fruit.
 
-*Core cosmological teaching survives mainly in the middle of the chapter: the three-earth schema is introduced, and the second ‘field’ (living soul) is expounded with systematic light-mechanics (sun/moon as cultivators drawing soul upward). The opening is wrapped in a hagiographic dialogue frame. The ‘third earth = holy church’ paragraph is a classic editorial seam (institutional extension of a numbered list), so it is treated as PASTORAL despite its mimicry of the teaching style and its use of a cosmic entity (Light Mind). The closing paraenesis is likewise later pastoral exhortation rather than impersonal mechanism.*
+*Core teaching survives chiefly as a threefold correspondential structure (earth/field → what is cultivated → who cultivates → fruit/harvest), with the strongest substrate in the cosmological mechanism: the living soul as a field cultivated by the two Light-givers (sun and moon) drawing it upward. The chapter opens with a hagiographic dialogue formula (frame) and is then extended by an editorial institutional graft identifying the third ‘earth’ as the holy church (elect/catechumens), followed by direct exhortation to preach—both later layers.*
 
 Three earths exist in the universe, and are being toiled over. At first they [...] the farmer in them. Afterwards they bear [good] fruit to they who toil over them.
 
@@ -3831,18 +3664,18 @@ One of them is this great earth that people are living upon. They are ploughing 
 The second field is the living soul, the holy one. It is mixed in the entire zone, above and below. The farmers who toil over it are these two great light-givers, which journey through the heavens. They are toiling and cultivating it, so that they will draw it towards their aspect. And it leaps up and comes to the heights. It goes upwards, out from every place wherein it is, and it adds to them.
 
 **Temporal observations:**
-- ¶1: Frame formula at the start marks editorial wrapping; the remaining numbered cosmological schema (‘three earths’) is an impersonal structural setup consistent with the older teaching layer.
-- ¶2: Impersonal illustrative mapping (human agriculture as the first ‘earth/field’) within a numbered schema; no citation formulas, no institutional directives—functions as part of a systematic triad exposition.
-- ¶3: Clear core mechanics: cosmological agents (‘two great light-givers’) operating as cultivators; process description (drawing upward, ascent) in an impersonal explanatory voice; no ecclesial terms or citation overlay.
-- ¶4: Strong editorial seam: extends the triad by applying it to ‘holy church… elect… catechumens’ (institutional register). Even though it uses ‘Light Mind’, the paragraph’s function is to graft the numbered pattern onto church structure—typical later institutionalizing extension.
-- ¶5: Second-person exhortation and programmatic instruction (‘You yourselves… Preach and enlighten…’) is paraenetic/pastoral rather than impersonal cosmological exposition; it reads as a homiletic application appended to the teaching.
+- ¶1: Opening hagiographic formula marks later frame; the remaining lines present a numbered cosmological triad (“Three earths”) in an impersonal teaching voice, consistent with an older schematic substrate.
+- ¶2: Functions as the first term of the threefold ‘earth/field’ schema and stays within the teaching’s internal analogy (no institutional identification or exhortation). Though it is more concrete/narrative (“iron hoes”) than typical high-cosmological exposition, it serves the structural correspondential setup rather than a later church application.
+- ¶3: Clear substrate-style cosmological mechanics: a cosmic ‘field’ (living soul) distributed through the zone, cultivated by cosmic agents (two Light-givers) producing ascent—cosmos→cosmos mapping with impersonal process language.
+- ¶4: Editorial seam/graft: the pattern is extended to identify a ‘third earth’ as the holy church with elect and catechumens (institutional categories). Even though ‘Light Mind’ is a cosmic being, the paragraph’s function is cosmos→contemporary institution, marking it as later pastoral extension.
+- ¶5: Direct audience address and imperatives (“You yourselves…”, “Preach…”, “Rather, toil!”) shift from description to exhortation/application, characteristic of later pastoral redaction rather than the impersonal cosmological substrate.
 
 ---
 
 ## Chapter 97
 ### Concerning the Three Creations of the Flesh: the ones that were brought forth [...]; and the ones that were begotten by the Abortions; and the ones that were formed of themselves.
 
-*Aside from the single hagiographic dialogue incipit, the chapter is dominated by an impersonal, classificatory teaching about three modes of generation and the ‘thought’/impulse in mixed flesh, applied to animals/plants and their fruits. No NT citation or institutional extension appears; the remaining paragraphs read as a continuous technical exposition with some lacunae.*
+*Apart from a brief hagiographic dialogue frame, the chapter consists of a compact, systematic classificatory teaching: three modes of generation among animals/earthly creatures, then a correlated account of nourishment and plant-types, grounded in the cosmological event-language (Abortions, rulers/powers, the Ambassador) without institutional or exhortative application.*
 
 “All these animals that you see, and also the rest of the [crea]tures [...] of the earth, confirm them in three likeness[es ...]: some from [...] abortions. Others, however, form their own selves in their shape [...].
 
@@ -3855,23 +3688,23 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 “Again, this thou[ght] that came down from the powers that eat m[ea]t and also eat grass and gourds, it has formed the trees that shall not produce any nourishment. Their fruits belong neither to good nor evil.”
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic frame: ‘Once again our enlightener speaks to his disciples:’ functions as editorial dialogue container, not the teaching itself.
-- ¶2: Systematic threefold classification of generation; impersonal expository voice without citation or institutional address suggests an older teaching stratum.
-- ¶3: Continues the technical account (nourishment/light mechanics; ‘three archetypes’). ‘The Ambassador’ appears as a cosmological agent within exposition (not a Gospel citation), consistent with core cosmological hierarchy.
-- ¶4: Taxonomic/etiological explanation of plant kinds (‘shoots and grass’, bitter trees, thorns) in an explanatory voice; no frame formulas beyond the ongoing quotation style.
-- ¶5: Cosmological mechanism: ‘thought’ as an originating impulse associated with ‘flesh-eating rulers’ and its descent/operation in plant reproduction; doctrinal-technical rather than institutional.
-- ¶6: Iterative continuation of the same causal schema (‘thought’ descending from powers) to explain a third category of fruit; closes a classificatory sequence, characteristic of the core teaching register.
+- ¶1: Formulaic chapter-opening dialogue attribution (“Once again… speaks to his disciples”), characteristic of the later Kephalaia compilation frame.
+- ¶2: Systematic triadic classification of generation types; descriptive voice and cosmos→cosmos mapping (creatures/earth/Abortions/self-formation) with no address to church practice.
+- ¶3: Continues the internal explanatory register (nourishment/light, archetypes, earth-time) and invokes the Ambassador as a functional cosmic actor; no citation or polemical ‘nowadays’ anchoring.
+- ¶4: Taxonomic/etiological exposition of plant classes and qualities (shoots/grass; bitter trees; reeds; thorns) as products of a formative process—still within cosmological description despite lacunae.
+- ¶5: Cosmic-mechanistic explanation linking ‘thought’/rulers to propagation outcomes (grass/gourds/trees; sweet vs nourishing fruit). The mapping remains within the system (rulers→thought→vegetal formation), not institutional application.
+- ¶6: Iterative continuation (“Again…”) of the same mechanistic schema: powers’ nature → descending thought → non-nourishing trees; concludes with a classificatory valuation internal to the taxonomy rather than moral exhortation.
 
 ---
 
 ## Chapter 98
 ### What is Virginal; or, otherwise, what is Continent?
 
-*After a brief dialogue frame (¶1-2) the chapter is dominated by a systematic, iterative five-level distinction (virginal vs. continent) mapped onto successive cosmic/human stations of Light. The voice is definitional and process-oriented (mixture, purification, ascent, transmigration), with named Manichaean cosmological figures (Ambassador, Light Mind, new man). Minimal institutional/pastoral intrusion; ¶9 contains an ecclesial referent (“images of the elect”) but within a cosmological-anthropological mapping, so it remains core.*
+*The chapter is built as a five-level definitional ladder (“virginal” vs “continent”). The oldest substrate is concentrated in the cosmological tiers: aeons-of-greatness vs mixed Light; (fragmentary) holy virginals vs the Enemy; purification by the Ambassador’s Image vs transmigration. The opening Q&A and dialogue attributions are later frame. The final tiers that apply the scheme to the Elect and to sexual renunciation in the flesh cross from cosmos→institution/human practice and are best dated as later pastoral/doctrinal extension rather than the impersonal cosmological substrate.*
 
-What is called ‘virginal’ is assigned to the mystery of the aeons of greatness. And they called it ‘virginal’ by the category of all the light that did not [taste] of death, nor come to the enemy’s war.
+What is called ‘virginal’ is assigned to the mystery of the aeons of greatness. And they called it ‘virginal’ by the category of all the light that did not [taste] of death, nor come to the Enemy’s war.
 
-However, what is called ‘continent’ occurs to the mystery of the light that came and was mixed with the darkness. It was defiled in bodies [ ... ] and went up to the light. [They] called [it ‘co]ntinent’.
+However, what is called ‘continent’ occurs to the mystery of the light that came and was mixed with the Darkness. It was defiled in bodies [ ... ] and went up to the light. [They] called [it ‘co]ntinent’.
 
 Furthermore, the holy vir[gin]als [ ... ... ] should they come out against the en[emy ... ... not] taste death, nor [ ... ].
 
@@ -3881,49 +3714,30 @@ Furthermore, what is called [‘vi]rginal’ is this light that was purified by 
 
 Again, what is [called] ‘continent’ is the remainder of this light th[at] remained behind, from what was cleansed. It goes up and comes down in transmigration. Al[so], there is a part [of] it that shall come and attain the form of [hum]an [fl]esh. Again, that one too shall be chosen in the flesh, [accept] the hope, and become an holy one. And they name it ‘continent’.
 
-Furthermore, what is named ‘virginal’ is the Light Mind, should he come and assume the images [of] the ele[ct]. However, on the other hand, what is called ‘contin[ent]’ is the new man, should it be purified from this old man. And it is cleansed and strips off the Sin that is compounded with it, and it becomes a continent one.
-
-And also, what is called ‘virgi[n]al’ in the flesh, is a man if he has [ne]ver joined himself to woman, has not been defiled by intercourse. However, [i]n contrast, what is called ‘continent’, is the man who has a wom[a]n in the world. Afterwards, he cleanses himself from her [and] renounces her. And because of this he [ ... ] and he becomes an holy contin[en]t one.
-
-Behold, I have taught you the categories [of] the v[ir]ginal and the continent in a great many [as]pects. For what is virginal, or otherwise what is [con]tinent, is in many forms.
-
 **Temporal observations:**
-- ¶1: Hagiographic setting and attribution: “apostle… among the congregation of his church… says to his disciples” + catechetical question block. This is compilation frame, not the underlying teaching.
-- ¶2: Disciples’ request formula (“Proclaim to us, my master…”) and encomiastic line (“all good gifts… through you”) are classic editorial Q&A frame.
-- ¶3: Core definitional voice (“is assigned… by the category of…”) and cosmological location (“aeons of greatness”) indicate older systematic teaching; only the speech-introduction is late frame.
-- ¶4: Impersonal process description of Light’s descent/mixture/defilement/ascent—cosmological mechanics without citation or institutional instruction.
-- ¶5: Despite lacunae, continues the same cosmological-antagonistic register (“enemy… taste death”) as the aeonic layer; no clear institutional discipline markers.
-- ¶6: Cosmological purification sequence (mixture → purification → ascent from creatures → confirmation in greatness). Moral term “lust” functions as pollution mechanic within the Light-matter process, not as pastoral exhortation.
-- ¶7: Named cosmological agent (Ambassador) in systematic exposition; classic “purified by the image” soteriological mechanism.
-- ¶8: Systematic mechanics: remainder-light, transmigration cycle, embodiment in human flesh, eventual election/purification. No NT citation or church-rule tone.
-- ¶9: Cosmic-anthropological mapping (Light Mind / new man / old man) in definitional form. “elect” here functions as a cosmological-ecclesial category within the mapping, not as a standalone institutional regulation; “Sin” acts as a compounded quasi-agent/polluting power.
-- ¶10: Final step applies the same definitional two-term schema to embodied human practice, but still framed as categorical explanation (not community legislation), matching the chapter’s systematic descent through levels.
-- ¶11: Concluding summary in the same didactic-structural voice (“categories… many forms”); lacks the typical rejoicing/praise closure of the later frame.
-
----
-
-## Chapter 99
-### Concerning Transmigration
-
-*This chapter is dominated by dialogue frame and institutional/pastoral catechumen–sinner differentiation presented through an ethical analogy (children vs servants). No stable, impersonal cosmological mechanism is expounded; the few “light/throne/fire” phrases occur inside a highly fragmented, catechumen-focused paraenesis and do not preserve a recoverable pre-compilation teaching block. Thus no extractable CORE layer can be isolated with confidence in this chapter as transmitted here.*
-
-For [ ... ] ⟨p.251⟩ his [thro]ne in the light, which [ ... w]hich he had also uttered [ ... ] When that one will be muzzled, they shall [ ... ... ] cut limb [ ... ] there is [s]till a [ ... ... ]
-
-**Temporal observations:**
-- ¶1: Explicit Q&A frame (“catechumen questioned the apostle… my master”), book-writing claim, and catechumen/sinner institutional categories; this is compiling-community apparatus, not old impersonal cosmological exposition.
-- ¶2: Dialogue attribution (“Then the lord speaks”) summarizing two ‘lessons’; functions as editorial scene-setting rather than teaching mechanism.
-- ¶3: Second-person exhortation introducing ‘education’ for catechumens during transmigration; catechumen-focused instructional voice rather than systematic cosmology.
-- ¶4: Moral/social analogy (educating children vs punishing servants, chains/prison) used to explain discipline; lacks Mani’s cosmological hierarchy/process language and reads as paraenetic illustration for community instruction.
-- ¶5: Only a short, highly lacunose fragment with ‘throne in the light’ and punitive imagery remains that could reflect older cosmological/judgment language; however the paragraph as a whole is dominated by catechumen/sinner disciplinary exposition, suggesting later pastoral reuse of inherited motifs.
-- ¶6: Direct blessing and institutional election language addressed to catechumens; closing paraenesis rather than cosmological exposition.
+- ¶1: Hagiographic/dialogue setup: “the apostle… among the congregation of his church… disciples”. This is compiling-community frame language, not impersonal cosmological exposition.
+- ¶2: Formal request speech (“Proclaim to us, my master…”) characteristic of the Kephalaia Q&A frame.
+- ¶3: Core definitional mapping (term → cosmic domain/state of Light) in an impersonal explanatory voice, but introduced by a clear dialogue-attribution marker that must be stripped.
+- ¶4: Cosmos→cosmos definition: “continent” mapped to the Light’s descent into mixture with Darkness and its ascent/purification. No institutional or exhortative pivot.
+- ¶5: Fragmentary, but still reads as a cosmological tier (holy “virginals” set over against the Enemy; not tasting death). No church discipline or audience-address markers are visible.
+- ¶6: Continues the impersonal cosmological process description (mixture → purification → confirmation in greatness). “Tasted … lust” functions as a pollution-register inside the cosmic mechanics, not as exhortation.
+- ¶7: Systemic cosmology: purification by the Ambassador’s Image and ascent/confirmation among the gods—fully internal to the Manichaean cosmic architecture.
+- ¶8: Still primarily cosmological mechanics (remainder of Light; ascent/descent; transmigration), though it begins to brush the human plane (“form of human flesh”). No direct institutional identification yet, so it still reads as substrate process-teaching.
+- ¶9: Pattern-extension that crosses the boundary from cosmos→institutional/human categories: “assume the images of the elect” (church category) and moralized anthropological language (“old man/new man”, “sin”). As an editorial application of the definitional ladder, the whole paragraph is later.
+- ¶10: Explicit application to sexual status “in the flesh” (virgin vs renouncer who leaves a woman). This is institutional/ethical teaching rather than impersonal cosmological mapping.
+- ¶11: Concluding meta-comment (“Behold, I have taught you…”) functioning as a chapter wrap-up rather than substrate exposition.
 
 ---
 
 ## Chapter 100
 ### Concerning the Dragon with Fourteen Heads; what it is and [...]
 
-*The chapter is largely a systematic microcosm mapping (dragon ↔ bodily faculties/organs; five dens; fourteen heads) in an impersonal expository voice—typical of the older correspondential teaching layer. Paragraphs 1–2 and 9 are dialogue frame (disciple question / apostle response / closing blessing). Paragraph 7 contains a late institutional label sequence (“holy righteous one, elect”) but is embedded in an otherwise core soteriological mechanism; thus treated as MIXED with the institutional titles removed.*
+*This chapter is dominated by a systematic microcosm teaching (body-anatomy ↔ fourteen heads ↔ five dens) in an impersonal, enumerative correspondential style (CORE). The opening Q&A and dialogue attributions are later compilation frame (MIXED where they wrap a substantive doctrinal question/answer). A clear pastoral/application drift occurs near the end: paragraph 7 applies the teaching to the believer’s struggle and introduces institutional identity language (“elect”), and the final paragraph is a disciple-response closure (FRAME).*
 
+⟨p.251⟩
+[ ... ] is distributed [ ... ] the laws of the Magi. They say that there is a dragon with fourteen heads, and it is gathered in and [ ... ] den with five refuges. [ ... ] What really is a corporeal dragon with fourteen heads? Or is it another spiritual lesson?
+
+⟨p.252⟩
 There is never a dragon in the flesh with fourteen heads, as the Magi say! Rather, this is a spiritual lesson. It was uttered in virginity [ ... ] the Magi did not understand [ ... ] all their words that are written [ ... spiri]tual (?).
 
 Again, this is how this earth [ ... ] to it, as it is accounted a corporeal dragon [ ... ] I will instruct you [ ... ] the dragon is this doctrine [ ... ] of the flesh [ ... ] also the fourteen heads that are distributed over the dragon are these.
@@ -3935,98 +3749,51 @@ These are the seven heads of the dragon, the seven sense organs that are on the 
 ⟨p.253⟩
 Conversely, the five dens about which they have spoken, where the dragon is congregated and protrudes, are these: the first is the tongue; the second is the lungs; the third is the heart; the fourth is the spleen; the fifth is the blood that dwells in them. Again, if it shall look out from them [and reveal its likeness and its observation above and below, it wages war by] its fourteen heads.
 
-Whoever will recognise them with the dragon, which is the thought of the body, and struggles with it and is victorious and kills it in them [ ... ] He receives the victory without suffering on the day of his coming forth.
-
 So, behold, I have taught you of the dragon that exists with its fourteen heads and five dens, wherein it is concealed and hidden. It does through them [ ... / its des]ire all the time.
 
 **Temporal observations:**
-- ¶1: Dialogue framing and petition formula (“disciple asked… I beseech you, my master”) plus attribution to the apostle; this is compiling-community apparatus, not the impersonal teaching layer.
-- ¶2: Core doctrinal clarification (not a physical dragon; ‘spiritual lesson’) appears to be the teaching proper; only the speaker-tag is late frame.
-- ¶3: Impersonal expository transition into a numbered/structured mapping (“fourteen heads… are these”), characteristic of the older systematic layer.
-- ¶4: Microcosm-correspondence mapping of faculties/organs in enumerated form; no citation or institutional register.
-- ¶5: Continuation of the structural fourteen-fold scheme; systematic counting logic (“total and make fourteen heads”).
-- ¶6: Classic old teaching style: fixed five-fold list tied to bodily loci + mechanistic description (“wages war by its fourteen heads”). No frame/pastoral cues.
-- ¶7: Core is the psychophysical mechanism (dragon = thought of the body; struggle/victory; eschatological ‘coming forth’). The inserted naming formula with ‘elect’ reflects later Manichaean institutional vocabulary.
-- ¶8: Teaching-summary closure in expository voice (recap of 14/5 structure, ongoing operation of desire). No explicit hagiographic praise/citation.
-- ¶9: Closing dialogue response and blessing formula (“Then that disciple says… Blessed is every one…”), characteristic of the Kephalaia’s editorial frame rather than the older instructional layer.
+- ¶1: Substantive cosmological/anthropological question is likely older teaching content, but it is embedded in a later Q&A wrapper (“Once again… disciple… apostle… I beseech you, my master”).
+- ¶2: Teaching voice denies literalism and asserts a ‘spiritual lesson’—compatible with the core’s impersonal explanatory mode, but the polemical framing against “the Magi” and the meta-textual tone (“words that are written…”) may reflect Mani-era or later editorial contextualization; hence MIXED rather than pure CORE.
+- ¶3: Impersonal expository setup moving directly into definition and enumeration (“the fourteen heads… are these”)—a hallmark of the systematic substrate.
+- ¶4: Pure correspondential-anatomical enumeration (sense faculties mapped as ‘heads’) staying within the system (body/faculty mapping), with no institutional or exhortative pivot.
+- ¶5: Continuing numbered/structural mapping and totaling logic (“they total and make fourteen”)—systematic teaching register characteristic of the core.
+- ¶6: Another systematic set (five dens) mapped to internal organs, then described mechanistically (“it wages war by its fourteen heads”)—cosmos/body mechanics without pastoral address.
+- ¶7: Application-voice paragraph: shifts from what the dragon *is* to what one must *do* (“struggles… is victorious… kills it”), and introduces institutional identity labels (“holy righteous one, elect, good person”) and eschatological reward language—typical late pastoral graft, consistent with the chapter’s second-half application drift signal.
+- ¶8: Didactic recap that remains within the system (dragon/heads/dens/desire mechanics) without institutional prescriptions; reads like a core concluding summary rather than hagiographic closure.
+- ¶9: Disciple-response and blessing formula (“Then that disciple says… My heart has been persuaded… Blessed is…”) functions as compilation frame/closure rather than substrate exposition.
 
 ---
 
 ## Chapter 101
 ### [Concer]ning why, if the Person shall look down into Water, [ ... ]
 
-*Core teaching dominates: a sequence of impersonal correspondential explanations (reflection/shadow → cosmic descent/ascent; astral-zodiacal generation; birth posture; body-from-earth). Later compilation frame appears in the disciple question and the apostle-attribution formulae; no NT overlay is present. Despite the chapter-level fatigue warning, no institutional/pastoral graft is visible in these paragraphs.*
-
-instruct me about this lesson: When the person is above water and looking down [into the wat]ers, if he shall see his face reflected why shall you find his head turned upside down and also his feet upwards? Yet, when he stares down into the waters, his face shall not be visible, nor can he see it there?
+*Core teaching dominates after a brief Q&A frame (¶1–2). The substrate uses natural phenomena (reflection, inversion, shadow) as correspondences for fully internal cosmic processes (Summons/Obedience; First Man/Living Spirit; zodiacal generation; abyss/earth-body). Several paragraphs show a redactional/tutorial voice (“listen… I may teach you”, “I have revealed to you”), suggesting later didactic wrapping around an older correspondential exposition.*
 
 [And] this: The face of people and the shape of trees shall appear turned upside down in the water as this is signified in [the] mystery of the summons, when it was sent down to the worlds of darkness towards the First Man. Sin[ce ...] in this way it cast itself down [...] like a person [who] plunges headlong into water; so it is also with the summons. It cast itself headlong to the worlds below, with strength and diligence.
 
-And this too: Shall the person lift his head up from the water, his face shall not be visible to him, being bent below. This characterises the mystery of the obedience that ascended from below, from with the First Man his father to the Living Spirit. This is a spiritual mystery that I have [revea]led to you so that you would understand it.
+And this too: Shall the person lift his head up from the water, his face shall not be visible to him, being bent below. This characterises the mystery of the obedience that ascended from below, from with the First Man his father to the Living Spirit.
 
-If you wish to understand another corporeal mystery on this subject, listen and I may teach you to understand it. The face of people and of animals and of trees is visible in the water, hanging upside down. This occurs to the mystery of the stars and the zodiac, which hang upside down and are visible in the great sea. For the face of people and beasts and all trees hang on the root of the stars and the zodiac, being begotten from them. Just as their fathers, who are spread out above, hang upside down; so it is also that the mystery of their fathers is being revealed to them whenever they stare down into the water. This is, that you shall find their shapes inverted.
+The face of people and of animals and of trees is visible in the water, hanging upside down. This occurs to the mystery of the stars and the zodiac, which hang upside down and are visible in the great sea. For the face of people and beasts and all trees hang on the root of the stars and the zodiac, being begotten from them. Just as their fathers, who are spread out above, hang upside down; so it is also that the mystery of their fathers is being revealed to them whenever they stare down into the water. This is, that you shall find their shapes inverted.
 
-⟨p.255⟩
 Not only this, but [the] child who is born; as the ho[ur] approaches for him to be born, he hangs upside down and is born head first. Indeed, due to this, his mystery shall be revealed in these waters people stare down into.
 
-Furthermore, I reveal something else to you: Behold, you will find the shadow of the person who walks along is joined to the earth all the time. If the person is troubled [...] his shadow up upon the earth [...] above. It is impossible for him to do [... ...] on the earth. See, this mystery is [a] great sign, signifying that the entire body came from the earth and had ascended from the abyss. Again, due to this, its shadow is joined on the earth, turned downwards, and hanging from above.
+you will find the shadow of the person who walks along is joined to the earth all the time. If the person is troubled [...] his shadow up upon the earth [...] above. It is impossible for him to do [... ...] on the earth. See, this mystery is [a] great sign, signifying that the entire body came from the earth and had ascended from the abyss. Again, due to this, its shadow is joined on the earth, turned downwards, and hanging from above.
 
 **Temporal observations:**
-- ¶1: Question-frame with 'disciple' and 'apostle' marks the compiled Kephalaia dialogue apparatus; the remaining interrogative content is the technical prompt for the ensuing natural-philosophical correspondence teaching.
-- ¶2: Pure dialogue attribution ('Then the apostle says') plus a gnomic generalization about 'mystery' functioning as a rhetorical hinge; no systematic cosmological exposition.
-- ¶3: Impersonal correspondential mechanism (reflection-inversion → descent of the summons to the worlds of Darkness toward First Man) with process language; no citation or institutional vocabulary.
-- ¶4: Systematic paired correspondence (descent of summons / ascent of obedience-answer) using named cosmic beings (First Man, Living Spirit) in explanatory voice; 'revealed to you' is pedagogical but not the Kephalaia frame formula.
-- ¶5: Old cosmological science register: astral/zodiacal 'fathers' generating earthly life; explanatory causal chain and body-world linkage without ecclesial or NT mediation.
-- ¶6: Natural-philosophical extension (birth posture) presented as another instance of the same correspondential law; no frame formula or institutional application.
-- ¶7: Impersonal correspondence (shadow-fastening → body-from-earth/abyss ascent) framed as 'mystery' explanation; 'Furthermore, I reveal' is didactic continuation, not the apostle/disciple apparatus.
-
----
-
-## Chapter 102
-### Concerning the Light Mind, why it does not exercise Foreknowledge for the Saint as for the Apostle?
-
-*This chapter is dominated by dialogue frame plus institutional/hierarchical discourse (elect, apostle, holy church) and pragmatic ethical cautions (humility, disputes, money, magicians). Although the topic names the Light Mind, the treatment is not a systematic cosmological exposition but a community-facing rationale for withholding foreknowledge; it reads as compiled paraenesis within a Q&A frame rather than the older correspondential teaching core.*
-
-Happen you know that the Light Mind, who dwells in the elect, has the power to perform all these wonders among the faithful, all these signs that you have recounted to me; but the elect are not able to persist in the greatness that may be unveiled to them.
-
-**Temporal observations:**
-- ¶1: Explicit dialogue setup (‘Once again… questioned the apostle’) plus institutional terms (‘elect’, ‘holy church’, ‘apostle’) indicate hagiographic compilation frame; the paragraph is a question voiced in church hierarchy rather than impersonal cosmological teaching.
-- ¶2: A brief doctrinal claim about the Light Mind’s indwelling/power is embedded inside an explicit speech-introduction; however the statement remains tied to ‘elect/faithful’ capability rather than a systematic cosmological mechanism, so the ‘core’ fragment is uncertain and may still be secondary community teaching.
-- ¶3: Practical institutional concern (humility, rank confusion: ‘become an apostle’) with no cosmological mechanism; reads as disciplinary rationale.
-- ¶4: Second reason in a moral-psychological register (mutual contempt, exposure of shame); not systematic cosmology; functions as community guidance.
-- ¶5: Although it mentions ‘flesh’ and ‘sin’, the paragraph’s aim is ethical/institutional (prevent enmity/disputation among members). ‘sin that dwells in them’ is moral anthropology, not a mapped cosmological entity in a degree-structure exposition.
-- ¶6: Fourth reason: perseverance in righteousness vs returning ‘down to the world’; disciplinary/exhortative tone with lacunae; not core cosmological exposition.
-- ¶7: Fifth reason concerns abuse for profit (magicians, fortune-tellers, taking money): clearly pastoral/institutional policing.
-- ¶8: Concluding rationale explicitly ties the ‘five things’ to why revelation is withheld until leaving the body; still framed as practical policy for the elect rather than an impersonal cosmological description of Light Mind operations.
-- ¶9: Eschatological payoff (‘Then everything… is unveiled’) is the closure of the practical argument, not a structured cosmological mapping; functions as paraenetic reassurance.
-
----
-
-## Chapter 103
-### Concerning the Five Wonders that the Light Mind shall display in the Elect
-
-*This chapter is largely an institutional/ethical five-fold list aimed at the elect (preaching, faith, love, and especially legal excommunication). The only clear older teaching layer is the brief, impersonal cosmological-mechanical assertion that the Light Mind implants these five signs in the purified ‘new man’. The opening ‘apostle’ attribution is a compilation-frame marker; the closing beatitude and ‘faultless vessel/pearl’ rhetoric look like later moralizing rather than systematic cosmology.*
-
-The Light Mind shall enact five light signs in the elect.
-
-The Light Mind puts these five signs in the new man, [whom he has] purified, cleansed, supported and chosen [...]
-
-**Temporal observations:**
-- ¶1: The clause about the Light Mind acting is cosmological/impersonal and could belong to the teaching core; the ‘Once again…the apostle speaks’ is a classic Kephalaia dialogue-frame seam that cannot be core.
-- ¶2: Enumerated ‘first sign’ defined as preaching/proclaiming; institutional/paraenetic register about the elect’s activity rather than cosmological mechanism.
-- ¶3: Second sign defined as faith produced in hearers after preaching; catechetical/community-oriented, not systematic cosmological exposition.
-- ¶4: Third sign tied to ‘preaching’ and ‘assembly of his brethren’; even with lacunae, the social-ecclesial orientation is clear.
-- ¶5: Fourth sign is ‘love’ directed to wisdom and to ‘brothers and sisters’ seated before him—community setting and moral virtue list.
-- ¶6: Explicit church-discipline/institutional vocabulary (‘legal excommunication’, ‘church’) marks a later pastoral layer; this is not a cosmological five-fold degree map but governance.
-- ¶7: Impersonal, process/mechanism language with a named Manichaean cosmic entity (Light Mind) acting upon the ‘new man’; this is the closest to the older teaching voice.
-- ¶8: Beatitude-style exhortation (‘Blessed is every one…is diligent’) functions as moral encouragement rather than cosmological instruction.
-- ¶9: Rhetorical closure praising perfection (‘faultless vessel’, ‘pearl without price’) reads as edifying/paraenetic and not part of a systematic cosmological scheme; the page marker and phrasing suggest an editorial conclusion.
+- ¶1: Hagiographic/Q&A setup with disciple/apostle attribution (even though partially lacunose/bracketed). Functions as editorial container prompting the lesson, not the teaching layer.
+- ¶2: Dialogue attribution (“Then the apostle says…”) is a compilation-frame marker; the aphorism about the universe being ‘mystery’ reads like a framing maxim rather than systematic cosmological mapping.
+- ¶3: Correspondence stays cosmos→cosmos: reflection/inversion in water is mapped to the descent of the Summons toward First Man in the worlds of Darkness. Impersonal explanatory voice; no institutional or NT anchoring.
+- ¶4: Core is the internal cosmological mapping (obedience ascending from First Man to Living Spirit). The final sentence shifts to first-person revelatory pedagogy (“I have revealed to you”), a later didactic wrapper.
+- ¶5: Substrate correspondence remains within cosmic architecture (stars/zodiac as generative ‘fathers’; great sea; roots; begetting). The removed opening is audience-directed instruction, not part of the mapping itself.
+- ¶6: Natural/body-process correspondence integrated into the same ‘mystery’ logic without institutional polemic or citation. Though somewhat miscellanous, it still functions as impersonal explanatory teaching rather than churchly application.
+- ¶7: Core content is an anthropological-cosmological correspondence (shadow joined to earth ↔ body from earth/abyss ascent). Opening uses first-person revelatory address, indicating later didactic stitching between discrete teachings.
 
 ---
 
 ## Chapter 104
 ### Concerning Food: It shall be allocated to Five Products of the human Body.
 
-*Aside from the brief hagiographic dialogue opener, the chapter consists of an impersonal, systematic five-fold allocation of ingested food into bodily ‘productions,’ expressed in numbered sequence without citation, exhortation, or institutional application—characteristic of the old teaching layer.*
+*The chapter is a compact five-fold degree teaching about how ingested sustenance is apportioned into five “productions,” moving from invisible/inner outputs (rapture in the Mind; voice/word; strength/activity; sexual pleasure) to the visible corporeal creature (offspring). Aside from a brief formulaic opening, the voice is impersonal and schematic, with no NT citation, no institutional application, and no exhortation—consistent with the older correspondential teaching substrate.*
 
 This sustenance of various kinds that people gather in and eat, and enters the body; it shall be distributed to five productions.
 
@@ -4041,186 +3808,192 @@ The fourth is what is engendered by the pleasure of lu[s]t in men and women.
 The fifth is this that shall be formed and sculpted in the flesh, and be engendered and come from them. It is this corporeal creature; only its parents can recognise this creature that they beget. They are attentive to its desire and its thought and its [lo]ve every day, all the time. However, these other four forms they neither notice nor are concerned about; because they are not displayed.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue-frame opener (‘Once again…disciple’) typical of Kephalaia compilation apparatus.
-- ¶2: Impersonal, expository setup announcing a numbered five-fold scheme; no citation or institutional vocabulary.
-- ¶3: Numbered item in a structured list; physiological/psychological mapping (‘rapture’ → ‘Mind’ → ‘all his limbs’) in systematic descriptive voice.
-- ¶4: Continues the numbered five-fold distribution in terse, schematic style.
-- ¶5: List-structure persists; abstract faculties (‘strength and activity’) treated as products—fits old correspondential/functional exposition.
-- ¶6: Still within the five-fold enumerative teaching; no paraenesis or church regulation, just mechanism/production language.
-- ¶7: Expands the fifth item with explanatory contrast (visible child vs. unseen other ‘forms’). Still impersonal/descriptive, completing the five-fold schema without later ecclesial application.
+- ¶1: Formulaic hagiographic opening (“Once again… disciples”), functioning as editorial container rather than teaching.
+- ¶2: Impersonal, process-description introducing a numbered five-fold allocation; stays within an anthropological/correspondential system (food → bodily productions) without polemic or institutional pointing.
+- ¶3: Numbered degree exposition; “Mind” functions as an inner register and the description remains descriptive rather than hortatory—typical of systematic substrate teaching.
+- ¶4: Continues the five-fold list in terse definitional style; no frame, no application.
+- ¶5: Same schematic list style; degree mapping remains internal to the described human/body system.
+- ¶6: Still part of the enumerated production-series; descriptive rather than moralizing (no prohibition/imperative), suggesting substrate taxonomy rather than pastoral admonition.
+- ¶7: Completes the five-fold structure with a visible/invisible contrast (“displayed” vs not), still staying within the internal system of productions and perception; no editorial seam into church practice or Gospel overlay.
 
 ---
 
 ## Chapter 106
 ### There is no Joy that shall remain in the World till the End.
 
-*Aside from the formulaic dialogue opening in ¶1, the chapter reads as continuous impersonal cosmological exposition about the sun and moon’s non-joy during the mixture, structured by an explicit two-reason enumeration (“one… second…”). No NT citation, no institutional/pastoral drift; second-half cosmological increase fits a tightening of the teaching rather than editorial fatigue.*
+*This chapter is overwhelmingly core cosmological teaching: an impersonal, system-expository account (with numbered causes) of why the Sun and Moon cannot rejoice during the time of mixture, grounded in the ongoing rule of the Enemy and the oppression of the Living Soul. Only the opening dialogue attribution is later frame.*
 
 There is not [o]ne person [existing in] the world, standing firm [i]n mixture, for whom joy remains to the end.
 
-Not only people, even the sun and the moon, the light-givers of the heavens, [ ... ] nor are they oppressed, they know not [ ... s]et firm in a summons and an [obe]dience. Nevertheless, they too, they do not rejoice completely.
+Not only people, even the Sun and the Moon, the light-givers of the heavens, [ ... ] nor are they oppressed, they know not [ ... s]et firm in a summons and an [obe]dience. Nevertheless, they too, they do not rejoice completely.
 
-So, one: Their eyes stare at their enemy, they [perceiv]e him and also look at his ugly shapes. They [s]ee him, that he is alive and established and is king above and below, in secret and manifest. He does every thing that he wants according to his wil[1].
+So, one: Their eyes stare at their Enemy, they [perceiv]e him and also look at his ugly shapes. They [s]ee him, that he is alive and established and is king above and below, in secret and manifest. He does every thing that he wants according to his wil[1].
 
-[The s]econd: They perceive the living soul, they see [i]t and that it is ensnared and set in a great [fetter] above and below, in the tree and in the flesh, [ ... ] with every oppression. It is being pressed, drawn near to [and] sliced and eaten as it comes up and down; from above below and from below above. It [is] despoiled and moved from body to body.
+[The s]econd: They perceive the Living Soul, they see [i]t and that it is ensnared and set in a great [fetter] above and below, in the tree and in the flesh, [ ... ] with every oppression. It is being pressed, drawn near to [and] sliced and eaten as it comes up and down; from above below and from below above. It [is] despoiled and moved from body to body.
 
-Now, because of their living soul that is loved by them and honoured of them, when they see it in oppression th[ey can] not [re]joice completely.
+Now, because of their Living Soul that is loved by them and honoured of them, when they see it in oppression th[ey can] not [re]joice completely.
 
-So, one about the soul; and one about their enemy whom they see ruling [in] what is not his own. He is proud and satisfied with a wealth that is not his own. Indeed, due to this, they do not rejoice in total; but bear up and swallow their heart until they cleanse the living soul and take it from the enemy's hands. Then they obliterate the death that is their enemy and they gather it in [and fetter it in the lump] for ever and ever.
+So, one about the soul; and one about their Enemy whom they see ruling [in] what is not his own. He is proud and satisfied with a wealth that is not his own. Indeed, due to this, they do not rejoice in total; but bear up and swallow their heart until they cleanse the Living Soul and take it from the Enemy's hands. Then they obliterate the Death that is their enemy and they gather it in [and fetter it in the lump] for ever and ever.
 
-When they will chain their enemy in the bond at the [las]t, then they will rejoice and no longer grieve from this t[ime]. Also, they become the very same as they were from the [start] for ever!
+When they will chain their Enemy in the bond at the [las]t, then they will rejoice and no longer grieve from this t[ime]. Also, they become the very same as they were from the [start] for ever!
 
 **Temporal observations:**
-- ¶1: Opening formula "Once again he speaks to his disciples" is a classic Kephalaia frame; the remaining sentence is a general doctrinal maxim about mixture/end in an impersonal voice, compatible with the older teaching layer.
-- ¶2: Cosmological focus (sun and moon as operative beings during mixture) without citation or ecclesial application; expository tone continues the teaching rather than framing it.
-- ¶3: Numbered, systematic reason (“So, one:”) and cosmic-agential language (Enemy ruling “above and below”) signal the older structured teaching register.
-- ¶4: Second enumerated reason; strong Manichaean mechanics of the Living Soul under oppression and transmigration (“moved from body to body”), expressed as process-description rather than exhortation.
-- ¶5: Integrates the prior mechanistic point into a concise causal statement; still cosmological, with no institutional or citation markers.
-- ¶6: Summative recapitulation of the two reasons (“one… and one…”) plus eschatological mechanism (cleansing, extraction from Enemy, fettering Death). No Gospel entry-vector; impersonal cosmological teleology.
-- ¶7: Eschatological closure in cosmological terms (chaining Enemy at the last; restoration “as from the start”). Reads as the completion of the teaching sequence, not a later ecclesial add-on.
+- ¶1: Opening formula flags editorial frame; the maxim after the colon is impersonal, cosmological (mixture/eschatological endurance) and fits the core voice.
+- ¶2: Cosmic actors (Sun/Moon as obedient light-vehicles) and a general rule about their affect during mixture; no citation, no institutional/pastoral targeting.
+- ¶3: Numbered causal analysis (“So, one:”) in an impersonal explanatory register; entirely cosmos→cosmos (Enemy’s rule and manifestations).
+- ¶4: Systematic “second” cause; classic Manichaean core mechanism-language (Living Soul in mixture, transmigration/body-to-body, oppression in matter) with no external application.
+- ¶5: Internal motivational logic within the cosmic system (luminaries’ relation to the Living Soul); still expository rather than exhortative.
+- ¶6: Summative two-cause structure and eschatological process (cleansing, extraction, final fettering). Despite a slight rhetorical tone, it remains fully cosmic and mechanistic (no institutions/audience address).
+- ¶7: Eschatological closure within the cosmology (final binding; restoration ‘as from the start’). No frame formula or Christian citation; consistent with core teaching endings.
 
 ---
 
 ## Chapter 107
 ### Concerning the Form of the Word, that [ ... 30 ... ]
 
-*A short analogical teaching: five speech-organs produce a word, compared to five craftsmen producing a coin. Only the opening clause in ¶1 is a mild compilation-style frame; the rest is impersonal, mechanical exposition with a five-fold structure typical of the older teaching layer. No NT overlay or institutional/pastoral drift is present.*
+*A short, tightly correspondential teaching: the word is produced through a five-member bodily mechanism, paralleled by five craftsmen producing a coin. Aside from the formulaic opening attribution in ¶1, the chapter stays wholly within an impersonal explanatory register (body-process ↔ artisan-process) with no institutional application or Christian citation.*
 
-[ ... ⟨p.261⟩ ... ] and the throat draws it up and the tongue spreads it out and the teeth cut it and the lips g[at]her it! The word shall come forth through the power of th[ese five] members and be heard outside.
+the production of the word t[hat comes] from the mouth and is heard by the [ears]. [ ... ⟨p.261⟩ ... ] and the throat draws it up and the tongue spreads it out and the teeth cut it and the lips g[at]her it! The word shall come forth through the power of th[ese five] members and be heard outside.
 
 Simila[rly] the coin: One shall pour it out and an [othe]r beat it and another trim it as it is turned, and a[nother] put the stamp on it and another wipe it in the sieve (?). [Behold], these five craftsmen shall shape and beautify [their] coin, and it comes amongst mankind. It becomes a posse[ssion] to be received and given.
 
 This is also the case with the [wor]d, as it is formed and embellished by five [member]s. It comes forth and is heard by the ears [of] others.
 
 **Temporal observations:**
-- ¶1: Five-member mechanical description (throat/tongue/teeth/lips + implied mouth) in an impersonal process voice looks like an older systematic analogy; the only late element is the introductory "Once again he speaks... He says" frame.
-- ¶2: Impersonal analogical exposition with an explicit five-fold set (“five craftsmen”) and no citation/biography/institutional register suggests the oldest teaching layer.
-- ¶3: Concluding structural restatement tying the five-member mechanism to the word; continues the same impersonal teaching voice without frame or overlay markers.
+- ¶1: Core correspondential mechanism (five bodily members producing audible word) is presented as process-description. The excised opening is a classic editorial/frame marker ("Once again...", "He says").
+- ¶2: Pure substrate-style analogy: fivefold process mapped to five agents/craftsmen; no dialogue frame, no exhortation, no institutional referent—correspondence remains within natural/systemic description.
+- ¶3: A compact recapitulation of the five-member mechanism; impersonal explanatory voice with no later overlay markers.
 
 ---
 
 ## Chapter 108
 ### Concerning the Seed Grain that shall be formed by the Elements, and also be destroyed by them
 
-*The chapter is short and dominated by an impersonal cosmological analogy (elements form/nourish/destroy). ¶1 is a clear hagiographic/dialogue frame. ¶3 introduces explicit church offices (“teachers and the elect”) and applies the pattern to institutional actors, so it is best dated as a pastoral editorial extension rather than the oldest teaching. The remaining paragraphs maintain a process-oriented cosmological voice (elements, lack/shortfall, Matter) without citation formulas.*
+*The chapter is dominated by a compact correspondential-cosmological teaching: growth/formation and destruction of a seed/grain by the (five) elements, extended into the Manichaean cosmology of Matter and shadow. The only clear late material is the hagiographic dialogue frame and one institutional graft naming “teachers” and “elect.”*
 
 “This seed grain and this barley grain that you see shall be formed and [...] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [...] it is destroyed [...] through [...] hunger.
+
+“In this way also Righteousness gathers the five to it.
 
 “In this way too, a lack and a shortfall shall occur from place to place through them; and they who have chosen it have gathered it in and beautified and attained it, while an affliction shall arise for it through those.
 
 “People also shall be caused to stumble on their account, through the energy of Matter that dwells in them. It has poured its shadow over them, just as it shall also pour its shadow over the elements and destroy the fruits of all the trees.”
 
 **Temporal observations:**
-- ¶1: Dialogue/frame attribution with titles (“apostle”, “builder of the church”) marks later Kephalaia editorial apparatus, not the underlying teaching.
-- ¶2: Impersonal, process/mechanics exposition using a numbered cosmological set (“five elements”) and natural-process analogy; no citations, no institutional vocabulary.
-- ¶3: Register shifts from cosmological analogy to church/institutional agents (“teachers and the elect”) who ‘choose/gather/ornament’; this is an editorial application of the analogy to Manichaean community structure.
-- ¶4: Continues the impersonal causal chain (‘through them… through those’) describing cyclic gain/loss/affliction without ecclesial markers; reads as continuation of the elements/mixture mechanics.
-- ¶5: Classic Manichaean cosmological mechanism language: Matter as an active principle (‘energy… dwells… poured its shadow’) operating on persons and elements; no NT entry-vector or frame formula.
+- ¶1: Dialogue attribution using "apostle" and "builder of the church" is compiling-community hagiographic frame; it is not part of the older cosmological exposition.
+- ¶2: Impersonal, process-focused mapping (seed/grain ↔ five elements; warmth/cold ↔ nourishment/destruction). Both sides remain within the cosmological/natural system; no institutional address or contemporary referents.
+- ¶3: Opening clause continues the correspondential pattern (a cosmic agent ‘Righteousness’ drawing ‘the five’), but the paragraph quickly pivots to explicit ecclesial categories (“teachers,” “elect”), indicating an editorial application graft.
+- ¶4: Continues the cyclical mechanism (formation/selection followed by lack/affliction) without naming church offices or giving exhortation. The referents (“them/those”) read as internal causal agents within the elemental/mixture system.
+- ¶5: Systemic cosmology: personified Matter as an active force with an ‘energy’ and ‘shadow’ acting on people and elements alike—still cosmos→cosmos (mixture mechanics), not an address, rule, or NT citation.
 
 ---
 
 ## Chapter 109
 ### Concerning the Fifty Lord's Days; to what Mysteries do they correspond? Or the Second (Fifty); to whose Sign (are they)?
 
-*The chapter opens with a full dialogue-question frame (¶1). The oldest layer appears in a compact numerological-cosmological exposition tying “fifty days” to the First Man via five-fold powers/garments and the Summons/Obedience as living food (¶2–4). The second half shows strong pastoral/institutional drift and explicit Christian/NT overlay (apostles, Christ’s fasting episodes, church bestowal), consistent with the fatigue score and the cited NT loci; these paragraphs are later editorial grafts rather than mixed survivals.*
+*The oldest teaching substrate appears mainly in ¶2–4: a correspondential-number structure (five garments × five powers = twenty-five limbs/sons) and a cosmological mechanism of ascent (Summons/Answer/Obedience) with “living food.” The chapter’s second half (¶5–8) is dominated by institutional fasting practice (catechumens/elect/church) and explicit NT/apostolic narrative (¶6–7), matching the strong editorial-fatigue signal. ¶3 shows a clear pivot from cosmological description to liturgical naming (“pentecost,” “archetypes of the holy days”) and fasting practice, so only its opening clause is extracted as core.*
 
-Happen you know that [in eac]h one of these five garments that the [First] Man summoned there are five powers. They shall be counted to the [ ... each] other, these five, and five times [ ... ] their number. However, at the time [ ... ] the summons went down. The answer wished to ascend with it. And the summons with the obedience [constitute] twenty-five characteristics in their twenty-five limbs, [which] are the sons of the Man. The summons and [the obed]ience were raised to the heights through them.
+Happen you know that [in eac]h one of these five garments that the [First] Man summoned there are five powers. They shall be counted to the [ ... each] other, these five, and five times [ ... ] their number. However, at the time [ ... ] the Summons went down. The Answer wished to ascend with it. And the Summons with the Obedience [constitute] twenty-five characteristics in their twenty-five limbs, [which] are the sons of the Man. The Summons and [the obed]ience were raised to the heights through them.
 
-⟨p.263⟩ Just as their fa[ther] the living Man raised himself up through them, by these these other ones have set up all things a[bov]e and below. Indeed, these are what are called pentecost, the fifty great days that are the [archetypes of the] holy [d]ays. They fasted from their [foo]d, [w]hich is their own.
+⟨p.263⟩ Just as their fa[ther] the Living Man raised himself up through them, by these these other ones have set up all things a[bov]e and below.
 
-So, from that time until [the time] of [the adv]ent of Jesus the Splendour, the glorious one who came [ ... / ... t]heir food which is the [ ... ] of sou[l], which is the summons and the obedience [ ... ] that spiritual food. They rele[ased ... ] all these fifty days, which [ ... ] this living food suffices for all of them. It filled them all with power and richness and life. Light [ ... ] this living food that [ ... ] became rich.
+So, from that time until [the time] of [the adv]ent of Jesus the Splendour, the glorious one who came [ ... / ... t]heir food which is the [ ... ] of sou[l], which is the Summons and the Obedience [ ... ] that spiritual food. They rele[ased ... ] all these fifty days, which [ ... ] this living food suffices for all of them. It filled them all with power and richness and life. Light [ ... ] this living food that [ ... ] became rich.
 
 **Temporal observations:**
-- ¶1: Classic hagiographic dialogue apparatus: disciple stands, petitions ‘my master’, ‘apostle’, request-to-recount formula. Institutional categories (catechumens/elect) appear as part of the compiler’s framing question.
-- ¶2: Core numerological mapping (5 garments × 5 powers = 25 limbs/characteristics) and impersonal cosmological mechanics (Summons/Answer/Obedience ascending) signal an older systematic teaching; only the speaker-attribution is later frame.
-- ¶3: Impersonal cosmological explanation anchored in the Living Man/First Man complex; ‘pentecost’ is used as a correspondential label for an archetypal fifty, not via Gospel/NT citation or church practice.
-- ¶4: Still systematic cosmology: ‘living food’ identified as Summons and Obedience, with Light-life enrichment mechanics. ‘Jesus the Splendour’ functions as a named cosmic entity in Manichaean hierarchy (not a Gospel citation), supporting core status.
-- ¶5: Registers shift toward institutional calendrical practice (elect fasting; ‘one hundred holy days’) rather than cosmological mechanism; reads as an editorial extension applying the numerology to community observance.
-- ¶6: Polemic and justification explicitly via Christian-apostolic tradition: ‘apostles themselves fasted… revealed them to their disciples.’ This language enters via NT/church memory, not the old cosmological teaching.
-- ¶7: Direct NT narrative exempla: Christ tempted by the devil, fasting; Simon the leper; days in the sepulchre. This is Christian overlay material (Gospel story-cycle).
-- ¶8: Institutional bestowal and church-wide implementation: ‘I have bestowed them on the entire church… catechumens… revealed in the church.’ This is an editorial-institutional application of the earlier cosmological scheme (a typical post-core extension in the fatigued second half).
+- ¶1: Formulaic dialogue frame and petition (“Once again… I beseech you, my master”), plus institutional categories (catechumens/elect) and the liturgical topic-setting; this is editorial apparatus rather than substrate exposition.
+- ¶2: Core arithmetic-correspondential structure (five garments/five powers → twenty-five limbs/sons) and internal cosmological mechanics (Summons/Answer/Obedience ascending) in an explanatory, system-descriptive voice. The only late element is the speech-tag opener, which is stripped.
+- ¶3: Opens in pure cosmological register (Living Man’s ascent; cosmic ordering above/below). The remainder explicitly re-labels the teaching in terms of liturgical “holy days” and fasting practice, indicating later editorial application.
+- ¶4: System-internal cosmology: Jesus the Splendour functions as a defined cosmic agent, and “living food” is identified with the Summons/Obedience mechanism sustaining powers. No Gospel citation formula or institutional instruction appears here.
+- ¶5: Institutional calculus and practice language (elect fast; ‘one hundred holy days’) applies the mystery directly to community observance; this is editorial application rather than substrate mapping.
+- ¶6: Anchored in Christian/apostolic tradition (“apostles themselves fasted… revealed them to their disciples”) and polemical comparison with ‘sects.’ This material enters via Christian overlay and community apologetic, not the pre-compilation cosmological substrate.
+- ¶7: Explicit NT narrative sequence (temptation by the devil; house of Simon the leper; three days in the sepulchre). Regardless of correspondential use, this enters the Kephalaia through Gospel tradition.
+- ¶8: Direct institutional bestowal to “the entire church,” with catechumen/elect fasting rules; this is a cosmos→church application paragraph (editorial extension), not substrate teaching.
 
 ---
 
 ## Chapter 110
 ### Concerning the Nourishment of the Person, for there are Powers in it [ ... / ... ]
 
-*This short chapter is overwhelmingly systematic teaching about bodily digestion as a purification mechanism (seals/rulers, cleansing, expulsion/transmigration). Paragraph 1 has a likely dialogue/frame incipit (“[Once again] speaks…”) that should be stripped; the remainder reads as impersonal cosmological-body mechanics. No NT overlay or pastoral institutional material is present.*
+*This short chapter is dominated by cosmological-physiological mechanism (microcosm/macrocosm digestion-as-purification; large enumerations of inner powers; expulsion of Darkness’s rulers via transmigration). Only a brief dialogue/frame cue appears at the start of ¶1 and can be cleanly removed.*
 
 exists [ ... ] daily to the body of the person [ ... ] there are two hundred and fifty thousand seals in it [ ... ] there are another two hundred and fifty thousand rulers [ ... ] they are cleansed and purified and enter [ ... ] ⟨p.265⟩ by the voice, by the word, and by the [ ... ... ] quiet with the silence at the time when his heart [ ... ... ] of God the Father.
 
 Also, the twelve [ ... ... ] rulers that belong to the Darkness shall be swept out outside in wandering and in transmigration [ ... ... ] some of them [ ... through] this transmigration, and others among them shall be brought back.
 
 **Temporal observations:**
-- ¶1: Opening ‘[Once again] speaks…’ is a compilation-frame marker (dialogue attribution). After removal, the paragraph is core-style: numbered/quantified cosmic-body mechanism (seals/rulers), purification process language, impersonal exposition, no citations.
-- ¶2: Systematic cosmological mechanics (twelve rulers of Darkness; sweeping-out, wandering/transmigration) in an expository voice with no institutional or NT citation signals; reads as part of the older cosmological-body purification teaching.
+- ¶1: Core mechanism and numeration (internal ‘seals’/‘rulers’ within the body; purification process described impersonally) indicate the old correspondential substrate; the only later element is the stereotyped frame incipit “Once again … speaks …”, which functions as editorial apparatus.
+- ¶2: Impersonal cosmological-eschatological process language (Darkness’s rulers; expulsion; wandering/transmigration) stays within the system and lacks citation, exhortation, or institutional application—typical of the teaching substrate.
 
 ---
 
 ## Chapter 111
 ### Concerning the Four Archetypes that occur in the Eye, and the Fifth that is hidden in them; to whom do they belong?
 
-*Very fragmentary. ¶1 and parts of ¶3 are wrapped in a formulaic dialogue frame (“Once again he speaks”). Where the text shifts into impersonal cosmological exposition (elements/domains; Living Air; First Man), that material likely reflects the older teaching layer. No NT/Christian overlay or pastoral institutional material appears here.*
+*Despite a formulaic opening, the surviving material is largely cosmological/correspondential: the eye’s perceiving functions are mapped to elemental/cosmic domains (fire/abyss/living air) and anchored in core Manichaean beings (First Man). The main late layer present is minimal dialogue/teacher-attribution framing and a brief didactic aside.*
 
 There are four aspects among mankind that perceive, as they perceive [...] without these four that are hidden in them [...] they belong [...]. So, [...].
 
 [...] that is in the [...] belongs to the fire. The darkness belongs to the abyss; but the light that perceives what is hidden in all these things, being clear, is the living air.
 
-How shall the pupil of the eye perceive? While it perceives by day, yet come the night it shall not perceive. What mystery does this matter signify? The pupil of the eye shall not [...] the mystery of the [...] is the door [...] below [...] the other four cardinal points. For in the [...] above. He has [...] great [...] they came down [...] living [...]. The First Man came forth from it and knew all things.
+The pupil of the eye shall not [...] the mystery of the [...] is the door [...] below [...] the other four cardinal points. For in the [...] above. He has [...] great [...] they came down [...] living [...]. The First Man came forth from it and knew all things.
 
 **Temporal observations:**
-- ¶1: The paragraph is introduced by a late formulaic speaker tag, but the content itself is schematic (“four aspects…”, a hidden fifth implied) and non-institutional, consistent with an older correspondential/cosmological mapping.
-- ¶2: Impersonal, classificatory cosmological statement mapping qualities/domains (Fire, Abyss, Darkness, Light, Living Air) with no citation or institutional address—typical of the older systematic teaching voice.
-- ¶3: The opening and ‘I will explain’ are characteristic kephalaia-style framing, but the surviving substance turns to a cosmological/mystery explanation (door, cardinal points, descent, and First Man’s emergence/gnosis), aligning with the core teaching layer despite heavy lacunae.
+- ¶1: Contains a hagiographic dialogue tag, but the remaining sentence(s) present a structural teaching about four perceiving aspects and a hidden fifth—an internal correspondential schema rather than institutional/pastoral application.
+- ¶2: Impersonal correspondential mapping (perceiving principle(s) → fire/abyss/living air) stays within the cosmic system, with no citation, exhortation, or institutional identification.
+- ¶3: Late catechetical/performative voice introduces the section, but the remainder is cosmological teaching: eye-structure as mystery/door within a fourfold schema and descent imagery culminating in the First Man—core system exposition rather than application to contemporary institutions.
 
 ---
 
 ## Chapter 112
 ### The Human is less than all the Things of the Universe, and he is rebellious beyond them all.
 
-*The chapter is dominated by a narrative/dialogue presentation (apostle on the road; disciple question; apostle reply) that belongs to the Kephalaia’s hagiographic compilation frame. Embedded within it are several impersonal, systematic teaching items: (a) a size-comparison cosmological illustration contrasting humanity with mountains/seas, and (b) a numbered five-item catechetical list containing standard Manichaean cosmological topics (aeons of greatness; Darkness; Light vs Darkness; descent to the province of death). Paragraphs with explicit dialogue attribution (“the apostle says/speaks”) are treated as mixed: the attribution is late frame, but the teaching content following it is extracted as core. Items strongly tied to apostolic/institutional authority (“proclaimed by the apostle”; exhortation to charity to the Cross of Light) are judged later pastoral elaborations rather than the oldest cosmological substrate.*
-
-⟨p.267⟩
-After he had stood [in] that place in the midst of the river, he shook his head. He [sa]ys: If one of all these five wo[r]ds of the f]lesh [ ... ] today on the surfaces of the earth [ ... ... ] out from [ ... ] which is deep. They will make it like [ ... ] and they set them in order [ ... with o]ne another, one [wi]th one upon the earth. They all [ ... ... ] up to the heights against the elevation of this mountain [ ... corresponding to] its height; they will neither come to breadth corresponding to [its] breadth, nor to width corresponding to its width, [nor to] depth corresponding to its depth.
+*The chapter is a composite: an opening hagiographic reminiscence (Mani ‘the apostle’ in a landscape scene) leads into a doctrinal dualist core arguing that evil/demonic powers are not from God. A Christian suffering/crucifixion question introduces later Christian overlay, but the reply preserves a core cosmological function of Jesus. The closing numbered catechetical lists (‘five great things’ / ‘three mighty things’) are largely later church-catechesis, though they embed several compact cosmological statements (aeons of Greatness, existence of Darkness, conquest motif, province of Death/flesh, Cross of Light).*
 
 Not only this, b[ut e/ach] one, all of them from their smallest to their g[reatest ... ] a single sea [ ... ] single [ ... ] but [ ... ] that [s]ea and they are swallowed an[d ... ... ] is in it [ ... ... ] they are in [ ... ] earth [ ... ... ] many [m]ountains [ ... ] sea in it, they [ ... ... ] are very [gre]at in their fa[shion ... ... t]hey did not guard against him [ ... ... ] the silence and they [ ... ] blasphemed hi[m] not, neither against his l[i/gh]t that is displayed, no[r] do they utter blasphemies [a]gainst his power that supports the totality, nor against the [e]ssence that is displayed indicating the totality, [nor] against the good works of righteousness. [They re]count no cause of evil after Go[d].
 
 However, [the i]dol of ill-fated human[it]y [ ... ... ] the one that will be unlike anything, that is equal [ ... ... ] great works; and it was found evil [by] God, the Lord of all. It even blasphemed again[st the] power that supports the totality, against its hol[y] light; [and it] profaned its glorious wisdom, bringing forth the cause of every sin. They say that every disgraceful wickedness and defilement, the rulers and the demons and the fiends and the satans, they say that they have come from God, that he is the one who [es]tablished them [ ... ... ] they came not from him, and they give false testimony about him.
 
-Jesus did not come and s[a]ve the world because of mankind alone, but [ ... he] came and revealed on earth [ ... ] was strong outside in [ ... ] And [whe]n he had finished doing his [t]ask outside [i]n the great u[ni]verse, he came [ ... he wen]t further with Adam and Eve and revealed [to them]. Even so, he sent the apostles to the good, [g]enera- tion by generation, and revealed to them five great thin[gs].
+Jesus did not come and s[a]ve the world because of mankind alone, but [ ... he] came and revealed on earth [ ... ] was strong outside in [ ... ] And [whe]n he had finished doing his [t]ask outside [i]n the great u[ni]verse, he came [ ... he wen]t further with Adam and Eve and revealed [to them].
 
-[Se]cond: He unveiled to them about the aeons [of the greatness], how they occur; and he taught them about [the manner of] the darkness, how it t[o]o exists.
+[Firs]t: He told them that they belong to the race of ligh[t].
 
-[The th]ird time: He proclaimed to them about the [l]ight great-[ness], how it has been active against the pow[er of] darkness and conquered it.
+[Se]cond: He unveiled to them about the aeons [of the greatness], how they occur; and he taught them about [the manner of] the Darkness, how it t[o]o exists.
+
+[The th]ird time: He proclaimed to them about the [l]ight great-[ness], how it has been active against the pow[er of] Darkness and conquered it.
 
 Fourth: He taught them that he came to the province of death [ ... ... ] that is flesh, until he should find profit and bring them from the gate of the underworld below, for [they had] been swa[ll]owed into it.
 
-All the faithful who believe this tr[u]th shall live by three great mighty things.
+Fifth: the rebels shall be bound in a great fetter, they who shall [r]ebel against the g[o]od
+
+the Cross of Light, which g[rie]ves in the totality, being present in what is visible and what is not vis[ib]le.
 
 **Temporal observations:**
-- ¶1: Travel vignette with “it happened one time as the apostle is travelling” is hagiographic/narrative apparatus rather than impersonal cosmological exposition.
-- ¶2: Impersonal illustrative teaching (cosmic/world-scale comparison) without Gospel citation, institutional rules, or praise-closure; functions as “how things are” demonstration.
-- ¶3: Cosmic/creational comparison culminating in a theodicy-style claim (“no cause of evil after God”)—argumentative cosmological theology rather than institutional instruction; no explicit NT entry-vector.
-- ¶4: Anti-monotheist polemic and denial that demons/rulers originate from God fits Manichaean cosmological-theodicy teaching; still cast as doctrinal exposition (not church regulation, not Gospel citation).
-- ¶5: Direct disciple-address and ‘our master’ request formula is classic Kephalaia dialogue frame.
-- ¶6: Explicit NT passion narrative elements (cross, hanging, torment/shame) as the entry-vector; this is Christian overlay even without a formal ‘as written’ citation.
-- ¶7: Frame attribution is late, but the content includes a standard impersonal cosmological role for Jesus in the ‘great universe’ (core). Mentions of ‘apostles’ are part of the catechetical setup but not an NT citation formula; retained as part of the list-introduction.
-- ¶8: Begins a numbered catechetical list but phrased as direct ‘He told them…’ within a narrative of sending apostles; without a clear impersonal cosmological mechanism here, and tightly bound to the narrative setup.
-- ¶9: Systematic cosmological content (Aeons of Greatness; Darkness; process ‘how they occur/exist’) matches core expository register.
-- ¶10: Light–Darkness mechanics expressed as process (‘active…conquered’) is a hallmark of the older cosmological teaching layer.
-- ¶11: Cosmological-soteriological mechanics (province of death/flesh; gate of underworld; swallowed) in impersonal explanatory mode; not a Gospel citation.
-- ¶12: Eschatological threat plus explicit institutional authority marker “righteousness that is proclaimed by the apostle” points to a catechetical/community enforcement add-on rather than the oldest cosmological substrate.
-- ¶13: The triadic schematic (‘three great mighty things’) is an older teaching style, but the dialogue tag is later frame.
-- ¶14: Identity-marking for ‘the faithful’ framed as community catechesis rather than cosmological mechanism; continues the ‘faithful shall live by…’ institutional register.
-- ¶15: Confessional/loyalty statement centered on believing ‘the apostle who has been manifested’ is community-legitimating material (Layer 3/2 blend), not the oldest cosmological instruction.
-- ¶16: Ethical injunction (‘restraint and charity’) and devotional focus on the Cross of Light in a prescriptive mode indicates institutional/pastoral elaboration, even though ‘Cross of Light’ is cosmological vocabulary.
+- ¶1: Hagiographic travel reminiscence using the title ‘apostle’ and narrative scene-setting; not systematic cosmological exposition.
+- ¶2: Continues the anecdotal landscape illustration (‘he says…’) rather than impersonal degree-structure teaching; ‘today’ anchors to a performed sermon scene in the editorial biography.
+- ¶3: Doctrinal-ontological argument (good God not source of evil) stated impersonally without institutional address; remains within cosmic/theological architecture (power/essence/totality) rather than church practice.
+- ¶4: Core dualist cosmology polemic: rulers/demons/fiends/satans are real powers but explicitly not from God; no Gospel citation or church-rule application.
+- ¶5: Dialogue frame/Q&A apparatus (‘Tell us, our master’) typical of the compiled Kephalaia setting.
+- ¶6: Explicit NT passion material (cross, enemies, torment/shame) and ‘son of the Living God’; this content enters via Christian narrative tradition rather than the impersonal cosmological substrate.
+- ¶7: Preserves a compact cosmological role for Jesus (‘task… in the great universe’, revelation to Adam/Eve) consistent with Manichaean cosmic hierarchy; later editor re-attaches it to apostolic mission/catechesis.
+- ¶8: Numbered doctrinal structure; anthropological ‘race of Light’ belongs to the internal Light/Darkness system rather than to contemporary institutions.
+- ¶9: System-internal cosmography (Aeons of Greatness; existence/manner of Darkness) in a numbered teaching list—strong core marker despite being presented as ‘revelation’.
+- ¶10: Core Light–Darkness mechanics (activity/conquest) expressed as cosmological process, not exhortation or church regulation.
+- ¶11: Mythic-cosmological descent/rescue motif (‘province of death… flesh… gate of the underworld’) remains within the Manichaean cosmic drama, not NT citation.
+- ¶12: Contains an older eschatological-cosmic motif (binding of rebels) but is framed and extended by later authority-language tied to the ‘apostle’ and proclaimed righteousness.
+- ¶13: Catechetical/institutional pivot: ‘All the faithful…’ plus ‘Once again the apostle speaks’ indicates compilation-frame + community instruction rather than impersonal cosmology.
+- ¶14: Defines group identity (‘race of faith and truth’) for ‘the faithful’—church-catechesis rather than cosmic architecture exposition.
+- ¶15: Institutional allegiance markers (‘believed the apostle who has been manifested’) and salvific tokens (‘right hand’, ‘peace from above’) in a community-facing list.
+- ¶16: Pastoral virtue language is used to motivate conduct, but the embedded description of the Cross of Light as present in visible/invisible totality reflects an older cosmological construct.
 
 ---
 
 ## Chapter 113
 ### The Chapter on whether any [Lig]ht comes from the Three Vessels.
 
-*This kephalaion is predominantly cosmological mechanism in an impersonal explanatory voice (gates, firmaments, rays, purification/casting down). ¶1 is a dialogue-frame question by the disciples. ¶2 begins with a clear dialogue attribution (“The apostle says…”) but then moves immediately into cosmological process; treating it as MIXED and extracting the teaching only per the rules.*
+*This chapter is almost entirely systematic cosmological mechanism (gates, firmaments, purification/refining of light). The only later layer present is the dialogue/hagiographic framing (“Once again…”, “The apostle says…”), which introduces the topic but does not add institutional or NT overlay content.*
+
+⟨p.268⟩
+They say: [Preac]h about this bit of life and light that comes from [these three] vessels that surround the universe [ ... ] life comes up [ ... ]
 
 [ ... ] b[u]t should the [ ... ] ascend [ ... ] light of the rays that [ ... ] which are received, which shine and go in through these great open gates, through these doors, firmament by firmament.
 
@@ -4229,17 +4002,17 @@ For four [gates o]pen in each world, distributed at the four points of the compa
 From that place [it] shall be poured [out to the] firmaments. It shall also be clarified in these firmaments [ ... ] a part there is cleansed and it is [all] taken up with the living ones. However, its other part [ ... ] shall all [be cast] down.
 
 **Temporal observations:**
-- ¶1: Hagiographic/dialogue frame: disciples question the enlightener; petition to preach. This is compilation apparatus rather than the underlying cosmological teaching.
-- ¶2: Core mechanism language follows immediately (rays, gates/doors, ascent through firmaments) in a process-oriented register; only the speaker tag is late.
-- ¶3: Systematic cosmological structure (four gates/compass-points; worlds/firmaments/vessels; light-rays extraction) in an impersonal explanatory voice; no citation or institutional language.
-- ¶4: Old teaching-style description of purification mechanics (clarified/cleansed vs cast down; taken up by ‘the living ones’) as a process, without frame, exhortation, or NT citation.
+- ¶1: Opening ‘Once again… disciples… our enlightener’ is the Kephalaia compilation frame; the question itself is cosmological (light/life ascending from the three vessels) and functions as a genuine teaching prompt rather than later pastoral application.
+- ¶2: The speech-heading is a late dialogue frame; what follows is impersonal cosmological process-language (rays/light entering through gates/doors across successive firmaments), staying cosmos→cosmos with no institutional or present-world anchoring.
+- ¶3: Systematic structural exposition (four gates; compass points; worlds→vessels linkage; light-transfer mechanics). No citations, exhortation, or institutional referents; the mapping remains internal to the cosmology.
+- ¶4: Pure mechanism of refinement and separation (clarified/cleansed; taken up by ‘the living ones’; remainder cast down). The voice is process-oriented and cosmological, consistent with the oldest teaching substrate.
 
 ---
 
 ## Chapter 114
 ### Concerning the Three Images that are in the righteous Person.
 
-*The chapter is overwhelmingly a systematic, process-oriented teaching about three internal "images" and the ascent/purification of the living soul through them, culminating in the Virgin of Light perfecting the spiritual image. Only the initial dialogue-frame incipit is later. No NT citation layer appears; institutional/pastoral material is minimal and integrated into the cosmological mechanism (food as vehicle for living soul).*
+*Apart from a brief hagiographic opening formula, the chapter is a continuous, systematic three-fold anthropological/cosmological exposition: the three images (spiritual/psychic/corporeal), the ascent/purification mechanics of the living soul through nourishment, and the completing action of the Light Virgin within the new man. No NT citation formulae, exhortation imperatives, or institutional rule material appear; the voice remains descriptive and process-oriented.*
 
 Three images occur in the elect person.
 
@@ -4251,58 +4024,52 @@ The other one is the corporeal image [that is] added to them all.
 
 These three images [ ... ] entirely. When it will [ ... ... ] through the nourishment of food. If it shall sink [ ... ... ] down to the corporeal image. [And] the corporeal, [that] is in it, shall divest itself of it and place it in the [ ... ] image. [ ... ] again it rises up and falls to the [ ... ] image; it shall divest itself of the psychical of the enemies, which [ ... ... ] anger. The lust [ ... ... ... ] with it.
 
-Then shall a light virgin come and reveal the spiritual image that is [there], which [is] the new man. That virgin acts as a guide. [She g]oes on before and it is extended to the heights above, and received into this spiritual image. And she [sculpts] it and adorns it with the new man [wi]thin. It is sealed with all the limbs of this light virgin who is present and dwells in the new man.
+Then shall a Light Virgin come and reveal the spiritual image that is [there], which [is] the new man. That virgin acts as a guide. [She g]oes on before and it is extended to the heights above, and received into this spiritual image. And she [sculpts] it and adorns it with the new man [wi]thin. It is sealed with all the limbs of this Light Virgin who is present and dwells in the new man.
 
 So, this is [h]ow this living limb shall be [puri]fied and live, the one that comes into the body of [the ri]ghteous one from without through the administration of food of various ki[nds], like this. The living soul shall be clea[n]sed entirely every [d]ay and traverse these three [im]a[ges].
 
 So, it shall divest itself of the body, which is not its own, in the corporeal. It shall also divest itself of the souls that are not its own, these that are mixed with it in the psychical [ ... ... ] anger and desire and [ ... ]-ness and foolishness and envy and strife; and these other wicked teachings that are not its own.
 
-However, in [the] spiritual image itself it shall live and be joined with [lo]ng-sufferingness, the perfection of faith and love that reigns over them all. It is the virgin of light who robes the new man and who shall be cal[l]ed ‘the hour of life’. S[he] is the f[irst], but s[h]e is also the last.
+However, in [the] spiritual image itself it shall live and be joined with [lo]ng-sufferingness, the perfection of faith and love that reigns over them all. It is the Virgin of Light who robes the new man and who shall be cal[l]ed ‘the hour of life’. S[he] is the f[irst], but s[h]e is also the last.
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic incipit (“Once again… speaks to his disciples”), a classic compilation frame marker; no teaching content.
-- ¶2: Numbered, schematic doctrinal proposition introducing a triadic structure; impersonal teaching voice without citation or ecclesial prescription.
-- ¶3: Systematic definition using named cosmological entity (Light Mind) functioning mechanistically (forms, indwells); characteristic core cosmological pedagogy.
-- ¶4: Continues the ordered triad with structural anthropology (“psychic… bound in the flesh”, old/new man) in an explanatory, non-parenetic register; no NT citation formula present.
-- ¶5: Completes the triadic scheme in concise classificatory style; looks like an inherited doctrinal list rather than editorial apparatus.
-- ¶6: Process-description of purification/ascent through graded images, with mechanistic verbs (“sink… divest… place… rises up”), and mixture/‘enemies’ language; despite lacunae, the voice remains systematic and cosmological.
-- ¶7: Named cosmological being (Virgin of Light) with defined function in the ascent/perfection mechanism; technical soteriology (guiding, sealing, limbs) rather than devotional or institutional framing.
-- ¶8: Explains the mechanism’s interface with practice (food as vehicle) but remains explanatory (“this is how… shall be purified”), tied to cosmological anthropology (“living limb/living soul”).
-- ¶9: Mixture/purification logic stated as a stripping process across levels; vice-catalog functions here as diagnostic of alien accretions within the mechanistic ascent, not as standalone moral exhortation.
-- ¶10: Culmination in the spiritual image with Virgin of Light’s action (“robes the new man”) and technical epithet (“hour of life”); no Gospel/NT citation formula, and the ‘first/last’ phrasing appears integrated into the cosmological identification rather than an explicit NT quotation.
+- ¶1: Formulaic dialogue/hagiographic incipit (“Once again… speaks to his disciples”), characteristic of the Kephalaia editorial frame.
+- ¶2: Begins a numbered/systematic triadic schema (three images) in impersonal expository voice; despite the church term “elect,” it functions here as a technical anthropological category within the cosmological mechanism rather than as institutional regulation.
+- ¶3: Systematic definition within a degree-structure (“first…”) using core cosmological entities (Light Mind; new man) in a mechanistic register.
+- ¶4: Continues the enumerated structure (“second…”) defining psychic image/old man in descriptive, non-exhortative terms; lacuna preserved.
+- ¶5: Completes the triad in schematic form; still definitional and internal to the system (corporeal/psychic/spiritual degrees).
+- ¶6: Process-description of purification/ascent through the three images, expressed as mechanics (sink/rise/divest/place) rather than ethical command; nourishment/food functions as part of the Manichaean cosmological economy of liberation. Lacunae preserved.
+- ¶7: Cosmic-agent mechanics (Light Virgin as guide, sealing/adornment) in an impersonal, functional register; wholly internal cosmos→cosmos description.
+- ¶8: Explanatory recap (“So, this is how…”) describing the mechanism of the living limb/soul traversing the three images; still descriptive rather than prescriptive. Lacunae preserved.
+- ¶9: Continues the same mechanistic “divesting” sequence through corporeal/psychic layers; vice-list functions as description of mixed accretions to be shed, not as direct moral exhortation. Lacunae preserved.
+- ¶10: Concludes the ascent by describing the perfected state within the spiritual image and the robing action of the Virgin of Light; the closing “first…last” may echo broader late antique religious diction, but it is not introduced via NT citation and is integrated as a cosmic-functional description.
 
 ---
 
 ## Chapter 115
 ### The Catechumen asks the Apostle: will Rest come about for Someone who has come out of the Body, if the Saints pray over and make an Alms-offering for him?
 
-*Core teaching is concentrated in the two archetypal cosmological exempla of ‘entreaty’ (Mother of Life → Living Spirit rescuing First Man; later powers → Third Ambassador purifying the living soul) plus a short liberation/rest sequence. Strong pastoral drift in the second half and a flagged editorial seam (¶42) indicate extensive later institutional application (church/catechumen/alms/remembrance). Several late dialogue/frame attributions (esp. ‘apostle’) wrap otherwise old material; these are stripped in MIXED extractions.*
-
-As to the question for which you ask me, the entreaty occurs and the true prayer occurs! For every elect person, if he beseeches charity in total faith, he is claiming a request from our compassionate Father. So, if he is beseeching over himself alone, he shall be favoured his entreaty; but if again he is beseeching on behalf of someone else, he shall be granted his request.
+*The chapter is framed as a catechumen’s question about prayer/alms for the dead (FRAME/PASTORAL). The oldest substrate appears chiefly in the archetypal cosmological exempla: primordial intercession by the Mother of Life for the First Man (grant of the Living Spirit), and the joint supplication of the great powers resulting in the Third Ambassador—plus fragments of a third episode including Jesus the Splendour in a cosmic (non-Gospel) role. The second half shows strong editorial fatigue into institutional practice (alms, remembrance, holy church, catechumens), with a clear editorial seam at ¶42.*
 
 For this entreaty has been since the beginning [...] the gods first made entreaty of their Father. They were granted their entreaty and their request.
 
-I will instruct you how it is that they shall beseech their entreaty from the first ones; or in what form they shall entreat their request, they who have asked for it [...] every thing.
-
 ⟨p.272⟩ The Great Spirit, the Mother of Life, she claimed and prayed and besought and glorified and praised the first established one, who is the Father. She besought him an entreaty. She claimed of him a request. She received a great gift; she and the many powers with her.
 
-She besought an entreaty on behalf of the First Man, because of how he had come forth and thrown himself down. He became distant from the Mother of Life. He separated from her and gave himself; in great affliction. He joined war on earth with the destruction and the grief and the weakness; in the worlds of darkness; in the abysses made of fear; in the midst of the demons' ditch; amongst the powers of the devil!
+She besought an entreaty on behalf of the First Man, because of how he had come forth and thrown himself down. He became distant from the Mother of Life. He separated from her and gave himself; in great affliction. He joined war on earth with the destruction and the grief and the weakness; in the worlds of Darkness; in the abysses made of fear; in the midst of the demons' ditch; amongst the powers of the Devil!
 
 Indeed, he is like a king standing in the midst of his enemies. And when the Mother of Life petitioned and prayed and glorified and praised the Father, the first established one, she did petition him that he might send a power; a protector and redeemer and helper for the son of God who is set in affliction.
 
 ⟨p.273⟩ Now, just as she had besought and interceded, so likewise was her prayer fulfilled and received into the presence of the Father of Greatness. He turned and gave to her her entreaty: the great power, the Living Spirit, the giver of ease. The Mother of Life and the Living Spirit came with great power to the borders of the territory. They brought the First Man up from that war and struggle, wherein he is set.
 
-He gave himself as a grace for the Mother of Life. He became estranged and far from her, the one whom his enemies (place) in great affliction, the one who is in the land of darkness since he became weak.
+He gave himself as a grace for the Mother of Life. He became estranged and far from her, the one whom his enemies (place) in great affliction, the one who is in the land of Darkness since he became weak.
 
 The Living Spirit grasped and took him in. He freed him. He set him right and gave him ease in the land of rest [...] the Living Spirit, the first giver of ease [...] the will of these three. The welcomer [...] find with the welcomer that [...
 
 [...] a great power [...] of the loved one [...] the First Man who had been far away. He had become distant. She had besought on his behalf. He was set fast in affliction. (The Living Spirit) went to the place of destruction and weakness, the one that freed and redeemed him and gave him ease from the affliction. He set him right with rest and joy. He has himself become rested, with him for ever.
 
-See now, I have taught you the first entreaty that the Mother of Life besought by her prayer. They granted her her entreaty.
+[...] and they built the universe and completed it with its firmaments, with its wheels, with the ships of light that are in the heights, with its fastenings, with its earths and its walls, with its vessels. They completed the universe and set it right by the fathers of Light.
 
-[...] and they built the universe and completed it with its firmaments, with its wheels, with the ships of light that are in the heights, with its fastenings, with its earths and its walls, with its vessels. They completed the universe and set it right by the fathers of light.
-
-The Great Spirit stood with the Beloved of the Lights, the Great Builder with the Living Spirit and the First Man. These five stood to prayer; they glorified and praised the Father, the first established one. They besought of him an entreaty. They claimed of him a request, that he might give them the power [...] the leader, a guide to all the things of activity that they had constructed. That he might come and purify the living soul that is set in affliction.
+⟨p.274⟩ Then, the Great Spirit stood with the Beloved of the Lights, the Great Builder with the Living Spirit and the First Man. These five stood to prayer; they glorified and praised the Father, the first established one. They besought of him an entreaty. They claimed of him a request, that he might give them the power [...] the leader, a guide to all the things of activity that they had constructed. That he might come and purify the living soul that is set in affliction.
 
 They prayed and besought their Father, and he received from them their prayer [...] he gave them their entreaty and their request [...] he summoned from him [...] which is the Third Ambassador. He, he came from the power of his greatness. He saw the entire soul, how it is entangled in a chain and set fast. It sees the things of activity that his brothers have constructed, that have come from the heights. Again, he saw the living soul, that it is entangled and set fast in a great torture. It is oppressed in the stink of the abyss that is joined with it.
 
@@ -4312,202 +4079,194 @@ And again, he too, the Ambassador, he fulfilled the will of these three; the wil
 
 The third is the transferral of the living soul that he had freed. He released it and gave it ease from the affliction. He became king and first to the entire body.
 
-Behold, I have instructed you as to the second entreaty by which they first besought the Father. They were given the Third Ambassador.
-
 Again, let us come to the third entreaty when they besought him the third time [...] displayed his image [...] he hid his image from the [...] he stood firm [...] they revealed [...] the light [...] the First Man [...] mock [...] to him in [...] which is exalted [...] garment [...] they were freed [...] to him [...] their voice [...] the body [...] prayer [...] it [...] beseech [...] the body [...] beseech [...] she besought [...] in [...] be free [...] Ambassador [...] and also [...]
 
 ⟨p.276⟩ [...] with the living ones and [...] for ever [...] the first [...] from the [...] he gave him the hope [...]
 
-Also, Jesus the Splendour perfected the will [...] the will [...] they found the light [...] the will of the [...] that he had [...] he gave them the power that is Jesus the Splendour. He granted the will of the elements. [...] for ever. This first [...] he was humbled, he was made free [...] the [...]-ness is displayed to his enemies. He received the hope [...] reveal [...] Jesus the Splendour, the light power [...] and the entreaty of the [...] of light [...]
+Also, Jesus the Splendour perfected the will [...] the will [...] they found the light [...] the will of the [...] that he had [...] he gave them the power that is Jesus the Splendour. He granted the will of the elements. [...] for ever. This first [...] he was humbled, he was made free [...] the [...]-ness is displayed to his enemies. He received the hope [...] reveal [...] Jesus the Splendour, the light power [...] and the entreaty of the [...] of Light [...]
 
-Now, just as this entreaty [...] the figure [...] that they have [...] this is also how [...] the figure of [...] you are set firm [...] Happen you know this: Every one [...] knows, he has perceived [...] all the things [...] out from [...] within him [...] upon him [...]
+[...] of the living soul that is entangled and bound in the entire universe. For it shall be freed and cleansed and purified and redeemed
 
-The first: [...] of the living soul that is entangled and bound in the entire universe. For it shall be freed and cleansed and purified and redeemed by cause of him.
+He redeemed the living person who is entangled [...] entirely. He has [...] his father, the first [...] he made redemption for the soul [...] that he had freed [...] the Light has pity [...] They shall make [...] ease. It shall be freed from affliction and come forth [...] for ever.
 
-He redeemed the living person who is entangled [...] entirely. He has [...] his father, the first [...] he made redemption for the soul [...] that he had freed [...] the light has pity [...] the way also [...] a request [...] affliction. Again, just as he has [...] of the light [...] give ease for his [...] grant the entreaty and the request [...] He besought for the soul [...] him, that had come forth from the world. They shall make [...] ease. It shall be freed from affliction and come forth [...] for ever.
+Indeed, this living soul that was freed by cause of this other soul; it too, that living soul, it shall be redeemed in the name of that person. It is redeemed and purified and attains its first essence. Also, it shall become his co-helper and beseeches for the soul of the one who has been freed from his body. He shall petition charity for it and forgiveness of sins from the powers of Light.
 
-Indeed, this living soul that was freed by cause of this other soul; it too, that living soul, it shall be redeemed in the name of that person. It is redeemed and purified and attains its first essence. Also, it shall become his co-helper and beseeches for the soul of the one who has been freed from his body. He shall petition charity for it and forgiveness of sins from the powers of light.
-
-Just as ease has come about for the living soul by cause of this soul, this is how this soul shall find ease and escape that body. It goes into the land of light [...] soul that was redeemed because of it [...] comes about for it; and it goes to the land of life and rest [...]
+Just as ease has come about for the living soul by cause of this soul, this is how this soul shall find ease and escape that body. It goes into the land of Light [...] soul that was redeemed because of it [...] comes about for it; and it goes to the land of Life and Rest [...]
 
 **Temporal observations:**
-- ¶1: Formulaic scene-setting (‘Once again… our enlightener… congregation’) is hagiographic frame.
-- ¶2: Beseeching address (‘my master… recount…’) and direct question setup = compilation frame.
-- ¶3: Still the catechumen’s question; includes retribution-by-deeds problem statement but remains dialogue frame, not impersonal cosmological exposition.
-- ¶4: Reiterated polite request (‘I beseech you… instruct me’) = frame continuation.
-- ¶5: Underlying maxim about efficacious entreaty is generic and could be old, but it is embedded in dialogue-attribution frame; institutional ‘elect’ language suggests early ecclesial redaction around an older motif.
-- ¶6: Opening claim about primordial ‘gods’ petitioning the Father fits core mythic register; sudden move to ‘holy church… Christ’ is later Christian/institutional extension.
-- ¶7: Transitional instruction into archetypal exemplum; still impersonal/mechanical (‘how… in what form’), without church rules or Gospel citation.
-- ¶8: Systematic mythic actors (Mother of Life, Father) in archetypal process-description; no frame formula/citation.
-- ¶9: Classic core combat-myth register (First Man, Darkness/abyss, demons) narrated as cosmological situation, not ecclesial exhortation.
-- ¶10: Archetypal supplication mechanics; ‘son of God’ here functions as a cosmic title within the mythic scene rather than a Gospel citation.
-- ¶11: Named Iranian cosmological beings in process sequence (petition → granting → descent/rescue) marks core.
-- ¶12: Continues core rescue/affliction description; impersonal cosmological register.
-- ¶13: Liberation-to-rest mechanics with core beings; fragmentary but still cosmological process language.
-- ¶14: Core redemption narrative; no ecclesial referents.
-- ¶15: Internal structuring (‘first entreaty’) is characteristic of systematic teaching units.
-- ¶16: Applies archetype directly to ‘faithful saints… over the one released from his body’—institutional practice application; this is precisely the kind of later ecclesial extension.
-- ¶17: Impersonal cosmography list (firmaments/wheels/ships of light) = core systematic universe-description.
-- ¶18: Core roster of beings (Great Spirit/Living Spirit/First Man) and ‘these five’ structured supplication for a cosmic ‘leader’ fits core; minor performative narration does not constitute Kephalaia frame.
-- ¶19: Core salvation-mechanism narrative: petition → emanation (Third Ambassador) → perception of bound soul; strongly cosmological/functional.
-- ¶20: Cosmic redemption process (‘underworld… fleshes of death… place of rest’) is core mechanics rather than church discipline.
-- ¶21: Continues archetypal supplication logic; ‘will of these three’ is intra-cosmic coordination.
-- ¶22: Numbered mechanism (‘third… transferral’) suggests an older systematic sequence; still cosmological.
-- ¶23: Formal closure of ‘second entreaty’ unit = didactic structuring typical of core.
-- ¶24: Direct application to ‘perfect elect and every catechumen… prayer in faith… for himself or another’ = institutional/pastoral, not mythic exposition.
-- ¶25: Highly lacunose but preserves core patterning (‘third entreaty… image… light… First Man… Ambassador’) without explicit church rules or Gospel citation.
-- ¶26: Too fragmentary for firm dating, but lacks institutional/citation markers; retained as probable core continuation of the mythic sequence.
-- ¶27: Despite ‘Jesus’ vocabulary, this is Jesus the Splendour as a named cosmological entity operating in the salvation mechanism (core), not a Gospel/NT citation.
-- ¶28: Very fragmentary; appears to generalize from archetypal ‘figure’/‘entreaty’ in a correspondential explanatory mode, without church-specific markers in the readable parts.
-- ¶29: Explicit ‘petition of the holy church’ is institutional application; fragment suggests late ecclesial framing of rest/ease.
-- ¶30: Alms and ‘remembrance’ for the dead; practice-focused and prescriptive—pastoral layer.
-- ¶31: Mechanistic liberation formula (‘living soul… entangled… freed/purified’) fits core, though now embedded in a later ‘four victories’ list; this item itself is cosmological.
-- ¶32: ‘Rest for the holy church… children of the church’ is institutional; even if it echoes liberation language, it is church-centered extension.
-- ¶33: Too lacunose, but readable ‘Father’ in the context of the ‘victory’ list does not preserve distinct cosmological mechanism; kept with surrounding pastoral sequence.
-- ¶34: Household/kin almsgiving and ‘remembrance… of the church’ = pastoral practice regulation.
-- ¶35: Catechumen + alms + sins; institutional and moralizing register dominates.
-- ¶36: Fragmentary but features catechumen/relative/sin—fits pastoral drift section.
-- ¶37: Paragraph blends institutional agent-language with older liberation mechanics (‘living person/soul entangled… light has pity… freed… come forth for ever’). Clean excision is possible because the cosmological mechanism clauses are distinct from the catechumen-reward scaffolding.
-- ¶38: Extended legal/ social analogy about a bound relative and advocacy; not cosmic mechanism—later paraenetic explanation.
-- ¶39: Fragment continues the analogy (‘petitions’), within pastoral explanatory section.
-- ¶40: Explicit explanatory address (‘(Mani) says: You have asked me…’) but focused on ‘sin… relative… intercession’ in the analogy register; late instructional prose.
-- ¶41: Continues institutional-charity logic (‘fill… masters with charity… achieves rest’) rather than cosmological mapping.
-- ¶42: Seam flag confirmed: mimics prior intercession analogy but shifts to church practice (‘remembrance in the church… holy church… catechumen’). Entire paragraph is editorial institutional extension.
-- ¶43: Cosmological soteriology (‘first essence’, ‘powers of light’) is core-like, but ‘forgiveness of sins’ and intercession-for-dead context may be a later adaptation; treated as mixed only cautiously—mechanism language appears older than the surrounding church practice material.
-- ¶44: Straightforward cosmological itinerary (escape body → land of light/life/rest) in impersonal explanatory voice.
-- ¶45: Dialogue attribution (‘Then speaks the apostle’) plus explicit catechumen mission, alms-offerings, remembrances, cup of water, exhortation; strong pastoral/institutional layer consistent with fatigue drift.
-- ¶46: Formulaic closing: listener praises/obeisance/thanks ‘my master’—hagiographic frame closure.
+- ¶1: Formulaic hagiographic scene-setting (‘Once again… our enlightener… congregation’).
+- ¶2: Direct petition formula (‘I beseech you, my master’) and Q&A setup; editorial container for the lesson.
+- ¶3: Questioning dialogue content about intercession vs retribution; not cosmological exposition, functions as Q&A frame.
+- ¶4: Reiterated petition to be instructed; framing rhetoric (‘honoured amongst people’).
+- ¶5: Dialogue attribution (‘the apostle speaks’) + institutional categories (elect) and practical assurance about prayer; not a cosmos→cosmos mapping.
+- ¶6: Opens with primordial cosmic precedent (‘since the beginning… the gods… their Father’ = substrate), then pivots to holy church/Christ legitimation (later institutional-Christian overlay).
+- ¶7: Didactic transition (‘I will instruct you…’) oriented to delivery, not an impersonal cosmological mechanism.
+- ¶8: Pure cosmological narrative of primordial intercession; named emanational beings in systemic relation (Mother of Life → Father).
+- ¶9: Cosmic drama internal to the system (First Man vs Darkness); no institutional application.
+- ¶10: Correspondential simile (‘like a king…’) used to describe cosmic state; request for an emanational helper stays within cosmology.
+- ¶11: Systemic mechanics of supplication and grant (Father of Greatness → Living Spirit) in impersonal cosmological terms.
+- ¶12: Continues cosmic predicament/restoration register (estrangement, Darkness as realm).
+- ¶13: Cosmic rescue and relocation into Rest; internal triadic will-language (‘these three’) typical of emanational schemata.
+- ¶14: Cosmic redemption sequence; ‘place of destruction and weakness’ is a cosmological locale, not social application.
+- ¶15: Segment marker (‘See now, I have taught you…’) functioning as editorial structuring rather than substrate exposition.
+- ¶16: Explicit application to ‘faithful saints’ praying ‘over the one… released from his body’; institutional practice anchor.
+- ¶17: Cosmic architecture inventory (firmaments/wheels/ships) in impersonal descriptive voice; cosmos→cosmos.
+- ¶18: Emanational council and petition (five powers) leading to a salvific ‘leader’; internal cosmological mechanism.
+- ¶19: Core salvation-engine episode: petition → emanation (Third Ambassador) → diagnosis of the soul’s entanglement.
+- ¶20: Cosmic operational description (redeem/free/set right in Rest); ‘charity’ here functions as a divine attribute within the system.
+- ¶21: Internal triadic/emanational ‘will of these three’ and petition logic; no church/application referent.
+- ¶22: Systemic result statement (‘transferral’/enthronement) in cosmological idiom.
+- ¶23: Editorial summarizing marker (‘Behold, I have instructed you…’), structuring the discourse rather than adding cosmological mechanism.
+- ¶24: Institutional application to elect/catechumen prayer in the church community; cosmos used to authorize practice.
+- ¶25: Highly lacunose but remains within the mythic-cosmological entreaty sequence (image/revelation/light/First Man/Ambassador).
+- ¶26: Fragment likely continuing the same cosmological episode; no institutional markers present.
+- ¶27: ‘Jesus the Splendour’ appears as a defined cosmic power within the emanational system (not a Gospel citation); internal ‘will’/‘elements’ mechanics.
+- ¶28: Fragmentary and turns toward second-person firmness/knowing (‘you are set firm…’), indicating application/exhortation rather than pure cosmology.
+- ¶29: Explicit ‘holy church’ intercession fragment; institutional anchoring.
+- ¶30: Alms/remembrance practice and ‘four victories’ list introduced; institutional discipline layer.
+- ¶31: Contains an old cosmological formula (‘living soul… entangled… universe… freed/purified’) embedded in a later practical ‘victories’ list about alms.
+- ¶32: Institutional seam-like extension (‘rest for the holy church… children of the church’) applying salvation language to church benefit.
+- ¶33: Too fragmentary, but situated in the ‘victories’ list tied to practice; no recoverable impersonal cosmological exposition.
+- ¶34: Purely practical/institutional: relatives, alms, remembrance ‘of the church’.
+- ¶35: Institutional and moral language (‘sins’, ‘limb’, ‘catechumen’) in practice context.
+- ¶36: Fragmentary institutional/kinship/sin vocabulary; no stable cosmological mechanism.
+- ¶37: Fragment preserves core salvation mechanics (‘redeem… entangled… Light has pity… freed from affliction’), but is embedded in late merit/intercession discourse about catechumens.
+- ¶38: Moral-legal analogy (bound person, promises, chiefs) used to explain intercession; not cosmological architecture.
+- ¶39: Tiny fragment within the same institutional analogy (‘petitions’).
+- ¶40: Dialogue re-entry marker (‘(Mani) says: You have asked me…’), functioning as editorial discourse management.
+- ¶41: Continues analogy in practical charity terms; explanatory pastoral layer.
+- ¶42: Seam flagged: explicit institutional extension (catechumen/household member, remembrance ‘in the church’, ‘holy church’). Entire paragraph is a cosmos→institution application graft.
+- ¶43: Despite practice context, the paragraph primarily describes an internal cosmic mechanism: redeemed soul attains ‘first essence’ and functions as a helper/intercessor before the powers of Light.
+- ¶44: Cosmic itinerary and result-state (escape body → land of Light/Life/Rest); impersonal soteriological mechanics.
+- ¶45: Late institutional charge to catechumens (alms-offerings, remembrances) with exhortational voice; strong editorial fatigue signature.
+- ¶46: Formulaic closing response (praise/obeisance/thanks), typical hagiographic closure.
 
 ---
 
 ## Chapter 116
 ### Concerning why if a [Nail] is cut the Person shall not be sick; but if a Limb is cut he shall immediately be pained.
 
-*This chapter is largely a dialogue frame (questions, 'apostle' attributions, closure). The oldest layer appears to be the impersonal correspondential analogy (body/earth; limbs/trees; kinds of trees regrowing vs not), embedded within the apostolic speech paragraph. No NT/Gospel overlay is present.*
+*This chapter is dominated by dialogue frame (disciple question, apostle-attribution, closing formulas). The only recoverable older teaching substrate appears in the apostle’s explanation using a correspondential analogy (body↔earth; limbs↔trees; regrowth vs non-regrowth), without NT citation or institutional/pastoral application.*
 
 Happen you know th[at the] body is like the earth, wh[ile these] limbs als[o ...] of it are like the trees. There are varieties [...] of tree you shall find growing on the earth. They ar[is]e and grow again and stand firm. They have not [... ...] Again, there are others that if they are cut shall not [grow ...] and they grow, as they are li[ke ...] which shall be cut and grow [...] and [...] they too that occur [...] they shall be cut and not grow, resembling [... neither] grow nor shall they [... ...] it [sh]all please him on [...] and grows [...] in impurity [... ...] from him. This flesh that is corrupt [... ⟨p.282⟩ ...] in the liv[in]g flesh and they [... ...] are somewhat sick.
 
 **Temporal observations:**
-- ¶1: Formulaic dialogue setup ('Once again', disciples, 'apostle') indicates hagiographic compilation frame.
-- ¶2: Disciple-to-master question with honorific address; despite discussing bodily mechanism, the speech-act framing and petitioning voice mark it as a later dialogue apparatus.
-- ¶3: Pure beseeching formula; no teaching content beyond requesting instruction.
-- ¶4: Dialogue attribution ('Then the apostle speaks') is a Layer-2 frame marker and cannot belong to the oldest substrate.
-- ¶5: Core teaching is the systematic analogy (body↔earth; limbs↔trees; species that regrow vs do not) in an explanatory, impersonal mode. The surrounding first-person didactic self-presentation is typical of the compiled Q&A homily style.
-- ¶6: Closure formula ('Behold, I have taught you...') signals the end of a framed homily segment.
-- ¶7: Audience-response/scene management ('disciple heard... he sat down') is characteristic closing frame narrative.
+- ¶1: Formulaic dialogue frame (“Once again… questioned the apostle”). Hagiographic/compilational apparatus rather than teaching content.
+- ¶2: Disciple-address and question form (“Tell me, my master…”) functions as Q&A apparatus; the paragraph is not an impersonal, systematic exposition and contains no self-standing cosmological mapping layer to extract.
+- ¶3: Beseech/request formula (“I besee/ch you… my master…”) is standard petition frame.
+- ¶4: Dialogue attribution (“Then the a[postle] speaks…”) is a compilation-layer marker; not part of the oldest substrate.
+- ¶5: Older correspondential teaching preserved inside a Mani-compilation dialogue: an internal mapping using natural degrees (body↔earth; limbs↔trees; regrowing vs non-regrowing kinds) that stays within the system and does not pivot to church discipline or contemporary polemic.
+- ¶6: Closing instructional formula (“Behold, [I have tau/ght you]…”) functions as chapter wrap-up, not substrate.
+- ¶7: Narrative closure about the disciple hearing and sitting down is hagiographic/editorial frame.
 
 ---
 
 ## Chapter 117
 ### Concerning why Some shall delay to come forth from the Body, and Others die in an instant.
 
-*This surviving leaf is highly fragmentary and dominated by dialogue frame and question-formulas. Only ¶2 preserves a small, non-attributed teaching fragment describing delayed release from the body; the actual explanatory mechanism (why delay vs instant death) is lost in lacunae.*
+*Highly fragmentary chapter. Most surviving material is dialogue frame (disciples beseeching, address to “apostle/master”, and a speech-introduction). Only one paragraph (¶2) preserves a non-framing explanatory sequence about differing death/exit timings; it contains no explicit institutional, pastoral, or NT overlay markers, so it is treated as the likely surviving core teaching—though the heavy lacunae make this uncertain.*
 
 The [sec]ond [ ... ] if he shall fall [ ... ... ] one [ ... ... ] one hour [ ... ... ] others who shall [ ... ... ] and they remain. They shall delay until they [ ... ... ] he is freed, and they delay to come toward [ ... ... ]
 
 **Temporal observations:**
-- ¶1: Hagiographic/dialogue frame: disciples question the apostle; petition formula 'We beseech you, our master' and instructional request. No independent cosmological exposition survives.
-- ¶2: Non-attributed, impersonal explanatory sequence (not a petition, not a dialogue attribution, no institutional/NT citation markers). Although extremely lacunose, what remains reads as the beginning of a typology ('The second...') describing differing durations until release, consistent with an older teaching list now broken.
-- ¶3: Renewed petition formula ('So, now, we beseech you, our master') and request for names; this is dialogue scaffolding rather than the teaching itself.
-- ¶4: Dialogue attribution ('Then he says to the...') without preserved content; such attributions are compilation-frame material and are not part of the oldest teaching layer.
+- ¶1: Dialogue frame: “Once again… disciples… questioned the apostle… We beseech you, our master… instruct us”. This is compilation-era hagiographic/Q&A apparatus, not the substrate teaching itself.
+- ¶2: Non-framing expository content describing differential timing in separation/freedom from the body (some immediate, others delayed). No institutional/polemical ‘nowadays’ anchoring, no imperatives, no NT citation formulae. Uncertain due to lacunae and the lack of explicit cosmological terms in what survives.
+- ¶3: Renewed petition formula (“So, now, we beseech you, our master…”) and request for instruction about ‘names’—a continuation of the Q&A apparatus.
+- ¶4: Speech-introduction seam (“Then he says to the…”) without preserved teaching content; typical compilers’ dialogue attribution.
 
 ---
 
 ## Chapter 118
 ### [ ... ]
 
-*Chapter 118 is essentially unrecoverable in the extant manuscript: both paragraphs are dominated by lacunae and contain no continuous, datable teaching sequence. No frame formulas, NT citations, or explicit institutional/pastoral markers survive either. Because no coherent cosmological exposition can be extracted verbatim, no core teaching layer can be safely recovered here.*
+*Chapter 118 is almost entirely lost (⟨p.283–284⟩). The surviving fragments lack explicit hagiographic frame formulas, NT citation formulas, or institutional/pastoral application. What remains reads like impersonal teaching continuation (“Again …”, cosmological terms like “light”, “universe”), but the damage makes the temporal assignment uncertain.*
+
+⟨p.283⟩[ ... 1º ... ] upon [ ... ] from [ ... ] thus [ ... ]
 
 ⟨p.284⟩[ ... 5 a]ll of them [ ... 11 ... ] that they shall [ ... 14 ... ] seven people [ ... 15 ... ] Again, he too, this per[son ... ] the time when [ ... ] of the light [ ... 19 ... ] the universe [ ... 2º ... ] is revealed [ ... ] take to the light [ ... utt]erly, the way that he exists [ ... 25 ... ] from [ ... ] these other three [ ... ]
 
 **Temporal observations:**
-- ¶1: Too fragmentary (mostly lacunae) to identify a stable teaching voice or any diagnostic markers of the old systematic cosmological layer. Classified non-core by default because nothing extractable remains.
-- ¶2: Possible remnant of an iterative teaching sequence (“Again…”) and cosmological exposition (“light”, “universe”, “is revealed”), but the heavy damage prevents confirming degree-structure/systematic mapping. Marked MIXED (i.e., uncertain salvage) rather than CORE because the surviving wording is too discontinuous to securely assign to the oldest layer.
+- ¶1: Extremely fragmentary; no visible frame address (“apostle…”, “disciples…”) and no pastoral or NT overlay markers. Classified as CORE only because nothing in the surviving words anchors it to later layers; confidence is low.
+- ¶2: Surviving cues (“Again…”, “light”, “universe”, “is revealed”) fit the impersonal cosmological exposition typical of the teaching substrate. No explicit institution/polemic (“today”, “church”, “catechumens”), and no Gospel citation formula. However, “seven people” is too unclear to date confidently (could be cosmological or later).
 
 ---
 
 ## Chapter 119
-### Chapter 119: [ ... ]
+### [ ... ]
 
-*Core material centers on the First Man’s steadfastness against the Darkness and his purifying/separating work (impersonal cosmic conflict mechanics and Light/Darkness geography). Several paragraphs are clearly embedded in later compilation frame (apostle/disciple rejoicing) and pastoral drift (catechumen language, exhortation to ‘my brothers and my limbs’), consistent with the chapter-level fatigue signal.*
+*The surviving chapter is a composite: an older cosmological-hagiological teaching about the First Man (approved/righteous/only-begotten; mission against the Enemy; steadfastness in the worlds of Darkness; purification/separation) is embedded within a later sermon-like application to the community (“my brothers and my limbs”, “you too”) and a closing hagiographic frame. The strongest institutional marker is the “first catechumen” language (para. 4), and the chapter shows notable exhortational drift in the latter half (paras. 6, 9–10), consistent with the fatigue signal.*
 
 ⟨p.285⟩[ ... ] and the [righte]o[usness ... ] is more than [the ... ] the voice through them.
 
-This one, whom they called “approved” [ ... ... ] they approved him in the midst of the ae[ons of] light. These numerous multitudes set him a[part], and he came forth against the enemy. They gave this name [ ... ... ] this matter [ ... ... ] who are numerous, that are in the aeons of light and who [are without] measure or number.
+This one, whom they called “approved” [ ... ... ] they approved him in the midst of the ae[ons of] Light. These numerous multitudes set him a[part], and he came forth against the enemy. They gave this name [ ... ... ] this matter [ ... ... ] who are numerous, that are in the aeons of Light and who [are without] measure or number.
 
-This one, [whom they called] “righteous”, because he is the first righteous one who had no sin amongst all of the aeons that belong to the light and the thought [ ... ] they knew him, so that [ ...
+This one, [whom they called] “righteous”, because he is the first righteous one who had no sin amongst all of the aeons that belong to the Light and the thought [ ... ] they knew him, so that [ ... becau]se he is the first [ ... ]ed his Father, who had sent him with five sons [ ... ] perdition.
 
 This one also [whom they called] “only begotten”, because he was established [ ... ] pour [ ... ] enemy.
 
-Again, just as the only begotten ones from your [only] begotten race and you [ ... ] according to flesh [ ... ... o]nly begot-ten also from gold and silver and all the [ ... ] of the universe.
+[ ... ... o]nly begot-ten also from gold and silver and all the [ ... ] of the universe.
 
-⟨p.286⟩Just as your father, [the F]irst Man, himself stood firm in the [midst] of all the worlds of darkness. He did not love [the] worlds of darkness, nor did he lust for them! Rather, h[is] thought and love for the household of his people is in h[i]m. Anything else that the enemy [ ... ] with his violent de[e]ds. Behold, (the First Man) toils and struggles; so that (the enemy) would be separat[e from] them and be cast out from them. And he purifies them and ma[ke]s them f[r]ee, and makes them as they were from the beginning.
+⟨p.286⟩Just as your father, [the F]irst Man, himself stood firm in the [midst] of all the worlds of Darkness. He did not love [the] worlds of Darkness, nor did he lust for them! Rather, h[is] thought and love for the household of his people is in h[i]m. Anything else that the enemy [ ... ] with his violent de[e]ds. Behold, (the First Man) toils and struggles; so that (the enemy) would be separat[e from] them and be cast out from them. And he purifies them and ma[ke]s them f[r]ee, and makes them as they were from the beginning.
 
-[ ... ] may they discover the remembrance of the household of his peo[ple], as he remains in this [place ni]ght and day.
+[ ... ] the remembrance of the household of his peo[ple], as he remains in this [place ni]ght and day.
 
 **Temporal observations:**
-- ¶1: Highly lacunose; no clear frame/pastoral/NT markers survive. Kept as MIXED (rather than CORE) due to uncertainty about whether lost context included dialogue attribution or other late apparatus.
-- ¶2: Dialogue attribution and compilation apparatus: “The a[postle] speaks…” is a Layer-2 hagiographic frame marker; no recoverable core teaching is present apart from vague referents.
-- ¶3: Systematic cosmological identification in an impersonal expository voice (aeons of Light, multitudes, sending-forth against the enemy) without citation or institutional instruction → core teaching layer.
-- ¶4: Core clause-set defines the First Man as ‘first righteous’ within the aeons of Light (cosmic taxonomy). The sudden insertion of “first catechumen…obeyed his Father” is a clear register shift into institutional vocabulary; best explained as later pastoralization of an older cosmological epithet.
-- ¶5: Continues the epithet-exposition sequence (“approved / righteous / only begotten”) in declarative teaching style without NT citation formulae; fragmentary but consistent with the older systematic naming of a cosmic entity.
-- ¶6: Second-person address and community-identification (“I tell you, my brothers and my limbs”), plus catechumen grouping and moral exhortation modeled ‘after the likeness’ indicates an institutional homily extension; this matches the chapter’s detected pastoral drift. Even where First Man language appears, it functions as exemplum for community discipline rather than as impersonal cosmological exposition.
-- ¶7: Mythic/cosmological generative language (“only begotten race…according to flesh…gold and silver…universe”) in an analogical formula (“Again, just as…”) without church offices or NT citation suggests a core correspondential cosmology fragment, though lacunae obscure details.
-- ¶8: Despite the comparative ‘just as’ rhetoric, the paragraph’s center is the cosmic mechanics of conflict and purification (worlds of Darkness; enemy’s violence; separation/casting-out; restoration ‘as from the beginning’)—a process-description typical of the oldest teaching stratum.
-- ¶9: Direct moral exhortation to the audience (“You too…stand firm in this body…its lusts”) applies the prior cosmological exemplar to personal discipline; this is homiletic/pastoral application rather than core system exposition.
-- ¶10: Very fragmentary; could be either a continuation of the cosmic ‘household of his people’ motif (core) or a devotional/pastoral wish-prayer. Marked MIXED due to uncertainty and lack of decisive markers.
-- ¶11: Formulaic closing typical of Kephalaia editorial frame: disciples rejoice, give glory, praise, obeisance to teacher, seating formula. Clearly later hagiographic apparatus.
+- ¶1: Highly lacunose but not marked by dialogue frame, Gospel citation, or institutional address; reads like a continuation of descriptive teaching rather than later Q&A or exhortation.
+- ¶2: Dialogue attribution with ‘The a[postle] speaks…’ is compilation-frame apparatus; by rule, ‘apostle’ is a later layer marker.
+- ¶3: Impersonal cosmic validation within the aeons of Light; focuses on what the being IS/does in the system (approval, separation, sending forth), not on community practice.
+- ¶4: Core substrate defines ‘righteous’ in cosmic terms (first righteous among the aeons of Light; mission ‘sent…with five sons’). The term ‘catechumen’ crosses into later church/institutional mapping and is therefore secondary.
+- ¶5: A title-definition formula for a cosmic figure (only-begotten) without explicit Gospel citation or community-address; despite lacunae, it reads as part of the older epithet-teaching sequence.
+- ¶6: Direct exhortation and audience address (“I tell you, my brothers and my limbs”) applying the epithets to ‘you’ and to catechumens/rebels; this is application-voice/institutional paraenesis rather than cosmological exposition.
+- ¶7: The surviving core fragment is a cosmos→cosmos material correspondence (precious metals ↔ cosmic generation). The surrounding second-person framing suggests later homiletic use.
+- ¶8: Cosmic process-description (steadfastness in Darkness; separation of the enemy; purification/restoration) stays within the mythic system and explains mechanics rather than giving institutional rules; second-person possessive (‘your father’) is rhetorically colored but still cosmological.
+- ¶9: Explicit application pivot (“You too…”) mapping the cosmic exemplar onto bodily conduct (‘this body… lusts’); exhortational paraenesis rather than system description.
+- ¶10: The retained fragment reads as a descriptive motif of the First Man/Light-household remembrance and vigilance; the surrounding wish-form suggests later homiletic framing.
+- ¶11: Formulaic closing scene of disciples rejoicing/glorifying and obeisance to the teacher—classic hagiographic frame appended to teachings.
 
 ---
 
 ## Chapter 120
 ### Concerning the Two Essences
 
-*This chapter is dominated by polemical argumentation against monotheism plus a Christian/NT proof-text (two trees/five trees) and eschatological warning. The oldest recoverable teaching appears only where the text states, in impersonal cosmological terms, the primordial two-essence schema (Light vs. Darkness; good vs. evil; life vs. death). Most of the rest reads as rhetorical dispute and later Christian overlay (beloved son/holy spirit, proof-text style), with no sustained systematic cosmological mapping beyond the initial dualist thesis.*
+*This chapter is overwhelmingly later polemic/application and Christian overlay (beloved son/holy spirit/advent; proof-texting with the five trees). Only a brief dualist cosmogonic statement about the two primordial essences looks like the older teaching substrate, and it is embedded in a hagiographic vision-frame.*
 
-[ ... the] two essences that are present at the beginning [ ... ] the light and the darkness, that which is good and that which is evi[], life and] death.
-
-For if God has hi[mself] created them, the one who does them [h]as [no] sin therein! If they did not come [about] from him, nor did he command them to be d[on]e, [y]ou are the one who will speak a lie against God, saying [that] all [these e]vil things come about from him [ ... ]
+the] two essences that are present at the beginning [ ... ] the light and the darkness, that which is good and that which is evi[], life and] death.
 
 **Temporal observations:**
-- ¶1: Begins with a clear frame tag (“Once again… our father… he saw… he says”) but contains a compact, impersonal cosmological axiom about the primordial two essences (Light/Darkness; good/evil; life/death) characteristic of the older teaching layer.
-- ¶2: Direct address and polemical setup against those who say “only one essence… nothing apart from God.” This is rhetorical/controversial discourse rather than systematic cosmological exposition; likely later homiletic-pastoral use within the compiled book.
-- ¶3: Catalogue of vices/evils (lying, adultery, idolatry, Mammon, etc.) posed as a disputational list (“tell me that…”). Moral-accusatory register without cosmological mechanics; functions as polemical exhortation rather than the impersonal teaching core.
-- ¶4: Exhortative conditional and threats (“why do you annul… do them… two woes… forgive their sins”). Institutional/moral admonition voice; no distinctive core cosmological structure.
-- ¶5: The opening dilemma (if God created evils vs. if not, don’t attribute them to him) is a generic dualist argumentative kernel that could preserve older anti-monist teaching. The later part introduces ‘beloved son/apostles’ and moves into the tree proof-text, indicating Christian overlay layered onto the earlier argumentative scaffold.
-- ¶6: Christian overlay: proof-text/citation style (“Once again he says…”) plus triadic Christian language (“beloved son… holy spirit”) and the ‘five trees’ motif functioning as a Gospel-derived authority vector rather than core impersonal exposition.
-- ¶7: Eschatological judgement/advent language with ‘beloved son’ and ‘holy spirit’—Christianized judgement scene; belongs to the NT/Christian synthesis layer rather than the oldest cosmological teaching.
-- ¶8: Parenetical warning about post-mortem witnessing and the impartial Judge; hortatory closure without cosmological structuring or mapping. Could be editorial admonition appended after the polemic/proof-text.
+- ¶1: Opens with a recurrent frame formula (“Once again… our father… he saw…”) and vision report, but the embedded statement is impersonal, cosmogonic dualism (two essences at the beginning: light/darkness; good/evil; life/death), consistent with the older substrate.
+- ¶2: Direct address and polemic against contemporary monotheist claims (“you… say that only one essence exists… apart from God”), mapping teaching to an audience’s present doctrine rather than expounding cosmic mechanics.
+- ¶3: Catalog of moral/social evils (lying, adultery, theft, idolatry, Mammon, etc.) framed as a rhetorical challenge about their origin; this is application to human behavior and the editor’s world, not a cosmos→cosmos correspondential exposition.
+- ¶4: Imperative taunt and moral-legal reasoning (“why do you annul… If they are his, you do them!... You forgive their sins…”). This is exhortation/accusation rhetoric anchored in community practice.
+- ¶5: Explicit Christian overlay markers (“his beloved son”, “apostles”) and parable language about trees/fruit; even where it continues a dualist argument, its vehicle is Christian proof-text style rather than the older systematic cosmological mapping.
+- ¶6: Citation-style continuation (“Once again he says…”) plus the five-trees proof-text and Trinitarian/kingdom language (“beloved son… holy spirit… kingdom”), indicating entry via the Christian/Gospel tradition.
+- ¶7: Eschatological warning with Christian courtroom/advent language (“beloved son… holy spirit… last day… his advent”): a later Christianized admonition rather than substrate exposition.
+- ¶8: Second-person exhortation/threat (“You shall… see these things that I have recounted… before the Judge of truth”), dominated by application voice and judgment warning; no internal cosmological mapping is being taught here.
 
 ---
 
 ## Chapter 121
 ### Concerning the Sect of the Basket
 
-*The chapter opens with a clear hagiographic/biographical frame (¶1) and then moves into an analogy about the ‘basket’ sect (¶2–3) that functions as rhetorical/polemical instruction rather than systematic cosmology. A strong institutional/almsgiving paragraph (¶4) reads like an editorial/pastoral extension (and explicitly identifies the ‘basket’ with the holy church). The oldest layer is most visible in the fragmentary cosmological scaffolding of ¶5–6: numbered angelic/power structures, pillars, disk, sea surrounding the universe, and the Living Spirit’s garments—impersonal system-talk despite lacunae. Dialogue attribution (‘The apostle…’) is treated as late frame and stripped when extracting core.*
+*Most of the chapter is late narrative/polemical material about a presbyter of the “sect of the basket” and alms/church application (¶1–4). The recoverable older teaching substrate appears only in the fragmentary cosmological catalogue (¶5–6), where a cosmic architecture is enumerated (Mind/Youth/angels/pillars/sea/supporting powers; then twelve powers, images, three pillars, garments of the Living Spirit, Great Porter). The phrase “holy church” inside the cosmological list in ¶5 looks like a later institutional graft into an otherwise systematic exposition.*
 
-So, [the uni]verse in which you stand is like a tree; while you are like the fruit that hangs from the tree. Now, if you yourself had been plucked from the universe with the basket, then well could you call yourself the son of the basket! However, if up till now you are entangled in the universe; how then do you call yourself the son of the basket, before you are plucked from the universe like a fruit? For as long as it hangs from the tree, it shall not be called ‘alms’. And you too, as long as you are entangled in [the] universe you [shall not be] well called the son of the basket.
-
-The [...] and the great [...] and the great Mind that is [...] this Youth that is with the [...] thirty-six angels [...] twenty-two angels [...] but [...] of the twenty-two [...] ⟨p.290⟩ the seven pillars that stan[d ...] the sea that surrounds the universe [...] four angels that are distributed to the [...] universe, supporting the mightiness [...] below, which is the earth of all the heavens [...] these other five gods, the sons of the Man, they that [...] the universe is stood firm [...] the summons and the obedience [...]
+The [...] and the great [...] and the great Mind that is [...] this Youth that is with the [...] thirty-six angels [...] twenty-two angels [...] but [...] of the twenty-two [...] ⟨p.290⟩ the seven pillars that stan[d ...] the sea that surrounds the universe [...] four angels that are distributed to the [...] universe, supporting the mightiness [...] below, which is the earth of all the heavens [...] these other five gods, the sons of the Man, they that [...] the universe is stood firm [...] the Summons and the Obedience [...] and the Adamant of Light [...] they are become enemies [...] they guide it.
 
 The third also, [...] below, there are twelve powers standing firm there. However, the number of the twelve images [...] the three great pillars of mightiness that [...] pillars supporting the disk [...] the other three [...] they are the garments that the Living Spirit [...] he put them at that time [...] that threw them, together with [...] which is displayed therein [...] this [...] perfect before [...] great Porter [...] in his power [...] these are the three great [...] against [...] are in the midst of people [...] knows [...] entrusts his soul to them [...].
 
 **Temporal observations:**
-- ¶1: Formulaic scene-setting: ‘Once again… our enlightener… sitting…’ plus narrative about Babylon and a presbyter. This is compilation frame/biography, not the impersonal teaching voice.
-- ¶2: Explanatory/polemical etymology (‘Why do they call it…?’) about fruit/grapes/apples and a basket. No cosmological mechanism; reads as rhetorical setup within the narrative episode rather than a systematic teaching layer.
-- ¶3: Underlying teaching is an impersonal cosmological analogy (universe-as-tree; entanglement in the universe) with process logic (‘plucked’/released). But the preserved dialogue attribution is late frame, so the paragraph is MIXED.
-- ¶4: Institutional/almsgiving exhortation (‘alms-giving’, ‘possessions’, ‘holy church’) presented as blessing over a group; explicit identification ‘basket… is the holy church!’ strongly indicates later ecclesial graft, matching the chapter’s second-half pastoral drift.
-- ¶5: Core is indicated by systematic cosmological enumeration (angels in numbered sets; seven pillars; cosmic sea; supporting angels; ‘earth of all the heavens’; ‘sons of the Man’; ‘summons and the obedience’ as cosmic mechanics). The ‘holy church’ clause is a register shift toward institutional vocabulary, likely a later graft.
-- ¶6: Impersonal, structural cosmology: numbered powers/images (twelve), triadic pillar structure, ‘disk’, ‘garments that the Living Spirit… put’, and named cosmic functionary (‘great Porter’). No citation formulas or church discipline; despite lacunae this reads as the oldest systematic teaching layer.
+- ¶1: Hagiographic/narrative setup: “Once again… our enlightener… sitting…”, location (Babylon), arrival of a presbyter; this is compilation frame, not substrate teaching.
+- ¶2: Etiological explanation of the sect-name via fruit-picking/basket imagery. Even though it uses natural imagery, the referent is a contemporary sect practice/label, not cosmos→cosmos mapping; no systematic cosmological structure.
+- ¶3: Dialogue attribution plus direct second-person application to the presbyter (“you… son of the basket”), using the universe-tree metaphor to argue identity/alms status. Cosmos is used to point at a contemporary person/sect, so this is editorial application rather than impersonal substrate exposition.
+- ¶4: Blessing/alms-giving praise and explicit institutional identification: “basket… which is the holy church!” This is church-facing application; register is paraenetic and communal rather than cosmological mechanics.
+- ¶5: Underlying material is a systematic cosmological list (Mind/Youth/angelic numbers/pillars/encircling sea/supporters/five gods/Summons/Obedience/Adamant of Light), characteristic of the older expository substrate. However, it is embedded in a dialogue frame and contains an intrusive church-reference, indicating later editorial embedding/application.
+- ¶6: Impersonal, structural cosmological exposition: numbered powers/images, pillars supporting the disk, ‘garments’ of the Living Spirit, Great Porter—classic cosmos→cosmos mechanics. The closing clause mentioning ‘people’/‘soul’ could be a slight drift, but it remains tied to the functioning of cosmic powers rather than institutional directives or NT citation.
 
 ---
 
 ## Chapter 122
 ### Concerning the 'Assent' and the 'Amen'
 
-*Core material survives mainly as a short cosmological explanation of the archetypal pair (summons/obedience) functioning as ‘portals’ in the redemption of the First Man and related aeons (¶3 and the non-institutional portion of ¶4). Most of the chapter is later institutional/liturgical application (congregational responses, sealing, alms, help in sickness/temptation), with a late hagiographic Q&A frame (¶1–2) and a formulaic doxological closing (¶17). Editorial fatigue and Gardner’s christian_connection align with the heavy church-prayer material in the second half. ¶4 is mixed because it begins in cosmic-register exposition but then (via a seam into “the holy church/teacher…”) shifts to institutional extension; the church-application must be removed from core_text.*
-
-The assent and the amen have come about from these great ones of the powers. They were given the name as the assent belongs to the summons and the amen belongs to the answer.
+*This kephalaion is dominated by a late liturgical/institutional exposition about the community’s use of “assent” and “amen” (sealing prayers, congregational response, healing/temptation narratives), with strong pastoral drift after the initial cosmological claim. The oldest recoverable substrate here is brief: a systematic cosmological description of Summons and Obedience as “portals” of mercy/entreaty in the redemption of First Man, and (partly preserved) their function as helpers/purifiers of the Living Soul. The explicit move to the “holy church,” congregation practice, “elect,” and apostolic naming is later.*
 
 Just as the summons and the obedience are the ones that opened the portals of mercy and entreaty for the First Man, so they also became portals for the Mother of Life and the Father of the living. The First Man sought and found his redeemer. And also the Mother of Life and the Father of the living sought [...] this runner, who came forth from them, who is the First Man; but the summons and the obedience became the portals for them.
 
@@ -4515,22 +4274,22 @@ Just as the summons and the obedience are the ones that opened the portals of me
 Now, in this way they have become portals for the aeons of greatness towards the First Man, and the soul that was conjoined with death. They became helpers [...] of the First Man during his ascent. They gave him [...] the Father of Life and the Mother of Life [...]. They are purifiers of the living soul, being helpers and bestowers of remembrance for it, be it either in [...] in the tree or in the creation of flesh [...].
 
 **Temporal observations:**
-- ¶1: Direct disciple-to-master question and address formula (‘Once again… Tell me, my master…’) is hagiographic dialogue frame.
-- ¶2: Underlying content is impersonal definitional cosmology (pairing assent/amen with summons/answer), but introduced by a clear dialogue attribution that must be stripped (Layer-2 frame).
-- ¶3: Systematic cosmological mechanism (‘portals’) applied to named aeons (First Man, Mother of Life); impersonal explanatory voice, no institutional exhortation or citation.
-- ¶4: Begins as core cosmological exposition (aeons of greatness, First Man’s ascent, purification/remembrance of the living soul), then shifts into institutional vocabulary (‘holy church’, ‘teacher’) consistent with an editorial seam extending the pattern to the community.
-- ¶5: Liturgical/instructional purpose (‘uttered over the psalm… prayer… seals the blesser’)—institutional prayer practice, not cosmological mechanism.
-- ¶6: Congregational rubric (‘when the congregation… they all answer… verily and amen’)—church practice.
-- ¶7: Devotional exhortation to the hearers (‘all of you… rejoice… new birth daily’) without systematic cosmological mapping; community-focused register.
-- ¶8: Although it uses ascent imagery, it is driven by congregational utterance and explicitly links efficacy to communal acts (‘great crowds’, ‘their joy and their alms’)—institutional/pastoral application.
-- ¶9: Practical benefit of prayer-response for sickness/danger—pastoral miracle-help motif, not core cosmological teaching.
-- ¶10: Continuation of healing-help claim (‘great help comes…’) in the same pastoral register.
-- ¶11: Explicit elect-discipline and moral struggle (‘among the elect’, ‘confesses his sin’, ‘charity’, temptation annulled) indicates institutional layer.
-- ¶12: Prayer rubric applied to an individual (‘whenever a prayer… over that person’)—pastoral practice.
-- ¶13: Mythic ‘ships’ appear, but the paragraph is too fragmentary and functions as applied efficacy of assent/amen going up; no systematic cosmological exposition remains—best treated as later devotional/pastoral use of cosmological imagery.
-- ¶14: Narrative exemplum of rescue/judgement with ‘they who guide’ and calling over him assent/amen—practical piety story rather than core structural teaching.
-- ¶15: Direct exhortation (‘your own cry… answer…’)—liturgical/pastoral address.
-- ¶16: Appeal to ‘apostles, the first fathers’ suggests Christian-apostolic legitimation; this is a Christian overlay/historical-ecclesial appeal rather than cosmological teaching.
-- ¶17: Formulaic closing reaction (‘he glorified…’)—hagiographic/editorial closure.
+- ¶1: Dialogue request formula (“Once again… disciple… Tell me, my master…”) and blessing/prayer setup; functions as hagiographic framing for instruction.
+- ¶2: Etiology of liturgical words (“assent/amen”) by mapping them onto cosmic hypostases (“summons/answer”). Even though it uses “powers” language, it primarily explains contemporary prayer vocabulary rather than expounding a closed cosmos→cosmos mechanism.
+- ¶3: Impersonal, systematic cosmological mechanics (“opened the portals… for First Man… Mother of Life… Father of the living”), staying within the redemption architecture without audience-address or institutional anchoring.
+- ¶4: Begins as core cosmological continuation (aeons of greatness; ascent; purifiers/bestowers of remembrance). Then crosses the boundary into ecclesial identification (“holy church,” roles like “teacher”), indicating a later editorial application grafted onto an older teaching sequence.
+- ¶5: Liturgical rubric: utterance “over the psalm… prayer… entreaty,” and the notion that assent/amen “seal the blesser.” Institutional practice, not substrate cosmology.
+- ¶6: Congregational-response instruction (“when the congregation… they all answer… verily and amen”), explicitly community ritual practice.
+- ¶7: Direct audience-address (“Happen you know… in all of you”) and devotional claim about “new birth daily” tied to the community’s experience; homiletic application voice rather than systematic cosmology.
+- ¶8: Cosmic imagery (image ascending to “land of tranquillity and peace”) is deployed to validate congregational utterance and explicitly includes “people” and “alms,” anchoring it in communal piety and practice (cosmos used to point at contemporary ritual merit).
+- ¶9: Prayer-efficacy for sickness/danger; situational pastoral use of assent/amen, not degree-structured cosmological exposition.
+- ¶10: Continuation of help/healing motif; application to a person’s condition.
+- ¶11: Explicit institutional category (“elect”), moral/temptation counseling, charity request, confession; this is church-discipline and pastoral care language.
+- ¶12: Generalized prayer-over-a-person efficacy; pastoral practice without cosmological mechanism.
+- ¶13: Even with cosmic terms (“ships”), the subject remains the ritual words “assent/amen” operating for persons; it reads as liturgical-ascension application rather than an independent cosmic mapping lesson.
+- ¶14: Narrativized rescue story (enemies, goods taken, calling over him…) with strong application voice; cosmological terms (“heavens and the ships”) serve as support for pastoral efficacy claims.
+- ¶15: Deictic exhortation (“Behold… your own cry…”), reinforcing congregational use; not substrate exposition.
+- ¶16: Explicit apostolic/fathers naming (“apostles, the first fathers”) signals Christian/hagiographic transmission channels rather than the pre-compilation cosmological substrate.
+- ¶17: Formulaic closing response (“he glorified…”), characteristic of the redactional frame.
 
 ---
