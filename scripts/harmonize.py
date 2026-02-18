@@ -630,6 +630,30 @@ def load_restoration(ch_num: int) -> dict | None:
     return None
 
 
+def fix_stray_brackets(text: str) -> str:
+    """Remove unmatched brackets from reconstruction text.
+
+    Uses a stack to identify properly-paired ``[…]`` and removes any
+    stray ``]`` (no preceding ``[``) or ``[`` (no following ``]``).
+    This preserves correctly-bracketed scholarly markers while cleaning
+    up the occasional model notation error.
+    """
+    stack: list[int] = []
+    to_remove: set[int] = set()
+    for i, ch in enumerate(text):
+        if ch == "[":
+            stack.append(i)
+        elif ch == "]":
+            if stack:
+                stack.pop()
+            else:
+                to_remove.add(i)
+    to_remove.update(stack)  # unmatched [
+    if not to_remove:
+        return text
+    return "".join(ch for i, ch in enumerate(text) if i not in to_remove)
+
+
 def apply_fills_to_paragraph(text: str, fills: list[dict]) -> str:
     """Apply restoration fills to a paragraph's bracket spans.
 
@@ -653,15 +677,23 @@ def apply_fills_to_paragraph(text: str, fills: list[dict]) -> str:
 def build_restored_text(core_ch: dict, rest_ch: dict | None) -> list[dict]:
     """Build the restored paragraph list for a chapter.
 
+    Prefers model-authored reconstructed paragraphs (coherent prose)
+    from the ``reconstructions`` field of Pass 2 output.  Falls back
+    to mechanical fill insertion when reconstructions are absent.
+
     Returns list of {paragraph_number, text} dicts.
     """
     fills_by_para: dict[int, list[dict]] = {}
+    recon_by_para: dict[int, str] = {}
     if rest_ch:
         for fill in rest_ch.get("fills", []):
             para = fill["paragraph"]
             if para not in fills_by_para:
                 fills_by_para[para] = []
             fills_by_para[para].append(fill)
+        # Prefer model's coherent reconstructed paragraphs
+        for recon in rest_ch.get("reconstructions", []):
+            recon_by_para[recon["paragraph"]] = recon["reconstructed_text"]
 
     paragraphs = []
     for para in core_ch.get("paragraphs", []):
@@ -670,9 +702,14 @@ def build_restored_text(core_ch: dict, rest_ch: dict | None) -> list[dict]:
         if not core_text:
             continue
 
-        para_fills = fills_by_para.get(pnum)
-        if para_fills:
-            restored = apply_fills_to_paragraph(core_text, para_fills)
+        if pnum in recon_by_para:
+            # Use model's coherent reconstruction (fix stray brackets)
+            restored = fix_stray_brackets(recon_by_para[pnum])
+        elif fills_by_para.get(pnum):
+            # Fall back to mechanical fill insertion
+            restored = fix_stray_brackets(
+                apply_fills_to_paragraph(core_text, fills_by_para[pnum])
+            )
         else:
             restored = core_text
 

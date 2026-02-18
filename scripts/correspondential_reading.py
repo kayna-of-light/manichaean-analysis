@@ -102,12 +102,44 @@ class SpiritualReading(BaseModel):
     )
 
 
+class ParagraphReconstruction(BaseModel):
+    """Full reconstructed paragraph — the PRIMARY output."""
+    paragraph: int = Field(
+        description="Paragraph number."
+    )
+    reconstructed_text: str = Field(
+        description=(
+            "COMPOSE the complete paragraph as FLOWING ENGLISH "
+            "PROSE. Start from the spiritual translation: what "
+            "does this paragraph MEAN? Then write a natural-sense "
+            "sentence that expresses that meaning using the "
+            "SURVIVING (non-bracket) words as fixed anchor points. "
+            "Your additions go inside [square brackets]. The "
+            "result must read as a REAL SENTENCE a person would "
+            "write — grammatical, with proper clause structure, "
+            "connective tissue, and flow. Read it aloud: if it "
+            "sounds like word salad, recompose until it flows."
+        )
+    )
+
+
 class ChapterResult(BaseModel):
     """Restoration result for one chapter."""
+    reconstructions: list[ParagraphReconstruction] = Field(
+        description=(
+            "YOUR PRIMARY OUTPUT. One entry per paragraph that "
+            "contains lacunae. COMPOSE each paragraph as flowing "
+            "prose FIRST — guided by the spiritual translation "
+            "and the surviving text. Do not fill brackets "
+            "independently; write the whole sentence."
+        )
+    )
     fills: list[LacunaFill] = Field(
         description=(
-            "One fill per lacuna listed in the input. Every listed "
-            "lacuna must have a corresponding fill entry."
+            "DERIVED from your reconstructions. One fill per "
+            "lacuna listed in the input. Extract the text you "
+            "placed inside each bracket in your reconstructions. "
+            "Every listed lacuna must have a corresponding entry."
         )
     )
     assessment: str = Field(
@@ -257,6 +289,123 @@ colons, semicolons. Never use: /, @, #, %, +, =, ~, ^, |, <, >, {, }.
 10. For substantial restorations, explain the correspondential \
     reasoning in notes \u2014 including any substrate-register adjustments \
     you made to existing editor fills.
+
+## RECONSTRUCTION-FIRST WORKFLOW
+
+Your PRIMARY task is to produce RECONSTRUCTED PARAGRAPHS \u2014 complete, \
+flowing English prose for every paragraph that contains lacunae. \
+The `reconstructions` field comes FIRST in your output. Write those \
+first. Then extract fills from them.
+
+### How to compose a reconstruction
+
+For each paragraph with brackets:
+
+1. Read the SPIRITUAL TRANSLATION for this paragraph. Understand \
+   what spiritual reality is being described.
+2. Read the SURVIVING TEXT (everything outside brackets). These are \
+   your fixed anchor points \u2014 they cannot change.
+3. COMPOSE a complete English sentence that:
+   - Expresses the spiritual meaning in the Kephalaia\u2019s vocabulary
+   - Uses every surviving word in its original position
+   - Fills every bracket with text that creates grammatical flow
+   - Reads as a REAL SENTENCE a person would write
+4. Show your additions in [square brackets].
+5. READ IT ALOUD. Does the sentence flow from start to finish? \
+   Can you follow the thought? If not, RECOMPOSE.
+
+### What goes wrong when you don\u2019t compose
+
+If you fill brackets independently \u2014 one by one \u2014 and then string \
+them together, you get word salad:
+- "date palm [and they call the] before the tree" \u2014 incoherent
+- "[instruction] the heights [from] to the heights" \u2014 broken
+- "the [which wh]ich" \u2014 doubled word from glued-bracket error
+- "[the reasoning-vessel of the] vessel" \u2014 doubled noun
+
+These happen because each fill is reasonable in isolation but the \
+sentence was never composed as a whole. The FIX is to write the \
+whole sentence first.
+
+### Grammatical connective tissue
+
+Fills must supply the GRAMMATICAL GLUE that turns fragments into \
+clauses: punctuation, prepositions, articles, clause boundaries. \
+If your fill is only a content word ("instruction") and the result \
+reads as "separation [instruction] the heights", the fill needed \
+connective tissue: "separation[, he taught them about] the heights".
+
+### After reconstructions: extract fills
+
+Once all reconstructions are written, go through each bracket \
+position and extract the fill text you placed there. This becomes \
+your `fills` list. The fills are DERIVED from the reconstructions, \
+not the other way around.
+
+## HOW TO USE THE CONTEXT MARKERS
+
+The lacunae list below shows surrounding text for each bracket:
+- BEFORE: words immediately preceding the bracket
+- AFTER: words immediately following the bracket
+- GLUED: means text touches the bracket with NO space.
+
+Examples:
+- `[ ... ... ]ight` with GLUED-RIGHT means fill + "ight" must form a \
+  word (e.g., "against the L" + "ight" = "against the Light")
+- `[ ... f]rom` with GLUED-RIGHT means the surviving "f" inside the \
+  bracket plus "rom" after the bracket must form a word. Your fill \
+  goes BEFORE the "f". (e.g., fill "" preserves "f" = "from")
+- `garm[ents]` with GLUED-LEFT means "garm" + fill must form a word
+
+### CRITICAL: Composing with GLUED brackets
+
+GLUED brackets represent PARTIAL WORDS. When composing your \
+reconstruction, the letters outside the bracket and the letters \
+inside form ONE WORD together.
+
+#### GLUED-RIGHT (bracket touches text AFTER it)
+
+Example: The text says `[ ... te]aching as of error`
+- The word is "teaching": [te] inside + "aching" outside = teaching
+- CORRECT reconstruction: "[like te]aching as of error"
+- WRONG: "[teaching]aching" (DUPLICATES "aching" = "teachingaching")
+
+Example: The text says `[ ... wh]ich Satan`
+- The word is "which": [wh] inside + "ich" outside = which
+- CORRECT reconstruction: "[in wh]ich Satan"
+- WRONG: "[which wh]ich" (DUPLICATES "ich" = "whichich")
+
+#### GLUED-LEFT (text touches bracket BEFORE it)
+
+Example: The text says `the expound[er ... ] the trees`
+- "expound" is fixed. Your fill STARTS with "er" or "ing" etc.
+- fill = "ing of" \u2192 "expound" + "ing of" = "expounding of" (VALID)
+- fill = "er of" \u2192 "expound" + "er of" = "expounder of" (VALID)
+- fill = "erition" \u2192 "expound" + "erition" = "expounderition" (NOT A WORD)
+- CORRECT reconstruction: "the expound[ing of] the trees"
+- WRONG: "the expound[erition of] the trees" (INVENTS non-word)
+
+Rule: The letters OUTSIDE the bracket are ALREADY THERE. Your fill \
+goes INSIDE the bracket only. The result must form REAL WORDS.
+
+### Brackets containing existing editor text
+
+Some brackets contain text the editors already restored plus a gap: \
+`[ ... I will]`. The "I will" is the editor\u2019s reading; the `...` is \
+what remains unknown. Your fill REPLACES the `...` while keeping \
+the editor\u2019s text. In your reconstruction, ALL of it goes between \
+brackets:
+- Original: `[ ... I will] reveal to you`
+- If your fill is "And now": `[And now I will] reveal to you`
+- WRONG: `And now I will] reveal to you` (missing opening bracket)
+- WRONG: `[And now] I will reveal to you` (drops editor text from bracket)
+
+### Bracket notation in reconstructions
+
+Your reconstructed_text uses [square brackets] ONLY to mark where \
+your additions begin and end. Every bracket must open and close \
+properly. Count: each `[` must have a matching `]`. Do NOT leave \
+stray ] or [ in the text.
 """
 
 
@@ -512,9 +661,67 @@ def build_user_message(
         lines.append("")
 
     lines.append(f"\n--- LACUNAE ({total_lacunae} total) ---\n")
+    lines.append(
+        "Each bracket is shown with surrounding context. "
+        "GLUED means text touches the bracket with no space — "
+        "your fill must join with adjacent letters to form a word.\n"
+    )
+
+    # Build a lookup of paragraph texts for context extraction
+    para_text_map = {p["paragraph_number"]: p["core_text"] for p in core_paras}
+
     for pnum in sorted(lacunae_map.keys()):
+        text = para_text_map.get(pnum, "")
         for lac in lacunae_map[pnum]:
-            lines.append(f"\u00b6{pnum} #{lac['index']}: {lac['original']}")
+            start = lac["start"]
+            end = lac["end"]
+
+            # Extract surrounding context (up to 30 chars each side)
+            before = text[max(0, start - 30):start]
+            after = text[end:end + 30]
+
+            # Detect glued brackets
+            glued_left = (
+                start > 0
+                and text[start - 1] not in (" ", "\n", "(")
+            )
+            glued_right = (
+                end < len(text)
+                and text[end] not in (
+                    " ", "\n", ",", ".", ";", ":", "!", "?", ")"
+                )
+            )
+
+            # Build context line
+            ctx_parts = []
+            if before.strip():
+                ctx_parts.append(f'BEFORE: "...{before.strip()}"')
+            if after.strip():
+                ctx_parts.append(f'AFTER: "{after.strip()[:30]}..."')
+
+            glue_parts = []
+            if glued_left:
+                # Show the letters glued before the bracket
+                glue_word = text[max(0, start - 15):start]
+                glue_word = glue_word.split()[-1] if glue_word.split() else glue_word
+                glue_parts.append(
+                    f'GLUED-LEFT: "{glue_word}" touches bracket'
+                )
+            if glued_right:
+                # Show the letters glued after the bracket
+                after_chunk = text[end:end + 15]
+                glue_word = after_chunk.split()[0] if after_chunk.split() else after_chunk
+                glue_parts.append(
+                    f'GLUED-RIGHT: bracket touches "{glue_word}" '
+                    f'→ fill must join to form a word'
+                )
+
+            line = f"\u00b6{pnum} #{lac['index']}: {lac['original']}"
+            if ctx_parts:
+                line += f"  ({'; '.join(ctx_parts)})"
+            if glue_parts:
+                line += f"  !! {'; '.join(glue_parts)}"
+            lines.append(line)
 
     lines.append("\n--- END ---")
     return "\n".join(lines)
@@ -736,6 +943,31 @@ def restore_chapter(
 # Post-processing: apply fills to original text
 # ---------------------------------------------------------------------------
 
+
+def fix_stray_brackets(text: str) -> str:
+    """Remove unmatched brackets from reconstruction text.
+
+    Uses a stack to identify properly-paired ``[…]`` and removes any
+    stray ``]`` (no preceding ``[``) or ``[`` (no following ``]``).
+    Preserves correctly-bracketed scholarly markers while cleaning up
+    the occasional model notation error.
+    """
+    stack: list[int] = []
+    to_remove: set[int] = set()
+    for i, ch in enumerate(text):
+        if ch == "[":
+            stack.append(i)
+        elif ch == "]":
+            if stack:
+                stack.pop()
+            else:
+                to_remove.add(i)
+    to_remove.update(stack)  # unmatched [
+    if not to_remove:
+        return text
+    return "".join(ch for i, ch in enumerate(text) if i not in to_remove)
+
+
 def apply_fills_to_paragraph(text: str, fills: list[dict]) -> str:
     """Replace [bracket] spans in text with model fills.
 
@@ -852,12 +1084,16 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
 
         # Build fill lookup: {paragraph_num: [fill_dicts]}
         fills_by_para: dict[int, list[dict]] = {}
+        recon_by_para: dict[int, str] = {}
         if rest_ch:
             for fill in rest_ch.get("fills", []):
                 para = fill["paragraph"]
                 if para not in fills_by_para:
                     fills_by_para[para] = []
                 fills_by_para[para].append(fill)
+            # Prefer model's reconstructed paragraphs when available
+            for recon in rest_ch.get("reconstructions", []):
+                recon_by_para[recon["paragraph"]] = recon["reconstructed_text"]
 
         # Process each paragraph
         for para in core_ch.get("paragraphs", []):
@@ -868,8 +1104,14 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
 
             para_fills = fills_by_para.get(pnum)
             if para_fills:
-                # Apply fills programmatically
-                restored = apply_fills_to_paragraph(core_text, para_fills)
+                # Prefer model's reconstructed text (coherent prose)
+                # Fall back to mechanical fill insertion
+                if pnum in recon_by_para:
+                    restored = fix_stray_brackets(recon_by_para[pnum])
+                else:
+                    restored = fix_stray_brackets(
+                        apply_fills_to_paragraph(core_text, para_fills)
+                    )
                 lines.append(f"**\u00b6{pnum}** {restored}")
                 lines.append("")
 
@@ -901,7 +1143,7 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
         if rest_ch:
             assessment = rest_ch.get("assessment", "")
             if assessment:
-                lines.append(f"**Assessment:** {assessment}")
+                lines.append(f"**Assessment:** {fix_stray_brackets(assessment)}")
                 lines.append("")
 
         lines.append("---")
