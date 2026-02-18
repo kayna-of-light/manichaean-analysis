@@ -286,6 +286,8 @@ def restore_chapter(
     core_paras: list[dict],
     spiritual_reading: str,
     ch_num: int,
+    *,
+    debug: bool = False,
 ) -> dict[int, str] | None:
     """Restore all lacunae in one call.
 
@@ -339,10 +341,12 @@ def restore_chapter(
                         if block and getattr(block, "type", "") == "thinking":
                             in_thinking = True
                             thinking_chars = 0
-                            print("\n  [thinking] ", end="", flush=True)
+                            if debug:
+                                print("\n  [thinking] ", end="", flush=True)
                         elif block and getattr(block, "type", "") == "text":
                             in_thinking = False
-                            print("\n  [output] ", end="", flush=True)
+                            if debug:
+                                print("\n  [output] ", end="", flush=True)
 
                     # Thinking delta
                     elif etype == "content_block_delta":
@@ -352,21 +356,25 @@ def restore_chapter(
                             if dtype == "thinking_delta":
                                 chunk = getattr(delta, "thinking", "")
                                 thinking_chars += len(chunk)
-                                print(chunk, end="", flush=True)
+                                if debug:
+                                    print(chunk, end="", flush=True)
                             elif dtype == "text_delta":
                                 chunk = getattr(delta, "text", "")
                                 text_parts.append(chunk)
-                                print(chunk, end="", flush=True)
+                                if debug:
+                                    print(chunk, end="", flush=True)
 
                     # Block ended
                     elif etype == "content_block_stop":
                         if in_thinking:
-                            print(f" [{thinking_chars} chars]", flush=True)
+                            if debug:
+                                print(f" [{thinking_chars} chars]", flush=True)
                             in_thinking = False
 
                     # Message ended
                     elif etype == "message_stop":
-                        print(flush=True)
+                        if debug:
+                            print(flush=True)
 
             if text_parts:
                 raw = "".join(text_parts)
@@ -923,6 +931,10 @@ def parse_args() -> argparse.Namespace:
         "--concurrency", "-j", type=int, default=1,
         help="Number of chapters to process in parallel (default: 1)",
     )
+    parser.add_argument(
+        "--debug", action="store_true",
+        help="Show model thinking log (only effective with -j 1)",
+    )
     return parser.parse_args()
 
 
@@ -1011,6 +1023,11 @@ def main() -> None:
     concurrency = max(1, args.concurrency)
     print(f"\nUsing model: {deployment}")
     print(f"Concurrency: {concurrency}")
+    if args.debug:
+        if concurrency == 1:
+            print("Debug: thinking log enabled")
+        else:
+            print("Debug: thinking log disabled (requires -j 1)")
     print()
 
     # Prepare output dirs
@@ -1018,6 +1035,7 @@ def main() -> None:
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
 
     # --- Worker ---
+    show_debug = args.debug and concurrency == 1
     print_lock = threading.Lock()
     results_list: list[int] = []
     errors_list: list[int] = []
@@ -1077,6 +1095,7 @@ def main() -> None:
         # --- Phase 2: Restoration (single call) ---
         restored_paras = restore_chapter(
             client, deployment, core_paras, spiritual_reading, ch_num,
+            debug=show_debug,
         )
         if not restored_paras:
             with print_lock:
