@@ -204,6 +204,32 @@ VOCAB = {
             "interpretation", "explanation", "meaning",
         ],
     },
+    "application_voice": {
+        "phrases": [
+            "i command you", "i tell you", "i say to you",
+            "i say unto you", "i charge you",
+            "keep away from", "struggle against", "be on your guard",
+            "beware of", "take heed", "take care",
+            "concerning this", "you too", "you also",
+            "my brethren", "my brothers", "my limbs", "my children",
+            "my loved ones", "my beloved",
+            "beloved ones", "o perfect", "holy ones",
+            "o elect", "o catechumens",
+            "become like", "become as", "make yourselves",
+            "hold your heart", "keep your heart",
+            "reigns today", "till today", "to this day", "nowadays",
+            "in this world today",
+            "for this reason i", "because of this i",
+            "so then you", "therefore you",
+        ],
+        "words": [
+            "command", "commands", "commanded",
+            "struggle", "struggles", "struggling",
+            "exhort", "exhortation", "admonish",
+            "beware", "guard", "warn", "warned",
+            "brethren", "beloved",
+        ],
+    },
 }
 
 # Temporal axis weights:
@@ -218,6 +244,7 @@ WEIGHTS = {
     "pastoral": -2.0,            # Institutional/community layer
     "nt_christian": -2.5,        # Christian overlay (Mani-era or later)
     "hagiographic": -1.5,        # Community veneration frame
+    "application_voice": -1.5,   # Imperative/exhortation voice (editorial application)
 }
 
 # ============================================================
@@ -645,6 +672,8 @@ class ChapterAnalysis:
     second_half_cosmo: float = 0.0
     first_half_pastoral: float = 0.0
     second_half_pastoral: float = 0.0
+    first_half_application: float = 0.0
+    second_half_application: float = 0.0
     layer_shift_score: float = 0.0
 
     # Classification
@@ -689,7 +718,8 @@ def analyze_chapter(chapter: CleanChapter) -> ChapterAnalysis:
     analysis.overlay_density = round(
         densities.get("pastoral", 0) +
         densities.get("nt_christian", 0) +
-        densities.get("hagiographic", 0), 4)
+        densities.get("hagiographic", 0) +
+        densities.get("application_voice", 0), 4)
     total_density = analysis.teaching_density + analysis.overlay_density
     analysis.teaching_purity = round(
         analysis.teaching_density / (total_density + 0.01), 4)
@@ -732,10 +762,14 @@ def analyze_chapter(chapter: CleanChapter) -> ChapterAnalysis:
         analysis.second_half_cosmo = sh_d.get("cosmological", 0)
         analysis.first_half_pastoral = fh_d.get("pastoral", 0)
         analysis.second_half_pastoral = sh_d.get("pastoral", 0)
-        # Shift: positive means pastoral increases / cosmological decreases
+        analysis.first_half_application = fh_d.get("application_voice", 0)
+        analysis.second_half_application = sh_d.get("application_voice", 0)
+        # Shift: positive means overlay voice increases / cosmological decreases
         cosmo_shift = analysis.second_half_cosmo - analysis.first_half_cosmo
         pastoral_shift = analysis.second_half_pastoral - analysis.first_half_pastoral
-        analysis.layer_shift_score = round(pastoral_shift - cosmo_shift, 4)
+        application_shift = analysis.second_half_application - analysis.first_half_application
+        analysis.layer_shift_score = round(
+            pastoral_shift + application_shift - cosmo_shift, 4)
 
     # Paragraph count
     paras = segment_into_paragraphs(text, chapter.number)
@@ -1004,6 +1038,7 @@ def generate_visualizations(analyses: list[ChapterAnalysis], cluster_result: dic
         "pastoral": "#e67e22",
         "nt_christian": "#e74c3c",
         "hagiographic": "#9b59b6",
+        "application_voice": "#d35400",
     }
 
     for idx, cat in enumerate(VOCAB.keys()):
@@ -1084,7 +1119,7 @@ def generate_visualizations(analyses: list[ChapterAnalysis], cluster_result: dic
     ax.set_xlabel("Chapter Number")
     ax.set_ylabel("Layer Shift Score")
     ax.set_title("Editor Fatigue: Intra-Chapter Vocabulary Shift\n"
-                 "(positive = pastoral vocabulary increases in second half vs cosmological)",
+                 "(positive = pastoral + application voice increases in second half vs cosmological)",
                  fontsize=14, fontweight="bold")
     plt.tight_layout()
     fig.savefig(output_dir / "v4_05_editor_fatigue.png", dpi=150, bbox_inches="tight")

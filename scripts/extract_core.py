@@ -41,14 +41,17 @@ Usage:
     python scripts/extract_core.py --overwrite          # Reprocess existing
     python scripts/extract_core.py --assemble           # Skip extraction, assemble only
     python scripts/extract_core.py --limit 5            # First N chapters only
+    python scripts/extract_core.py --max-concurrency 4  # 4 parallel API calls
 """
 import argparse
 import json
 import re
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from enum import Enum
 from pathlib import Path
+from threading import Lock
 from typing import Optional
 
 from openai import OpenAI, RateLimitError, APIStatusError
@@ -141,6 +144,30 @@ CHRISTIAN_MARKERS = {
     "baptism": 4, "resurrection": 2,
 }
 
+APPLICATION_MARKERS = {
+    # Direct commands and exhortations
+    "i command you": 5, "i tell you": 4, "i say to you": 4,
+    "keep away from": 5, "beware of": 4, "do not": 2,
+    "you should": 3, "you must": 3, "you shall": 3,
+    "become like": 3, "become good": 3,
+    # Audience address
+    "my brethren": 4, "my brothers": 4, "my limbs": 4,
+    "my children": 4, "my beloved": 4, "you too": 3,
+    "o brethren": 4, "beloved": 2, "brethren": 2,
+    # Present-tense polemic / anchoring to editorial present
+    "reigns today": 5, "till today": 5, "until today": 5,
+    "nowadays": 5, "in this world today": 5,
+    "even now": 3, "to this day": 4,
+    # Application markers — bridging teaching to audience
+    "concerning this": 4, "on account of this": 3,
+    "for this reason": 2, "therefore": 1,
+    "hold your heart": 5, "guard your heart": 5,
+    "so that you": 3, "in order that you": 3,
+    # Imperative verbs in exhortation context
+    "command": 2, "struggle": 2, "beware": 3,
+    "strive": 2, "endure": 2,
+}
+
 TEACHING_MARKERS = {
     # Body-cosmos correspondence
     "corresponds": 5, "accords": 5, "pattern of": 4, "reflects": 3,
@@ -221,6 +248,7 @@ def score_chapter_paragraphs(teaching_text: str) -> list[dict]:
                 "frame": score_text(text, FRAME_MARKERS),
                 "pastoral": score_text(text, PASTORAL_MARKERS),
                 "christian": score_text(text, CHRISTIAN_MARKERS),
+                "application": score_text(text, APPLICATION_MARKERS),
             },
         })
     return results
@@ -254,6 +282,8 @@ def load_v4_chapter_data() -> dict[int, dict]:
             "second_half_cosmo": ch.get("second_half_cosmo", 0.0),
             "first_half_pastoral": ch.get("first_half_pastoral", 0.0),
             "second_half_pastoral": ch.get("second_half_pastoral", 0.0),
+            "first_half_application": ch.get("first_half_application", 0.0),
+            "second_half_application": ch.get("second_half_application", 0.0),
             "has_formulaic_opening": ch.get("has_formulaic_opening", False),
             "has_formulaic_closing": ch.get("has_formulaic_closing", False),
             "has_question_formula": ch.get("has_question_formula", False),
@@ -385,19 +415,30 @@ def format_editorial_fatigue(v4_data: dict) -> str:
     sh_c = v4_data.get("second_half_cosmo", 0.0)
     fh_p = v4_data.get("first_half_pastoral", 0.0)
     sh_p = v4_data.get("second_half_pastoral", 0.0)
+    fh_a = v4_data.get("first_half_application", 0.0)
+    sh_a = v4_data.get("second_half_application", 0.0)
 
     lines = []
     lines.append(f"  Editorial fatigue score: {shift:.2f}")
-    lines.append(f"    First half — cosmological: {fh_c:.2f}, pastoral: {fh_p:.2f}")
-    lines.append(f"    Second half — cosmological: {sh_c:.2f}, pastoral: {sh_p:.2f}")
+    lines.append(f"    First half — cosmological: {fh_c:.2f}, pastoral: {fh_p:.2f}, application: {fh_a:.2f}")
+    lines.append(f"    Second half — cosmological: {sh_c:.2f}, pastoral: {sh_p:.2f}, application: {sh_a:.2f}")
+
+    # Describe the pattern
+    pastoral_shift = sh_p - fh_p
+    application_shift = sh_a - fh_a
+    combined_shift = pastoral_shift + application_shift
 
     if shift > 0.5:
-        lines.append("    ⚠ SIGNIFICANT pastoral drift in second half — "
+        lines.append("    ⚠ SIGNIFICANT pastoral/application drift in second half — "
                       "editor likely added institutional material after core teaching")
     elif shift > 0.2:
-        lines.append("    ⚠ Moderate pastoral drift in second half")
+        lines.append("    ⚠ Moderate pastoral/application drift in second half")
     elif shift < -0.5:
         lines.append("    Cosmological density increases in second half — unusual pattern")
+
+    if application_shift > 0.3:
+        lines.append("    ⚠ Application voice rises in second half — "
+                      "exhortation/imperative language concentrates toward chapter end")
 
     return "\n".join(lines)
 
@@ -573,9 +614,127 @@ class ChapterExtraction(BaseModel):
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You are a textual critic working on the Coptic Kephalaia of the Teacher — a \
-Manichaean composite text compiled in the 3rd-4th century CE. Your task is to \
-identify the OLDEST TEACHING LAYER and separate it from later editorial additions.
+You are an expert in the correspondential tradition — the ancient science of \
+describing spiritual realities through their natural expressions. You have \
+deep knowledge of Swedenborg's doctrine of correspondences, the Persian and \
+Zoroastrian cosmological traditions, Manichaean cosmology, and the textual \
+transmission of what Swedenborg called "the Ancient Word" — the oldest \
+correspondential writing, preserved in the East, which predates national \
+mythologies and scriptural canons.
+
+You are working on the Coptic Kephalaia of the Teacher — a Manichaean \
+composite text compiled in the 3rd-4th century CE. This text contains \
+multiple temporal layers, and your task is to identify the OLDEST TEACHING \
+SUBSTRATE and separate it from later editorial additions.
+
+## WHAT MAKES THE SUBSTRATE THE SUBSTRATE
+
+The correspondential substrate has a distinctive quality: **both sides of \
+every mapping stay within the cosmic system**. It maps domain onto domain, \
+being onto being, degree onto degree — and never reaches outside the system.
+
+Consider this sequence from the five-worlds teaching:
+- "The King of the worlds of Wind is eagle-face" — realm → zoomorphic form
+- "His body is iron" — realm → metal correspondence
+- "Their taste is the sharp taste that is in every form" — realm → sensory \
+  quality
+
+Every element maps WITHIN the system. Face, metal, taste — these are \
+correspondential registers. The teaching IS the mapping. It does not point \
+to anything outside the cosmic architecture.
+
+Now compare:
+- "His spirit is the one of idolatry to the spirits of error who are in \
+  every temple, the sites of idols, the sites of statue- and image-worship"
+
+This LOOKS similar — "His spirit is the one of..." has the same syntax as \
+"His body is iron." But one side of the mapping now reaches OUTSIDE the \
+cosmic system into the editor's contemporary world. "Every temple", "sites \
+of idols", "statue- and image-worship" are not cosmic registers — they are \
+specific religious institutions that the editor is identifying. The \
+correspondence is being USED to point at something in the editorial present.
+
+**This is the critical diagnostic.** The substrate maps cosmos→cosmos. The \
+editorial layer maps cosmos→contemporary world. When one side of a mapping \
+identifies specific institutions, social structures, religious practices, \
+or contemporary persons — the correspondence has crossed from BEING to \
+POINTING AT.
+
+More examples of this boundary:
+
+BEING (substrate — both sides internal to the system):
+- "The King of Darkness wounds and kills by the word of his magic arts" — \
+  describes what his second faculty IS within the degree structure
+- "Gold is the body of the King of the realms of Darkness" — maps realm → \
+  metal
+- "The body of all the powers who belong to the world of Smoke is gold" — \
+  maps cosmic hierarchy → metal correspondence
+- "Their taste is the bitter taste" — maps realm → sensory quality
+
+POINTING AT (editorial — one side reaches into the contemporary world):
+- "The spirit... reigns today in the principalities and the authorities" — \
+  "principalities and authorities" are contemporary power structures
+- "His spirit is the one of idolatry... in every temple" — "every temple" \
+  is the editor's religious landscape
+- "The spirit who speaks till today in the soothsayers" — "soothsayers" \
+  are contemporary practitioners the editor recognizes
+- "These enchantments nowadays, which people utilise in this world" — \
+  "nowadays" and "this world" explicitly anchor to editorial present
+- "I command you, keep away from magic arts" — pivots to audience address
+- "Concerning this I tell you, my brethren" — pivots to audience address
+- "Become good pearls" — pivots to exhortation
+
+The boundary often falls MID-PARAGRAPH. A paragraph may open with \
+substrate (describing what a cosmic king IS — face, body, metal, taste) \
+and then pivot to application (identifying that king's spirit in \
+contemporary institutions). The substrate portion maps cosmos→cosmos. \
+The application portion maps cosmos→the editor's world. Find where the \
+second side of the mapping leaves the cosmic system — that is where you cut.
+
+This distinction is the PRIMARY diagnostic. Temporal vocabulary, editorial \
+seams, citation formulas, application voice scores — these are all \
+secondary signals that help you find the boundary. But the boundary itself \
+is structural: does Mapping Side B stay within the cosmic system, or does \
+it reach into the contemporary world?
+
+## COMPUTATIONAL TEXT-CRITICAL DATA: HOW TO USE IT
+
+You will receive vocabulary density scores and structural flags generated \
+by a computational NLP pipeline. These are GUIDES, not determinations. \
+They flag patterns for your attention. You make the actual classification \
+by reading the text.
+
+The vocabulary pipeline counts word frequencies in six teaching categories \
+(cosmological, persian_substrate, correspondential) and four overlay \
+categories (pastoral, nt_christian, hagiographic, application_voice). \
+The scores tell you WHAT VOCABULARY IS PRESENT — not WHEN it entered \
+the text.
+
+The **application_voice** category specifically flags imperative/exhortation \
+language: direct commands ("I command you"), audience address ("my brethren", \
+"my limbs"), present-tense polemic ("reigns today", "till today", \
+"nowadays"), and application markers ("concerning this", "you too"). \
+When this category fires, the text is likely pivoting from substrate to \
+editorial application — but READ THE ACTUAL TEXT to confirm.
+
+The reliability hierarchy of computational signals:
+1. **Seam flags** — Strongest. Detect structural patterns (bridge \
+   connective + institutional vocabulary + register shift from preceding \
+   paragraphs).
+2. **Editorial fatigue** — Strong. Pastoral/application drift from first \
+   to second chapter half. Classic scribal pattern.
+3. **Application voice density** — Moderate. Flags imperative/address \
+   language that often marks the substrate→application boundary.
+4. **Gardner flags** — Strong. From the scholarly edition's critical \
+   apparatus.
+5. **Register scores** — Weakest. Raw vocabulary counts. A paragraph \
+   full of cosmological vocabulary might still be late imitation. A \
+   paragraph with pastoral vocabulary might contain old teaching wrapped \
+   in editorial framing.
+
+These signals help you FIND the layer boundary. YOUR reading of the text — \
+specifically, "does this describe what things ARE, or does it apply the \
+teaching to an audience/situation?" — determines WHERE the boundary falls.
 
 ## THE FUNDAMENTAL PRINCIPLE: TEMPORAL DISCRIMINATION
 
@@ -755,10 +914,17 @@ Specifically:
   (these come directly from the scholarly edition — high reliability).
 
 ### Paragraph-level features:
-- **Register scores**: teaching, frame, pastoral, christian vocabulary \
-  density per 100 words. These are RAW VOCABULARY COUNTS — they tell you \
-  what words are present, not what temporal layer the paragraph belongs to. \
-  Use them to direct your attention, not to determine your classification.
+- **Register scores**: teaching, frame, pastoral, christian, application \
+  vocabulary density per 100 words. These are RAW VOCABULARY COUNTS — they \
+  tell you what words are present, not what temporal layer the paragraph \
+  belongs to. Use them to direct your attention, not to determine your \
+  classification.
+- **Application voice score**: Flags imperative/address/exhortation \
+  language — direct commands, audience address ("my brethren"), present- \
+  tense anchors ("reigns today", "nowadays"), and bridging formulae \
+  ("concerning this"). When this fires alongside cosmological vocabulary, \
+  the paragraph is likely MIXED: the substrate is being USED to make a \
+  point. Find where "what things are" ends and "what you should do" begins.
 - **Seam flags**: When the text-critical algorithm detects a potential \
   editorial seam (bridge connective + institutional vocabulary + register \
   shift from preceding paragraphs). These flags are STRONG signals because \
@@ -918,7 +1084,8 @@ def load_chapter(num: int) -> dict | None:
 # ---------------------------------------------------------------------------
 
 def extract_core(client: OpenAI, deployment: str, chapter: dict,
-                  v4_data: dict | None = None) -> ChapterExtraction | None:
+                  v4_data: dict | None = None,
+                  reasoning_effort: str | None = None) -> ChapterExtraction | None:
     """Send a chapter to GPT-5.2 for core extraction."""
     ch_num = chapter["chapter_number"]
     title = chapter.get("title", f"Chapter {ch_num}")
@@ -941,7 +1108,8 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
         header = (
             f"--- PARAGRAPH {i+1} (words: {scores['words']}, "
             f"teaching={s['teaching']}, frame={s['frame']}, "
-            f"pastoral={s['pastoral']}, christian={s['christian']})"
+            f"pastoral={s['pastoral']}, christian={s['christian']}, "
+            f"application={s['application']})"
         )
         # Add seam flag if detected
         if seam["seam_flag"]:
@@ -993,7 +1161,7 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
     backoff = 2.0
     for attempt in range(1, max_retries + 1):
         try:
-            response = client.responses.parse(
+            api_kwargs = dict(
                 model=deployment,
                 input=[
                     {"role": "system", "content": SYSTEM_PROMPT},
@@ -1002,6 +1170,9 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
                 text_format=ChapterExtraction,
                 max_output_tokens=16384,
             )
+            if reasoning_effort:
+                api_kwargs["reasoning"] = {"effort": reasoning_effort} # type: ignore
+            response = client.responses.parse(**api_kwargs) # type: ignore
             result = response.output_parsed
             if result is None:
                 raise ValueError("No structured output (parsed is None)")
@@ -1235,6 +1406,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit", "-l", type=int, default=None)
     parser.add_argument("--dry-run", "-n", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--reasoning", type=str, default=None,
+                        choices=["low", "medium", "high"],
+                        help="Set reasoning effort (default: model default)")
+    parser.add_argument("--max-concurrency", "-j", type=int, default=1,
+                        help="Number of parallel API calls (default: 1)")
     parser.add_argument("--assemble", "-a", action="store_true")
     return parser.parse_args()
 
@@ -1322,32 +1498,88 @@ def main() -> None:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     SEGMENTS_DIR.mkdir(parents=True, exist_ok=True)
 
+    concurrency = max(1, args.max_concurrency)
     results = []
     errors = []
-    for i, ch in enumerate(chapters, 1):
+
+    def process_chapter(ch: dict, idx: int) -> tuple[int, ChapterExtraction | None]:
+        """Process a single chapter. Returns (chapter_number, extraction)."""
         ch_num = ch["chapter_number"]
-        title = ch.get("title", "")[:50]
-        words = len(ch.get("teaching_text", "").split())
-        print(f"[{i}/{len(chapters)}] Ch.{ch_num} ({words} words) {title}...",
-              end=" ", flush=True)
+        return ch_num, extract_core(
+            client, deployment, ch,
+            v4_data=v4_all.get(ch_num),
+            reasoning_effort=args.reasoning,
+        )
 
-        extraction = extract_core(client, deployment, ch,
-                                   v4_data=v4_all.get(ch_num))
-        if extraction is None:
-            print("FAILED")
-            errors.append(ch_num)
-            continue
+    if concurrency == 1:
+        # Sequential — preserves existing behavior with live progress
+        for i, ch in enumerate(chapters, 1):
+            ch_num = ch["chapter_number"]
+            title = ch.get("title", "")[:50]
+            words = len(ch.get("teaching_text", "").split())
+            print(f"[{i}/{len(chapters)}] Ch.{ch_num} ({words} words) {title}...",
+                  end=" ", flush=True)
 
-        save_extraction(extraction)
-        n_core = extraction.core_paragraphs
-        n_tot = extraction.total_paragraphs
-        pct = extraction.core_percentage
-        print(f"OK — {n_core}/{n_tot} core ({pct:.0f}%)")
-        results.append(extraction.model_dump())
+            extraction = extract_core(client, deployment, ch,
+                                       v4_data=v4_all.get(ch_num),
+                                       reasoning_effort=args.reasoning)
+            if extraction is None:
+                print("FAILED")
+                errors.append(ch_num)
+                continue
 
-        # Brief pause
-        if i < len(chapters):
-            time.sleep(0.5)
+            save_extraction(extraction)
+            n_core = extraction.core_paragraphs
+            n_tot = extraction.total_paragraphs
+            pct = extraction.core_percentage
+            print(f"OK — {n_core}/{n_tot} core ({pct:.0f}%)")
+            results.append(extraction.model_dump())
+
+            # Brief pause
+            if i < len(chapters):
+                time.sleep(0.5)
+    else:
+        # Parallel — use ThreadPoolExecutor
+        print(f"Running with {concurrency} parallel workers\n")
+        print_lock = Lock()
+        completed = 0
+        total = len(chapters)
+
+        with ThreadPoolExecutor(max_workers=concurrency) as executor:
+            futures = {
+                executor.submit(process_chapter, ch, i): ch
+                for i, ch in enumerate(chapters, 1)
+            }
+            for future in as_completed(futures):
+                ch = futures[future]
+                ch_num = ch["chapter_number"]
+                title = ch.get("title", "")[:50]
+                words = len(ch.get("teaching_text", "").split())
+                completed += 1
+                try:
+                    _, extraction = future.result()
+                except Exception as e:
+                    with print_lock:
+                        print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
+                              f"{title}... ERROR: {e}")
+                    errors.append(ch_num)
+                    continue
+
+                if extraction is None:
+                    with print_lock:
+                        print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
+                              f"{title}... FAILED")
+                    errors.append(ch_num)
+                    continue
+
+                save_extraction(extraction)
+                n_core = extraction.core_paragraphs
+                n_tot = extraction.total_paragraphs
+                pct = extraction.core_percentage
+                with print_lock:
+                    print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
+                          f"{title}... OK — {n_core}/{n_tot} core ({pct:.0f}%)")
+                results.append(extraction.model_dump())
 
     # Summary
     print(f"\n{'='*60}")

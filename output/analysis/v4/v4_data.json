@@ -13,7 +13,8 @@
       "pastoral": 0.4054,
       "nt_christian": 0.0676,
       "hagiographic": 0.0676,
-      "correspondential": 0.1351
+      "correspondential": 0.1351,
+      "application_voice": 0.3378
     },
     "vocab_terms": {
       "cosmological": [
@@ -43,9 +44,16 @@
       "correspondential": [
         "interpretation x1",
         "explanation x1"
+      ],
+      "application_voice": [
+        "concerning this x1",
+        "my children x1",
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 0.135,
+    "composite_score": -0.372,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -63,18 +71,20 @@
       "canonical_source"
     ],
     "teaching_density": 0.8108,
-    "overlay_density": 0.5406,
-    "teaching_purity": 0.5956,
+    "overlay_density": 0.8784,
+    "teaching_purity": 0.4772,
     "first_half_cosmo": 1.3514,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.8108,
-    "layer_shift_score": 2.1622,
+    "first_half_application": 0.0,
+    "second_half_application": 0.6757,
+    "layer_shift_score": 2.8379,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.05621563543786409,
-    "pca_y": -0.09686734685204396
+    "pca_x": -0.05584540976730595,
+    "pca_y": -0.10033105901462744
   },
   {
     "chapter_number": 1,
@@ -90,7 +100,8 @@
       "pastoral": 0.968,
       "nt_christian": 0.3367,
       "hagiographic": 0.0421,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.1263
     },
     "vocab_terms": {
       "cosmological": [
@@ -120,9 +131,14 @@
       "hagiographic": [
         "not one among the apostles x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
+      ]
     },
-    "composite_score": -2.567,
+    "composite_score": -2.757,
     "has_formulaic_opening": false,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -145,18 +161,20 @@
       "canonical_source"
     ],
     "teaching_density": 0.1684,
-    "overlay_density": 1.3468,
-    "teaching_purity": 0.1104,
+    "overlay_density": 1.4731,
+    "teaching_purity": 0.102,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.2525,
     "first_half_pastoral": 1.0101,
     "second_half_pastoral": 0.9259,
-    "layer_shift_score": -0.3367,
+    "first_half_application": 0.2525,
+    "second_half_application": 0.0,
+    "layer_shift_score": -0.5892,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.07087023054519918,
-    "pca_y": -0.15730542036865078
+    "pca_x": 0.07069621193926691,
+    "pca_y": -0.1582349617579259
   },
   {
     "chapter_number": 2,
@@ -172,7 +190,8 @@
       "pastoral": 0.5106,
       "nt_christian": 0.3647,
       "hagiographic": 0.0729,
-      "correspondential": 0.6565
+      "correspondential": 0.6565,
+      "application_voice": 0.2918
     },
     "vocab_terms": {
       "cosmological": [
@@ -212,9 +231,15 @@
         "likeness x1",
         "parable x2",
         "explanation x5"
+      ],
+      "application_voice": [
+        "concerning this x1",
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 0.948,
+    "composite_score": 0.511,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -235,18 +260,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 1.9694,
-    "overlay_density": 0.9482,
-    "teaching_purity": 0.6727,
+    "overlay_density": 1.24,
+    "teaching_purity": 0.6117,
     "first_half_cosmo": 0.5839,
     "second_half_cosmo": 1.895,
     "first_half_pastoral": 0.438,
     "second_half_pastoral": 0.5831,
-    "layer_shift_score": -1.166,
+    "first_half_application": 0.0,
+    "second_half_application": 0.5831,
+    "layer_shift_score": -0.5829,
     "tier": "mixed",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.06299635712970732,
-    "pca_y": -0.08646096020835634
+    "pca_x": 0.06259721514866946,
+    "pca_y": -0.08450535056878913
   },
   {
     "chapter_number": 3,
@@ -262,7 +289,8 @@
       "pastoral": 0.9217,
       "nt_christian": 0.0,
       "hagiographic": 0.6912,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -294,7 +322,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.11,
     "has_formulaic_opening": true,
@@ -318,12 +347,14 @@
     "second_half_cosmo": 3.6866,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.8433,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.8433,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.16986716155938172,
-    "pca_y": -0.3166963632502748
+    "pca_x": -0.16963342598776932,
+    "pca_y": -0.3154335839745694
   },
   {
     "chapter_number": 4,
@@ -339,7 +370,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.1172,
       "hagiographic": 0.2345,
-      "correspondential": 0.3517
+      "correspondential": 0.3517,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -373,7 +405,8 @@
       ],
       "correspondential": [
         "these are the twelve x3"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 5.92,
     "has_formulaic_opening": true,
@@ -401,12 +434,14 @@
     "second_half_cosmo": 2.5761,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.6493,
     "tier": "core",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.20596193663284457,
-    "pca_y": -0.02326141760961961
+    "pca_x": -0.20590933384026744,
+    "pca_y": -0.019846785081512015
   },
   {
     "chapter_number": 5,
@@ -422,7 +457,8 @@
       "pastoral": 0.5634,
       "nt_christian": 0.1408,
       "hagiographic": 0.1408,
-      "correspondential": 0.1408
+      "correspondential": 0.1408,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -456,7 +492,8 @@
       ],
       "correspondential": [
         "likeness x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 2.676,
     "has_formulaic_opening": true,
@@ -480,12 +517,14 @@
     "second_half_cosmo": 2.5352,
     "first_half_pastoral": 0.8451,
     "second_half_pastoral": 0.2817,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.8451,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.19024937349935092,
-    "pca_y": -0.014688319485753179
+    "pca_x": -0.19022499952340072,
+    "pca_y": -0.017557679207902167
   },
   {
     "chapter_number": 6,
@@ -501,7 +540,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.1432,
       "hagiographic": 0.1432,
-      "correspondential": 0.2147
+      "correspondential": 0.2147,
+      "application_voice": 1.0737
     },
     "vocab_terms": {
       "cosmological": [
@@ -535,9 +575,23 @@
         "resembles x1",
         "is the manner x1",
         "this is the manner x1"
+      ],
+      "application_voice": [
+        "i command you x1",
+        "i tell you x1",
+        "keep away from x1",
+        "concerning this x2",
+        "my brethren x1",
+        "my limbs x1",
+        "hold your heart x1",
+        "reigns today x2",
+        "till today x1",
+        "nowadays x1",
+        "command x2",
+        "brethren x1"
       ]
     },
-    "composite_score": 3.257,
+    "composite_score": 1.646,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -564,18 +618,20 @@
       "pentadic_structure"
     ],
     "teaching_density": 2.4337,
-    "overlay_density": 0.2864,
-    "teaching_purity": 0.8914,
+    "overlay_density": 1.3601,
+    "teaching_purity": 0.6398,
     "first_half_cosmo": 2.5788,
     "second_half_cosmo": 1.1445,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 1.4343,
+    "first_half_application": 0.5731,
+    "second_half_application": 1.2876,
+    "layer_shift_score": 2.1488,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.06579470467708068,
-    "pca_y": 0.18024539020644167
+    "pca_x": -0.06510641192636758,
+    "pca_y": 0.18237504899957677
   },
   {
     "chapter_number": 7,
@@ -591,7 +647,8 @@
       "pastoral": 0.6188,
       "nt_christian": 0.2475,
       "hagiographic": 0.2475,
-      "correspondential": 0.3713
+      "correspondential": 0.3713,
+      "application_voice": 0.1238
     },
     "vocab_terms": {
       "cosmological": [
@@ -628,9 +685,12 @@
         "these are the five x1",
         "these are the three x1",
         "image x1"
+      ],
+      "application_voice": [
+        "beloved x1"
       ]
     },
-    "composite_score": 1.733,
+    "composite_score": 1.547,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -648,18 +708,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.5991,
-    "overlay_density": 1.1138,
-    "teaching_purity": 0.6981,
+    "overlay_density": 1.2376,
+    "teaching_purity": 0.6757,
     "first_half_cosmo": 2.9703,
     "second_half_cosmo": 1.2376,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.2376,
-    "layer_shift_score": 2.9703,
+    "first_half_application": 0.2475,
+    "second_half_application": 0.0,
+    "layer_shift_score": 2.7228,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.17073184183841275,
-    "pca_y": -0.29661110486058345
+    "pca_x": -0.1705364294601949,
+    "pca_y": -0.2973716854584874
   },
   {
     "chapter_number": 8,
@@ -675,7 +737,8 @@
       "pastoral": 0.8746,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -693,7 +756,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.437,
     "has_formulaic_opening": false,
@@ -719,12 +783,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.5848,
     "second_half_pastoral": 1.1628,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 3.502,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.1987114035151377,
-    "pca_y": -0.22462885046996442
+    "pca_x": -0.1988088437886726,
+    "pca_y": -0.2250195178487516
   },
   {
     "chapter_number": 9,
@@ -740,7 +806,8 @@
       "pastoral": 0.4474,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0559
+      "correspondential": 0.0559,
+      "application_voice": 0.5593
     },
     "vocab_terms": {
       "cosmological": [
@@ -768,9 +835,20 @@
       "hagiographic": [],
       "correspondential": [
         "image x1"
+      ],
+      "application_voice": [
+        "i tell you x1",
+        "concerning this x1",
+        "my brethren x1",
+        "my limbs x1",
+        "my beloved x1",
+        "beloved ones x1",
+        "struggle x1",
+        "brethren x2",
+        "beloved x1"
       ]
     },
-    "composite_score": 2.433,
+    "composite_score": 1.594,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -788,18 +866,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.1812,
-    "overlay_density": 0.4474,
-    "teaching_purity": 0.8267,
+    "overlay_density": 1.0067,
+    "teaching_purity": 0.6821,
     "first_half_cosmo": 3.0201,
     "second_half_cosmo": 1.0067,
     "first_half_pastoral": 0.2237,
     "second_half_pastoral": 0.6711,
-    "layer_shift_score": 2.4608,
+    "first_half_application": 0.1119,
+    "second_half_application": 0.8949,
+    "layer_shift_score": 3.2438,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.01302775144766314,
-    "pca_y": -0.17655535052446433
+    "pca_x": -0.012910276532199868,
+    "pca_y": -0.1781635340661822
   },
   {
     "chapter_number": 10,
@@ -815,7 +895,8 @@
       "pastoral": 0.3356,
       "nt_christian": 0.0,
       "hagiographic": 0.3356,
-      "correspondential": 0.6711
+      "correspondential": 0.6711,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -838,7 +919,8 @@
       "correspondential": [
         "after the likeness x1",
         "likeness x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 6.543,
     "has_formulaic_opening": false,
@@ -864,12 +946,14 @@
     "second_half_cosmo": 2.0134,
     "first_half_pastoral": 0.6711,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.6846,
     "tier": "core",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.1538257927183862,
-    "pca_y": -0.15245939526214933
+    "pca_x": -0.15374526528238122,
+    "pca_y": -0.14826038350419446
   },
   {
     "chapter_number": 11,
@@ -885,7 +969,8 @@
       "pastoral": 0.339,
       "nt_christian": 1.0169,
       "hagiographic": 0.678,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 1.3559
     },
     "vocab_terms": {
       "cosmological": [
@@ -913,9 +998,14 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x2"
+      ]
     },
-    "composite_score": 0.847,
+    "composite_score": -1.186,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -931,18 +1021,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 3.3898,
-    "overlay_density": 2.0339,
-    "teaching_purity": 0.6238,
+    "overlay_density": 3.3898,
+    "teaching_purity": 0.4993,
     "first_half_cosmo": 4.0816,
     "second_half_cosmo": 2.7027,
     "first_half_pastoral": 0.6803,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.6986,
-    "tier": "mixed",
+    "first_half_application": 2.7211,
+    "second_half_application": 0.0,
+    "layer_shift_score": -2.0225,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.15527894863942943,
-    "pca_y": -0.18555097900661788
+    "pca_x": -0.155184575028074,
+    "pca_y": -0.18728427849422835
   },
   {
     "chapter_number": 12,
@@ -958,7 +1050,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -968,7 +1061,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.351,
     "has_formulaic_opening": false,
@@ -996,12 +1090,14 @@
     "second_half_cosmo": 1.7857,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.7857,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.0034390708822115974,
-    "pca_y": -0.1105853499859966
+    "pca_x": 0.003359821109113289,
+    "pca_y": -0.11624142684446405
   },
   {
     "chapter_number": 13,
@@ -1017,7 +1113,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.5873,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1030,7 +1127,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -1.19,
     "has_formulaic_opening": true,
@@ -1056,12 +1154,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.5873,
     "tier": "hagiographic",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.0637940491464432,
-    "pca_y": -0.10988136633123882
+    "pca_x": 0.0640047671052212,
+    "pca_y": -0.11011853644470246
   },
   {
     "chapter_number": 14,
@@ -1077,7 +1177,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1090,7 +1191,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.429,
     "has_formulaic_opening": false,
@@ -1116,12 +1218,14 @@
     "second_half_cosmo": 3.4091,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -2.2597,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.015280021485756527,
-    "pca_y": -0.14304211000144115
+    "pca_x": -0.015139523833471093,
+    "pca_y": -0.142576182894212
   },
   {
     "chapter_number": 15,
@@ -1137,7 +1241,8 @@
       "pastoral": 0.5263,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1159,7 +1264,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 7.895,
     "has_formulaic_opening": false,
@@ -1186,12 +1292,14 @@
     "second_half_cosmo": 4.7368,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.0526,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.20418854434366987,
-    "pca_y": 0.03017842471413422
+    "pca_x": -0.2039779978071642,
+    "pca_y": 0.03585737184596674
   },
   {
     "chapter_number": 16,
@@ -1207,7 +1315,8 @@
       "pastoral": 0.3279,
       "nt_christian": 0.2186,
       "hagiographic": 0.1093,
-      "correspondential": 0.1639
+      "correspondential": 0.1639,
+      "application_voice": 0.1093
     },
     "vocab_terms": {
       "cosmological": [
@@ -1246,9 +1355,13 @@
       "correspondential": [
         "resembles x2",
         "image x1"
+      ],
+      "application_voice": [
+        "struggle x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 2.841,
+    "composite_score": 2.677,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -1267,18 +1380,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 2.7868,
-    "overlay_density": 0.6558,
-    "teaching_purity": 0.8072,
+    "overlay_density": 0.7651,
+    "teaching_purity": 0.7824,
     "first_half_cosmo": 3.6066,
     "second_half_cosmo": 1.5301,
     "first_half_pastoral": 0.4372,
     "second_half_pastoral": 0.2186,
+    "first_half_application": 0.1093,
+    "second_half_application": 0.1093,
     "layer_shift_score": 1.8579,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.3010802561978512,
-    "pca_y": -0.13749464612818152
+    "pca_x": -0.30119737228014337,
+    "pca_y": -0.13690465181991213
   },
   {
     "chapter_number": 17,
@@ -1294,7 +1409,8 @@
       "pastoral": 0.2736,
       "nt_christian": 0.1368,
       "hagiographic": 0.1368,
-      "correspondential": 0.4104
+      "correspondential": 0.4104,
+      "application_voice": 0.4104
     },
     "vocab_terms": {
       "cosmological": [
@@ -1322,9 +1438,14 @@
       ],
       "correspondential": [
         "image x3"
+      ],
+      "application_voice": [
+        "struggle against x1",
+        "commanded x1",
+        "struggle x1"
       ]
     },
-    "composite_score": 4.172,
+    "composite_score": 3.557,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -1340,18 +1461,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 3.42,
-    "overlay_density": 0.5472,
-    "teaching_purity": 0.8599,
+    "overlay_density": 0.9576,
+    "teaching_purity": 0.7795,
     "first_half_cosmo": 3.2877,
     "second_half_cosmo": 2.1858,
     "first_half_pastoral": 0.5479,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.554,
-    "tier": "core",
+    "first_half_application": 0.8219,
+    "second_half_application": 0.0,
+    "layer_shift_score": -0.2679,
+    "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.29609370920211797,
-    "pca_y": -0.007240920525026877
+    "pca_x": -0.29639059019866176,
+    "pca_y": -0.012353321926192703
   },
   {
     "chapter_number": 18,
@@ -1367,7 +1490,8 @@
       "pastoral": 0.1767,
       "nt_christian": 0.0,
       "hagiographic": 0.1767,
-      "correspondential": 0.7067
+      "correspondential": 0.7067,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1398,7 +1522,8 @@
         "after the likeness x1",
         "likeness x1",
         "image x2"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 5.565,
     "has_formulaic_opening": false,
@@ -1426,12 +1551,14 @@
     "second_half_cosmo": 1.0601,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.3534,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 4.5937,
     "tier": "core",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.2592476125208692,
-    "pca_y": 0.036261056636630415
+    "pca_x": -0.2593675733343568,
+    "pca_y": 0.03299440295459119
   },
   {
     "chapter_number": 19,
@@ -1447,7 +1574,8 @@
       "pastoral": 0.6645,
       "nt_christian": 0.1661,
       "hagiographic": 0.0,
-      "correspondential": 0.8306
+      "correspondential": 0.8306,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1472,7 +1600,8 @@
       "correspondential": [
         "likeness x1",
         "image x4"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 4.236,
     "has_formulaic_opening": false,
@@ -1500,12 +1629,14 @@
     "second_half_cosmo": 1.3289,
     "first_half_pastoral": 1.3289,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.3256,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.37196611344923813,
-    "pca_y": -0.08669792003138069
+    "pca_x": -0.3722055637007536,
+    "pca_y": -0.09001442374101908
   },
   {
     "chapter_number": 20,
@@ -1521,7 +1652,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.5917,
       "hagiographic": 1.1834,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1543,7 +1675,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 9.468,
     "has_formulaic_opening": true,
@@ -1567,12 +1700,14 @@
     "second_half_cosmo": 5.8824,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.1205,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.13258121109513976,
-    "pca_y": -0.21037139623381138
+    "pca_x": -0.13280636062426512,
+    "pca_y": -0.20903001225365944
   },
   {
     "chapter_number": 21,
@@ -1588,7 +1723,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.3953,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1606,7 +1742,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.952,
     "has_formulaic_opening": false,
@@ -1630,12 +1767,14 @@
     "second_half_cosmo": 1.5748,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.8062,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.13167804753839793,
-    "pca_y": -0.1733963011093073
+    "pca_x": -0.13132575472126864,
+    "pca_y": -0.17219832871454951
   },
   {
     "chapter_number": 22,
@@ -1651,7 +1790,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.4739
+      "correspondential": 0.4739,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1666,7 +1806,8 @@
       "hagiographic": [],
       "correspondential": [
         "image x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 4.739,
     "has_formulaic_opening": false,
@@ -1690,12 +1831,14 @@
     "second_half_cosmo": 1.8868,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.9344,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.18316236994890647,
-    "pca_y": -0.17625156878685394
+    "pca_x": -0.1834588522832452,
+    "pca_y": -0.17513059607729276
   },
   {
     "chapter_number": 23,
@@ -1711,7 +1854,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1733,7 +1877,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.206,
     "has_formulaic_opening": false,
@@ -1757,12 +1902,14 @@
     "second_half_cosmo": 1.7241,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.4895,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.20458170068704856,
-    "pca_y": 0.03679292301522261
+    "pca_x": -0.20436777276424317,
+    "pca_y": 0.03904711438245192
   },
   {
     "chapter_number": 24,
@@ -1778,7 +1925,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0586,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1812,7 +1960,8 @@
         "jesus the splendour x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.81,
     "has_formulaic_opening": false,
@@ -1838,12 +1987,14 @@
     "second_half_cosmo": 0.8206,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.6964,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.25827682158272625,
-    "pca_y": -0.10864830914081186
+    "pca_x": -0.25834985197152266,
+    "pca_y": -0.10863977945610875
   },
   {
     "chapter_number": 25,
@@ -1859,7 +2010,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.1905,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 2.381
     },
     "vocab_terms": {
       "cosmological": [
@@ -1874,9 +2026,12 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "beloved x2"
+      ]
     },
-    "composite_score": 5.357,
+    "composite_score": 1.786,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -1892,18 +2047,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 4.7619,
-    "overlay_density": 1.1905,
-    "teaching_purity": 0.7987,
+    "overlay_density": 3.5715,
+    "teaching_purity": 0.5707,
     "first_half_cosmo": 4.7619,
     "second_half_cosmo": 4.7619,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 2.381,
+    "second_half_application": 2.381,
     "layer_shift_score": 0.0,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.16425416923620326,
-    "pca_y": -0.1887768928761163
+    "pca_x": -0.16433900065587656,
+    "pca_y": -0.1914962039004966
   },
   {
     "chapter_number": 26,
@@ -1919,7 +2076,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -1932,7 +2090,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.18,
     "has_formulaic_opening": true,
@@ -1958,12 +2117,14 @@
     "second_half_cosmo": 0.7042,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.8419,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.1893302788473713,
-    "pca_y": -0.061452343356770585
+    "pca_x": -0.18944871868585603,
+    "pca_y": -0.06203668102847858
   },
   {
     "chapter_number": 27,
@@ -1979,7 +2140,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.1695,
-      "correspondential": 1.0169
+      "correspondential": 1.0169,
+      "application_voice": 0.5085
     },
     "vocab_terms": {
       "cosmological": [
@@ -1995,9 +2157,14 @@
       "correspondential": [
         "after the likeness x3",
         "likeness x3"
+      ],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 2.034,
+    "composite_score": 1.271,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -2013,18 +2180,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 1.5254,
-    "overlay_density": 0.1695,
-    "teaching_purity": 0.8947,
+    "overlay_density": 0.678,
+    "teaching_purity": 0.6892,
     "first_half_cosmo": 0.678,
     "second_half_cosmo": 0.339,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.339,
+    "first_half_application": 0.0,
+    "second_half_application": 1.0169,
+    "layer_shift_score": 1.3559,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.15928707073912962,
-    "pca_y": 0.15991292161869788
+    "pca_x": 0.15963237986803525,
+    "pca_y": 0.16077771904353336
   },
   {
     "chapter_number": 28,
@@ -2040,7 +2209,8 @@
       "pastoral": 0.2601,
       "nt_christian": 0.2601,
       "hagiographic": 0.0,
-      "correspondential": 0.2601
+      "correspondential": 0.2601,
+      "application_voice": 0.6502
     },
     "vocab_terms": {
       "cosmological": [
@@ -2076,9 +2246,16 @@
       "correspondential": [
         "these are the twelve x1",
         "image x1"
+      ],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "command x1",
+        "struggle x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 4.161,
+    "composite_score": 3.186,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -2094,18 +2271,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 3.511,
-    "overlay_density": 0.5202,
-    "teaching_purity": 0.8688,
+    "overlay_density": 1.1704,
+    "teaching_purity": 0.7484,
     "first_half_cosmo": 4.1667,
     "second_half_cosmo": 2.0779,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.5195,
-    "layer_shift_score": 2.6083,
-    "tier": "core",
+    "first_half_application": 0.5208,
+    "second_half_application": 0.7792,
+    "layer_shift_score": 2.8667,
+    "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.1428048997611126,
-    "pca_y": -0.09985954080217893
+    "pca_x": -0.14312170173383212,
+    "pca_y": -0.09872122760384892
   },
   {
     "chapter_number": 29,
@@ -2121,7 +2300,8 @@
       "pastoral": 0.1712,
       "nt_christian": 0.3425,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.3425
     },
     "vocab_terms": {
       "cosmological": [
@@ -2149,9 +2329,12 @@
         "jesus the splendour x2"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "beloved x2"
+      ]
     },
-    "composite_score": 4.024,
+    "composite_score": 3.51,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -2167,18 +2350,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 3.4246,
-    "overlay_density": 0.5137,
-    "teaching_purity": 0.8674,
+    "overlay_density": 0.8562,
+    "teaching_purity": 0.7981,
     "first_half_cosmo": 4.4521,
     "second_half_cosmo": 2.0548,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.3425,
-    "layer_shift_score": 2.7398,
-    "tier": "core",
+    "first_half_application": 0.6849,
+    "second_half_application": 0.0,
+    "layer_shift_score": 2.0549,
+    "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.19875182593643778,
-    "pca_y": -0.09902524816411892
+    "pca_x": -0.19852701524557867,
+    "pca_y": -0.09644619790700004
   },
   {
     "chapter_number": 30,
@@ -2194,7 +2379,8 @@
       "pastoral": 0.5747,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 1.7241
     },
     "vocab_terms": {
       "cosmological": [
@@ -2206,9 +2392,14 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
+      ]
     },
-    "composite_score": -0.287,
+    "composite_score": -2.873,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -2224,18 +2415,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.5747,
-    "overlay_density": 0.5747,
-    "teaching_purity": 0.4957,
+    "overlay_density": 2.2988,
+    "teaching_purity": 0.1993,
     "first_half_cosmo": 1.1494,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 1.1494,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.0,
-    "tier": "mixed",
+    "first_half_application": 3.4483,
+    "second_half_application": 0.0,
+    "layer_shift_score": -3.4483,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.14451135968989418,
-    "pca_y": 0.055681955047303874
+    "pca_x": -0.1446634524052475,
+    "pca_y": 0.05872963645065259
   },
   {
     "chapter_number": 31,
@@ -2251,7 +2444,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.2227,
       "hagiographic": 0.2227,
-      "correspondential": 0.2227
+      "correspondential": 0.2227,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2270,7 +2464,8 @@
       ],
       "correspondential": [
         "image x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 2.45,
     "has_formulaic_opening": false,
@@ -2294,12 +2489,14 @@
     "second_half_cosmo": 1.3333,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.3453,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.1198652446398095,
-    "pca_y": -0.09264578154298427
+    "pca_x": -0.119516942914274,
+    "pca_y": -0.09407065655459305
   },
   {
     "chapter_number": 32,
@@ -2315,7 +2512,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.6645,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2335,7 +2533,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.987,
     "has_formulaic_opening": false,
@@ -2359,12 +2558,14 @@
     "second_half_cosmo": 1.3245,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 4.0088,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.25538540709620444,
-    "pca_y": 0.027163067124915913
+    "pca_x": -0.25521427031101157,
+    "pca_y": 0.03146734411215827
   },
   {
     "chapter_number": 33,
@@ -2380,7 +2581,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 2.2472,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2395,7 +2597,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.685,
     "has_formulaic_opening": true,
@@ -2419,12 +2622,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 6.8182,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.12138642506902457,
-    "pca_y": 0.18895815845938826
+    "pca_x": -0.12152176398824376,
+    "pca_y": 0.19487039661230368
   },
   {
     "chapter_number": 34,
@@ -2440,7 +2645,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.5152,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2455,7 +2661,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.136,
     "has_formulaic_opening": true,
@@ -2479,12 +2686,14 @@
     "second_half_cosmo": 3.0303,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.5151,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.16091739702583188,
-    "pca_y": 0.1257340972453346
+    "pca_x": -0.1609024595690974,
+    "pca_y": 0.12372781972781077
   },
   {
     "chapter_number": 35,
@@ -2500,7 +2709,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.7391,
-      "correspondential": 0.8696
+      "correspondential": 0.8696,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2516,7 +2726,8 @@
       ],
       "correspondential": [
         "image x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 1.304,
     "has_formulaic_opening": true,
@@ -2540,12 +2751,14 @@
     "second_half_cosmo": 1.7241,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0303,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.11871892843088191,
-    "pca_y": 0.020616608434493484
+    "pca_x": -0.11893905860753327,
+    "pca_y": 0.014359779506741818
   },
   {
     "chapter_number": 36,
@@ -2561,7 +2774,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.2924,
-      "correspondential": 0.2924
+      "correspondential": 0.2924,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2578,7 +2792,8 @@
       ],
       "correspondential": [
         "resembles x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 3.947,
     "has_formulaic_opening": false,
@@ -2602,12 +2817,14 @@
     "second_half_cosmo": 2.3392,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.5848,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.09877706558487975,
-    "pca_y": 0.2955196948439539
+    "pca_x": -0.09805623685897907,
+    "pca_y": 0.2959008793290017
   },
   {
     "chapter_number": 37,
@@ -2623,7 +2840,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.3793,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2640,7 +2858,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 4.138,
     "has_formulaic_opening": true,
@@ -2664,12 +2883,14 @@
     "second_half_cosmo": 5.4795,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -2.7017,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.2516273143163097,
-    "pca_y": 0.13345912036875288
+    "pca_x": -0.251241634792859,
+    "pca_y": 0.13725332746797597
   },
   {
     "chapter_number": 38,
@@ -2685,7 +2906,8 @@
       "pastoral": 0.6313,
       "nt_christian": 0.0468,
       "hagiographic": 0.0234,
-      "correspondential": 0.1403
+      "correspondential": 0.1403,
+      "application_voice": 0.187
     },
     "vocab_terms": {
       "cosmological": [
@@ -2739,9 +2961,14 @@
         "after the likeness x1",
         "likeness x2",
         "image x3"
+      ],
+      "application_voice": [
+        "my children x3",
+        "become as x1",
+        "brethren x4"
       ]
     },
-    "composite_score": 1.227,
+    "composite_score": 0.947,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": true,
@@ -2759,18 +2986,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 1.7536,
-    "overlay_density": 0.7015,
-    "teaching_purity": 0.7114,
+    "overlay_density": 0.8885,
+    "teaching_purity": 0.6612,
     "first_half_cosmo": 2.1048,
     "second_half_cosmo": 1.0753,
     "first_half_pastoral": 0.4677,
     "second_half_pastoral": 0.7948,
-    "layer_shift_score": 1.3566,
+    "first_half_application": 0.0,
+    "second_half_application": 0.374,
+    "layer_shift_score": 1.7306,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": 0.0503023470072623,
-    "pca_y": -0.03312269000626367
+    "pca_x": 0.05124548346355849,
+    "pca_y": -0.03232907404316759
   },
   {
     "chapter_number": 39,
@@ -2786,7 +3015,8 @@
       "pastoral": 0.2821,
       "nt_christian": 0.141,
       "hagiographic": 0.141,
-      "correspondential": 0.4231
+      "correspondential": 0.4231,
+      "application_voice": 0.4231
     },
     "vocab_terms": {
       "cosmological": [
@@ -2815,9 +3045,14 @@
       "correspondential": [
         "these are the three x1",
         "image x2"
+      ],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 2.539,
+    "composite_score": 1.904,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -2835,18 +3070,20 @@
     ],
     "gardner_flags": [],
     "teaching_density": 2.3977,
-    "overlay_density": 0.5641,
-    "teaching_purity": 0.8068,
+    "overlay_density": 0.9872,
+    "teaching_purity": 0.7063,
     "first_half_cosmo": 2.5424,
     "second_half_cosmo": 1.1268,
     "first_half_pastoral": 0.2825,
     "second_half_pastoral": 0.2817,
-    "layer_shift_score": 1.4148,
+    "first_half_application": 0.8475,
+    "second_half_application": 0.0,
+    "layer_shift_score": 0.5673,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.2593590866965351,
-    "pca_y": -0.12529642061432422
+    "pca_x": -0.25942091384416527,
+    "pca_y": -0.12543191894402592
   },
   {
     "chapter_number": 40,
@@ -2862,7 +3099,8 @@
       "pastoral": 0.6849,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2878,7 +3116,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.685,
     "has_formulaic_opening": true,
@@ -2902,12 +3141,14 @@
     "second_half_cosmo": 1.3699,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.3699,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.3699,
     "tier": "mixed",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.07179142125950715,
-    "pca_y": 0.11176015385363793
+    "pca_x": -0.07224086225652371,
+    "pca_y": 0.10940034579264575
   },
   {
     "chapter_number": 41,
@@ -2923,7 +3164,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -2934,7 +3176,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.245,
     "has_formulaic_opening": false,
@@ -2960,12 +3203,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.6667,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.09748030131396311,
-    "pca_y": 0.10155200617519441
+    "pca_x": -0.09798233344118122,
+    "pca_y": 0.09791416002717454
   },
   {
     "chapter_number": 42,
@@ -2981,7 +3226,8 @@
       "pastoral": 0.1232,
       "nt_christian": 0.0,
       "hagiographic": 0.0616,
-      "correspondential": 0.0616
+      "correspondential": 0.0616,
+      "application_voice": 0.1847
     },
     "vocab_terms": {
       "cosmological": [
@@ -3007,9 +3253,14 @@
       ],
       "correspondential": [
         "these are the three x1"
+      ],
+      "application_voice": [
+        "my beloved x1",
+        "beloved ones x1",
+        "beloved x1"
       ]
     },
-    "composite_score": 3.448,
+    "composite_score": 3.171,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -3025,18 +3276,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.5247,
-    "overlay_density": 0.1848,
-    "teaching_purity": 0.9284,
+    "overlay_density": 0.3695,
+    "teaching_purity": 0.8693,
     "first_half_cosmo": 3.6946,
     "second_half_cosmo": 1.2315,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.2463,
-    "layer_shift_score": 2.7094,
+    "first_half_application": 0.3695,
+    "second_half_application": 0.0,
+    "layer_shift_score": 2.3399,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.0456998782187379,
-    "pca_y": 0.32465961180251796
+    "pca_x": -0.04571965764853911,
+    "pca_y": 0.32428822483414294
   },
   {
     "chapter_number": 43,
@@ -3052,7 +3305,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.2392,
       "hagiographic": 0.1196,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3073,7 +3327,8 @@
       "hagiographic": [
         "the enlightener speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.349,
     "has_formulaic_opening": false,
@@ -3097,12 +3352,14 @@
     "second_half_cosmo": 3.3493,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.1962,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.10816200382213424,
-    "pca_y": 0.43940770894939396
+    "pca_x": -0.10843641434207303,
+    "pca_y": 0.4381200570277761
   },
   {
     "chapter_number": 44,
@@ -3118,7 +3375,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.2436,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3140,7 +3398,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 3.106,
     "has_formulaic_opening": true,
@@ -3164,12 +3423,14 @@
     "second_half_cosmo": 1.2165,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.1981,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.08057881595559858,
-    "pca_y": 0.4582854266115247
+    "pca_x": -0.08085417891908765,
+    "pca_y": 0.4603293873717099
   },
   {
     "chapter_number": 45,
@@ -3185,7 +3446,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3199,7 +3461,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 5.342,
     "has_formulaic_opening": false,
@@ -3223,12 +3486,14 @@
     "second_half_cosmo": 2.7322,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.6634,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.124548536735312,
-    "pca_y": 0.3525098953857041
+    "pca_x": -0.12485237538283492,
+    "pca_y": 0.35355796339817264
   },
   {
     "chapter_number": 46,
@@ -3244,7 +3509,8 @@
       "pastoral": 1.2232,
       "nt_christian": 0.3058,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3266,7 +3532,8 @@
         "christ x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.459,
     "has_formulaic_opening": false,
@@ -3290,12 +3557,14 @@
     "second_half_cosmo": 1.2195,
     "first_half_pastoral": 1.8405,
     "second_half_pastoral": 0.6098,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0038,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.14637305233730064,
-    "pca_y": 0.0563543436592693
+    "pca_x": -0.14656812429411165,
+    "pca_y": 0.05749474330152647
   },
   {
     "chapter_number": 47,
@@ -3311,7 +3580,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.2732,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3329,7 +3599,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.82,
     "has_formulaic_opening": true,
@@ -3353,12 +3624,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.6393,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.13898943434336042,
-    "pca_y": 0.3154655643354097
+    "pca_x": -0.1385358445793564,
+    "pca_y": 0.3157377968214516
   },
   {
     "chapter_number": 48,
@@ -3374,7 +3647,8 @@
       "pastoral": 0.066,
       "nt_christian": 0.066,
       "hagiographic": 0.132,
-      "correspondential": 0.132
+      "correspondential": 0.132,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3402,7 +3676,8 @@
       ],
       "correspondential": [
         "image x2"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 1.683,
     "has_formulaic_opening": true,
@@ -3428,12 +3703,14 @@
     "second_half_cosmo": 1.0554,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.1319,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.6617,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.06941809525683489,
-    "pca_y": 0.4074458813127755
+    "pca_x": -0.06909158568155017,
+    "pca_y": 0.4052979892047722
   },
   {
     "chapter_number": 49,
@@ -3449,7 +3726,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3459,7 +3737,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.234,
     "has_formulaic_opening": false,
@@ -3483,12 +3762,14 @@
     "second_half_cosmo": 0.8197,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0067,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.09719877997544767,
-    "pca_y": 0.26255598066936375
+    "pca_x": 0.09723195685850607,
+    "pca_y": 0.2616235807848639
   },
   {
     "chapter_number": 50,
@@ -3504,7 +3785,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 1.269,
-      "correspondential": 0.7614
+      "correspondential": 0.7614,
+      "application_voice": 0.2538
     },
     "vocab_terms": {
       "cosmological": [
@@ -3528,9 +3810,12 @@
         "after the likeness x1",
         "these are the three x1",
         "likeness x1"
+      ],
+      "application_voice": [
+        "beloved x1"
       ]
     },
-    "composite_score": 2.538,
+    "composite_score": 2.157,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -3546,18 +3831,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.7918,
-    "overlay_density": 1.269,
-    "teaching_purity": 0.6858,
+    "overlay_density": 1.5228,
+    "teaching_purity": 0.6456,
     "first_half_cosmo": 1.5228,
     "second_half_cosmo": 1.5228,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.5076,
+    "layer_shift_score": 0.5076,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.11866342748107904,
-    "pca_y": -0.2087238074160107
+    "pca_x": -0.11896694181335679,
+    "pca_y": -0.20818070311720593
   },
   {
     "chapter_number": 51,
@@ -3573,7 +3860,8 @@
       "pastoral": 0.3817,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3586,7 +3874,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 2.099,
     "has_formulaic_opening": false,
@@ -3610,12 +3899,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.7634,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 4.5802,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.08798117231125632,
-    "pca_y": 0.042125472396635166
+    "pca_x": -0.08829404241276502,
+    "pca_y": 0.03619317056692524
   },
   {
     "chapter_number": 52,
@@ -3631,7 +3922,8 @@
       "pastoral": 0.2538,
       "nt_christian": 0.0,
       "hagiographic": 0.5076,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.2538
     },
     "vocab_terms": {
       "cosmological": [],
@@ -3644,9 +3936,12 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "command x1"
+      ]
     },
-    "composite_score": -1.269,
+    "composite_score": -1.65,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -3662,18 +3957,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.0,
-    "overlay_density": 0.7614,
+    "overlay_density": 1.0152,
     "teaching_purity": 0.0,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.5076,
-    "layer_shift_score": 0.5076,
+    "first_half_application": 0.5076,
+    "second_half_application": 0.0,
+    "layer_shift_score": 0.0,
     "tier": "hagiographic",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.09154399047696973,
-    "pca_y": 0.011028572989376272
+    "pca_x": -0.09190514061637306,
+    "pca_y": 0.007715594406496457
   },
   {
     "chapter_number": 53,
@@ -3689,7 +3986,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.5435,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3713,7 +4011,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 9.375,
     "has_formulaic_opening": true,
@@ -3737,12 +4036,14 @@
     "second_half_cosmo": 2.7174,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 5.9783,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.13211520289053838,
-    "pca_y": 0.1034535938632949
+    "pca_x": -0.1312254176539159,
+    "pca_y": 0.10682222680817581
   },
   {
     "chapter_number": 54,
@@ -3758,7 +4059,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.4673,
-      "correspondential": 0.2336
+      "correspondential": 0.2336,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -3782,7 +4084,8 @@
       ],
       "correspondential": [
         "resembles x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 3.855,
     "has_formulaic_opening": false,
@@ -3806,12 +4109,14 @@
     "second_half_cosmo": 0.9346,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 3.7383,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.2256050644996165,
-    "pca_y": 0.01565535745509595
+    "pca_x": -0.22544439122822063,
+    "pca_y": 0.01226908822842782
   },
   {
     "chapter_number": 55,
@@ -3827,7 +4132,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.8554
+      "correspondential": 0.8554,
+      "application_voice": 0.1711
     },
     "vocab_terms": {
       "cosmological": [
@@ -3848,9 +4154,12 @@
       "correspondential": [
         "likeness x1",
         "image x9"
+      ],
+      "application_voice": [
+        "beloved x2"
       ]
     },
-    "composite_score": 4.363,
+    "composite_score": 4.106,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -3866,18 +4175,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.9084,
-    "overlay_density": 0.0,
-    "teaching_purity": 0.9966,
+    "overlay_density": 0.1711,
+    "teaching_purity": 0.9414,
     "first_half_cosmo": 1.1986,
     "second_half_cosmo": 2.906,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": -1.7074,
+    "first_half_application": 0.1712,
+    "second_half_application": 0.1709,
+    "layer_shift_score": -1.7077,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.09782244326358588,
-    "pca_y": 0.14664382073336182
+    "pca_x": -0.09817010389816408,
+    "pca_y": 0.1429571387335128
   },
   {
     "chapter_number": 56,
@@ -3893,7 +4204,8 @@
       "pastoral": 0.4585,
       "nt_christian": 0.0917,
       "hagiographic": 0.2751,
-      "correspondential": 0.7336
+      "correspondential": 0.7336,
+      "application_voice": 0.321
     },
     "vocab_terms": {
       "cosmological": [
@@ -3922,9 +4234,17 @@
         "resembles x1",
         "likeness x2",
         "image x11"
+      ],
+      "application_voice": [
+        "i tell you x1",
+        "my brothers x1",
+        "my limbs x1",
+        "my loved ones x1",
+        "make yourselves x1",
+        "guard x2"
       ]
     },
-    "composite_score": 0.711,
+    "composite_score": 0.229,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -3940,18 +4260,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 1.5131,
-    "overlay_density": 0.8253,
-    "teaching_purity": 0.6443,
+    "overlay_density": 1.1463,
+    "teaching_purity": 0.5668,
     "first_half_cosmo": 0.8257,
     "second_half_cosmo": 0.7333,
     "first_half_pastoral": 0.367,
     "second_half_pastoral": 0.55,
-    "layer_shift_score": 0.2754,
+    "first_half_application": 0.0,
+    "second_half_application": 0.55,
+    "layer_shift_score": 0.8254,
     "tier": "mixed",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.186352076343715,
-    "pca_y": 0.06501077860329177
+    "pca_x": 0.1868050837200112,
+    "pca_y": 0.062124769140760344
   },
   {
     "chapter_number": 57,
@@ -3967,7 +4289,8 @@
       "pastoral": 0.3656,
       "nt_christian": 0.0,
       "hagiographic": 0.0914,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.1828
     },
     "vocab_terms": {
       "cosmological": [
@@ -3982,9 +4305,13 @@
       "hagiographic": [
         "the enlightener speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "you also x1",
+        "nowadays x1"
+      ]
     },
-    "composite_score": -0.594,
+    "composite_score": -0.868,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -4000,18 +4327,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.1828,
-    "overlay_density": 0.457,
-    "teaching_purity": 0.2813,
+    "overlay_density": 0.6398,
+    "teaching_purity": 0.2196,
     "first_half_cosmo": 0.3656,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.3656,
     "second_half_pastoral": 0.3656,
-    "layer_shift_score": 0.3656,
+    "first_half_application": 0.0,
+    "second_half_application": 0.3656,
+    "layer_shift_score": 0.7312,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.012511188753816304,
-    "pca_y": 0.07784988324415483
+    "pca_x": 0.012466731271951172,
+    "pca_y": 0.07772798146133103
   },
   {
     "chapter_number": 58,
@@ -4027,7 +4356,8 @@
       "pastoral": 0.5814,
       "nt_christian": 0.0,
       "hagiographic": 0.5814,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4046,7 +4376,8 @@
         "the enlightener speaks x1",
         "once again the enlightener x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.291,
     "has_formulaic_opening": true,
@@ -4073,12 +4404,14 @@
     "second_half_cosmo": 0.5814,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.1628,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.3256,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.008081375561514174,
-    "pca_y": -0.1032230644700154
+    "pca_x": -0.008157191856458919,
+    "pca_y": -0.10731015416009122
   },
   {
     "chapter_number": 59,
@@ -4094,7 +4427,8 @@
       "pastoral": 0.3741,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4111,7 +4445,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.374,
     "has_formulaic_opening": true,
@@ -4135,12 +4470,14 @@
     "second_half_cosmo": 0.2494,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.7481,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.7456,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.059442682927470444,
-    "pca_y": 0.015412854818466352
+    "pca_x": -0.05931769212060192,
+    "pca_y": 0.014004241325940268
   },
   {
     "chapter_number": 60,
@@ -4156,7 +4493,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.2212,
       "hagiographic": 0.2212,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4173,7 +4511,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.775,
     "has_formulaic_opening": true,
@@ -4197,12 +4536,14 @@
     "second_half_cosmo": 1.3274,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.4424,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.03202305367992313,
-    "pca_y": 0.001183577131695833
+    "pca_x": 0.03233234946411806,
+    "pca_y": -0.002199586327952251
   },
   {
     "chapter_number": 61,
@@ -4218,7 +4559,8 @@
       "pastoral": 0.1225,
       "nt_christian": 0.1225,
       "hagiographic": 0.1225,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4237,7 +4579,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.736,
     "has_formulaic_opening": false,
@@ -4263,12 +4606,14 @@
     "second_half_cosmo": 1.7157,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.2451,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.2255,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.018890302794832496,
-    "pca_y": 0.1479104535759552
+    "pca_x": -0.01897108704275039,
+    "pca_y": 0.14935940876183362
   },
   {
     "chapter_number": 62,
@@ -4284,7 +4629,8 @@
       "pastoral": 0.8475,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.4237
+      "correspondential": 0.4237,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4303,7 +4649,8 @@
       "hagiographic": [],
       "correspondential": [
         "these are the three x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 2.118,
     "has_formulaic_opening": true,
@@ -4327,12 +4674,14 @@
     "second_half_cosmo": 1.6949,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.6949,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.5424,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.2547580882527438,
-    "pca_y": -0.03123624834969063
+    "pca_x": -0.2540415301948671,
+    "pca_y": -0.024472559219976413
   },
   {
     "chapter_number": 63,
@@ -4348,7 +4697,8 @@
       "pastoral": 1.1111,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4368,7 +4718,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.972,
     "has_formulaic_opening": true,
@@ -4394,12 +4745,14 @@
     "second_half_cosmo": 1.6667,
     "first_half_pastoral": 1.6667,
     "second_half_pastoral": 0.5556,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.6667,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.04661140401687886,
-    "pca_y": -0.21963099729066998
+    "pca_x": 0.04735965293078494,
+    "pca_y": -0.21418274098535794
   },
   {
     "chapter_number": 64,
@@ -4415,7 +4768,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 1.6807
+      "correspondential": 1.6807,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4430,7 +4784,8 @@
       "correspondential": [
         "likeness x2",
         "image x8"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 3.277,
     "has_formulaic_opening": true,
@@ -4454,12 +4809,14 @@
     "second_half_cosmo": 0.3356,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.3378,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.12057478901144007,
-    "pca_y": 0.16303124835090904
+    "pca_x": -0.12078325392599545,
+    "pca_y": 0.16123877041562368
   },
   {
     "chapter_number": 65,
@@ -4475,7 +4832,8 @@
       "pastoral": 0.0537,
       "nt_christian": 0.0537,
       "hagiographic": 0.1611,
-      "correspondential": 0.1611
+      "correspondential": 0.1611,
+      "application_voice": 0.3759
     },
     "vocab_terms": {
       "cosmological": [
@@ -4502,9 +4860,15 @@
         "after the likeness x1",
         "likeness x1",
         "image x1"
+      ],
+      "application_voice": [
+        "concerning this x1",
+        "my beloved x2",
+        "beloved ones x2",
+        "beloved x2"
       ]
     },
-    "composite_score": 0.269,
+    "composite_score": -0.295,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -4525,18 +4889,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 0.4833,
-    "overlay_density": 0.2685,
-    "teaching_purity": 0.6344,
+    "overlay_density": 0.6444,
+    "teaching_purity": 0.4248,
     "first_half_cosmo": 0.2148,
     "second_half_cosmo": 0.3222,
     "first_half_pastoral": 0.1074,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": -0.2148,
-    "tier": "secondary",
+    "first_half_application": 0.0,
+    "second_half_application": 0.7519,
+    "layer_shift_score": 0.5371,
+    "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.06406537894459195,
-    "pca_y": -0.006909076902052593
+    "pca_x": 0.063603070404719,
+    "pca_y": -0.009716356307370834
   },
   {
     "chapter_number": 66,
@@ -4552,7 +4918,8 @@
       "pastoral": 0.3992,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.5988
     },
     "vocab_terms": {
       "cosmological": [
@@ -4566,9 +4933,14 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "i say to you x1",
+        "my brothers x1",
+        "because of this i x1"
+      ]
     },
-    "composite_score": -0.2,
+    "composite_score": -1.098,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -4584,18 +4956,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.3992,
-    "overlay_density": 0.3992,
-    "teaching_purity": 0.4938,
+    "overlay_density": 0.998,
+    "teaching_purity": 0.2837,
     "first_half_cosmo": 0.8,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.7968,
-    "layer_shift_score": 1.5968,
-    "tier": "mixed",
+    "first_half_application": 0.0,
+    "second_half_application": 0.3984,
+    "layer_shift_score": 1.9952,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.08106798285156286,
-    "pca_y": 0.06220519073091779
+    "pca_x": -0.08129725901593832,
+    "pca_y": 0.05815682470827278
   },
   {
     "chapter_number": 67,
@@ -4611,7 +4985,8 @@
       "pastoral": 1.6949,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.4237
+      "correspondential": 0.4237,
+      "application_voice": 1.6949
     },
     "vocab_terms": {
       "cosmological": [],
@@ -4625,9 +5000,14 @@
       "hagiographic": [],
       "correspondential": [
         "image x1"
+      ],
+      "application_voice": [
+        "i say to you x1",
+        "my children x2",
+        "because of this i x1"
       ]
     },
-    "composite_score": -2.754,
+    "composite_score": -5.297,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -4643,18 +5023,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.4237,
-    "overlay_density": 1.6949,
-    "teaching_purity": 0.1991,
+    "overlay_density": 3.3898,
+    "teaching_purity": 0.1108,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 1.6949,
     "second_half_pastoral": 1.6949,
+    "first_half_application": 0.8475,
+    "second_half_application": 0.8475,
     "layer_shift_score": 0.0,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.03608826294712693,
-    "pca_y": 0.030283529845817104
+    "pca_x": 0.03646014250187722,
+    "pca_y": 0.029245068840308832
   },
   {
     "chapter_number": 68,
@@ -4670,7 +5052,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -4678,7 +5061,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": true,
@@ -4702,12 +5086,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.16372567598551202,
-    "pca_y": 0.01576197909586796
+    "pca_x": 0.1635516047082839,
+    "pca_y": 0.016092130765310818
   },
   {
     "chapter_number": 69,
@@ -4723,7 +5109,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.107,
-      "correspondential": 0.107
+      "correspondential": 0.107,
+      "application_voice": 0.107
     },
     "vocab_terms": {
       "cosmological": [
@@ -4743,9 +5130,12 @@
       ],
       "correspondential": [
         "these are the twelve x1"
+      ],
+      "application_voice": [
+        "you also x1"
       ]
     },
-    "composite_score": 1.497,
+    "composite_score": 1.337,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": true,
@@ -4764,18 +5154,20 @@
       "pentadic_structure"
     ],
     "teaching_density": 1.0696,
-    "overlay_density": 0.107,
-    "teaching_purity": 0.9014,
+    "overlay_density": 0.214,
+    "teaching_purity": 0.8268,
     "first_half_cosmo": 0.8565,
     "second_half_cosmo": 0.8547,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.0018,
+    "first_half_application": 0.0,
+    "second_half_application": 0.2137,
+    "layer_shift_score": 0.2155,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.010993182503929418,
-    "pca_y": 0.1893901249146678
+    "pca_x": 0.01136398614298565,
+    "pca_y": 0.19200099383628016
   },
   {
     "chapter_number": 70,
@@ -4791,7 +5183,8 @@
       "pastoral": 0.2271,
       "nt_christian": 0.0,
       "hagiographic": 0.1136,
-      "correspondential": 0.5679
+      "correspondential": 0.5679,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4832,7 +5225,8 @@
         "corresponds x2",
         "likeness x3",
         "image x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 3.464,
     "has_formulaic_opening": true,
@@ -4859,12 +5253,14 @@
     "second_half_cosmo": 0.9081,
     "first_half_pastoral": 0.4545,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.0465,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.012282351424893496,
-    "pca_y": 0.22938246998232542
+    "pca_x": -0.01089187580275446,
+    "pca_y": 0.23235044661841023
   },
   {
     "chapter_number": 71,
@@ -4880,7 +5276,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.7634,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4896,7 +5293,8 @@
       "hagiographic": [
         "the enlightener speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 5.725,
     "has_formulaic_opening": false,
@@ -4922,12 +5320,14 @@
     "second_half_cosmo": 7.5758,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -6.0373,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": -0.03718674688599283,
-    "pca_y": 0.04712609192211889
+    "pca_x": -0.03780279704492847,
+    "pca_y": 0.04874624587342789
   },
   {
     "chapter_number": 72,
@@ -4943,7 +5343,8 @@
       "pastoral": 0.1381,
       "nt_christian": 0.0,
       "hagiographic": 0.1381,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -4965,7 +5366,8 @@
       "hagiographic": [
         "the apostle is sitting x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 2.21,
     "has_formulaic_opening": true,
@@ -4989,12 +5391,14 @@
     "second_half_cosmo": 0.8287,
     "first_half_pastoral": 0.2762,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.6575,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.10595740607578308,
-    "pca_y": 0.05449204058470955
+    "pca_x": -0.10569819538766971,
+    "pca_y": 0.053933862192694415
   },
   {
     "chapter_number": 73,
@@ -5010,7 +5414,8 @@
       "pastoral": 0.8834,
       "nt_christian": 0.1767,
       "hagiographic": 0.1767,
-      "correspondential": 0.53
+      "correspondential": 0.53,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -5033,7 +5438,8 @@
       ],
       "correspondential": [
         "image x3"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": -1.148,
     "has_formulaic_opening": true,
@@ -5059,12 +5465,14 @@
     "second_half_cosmo": 0.3534,
     "first_half_pastoral": 0.3534,
     "second_half_pastoral": 1.4134,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.06,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.11139690936050553,
-    "pca_y": -0.05873560110479738
+    "pca_x": 0.11177902825140114,
+    "pca_y": -0.0559713552063547
   },
   {
     "chapter_number": 74,
@@ -5080,7 +5488,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.295,
-      "correspondential": 0.295
+      "correspondential": 0.295,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -5099,7 +5508,8 @@
       ],
       "correspondential": [
         "signifies x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 3.982,
     "has_formulaic_opening": true,
@@ -5123,12 +5533,14 @@
     "second_half_cosmo": 3.5294,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.7543,
     "tier": "secondary",
     "in_manual_extract": true,
     "cluster": 1,
-    "pca_x": -0.16190146341775516,
-    "pca_y": -0.016644610693117554
+    "pca_x": -0.16190400054251539,
+    "pca_y": -0.01455537124722803
   },
   {
     "chapter_number": 75,
@@ -5144,7 +5556,8 @@
       "pastoral": 2.267,
       "nt_christian": 0.2519,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.7557
     },
     "vocab_terms": {
       "cosmological": [
@@ -5164,9 +5577,14 @@
         "christ x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "i say to you x1",
+        "struggles x1",
+        "beloved x1"
+      ]
     },
-    "composite_score": -0.63,
+    "composite_score": -1.763,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5187,18 +5605,20 @@
       "liturgical_connection"
     ],
     "teaching_density": 3.0227,
-    "overlay_density": 2.5189,
-    "teaching_purity": 0.5445,
+    "overlay_density": 3.2746,
+    "teaching_purity": 0.4792,
     "first_half_cosmo": 5.5556,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 4.5226,
-    "layer_shift_score": 10.0782,
+    "first_half_application": 0.5051,
+    "second_half_application": 0.5025,
+    "layer_shift_score": 10.0756,
     "tier": "peripheral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": -0.04999725578538239,
-    "pca_y": -0.2215863654014896
+    "pca_x": -0.05038445374277501,
+    "pca_y": -0.21923181186455157
   },
   {
     "chapter_number": 76,
@@ -5214,7 +5634,8 @@
       "pastoral": 0.423,
       "nt_christian": 0.0,
       "hagiographic": 0.0604,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0604
     },
     "vocab_terms": {
       "cosmological": [
@@ -5234,9 +5655,12 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "make yourselves x1"
+      ]
     },
-    "composite_score": -0.755,
+    "composite_score": -0.846,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5254,18 +5678,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.1208,
-    "overlay_density": 0.4834,
-    "teaching_purity": 0.1967,
+    "overlay_density": 0.5438,
+    "teaching_purity": 0.1791,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.2415,
     "first_half_pastoral": 0.2418,
     "second_half_pastoral": 0.6039,
-    "layer_shift_score": 0.1206,
+    "first_half_application": 0.0,
+    "second_half_application": 0.1208,
+    "layer_shift_score": 0.2414,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.0015226327732629824,
-    "pca_y": -0.09657408540565773
+    "pca_x": 0.0015045953541013674,
+    "pca_y": -0.09933069146137032
   },
   {
     "chapter_number": 77,
@@ -5281,7 +5707,8 @@
       "pastoral": 1.7032,
       "nt_christian": 0.0,
       "hagiographic": 0.2433,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.4866
     },
     "vocab_terms": {
       "cosmological": [],
@@ -5297,9 +5724,13 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "i tell you x1",
+        "i say to you x1"
+      ]
     },
-    "composite_score": -3.771,
+    "composite_score": -4.501,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5317,18 +5748,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.0,
-    "overlay_density": 1.9465,
+    "overlay_density": 2.4331,
     "teaching_purity": 0.0,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.4878,
     "second_half_pastoral": 2.9126,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.4248,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.06678491149131696,
-    "pca_y": -0.13593203987745112
+    "pca_x": 0.06664131380443734,
+    "pca_y": -0.13410279705716932
   },
   {
     "chapter_number": 78,
@@ -5344,7 +5777,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.8929
     },
     "vocab_terms": {
       "cosmological": [],
@@ -5352,9 +5786,13 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "i say to you x1",
+        "struggle x1"
+      ]
     },
-    "composite_score": 0.0,
+    "composite_score": -1.339,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5370,18 +5808,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.0,
-    "overlay_density": 0.0,
+    "overlay_density": 0.8929,
     "teaching_purity": 0.0,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": 0.0,
-    "tier": "mixed",
+    "first_half_application": 0.0,
+    "second_half_application": 0.8929,
+    "layer_shift_score": 0.8929,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.11397346643930582,
-    "pca_y": 0.022616374325000924
+    "pca_x": 0.11362213515212509,
+    "pca_y": 0.02239812294470068
   },
   {
     "chapter_number": 79,
@@ -5397,7 +5837,8 @@
       "pastoral": 2.7027,
       "nt_christian": 0.0,
       "hagiographic": 0.4505,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -5412,7 +5853,8 @@
       "hagiographic": [
         "the enlightener speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -5.405,
     "has_formulaic_opening": true,
@@ -5436,12 +5878,14 @@
     "second_half_cosmo": 0.9009,
     "first_half_pastoral": 1.8018,
     "second_half_pastoral": 3.6036,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.9009,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.1535466375913306,
-    "pca_y": -0.0695632674261486
+    "pca_x": 0.15389134322431028,
+    "pca_y": -0.06732113892158892
   },
   {
     "chapter_number": 80,
@@ -5457,7 +5901,8 @@
       "pastoral": 4.2017,
       "nt_christian": 0.4202,
       "hagiographic": 0.2101,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -5481,7 +5926,8 @@
       "hagiographic": [
         "the enlightener speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -9.454,
     "has_formulaic_opening": true,
@@ -5507,12 +5953,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 2.1008,
     "second_half_pastoral": 6.3025,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 4.6219,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.24707297471214976,
-    "pca_y": -0.21674851526140623
+    "pca_x": 0.24773913341649217,
+    "pca_y": -0.21158344496556586
   },
   {
     "chapter_number": 81,
@@ -5528,7 +5976,8 @@
       "pastoral": 1.7062,
       "nt_christian": 0.1896,
       "hagiographic": 0.0948,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.2844
     },
     "vocab_terms": {
       "cosmological": [
@@ -5551,9 +6000,14 @@
       "hagiographic": [
         "the apostle is sitting x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "my brothers x1",
+        "command x1",
+        "commands x1"
+      ]
     },
-    "composite_score": -3.886,
+    "composite_score": -4.313,
     "has_formulaic_opening": true,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -5569,18 +6023,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.0948,
-    "overlay_density": 1.9906,
-    "teaching_purity": 0.0452,
+    "overlay_density": 2.275,
+    "teaching_purity": 0.0398,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.1894,
     "first_half_pastoral": 2.4668,
     "second_half_pastoral": 0.947,
-    "layer_shift_score": -1.7092,
+    "first_half_application": 0.3795,
+    "second_half_application": 0.1894,
+    "layer_shift_score": -1.8993,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.28783399416277056,
-    "pca_y": -0.13917912350943157
+    "pca_x": 0.2882084895466927,
+    "pca_y": -0.1374348113530668
   },
   {
     "chapter_number": 82,
@@ -5596,7 +6052,8 @@
       "pastoral": 0.7701,
       "nt_christian": 0.0,
       "hagiographic": 0.11,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.11
     },
     "vocab_terms": {
       "cosmological": [],
@@ -5610,9 +6067,12 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "you too x1"
+      ]
     },
-    "composite_score": -1.705,
+    "composite_score": -1.87,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5632,18 +6092,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 0.0,
-    "overlay_density": 0.8801,
+    "overlay_density": 0.9901,
     "teaching_purity": 0.0,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 1.3216,
     "second_half_pastoral": 0.2198,
-    "layer_shift_score": -1.1018,
+    "first_half_application": 0.0,
+    "second_half_application": 0.2198,
+    "layer_shift_score": -0.882,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.2736907521282382,
-    "pca_y": 0.026001677588576796
+    "pca_x": 0.27329549732281333,
+    "pca_y": 0.024047645179463627
   },
   {
     "chapter_number": 83,
@@ -5659,7 +6121,8 @@
       "pastoral": 0.8224,
       "nt_christian": 0.0,
       "hagiographic": 0.0822,
-      "correspondential": 0.0822
+      "correspondential": 0.0822,
+      "application_voice": 0.4112
     },
     "vocab_terms": {
       "cosmological": [
@@ -5685,9 +6148,16 @@
       ],
       "correspondential": [
         "image x1"
+      ],
+      "application_voice": [
+        "you too x1",
+        "my beloved x1",
+        "beloved ones x1",
+        "struggle x1",
+        "beloved x1"
       ]
     },
-    "composite_score": -0.658,
+    "composite_score": -1.275,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5709,18 +6179,20 @@
       "christian_connection"
     ],
     "teaching_density": 0.7401,
-    "overlay_density": 0.9046,
-    "teaching_purity": 0.4473,
+    "overlay_density": 1.3158,
+    "teaching_purity": 0.3582,
     "first_half_cosmo": 0.4934,
     "second_half_cosmo": 0.8224,
     "first_half_pastoral": 1.3158,
     "second_half_pastoral": 0.3289,
-    "layer_shift_score": -1.3159,
+    "first_half_application": 0.0,
+    "second_half_application": 0.8224,
+    "layer_shift_score": -0.4935,
     "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.1181302845997555,
-    "pca_y": 0.10664000761687484
+    "pca_x": 0.11776941439424973,
+    "pca_y": 0.1109467247394345
   },
   {
     "chapter_number": 84,
@@ -5736,7 +6208,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.1621,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -5748,7 +6221,8 @@
       "hagiographic": [
         "the apostle speaks x2"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.122,
     "has_formulaic_opening": false,
@@ -5772,12 +6246,14 @@
     "second_half_cosmo": 0.1621,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.1621,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.2269496275217017,
-    "pca_y": -0.0372679526039641
+    "pca_x": 0.22713736132519713,
+    "pca_y": -0.04226620012224011
   },
   {
     "chapter_number": 85,
@@ -5793,7 +6269,8 @@
       "pastoral": 1.5964,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.057
+      "correspondential": 0.057,
+      "application_voice": 0.5701
     },
     "vocab_terms": {
       "cosmological": [
@@ -5820,9 +6297,20 @@
       "hagiographic": [],
       "correspondential": [
         "image x1"
+      ],
+      "application_voice": [
+        "i command you x1",
+        "i tell you x1",
+        "take care x1",
+        "concerning this x1",
+        "you also x1",
+        "my brothers x1",
+        "my limbs x1",
+        "command x1",
+        "commands x2"
       ]
     },
-    "composite_score": -2.167,
+    "composite_score": -3.022,
     "has_formulaic_opening": false,
     "has_formulaic_closing": true,
     "has_question_formula": true,
@@ -5840,18 +6328,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.6841,
-    "overlay_density": 1.5964,
-    "teaching_purity": 0.2987,
+    "overlay_density": 2.1665,
+    "teaching_purity": 0.2391,
     "first_half_cosmo": 0.9122,
     "second_half_cosmo": 0.3421,
     "first_half_pastoral": 1.4823,
     "second_half_pastoral": 1.7104,
-    "layer_shift_score": 0.7982,
+    "first_half_application": 0.3421,
+    "second_half_application": 0.5701,
+    "layer_shift_score": 1.0262,
     "tier": "pastoral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.3022851592273757,
-    "pca_y": -0.055825947464476215
+    "pca_x": 0.3026095946182453,
+    "pca_y": -0.05948774386656481
   },
   {
     "chapter_number": 86,
@@ -5867,7 +6357,8 @@
       "pastoral": 0.2828,
       "nt_christian": 0.0943,
       "hagiographic": 0.0943,
-      "correspondential": 0.0943
+      "correspondential": 0.0943,
+      "application_voice": 0.2828
     },
     "vocab_terms": {
       "cosmological": [
@@ -5890,9 +6381,13 @@
       ],
       "correspondential": [
         "image x1"
+      ],
+      "application_voice": [
+        "my brothers x2",
+        "struggling x1"
       ]
     },
-    "composite_score": -0.236,
+    "composite_score": -0.66,
     "has_formulaic_opening": false,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -5910,18 +6405,20 @@
       "buddhist_connection"
     ],
     "teaching_density": 0.4713,
-    "overlay_density": 0.4714,
-    "teaching_purity": 0.4947,
+    "overlay_density": 0.7542,
+    "teaching_purity": 0.3815,
     "first_half_cosmo": 0.3774,
     "second_half_cosmo": 0.3766,
     "first_half_pastoral": 0.1887,
     "second_half_pastoral": 0.3766,
-    "layer_shift_score": 0.1887,
-    "tier": "mixed",
+    "first_half_application": 0.566,
+    "second_half_application": 0.0,
+    "layer_shift_score": -0.3773,
+    "tier": "peripheral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.2760908924366761,
-    "pca_y": 0.07532182232021885
+    "pca_x": 0.2762351571286531,
+    "pca_y": 0.07338472672830003
   },
   {
     "chapter_number": 87,
@@ -5937,7 +6434,8 @@
       "pastoral": 4.878,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.1524
     },
     "vocab_terms": {
       "cosmological": [
@@ -5960,9 +6458,12 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "o catechumens x1"
+      ]
     },
-    "composite_score": -5.64,
+    "composite_score": -5.869,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -5978,18 +6479,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.5914,
-    "overlay_density": 4.878,
-    "teaching_purity": 0.3465,
+    "overlay_density": 5.0304,
+    "teaching_purity": 0.3396,
     "first_half_cosmo": 0.9146,
     "second_half_cosmo": 3.3537,
     "first_half_pastoral": 6.7073,
     "second_half_pastoral": 3.0488,
-    "layer_shift_score": -6.0976,
+    "first_half_application": 0.0,
+    "second_half_application": 0.3049,
+    "layer_shift_score": -5.7927,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.21641337068503952,
-    "pca_y": -0.14144668106159536
+    "pca_x": 0.21619080261562995,
+    "pca_y": -0.14128647122307236
   },
   {
     "chapter_number": 88,
@@ -6005,7 +6508,8 @@
       "pastoral": 1.1194,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.1244
+      "correspondential": 0.1244,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6028,7 +6532,8 @@
       "hagiographic": [],
       "correspondential": [
         "image x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": -1.244,
     "has_formulaic_opening": false,
@@ -6052,12 +6557,14 @@
     "second_half_cosmo": 0.7463,
     "first_half_pastoral": 0.7463,
     "second_half_pastoral": 1.4925,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.0001,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.302826618516182,
-    "pca_y": -0.058996820316408884
+    "pca_x": 0.30275902205298333,
+    "pca_y": -0.05688659153626013
   },
   {
     "chapter_number": 89,
@@ -6073,7 +6580,8 @@
       "pastoral": 0.6024,
       "nt_christian": 0.1506,
       "hagiographic": 0.1506,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -6088,7 +6596,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -1.807,
     "has_formulaic_opening": true,
@@ -6116,12 +6625,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.3012,
     "second_half_pastoral": 0.9036,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.6024,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.2690366773986173,
-    "pca_y": -0.028929489770354703
+    "pca_x": 0.26847724462301686,
+    "pca_y": -0.028777929742787048
   },
   {
     "chapter_number": 90,
@@ -6137,7 +6648,8 @@
       "pastoral": 1.6586,
       "nt_christian": 0.2073,
       "hagiographic": 0.0691,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6164,7 +6676,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -3.317,
     "has_formulaic_opening": false,
@@ -6191,12 +6704,14 @@
     "second_half_cosmo": 0.4144,
     "first_half_pastoral": 1.3831,
     "second_half_pastoral": 1.9337,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.5511,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.34063695053257104,
-    "pca_y": 0.010975698006275259
+    "pca_x": 0.3406175667619193,
+    "pca_y": 0.012918103465407501
   },
   {
     "chapter_number": 91,
@@ -6212,7 +6727,8 @@
       "pastoral": 3.3317,
       "nt_christian": 0.0966,
       "hagiographic": 0.0,
-      "correspondential": 0.0483
+      "correspondential": 0.0483,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6248,7 +6764,8 @@
       "hagiographic": [],
       "correspondential": [
         "likeness x1"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": -6.253,
     "has_formulaic_opening": false,
@@ -6275,12 +6792,14 @@
     "second_half_cosmo": 0.4826,
     "first_half_pastoral": 3.3816,
     "second_half_pastoral": 3.2819,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.2924,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.4077518687041647,
-    "pca_y": -0.1652936657061269
+    "pca_x": 0.40794511752157125,
+    "pca_y": -0.16485029496343812
   },
   {
     "chapter_number": 92,
@@ -6296,7 +6815,8 @@
       "pastoral": 3.0055,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6314,7 +6834,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -4.235,
     "has_formulaic_opening": false,
@@ -6338,12 +6859,14 @@
     "second_half_cosmo": 0.5464,
     "first_half_pastoral": 1.0929,
     "second_half_pastoral": 4.918,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 4.3716,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.23781423940058738,
-    "pca_y": -0.005471841324894038
+    "pca_x": 0.23767191878155536,
+    "pca_y": -0.002258867608305097
   },
   {
     "chapter_number": 93,
@@ -6359,7 +6882,8 @@
       "pastoral": 2.2315,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6380,7 +6904,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -3.208,
     "has_formulaic_opening": false,
@@ -6406,12 +6931,14 @@
     "second_half_cosmo": 1.1142,
     "first_half_pastoral": 2.2346,
     "second_half_pastoral": 2.2284,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.5617,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.27586789704544745,
-    "pca_y": -0.04170570449963598
+    "pca_x": 0.2758002513736629,
+    "pca_y": -0.04628440263165047
   },
   {
     "chapter_number": 94,
@@ -6427,7 +6954,8 @@
       "pastoral": 0.304,
       "nt_christian": 0.0,
       "hagiographic": 0.304,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.304
     },
     "vocab_terms": {
       "cosmological": [
@@ -6445,9 +6973,12 @@
       "hagiographic": [
         "the apostle is sitting x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "holy ones x1"
+      ]
     },
-    "composite_score": 2.128,
+    "composite_score": 1.672,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -6465,18 +6996,20 @@
       "uncertain"
     ],
     "teaching_density": 2.1277,
-    "overlay_density": 0.608,
-    "teaching_purity": 0.7749,
+    "overlay_density": 0.912,
+    "teaching_purity": 0.6977,
     "first_half_cosmo": 1.2195,
     "second_half_cosmo": 3.0303,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.6061,
-    "layer_shift_score": -1.2047,
+    "first_half_application": 0.6098,
+    "second_half_application": 0.0,
+    "layer_shift_score": -1.8145,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.188836405050535,
-    "pca_y": 0.07309477924043964
+    "pca_x": 0.18865431466340737,
+    "pca_y": 0.07113710631753078
   },
   {
     "chapter_number": 95,
@@ -6492,7 +7025,8 @@
       "pastoral": 0.0855,
       "nt_christian": 0.0855,
       "hagiographic": 0.0855,
-      "correspondential": 0.2564
+      "correspondential": 0.2564,
+      "application_voice": 0.1709
     },
     "vocab_terms": {
       "cosmological": [
@@ -6514,9 +7048,13 @@
       "correspondential": [
         "likeness x2",
         "image x1"
+      ],
+      "application_voice": [
+        "command x1",
+        "guard x1"
       ]
     },
-    "composite_score": 1.923,
+    "composite_score": 1.667,
     "has_formulaic_opening": true,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -6534,18 +7072,20 @@
       "correspondential_signal"
     ],
     "teaching_density": 1.6239,
-    "overlay_density": 0.2565,
-    "teaching_purity": 0.859,
+    "overlay_density": 0.4274,
+    "teaching_purity": 0.7878,
     "first_half_cosmo": 1.0256,
     "second_half_cosmo": 1.7094,
     "first_half_pastoral": 0.1709,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": -0.8547,
+    "first_half_application": 0.0,
+    "second_half_application": 0.3419,
+    "layer_shift_score": -0.5128,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.2206993548476382,
-    "pca_y": 0.12038183188133017
+    "pca_x": 0.2202272137366082,
+    "pca_y": 0.12203409619951751
   },
   {
     "chapter_number": 96,
@@ -6561,7 +7101,8 @@
       "pastoral": 0.7075,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6576,7 +7117,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.354,
     "has_formulaic_opening": true,
@@ -6600,12 +7142,14 @@
     "second_half_cosmo": 0.4717,
     "first_half_pastoral": 1.4151,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.9434,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.050436871829042065,
-    "pca_y": -0.0578395892929952
+    "pca_x": 0.050419423200626756,
+    "pca_y": -0.05896473685857485
   },
   {
     "chapter_number": 97,
@@ -6621,7 +7165,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -6629,7 +7174,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": false,
@@ -6653,12 +7199,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.08104701961106177,
-    "pca_y": 0.13737753364279537
+    "pca_x": 0.08058981245360625,
+    "pca_y": 0.13979825811847008
   },
   {
     "chapter_number": 98,
@@ -6674,7 +7222,8 @@
       "pastoral": 0.4115,
       "nt_christian": 0.0,
       "hagiographic": 0.2058,
-      "correspondential": 0.4115
+      "correspondential": 0.4115,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6694,7 +7243,8 @@
       ],
       "correspondential": [
         "image x2"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 0.72,
     "has_formulaic_opening": true,
@@ -6718,12 +7268,14 @@
     "second_half_cosmo": 1.2346,
     "first_half_pastoral": 0.4115,
     "second_half_pastoral": 0.4115,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.8231,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.007379477877875284,
-    "pca_y": -0.09921911726342314
+    "pca_x": -0.007665941485318818,
+    "pca_y": -0.10033496157545399
   },
   {
     "chapter_number": 99,
@@ -6739,7 +7291,8 @@
       "pastoral": 2.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6753,7 +7306,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -3.625,
     "has_formulaic_opening": false,
@@ -6777,12 +7331,14 @@
     "second_half_cosmo": 0.5,
     "first_half_pastoral": 2.0,
     "second_half_pastoral": 2.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.5,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.29503985358992313,
-    "pca_y": -0.029381873660873317
+    "pca_x": 0.2949033680202165,
+    "pca_y": -0.03291011260865199
   },
   {
     "chapter_number": 100,
@@ -6798,7 +7354,8 @@
       "pastoral": 0.2101,
       "nt_christian": 0.2101,
       "hagiographic": 0.0,
-      "correspondential": 0.4202
+      "correspondential": 0.4202,
+      "application_voice": 0.2101
     },
     "vocab_terms": {
       "cosmological": [],
@@ -6813,9 +7370,12 @@
       "correspondential": [
         "these are the seven x1",
         "likeness x1"
+      ],
+      "application_voice": [
+        "struggles x1"
       ]
     },
-    "composite_score": -0.315,
+    "composite_score": -0.63,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -6831,18 +7391,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 0.4202,
-    "overlay_density": 0.4202,
-    "teaching_purity": 0.4941,
+    "overlay_density": 0.6303,
+    "teaching_purity": 0.3962,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.4202,
-    "layer_shift_score": 0.4202,
-    "tier": "mixed",
+    "first_half_application": 0.0,
+    "second_half_application": 0.4202,
+    "layer_shift_score": 0.8404,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.07084379980446699,
-    "pca_y": 0.048814816671919496
+    "pca_x": 0.07137865224480142,
+    "pca_y": 0.05351428153916618
   },
   {
     "chapter_number": 101,
@@ -6858,7 +7420,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.2041,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6871,7 +7434,8 @@
         "the apostle says x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.408,
     "has_formulaic_opening": false,
@@ -6899,12 +7463,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.2245,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.06400920942354889,
-    "pca_y": 0.190209004575517
+    "pca_x": 0.06347023130476956,
+    "pca_y": 0.19322906488724043
   },
   {
     "chapter_number": 102,
@@ -6920,7 +7486,8 @@
       "pastoral": 1.2526,
       "nt_christian": 0.2088,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -6936,7 +7503,8 @@
         "the apostle says x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -2.088,
     "has_formulaic_opening": false,
@@ -6960,12 +7528,14 @@
     "second_half_cosmo": 0.4167,
     "first_half_pastoral": 2.0921,
     "second_half_pastoral": 0.4167,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.2553,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.1939126424029401,
-    "pca_y": -0.09096291052484305
+    "pca_x": 0.19429074595068768,
+    "pca_y": -0.09157097260697167
   },
   {
     "chapter_number": 103,
@@ -6981,7 +7551,8 @@
       "pastoral": 1.4706,
       "nt_christian": 0.0,
       "hagiographic": 0.4902,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.4902
     },
     "vocab_terms": {
       "cosmological": [
@@ -6998,9 +7569,12 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "brethren x1"
+      ]
     },
-    "composite_score": -1.471,
+    "composite_score": -2.206,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -7016,18 +7590,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 1.4706,
-    "overlay_density": 1.9608,
-    "teaching_purity": 0.4273,
+    "overlay_density": 2.451,
+    "teaching_purity": 0.374,
     "first_half_cosmo": 0.9804,
     "second_half_cosmo": 1.9608,
     "first_half_pastoral": 2.9412,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": -3.9216,
+    "first_half_application": 0.9804,
+    "second_half_application": 0.0,
+    "layer_shift_score": -4.902,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.23270656418227678,
-    "pca_y": -0.13167359243259488
+    "pca_x": 0.23318159187913676,
+    "pca_y": -0.1321833114981202
   },
   {
     "chapter_number": 104,
@@ -7043,7 +7619,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7051,7 +7628,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": true,
@@ -7075,12 +7653,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.23536704157737326,
-    "pca_y": 0.05418146940053738
+    "pca_x": 0.2356133289209256,
+    "pca_y": 0.05806221590510834
   },
   {
     "chapter_number": 105,
@@ -7096,7 +7676,8 @@
       "pastoral": 0.3846,
       "nt_christian": 0.7692,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.3846
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7109,9 +7690,12 @@
         "grace x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "my brothers x1"
+      ]
     },
-    "composite_score": -2.692,
+    "composite_score": -3.269,
     "has_formulaic_opening": true,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -7129,18 +7713,20 @@
       "christian_connection"
     ],
     "teaching_density": 0.0,
-    "overlay_density": 1.1538,
+    "overlay_density": 1.5384,
     "teaching_purity": 0.0,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.7692,
-    "layer_shift_score": 0.7692,
+    "first_half_application": 0.0,
+    "second_half_application": 0.7692,
+    "layer_shift_score": 1.5384,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.06518678895041345,
-    "pca_y": -0.09342965692890105
+    "pca_x": 0.06512020042067287,
+    "pca_y": -0.09322224030991116
   },
   {
     "chapter_number": 106,
@@ -7156,7 +7742,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7166,7 +7753,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 1.368,
     "has_formulaic_opening": true,
@@ -7190,12 +7778,14 @@
     "second_half_cosmo": 1.2121,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -0.6023,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.0009029134094488421,
-    "pca_y": 0.007502211647733551
+    "pca_x": 0.0005871717447899083,
+    "pca_y": 0.0014554955074537294
   },
   {
     "chapter_number": 107,
@@ -7211,7 +7801,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7219,7 +7810,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": true,
@@ -7243,12 +7835,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.22200246653761824,
-    "pca_y": 0.07578425623905351
+    "pca_x": 0.22212669956659506,
+    "pca_y": 0.0734552963802839
   },
   {
     "chapter_number": 108,
@@ -7264,7 +7858,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7277,7 +7872,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 2.618,
     "has_formulaic_opening": false,
@@ -7301,12 +7897,14 @@
     "second_half_cosmo": 1.0417,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0109,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.2474682061075555,
-    "pca_y": 0.0436025681354933
+    "pca_x": 0.24707560578893822,
+    "pca_y": 0.04814415796935089
   },
   {
     "chapter_number": 109,
@@ -7322,7 +7920,8 @@
       "pastoral": 1.0949,
       "nt_christian": 0.1825,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7341,7 +7940,8 @@
         "jesus the splendour x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -1.551,
     "has_formulaic_opening": false,
@@ -7371,12 +7971,14 @@
     "second_half_cosmo": 0.365,
     "first_half_pastoral": 0.365,
     "second_half_pastoral": 1.8248,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 2.1897,
     "tier": "pastoral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": -0.02162479248701724,
-    "pca_y": -0.1270186148975248
+    "pca_x": -0.02180777077166468,
+    "pca_y": -0.12282574549114436
   },
   {
     "chapter_number": 110,
@@ -7392,7 +7994,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7402,7 +8005,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 2.778,
     "has_formulaic_opening": false,
@@ -7426,12 +8030,14 @@
     "second_half_cosmo": 1.8519,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.15008321036058256,
-    "pca_y": 0.10958632239627664
+    "pca_x": 0.1499655663680739,
+    "pca_y": 0.10596916883457799
   },
   {
     "chapter_number": 111,
@@ -7447,7 +8053,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7457,7 +8064,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.932,
     "has_formulaic_opening": true,
@@ -7481,12 +8089,14 @@
     "second_half_cosmo": 1.2346,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": -1.2346,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.032418346523508584,
-    "pca_y": 0.017582172835385667
+    "pca_x": 0.03148634538759803,
+    "pca_y": 0.014346096582824671
   },
   {
     "chapter_number": 112,
@@ -7502,7 +8112,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.1247,
       "hagiographic": 0.1247,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.1247
     },
     "vocab_terms": {
       "cosmological": [
@@ -7518,9 +8129,12 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": [
+        "guard x1"
+      ]
     },
-    "composite_score": 0.062,
+    "composite_score": -0.125,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -7538,18 +8152,20 @@
       "cosmological_content"
     ],
     "teaching_density": 0.3741,
-    "overlay_density": 0.2494,
-    "teaching_purity": 0.5905,
+    "overlay_density": 0.3741,
+    "teaching_purity": 0.4934,
     "first_half_cosmo": 0.2494,
     "second_half_cosmo": 0.4988,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
-    "layer_shift_score": -0.2494,
+    "first_half_application": 0.2494,
+    "second_half_application": 0.0,
+    "layer_shift_score": -0.4988,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.004098516546569382,
-    "pca_y": -0.018380534290211595
+    "pca_x": -0.004217063510448423,
+    "pca_y": -0.018613200724669363
   },
   {
     "chapter_number": 113,
@@ -7565,7 +8181,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.5952,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7580,7 +8197,8 @@
         "the apostle says x1"
       ],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 2.083,
     "has_formulaic_opening": false,
@@ -7606,12 +8224,14 @@
     "second_half_cosmo": 2.381,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "secondary",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.08061956655475021,
-    "pca_y": 0.1221233393958204
+    "pca_x": 0.0805394727021253,
+    "pca_y": 0.11741178367685048
   },
   {
     "chapter_number": 114,
@@ -7627,7 +8247,8 @@
       "pastoral": 0.4914,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 1.2285
+      "correspondential": 1.2285,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -7646,7 +8267,8 @@
       "hagiographic": [],
       "correspondential": [
         "image x5"
-      ]
+      ],
+      "application_voice": []
     },
     "composite_score": 4.545,
     "has_formulaic_opening": false,
@@ -7672,12 +8294,14 @@
     "second_half_cosmo": 2.451,
     "first_half_pastoral": 0.4926,
     "second_half_pastoral": 0.4902,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0097,
     "tier": "core",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.11419929410041417,
-    "pca_y": 0.00012042476000378542
+    "pca_x": 0.11415225211887986,
+    "pca_y": -0.0005231710231310214
   },
   {
     "chapter_number": 115,
@@ -7693,7 +8317,8 @@
       "pastoral": 1.9308,
       "nt_christian": 0.2011,
       "hagiographic": 0.0402,
-      "correspondential": 0.0805
+      "correspondential": 0.0805,
+      "application_voice": 0.0402
     },
     "vocab_terms": {
       "cosmological": [
@@ -7745,9 +8370,12 @@
       ],
       "correspondential": [
         "image x2"
+      ],
+      "application_voice": [
+        "beloved x1"
       ]
     },
-    "composite_score": -1.227,
+    "composite_score": -1.287,
     "has_formulaic_opening": false,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -7763,18 +8391,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 2.0918,
-    "overlay_density": 2.1721,
-    "teaching_purity": 0.4894,
+    "overlay_density": 2.2123,
+    "teaching_purity": 0.4849,
     "first_half_cosmo": 2.8962,
     "second_half_cosmo": 0.885,
     "first_half_pastoral": 1.3677,
     "second_half_pastoral": 2.494,
-    "layer_shift_score": 3.1375,
+    "first_half_application": 0.0805,
+    "second_half_application": 0.0,
+    "layer_shift_score": 3.057,
     "tier": "peripheral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": 0.07584078390643756,
-    "pca_y": -0.15384730522900622
+    "pca_x": 0.07592676479813694,
+    "pca_y": -0.1536697996022109
   },
   {
     "chapter_number": 116,
@@ -7790,7 +8420,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.3257,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7800,7 +8431,8 @@
       "hagiographic": [
         "the apostle speaks x1"
       ],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.489,
     "has_formulaic_opening": false,
@@ -7824,12 +8456,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.24069328204278997,
-    "pca_y": 0.0966129264119531
+    "pca_x": 0.24108118504819828,
+    "pca_y": 0.09880832709756349
   },
   {
     "chapter_number": 117,
@@ -7845,7 +8479,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7853,7 +8488,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": false,
@@ -7877,12 +8513,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.31322657927863573,
-    "pca_y": 0.040628638501378954
+    "pca_x": 0.31296566138068127,
+    "pca_y": 0.04187642788740438
   },
   {
     "chapter_number": 118,
@@ -7898,7 +8536,8 @@
       "pastoral": 0.0,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [],
@@ -7906,7 +8545,8 @@
       "pastoral": [],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": 0.0,
     "has_formulaic_opening": false,
@@ -7930,12 +8570,14 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.0,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 0.0,
     "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": 0.03848921178186843,
-    "pca_y": 0.028888017727615047
+    "pca_x": 0.038154199103058076,
+    "pca_y": 0.029607495915889157
   },
   {
     "chapter_number": 119,
@@ -7951,7 +8593,8 @@
       "pastoral": 1.6194,
       "nt_christian": 0.0,
       "hagiographic": 0.2024,
-      "correspondential": 1.6194
+      "correspondential": 1.6194,
+      "application_voice": 0.8097
     },
     "vocab_terms": {
       "cosmological": [
@@ -7975,9 +8618,15 @@
       "correspondential": [
         "after the likeness x4",
         "likeness x4"
+      ],
+      "application_voice": [
+        "i tell you x1",
+        "you too x1",
+        "my brothers x1",
+        "my limbs x1"
       ]
     },
-    "composite_score": 1.62,
+    "composite_score": 0.405,
     "has_formulaic_opening": false,
     "has_formulaic_closing": true,
     "has_question_formula": false,
@@ -7993,18 +8642,20 @@
     "mani_citations": [],
     "gardner_flags": [],
     "teaching_density": 3.4413,
-    "overlay_density": 1.8218,
-    "teaching_purity": 0.6526,
+    "overlay_density": 2.6315,
+    "teaching_purity": 0.5657,
     "first_half_cosmo": 2.834,
     "second_half_cosmo": 0.8097,
     "first_half_pastoral": 2.0243,
     "second_half_pastoral": 1.2146,
-    "layer_shift_score": 1.2146,
-    "tier": "secondary",
+    "first_half_application": 0.8097,
+    "second_half_application": 0.4049,
+    "layer_shift_score": 0.8098,
+    "tier": "mixed",
     "in_manual_extract": false,
     "cluster": 1,
-    "pca_x": -0.07882836301033319,
-    "pca_y": -0.16093070462128745
+    "pca_x": -0.07874807956421097,
+    "pca_y": -0.1610539685419125
   },
   {
     "chapter_number": 120,
@@ -8020,7 +8671,8 @@
       "pastoral": 0.3817,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.1908
+      "correspondential": 0.1908,
+      "application_voice": 1.145
     },
     "vocab_terms": {
       "cosmological": [
@@ -8035,9 +8687,14 @@
       "hagiographic": [],
       "correspondential": [
         "in the manner of x1"
+      ],
+      "application_voice": [
+        "command x1",
+        "struggling x1",
+        "beloved x4"
       ]
     },
-    "composite_score": -0.191,
+    "composite_score": -1.909,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -8056,18 +8713,20 @@
       "christian_connection"
     ],
     "teaching_density": 0.3816,
-    "overlay_density": 0.3817,
-    "teaching_purity": 0.4935,
+    "overlay_density": 1.5267,
+    "teaching_purity": 0.1989,
     "first_half_cosmo": 0.0,
     "second_half_cosmo": 0.3817,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 0.7634,
-    "layer_shift_score": 0.3817,
-    "tier": "mixed",
+    "first_half_application": 0.3817,
+    "second_half_application": 1.9084,
+    "layer_shift_score": 1.9084,
+    "tier": "peripheral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.12792044738665861,
-    "pca_y": -0.06470893217585838
+    "pca_x": 0.12724534645873284,
+    "pca_y": -0.06481446465406235
   },
   {
     "chapter_number": 121,
@@ -8083,7 +8742,8 @@
       "pastoral": 0.7477,
       "nt_christian": 0.5607,
       "hagiographic": 0.1869,
-      "correspondential": 0.1869
+      "correspondential": 0.1869,
+      "application_voice": 0.1869
     },
     "vocab_terms": {
       "cosmological": [
@@ -8106,9 +8766,12 @@
       ],
       "correspondential": [
         "these are the three x1"
+      ],
+      "application_voice": [
+        "you too x1"
       ]
     },
-    "composite_score": -1.495,
+    "composite_score": -1.776,
     "has_formulaic_opening": false,
     "has_formulaic_closing": false,
     "has_question_formula": false,
@@ -8127,18 +8790,20 @@
       "cosmological_content"
     ],
     "teaching_density": 1.1215,
-    "overlay_density": 1.4953,
-    "teaching_purity": 0.4269,
+    "overlay_density": 1.6822,
+    "teaching_purity": 0.3986,
     "first_half_cosmo": 0.7491,
     "second_half_cosmo": 1.1194,
     "first_half_pastoral": 0.0,
     "second_half_pastoral": 1.4925,
-    "layer_shift_score": 1.1222,
+    "first_half_application": 0.3745,
+    "second_half_application": 0.0,
+    "layer_shift_score": 0.7477,
     "tier": "pastoral",
     "in_manual_extract": false,
     "cluster": 0,
-    "pca_x": 0.0035166879939216395,
-    "pca_y": -0.05227732799860212
+    "pca_x": 0.003075608504496009,
+    "pca_y": -0.04820026338385888
   },
   {
     "chapter_number": 122,
@@ -8154,7 +8819,8 @@
       "pastoral": 1.3348,
       "nt_christian": 0.0,
       "hagiographic": 0.0,
-      "correspondential": 0.0
+      "correspondential": 0.0,
+      "application_voice": 0.0
     },
     "vocab_terms": {
       "cosmological": [
@@ -8177,7 +8843,8 @@
       ],
       "nt_christian": [],
       "hagiographic": [],
-      "correspondential": []
+      "correspondential": [],
+      "application_voice": []
     },
     "composite_score": -0.834,
     "has_formulaic_opening": false,
@@ -8203,11 +8870,13 @@
     "second_half_cosmo": 0.0,
     "first_half_pastoral": 1.7817,
     "second_half_pastoral": 0.8889,
+    "first_half_application": 0.0,
+    "second_half_application": 0.0,
     "layer_shift_score": 1.5571,
     "tier": "peripheral",
     "in_manual_extract": true,
     "cluster": 0,
-    "pca_x": -0.013015745156571144,
-    "pca_y": -0.11234354532212087
+    "pca_x": -0.013455245226686749,
+    "pca_y": -0.11228063565853726
   }
 ]

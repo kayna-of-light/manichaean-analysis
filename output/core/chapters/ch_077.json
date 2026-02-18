@@ -2,72 +2,72 @@
   "chapter_number": 77,
   "chapter_title": "The Chapter of the Four Kingdoms",
   "total_paragraphs": 9,
-  "core_paragraphs": 1,
-  "core_percentage": 5.0,
-  "chapter_note": "This kephalaion is dominated by later dialogue-frame + Gospel-based exhortation about almsgiving to disciples/catechumens, with strong pastoral drift in the second half. The only recoverable older layer is the bare geopolitical four-kingdom schema; the rest enters via Christian citation/exegesis and institutional categories (catechumens/alms/reward/last day).",
+  "core_paragraphs": 0,
+  "core_percentage": 0.0,
+  "chapter_note": "This kephalaion contains no recoverable correspondential-cosmological substrate. It is a late homiletic unit built around a Gospel saying (bread/cup of water to disciples) and its institutional application (catechumens, alms, reward at the last day), wrapped in a dialogue-style attribution (“the apostle speaks”). The content consistently points from teaching to contemporary religious practice rather than mapping cosmos→cosmos.",
   "paragraphs": [
     {
       "paragraph_number": 1,
       "classification": "frame",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Dialogue attribution with 'apostle' and formulaic opening ('Once again') marks hagiographic compilation frame."
+      "temporal_note": "Hagiographic/dialogue attribution marker (“Once again the apostle speaks”) is a compilation-frame feature; not part of the older substrate."
     },
     {
       "paragraph_number": 2,
-      "classification": "core",
-      "core_text": "⟨p.189⟩ [The first is the kingdom of] the land of Ba[by]lon and of Persia.\nThe s[ec]ond is the kingdom of the Romans.\nThe thir[d is the k]ingdom of the Axumites.\nThe fourth is the kin[g]dom of Silis.\nThese four great kingdoms e[xi]st in the world; there is none that surpasses them.",
+      "classification": "pastoral",
+      "core_text": null,
       "removed_material": null,
-      "temporal_note": "Impersonal enumerative schema (fourfold list of kingdoms) without citation formula, ecclesial categories, or hagiographic Q&A; reads like a pre-exegetical datum that later paragraphs then moralize via Gospel material."
+      "temporal_note": "World-historical listing of contemporary ‘great kingdoms’ functions as rhetorical setup for ethical comparison, not as cosmological system-mapping; points to the editor’s present-world geography rather than internal cosmic architecture."
     },
     {
       "paragraph_number": 3,
       "classification": "overlay",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "First-person ‘I say to you in truth’ + almsgiving-to-disciples motif and 'truth I have manifested' functions as Christianized dominical saying/exhortation; it is part of the Gospel-based overlay even though it reuses the four-kingdom comparison."
+      "temporal_note": "Direct echo/paraphrase of a Gospel saying (gift of bread and water to a disciple ‘on account of the name of God’), cast as an authoritative ‘I say to you in truth’ homily; entered the Kephalaia via NT/Jesus-saying tradition."
     },
     {
       "paragraph_number": 4,
       "classification": "pastoral",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Institutional category 'catechumen of the truth' and promissory soteriology ('rest for ever')—an ecclesial/pastoral application rather than cosmological mechanics."
+      "temporal_note": "Institutional Manichaean application to ‘a catechumen of the truth’ with soteriological reward language (‘rest for ever’). Even though it reuses the Gospel-motif of bread/water, the distinctive addition is church-catechetical practice."
     },
     {
       "paragraph_number": 5,
       "classification": "overlay",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Explicit citation formula ('Just as the saying that the good saviour uttered') introduces a Gospel saying; by rule this entered the Kephalaia via NT tradition."
+      "temporal_note": "Explicit citation formula (‘Just as the saying that the good saviour uttered’) followed by quotation; by rule, Gospel-derived citation is a later Christian overlay regardless of correspondential content."
     },
     {
       "paragraph_number": 6,
       "classification": "overlay",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Ongoing exegesis of the saviour’s wording ('is calling these saints “least of the faithful”') and dominical-voice application; despite catechumen content, the paragraph’s engine is Gospel interpretation, so classify as overlay."
+      "temporal_note": "Exegetical gloss on the ‘saviour’ calling saints ‘least of the faithful’ plus moral critique of ‘lust of the world’; this is Gospel-based interpretation and exhortational application rather than impersonal cosmological exposition."
     },
     {
       "paragraph_number": 7,
-      "classification": "pastoral",
+      "classification": "overlay",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Defines exemplary persons as 'faithful catechumen' and 'faithful righteous one' with indwelling Holy Spirit—ecclesial identity discourse rather than systematic cosmology; no recoverable pre-compilation mechanism."
+      "temporal_note": "Christian-ecclesial theology of indwelling ‘Holy Spirit’ in the faithful/catechumen; this vocabulary and mode (indwelling Spirit + audience address ‘I tell you’) indicates later overlay rather than pre-compilation cosmological correspondences."
     },
     {
       "paragraph_number": 8,
       "classification": "pastoral",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Alms/fellowship/reward/last day rationale centered on helping saints/catechumens—classic institutional moral exhortation, consistent with strong second-half pastoral drift."
+      "temporal_note": "Institutional practice language (‘alms’, ‘fellowship with them’) and reward economy (‘thanks before his true father’, ‘repa[y]… at the last day’)—a church disciplinary/hortatory development, not system-description."
     },
     {
       "paragraph_number": 9,
       "classification": "pastoral",
       "core_text": null,
       "removed_material": null,
-      "temporal_note": "Concluding beatitude-style exhortation ('Blessed are these who will hear and believe') reads as homiletic closure to the moral lesson, not core cosmological teaching."
+      "temporal_note": "Closing exhortation/beatitude-style encouragement (‘Blessed are these who will hear and believe… set their heart…’) is application-voice typical of later paraenesis, not substrate teaching."
     }
   ]
 }
