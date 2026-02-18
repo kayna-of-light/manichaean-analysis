@@ -50,6 +50,15 @@ ASSEMBLED_FILE = OUTPUT_DIR / "restored_kephalaia.md"
 
 LACUNA_RE = re.compile(r"\[([^\]]*)\]")
 
+
+def _clean_streaming_output(text: str) -> str:
+    """Trim leading/trailing whitespace from streaming output.
+
+    The chunks are joined with "".join() so the model's own newlines
+    are preserved. This just trims the edges.
+    """
+    return text.strip()
+
 # ---------------------------------------------------------------------------
 # Prompts — minimal, profile-based
 # ---------------------------------------------------------------------------
@@ -365,7 +374,11 @@ def generate_spiritual_reading(
                         if debug:
                             print(flush=True)
 
-            return "\n".join(text_parts) if text_parts else None
+            if text_parts:
+                return _clean_streaming_output(
+                    "".join(text_parts)
+                )
+            return None
 
         except Exception as e:
             err_str = str(e)
@@ -493,7 +506,7 @@ def restore_chapter(
                             print(flush=True)
 
             if text_parts:
-                raw = "".join(text_parts)
+                raw = _clean_streaming_output("".join(text_parts))
                 parsed = parse_restored_paragraphs(raw)
                 if parsed:
                     return parsed
@@ -683,7 +696,7 @@ def retry_failed_paragraphs(
                         if debug:
                             print(flush=True)
             if text_parts:
-                raw = "\n".join(text_parts)
+                raw = _clean_streaming_output("".join(text_parts))
                 parsed = parse_restored_paragraphs(raw)
                 if parsed:
                     return parsed
@@ -743,6 +756,9 @@ def normalize_skeleton(text: str) -> str:
     - Strip surrounding quotes from the entire text
     - Normalize ellipsis character (… → ...)
     - Normalize em/en dashes (— – → --)
+    - Strip soft hyphens and word-break hyphens (Never-theless → Nevertheless)
+    - Strip leading colon+space (dialogue frame artifact)
+    - Normalize punctuation spacing (remove spaces before ,;:)
     - Collapse whitespace
     """
     stripped = LACUNA_RE.sub("", text)
@@ -760,8 +776,21 @@ def normalize_skeleton(text: str) -> str:
     stripped = stripped.replace("\u2014", "--")   # —
     stripped = stripped.replace("\u2013", "--")   # –
 
-    # Collapse whitespace first
+    # Strip soft hyphens
+    stripped = stripped.replace("\u00ad", "")
+
+    # Remove hyphens used as word-breaks (e.g., "Never-theless")
+    # Pattern: lowercase-letter + hyphen + lowercase-letter → join
+    stripped = re.sub(r"([a-z])-([a-z])", r"\1\2", stripped)
+
+    # Collapse whitespace
     stripped = " ".join(stripped.split())
+
+    # Normalize punctuation spacing: remove space before , ; :
+    stripped = re.sub(r"\s+([,;:])", r"\1", stripped)
+
+    # Strip leading colon + space (dialogue frame artifact)
+    stripped = re.sub(r"^:\s*", "", stripped)
 
     # Strip surrounding quotes (model sometimes wraps entire output)
     stripped = stripped.strip('"\'')
@@ -1011,6 +1040,41 @@ def is_done(ch_num: int) -> bool:
     return (CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json").exists()
 
 
+def find_violated_chapters() -> list[dict]:
+    """Scan existing output JSONs for chapters with violations.
+
+    Returns list of dicts with chapter_number, violated_pnums, and
+    the loaded output data.
+    """
+    results = []
+    for path in sorted(CHAPTERS_OUT_DIR.glob("ch_*.json")):
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+
+        viols = data.get("violations", [])
+        if not viols:
+            continue
+
+        # Extract unique paragraph numbers from violation messages
+        viol_pnums: set[int] = set()
+        for v in viols:
+            m = re.match(r"\u00b6(\d+):", v)
+            if m:
+                viol_pnums.add(int(m.group(1)))
+
+        if viol_pnums:
+            results.append(
+                {
+                    "chapter_number": data["chapter_number"],
+                    "violated_pnums": viol_pnums,
+                    "data": data,
+                    "path": path,
+                }
+            )
+
+    return results
+
+
 # ---------------------------------------------------------------------------
 # Assembly: build the restored document
 # ---------------------------------------------------------------------------
@@ -1183,7 +1247,275 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Show model thinking log (only effective with -j 1)",
     )
+    parser.add_argument(
+        "--retry-violations",
+        action="store_true",
+        help="Re-send only violated paragraphs (uses cached spiritual reading)",
+    )
     return parser.parse_args()
+
+
+# ---------------------------------------------------------------------------
+# Retry-violations mode
+# ---------------------------------------------------------------------------
+
+
+def _retry_violations_mode(
+    args: argparse.Namespace,
+    core_by_num: dict[int, dict],
+) -> None:
+    """Re-process only paragraphs that had violations.
+
+    Uses the cached spiritual reading from the existing output.
+    Re-sends violated paragraphs to the model with accepted context.
+    Re-validates with current normalize_skeleton().
+    Updates the output JSON in place.
+    """
+    violated = find_violated_chapters()
+    if not violated:
+        print("No chapters with violations found.")
+        text = assemble_restored(core_by_num)
+        if text:
+            save_assembly(text)
+        return
+
+    # Apply --chapter / --range filters if given
+    if args.chapter is not None:
+        violated = [v for v in violated if v["chapter_number"] == args.chapter]
+    elif args.range:
+        m = re.match(r"(\d+)-(\d+)", args.range)
+        if m:
+            start, end = int(m.group(1)), int(m.group(2))
+            violated = [
+                v for v in violated
+                if start <= v["chapter_number"] <= end
+            ]
+
+    total_paras = sum(len(v["violated_pnums"]) for v in violated)
+    print(f"\nRetry-violations mode: {len(violated)} chapters, "
+          f"{total_paras} violated paragraphs")
+    for v in violated:
+        ch = v["chapter_number"]
+        pnums = sorted(v["violated_pnums"])
+        print(f"  Ch.{ch:3d}  ¶{', ¶'.join(str(p) for p in pnums)}")
+
+    if args.dry_run:
+        print("\n[DRY RUN] No API calls made.")
+        return
+
+    # Create client
+    client, deployment = create_claude_client()
+    concurrency = max(1, args.concurrency)
+    print(f"\nUsing model: {deployment}")
+    print(f"Concurrency: {concurrency}")
+    print()
+
+    show_debug = args.debug and concurrency == 1
+    print_lock = threading.Lock()
+    counter = {"done": 0, "fixed": 0, "still_violated": 0}
+    total_to_process = len(violated)
+
+    def retry_one(entry: dict) -> None:
+        ch_num = entry["chapter_number"]
+        viol_pnums = entry["violated_pnums"]
+        existing_data = entry["data"]
+        out_path = entry["path"]
+
+        # Get core paragraphs (applies clean_core_text)
+        core_ch = core_by_num.get(ch_num)
+        if not core_ch:
+            with print_lock:
+                counter["done"] += 1
+                print(f"[{counter['done']}/{total_to_process}] "
+                      f"Ch.{ch_num} SKIP — not in core")
+            return
+
+        core_paras = extract_core_paragraphs(core_ch)
+        lacunae_map, total_lacunae = find_lacunae(core_paras)
+
+        # Spiritual reading from cache
+        spiritual_reading = existing_data.get("spiritual_reading", "")
+        if not spiritual_reading:
+            with print_lock:
+                counter["done"] += 1
+                print(f"[{counter['done']}/{total_to_process}] "
+                      f"Ch.{ch_num} SKIP — no cached spiritual reading")
+            return
+
+        # Build the paragraphs that need retrying
+        retry_paras = [
+            p for p in core_paras if p["paragraph_number"] in viol_pnums
+        ]
+        if not retry_paras:
+            with print_lock:
+                counter["done"] += 1
+                print(f"[{counter['done']}/{total_to_process}] "
+                      f"Ch.{ch_num} SKIP — violated ¶s not in core")
+            return
+
+        # Build accepted context from existing non-violated reconstructions
+        existing_recons = {
+            r["paragraph"]: r["reconstructed_text"]
+            for r in existing_data.get("reconstructions", [])
+        }
+        accepted_context = {
+            pnum: text for pnum, text in existing_recons.items()
+            if pnum not in viol_pnums
+        }
+
+        with print_lock:
+            print(f"  Ch.{ch_num} retrying {len(retry_paras)} ¶s...",
+                  end="", flush=True)
+
+        # Send to model
+        retry_result = retry_failed_paragraphs(
+            client,
+            deployment,
+            retry_paras,
+            spiritual_reading,
+            accepted_context,
+            ch_num,
+            debug=show_debug,
+        )
+
+        if not retry_result:
+            with print_lock:
+                counter["done"] += 1
+                counter["still_violated"] += len(viol_pnums)
+                print(f"\n[{counter['done']}/{total_to_process}] "
+                      f"Ch.{ch_num} FAILED — no model output")
+            return
+
+        # Validate with current normalize_skeleton
+        new_accepted, still_rejected, new_fills, new_recons, new_viols = (
+            validate_restoration(retry_paras, retry_result, lacunae_map)
+        )
+
+        # Merge into existing data
+        # Remove old reconstructions for newly accepted paragraphs
+        old_recons = [
+            r for r in existing_data.get("reconstructions", [])
+            if r["paragraph"] not in new_accepted
+        ]
+        # Remove old fills for newly accepted paragraphs
+        old_fills = [
+            f for f in existing_data.get("fills", [])
+            if f["paragraph"] not in new_accepted
+        ]
+
+        merged_recons = old_recons + new_recons
+        merged_fills = old_fills + new_fills
+
+        # For still-rejected: keep original
+        originals = {
+            p["paragraph_number"]: p["core_text"] for p in core_paras
+        }
+        for pnum in still_rejected:
+            new_viols.append(
+                f"¶{pnum}: KEPT ORIGINAL after retry-violations"
+            )
+            merged_recons.append({
+                "paragraph": pnum,
+                "reconstructed_text": originals.get(pnum, ""),
+            })
+
+        # Remove old violations for paragraphs we fixed
+        cleared = set(new_accepted.keys())
+        old_viols = [
+            v for v in existing_data.get("violations", [])
+            if not any(
+                v.startswith(f"\u00b6{p}:") for p in cleared
+            )
+        ]
+        merged_viols = old_viols + new_viols
+
+        n_fixed = len(new_accepted)
+        n_still = len(still_rejected)
+
+        # Recalculate assessment
+        n_restored = 0
+        n_already = 0
+        n_unfilled = 0
+        for f in merged_fills:
+            orig = f.get("original", "").strip()
+            fill = f.get("fill", "").strip()
+            is_gap = (
+                orig in ("...", ". . .", "")
+                or orig.replace(".", "").replace("/", "").replace(" ", "") == ""
+            )
+            if not is_gap:
+                n_already += 1
+            elif fill == orig or fill in ("...", ". . .", ""):
+                n_unfilled += 1
+            else:
+                n_restored += 1
+
+        parts = [f"{n_restored} restored"]
+        if n_already:
+            parts.append(f"{n_already} already filled")
+        if n_unfilled:
+            parts.append(f"{n_unfilled} unfilled gaps")
+        if merged_viols:
+            parts.append(f"{len(merged_viols)} violations")
+
+        # Save updated data
+        updated = {
+            "chapter_number": ch_num,
+            "chapter_title": existing_data.get("chapter_title", ""),
+            "total_lacunae": total_lacunae,
+            "lacunae_map": {str(k): v for k, v in lacunae_map.items()},
+            "spiritual_reading": spiritual_reading,
+            "reconstructions": merged_recons,
+            "fills": merged_fills,
+            "violations": merged_viols,
+            "assessment": ", ".join(parts),
+        }
+
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(updated, f, indent=2, ensure_ascii=False)
+
+        with print_lock:
+            counter["done"] += 1
+            counter["fixed"] += n_fixed
+            counter["still_violated"] += n_still
+            status = f"fixed {n_fixed}/{len(viol_pnums)}"
+            if n_still:
+                status += f", {n_still} still violated"
+            print(f"\n[{counter['done']}/{total_to_process}] "
+                  f"Ch.{ch_num} {status}")
+
+    # Execute
+    if concurrency == 1:
+        for entry in violated:
+            retry_one(entry)
+    else:
+        with ThreadPoolExecutor(max_workers=concurrency) as executor:
+            futures = {
+                executor.submit(retry_one, entry): entry
+                for entry in violated
+            }
+            for future in as_completed(futures):
+                exc = future.exception()
+                if exc:
+                    entry = futures[future]
+                    with print_lock:
+                        print(f"  Ch.{entry['chapter_number']} "
+                              f"EXCEPTION: {exc}")
+                        traceback.print_exc()
+
+    # Summary
+    print(f"\n{'='*60}")
+    print("RETRY-VIOLATIONS COMPLETE")
+    print(f"  Chapters processed: {counter['done']}")
+    print(f"  Paragraphs fixed: {counter['fixed']}")
+    print(f"  Still violated: {counter['still_violated']}")
+
+    # Reassemble
+    print("\nAssembling restored document...")
+    text = assemble_restored(core_by_num)
+    if text:
+        save_assembly(text)
+    print("Done.")
 
 
 # ---------------------------------------------------------------------------
@@ -1210,6 +1542,11 @@ def main() -> None:
         text = assemble_restored(core_by_num)
         if text:
             save_assembly(text)
+        return
+
+    # --retry-violations mode: re-process only violated paragraphs
+    if args.retry_violations:
+        _retry_violations_mode(args, core_by_num)
         return
 
     # Determine which to process
