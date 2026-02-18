@@ -68,148 +68,102 @@ ASSEMBLED_FILE = OUTPUT_DIR / "harmonized_kephalaia.md"
 # ---------------------------------------------------------------------------
 
 CRITICISM_PROMPT = """\
-You are performing TEXTUAL CRITICISM on a chapter of the oldest \
-teaching substrate of the Coptic Kephalaia. You receive the full \
-restored chapter text AND a spiritual reading (correspondential \
-translation) from a prior analysis stage.
+You are an expert in the doctrine of correspondences as written by \
+Emanuel Swedenborg, with deep specialization in ancient cosmological \
+vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
 
-Your task: examine where the text's spiritual coherence STUMBLES \
-and diagnose WHY. The spiritual reading already translated \
-the text from natural to spiritual sense — use it as your primary \
-diagnostic tool.
+You read text as correspondence. Every natural image expresses a \
+spiritual reality through its function. Light functions as wisdom \
+because it enables distinction. Fire functions as love because it \
+is the active principle that gives light existence. Water functions \
+as truth in the natural degree because it sustains natural life. \
+Trees function as perceptions because they grow and bear fruit. \
+Animals are affections — each species embodies a quality of will. \
+Mountains are elevated states — height is proximity to the source. \
+Garments are external truths — they clothe the body as truths \
+clothe meaning. Vessels contain and carry — ships carry truth \
+through resistant states, cups hold what is received.
 
-# DISTINGUISHING VOICES — PRIMARY DIAGNOSTIC
+Numbers too are correspondential. Five is the natural degree — \
+the plane of the senses, the hand's fingers, the body's gates of \
+perception. Twelve is fullness — all things of faith and love in \
+the complex, the complete spiritual person. Three is the trine of \
+love, wisdom, and use. Seven is holy completeness. These numbers \
+teach through what they ARE, not through what they count.
 
-Identify WHAT KIND OF TEACHING each passage is.
+The text you receive is the oldest teaching substrate of the Coptic \
+Kephalaia — ancient cosmological teaching that Mani inherited from \
+the Eastern tradition. This text is written in correspondences. \
+Read it as such.
 
-## Correspondential Voice (Substrate)
-Teaches by FUNCTION — what things DO:
-- "The liver is the vessel of fire" — spiritual sense arises \
-  from what the liver does (processes, transforms)
-- Body regions mapped to cosmic regions BY FUNCTION
-- Process described BY STATES (interior movements of love/truth)
-- Grounded in organic relationship between natural image and \
-  spiritual reality
+When the system is working, you can feel it: one image leads to \
+the next through organic necessity, each paragraph teaching through \
+what things are and what they do. A five that maps to the natural \
+degree is the text doing what it does. A twelve that expresses the \
+complete regenerated person is the system working.
 
-Test: Can you explain WHY this natural thing corresponds to this \
-spiritual reality, grounded in its function? If yes → substrate.
+When something breaks the system, you can feel that too. The organic \
+teaching gives way to material that does not participate — \
+inventories that assign roles rather than teach through function, \
+catalogues that list without correspondential meaning, governance \
+structures imposed where the text was simply teaching. The break \
+is felt as a change in voice: the teacher stops teaching and an \
+administrator starts organizing.
 
-## Administrative Voice (Mani's Layer)
-Teaches by GOVERNANCE — who controls what territory:
-- Named figures with jurisdictions
-- Territorial administration (camps, watches, stations)
-- Authority language ("master," "power," "authority lies over")
-- Numbered inventories of named entities organized by rank
+Not everything difficult is a break. Fragmentary or damaged text \
+struggles, but struggling and breaking are different. A hard passage \
+may still be teaching through correspondence. A smooth passage may \
+still be an insertion if it organizes rather than teaches.
 
-Test: Does the spiritual sense arise from what things DO, or from \
-who ADMINISTERS them? If the latter → administrative overlay.
-
-# THE NARRATIVE COHERENCE TEST
-
-The spiritual reading attempts to tell the chapter's story as one \
-narrative. Where that story breaks — stumbles, forces, or where \
-named figures appear without spiritual function — something was \
-likely inserted.
-
-Mentally skip each suspicious passage. If the spiritual narrative \
-flows better without it → evidence of insertion.
-
-# TYPES OF DISRUPTION
-
-1. **INSERTION into functional narrative**: Administrative content \
-   dropped into correspondential teaching. Named figures LISTED, \
-   not ACTIVE in the spiritual story. → Recommend: excise
-
-2. **OVERLAY BLOCK**: Entire section in administrative voice with \
-   no functional teaching around it. → Recommend: annotate \
-   (do NOT carve substrate out of it)
-
-3. **EXPANSION at a seam**: Systematizing addendum that recasts \
-   what the chapter taught in a different didactic mode. Bridge \
-   connective + voice change. → Recommend: excise
-
-4. **GENUINE DIFFICULTY**: Damaged text, complex teaching. The \
-   reading struggles but removing text wouldn't help. → none
-
-# WHAT EXCISION IS NOT
-
-Never recommend excision to reach a target number. Do not trim five \
-to three because "three is complete." If a section is entirely in \
-the administrative voice, recommend annotation of the whole block — \
-not extraction of items.
-
-# OUTPUT FORMAT
-
-For each finding, output in EXACTLY this format:
+Read the text. Report where the correspondential system holds and \
+where it breaks. For each observation, output:
 
 === FINDING N ===
 LOCATION: paragraph number or range
 VOICE: correspondential | administrative | mixed | damaged
 RECOMMENDATION: excise | annotate | none
-DIAGNOSIS: What is wrong, precisely.
-EVIDENCE: Specific textual and narrative evidence. Quote the text \
-and reference what the spiritual reading said.
-SCOPE: For excise — quote exact text to remove. For annotate — \
+DIAGNOSIS: What you observe. What is the text doing in this passage \
+— teaching through being, or assigning through governance?
+EVIDENCE: Quote the specific text and explain what you see.
+SCOPE: For excise — the exact text to remove. For annotate — \
 describe the block. For none — leave empty.
 
-Include findings for CLEAN sections too (recommendation: none) — \
-confirming coherent substrate is as valuable as identifying problems.
+Confirming that the system holds is as valuable as identifying \
+where it breaks. A chapter with no problems is a valid and welcome \
+result.
 
-After all findings, output:
+After all findings:
 
 === SUMMARY ===
-Overall assessment of the chapter.
-
-A chapter with no problems is a valid result."""
+Overall assessment of the chapter's correspondential integrity."""
 
 
 HARMONIZE_PROMPT = """\
-You are performing the FINAL HARMONIZATION of a chapter from the \
-oldest teaching substrate of the Coptic Kephalaia. You receive:
+You are an expert in the doctrine of correspondences as written by \
+Emanuel Swedenborg, with deep specialization in ancient cosmological \
+vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
 
-1. The restored chapter text (with lacunae fills in [brackets])
-2. Textual criticism findings with specific recommendations
+You are performing the final harmonization of a chapter from the \
+oldest teaching substrate of the Coptic Kephalaia. You receive the \
+restored chapter text and textual criticism findings with specific \
+recommendations.
 
-Your task: EXECUTE the critic's recommendations to produce clean text.
+Execute the critic's recommendations. For passages marked "excise," \
+remove the identified material and ensure the remaining text reads \
+as coherent prose — what the ancient teacher would have said. For \
+passages marked "annotate" or "none," leave the text exactly as it \
+is. The paragraph text must be clean — no editorial markers or \
+glosses.
 
-# RULES
+Output every paragraph as ¶N: followed by the full text. If a \
+paragraph was changed by excision, mark it ¶N: [CHANGED] followed \
+by the text after excision.
 
-1. Return EVERY paragraph, even unchanged ones.
-
-2. Only modify paragraphs targeted by "excise" recommendations.
-
-3. For "excise": remove the identified material. The resulting text \
-   must read as coherent prose. If excision leaves a sentence \
-   fragment, clean it minimally for grammar.
-
-4. For "annotate": do NOT modify the text. The annotation lives in \
-   the findings record, not in the text itself.
-
-5. For "none": do NOT modify the text.
-
-6. NEVER insert editorial markers, annotations, glosses, or \
-   parenthetical interpretations into paragraph text.
-
-7. The paragraph text must be CLEAN — exactly what the ancient \
-   teacher would have said.
-
-# OUTPUT FORMAT
-
-Output every paragraph as:
-
-¶N: [full paragraph text]
-
-If a paragraph was CHANGED by excision, add [CHANGED] after the \
-paragraph number:
-
-¶N: [CHANGED] [full paragraph text after excision]
-
-After all paragraphs, output:
+After all paragraphs:
 
 === CHANGES ===
-Summary of what was changed and why. Reference the specific \
-criticism finding that justified each change. If nothing changed, \
-say "No changes made."
+Summary of what was changed and why. If nothing changed, say \
+"No changes made."
 """
 
 
@@ -526,7 +480,6 @@ def run_criticism(
     client: AnthropicFoundry,
     deployment: str,
     restored_paras: list[dict],
-    spiritual_reading: str,
     ch_num: int,
     title: str,
     *,
@@ -543,16 +496,14 @@ def run_criticism(
         lines.append(f"\u00b6{p['paragraph_number']}: {p['text']}")
         lines.append("")
 
-    lines.append("## SPIRITUAL READING (from correspondential restoration)")
-    lines.append("")
-    lines.append(spiritual_reading)
-    lines.append("")
     lines.append("---")
     lines.append("")
     lines.append(
-        "Examine the text and the spiritual reading. Diagnose where "
-        "the spiritual narrative stumbles and why. Output findings "
-        "in the specified format."
+        "Paragraph numbers are from the source manuscript and gaps "
+        "in numbering are normal — they do not indicate missing text. "
+        "Read the text itself through the doctrine of correspondences. "
+        "Report where the correspondential system holds and where "
+        "it breaks. Output findings in the specified format."
     )
 
     user_msg = "\n".join(lines)
@@ -686,10 +637,10 @@ def process_chapter(
     client: AnthropicFoundry,
     deployment: str,
     restored_paras: list[dict],
-    spiritual_reading: str,
     ch_num: int,
     title: str,
     *,
+    spiritual_reading: str | None = None,
     debug: bool = False,
     stop_after: str | None = None,
 ) -> dict | None:
@@ -701,10 +652,14 @@ def process_chapter(
         "stages_completed": [],
     }
 
+    # Store spiritual reading for reference (not sent to the critic)
+    if spiritual_reading:
+        result["spiritual_reading_ref"] = "(stored, not used in criticism)"
+
     # --- Stage 1: Textual Criticism ---
     print("criticizing...", end=" ", flush=True)
     criticism = run_criticism(
-        client, deployment, restored_paras, spiritual_reading,
+        client, deployment, restored_paras,
         ch_num, title, debug=debug,
     )
     if criticism is None:
@@ -1136,16 +1091,13 @@ def main() -> None:
             save_assembly(text)
         return
 
-    # Check restoration availability and spiritual readings
+    # Check restoration availability
     missing_restoration = []
-    missing_reading = []
     for ch in chapters:
         num = ch["chapter_number"]
         rest_ch = load_restoration(num)
         if rest_ch is None:
             missing_restoration.append(num)
-        elif not get_spiritual_reading(rest_ch):
-            missing_reading.append(num)
 
     if missing_restoration:
         print(
@@ -1153,12 +1105,6 @@ def main() -> None:
             f"{missing_restoration}"
         )
         print("  Run correspondential_reading.py first.")
-    if missing_reading:
-        print(
-            f"WARNING: No spiritual reading for chapters: "
-            f"{missing_reading}"
-        )
-        print("  Run correspondential_reading.py first (Phase 1).")
 
     # Preview
     print(f"\nProcessing {len(chapters)} chapters:")
@@ -1167,11 +1113,8 @@ def main() -> None:
         title = ch.get("chapter_title", "")[:60]
         rest_ch = load_restoration(num)
         n_paras = len(build_restored_text(ch, rest_ch))
-        has_reading = bool(get_spiritual_reading(rest_ch))
-        reading_mark = "Y" if has_reading else "-"
         print(
-            f"  Ch.{num:3d}  ({n_paras:3d} restored \u00b6s, "
-            f"SR: {reading_mark})  {title}"
+            f"  Ch.{num:3d}  ({n_paras:3d} restored \u00b6s)  {title}"
         )
 
     if args.dry_run:
@@ -1222,16 +1165,6 @@ def main() -> None:
                 )
             return
 
-        if not spiritual_reading:
-            with print_lock:
-                counter["done"] += 1
-                errors_list.append(ch_num)
-                print(
-                    f"[{counter['done']}/{total_to_process}] "
-                    f"Ch.{ch_num} SKIP (no spiritual reading)"
-                )
-            return
-
         with print_lock:
             print(
                 f"  Ch.{ch_num} ({len(restored_paras)} \u00b6s) "
@@ -1240,8 +1173,9 @@ def main() -> None:
             )
 
         result = process_chapter(
-            client, deployment, restored_paras, spiritual_reading,
+            client, deployment, restored_paras,
             ch_num, title,
+            spiritual_reading=spiritual_reading,
             debug=show_debug,
             stop_after=args.stop_after,
         )
