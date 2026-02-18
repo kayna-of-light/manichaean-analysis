@@ -673,14 +673,41 @@ def retry_failed_paragraphs(
 
 
 def normalize_skeleton(text: str) -> str:
-    """Strip all [bracket content] and normalize whitespace.
+    """Strip all [bracket content] and normalize whitespace + punctuation.
 
     The skeleton is the INVARIANT — it must be identical between
     original and restored text. Any change to the skeleton means the
     model altered text it was not allowed to touch.
+
+    Normalization handles trivial model-injected differences:
+    - Curly quotes → straight quotes  (" " ' ' → " ')
+    - Strip surrounding quotes from the entire text
+    - Normalize ellipsis character (… → ...)
+    - Normalize em/en dashes (— – → --)
+    - Collapse whitespace
     """
     stripped = LACUNA_RE.sub("", text)
-    return " ".join(stripped.split())
+
+    # Curly quotes → straight quotes
+    stripped = stripped.replace("\u201c", '"')   # "
+    stripped = stripped.replace("\u201d", '"')   # "
+    stripped = stripped.replace("\u2018", "'")   # '
+    stripped = stripped.replace("\u2019", "'")   # '
+
+    # Normalize ellipsis character → three dots
+    stripped = stripped.replace("\u2026", "...")
+
+    # Normalize em-dash and en-dash → double hyphen
+    stripped = stripped.replace("\u2014", "--")   # —
+    stripped = stripped.replace("\u2013", "--")   # –
+
+    # Collapse whitespace first
+    stripped = " ".join(stripped.split())
+
+    # Strip surrounding quotes (model sometimes wraps entire output)
+    stripped = stripped.strip('"\'')
+
+    return stripped
 
 
 def skeleton_matches(original: str, restored: str) -> bool:
