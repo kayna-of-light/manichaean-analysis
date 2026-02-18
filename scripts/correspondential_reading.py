@@ -222,6 +222,8 @@ def generate_spiritual_reading(
     deployment: str,
     core_paras: list[dict],
     ch_num: int,
+    *,
+    debug: bool = False,
 ) -> str | None:
     """Generate a correspondential reading of the whole chapter."""
     lines = [
@@ -238,6 +240,10 @@ def generate_spiritual_reading(
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
+            text_parts = []
+            in_thinking = False
+            thinking_chars = 0
+
             with client.messages.stream(
                 model=deployment,
                 system=SPIRITUAL_READING_PROMPT,
@@ -245,12 +251,50 @@ def generate_spiritual_reading(
                 max_tokens=16000,
                 thinking={"type": "adaptive"},
             ) as stream:
-                response = stream.get_final_message()
-            # Extract text content (skip thinking blocks)
-            text_parts = []
-            for block in response.content:
-                if block.type == "text":
-                    text_parts.append(block.text)
+                for event in stream:
+                    etype = getattr(event, "type", "")
+
+                    # Thinking block started
+                    if etype == "content_block_start":
+                        block = getattr(event, "content_block", None)
+                        if block and getattr(block, "type", "") == "thinking":
+                            in_thinking = True
+                            thinking_chars = 0
+                            if debug:
+                                print("\n  [thinking] ", end="", flush=True)
+                        elif block and getattr(block, "type", "") == "text":
+                            in_thinking = False
+                            if debug:
+                                print("\n  [output] ", end="", flush=True)
+
+                    # Thinking delta
+                    elif etype == "content_block_delta":
+                        delta = getattr(event, "delta", None)
+                        if delta:
+                            dtype = getattr(delta, "type", "")
+                            if dtype == "thinking_delta":
+                                chunk = getattr(delta, "thinking", "")
+                                thinking_chars += len(chunk)
+                                if debug:
+                                    print(chunk, end="", flush=True)
+                            elif dtype == "text_delta":
+                                chunk = getattr(delta, "text", "")
+                                text_parts.append(chunk)
+                                if debug:
+                                    print(chunk, end="", flush=True)
+
+                    # Block ended
+                    elif etype == "content_block_stop":
+                        if in_thinking:
+                            if debug:
+                                print(f" [{thinking_chars} chars]", flush=True)
+                            in_thinking = False
+
+                    # Message ended
+                    elif etype == "message_stop":
+                        if debug:
+                            print(flush=True)
+                            
             return "\n".join(text_parts) if text_parts else None
 
         except Exception as e:
@@ -1080,6 +1124,7 @@ def main() -> None:
                 print(f" phase 1...", end="", flush=True)
             spiritual_reading = generate_spiritual_reading(
                 client, deployment, core_paras, ch_num,
+                debug=show_debug
             )
             if not spiritual_reading:
                 with print_lock:
