@@ -709,12 +709,12 @@
       "reconstructed_text": "[And this is] because of the light [th]at had rushed from [the image of] the Amba[s]sa[d]or."
     },
     {
-      "paragraph": 9,
-      "reconstructed_text": "These five grea[ t] powe[rs of the light] were revealed. They came to a profit [and a gain, and ] they were established upon [the foundation of the] First Man [who arose ] when he came to/ward [ the heights] from the struggle. He set in order and constructed [the whole ] universe [through] the First M [an at] his advent."
+      "paragraph": 5,
+      "reconstructed_text": "[The third red]emption is that of the Thi[rd Ambassador, since when he] displayed [his image before the firmaments, and] he [purified the light from the r]uling-power; he [loosened and saved light] from them [without measure.] So this is [how] the [form of] his image that [is revealed] in the Th[ir]d Ambassador."
     },
     {
-      "paragraph": 5,
-      "reconstructed_text": "[The third red]emption is that of the Thi[rd Ambassador ... he] displayed [his image ...] he [... ... the r]uling-power; he [... ... ... ...] from them [... ...] So this is [how] the [...] his image that [...] in the Th[ir]d Ambassador."
+      "paragraph": 9,
+      "reconstructed_text": "These five grea[t] powe[rs of saving] were revealed. They came to a profit [and a gain;] they were established upon [the foundation of the] First Man [himself,] when he came to/ward [the light] from the struggle. He set in order and constructed [the] universe [through] the First M[an at] his advent."
     }
   ],
   "fills": [
@@ -1303,17 +1303,97 @@
       "confidence": "strong"
     },
     {
-      "paragraph": 9,
+      "paragraph": 5,
       "index": 1,
-      "fill": "\nt",
-      "original": "t",
+      "fill": "The third red",
+      "original": "The third red",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 2,
+      "fill": "rd Ambassador, since when he",
+      "original": "rd Ambassador ... he",
       "notes": "",
       "confidence": "moderate"
     },
     {
+      "paragraph": 5,
+      "index": 3,
+      "fill": "his image before the firmaments, and",
+      "original": "his image ...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 4,
+      "fill": "purified the light from the r",
+      "original": "... ... the r",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 5,
+      "fill": "loosened and saved light",
+      "original": "... ... ... ...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 6,
+      "fill": "without measure.",
+      "original": "... ...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 7,
+      "fill": "how",
+      "original": "how",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 5,
+      "index": 8,
+      "fill": "form of",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 9,
+      "fill": "is revealed",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 10,
+      "fill": "ir",
+      "original": "ir",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 9,
+      "index": 1,
+      "fill": "t",
+      "original": "t",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
       "paragraph": 9,
       "index": 2,
-      "fill": "rs of the\n light",
+      "fill": "rs of saving",
       "original": "rs ...",
       "notes": "",
       "confidence": "moderate"
@@ -1321,7 +1401,7 @@
     {
       "paragraph": 9,
       "index": 3,
-      "fill": "and a gain, and\n",
+      "fill": "and a gain;",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -1329,7 +1409,7 @@
     {
       "paragraph": 9,
       "index": 4,
-      "fill": "the foundation\n of the",
+      "fill": "the foundation of the",
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
@@ -1337,7 +1417,7 @@
     {
       "paragraph": 9,
       "index": 5,
-      "fill": "who arose\n",
+      "fill": "himself,",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -1345,7 +1425,7 @@
     {
       "paragraph": 9,
       "index": 6,
-      "fill": "\nthe heights",
+      "fill": "the light",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -1353,7 +1433,7 @@
     {
       "paragraph": 9,
       "index": 7,
-      "fill": "the whole\n",
+      "fill": "the",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -1375,13 +1455,6 @@
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶5: REJECTED — skeleton altered: 'emption is that of the Thi displayed he uling-power; he from them So this is the' vs 'emption is that of the Thi he displayed he uling-power; he from them So this is '",
-    "¶9: REJECTED — skeleton altered: 'These five grea powe were revealed. They came to a profit they were established ' vs 'These five grea powe were revealed. They came to a profit they were established '",
-    "¶5: REJECTED — skeleton altered: 'emption is that of the Thi displayed he uling-power; he from them So this is the' vs 'emption is that of the Thi displayed he uling-power; he from them So this is the'",
-    "¶9: REJECTED — skeleton altered: 'These five grea powe were revealed. They came to a profit they were established ' vs 'These five grea powe were revealed. They came to a profit they were established '",
-    "¶5: REJECTED — skeleton altered: 'emption is that of the Thi displayed he uling-power; he from them So this is the' vs 'emption is that of the T hi displayed he uling-power; he from them So this is th'",
-    "¶5: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "32 restored, 50 already filled, 6 violations"
+  "violations": [],
+  "assessment": "36 restored, 56 already filled"
 }

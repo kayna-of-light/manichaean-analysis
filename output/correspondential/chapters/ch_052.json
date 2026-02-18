@@ -102,11 +102,11 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "[Behold and consider] how far [and wide is the lig]ht that came forth from [the Father; it ab ides] in that place in a [ unity] alone [. All share in ] the greatness of the Light with one another for ever, and nor did one of them transgress the command and order that his brother had entrusted to him forever."
+      "reconstructed_text": "[Consider now] how far [each emanation of the lig]ht that came forth from [the Father of Greatness abides] in that place in a [harmony] alone [, sharing] the greatness of the Light with one another for ever, and nor did one of them transgress the command and order that his brother had entrusted to him forever."
     },
     {
       "paragraph": 3,
-      "reconstructed_text": "However, the Darkness, the enemy, was doomed and overcome; because of the arising of disharmony it was divided within itself. Even the kingdom was divided within itself; [and] ev[en] the [powers, who had] left their abyss behind and come up fo[llow-ing] it, were doomed because of the disunity that was present in all of them. The Darkness was destroyed, and its other powers were humiliated,"
+      "reconstructed_text": "However, the Darkness, the enemy, was doomed and overcome; because of the arising of disharmony it was divided within itself. Even the kingdom was divided within itself; [and] ev[en] the [powers, who had] left their abyss behind and come up fo[llowing] it, were doomed because of the disunity that was present in all of them. The Darkness was destroyed, and its other powers were humiliated,"
     }
   ],
   "fills": [
@@ -137,7 +137,7 @@
     {
       "paragraph": 2,
       "index": 1,
-      "fill": "Behold and\n consider",
+      "fill": "Consider now",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -145,7 +145,7 @@
     {
       "paragraph": 2,
       "index": 2,
-      "fill": "and wide is\n the lig",
+      "fill": "each emanation of the lig",
       "original": " ... the lig",
       "notes": "",
       "confidence": "moderate"
@@ -153,7 +153,7 @@
     {
       "paragraph": 2,
       "index": 3,
-      "fill": "the Father; it ab\nides",
+      "fill": "the Father of Greatness abides",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -161,7 +161,7 @@
     {
       "paragraph": 2,
       "index": 4,
-      "fill": "\nunity",
+      "fill": "harmony",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -169,18 +169,44 @@
     {
       "paragraph": 2,
       "index": 5,
-      "fill": ". All share in\n",
+      "fill": ", sharing",
       "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 3,
+      "index": 1,
+      "fill": "and",
+      "original": "and",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 3,
+      "index": 2,
+      "fill": "en",
+      "original": "en",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 3,
+      "index": 3,
+      "fill": "powers, who had",
+      "original": "powers, who had",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 3,
+      "index": 4,
+      "fill": "llowing",
+      "original": "llow-ing",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶2: REJECTED — bracket count mismatch: 5 vs 6",
-    "¶3: REJECTED — skeleton altered: 'However, the Darkness, the enemy, was doomed and overcome; because of the arisin' vs 'However, the Darkness, the enemy, was doomed and overcome; because of the arisin'",
-    "¶3: REJECTED — skeleton altered: 'However, the Darkness, the enemy, was doomed and overcome; because of the arisin' vs ': However, the Darkness, the enemy, was doomed and overcome; because of the aris'",
-    "¶3: REJECTED — skeleton altered: 'However, the Darkness, the enemy, was doomed and overcome; because of the arisin' vs 'However, the Darkness , the enemy, was doomed and overcome; because of the arisi'",
-    "¶3: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "6 restored, 2 already filled, 5 violations"
+  "violations": [],
+  "assessment": "6 restored, 6 already filled"
 }

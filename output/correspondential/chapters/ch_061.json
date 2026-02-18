@@ -208,7 +208,7 @@
     },
     {
       "paragraph": 9,
-      "reconstructed_text": "[...] is how great a struggle, since it has [...] these creatures of destruction, the mighty giants. Behold, they are entwined, bound, and [...] in every place. They are hidden, not revealed before the eyes of every flesh that exists on the land of death [...]. These rulers [...] revealed. The entire universe of flesh will be destroyed and dissolved [...]; all pass away [...]. They will be destroyed with their angry voice, which is mightier than the thunder."
+      "reconstructed_text": "[This] is how great a struggle, since it has [subdued] these creatures of destruction, the mighty giants. Behold, they are entwined, bound, and [restrained] in every place. They are hidden, not revealed before the eyes of every flesh that exists on the land of death [and darkness]. These rulers [shall be] revealed. The entire universe of flesh will be destroyed and dissolved [at the end]; all pass away [and perish]. They will be destroyed with their angry voice, which is mightier than the thunder."
     }
   ],
   "fills": [
@@ -347,13 +347,64 @@
       "original": "...",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 1,
+      "fill": "This",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 2,
+      "fill": "subdued",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 3,
+      "fill": "restrained",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 4,
+      "fill": "and darkness",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 5,
+      "fill": "shall be",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 6,
+      "fill": "at the end",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 7,
+      "fill": "and perish",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶9: REJECTED — skeleton altered: 'is how great a struggle, since it has these creatures of destruction, the mighty' vs 'is how great a struggle, since it has these creatures of destruction, the mighty'",
-    "¶9: REJECTED — skeleton altered: 'is how great a struggle, since it has these creatures of destruction, the mighty' vs 'is how great a struggle, since it has these creatures of destruction , the might'",
-    "¶9: REJECTED — skeleton altered: 'is how great a struggle, since it has these creatures of destruction, the mighty' vs 'is how great a struggle, since it has these creatures of destruction, the mighty'",
-    "¶9: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "12 restored, 5 already filled, 4 violations"
+  "violations": [],
+  "assessment": "19 restored, 5 already filled"
 }

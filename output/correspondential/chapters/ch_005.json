@@ -286,11 +286,11 @@
     },
     {
       "paragraph": 4,
-      "reconstructed_text": "The third hunter is Jesus the Splendour, who came from the greatness, who hunts after the light and life; and he [...] it to the heights. His net is his wisdom, [the] light wisdom with which he hunts the souls, catching them in the net. The sea is the error of the universe, the law of Sin [...], the souls that are drowning in it [...]. He catches them in his net. They are the souls [... th]em by his light wisdom."
+      "reconstructed_text": "The third hunter is Jesus the Splendour, who came from the greatness, who hunts after the light and life; and he [raises] it to the heights. His net is his wisdom, [the] light wisdom with which he hunts the souls, catching them in the net. The sea is the error of the universe, the law of Sin [and death], the souls that are drowning in it [and perishing]. He catches them in his net. They are the souls [that he has caught; he redeems th]em by his light wisdom."
     },
     {
       "paragraph": 5,
-      "reconstructed_text": "The fourth hunter is the great counsel that [...] that lives in the circuit [...] entire universe in it today. Yet, at the end, in the dissolution of the universe, this very counsel of life will gather itself in and sculpt its soul in the Last Statue. Its net is its Living Spirit, because with its Spirit it can hunt after the light and the life that is in all things; and build it upon its body. Its ship, in which it is established, is this light cloud whereby it itself travels in the five elements [...], the great fire that will burn all the buildings of [... ...] in its net is the light and the life. It can rescue and free it from all bonds and fetters."
+      "reconstructed_text": "The fourth hunter is the great counsel that [is of life,] that lives in the circuit [of the] entire universe in it today. Yet, at the end, in the dissolution of the universe, this very counsel of life will gather itself in and sculpt its soul in the Last Statue. Its net is its Living Spirit, because with its Spirit it can hunt after the light and the life that is in all things; and build it upon its body. Its ship, in which it is established, is this light cloud whereby it itself travels in the five elements [of light], the great fire that will burn all the buildings of [Darkness. And what is held] in its net is the light and the life. It can rescue and free it from all bonds and fetters."
     }
   ],
   "fills": [
@@ -493,17 +493,80 @@
       "original": "hunter is the spirit",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 1,
+      "fill": "raises",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 2,
+      "fill": "the",
+      "original": "the",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 4,
+      "index": 3,
+      "fill": "and death",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 4,
+      "fill": "and perishing",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 4,
+      "index": 5,
+      "fill": "that he has caught; he redeems th",
+      "original": "... th",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 1,
+      "fill": "is of life,",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 2,
+      "fill": "of the",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 3,
+      "fill": "of light",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 5,
+      "index": 4,
+      "fill": "Darkness. And what is held",
+      "original": "... ...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶4: REJECTED — skeleton altered: 'The third hunter is Jesus the Splendour, who came from the greatness, who hunts ' vs 'The third hunter is Jesus the Splendour, who came from the greatness, who hunts '",
-    "¶5: REJECTED — skeleton altered: 'The fourth hunter is the great counsel that that lives in the circuit entire uni' vs 'The fourth hunter is the great counsel that that lives in the circuit entire uni'",
-    "¶4: REJECTED — skeleton altered: 'The third hunter is Jesus the Splendour, who came from the greatness, who hunts ' vs 'The third hunter is Jesus the Splendour, who came from the greatness, who hunts '",
-    "¶5: REJECTED — skeleton altered: 'The fourth hunter is the great counsel that that lives in the circuit entire uni' vs 'The fourth hunter is the great counsel that that lives in the circuit entire uni'",
-    "¶4: REJECTED — skeleton altered: 'The third hunter is Jesus the Splendour, who came from the greatness, who hunts ' vs 'The third hunter is Jesus the Splendour, who came from the greatness, who hun ts'",
-    "¶5: REJECTED — skeleton altered: 'The fourth hunter is the great counsel that that lives in the circuit entire uni' vs 'The fourth hunter is the great counsel that that lives in the circuit entire uni'",
-    "¶4: KEPT ORIGINAL after 2 retries",
-    "¶5: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "19 restored, 6 already filled, 8 violations"
+  "violations": [],
+  "assessment": "26 restored, 8 already filled"
 }

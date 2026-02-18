@@ -214,7 +214,7 @@
     },
     {
       "paragraph": 7,
-      "reconstructed_text": "Jesus did not come and s[a]ve the world because of mankind alone, but [also he ] came and revealed on earth [all things. He] was strong outside in [the great aeons.] And [whe]n he had finished doing his [t]ask outside [ i]n the great u[ni ]verse, he came [down and he wen]t further with Adam and Eve and revealed [to them]."
+      "reconstructed_text": "Jesus did not come and s[a]ve the world because of mankind alone, but [for the whole universe. He] came and revealed on earth [the mysteries. He] was strong outside in [the aeons above.] And [whe]n he had finished doing his [t]ask outside [i]n the great u[ni]verse, he came [down and he wen]t further with Adam and Eve and revealed [to them]."
     }
   ],
   "fills": [
@@ -341,7 +341,7 @@
     {
       "paragraph": 7,
       "index": 2,
-      "fill": "also he\n",
+      "fill": "for the whole universe. He",
       "original": " ... he",
       "notes": "",
       "confidence": "moderate"
@@ -349,7 +349,7 @@
     {
       "paragraph": 7,
       "index": 3,
-      "fill": "all\n things. He",
+      "fill": "the mysteries. He",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -357,7 +357,7 @@
     {
       "paragraph": 7,
       "index": 4,
-      "fill": "the great aeons.",
+      "fill": "the aeons above.",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -381,23 +381,23 @@
     {
       "paragraph": 7,
       "index": 7,
-      "fill": "\ni",
+      "fill": "i",
       "original": "i",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 7,
       "index": 8,
-      "fill": "ni\n",
+      "fill": "ni",
       "original": "ni",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 7,
       "index": 9,
-      "fill": "down and\n he wen",
+      "fill": "down and he wen",
       "original": " ... he wen",
       "notes": "",
       "confidence": "moderate"
@@ -411,8 +411,6 @@
       "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶7: REJECTED — skeleton altered: 'Jesus did not come and sve the world because of mankind alone, but came and reve' vs 'Jesus did not come and sve the world because of mankind alone, but came and reve'"
-  ],
-  "assessment": "3 restored, 21 already filled, 1 violations"
+  "violations": [],
+  "assessment": "3 restored, 21 already filled"
 }

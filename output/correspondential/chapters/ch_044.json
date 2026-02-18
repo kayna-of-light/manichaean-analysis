@@ -176,12 +176,20 @@
       "reconstructed_text": "This matter is comparable with a craftsman who might take the stamped impressions of many coins and cast them on the fire, and mould them [to a single] image. These thousands of impressions and thousands of shapes [are perfected] and make a single body [and one likeness from them all.]"
     },
     {
+      "paragraph": 3,
+      "reconstructed_text": "When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [ ... ] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own thought collected it together; and the thought gathered the waste together in this way. It made it fast and fixed it [ ... ]"
+    },
+    {
       "paragraph": 5,
-      "reconstructed_text": "He was discharged into the sea like this, the way a cloud might discharge rainwater into the midst of the sea. They compelled him totally through the action of the power and the helmsmanship of the angels. He was swept down to the mill, the place where he was constructed in the setting up of the universe; and the sea also conceived him [in its depths;] for its part [it moulded him, ] it being his chief sculptor and chief craftsman. It sculpted him in a likeness, he being changed more than the other residue of the sea bodies."
+      "reconstructed_text": "He was discharged into the sea like this, the way a cloud might discharge rainwater into the midst of the sea. They compelled him totally through the action of the power and the helmsmanship of the angels. He was swept down to the mill, the place where he was constructed in the setting up of the universe; and the sea also conceived him [and bore him;] for its part [it worked upon him,] it being his chief sculptor and chief craftsman. It sculpted him in a likeness, he being changed more than the other residue of the sea bodies."
     },
     {
       "paragraph": 3,
       "reconstructed_text": "When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [ ... ] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own thought collected it together; and the thought gathered the waste together in this way. It made it fast and fixed it [ ... ]"
+    },
+    {
+      "paragraph": 6,
+      "reconstructed_text": "This matter is comparable with a craftsman who might take the stamped impressions of many coins and cast them on the fire, and mould them [to a single] image. These thousands of impressions and thousands of shapes [are perfected] and make a single body [ ... ]"
     }
   ],
   "fills": [
@@ -292,7 +300,7 @@
     {
       "paragraph": 5,
       "index": 1,
-      "fill": "in its depths;",
+      "fill": "and bore him;",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -300,7 +308,7 @@
     {
       "paragraph": 5,
       "index": 2,
-      "fill": "it moulded him,\n",
+      "fill": "it worked upon him,",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -308,12 +316,14 @@
   ],
   "violations": [
     "¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'",
-    "¶5: REJECTED — skeleton altered: 'He was discharged into the sea like this, the way a cloud might discharge rainwa' vs 'He was discharged into the sea like this, the way a cloud might discharge rainwa'",
     "¶6: REJECTED — skeleton altered: 'This matter is comparable with a craftsman who might take the stamped impression' vs 'This matter is comparable with a craftsman who might take the stamped impression'",
     "¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'",
-    "¶5: REJECTED — skeleton altered: 'He was discharged into the sea like this, the way a cloud might discharge rainwa' vs 'He was disch arged into the sea like this, the way a cloud might discharge rainw'",
     "¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'",
-    "¶3: KEPT ORIGINAL after 2 retries"
+    "¶3: KEPT ORIGINAL after 2 retries",
+    "¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'",
+    "¶6: REJECTED — skeleton altered: 'This matter is comparable with a craftsman who might take the stamped impression' vs 'This matter is comparable with a craftsman who might take the stamped impression'",
+    "¶3: KEPT ORIGINAL after retry-violations",
+    "¶6: KEPT ORIGINAL after retry-violations"
   ],
-  "assessment": "9 restored, 5 already filled, 1 unfilled gaps, 7 violations"
+  "assessment": "9 restored, 5 already filled, 1 unfilled gaps, 9 violations"
 }

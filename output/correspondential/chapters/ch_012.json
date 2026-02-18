@@ -58,7 +58,7 @@
     },
     {
       "paragraph": 3,
-      "reconstructed_text": "The second [word is the Thir]d Ambassador [ , the great image] of life, whom they also call the father of [ the living, who came forth] [ from] the first Father."
+      "reconstructed_text": "The second [word is the Thir]d Ambassador [, the god] of life, whom they also call the father of [the living,] [who came forth from] the first Father."
     }
   ],
   "fills": [
@@ -81,15 +81,15 @@
     {
       "paragraph": 3,
       "index": 1,
-      "fill": "word is\n the Thir",
+      "fill": "word is the Thir",
       "original": "word is the Thir",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 3,
       "index": 2,
-      "fill": "\n, the great image",
+      "fill": ", the god",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -97,7 +97,7 @@
     {
       "paragraph": 3,
       "index": 3,
-      "fill": "\nthe living, who came forth",
+      "fill": "the living,",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -105,14 +105,12 @@
     {
       "paragraph": 3,
       "index": 4,
-      "fill": "\nfrom",
+      "fill": "who came forth from",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶3: REJECTED — skeleton altered: 'The second d Ambassador of life, whom they also call the father of the first Fat' vs 'The second d Ambassador, of life, whom they also call the father of the first Fa'"
-  ],
-  "assessment": "4 restored, 2 already filled, 1 violations"
+  "violations": [],
+  "assessment": "4 restored, 2 already filled"
 }

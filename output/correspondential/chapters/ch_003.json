@@ -265,11 +265,15 @@
     },
     {
       "paragraph": 6,
-      "reconstructed_text": "[ Again, these three exist in the vessel ] which is called the sun [, that is, the ship of] living fire, [the dwelling of the Third Amba]ssador, the second greatne[ss. The] glorious [happiness] is the [ Living] Spirit, [the first great ness. And, the wisdom] is the Mother of Lif[e . And great power] is [all ] the gods, [the] rich ones and the angels who are within the ship."
+      "reconstructed_text": "[Again, happiness, wisdom and power exist in the ship] which is called the sun [, that is, the ship of] living fire, [in which dwells the Third Amba]ssador, the second greatne[ss. The] glorious [happiness] is the [Living] Spirit, [the great one. Also, the wisdom] is the Mother of Lif[e, and great power] is [all] the gods, [the] rich ones and the angels who are within the ship."
     },
     {
       "paragraph": 7,
-      "reconstructed_text": "Again, [h]appiness, wisdom and power exist in the s[hip of liv]ing waters [ ... ] the happiness [ ... ] the Mind of the Father. Also, wisdom [is the Vir]gin of [Li]ght. And the power that is [i]n the ship is [all] the go[ds], the [ri]ch ones and the angels who are established i[n it]."
+      "reconstructed_text": "Again, [h]appiness, wisdom and power exist in the s[hip of liv]ing waters [, which is the moon, and] the happiness [that is therein is] the Mind of the Father. Also, wisdom [is the Vir]gin of [Li]ght. And the power that is [i]n the ship is [all] the go[ds], the [ri]ch ones and the angels who are established i[n it]."
+    },
+    {
+      "paragraph": 8,
+      "reconstructed_text": "Again, these three exist in the elements: happiness, wis[d]om and power. The happiness is [the Pillar of Glory], the Perfect Man. Wisdom is the [five sons of the] Living Spirit; and great powe[r is all the fi]ve sons of the First Man [, the five elements, who are encl]osed and compounded in the totality, that [are bound in the mixture] while he supports the totality."
     }
   ],
   "fills": [
@@ -340,7 +344,7 @@
     {
       "paragraph": 6,
       "index": 1,
-      "fill": "\nAgain, these three exist in the vessel\n",
+      "fill": "Again, happiness, wisdom and power exist in the ship",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -348,7 +352,7 @@
     {
       "paragraph": 6,
       "index": 2,
-      "fill": ",\n that is, the ship of",
+      "fill": ", that is, the ship of",
       "original": " ... the ship of",
       "notes": "",
       "confidence": "moderate"
@@ -356,7 +360,7 @@
     {
       "paragraph": 6,
       "index": 3,
-      "fill": "the dwelling of the Third\n Amba",
+      "fill": "in which dwells the Third Amba",
       "original": " ... the Third Amba",
       "notes": "",
       "confidence": "moderate"
@@ -380,15 +384,15 @@
     {
       "paragraph": 6,
       "index": 6,
-      "fill": "\nLiving",
+      "fill": "Living",
       "original": "Living",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 6,
       "index": 7,
-      "fill": "the first great\nness. And, the wisdom",
+      "fill": "the great one. Also, the wisdom",
       "original": " ... , the wisdom",
       "notes": "",
       "confidence": "moderate"
@@ -396,7 +400,7 @@
     {
       "paragraph": 6,
       "index": 8,
-      "fill": "e\n. And great power",
+      "fill": "e, and great power",
       "original": "e ... and great power",
       "notes": "",
       "confidence": "moderate"
@@ -404,10 +408,10 @@
     {
       "paragraph": 6,
       "index": 9,
-      "fill": "all\n",
+      "fill": "all",
       "original": "all",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 6,
@@ -416,16 +420,144 @@
       "original": "the",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 1,
+      "fill": "h",
+      "original": "h",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 2,
+      "fill": "hip of liv",
+      "original": "hip of liv",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 3,
+      "fill": ", which is the moon, and",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 7,
+      "index": 4,
+      "fill": "that is therein is",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 7,
+      "index": 5,
+      "fill": "is the Vir",
+      "original": "is the Vir",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 6,
+      "fill": "Li",
+      "original": "Li",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 7,
+      "fill": "i",
+      "original": "i",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 8,
+      "fill": "all",
+      "original": "all",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 9,
+      "fill": "ds",
+      "original": "ds",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 10,
+      "fill": "ri",
+      "original": "ri",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 7,
+      "index": 11,
+      "fill": "n it",
+      "original": "n it",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": "d",
+      "original": "d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "the Pillar of Glory",
+      "original": "the Pillar of Glory",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 3,
+      "fill": "five sons of the",
+      "original": "five sons of the",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 4,
+      "fill": "r is all the fi",
+      "original": "r is ... the fi",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 5,
+      "fill": ", the five elements, who are encl",
+      "original": " ... who are encl",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 6,
+      "fill": "are bound in the mixture",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶6: REJECTED — skeleton altered: 'which is called the sun living fire, ssador, the second greatne glorious is the ' vs 'which is called the sun, living fire, ssador, the second greatne glorious is the'",
-    "¶7: REJECTED — skeleton altered: 'Again, appiness, wisdom and power exist in the sing waters the happiness the Min' vs 'Again, appiness, wisdom and power exist in the sing waters, the happiness the Mi'",
-    "¶8: REJECTED — skeleton altered: 'Again, these three exist in the elements: happiness, wisom and power. The happin' vs 'Again, these three exist in the elements: happiness, wisom and power. The happin'",
-    "¶7: REJECTED — skeleton altered: 'Again, appiness, wisdom and power exist in the sing waters the happiness the Min' vs 'Again , appiness, wisdom and power exist in the sing waters the happiness the Mi'",
-    "¶8: REJECTED — skeleton altered: 'Again, these three exist in the elements: happiness, wisom and power. The happin' vs 'Again , these three exist in the elements: happiness, wisom and power. The happi'",
-    "¶7: REJECTED — skeleton altered: 'Again, appiness, wisdom and power exist in the sing waters the happiness the Min' vs 'Again, appiness, wisdom and power exist in the sing waters the happiness the Min'",
-    "¶7: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "4 restored, 14 already filled, 7 violations"
+  "violations": [],
+  "assessment": "7 restored, 28 already filled"
 }

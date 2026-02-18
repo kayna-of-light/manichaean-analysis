@@ -189,11 +189,11 @@
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "The sixth judge is [ the Th]ird Ambassador, he who came and displayed his image. He purified the light [from the darkness,] which his own [image set free; and] also of the enemy, he has [rendered a judg ement upon him.]"
+      "reconstructed_text": "The sixth judge is [the Th]ird Ambassador, he who came and displayed his image. He purified the light [from the darkness] which his own [image had released;] also of the enemy, he has [made a judgement upon him.]"
     },
     {
       "paragraph": 9,
-      "reconstructed_text": "The seventh judge is [ ... ] [ ... ] the worlds [... as he gives the victory to] they who are steadfast; but he condemns the ones who are convicted [ ... ] [ ... ] he shall become for them the steps of the way (?) [...]; but the convicted he sweeps and casts out to the depths."
+      "reconstructed_text": "The seventh judge is [the Column of Glory,] [he who purifies] the worlds [and separates the light from darkness, as he gives the victory to] they who are steadfast; but he condemns the ones who are convicted [of evil.] [For the steadfast,] he shall become for them the steps of the way (?) [to the land of light]; but the convicted he sweeps and casts out to the depths."
     }
   ],
   "fills": [
@@ -256,15 +256,15 @@
     {
       "paragraph": 8,
       "index": 1,
-      "fill": "\nthe Th",
+      "fill": "the Th",
       "original": "the Th",
-      "notes": "",
-      "confidence": "moderate"
+      "notes": "already filled by translator",
+      "confidence": "strong"
     },
     {
       "paragraph": 8,
       "index": 2,
-      "fill": "from the\n darkness,",
+      "fill": "from the darkness",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -272,7 +272,7 @@
     {
       "paragraph": 8,
       "index": 3,
-      "fill": "image\n set free; and",
+      "fill": "image had released;",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -280,18 +280,60 @@
     {
       "paragraph": 8,
       "index": 4,
-      "fill": "rendered a judg\nement upon him.",
+      "fill": "made a judgement upon him.",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 1,
+      "fill": "the Column of Glory,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 2,
+      "fill": "he who purifies",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 3,
+      "fill": "and separates the light from darkness, as he gives the victory to",
+      "original": "... as he gives the victory to",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 4,
+      "fill": "of evil.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 5,
+      "fill": "For the steadfast,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 6,
+      "fill": "to the land of light",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶8: REJECTED — skeleton altered: 'The sixth judge is ird Ambassador, he who came and displayed his image. He purif' vs 'The sixth judge is ird Ambassador, he who came and displayed his image. He purif'",
-    "¶9: REJECTED — skeleton altered: 'The seventh judge is the worlds they who are steadfast; but he condemns the ones' vs 'The seventh judge is the worlds they who are steadfast; but he condemns the ones'",
-    "¶9: REJECTED — skeleton altered: 'The seventh judge is the worlds they who are steadfast; but he condemns the ones' vs ': The seventh judge is the worlds they who are steadfast; but he condemns the on'",
-    "¶9: REJECTED — skeleton altered: 'The seventh judge is the worlds they who are steadfast; but he condemns the ones' vs 'The seventh judge is the worlds they who are steadfast; but he condemns the ones'",
-    "¶9: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "9 restored, 2 already filled, 5 violations"
+  "violations": [],
+  "assessment": "14 restored, 3 already filled"
 }

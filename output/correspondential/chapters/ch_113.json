@@ -127,7 +127,7 @@
     },
     {
       "paragraph": 2,
-      "reconstructed_text": "[The enlightener said :] b[u]t should the [living light] ascend [ , it is drawn up by the] light of the rays that [are sent down and] which are received, which shine and go in through these great open gates, through these doors, firmament by firmament."
+      "reconstructed_text": "[He says:] b[u]t should the [living light] ascend [, it is carried up by the] light of the rays that [come down from the luminaries,] which are received, which shine and go in through these great open gates, through these doors, firmament by firmament."
     }
   ],
   "fills": [
@@ -214,7 +214,7 @@
     {
       "paragraph": 2,
       "index": 1,
-      "fill": "The enlightener said\n:",
+      "fill": "He says:",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -238,7 +238,7 @@
     {
       "paragraph": 2,
       "index": 4,
-      "fill": "\n, it is drawn up by the",
+      "fill": ", it is carried up by the",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
@@ -246,15 +246,12 @@
     {
       "paragraph": 2,
       "index": 5,
-      "fill": "are sent\n down and",
+      "fill": "come down from the luminaries,",
       "original": " ... ",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶2: REJECTED — skeleton altered: 'bt should the ascend light of the rays that which are received, which shine and ' vs 'Bt should the ascend light of the rays that which are received, which shine and '",
-    "¶2: REJECTED — skeleton altered: 'bt should the ascend light of the rays that which are received, which shine and ' vs 'bt should the ascend light of the rays that which are received, which shine and '"
-  ],
-  "assessment": "6 restored, 9 already filled, 2 violations"
+  "violations": [],
+  "assessment": "6 restored, 9 already filled"
 }

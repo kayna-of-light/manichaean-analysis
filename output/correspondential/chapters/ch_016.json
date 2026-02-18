@@ -589,11 +589,11 @@
     },
     {
       "paragraph": 13,
-      "reconstructed_text": "The advent of the Living Spirit is like this, when he was sent from the greatness that he might bring up the First Man. He resembles a judge the king would send to overturn the violence to that man, the noble son against whom his enemies sinned. And he, this judge, [...] hard and cruel [...] and he gives the means [...] by his righteousness and his strength; and he also judges all who are condemned according to their rebellious heart, and repays each according to his deserts. They who are worthy of blows he strikes with hard leather whips. Again, these who are worthy of cutting off their limbs, or indeed their [...] and he repays them accordingly. [...] and he binds and fetters them, and hangs by [...] and thus he does to them with a righteous judgement. And he kills them to flay their skin [...] so that they will be killed by a death [...] until they die. Again, [they for] whom it is fitting [...] to banish from their dwellings he may remove according to a righteous judgement; just as they had faulted and sinned against the noble son."
+      "reconstructed_text": "The advent of the Living Spirit is like this, when he was sent from the greatness that he might bring up the First Man. He resembles a judge the king would send to overturn the violence to that man, the noble son against whom his enemies sinned. And he, this judge, [is] hard and cruel [to them;] and he gives the means [of retribution] by his righteousness and his strength; and he also judges all who are condemned according to their rebellious heart, and repays each according to his deserts. They who are worthy of blows he strikes with hard leather whips. Again, these who are worthy of cutting off their limbs, or indeed their [heads;] and he repays them accordingly. [Others also,] and he binds and fetters them, and hangs by [their feet;] and thus he does to them with a righteous judgement. And he kills them to flay their skin [from them,] so that they will be killed by a death [most grievous] until they die. Again, [they for] whom it is fitting [and right] to banish from their dwellings he may remove according to a righteous judgement; just as they had faulted and sinned against the noble son."
     },
     {
       "paragraph": 25,
-      "reconstructed_text": "Again, this is like this simile of the advent of Jesus the Splendour. It happened like this; because he too set out [...] his power and his wisdom, in his [...]-ness [...] in his glorious wisdom he destroyed them. He bound and crushed them like the fire that shall burn and destroy trees. This is also how he performed his will in the zone, among the many powers,"
+      "reconstructed_text": "Again, this is like this simile of the advent of Jesus the Splendour. It happened like this; because he too set out [in] his power and his wisdom, in his [righteous]-ness [and] in his glorious wisdom he destroyed them. He bound and crushed them like the fire that shall burn and destroy trees. This is also how he performed his will in the zone, among the many powers,"
     }
   ],
   "fills": [
@@ -996,17 +996,112 @@
       "original": "...",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 1,
+      "fill": "is",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 2,
+      "fill": "to them;",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 3,
+      "fill": "of retribution",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 4,
+      "fill": "heads;",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 5,
+      "fill": "Others also,",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 6,
+      "fill": "their feet;",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 7,
+      "fill": "from them,",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 8,
+      "fill": "most grievous",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 13,
+      "index": 9,
+      "fill": "they for",
+      "original": "they for",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 13,
+      "index": 10,
+      "fill": "and right",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 25,
+      "index": 1,
+      "fill": "in",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 25,
+      "index": 2,
+      "fill": "righteous",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 25,
+      "index": 3,
+      "fill": "and",
+      "original": "...",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶13: REJECTED — bracket count mismatch: 10 vs 11",
-    "¶25: REJECTED — skeleton altered: 'Again, this is like this simile of the advent of Jesus the Splendour. It happene' vs 'Again, this is like this simile of the advent of Jesus the Splendour. It happene'",
-    "¶13: REJECTED — skeleton altered: 'The advent of the Living Spirit is like this, when he was sent from the greatnes' vs 'The advent of the Living Spirit is like this, when he was sent from the greatnes'",
-    "¶25: REJECTED — skeleton altered: 'Again, this is like this simile of the advent of Jesus the Splendour. It happene' vs 'Again, this is like this simile of the advent of Jesus the Splendour. It happene'",
-    "¶13: REJECTED — skeleton altered: 'The advent of the Living Spirit is like this, when he was sent from the greatnes' vs 'The advent of the Living Spirit is like this, when he was sent from the greatnes'",
-    "¶25: REJECTED — skeleton altered: 'Again, this is like this simile of the advent of Jesus the Splendour. It happene' vs 'Again, this is like this simile of the advent of Jesus the Splendour . It happen'",
-    "¶13: KEPT ORIGINAL after 2 retries",
-    "¶25: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "43 restored, 7 already filled, 8 violations"
+  "violations": [],
+  "assessment": "55 restored, 8 already filled"
 }

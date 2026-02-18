@@ -159,6 +159,14 @@
     {
       "paragraph": 5,
       "reconstructed_text": "Before the rebels rose up, they whose corps rebelled in the ruling-power above and below, they [ ... ] outside, and also the tyrants in whose heart it lay [to ty]rannise amongst the murk and the clouds and winds and spirits and storms; for them were constructed in the great outer sea seven hostels, places whence they are thrown into the depths and the Darkness [ ... ]"
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "Before the sea giant was discharged from the sphere, the Father of Life constructed a place for [him i]n this great sea that is within the walls, whereon the ships sail, and where the fullness shall [ ... ... ]"
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "Before the rebels rose up, they whose corps rebelled in the ruling-power above and below, they [ ... ] outside, and also the tyrants in whose heart it lay [to ty]rannise amongst the murk and the clouds and winds and spirits and storms; for them were constructed in the great outer sea seven hostels, places whence they are thrown into the depths and the Darkness [ ... ]"
     }
   ],
   "fills": [
@@ -259,7 +267,11 @@
     "¶2: REJECTED — skeleton altered: 'Before the sea giant was discharged from the sphere, the Father of Life construc' vs 'Before the sea giant was discharged from the sphere, the Father of Life construc'",
     "¶5: REJECTED — skeleton altered: 'Before the rebels rose up, they whose corps rebelled in the ruling-power above a' vs 'Before the rebels rose up, they whose corps reb elled in the ruling-power above '",
     "¶2: KEPT ORIGINAL after 2 retries",
-    "¶5: KEPT ORIGINAL after 2 retries"
+    "¶5: KEPT ORIGINAL after 2 retries",
+    "¶2: REJECTED — skeleton altered: 'Before the sea giant was discharged from the sphere, the Father of Life construc' vs 'Before the sea giant was discharged from the sphere, the Father of Life construc'",
+    "¶5: REJECTED — skeleton altered: 'Before the rebels rose up, they whose corps rebelled in the rulingpower above an' vs 'Before the rebels rose up, they whose corps rebelled in the rulingpower above an'",
+    "¶2: KEPT ORIGINAL after retry-violations",
+    "¶5: KEPT ORIGINAL after retry-violations"
   ],
-  "assessment": "6 restored, 5 already filled, 8 violations"
+  "assessment": "6 restored, 5 already filled, 12 violations"
 }

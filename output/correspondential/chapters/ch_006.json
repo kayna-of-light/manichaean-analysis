@@ -228,11 +228,11 @@
     },
     {
       "paragraph": 9,
-      "reconstructed_text": "Also, another different thing is found in the King of the realms of Darkness! For when it pleases him to move, he spreads all his limbs out and walks. When it comes to mind, he with[d]raws his limbs and takes them in, and is rolled (?) to his companions; and he falls to the ground like a grape and a great iron ball! He terrifies by his cry, he is frightful. He frightens his powers with his sound; because when he speaks, being like thunder in the clouds, he resembles the [ ... ] of the rocks [ ... ] When he cries out and [ ... ] and calls [ ... ] over his powers, they shall tremble and to[tter a]nd fall under foot; even as some birds would be [ ... ] the bird [ ... / ... ] and they fall down to the earth. Still, this thing only: he knows not what is far from him, he sees not who is at a distance, nor does he hear him. Rather, whoever is before his face he sees, hearing him and knowing him."
+      "reconstructed_text": "Also, another different thing is found in the King of the realms of Darkness! For when it pleases him to move, he spreads all his limbs out and walks. When it comes to mind, he with[d]raws his limbs and takes them in, and is rolled (?) to his companions; and he falls to the ground like a grape and a great iron ball! He terrifies by his cry, he is frightful. He frightens his powers with his sound; because when he speaks, being like thunder in the clouds, he resembles the [shattering] of the rocks [of the mountains.] When he cries out and [roars] and calls [out] over his powers, they shall tremble and to[tter a]nd fall under foot; even as some birds would be [stricken by] the bird [of prey above them,] and they fall down to the earth. Still, this thing only: he knows not what is far from him, he sees not who is at a distance, nor does he hear him. Rather, whoever is before his face he sees, hearing him and knowing him."
     },
     {
       "paragraph": 10,
-      "reconstructed_text": "These signs and these evil marks are found in the chief of the demons and fiends, the King of all the mountains of Darkness [ ... the one] to [whom] the land of darkness has given birth, begotten in its cruelty, in its wickedness and its wrath [ ... ]"
+      "reconstructed_text": "These signs and these evil marks are found in the chief of the demons and fiends, the King of all the mountains of Darkness [; he is the one] to [whom] the land of darkness has given birth, begotten in its cruelty, in its wickedness and its wrath [, from the beginning.]"
     }
   ],
   "fills": [
@@ -323,17 +323,96 @@
       "original": "who belong to the world of",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 9,
+      "index": 1,
+      "fill": "d",
+      "original": "d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 9,
+      "index": 2,
+      "fill": "shattering",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 3,
+      "fill": "of the mountains.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 4,
+      "fill": "roars",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 5,
+      "fill": "out",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 6,
+      "fill": "tter a",
+      "original": "tter a",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 9,
+      "index": 7,
+      "fill": "stricken by",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 9,
+      "index": 8,
+      "fill": "of prey above them,",
+      "original": " ... / ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 1,
+      "fill": "; he is the one",
+      "original": " ... the one",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 2,
+      "fill": "whom",
+      "original": "whom",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 3,
+      "fill": ", from the beginning.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶9: REJECTED — skeleton altered: 'Also, another different thing is found in the King of the realms of Darkness! Fo' vs 'Also, another different thing is found in the King of the realms of Darkness! Fo'",
-    "¶10: REJECTED — skeleton altered: 'These signs and these evil marks are found in the chief of the demons and fiends' vs 'These signs and these evil marks are found in the chief of the demons and fiends'",
-    "¶9: REJECTED — skeleton altered: 'Also, another different thing is found in the King of the realms of Darkness! Fo' vs 'Also , another different thing is found in the King of the realms of Darkness ! '",
-    "¶10: REJECTED — skeleton altered: 'These signs and these evil marks are found in the chief of the demons and fiends' vs 'These signs and these evil marks are found in the chief of the demons and fiends'",
-    "¶9: REJECTED — skeleton altered: 'Also, another different thing is found in the King of the realms of Darkness! Fo' vs 'Also, another different thing is found in the King of the real ms of Darkness! F'",
-    "¶10: REJECTED — skeleton altered: 'These signs and these evil marks are found in the chief of the demons and fiends' vs ': These signs and these evil marks are found in the chief of the demons and fien'",
-    "¶9: KEPT ORIGINAL after 2 retries",
-    "¶10: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "5 restored, 6 already filled, 8 violations"
+  "violations": [],
+  "assessment": "12 restored, 10 already filled"
 }

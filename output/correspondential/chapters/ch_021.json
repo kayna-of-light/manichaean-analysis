@@ -357,11 +357,11 @@
     },
     {
       "paragraph": 4,
-      "reconstructed_text": "The first is his light that enlig[htens all things ;] it gushed forth from him and pour[ed out into] a[l] aeons."
+      "reconstructed_text": "The first is his light that enlig[htens all things.] it gushed forth from him and pour[ed out into] a[ll the] aeons."
     },
     {
       "paragraph": 8,
-      "reconstructed_text": "The fif[th] is his great glorio[us ... ] that [ ... , w]hich [has been ma]nifested all the tim[e], whi[ch contin]ues [ ... ] all of them. It was sculpted in them [ ... ] sealed in the [m ... ] sealed [ ... ] as they send [ ... ] in [ ... ... ] they too receive nourishment [ ... ] immediately [ ... his] living voi[ce ... ] joy [ ... ] set up anew. It shall gush forth from it [ ... ] they shall [ ... ] and become rich in the [ ... ] too is beautiful [ ... ] portray[al ... ] adornment [ ... ] and they live [ ... ... ] for ev[e]r."
+      "reconstructed_text": "The fif[th] is his great glorio[us form] that [shines forth from him, w]hich [has been ma]nifested all the tim[e], whi[ch contin]ues [without ceasing in] all of them. It was sculpted in them [and was] sealed in the [m, and was] sealed [upon them;] as they send [forth their praise] in [his aeons of light,] they too receive nourishment [from him.] immediately [they hear his] living voi[ce and receive] joy [and are] set up anew. It shall gush forth from it [unceasingly;] they shall [receive it] and become rich in the [light. It] too is beautiful [in its] portray[al and its] adornment [of glory,] and they live [in his light] for ev[e]r."
     }
   ],
   "fills": [
@@ -512,7 +512,7 @@
     {
       "paragraph": 4,
       "index": 1,
-      "fill": "htens all things\n;",
+      "fill": "htens all things.",
       "original": "htens ... ",
       "notes": "",
       "confidence": "moderate"
@@ -528,19 +528,204 @@
     {
       "paragraph": 4,
       "index": 3,
-      "fill": "l",
+      "fill": "ll the",
       "original": "l",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 1,
+      "fill": "th",
+      "original": "th",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 2,
+      "fill": "us form",
+      "original": "us ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 3,
+      "fill": "shines forth from him, w",
+      "original": " ... , w",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 4,
+      "fill": "has been ma",
+      "original": "has been ma",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 5,
+      "fill": "e",
+      "original": "e",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 6,
+      "fill": "ch contin",
+      "original": "ch contin",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 8,
+      "index": 7,
+      "fill": "without ceasing in",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 8,
+      "fill": "and was",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 9,
+      "fill": "m, and was",
+      "original": "m ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 10,
+      "fill": "upon them;",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 11,
+      "fill": "forth their praise",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 12,
+      "fill": "his aeons of light,",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 13,
+      "fill": "from him.",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 14,
+      "fill": "they hear his",
+      "original": " ... his",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 15,
+      "fill": "ce and receive",
+      "original": "ce ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 16,
+      "fill": "and are",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 17,
+      "fill": "unceasingly;",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 18,
+      "fill": "receive it",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 19,
+      "fill": "light. It",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 20,
+      "fill": "in its",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 21,
+      "fill": "al and its",
+      "original": "al ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 22,
+      "fill": "of glory,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 23,
+      "fill": "in his light",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 8,
+      "index": 24,
+      "fill": "e",
+      "original": "e",
       "notes": "already filled by translator",
       "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶4: REJECTED — skeleton altered: 'The first is his light that enlig it gushed forth from him and pour a aeons.' vs 'The first is his light that enlig it gushed forth from him and pour al aeons.'",
-    "¶8: REJECTED — bracket count mismatch: 24 vs 25",
-    "¶4: REJECTED — skeleton altered: 'The first is his light that enlig it gushed forth from him and pour a aeons.' vs 'The first is his light that enlig it gushed forth from him and pour a aeons .'",
-    "¶8: REJECTED — skeleton altered: 'The fif is his great glorio that hich nifested all the tim, whiues all of them. ' vs 'The f if is his great gl orio that hich nifested all the tim, whi ues all of the'",
-    "¶8: REJECTED — skeleton altered: 'The fif is his great glorio that hich nifested all the tim, whiues all of them. ' vs 'The fif is his great glorio that hich nifested all the tim, whiues all of them. '",
-    "¶8: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "8 restored, 13 already filled, 6 violations"
+  "violations": [],
+  "assessment": "21 restored, 24 already filled"
 }

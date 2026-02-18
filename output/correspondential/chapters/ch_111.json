@@ -127,7 +127,7 @@
     },
     {
       "paragraph": 3,
-      "reconstructed_text": "The pupil of the eye shall not [be closed to] the mystery of the [Light, which ] is the door [that opens from ] below [upon] the other four cardinal points. For in the [height is the Father] above. He has [revealed his] great [glory, and] they came down [as] living [spirits]. The First Man came forth from it and knew all things."
+      "reconstructed_text": "The pupil of the eye shall not [be shut from] the mystery of the [Light, which] is the door [of passage from] below [unto] the other four cardinal points. For in the [height] above. He has [established his] great [dwelling, and] they came down [as] living [emanations]. The First Man came forth from it and knew all things."
     }
   ],
   "fills": [
@@ -182,7 +182,7 @@
     {
       "paragraph": 3,
       "index": 1,
-      "fill": "be closed to",
+      "fill": "be shut from",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -190,7 +190,7 @@
     {
       "paragraph": 3,
       "index": 2,
-      "fill": "Light, which\n",
+      "fill": "Light, which",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -198,7 +198,7 @@
     {
       "paragraph": 3,
       "index": 3,
-      "fill": "that opens from\n",
+      "fill": "of passage from",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -206,7 +206,7 @@
     {
       "paragraph": 3,
       "index": 4,
-      "fill": "upon",
+      "fill": "unto",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -214,7 +214,7 @@
     {
       "paragraph": 3,
       "index": 5,
-      "fill": "height\n is the Father",
+      "fill": "height",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -222,7 +222,7 @@
     {
       "paragraph": 3,
       "index": 6,
-      "fill": "revealed his",
+      "fill": "established his",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -230,7 +230,7 @@
     {
       "paragraph": 3,
       "index": 7,
-      "fill": "glory,\n and",
+      "fill": "dwelling, and",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
@@ -246,15 +246,12 @@
     {
       "paragraph": 3,
       "index": 9,
-      "fill": "spirits",
+      "fill": "emanations",
       "original": "...",
       "notes": "",
       "confidence": "moderate"
     }
   ],
-  "violations": [
-    "¶3: REJECTED — skeleton altered: 'The pupil of the eye shall not the mystery of the is the door below the other fo' vs 'The pupil of the eye shall not the mystery of the is the door below the other fo'",
-    "¶3: REJECTED — skeleton altered: 'The pupil of the eye shall not the mystery of the is the door below the other fo' vs 'The pupil of the eye shall not the mystery of the is the door below the other fo'"
-  ],
-  "assessment": "15 restored, 2 violations"
+  "violations": [],
+  "assessment": "15 restored"
 }

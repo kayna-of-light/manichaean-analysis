@@ -389,7 +389,7 @@
     },
     {
       "paragraph": 10,
-      "reconstructed_text": "“This drop of water shall [ ... ] down to the sweet waters and [ ... ] and they absorbed them and were combined with the [ ... ]. They did not [d]escend to the depths of the sea, but they [ ... ... ] it floated on the surface of the waters [ ... ... ] to it. The foam and the pearl-shell shall be formed [ ... ] this wholesome drop [ ... ... ] it, and it becomes a pe[arl ... ] that makes a drop of rainwater [ ... ] waters [ ... ] it not being whole. It breaks and separates out into many droplets, and it has time to become a drop of sweet water [ ... ] and comes up in the sea of [ ... ] rain and sweet water; and it is accomodated in the shell, which at first is foam. They shall be joined with each other at [this] time, and are shaped and become a great pea[r]l, a great and valued kind."
+      "reconstructed_text": "\"This drop of water shall [come] down to the sweet waters and [they receive it,] and they absorbed them and were combined with the [sweet waters]. They did not [d]escend to the depths of the sea, but they [remained above, and] it floated on the surface of the waters [and was drawn close] to it. The foam and the pearl-shell shall be formed [around] this wholesome drop [and shall enclose] it, and it becomes a pe[arl. But the force] that makes a drop of rainwater [fall to the] waters [with] it not being whole. It breaks and separates out into many droplets, and it has time to become a drop of sweet water [once more,] and comes up in the sea of [the] rain and sweet water; and it is accomodated in the shell, which at first is foam. They shall be joined with each other at [this] time, and are shaped and become a great pea[r]l, a great and valued kind."
     }
   ],
   "fills": [
@@ -664,13 +664,128 @@
       "original": "r a",
       "notes": "already filled by translator",
       "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 1,
+      "fill": "come",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 2,
+      "fill": "they receive it,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 3,
+      "fill": "sweet waters",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 4,
+      "fill": "d",
+      "original": "d",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 5,
+      "fill": "remained above, and",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 6,
+      "fill": "and was drawn close",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 7,
+      "fill": "around",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 8,
+      "fill": "and shall enclose",
+      "original": " ... ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 9,
+      "fill": "arl. But the force",
+      "original": "arl ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 10,
+      "fill": "fall to the",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 11,
+      "fill": "with",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 12,
+      "fill": "once more,",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 13,
+      "fill": "the",
+      "original": " ... ",
+      "notes": "",
+      "confidence": "moderate"
+    },
+    {
+      "paragraph": 10,
+      "index": 14,
+      "fill": "this",
+      "original": "this",
+      "notes": "already filled by translator",
+      "confidence": "strong"
+    },
+    {
+      "paragraph": 10,
+      "index": 15,
+      "fill": "r",
+      "original": "r",
+      "notes": "already filled by translator",
+      "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶10: REJECTED — bracket count mismatch: 15 vs 16",
-    "¶10: REJECTED — skeleton altered: 'This drop of water shall down to the sweet waters and and they absorbed them and' vs ': \"This drop of water shall down to the sweet waters and and they absorbed them '",
-    "¶10: REJECTED — skeleton altered: 'This drop of water shall down to the sweet waters and and they absorbed them and' vs 'This drop of water shall down to the sweet waters and and they absorbed them and'",
-    "¶10: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "18 restored, 16 already filled, 4 violations"
+  "violations": [],
+  "assessment": "29 restored, 20 already filled"
 }

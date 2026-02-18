@@ -45,13 +45,16 @@
       "original": "... ...",
       "notes": "",
       "confidence": "moderate"
+    },
+    {
+      "paragraph": 20,
+      "index": 1,
+      "fill": "he glid",
+      "original": "he glid",
+      "notes": "already filled by translator",
+      "confidence": "strong"
     }
   ],
-  "violations": [
-    "¶20: REJECTED — skeleton altered: 'Afterwards he is purified, whether indeed above or below. He shall be purified a' vs 'Afterwards he is purified, whether indeed above or below. He shall be purified a'",
-    "¶20: REJECTED — skeleton altered: 'Afterwards he is purified, whether indeed above or below. He shall be purified a' vs 'Afterwards he is purified, whether indeed above or below. He shall be purified a'",
-    "¶20: REJECTED — skeleton altered: 'Afterwards he is purified, whether indeed above or below. He shall be purified a' vs 'Afterwards he is purified, whether indeed above or below. He shall be purified a'",
-    "¶20: KEPT ORIGINAL after 2 retries"
-  ],
-  "assessment": "1 restored, 4 violations"
+  "violations": [],
+  "assessment": "1 restored, 1 already filled"
 }
