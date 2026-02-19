@@ -45,10 +45,33 @@ CHAPTERS_OUT_DIR = OUTPUT_DIR / "chapters"
 ASSEMBLED_FILE = OUTPUT_DIR / "restored_kephalaia.md"
 
 # ---------------------------------------------------------------------------
-# Bracket pattern
+# Gap patterns — square brackets [...] and curly braces {...}
 # ---------------------------------------------------------------------------
 
 LACUNA_RE = re.compile(r"\[([^\]]*)\]")
+CURLY_GAP_RE = re.compile(r"\{([^}]*)\}")
+
+
+def find_all_gaps(
+    text: str,
+) -> list[tuple[int, int, str, str, str]]:
+    """Find all gap markers (both [] and {}) sorted by position.
+
+    Returns list of (start, end, full_match, content, gap_type)
+    where gap_type is 'square' or 'curly'.
+    """
+    gaps: list[tuple[int, int, str, str, str]] = []
+    for m in LACUNA_RE.finditer(text):
+        gaps.append((m.start(), m.end(), m.group(0), m.group(1), "square"))
+    for m in CURLY_GAP_RE.finditer(text):
+        gaps.append((m.start(), m.end(), m.group(0), m.group(1), "curly"))
+    gaps.sort(key=lambda x: x[0])
+    return gaps
+
+
+def count_all_gaps(text: str) -> int:
+    """Count total gap markers (both [] and {}) in text."""
+    return len(list(LACUNA_RE.finditer(text))) + len(list(CURLY_GAP_RE.finditer(text)))
 
 
 def _clean_streaming_output(text: str) -> str:
@@ -103,18 +126,47 @@ The spiritual reading tells you WHAT spiritual reality each passage \
 describes. Your fills must express that reality in the text's own \
 natural-plane vocabulary — the language of the Kephalaia itself.
 
+Lacuna notation — the translator marks gap SIZE:
+- {single} or {} — exactly ONE word is missing. Your fill must be \
+  exactly one word.
+- [partial]text or text[partial] — a partial word. Your fill + the \
+  adjacent letters must form a real word.
+- [ ... ] — a small gap (a few words to a short phrase)
+- [ ... ... ] — a medium gap (roughly a clause or sentence)
+- [ ... ... ... ] — a large gap (multiple sentences or lines)
+- (N) inside a gap (e.g. [ ... (3) ... ]) — a manuscript PAGE \
+  BOUNDARY. The gap spans a page break. The number is the page, \
+  not content. Do NOT include page numbers in your fill.
+
+Gap-size restoration policy:
+- {} and [ ... ] — ALWAYS restore. Grammar and context constrain \
+  these tightly.
+- [ ... ... ] (medium) — restore ONLY if the surrounding grammar, \
+  topic, and correspondential logic strongly constrain what belongs \
+  there. If the content could plausibly be multiple different things, \
+  leave the gap intact as [ ... ... ].
+- [ ... ... ... ] (large) — NEVER restore. Leave exactly as-is. \
+  A gap spanning multiple sentences could contain anything; filling \
+  it would be invention, not restoration.
+
 Rules:
-- Output COMPLETE PARAGRAPHS with your additions in [square brackets]
-- Mark each paragraph with ¶N (matching the input numbering)
-- Text OUTSIDE brackets is FIXED — do not change it at all
+- Output COMPLETE PARAGRAPHS — mark each with ¶N:
+- Text OUTSIDE gaps is FIXED — do not change it at all
+- Fill {} gaps with {single_word} — keep curly braces, exactly one word
+- Fill [] gaps with [your phrase] — keep square brackets
+- Respect gap size: {} = one word, [ ... ] = a few words, \
+  [ ... ... ] = a clause
 - For partial words like [te]aching, your fill + the adjacent letters \
   must form a real word
 - For [...] gaps, let the spiritual reading and the correspondential \
   logic constrain what belongs there
-- If a gap truly cannot be restored, keep it as [...]
+- If a gap truly cannot be restored, keep it as [...] or {}
+- Do NOT start a fill with punctuation (comma, period, semicolon). \
+  Punctuation belongs OUTSIDE the brackets, not inside.
 - Write in the register of ancient cosmological teaching — impersonal, \
   structural, expository
 - Do NOT use forward slash (/) in fills
+- Do NOT include manuscript page numbers (N) in your fills
 - Output every paragraph as ¶N: followed by the complete text"""
 
 
@@ -230,21 +282,22 @@ def fix_source_brackets(text: str) -> str:
 def clean_core_text(text: str) -> str:
     """Clean core text before processing.
 
-    1. Strip manuscript page markers (e.g. ⟨p.20⟩)
-    2. Normalize translator artifacts: {} → [...] (single-word lacuna marker)
-    3. Fix unbalanced brackets (common in OCR/extraction)
-    4. Wrap bare ... in [ ... ] so they are counted as lacunae
-    5. Collapse multiple whitespace / newlines
+    1. Strip manuscript page markers (e.g. ⟨p.20⟩) — structural metadata
+    2. Strip braces from uncertain readings: {word} → word
+       (the word is there, braces are translatorial uncertainty)
+    3. Preserve empty {} as single-word lacuna markers
+    4. Fix unbalanced square brackets (common in OCR/extraction)
+    5. Wrap bare ... in [ ... ] so they are counted as lacunae
+    6. Collapse multiple whitespace / newlines
     """
-    # Strip page markers
+    # Strip page markers (structural metadata, not content)
     text = PAGE_MARKER_RE.sub(" ", text)
 
-    # Normalize translator's single-word lacuna marker {} → [...]
-    text = re.sub(r"\{\s*\}", "[...]", text)
     # Strip braces from uncertain readings {word} → word
+    # (but leave empty {} as single-word gap markers)
     text = re.sub(r"\{([^}.]+)\}", r"\1", text)
 
-    # --- Fix unbalanced brackets ---
+    # --- Fix unbalanced square brackets ---
     text = fix_source_brackets(text)
 
     # Protect existing bracketed content with placeholder
@@ -268,26 +321,27 @@ def clean_core_text(text: str) -> str:
 def find_lacunae(
     core_paras: list[dict],
 ) -> tuple[dict[int, list[dict]], int]:
-    """Identify all [bracket] spans in core paragraphs."""
+    """Identify all gap markers ([brackets] and {curly}) in core paragraphs."""
     lacunae_map: dict[int, list[dict]] = {}
     total = 0
     for p in core_paras:
         pnum = p["paragraph_number"]
         text = p["core_text"]
-        matches = list(LACUNA_RE.finditer(text))
-        if matches:
+        gaps = find_all_gaps(text)
+        if gaps:
             lacunae_map[pnum] = []
-            for i, m in enumerate(matches, 1):
+            for i, (start, end, full, content, gap_type) in enumerate(gaps, 1):
                 lacunae_map[pnum].append(
                     {
                         "index": i,
-                        "start": m.start(),
-                        "end": m.end(),
-                        "original": m.group(0),
-                        "content": m.group(1),
+                        "start": start,
+                        "end": end,
+                        "original": full,
+                        "content": content,
+                        "gap_type": gap_type,
                     }
                 )
-            total += len(matches)
+            total += len(gaps)
     return lacunae_map, total
 
 
@@ -572,15 +626,35 @@ You receive:
 3. The SPIRITUAL READING that translates the passage into its \
    spiritual sense
 
+Lacuna notation — the translator marks gap SIZE:
+- {single} or {} — exactly ONE word is missing. Fill with one word.
+- [partial]text or text[partial] — partial word. Fill + adjacent \
+  letters must form a real word.
+- [ ... ] — small gap (a few words)
+- [ ... ... ] — medium gap (a clause)
+- [ ... ... ... ] — large gap (multiple sentences)
+- (N) inside a gap — manuscript PAGE BOUNDARY, not content. \
+  Do NOT include page numbers in fills.
+
+Gap-size restoration policy:
+- {} and [ ... ] — ALWAYS restore.
+- [ ... ... ] (medium) — restore ONLY if surrounding context strongly \
+  constrains the content. If unsure, leave as [ ... ... ].
+- [ ... ... ... ] (large) — NEVER restore. Leave exactly as-is.
+
 Rules:
-- Output COMPLETE PARAGRAPHS with additions ONLY inside [square brackets]
-- Text OUTSIDE brackets must be EXACTLY as given — do not add, remove, \
+- Output COMPLETE PARAGRAPHS with additions ONLY inside gap markers
+- Text OUTSIDE gaps must be EXACTLY as given — do not add, remove, \
   or change a single character
-- For partial words like [te]aching, your fill + adjacent letters \
-  must form a real word
-- If a gap truly cannot be restored, keep it as [...]
+- Fill {} gaps with {single_word} — keep curly braces, exactly one word
+- Fill [] gaps with [your phrase] — keep square brackets
+- Respect gap size: {} = one word, [ ... ] a few words, etc.
+- If a gap truly cannot be restored, keep it as [...] or {}
+- Do NOT start a fill with punctuation (comma, period, semicolon). \
+  Punctuation belongs OUTSIDE the brackets, not inside.
 - Write in the register of ancient cosmological teaching
 - Do NOT use forward slash (/) in fills
+- Do NOT include manuscript page numbers (N) in your fills
 - Output every paragraph as ¶N: followed by the complete text"""
 
 
@@ -745,13 +819,14 @@ def retry_failed_paragraphs(
 
 
 def normalize_skeleton(text: str) -> str:
-    """Strip all [bracket content] and normalize whitespace + punctuation.
+    """Strip all gap content ([brackets] and {curly}) and normalize.
 
     The skeleton is the INVARIANT — it must be identical between
     original and restored text. Any change to the skeleton means the
     model altered text it was not allowed to touch.
 
     Normalization handles trivial model-injected differences:
+    - Strip [bracket content] and {curly content}
     - Curly quotes → straight quotes  (" " ' ' → " ')
     - Strip surrounding quotes from the entire text
     - Normalize ellipsis character (… → ...)
@@ -761,7 +836,9 @@ def normalize_skeleton(text: str) -> str:
     - Normalize punctuation spacing (remove spaces before ,;:)
     - Collapse whitespace
     """
+    # Strip both gap types
     stripped = LACUNA_RE.sub("", text)
+    stripped = CURLY_GAP_RE.sub("", stripped)
 
     # Curly quotes → straight quotes
     stripped = stripped.replace("\u201c", '"')   # "
@@ -823,17 +900,20 @@ def extract_fills_by_diff(
     restored: str,
     pnum: int,
 ) -> list[dict]:
-    """Extract fills from bracket pairs between original and restored.
+    """Extract fills from gap pairs between original and restored.
+
+    Handles both [square bracket] and {curly brace} gaps.
+    Pairs gaps positionally (sorted by offset).
 
     PRECONDITION: skeleton_matches(original, restored) is True.
     """
-    orig_brackets = list(LACUNA_RE.finditer(original))
-    rest_brackets = list(LACUNA_RE.finditer(restored))
+    orig_gaps = find_all_gaps(original)
+    rest_gaps = find_all_gaps(restored)
 
     fills = []
-    for i, (orig_m, rest_m) in enumerate(zip(orig_brackets, rest_brackets), 1):
-        orig_content = orig_m.group(1)
-        rest_content = rest_m.group(1)
+    for i, ((_, _, _, orig_content, orig_type),
+            (_, _, _, rest_content, rest_type)) in enumerate(
+                zip(orig_gaps, rest_gaps), 1):
 
         if orig_content != rest_content:
             fills.append(
@@ -842,6 +922,7 @@ def extract_fills_by_diff(
                     "index": i,
                     "fill": rest_content,
                     "original": orig_content,
+                    "gap_type": orig_type,
                     "notes": "",
                     "confidence": "moderate",
                 }
@@ -862,6 +943,7 @@ def extract_fills_by_diff(
                     "index": i,
                     "fill": rest_content,
                     "original": orig_content,
+                    "gap_type": orig_type,
                     "notes": note,
                     "confidence": confidence,
                 }
@@ -917,11 +999,11 @@ def validate_restoration(
             rejected[pnum] = reason
             continue
 
-        # --- BRACKET COUNT CHECK ---
-        orig_n = len(list(LACUNA_RE.finditer(original)))
-        rest_n = len(list(LACUNA_RE.finditer(restored_text)))
+        # --- GAP COUNT CHECK (both [] and {}) ---
+        orig_n = count_all_gaps(original)
+        rest_n = count_all_gaps(restored_text)
         if orig_n != rest_n:
-            reason = f"bracket count mismatch: {orig_n} vs {rest_n}"
+            reason = f"gap count mismatch: {orig_n} vs {rest_n}"
             all_violations.append(f"¶{pnum}: REJECTED — {reason}")
             rejected[pnum] = reason
             continue
@@ -949,18 +1031,32 @@ def validate_restoration(
 
 
 def fix_stray_brackets(text: str) -> str:
-    """Remove unmatched brackets from reconstruction text."""
-    stack: list[int] = []
+    """Remove unmatched brackets (both [] and {}) from reconstruction text."""
+    # Fix square brackets
+    sq_stack: list[int] = []
     to_remove: set[int] = set()
     for i, ch in enumerate(text):
         if ch == "[":
-            stack.append(i)
+            sq_stack.append(i)
         elif ch == "]":
-            if stack:
-                stack.pop()
+            if sq_stack:
+                sq_stack.pop()
             else:
                 to_remove.add(i)
-    to_remove.update(stack)
+    to_remove.update(sq_stack)
+
+    # Fix curly braces
+    cu_stack: list[int] = []
+    for i, ch in enumerate(text):
+        if ch == "{":
+            cu_stack.append(i)
+        elif ch == "}":
+            if cu_stack:
+                cu_stack.pop()
+            else:
+                to_remove.add(i)
+    to_remove.update(cu_stack)
+
     if not to_remove:
         return text
     return "".join(ch for i, ch in enumerate(text) if i not in to_remove)

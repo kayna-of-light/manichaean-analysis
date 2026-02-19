@@ -977,8 +977,9 @@ text-critical features. Classify each paragraph by temporal layer.
 5. **Strip frame formulas from MIXED.** If frame wraps teaching, extract the \
    teaching only.
 
-6. **Preserve lacunae and restorations.** Keep [...], [restored text]. \
-   Do NOT include manuscript page markers ⟨p.N⟩ or curly-brace artifacts {…} in core_text.
+6. **Preserve lacunae, restorations, and manuscript markers.** Keep [...], \
+   [restored text], manuscript page markers ⟨p.N⟩, and single-word gap \
+   markers {} exactly as they appear in the source.
 
 7. **Substantive cosmological questions are CORE.** "Tell us about the five \
    storehouses" reveals the teaching structure. Purely formulaic "We beseech \
@@ -1215,39 +1216,11 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
 
 
 # ---------------------------------------------------------------------------
-# Post-processing: strip source artifacts from core_text
-# ---------------------------------------------------------------------------
-
-_PAGE_MARKER_RE = re.compile(r'\s*[⟨<]\s*p\.\s*\d+\s*[⟩>]\s*')
-_CURLY_EMPTY_RE = re.compile(r'\{\.{0,3}\}')        # {}, {...}, {…}
-_CURLY_CONTENT_RE = re.compile(r'\{([^}.]+)\}')      # {word} → keep word
-_MULTI_SPACE_RE = re.compile(r'  +')
-
-
-def clean_core_text_artifacts(text: str | None) -> str | None:
-    """Remove page markers ⟨p.N⟩ and curly-brace artifacts {…} from core_text."""
-    if not text:
-        return text
-    text = _PAGE_MARKER_RE.sub(' ', text)
-    text = _CURLY_EMPTY_RE.sub('', text)         # strip empty/ellipsis braces
-    text = _CURLY_CONTENT_RE.sub(r'\1', text)    # {word} → word (keep content)
-    text = _MULTI_SPACE_RE.sub(' ', text).strip()
-    return text or None
-
-
-def clean_extraction_artifacts(ext: ChapterExtraction) -> ChapterExtraction:
-    """Strip source artifacts from all core_text fields in an extraction."""
-    for para in ext.paragraphs:
-        para.core_text = clean_core_text_artifacts(para.core_text)
-    return ext
-
-
-# ---------------------------------------------------------------------------
 # Save / load
 # ---------------------------------------------------------------------------
 
+
 def save_extraction(ext: ChapterExtraction) -> None:
-    ext = clean_extraction_artifacts(ext)
     SEGMENTS_DIR.mkdir(parents=True, exist_ok=True)
     path = SEGMENTS_DIR / f"ch_{ext.chapter_number:03d}.json"
     with open(path, "w", encoding="utf-8") as f:
