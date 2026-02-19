@@ -7,32 +7,32 @@
 
 ---
 
-**Lacunae filled**: 1269
-**Unrestorable**: 227
+**Lacunae filled**: 1266
+**Unrestorable**: 230
 
 ## Chapter 0: Introduction
 
-**¶1** (1) [Concerning the] Light [the mystery] which he has unveiled [and revealed to] his disciples [concerning the] entire [treasure] of wisdom [and concerning the] word in the beginning [ ... ... ] concerning the separation [of Light from Darkness in] the heights [up] to the heights [ ... ] and they spread out [ ... ... unt]il they should make war [against the] kingdom [They desired the L]ight [ ... ... ] in the heights [set apart]rom all the aeons [ ... ... ] the Light, the one that no [Darkness can be found] in it.
+**¶1** (1) [The great] Light [of the Father] which he has unveiled [and revealed to] his disciples [ ... (3) ... ] entire [treasure] of wisdom [ ... ... ] word in the beginning [ ... ... ] concerning the separation [of the Light and the Darkness in] the heights [even] to the heights [ ... ] and they spread out [against the Light unt]il they should make war [against the] kingdom [ ... ... ]ight [ ... ... ] in the heights [ ... f]rom all the aeons [ ... ... ] the Light, the one that no [darkness can be found] in it.
 
-**¶2** [And] the Darkness, the world [and] their root [the one] which poured forth [ ... ... ] the one that the earth has [ ... ... ... ] Darkness [ ... ... ] it is far from the Light [ ... ]
+**¶2** [And] the Darkness, the world [and] their root [below] which poured forth [ ... ... ] the one that the earth has [ ... ... ... ] Darkness [ ... ... ] it is far from the Light [ ... ]
 
-**¶3** (4) the Darkness has made war against the Light, desiring that it would reign over an essence not its own. It spread a quarrel [and] it disturbed [ ... ... ] came up, it [cried out] need.
+**¶3** (4) the Darkness has made war against the Light, desiring that it would reign over an essence not its own. It spread a quarrel [and] it disturbed [the aeons of Light and] came up, it [cried out] need.
 
 **¶4** The power came forth from [the Father of Greatness] is [the Fir]st Man. He [clothed himself with] the armour of Light [against] all [the enmity]. He crucified it in [ ... ... ] the armour [ ... ... ]
 
-**¶5** [Then] he brought the sun [and the moon to] the Light aeons [And after these things] Living Spirit spread out the universe [and] the earth [and he separated] the Light and the Darkness in the beginning [ ... ] and the garments. He gave [them ... ... ] He set in order the [ ... ... ] and the wheel of the course [ ... ... ] in the heights, that they would [ ... ... ] of the Darkness. He stood firm [and was]ixed. He constructed the foundation [and] all of it was set up.
+**¶5** [Then] he brought the sun [and the moon to] the Light aeons [And then the] Living Spirit spread out the universe [and] the earth [and he separated] the Light and the Darkness in the beginning [the bodies] and the garments. He gave [them ... ... ] He set in order the [ ... ... ] and the wheel of the course [ ... ... ] in the heights, that they would [make war against the powers] of the Darkness. He stood firm [and was f]ixed. He constructed the foundation [and] all of it was set up.
 
-**¶6** Underneath [ ... ... ] all of them; and also above he [established the]e earths, they being conjoined. He enclosed the earth in [the]our mountains and three vessels [and] in its seas and its mountains [which he] order upon it. This universe stood firm [as] a bond for the evil powers [and also for the]ght that they joined with the Darkness [in the beginning]
+**¶6** Underneath [ ... ... ] all of them; and also above he [constructed also the thre]e earths, they being conjoined. He enclosed the earth in [the f]our mountains and three vessels [that are] in its seas and its mountains [all was set in] order upon it. This universe stood firm [as] a bond for the evil powers [and for the li]ght that they joined with the Darkness [ ... ]
 
 **¶7** Then the Third Ambassador! [He purified the Light] by his image. He became [redeemer of] all things.
 
-**¶8** (5) [For] they are in all the [ ... ... ... u]niverse, and the fire blazes in it, and it is devoured [and] all [the portion] of the Light also, and he becomes purifier, and goes up to his essence. Conversely, the Darkness which is in [it goes] out, and it is gathered in to a bond [and they] unveil [ ... ... ] and they go in to him and become [ ... ... pe]rfume [and they are]et up [for ever]d they reign for ever, and a single God comes to be [king]er the totality, being above the totality. You find no opponent from this time on against the Father, the King of the Light and the [aeons of the Light]
+**¶8** (5) [And] they are in all the [ ... ... ... u]niverse, and the fire blazes in it, and it is devoured [and] all [the portion] of the Light also, and he becomes purifier, and goes up to his essence. Conversely, the Darkness which is in [it goes] out, and it is gathered in to a bond [and they] unveil [ ... ... ] and they go in to him and become [a sweet pe]rfume [and they are s]et up [in the Light an]d they reign for ever, and a single God comes to be [king ov]er the totality, being above the totality. You find no opponent from this time on against the Father, the King of the Light and the [aeons of Light]
 
-**¶9** [The times] which they occur in, from the beginning [that] they are mixed and joined with one another.
+**¶9** [The aeons] which they occur in, from the beginning [until now] they are mixed and joined with one another.
 
-**¶12** (6) The first great lesson [concerns that] which in the [sphere of the heavens] that walks in it because of the twelve [signs that are] in it, which in the cities and the dwelling places found in the [world] because of the doors that are opened in them [ ... ... ] upon the earth, which in the four corners [ ... ... ... ... ... ... ]
+**¶12** (6) The first great lesson [is that] which in the [ ... ... ] that walks in it because of the twelve [ ... ... ] in it, which in the cities and the dwelling places found in the [firmament] because of the doors that are opened in them [ ... ... ] upon the earth, which in the four corners [ ... ... ... ... ... ... ]
 
-**Assessment:** 37 restored, 16 already filled, 3 editorial reviewed (3 confirmed, 0 corrected), 19 unfilled gaps
+**Assessment:** 34 restored, 16 already filled, 3 editorial reviewed (3 confirmed, 0 corrected), 22 unfilled gaps
 
 ---
 
