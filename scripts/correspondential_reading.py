@@ -92,10 +92,18 @@ def is_actual_gap(content: str) -> bool:
 
     Actual gaps contain only dots, spaces, page markers, or are empty.
     Translator fills contain real word characters.
+
+    HYBRID gaps (e.g. "[ower ...]", "[... which]") contain BOTH readable
+    letters AND ellipsis dots.  The letters are the partially-readable
+    portion; the dots represent still-missing text.  These are gaps too.
     """
     stripped = content.strip()
     if not stripped:
         return True  # empty brackets
+    # Hybrid check: if content has ellipsis dots, it's a gap even if
+    # some letters are also readable (partial reconstruction + lacuna).
+    if re.search(r"\.{2,}", stripped):
+        return True
     # Remove dots, spaces, page markers, slashes
     cleaned = re.sub(r"[\s./()\d]", "", stripped)
     return not cleaned  # True if only whitespace/dots/numbers remain
@@ -212,12 +220,27 @@ Lacuna types by size:
 - [GAP-N: ...] — small gap (a few words to a short phrase)
 - [GAP-N: ... ...] — medium gap (roughly a clause or sentence)
 - [GAP-N: ... ... ...] — large gap (multiple sentences or lines)
+- [GAP-N: REVIEW word(s)] — editorial review. The translator supplied \
+  "word(s)" but the manuscript is damaged; this is the editor's guess \
+  without correspondential awareness. Review the editor's choice through \
+  the correspondential lens. If the editor's word fits the spiritual sense, \
+  confirm it by submitting the same word. If the spiritual reading suggests \
+  a more precise or accurate word, submit the better word instead.
 
 Gap-size restoration policy:
 - {GAP-N} and [GAP-N: ...] — ALWAYS restore.
+- [GAP-N: REVIEW ...] — ALWAYS review. Either confirm or correct.
 - [GAP-N: ... ...] (medium) — restore ONLY if surrounding context \
   strongly constrains what belongs. Otherwise skip it.
 - [GAP-N: ... ... ...] (large) — NEVER restore. Skip entirely.
+
+Manuscript notation within gap content:
+- "/" in gap content marks a line break in the damaged Coptic papyrus. \
+  Each "..." separated by "/" represents roughly one lost manuscript \
+  line. Do NOT include "/" in your fills — bridge the semantic gap \
+  with continuous prose.
+- The gap SIZE already accounts for line breaks: \
+  [...] = small, [... / ...] = medium, [... / ... / ...] = large.
 
 For each gap you can fill, call the restore_lacuna tool with:
 - lacuna_id: the gap ID (e.g., "GAP-1")
@@ -232,7 +255,10 @@ Rules:
 - Do NOT include manuscript page numbers in fills
 - Write in the register of ancient cosmological teaching — impersonal, \
   structural, expository
-- Skip gaps you cannot confidently restore — do not force a fill"""
+- Skip gaps you cannot confidently restore — do not force a fill
+- When you have filled every gap you can confidently restore, STOP. \
+  Do not fill remaining gaps with low confidence just because they \
+  exist. Skipping is the correct action for uncertain gaps."""
 
 
 # ---------------------------------------------------------------------------
@@ -345,8 +371,9 @@ def extract_core_paragraphs(chapter: dict) -> list[dict]:
 
 # Regex for page markers like ⟨p.18⟩ or ⟨p.N⟩
 PAGE_MARKER_RE = re.compile(r"\s*\u27E8p\.\d+\u27E9\s*")
-# Bare ellipsis (2+ dots)
-BARE_DOTS_RE = re.compile(r"\.{2,}")
+# Bare ellipsis: consecutive ... groups (possibly separated by /)
+# Groups them so "... ..." becomes ONE medium gap, not two smalls.
+BARE_DOTS_RE = re.compile(r"\.{3,}(?:\s*(?:/\s*)?\.{3,})*")
 
 
 def fix_source_brackets(text: str) -> str:
@@ -424,8 +451,8 @@ def clean_core_text(text: str) -> str:
         return f"\x00BRACKET{len(placeholders) - 1}\x00"
 
     text = LACUNA_RE.sub(_save_bracket, text)
-    # Now wrap any remaining bare dots
-    text = BARE_DOTS_RE.sub("[ ... ]", text)
+    # Now wrap any remaining bare dots (preserving original content for sizing)
+    text = BARE_DOTS_RE.sub(lambda m: "[ " + m.group(0) + " ]", text)
     # Restore bracketed content
     for i, orig in enumerate(placeholders):
         text = text.replace(f"\x00BRACKET{i}\x00", orig)
@@ -579,13 +606,29 @@ def generate_spiritual_reading(
 # ---------------------------------------------------------------------------
 
 
+def _is_free_editorial(text: str, start: int, end: int) -> bool:
+    """True if bracket at text[start:end] is a free-standing editorial fill.
+
+    A free editorial choice is a bracket whose content has real letters
+    but is NOT glued to adjacent word characters (i.e. not a letter
+    repair like Mi[nd] or [fashio]ned).
+    """
+    char_before = text[start - 1] if start > 0 else " "
+    char_after = text[end] if end < len(text) else " "
+    return not (char_before.isalpha() or char_before == "-") and not (
+        char_after.isalpha() or char_after == "-"
+    )
+
+
 def number_chapter_gaps(
     core_paras: list[dict],
 ) -> tuple[str, list[dict]]:
-    """Number all actual gaps for the restoration prompt.
+    """Number all actual gaps AND free editorial choices for restoration.
 
-    Only real gaps (empty or dots) get GAP-N identifiers.
-    Translator fills (brackets with real words) are left unchanged.
+    Three categories of brackets:
+    1. Actual gaps (dots/empty) → GAP-N for filling
+    2. Free editorial choices (full words, not glued) → GAP-N for review
+    3. Letter repairs (glued to adjacent text) → kept unchanged
 
     Returns (numbered_text_for_prompt, gap_registry).
     Each registry entry is a dict with: gap_id, paragraph, gap_index,
@@ -644,8 +687,40 @@ def number_chapter_gaps(
                         "confidence": None,
                     }
                 )
+            elif (
+                gap_type == "square"
+                and re.search(r"[a-zA-Z]", content)
+                and _is_free_editorial(text, start, end)
+            ):
+                # Free editorial choice — editor supplied a word/phrase
+                # without manuscript support.  Flag for review.
+                gap_counter += 1
+                gap_id = f"GAP-{gap_counter}"
+
+                para_gap_counts.setdefault(pnum, 0)
+                para_gap_counts[pnum] += 1
+
+                parts.append(f"[{gap_id}: REVIEW {content.strip()}]")
+
+                gap_registry.append(
+                    {
+                        "gap_id": gap_id,
+                        "paragraph": pnum,
+                        "gap_index": para_gap_counts[pnum],
+                        "gap_type": "editorial",
+                        "size": "editorial",
+                        "original": content,
+                        "full_match": full_match,
+                        "start": start,
+                        "end": end,
+                        "filled": False,
+                        "fill": None,
+                        "explanation": None,
+                        "confidence": None,
+                    }
+                )
             else:
-                # Translator fill — keep unchanged
+                # Letter repair — keep unchanged
                 parts.append(full_match)
 
             prev_end = end
@@ -909,6 +984,7 @@ def restore_chapter_with_tools(
 
     # Count restorable vs large (will be skipped)
     n_large = sum(1 for g in gap_registry if g["size"] == "large")
+    n_editorial = sum(1 for g in gap_registry if g["size"] == "editorial")
     n_restorable = total_gaps - n_large
 
     # Build first user message
@@ -920,6 +996,11 @@ def restore_chapter_with_tools(
         msg_lines.append(
             f"({n_large} are large gaps — skip these per policy, "
             f"do not call restore_lacuna for them.)"
+        )
+    if n_editorial:
+        msg_lines.append(
+            f"({n_editorial} are editorial reviews [GAP-N: REVIEW ...] — "
+            f"confirm or correct the editor's word choice.)"
         )
     msg_lines.append(f"Restorable gaps: {n_restorable}.")
     msg_lines.append("")
@@ -1059,7 +1140,8 @@ def restore_chapter_with_tools(
                     f"({remaining_ids[0]}...{remaining_ids[-1]})"
                 )
             progress_parts.append(
-                "Continue filling any remaining gaps you can restore."
+                "If you can confidently fill more gaps, continue. "
+                "Otherwise you are done — do not force low-confidence fills."
             )
         else:
             progress_parts.append("All restorable gaps processed. Done.")
@@ -1071,6 +1153,15 @@ def restore_chapter_with_tools(
 
         # Check if done
         if n_remaining == 0:
+            break
+        if n_accepted_this_turn == 0:
+            # Model made tool calls but none were new accepted fills
+            # (all rejected or duplicates) — no progress, stop.
+            if debug:
+                print(
+                    f"  Ch.{ch_num}: no new fills this turn, "
+                    f"{n_remaining} gaps deliberately skipped"
+                )
             break
         if stop_reason == "end_turn":
             if debug:
@@ -1192,7 +1283,15 @@ def save_result(
 
         fill_content = gap["fill"] if gap["filled"] else gap["original"]
         notes = ""
-        if not orig_is_gap:
+        if gap["gap_type"] == "editorial":
+            if gap["filled"]:
+                if gap["fill"].strip() == gap["original"].strip():
+                    notes = "editorial confirmed"
+                else:
+                    notes = "editorial corrected"
+            else:
+                notes = "editorial unreviewed"
+        elif not orig_is_gap:
             notes = "already filled by translator"
         elif not gap["filled"]:
             notes = "unfilled gap"
@@ -1228,10 +1327,26 @@ def save_result(
         for f in all_fills
         if f["notes"] == "large gap — skipped per policy"
     )
+    n_editorial_confirmed = sum(
+        1 for f in all_fills if f["notes"] == "editorial confirmed"
+    )
+    n_editorial_corrected = sum(
+        1 for f in all_fills if f["notes"] == "editorial corrected"
+    )
+    n_editorial_unreviewed = sum(
+        1 for f in all_fills if f["notes"] == "editorial unreviewed"
+    )
 
     parts = [f"{n_restored} restored"]
     if n_already:
         parts.append(f"{n_already} already filled")
+    if n_editorial_confirmed or n_editorial_corrected:
+        parts.append(
+            f"{n_editorial_confirmed + n_editorial_corrected} editorial reviewed "
+            f"({n_editorial_confirmed} confirmed, {n_editorial_corrected} corrected)"
+        )
+    if n_editorial_unreviewed:
+        parts.append(f"{n_editorial_unreviewed} editorial unreviewed")
     if n_unfilled:
         parts.append(f"{n_unfilled} unfilled gaps")
     if n_large_skipped:
