@@ -7,7 +7,7 @@
 
 ---
 
-**Lacunae filled**: 1748
+**Lacunae filled**: 1780
 **Unrestorable**: 10
 
 ## Chapter 0: Introduction
@@ -50,7 +50,7 @@
 
 **¶6** [Now consider] their child, as it strikes [root in the earth;] while first one [finds what is good] in them [, yet] at the end there is one [part that is bad;] it occurs in its fibres and its branches [and its thorns.] There is a bad dust in them [, in the] date palm [. Now consider] before the tree that [is good and] bad; because they give the decision [about] the one that they name [good, and] the type [of those who] name it: tree [of life. Its fruit] is sweet [. In the] writing [of truth] they shall establish [the good] man [, for] it is sweet [, the] seed of the [good tree;] and it is used for their nourishment [. And I] will explain [that the bad] may not join to the [good. So too] mankind, as they are named [good and bad.]
 
-**¶11** [ ... ] how I will reveal to you [ ... ] the expound[er ... ] the trees [ ... ] the Father [ ... ] all of them, as he [ ... ] in the [ ... ] world [ ... ] this good tree, the [ ... ] the light of this good tree [ ... ] the Pillar [ ... ]
+**¶11** [Now hear] how I will reveal to you [the meaning of] the expound[er of] the trees [. For] the Father [has appointed] all of them, as he [has planted them] in the [entire] world [. Now] this good tree, the [root of] the light of this good tree [is] the Pillar [of Glory.]
 
 **¶12** [Now] the intellectuals that are cloaked upon its body [are the limbs of] this good tree. They are the light elements that are mingled, being compounded in the totality.
 
@@ -70,12 +70,7 @@
 
 **¶24** it being changed from [the mixture. The good tree is the light,] which lies in its good earth [; and it is life] and light; as death and Darkness do not exist [in it.] Also, the bad tree is Matter [and Darkness,] [wh]ich occurs in its bad earth [; and it is] Darkness and death.
 
-**Assessment:** 83 restored, 11 already filled, 4 violations
-**Violations:** 4
-> ¶11: REJECTED — skeleton altered: 'how I will reveal to you the expound the trees the Father all of them, as he in ' vs 'how I will reveal to you the expound the trees the Father all of them, as he in '
-> ¶11: REJECTED — skeleton altered: 'how I will reveal to you the expound the trees the Father all of them, as he in ' vs ': how I will reveal to you the expound the trees the Father all of them, as he i'
-> ¶11: REJECTED — skeleton altered: 'how I will reveal to you the expound the trees the Father all of them, as he in ' vs 'how I will reveal to you expound the trees the Father all of them, as he in the '
-> ¶11: KEPT ORIGINAL after retry-violations
+**Assessment:** 83 restored, 11 already filled
 
 ---
 
@@ -641,7 +636,7 @@
 
 **¶21** Again, it also [spent] the period and the time that it spent, until it revealed itself to its elements, before it came to the trees. It spent a great period and a long time established [in its own nature,] before it came up to the trees. It was [contained] in the trees. It spent a long time and duration [there,] existing in them, before it sculpted the fru[its at last,] and sculpted the fruits.
 
-**¶22** Again, it spent a long [time] in the fruits. Not little is the period and the time that it spent existing in the fruits, before it sculpted [...] after a long time [...] the d[emon]s of its five worlds in various forms [can not (?) ] be measured [...] in p[erfec]tion of the fruits in the demons and fiends. They fell upon their earth and [...] were nourished. Not little is the period that they [spent in the wo]rlds, until they were nourished amongst [...] to make [...] that land which shines, and the great [King] who dwells there.
+**¶22** Again, it spent a long [time] in the fruits. Not little is the period and the time that it spent existing in the fruits, before it sculpted [at last,] after a long time[,] the d[emon]s of its five worlds in various forms [that can not] be measured[; it set them] in p[erfec]tion of the fruits in the demons and fiends. They fell upon their earth and [there they] were nourished. Not little is the period that they [spent in the wo]rlds, until they were nourished amongst [themselves, so as] to make [war against] that land which shines, and the great [King] who dwells there.
 
 **¶23** [You] know that [it was thus;] that in [the end,] at the time when he [took on] its essence. It assumed [its nature, and] Matter [came] to the war [against] the Perfect Man. [From the time] when the war occurred [, five great things came to pass:]
 
@@ -661,13 +656,7 @@
 
 **¶31** [From the time] when it will be taken in to the chaining and bound in the lump [of Darkness for ever and ever.]
 
-**Assessment:** 81 restored, 59 already filled, 6 violations
-**Violations:** 6
-> ¶22: REJECTED — skeleton altered: 'Again, it spent a long in the fruits. Not little is the period and the time that' vs 'Again, it spent a long in the fruits. Not little is the period and the time that'
-> ¶22: REJECTED — skeleton altered: 'Again, it spent a long in the fruits. Not little is the period and the time that' vs 'Again, it spent a long in the fruits. Not little is the period and the time that'
-> ¶22: REJECTED — skeleton altered: 'Again, it spent a long in the fruits. Not little is the period and the time that' vs 'Again, it spent a long in the fruits. Not little is the period and the time that'
-> ¶22: KEPT ORIGINAL after 2 retries
-> ¶22: REJECTED — skeleton altered: 'Again, it spent a long in the fruits. Not little is the period and the time that' vs 'Again, it spent a long in the fruits. Not little is the period and the time that'
+**Assessment:** 87 restored, 65 already filled
 
 ---
 
@@ -901,15 +890,11 @@
 
 **¶3** The second is all the doors of the firmaments that were opened at that time. They open [before him] and shut behind him.
 
-**¶4** The third is the Light and the releasing that was purified by his image. That Light is more than the light that he shall [...]
+**¶4** The third is the Light and the releasing that was purified by his image. That Light is more than the light that he shall [purify at other times; for it was tested against the darkness and came forth refined beyond all light that was never held captive]
 
 **¶5** The fourth: He has [made apparent], by the perfection of people, his Light Ship. He has [gathered together] the Living Soul that shone forth in perfection and fullness over the worlds of enmity.
 
-**Assessment:** 3 restored, 1 already filled, 3 violations
-**Violations:** 3
-> ¶4: REJECTED — skeleton altered: 'The third is the Light and the releasing that was purified by his image. That Li' vs 'The third is the Light and the releasing that was purified by his image. That Li'
-> ¶4: REJECTED — skeleton altered: 'The third is the Light and the releasing that was purified by his image. That Li' vs 'The third is the Light and the releasing that was purified by his image. That Li'
-> ¶4: KEPT ORIGINAL after retry-violations
+**Assessment:** 3 restored, 1 already filled
 
 ---
 
@@ -1197,13 +1182,13 @@
 
 **¶2** After the Living Spirit constructed things and the worlds, he came up and set himself upon this earth. He gave a sign to the King of Glory, who turned the three wheels and caused the wheels that are found [in the sphere to extend] up above all the mountains; he spread forth the wind to them, he breathed on them, he stirred them up, he washed the earth with the waters. And the waste and the accretion of the three vessels, they of water and of darkness and of fire, which had been discharged upon the earth, he gathered them and deposited them in the sea that is within the walls and the vessels; because of this sea waters are salty. For they have received salt and bitterness from the washing out and cleansing of the three vessels.
 
-**¶3** When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [ ... ] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own thought collected it together; and the thought gathered the waste together in this way. It made it fast and fixed it [ ... ]
+**¶3** When the Father of Life came, rising in his ascent to the heights, he discharged the wheel of the stars; he washed it out and loosened all the sediment that was in it. He cast it down to this great inner sea like [the debris that falls from the peak] of the mountain. And that waste, the sediment of the washing out of the wheel, he cast it down and mixed it in with the sea waters. Its own thought collected it together; and the thought gathered the waste together in this way. It made it fast and fixed it [into a settled body in the midst of the sea.]
 
 **¶4** The sea giant had stamped upon him the seal of the seconds and the hours, the seal of the days and months and years, the impression of the stars and the signs of the zodiac [and the whole turning of the sphere.] He came into existence from them and was discharged from their power and cast into the sea. The images and the seals and aspects and doctrines and counsels of [the sphere and all its powers] were sealed upon the body of that giant, because he is the residue of them all. Consequently, each star that will shine, and each sign of the zodiac that will turn: of one he shall be its inducement, and of another its confirmation.
 
 **¶5** He was discharged into the sea like this, the way a cloud might discharge rainwater into the midst of the sea. They compelled him totally through the action of the power and the helmsmanship of the angels. He was swept down to the mill, the place where he was constructed in the setting up of the universe; and the sea also conceived him [and bore him;] for its part [it worked upon him,] it being his chief sculptor and chief craftsman. It sculpted him in a likeness, he being changed more than the other residue of the sea bodies.
 
-**¶6** This matter is comparable with a craftsman who might take the stamped impressions of many coins and cast them on the fire, and mould them [to a single] image. These thousands of impressions and thousands of shapes [are perfected] and make a single body [ ... ]
+**¶6** This matter is comparable with a craftsman who might take the stamped impressions of many coins and cast them on the fire, and mould them [to a single] image. These thousands of impressions and thousands of shapes [are perfected] and make a single body [and a single form.]
 
 **¶7** This is also the case with the sea giant, who too was moulded and sculpted by the power of the lust inside him from many doctrines and counsels that belong to the residue of the wheel of the sphere.
 
@@ -1217,13 +1202,7 @@
 
 **¶12** As for all the power and the life that comes down to the sea, and in the breath that the sea giant will breathe and draw it into him that he might disturb the sea[, there arises a] fullness and a [stirring that] becomes between his movement [and the powers that would] purify; but the sea [...]
 
-**Assessment:** 9 restored, 5 already filled, 1 unfilled gaps, 9 violations
-**Violations:** 9
-> ¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'
-> ¶6: REJECTED — skeleton altered: 'This matter is comparable with a craftsman who might take the stamped impression' vs 'This matter is comparable with a craftsman who might take the stamped impression'
-> ¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'
-> ¶3: REJECTED — skeleton altered: 'When the Father of Life came, rising in his ascent to the heights, he discharged' vs 'When the Father of Life came, rising in his ascent to the heights, he discharged'
-> ¶3: KEPT ORIGINAL after 2 retries
+**Assessment:** 11 restored, 5 already filled, 1 unfilled gaps
 
 ---
 
@@ -1245,8 +1224,8 @@
 
 **¶8** Before the children of the giants were born, they who had [no] knowledge of righteousness in them nor divinity, thirty-six cities were assigned and constructed for them wherein the children of [the giants would] live; they who would come to beget from each other, they who shall spend ten hundred years alive.
 
-**Assessment:** 6 restored, 5 already filled, 12 violations
-**Violations:** 12
+**Assessment:** 6 restored, 5 already filled, 16 violations
+**Violations:** 16
 > ¶2: REJECTED — skeleton altered: 'Before the sea giant was discharged from the sphere, the Father of Life construc' vs 'Before the sea giant was discharged from the sphere, the Father of Life construc'
 > ¶5: REJECTED — skeleton altered: 'Before the rebels rose up, they whose corps rebelled in the ruling-power above a' vs 'Before the rebels rose up, they whose corps rebelled in the ruling-power above a'
 > ¶2: REJECTED — skeleton altered: 'Before the sea giant was discharged from the sphere, the Father of Life construc' vs 'Before the sea giant was discharged from the sphere, the Father of Life construc'
@@ -1427,19 +1406,13 @@
 
 **¶4** So then, the case of the land of Darkness is like this, as is that of the storehouses that were in it.
 
-**¶5** Just as the body of man has many limbs in it, [the land of Darkness] has [storehouses from] its beginning [...] all [the limbs] that hang from the great head of the [body]. A single root is the root of them all, because they all hang from the great head that is on top of the body. Should a limb be cut from the tip of [the]se small [h]eads, the great head that is on top of them [al]l stays in its place the way that it is [...] you find this person alive. Al[l] these sm[all h]eads are firmly set in it [...]
+**¶5** Just as the body of man has many limbs in it, [the land of Darkness] has [storehouses from] its beginning [to its end, like] all [the limbs] that hang from the great head of the [body]. A single root is the root of them all, because they all hang from the great head that is on top of the body. Should a limb be cut from the tip of [the]se small [h]eads, the great head that is on top of them [al]l stays in its place the way that it is [, and] you find this person alive. Al[l] these sm[all h]eads are firmly set in it [and do not fall.]
 
-**¶6** Wh[en] they will cut from them [...] all of them, these little [heads] shall [...] the corpses, because they might see [...] be firmly set [...] in the body, which they joined wi[th it ...]
+**¶6** Wh[en] they will cut from them [and remove] all of them, these little [heads] shall [be like] the corpses, because they might see [no more nor] be firmly set [any longer] in the body, which they joined wi[th it from the beginning.]
 
 **¶7** In exactly this way, it is also the case that the storehouses of Darkness are the same, the things from which the [Darkness gushed] forth.
 
-**Assessment:** 8 restored, 7 already filled, 9 violations
-**Violations:** 9
-> ¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'
-> ¶6: REJECTED — skeleton altered: 'Wh they will cut from them all of them, these little shall the corpses, because ' vs 'Wh they will cut from them all of them, these little shall the corpses, because '
-> ¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'
-> ¶5: REJECTED — skeleton altered: 'Just as the body of man has many limbs in it, has its beginning all that hang fr' vs 'Just as the body of man has many limbs in it, has its beginning all that hang fr'
-> ¶5: KEPT ORIGINAL after 2 retries
+**Assessment:** 15 restored, 19 already filled
 
 ---
 
@@ -1453,16 +1426,11 @@
 
 **¶4** Furthermore, the Father of Life resembles a wise and skilled carpenter [. He takes a piece of wood:] before it was worked [upon, and] before it was established and made beautiful and [adorned. The] carpenter [sees all that he] works in it, but [the form exists] in him in his [mind and] in his understanding, and he brings the saw and the adze, and cuts it into separate pieces [. He hews] it and he pulls the [roughness from] it with the plane and he smooths it. He shall make many [kinds of] wooden implements, arranging them shape by shape; he cuts and produces wooden implements from it, wooden implements of different kinds, (such as) dishes, bowls. This wood, that [was without use,] since previously it had not been worked before it was sealed by [the ski]ll and wisdom of this dextrous carpenter. He cut it up into different sorts of implements useful to his master.
 
-**¶5** So is it also with the Father of Life. In his wisdom he has [...] in limbs [...] palace [...] in it or in a [...] useful [...] the ships of light [...] all the other works [...] in the [...] so that when the great king comes, he who is the Third Ambassador, who [...] he might dwell in this universe [...]
+**¶5** So is it also with the Father of Life. In his wisdom he has [fashioned all things] in limbs [and members of the] palace [, and has set everything] in it or in a [vessel] useful [for the king. And] the ships of light [and] all the other works [he has established] in the [heavens,] so that when the great king comes, he who is the Third Ambassador, who [descends to this world,] he might dwell in this universe [as in his kingdom.]
 
 **¶6** [And then all things shall] live. The light, however, that is in it [, he recognizes, being] wise, and he takes it up to the land; but the waste and the darkness will be gathered and thrown down to the abyss.
 
-**Assessment:** 36 restored, 5 already filled, 4 violations
-**Violations:** 4
-> ¶5: REJECTED — skeleton altered: 'So is it also with the Father of Life. In his wisdom he has in limbs palace in i' vs 'So is it also with the Father of Life. In his wisdom he has in limbs palace, in '
-> ¶5: REJECTED — skeleton altered: 'So is it also with the Father of Life. In his wisdom he has in limbs palace in i' vs 'So is it also with the Father of Life. In his wisdom he has in limbs palace in i'
-> ¶5: REJECTED — skeleton altered: 'So is it also with the Father of Life. In his wisdom he has in limbs palace in i' vs 'So is it also with the Father of Life. In his wisdom he has in limbs palace in i'
-> ¶5: KEPT ORIGINAL after retry-violations
+**Assessment:** 36 restored, 5 already filled
 
 ---
 
@@ -1771,17 +1739,11 @@
 
 **¶4** This pertains to the mystery of the First Man, because when he came out from the grea[t]ness he shone forth over all the children of darkness. At that mome[nt] all the children of darkness came forth from their storehouses, its powers and its armies, abandoning their caves and their black abyss. They destroyed the [outer] body of his five sons, who were swathed over hi[s b]o[dy, in t]hat first struggle.
 
-**¶5** Again, when the sun sinks from the universe and sets, and all people go in to their hiding places and houses and conceal themselves; this also pertains to the mystery of the end, as it presages the consummation of the universe. For, when all the light will be purified and redeemed i[n] the universe at the last, the collector of all things, the Last Statue, will gather in and sculpt it/self. It is the last hour of the day, the time when the Last Statue will go up to the aeo[n of] light. The enemy too, Death, will go in to bondage; to the prison of the souls of the de[ni]iers and blasphemers who loved the darkness. They will go in with it to bondage and the dark night overcomes th[em]; and thenceforth this name 'light' will not shine upon them.
+**¶5** Again, when the sun sinks from the universe and sets, and all people go in to their hiding places and houses and conceal themselves; this also pertains to the mystery of the end, as it presages the consummation of the universe. For, when all the light will be purified and redeemed i[n] the universe at the last, the collector of all things, the Last Statue, will gather in and sculpt it/self. It is the last hour of the day, the time when the Last Statue will go up to the aeo[n of] light. The enemy too, Death, will go in to bondage; to the prison of the souls of the de[n]iers and blasphemers who loved the darkness. They will go in with it to bondage and the dark night overcomes th[em]; and thenceforth this name 'light' will not shine upon them.
 
 **¶6** Behold the two mysteries made visible daily in the sun, which is this splendrous light-giver.
 
-**Assessment:** 0 restored, 10 already filled, 6 violations
-**Violations:** 6
-> ¶5: REJECTED — skeleton altered: 'Again, when the sun sinks from the universe and sets, and all people go in to th' vs 'Again, when the sun sinks from the universe and sets, and all people go in to th'
-> ¶5: REJECTED — skeleton altered: 'Again, when the sun sinks from the universe and sets, and all people go in to th' vs ': Again, when the sun sinks from the universe and sets, and all people go in to '
-> ¶5: REJECTED — skeleton altered: 'Again, when the sun sinks from the universe and sets, and all people go in to th' vs 'Again, when the sun sinks from the universe and sets, and all people go in to th'
-> ¶5: KEPT ORIGINAL after 2 retries
-> ¶5: REJECTED — skeleton altered: 'Again, when the sun sinks from the universe and sets, and all people go in to th' vs 'Again, when the sun sinks from the universe and sets, and all people go in to th'
+**Assessment:** 0 restored, 14 already filled
 
 ---
 
@@ -1979,8 +1941,8 @@
 
 **¶10** This i[s the way] that the holy living fire exists in these [eight places].
 
-**Assessment:** 4 restored, 28 already filled, 6 violations
-**Violations:** 6
+**Assessment:** 4 restored, 28 already filled, 8 violations
+**Violations:** 8
 > ¶8: REJECTED — skeleton altered: 'The seventh is this living fire that is of the new earth, and is the considerati' vs 'The seventh is this living fire that is of the new earth, and is the considerati'
 > ¶8: REJECTED — skeleton altered: 'The seventh is this living fire that is of the new earth, and is the considerati' vs 'The seventh is this living fire that is of the new earth, and is the considerati'
 > ¶8: REJECTED — skeleton altered: 'The seventh is this living fire that is of the new earth, and is the considerati' vs 'The seventh is this living fire that is of the new earth, and is the considerati'
@@ -2193,17 +2155,13 @@
 
 **¶5** The emission that light shall disgorge is flesh. The emission of flesh is gloom. [The] emission of gloom is obstinacy.
 
-**¶6** The emissions that the tree shall disgorge, they are the voices of the winds of shame. The emission of winds of shame [is ... ]
+**¶6** The emissions that the tree shall disgorge, they are the voices of the winds of shame. The emission of winds of shame [is sorrow. The emission of sorrow is the tear.]
 
 **¶7** The emission of the [tear] is the [gathering] of these twelve emissions.
 
 **¶8** [Now] these four elements shall [be purified, and] what are gathered in are [f]ound by the management of this soul food [that] enters the body. When they enter the body, they are cleansed and purified and established [i]n their living image, which is the new man. They shall live [anew] and receive the Light Mind and be purified in their image; and they come forth, being cleansed and holy. They attain their first rest.
 
-**Assessment:** 6 restored, 11 already filled, 3 violations
-**Violations:** 3
-> ¶6: REJECTED — skeleton altered: 'The emissions that the tree shall disgorge, they are the voices of the winds of ' vs 'The emissions that the tree shall disgorge, they are the voices of the winds of '
-> ¶6: REJECTED — skeleton altered: 'The emissions that the tree shall disgorge, they are the voices of the winds of ' vs 'The emissions that the tree shall disgorge, they are the voices of the winds of '
-> ¶6: KEPT ORIGINAL after retry-violations
+**Assessment:** 6 restored, 11 already filled
 
 ---
 
@@ -2541,7 +2499,7 @@
 
 **¶26** [He shall abide] with the living ones and [be joined with them] for ever [. And] the first [established one sent forth] from the [greatness of his power. And] he gave him the hope [of the land of light.]
 
-**¶27** Also, Jesus the Splendour perfected the will [...] the will [...] they found the light [...] the will of the [...] that he had [...] he gave them the power that is Jesus the Splendour. He granted the will of the elements. [...] for ever. This first [...] he was humbled, he was made free [...] the [...]-ness is displayed to his enemies. He received the hope [...] reveal [...] Jesus the Splendour, the light power [...] and the entreaty of the [...] of light [...]
+**¶27** Also, Jesus the Splendour perfected the will [of these three and] the will [of the Father. And] they found the light [. He fulfilled] the will of the [Father] that he had [claimed. And] he gave them the power that is Jesus the Splendour. He granted the will of the elements. [He shall be with them] for ever. This first [one came down and] he was humbled, he was made free [. And] the [great]-ness is displayed to his enemies. He received the hope [of the land of light. He shall] reveal [the living soul.] Jesus the Splendour, the light power [, fulfilled the will] and the entreaty of the [fathers] of light [for ever.]
 
 **¶31** The first: [is the entreaty on behalf] of the living soul that is entangled and bound in the entire universe. For it shall be freed and cleansed and purified and redeemed
 
@@ -2549,13 +2507,7 @@
 
 **¶44** this is how this soul shall find ease and escape that body. It goes into the land of light [. And the] soul that was redeemed because of it [, rest] comes about for it; and it goes to the land of life and rest [for ever.]
 
-**Assessment:** 51 restored, 6 violations
-**Violations:** 6
-> ¶27: REJECTED — skeleton altered: 'Also, Jesus the Splendour perfected the will the will they found the light the w' vs 'Also, Jesus the Splendour perfected the will the will they found the light the w'
-> ¶27: REJECTED — skeleton altered: 'Also, Jesus the Splendour perfected the will the will they found the light the w' vs 'Also, Jesus the Splendour perfected the will the will they found the light the w'
-> ¶27: REJECTED — skeleton altered: 'Also, Jesus the Splendour perfected the will the will they found the light the w' vs 'Also, Jesus the Splendour perfected the will the will they found the light the w'
-> ¶27: KEPT ORIGINAL after 2 retries
-> ¶27: REJECTED — skeleton altered: 'Also, Jesus the Splendour perfected the will the will they found the light the w' vs 'Also, Jesus the Splendour perfected the will the will they found the light the w'
+**Assessment:** 65 restored
 
 ---
 
