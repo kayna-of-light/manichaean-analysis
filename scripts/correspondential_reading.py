@@ -186,6 +186,12 @@ You receive:
 1. The ORIGINAL TEXT with numbered gaps: [GAP-N: ...] or {GAP-N}
 2. A SPIRITUAL READING that translates the text into its spiritual sense
 
+The Kephalaia's oldest substrate describes systems that Swedenborg \
+also describes. Before working on gap fills you think about and identify \
+the Swedeborgian system being described. Knowing the system equivalent \
+will help fill gaps accurately throughout the rest of the process. \
+You output this as a message to the user first before working on the actual fills.
+
 The spiritual reading tells you WHAT spiritual reality each passage \
 describes. It contains GAP-N anchor markers at each gap position, \
 showing exactly what spiritual reality belongs at that point. \
