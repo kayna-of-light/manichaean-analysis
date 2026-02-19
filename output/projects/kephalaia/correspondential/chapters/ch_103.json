@@ -1,0 +1,60 @@
+{
+  "chapter_number": 103,
+  "chapter_title": "Concerning the Five Wonders that the Light Mind sh",
+  "total_lacunae": 2,
+  "lacunae_map": {
+    "7": [
+      {
+        "index": 1,
+        "start": 53,
+        "end": 66,
+        "original": "[whom he has]",
+        "content": "whom he has",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 108,
+        "end": 113,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "## Spiritual Translation — ¶7\n\nDivine Wisdom flowing from the Lord implants these five essential qualities of spiritual life into the regenerated will and understanding — [GAP-1: REVIEW] the interior person whom it has [GAP-1] freed from falsities, purged of evils, sustained through continual Divine influx, and received into conjunction with the Divine [GAP-2: ...].\n\n---\n\n### Translator's Notes\n\n- **\"The Light Mind\"** corresponds to Divine Wisdom (or the Lord as Divine Truth) actively operating within the human understanding — the intelligible light that opens the internal sight.\n- **\"Five signs\"** corresponds to the *fullness* of distinguishing spiritual qualities bestowed upon the regenerate person. Five in correspondence signifies what is sufficient and complete on the natural-spiritual boundary; \"signs\" are the confirming marks by which a genuine spiritual state is recognized.\n- **\"The new man\"** corresponds precisely to the regenerated human — the new will and new understanding formed by the Lord through successive states of temptation and reformation.\n- **\"Purified, cleansed\"** — a deliberate pairing: *purified* corresponds to the removal of falsities from the understanding; *cleansed* to the removal of evils from the will. Together they describe the twofold work of regeneration.\n- **\"Supported\"** corresponds to being sustained by perpetual Divine influx — the Lord holding the regenerating person in spiritual life.\n- **\"Chosen\"** corresponds to reception into spiritual conjunction — not arbitrary election, but the state of one who has been made receptive to the Divine through the prior processes.\n\n**GAP-1** falls at the point where the text specifies the relation between Divine Wisdom and the interior person it acts upon — the spiritual sense requires an expression of *whom Divine Wisdom has received into its operation* or *into whom it has flowed*.\n\n**GAP-2** follows the completed sequence of regenerative acts and likely continued with the purpose or result of this implantation — what these qualities *effect* in the now-conjoined person.",
+  "reconstructions": [
+    {
+      "paragraph": 7,
+      "reconstructed_text": "The Light Mind puts these five signs in the new man, [whom he has] purified, cleansed, supported and chosen [for himself]"
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 7,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "whom he has",
+      "original": "whom he has",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The editor's guess correctly expresses the relative clause linking the Light Mind as agent to the new man as the one upon whom the sequence of regenerative acts (purifying, cleansing, supporting, choosing) is performed.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 7,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "for himself",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading indicates this gap expresses the result of the regenerative sequence — reception into conjunction with the Divine — which in Kephalaia vocabulary is rendered as the Light Mind choosing the new man \"for himself,\" denoting spiritual union with the Divine agent.",
+      "confidence": "moderate",
+      "notes": ""
+    }
+  ],
+  "violations": [],
+  "assessment": "1 restored, 1 editorial reviewed (1 confirmed, 0 corrected)"
+}

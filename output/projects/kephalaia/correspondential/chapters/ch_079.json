@@ -1,0 +1,84 @@
+{
+  "chapter_number": 79,
+  "chapter_title": "Concerning the Fasting of the Saints",
+  "total_lacunae": 3,
+  "lacunae_map": {
+    "5": [
+      {
+        "index": 1,
+        "start": 15,
+        "end": 29,
+        "original": "[the children]",
+        "content": "the children",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 79,
+        "end": 84,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      },
+      {
+        "index": 3,
+        "start": 132,
+        "end": 150,
+        "original": "[there is nothing]",
+        "content": "there is nothing",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation\n\n**¶4:**\nThe interior good that flows into the regenerating person through the orderly reception of spiritual nourishment — that is, the appropriation of good and truth from the Divine — in each successive state of illumination: this good is progressively sanctified, cleansed from evils of the will, purified from falsities of the understanding, and washed by means of truths from the falsification that falsity from evil had intermingled with it. For every good that descends into the natural mind passes through regions where falsity has adulterated it, and it must be separated and restored to its genuine form through successive states of reformation.\n\n**¶5:**\nThe arcanum of [GAP-1: — those regenerate intellections born from] wisdom, in whom there exists neither spiritual corruption nor any capacity to [GAP-2: — falsify or profane] the good and truth they receive, nor to injure it. On the contrary, they are consecrated to the Divine, and [GAP-3: — there is no falsity or evil remaining] within them that introduces profanation, for they dwell in the inmost heavenly state — which is peace: the blessedness that flows from unobstructed conjunction with the Divine, where good and truth are perfectly united and no opposition from evil or falsity can enter.\n\n---\n\n*A note on the structure:* The progression in ¶4 — *holy, cleansed, purified, washed* — corresponds to four discrete degrees of spiritual purification: consecration (separation from the profane), removal of evil affections, removal of false persuasions, and finally regeneration through living truths. The \"food\" throughout is not bodily but the spiritual sustenance by which the interior person lives — good conjoined with truth, received from the Lord through influx.",
+  "reconstructions": [
+    {
+      "paragraph": 4,
+      "reconstructed_text": "This soul that comes into him in the administration of his food, day by day; it shall be made holy, cleansed, purified, and washed from the adulteration of the Darkness that is mixed in with it."
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "the mystery of [the children] of Light in whom there is neither corruption nor [do they defile] the food, nor wound it. Rather, they are holy, [there is nothing] in them that defiles, as they live in peace."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 5,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "the children",
+      "original": "the children",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "\"The children of Light\" is standard Manichaean Kephalaia terminology for the divine beings/regenerate intellections born from the Light (wisdom), and the spiritual reading confirms this maps to \"regenerate intellections born from wisdom\" — the editor's choice is correct.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 5,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "do they defile",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading indicates \"falsify or profane\" at this position; in the Kephalaia's natural register \"defile\" is the standard term for profanation/corruption of what is holy, and the verbal construction parallels \"nor wound it\" that follows.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 5,
+      "index": 3,
+      "gap_id": "GAP-3",
+      "fill": "there is nothing",
+      "original": "there is nothing",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The spiritual reading says \"there is no falsity or evil remaining,\" and the editor's \"there is nothing\" is the natural Kephalaia phrasing that, combined with \"in them that defiles,\" perfectly captures this meaning — confirmed.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    }
+  ],
+  "violations": [],
+  "assessment": "1 restored, 2 editorial reviewed (2 confirmed, 0 corrected)"
+}

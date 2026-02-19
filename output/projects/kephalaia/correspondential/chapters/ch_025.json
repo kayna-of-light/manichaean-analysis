@@ -1,0 +1,130 @@
+{
+  "chapter_number": 25,
+  "chapter_title": "[Concerning the Advent of Five Fathers from the Fi",
+  "total_lacunae": 7,
+  "lacunae_map": {
+    "2": [
+      {
+        "index": 1,
+        "start": 4,
+        "end": 11,
+        "original": "[Ambas]",
+        "content": "Ambas",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 17,
+        "end": 23,
+        "original": "[came]",
+        "content": "came",
+        "gap_type": "square"
+      },
+      {
+        "index": 3,
+        "start": 65,
+        "end": 83,
+        "original": "[from his thought]",
+        "content": "from his thought",
+        "gap_type": "square"
+      },
+      {
+        "index": 4,
+        "start": 122,
+        "end": 129,
+        "original": "[Jesus]",
+        "content": "Jesus",
+        "gap_type": "square"
+      },
+      {
+        "index": 5,
+        "start": 177,
+        "end": 183,
+        "original": "[ht f]",
+        "content": "ht f",
+        "gap_type": "square"
+      }
+    ],
+    "3": [
+      {
+        "index": 1,
+        "start": 27,
+        "end": 41,
+        "original": "[d these five]",
+        "content": "d these five",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 95,
+        "end": 110,
+        "original": "[of the Father]",
+        "content": "of the Father",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation\n\n**¶2:** The proceeding Divine Truth sent forth to communicate the Lord's purpose [GAP-1] issued from the inmost of the Divine Will; the Good most beloved by all forms of Wisdom [GAP-2] proceeded from the Divine Understanding; the generative matrix of all spiritual life proceeded from the Lord's interior Perception; [GAP-3] the Divine Saving Love proceeded from His purposive Wisdom; and pure celestial Truth in its innocence proceeded from His reflective Discernment.\n\n**¶3:** In this manner were brought forth these five originating principles of the Divine proceeding. These five successive manifestations issued from the five essential faculties [GAP-4] of the Lord. Each proceeding state emerged from the one before it, and each was made manifest according to its proper order and the state prepared for its reception.\n\n---\n\n**Translator's note:** The five \"limbs\" or faculties — will, understanding, perception, purposive wisdom, discernment — represent the interior capacities of the Divine from which all spiritual reality proceeds in ordered succession. The teaching substrate here describes not temporal events but the eternal order by which the Divine communicates itself outward through degrees: from inmost love, through intelligence, through perception, through saving purpose, to the innocence of pure truth — each opening the way for the next, none appearing before its state is prepared.",
+  "reconstructions": [
+    {
+      "paragraph": 2,
+      "reconstructed_text": "The [Ambas]sador [came] from his mind; the Beloved of the Lights [from his thought]; the Mother of Life from his insight; [Jesus] the Beloved from his counsel; the Virgin of Lig[ht f]rom his consideration."
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "So in this way were summone[d these five] fathers. These five advents came from the five limbs [of the Father]. One came from another and was manifested in its season."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 2,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "came",
+      "original": "came",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The verb \"came\" correctly expresses the proceeding of the Ambassador from the Divine Will (mind), and is consistent with ¶3's \"came from the five limbs,\" establishing a unified verb of emanation throughout the passage.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 2,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "from his thought",
+      "original": "from his thought",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The spiritual reading indicates the Beloved of the Lights proceeded from the Divine Understanding; \"thought\" is the natural-plane Kephalaia term for understanding, and \"from his thought\" maintains the exact parallel structure (from his mind / from his thought / from his insight / from his counsel / from his consideration) of the five faculties.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 2,
+      "index": 3,
+      "gap_id": "GAP-3",
+      "fill": "Jesus",
+      "original": "Jesus",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The spiritual reading identifies this figure as \"the Divine Saving Love,\" which in the Manichaean Kephalaia register is Jesus — specifically \"Jesus the Beloved,\" the saving divine principle who proceeds from the Father's counsel (purposive wisdom).",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 3,
+      "index": 1,
+      "gap_id": "GAP-4",
+      "fill": "of the Father",
+      "original": "of the Father",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The spiritual reading specifies \"of the Lord,\" which in the Kephalaia's natural-plane vocabulary is \"the Father\" (the Father of Greatness), the supreme divine being from whose five interior limbs/faculties all proceeding realities emanate.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    }
+  ],
+  "violations": [],
+  "assessment": "0 restored, 4 editorial reviewed (4 confirmed, 0 corrected)"
+}
