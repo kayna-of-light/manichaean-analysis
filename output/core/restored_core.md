@@ -10,7 +10,7 @@
 
 **Chapters analyzed**: 123
 **Chapters with core content**: 112
-**Core text words**: ~50,789
+**Core text words**: ~50,816
 
 ## Chapter 0
 ### Introduction
@@ -345,7 +345,7 @@ Again, [the Kin]g of the world of Darkness is a dragon. His [body is lead] and t
 ## Chapter 7
 ### The Seventh, concerning the Five Fathers
 
-*The opening half is a tightly ordered cosmological emanation/evocation schema (Father of Greatness → three emanations; Third Ambassador → three powers; Jesus the Splendour → three powers), in an impersonal expository voice typical of the older substrate. The second half shows strong editorial fatigue: the schema is redirected toward institutional identifications (apostles/churches/elect/catechumens) and includes a Johannine-style saying (Jn 8 vector), plus a closing beatitude/exhortation.*
+*The chapter’s first half is a largely intact, systematic emanation schema (Father of Greatness → three emanations; Third Ambassador → three powers; Jesus the Splendour → three powers). The second half shows clear editorial fatigue: institutional/church identifications (“apostles”, “churches”, “elect and catechumens”) and a probable NT overlay (Jn 8–style saying) intrude into the otherwise cosmological list. Seam-flagged paragraphs (19, 21) are treated as fully late pastoral grafts per the rules.*
 
 Five fathers exist; they were summoned forth one of one. [Also], one did come out of another!
 
@@ -363,48 +363,48 @@ The second father, who came out of the first Father, is the Third Ambassador, th
 
 One is the Pillar of Glory, the Perfect Man; the one who bears up under all things; the great Pillar of blessing; the great porter, who is greater than all the porters.
 
-The second is glorious Jesus the Splendour.
+The second is glorious Jesus the Splendour; [the] one through whom shall be given life eternal.
 
 The third is the Virgin of Light, the glorious wisd[o]m; the one who takes away the heart of the [rul]ers and the powers by her image, as she fulfils the pleas[u]re of the greatness.
 
 The third father, who came out of the second father: he is glorious Jesus the Splendour. And, again, he too summoned three evocations after the pattern of the second father.
 
-The first power whom he summoned is the Light Min[d].
+The first power whom he summoned is the Light Min[d]
 
 The second power whom Jesus summo[n]ed is the gre[at Jud]ge, who gives judgement on all the souls of mankind, [his] dwelling being established in the atmosphere under [ ... / ... ] wheel [ ... ] stars.
 
-The third power is [the Y]outh, the gre[at ... ] light in his two persons, in [ ... ], I am speaking about that which has been established in the summons [and] the obedience.
+The third power is [the Y]outh, the gre[at ... ] light in his two persons, in [ ... ], I am speaking about that which has been established in the summons [and] the obedience. [He] too [stood] with his fa[ther the] king [ ... ]
 
 The fourth father is the Light Mind. And, again, he too summoned three powers after the pattern of Jesus.
 
-And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body; and the thr[ee] great glorious angels who are come with her.
+And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body, corresponding to the pattern of the image; and the thr[ee] great glorious angels who are come with her.
 
 These are the five fathers who have come out of one another. They have appeared and man[ifes]ted through one another!
 
 **Temporal observations:**
-- ¶1: Formulaic hagiographic container: ‘Once again… apostle… sitting… disciples… revelation’. This is the editorial dialogue frame, not the teaching substrate.
-- ¶2: Programmatic numbered schema introducing an emanational chain; impersonal and system-internal (cosmos→cosmos).
-- ¶3: Cosmological definitional style (attributes of the primal deity; eternity/measurelessness) without citation or institutional anchoring.
-- ¶4: Systematic emanation structure (‘three emanations’ with first/second/third ordering); purely internal cosmology.
-- ¶5: Continues the ordered emanation list. Despite the pipeline ‘application’ hit, the mapping stays within the divine pleroma.
-- ¶6: Cosmological hierarchy title (‘Third Ambassador’) in the same emanational sequence; no institutional application.
-- ¶7: Summative cosmological proclamation; ‘Darkness’ is personified as a cosmic opponent (system-internal combat, not moral exhortation).
-- ¶8: Recursive patterning (‘again… three powers’) is characteristic of the older systematic substrate.
-- ¶9: Cosmic being defined by functional/correspondential epithets (‘pillar/porter/bears up’), not institutional offices.
-- ¶10: ‘Jesus the Splendour’ functions here as a named cosmological entity (core), but the appended ‘life eternal’ phrasing is Christianizing/soteriological overlay diction.
-- ¶11: Cosmos→cosmos action on ‘rulers and powers’ as cosmic ranks; correspondential language (‘by her image’) remains system-internal.
-- ¶12: Ordered genealogical schema (‘third father… came out of…’ + patterned triad). Jesus is used as a cosmological node, not cited from Gospel narrative.
-- ¶13: Core list-item (‘Light Mind’) is embedded in an editorial application to apostolic/church structures (‘holy church’), indicating later institutional grafting.
-- ¶14: Cosmological-judicial function with explicit cosmic location markers (atmosphere/wheel/stars); no institutional address.
-- ¶15: Begins as cosmological identification (‘the Youth… light in his two persons’) but pivots into Gospel-like quotation and exhortation, characteristic of NT overlay.
-- ¶16: Underlying emanational schema is core, but ‘chooses all the churches’ is an institutionalization of the cosmic rank (editorial application within the same sentence).
-- ¶17: Institutional office-language (‘Apostle of Light’, ‘assume the church of the flesh’) and community leadership terms indicate later church-layer material rather than impersonal cosmology.
-- ¶18: Biographical/institutional support figure (‘counterpart… to the apostle… companion… dangers’) reads as ecclesial/hagiographic function, not systematic cosmic mapping.
-- ¶19: Seam-flagged editorial extension: ‘elect and catechumens… renounce the world’ is explicit institutional categorization and exhortation; per rules, entire paragraph is late.
-- ¶20: Death-escort/epiphany motif with ‘Light Form’ and attendant angels can belong to the cosmological system, but the explicit ‘pattern… to the apostle’ is an editorial anchoring to community authority.
-- ¶21: Seam-flagged: while angelic regalia is cosmological, the closing identification ‘appear… to the elect and the catechumens’ is institutional targeting; treated as an editorial graft (whole paragraph late).
-- ¶22: Formal closure of the emanational schema; internal recap without exhortation or citation.
-- ¶23: Beatitude/exhortation promising ‘life eternal’ and addressing ethical categories (‘doers of good things’) is paraenetic and soteriological rather than structural cosmology; likely a closing pastoral addition.
+- ¶1: Hagiographic sitting/preaching scene with honorific titles (“enlightener…apostle of truth”) and revelation-introduction formula; classic compilation frame.
+- ¶2: Impersonal schematic thesis statement (numbered structure; emanation-chain) with no institutional or citation markers.
+- ¶3: Cosmological titulature and absolute/primordial descriptors in expository voice; no appeal to church practice or NT citation.
+- ¶4: Systematic emanation listing (“three emanations…first…”) staying wholly within the cosmic hierarchy.
+- ¶5: Continues the emanation list; despite the application-voice score, the content remains purely genealogical/cosmological.
+- ¶6: Cosmic office title within a numbered list; no institutional mapping.
+- ¶7: Recapitulation in schematic voice; cosmic conflict language treats Darkness as an agent within the system (not moral exhortation).
+- ¶8: Structured iteration (“second father…again…three powers”) continues the emanation schema.
+- ¶9: Cosmic being described by functional epithets; no church/institutional referents.
+- ¶10: “Jesus the Splendour” here functions as a named cosmic entity in the enumerated triad. The phrase “life eternal” could reflect later Christianized phrasing, but there is no citation formula; retained as core with mild uncertainty.
+- ¶11: Cosmic agency and powers remain internal to the system; correspondential ‘image’ language is cosmological, not applied to contemporary institutions.
+- ¶12: Schematic recursion (“after the pattern”) typical of core taxonomic teaching.
+- ¶13: Begins as a normal emanation-list item (cosmos→cosmos), then pivots to ecclesial mapping (“apostles…churches…holy church”), indicating later editorial graft onto an older list.
+- ¶14: Cosmic function + cosmography (atmosphere/wheel/stars) in expository mode; no institutional anchoring.
+- ¶15: Core list-item for the ‘Youth’ is interrupted by a Gospel-like quotation (not cosmological mechanics but citation-style speech), matching the chapter’s noted NT vector (Jn 8).
+- ¶16: The numbered schema (“fourth father…summoned three powers…after the pattern”) is core; “chooses all the churches” signals later ecclesial application.
+- ¶17: Institutional/eschatological church leadership language (“Apostle of Light…assume the church…inner leader”) points to community organization rather than cosmological mapping.
+- ¶18: Continues institutional narrative around an ‘apostle’ and a companion/helper; biographical/operational register, not systematic cosmology.
+- ¶19: Seam-flagged institutional graft: “elect and the catechumens…renounce the world.” Cosmos→community application dominates; treated wholly late per seam rule.
+- ¶20: Primarily an eschatological/cosmological appearance teaching (Light Form appearing at death) but contains a telltale institutional anchor (“apostle”), suggesting editorial insertion into an older description.
+- ¶21: Seam-flagged extension: despite an angelic triad list, the paragraph culminates in explicit community targeting (“appear…to the elect and the catechumens”), indicating an editorial application layer; per seam rule, no extraction.
+- ¶22: Concluding schematic summary of the emanation-chain; impersonal, system-internal closure.
+- ¶23: Beatitude/blessing and promise language (“Blessed is he…life eternal…righteous…faithful”) functions as editorial exhortation/closure rather than cosmological exposition.
 
 ---
 
