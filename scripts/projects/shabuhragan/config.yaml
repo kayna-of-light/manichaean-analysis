@@ -21,6 +21,10 @@ chapter_pattern: "ch_{num:03d}.json"
 assembled_filename: "restored_shabuhragan.md"
 clean_script: "projects/shabuhragan/clean.py"
 
+pipeline:
+  document_type: fragment_collection      # fragments ARE the teaching — passthrough to correspondential reading
+  include_original_text: true             # include Middle Persian/Sogdian transliteration for richer analysis
+
 extra:
   # The Šābuhragān has a different structure than the Kephalaia:
   # - Sections rather than numbered chapters (Autobiography, Cosmogony, Eschatology, etc.)

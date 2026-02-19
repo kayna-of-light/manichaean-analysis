@@ -21,6 +21,10 @@ chapter_pattern: "ch_{num:03d}.json"
 assembled_filename: "restored_kephalaia.md"
 clean_script: "projects/kephalaia/clean.py"
 
+pipeline:
+  document_type: composite_text          # temporal layer separation (CORE/FRAME/PASTORAL/OVERLAY/MIXED)
+  include_original_text: false            # kephalaia has no interleaved original script
+
 extra:
   # Kephalaia-specific: register analysis and v4 text-critical data
   register_json: "analysis/registers/register_analysis.json"
