@@ -1,0 +1,82 @@
+{
+  "chapter_number": 68,
+  "chapter_title": "Concerning Fire.",
+  "total_lacunae": 2,
+  "lacunae_map": {
+    "5": [
+      {
+        "index": 1,
+        "start": 21,
+        "end": 25,
+        "original": "[it]",
+        "content": "it",
+        "gap_type": "square"
+      }
+    ],
+    "6": [
+      {
+        "index": 1,
+        "start": 57,
+        "end": 61,
+        "original": "[it]",
+        "content": "it",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation: The Five Works of Love\n\n**¶1:** This love, which burns within the will and manifests openly in the life of the natural mind, performs five distinct spiritual operations.\n\n**¶2:** The first operation it performs is this: It consumes and transforms natural good — all inherited and acquired good of the external person — and everything of merit that is brought before it.\n\n**¶3:** The second: It separates from natural good four distinct spiritual elements, which are these: the love itself and the wisdom proceeding from it, the lowest natural residue from which all living quality has departed, and the obscurity of falsity that rises from the destruction of what was merely natural.\n\n**¶4:** The third: It imparts interior perception of good and the recognition of spiritual quality to whatever is matured and prepared through its operation. It also communicates the warmth of genuine affection and the delight of blessedness to whoever draws near to it in the will.\n\n**¶5:** The fourth operation that [GAP-1: — love in its formative power —] performs: All who fashion understanding into service shall shape the functional vessels of truth and good that they form through its power.\n\n**¶6:** The fifth: It shall manifest wisdom openly, and those who are in states of understanding perceive by [GAP-2: — the illumination proceeding from love —].\n\n---\n\n*Note on structure:* The passage presents love not as a single state but as a fivefold spiritual process — consuming the merely natural, separating true from false and good from residue, ripening interior perception, empowering the formation of useful vessels of understanding, and finally radiating the wisdom by which all spiritual sight becomes possible. This sequence moves from destruction of the old will through discrimination, maturation, and active formation, to the ultimate end: illumination.",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "This fire, which burns and is apparent today in the world, it does five works."
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "The first work that it does is this: It incinerates and burns wood, and everything that shall be placed upon it."
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The second: It separates four aspects of the wood, which are these: fire and light, ash and smoke."
+    },
+    {
+      "paragraph": 4,
+      "reconstructed_text": "The third: It gives a taste and an aroma to whatever will be cooked on it. It also gives heat and cheer to whoever will be close to it."
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "The fourth work that [it] does: All craftsmen shall work the utensils that they will fabricate in it."
+    },
+    {
+      "paragraph": 6,
+      "reconstructed_text": "The fifth: It shall display light, and the people see by [it]."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 5,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "it",
+      "original": "it",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The editor's \"it\" is confirmed: it follows the exact syntactic pattern of ¶2 (\"The first work that it does\"), where the pronoun refers back to \"this fire\" — corresponding to love in its formative power acting through craftsmen.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 6,
+      "index": 1,
+      "gap_id": "GAP-2",
+      "fill": "it",
+      "original": "it",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The editor's \"it\" is confirmed: the pronoun refers to the fire (or its displayed light), corresponding to the illumination proceeding from love by which all spiritual sight becomes possible.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    }
+  ],
+  "violations": [],
+  "assessment": "0 restored, 2 editorial reviewed (2 confirmed, 0 corrected)"
+}

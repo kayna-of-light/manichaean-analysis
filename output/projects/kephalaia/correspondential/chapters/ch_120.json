@@ -1,0 +1,60 @@
+{
+  "chapter_number": 120,
+  "chapter_title": "Concerning the Two Essences",
+  "total_lacunae": 2,
+  "lacunae_map": {
+    "1": [
+      {
+        "index": 1,
+        "start": 51,
+        "end": 58,
+        "original": "[ ... ]",
+        "content": " ... ",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 127,
+        "end": 129,
+        "original": "[]",
+        "content": "",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation\n\n**¶1:**\n\nThe two fundamental principles that exist from the very origin of all things [GAP-1: — the spiritual sense here requires a statement establishing their absolute distinction or mutual opposition as first principles —] divine wisdom and falsity from evil, that which proceeds from divine love and that which proceeds from self-love and love of the world [GAP-2: — the completion of the opposite of good, i.e., the fullness of evil as the inversion of all divine order], spiritual life flowing from conjunction with the Divine and spiritual death which is separation from Him.\n\n---\n\n**Translator's note:** The passage presents the primal duality not as a cosmogony of two physical substances but as the two spiritual states that precede all further derivation: wisdom versus falsity, good versus evil, life versus death. In correspondence, these three pairs are not three separate dualities but one reality expressed at three levels — *light/darkness* is the duality as it exists in the understanding (truth versus falsity), *good/evil* is the duality as it exists in the will (love of the Divine versus love of self), and *life/death* is the duality as it exists in the whole person (conjunction with the Divine versus separation from Him). The order — understanding, then will, then the whole — mirrors the order in which the ancient teaching disclosed these realities to the external mind, moving from what is perceived (light) to what is felt (good) to what is lived (life).",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "the two essences that are present at the beginning [opposed to one another:] the Light and the Darkness, that which is good and that which is evi[l], life and death."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 1,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "opposed to one another:",
+      "original": " ... ",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The Kephalaia consistently uses the formula \"opposed to one another\" (or \"separated from one another\") when introducing the primal duality of the two essences, and the spiritual reading requires a statement establishing their absolute mutual opposition as first principles before the enumeration begins.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 1,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "l",
+      "original": "",
+      "gap_type": "square",
+      "gap_size": "single",
+      "explanation": "The partial word \"evi-\" is completed as \"evil,\" which the spiritual reading confirms as the opposite of good — the inversion of all divine order.",
+      "confidence": "high",
+      "notes": ""
+    }
+  ],
+  "violations": [],
+  "assessment": "2 restored"
+}
