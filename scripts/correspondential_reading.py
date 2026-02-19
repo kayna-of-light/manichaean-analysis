@@ -149,7 +149,27 @@ seeds = interior truths, vessels = containing forms.
 Translate paragraph by paragraph. Replace every natural object. \
 Produce continuous prose about spiritual states and processes. \
 If an image resists translation, say so briefly and give your \
-best reading."""
+best reading.
+
+IMPORTANT — Gap anchors:
+The text contains numbered gap markers like [GAP-1: ...], [GAP-2: ...], \
+or {GAP-3}. These are lacunae (missing text) that will be restored \
+later using your spiritual reading as a guide.
+
+As you translate each passage, PRESERVE these gap markers inline in \
+your spiritual prose at the corresponding position. When you reach \
+a gap, write what the spiritual sense requires at that point and \
+embed the marker so a restorer can see exactly what spiritual \
+reality belongs there.
+
+Example:
+  Original: "the great [GAP-1: ...], the battle that the Darkness spread"
+  Spiritual: "the great [GAP-1] assault that falsity from evil propagated"
+
+The marker anchors the spiritual insight to the specific gap. \
+Do NOT fill in the natural-plane word — just show what spiritual \
+reality the gap expresses. The restorer will translate back to \
+the text's own vocabulary."""
 
 
 RESTORATION_PROMPT = """\
@@ -167,8 +187,14 @@ You receive:
 2. A SPIRITUAL READING that translates the text into its spiritual sense
 
 The spiritual reading tells you WHAT spiritual reality each passage \
-describes. Your fills must express that reality in the text's own \
+describes. It contains GAP-N anchor markers at each gap position, \
+showing exactly what spiritual reality belongs at that point. \
+Your fills must express that spiritual reality in the text's own \
 natural-plane vocabulary — the language of the Kephalaia itself.
+
+For each gap, find its GAP-N marker in the spiritual reading to see \
+what spiritual reality the gap expresses, then translate that back \
+into the Kephalaia's natural-plane register.
 
 Brackets WITHOUT a GAP-N identifier are translator fills — do not \
 modify them. Only fill gaps that have a GAP-N label.
@@ -437,21 +463,27 @@ def find_lacunae(
 def generate_spiritual_reading(
     client: AnthropicFoundry,
     deployment: str,
-    core_paras: list[dict],
+    numbered_text: str,
     ch_num: int,
     *,
     debug: bool = False,
 ) -> str | None:
-    """Generate a correspondential reading of the whole chapter."""
+    """Generate a correspondential reading of the whole chapter.
+
+    Receives the numbered text (with GAP-N markers) so the spiritual
+    reading can embed anchor points for Phase 2 restoration.
+    """
     lines = [
         "Translate the following chapter from its natural sense "
         "into its spiritual sense.\n",
+        "The text contains GAP-N markers for lacunae. Preserve these "
+        "markers inline in your spiritual translation at the "
+        "corresponding positions.\n",
         "--- CORE TEXT (oldest teaching layer) ---\n",
+        numbered_text,
+        "",
+        "--- END ---",
     ]
-    for p in core_paras:
-        lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
-        lines.append("")
-    lines.append("--- END ---")
     user_msg = "\n".join(lines)
 
     max_retries = 3
@@ -465,7 +497,7 @@ def generate_spiritual_reading(
                 model=deployment,
                 system=SPIRITUAL_READING_PROMPT,
                 messages=[{"role": "user", "content": user_msg}],
-                max_tokens=16000,
+                max_tokens=50000,
                 thinking={"type": "adaptive"},
             ) as stream:
                 for event in stream:
@@ -1533,6 +1565,9 @@ def main() -> None:
                 flush=True,
             )
 
+        # --- Number gaps (shared by Phase 1 and 2) ---
+        numbered_text, gap_registry_pre = number_chapter_gaps(core_paras)
+
         # --- Phase 1: Spiritual Reading (use cache if available) ---
         cached_path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
         cached_reading = None
@@ -1540,7 +1575,10 @@ def main() -> None:
             try:
                 with open(cached_path, encoding="utf-8") as f:
                     cached_data = json.load(f)
-                cached_reading = cached_data.get("spiritual_reading")
+                cached_sr = cached_data.get("spiritual_reading", "")
+                # Only use cache if it contains GAP anchors
+                if cached_sr and "GAP-" in cached_sr:
+                    cached_reading = cached_sr
             except Exception:
                 pass
 
@@ -1552,7 +1590,7 @@ def main() -> None:
             with print_lock:
                 print(" phase 1...", end="", flush=True)
             spiritual_reading = generate_spiritual_reading(
-                client, deployment, core_paras, ch_num, debug=show_debug
+                client, deployment, numbered_text, ch_num, debug=show_debug
             )
             if not spiritual_reading:
                 with print_lock:
