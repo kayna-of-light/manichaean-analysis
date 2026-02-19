@@ -1,0 +1,33 @@
+# Šābuhragān — Project Configuration
+# Mani's Middle Persian cosmogonic and eschatological work composed for King Shapur I.
+# Contains BOTH original Middle Persian script AND English translations.
+
+name: shabuhragan
+display_name: "Šābuhragān"
+
+source:
+  text_file: "DB_Anthology_3_Shabuhragan.md"
+  pdf_file: "DB-Antholog.-3-Sab..pdf"
+  ocr_json: "DB-Antholog.-3-Sab..pdf.json"
+
+metadata:
+  language: middle_persian
+  translation_language: english
+  has_original_text: true
+  translator: "W.B. Henning, D.N. Mackenzie, Prods O. Skjærvø, N. Sims-Williams"
+  edition: "DbMT, Ancient India and Iran Trust, 2022"
+
+chapter_pattern: "ch_{num:03d}.json"
+assembled_filename: "restored_shabuhragan.md"
+clean_script: "projects/shabuhragan/clean.py"
+
+extra:
+  # The Šābuhragān has a different structure than the Kephalaia:
+  # - Sections rather than numbered chapters (Autobiography, Cosmogony, Eschatology, etc.)
+  # - Each text fragment has a manuscript reference (e.g. M49, M178, M5794)
+  # - Original Middle Persian is interleaved with English translation
+  # - Lacunae markers may differ from Kephalaia conventions
+  # - Fragment references like {a.1}, {b.2}, {v.1} mark column/section
+  # - Multiple manuscripts per section, with overlapping content
+  editor: "Samuel N.C. Lieu FBA"
+  structure: "fragments"   # vs "chapters" for kephalaia

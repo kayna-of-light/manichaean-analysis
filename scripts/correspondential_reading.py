@@ -31,16 +31,33 @@ import httpx
 from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
 
+from project_config import load_project, list_projects, SECRETS_PATH
+
 # ---------------------------------------------------------------------------
-# Paths
+# Paths — set by configure_paths() at startup
 # ---------------------------------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SECRETS_PATH = PROJECT_ROOT / "secrets" / "azure_openai.env"
-CORE_CHAPTERS_DIR = PROJECT_ROOT / "output" / "core" / "chapters"
-OUTPUT_DIR = PROJECT_ROOT / "output" / "correspondential"
-CHAPTERS_OUT_DIR = OUTPUT_DIR / "chapters"
-ASSEMBLED_FILE = OUTPUT_DIR / "restored_kephalaia.md"
+CORE_CHAPTERS_DIR: Path | None = None   # input: core/chapters/
+OUTPUT_DIR: Path | None = None          # output: correspondential/
+CHAPTERS_OUT_DIR: Path | None = None    # output: correspondential/chapters/
+ASSEMBLED_FILE: Path | None = None      # output: assembled markdown
+
+
+def configure_paths(project_name: str) -> None:
+    """Set module-level path variables from project config."""
+    global CORE_CHAPTERS_DIR, OUTPUT_DIR, CHAPTERS_OUT_DIR, ASSEMBLED_FILE
+
+    cfg = load_project(project_name)
+    cfg.paths.ensure_dirs()
+
+    CORE_CHAPTERS_DIR = cfg.paths.core_chapters
+    OUTPUT_DIR = cfg.paths.correspondential
+    CHAPTERS_OUT_DIR = cfg.paths.correspondential_chapters
+    ASSEMBLED_FILE = cfg.paths.correspondential_assembled
+
+    print(f"Project: {cfg.display_name}")
+    print(f"  Input:  {CORE_CHAPTERS_DIR}")
+    print(f"  Output: {OUTPUT_DIR}")
 
 # ---------------------------------------------------------------------------
 # Gap patterns — square brackets [...] and curly braces {...}
@@ -1498,8 +1515,15 @@ def save_assembly(text: str) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Correspondential restoration of the Kephalaia "
+        description="Correspondential restoration of a Manichaean "
         "teaching core"
+    )
+    parser.add_argument(
+        "--project",
+        "-p",
+        type=str,
+        default="kephalaia",
+        help=f"Project to process (available: {', '.join(list_projects()) or 'none'})",
     )
     parser.add_argument(
         "--chapter",
@@ -1561,6 +1585,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    configure_paths(args.project)
 
     # Load extracted core chapters
     all_chapters = load_core_chapters()

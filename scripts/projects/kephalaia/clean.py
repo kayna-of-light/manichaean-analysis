@@ -31,13 +31,13 @@ from dotenv import dotenv_values
 from pydantic import BaseModel, Field
 
 # ---------------------------------------------------------------------------
-# Paths
+# Paths  (updated for project-based layout)
 # ---------------------------------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SECRETS_PATH = PROJECT_ROOT / "secrets" / "azure_openai.env"
-SOURCE_FILE = PROJECT_ROOT / "output" / "texts" / "Kephalaia_of_the_Teacher.md"
-OUTPUT_DIR = PROJECT_ROOT / "output" / "cleaned"
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+SECRETS_PATH = REPO_ROOT / "secrets" / "azure_openai.env"
+SOURCE_FILE = REPO_ROOT / "output" / "texts" / "Kephalaia_of_the_Teacher.md"
+OUTPUT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "cleaned"
 CHAPTERS_DIR = OUTPUT_DIR / "chapters"
 TEACHING_FILE = OUTPUT_DIR / "kephalaia_teaching.md"
 APPARATUS_FILE = OUTPUT_DIR / "kephalaia_apparatus.md"
