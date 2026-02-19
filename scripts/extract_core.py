@@ -58,20 +58,48 @@ from openai import OpenAI, RateLimitError, APIStatusError
 from dotenv import dotenv_values
 from pydantic import BaseModel, Field
 
+from project_config import load_project, list_projects, SECRETS_PATH
+
 # ---------------------------------------------------------------------------
-# Paths
+# Paths — set by configure_paths() at startup
 # ---------------------------------------------------------------------------
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
-SECRETS_PATH = PROJECT_ROOT / "secrets" / "azure_openai.env"
-CHAPTERS_DIR = PROJECT_ROOT / "output" / "cleaned" / "chapters"
-REGISTER_JSON = PROJECT_ROOT / "output" / "analysis" / "registers" / "register_analysis.json"
-V4_DATA_JSON = PROJECT_ROOT / "output" / "analysis" / "v4" / "v4_data.json"
-V4_PARA_JSON = PROJECT_ROOT / "output" / "analysis" / "v4" / "v4_paragraphs.json"
-OUTPUT_DIR = PROJECT_ROOT / "output" / "core"
-SEGMENTS_DIR = OUTPUT_DIR / "chapters"
-ASSEMBLED_FILE = OUTPUT_DIR / "restored_core.md"
-DATA_FILE = OUTPUT_DIR / "core_data.json"
+CHAPTERS_DIR: Path | None = None   # input: cleaned chapters
+REGISTER_JSON: Path | None = None  # input: register analysis
+V4_DATA_JSON: Path | None = None   # input: v4 analysis
+V4_PARA_JSON: Path | None = None   # input: v4 paragraphs
+OUTPUT_DIR: Path | None = None     # output: core/
+SEGMENTS_DIR: Path | None = None   # output: core/chapters/
+ASSEMBLED_FILE: Path | None = None # output: restored_core.md
+DATA_FILE: Path | None = None      # output: core_data.json
+
+
+def configure_paths(project_name: str) -> None:
+    """Set module-level path variables from project config."""
+    global CHAPTERS_DIR, REGISTER_JSON, V4_DATA_JSON, V4_PARA_JSON
+    global OUTPUT_DIR, SEGMENTS_DIR, ASSEMBLED_FILE, DATA_FILE
+
+    cfg = load_project(project_name)
+    cfg.paths.ensure_dirs()
+
+    CHAPTERS_DIR = cfg.paths.cleaned_chapters
+    OUTPUT_DIR = cfg.paths.core
+    SEGMENTS_DIR = cfg.paths.core_chapters
+    ASSEMBLED_FILE = cfg.paths.core_assembled
+    DATA_FILE = cfg.paths.core_data
+
+    # Project-specific analysis paths (from extra config)
+    analysis_dir = cfg.paths.analysis
+    reg = cfg.extra.get("register_json", "analysis/registers/register_analysis.json")
+    v4d = cfg.extra.get("v4_data_json", "analysis/v4/v4_data.json")
+    v4p = cfg.extra.get("v4_para_json", "analysis/v4/v4_paragraphs.json")
+    REGISTER_JSON = cfg.paths.project_dir / reg
+    V4_DATA_JSON = cfg.paths.project_dir / v4d
+    V4_PARA_JSON = cfg.paths.project_dir / v4p
+
+    print(f"Project: {cfg.display_name}")
+    print(f"  Input:  {CHAPTERS_DIR}")
+    print(f"  Output: {OUTPUT_DIR}")
 
 
 # ---------------------------------------------------------------------------
@@ -1401,8 +1429,10 @@ def save_data_summary() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Extract the core teaching layer from the Kephalaia"
+        description="Extract the core teaching layer from a Manichaean text"
     )
+    parser.add_argument("--project", "-p", type=str, default="kephalaia",
+                        help=f"Project to process (available: {', '.join(list_projects()) or 'none'})")
     parser.add_argument("--chapter", "-c", type=int, default=None)
     parser.add_argument("--range", "-r", type=str, default=None)
     parser.add_argument("--limit", "-l", type=int, default=None)
@@ -1419,6 +1449,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
+    configure_paths(args.project)
 
     # Assembly-only mode
     if args.assemble:

@@ -1,0 +1,31 @@
+# Kephalaia of the Teacher — Project Configuration
+# The Discourses of Mani: ~123 chapters of instructional teaching on correspondences,
+# cosmogony, soteriology, and the nature of the soul.
+
+name: kephalaia
+display_name: "Kephalaia of the Teacher"
+
+source:
+  text_file: "Kephalaia_of_the_Teacher.md"
+  pdf_file: "The Kephalaia of the Teacher.pdf"
+  ocr_json: "The Kephalaia of the Teacher.pdf.json"
+
+metadata:
+  language: coptic
+  translation_language: english
+  has_original_text: false
+  translator: "Iain Gardner"
+  edition: "Brill, 1995"
+
+chapter_pattern: "ch_{num:03d}.json"
+assembled_filename: "restored_kephalaia.md"
+clean_script: "projects/kephalaia/clean.py"
+
+extra:
+  # Kephalaia-specific: register analysis and v4 text-critical data
+  register_json: "analysis/registers/register_analysis.json"
+  v4_data_json: "analysis/v4/v4_data.json"
+  v4_para_json: "analysis/v4/v4_paragraphs.json"
+  # Assembled output files from Phase 1
+  teaching_file: "cleaned/kephalaia_teaching.md"
+  apparatus_file: "cleaned/kephalaia_apparatus.md"
