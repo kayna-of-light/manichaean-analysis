@@ -94,6 +94,9 @@ class ProjectConfig:
     chapter_pattern: str                # e.g. "ch_{num:03d}.json"
     assembled_filename: str             # e.g. "restored_kephalaia.md"
     clean_script: str | None            # relative path to book-specific clean script
+    # Pipeline settings
+    document_type: str = "composite_text"     # "composite_text" or "fragment_collection"
+    include_original_text: bool = False       # include original language text in pipeline
     extra: dict[str, Any] = field(default_factory=dict)
 
     # Resolved paths (set after loading)
@@ -152,6 +155,8 @@ def load_project(name: str) -> ProjectConfig:
     with open(config_path, "r", encoding="utf-8") as f:
         raw = yaml.safe_load(f)
 
+    pipeline = raw.get("pipeline", {})
+
     return ProjectConfig(
         name=raw["name"],
         display_name=raw["display_name"],
@@ -170,6 +175,8 @@ def load_project(name: str) -> ProjectConfig:
             "assembled_filename", f"restored_{raw['name']}.md"
         ),
         clean_script=raw.get("clean_script"),
+        document_type=pipeline.get("document_type", "composite_text"),
+        include_original_text=pipeline.get("include_original_text", False),
         extra=raw.get("extra", {}),
     )
 

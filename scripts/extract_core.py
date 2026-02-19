@@ -64,6 +64,7 @@ from project_config import load_project, list_projects, SECRETS_PATH
 # Paths — set by configure_paths() at startup
 # ---------------------------------------------------------------------------
 
+PROJECT_CFG = None                 # ProjectConfig — set by configure_paths()
 CHAPTERS_DIR: Path | None = None   # input: cleaned chapters
 REGISTER_JSON: Path | None = None  # input: register analysis
 V4_DATA_JSON: Path | None = None   # input: v4 analysis
@@ -76,11 +77,13 @@ DATA_FILE: Path | None = None      # output: core_data.json
 
 def configure_paths(project_name: str) -> None:
     """Set module-level path variables from project config."""
+    global PROJECT_CFG
     global CHAPTERS_DIR, REGISTER_JSON, V4_DATA_JSON, V4_PARA_JSON
     global OUTPUT_DIR, SEGMENTS_DIR, ASSEMBLED_FILE, DATA_FILE
 
     cfg = load_project(project_name)
     cfg.paths.ensure_dirs()
+    PROJECT_CFG = cfg
 
     CHAPTERS_DIR = cfg.paths.cleaned_chapters
     OUTPUT_DIR = cfg.paths.core
@@ -88,18 +91,39 @@ def configure_paths(project_name: str) -> None:
     ASSEMBLED_FILE = cfg.paths.core_assembled
     DATA_FILE = cfg.paths.core_data
 
-    # Project-specific analysis paths (from extra config)
-    analysis_dir = cfg.paths.analysis
-    reg = cfg.extra.get("register_json", "analysis/registers/register_analysis.json")
-    v4d = cfg.extra.get("v4_data_json", "analysis/v4/v4_data.json")
-    v4p = cfg.extra.get("v4_para_json", "analysis/v4/v4_paragraphs.json")
-    REGISTER_JSON = cfg.paths.project_dir / reg
-    V4_DATA_JSON = cfg.paths.project_dir / v4d
-    V4_PARA_JSON = cfg.paths.project_dir / v4p
+    # Project-specific analysis paths (composite_text only)
+    if cfg.document_type == "composite_text":
+        reg = cfg.extra.get("register_json", "analysis/registers/register_analysis.json")
+        v4d = cfg.extra.get("v4_data_json", "analysis/v4/v4_data.json")
+        v4p = cfg.extra.get("v4_para_json", "analysis/v4/v4_paragraphs.json")
+        REGISTER_JSON = cfg.paths.project_dir / reg
+        V4_DATA_JSON = cfg.paths.project_dir / v4d
+        V4_PARA_JSON = cfg.paths.project_dir / v4p
 
     print(f"Project: {cfg.display_name}")
+    print(f"  Type:   {cfg.document_type}")
     print(f"  Input:  {CHAPTERS_DIR}")
     print(f"  Output: {OUTPUT_DIR}")
+
+
+# ---------------------------------------------------------------------------
+# Field accessors — handle both chapter-based and section-based formats
+# ---------------------------------------------------------------------------
+
+def get_number(chapter: dict) -> int:
+    """Get the chapter/section number from a cleaned chapter dict."""
+    return chapter.get("chapter_number") or chapter.get("section_number", 0)
+
+
+def get_text(chapter: dict) -> str:
+    """Get the main teaching/translation text from a cleaned chapter dict."""
+    return chapter.get("teaching_text") or chapter.get("english_translation", "")
+
+
+def get_title(chapter: dict) -> str:
+    """Get the chapter/section title."""
+    num = get_number(chapter)
+    return chapter.get("title", f"Section {num}")
 
 
 # ---------------------------------------------------------------------------
@@ -1244,6 +1268,106 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
 
 
 # ---------------------------------------------------------------------------
+# Passthrough mode — for fragment collections (no LLM needed)
+# ---------------------------------------------------------------------------
+
+
+def _run_passthrough(chapters: list[dict]) -> None:
+    """Passthrough mode for fragment collections — reformat cleaned data.
+
+    Fragments are already the primary teaching text: no editorial layers
+    to separate.  This reformats cleaned JSON into the ChapterExtraction
+    output format that correspondential_reading.py expects.
+
+    No LLM call is made.  Original language text is included when the
+    project config has ``include_original_text: true``.
+    """
+    include_original = PROJECT_CFG.include_original_text
+
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    SEGMENTS_DIR.mkdir(parents=True, exist_ok=True)
+
+    results = 0
+    for i, ch in enumerate(chapters, 1):
+        ch_num = get_number(ch)
+        title = get_title(ch)
+        text = get_text(ch)
+
+        if not text.strip():
+            print(f"  [{i}/{len(chapters)}] Section {ch_num}: empty, skip")
+            continue
+
+        paragraphs = split_paragraphs(text)
+
+        # Build extraction dict compatible with correspondential_reading.py
+        para_list = []
+        for j, para_text in enumerate(paragraphs, 1):
+            para_list.append({
+                "paragraph_number": j,
+                "classification": "core",
+                "core_text": para_text,
+                "removal_notes": None,
+                "temporal_note": None,
+            })
+
+        extraction = {
+            "chapter_number": ch_num,
+            "chapter_title": title,
+            "total_paragraphs": len(paragraphs),
+            "core_paragraphs": len(paragraphs),
+            "core_percentage": 100.0,
+            "chapter_note": (
+                "Fragment collection — all text is primary teaching layer."
+            ),
+            "paragraphs": para_list,
+        }
+
+        # Include original text if configured and available
+        if include_original:
+            original = ch.get("original_text", "")
+            if original:
+                extraction["original_text"] = original
+                extraction["original_language"] = ch.get(
+                    "original_language", ""
+                )
+
+        # Preserve fragment-specific metadata
+        for key in (
+            "manuscript_refs", "edition_refs", "section_markers", "footnotes",
+        ):
+            val = ch.get(key)
+            if val:
+                # Pydantic objects → dicts for serialization
+                if isinstance(val, list) and val and hasattr(val[0], "model_dump"):
+                    val = [v.model_dump() for v in val]
+                extraction[key] = val
+
+        # Save
+        path = SEGMENTS_DIR / f"ch_{ch_num:03d}.json"
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(extraction, f, indent=2, ensure_ascii=False)
+
+        words = len(text.split())
+        print(
+            f"  [{i}/{len(chapters)}] Section {ch_num} ({words} words) "
+            f"{title[:50]}... OK — {len(paragraphs)} ¶s (100% core)"
+        )
+        results += 1
+
+    print(f"\n{'='*60}")
+    print(f"PASSTHROUGH COMPLETE")
+    print(f"  Processed: {results}")
+
+    # Assemble
+    print(f"\nAssembling document...")
+    text = assemble_core()
+    if text:
+        save_assembly(text)
+    save_data_summary()
+    print("Done.")
+
+
+# ---------------------------------------------------------------------------
 # Save / load
 # ---------------------------------------------------------------------------
 
@@ -1282,14 +1406,44 @@ def assemble_core() -> str:
         print("ERROR: No extraction files found.")
         return ""
 
+    # Project-aware headers
+    is_fragments = (
+        PROJECT_CFG and PROJECT_CFG.document_type == "fragment_collection"
+    )
+    display_name = PROJECT_CFG.display_name if PROJECT_CFG else "Unknown"
+    unit_label = "Section" if is_fragments else "Chapter"
+
     lines = []
-    lines.append("# The Teaching Core of the Kephalaia")
-    lines.append("")
-    lines.append("*Extracted from the Coptic Kephalaia of the Teacher (Gardner, Brill 1995).*")
-    lines.append("*Later editorial layers — hagiographic frame, pastoral instructions,*")
-    lines.append("*and explicit Christian overlay — have been removed. Mixed passages*")
-    lines.append("*have been repaired to recover the teaching content. The text is*")
-    lines.append("*presented in its original chapter order.*")
+    if is_fragments:
+        lines.append(f"# {display_name} — Teaching Text")
+        lines.append("")
+        lines.append(
+            f"*{display_name} ({PROJECT_CFG.edition}), prepared for "
+            f"correspondential reading.*"
+        )
+        lines.append(
+            f"*Translated by {PROJECT_CFG.translator}.*"
+        )
+    else:
+        lines.append("# The Teaching Core of the Kephalaia")
+        lines.append("")
+        lines.append(
+            "*Extracted from the Coptic Kephalaia of the Teacher "
+            "(Gardner, Brill 1995).*"
+        )
+        lines.append(
+            "*Later editorial layers — hagiographic frame, pastoral "
+            "instructions,*"
+        )
+        lines.append(
+            "*and explicit Christian overlay — have been removed. Mixed "
+            "passages*"
+        )
+        lines.append(
+            "*have been repaired to recover the teaching content. The "
+            "text is*"
+        )
+        lines.append("*presented in its original chapter order.*")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -1302,7 +1456,7 @@ def assemble_core() -> str:
 
     for ext in extractions:
         ch_num = ext["chapter_number"]
-        title = ext.get("chapter_title", f"Chapter {ch_num}")
+        title = ext.get("chapter_title", f"{unit_label} {ch_num}")
 
         # Collect core text from this chapter
         core_parts = []
@@ -1328,7 +1482,7 @@ def assemble_core() -> str:
 
         chapters_with_core += 1
 
-        lines.append(f"## Chapter {ch_num}")
+        lines.append(f"## {unit_label} {ch_num}")
         lines.append(f"### {title}")
         lines.append("")
 
@@ -1354,9 +1508,10 @@ def assemble_core() -> str:
         lines.append("")
 
     # Prepend statistics
+    unit_lc = unit_label.lower() + "s"
     stats_block = [
-        f"**Chapters analyzed**: {total_chapters}",
-        f"**Chapters with core content**: {chapters_with_core}",
+        f"**{unit_label}s analyzed**: {total_chapters}",
+        f"**{unit_label}s with core content**: {chapters_with_core}",
         f"**Core text words**: ~{total_core_words:,}",
         "",
     ]
@@ -1468,9 +1623,9 @@ def main() -> None:
 
     print(f"Loaded {len(all_chapters)} cleaned chapters")
 
-    # Determine which to process
+    # Determine which to process (uses get_number for compat with both formats)
     if args.chapter is not None:
-        chapters = [ch for ch in all_chapters if ch["chapter_number"] == args.chapter]
+        chapters = [ch for ch in all_chapters if get_number(ch) == args.chapter]
         if not chapters:
             print(f"ERROR: Chapter {args.chapter} not found")
             sys.exit(1)
@@ -1480,7 +1635,7 @@ def main() -> None:
             print("ERROR: Invalid range. Use '0-20'")
             sys.exit(1)
         start, end = int(m.group(1)), int(m.group(2))
-        chapters = [ch for ch in all_chapters if start <= ch["chapter_number"] <= end]
+        chapters = [ch for ch in all_chapters if start <= get_number(ch) <= end]
     else:
         chapters = all_chapters
 
@@ -1489,10 +1644,10 @@ def main() -> None:
 
     # Skip already processed
     if not args.overwrite:
-        to_process = [ch for ch in chapters if not is_extracted(ch["chapter_number"])]
+        to_process = [ch for ch in chapters if not is_extracted(get_number(ch))]
         skipped = len(chapters) - len(to_process)
         if skipped > 0:
-            print(f"  Skipping {skipped} already-extracted chapters (use --overwrite)")
+            print(f"  Skipping {skipped} already-extracted (use --overwrite)")
         chapters = to_process
 
     if not chapters:
@@ -1505,15 +1660,21 @@ def main() -> None:
 
     print(f"\nProcessing {len(chapters)} chapters:")
     for ch in chapters:
-        num = ch["chapter_number"]
+        num = get_number(ch)
         title = ch.get("title", "")[:60]
-        words = len(ch.get("teaching_text", "").split())
+        words = len(get_text(ch).split())
         print(f"  Ch.{num:3d}  ({words:5d} words)  {title}")
 
     if args.dry_run:
         print("\n[DRY RUN] No API calls made.")
         return
 
+    # --- Fragment collection: passthrough (no LLM needed) ---
+    if PROJECT_CFG.document_type == "fragment_collection":
+        _run_passthrough(chapters)
+        return
+
+    # --- Composite text: full LLM extraction ---
     # Create client
     client = create_client()
     deployment = get_deployment()

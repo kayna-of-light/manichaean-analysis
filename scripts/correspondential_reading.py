@@ -37,6 +37,7 @@ from project_config import load_project, list_projects, SECRETS_PATH
 # Paths — set by configure_paths() at startup
 # ---------------------------------------------------------------------------
 
+PROJECT_CFG = None                     # ProjectConfig — set by configure_paths()
 CORE_CHAPTERS_DIR: Path | None = None   # input: core/chapters/
 OUTPUT_DIR: Path | None = None          # output: correspondential/
 CHAPTERS_OUT_DIR: Path | None = None    # output: correspondential/chapters/
@@ -45,10 +46,12 @@ ASSEMBLED_FILE: Path | None = None      # output: assembled markdown
 
 def configure_paths(project_name: str) -> None:
     """Set module-level path variables from project config."""
+    global PROJECT_CFG
     global CORE_CHAPTERS_DIR, OUTPUT_DIR, CHAPTERS_OUT_DIR, ASSEMBLED_FILE
 
     cfg = load_project(project_name)
     cfg.paths.ensure_dirs()
+    PROJECT_CFG = cfg
 
     CORE_CHAPTERS_DIR = cfg.paths.core_chapters
     OUTPUT_DIR = cfg.paths.correspondential
@@ -56,8 +59,60 @@ def configure_paths(project_name: str) -> None:
     ASSEMBLED_FILE = cfg.paths.correspondential_assembled
 
     print(f"Project: {cfg.display_name}")
+    print(f"  Type:   {cfg.document_type}")
     print(f"  Input:  {CORE_CHAPTERS_DIR}")
     print(f"  Output: {OUTPUT_DIR}")
+
+
+def _get_system_prompt(base_prompt: str) -> str:
+    """Adapt a base system prompt for the current project's tradition.
+
+    For composite_text (Kephalaia) the prompt is returned unchanged.
+    For fragment_collection the Kephalaia-specific references are
+    replaced with the current project's name and language.
+    """
+    if not PROJECT_CFG or PROJECT_CFG.document_type == "composite_text":
+        return base_prompt
+
+    name = PROJECT_CFG.display_name
+    lang = PROJECT_CFG.language.replace("_", " ")
+
+    prompt = base_prompt
+
+    # Replace text-origin description in spiritual reading prompt
+    prompt = prompt.replace(
+        "The text you receive is the oldest teaching substrate of the Coptic "
+        "Kephalaia \u2014 pre-Manichaean cosmological teaching that Mani inherited "
+        "from the Eastern tradition.",
+        f"The text you receive is from the {name}, a {lang} "
+        f"Manichaean text ({PROJECT_CFG.edition}).",
+    )
+    # Replace text-origin in restoration prompt
+    prompt = prompt.replace(
+        "the oldest teaching substrate of the \nCoptic Kephalaia.",
+        f"the {name}, a {lang} Manichaean text.",
+    )
+    # Ownership references
+    prompt = prompt.replace("The Kephalaia\u2019s", f"The {name}\u2019s")
+    prompt = prompt.replace("the Kephalaia\u2019s", f"the {name}\u2019s")
+    prompt = prompt.replace(
+        "the Coptic Kephalaia", f"the {name}"
+    )
+    prompt = prompt.replace("the Kephalaia", f"the {name}")
+    prompt = prompt.replace("The Kephalaia", f"The {name}")
+    # Manuscript type
+    prompt = prompt.replace("Coptic papyrus", f"{lang} manuscript")
+
+    # Note about original text
+    if PROJECT_CFG.include_original_text:
+        prompt += (
+            f"\n\nADDITIONAL CONTEXT: The original {lang} transliteration "
+            f"is provided alongside the English translation. Technical terms "
+            f"in the original language may clarify correspondences where the "
+            f"English is ambiguous."
+        )
+
+    return prompt
 
 # ---------------------------------------------------------------------------
 # Gap patterns — square brackets [...] and curly braces {...}
@@ -516,12 +571,17 @@ def generate_spiritual_reading(
     numbered_text: str,
     ch_num: int,
     *,
+    original_text: str = "",
     debug: bool = False,
 ) -> str | None:
     """Generate a correspondential reading of the whole chapter.
 
     Receives the numbered text (with GAP-N markers) so the spiritual
     reading can embed anchor points for Phase 2 restoration.
+
+    If *original_text* is provided (for fragment collections with
+    interleaved original language), it is appended as additional
+    context for the model.
     """
     lines = [
         "Translate the following chapter from its natural sense "
@@ -532,8 +592,24 @@ def generate_spiritual_reading(
         "--- CORE TEXT (oldest teaching layer) ---\n",
         numbered_text,
         "",
-        "--- END ---",
+        "--- END CORE TEXT ---",
     ]
+
+    # Include original language text when available
+    if original_text:
+        lang = (
+            PROJECT_CFG.language.replace("_", " ").title()
+            if PROJECT_CFG
+            else "Original"
+        )
+        lines.extend([
+            "",
+            f"--- ORIGINAL TEXT ({lang} transliteration) ---\n",
+            original_text,
+            "",
+            "--- END ORIGINAL TEXT ---",
+        ])
+
     user_msg = "\n".join(lines)
 
     max_retries = 3
@@ -545,7 +621,7 @@ def generate_spiritual_reading(
 
             with client.messages.stream(
                 model=deployment,
-                system=SPIRITUAL_READING_PROMPT,
+                system=_get_system_prompt(SPIRITUAL_READING_PROMPT),
                 messages=[{"role": "user", "content": user_msg}],
                 max_tokens=50000,
                 thinking={"type": "adaptive"},
@@ -845,7 +921,7 @@ def _stream_with_tools(
 
             with client.messages.stream(
                 model=deployment,
-                system=RESTORATION_PROMPT,
+                system=_get_system_prompt(RESTORATION_PROMPT),
                 messages=messages,
                 tools=[RESTORE_LACUNA_TOOL],
                 max_tokens=128000,
@@ -982,6 +1058,7 @@ def restore_chapter_with_tools(
     spiritual_reading: str,
     ch_num: int,
     *,
+    original_text: str = "",
     debug: bool = False,
 ) -> list[dict] | None:
     """Restore lacunae via multi-turn tool-call conversation.
@@ -989,6 +1066,9 @@ def restore_chapter_with_tools(
     Each lacuna is filled individually via the restore_lacuna tool.
     Fills are validated against rules. The model receives feedback
     and continues until all restorable gaps are processed.
+
+    If *original_text* is provided, it is included as additional
+    context for the model.
 
     Returns the gap_registry (list of gap dicts) or None on total failure.
     """
@@ -1004,9 +1084,14 @@ def restore_chapter_with_tools(
     n_editorial = sum(1 for g in gap_registry if g["size"] == "editorial")
     n_restorable = total_gaps - n_large
 
+    # Use project-appropriate unit label
+    unit = "Section" if (
+        PROJECT_CFG and PROJECT_CFG.document_type == "fragment_collection"
+    ) else "Chapter"
+
     # Build first user message
     msg_lines = [
-        f"Restore the lacunae in Chapter {ch_num}.",
+        f"Restore the lacunae in {unit} {ch_num}.",
         f"Total gaps: {total_gaps}.",
     ]
     if n_large:
@@ -1025,6 +1110,16 @@ def restore_chapter_with_tools(
     msg_lines.append("")
     msg_lines.append(numbered_text)
     msg_lines.append("")
+    # Include original-language text when available
+    if original_text:
+        lang = (
+            PROJECT_CFG.language.replace("_", " ").title()
+            if PROJECT_CFG else "Original"
+        )
+        msg_lines.append(f"--- ORIGINAL LANGUAGE ({lang} transliteration) ---")
+        msg_lines.append("")
+        msg_lines.append(original_text)
+        msg_lines.append("")
     msg_lines.append("--- SPIRITUAL READING ---")
     msg_lines.append("")
     msg_lines.append(spiritual_reading)
@@ -1408,9 +1503,23 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
         return ""
 
     lines: list[str] = []
-    lines.append("# The Kephalaia Teaching Core \u2014 Restored Text")
-    lines.append("")
-    lines.append("*The oldest teaching layer of the Kephalaia with lacunae*")
+
+    # Project-aware header
+    if PROJECT_CFG and PROJECT_CFG.document_type == "fragment_collection":
+        unit_label = "Section"
+        proj_name = PROJECT_CFG.display_name
+        lines.append(f"# {proj_name} \u2014 Correspondential Reading")
+        lines.append("")
+        lines.append(
+            f"*{proj_name} ({PROJECT_CFG.edition}) with lacunae*"
+        )
+    else:
+        unit_label = "Chapter"
+        lines.append("# The Kephalaia Teaching Core \u2014 Restored Text")
+        lines.append("")
+        lines.append(
+            "*The oldest teaching layer of the Kephalaia with lacunae*"
+        )
     lines.append("*restored using correspondential constraints. All editorial*")
     lines.append("*content appears in [square brackets]. Unrestorable gaps*")
     lines.append("*remain as [...]*")
@@ -1430,8 +1539,8 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
         if not core_ch:
             continue
 
-        title = core_ch.get("chapter_title", f"Chapter {ch_num}")
-        lines.append(f"## Chapter {ch_num}: {title}")
+        title = core_ch.get("chapter_title", f"{unit_label} {ch_num}")
+        lines.append(f"## {unit_label} {ch_num}: {title}")
         lines.append("")
 
         # Build lookup
@@ -1690,6 +1799,7 @@ def main() -> None:
     def process_one(ch: dict) -> None:
         ch_num = ch["chapter_number"]
         title = ch.get("chapter_title", "")[:50]
+        orig_text = ch.get("original_text", "")
 
         core_paras = extract_core_paragraphs(ch)
         lacunae_map, total_lacunae = find_lacunae(core_paras)
@@ -1736,7 +1846,8 @@ def main() -> None:
             with print_lock:
                 print(" phase 1...", end="", flush=True)
             spiritual_reading = generate_spiritual_reading(
-                client, deployment, numbered_text, ch_num, debug=show_debug
+                client, deployment, numbered_text, ch_num,
+                original_text=orig_text, debug=show_debug
             )
             if not spiritual_reading:
                 with print_lock:
@@ -1758,6 +1869,7 @@ def main() -> None:
             core_paras,
             spiritual_reading,
             ch_num,
+            original_text=orig_text,
             debug=show_debug,
         )
         if gap_registry is None:
