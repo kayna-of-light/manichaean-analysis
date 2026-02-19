@@ -1,0 +1,106 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Concerning the Ad[vent] of the Apostle.",
+  "total_lacunae": 4,
+  "lacunae_map": {
+    "24": [
+      {
+        "index": 1,
+        "start": 270,
+        "end": 275,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 370,
+        "end": 375,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      },
+      {
+        "index": 3,
+        "start": 438,
+        "end": 443,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ],
+    "25": [
+      {
+        "index": 1,
+        "start": 184,
+        "end": 189,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation\n\n## ¶24\n\nHe disclosed to me the interior arcanum, the one that lies concealed within external states of mind and within every successive state of the church — the arcanum of the lowest natural degrees and of the highest celestial degrees. He disclosed to me the arcanum of Divine Wisdom and of falsity arising from evil; the arcanum of the devastation that comes from opposition between good and evil, and the spiritual combat, and the great assault that falsity from evil propagated on every side. Then he disclosed to me further: how Divine Wisdom acted upon falsity from evil, and how, through the commingling of truth with falsity and of good with evil in the human mind, the whole order of spiritual experience in the natural degree was constituted.\n\n## ¶25\n\nHe opened my understanding also to the way that doctrinal forms were prepared — containing vessels fashioned so that divine truths proceeding from wisdom could dwell within them, and so that whatever is of genuine wisdom could be separated and purified from the natural states of the created mind. Conversely, the residual falsities and the impurities flowing from evil were cast down into the deepest states of spiritual darkness. Then the arcanum of the formation of the Most Ancient Church — the first truly human will and understanding. He also made known to me the arcanum of the perception of good and evil from one's own self-intelligence, from which the earliest humanity appropriated knowledge through the proprium rather than through celestial influx; and thereby its understanding was opened — but only into external and sensory awareness, no longer into interior sight.\n\n---\n\n*A brief note:* The \"ships\" resist easy translation; I have rendered them as **doctrinal containing-forms** — vessels that carry and convey truths — following the correspondence of *vessel = receiving and containing form*. In Swedenborg, a ship specifically corresponds to *doctrine drawn from the Word*, the structure of knowledge that bears truths across the natural degree. This fits the function described: they are built so that what is of wisdom can ride within them and be carried free of what is merely natural.",
+  "reconstructions": [
+    {
+      "paragraph": 24,
+      "reconstructed_text": "He unveiled to me the hidden mystery, the one that is hidden from the worlds and the generations, the mystery of the depths and the heights. He unveiled to me the mystery of the Light and the Darkness; the mystery of the calamity of conflict, and the war, and the great [onslaught], the battle that the Darkness spread about. Afterwards, he unveiled to me also: How the Light [turned back] the Darkness, through their mingling this universe was set up [and fashioned]"
+    },
+    {
+      "paragraph": 25,
+      "reconstructed_text": "He opened my eyes also to the way that the ships were constructed; to enable the gods of Light to be in them, to purify the Light from creation. Conversely, the dregs and the effluent [shall be cast down] to the abyss. The mystery of the fashioning of Adam, the first man. He also informed me about the mystery of the tree of knowledge, which Adam ate from; his eyes saw."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 24,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "onslaught",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading renders this as \"the great assault that falsity from evil propagated on every side,\" and in Manichaean cosmological vocabulary \"onslaught\" is the natural-plane term for the aggressive incursion of Darkness, distinct from the already-used \"war\" and the following \"battle.\"",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 24,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "turned back",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading says \"how Divine Wisdom acted upon falsity from evil,\" and in the Kephalaia the characteristic expression for Light's active response to the invasion of Darkness is \"turned back,\" describing the counter-movement prior to the mingling that constituted the cosmos.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 24,
+      "index": 3,
+      "gap_id": "GAP-3",
+      "fill": "and fashioned",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading says \"the whole order of spiritual experience in the natural degree was constituted,\" and Coptic Manichaean texts characteristically employ the hendiadys \"set up and fashioned\" to describe the full establishment of the cosmos through the mingling of Light and Darkness.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 25,
+      "index": 1,
+      "gap_id": "GAP-4",
+      "fill": "shall be cast down",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading explicitly states \"the residual falsities and the impurities flowing from evil were cast down into the deepest states of spiritual darkness,\" and \"shall be cast down\" is the natural-plane verb phrase for the separation of dregs descending to the abyss, contrasting with the Light purified upward through the ships.",
+      "confidence": "moderate",
+      "notes": ""
+    }
+  ],
+  "violations": [],
+  "assessment": "4 restored"
+}

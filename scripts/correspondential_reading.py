@@ -5,14 +5,12 @@
 Architecture:
   Phase 1 — Spiritual Reading (Claude): Translate whole chapter from
             natural sense into spiritual sense via correspondences.
-  Phase 2 — Restoration (Claude + adaptive thinking): Receive original
-            text + spiritual reading, output complete restored paragraphs
-            with brackets marking additions. Whole chapter in one call.
-  Validation — Diff model output against original to extract fills and
-               detect any unauthorized changes outside brackets.
+  Phase 2 — Tool-Call Restoration (Claude): Multi-turn conversation
+            where the model uses the restore_lacuna tool for each gap.
+            Each fill is individually validated. The model receives
+            feedback and continues until all gaps are processed.
 
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
-Fallback: GPT-5.2 via OpenAI-compatible endpoint.
 """
 
 # ---------------------------------------------------------------------------
@@ -71,19 +69,64 @@ def find_all_gaps(
 
 def count_all_gaps(text: str) -> int:
     """Count total gap markers (both [] and {}) in text."""
-    return len(list(LACUNA_RE.finditer(text))) + len(list(CURLY_GAP_RE.finditer(text)))
+    return len(list(LACUNA_RE.finditer(text))) + len(
+        list(CURLY_GAP_RE.finditer(text))
+    )
 
 
 def _clean_streaming_output(text: str) -> str:
-    """Trim leading/trailing whitespace from streaming output.
-
-    The chunks are joined with "".join() so the model's own newlines
-    are preserved. This just trims the edges.
-    """
+    """Trim leading/trailing whitespace from streaming output."""
     return text.strip()
 
+
 # ---------------------------------------------------------------------------
-# Prompts — minimal, profile-based
+# Gap classification
+# ---------------------------------------------------------------------------
+
+# Page markers inside gaps: (N) where N is digits
+_PAGE_IN_GAP_RE = re.compile(r"\(\d+\)")
+
+
+def is_actual_gap(content: str) -> bool:
+    """Check if bracket content is an actual gap (not translator fill).
+
+    Actual gaps contain only dots, spaces, page markers, or are empty.
+    Translator fills contain real word characters.
+    """
+    stripped = content.strip()
+    if not stripped:
+        return True  # empty brackets
+    # Remove dots, spaces, page markers, slashes
+    cleaned = re.sub(r"[\s./()\d]", "", stripped)
+    return not cleaned  # True if only whitespace/dots/numbers remain
+
+
+def classify_gap_size(content: str, gap_type: str) -> str:
+    """Classify gap size based on content pattern.
+
+    Returns: 'single', 'small', 'medium', or 'large'.
+    """
+    if gap_type == "curly":
+        return "single"
+    content = content.strip()
+    if not content:
+        return "single"  # empty square brackets
+    # Strip page markers before counting dots
+    cleaned = _PAGE_IN_GAP_RE.sub("", content).strip()
+    # Count dot groups (... or . . .)
+    n_ellipsis = len(re.findall(r"\.{2,}", cleaned))
+    n_spaced = len(re.findall(r"\.\s\.\s\.", cleaned))
+    total = max(n_ellipsis, n_spaced)
+    if total <= 1:
+        return "small"
+    elif total == 2:
+        return "medium"
+    else:
+        return "large"
+
+
+# ---------------------------------------------------------------------------
+# Prompts
 # ---------------------------------------------------------------------------
 
 SPIRITUAL_READING_PROMPT = """\
@@ -108,66 +151,105 @@ Produce continuous prose about spiritual states and processes. \
 If an image resists translation, say so briefly and give your \
 best reading."""
 
+
 RESTORATION_PROMPT = """\
 You are an expert in the doctrine of correspondences as written by \
 Emanuel Swedenborg, with deep specialization in ancient cosmological \
 vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
 
-You are restoring the oldest teaching substrate of the Coptic \
-Kephalaia. The text has lacunae — gaps marked with square brackets. \
-Your task is to fill these gaps using the correspondential logic of \
-the text.
+You are restoring lacunae in the oldest teaching substrate of the \
+Coptic Kephalaia. The text has gaps marked with numbered identifiers \
+(GAP-1, GAP-2, etc.). Your task is to fill these gaps using the \
+correspondential logic of the text.
 
-You receive two things:
-1. The ORIGINAL TEXT with brackets marking gaps
+You receive:
+1. The ORIGINAL TEXT with numbered gaps: [GAP-N: ...] or {GAP-N}
 2. A SPIRITUAL READING that translates the text into its spiritual sense
 
 The spiritual reading tells you WHAT spiritual reality each passage \
 describes. Your fills must express that reality in the text's own \
 natural-plane vocabulary — the language of the Kephalaia itself.
 
-Lacuna notation — the translator marks gap SIZE:
-- {single} or {} — exactly ONE word is missing. Your fill must be \
-  exactly one word.
-- [partial]text or text[partial] — a partial word. Your fill + the \
+Brackets WITHOUT a GAP-N identifier are translator fills — do not \
+modify them. Only fill gaps that have a GAP-N label.
+
+Lacuna types by size:
+- {GAP-N} — exactly ONE word missing. Fill with exactly one word.
+- [GAP-N: ...]next_letters — partial word gap. Your fill + the \
   adjacent letters must form a real word.
-- [ ... ] — a small gap (a few words to a short phrase)
-- [ ... ... ] — a medium gap (roughly a clause or sentence)
-- [ ... ... ... ] — a large gap (multiple sentences or lines)
-- (N) inside a gap (e.g. [ ... (3) ... ]) — a manuscript PAGE \
-  BOUNDARY. The gap spans a page break. The number is the page, \
-  not content. Do NOT include page numbers in your fill.
+- [GAP-N: ...] — small gap (a few words to a short phrase)
+- [GAP-N: ... ...] — medium gap (roughly a clause or sentence)
+- [GAP-N: ... ... ...] — large gap (multiple sentences or lines)
 
 Gap-size restoration policy:
-- {} and [ ... ] — ALWAYS restore. Grammar and context constrain \
-  these tightly.
-- [ ... ... ] (medium) — restore ONLY if the surrounding grammar, \
-  topic, and correspondential logic strongly constrain what belongs \
-  there. If the content could plausibly be multiple different things, \
-  leave the gap intact as [ ... ... ].
-- [ ... ... ... ] (large) — NEVER restore. Leave exactly as-is. \
-  A gap spanning multiple sentences could contain anything; filling \
-  it would be invention, not restoration.
+- {GAP-N} and [GAP-N: ...] — ALWAYS restore.
+- [GAP-N: ... ...] (medium) — restore ONLY if surrounding context \
+  strongly constrains what belongs. Otherwise skip it.
+- [GAP-N: ... ... ...] (large) — NEVER restore. Skip entirely.
+
+For each gap you can fill, call the restore_lacuna tool with:
+- lacuna_id: the gap ID (e.g., "GAP-1")
+- fill: your restored text (just the words — no brackets)
+- explanation: why this fill fits (one sentence)
+- confidence: "high", "moderate", or "low"
 
 Rules:
-- Output COMPLETE PARAGRAPHS — mark each with ¶N:
-- Text OUTSIDE gaps is FIXED — do not change it at all
-- Fill {} gaps with {single_word} — keep curly braces, exactly one word
-- Fill [] gaps with [your phrase] — keep square brackets
-- Respect gap size: {} = one word, [ ... ] = a few words, \
-  [ ... ... ] = a clause
-- For partial words like [te]aching, your fill + the adjacent letters \
-  must form a real word
-- For [...] gaps, let the spiritual reading and the correspondential \
-  logic constrain what belongs there
-- If a gap truly cannot be restored, keep it as [...] or {}
-- Do NOT start a fill with punctuation (comma, period, semicolon). \
-  Punctuation belongs OUTSIDE the brackets, not inside.
+- {GAP-N} fills must be exactly one word
+- Do NOT start fills with punctuation (comma, period, semicolon)
+- Do NOT use forward slash (/) in fills
+- Do NOT include manuscript page numbers in fills
 - Write in the register of ancient cosmological teaching — impersonal, \
   structural, expository
-- Do NOT use forward slash (/) in fills
-- Do NOT include manuscript page numbers (N) in your fills
-- Output every paragraph as ¶N: followed by the complete text"""
+- Skip gaps you cannot confidently restore — do not force a fill"""
+
+
+# ---------------------------------------------------------------------------
+# Tool definition
+# ---------------------------------------------------------------------------
+
+RESTORE_LACUNA_TOOL = {
+    "name": "restore_lacuna",
+    "description": (
+        "Fill a single lacuna (gap) in the text. "
+        "Call this once per gap you want to restore. "
+        "For gaps you cannot confidently fill, simply skip them — "
+        "do not call this tool for those gaps."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "lacuna_id": {
+                "type": "string",
+                "description": "The gap identifier (e.g., 'GAP-1')",
+            },
+            "fill": {
+                "type": "string",
+                "description": (
+                    "The restored text. For single-word gaps ({GAP-N}), "
+                    "exactly one word. For phrase gaps ([GAP-N: ...]), "
+                    "the complete phrase. No brackets — just the words."
+                ),
+            },
+            "explanation": {
+                "type": "string",
+                "description": (
+                    "One-sentence explanation of why this fill fits "
+                    "based on correspondential logic and context."
+                ),
+            },
+            "confidence": {
+                "type": "string",
+                "enum": ["high", "moderate", "low"],
+                "description": (
+                    "high = grammar/context uniquely determine the fill; "
+                    "moderate = strong constraints but alternatives exist; "
+                    "low = educated guess based on theme"
+                ),
+            },
+        },
+        "required": ["lacuna_id", "fill", "explanation", "confidence"],
+    },
+}
 
 
 # ---------------------------------------------------------------------------
@@ -225,6 +307,10 @@ def extract_core_paragraphs(chapter: dict) -> list[dict]:
     return result
 
 
+# ---------------------------------------------------------------------------
+# Core text processing
+# ---------------------------------------------------------------------------
+
 # Regex for page markers like ⟨p.18⟩ or ⟨p.N⟩
 PAGE_MARKER_RE = re.compile(r"\s*\u27E8p\.\d+\u27E9\s*")
 # Bare ellipsis (2+ dots)
@@ -246,8 +332,6 @@ def fix_source_brackets(text: str) -> str:
        → Close with `]` before next `[` or at text end
     """
     # Pass 1: Fix double brackets `]]` → single `]`
-    # But only where one of them is stray (not nested brackets)
-    # Simple heuristic: `]]` is never valid in this corpus
     text = text.replace("]]", "]")
 
     # Pass 2: Walk through and fix remaining imbalances
@@ -365,7 +449,7 @@ def generate_spiritual_reading(
         "--- CORE TEXT (oldest teaching layer) ---\n",
     ]
     for p in core_paras:
-        lines.append(f"¶{p['paragraph_number']}: {p['core_text']}")
+        lines.append(f"\u00b6{p['paragraph_number']}: {p['core_text']}")
         lines.append("")
     lines.append("--- END ---")
     user_msg = "\n".join(lines)
@@ -373,7 +457,7 @@ def generate_spiritual_reading(
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
-            text_parts = []
+            text_parts: list[str] = []
             in_thinking = False
             thinking_chars = 0
 
@@ -387,7 +471,6 @@ def generate_spiritual_reading(
                 for event in stream:
                     etype = getattr(event, "type", "")
 
-                    # Thinking block started
                     if etype == "content_block_start":
                         block = getattr(event, "content_block", None)
                         if block and getattr(block, "type", "") == "thinking":
@@ -400,7 +483,6 @@ def generate_spiritual_reading(
                             if debug:
                                 print("\n  [output] ", end="", flush=True)
 
-                    # Thinking delta
                     elif etype == "content_block_delta":
                         delta = getattr(event, "delta", None)
                         if delta:
@@ -416,22 +498,18 @@ def generate_spiritual_reading(
                                 if debug:
                                     print(chunk, end="", flush=True)
 
-                    # Block ended
                     elif etype == "content_block_stop":
                         if in_thinking:
                             if debug:
                                 print(f" [{thinking_chars} chars]", flush=True)
                             in_thinking = False
 
-                    # Message ended
                     elif etype == "message_stop":
                         if debug:
                             print(flush=True)
 
             if text_parts:
-                return _clean_streaming_output(
-                    "".join(text_parts)
-                )
+                return _clean_streaming_output("".join(text_parts))
             return None
 
         except Exception as e:
@@ -459,79 +537,207 @@ def generate_spiritual_reading(
 
 
 # ---------------------------------------------------------------------------
-# Phase 2: Restoration (single call — streaming + adaptive, text output)
+# Phase 2: Tool-Call Restoration
 # ---------------------------------------------------------------------------
 
 
-def restore_chapter(
+def number_chapter_gaps(
+    core_paras: list[dict],
+) -> tuple[str, list[dict]]:
+    """Number all actual gaps for the restoration prompt.
+
+    Only real gaps (empty or dots) get GAP-N identifiers.
+    Translator fills (brackets with real words) are left unchanged.
+
+    Returns (numbered_text_for_prompt, gap_registry).
+    Each registry entry is a dict with: gap_id, paragraph, gap_index,
+    gap_type, size, original, full_match, start, end, filled, fill,
+    explanation, confidence.
+    """
+    gap_registry: list[dict] = []
+    gap_counter = 0
+    para_gap_counts: dict[int, int] = {}
+    lines: list[str] = []
+
+    for p in core_paras:
+        pnum = p["paragraph_number"]
+        text = p["core_text"]
+        gaps = find_all_gaps(text)
+
+        parts: list[str] = []
+        prev_end = 0
+
+        for start, end, full_match, content, gap_type in gaps:
+            # Add text before this gap
+            parts.append(text[prev_end:start])
+
+            if is_actual_gap(content):
+                gap_counter += 1
+                gap_id = f"GAP-{gap_counter}"
+                size = classify_gap_size(content, gap_type)
+
+                # Track per-paragraph index
+                para_gap_counts.setdefault(pnum, 0)
+                para_gap_counts[pnum] += 1
+
+                # Build numbered marker for prompt
+                if gap_type == "curly":
+                    parts.append(f"{{{gap_id}}}")
+                else:
+                    # Strip page markers from content shown to model
+                    clean_content = _PAGE_IN_GAP_RE.sub("", content).strip()
+                    clean_content = re.sub(r"\s+", " ", clean_content)
+                    parts.append(f"[{gap_id}: {clean_content}]")
+
+                gap_registry.append(
+                    {
+                        "gap_id": gap_id,
+                        "paragraph": pnum,
+                        "gap_index": para_gap_counts[pnum],
+                        "gap_type": gap_type,
+                        "size": size,
+                        "original": content,
+                        "full_match": full_match,
+                        "start": start,
+                        "end": end,
+                        "filled": False,
+                        "fill": None,
+                        "explanation": None,
+                        "confidence": None,
+                    }
+                )
+            else:
+                # Translator fill — keep unchanged
+                parts.append(full_match)
+
+            prev_end = end
+
+        # Add remaining text after last gap
+        parts.append(text[prev_end:])
+
+        numbered = "".join(parts)
+        lines.append(f"\u00b6{pnum}: {numbered}")
+
+    return "\n\n".join(lines), gap_registry
+
+
+def validate_fill(gap: dict, fill: str) -> tuple[bool, str]:
+    """Validate a proposed fill against rules.
+
+    Returns (accepted, reason_message).
+    """
+    # Rule: large gaps must not be filled
+    if gap["size"] == "large":
+        return (
+            False,
+            "Large gaps ([ ... ... ... ]) must not be restored per policy.",
+        )
+
+    # Rule: single-word gaps must be exactly one word
+    if gap["size"] == "single":
+        words = fill.strip().split()
+        if len(words) != 1:
+            return (
+                False,
+                f"Single-word gap requires exactly 1 word, got {len(words)}.",
+            )
+
+    # Rule: no leading punctuation
+    if fill and fill[0] in ",.;:!?":
+        return (
+            False,
+            f"Fill starts with punctuation '{fill[0]}'. "
+            f"Punctuation belongs outside brackets.",
+        )
+
+    # Rule: no forward slash
+    if "/" in fill:
+        return False, "Fill contains forward slash (/)."
+
+    # Rule: no page numbers
+    if re.search(r"\(\d+\)", fill):
+        return False, "Fill contains what looks like a page number."
+
+    # Rule: fill must not be empty
+    if not fill.strip():
+        return False, "Empty fill. Skip the gap instead of submitting empty."
+
+    return True, "Accepted."
+
+
+def apply_fills_to_paragraph(
+    original_text: str,
+    para_gaps: list[dict],
+) -> str:
+    """Apply fills to a paragraph text, producing the reconstructed version.
+
+    Filled gaps get [fill] (always square brackets in output).
+    Unfilled gaps keep their original marker.
+    """
+    text = original_text
+    # Sort by position descending (apply end-to-start to preserve positions)
+    sorted_gaps = sorted(para_gaps, key=lambda g: g["start"], reverse=True)
+    for gap in sorted_gaps:
+        if gap["filled"] and gap["fill"]:
+            # Always use square brackets for restored text
+            replacement = f"[{gap['fill']}]"
+        else:
+            # Keep original gap marker
+            replacement = gap["full_match"]
+        text = text[: gap["start"]] + replacement + text[gap["end"] :]
+    return text
+
+
+def _stream_with_tools(
     client: AnthropicFoundry,
     deployment: str,
-    core_paras: list[dict],
-    spiritual_reading: str,
+    messages: list[dict],
     ch_num: int,
+    turn: int,
     *,
     debug: bool = False,
-) -> dict[int, str] | None:
-    """Restore all lacunae in one call.
+) -> tuple[list[tuple[str, str, dict]], str, str, list]:
+    """Stream an API call with tools.
 
-    Uses streaming + adaptive thinking. Model outputs text with
-    paragraph-number prefixes. Parsed with regex.
+    Shows thinking output in real-time when debug=True.
+    Uses get_final_message() for structured access to content blocks.
 
-    Returns {paragraph_number: restored_text} or None on failure.
+    Returns (tool_uses, text_output, stop_reason, content_for_history).
+    - tool_uses: list of (tool_use_id, tool_name, parsed_input) tuples
+    - text_output: concatenated text blocks
+    - stop_reason: "end_turn" or "tool_use"
+    - content_for_history: content blocks for assistant message in history
     """
-    lines = [
-        "Below is the original chapter text followed by its spiritual reading.",
-        "Restore all lacunae (gaps in square brackets).",
-        "",
-        "--- ORIGINAL TEXT ---",
-        "",
-    ]
-    for p in core_paras:
-        lines.append(f"¶{p['paragraph_number']}: {p['core_text']}")
-        lines.append("")
-    lines.append("--- SPIRITUAL READING ---")
-    lines.append("")
-    lines.append(spiritual_reading)
-    lines.append("")
-    lines.append("--- END ---")
-    lines.append("")
-    lines.append(
-        "Restore the lacunae and output every paragraph with your "
-        "additions in [square brackets]. Mark each paragraph with ¶N:"
-    )
-    user_msg = "\n".join(lines)
-
     max_retries = 3
     for attempt in range(1, max_retries + 1):
         try:
-            text_parts = []
-            in_thinking = False
             thinking_chars = 0
 
             with client.messages.stream(
                 model=deployment,
                 system=RESTORATION_PROMPT,
-                messages=[{"role": "user", "content": user_msg}],
+                messages=messages,
+                tools=[RESTORE_LACUNA_TOOL],
                 max_tokens=128000,
                 thinking={"type": "adaptive"},
             ) as stream:
+                # Stream events for debug output (thinking)
                 for event in stream:
                     etype = getattr(event, "type", "")
 
-                    # Thinking block started
                     if etype == "content_block_start":
                         block = getattr(event, "content_block", None)
-                        if block and getattr(block, "type", "") == "thinking":
-                            in_thinking = True
-                            thinking_chars = 0
-                            if debug:
-                                print("\n  [thinking] ", end="", flush=True)
-                        elif block and getattr(block, "type", "") == "text":
-                            in_thinking = False
-                            if debug:
-                                print("\n  [output] ", end="", flush=True)
+                        if (
+                            block
+                            and getattr(block, "type", "") == "thinking"
+                            and debug
+                        ):
+                            print(
+                                f"\n  [thinking t{turn}] ",
+                                end="",
+                                flush=True,
+                            )
 
-                    # Thinking delta
                     elif etype == "content_block_delta":
                         delta = getattr(event, "delta", None)
                         if delta:
@@ -541,497 +747,311 @@ def restore_chapter(
                                 thinking_chars += len(chunk)
                                 if debug:
                                     print(chunk, end="", flush=True)
-                            elif dtype == "text_delta":
-                                chunk = getattr(delta, "text", "")
-                                text_parts.append(chunk)
-                                if debug:
-                                    print(chunk, end="", flush=True)
 
-                    # Block ended
                     elif etype == "content_block_stop":
-                        if in_thinking:
-                            if debug:
-                                print(f" [{thinking_chars} chars]", flush=True)
-                            in_thinking = False
+                        if debug and thinking_chars:
+                            # Only print once per thinking block
+                            pass
 
-                    # Message ended
-                    elif etype == "message_stop":
-                        if debug:
-                            print(flush=True)
+                # Get the fully assembled message
+                final_msg = stream.get_final_message()
 
-            if text_parts:
-                raw = _clean_streaming_output("".join(text_parts))
-                parsed = parse_restored_paragraphs(raw)
-                if parsed:
-                    return parsed
+            if debug and thinking_chars:
+                print(f" [{thinking_chars} chars]", flush=True)
 
-            print(
-                f"\n  Phase 2 Ch.{ch_num}: no usable output "
-                f"(attempt {attempt}/{max_retries})"
+            # Extract tool uses and text from final message
+            tool_uses: list[tuple[str, str, dict]] = []
+            text_parts: list[str] = []
+
+            for block in final_msg.content:
+                btype = getattr(block, "type", "")
+                if btype == "tool_use":
+                    tool_uses.append(
+                        (block.id, block.name, block.input)
+                    )
+                elif btype == "text":
+                    text_parts.append(block.text)
+
+            text_output = " ".join(text_parts).strip()
+
+            # Build content for message history (serializable)
+            content_for_history: list[dict] = []
+            for block in final_msg.content:
+                btype = getattr(block, "type", "")
+                if btype == "text":
+                    content_for_history.append(
+                        {"type": "text", "text": block.text}
+                    )
+                elif btype == "tool_use":
+                    content_for_history.append(
+                        {
+                            "type": "tool_use",
+                            "id": block.id,
+                            "name": block.name,
+                            "input": block.input,
+                        }
+                    )
+                elif btype == "thinking":
+                    entry: dict = {
+                        "type": "thinking",
+                        "thinking": block.thinking,
+                    }
+                    if hasattr(block, "signature") and block.signature:
+                        entry["signature"] = block.signature
+                    content_for_history.append(entry)
+
+            return (
+                tool_uses,
+                text_output,
+                final_msg.stop_reason,
+                content_for_history,
             )
-            if attempt < max_retries:
-                time.sleep(attempt * 5)
-                continue
-            return None
 
         except Exception as e:
             err_str = str(e)
-            if "content_filter" in err_str.lower():
+            if "rate" in err_str.lower() or "429" in err_str:
+                wait = 60.0
                 print(
-                    f"  Phase 2 content filter Ch.{ch_num}, "
+                    f"\n  Rate limit Ch.{ch_num} t{turn}, "
+                    f"waiting {wait:.0f}s..."
+                )
+                time.sleep(wait)
+                continue
+            elif "content_filter" in err_str.lower():
+                print(
+                    f"\n  Content filter Ch.{ch_num} t{turn}, "
                     f"attempt {attempt}/{max_retries}"
                 )
                 if attempt < max_retries:
                     time.sleep(attempt * 10)
                     continue
-            elif "rate" in err_str.lower() or "429" in err_str:
-                wait = 60.0
-                print(f"  Phase 2 rate limit, waiting {wait:.0f}s...")
-                time.sleep(wait)
+            elif attempt < max_retries:
+                print(
+                    f"\n  Error Ch.{ch_num} t{turn} "
+                    f"attempt {attempt}/{max_retries}: "
+                    f"{type(e).__name__}: {e}"
+                )
+                time.sleep(attempt * 5)
                 continue
             else:
                 print(
-                    f"  Phase 2 error Ch.{ch_num} "
-                    f"(attempt {attempt}/{max_retries}): "
+                    f"\n  FATAL Ch.{ch_num} t{turn}: "
                     f"{type(e).__name__}: {e}"
                 )
                 traceback.print_exc()
-                if attempt < max_retries:
-                    time.sleep(attempt * 5)
-                    continue
-            return None
-    return None
+                raise
+
+    # All retries exhausted
+    return [], "", "error", []
 
 
-# ---------------------------------------------------------------------------
-# Phase 2b: Retry rejected paragraphs individually
-# ---------------------------------------------------------------------------
-
-RETRY_PROMPT = """\
-You are an expert in the doctrine of correspondences as written by \
-Emanuel Swedenborg, with deep specialization in ancient cosmological \
-vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
-
-You are restoring lacunae (square-bracket gaps) in the oldest \
-teaching substrate of the Coptic Kephalaia.
-
-A previous restoration attempt for some paragraphs was REJECTED \
-because text outside the brackets was altered. This is never allowed. \
-The text outside brackets is FIXED — sacred, untouchable.
-
-You receive:
-1. PARAGRAPHS TO RESTORE — the original text with brackets
-2. ACCEPTED CONTEXT — nearby paragraphs that were already restored \
-   successfully (for continuity and logic)
-3. The SPIRITUAL READING that translates the passage into its \
-   spiritual sense
-
-Lacuna notation — the translator marks gap SIZE:
-- {single} or {} — exactly ONE word is missing. Fill with one word.
-- [partial]text or text[partial] — partial word. Fill + adjacent \
-  letters must form a real word.
-- [ ... ] — small gap (a few words)
-- [ ... ... ] — medium gap (a clause)
-- [ ... ... ... ] — large gap (multiple sentences)
-- (N) inside a gap — manuscript PAGE BOUNDARY, not content. \
-  Do NOT include page numbers in fills.
-
-Gap-size restoration policy:
-- {} and [ ... ] — ALWAYS restore.
-- [ ... ... ] (medium) — restore ONLY if surrounding context strongly \
-  constrains the content. If unsure, leave as [ ... ... ].
-- [ ... ... ... ] (large) — NEVER restore. Leave exactly as-is.
-
-Rules:
-- Output COMPLETE PARAGRAPHS with additions ONLY inside gap markers
-- Text OUTSIDE gaps must be EXACTLY as given — do not add, remove, \
-  or change a single character
-- Fill {} gaps with {single_word} — keep curly braces, exactly one word
-- Fill [] gaps with [your phrase] — keep square brackets
-- Respect gap size: {} = one word, [ ... ] a few words, etc.
-- If a gap truly cannot be restored, keep it as [...] or {}
-- Do NOT start a fill with punctuation (comma, period, semicolon). \
-  Punctuation belongs OUTSIDE the brackets, not inside.
-- Write in the register of ancient cosmological teaching
-- Do NOT use forward slash (/) in fills
-- Do NOT include manuscript page numbers (N) in your fills
-- Output every paragraph as ¶N: followed by the complete text"""
-
-
-def retry_failed_paragraphs(
+def restore_chapter_with_tools(
     client: AnthropicFoundry,
     deployment: str,
-    failed_paras: list[dict],
+    core_paras: list[dict],
     spiritual_reading: str,
-    accepted: dict[int, str],
     ch_num: int,
     *,
     debug: bool = False,
-) -> dict[int, str] | None:
-    """Retry rejected paragraphs with accepted context.
+) -> list[dict] | None:
+    """Restore lacunae via multi-turn tool-call conversation.
 
-    Single call: streaming + adaptive thinking, text output.
+    Each lacuna is filled individually via the restore_lacuna tool.
+    Fills are validated against rules. The model receives feedback
+    and continues until all restorable gaps are processed.
+
+    Returns the gap_registry (list of gap dicts) or None on total failure.
     """
-    lines = [
-        "Some paragraphs in Chapter {} were rejected because text "
-        "outside brackets was altered. Restore ONLY the following "
-        "paragraphs. DO NOT change any text outside brackets.".format(ch_num),
-        "",
+    # Number all gaps
+    numbered_text, gap_registry = number_chapter_gaps(core_paras)
+
+    total_gaps = len(gap_registry)
+    if total_gaps == 0:
+        return []
+
+    # Count restorable vs large (will be skipped)
+    n_large = sum(1 for g in gap_registry if g["size"] == "large")
+    n_restorable = total_gaps - n_large
+
+    # Build first user message
+    msg_lines = [
+        f"Restore the lacunae in Chapter {ch_num}.",
+        f"Total gaps: {total_gaps}.",
     ]
-
-    # Provide accepted context (neighboring paragraphs)
-    if accepted:
-        lines.append("--- ACCEPTED CONTEXT (already restored, for reference) ---")
-        lines.append("")
-        for pnum in sorted(accepted):
-            lines.append(f"¶{pnum}: {accepted[pnum]}")
-            lines.append("")
-        lines.append("--- END CONTEXT ---")
-        lines.append("")
-
-    # Provide the paragraphs that need restoration
-    lines.append("--- PARAGRAPHS TO RESTORE ---")
-    lines.append("")
-    for p in failed_paras:
-        lines.append(f"¶{p['paragraph_number']}: {p['core_text']}")
-        lines.append("")
-    lines.append("--- END ---")
-    lines.append("")
-
-    # Include relevant spiritual reading
-    lines.append("--- SPIRITUAL READING ---")
-    lines.append("")
-    lines.append(spiritual_reading)
-    lines.append("")
-    lines.append("--- END ---")
-    lines.append("")
-    lines.append(
-        "Restore ONLY the paragraphs listed under PARAGRAPHS TO RESTORE. "
-        "Output each as ¶N: followed by the complete text."
+    if n_large:
+        msg_lines.append(
+            f"({n_large} are large gaps — skip these per policy, "
+            f"do not call restore_lacuna for them.)"
+        )
+    msg_lines.append(f"Restorable gaps: {n_restorable}.")
+    msg_lines.append("")
+    msg_lines.append("--- ORIGINAL TEXT (with numbered gaps) ---")
+    msg_lines.append("")
+    msg_lines.append(numbered_text)
+    msg_lines.append("")
+    msg_lines.append("--- SPIRITUAL READING ---")
+    msg_lines.append("")
+    msg_lines.append(spiritual_reading)
+    msg_lines.append("")
+    msg_lines.append("--- END ---")
+    msg_lines.append("")
+    msg_lines.append(
+        "Use the restore_lacuna tool for each gap you can fill. "
+        "Work through all restorable gaps systematically. "
+        "Skip any you cannot confidently restore."
     )
 
-    user_msg = "\n".join(lines)
+    messages: list[dict] = [
+        {"role": "user", "content": "\n".join(msg_lines)}
+    ]
 
-    max_retries = 3
-    for attempt in range(1, max_retries + 1):
+    max_turns = 10
+
+    for turn in range(max_turns):
+        # --- API call with streaming ---
         try:
-            text_parts = []
-            in_thinking = False
-            thinking_chars = 0
-
-            with client.messages.stream(
-                model=deployment,
-                system=RETRY_PROMPT,
-                messages=[{"role": "user", "content": user_msg}],
-                max_tokens=128000,
-                thinking={"type": "adaptive"},
-            ) as stream:
-                for event in stream:
-                    etype = getattr(event, "type", "")
-
-                    # Thinking block started
-                    if etype == "content_block_start":
-                        block = getattr(event, "content_block", None)
-                        if block and getattr(block, "type", "") == "thinking":
-                            in_thinking = True
-                            thinking_chars = 0
-                            if debug:
-                                print("\n  [thinking] ", end="", flush=True)
-                        elif block and getattr(block, "type", "") == "text":
-                            in_thinking = False
-                            if debug:
-                                print("\n  [output] ", end="", flush=True)
-
-                    # Thinking delta
-                    elif etype == "content_block_delta":
-                        delta = getattr(event, "delta", None)
-                        if delta:
-                            dtype = getattr(delta, "type", "")
-                            if dtype == "thinking_delta":
-                                chunk = getattr(delta, "thinking", "")
-                                thinking_chars += len(chunk)
-                                if debug:
-                                    print(chunk, end="", flush=True)
-                            elif dtype == "text_delta":
-                                chunk = getattr(delta, "text", "")
-                                text_parts.append(chunk)
-                                if debug:
-                                    print(chunk, end="", flush=True)
-
-                    # Block ended
-                    elif etype == "content_block_stop":
-                        if in_thinking:
-                            if debug:
-                                print(f" [{thinking_chars} chars]", flush=True)
-                            in_thinking = False
-
-                    # Message ended
-                    elif etype == "message_stop":
-                        if debug:
-                            print(flush=True)
-            if text_parts:
-                raw = _clean_streaming_output("".join(text_parts))
-                parsed = parse_restored_paragraphs(raw)
-                if parsed:
-                    return parsed
-
-            print(
-                f"  Retry Ch.{ch_num}: no usable output "
-                f"(attempt {attempt}/{max_retries})"
+            tool_uses, text_output, stop_reason, assistant_content = (
+                _stream_with_tools(
+                    client, deployment, messages, ch_num, turn, debug=debug
+                )
             )
-            if attempt < max_retries:
-                time.sleep(attempt * 5)
-                continue
-            return None
-
         except Exception as e:
-            err_str = str(e)
-            if "content_filter" in err_str.lower():
+            print(f"\n  Ch.{ch_num} API failure on turn {turn}: {e}")
+            return gap_registry if turn > 0 else None
+
+        # Add assistant message to history
+        messages.append({"role": "assistant", "content": assistant_content})
+
+        if not tool_uses:
+            # Model didn't make any tool calls — it's done
+            if debug:
                 print(
-                    f"  Retry content filter Ch.{ch_num}, "
-                    f"attempt {attempt}/{max_retries}"
+                    f"  Ch.{ch_num} t{turn}: "
+                    f"no tool calls, model finished"
                 )
-                if attempt < max_retries:
-                    time.sleep(attempt * 10)
-                    continue
-            elif "rate" in err_str.lower() or "429" in err_str:
-                wait = 60.0
-                print(f"  Retry rate limit, waiting {wait:.0f}s...")
-                time.sleep(wait)
-                continue
+                if text_output:
+                    print(f"  Model said: {text_output[:200]}")
+            break
+
+        # Process each tool call
+        tool_results: list[dict] = []
+        n_accepted_this_turn = 0
+        n_rejected_this_turn = 0
+        rejection_notes: list[str] = []
+
+        for tc_id, tc_name, tc_input in tool_uses:
+            gap_id = tc_input.get("lacuna_id", "")
+            fill = tc_input.get("fill", "")
+            explanation = tc_input.get("explanation", "")
+            confidence = tc_input.get("confidence", "moderate")
+
+            # Find the gap in registry
+            gap = next(
+                (g for g in gap_registry if g["gap_id"] == gap_id), None
+            )
+
+            if gap is None:
+                result_text = f"REJECTED: Unknown gap ID '{gap_id}'."
+                n_rejected_this_turn += 1
+                rejection_notes.append(f"  {gap_id}: unknown ID")
+            elif gap["filled"]:
+                result_text = f"REJECTED: {gap_id} was already filled."
+                n_rejected_this_turn += 1
             else:
-                print(
-                    f"  Retry error Ch.{ch_num} "
-                    f"(attempt {attempt}/{max_retries}): "
-                    f"{type(e).__name__}: {e}"
-                )
-                traceback.print_exc()
-                if attempt < max_retries:
-                    time.sleep(attempt * 5)
-                    continue
-            return None
-    return None
+                accepted, reason = validate_fill(gap, fill)
+                if accepted:
+                    gap["filled"] = True
+                    gap["fill"] = fill
+                    gap["explanation"] = explanation
+                    gap["confidence"] = confidence
+                    result_text = (
+                        f"ACCEPTED: {gap_id} filled."
+                    )
+                    n_accepted_this_turn += 1
+                else:
+                    result_text = f"REJECTED: {reason}"
+                    n_rejected_this_turn += 1
+                    rejection_notes.append(f"  {gap_id}: {reason}")
 
-
-# ---------------------------------------------------------------------------
-# Validation: skeleton-based integrity check
-# ---------------------------------------------------------------------------
-
-
-def normalize_skeleton(text: str) -> str:
-    """Strip all gap content ([brackets] and {curly}) and normalize.
-
-    The skeleton is the INVARIANT — it must be identical between
-    original and restored text. Any change to the skeleton means the
-    model altered text it was not allowed to touch.
-
-    Normalization handles trivial model-injected differences:
-    - Strip [bracket content] and {curly content}
-    - Curly quotes → straight quotes  (" " ' ' → " ')
-    - Strip surrounding quotes from the entire text
-    - Normalize ellipsis character (… → ...)
-    - Normalize em/en dashes (— – → --)
-    - Strip soft hyphens and word-break hyphens (Never-theless → Nevertheless)
-    - Strip leading colon+space (dialogue frame artifact)
-    - Normalize punctuation spacing (remove spaces before ,;:)
-    - Collapse whitespace
-    """
-    # Strip both gap types
-    stripped = LACUNA_RE.sub("", text)
-    stripped = CURLY_GAP_RE.sub("", stripped)
-
-    # Curly quotes → straight quotes
-    stripped = stripped.replace("\u201c", '"')   # "
-    stripped = stripped.replace("\u201d", '"')   # "
-    stripped = stripped.replace("\u2018", "'")   # '
-    stripped = stripped.replace("\u2019", "'")   # '
-
-    # Normalize ellipsis character → three dots
-    stripped = stripped.replace("\u2026", "...")
-
-    # Normalize em-dash and en-dash → double hyphen
-    stripped = stripped.replace("\u2014", "--")   # —
-    stripped = stripped.replace("\u2013", "--")   # –
-
-    # Strip soft hyphens
-    stripped = stripped.replace("\u00ad", "")
-
-    # Remove hyphens used as word-breaks (e.g., "Never-theless")
-    # Pattern: lowercase-letter + hyphen + lowercase-letter → join
-    stripped = re.sub(r"([a-z])-([a-z])", r"\1\2", stripped)
-
-    # Collapse whitespace
-    stripped = " ".join(stripped.split())
-
-    # Normalize punctuation spacing: remove space before , ; :
-    stripped = re.sub(r"\s+([,;:])", r"\1", stripped)
-
-    # Strip leading colon + space (dialogue frame artifact)
-    stripped = re.sub(r"^:\s*", "", stripped)
-
-    # Strip surrounding quotes (model sometimes wraps entire output)
-    stripped = stripped.strip('"\'')
-
-    return stripped
-
-
-def skeleton_matches(original: str, restored: str) -> bool:
-    """Check whether restored text preserves the original skeleton."""
-    return normalize_skeleton(original) == normalize_skeleton(restored)
-
-
-def parse_restored_paragraphs(model_output: str) -> dict[int, str]:
-    """Parse ¶N-prefixed paragraphs from model output.
-
-    Returns {paragraph_number: restored_text}.
-    """
-    result: dict[int, str] = {}
-    pattern = re.compile(r"¶(\d+)[:\s]\s*(.*?)(?=\n¶\d|\Z)", re.DOTALL)
-    for m in pattern.finditer(model_output):
-        pnum = int(m.group(1))
-        text = m.group(2).strip()
-        if text:
-            result[pnum] = text
-    return result
-
-
-def extract_fills_by_diff(
-    original: str,
-    restored: str,
-    pnum: int,
-) -> list[dict]:
-    """Extract fills from gap pairs between original and restored.
-
-    Handles both [square bracket] and {curly brace} gaps.
-    Pairs gaps positionally (sorted by offset).
-
-    PRECONDITION: skeleton_matches(original, restored) is True.
-    """
-    orig_gaps = find_all_gaps(original)
-    rest_gaps = find_all_gaps(restored)
-
-    fills = []
-    for i, ((_, _, _, orig_content, orig_type),
-            (_, _, _, rest_content, rest_type)) in enumerate(
-                zip(orig_gaps, rest_gaps), 1):
-
-        if orig_content != rest_content:
-            fills.append(
+            tool_results.append(
                 {
-                    "paragraph": pnum,
-                    "index": i,
-                    "fill": rest_content,
-                    "original": orig_content,
-                    "gap_type": orig_type,
-                    "notes": "",
-                    "confidence": "moderate",
+                    "type": "tool_result",
+                    "tool_use_id": tc_id,
+                    "content": result_text,
                 }
+            )
+
+        # Count overall progress
+        n_filled = sum(1 for g in gap_registry if g["filled"])
+        n_remaining = n_restorable - n_filled
+
+        if debug:
+            print(
+                f"  Ch.{ch_num} t{turn}: "
+                f"+{n_accepted_this_turn} accepted, "
+                f"{n_rejected_this_turn} rejected | "
+                f"{n_filled}/{n_restorable} total, "
+                f"{n_remaining} remaining"
+            )
+
+        # Build follow-up user message
+        progress_parts = [
+            f"Turn {turn + 1}: {n_accepted_this_turn} accepted, "
+            f"{n_rejected_this_turn} rejected.",
+            f"Overall: {n_filled}/{n_restorable} restorable gaps filled, "
+            f"{n_remaining} remaining.",
+        ]
+        if rejection_notes:
+            progress_parts.append("Rejections this turn:")
+            progress_parts.extend(rejection_notes)
+
+        if n_remaining > 0:
+            remaining_ids = [
+                g["gap_id"]
+                for g in gap_registry
+                if not g["filled"] and g["size"] != "large"
+            ]
+            if len(remaining_ids) <= 30:
+                progress_parts.append(
+                    f"Remaining gaps: {', '.join(remaining_ids)}"
+                )
+            else:
+                progress_parts.append(
+                    f"Remaining: {len(remaining_ids)} gaps "
+                    f"({remaining_ids[0]}...{remaining_ids[-1]})"
+                )
+            progress_parts.append(
+                "Continue filling any remaining gaps you can restore."
             )
         else:
-            # Distinguish: was this already filled by the translator, or an unfilled gap?
-            orig_stripped = orig_content.strip()
-            is_gap = orig_stripped in ("...", ". . .", "") or orig_stripped.replace(".", "").replace("/", "").replace(" ", "") == ""
-            if is_gap:
-                note = "unfilled gap"
-                confidence = ""
-            else:
-                note = "already filled by translator"
-                confidence = "strong"
-            fills.append(
-                {
-                    "paragraph": pnum,
-                    "index": i,
-                    "fill": rest_content,
-                    "original": orig_content,
-                    "gap_type": orig_type,
-                    "notes": note,
-                    "confidence": confidence,
-                }
-            )
+            progress_parts.append("All restorable gaps processed. Done.")
 
-    return fills
+        follow_up_content: list[dict] = tool_results + [
+            {"type": "text", "text": "\n".join(progress_parts)}
+        ]
+        messages.append({"role": "user", "content": follow_up_content})
 
+        # Check if done
+        if n_remaining == 0:
+            break
+        if stop_reason == "end_turn":
+            if debug:
+                print(
+                    f"  Ch.{ch_num}: model ended turn with "
+                    f"{n_remaining} gaps remaining"
+                )
+            break
 
-def validate_restoration(
-    core_paras: list[dict],
-    restored_paras: dict[int, str],
-    lacunae_map: dict[int, list[dict]],
-) -> tuple[
-    dict[int, str],  # accepted {pnum: restored_text}
-    dict[int, str],  # rejected {pnum: reason}
-    list[dict],  # fills
-    list[dict],  # reconstructions
-    list[str],  # violations (informational)
-]:
-    """Validate restored paragraphs using skeleton invariant.
-
-    A paragraph is ACCEPTED only if:
-      1. Its skeleton (text outside brackets) is identical to the original
-      2. Bracket count matches
-
-    Returns (accepted, rejected, fills, reconstructions, violations).
-    """
-    accepted: dict[int, str] = {}
-    rejected: dict[int, str] = {}
-    all_fills: list[dict] = []
-    all_reconstructions: list[dict] = []
-    all_violations: list[str] = []
-
-    originals = {p["paragraph_number"]: p["core_text"] for p in core_paras}
-
-    for pnum, restored_text in sorted(restored_paras.items()):
-        original = originals.get(pnum)
-        if original is None:
-            all_violations.append(f"¶{pnum}: not in original")
-            rejected[pnum] = "not in original"
-            continue
-
-        restored_text = fix_stray_brackets(restored_text)
-
-        # --- SKELETON CHECK (the invariant) ---
-        if not skeleton_matches(original, restored_text):
-            reason = (
-                f"skeleton altered: "
-                f"'{normalize_skeleton(original)[:80]}' vs "
-                f"'{normalize_skeleton(restored_text)[:80]}'"
-            )
-            all_violations.append(f"¶{pnum}: REJECTED — {reason}")
-            rejected[pnum] = reason
-            continue
-
-        # --- GAP COUNT CHECK (both [] and {}) ---
-        orig_n = count_all_gaps(original)
-        rest_n = count_all_gaps(restored_text)
-        if orig_n != rest_n:
-            reason = f"gap count mismatch: {orig_n} vs {rest_n}"
-            all_violations.append(f"¶{pnum}: REJECTED — {reason}")
-            rejected[pnum] = reason
-            continue
-
-        # --- ACCEPTED ---
-        accepted[pnum] = restored_text
-        all_reconstructions.append(
-            {
-                "paragraph": pnum,
-                "reconstructed_text": restored_text,
-            }
-        )
-
-        # Extract fills if paragraph had lacunae
-        if pnum in lacunae_map:
-            fills = extract_fills_by_diff(original, restored_text, pnum)
-            all_fills.extend(fills)
-
-    return accepted, rejected, all_fills, all_reconstructions, all_violations
+    return gap_registry
 
 
 # ---------------------------------------------------------------------------
-# Utility
+# Utilities
 # ---------------------------------------------------------------------------
 
 
 def fix_stray_brackets(text: str) -> str:
-    """Remove unmatched brackets (both [] and {}) from reconstruction text."""
+    """Remove unmatched brackets (both [] and {}) from text."""
     # Fix square brackets
     sq_stack: list[int] = []
     to_remove: set[int] = set()
@@ -1070,48 +1090,114 @@ def fix_stray_brackets(text: str) -> str:
 def save_result(
     ch_num: int,
     title: str,
-    all_fills: list[dict],
-    all_reconstructions: list[dict],
+    gap_registry: list[dict],
+    core_paras: list[dict],
     lacunae_map: dict[int, list[dict]],
     total_lacunae: int,
     spiritual_reading: str | None = None,
-    violations: list[str] | None = None,
-    thinking_summary: str | None = None,
 ) -> None:
-    """Save restoration result as JSON."""
+    """Save restoration result as JSON.
+
+    Builds reconstructions by applying fills from gap_registry to
+    original paragraphs. No skeleton validation needed — we control
+    the reconstruction directly.
+    """
     CHAPTERS_OUT_DIR.mkdir(parents=True, exist_ok=True)
     path = CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json"
 
     lacunae_serial = {str(k): v for k, v in lacunae_map.items()}
 
-    # Categorize fills into three buckets:
-    #   restored:      was a gap (original is "..." or similar), model filled it
-    #   already_filled: translator already supplied text, model kept it (correct)
-    #   unfilled:       was a gap, model left it as "..."
-    n_restored = 0
-    n_already_filled = 0
-    n_unfilled = 0
-    for f in all_fills:
-        orig = f.get("original", "").strip()
-        fill = f.get("fill", "").strip()
-        orig_is_gap = orig in ("...", ". . .", "") or orig.replace(".", "").replace("/", "").replace(" ", "") == ""
+    # Group gaps by paragraph
+    gaps_by_para: dict[int, list[dict]] = {}
+    for gap in gap_registry:
+        pnum = gap["paragraph"]
+        if pnum not in gaps_by_para:
+            gaps_by_para[pnum] = []
+        gaps_by_para[pnum].append(gap)
+
+    # Build reconstructions
+    all_reconstructions: list[dict] = []
+    for p in core_paras:
+        pnum = p["paragraph_number"]
+        para_gaps = gaps_by_para.get(pnum, [])
+        reconstructed = apply_fills_to_paragraph(p["core_text"], para_gaps)
+        all_reconstructions.append(
+            {
+                "paragraph": pnum,
+                "reconstructed_text": reconstructed,
+            }
+        )
+
+    # Build fills list
+    all_fills: list[dict] = []
+    for gap in gap_registry:
+        orig_stripped = gap["original"].strip()
+        orig_is_gap = (
+            orig_stripped in ("...", ". . .", "")
+            or orig_stripped.replace(".", "")
+            .replace("/", "")
+            .replace(" ", "")
+            .replace("(", "")
+            .replace(")", "")
+            .replace("0", "")
+            .replace("1", "")
+            .replace("2", "")
+            .replace("3", "")
+            .replace("4", "")
+            .replace("5", "")
+            .replace("6", "")
+            .replace("7", "")
+            .replace("8", "")
+            .replace("9", "")
+            == ""
+        )
+
+        fill_content = gap["fill"] if gap["filled"] else gap["original"]
+        notes = ""
         if not orig_is_gap:
-            # Translator already had text — nothing to restore
-            n_already_filled += 1
-        elif fill == orig or fill in ("...", ". . .", ""):
-            # Was a gap and model didn't fill it
-            n_unfilled += 1
-        else:
-            # Was a gap and model filled it
-            n_restored += 1
+            notes = "already filled by translator"
+        elif not gap["filled"]:
+            notes = "unfilled gap"
+        elif gap["size"] == "large":
+            notes = "large gap — skipped per policy"
+
+        all_fills.append(
+            {
+                "paragraph": gap["paragraph"],
+                "index": gap["gap_index"],
+                "gap_id": gap["gap_id"],
+                "fill": fill_content,
+                "original": gap["original"],
+                "gap_type": gap["gap_type"],
+                "gap_size": gap["size"],
+                "explanation": gap.get("explanation") or "",
+                "confidence": gap.get("confidence") or "",
+                "notes": notes,
+            }
+        )
+
+    # Categorize for assessment
+    n_restored = sum(
+        1 for f in all_fills
+        if f["notes"] == "" and f["fill"] != f["original"]
+    )
+    n_already = sum(
+        1 for f in all_fills if f["notes"] == "already filled by translator"
+    )
+    n_unfilled = sum(1 for f in all_fills if f["notes"] == "unfilled gap")
+    n_large_skipped = sum(
+        1
+        for f in all_fills
+        if f["notes"] == "large gap — skipped per policy"
+    )
 
     parts = [f"{n_restored} restored"]
-    if n_already_filled:
-        parts.append(f"{n_already_filled} already filled")
+    if n_already:
+        parts.append(f"{n_already} already filled")
     if n_unfilled:
         parts.append(f"{n_unfilled} unfilled gaps")
-    if violations:
-        parts.append(f"{len(violations)} violations")
+    if n_large_skipped:
+        parts.append(f"{n_large_skipped} large (skipped)")
     assessment = ", ".join(parts)
 
     data = {
@@ -1122,11 +1208,9 @@ def save_result(
         "spiritual_reading": spiritual_reading,
         "reconstructions": all_reconstructions,
         "fills": all_fills,
-        "violations": violations or [],
+        "violations": [],  # No violations — fills are validated individually
         "assessment": assessment,
     }
-    if thinking_summary:
-        data["thinking_summary"] = thinking_summary
 
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
@@ -1134,41 +1218,6 @@ def save_result(
 
 def is_done(ch_num: int) -> bool:
     return (CHAPTERS_OUT_DIR / f"ch_{ch_num:03d}.json").exists()
-
-
-def find_violated_chapters() -> list[dict]:
-    """Scan existing output JSONs for chapters with violations.
-
-    Returns list of dicts with chapter_number, violated_pnums, and
-    the loaded output data.
-    """
-    results = []
-    for path in sorted(CHAPTERS_OUT_DIR.glob("ch_*.json")):
-        with open(path, encoding="utf-8") as f:
-            data = json.load(f)
-
-        viols = data.get("violations", [])
-        if not viols:
-            continue
-
-        # Extract unique paragraph numbers from violation messages
-        viol_pnums: set[int] = set()
-        for v in viols:
-            m = re.match(r"\u00b6(\d+):", v)
-            if m:
-                viol_pnums.add(int(m.group(1)))
-
-        if viol_pnums:
-            results.append(
-                {
-                    "chapter_number": data["chapter_number"],
-                    "violated_pnums": viol_pnums,
-                    "data": data,
-                    "path": path,
-                }
-            )
-
-    return results
 
 
 # ---------------------------------------------------------------------------
@@ -1189,7 +1238,7 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
         return ""
 
     lines: list[str] = []
-    lines.append("# The Kephalaia Teaching Core — Restored Text")
+    lines.append("# The Kephalaia Teaching Core \u2014 Restored Text")
     lines.append("")
     lines.append("*The oldest teaching layer of the Kephalaia with lacunae*")
     lines.append("*restored using correspondential constraints. All editorial*")
@@ -1220,7 +1269,9 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
         fills_by_para: dict[int, list[dict]] = {}
         if rest_ch:
             for recon in rest_ch.get("reconstructions", []):
-                recon_by_para[recon["paragraph"]] = recon["reconstructed_text"]
+                recon_by_para[recon["paragraph"]] = recon[
+                    "reconstructed_text"
+                ]
             for fill in rest_ch.get("fills", []):
                 para = fill["paragraph"]
                 if para not in fills_by_para:
@@ -1235,18 +1286,21 @@ def assemble_restored(core_chapters: dict[int, dict]) -> str:
 
             if pnum in recon_by_para:
                 restored = fix_stray_brackets(recon_by_para[pnum])
-                lines.append(f"**¶{pnum}** {restored}")
+                lines.append(f"**\u00b6{pnum}** {restored}")
                 lines.append("")
 
                 # Count fills
                 para_fills = fills_by_para.get(pnum, [])
                 for f in para_fills:
-                    if f.get("fill", "...").strip() == "...":
+                    fill_val = f.get("fill", "...").strip()
+                    orig_val = f.get("original", "").strip()
+                    notes = f.get("notes", "")
+                    if notes == "unfilled gap":
                         total_unrestorable += 1
-                    elif f.get("fill", "") != f.get("original", ""):
+                    elif notes == "" and fill_val != orig_val:
                         total_fills += 1
             else:
-                lines.append(f"**¶{pnum}** {core_text}")
+                lines.append(f"**\u00b6{pnum}** {core_text}")
                 lines.append("")
 
         # Chapter assessment
@@ -1291,7 +1345,8 @@ def save_assembly(text: str) -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Correspondential restoration of the Kephalaia " "teaching core"
+        description="Correspondential restoration of the Kephalaia "
+        "teaching core"
     )
     parser.add_argument(
         "--chapter",
@@ -1343,275 +1398,7 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Show model thinking log (only effective with -j 1)",
     )
-    parser.add_argument(
-        "--retry-violations",
-        action="store_true",
-        help="Re-send only violated paragraphs (uses cached spiritual reading)",
-    )
     return parser.parse_args()
-
-
-# ---------------------------------------------------------------------------
-# Retry-violations mode
-# ---------------------------------------------------------------------------
-
-
-def _retry_violations_mode(
-    args: argparse.Namespace,
-    core_by_num: dict[int, dict],
-) -> None:
-    """Re-process only paragraphs that had violations.
-
-    Uses the cached spiritual reading from the existing output.
-    Re-sends violated paragraphs to the model with accepted context.
-    Re-validates with current normalize_skeleton().
-    Updates the output JSON in place.
-    """
-    violated = find_violated_chapters()
-    if not violated:
-        print("No chapters with violations found.")
-        text = assemble_restored(core_by_num)
-        if text:
-            save_assembly(text)
-        return
-
-    # Apply --chapter / --range filters if given
-    if args.chapter is not None:
-        violated = [v for v in violated if v["chapter_number"] == args.chapter]
-    elif args.range:
-        m = re.match(r"(\d+)-(\d+)", args.range)
-        if m:
-            start, end = int(m.group(1)), int(m.group(2))
-            violated = [
-                v for v in violated
-                if start <= v["chapter_number"] <= end
-            ]
-
-    total_paras = sum(len(v["violated_pnums"]) for v in violated)
-    print(f"\nRetry-violations mode: {len(violated)} chapters, "
-          f"{total_paras} violated paragraphs")
-    for v in violated:
-        ch = v["chapter_number"]
-        pnums = sorted(v["violated_pnums"])
-        print(f"  Ch.{ch:3d}  ¶{', ¶'.join(str(p) for p in pnums)}")
-
-    if args.dry_run:
-        print("\n[DRY RUN] No API calls made.")
-        return
-
-    # Create client
-    client, deployment = create_claude_client()
-    concurrency = max(1, args.concurrency)
-    print(f"\nUsing model: {deployment}")
-    print(f"Concurrency: {concurrency}")
-    print()
-
-    show_debug = args.debug and concurrency == 1
-    print_lock = threading.Lock()
-    counter = {"done": 0, "fixed": 0, "still_violated": 0}
-    total_to_process = len(violated)
-
-    def retry_one(entry: dict) -> None:
-        ch_num = entry["chapter_number"]
-        viol_pnums = entry["violated_pnums"]
-        existing_data = entry["data"]
-        out_path = entry["path"]
-
-        # Get core paragraphs (applies clean_core_text)
-        core_ch = core_by_num.get(ch_num)
-        if not core_ch:
-            with print_lock:
-                counter["done"] += 1
-                print(f"[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} SKIP — not in core")
-            return
-
-        core_paras = extract_core_paragraphs(core_ch)
-        lacunae_map, total_lacunae = find_lacunae(core_paras)
-
-        # Spiritual reading from cache
-        spiritual_reading = existing_data.get("spiritual_reading", "")
-        if not spiritual_reading:
-            with print_lock:
-                counter["done"] += 1
-                print(f"[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} SKIP — no cached spiritual reading")
-            return
-
-        # Build the paragraphs that need retrying
-        retry_paras = [
-            p for p in core_paras if p["paragraph_number"] in viol_pnums
-        ]
-        if not retry_paras:
-            with print_lock:
-                counter["done"] += 1
-                print(f"[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} SKIP — violated ¶s not in core")
-            return
-
-        # Build accepted context from existing non-violated reconstructions
-        existing_recons = {
-            r["paragraph"]: r["reconstructed_text"]
-            for r in existing_data.get("reconstructions", [])
-        }
-        accepted_context = {
-            pnum: text for pnum, text in existing_recons.items()
-            if pnum not in viol_pnums
-        }
-
-        with print_lock:
-            print(f"  Ch.{ch_num} retrying {len(retry_paras)} ¶s...",
-                  end="", flush=True)
-
-        # Send to model
-        retry_result = retry_failed_paragraphs(
-            client,
-            deployment,
-            retry_paras,
-            spiritual_reading,
-            accepted_context,
-            ch_num,
-            debug=show_debug,
-        )
-
-        if not retry_result:
-            with print_lock:
-                counter["done"] += 1
-                counter["still_violated"] += len(viol_pnums)
-                print(f"\n[{counter['done']}/{total_to_process}] "
-                      f"Ch.{ch_num} FAILED — no model output")
-            return
-
-        # Validate with current normalize_skeleton
-        new_accepted, still_rejected, new_fills, new_recons, new_viols = (
-            validate_restoration(retry_paras, retry_result, lacunae_map)
-        )
-
-        # Merge into existing data
-        # Remove old reconstructions for newly accepted paragraphs
-        old_recons = [
-            r for r in existing_data.get("reconstructions", [])
-            if r["paragraph"] not in new_accepted
-        ]
-        # Remove old fills for newly accepted paragraphs
-        old_fills = [
-            f for f in existing_data.get("fills", [])
-            if f["paragraph"] not in new_accepted
-        ]
-
-        merged_recons = old_recons + new_recons
-        merged_fills = old_fills + new_fills
-
-        # For still-rejected: keep original
-        originals = {
-            p["paragraph_number"]: p["core_text"] for p in core_paras
-        }
-        for pnum in still_rejected:
-            new_viols.append(
-                f"¶{pnum}: KEPT ORIGINAL after retry-violations"
-            )
-            merged_recons.append({
-                "paragraph": pnum,
-                "reconstructed_text": originals.get(pnum, ""),
-            })
-
-        # Remove old violations for paragraphs we fixed
-        cleared = set(new_accepted.keys())
-        old_viols = [
-            v for v in existing_data.get("violations", [])
-            if not any(
-                v.startswith(f"\u00b6{p}:") for p in cleared
-            )
-        ]
-        merged_viols = old_viols + new_viols
-
-        n_fixed = len(new_accepted)
-        n_still = len(still_rejected)
-
-        # Recalculate assessment
-        n_restored = 0
-        n_already = 0
-        n_unfilled = 0
-        for f in merged_fills:
-            orig = f.get("original", "").strip()
-            fill = f.get("fill", "").strip()
-            is_gap = (
-                orig in ("...", ". . .", "")
-                or orig.replace(".", "").replace("/", "").replace(" ", "") == ""
-            )
-            if not is_gap:
-                n_already += 1
-            elif fill == orig or fill in ("...", ". . .", ""):
-                n_unfilled += 1
-            else:
-                n_restored += 1
-
-        parts = [f"{n_restored} restored"]
-        if n_already:
-            parts.append(f"{n_already} already filled")
-        if n_unfilled:
-            parts.append(f"{n_unfilled} unfilled gaps")
-        if merged_viols:
-            parts.append(f"{len(merged_viols)} violations")
-
-        # Save updated data
-        updated = {
-            "chapter_number": ch_num,
-            "chapter_title": existing_data.get("chapter_title", ""),
-            "total_lacunae": total_lacunae,
-            "lacunae_map": {str(k): v for k, v in lacunae_map.items()},
-            "spiritual_reading": spiritual_reading,
-            "reconstructions": merged_recons,
-            "fills": merged_fills,
-            "violations": merged_viols,
-            "assessment": ", ".join(parts),
-        }
-
-        with open(out_path, "w", encoding="utf-8") as f:
-            json.dump(updated, f, indent=2, ensure_ascii=False)
-
-        with print_lock:
-            counter["done"] += 1
-            counter["fixed"] += n_fixed
-            counter["still_violated"] += n_still
-            status = f"fixed {n_fixed}/{len(viol_pnums)}"
-            if n_still:
-                status += f", {n_still} still violated"
-            print(f"\n[{counter['done']}/{total_to_process}] "
-                  f"Ch.{ch_num} {status}")
-
-    # Execute
-    if concurrency == 1:
-        for entry in violated:
-            retry_one(entry)
-    else:
-        with ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = {
-                executor.submit(retry_one, entry): entry
-                for entry in violated
-            }
-            for future in as_completed(futures):
-                exc = future.exception()
-                if exc:
-                    entry = futures[future]
-                    with print_lock:
-                        print(f"  Ch.{entry['chapter_number']} "
-                              f"EXCEPTION: {exc}")
-                        traceback.print_exc()
-
-    # Summary
-    print(f"\n{'='*60}")
-    print("RETRY-VIOLATIONS COMPLETE")
-    print(f"  Chapters processed: {counter['done']}")
-    print(f"  Paragraphs fixed: {counter['fixed']}")
-    print(f"  Still violated: {counter['still_violated']}")
-
-    # Reassemble
-    print("\nAssembling restored document...")
-    text = assemble_restored(core_by_num)
-    if text:
-        save_assembly(text)
-    print("Done.")
 
 
 # ---------------------------------------------------------------------------
@@ -1640,14 +1427,11 @@ def main() -> None:
             save_assembly(text)
         return
 
-    # --retry-violations mode: re-process only violated paragraphs
-    if args.retry_violations:
-        _retry_violations_mode(args, core_by_num)
-        return
-
     # Determine which to process
     if args.chapter is not None:
-        chapters = [ch for ch in all_chapters if ch["chapter_number"] == args.chapter]
+        chapters = [
+            ch for ch in all_chapters if ch["chapter_number"] == args.chapter
+        ]
         if not chapters:
             print(f"ERROR: Chapter {args.chapter} not found")
             sys.exit(1)
@@ -1657,7 +1441,11 @@ def main() -> None:
             print("ERROR: Invalid range. Use '38-55'")
             sys.exit(1)
         start, end = int(m.group(1)), int(m.group(2))
-        chapters = [ch for ch in all_chapters if start <= ch["chapter_number"] <= end]
+        chapters = [
+            ch
+            for ch in all_chapters
+            if start <= ch["chapter_number"] <= end
+        ]
     else:
         chapters = all_chapters
 
@@ -1666,7 +1454,9 @@ def main() -> None:
 
     # Skip already processed
     if not args.overwrite:
-        to_process = [ch for ch in chapters if not is_done(ch["chapter_number"])]
+        to_process = [
+            ch for ch in chapters if not is_done(ch["chapter_number"])
+        ]
         skipped = len(chapters) - len(to_process)
         if skipped > 0:
             print(f"  Skipping {skipped} already-done (use --overwrite)")
@@ -1687,7 +1477,7 @@ def main() -> None:
         core_paras = extract_core_paragraphs(ch)
         _, n_lacunae = find_lacunae(core_paras)
         print(
-            f"  Ch.{num:3d}  ({len(core_paras):3d} core ¶s, "
+            f"  Ch.{num:3d}  ({len(core_paras):3d} core \u00b6s, "
             f"{n_lacunae} lacunae)  {title}"
         )
 
@@ -1731,13 +1521,14 @@ def main() -> None:
                 counter["done"] += 1
                 print(
                     f"[{counter['done']}/{total_to_process}] "
-                    f"Ch.{ch_num} — no lacunae, skip"
+                    f"Ch.{ch_num} \u2014 no lacunae, skip"
                 )
             return
 
         with print_lock:
             print(
-                f"  Ch.{ch_num} ({total_lacunae} lacunae) " f"{title}...",
+                f"  Ch.{ch_num} ({total_lacunae} lacunae) "
+                f"{title}...",
                 end="",
                 flush=True,
             )
@@ -1756,10 +1547,10 @@ def main() -> None:
         if cached_reading:
             spiritual_reading = cached_reading
             with print_lock:
-                print(f" [cached reading]", end="", flush=True)
+                print(" [cached reading]", end="", flush=True)
         else:
             with print_lock:
-                print(f" phase 1...", end="", flush=True)
+                print(" phase 1...", end="", flush=True)
             spiritual_reading = generate_spiritual_reading(
                 client, deployment, core_paras, ch_num, debug=show_debug
             )
@@ -1774,10 +1565,10 @@ def main() -> None:
                 return
 
         with print_lock:
-            print(f" phase 2...", end="", flush=True)
+            print(" phase 2 (tool-calls)...", end="", flush=True)
 
-        # --- Phase 2: Restoration (single call) ---
-        restored_paras = restore_chapter(
+        # --- Phase 2: Tool-Call Restoration ---
+        gap_registry = restore_chapter_with_tools(
             client,
             deployment,
             core_paras,
@@ -1785,7 +1576,7 @@ def main() -> None:
             ch_num,
             debug=show_debug,
         )
-        if not restored_paras:
+        if gap_registry is None:
             with print_lock:
                 counter["done"] += 1
                 errors_list.append(ch_num)
@@ -1795,97 +1586,56 @@ def main() -> None:
                 )
             return
 
-        # --- Validation with skeleton check ---
-        accepted, rejected, all_fills, all_recons, violations = validate_restoration(
-            core_paras, restored_paras, lacunae_map
+        # Count stats
+        n_restorable = sum(
+            1 for g in gap_registry if g["size"] != "large"
         )
-
-        # --- Retry loop for rejected paragraphs ---
-        max_para_retries = 2
-        for retry_round in range(1, max_para_retries + 1):
-            if not rejected:
-                break
-
-            with print_lock:
-                print(
-                    f"  Ch.{ch_num} retry {retry_round}: "
-                    f"{len(rejected)} rejected ¶s "
-                    f"({', '.join(str(p) for p in sorted(rejected))})",
-                    flush=True,
-                )
-
-            # Build context: only paragraphs that need retrying,
-            # plus accepted restorations as surrounding context
-            retry_paras = [p for p in core_paras if p["paragraph_number"] in rejected]
-            retry_result = retry_failed_paragraphs(
-                client,
-                deployment,
-                retry_paras,
-                spiritual_reading,
-                accepted,
-                ch_num,
-            )
-            if not retry_result:
-                break
-
-            # Validate retried paragraphs
-            new_accepted, still_rejected, new_fills, new_recons, new_viols = (
-                validate_restoration(retry_paras, retry_result, lacunae_map)
-            )
-
-            # Merge newly accepted
-            accepted.update(new_accepted)
-            all_fills.extend(new_fills)
-            all_recons.extend(new_recons)
-            violations.extend(new_viols)
-
-            # Update rejected set
-            rejected = still_rejected
-
-        # For any still-rejected paragraphs, keep original text
-        originals = {p["paragraph_number"]: p["core_text"] for p in core_paras}
-        for pnum in rejected:
-            violations.append(
-                f"¶{pnum}: KEPT ORIGINAL after {max_para_retries} retries"
-            )
-            all_recons.append(
-                {
-                    "paragraph": pnum,
-                    "reconstructed_text": originals.get(pnum, ""),
-                }
-            )
-
-        # Count restored gaps (was "...", model filled it)
-        n_restored = sum(
-            1
-            for f in all_fills
-            if f.get("original", "").strip() in ("...", ". . .", "")
-            or f.get("original", "").replace(".", "").replace("/", "").replace(" ", "") == ""
-            if f.get("fill", "").strip() not in ("...", ". . .", "")
-            and f.get("fill", "") != f.get("original", "")
+        n_filled = sum(1 for g in gap_registry if g["filled"])
+        n_high = sum(
+            1 for g in gap_registry
+            if g["filled"] and g["confidence"] == "high"
         )
+        n_mod = sum(
+            1 for g in gap_registry
+            if g["filled"] and g["confidence"] == "moderate"
+        )
+        n_low = sum(
+            1 for g in gap_registry
+            if g["filled"] and g["confidence"] == "low"
+        )
+        n_large = sum(1 for g in gap_registry if g["size"] == "large")
 
+        # --- Save ---
         save_result(
             ch_num,
             title,
-            all_fills,
-            all_recons,
+            gap_registry,
+            core_paras,
             lacunae_map,
             total_lacunae,
             spiritual_reading=spiritual_reading,
-            violations=violations,
         )
 
-        status = f"OK — {n_restored}/{total_lacunae} gaps restored"
-        if rejected:
-            status += f", {len(rejected)} kept original"
-        if violations:
-            status += f", {len(violations)} notes"
+        status = f"OK \u2014 {n_filled}/{n_restorable} gaps restored"
+        if n_large:
+            status += f", {n_large} large skipped"
+        confidence_parts = []
+        if n_high:
+            confidence_parts.append(f"{n_high}H")
+        if n_mod:
+            confidence_parts.append(f"{n_mod}M")
+        if n_low:
+            confidence_parts.append(f"{n_low}L")
+        if confidence_parts:
+            status += f" ({'/'.join(confidence_parts)})"
 
         with print_lock:
             counter["done"] += 1
             results_list.append(ch_num)
-            print(f"\n[{counter['done']}/{total_to_process}] " f"Ch.{ch_num} {status}")
+            print(
+                f"\n[{counter['done']}/{total_to_process}] "
+                f"Ch.{ch_num} {status}"
+            )
 
     # --- Execute ---
     if concurrency == 1:
@@ -1893,17 +1643,22 @@ def main() -> None:
             process_one(ch)
     else:
         with ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = {executor.submit(process_one, ch): ch for ch in chapters}
+            futures = {
+                executor.submit(process_one, ch): ch for ch in chapters
+            }
             for future in as_completed(futures):
                 exc = future.exception()
                 if exc:
                     ch = futures[future]
                     with print_lock:
-                        print(f"  Ch.{ch['chapter_number']} EXCEPTION: {exc}")
+                        print(
+                            f"  Ch.{ch['chapter_number']} "
+                            f"EXCEPTION: {exc}"
+                        )
                         errors_list.append(ch["chapter_number"])
 
     # Summary
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print("RESTORATION COMPLETE")
     print(f"  Processed: {len(results_list)}")
     print(f"  Errors: {len(errors_list)}")
