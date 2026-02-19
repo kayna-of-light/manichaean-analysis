@@ -7,7 +7,7 @@
 
 ---
 
-**Lacunae filled**: 4
+**Lacunae filled**: 80
 **Unrestorable**: 0
 
 ## Chapter 0: Introduction
@@ -188,21 +188,21 @@ The third, that the King of the realms of Darkness knows the converse and langua
 
 **¶9** One is the Pillar of Glory, the Perfect Man; the one who bears up under all things; the great Pillar of blessing; the great porter, who is greater than all the porters.
 
-**¶10** The second is glorious Jesus the Splendour.
+**¶10** The second is glorious Jesus the Splendour; [the] one through whom shall be given life eternal.
 
 **¶11** The third is the Virgin of Light, the glorious wisd[o]m; the one who takes away the heart of the [rul]ers and the powers by her image, as she fulfils the pleas[u]re of the greatness.
 
 **¶12** The third father, who came out of the second father: he is glorious Jesus the Splendour. And, again, he too summoned three evocations after the pattern of the second father.
 
-**¶13** The first power whom he summoned is the Light Min[d].
+**¶13** The first power whom he summoned is the Light Min[d]
 
 **¶14** The second power whom Jesus summo[n]ed is the gre[at Jud]ge, who gives judgement on all the souls of mankind, [his] dwelling being established in the atmosphere under [ ... / ... ] wheel [ ... ] stars.
 
-**¶15** The third power is [the Y]outh, the gre[at ... ] light in his two persons, in [ ... ], I am speaking about that which has been established in the summons [and] the obedience.
+**¶15** The third power is [the Y]outh, the gre[at ... ] light in his two persons, in [ ... ], I am speaking about that which has been established in the summons [and] the obedience. [He] too [stood] with his fa[ther the] king [ ... ]
 
 **¶16** The fourth father is the Light Mind. And, again, he too summoned three powers after the pattern of Jesus.
 
-**¶20** And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body; and the thr[ee] great glorious angels who are come with her.
+**¶20** And also the fifth father is this Light Form; the one who shall appear to everyone who will go out from his body, corresponding to the pattern of the image; and the thr[ee] great glorious angels who are come with her.
 
 **¶22** These are the five fathers who have come out of one another. They have appeared and man[ifes]ted through one another!
 
@@ -883,13 +883,15 @@ The first: The Great Builder came forth to build the new aeon.
 
 ## Chapter 38: Concerning the Light Mind and the Apostles and the Saints
 
-**¶11** All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re ... ] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [...] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [...] upon the head of the Porter. His [...] from the [...] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re ...] and the entire zone that belongs [...]
+**¶1** You have told us that the Light Mi[nd] is this one who shall come and assume the saints. [You sai]d it to us like this: He too is one among the gods [and] many gods are with him. You have also told us: [W]hen he enters withi[n the body of] the flesh and binds the ol[d ma]n with his five counsels, he [set]s his five [couns]els upon him in the five limbs [of his] body.
 
-**¶12** His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [...] the vessels of the great fire. His [...] of darkness. His gall is the [... His] great intestine is the breadth of the great [...] of the worlds. His veins [...] all [the spri]ngs and wells. His e[yes (?) ...] His feet are his [...]
+**¶11** All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re ... ] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [the paths] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [that rest] upon the head of the Porter. His [thighs are] from the [three earths] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re ...] and the entire zone that belongs [to the darkness]
 
-**¶13** This is how each of the worlds h[ave been ha]rmonised (?). Five gods are fastened in him. [...] they are his soul and his life [...] man is a sinner [...] the Living Spirit and the Ambassador [...] the five sleepless guardians.
+**¶12** His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [flesh is] the vessels of the great fire. His [bones are the depths] of darkness. His gall is the [... His] great intestine is the breadth of the great [sea] of the worlds. His veins [are] all [the spri]ngs and wells. His e[yes (?) ...] His feet are his [roots]
 
-**¶14** He has [...] the Keeper of Splendour, the mind that is [...] in the wo[r]ld of the mind that is above. He has [...] who]le [...] of the powers of hea[ven that] are in [...] of the great King of Honour, [who is the thought that exists i]n the seventh firmament. He has humbled [...] also of the Adamant of Lig[h]t, who is the insight [... ] from he has given [...] because of lust [... He has] also appointed the King of Glory, who is the coun[sel ...] patience over the three images; that of wind, that of fire, and that of water. He has handed over to him the [...] do evilness. [...] the Porter, who is the consideration [...] the wi]sdom in the [...] which is below. He has made him [...] the foundation [below ...]
+**¶13** This is how each of the worlds h[ave been ha]rmonised (?). Five gods are fastened in him. [And] they are his soul and his life [But the] man is a sinner [Because of this] the Living Spirit and the Ambassador [have appointed] the five sleepless guardians.
+
+**¶14** He has [appointed] the Keeper of Splendour, the mind that is [set firm] in the wo[r]ld of the mind that is above. He has [ordered the] whole [host] of the powers of hea[ven that] are in [the camp] of the great King of Honour, [who is the thought that exists i]n the seventh firmament. He has humbled [the power] also of the Adamant of Lig[h]t, who is the insight [that comes] from [above] he has given [him power] because of lust [... He has] also appointed the King of Glory, who is the coun[sel ...] patience over the three images; that of wind, that of fire, and that of water. He has handed over to him the [those who] do evilness. [He has also set] the Porter, who is the consideration [and] the wisdom in the [earth] which is below. He has made him [firm upon] the foundation [below ...]
 
 **¶15** Furthermore: The Ambassador refined from them five intellectuals of life. Also, the summons and the obedience were situated there. Now, they made six sons of the Living Spirit, together with the six sons of the First Man!
 
@@ -897,71 +899,69 @@ The first: The Great Builder came forth to build the new aeon.
 
 **¶17** Furthermore: Jesus the Youth was set there; who is the image of the living word, of the utterance and the obedience.
 
-**¶18** He has made strong these camps, those above and those below [...], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
+**¶18** He has made strong these camps, those above and those below [and those in between], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
 
-**¶19** And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Sin abor[te]d, [it t]angled i]n with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [...] in the third firmament that is above the watch-t[ower ...] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
+**¶19** And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Sin abor[te]d, [it t]angled in with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [up] in the third firmament that is above the watch-t[ower ...] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
 
-**¶20** Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [...] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [... ] to it.
+**¶20** Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [strong] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [belonging] to it.
 
-**¶21** The Adamant [...] the fulfillment. He is set firm upo[n ...] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
+**¶21** The Adamant [of Light, who is] the fulfillment. He is set firm upo[n ...] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
 
-**¶22** Once again: In the watch of the great King of Glory, wh[o] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were ... ] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [...] their ascent was impeded by them [...] the w[ind], the water, and the fire ascend on them.
+**¶22** Once again: In the watch of the great King of Glory, wh[o] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were ... ] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [springs] their ascent was impeded by them [through which] the w[ind], the water, and the fire ascend on them.
 
-**¶23** [O]nce again: In the watch of the Porter, he who humiliates [...] upr]ising of the abysses below [...] bent, the fastenings underneath were loosened [...] in the foundation below.
+**¶23** [O]nce again: In the watch of the Porter, he who humiliates [every] uprising of the abysses below [the earth was] bent, the fastenings underneath were loosened [and shaken] in the foundation below.
 
-**¶24** On account of the earthquake that happened in the watch of the Keeper of Splen[dour], the Pillar of Glory came forth; as it [...] helper of the Keeper of Splendour. It bore up under all [burden]s.
+**¶24** On account of the earthquake that happened in the watch of the Keeper of Splen[dour], the Pillar of Glory came forth; as it [became the] helper of the Keeper of Splendour. It bore up under all [burden]s.
 
 **¶25** Conversely, because of the treachery and the uprising that happened in the watch of the great King of Honour, which is the watchers who came down to earth from the heavens; four angels were called upon about them. They bound the watche[r]s with an eternal chain, in the prison of the blackened ones (?). [Th]ey obliterated their children from upon the earth.
 
-**¶26** [Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [...] the prayer of the five sons. He assumed them [...] the abortions. He fastened them beneath the [...] the mind of Adam.
+**¶26** [Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [with] the prayer of the five sons. He assumed them [from] the abortions. He fastened them beneath the [power of] the mind of Adam.
 
 **¶27** Also, because of the earthquake that happened in these three earths, and in that the paths were hindered and the springs of wind and water and fire were impeded, Jesus cast himself down. He assumed Eve; and he straightened the tracks of the [win]d, the water, and the fire. He opened the springs for them, and he set [in ord]er the path of their ascent.
 
-**¶28** Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [...] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [...] rest.
+**¶28** Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [bound it] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [place of] rest.
 
-**¶29** Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [...]. Uprisings have happened, and treachery, in them. The [...] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
+**¶29** Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [ceaselessly]. Uprisings have happened, and treachery, in them. The [upheavals arose] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
 
 **¶30** So also is this body! A mighty power lives here, even if it is small in its stature. Nevertheless, Sin dwells within, and the old man who is lodged in it. Certainly he is cruel, with great cunning; until the Lig/ht Mind finds how to humble this body, and drive it [according to] his pleasure.
 
 **¶31** Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. Sin raises [up], from time to time, its agitations in the body.
 
-**¶32** Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [...] they have acted first with a righteous judgement.
+**¶32** Now you, understand thus, that the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [it, for] they have acted first with a righteous judgement.
 
-**¶33** And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [...] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [...]
+**¶33** And [with resp]ect to this other (question) that you have put forward: How may the Light Mind come, this great and honoured mighty one, and assume this little body of the flesh? Again, look, see! These gods, in that [zone] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [the end]
 
-**¶34** Now, also, happen you know [...] the world is set firm, being ordered [...] the five sons of the Living Spirit in all its members [...]. Sin took this body out from [the] la[nd (?) ... co]nstructed it in its members. It took its [bod]y from the five b]odies of darkness. (Sin) constructed the body. Yet, its [sou]l i[t] took from the five shining gods.
+**¶34** Now, also, happen you know [that] the world is set firm, being ordered [by] the five sons of the Living Spirit in all its members [and its limbs]. Sin took this body out from [the] la[nd (?) ... co]nstructed it in its members. It took its [bod]y from the five bodies of darkness. (Sin) constructed the body. Yet, its [sou]l i[t] took from the five shining gods.
 
-**¶35** (Sin) bou]nd (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
+**¶35** (Sin) bound (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
 
-**¶36** (Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh. They [...], pronouncing to the soul and continually leading it on to every evil thi[n]g,
+**¶36** (Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh.
 
-**¶37** (The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [...] itself, being wicked [...] its own light [...]
+**¶37** (The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [and to] itself, being wicked [against] its own light [and its life]
 
-**¶38** The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the Sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the Sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the Sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the Sin in the skin.
+**¶38** The Light Mind comes and finds the soul [in the body] it assuming it in the [power of] its wisdom [and] he shall become for it [a loosener of] the bonds [of the five] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the Sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the Sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the Sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the Sin in the skin.
 
 **¶39** This is how he shall release the members of the soul, and make them free from the five members of Sin. Conversely, these five members of Sin, which were loose, he shall bind them.
 
-**¶40** He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of Sin; and he adds to it his word, so that his [...] becomes nourisher and strengthener [...]
+**¶40** He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of Sin; and he adds to it his word, so that his [word] becomes nourisher and strengthener [of the new man]
 
-**¶41** Now, when he shall perf[ect ... the tw]elve members. This [is how ...] and his wisdom. His [...] becomes righteous, as he perf[ects ...] While formerly he was running [...] but instead of this, now he runs [...] his road and his path and his [...] also [he mounts up] to the heights, to the great aeons [...] thus the old man is bound in the [...] and his lust, his [...] his foolishness in these five members of the bo[dy ...] the dark spirit is imprisoned with them in a bond and in severe misery.
+**¶41** Now, when he shall perf[ect ... the tw]elve members. This [is how ...] and his wisdom. His [way] becomes righteous, as he perf[ects ...] While formerly he was running [in error] but instead of this, now he runs [upon] his road and his path and his [ascent] also [he mounts up] to the heights, to the great aeons [of light] thus the old man is bound in the [body] and his lust, his [anger] his foolishness in these five members of the bo[dy ...] the Dark Spirit is imprisoned with them in a bond and in severe misery.
 
-**¶42** Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [...] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [...], thus Sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
+**¶42** Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [is] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [reign], thus Sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
 
-**¶43** There are occasions when Sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [...]
+**¶43** There are occasions when Sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [evil deeds]
 
-**¶51** [T]hen, have I taught you, and opened your (sg.) [eyes], as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [...] of the [Li]ght [M]ind.
+**¶51** as to how confusion shall arise in the zo[ne], in the camps of these great mig[hty] gods? Again, this is how disturbance shall come about, from ti[me] to time, in the [camp] of the [Li]ght [M]ind.
 
-**¶52** So al[so] these watch-keepers, for they are set [...] fi[rm in] the zone, (but) they are not visible. Again, this too is the way of the Light Mind, [for he is] not visible in the body.
+**¶52** So al[so] these watch-keepers, for they are set [fast and] fi[rm in] the zone, (but) they are not visible. Again, this too is the way of the Light Mind, [for he is] not visible in the body.
 
-**¶53** Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are great, [y]et have they contorted themselves. They have [...], they have become small, to the measure of the task that is apportioned to each o[n]e [of t]hem. Again, this too is like the Mind, himse[lf] a great one, and exalted; but he is bent over and [has] become small, to this little worthless [bo]dy.
+**¶53** Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are great, [y]et have they contorted themselves. They have [bent down], they have become small, to the measure of the task that is apportioned to each o[n]e [of t]hem. Again, this too is like the Mind, himse[lf] a great one, and exalted; but he is bent over and [has] become small, to this little worthless [bo]dy.
 
 **¶54** [Even so] the gods in the outer [z]one: they are transcendent and purified, they are set [f]a[st in] the mingling of the totality, (but) are not defiled. [This too is like the] Light [Mind]. While he is placed in hi[s ...]
 
 **¶55** Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of Sin. He limits them and distributes them out. He sets them down at his pleasure.
 
-**¶56** Also, he does another work, surpassing and ex/ceeding (these). He bestows a great spirit upon the ele/ct one. Indeed, now may you find him, as he stands on the earth, [r]ising up in his heart and ascending to the Father, the G[o]d of truth. He who exists and is established above all the things of loss. [Onc]e again, he may push dow[n] in his insight and his consideration, and descend to the land of Darkness, from where the Darkness has poured forth. His heart shall run and touch everything, as it [...]
-
-**¶57** I have taught you] the deeds of the [Light] Mind! Whoever has an open and percept[ive] eye, [he can] appear to him. Whoever has not that eye, he can not appear to him.
+**Assessment:** 76 restored
 
 ---
 
@@ -1574,49 +1574,49 @@ The first: He became the enlightener in their creation; instead of the light of 
 
 ## Chapter 65: Concerning the Sun.
 
-**¶2** it is the gate of life and the vessel of peace, to this great aeon of light [...].
-
-**¶4** Every day, would this great light-giver shine its light, it shall do seven good things for them. Shall they not see them?
-
 **¶5** The first good thing that it does for them is its light, which it shines upon them. It opens the eyes of all mankind. They see underfoot as they walk by it. It takes away the blindness of the night, which made them blind with its darkness.
 
-**¶6** The second: When (the Sun) is come to the world, with its coming it shall bring calm and peace to the entire world. With its coming it shall also take away from them all the fear and trembling, which their heart is filled with the whole night; for it shall take away the darkness present by its light, and sweep it out. Also, this is how it extinguishes fear by its calm.
+**¶6** The second: When (the sun) is come to the world, with its coming it shall bring calm and peace to the entire world. With its coming it shall also take away from them all the fear and trembling, which their heart is filled with the whole night; for it shall take away the darkness present by its light, and sweep it out. Also, this is how it extinguishes fear by its calm.
 
-**¶7** The third is its vigil; because when (the Sun) comes to the world all sleeping mankind shall arise and awake. And the watchmen too shall cease from watching. The guards who sit at the gates of camps, they break vigil at the watchposts, because of its light that has shone upon them in the world.
+**¶7** The third is its vigil; because when (the sun) comes to the world all sleeping mankind shall arise and awake. And the watchmen too shall cease from watching. The guards who sit at the gates of camps, they break vigil at the watchposts, because of its light that has shone upon them in the world.
 
-**¶8** The fourth: It shall nourish, and give strength, taste and scent, to the trees and fruits and vegetables, and all the herbs, and the flowers and grasses, which are upon the entire earth.
+**¶8** ⟨p.160⟩ The fourth: It shall nourish, and give strength, taste and scent, to the trees and fruits and vegetables, and all the herbs, and the flowers and grasses, which are upon the entire earth.
 
-**¶9** The fifth: When (the Sun) shines in all the world, the evil reptile and the sharp-toothed beasts that are filled of wickedness, they shall flee to hiding in their dens.
+**¶9** The fifth: When (the sun) shines in all the world, the evil reptile and the sharp-toothed beasts that are filled of wickedness, they shall flee to hiding in their dens.
 
 **¶10** The sixth: When it shines its light, the wound of any person is eased from pain. Its light shall melt away the evil arts of every doer of wickedness.
 
-**¶11** The seventh: (The Sun) shall display and manifest to the world the sign of the splendour of the aeons of light, from which it has come out; it here in this world being their sign. It brings light to the whole of creation.
+**¶11** The seventh: (The sun) shall display and manifest to the world the sign of the splendour of the aeons of light, from which it has come out; it here in this world being their sign. It brings light to the whole of creation.
 
-**¶14** The first wickedness that the Night shall do in the world is the darkness, with which it shall fill the entire world; because when the sun sinks from the world and draws to it its rays, at that instant the shadow of the night shall spread out over the whole world. The eyes of the people fill with blackness. They neither see nor wonder with their eyes, because of the darkness of the night which shall fill the whole world.
+**¶13** the night, for it has all wickednesses therein. Every occasion, would the night fall, it shall do seven evils in the world.
 
-**¶15** The second evil thing that the Night shall do is its fear; because when its shadow looms forth, its fear and its trembling shall possess all of mankind. The entire world shall fill of the night.
+**¶14** The first wickedness that the night shall do in the world is the darkness, with which it shall fill the entire world; because when the sun sinks from the world and draws to it its rays, at that instant the shadow of the night shall spread out over the whole world. The eyes of the people fill with blackness. They neither see nor wonder with their eyes, because of the darkness of the night which shall fill the whole world.
 
-**¶16** The third: When the Night falls, all creatures take up revolt. They rebel in their heart, to do wickedness and perdition.
+**¶15** The second evil thing that the night shall do is its fear; because when its shadow looms forth, its fear and its trembling shall possess all of mankind. The entire world shall fill of the night.
+
+**¶16** The third: When the night falls, all creatures take up revolt. They rebel in their heart, to do wickedness and perdition.
 
 **¶17** The fourth: The heaviness of sleep shall lay upon them, and they fall asleep; they slumber and doze, and they are like these corpses in the night.
 
-**¶18** The fifth is its ugliness; again, when the Night would fall, the form of the people shall be hidden in the darkness and the ugliness of the night. The beauty and the form of men and women shall not be displayed before one another, because of its darkness and its ugliness, which it shall spread out over all their forms.
+**¶18** The fifth is its ugliness; again, when the night would fall, the form of the people shall be hidden in the darkness and the ugliness of the night. The beauty and the form of men and women shall not be displayed before one another, because of its darkness and its ugliness, which it shall spread out over all their forms.
 
-**¶19** The sixth occasion is when the Night would fall on the world. At that instant evil people shall come out to do wickedness; the adulterers, and the robbers and poisoners. The evil beasts shall come out, and all the reptiles that are filled with wickedness, from their dens. And they stalk in the night. Also, the demons and fiends find power to do wickedness in the night. Again, the blows and buffets and wounds and discharges shall torment people in the night; because in it the whole of evil shall find strength.
+**¶19** The evil beasts shall come out, and all the reptiles that are filled with wickedness, from their dens. And they stalk in the night. Also, the demons and fiends find power to do wickedness in the night. Again, the blows and buffets and wounds and discharges shall torment people in the night; because in it the whole of evil shall find strength.
 
-**¶20** The seventh: The Night shall display the sign of the Darkness, its father. It has arisen out of its essence; because this night that came out of this first Darkness has been displayed in the world. Note this night, the shadow of this first Darkness, the one that is entwined and bound in all things above and below.
+**¶20** The seventh: The night shall display the sign of the darkness, its father. It has arisen out of its essence; because this night that came out of this first Darkness has been displayed in the world. Note this night, the shadow of this first Darkness, the one that is entwined and bound in all things above and below.
 
-**¶22** There are five archetypes occur in the Sun, it making them [...] as it finds the world.
+**¶22** There are five archetypes occur in the sun, it making them [...] as it finds the world.
 
-**¶23** The first is its light; for it illumines by its light the world, and all the creatures who exist in it.
+**¶23** ⟨p.162⟩ The first is its light; for it illumines by its light the world, and all the creatures who exist in it.
 
 **¶24** The second is its beauty; because when it shines, it shall flood beauty and loveliness upon all creatures and everything.
 
 **¶25** The third is its peace; for, again, when the sun would shine on the world, all people shall receive affection through it, and give peace to one another.
 
-**¶26** The fourth is the life of the Living Soul, which it shall release from all the bonds and fetters of heaven and earth.
+**¶26** The fourth is the life of the living soul, which it shall release from all the bonds and fetters of heaven and earth.
 
 **¶27** The fifth: It gives a strength to the elements; and also it gives a scent and a taste to the entire Cross of the Light.
+
+**¶28** its light illumines more than all lights that occur in the world. Also, its beauty is more beautiful than all the beauties of mankind. Again, its peace is more surpassing than all the powers and guards who exist in the world. Its releasing action, by which it releases the living soul, is a full day ahead of all releasing actions! The strength that it gives to its limbs is a great strength, being mightier than all strengths!
 
 **¶29** Once again, there are another three archetypes made apparent by the sun, in respect of the mystery of the first greatness.
 
@@ -1624,11 +1624,13 @@ The first: He became the enlightener in their creation; instead of the light of 
 
 **¶31** The second: (The sun's) light surpasses the light of all the stars, and all the lights that occur in the universe; corresponding to the mystery of the light of the Father; for his light surpasses and is greater than the light of his aeons.
 
-**¶32** The third: This sun is very high above all else. It surpasses the height of all the mountains and hills that exist upon the entire earth, corresponding to the mystery of the Father of Greatness; for he is high above all the household of his light-earth. Also, because the Father himself is high above all the heights and the mountains of his light-earth. He is 'filled up' in his image [all] the time and every hour from eternity to eternity!
+**¶32** ⟨p.163⟩ The third: This sun is very high above all else. It surpasses the height of all the mountains and hills that exist upon the entire earth, corresponding to the mystery of the Father of Greatness; for he is high above all the household of his light-earth. Also, because the Father himself is high above all the heights and the mountains of his light-earth. He is 'filled up' in his image [all] the time and every hour from eternity to eternity!
+
+**¶33** The mystery of the night and that of the day, which daily come forth in the world. Now, the mystery of the light and the mystery of the darkness are displayed daily in the created order.
 
 **¶34** The mystery of the first great light is the sun, which is this second light-giver, the one that comes daily to the world. It displays all the marks of its graces, displaying and signifying on its own behalf that it is good, out of the essence of the good. It came from the good Father and appeared in this world.
 
-**¶35** In contrast, this Night that is made of fear exists after the mystery of the Darkness. Behold too the mystery of its essence! It displays it in the world in all these wickednesses. It displays this mystery daily in the world,
+**¶35** In contrast, this night that is made of fear exists after the mystery of the darkness. Behold too the mystery of its essence! It displays it in the world in all these wickednesses. It displays this mystery daily in the world, but the sects know it not in their error. They do not distinguish the mystery of the light from that of the darkness.
 
 ---
 
@@ -1694,9 +1696,9 @@ The first: He became the enlightener in their creation; instead of the light of 
 
 **¶3** Its head is like the first-fruits of the five garments. And, from its neck down to the site of its heart, it resembles the pattern of the ten firmaments. And again, the heart accords to the wheel of the rotating sphere. And, from its heart down to its intestines (?), is like this atmosphere that extends from the sphere down to the earth. The [male] part of the body corresponds to this great earth. And also, from its intestines (?) down to its loins is like the three earths. And also, its shinbones to the pattern of the space in which the Porter stands. Its footsoles to the great earth upon which the Porter is stood; and the four fastenings that are under his feet. Its liver to the vessel of fire. Its flesh to the vessel of darkness. Its blood to the vessel of water.
 
-**¶4** Now, this is how the small body corresponds to the macro-cosmos in its firmaments, in its orderings, in its mountains, its walls and its vessels.
+**¶4** Now, this is how the small body corresponds to the macro-cosmos in its firmaments, in its orderings, in its mountains, its walls and its vessels, as I have made clear to you!
 
-**¶5** There exist five great camps in this great outer zone, of which the five sons of the Living Spirit are masters.
+**¶5** Once more, I reveal to you: There exist five great camps in this great outer zone, of which the five sons of the Living Spirit are masters.
 
 **¶6** So, in the first watch-station above, of which the Keeper of Splendour is master, on the battlement of all the works, is found his authority over the three heavens. Then the ones below him [ ... ... ] the great King of Honour.
 
@@ -1704,7 +1706,8 @@ The first: He became the enlightener in their creation; instead of the light of 
 
 **¶8** The third watch, of which the Adamant [is master, his authority] reigns from the firmament down below to the [earth]. [And he] invigorates, according to his authority, the sphere and the worlds of the atmosphere; and the other four worlds that are appointed on this earth.
 
-**¶9** The fourth watch, over which the King of Glory has power, is the three wheels. And his authority lies over the three earths upon the head of the Porter.
+**¶9** ⟨p.171⟩
+The fourth watch, over which the King of Glory has power, is the three wheels. And his authority lies over the three earths upon the head of the Porter.
 
 **¶10** The fifth watch is the watch over which the Porter is authoritative. Again, he is master, according to his authority, over this great earth he stands upon, and the four fastenings under his feet.
 
@@ -1720,35 +1723,31 @@ The first: He became the enlightener in their creation; instead of the light of 
 
 **¶16** Also, in the watch of the Porter, the fastenings beneath were laid bare and strained their chains. A great earthquake befell that place.
 
-**¶17** [Like] these five watch-stations, which exist in this great [ ... these five] camps: this is also the case with this body. There are another five camps there, and the Light Mind is watching over them, and the new man who is with him.
-
-**¶23** Also, the teaching of wisdom, which circulates in that body: to the likeness of the Virgin of Light, who goes up and comes down in this zone, above and below.
-
-**¶24** Also, love and joy, faith and truth: they are to the likeness of these two light ships. For, the living soul should go up in them and become free through them; and it ascends from the abysses below and arrives at the heights above.
-
-**¶25** There exist four worlds in this body of the flesh, and there exist countless times seven rulers in the body of the four worlds!
+**¶25** Once more, understand this other (truth): There exist four worlds in this body of the flesh, and there exist countless times seven rulers in the body of the four worlds!
 
 **¶26** So, the first world is from its neck up; and also the seven rulers who are in this upper world are these: the two organs of sight, and the two of hearing, and the two of smell. The other one is the mouth, which is the organ of taste.
 
 **¶27** The second world is from its neck down to its entire upper torso. And also, the seven rulers who are in this second world are: its two arms that accord to the pattern of its two ears, which occur in its first world above; and its two breasts that are to the pattern of its organs of smell; and the two eyes of its heart; and the gullet of the stomach between the two breasts, which in the chest is the pattern of the mouth.
 
-**¶28** Once more, there exist seven rulers in the third world of the body, which are these: the fat, the lung, the spleen, the liver, the gall, and its two kidneys.
+**¶28** ⟨p.173⟩
+Once more, there exist seven rulers in the third world of the body, which are these: the fat, the lung, the spleen, the liver, the gall, and its two kidneys.
 
 **¶29** Also, the fourth world below. There are another seven there of this same kind: its two buttocks (?), and its two testicles, and its two loins; and the member out of which the seed comes, that begets all the forms.
 
-**¶31** Aries and Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces; these are the twelve signs of the zodiac that occur in the worlds above, on the sphere. They are interlocked and bound on this turning wheel, the one in which they are [ ... ], fixed, and planted. And, regarding all these twelve signs of the zodiac, this is how they were appointed and made leaders [ ... ] on the sphere beneath the heaven that is the wheel of the stars.
+**¶31** Aries and Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces; these are the twelve signs of the zodiac that occur in the worlds above, on the sphere. They are interlocked and bound on this turning wheel, the one in which they are [ ... ], fixed, and planted. And, regarding all these twelve signs of the zodiac, this is how they were appointed and made leaders [ ... ] on the sphere beneath the heaven that is the wheel of the stars. Now, they are appointed like this, they are thus, so that you can find the head of [ ... ] and you find the tail too [ ... ... ]
 
 **¶32** Again, they occur like this, these that we have recited, one after another in this body. They are counted by order and number from the head to the feet. Its head is Aries. Its neck and its shoulders are Taurus. Its two arms Gemini. Its upper torso is Cancer. Its stomach is Leo. Its belly is Virgo. The vertical spine and its intestines (?) are Libra. Its genitals Scorpio. Its loins are Sagittarius. Its knees are Capricorn. Its shinbones are Aquarius. The soles of its feet are Pisces.
 
 **¶33** Behold, these are also distributed one after another. They exist in this body, as if turned to the side and bent to the pattern of the twelve signs of the zodiac. They too are thus, arranged one against another, head to tail, as they occur on the wheel [ ... ] up.
 
-**¶34** Also, they are counted by order and number of the body and all its members. Because from its head down to its hip shall count six to its left, and another six to its right.
+**¶34** Also, they are counted by order and number of the body and all its members. So, we have proclaimed that these are turned to the side, bent, and spread out; because from its head down to its hip shall count six to its left, and another six to its right.
 
-**¶35** The six that are down its right are these that I will recount: the right temple is Aries; its right shoulder is Taurus; its right arm is Gemini; its right rib-cage is Cancer; its stomach is Leo; the right side of its reproductive organs are Virgo.
+**¶35** ⟨p.174⟩
+The six that are down its right are these that I will recount: the right temple is Aries; its right shoulder is Taurus; its right arm is Gemini; its right rib-cage is Cancer; its stomach is Leo; the right side of its reproductive organs are Virgo.
 
 **¶36** Conversely, the other six about which we have spoken, which are to its left, in contrast they come from its hip to its head: its left [ ... ] is Libra; its left rib-cage is Scorpio; its left breast and left kidney is Sagittarius; its [left] elbow is Capricorn; its left shoulder is Aquarius; its left temple is Pisces. This is how the creator of the body himself has appointed them. He has [set] them in order and arranged them, one against its companion, head to tail.
 
-**¶38** There exist many powers in this body. They are the house-dwellers who are made the leaders in it. There are eight hundred and forty times ten thousand rulers made chiefs in the human body! They are distributed and set firm, quartered according to house. The count and number of their houses is two hundred and ten times ten thousand.
+**¶38** Listen to this other lesson that I will proclaim to you. Understand that there exist many powers in this body. They are the house-dwellers who are made the leaders in it. There are eight hundred and forty times ten thousand rulers made chiefs in the human body! They are distributed and set firm, quartered according to house. The count and number of their houses is two hundred and ten times ten thousand.
 
 **¶39** When all these rulers come creeping and moving within the body, they will meet one another; and they shall beset and destroy one another, and [ ... ] in them there. When [ ... t/il]] they shall erupt from the body of the person who [will] die; and make putrid boils and sores and burning wounds in the body. Either they might have made him sick within; or else they might come forth upon his outer side. Those wounds shall first be squeezed and discharge their liquid, and empty out their pus, until they are squeezed [ ... ... ] and the suppuration forced out from the wound. Afterwards, their scars shall close over; and they are healed and obtain relief from the places that came out upon them.
 
@@ -1867,13 +1866,13 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 ## Chapter 83: Concerning the Man who is ugly in his Body, [but] beautiful [in his Soul].
 
-**¶9** “Pearls shall arise not in every place in the sea, nor be formed in the sea as a whole. Rather, in various places that are in this sea, pearls are formed in them [ ... ... ] that sea, in which the [pearls] shall be formed [ ... ] this [ ... ... ] what the sea shall [ ... ... ] its fire above and comes [down ... ... ] and it makes foam like the drop of water that flows [ ... ] down in rainwater [ ... ] is the water [ ... ... d]own first [ ... ... ] foam and comes down [ ... ... ] the sweet waters [ ... ... ] the waters.
+**¶9** “Pearls shall arise not in every place in the sea, nor be formed in the sea as a whole. Rather, in various places that are in this sea, pearls are formed in them [ ... ... ] that sea, in which the [pearls] shall be formed [ ... ] this [ ... ... ] what the sea shall [ ... ... ] its fire {blazes} above and comes [down ... ... ] and it makes foam like the drop of water that flows [ ... ] down in rainwater [ ... ] is the water [ ... ... d]own first [ ... ... ] foam and comes down [ ... ... ] the sweet waters [ ... ... ] the waters.
 
 **¶10** “This drop of water shall [ ... ] down to the sweet waters and [ ... ] and they absorbed them and were combined with the [ ... ]. They did not [d]escend to the depths of the sea, but they [ ... ... ] it floated on the surface of the waters [ ... ... ] to it. The foam and the pearl-shell shall be formed [ ... ] this wholesome drop [ ... ... ] it, and it becomes a pe[arl ... ] that makes a drop of rainwater [ ... ] waters [ ... ] it not being whole. It breaks and separates out into many droplets, and it has time to become a drop of sweet water [ ... ] and comes up in the sea of [ ... ] rain and sweet water; and it is accomodated in the shell, which at first is foam. They shall be joined with each other at [this] time, and are shaped and become a great pea[r]l, a great and valued kind.
 
-**¶11** “When, however, a drop of rainwater falls, and that drop breaks into many droplets and various , they shall be formed into and be confined in [n]umerous pearls, in the shell and the pearl-shell. One might form two pearls, another may form three, others may form five; some mould more than these, some fewer.
+**¶11** “When, however, a drop of rainwater falls, and that drop breaks into many droplets and various {particles of water}, they shall be formed into and be confined in [n]umerous pearls, in the shell and the pearl-shell. One might form two pearls, another may form three, others may form five; some mould more than these, some fewer.
 
-**¶12** “Now, when you might [find a] whole drop, and the shell receives it, it shall become a great and valued [pe]arl as its worth is perfected. [However], if these two droplets will have time (to adhere) to one another before any (water particle) escapes, and they mix with e[ach o]ther, and the shell [ ... ] before they break into [ ... ] within [ ... ] in a great kind [ ... ... ] the drop of rain, which [ ... ... ] another one, that [ ... ... ] the [w]aters form them in [ ... and] in a great, valued commodity.
+**¶12** “Now, when you might [find a] whole drop, and the shell receives it, it shall become a great and valued [pe]arl as its worth is perfected. [However], if these two droplets will have time (to adhere) to one another before any (water particle} escapes, and they mix with e[ach o]ther, and the shell [ ... ] before they break into [ ... ] within [ ... ] in a great kind [ ... ... ] the drop of rain, which [ ... ... ] another one, that [ ... ... ] the [w]aters form them in [ ... and] in a great, valued commodity.
 
 **¶13** “Behold, [I, I have] taught you how sea-pearls shall be formed. I have told you that as a pearl shall come into existence by means of rainwater that has [ti]me to become foam, the pearl-shell shall come into existence by means of the foam, and the foam itself comes into being by means of the transformation and the [ ... ] of the sea.
 
@@ -1885,9 +1884,13 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 ## Chapter 84: Concerning Wisdom; it is far superior when on the Tongue than in the Heart of the Person.
 
-**¶3** Well [do] you ask! And great is this lesson for which you have sought, [that is] whence comes my great joy, on account of this wis-dom that I utter? [ ... ] it is superior in my mouth when I proclaim it than when it is set in m[y heart]. You yourself rejoice in it; and the other one who hears it from you, he shall rejoice in it, and be enlightened [by] it and receive thereby permanent strength.
+**¶1** Behold, when a person will be taught wise wisdom in his heart, and he seals it in his doctrine, so shall you find him rejoicing greatly about it. However, [sh]all his [ ... ... ] to him, more th[an] when he may pro-c[laim ... ] and utter it. ⟨p.205⟩ He shall be enlightened by it, and [t]hat [wisdom] shall shine forth the more in him. It is un-veil[ed be]fore him, and through it he assumes power and truth.
 
-**¶4** For like this matter, just so a small b[o]y who is conceived in the belly of his mother. He [ ... he] turns in his mother's womb, filling her womb. The mother knows and understands that this child she conceives is alive within her. She rejoices over him until [the tim]e when she gives birth. And he comes from her alive with his [limbs whole] and perfect in beauty, without defect, [in] the living open air that is more sp[ac]ious than the first air he was in. He fills his eyes with the light and speaks with his living voice in the way of they who are born.
+**¶2** I understand [ ... ] that this word I have uttered is correct. I know that the wis-dom I have been taught is spread through my heart and perfected in my soul. (However), it is not found like the splendour in me, so that I regard it [ad]vanced, except when I shall proclaim it by my mouth and utter it to others. Indeed, when I proclaim it, I am giving it to the ears [of] others to hear. Would I do these same things, even if I had never heard it in [my] days of being? Would I desire greatly and my heart be drawn to the wis-dom I now proclaim? [I entreat y]ou, my master, that you might instruct me as to [w/hy] this wisdom becomes more advanced when I proclaim it, than when it is sealed in my heart.
+
+**¶3** [ ... ] it is superior in my mouth when I proclaim it than when it is set in m[y heart]. You yourself rejoice in it; and the other one who hears it from you, he shall rejoice in it, and be enlightened [by] it and receive thereby permanent strength.
+
+**¶4** For like this matter, just so a small b[o]y who is conceived in the belly of his mother. He [ ... he] turns in his mother's womb, filling her womb. The mother knows and understands that this child she conceives is alive within her. She rejoices over him until [the tim]e when she gives birth. And he comes from her alive with his [limbs whole] and perfect in beauty, without defect, ⟨p.206⟩ [in] the living open air that is more sp[ac]ious than the first air he was in. He fills his eyes with the light and speaks with his living voice in the way of they who are born.
 
 **¶5** Now, the time when this woman conceives the child in her belly, her joy at conceiving him in her womb is not so [ve]ry great as when she gives birth and sees him; and is full of his [be]auty and stature in the space of a single moment. The love and joy over him shall be a hundred [t]imes greater than it was, now that she has given birth and seen him.
 
@@ -1897,15 +1900,17 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 **¶8** So, in this way, the wisdom that the person proclaims, speak[ng] it from his heart, shall be advanced more and mor[e]. Its en-hancement and glory shall double from the time when the bea-uty and splendour of the saying will be displayed before the eyes [of t]hey who hear it, and it shall also advance for you [ ... ... ] your hearing, and you are astonished at what you proclai[m].
 
-**¶9** Once again, the wisdom is like this, while it is hidden in the heart of the person. [Bef]ore he has uttered it, it is just like [the blaze] of fire that is hidden in wood. An[d] that wood is [set aflame] by the blaze of the fire, but the garment of fir[e that exists in] the wood is not apparent. Indeed, you can see [ ... ] wood and they put them in a single house. It is impossible to [put li]ght to that house as long as the light within [ ... ] until the time when they are added to the fire, and the light [comes f]orth from them. It is possible for that entire house [to be] lit by the light of a single piece of wood.
+**¶9** Once again, the wisdom is like this, while it is hidden in the heart of the person. [Bef]ore he has uttered it, it is just like [the blaze] of fire that is hidden in wood. An[d] that wood is [set aflame] by the blaze of the fire, but the garment of fir[e that exists in] the wood is not apparent. Indeed, you can see [ ... ] ⟨p.207⟩ wood and they put them in a single house. It is impossible to [put li]ght to that house as long as the light within [ ... ] until the time when they are added to the fire, and the light [comes f]orth from them. It is possible for that entire house [to be] lit by the light of a single piece of wood.
 
 **¶10** This is also the case with the wisdom that is in the heart of the person. [It] is like the fire that is hidden in the wood, as its light is not [d]isplayed. For its part, the wisdom is like this: its li[ght] is hidden and its glory is hidden in the heart; but when the person will proclaim it, its glory shall be displayed before the eyes and the ears of a multitude.
+
+**¶11** So, if the wisdom is like the paradigms you have taught me, why are there some people who shall hear the word of wisdom and rejoice in it and give glory to it; when others shall listen to it and neither rejoice [i]n it nor receive glory amongst them?
 
 **¶13** For in this respect the wisdom is like this child about whom I have told you, the one who [was] born from the woman. Now, when he will be born, his father and mother and family circle shall rejoice over him. However, you find others grieving by reason of him, [s]ince they are strangers to him. These are not reckoned among his family. [They do n]ot rejoice over him, because he is not of their race.
 
 **¶14** This is also [the case] with the wisdom. When it is proclaimed by the mouth of the teacher, these who are [a]kin to it shall receive it to them and rejoice in it; but [those] who are strangers to it neither rejoice in it [ ... ] nor receive it to them.
 
-**¶15** Just like the light of [the fire, which I] proclaim[ed] to you, that shall come from the wood [and be apparent o]utside before the eyes of every one. So, [wh]oever looks shall see the light that has [come fro]m the wood; but whoever is blind does not see the [fir]e.
+**¶15** Just like the light of [the fire, which I] proclaim[ed] to you, that shall come from the wood [and be apparent o]utside before the eyes of every one. ⟨p.208⟩ So, [wh]oever looks shall see the light that has [come fro]m the wood; but whoever is blind does not see the [fir]e.
 
 **¶16** This is also the case with the wisdom, when it will be pro-claimed. The person, in whom is the [Mi]nd, of him is the wisdom. Whenever he may hear it, he shall receive it in to him; but the one who has no Mind in him is a stranger to it. He neither receives it in to him, nor shall he listen to [it].
 
@@ -1913,17 +1918,17 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 ## Chapter 85: Concerning the Cross of Light: [...] trample upon it.
 
-**¶7** Again, do not be afraid even with this; because the Living Soul is like this. As a person, if a disease will take hold of his limbs, and his heart [is sl]ow, his soul distressed, and he has pain in his disease. He seeks after a doctor to cure him, to make him strong of heart. And he cures, attends to, and gives him health [from] the disease that has risen up against him. So he thinks about this.
+**¶7** because the living soul is like this. As a person, ⟨p.210⟩ if a disease will take hold of his limbs, and his heart [is sl]ow, his soul distressed, and he has pain in his disease. He seeks after a doctor to cure him, to make him strong of heart. And he cures, attends to, and gives him health [from] the disease that has risen up against him. So he thinks about this.
 
 **¶8** [And] a wise person comes, knowing the formulas proper to a skilled doctor. If he shall achieve a healing of the one whom he [... ...] it, he recites over him the formulas that he knows, and he even tramples with his foot upon all his limbs! That person, who is ill, knows that this person is trampling upon him so that he might achieve a healing; rather, not doing this to him out of some enmity he had against him beforehand. Instead, all that he does, he does to him that he might make a healing of his body. And he expels [the] disease and the pain, trampling upon him to occasion this benefit. That person, who is ill, he can bear no anger nor hatred against this doctor, who tramples upon him. He can not hate him out of enmity, because he knows that he does this to him to his benefit.
 
 **¶9** However, should someone come and trample upon him in enmity; he may hate, prevent and not permit him! For he knows that he tramples upon him in enmity; and as he strikes out of a wanton whim, he piles another illness upon his disease.
 
-**¶10** Again, this too is the case with the Living Soul; whether in the earth, or in the Cross of Light. Should you walk along upon it on the path, should you trample the Cross, it may take no reckoning against you in anger nor wrath. For it knows that [you] walk upon it for relief and healing, to proclaim on its behalf. [You] walk because of it, to reveal its mysteries. Also, the distress of the bones, which you have oppressed, befits not sin, but is set towards the victory. Again, because of this nothing will be lost for you due to the distress of the bones and your toil; rather, it all accumulates to the relief (of the soul).
+**¶10** Again, this too is the case with the living soul; whether in the earth, or in the Cross of Light. Should you walk along upon it on the path, should you trample the Cross, it may take no reckoning against you in anger nor wrath. For it knows that [you] walk upon it for relief and healing, to proclaim on its behalf. [You] walk because of it, to reveal its mysteries. Also, the distress of the bones, which you have oppressed, befits not sin, but is set towards the victory. ⟨p.211⟩ Again, because of this nothing will be lost for you due to the distress of the bones and your toil; rather, it all accumulates to the relief (of the soul).
 
 **¶12** Rather, the word that wounds is this: should a person utter a saying for the sake of the murder of a person, or the murder of animals, or for [the sake of] the murder of trees and the Cross of Light, the lying word and the wrathful and the bitter, or a word of envy and [...] only, or a word of accusation, which someone will spread against his brother; this is the [wor]d that wounds [...]. Should the person utter it, it befits [si]n; because [he has br]ought forth from it the demons [...] concerning this [...] the righteous person, or [...] all of them, which I have proclaimed, in order that [...] his word to the fetter; because anyone who would [...] his word to the fetter. And again, he [...] his coming forth, they will bind him in the place wherein he has bound his [...].
 
-**¶14** [He is li]ke this, a wise doctor who might turn back [... ...] his disease. As a wound is in his body, he cuts [...] this person who is ill, in his wisdom, [...] he [...] this wound, and he cuts it. After these things [...] and he places the soluble drugs upon it, so that [they will be able to diss]olve. He might incise it with the iron, and he casts it out [f]rom him, with the soluble drugs. And the wound is purified [fr]om the fever. After these events, he shall place the soothing drugs [...] and it heals up. That person, who is ill, he shall give [...] but he shall not [...] he [shall not] generate anger in his heart against him; because he knows that he is making the aspect of his benefit and his healing. After the cut that he may make, and the cauterizing that he may do there, he shall even give rewards to the doctor! He gives his thanks and is a friend to him his whole life through.
+**¶14** [He is li]ke this, a wise doctor who might turn back [... ...] his disease. As a wound is in his body, he cuts [...] this person who is ill, in his wisdom, [...] he [...] this wound, and he cuts it. After these things [...] and he places the soluble drugs upon it, so that [they will be able to diss]olve. He might incise it with the iron, and he casts it out ⟨p.212⟩ [f]rom him, with the soluble drugs. And the wound is purified [fr]om the fever. After these events, he shall place the soothing drugs [...] and it heals up. That person, who is ill, he shall give [...] but he shall not [...] he [shall not] generate anger in his heart against him; because he knows that he is making the aspect of his benefit and his healing. After the cut that he may make, and the cauterizing that he may do there, he shall even give rewards to the doctor! He gives his thanks and is a friend to him his whole life through.
 
 ---
 
@@ -1955,9 +1960,9 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 ## Chapter 88: Concerning the Catechumen who found fault with the Elect: why he is angry.
 
-**¶5** They are gods as they stand firm in the image of the gods. The divinity that is planted in them came to them from the heights and [dw]elt in them. They have done the will of the greatness.
+**¶5** They are gods as they stand firm in the image of the gods. The divinity that is planted in them came to them from the heights and [dw]elt in them.
 
-**¶6** You know, once and for all, they are established in a body that is not their own, hating the flesh of Sin that makes the other dwell in a foreign land.
+**¶6** they are established in a body that is not their own, hating the flesh of Sin that makes the other dwell in a foreign land. Due to this they shall be angry, and say and utter hard words to each others' faces.
 
 **¶7** For you have known the mystery of the two essences, you have understood that what is good and what is evil dwell in every person.
 
@@ -1969,21 +1974,29 @@ The answer that was sent from the First Man came to the heights, to the Living S
 
 ## Chapter 90: Concerning the Fifteen Paths; and whether the Catechumen would have avoided causing his Wealth to go on the Three Paths to Gehenna
 
-**¶2** ‘Fifteen paths are drawn out in the zone. Four paths are pure and belong [to the] light, leading up to life. Eight other paths are [mixed], leading above from that place. The light shall go [u]p and become free through them; be purified and go in [to the] ships. However, the waste is separated and thrown [dow]n to transmigr[a]tion and the other three paths of [waste ...] discharged to the gehennas’.
+**¶2** For we have heard thus from you: ‘Fifteen paths are drawn out in the zone. Four paths are pure and belong [to the] Light, leading up to life. Eight other paths are [mixed], leading above from that place. The Light shall go [u]p and become free through them; be purified and go in [to the] ships. However, the waste is separated and thrown [dow]n to transmigr[a]tion and the other three paths of [waste ...] discharged to the gehennas’.
 
-**¶3** [that the three] paths that belong to waste, the ones that are drawn to the gehennas, [a]re drawn from the fleshes. O[n]e of them is the appetite for [lawl]essness, that of people and of all flesh. The second is the [ ... ] all bodies, which is slaughter, [with] which all flesh is consumed. The third is the damaging action, which [ ... ] the Cross of Light and every body; together with the rest of the error and the blasphemy that wounds the gods.
+**¶3** You have explained [that the three] paths that belong to waste, the ones that are drawn to the gehennas, [a]re drawn from the fleshes. O[n]e of them is the appetite for [lawl]essness, that of people and of all flesh. The second is the [ ... ] all bodies, which is slaughter, [with] which all flesh is consumed. The third is the damaging action, which [ ... ] the Cross of Light and every body; together with the rest of the error and the blasphemy that wounds the gods.
 
-**¶4** Th[ese th]ree paths [ ... ] lead to the gehennas. And every person shall follow after hi[s] de[e]ds, whether to life or indeed to death.
+**¶4** Th[ese th]ree paths have you taught us, that they lead to the gehennas. And you have also [told] us that every person shall follow after hi[s] de[e]ds, whether to life or indeed to death.
+
+**¶13** Immediately all his first deeds, that he did before he received the knowledge, shall be freed from every place wherein they are [bou]nd and snared. They shall loosen their bond and asce[n]d from heaven and earth, from the trees and the fleshes. They are loosened from every place wherein they are and go to the heights
+
+**¶15** Now this matter is like this, the way [som]eone might dwell at a city, while his enti[re] following [is present] in the cities and the dwellings and the villages [of the country]. As long as, overall, the king is living in t[hat] place, you shall find his entire host living in those [dwelli]ngs that surround it. Also, whenever he may [give ... / ...] the sign for departure to the country, when he wishes [ ... ] to it, an indication is given by him to his entire follow[ing] so that he might set out on the road and depart [ ... ] each [pl]ace wherein it is. And he goes to the place where it i[s].
+
+**¶16** So, there are some among his expedition who shall travel before him and be prior to him. And there are others am[ong t]hem who shall wait for him and travel with him. They depart [at] his departure. Also, there are others among them who shall come after him, travelling behind him. They continue [very] many days and months travelling until they arrive.
+
+**¶17** His entire following shall not depart a[t] a single time; but someone shall go first and another after him, while others shall depart with him.
+
+**¶18** There are some among his limbs and his deeds shall be puri[f]ied while he is set in the body. They are cleansed in [the] firmaments of the heavens and go before him. [Th]ere are some also among his limbs shall be freed wi[t]h him, at the time when he comes out from [h]is body. There are others shall be freed [af]ter him from the bonds of the earth and that of the creatures. [They] go and reach him in the land of the living.
 
 ---
 
 ## Chapter 91: Also concerning the Catechumen; shall he be saved in a single Body?
 
-**¶1** when he comes out from his body, his soul shall [... ...] in the firmaments above, and he travels to the place of rest.
-
 **¶8** When, however, they come forth from their body, they travel on their way and pass by in the place above, and go in to the life. They shall be purified in the heavens, and they are plucked just as a fruit that ripens is plucked from the tree.
 
-**¶20** Afterwards he is purified, whether indeed above or below. He shall be purified according to the worth of his deeds, and cleansed and washed and adorned. Afterwards, he is sculpted a light image; and [he glid]es up and reaches the land of rest,
+**¶20** ⟨p.234⟩ As for the rest, he shall be questioned about a single part; and receive blows for (those sins) and retribution. Afterwards he is purified, whether indeed above or below. He shall be purified according to the worth of his deeds, and cleansed and washed and adorned. Afterwards, he is sculpted a light image; and [he glid]es up and reaches the land of rest,
 
 ---
 
@@ -1992,6 +2005,14 @@ The answer that was sent from the First Man came to the heights, to the Living S
 ---
 
 ## Chapter 93: A Catechumen asked the Apostle: When I would give an Offering to the Saints, shall I inflict a Wound on the Alms?
+
+**¶4** For this matter is like to two people, if a personal enemy and an opponent of theirs will hit one first and make a sore and a wound on his body. Afterwards he smites him again and [...] and he hits over his blows and [...] blows that have made sores on him and [...] ⟨p.237⟩ strikes him these two times [...] accuses his enemy who has struck him. And this judge questions him to his face about the [...] of the sores that he has left as marks on his body. And they [...] on him as if he had split his head. And he is led to judgement and sentence, and is punished before the judge of the world. He makes retribution for a sore in the sore place, and adds to him the wound that he had left on this person who had not yet sinned against him. He shall not omit the retaliation of the opponent, as he is judged [...] according to enmity.
+
+**¶5** After the end, this enemy is condemned for the retaliation [...] sin against him. Afterwards, the other one is sick [...] the one whom this enemy has struck, and a wound comes out on him [...] and he becomes a sick person by cause of his illness, and he [...] He calls the doctor and shows him his wound. However, that doctor has no [...] nor [...] and he takes the knife to him and cuts this wound. Nevertheless, when he cuts it the blood shall pour out of his wound. That person shall be pained, but he accepts those and these things. This doctor has not retaliated nor was harm imposed on him; because he did this thing to him for healing his wound. All that he did to him was done for the good; and not directly for evil.
+
+**¶6** After the completion, he cuts this wound and lets blood from it and heals it. He shall even make [...] gifts and compliments. That illness and the healing become a pride for this doctor, and he is given honour.
+
+**¶8** Also, [this] is the other person [who] struck the comrade of the [...] sick with his [...] he struck in [...] he being cruel according to [...] living soul [...] upon it [...] that [...] accusation of [...]
 
 ---
 
@@ -2081,13 +2102,11 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶5** Furthermore, the holy vir[gin]als [ ... ... ] should they come out against the en[emy ... ... not] taste death, nor [ ... ].
 
-**¶6** On the other hand, what is called ‘continent’ [is this li]ght that mixed with the darkness, was purif[ie]d, came [up f]rom all the creatures, and was confirmed in the great[ness]. They called it ‘continent’ since it tasted [of the l]ust; but afterwards was cleansed from it and [become an] holy one.
+**¶6** ⟨p.249⟩ On the other hand, what is called ‘continent’ [is this li]ght that mixed with the darkness, was purif[ie]d, came [up f]rom all the creatures, and was confirmed in the great[ness]. They called it ‘continent’ since it tasted [of the l]ust; but afterwards was cleansed from it and [become an] holy one.
 
 **¶7** Furthermore, what is called [‘vi]rginal’ is this light that was purified by the ima[ge] of the [A]mbassador. It wen[t up and] attained [the] he[ights. It was] confirmed in the image of the gods.
 
 **¶8** Again, what is [called] ‘continent’ is the remainder of this light th[at] remained behind, from what was cleansed. It goes up and comes down in transmigration. Al[so], there is a part [of] it that shall come and attain the form of [hum]an [fl]esh. Again, that one too shall be chosen in the flesh, [accept] the hope, and become an holy one. And they name it ‘continent’.
-
-**¶9** Furthermore, what is named ‘virginal’ is the Light Mind. However, on the other hand, what is called ‘contin[ent]’ is the new man, should it be purified from this old man. And it is cleansed and strips off the sin that is compounded with it, and it becomes a continent one.
 
 ---
 
@@ -2097,37 +2116,35 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 ## Chapter 100: Concerning the Dragon with Fourteen Heads; what it is and [...]
 
-**¶1** They say that there is a dragon with fourteen heads, and it is gathered in and [ ... ] den with five refuges. What really is a corporeal dragon with fourteen heads? Or is it another spiritual lesson?
+**¶2** There is never a Dragon in the flesh with fourteen heads, as the Magi say! Rather, this is a spiritual lesson.
 
-**¶2** There is never a dragon in the flesh with fourteen heads, as the Magi say! Rather, this is a spiritual lesson. It was uttered in virginity [ ... ] the Magi did not understand [ ... ] all their words that are written [ ... spiri]tual (?).
-
-**¶3** Again, this is how this earth [ ... ] to it, as it is accounted a corporeal dragon [ ... ] I will instruct you [ ... ] the Dragon is this doctrine [ ... ] of the flesh [ ... ] also the fourteen heads that are distributed over the Dragon are these.
+**¶3** Again, this is how this earth [ ... ] to it, as it is accounted a corporeal Dragon [ ... ] I will instruct you [ ... ] the Dragon is this doctrine [ ... ] of the flesh [ ... ] also the fourteen heads that are distributed over the Dragon are these.
 
 **¶4** The seven sense organs on the head of the body are the two of sight by which one sees; the two of sound by which one hears; the two of scent by which one smells; also the tongue [ ... ] by which one selects, receiving there the different tastes that occur in every form.
 
-**¶5** These are the seven heads of the dragon, the seven sense organs that are on the upper part of the person; [ ... ] below. The seven of the torso are these: two [ ... ]; the two [ ... ] ruler [ ... ] the seven heads that are above; so with the ones below they total and make fourteen heads of the dragon.
+**¶5** These are the seven heads of the Dragon, the seven sense organs that are on the upper part of the person; [ ... ] below. The seven of the torso are these: two [ ... ]; the two [ ... ] ruler [ ... ] the seven heads that are above; so with the ones below they total and make fourteen heads of the Dragon.
 
-**¶6** Conversely, the five dens about which they have spoken, where the Dragon is congregated and protrudes, are these: the first is the tongue; the second is the lungs; the third is the heart; the fourth is the spleen; the fifth is the blood that dwells in them. Again, if it shall look out from them [and reveal its likeness and its observation above and below, it wages war by] its fourteen heads.
+**¶6** ⟨p.253⟩
+Conversely, the five dens about which they have spoken, where the Dragon is congregated and protrudes, are these: the first is the tongue; the second is the lungs; the third is the heart; the fourth is the spleen; the fifth is the blood that dwells in them. Again, if it shall look out from them [and reveal its likeness and its observation above and below, it wages war by] its fourteen heads.
 
-**¶7** Whoever will recognise them with the dragon, which is the thought of the body, and struggles with it and is victorious and kills it in them He receives the victory without suffering on the day of his coming forth.
+**¶7** Whoever will recognise them with the Dragon, which is the thought of the body, and struggles with it and is victorious and kills it in them [ ... he is called]
 
-**¶8** the dragon that exists with its fourteen heads and five dens, wherein it is concealed and hidden. It does through them [ ... / its des]ire all the time.
+**¶8** So, behold, I have taught you of the Dragon that exists with its fourteen heads and five dens, wherein it is concealed and hidden. It does through them [ ... / its des]ire all the time.
 
 ---
 
 ## Chapter 101: [Concer]ning why, if the Person shall look down into Water, [ ... ]
 
-**¶1** When the person is above water and looking down [into the wat]ers, if he shall see his face reflected why shall you find his head turned upside down and also his feet upwards? Yet, when he stares down into the waters, his face shall not be visible, nor can he see it there?
+**¶1** instruct me about this lesson: When the person is above water and looking down [into the wat]ers, if he shall see his face reflected why shall you find his head turned upside down and also his feet upwards? Yet, when he stares down into the waters, his face shall not be visible, nor can he see it there?
 
-**¶2** Happen you know this, that this universe is established [of m]ystery, and is entirely full of mystery.
+**¶3** [And] this: The face of people and the shape of trees shall appear turned upside down in the water as this is signified in [the] mystery of the Summons, when it was sent down to the worlds of darkness towards the First Man. Sin[ce ...] in this way it cast itself down [...] like a person [who] plunges headlong into water; so it is also with the Summons. It cast itself headlong to the worlds below, with strength and diligence.
 
-**¶3** [And] this: The face of people and the shape of trees shall appear turned upside down in the water as this is signified in [the] mystery of the summons, when it was sent down to the worlds of darkness towards the First Man. Sin[ce ...] in this way it cast itself down [...] like a person [who] plunges headlong into water; so it is also with the summons. It cast itself headlong to the worlds below, with strength and diligence.
-
-**¶4** And this too: Shall the person lift his head up from the water, his face shall not be visible to him, being bent below. This characterises the mystery of the obedience that ascended from below, from with the First Man his father to the Living Spirit.
+**¶4** And this too: Shall the person lift his head up from the water, his face shall not be visible to him, being bent below. This characterises the mystery of the Obedience that ascended from below, from with the First Man his father to the Living Spirit.
 
 **¶5** The face of people and of animals and of trees is visible in the water, hanging upside down. This occurs to the mystery of the stars and the zodiac, which hang upside down and are visible in the great sea. For the face of people and beasts and all trees hang on the root of the stars and the zodiac, being begotten from them. Just as their fathers, who are spread out above, hang upside down; so it is also that the mystery of their fathers is being revealed to them whenever they stare down into the water. This is, that you shall find their shapes inverted.
 
-**¶6** Not only this, but [the] child who is born; as the ho[ur] approaches for him to be born, he hangs upside down and is born head first. Indeed, due to this, his mystery shall be revealed in these waters people stare down into.
+**¶6** ⟨p.255⟩
+Not only this, but [the] child who is born; as the ho[ur] approaches for him to be born, he hangs upside down and is born head first. Indeed, due to this, his mystery shall be revealed in these waters people stare down into.
 
 **¶7** Behold, you will find the shadow of the person who walks along is joined to the earth all the time. If the person is troubled [...] his shadow up upon the earth [...] above. It is impossible for him to do [... ...] on the earth. See, this mystery is [a] great sign, signifying that the entire body came from the earth and had ascended from the abyss. Again, due to this, its shadow is joined on the earth, turned downwards, and hanging from above.
 
@@ -2167,15 +2184,15 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶1** There is not [o]ne person [existing in] the world, standing firm [i]n mixture, for whom joy remains to the end.
 
-**¶2** Not only people, even the Sun and the Moon, the light-givers of the heavens, [ ... ] nor are they oppressed, they know not [ ... s]et firm in a summons and an [obe]dience. Nevertheless, they too, they do not rejoice completely.
+**¶2** Not only people, even the sun and the moon, the light-givers of the heavens, [ ... ] nor are they oppressed, they know not [ ... s]et firm in a summons and an [obe]dience. Nevertheless, they too, they do not rejoice completely.
 
 **¶3** So, one: Their eyes stare at their Enemy, they [perceiv]e him and also look at his ugly shapes. They [s]ee him, that he is alive and established and is king above and below, in secret and manifest. He does every thing that he wants according to his wil[1].
 
-**¶4** [The s]econd: They perceive the Living Soul, they see [i]t and that it is ensnared and set in a great [fetter] above and below, in the tree and in the flesh, [ ... ] with every oppression. It is being pressed, drawn near to [and] sliced and eaten as it comes up and down; from above below and from below above. It [is] despoiled and moved from body to body.
+**¶4** [The s]econd: They perceive the living soul, they see [i]t and that it is ensnared and set in a great [fetter] above and below, in the tree and in the flesh, [ ... ] with every oppression. It is being pressed, drawn near to [and] sliced and eaten as it comes up and down; from above below and from below above. It [is] despoiled and moved from body to body.
 
-**¶5** Now, because of their Living Soul that is loved by them and honoured of them, when they see it in oppression th[ey can] not [re]joice completely.
+**¶5** Now, because of their living soul that is loved by them and honoured of them, when they see it in oppression th[ey can] not [re]joice completely.
 
-**¶6** So, one about the soul; and one about their Enemy whom they see ruling [in] what is not his own. He is proud and satisfied with a wealth that is not his own. Indeed, due to this, they do not rejoice in total; but bear up and swallow their heart until they cleanse the Living Soul and take it from the Enemy's hands. Then they obliterate the Death that is their enemy and they gather it in [and fetter it in the lump] for ever and ever.
+**¶6** So, one about the soul; and one about their Enemy whom they see ruling [in] what is not his own. He is proud and satisfied with a wealth that is not his own. Indeed, due to this, they do not rejoice in total; but bear up and swallow their heart until they cleanse the living soul and take it from the Enemy's hands. Then they obliterate the Death that is their Enemy and they gather it in [and fetter it in the lump] for ever and ever.
 
 **¶7** When they will chain their Enemy in the bond at the [las]t, then they will rejoice and no longer grieve from this t[ime]. Also, they become the very same as they were from the [start] for ever!
 
@@ -2183,7 +2200,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 ## Chapter 107: Concerning the Form of the Word, that [ ... 30 ... ]
 
-**¶1** the production of the word t[hat comes] from the mouth and is heard by the [ears]. [ ... ] and the throat draws it up and the tongue spreads it out and the teeth cut it and the lips g[at]her it! The word shall come forth through the power of th[ese five] members and be heard outside.
+**¶1** the production of the word t[hat comes] from the mouth and is heard by the [ears]. [ ... ⟨p.261⟩ ... ] and the throat draws it up and the tongue spreads it out and the teeth cut it and the lips g[at]her it! The word shall come forth through the power of th[ese five] members and be heard outside.
 
 **¶2** Simila[rly] the coin: One shall pour it out and an [othe]r beat it and another trim it as it is turned, and a[nother] put the stamp on it and another wipe it in the sieve (?). [Behold], these five craftsmen shall shape and beautify [their] coin, and it comes amongst mankind. It becomes a posse[ssion] to be received and given.
 
@@ -2195,7 +2212,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶2** “This seed grain and this barley grain that you see shall be formed and [...] and beautified by the five elements. Now, the warmth and the cold nourish the seed grain and the entire tree. So, just as these things nourish it [...] it is destroyed [...] through [...] hunger.
 
-**¶3** “In this way also Righteousness gathers the five to it.
+**¶3** “In this way also righteousness gathers the five to it.
 
 **¶4** “In this way too, a lack and a shortfall shall occur from place to place through them; and they who have chosen it have gathered it in and beautified and attained it, while an affliction shall arise for it through those.
 
@@ -2207,7 +2224,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶2** Happen you know that [in eac]h one of these five garments that the [First] Man summoned there are five powers. They shall be counted to the [ ... each] other, these five, and five times [ ... ] their number. However, at the time [ ... ] the Summons went down. The Answer wished to ascend with it. And the Summons with the Obedience [constitute] twenty-five characteristics in their twenty-five limbs, [which] are the sons of the Man. The Summons and [the Obed]ience were raised to the heights through them.
 
-**¶3** Just as their fa[ther] the Living Man raised himself up through them, by these these other ones have set up all things a[bov]e and below. Indeed, these are what are called pentecost, the fifty great days. They fasted from their [foo]d, [w]hich is their own.
+**¶3** ⟨p.263⟩ Just as their fa[ther] the living Man raised himself up through them, by these these other ones have set up all things a[bov]e and below. Indeed, these are what are called pentecost, the fifty great days that are the [archetypes of the] holy [d]ays. They fasted from their [foo]d, [w]hich is their own.
 
 **¶4** So, from that time until [the time] of [the adv]ent of Jesus the Splendour, the glorious one who came [ ... / ... t]heir food which is the [ ... ] of sou[l], which is the Summons and the Obedience [ ... ] that spiritual food. They rele[ased ... ] all these fifty days, which [ ... ] this living food suffices for all of them. It filled them all with power and richness and life. Light [ ... ] this living food that [ ... ] became rich.
 
@@ -2215,7 +2232,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 ## Chapter 110: Concerning the Nourishment of the Person, for there are Powers in it [ ... / ... ]
 
-**¶1** daily to the body of the person [ ... ] there are two hundred and fifty thousand seals in it [ ... ] there are another two hundred and fifty thousand rulers [ ... ] they are cleansed and purified and enter [ ... ] by the voice, by the word, and by the [ ... ... ] quiet with the silence at the time when his heart [ ... ... ] of God the Father.
+**¶1** exists [ ... ] daily to the body of the person [ ... ] there are two hundred and fifty thousand seals in it [ ... ] there are another two hundred and fifty thousand rulers [ ... ] they are cleansed and purified and enter [ ... ] ⟨p.265⟩ by the voice, by the word, and by the [ ... ... ] quiet with the silence at the time when his heart [ ... ... ] of God the Father.
 
 **¶2** Also, the twelve [ ... ... ] rulers that belong to the Darkness shall be swept out outside in wandering and in transmigration [ ... ... ] some of them [ ... through] this transmigration, and others among them shall be brought back.
 
@@ -2225,9 +2242,9 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶1** There are four aspects among mankind that perceive, as they perceive [...] without these four that are hidden in them [...] they belong [...]. So, [...].
 
-**¶2** [...] that is in the [...] belongs to the fire. The Darkness belongs to the abyss; but the Light that perceives what is hidden in all these things, being clear, is the Living Air.
+**¶2** [...] that is in the [...] belongs to the fire. The Darkness belongs to the abyss; but the Light that perceives what is hidden in all these things, being clear, is the living air.
 
-**¶3** The pupil of the eye shall not [...] the mystery of the [...] is the door [...] below [...] the other four cardinal points. For in the [...] above. He has [...] great [...] they came down [...] living [...]. The First Man came forth from it and knew all things.
+**¶3** How shall the pupil of the eye perceive? While it perceives by day, yet come the night it shall not perceive. What mystery does this matter signify? [...] The pupil of the eye shall not [...] the mystery of the [...] is the door [...] below [...] the other four cardinal points. For in the [...] above. He has [...] great [...] they came down [...] living [...]. The First Man came forth from it and knew all things.
 
 ---
 
@@ -2235,21 +2252,23 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶7** Jesus did not come and s[a]ve the world because of mankind alone, but [ ... he] came and revealed on earth [ ... ] was strong outside in [ ... ] And [whe]n he had finished doing his [t]ask outside [i]n the great u[ni]verse, he came [ ... he wen]t further with Adam and Eve and revealed [to them].
 
-**¶8** they belong to the race of Ligh[t].
+**¶8** they belong to the race of ligh[t].
 
-**¶9** the aeons [of the greatness], how they occur; and [the manner of] the Darkness, how it t[o]o exists.
+**¶9** the aeons [of the greatness], how they occur; and [the manner of] the darkness, how it t[o]o exists.
 
-**¶10** the [L]ight great-[ness], how it has been active against the pow[er of] Darkness and conquered it.
+**¶10** the [l]ight great-[ness], how it has been active against the pow[er of] darkness and conquered it.
 
 **¶11** he came to the province of death [ ... ... ] that is flesh, until he should find profit and bring them from the gate of the underworld below, for [they had] been swa[ll]owed into it.
 
-**¶12** the rebels shall be bound in a great fetter, they who shall [r]ebel against the g[o]od and against the righteousness
+**¶12** the rebels shall be bound in a great fetter
 
 **¶16** the Cross of Light, which g[rie]ves in the totality, being present in what is visible and what is not vis[ib]le.
 
 ---
 
 ## Chapter 113: The Chapter on whether any [Lig]ht comes from the Three Vessels.
+
+**¶1** [Preac]h about this bit of life and light that comes from [these three] vessels that surround the universe [ ... ] life comes up [ ... ]
 
 **¶2** [ ... ] b[u]t should the [ ... ] ascend [ ... ] light of the rays that [ ... ] which are received, which shine and go in through these great open gates, through these doors, firmament by firmament.
 
@@ -2271,13 +2290,13 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶6** These three images [ ... ] entirely. When it will [ ... ... ] through the nourishment of food. If it shall sink [ ... ... ] down to the corporeal image. [And] the corporeal, [that] is in it, shall divest itself of it and place it in the [ ... ] image. [ ... ] again it rises up and falls to the [ ... ] image; it shall divest itself of the psychical of the enemies, which [ ... ... ] anger. The lust [ ... ... ... ] with it.
 
-**¶7** Then shall a Light Virgin come and reveal the spiritual image that is [there], which [is] the new man. That virgin acts as a guide. [She g]oes on before and it is extended to the heights above, and received into this spiritual image. And she [sculpts] it and adorns it with the new man [wi]thin. It is sealed with all the limbs of this Light Virgin who is present and dwells in the new man.
+**¶7** Then shall a Light Virgin come and reveal the spiritual image that is [there], which [is] the new man. That Virgin acts as a guide. [She g]oes on before and it is extended to the heights above, and received into this spiritual image. And she [sculpts] it and adorns it with the new man [wi]thin. It is sealed with all the limbs of this Light Virgin who is present and dwells in the new man.
 
 **¶8** So, this is [h]ow this living limb shall be [puri]fied and live, the one that comes into the body of [the ri]ghteous one from without through the administration of food of various ki[nds], like this. The living soul shall be clea[n]sed entirely every [d]ay and traverse these three [im]a[ges].
 
 **¶9** So, it shall divest itself of the body, which is not its own, in the corporeal. It shall also divest itself of the souls that are not its own, these that are mixed with it in the psychical [ ... ... ] anger and desire and [ ... ]-ness and foolishness and envy and strife; and these other wicked teachings that are not its own.
 
-**¶10** However, in [the] spiritual image itself it shall live and be joined with [lo]ng-sufferingness, the perfection of faith and love that reigns over them all. It is the Virgin of Light who robes the new man and who shall be cal[l]ed ‘the hour of life’. S[he] is the f[irst], but s[h]e is also the last.
+**¶10** However, in [the] spiritual image itself it shall live. It is the Virgin of Light who robes the new man and who shall be cal[l]ed ‘the hour of life’.
 
 ---
 
@@ -2285,13 +2304,13 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶6** For this entreaty has been since the beginning [...] the gods first made entreaty of their Father. They were granted their entreaty and their request.
 
-**¶8** The Great Spirit, the Mother of Life, she claimed and prayed and besought and glorified and praised the first established one, who is the Father. She besought him an entreaty. She claimed of him a request. She received a great gift; she and the many powers with her.
+**¶8** ⟨p.272⟩ The Great Spirit, the Mother of Life, she claimed and prayed and besought and glorified and praised the first established one, who is the Father. She besought him an entreaty. She claimed of him a request. She received a great gift; she and the many powers with her.
 
 **¶9** She besought an entreaty on behalf of the First Man, because of how he had come forth and thrown himself down. He became distant from the Mother of Life. He separated from her and gave himself; in great affliction. He joined war on earth with the destruction and the grief and the weakness; in the worlds of Darkness; in the abysses made of fear; in the midst of the demons' ditch; amongst the powers of the Devil!
 
 **¶10** Indeed, he is like a king standing in the midst of his enemies. And when the Mother of Life petitioned and prayed and glorified and praised the Father, the first established one, she did petition him that he might send a power; a protector and redeemer and helper for the son of God who is set in affliction.
 
-**¶11** Now, just as she had besought and interceded, so likewise was her prayer fulfilled and received into the presence of the Father of Greatness. He turned and gave to her her entreaty: the great power, the Living Spirit, the giver of ease. The Mother of Life and the Living Spirit came with great power to the borders of the territory. They brought the First Man up from that war and struggle, wherein he is set.
+**¶11** ⟨p.273⟩ Now, just as she had besought and interceded, so likewise was her prayer fulfilled and received into the presence of the Father of Greatness. He turned and gave to her her entreaty: the great power, the Living Spirit, the giver of ease. The Mother of Life and the Living Spirit came with great power to the borders of the territory. They brought the First Man up from that war and struggle, wherein he is set.
 
 **¶12** He gave himself as a grace for the Mother of Life. He became estranged and far from her, the one whom his enemies (place) in great affliction, the one who is in the land of Darkness since he became weak.
 
@@ -2301,7 +2320,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶17** [...] and they built the universe and completed it with its firmaments, with its wheels, with the ships of light that are in the heights, with its fastenings, with its earths and its walls, with its vessels. They completed the universe and set it right by the fathers of light.
 
-**¶18** Then, the Great Spirit stood with the Beloved of the Lights, the Great Builder with the Living Spirit and the First Man. These five stood to prayer; they glorified and praised the Father, the first established one. They besought of him an entreaty. They claimed of him a request, that he might give them the power [...] the leader, a guide to all the things of activity that they had constructed. That he might come and purify the living soul that is set in affliction.
+**¶18** ⟨p.274⟩ Then, the Great Spirit stood with the Beloved of the Lights, the Great Builder with the Living Spirit and the First Man. These five stood to prayer; they glorified and praised the Father, the first established one. They besought of him an entreaty. They claimed of him a request, that he might give them the power [...] the leader, a guide to all the things of activity that they had constructed. That he might come and purify the living soul that is set in affliction.
 
 **¶19** They prayed and besought their Father, and he received from them their prayer [...] he gave them their entreaty and their request [...] he summoned from him [...] which is the Third Ambassador. He, he came from the power of his greatness. He saw the entire soul, how it is entangled in a chain and set fast. It sees the things of activity that his brothers have constructed, that have come from the heights. Again, he saw the living soul, that it is entangled and set fast in a great torture. It is oppressed in the stink of the abyss that is joined with it.
 
@@ -2313,21 +2332,19 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶25** Again, let us come to the third entreaty when they besought him the third time [...] displayed his image [...] he hid his image from the [...] he stood firm [...] they revealed [...] the light [...] the First Man [...] mock [...] to him in [...] which is exalted [...] garment [...] they were freed [...] to him [...] their voice [...] the body [...] prayer [...] it [...] beseech [...] the body [...] beseech [...] she besought [...] in [...] be free [...] Ambassador [...] and also [...]
 
-**¶26** [...] with the living ones and [...] for ever [...] the first [...] from the [...] he gave him the hope [...]
+**¶26** ⟨p.276⟩ [...] with the living ones and [...] for ever [...] the first [...] from the [...] he gave him the hope [...]
 
 **¶27** Also, Jesus the Splendour perfected the will [...] the will [...] they found the light [...] the will of the [...] that he had [...] he gave them the power that is Jesus the Splendour. He granted the will of the elements. [...] for ever. This first [...] he was humbled, he was made free [...] the [...]-ness is displayed to his enemies. He received the hope [...] reveal [...] Jesus the Splendour, the light power [...] and the entreaty of the [...] of light [...]
 
-**¶31** The first: [...] of the living soul that is entangled and bound in the entire universe. For it shall be freed and cleansed and purified and redeemed
+**¶31** [...] of the living soul that is entangled and bound in the entire universe. For it shall be freed and cleansed and purified and redeemed
 
-**¶43** It is redeemed and purified and attains its first essence.
-
-**¶44** this is how this soul shall find ease and escape that body. It goes into the land of light [...] soul that was redeemed because of it [...] comes about for it; and it goes to the land of life and rest [...]
+**¶44** It goes into the land of light [...] comes about for it; and it goes to the land of life and rest [...]
 
 ---
 
 ## Chapter 116: Concerning why if a [Nail] is cut the Person shall not be sick; but if a Limb is cut he shall immediately be pained.
 
-**¶5** Happen you know th[at the] body is like the earth, wh[ile these] limbs als[o ...] of it are like the trees. There are varieties [...] of tree you shall find growing on the earth. They ar[is]e and grow again and stand firm. They have not [... ...] Again, there are others that if they are cut shall not [grow ...] and they grow, as they are li[ke ...] which shall be cut and grow [...] and [...] they too that occur [...] they shall be cut and not grow, resembling [... neither] grow nor shall they [... ...] it [sh]all please him on [...] and grows [...] in impurity [... ...] from him. This flesh that is corrupt [... ...] in the liv[in]g flesh and they [... ...] are somewhat sick.
+**¶5** Happen you know th[at the] body is like the earth, wh[ile these] limbs als[o ...] of it are like the trees. There are varieties [...] of tree you shall find growing on the earth. They ar[is]e and grow again and stand firm. They have not [... ...] Again, there are others that if they are cut shall not [grow ...] and they grow, as they are li[ke ...] which shall be cut and grow [...] and [...] they too that occur [...] they shall be cut and not grow, resembling [... neither] grow nor shall they [... ...] it [sh]all please him on [...] and grows [...] in impurity [... ...] from him. This flesh that is corrupt [... ⟨p.282⟩ ...] in the liv[in]g flesh and they [... ...] are somewhat sick.
 
 ---
 
@@ -2339,23 +2356,27 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 ## Chapter 118: [ ... ]
 
-**¶1** [ ... 1º ... ] upon [ ... ] from [ ... ] thus [ ... ]
+**¶1** ⟨p.283⟩[ ... 1º ... ] upon [ ... ] from [ ... ] thus [ ... ]
 
-**¶2** [ ... 5 a]ll of them [ ... 11 ... ] that they shall [ ... 14 ... ] seven people [ ... 15 ... ] Again, he too, this per[son ... ] the time when [ ... ] of the light [ ... 19 ... ] the universe [ ... 2º ... ] is revealed [ ... ] take to the light [ ... utt]erly, the way that he exists [ ... 25 ... ] from [ ... ] these other three [ ... ]
+**¶2** ⟨p.284⟩[ ... 5 a]ll of them [ ... 11 ... ] that they shall [ ... 14 ... ] seven people [ ... 15 ... ] Again, he too, this per[son ... ] the time when [ ... ] of the Light [ ... 19 ... ] the universe [ ... 2º ... ] is revealed [ ... ] take to the Light [ ... utt]erly, the way that he exists [ ... 25 ... ] from [ ... ] these other three [ ... ]
 
 ---
 
-## Chapter 119: Chapter 119: [ ... ]
+## Chapter 119: Chapter 119
 
-**¶1** [ ... ] and the [righte]o[usness ... ] is more than [the ... ] the voice through them.
+**¶1** ⟨p.285⟩[ ... ] and the [righte]o[usness ... ] is more than [the ... ] the voice through them.
 
-**¶3** This one, whom they called “approved” [ ... ... ] they approved him in the midst of the ae[ons of] light. These numerous multitudes set him a[part], and he came forth against the enemy. They gave this name [ ... ... ] this matter [ ... ... ] who are numerous, that are in the aeons of light and who [are without] measure or number.
+**¶3** This one, whom they called “approved” [ ... ... ] they approved him in the midst of the ae[ons of] light. These numerous multitudes set him a[part], and he came forth against the Enemy. They gave this name [ ... ... ] this matter [ ... ... ] who are numerous, that are in the aeons of light and who [are without] measure or number.
 
-**¶4** This one, [whom they called] “righteous”, because he is the first righteous one who had no sin amongst all of the aeons that belong to the light and the thought [ ... ] they knew him, so that [ ...]
+**¶4** This one, [whom they called] “righteous”, because he is the first righteous one who had no sin amongst all of the aeons that belong to the light and the thought [ ... ] they knew him, so that [ ... ] his Father, who had sent him with five sons [ ... ] perdition.
+
+**¶5** This one also [whom they called] “only begotten”, because he was established [ ... ] pour [ ... ] Enemy.
 
 **¶7** Again, just as the only begotten ones from your [only] begotten race and you [ ... ] according to flesh [ ... ... o]nly begot-ten also from gold and silver and all the [ ... ] of the universe.
 
-**¶8** [the F]irst Man, himself stood firm in the [midst] of all the worlds of darkness. He did not love [the] worlds of darkness, nor did he lust for them! Rather, h[is] thought and love for the household of his people is in h[i]m. Anything else that the enemy [ ... ] with his violent de[e]ds. Behold, (the First Man) toils and struggles; so that (the enemy) would be separat[e from] them and be cast out from them. And he purifies them and ma[ke]s them f[r]ee, and makes them as they were from the beginning.
+**¶8** ⟨p.286⟩Just as your father, [the F]irst Man, himself stood firm in the [midst] of all the worlds of darkness. He did not love [the] worlds of darkness, nor did he lust for them! Rather, h[is] thought and love for the household of his people is in h[i]m. Anything else that the Enemy [ ... ] with his violent de[e]ds. Behold, (the First Man) toils and struggles; so that (the Enemy) would be separat[e from] them and be cast out from them. And he purifies them and ma[ke]s them f[r]ee, and makes them as they were from the beginning.
+
+**¶10** [ ... ] may they discover the remembrance of the household of his peo[ple], as he remains in this [place ni]ght and day.
 
 ---
 
@@ -2367,7 +2388,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 ## Chapter 121: Concerning the Sect of the Basket
 
-**¶5** The [...] and the great [...] and the great Mind that is [...] this Youth that is with the [...] thirty-six angels [...] twenty-two angels [...] but [...] of the twenty-two [...] the seven pillars that stan[d ...] the sea that surrounds the universe [...] four angels that are distributed to the [...] universe, supporting the mightiness [...] below, which is the earth of all the heavens [...] these other five gods, the sons of the Man, they that [...] the universe is stood firm [...] the Summons and the Obedience [...] the splendour of the [...] and the Adamant of Light [...] they are become enemies [...] they guide it.
+**¶5** The [...] and the great [...] and the great Mind that is [...] this Youth that is with the [...] thirty-six angels [...] twenty-two angels [...] but [...] of the twenty-two [...] ⟨p.290⟩ the seven pillars that stan[d ...] the sea that surrounds the universe [...] four angels that are distributed to the [...] universe, supporting the mightiness [...] below, which is the earth of all the heavens [...] these other five gods, the sons of the Man, they that [...] the universe is stood firm [...] the Summons and the Obedience [...] the splendour of the [...] and the Adamant of Light [...] they are become enemies [...] they guide it.
 
 **¶6** The third also, [...] below, there are twelve powers standing firm there. However, the number of the twelve images [...] the three great pillars of mightiness that [...] pillars supporting the disk [...] the other three [...] they are the garments that the Living Spirit [...] he put them at that time [...] that threw them, together with [...] which is displayed therein [...] this [...] perfect before [...] great Porter [...] in his power [...] these are the three great [...] against [...] are in the midst of people [...] knows [...] entrusts his soul to them [...].
 
@@ -2379,8 +2400,7 @@ The second field is the living soul, the holy one. It is mixed in the entire zon
 
 **¶3** Just as the summons and the obedience are the ones that opened the portals of mercy and entreaty for the First Man, so they also became portals for the Mother of Life and the Father of the living. The First Man sought and found his redeemer. And also the Mother of Life and the Father of the living sought [...] this runner, who came forth from them, who is the First Man; but the summons and the obedience became the portals for them.
 
-**¶4** Now, in this way they have become portals for the aeons of greatness towards the First Man, and the soul that was conjoined with death. They became helpers [...] of the First Man during his ascent. They gave him [...] the Father of Life and the Mother of Life [...]. They are purifiers of the living soul, being helpers and bestowers of remembrance for it, be it either in [...] in the tree or in the creation of flesh [...].
-
-**¶13** ... the assent and the amen go up to the ships, and they [...] upon him in the [...] power [...]. ... as the [...] at a place [...].
+**¶4** ⟨p.293⟩
+Now, in this way they have become portals for the aeons of greatness towards the First Man, and the soul that was conjoined with death. They became helpers [...] of the First Man during his ascent. They gave him [...] the Father of Life and the Mother of Life [...]. They are purifiers of the living soul, being helpers and bestowers of remembrance for it, be it either in [...] in the tree or in the creation of flesh [...]
 
 ---
