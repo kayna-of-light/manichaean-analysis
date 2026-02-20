@@ -260,7 +260,6 @@ def stream_tool_call(
     tools: list[dict],
     expected_tool_name: str,
     corpus_text: str,
-    thinking_budget: int = 50_000,
     max_tokens: int = 128_000,
     max_retries: int = 5,
     debug: bool = False,
@@ -283,7 +282,7 @@ def stream_tool_call(
                 messages=messages,
                 tools=tools,
                 max_tokens=max_tokens,
-                thinking={"type": "enabled", "budget_tokens": thinking_budget},
+                thinking={"type": "adaptive"},
             ) as stream:
                 for event in stream:
                     etype = getattr(event, "type", "")
@@ -553,7 +552,6 @@ class CorpusAnalysisBase(abc.ABC):
             tools=self.tools,
             expected_tool_name=self.expected_tool_name,
             corpus_text=self.corpus_text,
-            thinking_budget=self.thinking_budget,
             max_tokens=self.max_tokens,
             debug=args.debug,
         )
