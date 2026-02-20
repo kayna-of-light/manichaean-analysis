@@ -1,0 +1,107 @@
+{
+  "chapter_number": 20,
+  "title": "The Chapter of the Name of the Fathers",
+  "total_paragraphs": 5,
+  "paragraphs": [
+    {
+      "index": 1,
+      "words": 29,
+      "text": "Once again the enlightener speaks to his disciples: The Father of Greatness, as he is named; due to what reason is he given the name ‘the Father of Greatness’?",
+      "scores": {
+        "substrate": 20.69,
+        "dialogue_frame": 17.24,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": true,
+        "bridge_phrase": "Once again the enlightener speaks",
+        "institutional_terms_found": [],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 2,
+      "words": 29,
+      "text": "His disciples say to him: We beseech you, our master, that you may enlighten us about this greatness; for who is it that is named ‘the Father of Greatness’?",
+      "scores": {
+        "substrate": 10.34,
+        "dialogue_frame": 37.93,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": true,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 3,
+      "words": 59,
+      "text": "Then he speaks to his disciples: Now, the Father, who is the first established thing, shall be called ‘the Father of Greatness’. His greatness is the great earth where he lives, he being established in it [...] the essence of the light that swathes all the rich gods and the angels and the dwellings [...] is set over it.",
+      "scores": {
+        "substrate": 5.08,
+        "dialogue_frame": 6.78,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 4,
+      "words": 25,
+      "text": "Furthermore, they shall call the Third Ambassador ‘father’. His greatness is the light ship of living fire wherein he lives, he being established in it.",
+      "scores": {
+        "substrate": 60.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": true,
+        "bridge_phrase": "Furthermore",
+        "institutional_terms_found": [],
+        "register_shift": true,
+        "seam_flag": true,
+        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Furthermore' with institutional vocabulary (). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
+      }
+    },
+    {
+      "index": 5,
+      "words": 27,
+      "text": "Once again, Jesus the Splendour shall himself also be called ‘father’. His greatness is the ship of living waters where he lives, he being established in it.",
+      "scores": {
+        "substrate": 37.04,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": true,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    }
+  ]
+}

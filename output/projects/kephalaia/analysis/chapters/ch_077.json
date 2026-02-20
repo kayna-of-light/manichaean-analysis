@@ -1,0 +1,195 @@
+{
+  "chapter_number": 77,
+  "title": "The Chapter of the Four Kingdoms",
+  "total_paragraphs": 9,
+  "paragraphs": [
+    {
+      "index": 1,
+      "words": 13,
+      "text": "Once again the apostle speaks: There are f[our great kingdoms] in the world.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 38.46,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": true,
+        "bridge_phrase": "Once again the apostle speaks",
+        "institutional_terms_found": [],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 2,
+      "words": 51,
+      "text": "⟨p.189⟩ [The first is the kingdom of] the land of Ba[by]lon and of Persia.\nThe s[ec]ond is the kingdom of the Romans.\nThe thir[d is the k]ingdom of the Axumites.\nThe fourth is the kin[g]dom of Silis.\nThese four great kingdoms e[xi]st in the world; there is none that surpasses them.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 3,
+      "words": 74,
+      "text": "Yet, I, I say to you in truth that whoever [will give] bread and a cup of water to one of my disciples on [account of the name of G]od, on account of this truth that I have m[an]if[est]ed; [t]hat one is great before God. [He s]urpasses these four great kingdoms, which are so g[reat]! He does more than their armies, because they did not listen to God's truth, nor did they h[el]p r[ighte]ousness.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 4.05,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": true,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 4,
+      "words": 51,
+      "text": "Not only this, but whoever will [give] bread and a cup of water to a catechumen of the [truth, on account of the name of God and on account of the truth [that is manifest]; that one is brought near to the [truth. Hi]s end will t[u]rn to rest for ever.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 5.88,
+        "exhortation": 5.88
+      },
+      "seam": {
+        "has_bridge_connective": true,
+        "bridge_phrase": "Not only this",
+        "institutional_terms_found": [
+          "catechumen"
+        ],
+        "register_shift": true,
+        "seam_flag": true,
+        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Not only this' with institutional vocabulary (catechumen). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
+      }
+    },
+    {
+      "index": 5,
+      "words": 38,
+      "text": "[Just as the saying] that the [g]ood savi[our] uttered: W[hoever will give bread and a cup of water] to one of these least [of the faithfull who believe me, on account of the name of a disciple ...]",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 7.89,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": true,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 6,
+      "words": 68,
+      "text": "Now, [the] savi[our] is callin[g] these saints 'least of the faithful'. So, I, behold I have proclaimed of the catechumens [th]at whoever will fellowship with catechumens who are with the knowledge, and helps them, he surpasses these [ki]ngdoms that I have counted for you; because all these kingdoms know not the truth of God. For they [ ... ] the lust of the world and care about livelihood.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 13.24,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [
+          "catechumen"
+        ],
+        "register_shift": true,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 7,
+      "words": 40,
+      "text": "Indeed, due to this, I tell you that these two persons whom I have named, [the] faithful catechumen and the faithful r[ighteous one, are the] ones in wh[om] the Holy Spirit dwells. [ ... ] he sees [ ... ]",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 15.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": true,
+        "bridge_phrase": "Indeed, due to this",
+        "institutional_terms_found": [
+          "catechumen"
+        ],
+        "register_shift": true,
+        "seam_flag": true,
+        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Indeed, due to this' with institutional vocabulary (catechumen). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
+      }
+    },
+    {
+      "index": 8,
+      "words": 59,
+      "text": "⟨p.190⟩ Indeed, because of this [he] will give them alms and fellowship with them. [He] gives it for the Holy Spirit that dwells in them. The Holy Spirit too will give his thanks be[fore] his true father. And the true father will repa[y] his reward at the last day because of the Holy Spirit that dwells in these saints.",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 5.08,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [
+          "alms"
+        ],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    },
+    {
+      "index": 9,
+      "words": 43,
+      "text": "How great is this truth that I have unveiled for you, [ ... ] Due to this I have told y[ou]: Bless[ed] are these who will hear and believe [it, and] set their [h]eart upon it with a single mind [ ... ]",
+      "scores": {
+        "substrate": 0.0,
+        "dialogue_frame": 0.0,
+        "editorial_bridge": 0.0,
+        "institutional": 0.0,
+        "exhortation": 0.0
+      },
+      "seam": {
+        "has_bridge_connective": false,
+        "bridge_phrase": null,
+        "institutional_terms_found": [],
+        "register_shift": false,
+        "seam_flag": false,
+        "seam_note": null
+      }
+    }
+  ]
+}
