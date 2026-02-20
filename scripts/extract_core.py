@@ -520,14 +520,17 @@ Specifically:
   harder to fake than raw vocabulary presence.
 
 ### Chapter-level features:
-- **Teaching purity**: Ratio of teaching vocabulary to total vocabulary \
-  density. Higher = less overlay vocabulary.
-- **Editorial fatigue score**: Measures pastoral drift from first to second \
-  half of the chapter. Positive values mean pastoral vocabulary increases \
-  in the second half — a classic editorial fatigue pattern.
-- **Structure**: Whether formulaic opening/closing are detected.
+- **Teaching purity**: Ratio of oldest-layer (substrate) vocabulary to total \
+  vocabulary density. Higher = more teaching, less overlay.
+- **Editorial fatigue score**: Measures later-layer drift from first to second \
+  half of the chapter. Positive values mean editorial vocabulary increases \
+  in the second half — a classic editorial fatigue pattern. Per-layer \
+  first-half / second-half breakdowns are included.
+- **Structure**: Whether formulaic opening/closing/question patterns are \
+  detected in the first and last paragraphs.
 - **Citations**: NT/OT citations found in the scholarly footnotes.
-- **Gardner flags**: Editorial observations from the critical apparatus.
+- **Gardner synopsis**: Editorial observations from the critical apparatus \
+  (provided separately in the user message).
 
 ### Paragraph-level features:
 - **Register scores**: Vocabulary density per 100 words for each scoring \
@@ -778,6 +781,80 @@ def load_chapter(num: int) -> dict | None:
 
 
 # ---------------------------------------------------------------------------
+# Chapter-level context formatting
+# ---------------------------------------------------------------------------
+
+def format_chapter_context(analysis: dict) -> str:
+    """Format chapter-level analytical features for the LLM user message.
+
+    Takes the analysis dict (from extract_analysis.py) and returns a
+    human-readable block describing chapter-level features: editorial
+    fatigue, teaching purity, structure, and citations.
+    """
+    features = analysis.get("chapter_features")
+    if not features:
+        return ""
+
+    lines: list[str] = []
+
+    # Teaching purity
+    purity = features.get("teaching_purity")
+    if purity is not None:
+        lines.append(f"  Teaching purity: {purity:.3f}")
+
+    # Editorial fatigue
+    fatigue_score = features.get("editorial_fatigue_score", 0.0)
+    detail = features.get("editorial_fatigue_detail", {})
+    lines.append(f"  Editorial fatigue score: {fatigue_score:.2f}")
+    for lid, vals in detail.items():
+        fh = vals.get("first_half", 0.0)
+        sh = vals.get("second_half", 0.0)
+        shift = vals.get("shift", 0.0)
+        lines.append(
+            f"    {lid}: first_half={fh:.2f}, "
+            f"second_half={sh:.2f}, shift={shift:+.2f}"
+        )
+    if fatigue_score > 0.5:
+        lines.append(
+            "    \u26a0 SIGNIFICANT later-layer drift in second half \u2014 "
+            "editor likely added material after core teaching"
+        )
+    elif fatigue_score > 0.2:
+        lines.append(
+            "    \u26a0 Moderate later-layer drift in second half"
+        )
+
+    # Structure
+    structure = features.get("structure", {})
+    struct_parts = []
+    if structure.get("has_formulaic_opening"):
+        struct_parts.append("formulaic opening")
+    if structure.get("has_formulaic_closing"):
+        struct_parts.append("formulaic closing")
+    if structure.get("has_question_formula"):
+        struct_parts.append("question formula")
+    if struct_parts:
+        lines.append(f"  Structure: {', '.join(struct_parts)}")
+
+    # Citations
+    nt = features.get("nt_citations", [])
+    ot = features.get("ot_citations", [])
+    if nt:
+        lines.append(f"  NT citations in footnotes: {', '.join(nt)}")
+    if ot:
+        lines.append(f"  OT citations in footnotes: {', '.join(ot)}")
+
+    if not lines:
+        return ""
+
+    return (
+        "--- TEXT-CRITICAL ANALYSIS (chapter-level features) ---\n"
+        + "\n".join(lines)
+        + "\n--- END TEXT-CRITICAL ANALYSIS ---"
+    )
+
+
+# ---------------------------------------------------------------------------
 # LLM extraction — Claude with tool call
 # ---------------------------------------------------------------------------
 
@@ -857,20 +934,28 @@ def extract_core(
 
     # Include Gardner synopsis as context
     gardner = chapter.get("gardner_synopsis", "")
-    context = ""
+    gardner_block = ""
     if gardner.strip():
-        context = (
+        gardner_block = (
             f"\n--- GARDNER SYNOPSIS (context only — "
             f"DO NOT extract from this) ---\n"
             f"{gardner}\n"
             f"--- END SYNOPSIS ---\n"
         )
 
+    # Include chapter-level text-critical features
+    tc_block = ""
+    if analysis:
+        tc_block = format_chapter_context(analysis)
+        if tc_block:
+            tc_block = f"\n{tc_block}\n"
+
     user_msg = (
         f"Analyze the following chapter and extract the core "
         f"teaching layer.\n\n"
         f"Chapter {ch_num}: {title}\n"
-        f"{context}\n"
+        f"{gardner_block}"
+        f"{tc_block}\n"
         f"--- TEACHING TEXT (numbered paragraphs with register "
         f"scores and seam flags) ---\n\n"
         f"{para_text}\n\n"

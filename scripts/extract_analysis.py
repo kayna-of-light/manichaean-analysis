@@ -291,6 +291,145 @@ def detect_editorial_seams(
 # Per-chapter analysis — combines scoring + seam detection
 # ---------------------------------------------------------------------------
 
+# Formulaic patterns for structure detection
+_OPENING_PATTERNS = [
+    re.compile(r"(?i)^once again (?:the )?(?:enlightener|apostle) speaks?"),
+    re.compile(r"(?i)^once more (?:the )?(?:enlightener|apostle)"),
+    re.compile(r"(?i)^once again,? at one of the times"),
+    re.compile(r"(?i)^once again a disciple speaks?"),
+    re.compile(r"(?i)^his disciples questioned"),
+    re.compile(r"(?i)^the disciple(?:s)? questioned"),
+]
+_CLOSING_PATTERNS = [
+    re.compile(r"(?i)when they heard these things"),
+    re.compile(r"(?i)when that disciple had heard"),
+    re.compile(r"(?i)they rejoiced"),
+    re.compile(r"(?i)they glorified"),
+]
+_QUESTION_PATTERNS = [
+    re.compile(r"(?i)we beseech you"),
+    re.compile(r"(?i)we entreat you"),
+    re.compile(r"(?i)tell us.*(?:about|concerning)"),
+    re.compile(r"(?i)that you may recount"),
+]
+_NT_CITATION_RE = re.compile(
+    r"\b(?:Matt|Mark|Luke|John|Acts|Rom|[12] ?Cor|Gal|Eph|Phil|Col|"
+    r"[12] ?Thess|[12] ?Tim|Tit|Heb|Jas|[12] ?Pet|[123] ?Jn|Jude|Rev)"
+    r"\.?\s*\d",
+    re.IGNORECASE,
+)
+_OT_CITATION_RE = re.compile(
+    r"\b(?:Gen|Exod|Lev|Num|Deut|Josh|Judg|Ruth|[12] ?Sam|[12] ?Kgs|"
+    r"[12] ?Chr|Ezra|Neh|Esth|Job|Ps|Prov|Eccl|Song|Isa|Jer|Lam|Ezek|"
+    r"Dan|Hos|Joel|Amos|Obad|Jonah|Mic|Nah|Hab|Zeph|Hag|Zech|Mal)"
+    r"\.?\s*\d",
+    re.IGNORECASE,
+)
+
+
+def _compute_chapter_features(
+    chapter: dict,
+    paragraphs: list[str],
+    para_scores: list[dict],
+    scoring_dicts: dict[str, dict[str, int]],
+) -> dict:
+    """Compute chapter-level analytical features from paragraph data.
+
+    Returns a dict with:
+      - teaching_purity: ratio of oldest-layer vocab to total vocab density
+      - editorial_fatigue: per-layer drift from first to second half
+      - structure: formulaic opening/closing/question detection
+      - citations: NT/OT citations found in footnotes
+    """
+    n = len(para_scores)
+    layer_ids = list(scoring_dicts.keys())
+
+    # --- Teaching purity ---
+    # Ratio of the first (substrate) layer to total vocabulary density
+    substrate_id = layer_ids[0] if layer_ids else None
+    total_density = 0.0
+    substrate_density = 0.0
+    total_words = 0
+    for ps in para_scores:
+        w = ps["words"]
+        total_words += w
+        for cat, score in ps["scores"].items():
+            total_density += score * w / 100.0
+            if cat == substrate_id:
+                substrate_density += score * w / 100.0
+    teaching_purity = (
+        round(substrate_density / total_density, 3)
+        if total_density > 0 else 0.0
+    )
+
+    # --- Editorial fatigue: per-layer first-half vs second-half density ---
+    mid = n // 2 if n > 1 else 1
+    fatigue: dict[str, dict[str, float]] = {}
+    for lid in layer_ids:
+        fh_total = sh_total = 0.0
+        fh_words = sh_words = 0
+        for i, ps in enumerate(para_scores):
+            w = ps["words"]
+            s = ps["scores"].get(lid, 0.0)
+            if i < mid:
+                fh_total += s * w / 100.0
+                fh_words += w
+            else:
+                sh_total += s * w / 100.0
+                sh_words += w
+        fh_density = round(fh_total / fh_words * 100, 2) if fh_words else 0.0
+        sh_density = round(sh_total / sh_words * 100, 2) if sh_words else 0.0
+        shift = round(sh_density - fh_density, 2)
+        fatigue[lid] = {
+            "first_half": fh_density,
+            "second_half": sh_density,
+            "shift": shift,
+        }
+
+    # Overall fatigue score: sum of non-substrate shifts (positive = later
+    # layers growing in second half)
+    non_substrate_shifts = [
+        v["shift"] for k, v in fatigue.items() if k != substrate_id
+    ]
+    fatigue_score = round(
+        sum(non_substrate_shifts) / len(non_substrate_shifts), 2
+    ) if non_substrate_shifts else 0.0
+
+    # --- Structure detection ---
+    first_para = paragraphs[0] if paragraphs else ""
+    last_para = paragraphs[-1] if paragraphs else ""
+    has_formulaic_opening = any(
+        p.search(first_para) for p in _OPENING_PATTERNS
+    )
+    has_formulaic_closing = any(
+        p.search(last_para) for p in _CLOSING_PATTERNS
+    )
+    has_question_formula = any(
+        p.search(first_para) for p in _QUESTION_PATTERNS
+    ) or (len(paragraphs) > 1 and any(
+        p.search(paragraphs[1]) for p in _QUESTION_PATTERNS
+    ))
+
+    # --- Citations from footnotes ---
+    footnotes = chapter.get("footnotes", [])
+    footnote_text = " ".join(f.get("text", "") for f in footnotes)
+    nt_citations = sorted(set(_NT_CITATION_RE.findall(footnote_text)))
+    ot_citations = sorted(set(_OT_CITATION_RE.findall(footnote_text)))
+
+    return {
+        "teaching_purity": teaching_purity,
+        "editorial_fatigue_score": fatigue_score,
+        "editorial_fatigue_detail": fatigue,
+        "structure": {
+            "has_formulaic_opening": has_formulaic_opening,
+            "has_formulaic_closing": has_formulaic_closing,
+            "has_question_formula": has_question_formula,
+        },
+        "nt_citations": nt_citations,
+        "ot_citations": ot_citations,
+    }
+
+
 def analyze_chapter(
     chapter: dict,
     scoring_dicts: dict[str, dict[str, int]],
@@ -300,6 +439,7 @@ def analyze_chapter(
     """Run text-critical analysis on a single chapter.
 
     Returns a dict with chapter_number, title, total_paragraphs,
+    chapter-level features (fatigue, purity, structure, citations),
     and per-paragraph scoring and seam detection results.
     """
     ch_num = get_number(chapter)
@@ -311,6 +451,11 @@ def analyze_chapter(
     seam_results = detect_editorial_seams(
         paragraphs, para_scores,
         bridge_patterns, institutional_terms,
+    )
+
+    # Chapter-level features computed from paragraph data
+    chapter_features = _compute_chapter_features(
+        chapter, paragraphs, para_scores, scoring_dicts,
     )
 
     result_paragraphs = []
@@ -329,6 +474,7 @@ def analyze_chapter(
         "chapter_number": ch_num,
         "title": title,
         "total_paragraphs": len(paragraphs),
+        "chapter_features": chapter_features,
         "paragraphs": result_paragraphs,
     }
 
