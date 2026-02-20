@@ -9,25 +9,18 @@ or reorganize content. It works chapter by chapter in textual order:
   1. Loads pre-computed text-critical analysis (vocabulary scores, seam flags)
      produced by extract_analysis.py
   2. Sends the chapter to Claude Opus 4.6 WITH the analysis data as guidance
-  3. The LLM classifies each paragraph as CORE / FRAME / PASTORAL / OVERLAY / MIXED
-  4. For MIXED paragraphs, the LLM extracts the core teaching and notes what was removed
-  5. The result preserves textual order — chapter by chapter, paragraph by paragraph
+  3. The LLM classifies each paragraph by temporal layer (layers are
+     identified dynamically from corpus metadata — see extract_metadata.py)
+  4. For MIXED paragraphs, the LLM extracts the oldest teaching and notes
+     what was removed
+  5. The result preserves textual order — chapter by chapter, paragraph by
+     paragraph
 
-The "core" is not defined thematically. It is defined temporally:
-  - CORE: Teaching content that predates the editorial compilation.
-    This includes correspondential maps, cosmological narrative, body-universe
-    systems, five-fold degree structures, named cosmic beings AND their
-    correspondential descriptions — all of it. The distinction is not between
-    "correspondential" and "cosmological" — the distinction is between OLD
-    TEACHING and LATER ADDITIONS.
-  - FRAME: Hagiographic editorial apparatus added by the compiling community.
-    Q&A formulas, closing praise, biographical claims about Mani.
-  - PASTORAL: Church institutional material — fasting rules, alms, catechumen
-    instruction, behavioral ethics without cosmological grounding.
-  - OVERLAY: Explicit NT/Christian additions — Gospel citations, Pauline
-    vocabulary used devotionally, Christian titles in non-cosmic contexts.
-  - MIXED: Paragraphs where core and later material are interwoven.
-    The LLM extracts the core and notes removals.
+The "core" is not defined thematically. It is defined temporally: teaching
+content that predates the editorial compilation. The specific temporal layers
+(and their classification labels) are discovered by extract_metadata.py and
+stored in corpus_metadata.json. This script loads those layer definitions at
+runtime to build the system prompt and tool schema dynamically.
 
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
@@ -149,8 +142,8 @@ EXTRACT_CORE_TOOL = {
             "core_paragraphs": {
                 "type": "integer",
                 "description": (
-                    "Count of CORE + MIXED paragraphs "
-                    "(those with extracted core_text)."
+                    "Count of paragraphs with extracted "
+                    "core_text (oldest layer + mixed)."
                 ),
             },
             "core_percentage": {
@@ -163,10 +156,10 @@ EXTRACT_CORE_TOOL = {
             "chapter_note": {
                 "type": "string",
                 "description": (
-                    "Brief assessment of this chapter. Is the core "
-                    "teaching dominant? Is the chapter mostly "
-                    "frame/pastoral with embedded fragments? "
-                    "Note any distinctive features."
+                    "Brief assessment of this chapter. Is the "
+                    "oldest teaching layer dominant? Is the chapter "
+                    "mostly later editorial material with embedded "
+                    "teaching fragments? Note any distinctive features."
                 ),
             },
             "paragraphs": {
@@ -185,29 +178,22 @@ EXTRACT_CORE_TOOL = {
                         "classification": {
                             "type": "string",
                             "enum": [
-                                "core",
-                                "frame",
-                                "pastoral",
-                                "overlay",
                                 "mixed",
                             ],
                             "description": (
                                 "Classify by TEMPORAL LAYER — when did "
                                 "this language enter this text? "
-                                "CORE: Oldest teaching layer — systematic "
-                                "cosmological-correspondential teaching. "
-                                "FRAME: Hagiographic editorial apparatus. "
-                                "PASTORAL: Church institutional material. "
-                                "OVERLAY: Material entering via NT/Gospels. "
-                                "MIXED: Core interwoven with later material."
+                                "Layer IDs are populated dynamically from "
+                                "corpus metadata. 'mixed' = multiple layers "
+                                "interwoven in same paragraph."
                             ),
                         },
                         "core_text": {
                             "type": ["string", "null"],
                             "description": (
-                                "For CORE: the paragraph text verbatim. "
-                                "For MIXED: extracted old teaching only. "
-                                "For FRAME/PASTORAL/OVERLAY: null. "
+                                "For the oldest teaching layer: the paragraph "
+                                "text verbatim. For mixed: extracted oldest "
+                                "teaching only. For all other layers: null. "
                                 "Preserve lacunae [...] and restorations. "
                                 "Capitalize personified cosmic entities "
                                 "(Sin, Darkness) when they function as agents."
@@ -354,20 +340,20 @@ wheels?", "How does the mixture come about?" — the QUESTION ITSELF is \
 core. It reveals the teaching structure. It IS the substrate. The question \
 defines what the teaching sequence will map.
 
-Only classify opening paragraphs as FRAME when they contain PURELY \
+Only classify opening paragraphs as dialogue frame when they contain PURELY \
 FORMULAIC attribution with NO cosmological content:
-- "Once again the enlightener speaks to his disciples" → FRAME (pure formula)
-- "We beseech you, our master, that you may recount to us" → FRAME (pure honorific)
+- "Once again the enlightener speaks to his disciples" → dialogue_frame (pure formula)
+- "We beseech you, our master, that you may recount to us" → dialogue_frame (pure honorific)
 
 But:
-- "Tell us about the five limbs of the Father of Greatness" → CORE \
+- "Tell us about the five limbs of the Father of Greatness" → substrate \
   (substantive cosmological question — it defines the teaching topic)
 - "We beseech you that you tell us about the three wheels and the \
-  five storehouses" → MIXED (strip "We beseech you that you tell us", \
+  five storehouses" → mixed (strip "We beseech you that you tell us", \
   keep "about the three wheels and the five storehouses")
 
 When a frame formula introduces a substantive question, classify as \
-MIXED and extract the substantive content. Do NOT discard cosmological \
+mixed and extract the substantive content. Do NOT discard cosmological \
 questions just because they are wrapped in frame formulas.
 
 ## ENUMERATION INTEGRITY
@@ -379,7 +365,8 @@ decoration.
 
 If a paragraph begins with an enumeration marker ("The second is error", \
 "The third is desire") and continues with cosmological-correspondential \
-description, the ENTIRE enumeration unit is CORE. Do NOT strip the \
+description, the ENTIRE enumeration unit belongs in the oldest teaching \
+layer. Do NOT strip the \
 enumeration marker from a mixed paragraph. If you must extract from a \
 mixed paragraph that contains enumeration, preserve the full "The Nth \
 is [term]" structure in core_text.
@@ -444,53 +431,7 @@ via a Gospel citation. That citation is a 3rd-century Manichaean editorial \
 act, not a pre-Mani teaching tradition. The CONTENT may be ancient (Jesus \
 was drawing on ancient patterns). The CITATION is late.
 
-## THE TEXT'S COMPOSITION HISTORY
-
-The Kephalaia is a composite document. Multiple hands and periods contributed:
-
-1. **THE TEACHING CORE** (what we are recovering):
-   The oldest layer. Systematic cosmological-correspondential teaching that \
-   predates the editorial compilation. Characteristics:
-   - Numbered degree structures (five limbs, three wheels, twelve zodiac)
-   - Systematic mapping: one domain onto another (cosmic being ↔ body part \
-     ↔ intellectual faculty ↔ eschatological station)
-   - Named cosmic beings in SYSTEMATIC exposition (not narrative anecdote)
-   - Light-dark mechanics described as process, not moral exhortation
-   - Impersonal, structural voice — "how things work"
-   - Persian/Iranian cosmological naming (First Man, Living Spirit, Mother \
-     of Life, Father of Greatness, Third Ambassador, Virgin of Light)
-   - The teaching does NOT cite authorities. It expounds directly.
-   NOTE: "Jesus the Splendour" in COSMIC contexts (as a specific being in \
-   the cosmological hierarchy with defined function) is CORE — this is a \
-   named cosmic entity, not a Gospel reference.
-
-2. **THE HAGIOGRAPHIC FRAME** (later — editorial):
-   Added by the community that compiled the Kephalaia as a book:
-   - Opening: "Once again the enlightener speaks to his disciples..."
-   - Questions: "We beseech you, our master, that you may recount..."
-   - Closing: "When they heard these things, they rejoiced and glorified..."
-   - Biographical: "Not one among the apostles did ever do these things"
-   - Titles: "our master Manichaios, the apostle of greatness"
-   These wrap the teaching. Container, not content.
-
-3. **THE PASTORAL LAYER** (later — institutional):
-   Church operational material:
-   - Fasting rules, alms, tithe, catechumen/elect institutional categories
-   - Behavioral ethics without cosmological mechanism
-   - Prescriptive, second-person instruction voice
-
-4. **THE CHRISTIAN OVERLAY** (Mani's synthesis + later editors):
-   Material that entered the Kephalaia VIA the New Testament:
-   - **Gospel citations**: "As it is written in the Gospel, he says..." — \
-     even when the cited saying is correspondential (the two trees, the \
-     mustard seed, etc). Jesus spoke in correspondence, but CITING Jesus \
-     from the Gospels is a post-Gospel act.
-   - **NT narrative exempla**: Judas stories, Paul's conversion, apostolic \
-     biography — these reference specific NT episodes.
-   - **Citation formulas**: "the saviour preached", "as the saviour said"
-   - **Pauline vocabulary** in devotional (non-cosmic) contexts
-   - **The test**: If you removed the NT from existence, would this \
-     language still be here? If no → OVERLAY.
+{TEMPORAL_LAYERS}
 
 ## EDITORIAL SEAM DETECTION — CRITICAL
 
@@ -539,7 +480,8 @@ IS the editorial seam.
 ### What This Means for Classification
 
 When a paragraph mimics the core teaching pattern but applies it to \
-institutional content, the ENTIRE paragraph is PASTORAL — not MIXED. \
+institutional content, the ENTIRE paragraph is a later editorial \
+layer — not mixed. \
 Do NOT extract the opening clause as "core_text" just because it uses \
 the same syntax. The opening clause IS PART OF the editorial extension. \
 "Now, moreover, X exist in the holy church" is ONE editorial act — the \
@@ -615,16 +557,17 @@ once with the complete extraction for all paragraphs.
 1. **Temporal layer is the axis.** Do NOT classify by content type. \
    Classify by WHEN the language entered the text.
 
-2. **The teaching core expounds, it does not cite.** Core teaching describes \
+2. **The oldest teaching layer expounds, it does not cite.** It describes \
    how cosmic systems work. It does not say "as it is written" or "the \
    saviour preached."
 
 3. **Editorial seams are NOT mixed paragraphs.** When a paragraph extends a \
    teaching sequence with institutional content, classify the ENTIRE \
-   paragraph as PASTORAL.
+   paragraph as the appropriate editorial layer — not mixed.
 
-4. **Preserve exact text.** For CORE paragraphs, return verbatim. For MIXED, \
-   extract the old teaching words exactly — no paraphrase.
+4. **Preserve exact text.** For the oldest teaching layer, return verbatim. \
+   For mixed, extract the oldest teaching words exactly — no paraphrase. \
+   For all other layers: core_text is null.
 
 5. **Strip frame formulas from MIXED.** If frame wraps teaching, extract the \
    teaching only.
@@ -633,10 +576,10 @@ once with the complete extraction for all paragraphs.
    [restored text], manuscript page markers ⟨p.N⟩, and single-word gap \
    markers {} exactly as they appear in the source.
 
-7. **Substantive cosmological questions are CORE.** "Tell us about the five \
-   storehouses" reveals the teaching structure. Purely formulaic "We beseech \
-   you" is FRAME. When both are present, classify as MIXED and PRESERVE the \
-   substantive content.
+7. **Substantive cosmological questions belong to the oldest layer.** \
+   "Tell us about the five storehouses" reveals the teaching structure. \
+   Purely formulaic "We beseech you" is dialogue frame. When both are \
+   present, classify as mixed and PRESERVE the substantive content.
 
 8. **When in doubt about age, flag it.** Use temporal_note to record genuine \
    uncertainty. Do not keep late material out of caution.
@@ -646,17 +589,17 @@ once with the complete extraction for all paragraphs.
    shift to citation, exhortation, or biography, that is a layer boundary.
 
 10. **Editorial fatigue matters.** If the chapter-level fatigue score shows \
-    strong pastoral drift in the second half, be MORE suspicious of pastoral \
-    material in the later paragraphs.
+    strong later-layer drift in the second half, be MORE suspicious of \
+    editorial material in the later paragraphs.
 
 11. **Polemic against "the sects" is ambiguous.** Flag rather than \
     automatically classify.
 
 12. **DIALOGUE FRAME ATTRIBUTION MUST BE STRIPPED.** Phrases like \
     "Then speaks the apostle to him:" or "The enlightener says:" are \
-    Layer 2 (Mani's compilation frame). They must NEVER appear in \
-    core_text. If a paragraph starts with dialogue attribution followed \
-    by teaching, classify as MIXED and extract ONLY the teaching.
+    dialogue frame. They must NEVER appear in core_text. If a paragraph \
+    starts with dialogue attribution followed by teaching, classify as \
+    mixed and extract ONLY the teaching.
 
 13. **ENUMERATION MARKERS ARE SUBSTRATE.** Never strip "The first is...", \
     "The second is..." etc. from extracted core_text. These are the \
@@ -680,39 +623,63 @@ translation choices."""
 
 
 def build_system_prompt(metadata: dict | None) -> str:
-    """Build system prompt with metadata-discovered layer descriptions.
+    """Build system prompt by injecting metadata-discovered layer definitions.
 
-    Appends a section describing the dynamically-identified temporal
-    layers so the extraction LLM knows what classification labels to use
-    and what each layer represents.
+    Replaces the ``{TEMPORAL_LAYERS}`` placeholder in *SYSTEM_PROMPT* with
+    a section describing the dynamically-identified temporal layers so the
+    extraction LLM knows what classification labels to use and what each
+    layer represents.  If no metadata is available the placeholder is
+    replaced with a minimal fallback note.
     """
-    if not metadata:
-        return SYSTEM_PROMPT
+    prompt = SYSTEM_PROMPT
 
-    vocabs = metadata.get("scoring_vocabularies", [])
-    if not vocabs:
-        return SYSTEM_PROMPT
+    if not metadata or not metadata.get("scoring_vocabularies"):
+        # No metadata — strip the placeholder so the prompt is still valid.
+        prompt = prompt.replace(
+            "{TEMPORAL_LAYERS}",
+            "## THE TEXT'S COMPOSITION HISTORY\n\n"
+            "No corpus metadata available.  Use your best judgment to "
+            "identify temporal layers from contextual cues.",
+        )
+        return prompt
 
-    layer_section = (
-        "\n\n## METADATA-DISCOVERED LAYERS\n\n"
+    vocabs = metadata["scoring_vocabularies"]
+
+    # Build a self-contained section describing every layer.
+    lines: list[str] = [
+        "## THE TEXT'S COMPOSITION HISTORY",
+        "",
         "The corpus metadata analysis has identified the following "
-        "temporal layers in this text. These layers were discovered "
-        "dynamically from the text itself. Use these layer IDs as "
-        "your classification categories (plus 'mixed' for interwoven "
-        "paragraphs):\n\n"
-    )
-    for v in vocabs:
+        "temporal layers in this text.  These layers were discovered "
+        "dynamically from the text itself.  Use these layer IDs as "
+        "your classification categories (plus ``mixed`` for interwoven "
+        "paragraphs):",
+        "",
+    ]
+    for idx, v in enumerate(vocabs, 1):
+        layer_id = v["id"]
+        name = v.get("name", layer_id)
         desc = v.get("description", "")
-        name = v.get("name", v["id"])
-        layer_section += f"- **{v['id']}** ({name}): {desc}\n"
+        lines.append(f"{idx}. **{layer_id.upper()}** ({name}):")
+        if desc:
+            lines.append(f"   {desc}")
+        # Include representative markers when available.
+        markers = v.get("markers", {})
+        if markers:
+            top = sorted(markers, key=markers.get, reverse=True)[:6]
+            lines.append(
+                f"   Key markers: {', '.join(top)}"
+            )
+        lines.append("")
 
-    layer_section += (
-        "\nThe paragraph-level register scores below are reported "
-        "for these same categories. Your classification should use "
-        "these layer IDs.\n"
+    lines.append(
+        "The paragraph-level register scores below are reported "
+        "for these same categories.  Your classification should use "
+        "these layer IDs."
     )
 
-    return SYSTEM_PROMPT + layer_section
+    prompt = prompt.replace("{TEMPORAL_LAYERS}", "\n".join(lines))
+    return prompt
 
 
 def build_extract_core_tool(metadata: dict | None = None) -> dict:
