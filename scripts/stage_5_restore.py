@@ -39,8 +39,8 @@ from project_config import load_project, list_projects, SECRETS_PATH
 
 PROJECT_CFG = None                     # ProjectConfig — set by configure_paths()
 CORE_CHAPTERS_DIR: Path | None = None   # input: core/chapters/
-OUTPUT_DIR: Path | None = None          # output: correspondential/
-CHAPTERS_OUT_DIR: Path | None = None    # output: correspondential/chapters/
+OUTPUT_DIR: Path | None = None          # output: restored/
+CHAPTERS_OUT_DIR: Path | None = None    # output: restored/chapters/
 ASSEMBLED_FILE: Path | None = None      # output: assembled markdown
 
 
@@ -54,9 +54,9 @@ def configure_paths(project_name: str) -> None:
     PROJECT_CFG = cfg
 
     CORE_CHAPTERS_DIR = cfg.paths.core_chapters
-    OUTPUT_DIR = cfg.paths.correspondential
-    CHAPTERS_OUT_DIR = cfg.paths.correspondential_chapters
-    ASSEMBLED_FILE = cfg.paths.correspondential_assembled
+    OUTPUT_DIR = cfg.paths.restored
+    CHAPTERS_OUT_DIR = cfg.paths.restored_chapters
+    ASSEMBLED_FILE = cfg.paths.restored_assembled
 
     print(f"Project: {cfg.display_name}")
     print(f"  Type:   {cfg.document_type}")
@@ -1700,7 +1700,7 @@ def main() -> None:
     all_chapters = load_core_chapters()
     if not all_chapters:
         print("ERROR: No extracted core chapters found in", CORE_CHAPTERS_DIR)
-        print("  Run extract_core.py first.")
+        print("  Run stage_4_extract.py first.")
         sys.exit(1)
 
     core_by_num = {ch["chapter_number"]: ch for ch in all_chapters}

@@ -15,7 +15,7 @@ generation from the existing text files.
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
 Usage:
-    python compose_structure.py --project kephalaia [--debug] [--dry-run]
+    python stage_8_compose.py --project kephalaia [--debug] [--dry-run]
 """
 
 import json

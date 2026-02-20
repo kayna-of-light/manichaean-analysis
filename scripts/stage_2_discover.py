@@ -15,15 +15,15 @@ This script operates on CLEANED data (Phase 1 output), NOT on core
 extractions or correspondential readings. The metadata it produces
 is the INPUT to the extraction pipeline (Phase 2).
 
-The output is consumed DIRECTLY by extract_analysis.py and extract_core.py:
-  - scoring_vocabularies  → loaded by extract_analysis.py for vocabulary scoring
-  - seam_detection         → loaded by extract_analysis.py for editorial seam detection
-  - scoring_vocabularies  → also used by extract_core.py for dynamic prompt/tool schema
+The output is consumed DIRECTLY by stage_3_score.py and stage_4_extract.py:
+  - scoring_vocabularies  → loaded by stage_3_score.py for vocabulary scoring
+  - seam_detection         → loaded by stage_3_score.py for editorial seam detection
+  - scoring_vocabularies  → also used by stage_4_extract.py for dynamic prompt/tool schema
 
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
 Usage:
-    python extract_metadata.py --project kephalaia [--debug] [--dry-run]
+    python stage_2_discover.py --project kephalaia [--debug] [--dry-run]
 """
 
 from __future__ import annotations
@@ -374,7 +374,7 @@ COMMIT_METADATA_TOOL = {
 
 
 # ---------------------------------------------------------------------------
-# Data loading — reads from CLEANED chapters, not core/correspondential
+# Data loading — reads from CLEANED chapters, not core/restored
 # ---------------------------------------------------------------------------
 
 

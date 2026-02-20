@@ -12,12 +12,12 @@ vs. Gardner's scholarly commentary, fixing OCR line-break artifacts, removing
 embedded manuscript line numbers, and producing clean readable prose.
 
 Usage:
-    python scripts/clean_kephalaia.py                    # Process all chapters
-    python scripts/clean_kephalaia.py --chapter 1        # Process single chapter
-    python scripts/clean_kephalaia.py --range 0-10       # Process chapter range
-    python scripts/clean_kephalaia.py --dry-run           # Show chapters without processing
-    python scripts/clean_kephalaia.py --overwrite         # Reprocess already-cleaned chapters
-    python scripts/clean_kephalaia.py --list              # List all chapters with line ranges
+    python scripts/projects/kephalaia/stage_1_clean.py                    # Process all chapters
+    python scripts/projects/kephalaia/stage_1_clean.py --chapter 1        # Process single chapter
+    python scripts/projects/kephalaia/stage_1_clean.py --range 0-10       # Process chapter range
+    python scripts/projects/kephalaia/stage_1_clean.py --dry-run           # Show chapters without processing
+    python scripts/projects/kephalaia/stage_1_clean.py --overwrite         # Reprocess already-cleaned chapters
+    python scripts/projects/kephalaia/stage_1_clean.py --list              # List all chapters with line ranges
 """
 import argparse
 import json

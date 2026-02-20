@@ -2,10 +2,10 @@
 """
 Text-critical analysis of corpus chapters.
 
-Pipeline stage: runs AFTER extract_metadata.py, BEFORE extract_core.py.
+Pipeline stage: runs AFTER stage_2_discover.py, BEFORE stage_4_extract.py.
 
 This script performs automated vocabulary scoring and editorial seam detection
-on each chapter using the corpus metadata produced by extract_metadata.py.
+on each chapter using the corpus metadata produced by stage_2_discover.py.
 It does NOT involve any LLM calls — all analysis is computational NLP.
 
 What it produces (per chapter):
@@ -15,15 +15,15 @@ What it produces (per chapter):
 
 Output: output/projects/<project>/analysis/chapters/ch_NNN.json
 
-The output is consumed by extract_core.py, which formats the analysis data
+The output is consumed by stage_4_extract.py, which formats the analysis data
 into the Claude prompt for LLM-driven temporal layer classification.
 
 Usage:
-    python scripts/extract_analysis.py --project kephalaia
-    python scripts/extract_analysis.py --project kephalaia --chapter 38
-    python scripts/extract_analysis.py --project kephalaia --range 0-50
-    python scripts/extract_analysis.py --project kephalaia --dry-run
-    python scripts/extract_analysis.py --project kephalaia --overwrite
+    python scripts/stage_3_score.py --project kephalaia
+    python scripts/stage_3_score.py --project kephalaia --chapter 38
+    python scripts/stage_3_score.py --project kephalaia --range 0-50
+    python scripts/stage_3_score.py --project kephalaia --dry-run
+    python scripts/stage_3_score.py --project kephalaia --overwrite
 """
 import argparse
 import json
@@ -84,7 +84,7 @@ def get_title(chapter: dict) -> str:
 # ---------------------------------------------------------------------------
 
 def load_corpus_metadata(project_dir: Path) -> dict | None:
-    """Load corpus metadata produced by extract_metadata.py.
+    """Load corpus metadata produced by stage_2_discover.py.
 
     Returns the parsed JSON, or None if the file doesn't exist.
     """

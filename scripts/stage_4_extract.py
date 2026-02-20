@@ -7,10 +7,10 @@ from the composite Kephalaia text. It does NOT impose any narrative scheme
 or reorganize content. It works chapter by chapter in textual order:
 
   1. Loads pre-computed text-critical analysis (vocabulary scores, seam flags)
-     produced by extract_analysis.py
+     produced by stage_3_score.py
   2. Sends the chapter to Claude Opus 4.6 WITH the analysis data as guidance
   3. The LLM classifies each paragraph by temporal layer (layers are
-     identified dynamically from corpus metadata — see extract_metadata.py)
+     identified dynamically from corpus metadata — see stage_2_discover.py)
   4. For MIXED paragraphs, the LLM extracts the oldest teaching and notes
      what was removed
   5. The result preserves textual order — chapter by chapter, paragraph by
@@ -18,7 +18,7 @@ or reorganize content. It works chapter by chapter in textual order:
 
 The "core" is not defined thematically. It is defined temporally: teaching
 content that predates the editorial compilation. The specific temporal layers
-(and their classification labels) are discovered by extract_metadata.py and
+(and their classification labels) are discovered by stage_2_discover.py and
 stored in corpus_metadata.json. This script loads those layer definitions at
 runtime to build the system prompt and tool schema dynamically.
 
@@ -30,14 +30,14 @@ Output: output/core/
   - core_data.json      Summary statistics
 
 Usage:
-    python scripts/extract_core.py                     # Process all chapters
-    python scripts/extract_core.py --chapter 38        # Single chapter
-    python scripts/extract_core.py --range 0-20        # Range of chapters
-    python scripts/extract_core.py --dry-run            # Preview without API calls
-    python scripts/extract_core.py --overwrite          # Reprocess existing
-    python scripts/extract_core.py --assemble           # Skip extraction, assemble only
-    python scripts/extract_core.py --limit 5            # First N chapters only
-    python scripts/extract_core.py --max-concurrency 4  # 4 parallel API calls
+    python scripts/stage_4_extract.py                     # Process all chapters
+    python scripts/stage_4_extract.py --chapter 38        # Single chapter
+    python scripts/stage_4_extract.py --range 0-20        # Range of chapters
+    python scripts/stage_4_extract.py --dry-run            # Preview without API calls
+    python scripts/stage_4_extract.py --overwrite          # Reprocess existing
+    python scripts/stage_4_extract.py --assemble           # Skip extraction, assemble only
+    python scripts/stage_4_extract.py --limit 5            # First N chapters only
+    python scripts/stage_4_extract.py --max-concurrency 4  # 4 parallel API calls
 """
 import argparse
 import json
@@ -53,7 +53,7 @@ import httpx
 from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
 
-from extract_analysis import (
+from stage_3_score import (
     load_corpus_metadata,
     split_paragraphs,
     load_analysis,
@@ -787,7 +787,7 @@ def load_chapter(num: int) -> dict | None:
 def format_chapter_context(analysis: dict) -> str:
     """Format chapter-level analytical features for the LLM user message.
 
-    Takes the analysis dict (from extract_analysis.py) and returns a
+    Takes the analysis dict (from stage_3_score.py) and returns a
     human-readable block describing chapter-level features: editorial
     fatigue, teaching purity, structure, and citations.
     """
@@ -871,7 +871,7 @@ def extract_core(
     """Send a chapter to Claude Opus 4.6 for core extraction.
 
     Loads pre-computed text-critical analysis from analysis_dir (produced
-    by extract_analysis.py). system_prompt and tool_schema are pre-built
+    by stage_3_score.py). system_prompt and tool_schema are pre-built
     with dynamic layer information.
 
     Returns the tool_input dict, or None on failure.
@@ -1079,7 +1079,7 @@ def _run_passthrough(chapters: list[dict]) -> None:
 
     Fragments are already the primary teaching text: no editorial layers
     to separate. This reformats cleaned JSON into the extraction output
-    format that correspondential_reading.py expects.
+    format that stage_5_restore.py expects.
     """
     include_original = PROJECT_CFG.include_original_text
 
@@ -1497,7 +1497,7 @@ def main() -> None:
             "running without metadata-driven layer info"
         )
 
-    # Pre-computed text-critical analysis (from extract_analysis.py)
+    # Pre-computed text-critical analysis (from stage_3_score.py)
     analysis_dir = PROJECT_CFG.paths.analysis_chapters
     print()
 

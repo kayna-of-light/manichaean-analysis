@@ -19,12 +19,12 @@ Structure of the source text:
   - Lacunae: [ ... ], {ll. NNN-NNN missing}, {N lines left blank}
 
 Usage:
-    python scripts/projects/shabuhragan/clean.py                    # Process all sections
-    python scripts/projects/shabuhragan/clean.py --chapter 1        # Process single section
-    python scripts/projects/shabuhragan/clean.py --range 0-5        # Process section range
-    python scripts/projects/shabuhragan/clean.py --dry-run           # Show sections without processing
-    python scripts/projects/shabuhragan/clean.py --overwrite         # Reprocess existing sections
-    python scripts/projects/shabuhragan/clean.py --list              # List all sections
+    python scripts/projects/shabuhragan/stage_1_clean.py                    # Process all sections
+    python scripts/projects/shabuhragan/stage_1_clean.py --chapter 1        # Process single section
+    python scripts/projects/shabuhragan/stage_1_clean.py --range 0-5        # Process section range
+    python scripts/projects/shabuhragan/stage_1_clean.py --dry-run           # Show sections without processing
+    python scripts/projects/shabuhragan/stage_1_clean.py --overwrite         # Reprocess existing sections
+    python scripts/projects/shabuhragan/stage_1_clean.py --list              # List all sections
 """
 import argparse
 import json
@@ -655,7 +655,7 @@ def main():
     # Parse source file into sections
     if not SOURCE_FILE.exists():
         print(f"ERROR: Source file not found at {SOURCE_FILE}")
-        print("  Run process_ocr_json.py first to extract text from the PDF.")
+        print("  Run stage_0_ingest.py first to extract text from the PDF.")
         sys.exit(1)
 
     sections = parse_sections(SOURCE_FILE)
