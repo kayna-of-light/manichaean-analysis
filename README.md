@@ -32,7 +32,7 @@ The pipeline exists to **reverse the editorial process**: identify and separate 
 
 ## The Pipeline
 
-The pipeline has six stages. Each stage is a separate script. The output of each stage feeds the next. All scripts operate on JSON chapter files within a project directory structure managed by `project_config.py`.
+The pipeline has nine stages (0–8). Each stage is a separate script. The output of each stage feeds the next. All scripts operate on JSON chapter files within a project directory structure managed by `project_config.py`.
 
 ```
                                   ┌──────────────────────────────┐
@@ -40,21 +40,21 @@ The pipeline has six stages. Each stage is a separate script. The output of each
                                   │  (Azure OCR output)          │
                                   └───────────┬──────────────────┘
                                               │
-                                   process_ocr_json.py
+                                   stage_0_ingest.py
                                               │
                                   ┌───────────▼──────────────────┐
                                   │  output/texts/*.md           │
                                   │  (raw markdown)              │
                                   └───────────┬──────────────────┘
                                               │
-                                  projects/<name>/clean.py
+                                  projects/<name>/stage_1_clean.py
                                               │
                     ┌─────────────────────────▼────────────────────────────┐
                     │  output/projects/<name>/cleaned/chapters/ch_NNN.json │
                     │  (clean teaching text + apparatus, per chapter)       │
                     └───────────┬──────────────────────────────────────────┘
                                 │
-                     extract_metadata.py ──────────────────────────┐
+                     stage_2_discover.py ──────────────────────────┐
                                 │                                  │
                     ┌───────────▼──────────────────┐   ┌───────────▼───────────┐
                     │  corpus_metadata.json         │   │  (same cleaned input) │
@@ -63,29 +63,29 @@ The pipeline has six stages. Each stage is a separate script. The output of each
                                 │ drives scoring                │
                                 └──────────┬────────────────────┘
                                            │
-                                extract_analysis.py
+                                stage_3_score.py
                                            │
                     ┌──────────────────────▼────────────────────────────────┐
                     │  output/projects/<name>/analysis/chapters/ch_NNN.json │
                     │  (paragraph-level scores + editorial seam flags)      │
                     └───────────┬───────────────────────────────────────────┘
                                 │
-                          extract_core.py
+                          stage_4_extract.py
                                            │
                     ┌──────────────────────▼────────────────────────────────┐
                     │  output/projects/<name>/core/chapters/ch_NNN.json     │
                     │  (classified paragraphs: CORE/FRAME/PASTORAL/OVERLAY) │
                     └───────────┬───────────────────────────────────────────┘
                                 │
-                     correspondential_reading.py
+                     stage_5_restore.py
                                 │
                     ┌───────────▼──────────────────────────────────────────────┐
-                    │  output/projects/<name>/correspondential/chapters/       │
+                    │  output/projects/<name>/restored/chapters/       │
                     │  ch_NNN.json (spiritual reading + gap fills +             │
                     │               reconstructed text per paragraph)           │
                     └───────────┬──────────────────────────────────────────────┘
                                 │
-                        analyze_corpus.py
+                        stage_6_review.py
                                 │
                     ┌───────────▼──────────────────┐
                     │  corpus_review.json           │
@@ -94,7 +94,7 @@ The pipeline has six stages. Each stage is a separate script. The output of each
                     │   missed layers, etc.)         │
                     └───────────┬───────────────────┘
                                 │
-                         apply_review.py
+                         stage_7_correct.py
                                 │
                     ┌───────────▼──────────────────────────────────────────────┐
                     │  output/projects/<name>/corrected/chapters/ch_NNN.json   │
@@ -106,21 +106,21 @@ The pipeline has six stages. Each stage is a separate script. The output of each
 
 ```
 output/
-├── texts/                              # Phase 0: OCR → markdown (shared)
+├── texts/                              # Stage 0: OCR → markdown (shared)
 └── projects/
     └── kephalaia/
-        ├── cleaned/chapters/           # Phase 1: LLM clean (per chapter JSON)
-        ├── corpus_metadata.json        # Phase 1.5: corpus-wide metadata
-        ├── core/chapters/              # Phase 2: core extraction (per chapter JSON)
-        ├── correspondential/chapters/  # Phase 3: restoration + spiritual reading
-        ├── corpus_review.json          # Phase 4: corpus-wide review findings
-        ├── corrected/chapters/         # Phase 5: corrected final output
-        └── analysis/                   # Supplementary analysis outputs
+        ├── cleaned/chapters/           # Stage 1: LLM clean (per chapter JSON)
+        ├── corpus_metadata.json        # Stage 2: corpus-wide metadata
+        ├── core/chapters/              # Stage 4: core extraction (per chapter JSON)
+        ├── restored/chapters/          # Stage 5: restoration + spiritual reading
+        ├── corpus_review.json          # Stage 6: corpus-wide review findings
+        ├── corrected/chapters/         # Stage 7: corrected final output
+        └── analysis/                   # Stage 3: text-critical analysis outputs
 ```
 
 ---
 
-### Phase 0: OCR Processing (`process_ocr_json.py`)
+### Stage 0: OCR Ingest (`stage_0_ingest.py`)
 
 **Input**: Azure AI Document Intelligence JSON output (`data/*.pdf.json`)
 **Output**: Raw markdown text (`output/texts/*.md`)
@@ -128,10 +128,10 @@ output/
 Converts OCR output into readable markdown. This is mechanical — no LLM involved, just structural cleanup of the machine-read text.
 
 ```bash
-python scripts/process_ocr_json.py
+python scripts/stage_0_ingest.py
 ```
 
-### Phase 1: Cleaning (`projects/<name>/clean.py`)
+### Stage 1: Cleaning (`projects/<name>/stage_1_clean.py`)
 
 **Input**: Raw markdown text
 **Output**: `cleaned/chapters/ch_NNN.json` — one JSON per chapter
@@ -153,12 +153,12 @@ Each cleaned chapter JSON contains:
 **Critical**: The `teaching_text` is the *complete* translated text — all temporal layers (substrate, frame, pastoral, overlay) are present. Nothing has been classified or removed at this stage. Physical lacunae remain as they appear in Gardner's translation (`[ ... ]`).
 
 ```bash
-cd scripts && python projects/kephalaia/clean.py
+cd scripts && python projects/kephalaia/stage_1_clean.py
 ```
 
-### Phase 1.5: Metadata Extraction (`extract_metadata.py`)
+### Stage 2: Metadata Discovery (`stage_2_discover.py`)
 
-**Input**: All 123 cleaned chapter JSONs (the raw `teaching_text` from Phase 1)
+**Input**: All 123 cleaned chapter JSONs (the raw `teaching_text` from Stage 1)
 **Output**: `corpus_metadata.json`
 
 **Model**: Claude Opus 4.6 (single-turn, full corpus in context)
@@ -175,15 +175,15 @@ This is the critical bridge between the raw text and automated extraction. The e
 | **Cross-chapter teachings** | Teachings that span or repeat across chapters (what extends, repeats, contradicts) |
 | **Editorial patterns** | Seam types, fatigue patterns, citation formulas — where and how the editor intervened |
 
-**Why this stage exists**: The previous extraction pipeline used hardcoded word lists (manually curated marker dictionaries). These lists were incomplete, biased by the author's prior readings, and blind to patterns that only a text-critical expert reading the full corpus can see. By having Claude derive the vocabulary and patterns from the raw text, the extraction in Phase 2 is guided by observation rather than assumption.
+**Why this stage exists**: The previous extraction pipeline used hardcoded word lists (manually curated marker dictionaries). These lists were incomplete, biased by the author's prior readings, and blind to patterns that only a text-critical expert reading the full corpus can see. By having Claude derive the vocabulary and patterns from the raw text, the extraction in Stage 4 is guided by observation rather than assumption.
 
-**Why it must read the cleaned data**: This script was initially written to read from the *core extraction output* (Phase 2 output). That was a circular dependency — the metadata meant to drive extraction was derived from already-extracted data. The script now correctly reads from Phase 1 output, ensuring the metadata reflects the raw text before any classification.
+**Why it must read the cleaned data**: This script was initially written to read from the *core extraction output* (Stage 4 output). That was a circular dependency — the metadata meant to drive extraction was derived from already-extracted data. The script now correctly reads from Stage 1 output, ensuring the metadata reflects the raw text before any classification.
 
 ```bash
-cd scripts && python extract_metadata.py --project kephalaia [--dry-run] [--debug]
+cd scripts && python stage_2_discover.py --project kephalaia [--dry-run] [--debug]
 ```
 
-### Phase 1.7: Text-Critical Analysis (`extract_analysis.py`)
+### Stage 3: Text-Critical Scoring (`stage_3_score.py`)
 
 **Input**: Cleaned chapter JSONs + `corpus_metadata.json`
 **Output**: `analysis/chapters/ch_NNN.json` — per-paragraph scoring and seam detection
@@ -196,13 +196,13 @@ This stage runs the text-critical machinery locally — no API calls needed:
 
 2. **Editorial seam detection**: Bridge connectives, institutional vocabulary, and register shifts between adjacent paragraphs are flagged as potential editorial joins.
 
-The output is consumed by `extract_core.py`, which formats the analysis into the Claude prompt.
+The output is consumed by `stage_4_extract.py`, which formats the analysis into the Claude prompt.
 
 ```bash
-cd scripts && python extract_analysis.py --project kephalaia [--chapter 42] [--dry-run]
+cd scripts && python stage_3_score.py --project kephalaia [--chapter 42] [--dry-run]
 ```
 
-### Phase 2: Core Extraction (`extract_core.py`)
+### Stage 4: Core Extraction (`stage_4_extract.py`)
 
 **Input**: Cleaned chapter JSONs + `analysis/chapters/ch_NNN.json` + `corpus_metadata.json`
 **Output**: `core/chapters/ch_NNN.json` — classified and extracted per chapter
@@ -211,7 +211,7 @@ cd scripts && python extract_analysis.py --project kephalaia [--chapter 42] [--d
 
 This is the textual-critical heart of the pipeline. For each chapter:
 
-1. **Load analysis**: Pre-computed vocabulary scores and seam flags from `extract_analysis.py` are loaded and formatted into the prompt, giving Claude quantitative guidance — not dictation.
+1. **Load analysis**: Pre-computed vocabulary scores and seam flags from `stage_3_score.py` are loaded and formatted into the prompt, giving Claude quantitative guidance — not dictation.
 
 2. **LLM classification**: The chapter is sent to Claude with the register scores. The model classifies each paragraph:
    - **CORE**: Teaching content that predates the editorial compilation. Correspondential maps, cosmological narrative, body-universe systems, five-fold structures, named cosmic beings *and their correspondential descriptions*. The criterion is temporal (old teaching), not thematic.
@@ -227,26 +227,26 @@ This is the textual-critical heart of the pipeline. For each chapter:
 **What introductory questions are**: The core Persian text often started with cosmological questions — these are substantive framing that sets up the teaching, not mere editorial apparatus. Questions like "Tell us about the five realms" are CORE because they reflect the pedagogical structure of the original teaching. Questions like "We beseech you, our master, enlightener" are FRAME because they reflect the compiling community's hagiographic conventions.
 
 ```bash
-cd scripts && python extract_core.py --project kephalaia [--chapter 42] [--dry-run]
-cd scripts && python extract_core.py --project kephalaia --assemble  # assembly only
+cd scripts && python stage_4_extract.py --project kephalaia [--chapter 42] [--dry-run]
+cd scripts && python stage_4_extract.py --project kephalaia --assemble  # assembly only
 ```
 
-### Phase 3: Restoration (`correspondential_reading.py`)
+### Stage 5: Restoration (`stage_5_restore.py`)
 
 **Input**: `core/chapters/ch_NNN.json` (extracted core text with lacunae)
-**Output**: `correspondential/chapters/ch_NNN.json`
+**Output**: `restored/chapters/ch_NNN.json`
 
-**Model**: Claude Opus 4.6 (per-chapter, two-phase)
+**Model**: Claude Opus 4.6 (per-chapter, two-pass)
 
 The name "correspondential reading" is somewhat misleading — the *primary* goal of this stage is **lacuna restoration**. The spiritual reading is a means, not the end.
 
 The Kephalaia manuscripts are physically damaged. Gardner's translation preserves these gaps as `[ ... ]` markers of varying length.  Standard papyrological practice fills gaps based on paleographic spacing and parallel texts. This pipeline fills gaps based on **correspondential logic** — what the spiritual sense *requires* at each position.
 
-The process has two phases per chapter:
+The process has two passes per chapter:
 
-**Phase A — Spiritual Reading**: Claude translates the entire chapter from its natural sense into its spiritual sense through Swedenborg's doctrine of correspondences. Every natural image (light, darkness, fire, water, garments, metals, body parts, animals, mountains, seeds, vessels) is replaced by the spiritual reality it expresses. Gap positions are preserved as anchor markers (`[GAP-N]`) in the spiritual prose, showing what spiritual reality belongs at each lacuna.
+**Pass A — Spiritual Reading**: Claude translates the entire chapter from its natural sense into its spiritual sense through Swedenborg's doctrine of correspondences. Every natural image (light, darkness, fire, water, garments, metals, body parts, animals, mountains, seeds, vessels) is replaced by the spiritual reality it expresses. Gap positions are preserved as anchor markers (`[GAP-N]`) in the spiritual prose, showing what spiritual reality belongs at each lacuna.
 
-**Phase B — Tool-Call Restoration**: A multi-turn conversation where Claude uses a `restore_lacuna` tool for each gap. For every lacuna:
+**Pass B — Tool-Call Restoration**: A multi-turn conversation where Claude uses a `restore_lacuna` tool for each gap. For every lacuna:
 1. The model finds the `GAP-N` anchor in the spiritual reading to determine what spiritual reality belongs there
 2. It translates that spiritual reality *back* into the text's own natural-plane vocabulary — the language of the Kephalaia
 3. It submits the fill via tool call, with explanation and confidence rating
@@ -270,11 +270,11 @@ The output for each chapter includes:
 | `[GAP-N: REVIEW word]` | Editorial review | Editor's guess — confirm or improve through correspondential lens |
 
 ```bash
-cd scripts && python correspondential_reading.py --project kephalaia [--chapter 42]
-cd scripts && python correspondential_reading.py --project kephalaia --assemble  # assembly only
+cd scripts && python stage_5_restore.py --project kephalaia [--chapter 42]
+cd scripts && python stage_5_restore.py --project kephalaia --assemble  # assembly only
 ```
 
-### Phase 4: Corpus Review (`analyze_corpus.py`)
+### Stage 6: Corpus Review (`stage_6_review.py`)
 
 **Input**: All core + correspondential chapter JSONs (interleaved as continuous flow)
 **Output**: `corpus_review.json`
@@ -299,12 +299,12 @@ This stage feeds the *entire* corpus — core text interleaved with spiritual re
 Each finding includes severity (critical/significant/minor), specific `§` references, the current reading, the proposed correction, and reasoning.
 
 ```bash
-cd scripts && python analyze_corpus.py --project kephalaia [--dry-run] [--debug]
+cd scripts && python stage_6_review.py --project kephalaia [--dry-run] [--debug]
 ```
 
-### Phase 5: Apply Review (`apply_review.py`)
+### Stage 7: Apply Corrections (`stage_7_correct.py`)
 
-**Input**: `corpus_review.json` + `correspondential/chapters/ch_NNN.json`
+**Input**: `corpus_review.json` + `restored/chapters/ch_NNN.json`
 **Output**: `corrected/chapters/ch_NNN.json`
 
 **Model**: Claude Opus 4.6 (per-chapter, for affected chapters only)
@@ -320,24 +320,24 @@ The final stage applies corpus-wide corrections to individual chapters. For each
 
 Only "actionable" finding categories are applied: mistranslation, inconsistency, opposite_sense_error, untranslated_natural, missed_pre_manichaean. Cross-passage observations and narrative breaks inform understanding but don't modify text.
 
-The corrected files are written to a separate `corrected/chapters/` directory, preserving the Phase 3 output untouched.
+The corrected files are written to a separate `corrected/chapters/` directory, preserving the Stage 5 output untouched.
 
 ```bash
-cd scripts && python apply_review.py --project kephalaia [--chapter 42] [--dry-run]
+cd scripts && python stage_7_correct.py --project kephalaia [--chapter 42] [--dry-run]
 ```
 
 ---
 
-## Post-Pipeline: Composition and Assembly
+## Stage 8: Composition and Assembly
 
-After the five-stage extraction/correction pipeline, two additional scripts operate on the final output:
+After the seven-stage extraction/correction pipeline (Stages 0–7), composition operates on the final output:
 
-### Structure Composition (`compose_structure.py`)
+### Structure Composition (`stage_8_compose.py`)
 
-Reads the complete corrected corpus and determines the book's *true* structure — the natural divisions, teaching sequences, and chapter groupings that the editorial compilation obscured. Outputs `book_structure.json`.
+Reads the complete corrected corpus and determines the book’s *true* structure — the natural divisions, teaching sequences, and chapter groupings that the editorial compilation obscured. Outputs `book_structure.json`.
 
 ```bash
-cd scripts && python compose_structure.py --project kephalaia [--dry-run]
+cd scripts && python stage_8_compose.py --project kephalaia [--dry-run]
 ```
 
 ### Assembly
@@ -352,9 +352,9 @@ Most pipeline scripts have an `--assemble` flag that produces a single reading-o
 
 The problem is **too complex for a single pass** and the text is **too large for a single context window** at the granularity needed.
 
-- **Layer separation** (Phase 2) requires careful paragraph-level attention to vocabulary, syntax, and voice shifts. This needs the full paragraph in focus.
-- **Lacuna restoration** (Phase 3) requires the spiritual sense as an intermediate representation — you cannot reliably fill gaps in a text you haven't understood at the spiritual level.
-- **Corpus-scale review** (Phase 4) requires the *entire* text in context, but operates at finding-level rather than paragraph-level.
+- **Layer separation** (Stage 4) requires careful paragraph-level attention to vocabulary, syntax, and voice shifts. This needs the full paragraph in focus.
+- **Lacuna restoration** (Stage 5) requires the spiritual sense as an intermediate representation — you cannot reliably fill gaps in a text you haven’t understood at the spiritual level.
+- **Corpus-scale review** (Stage 6) requires the *entire* text in context, but operates at finding-level rather than paragraph-level.
 
 A single pass cannot simultaneously attend to paragraph-level extraction AND corpus-level consistency. The pipeline separates these concerns.
 
@@ -366,15 +366,15 @@ The original extraction pipeline (GPT-5.2 based, now `extract_core_gpt52.py`) us
 2. **Biased**: The lists reflected the curator's existing reading, not the text's own signals
 3. **Circular**: When the lists were derived from already-extracted data, they reinforced extraction errors
 
-The metadata stage (Phase 1.5) eliminates all three problems by having Claude read the *raw* text as a text-critical expert and derive the vocabulary, patterns, and templates directly from observation.
+The metadata stage (Stage 2) eliminates all three problems by having Claude read the *raw* text as a text-critical expert and derive the vocabulary, patterns, and templates directly from observation.
 
 ### Why Claude Opus 4.6?
 
-The original pipeline used GPT-5.2 for extraction (Phase 2). Analysis showed a **56.8% extraction rate with 16.3% loss** — GPT-5.2 over-stripped teaching content, especially cosmological narrative that it couldn't distinguish from editorial material. Claude's extended thinking, larger context window, and superior instruction-following produce significantly more accurate layer classification.
+The original pipeline used GPT-5.2 for extraction (Stage 4). Analysis showed a **56.8% extraction rate with 16.3% loss** — GPT-5.2 over-stripped teaching content, especially cosmological narrative that it couldn't distinguish from editorial material. Claude's extended thinking, larger context window, and superior instruction-following produce significantly more accurate layer classification.
 
-### Why is Phase 3 called "correspondential reading"?
+### Why does Stage 5 do both spiritual reading AND lacuna restoration?
 
-Historical accident. The script was originally conceived as a spiritual-sense translation (the "reading" part). The lacuna restoration was added later when we realized the spiritual reading provides the *exact* constraint needed to fill gaps: if you know what spiritual reality a position expresses, you can translate that back into the text's vocabulary to fill the lacuna. The primary value turned out to be the restoration, not the reading — but the name stuck.
+The script was originally conceived as a spiritual-sense translation (the "reading" part). The lacuna restoration was added later when we realized the spiritual reading provides the *exact* constraint needed to fill gaps: if you know what spiritual reality a position expresses, you can translate that back into the text's vocabulary to fill the lacuna. The primary value turned out to be the restoration, not the reading — hence the name `stage_5_restore.py`.
 
 ---
 
@@ -387,12 +387,12 @@ The pipeline is designed to process multiple books, each with its own configurat
 | `kephalaia` | Kephalaia of the Teacher (123 chapters) | Core extraction + restoration complete |
 | `shabuhragan` | Šābuhragān (11 sections) | Core extraction complete |
 
-Each project is configured in `scripts/projects/<name>/config.yaml` and has its own clean script in `scripts/projects/<name>/clean.py`.
+Each project is configured in `scripts/projects/<name>/config.yaml` and has its own clean script in `scripts/projects/<name>/stage_1_clean.py`.
 
 ```bash
 # Process a specific project
-python scripts/extract_core.py --project kephalaia
-python scripts/extract_core.py --project shabuhragan
+python scripts/stage_4_extract.py --project kephalaia
+python scripts/stage_4_extract.py --project shabuhragan
 ```
 
 ## Repository Structure
@@ -403,36 +403,36 @@ manichaean-analysis/
 │   └── copilot-instructions.md     # Editorial instructions
 ├── data/                            # Source PDFs + OCR JSON
 ├── output/
-│   ├── texts/                      # Phase 0: raw markdown
+│   ├── texts/                      # Stage 0: raw markdown
 │   └── projects/
 │       ├── kephalaia/
-│       │   ├── cleaned/chapters/   # Phase 1: cleaned JSONs
-│       │   ├── corpus_metadata.json # Phase 1.5: text-critical metadata
-│       │   ├── core/chapters/      # Phase 2: extracted core
-│       │   ├── correspondential/   # Phase 3: restored + spiritual reading
-│       │   ├── corpus_review.json  # Phase 4: review findings
-│       │   ├── corrected/chapters/ # Phase 5: corrected output
-│       │   └── analysis/           # Supplementary analysis
+│       │   ├── cleaned/chapters/   # Stage 1: cleaned JSONs
+│       │   ├── corpus_metadata.json # Stage 2: text-critical metadata
+│       │   ├── core/chapters/      # Stage 4: extracted core
+│       │   ├── restored/    # Stage 5: restored + spiritual reading
+│       │   ├── corpus_review.json  # Stage 6: review findings
+│       │   ├── corrected/chapters/ # Stage 7: corrected output
+│       │   └── analysis/           # Stage 3: text-critical analysis
 │       └── shabuhragan/
 │           └── ...
 ├── scripts/
-│   ├── process_ocr_json.py         # Phase 0: OCR → markdown
-│   ├── extract_metadata.py         # Phase 1.5: corpus metadata
-│   ├── extract_analysis.py          # Phase 1.7: text-critical analysis (no LLM)
-│   ├── extract_core.py              # Phase 2: core extraction (Claude)
-│   ├── extract_core_gpt52.py       # Phase 2: core extraction (GPT-5.2, legacy)
-│   ├── correspondential_reading.py # Phase 3: restoration + spiritual reading
-│   ├── analyze_corpus.py           # Phase 4: corpus-wide review
-│   ├── apply_review.py             # Phase 5: apply corrections
-│   ├── compose_structure.py        # Post: structural composition
+│   ├── stage_0_ingest.py           # Stage 0: OCR → markdown
+│   ├── stage_2_discover.py          # Stage 2: corpus metadata
+│   ├── stage_3_score.py             # Stage 3: text-critical analysis (no LLM)
+│   ├── stage_4_extract.py           # Stage 4: core extraction (Claude)
+│   ├── extract_core_gpt52.py       # (legacy GPT-5.2 extraction, unused)
+│   ├── stage_5_restore.py           # Stage 5: restoration + spiritual reading
+│   ├── stage_6_review.py            # Stage 6: corpus-wide review
+│   ├── stage_7_correct.py           # Stage 7: apply corrections
+│   ├── stage_8_compose.py           # Stage 8: structural composition
 │   ├── project_config.py           # Project configuration system
 │   ├── projects/
 │   │   ├── kephalaia/
 │   │   │   ├── config.yaml
-│   │   │   └── clean.py            # Phase 1: Kephalaia-specific cleaning
+│   │   │   └── stage_1_clean.py     # Stage 1: Kephalaia-specific cleaning
 │   │   └── shabuhragan/
 │   │       ├── config.yaml
-│   │       └── clean.py
+│   │       └── stage_1_clean.py
 │   └── tools/
 │       └── corpus_base.py          # Shared base class for corpus-level analysis
 ├── findings/                        # Correspondential findings (YAML)
@@ -453,12 +453,12 @@ conda activate manichaean
 
 Create `secrets/azure_openai.env`:
 ```env
-# Azure OpenAI (GPT-5.2, used in Phase 1 cleaning)
+# Azure OpenAI (GPT-5.2, used in Stage 1 cleaning)
 AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
 AZURE_OPENAI_API_KEY=your-key
 AZURE_OPENAI_DEPLOYMENT=gpt-52
 
-# Anthropic via Azure AI Foundry (Claude Opus 4.6, used in Phases 1.5–5)
+# Anthropic via Azure AI Foundry (Claude Opus 4.6, used in Stages 2–8)
 ANTHROPIC_ENDPOINT=https://your-foundry-endpoint
 ANTHROPIC_API_KEY=your-key
 ANTHROPIC_DEPLOYMENT=claude-opus-4-6
