@@ -85,8 +85,13 @@ what per-chapter processing could not:
    designation that the Manichaean editor replaced. Note: some \
    Manichaean names may genuinely translate older titles (e.g. \
    "Third Ambassador" may render a Persian mediating figure). \
-   Flag when the naming feels editorial, not when it could be \
-   translation.
+   It is unlikely that all these names are rewritten so we expect \
+   genuine substrate logic, however some names are clearly overlaid \
+   by later traditions and should be corrected to its most probable \
+   orignal substrate. Flag these and suggest the most probable name \
+   that was probably used in the original substrate base on your \
+   knowledge of these ancient cultures. Flag when the naming feels \
+   editorial, not when it could be translation.
 
 2. RESIDUAL EDITORIAL — Non-substrate material that was not caught \
    by the extraction stage. Bridge connectives ("And again he \

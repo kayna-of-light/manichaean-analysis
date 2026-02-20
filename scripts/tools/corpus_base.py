@@ -262,15 +262,171 @@ def stream_tool_call(
     corpus_text: str,
     max_tokens: int = 128_000,
     max_retries: int = 5,
+    tool_call_retries: int = 0,
     debug: bool = False,
 ) -> tuple[dict | None, str]:
     """Stream a single-turn tool call from Claude.
 
+    Uses adaptive thinking — ``tool_choice`` cannot be forced when
+    thinking is enabled, so the model must voluntarily call the
+    expected tool.  If it doesn't, the request is retried up to
+    *tool_call_retries* additional times before giving up.
+
+    Args:
+        tool_call_retries: How many extra attempts to make when the
+            model responds without calling the expected tool.  Each
+            retry is a fresh single-turn request.  Default 0 (no
+            retry — a single attempt).
+
     Returns:
         (tool_input, text_output)
-        tool_input is None if the model didn't call the expected tool.
+        tool_input is None if the model didn't call the expected tool
+        after all attempts.
     """
     messages = [{"role": "user", "content": corpus_text}]
+
+    # Outer loop: retry when the model doesn't call the tool
+    for tool_attempt in range(tool_call_retries + 1):
+        tool_input = None
+        text_output = ""
+
+        # Inner loop: retry on transient API errors
+        for attempt in range(1, max_retries + 1):
+            try:
+                thinking_chars = 0
+
+                with client.messages.stream(
+                    model=deployment,
+                    system=system_prompt,
+                    messages=messages,
+                    tools=tools,
+                    max_tokens=max_tokens,
+                    thinking={"type": "adaptive"},
+                ) as stream:
+                    for event in stream:
+                        etype = getattr(event, "type", "")
+
+                        if etype == "content_block_start":
+                            block = getattr(event, "content_block", None)
+                            if (
+                                block
+                                and getattr(block, "type", "") == "thinking"
+                                and debug
+                            ):
+                                print(
+                                    "\n  [thinking] ",
+                                    end="",
+                                    flush=True,
+                                )
+
+                        elif etype == "content_block_delta":
+                            delta = getattr(event, "delta", None)
+                            if delta:
+                                dtype = getattr(delta, "type", "")
+                                if dtype == "thinking_delta":
+                                    chunk = getattr(delta, "thinking", "")
+                                    thinking_chars += len(chunk)
+                                    if debug:
+                                        print(chunk, end="", flush=True)
+
+                        elif etype == "message_stop":
+                            if debug:
+                                print(flush=True)
+
+                    final_msg = stream.get_final_message()
+
+                if debug and thinking_chars:
+                    print(f" [{thinking_chars} chars]", flush=True)
+
+                # Extract tool call and text
+                text_parts: list[str] = []
+
+                for block in final_msg.content:
+                    btype = getattr(block, "type", "")
+                    if btype == "tool_use" and block.name == expected_tool_name:
+                        tool_input = block.input
+                    elif btype == "text":
+                        text_parts.append(block.text)
+
+                text_output = (
+                    " ".join(text_parts).strip() if text_parts else ""
+                )
+
+                break  # API call succeeded — exit inner retry loop
+
+            except Exception as e:
+                err_str = str(e)
+                if "rate" in err_str.lower() or "429" in err_str:
+                    wait = 60.0 * attempt
+                    print(f"  Rate limit, waiting {wait:.0f}s...")
+                    time.sleep(wait)
+                    continue
+                elif "overloaded" in err_str.lower() or "529" in err_str:
+                    wait = 30.0 * attempt
+                    print(f"  Overloaded, waiting {wait:.0f}s...")
+                    time.sleep(wait)
+                    continue
+                else:
+                    print(f"  Error attempt {attempt}: {e}")
+                    if debug:
+                        traceback.print_exc()
+                    if attempt < max_retries:
+                        time.sleep(attempt * 10)
+                        continue
+                    raise
+        else:
+            # Inner for-loop exhausted without break — all API retries
+            # consumed by transient errors.
+            raise RuntimeError(f"Failed after {max_retries} API attempts")
+
+        # Got an API response — did the model call the tool?
+        if tool_input is not None:
+            return tool_input, text_output
+
+        # No tool call.  Retry or give up.
+        if tool_attempt < tool_call_retries:
+            print(
+                f"  Model did not call {expected_tool_name}; "
+                f"retrying ({tool_attempt + 1}/{tool_call_retries})..."
+            )
+        else:
+            print(
+                f"  WARNING: Model did not call {expected_tool_name}."
+            )
+            if text_output:
+                print(f"  Text output: {text_output[:500]}")
+
+    return tool_input, text_output
+
+
+# ---------------------------------------------------------------------------
+# Multi-tool-call streaming
+# ---------------------------------------------------------------------------
+
+
+def stream_tool_calls(
+    client: AnthropicFoundry,
+    deployment: str,
+    *,
+    system_prompt: str,
+    tools: list[dict],
+    user_message: str,
+    max_tokens: int = 128_000,
+    max_retries: int = 5,
+    debug: bool = False,
+) -> tuple[list[tuple[str, dict]], str]:
+    """Stream a single-turn call that may produce multiple tool calls.
+
+    Uses adaptive thinking (``tool_choice`` cannot be forced).  The
+    model may call any number of the provided tools in a single
+    response, or none at all.
+
+    Returns:
+        (tool_calls, text_output)
+        tool_calls is a list of ``(tool_name, tool_input)`` tuples,
+        in the order the model produced them.  May be empty.
+    """
+    messages = [{"role": "user", "content": user_message}]
 
     for attempt in range(1, max_retries + 1):
         try:
@@ -317,29 +473,24 @@ def stream_tool_call(
                 final_msg = stream.get_final_message()
 
             if debug and thinking_chars:
-                print(f" [{thinking_chars} chars]", flush=True)
+                print(f"  [{thinking_chars:,} thinking chars]", flush=True)
 
-            # Extract tool call and text
-            tool_input = None
+            # Extract all tool calls and text
+            tool_calls: list[tuple[str, dict]] = []
             text_parts: list[str] = []
 
             for block in final_msg.content:
                 btype = getattr(block, "type", "")
-                if btype == "tool_use" and block.name == expected_tool_name:
-                    tool_input = block.input
+                if btype == "tool_use":
+                    tool_calls.append((block.name, block.input))
                 elif btype == "text":
                     text_parts.append(block.text)
 
-            text_output = " ".join(text_parts).strip() if text_parts else ""
+            text_output = (
+                " ".join(text_parts).strip() if text_parts else ""
+            )
 
-            if tool_input is None:
-                print(
-                    f"  WARNING: Model did not call {expected_tool_name}."
-                )
-                if text_output:
-                    print(f"  Text output: {text_output[:500]}")
-
-            return tool_input, text_output
+            return tool_calls, text_output
 
         except Exception as e:
             err_str = str(e)
@@ -362,7 +513,7 @@ def stream_tool_call(
                     continue
                 raise
 
-    raise RuntimeError(f"Failed after {max_retries} attempts")
+    raise RuntimeError(f"Failed after {max_retries} API attempts")
 
 
 # ---------------------------------------------------------------------------

@@ -2,14 +2,16 @@
 """
 Generate a structured book PDF of the Kephalaia of the Teacher.
 
-Uses the discovered structure from compose_structure.py to organize
-the teaching substrate (core text) and spiritual translations
-(correspondential readings) into a coherent book.
+Uses the discovered structure from stage_8_compose.py to organize
+the teaching substrate (core text) into a coherent book.
 
 The structure was discovered by Claude Opus 4.6 reading the entire
-corpus without access to manuscript chapter divisions — only sequential
-§-markers.  The resulting 12-part, ~30-chapter organization reflects
-the text's own internal logic.
+corpus as a continuous flow of §-numbered paragraphs — without
+access to manuscript chapter divisions.  Each structural chapter
+defines a §-range; only paragraphs within that range appear.
+
+All titles come from book_structure.json.  No manuscript titles
+are used.
 
 Dependencies: reportlab  (available in conda env 'manichaean')
 
@@ -19,6 +21,7 @@ Usage:
 
 import json
 import re
+import sys
 from pathlib import Path
 
 from reportlab.lib.pagesizes import A4
@@ -40,7 +43,7 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent  # scripts/tools/ → project root
 KEPH_DIR = PROJECT_ROOT / "output" / "projects" / "kephalaia"
 STRUCTURE_FILE = KEPH_DIR / "book_structure.json"
 CORE_DIR = KEPH_DIR / "core" / "chapters"
-CORR_DIR = KEPH_DIR / "correspondential" / "chapters"
+RESTORED_DIR = KEPH_DIR / "restored" / "chapters"
 OUTPUT = PROJECT_ROOT / "output" / "pdfs" / "Kephalaia_Book.pdf"
 
 PAGE_W, PAGE_H = A4
@@ -50,7 +53,6 @@ RULE_COLOR = "#CCCCCC"
 NOTE_COLOR = "#555555"
 MUTED = "#888888"
 DARK_MUTED = "#666666"
-SR_COLOR = "#333333"
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -69,13 +71,57 @@ def _clean_gap_markers(text: str) -> str:
     - [GAP-N: text]     → [text]
     - [GAP-N: REVIEW …] → [...]  (review flags become plain lacunae)
     """
-    # [GAP-N: REVIEW — ...] → [...]
     text = re.sub(r"\[GAP-\d+:\s*REVIEW\s*[—–-].*?\]", "[...]", text)
-    # [GAP-N: text] → [text]
     text = re.sub(r"\[GAP-\d+:\s*(.+?)\]", r"[\1]", text)
-    # [GAP-N] → [...]
     text = re.sub(r"\[GAP-\d+\]", "[...]", text)
     return text
+
+
+# ---------------------------------------------------------------------------
+# Global §-indexed paragraph store
+# ---------------------------------------------------------------------------
+
+
+def build_paragraph_lookup() -> dict[int, str]:
+    """Build a global mapping from sequential §N → paragraph text.
+
+    This reproduces exactly the same numbering that
+    format_corpus_interleaved() uses, so the §-ranges in
+    book_structure.json select the right paragraphs.
+    """
+    lookup: dict[int, str] = {}
+    seq = 0
+
+    core_files = sorted(CORE_DIR.glob("ch_*.json"))
+    for core_path in core_files:
+        with open(core_path, encoding="utf-8") as f:
+            core_data = json.load(f)
+
+        ch_num = core_data["chapter_number"]
+
+        # Build reconstruction map from restored layer
+        recon_map: dict[int, str] = {}
+        restored_path = RESTORED_DIR / f"ch_{ch_num:03d}.json"
+        if restored_path.exists():
+            with open(restored_path, encoding="utf-8") as f:
+                restored_data = json.load(f)
+            for rec in restored_data.get("reconstructions", []):
+                pnum = rec.get("paragraph")
+                rtext = rec.get("reconstructed_text", "")
+                if pnum is not None and rtext:
+                    recon_map[pnum] = rtext
+
+        for para in core_data.get("paragraphs", []):
+            raw_text = para.get("core_text", "")
+            if not raw_text:
+                continue
+            pnum = para["paragraph_number"]
+            # Prefer reconstructed (gap-filled) text
+            text = recon_map.get(pnum, raw_text)
+            seq += 1
+            lookup[seq] = text
+
+    return lookup
 
 
 def _style_lacunae(text: str) -> str:
@@ -97,23 +143,6 @@ def _style_lacunae(text: str) -> str:
     return re.sub(r"\[[^\]]*\]", _gray_bracket, text)
 
 
-def _render_sr_inline(text: str) -> str:
-    """Convert inline markdown + lacunae in spiritual-reading text to XML."""
-    text = _clean_gap_markers(text)
-    text = _xml_esc(text)
-    # Bold: **text**
-    text = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", text)
-    # Italic: *text*
-    text = re.sub(r"\*(.+?)\*", r"<i>\1</i>", text)
-    # Lacunae in gray
-    text = re.sub(
-        r"\[([^\]]*)\]",
-        lambda m: f'<font color="{LACUNA_GRAY}">[{m.group(1)}]</font>',
-        text,
-    )
-    return text
-
-
 def _clean_core_text(text: str) -> str:
     """Strip manuscript page markers and leading paragraph numbers."""
     # Remove ⟨p.N⟩ prefix (and whitespace/newline after)
@@ -123,6 +152,73 @@ def _clean_core_text(text: str) -> str:
     # Collapse multiple newlines to single space
     text = re.sub(r"\n+", " ", text)
     return text.strip()
+
+
+# --- Sentence starters: words that reliably signal a new sentence --------
+# Conservative list — only words that almost never appear mid-sentence
+# after a lowercase word without preceding punctuation.
+_SENTENCE_STARTERS = frozenset({
+    "The", "This", "That", "These", "Those",
+    "It", "He", "She", "They", "We", "I",
+    "And", "But", "For", "So", "Yet", "Or", "Nor",
+    "Now", "Then", "When", "If", "After", "Before",
+    "Again", "Also", "As", "Because", "Each", "Every",
+    "From", "How", "In", "Let", "No", "Not", "On",
+    "One", "Only", "Out", "Since", "Some", "Such",
+    "There", "Thus", "What", "Who", "Why", "While",
+})
+
+
+def _normalize_text(text: str) -> str:
+    """Apply safe micro-normalizations to a paragraph.
+
+    1. Capitalize the first alphabetic character.
+    2. Ensure the paragraph ends with terminal punctuation.
+    3. Insert a missing period before obvious sentence starters
+       (only when the preceding character is a lowercase letter,
+        so "the Light Mind" is never touched).
+
+    Bracket content ([GAP-N: ...] and [...]) is protected —
+    normalization skips everything inside square brackets.
+    """
+    if not text:
+        return text
+
+    # --- 1. Capitalize first letter ---
+    for i, ch in enumerate(text):
+        if ch.isalpha():
+            text = text[:i] + ch.upper() + text[i + 1:]
+            break
+
+    # --- 2. Terminal punctuation ---
+    stripped = text.rstrip()
+    if stripped and stripped[-1] not in '.!?;:)\'\"\u2019\u201d':
+        text = stripped + '.'
+
+    # --- 3. Missing period before sentence starters ---
+    # Strategy: split text into bracket-protected and free regions,
+    # only apply the regex to free regions.
+    parts = re.split(r'(\[[^\]]*\])', text)
+    result: list[str] = []
+    for j, part in enumerate(parts):
+        if part.startswith('['):
+            # Inside brackets — pass through unchanged
+            result.append(part)
+        else:
+            # Free text — insert period where needed
+            def _insert_period(m: re.Match) -> str:
+                before, space, word = m.group(1), m.group(2), m.group(3)
+                if word in _SENTENCE_STARTERS:
+                    return before + '.' + space + word
+                return m.group(0)
+
+            part = re.sub(
+                r'([a-z])(\s+)([A-Z][a-z]+\b)', _insert_period, part,
+            )
+            result.append(part)
+    text = ''.join(result)
+
+    return text
 
 
 # ---------------------------------------------------------------------------
@@ -206,13 +302,6 @@ def _styles() -> dict:
             textColor=HexColor(NOTE_COLOR),
         ),
 
-        # --- Manuscript-chapter sub-headings ---
-        ms_heading=ParagraphStyle(
-            "MSH", fontName="Times-Bold", fontSize=10.5,
-            alignment=TA_LEFT, leading=14,
-            spaceBefore=16, spaceAfter=8,
-        ),
-
         # --- Core (substrate) text ---
         body=ParagraphStyle(
             "B", fontName="Times-Roman", fontSize=10.5,
@@ -223,38 +312,6 @@ def _styles() -> dict:
             "B1", fontName="Times-Roman", fontSize=10.5,
             alignment=TA_JUSTIFY, leading=14.5,
             spaceAfter=6, firstLineIndent=0,
-        ),
-
-        # --- Spiritual reading ---
-        sr_heading=ParagraphStyle(
-            "SRH", fontName="Times-Italic", fontSize=11,
-            alignment=TA_CENTER, leading=15,
-            spaceBefore=12, spaceAfter=8,
-            textColor=HexColor(SR_COLOR),
-        ),
-        sr_subheading=ParagraphStyle(
-            "SRSH", fontName="Times-Italic", fontSize=10,
-            alignment=TA_CENTER, leading=14,
-            spaceBefore=8, spaceAfter=6,
-            textColor=HexColor(NOTE_COLOR),
-        ),
-        sr_body=ParagraphStyle(
-            "SRB", fontName="Times-Roman", fontSize=10,
-            alignment=TA_JUSTIFY, leading=14,
-            spaceAfter=6, leftIndent=6 * mm, rightIndent=6 * mm,
-            textColor=HexColor(SR_COLOR),
-        ),
-        sr_para_ref=ParagraphStyle(
-            "SRP", fontName="Times-Bold", fontSize=9,
-            alignment=TA_LEFT, leading=12,
-            spaceAfter=2, leftIndent=6 * mm,
-            textColor=HexColor(DARK_MUTED),
-        ),
-        sr_note=ParagraphStyle(
-            "SRN", fontName="Times-Italic", fontSize=9,
-            alignment=TA_JUSTIFY, leading=13,
-            spaceAfter=6, leftIndent=10 * mm, rightIndent=10 * mm,
-            textColor=HexColor("#777777"),
         ),
 
         # --- Observations ---
@@ -279,196 +336,6 @@ def _styles() -> dict:
 def load_structure() -> dict:
     with open(STRUCTURE_FILE, encoding="utf-8") as f:
         return json.load(f)
-
-
-def load_core_chapter(ms_ch: int) -> dict | None:
-    path = CORE_DIR / f"ch_{ms_ch:03d}.json"
-    if not path.exists():
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
-
-def load_corr_chapter(ms_ch: int) -> dict | None:
-    path = CORR_DIR / f"ch_{ms_ch:03d}.json"
-    if not path.exists():
-        return None
-    with open(path, encoding="utf-8") as f:
-        return json.load(f)
-
-
-# ---------------------------------------------------------------------------
-# Mapping: structural chapters ↔ manuscript chapters
-# ---------------------------------------------------------------------------
-
-
-def build_ms_chapter_assignment(structure: dict) -> dict[int, int]:
-    """Map each ms_chapter → structural-chapter index.
-
-    A ms_chapter is assigned to the structural chapter whose §-range
-    contains the ms_chapter's section_start.  Empty ms_chapters
-    (section_start > section_end) are silently skipped.
-    """
-    section_map = structure["_section_map"]
-    chapters = structure["chapters"]
-    assignment: dict[int, int] = {}
-
-    for ms_entry in section_map:
-        ms_ch = ms_entry["ms_chapter"]
-        s_start = ms_entry["section_start"]
-        s_end = ms_entry["section_end"]
-
-        # Skip empty / fragmentary chapters
-        if s_start > s_end:
-            continue
-
-        for ch_idx, ch in enumerate(chapters):
-            if ch["section_start"] <= s_start <= ch["section_end"]:
-                assignment[ms_ch] = ch_idx
-                break
-
-    return assignment
-
-
-def group_by_structural_chapter(
-    assignment: dict[int, int],
-) -> dict[int, list[int]]:
-    """For each structural-chapter index, list ms_chapters (sorted)."""
-    result: dict[int, list[int]] = {}
-    for ms_ch, ch_idx in sorted(assignment.items()):
-        result.setdefault(ch_idx, []).append(ms_ch)
-    return result
-
-
-# ---------------------------------------------------------------------------
-# Spiritual-reading parser
-# ---------------------------------------------------------------------------
-
-
-def parse_spiritual_reading(sr_text: str) -> list[dict]:
-    """Parse the spiritual_reading markdown into renderable blocks.
-
-    Handles three known formats:
-      1. **¶N:** text on same line           (ch_000-style)
-      2. ## ¶N  then text on following lines  (ch_001-style)
-      3. **¶N** alone, text on following lines (ch_005/$prose-style)
-
-    Returns list of dicts:
-        type: 'heading' | 'para_ref' | 'body' | 'note' | 'rule'
-        text: content
-    """
-    if not sr_text:
-        return []
-
-    blocks: list[dict] = []
-    lines = sr_text.split("\n")
-    i = 0
-
-    while i < len(lines):
-        line = lines[i]
-        stripped = line.strip()
-
-        if not stripped:
-            i += 1
-            continue
-
-        # --- Main heading: # Spiritual Translation[: Subtitle] ---
-        if stripped.startswith("# ") and not stripped.startswith("## "):
-            heading = stripped[2:].strip()
-            if ":" in heading:
-                subtitle = heading.split(":", 1)[1].strip()
-                if subtitle:
-                    blocks.append({"type": "heading", "text": subtitle})
-            i += 1
-            continue
-
-        # --- Sub-heading: ## ¶N  or  ## Title ---
-        if stripped.startswith("## "):
-            h = stripped[3:].strip()
-            if re.match(r"¶\d+", h):
-                blocks.append({"type": "para_ref", "text": h})
-            else:
-                blocks.append({"type": "heading", "text": h})
-            i += 1
-            continue
-
-        # --- Horizontal rule ---
-        if stripped == "---":
-            blocks.append({"type": "rule", "text": ""})
-            i += 1
-            continue
-
-        # --- Bold paragraph marker on its own line: **¶N** ---
-        m_solo = re.match(r"^\*\*¶(\d+)\*\*\s*$", stripped)
-        if m_solo:
-            blocks.append({"type": "para_ref", "text": f"¶{m_solo.group(1)}"})
-            i += 1
-            continue
-
-        # --- Bold paragraph marker with inline text: **¶N:** text ---
-        m_inline = re.match(r"^\*\*¶(\d+):\*\*\s*(.*)", stripped)
-        if m_inline:
-            para_num = m_inline.group(1)
-            rest = m_inline.group(2).strip()
-            blocks.append({"type": "para_ref", "text": f"¶{para_num}"})
-            # Collect body text (rest of this line + continuation lines)
-            body_parts = []
-            if rest:
-                body_parts.append(rest)
-            i += 1
-            while i < len(lines):
-                s = lines[i].strip()
-                if not s:
-                    break
-                if s.startswith("#") or s == "---":
-                    break
-                if re.match(r"^\*\*¶\d+", s):
-                    break
-                if s.startswith("*") and not s.startswith("**"):
-                    break
-                body_parts.append(s)
-                i += 1
-            if body_parts:
-                blocks.append({"type": "body", "text": " ".join(body_parts)})
-            continue
-
-        # --- Translator note: *text* ---
-        if stripped.startswith("*") and not stripped.startswith("**"):
-            note_lines = [stripped]
-            i += 1
-            while i < len(lines):
-                s = lines[i].strip()
-                if not s or s.startswith("#") or s == "---":
-                    break
-                if re.match(r"^\*\*¶\d+", s):
-                    break
-                note_lines.append(s)
-                i += 1
-            note_text = " ".join(note_lines)
-            # Strip enclosing *...*
-            note_text = re.sub(r"^\*+\s*", "", note_text)
-            note_text = re.sub(r"\s*\*+$", "", note_text)
-            blocks.append({"type": "note", "text": note_text})
-            continue
-
-        # --- Regular body paragraph ---
-        para_lines = [stripped]
-        i += 1
-        while i < len(lines):
-            s = lines[i].strip()
-            if not s:
-                break
-            if s.startswith("#") or s == "---":
-                break
-            if re.match(r"^\*\*¶\d+", s):
-                break
-            if s.startswith("*") and not s.startswith("**"):
-                break
-            para_lines.append(s)
-            i += 1
-        blocks.append({"type": "body", "text": " ".join(para_lines)})
-
-    return blocks
 
 
 # ---------------------------------------------------------------------------
@@ -506,7 +373,7 @@ def _title_page(st: dict) -> list:
         ),
         Spacer(1, 8 * mm),
         Paragraph(
-            "Core teaching substrate with correspondential translations.<br/>"
+            "Core teaching substrate organized by discovered structure.<br/>"
             "Structure discovered by Claude Opus 4.6 from the text alone,<br/>"
             "without access to manuscript chapter divisions.",
             st["credit"],
@@ -561,136 +428,19 @@ def _part_page(st: dict, part: dict) -> list:
     ]
 
 
-def _build_reconstruction_map(corr_data: dict | None) -> dict[int, str]:
-    """Build paragraph_number → reconstructed_text from correspondential data."""
-    if not corr_data:
-        return {}
-    recons = corr_data.get("reconstructions", [])
-    return {
-        r["paragraph"]: r["reconstructed_text"]
-        for r in recons
-        if r.get("reconstructed_text")
-    }
-
-
-def _render_core_paragraphs(
-    st: dict, core_data: dict, corr_data: dict | None,
-) -> list:
-    """Render text paragraphs from a manuscript chapter.
-
-    Uses reconstructed (gap-filled) text from the correspondential file
-    when available, falling back to raw core_text only for paragraphs
-    without a reconstruction or chapters without a correspondential file.
-    """
-    elements: list = []
-
-    if not core_data or "paragraphs" not in core_data:
-        return elements
-
-    core_paras = [
-        p for p in core_data["paragraphs"]
-        if p.get("classification") in ("core", "mixed")
-    ]
-
-    if not core_paras:
-        return elements
-
-    recon_map = _build_reconstruction_map(corr_data)
-
-    for idx, para in enumerate(core_paras):
-        pnum = para.get("paragraph_number")
-
-        # Prefer reconstructed text
-        text = recon_map.get(pnum, "")
-        if not text:
-            text = para.get("core_text", "")
-        if not text:
-            continue
-
-        text = _clean_core_text(text)
-        if not text:
-            continue
-
-        styled = _style_lacunae(text)
-        style = st["body_first"] if idx == 0 else st["body"]
-        try:
-            elements.append(Paragraph(styled, style))
-        except Exception as exc:
-            print(f"  WARNING: skipped paragraph ({exc})")
-
-    return elements
-
-
-def _render_spiritual_reading(st: dict, corr_data: dict) -> list:
-    """Render the spiritual translation for a manuscript chapter."""
-    elements: list = []
-
-    if not corr_data:
-        return elements
-
-    sr_text = corr_data.get("spiritual_reading", "")
-    if not sr_text:
-        return elements
-
-    # Separator + heading
-    elements.append(Spacer(1, 4 * mm))
-    elements.append(
-        HRFlowable(
-            width="30%", thickness=0.5,
-            color=HexColor(RULE_COLOR),
-            spaceAfter=4 * mm, spaceBefore=0,
-        )
-    )
-    elements.append(
-        Paragraph("Spiritual Translation", st["sr_heading"])
-    )
-
-    blocks = parse_spiritual_reading(sr_text)
-
-    for block in blocks:
-        btype = block["type"]
-        text = block["text"]
-
-        if btype == "heading":
-            elements.append(
-                Paragraph(_render_sr_inline(text), st["sr_subheading"])
-            )
-
-        elif btype == "para_ref":
-            elements.append(
-                Paragraph(_xml_esc(text), st["sr_para_ref"])
-            )
-
-        elif btype == "body":
-            styled = _render_sr_inline(text)
-            try:
-                elements.append(Paragraph(styled, st["sr_body"]))
-            except Exception as exc:
-                print(f"  WARNING: skipped SR paragraph ({exc})")
-
-        elif btype == "note":
-            elements.append(Spacer(1, 2 * mm))
-            styled = _render_sr_inline(text)
-            try:
-                elements.append(Paragraph(styled, st["sr_note"]))
-            except Exception as exc:
-                print(f"  WARNING: skipped SR note ({exc})")
-
-        elif btype == "rule":
-            pass  # Skip internal rules — they just separate paragraphs
-
-    return elements
-
-
 def _render_chapter(
     st: dict,
     ch: dict,
-    ms_chapters: list[int],
+    para_lookup: dict[int, str],
 ) -> list:
-    """Render a full structural chapter (heading + ms_chapters content)."""
+    """Render a structural chapter using §-range from book_structure.json.
+
+    All titles come from the structure.  Paragraph text is selected
+    by the §-range (section_start – section_end).
+    """
     elements: list = []
 
-    # --- Chapter heading ---
+    # --- Chapter heading (from structure only) ---
     elements.append(
         Paragraph(_xml_esc(ch["title"]), st["chapter_title"])
     )
@@ -713,36 +463,40 @@ def _render_chapter(
         )
     )
 
-    # --- Render each manuscript chapter ---
-    show_ms_heading = len(ms_chapters) > 1
+    # --- Select paragraphs by §-range ---
+    s_start = ch["section_start"]
+    s_end = ch["section_end"]
+    first = True
+    para_count = 0
 
-    for ms_ch in ms_chapters:
-        core_data = load_core_chapter(ms_ch)
-        corr_data = load_corr_chapter(ms_ch)
+    for seq_n in range(s_start, s_end + 1):
+        text = para_lookup.get(seq_n)
+        if not text:
+            continue
 
-        # Manuscript chapter sub-heading (only when multiple in one chapter)
-        if show_ms_heading and core_data:
-            title = core_data.get("chapter_title", "")
-            label = f"Chapter {ms_ch}"
-            if title and title.lower() not in ("", f"chapter {ms_ch}"):
-                label += f" \u2014 {title}"
-            elements.append(
-                Paragraph(_xml_esc(label), st["ms_heading"])
+        text = _clean_core_text(text)
+        if not text:
+            continue
+
+        text = _normalize_text(text)
+        text = _clean_gap_markers(text)
+        styled = _style_lacunae(text)
+        style = st["body_first"] if first else st["body"]
+        first = False
+        para_count += 1
+
+        try:
+            elements.append(Paragraph(styled, style))
+        except Exception as exc:
+            print(f"  WARNING: skipped §{seq_n} ({exc})")
+
+    if para_count == 0:
+        elements.append(
+            Paragraph(
+                f'<font color="{LACUNA_GRAY}">[No surviving text in this section]</font>',
+                st["body_first"],
             )
-
-        # Core text (using reconstructed/repaired text when available)
-        core_elems = _render_core_paragraphs(st, core_data, corr_data)
-        if core_elems:
-            elements.extend(core_elems)
-
-        # Spiritual reading
-        sr_elems = _render_spiritual_reading(st, corr_data)
-        if sr_elems:
-            elements.extend(sr_elems)
-
-        # Spacer between ms chapters within a structural chapter
-        if show_ms_heading:
-            elements.append(Spacer(1, 8 * mm))
+        )
 
     elements.append(PageBreak())
     return elements
@@ -795,12 +549,10 @@ def build_pdf():
         f"{len(observations)} observations"
     )
 
-    # Build the ms_chapter → structural-chapter mapping
-    assignment = build_ms_chapter_assignment(structure)
-    ch_to_ms = group_by_structural_chapter(assignment)
-
-    assigned_ms = sum(len(v) for v in ch_to_ms.values())
-    print(f"  {assigned_ms} manuscript chapters assigned")
+    # Build the global §N → paragraph text lookup
+    print("\nBuilding paragraph lookup ...")
+    para_lookup = build_paragraph_lookup()
+    print(f"  {len(para_lookup)} paragraphs indexed (§1–§{max(para_lookup)})")
 
     # PDF setup
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
@@ -836,14 +588,13 @@ def build_pdf():
             part = next(p for p in parts if p["part_number"] == pn)
             elements.extend(_part_page(st, part))
 
-        # Chapter content
-        ms_chs = ch_to_ms.get(ch_idx, [])
-        if not ms_chs:
-            print(f"  WARNING: structural chapter {ch_idx} has no ms chapters")
-
+        # Chapter content — selected by §-range
+        s_start = ch["section_start"]
+        s_end = ch["section_end"]
+        n_paras = sum(1 for n in range(s_start, s_end + 1) if n in para_lookup)
         readable = ch["title"][:60]
-        print(f"  Ch {ch_idx}: \"{readable}\" — {len(ms_chs)} ms ch(s)")
-        elements.extend(_render_chapter(st, ch, ms_chs))
+        print(f"  Ch {ch_idx}: §{s_start}–§{s_end} ({n_paras} ¶)  \"{readable}\"")
+        elements.extend(_render_chapter(st, ch, para_lookup))
 
     # ---- Observations ----
     elements.extend(_render_observations(st, observations))

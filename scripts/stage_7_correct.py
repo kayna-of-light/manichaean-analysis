@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Apply corpus review corrections to restored chapter files.
+"""Apply corpus review corrections to the interleaved text.
 
-Pipeline phase:  stage_6_review  →  stage_7_correct
+Pipeline phase:  stage_6_review  ->  stage_7_correct
 
-Reads findings from corpus_review.json, resolves §-references to
-manuscript chapters, then sends each affected chapter to Claude
-with its applicable corrections for direct text rewriting.
+Reads findings from corpus_review.json, loads the full interleaved
+corpus (same view that stage_6 reviewed), and iterates through each
+actionable finding.  For each finding:
 
-Corrections target THREE data layers (in priority order):
-  1. Reconstructions  – gap-filled core text (PRIMARY output)
-  2. Fills            – individual gap-fill decisions
-  3. Spiritual reading – correspondential translation (secondary)
+  1. A fresh single-turn request presents the CURRENT corpus text
+     plus the finding as an action to execute.
+  2. Claude responds with CRUD tool calls (replace, delete, insert,
+     or skip).
+  3. The tool calls are applied to the in-memory text immediately.
+  4. A markdown checkpoint is saved.
+  5. The loop advances to the next finding with the updated text.
 
-Corrected files are written to a separate corrected/chapters/ folder,
-leaving the restored phase output untouched.
+No chat history is kept -- every call is a fresh context with the
+latest text and the current finding.  This prevents token inflation
+and ensures the model always sees the most up-to-date corpus.
 
-No editorial notes, annotations, or bracketed explanations are added.
+The output is a MARKDOWN document of the fully corrected corpus text.
+No editorial notes or annotations are added.  The focus is always on
+restoring the most probable core substrate.
 
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 """
@@ -29,23 +35,16 @@ import argparse
 import json
 import re
 import sys
-import threading
 import time
-import traceback
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
-
-import httpx
-from anthropic import AnthropicFoundry
 
 sys.path.insert(0, str(Path(__file__).parent))
 import tools.corpus_base as corpus_base
 from tools.corpus_base import (
     configure_paths,
     create_claude_client,
-    stream_tool_call,
+    stream_tool_calls,
 )
-from project_config import load_project, list_projects, SECRETS_PATH
 
 # ---------------------------------------------------------------------------
 # Constants
@@ -64,565 +63,331 @@ ACTIONABLE_CATEGORIES = {
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You are a text corrector for a Manichaean manuscript reconstruction project.
+You are an expert in the doctrine of correspondences as written by \
+Emanuel Swedenborg, with deep specialization in ancient cosmological \
+vocabulary -- Zoroastrian, Manichaean, and Persian-Iranian traditions.
 
-You receive three data layers for a single chapter plus correction findings
-from a corpus-wide analytic review:
+You translate text from its natural sense into its spiritual sense. \
+Not annotation, not commentary -- translation. Every natural image is \
+replaced by the spiritual reality it expresses through correspondence. \
+Light = wisdom, darkness = falsity, fire = love (or self-love in \
+opposite sense), water = truth, garments = external truths, \
+trees = perceptions, fruits = works, animals = affections, \
+mountains = elevated states, seeds = interior truths, \
+vessels = containing forms.
 
-  1. RECONSTRUCTIONS — The gap-filled core text. This is the PRIMARY output.
-     Each entry is {paragraph, reconstructed_text}. The reconstructed_text
-     is the best scholarly reconstruction of what the manuscript originally
-     said, with lacunae filled.
+CONTEXT:
 
-  2. FILLS — Individual gap-fill decisions. Each entry is
-     {paragraph, gap_id, fill, explanation, ...}. The "fill" field is the
-     text that was placed into a lacuna.
+You are given the COMPLETE extracted teaching substrate of the \
+Coptic Kephalaia. This substrate is the oldest layer of the text -- \
+Persian correspondential teaching that predates Mani's editorial \
+compilation. It IS the Ancient Word in its Persian vessel.
 
-  3. SPIRITUAL READING — A correspondential translation that reads the
-     natural text through a symbolic lens. Uses **¶N:** paragraph markers
-     and [GAP-N] markers. This is a SECONDARY interpretive layer.
+The text is presented as a continuous flow of numbered paragraphs. \
+Each paragraph has a marker [SECTION-N]. Lines marked [SECTION-N]* are \
+correspondential readings -- translations from the natural into the \
+spiritual sense. These help you understand what the text is saying.
 
-You also receive:
-  - The original core text (pre-gap-fill) for reference
-  - A §-to-¶ mapping for resolving corpus-wide §-references
+TASK:
 
-Your task: Apply the corrections to ALL THREE layers.
+You receive one FINDING from a corpus-wide analytic review. The \
+finding identifies a specific extraction artifact in the text -- \
+a naming overlay, residual editorial material, over-stripped \
+content, misplaced material, or an inconsistent extraction.
 
-RULES — FOLLOW EXACTLY:
-• Apply every applicable correction across all layers where it is relevant.
-• The reconstructed text is the primary artifact — correct it FIRST.
-• If a fill introduced wrong terminology, correct the fill text too.
-• Then update the spiritual reading to be consistent.
-• Do NOT add editorial notes, footnotes, translator's notes, or bracketed
-  annotations of any kind (no "[Note: ...]", no "[Correction: ...]").
-• Do NOT add explanatory asides about why a change was made.
-• Do NOT change anything that is NOT addressed by a finding.
-• Preserve paragraph numbers in reconstructions.
-• Preserve **¶N:** paragraph structure in the spiritual reading.
-• Preserve ALL [GAP-N] markers in the spiritual reading exactly.
-• Maintain the same scholarly register and prose style as the original.
+Your job: execute the recommended correction using the tools \
+provided. Make targeted, surgical edits. Change ONLY what the \
+finding calls for.
 
-CORRECTION TYPES:
-• naming_overlay — A Manichaean editorial name is present in the core
-  text where the substrate likely used a functional description or an
-  older name. In the RECONSTRUCTION, correct only if the name was
-  introduced by a FILL (i.e. a lacuna was filled with a Manichaean
-  overlay term when something older fits better). If the name is in
-  the manuscript's actual wording (not a fill), leave the reconstruction
-  intact but update the SPIRITUAL READING to use the pre-Manichaean
-  identification. For example:
-    - "Third Ambassador" → the mediating divine principle
-    - "Jesus the Splendour" → the radiance of divine wisdom / xvarənah
+CORRECTION PRINCIPLES:
 
-• residual_editorial — Non-substrate material (bridge connectives,
-  institutional vocabulary, devotional exhortations) that slipped
-  through extraction into the core text. Remove or flag it in the
-  RECONSTRUCTION. Update the SR to exclude it.
+- naming_overlay -- A Manichaean or Christian editorial name was \
+  mapped onto a substrate entity. The finding's recommendation \
+  contains the proposed replacement name. Apply it. The replacement \
+  will be a plausible substrate-native name -- typically the entity \
+  title with a Christian prefix stripped (e.g. "Jesus the Splendour" \
+  -> "the Splendour"), or a Persian-tradition equivalent. \
+  DO NOT replace names with functional descriptions ("the illumined \
+  understanding," "the new regenerated faculty"). The core text is \
+  the NATURAL sense -- it must read as an authentic ancient teaching \
+  text with proper names, not as a correspondential translation. \
+  The [SECTION-N]* lines already provide the correspondential reading. \
+  ALSO update the correspondential reading ([SECTION-N]* line) only \
+  if the name change affects how the passage should be translated \
+  into the spiritual sense.
 
-• over_stripped — Genuine substrate content was removed during
-  extraction, leaving a gap or discontinuity. If the finding includes
-  enough context to reconstruct what was lost, restore it in the
-  RECONSTRUCTION. If not, add a lacuna marker where the gap is.
+- residual_editorial -- Non-substrate material (bridge connectives, \
+  institutional vocabulary, devotional exhortations) that slipped \
+  through extraction into the core text. Remove it. If removing \
+  material leaves an awkward seam, smooth the transition minimally. \
+  Update the correspondential reading to exclude the removed material.
 
-• misplaced_content — Text that belongs to a different teaching
-  sequence. Flag it in the reconstruction but do not move it — that
-  requires structural decisions beyond this correction stage.
+- over_stripped -- Genuine substrate content was removed during \
+  extraction, leaving a gap or discontinuity. If the finding and \
+  surrounding context provide enough information to reconstruct \
+  what was lost, restore it. Write in the register of the text \
+  itself -- impersonal, structural, expository. If the content \
+  cannot be reconstructed, note a lacuna marker. Update the \
+  correspondential reading accordingly.
 
-• inconsistent_extraction — The same type of content was treated
-  differently across chapters. Apply the correction that brings this
-  chapter into consistency with the corpus-wide extraction standard.
+- misplaced_content -- Text that belongs to a different teaching \
+  sequence. Do NOT move it (that requires structural decisions \
+  beyond this correction stage). Instead, skip this finding.
 
-OUTPUT:
-Use the commit_corrected_chapter tool to return:
-  - ALL reconstructions (full list, even unchanged paragraphs)
-  - Only MODIFIED fills (by gap_id, with new fill text and explanation)
-  - The COMPLETE spiritual reading text
-  - A change log describing what was corrected and in which layer\
+- inconsistent_extraction -- The same type of content was treated \
+  differently across chapters. Apply the correction that brings \
+  consistency with the corpus-wide extraction standard.
+
+RULES:
+- Do NOT add editorial notes, footnotes, brackets, or annotations \
+  of any kind. No "[Correction: ...]", no "[Note: ...]".
+- Do NOT explain your changes in the text itself.
+- Preserve [SECTION-N] and [SECTION-N]* markers exactly.
+- Maintain the same scholarly register and prose style.
+- If a finding is not actionable or would damage the text, use \
+  skip_finding.
+- Apply corrections to BOTH the core text ([SECTION-N] lines) AND the \
+  correspondential readings ([SECTION-N]* lines) when both are affected.
+- Make as many tool calls as needed in a single response.\
 """
 
+# Replace placeholder with actual section marker
+SYSTEM_PROMPT = SYSTEM_PROMPT.replace("SECTION-N", "\u00a7N")  # §N
+
 # ---------------------------------------------------------------------------
-# Tool definition
+# Tool definitions
 # ---------------------------------------------------------------------------
 
-CORRECT_CHAPTER_TOOL = {
-    "name": "commit_corrected_chapter",
-    "description": (
-        "Submit corrected reconstructions, fills, and spiritual reading "
-        "for this chapter."
-    ),
-    "input_schema": {
-        "type": "object",
-        "properties": {
-            "corrected_reconstructions": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "paragraph": {
-                            "type": "integer",
-                            "description": "Paragraph number.",
-                        },
-                        "reconstructed_text": {
-                            "type": "string",
-                            "description": "Full reconstructed text.",
-                        },
-                    },
-                    "required": ["paragraph", "reconstructed_text"],
+TOOLS = [
+    {
+        "name": "replace_text",
+        "description": (
+            "Replace specific text in the corpus. Include enough context "
+            "in old_text to uniquely identify the target passage. Use the "
+            "section marker as a context anchor for disambiguation."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "old_text": {
+                    "type": "string",
+                    "description": (
+                        "The exact text to find and replace. Must match "
+                        "the corpus text verbatim, including whitespace. "
+                        "Include the section marker or nearby context to "
+                        "ensure uniqueness."
+                    ),
                 },
-                "description": (
-                    "The COMPLETE list of reconstructed paragraphs with "
-                    "corrections applied. Include ALL paragraphs, even "
-                    "unchanged ones."
-                ),
-            },
-            "corrected_fills": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "gap_id": {
-                            "type": "string",
-                            "description": "The GAP-N identifier.",
-                        },
-                        "fill": {
-                            "type": "string",
-                            "description": "The corrected fill text.",
-                        },
-                        "explanation": {
-                            "type": "string",
-                            "description": (
-                                "Updated explanation for the fill. "
-                                "Omit if explanation doesn't change."
-                            ),
-                        },
-                    },
-                    "required": ["gap_id", "fill"],
+                "new_text": {
+                    "type": "string",
+                    "description": (
+                        "The replacement text. Must maintain the same "
+                        "register and style as the surrounding text."
+                    ),
                 },
-                "description": (
-                    "Only the MODIFIED fill entries. Omit fills that "
-                    "did not change. Empty array if no fills changed."
-                ),
             },
-            "corrected_spiritual_reading": {
-                "type": "string",
-                "description": (
-                    "The COMPLETE corrected spiritual reading for this "
-                    "chapter, with all findings applied. Must use the same "
-                    "**¶N:** paragraph markers as the original. Include "
-                    "ALL paragraphs, even unchanged ones."
-                ),
-            },
-            "changes_made": {
-                "type": "array",
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "finding_id": {
-                            "type": "integer",
-                            "description": "ID of the finding applied.",
-                        },
-                        "paragraphs_affected": {
-                            "type": "array",
-                            "items": {"type": "integer"},
-                            "description": (
-                                "Paragraph numbers changed."
-                            ),
-                        },
-                        "description": {
-                            "type": "string",
-                            "description": (
-                                "Brief description of what was changed."
-                            ),
-                        },
-                        "targets": {
-                            "type": "array",
-                            "items": {
-                                "type": "string",
-                                "enum": [
-                                    "reconstruction",
-                                    "fill",
-                                    "spiritual_reading",
-                                ],
-                            },
-                            "description": (
-                                "Which data layers were modified."
-                            ),
-                        },
-                    },
-                    "required": [
-                        "finding_id",
-                        "paragraphs_affected",
-                        "description",
-                        "targets",
-                    ],
-                },
-                "description": (
-                    "List of changes made, one entry per finding applied."
-                ),
-            },
+            "required": ["old_text", "new_text"],
         },
-        "required": [
-            "corrected_reconstructions",
-            "corrected_fills",
-            "corrected_spiritual_reading",
-            "changes_made",
-        ],
     },
-}
+    {
+        "name": "delete_text",
+        "description": (
+            "Delete specific text from the corpus. Include enough context "
+            "to uniquely identify the target passage."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "text_to_delete": {
+                    "type": "string",
+                    "description": (
+                        "The exact text to remove. Must match verbatim."
+                    ),
+                },
+            },
+            "required": ["text_to_delete"],
+        },
+    },
+    {
+        "name": "insert_after",
+        "description": (
+            "Insert new text immediately after an anchor passage. Use "
+            "this to restore over-stripped content."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "anchor_text": {
+                    "type": "string",
+                    "description": (
+                        "Existing text after which to insert. Must match "
+                        "verbatim. Include section marker for disambiguation."
+                    ),
+                },
+                "new_text": {
+                    "type": "string",
+                    "description": (
+                        "The text to insert after the anchor."
+                    ),
+                },
+            },
+            "required": ["anchor_text", "new_text"],
+        },
+    },
+    {
+        "name": "skip_finding",
+        "description": (
+            "Explicitly skip this finding -- no textual change needed."
+        ),
+        "input_schema": {
+            "type": "object",
+            "properties": {
+                "reason": {
+                    "type": "string",
+                    "description": (
+                        "Why this finding is being skipped."
+                    ),
+                },
+            },
+            "required": ["reason"],
+        },
+    },
+]
 
 # ---------------------------------------------------------------------------
-# Review loading and resolution
+# Review loading
 # ---------------------------------------------------------------------------
 
 
-def load_review(review_path: Path) -> tuple[dict, dict[int, tuple[int, int]]]:
-    """Load corpus review and build chapter→section-range map.
-
-    Returns (review_dict, ch_map) where ch_map maps
-    ms_chapter → (section_start, section_end).
-    """
+def load_review(review_path: Path) -> dict:
+    """Load corpus review JSON."""
     with open(review_path, encoding="utf-8") as f:
-        review = json.load(f)
-
-    ch_map: dict[int, tuple[int, int]] = {}
-    for entry in review["_section_map"]:
-        ch_map[entry["ms_chapter"]] = (
-            entry["section_start"],
-            entry["section_end"],
-        )
-    return review, ch_map
+        return json.load(f)
 
 
-def resolve_section_ref(ref: str) -> int | None:
-    """Parse '§240' → 240."""
-    m = re.search(r"\d+", str(ref))
-    return int(m.group()) if m else None
+# ---------------------------------------------------------------------------
+# Tool-call application
+# ---------------------------------------------------------------------------
 
 
-def resolve_to_chapter(
-    sec_num: int, ch_map: dict[int, tuple[int, int]]
-) -> int | None:
-    """Find which ms_chapter contains §sec_num."""
-    for ch_num, (start, end) in ch_map.items():
-        if start <= sec_num <= end:
-            return ch_num
-    return None
+def apply_tool_call(
+    name: str,
+    args: dict,
+    corpus_text: str,
+) -> tuple:
+    """Apply a single tool call to the corpus text.
 
-
-def group_findings_by_chapter(
-    review: dict, ch_map: dict[int, tuple[int, int]]
-) -> dict[int, list[dict]]:
-    """Group actionable findings by affected chapter number.
-
-    Returns dict of ms_chapter → list of findings (de-duplicated).
+    Returns:
+        (updated_text, description)
     """
-    chapter_findings: dict[int, list[dict]] = {}
-    for f in review["findings"]:
-        if f["category"] not in ACTIONABLE_CATEGORIES:
-            continue
-        chapters_seen: set[int] = set()
-        for ref in f.get("section_refs", []):
-            sec_num = resolve_section_ref(ref)
-            if sec_num is None:
-                continue
-            ch = resolve_to_chapter(sec_num, ch_map)
-            if ch is not None and ch not in chapters_seen:
-                chapters_seen.add(ch)
-                chapter_findings.setdefault(ch, []).append(f)
-
-    return chapter_findings
-
-
-# ---------------------------------------------------------------------------
-# §-to-¶ mapping builder
-# ---------------------------------------------------------------------------
-
-
-def build_section_para_map(
-    core_data: dict,
-    section_start: int,
-) -> dict[int, int]:
-    """Build mapping from § number to ¶ number for a chapter.
-
-    Returns dict of §N → ¶M based on paragraph ordering in core_data.
-    """
-    mapping: dict[int, int] = {}
-    seq = section_start
-    for p in core_data.get("paragraphs", []):
-        if p.get("core_text"):
-            mapping[seq] = p["paragraph_number"]
-            seq += 1
-    return mapping
-
-
-# ---------------------------------------------------------------------------
-# Prompt construction
-# ---------------------------------------------------------------------------
-
-
-def build_correction_prompt(
-    ch_num: int,
-    corr_data: dict,
-    core_data: dict,
-    findings: list[dict],
-    sec_para_map: dict[int, int],
-) -> str:
-    """Build the user message for correcting one chapter.
-
-    Includes all three data layers: reconstructions, fills, and SR.
-    """
-    title = corr_data.get("chapter_title", "")
-
-    # --- 1. Reconstructions (PRIMARY) ---
-    recs = corr_data.get("reconstructions", [])
-    rec_lines = []
-    for r in recs:
-        rec_lines.append(
-            f"¶{r['paragraph']}: {r['reconstructed_text']}"
+    if name == "replace_text":
+        old = args["old_text"]
+        new = args["new_text"]
+        count = corpus_text.count(old)
+        if count == 0:
+            return corpus_text, "WARN: old_text not found ({})".format(old[:60])
+        if count > 1:
+            # Replace only the first occurrence
+            idx = corpus_text.index(old)
+            corpus_text = (
+                corpus_text[:idx] + new + corpus_text[idx + len(old):]
+            )
+            return corpus_text, (
+                "replace (1/{} occurrences): {}... -> {}...".format(
+                    count, old[:50], new[:50]
+                )
+            )
+        return corpus_text.replace(old, new), (
+            "replace: {}... -> {}...".format(old[:50], new[:50])
         )
-    rec_text = "\n\n".join(rec_lines) if rec_lines else "(no reconstructions)"
 
-    # --- 2. Fills ---
-    fills = corr_data.get("fills", [])
-    fill_lines = []
-    for fl in fills:
-        expl = fl.get("explanation", "")[:120]
-        fill_lines.append(
-            f"- {fl['gap_id']} (¶{fl['paragraph']}): "
-            f"fill={fl['fill']!r}  |  explanation: {expl}"
+    elif name == "delete_text":
+        target = args["text_to_delete"]
+        count = corpus_text.count(target)
+        if count == 0:
+            return corpus_text, "WARN: text not found ({})".format(target[:60])
+        # Delete first occurrence, clean up triple-newlines
+        idx = corpus_text.index(target)
+        corpus_text = (
+            corpus_text[:idx] + corpus_text[idx + len(target):]
         )
-    fills_text = "\n".join(fill_lines) if fill_lines else "(no fills)"
+        corpus_text = re.sub(r"\n{3,}", "\n\n", corpus_text)
+        return corpus_text, "delete: {}...".format(target[:60])
 
-    # --- 3. Spiritual Reading (secondary) ---
-    sr_text = corr_data.get("spiritual_reading", "")
+    elif name == "insert_after":
+        anchor = args["anchor_text"]
+        new = args["new_text"]
+        if anchor not in corpus_text:
+            return corpus_text, (
+                "WARN: anchor not found ({})".format(anchor[:60])
+            )
+        idx = corpus_text.index(anchor) + len(anchor)
+        corpus_text = (
+            corpus_text[:idx] + "\n\n" + new + corpus_text[idx:]
+        )
+        return corpus_text, "insert after: {}... (+{} chars)".format(
+            anchor[:40], len(new)
+        )
 
-    # --- 4. Original core text (pre-gap-fill, for reference) ---
-    core_lines = []
-    for p in core_data.get("paragraphs", []):
-        if p.get("core_text"):
-            core_lines.append(f"¶{p['paragraph_number']}: {p['core_text']}")
-    core_text = "\n\n".join(core_lines)
+    elif name == "skip_finding":
+        reason = args.get("reason", "no reason given")
+        return corpus_text, "skip: {}".format(reason)
 
-    # §-to-¶ mapping display
-    if sec_para_map:
-        map_items = [f"§{s}=¶{p}" for s, p in sorted(sec_para_map.items())]
-        map_display = ", ".join(map_items)
     else:
-        map_display = "(no mapping available)"
+        return corpus_text, "WARN: unknown tool '{}'".format(name)
 
-    # Format findings
-    findings_parts = []
-    for f in findings:
-        refs = ", ".join(f.get("section_refs", []))
-        findings_parts.append(
-            f"### Finding #{f['id']} — {f['category']} ({f['severity']})\n"
-            f"**Title:** {f['title']}\n"
-            f"**Section refs:** {refs}\n"
-            f"**Current state:** {f.get('current_state', f.get('current_reading', ''))}\n"
-            f"**Recommendation:** {f.get('recommendation', f.get('proposed_reading', ''))}\n"
-            f"**Explanation:** {f['explanation']}"
-        )
-    findings_block = "\n\n---\n\n".join(findings_parts)
 
+# ---------------------------------------------------------------------------
+# Finding formatter
+# ---------------------------------------------------------------------------
+
+
+def format_finding(finding: dict) -> str:
+    """Format a single finding as the action block for the user message."""
+    refs = ", ".join(finding.get("section_refs", []))
     return (
-        f"## Manuscript Chapter {ch_num}: {title}\n\n"
-        f"### §-to-¶ Mapping\n"
-        f"{map_display}\n\n"
-        f"### Current Reconstructions (PRIMARY — gap-filled text)\n\n"
-        f"{rec_text}\n\n"
-        f"### Current Fills (gap-fill decisions)\n\n"
-        f"{fills_text}\n\n"
-        f"### Current Spiritual Reading (secondary)\n\n"
-        f"{sr_text}\n\n"
-        f"### Original Core Text (pre-gap-fill, for reference)\n\n"
-        f"{core_text}\n\n"
-        f"### Correction Findings\n\n"
-        f"{findings_block}\n\n"
-        f"Apply all applicable corrections across ALL layers. "
-        f"Correct the reconstructed text first, then fills if affected, "
-        f"then the spiritual reading. Return via commit_corrected_chapter."
+        "## Action: Finding #{} -- {} ({})\n\n"
+        "**Title:** {}\n\n"
+        "**Section refs:** {}\n\n"
+        "**Current state:** {}\n\n"
+        "**Recommendation:** {}\n\n"
+        "**Explanation:** {}\n\n"
+        "Execute this correction using the tools provided. Apply "
+        "the recommended change to every occurrence listed in the "
+        "section refs. If the finding is not actionable, call "
+        "skip_finding."
+    ).format(
+        finding["id"],
+        finding["category"],
+        finding["severity"],
+        finding["title"],
+        refs,
+        finding.get("current_state", ""),
+        finding.get("recommendation", ""),
+        finding.get("explanation", ""),
     )
 
 
 # ---------------------------------------------------------------------------
-# Per-chapter processing
+# Markdown output
 # ---------------------------------------------------------------------------
 
 
-def process_chapter(
-    client: AnthropicFoundry,
-    deployment: str,
-    ch_num: int,
-    findings: list[dict],
-    ch_map: dict[int, tuple[int, int]],
-    output_dir: Path,
-    *,
-    debug: bool = False,
-) -> dict | None:
-    """Process a single chapter: load, correct all layers, save.
-
-    Reads from restored/chapters (input), writes to
-    output_dir (corrected/chapters). Never overwrites input files.
-    Returns a summary dict on success, None on failure.
-    """
-    corr_path = corpus_base.RESTORED_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
-    core_path = corpus_base.CORE_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
-
-    if not corr_path.exists():
-        return {"ch": ch_num, "status": "skip", "reason": "no corr file"}
-    if not core_path.exists():
-        return {"ch": ch_num, "status": "skip", "reason": "no core file"}
-
-    # Load data
-    with open(corr_path, encoding="utf-8") as f:
-        corr_data = json.load(f)
-    with open(core_path, encoding="utf-8") as f:
-        core_data = json.load(f)
-
-    # Build §→¶ map
-    section_start = ch_map.get(ch_num, (0, 0))[0]
-    sec_para_map = build_section_para_map(core_data, section_start)
-
-    # Build prompt
-    prompt = build_correction_prompt(
-        ch_num, corr_data, core_data, findings, sec_para_map
-    )
-
-    if debug:
-        print(f"\n--- Prompt for ch_{ch_num:03d} ({len(prompt)} chars) ---")
-
-    # Call Claude
-    tool_input, text_output = stream_tool_call(
-        client,
-        deployment,
-        system_prompt=SYSTEM_PROMPT,
-        tools=[CORRECT_CHAPTER_TOOL],
-        expected_tool_name="commit_corrected_chapter",
-        corpus_text=prompt,
-        max_tokens=32_000,
-        debug=debug,
-    )
-
-    if tool_input is None:
-        return {
-            "ch": ch_num,
-            "status": "error",
-            "reason": "no tool call returned",
-            "text_output": text_output[:500] if text_output else "",
-        }
-
-    # --- Extract results ---
-    corrected_recs = tool_input.get("corrected_reconstructions", [])
-    corrected_fills = tool_input.get("corrected_fills", [])
-    corrected_sr = tool_input.get("corrected_spiritual_reading", "")
-    changes_made = tool_input.get("changes_made", [])
-
-    # --- Validate reconstructions ---
-    original_rec_paras = {
-        r["paragraph"] for r in corr_data.get("reconstructions", [])
-    }
-    corrected_rec_paras = {r["paragraph"] for r in corrected_recs}
-    missing_rec_paras = original_rec_paras - corrected_rec_paras
-    if missing_rec_paras:
-        return {
-            "ch": ch_num,
-            "status": "error",
-            "reason": (
-                f"missing paragraphs in corrected reconstructions: "
-                f"{sorted(missing_rec_paras)}"
-            ),
-        }
-
-    # --- Validate SR paragraph markers ---
-    if not corrected_sr.strip():
-        return {
-            "ch": ch_num,
-            "status": "error",
-            "reason": "empty corrected SR returned",
-        }
-
-    original_sr_paras = set(
-        int(m)
-        for m in re.findall(
-            r"\*\*¶(\d+):\*\*", corr_data.get("spiritual_reading", "")
-        )
-    )
-    corrected_sr_paras = set(
-        int(m) for m in re.findall(r"\*\*¶(\d+):\*\*", corrected_sr)
-    )
-    missing_sr_paras = original_sr_paras - corrected_sr_paras
-    if missing_sr_paras:
-        return {
-            "ch": ch_num,
-            "status": "error",
-            "reason": (
-                f"missing paragraphs in corrected SR: "
-                f"{sorted(missing_sr_paras)}"
-            ),
-        }
-
-    # --- Validate fill gap_ids ---
-    existing_fill_ids = {
-        fl["gap_id"] for fl in corr_data.get("fills", [])
-    }
-    for cf in corrected_fills:
-        if cf["gap_id"] not in existing_fill_ids:
-            return {
-                "ch": ch_num,
-                "status": "error",
-                "reason": (
-                    f"corrected fill references unknown gap_id: "
-                    f"{cf['gap_id']}"
-                ),
-            }
-
-    # --- Apply reconstructions ---
-    corr_data["reconstructions"] = [
-        {"paragraph": r["paragraph"], "reconstructed_text": r["reconstructed_text"]}
-        for r in corrected_recs
-    ]
-
-    # --- Apply fills (merge by gap_id) ---
-    if corrected_fills:
-        fill_updates = {cf["gap_id"]: cf for cf in corrected_fills}
-        for fl in corr_data.get("fills", []):
-            if fl["gap_id"] in fill_updates:
-                update = fill_updates[fl["gap_id"]]
-                fl["fill"] = update["fill"]
-                if "explanation" in update and update["explanation"]:
-                    fl["explanation"] = update["explanation"]
-
-    # --- Apply spiritual reading ---
-    corr_data["spiritual_reading"] = corrected_sr
-
-    # --- Save to corrected/ folder ---
-    out_path = output_dir / f"ch_{ch_num:03d}.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(corr_data, f, indent=2, ensure_ascii=False)
-
-    # Summarise which layers were touched
-    layers_touched = set()
-    for c in changes_made:
-        for t in c.get("targets", []):
-            layers_touched.add(t)
-
-    return {
-        "ch": ch_num,
-        "status": "ok",
-        "changes": changes_made,
-        "findings_applied": [f["id"] for f in findings],
-        "layers": sorted(layers_touched),
-    }
+def save_markdown(corpus_text: str, output_path: Path) -> None:
+    """Save the current corpus text as a markdown file."""
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(corpus_text)
 
 
 # ---------------------------------------------------------------------------
-# CLI & main
+# CLI
 # ---------------------------------------------------------------------------
 
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(
-        description="Apply corpus review corrections to chapter files.",
+        description="Apply corpus review corrections to the interleaved text.",
     )
     p.add_argument(
         "--project",
@@ -630,16 +395,16 @@ def parse_args() -> argparse.Namespace:
         help="Project name (default: kephalaia)",
     )
     p.add_argument(
-        "--chapter",
+        "--finding",
         type=int,
         default=None,
-        help="Process only this chapter number",
+        help="Process only this finding number",
     )
     p.add_argument(
         "--range",
         type=str,
         default=None,
-        help="Process chapter range, e.g. '4-11'",
+        help="Process finding range, e.g. '1-5'",
     )
     p.add_argument(
         "--dry-run",
@@ -652,24 +417,31 @@ def parse_args() -> argparse.Namespace:
         help="Show thinking output and verbose logging",
     )
     p.add_argument(
-        "--overwrite",
-        action="store_true",
-        help="Re-process chapters even if already corrected",
-    )
-    p.add_argument(
-        "-j",
-        "--concurrency",
-        type=int,
-        default=1,
-        help="Concurrent API calls (default: 1)",
-    )
-    p.add_argument(
         "--review-file",
         type=str,
         default=None,
         help="Path to corpus_review.json (default: auto-detect)",
     )
+    p.add_argument(
+        "--output",
+        type=str,
+        default=None,
+        help="Output markdown path (default: <project>/corrected_corpus.md)",
+    )
+    p.add_argument(
+        "--resume",
+        action="store_true",
+        help=(
+            "Resume from a previous run by loading the latest "
+            "checkpoint as the starting corpus text"
+        ),
+    )
     return p.parse_args()
+
+
+# ---------------------------------------------------------------------------
+# Main
+# ---------------------------------------------------------------------------
 
 
 def main() -> None:
@@ -682,230 +454,256 @@ def main() -> None:
     else:
         review_path = corpus_base.OUTPUT_DIR / "corpus_review.json"
     if not review_path.exists():
-        print(f"ERROR: Review file not found: {review_path}")
+        print("ERROR: Review file not found: {}".format(review_path))
         print("  Run stage_6_review.py first.")
         sys.exit(1)
 
-    print(f"=== Apply Corpus Review: {args.project} ===\n")
-    print(f"Review file: {review_path}")
+    print("=== Apply Corpus Review: {} ===\n".format(args.project))
+    print("Review file: {}".format(review_path))
 
-    # Load review and build maps
-    review, ch_map = load_review(review_path)
+    # Load review
+    review = load_review(review_path)
     total_findings = len(review["findings"])
     actionable = [
         f for f in review["findings"]
         if f["category"] in ACTIONABLE_CATEGORIES
     ]
-    print(f"Total findings: {total_findings}")
-    print(f"Actionable findings: {len(actionable)}")
-
-    # Warn about non-actionable findings (can't be fixed by text rewrite)
-    skipped = [
+    non_actionable = [
         f for f in review["findings"]
         if f["category"] not in ACTIONABLE_CATEGORIES
     ]
-    if skipped:
-        print(f"\n  Skipping {len(skipped)} non-actionable findings:")
-        for f in skipped:
+    print("Total findings: {}".format(total_findings))
+    print("Actionable: {}".format(len(actionable)))
+    print("Non-actionable (skipped): {}".format(len(non_actionable)))
+
+    if non_actionable:
+        for f in non_actionable:
             title = f["title"][:70].encode("ascii", "replace").decode()
-            print(
-                f"    WARNING: #{f['id']} [{f['category']}] "
-                f"{title}"
-            )
-        print()
+            print("    skip #{} [{}] {}".format(f["id"], f["category"], title))
 
-    # Group by chapter
-    chapter_findings = group_findings_by_chapter(review, ch_map)
-    print(f"Chapters affected: {len(chapter_findings)}")
-
-    # Determine scope
-    if args.chapter is not None:
-        if args.chapter not in chapter_findings:
-            print(f"\nChapter {args.chapter} has no applicable findings.")
+    # Determine which findings to process
+    if args.finding is not None:
+        findings_to_process = [
+            f for f in actionable if f["id"] == args.finding
+        ]
+        if not findings_to_process:
+            print("\nFinding #{} not found or not actionable.".format(
+                args.finding
+            ))
             return
-        chapters_to_process = {args.chapter: chapter_findings[args.chapter]}
     elif args.range:
         m = re.match(r"(\d+)-(\d+)", args.range)
         if not m:
-            print("ERROR: Invalid range. Use '4-11'")
+            print("ERROR: Invalid range. Use '1-5'")
             sys.exit(1)
         rstart, rend = int(m.group(1)), int(m.group(2))
-        chapters_to_process = {
-            ch: findings
-            for ch, findings in chapter_findings.items()
-            if rstart <= ch <= rend
-        }
+        findings_to_process = [
+            f for f in actionable if rstart <= f["id"] <= rend
+        ]
     else:
-        chapters_to_process = chapter_findings
+        findings_to_process = actionable
 
-    if not chapters_to_process:
-        print("No chapters to process.")
+    if not findings_to_process:
+        print("No findings to process.")
         return
 
-    # Output directory: corrected/chapters/ under project dir
-    corrected_dir = corpus_base.OUTPUT_DIR / "corrected" / "chapters"
+    # Output paths
+    corrected_dir = corpus_base.OUTPUT_DIR / "corrected"
     corrected_dir.mkdir(parents=True, exist_ok=True)
-    print(f"Output dir: {corrected_dir}")
+    output_path = (
+        Path(args.output) if args.output
+        else corrected_dir / "corrected_corpus.md"
+    )
+    checkpoint_dir = corrected_dir / "checkpoints"
+    checkpoint_dir.mkdir(parents=True, exist_ok=True)
+    log_path = corrected_dir / "correction_log.json"
 
-    # Skip already-corrected (check for output file existence)
-    if not args.overwrite:
-        to_skip = []
-        for ch_num in chapters_to_process:
-            out = corrected_dir / f"ch_{ch_num:03d}.json"
-            if out.exists():
-                to_skip.append(ch_num)
-        if to_skip:
-            print(f"\n  Skipping {len(to_skip)} already-corrected "
-                  f"(use --overwrite): {sorted(to_skip)}")
-            for ch in to_skip:
-                del chapters_to_process[ch]
+    # Load corpus text
+    if args.resume and output_path.exists():
+        print("\nResuming from: {}".format(output_path))
+        with open(output_path, encoding="utf-8") as f:
+            corpus_text = f.read()
+        print("  Loaded {:,} chars".format(len(corpus_text)))
+    else:
+        print("\nLoading corpus...")
+        chapters = corpus_base.load_all_chapters()
+        print("  Loaded {} chapters".format(len(chapters)))
+        print("Interleaving core text + spiritual readings...")
+        corpus_text, section_map = corpus_base.format_corpus_interleaved(
+            chapters
+        )
+        print("  Corpus: {:,} chars".format(len(corpus_text)))
 
-    if not chapters_to_process:
-        print("All applicable chapters already corrected.")
-        return
+    est_tokens = len(corpus_text) / 3.5
+    print("  Estimated tokens: ~{:,.0f}".format(est_tokens))
 
     # Preview
-    print(f"\nWill process {len(chapters_to_process)} chapters:\n")
-    for ch_num in sorted(chapters_to_process):
-        findings = chapters_to_process[ch_num]
-        fids = [f"#{f['id']}" for f in findings]
-        corr_path = corpus_base.RESTORED_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
-        exists = "Y" if corr_path.exists() else "N"
-        print(f"  ch_{ch_num:03d} [{exists}]  findings: {', '.join(fids)}")
+    print("\nWill process {} findings:\n".format(len(findings_to_process)))
+    for f in findings_to_process:
+        title = f["title"][:65].encode("ascii", "replace").decode()
+        print("  #{:>2d} [{}] ({}) {}".format(
+            f["id"], f["category"], f["severity"], title
+        ))
 
     if args.dry_run:
-        # Show finding details
-        print(f"\n{'=' * 60}")
-        print("FINDING DETAILS (actionable only)\n")
-        seen_ids: set[int] = set()
-        for ch_num in sorted(chapters_to_process):
-            for f in chapters_to_process[ch_num]:
-                if f["id"] not in seen_ids:
-                    seen_ids.add(f["id"])
-                    print(f"  #{f['id']} [{f['category']}] {f['severity']}")
-                    print(f"     {f['title'][:80]}")
-        print(f"\n[DRY RUN] No API calls made.")
+        print("\n[DRY RUN] No API calls made.")
         return
 
     # Create client
+    print("\nConnecting to Claude Opus 4.6...")
     client, deployment = create_claude_client()
-    concurrency = max(1, args.concurrency)
-    print(f"\nUsing model: {deployment}")
-    print(f"Concurrency: {concurrency}")
-    if args.debug and concurrency > 1:
-        print("  (debug output disabled with concurrency > 1)")
-    print()
+    print("Using model: {}\n".format(deployment))
 
-    # Process chapters
-    print_lock = threading.Lock()
-    results: list[dict] = []
-    counter = {"done": 0}
-    total = len(chapters_to_process)
-    ordered_chapters = sorted(chapters_to_process.keys())
+    # Process findings one at a time
+    correction_log = []
+    t_total = time.time()
 
-    def process_one(ch_num: int) -> None:
-        findings = chapters_to_process[ch_num]
-        fids = ", ".join(f"#{f['id']}" for f in findings)
+    for idx, finding in enumerate(findings_to_process, 1):
+        fid = finding["id"]
+        cat = finding["category"]
+        title = finding["title"][:60].encode("ascii", "replace").decode()
+        n_refs = len(finding.get("section_refs", []))
 
-        with print_lock:
-            print(
-                f"  ch_{ch_num:03d} ({len(findings)} findings: {fids})...",
-                end="",
-                flush=True,
+        print(
+            "[{}/{}] Finding #{} [{}] ({} refs) {}".format(
+                idx, len(findings_to_process), fid, cat, n_refs, title
             )
-
-        show_debug = args.debug and concurrency == 1
-        result = process_chapter(
-            client,
-            deployment,
-            ch_num,
-            findings,
-            ch_map,
-            corrected_dir,
-            debug=show_debug,
         )
 
-        with print_lock:
-            counter["done"] += 1
-            if result is None:
-                status = "FAILED (unknown)"
-            elif result["status"] == "ok":
-                n_changes = len(result.get("changes", []))
-                status = f"OK — {n_changes} changes"
-            elif result["status"] == "skip":
-                status = f"SKIP — {result.get('reason', '')}"
-            else:
-                status = f"ERROR — {result.get('reason', '')}"
-            print(
-                f"\n[{counter['done']}/{total}] ch_{ch_num:03d} {status}"
+        # Build fresh user message: full corpus + action
+        action_block = format_finding(finding)
+        user_message = (
+            "## Corpus Text\n\n"
+            "{}\n\n"
+            "---\n\n"
+            "{}"
+        ).format(corpus_text, action_block)
+
+        # Stream
+        t0 = time.time()
+        tool_calls, text_output = stream_tool_calls(
+            client,
+            deployment,
+            system_prompt=SYSTEM_PROMPT,
+            tools=TOOLS,
+            user_message=user_message,
+            max_tokens=128_000,
+            debug=args.debug,
+        )
+        elapsed = time.time() - t0
+
+        # Apply tool calls
+        changes = []
+        n_applied = 0
+        n_warnings = 0
+        skipped = False
+
+        for tool_name, tool_args in tool_calls:
+            corpus_text, desc = apply_tool_call(
+                tool_name, tool_args, corpus_text
             )
-            results.append(result or {"ch": ch_num, "status": "error"})
+            changes.append("  {}: {}".format(tool_name, desc))
+            if tool_name == "skip_finding":
+                skipped = True
+            elif desc.startswith("WARN:"):
+                n_warnings += 1
+            else:
+                n_applied += 1
 
-    # Execute
-    if concurrency == 1:
-        for ch_num in ordered_chapters:
-            process_one(ch_num)
-    else:
-        with ThreadPoolExecutor(max_workers=concurrency) as executor:
-            futures = {
-                executor.submit(process_one, ch): ch
-                for ch in ordered_chapters
-            }
-            for future in as_completed(futures):
-                exc = future.exception()
-                if exc:
-                    ch = futures[future]
-                    with print_lock:
-                        print(f"\n  ch_{ch:03d} EXCEPTION: {exc}")
-                        results.append({"ch": ch, "status": "error",
-                                        "reason": str(exc)})
+        # Summary for this finding
+        if skipped:
+            status = "skipped"
+            print("  -> SKIPPED ({:.1f}s)".format(elapsed))
+        elif not tool_calls:
+            status = "no_response"
+            print("  -> NO TOOL CALLS ({:.1f}s)".format(elapsed))
+            if text_output:
+                print("    Text: {}".format(text_output[:200]))
+        else:
+            status = "applied"
+            print(
+                "  -> {} edits applied, {} warnings ({:.1f}s)".format(
+                    n_applied, n_warnings, elapsed
+                )
+            )
 
-    # Summary
-    ok = [r for r in results if r.get("status") == "ok"]
-    errors = [r for r in results if r.get("status") == "error"]
-    skipped = [r for r in results if r.get("status") == "skip"]
+        if args.debug:
+            for c in changes:
+                print(c)
 
-    print(f"\n{'=' * 60}")
+        # Log
+        log_entry = {
+            "finding_id": fid,
+            "category": cat,
+            "status": status,
+            "tool_calls": len(tool_calls),
+            "edits_applied": n_applied,
+            "warnings": n_warnings,
+            "elapsed_s": round(elapsed, 1),
+            "changes": [
+                {"tool": tn, "args_summary": _summarize_args(ta)}
+                for tn, ta in tool_calls
+            ],
+        }
+        if text_output and status != "applied":
+            log_entry["text_output"] = text_output[:500]
+        correction_log.append(log_entry)
+
+        # Save checkpoint
+        cp_path = checkpoint_dir / "after_finding_{:03d}.md".format(fid)
+        save_markdown(corpus_text, cp_path)
+
+        # Save current state as the main output (resumable)
+        save_markdown(corpus_text, output_path)
+
+    # Final summary
+    total_elapsed = time.time() - t_total
+    applied = [e for e in correction_log if e["status"] == "applied"]
+    skipped_entries = [e for e in correction_log if e["status"] == "skipped"]
+    no_resp = [e for e in correction_log if e["status"] == "no_response"]
+    total_edits = sum(e["edits_applied"] for e in correction_log)
+    total_warnings = sum(e["warnings"] for e in correction_log)
+
+    print("\n" + "=" * 60)
     print("CORRECTION SUMMARY")
-    print(f"  Processed: {len(ok)}")
-    print(f"  Errors:    {len(errors)}")
-    print(f"  Skipped:   {len(skipped)}")
-
-    if errors:
-        print(f"\n  Failed chapters:")
-        for r in errors:
-            print(f"    ch_{r['ch']:03d}: {r.get('reason', 'unknown')}")
-
-    if ok:
-        total_changes = sum(len(r.get("changes", [])) for r in ok)
-        print(f"\n  Total changes applied: {total_changes}")
-        for r in ok:
-            ch = r["ch"]
-            layers = ", ".join(r.get("layers", []))
-            if layers:
-                print(f"    ch_{ch:03d} layers: {layers}")
-            for change in r.get("changes", []):
-                fid = change.get("finding_id", "?")
-                desc = change.get("description", "")[:60]
-                paras = change.get("paragraphs_affected", [])
-                targets = change.get("targets", [])
-                tgt = "+".join(targets) if targets else "?"
-                print(f"    ch_{ch:03d} #{fid} [{tgt}] ¶{paras}: {desc}")
+    print("  Findings processed: {}".format(len(findings_to_process)))
+    print("  Applied:  {}".format(len(applied)))
+    print("  Skipped:  {}".format(len(skipped_entries)))
+    print("  No response: {}".format(len(no_resp)))
+    print("  Total edits: {}".format(total_edits))
+    print("  Total warnings: {}".format(total_warnings))
+    print("  Time: {:.1f}s".format(total_elapsed))
+    print("\n  Output: {}".format(output_path))
+    print("  Checkpoints: {}".format(checkpoint_dir))
 
     # Save log
-    log_path = corpus_base.OUTPUT_DIR / "review_applied.json"
     log_data = {
         "review_file": str(review_path),
+        "project": args.project,
         "timestamp": time.strftime("%Y-%m-%dT%H:%M:%S"),
-        "chapters_processed": len(ok),
-        "chapters_errored": len(errors),
-        "chapters_skipped": len(skipped),
-        "results": results,
+        "findings_processed": len(findings_to_process),
+        "findings_applied": len(applied),
+        "findings_skipped": len(skipped_entries),
+        "total_edits": total_edits,
+        "total_warnings": total_warnings,
+        "elapsed_s": round(total_elapsed, 1),
+        "entries": correction_log,
     }
     with open(log_path, "w", encoding="utf-8") as f:
         json.dump(log_data, f, indent=2, ensure_ascii=False)
-    print(f"\n  Log saved: {log_path}")
+    print("  Log: {}".format(log_path))
     print("Done.")
+
+
+def _summarize_args(args: dict) -> str:
+    """Produce a short summary of tool-call args for the log."""
+    parts = []
+    for k, v in args.items():
+        s = str(v)
+        if len(s) > 80:
+            s = s[:77] + "..."
+        parts.append("{}={}".format(k, repr(s)))
+    return "; ".join(parts)
 
 
 if __name__ == "__main__":
