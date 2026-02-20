@@ -2,6 +2,44 @@
   "chapter_number": 109,
   "title": "Concerning the Fifty Lord's Days; to what Mysteries do they correspond? Or the Second (Fifty); to whose Sign (are they)?",
   "total_paragraphs": 8,
+  "chapter_features": {
+    "teaching_purity": 0.45,
+    "editorial_fatigue_score": 0.71,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 6.16,
+        "second_half": 2.63,
+        "shift": -3.53
+      },
+      "dialogue_frame": {
+        "first_half": 1.23,
+        "second_half": 0.0,
+        "shift": -1.23
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 3.08,
+        "second_half": 7.14,
+        "shift": 4.06
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -18,9 +56,9 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
           "lord's day",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -125,12 +163,12 @@
         "bridge_phrase": null,
         "institutional_terms_found": [
           "lord's day",
-          "catechumen",
-          "sects"
+          "sects",
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (lord's day, catechumen, sects) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (lord's day, sects, catechumen) with register shift from preceding cosmological paragraphs."
       }
     },
     {

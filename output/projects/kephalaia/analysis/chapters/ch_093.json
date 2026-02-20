@@ -2,6 +2,44 @@
   "chapter_number": 93,
   "title": "A Catechumen asked the Apostle: When I would give an Offering to the Saints, shall I inflict a Wound on the Alms?",
   "total_paragraphs": 10,
+  "chapter_features": {
+    "teaching_purity": 0.132,
+    "editorial_fatigue_score": 1.07,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 0.86,
+        "second_half": 2.17,
+        "shift": 1.31
+      },
+      "dialogue_frame": {
+        "first_half": 0.86,
+        "second_half": 0.0,
+        "shift": -0.86
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 6.47,
+        "second_half": 11.6,
+        "shift": 5.13
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -18,9 +56,9 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
+          "alms",
           "catechumen",
-          "alms"
+          "elect"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -62,8 +100,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "catechumen",
-          "alms"
+          "alms",
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -145,8 +183,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "alms"
+          "alms",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -188,13 +226,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "alms",
           "catechumen",
-          "the church",
-          "alms"
+          "the church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, the church, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, catechumen, the church) with register shift from preceding cosmological paragraphs."
       }
     },
     {

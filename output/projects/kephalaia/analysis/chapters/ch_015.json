@@ -2,6 +2,44 @@
   "chapter_number": 15,
   "title": "[Concerning the ... ...] Five [Parts ...] Worlds of [...]",
   "total_paragraphs": 10,
+  "chapter_features": {
+    "teaching_purity": 0.696,
+    "editorial_fatigue_score": 2.78,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 14.42,
+        "second_half": 14.29,
+        "shift": -0.13
+      },
+      "dialogue_frame": {
+        "first_half": 1.4,
+        "second_half": 0.0,
+        "shift": -1.4
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 5.36,
+        "shift": 5.36
+      },
+      "institutional": {
+        "first_half": 0.0,
+        "second_half": 5.36,
+        "shift": 5.36
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 1.79,
+        "shift": 1.79
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -180,8 +218,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "the church",
-          "sects"
+          "sects",
+          "the church"
         ],
         "register_shift": true,
         "seam_flag": false,

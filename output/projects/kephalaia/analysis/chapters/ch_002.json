@@ -2,6 +2,44 @@
   "chapter_number": 2,
   "title": "The Second, concerning the Parable of the Tree.",
   "total_paragraphs": 27,
+  "chapter_features": {
+    "teaching_purity": 0.517,
+    "editorial_fatigue_score": 0.62,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 1.93,
+        "second_half": 8.92,
+        "shift": 6.99
+      },
+      "dialogue_frame": {
+        "first_half": 1.69,
+        "second_half": 0.35,
+        "shift": -1.34
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.94,
+        "shift": 0.94
+      },
+      "institutional": {
+        "first_half": 2.17,
+        "second_half": 3.17,
+        "shift": 1.0
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 1.88,
+        "shift": 1.88
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": true
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -266,13 +304,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
           "catechumen",
-          "teacher"
+          "teacher",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (holy church, catechumen, teacher) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, teacher, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -332,13 +370,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
+          "alms",
           "catechumen",
-          "alms"
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (holy church, catechumen, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, catechumen, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -416,8 +454,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "teacher",
-          "sects"
+          "sects",
+          "teacher"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -461,8 +499,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "sects",
-          "repentance"
+          "repentance",
+          "sects"
         ],
         "register_shift": true,
         "seam_flag": false,

@@ -2,6 +2,44 @@
   "chapter_number": 115,
   "title": "The Catechumen asks the Apostle: will Rest come about for Someone who has come out of the Body, if the Saints pray over and make an Alms-offering for him?",
   "total_paragraphs": 46,
+  "chapter_features": {
+    "teaching_purity": 0.392,
+    "editorial_fatigue_score": 1.26,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 6.47,
+        "second_half": 1.71,
+        "shift": -4.76
+      },
+      "dialogue_frame": {
+        "first_half": 1.04,
+        "second_half": 1.25,
+        "shift": 0.21
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 2.72,
+        "second_half": 7.56,
+        "shift": 4.84
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": true
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -18,8 +56,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "congregation",
-          "catechumen"
+          "catechumen",
+          "congregation"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -485,8 +523,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -652,13 +690,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
+          "alms",
           "the church",
-          "alms"
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (holy church, the church, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, the church, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -696,8 +734,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "the church",
-          "alms"
+          "alms",
+          "the church"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -719,8 +757,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "catechumen",
-          "alms"
+          "alms",
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -866,13 +904,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
           "catechumen",
-          "the church"
+          "the church",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (holy church, catechumen, the church) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, the church, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -932,8 +970,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "catechumen",
-          "alms"
+          "alms",
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": false,

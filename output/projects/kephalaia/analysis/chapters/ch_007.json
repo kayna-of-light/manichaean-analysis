@@ -2,6 +2,44 @@
   "chapter_number": 7,
   "title": "The Seventh, concerning the Five Fathers",
   "total_paragraphs": 23,
+  "chapter_features": {
+    "teaching_purity": 0.459,
+    "editorial_fatigue_score": 2.5,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 7.36,
+        "second_half": 2.61,
+        "shift": -4.75
+      },
+      "dialogue_frame": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 0.0,
+        "second_half": 6.97,
+        "shift": 6.97
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 3.05,
+        "shift": 3.05
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -384,8 +422,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -427,8 +465,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
