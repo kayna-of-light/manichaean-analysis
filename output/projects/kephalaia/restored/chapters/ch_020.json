@@ -1,0 +1,72 @@
+{
+  "chapter_number": 20,
+  "chapter_title": "The Chapter of the Name of the Fathers",
+  "total_lacunae": 2,
+  "lacunae_map": {
+    "3": [
+      {
+        "index": 1,
+        "start": 167,
+        "end": 172,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 262,
+        "end": 267,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation: On the Divine Love as Origin of All Fullness\n\n**¶1:** The Divine Love itself, which is the originating principle of all existence — for what reason is it named the source and origin of all immensity of good?\n\n**¶3:** The Divine Love, which is the first and absolute ground of all being, is called the origin of all fullness of good. Its fullness is the infinite ground of good in which the Divine dwells, its existence proceeding from within that ground [GAP-1] — the very essence of wisdom that encompasses all the exalted affections of celestial good, and all the intelligences of truth, and every state in which they are received [GAP-2] — is ordained over it.\n\n**¶4:** Furthermore, the Divine Proceeding in its mediating operation is also called an originating principle. Its fullness is the containing form of living love in which it dwells and from which it operates.\n\n**¶5:** And Divine Wisdom in its radiant intellectual clarity is itself likewise called an originating principle. Its fullness is the containing form of living truth in which it dwells and from which it proceeds.\n\n---\n\n**Structural note:** The passage teaches that one Divine source manifests through three distinct fullnesses: the infinite ground of good itself, the containing form of divine love, and the containing form of divine truth — yet each is called an \"originating principle\" because each is the Divine dwelling within its own proceeding. The triad mirrors Swedenborg's *esse*, *existere*, and *procedere*: being, coming-forth, and operation.",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "The Father of Greatness, as he is named; due to what reason is he given the name 'the Father of Greatness'?"
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The Father, who is the first established thing, shall be called 'the Father of Greatness'. His greatness is the great earth where he lives, he being established in it [and from it comes] the essence of the light that swathes all the rich gods and the angels and the dwellings [in which they dwell] is set over it."
+    },
+    {
+      "paragraph": 4,
+      "reconstructed_text": "Furthermore, they shall call the Third Ambassador 'father'. His greatness is the light ship of living fire wherein he lives, he being established in it."
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "Once again, Jesus the Splendour shall himself also be called 'father'. His greatness is the ship of living waters where he lives, he being established in it."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 3,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "and from it comes",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading specifies \"its existence proceeding from within that ground\" at this position, requiring a phrase expressing the proceeding/emanation of the essence of light from the great earth (ground of good), matching Swedenborg's teaching that Divine Truth proceeds from Divine Good.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 3,
+      "index": 2,
+      "gap_id": "GAP-2",
+      "fill": "in which they dwell",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading glosses \"dwellings\" as \"every state in which they are received,\" and the gap position calls for an explicit qualifying phrase that specifies the dwellings as inhabited states of reception for the gods and angels, before the main predicate \"is set over it\" resumes.",
+      "confidence": "moderate",
+      "notes": ""
+    }
+  ],
+  "violations": [],
+  "assessment": "2 restored"
+}

@@ -10,8 +10,8 @@ narrative holistically and identifies passages where:
   - A pre-Manichaean layer was missed or misidentified
   - Natural-plane vocabulary was left untranslated in the spiritual reading
   - The same correspondence was read inconsistently across passages
-  - A deeper or older substrate (Zoroastrian, Zurvanite, proto-Iranian)
-    is visible beneath the Manichaean editorial layer
+  - An older cultural transmission layer (proto-Iranian, Mesopotamian)
+    is visible through the Persian vocabulary of the substrate
   - The narrative logic breaks or a teaching sequence is interrupted
 
 The key insight: per-chapter processing can miss patterns that only
@@ -67,8 +67,9 @@ Your task is to read the ENTIRE text holistically and identify \
 everything that is "off" — places where the correspondential reading \
 (the [§N]* lines) doesn't correctly translate the teaching, where \
 an older layer was missed, where inconsistencies crept in during \
-per-chapter processing, or where the full narrative reveals patterns \
-that single-chapter analysis could not see.
+per-chapter processing, where the narrative correspondential but \
+looks like its taken from another part of the substrate, or where \
+the full narrative reveals patterns that single-chapter analysis could not see.
 
 Specifically, look for:
 
@@ -101,9 +102,13 @@ Specifically, look for:
    the full text as a continuous flow. Things the per-chapter \
    reader couldn't see.
 
-7. DEEPER SUBSTRATE — Evidence of layers older than the Persian \
-   (proto-Indo-Iranian, Mesopotamian, or traces of the Ancient \
-   Word itself) visible in the vocabulary or structure.
+7. DEEPER SUBSTRATE — The teaching substrate IS the Ancient Word \
+   in its Persian vessel. This category identifies passages where \
+   an OLDER cultural vessel is visible through the Persian — \
+   proto-Indo-Iranian, Mesopotamian, or Zurvanite vocabulary or \
+   structures that predate the specifically Zoroastrian-Persian \
+   formulation. Not a different teaching, but an earlier \
+   transmission layer of the same correspondential knowledge.
 
 8. OPPOSITE SENSE ERRORS — Passages where a correspondence was \
    read in its positive sense when the context requires the \
