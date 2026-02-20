@@ -9,13 +9,13 @@
 
 ```
 output/
-├── texts/                          # process_ocr_json.py writes raw markdown
+├── texts/                          # stage_0_ingest.py writes raw markdown
 │   └── Kephalaia_of_the_Teacher.md # (+ 11 other .md files from PDF_CATALOG)
 ├── cleaned/
-│   ├── chapters/                   # clean_kephalaia.py writes per-chapter JSON
+│   ├── chapters/                   # stage_1_clean.py writes per-chapter JSON
 │   │   └── ch_NNN.json
-│   ├── kephalaia_teaching.md       # clean_kephalaia.py assembly
-│   └── kephalaia_apparatus.md      # clean_kephalaia.py assembly
+│   ├── kephalaia_teaching.md       # stage_1_clean.py assembly
+│   └── kephalaia_apparatus.md      # stage_1_clean.py assembly
 ├── analysis/
 │   ├── kephalaia_layer_analysis.json   # kephalaia_layer_analysis.py
 │   ├── kephalaia_layer_analysis_report.md
@@ -36,12 +36,12 @@ output/
 │       ├── v4_data.json
 │       ├── v4_paragraphs.json
 │       └── v4_01..07_*.png         # 7 PNGs
-├── core/                           # extract_core.py
+├── core/                           # stage_4_extract.py
 │   ├── chapters/
 │   │   └── ch_NNN.json             # (also read by clean_page_breaks.py in-place)
 │   ├── restored_core.md
 │   └── core_data.json
-├── correspondential/               # correspondential_reading.py
+├── restored/               # stage_5_restore.py
 │   ├── chapters/
 │   │   └── ch_NNN.json
 │   └── restored_kephalaia.md
@@ -60,7 +60,7 @@ output/
 
 ## Per-Script Detail
 
-### 1. `process_ocr_json.py` — 300 lines
+### 1. `stage_0_ingest.py` — 300 lines
 
 | Item | Detail |
 |------|--------|
@@ -75,7 +75,7 @@ output/
 
 ---
 
-### 2. `clean_kephalaia.py` — 664 lines
+### 2. `stage_1_clean.py` — 664 lines
 
 | Item | Detail |
 |------|--------|
@@ -104,11 +104,11 @@ output/
 | **Reads** | `output/cleaned/chapters/ch_*.json` |
 | **Writes** | `output/analysis/registers/register_analysis.json` (when `--save`) |
 | **LLM** | None |
-| **⚠ Notes** | Defines 5 marker vocabulary dicts (CORRESPONDENTIAL, COSMOLOGICAL, CHRISTIAN, FRAME, PASTORAL). These are **duplicated** in `extract_core.py`. |
+| **⚠ Notes** | Defines 5 marker vocabulary dicts (CORRESPONDENTIAL, COSMOLOGICAL, CHRISTIAN, FRAME, PASTORAL). These are **duplicated** in `stage_4_extract.py`. |
 
 ---
 
-### 4. `extract_core.py` — 1606 lines
+### 4. `stage_4_extract.py` — 1606 lines
 
 | Item | Detail |
 |------|--------|
@@ -143,7 +143,7 @@ output/
 
 ---
 
-### 6. `correspondential_reading.py` — 1837 lines
+### 6. `stage_5_restore.py` — 1837 lines
 
 | Item | Detail |
 |------|--------|
@@ -274,7 +274,7 @@ output/
 | **Writes** | `output/analysis/v4/v4_data.json`, `output/analysis/v4/v4_paragraphs.json`, `output/analysis/v4/v4_report.md`, `output/analysis/v4/v4_01..07_*.png` (7 PNGs) |
 | **LLM** | None |
 | **Deps** | `sklearn`, `scipy`, `matplotlib`, `numpy` |
-| **⚠ Notes** | `MANUAL_LAYER1` chapter set duplicated. Most complete vocabulary system (7 categories in `VOCAB` dict with temporal `WEIGHTS`). `VOCAB` and `WEIGHTS` are the canonical versions — used by `extract_core.py` at runtime via `V4_DATA_JSON`. |
+| **⚠ Notes** | `MANUAL_LAYER1` chapter set duplicated. Most complete vocabulary system (7 categories in `VOCAB` dict with temporal `WEIGHTS`). `VOCAB` and `WEIGHTS` are the canonical versions — used by `stage_4_extract.py` at runtime via `V4_DATA_JSON`. |
 
 ---
 
@@ -295,7 +295,7 @@ output/
 
 | Canonical Location | Duplicated In | Notes |
 |-------------------|---------------|-------|
-| `register_analysis.py` | `extract_core.py` (inline copy) | 5 marker dicts: FRAME, PASTORAL, CHRISTIAN, APPLICATION, TEACHING |
+| `register_analysis.py` | `stage_4_extract.py` (inline copy) | 5 marker dicts: FRAME, PASTORAL, CHRISTIAN, APPLICATION, TEACHING |
 | `kephalaia_layer_analysis_v4.py` | `kephalaia_paragraph_recovery.py` (older version) | `VOCAB` dict and `WEIGHTS` — v3 has fewer categories |
 | — | `kephalaia_layer_analysis.py` | Oldest vocabulary system (`LAYER1_VOCAB`, `LAYER2_VOCAB`, etc.) — superseded by v4 |
 | — | `kephalaia_core_recovery.py` | Another vocabulary variant (`VOCAB_CATEGORIES`, `SINGLE_WORD_MARKERS`) |
@@ -315,9 +315,9 @@ Hardcoded in three scripts with identical values:
 
 | Pattern | Scripts |
 |---------|---------|
-| **Full argparse** with `--chapter`, `--range`, `--dry-run`, `--overwrite`, `--assemble`, `--limit` | `extract_core.py`, `correspondential_reading.py`, `reconstruct_substrate.py` |
-| **Partial argparse** | `clean_kephalaia.py` (similar but with `--list`, `--assemble-only`), `register_analysis.py` (`--chapter`, `--report`, `--save`) |
-| **sys.argv** | `process_ocr_json.py` |
+| **Full argparse** with `--chapter`, `--range`, `--dry-run`, `--overwrite`, `--assemble`, `--limit` | `stage_4_extract.py`, `stage_5_restore.py`, `reconstruct_substrate.py` |
+| **Partial argparse** | `stage_1_clean.py` (similar but with `--list`, `--assemble-only`), `register_analysis.py` (`--chapter`, `--report`, `--save`) |
+| **sys.argv** | `stage_0_ingest.py` |
 | **No CLI** | `clean_page_breaks.py`, `generate_layer1_pdf.py`, `generate_reading_pdf.py`, all analysis scripts (v1, v2, v3, v4) |
 
 **Recommendation**: Standardise around the `--chapter / --range / --dry-run / --overwrite / --assemble / --limit` pattern.
@@ -326,23 +326,23 @@ Hardcoded in three scripts with identical values:
 
 | LLM | Scripts | Client Pattern |
 |-----|---------|----------------|
-| GPT-5.2 (Azure) | `clean_kephalaia.py`, `extract_core.py`, `reconstruct_substrate.py` | `dotenv_values(SECRETS_PATH)` → `OpenAI(base_url=..., api_key=...)` |
-| Claude Opus 4.6 (Azure AI Foundry) | `correspondential_reading.py` | Custom `AnthropicFoundry` subclass of `anthropic.Anthropic` + `httpx` |
+| GPT-5.2 (Azure) | `stage_1_clean.py`, `stage_4_extract.py`, `reconstruct_substrate.py` | `dotenv_values(SECRETS_PATH)` → `OpenAI(base_url=..., api_key=...)` |
+| Claude Opus 4.6 (Azure AI Foundry) | `stage_5_restore.py` | Custom `AnthropicFoundry` subclass of `anthropic.Anthropic` + `httpx` |
 
 **Recommendation**: Extract LLM client creation into a shared utility.
 
 ### 6. Pipeline Dependency Chain
 
 ```
-process_ocr_json.py
+stage_0_ingest.py
   └→ output/texts/*.md
-       ├→ clean_kephalaia.py → output/cleaned/chapters/ch_*.json
+       ├→ stage_1_clean.py → output/cleaned/chapters/ch_*.json
        │    ├→ register_analysis.py → output/analysis/registers/*.json
        │    ├→ kephalaia_layer_analysis_v4.py → output/analysis/v4/*.json
-       │    │    └→ extract_core.py → output/core/chapters/ch_*.json
+       │    │    └→ stage_4_extract.py → output/core/chapters/ch_*.json
        │    │         ├→ clean_page_breaks.py (in-place)
-       │    │         ├→ correspondential_reading.py → output/correspondential/
-       │    │         └→ (extract_core.py also reads v4 data)
+       │    │         ├→ stage_5_restore.py → output/correspondential/
+       │    │         └→ (stage_4_extract.py also reads v4 data)
        │    └→ reconstruct_substrate.py → output/substrate/
        ├→ kephalaia_layer_analysis.py → output/analysis/ (v1, superseded)
        ├→ kephalaia_core_recovery.py → output/analysis/v2/ (superseded)
@@ -356,7 +356,7 @@ process_ocr_json.py
 | Script | Version | Superseded By | Evidence |
 |--------|---------|---------------|----------|
 | `kephalaia_layer_analysis.py` | v1 | `kephalaia_layer_analysis_v4.py` | Older vocabulary system, fewer categories |
-| `kephalaia_core_recovery.py` | v2 | `kephalaia_layer_analysis_v4.py` + `extract_core.py` | Uses raw text instead of cleaned JSON |
+| `kephalaia_core_recovery.py` | v2 | `kephalaia_layer_analysis_v4.py` + `stage_4_extract.py` | Uses raw text instead of cleaned JSON |
 | `kephalaia_paragraph_recovery.py` | v3 | `kephalaia_layer_analysis_v4.py` | Fewer vocab categories, reads raw text |
 
-All three read from `output/texts/Kephalaia_of_the_Teacher.md` (raw OCR markdown) rather than from `output/cleaned/chapters/ch_*.json` (LLM-cleaned structured JSON). The v4 script and `extract_core.py` use the cleaned data.
+All three read from `output/texts/Kephalaia_of_the_Teacher.md` (raw OCR markdown) rather than from `output/cleaned/chapters/ch_*.json` (LLM-cleaned structured JSON). The v4 script and `stage_4_extract.py` use the cleaned data.

@@ -51,20 +51,20 @@ from project_config import load_project, list_projects, SECRETS_PATH
 
 PROJECT_CFG = None
 CORE_CHAPTERS_DIR: Path | None = None
-CORR_CHAPTERS_DIR: Path | None = None
+RESTORED_CHAPTERS_DIR: Path | None = None
 OUTPUT_DIR: Path | None = None
 
 
 def configure_paths(project_name: str) -> None:
     """Set module-level path variables from project config."""
-    global PROJECT_CFG, CORE_CHAPTERS_DIR, CORR_CHAPTERS_DIR, OUTPUT_DIR
+    global PROJECT_CFG, CORE_CHAPTERS_DIR, RESTORED_CHAPTERS_DIR, OUTPUT_DIR
 
     cfg = load_project(project_name)
     cfg.paths.ensure_dirs()
     PROJECT_CFG = cfg
 
     CORE_CHAPTERS_DIR = cfg.paths.core_chapters
-    CORR_CHAPTERS_DIR = cfg.paths.correspondential_chapters
+    RESTORED_CHAPTERS_DIR = cfg.paths.restored_chapters
     OUTPUT_DIR = cfg.paths.project_dir
 
 
@@ -163,8 +163,8 @@ def load_all_chapters() -> list[dict]:
                     (para["paragraph_number"], para["core_text"])
                 )
 
-        # Load correspondential file for spiritual reading + reconstructions
-        corr_path = CORR_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
+        # Load restored file for spiritual reading + reconstructions
+        corr_path = RESTORED_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
         sr_paras = {}
         sr_block = ""
         reconstruction_map: dict[int, str] = {}
@@ -207,7 +207,7 @@ def format_corpus_interleaved(
 
     Uses sequential paragraph markers [§N] with NO chapter numbers
     visible. The model sees a continuous flow of teaching.
-    Lines marked [§N]* are the correspondential reading of [§N].
+    Lines marked [§N]* are the restored reading of [§N].
 
     Returns:
         (corpus_text, section_map)

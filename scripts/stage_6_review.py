@@ -20,7 +20,7 @@ become visible when the full narrative is read as a continuous flow.
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
 Usage:
-    python analyze_corpus.py --project kephalaia [--debug] [--dry-run]
+    python stage_6_review.py --project kephalaia [--debug] [--dry-run]
 """
 
 import json

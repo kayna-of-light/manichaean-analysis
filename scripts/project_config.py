@@ -12,7 +12,7 @@ Directory layout:
         ├── kephalaia/
         │   ├── cleaned/chapters/           # Phase 1 (LLM clean)
         │   ├── core/chapters/              # Phase 2 (core extraction)
-        │   ├── correspondential/chapters/  # Phase 3 (spiritual reading + restoration)
+        │   ├── restored/chapters/           # Phase 5 (spiritual reading + restoration)
         │   └── analysis/                   # Analysis outputs
         └── shabuhragan/
             └── ...
@@ -61,9 +61,9 @@ class ProjectPaths:
     core_chapters: Path        # output/projects/<name>/core/chapters
     core_data: Path            # output/projects/<name>/core/core_data.json
     core_assembled: Path       # output/projects/<name>/core/restored_core.md
-    correspondential: Path     # output/projects/<name>/correspondential
-    correspondential_chapters: Path
-    correspondential_assembled: Path
+    restored: Path              # output/projects/<name>/restored
+    restored_chapters: Path
+    restored_assembled: Path
     analysis: Path             # output/projects/<name>/analysis
     analysis_chapters: Path    # output/projects/<name>/analysis/chapters
 
@@ -72,7 +72,7 @@ class ProjectPaths:
         for p in (
             self.cleaned_chapters,
             self.core_chapters,
-            self.correspondential_chapters,
+            self.restored_chapters,
             self.analysis,
             self.analysis_chapters,
         ):
@@ -114,10 +114,10 @@ class ProjectConfig:
             core_chapters=project_dir / "core" / "chapters",
             core_data=project_dir / "core" / "core_data.json",
             core_assembled=project_dir / "core" / "restored_core.md",
-            correspondential=project_dir / "correspondential",
-            correspondential_chapters=project_dir / "correspondential" / "chapters",
-            correspondential_assembled=(
-                project_dir / "correspondential" / self.assembled_filename
+            restored=project_dir / "restored",
+            restored_chapters=project_dir / "restored" / "chapters",
+            restored_assembled=(
+                project_dir / "restored" / self.assembled_filename
             ),
             analysis=project_dir / "analysis",
             analysis_chapters=project_dir / "analysis" / "chapters",

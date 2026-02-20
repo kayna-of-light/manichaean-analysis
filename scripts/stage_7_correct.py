@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Apply corpus review corrections to correspondential chapter files.
+"""Apply corpus review corrections to restored chapter files.
 
-Pipeline phase:  analyze_corpus  →  apply_review
+Pipeline phase:  stage_6_review  →  stage_7_correct
 
 Reads findings from corpus_review.json, resolves §-references to
 manuscript chapters, then sends each affected chapter to Claude
@@ -14,7 +14,7 @@ Corrections target THREE data layers (in priority order):
   3. Spiritual reading – correspondential translation (secondary)
 
 Corrected files are written to a separate corrected/chapters/ folder,
-leaving the correspondential phase output untouched.
+leaving the restored phase output untouched.
 
 No editorial notes, annotations, or bracketed explanations are added.
 
@@ -458,11 +458,11 @@ def process_chapter(
 ) -> dict | None:
     """Process a single chapter: load, correct all layers, save.
 
-    Reads from correspondential/chapters (input), writes to
+    Reads from restored/chapters (input), writes to
     output_dir (corrected/chapters). Never overwrites input files.
     Returns a summary dict on success, None on failure.
     """
-    corr_path = corpus_base.CORR_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
+    corr_path = corpus_base.RESTORED_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
     core_path = corpus_base.CORE_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
 
     if not corr_path.exists():
@@ -680,7 +680,7 @@ def main() -> None:
         review_path = corpus_base.OUTPUT_DIR / "corpus_review.json"
     if not review_path.exists():
         print(f"ERROR: Review file not found: {review_path}")
-        print("  Run analyze_corpus.py first.")
+        print("  Run stage_6_review.py first.")
         sys.exit(1)
 
     print(f"=== Apply Corpus Review: {args.project} ===\n")
@@ -766,7 +766,7 @@ def main() -> None:
     for ch_num in sorted(chapters_to_process):
         findings = chapters_to_process[ch_num]
         fids = [f"#{f['id']}" for f in findings]
-        corr_path = corpus_base.CORR_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
+        corr_path = corpus_base.RESTORED_CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
         exists = "Y" if corr_path.exists() else "N"
         print(f"  ch_{ch_num:03d} [{exists}]  findings: {', '.join(fids)}")
 
