@@ -10,28 +10,29 @@
         "§71",
         "§73",
         "§75",
+        "§84",
+        "§119",
         "§144",
         "§160",
         "§162",
-        "§171",
         "§184",
         "§191",
         "§201",
         "§291",
         "§305",
+        "§310",
         "§594",
-        "§595",
         "§866"
       ],
-      "title": "\"Jesus the Splendour\" as pervasive Manichaean Christological overlay",
-      "current_state": "The name \"Jesus the Splendour\" appears at least 15 times across the corpus, functioning as the name of the fourth cosmic emanation — e.g. §27 \"The fourth day is Jesus the Splendour,\" §42 \"The third hunter is Jesus the Splendour,\" §73 \"he is glorious Jesus the Splendour,\" §162 \"until the moment when Jesus was sent.\"",
-      "recommendation": "Flag every occurrence of \"Jesus the Splendour\" as a Manichaean Christological overlay. The substrate entity is a cosmic principle of illuminating wisdom, not a Christological figure. The correspondential readings consistently translate it as \"Divine Wisdom in its radiance\" or \"Divine Truth in its glory,\" confirming that the substrate described this entity functionally. The original Persian/Iranian designation has been completely overwritten.",
-      "explanation": "This is the single most pervasive naming overlay in the corpus. \"Jesus the Splendour\" (Isha Ziwa in Aramaic) is a distinctly Manichaean designation that maps the Christian figure of Jesus onto a pre-existing cosmic entity — the fourth emanation in a five-fold system. The substrate consistently treats this figure as a principle of illumination and wisdom that purifies, separates, and descends to the first human form. No Christological content is ever present in the teaching itself — the entity functions identically to its structural parallels (First Man, Living Spirit, Third Ambassador), none of which bear Christian names. The overlay corrupts the reading by introducing Christological associations into what is a Persian correspondential system. The original name — likely an Iranian/Zurvanite title for illuminating wisdom — is irrecoverable from this text alone."
+      "title": "\"Jesus the Splendour\" is a Manichaean naming overlay throughout the corpus",
+      "current_state": "The name \"Jesus the Splendour\" appears in at least 18 paragraphs across many chapters, always designating the same cosmic entity: the divine wisdom that proceeds into illumination, purification, and liberation of captive good.",
+      "recommendation": "Flag all occurrences. The substrate designation was almost certainly a Persian term — most probably \"Xradeshahr\" (Splendor of the Realm) or a form related to Avestan \"xvarənah\" (divine glory/splendor). The entity's consistent function — radiant divine wisdom that illuminates, separates truth from falsity, and liberates — maps precisely onto a pre-Manichaean Iranian concept of divine glory made manifest. Mani mapped the Christian name \"Jesus\" onto this pre-existing cosmic figure.",
+      "explanation": "In the Manichaean system, \"Jesus the Splendour\" (Isho Ziwa) is a cosmic entity distinct from Jesus of Nazareth. It is a specifically Manichaean synthesis where the Christian name was mapped onto a pre-existing entity in the Persian substrate. The correspondential readings consistently translate this figure as \"Divine Wisdom in its radiance\" or \"Divine Truth in its Splendor.\" The substrate teaching's own architecture never requires anything specifically Christian about this entity — it functions as the illuminating aspect of divine wisdom throughout, which maps to Iranian religious concepts of divine luminous glory (xvarənah/farr). The name \"Jesus\" is foreign to the Persian cosmological vocabulary that constitutes the oldest layer."
     },
     {
       "id": 2,
       "category": "naming_overlay",
-      "severity": "significant",
+      "severity": "critical",
       "section_refs": [
         "§74",
         "§77",
@@ -39,199 +40,147 @@
         "§125",
         "§294",
         "§565",
-        "§566",
         "§567",
+        "§569",
         "§745",
         "§795",
-        "§843",
-        "§847"
+        "§843"
       ],
-      "title": "\"Light Mind\" (Light-Nous) as Manichaean designation",
-      "current_state": "\"Light Mind\" appears approximately 12 times: §74 \"The first power whom he summoned is the Light Mind,\" §121 \"is the Light Mind; who is the awakene[r of they] who sleep,\" §565 \"if and wh[en] the Light Mind comes, it shall tu[rn i]n to the orifices of the body.\"",
-      "recommendation": "Flag as Manichaean overlay. The substrate likely used a Persian term for the faculty of interior illumination or awakened understanding. The Manichaean \"Nous\" terminology introduces Greek philosophical connotations absent from the Persian original.",
-      "explanation": "\"Light-Nous\" is a specifically Manichaean technical term combining Greek philosophical vocabulary (nous = mind/intellect) with light-theology. The substrate teaching consistently describes this entity as the awakener of spiritual dormancy, the illuminator of understanding, and the former of the new interior person (§121, §565-§569, §745, §795, §843). These are functional descriptions consistent with an older Persian term for divine illumination entering human consciousness. The Manichaean editor's choice of Greek \"Nous\" shifts the register from Persian correspondential teaching toward Hellenistic intellectual categories."
+      "title": "\"Light Mind\" / \"Light-Nous\" is a Graeco-Manichaean naming overlay",
+      "current_state": "\"Light Mind\" appears in at least 11 paragraphs. In §74: \"The first power whom he summoned is the Light Mind.\" In §121: \"the Light Mind; who is the awakene[r of they] who sleep, the gatherer in of the ones who are sc[att]ered.\" In §565–569 it is the force that enters the body's orifices and subdues the guards of evil.",
+      "recommendation": "Flag all occurrences. The substrate designation was almost certainly \"Wahman\" — from Avestan \"Vohu Manah\" (Good Mind), one of the Amesha Spentas in Zoroastrian theology. This is one of the most fundamental Zoroastrian concepts: the divine faculty of right-thinking, the Good Mind that proceeds from Ahura Mazda. The Greek \"Nous\" and the Manichaean systematization as \"Light-Nous\" overlay this older Iranian designation.",
+      "explanation": "\"Nous\" is Greek philosophical vocabulary that entered Manichaean terminology through Hellenistic synthesis. The substrate's Persian-Iranian cosmology would have used \"Wahman\" (Middle Persian) / \"Vohu Manah\" (Avestan) — the Good Mind, first of the Amesha Spentas. The entity's consistent function in the text — entering the human person, awakening from spiritual torpor, gathering what is scattered, enlightening the understanding (§121, §125, §294, §565–569) — matches the Zoroastrian Vohu Manah's role as the divine intelligence that enters the righteous person and transforms their consciousness. The Manichaean editor replaced this Iranian name with the Hellenized \"Light-Nous.\""
     },
     {
       "id": 3,
       "category": "naming_overlay",
       "severity": "significant",
       "section_refs": [
-        "§112",
-        "§379",
-        "§569"
+        "§544"
       ],
-      "title": "\"Holy Spirit\" as Christian overlay term",
-      "current_state": "§112 identifies \"the Mother of Life, the first Holy Spirit.\" §379: \"they have blasphemed and despised the Holy Spirit since [ev]ery generation of the world.\" §569: \"The H[o]ly Spirit reigns. It does all that it pleases... the will of the [Ho]ly Spir[it] comes about.\"",
-      "recommendation": "Flag all three occurrences as Christian overlay. The substrate concept in §112 is the Divine Proceeding as formative matrix; in §379, it is the divine proceeding into created life; in §569, it is the divine good operating through truth. The Christian trinitarian term obscures the substrate's functional designation.",
-      "explanation": "\"Holy Spirit\" is a specifically Christian trinitarian term. §112 explicitly equates it with \"the Mother of Life\" — showing the Manichaean editor mapping Christian terminology onto a pre-existing substrate entity (the proceeding divine truth that gives life). §379 echoes the Synoptic \"blasphemy against the Holy Spirit\" (Mark 3:29), confirming this as a Christian doctrinal insertion. §569 uses the term in a pastoral/exhortatory register that feels editorial rather than substrate. The substrate likely used a Persian term for the proceeding divine breath or life-giving influx."
+      "title": "\"Saklas\" is a Gnostic naming overlay in §544",
+      "current_state": "§544: \"All [these a]bortions, amongst them are Saklas and his consort and the ones whom they have served [ ... ], they are the ones that shaped Adam and Eve.\"",
+      "recommendation": "Flag \"Saklas and his consort\" as a Gnostic/Sethian naming overlay. The substrate likely used a Persian demonological designation — possibly \"Az\" (the demon of concupiscence/greed) for the male figure, and \"Jeh\" (the whore/demoness) for the consort, both from Zoroastrian demonology. The Bundahishn tradition specifically identifies Az and Jeh as involved in the corruption of the first humans.",
+      "explanation": "\"Saklas\" is Aramaic for \"fool\" and is a distinctly Gnostic/Sethian name for the demiurge. It appears in the Apocryphon of John and other Sethian texts. Mani, who was raised among Elkesaites and influenced by Sethian Gnosticism, imported this name into his system. A Persian substrate predating Mani would not have used this Aramaic Gnostic term. The substrate's own cosmological vocabulary, consistently Persian throughout, would have designated this figure with Iranian demonological terminology."
     },
     {
       "id": 4,
-      "category": "naming_overlay",
+      "category": "residual_editorial",
       "severity": "significant",
       "section_refs": [
-        "§191"
+        "§529"
       ],
-      "title": "\"Jesus the Youth\" as Manichaean entity name",
-      "current_state": "§191: \"he formed [J]esus the Youth\" — within a passage describing the fourth liberation, where divine truth descends through successive degrees and forms a regenerated understanding.",
-      "recommendation": "Flag as Manichaean overlay. \"Jesus the Youth\" is a specific Manichaean entity (the newly-formed spiritual understanding within the regenerating person). The substrate described this functionally — likely as the new or renewed understanding formed by divine truth's descent.",
-      "explanation": "\"Jesus the Youth\" is a unique Manichaean entity distinct from \"Jesus the Splendour.\" It represents the newly constituted spiritual understanding formed within the natural person. The substrate teaching at §191 describes how divine truth, after descending through successive degrees, forms a new regenerated understanding — a functional description that the Manichaean editor named \"Jesus the Youth\" by mapping Christological terminology onto a cosmic/regenerative process."
+      "title": "Manichaean dialogue frame retained in §529",
+      "current_state": "§529: \"There are some among us telling us that we [know and perceive] that the (Ambassador) consents about [tha]t f[igure] of flesh; he who shall be fashi[oned in the flesh] at another time.\"",
+      "recommendation": "Flag §529 as residual editorial material. This is a Manichaean scholastic dialogue frame — \"There are some among us telling us\" introduces an intra-community theological objection. The substrate teaching proper begins at §530, which provides the doctrinal response. §529 should have been classified as FRAME, not CORE.",
+      "explanation": "The phrase \"There are some among us telling us\" is a characteristic Manichaean scholastic formula for introducing theological questions or objections from within the community. It presupposes a Manichaean institutional setting where disciples raise problems. The substrate teaching is cosmological instruction, not community dialogue. The actual substrate content — the explanation of why the Ambassador displayed his image — begins at §530 and continues coherently without §529."
     },
     {
       "id": 5,
       "category": "naming_overlay",
       "severity": "significant",
       "section_refs": [
-        "§11",
-        "§306"
+        "§379",
+        "§569"
       ],
-      "title": "\"holy church\" / \"churches\" as Manichaean institutional vocabulary",
-      "current_state": "§11: \"Its consideration is the holy church.\" §306: \"all the churches shall gather; and all the [life] that will be purified from the world returns to him.\"",
-      "recommendation": "Flag as Manichaean institutional overlay. The substrate described the first/outermost degree of the good tree functionally — as the communion of those conjoined in charity, or the outermost receptive community. \"Church\" (ⲉⲕⲕⲗⲏⲥⲓⲁ) is a Greek loanword carrying Christian institutional connotations that the substrate did not possess.",
-      "explanation": "§11 maps the five ascending degrees of the good tree to cosmic entities. The first degree (\"consideration\") is mapped to \"the holy church\" — a Manichaean identification of the lowest degree with the institutional community. The substrate teaching is about a cosmic receptive function, not an institution. The correspondential reading translates it as \"the communion of those conjoined in charity,\" which captures the functional substrate meaning. §306 similarly uses \"churches\" where the substrate likely described \"gatherings\" or \"assemblies\" of spiritual life."
+      "title": "\"Holy Spirit\" is a Christian naming overlay",
+      "current_state": "§379: \"they have blasphemed and despised the Holy Spirit since [ev]ery generation of the world.\" §569: \"The H[o]ly Spirit reigns. It does all that it pleases. It annuls [the] will of [S]in... the will of the [Ho]ly Spir[it] comes about.\"",
+      "recommendation": "Flag both occurrences. The substrate designation was almost certainly \"Spenta Mainyu\" (Holy/Bounteous Spirit) from Zoroastrian theology, or \"Wahisht Manishnih\" (Best Thought/Spirit). The Christian term \"Holy Spirit\" (πνεῦμα ἅγιον) overlays this older Iranian concept. Note that §112 uses \"the first Holy Spirit\" as an epithet for the Mother of Life, which may preserve a more authentic substrate formulation where the proceeding divine spirit is associated with the feminine matrix of life — closer to the Zoroastrian pairing.",
+      "explanation": "\"Holy Spirit\" as a distinct theological term is Christian in origin. The substrate's Iranian cosmology had \"Spenta Mainyu\" — the Bounteous/Holy Spirit of Ahura Mazda — which is not identical to the Christian Third Person of the Trinity but was mapped onto it by the Manichaean editor working in a Christian milieu. In §569, the \"Holy Spirit\" appears alongside \"Light Mind\" in what seems like a passage where two naming traditions (Christian and Hellenistic) have overlaid the original Persian designations."
     },
     {
       "id": 6,
       "category": "naming_overlay",
       "severity": "significant",
       "section_refs": [
-        "§544"
+        "§11"
       ],
-      "title": "\"Saklas and his consort\" as Gnostic naming overlay",
-      "current_state": "§544: \"All [these a]bortions, amongst them are Saklas and his consort and the ones whom they have served\"",
-      "recommendation": "Flag \"Saklas\" as a Gnostic naming overlay. The name derives from Aramaic/Hebrew (\"fool\") and belongs to Gnostic demiurgic traditions. The substrate likely described this entity by a Persian/Iranian designation for the ruling self-intelligence or chief of derivative falsities.",
-      "explanation": "\"Saklas\" is a distinctly Gnostic name for the ignorant demiurge, appearing in texts like the Apocryphon of John and the Gospel of Judas. Its presence in §544 — a passage about the formation of Adam — indicates that the Manichaean editor imported Gnostic nomenclature into the substrate teaching. The Persian substrate would have used a different term, likely functional (e.g., \"the chief of derivative falsities\" or an Iranian name for the ruling self-intelligence). This is a naming overlay from a specific non-Persian tradition."
+      "title": "\"Holy church\" in §11 is institutional vocabulary replacing a cosmic entity name",
+      "current_state": "§11: \"Its consideration is the holy church.\" This maps the outermost faculty of the \"good tree\" to \"the holy church,\" while the other four faculties are mapped to cosmic entities: Pillar of Glory, First Man, Third Ambassador, the Father.",
+      "recommendation": "Flag \"the holy church\" as a Manichaean institutional replacement. The substrate's five-fold mapping requires five cosmic entities at parallel levels of generality. The other four are all cosmic figures; \"church\" (ἐκκλησία) is an institutional community term that breaks the structural pattern. The substrate likely had a cosmic entity name here — possibly the Persian equivalent of the \"assembly of the righteous\" (hamkār) or an entity name like \"Srōsh\" (Obedience/Hearkening, an important Zoroastrian figure associated with the outermost reception of divine truth).",
+      "explanation": "The five-fold mapping in §11 (consideration→counsel→insight→thought→mind mapped to five cosmic entities) is architecturally parallel to the five-fold mapping in §14 (the bad tree's five faculties mapped to five cosmic states: law of death, transmigration, gehenna, dark vessel, pit/lump). In §14, all five mappings are to cosmic/spiritual states. In §11, four of five mappings are to cosmic entities, but the fifth (\"consideration\" → \"holy church\") breaks the pattern by inserting Manichaean institutional vocabulary. This asymmetry indicates editorial replacement."
     },
     {
       "id": 7,
       "category": "residual_editorial",
       "severity": "significant",
       "section_refs": [
-        "§529"
+        "§106"
       ],
-      "title": "Community dialogue framing preserved as core",
-      "current_state": "§529: \"There are some among us telling us that we [know and perceive] that the (Ambassador) consents about [tha]t f[igure] of flesh...\"",
-      "recommendation": "Flag §529 as residual editorial framing. This paragraph introduces a theological objection from within the Manichaean community (\"There are some among us telling us...\"). The response in §530–§535 contains genuine substrate teaching about the Ambassador's image, but §529 itself is community dialogue framing that belongs to the editorial layer.",
-      "explanation": "The phrase \"There are some among us telling us\" is a dialogue marker from a community teaching setting — it positions the passage as a response to an internal Manichaean doctrinal debate. This is institutional framing, not substrate. The substrate teaching proper begins at §530 with the cosmological explanation of why the Ambassador displayed his image. §529 should have been classified as FRAME material."
+      "title": "\"The elect one\" is Manichaean institutional vocabulary",
+      "current_state": "§106: \"[the] heart of the elect one, who is come forth from his bo[d]y, shall be calm for [him].\"",
+      "recommendation": "Flag \"the elect one\" as Manichaean institutional language. The Manichaean community was divided into \"elect\" (eklektoi) and \"hearers\" (catechumens). This is institutional terminology, not substrate vocabulary. The substrate likely used a term like \"the purified one\" or \"the righteous one\" (possibly Persian \"ashavan\" — one who follows asha/truth).",
+      "explanation": "\"Elect\" (ⲥⲱⲧⲡ) is the technical designation for the fully initiated members of the Manichaean community. This institutional vocabulary belongs to the later organizational layer, not to the cosmological substrate. The passage otherwise describes a universal spiritual process (the departure of the soul from the body and its reception by the Light Form), which does not require specifically Manichaean institutional categories."
     },
     {
       "id": 8,
       "category": "residual_editorial",
       "severity": "significant",
       "section_refs": [
-        "§569"
+        "§78",
+        "§197",
+        "§291",
+        "§313"
       ],
-      "title": "Pastoral exhortation mixed with substrate in body-senses passage",
-      "current_state": "§569: \"The Living Spirit has become lord over all its limbs. It has bound them with a chain of peace, and sealed them with the seal of truth... The H[o]ly Spirit reigns. It does all that it pleases. It annuls [the] will of [S]in, the begin-ning and the end. [In contrast], the will of the [Ho]ly Spir[it] comes about, and the purpose of the Light Mind.\"",
-      "recommendation": "Flag §569 as containing residual editorial material mixed with substrate. \"Chain of peace\" and \"seal of truth\" may echo Pauline vocabulary (cf. Ephesians 6:15). \"The beginning and the end\" echoes Revelation 1:8. The repeated \"Holy Spirit\" is Christian overlay. The substrate teaching about divine good taking authority over the natural faculties is genuine, but the concluding language is editorial/pastoral.",
-      "explanation": "§569 concludes the long teaching about the five senses (§544–§569) with what reads as a pastoral exhortation. The substrate content — the displacement of evil's authority from the body's faculties by the influx of divine good — is genuine. But the register shifts at \"The H[o]ly Spirit reigns\" into language that carries distinctly Christian/Pauline resonance. The phrase \"the begin-ning and the end\" has no parallel in Iranian cosmological vocabulary but directly echoes Revelation. This suggests the Manichaean editor appended a devotional conclusion to the substrate teaching."
+      "title": "\"Apostle\" is Christian/Manichaean institutional vocabulary",
+      "current_state": "§78: \"The first capacity is the Apostle of Light.\" §197: \"seal the commandment and the [mission] of all [the] apostles.\" §291: \"the father of all the apostles.\" §313: \"The ninth throne appointed and established is for the [a]postle.\"",
+      "recommendation": "Flag all occurrences of \"apostle\" (ⲁⲡⲟⲥⲧⲟⲗⲟⲥ). This is Greek Christian vocabulary adopted by the Manichaean system. The substrate likely used a Persian term for the function of one who communicates or transmits divine truth — possibly related to \"frēstag\" (messenger/envoy) or a similar Persian designation for the transmitter of sacred knowledge.",
+      "explanation": "\"Apostle\" (ἀπόστολος) is a specifically Christian designation that Mani adopted for his own institutional hierarchy (Mani himself claimed the title). The substrate teaching describes a cosmic function — the communication of divine truth to the person — not an ecclesiastical office. The Persian substrate would have used its own vocabulary for this transmitting function."
     },
     {
       "id": 9,
-      "category": "residual_editorial",
+      "category": "over_stripped",
       "severity": "significant",
       "section_refs": [
-        "§379"
+        "§122",
+        "§123",
+        "§124",
+        "§125",
+        "§126"
       ],
-      "title": "Synoptic Gospel echo in description of second death",
-      "current_state": "§379: \"they have blasphemed and despised the Holy Spirit since [ev]ery generation of the world.\"",
-      "recommendation": "Flag this phrase as a Christian overlay. The Synoptic concept of \"blasphemy against the Holy Spirit\" (Mark 3:29, Matthew 12:31) has been inserted into the substrate teaching about the second spiritual death. The substrate likely described the offense in terms of profaning or rejecting the divine proceeding.",
-      "explanation": "The phrase \"blasphemed and despised the Holy Spirit\" has no parallel in Iranian cosmological vocabulary but directly echoes the Synoptic unforgivable sin. The substrate teaching about the second death (§377–§380) is structurally sound — two deaths, one temporal and one eternal — but this specific phrase imports Christian soteriology into what should be a Persian correspondential description of permanent spiritual death resulting from the willful rejection of the divine proceeding."
+      "title": "Five resurrectors sequence is severely fragmented — possible over-stripping",
+      "current_state": "§122 is almost entirely gap: \"[the first resurrector is the Living Spirit, who awakens] it therein [and raises it up].\" §123: \"The second resurrector is [the Mother of Life].\" §124–126 are heavily gapped. The five-fold teaching architecture demands five clear identifications with their functions, but the extracted text has major discontinuities.",
+      "recommendation": "Investigate whether the extraction pipeline removed material from this sequence as FRAME or PASTORAL when it was actually substrate. The five-fold pattern (five resurrectors parallel to five fathers, five wars, five releases) is a fundamental structural element of the substrate. The degree of fragmentation here is anomalous compared to other five-fold sequences that survive more completely (§63–83, §179–185, §186–197).",
+      "explanation": "Comparing this to parallel five-fold sequences: the five fathers (§63–83) survive with substantial detail for each; the five wars (§179–185) survive coherently; the five releases (§186–197) are partially fragmented but retain their structure. The five resurrectors (§122–126) are far more severely damaged. While some of this may be genuine manuscript lacunae, the pattern of loss — with the names and functions of the resurrectors particularly affected — suggests that the extraction pipeline may have classified some of this material as editorial when it was actually substrate."
     },
     {
       "id": 10,
-      "category": "naming_overlay",
+      "category": "over_stripped",
       "severity": "significant",
       "section_refs": [
-        "§4",
-        "§35",
-        "§327",
-        "§523",
-        "§610",
-        "§723"
+        "§405"
       ],
-      "title": "\"Crucified\" / \"Cross of Light\" as Manichaean doctrinal vocabulary",
-      "current_state": "§4: \"He crucified it.\" §35: \"the Living [Spir]it crucified in the uni[verse].\" §523: \"the entire ruling-power is entwined and crucified [in the Darkness].\" §610: \"the Cross of Light, the living soul.\" §723: the 'Light Cross'.",
-      "recommendation": "Flag \"crucified\" and \"Cross of Light\" as Manichaean doctrinal vocabulary overlaid on substrate concepts. The substrate likely used a Persian term meaning \"spread out and fixed\" or \"bound fast\" — the cosmic fixing of light-elements in matter. The Manichaean editor rendered this using σταυρόω (crucify), introducing Christian passion-theology associations.",
-      "explanation": "The Manichaean \"Cross of Light\" (crux lucis) is a central Manichaean doctrine: the suffering of light particles fixed throughout material creation. While this doctrine may translate an older Persian concept of divine wisdom bound within the natural order, the vocabulary of \"crucifixion\" and \"cross\" imports Christian resonance that corrupts the substrate reading. The Persian original likely used terms for binding, fastening, or spreading — cosmic fixing without soteriological passion-theology associations."
+      "title": "First item of twelve-deed list entirely missing",
+      "current_state": "§403 introduces twelve great deeds. §404 begins describing the first deed. But §405 reads: \"The [first is / ...]\" — the content is entirely cut off. §406 then begins \"The second is error...\"",
+      "recommendation": "Investigate whether the content of the first deed was removed by extraction or is genuine manuscript loss. The twelve-deed structure (§403–§422) is otherwise complete from the second deed onward, suggesting this is not a transmission gap but potentially an extraction artifact.",
+      "explanation": "The teaching at §403–§422 systematically lists twelve benefits of discharging the three vessels. All twelve items are present except the first, which cuts off immediately after its introductory formula. If the first deed's content was classified as FRAME or PASTORAL and stripped, this would explain the gap. The content likely described the primary benefit of preventing evil from spreading — matching the architectural logic of §404."
     },
     {
       "id": 11,
       "category": "residual_editorial",
       "severity": "minor",
       "section_refs": [
-        "§78"
+        "§162"
       ],
-      "title": "\"Apostle of Light\" as Manichaean/Christian term",
-      "current_state": "§78: \"The first power is the Apostle of Light.\"",
-      "recommendation": "Flag as naming overlay. \"Apostle\" (ἀπόστολος) is a Christian/Manichaean term. The substrate described this function — the one who communicates divine truth to the mind — without Christian apostolic vocabulary.",
-      "explanation": "\"Apostle\" carries specifically Christian institutional connotations (one sent forth by Jesus). The substrate teaching in §77–§80 describes the fourth father's three derivative powers as functional principles of the mind's illumination. The first — the communicator of divine truth — would have had a Persian functional designation, not the Greek loanword for Christian missionary."
+      "title": "\"Good news\" (euangelion) is Christian vocabulary",
+      "current_state": "§162: \"He also gave hope to Adam, and the good news [of the] glorious [kingdom]\"",
+      "recommendation": "Flag \"good news\" (ⲉⲩⲁⲅⲅⲉⲗⲓⲟⲛ) as a Christian vocabulary overlay. The substrate likely used a Persian term for the communication of divine purpose — possibly \"peyām\" (message) or \"nwid\" (glad tidings in a non-specifically-Christian sense).",
+      "explanation": "\"Euangelion\" (εὐαγγέλιον) is a distinctly Christian term with strong Pauline associations. Its appearance here in a cosmological context — the divine wisdom communicating its purpose to the first human will — suggests the Manichaean editor replaced a Persian term with familiar Christian vocabulary."
     },
     {
       "id": 12,
-      "category": "residual_editorial",
+      "category": "naming_overlay",
       "severity": "minor",
       "section_refs": [
-        "§106",
-        "§842"
+        "§544"
       ],
-      "title": "\"the elect one\" / \"the elect person\" as Manichaean institutional term",
-      "current_state": "§106: \"the heart of the elect one, who is come forth from his bo[d]y, shall be calm.\" §842: \"Three images occur in the elect person.\"",
-      "recommendation": "Flag \"elect\" as Manichaean institutional vocabulary. The Manichaean church had two formal classes: \"the elect\" (electi) and \"the hearers\" (auditores). The substrate described the spiritual state functionally — the regenerate one, the purified one — without institutional class designations.",
-      "explanation": "In Manichaean ecclesiology, \"the elect\" is a formal institutional category with specific dietary and behavioral requirements. The substrate teaching in §106 describes someone departing from the body at death, and §842 describes degrees of the regenerating person — neither requires institutional vocabulary. The substrate likely used a functional term like \"the purified\" or \"the one who has completed.\" The Manichaean editor's institutional vocabulary has leaked into what should be cosmological description."
+      "title": "The theological question in §544 may be Manichaean scholastic rather than substrate",
+      "current_state": "§544: \"How did they find this beautiful image laid over their shape, even though when it was displayed to their fathers they were not in existence? They never saw the image of the Ambassador! And how did they take the seal of the image of the Ambassador?\"",
+      "recommendation": "Flag this passage as potentially Manichaean editorial problem-solving. The rhetorical questions address a logical problem internal to the Manichaean narrative sequence. The substrate teaching may have presented the transmission of the divine likeness differently, without needing to solve this specific logical gap.",
+      "explanation": "This reads as a scholastic objection: if the abortions weren't present when the Ambassador displayed his image, how did they copy it? The answer provided (§545–547) uses the substrate mechanism of Sin/Matter as transmitter, which is consistent with the substrate cosmology. But the framing of the problem as a logical puzzle to be solved is characteristic of Manichaean theological discourse, not of the declarative cosmological instruction style found throughout the substrate."
     },
     {
       "id": 13,
-      "category": "residual_editorial",
-      "severity": "minor",
-      "section_refs": [
-        "§197",
-        "§313",
-        "§418"
-      ],
-      "title": "\"apostles\" as Christian/Manichaean institutional term",
-      "current_state": "§197: \"the commandment and the [mission] of all [the] apostles.\" §313: \"The ninth throne... is for the [a]postle.\" §418: \"When the apostles [reach] them.\"",
-      "recommendation": "Flag as residual editorial. The substrate described those who communicate divine truth functionally, not as \"apostles.\" The term imports Christian institutional hierarchy into the substrate's cosmic architecture.",
-      "explanation": "The substrate teaching describes cosmic functions — the transmission of divine truth through successive degrees — using the language of Christian/Manichaean institutional roles. \"Apostle\" in §313 occupies a position in the eighteen thrones that corresponds to a specific function (the one sent forth into natural life), not an institutional office. The substrate likely used a Persian term for \"messenger\" or \"one sent forth\" without Christian apostolic connotations."
-    },
-    {
-      "id": 14,
-      "category": "residual_editorial",
-      "severity": "minor",
-      "section_refs": [
-        "§95"
-      ],
-      "title": "\"church tutelaries\" as institutional vocabulary",
-      "current_state": "§95: \"all of them also, and the church tutelaries (?), and the kinsfolk who belong to the household of his people.\"",
-      "recommendation": "Flag as residual editorial. The translator's own question mark acknowledges the term is problematic. The substrate described guardian truths of the spiritual community, not institutional officials.",
-      "explanation": "\"Church tutelaries\" introduces both \"church\" (Christian institutional) and \"tutelaries\" (guardian officials) into a passage describing the celestial goods and angelic intelligences that accompany the Celestial Human into combat. The substrate's vocabulary would have described functional spiritual guardians, not officials of an institution."
-    },
-    {
-      "id": 15,
-      "category": "over_stripped",
-      "severity": "minor",
-      "section_refs": [
-        "§47"
-      ],
-      "title": "Fourth infernal hunter described in single sentence vs. full paragraphs for others",
-      "current_state": "§47: \"The fourth [hunter is the spirit] of Darkness.\" Compare §44 (3 sentences), §45 (5 sentences), §46 (3 sentences).",
-      "recommendation": "Investigate whether content was stripped from §47. The structural parallel demands a description comparable to §44–§46. The brevity could be physical manuscript damage, but it could also indicate that a fuller description was classified as non-core during extraction.",
-      "explanation": "The four infernal hunters (§44–§47) form a systematic quaternary structure. The first three each receive substantial description: their method of ensnaring, their net, their domain. The fourth receives only a bare identification. While this could be intentional (the fourth being the ultimate irreducible evil beyond description), the structural expectation of parallel treatment suggests content may be missing. The correspondential reading fills in extensively ('the animating principle of all falsity from evil — the very life of the hells'), suggesting the translator also perceived a gap."
-    },
-    {
-      "id": 16,
-      "category": "over_stripped",
-      "severity": "minor",
-      "section_refs": [
-        "§127"
-      ],
-      "title": "Only three of five 'lessons' named in fragmentary passage",
-      "current_state": "§127 names only three: 'the peace', 'the silence', 'the day'. The text breaks off: \"ano[ther ...]\" The teaching explicitly states \"five lessons\" but only three are identifiable.",
-      "recommendation": "Investigate whether the fourth and fifth names were present in material classified as non-core. The systematic five-fold structure demands five positions. While physical damage is the most likely cause, extraction artifacts cannot be ruled out without checking the original classification.",
-      "explanation": "The five-fold architecture is the most fundamental structural principle of the substrate. Every other five-fold enumeration in the corpus (five elements, five fathers, five garments, five wars, five releases, etc.) is complete. The incompleteness here is anomalous and worth investigating, even though physical manuscript damage is the simplest explanation."
-    },
-    {
-      "id": 17,
       "category": "inconsistent_extraction",
       "severity": "minor",
       "section_refs": [
@@ -240,160 +189,201 @@
         "§198",
         "§317",
         "§367",
+        "§494",
         "§570",
         "§596",
+        "§623",
         "§665",
         "§716",
         "§788",
         "§883"
       ],
-      "title": "Q&A formulas preserved inconsistently across chapters",
-      "current_state": "Cosmological questions that set up systematic teachings are preserved in many chapters (e.g., §18 \"What are these three things?\", §107 \"what are the fourteen great aeons?\", §665 \"the twelve signs of the zodiac... How are they determined?\"). However, some chapter transitions are abrupt (e.g., §9→§10, §17→§18, §22→§23), suggesting that introductory Q&A formulas may have been stripped as 'frame' at those boundaries.",
-      "recommendation": "Review whether transitional Q&A formulas were stripped at chapter boundaries where preserved elsewhere. The cosmological questions are integral to the substrate's systematic teaching method and should be retained when they initiate a teaching sequence.",
-      "explanation": "The substrate teaches through systematic inquiry: a cosmological question establishes the domain, then the teaching unfolds as enumerated correspondences. Where these questions are preserved, the teaching reads coherently. Where chapter transitions are abrupt (especially §9→§10, §17→§18), the absence of a framing question may indicate that extraction stripped a genuine substrate inquiry as 'frame.' Since the pipeline was applied per-chapter, the criteria for retaining vs. stripping Q&A material may not have been applied uniformly."
+      "title": "Q&A teaching questions retained but with minor inconsistencies in framing",
+      "current_state": "Teaching questions that set up substrate content are retained in most chapters: §18 (\"What are these three things...\"), §107 (\"what are the fourteen great aeons...\"), §198, §317, §494, §665, §716, §788, §883. However, some chapters begin directly with teaching content without any question (§23, §48, §63, §283, §297), and it is unclear whether these originally had questions that were stripped.",
+      "recommendation": "Accept as largely consistent but note that if any chapters originally had teaching questions that were classified as FRAME and removed, this would create an inconsistency. The bare teaching questions retained (without \"And again he said...\") appear to be consistently preserved.",
+      "explanation": "The extraction appears to have generally preserved content questions while stripping frame connectives. The variation between chapters that open with questions and those that open directly with teaching may reflect genuine variation in the source text rather than extraction inconsistency. However, without access to the pre-extraction source, this cannot be determined with certainty."
+    },
+    {
+      "id": 14,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§225",
+        "§229",
+        "§48"
+      ],
+      "title": "Five dark elements preserve proto-Indo-Iranian cosmological categories",
+      "current_state": "§225: \"which [are] smoke, fire, wind, water and Darkness.\" §48: \"which are smoke, fire, wind, water and darkness.\" These five appear consistently throughout the corpus as the fundamental constituents of the realm of evil.",
+      "recommendation": "Note as deeper transmission evidence. This five-fold elemental system does not match classical Greek (four elements), nor standard Zoroastrian dualism (which typically works with moral rather than material categories). The sequence smoke-fire-wind-water-darkness maps to a pre-Zoroastrian Iranian or possibly Mesopotamian elemental cosmology that predates the specifically Persian vessel of the substrate.",
+      "explanation": "The canonical Zoroastrian system works with asha vs. druj (truth vs. lie) rather than material elements. The five-fold dark elemental system (smoke, fire, wind, water, darkness) appears to preserve an older stratum — possibly proto-Indo-Iranian or Mesopotamian — where the cosmos was understood through elemental categories. The addition of \"smoke\" and \"darkness\" as distinct elements beyond the Greek four suggests an independent elemental tradition. This five-fold system became the scaffolding upon which the entire substrate cosmology was built (five storehouses, five trees, five genera, five worlds, five kings)."
+    },
+    {
+      "id": 15,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§436",
+        "§437",
+        "§438",
+        "§439",
+        "§440",
+        "§441"
+      ],
+      "title": "Sea giant material preserves Zurvanite or pre-Zoroastrian cosmogonic imagery",
+      "current_state": "§437–441: A composite being formed from celestial residue discharged into a primordial sea. Its own \"thought\" collects and consolidates the sediment. It receives the \"seal of the seconds and the hours\" — the imprint of all cosmic cycles stamped upon its body. The sea \"conceived him and bore him\" and is his \"chief sculptor.\"",
+      "recommendation": "Note as deeper transmission. The image of a composite being formed from cosmic debris in a primordial sea, bearing the imprint of all celestial cycles upon its body, has strong parallels to Mesopotamian creation narratives (the formation of beings from Tiamat's defeated body) and to Zurvanite cosmogony (where cosmic time generates material forms). This material likely predates the specifically Zoroastrian-Persian formulation of the substrate.",
+      "explanation": "The sea giant passage is anomalous within the otherwise systematically organized substrate. Its imagery — primordial sea as womb, cosmic sediment shaped by its own will, the stamping of celestial cycles onto a material body — belongs to a mythological register different from the substrate's usual analytical cosmology. The concept of a cosmic being formed from the residue of divine ordering and bearing the imprint of all temporal cycles upon its body is characteristic of Zurvanite cosmogony, where Zurvan (Time) is the primordial generative principle. This material may represent one of the oldest layers preserved in the text, predating the specifically dualistic Zoroastrian framework."
+    },
+    {
+      "id": 16,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§804",
+        "§805",
+        "§806",
+        "§807",
+        "§808"
+      ],
+      "title": "Water reflection/inversion teaching preserves ancient Near Eastern cosmological wisdom",
+      "current_state": "§804–808 teaches that when one looks into water, the reflection is inverted (head down, feet up); this corresponds to the \"summons\" descending headfirst into the lower worlds and the \"obedience\" ascending headfirst upward. The passage states: \"the mystery of their fathers is being revealed to them whenever they stare down into the water.\"",
+      "recommendation": "Note as deeper transmission. The doctrine that the upper world is reflected inversely in the lower — that celestial archetypes appear upside-down in their natural correspondences — is extremely ancient, appearing in Mesopotamian cosmological texts and in early Vedic/Upanishadic traditions (the inverted tree of Katha Upanishad). The substrate's use of this image may preserve a teaching that predates the specifically Persian vessel.",
+      "explanation": "The inverted reflection as a cosmological principle — upper becoming lower, inmost becoming outermost — is found across ancient Near Eastern and Indo-Iranian traditions. The passage's application to the summons/obedience pair (divine truth descends inmost-first, like a person plunging headfirst; the response ascends exterior-first) expresses a law of correspondence that is more fundamental than any single cultural formulation. The birthing image in §808 (the child is born headfirst = highest enters lowest first) reinforces this as a universal structural principle that the Persian substrate inherited from an older transmission."
+    },
+    {
+      "id": 17,
+      "category": "cross_passage_pattern",
+      "severity": "observation",
+      "section_refs": [
+        "§11",
+        "§14",
+        "§48",
+        "§63–§83",
+        "§84–§89",
+        "§92–§105",
+        "§108–§109",
+        "§138–§145",
+        "§179–§185",
+        "§186–§197",
+        "§265–§266",
+        "§272–§274",
+        "§330",
+        "§681–§686",
+        "§731–§740",
+        "§830"
+      ],
+      "title": "Five-fold organizing principle pervades the entire corpus as its fundamental structural law",
+      "current_state": "The number five governs the substrate's architecture at every scale: five elements (§48), five garments/sons (§92, §330), five fathers (§63–83), five limbs of good and evil trees (§11, §14), five greatnesses (§138–145), five wars (§179–185), five releases (§186–197), five watch-stations (§681–686), five storehouses (§48), five shapes on the King of Darkness (§50), five hunters and four counterparts (§39–47), five emanations from five limbs (§265–266), eight places of living fire (§731–740), and 5×5=25 characteristics (§830).",
+      "recommendation": "Document as a corpus-scale structural pattern. This five-fold organization was invisible at the per-chapter level but emerges clearly when the full corpus is read continuously. The five-fold system is the substrate's primary organizing principle — every teaching domain (cosmogony, anthropology, soteriology, eschatology) is structured around fives or multiples of five. This suggests the substrate was originally organized as a unified five-fold teaching, not as separate chapters.",
+      "explanation": "No single chapter reveals the full extent of this pattern. The five-fold structure appears in creation (five elements, five trees, five creatures), in the divine order (five fathers, five greatnesses, five emanations), in cosmic combat (five wars, five hunters), in redemption (five releases, five resurrectors, five signs), in governance (five watch-stations), and in the human microcosm (five senses, five faculties). The substrate's entire cosmology is built on the principle that reality unfolds through five discrete degrees — a teaching that the chapter-by-chapter extraction obscured but that the continuous corpus reveals as the single most important structural feature of the text."
     },
     {
       "id": 18,
       "category": "cross_passage_pattern",
       "severity": "observation",
       "section_refs": [
-        "§11",
-        "§48",
-        "§50",
-        "§63–§83",
-        "§138–§145",
-        "§179–§185",
-        "§186–§197",
-        "§265–§266",
-        "§509–§512",
-        "§681–§692",
-        "§810–§815",
-        "§830"
+        "§319–§324",
+        "§396",
+        "§520",
+        "§548–§569",
+        "§588–§595",
+        "§678–§711",
+        "§797–§803"
       ],
-      "title": "Five-fold systematic architecture as the substrate's governing structural principle",
-      "current_state": "The entire corpus is organized around five-fold enumeration: five elements (§48), five fathers (§63–§83), five greatnesses (§138–§145), five wars (§179–§185), five releases (§186–§197), five emanations from five faculties (§265–§266), five garments/sons (§509–§512), five watches (§681–§692), five productions (§810–§815), five in twenty-five (§830).",
-      "recommendation": "Document as the substrate's primary architectural principle. This five-fold pattern — corresponding to five discrete degrees of the regenerating mind — unifies the entire corpus. Every systematic teaching repeats it at a different scale. It is the substrate's organizing logic, visible only at corpus scale.",
-      "explanation": "The five-fold map is not a single teaching but the universal structural principle of the entire substrate. It appears at cosmic scale (five elements of darkness, five worlds), at divine scale (five fathers, five greatnesses), at salvific scale (five wars, five releases), at anthropological scale (five senses, five body-faculties), and at regenerative scale (five garments of truth, five productions from nourishment). This structural recursion — the same five-fold pattern repeating at every level — is the substrate's way of teaching correspondences: what exists in the macrocosm exists by the same form in the microcosm. Chapter boundaries obscure this recursion; only corpus-scale reading reveals it as a single integrated architecture."
+      "title": "Body-cosmos correspondence system spans the entire corpus across multiple separated chapters",
+      "current_state": "The teaching that the human body mirrors the cosmic structure appears in: §319–324 (head as ruling love, limbs depending on it), §396 (child in womb = nine garments), §520 (body with many heads = organized evil), §548–569 (five senses as five faculties with repositories), §588–595 (hidden/visible body parts = hidden/revealed divine), §678–711 (explicit macro-micro correspondence: head→garments, heart→wheel, genitals→Adamant, etc.), §797–803 (dragon with fourteen heads = body's sense organs).",
+      "recommendation": "Document as a corpus-scale correspondential system. These passages, separated across many chapters, constitute a single coherent teaching: the human body is the ultimate natural correspondence of the entire spiritual cosmos, with each organ, faculty, and pathway corresponding to a cosmic entity, degree, or process. This was the substrate's most developed application of the doctrine of correspondences.",
+      "explanation": "The body-cosmos correspondence is not an incidental metaphor but a systematic teaching that develops across the entire corpus. §678–711 provides the explicit key (head = five garments, heart = wheel, etc.), but the same correspondences appear implicitly in every chapter that discusses the human faculties. The five senses (§548–569), the body's fourteen openings (§797–803), and the nine coverings of the child in the womb (§396) all belong to a single integrated teaching that the chapter-by-chapter extraction necessarily fragmented."
     },
     {
       "id": 19,
       "category": "cross_passage_pattern",
       "severity": "observation",
       "section_refs": [
-        "§319–§322",
-        "§396",
-        "§548–§564",
-        "§678–§712",
-        "§797–§803"
+        "§163–§166",
+        "§172",
+        "§176",
+        "§197",
+        "§255",
+        "§260",
+        "§333",
+        "§378",
+        "§586–§587",
+        "§657"
       ],
-      "title": "Body-cosmos correspondence as a sustained teaching system",
-      "current_state": "§678–§712 is the fullest exposition: the head = five garments, neck-to-heart = ten firmaments, heart = the sphere, etc. But the same system appears in abbreviated form throughout: §319–§322 (head as ruling love), §396 (child in womb = nine coverings), §548–§564 (five senses as five faculties), §797–§803 (dragon with fourteen heads = body's sense organs).",
-      "recommendation": "Document as a unified teaching system that spans multiple chapters. The body-cosmos mapping is not confined to one chapter but develops progressively: from simple analogies (§319) through intermediate correspondences (§396, §548–§564) to the full systematic exposition (§678–§712) and its infernal inversion (§797–§803).",
-      "explanation": "The body-cosmos correspondence is the substrate's anthropological teaching: the human form is a complete image of the spiritual world in miniature. Each chapter that touches this theme adds detail to a single integrated map. §678–§712 provides the definitive key (head = inmost celestial, heart = center, feet = outermost natural), but the earlier chapters prepare it through partial correspondences. The infernal version (§797–§803) inverts the same map, showing how the proprium organizes itself in fourteen powers and five hidden recesses. This bidirectional mapping — the divine human and the infernal human as structural mirrors — is only visible when the chapters are read as a continuous sequence."
+      "title": "\"Last Statue\" concept as eschatological teaching spanning the corpus",
+      "current_state": "The \"Last Statue\" — the final collective form of regenerated humanity — appears throughout: §163 (counsel of life gathers and sculpts the Last Statue), §166 (gathers lives and builds upon its body), §172 (Statue ascends at the end), §176 (rises from the lump), §197 (they complete the life of the Statue), §260 (the fifth age: how the Statue will be sculpted), §333 (Living Spirit brings up the Last Statue), §378 (remainder builds the Last Statue), §586–587 (when the Statue goes up, souls are severed from it), §657 (last hour of the day = Statue ascending).",
+      "recommendation": "Document as a corpus-spanning eschatological teaching. The Last Statue is not a single event mentioned once but the culminating concept of the substrate's entire soteriology — it appears in creation, in cosmology, in the five wars, in the three seasons, in the five necessary things, in the four griefs, and in the final dissolution. It represents the completed form of the regenerated Grand Human into which all redeemed wisdom is gathered.",
+      "explanation": "The \"Last Statue\" is arguably the substrate's most distinctive eschatological concept. Unlike the Christian eschaton (judgment and kingdom) or the Zoroastrian renovation (frashōkereti), the Statue is a *form* — a completed cosmic-human body built from gathered and purified spiritual substance. It is simultaneously the Grand Human (the collective body of heaven), the completed regenerate individual, and the final act of divine providence. Its repeated appearance across so many different teaching contexts reveals it as the substrate's answer to the question: what is the ultimate purpose of all spiritual combat, purification, and regeneration? The answer is: the construction of this living form."
     },
     {
       "id": 20,
       "category": "cross_passage_pattern",
       "severity": "observation",
       "section_refs": [
-        "§4–§8",
-        "§91–§106",
-        "§147–§166",
-        "§168–§178",
-        "§267–§271",
-        "§325–§333",
-        "§509–§512",
-        "§516–§518",
-        "§582–§587",
-        "§851–§866"
+        "§88",
+        "§108",
+        "§146",
+        "§163–§166",
+        "§192",
+        "§197",
+        "§295",
+        "§330",
+        "§724",
+        "§741–§743",
+        "§830",
+        "§832",
+        "§884–§886"
       ],
-      "title": "Descent-and-ascent as the universal regenerative pattern",
-      "current_state": "The pattern repeats across the entire corpus: the First Man descends into combat and ascends (§4–§8); the five signs attend both descent and ascent (§91–§106); five advents each follow a descent/engagement/return pattern (§147–§166); three epochs trace one macro-descent/ascent (§168–§178); the garments of truth descend and are stripped (§509–§512); four griefs attend descent and final ascent (§582–§587); three entreaties mirror the descent/rescue/restoration cycle (§851–§866).",
-      "recommendation": "Document as the substrate's universal form for teaching regeneration. Every chapter that describes a divine operation follows this pattern. The substrate teaches that all spiritual combat, all reformation, all liberation follows a single form: descent into the state of falsity, engagement with evil on its own ground, and elevation of whatever is of wisdom back to its celestial origin.",
-      "explanation": "This pattern is not merely narrative but structural: it is the substrate's way of saying that the form of all divine operation is the same at every scale. The Lord's descent into temptation, the soul's descent into the natural body, the truth's descent into falsity — all follow the identical arc. The five signs of §91–§106 make this explicit: the same peace that attends the descent attends the ascent (§100). The pattern is visible in individual chapters but its universality — its appearance in every single teaching unit dealing with divine action — is only apparent at corpus scale."
+      "title": "\"Summons and obedience\" as the substrate's most fundamental paired concept",
+      "current_state": "The pair \"summons and obedience\" (the divine calling forth and the will's receptive response) appears in at least twelve distinct teaching contexts across the corpus, from cosmogony to anthropology to eschatology. In §742–743 this pair is described with special vividness: the summons is a \"peace letter\" sent from the Living Spirit, the obedience is the answering letter detailing all that was endured.",
+      "recommendation": "Document as the substrate's deepest structural concept. This pair — the active calling-forth of divine truth and the passive-receptive response of the human will — is the mechanism through which every act of divine providence operates in the substrate's teaching. It corresponds precisely to what Swedenborg calls influx and reception, or the Divine proceeding and the human acknowledgment. Its ubiquity across all teaching domains confirms it as a foundational substrate concept, not an editorial addition.",
+      "explanation": "The summons-obedience pair functions at every level: cosmogonically (§108, §146 — they are counted among the structural elements of the universe), anthropologically (§88 — they clothe the Divine Human), soteriologically (§192, §197 — the fifth release operates through them), eschatologically (§163–166, §295 — the great counsel IS the summons and obedience, which gathers the Last Statue), and practically (§742–743 — described as letters exchanged between divine truth and the captive celestial will). No other paired concept in the text has this universal distribution. The pair IS the substrate's doctrine of the relationship between the Divine and the human."
     },
     {
       "id": 21,
-      "category": "cross_passage_pattern",
-      "severity": "observation",
+      "category": "narrative_break",
+      "severity": "minor",
       "section_refs": [
-        "§167–§178",
-        "§369",
-        "§455–§460"
+        "§588",
+        "§589",
+        "§590",
+        "§591",
+        "§592",
+        "§593",
+        "§594",
+        "§595"
       ],
-      "title": "Three epochs as the structural spine of the substrate's cosmological history",
-      "current_state": "§167–§178 provides the definitive exposition: First epoch = descent and combat of the First Man; Second epoch = ordering by the Living Spirit and Mother of Life; Third epoch = purification by the Ambassador until the Last Statue ascends. §369 recapitulates: \"These three deeds were begun on this first day.\" §455–§460 provide a complementary \"before\" sequence establishing what was prepared before each epoch.",
-      "recommendation": "Document as the substrate's historical architecture. The three epochs are not merely chronological divisions but the three fundamental modes of divine operation: combat (first), ordering (second), purification (third). Every other teaching in the corpus occurs within one of these three epochs.",
-      "explanation": "The three-epoch structure provides the temporal framework within which all other teachings are situated. The five wars, five releases, twelve judges, eighteen thrones, and all other systematic enumerations describe functions that occur within this three-part framework. §174–§177 specifies the relative spiritual durations: the first epoch (combat in the hells) vastly exceeds the others, teaching that the Lord's work of subjugating evil is the most immense spiritual undertaking. The third epoch (ongoing purification) is greater than the second (ordering) but less than the first. This proportional teaching is only visible when the three-epoch passages are read together."
+      "title": "§588–§595 body analogy sequence interrupted by shift to Jesus the Splendour",
+      "current_state": "§588–592 develops a systematic body analogy: hidden parts = the Father, two eyes = two ships, living soul = grasped and wounded. §593 then shifts to \"the tongue that speaks\" and §594 applies this specifically to \"Jesus the Splendour\" who \"manifests and reveals about everything.\" The systematic body mapping gives way to a specific christological identification.",
+      "recommendation": "Note as a potential seam where the Manichaean editor applied the \"Jesus the Splendour\" naming overlay onto what was originally a systematic body-cosmos teaching. The substrate likely continued the body analogy with a different designation for the revealing/speaking faculty — the divine wisdom that articulates and makes known.",
+      "explanation": "The body analogy in §588–592 follows a clear structural pattern: each body part corresponds to a cosmic entity. The shift to \"Jesus the Splendour\" in §594 breaks this pattern by introducing a named figure with a biographical-sounding description (\"shall be sent from the greatness\"). The substrate's body-cosmos mapping (seen fully in §678–711) would have used a functional designation for this faculty rather than a personal name from the Manichaean editorial layer."
     },
     {
       "id": 22,
       "category": "deeper_transmission",
       "severity": "observation",
       "section_refs": [
-        "§48",
-        "§225",
-        "§229",
-        "§667–§668"
+        "§393",
+        "§394",
+        "§395",
+        "§396",
+        "§397"
       ],
-      "title": "Five dark elements (smoke, fire, wind, water, darkness) as Zurvanite substrate vocabulary",
-      "current_state": "§48: \"smoke, fire, wind, water and darkness.\" §225: \"which [are] smoke, fire, wind, water and Darkness.\" These five are consistently treated as the fundamental constituents of evil, each with its own world, king, body-metal, and taste.",
-      "recommendation": "Document as evidence of Zurvanite/proto-Iranian cosmological vocabulary predating the Zoroastrian-Persian formulation. The fivefold division of evil into these specific elements — with their corresponding metals, tastes, and animal forms — has no direct parallel in standard Zoroastrianism but corresponds to Zurvanite speculative cosmology.",
-      "explanation": "Standard Zoroastrian cosmology posits a simpler dualism (Ahura Mazda vs. Angra Mainyu) without this specific fivefold elaboration of evil's material constitution. The five dark elements, each with a distinct quality (smoke = obscurity of understanding, fire = self-love, wind = false persuasion, water = falsity, darkness = total privation), represent a pre-Zoroastrian or Zurvanite speculative tradition about the structure of evil. The elaborate system of correspondences — lion/eagle/demon/dragon/fish as rulers, gold/copper/iron/silver/lead as bodies, salty/sour/sharp/sweet/bitter as tastes (§58–§62) — preserves a complete sensory-metaphysical mapping that belongs to an older cultural vessel than the specifically Zoroastrian."
-    },
-    {
-      "id": 23,
-      "category": "deeper_transmission",
-      "severity": "observation",
-      "section_refs": [
-        "§436–§449"
-      ],
-      "title": "\"Sea giant\" as Mesopotamian Tiamat figure transmitted through Persian vessel",
-      "current_state": "§438–§446 describe a composite being formed from the refuse of the celestial sphere, discharged into the sea, where the sea's own thought shapes it into a figure stamped with the impressions of all the zodiacal signs and stars. It is formed to serve three purposes: purifying the sphere, restraining the cycle of knowledges, and serving as a gathering place.",
-      "recommendation": "Document as evidence of Mesopotamian cosmological vocabulary (Tiamat/chaos-sea-monster) transmitted through the Persian cultural vessel. The sea giant's formation from cosmic refuse in the primordial sea, its composite nature, and its role as a restraint upon cosmic powers parallel Mesopotamian creation mythology.",
-      "explanation": "The sea giant's formation narrative — a composite being shaped by the sea's own will from the residue of celestial purification, stamped with all astral impressions — has no direct Zoroastrian parallel but closely mirrors Mesopotamian Tiamat mythology: a primordial sea-being formed from chaos, whose body becomes the material for cosmic ordering. The Persian substrate has absorbed and recontextualized this Mesopotamian figure as a correspondential teaching about how the proprium (the composite selfhood) is formed from the accumulated refuse of spiritual purification, shaped by its own concupiscence, and fixed as a restraint within the created order."
-    },
-    {
-      "id": 24,
-      "category": "deeper_transmission",
-      "severity": "observation",
-      "section_refs": [
-        "§31",
-        "§33",
-        "§35",
-        "§52",
-        "§252",
-        "§278",
-        "§541"
-      ],
-      "title": "\"Matter\" (Hyle) as female sculptor/craftress — pre-Zoroastrian goddess figure",
-      "current_state": "§31: \"Matter, the sculptress... who has sculpted [the world].\" §35: \"[Mat]te[r] herself, the thought of death, is the [mother] of them all.\" §52: \"Matter, who is the thought of death, [the o]ne who sculpted him from the nature of the land of darkness.\" §278: \"the hard-hearted counsel of Matter, the mother of demons and fiends.\"",
-      "recommendation": "Document as evidence of a pre-Zoroastrian female cosmic figure — a mother-of-evil or dark goddess — transmitted through the Persian vessel. The consistent feminine gender, the active creative/sculptural role, and the designation as \"mother of all\" suggest an older mythological figure than the abstract Manichaean Hyle.",
-      "explanation": "\"Matter\" (Hyle) is the Manichaean term, but the substrate figure it overlays is distinctly active and feminine — she sculpts, fashions, gives birth, is called \"mother.\" This active female principle of evil-creation has parallels in Mesopotamian Tiamat and proto-Indo-Iranian dark goddess figures, but not in standard Zoroastrian cosmology, where Angra Mainyu is masculine. The substrate preserves a cultural layer in which the originating principle of material evil is a feminine creative force — the \"thought of death\" who sculpts the forms of the infernal world. The Manichaean editor retained her gender and creative function but renamed her with the Greek philosophical term \"Hyle\" (matter)."
-    },
-    {
-      "id": 25,
-      "category": "deeper_transmission",
-      "severity": "observation",
-      "section_refs": [
-        "§449",
-        "§541",
-        "§684"
-      ],
-      "title": "\"Adamant of Light\" as Mesopotamian/proto-Iranian combat figure",
-      "current_state": "§449: \"When the Adamant of Light was sent to it, he hastened after it to that place, smote it and threw it between mountains in the place made ready for it [and he] is set fast upon it till the end of the universe.\" §541: \"the Adamant of Light, the great 'instruction of vigour'. He humbled it in the districts of the north.\" §684: \"the Adamant [is master, his authority] reigns from the firmament down below.\"",
-      "recommendation": "Document as evidence of a pre-Zoroastrian divine warrior/subduer figure — an indestructible truth-principle that pins the chaos beast beneath mountains. The imagery of smiting, pinning under mountains, and holding fast \"till the end\" parallels Mesopotamian and Iranian combat myths (e.g., Thraetaona binding Azi Dahaka beneath Mount Damavand).",
-      "explanation": "The Adamant of Light — an indestructible divine principle that pins the monstrous evil beneath mountains — preserves what may be the oldest stratum of combat mythology in the substrate. The Iranian Thraetaona/Azi Dahaka myth (binding the three-headed dragon beneath a mountain until the end of time) is a close structural parallel. The designation \"Adamant\" (indestructible) and the action of pinning suggest a transmission from Avestan/proto-Iranian martial cosmology, older than the specifically Manichaean framework in which it now appears."
+      "title": "Medical/healing analogy preserves ancient Near Eastern therapeutic cosmology",
+      "current_state": "§393–397: A person with \"purulent sickness\" is healed by a \"wise doctor\" using three medicines — one that causes the sickness to break out above, one below, and one that heals calmly. This is then applied to the three vessels of evil. §396 develops the child-in-womb analogy with nine coverings. §397 describes the \"smell of the action of the demon\" that reveals the child — i.e., evil's own activity causes the birth of new spiritual life.",
+      "recommendation": "Note as deeper transmission evidence. The image of cosmic healing through three medicines applied to three directions (above, below, silently) has strong parallels to Mesopotamian and ancient Persian therapeutic traditions where cosmic illness requires cosmic medicine applied to the three regions of the body/cosmos (upper, lower, middle). The substrate inherited this ancient medical cosmology as a structural template for its doctrine of spiritual purification.",
+      "explanation": "Ancient Mesopotamian medical texts conceptualize illness as the invasion of demons that must be expelled through the three bodily orifices (upper, lower, and through the skin). The substrate transforms this into a cosmological principle: evil in the firmaments is expelled upward, evil in the earth is expelled downward, and the remaining evil is healed silently. The nine-covering womb analogy (§396) similarly preserves an ancient Near Eastern embryological cosmology where the developing being is surrounded by concentric layers corresponding to cosmic shells. These therapeutic and embryological frameworks predate the specifically Zoroastrian-Persian formulation and may represent Mesopotamian substrate beneath the Persian vessel."
     }
   ],
   "summary": {
-    "total_findings": 25,
-    "critical_count": 1,
-    "significant_count": 9,
-    "overall_assessment": "The extraction is generally well executed — the substrate's systematic teaching architecture (five-fold maps, twelve-fold completions, descent-ascent patterns, body-cosmos correspondences) is preserved intact across the entire corpus, and no major teaching sequence appears to have lost structural positions. The most significant extraction issues are not in what was stripped but in what was left: Manichaean naming overlays, particularly 'Jesus the Splendour' (pervasive across 15+ passages) and 'Light Mind' (~12 occurrences), systematically replace the substrate's original Persian/Iranian designations for cosmic entities. These overlays do not destroy the teaching's correspondential content — the spiritual readings consistently recover the functional meaning — but they corrupt the substrate's cultural register. Residual editorial material is present but limited: one clear community-dialogue frame (§529), Pauline/Christian echoes in §379 and §569, and scattered institutional vocabulary ('church,' 'elect,' 'apostles'). The most valuable corpus-scale observations concern the five-fold recursive architecture that unifies all chapters, the body-cosmos correspondence system that develops progressively across the corpus, and evidence of pre-Zoroastrian cultural layers (Zurvanite five-element system, Mesopotamian sea-giant, feminine evil-sculptor figure) visible through the Persian vessel.",
-    "extraction_assessment": "The pipeline tends moderately toward **under-stripping** (leaving editorial material) rather than over-stripping (losing substrate). The pervasive Manichaean naming overlays — especially 'Jesus the Splendour,' 'Light Mind,' 'Holy Spirit,' and 'Saklas' — represent the clearest under-stripping: names that belong to the editorial layer were retained because they were embedded within core cosmological sentences. The small amount of institutional vocabulary ('church,' 'elect,' 'apostles') similarly slipped through because it was syntactically integrated into teaching content. Evidence of over-stripping is minimal: the five-fold and twelve-fold systematic structures are consistently complete across the corpus, and no structural position is clearly missing. The only candidates for over-stripping are §47 (fourth infernal hunter described in a single sentence vs. full paragraphs for others) and §127 (only three of five 'lessons' named), both of which may equally reflect physical manuscript damage. Chapter transitions are occasionally abrupt (§9→§10, §17→§18), suggesting that introductory Q&A formulas may have been stripped as 'frame' in some chapters while preserved in others. Overall, the pipeline successfully preserved the substrate's correspondential architecture while leaving a manageable residue of Manichaean editorial naming and scattered Christian vocabulary."
+    "total_findings": 22,
+    "critical_count": 2,
+    "significant_count": 8,
+    "overall_assessment": "The extraction is generally well-executed — the substrate teaching flows coherently across most chapters, the systematic five-fold, twelve-fold, and three-fold structures are preserved intact, and the teaching's internal architecture is visible throughout. The two critical issues are naming overlays that pervade the entire corpus: 'Jesus the Splendour' (a Manichaean-Christian name mapped onto a Persian cosmic entity) and 'Light Mind/Nous' (a Graeco-Manichaean term replacing what was almost certainly 'Wahman/Vohu Manah'). These are not extraction errors but editorial overlays that the extraction could not address, since they are woven into the paragraph-level text. Among extraction-specific issues, one residual editorial passage (§529's Manichaean dialogue frame) and scattered institutional vocabulary ('elect,' 'apostle,' 'church,' 'Holy Spirit,' 'good news') represent material that slipped through classification. The most valuable finding at corpus scale is the emergence of cross-chapter structural patterns — particularly the universal five-fold organizing principle, the body-cosmos correspondence system, and the 'summons and obedience' pair — that were invisible at the per-chapter level but constitute the substrate's deepest architectural features.",
+    "extraction_assessment": "The pipeline tends slightly toward under-stripping (leaving editorial naming and institutional vocabulary in place) rather than over-stripping. The naming overlays ('Jesus the Splendour,' 'Light Mind,' 'Holy Spirit,' 'apostle,' 'elect,' 'church') are the most pervasive category of residual editorial material — they could not be caught by paragraph-level classification because they are embedded within otherwise genuine substrate sentences. The two potential over-stripping instances (§122–126 resurrector sequence and §405 first deed) affect chapters where the five-fold and twelve-fold teaching structures show anomalous gaps compared to parallel sequences that survive intact. The Q&A formula handling is reasonably consistent. Overall, the extraction preserved the substrate's teaching substance faithfully; the remaining issues are primarily naming-layer artifacts that require entity-level rather than paragraph-level intervention."
   },
-  "text_output": "",
+  "text_output": "Looking at this corpus carefully, I need to trace naming patterns, structural continuities, editorial residue, and extraction artifacts across the full text. Let me work through systematically before committing findings.\n\n**Naming analysis across corpus:** \"Jesus the Splendour\" appears in §27, §42, §71, §73, §75, §84, §119, §144, §160, §162, §184, §191, §201, §291, §305, §310, §594, §866 — always in the same functional slot (divine wisdom proceeding into illumination/liberation). \"Light Mind\" appears in §74, §77, §121, §125, §294, §565, §567, §569, §745, §795, §843. \"Saklas\" in §544. \"Holy Spirit\" in §379, §569. \"Church\" in §11. \"Apostle\" in §78, §197, §291, §313. \"Elect\" in §106.\n\n**Structural patterns:** Five-fold organization pervades the entire corpus. Three-fold, twelve-fold, and four-fold structures recur systematically. Body-cosmos mapping appears in multiple separated chapters. \"Summons and obedience\" pair appears as a consistent substrate concept throughout.\n\n**Extraction consistency check:** Q&A formulas are retained in most chapters (§18, §107, §198, §317, §494, §665, §716, §788, §883). Frame connectives appear stripped. One clear residual editorial passage at §529.",
   "_section_map": [
     {
       "ms_chapter": 0,
