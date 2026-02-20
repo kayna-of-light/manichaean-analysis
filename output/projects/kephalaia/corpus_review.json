@@ -1,0 +1,1014 @@
+{
+  "findings": [
+    {
+      "id": 1,
+      "category": "naming_overlay",
+      "severity": "critical",
+      "section_refs": [
+        "§27",
+        "§42",
+        "§71",
+        "§73",
+        "§75",
+        "§144",
+        "§160",
+        "§162",
+        "§171",
+        "§184",
+        "§191",
+        "§201",
+        "§291",
+        "§305",
+        "§594",
+        "§595",
+        "§866"
+      ],
+      "title": "\"Jesus the Splendour\" as pervasive Manichaean Christological overlay",
+      "current_state": "The name \"Jesus the Splendour\" appears at least 15 times across the corpus, functioning as the name of the fourth cosmic emanation — e.g. §27 \"The fourth day is Jesus the Splendour,\" §42 \"The third hunter is Jesus the Splendour,\" §73 \"he is glorious Jesus the Splendour,\" §162 \"until the moment when Jesus was sent.\"",
+      "recommendation": "Flag every occurrence of \"Jesus the Splendour\" as a Manichaean Christological overlay. The substrate entity is a cosmic principle of illuminating wisdom, not a Christological figure. The correspondential readings consistently translate it as \"Divine Wisdom in its radiance\" or \"Divine Truth in its glory,\" confirming that the substrate described this entity functionally. The original Persian/Iranian designation has been completely overwritten.",
+      "explanation": "This is the single most pervasive naming overlay in the corpus. \"Jesus the Splendour\" (Isha Ziwa in Aramaic) is a distinctly Manichaean designation that maps the Christian figure of Jesus onto a pre-existing cosmic entity — the fourth emanation in a five-fold system. The substrate consistently treats this figure as a principle of illumination and wisdom that purifies, separates, and descends to the first human form. No Christological content is ever present in the teaching itself — the entity functions identically to its structural parallels (First Man, Living Spirit, Third Ambassador), none of which bear Christian names. The overlay corrupts the reading by introducing Christological associations into what is a Persian correspondential system. The original name — likely an Iranian/Zurvanite title for illuminating wisdom — is irrecoverable from this text alone."
+    },
+    {
+      "id": 2,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§74",
+        "§77",
+        "§121",
+        "§125",
+        "§294",
+        "§565",
+        "§566",
+        "§567",
+        "§745",
+        "§795",
+        "§843",
+        "§847"
+      ],
+      "title": "\"Light Mind\" (Light-Nous) as Manichaean designation",
+      "current_state": "\"Light Mind\" appears approximately 12 times: §74 \"The first power whom he summoned is the Light Mind,\" §121 \"is the Light Mind; who is the awakene[r of they] who sleep,\" §565 \"if and wh[en] the Light Mind comes, it shall tu[rn i]n to the orifices of the body.\"",
+      "recommendation": "Flag as Manichaean overlay. The substrate likely used a Persian term for the faculty of interior illumination or awakened understanding. The Manichaean \"Nous\" terminology introduces Greek philosophical connotations absent from the Persian original.",
+      "explanation": "\"Light-Nous\" is a specifically Manichaean technical term combining Greek philosophical vocabulary (nous = mind/intellect) with light-theology. The substrate teaching consistently describes this entity as the awakener of spiritual dormancy, the illuminator of understanding, and the former of the new interior person (§121, §565-§569, §745, §795, §843). These are functional descriptions consistent with an older Persian term for divine illumination entering human consciousness. The Manichaean editor's choice of Greek \"Nous\" shifts the register from Persian correspondential teaching toward Hellenistic intellectual categories."
+    },
+    {
+      "id": 3,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§112",
+        "§379",
+        "§569"
+      ],
+      "title": "\"Holy Spirit\" as Christian overlay term",
+      "current_state": "§112 identifies \"the Mother of Life, the first Holy Spirit.\" §379: \"they have blasphemed and despised the Holy Spirit since [ev]ery generation of the world.\" §569: \"The H[o]ly Spirit reigns. It does all that it pleases... the will of the [Ho]ly Spir[it] comes about.\"",
+      "recommendation": "Flag all three occurrences as Christian overlay. The substrate concept in §112 is the Divine Proceeding as formative matrix; in §379, it is the divine proceeding into created life; in §569, it is the divine good operating through truth. The Christian trinitarian term obscures the substrate's functional designation.",
+      "explanation": "\"Holy Spirit\" is a specifically Christian trinitarian term. §112 explicitly equates it with \"the Mother of Life\" — showing the Manichaean editor mapping Christian terminology onto a pre-existing substrate entity (the proceeding divine truth that gives life). §379 echoes the Synoptic \"blasphemy against the Holy Spirit\" (Mark 3:29), confirming this as a Christian doctrinal insertion. §569 uses the term in a pastoral/exhortatory register that feels editorial rather than substrate. The substrate likely used a Persian term for the proceeding divine breath or life-giving influx."
+    },
+    {
+      "id": 4,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§191"
+      ],
+      "title": "\"Jesus the Youth\" as Manichaean entity name",
+      "current_state": "§191: \"he formed [J]esus the Youth\" — within a passage describing the fourth liberation, where divine truth descends through successive degrees and forms a regenerated understanding.",
+      "recommendation": "Flag as Manichaean overlay. \"Jesus the Youth\" is a specific Manichaean entity (the newly-formed spiritual understanding within the regenerating person). The substrate described this functionally — likely as the new or renewed understanding formed by divine truth's descent.",
+      "explanation": "\"Jesus the Youth\" is a unique Manichaean entity distinct from \"Jesus the Splendour.\" It represents the newly constituted spiritual understanding formed within the natural person. The substrate teaching at §191 describes how divine truth, after descending through successive degrees, forms a new regenerated understanding — a functional description that the Manichaean editor named \"Jesus the Youth\" by mapping Christological terminology onto a cosmic/regenerative process."
+    },
+    {
+      "id": 5,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§11",
+        "§306"
+      ],
+      "title": "\"holy church\" / \"churches\" as Manichaean institutional vocabulary",
+      "current_state": "§11: \"Its consideration is the holy church.\" §306: \"all the churches shall gather; and all the [life] that will be purified from the world returns to him.\"",
+      "recommendation": "Flag as Manichaean institutional overlay. The substrate described the first/outermost degree of the good tree functionally — as the communion of those conjoined in charity, or the outermost receptive community. \"Church\" (ⲉⲕⲕⲗⲏⲥⲓⲁ) is a Greek loanword carrying Christian institutional connotations that the substrate did not possess.",
+      "explanation": "§11 maps the five ascending degrees of the good tree to cosmic entities. The first degree (\"consideration\") is mapped to \"the holy church\" — a Manichaean identification of the lowest degree with the institutional community. The substrate teaching is about a cosmic receptive function, not an institution. The correspondential reading translates it as \"the communion of those conjoined in charity,\" which captures the functional substrate meaning. §306 similarly uses \"churches\" where the substrate likely described \"gatherings\" or \"assemblies\" of spiritual life."
+    },
+    {
+      "id": 6,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§544"
+      ],
+      "title": "\"Saklas and his consort\" as Gnostic naming overlay",
+      "current_state": "§544: \"All [these a]bortions, amongst them are Saklas and his consort and the ones whom they have served\"",
+      "recommendation": "Flag \"Saklas\" as a Gnostic naming overlay. The name derives from Aramaic/Hebrew (\"fool\") and belongs to Gnostic demiurgic traditions. The substrate likely described this entity by a Persian/Iranian designation for the ruling self-intelligence or chief of derivative falsities.",
+      "explanation": "\"Saklas\" is a distinctly Gnostic name for the ignorant demiurge, appearing in texts like the Apocryphon of John and the Gospel of Judas. Its presence in §544 — a passage about the formation of Adam — indicates that the Manichaean editor imported Gnostic nomenclature into the substrate teaching. The Persian substrate would have used a different term, likely functional (e.g., \"the chief of derivative falsities\" or an Iranian name for the ruling self-intelligence). This is a naming overlay from a specific non-Persian tradition."
+    },
+    {
+      "id": 7,
+      "category": "residual_editorial",
+      "severity": "significant",
+      "section_refs": [
+        "§529"
+      ],
+      "title": "Community dialogue framing preserved as core",
+      "current_state": "§529: \"There are some among us telling us that we [know and perceive] that the (Ambassador) consents about [tha]t f[igure] of flesh...\"",
+      "recommendation": "Flag §529 as residual editorial framing. This paragraph introduces a theological objection from within the Manichaean community (\"There are some among us telling us...\"). The response in §530–§535 contains genuine substrate teaching about the Ambassador's image, but §529 itself is community dialogue framing that belongs to the editorial layer.",
+      "explanation": "The phrase \"There are some among us telling us\" is a dialogue marker from a community teaching setting — it positions the passage as a response to an internal Manichaean doctrinal debate. This is institutional framing, not substrate. The substrate teaching proper begins at §530 with the cosmological explanation of why the Ambassador displayed his image. §529 should have been classified as FRAME material."
+    },
+    {
+      "id": 8,
+      "category": "residual_editorial",
+      "severity": "significant",
+      "section_refs": [
+        "§569"
+      ],
+      "title": "Pastoral exhortation mixed with substrate in body-senses passage",
+      "current_state": "§569: \"The Living Spirit has become lord over all its limbs. It has bound them with a chain of peace, and sealed them with the seal of truth... The H[o]ly Spirit reigns. It does all that it pleases. It annuls [the] will of [S]in, the begin-ning and the end. [In contrast], the will of the [Ho]ly Spir[it] comes about, and the purpose of the Light Mind.\"",
+      "recommendation": "Flag §569 as containing residual editorial material mixed with substrate. \"Chain of peace\" and \"seal of truth\" may echo Pauline vocabulary (cf. Ephesians 6:15). \"The beginning and the end\" echoes Revelation 1:8. The repeated \"Holy Spirit\" is Christian overlay. The substrate teaching about divine good taking authority over the natural faculties is genuine, but the concluding language is editorial/pastoral.",
+      "explanation": "§569 concludes the long teaching about the five senses (§544–§569) with what reads as a pastoral exhortation. The substrate content — the displacement of evil's authority from the body's faculties by the influx of divine good — is genuine. But the register shifts at \"The H[o]ly Spirit reigns\" into language that carries distinctly Christian/Pauline resonance. The phrase \"the begin-ning and the end\" has no parallel in Iranian cosmological vocabulary but directly echoes Revelation. This suggests the Manichaean editor appended a devotional conclusion to the substrate teaching."
+    },
+    {
+      "id": 9,
+      "category": "residual_editorial",
+      "severity": "significant",
+      "section_refs": [
+        "§379"
+      ],
+      "title": "Synoptic Gospel echo in description of second death",
+      "current_state": "§379: \"they have blasphemed and despised the Holy Spirit since [ev]ery generation of the world.\"",
+      "recommendation": "Flag this phrase as a Christian overlay. The Synoptic concept of \"blasphemy against the Holy Spirit\" (Mark 3:29, Matthew 12:31) has been inserted into the substrate teaching about the second spiritual death. The substrate likely described the offense in terms of profaning or rejecting the divine proceeding.",
+      "explanation": "The phrase \"blasphemed and despised the Holy Spirit\" has no parallel in Iranian cosmological vocabulary but directly echoes the Synoptic unforgivable sin. The substrate teaching about the second death (§377–§380) is structurally sound — two deaths, one temporal and one eternal — but this specific phrase imports Christian soteriology into what should be a Persian correspondential description of permanent spiritual death resulting from the willful rejection of the divine proceeding."
+    },
+    {
+      "id": 10,
+      "category": "naming_overlay",
+      "severity": "significant",
+      "section_refs": [
+        "§4",
+        "§35",
+        "§327",
+        "§523",
+        "§610",
+        "§723"
+      ],
+      "title": "\"Crucified\" / \"Cross of Light\" as Manichaean doctrinal vocabulary",
+      "current_state": "§4: \"He crucified it.\" §35: \"the Living [Spir]it crucified in the uni[verse].\" §523: \"the entire ruling-power is entwined and crucified [in the Darkness].\" §610: \"the Cross of Light, the living soul.\" §723: the 'Light Cross'.",
+      "recommendation": "Flag \"crucified\" and \"Cross of Light\" as Manichaean doctrinal vocabulary overlaid on substrate concepts. The substrate likely used a Persian term meaning \"spread out and fixed\" or \"bound fast\" — the cosmic fixing of light-elements in matter. The Manichaean editor rendered this using σταυρόω (crucify), introducing Christian passion-theology associations.",
+      "explanation": "The Manichaean \"Cross of Light\" (crux lucis) is a central Manichaean doctrine: the suffering of light particles fixed throughout material creation. While this doctrine may translate an older Persian concept of divine wisdom bound within the natural order, the vocabulary of \"crucifixion\" and \"cross\" imports Christian resonance that corrupts the substrate reading. The Persian original likely used terms for binding, fastening, or spreading — cosmic fixing without soteriological passion-theology associations."
+    },
+    {
+      "id": 11,
+      "category": "residual_editorial",
+      "severity": "minor",
+      "section_refs": [
+        "§78"
+      ],
+      "title": "\"Apostle of Light\" as Manichaean/Christian term",
+      "current_state": "§78: \"The first power is the Apostle of Light.\"",
+      "recommendation": "Flag as naming overlay. \"Apostle\" (ἀπόστολος) is a Christian/Manichaean term. The substrate described this function — the one who communicates divine truth to the mind — without Christian apostolic vocabulary.",
+      "explanation": "\"Apostle\" carries specifically Christian institutional connotations (one sent forth by Jesus). The substrate teaching in §77–§80 describes the fourth father's three derivative powers as functional principles of the mind's illumination. The first — the communicator of divine truth — would have had a Persian functional designation, not the Greek loanword for Christian missionary."
+    },
+    {
+      "id": 12,
+      "category": "residual_editorial",
+      "severity": "minor",
+      "section_refs": [
+        "§106",
+        "§842"
+      ],
+      "title": "\"the elect one\" / \"the elect person\" as Manichaean institutional term",
+      "current_state": "§106: \"the heart of the elect one, who is come forth from his bo[d]y, shall be calm.\" §842: \"Three images occur in the elect person.\"",
+      "recommendation": "Flag \"elect\" as Manichaean institutional vocabulary. The Manichaean church had two formal classes: \"the elect\" (electi) and \"the hearers\" (auditores). The substrate described the spiritual state functionally — the regenerate one, the purified one — without institutional class designations.",
+      "explanation": "In Manichaean ecclesiology, \"the elect\" is a formal institutional category with specific dietary and behavioral requirements. The substrate teaching in §106 describes someone departing from the body at death, and §842 describes degrees of the regenerating person — neither requires institutional vocabulary. The substrate likely used a functional term like \"the purified\" or \"the one who has completed.\" The Manichaean editor's institutional vocabulary has leaked into what should be cosmological description."
+    },
+    {
+      "id": 13,
+      "category": "residual_editorial",
+      "severity": "minor",
+      "section_refs": [
+        "§197",
+        "§313",
+        "§418"
+      ],
+      "title": "\"apostles\" as Christian/Manichaean institutional term",
+      "current_state": "§197: \"the commandment and the [mission] of all [the] apostles.\" §313: \"The ninth throne... is for the [a]postle.\" §418: \"When the apostles [reach] them.\"",
+      "recommendation": "Flag as residual editorial. The substrate described those who communicate divine truth functionally, not as \"apostles.\" The term imports Christian institutional hierarchy into the substrate's cosmic architecture.",
+      "explanation": "The substrate teaching describes cosmic functions — the transmission of divine truth through successive degrees — using the language of Christian/Manichaean institutional roles. \"Apostle\" in §313 occupies a position in the eighteen thrones that corresponds to a specific function (the one sent forth into natural life), not an institutional office. The substrate likely used a Persian term for \"messenger\" or \"one sent forth\" without Christian apostolic connotations."
+    },
+    {
+      "id": 14,
+      "category": "residual_editorial",
+      "severity": "minor",
+      "section_refs": [
+        "§95"
+      ],
+      "title": "\"church tutelaries\" as institutional vocabulary",
+      "current_state": "§95: \"all of them also, and the church tutelaries (?), and the kinsfolk who belong to the household of his people.\"",
+      "recommendation": "Flag as residual editorial. The translator's own question mark acknowledges the term is problematic. The substrate described guardian truths of the spiritual community, not institutional officials.",
+      "explanation": "\"Church tutelaries\" introduces both \"church\" (Christian institutional) and \"tutelaries\" (guardian officials) into a passage describing the celestial goods and angelic intelligences that accompany the Celestial Human into combat. The substrate's vocabulary would have described functional spiritual guardians, not officials of an institution."
+    },
+    {
+      "id": 15,
+      "category": "over_stripped",
+      "severity": "minor",
+      "section_refs": [
+        "§47"
+      ],
+      "title": "Fourth infernal hunter described in single sentence vs. full paragraphs for others",
+      "current_state": "§47: \"The fourth [hunter is the spirit] of Darkness.\" Compare §44 (3 sentences), §45 (5 sentences), §46 (3 sentences).",
+      "recommendation": "Investigate whether content was stripped from §47. The structural parallel demands a description comparable to §44–§46. The brevity could be physical manuscript damage, but it could also indicate that a fuller description was classified as non-core during extraction.",
+      "explanation": "The four infernal hunters (§44–§47) form a systematic quaternary structure. The first three each receive substantial description: their method of ensnaring, their net, their domain. The fourth receives only a bare identification. While this could be intentional (the fourth being the ultimate irreducible evil beyond description), the structural expectation of parallel treatment suggests content may be missing. The correspondential reading fills in extensively ('the animating principle of all falsity from evil — the very life of the hells'), suggesting the translator also perceived a gap."
+    },
+    {
+      "id": 16,
+      "category": "over_stripped",
+      "severity": "minor",
+      "section_refs": [
+        "§127"
+      ],
+      "title": "Only three of five 'lessons' named in fragmentary passage",
+      "current_state": "§127 names only three: 'the peace', 'the silence', 'the day'. The text breaks off: \"ano[ther ...]\" The teaching explicitly states \"five lessons\" but only three are identifiable.",
+      "recommendation": "Investigate whether the fourth and fifth names were present in material classified as non-core. The systematic five-fold structure demands five positions. While physical damage is the most likely cause, extraction artifacts cannot be ruled out without checking the original classification.",
+      "explanation": "The five-fold architecture is the most fundamental structural principle of the substrate. Every other five-fold enumeration in the corpus (five elements, five fathers, five garments, five wars, five releases, etc.) is complete. The incompleteness here is anomalous and worth investigating, even though physical manuscript damage is the simplest explanation."
+    },
+    {
+      "id": 17,
+      "category": "inconsistent_extraction",
+      "severity": "minor",
+      "section_refs": [
+        "§18",
+        "§107",
+        "§198",
+        "§317",
+        "§367",
+        "§570",
+        "§596",
+        "§665",
+        "§716",
+        "§788",
+        "§883"
+      ],
+      "title": "Q&A formulas preserved inconsistently across chapters",
+      "current_state": "Cosmological questions that set up systematic teachings are preserved in many chapters (e.g., §18 \"What are these three things?\", §107 \"what are the fourteen great aeons?\", §665 \"the twelve signs of the zodiac... How are they determined?\"). However, some chapter transitions are abrupt (e.g., §9→§10, §17→§18, §22→§23), suggesting that introductory Q&A formulas may have been stripped as 'frame' at those boundaries.",
+      "recommendation": "Review whether transitional Q&A formulas were stripped at chapter boundaries where preserved elsewhere. The cosmological questions are integral to the substrate's systematic teaching method and should be retained when they initiate a teaching sequence.",
+      "explanation": "The substrate teaches through systematic inquiry: a cosmological question establishes the domain, then the teaching unfolds as enumerated correspondences. Where these questions are preserved, the teaching reads coherently. Where chapter transitions are abrupt (especially §9→§10, §17→§18), the absence of a framing question may indicate that extraction stripped a genuine substrate inquiry as 'frame.' Since the pipeline was applied per-chapter, the criteria for retaining vs. stripping Q&A material may not have been applied uniformly."
+    },
+    {
+      "id": 18,
+      "category": "cross_passage_pattern",
+      "severity": "observation",
+      "section_refs": [
+        "§11",
+        "§48",
+        "§50",
+        "§63–§83",
+        "§138–§145",
+        "§179–§185",
+        "§186–§197",
+        "§265–§266",
+        "§509–§512",
+        "§681–§692",
+        "§810–§815",
+        "§830"
+      ],
+      "title": "Five-fold systematic architecture as the substrate's governing structural principle",
+      "current_state": "The entire corpus is organized around five-fold enumeration: five elements (§48), five fathers (§63–§83), five greatnesses (§138–§145), five wars (§179–§185), five releases (§186–§197), five emanations from five faculties (§265–§266), five garments/sons (§509–§512), five watches (§681–§692), five productions (§810–§815), five in twenty-five (§830).",
+      "recommendation": "Document as the substrate's primary architectural principle. This five-fold pattern — corresponding to five discrete degrees of the regenerating mind — unifies the entire corpus. Every systematic teaching repeats it at a different scale. It is the substrate's organizing logic, visible only at corpus scale.",
+      "explanation": "The five-fold map is not a single teaching but the universal structural principle of the entire substrate. It appears at cosmic scale (five elements of darkness, five worlds), at divine scale (five fathers, five greatnesses), at salvific scale (five wars, five releases), at anthropological scale (five senses, five body-faculties), and at regenerative scale (five garments of truth, five productions from nourishment). This structural recursion — the same five-fold pattern repeating at every level — is the substrate's way of teaching correspondences: what exists in the macrocosm exists by the same form in the microcosm. Chapter boundaries obscure this recursion; only corpus-scale reading reveals it as a single integrated architecture."
+    },
+    {
+      "id": 19,
+      "category": "cross_passage_pattern",
+      "severity": "observation",
+      "section_refs": [
+        "§319–§322",
+        "§396",
+        "§548–§564",
+        "§678–§712",
+        "§797–§803"
+      ],
+      "title": "Body-cosmos correspondence as a sustained teaching system",
+      "current_state": "§678–§712 is the fullest exposition: the head = five garments, neck-to-heart = ten firmaments, heart = the sphere, etc. But the same system appears in abbreviated form throughout: §319–§322 (head as ruling love), §396 (child in womb = nine coverings), §548–§564 (five senses as five faculties), §797–§803 (dragon with fourteen heads = body's sense organs).",
+      "recommendation": "Document as a unified teaching system that spans multiple chapters. The body-cosmos mapping is not confined to one chapter but develops progressively: from simple analogies (§319) through intermediate correspondences (§396, §548–§564) to the full systematic exposition (§678–§712) and its infernal inversion (§797–§803).",
+      "explanation": "The body-cosmos correspondence is the substrate's anthropological teaching: the human form is a complete image of the spiritual world in miniature. Each chapter that touches this theme adds detail to a single integrated map. §678–§712 provides the definitive key (head = inmost celestial, heart = center, feet = outermost natural), but the earlier chapters prepare it through partial correspondences. The infernal version (§797–§803) inverts the same map, showing how the proprium organizes itself in fourteen powers and five hidden recesses. This bidirectional mapping — the divine human and the infernal human as structural mirrors — is only visible when the chapters are read as a continuous sequence."
+    },
+    {
+      "id": 20,
+      "category": "cross_passage_pattern",
+      "severity": "observation",
+      "section_refs": [
+        "§4–§8",
+        "§91–§106",
+        "§147–§166",
+        "§168–§178",
+        "§267–§271",
+        "§325–§333",
+        "§509–§512",
+        "§516–§518",
+        "§582–§587",
+        "§851–§866"
+      ],
+      "title": "Descent-and-ascent as the universal regenerative pattern",
+      "current_state": "The pattern repeats across the entire corpus: the First Man descends into combat and ascends (§4–§8); the five signs attend both descent and ascent (§91–§106); five advents each follow a descent/engagement/return pattern (§147–§166); three epochs trace one macro-descent/ascent (§168–§178); the garments of truth descend and are stripped (§509–§512); four griefs attend descent and final ascent (§582–§587); three entreaties mirror the descent/rescue/restoration cycle (§851–§866).",
+      "recommendation": "Document as the substrate's universal form for teaching regeneration. Every chapter that describes a divine operation follows this pattern. The substrate teaches that all spiritual combat, all reformation, all liberation follows a single form: descent into the state of falsity, engagement with evil on its own ground, and elevation of whatever is of wisdom back to its celestial origin.",
+      "explanation": "This pattern is not merely narrative but structural: it is the substrate's way of saying that the form of all divine operation is the same at every scale. The Lord's descent into temptation, the soul's descent into the natural body, the truth's descent into falsity — all follow the identical arc. The five signs of §91–§106 make this explicit: the same peace that attends the descent attends the ascent (§100). The pattern is visible in individual chapters but its universality — its appearance in every single teaching unit dealing with divine action — is only apparent at corpus scale."
+    },
+    {
+      "id": 21,
+      "category": "cross_passage_pattern",
+      "severity": "observation",
+      "section_refs": [
+        "§167–§178",
+        "§369",
+        "§455–§460"
+      ],
+      "title": "Three epochs as the structural spine of the substrate's cosmological history",
+      "current_state": "§167–§178 provides the definitive exposition: First epoch = descent and combat of the First Man; Second epoch = ordering by the Living Spirit and Mother of Life; Third epoch = purification by the Ambassador until the Last Statue ascends. §369 recapitulates: \"These three deeds were begun on this first day.\" §455–§460 provide a complementary \"before\" sequence establishing what was prepared before each epoch.",
+      "recommendation": "Document as the substrate's historical architecture. The three epochs are not merely chronological divisions but the three fundamental modes of divine operation: combat (first), ordering (second), purification (third). Every other teaching in the corpus occurs within one of these three epochs.",
+      "explanation": "The three-epoch structure provides the temporal framework within which all other teachings are situated. The five wars, five releases, twelve judges, eighteen thrones, and all other systematic enumerations describe functions that occur within this three-part framework. §174–§177 specifies the relative spiritual durations: the first epoch (combat in the hells) vastly exceeds the others, teaching that the Lord's work of subjugating evil is the most immense spiritual undertaking. The third epoch (ongoing purification) is greater than the second (ordering) but less than the first. This proportional teaching is only visible when the three-epoch passages are read together."
+    },
+    {
+      "id": 22,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§48",
+        "§225",
+        "§229",
+        "§667–§668"
+      ],
+      "title": "Five dark elements (smoke, fire, wind, water, darkness) as Zurvanite substrate vocabulary",
+      "current_state": "§48: \"smoke, fire, wind, water and darkness.\" §225: \"which [are] smoke, fire, wind, water and Darkness.\" These five are consistently treated as the fundamental constituents of evil, each with its own world, king, body-metal, and taste.",
+      "recommendation": "Document as evidence of Zurvanite/proto-Iranian cosmological vocabulary predating the Zoroastrian-Persian formulation. The fivefold division of evil into these specific elements — with their corresponding metals, tastes, and animal forms — has no direct parallel in standard Zoroastrianism but corresponds to Zurvanite speculative cosmology.",
+      "explanation": "Standard Zoroastrian cosmology posits a simpler dualism (Ahura Mazda vs. Angra Mainyu) without this specific fivefold elaboration of evil's material constitution. The five dark elements, each with a distinct quality (smoke = obscurity of understanding, fire = self-love, wind = false persuasion, water = falsity, darkness = total privation), represent a pre-Zoroastrian or Zurvanite speculative tradition about the structure of evil. The elaborate system of correspondences — lion/eagle/demon/dragon/fish as rulers, gold/copper/iron/silver/lead as bodies, salty/sour/sharp/sweet/bitter as tastes (§58–§62) — preserves a complete sensory-metaphysical mapping that belongs to an older cultural vessel than the specifically Zoroastrian."
+    },
+    {
+      "id": 23,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§436–§449"
+      ],
+      "title": "\"Sea giant\" as Mesopotamian Tiamat figure transmitted through Persian vessel",
+      "current_state": "§438–§446 describe a composite being formed from the refuse of the celestial sphere, discharged into the sea, where the sea's own thought shapes it into a figure stamped with the impressions of all the zodiacal signs and stars. It is formed to serve three purposes: purifying the sphere, restraining the cycle of knowledges, and serving as a gathering place.",
+      "recommendation": "Document as evidence of Mesopotamian cosmological vocabulary (Tiamat/chaos-sea-monster) transmitted through the Persian cultural vessel. The sea giant's formation from cosmic refuse in the primordial sea, its composite nature, and its role as a restraint upon cosmic powers parallel Mesopotamian creation mythology.",
+      "explanation": "The sea giant's formation narrative — a composite being shaped by the sea's own will from the residue of celestial purification, stamped with all astral impressions — has no direct Zoroastrian parallel but closely mirrors Mesopotamian Tiamat mythology: a primordial sea-being formed from chaos, whose body becomes the material for cosmic ordering. The Persian substrate has absorbed and recontextualized this Mesopotamian figure as a correspondential teaching about how the proprium (the composite selfhood) is formed from the accumulated refuse of spiritual purification, shaped by its own concupiscence, and fixed as a restraint within the created order."
+    },
+    {
+      "id": 24,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§31",
+        "§33",
+        "§35",
+        "§52",
+        "§252",
+        "§278",
+        "§541"
+      ],
+      "title": "\"Matter\" (Hyle) as female sculptor/craftress — pre-Zoroastrian goddess figure",
+      "current_state": "§31: \"Matter, the sculptress... who has sculpted [the world].\" §35: \"[Mat]te[r] herself, the thought of death, is the [mother] of them all.\" §52: \"Matter, who is the thought of death, [the o]ne who sculpted him from the nature of the land of darkness.\" §278: \"the hard-hearted counsel of Matter, the mother of demons and fiends.\"",
+      "recommendation": "Document as evidence of a pre-Zoroastrian female cosmic figure — a mother-of-evil or dark goddess — transmitted through the Persian vessel. The consistent feminine gender, the active creative/sculptural role, and the designation as \"mother of all\" suggest an older mythological figure than the abstract Manichaean Hyle.",
+      "explanation": "\"Matter\" (Hyle) is the Manichaean term, but the substrate figure it overlays is distinctly active and feminine — she sculpts, fashions, gives birth, is called \"mother.\" This active female principle of evil-creation has parallels in Mesopotamian Tiamat and proto-Indo-Iranian dark goddess figures, but not in standard Zoroastrian cosmology, where Angra Mainyu is masculine. The substrate preserves a cultural layer in which the originating principle of material evil is a feminine creative force — the \"thought of death\" who sculpts the forms of the infernal world. The Manichaean editor retained her gender and creative function but renamed her with the Greek philosophical term \"Hyle\" (matter)."
+    },
+    {
+      "id": 25,
+      "category": "deeper_transmission",
+      "severity": "observation",
+      "section_refs": [
+        "§449",
+        "§541",
+        "§684"
+      ],
+      "title": "\"Adamant of Light\" as Mesopotamian/proto-Iranian combat figure",
+      "current_state": "§449: \"When the Adamant of Light was sent to it, he hastened after it to that place, smote it and threw it between mountains in the place made ready for it [and he] is set fast upon it till the end of the universe.\" §541: \"the Adamant of Light, the great 'instruction of vigour'. He humbled it in the districts of the north.\" §684: \"the Adamant [is master, his authority] reigns from the firmament down below.\"",
+      "recommendation": "Document as evidence of a pre-Zoroastrian divine warrior/subduer figure — an indestructible truth-principle that pins the chaos beast beneath mountains. The imagery of smiting, pinning under mountains, and holding fast \"till the end\" parallels Mesopotamian and Iranian combat myths (e.g., Thraetaona binding Azi Dahaka beneath Mount Damavand).",
+      "explanation": "The Adamant of Light — an indestructible divine principle that pins the monstrous evil beneath mountains — preserves what may be the oldest stratum of combat mythology in the substrate. The Iranian Thraetaona/Azi Dahaka myth (binding the three-headed dragon beneath a mountain until the end of time) is a close structural parallel. The designation \"Adamant\" (indestructible) and the action of pinning suggest a transmission from Avestan/proto-Iranian martial cosmology, older than the specifically Manichaean framework in which it now appears."
+    }
+  ],
+  "summary": {
+    "total_findings": 25,
+    "critical_count": 1,
+    "significant_count": 9,
+    "overall_assessment": "The extraction is generally well executed — the substrate's systematic teaching architecture (five-fold maps, twelve-fold completions, descent-ascent patterns, body-cosmos correspondences) is preserved intact across the entire corpus, and no major teaching sequence appears to have lost structural positions. The most significant extraction issues are not in what was stripped but in what was left: Manichaean naming overlays, particularly 'Jesus the Splendour' (pervasive across 15+ passages) and 'Light Mind' (~12 occurrences), systematically replace the substrate's original Persian/Iranian designations for cosmic entities. These overlays do not destroy the teaching's correspondential content — the spiritual readings consistently recover the functional meaning — but they corrupt the substrate's cultural register. Residual editorial material is present but limited: one clear community-dialogue frame (§529), Pauline/Christian echoes in §379 and §569, and scattered institutional vocabulary ('church,' 'elect,' 'apostles'). The most valuable corpus-scale observations concern the five-fold recursive architecture that unifies all chapters, the body-cosmos correspondence system that develops progressively across the corpus, and evidence of pre-Zoroastrian cultural layers (Zurvanite five-element system, Mesopotamian sea-giant, feminine evil-sculptor figure) visible through the Persian vessel.",
+    "extraction_assessment": "The pipeline tends moderately toward **under-stripping** (leaving editorial material) rather than over-stripping (losing substrate). The pervasive Manichaean naming overlays — especially 'Jesus the Splendour,' 'Light Mind,' 'Holy Spirit,' and 'Saklas' — represent the clearest under-stripping: names that belong to the editorial layer were retained because they were embedded within core cosmological sentences. The small amount of institutional vocabulary ('church,' 'elect,' 'apostles') similarly slipped through because it was syntactically integrated into teaching content. Evidence of over-stripping is minimal: the five-fold and twelve-fold systematic structures are consistently complete across the corpus, and no structural position is clearly missing. The only candidates for over-stripping are §47 (fourth infernal hunter described in a single sentence vs. full paragraphs for others) and §127 (only three of five 'lessons' named), both of which may equally reflect physical manuscript damage. Chapter transitions are occasionally abrupt (§9→§10, §17→§18), suggesting that introductory Q&A formulas may have been stripped as 'frame' in some chapters while preserved in others. Overall, the pipeline successfully preserved the substrate's correspondential architecture while leaving a manageable residue of Manichaean editorial naming and scattered Christian vocabulary."
+  },
+  "text_output": "",
+  "_section_map": [
+    {
+      "ms_chapter": 0,
+      "section_start": 1,
+      "section_end": 9
+    },
+    {
+      "ms_chapter": 1,
+      "section_start": 10,
+      "section_end": 9
+    },
+    {
+      "ms_chapter": 2,
+      "section_start": 10,
+      "section_end": 17
+    },
+    {
+      "ms_chapter": 3,
+      "section_start": 18,
+      "section_end": 22
+    },
+    {
+      "ms_chapter": 4,
+      "section_start": 23,
+      "section_end": 38
+    },
+    {
+      "ms_chapter": 5,
+      "section_start": 39,
+      "section_end": 47
+    },
+    {
+      "ms_chapter": 6,
+      "section_start": 48,
+      "section_end": 62
+    },
+    {
+      "ms_chapter": 7,
+      "section_start": 63,
+      "section_end": 83
+    },
+    {
+      "ms_chapter": 8,
+      "section_start": 84,
+      "section_end": 90
+    },
+    {
+      "ms_chapter": 9,
+      "section_start": 91,
+      "section_end": 106
+    },
+    {
+      "ms_chapter": 10,
+      "section_start": 107,
+      "section_end": 110
+    },
+    {
+      "ms_chapter": 11,
+      "section_start": 111,
+      "section_end": 121
+    },
+    {
+      "ms_chapter": 12,
+      "section_start": 122,
+      "section_end": 121
+    },
+    {
+      "ms_chapter": 13,
+      "section_start": 122,
+      "section_end": 126
+    },
+    {
+      "ms_chapter": 14,
+      "section_start": 127,
+      "section_end": 130
+    },
+    {
+      "ms_chapter": 15,
+      "section_start": 131,
+      "section_end": 137
+    },
+    {
+      "ms_chapter": 16,
+      "section_start": 138,
+      "section_end": 166
+    },
+    {
+      "ms_chapter": 17,
+      "section_start": 167,
+      "section_end": 178
+    },
+    {
+      "ms_chapter": 18,
+      "section_start": 179,
+      "section_end": 185
+    },
+    {
+      "ms_chapter": 19,
+      "section_start": 186,
+      "section_end": 197
+    },
+    {
+      "ms_chapter": 20,
+      "section_start": 198,
+      "section_end": 201
+    },
+    {
+      "ms_chapter": 21,
+      "section_start": 202,
+      "section_end": 208
+    },
+    {
+      "ms_chapter": 22,
+      "section_start": 209,
+      "section_end": 216
+    },
+    {
+      "ms_chapter": 23,
+      "section_start": 217,
+      "section_end": 232
+    },
+    {
+      "ms_chapter": 24,
+      "section_start": 233,
+      "section_end": 264
+    },
+    {
+      "ms_chapter": 25,
+      "section_start": 265,
+      "section_end": 266
+    },
+    {
+      "ms_chapter": 26,
+      "section_start": 267,
+      "section_end": 271
+    },
+    {
+      "ms_chapter": 27,
+      "section_start": 272,
+      "section_end": 282
+    },
+    {
+      "ms_chapter": 28,
+      "section_start": 283,
+      "section_end": 296
+    },
+    {
+      "ms_chapter": 29,
+      "section_start": 297,
+      "section_end": 314
+    },
+    {
+      "ms_chapter": 30,
+      "section_start": 315,
+      "section_end": 316
+    },
+    {
+      "ms_chapter": 31,
+      "section_start": 317,
+      "section_end": 324
+    },
+    {
+      "ms_chapter": 32,
+      "section_start": 325,
+      "section_end": 333
+    },
+    {
+      "ms_chapter": 33,
+      "section_start": 334,
+      "section_end": 339
+    },
+    {
+      "ms_chapter": 34,
+      "section_start": 340,
+      "section_end": 350
+    },
+    {
+      "ms_chapter": 35,
+      "section_start": 351,
+      "section_end": 355
+    },
+    {
+      "ms_chapter": 36,
+      "section_start": 356,
+      "section_end": 361
+    },
+    {
+      "ms_chapter": 37,
+      "section_start": 362,
+      "section_end": 365
+    },
+    {
+      "ms_chapter": 38,
+      "section_start": 366,
+      "section_end": 365
+    },
+    {
+      "ms_chapter": 39,
+      "section_start": 366,
+      "section_end": 380
+    },
+    {
+      "ms_chapter": 40,
+      "section_start": 381,
+      "section_end": 385
+    },
+    {
+      "ms_chapter": 41,
+      "section_start": 386,
+      "section_end": 390
+    },
+    {
+      "ms_chapter": 42,
+      "section_start": 391,
+      "section_end": 423
+    },
+    {
+      "ms_chapter": 43,
+      "section_start": 424,
+      "section_end": 435
+    },
+    {
+      "ms_chapter": 44,
+      "section_start": 436,
+      "section_end": 446
+    },
+    {
+      "ms_chapter": 45,
+      "section_start": 447,
+      "section_end": 454
+    },
+    {
+      "ms_chapter": 46,
+      "section_start": 455,
+      "section_end": 460
+    },
+    {
+      "ms_chapter": 47,
+      "section_start": 461,
+      "section_end": 469
+    },
+    {
+      "ms_chapter": 48,
+      "section_start": 470,
+      "section_end": 493
+    },
+    {
+      "ms_chapter": 49,
+      "section_start": 494,
+      "section_end": 497
+    },
+    {
+      "ms_chapter": 50,
+      "section_start": 498,
+      "section_end": 508
+    },
+    {
+      "ms_chapter": 51,
+      "section_start": 509,
+      "section_end": 512
+    },
+    {
+      "ms_chapter": 52,
+      "section_start": 513,
+      "section_end": 515
+    },
+    {
+      "ms_chapter": 53,
+      "section_start": 516,
+      "section_end": 522
+    },
+    {
+      "ms_chapter": 54,
+      "section_start": 523,
+      "section_end": 528
+    },
+    {
+      "ms_chapter": 55,
+      "section_start": 529,
+      "section_end": 543
+    },
+    {
+      "ms_chapter": 56,
+      "section_start": 544,
+      "section_end": 569
+    },
+    {
+      "ms_chapter": 57,
+      "section_start": 570,
+      "section_end": 579
+    },
+    {
+      "ms_chapter": 58,
+      "section_start": 580,
+      "section_end": 581
+    },
+    {
+      "ms_chapter": 59,
+      "section_start": 582,
+      "section_end": 587
+    },
+    {
+      "ms_chapter": 60,
+      "section_start": 588,
+      "section_end": 595
+    },
+    {
+      "ms_chapter": 61,
+      "section_start": 596,
+      "section_end": 601
+    },
+    {
+      "ms_chapter": 62,
+      "section_start": 602,
+      "section_end": 606
+    },
+    {
+      "ms_chapter": 63,
+      "section_start": 607,
+      "section_end": 610
+    },
+    {
+      "ms_chapter": 64,
+      "section_start": 611,
+      "section_end": 622
+    },
+    {
+      "ms_chapter": 65,
+      "section_start": 623,
+      "section_end": 653
+    },
+    {
+      "ms_chapter": 66,
+      "section_start": 654,
+      "section_end": 658
+    },
+    {
+      "ms_chapter": 67,
+      "section_start": 659,
+      "section_end": 658
+    },
+    {
+      "ms_chapter": 68,
+      "section_start": 659,
+      "section_end": 664
+    },
+    {
+      "ms_chapter": 69,
+      "section_start": 665,
+      "section_end": 677
+    },
+    {
+      "ms_chapter": 70,
+      "section_start": 678,
+      "section_end": 713
+    },
+    {
+      "ms_chapter": 71,
+      "section_start": 714,
+      "section_end": 715
+    },
+    {
+      "ms_chapter": 72,
+      "section_start": 716,
+      "section_end": 726
+    },
+    {
+      "ms_chapter": 73,
+      "section_start": 727,
+      "section_end": 730
+    },
+    {
+      "ms_chapter": 74,
+      "section_start": 731,
+      "section_end": 740
+    },
+    {
+      "ms_chapter": 75,
+      "section_start": 741,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 76,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 77,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 78,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 79,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 80,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 81,
+      "section_start": 744,
+      "section_end": 743
+    },
+    {
+      "ms_chapter": 82,
+      "section_start": 744,
+      "section_end": 744
+    },
+    {
+      "ms_chapter": 83,
+      "section_start": 745,
+      "section_end": 744
+    },
+    {
+      "ms_chapter": 84,
+      "section_start": 745,
+      "section_end": 744
+    },
+    {
+      "ms_chapter": 85,
+      "section_start": 745,
+      "section_end": 744
+    },
+    {
+      "ms_chapter": 86,
+      "section_start": 745,
+      "section_end": 750
+    },
+    {
+      "ms_chapter": 87,
+      "section_start": 751,
+      "section_end": 752
+    },
+    {
+      "ms_chapter": 88,
+      "section_start": 753,
+      "section_end": 752
+    },
+    {
+      "ms_chapter": 89,
+      "section_start": 753,
+      "section_end": 752
+    },
+    {
+      "ms_chapter": 90,
+      "section_start": 753,
+      "section_end": 755
+    },
+    {
+      "ms_chapter": 91,
+      "section_start": 756,
+      "section_end": 755
+    },
+    {
+      "ms_chapter": 92,
+      "section_start": 756,
+      "section_end": 755
+    },
+    {
+      "ms_chapter": 93,
+      "section_start": 756,
+      "section_end": 755
+    },
+    {
+      "ms_chapter": 94,
+      "section_start": 756,
+      "section_end": 763
+    },
+    {
+      "ms_chapter": 95,
+      "section_start": 764,
+      "section_end": 779
+    },
+    {
+      "ms_chapter": 96,
+      "section_start": 780,
+      "section_end": 782
+    },
+    {
+      "ms_chapter": 97,
+      "section_start": 783,
+      "section_end": 787
+    },
+    {
+      "ms_chapter": 98,
+      "section_start": 788,
+      "section_end": 796
+    },
+    {
+      "ms_chapter": 99,
+      "section_start": 797,
+      "section_end": 796
+    },
+    {
+      "ms_chapter": 100,
+      "section_start": 797,
+      "section_end": 803
+    },
+    {
+      "ms_chapter": 101,
+      "section_start": 804,
+      "section_end": 809
+    },
+    {
+      "ms_chapter": 102,
+      "section_start": 810,
+      "section_end": 809
+    },
+    {
+      "ms_chapter": 103,
+      "section_start": 810,
+      "section_end": 809
+    },
+    {
+      "ms_chapter": 104,
+      "section_start": 810,
+      "section_end": 815
+    },
+    {
+      "ms_chapter": 105,
+      "section_start": 816,
+      "section_end": 815
+    },
+    {
+      "ms_chapter": 106,
+      "section_start": 816,
+      "section_end": 822
+    },
+    {
+      "ms_chapter": 107,
+      "section_start": 823,
+      "section_end": 825
+    },
+    {
+      "ms_chapter": 108,
+      "section_start": 826,
+      "section_end": 829
+    },
+    {
+      "ms_chapter": 109,
+      "section_start": 830,
+      "section_end": 832
+    },
+    {
+      "ms_chapter": 110,
+      "section_start": 833,
+      "section_end": 834
+    },
+    {
+      "ms_chapter": 111,
+      "section_start": 835,
+      "section_end": 837
+    },
+    {
+      "ms_chapter": 112,
+      "section_start": 838,
+      "section_end": 837
+    },
+    {
+      "ms_chapter": 113,
+      "section_start": 838,
+      "section_end": 841
+    },
+    {
+      "ms_chapter": 114,
+      "section_start": 842,
+      "section_end": 850
+    },
+    {
+      "ms_chapter": 115,
+      "section_start": 851,
+      "section_end": 866
+    },
+    {
+      "ms_chapter": 116,
+      "section_start": 867,
+      "section_end": 868
+    },
+    {
+      "ms_chapter": 117,
+      "section_start": 869,
+      "section_end": 871
+    },
+    {
+      "ms_chapter": 118,
+      "section_start": 872,
+      "section_end": 873
+    },
+    {
+      "ms_chapter": 119,
+      "section_start": 874,
+      "section_end": 879
+    },
+    {
+      "ms_chapter": 120,
+      "section_start": 880,
+      "section_end": 880
+    },
+    {
+      "ms_chapter": 121,
+      "section_start": 881,
+      "section_end": 882
+    },
+    {
+      "ms_chapter": 122,
+      "section_start": 883,
+      "section_end": 886
+    }
+  ]
+}
