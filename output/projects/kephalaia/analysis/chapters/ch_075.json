@@ -2,6 +2,44 @@
   "chapter_number": 75,
   "title": "[Concerning the Letter (?)]",
   "total_paragraphs": 6,
+  "chapter_features": {
+    "teaching_purity": 0.45,
+    "editorial_fatigue_score": 4.02,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 12.5,
+        "second_half": 0.98,
+        "shift": -11.52
+      },
+      "dialogue_frame": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 0.0,
+        "second_half": 16.09,
+        "shift": 16.09
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -100,13 +138,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "good works",
           "fasting",
+          "good works",
           "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (good works, fasting, holy church) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (fasting, good works, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {

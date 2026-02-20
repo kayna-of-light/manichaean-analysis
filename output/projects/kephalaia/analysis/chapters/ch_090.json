@@ -2,6 +2,44 @@
   "chapter_number": 90,
   "title": "Concerning the Fifteen Paths; and whether the Catechumen would have avoided causing his Wealth to go on the Three Paths to Gehenna",
   "total_paragraphs": 19,
+  "chapter_features": {
+    "teaching_purity": 0.289,
+    "editorial_fatigue_score": -0.41,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 2.91,
+        "second_half": 1.98,
+        "shift": -0.93
+      },
+      "dialogue_frame": {
+        "first_half": 0.65,
+        "second_half": 0.47,
+        "shift": -0.18
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 6.14,
+        "second_half": 4.66,
+        "shift": -1.48
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -166,12 +204,12 @@
         "has_bridge_connective": true,
         "bridge_phrase": "Now, this is how",
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Now, this is how' with institutional vocabulary (elect, catechumen). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
+        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Now, this is how' with institutional vocabulary (catechumen, elect). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
       }
     },
     {
@@ -189,13 +227,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "sects",
           "catechumen",
-          "heresies",
-          "sects"
+          "heresies"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, heresies, sects) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (sects, catechumen, heresies) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -255,8 +293,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "fasting",
-          "alms"
+          "alms",
+          "fasting"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -278,13 +316,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "catechumenate",
           "fasting",
+          "catechumenate",
           "catechumen"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumenate, fasting, catechumen) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (fasting, catechumenate, catechumen) with register shift from preceding cosmological paragraphs."
       }
     },
     {

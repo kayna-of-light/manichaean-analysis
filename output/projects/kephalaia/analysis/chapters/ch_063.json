@@ -2,6 +2,44 @@
   "chapter_number": 63,
   "title": "Concerning Love.",
   "total_paragraphs": 5,
+  "chapter_features": {
+    "teaching_purity": 0.286,
+    "editorial_fatigue_score": 0.4,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 3.41,
+        "second_half": 2.54,
+        "shift": -0.87
+      },
+      "dialogue_frame": {
+        "first_half": 5.68,
+        "second_half": 0.0,
+        "shift": -5.68
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 0.0,
+        "second_half": 7.27,
+        "shift": 7.27
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -58,8 +96,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
-          "the church"
+          "the church",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": false,

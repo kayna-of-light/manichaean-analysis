@@ -2,6 +2,44 @@
   "chapter_number": 86,
   "title": "The Chapter of the Man who asks: Why [am] I sometimes at peace, and troubled at other times?",
   "total_paragraphs": 12,
+  "chapter_features": {
+    "teaching_purity": 0.475,
+    "editorial_fatigue_score": -1.08,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 0.41,
+        "second_half": 2.61,
+        "shift": 2.2
+      },
+      "dialogue_frame": {
+        "first_half": 2.68,
+        "second_half": 0.0,
+        "shift": -2.68
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 1.65,
+        "second_half": 0.0,
+        "shift": -1.65
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": true,
+      "has_formulaic_closing": true,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -78,8 +116,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "fasting",
-          "alms"
+          "alms",
+          "fasting"
         ],
         "register_shift": true,
         "seam_flag": false,

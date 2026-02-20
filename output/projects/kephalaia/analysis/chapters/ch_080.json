@@ -2,6 +2,44 @@
   "chapter_number": 80,
   "title": "The Chapter of the Commandments of Righteousness",
   "total_paragraphs": 7,
+  "chapter_features": {
+    "teaching_purity": 0.033,
+    "editorial_fatigue_score": 6.08,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 1.24,
+        "second_half": 0.0,
+        "shift": -1.24
+      },
+      "dialogue_frame": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 5.78,
+        "second_half": 30.12,
+        "shift": 24.34
+      },
+      "exhortation": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -58,8 +96,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -81,15 +119,15 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "alms",
+          "fasting",
           "lord's day",
           "catechumenate",
-          "fasting",
-          "catechumen",
-          "alms"
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (lord's day, catechumenate, fasting, catechumen, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, fasting, lord's day, catechumenate, catechumen) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -131,8 +169,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
-          "alms"
+          "alms",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -154,13 +192,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
+          "alms",
           "catechumen",
-          "alms"
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (holy church, catechumen, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, catechumen, holy church) with register shift from preceding cosmological paragraphs."
       }
     }
   ]

@@ -2,6 +2,46 @@
   "chapter_number": 91,
   "title": "Also concerning the Catechumen; shall he be saved in a single Body?",
   "total_paragraphs": 24,
+  "chapter_features": {
+    "teaching_purity": 0.055,
+    "editorial_fatigue_score": 0.6,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 0.25,
+        "second_half": 1.67,
+        "shift": 1.42
+      },
+      "dialogue_frame": {
+        "first_half": 1.82,
+        "second_half": 0.45,
+        "shift": -1.37
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 11.58,
+        "second_half": 14.35,
+        "shift": 2.77
+      },
+      "exhortation": {
+        "first_half": 0.33,
+        "second_half": 1.33,
+        "shift": 1.0
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": false,
+      "has_question_formula": false
+    },
+    "nt_citations": [
+      "1 Cor. 7"
+    ],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -18,8 +58,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -63,8 +103,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
-          "catechumen"
+          "catechumen",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -109,8 +149,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -132,15 +172,15 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
+          "alms",
           "fasting",
-          "holy church",
+          "elect",
           "the church",
-          "alms"
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (elect, fasting, holy church, the church, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, fasting, elect, the church, holy church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -180,9 +220,9 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
+          "alms",
           "catechumen",
-          "alms"
+          "elect"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -227,14 +267,14 @@
         "has_bridge_connective": true,
         "bridge_phrase": "Therefore, because of this",
         "institutional_terms_found": [
-          "holy church",
-          "catechumen",
           "repentance",
-          "forgiveness"
+          "forgiveness",
+          "catechumen",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Therefore, because of this' with institutional vocabulary (holy church, catechumen, repentance, forgiveness). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
+        "seam_note": "EDITORIAL SEAM DETECTED: Bridge connective 'Therefore, because of this' with institutional vocabulary (repentance, forgiveness, catechumen, holy church). This paragraph likely extends an existing teaching sequence with institutional application — the editor mimics the preceding pattern but shifts to church-specific content."
       }
     },
     {
@@ -252,13 +292,13 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "catechumen",
           "elect",
-          "commandments",
-          "catechumen"
+          "commandments"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (elect, commandments, catechumen) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, elect, commandments) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -276,14 +316,14 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
+          "sects",
           "catechumen",
-          "the church",
-          "sects"
+          "elect",
+          "the church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (elect, catechumen, the church, sects) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (sects, catechumen, elect, the church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -301,8 +341,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "holy church",
-          "forgiveness"
+          "forgiveness",
+          "holy church"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -346,15 +386,15 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumenate",
-          "catechumen",
           "repentance",
-          "forgiveness"
+          "catechumenate",
+          "forgiveness",
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (elect, catechumenate, catechumen, repentance, forgiveness) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (repentance, catechumenate, forgiveness, catechumen, elect) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -372,14 +412,14 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "catechumenate",
+          "alms",
           "fasting",
-          "catechumen",
-          "alms"
+          "catechumenate",
+          "catechumen"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumenate, fasting, catechumen, alms) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (alms, fasting, catechumenate, catechumen) with register shift from preceding cosmological paragraphs."
       }
     },
     {
@@ -420,8 +460,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "fasting",
-          "alms"
+          "alms",
+          "fasting"
         ],
         "register_shift": false,
         "seam_flag": false,
@@ -443,9 +483,9 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "catechumen",
           "elect",
-          "holy church",
-          "catechumen"
+          "holy church"
         ],
         "register_shift": false,
         "seam_flag": false,

@@ -2,6 +2,46 @@
   "chapter_number": 1,
   "title": "Concerning the Ad[vent] of the Apostle.",
   "total_paragraphs": 31,
+  "chapter_features": {
+    "teaching_purity": 0.018,
+    "editorial_fatigue_score": 0.42,
+    "editorial_fatigue_detail": {
+      "substrate": {
+        "first_half": 0.0,
+        "second_half": 0.35,
+        "shift": 0.35
+      },
+      "dialogue_frame": {
+        "first_half": 0.93,
+        "second_half": 0.79,
+        "shift": -0.14
+      },
+      "editorial_bridge": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "institutional": {
+        "first_half": 6.82,
+        "second_half": 9.02,
+        "shift": 2.2
+      },
+      "exhortation": {
+        "first_half": 0.39,
+        "second_half": 0.0,
+        "shift": -0.39
+      }
+    },
+    "structure": {
+      "has_formulaic_opening": false,
+      "has_formulaic_closing": true,
+      "has_question_formula": false
+    },
+    "nt_citations": [
+      "Phil. 2"
+    ],
+    "ot_citations": []
+  },
   "paragraphs": [
     {
       "index": 1,
@@ -100,8 +140,8 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
-          "elect",
-          "catechumen"
+          "catechumen",
+          "elect"
         ],
         "register_shift": true,
         "seam_flag": false,
@@ -512,14 +552,14 @@
         "has_bridge_connective": false,
         "bridge_phrase": null,
         "institutional_terms_found": [
+          "catechumen",
           "elect",
           "commandments",
-          "catechumen",
           "the church"
         ],
         "register_shift": true,
         "seam_flag": true,
-        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (elect, commandments, catechumen, the church) with register shift from preceding cosmological paragraphs."
+        "seam_note": "PROBABLE EDITORIAL EXTENSION: High institutional vocabulary (catechumen, elect, commandments, the church) with register shift from preceding cosmological paragraphs."
       }
     },
     {
