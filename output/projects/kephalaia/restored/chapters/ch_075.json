@@ -1,0 +1,110 @@
+{
+  "chapter_number": 75,
+  "chapter_title": "[Concerning the Letter (?)]",
+  "total_lacunae": 4,
+  "lacunae_map": {
+    "2": [
+      {
+        "index": 1,
+        "start": 327,
+        "end": 355,
+        "original": "[... is ordained to happen.]",
+        "content": "... is ordained to happen.",
+        "gap_type": "square"
+      }
+    ],
+    "3": [
+      {
+        "index": 1,
+        "start": 267,
+        "end": 272,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 306,
+        "end": 315,
+        "original": "[... ...]",
+        "content": "... ...",
+        "gap_type": "square"
+      },
+      {
+        "index": 3,
+        "start": 360,
+        "end": 379,
+        "original": "[that would happen]",
+        "content": "that would happen",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation: The Summons and the Obedience\n\n---\n\n**¶1:**\nConcerning the divine calling and the reciprocal acknowledgment of the human will.\n\n---\n\n**¶2:**\nConsider the divine calling, which proceeded from the Lord as Divine Truth in the beginning. He directed it into the celestial mind that had descended into spiritual combat. It is an influx of divine peace and conjunction that He inscribed with all providential truths and sent to the human will as to one conjoined to Him in origin — in which all things of the Lord's providence are contained, together with everything that calling will accomplish and bring into spiritual order. That divine calling, the celestial mind [GAP-1: is destined to receive and undergo according to providence.]\n\n---\n\n**¶3:**\nThe reciprocal acknowledgment that ascended from the celestial mind came into the interior and celestial states, to the Lord as Divine Truth. That also is a communication of interior states, which was sent from the celestial mind to the Lord, in which all the states of temptation are laid open; and every spiritual combat and the struggles that had been endured against evils and falsities. It did [GAP-2: set forth and make manifest] in the reciprocal acknowledgment that the celestial mind [GAP-3: disclosed and laid bare] everything that had been undergone in temptation and everything [GAP-4: REVIEW: that remained yet to be endured], all that had been accomplished through combat and whatever is prepared yet to be accomplished by it. The Lord as Divine Truth perceived all the temptations, and the spiritual perils, and the interior conflicts that the ruling evils and dominant falsities had waged against the celestial mind.\n\n---\n\n*Note on method:* \"Rulers\" corresponds to dominant evils and their falsities — the loves of self and the world that govern the natural mind and assault the celestial. \"Brother\" corresponds to conjunction through mutual good, reflecting that the Lord and the celestial human share one origin in Divine Good. The \"letter\" in both directions is the medium of spiritual communication: influx descending, acknowledgment ascending — the two movements that constitute all conjunction between the Divine and the human.",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "the summons and the obedience"
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "Consider the summons, which was sent from the Living Spirit in the beginning. He sent it to the First Man. It is a peace letter and greeting that he wrote and sent to his brother, in which all the tidings are written down, together with everything it will bring about and establish by that summons. That summons, the First Man [received, and all that is ordained to happen]"
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The answer that was sent from the First Man came to the heights, to the Living Spirit. That is also a letter, which was sent from the First Man to the Living Spirit, in which all the tidings are written down; and every war and the struggles that he had waged. It did [make known] in the answer that the First Man [had written down and made known] everything that had happened and everything [that would happen], all that had been done and whatever is made ready to be done by him. The Living Spirit knew all the wars and the dangers and the contests that the rulers had waged against the First Man."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 2,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "received, and all that is ordained to happen",
+      "original": "... is ordained to happen.",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading indicates the celestial mind \"is destined to receive and undergo according to providence,\" which in the Kephalaia's letter-metaphor register means the First Man received the summons and accepted all that it ordains.",
+      "confidence": "moderate",
+      "notes": "already filled by translator"
+    },
+    {
+      "paragraph": 3,
+      "index": 1,
+      "gap_id": "GAP-2",
+      "fill": "make known",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading says \"set forth and make manifest\"; in the Kephalaia's letter register, \"make known\" is the natural-plane expression for disclosing all states through the answer-letter.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 3,
+      "index": 2,
+      "gap_id": "GAP-3",
+      "fill": "had written down and made known",
+      "original": "... ...",
+      "gap_type": "square",
+      "gap_size": "medium",
+      "explanation": "The spiritual reading says \"disclosed and laid bare\"; in the Kephalaia's letter-writing metaphor, the First Man inscribed and communicated all his states of combat, strongly constrained by the parallel structure of the passage about writing letters containing tidings.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 3,
+      "index": 3,
+      "gap_id": "GAP-4",
+      "fill": "that would happen",
+      "original": "that would happen",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The editor's \"that would happen\" is confirmed: it forms a perfect structural parallel with \"everything that had happened\" and corresponds to the spiritual sense of \"that remained yet to be endured,\" expressed in the Kephalaia's natural-plane vocabulary of events and happenings.",
+      "confidence": "high",
+      "notes": "editorial confirmed"
+    }
+  ],
+  "violations": [],
+  "assessment": "2 restored, 1 already filled, 1 editorial reviewed (1 confirmed, 0 corrected)"
+}
