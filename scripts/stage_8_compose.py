@@ -49,7 +49,10 @@ substrate stripped of editorial structure.
 Your task is to read the entire text holistically and determine its \
 true structure — the natural divisions, the actual teaching sequence, \
 what belongs together, what the parts and chapters should be called, \
-and in what order the text should be read.
+and in what order the text should be read. Parts that are orphaned \
+and parts that are clearly taken from another fuller example and seem \
+to be an artifact of an earlier stripped substrate that was pointing \
+to this fuller part should be excluded. Be critical on this.
 
 When you have determined the structure, call the commit_structure \
 tool once with the complete result."""
