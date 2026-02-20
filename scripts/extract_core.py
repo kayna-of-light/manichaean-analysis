@@ -6,8 +6,9 @@ This script performs textual criticism to recover the oldest teaching layer
 from the composite Kephalaia text. It does NOT impose any narrative scheme
 or reorganize content. It works chapter by chapter in textual order:
 
-  1. Runs the register analysis (vocabulary scoring) on each paragraph
-  2. Sends the chapter to GPT-5.2 WITH the register scores as guidance
+  1. Loads pre-computed text-critical analysis (vocabulary scores, seam flags)
+     produced by extract_analysis.py
+  2. Sends the chapter to Claude Opus 4.6 WITH the analysis data as guidance
   3. The LLM classifies each paragraph as CORE / FRAME / PASTORAL / OVERLAY / MIXED
   4. For MIXED paragraphs, the LLM extracts the core teaching and notes what was removed
   5. The result preserves textual order — chapter by chapter, paragraph by paragraph
@@ -27,6 +28,8 @@ The "core" is not defined thematically. It is defined temporally:
     vocabulary used devotionally, Christian titles in non-cosmic contexts.
   - MIXED: Paragraphs where core and later material are interwoven.
     The LLM extracts the core and notes removals.
+
+Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
 Output: output/core/
   - ch_NNN.json         Per-chapter extraction results
@@ -48,16 +51,20 @@ import json
 import re
 import sys
 import time
+import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from enum import Enum
 from pathlib import Path
 from threading import Lock
-from typing import Optional
 
-from openai import OpenAI, RateLimitError, APIStatusError
+import httpx
+from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
-from pydantic import BaseModel, Field
 
+from extract_analysis import (
+    load_corpus_metadata,
+    split_paragraphs,
+    load_analysis,
+)
 from project_config import load_project, list_projects, SECRETS_PATH
 
 # ---------------------------------------------------------------------------
@@ -66,9 +73,6 @@ from project_config import load_project, list_projects, SECRETS_PATH
 
 PROJECT_CFG = None                 # ProjectConfig — set by configure_paths()
 CHAPTERS_DIR: Path | None = None   # input: cleaned chapters
-REGISTER_JSON: Path | None = None  # input: register analysis
-V4_DATA_JSON: Path | None = None   # input: v4 analysis
-V4_PARA_JSON: Path | None = None   # input: v4 paragraphs
 OUTPUT_DIR: Path | None = None     # output: core/
 SEGMENTS_DIR: Path | None = None   # output: core/chapters/
 ASSEMBLED_FILE: Path | None = None # output: restored_core.md
@@ -78,7 +82,7 @@ DATA_FILE: Path | None = None      # output: core_data.json
 def configure_paths(project_name: str) -> None:
     """Set module-level path variables from project config."""
     global PROJECT_CFG
-    global CHAPTERS_DIR, REGISTER_JSON, V4_DATA_JSON, V4_PARA_JSON
+    global CHAPTERS_DIR
     global OUTPUT_DIR, SEGMENTS_DIR, ASSEMBLED_FILE, DATA_FILE
 
     cfg = load_project(project_name)
@@ -90,15 +94,6 @@ def configure_paths(project_name: str) -> None:
     SEGMENTS_DIR = cfg.paths.core_chapters
     ASSEMBLED_FILE = cfg.paths.core_assembled
     DATA_FILE = cfg.paths.core_data
-
-    # Project-specific analysis paths (composite_text only)
-    if cfg.document_type == "composite_text":
-        reg = cfg.extra.get("register_json", "analysis/registers/register_analysis.json")
-        v4d = cfg.extra.get("v4_data_json", "analysis/v4/v4_data.json")
-        v4p = cfg.extra.get("v4_para_json", "analysis/v4/v4_paragraphs.json")
-        REGISTER_JSON = cfg.paths.project_dir / reg
-        V4_DATA_JSON = cfg.paths.project_dir / v4d
-        V4_PARA_JSON = cfg.paths.project_dir / v4p
 
     print(f"Project: {cfg.display_name}")
     print(f"  Type:   {cfg.document_type}")
@@ -127,537 +122,134 @@ def get_title(chapter: dict) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Register analysis — inline scoring (no import needed)
+# Tool definition — replaces Pydantic structured output
 # ---------------------------------------------------------------------------
 
-# Marker dictionaries copied from register_analysis.py for self-containment.
-# We only need the scoring, not the full reporting.
-
-FRAME_MARKERS = {
-    "once again the enlightener speaks": 5,
-    "once again he speaks": 4,
-    "once more the enlightener": 5,
-    "once more the apostle": 4,
-    "once more his disciples": 4,
-    "once again a disciple speaks": 5,
-    "once again, at one of the times": 5,
-    "his disciples questioned": 5,
-    "the disciple questioned": 5,
-    "disciples say to him": 5,
-    "i beseech you": 4, "i entreat you": 4,
-    "then speaks the apostle": 5,
-    "then the apostle says": 5,
-    "then the apostle speaks": 5,
-    "then speaks the glorious one": 5,
-    "the enlightener speaks to him": 4,
-    "he speaks to that disciple": 4,
-    "when they heard these things": 5,
-    "when that disciple had heard": 5,
-    "they rejoiced": 4, "they glorified": 4,
-    "blessed is he who": 3,
-    "you are glorious and blessed": 5,
-    "sitting down among the church": 4,
-    "sitting in the congregation": 4,
-    "my master": 3, "our master": 3,
-    "our enlightener": 4, "our father": 3,
-    "the glorious one": 2,
-    "i will explain it to you": 3,
-    "behold, i have explained": 4,
-    "on one of the occasions": 4,
-    "we beseech you": 4, "we entreat you": 4,
-    "that you may recount": 4,
-    "he says to him": 3, "he says to them": 3,
-}
-
-PASTORAL_MARKERS = {
-    "fasting": 2, "prayer": 2, "alms": 4, "alms-giving": 5,
-    "catechumen": 4, "catechumens": 4,
-    "church rules": 5, "sin": 1, "righteousness": 1,
-    "sinners": 2, "repentance": 3,
-    "the elect": 3, "the hearer": 4, "hearers": 4,
-    "tithe": 5, "offering": 2, "charity": 4,
-    "commandment": 3, "commandments": 3,
-    "forbidden": 3, "lawful": 3,
-    "holiness": 2, "purity": 2,
-    "works of righteousness": 4,
-}
-
-CHRISTIAN_MARKERS = {
-    "jesus the splendour": 2, "jesus the son of greatness": 3,
-    "jesus the youth": 3, "beloved christ": 5,
-    "christ": 2, "son of god": 3,
-    "holy church": 3, "his church": 3,
-    "apostolate": 4,
-    "catechumen": 3, "catechumens": 3,
-    "sons of the faith": 5, "daughters of the light": 5,
-    "holy spirit": 2,
-    "gospel": 3, "scripture": 1, "scriptures": 1,
-    "parable": 2,
-    "baptism": 4, "resurrection": 2,
-}
-
-APPLICATION_MARKERS = {
-    # Direct commands and exhortations
-    "i command you": 5, "i tell you": 4, "i say to you": 4,
-    "keep away from": 5, "beware of": 4, "do not": 2,
-    "you should": 3, "you must": 3, "you shall": 3,
-    "become like": 3, "become good": 3,
-    # Audience address
-    "my brethren": 4, "my brothers": 4, "my limbs": 4,
-    "my children": 4, "my beloved": 4, "you too": 3,
-    "o brethren": 4, "beloved": 2, "brethren": 2,
-    # Present-tense polemic / anchoring to editorial present
-    "reigns today": 5, "till today": 5, "until today": 5,
-    "nowadays": 5, "in this world today": 5,
-    "even now": 3, "to this day": 4,
-    # Application markers — bridging teaching to audience
-    "concerning this": 4, "on account of this": 3,
-    "for this reason": 2, "therefore": 1,
-    "hold your heart": 5, "guard your heart": 5,
-    "so that you": 3, "in order that you": 3,
-    # Imperative verbs in exhortation context
-    "command": 2, "struggle": 2, "beware": 3,
-    "strive": 2, "endure": 2,
-}
-
-TEACHING_MARKERS = {
-    # Body-cosmos correspondence
-    "corresponds": 5, "accords": 5, "pattern of": 4, "reflects": 3,
-    "likeness": 3, "after the pattern": 5, "after the likeness": 5,
-    "image": 2, "in the manner of": 3,
-    # Body parts
-    "head": 1, "neck": 1, "heart": 2, "stomach": 2, "ribs": 2,
-    "navel": 2, "loins": 2, "liver": 3, "lung": 3, "spleen": 3,
-    "kidneys": 3, "intestines": 2, "veins": 2, "skin": 1,
-    "bone": 2, "marrow": 2, "sinew": 3, "flesh": 1, "blood": 1,
-    # Interior states
-    "peaceful": 3, "troubled": 3, "confusion": 3, "disturbance": 3,
-    "ordered": 2, "tranquil": 3, "sweet": 1,
-    "gladness": 2, "grief": 2, "anger": 2, "lust": 2, "envy": 2,
-    # Natural images
-    "food": 2, "nourishment": 3, "water": 1, "fire": 1, "wind": 1,
-    "tree": 1, "trees": 1, "fruit": 1, "fruits": 1,
-    "seed": 2, "root": 1, "branch": 1,
-    "animal": 1, "animals": 1, "bird": 1, "birds": 1,
-    "fish": 1, "reptile": 2, "creature": 1,
-    "mountain": 2, "dust": 2, "spring": 2, "well": 1,
-    # Cosmological teaching (NOT separated from correspondential)
-    "first man": 3, "living spirit": 3, "mother of life": 3,
-    "father of greatness": 3, "third ambassador": 3,
-    "light mind": 3, "virgin of light": 3,
-    "five shekhinas": 4, "five sons": 3, "five elements": 3,
-    "five worlds": 3, "five limbs": 3, "five trees": 3,
-    "two principles": 4, "three wheels": 3, "three vessels": 3,
-    "living soul": 2, "cross of light": 3, "living fire": 3,
-    "land of darkness": 3, "land of light": 2,
-    "garment of light": 3, "garment of fire": 3,
-    "new man": 3, "old man": 3,
-    "column of glory": 4, "pillar of glory": 4, "perfect man": 3,
-    "storehouses": 3, "firmaments": 3, "aeons": 2,
-    "rulers": 2, "archons": 3, "elements": 1, "mixture": 2,
-    "vessels": 2, "principalities": 3, "zodiac": 3,
-    "call and answer": 5, "summons and obedience": 5,
-    "consideration": 2, "counsel": 2, "insight": 2,
-    "thought": 1, "mind": 1,
-    # Five-fold / degree indicators
-    "five": 1, "three": 1, "twelve": 1,
-    "degree": 3, "degrees": 3,
-}
-
-
-def score_text(text: str, markers: dict[str, int]) -> float:
-    """Score text against a marker set. Return normalized score per 100 words."""
-    text_lower = text.lower()
-    total = 0
-    for marker, weight in markers.items():
-        count = text_lower.count(marker.lower())
-        if count > 0:
-            total += weight * count
-    words = max(len(text.split()), 1)
-    return round((total / words) * 100, 2)
-
-
-def split_paragraphs(text: str) -> list[str]:
-    """Split teaching text into paragraphs."""
-    parts = re.split(r'\n\s*\n|\n(?=⟨p\.\d+⟩)', text)
-    return [p.strip() for p in parts if p.strip() and len(p.split()) >= 3]
-
-
-def score_chapter_paragraphs(teaching_text: str) -> list[dict]:
-    """Score each paragraph in a chapter's teaching text.
-
-    Returns a list of dicts with paragraph text, word count, and register scores.
-    """
-    paragraphs = split_paragraphs(teaching_text)
-    results = []
-    for i, text in enumerate(paragraphs):
-        results.append({
-            "index": i + 1,
-            "words": len(text.split()),
-            "text_preview": text[:150].replace("\n", " "),
-            "scores": {
-                "teaching": score_text(text, TEACHING_MARKERS),
-                "frame": score_text(text, FRAME_MARKERS),
-                "pastoral": score_text(text, PASTORAL_MARKERS),
-                "christian": score_text(text, CHRISTIAN_MARKERS),
-                "application": score_text(text, APPLICATION_MARKERS),
+EXTRACT_CORE_TOOL = {
+    "name": "commit_extraction",
+    "description": (
+        "Commit the complete core extraction for this chapter. "
+        "Call this exactly once with all paragraph classifications."
+    ),
+    "input_schema": {
+        "type": "object",
+        "properties": {
+            "chapter_number": {
+                "type": "integer",
+                "description": "The chapter number.",
             },
-        })
-    return results
-
-
-# ---------------------------------------------------------------------------
-# V4 data loader — chapter-level text-critical features
-# ---------------------------------------------------------------------------
-
-def load_v4_chapter_data() -> dict[int, dict]:
-    """Load v4 analysis data keyed by chapter number.
-
-    Returns dict of chapter_number → {
-        layer_shift_score, first_half_cosmo, second_half_cosmo,
-        first_half_pastoral, second_half_pastoral,
-        has_formulaic_opening, has_formulaic_closing, has_question_formula,
-        nt_citations, ot_citations, mani_citations,
-        gardner_flags, composite_score, vocab_densities
-    }
-    """
-    if not V4_DATA_JSON.exists():
-        print(f"  WARNING: v4 data not found at {V4_DATA_JSON}")
-        return {}
-    with open(V4_DATA_JSON, encoding="utf-8") as f:
-        data = json.load(f)
-    result = {}
-    for ch in data:
-        result[ch["chapter_number"]] = {
-            "layer_shift_score": ch.get("layer_shift_score", 0.0),
-            "first_half_cosmo": ch.get("first_half_cosmo", 0.0),
-            "second_half_cosmo": ch.get("second_half_cosmo", 0.0),
-            "first_half_pastoral": ch.get("first_half_pastoral", 0.0),
-            "second_half_pastoral": ch.get("second_half_pastoral", 0.0),
-            "first_half_application": ch.get("first_half_application", 0.0),
-            "second_half_application": ch.get("second_half_application", 0.0),
-            "has_formulaic_opening": ch.get("has_formulaic_opening", False),
-            "has_formulaic_closing": ch.get("has_formulaic_closing", False),
-            "has_question_formula": ch.get("has_question_formula", False),
-            "nt_citations": ch.get("nt_citations", []),
-            "ot_citations": ch.get("ot_citations", []),
-            "mani_citations": ch.get("mani_citations", []),
-            "gardner_flags": ch.get("gardner_flags", []),
-            "composite_score": ch.get("composite_score", 0.0),
-            "vocab_densities": ch.get("vocab_densities", {}),
-        }
-    return result
-
-
-# ---------------------------------------------------------------------------
-# Editorial seam detection — paragraph-level
-# ---------------------------------------------------------------------------
-
-# Bridge connectives that editors use to graft new material onto existing
-# teaching sequences. These are NOT the same as "Again," which is used
-# within the core teaching to continue a series.
-EDITORIAL_BRIDGE_PHRASES = [
-    r"(?i)^now,?\s+moreover",
-    r"(?i)^furthermore,?\s+(?:also|moreover)",
-    r"(?i)^now,?\s+also",
-    r"(?i)^moreover,?\s+also",
-    r"(?i)^and\s+moreover",
-    r"(?i)^but\s+moreover",
-    r"(?i)^now,?\s+(?:these|this|the)\s+(?:same|very)",
-]
-
-EDITORIAL_BRIDGE_RES = [re.compile(p) for p in EDITORIAL_BRIDGE_PHRASES]
-
-# Institutional vocabulary that signals the content is church-application
-INSTITUTIONAL_TERMS = {
-    "holy church", "the church", "apostle of light", "elect",
-    "catechumen", "catechumens", "hearers", "leaders", "teachers",
-    "congregation", "bishops", "presbyter", "deacons",
-    "mission", "apostolate",
+            "chapter_title": {
+                "type": "string",
+                "description": "The chapter title.",
+            },
+            "total_paragraphs": {
+                "type": "integer",
+                "description": "Total paragraphs in the chapter.",
+            },
+            "core_paragraphs": {
+                "type": "integer",
+                "description": (
+                    "Count of CORE + MIXED paragraphs "
+                    "(those with extracted core_text)."
+                ),
+            },
+            "core_percentage": {
+                "type": "number",
+                "description": (
+                    "Estimated % of teaching text word count "
+                    "that is core (0-100)."
+                ),
+            },
+            "chapter_note": {
+                "type": "string",
+                "description": (
+                    "Brief assessment of this chapter. Is the core "
+                    "teaching dominant? Is the chapter mostly "
+                    "frame/pastoral with embedded fragments? "
+                    "Note any distinctive features."
+                ),
+            },
+            "paragraphs": {
+                "type": "array",
+                "description": "Classification for each paragraph.",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "paragraph_number": {
+                            "type": "integer",
+                            "description": (
+                                "Which paragraph (1-indexed, matching "
+                                "the register analysis)."
+                            ),
+                        },
+                        "classification": {
+                            "type": "string",
+                            "enum": [
+                                "core",
+                                "frame",
+                                "pastoral",
+                                "overlay",
+                                "mixed",
+                            ],
+                            "description": (
+                                "Classify by TEMPORAL LAYER — when did "
+                                "this language enter this text? "
+                                "CORE: Oldest teaching layer — systematic "
+                                "cosmological-correspondential teaching. "
+                                "FRAME: Hagiographic editorial apparatus. "
+                                "PASTORAL: Church institutional material. "
+                                "OVERLAY: Material entering via NT/Gospels. "
+                                "MIXED: Core interwoven with later material."
+                            ),
+                        },
+                        "core_text": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "For CORE: the paragraph text verbatim. "
+                                "For MIXED: extracted old teaching only. "
+                                "For FRAME/PASTORAL/OVERLAY: null. "
+                                "Preserve lacunae [...] and restorations. "
+                                "Capitalize personified cosmic entities "
+                                "(Sin, Darkness) when they function as agents."
+                            ),
+                        },
+                        "removed_material": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "For MIXED only: what was removed and why. "
+                                "Null for non-MIXED."
+                            ),
+                        },
+                        "temporal_note": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "Brief observation about temporal layer. "
+                                "What markers, patterns, or register shifts "
+                                "do you observe? Be honest about uncertainty."
+                            ),
+                        },
+                    },
+                    "required": [
+                        "paragraph_number",
+                        "classification",
+                        "core_text",
+                        "removed_material",
+                        "temporal_note",
+                    ],
+                },
+            },
+        },
+        "required": [
+            "chapter_number",
+            "chapter_title",
+            "total_paragraphs",
+            "core_paragraphs",
+            "core_percentage",
+            "chapter_note",
+            "paragraphs",
+        ],
+    },
 }
-
-
-def detect_editorial_seams(paragraphs: list[str], para_scores: list[dict]) -> list[dict]:
-    """Detect potential editorial seams at paragraph level.
-
-    An editorial seam is where an editor extends an existing teaching sequence
-    by mimicking the syntactic pattern but introducing institutional content.
-    The archetype is Ch.3 ¶9: "Now, moreover, happiness, wisdom and power
-    exist in the holy church" — the editor saw the four-fold cosmological
-    iteration and added a fifth applying it to their own institution.
-
-    Returns one dict per paragraph with seam analysis.
-    """
-    results = []
-    for i, (text, scores) in enumerate(zip(paragraphs, para_scores)):
-        text_lower = text.lower()
-        seam = {
-            "has_bridge_connective": False,
-            "bridge_phrase": None,
-            "institutional_terms_found": [],
-            "register_shift": False,
-            "seam_flag": False,
-            "seam_note": None,
-        }
-
-        # Check for bridge connective at paragraph start
-        first_line = text.strip().split("\n")[0] if text.strip() else ""
-        for pat in EDITORIAL_BRIDGE_RES:
-            m = pat.search(first_line)
-            if m:
-                seam["has_bridge_connective"] = True
-                seam["bridge_phrase"] = m.group(0)
-                break
-
-        # Check for institutional vocabulary
-        for term in INSTITUTIONAL_TERMS:
-            if term in text_lower:
-                seam["institutional_terms_found"].append(term)
-
-        # Register shift detection: compare to preceding paragraphs
-        if i >= 1:
-            s = scores["scores"]
-            # Average teaching and pastoral scores of preceding 1-3 paragraphs
-            lookback = min(i, 3)
-            prev_teaching = sum(
-                para_scores[i - j - 1]["scores"]["teaching"]
-                for j in range(lookback)
-            ) / lookback
-            prev_pastoral = sum(
-                para_scores[i - j - 1]["scores"]["pastoral"]
-                for j in range(lookback)
-            ) / lookback
-
-            # If pastoral rises AND teaching drops relative to predecessors
-            pastoral_rise = s["pastoral"] - prev_pastoral
-            teaching_drop = prev_teaching - s["teaching"]
-            if pastoral_rise > 1.0 or (
-                seam["has_bridge_connective"] and len(seam["institutional_terms_found"]) >= 1
-            ):
-                seam["register_shift"] = True
-
-        # Combined seam flag
-        if seam["has_bridge_connective"] and (
-            seam["register_shift"] or len(seam["institutional_terms_found"]) >= 2
-        ):
-            seam["seam_flag"] = True
-            seam["seam_note"] = (
-                f"EDITORIAL SEAM DETECTED: Bridge connective '{seam['bridge_phrase']}' "
-                f"with institutional vocabulary ({', '.join(seam['institutional_terms_found'])}). "
-                f"This paragraph likely extends an existing teaching sequence with "
-                f"institutional application — the editor mimics the preceding pattern "
-                f"but shifts to church-specific content."
-            )
-        elif len(seam["institutional_terms_found"]) >= 3 and seam.get("register_shift"):
-            seam["seam_flag"] = True
-            seam["seam_note"] = (
-                f"PROBABLE EDITORIAL EXTENSION: High institutional vocabulary "
-                f"({', '.join(seam['institutional_terms_found'])}) with register shift "
-                f"from preceding cosmological paragraphs."
-            )
-
-        results.append(seam)
-    return results
-
-
-def format_editorial_fatigue(v4_data: dict) -> str:
-    """Format chapter-level editorial fatigue assessment for LLM context."""
-    shift = v4_data.get("layer_shift_score", 0.0)
-    fh_c = v4_data.get("first_half_cosmo", 0.0)
-    sh_c = v4_data.get("second_half_cosmo", 0.0)
-    fh_p = v4_data.get("first_half_pastoral", 0.0)
-    sh_p = v4_data.get("second_half_pastoral", 0.0)
-    fh_a = v4_data.get("first_half_application", 0.0)
-    sh_a = v4_data.get("second_half_application", 0.0)
-
-    lines = []
-    lines.append(f"  Editorial fatigue score: {shift:.2f}")
-    lines.append(f"    First half — cosmological: {fh_c:.2f}, pastoral: {fh_p:.2f}, application: {fh_a:.2f}")
-    lines.append(f"    Second half — cosmological: {sh_c:.2f}, pastoral: {sh_p:.2f}, application: {sh_a:.2f}")
-
-    # Describe the pattern
-    pastoral_shift = sh_p - fh_p
-    application_shift = sh_a - fh_a
-    combined_shift = pastoral_shift + application_shift
-
-    if shift > 0.5:
-        lines.append("    ⚠ SIGNIFICANT pastoral/application drift in second half — "
-                      "editor likely added institutional material after core teaching")
-    elif shift > 0.2:
-        lines.append("    ⚠ Moderate pastoral/application drift in second half")
-    elif shift < -0.5:
-        lines.append("    Cosmological density increases in second half — unusual pattern")
-
-    if application_shift > 0.3:
-        lines.append("    ⚠ Application voice rises in second half — "
-                      "exhortation/imperative language concentrates toward chapter end")
-
-    return "\n".join(lines)
-
-
-def format_chapter_context(v4_data: dict) -> str:
-    """Format chapter-level v4 analytical context for the LLM."""
-    lines = []
-
-    # Structure
-    features = []
-    if v4_data.get("has_formulaic_opening"):
-        features.append("formulaic opening")
-    if v4_data.get("has_formulaic_closing"):
-        features.append("formulaic closing")
-    if v4_data.get("has_question_formula"):
-        features.append("question formula")
-    if features:
-        lines.append(f"  Structure: {', '.join(features)}")
-
-    # Citations
-    nt = v4_data.get("nt_citations", [])
-    ot = v4_data.get("ot_citations", [])
-    if nt:
-        lines.append(f"  NT citations in footnotes: {', '.join(nt)}")
-    if ot:
-        lines.append(f"  OT citations in footnotes: {', '.join(ot)}")
-
-    # Gardner flags
-    flags = v4_data.get("gardner_flags", [])
-    if flags:
-        lines.append(f"  Gardner editorial flags: {', '.join(flags)}")
-
-    # Teaching purity (new v4 field)
-    purity = v4_data.get("teaching_purity", None)
-    teach_d = v4_data.get("teaching_density", None)
-    overlay_d = v4_data.get("overlay_density", None)
-    if purity is not None:
-        lines.append(f"  Teaching purity: {purity:.2f} "
-                      f"(teaching_density={teach_d:.2f}, overlay_density={overlay_d:.2f})")
-
-    # Vocab densities (raw details)
-    vd = v4_data.get("vocab_densities", {})
-    if vd:
-        top = sorted(vd.items(), key=lambda x: x[1], reverse=True)[:3]
-        density_str = ", ".join(f"{k}={v:.2f}" for k, v in top if v > 0)
-        if density_str:
-            lines.append(f"  Top vocabulary densities (raw): {density_str}")
-
-    # Editorial fatigue
-    lines.append(format_editorial_fatigue(v4_data))
-
-    return "\n".join(lines)
-
-
-# ---------------------------------------------------------------------------
-# Pydantic models for structured LLM output
-# ---------------------------------------------------------------------------
-
-class ParagraphType(str, Enum):
-    """Classification of a paragraph by temporal layer."""
-    CORE = "core"
-    FRAME = "frame"
-    PASTORAL = "pastoral"
-    OVERLAY = "overlay"
-    MIXED = "mixed"
-
-
-class ParagraphExtraction(BaseModel):
-    """Extraction result for a single paragraph."""
-    paragraph_number: int = Field(
-        description="Which paragraph in the chapter (1-indexed, matching the register analysis)"
-    )
-    classification: ParagraphType = Field(
-        description=(
-            "Classify by TEMPORAL LAYER — when did this language enter this text? "
-            "CORE: The oldest teaching layer. Systematic cosmological-correspondential "
-            "teaching that predates the editorial compilation. Identified by: "
-            "numbered degree structures, body-universe maps, named cosmic beings in "
-            "SYSTEMATIC exposition, light-dark mechanics, five-fold/three-fold sets. "
-            "Characteristic voice: impersonal, structural, 'how things work'. "
-            "FRAME: Hagiographic editorial apparatus added by the compiling community. "
-            "Q&A formulas, closing praise, biographical Mani-claims, titles of reverence. "
-            "PASTORAL: Institutional church material — fasting, alms, catechumen rules, "
-            "behavioral ethics without cosmological mechanism. "
-            "CRITICAL: When a paragraph extends a teaching sequence by mimicking its "
-            "syntax but applying it to church/institutional content, the ENTIRE "
-            "paragraph is PASTORAL. Example: after a series mapping 'these three exist "
-            "in [cosmic domain]', a paragraph saying 'Now, moreover, these three exist "
-            "in the holy church' followed by ecclesial identifications is PASTORAL — "
-            "the editor added the whole paragraph, including the opening clause. "
-            "Do NOT split such paragraphs as MIXED. "
-            "OVERLAY: Material that entered via the Gospels, NT, or Mani's Christian "
-            "synthesis. This includes: Gospel citations and their paraphrases (even if "
-            "the cited teaching uses correspondence — Jesus spoke in correspondence "
-            "but citing his Gospel sayings is a LATER act), 'As it is written in the "
-            "Gospel', Pauline vocabulary in devotional contexts, 'the saviour preached', "
-            "NT narrative exempla (Judas, Paul's conversion, etc). The test: did this "
-            "language ENTER the Kephalaia via the NT? If yes, it is overlay regardless "
-            "of its internal content quality. "
-            "MIXED: A paragraph where genuinely old teaching is interwoven with later "
-            "material such that cutting cleanly is possible. Use ONLY when old teaching "
-            "language (not just borrowed syntax) is genuinely present alongside later "
-            "additions. A paragraph flagged as EDITORIAL SEAM is NOT mixed — it is "
-            "pastoral or overlay, because the entire paragraph was written by the editor."
-        )
-    )
-    core_text: Optional[str] = Field(
-        default=None,
-        description=(
-            "For CORE paragraphs: the paragraph text, preserving the Coptic "
-            "translation vocabulary as-is, EXCEPT: capitalize personified "
-            "cosmological entities (Sin, Darkness, etc.) when they function "
-            "as agents with faculties or members — not as moral categories. "
-            "For MIXED paragraphs: the extracted old teaching with later "
-            "additions removed. "
-            "Preserve lacunae [...] and editorial restorations [text]. "
-            "For FRAME/PASTORAL/OVERLAY: null. "
-            "CRITICAL: A paragraph classified as OVERLAY or PASTORAL gets null "
-            "here even if its content is profound or correspondential. The "
-            "classification is about WHEN it entered the text, not content quality. "
-            "SPECIFICALLY: when a paragraph with an EDITORIAL SEAM flag mimics "
-            "the preceding teaching syntax but applies it to institutional content, "
-            "core_text must be null — the opening clause that echoes the pattern "
-            "is PART OF the editorial graft, not a remnant of old teaching."
-        )
-    )
-    removed_material: Optional[str] = Field(
-        default=None,
-        description=(
-            "For MIXED paragraphs only: describe what was removed and why. "
-            "Be specific: 'Removed opening frame formula: Once again the "
-            "enlightener speaks to his disciples.' Null for non-MIXED."
-        )
-    )
-    temporal_note: Optional[str] = Field(
-        default=None,
-        description=(
-            "Brief observation about temporal layer. What makes you date this "
-            "paragraph to its assigned layer? What voice markers, citation "
-            "formulas, structural patterns, or register shifts do you observe? "
-            "For overlay: note the entry vector (e.g. 'Gospel citation formula'). "
-            "For core: note what marks it as old (e.g. 'systematic five-fold "
-            "mapping, impersonal expository voice'). "
-            "Be honest about uncertainty."
-        )
-    )
-
-
-class ChapterExtraction(BaseModel):
-    """Complete extraction result for one chapter."""
-    chapter_number: int
-    chapter_title: str
-    total_paragraphs: int
-    core_paragraphs: int = Field(
-        description="Count of CORE + MIXED paragraphs (those with extracted core_text)"
-    )
-    core_percentage: float = Field(
-        description="Estimated % of teaching text word count that is core (0-100)"
-    )
-    chapter_note: str = Field(
-        description=(
-            "Brief assessment of this chapter. Is the core teaching dominant? "
-            "Is the chapter mostly frame/pastoral with embedded fragments? "
-            "Note any distinctive features of the language or content."
-        )
-    )
-    paragraphs: list[ParagraphExtraction]
 
 
 # ---------------------------------------------------------------------------
@@ -748,6 +340,50 @@ secondary signals that help you find the boundary. But the boundary itself \
 is structural: does Mapping Side B stay within the cosmic system, or does \
 it reach into the contemporary world?
 
+## THE PERSIAN DIALOGUE TRADITION AND OPENING PARAGRAPHS
+
+CRITICAL: The Q&A format of the Kephalaia — structured questions about \
+cosmological topics followed by systematic teaching — is NOT a Manichaean \
+invention. This is the PERSIAN PEDAGOGICAL TRADITION. The dialogue format \
+itself is substratic. Mani APPROPRIATED this tradition and added his own \
+attribution machinery ("Once again the enlightener speaks to his disciples").
+
+This means: when an opening paragraph contains a SUBSTANTIVE COSMOLOGICAL \
+QUESTION — "Tell us about the five storehouses", "What are the three \
+wheels?", "How does the mixture come about?" — the QUESTION ITSELF is \
+core. It reveals the teaching structure. It IS the substrate. The question \
+defines what the teaching sequence will map.
+
+Only classify opening paragraphs as FRAME when they contain PURELY \
+FORMULAIC attribution with NO cosmological content:
+- "Once again the enlightener speaks to his disciples" → FRAME (pure formula)
+- "We beseech you, our master, that you may recount to us" → FRAME (pure honorific)
+
+But:
+- "Tell us about the five limbs of the Father of Greatness" → CORE \
+  (substantive cosmological question — it defines the teaching topic)
+- "We beseech you that you tell us about the three wheels and the \
+  five storehouses" → MIXED (strip "We beseech you that you tell us", \
+  keep "about the three wheels and the five storehouses")
+
+When a frame formula introduces a substantive question, classify as \
+MIXED and extract the substantive content. Do NOT discard cosmological \
+questions just because they are wrapped in frame formulas.
+
+## ENUMERATION INTEGRITY
+
+When the substrate teaches through NUMBERED LISTS — "The first is...", \
+"The second is...", "The third is..." — the enumeration markers are \
+PART OF the substrate. They are the STRUCTURE of the teaching, not \
+decoration.
+
+If a paragraph begins with an enumeration marker ("The second is error", \
+"The third is desire") and continues with cosmological-correspondential \
+description, the ENTIRE enumeration unit is CORE. Do NOT strip the \
+enumeration marker from a mixed paragraph. If you must extract from a \
+mixed paragraph that contains enumeration, preserve the full "The Nth \
+is [term]" structure in core_text.
+
 ## COMPUTATIONAL TEXT-CRITICAL DATA: HOW TO USE IT
 
 You will receive vocabulary density scores and structural flags generated \
@@ -755,27 +391,24 @@ by a computational NLP pipeline. These are GUIDES, not determinations. \
 They flag patterns for your attention. You make the actual classification \
 by reading the text.
 
-The vocabulary pipeline counts word frequencies in six teaching categories \
-(cosmological, persian_substrate, correspondential) and four overlay \
-categories (pastoral, nt_christian, hagiographic, application_voice). \
-The scores tell you WHAT VOCABULARY IS PRESENT — not WHEN it entered \
-the text.
+The vocabulary pipeline scores paragraphs against multiple temporal-layer \
+vocabularies identified by a corpus-level metadata analysis. Each layer \
+has a curated vocabulary of diagnostic terms and weights. The scores tell \
+you WHAT VOCABULARY IS PRESENT — not WHEN it entered the text.
 
-The **application_voice** category specifically flags imperative/exhortation \
-language: direct commands ("I command you"), audience address ("my brethren", \
-"my limbs"), present-tense polemic ("reigns today", "till today", \
-"nowadays"), and application markers ("concerning this", "you too"). \
-When this category fires, the text is likely pivoting from substrate to \
-editorial application — but READ THE ACTUAL TEXT to confirm.
+When a scoring category fires strongly, the text is likely associated \
+with that temporal layer — but READ THE ACTUAL TEXT to confirm. \
+Imperative/exhortation language often marks the substrate→application \
+boundary.
 
 The reliability hierarchy of computational signals:
 1. **Seam flags** — Strongest. Detect structural patterns (bridge \
    connective + institutional vocabulary + register shift from preceding \
    paragraphs).
-2. **Editorial fatigue** — Strong. Pastoral/application drift from first \
-   to second chapter half. Classic scribal pattern.
-3. **Application voice density** — Moderate. Flags imperative/address \
-   language that often marks the substrate→application boundary.
+2. **Editorial fatigue** — Strong. Drift from older to later layers \
+   across the chapter. Classic scribal pattern.
+3. **Register score shifts** — Moderate. Flags vocabulary density changes \
+   that often mark layer boundaries.
 4. **Gardner flags** — Strong. From the scholarly edition's critical \
    apparatus.
 5. **Register scores** — Weakest. Raw vocabulary counts. A paragraph \
@@ -920,13 +553,12 @@ same hand at the same time.
 The analytical data you receive is generated by a SIMPLE NLP PIPELINE — \
 basically vocabulary frequency counting. It works like this:
 
-1. **Vocabulary lists** were manually curated for six categories: \
-   cosmological, persian_substrate, correspondential, pastoral, \
-   nt_christian, hagiographic.
+1. **Vocabulary lists** were identified by a corpus-level metadata analysis \
+   for each temporal layer.
 2. **Density scores** count how often words from each list appear per 100 \
    words of text.
-3. **Composite scores** weight those densities (teaching categories \
-   positive, overlay categories negative) into a single number.
+3. **Per-layer scores** show which vocabulary categories are active in each \
+   paragraph.
 
 This means the scores measure WHAT VOCABULARY IS PRESENT. They cannot \
 determine WHEN that vocabulary entered the text. A paragraph full of \
@@ -937,68 +569,37 @@ text.
 
 **YOUR reading of the text is PRIMARY. The scores are guides, not truth.** \
 Specifically:
-- A high pastoral score does NOT mean "classify as pastoral." It means \
-  "pastoral vocabulary is present — investigate whether the underlying \
-  teaching is old."
-- A high teaching score does NOT mean "classify as core." It means \
-  "teaching vocabulary is present — verify this is genuinely old and not \
-  a later imitation."
+- A high score for any layer does NOT mean "classify as that layer." It means \
+  that layer's vocabulary is present — investigate whether the classification \
+  matches.
 - The scores are MOST reliable for detecting editorial fatigue patterns \
-  (pastoral drift across chapter halves) and for flagging editorial seams \
+  (drift across chapter halves) and for flagging editorial seams \
   (bridge connective + register shift). These structural patterns are \
   harder to fake than raw vocabulary presence.
 
 ### Chapter-level features:
 - **Teaching purity**: Ratio of teaching vocabulary to total vocabulary \
-  density. Higher = less overlay vocabulary. But this is still just \
-  vocabulary counting — a chapter with high purity can still have late \
-  material if the editor wrote in teaching style.
+  density. Higher = less overlay vocabulary.
 - **Editorial fatigue score**: Measures pastoral drift from first to second \
   half of the chapter. Positive values mean pastoral vocabulary increases \
-  in the second half — a classic editorial fatigue pattern where scribes \
-  add institutional material after the core teaching. This is one of the \
-  MORE reliable signals because it detects a structural pattern, not just \
-  vocabulary presence.
+  in the second half — a classic editorial fatigue pattern.
 - **Structure**: Whether formulaic opening/closing are detected.
 - **Citations**: NT/OT citations found in the scholarly footnotes.
-- **Gardner flags**: Editorial observations from the critical apparatus \
-  (these come directly from the scholarly edition — high reliability).
+- **Gardner flags**: Editorial observations from the critical apparatus.
 
 ### Paragraph-level features:
-- **Register scores**: teaching, frame, pastoral, christian, application \
-  vocabulary density per 100 words. These are RAW VOCABULARY COUNTS — they \
-  tell you what words are present, not what temporal layer the paragraph \
-  belongs to. Use them to direct your attention, not to determine your \
-  classification.
-- **Application voice score**: Flags imperative/address/exhortation \
-  language — direct commands, audience address ("my brethren"), present- \
-  tense anchors ("reigns today", "nowadays"), and bridging formulae \
-  ("concerning this"). When this fires alongside cosmological vocabulary, \
-  the paragraph is likely MIXED: the substrate is being USED to make a \
-  point. Find where "what things are" ends and "what you should do" begins.
+- **Register scores**: Vocabulary density per 100 words for each scoring \
+  category identified by the metadata analysis. These are RAW VOCABULARY COUNTS.
 - **Seam flags**: When the text-critical algorithm detects a potential \
   editorial seam (bridge connective + institutional vocabulary + register \
-  shift from preceding paragraphs). These flags are STRONG signals because \
-  they detect a STRUCTURAL pattern (an editor extending an existing sequence), \
-  not just vocabulary presence.
+  shift from preceding paragraphs). These are STRONG signals.
 
 ### How to use this data:
-Use these features alongside your own temporal judgment. The reliability \
-hierarchy is:
-1. **Seam flags** — STRONGEST signal. These detect a STRUCTURAL pattern \
-   (bridge connective + institutional terms + register shift from preceding \
-   paragraphs). A seam flag means an editor extended an existing sequence. \
-   When a seam flag fires, the paragraph is PASTORAL or OVERLAY — not MIXED. \
-   Do NOT override a seam flag by extracting the opening clause as core_text. \
-   The opening clause that mimics the pattern IS PART OF the editorial graft.
-2. **Editorial fatigue** — Strong signal. Pastoral drift across chapter \
-   halves indicates scribal addition of institutional material.
-3. **Gardner flags** — Strong signal. These come from the scholarly edition.
-4. **Register scores** — WEAKEST signal. These are raw vocabulary counts. \
-   They tell you what words are present, not what layer a paragraph belongs \
-   to. A paragraph with high pastoral score might contain old teaching \
-   wrapped in editorial language. Trust YOUR reading of the actual text \
-   over register scores — but NOT over seam flags.
+1. **Seam flags** — STRONGEST signal. When a seam flag fires, the paragraph \
+   is likely a later editorial addition — not MIXED.
+2. **Editorial fatigue** — Strong signal. Drift toward later layers indicates addition.
+3. **Gardner flags** — Strong signal from the scholarly edition.
+4. **Register scores** — WEAKEST signal. Trust YOUR reading over these.
 
 ## YOUR TASK
 
@@ -1006,22 +607,21 @@ You receive a chapter's teaching text broken into numbered paragraphs with \
 vocabulary register scores, seam detection flags, and chapter-level \
 text-critical features. Classify each paragraph by temporal layer.
 
+When you have completed your analysis, call the commit_extraction tool \
+once with the complete extraction for all paragraphs.
+
 ## EXTRACTION RULES
 
-1. **Temporal layer is the axis.** Do NOT classify by content type ("this has \
-   correspondence so it must be core"). Classify by WHEN the language entered \
-   the text. A Gospel citation containing correspondential content is OVERLAY.
+1. **Temporal layer is the axis.** Do NOT classify by content type. \
+   Classify by WHEN the language entered the text.
 
 2. **The teaching core expounds, it does not cite.** Core teaching describes \
    how cosmic systems work. It does not say "as it is written" or "the \
-   saviour preached." When you see citation formulas, you are looking at a \
-   later hand — even if what is cited is profound.
+   saviour preached."
 
 3. **Editorial seams are NOT mixed paragraphs.** When a paragraph extends a \
-   teaching sequence with institutional content (detected by bridge \
-   connective + register shift), classify the ENTIRE paragraph as PASTORAL. \
-   The opening clause that mimics the pattern is part of the editorial \
-   addition — do NOT extract it as core_text.
+   teaching sequence with institutional content, classify the ENTIRE \
+   paragraph as PASTORAL.
 
 4. **Preserve exact text.** For CORE paragraphs, return verbatim. For MIXED, \
    extract the old teaching words exactly — no paraphrase.
@@ -1035,11 +635,11 @@ text-critical features. Classify each paragraph by temporal layer.
 
 7. **Substantive cosmological questions are CORE.** "Tell us about the five \
    storehouses" reveals the teaching structure. Purely formulaic "We beseech \
-   you" is FRAME.
+   you" is FRAME. When both are present, classify as MIXED and PRESERVE the \
+   substantive content.
 
 8. **When in doubt about age, flag it.** Use temporal_note to record genuine \
-   uncertainty. Do not keep late material out of caution — be honest about \
-   what you can and cannot date.
+   uncertainty. Do not keep late material out of caution.
 
 9. **Watch for voice shifts.** The oldest teaching has a distinctive voice: \
    systematic, impersonal, structured, process-oriented. When you hear it \
@@ -1047,68 +647,146 @@ text-critical features. Classify each paragraph by temporal layer.
 
 10. **Editorial fatigue matters.** If the chapter-level fatigue score shows \
     strong pastoral drift in the second half, be MORE suspicious of pastoral \
-    material in the later paragraphs — the editor likely added it after \
-    the core teaching was complete.
+    material in the later paragraphs.
 
-11. **Polemic against "the sects" is ambiguous.** Anti-sectarian argument \
-    could be Mani's own voice (3rd century) or older tradition. Flag rather \
-    than automatically classify.
+11. **Polemic against "the sects" is ambiguous.** Flag rather than \
+    automatically classify.
 
 12. **DIALOGUE FRAME ATTRIBUTION MUST BE STRIPPED.** Phrases like \
     "Then speaks the apostle to him:" or "The enlightener says:" are \
     Layer 2 (Mani's compilation frame). They must NEVER appear in \
-    core_text. If a paragraph starts with a dialogue attribution \
-    followed by teaching content, classify as MIXED and extract ONLY \
-    the teaching content, stripping the frame formula completely. \
-    The word "apostle" in particular is a Layer 2 marker — the oldest \
-    substrate does not use this term.
+    core_text. If a paragraph starts with dialogue attribution followed \
+    by teaching, classify as MIXED and extract ONLY the teaching.
+
+13. **ENUMERATION MARKERS ARE SUBSTRATE.** Never strip "The first is...", \
+    "The second is..." etc. from extracted core_text. These are the \
+    bones of the teaching structure.
 
 ## THE SUBSTRATE BENEATH THE COPTIC
 
 The text you examine is a Coptic translation. The TEACHING originates \
 in a Persian/Iranian cosmological tradition — and beneath that, in the \
 tradition of the Bene Qedem ("Children of the East"), the correspondential \
-science of the ancient world. This context helps you distinguish the \
-three temporal layers: the oldest substrate uses impersonal, functional, \
-cosmological language; Mani's compilation adds dialogue frames and \
-institutional vocabulary; the later community adds pastoral discipline.
-
-Preserve the Coptic translation vocabulary as-is in core_text. The one \
-exception: when a term like "sin" functions as a PERSONIFIED COSMOLOGICAL \
-ENTITY (possessing faculties, members, waging war against the soul), \
-capitalize it — "Sin" — to mark it as an agent, not a moral category. \
-Apply the same principle to other personified cosmic forces (Darkness, \
-etc.). This is not vocabulary transformation; it is English convention \
-for personified entities.
+science of the ancient world. Preserve the Coptic translation vocabulary \
+as-is in core_text. The one exception: capitalize personified cosmic \
+entities (Sin, Darkness) when they function as agents.
 
 Preserve lacunae brackets [...] and [text] — these mark physical \
-manuscript damage and will be handled by the restoration pass.
+manuscript damage.
 
 Use temporal_note to record observations about the Coptic vocabulary — \
 what concepts the translators rendered, anything notable about the \
-translation choices — as an audit trail for later analysis.
-"""
+translation choices."""
+
+
+def build_system_prompt(metadata: dict | None) -> str:
+    """Build system prompt with metadata-discovered layer descriptions.
+
+    Appends a section describing the dynamically-identified temporal
+    layers so the extraction LLM knows what classification labels to use
+    and what each layer represents.
+    """
+    if not metadata:
+        return SYSTEM_PROMPT
+
+    vocabs = metadata.get("scoring_vocabularies", [])
+    if not vocabs:
+        return SYSTEM_PROMPT
+
+    layer_section = (
+        "\n\n## METADATA-DISCOVERED LAYERS\n\n"
+        "The corpus metadata analysis has identified the following "
+        "temporal layers in this text. These layers were discovered "
+        "dynamically from the text itself. Use these layer IDs as "
+        "your classification categories (plus 'mixed' for interwoven "
+        "paragraphs):\n\n"
+    )
+    for v in vocabs:
+        desc = v.get("description", "")
+        name = v.get("name", v["id"])
+        layer_section += f"- **{v['id']}** ({name}): {desc}\n"
+
+    layer_section += (
+        "\nThe paragraph-level register scores below are reported "
+        "for these same categories. Your classification should use "
+        "these layer IDs.\n"
+    )
+
+    return SYSTEM_PROMPT + layer_section
+
+
+def build_extract_core_tool(metadata: dict | None = None) -> dict:
+    """Build extraction tool schema with dynamic classification enum.
+
+    If metadata is provided, the classification enum is built from the
+    discovered layer IDs + 'mixed'. Otherwise falls back to the default.
+    """
+    import copy
+    tool = copy.deepcopy(EXTRACT_CORE_TOOL)
+
+    if not metadata:
+        return tool
+
+    vocabs = metadata.get("scoring_vocabularies", [])
+    if not vocabs:
+        return tool
+
+    layer_ids = [v["id"] for v in vocabs]
+    classification_enum = layer_ids + ["mixed"]
+
+    # Build description from metadata
+    desc_parts = [
+        "Classify by TEMPORAL LAYER — when did this language "
+        "enter this text? "
+    ]
+    for v in vocabs:
+        name = v.get("name", v["id"])
+        desc = v.get("description", "")
+        short_desc = (desc[:100] + "...") if len(desc) > 100 else desc
+        desc_parts.append(
+            f"{v['id'].upper()}: {name}. {short_desc} "
+        )
+    desc_parts.append(
+        "MIXED: Multiple layers interwoven in same paragraph."
+    )
+
+    para_props = (
+        tool["input_schema"]["properties"]["paragraphs"]
+        ["items"]["properties"]
+    )
+    para_props["classification"]["enum"] = classification_enum
+    para_props["classification"]["description"] = "".join(desc_parts)
+
+    return tool
 
 
 # ---------------------------------------------------------------------------
-# Client setup
+# Client setup — Claude via Azure AI Foundry
 # ---------------------------------------------------------------------------
 
-def create_client() -> OpenAI:
-    """Create OpenAI client."""
+def create_client() -> tuple[AnthropicFoundry, str]:
+    """Create Claude client from .env credentials."""
     if not SECRETS_PATH.exists():
         print(f"ERROR: Secrets file not found at {SECRETS_PATH}")
         sys.exit(1)
     config = dotenv_values(SECRETS_PATH)
-    return OpenAI(
-        base_url=config["OPENAI_ENDPOINT"],
-        api_key=config["OPENAI_API_KEY"],
+    endpoint = config.get("ANTHROPIC_ENDPOINT", "").rstrip("/")
+    api_key = config.get("ANTHROPIC_API_KEY", "")
+    deployment = config.get("ANTHROPIC_DEPLOYMENT", "claude-opus-4-6")
+
+    if not endpoint or not api_key:
+        print(
+            "ERROR: ANTHROPIC_ENDPOINT and ANTHROPIC_API_KEY required "
+            "in secrets/azure_openai.env"
+        )
+        sys.exit(1)
+
+    client = AnthropicFoundry(
+        api_key=api_key,
+        base_url=endpoint,
+        timeout=httpx.Timeout(1800.0, connect=30.0),
     )
-
-
-def get_deployment() -> str:
-    config = dotenv_values(SECRETS_PATH)
-    return config["OPENAI_DEPLOYMENT"]
+    return client, deployment
 
 
 # ---------------------------------------------------------------------------
@@ -1133,51 +811,80 @@ def load_chapter(num: int) -> dict | None:
 
 
 # ---------------------------------------------------------------------------
-# LLM extraction
+# LLM extraction — Claude with tool call
 # ---------------------------------------------------------------------------
 
-def extract_core(client: OpenAI, deployment: str, chapter: dict,
-                  v4_data: dict | None = None,
-                  reasoning_effort: str | None = None) -> ChapterExtraction | None:
-    """Send a chapter to GPT-5.2 for core extraction."""
-    ch_num = chapter["chapter_number"]
-    title = chapter.get("title", f"Chapter {ch_num}")
-    teaching = chapter.get("teaching_text", "")
+def extract_core(
+    client: AnthropicFoundry,
+    deployment: str,
+    chapter: dict,
+    *,
+    analysis_dir: Path | None = None,
+    system_prompt: str = "",
+    tool_schema: dict | None = None,
+    debug: bool = False,
+) -> dict | None:
+    """Send a chapter to Claude Opus 4.6 for core extraction.
+
+    Loads pre-computed text-critical analysis from analysis_dir (produced
+    by extract_analysis.py). system_prompt and tool_schema are pre-built
+    with dynamic layer information.
+
+    Returns the tool_input dict, or None on failure.
+    """
+    ch_num = get_number(chapter)
+    title = get_title(chapter)
+    teaching = get_text(chapter)
 
     if not teaching.strip():
         return None
 
-    # Score paragraphs
-    para_scores = score_chapter_paragraphs(teaching)
-    paragraphs = split_paragraphs(teaching)
-
-    # Run editorial seam detection
-    seam_results = detect_editorial_seams(paragraphs, para_scores)
+    # Load pre-computed analysis
+    analysis = None
+    if analysis_dir:
+        analysis = load_analysis(analysis_dir, ch_num)
 
     # Build the paragraph block with scores AND seam flags
     para_block = []
-    for i, (text, scores, seam) in enumerate(zip(paragraphs, para_scores, seam_results)):
-        s = scores["scores"]
-        header = (
-            f"--- PARAGRAPH {i+1} (words: {scores['words']}, "
-            f"teaching={s['teaching']}, frame={s['frame']}, "
-            f"pastoral={s['pastoral']}, christian={s['christian']}, "
-            f"application={s['application']})"
-        )
-        # Add seam flag if detected
-        if seam["seam_flag"]:
-            header += f"\n  ⚠ {seam['seam_note']}"
-        elif seam["has_bridge_connective"]:
-            header += (
-                f"\n  NOTE: Bridge connective detected: '{seam['bridge_phrase']}'"
+    if analysis and analysis.get("paragraphs"):
+        for para in analysis["paragraphs"]:
+            scores = para.get("scores", {})
+            seam = para.get("seam", {})
+            score_parts = ", ".join(
+                f"{k}={v}" for k, v in scores.items()
             )
-            if seam["institutional_terms_found"]:
+            header = (
+                f"--- PARAGRAPH {para['index']} "
+                f"(words: {para['words']}, {score_parts})"
+            )
+            if seam.get("seam_flag"):
+                header += f"\n  ⚠ {seam['seam_note']}"
+            elif seam.get("has_bridge_connective"):
                 header += (
-                    f" + institutional vocabulary: "
-                    f"{', '.join(seam['institutional_terms_found'])}"
+                    f"\n  NOTE: Bridge connective detected: "
+                    f"'{seam['bridge_phrase']}'"
                 )
-        header += " ---"
-        para_block.append(f"{header}\n{text}")
+                if seam.get("institutional_terms_found"):
+                    header += (
+                        f" + institutional vocabulary: "
+                        f"{', '.join(seam['institutional_terms_found'])}"
+                    )
+            header += " ---"
+            para_block.append(f"{header}\n{para['text']}")
+    else:
+        # Fallback: no analysis available, send raw paragraphs
+        if analysis_dir:
+            print(
+                f"  WARNING: No analysis found for Ch.{ch_num}, "
+                f"sending raw paragraphs"
+            )
+        paragraphs = split_paragraphs(teaching)
+        for i, text in enumerate(paragraphs):
+            header = (
+                f"--- PARAGRAPH {i+1} "
+                f"(words: {len(text.split())}) ---"
+            )
+            para_block.append(f"{header}\n{text}")
 
     para_text = "\n\n".join(para_block)
 
@@ -1186,83 +893,127 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
     context = ""
     if gardner.strip():
         context = (
-            f"\n--- GARDNER SYNOPSIS (context only — DO NOT extract from this) ---\n"
+            f"\n--- GARDNER SYNOPSIS (context only — "
+            f"DO NOT extract from this) ---\n"
             f"{gardner}\n"
             f"--- END SYNOPSIS ---\n"
         )
 
-    # Build chapter-level text-critical context
-    tc_context = ""
-    if v4_data:
-        tc_context = (
-            f"\n--- TEXT-CRITICAL ANALYSIS (chapter-level features) ---\n"
-            f"{format_chapter_context(v4_data)}\n"
-            f"--- END TEXT-CRITICAL ANALYSIS ---\n"
-        )
-
     user_msg = (
-        f"Analyze the following chapter and extract the core teaching layer.\n\n"
+        f"Analyze the following chapter and extract the core "
+        f"teaching layer.\n\n"
         f"Chapter {ch_num}: {title}\n"
-        f"{context}"
-        f"{tc_context}\n"
-        f"--- TEACHING TEXT (numbered paragraphs with register scores and seam flags) ---\n\n"
+        f"{context}\n"
+        f"--- TEACHING TEXT (numbered paragraphs with register "
+        f"scores and seam flags) ---\n\n"
         f"{para_text}\n\n"
         f"--- END ---"
     )
 
-    max_retries = 3
-    backoff = 2.0
+    max_retries = 5
     for attempt in range(1, max_retries + 1):
         try:
-            api_kwargs = dict(
+            tool_input = None
+            text_parts: list[str] = []
+            thinking_chars = 0
+
+            with client.messages.stream(
                 model=deployment,
-                input=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": user_msg},
-                ],
-                text_format=ChapterExtraction,
-                max_output_tokens=16384,
-            )
-            if reasoning_effort:
-                api_kwargs["reasoning"] = {"effort": reasoning_effort} # type: ignore
-            response = client.responses.parse(**api_kwargs) # type: ignore
-            result = response.output_parsed
-            if result is None:
-                raise ValueError("No structured output (parsed is None)")
-            return result
+                system=system_prompt or SYSTEM_PROMPT,
+                messages=[{"role": "user", "content": user_msg}],
+                tools=[tool_schema or EXTRACT_CORE_TOOL],
+                max_tokens=32_000,
+                thinking={"type": "adaptive"},
+            ) as stream:
+                for event in stream:
+                    etype = getattr(event, "type", "")
 
-        except RateLimitError:
-            wait = 60.0
-            print(f"  (rate limit, retry {attempt}/{max_retries} in {wait:.0f}s)...",
-                  end=" ", flush=True)
-            time.sleep(wait)
+                    if etype == "content_block_start":
+                        block = getattr(event, "content_block", None)
+                        if (
+                            block
+                            and getattr(block, "type", "") == "thinking"
+                            and debug
+                        ):
+                            print(
+                                "\n  [thinking] ",
+                                end="",
+                                flush=True,
+                            )
 
-        except APIStatusError as e:
-            err_str = str(e)
-            if "content_filter" in err_str.lower() and attempt < max_retries:
-                wait = attempt * 10
-                print(f"  (filter, retry {attempt}/{max_retries} in {wait}s)...",
-                      end=" ", flush=True)
-                time.sleep(wait)
-                continue
-            print(f"  API error: {e}")
-            if attempt < max_retries:
-                time.sleep(backoff)
-                backoff *= 2
-                continue
-            return None
+                    elif etype == "content_block_delta":
+                        delta = getattr(event, "delta", None)
+                        if delta:
+                            dtype = getattr(delta, "type", "")
+                            if dtype == "thinking_delta":
+                                chunk = getattr(delta, "thinking", "")
+                                thinking_chars += len(chunk)
+                                if debug:
+                                    print(chunk, end="", flush=True)
+
+                    elif etype == "message_stop":
+                        if debug:
+                            print(flush=True)
+
+                final_msg = stream.get_final_message()
+
+            if debug and thinking_chars:
+                print(f" [{thinking_chars} chars]", flush=True)
+
+            # Extract tool call
+            for block in final_msg.content:
+                btype = getattr(block, "type", "")
+                if (
+                    btype == "tool_use"
+                    and block.name == "commit_extraction"
+                ):
+                    tool_input = block.input
+                elif btype == "text":
+                    text_parts.append(block.text)
+
+            if tool_input is None:
+                text_output = " ".join(text_parts).strip()
+                print(
+                    f"  WARNING: Model did not call "
+                    f"commit_extraction for Ch.{ch_num}."
+                )
+                if text_output:
+                    print(f"  Text: {text_output[:300]}")
+                if attempt < max_retries:
+                    time.sleep(attempt * 5)
+                    continue
+                return None
+
+            return tool_input
 
         except Exception as e:
             err_str = str(e)
-            if "content_filter" in err_str.lower() and attempt < max_retries:
-                time.sleep(attempt * 10)
+            if "content_filter" in err_str.lower():
+                print(
+                    f"  Content filter Ch.{ch_num}, "
+                    f"attempt {attempt}/{max_retries}"
+                )
+                if attempt < max_retries:
+                    time.sleep(attempt * 10)
+                    continue
+            elif "rate" in err_str.lower() or "429" in err_str:
+                wait = 60.0 * attempt
+                print(f"  Rate limit, waiting {wait:.0f}s...")
+                time.sleep(wait)
                 continue
-            print(f"  ERROR Ch.{ch_num}: {e}")
-            if attempt < max_retries:
-                time.sleep(backoff)
-                backoff *= 2
+            elif "overloaded" in err_str.lower() or "529" in err_str:
+                wait = 30.0 * attempt
+                print(f"  Overloaded, waiting {wait:.0f}s...")
+                time.sleep(wait)
                 continue
-            return None
+            else:
+                print(f"  ERROR Ch.{ch_num}: {e}")
+                if debug:
+                    traceback.print_exc()
+                if attempt < max_retries:
+                    time.sleep(attempt * 5)
+                    continue
+                return None
 
     return None
 
@@ -1271,16 +1022,12 @@ def extract_core(client: OpenAI, deployment: str, chapter: dict,
 # Passthrough mode — for fragment collections (no LLM needed)
 # ---------------------------------------------------------------------------
 
-
 def _run_passthrough(chapters: list[dict]) -> None:
     """Passthrough mode for fragment collections — reformat cleaned data.
 
     Fragments are already the primary teaching text: no editorial layers
-    to separate.  This reformats cleaned JSON into the ChapterExtraction
-    output format that correspondential_reading.py expects.
-
-    No LLM call is made.  Original language text is included when the
-    project config has ``include_original_text: true``.
+    to separate. This reformats cleaned JSON into the extraction output
+    format that correspondential_reading.py expects.
     """
     include_original = PROJECT_CFG.include_original_text
 
@@ -1299,14 +1046,13 @@ def _run_passthrough(chapters: list[dict]) -> None:
 
         paragraphs = split_paragraphs(text)
 
-        # Build extraction dict compatible with correspondential_reading.py
         para_list = []
         for j, para_text in enumerate(paragraphs, 1):
             para_list.append({
                 "paragraph_number": j,
                 "classification": "core",
                 "core_text": para_text,
-                "removal_notes": None,
+                "removed_material": None,
                 "temporal_note": None,
             })
 
@@ -1322,7 +1068,6 @@ def _run_passthrough(chapters: list[dict]) -> None:
             "paragraphs": para_list,
         }
 
-        # Include original text if configured and available
         if include_original:
             original = ch.get("original_text", "")
             if original:
@@ -1331,18 +1076,15 @@ def _run_passthrough(chapters: list[dict]) -> None:
                     "original_language", ""
                 )
 
-        # Preserve fragment-specific metadata
         for key in (
             "manuscript_refs", "edition_refs", "section_markers", "footnotes",
         ):
             val = ch.get(key)
             if val:
-                # Pydantic objects → dicts for serialization
                 if isinstance(val, list) and val and hasattr(val[0], "model_dump"):
                     val = [v.model_dump() for v in val]
                 extraction[key] = val
 
-        # Save
         path = SEGMENTS_DIR / f"ch_{ch_num:03d}.json"
         with open(path, "w", encoding="utf-8") as f:
             json.dump(extraction, f, indent=2, ensure_ascii=False)
@@ -1358,7 +1100,6 @@ def _run_passthrough(chapters: list[dict]) -> None:
     print(f"PASSTHROUGH COMPLETE")
     print(f"  Processed: {results}")
 
-    # Assemble
     print(f"\nAssembling document...")
     text = assemble_core()
     if text:
@@ -1371,12 +1112,13 @@ def _run_passthrough(chapters: list[dict]) -> None:
 # Save / load
 # ---------------------------------------------------------------------------
 
-
-def save_extraction(ext: ChapterExtraction) -> None:
+def save_extraction(ext: dict) -> None:
+    """Save extraction result (dict from tool call) to JSON."""
     SEGMENTS_DIR.mkdir(parents=True, exist_ok=True)
-    path = SEGMENTS_DIR / f"ch_{ext.chapter_number:03d}.json"
+    ch_num = ext["chapter_number"]
+    path = SEGMENTS_DIR / f"ch_{ch_num:03d}.json"
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(ext.model_dump(), f, indent=2, ensure_ascii=False)
+        json.dump(ext, f, indent=2, ensure_ascii=False)
 
 
 def load_extraction(ch_num: int) -> dict | None:
@@ -1396,7 +1138,7 @@ def is_extracted(ch_num: int) -> bool:
 # ---------------------------------------------------------------------------
 
 def assemble_core() -> str:
-    """Assemble all extracted core text into a continuous document in chapter order."""
+    """Assemble all extracted core text into a continuous document."""
     extractions = []
     for path in sorted(SEGMENTS_DIR.glob("ch_*.json")):
         with open(path, encoding="utf-8") as f:
@@ -1406,7 +1148,6 @@ def assemble_core() -> str:
         print("ERROR: No extraction files found.")
         return ""
 
-    # Project-aware headers
     is_fragments = (
         PROJECT_CFG and PROJECT_CFG.document_type == "fragment_collection"
     )
@@ -1448,17 +1189,14 @@ def assemble_core() -> str:
     lines.append("---")
     lines.append("")
 
-    # Statistics
     total_chapters = len(extractions)
     chapters_with_core = 0
     total_core_words = 0
-    total_teaching_words = 0
 
     for ext in extractions:
         ch_num = ext["chapter_number"]
         title = ext.get("chapter_title", f"{unit_label} {ch_num}")
 
-        # Collect core text from this chapter
         core_parts = []
         temporal_notes = []
         for para in ext.get("paragraphs", []):
@@ -1468,14 +1206,9 @@ def assemble_core() -> str:
                 total_core_words += len(ct.split())
             tn = para.get("temporal_note")
             if tn:
-                temporal_notes.append(f"¶{para['paragraph_number']}: {tn}")
-
-        # Estimate total teaching words from paragraph count × average
-        # (we don't have the original text here, just the extraction)
-        total_teaching_words += sum(
-            len(p.get("core_text", "").split()) if p.get("core_text") else 0
-            for p in ext.get("paragraphs", [])
-        )
+                temporal_notes.append(
+                    f"¶{para['paragraph_number']}: {tn}"
+                )
 
         if not core_parts:
             continue
@@ -1486,18 +1219,15 @@ def assemble_core() -> str:
         lines.append(f"### {title}")
         lines.append("")
 
-        # Chapter note
         note = ext.get("chapter_note", "")
         if note:
             lines.append(f"*{note}*")
             lines.append("")
 
-        # Core text
         for part in core_parts:
             lines.append(part)
             lines.append("")
 
-        # Temporal observations (if any)
         if temporal_notes:
             lines.append("**Temporal observations:**")
             for tn in temporal_notes:
@@ -1508,14 +1238,12 @@ def assemble_core() -> str:
         lines.append("")
 
     # Prepend statistics
-    unit_lc = unit_label.lower() + "s"
     stats_block = [
         f"**{unit_label}s analyzed**: {total_chapters}",
         f"**{unit_label}s with core content**: {chapters_with_core}",
         f"**Core text words**: ~{total_core_words:,}",
         "",
     ]
-    # Insert after the header
     insert_pos = lines.index("---") + 2
     for i, s in enumerate(stats_block):
         lines.insert(insert_pos + i, s)
@@ -1584,20 +1312,33 @@ def save_data_summary() -> None:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Extract the core teaching layer from a Manichaean text"
+        description=(
+            "Extract the core teaching layer from a Manichaean text "
+            "(Claude Opus 4.6)"
+        )
     )
-    parser.add_argument("--project", "-p", type=str, default="kephalaia",
-                        help=f"Project to process (available: {', '.join(list_projects()) or 'none'})")
+    parser.add_argument(
+        "--project", "-p",
+        type=str,
+        default="kephalaia",
+        help=(
+            f"Project to process "
+            f"(available: {', '.join(list_projects()) or 'none'})"
+        ),
+    )
     parser.add_argument("--chapter", "-c", type=int, default=None)
     parser.add_argument("--range", "-r", type=str, default=None)
     parser.add_argument("--limit", "-l", type=int, default=None)
     parser.add_argument("--dry-run", "-n", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
-    parser.add_argument("--reasoning", type=str, default=None,
-                        choices=["low", "medium", "high"],
-                        help="Set reasoning effort (default: model default)")
-    parser.add_argument("--max-concurrency", "-j", type=int, default=1,
-                        help="Number of parallel API calls (default: 1)")
+    parser.add_argument("--debug", action="store_true",
+                        help="Show thinking output and verbose logging")
+    parser.add_argument(
+        "--max-concurrency", "-j",
+        type=int,
+        default=1,
+        help="Number of parallel API calls (default: 1)",
+    )
     parser.add_argument("--assemble", "-a", action="store_true")
     return parser.parse_args()
 
@@ -1623,9 +1364,12 @@ def main() -> None:
 
     print(f"Loaded {len(all_chapters)} cleaned chapters")
 
-    # Determine which to process (uses get_number for compat with both formats)
+    # Determine which to process
     if args.chapter is not None:
-        chapters = [ch for ch in all_chapters if get_number(ch) == args.chapter]
+        chapters = [
+            ch for ch in all_chapters
+            if get_number(ch) == args.chapter
+        ]
         if not chapters:
             print(f"ERROR: Chapter {args.chapter} not found")
             sys.exit(1)
@@ -1635,7 +1379,10 @@ def main() -> None:
             print("ERROR: Invalid range. Use '0-20'")
             sys.exit(1)
         start, end = int(m.group(1)), int(m.group(2))
-        chapters = [ch for ch in all_chapters if start <= get_number(ch) <= end]
+        chapters = [
+            ch for ch in all_chapters
+            if start <= get_number(ch) <= end
+        ]
     else:
         chapters = all_chapters
 
@@ -1644,10 +1391,16 @@ def main() -> None:
 
     # Skip already processed
     if not args.overwrite:
-        to_process = [ch for ch in chapters if not is_extracted(get_number(ch))]
+        to_process = [
+            ch for ch in chapters
+            if not is_extracted(get_number(ch))
+        ]
         skipped = len(chapters) - len(to_process)
         if skipped > 0:
-            print(f"  Skipping {skipped} already-extracted (use --overwrite)")
+            print(
+                f"  Skipping {skipped} already-extracted "
+                f"(use --overwrite)"
+            )
         chapters = to_process
 
     if not chapters:
@@ -1675,17 +1428,25 @@ def main() -> None:
         return
 
     # --- Composite text: full LLM extraction ---
-    # Create client
-    client = create_client()
-    deployment = get_deployment()
+    client, deployment = create_client()
     print(f"\nUsing deployment: {deployment}")
 
-    # Load v4 text-critical data
-    v4_all = load_v4_chapter_data()
-    if v4_all:
-        print(f"Loaded v4 text-critical data for {len(v4_all)} chapters")
+    # Load corpus metadata (drives layer info for prompt/tool schema)
+    metadata = load_corpus_metadata(PROJECT_CFG.paths.project_dir)
+    if metadata:
+        sys_prompt = build_system_prompt(metadata)
+        tool_schema = build_extract_core_tool(metadata)
+        print(f"Loaded corpus metadata for prompt/tool schema")
     else:
-        print("WARNING: No v4 data loaded — running without text-critical context")
+        sys_prompt = SYSTEM_PROMPT
+        tool_schema = EXTRACT_CORE_TOOL
+        print(
+            "WARNING: No corpus metadata found — "
+            "running without metadata-driven layer info"
+        )
+
+    # Pre-computed text-critical analysis (from extract_analysis.py)
+    analysis_dir = PROJECT_CFG.paths.analysis_chapters
     print()
 
     # Process
@@ -1696,44 +1457,53 @@ def main() -> None:
     results = []
     errors = []
 
-    def process_chapter(ch: dict, idx: int) -> tuple[int, ChapterExtraction | None]:
-        """Process a single chapter. Returns (chapter_number, extraction)."""
-        ch_num = ch["chapter_number"]
+    def process_chapter(
+        ch: dict, idx: int
+    ) -> tuple[int, dict | None]:
+        """Process a single chapter."""
+        ch_num = get_number(ch)
         return ch_num, extract_core(
             client, deployment, ch,
-            v4_data=v4_all.get(ch_num),
-            reasoning_effort=args.reasoning,
+            analysis_dir=analysis_dir,
+            system_prompt=sys_prompt,
+            tool_schema=tool_schema,
+            debug=args.debug,
         )
 
     if concurrency == 1:
-        # Sequential — preserves existing behavior with live progress
         for i, ch in enumerate(chapters, 1):
-            ch_num = ch["chapter_number"]
+            ch_num = get_number(ch)
             title = ch.get("title", "")[:50]
-            words = len(ch.get("teaching_text", "").split())
-            print(f"[{i}/{len(chapters)}] Ch.{ch_num} ({words} words) {title}...",
-                  end=" ", flush=True)
+            words = len(get_text(ch).split())
+            print(
+                f"[{i}/{len(chapters)}] Ch.{ch_num} "
+                f"({words} words) {title}...",
+                end=" ",
+                flush=True,
+            )
 
-            extraction = extract_core(client, deployment, ch,
-                                       v4_data=v4_all.get(ch_num),
-                                       reasoning_effort=args.reasoning)
+            extraction = extract_core(
+                client, deployment, ch,
+                analysis_dir=analysis_dir,
+                system_prompt=sys_prompt,
+                tool_schema=tool_schema,
+                debug=args.debug,
+            )
             if extraction is None:
                 print("FAILED")
                 errors.append(ch_num)
                 continue
 
             save_extraction(extraction)
-            n_core = extraction.core_paragraphs
-            n_tot = extraction.total_paragraphs
-            pct = extraction.core_percentage
+            n_core = extraction.get("core_paragraphs", 0)
+            n_tot = extraction.get("total_paragraphs", 0)
+            pct = extraction.get("core_percentage", 0)
             print(f"OK — {n_core}/{n_tot} core ({pct:.0f}%)")
-            results.append(extraction.model_dump())
+            results.append(extraction)
 
-            # Brief pause
             if i < len(chapters):
                 time.sleep(0.5)
     else:
-        # Parallel — use ThreadPoolExecutor
         print(f"Running with {concurrency} parallel workers\n")
         print_lock = Lock()
         completed = 0
@@ -1746,34 +1516,41 @@ def main() -> None:
             }
             for future in as_completed(futures):
                 ch = futures[future]
-                ch_num = ch["chapter_number"]
+                ch_num = get_number(ch)
                 title = ch.get("title", "")[:50]
-                words = len(ch.get("teaching_text", "").split())
+                words = len(get_text(ch).split())
                 completed += 1
                 try:
                     _, extraction = future.result()
                 except Exception as e:
                     with print_lock:
-                        print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
-                              f"{title}... ERROR: {e}")
+                        print(
+                            f"[{completed}/{total}] Ch.{ch_num} "
+                            f"({words} words) {title}... ERROR: {e}"
+                        )
                     errors.append(ch_num)
                     continue
 
                 if extraction is None:
                     with print_lock:
-                        print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
-                              f"{title}... FAILED")
+                        print(
+                            f"[{completed}/{total}] Ch.{ch_num} "
+                            f"({words} words) {title}... FAILED"
+                        )
                     errors.append(ch_num)
                     continue
 
                 save_extraction(extraction)
-                n_core = extraction.core_paragraphs
-                n_tot = extraction.total_paragraphs
-                pct = extraction.core_percentage
+                n_core = extraction.get("core_paragraphs", 0)
+                n_tot = extraction.get("total_paragraphs", 0)
+                pct = extraction.get("core_percentage", 0)
                 with print_lock:
-                    print(f"[{completed}/{total}] Ch.{ch_num} ({words} words) "
-                          f"{title}... OK — {n_core}/{n_tot} core ({pct:.0f}%)")
-                results.append(extraction.model_dump())
+                    print(
+                        f"[{completed}/{total}] Ch.{ch_num} "
+                        f"({words} words) {title}... "
+                        f"OK — {n_core}/{n_tot} core ({pct:.0f}%)"
+                    )
+                results.append(extraction)
 
     # Summary
     print(f"\n{'='*60}")

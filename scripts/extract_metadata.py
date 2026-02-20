@@ -15,9 +15,10 @@ This script operates on CLEANED data (Phase 1 output), NOT on core
 extractions or correspondential readings. The metadata it produces
 is the INPUT to the extraction pipeline (Phase 2).
 
-The output is consumed DIRECTLY by extract_core_claude.py:
-  - scoring_vocabularies  → loaded as dict[str, dict[str,int]] for score_text()
-  - seam_detection         → compiled into regex + set for detect_editorial_seams()
+The output is consumed DIRECTLY by extract_analysis.py and extract_core.py:
+  - scoring_vocabularies  → loaded by extract_analysis.py for vocabulary scoring
+  - seam_detection         → loaded by extract_analysis.py for editorial seam detection
+  - scoring_vocabularies  → also used by extract_core.py for dynamic prompt/tool schema
 
 Primary model: Claude Opus 4.6 via Azure AI Foundry (AnthropicFoundry).
 
