@@ -65,6 +65,7 @@ class ProjectPaths:
     correspondential_chapters: Path
     correspondential_assembled: Path
     analysis: Path             # output/projects/<name>/analysis
+    analysis_chapters: Path    # output/projects/<name>/analysis/chapters
 
     def ensure_dirs(self) -> None:
         """Create all output directories if they don't exist."""
@@ -73,6 +74,7 @@ class ProjectPaths:
             self.core_chapters,
             self.correspondential_chapters,
             self.analysis,
+            self.analysis_chapters,
         ):
             p.mkdir(parents=True, exist_ok=True)
 
@@ -118,6 +120,7 @@ class ProjectConfig:
                 project_dir / "correspondential" / self.assembled_filename
             ),
             analysis=project_dir / "analysis",
+            analysis_chapters=project_dir / "analysis" / "chapters",
         )
 
     @property
