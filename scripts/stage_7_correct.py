@@ -52,11 +52,11 @@ from project_config import load_project, list_projects, SECRETS_PATH
 # ---------------------------------------------------------------------------
 
 ACTIONABLE_CATEGORIES = {
-    "mistranslation",
-    "inconsistency",
-    "opposite_sense_error",
-    "untranslated_natural",
-    "missed_pre_manichaean",
+    "naming_overlay",
+    "residual_editorial",
+    "over_stripped",
+    "misplaced_content",
+    "inconsistent_extraction",
 }
 
 # ---------------------------------------------------------------------------
@@ -103,31 +103,34 @@ RULES — FOLLOW EXACTLY:
 • Maintain the same scholarly register and prose style as the original.
 
 CORRECTION TYPES:
-• mistranslation — A figure or concept is identified incorrectly.
-  Fix the identification in the reconstruction, fills, and SR.
-
-• inconsistency — The same figure or concept is named differently
-  across chapters. Apply the proposed harmonised name/reading.
-  This often affects reconstructions directly (e.g. "Mother of Life"
-  vs "Mother of the Living" — harmonise the translation).
-
-• opposite_sense_error — A correspondence is read in the wrong sense
-  (e.g. interior/exterior inverted). Likely affects SR primarily,
-  but check if the error leaked into fill explanations too.
-
-• untranslated_natural — Natural-sense vocabulary that should have been
-  translated correspondentially. Likely SR-only.
-
-• missed_pre_manichaean — A Manichaean editorial overlay name masks an
-  older teaching figure. In the RECONSTRUCTION, the Manichaean name
-  may be the manuscript's actual wording — correct it only if a FILL
-  introduced the Manichaean name (i.e. the gap was filled with a
-  Manichaean overlay term when something older fits better).
-  In the SPIRITUAL READING, replace the Manichaean name with the
-  pre-Manichaean identification. For example:
+• naming_overlay — A Manichaean editorial name is present in the core
+  text where the substrate likely used a functional description or an
+  older name. In the RECONSTRUCTION, correct only if the name was
+  introduced by a FILL (i.e. a lacuna was filled with a Manichaean
+  overlay term when something older fits better). If the name is in
+  the manuscript's actual wording (not a fill), leave the reconstruction
+  intact but update the SPIRITUAL READING to use the pre-Manichaean
+  identification. For example:
     - "Third Ambassador" → the mediating divine principle
     - "Jesus the Splendour" → the radiance of divine wisdom / xvarənah
-  Do NOT add notes about the replacement — just make the change.
+
+• residual_editorial — Non-substrate material (bridge connectives,
+  institutional vocabulary, devotional exhortations) that slipped
+  through extraction into the core text. Remove or flag it in the
+  RECONSTRUCTION. Update the SR to exclude it.
+
+• over_stripped — Genuine substrate content was removed during
+  extraction, leaving a gap or discontinuity. If the finding includes
+  enough context to reconstruct what was lost, restore it in the
+  RECONSTRUCTION. If not, add a lacuna marker where the gap is.
+
+• misplaced_content — Text that belongs to a different teaching
+  sequence. Flag it in the reconstruction but do not move it — that
+  requires structural decisions beyond this correction stage.
+
+• inconsistent_extraction — The same type of content was treated
+  differently across chapters. Apply the correction that brings this
+  chapter into consistency with the corpus-wide extraction standard.
 
 OUTPUT:
 Use the commit_corrected_chapter tool to return:
@@ -415,8 +418,8 @@ def build_correction_prompt(
             f"### Finding #{f['id']} — {f['category']} ({f['severity']})\n"
             f"**Title:** {f['title']}\n"
             f"**Section refs:** {refs}\n"
-            f"**Current reading:** {f['current_reading']}\n"
-            f"**Proposed reading:** {f['proposed_reading']}\n"
+            f"**Current state:** {f.get('current_state', f.get('current_reading', ''))}\n"
+            f"**Recommendation:** {f.get('recommendation', f.get('proposed_reading', ''))}\n"
             f"**Explanation:** {f['explanation']}"
         )
     findings_block = "\n\n---\n\n".join(findings_parts)
