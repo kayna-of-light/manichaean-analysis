@@ -1,18 +1,23 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Analyze the full corpus for anomalies, misreadings, and missed layers.
+"""Review the full corpus for extraction artifacts and structural patterns.
 
 Feeds the complete interleaved corpus (core text + spiritual readings)
 to Claude Opus 4.6 in a single prompt. The model reads the entire
-narrative holistically and identifies passages where:
+narrative holistically and reviews the EXTRACTED TEXT for:
 
-  - The correspondential reading doesn't match the teaching substrate
-  - A pre-Manichaean layer was missed or misidentified
-  - Natural-plane vocabulary was left untranslated in the spiritual reading
-  - The same correspondence was read inconsistently across passages
-  - An older cultural transmission layer (proto-Iranian, Mesopotamian)
-    is visible through the Persian vocabulary of the substrate
-  - The narrative logic breaks or a teaching sequence is interrupted
+  - Naming overlays: Manichaean editorial names still in the core
+  - Residual editorial material that slipped through extraction
+  - Over-stripped passages: genuine substrate removed, leaving gaps
+  - Misplaced content: teaching fragments from other sequences
+  - Inconsistent extraction across chapters
+  - Narrative breaks from chapter boundaries cutting through teaching
+  - Cross-passage patterns visible only at corpus scale
+  - Deeper transmission layers visible through the Persian vocabulary
+
+The spiritual readings are included as a READING AID only — they help
+the model understand the correspondential content of the text. The
+review focuses on the text itself, not on the spiritual readings.
 
 The key insight: per-chapter processing can miss patterns that only
 become visible when the full narrative is read as a continuous flow.
@@ -33,76 +38,107 @@ from tools.corpus_base import CorpusAnalysisBase
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You are an expert in the doctrine of correspondences as written by \
-Emanuel Swedenborg, with deep specialization in ancient cosmological \
-vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
+You are an expert in ancient cosmological vocabulary — Zoroastrian, \
+Manichaean, and Persian-Iranian traditions — with deep knowledge of \
+Swedenborg's doctrine of correspondences.
 
-You have been given the COMPLETE teaching substrate of the Coptic \
-Kephalaia — both the extracted teaching core (oldest layer) and a \
-correspondential reading (translation from natural into spiritual \
-sense) of most passages.
+You have been given the COMPLETE extracted teaching substrate of the \
+Coptic Kephalaia. This substrate is the oldest layer of the text — \
+Persian correspondential teaching that predates Mani's editorial \
+compilation. It IS the Ancient Word in its Persian vessel.
 
 The text is presented as a continuous flow of numbered paragraphs. \
-Each paragraph has a marker [§N]. Lines marked [§N]* are the \
-correspondential reading of that same paragraph.
+Each paragraph has a marker [§N]. Lines marked [§N]* are \
+correspondential readings — translations from the natural into the \
+spiritual sense. These are included as a READING AID to help you \
+understand what the text is saying. They are NOT the object of your \
+analysis.
 
-CRITICAL FRAMING — You are reading this text from a pre-Manichaean \
-perspective. What you have in front of you is NOT primarily a \
-Manichaean scripture. It is an ancient Persian teaching text — part \
-of the Eastern tradition of correspondential knowledge that predates \
-Mani by centuries or millennia. The Manichaean editorial framework \
-(Mani said, the disciples asked, Light-Nous, etc.) is a later \
-wrapper around a much older substrate.
+YOUR FOCUS IS THE TEXT ITSELF — the extracted core paragraphs \
+(the [§N] lines).
 
-That older substrate is written in the LANGUAGE OF CORRESPONDENCES — \
-the same language Swedenborg describes as the Ancient Word. Every \
-natural image (light, darkness, fire, water, garments, trees, \
-animals, mountains, seeds, vessels, body parts) corresponds to a \
-spiritual reality through its actual function, not through arbitrary \
-symbolism. This is the language of the mēnōg (spiritual) and gētīg \
-(material) — the Zoroastrian ontology that exactly parallels \
-Swedenborg's doctrine.
+CRITICAL FRAMING:
 
-Your task is to read the ENTIRE text holistically and identify \
-everything that is "off" — places where the correspondential reading \
-(the [§N]* lines) doesn't correctly translate the teaching, where \
-an older layer was missed, where inconsistencies crept in during \
-per-chapter processing, where the narrative correspondential but \
-looks like its taken from another part of the substrate, or where \
-the full narrative reveals patterns that single-chapter analysis could not see.
+The substrate IS the Ancient Word. You do NOT correct it. You do \
+NOT suggest it should say something different. You look for \
+EXTRACTION ARTIFACTS — places where the pipeline's processing \
+introduced problems into what should be a clean rendering of the \
+oldest teaching layer.
 
-Specifically, look for:
+The text you see has already been through a multi-stage extraction \
+pipeline. An earlier stage classified each paragraph as CORE \
+(substrate), FRAME (editorial), PASTORAL (institutional), or \
+OVERLAY (Christian addition) — and stripped everything except CORE. \
+For MIXED paragraphs, the editor tried to separate substrate from \
+later material within the same paragraph.
 
-1. MISTRANSLATIONS — Passages where the spiritual reading got the \
-   correspondence wrong. The natural image was mapped to the wrong \
-   spiritual reality, or a key correspondence was missed entirely.
+That extraction was done per-chapter. You are the first reader to \
+see the ENTIRE corpus as a continuous flow. Your job is to catch \
+what per-chapter processing could not:
 
-2. INCONSISTENCIES — The same natural image (e.g. "the five trees" \
-   or "the garment of light") was read differently in different \
-   passages without justification. Correspondences should be \
-   consistent unless opposite sense is explicitly warranted.
+1. NAMING OVERLAY — Manichaean editorial names still present in \
+   the extracted core. Entity names like "Light-Nous," "the Mother \
+   of Life," "Jesus the Splendour" are Manichaean designations \
+   mapped onto cosmic entities that the substrate described \
+   functionally or with older names. When these names appear in \
+   the core, flag them — the substrate likely used a different \
+   designation that the Manichaean editor replaced. Note: some \
+   Manichaean names may genuinely translate older titles (e.g. \
+   "Third Ambassador" may render a Persian mediating figure). \
+   Flag when the naming feels editorial, not when it could be \
+   translation.
 
-3. MISSED PRE-MANICHAEAN LAYERS — Passages where the spiritual \
-   reading treated Manichaean editorial vocabulary (Light-Nous, \
-   the Living Spirit, the Mother of Life) as original when it is \
-   actually a later gloss over an older teaching. What Persian or \
-   proto-Iranian reality does the Manichaean name obscure?
+2. RESIDUAL EDITORIAL — Non-substrate material that was not caught \
+   by the extraction stage. Bridge connectives ("And again he \
+   said"), institutional vocabulary ("the catechumens," "the \
+   elect"), devotional exhortations ("Blessed is he who..."), or \
+   Pauline/Christian phrases that slipped through as "core" when \
+   they belong to a later layer.
 
-4. UNTRANSLATED NATURAL VOCABULARY — Natural-plane words or images \
-   that were left in the spiritual reading without translation. \
-   Every natural object should be replaced by its spiritual \
-   correspondent.
+3. OVER-STRIPPED — Evidence that genuine substrate content was \
+   REMOVED during extraction. The sign is a gap or discontinuity \
+   in the teaching narrative — a correspondential sequence that \
+   was developing coherently and then jumps, or a systematic \
+   structure (five-fold map, body-cosmos system) that is missing \
+   a position. When the teaching's own architecture demands \
+   something at a position and it's not there, extraction probably \
+   removed it as "frame" or "pastoral" when it was actually \
+   substrate. This is perhaps the MOST IMPORTANT category — \
+   lost substrate content is irrecoverable if not flagged here.
 
-5. NARRATIVE BREAKS — Places where the teaching sequence is \
-   interrupted, where a passage seems out of order, or where a \
-   chapter boundary cut through a continuous teaching unit.
+4. MISPLACED CONTENT — Text that appears to belong to a different \
+   teaching sequence. An introductory summary that previews content \
+   from another chapter, a teaching fragment that interrupts an \
+   otherwise coherent sequence, or a passage whose correspondential \
+   content doesn't match its surroundings. This can indicate the \
+   Manichaean compiler moved material around.
 
-6. CROSS-PASSAGE PATTERNS — Themes, teaching sequences, or \
-   correspondential systems that only become visible when reading \
-   the full text as a continuous flow. Things the per-chapter \
-   reader couldn't see.
+5. INCONSISTENT EXTRACTION — The same type of content was classified \
+   as CORE in one chapter but stripped out in another without \
+   justification. If Q&A formulas are removed in one place but \
+   kept elsewhere, that's an inconsistency. If cosmological \
+   questions that set up the teaching ("Tell us about the five \
+   realms") are preserved in some chapters but stripped in others, \
+   flag it. The extraction criteria should have been applied \
+   uniformly.
 
-7. DEEPER SUBSTRATE — The teaching substrate IS the Ancient Word \
+6. NARRATIVE BREAK — A teaching sequence is interrupted. This can \
+   be caused by: (a) a chapter boundary cutting through a \
+   continuous teaching unit, (b) editorial material that wasn't \
+   fully stripped creating a seam, or (c) the compiler inserting \
+   material from elsewhere into the middle of a sequence. The \
+   teaching in the substrate flows as a continuous narrative — \
+   breaks are artifacts of compilation or extraction.
+
+7. CROSS-PASSAGE PATTERN — A structural pattern, teaching sequence, \
+   or correspondential system that spans multiple chapters and is \
+   only visible at corpus scale. Five-fold maps that develop \
+   across chapters, body-cosmos systems that repeat with variation, \
+   teaching arcs that the chapter boundaries obscured. These are \
+   OBSERVATIONS, not errors — they reveal the teaching's original \
+   organization.
+
+8. DEEPER TRANSMISSION — The teaching substrate IS the Ancient Word \
    in its Persian vessel. This category identifies passages where \
    an OLDER cultural vessel is visible through the Persian — \
    proto-Indo-Iranian, Mesopotamian, or Zurvanite vocabulary or \
@@ -110,16 +146,16 @@ Specifically, look for:
    formulation. Not a different teaching, but an earlier \
    transmission layer of the same correspondential knowledge.
 
-8. OPPOSITE SENSE ERRORS — Passages where a correspondence was \
-   read in its positive sense when the context requires the \
-   negative (or vice versa). Fire can be divine love OR self-love. \
-   Darkness can be obscurity before illumination OR active falsity. \
-   The context determines which.
+The spiritual readings ([§N]* lines) help you understand the \
+correspondential content well enough to recognize when something \
+is off in the TEXT — a gap in the narrative, an editorial name that \
+doesn't fit, a passage out of place. Use them as a lens, not as \
+the object of review.
 
 When you have completed your review, call the commit_findings tool \
 once with every finding. Be thorough but precise — each finding \
-should cite specific § numbers and explain exactly what is wrong \
-and what the correct reading should be.
+should cite specific § numbers and explain exactly what the issue \
+is in the text.
 
 Do NOT reproduce large blocks of text. Reference passages by their \
 § numbers and quote only the minimum needed to make the finding clear."""
@@ -155,14 +191,14 @@ COMMIT_FINDINGS_TOOL = {
                         "category": {
                             "type": "string",
                             "enum": [
-                                "mistranslation",
-                                "inconsistency",
-                                "missed_pre_manichaean",
-                                "untranslated_natural",
+                                "naming_overlay",
+                                "residual_editorial",
+                                "over_stripped",
+                                "misplaced_content",
+                                "inconsistent_extraction",
                                 "narrative_break",
                                 "cross_passage_pattern",
-                                "deeper_substrate",
-                                "opposite_sense_error",
+                                "deeper_transmission",
                             ],
                             "description": (
                                 "The type of finding."
@@ -178,12 +214,13 @@ COMMIT_FINDINGS_TOOL = {
                             ],
                             "description": (
                                 "How important this finding is. "
-                                "'critical' = fundamentally wrong reading. "
-                                "'significant' = meaningful error that "
-                                "affects interpretation. "
-                                "'minor' = small issue worth correcting. "
-                                "'observation' = pattern or insight, "
-                                "not necessarily an error."
+                                "'critical' = extraction error that "
+                                "loses or corrupts substrate content. "
+                                "'significant' = meaningful issue that "
+                                "affects the extracted text. "
+                                "'minor' = small issue worth noting. "
+                                "'observation' = structural pattern or "
+                                "insight, not necessarily an error."
                             ),
                         },
                         "section_refs": {
@@ -200,33 +237,33 @@ COMMIT_FINDINGS_TOOL = {
                                 "Short title summarizing the finding."
                             ),
                         },
-                        "current_reading": {
+                        "current_state": {
                             "type": "string",
                             "description": (
-                                "What the spiritual reading currently "
-                                "says (brief quote or paraphrase). "
-                                "For cross_passage_pattern and "
-                                "deeper_substrate findings, describe "
-                                "the current state."
+                                "What the text currently contains "
+                                "(brief quote or description). For "
+                                "over_stripped findings, describe the "
+                                "gap or discontinuity observed."
                             ),
                         },
-                        "proposed_reading": {
+                        "recommendation": {
                             "type": "string",
                             "description": (
-                                "What it SHOULD say, or what the "
-                                "correct interpretation is. For "
+                                "What should be done — flag for "
+                                "removal, restore specific content, "
+                                "investigate a gap, etc. For "
                                 "observations, describe the pattern "
-                                "or insight."
+                                "or structural insight."
                             ),
                         },
                         "explanation": {
                             "type": "string",
                             "description": (
-                                "Why this is wrong/incomplete and why "
-                                "the proposed reading is better. "
-                                "Reference specific correspondences, "
-                                "the pre-Manichaean substrate, or "
-                                "cross-passage evidence."
+                                "Why this is an issue and what "
+                                "evidence supports the finding. "
+                                "Reference the teaching's own "
+                                "architecture, parallel passages, "
+                                "or cross-chapter patterns."
                             ),
                         },
                     },
@@ -236,8 +273,8 @@ COMMIT_FINDINGS_TOOL = {
                         "severity",
                         "section_refs",
                         "title",
-                        "current_reading",
-                        "proposed_reading",
+                        "current_state",
+                        "recommendation",
                         "explanation",
                     ],
                 },
@@ -263,23 +300,21 @@ COMMIT_FINDINGS_TOOL = {
                     "overall_assessment": {
                         "type": "string",
                         "description": (
-                            "Overall assessment of the corpus's "
-                            "correspondential reading quality — "
-                            "what works well, what needs the most "
-                            "attention, and the most important "
-                            "patterns discovered."
+                            "Overall assessment of the extraction "
+                            "quality — where is the substrate cleanly "
+                            "extracted, where do editorial artifacts "
+                            "remain, and what structural patterns "
+                            "emerge at corpus scale?"
                         ),
                     },
-                    "pre_manichaean_assessment": {
+                    "extraction_assessment": {
                         "type": "string",
                         "description": (
-                            "Assessment of how well the readings "
-                            "penetrate through the Manichaean layer "
-                            "to the older substrate. Where does the "
-                            "reading succeed in seeing the Ancient "
-                            "Word? Where does it still treat "
-                            "Manichaean vocabulary as if it were "
-                            "original?"
+                            "Assessment of extraction balance — "
+                            "does the pipeline tend to over-strip "
+                            "(losing substrate) or under-strip "
+                            "(leaving editorial)? Which chapters "
+                            "or teaching types are most affected?"
                         ),
                     },
                 },
@@ -288,7 +323,7 @@ COMMIT_FINDINGS_TOOL = {
                     "critical_count",
                     "significant_count",
                     "overall_assessment",
-                    "pre_manichaean_assessment",
+                    "extraction_assessment",
                 ],
             },
         },
