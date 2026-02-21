@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate a structured book PDF of the Kephalaia of the Teacher.
+Generate a structured book PDF: The Ancient Word.
 
-Uses the discovered structure from stage_8_compose.py to organize
-the teaching substrate (core text) into a coherent book.
+Extracts the correspondential substrate (the Ancient Word) from
+the Kephalaia of the Teacher, organized by its own internal
+structure rather than manuscript chapter divisions.
 
 The structure was discovered by Claude Opus 4.6 reading the entire
 corpus as a continuous flow of §-numbered paragraphs — without
@@ -32,6 +33,33 @@ from reportlab.platypus import (
 from reportlab.lib.units import mm
 from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
 from reportlab.lib.colors import HexColor
+from reportlab.pdfbase import pdfmetrics
+from reportlab.pdfbase.ttfonts import TTFont
+
+# ---------------------------------------------------------------------------
+# Font registration — use TTF Times New Roman for full Unicode support
+# (Greek, macrons, schwa, etc.)
+# ---------------------------------------------------------------------------
+
+_FONT_DIR = Path(r"C:\Windows\Fonts")
+pdfmetrics.registerFont(TTFont("TNR", str(_FONT_DIR / "times.ttf")))
+pdfmetrics.registerFont(TTFont("TNR-Bold", str(_FONT_DIR / "timesbd.ttf")))
+pdfmetrics.registerFont(TTFont("TNR-Italic", str(_FONT_DIR / "timesi.ttf")))
+pdfmetrics.registerFont(TTFont("TNR-BoldItalic", str(_FONT_DIR / "timesbi.ttf")))
+
+from reportlab.pdfbase.pdfmetrics import registerFontFamily
+registerFontFamily(
+    "TNR",
+    normal="TNR",
+    bold="TNR-Bold",
+    italic="TNR-Italic",
+    boldItalic="TNR-BoldItalic",
+)
+
+# Shorthand constants for font names
+FONT_ROMAN = "TNR"
+FONT_BOLD = "TNR-Bold"
+FONT_ITALIC = "TNR-Italic"
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -44,7 +72,7 @@ KEPH_DIR = PROJECT_ROOT / "output" / "projects" / "kephalaia"
 STRUCTURE_FILE = KEPH_DIR / "book_structure.json"
 CORE_DIR = KEPH_DIR / "core" / "chapters"
 RESTORED_DIR = KEPH_DIR / "restored" / "chapters"
-OUTPUT = PROJECT_ROOT / "output" / "pdfs" / "Kephalaia_Book.pdf"
+OUTPUT = PROJECT_ROOT / "output" / "pdfs" / "The_Ancient_Word.pdf"
 
 PAGE_W, PAGE_H = A4
 
@@ -230,55 +258,55 @@ def _styles() -> dict:
     return dict(
         # --- Title page ---
         main_title=ParagraphStyle(
-            "MT", fontName="Times-Bold", fontSize=24,
+            "MT", fontName=FONT_BOLD, fontSize=24,
             alignment=TA_CENTER, leading=30, spaceAfter=8,
         ),
         subtitle=ParagraphStyle(
-            "ST", fontName="Times-Italic", fontSize=14,
+            "ST", fontName=FONT_ITALIC, fontSize=14,
             alignment=TA_CENTER, leading=18, spaceAfter=6,
         ),
         subtitle2=ParagraphStyle(
-            "ST2", fontName="Times-Italic", fontSize=11,
+            "ST2", fontName=FONT_ITALIC, fontSize=11,
             alignment=TA_CENTER, leading=15, spaceAfter=6,
             textColor=HexColor("#777777"),
         ),
         credit=ParagraphStyle(
-            "CR", fontName="Times-Roman", fontSize=10,
+            "CR", fontName=FONT_ROMAN, fontSize=10,
             alignment=TA_CENTER, leading=14, spaceAfter=6,
             textColor=HexColor(DARK_MUTED),
         ),
 
         # --- Table of Contents ---
         toc_part=ParagraphStyle(
-            "TOCP", fontName="Times-Bold", fontSize=11,
+            "TOCP", fontName=FONT_BOLD, fontSize=11,
             alignment=TA_LEFT, leading=16,
             spaceBefore=10, spaceAfter=2,
         ),
         toc_chapter=ParagraphStyle(
-            "TOCC", fontName="Times-Roman", fontSize=10,
+            "TOCC", fontName=FONT_ROMAN, fontSize=10,
             alignment=TA_LEFT, leading=14,
             spaceAfter=1, leftIndent=8 * mm,
         ),
 
         # --- Section titles (CONTENTS, OBSERVATIONS, etc.) ---
         section_title=ParagraphStyle(
-            "SECT", fontName="Times-Bold", fontSize=16,
+            "SECT", fontName=FONT_BOLD, fontSize=16,
             alignment=TA_CENTER, leading=22,
             spaceBefore=0, spaceAfter=16,
         ),
 
         # --- Part divider pages ---
         part_number=ParagraphStyle(
-            "PN", fontName="Times-Roman", fontSize=12,
+            "PN", fontName=FONT_ROMAN, fontSize=12,
             alignment=TA_CENTER, leading=16, spaceAfter=4,
             textColor=HexColor(MUTED),
         ),
         part_title=ParagraphStyle(
-            "PT", fontName="Times-Bold", fontSize=18,
+            "PT", fontName=FONT_BOLD, fontSize=18,
             alignment=TA_CENTER, leading=24, spaceAfter=12,
         ),
         part_desc=ParagraphStyle(
-            "PD", fontName="Times-Italic", fontSize=10.5,
+            "PD", fontName=FONT_ITALIC, fontSize=10.5,
             alignment=TA_JUSTIFY, leading=15,
             spaceAfter=6, leftIndent=15 * mm, rightIndent=15 * mm,
             textColor=HexColor("#444444"),
@@ -286,17 +314,17 @@ def _styles() -> dict:
 
         # --- Chapter headings ---
         chapter_title=ParagraphStyle(
-            "CHT", fontName="Times-Bold", fontSize=13,
+            "CHT", fontName=FONT_BOLD, fontSize=13,
             alignment=TA_CENTER, leading=17,
             spaceBefore=0, spaceAfter=4,
         ),
         chapter_role=ParagraphStyle(
-            "CHR", fontName="Times-Italic", fontSize=9,
+            "CHR", fontName=FONT_ITALIC, fontSize=9,
             alignment=TA_CENTER, leading=12,
             spaceAfter=4, textColor=HexColor(MUTED),
         ),
         chapter_desc=ParagraphStyle(
-            "CHD", fontName="Times-Italic", fontSize=10,
+            "CHD", fontName=FONT_ITALIC, fontSize=10,
             alignment=TA_JUSTIFY, leading=14,
             spaceAfter=12, leftIndent=8 * mm, rightIndent=8 * mm,
             textColor=HexColor(NOTE_COLOR),
@@ -304,26 +332,66 @@ def _styles() -> dict:
 
         # --- Core (substrate) text ---
         body=ParagraphStyle(
-            "B", fontName="Times-Roman", fontSize=10.5,
+            "B", fontName=FONT_ROMAN, fontSize=10.5,
             alignment=TA_JUSTIFY, leading=14.5,
             spaceAfter=6, firstLineIndent=18,
         ),
         body_first=ParagraphStyle(
-            "B1", fontName="Times-Roman", fontSize=10.5,
+            "B1", fontName=FONT_ROMAN, fontSize=10.5,
             alignment=TA_JUSTIFY, leading=14.5,
             spaceAfter=6, firstLineIndent=0,
         ),
 
         # --- Observations ---
         obs_title=ParagraphStyle(
-            "OT", fontName="Times-Bold", fontSize=12,
+            "OT", fontName=FONT_BOLD, fontSize=12,
             alignment=TA_LEFT, leading=16,
             spaceBefore=16, spaceAfter=6,
         ),
         obs_body=ParagraphStyle(
-            "OB", fontName="Times-Roman", fontSize=10,
+            "OB", fontName=FONT_ROMAN, fontSize=10,
             alignment=TA_JUSTIFY, leading=14,
             spaceAfter=10,
+        ),
+
+        # --- Preface ---
+        preface_title=ParagraphStyle(
+            "PFT", fontName=FONT_BOLD, fontSize=16,
+            alignment=TA_CENTER, leading=22,
+            spaceBefore=0, spaceAfter=16,
+        ),
+        preface_heading=ParagraphStyle(
+            "PFH", fontName=FONT_BOLD, fontSize=11,
+            alignment=TA_LEFT, leading=15,
+            spaceBefore=14, spaceAfter=4,
+        ),
+        preface_body=ParagraphStyle(
+            "PFB", fontName=FONT_ROMAN, fontSize=10,
+            alignment=TA_JUSTIFY, leading=14,
+            spaceAfter=6,
+        ),
+        preface_italic=ParagraphStyle(
+            "PFI", fontName=FONT_ITALIC, fontSize=10,
+            alignment=TA_JUSTIFY, leading=14,
+            spaceAfter=6,
+        ),
+        preface_indent=ParagraphStyle(
+            "PFIN", fontName=FONT_ROMAN, fontSize=9.5,
+            alignment=TA_JUSTIFY, leading=13,
+            spaceAfter=4,
+            leftIndent=10 * mm,
+        ),
+        preface_indent_italic=ParagraphStyle(
+            "PFII", fontName=FONT_ITALIC, fontSize=9.5,
+            alignment=TA_JUSTIFY, leading=13,
+            spaceAfter=4,
+            leftIndent=10 * mm,
+        ),
+        preface_label=ParagraphStyle(
+            "PFL", fontName=FONT_BOLD, fontSize=9.5,
+            alignment=TA_LEFT, leading=13,
+            spaceBefore=8, spaceAfter=2,
+            leftIndent=10 * mm,
         ),
     )
 
@@ -345,7 +413,7 @@ def load_structure() -> dict:
 
 def _page_footer(canvas, doc):
     canvas.saveState()
-    canvas.setFont("Times-Roman", 9)
+    canvas.setFont(FONT_ROMAN, 9)
     canvas.drawCentredString(PAGE_W / 2, 12 * mm, str(canvas.getPageNumber()))
     canvas.restoreState()
 
@@ -354,14 +422,19 @@ def _title_page(st: dict) -> list:
     return [
         Spacer(1, 55 * mm),
         Paragraph(
-            "THE KEPHALAIA<br/>OF THE TEACHER",
+            "THE ANCIENT WORD",
             st["main_title"],
         ),
         Spacer(1, 10 * mm),
-        Paragraph("The Discovered Structure", st["subtitle"]),
+        Paragraph(
+            "Recovered from the Kephalaia of the Teacher",
+            st["subtitle"],
+        ),
         Spacer(1, 4 * mm),
         Paragraph(
-            "The teaching substrate organized by its own internal logic",
+            "The correspondential teaching described by Emanuel Swedenborg,<br/>"
+            "extracted from its Manichaean vessel<br/>"
+            "and organized by its own internal structure",
             st["subtitle2"],
         ),
         Spacer(1, 30 * mm),
@@ -373,7 +446,7 @@ def _title_page(st: dict) -> list:
         ),
         Spacer(1, 8 * mm),
         Paragraph(
-            "Core teaching substrate organized by discovered structure.<br/>"
+            "Ancient teaching substrate extracted and organized by discovered structure.<br/>"
             "Structure discovered by Claude Opus 4.6 from the text alone,<br/>"
             "without access to manuscript chapter divisions.",
             st["credit"],
@@ -385,6 +458,458 @@ def _title_page(st: dict) -> list:
         ),
         PageBreak(),
     ]
+
+
+def _preface_pages(st: dict) -> list:
+    """Generate the preface pages for the book."""
+    elements: list = [
+        Spacer(1, 15 * mm),
+        Paragraph("PREFACE", st["preface_title"]),
+        Spacer(1, 6 * mm),
+    ]
+
+    p = st["preface_body"]
+    pi = st["preface_italic"]
+    h = st["preface_heading"]
+    ind = st["preface_indent"]
+    indi = st["preface_indent_italic"]
+    lbl = st["preface_label"]
+
+    # --- Opening: The Ancient Word ---
+    elements.append(Paragraph(
+        "In the eighteenth century, Emanuel Swedenborg described a text he "
+        "called the &ldquo;Ancient Word&rdquo; &mdash; written entirely in "
+        "correspondences, older than the Hebrew scriptures, carried eastward "
+        "by the <i>Bene Qedem</i> (the &ldquo;Children of the East&rdquo;), "
+        "and preserved in a region he called &ldquo;Great Tartary.&rdquo; "
+        "He said it still existed there.",
+        pi,
+    ))
+    elements.append(Paragraph(
+        "This is that text.",
+        pi,
+    ))
+    elements.append(Paragraph(
+        "What you hold is the teaching core of the <i>Kephalaia of the "
+        "Teacher</i>, a third- or fourth-century Coptic Manichaean "
+        "manuscript translated by Iain Gardner in 1995. Within this "
+        "manuscript lies a complete correspondential cosmology that matches "
+        "Swedenborg&rsquo;s description of the Ancient Word in every "
+        "particular: written entirely in correspondences, complete from "
+        "beginning to end, containing the content the Bible attributes to "
+        "now-lost texts, found in the exact region Swedenborg identified, "
+        "and tracing back through the exact transmission path he described.",
+        p,
+    ))
+
+    # --- What Swedenborg Described ---
+    elements.append(Paragraph("What Swedenborg Described", h))
+    elements.append(Paragraph(
+        "Swedenborg made five specific claims about the Ancient Word. "
+        "(1)&nbsp;It was written entirely in the style of correspondences "
+        "&mdash; natural images expressing spiritual realities through "
+        "organic, functional relationships, not arbitrary symbolism. "
+        "(2)&nbsp;It contained a complete teaching from beginning to end. "
+        "(3)&nbsp;The biblical references to the &ldquo;Wars of the "
+        "LORD&rdquo; (Numbers 21:14) and the &ldquo;Book of "
+        "Jashar&rdquo; (Joshua 10:13, 2&nbsp;Samuel 1:18) were citations "
+        "from this text. (4)&nbsp;It was preserved in &ldquo;Great "
+        "Tartary&rdquo; &mdash; the vast Central Asian interior. "
+        "(5)&nbsp;It was carried there by the <i>Bene Qedem</i>, the "
+        "ancient bearers of correspondential knowledge.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "All five claims can be independently verified against the "
+        "text extracted here.",
+        pi,
+    ))
+
+    # --- Five Lines of Evidence ---
+    elements.append(Paragraph("Five Lines of Evidence", h))
+
+    elements.append(Paragraph("1. Written entirely in correspondences", lbl))
+    elements.append(Paragraph(
+        "The teaching core extracted from the <i>Kephalaia</i> is "
+        "correspondential throughout. &sect;490&ndash;&sect;507 "
+        "(identified as 90% ancient substrate) state the organizing "
+        "principle directly: &ldquo;This whole universe, above and below, "
+        "reflects the pattern of the human body.&rdquo; The text then "
+        "systematically maps the cosmos onto the human form &mdash; head "
+        "to feet, organ by organ &mdash; with each correspondence "
+        "grounded in function. Elsewhere, five storehouses map to five "
+        "elements, to five trees, to five genera, to five worlds &mdash; "
+        "and the pattern repeats through realms, metals, and tastes. "
+        "A body-cosmos isomorphism culminates in a soul-body binding "
+        "formula. This is not scattered symbolic language. It is "
+        "systematic correspondential architecture sustained across "
+        "886&nbsp;paragraphs.",
+        ind,
+    ))
+
+    elements.append(Paragraph("2. Complete from beginning to end", lbl))
+    elements.append(Paragraph(
+        "The text contains the complete arc of regeneration. "
+        "&sect;1&ndash;&sect;9 present the primordial cosmogonic "
+        "narrative: the separation of light and darkness, the descent "
+        "of the Divine Human into combat with falsity, the ordering of "
+        "recaptured good, and the final restoration &mdash; "
+        "&ldquo;a single God comes to be over the totality.&rdquo; "
+        "Parts&nbsp;2 through 12 systematically elaborate every phase: the "
+        "dual architecture of reality, the descent of influx, redemptive "
+        "combat, the interior of the Divine, the anatomy of evil, the "
+        "ordering of the spiritual world, purification of mind, the "
+        "architecture of influx, the formation of the human being, the "
+        "correspondences of heaven and earth, and the dynamics of "
+        "spiritual life. The final vision (&sect;851&ndash;&sect;886) "
+        "closes with three entreaties, the two fundamental essences, "
+        "and the portals of divine conjunction. This is not a fragment. "
+        "It is a complete text.",
+        ind,
+    ))
+
+    elements.append(Paragraph(
+        "3. Contains the Wars of the Lord and the Book of Jashar",
+        lbl,
+    ))
+    elements.append(Paragraph(
+        "The Hebrew Bible cites two lost texts by name: the "
+        "&ldquo;Wars of the LORD&rdquo; (Numbers 21:14) and the "
+        "&ldquo;Book of Jashar&rdquo; &mdash; the Book of the Upright "
+        "(Joshua 10:13, 2&nbsp;Samuel 1:18). Swedenborg identified both as "
+        "portions of the Ancient Word. Both are found here. "
+        "A consonantal analysis of the "
+        "Wars of the LORD demonstrates that the quotation fragments, "
+        "read at the three degrees Swedenborg specified (natural, "
+        "spiritual, celestial), reveal a cosmic architecture &mdash; "
+        "the Beloved, the Conflagration, Cosmic Trenches, the Seat of "
+        "Watchers, the Border of the Father &mdash; that matches the "
+        "macrocosmic narrative in this text exactly. "
+        "The Book of Jashar &mdash; the practical manual of the upright "
+        "life &mdash; matches the pedagogical content: how stillness "
+        "defeats falsity, how the mind is regenerated faculty by faculty, "
+        "how the divine call meets human obedience. The cosmological "
+        "text and the pedagogical text, the macrocosm and the microcosm "
+        "&mdash; both reside together in the same teaching.",
+        ind,
+    ))
+
+    elements.append(Paragraph("4. Found exactly where Swedenborg said", lbl))
+    elements.append(Paragraph(
+        "Swedenborg located the Ancient Word in &ldquo;Great "
+        "Tartary&rdquo; &mdash; the vast interior of Central Asia. "
+        "The <i>Kephalaia</i> was transmitted through the Manichaean "
+        "tradition, which was officially adopted as state religion by "
+        "the Uyghur Khaganate in 762/763&nbsp;CE. The Kingdom of Qocho "
+        "preserved Manichaean texts in cave temple-libraries at Turfan "
+        "&mdash; in the heart of Swedenborg&rsquo;s &ldquo;Great "
+        "Tartary.&rdquo; The Coptic manuscript translated by Gardner is "
+        "a sister text of these Central Asian recensions. The text was "
+        "found where Swedenborg said it would be.",
+        ind,
+    ))
+
+    elements.append(Paragraph(
+        "5. Traces back through the transmission path Swedenborg described",
+        lbl,
+    ))
+    elements.append(Paragraph(
+        "Swedenborg said the Ancient Word was carried eastward by the "
+        "<i>Bene Qedem</i> &mdash; the Children of the East &mdash; "
+        "the ancient bearers of correspondential knowledge. The "
+        "substrate teaching in the <i>Kephalaia</i> predates its "
+        "Manichaean frame. Its five-fold architecture, body-cosmos "
+        "correspondence system, and doctrine of discrete degrees are "
+        "rooted in Zoroastrian cosmology &mdash; specifically the "
+        "tradition of <i>Vohu Manah</i> (Good Mind), the "
+        "<i>Amesha Spentas</i>, and the "
+        "<i>mēnōg/gētīg</i> (spiritual/material) ontology. The "
+        "Apocryphon of John, a related text, explicitly cites "
+        "&ldquo;the book of Zoroaster&rdquo; as its source for "
+        "the body-creation angel list &mdash; a correspondential "
+        "catalogue in exactly the form of <i>Bene Qedem</i> tradition. "
+        "The teaching did not originate with Mani. He received it from "
+        "the Persian-Zoroastrian tradition, which received it from the "
+        "Children of the East.",
+        ind,
+    ))
+
+    # --- Three Layers ---
+    elements.append(Paragraph("Three Layers", h))
+    elements.append(Paragraph(
+        "Within the <i>Kephalaia of the Teacher</i>, three distinct "
+        "layers can be identified:",
+        p,
+    ))
+
+    elements.append(Paragraph(
+        '<b>Layer 3 (Outermost): The Hagiographic Frame.</b> '
+        '&ldquo;Once again the Enlightener sits in the congregation&hellip;&rdquo; '
+        '&mdash; the narrative scaffolding that casts the teaching as dialogues '
+        'between Mani and his disciples. This layer belongs entirely to the '
+        'Manichaean institutional setting.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>Layer 2 (Middle): The Manichaean Theological Overlay.</b> '
+        'Names, titles, and institutional vocabulary that Mani&rsquo;s tradition '
+        'imposed upon older content: &ldquo;Jesus the Splendour,&rdquo; '
+        '&ldquo;Light Mind,&rdquo; &ldquo;Holy Spirit,&rdquo; '
+        '&ldquo;apostle,&rdquo; &ldquo;the elect.&rdquo; These terms '
+        'replaced earlier designations &mdash; almost certainly Persian &mdash; '
+        'while leaving the underlying teaching structure intact.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>Layer 1 (Core): The Ancient Word.</b> '
+        'A systematic correspondential cosmology organized around five degrees '
+        'at every scale, teaching the complete arc of regeneration from first '
+        'to last. This layer is older than Mani. Its five-fold architecture, '
+        'its body-cosmos correspondence system, its doctrine of discrete '
+        'degrees, its &ldquo;summons and obedience&rdquo; mechanism (divine '
+        'influx and human reception) &mdash; these do not originate with '
+        'third-century Babylonia. They preserve the Ancient Word whose '
+        'roots extend through Zoroastrian Persia into the proto-Indo-Iranian '
+        'and ancient Near Eastern traditions of the <i>Bene Qedem</i>.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        "This book is an extraction of Layer 1 &mdash; the Ancient "
+        "Word &mdash; from its Manichaean vessel.",
+        pi,
+    ))
+
+    # --- What Was Extracted ---
+    elements.append(Paragraph("What Was Extracted", h))
+    elements.append(Paragraph(
+        "The extraction was performed by reading the entire corpus as a "
+        "continuous flow of sequentially numbered paragraphs "
+        "(&sect;1&ndash;&sect;886), stripping the hagiographic frame "
+        "(Layer 3), and organizing what remained according to the "
+        "teaching&rsquo;s own internal logic. The structure of this book "
+        "&mdash; its thirteen parts and fifty-two chapters &mdash; was not "
+        "imposed from the manuscript&rsquo;s chapter divisions. It was "
+        "discovered by reading the text as a single continuous teaching and "
+        "identifying where the natural structural seams fall.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "The reader will notice that the number five recurs at every "
+        "scale. The text itself teaches this: five elements, five "
+        "faculties, five trees, five storehouses, five wars, five "
+        "liberations, five modes of conjunction, five works of fire, "
+        "five watch-stations. Chapter 48 makes the principle explicit "
+        "&mdash; &ldquo;In each one of these five garments there are "
+        "five powers&hellip; the summons with the obedience constitute "
+        "twenty-five characteristics in their twenty-five limbs.&rdquo; "
+        "This is not a numerological coincidence. The five-fold "
+        "principle is the teaching&rsquo;s own organizing architecture: "
+        "five degrees through which the one reality makes itself "
+        "receivable, repeated at every level from cosmic emanation to "
+        "human anatomy. It is visible on every page.",
+        p,
+    ))
+
+    # --- What Was Not Changed ---
+    elements.append(Paragraph("What Was Not Changed", h))
+    elements.append(Paragraph(
+        "No naming overlays have been corrected. No institutional vocabulary "
+        "has been replaced. &ldquo;Jesus the Splendour&rdquo; has not been "
+        "reverted to its Persian substrate; &ldquo;Light Mind&rdquo; has not "
+        "been changed back to <i>Wahman</i>. This was a deliberate choice. "
+        "The text is presented as it has come down to us &mdash; layered, "
+        "evolved, carrying the marks of every tradition through which "
+        "it passed.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "The Coptic papyrus is damaged. Where gaps remained in the extracted "
+        "text, those that could be constrained by correspondential logic and "
+        "surrounding context were restored; those too large or uncertain were "
+        "left open. Square brackets mark both the original lacunae and the "
+        "restorations throughout. The restoration method was the same "
+        "correspondences that organize the text itself: a spiritual reading "
+        "of each chapter identified what must belong in each gap, and the "
+        "fill was written in the text&rsquo;s own vocabulary.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "But the reader should know what the naming marks are, so they can "
+        "see through them to the teaching beneath.",
+        pi,
+    ))
+
+    # --- The Naming Overlays ---
+    elements.append(Paragraph("The Naming Overlays", h))
+    elements.append(Paragraph(
+        "A systematic review of the extracted corpus identified the "
+        "following naming patterns that belong to the Manichaean "
+        "editorial layer (Layer 2), not to the ancient teaching core:",
+        p,
+    ))
+
+    elements.append(Paragraph(
+        '<b>&ldquo;Jesus the Splendour&rdquo;</b> appears in at least eighteen '
+        'passages, always designating the same cosmic function: the divine '
+        'wisdom that proceeds into illumination, purification, and liberation '
+        'of captive good. This is a Manichaean-Christian name mapped onto a '
+        'pre-existing Persian cosmic figure. The substrate designation was '
+        'almost certainly <i>Xradeshahr</i> (Splendor of the Realm) or a '
+        'form related to Avestan <i>xvarənah</i> (divine luminous '
+        'glory). The entity&rsquo;s consistent function &mdash; radiant '
+        'divine wisdom that illuminates, separates truth from falsity, and '
+        'liberates &mdash; maps precisely onto this pre-Manichaean Iranian '
+        'concept. There is nothing specifically Christian about this entity '
+        'in any of its eighteen appearances.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Light Mind&rdquo; / &ldquo;Light-Nous&rdquo;</b> appears '
+        'in at least eleven passages. This is Greek philosophical vocabulary '
+        '(νοῦς) entering through Hellenistic '
+        'synthesis. The substrate designation was almost certainly '
+        '<i>Wahman</i> &mdash; from Avestan <i>Vohu Manah</i> (Good Mind), '
+        'one of the Amesha Spentas in Zoroastrian theology. The '
+        'entity&rsquo;s consistent function &mdash; entering the human '
+        'person, awakening from spiritual torpor, gathering what is scattered, '
+        'enlightening the understanding &mdash; matches the Zoroastrian '
+        'Vohu Manah&rsquo;s role precisely.',
+        ind,
+    ))
+
+    elements.append(Paragraph(
+        '<b>&ldquo;Saklas&rdquo;</b> (&sect;544) is Aramaic for &ldquo;fool&rdquo; '
+        '&mdash; a distinctly Gnostic/Sethian name for the malformed creator, '
+        'imported from texts like the Apocryphon of John. The substrate likely '
+        'used Persian demonological designations, possibly <i>Az</i> (the '
+        'demon of concupiscence) and <i>Jeh</i> (the demoness), both from '
+        'Zoroastrian tradition.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Holy Spirit&rdquo;</b> (&sect;379, &sect;569) overlays what '
+        'was almost certainly <i>Spenta Mainyu</i> (Holy/Bounteous Spirit) '
+        'from Zoroastrian theology &mdash; not identical to the Christian '
+        'Third Person of the Trinity.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Apostle&rdquo;</b> (&sect;78, &sect;197, &sect;291, &sect;313) '
+        'is Greek Christian institutional vocabulary '
+        '(ἀπόστολος). '
+        'The substrate likely used a Persian term for the transmitter of '
+        'sacred knowledge, possibly related to <i>frēstag</i> '
+        '(messenger/envoy).',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;The elect one&rdquo;</b> (&sect;106) and '
+        '<b>&ldquo;holy church&rdquo;</b> (&sect;11) are Manichaean '
+        'institutional vocabulary replacing what were cosmic entity names '
+        'in the five-fold correspondential architecture.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Good news&rdquo;</b> (&sect;162) is '
+        'εὐαγγέλιον '
+        '&mdash; distinctly Christian vocabulary with strong Pauline associations.',
+        ind,
+    ))
+
+    # --- Deeper Transmission Evidence ---
+    elements.append(Paragraph("Deeper Transmission Evidence", h))
+    elements.append(Paragraph(
+        "Beyond the Manichaean overlay, the review also identified material "
+        "that predates even the Persian-Zoroastrian vessel:",
+        p,
+    ))
+    elements.append(Paragraph(
+        "The five dark elements (smoke, fire, wind, water, darkness) do not "
+        "match either classical Greek (four elements) or standard Zoroastrian "
+        "categories. This sequence appears to preserve a "
+        "<b>proto-Indo-Iranian or Mesopotamian elemental cosmology</b> older "
+        "than the Persian formulation.",
+        ind,
+    ))
+    elements.append(Paragraph(
+        "The &ldquo;sea giant&rdquo; passage (&sect;437&ndash;441) &mdash; "
+        "a composite being formed from cosmic debris in a primordial sea, "
+        "bearing the imprint of all celestial cycles upon its body &mdash; "
+        "has parallels to Mesopotamian creation narratives and "
+        "<b>Zurvanite cosmogony</b>, and may represent one of the oldest "
+        "layers in the text.",
+        ind,
+    ))
+    elements.append(Paragraph(
+        "The water-reflection/inversion teaching (&sect;804&ndash;808) "
+        "&mdash; the upper world reflected inversely in the lower &mdash; "
+        "appears across ancient Near Eastern and Vedic/Upanishadic traditions "
+        "and expresses a law of correspondence more fundamental than any "
+        "single cultural formulation.",
+        ind,
+    ))
+    elements.append(Paragraph(
+        "The medical/healing analogy (&sect;393&ndash;397) &mdash; cosmic "
+        "healing through three medicines applied in three directions &mdash; "
+        "has strong parallels to Mesopotamian therapeutic traditions, "
+        "suggesting an ancient Near Eastern substrate beneath the "
+        "Persian vessel.",
+        ind,
+    ))
+
+    # --- How to Read This Text ---
+    elements.append(Paragraph("How to Read This Text", h))
+    elements.append(Paragraph(
+        "You are reading the Ancient Word &mdash; and it has traveled far "
+        "to reach you. It was given systematic form in the "
+        "Persian-Zoroastrian tradition, where it acquired its five-fold "
+        "architecture, its body-cosmos correspondence map, and its doctrine "
+        "of discrete degrees. It was received by Mani in third-century "
+        "Babylonia, who translated its Persian entities into a mixed "
+        "vocabulary of Christian, Greek, and Gnostic terms. It was recorded "
+        "in Coptic by Manichaean scribes in Egypt. It was translated into "
+        "English by Iain Gardner in 1995. And it was extracted from its "
+        "manuscript frame and organized by its own internal structure here.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "Through all these transmissions, the teaching itself survived. "
+        "The five-fold architecture did not change. The body-cosmos "
+        "correspondence did not change. The doctrine that reality proceeds "
+        "through discrete degrees &mdash; celestial, spiritual, natural "
+        "&mdash; did not change. The mechanism of divine influx and human "
+        "reception (&ldquo;the summons and the obedience&rdquo;) did not "
+        "change. The complete arc of regeneration &mdash; from the primordial "
+        "separation of wisdom and falsity through divine descent, combat, "
+        "purification, and final restoration &mdash; did not change.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "The names changed. The teaching did not.",
+        pi,
+    ))
+    elements.append(Paragraph(
+        "When you encounter &ldquo;Jesus the Splendour,&rdquo; read: "
+        "divine wisdom proceeding into illumination. When you encounter "
+        "&ldquo;Light Mind,&rdquo; read: the Good Mind that enters and "
+        "awakens. When you encounter &ldquo;First Man,&rdquo; read: "
+        "the Divine Human descending into temptation-combat. When you "
+        "encounter &ldquo;Living Spirit,&rdquo; read: Divine Truth "
+        "proceeding to order all things. When you encounter &ldquo;Third "
+        "Ambassador,&rdquo; read: the manifestation of the Divine form "
+        "that draws forth captive good. When you encounter &ldquo;the "
+        "Father of Greatness,&rdquo; read: the Infinite Divine Love in "
+        "which all things originate.",
+        p,
+    ))
+    elements.append(Paragraph(
+        "The correspondences are in the text. They have always been in "
+        "the text. The Manichaean names are garments. What wears them "
+        "is the Ancient Word.",
+        pi,
+    ))
+    elements.append(PageBreak())
+    return elements
 
 
 def _toc_page(st: dict, structure: dict) -> list:
@@ -513,7 +1038,7 @@ def _render_observations(st: dict, observations: list[dict]) -> list:
             "corpus as a single continuous text, without manuscript "
             "chapter divisions.",
             ParagraphStyle(
-                "OI", fontName="Times-Italic", fontSize=10,
+                "OI", fontName=FONT_ITALIC, fontSize=10,
                 alignment=TA_CENTER, leading=14, spaceAfter=16,
                 textColor=HexColor(NOTE_COLOR),
             ),
@@ -565,7 +1090,7 @@ def build_pdf():
         rightMargin=25 * mm,
         topMargin=20 * mm,
         bottomMargin=20 * mm,
-        title="The Kephalaia of the Teacher \u2014 The Discovered Structure",
+        title="The Ancient Word \u2014 Recovered from the Kephalaia of the Teacher",
         author="Manichaean Analysis Project",
     )
 
@@ -573,6 +1098,9 @@ def build_pdf():
 
     # ---- Title page ----
     elements.extend(_title_page(st))
+
+    # ---- Preface ----
+    elements.extend(_preface_pages(st))
 
     # ---- Table of contents ----
     elements.extend(_toc_page(st, structure))
