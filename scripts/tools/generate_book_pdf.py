@@ -1185,6 +1185,7 @@ _CATEGORY_LABELS = {
     "natural_imagery": "Natural Imagery",
     "action_process": "Actions & Processes",
     "quality_state": "Qualities & States",
+    "numerical_correspondence": "Numerical Correspondences",
 }
 
 _CATEGORY_ORDER = [
@@ -1195,6 +1196,7 @@ _CATEGORY_ORDER = [
     "natural_imagery",
     "action_process",
     "quality_state",
+    "numerical_correspondence",
 ]
 
 
