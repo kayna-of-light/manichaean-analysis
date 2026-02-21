@@ -76,6 +76,24 @@ natural term as it operates throughout the WHOLE text? The answer \
 should be the one that is most internally consistent with the \
 text's own architecture and with the doctrine of correspondences.
 
+CRITICAL — NUMBERS ARE CORRESPONDENCES, NOT COUNTS:
+
+In the science of correspondences, numbers describe the QUALITY \
+of what is enumerated, not a literal count. When the text says \
+"five faculties," the number five signifies fullness-as-to- \
+manifestation. "Twelve principles" signifies all aspects of truth \
+and good from the Divine. "Three earths" signifies truth in its \
+degrees. Numbers like 2, 3, 5, 7, 10, 12 each carry a specific \
+spiritual quality — treat them as correspondential vocabulary \
+just like "light" or "fire."
+
+The per-chapter spiritual readings do NOT always interpret \
+numbers correctly — they often treat them as literal counts. \
+Your lexicon should include entries for the significant numbers \
+themselves, mapping each to its spiritual quality based on \
+Swedenborg's doctrine and how the text uses them. This is the \
+NUMERICAL CORRESPONDENCE category.
+
 WHAT TO EXTRACT:
 
 1. COSMOLOGICAL ENTITIES — Named beings, powers, and cosmic figures \
@@ -106,6 +124,14 @@ WHAT TO EXTRACT:
 7. QUALITIES & STATES — Light/darkness, hot/cold, sweet/bitter, \
    wet/dry, living/dead. Map each pair to its spiritual polarity.
 
+8. NUMERICAL CORRESPONDENCES — Every significant number used in \
+   the text (2, 3, 4, 5, 7, 10, 12, 14, 18, 25, etc.) should \
+   get its own entry. Map each number to its spiritual quality \
+   and document how the text's usage confirms or refines that \
+   quality. Where the text uses a number that Swedenborg did not \
+   explicitly treat (e.g. 15, 25), derive its meaning from its \
+   factors and from how the text itself uses it.
+
 CONSISTENCY RULES:
 
 - Each natural term gets ONE primary spiritual meaning. If \
@@ -122,6 +148,14 @@ CONSISTENCY RULES:
   should be grouped or cross-referenced.
 - Note variant readings that you did NOT choose, with brief \
   explanation of why.
+
+FORMATTING RULES:
+
+- Do NOT embed §-references in any descriptive text field \
+  (spiritual_meaning, definition, opposite_sense, notes). \
+  References to specific passages belong ONLY in the \
+  section_refs array. The descriptive fields should read as \
+  clean prose without paragraph markers.
 
 When you have completed the lexicon, call the commit_lexicon tool \
 once with the complete result. Be exhaustive — every natural term \
@@ -164,6 +198,7 @@ COMMIT_LEXICON_TOOL = {
                                 "natural_imagery",
                                 "action_process",
                                 "quality_state",
+                                "numerical_correspondence",
                             ],
                             "description": (
                                 "The category of correspondence."
@@ -459,6 +494,7 @@ class BuildLexicon(CorpusAnalysisBase):
             "natural_imagery": "🌿",
             "action_process": "⚡",
             "quality_state": "☯️",
+            "numerical_correspondence": "🔢",
         }
 
         # Confidence icons
@@ -483,6 +519,7 @@ class BuildLexicon(CorpusAnalysisBase):
             "natural_imagery",
             "action_process",
             "quality_state",
+            "numerical_correspondence",
         ]:
             group = by_cat.get(cat, [])
             if not group:
