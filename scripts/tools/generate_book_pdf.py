@@ -71,9 +71,11 @@ PROJECT_ROOT = SCRIPT_DIR.parent.parent  # scripts/tools/ → project root
 
 KEPH_DIR = PROJECT_ROOT / "output" / "projects" / "kephalaia"
 STRUCTURE_FILE = KEPH_DIR / "book_structure.json"
+LEXICON_FILE = KEPH_DIR / "correspondence_lexicon.json"
 CORE_DIR = KEPH_DIR / "core" / "chapters"
 RESTORED_DIR = KEPH_DIR / "restored" / "chapters"
 OUTPUT = PROJECT_ROOT / "output" / "pdfs" / "The_Ancient_Word.pdf"
+OUTPUT_TMP = PROJECT_ROOT / "output" / "pdfs" / "The_Ancient_Word_tmp.pdf"
 
 PAGE_W, PAGE_H = A4
 
@@ -475,6 +477,30 @@ def _styles() -> dict:
             alignment=TA_LEFT, leading=13,
             spaceBefore=8, spaceAfter=2,
             leftIndent=10 * mm,
+        ),
+
+        # --- Lexicon ---
+        lex_category=ParagraphStyle(
+            "LEXC", fontName=FONT_BOLD, fontSize=12,
+            alignment=TA_LEFT, leading=16,
+            spaceBefore=16, spaceAfter=6,
+        ),
+        lex_entry_head=ParagraphStyle(
+            "LEXH", fontName=FONT_ROMAN, fontSize=10,
+            alignment=TA_LEFT, leading=14,
+            spaceBefore=10, spaceAfter=1,
+        ),
+        lex_entry_body=ParagraphStyle(
+            "LEXB", fontName=FONT_ROMAN, fontSize=9,
+            alignment=TA_JUSTIFY, leading=12.5,
+            spaceAfter=2, leftIndent=6 * mm,
+            textColor=HexColor(NOTE_COLOR),
+        ),
+        lex_entry_detail=ParagraphStyle(
+            "LEXD", fontName=FONT_ITALIC, fontSize=8.5,
+            alignment=TA_LEFT, leading=11,
+            spaceAfter=1, leftIndent=6 * mm,
+            textColor=HexColor(MUTED),
         ),
     )
 
@@ -1044,6 +1070,15 @@ def _toc_page(st: dict, structure: dict) -> list:
                     indent=indent,
                 ))
 
+    # --- Back matter entries ---
+    lex_page = _page_registry.get("lexicon", "")
+    if lex_page:
+        elements.append(Spacer(1, 10))
+        elements.append(_TocLine(
+            "Correspondence Lexicon", lex_page,
+            title_font=FONT_BOLD, font_size=11, leading=16,
+        ))
+
     elements.append(PageBreak())
     return elements
 
@@ -1138,6 +1173,157 @@ def _render_chapter(
     return elements
 
 
+# ---------------------------------------------------------------------------
+# Lexicon renderer
+# ---------------------------------------------------------------------------
+
+_CATEGORY_LABELS = {
+    "cosmological_entity": "Cosmological Entities",
+    "cosmic_element": "Cosmic Elements & Substances",
+    "structural_term": "Structural Terms",
+    "body_anatomy": "Body & Anatomy",
+    "natural_imagery": "Natural Imagery",
+    "action_process": "Actions & Processes",
+    "quality_state": "Qualities & States",
+}
+
+_CATEGORY_ORDER = [
+    "cosmological_entity",
+    "cosmic_element",
+    "structural_term",
+    "body_anatomy",
+    "natural_imagery",
+    "action_process",
+    "quality_state",
+]
+
+
+def _load_lexicon() -> dict | None:
+    """Load the correspondence lexicon JSON, or None if absent."""
+    if not LEXICON_FILE.exists():
+        return None
+    with open(LEXICON_FILE, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _section_to_chapters(section_refs: list[str],
+                         chapters: list[dict]) -> list[int]:
+    """Convert §N / §N\u2013§M references to sorted, unique chapter indices."""
+    import re
+    sec_nums: set[int] = set()
+    for ref in section_refs:
+        # Match §N or §N–§M (en-dash or hyphen)
+        for m in re.finditer(r'§(\d+)(?:[–\-](\d+))?', ref):
+            lo = int(m.group(1))
+            hi = int(m.group(2)) if m.group(2) else lo
+            sec_nums.update(range(lo, hi + 1))
+    if not sec_nums:
+        return []
+    ch_indices: set[int] = set()
+    for idx, ch in enumerate(chapters):
+        s, e = ch["section_start"], ch["section_end"]
+        if any(s <= n <= e for n in sec_nums):
+            ch_indices.add(idx)
+    return sorted(ch_indices)
+
+
+def _render_lexicon(st: dict, lexicon: dict, chapters: list[dict]) -> list:
+    """Render the correspondence lexicon as PDF flowables."""
+    elements: list = [
+        _PageRecorder("lexicon"),
+        Spacer(1, 30 * mm),
+        Paragraph("CORRESPONDENCE LEXICON", st["section_title"]),
+        Spacer(1, 4 * mm),
+        Paragraph(
+            "A comprehensive mapping of every natural term in the Ancient "
+            "Word to its spiritual correspondence. Entries are organized "
+            "by category. Where the same natural image carries both a "
+            "positive and a negative sense, the opposite sense is noted.",
+            ParagraphStyle(
+                "LI", fontName=FONT_ITALIC, fontSize=10,
+                alignment=TA_CENTER, leading=14, spaceAfter=16,
+                textColor=HexColor(NOTE_COLOR),
+            ),
+        ),
+    ]
+
+    entries = lexicon.get("entries", [])
+    by_cat: dict[str, list] = {}
+    for e in entries:
+        by_cat.setdefault(e["category"], []).append(e)
+
+    for cat_key in _CATEGORY_ORDER:
+        group = by_cat.get(cat_key, [])
+        if not group:
+            continue
+
+        label = _CATEGORY_LABELS.get(cat_key, cat_key.replace("_", " ").title())
+        elements.append(Paragraph(
+            _xml_esc(f"{label} ({len(group)})"),
+            st["lex_category"],
+        ))
+        elements.append(HRFlowable(
+            width="100%", thickness=0.4,
+            color=HexColor(RULE_COLOR),
+            spaceAfter=4 * mm,
+        ))
+
+        for e in group:
+            # --- Entry heading: term → spiritual meaning ---
+            nat = _xml_esc(e["natural_term"])
+            spi = _xml_esc(e["spiritual_meaning"])
+            head = f'<b>{nat}</b> \u2014 <i>{spi}</i>'
+
+            # Variants
+            variants = e.get("natural_variants", [])
+            if variants:
+                vlist = ", ".join(_xml_esc(v) for v in variants)
+                head += f'  <font color="{MUTED}" size="8">({vlist})</font>'
+
+            elements.append(Paragraph(head, st["lex_entry_head"]))
+
+            # --- Definition ---
+            defn = e.get("definition", "")
+            if defn:
+                elements.append(Paragraph(_xml_esc(defn), st["lex_entry_body"]))
+
+            # --- Opposite sense ---
+            opp = e.get("opposite_sense", "")
+            if opp:
+                elements.append(Paragraph(
+                    f'Opposite sense: {_xml_esc(opp)}',
+                    st["lex_entry_detail"],
+                ))
+
+            # --- Notes (replaces old detail line) ---
+            notes = e.get("notes", "")
+            ch_refs = _section_to_chapters(
+                e.get("section_refs", []), chapters
+            )
+            ch_label = ""
+            if ch_refs:
+                ch_label = "Ch. " + ", ".join(str(c + 1) for c in ch_refs)
+
+            if notes and ch_label:
+                elements.append(Paragraph(
+                    f'{_xml_esc(notes)}  '
+                    f'<font color="{MUTED}">({ch_label})</font>',
+                    st["lex_entry_detail"],
+                ))
+            elif notes:
+                elements.append(Paragraph(
+                    _xml_esc(notes), st["lex_entry_detail"],
+                ))
+            elif ch_label:
+                elements.append(Paragraph(
+                    f'<font color="{MUTED}">({ch_label})</font>',
+                    st["lex_entry_detail"],
+                ))
+
+    elements.append(PageBreak())
+    return elements
+
+
 def _render_observations(st: dict, observations: list[dict]) -> list:
     """Render the structural observations section."""
     elements: list = [
@@ -1194,8 +1380,10 @@ def build_pdf():
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     st = _styles()
 
+    # Use temp file to avoid viewer lock, then rename
+    build_target = OUTPUT_TMP
     doc = SimpleDocTemplate(
-        str(OUTPUT),
+        str(build_target),
         pagesize=A4,
         leftMargin=25 * mm,
         rightMargin=25 * mm,
@@ -1235,6 +1423,13 @@ def build_pdf():
         print(f"  Ch {ch_idx}: §{s_start}–§{s_end} ({n_paras} ¶)  \"{readable}\"")
         elements.extend(_render_chapter(st, ch, para_lookup))
 
+    # ---- Correspondence Lexicon (back matter) ----
+    lexicon = _load_lexicon()
+    if lexicon:
+        elements.extend(_render_lexicon(st, lexicon, chapters))
+        n_lex = len(lexicon.get("entries", []))
+        print(f"\n  Lexicon: {n_lex} entries")
+
     # Build — two passes: first to collect page numbers, second with TOC
     print(f"\n  Pass 1: collecting page numbers ({len(elements)} flowables) ...")
     _page_registry.clear()
@@ -1255,8 +1450,11 @@ def build_pdf():
             elements_pass2.extend(_part_page(st, part))
         elements_pass2.extend(_render_chapter(st, ch, para_lookup))
 
+    if lexicon:
+        elements_pass2.extend(_render_lexicon(st, lexicon, chapters))
+
     doc2 = SimpleDocTemplate(
-        str(OUTPUT),
+        str(build_target),
         pagesize=A4,
         leftMargin=25 * mm,
         rightMargin=25 * mm,
@@ -1267,8 +1465,17 @@ def build_pdf():
     )
     doc2.build(elements_pass2, onLaterPages=_page_footer)
 
-    size_kb = OUTPUT.stat().st_size / 1024
-    print(f"  Saved to {OUTPUT}")
+    # Rename temp → final (handles viewer-locked file on retry)
+    import shutil
+    try:
+        shutil.move(str(build_target), str(OUTPUT))
+    except PermissionError:
+        print(f"  \u26a0 Could not overwrite {OUTPUT.name} (file locked).")
+        print(f"  Output written to: {build_target}")
+
+    final = OUTPUT if OUTPUT.exists() else build_target
+    size_kb = final.stat().st_size / 1024
+    print(f"  Saved to {final}")
     print(f"  Size: {size_kb:,.0f} KB")
 
 
