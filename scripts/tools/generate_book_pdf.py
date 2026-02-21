@@ -775,15 +775,22 @@ def _preface_pages(st: dict) -> list:
     # --- What Was Extracted ---
     elements.append(Paragraph("What Was Extracted", h))
     elements.append(Paragraph(
-        "The extraction was performed by reading the entire corpus as a "
-        "continuous flow of sequentially numbered paragraphs "
-        "(&sect;1&ndash;&sect;886), stripping the hagiographic frame "
-        "(Layer 3), and organizing what remained according to the "
-        "teaching&rsquo;s own internal logic. The structure of this book "
-        "&mdash; its thirteen parts and fifty-two chapters &mdash; was not "
-        "imposed from the manuscript&rsquo;s chapter divisions. It was "
-        "discovered by reading the text as a single continuous teaching and "
-        "identifying where the natural structural seams fall.",
+        "The extraction was performed using the methods of textual "
+        "criticism, with Claude Opus 4.6 &mdash; an advanced language "
+        "model &mdash; serving as the primary analytical instrument. "
+        "The entire <i>Kephalaia</i> corpus was read as a continuous "
+        "flow of 886 sequentially numbered paragraphs. Each passage "
+        "was analyzed for editorial layering: separating the "
+        "hagiographic frame (Layer&nbsp;3) from the Manichaean "
+        "theological overlay (Layer&nbsp;2) and the ancient teaching "
+        "core (Layer&nbsp;1). The model read the text as a philologist "
+        "would &mdash; attending to vocabulary shifts, structural seams, "
+        "and correspondential consistency &mdash; but across the full "
+        "corpus as a single sustained reading. The structure of this "
+        "book &mdash; its thirteen parts and fifty-two chapters &mdash; "
+        "was not imposed from the manuscript&rsquo;s chapter divisions. "
+        "It was discovered by reading the text as a single continuous "
+        "teaching and identifying where the natural structural seams fall.",
         p,
     ))
     elements.append(Paragraph(
