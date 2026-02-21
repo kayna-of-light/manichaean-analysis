@@ -29,9 +29,10 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import (
     SimpleDocTemplate, Paragraph, Spacer, PageBreak, HRFlowable,
+    Flowable,
 )
 from reportlab.lib.units import mm
-from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT
+from reportlab.lib.enums import TA_CENTER, TA_JUSTIFY, TA_LEFT, TA_RIGHT
 from reportlab.lib.colors import HexColor
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -81,6 +82,88 @@ RULE_COLOR = "#CCCCCC"
 NOTE_COLOR = "#555555"
 MUTED = "#888888"
 DARK_MUTED = "#666666"
+TOC_DOT_COLOR = "#BBBBBB"
+TOC_PAGE_COLOR = "#888888"
+FOOTER_RULE_COLOR = "#CCCCCC"
+
+# Global page-number registry used by the two-pass build
+_page_registry: dict[str, int] = {}
+
+
+class _PageRecorder(Flowable):
+    """Zero-size flowable that records its page number when drawn."""
+
+    width = 0
+    height = 0
+
+    def __init__(self, key: str):
+        super().__init__()
+        self.key = key
+
+    def draw(self):
+        _page_registry[self.key] = self.canv.getPageNumber()
+
+
+class _TocLine(Flowable):
+    """Single TOC line: title, extending dot leader, right-aligned page number."""
+
+    def __init__(self, title: str, page_num, *,
+                 title_font: str, font_size: float, leading: float,
+                 indent: float = 0,
+                 dot_color: str = TOC_DOT_COLOR,
+                 page_color: str = TOC_PAGE_COLOR):
+        super().__init__()
+        self.title = title
+        self.page_num = str(page_num) if page_num else ""
+        self.title_font = title_font
+        self.font_size = font_size
+        self._leading = leading
+        self.indent = indent
+        self.dot_color = dot_color
+        self.page_color = page_color
+
+    def wrap(self, availWidth, availHeight):
+        self._avail_w = availWidth
+        return (availWidth, self._leading)
+
+    def draw(self):
+        c = self.canv
+        y = self._leading - self.font_size  # baseline offset
+
+        # --- Title (left) ---
+        c.setFont(self.title_font, self.font_size)
+        c.setFillColor(HexColor("#000000"))
+        c.drawString(self.indent, y, self.title)
+        title_w = pdfmetrics.stringWidth(
+            self.title, self.title_font, self.font_size
+        )
+
+        if not self.page_num:
+            return
+
+        # --- Page number (right, always roman / non-bold) ---
+        c.setFont(FONT_ROMAN, self.font_size)
+        c.setFillColor(HexColor(self.page_color))
+        c.drawRightString(self._avail_w, y, self.page_num)
+        page_w = pdfmetrics.stringWidth(
+            self.page_num, FONT_ROMAN, self.font_size
+        )
+
+        # --- Dot leaders (filling the gap) ---
+        dot = " \u00b7"  # space + middle dot
+        dot_w = pdfmetrics.stringWidth(dot, FONT_ROMAN, self.font_size)
+        x_start = self.indent + title_w + 2
+        x_end = self._avail_w - page_w - 2
+
+        if x_end - x_start > dot_w * 2:  # only draw if room for ≥2 dots
+            c.setFont(FONT_ROMAN, self.font_size)
+            c.setFillColor(HexColor(self.dot_color))
+            # Draw right-to-left so dots always align at the page-number edge
+            x = x_end - dot_w
+            while x >= x_start:
+                c.drawString(x, y, dot)
+                x -= dot_w
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -413,8 +496,18 @@ def load_structure() -> dict:
 
 def _page_footer(canvas, doc):
     canvas.saveState()
+    page_num = canvas.getPageNumber()
+    cx = PAGE_W / 2
+    y = 12 * mm
+    rule_w = 30 * mm
+    rule_y = y + 1.2 * mm
+    canvas.setStrokeColor(HexColor(FOOTER_RULE_COLOR))
+    canvas.setLineWidth(0.4)
+    canvas.line(cx - rule_w - 8 * mm, rule_y, cx - 8 * mm, rule_y)
+    canvas.line(cx + 8 * mm, rule_y, cx + rule_w + 8 * mm, rule_y)
     canvas.setFont(FONT_ROMAN, 9)
-    canvas.drawCentredString(PAGE_W / 2, 12 * mm, str(canvas.getPageNumber()))
+    canvas.setFillColor(HexColor(DARK_MUTED))
+    canvas.drawCentredString(cx, y, str(page_num))
     canvas.restoreState()
 
 
@@ -919,30 +1012,38 @@ def _toc_page(st: dict, structure: dict) -> list:
         Spacer(1, 6 * mm),
     ]
 
+    indent = 8 * mm  # chapter indent
+
     for part in structure["parts"]:
         pn = part["part_number"]
-        elements.append(
-            Paragraph(
-                f'Part {pn} &mdash; {_xml_esc(part["title"])}',
-                st["toc_part"],
-            )
-        )
+        part_key = f"part_{pn}"
+        part_page = _page_registry.get(part_key, "")
+        part_title = f"Part {pn} \u2014 {part['title']}"
+
+        elements.append(Spacer(1, 10))   # spaceBefore
+        elements.append(_TocLine(
+            part_title, part_page,
+            title_font=FONT_BOLD, font_size=11, leading=16,
+        ))
+
         for ch in structure["chapters"]:
             if ch["part_number"] == pn:
-                elements.append(
-                    Paragraph(_xml_esc(ch["title"]), st["toc_chapter"])
-                )
+                ch_key = f"ch_{ch['section_start']}"
+                ch_page = _page_registry.get(ch_key, "")
 
-    elements.append(Spacer(1, 12 * mm))
-    elements.append(
-        Paragraph("Structural Observations", st["toc_part"])
-    )
+                elements.append(_TocLine(
+                    ch["title"], ch_page,
+                    title_font=FONT_ROMAN, font_size=10, leading=14,
+                    indent=indent,
+                ))
+
     elements.append(PageBreak())
     return elements
 
 
 def _part_page(st: dict, part: dict) -> list:
     return [
+        _PageRecorder(f"part_{part['part_number']}"),
         Spacer(1, 60 * mm),
         Paragraph(f'Part {part["part_number"]}', st["part_number"]),
         Spacer(1, 4 * mm),
@@ -964,6 +1065,9 @@ def _render_chapter(
     by the §-range (section_start – section_end).
     """
     elements: list = []
+
+    # Bookmark for TOC page number
+    elements.append(_PageRecorder(f"ch_{ch['section_start']}"))
 
     # --- Chapter heading (from structure only) ---
     elements.append(
@@ -1124,12 +1228,37 @@ def build_pdf():
         print(f"  Ch {ch_idx}: §{s_start}–§{s_end} ({n_paras} ¶)  \"{readable}\"")
         elements.extend(_render_chapter(st, ch, para_lookup))
 
-    # ---- Observations ----
-    elements.extend(_render_observations(st, observations))
+    # Build — two passes: first to collect page numbers, second with TOC
+    print(f"\n  Pass 1: collecting page numbers ({len(elements)} flowables) ...")
+    _page_registry.clear()
+    doc.build(list(elements), onLaterPages=_page_footer)
 
-    # Build
-    print(f"\n  Building PDF ({len(elements)} flowables) ...")
-    doc.build(elements, onLaterPages=_page_footer)
+    print(f"  Pass 2: rebuilding with page numbers ...")
+    # Rebuild TOC with recorded page numbers
+    elements_pass2: list = []
+    elements_pass2.extend(_title_page(st))
+    elements_pass2.extend(_preface_pages(st))
+    elements_pass2.extend(_toc_page(st, structure))
+    current_part = None
+    for ch in chapters:
+        pn = ch["part_number"]
+        if pn != current_part:
+            current_part = pn
+            part = next(p for p in parts if p["part_number"] == pn)
+            elements_pass2.extend(_part_page(st, part))
+        elements_pass2.extend(_render_chapter(st, ch, para_lookup))
+
+    doc2 = SimpleDocTemplate(
+        str(OUTPUT),
+        pagesize=A4,
+        leftMargin=25 * mm,
+        rightMargin=25 * mm,
+        topMargin=20 * mm,
+        bottomMargin=20 * mm,
+        title="The Ancient Word \u2014 Recovered from the Kephalaia of the Teacher",
+        author="Manichaean Analysis Project",
+    )
+    doc2.build(elements_pass2, onLaterPages=_page_footer)
 
     size_kb = OUTPUT.stat().st_size / 1024
     print(f"  Saved to {OUTPUT}")
