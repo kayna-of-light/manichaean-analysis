@@ -623,7 +623,7 @@ def generate_spiritual_reading(
                 model=deployment,
                 system=_get_system_prompt(SPIRITUAL_READING_PROMPT),
                 messages=[{"role": "user", "content": user_msg}],
-                max_tokens=50000,
+                max_tokens=128_000,
                 thinking={"type": "adaptive"},
             ) as stream:
                 for event in stream:
@@ -924,7 +924,7 @@ def _stream_with_tools(
                 system=_get_system_prompt(RESTORATION_PROMPT),
                 messages=messages,
                 tools=[RESTORE_LACUNA_TOOL],
-                max_tokens=128000,
+                max_tokens=128_000,
                 thinking={"type": "adaptive"},
             ) as stream:
                 # Stream events for debug output (thinking)
