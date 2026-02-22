@@ -662,7 +662,7 @@ def _preface_pages(st: dict) -> list:
         "A body-cosmos isomorphism culminates in a soul-body binding "
         "formula. This is not scattered symbolic language. It is "
         "systematic correspondential architecture sustained across "
-        "886&nbsp;paragraphs.",
+        "934&nbsp;paragraphs.",
         ind,
     ))
 
@@ -680,7 +680,7 @@ def _preface_pages(st: dict) -> list:
         "ordering of the spiritual world, purification of mind, the "
         "architecture of influx, the formation of the human being, the "
         "correspondences of heaven and earth, and the dynamics of "
-        "spiritual life. The final vision (&sect;851&ndash;&sect;886) "
+        "spiritual life. The final vision (&sect;899&ndash;&sect;934) "
         "closes with three entreaties, the two fundamental essences, "
         "and the portals of divine conjunction. This is not a fragment. "
         "It is a complete text.",
@@ -805,7 +805,7 @@ def _preface_pages(st: dict) -> list:
         "criticism, with Claude Opus 4.6 &mdash; an advanced language "
         "model &mdash; serving as the primary analytical instrument. "
         "The entire <i>Kephalaia</i> corpus was read as a continuous "
-        "flow of 886 sequentially numbered paragraphs. Each passage "
+        "flow of 934 sequentially numbered paragraphs. Each passage "
         "was analyzed for editorial layering: separating the "
         "hagiographic frame (Layer&nbsp;3) from the Manichaean "
         "theological overlay (Layer&nbsp;2) and the ancient teaching "
@@ -813,7 +813,7 @@ def _preface_pages(st: dict) -> list:
         "would &mdash; attending to vocabulary shifts, structural seams, "
         "and correspondential consistency &mdash; but across the full "
         "corpus as a single sustained reading. The structure of this "
-        "book &mdash; its thirteen parts and fifty-two chapters &mdash; "
+        "book &mdash; its twelve parts and forty-four chapters &mdash; "
         "was not imposed from the manuscript&rsquo;s chapter divisions. "
         "It was discovered by reading the text as a single continuous "
         "teaching and identifying where the natural structural seams fall.",
@@ -904,7 +904,7 @@ def _preface_pages(st: dict) -> list:
     ))
 
     elements.append(Paragraph(
-        '<b>&ldquo;Saklas&rdquo;</b> (&sect;544) is Aramaic for &ldquo;fool&rdquo; '
+        '<b>&ldquo;Saklas&rdquo;</b> (&sect;592) is Aramaic for &ldquo;fool&rdquo; '
         '&mdash; a distinctly Gnostic/Sethian name for the malformed creator, '
         'imported from texts like the Apocryphon of John. The substrate likely '
         'used Persian demonological designations, possibly <i>Az</i> (the '
@@ -913,7 +913,30 @@ def _preface_pages(st: dict) -> list:
         ind,
     ))
     elements.append(Paragraph(
-        '<b>&ldquo;Holy Spirit&rdquo;</b> (&sect;379, &sect;569) overlays what '
+        '<b>&ldquo;Cross of Light&rdquo; / &ldquo;crucified&rdquo;</b> appears '
+        'in at least eleven passages (&sect;4, &sect;32, &sect;35, &sect;327, '
+        '&sect;394, &sect;571, &sect;640, &sect;694, &sect;703, &sect;771, '
+        '&sect;773), mapping Christian crucifixion vocabulary onto the substrate '
+        'concept of divine light scattered and bound within matter. The substrate '
+        'likely described this as the dispersion or captivity of luminous '
+        'elements &mdash; a concept native to Zoroastrian and Zurvanite cosmology '
+        'that required no crucifixion metaphor.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Matter&rdquo; / &ldquo;Hylē&rdquo;</b> appears throughout '
+        'as a personified feminine entity (&sect;31, &sect;33, &sect;35, '
+        '&sect;52, &sect;252, &sect;530), consistently paired with the '
+        'substrate epithet &ldquo;the thought of death.&rdquo; This is Greek '
+        'philosophical vocabulary '
+        '(ὕλη) replacing what was almost '
+        'certainly a Persian demonological name &mdash; probably <i>Āz</i> '
+        '(the demon of concupiscence) or <i>Jeh</i> (the demoness) from '
+        'Zurvanite tradition.',
+        ind,
+    ))
+    elements.append(Paragraph(
+        '<b>&ldquo;Holy Spirit&rdquo;</b> (&sect;427, &sect;617) overlays what '
         'was almost certainly <i>Spenta Mainyu</i> (Holy/Bounteous Spirit) '
         'from Zoroastrian theology &mdash; not identical to the Christian '
         'Third Person of the Trinity.',
