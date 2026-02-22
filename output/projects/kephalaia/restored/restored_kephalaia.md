@@ -7,8 +7,8 @@
 
 ---
 
-**Lacunae filled**: 1092
-**Unrestorable**: 289
+**Lacunae filled**: 1158
+**Unrestorable**: 308
 
 ## Chapter 0: Introduction
 
@@ -965,6 +965,104 @@
 ---
 
 ## Chapter 38: Concerning the Light Mind and the Apostles and the Saints
+
+**¶1** the Light Mi[nd] is this one who shall come and assume the saints. [For] He too is one among the gods [and] many gods are with him. [Now] [W]hen he enters withi[n the body of] the flesh and binds the ol[d ma]n with his five counsels, he [set]s his five [couns]els upon him in the five limbs [of his] body.
+
+**¶2** [So], no[w], where is he? In that the old man is chained in the body! For I see how rebellions arise there despite his bondage, from time to time.
+
+**¶3** If then he is a great God, unchanging and im/measurable, how could he come and appear in the smallness of the bo[dy]?
+
+**¶4** [Thirdly] a holy one is the Mind, and he is pure; [how shall he bear] the defilement of this body?
+
+**¶5** Fourthly: If truly the Light Mind exists in [the s]aints, why is his likeness not displayed to us, the way that he is?
+
+**¶11** All the error, when the en[e]my of the lights constructed it, he constructed after the likeness of a man. The head of the universe is the beginning of the garments. [H]is neck is the nape of the garm[ents]. His stomach is the five unfolded ones (?), which a[re the middle] of the garm[e]nts. His ribs are all the firmament[s]. His navel is the sphere of the stars and the signs of the zodiac. And, also, [the par]ts [that] come from his navel to his hip are [those] that come from the sphere t[o the corne]rs of the four worlds. His loins are the th[ree eart]hs that are below [and rest] upon the head of the Porter. His [thighs are] from the [loins] to the earth upon which the Porter [is stood] firm. His shins and his feet a[re the abysses below] and the entire zone that belongs [to them]
+
+**¶12** His heart is mankind. His liver is the four-footed animals. His lung is the race of birds that [fly in] the air. His spleen is the race of fish that swim in the waters. His kidneys are the world of reptiles that creep [up]on the earth. His outer skin is the wall that [... which] surrounds the piercing and the great fire. His [...] the vessels of the great fire. His [...] of darkness. His gall is the [... His] great intestine is the breadth of the great [sea] of the worlds. His veins [are] all [the spri]ngs and wells. His e[yes (?) ...] His feet are his [...]
+
+**¶13** This is how each of the worlds h[ave been ha]rmonised (?). Five gods are fastened in him. [For] they are his soul and his life [Yet the old] man is a sinner [But] the Living Spirit and the Ambassador [have appointed] the five sleepless guardians.
+
+**¶14** He has [placed] the Keeper of Splendour, the mind that is [set] in the wo[r]ld of the mind that is above. He has [set the] whole [host] of the powers of hea[ven that] are in [the camp] of the great King of Honour, [who is the thought that exists i]n the seventh firmament. He has humbled [...] also of the Adamant of Lig[h]t, who is the insight [that comes] from [above] he has given [...] because of lust [... He has] also appointed the King of Glory, who is the coun[sel and the] patience over the three images; that of wind, that of fire, and that of water. He has handed over to him the [powers that] do evilness. [He has also set] the Porter, who is the consideration [and] the wisdom in the [earth] which is below. He has made him [bear] the foundation [below the earths]
+
+**¶15** Furthermore: The Ambassador refined from them five intellectuals of life. Also, the summons and the obedience were situated there. Now, they made six sons of the Living Spirit, together with the six sons of the First Man!
+
+**¶16** Further: The Ambassador placed in them the great Mind; who is the Pillar of Glory, the Perfect Man.
+
+**¶17** Furthermore: Jesus the Youth was set there; who is the image of the living word, of the utterance and the obedience.
+
+**¶18** He has made strong these camps, those above and those below [in the world], (so that) each one of them will be secure in the circuit of his watch-district, so that neither uprising nor treachery are made in his watch-district.
+
+**¶19** And look, see! The Keeper of Splendour is set firm in the great mind, in the camp above the prison of the bound ones, for he brings to nothing all the gloom of death. An[d a] treachery came about, and an uprising! The Sin abor[te]d, [it t]angled in with the soul. It became mixed with this light that it expelled toward the image of the Ambassador. It went [up] in the third firmament that is above the watch-t[ower of] the Keeper of Splendour. From that place also it tangled in with the light. It was detached and came down to that which is dry and that which is moist. It [fashio]ned the trees [up]on the dry (land); but in the sea it immediat[ely] took form and made a great uprising in the sea.
+
+**¶20** Again, look, see! The great King of Honour, who is the thought, he is in the thi[r]d firmament. He is made [to contend] with wrath. And an uprising came about! A treachery and a[n] anger happened in his camp. The watchers of heaven, who came down to the earth in his watch-district, they did all the deeds of treachery. They have revealed crafts in the world and have unveiled to people the mysteries of heaven. An uprising came about, and a destruction, on the earth [... ] to it.
+
+**¶21** The Adamant [of Light, who is] the fulfillment. He is set firm upo[n the earth] and a treachery came about in his camp; the occasion when the abortions fell to the earth. They formed Adam and Eve. They begat them so as to reign through them in the world. They fashioned every object of lust upon the earth. The entire world was filled by their lust.
+
+**¶22** Once again: In the watch of the great King of Glory, wh[o] is the great counsel, he who exercises authority over the thre[e] wheels. A [dis]turbance came about, and an affliction, for [they were] pained and oppressed in the three earths. After the Ambassador displayed his image, the paths closed to their [springs, and] their ascent was impeded by them [...] the w[ind], the water, and the fire ascend on them.
+
+**¶23** [O]nce again: In the watch of the Porter, he who humiliates [the] uprising of the abysses below [the earth was] bent, the fastenings underneath were loosened [and shaken] in the foundation below.
+
+**¶24** On account of the earthquake that happened in the watch of the Keeper of Splen[dour], the Pillar of Glory came forth; as it [became the] helper of the Keeper of Splendour. It bore up under all [burden]s.
+
+**¶25** Conversely, because of the treachery and the uprising that happened in the watch of the great King of Honour, which is the watchers who came down to earth from the heavens; four angels were called upon about them. They bound the watche[r]s with an eternal chain, in the prison of the blackened ones (?). [Th]ey obliterated their children from upon the earth.
+
+**¶26** [Th]en, again, the abortions descended in the watch of the Adamant and begat Adam and Eve; because of that great treachery wh[ich] happened, and the mystery of wickedness, he sent Jesus [with] the prayer of the five sons. He assumed them [from] the abortions. He fastened them beneath the [...] the mind of Adam.
+
+**¶27** Also, because of the earthquake that happened in these three earths, and in that the paths were hindered and the springs of wind and water and fire were impeded, Jesus cast himself down. He assumed Eve; and he straightened the tracks of the [win]d, the water, and the fire. He opened the springs for them, and he set [in ord]er the path of their ascent.
+
+**¶28** Once [again]: Since the earth beneath the Porter was loose[ned from] the fastenings that [held it] because of this too Jesus went down, assuming [Ev]e until he reached tha[t] place. [H]e set in [or]der and stre[ng]th[ened] the fastenings beneath. He returned, [he came] up to his [place of] rest.
+
+**¶29** Look at all these watches of the zon[e], the ones in which these great gods are master, w[atch]ing over them [at all times]. Uprisings have happened, and treachery, in them. The [struggles arose] in them from time to time; with a great hum[iliati]on, until they humbled the powers of the enmity.
+
+**¶30** So also is this body! A mighty power lives here, even if it is small in its stature. Nevertheless, Sin dwells within, and the old man who is lodged in it. Certainly he is cruel, with great cunning; until the Lig/ht Mind finds how to humble this body, and drive it [according to] his pleasure.
+
+**¶31** Just so, in the w[atch-]districts of his great outer brothers, they who are masters in the zone: in them, in the great body, the earthquake and treachery happened from time to time. So, also, is the watch-district of the Mind, which is the body of the flesh. Sin raises [up], from time to time, its agitations in the body.
+
+**¶32** the powers of light are good. The beginning and the end are unveiled to them. All that they do is being done with correct judgement. Indeed, because of this they may permit the enmity to initiate error, and do its pleasure for a moment. Then they seize [it, for] they have acted first with a righteous judgement.
+
+**¶33** These gods, in that [they] are great and mighty ones. And each one of them is enclosed and hard pressed in this place wherein he is set; like trees holding to their taproot. So also this is how each one of them has held to his taproot in the world, according to the k[ind] of place in which he is set, bearing up till [the end]
+
+**¶34** the world is set firm, being ordered [by] the five sons of the Living Spirit in all its members [...]. Sin took this body out from [the] la[nd and co]nstructed it in its members. It took its [bod]y from the five bodies of Darkness. (Sin) constructed the body. Yet, its [sou]l i[t] took from the five shining gods.
+
+**¶35** (Sin) bound (the soul) in the five members of the body. It bound the mind in bone; the thought in sinew; the insight in vein; the counsel in flesh; the consideration in ski[n].
+
+**¶36** (Sin) set f[ast] its five powers: its mind upon the mind of the soul; its thought upon the thought of the soul; its insight upon the insight of the soul; its counsel upon the counsel of the soul; its consider[atio]n upon the consideration of the soul. It placed its five [an]gels and authorities upon the five members of the soul, which it had brought in and bound in the flesh.
+
+**¶37** (The soul) assumed error and forgetfulness. It for[go]t its essence and its race and its kindred; kn[ow]ing not the door of the place to pray to him, nor call up to him. It became hostile to its father [and against] itself, being wicked [against] its own light [...]
+
+**¶38** The Light Mind comes and finds the soul [...] it assuming it in the [...] its wisdom [...] he shall become for it [...] the bonds [...] members in the body. He shall loosen the m[ind of the soul and relea]se it from the bone. He shall release the th[ought of the soul] from the sinew; and s[o] bind the thought [of the Sin in] the sinew. He shall release the insight of the soul from the vei[n]; and so bind the insight of the Sin in the vein. [He sh]all loosen the counsel of the soul, and release it from the flesh; and so bind the counsel of the Sin in the flesh. He shall release the consideration of the soul from the skin; and bin[d] the consideration of the Sin in the skin.
+
+**¶39** This is how he shall release the members of the soul, and make them free from the five members of Sin. Conversely, these five members of Sin, which were loose, he shall bind them.
+
+**¶40** He shall set right the members of the soul; form and purify them, and construct a new man of them, a child of righteousness. [And] when [he] fashions and const[r]ucts and purifies the new man; then he shall bring forth five great living members out from the five great memb[ers]. And he places them in the members of the new man. He shall place his m[ind], which is love, in the mind of the new man. Also, the th[oug]ht, which is faith, he shall pl[ace in] the thought of the new man; whom he shall purify. His insight, which [is perfection, he shall place] in the insight of the new man. His counsel, which [is] patience, he shall place in his counsel. Also, [w]isdom, which is his consideration, in the consideration of the new m[an]. He shall make the image of the word pure from the word of Sin; and he adds to it his word, so that his [word] becomes nourisher and strengthener [...]
+
+**¶41** Now, when he shall perf[ect all the tw]elve members. This [is how ...] and his wisdom. His [word] becomes righteous, as he perf[ects him] While formerly he was running [in error] but instead of this, now he runs [upon] his road and his path and his [ascent] also [he mounts up] to the heights, to the great aeons [of light, and] thus the old man is bound in the [flesh] and his lust, his [wrath] his foolishness in these five members of the bo[dy, and] the dark spirit is imprisoned with them in a bond and in severe misery.
+
+**¶42** Also, the new man reigns by his love, by hi[s] faith, by his perfection, by his patience, and by his wisdom. Yet, his king [is] the Light Mind, he w[ho is] king over the totality. He re[igns] o[ver it according to] his pleasure. While the members [obey him], thus Sin is imprisoned. Still, the Light Mind is king, and an affliction may arise in the body from t[im]e to time.
+
+**¶43** There are occasions when Sin shall mount up with its foolishness; and it disturbs the consideration, and it clouds the wisdom and the understanding of the person. It causes truth to be split into doubt in him, and he utters some foo[li]sh words and some [wicked deeds]
+
+**¶45** Sin mount up again, another time, from the consideration to the counsel. It takes his patience f[rom him], and bestows upon him faint-heartedness and hurt. [...] A battle and a war shall arise (between) the Light Mind and the Sin in the counsel [...]
+
+**¶46** Sin shall rise [up to his insight] and clothe him with lust and vanity and pride.
+
+**¶47** Sin shall mount up, the thought of death, to his thought. He shall [conceive] a vanity; and causes his f[ai]th and his truth to le[a]ve him.
+
+**¶49** (Sin) shall rise up and assume his mind; and disturb his mind, which formerly was calm. It shall disrupt his love
+
+**¶50** The Mind, who was in him, sh[a]ll disperse from him [and depart] He shall be filled by evil spirits; and they deal with [him], dragging [hi]m hither and thither. [...] [He] will change and become as if a b[i]rd, were its feathers plucked out. He becomes an earthly man.
+
+**¶52** So al[so] these watch-keepers, for they are set [fast and] fi[rm in] the zone, (but) they are not visible. Again, this too is the way of the Light Mind, [for he is] not visible in the body.
+
+**¶53** Also, [corr]esponding to th[ese] outer [watch-keepers]: in that while they are great, [y]et have they contorted themselves. They have [humbled themselves], they have become small, to the measure of the task that is apportioned to each o[n]e [of t]hem. Again, this too is like the Mind, himse[lf] a great one, and exalted; but he is bent over and [has] become small, to this little worthless [bo]dy.
+
+**¶54** [Even so] the gods in the outer [z]one: they are transcendent and purified, they are set [f]a[st in] the mingling of the totality, (but) are not defiled. [This too is like the] Light [Mind]. While he is placed in hi[s body, he is not defiled]
+
+**¶55** Again, behold the mightiness and the activity of the Light Mind: how vast he is over all the watch-districts of the body! He stays fast at his camp. He shuts off all deliberations of the body from the beguilements of Sin. He limits them and distributes them out. He sets them down at his pleasure.
+
+**¶56** Also, he does another work, surpassing and ex/ceeding (these). He bestows a great spirit upon the ele/ct one. Indeed, now may you find him, as he stands on the earth, [r]ising up in his heart and ascending to the Father, the G[o]d of truth. He who exists and is established above all the things of loss. [Onc]e again, he may push dow[n] in his insight and his consideration, and descend to the land of Darkness, from where the Darkness has poured forth. His heart shall run and touch everything, as it [pleases]
+
+**Assessment:** 66 restored, 17 already filled, 24 editorial reviewed (24 confirmed, 0 corrected), 19 unfilled gaps
 
 ---
 
