@@ -974,7 +974,7 @@ def extract_core(
                 system=system_prompt or SYSTEM_PROMPT,
                 messages=[{"role": "user", "content": user_msg}],
                 tools=[tool_schema or EXTRACT_CORE_TOOL],
-                max_tokens=32_000,
+                max_tokens=128_000,
                 thinking={"type": "adaptive"},
             ) as stream:
                 for event in stream:
