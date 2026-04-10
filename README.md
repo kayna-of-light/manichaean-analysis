@@ -2,6 +2,17 @@
 
 Reading the Manichaean texts through the correspondential lens — the same methodology applied to the [Nag Hammadi Library](https://github.com/kayna-of-light/NagHammadiLibrary).
 
+## Companion Repositories
+
+This project is part of a multi-repository research framework:
+
+| Repository | Purpose |
+|---|---|
+| **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage — research collection and synthesis across multiple channels, documenting what the data shows and how it connects |
+| **[structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)** | Empirical data analysis — NDE phenomenology, past-life memory, MallWorld dream data |
+| **[nag-hammadi-analysis](https://github.com/kayna-of-light/NagHammadiLibrary)** | Correspondential reading of the complete Nag Hammadi Library |
+| **[proto-luke-reconstruction](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
+
 ## Why Manichaeism?
 
 Mani (216–274 CE) explicitly synthesized Zoroaster, Buddha, and Jesus — claiming to complete their "partial truths" in a universal religion. The Manichaean tradition is the **only historical religion to have been officially adopted by the Uyghur Khaganate** (762/763 CE), placing its scriptures physically in the cave libraries of "Great Tartary" — the Turfan/Turpan region that Swedenborg described as preserving the Ancient Word.
