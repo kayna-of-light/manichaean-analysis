@@ -26,7 +26,7 @@ Mani (216–274 CE) is the critical bridge figure. Born into an Elcesaite (Jewis
 
 | Repository | Purpose |
 |---|---|
-| **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage framework — knowledge graph, source documents |
+| **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage framework — research collection, synthesis, and source documents |
 | **[structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)** | Empirical data analysis — NDE, past-life memory, MallWorld |
 | **[NagHammadiLibrary](https://github.com/kayna-of-light/NagHammadiLibrary)** | NHL correspondential reading project |
 | **[ProtoLuke](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
