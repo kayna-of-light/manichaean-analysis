@@ -415,6 +415,8 @@ manichaean-analysis/
 ├── data/                            # Source PDFs + OCR JSON
 ├── output/
 │   ├── texts/                      # Stage 0: raw markdown
+│   ├── kephalaia_pages/            # Coptic page images (JPEG, from PDF)
+│   ├── kephalaia_coptic/           # Coptic transcription output (pass1, pass2, JSON)
 │   └── projects/
 │       ├── kephalaia/
 │       │   ├── cleaned/chapters/   # Stage 1: cleaned JSONs
@@ -436,6 +438,9 @@ manichaean-analysis/
 │   ├── stage_6_review.py            # Stage 6: corpus-wide review
 │   ├── stage_7_correct.py           # Stage 7: apply corrections
 │   ├── stage_8_compose.py           # Stage 8: structural composition
+│   ├── extract_kephalaia_pages.py  # Coptic page extraction (PDF → JPEG)
+│   ├── transcribe_coptic.py        # Coptic transcription v1 (single-pass)
+│   ├── transcribe_coptic_v2.py     # Coptic transcription v2 (two-pass pipeline)
 │   ├── project_config.py           # Project configuration system
 │   ├── projects/
 │   │   ├── kephalaia/
@@ -447,6 +452,8 @@ manichaean-analysis/
 │   └── tools/
 │       └── corpus_base.py          # Shared base class for corpus-level analysis
 ├── findings/                        # Correspondential findings (YAML)
+├── docs/
+│   └── COPTIC_TRANSCRIPTION.md     # Coptic pipeline technical documentation
 ├── cache/                           # Build cache
 ├── secrets/                         # API credentials (gitignored)
 │   └── azure_openai.env            # Azure OpenAI + Anthropic credentials
@@ -485,6 +492,91 @@ python scripts/scrape_gnosis.py --category parthian_hymns
 python scripts/scrape_gnosis.py --list-categories
 python scripts/scrape_gnosis.py --dry-run
 ```
+
+---
+
+## Coptic Transcription Pipeline
+
+In addition to Gardner's English translation (which feeds the main analysis pipeline), the repo includes an end-to-end pipeline for transcribing the **original Coptic text** from the Polotsky/Böhlig 1940 critical edition PDF.
+
+**Source**: `data/Kephalaia -- Mani...Stuttgart.pdf` (522 PDF pages, ~235 Coptic pages at odd indices 49-517)
+
+### Why the Coptic
+
+The English translation is a lossy projection. The Coptic preserves what English cannot show: morphological structure, Lycopolitan dialect forms, grammatical particles, prefix/suffix constructions, and the exact Greek loanwords that signal the teaching's transmission path. The Coptic is the evidence; the English is commentary on the evidence.
+
+### Architecture: Two-Pass OCR
+
+The pipeline uses Claude Opus 4.6 vision to transcribe printed Coptic, with a two-pass architecture that prevents confirmation bias while maximizing accuracy:
+
+```
+PDF page ──→ JPEG extraction ──→ Pass 1 (blind) ──→ Pass 2 (validated) ──→ final text
+                                      │                     ▲
+                                      │                     │
+                                      │         English translation
+                                      │         (auto-extracted from Gardner)
+                                      │                     │
+                                      └─────────────────────┘
+```
+
+**Pass 1 — Blind Extraction**: The page image is sent to Claude with full Coptic philological expertise (Lycopolitan dialect awareness, Unicode letter guidance, editorial mark preservation) but **no English translation**. This prevents the model from reading what it expects to see rather than what is actually printed.
+
+**Pass 2 — English-Guided Validation**: The same page image is sent again along with the Pass 1 output and the corresponding English translation (auto-extracted from Gardner). The English serves as a "red thread" — it tells the model what each line *means*, so it can identify character-level errors in the Coptic. Where the English says "apostle," the model checks that ⲁⲡⲟⲥⲧⲟⲗⲟⲥ is spelled correctly. Where it says "flesh," it verifies ⲥⲁⲣⲝ has the right ⲝ. But the English is the guide, not the goal — Coptic morphology, dialect forms, and grammatical constructions that have no English equivalent are preserved exactly.
+
+### Auto-English Extraction
+
+Gardner's translation contains inline `(N)` page markers for all 235 Coptic pages (10-244). The pipeline automatically extracts the corresponding English section for each page using regex matching — no manual alignment needed. This means the pipeline can run at full scale with `--pages all`.
+
+### Usage
+
+```bash
+# Activate the environment:
+conda activate nhl
+
+# Single page (extracts from PDF, auto-selects English):
+python scripts/transcribe_coptic_v2.py --pages 12
+
+# Page range:
+python scripts/transcribe_coptic_v2.py --pages 10-20
+
+# All 235 Coptic pages:
+python scripts/transcribe_coptic_v2.py --pages all
+
+# Resume interrupted batch (skips completed pages):
+python scripts/transcribe_coptic_v2.py --pages all --skip-existing
+
+# Reuse pass1 output (e.g. after prompt refinement):
+python scripts/transcribe_coptic_v2.py --pages 12 --reuse-pass1
+
+# From pre-extracted image (backward compat):
+python scripts/transcribe_coptic_v2.py --image output/kephalaia_pages/keph_p012.jpg
+```
+
+### Output
+
+Per page, the pipeline produces:
+
+| File | Content |
+|---|---|
+| `keph_pNNN_pass1.txt` | Pass 1 blind extraction (Coptic Unicode text) |
+| `keph_pNNN_pass2.txt` | Pass 2 corrected transcription (final result) |
+| `keph_pNNN_twopass.json` | Combined JSON with both passes, metadata, English text, token counts |
+
+All output goes to `output/kephalaia_coptic/`. Page images are cached in `output/kephalaia_pages/`.
+
+### Performance
+
+Per page: ~75s Pass 1 + ~45s Pass 2 = ~2 minutes total. Full corpus (~235 pages): ~8 hours.
+
+Pass 2 typically corrects 30-40% of lines, fixing proper names (ⲁⲇⲁⲙ, ⲥⲏⲑⲏⲗ, ⲃⲟⲩⲇⲇⲁⲥ, ⲍⲁⲣⲁⲑⲟⲩⲥⲧⲣⲁ), Greek loanwords (ⲥⲁⲣⲝ, ⲁⲡⲟⲥⲧⲟⲗⲟⲥ, ⲥⲁⲧⲁⲛⲁⲥ), and visually ambiguous letterforms.
+
+### Known Limitations
+
+- **Lycopolitan letter**: The dialect-specific letter (resembling a numeral 6) is still rendered inconsistently across pages. The model has no stable Unicode target for it.
+- **Supralinear strokes**: Combining overline (U+0305) placement is sometimes missed or inconsistent.
+- **No ground truth**: Without a published digital Coptic text, accuracy can only be validated against the image + English translation.
+
+See [docs/COPTIC_TRANSCRIPTION.md](docs/COPTIC_TRANSCRIPTION.md) for detailed technical documentation.
 
 ## Companion Repositories
 
