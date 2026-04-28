@@ -6,13 +6,13 @@ edition text (Polotsky/Böhlig 1940) rather than handwritten manuscript.
 
 Usage:
     # Transcribe a single page:
-    python scripts/transcribe_coptic.py --image output/kephalaia_pages/keph_p010.jpg
+    python scripts/transcribe_coptic.py --image output/projects/kephalaia/coptic/images/keph_p010.jpg
 
     # Transcribe a range of pages:
     python scripts/transcribe_coptic.py --pages 10-15
 
     # Lower effort for quick test:
-    python scripts/transcribe_coptic.py --image output/kephalaia_pages/keph_p010.jpg --effort high
+    python scripts/transcribe_coptic.py --image output/projects/kephalaia/coptic/images/keph_p010.jpg --effort high
 """
 
 import argparse
@@ -29,8 +29,8 @@ from dotenv import dotenv_values
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SECRETS_PATH = REPO_ROOT / "secrets" / "azure_openai.env"
-PAGES_DIR = REPO_ROOT / "output" / "kephalaia_pages"
-OUTPUT_DIR = REPO_ROOT / "output" / "kephalaia_coptic"
+PAGES_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "coptic" / "images"
+OUTPUT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "coptic" / "transcriptions"
 TEMP_DIR = REPO_ROOT / "temp"
 
 # ── Prompts optimized for PRINTED Coptic ──────────────────────────────────────

@@ -22,7 +22,7 @@ Usage:
     python scripts/transcribe_coptic_v2.py --pages all --concurrency 12 --skip-existing
 
     # From pre-extracted image (backward compat):
-    python scripts/transcribe_coptic_v2.py --image output/kephalaia_pages/keph_p012.jpg
+    python scripts/transcribe_coptic_v2.py --image output/projects/kephalaia/coptic/images/keph_p012.jpg
 
     # Reuse existing pass1 output:
     python scripts/transcribe_coptic_v2.py --pages 12 --reuse-pass1
@@ -49,8 +49,8 @@ from dotenv import dotenv_values
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SECRETS_PATH = REPO_ROOT / "secrets" / "azure_openai.env"
 DATA_DIR = REPO_ROOT / "data"
-PAGES_DIR = REPO_ROOT / "output" / "kephalaia_pages"
-OUTPUT_DIR = REPO_ROOT / "output" / "kephalaia_coptic"
+PAGES_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "coptic" / "images"
+OUTPUT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "coptic" / "transcriptions"
 GARDNER_PATH = REPO_ROOT / "output" / "texts" / "Kephalaia_of_the_Teacher.md"
 
 # PDF page mapping
