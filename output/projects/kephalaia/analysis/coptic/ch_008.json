@@ -1,0 +1,92 @@
+{
+  "chapter_number": 8,
+  "manuscript_pages": "36,27 - 37,27",
+  "coptic_tokens": 459,
+  "greek_loanwords": {
+    "total_density_pct": 3.92,
+    "cosmological_density_pct": 1.74,
+    "ecclesiastical_density_pct": 1.53,
+    "cosmological_ratio": 0.533,
+    "cosmological_count": 8,
+    "ecclesiastical_count": 7,
+    "general_count": 3,
+    "total_greek": 18,
+    "cosmological_words": {
+      "ⲛⲟⲩⲥ": 1,
+      "ⲙⲟⲣⲫⲏ": 3,
+      "ⲕⲟⲥⲙⲟⲥ": 4
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 2,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 24,
+    "sahidic_count": 50,
+    "total_dialect_markers": 74,
+    "subachmimic_ratio": 0.324,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×1",
+      "ⲁⲍ×12",
+      "ⲍⲓ×4",
+      "ⲍⲁ×1",
+      "ⲍⲏⲧ×2",
+      "ⲍⲉ×3"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×4",
+      "ϩⲛ̄×2",
+      "ⲁϩ×26",
+      "ϩⲁ×5",
+      "ϩⲏⲧ×6",
+      "ϩⲉ×5"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 76,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 2,
+    "bracketed_restorations": 24,
+    "empty_brackets": 2,
+    "leer_markers": 0
+  },
+  "english_classification": {
+    "chapter_number": 8,
+    "chapter_title": "Concerning the Fourteen Vehicles that Jesus has boarded",
+    "total_paragraphs": 10,
+    "core_paragraphs": 7,
+    "core_percentage": 50.6,
+    "chapter_note": "Clear two-part structure: paragraphs 2-8 contain a systematic ten-vehicle cosmic descent teaching (the substrate core), while paragraphs 9-10 are later editorial additions extending the pattern to institutional content and closing with a beatitude. The ten vehicles map a coherent cosmological descent sequence: from the light ship and Ambassador, through the ship of the First Man and Pillar of Glory, through the Call and Answer (summons/obedience), and finally through the five light elements (air, wind, light, water, fire). Gardner notes this reverses the ascent order familiar from Ch. 71, confirming its systematic character. The editorial seam at paragraph 9 is textbook: 'After he had assumed these ten, he came and manifested in the flesh. He chose the holy church in four vehicles.' — the editor mimics the enumeration pattern but applies it to Manichaean community categories. Editorial fatigue data strongly supports this division.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "substrate": 7,
+      "institutional": 1,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.32 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

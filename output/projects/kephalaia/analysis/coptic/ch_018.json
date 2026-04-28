@@ -1,0 +1,90 @@
+{
+  "chapter_number": 18,
+  "manuscript_pages": "(58,1 - 60,12)",
+  "coptic_tokens": 484,
+  "greek_loanwords": {
+    "total_density_pct": 1.45,
+    "cosmological_density_pct": 0.62,
+    "ecclesiastical_density_pct": 0.41,
+    "cosmological_ratio": 0.6,
+    "cosmological_count": 3,
+    "ecclesiastical_count": 2,
+    "general_count": 2,
+    "total_greek": 7,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 3
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 1,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 47,
+    "sahidic_count": 63,
+    "total_dialect_markers": 110,
+    "subachmimic_ratio": 0.427,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×4",
+      "ⲍⲛ×13",
+      "ⲍⲛ̄×11",
+      "ⲁⲍ×7",
+      "ⲍⲓ×1",
+      "ⲍⲁ×5",
+      "ⲍⲏⲧ×1",
+      "ⲍⲉ×5"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×3",
+      "ϩⲛ̄×2",
+      "ⲁϩ×35",
+      "ϩⲓ×3",
+      "ϩⲁ×5",
+      "ϩⲏⲧ×4",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×10"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 106,
+    "damaged_lines": 4,
+    "lacunae_density": 0.038,
+    "dot_sequences": 108,
+    "bracketed_restorations": 140,
+    "empty_brackets": 18,
+    "leer_markers": 5
+  },
+  "english_classification": {
+    "chapter_number": 18,
+    "chapter_title": "[Concerning the Five] War[s that the] Sons of [Li]ght waged with the Sons] of Darkness.",
+    "total_paragraphs": 9,
+    "core_paragraphs": 7,
+    "core_percentage": 86,
+    "chapter_note": "The oldest teaching layer is strongly dominant. This chapter preserves a systematic five-fold enumeration mapping five cosmic wars to five principal divinities (First Man, Living Spirit, Third Ambassador, Jesus the Splendour, Counsel of Life). The structure is complete and self-contained. Teaching purity is very high (0.842) with minimal editorial fatigue (0.09). The only significant editorial intrusions are: (1) the dialogue frame formula in ¶1, (2) a Gospel citation appended to the first war in ¶2 ('As the saviour has said...'), and (3) a beatitude/exhortation closure in ¶¶8-9. The five-fold enumeration with its systematic cosmic agents, cosmic actions, and cosmic outcomes is classic substrate. Heavy lacunae throughout (especially ¶¶4-5, 7) but the preserved skeleton is clearly correspondential-cosmological.",
+    "classification_distribution": {
+      "mixed": 2,
+      "substrate": 5,
+      "exhortation": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (86%) with high cosmological Greek ratio (0.60)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.43 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

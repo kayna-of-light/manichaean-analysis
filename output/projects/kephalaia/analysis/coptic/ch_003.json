@@ -1,0 +1,96 @@
+{
+  "chapter_number": 3,
+  "manuscript_pages": "23,14 - 25,6",
+  "coptic_tokens": 561,
+  "greek_loanwords": {
+    "total_density_pct": 2.67,
+    "cosmological_density_pct": 0.71,
+    "ecclesiastical_density_pct": 1.96,
+    "cosmological_ratio": 0.267,
+    "cosmological_count": 4,
+    "ecclesiastical_count": 11,
+    "general_count": 0,
+    "total_greek": 15,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 2,
+      "ⲁⲓⲱⲛ": 1,
+      "ⲛⲟⲩⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 4,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲁⲣⲭⲏⲅⲟⲥ": 1,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 73,
+    "sahidic_count": 10,
+    "total_dialect_markers": 83,
+    "subachmimic_ratio": 0.88,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×13",
+      "ⲍⲛ̄×4",
+      "ⲁⲍ×27",
+      "ⲍⲓ×2",
+      "ⲍⲁ×7",
+      "ⲍⲏⲧ×3",
+      "ⲍⲱⲃ×3",
+      "ⲍⲣⲏ×3",
+      "ⲍⲉ×8"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×2",
+      "ⲁϩ×5",
+      "ϩⲁ×2",
+      "ϩⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 108,
+    "damaged_lines": 2,
+    "lacunae_density": 0.019,
+    "dot_sequences": 70,
+    "bracketed_restorations": 118,
+    "empty_brackets": 15,
+    "leer_markers": 10
+  },
+  "english_classification": {
+    "chapter_number": 3,
+    "chapter_title": "The Interpretation of Happiness, Wisdom and Power; what they signify.",
+    "total_paragraphs": 10,
+    "core_paragraphs": 5,
+    "core_percentage": 55,
+    "chapter_note": "The oldest teaching layer is a four-fold descending iteration mapping happiness, wisdom, and power to cosmic beings at four levels: (1) the Father/land of light, (2) the sun ship, (3) the moon ship, (4) the elements. Each iteration follows the same triadic structure (happiness=sovereign being, wisdom=cognitive/generative being, power=the gods/angels at that level). This is pure cosmos→cosmos mapping. An editor extended this to a fifth level (the holy church, ¶9) by mimicking the pattern syntax — detected by bridge connective 'Now, moreover' and institutional vocabulary. The chapter's editorial fatigue score confirms significant institutional drift in the second half (+4.77). The summary in ¶10 integrates the editorial extension ('five churches') and closes with a beatitude. Paragraphs 1-4 are frame/setup with the topic question in ¶2 being substantive.",
+    "classification_distribution": {
+      "dialogue_frame": 2,
+      "mixed": 1,
+      "editorial_bridge": 1,
+      "substrate": 4,
+      "institutional": 1,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "DIALECT CONSISTENT: Sub-Achmimic ratio 0.88 — consistent with the original manuscript dialect"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

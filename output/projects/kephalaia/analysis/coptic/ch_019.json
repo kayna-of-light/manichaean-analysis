@@ -1,0 +1,108 @@
+{
+  "chapter_number": 19,
+  "manuscript_pages": "60,13 - 63,18",
+  "coptic_tokens": 531,
+  "greek_loanwords": {
+    "total_density_pct": 2.45,
+    "cosmological_density_pct": 0.94,
+    "ecclesiastical_density_pct": 0.75,
+    "cosmological_ratio": 0.556,
+    "cosmological_count": 5,
+    "ecclesiastical_count": 4,
+    "general_count": 4,
+    "total_greek": 13,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 3,
+      "ⲯⲩⲭⲏ": 1,
+      "ⲟⲩⲥⲓⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.38,
+    "dialogue_openings": 1,
+    "disciple_questions": 1,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 37,
+    "sahidic_count": 49,
+    "total_dialect_markers": 86,
+    "subachmimic_ratio": 0.43,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×3",
+      "ⲍⲛ̄×2",
+      "ⲁⲍ×16",
+      "ⲍⲓ×3",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×3",
+      "ⲍⲱⲃ×1",
+      "ⲍⲉ×2",
+      "ⲍⲁⲉ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×1",
+      "ϩⲛ×2",
+      "ϩⲛ̄×1",
+      "ⲁϩ×26",
+      "ϩⲓ×3",
+      "ϩⲁ×3",
+      "ϩⲏⲧ×1",
+      "ϩⲣⲏ×4",
+      "ϩⲉ×7",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 142,
+    "damaged_lines": 14,
+    "lacunae_density": 0.099,
+    "dot_sequences": 149,
+    "bracketed_restorations": 152,
+    "empty_brackets": 32,
+    "leer_markers": 13
+  },
+  "english_classification": {
+    "chapter_number": 19,
+    "chapter_title": "Concerning the Five Releases: what they are",
+    "total_paragraphs": 13,
+    "core_paragraphs": 12,
+    "core_percentage": 92,
+    "chapter_note": "Oldest teaching layer strongly dominant. Teaching purity 0.950, one of the highest in the corpus. The chapter is a systematic five-fold enumeration of cosmic 'releases' corresponding to the five wars of Ch.18. Near-zero editorial fatigue — the substrate character holds from beginning to end. Only two editorial interventions: the dialogue frame opening and the beatitude closure. One institutional insertion ('all the churches' in ¶6). The heavy lacunae, especially in ¶¶4, 8, 10-11, obscure the teaching but do not affect its character. The five-fold structure (First Man, Living Spirit, Third Ambassador, Jesus the Splendour, Counsel of Life/Summons and Obedience) is a complete cosmic salvation sequence. The Phil. 2 parallel noted in footnotes concerns Jesus the Splendour's descent — the concept (cosmic figure descending through forms) is substrate; the Coptic translator's vocabulary may echo NT language.",
+    "classification_distribution": {
+      "mixed": 2,
+      "substrate": 10,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (92%) with high cosmological Greek ratio (0.56)"
+    ],
+    "discordance_flags": [
+      "DISCORDANT: Coptic has 1 dialogue opening(s) but English classified 0 paragraphs as dialogue_frame",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.43 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 2
+  }
+}

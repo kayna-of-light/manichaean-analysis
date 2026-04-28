@@ -1,0 +1,94 @@
+{
+  "chapter_number": 16,
+  "manuscript_pages": "49,10 - 55,15",
+  "coptic_tokens": 1395,
+  "greek_loanwords": {
+    "total_density_pct": 1.65,
+    "cosmological_density_pct": 0.07,
+    "ecclesiastical_density_pct": 0.29,
+    "cosmological_ratio": 0.2,
+    "cosmological_count": 1,
+    "ecclesiastical_count": 4,
+    "general_count": 18,
+    "total_greek": 23,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 2,
+      "ⲫⲱⲥⲧⲏⲣ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 131,
+    "sahidic_count": 159,
+    "total_dialect_markers": 290,
+    "subachmimic_ratio": 0.452,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×31",
+      "ⲍⲛ̄×21",
+      "ⲁⲍ×32",
+      "ⲍⲓ×2",
+      "ⲍⲁ×7",
+      "ⲍⲏⲧ×9",
+      "ⲍⲣⲏ×6",
+      "ⲍⲉ×22"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×7",
+      "ϩⲛ×29",
+      "ϩⲛ̄×14",
+      "ⲁϩ×48",
+      "ϩⲓ×2",
+      "ϩⲁ×19",
+      "ϩⲏⲧ×6",
+      "ϩⲣⲏ×4",
+      "ϩⲉ×24",
+      "ϩⲁⲉ×3",
+      "ϩⲁⲏ×3"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 252,
+    "damaged_lines": 6,
+    "lacunae_density": 0.024,
+    "dot_sequences": 101,
+    "bracketed_restorations": 280,
+    "empty_brackets": 32,
+    "leer_markers": 17
+  },
+  "english_classification": {
+    "chapter_number": 16,
+    "chapter_title": "[Concerning the Five] Greatnesses who [went forth] against the Darkness.",
+    "total_paragraphs": 30,
+    "core_paragraphs": 29,
+    "core_percentage": 97,
+    "chapter_note": "The oldest teaching layer is overwhelmingly dominant. The chapter consists of two linked but potentially independent teachings: (1) a five-fold enumeration of the greatnesses (¶2-9) with systematic emanation hierarchy, and (2) five advent similes with cosmic interpretation (¶10-29). Gardner notes the second section is 'in effect a separate and unrelated kephalaion.' The similes use natural correspondences (noble son, judge, king inspecting craftsmen, fig-garden, butter in milk) to map cosmic processes — classic correspondential teaching method where both sides stay within the system. Only the opening dialogue formula (¶1) and closing beatitude (¶30) are clearly later layers. The 'Now, just as' formulas in ¶15 and ¶21 are simile-completion structures integral to the teaching, not editorial seams — they map analogy→cosmic entity with no institutional content. Gardner's note that Jesus the Splendour as fifth greatness 'may be a later development' is worth noting but at the textual level ¶7 follows the same enumeration pattern as ¶2-6.",
+    "classification_distribution": {
+      "mixed": 2,
+      "substrate": 27,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: High substrate (97%) but low cosmological Greek (0.20) — Coptic suggests more institutional register than English classification indicates",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.45 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 2
+  }
+}

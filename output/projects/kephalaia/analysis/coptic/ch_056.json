@@ -1,0 +1,115 @@
+{
+  "chapter_number": 56,
+  "manuscript_pages": "137,12 - 144,12",
+  "coptic_tokens": 1682,
+  "greek_loanwords": {
+    "total_density_pct": 3.92,
+    "cosmological_density_pct": 1.66,
+    "ecclesiastical_density_pct": 0.83,
+    "cosmological_ratio": 0.667,
+    "cosmological_count": 28,
+    "ecclesiastical_count": 14,
+    "general_count": 24,
+    "total_greek": 66,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 3,
+      "ⲫⲩⲥⲓⲥ": 1,
+      "ⲟⲩⲥⲓⲁ": 1,
+      "ϩⲩⲗⲏ": 1,
+      "ⲉⲛⲉⲣⲅⲓⲁ": 2,
+      "ⲉⲛⲉⲣⲅⲉⲓⲁ": 1,
+      "ⲥⲱⲙⲁ": 14,
+      "ⲛⲟⲩⲥ": 5
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 6,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 3,
+      "ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ": 2,
+      "ⲁⲓⲕⲁⲓⲟⲥⲩⲛⲏ": 3
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.12,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 2,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲗⲟⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 128,
+    "sahidic_count": 185,
+    "total_dialect_markers": 313,
+    "subachmimic_ratio": 0.409,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×6",
+      "ⲍⲛ×29",
+      "ⲍⲛ̄×14",
+      "ⲁⲍ×37",
+      "ⲍⲓ×10",
+      "ⲍⲁ×7",
+      "ⲍⲏⲧ×15",
+      "ⲍⲱⲃ×4",
+      "ⲍⲉ×5",
+      "ⲍⲁⲉ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×6",
+      "ϩⲛ×19",
+      "ϩⲛ̄×16",
+      "ⲁϩ×79",
+      "ϩⲓ×28",
+      "ϩⲁ×10",
+      "ϩⲏⲧ×5",
+      "ϩⲱⲃ×2",
+      "ϩⲣⲏ×2",
+      "ϩⲉ×17",
+      "ϩⲁⲏ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 273,
+    "damaged_lines": 3,
+    "lacunae_density": 0.011,
+    "dot_sequences": 37,
+    "bracketed_restorations": 157,
+    "empty_brackets": 11,
+    "leer_markers": 20
+  },
+  "english_classification": {
+    "chapter_number": 56,
+    "chapter_title": "[Concerning Saklas and his Powers]",
+    "total_paragraphs": 29,
+    "core_paragraphs": 26,
+    "core_percentage": 80,
+    "chapter_note": "This chapter contains a strong, dominant substrate layer organized around two major teaching units: (1) the transmission of the Ambassador's image through Sin/Matter to the rulers who shaped Adam and Eve (¶1-4), and (2) the faculty-storehouse system of the body (¶6-24, 27-28), which is one of the most systematic body-cosmos correspondences in the Kephalaia. The faculty-storehouse teaching maps five senses to five faculties, each with internal storehouses and repositories, governed by the heart-faculty. This is followed by a gates/watchmen correspondence mapping body orifices to a fortified camp. The Light Mind's entry and transformation of the body's systems completes the cosmological architecture. Editorial additions are light: dialogue frame attributions (easily stripped), one pedagogical summary closure (¶5), one editorial bridge applying the transformation teaching to institutional Manichaean worship practices (¶26), and a final exhortation (¶29). The chapter shows mild editorial fatigue in ¶25-26 where worldly examples and institutional vocabulary enter the application of the faculty transformation. Gardner notes the unusual shift from 'Light Mind' to 'Holy Spirit' terminology in ¶28.",
+    "classification_distribution": {
+      "mixed": 7,
+      "substrate": 19,
+      "dialogue_frame": 1,
+      "editorial_bridge": 1,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (80%) with high cosmological Greek ratio (0.67)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.41 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

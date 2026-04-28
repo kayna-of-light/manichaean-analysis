@@ -1,0 +1,85 @@
+{
+  "chapter_number": 51,
+  "manuscript_pages": "126,30 - 127,23",
+  "coptic_tokens": 423,
+  "greek_loanwords": {
+    "total_density_pct": 1.65,
+    "cosmological_density_pct": 0.47,
+    "ecclesiastical_density_pct": 0.47,
+    "cosmological_ratio": 0.5,
+    "cosmological_count": 2,
+    "ecclesiastical_count": 2,
+    "general_count": 3,
+    "total_greek": 7,
+    "cosmological_words": {
+      "ⲧⲩⲡⲟⲥ": 1,
+      "ⲕⲟⲥⲙⲟⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 16,
+    "sahidic_count": 38,
+    "total_dialect_markers": 54,
+    "subachmimic_ratio": 0.296,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×5",
+      "ⲍⲛ̄×2",
+      "ⲁⲍ×6",
+      "ⲍⲏⲧ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×1",
+      "ϩⲛ×6",
+      "ϩⲛ̄×4",
+      "ⲁϩ×20",
+      "ϩⲓ×1",
+      "ϩⲏⲧ×2",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 71,
+    "damaged_lines": 2,
+    "lacunae_density": 0.028,
+    "dot_sequences": 22,
+    "bracketed_restorations": 59,
+    "empty_brackets": 9,
+    "leer_markers": 8
+  },
+  "english_classification": {
+    "chapter_number": 51,
+    "chapter_title": "Concerning the First Man",
+    "total_paragraphs": 5,
+    "core_paragraphs": 4,
+    "core_percentage": 97,
+    "chapter_note": "Remarkably clean substrate chapter. Teaching purity 1.000 with zero editorial fatigue and zero scores for editorial_bridge, institutional, or exhortation across all paragraphs. The entire chapter (minus the one-line dialogue frame opening) is systematic cosmological teaching about the First Man's five garments (fire, wind, water, light, air) and their cosmic roles in the battle with Darkness. Both sides of every mapping stay within the cosmic system throughout. The five-element nomenclature and the process of mixture/wounding are core substrate features. The text is heavily lacunose but the teaching structure is clear.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "substrate": 4
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (97%) with high cosmological Greek ratio (0.50)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.30 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "chapter_number": 105,
+  "manuscript_pages": "258,26 - 259,23",
+  "coptic_tokens": 417,
+  "greek_loanwords": {
+    "total_density_pct": 2.64,
+    "cosmological_density_pct": 1.92,
+    "ecclesiastical_density_pct": 0.0,
+    "cosmological_ratio": 1.0,
+    "cosmological_count": 8,
+    "ecclesiastical_count": 0,
+    "general_count": 3,
+    "total_greek": 11,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1,
+      "ⲛⲟⲩⲥ": 1,
+      "ⲕⲟⲥⲙⲟⲥ": 5,
+      "ⲁⲓⲱⲛ": 1
+    },
+    "ecclesiastical_words": {}
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 27,
+    "sahidic_count": 48,
+    "total_dialect_markers": 75,
+    "subachmimic_ratio": 0.36,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×5",
+      "ⲍⲛ×5",
+      "ⲍⲛ̄×2",
+      "ⲁⲍ×6",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×1",
+      "ⲍⲱⲃ×1",
+      "ⲍⲉ×3",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×8",
+      "ϩⲛ̄×6",
+      "ⲁϩ×12",
+      "ϩⲓ×7",
+      "ϩⲁ×6",
+      "ϩⲏⲧ×4",
+      "ϩⲱⲃ×2",
+      "ϩⲉ×3"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 70,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 3,
+    "bracketed_restorations": 49,
+    "empty_brackets": 2,
+    "leer_markers": 0
+  },
+  "english_classification": {
+    "chapter_number": 105,
+    "chapter_title": "Concerning the Three Things that are great with Mankind, as they are running all the time, in that they [ ... ]",
+    "total_paragraphs": 6,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "No cosmological-correspondential substrate is present. The chapter is entirely later institutional material. The 'three things' are social customs (invoking a name, naming children, swearing oaths) observed in Christian practice, then claimed by Mani for his own apostolate. Both sides of every description stay in the social/religious world — no cosmic domain mapping occurs. The enumeration structure is institutional (three marks of a successful apostolate), not cosmological (no five-fold systems, no realm-face-metal-taste correspondences). The Gardner synopsis confirms this is apostolic succession narrative: Mani comparing his influence to Christ's. The editorial fatigue score shows institutional vocabulary appearing in the second half (shift=+1.89), consistent with the apostolic self-assertion in ¶5-6.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "institutional": 5
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: Low substrate (0%) but high cosmological Greek (1.00) — Coptic suggests more substrate content than English classification captured",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.36 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 2
+  }
+}

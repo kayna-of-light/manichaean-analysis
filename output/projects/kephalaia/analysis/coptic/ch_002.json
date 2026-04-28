@@ -1,0 +1,121 @@
+{
+  "chapter_number": 2,
+  "manuscript_pages": "16,32 - 23,13",
+  "coptic_tokens": 1238,
+  "greek_loanwords": {
+    "total_density_pct": 3.39,
+    "cosmological_density_pct": 1.37,
+    "ecclesiastical_density_pct": 1.21,
+    "cosmological_ratio": 0.531,
+    "cosmological_count": 17,
+    "ecclesiastical_count": 15,
+    "general_count": 10,
+    "total_greek": 42,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 6,
+      "ⲧⲩⲡⲟⲥ": 3,
+      "ⲥⲧⲟⲭⲉⲓⲟⲛ": 1,
+      "ⲛⲟⲩⲥ": 4,
+      "ⲁⲱⲛ": 1,
+      "ⲁⲓⲱⲛ": 1,
+      "ⲍⲩⲗⲏ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 3,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 5,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 1,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 3,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.24,
+    "dialogue_openings": 1,
+    "disciple_questions": 2,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 3,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 165,
+    "sahidic_count": 80,
+    "total_dialect_markers": 245,
+    "subachmimic_ratio": 0.673,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×8",
+      "ⲍⲛ×32",
+      "ⲍⲛ̄×19",
+      "ⲁⲍ×26",
+      "ⲍⲓ×9",
+      "ⲍⲁ×24",
+      "ⲍⲏⲧ×6",
+      "ⲍⲱⲃ×3",
+      "ⲍⲣⲏ×2",
+      "ⲍⲁⲗ×2",
+      "ⲍⲉ×32",
+      "ⲍⲁⲏ×2"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×8",
+      "ϩⲛ×12",
+      "ϩⲛ̄×3",
+      "ⲁϩ×31",
+      "ϩⲓ×1",
+      "ϩⲁ×11",
+      "ϩⲱⲃ×1",
+      "ϩⲣⲏ×4",
+      "ϩⲉ×8",
+      "ϩⲁⲏ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 305,
+    "damaged_lines": 14,
+    "lacunae_density": 0.046,
+    "dot_sequences": 309,
+    "bracketed_restorations": 277,
+    "empty_brackets": 75,
+    "leer_markers": 16
+  },
+  "english_classification": {
+    "chapter_number": 2,
+    "chapter_title": "The Second, concerning the Parable of the Tree.",
+    "total_paragraphs": 27,
+    "core_paragraphs": 8,
+    "core_percentage": 28,
+    "chapter_note": "This chapter is heavily overlaid with editorial material. The first half (¶1-11) is almost entirely dialogue frame, Gospel citation, and anti-sectarian polemic — the editors use Jesus' parable as a proof-text and argue against 'the sects' using NT examples (Judas, Paul, the date palm). The substrate teaching emerges in the second half with the five-fold faculty mapping: consideration, counsel, insight, thought, mind → cosmic beings/locations for both the good tree (ascending: holy church → Pillar of Glory → First Man → Third Ambassador → the Father) and the bad tree (descending: law of death → transmigration → gehenna → vessel → the lump). This systematic faculty-realm correspondence is the oldest layer. The chapter closes with a dualistic creedal assertion (the two trees did not arise from one another) wrapped in exhortation. The editorial fatigue pattern is confirmed: substrate vocabulary increases in the second half while frame/institutional vocabulary drifts upward. The 'taste' mappings (good tree → holy church/catechumens; bad tree → the sects) are editorial applications that reach outside the cosmic system into contemporary institutions.",
+    "classification_distribution": {
+      "dialogue_frame": 5,
+      "editorial_bridge": 11,
+      "substrate": 3,
+      "institutional": 2,
+      "mixed": 5,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 5 dialogue_frame paragraph(s), Coptic confirms 1 dialogue opening(s)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

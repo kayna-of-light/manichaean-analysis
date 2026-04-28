@@ -1,0 +1,114 @@
+{
+  "chapter_number": 90,
+  "manuscript_pages": "223,17 - 228,4",
+  "coptic_tokens": 1275,
+  "greek_loanwords": {
+    "total_density_pct": 3.06,
+    "cosmological_density_pct": 0.55,
+    "ecclesiastical_density_pct": 0.94,
+    "cosmological_ratio": 0.368,
+    "cosmological_count": 7,
+    "ecclesiastical_count": 12,
+    "general_count": 20,
+    "total_greek": 39,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 5,
+      "ⲕⲟⲥⲙⲟⲥ": 1,
+      "ⲁⲣⲭⲏ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 9,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.31,
+    "dialogue_openings": 2,
+    "disciple_questions": 0,
+    "response_formulas": 2,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 4,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲁⲛⲁⲕ ⲡⲉⲧⲛⲁ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲁⲛⲁⲕ ⲡⲉⲧⲛⲁ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 167,
+    "sahidic_count": 126,
+    "total_dialect_markers": 293,
+    "subachmimic_ratio": 0.57,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×8",
+      "ⲍⲛ×36",
+      "ⲍⲛ̄×23",
+      "ⲁⲍ×31",
+      "ⲍⲓ×10",
+      "ⲍⲁ×15",
+      "ⲍⲏⲧ×14",
+      "ⲍⲱⲃ×1",
+      "ⲍⲣⲏ×5",
+      "ⲍⲉ×21",
+      "ⲍⲁⲉ×2",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×11",
+      "ϩⲛ̄×4",
+      "ⲁϩ×60",
+      "ϩⲓ×3",
+      "ϩⲁ×22",
+      "ϩⲱⲃ×1",
+      "ϩⲉ×20",
+      "ϩⲁⲉ×1",
+      "ϩⲁⲏ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 203,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 13,
+    "bracketed_restorations": 119,
+    "empty_brackets": 10,
+    "leer_markers": 17
+  },
+  "english_classification": {
+    "chapter_number": 90,
+    "chapter_title": "Concerning the Fifteen Paths; and whether the Catechumen would have avoided causing his Wealth to go on the Three Paths to Gehenna",
+    "total_paragraphs": 19,
+    "core_paragraphs": 3,
+    "core_percentage": 12,
+    "chapter_note": "Heavily institutional chapter. The only substrate is the cosmological teaching about the fifteen paths in the zone (¶2-4), which the elect recaps as background to an institutional question about catechumen soteriology. The recapped teaching — fifteen paths (4 pure/8 mixed/3 waste), the three waste paths enumerated, and the cosmic law that persons follow their deeds — is genuine substrate cosmology (zone architecture, ships, light-waste separation, Cross of Light). Everything from ¶5 onward is institutional ecclesiology: how apostles pre-choose forms of their church, the seal of faith protecting catechumens, fasting/prayer purifying pre-conversion deeds, and an extended analogy about deeds traveling at different speeds. Gardner notes Buddhist karmic influence, thoroughly integrated into Manichaean institutional framework. Teaching purity 0.289 confirms institutional dominance.",
+    "classification_distribution": {
+      "dialogue_frame": 2,
+      "mixed": 3,
+      "institutional": 14
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 2 dialogue_frame paragraph(s), Coptic confirms 2 dialogue opening(s)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

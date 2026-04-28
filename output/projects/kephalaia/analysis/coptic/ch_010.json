@@ -1,0 +1,139 @@
+{
+  "chapter_number": 10,
+  "manuscript_pages": "42,24 - 43,21",
+  "coptic_tokens": 424,
+  "greek_loanwords": {
+    "total_density_pct": 7.08,
+    "cosmological_density_pct": 4.01,
+    "ecclesiastical_density_pct": 2.12,
+    "cosmological_ratio": 0.654,
+    "cosmological_count": 17,
+    "ecclesiastical_count": 9,
+    "general_count": 4,
+    "total_greek": 30,
+    "cosmological_words": {
+      "ⲁⲓⲱⲛ": 5,
+      "ⲁⲱⲛ": 2,
+      "ⲥⲧⲟⲭⲉⲱⲛ": 1,
+      "ⲕⲟⲥⲙⲟⲥ": 3,
+      "ⲡⲛ̅ⲁ̅": 1,
+      "ⲁⲣⲭⲏ": 5
+    },
+    "ecclesiastical_words": {
+      "ⲁⲥⲡⲁⲥⲙⲟⲥ": 1,
+      "ⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ": 4,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲁⲣⲭⲏⲅⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 2.12,
+    "dialogue_openings": 1,
+    "disciple_questions": 3,
+    "response_formulas": 4,
+    "blessing_closures": 1,
+    "exhortation_markers": 0,
+    "total_formulaic": 9,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲧⲁⲗⲓⲛ ⲁ ⲛⲙⲁⲑⲏⲧⲏⲥ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲁⲭⲓⲥ ⲁⲣⲁⲛ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲁⲛⲁⲕ ⲡⲉⲧⲛⲁ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲉⲧⲉⲧⲛⲥⲁⲩⲛⲉ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲉⲧⲉⲧⲛⲥⲁⲩⲛⲉ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲱⲱⲧⲉ ⲉⲧⲉⲧⲛⲥⲁⲩⲛⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 28,
+    "sahidic_count": 29,
+    "total_dialect_markers": 57,
+    "subachmimic_ratio": 0.491,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×1",
+      "ⲍⲛ̄×1",
+      "ⲁⲍ×9",
+      "ⲍⲓ×1",
+      "ⲍⲁ×6",
+      "ⲍⲏⲧ×3",
+      "ⲍⲣⲏ×2",
+      "ⲍⲉ×1",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×1",
+      "ϩⲛ×5",
+      "ϩⲛ̄×3",
+      "ⲁϩ×12",
+      "ϩⲓ×1",
+      "ϩⲁ×2",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲃ×1",
+      "ϩⲉ×3"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 74,
+    "damaged_lines": 1,
+    "lacunae_density": 0.014,
+    "dot_sequences": 43,
+    "bracketed_restorations": 72,
+    "empty_brackets": 6,
+    "leer_markers": 6
+  },
+  "english_classification": {
+    "chapter_number": 10,
+    "chapter_title": "Concerning the Interpretation of the Fourteen [Great Aeons] of Light, about which Sethel has spoken in [his Prayer]",
+    "total_paragraphs": 5,
+    "core_paragraphs": 4,
+    "core_percentage": 55,
+    "chapter_note": "Short hermeneutical chapter structured as interpretation of Seth's prayer. The oldest teaching layer is a fourteen-fold enumeration of cosmic entities and their cosmological function — a systematic degree-mapping. The editorial overlay is the identification of these entities with 'praises' in Seth's prayer and the dialogue framing. The chapter's substrate content is concentrated in ¶3-5, with the enumeration (5 elements + call/hearing + 5 sons of Living Spirit + 2 fathers = 14) forming the structural backbone. The final paragraph, though heavily lacunose, contains significant cosmological description of the Ambassador's role. The negative editorial fatigue score reflects the frame-heavy opening giving way to denser teaching in the second half.",
+    "classification_distribution": {
+      "mixed": 4,
+      "dialogue_frame": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 1 dialogue_frame paragraph(s), Coptic confirms 1 dialogue opening(s)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.49 — substantial Sahidic intrusion suggests later editorial hand",
+      "NOTABLE: Coptic has 1 blessing formula(s) and 0 exhortation marker(s), but English classified 0 paragraphs as exhortation"
+    ],
+    "signal_count": 1,
+    "flag_count": 2
+  }
+}
