@@ -29,7 +29,7 @@ import fitz  # PyMuPDF
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-OUTPUT_DIR = REPO_ROOT / "output" / "kephalaia_pages"
+OUTPUT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia" / "coptic" / "images"
 
 # The PDF filename (long IA-style name)
 PDF_GLOB = "Kephalaia -- Mani*Stuttgart.pdf"
