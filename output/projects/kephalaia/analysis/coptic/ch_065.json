@@ -1,0 +1,106 @@
+{
+  "chapter_number": 65,
+  "manuscript_pages": "158,24 - 164,8",
+  "coptic_tokens": 1596,
+  "greek_loanwords": {
+    "total_density_pct": 3.76,
+    "cosmological_density_pct": 1.63,
+    "ecclesiastical_density_pct": 0.81,
+    "cosmological_ratio": 0.667,
+    "cosmological_count": 26,
+    "ecclesiastical_count": 13,
+    "general_count": 21,
+    "total_greek": 60,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 21,
+      "ⲁⲓⲱⲛ": 1,
+      "ⲧⲩⲡⲟⲥ": 2,
+      "ⲟⲩⲥⲓⲁ": 1,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 3,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 8
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.06,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 1,
+    "exhortation_markers": 0,
+    "total_formulaic": 1,
+    "details": [
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 146,
+    "sahidic_count": 110,
+    "total_dialect_markers": 256,
+    "subachmimic_ratio": 0.57,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×18",
+      "ⲍⲛ×14",
+      "ⲍⲛ̄×11",
+      "ⲁⲍ×40",
+      "ⲍⲓ×15",
+      "ⲍⲁ×14",
+      "ⲍⲏⲧ×15",
+      "ⲍⲱⲃ×2",
+      "ⲍⲣⲏ×3",
+      "ⲍⲱⲡ×1",
+      "ⲍⲉ×13"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×10",
+      "ϩⲛ×7",
+      "ϩⲛ̄×6",
+      "ⲁϩ×52",
+      "ϩⲓ×3",
+      "ϩⲁ×15",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲃ×1",
+      "ϩⲣⲏ×1",
+      "ϩⲱⲡ×2",
+      "ϩⲉ×11",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 249,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 3,
+    "bracketed_restorations": 76,
+    "empty_brackets": 1,
+    "leer_markers": 29
+  },
+  "english_classification": {
+    "chapter_number": 65,
+    "chapter_title": "Concerning the Sun",
+    "total_paragraphs": 38,
+    "core_paragraphs": 31,
+    "core_percentage": 70,
+    "chapter_note": "Substantial substrate teaching organized in three systematic sections: (1) seven goods of the sun contrasted with seven evils of the night (¶5-11, ¶14-20), (2) five archetypes of the sun (¶23-27), (3) three qualities corresponding to the mystery of the Father (¶30-32). The oldest teaching layer is dominant. Editorial bridges are interspersed at section transitions (¶3, ¶12, ¶21, ¶33) polemicizing against 'the sects' for not recognizing these cosmic mysteries. The chapter closes with a Gospel of Thomas citation (¶36) and classic exhortation/beatitude closure (¶37-38), confirming the editorial fatigue pattern flagged by the computational analysis. Low substrate vocabulary scores throughout reflect the absence of this chapter's key terms (sun, night, light, darkness) from the substrate marker list (which targets zoomorphic/metal/taste correspondences), NOT the absence of substrate content. The 7+7+5+3 enumeration structure is the teaching's skeleton. Gardner/McBride's suggestion of heliolatry native to Egyptian Manichaeism may be true at the compilation level, but the correspondential structure (sun as sign of the light-realm, night as sign of Darkness) belongs to the older substrate layer.",
+    "classification_distribution": {
+      "mixed": 7,
+      "editorial_bridge": 5,
+      "substrate": 24,
+      "exhortation": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (70%) with high cosmological Greek ratio (0.67)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

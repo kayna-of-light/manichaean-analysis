@@ -1,0 +1,89 @@
+{
+  "chapter_number": 74,
+  "manuscript_pages": "180,27 - 181,31",
+  "coptic_tokens": 419,
+  "greek_loanwords": {
+    "total_density_pct": 2.39,
+    "cosmological_density_pct": 0.95,
+    "ecclesiastical_density_pct": 0.48,
+    "cosmological_ratio": 0.667,
+    "cosmological_count": 4,
+    "ecclesiastical_count": 2,
+    "general_count": 4,
+    "total_greek": 10,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 2,
+      "ⲁⲣⲭⲏ": 1,
+      "ⲍⲩⲗⲏ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 40,
+    "sahidic_count": 43,
+    "total_dialect_markers": 83,
+    "subachmimic_ratio": 0.482,
+    "subachmimic_forms": [
+      "ⲍⲛ×10",
+      "ⲍⲛ̄×5",
+      "ⲁⲍ×9",
+      "ⲍⲓ×6",
+      "ⲍⲁ×2",
+      "ⲍⲏⲧ×5",
+      "ⲍⲉ×3"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×5",
+      "ϩⲛ×2",
+      "ⲁϩ×17",
+      "ϩⲓ×8",
+      "ϩⲁ×3",
+      "ϩⲏⲧ×5",
+      "ϩⲉ×3"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 70,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 23,
+    "bracketed_restorations": 72,
+    "empty_brackets": 10,
+    "leer_markers": 5
+  },
+  "english_classification": {
+    "chapter_number": 74,
+    "chapter_title": "Concerning the living Fire: It is present in Eight Places.",
+    "total_paragraphs": 10,
+    "core_paragraphs": 10,
+    "core_percentage": 98,
+    "chapter_note": "Exceptionally clean substrate chapter. A systematic eight-fold enumeration mapping the living fire (one of the five light elements) to eight cosmic locations, with the fire identified as 'consideration' (one of the five intellectual faculties). Both sides of every mapping stay within the cosmic system — land of light, the Father, the First Man's armour, the ship of the day, the light-giver of the night, the Living Spirit's body, the new earth, eschatological revelation. No editorial bridge, institutional, or exhortation material detected. The only non-substrate material is the opening dialogue frame formula. Heavy lacunae in several paragraphs but the teaching structure is intact.",
+    "classification_distribution": {
+      "mixed": 1,
+      "substrate": 9
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (98%) with high cosmological Greek ratio (0.67)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.48 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

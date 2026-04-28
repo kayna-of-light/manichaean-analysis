@@ -1,0 +1,114 @@
+{
+  "chapter_number": 41,
+  "manuscript_pages": "105,15 - 106,21",
+  "coptic_tokens": 468,
+  "greek_loanwords": {
+    "total_density_pct": 2.56,
+    "cosmological_density_pct": 0.43,
+    "ecclesiastical_density_pct": 0.43,
+    "cosmological_ratio": 0.5,
+    "cosmological_count": 2,
+    "ecclesiastical_count": 2,
+    "general_count": 8,
+    "total_greek": 12,
+    "cosmological_words": {
+      "ⲧⲩⲡⲟⲥ": 1,
+      "ⲅⲉⲛⲉⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 1.07,
+    "dialogue_openings": 1,
+    "disciple_questions": 2,
+    "response_formulas": 0,
+    "blessing_closures": 2,
+    "exhortation_markers": 0,
+    "total_formulaic": 5,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲁⲭⲓⲥ ⲁⲣⲁⲛ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 93,
+    "sahidic_count": 12,
+    "total_dialect_markers": 105,
+    "subachmimic_ratio": 0.886,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×12",
+      "ⲍⲛ̄×9",
+      "ⲁⲍ×12",
+      "ⲍⲓ×7",
+      "ⲍⲁ×17",
+      "ⲍⲏⲧ×7",
+      "ⲍⲱⲃ×2",
+      "ⲍⲣⲏ×2",
+      "ⲍⲱⲡ×1",
+      "ⲍⲉ×15",
+      "ⲍⲁⲉ×1",
+      "ⲍⲁⲏ×5"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×1",
+      "ⲁϩ×7",
+      "ϩⲓ×1",
+      "ϩⲁ×2",
+      "ϩⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 76,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 6,
+    "bracketed_restorations": 49,
+    "empty_brackets": 3,
+    "leer_markers": 9
+  },
+  "english_classification": {
+    "chapter_number": 41,
+    "chapter_title": "Concerning the Three Blows that befell the Enemy because of the Light",
+    "total_paragraphs": 5,
+    "core_paragraphs": 5,
+    "core_percentage": 95,
+    "chapter_note": "This is a remarkably clean substrate chapter — a compact, numbered three-fold eschatological teaching about three cosmic blows against the Enemy/Darkness. The entire structure (first war, second dissolution, third separation) maps cosmic process onto cosmic process with no contemporary application, no institutional content, no exhortation, and no citations. The only non-substrate material is the brief dialogue frame attribution in P1. Gardner's note about 'rudimentary redaction' in ch. 39-41 may refer to the sequence ordering rather than heavy editorial overlay within the chapter itself. The exhortation that Gardner mentions (exhorting the faithful despite persecution) is not present in the surviving text as given — it may have been in a lost section or may refer to the broader chapter context not included here. The oldest teaching layer is overwhelmingly dominant.",
+    "classification_distribution": {
+      "mixed": 1,
+      "substrate": 4
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (95%) with high cosmological Greek ratio (0.50)",
+      "DIALECT CONSISTENT: Sub-Achmimic ratio 0.89 — consistent with the original manuscript dialect"
+    ],
+    "discordance_flags": [
+      "DISCORDANT: Coptic has 1 dialogue opening(s) but English classified 0 paragraphs as dialogue_frame",
+      "NOTABLE: Coptic has 2 blessing formula(s) and 0 exhortation marker(s), but English classified 0 paragraphs as exhortation"
+    ],
+    "signal_count": 2,
+    "flag_count": 2
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "chapter_number": 115,
+  "manuscript_pages": "270,25 - 280,19",
+  "coptic_tokens": 1930,
+  "greek_loanwords": {
+    "total_density_pct": 2.69,
+    "cosmological_density_pct": 0.62,
+    "ecclesiastical_density_pct": 1.35,
+    "cosmological_ratio": 0.316,
+    "cosmological_count": 12,
+    "ecclesiastical_count": 26,
+    "general_count": 14,
+    "total_greek": 52,
+    "cosmological_words": {
+      "ⲯⲩⲭⲏ": 3,
+      "ⲥⲱⲙⲁ": 6,
+      "ⲕⲟⲥⲙⲟⲥ": 2,
+      "ⲟⲩⲥⲓⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲡⲁⲣⲑⲉⲛⲟⲥ": 2,
+      "ⲁⲅⲁⲡⲏ": 1,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 7,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 4,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 2,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 5,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 5
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 138,
+    "sahidic_count": 184,
+    "total_dialect_markers": 322,
+    "subachmimic_ratio": 0.429,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×11",
+      "ⲍⲛ×21",
+      "ⲍⲛ̄×15",
+      "ⲁⲍ×28",
+      "ⲍⲓ×6",
+      "ⲍⲁ×12",
+      "ⲍⲏⲧ×14",
+      "ⲍⲱⲃ×2",
+      "ⲍⲣⲏ×1",
+      "ⲍⲱⲡ×1",
+      "ⲍⲉ×27"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×21",
+      "ϩⲛ̄×9",
+      "ⲁϩ×106",
+      "ϩⲓ×10",
+      "ϩⲁ×11",
+      "ϩⲏⲧ×4",
+      "ϩⲱⲃ×2",
+      "ϩⲉ×17",
+      "ϩⲁⲉ×1",
+      "ϩⲁⲏ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 383,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 75,
+    "bracketed_restorations": 418,
+    "empty_brackets": 26,
+    "leer_markers": 14
+  },
+  "english_classification": {
+    "chapter_number": 115,
+    "chapter_title": "The Catechumen asks the Apostle: will Rest come about for Someone who has come out of the Body, if the Saints pray over and make an Alms-offering for him?",
+    "total_paragraphs": 46,
+    "core_paragraphs": 16,
+    "core_percentage": 39,
+    "chapter_note": "This chapter is dominated by institutional material about prayer for the dead, alms-offerings, and remembrances — classic ecclesiastical practice. The oldest teaching layer survives in two well-preserved cosmological narrative blocks (¶8-14: Mother of Life's supplication and First Man's rescue; ¶17-22: Five Fathers' supplication and Third Ambassador's emanation) plus fragmented third and fourth archetypal episodes (¶25-27: Jesus the Splendour). These emanation narratives describe events entirely within the cosmic system and closely parallel cosmogony found elsewhere in the corpus. The editor repurposed these pre-existing narratives as archetypal precedents for institutional practice, inserting editorial bridge paragraphs ('just as the Mother of Life was granted... so too the saints') and extensive institutional application (four victories of prayer, analogy of the bound relative, catechumen commission). The editorial fatigue pattern is strong: substrate is front-loaded (first half 6.47), institutional accumulates in the second half (7.56). Teaching purity 0.392 reflects the heavy institutional overlay.",
+    "classification_distribution": {
+      "dialogue_frame": 9,
+      "institutional": 18,
+      "editorial_bridge": 3,
+      "substrate": 15,
+      "mixed": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.43 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

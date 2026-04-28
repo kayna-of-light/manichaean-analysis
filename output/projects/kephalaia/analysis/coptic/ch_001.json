@@ -1,0 +1,103 @@
+{
+  "chapter_number": 1,
+  "manuscript_pages": "(9,11 - 16,31)",
+  "coptic_tokens": 1424,
+  "greek_loanwords": {
+    "total_density_pct": 5.41,
+    "cosmological_density_pct": 1.47,
+    "ecclesiastical_density_pct": 2.32,
+    "cosmological_ratio": 0.389,
+    "cosmological_count": 21,
+    "ecclesiastical_count": 33,
+    "general_count": 23,
+    "total_greek": 77,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 13,
+      "ⲙⲟⲣⲫⲏ": 2,
+      "ⲁⲣⲭⲏ": 1,
+      "ⲥⲱⲙⲁ": 3,
+      "ⲅⲉⲛⲉⲁ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 2,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 10,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 8,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 2,
+      "ⲁⲓⲕⲁⲓⲟⲥⲩⲛⲏ": 1,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 9
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.07,
+    "dialogue_openings": 0,
+    "disciple_questions": 1,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 1,
+    "details": [
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 171,
+    "sahidic_count": 93,
+    "total_dialect_markers": 264,
+    "subachmimic_ratio": 0.648,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×16",
+      "ⲍⲛ×30",
+      "ⲍⲛ̄×18",
+      "ⲁⲍ×36",
+      "ⲍⲓ×9",
+      "ⲍⲁ×13",
+      "ⲍⲏⲧ×9",
+      "ⲍⲣⲏ×12",
+      "ⲍⲉ×25",
+      "ⲍⲁⲏ×3"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×10",
+      "ϩⲛ̄×3",
+      "ⲁϩ×45",
+      "ϩⲓ×2",
+      "ϩⲁ×8",
+      "ϩⲏⲧ×1",
+      "ϩⲣⲏ×4",
+      "ϩⲉ×16",
+      "ϩⲁⲏ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 256,
+    "damaged_lines": 4,
+    "lacunae_density": 0.016,
+    "dot_sequences": 164,
+    "bracketed_restorations": 202,
+    "empty_brackets": 16,
+    "leer_markers": 12
+  },
+  "english_classification": {
+    "chapter_number": 1,
+    "chapter_title": "Concerning the Ad[vent] of the Apostle",
+    "total_paragraphs": 31,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter is entirely institutional/apostolic narrative with no extractable substrate. Teaching purity is near zero (0.018). The chapter traces apostolic succession from Sethel through Jesus to Mani, recounts Mani's autobiography (calling, revelation by the Paraclete, missionary journeys), and frames his apostolate as the fulfillment of Jesus's Paraclete promise. The agricultural metaphor (farmer/harvest/Parmuthi-Paophi) maps apostles→farmers and churches→harvest seasons — both sides of the mapping are institutional/worldly, not cosmological. Cosmological content appears only as referenced topics in the revelation summary (¶24-25: 'the mystery of the light and the darkness,' ships, Adam) but is never actually taught — it functions as a table of contents for cosmological teachings given elsewhere. NT citations (Phil. 2:7 servant's form, John 14-16 Paraclete passages) confirm the editorial period. The chapter is bookended by dialogue frame conventions (opening question ¶1-2, formulaic closing ¶31). This is a foundational institutional text for the Manichaean community, establishing Mani's legitimacy through apostolic succession.",
+    "classification_distribution": {
+      "dialogue_frame": 3,
+      "institutional": 28
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [],
+    "signal_count": 0,
+    "flag_count": 0
+  }
+}

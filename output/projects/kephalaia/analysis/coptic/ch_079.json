@@ -1,0 +1,89 @@
+{
+  "chapter_number": 79,
+  "manuscript_pages": "191,9 - 192,3",
+  "coptic_tokens": 405,
+  "greek_loanwords": {
+    "total_density_pct": 4.44,
+    "cosmological_density_pct": 0.74,
+    "ecclesiastical_density_pct": 2.47,
+    "cosmological_ratio": 0.231,
+    "cosmological_count": 3,
+    "ecclesiastical_count": 10,
+    "general_count": 5,
+    "total_greek": 18,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 1,
+      "ⲯⲩⲭⲏ": 1,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 1,
+      "ⲁⲓⲕⲁⲓⲟⲥⲩⲛⲏ": 4,
+      "ⲁⲅⲁⲡⲏ": 1,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 1,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 1,
+    "sahidic_count": 70,
+    "total_dialect_markers": 71,
+    "subachmimic_ratio": 0.014,
+    "subachmimic_forms": [
+      "ⲍⲉ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×15",
+      "ϩⲛ̄×10",
+      "ⲁϩ×24",
+      "ϩⲓ×3",
+      "ϩⲁ×3",
+      "ϩⲏⲧ×3",
+      "ϩⲱⲃ×5",
+      "ϩⲉ×5"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 70,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 8,
+    "bracketed_restorations": 53,
+    "empty_brackets": 1,
+    "leer_markers": 11
+  },
+  "english_classification": {
+    "chapter_number": 79,
+    "chapter_title": "Concerning the Fasting of the Saints",
+    "total_paragraphs": 8,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter is entirely institutional/ecclesiastical instruction about fasting practice. While it references substrate cosmological concepts (ruling-power in the body, soul entering through food, darkness-mixture, the Cross, the living soul), these concepts are DEPLOYED to justify fasting — not TAUGHT as cosmic architecture. Both sides of the mapping never stay within the cosmic system: one side is always the institutional practice of fasting by 'the holy man' or 'the saints.' The four-fold enumeration is structured around 'works' of fasting, not cosmic domains or correspondential registers. No extractable oldest-layer teaching exists as a self-standing unit. The chapter represents the compilers' ecclesiastical instruction drawing on cosmological vocabulary that the audience would already know from actual substrate teaching elsewhere.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "institutional": 7
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: Low substrate (0%) with low cosmological Greek ratio (0.23)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.01 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

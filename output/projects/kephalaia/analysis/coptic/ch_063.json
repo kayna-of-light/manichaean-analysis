@@ -1,0 +1,94 @@
+{
+  "chapter_number": 63,
+  "manuscript_pages": "155,30 - 156,34",
+  "coptic_tokens": 482,
+  "greek_loanwords": {
+    "total_density_pct": 6.22,
+    "cosmological_density_pct": 1.24,
+    "ecclesiastical_density_pct": 3.32,
+    "cosmological_ratio": 0.273,
+    "cosmological_count": 6,
+    "ecclesiastical_count": 16,
+    "general_count": 8,
+    "total_greek": 30,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 4,
+      "ⲛⲟⲩⲥ": 1,
+      "ⲧⲩⲡⲟⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 7,
+      "ⲁⲅⲁⲡⲏ": 8,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.41,
+    "dialogue_openings": 1,
+    "disciple_questions": 1,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 0,
+    "sahidic_count": 91,
+    "total_dialect_markers": 91,
+    "subachmimic_ratio": 0.0,
+    "subachmimic_forms": [],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×18",
+      "ϩⲛ̄×10",
+      "ⲁϩ×33",
+      "ϩⲓ×4",
+      "ϩⲁ×8",
+      "ϩⲏⲧ×3",
+      "ϩⲱⲃ×2",
+      "ϩⲣⲏ×2",
+      "ϩⲉ×7"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 73,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 2,
+    "bracketed_restorations": 41,
+    "empty_brackets": 2,
+    "leer_markers": 6
+  },
+  "english_classification": {
+    "chapter_number": 63,
+    "chapter_title": "Concerning Love",
+    "total_paragraphs": 5,
+    "core_paragraphs": 4,
+    "core_percentage": 60,
+    "chapter_note": "Short binary teaching (Love/Hate) with a clear editorial insertion at ¶3. The substrate teaching maps Love → Father of Greatness and Hate → first death/land of Darkness. The editor extends the Love mapping to the holy church and apostle, mimicking the 'single body' pattern from ¶2 and adding an NT citation (John 15:13). The Hate sequence (¶4-5) remains substantially intact as cosmological substrate, with ¶5's 'today' language describing the ongoing cosmic middle-time rather than pointing at specific contemporary institutions. The seam flag on ¶4 is a false positive (zero institutional vocabulary, purely cosmological content). The derivation chain at the end of ¶5 ('the hated from the hated; the envy from the envy') is a distinctive substrate formula mapping ontological origin.",
+    "classification_distribution": {
+      "mixed": 2,
+      "substrate": 2,
+      "institutional": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: Coptic has 1 dialogue opening(s) but English classified 0 paragraphs as dialogue_frame",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.00 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 2
+  }
+}

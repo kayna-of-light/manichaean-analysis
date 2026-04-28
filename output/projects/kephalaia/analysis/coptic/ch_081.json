@@ -1,0 +1,94 @@
+{
+  "chapter_number": 81,
+  "manuscript_pages": "193,23 - 196,31",
+  "coptic_tokens": 836,
+  "greek_loanwords": {
+    "total_density_pct": 3.59,
+    "cosmological_density_pct": 0.12,
+    "ecclesiastical_density_pct": 2.03,
+    "cosmological_ratio": 0.056,
+    "cosmological_count": 1,
+    "ecclesiastical_count": 17,
+    "general_count": 12,
+    "total_greek": 30,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 8,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 2,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 3,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 4
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 52,
+    "sahidic_count": 68,
+    "total_dialect_markers": 120,
+    "subachmimic_ratio": 0.433,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×8",
+      "ⲍⲛ̄×4",
+      "ⲁⲍ×8",
+      "ⲍⲓ×5",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×5",
+      "ⲍⲱⲃ×8",
+      "ⲍⲉ×8"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×13",
+      "ϩⲛ̄×11",
+      "ⲁϩ×19",
+      "ϩⲓ×1",
+      "ϩⲁ×8",
+      "ϩⲏⲧ×5",
+      "ϩⲱⲃ×4",
+      "ϩⲉ×4",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 142,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 23,
+    "bracketed_restorations": 189,
+    "empty_brackets": 20,
+    "leer_markers": 9
+  },
+  "english_classification": {
+    "chapter_number": 81,
+    "chapter_title": "The Chapter of Fasting, for it engenders a Host of Angels",
+    "total_paragraphs": 17,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter contains zero substrate material. Teaching purity is 0.000 — no cosmological-correspondential vocabulary appears anywhere. The entire chapter is a narrative about a Manichaean archegos (church leader) who asks Mani to release him from institutional responsibilities (overseeing fasting of fifty elect, counting angels engendered). Mani refuses and encourages him to continue church-building. Content is exclusively institutional: fasting arithmetic, lord's days, elect/catechumen distinction, church construction, alms, preaching vs. individual edification. The seven-angels-per-fast doctrine is Manichaean institutional theology (Augustine confirms this in Conf. III.18), not pre-Mani correspondential teaching. The chapter is heavily damaged in §5-6 and scattered lacunae throughout. No extraction possible — no oldest teaching layer present.",
+    "classification_distribution": {
+      "institutional": 16,
+      "dialogue_frame": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: Low substrate (0%) with low cosmological Greek ratio (0.06)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.43 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

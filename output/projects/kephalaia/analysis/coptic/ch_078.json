@@ -1,0 +1,84 @@
+{
+  "chapter_number": 78,
+  "manuscript_pages": "190,11 - 191,8",
+  "coptic_tokens": 381,
+  "greek_loanwords": {
+    "total_density_pct": 3.15,
+    "cosmological_density_pct": 1.57,
+    "ecclesiastical_density_pct": 0.52,
+    "cosmological_ratio": 0.75,
+    "cosmological_count": 6,
+    "ecclesiastical_count": 2,
+    "general_count": 4,
+    "total_greek": 12,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 4,
+      "ⲯⲩⲭⲏ": 1,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 1,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 0,
+    "sahidic_count": 66,
+    "total_dialect_markers": 66,
+    "subachmimic_ratio": 0.0,
+    "subachmimic_forms": [],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×11",
+      "ϩⲛ̄×7",
+      "ⲁϩ×19",
+      "ϩⲓ×3",
+      "ϩⲁ×5",
+      "ϩⲏⲧ×7",
+      "ϩⲱⲃ×8",
+      "ϩⲉ×3",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 68,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 14,
+    "bracketed_restorations": 63,
+    "empty_brackets": 3,
+    "leer_markers": 10
+  },
+  "english_classification": {
+    "chapter_number": 78,
+    "chapter_title": "Concerning the Four Things over which People kill each other",
+    "total_paragraphs": 8,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter contains no identifiable cosmological-correspondential substrate. Teaching purity is 0.000 throughout. The four-fold enumeration of destructive human impulses (food obsession, sexual desire, wealth, war/glory) is systematic but describes human behaviors, not cosmic architecture — no domain-to-domain mapping is present. The chapter reads as a unified editorial moral teaching: enumerate worldly vices (paras 2-5) → summarize (para 6) → contrast with Manichaean faith via first-person address including Mani's self-reference as 'this physician' (para 7) → conclude with impermanence warning (para 8). While four-fold enumerations can be substratic, the absence of any cosmic-correspondential content, zero substrate vocabulary, and the moral-applicative purpose of the whole sequence point to editorial composition throughout.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "editorial_bridge": 5,
+      "exhortation": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: Low substrate (0%) but high cosmological Greek (0.75) — Coptic suggests more substrate content than English classification captured",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.00 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 2
+  }
+}

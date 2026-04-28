@@ -1,0 +1,101 @@
+{
+  "chapter_number": 69,
+  "manuscript_pages": "166,31 - 169,22",
+  "coptic_tokens": 925,
+  "greek_loanwords": {
+    "total_density_pct": 6.16,
+    "cosmological_density_pct": 2.49,
+    "ecclesiastical_density_pct": 1.08,
+    "cosmological_ratio": 0.697,
+    "cosmological_count": 23,
+    "ecclesiastical_count": 10,
+    "general_count": 24,
+    "total_greek": 57,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 10,
+      "ⲍⲱⲇⲓⲟⲛ": 4,
+      "ⲥⲫⲁⲓⲣⲁ": 5,
+      "ⲉⲛⲉⲣⲅⲉⲓⲁ": 1,
+      "ⲛⲟⲩⲥ": 2,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 3,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲡⲁⲣⲑⲉⲛⲟⲥ": 3,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.11,
+    "dialogue_openings": 0,
+    "disciple_questions": 1,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 1,
+    "details": [
+      {
+        "type": "disciple_question",
+        "match": "ⲡⲛ̄ⲭⲁⲓ̈ⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 81,
+    "sahidic_count": 54,
+    "total_dialect_markers": 135,
+    "subachmimic_ratio": 0.6,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×4",
+      "ⲍⲛ×24",
+      "ⲍⲛ̄×19",
+      "ⲁⲍ×11",
+      "ⲍⲓ×9",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×3",
+      "ⲍⲱⲃ×2",
+      "ⲍⲉ×6"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×3",
+      "ϩⲛ̄×3",
+      "ⲁϩ×27",
+      "ϩⲓ×7",
+      "ϩⲁ×2",
+      "ϩⲏⲧ×7",
+      "ϩⲱⲃ×4",
+      "ϩⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 139,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 2,
+    "bracketed_restorations": 43,
+    "empty_brackets": 0,
+    "leer_markers": 10
+  },
+  "english_classification": {
+    "chapter_number": 69,
+    "chapter_title": "Concerning the Twelve Signs of the Zodiac and the Five Stars",
+    "total_paragraphs": 13,
+    "core_paragraphs": 13,
+    "core_percentage": 84,
+    "chapter_note": "Extremely high substrate purity. The chapter contains systematic cosmological-correspondential teaching mapping zodiac signs and planets to the five worlds of darkness, then mapping zodiac triplicities to four cosmic domains of affliction. Both mappings stay entirely within the cosmic system — no contemporary application, no institutional content, no exhortation. The editorial layer is limited to dialogue frame formulas (opening/attribution) and first-person recap framing in ¶10-13. The seam flags on ¶3 and ¶10 are false positives — both paragraphs contain pure cosmos→cosmos mappings with zero institutional content. Gardner notes the structural tension of fitting twelve into pentads and reconciling the seven rulers with Mani's system; these tensions are visible in the teaching itself (uneven 2-2-3-3-2 distribution) and represent genuine substratic difficulty, not editorial confusion. The negative editorial fatigue score confirms the substrate runs strong throughout.",
+    "classification_distribution": {
+      "mixed": 7,
+      "substrate": 6
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (84%) with high cosmological Greek ratio (0.70)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

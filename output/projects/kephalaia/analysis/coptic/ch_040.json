@@ -1,0 +1,87 @@
+{
+  "chapter_number": 40,
+  "manuscript_pages": "104,21 - 105,14",
+  "coptic_tokens": 457,
+  "greek_loanwords": {
+    "total_density_pct": 2.84,
+    "cosmological_density_pct": 1.09,
+    "ecclesiastical_density_pct": 0.0,
+    "cosmological_ratio": 1.0,
+    "cosmological_count": 5,
+    "ecclesiastical_count": 0,
+    "general_count": 8,
+    "total_greek": 13,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 2,
+      "ⲅⲉⲛⲉⲁ": 2,
+      "ⲧⲩⲡⲟⲥ": 1
+    },
+    "ecclesiastical_words": {}
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 80,
+    "sahidic_count": 12,
+    "total_dialect_markers": 92,
+    "subachmimic_ratio": 0.87,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×5",
+      "ⲍⲛ×9",
+      "ⲍⲛ̄×5",
+      "ⲁⲍ×16",
+      "ⲍⲓ×8",
+      "ⲍⲁ×11",
+      "ⲍⲏⲧ×6",
+      "ⲍⲱⲃ×6",
+      "ⲍⲣⲏ×1",
+      "ⲍⲉ×8",
+      "ⲍⲁⲉ×3",
+      "ⲍⲁⲏ×2"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×1",
+      "ⲁϩ×9",
+      "ϩⲁ×1",
+      "ϩⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 75,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 16,
+    "bracketed_restorations": 46,
+    "empty_brackets": 8,
+    "leer_markers": 9
+  },
+  "english_classification": {
+    "chapter_number": 40,
+    "chapter_title": "Concerning the Three Things that were established by the Light",
+    "total_paragraphs": 6,
+    "core_paragraphs": 5,
+    "core_percentage": 94,
+    "chapter_note": "A remarkably pure chapter. After the formulaic dialogue frame opener (P1), the entire teaching body (P2-6) is oldest-layer eschatological cosmology. The three-fold enumeration maps cosmic necessity: (1) the new luminous earth built over this earth, (2) the coffin/prison of the dark fire, (3) condemned souls crucified on the enemy. The final paragraph describes the sealing of the final lump and the permanent separation/sterilization of Darkness. Both sides of every mapping stay within the cosmic system throughout. No citations, no institutional references, no contemporary application, no exhortation. The zero substrate vocabulary score reflects the narrow vocabulary list (zoomorphic/metal/taste markers), not the actual teaching character. Significant lacunae in P3-4 obscure details of the first two cosmic necessities.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "substrate": 5
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (94%) with high cosmological Greek ratio (1.00)",
+      "DIALECT CONSISTENT: Sub-Achmimic ratio 0.87 — consistent with the original manuscript dialect"
+    ],
+    "discordance_flags": [],
+    "signal_count": 2,
+    "flag_count": 0
+  }
+}

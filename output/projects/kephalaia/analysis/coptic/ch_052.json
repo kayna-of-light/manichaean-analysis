@@ -1,0 +1,88 @@
+{
+  "chapter_number": 52,
+  "manuscript_pages": "127,24 - 129,4",
+  "coptic_tokens": 569,
+  "greek_loanwords": {
+    "total_density_pct": 2.81,
+    "cosmological_density_pct": 0.35,
+    "ecclesiastical_density_pct": 0.35,
+    "cosmological_ratio": 0.5,
+    "cosmological_count": 2,
+    "ecclesiastical_count": 2,
+    "general_count": 12,
+    "total_greek": 16,
+    "cosmological_words": {
+      "ⲫⲩⲥⲓⲥ": 1,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 51,
+    "sahidic_count": 41,
+    "total_dialect_markers": 92,
+    "subachmimic_ratio": 0.554,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×10",
+      "ⲍⲛ̄×6",
+      "ⲁⲍ×13",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×7",
+      "ⲍⲱⲃ×3",
+      "ⲍⲣⲏ×1",
+      "ⲍⲁⲗ×1",
+      "ⲍⲉ×3",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ⲁϩ×25",
+      "ϩⲓ×1",
+      "ϩⲁ×5",
+      "ϩⲏⲧ×3",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×6"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 102,
+    "damaged_lines": 2,
+    "lacunae_density": 0.02,
+    "dot_sequences": 33,
+    "bracketed_restorations": 100,
+    "empty_brackets": 11,
+    "leer_markers": 6
+  },
+  "english_classification": {
+    "chapter_number": 52,
+    "chapter_title": "Concerning the [ ... ] of the Light",
+    "total_paragraphs": 8,
+    "core_paragraphs": 3,
+    "core_percentage": 30,
+    "chapter_note": "This chapter is predominantly later editorial material — a homiletic structure using cosmological narrative (light's unity vs. darkness's disunity) as a springboard for worldly analogy and community exhortation. Teaching purity is 0.000; no systematic correspondential mapping (zoomorphic, metal, taste, five-element) is present. Paragraphs 1-3 contain cosmological narrative fragments where both sides stay within the cosmic system (light entities, dark powers, abyss, disunity), but these are simple cosmological principles rather than the systematic domain-mapping characteristic of the strongest substrate chapters. Paragraphs 4-8 are entirely editorial bridge and exhortation. The possible Gospel echo ('kingdom divided within itself', cf. Mark 3:24) in paragraph 3 adds uncertainty. Heavy lacunae in paragraphs 1-2 obscure the original structure. Overall, this chapter preserves at best fragments of old cosmological teaching, heavily wrapped in editorial application.",
+    "classification_distribution": {
+      "mixed": 2,
+      "substrate": 1,
+      "editorial_bridge": 2,
+      "exhortation": 3
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [],
+    "signal_count": 0,
+    "flag_count": 0
+  }
+}

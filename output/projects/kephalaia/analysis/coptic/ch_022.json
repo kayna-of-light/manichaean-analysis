@@ -1,0 +1,82 @@
+{
+  "chapter_number": 22,
+  "manuscript_pages": "65,14 - 66,27",
+  "coptic_tokens": 229,
+  "greek_loanwords": {
+    "total_density_pct": 0.0,
+    "cosmological_density_pct": 0.0,
+    "ecclesiastical_density_pct": 0.0,
+    "cosmological_ratio": null,
+    "cosmological_count": 0,
+    "ecclesiastical_count": 0,
+    "general_count": 0,
+    "total_greek": 0,
+    "cosmological_words": {},
+    "ecclesiastical_words": {}
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 15,
+    "sahidic_count": 19,
+    "total_dialect_markers": 34,
+    "subachmimic_ratio": 0.441,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×1",
+      "ⲍⲛ̄×1",
+      "ⲁⲍ×5",
+      "ⲍⲏⲧ×2",
+      "ⲍⲉ×4"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×1",
+      "ϩⲛ×2",
+      "ⲁϩ×7",
+      "ϩⲓ×1",
+      "ϩⲁ×1",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲃ×1",
+      "ϩⲁⲗ×1",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 73,
+    "damaged_lines": 11,
+    "lacunae_density": 0.151,
+    "dot_sequences": 105,
+    "bracketed_restorations": 58,
+    "empty_brackets": 17,
+    "leer_markers": 4
+  },
+  "english_classification": {
+    "chapter_number": 22,
+    "chapter_title": "[On] the Land of Light",
+    "total_paragraphs": 9,
+    "core_paragraphs": 8,
+    "core_percentage": 95,
+    "chapter_note": "Heavily damaged chapter continuing from the previous kephalaion's theme. Despite extensive lacunae, the surviving fragments are overwhelmingly substrate: systematic description of the Land of Light including emanation hierarchies (gods, angels from the Father), five-fold structures, zoomorphic face references, cosmic elements (living air, living ambrosia), and cosmic geography (mountains, springs, trees, aeons dwelling in light). Both sides of every surviving mapping stay within the cosmic system. The only non-substrate material is a brief dialogue frame formula in P2 ('I will reveal to you') and the beatitude closure in P9, consistent with the editorial fatigue pattern flagged by the pipeline (exhortation score rising from 0.0 to 2.76 in the second half). The substrate shift also increases in the second half, reflecting the denser cosmological vocabulary in the better-preserved later paragraphs.",
+    "classification_distribution": {
+      "substrate": 7,
+      "mixed": 1,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.44 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

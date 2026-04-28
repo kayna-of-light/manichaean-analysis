@@ -1,0 +1,106 @@
+{
+  "chapter_number": 101,
+  "manuscript_pages": "253,25 - 255,21",
+  "coptic_tokens": 595,
+  "greek_loanwords": {
+    "total_density_pct": 3.53,
+    "cosmological_density_pct": 0.5,
+    "ecclesiastical_density_pct": 2.18,
+    "cosmological_ratio": 0.188,
+    "cosmological_count": 3,
+    "ecclesiastical_count": 13,
+    "general_count": 5,
+    "total_greek": 21,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1,
+      "ⲛⲟⲩⲥ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 4,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 6,
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 1,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.34,
+    "dialogue_openings": 2,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 51,
+    "sahidic_count": 47,
+    "total_dialect_markers": 98,
+    "subachmimic_ratio": 0.52,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×5",
+      "ⲍⲛ̄×3",
+      "ⲁⲍ×16",
+      "ⲍⲓ×4",
+      "ⲍⲁ×5",
+      "ⲍⲏⲧ×7",
+      "ⲍⲣⲏ×2",
+      "ⲍⲉ×8"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×6",
+      "ϩⲛ̄×1",
+      "ⲁϩ×19",
+      "ϩⲓ×1",
+      "ϩⲁ×5",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲃ×1",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×8"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 103,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 6,
+    "bracketed_restorations": 113,
+    "empty_brackets": 2,
+    "leer_markers": 2
+  },
+  "english_classification": {
+    "chapter_number": 101,
+    "chapter_title": "[Concer]ning why, if the Person shall look down into Water, [ ... ]",
+    "total_paragraphs": 7,
+    "core_paragraphs": 6,
+    "core_percentage": 78,
+    "chapter_note": "This chapter preserves correspondential teaching that maps physical observations (water reflection, shadows) onto cosmic events and body-cosmos correspondences. The substrate is dominant: inverted reflection maps to the descent of the Summons and ascent of the Obedience, to stellar-zodiacal parentage of earthly beings, to birth inversion, and shadow-earth connection maps to the body's origin from the abyss. No institutional or exhortation content. Editorial material consists entirely of dialogue frame and pedagogical framing phrases ('I reveal to you', 'listen and I may teach you'). Gardner notes 'loosely grouped teachings' that 'may evidence textual development' — consistent with several originally independent correspondential units joined by editorial transitions. The negative editorial fatigue score reflects frame material concentrated at the chapter's opening. The teaching represents what Gardner calls Mani's 'totally integrated science' — natural phenomena explained through cosmic correspondence.",
+    "classification_distribution": {
+      "mixed": 4,
+      "dialogue_frame": 1,
+      "substrate": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 1 dialogue_frame paragraph(s), Coptic confirms 2 dialogue opening(s)"
+    ],
+    "discordance_flags": [
+      "DISCORDANT: High substrate (78%) but low cosmological Greek (0.19) — Coptic suggests more institutional register than English classification indicates"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}
