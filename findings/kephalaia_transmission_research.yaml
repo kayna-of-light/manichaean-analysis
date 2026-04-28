@@ -1,0 +1,688 @@
+# ============================================================================
+# Kephalaia Transmission Research — Pre-Thesis Investigation
+# ============================================================================
+#
+# Purpose: Track findings from three research threads needed before
+# writing the Coptic validation thesis. The retracted thesis overclaimed
+# what the Coptic data supports. These threads investigate what we can
+# actually establish about the Kephalaia's transmission history.
+#
+# Created: 2026-04-28
+# Status: in_progress
+#
+# ============================================================================
+
+research_threads:
+
+  # =========================================================================
+  # THREAD 1: The Aramaic-to-Coptic Translation Chain
+  # =========================================================================
+  # What do the Kellis bilingual glossaries and other evidence tell us
+  # about HOW the Kephalaia was translated from Syriac/Aramaic into Coptic?
+  # This is the gap the retracted thesis completely failed to address.
+
+  aramaic_to_coptic:
+    status: complete
+    question: >
+      The Kephalaia was composed in Aramaic/Syriac and translated into Coptic.
+      What do we know about this translation process? What were the two Coptic
+      dialect phases actually doing — translating, normalizing, or retranslating?
+
+    sources_consulted:
+      - "Gardner, Kephalaia of the Teacher (intro), lines 120-200"
+      - "Koenen & Römer, Cologne Mani Codex (Foreword 1988), pp. XV-XXII"
+      - "DB Anthology 2: Canonical Texts, fn. 39"
+      - "Fihrist of Ibn al-Nadim, p. 3 (line 36)"
+
+    findings:
+
+      - id: ATC-001
+        source: "Gardner, Kephalaia intro, line 185"
+        passage: >
+          The Coptic texts themselves date from about 400 c.e., and are
+          translations of Syriac originals which reach back to Mani himself
+          (the Epistles), or to the first generations (as with the Homilies).
+          They are written in a form (L4) of that dialect known as
+          sub-Achmimic or Lycopolitan.
+        finding: >
+          Gardner explicitly states the Medinet Madi codices (including Kephalaia)
+          are TRANSLATIONS of Syriac originals. The Coptic texts date ~400 CE.
+          The dialect is L4 (a specific sub-variety of Lycopolitan/Sub-Achmimic).
+          This means both Coptic dialect layers we detect are translation layers,
+          not copying layers. The original composition language is Syriac.
+        confidence: strong
+        implications: >
+          Our Coptic validation detects TWO dialect strata (Sub-Achmimic and
+          Sahidic). These are BOTH downstream of the Syriac original. The first
+          translation was into L4/Lycopolitan; the second layer represents
+          Sahidic normalization (probably for broader readership). Neither layer
+          is the original composition.
+
+      - id: ATC-002
+        source: "Gardner, Kephalaia intro, line 165"
+        passage: >
+          Certainly the discovery of bilingual glossaries of Manichaean phrases
+          evidence the remarkable fact of translation from Syriac into
+          Lycopolitan Coptic at Kellis.
+        finding: >
+          Bilingual Syriac-Lycopolitan glossaries were found at Kellis (4th c.
+          Manichaean settlement in Dakhleh Oasis, Egypt). These are working
+          translation tools — evidence that the translation from Syriac to
+          Coptic was happening IN Egypt, probably at regional Manichaean centers.
+          "Remarkable fact" — Gardner finds the translation process itself
+          noteworthy, suggesting it was not trivially expected.
+        confidence: strong
+        implications: >
+          The glossaries prove active, organized translation activity. The
+          Manichaean community had the infrastructure for systematic translation
+          from Syriac into Coptic. This is NOT casual copying — it required
+          bilingual expertise and standardized vocabulary.
+
+      - id: ATC-003
+        source: "Gardner, Kephalaia intro, line 166"
+        passage: >
+          The finds from Kellis evidence a link between the use of Lycopolitan
+          Coptic and Manichaeism. Dialect and text connect these finds to the
+          Medinet Madi library, for the same psalm tradition is a feature of
+          both finds. Minor textual variants indicate that the Kellis material
+          predates that of Medinet Madi, and thus uncover some of the history
+          of the latter codices.
+        finding: >
+          KEY FINDING: Kellis material PREDATES Medinet Madi. This means
+          there is a textual evolution visible between the earlier Kellis
+          copies and the later Medinet Madi codices. The Kephalaia (from
+          Medinet Madi) is a LATER stage of an evolving textual tradition.
+          Gardner says codices like the Psalm Book and Kephalaia are
+          "constructed works in the process of evolution."
+        confidence: strong
+        implications: >
+          The Kephalaia is NOT a single, frozen translation. It is a living
+          text that evolved between the Kellis stage (~mid-4th c.) and the
+          Medinet Madi stage (~400 CE). This directly supports our caution
+          about claiming the substrate "survived intact" — the text was
+          actively evolving in Coptic. Without the Syriac exemplar or an
+          independent witness, we cannot determine what was added, removed,
+          or rearranged during this evolution.
+
+      - id: ATC-004
+        source: "Gardner, Kephalaia intro, line 185"
+        passage: >
+          They are written in a form (L4) of that dialect known as sub-Achmimic
+          or Lycopolitan; and thus seem not to have originated in the Fayoum,
+          but were carried perhaps by missionaries or believers fleeing persecution.
+        finding: >
+          The dialect (L4/Lycopolitan) points to an origin in Upper Egypt
+          (Lycopolis area), NOT the Fayoum where Medinet Madi is located.
+          This means the codices traveled — they were carried to their
+          findspot, not produced there. The translation center was likely
+          Lycopolis or a nearby Manichaean stronghold.
+        confidence: moderate
+        implications: >
+          The geographic displacement adds another step to the transmission
+          chain: Syriac original → Lycopolitan translation (Upper Egypt) →
+          physical transport to Medinet Madi (Fayoum). Each step is an
+          opportunity for textual modification.
+
+      - id: ATC-005
+        source: "DB Anthology 2, fn. 39 (line 1180)"
+        passage: >
+          As Mani wrote all his canonical works in Aramaic, these excerpts
+          in Syriac have uniquely preserved the original language of Mani
+          and as such they are of inestimable value to the study of
+          Manichaean terms and concepts.
+        finding: >
+          Scholarly consensus: Mani's canonical works were written IN ARAMAIC.
+          The Syriac excerpts preserved by Theodore bar Konai are the closest
+          we have to Mani's original language. "Of inestimable value" — the
+          original Aramaic wording matters for understanding Manichaean
+          terminology. The Coptic is always at LEAST one translation step
+          removed from the original.
+        confidence: strong
+        implications: >
+          Reinforces that the Kephalaia Coptic is a translation product.
+          Any analysis of its vocabulary must account for the Aramaic→Coptic
+          gap. Greek cosmological loanwords in the Coptic may not have been
+          in the Aramaic original — they may have entered during translation
+          into Coptic.
+
+      - id: ATC-006
+        source: "Fihrist, line 36"
+        passage: >
+          the script in which the (Manichaean) religious books was written
+          is borrowed from Syriac and Persian.
+        finding: >
+          The Fihrist confirms that Mani's script was derived from Syriac
+          and Persian. This is the "Manichaean script" — a specifically
+          Manichaean adaptation of Syriac. The original texts were in
+          Aramaic written in this Manichaean script.
+        confidence: strong
+        implications: >
+          The translation into Coptic required not just linguistic translation
+          but also script conversion. The translators had to render Aramaic/
+          Syriac concepts into a completely different script and language
+          family (Afro-Asiatic Coptic vs. Semitic Aramaic).
+
+      - id: ATC-007
+        source: "Gardner, Kephalaia intro, line 227"
+        passage: >
+          One of the wooden boards found at Kellis (T. Kell. Copt. 1)
+          enumerates the 'five σχήματα (properties)' of the Father of
+          Greatness as reflected in the Third Ambassador.
+        finding: >
+          A Kellis wooden board (T. Kell. Copt. 1) contains the five-fold
+          teaching in summary form — a "flip card" for teaching purposes.
+          The Greek word σχήματα is used for "properties." This shows the
+          five-fold architecture was being translated and taught in Coptic
+          at Kellis, using Greek technical vocabulary for the structural
+          terms.
+        confidence: strong
+        implications: >
+          The five-fold teaching traveled from Aramaic → Coptic with Greek
+          technical terms for structural concepts. This is EXACTLY the
+          pattern our Coptic validation detects: Greek cosmological
+          vocabulary overlaying native Coptic. The Kellis board confirms
+          this pattern was not accidental but reflects the translation
+          methodology.
+
+    open_questions:
+      - Was there EVER a Greek intermediary for the Kephalaia (as there was for the CMC)?
+      - Can the 'bilingual glossaries' be accessed for vocabulary comparison?
+      - Were both dialect strata (L4 and Sahidic) translation phases from Syriac, or was the Sahidic layer a Coptic-to-Coptic normalization?
+      - What specific Kellis texts correspond to Kephalaia chapters?
+
+  # =========================================================================
+  # THREAD 2: Five-Fold Architecture Across Translation Traditions
+  # =========================================================================
+  # Can we demonstrate the same five-fold structure with different names
+  # across Coptic (Kephalaia), Arabic (Fihrist), and Middle Persian
+  # (Shabuhragan)? This would be actual evidence for constant architecture
+  # with variable naming — something we can test with documents we have.
+
+  five_fold_comparison:
+    status: complete
+    question: >
+      The Kephalaia, Fihrist, and Shabuhragan all describe a five-fold
+      divine/intellectual architecture. Do the structures map? Where do the
+      names differ? Where does the architecture itself differ?
+
+    sources_consulted:
+      - "Gardner, Kephalaia of the Teacher, Ch. 38 (lines 1979-1989)"
+      - "Gardner, Kephalaia intro, Summary of the Doctrine (line 260+)"
+      - "Gardner, Kephalaia index, lines 4546-4549"
+      - "Fihrist of Ibn al-Nadim, lines 48, 112"
+      - "DB Anthology 2, Theodore bar Konai (line 1180+)"
+      - "DB Anthology 3, Shabuhragan, line 115"
+      - "Gardner, Kephalaia intro, Kellis T. Kell. Copt. 1 (line 227)"
+
+    findings:
+
+      - id: FFC-001
+        category: structural_comparison
+        finding: >
+          FIVE-FOLD COMPARATIVE TABLE (same architecture, different names):
+
+          | Position | Kephalaia (Coptic)  | Fihrist (Arabic)    | Bar Konai (Syriac) |
+          |----------|---------------------|---------------------|--------------------|
+          | 1st      | mind (ⲛⲟⲩⲥ)        | meekness (ḥilm)     | mind               |
+          | 2nd      | thought (ⲙⲉⲧⲉ)     | knowledge (ʿilm)    | knowledge          |
+          | 3rd      | insight (ⲧⲥⲱ)      | understanding (ʿaql)| intellect          |
+          | 4th      | counsel (ⲥⲁⲍⲛⲉ)    | mystery (ghayb)     | thought            |
+          | 5th      | consideration (ⲙⲁⲕⲙⲉⲕ) | insight (fiṭna) | reflection         |
+
+          The STRUCTURE is constant: five attributes of the Father of Greatness,
+          five parallel attributes of the Ether of Light, five parallel elements
+          of the Earth of Light. The NAMES shift across languages and traditions.
+        confidence: strong
+        implications: >
+          This is testable evidence for constant architecture with variable
+          naming. The five-fold structure is preserved across Arabic (10th c.),
+          Syriac (~8th c.), and Coptic (~4th c.) witnesses. The names shift
+          but the architecture holds: five intellectual/divine attributes
+          organized in a specific order relative to the Father of Greatness.
+
+      - id: FFC-002
+        category: structural_comparison
+        source: "Fihrist, line 48"
+        passage: >
+          It has five members, meekness, knowledge, understanding, mystery,
+          insight, and five other spiritual properties, love, faith, fidelity,
+          nobleness, and wisdom.
+        finding: >
+          The Fihrist preserves a DOUBLE five-fold structure: five members
+          AND five spiritual properties. The five members (meekness, knowledge,
+          understanding, mystery, insight) correspond to the Kephalaia's five
+          intellectuals. The five spiritual properties (love, faith, fidelity,
+          nobleness, wisdom) may correspond to the Kephalaia's REGENERATION
+          equivalents (love, faith, perfection, patience, wisdom) — the five
+          living members that replace the natural five.
+        confidence: moderate
+        implications: >
+          If the Fihrist's "five spiritual properties" map to the Kephalaia's
+          five regeneration equivalents, this confirms not just the structural
+          five-fold architecture but also the paired architecture: five
+          natural + five spiritual, operating at different degrees. This would
+          be strong evidence for a constant doctrinal structure across centuries.
+
+      - id: FFC-003
+        category: structural_comparison
+        source: "Bar Konai, DB Anthology 2, line 1180+"
+        passage: >
+          there were dwelling there in addition to him (the Father) his five
+          Shekinahs: mind, knowledge, intellect, thought and reflection.
+        finding: >
+          Theodore bar Konai's account (Syriac, excerpting from what scholars
+          believe is a canonical work of Mani) uses the term "Shekinahs" for
+          the five attributes. Since Mani wrote in Aramaic, this Syriac source
+          is CLOSEST to the original language. The terminology here is more
+          cognitive/intellectual (mind, knowledge, intellect, thought, reflection)
+          than the Fihrist's more ethical/temperamental rendering (meekness,
+          knowledge, understanding, mystery, insight).
+        confidence: strong
+        implications: >
+          The Syriac version preserves what is likely closest to Mani's own
+          vocabulary. The shift from cognitive (Syriac) to ethical (Arabic)
+          and back to cognitive with some variation (Coptic: mind, thought,
+          insight, counsel, consideration) shows translation producing
+          vocabulary drift while the five-fold structure persists unchanged.
+
+      - id: FFC-004
+        category: body_correspondence
+        source: "Kephalaia, Ch. 38, line 1979"
+        passage: >
+          It bound the mind in bone; the thought in sinew; the insight in
+          vein; the counsel in flesh; the consideration in skin.
+        finding: >
+          The Kephalaia maps the five intellectuals to BODY PARTS:
+            mind → bone
+            thought → sinew
+            insight → vein
+            counsel → flesh
+            consideration → skin
+
+          This is a body-correspondence map — precisely the kind of structure
+          found in the Apocryphon of John's 365-angel passage (NHL II,1).
+          The ordering runs from innermost/structural (bone) to outermost/
+          surface (skin), mapping perfectly to discrete degrees from most
+          interior to most exterior.
+        confidence: strong
+        implications: >
+          This body-correspondence map is UNIQUE to the Kephalaia — it does
+          not appear in the Fihrist or the Syriac bar Konai excerpts. Either
+          it was present in the Aramaic original and the other witnesses
+          didn't preserve it, or it was elaborated in the Kephalaia tradition.
+          The structural direction (inner→outer = bone→skin corresponding to
+          mind→consideration) is identical to the Swedenborgian correspondence
+          direction (influx flows from interior to exterior).
+
+      - id: FFC-005
+        category: structural_comparison
+        source: "Kephalaia, Ch. 38, lines 1988-1989"
+        passage: >
+          He shall place his mind, which is love, in the mind of the new man.
+          Also, the thought, which is faith... His insight, which is perfection...
+          His counsel, which is patience... Also, wisdom, which is his
+          consideration, in the consideration of the new man.
+        finding: >
+          The REGENERATION equivalents (the five "great living members"):
+            mind ← love
+            thought ← faith
+            insight ← perfection
+            counsel ← patience
+            consideration ← wisdom
+
+          Compare with the Fihrist's five spiritual properties:
+            love, faith, fidelity, nobleness, wisdom
+
+          Positions 1, 2, and 5 match exactly (love, faith, wisdom).
+          Positions 3 and 4 differ: Kephalaia has perfection/patience;
+          Fihrist has fidelity/nobleness. But the pairing principle is
+          preserved: five intellectual members replaced by five spiritual
+          qualities during regeneration.
+        confidence: moderate
+        implications: >
+          The paired five-fold structure (natural intellectuals + spiritual
+          replacements) is preserved across the Coptic and Arabic witnesses
+          with ~60% exact vocabulary match (3/5 terms identical). This
+          suggests both witnesses draw on the same doctrinal architecture
+          while the specific ethical vocabulary shifted during transmission.
+
+      - id: FFC-006
+        category: structural_comparison
+        source: "Fihrist, line 112; repeated at line 48"
+        passage: >
+          Mani teaches that the Earth of Light has five members, the breeze,
+          the wind, the light, the water, and the fire; and in the same way
+          the Ether of Light has five members, meekness, knowledge,
+          understanding, mystery, and insight.
+        finding: >
+          The five ELEMENTS (breeze, wind, light, water, fire) are a separate
+          five-fold layer — material/natural rather than intellectual/divine.
+          The Fihrist gives these as the "members of the Earth of Light."
+          The Kephalaia (intro summary, line 260+) also lists them: "living
+          air, light, wind, water and fire." The Shabuhragan likewise
+          preserves this list. This elemental five-fold is REMARKABLY stable
+          across all traditions — far more stable than the intellectual five.
+        confidence: strong
+        implications: >
+          The elemental five-fold (air/wind/light/water/fire) is the most
+          stable element across witnesses. The intellectual five-fold shifts
+          in vocabulary but not in structure. This pattern is exactly what
+          the framework predicts: more concrete/natural items preserve naming
+          better across translation, while more abstract/interior items
+          shift names while preserving structural position.
+
+      - id: FFC-007
+        category: structural_comparison
+        source: "Gardner, Kephalaia intro, line 227"
+        passage: >
+          One of the wooden boards found at Kellis (T. Kell. Copt. 1)
+          enumerates the 'five σχήματα (properties)' of the Father of
+          Greatness as reflected in the Third Ambassador.
+        finding: >
+          The Kellis board T. Kell. Copt. 1 provides the five-fold
+          architecture in TEACHING SUMMARY form — a condensed version
+          designed for memorization. It uses the Greek term σχήματα
+          ("properties/forms") for what the Fihrist calls "members"
+          and bar Konai calls "Shekinahs." Three different structural
+          terms. Same five-fold reality.
+        confidence: strong
+        implications: >
+          Even the META-TERM for the five-fold structure changes across
+          witnesses (σχήματα / members / Shekinahs / intellectuals / limbs),
+          while the structural reality of "five attributes of the Father"
+          remains invariant. The Kellis board confirms active teaching of
+          this architecture in Egyptian Coptic communities.
+
+    open_questions:
+      - Can the specific Coptic terms on T. Kell. Copt. 1 be compared with the Kephalaia's ⲛⲟⲩⲥ/ⲙⲉⲧⲉ/ⲧⲥⲱ/ⲥⲁⲍⲛⲉ/ⲙⲁⲕⲙⲉⲕ?
+      - Does the Shabuhragan explicitly name the five intellectual attributes or only the five elements?
+      - What are the Middle Persian (Turfan) equivalents for the five intellectuals?
+      - Does the ordering of the five shift between traditions, or is the sequence also constant?
+
+  # =========================================================================
+  # THREAD 3: CMC Evidence on Composition and Language
+  # =========================================================================
+  # The Cologne Mani Codex describes Mani's formation. Does it contain
+  # evidence about how teachings were first recorded, in what language,
+  # and how they entered the written tradition?
+
+  cmc_composition:
+    status: complete
+    question: >
+      Does the CMC contain evidence about how Mani's teachings were first
+      committed to writing, in what language, and through what process?
+      Does it shed light on the relationship between oral instruction
+      and written text?
+
+    sources_consulted:
+      - "Koenen & Römer, CMC Foreword 1988, pp. XV-XXVI"
+      - "CMC text, pp. 1-154 (via English translation)"
+      - "Gardner, Kephalaia intro, lines 120-260"
+
+    findings:
+
+      - id: CMC-001
+        source: "CMC Foreword, line 79"
+        passage: >
+          The text was probably translated in Egypt from East Aramaic into
+          Greek around the middle of the fourth century.
+        finding: >
+          The CMC provides a PARALLEL translation chain: East Aramaic → Greek
+          (in Egypt, ~mid-4th c.). This is a different translation pathway
+          than the Kephalaia (East Aramaic → Coptic). The CMC went through
+          Greek; the Kephalaia went through Coptic. Both were translated in
+          Egypt around the same period (~mid-4th c.). Two independent
+          translation paths from the same source language, in the same region,
+          at roughly the same time.
+        confidence: strong
+        implications: >
+          The Egyptian Manichaean community maintained TWO translation streams:
+          Aramaic→Greek (for the CMC and presumably other texts intended for
+          Greek-speakers) and Aramaic→Coptic (for the Kephalaia and texts
+          intended for the Coptic-speaking community). The bilingual glossaries
+          at Kellis served the Coptic stream. The question of whether any
+          Coptic texts went through Greek as an intermediary remains open.
+
+      - id: CMC-002
+        source: "CMC Foreword, line 92 and fn. 5 (line 98)"
+        passage: >
+          Although Mani spoke and wrote about his life, he is not the author
+          of an autobiography. However, he learned from the experiences of
+          Christianity and encouraged his disciples to record his words.
+          ---
+          According to Baraies, Mani himself, rather than initially his
+          disciples, wrote about his mission (46:1ff.; cf. 63:14-16).
+        finding: >
+          KEY: Mani both WROTE personally and ENCOURAGED disciples to record
+          his words. The CMC distinguishes between: (a) Mani's own written
+          works (canonical scriptures, letter to Edessa), (b) disciples'
+          records of Mani's spoken teachings. The Kephalaia falls into
+          category (b) — recorded oral instruction. The CMC itself is a
+          COMPILATION of both types by a later editor.
+        confidence: strong
+        implications: >
+          The Kephalaia was NEVER a "book by Mani" in the same sense as
+          his canonical works. It is compiled teaching material, originating
+          in oral instruction, written down by disciples, and evolved through
+          community use. This is exactly what Gardner says: "not an apocryphal
+          book, but an evolving and fluid discourse." The distinction matters
+          for the new thesis: we are not analyzing a text Mani wrote and
+          translators copied; we are analyzing a text that passed through
+          oral instruction → disciple notation → community elaboration →
+          codex compilation → Aramaic-to-Coptic translation → ongoing
+          Coptic textual evolution.
+
+      - id: CMC-003
+        source: "CMC Foreword, line 87"
+        passage: >
+          This opinion derives from the compiler's working method, which
+          becomes clear from occasional inconsistencies that disrupt the
+          course of the narrative, especially in the links between the
+          excerpts. However, the rarity of such oversights shows that the
+          compiler smoothed out the transitions.
+        finding: >
+          The CMC compiler's editorial hand is detectable through INCONSISTENCIES
+          in transitions between excerpts. The fact that these are rare shows
+          careful editorial work. This parallels what we can imagine for the
+          Kephalaia: a compilation process that smoothed and connected material,
+          but left traces of its construction detectable by careful analysis.
+        confidence: moderate
+        implications: >
+          Both the CMC and the Kephalaia show evidence of compilation rather
+          than single authorship. In the CMC these are transition-smoothing
+          artifacts; in the Kephalaia these are the redaction seams Gardner
+          identifies (e.g., repeated blocks of material, numerical sequencing
+          that forces pentads onto duodecimal lists).
+
+      - id: CMC-004
+        source: "CMC Foreword, line 172"
+        passage: >
+          A detailed examination of the language of the codex is still
+          pending... The editors are aware that their limited, collective
+          reading knowledge of Syriac and Aramaic is completely inadequate
+          for their undertaking.
+        finding: >
+          The CMC editors explicitly acknowledge the underlying Aramaic/Syriac
+          substrate in the Greek text. The Greek preserves Aramaic idioms and
+          constructions. A "coherent study of the language and idioms" by
+          someone proficient in Syriac has not yet been done. This means
+          the Aramaic substrate is VISIBLE through the Greek translation —
+          just as we hypothesize the Aramaic substrate may be visible through
+          the Coptic translation of the Kephalaia.
+        confidence: moderate
+        implications: >
+          If the Aramaic substrate shows through in the CMC's Greek, the same
+          phenomenon could operate in the Kephalaia's Coptic. However, our
+          Coptic validation tool detects dialect features (Sub-Achmimic vs.
+          Sahidic) and Greek loanword patterns — these are COPTIC-level
+          features, not necessarily indicators of the Aramaic substrate.
+          The distinction matters: we can speak about dialect strata in the
+          Coptic translation; we CANNOT use Coptic data alone to make claims
+          about the Aramaic original.
+
+      - id: CMC-005
+        source: "CMC text (multiple passages); Fihrist lines 10-36"
+        passage: >
+          [CMC quotes Mani's letter to Edessa (64:8-65:22) and the
+          beginning of his Gospel (66:4-68:5)]
+        finding: >
+          The CMC preserves actual quotations from Mani's canonical works
+          (the Letter to Edessa, the Living Gospel). These were originally
+          in Aramaic, passed through Greek translation, and are embedded in
+          the biographical narrative. This demonstrates that canonical written
+          texts existed in Mani's lifetime (he died ~274 CE), and that
+          these texts were being quoted, translated, and transmitted within
+          two generations. The Fihrist confirms Mani's canon: Living Gospel,
+          Treasure of Life, Pragmateia, Book of Mysteries, Book of Giants,
+          Epistles, and Shabuhragan (written in Middle Persian, the exception).
+        confidence: strong
+        implications: >
+          The CANONICAL works had a defined textual identity that was
+          maintained through transmission. The Kephalaia, however, is
+          APOCRYPHAL ("first generation after the death of the apostle,"
+          Gardner) — it sits outside the protected canonical core. This
+          makes the Kephalaia MORE susceptible to textual evolution than
+          the canonical works. Our thesis must account for this distinction.
+
+      - id: CMC-006
+        source: "Gardner, Kephalaia intro, line 200"
+        passage: >
+          The reference to the Kephalaia in such an early work as The Sermon
+          of the Great War (H.18.6) indicates that it belongs in essence to
+          the first generation after the death of the apostle (late third
+          century).
+        finding: >
+          The Kephalaia as a GENRE dates to the late 3rd century (~275-300 CE).
+          The Coptic Kephalaia manuscript dates from ~400 CE. This gives a
+          ~100-year window between the genre's origin and our manuscript.
+          During this window: (1) oral teaching → written Aramaic compilation,
+          (2) Aramaic → Coptic translation, (3) Coptic textual evolution
+          (Kellis predates Medinet Madi). All three processes operated within
+          roughly one century.
+        confidence: strong
+        implications: >
+          The transmission chain is: oral instruction (~250-277 CE) → Aramaic
+          compilation (~275-300 CE) → Coptic translation (~300-350 CE, using
+          bilingual glossaries at centers like Kellis/Lycopolis) → ongoing
+          Coptic evolution (~350-400+ CE, visible in Kellis-to-Medinet Madi
+          variants). Our Coptic manuscript (~400 CE) captures the ENDPOINT
+          of this chain. We can analyze its Coptic features but cannot
+          retrodict through the chain without additional witnesses.
+
+    open_questions:
+      - Does the Coptic Acts codex (partially preserved) contain parallel versions of Kephalaia material?
+      - Were the CMC translation (Aramaic→Greek) and the Kephalaia translation (Aramaic→Coptic) done by the same community or different communities within Egypt?
+      - Can Aramaic loan-constructions be identified in the Coptic Kephalaia as they can in the Greek CMC?
+      - Does the second Kephalaia codex (Dublin, "Wisdom of my Lord Mani") preserve different textual variants that could illuminate the evolution?
+
+# ============================================================================
+# SYNTHESIS: What the Three Threads Establish
+# ============================================================================
+
+synthesis:
+  date: "2026-04-28"
+
+  what_we_can_establish:
+    - title: "The complete transmission chain"
+      finding: >
+        Oral instruction by Mani in Aramaic (~250-277 CE) → Written Aramaic
+        compilation by disciples (~275-300 CE, first generation) → Translation
+        from Syriac/Aramaic into Lycopolitan Coptic using bilingual glossaries
+        (~300-350 CE, at centers like Kellis/Lycopolis) → Ongoing Coptic textual
+        evolution (~350-400+ CE, visible between Kellis and Medinet Madi MSS) →
+        Secondary Sahidic normalization (date uncertain, but detectable in our
+        Coptic analysis as the second dialect stratum).
+      evidence: "ATC-001 through ATC-007, CMC-006"
+
+    - title: "Constant five-fold architecture across languages"
+      finding: >
+        The five-fold divine/intellectual architecture is preserved across
+        Arabic (Fihrist, 10th c.), Syriac (bar Konai, ~8th c.), Coptic
+        (Kephalaia, ~4th c.), and Coptic teaching summary (Kellis board).
+        The NAMES shift across translations; the STRUCTURE (five attributes
+        of the Father, mapped to five elements, five body parts, five sins,
+        five regeneration equivalents) remains constant.
+      evidence: "FFC-001 through FFC-007"
+
+    - title: "Two Coptic dialect strata are translation/normalization layers"
+      finding: >
+        Our Coptic validation tool detects two dialect strata: Sub-Achmimic
+        (L4/Lycopolitan) and Sahidic. Given that the original language was
+        Aramaic, BOTH strata are products of the translation process —
+        not of two scribes copying an existing Coptic text. The first stratum
+        (Sub-Achmimic) represents the original translation from Aramaic;
+        the second (Sahidic) represents normalization, possibly for broader
+        readership.
+      evidence: "ATC-001, ATC-003, ATC-004"
+
+    - title: "The Kephalaia is an evolving compilation, not a fixed text"
+      finding: >
+        Gardner explicitly states codices like the Kephalaia are "constructed
+        works in the process of evolution." The CMC shows the same compilation
+        methodology applied to a different text. The Kephalaia is NOT a single
+        translation of a fixed Aramaic original — it is a living text that
+        accumulated material and evolved through community use.
+      evidence: "ATC-003, CMC-002, CMC-003, CMC-005"
+
+  what_we_cannot_establish:
+    - title: "Content fidelity of the Aramaic→Coptic translation"
+      finding: >
+        We have no independent Aramaic witness to compare against the Coptic.
+        The two dialect strata COULD reflect faithful translation +
+        normalization, OR they could reflect two different translation
+        traditions, OR translation + substantive editing. Our data alone
+        cannot discriminate between these scenarios.
+      note: >
+        This was the central overclaim of the retracted thesis. The consistent
+        dialect patterns we observe are consistent with faithful transmission,
+        but they are also consistent with two competent editors making similar
+        kinds of changes. Without a second witness, the data are underdetermined
+        on this point.
+
+    - title: "Whether the architectural structure predates Mani"
+      finding: >
+        The five-fold structure is Mani's doctrinal architecture. Whether it
+        derives from an older "Ancient Word" tradition or is Mani's creation
+        cannot be determined from the Kephalaia data alone. The framework
+        suggests pre-Mani origins; the data are consistent with but do not
+        prove this.
+      note: >
+        The body-correspondence map (mind→bone, thought→sinew, etc.) has
+        parallels in the Apocryphon of John's 365-angel passage (NHL), which
+        cites "the book of Zoroaster." But structural parallels across
+        independent traditions do not prove common origin without tracing
+        the transmission path.
+
+    - title: "Where the Greek cosmological vocabulary entered"
+      finding: >
+        Our Coptic validation detects Greek cosmological loanwords (aeon,
+        archon, etc.) throughout the Kephalaia. These could have been: (a) in
+        the Aramaic original (as Greek loans into Aramaic), (b) added during
+        translation into Coptic, or (c) a mix of both. The Kellis wooden
+        board (T. Kell. Copt. 1) uses Greek σχήματα, suggesting Greek
+        technical terms were part of the translation methodology. But we
+        cannot determine the exact entry point of each Greek term.
+      note: >
+        The NHL pattern (native Coptic for correspondential content, Greek
+        for cosmological framework) also appears in the Kephalaia. But in
+        the NHL the texts are translated from Greek; in the Kephalaia the
+        source is Aramaic. The same bilingual pattern may arise from
+        different causes.
+
+  thesis_implications:
+    - >
+      The new thesis should present the Coptic validation results as what they
+      are: a computational analysis of COPTIC-LEVEL features in a text whose
+      original language was Aramaic. The two dialect strata tell us about
+      the TRANSLATION HISTORY, not the original composition.
+    - >
+      The five-fold comparison across traditions is the strongest evidence for
+      constant architecture with variable naming — and it uses MULTIPLE
+      INDEPENDENT WITNESSES, not just the Coptic data.
+    - >
+      The body-correspondence map (Kephalaia Ch. 38) is genuinely significant
+      and parallels NHL. This belongs in the thesis as a finding, not as
+      proof of a specific transmission model.
+    - >
+      The thesis should explicitly discuss what the data CANNOT tell us
+      alongside what they can. The retracted thesis failed on this point.
