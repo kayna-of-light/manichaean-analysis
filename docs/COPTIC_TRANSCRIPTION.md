@@ -12,16 +12,40 @@ End-to-end pipeline for transcribing the original Coptic text of the Kephalaia f
 
 ## Source Material
 
+### First Half (Polotsky/Böhlig 1940)
+
 **PDF**: `data/Kephalaia -- Mani...Stuttgart.pdf`
 - 522 PDF pages total
 - Coptic text pages at odd PDF indices: 49, 51, 53, ..., 517
 - German translation pages at even PDF indices: 48, 50, 52, ..., 518
-- Printed page numbers: 10 (first Coptic) through 244 (last Coptic)
+- Printed page numbers: 10 (first Coptic) through 244 (last Coptic, lines 1-20)
 - Total Coptic pages: 235
+- **Extraction script**: `scripts/extract_kephalaia_pages.py`
+
+### Second Half (Böhlig 1966)
+
+**PDF**: `data/Kephalaia_ Zweite Hälfte (Lieferung 11-12) -- Polotsky H_J_ Band I.pdf`
+- 100 PDF pages total (3 front matter, 96 content, 1 back cover)
+- Coptic text pages at odd PDF indices: 3, 5, 7, ..., 97
+- German translation pages at even PDF indices: 4, 6, 8, ..., 98
+- Printed page numbers: 244 (lines 21-31, continuation) through 291
+- Total Coptic pages: 48
+- Page 244 overlaps: lines 1-20 in first half, lines 21-31 in second half
+- **Extraction script**: `scripts/extract_kephalaia_zweite_halfte.py`
+
+### Combined Coverage
+
+| Source | Printed Pages | Chapters | Coptic Pages |
+|--------|--------------|----------|-------------|
+| First Half (1940) | 10–244 (lines 1-20) | I–XCV | 235 |
+| Second Half (1966) | 244 (lines 21+)–291 | XCVI–CXXII | 48 |
+| **Total** | **10–291** | **I–CXXII** | **282** |
+
+### English Translation
 
 **English Translation**: `output/texts/Kephalaia_of_the_Teacher.md`
 - Gardner's English translation of the Kephalaia
-- Contains inline `(N)` markers for all 235 Coptic page numbers
+- Contains inline `(N)` markers for all Coptic page numbers (10-295)
 - Auto-extracted per page by regex matching between consecutive markers
 
 ---
@@ -146,6 +170,30 @@ python scripts/transcribe_coptic_v2.py --pages 12 --dpi 300
 python scripts/transcribe_coptic_v2.py --image output/kephalaia_pages/keph_p012.jpg
 ```
 
+### Second Half Page Extraction
+
+```bash
+# Extract all Coptic pages from the Zweite Hälfte PDF (244-291):
+python scripts/extract_kephalaia_zweite_halfte.py
+
+# Extract specific range:
+python scripts/extract_kephalaia_zweite_halfte.py --pages 245-260
+
+# Preview mode:
+python scripts/extract_kephalaia_zweite_halfte.py --preview
+```
+
+Note: Page 244 is extracted as `keph_p244_cont.jpg` to avoid overwriting the first-half extraction. Pages 245-291 use standard naming (`keph_pNNN.jpg`) and are immediately usable by the transcription pipeline.
+
+### Transcribing Second Half Pages
+
+```bash
+# Transcribe all second-half pages (uses pre-extracted images):
+python scripts/transcribe_coptic_v2.py --pages 245-291 --skip-existing --concurrency 4
+
+# Gardner's English markers cover pages 245-291, so auto-English works normally.
+```
+
 ### Flags
 
 | Flag | Description |
@@ -206,8 +254,9 @@ python scripts/transcribe_coptic_v2.py --image output/kephalaia_pages/keph_p012.
 - Pass 2: ~8K input tokens (image + text + English) + ~4K output tokens, ~45s
 - Total: ~14K tokens, ~2 minutes
 
-### Full Corpus (235 pages)
-- Estimated: ~3.3M tokens, ~8 hours
+### Full Corpus (282 pages)
+- First half (235 pages): ~3.3M tokens, ~8 hours
+- Second half (47 pages): ~0.66M tokens, ~1.5 hours
 - Use `--skip-existing` to resume interrupted runs
 
 ### Accuracy
@@ -228,11 +277,12 @@ Future integration: Coptic transcriptions can be used to verify correspondential
 
 ---
 
-## Legacy Scripts
+## Scripts
 
 | Script | Status | Notes |
 |---|---|---|
-| `extract_kephalaia_pages.py` | Standalone, still works | Bulk PDF extraction without transcription |
+| `extract_kephalaia_pages.py` | Standalone, still works | First-half PDF extraction (pp. 10-244) |
+| `extract_kephalaia_zweite_halfte.py` | **Current** | Second-half PDF extraction (pp. 244-291) |
 | `transcribe_coptic.py` | v1 single-pass, still works | Simpler but less accurate than v2 |
 | `transcribe_coptic_v2.py` | **Current** | Full pipeline: PDF extraction + two-pass OCR |
 
