@@ -42,7 +42,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 PROJECT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia_v2"
 PAGES_DIR = PROJECT_DIR / "pages"
 SCORES_DIR = PROJECT_DIR / "scores"
-SECRETS_PATH = REPO_ROOT / "secrets" / "anthropic.env"
+SECRETS_PATH = REPO_ROOT / "secrets" / "azure_openai.env"
 
 
 # ---------------------------------------------------------------------------
@@ -555,6 +555,8 @@ class PipelineStage(ABC):
                     time.sleep(0.5)
         else:
             print(f"Running with {concurrency} parallel workers\n")
+            completed_count = 0
+            total_count = len(pages)
 
             with ThreadPoolExecutor(max_workers=concurrency) as executor:
                 futures = {
@@ -563,20 +565,30 @@ class PipelineStage(ABC):
                 }
                 for future in as_completed(futures):
                     page_num = futures[future]
+                    completed_count += 1
                     try:
                         pn, result = future.result()
                     except Exception as e:
-                        print(f"  p.{page_num}: EXCEPTION — {e}")
+                        print(
+                            f"  [{completed_count}/{total_count}] "
+                            f"p.{page_num}: EXCEPTION — {e}"
+                        )
                         errors.append(page_num)
                         continue
                     if result is None:
-                        print(f"  p.{page_num}: FAILED")
+                        print(
+                            f"  [{completed_count}/{total_count}] "
+                            f"p.{page_num}: FAILED"
+                        )
                         errors.append(page_num)
                         continue
                     processed = self.process_result(page_num, result)
                     self.save_output(page_num, processed)
                     summary = self.format_summary(page_num, processed)
-                    print(f"  p.{page_num}: {summary}")
+                    print(
+                        f"  [{completed_count}/{total_count}] "
+                        f"p.{page_num}: {summary}"
+                    )
                     results.append(processed)
 
         # Summary
