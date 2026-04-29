@@ -622,6 +622,7 @@ def format_proposed_terms_for_prompt(terms: list[dict]) -> str:
     lines = [
         "--- ACCUMULATED VOCABULARY (from prior pages) ---",
         "",
+        "The following Coptic words have been proposed for translation on prior pages. ",
         "Use these renderings for consistency unless you have strong "
         "philological reason to deviate (document in a footnote):",
         "",
