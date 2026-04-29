@@ -56,11 +56,10 @@ Zoroastrian mēnōg/gētīg ontology, Manichaean cosmology, and the textual \
 transmission of what Swedenborg called "the Ancient Word."
 
 You have been given the COMPLETE TEXT of the Coptic Kephalaia of the \
-Teacher in English translation. The text is organized by manuscript pages \
+Teacher in the ORIGINAL COPTIC. The text is organized by manuscript pages \
 (marked with === PAGE N === headers) and within each page by sequentially \
-numbered line segments [§N]. This is our own translation from the Coptic \
-manuscript — it has not been through any extraction pipeline. Every line \
-of the original manuscript is present (with lacunae noted).
+numbered line segments [§N]. Every line of the original manuscript is \
+present (with lacunae noted as [...]).
 
 ## YOUR TASK
 
@@ -86,8 +85,9 @@ Your output will be loaded by Python scripts that:
    classification decisions.
 
 Everything you output must be EXACT, PARSEABLE, and COMPUTATIONALLY \
-USEFUL. Vague descriptions are useless. Precise terms with correct \
-weights are essential.
+USEFUL. Vague descriptions are useless. Precise COPTIC terms with \
+correct weights are essential. All marker keys must be Coptic strings \
+that match the corpus text via case-insensitive substring matching.
 
 ## THE TEXT AND WHAT WE ARE LOOKING FOR
 
@@ -159,12 +159,13 @@ find a layer that doesn't match any description above, add it.
 
 These dictionaries will be loaded directly into Python as \
 `dict[str, int]` and used by `score_text()` which does \
-case-insensitive substring matching.
+case-insensitive substring matching against the COPTIC text.
 
-**CRITICAL**: Terms must be EXACT as they appear in the translation. \
-Multi-word phrases are valid and highly desirable — "once again the \
-enlightener speaks" is far more diagnostic than just "enlightener". \
-Include both multi-word phrases and single diagnostic words.
+**CRITICAL**: Terms must be EXACT COPTIC as they appear in the text. \
+Multi-word Coptic phrases are valid and highly desirable — \
+"ⲡⲁⲗⲓⲛ ⲡⲫⲱⲥⲧⲏⲣ" is far more diagnostic than just "ⲫⲱⲥⲧⲏⲣ". \
+Include both multi-word phrases and single diagnostic Coptic words. \
+All scoring will be done against the Coptic text, not English.
 
 **Weight scale**:
   5 = highly diagnostic, nearly always signals this category
@@ -184,19 +185,18 @@ vocabulary (80+ terms). Later editorial layers may need fewer.
 
 ### 2. SEAM DETECTION
 
-**Bridge phrases**: Phrases that appear at the START of segments \
+**Bridge phrases**: Coptic phrases that appear at the START of segments \
 and signal editorial extension of a preceding sequence. These are \
 segment-initial connectives that editors used to graft their material \
-onto the original teaching. Provide the EXACT phrase as it typically \
-appears at the segment start. Examples: "now, moreover", \
-"furthermore, also", "and moreover". The consuming code will build \
-regex from these (anchoring to segment start, handling optional \
-commas and flexible whitespace).
+onto the original teaching. Provide the EXACT Coptic phrase as it \
+typically appears at the segment start. The consuming code will build \
+regex from these (anchoring to segment start, handling flexible \
+whitespace).
 
-**Institutional terms**: Terms whose presence signals institutional \
-content — church offices, organizational structures, institutional \
-categories. Include the exact terms as lowercase strings. These are \
-checked via simple substring matching in segment text.
+**Institutional terms**: Coptic terms whose presence signals \
+institutional content — church offices, organizational structures, \
+institutional categories. Include the exact Coptic terms as lowercase \
+strings. These are checked via simple substring matching in segment text.
 
 ## OUTPUT REQUIREMENTS
 
@@ -262,9 +262,10 @@ COMMIT_METADATA_TOOL = {
                             },
                             "description": (
                                 "Term → weight mapping. Keys are exact "
-                                "terms as they appear in the corpus "
-                                "text. Values are diagnostic weights "
-                                "1–5. Multi-word phrases are valid."
+                                "COPTIC terms as they appear in the "
+                                "corpus text. Values are diagnostic "
+                                "weights 1–5. Multi-word Coptic "
+                                "phrases are valid."
                             ),
                         },
                     },
@@ -291,8 +292,8 @@ COMMIT_METADATA_TOOL = {
                                 "phrase": {
                                     "type": "string",
                                     "description": (
-                                        "Exact phrase as it appears "
-                                        "at segment start."
+                                        "Exact Coptic phrase as it "
+                                        "appears at segment start."
                                     ),
                                 },
                                 "reliability": {
@@ -319,9 +320,9 @@ COMMIT_METADATA_TOOL = {
                         "type": "array",
                         "items": {"type": "string"},
                         "description": (
-                            "Terms signaling institutional content. "
-                            "Exact text, lowercase. Used for "
-                            "substring matching."
+                            "Coptic terms signaling institutional "
+                            "content. Exact text, lowercase. Used "
+                            "for substring matching."
                         ),
                     },
                 },
@@ -412,8 +413,8 @@ def format_corpus(pages: list[dict]) -> str:
     Each page gets a === PAGE N === header. Within each page, each
     line segment gets a [§N] marker (sequential across the whole corpus).
 
-    Uses the ENGLISH translations for scoring discovery (the LLM
-    will derive English diagnostic vocabulary).
+    Uses the COPTIC text for scoring discovery (the LLM
+    will derive Coptic diagnostic vocabulary).
     """
     parts: list[str] = []
     seq = 0
@@ -424,20 +425,20 @@ def format_corpus(pages: list[dict]) -> str:
 
         parts.append(f"=== PAGE {page_num} ===")
 
-        # Include header translation if present
-        title_en = header.get("title_english")
-        if title_en:
+        # Include header in Coptic if present
+        title_cop = header.get("title_coptic")
+        if title_cop:
             seq += 1
-            parts.append(f"[§{seq}] [HEADER] {title_en}")
+            parts.append(f"[§{seq}] [HEADER] {title_cop}")
 
-        # Line segments
+        # Line segments — Coptic text
         for seg in page["lines"]:
-            english = seg.get("english")
-            if english is None:
+            coptic = seg.get("coptic")
+            if coptic is None:
                 continue  # Skip null (destroyed) lines
             seq += 1
             break_mark = " [BREAK]" if seg.get("break_after") else ""
-            parts.append(f"[§{seq}]{break_mark} {english}")
+            parts.append(f"[§{seq}]{break_mark} {coptic}")
 
         parts.append("")  # Blank line between pages
 
@@ -516,6 +517,10 @@ def main() -> None:
         "--dry-run", "-n", action="store_true",
         help="Show corpus statistics without calling the API",
     )
+    parser.add_argument(
+        "--effort", default="max",
+        choices=["low", "medium", "high", "xhigh", "max"],
+    )
     args = parser.parse_args()
 
     print("Stage 2: Discover")
@@ -539,6 +544,7 @@ def main() -> None:
     print(f"  Corpus: {len(corpus_text):,} chars (~{est_tokens:,.0f} tokens)")
     print(f"  Total segments: {total_segments}")
     print(f"  Pages: {pages[0]['page_num']}-{pages[-1]['page_num']}")
+    print(f"  Effort: {args.effort}")
 
     if args.dry_run:
         print(f"\n  % of 200K limit: ~{est_tokens / 2000:.1f}%")
@@ -568,6 +574,7 @@ def main() -> None:
         tools=[COMMIT_METADATA_TOOL],
         tool_name="commit_metadata",
         page_label="corpus",
+        effort=args.effort,
         debug=args.debug,
     )
     elapsed = time.time() - t0
