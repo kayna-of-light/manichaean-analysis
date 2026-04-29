@@ -1,0 +1,245 @@
+# Coptic-to-English Translation Glossary
+# ========================================
+#
+# This glossary provides MANDATORY translation decisions for the Kephalaia
+# translation pipeline. These are not suggestions — they override default
+# LLM translation choices based on confirmed philological analysis.
+#
+# Structure:
+#   mandatory_terms:  Fixed translations that MUST be used (confirmed findings)
+#   preferred_terms:  Preferred but flexible translations (strong recommendations)
+#   dialect_notes:    Lycopolitan/sub-Achmimic dialect features
+#
+# This file is loaded by translate_kephalaia.py and injected into the
+# system prompt. New terminology decisions proposed by the model are
+# written to a separate file (glossary/proposed_terms.yaml) for human
+# review before promotion to this file.
+#
+# Last updated: 2025-07-16
+
+version: "1.0.0"
+
+# ============================================================================
+# MANDATORY TERMS — These translations MUST be used. Non-negotiable.
+# ============================================================================
+mandatory_terms:
+
+  # --- The Five Intellectual Faculties ---
+  # These form a fixed system. Translations must be consistent everywhere.
+  - coptic: "ⲡⲛⲟⲩⲥ"
+    english: "mind"
+    part_of_speech: noun
+    domain: "five faculties"
+    note: >
+      First of the five intellectual faculties of the soul.
+      Greek loanword νοῦς. Always "mind" in this context.
+
+  - coptic: "ⲡⲙⲉⲩⲉ"
+    english: "thought"
+    part_of_speech: noun
+    domain: "five faculties"
+    note: >
+      Second of the five intellectual faculties. Corresponds to Greek
+      ἔννοια (ennoia) per Polotsky/Böhlig footnote. Always "thought."
+
+  - coptic: "ⲧⲥⲃⲱ"
+    english: "teaching"
+    part_of_speech: noun
+    domain: "five faculties"
+    note: >
+      CRITICAL: Third of the five intellectual faculties. MUST be
+      translated "teaching" — NOT "insight", NOT "prudence."
+      The German critical edition (Polotsky/Böhlig 1940) uses "Einsicht"
+      and maps to Greek φρόνησις, but the Coptic scribes deliberately
+      chose ⲥⲃⲱ ("teaching/instruction") over the available Greek
+      loanword. The Coptic term is primary. ⲣⲉϩ†ⲥⲃⲱ = "teacher"
+      (K.99) confirms this semantic field.
+
+  - coptic: "ⲡⲥⲁⲭⲛⲉ"
+    english: "counsel"
+    part_of_speech: noun
+    domain: "five faculties"
+    note: >
+      Fourth of the five intellectual faculties. Corresponds to Greek
+      ἐνθύμησις (enthumēsis) per Polotsky/Böhlig. Always "counsel."
+
+  - coptic: "ⲡⲙⲁⲕⲙⲉⲕ"
+    english: "reflection"
+    part_of_speech: noun
+    domain: "five faculties"
+    note: >
+      Fifth of the five intellectual faculties. Corresponds to Greek
+      λογισμός (logismos) per Polotsky/Böhlig. Always "reflection."
+
+  # --- The verb ⲥⲃⲱ/ⲥⲃⲟ in non-faculty contexts ---
+  - coptic: "ⲥⲃⲱ"
+    english: "teaching"
+    part_of_speech: noun
+    domain: "general"
+    note: >
+      When ⲥⲃⲱ appears outside the five-faculty system, it still means
+      "teaching" or "instruction." The verbal form ⲥⲃⲟ = "to teach."
+      Never render as "insight."
+
+  - coptic: "ⲣⲉϩ†ⲥⲃⲱ"
+    english: "teacher"
+    part_of_speech: noun
+    domain: "general"
+    note: >
+      Compound: ⲣⲉϩ (one who does) + †ⲥⲃⲱ (gives teaching) = "teacher."
+      Confirms ⲥⲃⲱ = "teaching."
+
+  # --- The verb ⲧⲟⲩⲱ — preserve vertical motion ---
+  - coptic: "ⲧⲟⲩⲱ"
+    english: "raise"
+    part_of_speech: verb
+    domain: "soteriological"
+    note: >
+      Causative verb meaning "to raise, to cause to stand up."
+      MUST preserve vertical/directional semantics. Do NOT flatten
+      to "release", "free", "save", or "redeem" — these lose the
+      spatial dimension. In Manichaean soteriology, the upward
+      direction (raising light particles) is theologically essential.
+      "Raise" preserves the Coptic physics. Exception: in clear
+      non-soteriological contexts (physical standing up), "raise"
+      is still correct.
+
+  # --- ⲡⲉⲓⲛⲉ — consistent translation ---
+  - coptic: "ⲡⲉⲓⲛⲉ"
+    english: "likeness"
+    part_of_speech: noun
+    domain: "general"
+    note: >
+      MUST be translated consistently as "likeness." Do NOT vary
+      between "form", "image", "resemblance", "appearance", "shape",
+      "kind" depending on context. The Coptic uses one word; the
+      translation should use one word. "Likeness" captures the
+      relational quality (X is in the likeness of Y) better than
+      the alternatives.
+
+  - coptic: "ⲟⲩⲉⲓⲛⲉ"
+    english: "likeness"
+    part_of_speech: noun
+    domain: "general"
+    note: >
+      Indefinite form of ⲡⲉⲓⲛⲉ. Same translation: "likeness."
+
+# ============================================================================
+# PREFERRED TERMS — Strong recommendations, allow flexibility with footnote
+# ============================================================================
+preferred_terms:
+
+  - coptic: "ⲙⲟⲣⲫⲏ"
+    english: "form"
+    part_of_speech: noun
+    domain: "general"
+    note: >
+      Greek loanword μορφή. "Form" is standard and should be the
+      default. When appearing alongside ⲡⲉⲓⲛⲉ ("likeness"), the
+      distinction between ⲙⲟⲣⲫⲏ and ⲡⲉⲓⲛⲉ must be preserved:
+      ⲙⲟⲣⲫⲏ = "form" (external shape), ⲡⲉⲓⲛⲉ = "likeness" (relational).
+
+  - coptic: "ⲟⲩⲥⲓⲁ"
+    english: "substance"
+    part_of_speech: noun
+    domain: "cosmological"
+    note: >
+      Greek loanword οὐσία. "Substance" is standard for cosmological
+      contexts. "Essence" is acceptable in philosophical contexts but
+      "substance" should be the default.
+
+  - coptic: "ⲡⲗⲁⲛⲏ"
+    english: "error"
+    part_of_speech: noun
+    domain: "cosmological"
+    note: >
+      Greek loanword πλάνη. "Error" as a cosmic principle/entity.
+      Capitalize as "Error" when personified.
+
+  - coptic: "ⲃⲱⲗ ⲁⲃⲁⲗ"
+    english: "release"
+    part_of_speech: verb
+    domain: "soteriological"
+    note: >
+      "To loose, to release." The horizontal/dissolving complement
+      to ⲧⲟⲩⲱ (raise). ⲃⲱⲗ = release/dissolve; ⲧⲟⲩⲱ = raise up.
+      The pair should maintain complementary spatial semantics.
+
+  - coptic: "ⲛⲁⲃⲉ"
+    english: "sin"
+    part_of_speech: noun
+    domain: "cosmological"
+    note: >
+      Capitalize as "Sin" when personified as a cosmic entity/principle.
+      Lowercase "sin" when referring to the general concept.
+
+  - coptic: "ⲡⲣⲟⲃⲟⲗⲏ"
+    english: "emanation"
+    part_of_speech: noun
+    domain: "cosmological"
+    note: >
+      Greek loanword προβολή. Standard Manichaean technical term.
+
+  - coptic: "ⲯⲩⲭⲏ"
+    english: "soul"
+    part_of_speech: noun
+    domain: "general"
+    note: "Greek loanword ψυχή. Always 'soul.'"
+
+  - coptic: "ⲥⲱⲙⲁ"
+    english: "body"
+    part_of_speech: noun
+    domain: "general"
+    note: "Greek loanword σῶμα. Always 'body.'"
+
+  - coptic: "ⲥⲁⲣⲝ"
+    english: "flesh"
+    part_of_speech: noun
+    domain: "general"
+    note: "Greek loanword σάρξ. Always 'flesh.'"
+
+  - coptic: "ⲕⲉⲫⲁⲗⲁⲓⲟⲛ"
+    english: "chapter"
+    part_of_speech: noun
+    domain: "textual"
+    note: "Greek loanword κεφάλαιον. The section/chapter heading term."
+
+# ============================================================================
+# DIALECT NOTES — Lycopolitan/sub-Achmimic features
+# ============================================================================
+dialect_notes:
+  description: >
+    The Kephalaia is written in a Lycopolitan (sub-Achmimic) Coptic dialect,
+    not standard Sahidic. Key differences to watch for:
+
+  features:
+    - feature: "Article forms"
+      description: >
+        Lycopolitan uses ⲍⲛ̄/ⲍⲙ̄ where Sahidic uses ϩⲛ̄/ϩⲙ̄ (preposition "in").
+        Both are equivalent.
+
+    - feature: "Vowel shifts"
+      description: >
+        Regular vowel alternations: ⲟⲩ→ⲟ in certain positions,
+        ⲱ→ⲟ in some forms. These are dialectal variants, not
+        different words.
+
+    - feature: "ⲍ for ϩ"
+      description: >
+        Lycopolitan regularly writes ⲍ where Sahidic writes ϩ.
+        Same phoneme, different orthographic convention.
+
+    - feature: "ⲁⲃⲁⲗ for ⲉⲃⲟⲗ"
+      description: >
+        Lycopolitan ⲁⲃⲁⲗ = Sahidic ⲉⲃⲟⲗ ("out, from").
+        Very common in the Kephalaia.
+
+    - feature: "ⲍⲱⲱϩ for ϩⲱⲱϥ"
+      description: >
+        Lycopolitan ⲍⲱⲱϩ = Sahidic ϩⲱⲱϥ (reflexive/intensive pronoun).
+
+    - feature: "Greek loanwords"
+      description: >
+        Heavy use of Greek loanwords for technical/philosophical terms:
+        ⲛⲟⲩⲥ, ⲯⲩⲭⲏ, ⲥⲱⲙⲁ, ⲟⲩⲥⲓⲁ, ⲡⲗⲁⲛⲏ, ⲙⲟⲣⲫⲏ, etc. These retain
+        their Greek meanings.
