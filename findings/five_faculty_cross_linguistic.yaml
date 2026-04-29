@@ -1,0 +1,767 @@
+# ============================================================================
+# Five Faculty Cross-Linguistic Comparison
+# Follow-up to Gardner Translation Analysis (gardner_translation_analysis.yaml)
+# ============================================================================
+#
+# Four independent linguistic traditions name the five Shekinahs/faculties
+# of the Father of Greatness. This file documents how each tradition renders
+# the five faculties, maps them cosmically, and what the cross-comparison
+# reveals about Gardner's "insight" substitution.
+#
+# Sources:
+#   1. Coptic Kephalaia (Polotsky/Böhlig; Gardner tr. 1995)
+#   2. Arabic Fihrist of Ibn al-Nadim (c. 987 CE; Ferard tr.)
+#   3. Syriac Theodore bar Konai, Scholion (8th century; BeDuhn tr.)
+#   4. Parthian Hymn M680 (Turfan; Waldschmidt-Lentz tr.)
+#
+# ============================================================================
+
+analysis_date: "2025-07-15"
+depends_on: "gardner_translation_analysis.yaml"
+
+# ============================================================================
+# THE FOUR TRADITIONS
+# ============================================================================
+
+traditions:
+
+  coptic_kephalaia:
+    source: "Papyrus Berolinensis 15996 (Polotsky/Böhlig edition)"
+    translation: "Iain Gardner, The Kephalaia of the Teacher (Brill, 1995)"
+    dialect: "Lycopolitan (L4 / sub-Achmimic)"
+    key_passage: "K.20 lines 12-20 (Chapter 2, five-fold tree)"
+    faculty_list:
+      - position: 1
+        coptic: "ⲡⲛⲟⲩⲥ"
+        transliteration: "pnous"
+        etymology: "Greek loanword νοῦς"
+        gardner: "mind"
+        literal: "mind/nous"
+        cosmic_being: "Father of Greatness"
+        coptic_cosmic: "ⲡⲓⲱⲧ ⲡⲉⲧⲟⲩⲏϩ ϩⲛ ⲧⲙⲛⲧⲛⲁⲃ"
+        body_tissue: "ⲡⲕⲉⲥ (bone)"
+        regeneration_virtue: "ⲧⲁⲅⲁⲡⲏ (love)"
+        liberation_verb: "ⲧⲟⲩⲱ (RAISE) + ⲃⲁⲗ (loosen from)"
+      - position: 2
+        coptic: "ⲡⲙⲉⲩⲉ"
+        transliteration: "pmeue"
+        etymology: "Native Coptic: ⲙⲉⲩⲉ = to think, ponder"
+        gardner: "thought"
+        literal: "thought/thinking"
+        cosmic_being: "Third Ambassador (Messenger)"
+        coptic_cosmic: "ⲡⲙⲁϩϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ"
+        body_tissue: "ⲡⲙⲟⲩⲧ (sinew)"
+        regeneration_virtue: "ⲡⲛⲁϩⲧⲉ (faith)"
+        liberation_verb: "ⲃⲱⲗ (LOOSEN)"
+      - position: 3
+        coptic: "ⲧⲥⲃⲱ"
+        transliteration: "tsbo"
+        etymology: "Native Coptic: ⲥⲃⲱ/ⲥⲃⲟ = to teach, to learn; ⲥⲃⲱ = teaching, instruction"
+        gardner: "insight"
+        literal: "TEACHING / INSTRUCTION"
+        cosmic_being: "First Man (Ohrmazd)"
+        coptic_cosmic: "ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ"
+        body_tissue: "ⲡⲙⲟⲙⲉ (vein)"
+        regeneration_virtue: "ⲡⲭⲱⲕ ⲁⲃⲁⲗ (completion/perfection)"
+        liberation_verb: "ⲃⲱⲗ (LOOSEN)"
+      - position: 4
+        coptic: "ⲡⲥⲁⲭⲛⲉ"
+        transliteration: "psachne"
+        etymology: "Native Coptic: ⲥⲁⲭⲛⲉ = to investigate, counsel, deliberate"
+        gardner: "counsel"
+        literal: "counsel/deliberation"
+        cosmic_being: "Pillar of Glory / Perfect Man"
+        coptic_cosmic: "ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ ⲡⲣⲱⲙⲉ ⲉⲧⲭⲏⲕ ⲁⲃⲁⲗ"
+        body_tissue: "ⲧⲥⲁⲣⲝ̄ (flesh)"
+        regeneration_virtue: "ⲧⲙⲛⲧϩⲁⲣϣϩⲏⲧ (patience)"
+        liberation_verb: "ⲧⲟⲩⲱ (RAISE) + ⲃⲁⲗ (loosen from)"
+      - position: 5
+        coptic: "ⲡⲙⲁⲕⲙⲉⲕ"
+        transliteration: "pmakmek"
+        etymology: "Native Coptic: ⲙⲁⲕⲙⲉⲕ = to ponder, reflect, think carefully"
+        gardner: "consideration"
+        literal: "consideration/pondering"
+        cosmic_being: "Holy Church (Ecclesia)"
+        coptic_cosmic: "ⲧⲉⲕⲕⲗⲏⲥⲓⲁ ⲉⲧⲟⲩⲁⲃⲉ"
+        body_tissue: "ⲡϣⲁⲁⲣⲉ (skin)"
+        regeneration_virtue: "ⲧⲥⲟⲫⲓⲁ (wisdom)"
+        liberation_verb: "ⲃⲱⲗ (LOOSEN)"
+
+  arabic_fihrist:
+    source: "Kitāb al-Fihrist of Ibn al-Nadim (c. 987 CE)"
+    translation: "Camilla Ferard (based on Flügel 1861)"
+    language: "Arabic"
+    key_passage: "Fihrist 329.3-5"
+    notes: >
+      Ibn al-Nadim was an Islamic bibliographer who recorded Manichaean
+      doctrine from available sources. This is a secondary account, not
+      a Manichaean text proper, but it preserves the Arabic terminology
+      used for the five faculties.
+    faculty_list:
+      - position: 1
+        arabic: "الحلم"
+        transliteration: "al-ḥilm"
+        english: "meekness / forbearance / prudence"
+        notes: "Significantly different from Coptic ⲡⲛⲟⲩⲥ (mind)"
+      - position: 2
+        arabic: "العلم"
+        transliteration: "al-ʿilm"
+        english: "knowledge / science"
+        notes: "ʿilm = knowledge as accumulated learning, received information"
+      - position: 3
+        arabic: "العقل"
+        transliteration: "al-ʿaql"
+        english: "understanding / reason / intellect"
+        notes: "NOT 'teaching' (taʿlīm) or 'insight' (fiṭna). ʿaql = rational faculty"
+      - position: 4
+        arabic: "الغيب"
+        transliteration: "al-ghayb"
+        english: "mystery / the unseen / hidden knowledge"
+        notes: "Unique to the Arabic tradition; no parallel in other lists"
+      - position: 5
+        arabic: "الفطنة"
+        transliteration: "al-fiṭna"
+        english: "insight / sagacity / perspicacity"
+        notes: >
+          CRITICAL: 'Insight' (fiṭna) appears here at position 5,
+          NOT at position 3 where Gardner places it. This is the only
+          tradition where 'insight' appears at all as a faculty name.
+    spiritual_properties:
+      note: >
+        The Fihrist lists five ADDITIONAL spiritual properties alongside the
+        five faculties, which correspond to the Kephalaia's regeneration virtues.
+      list:
+        - "love (الحبّ)"
+        - "faith (الإيمان)"
+        - "fidelity (الوفاء)"
+        - "nobleness (المروّة)"
+        - "wisdom (الحكمة)"
+      kephalaia_virtues: "love, faith, perfection, patience, wisdom"
+      matches: "Positions 1, 2, and 5 match exactly (love, faith, wisdom). Positions 3-4 differ."
+
+  syriac_theodore:
+    source: "Theodore bar Konai, Scholion (8th century CE)"
+    translation: "BeDuhn (DB Anthology 2)"
+    language: "Syriac"
+    key_passage: "DB Anthology 2, Canonical Texts section"
+    notes: >
+      Theodore bar Konai was a Nestorian bishop who wrote a heresiological
+      compendium. His account of Manichaean doctrine is detailed and generally
+      considered reliable. He gives both the Father's five Shekinahs and the
+      Living Spirit's five sons derived from them.
+    faculty_list:
+      - position: 1
+        english: "mind"
+        living_spirit_son: "Ornament of Splendour"
+      - position: 2
+        english: "knowledge"
+        living_spirit_son: "Great King of Honour"
+      - position: 3
+        english: "intellect"
+        living_spirit_son: "Adamos of Light"
+        notes: >
+          NOT 'teaching' or 'insight'. The Syriac term (likely rʿyānā or
+          hawnā) means 'intellect/intelligence' — a cognitive faculty
+          distinct from both 'teaching' (received instruction) and
+          'insight' (self-generated perception).
+      - position: 4
+        english: "thought"
+        living_spirit_son: "King of Glory"
+      - position: 5
+        english: "reflection"
+        living_spirit_son: "Porter"
+
+  parthian_hymn_m680:
+    source: "M680 (Turfan fragment), Parthian"
+    translation: "Waldschmidt-Lentz (DB Anthology 4)"
+    language: "Parthian (Middle Iranian)"
+    key_passage: "M680 R lines 13-16"
+    notes: >
+      This is a Parthian hymn from the Turfan collection — directly from
+      the Central Asian Manichaean community. The five terms appear in an
+      invocation to a divine figure, greeting each faculty as present in
+      the worshippers.
+    faculty_list:
+      - position: 1
+        parthian: "b'm"
+        transliteration: "bām"
+        english: "brilliance / radiance"
+        notes: "Distinguished from 'mind' — this is LIGHT vocabulary"
+      - position: 2
+        parthian: "mnwhmyd"
+        transliteration: "manuhmed"
+        english: "mind / nous"
+        notes: "Cognate with Greek νοῦς via Iranian manuhmēd"
+      - position: 3
+        parthian: "'ws"
+        transliteration: "ōš"
+        english: "consciousness / awareness"
+        notes: >
+          NOT 'teaching' or 'insight' or 'intellect'. ōš = consciousness,
+          awareness, wakefulness. This is a faculty of RECEPTION — being
+          open and awake to what comes.
+      - position: 4
+        parthian: "'ndyšyšn"
+        transliteration: "andēšišn"
+        english: "thought / thinking"
+        notes: "Active cognitive processing"
+      - position: 5
+        parthian: "prm'ng"
+        transliteration: "parmāng"
+        english: "thought / reasoning / intention"
+        notes: "Distinguished from andēšišn by the qualifier 'free of grief'"
+    full_text: >
+      "You are welcome, our gathered brilliance (bām) and our true mind
+      (manuhmed). You are welcome, our full consciousness (ōš), our zealous
+      thought (andēšišn), and our thought (parmāng) free of grief."
+
+# ============================================================================
+# CROSS-LINGUISTIC COMPARISON TABLE
+# ============================================================================
+
+comparison_table:
+  headers: ["Position", "Coptic (Kephalaia)", "Arabic (Fihrist)", "Syriac (Theodore)", "Parthian (M680)"]
+  rows:
+    - position: 1
+      coptic: "ⲡⲛⲟⲩⲥ — mind/nous"
+      arabic: "الحلم — meekness"
+      syriac: "mind"
+      parthian: "bām — brilliance"
+    - position: 2
+      coptic: "ⲡⲙⲉⲩⲉ — thought"
+      arabic: "العلم — knowledge"
+      syriac: "knowledge"
+      parthian: "manuhmed — mind"
+    - position: 3
+      coptic: "ⲧⲥⲃⲱ — TEACHING"
+      arabic: "العقل — intellect"
+      syriac: "intellect"
+      parthian: "ōš — consciousness"
+    - position: 4
+      coptic: "ⲡⲥⲁⲭⲛⲉ — counsel"
+      arabic: "الغيب — mystery"
+      syriac: "thought"
+      parthian: "andēšišn — thought"
+    - position: 5
+      coptic: "ⲡⲙⲁⲕⲙⲉⲕ — consideration"
+      arabic: "الفطنة — insight"
+      syriac: "reflection"
+      parthian: "parmāng — reasoning"
+
+# ============================================================================
+# FINDINGS
+# ============================================================================
+
+findings:
+
+  - id: FCL-001
+    category: cross_reference
+    title: "Constant State, Variable Form operating on the five faculties themselves"
+    finding: >
+      The four independent linguistic traditions name the five faculties
+      completely differently. Not a single position has the SAME word across
+      all four traditions. This is the framework's 'constant state, variable
+      form' principle operating on the doctrine's own central architecture.
+
+      The five REALITIES are constant — the Father of Greatness possesses
+      five attributes that are transmitted through cosmic emanation into
+      the human soul. But the NAMES given to these five realities vary
+      entirely by linguistic and cultural context:
+
+      Position 1: mind / meekness / mind / brilliance
+      Position 2: thought / knowledge / knowledge / mind
+      Position 3: TEACHING / intellect / intellect / consciousness
+      Position 4: counsel / mystery / thought / thought
+      Position 5: consideration / insight / reflection / reasoning
+
+      The names are cultural vessels. The realities they contain are constant.
+    principles:
+      - constant_state_variable_form
+    confidence: strong
+    notes: >
+      This IS the Manichaean doctrine of accommodation in practice. Mani
+      explicitly taught that each prophet brings the same truth in the
+      cultural vessel appropriate to the audience. The five faculty names
+      are a microcosm of this principle.
+
+  - id: FCL-002
+    category: cross_reference
+    title: "'Insight' appears only in Arabic, at position 5 — not position 3"
+    finding: >
+      Gardner renders ⲧⲥⲃⲱ (position 3) as 'insight.' The cross-linguistic
+      evidence shows:
+
+      - Position 3 in Arabic: العقل (ʿaql) = intellect/reason — NOT insight
+      - Position 3 in Syriac: 'intellect' — NOT insight
+      - Position 3 in Parthian: ōš = consciousness — NOT insight
+      - Position 3 in Coptic: ⲥⲃⲱ = TEACHING — NOT insight
+
+      The word 'insight' (الفطنة, fiṭna) appears ONLY in the Arabic Fihrist,
+      and it appears at position 5, not position 3.
+
+      No tradition — not Arabic, not Syriac, not Parthian, not the Coptic
+      itself — supports 'insight' at position 3. Gardner's substitution
+      has no cross-linguistic warrant.
+    principles:
+      - correspondence
+    confidence: strong
+    notes: >
+      If Gardner drew on any tradition for 'insight,' it could only have
+      been the Arabic Fihrist's fifth position — misplaced to the third.
+      More likely, he chose 'insight' because it reads more naturally as
+      an English cognitive faculty than 'teaching' does.
+
+  - id: FCL-003
+    category: cross_reference
+    title: "The Coptic translators deliberately chose ⲥⲃⲱ ('teaching')"
+    finding: >
+      The Coptic translators had access to multiple Greek terms they could
+      have used for position 3. Greek ⲉⲛⲛⲟⲓⲁ (ennoia = 'insight/thought')
+      was available and used elsewhere in Coptic texts (it appears in the
+      Nag Hammadi Library frequently). Greek ⲥⲩⲛⲉⲥⲓⲥ (synesis = 'insight/
+      understanding') was also available.
+
+      Instead, they chose the NATIVE Coptic word ⲥⲃⲱ, whose meaning
+      ('teaching, instruction, learning') is unambiguous. Four of the
+      five faculty terms are native Coptic (only ⲡⲛⲟⲩⲥ is a Greek
+      loanword). The translators were making active, considered choices.
+
+      They chose ⲥⲃⲱ because the Syriac/Aramaic source term — whatever
+      it was — carried the meaning of 'received instruction,' and ⲥⲃⲱ
+      was the most precise Coptic rendering of that meaning.
+    principles:
+      - correspondence
+      - influx
+    confidence: moderate
+    notes: >
+      We cannot directly verify the Syriac/Aramaic source term, since no
+      Syriac Kephalaia manuscript survives. But the Coptic translators'
+      choice is a translation decision, and ⲥⲃⲱ is the decision they made.
+
+  - id: FCL-004
+    category: structural_principle
+    title: "ⲧⲟⲩⲱ/ⲃⲱⲗ verb alternation correlates with cosmic axis"
+    finding: >
+      In the liberation passage (K.96 lines 13-21), two distinct verbs
+      alternate in a non-random pattern:
+
+      ⲧⲟⲩⲱ ('raise/lift up' — vertical motion):
+        Position 1: nous → Father of Greatness (the absolute source)
+        Position 4: counsel → Pillar of Glory / Perfect Man (cosmic axis)
+
+      ⲃⲱⲗ ('loosen/untie' — horizontal unbinding):
+        Position 2: thought → Third Ambassador (horizontal communication)
+        Position 3: teaching → First Man (mission into darkness)
+        Position 5: consideration → Holy Church (earthly reception)
+
+      The two faculties that receive ⲧⲟⲩⲱ ('raise') correspond to the
+      VERTICAL cosmic axis — the Father (absolute above) and the Pillar
+      (structural axis connecting above and below). The three faculties
+      that receive ⲃⲱⲗ ('loosen') correspond to OPERATIONAL entities that
+      work horizontally within the mixture — the Messenger (communicates),
+      the First Man (descends into battle), the Church (receives on earth).
+
+      Binding (K.95) uses a SINGLE verb (ⲁϩⲙⲁⲣ, 'bind') for all five.
+      Captivity is uniform and undifferentiated. Liberation is discriminating
+      — different faculties require different modes of release.
+    principles:
+      - discrete_degrees
+      - correspondence
+    confidence: moderate
+    notes: >
+      This finding requires further investigation. The vertical/horizontal
+      pattern is suggestive but could be coincidental with only five data
+      points. The binding-is-uniform / liberation-is-differentiated
+      observation is more robust — it holds across all five positions.
+
+  - id: FCL-005
+    category: cross_reference
+    title: "The Fihrist's five 'spiritual properties' confirm the regeneration virtues"
+    finding: >
+      The Arabic Fihrist lists 'five other spiritual properties' alongside
+      the five faculties: love, faith, fidelity, nobleness, wisdom.
+
+      The Coptic Kephalaia lists five regeneration virtues that REPLACE
+      the five faculties in the new person: love, faith, perfection,
+      patience, wisdom.
+
+      Alignment:
+        Position 1: love = love (MATCH)
+        Position 2: faith = faith (MATCH)
+        Position 3: fidelity ≠ perfection (DIVERGENT)
+        Position 4: nobleness ≠ patience (DIVERGENT)
+        Position 5: wisdom = wisdom (MATCH)
+
+      The outer positions (1, 2, 5) match exactly across Arabic and Coptic.
+      The inner positions (3, 4) diverge — the same 'constant state, variable
+      form' pattern operating at the virtue level as at the faculty level.
+
+      This independently confirms that the Manichaean system ALWAYS had
+      two tiers — five faculties and five corresponding virtues — and that
+      the Fihrist preserves a genuine tradition, not a garbled summary.
+    principles:
+      - constant_state_variable_form
+      - regeneration
+    confidence: strong
+
+  - id: FCL-006
+    category: cross_reference
+    title: "Apocryphon of John body-correspondence system shares architecture"
+    finding: >
+      The Apocryphon of John (NHL II,1) maps seven spiritual powers to
+      seven body tissues:
+        1. Bone — goodness
+        2. Sinew — foreknowledge
+        3. Flesh — divinity
+        4. Marrow — lordship
+        5. Blood — kingdom
+        6. Skin — envy
+        7. Hair — understanding
+
+      The Kephalaia maps five faculties to five body tissues:
+        1. Bone — nous/mind
+        2. Sinew — thought
+        3. Vein — teaching
+        4. Flesh — counsel
+        5. Skin — consideration
+
+      Shared tissues: bone, sinew, flesh, skin (4 tissues appear in both).
+      Different enumerations: AJ has 7, Kephalaia has 5.
+      Different qualities: AJ maps archontic powers, Kephalaia maps
+      intellectual faculties.
+
+      Both texts trace their body-correspondence system to the same
+      pre-literary tradition. AJ explicitly cites 'the book of Zoroaster.'
+      The Kephalaia's Mani claimed access to the same Zoroastrian lineage.
+
+      The SYSTEM is the same — spiritual quality → body tissue as
+      correspondence. The specific enumeration differs. This is exactly
+      what one expects from two independent transmissions of a common
+      ancestor: the architecture is preserved, the specifics diverge.
+    principles:
+      - ancient_word
+      - divine_human
+      - correspondence
+    confidence: strong
+    notes: >
+      The Kephalaia's VEIN (ⲡⲙⲟⲙⲉ) does not appear in AJ's list.
+      AJ's MARROW, BLOOD, and HAIR do not appear in the Kephalaia's list.
+      The two systems are not copies of each other — they are independent
+      expressions of a shared architecture.
+
+  - id: FCL-007
+    category: transmission_evidence
+    title: "Parthian Hymn M680 — 'doctrine, insight, teaching and skillfulness' as SEPARATE concepts"
+    finding: >
+      In DB Anthology 4, Hymns, a Parthian/Sogdian colophon (lines 200-205)
+      lists: 'doctrine, insight, teaching and skillfulness from it would
+      be learnt.'
+
+      This is critical evidence: in the Iranian Manichaean tradition,
+      'teaching' and 'insight' are SEPARATE WORDS used in the SAME
+      sentence. They are not synonymous. The Manichaean scribes
+      distinguished between them.
+
+      This independently confirms that 'insight' and 'teaching' were
+      not interchangeable in Manichaean vocabulary. Gardner's substitution
+      of 'insight' for ⲥⲃⲱ ('teaching') collapses a distinction that
+      the Manichaean tradition itself maintained.
+    principles:
+      - correspondence
+    confidence: strong
+    notes: >
+      Source: DB_Anthology_4_Hymns.md line 6168. The colophon is from
+      a Sogdian scribe describing the purpose of the hymn-book.
+
+  - id: FCL-008
+    category: structural_principle
+    title: "Position 3 as the 'transmission' faculty across all traditions"
+    finding: >
+      Despite the vocabulary differences, position 3 carries a common
+      functional quality across all four traditions:
+
+      - Coptic: ⲥⲃⲱ = 'teaching' (transmission of knowledge)
+      - Arabic: ʿaql = 'intellect/reason' (faculty of comprehension)
+      - Syriac: 'intellect' (faculty of comprehension)
+      - Parthian: ōš = 'consciousness/awareness' (receptive wakefulness)
+
+      These are all RECEPTIVE or MEDIATING faculties — they process,
+      comprehend, or receive what comes from outside. They are not
+      creative or generative. They stand between the higher pair
+      (nous/thought) and the lower pair (counsel/consideration) as
+      the BRIDGE faculty.
+
+      The Coptic 'teaching' names this function most precisely: the
+      third faculty is what RECEIVES transmitted knowledge. The others
+      name it by its cognitive mechanism (intellect, consciousness)
+      rather than by its relational function (receiving teaching).
+
+      Cosmically, position 3 corresponds to the First Man — who is
+      SENT FORTH carrying the Father's attributes. He is a carrier of
+      transmitted content, not a generator of his own. 'Teaching' matches
+      this cosmic correspondence exactly.
+    principles:
+      - correspondence
+      - influx
+    confidence: moderate
+    notes: >
+      This interpretive finding depends on accepting the correspondential
+      framework. At the philological level, the Coptic simply says ⲥⲃⲱ
+      (teaching) and the correspondence to vein (channel of received
+      life) and First Man (emissary carrying the Father's attributes)
+      is observed in the Coptic text itself, not imposed from outside.
+
+  - id: FCL-009
+    category: transmission_evidence
+    title: "Polotsky/Böhlig footnote reveals the ennoia back-translation"
+    finding: >
+      The German critical edition (1940) includes footnote 13 on p.20:
+
+        "Koptische Übersetzung für λογισμός, ἐνθύμησις, φρόνησις, ἔννοια."
+
+      The four Greek terms correspond to the four non-Greek Coptic
+      faculty names in the order listed on line 13 (outer → inner):
+        - ⲙⲁⲕⲙⲉⲕ (consideration) → λογισμός (reasoning/calculation)
+        - ⲥⲁⲭⲛⲉ (counsel) → ἐνθύμησις (deliberation/pondering)
+        - ⲥⲃⲱ (TEACHING) → φρόνησις (practical wisdom/prudence)
+        - ⲙⲉⲩⲉ (thought) → ἔννοια (concept/notion/thought)
+      (The fifth, ⲛⲟⲩⲥ = νοῦς, is a direct Greek loanword, no footnote needed.)
+
+      CRITICAL QUESTION: WHERE DOES THE GREEK COME FROM?
+
+      Gardner's introduction (1995, p. xviii) explicitly states: "The
+      Coptic texts themselves date from about 400 c.e., and are
+      translations of Syriac originals." The Kellis bilingual glossaries
+      (Syriac → Lycopolitan Coptic) confirm DIRECT translation from
+      Syriac, with no Greek intermediate. No Greek manuscript of the
+      Kephalaia survives or is attested.
+
+      Polotsky/Böhlig (1940) did not have the Kellis evidence and may
+      have assumed a Greek intermediate — standard for religious texts
+      in Egypt before the Kellis discoveries. Their footnote phrase
+      "Koptische Übersetzung für" ("Coptic translation for") likely
+      identifies GREEK PHILOSOPHICAL EQUIVALENTS for the Coptic terms,
+      not necessarily terms from an actual Greek Vorlage.
+
+      This means the footnote is performing SCHOLARLY BACK-TRANSLATION:
+      "these are the Greek philosophical concepts that correspond to
+      what the Coptic says." It is an editorial apparatus, not a
+      report on a source text.
+
+      THE CRITICAL FINDING:
+
+      Polotsky/Böhlig identified ⲥⲃⲱ as the Coptic equivalent of
+      φρόνησις (practical wisdom/prudence — one of Aristotle's four
+      cardinal virtues). "Einsicht" (insight/discernment) is a
+      reasonable German rendering of φρόνησις. Gardner followed with
+      English "insight." The editorial chain:
+
+        ⲥⲃⲱ (teaching) → [identified as equivalent to] φρόνησις
+        → Einsicht (1940) → insight (1995)
+
+      But the Coptic text says ⲥⲃⲱ — TEACHING. Not φρόνησις.
+      The scribes who translated from Syriac into Coptic chose a
+      word meaning "teaching, instruction, lesson" (Crum 317b-318a)
+      to render whatever the Syriac original said at position 3.
+      They did NOT use a loanword φρόνησις (which was available to
+      them — it appears in other Coptic texts). They did NOT use
+      ⲕⲁⲧⲁⲛⲟⲉⲓ (to perceive), ⲥⲩⲛⲉⲥⲓⲥ (understanding), or any
+      Greek loanword for wisdom/discernment.
+
+      They chose native Coptic ⲥⲃⲱ — what you RECEIVE from a teacher.
+      This means the COPTIC-SPEAKING COMMUNITY understood position 3
+      as a faculty of RECEIVED INSTRUCTION, not innate discernment.
+
+      The editorial tradition then identified this with φρόνησις and
+      translated through the Greek concept rather than the Coptic word.
+      The Coptic scribes' interpretive choice — which preserves
+      correspondential directionality (teaching = received from outside)
+      — was overwritten by Greek philosophical back-translation.
+    principles:
+      - ancient_word
+      - influx
+      - correspondence
+    confidence: strong
+    cross_references:
+      - "GTA-001 (gardner_translation_analysis.yaml) — initial discovery"
+      - "GTA-002 — ⲣⲉϩ†ⲥⲃⲱ = 'teacher' confirms lexical meaning"
+    notes: >
+      The φρόνησις identification actually makes the Coptic choice MORE
+      striking, not less. φρόνησις (practical wisdom/prudence) is one
+      of the four cardinal virtues in Aristotelian philosophy. The
+      German "Einsicht" is a natural rendering of φρόνησις. But
+      the Coptic scribes did not use φρόνησις or any Greek wisdom-
+      term. They used ⲥⲃⲱ: teaching. They understood practical
+      wisdom as something RECEIVED through instruction, not as an
+      innate faculty of discernment.
+
+      Note on the Greek Vorlage question: Whether or not a Greek
+      intermediate text existed, the Coptic word is ⲥⲃⲱ. If the
+      scribes translated from Greek φρόνησις → Coptic ⲥⲃⲱ, that
+      is a strong interpretive choice. If they translated from a
+      Syriac term directly (as Gardner's evidence suggests), then
+      Polotsky/Böhlig's φρόνησις is their own scholarly identification,
+      and the Coptic word stands on its own merits. Either way, the
+      Coptic says "teaching" and the editorial tradition says "insight."
+
+# ============================================================================
+# CORRECTED FIVE-FACULTY TABLE
+# ============================================================================
+
+corrected_five_faculty_table:
+  title: "The Five Faculties of the Father of Greatness — Corrected from Coptic"
+  note: >
+    Gardner's English with ⲧⲥⲃⲱ corrected to 'teaching.'
+    All other terms unchanged.
+  faculties:
+    - position: 1
+      coptic: "ⲡⲛⲟⲩⲥ"
+      corrected_english: "Mind"
+      gardner_english: "Mind"
+      body_tissue: "Bone (ⲡⲕⲉⲥ)"
+      cosmic_being: "Father of Greatness"
+      regeneration_virtue: "Love (ⲧⲁⲅⲁⲡⲏ)"
+      liberation_verb: "ⲧⲟⲩⲱ (raise)"
+    - position: 2
+      coptic: "ⲡⲙⲉⲩⲉ"
+      corrected_english: "Thought"
+      gardner_english: "Thought"
+      body_tissue: "Sinew (ⲡⲙⲟⲩⲧ)"
+      cosmic_being: "Third Ambassador"
+      regeneration_virtue: "Faith (ⲡⲛⲁϩⲧⲉ)"
+      liberation_verb: "ⲃⲱⲗ (loosen)"
+    - position: 3
+      coptic: "ⲧⲥⲃⲱ"
+      corrected_english: "Teaching"
+      gardner_english: "Insight [SUBSTITUTED]"
+      body_tissue: "Vein (ⲡⲙⲟⲙⲉ)"
+      cosmic_being: "First Man (Ohrmazd)"
+      regeneration_virtue: "Completion (ⲡⲭⲱⲕ ⲁⲃⲁⲗ)"
+      liberation_verb: "ⲃⲱⲗ (loosen)"
+    - position: 4
+      coptic: "ⲡⲥⲁⲭⲛⲉ"
+      corrected_english: "Counsel"
+      gardner_english: "Counsel"
+      body_tissue: "Flesh (ⲧⲥⲁⲣⲝ̄)"
+      cosmic_being: "Pillar of Glory / Perfect Man"
+      regeneration_virtue: "Patience (ⲧⲙⲛⲧϩⲁⲣϣϩⲏⲧ)"
+      liberation_verb: "ⲧⲟⲩⲱ (raise)"
+    - position: 5
+      coptic: "ⲡⲙⲁⲕⲙⲉⲕ"
+      corrected_english: "Consideration"
+      gardner_english: "Consideration"
+      body_tissue: "Skin (ⲡϣⲁⲁⲣⲉ)"
+      cosmic_being: "Holy Church (Ecclesia)"
+      regeneration_virtue: "Wisdom (ⲧⲥⲟⲫⲓⲁ)"
+      liberation_verb: "ⲃⲱⲗ (loosen)"
+
+# ============================================================================
+# OPEN QUESTIONS FOR FURTHER RESEARCH
+# ============================================================================
+
+open_questions:
+
+  - id: OQ-001
+    question: >
+      What is the GERMAN translation of ⲧⲥⲃⲱ in Polotsky/Böhlig?
+      If they used 'Einsicht' (insight), Gardner may have followed them.
+      If they used 'Lehre' (teaching/doctrine), Gardner innovated.
+    status: "✅ RESOLVED — 2025-07-15"
+    priority: high
+    resolution: >
+      Polotsky/Böhlig use **"Einsicht"** (insight/discernment) consistently
+      for ⲧⲥⲃⲱ throughout the German critical edition.
+
+      VERIFIED ON TWO KEY PAGES:
+
+      1. German p.20 (K.20 five-faculty cosmic mapping), lines 12-16:
+         "...hat fünf Glieder: die Überlegung, das Sinnen, die EINSICHT,
+         das Denken, [der Noûs]. ... [Seine Einsicht] [ist der] Urmensch,
+         der wohnt in dem Schiffe der [lebendigen] Wasser."
+
+      2. German p.95 (K.95 five-faculty binding), lines 17-22:
+         "...fesselte den Noûs in dem Knochen, das Denken in der Sehne,
+         die EINSICHT in der Ader, das Sinnen im Fleisch, die Überlegung
+         in der Haut."
+
+      CRITICAL FOOTNOTE (German p.20, note 13):
+         "Koptische Übersetzung für λογισμός, ἐνθύμησις, φρόνησις, ἔννοια."
+         This explicitly gives the GREEK behind each Coptic faculty term.
+         The editors identify ⲧⲥⲃⲱ as translating ἔννοια (ennoia).
+
+      THE TRANSMISSION CHAIN:
+        (a) Greek original: ἔννοια (ennoia) — "concept, notion, insight"
+        (b) Coptic translation: ⲥⲃⲱ (sbo) — "teaching, instruction"
+        (c) German edition (1940): "Einsicht" — back-translating from ἔννοια
+        (d) Gardner (1995): "insight" — following the German
+
+      SIGNIFICANCE: Gardner followed Polotsky/Böhlig. He did NOT innovate
+      independently. But the deeper finding is that BOTH the German editors
+      and Gardner privileged the reconstructed Greek (ἔννοια) over the
+      actual Coptic word (ⲥⲃⲱ = teaching). The Coptic scribes CHOSE
+      a word meaning "teaching/instruction" as their rendering of the
+      Greek concept. This choice preserves correspondential directionality:
+      what is RECEIVED from outside (teaching), not what arises from
+      within (insight). The editorial tradition lost this by back-translating
+      through the Greek.
+
+      GERMAN FIVE-FACULTY LIST (Polotsky/Böhlig p.20, lines 12-14):
+      Listed outer → inner (ascending), matching the K.20 Coptic:
+        5. die Überlegung (reflection) ← ⲙⲁⲕⲙⲉⲕ — fn: λογισμός
+        4. das Sinnen (pondering) ← ⲥⲁⲭⲛⲉ — fn: ἐνθύμησις
+        3. die Einsicht (insight) ← ⲥⲃⲱ — fn: φρόνησις
+        2. das Denken (thinking) ← ⲙⲉⲩⲉ — fn: ἔννοια
+        1. [der Noûs] (mind) ← ⲛⲟⲩⲥ — direct Greek loanword
+
+      NOTE ON ORDERING: The German (and Coptic K.20) lists from outer
+      to inner. This findings file uses the cosmic hierarchy order
+      (inner to outer: Noûs→Thought→Teaching→Counsel→Consideration).
+      The numbering above shows our standard position numbers.
+
+      NOTE ON THE GREEK: No Greek Kephalaia manuscript survives.
+      Gardner (1995, p. xviii) says the Coptic is translated from
+      "Syriac originals." The Kellis bilingual glossaries confirm
+      direct Syriac → Coptic translation. Polotsky/Böhlig's Greek
+      terms are scholarly identifications of philosophical equivalents,
+      not necessarily terms from an actual source text.
+
+  - id: OQ-002
+    question: >
+      What is the SYRIAC original term behind the Coptic ⲥⲃⲱ?
+      Can it be reconstructed from the Syriac heresiological sources
+      or from the Cologne Mani Codex?
+    status: "UNRESOLVED — requires Syriac philological expertise"
+    priority: high
+    note: >
+      The original Kephalaia was composed in Syriac/Aramaic. The
+      Coptic is a translation. The Syriac term would be the original
+      word that the Coptic translators rendered as ⲥⲃⲱ.
+
+  - id: OQ-003
+    question: >
+      Does the Dublin/Chester Beatty Arabic Kephalaia use the same
+      five faculty terms as the Fihrist, or does it have a different
+      Arabic vocabulary?
+    status: "UNRESOLVED — requires access to Gardner's second volume"
+    priority: medium
+    note: >
+      Gardner also published the Arabic Kephalaia. If the Arabic
+      manuscript uses تعليم (taʿlīm = teaching) for position 3,
+      it would independently confirm the Coptic ⲥⲃⲱ.
+
+  - id: OQ-004
+    question: >
+      Do the Chinese Manichaean texts (Hymnscroll, Compendium) name
+      the five faculties? If so, what Chinese characters are used for
+      position 3?
+    status: "PARTIALLY INVESTIGATED — no explicit five-faculty list found in available Chinese material"
+    priority: medium
+
+  - id: OQ-005
+    question: >
+      Is the ⲧⲟⲩⲱ/ⲃⲱⲗ alternation consistent across other Kephalaia
+      passages that describe liberation? Does the same verb pattern
+      (raise for positions 1 and 4, loosen for 2, 3, 5) appear in
+      other chapters?
+    status: "UNRESOLVED — requires systematic search across all Coptic transcriptions"
+    priority: medium
