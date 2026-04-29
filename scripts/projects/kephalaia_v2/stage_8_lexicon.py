@@ -311,7 +311,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
     parser.add_argument(
-        "--effort", default="high",
+        "--effort", default="max",
         choices=["low", "medium", "high", "xhigh", "max"],
     )
     return parser.parse_args()
