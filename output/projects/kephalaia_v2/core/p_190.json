@@ -1,0 +1,265 @@
+{
+  "page": 190,
+  "total_segments": 32,
+  "core_segments": 15,
+  "core_percentage": 47,
+  "page_note": "Page contains a clear temporal seam at segment 11. Segments 0-10 close the previous chapter — institutional/hortatory material on almsgiving, the Holy Spirit dwelling in the holy ones, recompense at the last day, the speaker addressing 'you' with revealed truth. Segments 11-31 open a new chapter cataloguing 'the four matters on account of which men kill one another' — a numbered cosmological-anthropological teaching (mouth/eating, fornication, wealth, war/tyranny) that has the impersonal enumerated structure of the substrate. Editorial fatigue score is strongly negative because the page begins with editorial vocabulary (closing the prior chapter) and shifts into substrate teaching in the second half — the inverse of typical fatigue. Damage is severe (81%), so many classifications rest on partial reconstructions. Segment 13 contains the standard 'he said to his disciples' frame attached to the start of the teaching's opening clause.",
+  "segments": [
+    {
+      "i": 0,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "Closing of prior chapter: 'shall give them mercy and fellowship' — almsgiving/community vocabulary; ecclesial register score fires."
+    },
+    {
+      "i": 1,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'Give it to the Holy Spirit which dwells in them' — institutional language about the Holy Spirit indwelling the elect."
+    },
+    {
+      "i": 2,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "Holy Spirit receives 'their gift' — sacramental/almsgiving frame."
+    },
+    {
+      "i": 3,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'Father of Truth' fulfilling recompense — soteriological/ecclesial application."
+    },
+    {
+      "i": 4,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'Recompense of their wage at the last day' — eschatological reward language tied to almsgiving."
+    },
+    {
+      "i": 5,
+      "classification": "manichaean_ecclesial",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'The Holy Spirit dwells in those holy ones' — ecclesial pneumatology."
+    },
+    {
+      "i": 6,
+      "classification": "hortatory_application",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'How great is this truth which I have unveiled to you' — first-person revelatory address to audience."
+    },
+    {
+      "i": 7,
+      "classification": "hortatory_application",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'Therefore I have said to...' — explicit didactic-pastoral voice; hortatory register score fires."
+    },
+    {
+      "i": 8,
+      "classification": "hortatory_application",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'Of these who shall hear it and believe' — addresses audience reception."
+    },
+    {
+      "i": 9,
+      "classification": "hortatory_application",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'To speak it in one heart' — closing exhortation, undivided heart imagery."
+    },
+    {
+      "i": 10,
+      "classification": "apostolic_dialogue",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "Folio/chapter number ⲟⲏ (78) — editorial codex paratext, not teaching content."
+    },
+    {
+      "i": 11,
+      "classification": "cosmological_substrate",
+      "core_coptic": "— ⲉⲧⲃⲉ ⲡⲩⲧⲁⲩ ⲛϩⲱⲃ ⲉⲧⲉ ⲛ̄ⲣⲱ —",
+      "core_english": "— Concerning the four matters on account of which men —",
+      "removed_material": null,
+      "temporal_note": "Chapter title introducing a numbered cosmological-anthropological teaching: the four matters that drive human violence. Numbered enumeration is substrate structure."
+    },
+    {
+      "i": 12,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲙⲉ ⲙⲟⲩⲟⲩⲧ ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ⲁⲭⲱⲩ",
+      "core_english": "kill one another for them.",
+      "removed_material": null,
+      "temporal_note": "Continuation of chapter title — completes the topic statement."
+    },
+    {
+      "i": 13,
+      "classification": "mixed",
+      "core_coptic": "ⲩ{15}ⲩ ⲛⲛⲁⲃ",
+      "core_english": "'Four great",
+      "removed_material": "Stripped frame attribution 'ⲧⲧⲁ{ⲗⲓⲛ ⲁ}ⲛ ⲡⲁⲭⲉⲩ ⲁⲛⲉⲩⲙⲁⲑⲏⲧⲏⲥ ⲭⲉ' / 'Once again, he said to his disciples:' — apostolic_dialogue formula. Retained the opening of the teaching ('Four great...').",
+      "temporal_note": "Apostolic dialogue score 83.33 — frame formula clearly present. Teaching begins with 'Four great' which belongs to the substrate enumeration."
+    },
+    {
+      "i": 14,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{16} ϣ̄{17} ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲛⲉⲧⲉⲣⲉ ⲛ̄ⲣⲱⲙⲉ ⲧⲏ",
+      "core_english": "{16} {17} in the cosmos, on which all the men [of",
+      "removed_material": null,
+      "temporal_note": "'[matters exist] in the cosmos, on which all men...' — the substrate's universal/cosmic frame for the enumeration."
+    },
+    {
+      "i": 15,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{18} ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ⲁⲭⲱⲟⲩ",
+      "core_english": "{18} one another for them.",
+      "removed_material": null,
+      "temporal_note": "'[the earth kill] one another for them' — completes the universal frame."
+    },
+    {
+      "i": 16,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{19} ⲛ̄ϩⲱⲃ ⲡⲉ {20} ⲙⲡⲣⲱ ⲭⲉ ⲉⲩⲛⲁⲟⲩⲱⲙ",
+      "core_english": "{19} matter is {20} of the mouth, that they shall eat",
+      "removed_material": null,
+      "temporal_note": "First enumerated matter: the mouth/eating. Reconstruction marks 'The first' (ⲧⲧϣⲁⲣ). Enumeration marker is substrate."
+    },
+    {
+      "i": 17,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{21}ⲱ ⲛ̄ⲧⲉ ⲡⲟⲩⲥⲱⲙⲁ",
+      "core_english": "{21} of their body.",
+      "removed_material": null,
+      "temporal_note": "Completes the first matter — body/eating cosmological-anthropological mapping."
+    },
+    {
+      "i": 18,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲧⲧ{22}ⲉⲩ ⲡⲉ {23}ⲟⲩⲥⲓⲁ {24} ⲡⲟⲣⲛⲓⲁ",
+      "core_english": "The {22} is {23}-course {24} fornication",
+      "removed_material": null,
+      "temporal_note": "Second enumerated matter: fornication. Numbered enumeration ('The [second]') retained as substrate structure."
+    },
+    {
+      "i": 19,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{25} ⲛⲛⲕⲁ {26} ⲡⲟⲣⲛⲓⲁ {27} {28} ⲙⲛ ⲛⲥϩⲓ",
+      "core_english": "{25} the things {26} of fornication {27} {28} with women-",
+      "removed_material": null,
+      "temporal_note": "Continuation of second matter description."
+    },
+    {
+      "i": 20,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲙⲉ ⲃⲉⲗⲏ ⲛ̄ϩⲏⲧⲥ̄ ⲙⲛ ⲛⲉⲩⲉⲣⲏⲩ",
+      "core_english": "(women) joining themselves into it with one another.",
+      "removed_material": null,
+      "temporal_note": "Closes the second matter."
+    },
+    {
+      "i": 21,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲧⲧⲙⲁϩϣⲁⲙⲧ ⲛ̄",
+      "core_english": "The third",
+      "removed_material": null,
+      "temporal_note": "Explicit ordinal enumeration marker ⲧⲧⲙⲁϩϣⲁⲙⲧ ('The third') — substrate structural bone."
+    },
+    {
+      "i": 22,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ϩⲱⲃ ⲡⲉ ⲡⲭ{29} {30} ⲧⲙⲛⲧⲣⲙⲙⲁⲟ ⲉⲧⲟⲩⲟⲩⲱⲥⲩ̄ ⲡ{31}",
+      "core_english": "matter is the {29} {30} the wealth which they desire, the {31}",
+      "removed_material": null,
+      "temporal_note": "Third matter: wealth/desire. Anthropological enumeration."
+    },
+    {
+      "i": 23,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲉϣⲁⲩϣⲟⲩϣⲟⲩ ⲙⲙⲁⲩ ⲛϩⲏⲧⲩ̄ ⲁⲭⲛ̄ {32} ϩⲓⲧⲟⲟⲧⲩ",
+      "core_english": "in which they boast among themselves on account of {32} by their hand.",
+      "removed_material": null,
+      "temporal_note": "Continuation of third matter — boasting on account of wealth."
+    },
+    {
+      "i": 24,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲧⲧⲙⲁϩⲩⲧⲁⲩ ⲡⲉ ⲡⲡⲟⲗⲉⲙⲟⲥ ⲙⲛ ⲛϥ̄{33}ⲕⲓⲁ ⲛⲗⲉⲃ",
+      "core_english": "The fourth is the war and the {33} of frenzy",
+      "removed_material": null,
+      "temporal_note": "Fourth ordinal marker; cosmological_substrate score fires (66.67). War/frenzy as fourth matter."
+    },
+    {
+      "i": 25,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{34}ⲉ ⲙⲛ̄ ⲛ̄ⲁⲓⲕⲏ ⲉⲧⲟⲩⲭⲓ ⲙ̄ⲙⲁⲩ ⲙⲛ ⲛⲉⲩⲉⲣⲏⲩ",
+      "core_english": "{34} and the injustices which they take with one another",
+      "removed_material": null,
+      "temporal_note": "Continuation of fourth matter; injustice."
+    },
+    {
+      "i": 26,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲙⲛ̄ ⲛⲉⲩⲉⲣⲏⲩ ⲉⲣⲉ ⲟⲩⲉ ⲃⲣⲟ ⲁⲟⲩⲉ ⲟⲩⲉ {35}ⲛ ⲛⲉⲩⲉⲣ{36}",
+      "core_english": "with one another, one prevailing over another, one {35} the {36}",
+      "removed_material": null,
+      "temporal_note": "Anthropological description: domination of one over another."
+    },
+    {
+      "i": 27,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ϩⲛ ⲟⲩⲧⲩⲣⲁⲛⲛⲓⲁ ⲭⲉ ⲁⲩⲭⲓ ⲟⲩⲣⲉⲛ ϩⲙ ⲡⲕⲟⲥⲙⲟⲥ ⲛ",
+      "core_english": "in tyranny, that they may take a name in the world of",
+      "removed_material": null,
+      "temporal_note": "Tyranny / acquisition of name in the cosmos — anthropological substrate description, internal to the system."
+    },
+    {
+      "i": 28,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ⲛⲉⲧⲥⲁ ⲡⲓⲩⲧⲁⲩ ⲛ̄ⲛⲁⲃ ⲛϩⲱⲃ ⲛⲉⲧ{37}",
+      "core_english": "all men. Those who pursue these four great matters, who {37}",
+      "removed_material": null,
+      "temporal_note": "Recapitulation of the four matters — substrate structural close-out."
+    },
+    {
+      "i": 29,
+      "classification": "cosmological_substrate",
+      "core_coptic": "ⲟⲡ ϩⲛ̄ ⲛ̄ⲉⲥⲡⲉ ⲧⲏⲣⲟⲩ ⲛⲉⲧϣⲟⲟⲡ {38}ⲕⲟⲥⲙⲟⲥ {39}",
+      "core_english": "exist among all the tongues, those who exist {38} cosmos {39}",
+      "removed_material": null,
+      "temporal_note": "Universal cosmic-anthropological scope: all tongues, all the cosmos. Internal to the system."
+    },
+    {
+      "i": 30,
+      "classification": "cosmological_substrate",
+      "core_coptic": "{40}ⲉ ⲥⲉⲥⲱⲭⲉ ⲭⲉⲩⲁⲭⲡⲧⲁⲩ ⲛⲉⲩ ⲛ{41}",
+      "core_english": "{40} they slaughter (one another), that they may take them for themselves {41}",
+      "removed_material": null,
+      "temporal_note": "Slaughter for the four matters — substrate continues describing the anthropological mechanism."
+    },
+    {
+      "i": 31,
+      "classification": "hortatory_application",
+      "core_coptic": null,
+      "core_english": null,
+      "removed_material": null,
+      "temporal_note": "'But I say it to you' — explicit pivot from impersonal cosmological description to first-person pastoral address. Layer boundary."
+    }
+  ]
+}
