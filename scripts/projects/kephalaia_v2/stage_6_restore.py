@@ -261,7 +261,7 @@ def find_gaps_in_core(
     # Which segments are core?
     core_segments = set()
     for seg in core_data.get("segments", []):
-        if seg.get("classification") in ("substrate", "mixed"):
+        if seg.get("classification") in ("cosmological_substrate", "mixed"):
             core_segments.add(seg["i"])
 
     # Filter apparatus to core segments only
@@ -285,7 +285,7 @@ def find_gaps_in_core(
 
 class RestoreStage(PipelineStage):
     stage_name = "Restore Lacunae"
-    stage_number = 5
+    stage_number = 6
     description = "Bilingual gap-filling using correspondential context"
     tool_name = "commit_restorations"
     tool_schema = RESTORE_TOOL
@@ -343,7 +343,7 @@ class RestoreStage(PipelineStage):
 
         core_segments = {
             s["i"]: s for s in core_data.get("segments", [])
-            if s.get("classification") in ("substrate", "mixed")
+            if s.get("classification") in ("cosmological_substrate", "mixed")
         }
         page_lines = {
             seg["i"]: seg for seg in page_data.get("lines", [])

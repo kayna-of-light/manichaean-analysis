@@ -209,21 +209,39 @@ It does not compare; it identifies.
 You receive CORE segments only — already classified as the oldest \
 teaching layer. Read each segment and produce its spiritual sense.
 
+## GAP ANCHORS
+
+The text contains numbered gap placeholders like {0}, {1}, {2}. \
+These are lacunae (missing text) that will be restored later using \
+your spiritual reading as a guide.
+
+As you translate each passage, PRESERVE these gap markers inline in \
+your spiritual prose at the corresponding position. When you reach \
+a gap, write what the spiritual sense requires at that point and \
+embed the marker so a restorer can see exactly what spiritual \
+reality belongs there.
+
+Example:
+  Original: "the great {3}, the battle that the Darkness spread"
+  Spiritual: "the great {3} assault that falsity from evil propagated"
+
+The marker anchors the spiritual insight to the specific gap. \
+Do NOT fill in the natural-plane word — just show what spiritual \
+reality the gap expresses. The restorer will translate back to \
+the text's own vocabulary.
+
 ## RULES
 
 1. **Translate, don't annotate.** Replace every natural image with its \
    spiritual reality. Produce continuous prose.
-2. **Preserve {N} placeholders.** These mark physical gaps. Include \
-   them at their positions in your spiritual reading — they anchor \
-   the gap to its spiritual context for downstream restoration.
-3. **When an image resists**, say so briefly and give your best reading.
-4. **Opposite sense:** Fire, water, animals can be positive or negative \
+2. **When an image resists**, say so briefly and give your best reading.
+3. **Opposite sense:** Fire, water, animals can be positive or negative \
    depending on context (love vs. self-love, truth vs. falsity). \
    Determine from context which sense applies.
-5. **Discrete degrees:** When the text describes five faculties, \
+4. **Discrete degrees:** When the text describes five faculties, \
    five worlds, five elements — read them as discrete levels of \
    reality (celestial/spiritual/natural), not a continuum.
-6. **The Divine Human:** When the text describes cosmic beings with \
+5. **The Divine Human:** When the text describes cosmic beings with \
    body parts, faces, limbs — read them as the Grand Man: the \
    form of love and wisdom at different registers.
 
@@ -236,7 +254,7 @@ When complete, call commit_reading exactly once."""
 
 class ReadStage(PipelineStage):
     stage_name = "Correspondential Reading"
-    stage_number = 4
+    stage_number = 5
     description = "Spiritual-sense reading of core teaching segments"
     tool_name = "commit_reading"
     tool_schema = READ_TOOL
@@ -279,7 +297,7 @@ class ReadStage(PipelineStage):
 
         core_segments = [
             s for s in segments
-            if s.get("classification") in ("substrate", "mixed")
+            if s.get("classification") in ("cosmological_substrate", "mixed")
         ]
 
         if not core_segments:
