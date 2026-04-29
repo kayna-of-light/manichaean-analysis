@@ -267,7 +267,7 @@ def format_corpus_for_review(
         # Core segments
         core_segs = [
             s for s in core.get("segments", [])
-            if s.get("classification") in ("substrate", "mixed")
+            if s.get("classification") in ("cosmological_substrate", "mixed")
         ]
         reading_segs = {
             s["i"]: s for s in reading.get("segments", [])

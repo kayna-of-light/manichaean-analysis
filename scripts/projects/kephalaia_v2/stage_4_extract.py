@@ -803,21 +803,32 @@ class ExtractStage(PipelineStage):
                 )
             parts.append("")
 
-        # Seam detection results
+        # Build seam lookup for inline display
+        # seams array is parallel to segments — seams[i] = seam data for segment i
         seams = score_data.get("seams", [])
-        flagged_seams = [s for s in seams if s.get("seam_flag")]
-        if flagged_seams:
-            parts.append(
-                f"### Editorial seams detected ({len(flagged_seams)})"
-            )
-            for s in flagged_seams:
-                parts.append(
-                    f"  ⚠ SEAM at segment {s.get('i', '?')}: "
-                    f"{s.get('seam_note', 'editorial seam detected')}"
-                )
-            parts.append("")
+        seam_by_i = {}
+        for i, s in enumerate(seams):
+            if s.get("seam_flag"):
+                note = s.get("seam_note", "")
+                if not note:
+                    # Build note from available fields
+                    parts_s = []
+                    bp = s.get("bridge_phrase")
+                    if bp:
+                        parts_s.append(f"bridge: '{bp}'")
+                    inst = s.get("institutional_terms_found", [])
+                    if inst:
+                        parts_s.append(
+                            f"institutional: {', '.join(inst)}"
+                        )
+                    if s.get("register_shift"):
+                        parts_s.append("register shift")
+                    note = " + ".join(parts_s) if parts_s else (
+                        "editorial seam detected"
+                    )
+                seam_by_i[i] = note
 
-        # Per-segment scores
+        # Per-segment scores (with seam flags inline)
         segments = score_data.get("segments", [])
         parts.append("### Per-segment scores")
         for seg in segments:
@@ -835,7 +846,10 @@ class ExtractStage(PipelineStage):
             if not score_str:
                 score_str = "no hits"
 
-            parts.append(f"  [i={i}] {score_str}")
+            line = f"  [i={i}] {score_str}"
+            if i in seam_by_i:
+                line += f"\n    ⚠ SEAM: {seam_by_i[i]}"
+            parts.append(line)
 
         return "\n".join(parts)
 
