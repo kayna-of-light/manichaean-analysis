@@ -2,7 +2,7 @@
 """
 Advisory review of the full extracted/restored corpus.
 
-Pipeline stage 6: runs AFTER restore.py, BEFORE lexicon.py.
+Pipeline stage 7: runs AFTER stage_6_restore.py, BEFORE stage_8_lexicon.py.
 This stage is ADVISORY — its output informs but does not bind.
 
 Feeds the complete corpus (all core + restored pages) to Claude in a

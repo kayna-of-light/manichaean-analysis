@@ -2,7 +2,7 @@
 """
 Correspondential reading of extracted core segments.
 
-Pipeline stage 4: runs AFTER extract.py, BEFORE restore.py.
+Pipeline stage 5: runs AFTER stage_4_extract.py, BEFORE stage_6_restore.py.
 
 This stage produces a standalone spiritual reading of the core teaching
 layer. It translates each segment's natural sense into its spiritual
