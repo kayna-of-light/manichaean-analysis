@@ -1,0 +1,655 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲛⲃ",
+      "english": "52",
+      "basis": "Page number bracketed in transcription; matches sequential pagination."
+    },
+    {
+      "id": 1,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲉⲫⲁⲗⲁⲓⲟⲛ",
+      "english": "[hapter]",
+      "basis": "Standard chapter header ⲛ̄ⲕⲉⲫⲁⲗⲁⲓⲟⲛ; only ⲛⲕ visible."
+    },
+    {
+      "id": 2,
+      "segment": 5,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 3,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲛⲧⲁⲣⲉ",
+      "english": "when",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 4,
+      "segment": 6,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 5,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲛⲧⲉ ⲡⲧⲕⲉⲕⲉ ⲁϥ",
+      "english": "of the Darkness, he",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 6,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲙ̄ⲙⲏⲉ",
+      "english": "truly",
+      "basis": "Partial reading visible in transcription."
+    },
+    {
+      "id": 7,
+      "segment": 8,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 8,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 7,
+      "partial": "ⲧⲥ"
+    },
+    {
+      "id": 9,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 10,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 7
+    },
+    {
+      "id": 11,
+      "segment": 10,
+      "type": "restoration",
+      "coptic": "ⲡⲉⲓ",
+      "english": "This",
+      "basis": "Editor restoration; standard demonstrative anchor."
+    },
+    {
+      "id": 12,
+      "segment": 10,
+      "type": "restoration",
+      "coptic": "ⲉⲧⲁⲛϩ ⲧϩⲉⲡⲧ ϩⲁⲡⲣⲁ ⲡⲓ",
+      "english": "Living [Spirit] hid concerning the",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 13,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲙⲉⲛ ⲁϥ",
+      "english": "First Man indeed he",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 14,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲣ̄ⲣⲟ ⲛⲛⲁⲡⲧⲕⲉⲕⲉ ⲁⲉ",
+      "english": "King of those of the Darkness, however,",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 15,
+      "segment": 13,
+      "type": "restoration",
+      "coptic": "ϩⲏⲧϥ",
+      "english": "him",
+      "basis": "Editor restoration ⲛϩⲏⲧϥ 'in him'."
+    },
+    {
+      "id": 16,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 17,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 18,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 19,
+      "segment": 15,
+      "type": "restoration",
+      "coptic": "ⲕⲟⲥⲙⲟⲥ",
+      "english": "cosmos",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 20,
+      "segment": 16,
+      "type": "restoration",
+      "coptic": "ⲡⲟⲩ",
+      "english": "the",
+      "basis": "Editor restoration completing ⲡⲟⲩⲁⲓⲛⲉ across line break."
+    },
+    {
+      "id": 21,
+      "segment": 17,
+      "type": "restoration",
+      "coptic": "ⲧⲙⲡ̄ⲣⲉ",
+      "english": "the bond",
+      "basis": "Editor restoration; parallel to ⲡⲥⲛⲁϩ in same clause."
+    },
+    {
+      "id": 22,
+      "segment": 19,
+      "type": "lacuna",
+      "est_chars": 2,
+      "partial": ".."
+    },
+    {
+      "id": 23,
+      "segment": 20,
+      "type": "restoration",
+      "coptic": "ⲁⲣⲟⲙⲡϣⲓⲛⲉ ⲛ̄",
+      "english": "to inspect",
+      "basis": "Editor restoration in transcription."
+    },
+    {
+      "id": 24,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲭ",
+      "english": "ch",
+      "basis": "Editor restoration completing ⲧⲉⲭⲛⲓⲧⲏⲥ across line break."
+    },
+    {
+      "id": 25,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲛⲓⲧⲏⲥ",
+      "english": "ftsmen",
+      "basis": "Editor restoration completing ⲧⲉⲭⲛⲓⲧⲏⲥ."
+    },
+    {
+      "id": 26,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 1
+    },
+    {
+      "id": 27,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 7
+    },
+    {
+      "id": 28,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 1,
+      "partial": "ⲥ"
+    },
+    {
+      "id": 29,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 30,
+      "segment": 23,
+      "type": "lacuna",
+      "est_chars": 6,
+      "partial": "ⲥⲧ...ⲛϥ"
+    },
+    {
+      "id": 31,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲧⲉ",
+      "english": "tects",
+      "basis": "Editor restoration completing ⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ across line break."
+    },
+    {
+      "id": 32,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲧⲁ",
+      "english": "in",
+      "basis": "Editor restoration completing ⲕⲁⲧⲁ across line break."
+    },
+    {
+      "id": 33,
+      "segment": 26,
+      "type": "restoration",
+      "coptic": "ⲟⲩ",
+      "english": "a",
+      "basis": "Editor restoration completing ⲟⲩⲛⲁⲟ ⲛ̄ⲣⲉϣⲉ 'great joy'."
+    },
+    {
+      "id": 34,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲛⲁⲟ ⲛ̄ⲣⲉϣⲉ",
+      "english": "great joy",
+      "basis": "Editor restoration; standard collocation 'rejoice in great joy'."
+    },
+    {
+      "id": 35,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 4,
+      "partial": "..ⲉⲥ"
+    },
+    {
+      "id": 36,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲁⲩⲭⲱⲕ ⲁⲃⲁⲗ",
+      "english": "they have completed",
+      "basis": "Editor restoration; fits the parallel with ⲥⲙⲓⲛⲉ 'establish' in preceding clause."
+    },
+    {
+      "id": 37,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ϩⲛ",
+      "english": "co",
+      "basis": "Editor restoration completing ⲉϩⲛⲏⲩ 'comes' across line break."
+    },
+    {
+      "id": 38,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲓ",
+      "english": "i",
+      "basis": "Editor restoration completing ϩⲟⲛⲡϣⲓⲛⲉ 'inspect' across line break."
+    },
+    {
+      "id": 39,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲗⲁⲩ",
+      "english": "rays",
+      "basis": "Editor restoration completing ⲡⲁⲣⲁⲙⲡⲟⲗⲁⲩⲉ (Greek παρεμβολή 'arrays/encampments')."
+    },
+    {
+      "id": 40,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲱϩ(ⲁⲛ?)",
+      "english": "also",
+      "basis": "Editor tentative restoration; fits the comparative ⲧϩⲉ ϩⲱⲥ 'so too'."
+    },
+    {
+      "id": 41,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲉⲥⲃⲉⲩ",
+      "english": "Amba",
+      "basis": "Editor restoration completing ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ across damage."
+    },
+    {
+      "id": 42,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲉⲡ",
+      "english": "since",
+      "basis": "Editor restoration completing ⲉⲡⲉⲓⲁⲏ 'since'."
+    },
+    {
+      "id": 43,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲓ",
+      "english": "",
+      "basis": "Editor restoration completing ⲉⲡⲉⲓⲁⲏ across line break."
+    },
+    {
+      "id": 44,
+      "segment": 32,
+      "type": "restoration",
+      "coptic": "ⲁⲛⲉϩϩⲃⲏⲩⲉ",
+      "english": "his works",
+      "basis": "Editor restoration; parallels the ⲛⲉϩϩⲃⲏⲩⲉ 'works' theme of the preceding simile."
+    },
+    {
+      "id": 45,
+      "segment": 33,
+      "type": "lacuna",
+      "est_chars": 10
+    }
+  ],
+  "header": {
+    "page_number": "ⲛⲃ",
+    "title_coptic": "ⲛ̄ⲕ{1}",
+    "title_english": "Of the C{1}"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "ϩⲙⲉⲥⲧ ⲁⲡⲓⲧⲛ̄ ⲛⲛⲉⲩ ⲛⲓⲙ ϩⲁⲓⲛⲉ ⲛϩⲏⲧⲟⲩ ⲥⲉⲧⲁⲟⲥ ϩⲁⲣⲁⲩ ⲛ̄ⲛⲟⲩϣⲃⲉⲣⲉ ⲉⲩϩⲉⲝϩⲁⲝⲧ ϩⲛ̄ ⲟⲩⲙⲡ̄ⲣⲉ ⲉⲥⲛⲁϣⲧ",
+      "english": "seated below at every hour. Some among them are placed under their fellows, being squeezed in a strong bond,"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ϩⲛⲕⲉⲕⲁⲩⲉ ⲁϥⲉⲓⲧⲟⲩ ⲛⲉⲝⲟⲩⲥⲓⲁⲥⲧⲏⲥ ⲁⲝⲛ̄ ⲛⲉⲩⲉⲣⲏⲩ ⲛϩⲏⲧⲟⲩ ϩⲁⲣⲓϩⲁⲣⲁⲩ",
+      "english": "and others he made into powers over each other among them, one over another,"
+    },
+    {
+      "i": 2,
+      "n": 4,
+      "coptic": "ⲝⲉⲕⲁⲥ ⲉⲩⲛⲁⲉⲓⲣⲉ ⲙ̄ⲡⲉϣⲱⲕ ⲛ̄ϩⲏⲧ ϩⲛ ⲛⲉⲓ ⲉⲧⲙⲡⲓⲧⲛⲉ ⲙⲙⲁⲩ",
+      "english": "so that they might do the desire of heart in those who are below them.",
+      "break_after": true
+    },
+    {
+      "i": 3,
+      "n": 6,
+      "coptic": "ϣⲱⲡⲉ ⲉⲧⲉⲧⲛ̄ⲥⲁⲩⲛⲉ ⲙ̄ⲡⲓⲣⲏⲧⲉ ⲁⲛ {2} ⲧⲉ ⲝⲉ {3}",
+      "english": "Be knowing of this manner again {2} that {3}"
+    },
+    {
+      "i": 4,
+      "n": 7,
+      "coptic": "ⲡⲓⲱⲧ ⲛⲧⲉ ⲡⲱⲛϩ̄ ⲥⲙⲓⲛⲉ ⲛⲛϩⲉⲡⲧ {4}",
+      "english": "the Father of Life established the hidden ones, {4}"
+    },
+    {
+      "i": 5,
+      "n": 8,
+      "coptic": "ⲁϥⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲛⲛ̄ⲟⲁⲙ ⲧⲏⲣⲟⲩ {5}",
+      "english": "he revealed all the powers {5}"
+    },
+    {
+      "i": 6,
+      "n": 9,
+      "coptic": "ⲧϩⲉⲡⲧ ⲁⲣⲁⲩ ⲛⲟⲉ ⲛ̄ⲟⲩⲣⲉϩⲧϩⲉⲡⲧ {6} {7}",
+      "english": "hid them in the manner of one who hides {6} {7}"
+    },
+    {
+      "i": 7,
+      "n": 10,
+      "coptic": "{8} ⲧⲥ ⲙⲛ̄ {9} {10}",
+      "english": "{8} her(?) and {9} {10}"
+    },
+    {
+      "i": 8,
+      "n": 11,
+      "coptic": "{11} ⲡⲉ ⲡϣⲁⲣⲡ ⲛ̄ϩⲉⲡⲧ ⲉⲧⲁ ⲡⲡⲛ̄ⲁ {12}",
+      "english": "{11} is the first hidden one which the {12}"
+    },
+    {
+      "i": 9,
+      "n": 12,
+      "coptic": "ϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲁⲛⲁⲣⲭⲱⲛ · {13}",
+      "english": "First Man, from the archons. {13}"
+    },
+    {
+      "i": 10,
+      "n": 13,
+      "coptic": "ⲧ ⲡⲟⲣⲟ ⲛⲉϩ ⲕⲁⲧⲁ ⲡⲉϩⲟⲣⲟ {14}",
+      "english": "gave him kingship according to his kingship. {14}"
+    },
+    {
+      "i": 11,
+      "n": 14,
+      "coptic": "ⲁϥⲧⲁⲭⲁϥ ⲕⲁⲧⲁ ⲡⲧⲁⲭⲟ ⲉⲧⲁϩϣⲱϩⲧ ⲛ{15} {16}",
+      "english": "established him according to the establishment that was lacking in {15} {16}"
+    },
+    {
+      "i": 12,
+      "n": 15,
+      "coptic": "{17} ⲁ ⲧⲙⲡ̄ⲣⲉ ⲛ̄ⲧⲟⲁⲧ ϣⲱⲡⲉ ⲛⲉⲥ{18}",
+      "english": "{17} the bond of agreement(?) became to her {18}"
+    },
+    {
+      "i": 13,
+      "n": 16,
+      "coptic": "ⲡⲧⲕⲁϩ ϣⲁ ⲡⲥⲏⲩ ⲛⲧϩⲁⲏ ⲉⲧⲟⲩⲛⲁⲃⲱⲗ ⲁⲃⲁⲗ ⲙⲡ{19}",
+      "english": "the earth, until the last time when they will dissolve the {19}"
+    },
+    {
+      "i": 14,
+      "n": 17,
+      "coptic": "ⲛϩⲱⲝⲛⲉ ϩⲛ ⲧⲛⲁⲟ ⲛⲥⲉⲧⲉ ⲛ̄ⲥⲉⲛⲁϩϥ ⲁⲃⲁⲗ ⲛⲧⲉ {20}",
+      "english": "and they fail in the Great Fire, and they will rescue him forth. As for the {20}"
+    },
+    {
+      "i": 15,
+      "n": 18,
+      "coptic": "ⲁⲓⲛⲉ ⲙⲉⲛ ⲃⲱⲕ ⲁⲧⲉϩⲭⲱⲣⲁ ⲛ̄ⲧⲉ ⲡⲧⲕⲉⲕⲉ ϩⲱϩ ⲟϣ ϩⲛ̄",
+      "english": "Light, it goes to its region, but the Darkness too is shut up in"
+    },
+    {
+      "i": 16,
+      "n": 19,
+      "coptic": "{21} ⲙⲛ ⲡⲥⲛⲁϩ ϣⲁⲁⲛⲏϩⲉ ·",
+      "english": "{21} and the chain forever.",
+      "break_after": true
+    },
+    {
+      "i": 17,
+      "n": 20,
+      "coptic": "{22} ⲧⲟⲓⲛⲉⲓ ϩⲱϩ ⲙⲡⲙⲁϩϣⲁⲙⲧ· ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲉⲧⲁϥⲉⲓ",
+      "english": "{22} this coming likewise of the Third Ambassador, who came"
+    },
+    {
+      "i": 18,
+      "n": 21,
+      "coptic": "{23} ⲛⲉⲧⲁⲧⲡ̄ ⲁϩⲟⲩⲛ ϩⲛ̄ ⲧϩⲱⲛⲏ ⲉϩⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲛⲁⲟ ⲛ̄ⲣ̄ⲡⲟ",
+      "english": "{23} those taken into the prison(?), being likened to a great king"
+    },
+    {
+      "i": 19,
+      "n": 22,
+      "coptic": "ⲉϩⲛⲏⲩ ⲛϥⲟⲙⲡϣⲓⲛⲉ ⲛϩⲛⲧⲉ{24}",
+      "english": "who comes to inspect cra{24}"
+    },
+    {
+      "i": 20,
+      "n": 23,
+      "coptic": "{25} {26} ⲛⲧⲉϩ ⲙⲛ ϩⲛ̄ {27} {28} ⲥ ⲙⲛ̄ ϩⲙ̄ⲡⲣⲉ {29}",
+      "english": "{25} {26} his hand and with {27} {28} and bond {29}"
+    },
+    {
+      "i": 21,
+      "n": 24,
+      "coptic": "{30} ⲛⲉⲧⲁⲛⲓⲧ ϩⲱϩ ⲛⲛⲧⲉⲭⲛⲓⲧⲏⲥ ⲙⲛ ⲛⲁⲣⲭⲓ{31}",
+      "english": "{30} the beautiful ones, also the craftsmen and the archi{31}"
+    },
+    {
+      "i": 22,
+      "n": 25,
+      "coptic": "ⲕⲧⲱⲛ ⲙⲛ ⲛⲣⲉϩⲣ̄ⲁⲡⲉ ⲉⲧⲉ ⲟⲩⲛⲧⲉϩⲥⲟⲩ ⲙ̄ⲙⲉⲩ ⲕⲁ{32}",
+      "english": "tects and the chiefs whom they have in each"
+    },
+    {
+      "i": 23,
+      "n": 26,
+      "coptic": "ⲧⲟⲡⲟⲥ ⲧⲟⲡⲟⲥ ⲉϩϣⲁⲛⲛⲉⲩ ⲁⲣⲁⲩ ⲝⲉ ⲁⲩ̄ⲣ̄ϩⲱϩ ⲕⲁⲗⲱⲥ",
+      "english": "place — when he sees them, that they have done well,"
+    },
+    {
+      "i": 24,
+      "n": 27,
+      "coptic": "ⲁⲩⲭⲱⲛϩ ⲛ̄ⲛⲉϩϩⲃⲏⲩⲉ ⲁⲡⲟⲩⲣⲏⲧⲉ ϣⲁϩⲣⲉϣⲉ ϩⲛ {33}",
+      "english": "they have given life to the works in their manner, he rejoices in {33}"
+    },
+    {
+      "i": 25,
+      "n": 28,
+      "coptic": "{34} {35} ϣⲁϩϣⲱⲡ ⲡϩⲙⲁⲧ ⲛ̄ⲛⲣⲉϩⲣ̄ⲁⲡⲉ ⲛⲉⲓ",
+      "english": "{34}, {35} he receives the gift of the chiefs, those"
+    },
+    {
+      "i": 26,
+      "n": 29,
+      "coptic": "ⲉⲧⲁⲩⲥⲙⲓⲛⲉ ⲛⲛⲉϩϩⲃⲏⲩⲉ {36} ⲛⲛ̄ⲉϩⲧⲱϣ",
+      "english": "who established the works, {36} their commands."
+    },
+    {
+      "i": 27,
+      "n": 30,
+      "coptic": "ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲟⲩⲛ ⲙ̄ⲡⲓⲛⲁⲟ ⲛⲣ̄ⲡⲟ ⲉ{37}ⲏⲩ ⲛϩⲟⲛⲡϣ{38}",
+      "english": "According then to the way of this Great King who {37}mes to {38}nspect"
+    },
+    {
+      "i": 28,
+      "n": 31,
+      "coptic": "ⲛⲉ ⲛⲛⲉϩϩⲃⲏⲩⲉ ⲙⲛ ⲛⲉϩⲡⲁⲣⲁⲙⲡⲟ{39}ⲉ ⲧϩⲉ ϩ{40}",
+      "english": "the works and his arr{39}ays, so {40}"
+    },
+    {
+      "i": 29,
+      "n": 32,
+      "coptic": "ⲧⲉ ⲧⲉⲓ ⲛⲧⲟⲓⲛⲉⲓ ⲙⲡⲙⲁϩϣⲁⲙⲧ ⲙⲡⲣ{41}ⲧⲏⲥ {42}ⲉ{43}",
+      "english": "is this coming of the Third {41}ssador. {42}{43}nce"
+    },
+    {
+      "i": 30,
+      "n": 33,
+      "coptic": "ⲁⲏ ⲛⲧⲁⲣⲉϩⲉⲓ ⲁⲃⲁⲗ ϩⲱϩ ⲁⲛ ⲁϩⲛⲉⲩ {44}",
+      "english": "when he came forth, he too saw {44}"
+    },
+    {
+      "i": 31,
+      "n": 34,
+      "coptic": "ⲉⲩⲥⲙⲁⲛⲧ ⲉⲩⲥⲏⲣ ⲁⲃⲁⲗ ⲉⲩ{45}",
+      "english": "established, spread forth, {45}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": 0,
+      "coptic_form": "ϩⲙⲉⲥⲧ ⲁⲡⲓⲧⲛ̄",
+      "decision": "Translated 'seated below.' ϩⲙⲉⲥⲧ is the Lyc. qualitative of ϩⲙⲟⲟⲥ 'sit, dwell' + ⲁⲡⲓⲧⲛ̄ 'downward.' Spatial-cosmological idiom for the lower-placed archons.",
+      "confidence": "high"
+    },
+    {
+      "segment": 0,
+      "coptic_form": "ⲉⲩϩⲉⲝϩⲁⲝⲧ",
+      "decision": "Translated 'being squeezed' as qualitative of reduplicated ϩⲱϫϩⲱϫ 'press, oppress, constrain.' Fits the bond-imagery (ⲙⲡ̄ⲣⲉ ⲉⲥⲛⲁϣⲧ 'strong bond').",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 2,
+      "coptic_form": "ⲡⲉϣⲱⲕ ⲛ̄ϩⲏⲧ",
+      "decision": "Translated 'desire of heart.' ϣⲱⲕ ⲛ̄ϩⲏⲧ = 'pleasure/desire of heart' — the will-direction of the archonic powers operating downward.",
+      "confidence": "high"
+    },
+    {
+      "segment": 4,
+      "coptic_form": "ⲡⲓⲱⲧ ⲛⲧⲉ ⲡⲱⲛϩ̄",
+      "decision": "'Father of Life' — Manichaean cosmological title; here likely the Father of Greatness (Father of the Living) in his role of establishing the hidden cosmic structure.",
+      "confidence": "high"
+    },
+    {
+      "segment": 6,
+      "coptic_form": "ⲣⲉϩⲧϩⲉⲡⲧ",
+      "decision": "'One who hides' — ⲣⲉϥ- ('one who does') + ⲧϩⲉⲡⲧ (causative of ϩⲏⲡ 'hide'). Forms an agent-noun parallel to ⲣⲉϩ†ⲥⲃⲱ 'teacher.'",
+      "confidence": "high"
+    },
+    {
+      "segment": 10,
+      "coptic_form": "ⲧ ⲡⲟⲣⲟ ⲛⲉϩ",
+      "decision": "Translated '[gave] him kingship.' Uses the established idiom ϯ ⲡⲟⲣⲟ 'give kingship/establish as king' from the glossary; ⲛⲉϩ = Lyc. 'to him' (= ⲛⲁϥ).",
+      "confidence": "high"
+    },
+    {
+      "segment": 11,
+      "coptic_form": "ⲡⲧⲁⲭⲟ ⲉⲧⲁϩϣⲱϩⲧ",
+      "decision": "Translated 'the establishment that was lacking.' ϣⲱϩⲧ = 'be wanting, deficient.' Fits Manichaean theology: the King of Darkness's kingship is established only on a defective register, contrasted with First Man's true kingship.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 12,
+      "coptic_form": "ⲧⲙⲡ̄ⲣⲉ ⲛ̄ⲧⲟⲁⲧ",
+      "decision": "Tentatively 'bond of agreement.' ⲧⲟⲁⲧ uncertain — possibly Lyc. variant of ⲧⲱⲧ 'agreement, persuasion' (cf. ⲡⲓⲧⲱⲧ in vocab). Could alternatively reflect a possessive 'her bond.'",
+      "confidence": "low"
+    },
+    {
+      "segment": 14,
+      "coptic_form": "ⲛϩⲱⲝⲛⲉ",
+      "decision": "Read as ⲛ̄(ⲥⲉ)ϩⲱⲝⲛⲉ = 'and they fail/cease' (= ⲱⲝⲛⲉ from glossary). Eschatological: the cosmic structures fail in the Great Fire.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 14,
+      "coptic_form": "ⲛ̄ⲥⲉⲛⲁϩϥ ⲁⲃⲁⲗ",
+      "decision": "Translated 'and they will rescue him forth.' Read as ⲛ̄ⲥⲉⲛⲁⲍⲙϥ ⲁⲃⲁⲗ (assimilation of ⲙ) — ⲛⲁⲍⲙⲉϩ from vocab = 'save, rescue.' Refers to the rescue of light from the dissolving cosmos.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 15,
+      "coptic_form": "ϩⲱϩ ⲟϣ",
+      "decision": "Translated 'too is shut up.' ϩⲱϩ = emphatic 'also/too' (Lyc. ϩⲱⲱϥ). ⲟϣ likely from ⲱϣ 'bind, fasten, shut up' — paralleling 'in the bond and the chain.'",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲧϩⲱⲛⲏ",
+      "decision": "Translated tentatively 'the prison(?).' Lexeme uncertain. Possibly = ⲧⲍⲱⲛⲏ 'the Zone/Girdle' (Greek ζώνη — see vocab) with ϩ/ⲍ alternation, fitting the Manichaean cosmology where captured archons are bound in the zodiacal zone after the Third Ambassador's coming. Alternative: a Coptic term for 'fastness/enclosure.' Flagged for further investigation.",
+      "confidence": "low"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲛⲉⲧⲁⲧⲡ̄",
+      "decision": "Translated 'those taken (in).' Past relative + ⲱⲡ/ⲧⲱⲡ 'gather, take in.' These are the captured archonic powers awaiting inspection — fits the simile of the king inspecting his prisoners/works.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 22,
+      "coptic_form": "ⲣⲉϩⲣ̄ⲁⲡⲉ",
+      "decision": "Translated 'chiefs.' Compound: ⲣⲉϥ- ('one who does') + ⲣ̄- ('do/make') + ⲁⲡⲉ ('head') = 'head-doer' = chief/foreman. Parallels ⲣⲉϩ†ⲥⲃⲱ 'teacher.' Fits the inspection-of-craftsmen simile: foremen reporting to the king.",
+      "confidence": "high"
+    },
+    {
+      "segment": 24,
+      "coptic_form": "ⲁⲩⲭⲱⲛϩ",
+      "decision": "Translated tentatively 'they have given life to.' Reading ⲁⲩ-ⲭⲱⲛϩ where ⲭⲱⲛϩ = ⲱⲛϩ̄/ⲁⲛϩ 'live, give life.' The artisan giving life to his works fits the simile. Alternative: 'they have completed/laid out' (cognate with ⲕⲱⲛϩ 'complete'). Confidence moderate.",
+      "confidence": "low"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲡⲁⲣⲁⲙⲡⲟⲗⲁⲩⲉ",
+      "decision": "Translated 'arrays.' Greek loanword παρεμβολαί 'encampments, arrays, formations' — what the king inspects alongside the works. Standard military-administrative term.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 30,
+      "coptic_form": "ⲛⲧⲁⲣⲉϩⲉⲓ ⲁⲃⲁⲗ",
+      "decision": "Translated 'when he came forth.' ⲛ̄ⲧⲁⲣⲉ-ϩ-ⲉⲓ ⲁⲃⲁⲗ — temporal + 3sg.m + 'come' + 'forth.' The forth-coming of the Third Ambassador to inspect the cosmos.",
+      "confidence": "high"
+    },
+    {
+      "segment": 31,
+      "coptic_form": "ⲉⲩⲥⲏⲣ ⲁⲃⲁⲗ",
+      "decision": "Translated 'spread forth.' ⲥⲏⲣ qualitative of ⲥⲱⲣ 'scatter, spread, disperse' + ⲁⲃⲁⲗ 'out, forth.' Paired with ⲉⲩⲥⲙⲁⲛⲧ 'established' — the works are both established and spread out.",
+      "confidence": "high"
+    }
+  ],
+  "page": 52
+}

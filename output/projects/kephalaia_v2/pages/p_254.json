@@ -1,0 +1,691 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲥⲛⲁ",
+      "english": "251",
+      "basis": "Editorial restoration of the Coptic page numeral; the leaf is given page 254 in modern Arabic numbering with the original ms numeral partly damaged."
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲛⲟⲩ",
+      "english": "Inquir-",
+      "basis": "Editorial restoration completing ⲛⲟⲩⲓⲉⲧ 'inquire'; verb of disciple-question opening matching the Kephalaia's standard 'inquiry concerning' formula"
+    },
+    {
+      "id": 2,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲗ",
+      "english": "-orth",
+      "basis": "Editorial restoration completing ⲁⲃⲁⲗ 'forth' — standard Lyc directional"
+    },
+    {
+      "id": 3,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲧⲉ",
+      "english": "Wh-",
+      "basis": "Editorial restoration completing ⲉⲧⲉⲣⲉ 'when' — temporal conjunction continuing from line 1's ⲉ̄"
+    },
+    {
+      "id": 4,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "in",
+      "basis": "Editorial restoration: directional/preposition introducing the next prepositional phrase"
+    },
+    {
+      "id": 5,
+      "segment": 2,
+      "type": "restoration",
+      "coptic": "ⲁⲙⲙⲟ",
+      "english": "in the wat-",
+      "basis": "Editorial restoration completing ⲁⲙ̄ⲙⲟⲩⲓⲉⲩⲉ 'in the waters'"
+    },
+    {
+      "id": 6,
+      "segment": 3,
+      "type": "restoration",
+      "coptic": "ⲕ",
+      "english": "you-",
+      "basis": "Editorial restoration completing ⲁⲕϭⲛ '(you find)' — 2sg perfect"
+    },
+    {
+      "id": 7,
+      "segment": 3,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "(s)",
+      "basis": "Editorial restoration completing ⲛⲉϩⲟⲩⲣⲏⲧⲉ 'his feet'"
+    },
+    {
+      "id": 8,
+      "segment": 4,
+      "type": "restoration",
+      "coptic": "ⲱ",
+      "english": "al-",
+      "basis": "Editorial restoration completing ⲍⲱⲱϩ 'also' — Lyc reflexive/intensive particle"
+    },
+    {
+      "id": 9,
+      "segment": 4,
+      "type": "restoration",
+      "coptic": "ⲟⲩ",
+      "english": "wat-",
+      "basis": "Editorial restoration: start of ⲁⲙⲙⲟⲩⲓⲉⲩⲉ 'into the waters' continuing onto line 6"
+    },
+    {
+      "id": 10,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲓⲉⲩⲉ",
+      "english": "-ers",
+      "basis": "Editorial restoration completing ⲁⲙⲙⲟⲩⲓⲉⲩⲉ 'into the waters'"
+    },
+    {
+      "id": 11,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ϩ",
+      "english": "him",
+      "basis": "Editorial restoration completing ⲁⲣⲁϩ 'to him' (3sg.m suffixed preposition)"
+    },
+    {
+      "id": 12,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲛϩⲏ",
+      "english": "in i-",
+      "basis": "Editorial restoration completing ⲛ̄ϩⲏⲧϥ̄ 'in it'"
+    },
+    {
+      "id": 13,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲱ",
+      "english": "Be-",
+      "basis": "Editorial restoration completing ϣⲱⲡⲉ 'become' — beginning of imperative across line break"
+    },
+    {
+      "id": 14,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲡⲉ",
+      "english": "-come",
+      "basis": "Editorial restoration completing ϣⲱⲡⲉ 'become'"
+    },
+    {
+      "id": 15,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ϩ",
+      "english": "fast",
+      "basis": "Editorial restoration completing ⲁⲣⲉⲧϩ in idiom ⲧⲏⲕ ⲁⲣⲉⲧ⸗ 'stand fast'"
+    },
+    {
+      "id": 16,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲙⲙ",
+      "english": "in m-",
+      "basis": "Editorial restoration completing ⲍⲙ̄ ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ 'in the mystery'"
+    },
+    {
+      "id": 17,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲁⲉ",
+      "english": "now",
+      "basis": "Editorial restoration: discourse-particle 'now/then'"
+    },
+    {
+      "id": 18,
+      "segment": 9,
+      "type": "restoration",
+      "coptic": "ⲭⲉ ϣ",
+      "english": "is that ha-",
+      "basis": "Editorial restoration: ⲭⲉ introduces explanatory clause; ϣ begins ϣⲁⲣⲉ habitual"
+    },
+    {
+      "id": 19,
+      "segment": 9,
+      "type": "restoration",
+      "coptic": "ⲛϩ",
+      "english": "-fest",
+      "basis": "Editorial restoration completing ⲟⲩⲱⲛϩ 'manifest'"
+    },
+    {
+      "id": 20,
+      "segment": 10,
+      "type": "restoration",
+      "coptic": "ⲁⲗ",
+      "english": "-orth",
+      "basis": "Editorial restoration completing ⲁⲃⲁⲗ 'forth'"
+    },
+    {
+      "id": 21,
+      "segment": 10,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "(sign)",
+      "basis": "Editorial restoration completing ⲙⲉⲓⲛⲉ 'sign'"
+    },
+    {
+      "id": 22,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲡ",
+      "english": "the",
+      "basis": "Editorial restoration of definite article ⲡ-"
+    },
+    {
+      "id": 23,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲧⲛ",
+      "english": "-ward",
+      "basis": "Editorial restoration completing ⲁⲡⲓⲧⲛⲉ 'downward'"
+    },
+    {
+      "id": 24,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲕⲟ",
+      "english": "co-",
+      "basis": "Editorial restoration completing ⲁⲛⲕⲟⲥⲙⲟⲥ 'to the cosmos'"
+    },
+    {
+      "id": 25,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲁⲏ",
+      "english": "since",
+      "basis": "Editorial restoration completing ⲉⲡⲉⲓⲁⲏ 'since/because'"
+    },
+    {
+      "id": 26,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 3,
+      "partial": "ⲥⲉ"
+    },
+    {
+      "id": 27,
+      "segment": 13,
+      "type": "restoration",
+      "coptic": "ⲉ ⲩⲁ",
+      "english": "that unto",
+      "basis": "Editorial restoration: ⲭⲉ purpose-clause + ⲩⲁ 'unto' beginning the watch-action phrase"
+    },
+    {
+      "id": 28,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 29,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ⲉϩ",
+      "english": "shall-",
+      "basis": "Editorial restoration completing future relative ⲉϩⲛⲁⲭϥ̄ 'who shall cast'"
+    },
+    {
+      "id": 30,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ϩ",
+      "english": "behind",
+      "basis": "Editorial restoration completing ⲥⲁⲭⲱϩ 'behind/backward' (in glossary)"
+    },
+    {
+      "id": 31,
+      "segment": 15,
+      "type": "restoration",
+      "coptic": "ⲍ",
+      "english": "al-",
+      "basis": "Editorial restoration completing ⲍⲱϩ 'also' — Lyc orthographic ⲍ for ϩ"
+    },
+    {
+      "id": 32,
+      "segment": 15,
+      "type": "restoration",
+      "coptic": "ⲣϩ",
+      "english": "watch",
+      "basis": "Editorial restoration completing ϩⲟⲩⲱⲣⲟⲩⲱⲣϩ̄ 'kept watch' (cf. glossary ⲁϩⲟⲩⲱⲣⲟⲩⲱⲣⲉϩ)"
+    },
+    {
+      "id": 33,
+      "segment": 16,
+      "type": "restoration",
+      "coptic": "ⲟ",
+      "english": "-ory",
+      "basis": "Editorial restoration completing ⲟⲩϭⲣⲟ 'victory'"
+    },
+    {
+      "id": 34,
+      "segment": 17,
+      "type": "restoration",
+      "coptic": "ⲱ",
+      "english": "ma-",
+      "basis": "Editorial restoration completing ⲡⲣ̄ⲱⲙⲉ 'the man'"
+    },
+    {
+      "id": 35,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ϩ",
+      "english": "-fest",
+      "basis": "Editorial restoration completing ⲟⲩⲱⲛϩ 'manifest'"
+    },
+    {
+      "id": 36,
+      "segment": 19,
+      "type": "restoration",
+      "coptic": "ⲩⲥⲧⲏ",
+      "english": "myster-",
+      "basis": "Editorial restoration completing ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ 'the mystery'"
+    },
+    {
+      "id": 37,
+      "segment": 20,
+      "type": "restoration",
+      "coptic": "ⲁⲃⲁⲗ",
+      "english": "forth",
+      "basis": "Editorial restoration: directional ⲁⲃⲁⲗ closing the upward motion verb"
+    },
+    {
+      "id": 38,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲁⲛϩ",
+      "english": "Living",
+      "basis": "Editorial restoration completing ⲡⲓⲧⲛⲁ ⲉⲧⲁⲛⲍ̄ 'the Living Projection' — standard Manichaean technical term"
+    },
+    {
+      "id": 39,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲟⲩⲁⲛ",
+      "english": "made known",
+      "basis": "Editorial restoration completing ⲁⲓ̈ⲟⲩⲁⲛϩϥ̄ 'I have manifested/made known to you' (cf. glossary ⲁⲧⲟⲩⲛⲟⲩⲓ̈ⲉ)"
+    },
+    {
+      "id": 40,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ϣⲁ",
+      "english": "you",
+      "basis": "Editorial restoration completing ⲉϣⲁⲕⲟⲩⲱϣⲉ 'if you wish'"
+    },
+    {
+      "id": 41,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲟ",
+      "english": "wi-",
+      "basis": "Editorial restoration completing ⲟⲩⲱϣⲉ 'wish'"
+    },
+    {
+      "id": 42,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲁⲧⲓ",
+      "english": "soma-",
+      "basis": "Editorial restoration completing ⲥⲱⲙⲁⲧⲓⲕⲟⲛ 'somatic' — Greek loan"
+    },
+    {
+      "id": 43,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲛⲟⲓ̈ⲉ ⲙⲙⲁϩ",
+      "english": "to understand it",
+      "basis": "Editorial restoration completing ⲣ̄-ⲛⲟⲓⲉ ⲙ̄ⲙⲁϩ 'understand it'"
+    },
+    {
+      "id": 44,
+      "segment": 26,
+      "type": "restoration",
+      "coptic": "ⲙⲛ ⲡ",
+      "english": "and the",
+      "basis": "Editorial restoration: conjunction ⲙⲛ̄ + article ⲡ- introducing 'trees'"
+    },
+    {
+      "id": 45,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "the",
+      "basis": "Editorial restoration completing ⲁⲛϣⲏⲛ 'of the trees'"
+    },
+    {
+      "id": 46,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲉ ⲥⲁⲭⲱⲟⲩ",
+      "english": "behind them",
+      "basis": "Editorial restoration completing ⲉⲩⲁϣⲉ ⲥⲁⲭⲱⲟⲩ 'hung behind them' — paralleling line 28's ⲉⲩⲁϣⲉ ⲥⲁⲭⲱⲩ"
+    },
+    {
+      "id": 47,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲥⲓⲟⲩ",
+      "english": "stars",
+      "basis": "Editorial restoration completing ⲛ̄ⲛⲥⲓⲟⲩ 'of the stars'"
+    },
+    {
+      "id": 48,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲓⲟⲛ ⲉⲧⲁϣⲉ ⲥⲁⲭⲱⲩ",
+      "english": "ac-signs that are hung behind",
+      "basis": "Editorial restoration completing ⲛϩⲱⲁⲓⲟⲛ 'zodiac-signs' (in glossary) + relative clause"
+    },
+    {
+      "id": 49,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲁⲛϩ ⲁⲃⲁⲗ ϩⲛ",
+      "english": "manifested forth in",
+      "basis": "Editorial restoration: standard ⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ϩⲛ̄ formula"
+    },
+    {
+      "id": 50,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲡϩⲟ ⲛⲛⲣⲱⲙⲉ ⲙ̄",
+      "english": "the face of the men a-",
+      "basis": "Editorial restoration: paralleling lines 10 and 27, the explanatory ⲉⲡⲉⲓⲁⲏ-clause about why faces appear in water"
+    }
+  ],
+  "header": {
+    "page_number": "{0}",
+    "title_coptic": "ⲛ̄ⲕⲉⲫⲁⲗⲁⲓⲟⲛ",
+    "title_english": "Chapter"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "{1}ⲓⲉⲧ ⲁⲃⲁ{2} ⲉⲧⲃⲉ ⲡⲓⲥⲉⲭⲉ ⲭⲉ ⲉⲧⲃⲉ ⲉⲩ ⲡⲥⲁⲧⲡ ⲉ̄",
+      "english": "An {1}{2}inquiry forth concerning this saying: For what reason — when the chosen one"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "{3}ⲣⲉ ⲡⲣⲱⲙⲉ ⲛ̄ⲧⲡⲉ ⲛ̄ⲟⲩⲙⲁⲩ ⲉϥϭⲱϣⲧ ⲁⲡⲓⲧⲛ̄ {4}",
+      "english": "{3}— when the man of heaven is at a water and gazes downward {4}"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "{5}ⲩⲓⲉⲩⲉ ⲉϣⲁϩⲛⲉⲩ ⲁⲡⲉϩϩⲟ ⲉϩⲣⲁⲕⲉ ⲥⲁⲡⲓⲧⲛⲉ ϣ",
+      "english": "{5}— he sees his face still below — un-"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ⲁ{6}ϭⲛ ⲧⲉϩⲁⲡⲉ ⲉⲥⲕⲧⲁⲓ̈ⲧ ⲁⲡⲓⲧⲛ̄ ⲛⲕϭⲛ̄ ⲛⲉϩⲟⲩⲣⲏⲧ{7}",
+      "english": "til {6}you find the head turned downward, and you find the feet"
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "coptic": "ⲍ{8}ⲱϩ ⲛ̄ⲧⲡⲉ ⲡⲥⲁⲧⲡ ⲁⲉ ⲉⲧϥ̄ⲓⲱⲣⲙⲉ ⲁⲡⲓⲧⲛ̄ ⲁⲙⲙ{9}",
+      "english": "above {8}also. Now the chosen one — when he gazes downward into the {9}wat-"
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "coptic": "{10} ⲙⲁⲣⲉ ⲡⲉϩϩⲟ ⲟⲩⲱⲛϩ̄ ⲛⲉϩ ⲁⲃⲁⲗ ⲛϩⲛⲉⲩ ⲁⲣⲁ{11}",
+      "english": "{10}ers — let his face be manifested forth to him, and let him see {11}him",
+      "break_after": false
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "coptic": "{12}ⲧϥ̄",
+      "english": "{12}in it.",
+      "break_after": true
+    },
+    {
+      "i": 7,
+      "n": 7,
+      "coptic": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲁⲣⲁϥ ϣ{13}",
+      "english": "Then said the Apostle to him: 'Be{13}-"
+    },
+    {
+      "i": 8,
+      "n": 8,
+      "coptic": "{14} ⲉⲕⲥⲁⲩⲛⲉ ⲁⲡⲉⲓ̈ ⲭⲉ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲉϩⲧⲏⲕ ⲁⲣⲉⲧ{15}",
+      "english": "{14}come knowing this — that this cosmos stands {15}fast"
+    },
+    {
+      "i": 9,
+      "n": 9,
+      "coptic": "{16}ⲩⲥⲧⲏⲣⲓⲟⲛ ϥ̄ⲙⲏϩ ⲧⲏⲣϥ̄ ⲙ̄ⲙⲁⲩⲥⲧⲏⲣⲓⲟⲛ ⲡⲉⲓ̈ {17}",
+      "english": "{16}in mystery; it is full entirely of mysteries. This {17}then —"
+    },
+    {
+      "i": 10,
+      "n": 10,
+      "coptic": "{18}ⲁⲣⲉ ⲡϩⲟ ⲛ̄ⲛ̄ⲣⲱⲙⲉ ⲙ̄ⲛ̄ ⲡⲓⲛⲉ ⲛ̄ⲛ̄ϣⲏⲛ ⲟⲩⲱ{19}",
+      "english": "{18}bitually the face of the men and the likeness of the trees is mani{19}-"
+    },
+    {
+      "i": 11,
+      "n": 11,
+      "coptic": "ⲁⲃ{20} ϩⲙ̄ ⲡⲙⲁⲩ ⲉⲩⲕⲧⲁⲓ̈ⲧ ⲥⲁⲡⲓⲧⲛ̄ ⲉⲣⲉ ⲡⲉⲓ̈ †ⲙⲉⲓⲛ{21}",
+      "english": "fested f{20}orth in the water, turned downward — this gives a sig{21}n"
+    },
+    {
+      "i": 12,
+      "n": 12,
+      "coptic": "ⲍⲙ {22}ⲙⲁⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲧⲱϩⲙⲉ ⲛ̄ⲧⲁⲣⲟⲩⲭⲁⲩ ⲁⲡⲓ{23}",
+      "english": "in {22}the mystery of the Call which they cast down{23}-"
+    },
+    {
+      "i": 13,
+      "n": 13,
+      "coptic": "ⲁⲛ{24}ⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ ⲩⲁ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲉⲡⲉⲓ{25}",
+      "english": "ward to the {24}cosmos of the Darkness, unto the First Man, {25}since"
+    },
+    {
+      "i": 14,
+      "n": 14,
+      "coptic": "ⲥⲉ{26} ⲛ̄†ϩⲉ ⲭ{27}ϩⲟⲩⲱⲣⲟⲩⲱⲣⲉϩ ⲁⲡⲓⲧⲛ̄ {28}",
+      "english": "they {26} in this manner, {27}to keep watch downward {28}"
+    },
+    {
+      "i": 15,
+      "n": 15,
+      "coptic": "ⲛ̄ⲑⲉ ⲛⲟⲩⲣⲱⲙⲉ {29}ⲛⲁⲭϥ̄ ⲁⲡⲓⲧⲛ̄ ⲥⲁⲭⲱ{30} ⲁⲩⲙⲁⲩ",
+      "english": "in the manner of a man who {29}shall cast himself downward beh{30}ind to a water"
+    },
+    {
+      "i": 16,
+      "n": 16,
+      "coptic": "ⲧϩⲉ {31}ⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡⲧⲱϩⲙⲉ ⲛ̄ⲧⲁϩⲟⲩⲱⲣⲟⲩⲱ{32}",
+      "english": "thus {31}also is this of the Call, which kept wa{32}tch"
+    },
+    {
+      "i": 17,
+      "n": 17,
+      "coptic": "ⲥⲁⲭⲱϩ ⲁⲛ̄ⲕⲟⲥⲙⲟⲥ ⲉⲧⲙ̄ⲡⲥⲁⲙ̄ⲡⲓⲧⲛⲉ ϩⲛ̄ ⲟⲩϭⲣ{33}",
+      "english": "behind unto the cosmoi which are of the lower side, in a vict{33}ory"
+    },
+    {
+      "i": 18,
+      "n": 18,
+      "coptic": "ⲙ̄ⲛ̄ ⲟⲩⲙⲛ̄ⲧⲁϣⲓⲁⲉ ⲡⲉⲓ̈ ⲁⲉ ϩⲱⲱϩ ⲭⲉ ϣⲁⲣⲉ ⲡⲣ̄{34}",
+      "english": "and a multitude. Now this also: that the m{34}an"
+    },
+    {
+      "i": 19,
+      "n": 19,
+      "coptic": "ⲙⲉ ⲃ̄ⲓⲭⲱϩ ⲁϩⲣⲏⲓ̈ ϩⲙ̄ ⲡⲙⲁⲩ ⲙⲁⲣⲉ ⲡⲉϩϩⲟ ⲟⲩⲱⲛ{35}",
+      "english": "lifts himself up in the water — let his face be manif{35}ested"
+    },
+    {
+      "i": 20,
+      "n": 20,
+      "coptic": "ⲁⲣⲁϩ ⲉϩⲡⲁϩⲧ ⲁⲡⲓⲧⲛⲉ ⲉⲣⲉ ⲡⲉⲓ̈ ϩⲏⲙⲁⲛⲉ ϩⲁ ⲡⲙ̄{36}",
+      "english": "to him, cast downward — this signifies the m{36}ys-"
+    },
+    {
+      "i": 21,
+      "n": 21,
+      "coptic": "ⲣⲓⲟⲛ ⲙ̄ⲡⲥⲱⲧⲙⲉ ⲡⲉⲧⲁⲩⲉⲓ ⲭⲛ ⲙ̄ⲡⲓⲧⲛⲉ ⲁⲧⲡⲉ {37}",
+      "english": "tery of the Answer, which came up from below to above {37}forth"
+    },
+    {
+      "i": 22,
+      "n": 22,
+      "coptic": "ⲍⲁⲧⲛ̄ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲡⲉϩⲓⲱⲧ ⲩⲁ ⲡⲓⲧⲛⲁ ⲉⲧ{38}",
+      "english": "from the First Man, the Father, unto the {38}Living Projection"
+    },
+    {
+      "i": 23,
+      "n": 23,
+      "coptic": "ⲟⲩⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲡⲉ ⲡⲉⲓ̈ ⲙ̄ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲛ ⲉⲧⲁⲓ̈{39}",
+      "english": "this is a spiritual mystery which I have {39}made known"
+    },
+    {
+      "i": 24,
+      "n": 24,
+      "coptic": "ϩϥ̄ ⲛⲉⲕ ⲁⲃⲁⲗ ⲭⲉⲕⲁⲁⲥ ⲉⲕⲛⲁⲣ̄ⲛⲟⲓ̈ⲉ ⲙ̄ⲙⲁϩ ⲉ{40}",
+      "english": "to you forth, in order that you may understand it. If {40}you"
+    },
+    {
+      "i": 25,
+      "n": 25,
+      "coptic": "ⲕ{41}ⲩⲱϣⲉ ⲁⲣ̄ⲛⲟⲓ̈ⲉ ⲛ̄ⲕⲉⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲥⲱⲙ̄{42}",
+      "english": "{41}wish to understand other so{42}matic mysteries"
+    },
+    {
+      "i": 26,
+      "n": 26,
+      "coptic": "ⲕⲟⲛ ϩⲙ̄ ⲡⲓϩⲱⲃ̄ ⲥⲱⲧⲙⲉ ⲧⲁⲧⲥⲉⲃⲁⲕ ⲁⲣ{43}",
+      "english": "in this matter, hear, that I may instruct you {43}to understand it —"
+    },
+    {
+      "i": 27,
+      "n": 27,
+      "coptic": "ⲭⲉ ϣⲁⲣⲉ ⲡϩⲟ ⲛ̄ⲛ̄ⲣⲱⲙⲉ ⲙⲛ̄ ⲡⲁⲛⲧⲃ̄ⲛⲁⲩⲉ {44}",
+      "english": "that the face of men, and that of the cattle {44}, and the"
+    },
+    {
+      "i": 28,
+      "n": 28,
+      "coptic": "{45}ⲛϣⲏⲛ ⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ ϩ�m̄ ⲡⲙⲁⲩ ⲉⲩⲁϣ{46}",
+      "english": "{45}of the trees is manifested forth in the water, hung {46}behind them —"
+    },
+    {
+      "i": 29,
+      "n": 29,
+      "coptic": "ⲉⲣⲉ ⲡⲉⲓ̈ ⲁⲛ ϣⲟⲟⲡ ⲁⲡⲙⲁⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲛ{47}",
+      "english": "this also is in the mystery of the s{47}tars"
+    },
+    {
+      "i": 30,
+      "n": 30,
+      "coptic": "ⲙ̄ⲛ̄ ⲛϩⲱⲁ{48} ⲉⲧⲟⲩ{49}",
+      "english": "and the zodi{48}, who are mani{49}fested forth in"
+    },
+    {
+      "i": 31,
+      "n": 31,
+      "coptic": "ⲧⲛⲁⲃ̄ ⲛⲑⲁⲗⲁⲥⲥⲁ ⲉⲡⲉⲓⲁⲏ {50}",
+      "english": "the great sea — since {50}of the men a-"
+    }
+  ],
+  "notes": [
+    {
+      "segment": "header",
+      "coptic_form": "ⲥⲛⲁ",
+      "decision": "Restoring the Coptic page numeral as [ⲥⲛⲁ] per the editor's transcription, though this would compute to 251 (ⲥ=200, ⲛ=50, ⲁ=1). The discrepancy with the modern Arabic page number (264 in source / 254 per task header) reflects a known issue in the manuscript's numbering vs. modern editorial pagination. Preserving the editor's restoration as given.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 0,
+      "coptic_form": "ⲛⲟⲩⲓⲉⲧ ⲁⲃⲁⲗ",
+      "decision": "Translating as 'inquiry forth' — verb of inquiry/seeking opening the disciple's question. The Lyc form ⲛⲟⲩⲓⲉⲧ likely reflects ⲱⲛⲧ/ϣⲓⲛⲉ family. The phrase frames the entire kephalaion as response to a disciple's question.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 2,
+      "coptic_form": "ⲉϩⲣⲁⲕⲉ",
+      "decision": "Reading as qualitative 'still, motionless' (cf. ⲍⲣⲁⲕ 'be calm/still' in glossary) describing the reflected face below. Alternative reading 'downward' (= ⲉϩⲣⲁⲓ) less likely since ⲥⲁⲡⲓⲧⲛⲉ already supplies the directional sense.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 5,
+      "coptic_form": "ⲙⲁⲣⲉ ⲡⲉϩϩⲟ ⲟⲩⲱⲛϩ̄ ⲛⲉϩ ⲁⲃⲁⲗ",
+      "decision": "ⲙⲁⲣⲉ here as causative-jussive 'let his face be manifested forth to him' — describing the reflective phenomenon. The ϩⲏⲙⲁⲛⲉ ('signify,' Greek σημαίνει) on line 20 confirms this is the figurative-correspondential mode of the kephalaion.",
+      "confidence": "high"
+    },
+    {
+      "segment": 11,
+      "coptic_form": "ⲉⲣⲉ ⲡⲉⲓ̈ †ⲙⲉⲓⲛⲉ",
+      "decision": "ϯⲙⲉⲓⲛⲉ = 'give a sign,' Lyc verbal idiom (= Sah. ϯⲙⲁⲉⲓⲛ). The reflected face turned downward IS the sign of the cosmic Call descending. Direct correspondential register.",
+      "confidence": "high"
+    },
+    {
+      "segment": 12,
+      "coptic_form": "ⲡⲧⲱϩⲙⲉ",
+      "decision": "'The Call' — standard Manichaean technical term per glossary. The reflected face plunging downward signifies the cosmic Call going down to the First Man in darkness.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲙⲛ̄ⲧⲁϣⲓⲁⲉ",
+      "decision": "Translating as 'multitude' / 'manifoldness' from ⲙⲛⲧ- abstract + ⲁϣⲁⲓ̈ 'be many.' Cf. accumulated ⲙⲛⲧⲁϣⲓⲣⲉ 'multitude/numerousness.' Alternative reading 'a great many' fits the cosmological-victorious context: the Call's victory over the lower cosmoi consists in its capacity to descend manifoldly.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 19,
+      "coptic_form": "ⲃ̄ⲓⲭⲱϩ ⲁϩⲣⲏⲓ̈",
+      "decision": "Reading as 'lifts himself up' — paralleling line 15's 'casts himself down.' The verbal element ⲃⲓ probably from ϥⲓ 'lift, bear' with reflexive ϫⲱϩ = ⲭⲱϩ 'himself.' Captures the upward-motion antithesis to the downward-motion of line 15, generating the second mystery (Answer).",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 20,
+      "coptic_form": "ϩⲏⲙⲁⲛⲉ",
+      "decision": "Greek σημαίνει 'signifies' — the explicit correspondential signaling verb. The reflected face IS the sign that signifies the cosmic mystery.",
+      "confidence": "high"
+    },
+    {
+      "segment": 21,
+      "coptic_form": "ⲡⲥⲱⲧⲙⲉ",
+      "decision": "'The Answer' — standard Manichaean technical term per glossary. The face mirrored upward from below signifies the cosmic Answer/Hearing rising from the First Man back to the Living Projection. Forms the ⲧⲱϩⲙ/ⲥⲱⲧⲙ Call-Answer dyad.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 22,
+      "coptic_form": "ⲡⲓⲧⲛⲁ",
+      "decision": "'The Living Projection' (per glossary) — the upward-arrival point of the Answer. ⲉⲧⲁⲛⲍ̄ 'living' restored from standard Manichaean usage.",
+      "confidence": "high"
+    },
+    {
+      "segment": 26,
+      "coptic_form": "ⲡⲓϩⲱⲃ̄ ⲥⲱⲧⲙⲉ",
+      "decision": "Reading 'in this matter, hear' as the Apostle's standard pedagogical formula — the disciple is invited to attend so the teacher may instruct (ⲧⲁⲧⲥⲉⲃⲁⲕ 'that I may teach you' from ⲥⲃⲱ).",
+      "confidence": "high"
+    },
+    {
+      "segment": 30,
+      "coptic_form": "ⲛϩⲱⲁⲓⲟⲛ",
+      "decision": "'Zodiac-signs' — plural variant of ⲛϩⲱⲁⲓⲟⲛ in glossary. The mystery now extends from human/animal/tree faces in water to the cosmic mystery of stars and zodiac signs reflected in the great sea — the macrocosmic correspondence.",
+      "confidence": "high"
+    }
+  ],
+  "page": 254
+}

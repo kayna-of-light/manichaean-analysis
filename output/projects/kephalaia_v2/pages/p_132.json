@@ -1,0 +1,744 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲛⲕⲉⲫⲁⲗⲁⲓⲟⲛ",
+      "english": "Chapter",
+      "basis": "Standard kephalaion-introducer marker preserved in transcription brackets."
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲡⲥⲁ]ⲉ",
+      "english": "the wise/teacher",
+      "basis": "Editor's bracket; ⲥⲁⲉ = wise/sage in Lycopolitan."
+    },
+    {
+      "id": 2,
+      "segment": 0,
+      "type": "lacuna",
+      "est_chars": 30,
+      "partial": "ⲙ ... ϣ"
+    },
+    {
+      "id": 3,
+      "segment": 1,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 4,
+      "segment": 1,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 5,
+      "segment": 2,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 6,
+      "segment": 2,
+      "type": "restoration",
+      "coptic": "ⲛ̄ϩⲧ[ⲁ]",
+      "english": "of hea[rt]",
+      "basis": "ⲙⲛⲧⲍⲟⲩⲧⲉⲛ ⲛ̄ϩⲏⲧ 'uprightness of heart' is a stock collocation; ϣⲟⲩ ⲛϩⲧⲁⲛⲁⲩ on next line continues."
+    },
+    {
+      "id": 7,
+      "segment": 3,
+      "type": "restoration",
+      "coptic": "ϩ̄[ⲛ]",
+      "english": "in",
+      "basis": "Locative ϩⲛ standard before continuation; required by syntax of king's coming-to-dwell."
+    },
+    {
+      "id": 8,
+      "segment": 4,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 9,
+      "segment": 4,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 10,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲧⲧ]ⲁⲗⲗⲓ[ⲛ] ⲁⲛ",
+      "english": "[Once a]gain",
+      "basis": "Standard chapter-opening formula ⲧⲧⲁⲗⲓⲛ ⲁⲛ in Kephalaia (in glossary)."
+    },
+    {
+      "id": 11,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲡⲱⲛ[ϩ ⲧⲛⲧⲁⲛⲧ ⲙⲡⲣϩⲧⲉ ⲛⲟⲩ]",
+      "english": "Li[fe is likened in the manner of a]",
+      "basis": "Editor's restoration; standard parable-formula ⲧⲛⲧⲱⲛ ⲙ̄ⲡⲣⲏⲧⲉ ⲛ̄ⲟⲩ- 'is likened in the manner of a...'"
+    },
+    {
+      "id": 12,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲍ[ⲁⲙ]ϣⲉ ⲛⲥⲁⲃⲉ ⲛⲧⲉⲭⲛ]ⲧⲏⲥ",
+      "english": "[craft]sman of wisdom, an [arti]san",
+      "basis": "Editor's restoration of ⲍⲁⲙϣⲉ (craftsman, in glossary as ⲡⲍⲁⲙϣⲉ) + ⲛⲥⲁⲃⲉ 'wise' + ⲧⲉⲭⲛⲏⲧⲏⲥ Greek τεχνίτης 'artisan.'"
+    },
+    {
+      "id": 13,
+      "segment": 6,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 14,
+      "segment": 7,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 15,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲉⲙⲡⲁ]",
+      "english": "[before]",
+      "basis": "Editor's restoration; parallel construction with ⲉⲙⲡⲁⲧⲟⲩ- in line 8."
+    },
+    {
+      "id": 16,
+      "segment": 7,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 17,
+      "segment": 8,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 18,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲍ]ⲁⲙϣⲉ",
+      "english": "[a cra]ftsman",
+      "basis": "Standard parable-vocabulary; recurs throughout this kephalaion."
+    },
+    {
+      "id": 19,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 1,
+      "partial": "ϣⲣ̄ . ⲩⲉ"
+    },
+    {
+      "id": 20,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 21,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 22,
+      "segment": 10,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 23,
+      "segment": 10,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 24,
+      "segment": 10,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 25,
+      "segment": 11,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 26,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲧⲃⲁϣⲟⲩ[ⲣ]",
+      "english": "the smith[y]/[bowl]",
+      "basis": "ⲃⲁϣⲟⲩⲣ likely related to ⲃⲁϣⲟⲣ 'cup, bowl' or smithy-tool; required by craftsman context."
+    },
+    {
+      "id": 27,
+      "segment": 12,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 28,
+      "segment": 13,
+      "type": "restoration",
+      "coptic": "ⲡⲁ[ⲉ]ⲛⲧⲏⲛ",
+      "english": "the bringing",
+      "basis": "Editor's restoration; possibly action-noun on ⲁⲉⲓⲛⲉ 'bring' (Lyc.). Sense uncertain."
+    },
+    {
+      "id": 29,
+      "segment": 13,
+      "type": "restoration",
+      "coptic": "ⲧⲁ[ⲓ̈ⲉ]",
+      "english": "[kind]",
+      "basis": "ⲁⲍⲛ̄ⲧⲁⲓ̈ⲉ ⲧⲁⲓ̈ⲉ 'kind by kind' — formulaic doubling, restored from preceding ⲁⲍⲛ̄ⲧⲁⲓ̈ⲉ."
+    },
+    {
+      "id": 30,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 31,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 4,
+      "partial": "ϣ"
+    },
+    {
+      "id": 32,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 3,
+      "partial": "ⲛ"
+    },
+    {
+      "id": 33,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 2,
+      "partial": "ⲣⲉ"
+    },
+    {
+      "id": 34,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 9,
+      "partial": "ⲡⲍⲱ"
+    },
+    {
+      "id": 35,
+      "segment": 15,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 36,
+      "segment": 16,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 37,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ⲥⲕⲉⲟⲥ",
+      "english": "vessels",
+      "basis": "Editor's restoration; ⲥⲕⲉⲟⲥ ⲛ̄ϣⲉ 'wooden vessels' is the antecedent at end of line 17 carried into 18."
+    },
+    {
+      "id": 38,
+      "segment": 19,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 39,
+      "segment": 20,
+      "type": "restoration",
+      "coptic": "ⲡⲧⲉⲭ]ⲛⲏ",
+      "english": "[the cra]ft",
+      "basis": "Editor's restoration; Greek τέχνη paired with σοφία 'wisdom' is standard craftsman-doublet."
+    },
+    {
+      "id": 40,
+      "segment": 20,
+      "type": "restoration",
+      "coptic": "ⲙⲡ]ⲍⲁⲙϣⲉ",
+      "english": "of [the] craftsman",
+      "basis": "Editor's restoration; possessive of ⲍⲁⲙϣⲉ recurs in this kephalaion."
+    },
+    {
+      "id": 41,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲁϩ[ϣⲁⲁ]ⲧϥ̄",
+      "english": "he c[u]t it",
+      "basis": "Editor's restoration; ϣⲱⲱⲧ 'cut' fits the cutting-into-forms parable."
+    },
+    {
+      "id": 42,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲉⲩⲭⲣⲏⲥⲓⲙⲉⲩ[ⲉ]",
+      "english": "useful",
+      "basis": "Editor's restoration; Greek participle χρησιμεύω."
+    },
+    {
+      "id": 43,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲙ̄ⲡⲉ]ϩⲭⲁⲓ̈ⲥ",
+      "english": "[for] his master",
+      "basis": "Editor's restoration; ⲡⲉϩⲭⲁⲓ̈ⲥ 'his master' (Lyc. for ϫⲟⲉⲓⲥ; cf. ⲡⲁⲭⲁⲓ̈ⲥ in glossary)."
+    },
+    {
+      "id": 44,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲧⲉ ⲧⲉⲓ̈",
+      "english": "is the [same]",
+      "basis": "Editor's restoration completing the comparative formula 'thus is also [the manner] of...'"
+    },
+    {
+      "id": 45,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲍⲛ ⲧⲉϩ]ⲥⲟⲫⲓⲁ",
+      "english": "[in his] wisdom",
+      "basis": "Editor's restoration; possessive ⲡⲉϩ-/ⲧⲉϩ- of σοφία parallels the craftsman's wisdom in line 20."
+    },
+    {
+      "id": 46,
+      "segment": 23,
+      "type": "lacuna",
+      "est_chars": 8,
+      "partial": "ⲁϩⲟⲩ"
+    },
+    {
+      "id": 47,
+      "segment": 23,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 48,
+      "segment": 24,
+      "type": "lacuna",
+      "est_chars": 25
+    },
+    {
+      "id": 49,
+      "segment": 24,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 50,
+      "segment": 25,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 51,
+      "segment": 25,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 52,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲭⲣ]ⲏⲥⲓⲙ",
+      "english": "[us]eful",
+      "basis": "Editor's restoration; recurs in line 21."
+    },
+    {
+      "id": 53,
+      "segment": 25,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 54,
+      "segment": 26,
+      "type": "restoration",
+      "coptic": "ⲛ]ⲉⲭⲏⲩ",
+      "english": "[the] ships",
+      "basis": "Editor's restoration; ⲛⲉⲭⲏⲩ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ 'the ships of light' is a fixed Manichaean cosmological term (in glossary)."
+    },
+    {
+      "id": 55,
+      "segment": 26,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 56,
+      "segment": 26,
+      "type": "lacuna",
+      "est_chars": 5,
+      "partial": "ⲛ"
+    },
+    {
+      "id": 57,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 58,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲛ]ⲕⲉⲍⲃⲏⲩⲉ",
+      "english": "[the] other works",
+      "basis": "ⲕⲉⲍⲃⲏⲩⲉ = ⲕⲉ-ⲍⲃⲏⲩⲉ 'other works.'"
+    },
+    {
+      "id": 59,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 60,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 61,
+      "segment": 28,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 62,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲛⲧⲁ[ϩ]",
+      "english": "who [is]",
+      "basis": "Editor's restoration of relative perfect with 3sg.m.; introduces the predicate at line 29."
+    },
+    {
+      "id": 63,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲡ[ⲣⲉⲥⲃⲉⲩⲧⲏⲥ]",
+      "english": "A[mbassador]",
+      "basis": "Editor's restoration; ⲡⲙⲁⲍⲍϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'Third Ambassador' is a fixed Manichaean title (in glossary)."
+    },
+    {
+      "id": 64,
+      "segment": 29,
+      "type": "lacuna",
+      "est_chars": 2,
+      "partial": "ⲉⲧⲁϩⲙⲉ"
+    },
+    {
+      "id": 65,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲉϩ[ⲁ]ⲟⲩⲱⲍ",
+      "english": "to dwell",
+      "basis": "Editor's restoration; ⲟⲩⲱⲍ 'dwell' (Lyc.; cf. ⲡⲍⲁ ⲙ̄ⲡⲧⲟⲩⲱⲍ in glossary). Standard infinitive of purpose."
+    },
+    {
+      "id": 66,
+      "segment": 30,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 67,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲡⲟⲩⲁ[ⲓⲛⲉ]",
+      "english": "the lig[ht]",
+      "basis": "Editor's restoration; ⲡⲟⲩⲁⲓⲛⲉ 'the light' standard."
+    },
+    {
+      "id": 68,
+      "segment": 31,
+      "type": "lacuna",
+      "est_chars": 18
+    }
+  ],
+  "header": {
+    "page_number": "ⲣⲛ̄ⲃ",
+    "title_coptic": ">· {0} · <",
+    "title_english": ">· {0} · <"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "{1} {2}",
+      "english": "{1} {2}"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "{3}ⲉ ⲙⲉⲛ ⲛ̄ⲕⲁⲑⲁⲣⲓⲍⲉ ⲙ̄ⲙⲁⲩ ⲛ̄ⲱⲛⲉ ⲇⲉ ⲍⲱⲱϩ {4}",
+      "english": "{3} indeed they purify them, but the stones too {4}"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "{5} ⲟⲩⲉ ⲙ̄ⲙⲁⲩ ⲁⲩⲥⲁⲓ̈ⲉ ⲙ̄ⲛ ⲟⲩⲙⲛⲧⲍⲟⲩⲧⲉⲛ {6}",
+      "english": "{5} ... them, with beauty and uprightness {6}"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ϣⲟⲩ ⲛϩⲧⲁⲛⲁⲩ ⲭⲉⲕⲁⲁⲥ ⲉⲣϣⲁ ⲡⲣ̄ⲣⲟ ⲉⲓ ⲛ̄ϩⲟⲩⲱⲍ {7}",
+      "english": "fitting to behold, so that when the king comes to dwell {7}"
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "coptic": "{8} {9} ⲉⲧⲙ̄ⲙⲉⲩ ⲉϩⲁ+ ⲉⲁⲩ ⲛⲉϩ",
+      "english": "{8} {9} there, unto glory for him",
+      "break_after": true
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "coptic": "{10} ⲉⲣⲉ ⲡⲓⲱⲧ ⲛ̄ⲧⲉ {11}",
+      "english": "{10}, the Father of {11}"
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "coptic": "{12} {13}",
+      "english": "{12} {13}"
+    },
+    {
+      "i": 7,
+      "n": 8,
+      "coptic": "{14} ⲡⲟⲛ ⲉⲙⲡⲁⲧⲟⲩⲣⲍⲱⲃ {15} {16}",
+      "english": "{14} ... before they work {15} {16}"
+    },
+    {
+      "i": 8,
+      "n": 9,
+      "coptic": "ⲧⲟ[ⲩ]ⲙⲁⲛⲕ̄ϥ̄ ⲛ̄ⲥⲉⲧⲥⲁⲓ̈ⲁϩ ⲛ̄ⲥⲉ {17} {18}",
+      "english": "they mold it and beautify it and {17} {18} a craftsman"
+    },
+    {
+      "i": 9,
+      "n": 10,
+      "coptic": "ϣⲣ̄{19}ⲩⲉ ⲛⲍⲱⲃ ⲛⲍⲏⲧϥ̄ ⲁⲗⲗⲁ {20} {21}",
+      "english": "...{19}... of work in him, but {20} {21}"
+    },
+    {
+      "i": 10,
+      "n": 11,
+      "coptic": "{22} ⲁⲍⲟⲩⲛ ⲁⲣⲁϩ ⲍⲛ̄ ⲧⲉϩ{23} {24}",
+      "english": "{22} inward to him, in his {23} {24}"
+    },
+    {
+      "i": 11,
+      "n": 12,
+      "coptic": "ⲍⲛ ⲧⲉϩⲙⲛ̄ⲧⲣⲙⲛⲍⲏⲧ ⲛϩⲛ {26} {27}",
+      "english": "in his thoughtfulness, in {26} {27}"
+    },
+    {
+      "i": 12,
+      "n": 13,
+      "coptic": "{28} ⲛ̄ϩϣⲁⲁⲧϩ ⲁⲍⲛ̄ⲧⲁⲓ̈ⲉ {29} {30}",
+      "english": "{28} of cuttings, into kind {29} {30}"
+    },
+    {
+      "i": 13,
+      "n": 14,
+      "coptic": "{31} {32} {33} ⲙ̄ⲙⲁϩ ⲛ̄ϩⲥⲱⲕ {34}",
+      "english": "{31} {32} {33} filling, drawing {34}"
+    },
+    {
+      "i": 14,
+      "n": 15,
+      "coptic": "ⲉ ⲙ̄ⲙⲁϩ ⲍⲛ̄ ⲧⲃⲁⲡ ⲛϩⲥⲗⲱⲃⲗⲱⲃϩ ϣⲁϩⲧⲁϣⲟ {35}",
+      "english": "filling in the crucible of melting until they multiply {35}"
+    },
+    {
+      "i": 15,
+      "n": 16,
+      "coptic": "{36} ⲛⲥⲕⲉⲟⲥ ⲛϣⲉ ⲛ̄ϩⲥⲁⲣϩ̄ ⲁⲃⲁⲗ ⲁⲍⲛ̄ⲉⲓⲇⲟⲥ ⲉⲓⲇⲟⲥ",
+      "english": "{36} wooden vessels, spreading forth into form by form"
+    },
+    {
+      "i": 16,
+      "n": 17,
+      "coptic": "ϣⲁϩϣⲱⲱⲧ ⲛ̄ϩⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲛ̄ⲍⲏⲧϥ̄ ⲛ̄ⲍⲛ̄ⲥⲕⲉⲟⲥ ⲛ̄ϣⲉ",
+      "english": "until he cuts forth from it likenesses, wooden vessels:"
+    },
+    {
+      "i": 17,
+      "n": 18,
+      "coptic": "{37} ⲛ̄ϣⲉ ⲕⲉⲃⲁⲭⲟⲥ ⲫⲓⲁⲗⲏ ⲭⲁⲡ ⲡⲓϣⲉ ⲉⲧⲉ ⲛⲉϩⲟ",
+      "english": "[wooden] {37}: jars, bowls, lids — this wood, which they were"
+    },
+    {
+      "i": 18,
+      "n": 19,
+      "coptic": "{38}ⲉⲧⲟⲛ ⲛϣⲁⲣⲡ ⲉϩⲟ ⲛⲁⲣⲅⲟⲛ ⲉⲙⲛ ⲧⲁⲃⲉϩ ⲙ̄ⲙⲁϩ",
+      "english": "{38} at first being unworked, having no imprint upon it"
+    },
+    {
+      "i": 19,
+      "n": 20,
+      "coptic": "ϩⲛ {39} ⲙⲛ ⲧⲥⲟⲫⲓⲁ {40} ⲛ̄ⲛⲁϩⲣ̄ⲧⲱⲣⲉ",
+      "english": "in {39} and the wisdom {40}, in his hand"
+    },
+    {
+      "i": 20,
+      "n": 21,
+      "coptic": "{41} ⲛ̄ⲍⲛ̄ⲉⲓⲇⲟⲥ ⲉⲓⲇⲟⲥ ⲛⲥⲕⲉⲟⲥ {42}",
+      "english": "{41} into form by form of vessels {42}"
+    },
+    {
+      "i": 21,
+      "n": 22,
+      "coptic": "{43} ⲧⲍⲉ ϩⲱϩ ⲁⲛ {44} ⲙ̄ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛ[ϩ]",
+      "english": "{43}. Thus also {44} of the Father of Life:"
+    },
+    {
+      "i": 22,
+      "n": 23,
+      "coptic": "{45} ⲁϩⲟⲩ{46} ⲍⲛ̄ ⲍⲙⲙⲉⲗⲟⲥ {47}",
+      "english": "{45} he {46} in his members {47}"
+    },
+    {
+      "i": 23,
+      "n": 24,
+      "coptic": "{48} ⲡⲁⲗⲁⲧⲓⲟⲛ ⲁ{49}",
+      "english": "{48} the palace {49}"
+    },
+    {
+      "i": 24,
+      "n": 25,
+      "coptic": "{50}ⲛⲕ ⲛⲍⲏⲧⲥ̄ ⲏ ⲍⲛ ⲟⲩ{51} {52} {53}",
+      "english": "{50} ... in her, or in a {51} {52} {53}"
+    },
+    {
+      "i": 25,
+      "n": 26,
+      "coptic": "{54} ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲛ{55} ⲛ{56}",
+      "english": "{54} of the light {55} {56}"
+    },
+    {
+      "i": 26,
+      "n": 27,
+      "coptic": "{57} {58} ⲧⲏⲣⲟⲩ {59}ⲧⲟⲩ ⲍⲛ ⲛ{60}",
+      "english": "{57} {58}, all of them, {59} them in {60}"
+    },
+    {
+      "i": 27,
+      "n": 28,
+      "coptic": "{61} ⲭⲉⲕⲁⲁⲥ ⲉⲣϣⲁⲛ ⲡⲛⲁⲃ ⲛⲣ̄ⲣⲟ ⲉⲓ ⲉⲧⲉ {62}",
+      "english": "{61} so that when the great king comes, who {62}"
+    },
+    {
+      "i": 28,
+      "n": 29,
+      "coptic": "ⲡⲉ ⲡⲙⲁⲍⲍϣⲁⲙⲧ ⲙ{63} ⲉⲧⲁϩⲙⲉ{64}",
+      "english": "is the Third {63}, who {64}"
+    },
+    {
+      "i": 29,
+      "n": 30,
+      "coptic": "{65} ⲍⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ {66} ⲟⲩⲱⲍ {67}",
+      "english": "{65} in this cosmos {66}, dwell, {67}"
+    },
+    {
+      "i": 30,
+      "n": 31,
+      "coptic": "ⲇⲉ ϩⲱⲱϩ ⲉⲧⲛⲍⲏⲧϩ {68}",
+      "english": "but as for that which is in him {68}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": "header",
+      "coptic_form": "ⲣⲛ̄ⲃ",
+      "decision": "Coptic numeral ⲣⲛ̄ⲃ = 152 (ⲣ=100, ⲛ=50, ⲃ=2). Page identifier given as 132 in source metadata; preserved Coptic numeral as transcribed without emendation.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 5,
+      "coptic_form": "ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛϩ",
+      "decision": "Translated 'Father of Life' — standard Manichaean cosmogonic title for the high Father in his life-giving aspect. Recurs at line 22.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 6,
+      "coptic_form": "ⲍⲁⲙϣⲉ ⲛⲥⲁⲃⲉ ⲛⲧⲉⲭⲛⲏⲧⲏⲥ",
+      "decision": "Doublet 'wise craftsman, an artisan' — ⲍⲁⲙϣⲉ + ⲛⲥⲁⲃⲉ (native Coptic 'wise craftsman') paralleled with Greek τεχνίτης 'artisan' as parable-establishing figure. The Father is being likened to such a one.",
+      "confidence": "high"
+    },
+    {
+      "segment": 11,
+      "coptic_form": "ⲙⲛ̄ⲧⲣⲙⲛⲍⲏⲧ",
+      "decision": "Translated 'thoughtfulness' — ⲙⲛⲧ-ⲣⲙ̄ⲛϩⲏⲧ literally 'state-of-thoughtful-person.' Distinct from ⲡⲱⲕ ⲛⲍⲏⲧ 'purpose of heart' and from ⲙⲛⲧⲍⲏⲧⲥⲛⲉⲩ 'double-mindedness.'",
+      "confidence": "high"
+    },
+    {
+      "segment": 13,
+      "coptic_form": "ⲙ̄ⲙⲁϩ",
+      "decision": "Read as Lycopolitan ⲙⲟⲩϩ 'fill, filling.' Recurs in line 14-15 and possibly line 18. The craftsman's filling/casting action in the crucible. Confidence moderate.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 14,
+      "coptic_form": "ⲧⲃⲁⲡ ⲛϩⲥⲗⲱⲃⲗⲱⲃϩ",
+      "decision": "Translated 'crucible of melting' — ⲃⲁⲡ likely a smelting-vessel (possibly Greek βαφή 'dipping/dyeing-vat,' or related to ⲃⲁⲡϩ 'striking down'); ⲥⲗⲱⲃⲗⲱⲃϩ reduplicated form of ⲗⲱⲃϣ 'mingle/blend' (in glossary), giving 'molten state, melting.' Fits the metallurgical phase of craftsman-imagery alongside woodworking.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 17,
+      "coptic_form": "ⲕⲉⲃⲁⲭⲟⲥ ⲫⲓⲁⲗⲏ ⲭⲁⲡ",
+      "decision": "Rendered as 'jars, bowls, lids' — list of wooden vessel types. ⲕⲉⲃⲁⲭⲟⲥ likely a Greek-derived vessel-name (possibly κάδος 'jar' or κήβος); ⲫⲓⲁⲗⲏ = phiale/bowl (Greek); ⲭⲁⲡ possibly 'lid/cover' (cf. ϫⲁⲡ). Listing certain vessel types.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲛⲁⲣⲅⲟⲛ",
+      "decision": "Greek loanword ἀργόν 'idle, unworked, raw' — describes the wood in its uncrafted state, prior to the craftsman's shaping. Captures the parable's contrast between raw material and finished useful vessel.",
+      "confidence": "high"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲧⲁⲃⲉϩ",
+      "decision": "Translated 'imprint' (in glossary as 'seal/imprint') — the unworked wood has no shaping-imprint upon it yet. Standard Manichaean correspondential vocabulary for the typological shaping-mark of the craftsman.",
+      "confidence": "high"
+    },
+    {
+      "segment": 19,
+      "coptic_form": "ⲛⲁϩⲣ̄ⲧⲱⲣⲉ",
+      "decision": "Read as ⲛ̄-ⲛⲁϩⲣⲛ̄-ⲧⲟⲟⲧϥ̄ 'in his hand/at his disposal' — the craftsman's wisdom is operative in his hand (i.e. his execution). Lycopolitan compound preposition.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲡⲙⲁⲍⲍϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "decision": "'Third Ambassador' — the standard Manichaean title (tertius legatus, in glossary). Identified here as 'the great king' who comes to dwell in the cosmos, parallel to the parable-king who comes to receive vessels from his craftsman.",
+      "confidence": "certain"
+    }
+  ],
+  "page": 132
+}
