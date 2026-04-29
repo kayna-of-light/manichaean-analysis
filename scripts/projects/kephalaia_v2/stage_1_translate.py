@@ -609,7 +609,7 @@ def load_all_proposed_terms() -> list[dict]:
                 terms = json.load(f)
             for t in terms:
                 key = t.get("coptic", "").strip()
-                if key:
+                if key and key not in seen:
                     seen[key] = t
         except (json.JSONDecodeError, KeyError):
             continue
@@ -654,8 +654,6 @@ class TranslateStage(PipelineStage):
         super().__init__()
         self.glossary: dict = {}
         self._system_prompt: str = ""
-        self.accumulated_terms: list[dict] = []
-        self._term_keys: set[str] = set()
 
     def get_input_dir(self) -> Path:
         return TRANSCRIPTIONS_DIR
@@ -683,11 +681,14 @@ class TranslateStage(PipelineStage):
         with open(path, encoding="utf-8") as f:
             coptic_text = f.read()
 
+        # Load accumulated vocabulary fresh from disk each time
+        # (thread-safe: each thread reads independently)
+        accumulated = load_all_proposed_terms()
         vocab_section = ""
-        if self.accumulated_terms:
+        if accumulated:
             vocab_section = (
                 "\n\n"
-                + format_proposed_terms_for_prompt(self.accumulated_terms)
+                + format_proposed_terms_for_prompt(accumulated)
                 + "\n\n"
             )
 
@@ -703,7 +704,7 @@ class TranslateStage(PipelineStage):
         )
 
     def process_result(self, page_num: int, result: dict) -> dict:
-        """Extract proposed_terms, save separately, accumulate."""
+        """Extract proposed_terms and save to disk."""
         proposed = result.pop("proposed_terms", [])
 
         # Save proposed terms to separate file
@@ -713,13 +714,6 @@ class TranslateStage(PipelineStage):
             with _write_lock:
                 with open(path, "w", encoding="utf-8") as f:
                     json.dump(proposed, f, indent=2, ensure_ascii=False)
-
-        # Accumulate for subsequent pages (sequential mode)
-        for t in proposed:
-            key = t.get("coptic", "").strip()
-            if key and key not in self._term_keys:
-                self.accumulated_terms.append(t)
-                self._term_keys.add(key)
 
         return result
 
@@ -733,7 +727,7 @@ class TranslateStage(PipelineStage):
         )
 
     def run(self) -> None:
-        """Override run to load glossary and accumulated terms first."""
+        """Override run to load glossary first."""
         # Load glossary before base class prints header
         self.glossary = load_glossary()
         if self.glossary:
@@ -742,15 +736,12 @@ class TranslateStage(PipelineStage):
             print(f"Glossary: {n_m} mandatory, {n_p} preferred terms")
         self._system_prompt = build_system_prompt(self.glossary)
 
-        # Load accumulated terms from prior runs
-        self.accumulated_terms = load_all_proposed_terms()
-        self._term_keys = {
-            t.get("coptic", "").strip() for t in self.accumulated_terms
-        }
-        if self.accumulated_terms:
+        # Report accumulated vocabulary size at start
+        accumulated = load_all_proposed_terms()
+        if accumulated:
             print(
                 f"Accumulated vocabulary: "
-                f"{len(self.accumulated_terms)} terms"
+                f"{len(accumulated)} terms"
             )
 
         # Delegate to base class
