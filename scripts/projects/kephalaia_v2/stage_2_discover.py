@@ -56,10 +56,15 @@ Zoroastrian mēnōg/gētīg ontology, Manichaean cosmology, and the textual \
 transmission of what Swedenborg called "the Ancient Word."
 
 You have been given the COMPLETE TEXT of the Coptic Kephalaia of the \
-Teacher in the ORIGINAL COPTIC. The text is organized by manuscript pages \
-(marked with === PAGE N === headers) and within each page by sequentially \
-numbered line segments [§N]. Every line of the original manuscript is \
-present (with lacunae noted as [...]).
+Teacher in the ORIGINAL COPTIC. The text is presented as a continuous \
+document organized by chapters (## headings), separated by --- markers \
+at chapter boundaries. One manuscript line per text line.
+
+Lacunae are rendered as [···N] where N is the approximate number of \
+lost characters. [···] without a number means gap size is unknown. \
+Only physically attested text is shown — editorial restorations are \
+excluded. Do NOT treat text across a lacuna as necessarily connected — \
+gaps interrupt syntactic and semantic continuity.
 
 ## YOUR TASK
 
@@ -67,18 +72,18 @@ Read the ENTIRE corpus as a text-critical expert and produce structured \
 metadata that will DIRECTLY DRIVE an automated extraction pipeline. \
 Your output will be loaded by Python scripts that:
 
-1. **Score each segment** against your vocabulary lists using substring \
+1. **Score each line** against your vocabulary lists using substring \
    matching. The function `score_text(text, markers)` lowercases both \
    the text and each marker key, counts occurrences of each marker as \
    a substring, multiplies by weight, and normalizes per 100 words. \
    Your vocabulary must be precise enough for this — exact terms, \
    meaningful weights.
 
-2. **Detect editorial seams** at structural boundaries using your bridge \
-   phrases and institutional terms. The code checks the first segment of \
-   each structural unit for bridge phrase matches, counts institutional \
-   term occurrences, and combines these with register-shift detection to \
-   flag probable editorial extensions.
+2. **Detect editorial seams** at chapter boundaries using your bridge \
+   phrases and institutional terms. The code checks the first lines \
+   after each chapter heading for bridge phrase matches, counts \
+   institutional term occurrences, and combines these with \
+   register-shift detection to flag probable editorial extensions.
 
 3. **Provide context** to a per-page LLM extraction pass. Your vocabulary \
    and patterns tell the extraction LLM what markers to weight in its \
@@ -185,18 +190,18 @@ vocabulary (80+ terms). Later editorial layers may need fewer.
 
 ### 2. SEAM DETECTION
 
-**Bridge phrases**: Coptic phrases that appear at the START of segments \
+**Bridge phrases**: Coptic phrases that appear at the START of lines \
 and signal editorial extension of a preceding sequence. These are \
-segment-initial connectives that editors used to graft their material \
+line-initial connectives that editors used to graft their material \
 onto the original teaching. Provide the EXACT Coptic phrase as it \
-typically appears at the segment start. The consuming code will build \
-regex from these (anchoring to segment start, handling flexible \
+typically appears at a line start. The consuming code will build \
+regex from these (anchoring to line start, handling flexible \
 whitespace).
 
 **Institutional terms**: Coptic terms whose presence signals \
 institutional content — church offices, organizational structures, \
 institutional categories. Include the exact Coptic terms as lowercase \
-strings. These are checked via simple substring matching in segment text.
+strings. These are checked via simple substring matching in line text.
 
 ## OUTPUT REQUIREMENTS
 
@@ -282,7 +287,7 @@ COMMIT_METADATA_TOOL = {
                     "bridge_phrases": {
                         "type": "array",
                         "description": (
-                            "Phrases appearing at segment starts "
+                            "Phrases appearing at line starts "
                             "that signal editorial bridge extensions. "
                             "Code will build regex from these."
                         ),
@@ -293,7 +298,7 @@ COMMIT_METADATA_TOOL = {
                                     "type": "string",
                                     "description": (
                                         "Exact Coptic phrase as it "
-                                        "appears at segment start."
+                                        "appears at line start."
                                     ),
                                 },
                                 "reliability": {
@@ -390,6 +395,7 @@ def load_translated_pages() -> list[dict]:
       - page_num: int
       - lines: list of line segment dicts
       - header: header dict
+      - apparatus: list of apparatus entries
     """
     pages = []
     for path in sorted(PAGES_DIR.glob("p_*.json")):
@@ -402,45 +408,80 @@ def load_translated_pages() -> list[dict]:
             "page_num": int(m.group(1)),
             "lines": data.get("lines", []),
             "header": data.get("header", {}),
+            "apparatus": data.get("apparatus", []),
         })
     pages.sort(key=lambda x: x["page_num"])
     return pages
 
 
+def _build_apparatus_lookup(apparatus: list[dict]) -> dict[int, dict]:
+    """Build id→entry lookup from apparatus array."""
+    return {a["id"]: a for a in apparatus if "id" in a}
+
+
+def _render_lacunae(coptic: str, app_lookup: dict[int, dict]) -> str:
+    """Replace {N} markers with gap notation showing physical damage.
+
+    All gaps are rendered uniformly — restorations are editorial
+    conjectures and must not be treated as attested text.
+
+    - Has 'est_chars': [···N] (editor estimated N lost chars)
+    - Has 'coptic' restoration: [···N] (gap size = len of restoration)
+    - Neither: [···]
+    """
+    def _replace(m: re.Match) -> str:
+        aid = int(m.group(1))
+        entry = app_lookup.get(aid)
+        if entry is None:
+            return "[···]"
+        if "est_chars" in entry:
+            return f"[···{entry['est_chars']}]"
+        if "coptic" in entry and entry["coptic"]:
+            return f"[···{len(entry['coptic'])}]"
+        return "[···]"
+
+    return re.sub(r"\{(\d+)\}", _replace, coptic)
+
+
 def format_corpus(pages: list[dict]) -> str:
-    """Format all translated pages into a single corpus text.
+    """Format all translated pages as continuous Coptic text.
 
-    Each page gets a === PAGE N === header. Within each page, each
-    line segment gets a [§N] marker (sequential across the whole corpus).
-
-    Uses the COPTIC text for scoring discovery (the LLM
-    will derive Coptic diagnostic vocabulary).
+    Renders as a markdown document:
+    - Chapter titles as ## headings (emitted when title changes)
+    - Chapter boundaries marked by ---
+    - Paragraph breaks as blank lines
+    - One manuscript line per text line
+    - Lacunae rendered as [···N] (N = estimated lost characters)
     """
     parts: list[str] = []
-    seq = 0
+    current_title: str | None = None
 
     for page in pages:
-        page_num = page["page_num"]
         header = page["header"]
+        app_lookup = _build_apparatus_lookup(page["apparatus"])
 
-        parts.append(f"=== PAGE {page_num} ===")
-
-        # Include header in Coptic if present
+        # Emit chapter heading when title changes
         title_cop = header.get("title_coptic")
-        if title_cop:
-            seq += 1
-            parts.append(f"[§{seq}] [HEADER] {title_cop}")
+        if title_cop and title_cop != current_title:
+            if current_title is not None:
+                parts.append("")
+                parts.append("---")
+                parts.append("")
+            current_title = title_cop
+            parts.append(f"## {_render_lacunae(title_cop, app_lookup)}")
+            parts.append("")
 
-        # Line segments — Coptic text
+        # Line segments — Coptic text with lacunae rendered
         for seg in page["lines"]:
             coptic = seg.get("coptic")
             if coptic is None:
                 continue  # Skip null (destroyed) lines
-            seq += 1
-            break_mark = " [BREAK]" if seg.get("break_after") else ""
-            parts.append(f"[§{seq}]{break_mark} {coptic}")
+            rendered = _render_lacunae(coptic, app_lookup)
+            parts.append(rendered)
 
-        parts.append("")  # Blank line between pages
+            # Paragraph break
+            if seg.get("break_after"):
+                parts.append("")
 
     return "\n".join(parts)
 
