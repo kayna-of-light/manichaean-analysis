@@ -1,0 +1,508 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲁⲓⲟ",
+      "english": "(of) Chapter",
+      "basis": "standard chapter heading ⲕⲉⲫⲁⲗⲁⲓⲟⲛ; only the medial ⲁⲓⲟ lost"
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "glory",
+      "basis": "the visible ⲁⲩ at start of line 2 completes ⲛ̄ⲉⲁⲩ 'in glory' — only one letter ⲉ is restored"
+    },
+    {
+      "id": 2,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲣⲡⲉ",
+      "english": "newness",
+      "basis": "ⲁⲩⲙⲛⲧⲃ + ⲣⲡⲉ = ⲁⲩⲙⲛⲧⲃⲣⲡⲉ 'a newness'; standard formation parallel to ⲡⲁⲓⲱⲛ ⲛⲃ̄ⲣ̄ⲡⲉ 'new aeon' just preceding"
+    },
+    {
+      "id": 3,
+      "segment": 11,
+      "type": "lacuna",
+      "est_chars": 4,
+      "partial": "ⲁ[ⲩ"
+    },
+    {
+      "id": 4,
+      "segment": 11,
+      "type": "lacuna",
+      "est_chars": 2,
+      "partial": "ⲧⲁⲗ"
+    },
+    {
+      "id": 5,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲛ",
+      "english": "the",
+      "basis": "ⲛ̄[ⲛ]ⲓ̈ⲁⲧⲉ̄ 'of the Fathers' — standard plural with double ⲛ̄ⲛ"
+    },
+    {
+      "id": 6,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲙⲛ ⲟ",
+      "english": "with a",
+      "basis": "context: 'a place of binding [with] a prison of the Enemy'; conjunction ⲙⲛ + indefinite article ⲟⲩ"
+    },
+    {
+      "id": 7,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ⲧⲧⲙⲁϩⲥⲁⲩ ⲛⲑⲣⲟⲛⲟⲥ",
+      "english": "The sixth throne",
+      "basis": "structural sequence: 5th throne just enumerated, 6th expected; matches editor's bracketed restoration; final ⲥ of ⲑⲣⲟⲛⲟⲥ shown in brackets confirms"
+    },
+    {
+      "id": 8,
+      "segment": 15,
+      "type": "restoration",
+      "coptic": "ⲉⲧⲟⲓ̈ ⲛ̄ⲉⲁⲩ",
+      "english": "who is in glory",
+      "basis": "formulaic epithet, identical to that applied to the Mother of Life (line 1) and the Great Builder (line 9)"
+    },
+    {
+      "id": 9,
+      "segment": 16,
+      "type": "restoration",
+      "coptic": "ⲕⲁϩ ⲙ̄ⲡⲕⲉⲕⲉ",
+      "english": "Land of Darkness",
+      "basis": "standard Manichaean cosmological pair to ⲕⲁϩ ⲉⲧⲁⲛⲓⲧ; the Living Spirit's act of raising First Man out of the Land of Darkness is technical terminology"
+    },
+    {
+      "id": 10,
+      "segment": 17,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 11,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ⲁⲉ ⲛⲛ",
+      "english": "and on the other of the",
+      "basis": "ⲙⲉⲛ ... ⲁⲉ correlative pair; ⲛⲛ links to following ⲃ̄ⲁⲙ 'powers'"
+    },
+    {
+      "id": 12,
+      "segment": 19,
+      "type": "restoration",
+      "coptic": "ⲣⲟⲛⲟⲥ ⲡⲉ",
+      "english": "throne is",
+      "basis": "completion of ⲑⲣⲟⲛⲟⲥ + copula ⲡⲉ; matches the seventh throne enumeration formula"
+    },
+    {
+      "id": 13,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲡⲉ",
+      "english": "is",
+      "basis": "copula completing 'who is'"
+    },
+    {
+      "id": 14,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲛ",
+      "english": "of",
+      "basis": "single letter ⲛ̄ before ⲙ̄ⲯⲩⲭⲁⲩⲉ (assimilated genitive)"
+    },
+    {
+      "id": 15,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲟⲩⲥ ⲡⲉⲧⲉ",
+      "english": "Mind, into whom",
+      "basis": "ⲡⲛⲁⲃ̄ ⲛⲛⲟⲩⲥ 'Great Mind' (cf. throne 9 standard identification); relative ⲡⲉⲧⲉ continues into ⲱⲁⲣⲉ"
+    },
+    {
+      "id": 16,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲱⲛϩ",
+      "english": "Life",
+      "basis": "ⲡⲱⲛϩ 'the Life' — confirmed by the agricultural-soteriological idiom 'all the Life that shall be saved out of the cosmos'"
+    },
+    {
+      "id": 17,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲁⲓ̈ⲟ",
+      "english": "Honor",
+      "basis": "ⲡⲡⲁⲓ̈ⲟ/ⲡⲧⲁⲓ̈ⲟ 'honor'; only ⲁ and ⲟ lost, ⲓ̈ visible; matches ⲧⲁⲓ̈ⲟ 'honor' at line 27 closing the doxology"
+    },
+    {
+      "id": 18,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲛ",
+      "english": "",
+      "basis": "final ⲛ of ⲛⲁⲓⲱⲛ 'aeons'"
+    },
+    {
+      "id": 19,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ϩⲛ̄ ⲧⲙⲛⲧⲣ̄ⲡⲟ ⲙ̄ⲡⲣ̄ⲡⲟ ⲙ̄ⲡ",
+      "english": "in the kingship of the king of",
+      "basis": "doxological formula 'in the kingship of the king of honor'; editor's bracketed restoration is structurally required and connects directly to ⲧⲁⲓ̈ⲟ at line 27 start"
+    },
+    {
+      "id": 20,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲧⲉ",
+      "english": "of",
+      "basis": "completion of ⲛ̄ⲧⲉ 'of/belonging to'"
+    },
+    {
+      "id": 21,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲫⲟ",
+      "english": "the day",
+      "basis": "ⲡⲭⲁⲓ̈ ⲙⲫⲟⲟⲩⲉ 'ship of the day' (sun-ship); standard Manichaean cosmological term in the day-ship/night-ship pair"
+    },
+    {
+      "id": 22,
+      "segment": 32,
+      "type": "restoration",
+      "coptic": "ⲉ ⲡⲁ",
+      "english": "is that of",
+      "basis": "completion of formulaic 'X is that of Y' enumeration pattern; matches surrounding throne-listing syntax"
+    },
+    {
+      "id": 23,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲏⲡ ⲁⲧⲟⲩⲱⲏ",
+      "english": "belongs to the night",
+      "basis": "ⲡⲭⲁⲓ̈ ⲛ̄ⲧⲟⲩⲱⲏ 'ship of the night' (moon-ship), the parallel to the just-named day-ship; ⲧⲟⲩⲱⲏ 'night' is in accumulated vocabulary"
+    },
+    {
+      "id": 24,
+      "segment": 35,
+      "type": "restoration",
+      "coptic": "ⲡⲙⲁϩⲥⲛⲉⲩ ⲡⲉ ⲡⲁ",
+      "english": "the second is that of",
+      "basis": "ordinal sequence in throne enumeration; required by parallel structure with day-ship listing (lines 30-31)"
+    },
+    {
+      "id": 25,
+      "segment": 36,
+      "type": "restoration",
+      "coptic": "ⲁⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄",
+      "english": "the Virgin of",
+      "basis": "in the night-ship (moon) the Manichaean tradition places the Virgin of Light alongside Jesus the Radiance and the First Man; the bracket opens but text continues onto next page"
+    }
+  ],
+  "header": {
+    "page_number": "ⲡ̄ⲃ",
+    "title_coptic": "ⲛⲕⲉⲫⲁⲗ{0}ⲛ",
+    "title_english": "Chapter"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "ⲧⲧⲙⲁⲍⲥⲛⲉⲩ ⲛ̄ⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲧⲙⲉⲩ ⲛ̄ⲧⲉ ⲡⲧⲱⲛϩ ⲉⲧⲟⲓ̈ ⲛ̄{1}",
+      "english": "The second throne is that of the Mother of Life, who is in {1}"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ⲁⲩ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲁⲣⲭⲏ ⲛⲙ̄ⲡⲣⲟⲃⲟⲗⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲉⲧⲁⲩⲉⲓ",
+      "english": "glory — she who is the beginning of all the emanations that have come"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "ⲁⲡⲓⲕⲟⲥⲙⲟⲥ",
+      "english": "to this cosmos.",
+      "break_after": true
+    },
+    {
+      "i": 3,
+      "n": 3,
+      "coptic": "ⲧⲧⲙⲁϩⲱⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲉ",
+      "english": "The third throne is that of the"
+    },
+    {
+      "i": 4,
+      "n": 4,
+      "coptic": "ⲧⲥⲙⲁⲛⲧ ⲙ̄ⲡⲓⲱⲧ ⲡⲧⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲉⲧⲉ ⲛⲧⲁϩ ⲡⲉⲧⲁϩ",
+      "english": "Established One of the Father, the First Man, who is the one who"
+    },
+    {
+      "i": 5,
+      "n": 5,
+      "coptic": "ⲫⲃ̄ⲟ ⲛ̄ⲧⲱⲁⲣⲡ ⲛ̄ⲙⲛⲧⲭⲁⲭⲉ ⲧⲏⲣⲥ̄ ⲉⲧⲁⲥⲱⲱⲡⲉ ϩⲛ̄ ⲛ̄",
+      "english": "subdued the foremost of all Enmity that came to be in the"
+    },
+    {
+      "i": 6,
+      "n": 6,
+      "coptic": "ⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲉⲕⲉ",
+      "english": "worlds of the Darkness.",
+      "break_after": true
+    },
+    {
+      "i": 7,
+      "n": 6,
+      "coptic": "ⲧⲧⲙⲁϩϩⲧⲁⲩ ⲛ̄ⲑⲣⲟⲛⲟⲥ ⲡⲉ",
+      "english": "The fourth throne is that of"
+    },
+    {
+      "i": 8,
+      "n": 7,
+      "coptic": "ⲡⲁⲡⲙⲉⲣⲓⲧ ⲛ̄ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲡⲡⲛⲁⲃ̄ ⲙⲙⲉⲣⲓⲧ ⲉⲧⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲛ̄",
+      "english": "the Beloved of the Lights, the Great Beloved, the honored one of"
+    },
+    {
+      "i": 9,
+      "n": 8,
+      "coptic": "ⲧⲉ̄ ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲃ̄",
+      "english": "the aeons of the Greatness.",
+      "break_after": true
+    },
+    {
+      "i": 10,
+      "n": 8,
+      "coptic": "ⲧⲧⲙⲁϩⲧⲟⲩ ⲛⲑⲣⲟⲛⲟⲥ",
+      "english": "The fifth throne"
+    },
+    {
+      "i": 11,
+      "n": 9,
+      "coptic": "ⲡⲉ̄ ⲡⲁⲡⲛⲁⲃ̄ ⲛⲉⲕⲱⲧ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲡⲛⲁⲃ̄ ⲛⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ",
+      "english": "is that of the Great Builder, who is in glory, the Great Architect,"
+    },
+    {
+      "i": 12,
+      "n": 10,
+      "coptic": "ⲡⲉⲧⲁϩⲕⲱⲧ ⲙ̄ⲡⲁⲓⲱⲛ ⲛⲃ̄ⲣ̄ⲡⲉ ⲁⲩⲙⲛⲧⲃ{2} ⲁ{3}ⲧⲁⲗ{4}",
+      "english": "who built the new aeon and a {2} {3} {4}"
+    },
+    {
+      "i": 13,
+      "n": 11,
+      "coptic": "ⲛ̄{5}ⲓ̈ⲁⲧⲉ̄ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲁⲙⲟⲩⲣ ϩⲱⲱϩ {6}ⲩⲥⲫⲩ",
+      "english": "of {5} Fathers of the Light; and a place of binding, even {6} prison-"
+    },
+    {
+      "i": 14,
+      "n": 12,
+      "coptic": "ⲗⲁⲕ̄ⲏ ⲙⲡⲭⲁⲭⲉ ⲙ̄ⲛ ⲛⲉϩⲃⲁⲙ",
+      "english": "house of the Enemy and his powers.",
+      "break_after": true
+    },
+    {
+      "i": 15,
+      "n": 12,
+      "coptic": "{7}",
+      "english": "{7}"
+    },
+    {
+      "i": 16,
+      "n": 13,
+      "coptic": "ⲡⲉ ⲡⲁⲡⲡ̄ⲛⲁ ⲉⲧⲁⲛϩ̄ ⲡⲧⲭⲱⲣⲉ̄ {8} ⲡⲉⲧⲁϩⲉⲓⲛⲉ",
+      "english": "is that of the Living Spirit, the Strong One {8}, the one who brought"
+    },
+    {
+      "i": 17,
+      "n": 14,
+      "coptic": "ⲁϩⲣⲏⲓ̈ ⲙⲡⲧⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲃⲁⲗ ϩⲙ ⲡ{9}",
+      "english": "up the First Man out from the {9},"
+    },
+    {
+      "i": 18,
+      "n": 15,
+      "coptic": "ⲉⲧⲁϩϩⲱⲣⲃ̄ ϩⲱⲱϩ ⲁϩⲥⲙ̄ⲓⲛⲉ ⲛⲛⲕⲟⲥⲙⲟ{10}",
+      "english": "who himself cast (them) down and established the worlds {10}"
+    },
+    {
+      "i": 19,
+      "n": 16,
+      "coptic": "ⲁⲩⲕⲁⲑⲁⲣⲓⲥⲙⲟⲥ ⲙⲉⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲣ̄ⲡⲉ {11}",
+      "english": "— a purification on the one hand of the Light, and a fettering {11}"
+    },
+    {
+      "i": 20,
+      "n": 17,
+      "coptic": "ⲃ̄ⲁⲙ ⲛⲧⲙⲛⲧⲭⲁⲭⲉ",
+      "english": "powers of the Enmity.",
+      "break_after": true
+    },
+    {
+      "i": 21,
+      "n": 17,
+      "coptic": "ⲧⲧⲙⲁϩⲥⲁⲱ̄ ⲛⲑ{12}",
+      "english": "The seventh {12}"
+    },
+    {
+      "i": 22,
+      "n": 18,
+      "coptic": "ⲡⲁⲡⲙⲁϩⲱⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲣ̄ⲡⲟ ⲛ̄ⲧϩⲱⲛⲏ ⲡ",
+      "english": "that of the Third Ambassador, the King of the Zone, the"
+    },
+    {
+      "i": 23,
+      "n": 19,
+      "coptic": "ⲭⲁⲓⲥ ϩⲱⲱϩ ⲛⲛⲥⲩⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ",
+      "english": "Lord himself of all the counsels.",
+      "break_after": true
+    },
+    {
+      "i": 24,
+      "n": 20,
+      "coptic": "ⲧⲧⲙⲁϩⲱⲙⲟⲩⲛ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲓⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉ̄ⲧⲉ̄ ⲛⲧⲁϩ {13}",
+      "english": "The eighth throne is that of Jesus the Radiance, who {13}"
+    },
+    {
+      "i": 25,
+      "n": 21,
+      "coptic": "ⲡⲣⲉϩⲃⲱⲗ ⲁⲃⲁⲗ ⲙ̄ⲛ ⲡⲣⲉϩⲥⲱⲧⲉ {14}ⲙ̄ⲯⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ",
+      "english": "the Releaser and the Redeemer {14} all souls."
+    },
+    {
+      "i": 26,
+      "n": 22,
+      "coptic": "ⲧⲧⲙⲁϩⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲙⲡⲛⲁⲃ̄ ⲛⲛ{15}",
+      "english": "The ninth throne is the throne of the Great {15}"
+    },
+    {
+      "i": 27,
+      "n": 23,
+      "coptic": "ⲱⲁⲣⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ ⲥⲱⲩϩ ⲁⲣⲁϩ ⲛⲧⲉ ⲡ{16}",
+      "english": "all the churches gather, and (to whom) all the {16}"
+    },
+    {
+      "i": 28,
+      "n": 24,
+      "coptic": "ⲧⲏⲣϩ ⲉⲧⲛⲁⲥⲱⲧϩ ⲁⲃⲁⲗ ⲙⲡⲕⲟⲥⲙⲟⲥ ⲕⲱⲗ ⲁⲣⲁϩ",
+      "english": "entire that shall be saved out from the cosmos is gathered up to him.",
+      "break_after": true
+    },
+    {
+      "i": 29,
+      "n": 25,
+      "coptic": "ⲛⲉⲓ ⲛⲉ ⲡⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲛⲧⲉ ⲡⲡ{17} ⲛⲉⲧⲕⲁⲁⲧ ϩⲛ ⲛⲁⲓⲱ{18}",
+      "english": "These are the nine thrones of the {17}, those that are placed in the aeo{18}"
+    },
+    {
+      "i": 30,
+      "n": 26,
+      "coptic": "ⲉⲧϩⲓⲃⲁⲗ ⲛⲛⲓ̈ⲁⲧⲉ̄ ⲙ̄ⲡⲁⲡⲉⲁⲩ {19}",
+      "english": "that are outside the Fathers of the Glorious One {19}"
+    },
+    {
+      "i": 31,
+      "n": 27,
+      "coptic": "ⲧⲁⲓ̈ⲟ ⲱⲁ ⲁⲛⲏϩⲉ ⲛ̄ⲛⲁⲛⲏϩⲉ ϩⲁⲙⲏⲛ",
+      "english": "honor, unto the eternity of eternities. Amen.",
+      "break_after": true
+    },
+    {
+      "i": 32,
+      "n": 28,
+      "coptic": "ⲧⲧⲕⲉⲯⲓⲥ ϩⲱⲱϩ ⲛⲑⲣⲟⲛⲟⲥ ⲉⲧⲕⲁⲁⲧ ϩⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛ̄{20}",
+      "english": "And the other nine thrones, those that are placed in this cosmos {20}"
+    },
+    {
+      "i": 33,
+      "n": 29,
+      "coptic": "ⲧϩⲱⲛⲏ ⲛⲉⲓ̈ ⲛⲉ ⲱ̄ⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ϩⲙ ⲡⲭⲁⲓ̈ ⲙ{21}",
+      "english": "the Zone, these they are: three thrones in the ship of the {21}"
+    },
+    {
+      "i": 34,
+      "n": 30,
+      "coptic": "ⲟⲩⲉ ⲟⲩⲉ ⲡⲉ ⲡⲁⲡ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲙⲁϩⲥⲛⲉⲩ ⲡ{22}",
+      "english": "day. One of them is that of the Ambassador, the second {22}"
+    },
+    {
+      "i": 35,
+      "n": 31,
+      "coptic": "ⲡⲛⲁⲃ̄ ⲙⲡ̄ⲛⲁ ⲡⲙⲁϩⲱⲁⲙⲧ ⲡⲉ ⲡⲁⲡⲡ̄ⲛⲁ ⲉⲧⲁⲛϩ̄",
+      "english": "the Great One of the Spirit, the third is that of the Living Spirit."
+    },
+    {
+      "i": 36,
+      "n": 32,
+      "coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲟⲩⲛ̄ ⲕⲉⲱⲁⲙⲧ ϩⲙ ⲡⲭⲁⲓ̈ ⲉⲧ{23}",
+      "english": "And again, there are three more in the ship that {23}:"
+    },
+    {
+      "i": 37,
+      "n": 33,
+      "coptic": "ⲡⲧⲱⲁⲣⲡ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲛ̄ⲓⲏⲥ ⲡⲣ̄ⲓ̈ⲉ {24}",
+      "english": "the first is the throne of Jesus the Radiance, {24}"
+    },
+    {
+      "i": 38,
+      "n": 34,
+      "coptic": "ⲡⲧⲱⲁⲣⲡ̄ ⲛ̄ⲣⲱⲙⲉ ⲡⲙⲁϩⲱⲁⲙⲧ ⲡⲉ̄ ⲡ{25}",
+      "english": "the First Man, the third is that of {25}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": 4,
+      "coptic_form": "ⲧⲥⲙⲁⲛⲧ ⲙ̄ⲡⲓⲱⲧ",
+      "decision": "Reading as ⲡⲉⲧⲥⲙⲁⲛⲧ split across line break (line 3 ends ⲡⲉ ⲡⲉ-, line 4 begins -ⲧⲥⲙⲁⲛⲧ): 'the Established One of the Father.' This is a substantival qualitative epithet for the First Man, parallel to ⲡⲧⲱⲕ ⲁⲣⲉⲧϩ ('the standing-fast') as a stable foundational figure. Translating as 'Established One' (capitalized title) preserves both the verbal-foundational sense and the appositional structure.",
+      "confidence": "high"
+    },
+    {
+      "segment": 5,
+      "coptic_form": "ⲡⲉⲧⲁϩⲫⲃ̄ⲟ",
+      "decision": "Verb ⲫⲃ̄ⲟ unattested in accumulated vocabulary. Most likely Lyc. reflex of ϥⲃⲟ 'lessen, weaken, abolish' (Crum 619a) or ⲫⲱⲃ 'destroy.' Context: First Man encountering 'the foremost of all Enmity' in the worlds of Darkness — the primordial Manichaean cosmic combat. 'Subdued' chosen as preserving both the martial and weakening senses. Alternative 'vanquished' or 'extinguished' also possible.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 13,
+      "coptic_form": "ⲁⲩⲙⲁⲙⲟⲩⲣ ... ⲥⲫⲩⲗⲁⲕⲏ",
+      "decision": "ⲙⲁⲙⲟⲩⲣ analyzed as compound ⲙⲁ- ('place of') + ⲙⲟⲩⲣ ('binding') = 'place of binding.' Paired here with Greek loanword σφυλακή/φυλακή ('prison-house, guardpost') in hendiadys describing the Great Builder's cosmic prison for the Enemy and his powers. The doublet renders both the architectural-binding and the custodial functions of the cosmic structure.",
+      "confidence": "high"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲉⲧⲁϩϩⲱⲣⲃ̄ ϩⲱⲱϩ",
+      "decision": "ϩⲱⲣⲃ̄ likely Lyc. variant cognate with ϩⲃⲟⲣⲃⲣ̄/ϩⲃⲱⲣⲃ̄ 'cast down, throw down' (cf. accumulated ⲑⲃⲓⲟ 'humble' and the parallel ⲍⲃⲱⲣⲃ̄). Context fits Manichaean cosmogony: the Living Spirit cast down the dark archons and used their bodies to construct the cosmos ('established the worlds'). 'Cast down' preserves the martial-cosmogonic sense.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 19,
+      "coptic_form": "ⲁⲩⲙⲣ̄ⲡⲉ",
+      "decision": "ⲙⲣ̄ⲡⲉ read as variant of ⲙⲣ̄ⲣⲉ 'bond, fettering' (Crum 181a). The structure ⲕⲁⲑⲁⲣⲓⲥⲙⲟⲥ ⲙⲉⲛ ... ⲙⲣ̄ⲡⲉ ⲁⲉ provides the Manichaean cosmogonic dyad: the cosmos is BOTH a purification of Light AND a fettering of dark powers. 'Fettering' chosen over 'bond' to preserve the active-restraining sense.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 22,
+      "coptic_form": "ⲡⲣ̄ⲡⲟ ⲛ̄ⲧϩⲱⲛⲏ",
+      "decision": "ⲣ̄ⲡⲟ here = ⲣ̄ⲣⲟ 'king' (cf. accumulated ⲣ̄ⲡⲟ 'be king/reign'); ⲧϩⲱⲛⲏ = the Zone (= Greek ζώνη), the zodiacal-cosmic girdle. The Third Ambassador is technically titled 'King of the Zone' in Manichaean cosmology — he rules the zodiacal sphere from the sun-ship. Departing from accumulated 'prison/fastness' for ⲧϩⲱⲛⲏ here because the Zone-as-zodiac reading is overwhelming in this throne-enumeration context (cf. ⲧⲍⲱⲛⲏ in vocabulary).",
+      "confidence": "high"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲕⲱⲗ ⲁⲣⲁϩ",
+      "decision": "ⲕⲱⲗ + directional ⲁⲣⲁϩ ('to him') — verb ⲕⲱⲗ likely 'roll up, gather, wrap' (Crum 100a). The image is of the Life of the saved being rolled/gathered up to the Great Mind as the cosmic gatherer. Translating 'is gathered up to him' preserves both the unitive and directional motion characteristic of Manichaean ascent vocabulary.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 35,
+      "coptic_form": "ⲡⲁⲡⲛⲁⲃ̄ ⲙⲡ̄ⲛⲁ",
+      "decision": "Literal: 'that of the Great One of the Spirit.' In the day-ship enumeration this is the second throne, between the Third Ambassador (1st) and the Living Spirit (3rd). 'Great One of the Spirit' is unusual as a separate title — it likely designates an emanation or aspect distinct from the Living Spirit proper. Possibly the Mother of the Living, or a peri­phrastic designation for the Spirit-Mind. Translating literally to preserve the ambiguity rather than identify with another known figure.",
+      "confidence": "moderate"
+    }
+  ],
+  "page": 82
+}

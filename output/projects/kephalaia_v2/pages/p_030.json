@@ -1,0 +1,800 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲭⲁⲩ",
+      "english": "souls",
+      "basis": "ⲁⲛⲧⲩⲭⲁⲩⲉ ψυχαί continues into line 2 with -ⲉ"
+    },
+    {
+      "id": 1,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲛⲧ",
+      "english": "of",
+      "basis": "[ⲛⲧ]ⲉ̄ relative-of construction with ⲧⲡⲗⲁⲛⲏ"
+    },
+    {
+      "id": 2,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲏ",
+      "english": "[Error]",
+      "basis": "ⲧⲡⲗⲁⲛⲏ end-of-word"
+    },
+    {
+      "id": 3,
+      "segment": 2,
+      "type": "restoration",
+      "coptic": "ϩ",
+      "english": "the",
+      "basis": "ⲡⲉϩϣⲛⲉ continues at start of line 4 = 'his tree'"
+    },
+    {
+      "id": 4,
+      "segment": 4,
+      "type": "restoration",
+      "coptic": "ⲡⲁⲛⲟⲩⲣⲅⲓ",
+      "english": "craft[iness]",
+      "basis": "Greek loanword πανουργία, ⲁ preserved at line-end"
+    },
+    {
+      "id": 5,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲉϩⲣ̄ⲁⲓ̈",
+      "english": "she takes captive,",
+      "basis": "verb ⲣ̄- + αἰχμαλωτίζειν, traces of -ⲁ preserved"
+    },
+    {
+      "id": 6,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲙ",
+      "english": "in",
+      "basis": "preposition ϩⲙ̄ continues with ⲡⲉϩⲧⲥⲃⲱ on line 7"
+    },
+    {
+      "id": 7,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲉϩⲑⲃ",
+      "english": "humbling",
+      "basis": "ⲉϩⲑⲃⲓⲟ = 'she humbles', -ⲓⲟ preserved"
+    },
+    {
+      "id": 8,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲣⲁ ⲛⲥⲱⲟⲩ ⲁ",
+      "english": "down upon them, into",
+      "basis": "ⲉϩϩⲣⲁ ⲛ̄ⲥⲱⲟⲩ idiom 'cast down upon them' continuing to ⲧⲕⲟⲗⲁⲥⲓⲥ"
+    },
+    {
+      "id": 9,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲓⲙ ⲉ",
+      "english": "every[one who]",
+      "basis": "ⲟⲩⲁⲛ ⲛⲓⲙ idiom; relative ⲉⲧ- begins line 9"
+    },
+    {
+      "id": 10,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲧⲛⲁⲥⲛ̄ⲟⲩⲱⲛ ⲛ̄ⲛ",
+      "english": "shall recognize the",
+      "basis": "ⲥⲛ̄ⲟⲩⲱⲛ = recognize, future relative tense fits context"
+    },
+    {
+      "id": 11,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲛⲉ ⲛⲩⲛⲟⲩ",
+      "english": "true [knowledge]",
+      "basis": "ⲥⲁⲩⲛⲉ + qualifier; -ⲛⲩⲛⲟⲩ likely Lycopolitan adjectival 'true/genuine' or similar"
+    },
+    {
+      "id": 12,
+      "segment": 9,
+      "type": "restoration",
+      "coptic": "ϣⲁ ⲁⲛⲏϩⲉ",
+      "english": "forever",
+      "basis": "common eschatological formula, parallels line 8 and 11"
+    },
+    {
+      "id": 13,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲧⲁⲙⲓ",
+      "english": "store[houses]",
+      "basis": "ⲡⲧⲟⲩ ⲛⲧⲁⲙⲓⲟⲛ — five storehouses, standard Manichaean term"
+    },
+    {
+      "id": 14,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲉⲃ",
+      "english": "gush[ed]",
+      "basis": "ⲃⲉⲃⲉ 'gush, bubble forth' — standard Manichaean cosmogonic verb; cf. line 19"
+    },
+    {
+      "id": 15,
+      "segment": 13,
+      "type": "restoration",
+      "coptic": "ϣⲁⲣⲡ",
+      "english": "[the beginning]",
+      "basis": "ⲭⲛ ⲛϣⲁⲣⲡ idiom 'from the beginning'"
+    },
+    {
+      "id": 16,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "[spirit]",
+      "basis": "ⲡⲛⲁ = ⲡⲛⲉⲩⲙⲁ; final -ⲁ lost"
+    },
+    {
+      "id": 17,
+      "segment": 16,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "[store-]",
+      "basis": "ⲧⲁⲙⲓⲟⲛ continues at start of line 18"
+    },
+    {
+      "id": 18,
+      "segment": 17,
+      "type": "restoration",
+      "coptic": "ⲉ̄ ⲁ ⲡⲧⲟⲩ",
+      "english": "darkness, the five",
+      "basis": "ⲡⲕⲉⲕⲉ̄ end + introduction of next series"
+    },
+    {
+      "id": 19,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ⲛⲥⲧⲟ",
+      "english": "[ele-]",
+      "basis": "ⲥⲧⲟⲭⲉⲓⲱⲛ continues at line 20"
+    },
+    {
+      "id": 20,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ⲧⲟ",
+      "english": "ele-",
+      "basis": "ⲥⲧⲟⲭⲉⲓⲱⲛ continues at line 20 with ⲭⲉⲓϣⲛ"
+    },
+    {
+      "id": 21,
+      "segment": 19,
+      "type": "restoration",
+      "coptic": "ⲛ",
+      "english": "[trees]",
+      "basis": "ⲛϣⲏⲛ end-of-word"
+    },
+    {
+      "id": 22,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲟ",
+      "english": "themselves",
+      "basis": "ϩⲱⲟⲩ intensive pronoun"
+    },
+    {
+      "id": 23,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲟⲩⲛ̄",
+      "english": "[have]",
+      "basis": "ⲟⲩⲛⲧⲟⲩ possessive idiom 'they have'"
+    },
+    {
+      "id": 24,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲁ ⲧⲟⲩ",
+      "english": "spirits, five",
+      "basis": "parallel construction with line 15-16 schema"
+    },
+    {
+      "id": 25,
+      "segment": 22,
+      "type": "restoration",
+      "coptic": "ⲧⲡⲧⲉ",
+      "english": "[taste]",
+      "basis": "ⲧⲡⲉ 'taste' — fifth correspondence-register; cf. line 16"
+    },
+    {
+      "id": 26,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲛ ⲁⲛⲟⲩⲉⲣⲏⲩ",
+      "english": "[one another]",
+      "basis": "ⲛⲟⲩⲉⲣⲏⲩ reciprocal pronoun with negation ⲉⲛ"
+    },
+    {
+      "id": 27,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲁϩ ⲡⲉ",
+      "english": "[is]",
+      "basis": "ⲛ̄ⲧⲁϩ ⲡⲉ copular 'it is he/this is'"
+    },
+    {
+      "id": 28,
+      "segment": 24,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 29,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲡⲉⲧⲁϩⲉ",
+      "english": "what stood / the one which arose",
+      "basis": "ⲡⲉⲧ-ⲁϩⲉ relative perfect of ⲱϩⲉ 'stand'"
+    },
+    {
+      "id": 30,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲙⲡϣ",
+      "english": "the [depths]",
+      "basis": "ϣⲓⲕ/ϣⲓⲭϩ 'depth/abyss', -ⲓⲭϩ preserved"
+    },
+    {
+      "id": 31,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲡⲕⲉⲕⲉ ⲡⲉ",
+      "english": "of [darkness, which is]",
+      "basis": "standard formula; ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ relative 'which is'"
+    },
+    {
+      "id": 32,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲡⲉ",
+      "english": "is",
+      "basis": "copula closing predication"
+    },
+    {
+      "id": 33,
+      "segment": 26,
+      "type": "restoration",
+      "coptic": "ⲏⲣ",
+      "english": "wicked[ness]",
+      "basis": "ⲡⲟⲛⲏⲣⲓⲁ Greek loanword πονηρία"
+    },
+    {
+      "id": 34,
+      "segment": 26,
+      "type": "restoration",
+      "coptic": "ⲧⲏⲣⲥ",
+      "english": "all",
+      "basis": "parallel with ⲧⲕⲁⲕⲓⲁ ⲧⲏⲣⲥ̄ earlier in line"
+    },
+    {
+      "id": 35,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲧⲃ",
+      "english": "the [scattering]",
+      "basis": "ⲧⲃⲛⲥⲱⲣ — likely 'the scattering/spreading' of war; ⲥⲱⲣ root 'scatter'"
+    },
+    {
+      "id": 36,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ϩⲓⲧ",
+      "english": "by [the hand of]",
+      "basis": "ϩⲓⲧⲟⲟⲧϩ idiom 'by his hand, through him'"
+    },
+    {
+      "id": 37,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲟϩ",
+      "english": "[strifes]",
+      "basis": "ⲙⲗⲟⲟϩ 'quarrel, strife' — Lycopolitan reflex of ⲙⲗⲁϩ"
+    },
+    {
+      "id": 38,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲧⲏⲣⲟⲩ ⲙⲙ",
+      "english": "all the",
+      "basis": "completing the inventory of conflicts; ⲙⲙⲓϣⲉ continues"
+    },
+    {
+      "id": 39,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲛ̄ⲕ",
+      "english": "[and]",
+      "basis": "ⲛ̄- conjunction + ⲕⲛⲇⲩⲛⲟⲥ"
+    },
+    {
+      "id": 40,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲁⲩⲛⲟ",
+      "english": "[dangers]",
+      "basis": "κίνδυνος Greek loanword, traces of ⲛ...ⲥ visible"
+    },
+    {
+      "id": 41,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲓ",
+      "english": "of [battle]",
+      "basis": "ⲙⲙⲓϣⲉ 'battle' continues at start of line 30"
+    },
+    {
+      "id": 42,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲉⲧⲁϩⲣ̄ϣⲁ",
+      "english": "what was first of",
+      "basis": "ⲉⲧⲁϩ-ⲣ̄ϣⲁⲣⲡ 'which was first', -ⲣⲡ preserved"
+    },
+    {
+      "id": 43,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲕ",
+      "english": "[dan-]",
+      "basis": "ⲕⲛⲇⲩⲛⲟⲥ continues at start of line 31"
+    },
+    {
+      "id": 44,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲟⲥ ⲙⲛ ⲛⲉϩ",
+      "english": "[worlds with their]",
+      "basis": "ⲛⲉϩⲕⲟⲥⲙⲟⲥ + ⲛⲉϩⲃⲁⲙ parallel possessive plural"
+    },
+    {
+      "id": 45,
+      "segment": 30,
+      "type": "lacuna",
+      "est_chars": 2,
+      "partial": "ⲗⲗⲛ"
+    },
+    {
+      "id": 46,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲛⲉ",
+      "english": "manifestation",
+      "basis": "ⲡⲟⲩⲁⲛⲉ 'manifestation' — see vocab"
+    },
+    {
+      "id": 47,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ϩⲥⲱⲣ",
+      "english": "[to scatter]",
+      "basis": "ⲥⲱⲣ 'scatter' — verbal infinitive paralleling ⲡⲱⲣⲥ̄"
+    },
+    {
+      "id": 48,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲛ",
+      "english": "[and]",
+      "basis": "ⲙⲛ conjunction; -ⲛ lost at line-end"
+    },
+    {
+      "id": 49,
+      "segment": 32,
+      "type": "restoration",
+      "coptic": "ⲓⲁ ⲡⲣⲣⲟ",
+      "english": "[ia, the King]",
+      "basis": "ⲉⲕ[...] is the personal name of the King of Darkness; reading uncertain"
+    },
+    {
+      "id": 50,
+      "segment": 33,
+      "type": "restoration",
+      "coptic": "ⲉⲥⲟ ⲛϩⲁ ⲙ̄ⲙⲟⲩ",
+      "english": "[is in the likeness of a lion]",
+      "basis": "ⲙⲟⲩⲓ̈ 'lion'; standard first member of the five-animal correspondence series for the King of Darkness"
+    },
+    {
+      "id": 51,
+      "segment": 33,
+      "type": "restoration",
+      "coptic": "ⲛⲉϩ",
+      "english": "his",
+      "basis": "possessive plural ⲛⲉϩⲃⲓⲭ continues line 35"
+    },
+    {
+      "id": 52,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲃ",
+      "english": "[hands]",
+      "basis": "ⲃⲓⲭ 'hand' — body-part series"
+    },
+    {
+      "id": 53,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲛⲁⲁ",
+      "english": "[demons]",
+      "basis": "ⲇⲁⲓⲙⲱⲛ Greek loanword δαίμων"
+    },
+    {
+      "id": 54,
+      "segment": 34,
+      "type": "lacuna",
+      "est_chars": 5,
+      "partial": "ⲓ̈ϩ"
+    },
+    {
+      "id": 55,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲛⲉϩ",
+      "english": "his",
+      "basis": "possessive plural ⲛⲉϩⲛⲁϩⲃⲉ continues line 36"
+    },
+    {
+      "id": 56,
+      "segment": 35,
+      "type": "restoration",
+      "coptic": "ϩ ⲟ ⲛϩⲁ ⲛ̄ⲁⲣⲁⲕⲱⲛ",
+      "english": "[is in the likeness of dragons]",
+      "basis": "ⲇⲣⲁⲕⲱⲛ Greek loanword δράκων; standard fourth member of the five-animal series"
+    }
+  ],
+  "header": {
+    "page_number": "ⲛ̄",
+    "title_coptic": "ⲛ̄ⲕⲉⲫⲁⲗⲁⲓⲟⲛ",
+    "title_english": "Of the Chapters"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "ⲡⲙⲟⲩ ⲉⲧⲟ ⲛⲣ̄ⲡⲟ ϩⲛ̄ ⲛ̄ⲇⲟⲅⲙⲁ ⲧⲏⲣⲟⲩ ⲉϩⲃⲱⲣⲃ ⲁⲛⲧⲩ{0}",
+      "english": "Death which is king in all the doctrines, casting down the {0}"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ⲉ ⲛ̄ⲛⲣⲱⲙⲉ ⲉϩⲃⲗⲁⲙⲗⲙ̄ⲁⲩ ϩⲙ̄ ⲡⲧⲥⲃⲱ {1}ⲉ̄ ⲧⲡⲗⲁⲛ{2}",
+      "english": "of the people, defiling them in the teaching {1} Erro{2}"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "ⲙⲛ̄ⲛⲥⲱⲥ ⲉϩϩⲣⲁ ⲛⲥⲱⲩ ⲁⲧⲕⲟⲗⲁⲥⲓⲥ ϣⲁ ⲁⲛⲏϩⲉ ⲡⲉ{3}",
+      "english": "afterward casting them down into the punishment forever. T{3}"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ϣⲛⲉ ⲉⲧϩⲃⲱⲣⲃ ⲁⲙⲧⲩⲭⲁⲩⲉ ⲛϩⲏⲧϩ ⲁⲧⲙⲟⲩ ⲡⲉ ⲧⲉϩ",
+      "english": "tree which casts down the souls in it to death is his"
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "coptic": "ⲥⲃⲱ ⲛⲧⲉ ⲧⲡⲗⲁⲛⲏ ⲡⲉⲧⲙⲏϩ ⲛ̄ⲕⲣⲁϩ ϩⲓ {4}",
+      "english": "teaching of Error, the one full of guile and {4}"
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "coptic": "ϩⲓ ⲕⲁⲧⲥ̄ ⲃⲱⲛⲉ {5}ⲭⲙⲁⲁⲗⲱⲧⲓϩⲉ ⲛ̄ⲛⲣⲱⲙⲉ ⲛ̄ⲥⲉⲃⲉ ϩ{6}",
+      "english": "and wicked guile {5} the wise men i{6}"
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "coptic": "ⲡⲉϩⲧⲥⲃⲱ {7}ⲓⲟ ⲙⲙⲁⲩ ⲁⲡⲉϩϣⲛⲉ ⲉϩϩ{8}",
+      "english": "his teaching, {7} them to his tree, casting them d{8}"
+    },
+    {
+      "i": 7,
+      "n": 8,
+      "coptic": "ⲧⲕⲟⲗⲁⲥⲓⲥ ϣⲁⲁⲛⲏϩⲉ",
+      "english": "the punishment forever.",
+      "break_after": true
+    },
+    {
+      "i": 8,
+      "n": 8,
+      "coptic": "ⲛⲉⲓⲉⲧϩ ⲛ̄ⲟⲩⲁⲛ ⲛ{9}",
+      "english": "These are those of every{9}"
+    },
+    {
+      "i": 9,
+      "n": 9,
+      "coptic": "{10}ⲃⲉⲣⲃⲉ ⲉⲧϩⲁⲩ ϩⲛ̄ ⲟⲩⲥⲁⲩ{11}",
+      "english": "{10} evil seeds in a {11} knowledge"
+    },
+    {
+      "i": 10,
+      "n": 10,
+      "coptic": "ϩⲙⲉ ⲁⲣⲁⲩ ⲛϩⲣⲃⲁⲗ ⲁⲧⲟⲩⲙⲡⲡⲉ ⲙⲛ ⲡⲟⲩⲥⲛⲁϩ {12}",
+      "english": "and hate them as outsiders to their nature and to their bond {12}"
+    },
+    {
+      "i": 11,
+      "n": 11,
+      "coptic": "ⲛⲧⲉ̄ ⲛ̄ⲁⲛⲏϩⲉ:",
+      "english": "of the eternities.",
+      "break_after": true
+    },
+    {
+      "i": 12,
+      "n": 12,
+      "coptic": "ⲋ̄",
+      "english": "6"
+    },
+    {
+      "i": 13,
+      "n": 13,
+      "coptic": "ⲉⲧⲃⲉ ⲡⲧⲟⲩ ⲛ{13}ⲟⲛ ⲉⲧⲁⲩⲃ{14}ⲉ",
+      "english": "Concerning the five {13}houses which gush{14}ed"
+    },
+    {
+      "i": 14,
+      "n": 14,
+      "coptic": "ⲁⲃⲁⲗ ⲙⲡⲕⲁϩ ⲙⲡⲕⲉⲕⲉ ⲭⲛ ⲛ{15} ⲋ̄",
+      "english": "out of the land of darkness from {15}. 6"
+    },
+    {
+      "i": 15,
+      "n": 15,
+      "coptic": "ⲡⲧⲟⲩ ⲛⲁⲣⲭⲱⲛ ⲡⲧⲟⲩ ⲙⲡⲛ{16}",
+      "english": "the five archons, the five spirit{16}"
+    },
+    {
+      "i": 16,
+      "n": 16,
+      "coptic": "ⲡⲧⲟⲩ ⲛ̄ⲥⲱⲙⲁ ⲧⲧⲉ ⲛⲧⲡⲧⲉ",
+      "english": "the five bodies, that is the taste.",
+      "break_after": true
+    },
+    {
+      "i": 17,
+      "n": 17,
+      "coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉ ⲡⲫⲱⲥⲧⲏⲣ ⲁⲛⲉϩⲙⲁⲑⲏⲧⲏⲥ ⲭⲉ̄ ⲧⲟⲩ ⲛⲧ{17}",
+      "english": "Yet again the Illuminator says to his disciples: 'The five {17}"
+    },
+    {
+      "i": 18,
+      "n": 18,
+      "coptic": "ⲙ}ⲟⲛ ⲛⲉⲧⲁⲩϣⲱⲡⲉ ⲭⲛ ⲛϣⲁⲣⲡ ϩⲙ̄ ⲡⲕⲁϩ ⲙ̄ⲡⲕⲉⲕ{18}",
+      "english": "houses which came into being from the beginning in the land of darkness{18}"
+    },
+    {
+      "i": 19,
+      "n": 19,
+      "coptic": "{19}ⲭⲉⲓⲱⲛ ⲃⲉⲃⲉ ⲁⲃⲁⲗ ⲙ̄ⲙⲁⲩ ⲁⲃⲁⲗ ϩⲱϩ ⲙⲡⲧⲟⲩ ⲛⲥ{20}",
+      "english": "{19}ments gushed forth from them. From the five {20}"
+    },
+    {
+      "i": 20,
+      "n": 20,
+      "coptic": "ⲭⲉⲓϣⲛ ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲡⲧⲟⲩ ⲛ̄ϣⲏⲛ ⲁⲃⲁⲗ ⲁⲛ ⲙⲡⲧⲟⲩ ⲛϣⲏ{21}",
+      "english": "ments they molded the five trees. Out of the five tree{21}"
+    },
+    {
+      "i": 21,
+      "n": 21,
+      "coptic": "ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙⲡⲧⲟⲩ ⲛⲅⲉⲛⲟⲥ ⲛ̄ⲛⲥⲱⲛⲧ̄ ⲕⲁⲧⲁ ⲕⲟⲥⲙⲟⲥ ⲕⲟ",
+      "english": "they molded the five kinds of creatures, world by"
+    },
+    {
+      "i": 22,
+      "n": 22,
+      "coptic": "ⲥⲙⲟⲥ ⲛϩⲁⲩⲧ ϩⲓ ⲥϩⲓⲙⲉ ⲡⲧⲟⲩ ⲇⲉ ϩⲱ{22}ⲩ ⲛ̄ⲕⲟⲥⲙⲟⲥ {23}",
+      "english": "world, male and female. The five worlds them{22}selves {23}"
+    },
+    {
+      "i": 23,
+      "n": 23,
+      "coptic": "ⲧⲟⲩ ⲧⲟⲩ ⲛⲣⲣⲟ ⲙ̄ⲙⲉⲩ ⲧⲟⲩ ⲙ̄ⲡⲛ̄{24} ⲛⲥⲱⲙⲁ ⲧⲉ ⲛ{25}",
+      "english": "have five kings each, five spirit{24} bodies, that is {25}"
+    },
+    {
+      "i": 24,
+      "n": 24,
+      "coptic": "ⲕⲁⲧⲁ ⲕⲟⲥⲙⲟⲥ ⲕⲟⲥⲙⲟⲥ ⲉⲩⲉⲓⲛⲉ ⲉ{26}",
+      "english": "world by world, not in the likeness of {26}"
+    },
+    {
+      "i": 25,
+      "n": 25,
+      "coptic": "ⲧⲧⲣ̄ⲡⲟ ⲙⲡⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲁⲧⲡⲛⲟⲥ ⲛ̄ⲧ{27} {28} {29} ⲁϩⲣⲏⲓ̈ ⲁⲃⲁⲗ {30}ⲓⲭϩ {31} ⲉⲧⲉ ⲛ̄ⲧⲁϩ {32}",
+      "english": "The kingship of the world of smoke — it is {27} {28} {29} up out of {30}depths {31}, which is {32}"
+    },
+    {
+      "i": 26,
+      "n": 27,
+      "coptic": "ⲡⲁⲛⲭⲱⲭ ⲛⲧⲕⲁⲕⲓⲁ ⲧⲏⲣⲥ̄ ⲙⲛ̄ ⲧⲡⲟⲛ{33}ⲓⲁ {34} ⲁ ⲧⲁⲣⲭⲏ ⲛ",
+      "english": "the wellspring of all evil and all {33}ness. The beginning of"
+    },
+    {
+      "i": 27,
+      "n": 28,
+      "coptic": "{35}ⲛⲥⲱⲣ ⲁⲃⲁⲗ ⲙⲡⲡⲟⲗⲉⲙⲟⲥ ϣⲱⲡⲉ {36}ⲟⲟⲧϩ ⲛⲙⲗⲟ{37}",
+      "english": "the {35}scattering-forth of war came about {36}his hand. The strif{37}"
+    },
+    {
+      "i": 28,
+      "n": 29,
+      "coptic": "{38}ϣⲉ ⲙ̄ⲙⲛⲧⲧⲧⲱⲛ {39}{40}ⲥ ⲛϩⲧⲁⲡ ⲙⲙ{41}",
+      "english": "{38} battles of contention, {39} {40} of war, {41}"
+    },
+    {
+      "i": 29,
+      "n": 30,
+      "coptic": "ϣⲉ ⲙ̄ⲡⲏⲗⲏ ⲛⲥⲱⲭⲉ ⲡⲉⲧⲙⲙⲉⲩ ⲡ{42}ⲣⲡ ⲛⲛⲉϩⲥⲉ {43}",
+      "english": "battles of the gates of slaughter — that one is {42} of dangers"
+    },
+    {
+      "i": 30,
+      "n": 31,
+      "coptic": "ⲇⲩⲛⲟⲥ ϩⲓ ⲡⲟⲗⲉⲙⲟⲥ ⲙⲛ̄ ⲛⲉϩⲕⲟⲥⲙ{44}ⲃⲁⲙ {45}",
+      "english": "and wars together with their worlds {44}powers {45}"
+    },
+    {
+      "i": 31,
+      "n": 32,
+      "coptic": "ⲛⲥⲱⲥ ⲁⲛ ⲁϩⲡⲱⲣⲥ̄ ⲙⲛ ⲡⲟⲩⲁ{46} ⲁ{47} ⲟⲩⲙ̄ⲗⲁϩ ⲙ{48}",
+      "english": "Afterward also, to spread out, and the {46}, {47} a strife and"
+    },
+    {
+      "i": 32,
+      "n": 33,
+      "coptic": "ⲧⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲭⲁⲥⲉ",
+      "english": "the lofty kingship.",
+      "break_after": true
+    },
+    {
+      "i": 33,
+      "n": 33,
+      "coptic": "ⲉⲕ{49} ⲙⲡⲕⲉⲕⲉ̄",
+      "english": "Ek{49} of darkness —"
+    },
+    {
+      "i": 34,
+      "n": 34,
+      "coptic": "ⲟⲩⲛ ⲧⲉ ⲙⲙⲟⲣⲫⲏ ⲛϩⲏⲧϩ ⲧⲉϩⲁⲡⲉ {50} {51}",
+      "english": "there are five forms in him: his head {50}, his {51}"
+    },
+    {
+      "i": 35,
+      "n": 35,
+      "coptic": "{52}ⲓⲭ ⲛⲉϩⲟⲩⲣⲏⲧⲉ ⲉⲩⲟ ⲛ̄ϩⲁ {53}ⲱ{54} {55}",
+      "english": "{52}hands and his feet are in the likeness of {53}{54}, his {55}"
+    },
+    {
+      "i": 36,
+      "n": 36,
+      "coptic": "ⲛⲁϩⲃⲉ ⲉⲩⲟ ⲛϩⲁ ⲛⲁϩⲱⲙ ⲉⲣⲉ ϩⲏⲧ{56}",
+      "english": "shoulders are in the likeness of eagles, while his belly {56}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": "header",
+      "coptic_form": "ⲛ̄",
+      "decision": "The page numeral as transcribed is ⲛ̄ (= 50), which does not match the modern page-30 label. Preserved as transcribed; possibly a manuscript-internal numbering convention or scribal feature.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 0,
+      "coptic_form": "ⲡⲙⲟⲩ ⲉⲧⲟ ⲛⲣ̄ⲡⲟ",
+      "decision": "Translated 'Death which is king' — ⲣ̄ⲡⲟ = Lycopolitan ⲣ̄-ⲣ̄ⲣⲟ 'be king/reign.' Death personified as cosmic king of false doctrines.",
+      "confidence": "high"
+    },
+    {
+      "segment": 1,
+      "coptic_form": "ⲉϩⲃⲗⲁⲙⲗⲙ̄ⲁⲩ",
+      "decision": "ⲃⲗⲁⲙⲗⲙ = 'defile, befoul' (cf. Sah. ϫⲱϩⲙ̄). The teaching of Error defiles those whom Death has cast down.",
+      "confidence": "high"
+    },
+    {
+      "segment": 5,
+      "coptic_form": "ⲕⲁⲧⲥ̄ ⲃⲱⲛⲉ",
+      "decision": "ⲕⲁⲧⲥ̄ unattested elsewhere; tentatively rendered 'wicked guile' as parallel/expansion of preceding ⲡⲁⲛⲟⲩⲣⲅⲓⲁ ('craftiness'). ⲃⲱⲛⲉ = 'evil/wickedness' is well-attested.",
+      "confidence": "low"
+    },
+    {
+      "segment": 9,
+      "coptic_form": "ⲃⲉⲣⲃⲉ",
+      "decision": "Distinct from ⲡⲃⲣⲉ ('seed'). ⲃⲉⲣⲃⲉ likely 'seeds' here as plural, but possibly 'sprouts/shoots.' Translated 'seeds' for context (recognition of evil seeds within doctrines).",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 10,
+      "coptic_form": "ϩⲙⲉ ⲁⲣⲁⲩ ⲛϩⲣⲃⲁⲗ",
+      "decision": "ϩⲙⲉ tentatively read as Lycopolitan reflex of ⲙⲁⲥⲧⲉ 'hate.' ⲣⲃⲁⲗ = ⲣ̄-ⲃⲟⲗ 'outsider, foreign one.' Context: those who recognize evil seeds in true knowledge will hate them as alien to their proper nature.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 10,
+      "coptic_form": "ⲧⲟⲩⲙⲡⲡⲉ",
+      "decision": "Unclear. Possibly ⲧⲟⲩ-ⲙⲡⲡⲉ 'their counted/portion' or a contracted form of 'their nature/lot.' Translated tentatively 'their nature' as paired with ⲡⲟⲩⲥⲛⲁϩ ('their bond').",
+      "confidence": "low"
+    },
+    {
+      "segment": 13,
+      "coptic_form": "ⲡⲧⲟⲩ ⲛⲧⲁⲙⲓⲟⲛ ... ⲡⲧⲟⲩ ⲛⲁⲣⲭⲱⲛ ... ⲡⲧⲟⲩ ⲙⲡⲛⲁ ... ⲡⲧⲟⲩ ⲛⲥⲱⲙⲁ ... ⲧⲡⲧⲉ",
+      "decision": "Standard Manichaean five-fold dark cosmology: five storehouses, five archons, five spirits, five bodies, five tastes — each register corresponding to the five worlds (smoke, fire, wind, water, darkness).",
+      "confidence": "high"
+    },
+    {
+      "segment": 16,
+      "coptic_form": "ⲧⲡⲧⲉ",
+      "decision": "Read as ⲧⲡⲉ 'taste' — gustatory correspondence-register completing the five-fold schema. Each dark world has its taste-correspondence as its bodily register.",
+      "confidence": "high"
+    },
+    {
+      "segment": 19,
+      "coptic_form": "ⲥⲧⲟⲭⲉⲓⲱⲛ / ⲥⲧⲟⲭⲉⲓϣⲛ",
+      "decision": "Greek loanword στοιχεῖον 'element.' The orthography ⲥⲧⲟⲭⲉⲓϣⲛ at start of line 20 may be a scribal slip for ⲥⲧⲟⲭⲉⲓⲱⲛ; preserved as transcribed.",
+      "confidence": "high"
+    },
+    {
+      "segment": 26,
+      "coptic_form": "ⲡⲁⲛⲭⲱⲭ",
+      "decision": "Lexeme unclear. Translated 'wellspring' interpretively, fitting the context of 'origin/source of all evil and wickedness.' Possibly related to a root meaning 'pit, abyss, source.'",
+      "confidence": "low"
+    },
+    {
+      "segment": 27,
+      "coptic_form": "ⲧⲃⲛⲥⲱⲣ",
+      "decision": "ⲥⲱⲣ = 'scatter, spread.' The ⲧⲃⲛ- prefix unclear, possibly intensifier or article + nominalizer. Translated 'scattering-forth' to capture the noun of action.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲙⲙⲛⲧⲧⲧⲱⲛ",
+      "decision": "Abstract noun from ⲧⲱⲛ 'rise up against, contend' — 'contention, strife.' Doubled ⲧⲧ may be writing convention.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 29,
+      "coptic_form": "ⲡⲏⲗⲏ ⲛⲥⲱⲭⲉ",
+      "decision": "πύλη + ⲥⲱⲭⲉ. ⲥⲱⲭⲉ tentatively rendered 'slaughter/wounding' — fits the martial inventory (battles, dangers, gates of X). Possibly related to a root meaning 'strike, smite.'",
+      "confidence": "low"
+    },
+    {
+      "segment": 32,
+      "coptic_form": "ⲧⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲭⲁⲥⲉ",
+      "decision": "ⲭⲁⲥⲉ = 'high, lofty' (Lycopolitan reflex of ⲭⲱⲥⲉ/ϫⲓⲥⲉ — cf. accumulated vocab ⲡⲭⲥⲉ). 'The lofty kingship' = the elevated dominion of the King of Darkness over the dark realms.",
+      "confidence": "high"
+    },
+    {
+      "segment": 33,
+      "coptic_form": "ⲉⲕ[ⲓⲁ ⲡⲣⲣⲟ] ⲙⲡⲕⲉⲕⲉ̄",
+      "decision": "ⲉⲕ[...] is the personal name of the King of Darkness, restored by editor as 'ⲉⲕⲓⲁ' (or similar). Possibly Greek αἰκία 'outrage, mistreatment' as personified epithet, or a transliterated demonic name. Reading uncertain.",
+      "confidence": "low"
+    },
+    {
+      "segment": 34,
+      "coptic_form": "ⲟⲩⲛ ⲧⲉ ⲙⲙⲟⲣⲫⲏ ⲛϩⲏⲧϩ",
+      "decision": "ⲟⲩⲛ ... ⲛϩⲏⲧϩ = 'there are ... in him.' The King of Darkness has five animal-forms as the five-fold composition of his body — head of lion, hands/feet of demons, shoulders of eagle, belly of dragon, tail of fish (continuing onto next page).",
+      "confidence": "high"
+    },
+    {
+      "segment": 34,
+      "coptic_form": "ϩⲓ ⲓ̈ϩ",
+      "decision": "Reading uncertain. The damaged sequence after 'demons and...' may include a second class of evil beings paired with demons (e.g. devils, evil ones), but the abbreviation/orthography ⲓ̈ϩ is unclear.",
+      "confidence": "low"
+    }
+  ],
+  "page": 30
+}

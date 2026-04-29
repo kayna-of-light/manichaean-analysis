@@ -1,0 +1,418 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲛ̄ⲕⲉⲫⲁⲗⲁⲓⲟⲛ",
+      "english": "Chapter",
+      "basis": "Standard running header restoration; only ⲕⲉⲫⲁⲗⲁⲓⲟ preserved between brackets, leading ⲛ̄ and trailing ⲛ restored by editor with decorative marks > · and · <."
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲱⲁⲓ",
+      "english": "days",
+      "basis": "Restoration ⲛϩⲱ[ⲁⲓ] confirmed by line 3 ⲛⲟⲩϩⲱⲁⲓⲟⲛ 'their days.'"
+    },
+    {
+      "id": 2,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲩ",
+      "english": "(3pl)",
+      "basis": "Final ⲩ of ⲛϩⲏⲧⲟⲩ '(from) them' — partially visible trace plus context."
+    },
+    {
+      "id": 3,
+      "segment": 5,
+      "type": "restoration",
+      "coptic": "ⲙⲛ ⲡ",
+      "english": "with the",
+      "basis": "Editor's restoration; required by following ⲕⲁϩ ⲧⲏⲣⲩ̄ 'entire earth.'"
+    },
+    {
+      "id": 4,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲃⲁⲗ",
+      "english": "forth",
+      "basis": "Standard ⲃⲱⲗ ⲁⲃⲁⲗ idiom 'release forth' (cf. accumulated vocab)."
+    },
+    {
+      "id": 5,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲕⲱⲧ ⲛⲥⲉ",
+      "english": "build and",
+      "basis": "Editor's restoration; supplies the missing verb in 'build and adorn,' a doublet repeated in line 11."
+    },
+    {
+      "id": 6,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲁⲓ̈",
+      "english": "(adorn)",
+      "basis": "ⲧⲥ[ⲁⲓ̈]ⲟ̣ — middle of word ⲧⲥⲁⲓⲟ 'adorn'; trace of final ⲟ visible."
+    },
+    {
+      "id": 7,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲡⲉ ⲁ",
+      "english": "new — they",
+      "basis": "Restoration ⲃⲣ[ⲡⲉ ⲁ]ⲩⲧⲁϩⲙ — ⲡⲉ completes ⲃⲣⲡⲉ 'new' (Lyc. for ⲃⲣⲣⲉ); ⲁ is past-tense prefix of ⲁⲩⲧⲁϩⲙ̄ 'they summoned.'"
+    },
+    {
+      "id": 8,
+      "segment": 9,
+      "type": "restoration",
+      "coptic": "ⲡ",
+      "english": "the",
+      "basis": "Definite article ⲡ in ⲡⲛⲁⲟ̄ 'the great.'"
+    },
+    {
+      "id": 9,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲥⲃ",
+      "english": "prepar(ations)",
+      "basis": "Editor restores ⲛ̄[ⲥⲃ]ⲧⲉⲩⲉ 'preparations/equipment' from ⲥⲟⲃⲧⲉ 'prepare'; semantically fits as parallel item to 'strongholds' (ⲙⲁⲛⲭⲓⲟⲟⲣⲉ) in line 28."
+    },
+    {
+      "id": 10,
+      "segment": 33,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "(fourth)",
+      "basis": "Final ⲉ of ⲩⲧⲟⲉ 'fourth' (Lyc. ordinal, in glossary)."
+    },
+    {
+      "id": 11,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲕⲁⲧ",
+      "english": "lies",
+      "basis": "Editor's restoration ⲡⲉⲧ[ⲕⲁⲧ] — qualitative of ⲕⲁ 'lay/be set'; fits 'sphere of stars that lies in great shame.'"
+    },
+    {
+      "id": 12,
+      "segment": 34,
+      "type": "restoration",
+      "coptic": "ⲛⲁⲟ̄ ⲙ",
+      "english": "great",
+      "basis": "Editor restores ⲟⲩ[ⲛ]ⲁ̣[ⲟ̄ ⲙ]ⲙⲛⲧⲁϣⲓⲡⲉ 'a great shame'; trace of ⲁ visible."
+    },
+    {
+      "id": 13,
+      "segment": 35,
+      "type": "lacuna",
+      "est_chars": 9,
+      "partial": "ⲟⲩ...ⲉ"
+    },
+    {
+      "id": 14,
+      "segment": 36,
+      "type": "restoration",
+      "coptic": "ⲱ",
+      "english": "(Life)",
+      "basis": "Middle of ⲡ[ⲱ]ⲛϩ̄ 'Life'; restoration certain by context 'Father of Life.'"
+    },
+    {
+      "id": 15,
+      "segment": 36,
+      "type": "restoration",
+      "coptic": "ⲙⲛ ⲧⲁⲧⲙⲉⲩ ⲛ",
+      "english": "with the Mother of",
+      "basis": "Editor's restoration of standard Manichaean pair Father of Life / Mother of Life; sentence continues onto next page."
+    }
+  ],
+  "header": {
+    "page_number": "ⲣ̄ⲓⲏ",
+    "title_coptic": "{0}",
+    "title_english": "{0}"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "ⲛ̄ⲛⲉⲧⲟⲩⲛⲁϩⲁⲧⲃⲟⲩ ⲁⲩⲧⲱϣ ⲛ̄ⲛⲥⲓⲟⲩ ϩⲓ ⲛϩⲱ{1}",
+      "english": "Of those whom they shall slay, they appointed the stars and the {1}"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ⲟⲛ ⲛ̄ⲥⲫⲁⲓⲣⲁ ⲛⲉⲧⲥϩⲁⲛⲧ' ⲁⲣⲁⲩ ⲁⲧⲟⲩⲝⲡⲁⲩ ⲛϩⲏⲧⲟ{2}",
+      "english": "and the spheres that are fitted to them, that they may be born from them{2},"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "ⲛ̄ⲥⲉⲙⲟⲩⲣ ⲧⲟⲩⲛⲟⲩⲛⲉ ϩ̄ⲛ ⲛⲟⲩϩⲱⲁⲓⲟⲛ ⲛ̄ⲥⲉϩⲣⲁ",
+      "english": "and that they bind their root in their days, and that they keep"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ⲛⲥⲱⲟⲩ ⲛϩⲏⲧⲟⲩ ⲛ̄ⲥⲉⲡⲧⲱⲛⲉ ⲙ̄ⲙⲁⲩ ⲁⲩϩⲉⲡⲡ ⲛⲩϣⲃ̄ⲓⲟ",
+      "english": "watch over them within them, and turn them in a judgment of recompense"
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "coptic": "ⲕⲁⲧⲁ ⲛⲟⲩϩⲃⲏⲩⲉ ⲙⲛ ⲛⲟⲩⲛⲁⲃⲉ",
+      "english": "according to their works and their sins.",
+      "break_after": true
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "coptic": "ϩⲁⲧⲉϩⲏ ⲁⲛ ⲉⲙⲡⲁⲧⲟⲩⲃⲱⲗ ⲡⲕⲟⲥⲙⲟⲥ ⲁⲃⲁⲗ {3}ⲕⲁϩ",
+      "english": "Once again, beforehand — before the cosmos is released forth {3} earth"
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "coptic": "ⲧⲏⲣⲩ̄ ⲁⲩⲧⲱϣ ⲁⲩ†ⲙⲉⲓ̈ⲛⲉ ⲁⲛⲣⲉϥⲃⲱⲗ ⲁ{4} ⲁⲃⲁ",
+      "english": "entire — they appointed and gave a sign to the releasers, that they should release {4} —"
+    },
+    {
+      "i": 7,
+      "n": 8,
+      "coptic": "ⲗⲩ̄ ⲁⲃⲁⲗ ϩⲁⲧⲉϩⲏ ⲁⲛ ⲉⲙⲡⲁⲧⲟⲩ{5}",
+      "english": "release forth. Once again, beforehand — before they {5}"
+    },
+    {
+      "i": 8,
+      "n": 9,
+      "coptic": "ⲧⲥ{6}ⲟ̣ ⲛⲥⲉⲧⲱϣ ⲙ̄ⲡⲧⲁⲓⲱⲛ ⲙ̄ⲡⲧⲁⲓⲱⲛ ⲛⲃⲣ{7}ⲩⲧⲁϩ",
+      "english": "ad{6}orn and appoint the Aeon, the {7} summoned"
+    },
+    {
+      "i": 9,
+      "n": 10,
+      "coptic": "ⲙ ⲛ{8}ⲛⲁⲟ̄ ⲛⲉⲕⲱⲧ ⲡⲱⲁⲣⲡ ⲛ̄ⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ ⲙⲛ̄ ⲛ̄",
+      "english": "{8}great Builder, the First Architect, with the"
+    },
+    {
+      "i": 10,
+      "n": 11,
+      "coptic": "ⲁⲅⲅⲉⲗⲟⲥ ⲉⲧⲛⲉⲙⲉϥ ⲉⲧⲛⲁⲕⲱⲧ ⲛ̄ⲥⲉⲧⲥⲁⲓ̈ⲟ ⲙⲡⲧⲁⲓⲱⲛ ⲛ̄",
+      "english": "angels who are with him, who shall build and adorn the Aeon"
+    },
+    {
+      "i": 11,
+      "n": 12,
+      "coptic": "ⲃⲣ̄ⲡⲉ",
+      "english": "of the new.",
+      "break_after": true
+    },
+    {
+      "i": 12,
+      "n": 13,
+      "coptic": "ⲙ̄ϩ̄",
+      "english": "46"
+    },
+    {
+      "i": 13,
+      "n": 14,
+      "coptic": "— ⲉⲧⲃⲉ ⲡⲩ̄ⲧⲁⲩ ⲛ̄ —",
+      "english": "— Concerning the Four —"
+    },
+    {
+      "i": 14,
+      "n": 15,
+      "coptic": "ⲙ̄ϩ̄ ⲛⲁⲟ̄ ⲛ̄ϩⲱⲃ ⲙ̄ϩ̄",
+      "english": "46 Great Works 46",
+      "break_after": true
+    },
+    {
+      "i": 15,
+      "n": 16,
+      "coptic": "Ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲝⲉ ⲡⲫⲱⲥⲧⲏⲣ ⲭⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲛ̄ⲛ̄ⲥⲓⲟⲩ ⲉ̄",
+      "english": "Once again the Illuminator said: The wheel of the stars which"
+    },
+    {
+      "i": 16,
+      "n": 17,
+      "coptic": "ⲧⲟⲩⲁⲛϩ̄ ⲛⲏⲧⲛ̄ ⲁⲃⲁⲗ ⲟⲩⲛⲁⲟ̄ ⲛϩⲱⲃ ⲛⲭⲱⲣⲉ ⲡⲉ ⲟⲩⲉ",
+      "english": "is manifest unto you — it is a great mighty work; it itself is"
+    },
+    {
+      "i": 17,
+      "n": 18,
+      "coptic": "ϩⲱⲱϥ ⲡⲉ ϩ̄ⲛ ⲡⲩ̄ⲧⲁⲩ ⲛⲛⲁⲟ̄ ⲛϩⲱⲃ ⲉⲡⲉⲓⲁⲏ ⲧⲁⲣⲭⲟ",
+      "english": "one of the Four Great Works, since the archontic"
+    },
+    {
+      "i": 18,
+      "n": 19,
+      "coptic": "ⲧⲓⲕⲏ ⲧⲏⲣⲥ̄ ⲁⲩⲧⲁϣⲥ̄ ⲁϥⲧⲟⲉ ⲛⲧⲁⲓ̈ⲉ",
+      "english": "host in its entirety has been distributed into four kinds.",
+      "break_after": true
+    },
+    {
+      "i": 19,
+      "n": 20,
+      "coptic": "Ⲧⲱⲁⲣⲡ ⲛ̄ⲧⲁⲓ̈ⲉ ⲡⲉ ⲛ̄ⲟ̄ⲁⲙ ⲉⲧϣⲟⲟⲡ ϩⲙ̄ ⲡⲙⲏⲧ ⲛⲥⲧⲉⲣⲉⲱ",
+      "english": "The first kind is the powers that exist in the ten firma-"
+    },
+    {
+      "i": 20,
+      "n": 21,
+      "coptic": "ⲙⲁ ⲛⲉⲧϣⲟⲟⲡ ⲙ̄ⲡⲥⲁⲛ̄ⲧⲡⲉ ⲙⲡⲧⲣⲟⲭⲟⲥ ⲙⲛ ⲧⲁⲣⲭⲟⲛ",
+      "english": "ments that exist on the upper side of the wheel, with the archon-"
+    },
+    {
+      "i": 21,
+      "n": 22,
+      "coptic": "ⲧⲓⲕⲏ ⲉⲧⲙⲏⲣ ⲛ̄ϩⲏⲧⲟⲩ ⲉⲥⲁⲧⲡ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ ϩⲛ ⲙⲡⲏⲩ",
+      "english": "tic host that is bound within them, chosen into them, in the heav-"
+    },
+    {
+      "i": 22,
+      "n": 23,
+      "coptic": "ⲉ ⲉⲧⲙⲡⲥⲁⲛⲧⲡⲉ",
+      "english": "ens that are on the upper side.",
+      "break_after": true
+    },
+    {
+      "i": 23,
+      "n": 23,
+      "coptic": "Ⲧⲙⲁϩⲥⲛⲧⲉ ⲛ̄ⲧⲁⲓ̈ⲉ ⲡⲉ",
+      "english": "The second kind is"
+    },
+    {
+      "i": 24,
+      "n": 24,
+      "coptic": "ⲡϣⲙⲟⲩⲛ ⲛⲕⲁϩ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄ⲡ̄ⲧⲛⲉ ⲡⲩ̄ⲧⲁⲩ ⲉⲧⲧⲏⲧ",
+      "english": "the eight earths on the lower side, the four that are joined"
+    },
+    {
+      "i": 25,
+      "n": 25,
+      "coptic": "ⲙⲛ ⲡⲩ̄ⲧⲁⲩ ⲛ̄ⲧⲟⲡⲟⲥ ⲛ̄ⲧⲉ ⲡⲕⲉⲕⲉ ⲧⲙⲁϩⲥⲛⲧⲉ ⲛ̄ⲧⲁⲓ̈ⲉ",
+      "english": "with the four places of the Darkness; the second kind"
+    },
+    {
+      "i": 26,
+      "n": 26,
+      "coptic": "ⲡⲉ ⲭⲛ̄ ⲙⲡⲓⲕⲁϩ ⲉⲧⲉⲣⲉ ⲛ̄ⲣⲱⲙⲉ ⲙⲁϩⲉ ⲁⲭⲱϥ ϣⲁ",
+      "english": "is from this earth on which men walk down unto"
+    },
+    {
+      "i": 27,
+      "n": 27,
+      "coptic": "ⲡⲥⲁⲙⲡⲓⲧⲛⲉ",
+      "english": "the lower side.",
+      "break_after": true
+    },
+    {
+      "i": 28,
+      "n": 27,
+      "coptic": "Ⲧⲙⲁϩϣⲁⲙⲧⲉ ⲛ̄ⲧⲁⲓ̈ⲉ ⲡⲉ ⲛ̄{9}",
+      "english": "The third kind is the {9}-"
+    },
+    {
+      "i": 29,
+      "n": 28,
+      "coptic": "ⲧⲉⲩⲉ ⲙ̄ⲛ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲉⲧⲕⲱⲧⲉ ⲁⲛⲕⲟⲥⲙⲟⲥ ⲉⲧⲉ",
+      "english": "ations and the strongholds that surround the worlds, which"
+    },
+    {
+      "i": 30,
+      "n": 29,
+      "coptic": "ⲛ̄ⲧⲁⲩ ⲛⲉ ⲡⲩ̄ⲧⲁⲩ ⲛⲧⲁⲩ ⲙⲛ ⲡϣⲁⲙⲧ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ",
+      "english": "are the four of them with the three strongholds"
+    },
+    {
+      "i": 31,
+      "n": 30,
+      "coptic": "ⲙⲛ ⲡⲉⲧⲛ̄ϩⲏⲧⲟⲩ ⲙⲛ ⲧⲁⲣⲭⲟⲛⲧⲓⲕⲏ ⲉⲧⲉⲗ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ",
+      "english": "and that which is within them, with the archontic host that is gathered into them,"
+    },
+    {
+      "i": 32,
+      "n": 31,
+      "coptic": "ⲙ̄ⲛ ⲛⲟ̄ⲁⲙ ⲉⲧⲟ ⲛⲭⲁⲓ̈ⲥ ⲁⲭⲱⲟⲩ",
+      "english": "with the powers that are lord over them.",
+      "break_after": true
+    },
+    {
+      "i": 33,
+      "n": 31,
+      "coptic": "Ⲧⲙⲁϩⲩⲧⲟ{10}",
+      "english": "The fourth{10}"
+    },
+    {
+      "i": 34,
+      "n": 32,
+      "coptic": "ⲛ̄ⲧⲁⲓ̈ⲉ ⲡⲉ ⲧⲥⲫⲁⲓⲣⲁ ⲛ̄ⲛ̄ⲥⲓⲟⲩ ⲡⲉⲧ{11} ϩⲛ ⲟⲩ{12}",
+      "english": "kind is the sphere of stars that {11} in a {12}"
+    },
+    {
+      "i": 35,
+      "n": 33,
+      "coptic": "ⲙⲛⲧⲁϣⲓⲡⲉ ⲉϥϩⲁⲣⲟ̄ ϩⲛ ⲟⲩ{13}",
+      "english": "shame, being heavy in a {13}"
+    },
+    {
+      "i": 36,
+      "n": 34,
+      "coptic": "ⲛⲁϣⲱⲥ ⲧⲁⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡ{14}ⲛϩ̄ {15}",
+      "english": "great-she-is; the Father of {14}Life {15}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": "header",
+      "coptic_form": "ⲙ̄ϩ̄",
+      "decision": "Coptic numeral with ⲙ̄ = 40 and ϩ̄ standing in for the 6-numeral (stigma/ⲋ̄) yields 46. This identifies the kephalaion as 'On the Four Great Works' (Polotsky-Böhlig Kephalaion 46). The use of ϩ for ⲋ is a known orthographic variant in Manichaean Coptic numbering.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 3,
+      "coptic_form": "ⲁⲩϩⲉⲡⲡ ⲛⲩϣⲃ̄ⲓⲟ",
+      "decision": "Read as ⲍⲛ̄ ⲟⲩ-ϩⲉⲡ (=ϩⲁⲡ 'judgment') ⲛ̄-(ⲟ)ⲩ-ϣⲃⲓⲟ 'in a judgment of recompense'; the doubled ⲡⲡ likely reflects elision of preposition ⲍⲛ̄/ⲍⲙ̄ + article ⲟⲩ + first letter of ϩⲉⲡ. The phrase fits the eschatological accounting (cf. line 5 'according to their works and their sins').",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 7,
+      "coptic_form": "ⲁⲩⲧⲁϩⲙ",
+      "decision": "Read as ⲁⲩ-ⲧⲁⲍⲙ̄ (=ⲧⲱϩⲙ̄ 'summon, call'; cf. accumulated ⲧⲁⲍⲙ ⲁⲃⲁⲗ 'summon forth') with 3pl perfect prefix ⲁ-. The Great Builder is 'summoned' to construct the New Aeon — fitting Manichaean cosmogonic vocabulary.",
+      "confidence": "high"
+    },
+    {
+      "segment": 13,
+      "coptic_form": "ⲡⲩ̄ⲧⲁⲩ",
+      "decision": "Lycopolitan collective 'the four' (= Sah. ⲡϥⲧⲟⲟⲩ); cf. accumulated entry ⲡϩⲧⲁⲩ. Used four times on this page in the cosmological enumeration of the Four Great Works.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 22,
+      "coptic_form": "ⲧⲙⲁϩⲥⲛⲧⲉ (twice)",
+      "decision": "The ordinal 'second' appears twice (lines 23 and 25), once introducing the kind and once recapitulating it. This is likely either dittographic elaboration ('the second kind is the eight earths... [namely] the second kind is from this earth...') or a scribal slip. I retain both as 'second kind' since the sequence first/second/third/fourth is otherwise complete (lines 20, 23, 27, 31).",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 31,
+      "coptic_form": "ⲉⲧⲉⲗ",
+      "decision": "Read as Lyc. variant of ⲱⲗ/ⲱⲗⲕ̄ 'be drawn together, be gathered.' With ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ 'into them' yields 'gathered into them.' Could alternatively be a relative form of ⲉⲗ (ⲱⲗ) 'roll/twist together.'",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 36,
+      "coptic_form": "ⲧⲁⲡⲓⲱⲧ",
+      "decision": "Anomalous form. Most likely a Lycopolitan compound ⲧⲁ-ⲡⲓⲱⲧ '(she-)of-the-Father' or simply a dialectal form of ⲡⲓⲱⲧ 'the Father' (with feminine relative ⲧⲁ-). Given the editor's restoration in line 34 of [ⲙⲛ ⲧⲁⲧⲙⲉⲩ ⲛ-] 'with the Mother of —,' the standard Manichaean Father/Mother of Life pair is in view. Translated 'the Father (of Life)' with this caveat.",
+      "confidence": "low"
+    },
+    {
+      "segment": 36,
+      "coptic_form": "ⲉⲛⲁϣⲱⲥ",
+      "decision": "Qualitative of ⲛⲁϣⲉ 'be many/great' with 3sg.f. subject ⲉⲥ-/ⲥ̄ — 'she is great/abundant.' The feminine pronoun refers to ⲧⲥⲫⲁⲓⲣⲁ (sphere) or to the lacunous noun ending in -ⲉ that 'she-is-great' modifies.",
+      "confidence": "high"
+    }
+  ],
+  "page": 118
+}
