@@ -567,8 +567,6 @@ def main() -> None:
         messages=messages,
         tools=[COMMIT_METADATA_TOOL],
         tool_name="commit_metadata",
-        effort="high",
-        max_tokens=128_000,
         page_label="corpus",
         debug=args.debug,
     )

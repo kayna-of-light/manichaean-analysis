@@ -375,7 +375,6 @@ def main() -> None:
         tools=[REVIEW_TOOL],
         tool_name="commit_review",
         effort=args.effort,
-        max_tokens=64_000,
         page_label="corpus",
         debug=args.debug,
     )

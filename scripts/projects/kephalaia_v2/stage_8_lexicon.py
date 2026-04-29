@@ -368,7 +368,6 @@ def main() -> None:
         tools=[LEXICON_TOOL],
         tool_name="commit_lexicon",
         effort=args.effort,
-        max_tokens=64_000,
         page_label="lexicon",
         debug=args.debug,
     )
