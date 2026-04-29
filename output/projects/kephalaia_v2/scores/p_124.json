@@ -1,0 +1,703 @@
+{
+  "page": 124,
+  "total_segments": 32,
+  "structural_units": [
+    {
+      "start_i": 0,
+      "end_i": 31,
+      "segments": 32
+    }
+  ],
+  "damage": {
+    "lacunae": 20,
+    "restorations": 17,
+    "est_chars_lost": 140,
+    "null_lines": 1,
+    "segments_with_gaps": 21,
+    "total_segments": 32,
+    "damage_ratio": 0.656
+  },
+  "page_scores": {
+    "cosmological_substrate": 1.61,
+    "apostolic_dialogue": 0.0,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "page_features": {
+    "teaching_purity": 1.0,
+    "editorial_fatigue_score": 0.0,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 3.33,
+        "second_half": 0.0,
+        "shift": -3.33
+      },
+      "apostolic_dialogue": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "seam_flags": 0,
+  "segments": [
+    {
+      "i": 0,
+      "n": 1,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "scores": {
+        "cosmological_substrate": 50.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 7,
+      "n": 8,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 8,
+      "n": 9,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 9,
+      "n": 10,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 10,
+      "n": 11,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 11,
+      "n": 12,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 12,
+      "n": 13,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 13,
+      "n": 14,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 14,
+      "n": 15,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 15,
+      "n": 16,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 16,
+      "n": 17,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 17,
+      "n": 18,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 18,
+      "n": 19,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 19,
+      "n": 20,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 20,
+      "n": 21,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 21,
+      "n": 22,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 22,
+      "n": 23,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 23,
+      "n": 24,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 24,
+      "n": 25,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 25,
+      "n": 26,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 26,
+      "n": 27,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 27,
+      "n": 28,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 28,
+      "n": 29,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 29,
+      "n": 30,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 30,
+      "n": 31,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": false
+    },
+    {
+      "i": 31,
+      "n": 32,
+      "scores": {
+        "cosmological_substrate": 0.0,
+        "apostolic_dialogue": 0.0,
+        "manichaean_ecclesial": 0.0,
+        "manichaean_polemic": 0.0,
+        "hortatory_application": 0.0
+      },
+      "break_after": false,
+      "is_null": true
+    }
+  ],
+  "seams": [
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": true,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    },
+    {
+      "has_bridge_connective": false,
+      "bridge_phrase": null,
+      "institutional_terms_found": [],
+      "register_shift": false,
+      "seam_flag": false
+    }
+  ]
+}

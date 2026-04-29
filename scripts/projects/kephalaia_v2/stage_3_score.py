@@ -102,58 +102,7 @@ def build_institutional_terms(metadata: dict) -> set[str]:
     return set(seam.get("institutional_terms", []))
 
 
-# ---------------------------------------------------------------------------
-# Greek loanword detection (kept from original — this is language-level,
-# not dependent on LLM discovery)
-# ---------------------------------------------------------------------------
 
-_KNOWN_GREEK_LOANS = {
-    "mystery", "cosmos", "soul", "body", "spirit", "logos",
-    "sophia", "wisdom", "authority", "archon", "paraclete",
-    "paradise", "sea", "city", "church", "apostle", "chapter",
-    "righteousness", "element", "substance", "nature", "member",
-    "person", "sphere", "firmament", "zodiac", "aeon",
-}
-
-
-def count_greek_loans(english_text: str) -> int:
-    """Count known Greek-origin theological terms in English text."""
-    if not english_text:
-        return 0
-    text_lower = english_text.lower()
-    count = 0
-    for loan in _KNOWN_GREEK_LOANS:
-        count += text_lower.count(loan)
-    return count
-
-
-# ---------------------------------------------------------------------------
-# Formulaic pattern detection (English-level, from v1)
-# ---------------------------------------------------------------------------
-
-_OPENING_PATTERNS = [
-    re.compile(r"(?i)^once again (?:the )?(?:teacher|enlightener|apostle)"),
-    re.compile(r"(?i)^once more (?:the )?(?:teacher|enlightener|apostle)"),
-    re.compile(r"(?i)^once again,? at one of the times"),
-    re.compile(r"(?i)^once again a disciple"),
-    re.compile(r"(?i)^his disciples questioned"),
-    re.compile(r"(?i)^the disciple(?:s)? questioned"),
-    re.compile(r"(?i)^the teacher (?:said|spoke|speaks)"),
-]
-
-_CLOSING_PATTERNS = [
-    re.compile(r"(?i)when they heard these things"),
-    re.compile(r"(?i)when that disciple had heard"),
-    re.compile(r"(?i)they rejoiced"),
-    re.compile(r"(?i)they glorified"),
-]
-
-_QUESTION_PATTERNS = [
-    re.compile(r"(?i)we beseech you"),
-    re.compile(r"(?i)we entreat you"),
-    re.compile(r"(?i)tell us.*(?:about|concerning)"),
-    re.compile(r"(?i)that you may recount"),
-]
 
 
 # ---------------------------------------------------------------------------
@@ -191,36 +140,22 @@ def score_segment(
 ) -> dict:
     """Score a single line segment across all discovered layers.
 
-    Uses the ENGLISH translation for vocabulary scoring (matching the
-    language the LLM derived its vocabularies from).
+    Uses the COPTIC text for vocabulary scoring (matching the Coptic
+    markers in corpus_metadata.json produced by stage_2_discover).
     """
-    english = segment.get("english") or ""
+    coptic = segment.get("coptic") or ""
 
-    # Score against each layer vocabulary
+    # Score against each layer vocabulary (Coptic markers)
     scores = {}
     for layer_id, markers in scoring_dicts.items():
-        scores[layer_id] = score_text(english, markers)
-
-    # Greek loanword count
-    greek_loans = count_greek_loans(english)
-
-    # Pattern detection on English
-    has_opening = any(p.search(english) for p in _OPENING_PATTERNS)
-    has_closing = any(p.search(english) for p in _CLOSING_PATTERNS)
-    has_question = any(p.search(english) for p in _QUESTION_PATTERNS)
+        scores[layer_id] = score_text(coptic, markers)
 
     return {
         "i": segment["i"],
         "n": segment["n"],
         "scores": scores,
-        "greek_loans": greek_loans,
-        "patterns": {
-            "frame_opening": has_opening,
-            "frame_closing": has_closing,
-            "question_formula": has_question,
-        },
         "break_after": segment.get("break_after", False),
-        "is_null": segment.get("english") is None,
+        "is_null": segment.get("coptic") is None,
     }
 
 
@@ -244,8 +179,8 @@ def detect_editorial_seams(
     """
     results = []
     for idx, (seg, scores) in enumerate(zip(segments, segment_scores)):
-        english = seg.get("english") or ""
-        english_lower = english.lower()
+        coptic = seg.get("coptic") or ""
+        coptic_lower = coptic.lower()
 
         seam = {
             "has_bridge_connective": False,
@@ -255,17 +190,17 @@ def detect_editorial_seams(
             "seam_flag": False,
         }
 
-        # Check for bridge connective at segment start
+        # Check for bridge connective at segment start (Coptic)
         for pat in bridge_patterns:
-            m = pat.search(english)
+            m = pat.search(coptic)
             if m:
                 seam["has_bridge_connective"] = True
                 seam["bridge_phrase"] = m.group(0)
                 break
 
-        # Check for institutional vocabulary
+        # Check for institutional vocabulary (Coptic)
         for term in institutional_terms:
-            if term in english_lower:
+            if term in coptic_lower:
                 seam["institutional_terms_found"].append(term)
 
         # Register shift detection — dynamic across all categories
@@ -408,7 +343,7 @@ def compute_page_features(
     )
 
     # --- Editorial fatigue: first-half vs second-half per layer ---
-    mid = n // 2 if n > 1 else 1
+    mid = n // 2 if n > 1 else n
     fatigue: dict[str, dict[str, float]] = {}
     for lid in layer_ids:
         fh_scores = [
@@ -491,17 +426,8 @@ def analyze_page(
     else:
         page_scores = {lid: 0.0 for lid in scoring_dicts}
 
-    # Page-level pattern summary
-    has_frame_opening = any(
-        s["patterns"]["frame_opening"] for s in segment_scores
-    )
-    has_frame_closing = any(
-        s["patterns"]["frame_closing"] for s in segment_scores
-    )
-    total_greek = sum(s["greek_loans"] for s in segment_scores)
-
     # Page-level features (teaching purity, editorial fatigue)
-    page_features_extra = compute_page_features(
+    page_features = compute_page_features(
         segment_scores, scoring_dicts,
     )
 
@@ -514,15 +440,7 @@ def analyze_page(
         "structural_units": structural_units,
         "damage": damage,
         "page_scores": page_scores,
-        "page_features": {
-            "has_frame_opening": has_frame_opening,
-            "has_frame_closing": has_frame_closing,
-            "total_greek_loans": total_greek,
-            "greek_density": round(
-                total_greek / max(len(non_null), 1), 2
-            ),
-            **page_features_extra,
-        },
+        "page_features": page_features,
         "seam_flags": n_seams,
         "segments": segment_scores,
         "seams": seam_results,
@@ -667,7 +585,7 @@ def main() -> None:
     print(f"\nScoring {len(pages)} pages:")
     for p in pages:
         data = load_page(p)
-        n_lines = len(data["lines"]) if data else 0
+        n_lines = len(data.get("lines", [])) if data else 0
         print(f"  p.{p:3d}  ({n_lines:2d} segments)")
 
     if args.dry_run:
@@ -699,16 +617,12 @@ def main() -> None:
         n_units = len(analysis["structural_units"])
         n_seams = analysis["seam_flags"]
         damage_pct = round(analysis["damage"]["damage_ratio"] * 100, 1)
-        frame_flag = (
-            "F" if analysis["page_features"]["has_frame_opening"] else ""
-        )
         total_segments += n_lines
         total_seams += n_seams
 
         print(
             f"OK — {n_units} units, {damage_pct}% damaged, "
             f"{n_seams} seams"
-            f"{', FRAME' if frame_flag else ''}"
         )
 
     # Summary
