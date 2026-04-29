@@ -436,7 +436,6 @@ def main() -> None:
         tools=[COMPOSE_TOOL],
         tool_name="commit_structure",
         effort=args.effort,
-        max_tokens=64_000,
         page_label="structure",
         debug=args.debug,
     )

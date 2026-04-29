@@ -33,6 +33,7 @@ from typing import Any
 import httpx
 from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
+from tqdm import tqdm
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -92,8 +93,8 @@ def stream_tool_call(
     messages: list[dict],
     tools: list[dict],
     tool_name: str,
-    effort: str = "high",
-    max_tokens: int = 64_000,
+    effort: str = "xhigh",
+    max_tokens: int = 128_000,
     max_retries: int = 5,
     page_label: str = "",
     debug: bool = False,
@@ -129,7 +130,7 @@ def stream_tool_call(
         max_tokens=max_tokens,
         thinking=thinking_config,
     )
-    if effort != "high":
+    if effort != "xhigh":
         kwargs["output_config"] = {"effort": effort}
 
     for attempt in range(1, max_retries + 1):
@@ -420,7 +421,7 @@ class PipelineStage(ABC):
         parser.add_argument("--dry-run", "-n", action="store_true")
         parser.add_argument("--overwrite", action="store_true")
         parser.add_argument(
-            "--effort", default="high",
+            "--effort", default="xhigh",
             choices=["low", "medium", "high", "xhigh", "max"],
         )
         parser.add_argument("--debug", action="store_true")
@@ -482,7 +483,7 @@ class PipelineStage(ABC):
             tools=[self.tool_schema],
             tool_name=self.tool_name,
             effort=self.args.effort,
-            max_tokens=64_000,
+            max_tokens=128_000,
             page_label=f"p.{page_num}",
             debug=self.debug,
         )
@@ -554,9 +555,14 @@ class PipelineStage(ABC):
                 if i < len(pages):
                     time.sleep(0.5)
         else:
-            print(f"Running with {concurrency} parallel workers\n")
-            completed_count = 0
-            total_count = len(pages)
+            print(f"Running with {concurrency} parallel workers\n", flush=True)
+
+            pbar = tqdm(
+                total=len(pages),
+                desc=f"Stage {self.stage_number}",
+                unit="page",
+                file=sys.stdout,
+            )
 
             with ThreadPoolExecutor(max_workers=concurrency) as executor:
                 futures = {
@@ -565,31 +571,26 @@ class PipelineStage(ABC):
                 }
                 for future in as_completed(futures):
                     page_num = futures[future]
-                    completed_count += 1
                     try:
                         pn, result = future.result()
                     except Exception as e:
-                        print(
-                            f"  [{completed_count}/{total_count}] "
-                            f"p.{page_num}: EXCEPTION — {e}"
-                        )
+                        pbar.write(f"  p.{page_num}: EXCEPTION — {e}")
                         errors.append(page_num)
+                        pbar.update(1)
                         continue
                     if result is None:
-                        print(
-                            f"  [{completed_count}/{total_count}] "
-                            f"p.{page_num}: FAILED"
-                        )
+                        pbar.write(f"  p.{page_num}: FAILED")
                         errors.append(page_num)
+                        pbar.update(1)
                         continue
                     processed = self.process_result(page_num, result)
                     self.save_output(page_num, processed)
                     summary = self.format_summary(page_num, processed)
-                    print(
-                        f"  [{completed_count}/{total_count}] "
-                        f"p.{page_num}: {summary}"
-                    )
+                    pbar.write(f"  p.{page_num}: {summary}")
                     results.append(processed)
+                    pbar.update(1)
+
+            pbar.close()
 
         # Summary
         print(f"\n{'='*50}")
