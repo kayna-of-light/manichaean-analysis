@@ -2,7 +2,7 @@
 """
 Extract the core teaching layer from translated Kephalaia pages.
 
-Pipeline stage 3: runs AFTER score.py, BEFORE read.py.
+Pipeline stage 4: runs AFTER stage_3_score.py, BEFORE stage_5_read.py.
 
 This script sends each page to Claude WITH its pre-computed score data
 as guidance. The LLM classifies each line segment by temporal layer:

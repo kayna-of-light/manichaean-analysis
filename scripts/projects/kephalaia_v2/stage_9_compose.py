@@ -2,7 +2,7 @@
 """
 Compose the structural architecture of the teaching from restored core.
 
-Pipeline stage 8: final stage.
+Pipeline stage 9: final stage.
 
 Feeds the complete corpus to Claude in a single prompt. The model reads
 the entire teaching holistically — stripped of editorial page divisions —

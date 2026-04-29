@@ -2,7 +2,7 @@
 """
 Build a coherent natural↔spiritual correspondence lexicon.
 
-Pipeline stage 7: runs AFTER review.py, BEFORE compose.py.
+Pipeline stage 8: runs AFTER stage_7_review.py, BEFORE stage_9_compose.py.
 
 Feeds the complete corpus (core segments + spiritual readings) to
 Claude in a single prompt. The model reads all readings together and

@@ -2,7 +2,7 @@
 """
 Bilingual restoration of lacunae in core teaching segments.
 
-Pipeline stage 5: runs AFTER read.py, BEFORE review.py.
+Pipeline stage 6: runs AFTER stage_5_read.py, BEFORE stage_7_review.py.
 
 This stage uses the correspondential reading (Stage 4) as semantic
 context to propose restorations for gaps ({N} placeholders) in the
