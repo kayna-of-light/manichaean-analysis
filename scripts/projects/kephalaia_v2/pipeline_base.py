@@ -342,7 +342,7 @@ class PipelineStage(ABC):
         ...
 
     @abstractmethod
-    def build_user_message(self, page_num: int) -> str:
+    def build_user_message(self, page_num: int) -> str | None:
         """Build the user message for a specific page.
 
         Load whatever inputs the stage needs and format the prompt.
