@@ -1,30 +1,26 @@
 #!/usr/bin/env python3
 """
-Correspondential reading of extracted core segments.
+Correspondential reading of assembled teachings.
 
-Pipeline stage 5: runs AFTER stage_4_extract.py, BEFORE stage_6_restore.py.
+Pipeline stage 5: runs AFTER stage_4c_assemble.py, BEFORE stage_6_restore.py.
 
-This stage produces a standalone spiritual reading of the core teaching
-layer. It translates each segment's natural sense into its spiritual
-sense via correspondences. The reading is used downstream by restore.py
-as context for gap-filling — and also stands as an independent output.
-
-The reading works on the CORE only (segments classified as substrate
-or mixed by extract.py). Non-core segments are skipped.
+This stage produces a standalone spiritual reading of each teaching.
+It translates the natural sense into its spiritual sense via
+correspondences. The reading is used downstream by restore.py as
+context for gap-filling — and also stands as an independent output.
 
 Input:
-  - output/projects/kephalaia_v2/pages/p_NNN.json   (translation)
-  - output/projects/kephalaia_v2/core/p_NNN.json    (extraction)
+  - output/projects/kephalaia_v2/teachings/t_NNN.json  (from stage 4c)
 
 Output:
-  - output/projects/kephalaia_v2/readings/p_NNN.json
+  - output/projects/kephalaia_v2/readings/t_NNN.json
 
 Usage:
-    python scripts/projects/kephalaia_v2/read.py
-    python scripts/projects/kephalaia_v2/read.py --page 35
-    python scripts/projects/kephalaia_v2/read.py --range 10-50
-    python scripts/projects/kephalaia_v2/read.py --dry-run
-    python scripts/projects/kephalaia_v2/read.py --max-concurrency 4
+    python scripts/projects/kephalaia_v2/stage_5_read.py
+    python scripts/projects/kephalaia_v2/stage_5_read.py --page 1
+    python scripts/projects/kephalaia_v2/stage_5_read.py --range 1-20
+    python scripts/projects/kephalaia_v2/stage_5_read.py --dry-run
+    python scripts/projects/kephalaia_v2/stage_5_read.py --max-concurrency 4
 """
 import json
 import re
@@ -35,11 +31,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pipeline_base import (
     PipelineStage,
-    PAGES_DIR,
     PROJECT_DIR,
 )
 
-CORE_DIR = PROJECT_DIR / "core"
+TEACHINGS_DIR = PROJECT_DIR / "teachings"
 
 
 # ---------------------------------------------------------------------------
@@ -49,15 +44,15 @@ CORE_DIR = PROJECT_DIR / "core"
 READ_TOOL = {
     "name": "commit_reading",
     "description": (
-        "Commit the correspondential reading for all core segments "
-        "on this page. Call exactly once."
+        "Commit the correspondential reading for this teaching. "
+        "Call exactly once."
     ),
     "input_schema": {
         "type": "object",
         "properties": {
-            "page": {
+            "teaching": {
                 "type": "integer",
-                "description": "The manuscript page number.",
+                "description": "The teaching number.",
             },
             "segments_read": {
                 "type": "integer",
@@ -66,9 +61,9 @@ READ_TOOL = {
             "reading_note": {
                 "type": "string",
                 "description": (
-                    "Brief assessment: what spiritual system or "
-                    "process does this page describe? What "
-                    "correspondential pattern dominates?"
+                    "Brief assessment: what spiritual process does "
+                    "this teaching describe from beginning to end? "
+                    "What is the single arc?"
                 ),
             },
             "segments": {
@@ -140,7 +135,7 @@ READ_TOOL = {
             },
         },
         "required": [
-            "page", "segments_read", "reading_note", "segments",
+            "teaching", "segments_read", "reading_note", "segments",
         ],
     },
 }
@@ -198,16 +193,23 @@ The Kephalaia describes a cosmic system using specific vocabulary:
 - **Zodiac** → the complete circuit of spiritual states
 - **Five Faculties (nous, ennoia, phronesis, enthymesis, logismos)** → \
   discrete degrees of reception (celestial → natural)
+- **First Man** → the divine truth sent into the realm of self-love
+- **Mother of Life** → the matrix of spiritual life from which truth is born
+- **Living Spirit** → the operative power that builds spiritual structure
+- **Ambassador/Third Messenger** → the call that awakens trapped light
+- **Jesus the Splendour** → divine truth descending to rescue what fell
+- **Virgin of Light** → purity of reception; truth uncorrupted
+- **Pillar of Glory** → the path of ascent that light travels home
+- **Column of Glory** → accumulated truth rising from natural to celestial
 
 ## THE TEXT YOU RECEIVE
 
-The text is the oldest teaching substrate of the Coptic Kephalaia — \
-pre-Manichaean cosmological teaching that maps domain onto domain, \
-being onto being, degree onto degree. The teaching IS the mapping. \
-It does not compare; it identifies.
+You receive a COMPLETE TEACHING — one spiritual arc from beginning to \
+end. The teaching uses cosmological imagery as its vehicle, but the \
+imagery is the outer shell. Inside is a spiritual process being taught.
 
-You receive CORE segments only — already classified as the oldest \
-teaching layer. Read each segment and produce its spiritual sense.
+Your job: translate the shell into what it contains. Read through the \
+imagery to the spiritual reality being expressed.
 
 ## GAP ANCHORS
 
@@ -225,11 +227,6 @@ Example:
   Original: "the great {3}, the battle that the Darkness spread"
   Spiritual: "the great {3} assault that falsity from evil propagated"
 
-The marker anchors the spiritual insight to the specific gap. \
-Do NOT fill in the natural-plane word — just show what spiritual \
-reality the gap expresses. The restorer will translate back to \
-the text's own vocabulary.
-
 ## RULES
 
 1. **Translate, don't annotate.** Replace every natural image with its \
@@ -244,6 +241,8 @@ the text's own vocabulary.
 5. **The Divine Human:** When the text describes cosmic beings with \
    body parts, faces, limbs — read them as the Grand Man: the \
    form of love and wisdom at different registers.
+6. **Follow the arc:** The teaching has a beginning, middle, and end. \
+   Your reading should reveal the spiritual process flowing through it.
 
 When complete, call commit_reading exactly once."""
 
@@ -255,7 +254,7 @@ When complete, call commit_reading exactly once."""
 class ReadStage(PipelineStage):
     stage_name = "Correspondential Reading"
     stage_number = 5
-    description = "Spiritual-sense reading of core teaching segments"
+    description = "Spiritual-sense reading of assembled teachings"
     tool_name = "commit_reading"
     tool_schema = READ_TOOL
 
@@ -263,70 +262,74 @@ class ReadStage(PipelineStage):
         return SYSTEM_PROMPT
 
     def get_input_dir(self) -> Path:
-        return CORE_DIR
+        return TEACHINGS_DIR
 
     def get_output_dir(self) -> Path:
         return PROJECT_DIR / "readings"
 
     def list_available(self) -> list[int]:
-        """Pages with core extraction output."""
-        pages = []
-        for path in sorted(CORE_DIR.glob("p_*.json")):
-            m = re.match(r"p_(\d+)\.json", path.name)
+        """List available teaching numbers."""
+        teachings = []
+        for path in sorted(TEACHINGS_DIR.glob("t_*.json")):
+            m = re.match(r"t_(\d+)\.json", path.name)
             if m:
-                pages.append(int(m.group(1)))
-        return pages
+                teachings.append(int(m.group(1)))
+        return teachings
 
-    def build_user_message(self, page_num: int) -> str:
-        """Load core extraction + original page and format prompt."""
-        core_data = self.load_page_json(page_num, CORE_DIR)
-        page_data = self.load_page_json(page_num, PAGES_DIR)
+    def is_done(self, num: int) -> bool:
+        """Check if reading output already exists for this teaching."""
+        return (self.get_output_dir() / f"t_{num:03d}.json").exists()
 
-        if core_data is None:
-            print(f"  ERROR: No core data for p.{page_num}")
+    def save_output(self, num: int, data: dict) -> None:
+        """Save the output JSON for a teaching (thread-safe)."""
+        from pipeline_base import _write_lock
+        output_dir = self.get_output_dir()
+        output_dir.mkdir(parents=True, exist_ok=True)
+        path = output_dir / f"t_{num:03d}.json"
+        with _write_lock:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def build_user_message(self, teaching_num: int) -> str:
+        """Load assembled teaching and format prompt."""
+        path = TEACHINGS_DIR / f"t_{teaching_num:03d}.json"
+        if not path.exists():
+            print(f"  ERROR: No teaching file for t.{teaching_num}")
             return None
-        if page_data is None:
-            print(f"  ERROR: No page data for p.{page_num}")
-            return None
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
 
-        # Extract only core segments (substrate + mixed)
-        segments = core_data.get("segments", [])
-        page_lines = {
-            seg["i"]: seg for seg in page_data.get("lines", [])
-        }
+        title = data.get("title", "")
+        confidence = data.get("confidence", "")
+        segments = data.get("segments", [])
 
+        # Filter to only core segments (with content)
         core_segments = [
             s for s in segments
             if s.get("classification") in ("cosmological_substrate", "mixed")
+            and (s.get("core_english") or s.get("core_coptic"))
         ]
 
         if not core_segments:
-            # No core segments — nothing to read
             return None
 
         parts = [
-            f"## Page {page_num} — Core Teaching Segments",
-            f"(Total core segments: {len(core_segments)})",
+            f"## Teaching {teaching_num}: {title}",
+            f"(Confidence: {confidence} | Core segments: {len(core_segments)})",
             "",
         ]
 
         for seg in core_segments:
-            i = seg["i"]
+            sec = seg.get("section", "?")
             cls = seg["classification"]
             coptic = seg.get("core_coptic") or ""
             english = seg.get("core_english") or ""
 
-            # Also provide original line for context
-            orig = page_lines.get(i, {})
-            orig_coptic = orig.get("coptic") or ""
-
-            parts.append(f"### Segment i={i} [{cls}]")
+            parts.append(f"### §{sec} [{cls}]")
             if coptic:
                 parts.append(f"Coptic: {coptic}")
             if english:
                 parts.append(f"English: {english}")
-            if orig_coptic and orig_coptic != coptic:
-                parts.append(f"(Full original: {orig_coptic})")
             parts.append("")
 
         parts.append(
@@ -336,11 +339,11 @@ class ReadStage(PipelineStage):
 
         return "\n".join(parts)
 
-    def process_result(self, page_num: int, result: dict) -> dict:
+    def process_result(self, teaching_num: int, result: dict) -> dict:
         """Pass through the raw result."""
         return result
 
-    def format_summary(self, page_num: int, result: dict) -> str:
+    def format_summary(self, teaching_num: int, result: dict) -> str:
         """Format a one-line summary."""
         n = result.get("segments_read", 0)
         note = result.get("reading_note", "")
