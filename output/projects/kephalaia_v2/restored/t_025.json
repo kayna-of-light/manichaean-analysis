@@ -1,0 +1,108 @@
+{
+  "teaching": 25,
+  "total_gaps_in_core": 9,
+  "gaps_restored": 8,
+  "gaps_unrestorable": 1,
+  "restoration_note": "The teaching presents the Father of Greatness emanating his five great entities one beside another, each from a discrete intellectual faculty (mind→Beloved of Lights, thought→Mother of Life, teaching→the Beloved, counsel→Virgin of Light, reflection→[lost fifth]). The five-faculty / five-emanation parallel structure tightly constrains gaps {4}, {7}, {8} to formulaic fills, and the line-break splits at {6} are mechanically fixed. Gaps {0}, {1} are anchored by visible traces and the standard idiom ⲙ̄ⲡⲓⲣⲏⲧⲉ. Gap {2} preserves the Apostle's introductory speech-marker; {3} naming the speaker is weakly constrained and accepted at low confidence. Gap {5} is left unrestorable: the apparatus says the title proceeding from teaching is lost, yet ⲡⲙⲉⲣⲓⲧ already opens the next line as that entity, so what occupied {5} (a qualifier, particle, or epithet of four characters) cannot be securely reconstructed.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 1588,
+      "chapter": 25,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ",
+      "proposed_english": "from",
+      "basis": "Editor's restoration confirmed by the visible terminal -ⲗ; the formula 'ⲁⲃⲁⲗ ⲙ̄ⲡⲓⲱⲧ ⲟⲩⲉ ⲛⲥⲁ ⲟⲩⲉ' ('forth from the Father, one beside another') frames the discrete-degree procession that the rest of the teaching enumerates.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1588,
+      "chapter": 25,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲓⲣⲏ",
+      "proposed_english": "in this",
+      "basis": "The surviving -ⲧⲉ after the gap forms the standard idiom ⲙ̄ⲡⲓⲣⲏⲧⲉ 'in this manner.' The preposition ⲙ̄ is required for the locative sense matching the English 'in this manner'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 1588,
+      "chapter": 25,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲉⲓ",
+      "proposed_english": "I came",
+      "basis": "After the citation-marker ⲭⲉ a first-person speech opens. The verb ⲁϩⲉⲓ ('I came/came forth') fits the Apostle introducing the enumeration of how the emanations were called forth, paralleling ⲁⲩⲉⲓ ⲁⲃⲁⲗ in §1593.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 3,
+      "section": 1589,
+      "chapter": 25,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲭⲓ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "proposed_english": "namely the Ambassador,",
+      "basis": "ⲛ̄ⲭⲓ as appositive subject marker introducing the speaker; the editor's identification as the Ambassador (the sending Apostle of the Father) is plausible as the I-speaker, but the spiritual reading does not fix this name and the alternative 'the first' (ⲡϣⲁⲣⲡ̄) is also possible.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 4,
+      "section": 1590,
+      "chapter": 25,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ ⲙ̄ⲡⲉϩⲙⲉⲩⲉ",
+      "proposed_english": "from his thought,",
+      "basis": "Required by the five-faculty enumeration: mind / thought / teaching / counsel / reflection. The Mother of Life corresponds to thought (ⲡⲙⲉⲩⲉ) — the rational discursion from which the matrix of life is brought forth — fitting the lexicon's 'bringing-forth of Divine Truth from Divine Good.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 1590,
+      "chapter": 25,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "Lacuna of ~4 characters between 'from his teaching' and the next entity. ⲡⲙⲉⲣⲓⲧ already opens §1591 as the entity proceeding from teaching, so {5} cannot simply be that title; it likely held a short qualifier, particle, or epithet that is not securely recoverable from grammar, traces, or parallel formula. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 6,
+      "section": 1591,
+      "chapter": 25,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ ⲁ",
+      "proposed_english": "from",
+      "basis": "Editor's mechanical restoration: -ⲛⲉ closes ⲡⲟⲩⲁⲓⲛⲉ ('Light') and ⲁ- begins ⲁⲃⲁⲗ which carries over the line break to the surviving ⲃⲁⲗ ⲙ̄ⲡⲉϩⲙⲁⲕⲙⲉⲕ in §1592. English 'from' renders the start of the next prepositional phrase.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 1592,
+      "chapter": 25,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲡⲓϯⲟⲩ",
+      "proposed_english": "the Five",
+      "basis": "Final -ⲉ completes ⲧⲱϩⲙ̄[ⲉ] ('called forth'); ⲡⲓϯⲟⲩ 'the Five' modifies the following ⲛⲓⲱⲧ — 'the Five Fathers,' standard formulation of the five emanations of the Father.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 1593,
+      "chapter": 25,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲓⲱⲧ ⲁ",
+      "proposed_english": "of the Father,",
+      "basis": "Standard formula 'the Five Members of the Father' (ⲡϯⲟⲩ ⲙ̄ⲙⲉⲗⲟⲥ ⲙ̄ⲡⲓⲱⲧ); the trailing ⲁ- begins ⲟⲩⲉ ⲉⲓ ⲁⲃⲁⲗ ('one came forth') of §1594. The summary names the five faculties as the Father's five Members, matching the spiritual reading.",
+      "confidence": "high"
+    }
+  ]
+}

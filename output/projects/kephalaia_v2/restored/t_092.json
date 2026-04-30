@@ -1,0 +1,174 @@
+{
+  "teaching": 92,
+  "total_gaps_in_core": 15,
+  "gaps_restored": 14,
+  "gaps_unrestorable": 1,
+  "restoration_note": "The teaching is a tight analogy: word/coin both shaped by five faculties before circulating between minds. Restorations are heavily constrained by visible letter-traces at line-breaks and by repeated formulae within the chapter (ⲕⲉⲟⲩⲉ 'another' for the artisans; ⲡⲓϯⲟⲩ ⲙ̄ⲙⲉⲗⲟⲥ 'the five members' for the faculty-organs; ⲛⲟⲙⲓⲥⲙⲁ for the coin). Editor's restorations all fit Coptic morphology, Lyc dialect, and the spiritual reading. Gap {3} (5 chars before ⲛ̄ⲧⲉ ⲧϣⲟⲩⲱⲃⲉ) is left unrestorable: no clear letter-traces and several plausible options (ⲡⲧⲏⲩ 'breath,' ⲡⲛⲓⲃⲉ 'breath,' or another anatomical/dynamic term for what 'draws' the word into the throat) compete without sufficient constraint.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 5104,
+      "chapter": 107,
+      "line": 3,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲛⲏⲩ",
+      "proposed_english": "that comes",
+      "basis": "Editor's restoration confirmed: relative-future ⲉⲧⲛⲏⲩ 'that comes' opens the chapter formula for 'the word that comes forth from the mouth' (echoed immediately in the next line ⲁⲃⲁⲗ ⲛⲧⲧⲁⲡⲣⲟ). Spiritually fits the descent of interior truth into ultimates.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5105,
+      "chapter": 107,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "proposed_english": "(unto it)",
+      "basis": "Single letter ⲣ completes ⲁⲣⲁϥ/ⲁⲣⲃϩ — Lyc object marker after ⲥⲱⲧⲙⲉ 'hear unto it'. Required by grammar of ⲥⲉⲥⲱⲧⲙⲉ which takes ⲁ-/ⲁⲣⲁ- complement.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5105,
+      "chapter": 107,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲉϣⲧⲉ",
+      "proposed_english": "ears",
+      "basis": "ⲙⲉϣⲧⲉ 'ears' (lexicon: receptive faculty of hearing) — the standard pairing with ⲧⲁⲡⲣⲟ 'mouth' for word-transmission. Confirmed by the closing line ⲛⲁⲍⲣⲛ̄ ⲙ̄ⲙⲉϣⲧⲉ 'before the ears' which forms the inclusio of the chapter.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5106,
+      "chapter": 107,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "5-character lacuna with no surviving traces and no parallel formula to constrain it. The grammar requires a noun (subject of construct ⲛ̄ⲧⲉ ⲧϣⲟⲩⲱⲃⲉ 'X of the throat') governing 'draws it to her', but several anatomical/breath-terms (ⲡⲧⲏⲩ, ⲡⲛⲓⲃⲉ, etc.) compete without decisive evidence. Honest non-restoration preferred.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 4,
+      "section": 5107,
+      "chapter": 107,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "proposed_english": "gather",
+      "basis": "Editor's ⲁⲩ completes ⲥⲁⲩⲍϥ̄ 'gathers it' (Lyc form of Sahidic ⲥⲱⲟⲩϩⲥ̄ + 3sg.m suffix). The verb-stem -ⲍϥ̄ visible at start of next line confirms ⲥ_ⲁⲩⲍϥ̄ 'gather it inward' (ⲁⲍⲟⲩⲛ following). Matches lexicon entry 'gather inward' (ⲥⲁⲩⲍ̄ ⲁⲍⲟⲩⲛ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 5108,
+      "chapter": 107,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓϯⲟⲩ",
+      "proposed_english": "five",
+      "basis": "ⲡⲓϯⲟⲩ ⲙ̄ⲙⲉⲗⲟⲥ 'the five members' = the five-fold organic-faculty interface. Confirmed three times in the chapter: ⲡⲓϯⲟⲩ ⲛⲧⲉⲭⲛⲓⲧⲏⲥ (line 8), ⲍⲛ̄ ϯⲟⲩ ⲙ̄ⲙⲉⲗⲟⲥ (line 11). Lexicon Five = complete natural-rational structure.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 5109,
+      "chapter": 107,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲧⲉ",
+      "proposed_english": "manner",
+      "basis": "Completes ⲡⲣⲏⲧⲉ 'the manner/way' in the formulaic ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲙ̄ⲡⲛⲟⲙⲓⲥⲙⲁ 'according to the manner of the coin' which inaugurates the coinage analogy. Visible ⲡⲣ at break + ⲏⲧⲉ standard.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5110,
+      "chapter": 107,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲟⲩ",
+      "proposed_english": "other",
+      "basis": "Completes ⲕⲉⲟⲩⲉ 'another' across line break (visible ⲕ_ + initial ⲉ on next line gives ⲕⲉⲟⲩⲉ). Confirmed by repeated parallel ⲛ̄ⲧⲉ ⲕⲉⲟⲩⲉ in the artisan-list (lines 6, 11–12).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 5111,
+      "chapter": 107,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲟⲩⲉ",
+      "proposed_english": "other",
+      "basis": "Completes ⲕⲉⲟⲩⲉ 'another' across line break — fourth in the litany of artisans (engrave / engrave further / cut round / seal / forge). Parallel formula throughout the section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 5112,
+      "chapter": 107,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓⲥⲧⲉ",
+      "proposed_english": "behold",
+      "basis": "Editor's presentation-particle ⲉⲓⲥⲧⲉ 'behold' transitions from the artisan-list to the summary 'the five artisans habitually adorn and form...'. Standard Coptic discourse marker. Moderate since other particles (ⲍⲁⲡⲗⲱⲥ, etc.) are conceivable.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 10,
+      "section": 5113,
+      "chapter": 107,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡⲟⲩ",
+      "proposed_english": "their",
+      "basis": "Completes ⲙ̄ⲡⲟⲩⲛⲟⲙⲓⲥⲙⲁ 'their coin' across line break — visible -ⲛⲟⲙⲓⲥⲙⲁ on next line. The five artisans form 'their coin' (the product of their joint craft).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5114,
+      "chapter": 107,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲙⲁ",
+      "proposed_english": "rency (chrēma)",
+      "basis": "Completes Greek loanword ⲭⲣⲓⲙⲁ (χρῆμα) 'currency/means of exchange' across line break (visible ⲭⲣ_ + ⲓⲙⲁ). The coin 'serves as chrēma' = circulates as currency, the spiritual point of the analogy (sealed truth as medium of exchange).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 5115,
+      "chapter": 107,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲉⲭ",
+      "proposed_english": "(of the) ",
+      "basis": "Completes ⲡⲥⲉⲭⲉ 'the word' — visible ⲙ̄ⲡ_ + final ⲉ flanking restored ⲥⲉⲭ. Confirmed by chapter title ⲡⲉⲓⲛⲉ ⲙⲡⲥⲉⲭⲉ and the immediate analogy 'likewise also is this of the word'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 5116,
+      "chapter": 107,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲉⲗⲟ",
+      "proposed_english": "members",
+      "basis": "Completes ⲙ̄ⲙⲉⲗⲟⲥ 'members' (visible ⲙ̄_ + ⲥ on next line). Standard chapter formula ϯⲟⲩ ⲙ̄ⲙⲉⲗⲟⲥ 'the five members' = the five faculties shaping the word.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 5117,
+      "chapter": 107,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲍⲛ",
+      "proposed_english": "of some",
+      "basis": "Completes ⲙⲉϣⲧⲉ ⲛⲍⲛ ⲕⲉⲕⲁⲩⲉ 'ears of some others' — ⲕⲉⲕⲁⲩⲉ 'others' visible on next line. Closes the chapter with the receptive end: the minted word is heard before the ears of other persons (the gate of obedient hearing).",
+      "confidence": "high"
+    }
+  ]
+}

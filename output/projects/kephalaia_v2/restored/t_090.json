@@ -1,0 +1,53 @@
+{
+  "teaching": 90,
+  "total_gaps_in_core": 4,
+  "gaps_restored": 4,
+  "gaps_unrestorable": 0,
+  "restoration_note": "Teaching describes the body as a five-fold generator: a single nourishment taken in disperses into five offspring (breath/thought, voice/speech, discharge, seminal emission, somatic child), of which the natural man perceives only the last. All four gaps are short, mid-word lacunae fully constrained by Coptic morphology and the surrounding Greek loanwords. Gap 0 completes the idiom ⲉⲙⲛ̄ ϣⲓ ⲁⲣⲁϥ ('there is no measure to it'). Gap 1 completes ἐπιθυμία ('desire') across the line break. Gaps 2 and 3 sit in the affective triplet 'desire of heart, thought (ⲙⲉⲩⲉ), and love (ἀγάπη)' that drives the parents' conscious pursuit of the somatic child — the second of the five faculties (ⲙⲉⲩⲉ) is the lexicon's controlled term and slots cleanly between desire and love. The editor's 'ⲁⲩ' for gap 3 appears to be a typo for ⲁⲅ, the only letters that make ⲁⲅⲁⲡⲏ.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 5056,
+      "chapter": 104,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "proposed_english": "asure",
+      "basis": "Standard Coptic idiom ⲉⲙⲛ̄ ϣⲓ ⲁⲣⲁϥ 'there is no measure to it' — the visible ϣ at line-end and ⲁ|ⲣⲁϥ across the line break leave only ⲓ to complete ϣⲓ ('measure'). The breath-offspring 'mounting upon the mind' from all members corresponds in the reading to thought as immeasurable wind/perception pervading the whole organism, fitting the 'no measure' formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5060,
+      "chapter": 104,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "proposed_english": "re",
+      "basis": "Greek loanword ἐπιθυμία broken across the line: visible ⲉⲡⲓⲑ̄ at end of line 12 and ⲙⲓⲁ at start of line 13. Only ⲩ is needed to complete ⲉⲡⲓⲑⲩⲙⲓⲁ ('desire/concupiscence'), the standard term for the seminal-emission offspring on the plane of natural will.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲉ",
+      "proposed_english": "his thought",
+      "basis": "Line 17 ends with ⲡⲉϥ-, line 18 opens with ⲙ{2}. The triplet 'ⲡⲉϥⲟⲩⲱϣⲉ ⲛ̄ϩⲏⲧ … ⲡⲉϥⲙ{2} ⲙⲛ̄ ⲧϥ-ⲁⲅⲁⲡⲏ' gives desire-of-heart / thought / love. Lexicon fixes ⲡⲙⲉⲩⲉ as the second of the five intellectual faculties — 'thought' — and ⲙⲉⲩⲉ split as ⲙ|ⲉⲩⲉ produces exactly the visible ⲙ at the start of the line. Use 'thought' per controlled vocabulary, never 'idea' or 'concept.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲅ",
+      "proposed_english": "love (agape)",
+      "basis": "Visible ⲧϥ-{3}-ⲁⲡⲏ requires Greek ἀγάπη: ⲧⲉϥⲁⲅⲁⲡⲏ 'his love.' Only ⲁⲅ supplies the missing letters to form ⲁⲅⲁⲡⲏ. The editor's 'ⲁⲩ' is a transcription slip; ⲁⲅ is the orthographically necessary fill. The triadic 'desire of heart — thought — love' frames the parents' conscious pursuit of the somatic offspring (the only one of the five they perceive).",
+      "confidence": "high"
+    }
+  ]
+}

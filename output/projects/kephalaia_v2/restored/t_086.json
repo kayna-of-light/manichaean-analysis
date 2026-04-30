@@ -1,0 +1,97 @@
+{
+  "teaching": 86,
+  "total_gaps_in_core": 8,
+  "gaps_restored": 8,
+  "gaps_unrestorable": 0,
+  "restoration_note": "All eight gaps are line-break truncations of single Coptic words whose other half survives intact on the next line, so the fills are tightly constrained by morphology rather than by free spiritual interpretation. The teaching describes the purified Living Soul as a \"second ploughed-field\" set within the entire Zone of the upper place, with two great Luminaries (sun and moon = Divine Truth illuminating and reflecting) doing farmer's work above her so that, moving toward the icon-likeness, she is drawn upward to the Height. The lexicon confirms the technical terms: ⲯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ (Living Soul), ⲍⲱⲛⲏ (Zone), ⲡⲉⲓⲛⲉ (likeness), and the upward-motion verbs. Editor proposals fit both the spiritual arc and the Coptic constraints in every case; nothing required correction.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 4847,
+      "chapter": 96,
+      "line": 0,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧ",
+      "proposed_english": "the (fem.)",
+      "basis": "Lycopolitan doubled feminine ordinal article ⲧⲧⲙⲁⲍⲥⲛⲉⲩ 'the second (field)', exactly paralleled later in the same chapter (ⲧⲧⲙⲁⲍϣⲁⲙⲧ 'the third'). The line-break truncates only the article cluster.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4847,
+      "chapter": 96,
+      "line": 0,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲉ",
+      "proposed_english": "holy (one)",
+      "basis": "Completes the standard feminine qualitative ⲧⲉⲧⲟⲩⲁⲁⲃⲉ 'the holy (one)', the lexicon's established Coptic for ⲡⲉⲧⲟⲩⲁⲃⲉ 'holy' = consecrated to divine good. Fits the soul-as-purified-field of the reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4848,
+      "chapter": 96,
+      "line": 1,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲓ",
+      "proposed_english": "lower",
+      "basis": "Completes ⲡⲥⲁⲙ̄ⲡⲓⲧⲛⲉ 'the lower place', the standard antithetical pair to ⲡⲥⲁⲛⲧⲡⲧⲉ 'the upper place' which precedes it in the same line. The Zone girds both poles.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4849,
+      "chapter": 96,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲫⲱ",
+      "proposed_english": "Lumin-",
+      "basis": "Completes ⲙ̄ⲫⲱⲥⲧⲏⲣ (Greek φωστήρ, 'Luminaries'), continued at the start of line 3 as -ⲥⲧⲏⲣ. The two great luminaries are the sun and moon of the spiritual reading — Divine Truth illuminating and reflecting.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4850,
+      "chapter": 96,
+      "line": 3,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "proposed_english": "(verbal connective)",
+      "basis": "Completes ⲉⲩⲣ̄ⲓⲉⲡⲟⲩⲁⲓⲉ 'doing farmer's work', a single dropped vowel at the line break. The compound recurs uncontracted later in the chapter, fixing the form.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4851,
+      "chapter": 96,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱ",
+      "proposed_english": "draw-",
+      "basis": "Completes ⲛ̄ⲥⲱⲟ̄ⲉ ('drawing-up'), continued at the start of line 5 with ⲟ̄ⲉ ⲁⲍⲣⲏⲓ̈ 'upward'. The lexicon's regenerative-ascent verb pair ('draw upward / convey upward') is exactly the motion the reading describes.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4852,
+      "chapter": 96,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "proposed_english": "to",
+      "basis": "Directional preposition ⲁ- ('to / toward') before ⲡⲥⲁⲛⲧⲡⲧⲉ 'the upper place'; required by the verb ⲥⲃⲱⲕ 'go' which takes ⲁ- for goal of motion.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 4852,
+      "chapter": 96,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲁⲗ",
+      "proposed_english": "forth",
+      "basis": "Completes ϣⲁⲃⲁⲗ 'forth / unto the outside', the standard Lycopolitan adverbial closing the upward-motion clause. Matches the reading's 'goes forth through the upper place' as the soul is conveyed upward.",
+      "confidence": "high"
+    }
+  ]
+}
