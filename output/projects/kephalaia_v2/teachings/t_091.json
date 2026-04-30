@@ -5,7 +5,7 @@
   "start_section": 5070,
   "end_section": 5102,
   "total_sections": 33,
-  "total_lacunae": 66,
+  "total_lacunae": 33,
   "segments": [
     {
       "section": 5070,
@@ -13,7 +13,19 @@
       "line": 3,
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲙⲛ̄ ⲩ{0}ⲟⲩⲉ ⲛⲣⲱⲙⲉ",
-      "core_english": "'There is no {1}one of men",
+      "core_english": "'There is no {0}one of men",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "any",
+          "basis": "Editor restoration. ⲩ[ⲁ]ⲟⲩⲉ = ⲗⲁⲟⲩⲉ 'any one' (with elided ⲗ); negation ⲙⲛ̄ + indefinite 'no one.'",
+          "source_id": 1,
+          "section": 5070
+        }
+      ],
       "removed_material": "Stripped dialogue frame: '{0} ⲡⲁⲭⲉϩ ⲁⲛⲉⲙⲁⲑⲏⲧⲏⲥ' / '{0} he said to his disciples'.",
       "temporal_note": "Apostolic dialogue attribution wraps the start of the cosmological teaching. apostolic_dialogue score 71.43."
     },
@@ -22,8 +34,40 @@
       "chapter": 106,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲡⲕⲟⲥⲙⲟⲥ ⲉϩⲁⲍⲉ ⲁⲣⲉⲧϥ̄ {3}ⲛ̄ ⲟⲩ{4}ⲱⲧ ⲛ̄ⲧⲉ·",
-      "core_english": "{5} the world standing on his feet {6} in an {7} of",
+      "core_coptic": "{1} ⲡⲕⲟⲥⲙⲟⲥ ⲉϩⲁⲍⲉ ⲁⲣⲉⲧϥ̄ {2}ⲛ̄ ⲟⲩ{3}ⲱⲧ ⲛ̄ⲧⲉ·",
+      "core_english": "{1} the world standing on his feet {2} in an {3} of",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲉϩⲩⲟⲟⲧ ⲍⲙ",
+          "english": "who is in",
+          "basis": "Editor restoration. Reads ⲉϥ-ⲟⲩⲟⲟⲧ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'who is in the world' or similar relative-locative formulation. Tentative.",
+          "source_id": 2,
+          "section": 5071
+        },
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "in",
+          "basis": "Editor restoration ⲍⲛ̄ 'in' (Lyc. for ϩⲛ̄).",
+          "source_id": 3,
+          "section": 5071
+        },
+        {
+          "id": 3,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "agreement",
+          "basis": "Editor restoration; ⲟⲩ[ⲧ]ⲱⲧ 'an agreement, accord' (cf. accumulated ⲡⲓⲧⲱⲧ 'the agreement').",
+          "source_id": 4,
+          "section": 5071
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Teaching that no human stands enduring in the world."
     },
@@ -32,8 +76,20 @@
       "chapter": 106,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲱⲉ ⲙⲟⲩⲛ ⲁⲃⲁⲗ ⲛⲉϩ ⲩⲁ ⲧⲍⲁⲏ ⲟⲩ ⲙⲟⲛⲟⲛ ⲛ̄ⲣⲱ",
-      "core_english": "{9} lasting forth for him until the end. Not only m-",
+      "core_coptic": "{4}ⲱⲉ ⲙⲟⲩⲛ ⲁⲃⲁⲗ ⲛⲉϩ ⲩⲁ ⲧⲍⲁⲏ ⲟⲩ ⲙⲟⲛⲟⲛ ⲛ̄ⲣⲱ",
+      "core_english": "{4} lasting forth for him until the end. Not only m-",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲡⲣⲉ",
+          "english": "joy",
+          "basis": "Editor restoration. [ⲡⲣⲉ]ⲱⲉ likely = ⲡⲣⲉϣⲉ/ⲡⲣⲁⲱⲉ 'joy' (Lyc.); echoes ⲣⲁⲱⲉ in chapter title (line 26).",
+          "source_id": 5,
+          "section": 5072
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues teaching, transitions to luminaries."
     },
@@ -42,8 +98,20 @@
       "chapter": 106,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲡⲕⲉⲣⲏ ⲙⲛ ⲡⲕⲉⲟⲟⲍ ⲙ̄ⲫⲱⲥⲧⲏⲣ ⲛⲙⲡⲏⲩⲉ",
-      "core_english": "{11}, but also the sun and the moon, the luminaries of the heavens",
+      "core_coptic": "{5} ⲡⲕⲉⲣⲏ ⲙⲛ ⲡⲕⲉⲟⲟⲍ ⲙ̄ⲫⲱⲥⲧⲏⲣ ⲛⲙⲡⲏⲩⲉ",
+      "core_english": "{5}, but also the sun and the moon, the luminaries of the heavens",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲙⲉ",
+          "english": "men",
+          "basis": "Editor restoration. Completes the word ⲣⲱⲙⲉ 'men' begun at end of preceding line; 'not only men ... but also the sun and moon.'",
+          "source_id": 6,
+          "section": 5073
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sun, moon, luminaries of heavens — core cosmological substrate."
     },
@@ -52,8 +120,35 @@
       "chapter": 106,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12} {13} {14} ⲟⲩⲧⲉ ⲉⲩⲑⲁⲓⲃⲉ ⲉⲛ ⲉⲩⲥⲁⲩⲛⲉ ⲉⲛ",
-      "core_english": "{15} {16} {17} — they neither cast a shadow nor know",
+      "core_coptic": "{6} {7} {8} ⲟⲩⲧⲉ ⲉⲩⲑⲁⲓⲃⲉ ⲉⲛ ⲉⲩⲥⲁⲩⲛⲉ ⲉⲛ",
+      "core_english": "{6} {7} {8} — they neither cast a shadow nor know",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 7,
+          "section": 5074
+        },
+        {
+          "id": 7,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲉ . . ⲏⲧⲉ",
+          "source_id": 8,
+          "section": 5074
+        },
+        {
+          "id": 8,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 9,
+          "section": 5074
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological description of luminaries."
     },
@@ -62,8 +157,20 @@
       "chapter": 106,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲍⲉ ⲁⲣⲉⲧⲟⲩ ⲍⲛ̄ ⲟⲩⲧⲱⲍⲙⲉ ⲙⲛ ⲟⲩ",
-      "core_english": "{19} they stand on their feet in a summons-forth and a",
+      "core_coptic": "{9}ⲍⲉ ⲁⲣⲉⲧⲟⲩ ⲍⲛ̄ ⲟⲩⲧⲱⲍⲙⲉ ⲙⲛ ⲟⲩ",
+      "core_english": "{9} they stand on their feet in a summons-forth and a",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "stand",
+          "basis": "Editor restoration. [ⲁ]ⲍⲉ ⲁⲣⲉⲧⲟⲩ = standard Coptic ⲁϩⲉ ⲉⲣⲁⲧⲟⲩ 'they stand on their feet' (cf. accumulated ⲧⲏⲕ ⲁⲣⲉⲧ⸗ idiom).",
+          "source_id": 10,
+          "section": 5075
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Luminaries' cosmic stance."
     },
@@ -72,8 +179,20 @@
       "chapter": 106,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ⲧⲙⲉ ϩⲟⲙⲱⲥ ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ ⲥⲉⲣⲉϣⲉ ⲉⲛ ϩⲟⲗⲟⲧⲉ",
-      "core_english": "{21}, nevertheless: they themselves do not rejoice whol-",
+      "core_coptic": "{10}ⲧⲙⲉ ϩⲟⲙⲱⲥ ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ ⲥⲉⲣⲉϣⲉ ⲉⲛ ϩⲟⲗⲟⲧⲉ",
+      "core_english": "{10}, nevertheless: they themselves do not rejoice whol-",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲥⲱ",
+          "english": "Hear",
+          "basis": "Editor restoration completing ⲥⲱⲧⲙⲉ 'hear' — standard imperative opening of an exhortation; ⲧⲙⲉ visible.",
+          "source_id": 11,
+          "section": 5076
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Core teaching: luminaries do not fully rejoice."
     },
@@ -82,8 +201,20 @@
       "chapter": 106,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22}ⲉ̄ ⲟⲩⲉ ⲙⲉⲛ ⲭⲉ ⲛⲟⲩⲃⲉⲗ ⲓ̈ⲁⲣⲙⲉ ⲥⲁ ⲡⲟⲩⲭⲁⲭⲉ ⲥⲉ",
-      "core_english": "{23}-ly. On the one hand, because their eyes gaze upon their enemy, they",
+      "core_coptic": "{11}ⲉ̄ ⲟⲩⲉ ⲙⲉⲛ ⲭⲉ ⲛⲟⲩⲃⲉⲗ ⲓ̈ⲁⲣⲙⲉ ⲥⲁ ⲡⲟⲩⲭⲁⲭⲉ ⲥⲉ",
+      "core_english": "{11}-ly. On the one hand, because their eyes gaze upon their enemy, they",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲗⲱ",
+          "english": "—",
+          "basis": "Editor restoration completing ϩⲟⲗⲟⲧⲉⲗⲱⲉ̄ ('wholly,' = Greek ὁλοτελῶς) split across line break; ⲉ̄ visible. Meaning carried in line 1 English.",
+          "source_id": 12,
+          "section": 5077
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First reason: their eyes see the enemy."
     },
@@ -92,8 +223,20 @@
       "chapter": 106,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24}ϩ ⲛ̄ⲥⲱϩ ⲥⲉⲃⲱϣ ⲁⲛ ⲥⲁ ⲛⲉϩⲙⲟⲣⲫⲁⲩⲉ ⲉⲧⲃⲁⲓ̈ⲧ",
-      "core_english": "are {25} after him; they look also at his foul forms.",
+      "core_coptic": "{12}ϩ ⲛ̄ⲥⲱϩ ⲥⲉⲃⲱϣ ⲁⲛ ⲥⲁ ⲛⲉϩⲙⲟⲣⲫⲁⲩⲉ ⲉⲧⲃⲁⲓ̈ⲧ",
+      "core_english": "are {12} after him; they look also at his foul forms.",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲙⲟⲩ",
+          "english": "are filled",
+          "basis": "Editor restoration completing ⲥⲉⲙⲟⲩϩ ('they are filled'); ϩ visible. The idiom ⲙⲟⲩϩ ⲛ̄ⲥⲱ⸗ = 'be filled (with concern/zeal) after.'",
+          "source_id": 13,
+          "section": 5078
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The enemy's foul morphē — zoomorphic correspondence."
     },
@@ -102,8 +245,20 @@
       "chapter": 106,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26}ⲉⲩ ⲁⲣⲁϩ ⲭⲉ ϩⲁⲛϩ̄ ϩⲧⲏⲕ ⲁⲣⲉⲧϥ̄ ϩⲟ ⲛⲣ̄ⲣⲟ ⲙ̄ⲡⲥⲁⲛ",
-      "core_english": "{27} him, because — being set near — he stands fast as a king-face of the upper-",
+      "core_coptic": "{13}ⲉⲩ ⲁⲣⲁϩ ⲭⲉ ϩⲁⲛϩ̄ ϩⲧⲏⲕ ⲁⲣⲉⲧϥ̄ ϩⲟ ⲛⲣ̄ⲣⲟ ⲙ̄ⲡⲥⲁⲛ",
+      "core_english": "{13} him, because — being set near — he stands fast as a king-face of the upper-",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲥⲉⲛ",
+          "english": "They see",
+          "basis": "Editor restoration completing ⲥⲉⲛⲉⲩ ('they see'); ⲉⲩ visible.",
+          "source_id": 14,
+          "section": 5079
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ϩⲟ ⲛⲣ̄ⲣⲟ — king-face — substratic zoomorphic-correspondential register."
     },
@@ -112,8 +267,30 @@
       "chapter": 106,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28}ⲉ ⲙⲛ̄ ⲡⲥⲁⲛⲙ̄ⲓ̈ⲧⲛⲉ ϩⲛ̄ ⲟⲩⲡⲉⲧϩⲏⲡ ⲙⲛ̄ ⲟⲩⲃⲱⲗⲧ {29}",
-      "core_english": "{30} place and the lower place, in a hidden way and a release-{31}",
+      "core_coptic": "{14}ⲉ ⲙⲛ̄ ⲡⲥⲁⲛⲙ̄ⲓ̈ⲧⲛⲉ ϩⲛ̄ ⲟⲩⲡⲉⲧϩⲏⲡ ⲙⲛ̄ ⲟⲩⲃⲱⲗⲧ {15}",
+      "core_english": "{14} place and the lower place, in a hidden way and a release-{15}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧⲡ",
+          "english": "(upper)",
+          "basis": "Editor restoration completing ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' (cf. accumulated vocab); split across line break with ⲡⲥⲁⲛ on line 4 and ⲉ visible on line 5.",
+          "source_id": 15,
+          "section": 5080
+        },
+        {
+          "id": 15,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(forth)",
+          "basis": "Editor restoration completing ⲁⲃⲁⲗ 'forth' split across line break; ⲃⲁⲗ visible at start of line 6.",
+          "source_id": 16,
+          "section": 5080
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Upper/lower place mapping — cosmic geography."
     },
@@ -122,8 +299,20 @@
       "chapter": 106,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲁⲗ ϩⲉⲓⲣⲉ ⲛϩⲱⲃ ⲛⲓⲙ ⲉⲧⲉϩⲛⲉϩ ⲕⲁⲧⲁ ⲡⲉϩⲱⲕ ⲛϩⲏ{32}",
-      "core_english": "forth, doing every work that pleases him according to his heart's de-{33}",
+      "core_coptic": "ⲃⲁⲗ ϩⲉⲓⲣⲉ ⲛϩⲱⲃ ⲛⲓⲙ ⲉⲧⲉϩⲛⲉϩ ⲕⲁⲧⲁ ⲡⲉϩⲱⲕ ⲛϩⲏ{16}",
+      "core_english": "forth, doing every work that pleases him according to his heart's de-{16}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(of heart)",
+          "basis": "Editor restoration completing ⲛϩⲏⲧ 'of heart' in idiom ⲡⲉϩⲱⲕ ⲛϩⲏⲧ 'his heart's desire' (cf. accumulated vocab ⲡⲉϩⲱⲕ ⲛ̄ⲍⲏⲧ).",
+          "source_id": 17,
+          "section": 5081
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The enemy's free range of action."
     },
@@ -132,8 +321,30 @@
       "chapter": 106,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34}ⲁϩⲥⲛⲉⲩ ⲭⲉ ⲥⲉⲙⲟⲩϩ ⲛ̄ⲥⲁ ⲧⲯⲩⲭⲏ ⲉⲧⲁⲛϩ̄ ⲥⲉⲛⲉⲩ {35}",
-      "core_english": "{36}: because they are filled after the living soul, they see {37}",
+      "core_coptic": "{17}ⲁϩⲥⲛⲉⲩ ⲭⲉ ⲥⲉⲙⲟⲩϩ ⲛ̄ⲥⲁ ⲧⲯⲩⲭⲏ ⲉⲧⲁⲛϩ̄ ⲥⲉⲛⲉⲩ {18}",
+      "core_english": "{17}: because they are filled after the living soul, they see {18}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲧⲙ",
+          "english": "The second (reason)",
+          "basis": "Editor restoration completing ⲧⲙⲁϩⲥⲛⲉⲩ 'the second' — ordinal opening the second reason (parallel to ⲟⲩⲉ ⲙⲉⲛ in line 2).",
+          "source_id": 18,
+          "section": 5082
+        },
+        {
+          "id": 18,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(her)",
+          "basis": "Editor restoration of [ⲁ] beginning ⲁⲣⲁⲥ 'to her,' split across line break; ⲣⲁⲥ visible at start of line 8.",
+          "source_id": 19,
+          "section": 5082
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲧⲯⲩⲭⲏ ⲉⲧⲁⲛϩ̄ — the Living Soul, core Manichaean substratic concept."
     },
@@ -142,8 +353,29 @@
       "chapter": 106,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38}ⲥ ⲭⲉ ⲥⲭⲁⲗⲝ̄ ⲥⲧⲏⲕ ⲁⲣⲉⲧⲟ̄ ϩⲛ̄ ⲟⲩⲛⲁⲃ ⲛⲥⲁ{39}ϩ ⲛ̄",
-      "core_english": "{40}, that she is drawn taut and stands fast in a great {41} of",
+      "core_coptic": "{19}ⲥ ⲭⲉ ⲥⲭⲁⲗⲝ̄ ⲥⲧⲏⲕ ⲁⲣⲉⲧⲟ̄ ϩⲛ̄ ⲟⲩⲛⲁⲃ ⲛⲥⲁ{20}ϩ ⲛ̄",
+      "core_english": "{19}, that she is drawn taut and stands fast in a great {20} of",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲣⲁ",
+          "english": "her",
+          "basis": "Editor restoration completing ⲁⲣⲁⲥ 'to her' from previous line; ⲥ visible.",
+          "source_id": 20,
+          "section": 5083
+        },
+        {
+          "id": 20,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "ⲥⲁ...ϩ — visible at start and end of word; ~2 missing characters in middle",
+          "source_id": 21,
+          "section": 5083
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Soul stretched taut in cosmic affliction."
     },
@@ -152,8 +384,20 @@
       "chapter": 106,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42}ⲡⲉ ⲙⲛ̄ ⲡⲥⲁⲛⲙ̄ⲓ̈ⲧⲛⲉ ϩⲙ ⲡϣⲏⲛ ⲙⲛ ⲧⲥⲁⲣⲧ",
-      "core_english": "{43} above and the lower place, in the tree and the thorn,",
+      "core_coptic": "{21}ⲡⲉ ⲙⲛ̄ ⲡⲥⲁⲛⲙ̄ⲓ̈ⲧⲛⲉ ϩⲙ ⲡϣⲏⲛ ⲙⲛ ⲧⲥⲁⲣⲧ",
+      "core_english": "{21} above and the lower place, in the tree and the thorn,",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(of) the upper",
+          "basis": "Editor restoration completing ⲛ̄ⲧⲡⲉ 'of the upper place'; ⲡⲉ visible. Cosmological pair with ⲡⲥⲁⲛⲙ̄ⲓ̈ⲧⲛⲉ 'lower place' that follows.",
+          "source_id": 22,
+          "section": 5084
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tree/thorn — cosmic-natural correspondential register for the soul's distribution."
     },
@@ -162,8 +406,18 @@
       "chapter": 106,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ϩⲛ̄ ⲫⲗⲓⲯⲓⲥ ⲛⲓⲙ ⲉⲩϩⲁⲩϩⲉϣ ⲙ̄ⲙⲁⲥ ⲉⲩⲑⲛⲟ ⲙ̄",
-      "core_english": "{45} in every affliction, oppressing her, abusing",
+      "core_coptic": "{22} ϩⲛ̄ ⲫⲗⲓⲯⲓⲥ ⲛⲓⲙ ⲉⲩϩⲁⲩϩⲉϣ ⲙ̄ⲙⲁⲥ ⲉⲩⲑⲛⲟ ⲙ̄",
+      "core_english": "{22} in every affliction, oppressing her, abusing",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 23,
+          "section": 5085
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The soul's affliction in the cosmos."
     },
@@ -172,8 +426,20 @@
       "chapter": 106,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁ{46}ⲩⲃⲁⲭⲝ̄ ⲙ̄ⲙⲁⲥ ⲉⲩⲟⲩⲱⲙ ⲙ̄ⲙⲁⲥ ⲉⲥⲛⲁ ⲁⲧⲡⲉ",
-      "core_english": "her, {47} tearing her, eating her — she goes upward,",
+      "core_coptic": "ⲙⲁ{23}ⲩⲃⲁⲭⲝ̄ ⲙ̄ⲙⲁⲥ ⲉⲩⲟⲩⲱⲙ ⲙ̄ⲙⲁⲥ ⲉⲥⲛⲁ ⲁⲧⲡⲉ",
+      "core_english": "her, {23} tearing her, eating her — she goes upward,",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲥ ⲉ",
+          "english": "(her,)",
+          "basis": "Editor restoration completing ⲙⲙⲁⲥ 'her' (from preceding ⲙⲁ) plus the connective ⲉ-prefix of circumstantial ⲉⲩⲃⲁⲭⲝ̄ that follows.",
+          "source_id": 24,
+          "section": 5086
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Devouring of the Living Soul — substratic motif."
     },
@@ -184,6 +450,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲥⲛⲏⲩ ⲁⲧⲓ̈ⲧⲛⲉ ⲭⲛ̄ ⲛ̄ⲧⲡⲉ ⲁⲧⲓ̈ⲧⲛⲉ ⲭⲛ̄ ⲙ̄ⲧⲓ̈ⲧⲛⲉ ⲁⲧ",
       "core_english": "she comes downward, from above to below, from below to a-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Vertical movement of the soul — cosmic axis register."
     },
@@ -192,8 +459,20 @@
       "chapter": 106,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ {48}ϣⲱⲗ ⲙⲙⲁⲥ ⲁⲃⲁⲗ ⲉⲩⲡⲧⲱⲛⲉ ⲙ̄ⲙⲁⲥ ⲁⲃⲁⲗ ⲭⲛ̄ ⲛ̄",
-      "core_english": "bove. {49} plundering her forth, transferring her forth from",
+      "core_coptic": "ⲡⲉ {24}ϣⲱⲗ ⲙⲙⲁⲥ ⲁⲃⲁⲗ ⲉⲩⲡⲧⲱⲛⲉ ⲙ̄ⲙⲁⲥ ⲁⲃⲁⲗ ⲭⲛ̄ ⲛ̄",
+      "core_english": "bove. {24} plundering her forth, transferring her forth from",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "(circumstantial)",
+          "basis": "Editor restoration of circumstantial subject prefix ⲉⲩ- on ϣⲱⲗ 'plunder'; ϣⲱⲗ visible.",
+          "source_id": 25,
+          "section": 5088
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Transmigration register — body to body."
     },
@@ -204,6 +483,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲱⲙⲁ ⲥⲱⲙⲁ ⲉⲧⲃⲉ ⲧⲟⲩⲯⲩⲭⲏ ⲟⲩⲛ ⲉⲧⲁⲛϩ̄ ⲉⲧⲟ ⲙ̄",
       "core_english": "body to body. Concerning, then, their living soul, which is",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Body-to-body transmigration of the Living Soul."
     },
@@ -212,8 +492,30 @@
       "chapter": 106,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉⲣⲓ{50} ⲛⲁϩⲣⲉⲩ ⲉⲥⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲛ̄ⲧⲟⲟⲧⲟⲩ ⲉⲩⲛⲟⲩ ⲁⲣⲁⲥ ϩⲛ ⲛⲑ{51}",
-      "core_english": "belove{52}d before them and honored by them, they see her in af{53}-",
+      "core_coptic": "ⲙⲉⲣⲓ{25} ⲛⲁϩⲣⲉⲩ ⲉⲥⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲛ̄ⲧⲟⲟⲧⲟⲩ ⲉⲩⲛⲟⲩ ⲁⲣⲁⲥ ϩⲛ ⲛⲑ{26}",
+      "core_english": "belove{25}d before them and honored by them, they see her in af{26}-",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "-d",
+          "basis": "Editor restoration completing ⲙⲉⲣⲓⲧ 'beloved' (qualitative); ⲙⲉⲣⲓ visible.",
+          "source_id": 26,
+          "section": 5090
+        },
+        {
+          "id": 26,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲗⲓ",
+          "english": "af-",
+          "basis": "Editor restoration completing ⲛⲑⲗⲓⲯⲓⲥ (Greek θλίψις, 'afflictions') split across line break; ⲛⲑ on line 15, ⲯⲓⲥ on line 16.",
+          "source_id": 27,
+          "section": 5090
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Luminaries' beloved Living Soul seen in affliction."
     },
@@ -222,8 +524,20 @@
       "chapter": 106,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲯⲓⲥ ⲉ{54}ⲉϣⲉ ⲉⲛ ϩⲟⲗⲟⲧⲉⲗⲱⲥ ⲟⲩⲉ ⲙⲉⲛ ⲉⲧⲃⲉ ⲧⲯⲩⲭⲏ",
-      "core_english": "flictions, {55}rejoicing not wholly: on the one hand because of the soul,",
+      "core_coptic": "ⲯⲓⲥ ⲉ{27}ⲉϣⲉ ⲉⲛ ϩⲟⲗⲟⲧⲉⲗⲱⲥ ⲟⲩⲉ ⲙⲉⲛ ⲉⲧⲃⲉ ⲧⲯⲩⲭⲏ",
+      "core_english": "flictions, {27}rejoicing not wholly: on the one hand because of the soul,",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲩⲣ",
+          "english": "they (do not)",
+          "basis": "Editor restoration completing ⲉⲩⲣⲉϣⲉ 'they rejoicing' (circumstantial); ⲉ at start and ⲉϣⲉ at end visible.",
+          "source_id": 28,
+          "section": 5091
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Restating the dual reason for incomplete joy."
     },
@@ -232,8 +546,20 @@
       "chapter": 106,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲉ ⲇⲉ ⲉⲧⲃⲉ ⲡⲟⲩⲭⲁⲭⲉ ⲡⲉⲧⲟⲩⲛⲉⲩ ⲁⲣⲁϩ ⲉϩⲟ ⲛⲣ̄ⲣⲟ {56}",
-      "core_english": "on the other hand because of their enemy, whom they see being a king-face {57}",
+      "core_coptic": "ⲟⲩⲉ ⲇⲉ ⲉⲧⲃⲉ ⲡⲟⲩⲭⲁⲭⲉ ⲡⲉⲧⲟⲩⲛⲉⲩ ⲁⲣⲁϩ ⲉϩⲟ ⲛⲣ̄ⲣⲟ {28}",
+      "core_english": "on the other hand because of their enemy, whom they see being a king-face {28}",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ϩⲙ",
+          "english": "in",
+          "basis": "Editor restoration completing ϩⲙ̄ ⲡⲉⲧⲉ ⲡⲧⲱϩ ⲉⲛ ⲡⲉ 'in that which befits not'; preposition ϩⲙ̄ before ⲡⲉⲧⲉ.",
+          "source_id": 29,
+          "section": 5092
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ϩⲟ ⲛⲣ̄ⲣⲟ — king-face register again."
     },
@@ -244,6 +570,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲧⲉ ⲡⲧⲱϩ ⲉⲛ ⲡⲉ ⲉϩⲟ ⲛϣⲟⲣⲱϣⲟ ⲉϩⲙⲁⲧⲛⲉ ⲛϩⲏⲧ ϩⲛ",
       "core_english": "in that to which it does not befit, being arrogant, his heart at rest in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "The enemy's improper rule."
     },
@@ -254,6 +581,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲭⲣⲏⲙⲁ ⲉⲡⲧⲱϩ ⲉⲛ ⲡⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲥⲉⲣⲉϣⲉ ⲉⲛ ϩⲛ̄",
       "core_english": "a wealth which befits not. Because of this very thing they rejoice not in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "hortatory_application score 30 reflects vocabulary overlap, but content remains substrate cosmology."
     },
@@ -264,6 +592,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲭⲱⲕ ⲁⲗⲗⲁ ⲥⲉⲃⲓ ⲁϩⲣⲏⲓ̈ ⲟⲉ̄ϣⲙⲕ̄ ⲁⲡⲟⲩϩⲏⲧ ϣⲁⲛ",
       "core_english": "completion, but rather they bear up grief upon their heart until",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic redeemers' grief — substrate."
     },
@@ -274,6 +603,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩⲥⲱⲧϩ ⲛⲧⲯⲩⲭⲏ ⲉⲧⲁⲛϩ̄ ⲛⲥⲉⲃⲓⲧⲥ ϩⲁ ⲛⲃⲓⲝ ⲙ̄ⲡⲭⲁⲭⲉ",
       "core_english": "they redeem the living soul and bring her out from under the claws of the enemy.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Redemption of the Living Soul from the enemy's claws."
     },
@@ -284,6 +614,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲧⲉ ⲛ̄ⲥⲉⲃⲱⲧⲉ ⲁⲃⲁⲗ ⲙ̄ⲡⲙⲟⲩ ⲉⲧⲉ ⲡⲟⲩⲭⲁⲭⲉ ⲡⲉ ⲛ̄ⲥⲉⲥ",
       "core_english": "Then they shall release her forth from Death — which is their enemy — and shall ga-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Death = enemy identification — substratic cosmic dualism."
     },
@@ -292,8 +623,20 @@
       "chapter": 106,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲩϩϥ̄ ⲁϩⲟⲩⲛ {58} ϣⲁ ⲁⲛⲏϩⲉ ⲛ",
-      "core_english": "ther him inward {59} for ever and",
+      "core_coptic": "ⲁⲩϩϥ̄ ⲁϩⲟⲩⲛ {29} ϣⲁ ⲁⲛⲏϩⲉ ⲛ",
+      "core_english": "ther him inward {29} for ever and",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲛⲥⲉⲥⲁⲛϩϥ ϩⲙ ⲡⲃⲱⲗⲟⲥ",
+          "english": "and they shall bind him in the bōlos",
+          "basis": "Editor restoration. Standard Manichaean eschatological motif: the enemy (Death/Hyle) is gathered into the bōlos, the final dark mass at the end of time (cf. accumulated vocab ⲡⲃⲱⲗⲟⲥ, ⲡⲓⲃⲱⲗⲟⲥ ⲛ̄ⲍⲁⲉ 'this last bōlos').",
+          "source_id": 30,
+          "section": 5098
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eschatological gathering."
     },
@@ -302,8 +645,20 @@
       "chapter": 106,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲛⲏϩⲉ ⲧⲡⲛⲉⲩ ⲉⲧⲟⲩⲛⲁⲙⲟⲩⲣ ⲡⲟⲩⲭⲁⲭⲉ ϩⲛ ⲧⲙⲡ̄ⲣⲉ ⲁⲧ{60}",
-      "core_english": "ever — the moment in which they shall bind their enemy in the bond at the {61}",
+      "core_coptic": "ⲁⲛⲏϩⲉ ⲧⲡⲛⲉⲩ ⲉⲧⲟⲩⲛⲁⲙⲟⲩⲣ ⲡⲟⲩⲭⲁⲭⲉ ϩⲛ ⲧⲙⲡ̄ⲣⲉ ⲁⲧ{30}",
+      "core_english": "ever — the moment in which they shall bind their enemy in the bond at the {30}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ϩⲁ",
+          "english": "the",
+          "basis": "Editor restoration completing ⲁⲧϩⲁⲏ 'at the end' (= Sah ⲉⲡϩⲁⲏ); ⲁⲧ on line 24, ⲏ on line 25. Eschatological terminus.",
+          "source_id": 31,
+          "section": 5099
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Binding of the enemy — cosmic eschatology."
     },
@@ -312,8 +667,20 @@
       "chapter": 106,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲏ ⲧⲟⲧⲉ ⲥⲉⲛⲁⲣⲉϣⲉ ⲛ̄ⲥⲉⲧⲙ̄ⲛ̄ⲥⲱⲧ ⲁⲣⲗⲩⲡⲏ ⲭⲛ̄ ⲙ̄ⲡⲓⲛ{62}",
-      "core_english": "end. Then they shall rejoice and shall not give ear to grief any more from this mom{63}-",
+      "core_coptic": "ⲏ ⲧⲟⲧⲉ ⲥⲉⲛⲁⲣⲉϣⲉ ⲛ̄ⲥⲉⲧⲙ̄ⲛ̄ⲥⲱⲧ ⲁⲣⲗⲩⲡⲏ ⲭⲛ̄ ⲙ̄ⲡⲓⲛ{31}",
+      "core_english": "end. Then they shall rejoice and shall not give ear to grief any more from this mom{31}-",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "(this moment)",
+          "basis": "Editor restoration completing ⲙ̄ⲡⲓⲛⲉⲩ 'this moment' (cf. accumulated vocab ⲡⲓⲛⲉⲩ); split across line break with ⲙ̄ⲡⲓⲛ on line 25 and continuation expected.",
+          "source_id": 32,
+          "section": 5100
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eschatological joy of luminaries."
     },
@@ -322,8 +689,20 @@
       "chapter": 106,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲉⲣ ⲧⲟⲩϩⲉ ⲧⲟⲩϩⲉ ⲁⲛ ⲧϩⲉ ⲉⲧⲟⲩⲱⲟⲟⲡ ⲙ̄ⲙⲁⲥ ⲭⲛ̄ ⲛ̄{64}",
-      "core_english": "ent, and they shall be in their condition, that very condition — the manner in which they exist from the {65}-",
+      "core_coptic": "ⲛ̄ⲥⲉⲣ ⲧⲟⲩϩⲉ ⲧⲟⲩϩⲉ ⲁⲛ ⲧϩⲉ ⲉⲧⲟⲩⲱⲟⲟⲡ ⲙ̄ⲙⲁⲥ ⲭⲛ̄ ⲛ̄{32}",
+      "core_english": "ent, and they shall be in their condition, that very condition — the manner in which they exist from the {32}-",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ϣⲁⲣⲡ",
+          "english": "first / beginning",
+          "basis": "Editor restoration completing ⲭⲛ̄ ⲛ̄ϣⲁⲣⲡ 'from the first/beginning' — cosmological reference to the original primal state of the Light-souls before the mingling.",
+          "source_id": 33,
+          "section": 5101
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Restoration to original condition."
     },
@@ -334,6 +713,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁ ⲁⲛⲏϩⲉ : —",
       "core_english": "for ever. : —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eschatological closure formula."
     }

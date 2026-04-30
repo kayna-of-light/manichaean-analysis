@@ -5,7 +5,7 @@
   "start_section": 1277,
   "end_section": 1303,
   "total_sections": 27,
-  "total_lacunae": 87,
+  "total_lacunae": 44,
   "segments": [
     {
       "section": 1277,
@@ -13,7 +13,8 @@
       "line": 0,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}",
-      "core_english": "{1}",
+      "core_english": "{0}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna placeholder; chapter context is substrate cosmology."
     },
@@ -22,8 +23,9 @@
       "chapter": 23,
       "line": 1,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}",
-      "core_english": "{3}",
+      "core_coptic": "{1}",
+      "core_english": "{1}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna placeholder."
     },
@@ -32,8 +34,9 @@
       "chapter": 23,
       "line": 2,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕ̄ⲣ̄ ⲉⲧⲥ {4}",
-      "core_english": "{5} which {6}",
+      "core_coptic": "ⲕ̄ⲣ̄ ⲉⲧⲥ {2}",
+      "core_english": "{3} which {2}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title fragment; preserved as-is."
     },
@@ -42,8 +45,9 @@
       "chapter": 23,
       "line": 3,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧ{7}ⲛ ⲁⲛ ⲁⲥⲱⲱⲡⲉ {8}",
-      "core_english": "Once a{9}gain it happened {10}",
+      "core_coptic": "ⲧⲧ{4}ⲛ ⲁⲛ ⲁⲥⲱⲱⲡⲉ {5}",
+      "core_english": "Once a{4}gain it happened {5}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Narrative opening 'it happened' — cosmogonic narration, not apostolic frame."
     },
@@ -52,8 +56,9 @@
       "chapter": 23,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{11}",
-      "core_english": "{12}",
+      "core_coptic": "{6}",
+      "core_english": "{6}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna."
     },
@@ -62,8 +67,9 @@
       "chapter": 23,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{13}",
-      "core_english": "{14}",
+      "core_coptic": "{7}",
+      "core_english": "{7}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna."
     },
@@ -72,8 +78,9 @@
       "chapter": 23,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{15}ⲁ ϩ̄ⲛ̄ {16}",
-      "core_english": "{17} in {18}",
+      "core_coptic": "{8}ⲁ ϩ̄ⲛ̄ {9}",
+      "core_english": "{8} in {9}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment in cosmological context."
     },
@@ -82,8 +89,9 @@
       "chapter": 23,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{19}ϩⲉ ⲉⲧⲁⲓ̈ⲭⲟⲟⲥ ⲁⲣ{20}",
-      "core_english": "{21} way that I have told {22}",
+      "core_coptic": "{10}ϩⲉ ⲉⲧⲁⲓ̈ⲭⲟⲟⲥ ⲁⲣ{11}",
+      "core_english": "{10} way that I have told {11}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'Way that I have told' — could be teacher voice but content is cosmological."
     },
@@ -92,8 +100,9 @@
       "chapter": 23,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{23} ⲡⲉ ⲡⲧⲕⲁϩ ⲙ{24}",
-      "core_english": "{25} is the land of {26}",
+      "core_coptic": "{12} ⲡⲉ ⲡⲧⲕⲁϩ ⲙ{13}",
+      "core_english": "{12} is the land of {13}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'Land of...' — substrate cosmography (land of light/darkness)."
     },
@@ -102,8 +111,26 @@
       "chapter": 23,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{27} ⲉ ⲉϩ {28}",
-      "core_english": "{29} ... {30}",
+      "core_coptic": "{14} ⲉ ⲉϩ {15}",
+      "core_english": "{14} ... {15}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 17,
+          "source_id": 14,
+          "section": 1286
+        },
+        {
+          "id": 15,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 15,
+          "section": 1286
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -112,8 +139,34 @@
       "chapter": 23,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{31} ⲁⲁⲧ ⲉ̄ {32} ⲙ̄ⲛ {33}",
-      "core_english": "{34} ... {35} with {36}",
+      "core_coptic": "{16} ⲁⲁⲧ ⲉ̄ {17} ⲙ̄ⲛ {18}",
+      "core_english": "{16} ... {17} with {18}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 16,
+          "section": 1287
+        },
+        {
+          "id": 17,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 17,
+          "section": 1287
+        },
+        {
+          "id": 18,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 18,
+          "section": 1287
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -124,6 +177,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲩⲍⲁⲏ ⲙ̄ⲙⲉⲩ",
       "core_english": "their end is there.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'Their end is there' — eschatological/cosmological."
     },
@@ -132,8 +186,29 @@
       "chapter": 23,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲉ̄ⲧⲉ {37} ⲛⲧⲉ {38}",
-      "core_english": "the {39} of {40}",
+      "core_coptic": "ⲧⲧⲉ̄ⲧⲉ {19} ⲛⲧⲉ {20}",
+      "core_english": "the {19} of {20}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 0,
+          "partial": "ⲧⲧⲉ̄ⲧⲉ — possibly 'the half/portion' (ⲧϯⲉ) or 'the joining' (ⲧⲱⲧ); reading uncertain",
+          "source_id": 19,
+          "section": 1289
+        },
+        {
+          "id": 20,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲧⲟⲩⲥⲓⲁ",
+          "english": "the substance",
+          "basis": "Editor restoration ⲧⲟⲩⲥ]ⲁ = ⲧⲟⲩⲥⲓⲁ",
+          "source_id": 20,
+          "section": 1289
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -142,8 +217,20 @@
       "chapter": 23,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲛ ⲣⲱⲙⲉ ⲛⲁϣⲧⲉⲟⲩⲟ ⲛϩ̄ⲟⲱⲗⲡ ⲁⲃⲁⲗ {41}",
-      "core_english": "no man shall be able to bring (them) forth, revealing (them) {42}",
+      "core_coptic": "ⲙ̄ⲛ ⲣⲱⲙⲉ ⲛⲁϣⲧⲉⲟⲩⲟ ⲛϩ̄ⲟⲱⲗⲡ ⲁⲃⲁⲗ {21}",
+      "core_english": "no man shall be able to bring (them) forth, revealing (them) {21}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲛ̄ϩⲭⲟⲟⲥ ⲭⲉ ⲉⲥ-",
+          "english": "saying, 'It is —'",
+          "basis": "Editor restoration ⲛ̄ϩ[ⲭⲟⲟⲥ ⲭⲉ ⲉⲥ]; verbal ϫⲟⲟⲥ 'to say' with following relative/circumstantial introducing reported clause continued in line 5",
+          "source_id": 21,
+          "section": 1290
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Statement about the inaccessibility of the eternal mysteries — substrate register."
     },
@@ -152,8 +239,26 @@
       "chapter": 23,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲟⲟⲡ ⲛ̄ⲉϣ ⲛ̄ⲍⲉ̄ {43} ϣ]ⲁ̄ ⲁⲛⲏⲍⲉ {44}",
-      "core_english": "they exist in what way {45} unto eternity {46}",
+      "core_coptic": "ϣⲟⲟⲡ ⲛ̄ⲉϣ ⲛ̄ⲍⲉ̄ {22} ϣ]ⲁ̄ ⲁⲛⲏⲍⲉ {23}",
+      "core_english": "they exist in what way {22} unto eternity {23}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 22,
+          "section": 1291
+        },
+        {
+          "id": 23,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 23,
+          "section": 1291
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Exist in what way unto eternity' — the structural cosmological question."
     },
@@ -162,8 +267,18 @@
       "chapter": 23,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ {47} ⲉⲛⲧⲉ ⲟ̄ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ",
-      "core_english": "all of them with the {48} not to reveal",
+      "core_coptic": "ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ {24} ⲉⲛⲧⲉ ⲟ̄ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ",
+      "core_english": "all of them with the {24} not to reveal",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 24,
+          "section": 1292
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate context."
     },
@@ -172,8 +287,36 @@
       "chapter": 23,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{49} ⲙⲛ̄ⲧϣⲁⲁⲛⲏⲍⲉ {50} ⲛⲁⲟ̄ ⲛ̄ⲁⲡ {51}",
-      "core_english": "{52} eternity {53} great {54}",
+      "core_coptic": "{25} ⲙⲛ̄ⲧϣⲁⲁⲛⲏⲍⲉ {26} ⲛⲁⲟ̄ ⲛ̄ⲁⲡ {27}",
+      "core_english": "{25} eternity {26} great {27}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 25,
+          "section": 1293
+        },
+        {
+          "id": 26,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲁⲛⲏⲍⲉ",
+          "english": "(forever)",
+          "basis": "Editor restoration [ⲏⲍⲉ . . . . . .]; standard formula ⲙⲛ̄ⲧϣⲁⲁⲛⲏⲍⲉ ϣⲁ ⲁⲛⲏⲍⲉ",
+          "source_id": 26,
+          "section": 1293
+        },
+        {
+          "id": 27,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 27,
+          "section": 1293
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Eternity, great...' — substrate."
     },
@@ -182,8 +325,34 @@
       "chapter": 23,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲛ ⲙⲛ̄ ⲙⲡ {55} ⲥⲁⲛⲉϣ {56} ⲭⲉ ⲉⲛ ⲛ̄ⲥⲁ {57}",
-      "core_english": "again, with the {58} nourish {59} not after {60}",
+      "core_coptic": "ⲁⲛ ⲙⲛ̄ ⲙⲡ {28} ⲥⲁⲛⲉϣ {29} ⲭⲉ ⲉⲛ ⲛ̄ⲥⲁ {30}",
+      "core_english": "again, with the {28} nourish {29} not after {30}",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 28,
+          "section": 1294
+        },
+        {
+          "id": 29,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 29,
+          "section": 1294
+        },
+        {
+          "id": 30,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 30,
+          "section": 1294
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -192,8 +361,28 @@
       "chapter": 23,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{61} ⲛ̄ⲧⲙⲛⲧϣⲁⲁⲛⲏⲍⲉ ⲙⲛ ⲧⲍⲁⲏ {62}",
-      "core_english": "{63} of eternity, with the end {64}",
+      "core_coptic": "{31} ⲛ̄ⲧⲙⲛⲧϣⲁⲁⲛⲏⲍⲉ ⲙⲛ ⲧⲍⲁⲏ {32}",
+      "core_english": "{31} of eternity, with the end {32}",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲧⲍⲟⲩⲧⲉ",
+          "english": "the (foundation?)",
+          "basis": "Editor restoration ⲧⲍⲟⲩ]ⲧⲉ; possibly 'the twenty' (Lyc ⲭⲟⲩⲧⲉ) but contextually unclear",
+          "source_id": 31,
+          "section": 1295
+        },
+        {
+          "id": 32,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 32,
+          "section": 1295
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eternity / end — cosmic temporal structure."
     },
@@ -204,6 +393,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁⲣⲉⲧϩ ⲉⲧⲙⲙⲉⲩ",
       "core_english": "that stillness.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'That stillness' — the primordial state."
     },
@@ -212,8 +402,27 @@
       "chapter": 23,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛⲟⲩ ⲛⲁⲍ {65} ⲡⲕⲁⲍ ⲙⲡⲙ̄ⲟⲩ {66}",
-      "core_english": "Now {67} the land of death {68}",
+      "core_coptic": "ⲧⲛⲟⲩ ⲛⲁⲍ {33} ⲡⲕⲁⲍ ⲙⲡⲙ̄ⲟⲩ {34}",
+      "core_english": "Now {33} the land of death {34}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲛⲁⲍ",
+          "source_id": 33,
+          "section": 1297
+        },
+        {
+          "id": 34,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 34,
+          "section": 1297
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Land of death' = land of darkness — substrate."
     },
@@ -222,8 +431,28 @@
       "chapter": 23,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{69} ⲫⲩⲥⲓⲥ ⲛⲧⲟⲩⲥⲓⲁ {70}",
-      "core_english": "{71} nature of the substance {72}",
+      "core_coptic": "{35} ⲫⲩⲥⲓⲥ ⲛⲧⲟⲩⲥⲓⲁ {36}",
+      "core_english": "{35} nature of the substance {36}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲫⲩⲥⲓⲥ",
+          "english": "the nature",
+          "basis": "Editor restoration [ⲫⲩⲥ]ⲓⲥ",
+          "source_id": 35,
+          "section": 1298
+        },
+        {
+          "id": 36,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 36,
+          "section": 1298
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Physis/ousia — substrate metaphysical vocabulary."
     },
@@ -232,8 +461,26 @@
       "chapter": 23,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍ {73} ⲉⲧϣⲟⲟⲡ {74}",
-      "core_english": "{75} which exists {76}",
+      "core_coptic": "ⲍ {37} ⲉⲧϣⲟⲟⲡ {38}",
+      "core_english": "{37} which exists {38}",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 37,
+          "section": 1299
+        },
+        {
+          "id": 38,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 38,
+          "section": 1299
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -242,8 +489,36 @@
       "chapter": 23,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{77} ⲛⲏⲍⲉ ϣⲁ ⲁⲛⲏⲍⲉ {78} ⲁⲃⲁⲗ {79}",
-      "core_english": "{80} unto eternity {81} forth {82}",
+      "core_coptic": "{39} ⲛⲏⲍⲉ ϣⲁ ⲁⲛⲏⲍⲉ {40} ⲁⲃⲁⲗ {41}",
+      "core_english": "{39} unto eternity {40} forth {41}",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(eter)",
+          "basis": "Continuation from previous line; reconstructs ⲁⲛⲏⲍⲉ at line break",
+          "source_id": 39,
+          "section": 1300
+        },
+        {
+          "id": 40,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 40,
+          "section": 1300
+        },
+        {
+          "id": 41,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 41,
+          "section": 1300
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Unto eternity' formula."
     },
@@ -252,8 +527,18 @@
       "chapter": 23,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲛ̄ {83}",
-      "core_english": "in {84}",
+      "core_coptic": "ⲍⲛ̄ {42}",
+      "core_english": "in {42}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 19,
+          "source_id": 42,
+          "section": 1301
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -264,6 +549,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ",
       "core_english": "of one another.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment."
     },
@@ -272,8 +558,18 @@
       "chapter": 23,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲁⲡⲣⲁ ⲛ̄ⲧⲙⲛ̄ⲛⲧϣⲁⲁⲛⲏⲍⲉ ⲛ̄ {85}",
-      "core_english": "Before eternity, the {86}",
+      "core_coptic": "ⲍⲁⲡⲣⲁ ⲛ̄ⲧⲙⲛ̄ⲛⲧϣⲁⲁⲛⲏⲍⲉ ⲛ̄ {43}",
+      "core_english": "Before eternity, the {43}",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 43,
+          "section": 1303
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Before eternity' — primordial substrate."
     }

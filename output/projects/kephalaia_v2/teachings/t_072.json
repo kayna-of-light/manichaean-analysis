@@ -5,7 +5,7 @@
   "start_section": 4329,
   "end_section": 4342,
   "total_sections": 14,
-  "total_lacunae": 27,
+  "total_lacunae": 14,
   "segments": [
     {
       "section": 4329,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "— ⲉⲧⲃⲉ ⲡⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ —",
       "core_english": "— Concerning the Gathering-Inward —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter title naming the cosmological topic of gathering inward — substantive substrate header."
     },
@@ -23,7 +24,19 @@
       "line": 2,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲁ ⲛⲛ̄{0}ⲧⲟⲓⲭⲉⲓⲟⲛ ⲟⲁ",
-      "core_english": "⟨71⟩ of the {1}lements ⟨71⟩",
+      "core_english": "⟨71⟩ of the {0}lements ⟨71⟩",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "e",
+          "basis": "Single-letter restoration of ⲥ in ⲛⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ 'of the elements.'",
+          "source_id": 0,
+          "section": 4330
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Title continuation: 'of the elements' — substantive cosmological topic."
     },
@@ -34,6 +47,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲉϣ ⲧⲉ ⲧⲍⲉ ⲉⲧⲉϣⲁⲣⲉ",
       "core_english": "'What is the manner in which",
+      "apparatus": [],
       "removed_material": "Stripped frame attribution '{1}ⲓⲛ ⲁⲛ ⲡⲁⲭⲉ ⲡⲫⲱⲥⲧⲏⲣ' / 'the Illuminator said' — pure dialogue formula. Kept the substantive cosmological question.",
       "temporal_note": "Frame attribution + opening of the substantive question that defines the teaching topic."
     },
@@ -42,8 +56,20 @@
       "chapter": 71,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲭⲛ̄ ⲛ̄ⲟⲩⲉ ⲁⲩⲉ ⲉϣⲁⲣⲉ ⲡⲟⲩ",
-      "core_english": "the {3}lements gather inward, one to another? Each li-",
+      "core_coptic": "{1}ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲭⲛ̄ ⲛ̄ⲟⲩⲉ ⲁⲩⲉ ⲉϣⲁⲣⲉ ⲡⲟⲩ",
+      "core_english": "the {1}lements gather inward, one to another? Each li-",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "e",
+          "basis": "Single-letter restoration completing ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ 'the elements.'",
+          "source_id": 2,
+          "section": 4332
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of substantive cosmological question — defines the gathering structure."
     },
@@ -52,8 +78,30 @@
       "chapter": 71,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ {5}ⲧⲥⲉⲧⲉ ⲛ̄ⲧⲉ ⲧⲥⲉⲧⲉ ⲍⲱⲱⲥ ⲥⲱⲩⲍ ⲁ",
-      "core_english": "{6} gathers inward {7} the fire of the fire; the fire itself gathers in-",
+      "core_coptic": "{2} ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ {3}ⲧⲥⲉⲧⲉ ⲛ̄ⲧⲉ ⲧⲥⲉⲧⲉ ⲍⲱⲱⲥ ⲥⲱⲩⲍ ⲁ",
+      "core_english": "{2} gathers inward {3} the fire of the fire; the fire itself gathers in-",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁⲓⲛ",
+          "english": "ght",
+          "basis": "Editor restoration: ⲡⲟⲩⲁⲓⲛⲉ 'the light' begins line 29 ('each light gathers inward to the fire'); the noun spans the line break.",
+          "source_id": 3,
+          "section": 4333
+        },
+        {
+          "id": 3,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "to",
+          "basis": "Single-letter restoration of directional ⲁ- 'to.'",
+          "source_id": 4,
+          "section": 4333
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First link in the gathering chain: fire→fire. Element-to-element correspondence within the cosmic system."
     },
@@ -62,8 +110,20 @@
       "chapter": 71,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8} ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲁⲡⲧⲏⲩ ⲛⲧⲉ ⲡ",
-      "core_english": "{9} gathers inward to the wind of the",
+      "core_coptic": "{4} ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲁⲡⲧⲏⲩ ⲛⲧⲉ ⲡ",
+      "core_english": "{4} gathers inward to the wind of the",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲍⲟⲩⲛ ⲁⲡⲙⲁⲩ ⲛⲧⲉ ⲡⲙ̄ⲁⲩ",
+          "english": "ward to the water of the water",
+          "basis": "Editor restoration completing the iterative cosmological formula: each element gathers inward to its like-element. The pattern (light → fire, fire → fire, water → water, wind → wind...) is cosmologically standard, with the construction parallel to lines 30 and 31.",
+          "source_id": 5,
+          "section": 4334
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of element chain: wind→wind."
     },
@@ -72,8 +132,20 @@
       "chapter": 71,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲩ ⲥⲱⲩϩ ⲁⲡⲧⲁⲙⲣ ⲛ̄ⲧⲉ ⲡⲧⲁⲙⲣ ⲥⲱⲩϩ ⲁⲡⲟⲩⲱϣⲃⲉ",
-      "core_english": "{11}-y are gathered to the Tamr; and the Tamr is gathered to the Answer,",
+      "core_coptic": "{5}ⲩ ⲥⲱⲩϩ ⲁⲡⲧⲁⲙⲣ ⲛ̄ⲧⲉ ⲡⲧⲁⲙⲣ ⲥⲱⲩϩ ⲁⲡⲟⲩⲱϣⲃⲉ",
+      "core_english": "{5}-y are gathered to the Tamr; and the Tamr is gathered to the Answer,",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲧⲏ",
+          "english": "[all]",
+          "basis": "Editor restores [ⲧⲏ]ⲩ; the word ⲧⲏⲩ in this context is uncertain. Could be 'winds/spirits' or part of a longer absolute pronoun (e.g. ⲧⲏⲣⲟⲩ 'all'). The translator's tentative gloss is 'all' as the lowest term in the cosmic ascent-chain.",
+          "source_id": 6,
+          "section": 4335
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Chain continues: elements→Tamr→Answer. Tamr is a transmission term; Answer (ⲡⲟⲩⲱϣⲃⲉ) is the cosmic faculty paired with Call."
     },
@@ -82,8 +154,20 @@
       "chapter": 71,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲉ ⲡⲟⲩⲱϣⲃⲉ ⲥⲱⲩϩ ⲁⲡⲧⲱϩⲙⲉ ⲡⲧⲱϩⲙⲉ ϩⲱⲱϥ",
+      "core_coptic": "{6}ⲉ ⲡⲟⲩⲱϣⲃⲉ ⲥⲱⲩϩ ⲁⲡⲧⲱϩⲙⲉ ⲡⲧⲱϩⲙⲉ ϩⲱⲱϥ",
       "core_english": "and the Answer is gathered to the Call; the Call itself",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲛⲧ",
+          "english": "of",
+          "basis": "ⲛ̄ⲧⲉ genitive linker, lost letters reconstructed from continuation.",
+          "source_id": 7,
+          "section": 4336
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Answer→Call. The Call/Answer pair is core Manichaean cosmological apparatus."
     },
@@ -92,8 +176,20 @@
       "chapter": 71,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{13}ⲛⲟⲩⲥ ⲉⲧⲥⲁⲧϥ̄ ⲉⲧⲉ ⲡⲛⲟⲉⲣⲟⲛ ⲡⲉ ⲡⲛⲟⲉⲣⲟⲛ ϣⲁ",
-      "core_english": "{14} chosen Mind, which is the Noeric; the Noeric to",
+      "core_coptic": "{7}ⲛⲟⲩⲥ ⲉⲧⲥⲁⲧϥ̄ ⲉⲧⲉ ⲡⲛⲟⲉⲣⲟⲛ ⲡⲉ ⲡⲛⲟⲉⲣⲟⲛ ϣⲁ",
+      "core_english": "{7} chosen Mind, which is the Noeric; the Noeric to",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲁⲡ",
+          "english": "to the",
+          "basis": "Standard ⲁ-ⲡ directional preposition + article, completing 'gathered to'.",
+          "source_id": 8,
+          "section": 4337
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Call→chosen Mind/Noeric. Cosmic faculty mapping."
     },
@@ -102,8 +198,30 @@
       "chapter": 71,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{15}ⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ {16}ⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ ϣⲁ ⲡϣⲁⲣⲡ ⲛ̄",
-      "core_english": "{17}llar of Glory; {18}llar of Glory to the First",
+      "core_coptic": "{8}ⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ {9}ⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ ϣⲁ ⲡϣⲁⲣⲡ ⲛ̄",
+      "core_english": "{8}llar of Glory; {9}llar of Glory to the First",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲡⲥ",
+          "english": "the Pi-",
+          "basis": "ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ 'the Pillar of Glory' — standard Manichaean technical term.",
+          "source_id": 9,
+          "section": 4338
+        },
+        {
+          "id": 9,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲡⲥ",
+          "english": "the Pi-",
+          "basis": "Repeated ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ 'the Pillar of Glory'.",
+          "source_id": 10,
+          "section": 4338
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pillar of Glory (ⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ) — classic cosmic structure marker; chain continues to First Man."
     },
@@ -112,8 +230,20 @@
       "chapter": 71,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{19}ⲱⲙⲉ ⲡⲣⲱⲙⲉ ϣⲁ ⲡⲡⲣⲉⲃⲉⲩⲧⲏⲥ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
-      "core_english": "{20}n; the Man to the Ambassador; the Ambassador",
+      "core_coptic": "{10}ⲱⲙⲉ ⲡⲣⲱⲙⲉ ϣⲁ ⲡⲡⲣⲉⲃⲉⲩⲧⲏⲥ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "core_english": "{10}n; the Man to the Ambassador; the Ambassador",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "Ma-",
+          "basis": "ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man,' standard Manichaean cosmogonic figure (in glossary as ⲡⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ).",
+          "source_id": 11,
+          "section": 4339
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man→Ambassador (ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ, the Third Messenger). Cosmic figure listed in marker vocabulary."
     },
@@ -122,8 +252,20 @@
       "chapter": 71,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{21}ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ̄ ⲥⲉⲥⲁⲩϩ ⲁϩⲟⲩⲛ ⲙ̄ⲡⲓⲣⲏⲧⲉ",
-      "core_english": "to the {22}eons of the Greatness — they are gathered together in this manner.",
+      "core_coptic": "{11}ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ̄ ⲥⲉⲥⲁⲩϩ ⲁϩⲟⲩⲛ ⲙ̄ⲡⲓⲣⲏⲧⲉ",
+      "core_english": "to the {11}eons of the Greatness — they are gathered together in this manner.",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "the A-",
+          "basis": "ⲁⲛⲁⲓⲱⲛ 'Aeons' — restoring the initial alpha. Note: transcription shows '[ⲁ]ⲛⲁ]ⲱⲛ' with stray bracket; read as ⲁⲛⲁⲓⲱⲛ.",
+          "source_id": 12,
+          "section": 4340
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Aeons of the Greatness — terminus of the ascending chain. Closing summary of the gathering."
     },
@@ -132,8 +274,20 @@
       "chapter": 71,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{23}ⲛⲁⲥⲱⲩϩ ⲇⲉ ⲛⲟⲩⲥⲁⲡ ⲛⲟⲩⲱⲧ ⲛ̄ⲥⲉⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ⲁⲡ",
-      "core_english": "And {24} gather at one and the same time, and they shall go up to the",
+      "core_coptic": "{12}ⲛⲁⲥⲱⲩϩ ⲇⲉ ⲛⲟⲩⲥⲁⲡ ⲛⲟⲩⲱⲧ ⲛ̄ⲥⲉⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ⲁⲡ",
+      "core_english": "And {12} gather at one and the same time, and they shall go up to the",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "they shall",
+          "basis": "ⲉⲩⲛⲁⲥⲱⲩϩ 'they shall gather' — restoring future tense circumstantial converter.",
+          "source_id": 13,
+          "section": 4341
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eschatological completion of the gathering — they ascend together. Still cosmic process language."
     },
@@ -142,8 +296,20 @@
       "chapter": 71,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{25}ⲁⲛⲧⲡⲉ ⲁⲡⲙⲁⲛⲙ̄ⲧⲁⲛ ϣⲁ ⲁⲛⲏϩⲉ ⲛⲁⲛⲏϩⲉ",
-      "core_english": "{26}pper place, to the place of rest, forever and ever.",
+      "core_coptic": "{13}ⲁⲛⲧⲡⲉ ⲁⲡⲙⲁⲛⲙ̄ⲧⲁⲛ ϣⲁ ⲁⲛⲏϩⲉ ⲛⲁⲛⲏϩⲉ",
+      "core_english": "{13}pper place, to the place of rest, forever and ever.",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "the up-",
+          "basis": "ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' (in glossary). Standard cosmological term.",
+          "source_id": 14,
+          "section": 4342
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Place of rest — cosmic destination. The 'forever and ever' formula could be liturgical but here closes a cosmic process description, not an exhortation."
     }

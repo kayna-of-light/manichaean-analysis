@@ -5,7 +5,7 @@
   "start_section": 3759,
   "end_section": 3800,
   "total_sections": 42,
-  "total_lacunae": 76,
+  "total_lacunae": 38,
   "segments": [
     {
       "section": 3759,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲧⲁϩⲱⲱⲡⲉ ϩⲙ̄ ⲡⲓⲱⲁⲣⲡ ⲛ̄ⲕⲁⲓⲣⲟⲥ",
       "core_english": "which came into being in the first appointed time.",
+      "apparatus": [],
       "removed_material": "None - this fragment specifies the cosmological topic (the first appointed time)",
       "temporal_note": "Topic-specifying clause that announces the substrate teaching"
     },
@@ -23,7 +24,19 @@
       "line": 36,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲡⲥⲏⲩ ⲉⲧⲁ ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲣ̄ⲫⲟⲣⲉ ⲛ̄ⲛⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲁϩⲧⲱⲕ",
-      "core_english": "{1}the time when the First Man bore the elements, he stood",
+      "core_english": "{0}the time when the First Man bore the elements, he stood",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ϩⲙ",
+          "english": "In",
+          "basis": "Editor's restoration of preposition [ϩⲙ̄] before ⲡⲥⲏⲩ 'the time'; standard temporal idiom 'in the time when'",
+          "source_id": 20,
+          "section": 3760
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man bearing elements - core Manichaean primordial cosmology, substrate"
     },
@@ -32,8 +45,20 @@
       "chapter": 61,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲣⲉⲧϥ̄ ⲟⲩⲃⲉ ⲧⲱⲁⲣⲡ ⲓ̈ⲙⲙⲛⲧⲭⲁⲭⲉ ⲉⲧⲁⲥⲱⲱⲡⲉ ϩⲙ ⲡⲕⲉⲕⲉ",
-      "core_english": "fast on his {3}feet against the first Enmity which came to be in the Darkness",
+      "core_coptic": "{1}ⲣⲉⲧϥ̄ ⲟⲩⲃⲉ ⲧⲱⲁⲣⲡ ⲓ̈ⲙⲙⲛⲧⲭⲁⲭⲉ ⲉⲧⲁⲥⲱⲱⲡⲉ ϩⲙ ⲡⲕⲉⲕⲉ",
+      "core_english": "fast on his {1}feet against the first Enmity which came to be in the Darkness",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Editor's restoration completing [ⲁ]ⲣⲉⲧϥ̄ in idiom ⲧⲱⲕ ⲁⲣⲉⲧ⸗ 'stand fast' (in glossary)",
+          "source_id": 21,
+          "section": 3761
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man vs First Enmity in Darkness - foundational cosmological mapping"
     },
@@ -42,8 +67,20 @@
       "chapter": 61,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4}ⲱ ⲁϩⲁϩⲉ ⲁⲣⲉⲧϩ ⲟⲩⲃⲉ ⲛⲓⲛⲁⲟ ⲛ̄ⲁⲣⲭⲱⲛ ⲛ̄ⲭⲱⲣⲉ ⲛⲉⲧ",
-      "core_english": "{5} he stood fast against the great Archons, the strong, those",
+      "core_coptic": "{2}ⲱ ⲁϩⲁϩⲉ ⲁⲣⲉⲧϩ ⲟⲩⲃⲉ ⲛⲓⲛⲁⲟ ⲛ̄ⲁⲣⲭⲱⲛ ⲛ̄ⲭⲱⲣⲉ ⲛⲉⲧ",
+      "core_english": "{2} he stood fast against the great Archons, the strong, those",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲁⲩ",
+          "english": "and",
+          "basis": "Editor's restoration completing [ⲁⲩ]ⲱ 'and'; standard conjunction",
+          "source_id": 22,
+          "section": 3762
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Stood against great Archons - cosmological"
     },
@@ -54,6 +91,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟ ⲛⲁⲧⲱⲓ ⲏⲡⲥ ⲉⲩⲟⲩⲁⲱⲥ̄ ⲁⲧⲟⲩⲉⲱⲥ ⲛ̄ⲧⲟⲁⲧ ⲛ̄ϩⲛ̄ⲱ ⲱⲟ",
       "core_english": "who are uncountable, while desiring to crush hosts of thousands and thousands",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuing cosmic confrontation"
     },
@@ -64,6 +102,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲛ ϩⲛ̄ⲧⲃⲁ ⲧⲃⲁ ⲛ̄ⲱⲃⲱⲱⲥ ⲛ̄ⲧⲁⲣⲭⲏ ⲉⲧⲁϩⲥⲱⲣ ⲡⲙⲗⲁϩ ⲁ",
       "core_english": "and myriads of myriads of primordial-ones of the beginning, who had spread the strife",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Primordial-ones spreading strife - cosmogonic substrate"
     },
@@ -72,8 +111,20 @@
       "chapter": 61,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6}ⲗ ⲛⲉⲙⲉⲩ ⲁϩ+ ⲛⲉⲩ ⲧⲥⲉⲧⲉ ⲙ̄ⲛ ⲡⲧⲏⲩ ⲙⲛ̄ⲛⲥⲱⲩ ⲁϩ+",
-      "core_english": "{7}forth among them. They gave them the fire and the wind. After this they gave",
+      "core_coptic": "{3}ⲗ ⲛⲉⲙⲉⲩ ⲁϩ+ ⲛⲉⲩ ⲧⲥⲉⲧⲉ ⲙ̄ⲛ ⲡⲧⲏⲩ ⲙⲛ̄ⲛⲥⲱⲩ ⲁϩ+",
+      "core_english": "{3}forth among them. They gave them the fire and the wind. After this they gave",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲃⲁ",
+          "english": "",
+          "basis": "Editor's restoration: [ⲃⲁ]ⲗ completes the directional ⲁⲃⲁⲗ 'forth' from preceding ⲥⲱⲣ ⲁ-/ⲁⲃⲁⲗ 'spread forth'",
+          "source_id": 23,
+          "section": 3765
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fire and wind given - elemental cosmology"
     },
@@ -82,8 +133,20 @@
       "chapter": 61,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲃⲥⲱ ⲛ̄ⲓ̈ⲙⲙⲟⲩⲓ̈ⲉⲩⲉ ⲛ̄ⲛⲁⲣⲭⲱⲛ ⲓ̈ⲙⲡⲙⲟⲩ ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ",
-      "core_english": "the {9}garment of the lions to the archons of death; and they themselves,",
+      "core_coptic": "{4}ⲃⲥⲱ ⲛ̄ⲓ̈ⲙⲙⲟⲩⲓ̈ⲉⲩⲉ ⲛ̄ⲛⲁⲣⲭⲱⲛ ⲓ̈ⲙⲡⲙⲟⲩ ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ",
+      "core_english": "the {4}garment of the lions to the archons of death; and they themselves,",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲫ",
+          "english": "",
+          "basis": "Editor's restoration completing [ⲫ]ⲃⲥⲱ = ϩⲃⲥⲱ 'garment' (in glossary as ⲍⲃⲥⲱ); ⲫ for ϩ Lyc orthography",
+          "source_id": 24,
+          "section": 3766
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Garment of lions given to archons of death - the chapter's central cosmological motif"
     },
@@ -94,6 +157,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲣⲭⲱⲛ ⲁⲩⲥⲱϩⲡ ⲁⲩⲱⲙⲕ̄ ⲛ̄ⲛⲓⲙⲟⲩⲓ̈ⲉⲩⲉ ⲉⲧⲓ̈ⲙⲉⲩ ⲛ̄",
       "core_english": "the archons, lurked and swallowed the lions there in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Archons swallowing lions - substrate cosmology"
     },
@@ -102,8 +166,20 @@
       "chapter": 61,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲉⲛⲁⲱⲱⲟⲩ ⲱⲟⲩⲟ ⲁⲃⲁⲗ ⲛⲧϩⲃ̄ⲥⲱ ⲛ̄ⲓ̈ⲙⲙⲟⲩⲓ̈ⲉⲩⲉ",
-      "core_english": "{11} which were many, poured forth from the garment of the lions",
+      "core_coptic": "{5} ⲉⲛⲁⲱⲱⲟⲩ ⲱⲟⲩⲟ ⲁⲃⲁⲗ ⲛⲧϩⲃ̄ⲥⲱ ⲛ̄ⲓ̈ⲙⲙⲟⲩⲓ̈ⲉⲩⲉ",
+      "core_english": "{5} which were many, poured forth from the garment of the lions",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲁ ϩⲛⲙⲟⲩⲓ̈ⲉⲩⲉ",
+          "english": "Many lions",
+          "basis": "Editor's restoration: perfect ⲁ + indefinite plural ϩⲛ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ as subject of ⲱⲟⲩⲟ ⲁⲃⲁⲗ 'pour forth'; modifier ⲉⲛⲁⲱⲱⲟⲩ 'many' immediately follows",
+          "source_id": 26,
+          "section": 3768
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological description of garment of lions"
     },
@@ -112,8 +188,18 @@
       "chapter": 61,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲓⲉⲣⲟ ⲉⲩⲱⲟⲩⲟ ⲧⲧⲁⲡⲣⲟ ⲛⲛⲁⲣⲭⲱⲛ",
-      "core_english": "{13} river, pouring forth (from) the mouth of the archons",
+      "core_coptic": "{6}ⲓⲉⲣⲟ ⲉⲩⲱⲟⲩⲟ ⲧⲧⲁⲡⲣⲟ ⲛⲛⲁⲣⲭⲱⲛ",
+      "core_english": "{6} river, pouring forth (from) the mouth of the archons",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 46,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 27,
+          "section": 3769
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological river/archons"
     },
@@ -122,8 +208,19 @@
       "chapter": 61,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲉⲧⲙⲙⲉⲩ ⲛ̄ⲟⲁⲗⲁⲱⲓⲣⲉ ⲙⲡⲧⲉⲕⲟ",
-      "core_english": "{15} there as bearers of destruction",
+      "core_coptic": "{7} ⲉⲧⲙⲙⲉⲩ ⲛ̄ⲟⲁⲗⲁⲱⲓⲣⲉ ⲙⲡⲧⲉⲕⲟ",
+      "core_english": "{7} there as bearers of destruction",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 47,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "...",
+          "source_id": 28,
+          "section": 3770
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Bearers of destruction - cosmological"
     },
@@ -132,8 +229,20 @@
       "chapter": 61,
       "line": 48,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲛⲉⲕⲉ ⲙⲙⲁⲩ ⲁϩⲭⲡⲁⲩ ⲛⲉⲣⲉ ⲥⲁⲱϩ",
-      "core_english": "{17} others there, he begot them; (they) were gathered...",
+      "core_coptic": "{8}ⲛⲉⲕⲉ ⲙⲙⲁⲩ ⲁϩⲭⲡⲁⲩ ⲛⲉⲣⲉ ⲥⲁⲱϩ",
+      "core_english": "{8} others there, he begot them; (they) were gathered...",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 48,
+          "type": "restoration",
+          "coptic": "ⲁϩ+",
+          "english": "he gave",
+          "basis": "Editor's restoration: ⲁϥ-ϯ 'he gave' before object ⲛⲉⲕⲉ 'others'; preceded by lacuna of ~8 chars",
+          "source_id": 29,
+          "section": 3771
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmogonic begetting/gathering, fragmentary"
     },
@@ -142,8 +251,30 @@
       "chapter": 61,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲛ̄ⲧⲟⲁⲧ ⲙ̄ⲡⲛⲁⲟ ⲛ̄ⲗⲉⲣⲟ ⲛ̄ⲧⲓⲕⲣⲓⲥ {18}ⲛ̄ⲛⲉⲩ ⲁⲣⲁ{19}",
-      "core_english": "It is the branch of the great river of Judgment {20} saw at {21}",
+      "core_coptic": "ⲡⲉ ⲛ̄ⲧⲟⲁⲧ ⲙ̄ⲡⲛⲁⲟ ⲛ̄ⲗⲉⲣⲟ ⲛ̄ⲧⲓⲕⲣⲓⲥ {9}ⲛ̄ⲛⲉⲩ ⲁⲣⲁ{10}",
+      "core_english": "It is the branch of the great river of Judgment {9} saw at {10}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲉⲧ",
+          "english": "[that] you",
+          "basis": "ⲉⲧⲉⲧⲛ̄ⲛⲉⲩ — relative imperfect 2pl 'that you saw,' standard form completing ⲛ̄ⲛⲉⲩ",
+          "source_id": 30,
+          "section": 3772
+        },
+        {
+          "id": 10,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "[it]",
+          "basis": "ⲁⲣⲁϥ ('to it/him'), 3sg masc suffix on directional preposition",
+          "source_id": 31,
+          "section": 3772
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Branch of great river of Judgment - cosmological mapping (Tigris as branch of cosmic river)"
     },
@@ -154,6 +285,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲟⲩⲟ ⲁϩⲣⲏ̄ ⲁⲧⲧⲁⲡⲣⲟ ⲙ̄ⲡⲧⲟⲩⲉ ⲡⲧⲟⲩⲉ ⲙ̄ⲙⲁⲩ ⲉⲙⲁⲩⲧⲉ",
       "core_english": "pouring down to the mouth of each one there exceedingly,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuing cosmic-river description"
     },
@@ -162,8 +294,19 @@
       "chapter": 61,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22} ⲁⲩⲙⲉϩⲧ ⲛ̄ⲟⲩⲱⲧ ⲁⲧⲟⲩⲙⲁϩⲏ ⲉⲡⲉⲓⲁⲏ",
-      "core_english": "{23} they were filled together unto their being filled, since",
+      "core_coptic": "{11} ⲁⲩⲙⲉϩⲧ ⲛ̄ⲟⲩⲱⲧ ⲁⲧⲟⲩⲙⲁϩⲏ ⲉⲡⲉⲓⲁⲏ",
+      "core_english": "{11} they were filled together unto their being filled, since",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 51,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "ⲉ . ⲉ",
+          "source_id": 32,
+          "section": 3774
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological filling, fragmentary"
     },
@@ -174,6 +317,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲛⲁ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲥⲁⲡ ⲁⲡⲉϩⲙⲉϩⲧ̄ ϣⲁϩⲣⲁⲭϩⲟⲩ ϩⲛ̄ ⲧⲉϩ",
       "core_english": "the manner downward, until the time, until his filling — they continually burn them in their",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuing cosmic-fire description"
     },
@@ -184,6 +328,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲧⲉ ⲙⲛ̄ ⲡⲉϩⲣⲱⲭϩ̄· ⲛⲓⲁⲣⲭⲱⲛ ⲉⲧⲙ̄ⲙⲉⲩ ⲛⲉⲩⲟ ⲡⲉ ⲛ̄ⲧϩⲉ",
       "core_english": "fire and his burning. Those archons were after the manner",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Archons in fire - substrate"
     },
@@ -192,8 +337,28 @@
       "chapter": 61,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲛ̄ⲟⲁⲓ̈ϣⲉ ⲛ̄{24}ⲙ· ⲛⲉⲩϣⲟⲩⲱⲩ ⲉⲙⲡⲧⲉ {25}ⲟⲩⲛ̄ϩⲱⲟⲩ ϩⲓ",
-      "core_english": "of the seasons of {26} ; their dryness was without {27}downpours and",
+      "core_coptic": "ⲛ̄ⲛ̄ⲟⲁⲓ̈ϣⲉ ⲛ̄{12}ⲙ· ⲛⲉⲩϣⲟⲩⲱⲩ ⲉⲙⲡⲧⲉ {13}ⲟⲩⲛ̄ϩⲱⲟⲩ ϩⲓ",
+      "core_english": "of the seasons of {12} ; their dryness was without {13}downpours and",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 54,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 33,
+          "section": 3777
+        },
+        {
+          "id": 13,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "down-",
+          "basis": "[ⲙ]ⲟⲩⲛ̄ϩⲱⲟⲩ — restoration of initial ⲙ for ⲙⲟⲩⲛ̄ϩⲱⲟⲩ 'downpour'",
+          "source_id": 34,
+          "section": 3777
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seasons/dryness in cosmological geography"
     },
@@ -202,8 +367,18 @@
       "chapter": 61,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28} ⲛ̄ⲛⲟⲩϩⲟⲟⲩⲉ ⲛ̄ϣⲱⲡⲉ",
-      "core_english": "{29} of their days of being.",
+      "core_coptic": "{14} ⲛ̄ⲛⲟⲩϩⲟⲟⲩⲉ ⲛ̄ϣⲱⲡⲉ",
+      "core_english": "{14} of their days of being.",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 55,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 35,
+          "section": 3778
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Days of being - fragmentary cosmological"
     },
@@ -214,6 +389,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲛⲉⲣⲉ ⲧⲟⲁⲧ",
       "core_english": "'The branch",
+      "apparatus": [],
       "removed_material": "'the apostle to that elect one' - dialogue attribution + ecclesial term 'elect'",
       "temporal_note": "Frame attribution to elect-disciple stripped; teaching about 'the branch [of the river]' is substrate"
     },
@@ -222,8 +398,28 @@
       "chapter": 61,
       "line": 57,
       "classification": "cosmological_substrate",
-      "core_coptic": "{30}ⲓ̈ⲉⲣⲟ ⲉⲧⲙ̄ⲙⲉⲩ ϣⲏⲛ ⲁⲃⲁⲗ· ⲛ̄ⲥⲁⲱϩ ⲛ̄ⲥⲁⲡ ⲉⲩϩⲉ†ⲉ ⲉ{31}",
-      "core_english": "{32} that river extends forth; many are the times that they fall to {33}",
+      "core_coptic": "{15}ⲓ̈ⲉⲣⲟ ⲉⲧⲙ̄ⲙⲉⲩ ϣⲏⲛ ⲁⲃⲁⲗ· ⲛ̄ⲥⲁⲱϩ ⲛ̄ⲥⲁⲡ ⲉⲩϩⲉ†ⲉ ⲉ{16}",
+      "core_english": "{15} that river extends forth; many are the times that they fall to {16}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 57,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡ",
+          "english": "of",
+          "basis": "[ⲙⲡ]ⲓ̈ⲉⲣⲟ 'of that river' — genitive completing ⲧⲟⲁⲧ from previous line",
+          "source_id": 38,
+          "section": 3780
+        },
+        {
+          "id": 16,
+          "segment": 57,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 39,
+          "section": 3780
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic river description"
     },
@@ -232,8 +428,35 @@
       "chapter": 61,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34} ⲙ̄ⲡⲥⲱⲙⲁ ⲛ̄ⲛ{35} ⲛ̄{36}ⲱⲛ ⲁⲃⲁⲗ",
-      "core_english": "{37} of the body of the {38} {39} forth",
+      "core_coptic": "{17} ⲙ̄ⲡⲥⲱⲙⲁ ⲛ̄ⲛ{18} ⲛ̄{19}ⲱⲛ ⲁⲃⲁⲗ",
+      "core_english": "{17} of the body of the {18} {19} forth",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 58,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 40,
+          "section": 3781
+        },
+        {
+          "id": 18,
+          "segment": 58,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 41,
+          "section": 3781
+        },
+        {
+          "id": 19,
+          "segment": 58,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲱⲛ",
+          "source_id": 42,
+          "section": 3781
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Body cosmology, fragmentary"
     },
@@ -242,8 +465,26 @@
       "chapter": 61,
       "line": 59,
       "classification": "cosmological_substrate",
-      "core_coptic": "{40} ⲙ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ {41} ⲉⲉⲧ †ⲛⲟⲩ",
-      "core_english": "{42} the lions {43} ... now",
+      "core_coptic": "{20} ⲙ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ {21} ⲉⲉⲧ †ⲛⲟⲩ",
+      "core_english": "{20} the lions {21} ... now",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 43,
+          "section": 3782
+        },
+        {
+          "id": 21,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 44,
+          "section": 3782
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Lions reference, fragmentary"
     },
@@ -252,8 +493,36 @@
       "chapter": 61,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ⲉⲧⲙ̄ⲙⲉⲩ ⲧⲉ ⲧϣⲁⲣⲡ {45} ⲧⲉⲧⲁⲥϣⲱⲡⲉ ϩ{46} ⲡⲓ",
-      "core_english": "{47} there is the first {48} which came to be in {49} this",
+      "core_coptic": "{22} ⲉⲧⲙ̄ⲙⲉⲩ ⲧⲉ ⲧϣⲁⲣⲡ {23} ⲧⲉⲧⲁⲥϣⲱⲡⲉ ϩ{24} ⲡⲓ",
+      "core_english": "{22} there is the first {23} which came to be in {24} this",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 64,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 52,
+          "section": 3783
+        },
+        {
+          "id": 23,
+          "segment": 64,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 53,
+          "section": 3783
+        },
+        {
+          "id": 24,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "in",
+          "basis": "ϩ[ⲙ] — restoration of ⲙ for preposition ϩⲙ̄ 'in'",
+          "source_id": 54,
+          "section": 3783
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'the first... which came to be' - cosmogonic, substrate"
     },
@@ -262,8 +531,29 @@
       "chapter": 61,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{50} ⲛ̄ⲛⲓⲭⲡⲟ ⲛ̄ⲧⲉ ⲡⲧⲉⲕⲟ {51}ⲓⲅⲁⲥ ⲛ̄ⲭⲱⲣⲉ· ⲉⲓⲥ",
-      "core_english": "{52} of the offspring of the prison, the mighty {53}boundary. Behold,",
+      "core_coptic": "{25} ⲛ̄ⲛⲓⲭⲡⲟ ⲛ̄ⲧⲉ ⲡⲧⲉⲕⲟ {26}ⲓⲅⲁⲥ ⲛ̄ⲭⲱⲣⲉ· ⲉⲓⲥ",
+      "core_english": "{25} of the offspring of the prison, the mighty {26}boundary. Behold,",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "ⲉϩⲁ",
+          "source_id": 57,
+          "section": 3784
+        },
+        {
+          "id": 26,
+          "segment": 66,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲣ",
+          "english": "of the",
+          "basis": "ⲛ̄ⲣ]ⲓⲅⲁⲥ — restored ⲛ̄ⲣ giving ⲛ̄ⲣⲓⲅⲁⲥ (= ⲡⲣⲓⲣⲁⲥ Greek πέρας 'boundary')",
+          "source_id": 58,
+          "section": 3784
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Offspring of the prison, mighty boundary - cosmological"
     },
@@ -274,6 +564,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲥⲉⲭⲁⲗⲭ ⲥⲉⲙⲏⲣ· ⲥⲉⲕⲙⲕⲁⲙⲧ̄ ⲥⲉⲧⲁⲙⲥ̄· ⲕⲁⲧⲁ ⲙⲁ ⲙⲁ",
       "core_english": "they are bound, they are fettered, they are blackened, they are buried, in each and every place;",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Bound/fettered/blackened/buried - description of archonic state in cosmic prison"
     },
@@ -284,6 +575,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉϩⲏⲡ ⲥⲉⲟⲩⲁⲛϩ ⲁⲃⲁⲗ ⲉⲛ ⲛⲁϩⲣⲛ̄ ⲛ̄ⲃⲉⲗ ⲛ̄ⲥⲁⲣⲝ̄ ⲛⲓⲙ ⲉⲧ",
       "core_english": "they are hidden, they are not made manifest before the eye of any flesh that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Hidden archons unseen by flesh - cosmological"
     },
@@ -292,8 +584,19 @@
       "chapter": 61,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲟⲟⲡ ⲁⲭⲙ ⲡⲕⲁϩ ⲙ̄ⲡⲙⲟⲩ {54} ⲛⲓⲁⲣⲭⲱⲛ ⲉ",
-      "core_english": "exists upon the land of Death. {55} those archons who",
+      "core_coptic": "ϣⲟⲟⲡ ⲁⲭⲙ ⲡⲕⲁϩ ⲙ̄ⲡⲙⲟⲩ {27} ⲛⲓⲁⲣⲭⲱⲛ ⲉ",
+      "core_english": "exists upon the land of Death. {27} those archons who",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 69,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "ⲣ",
+          "source_id": 59,
+          "section": 3787
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Land of Death and archons - cosmological"
     },
@@ -302,8 +605,18 @@
       "chapter": 61,
       "line": 70,
       "classification": "cosmological_substrate",
-      "core_coptic": "{56} ⲉⲧⲟⲩⲱⲛϩ ⲁⲃⲁⲗ· ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲛⲁⲧⲉⲕⲟ",
-      "core_english": "{57} are made manifest. The whole cosmos of the flesh shall be destroyed",
+      "core_coptic": "{28} ⲉⲧⲟⲩⲱⲛϩ ⲁⲃⲁⲗ· ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲛⲁⲧⲉⲕⲟ",
+      "core_english": "{28} are made manifest. The whole cosmos of the flesh shall be destroyed",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 70,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 60,
+          "section": 3788
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Whole cosmos of flesh destroyed - eschatological cosmology"
     },
@@ -312,8 +625,26 @@
       "chapter": 61,
       "line": 71,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ϩ̄ⲃⲱⲗ ⲁⲃⲁⲗ {58} ⲧⲏⲣⲟⲩ ⲥⲉⲱⲭⲛⲉ ⲛ̄{59} ⲟⲩϩⲁⲉ ⲣ̄",
-      "core_english": "and shall be released; {60} all of them shall cease {61} a last",
+      "core_coptic": "ⲛ̄ϩ̄ⲃⲱⲗ ⲁⲃⲁⲗ {29} ⲧⲏⲣⲟⲩ ⲥⲉⲱⲭⲛⲉ ⲛ̄{30} ⲟⲩϩⲁⲉ ⲣ̄",
+      "core_english": "and shall be released; {29} all of them shall cease {30} a last",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 71,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 61,
+          "section": 3789
+        },
+        {
+          "id": 30,
+          "segment": 71,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 62,
+          "section": 3789
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Release at the end - eschatological cosmology"
     },
@@ -322,8 +653,18 @@
       "chapter": 61,
       "line": 72,
       "classification": "cosmological_substrate",
-      "core_coptic": "{62} ⲥⲉⲛⲁϣⲧⲁⲣⲧⲣ̄ ϩⲙ̄ ⲡⲉⲩϩⲣⲁⲩ ⲉⲧⲟ ⲛ̄ⲃⲗⲕⲉ· ⲡⲉⲧⲟⲩⲁⲧⲃⲉ",
-      "core_english": "{63} they shall be troubled in their voice that is in wrath — the one which is exalted",
+      "core_coptic": "{31} ⲥⲉⲛⲁϣⲧⲁⲣⲧⲣ̄ ϩⲙ̄ ⲡⲉⲩϩⲣⲁⲩ ⲉⲧⲟ ⲛ̄ⲃⲗⲕⲉ· ⲡⲉⲧⲟⲩⲁⲧⲃⲉ",
+      "core_english": "{31} they shall be troubled in their voice that is in wrath — the one which is exalted",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 72,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 63,
+          "section": 3790
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Voice in wrath, eschatological"
     },
@@ -332,8 +673,18 @@
       "chapter": 61,
       "line": 73,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲁⲣⲁ ⲛ̄ϩⲣⲟⲩⲙ̄ⲡⲉ· ⲉⲣⲉ ⲡⲓⲕⲟⲩⲓ †ⲛⲟⲩ ⲛⲓⲉⲣⲟ ⲏⲡ ⲛ̄{64}",
-      "core_english": "above the thunders, while this little (one) now — the rivers being reckoned to {65}",
+      "core_coptic": "ⲡⲁⲣⲁ ⲛ̄ϩⲣⲟⲩⲙ̄ⲡⲉ· ⲉⲣⲉ ⲡⲓⲕⲟⲩⲓ †ⲛⲟⲩ ⲛⲓⲉⲣⲟ ⲏⲡ ⲛ̄{32}",
+      "core_english": "above the thunders, while this little (one) now — the rivers being reckoned to {32}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 73,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 64,
+          "section": 3791
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Thunders/rivers cosmic-correspondence: Tigris as small reflection of greater cosmic river"
     },
@@ -344,6 +695,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲛ̄ⲛⲓⲙⲟⲩⲓ̈ⲉⲩⲉ",
       "core_english": "the foundation of these lions",
+      "apparatus": [],
       "removed_material": "'before' positional clause and 'which I have proclaimed unto you' - first-person teaching attribution",
       "temporal_note": "Substrate noun phrase preserved; first-person proclamation frame stripped"
     },
@@ -354,6 +706,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲓ̈ⲉⲣⲟ ⲅⲁⲣ ⲛ̄ⲟⲩⲱⲧ ϩⲛ̄ ϣⲟ ⲛ̄ⲗⲉⲣⲟ ⲙ̄ⲙⲁⲩ ϩⲛ ⲛⲉⲧϩⲏⲡ",
       "core_english": "For one river out of a thousand rivers there in the hidden ones,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "One of a thousand cosmic rivers - cosmological correspondence"
     },
@@ -362,8 +715,20 @@
       "chapter": 61,
       "line": 76,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲟⲩⲁⲛϩ̄ ⲁⲃⲁⲗ ⲉⲛ· ⲡⲉ ⲡⲓⲉⲣⲟ ⲛ̄ⲧⲓⲕⲣⲓⲥ ⲉⲧϣⲟⲟⲡ ϩⲓⲭⲙ ⲡⲕⲁ{66}",
-      "core_english": "which is not made manifest, is this river of Judgment that exists upon the ear{67}",
+      "core_coptic": "ⲉⲧⲟⲩⲁⲛϩ̄ ⲁⲃⲁⲗ ⲉⲛ· ⲡⲉ ⲡⲓⲉⲣⲟ ⲛ̄ⲧⲓⲕⲣⲓⲥ ⲉⲧϣⲟⲟⲡ ϩⲓⲭⲙ ⲡⲕⲁ{33}",
+      "core_english": "which is not made manifest, is this river of Judgment that exists upon the ear{33}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 76,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "th",
+          "basis": "ⲡⲕⲁ[ϩ] — restoration of ϩ for ⲡⲕⲁϩ 'the earth'",
+          "source_id": 65,
+          "section": 3794
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tigris-as-cosmic-river-of-Judgment correspondence - the chapter's structural mapping (cosmos→cosmos)"
     },
@@ -372,8 +737,19 @@
       "chapter": 61,
       "line": 77,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ̄ⲛⲉⲩ {68} ⲣⲱ ⲡⲏϣⲉ ⲛ̄ⲧⲟⲁⲧ ⲛ̄ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛⲙ̄ ⲙⲟⲩ",
-      "core_english": "behold, {69} indeed, the share of the branch of the elements, and the li-",
+      "core_coptic": "ⲁ̄ⲛⲉⲩ {34} ⲣⲱ ⲡⲏϣⲉ ⲛ̄ⲧⲟⲁⲧ ⲛ̄ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛⲙ̄ ⲙⲟⲩ",
+      "core_english": "behold, {34} indeed, the share of the branch of the elements, and the li-",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 77,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲛⲧⲉ",
+          "source_id": 66,
+          "section": 3795
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Share/branch of the elements - cosmological"
     },
@@ -384,6 +760,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲙ̄ⲡⲣⲱⲙⲉ ⲉⲧⲁϩⲣ̄ⲫⲟⲣⲉ ⲙ̄",
       "core_english": "the foundation of the man who has worn",
+      "apparatus": [],
       "removed_material": "'Marvel at' - hortatory imperative addressed to disciple",
       "temporal_note": "Substrate phrase preserved; hortatory address stripped"
     },
@@ -392,8 +769,20 @@
       "chapter": 61,
       "line": 79,
       "classification": "mixed",
-      "core_coptic": "ⲟⲩⲛⲁⲟ ⲛ̄ⲟⲩⲏⲣ ⲡⲉ ⲡⲓⲛⲟⲩⲧⲉ ⲉⲧ{70}",
-      "core_english": "'How great is that god {71}",
+      "core_coptic": "ⲟⲩⲛⲁⲟ ⲛ̄ⲟⲩⲏⲣ ⲡⲉ ⲡⲓⲛⲟⲩⲧⲉ ⲉⲧ{35}",
+      "core_english": "'How great is that god {35}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 79,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲙⲉⲩ",
+          "english": "there'",
+          "basis": "ⲉⲧ[ⲙ̄ⲙⲉⲩ] 'that one (there)' — standard demonstrative",
+          "source_id": 67,
+          "section": 3797
+        }
+      ],
       "removed_material": "'them, that you may know that' - second-person address frame",
       "temporal_note": "Substantive cosmological exclamation about the greatness of the god preserved"
     },
@@ -402,8 +791,18 @@
       "chapter": 61,
       "line": 80,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲓⲁϣⲓⲡⲉ ϩⲛ̄ ⲧⲟⲁⲙ ⲡⲉⲧⲉⲣⲉ ⲛⲓⲙⲟⲩⲓ̈ⲉⲩⲉ {72}",
-      "core_english": "this multitude in whose power are the lions {73}",
+      "core_coptic": "ⲡⲓⲁϣⲓⲡⲉ ϩⲛ̄ ⲧⲟⲁⲙ ⲡⲉⲧⲉⲣⲉ ⲛⲓⲙⲟⲩⲓ̈ⲉⲩⲉ {36}",
+      "core_english": "this multitude in whose power are the lions {36}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 80,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 68,
+          "section": 3798
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Multitude in whose power are the lions - cosmological"
     },
@@ -412,8 +811,18 @@
       "chapter": 61,
       "line": 81,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲣⲁ ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲙ̄ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉⲧ{74}",
-      "core_english": "unto the foundation of the First Man who {75}",
+      "core_coptic": "ⲁⲣⲁ ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲙ̄ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉⲧ{37}",
+      "core_english": "unto the foundation of the First Man who {37}",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 81,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 69,
+          "section": 3799
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Foundation of First Man - cosmological substrate"
     },
@@ -424,6 +833,7 @@
       "classification": "mixed",
       "core_coptic": "ϩϩⲃⲥⲱ ⲛ̄ϩⲃⲁⲧ",
       "core_english": "garments of silver",
+      "apparatus": [],
       "removed_material": "'and let them hope - how much is it? Then said' - dialogue/hortatory frame",
       "temporal_note": "Cosmological reference to garments of silver preserved; hope/exclamation/attribution removed"
     }

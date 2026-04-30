@@ -5,7 +5,7 @@
   "start_section": 3398,
   "end_section": 3568,
   "total_sections": 171,
-  "total_lacunae": 256,
+  "total_lacunae": 129,
   "segments": [
     {
       "section": 3398,
@@ -13,7 +13,29 @@
       "line": 3,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲟⲩϩⲉ ⲧⲏⲣⲟⲩ ⲉⲧⲉ ⲟⲩⲉ ⲛ̄ϩⲏ{1}ⲟⲩ ⲡⲉ ⲥⲁⲕⲗⲁⲥ ⲙⲛ̄ ⲧⲉϩ",
-      "core_english": "{2}ortions, all of them — one of {3}them is Saklas with his",
+      "core_english": "{0}ortions, all of them — one of {1}them is Saklas with his",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲭⲉ ⲛⲓϩ",
+          "english": "'These ab",
+          "basis": "Editor's restoration of dialogue-marker ⲭⲉ + demonstrative ⲛⲓϩⲟⲩϩⲉ 'these abortions'",
+          "source_id": 3,
+          "section": 3398
+        },
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "",
+          "basis": "Editor's restoration of ⲧ in ⲛ̄ϩⲏⲧⲟⲩ 'in them / among them'",
+          "source_id": 4,
+          "section": 3398
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Saklas naming — core substrate cosmology"
     },
@@ -22,8 +44,28 @@
       "chapter": 56,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲁⲓ̈ϣ ⲙⲛ̄ ⲛⲉⲧⲁⲩⲡⲱϣⲛⲉ ⲁ{4}{5}ⲉ ⲛ̄ⲧⲁⲩ ⲛⲉⲧⲁⲩⲡⲗⲁⲥ",
-      "core_english": "companion, with those who have plotted {6}{7} who are those who molded",
+      "core_coptic": "ⲥⲁⲓ̈ϣ ⲙⲛ̄ ⲛⲉⲧⲁⲩⲡⲱϣⲛⲉ ⲁ{2}{3}ⲉ ⲛ̄ⲧⲁⲩ ⲛⲉⲧⲁⲩⲡⲗⲁⲥ",
+      "core_english": "companion, with those who have plotted {2}{3} who are those who molded",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 5,
+          "section": 3399
+        },
+        {
+          "id": 3,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "who",
+          "basis": "Editor's restoration of relative pronoun ⲉⲧⲉ 'who, which'",
+          "source_id": 6,
+          "section": 3399
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Plotters/molders — substrate cosmology of archonic creation"
     },
@@ -34,6 +76,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ ⲛ̄ⲧⲁⲩ ⲟⲛ ⲧϩⲓⲕⲱⲛ ⲧϩⲓⲕⲱⲛ ⲧⲟ ⲉⲧⲛⲉⲥⲱⲥ",
       "core_english": "Adam and Eve, they themselves. The icon — the icon that is beautiful —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Icon of Ambassador motif"
     },
@@ -44,6 +87,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲕⲁⲁⲥ ⲁⲭⲙ̄ ⲡⲟⲩⲡⲗⲁⲥⲙⲁ ⲕⲁⲧⲁ ⲧⲁⲩⲧⲁ ⲡⲥⲏⲩ ⲉⲧⲁⲥⲟⲩ",
       "core_english": "they placed it upon their molding. According to these things, the time when she",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Molding narrative"
     },
@@ -54,6 +98,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱⲛϩ̄ ⲁⲃⲁⲗ ⲛ̄ⲛⲉⲩⲓ̈ⲁⲧⲉ — ⲛⲉⲩϣⲟⲟⲡ ⲡⲱ ⲉⲛ ⲡⲉ ⲙ̄ⲡⲟⲩⲛⲉⲩ ⲁ",
       "core_english": "manifested forth to their eyes — they were not yet, they had not seen",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continues the cosmogonic narrative"
     },
@@ -64,6 +109,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϩⲓⲕⲱⲛ ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲛⲏϩⲉ — ⲁⲩⲱ ⲛ̄ⲧⲁⲩⲃⲓ ⲙ̄",
       "core_english": "the icon of the Ambassador ever — and they took the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ — Third Messenger / Ambassador, key substrate marker"
     },
@@ -74,6 +120,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲧⲁⲃⲉϩ ⲧⲟ ⲛ̄ⲧϩⲓⲕⲱⲛ ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲧⲉⲉϩ ⲁ",
       "core_english": "imprint of the icon of the Ambassador, they applied (it) to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Imprint/icon transmission — substrate"
     },
@@ -82,8 +129,20 @@
       "chapter": 56,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲡⲗⲁⲥⲙⲁ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ",
-      "core_english": "{9}molding of Adam and Eve.",
+      "core_coptic": "{4}ⲡⲗⲁⲥⲙⲁ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ",
+      "core_english": "{4}molding of Adam and Eve.",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the ",
+          "basis": "Editor's restoration of definite article ⲡ- of ⲡⲡⲗⲁⲥⲙⲁ",
+          "source_id": 7,
+          "section": 3405
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes the icon-imprint sequence"
     },
@@ -94,6 +153,7 @@
       "classification": "mixed",
       "core_coptic": "ⲡⲛⲁⲃⲉ ⲉⲧⲁϩⲃⲁ",
       "core_english": "'Sin which has gushed",
+      "apparatus": [],
       "removed_material": "Stripped frame: '{8} the Illuminator to them in this manner: ' (apostolic dialogue attribution)",
       "temporal_note": "Frame attribution + start of teaching about Sin/Hyle"
     },
@@ -104,6 +164,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟϩ ⲁⲃⲁⲗ ϩⲛ̄ ⲛ̄ⲁⲣⲭⲱⲛ ⲉⲧⲉ ⲧⲟⲩⲗⲏ ⲧⲉ ⲁⲥⲡⲱⲧ ⲁϩⲣⲏⲓ̈",
       "core_english": "forth from the archons — who is Hyle — ran upward",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Hyle identification — substrate cosmogony"
     },
@@ -112,8 +173,20 @@
       "chapter": 56,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲃⲉ ⲧϩⲓⲕⲱⲛ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩϣⲁⲁⲧⲥ ⲭⲛ̄ ⲙ̄ⲡⲙⲁ",
-      "core_english": "{11}the icon of the Ambassador. They cut her off from the place",
+      "core_coptic": "{5}ⲃⲉ ⲧϩⲓⲕⲱⲛ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩϣⲁⲁⲧⲥ ⲭⲛ̄ ⲙ̄ⲡⲙⲁ",
+      "core_english": "{5}the icon of the Ambassador. They cut her off from the place",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "against",
+          "basis": "Editor's restoration of preposition ⲟⲩⲃⲉ 'against'",
+          "source_id": 9,
+          "section": 3408
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -122,8 +195,20 @@
       "chapter": 56,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲉⲩ ⲁⲥⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁϩ ⲉⲡⲉⲓⲇⲏ ⲙ̄ⲡⲟⲩϣⲱⲡ",
-      "core_english": "{13}. She came down to the earth, since they did not receive",
+      "core_coptic": "{6}ⲉⲩ ⲁⲥⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁϩ ⲉⲡⲉⲓⲇⲏ ⲙ̄ⲡⲟⲩϣⲱⲡ",
+      "core_english": "{6}. She came down to the earth, since they did not receive",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙⲙ",
+          "english": "that very (place)",
+          "basis": "Editor's restoration of demonstrative ⲉⲧⲙ̄ⲙⲉⲩ 'that very (one)' — referring back to ⲡⲙⲁ 'the place'",
+          "source_id": 10,
+          "section": 3409
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -132,8 +217,20 @@
       "chapter": 56,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14}ϩⲟⲩⲛ ϩⲛ̄ ⲛ̄ⲥⲧⲉⲣⲉⲱⲙⲁ ⲡⲥⲁⲡ ⲇⲉ ⲉⲧⲁⲥⲉⲓ ⲁⲡ",
-      "core_english": "{15}within the firmaments. But the time when she came down to",
+      "core_coptic": "{7}ϩⲟⲩⲛ ϩⲛ̄ ⲛ̄ⲥⲧⲉⲣⲉⲱⲙⲁ ⲡⲥⲁⲡ ⲇⲉ ⲉⲧⲁⲥⲉⲓ ⲁⲡ",
+      "core_english": "{7}within the firmaments. But the time when she came down to",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲙⲙⲁⲥ ϩⲓ",
+          "english": "her wi",
+          "basis": "Editor's restoration: 3sg.f object suffix ⲙⲙⲁⲥ + locative ϩⲓⲍⲟⲩⲛ 'within'",
+          "source_id": 11,
+          "section": 3410
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Firmaments — substrate cosmography"
     },
@@ -142,8 +239,20 @@
       "chapter": 56,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲡⲕⲁϩ ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙ̄ⲡϣⲏⲛ ⲁⲥⲧⲱⲕ ⲁⲣⲉⲧⲥ ⲛ̄ϩⲏ",
-      "core_english": "{17}the earth, she molded the tree, she stood firm in",
+      "core_coptic": "{8}ⲡⲕⲁϩ ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙ̄ⲡϣⲏⲛ ⲁⲥⲧⲱⲕ ⲁⲣⲉⲧⲥ ⲛ̄ϩⲏ",
+      "core_english": "{8}the earth, she molded the tree, she stood firm in",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲧⲛⲉ ⲁ",
+          "english": "the earth, to ",
+          "basis": "Editor's restoration completing ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁϩ 'down to the earth' from preceding ⲁⲡ at end of l.27",
+          "source_id": 12,
+          "section": 3411
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate — Tree of fruits"
     },
@@ -152,8 +261,20 @@
       "chapter": 56,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ϥ̄ ϩⲓϩⲟⲩⲛ ⲙ̄ⲡϣⲉ ⲁⲥⲡⲗⲁⲥⲥⲉ ⲛ̄ⲛ̄ⲕⲁⲣⲡⲟⲥ ⲛ̄ⲧⲁⲣⲉ",
-      "core_english": "{19}within the wood she molded the fruits. But when",
+      "core_coptic": "{9}ϥ̄ ϩⲓϩⲟⲩⲛ ⲙ̄ⲡϣⲉ ⲁⲥⲡⲗⲁⲥⲥⲉ ⲛ̄ⲛ̄ⲕⲁⲣⲡⲟⲥ ⲛ̄ⲧⲁⲣⲉ",
+      "core_english": "{9}within the wood she molded the fruits. But when",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "it,",
+          "basis": "Editor's restoration of 3sg.m suffix ⲧϥ̄ in ⲛ̄ϩⲏⲧϥ̄ 'in it'",
+          "source_id": 13,
+          "section": 3412
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -162,8 +283,30 @@
       "chapter": 56,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ϩⲟⲩϩⲉ ⲇⲉ ϩⲉⲓ̈ⲉ ⲁⲃ{21}ⲡⲓⲧⲛⲉ ⲁⲡⲕⲁϩ ϩⲙ̄ ⲡⲙⲁϩⲥⲁⲡ",
-      "core_english": "{22}abortions fell {23}down to the earth, in the second time",
+      "core_coptic": "{10}ϩⲟⲩϩⲉ ⲇⲉ ϩⲉⲓ̈ⲉ ⲁⲃ{11}ⲡⲓⲧⲛⲉ ⲁⲡⲕⲁϩ ϩⲙ̄ ⲡⲙⲁϩⲥⲁⲡ",
+      "core_english": "{10}abortions fell {11}down to the earth, in the second time",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "the ",
+          "basis": "Editor's restoration of definite plural article ⲛ̄- of ⲛ̄ϩⲟⲩϩⲉ 'the abortions'",
+          "source_id": 14,
+          "section": 3413
+        },
+        {
+          "id": 11,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲁⲗ ⲁ",
+          "english": " to ",
+          "basis": "Editor's restoration completing ⲁⲃⲁⲗ ⲁⲡⲓⲧⲛⲉ 'forth downward'",
+          "source_id": 15,
+          "section": 3413
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Abortions falling — substrate cosmogony"
     },
@@ -172,8 +315,28 @@
       "chapter": 56,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} {25}",
-      "core_english": "{26} {27}",
+      "core_coptic": "{12} {13}",
+      "core_english": "{12} {13}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲥⲛⲉⲩ",
+          "english": "[two]",
+          "basis": "Editor's restoration completing ⲡⲙⲁϩⲥⲁⲡ ⲥⲛⲉⲩ 'the second time' from preceding line",
+          "source_id": 16,
+          "section": 3414
+        },
+        {
+          "id": 13,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 20,
+          "source_id": 17,
+          "section": 3414
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Lacuna only; in substrate sequence"
     },
@@ -182,8 +345,20 @@
       "chapter": 56,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕⲁⲣⲡⲟⲥ ⲁⲥⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲙⲁ{28} ⲁⲥⲥⲉⲭⲉ ϩⲙ̄ ⲡⲁⲣⲭⲱⲛ",
-      "core_english": "(as) fruits she bore the{29}; she spoke through the chief archon",
+      "core_coptic": "ⲕⲁⲣⲡⲟⲥ ⲁⲥⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲙⲁ{14} ⲁⲥⲥⲉⲭⲉ ϩⲙ̄ ⲡⲁⲣⲭⲱⲛ",
+      "core_english": "(as) fruits she bore the{14}; she spoke through the chief archon",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "m",
+          "basis": "single-letter completion of ⲙ̄ⲙⲁⲩ 'them'; ⲙ̄ⲙⲁ̣ partially visible",
+          "source_id": 18,
+          "section": 3415
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -194,6 +369,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲟⲩⲁⲛⲝⲱⲝ· ⲡⲁⲭⲉϩ ⲁⲛⲉϩⲱⲃⲉⲉⲣ· ⲁⲩⲉⲓⲥ ⲙⲁ⸓ ⲛϩⲓ̈ ⲛ̄ⲡⲉ",
       "core_english": "their Principality. He said to his fellows: 'Come you, ⸓ unto heaven.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Archonic speech within the cosmogonic narrative — substrate"
     },
@@ -202,8 +378,20 @@
       "chapter": 56,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛ̄ⲟⲩⲁⲓⲛⲉ ⲛ̄ⲧⲁⲥⲙⲓⲛⲉ ⲛⲏⲧⲛⲉ ⲛ̄ⲟⲩϩⲓⲕⲱⲛ ⲁϩⲣ{30}",
-      "core_english": "Our light! Let us fashion for yourselves an image after{31}",
+      "core_coptic": "ⲧⲛ̄ⲟⲩⲁⲓⲛⲉ ⲛ̄ⲧⲁⲥⲙⲓⲛⲉ ⲛⲏⲧⲛⲉ ⲛ̄ⲟⲩϩⲓⲕⲱⲛ ⲁϩⲣ{15}",
+      "core_english": "Our light! Let us fashion for yourselves an image after{15}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲙ̄",
+          "english": "[the]",
+          "basis": "ⲁϩⲣ[ⲙ̄] = ⲁϩⲣⲛ̄ ⲡ-, prepositional 'unto/after the'; continues to ⲡⲉⲓⲛⲉ on next line",
+          "source_id": 19,
+          "section": 3417
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -214,6 +402,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲓⲛⲉ ⲙⲡⲡⲉⲧⲭⲁⲥⲉ· ⲧϩⲉ ⲉⲧⲁϩⲭⲟⲟⲥ ⲁⲩⲉⲉⲥ· ⲁⲩ⸓",
       "core_english": "the likeness of the Exalted One.' In the manner that he spoke, they did it. They ⸓",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -222,8 +411,18 @@
       "chapter": 56,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉϩ· ⲛ̄ⲧⲁϩ ⲁⲉ ϩⲱⲱϩ ⲁϩⲥⲙⲓⲛⲉ {32}",
-      "core_english": "for him. But he himself fashioned {33}",
+      "core_coptic": "ⲛⲉϩ· ⲛ̄ⲧⲁϩ ⲁⲉ ϩⲱⲱϩ ⲁϩⲥⲙⲓⲛⲉ {16}",
+      "core_english": "for him. But he himself fashioned {16}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 20,
+          "section": 3419
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -232,8 +431,29 @@
       "chapter": 56,
       "line": 26,
       "classification": "mixed",
-      "core_coptic": "ⲡⲛⲁⲃⲉ ⲉⲧⲁϩ{34} ⲛ{35}",
-      "core_english": "'The Sin which has {36} in {37}",
+      "core_coptic": "ⲡⲛⲁⲃⲉ ⲉⲧⲁϩ{17} ⲛ{18}",
+      "core_english": "'The Sin which has {17} in {18}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲃⲁⲃϩ ⲁⲃⲁⲗ",
+          "english": "poured forth",
+          "basis": "editor's restoration; ⲃⲱϩ/ⲃⲁⲃϩ ⲁⲃⲁⲗ 'gush, pour out'",
+          "source_id": 21,
+          "section": 3420
+        },
+        {
+          "id": 18,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲛ...ⲉ",
+          "source_id": 22,
+          "section": 3420
+        }
+      ],
       "removed_material": "Stripped frame: 'Ⲧⲧⲁⲭⲉ ⲡⲫⲱⲥⲧⲏⲣ ⲁⲛ ⲭⲉ' / 'Once again the Illuminator said:'",
       "temporal_note": "Frame + start of teaching"
     },
@@ -242,8 +462,29 @@
       "chapter": 56,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38} ⲉⲧⲉ ⲧϩⲩⲗⲏ ⲧⲉ ⲧⲉⲧⲁⲥⲛⲉⲩ ⲁⲧϩⲓ{39}",
-      "core_english": "{40} — that is, Hyle — she who saw the{41}",
+      "core_coptic": "{19} ⲉⲧⲉ ⲧϩⲩⲗⲏ ⲧⲉ ⲧⲉⲧⲁⲥⲛⲉⲩ ⲁⲧϩⲓ{20}",
+      "core_english": "{19} — that is, Hyle — she who saw the{20}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "...ⲉ",
+          "source_id": 23,
+          "section": 3421
+        },
+        {
+          "id": 20,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲕⲱⲛ ⲙⲡⲡⲣⲉⲥⲃⲉⲩ-",
+          "english": "image of the Ambassa-",
+          "basis": "editor's restoration; ⲁⲧϩⲓ[ⲕⲱⲛ ⲙⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ] 'unto the image of the Ambassador,' continuing to ⲧⲏⲥ on next line",
+          "source_id": 24,
+          "section": 3421
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Hyle identification — substrate"
     },
@@ -252,8 +493,20 @@
       "chapter": 56,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲥ· ⲛ̄ⲧⲁⲥ ⲡⲉⲧⲁⲥⲡⲗⲁⲥⲥⲉ ⲙⲡⲱϩ{42}",
-      "core_english": "-dor — she is the one who molded the planting; {43}",
+      "core_coptic": "ⲧⲏⲥ· ⲛ̄ⲧⲁⲥ ⲡⲉⲧⲁⲥⲡⲗⲁⲥⲥⲉ ⲙⲡⲱϩ{21}",
+      "core_english": "-dor — she is the one who molded the planting; {21}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "ⲛ ⲁⲥⲧⲱⲕ ⲁⲣⲉⲧⲥ ⲛ-",
+          "english": "; she stood firm in",
+          "basis": "editor's restoration completing ⲡⲱϩⲛ 'planting' + ⲁⲥⲧⲱⲕ ⲁⲣⲉⲧⲥ 'she stood fast' (cf. accumulated ⲧⲏⲕ ⲁⲣⲉⲧ⸗)",
+          "source_id": 25,
+          "section": 3422
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -262,8 +515,30 @@
       "chapter": 56,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ⲙ̄ⲛⲛ̄ⲥⲱⲥ ⲁⲥⲉⲓ ⲁϩⲣⲏⲓ̈ ϩⲛ ⲛ{45}",
-      "core_english": "{46}. Afterwards she came up in the {47}",
+      "core_coptic": "{22} ⲙ̄ⲛⲛ̄ⲥⲱⲥ ⲁⲥⲉⲓ ⲁϩⲣⲏⲓ̈ ϩⲛ ⲛ{23}",
+      "core_english": "{22}. Afterwards she came up in the {23}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ϩⲏⲧϩ",
+          "english": "him",
+          "basis": "ϩ[ⲏⲧ]ϩ = ⲛ̄ϩⲏⲧϥ̄ 'in him'; the planting",
+          "source_id": 26,
+          "section": 3423
+        },
+        {
+          "id": 23,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲣⲡⲟⲥ",
+          "english": "[fruits]",
+          "basis": "editor's restoration ⲛ[ⲕⲁⲣⲡⲟⲥ] 'in the fruits'; followed by ~6-char lacuna marked separately below if needed — here taken as a single restoration with tail-lacuna",
+          "source_id": 27,
+          "section": 3423
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate narrative"
     },
@@ -272,8 +547,19 @@
       "chapter": 56,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉⲧⲁⲥⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲛⲁⲣⲭⲱⲛ· ⲁⲛ{48} ⲁⲩ-",
-      "core_english": "she who went into the archons. {49} they",
+      "core_coptic": "ⲡⲉⲧⲁⲥⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲛⲁⲣⲭⲱⲛ· ⲁⲛ{24} ⲁⲩ-",
+      "core_english": "she who went into the archons. {24} they",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ⲁⲛ...",
+          "source_id": 28,
+          "section": 3424
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -282,8 +568,20 @@
       "chapter": 56,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲗⲁⲥⲥⲉ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ ⲁϩⲣⲙ̄ {50}",
-      "core_english": "molded Adam and Eve after {51}",
+      "core_coptic": "ⲡⲗⲁⲥⲥⲉ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ ⲁϩⲣⲙ̄ {25}",
+      "core_english": "molded Adam and Eve after {25}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲡⲉⲓⲛⲉ ⲙⲡⲡⲉⲧⲭⲁⲥⲉ",
+          "english": "the likeness of the Exalted One",
+          "basis": "editor's restoration; ⲡ̣[ⲉⲓⲛⲉ ⲙⲡⲡⲉⲧ]ⲭⲁⲥ[ⲉ] with partial visible ⲡ and ⲭⲁⲥ; standard formula recurring at lines 4 and 19",
+          "source_id": 29,
+          "section": 3425
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -292,8 +590,20 @@
       "chapter": 56,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲙ̄ⲡⲛⲁⲃⲉ· ⲡⲉⲧⲁϩ{52}",
-      "core_english": "through the operation of Sin who has {53}",
+      "core_coptic": "ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲙ̄ⲡⲛⲁⲃⲉ· ⲡⲉⲧⲁϩ{26}",
+      "core_english": "through the operation of Sin who has {26}",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲛⲉⲩ ⲁⲧϩⲓⲕⲱⲛ ⲙⲡ-",
+          "english": "seen the image of the",
+          "basis": "editor's restoration ⲡⲉⲧⲁϩⲛ̣[ⲉⲩ ⲁⲧϩⲓⲕⲱⲛ ⲙⲡ-]; parallels line 7 with same Hyle/image-of-Ambassador formula",
+          "source_id": 30,
+          "section": 3426
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -302,8 +612,20 @@
       "chapter": 56,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ· ⲁϩⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ {54}",
-      "core_english": "Ambassador, has gone into them {55}",
+      "core_coptic": "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ· ⲁϩⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ {27}",
+      "core_english": "Ambassador, has gone into them {27}",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ϩⲛ ⲛ̄ⲕⲁⲣⲡⲟⲥ ⲁϩ-",
+          "english": "in the fruits, has",
+          "basis": "editor's restoration; parallels line 19 ϩⲛ̄ ⲛⲕⲁⲣⲡⲟⲥ",
+          "source_id": 31,
+          "section": 3427
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ambassador key substrate marker"
     },
@@ -312,8 +634,20 @@
       "chapter": 56,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲙⲁⲩ· ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ {56}",
-      "core_english": "borne them. They themselves {57}",
+      "core_coptic": "ⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲙⲁⲩ· ⲛ̄ⲧⲁⲩ ϩⲱⲱⲩ {28}",
+      "core_english": "borne them. They themselves {28}",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲁⲩϩⲱⲣⲡⲁⲫⲉ [...]",
+          "english": "brought forth [...]",
+          "basis": "editor's restoration ⲁⲩϩⲱⲣⲡ̣[ⲁⲫ + ~5-char tail lacuna]; verb ϩⲱⲣⲡⲁⲫⲉ/ⲍⲱⲣⲡⲁϥⲉ 'bring forth, produce' (accumulated vocabulary)",
+          "source_id": 32,
+          "section": 3428
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -322,8 +656,19 @@
       "chapter": 56,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲡⲟ̄· ⲡⲟⲩⲉ ⲡⲟⲩⲉ ⲙ̄ⲙⲁⲩ ϩⲙ̄ ⲡⲉϩⲧⲁⲱ ⲕⲁⲧⲁ {58}",
-      "core_english": "begot — each one of them in his own kind, according to {59}",
+      "core_coptic": "ⲭⲡⲟ̄· ⲡⲟⲩⲉ ⲡⲟⲩⲉ ⲙ̄ⲙⲁⲩ ϩⲙ̄ ⲡⲉϩⲧⲁⲱ ⲕⲁⲧⲁ {29}",
+      "core_english": "begot — each one of them in his own kind, according to {29}",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 35,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "...",
+          "source_id": 33,
+          "section": 3429
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate — kind/likeness"
     },
@@ -334,6 +679,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲁⲛ ⲉϩⲉⲓⲛⲉ· ⲟⲩⲁⲛ ⲉϩⲉⲓⲛⲉ ⲉⲛ·",
       "core_english": "(some) in likeness, (others) not in likeness.'",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the begetting sequence — substrate"
     },
@@ -344,6 +690,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲧⲁ ⲛ̄ⲁⲣⲭⲱⲛ ⲡⲗⲁⲥⲥⲉ ⲛⲁⲇⲁⲙ ⲙⲛ",
       "core_english": "how the archons molded Adam and",
+      "apparatus": [],
       "removed_material": "Stripped didactic frame opener: 'concerning this word:'",
       "temporal_note": "Recap of substrate teaching following 'I have taught you'"
     },
@@ -352,8 +699,20 @@
       "chapter": 56,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲩϩⲁ ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲙ̄ⲡⲛⲁⲃⲉ ⲉⲧⲁϩⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲣⲁ{60}",
-      "core_english": "Eve through the operation of Sin who went in unto the{61}",
+      "core_coptic": "ⲉⲩϩⲁ ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲙ̄ⲡⲛⲁⲃⲉ ⲉⲧⲁϩⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲣⲁ{30}",
+      "core_english": "Eve through the operation of Sin who went in unto the{30}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "m",
+          "basis": "single-letter completion of ⲁⲣⲁⲩ 'unto them'",
+          "source_id": 34,
+          "section": 3432
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the recap — substrate content"
     },
@@ -364,6 +723,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲛ̄ ⲛⲕⲁⲣⲡⲟⲥ· ⲁⲩⲧⲁⲱϩ ⲁϩⲣⲛ̄ ⲡⲉⲓⲛⲉ ⲙ̄ⲡⲡⲉⲧⲭⲁⲥⲉ",
       "core_english": "in the fruits, and they reached unto the likeness of the Exalted One.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate — Exalted One likeness"
     },
@@ -372,8 +732,20 @@
       "chapter": 56,
       "line": 41,
       "classification": "mixed",
-      "core_coptic": "{62} ⲡⲡⲗⲁⲥⲧⲏⲥ ⲕⲱ ϩⲙ̄ ⲡ-",
-      "core_english": "'{63} the molder placed in the",
+      "core_coptic": "{31} ⲡⲡⲗⲁⲥⲧⲏⲥ ⲕⲱ ϩⲙ̄ ⲡ-",
+      "core_english": "'{31} the molder placed in the",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "[perfect prefix]",
+          "basis": "ⲭⲉ [ⲁ] ⲡⲡⲗⲁⲥⲧⲏⲥ — perfect prefix ⲁ- governing ⲡⲡⲗⲁⲥⲧⲏⲥ ⲕⲱ 'the molder placed'",
+          "source_id": 35,
+          "section": 3434
+        }
+      ],
       "removed_material": "Stripped frame: 'Ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉ ⲡⲫⲱⲥⲧⲏⲣ ⲭⲉ' / 'Once again the Illuminator said:'",
       "temporal_note": "Frame + opening of new substrate teaching on body/molder"
     },
@@ -384,6 +756,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲗⲁⲥⲙⲁ ⲛ̄ⲁⲇⲁⲙ ⲙⲛ̄ ⲉⲩϩⲁ ⲛ̄ϩⲛ̄ⲙⲉⲗⲟⲥ ϩⲓⲃⲁⲗ ⲙⲛ̄ ϩⲓ-",
       "core_english": "molding of Adam and Eve members on the outside and on the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate — anthropological mapping begins"
     },
@@ -392,8 +765,20 @@
       "chapter": 56,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲟⲩⲛ· ⲁⲩⲁⲓⲥⲑⲏⲥⲓⲥ ⲙⲛ̄ ⲟⲩⲉⲛⲉⲣⲅⲉⲓⲁ ⲁϩⲥⲁⲣϩ {64}",
-      "core_english": "inside — a sense-faculty and an operation, which has spread for{65}",
+      "core_coptic": "ϩⲟⲩⲛ· ⲁⲩⲁⲓⲥⲑⲏⲥⲓⲥ ⲙⲛ̄ ⲟⲩⲉⲛⲉⲣⲅⲉⲓⲁ ⲁϩⲥⲁⲣϩ {32}",
+      "core_english": "inside — a sense-faculty and an operation, which has spread for{32}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲁⲗ",
+          "english": "th",
+          "basis": "completion of ⲁⲃⲁⲗ 'forth' — Lyc. for ⲉⲃⲟⲗ; ⲥⲁⲣϩ ⲁⲃⲁⲗ 'spread forth'",
+          "source_id": 36,
+          "section": 3436
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sense-faculty/operation — substrate anthropological correspondence"
     },
@@ -404,6 +789,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲛ̄ ⲏⲓ̈ ⲏⲓ̈· ϩⲱⲃ ⲛⲓⲙ ⲉⲧⲉⲣⲉ ⲛⲉϩⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ ⲙⲛ ⲛ-",
       "core_english": "in each house. Every thing which the sense-organs and the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -412,8 +798,20 @@
       "chapter": 56,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛⲁⲭⲓⲧϩ ϩⲓⲃⲁⲗ — ⲟⲩⲛⲧⲉⲩ ϩⲛ̄ⲧⲁⲙⲓⲟⲛ ⲙ̄ⲙ{66}",
-      "core_english": "elements shall take from outside — they have storehouses there{67}",
+      "core_coptic": "ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛⲁⲭⲓⲧϩ ϩⲓⲃⲁⲗ — ⲟⲩⲛⲧⲉⲩ ϩⲛ̄ⲧⲁⲙⲓⲟⲛ ⲙ̄ⲙ{33}",
+      "core_english": "elements shall take from outside — they have storehouses there{33}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲙⲉⲩ",
+          "english": "re",
+          "basis": "single-syllable completion of ⲙ̄ⲙⲉⲩ 'there'; partial ⲙ̄ⲙ̣ visible",
+          "source_id": 37,
+          "section": 3438
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Storehouses/elements — substrate"
     },
@@ -422,8 +820,20 @@
       "chapter": 56,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲓϩⲟⲩⲛ ⲙⲛ̄ ϩⲛ̄ⲁⲡⲟⲑⲏⲕⲏ ⲙⲛ ϩⲛ̄ⲥⲡⲏⲗⲁⲓⲟ{68}",
-      "core_english": "on the inside, and granaries and caverns,{69}",
+      "core_coptic": "ϩⲓϩⲟⲩⲛ ⲙⲛ̄ ϩⲛ̄ⲁⲡⲟⲑⲏⲕⲏ ⲙⲛ ϩⲛ̄ⲥⲡⲏⲗⲁⲓⲟ{34}",
+      "core_english": "on the inside, and granaries and caverns,{34}",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲛ ⲛⲥⲉ-",
+          "english": ", that they may",
+          "basis": "completion of ⲥⲡⲏⲗⲁⲓⲟⲛ 'caverns' + conjunctive ⲛⲥⲉ- continuing to ⲭⲓⲧϥ̄ 'bring it' on next line",
+          "source_id": 38,
+          "section": 3439
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Granaries/caverns — substrate"
     },
@@ -432,8 +842,20 @@
       "chapter": 56,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲓⲧϥ̄ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ ⲛ̄ⲥⲉⲁⲗϥ̄ ⲁϩⲟⲩⲛ ⲛ̄ϩⲏⲧⲟⲩ· {70}",
-      "core_english": "may bring it into them and lift it up into them. {71}",
+      "core_coptic": "ⲭⲓⲧϥ̄ ⲁϩⲟⲩⲛ ⲁⲣⲁⲩ ⲛ̄ⲥⲉⲁⲗϥ̄ ⲁϩⲟⲩⲛ ⲛ̄ϩⲏⲧⲟⲩ· {35}",
+      "core_english": "may bring it into them and lift it up into them. {35}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "Ⲥⲁⲡ",
+          "english": "Every time",
+          "basis": "editor's restoration; ⲥⲁⲡ ⲛⲓⲙ 'every time' opening the temporal clause continuing to line 27",
+          "source_id": 39,
+          "section": 3440
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -444,6 +866,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲙ̄ ⲉⲧⲟⲩⲛⲁⲱⲛⲧⲟⲩ ⲁⲛⲉⲧⲁⲩⲁⲗⲟⲩ ⲁϩⲟⲩⲛ ⲁⲛⲟⲩⲧⲁⲙ-",
       "core_english": "every (time) that they shall match them with those things they have lifted up into the store-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -454,6 +877,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲛ ⲉⲧϩⲓϩⲟⲩⲛ ⲛ̄ⲥⲉⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲙ̄ⲡⲉⲧⲁⲩⲭⲓⲧϩ ⲁϩⲟⲩⲛ ⲛ-",
       "core_english": "-houses which are on the inside, that they may bring forth that which they brought in and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -464,6 +888,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲧⲉⲉϩ ⲙ̄ⲡⲁⲡⲁⲓⲧⲏⲧⲏⲥ ⲉⲧⲱⲓⲧⲉ ⲙ̄ⲙⲁⲩ ⲙ̄ⲙⲁϩ",
       "core_english": "give (it) to the demander who claims them continually.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -472,8 +897,19 @@
       "chapter": 56,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧϩⲉ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲁ ⲧⲉϩⲉⲛⲑⲩⲙⲏⲥⲓⲥ {72}",
-      "core_english": "This is the manner that his enthumesis (counsel) {73}",
+      "core_coptic": "Ⲧϩⲉ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲁ ⲧⲉϩⲉⲛⲑⲩⲙⲏⲥⲓⲥ {36}",
+      "core_english": "This is the manner that his enthumesis (counsel) {36}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 51,
+          "type": "lacuna",
+          "est_chars": 14,
+          "partial": ".........ϩ....",
+          "source_id": 40,
+          "section": 3444
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enthumesis transition — substrate"
     },
@@ -482,8 +918,28 @@
       "chapter": 56,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲓⲃⲁⲗ ⲁⲃⲱⲱⲧ ⲛ̄ⲥⲁ ⲛ{74} {75}",
-      "core_english": "outside, runs after {76} {77}",
+      "core_coptic": "ϩⲓⲃⲁⲗ ⲁⲃⲱⲱⲧ ⲛ̄ⲥⲁ ⲛ{37} {38}",
+      "core_english": "outside, runs after {37} {38}",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲛ....",
+          "source_id": 41,
+          "section": 3445
+        },
+        {
+          "id": 38,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "..........ⲥ — final ⲥ likely begins ⲥⲙⲁⲧ continuing to next line",
+          "source_id": 42,
+          "section": 3445
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -492,8 +948,20 @@
       "chapter": 56,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁⲧ ⲛⲓⲙ ϩⲓϩ{78}",
-      "core_english": "every kind on the in{79}",
+      "core_coptic": "ⲙⲁⲧ ⲛⲓⲙ ϩⲓϩ{39}",
+      "core_english": "every kind on the in{39}",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲛ ......... ⲟⲩⲛⲧⲉ ⲧⲉⲛ",
+          "english": "side ... they have ...",
+          "basis": "editor partially restores ϩⲓϩ[ⲟⲩⲛ] 'on the inside' + ~9-char lacuna + restored 'ⲟⲩⲛⲧⲉ ⲧⲉⲛ-' (have / their); composite gap with mixed restoration and lacuna",
+          "source_id": 43,
+          "section": 3446
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -502,8 +970,20 @@
       "chapter": 56,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "{80} ⲁⲛ ⲛ̄ⲛ̄ⲃⲉⲗ ⲍⲛ̄ⲏⲓ̈ ⲙ̄ⲙⲉⲩ ⲙⲛ̄ ⲍⲛ̄ⲥⲡⲧⲏⲗⲁ",
-      "core_english": "The {81} again of the eyes — they have houses there with chambers",
+      "core_coptic": "{40} ⲁⲛ ⲛ̄ⲛ̄ⲃⲉⲗ ⲍⲛ̄ⲏⲓ̈ ⲙ̄ⲙⲉⲩ ⲙⲛ̄ ⲍⲛ̄ⲥⲡⲧⲏⲗⲁ",
+      "core_english": "The {40} again of the eyes — they have houses there with chambers",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲫⲩⲙⲏⲥⲓⲥ",
+          "english": "nature",
+          "basis": "Greek φύσις; same word restored in line 6 (segment 5) — the φύσις of each sense-faculty is the controlling concept of this passage",
+          "source_id": 44,
+          "section": 3447
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eye-enthumesis substrate teaching"
     },
@@ -514,6 +994,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲛ ⲍⲛ̄ⲁⲡⲟⲫⲏⲕⲏ ⲙⲛ̄ ⲍⲛ̄ϣⲁϩ ⲍⲓⲍⲟⲩⲛ ⲭⲉⲕⲁⲁⲥ ⲉⲓⲛⲉ",
       "core_english": "and treasuries with shafts within, so that every likeness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -524,6 +1005,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲙ ⲉⲥⲁⲛⲉⲩ ⲁⲣⲁϩ ⲉⲓⲧⲉ ⲉϩⲁⲛⲓⲧ ⲉⲓⲧⲉ ⲉϩⲍⲁⲩ ⲉⲓⲧⲉ",
       "core_english": "soever which she sees — whether beautiful or bitter, whether",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate enumeration"
     },
@@ -534,6 +1016,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲟⲩⲙⲉⲓ̈ⲉ ⲡⲉ ⲉⲓⲧⲉ ⲡⲁⲟⲩⲙⲁⲥⲧⲉ ⲡⲉ ⲉⲓⲧⲉ ⲡⲁⲧⲉ",
       "core_english": "it is one of love, or it is one of hate, or it is one of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate enumeration"
     },
@@ -544,6 +1027,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲫⲩⲙⲓⲁ ⲡⲉ ⲉⲥⲁⲝⲓⲧⲩ̄ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲙⲛ̄",
       "core_english": "this desire — she carries it inward to her storehouses and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -552,8 +1036,20 @@
       "chapter": 56,
       "line": 59,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲥⲁⲡⲟⲫⲏⲕⲏ ⲡⲥⲁⲡ ⲁⲛ ⲉⲧⲉⲣⲉ {82} ⲛ̄ⲛ̄",
-      "core_english": "her treasuries. Again the time when this {83} of the",
+      "core_coptic": "ⲛⲉⲥⲁⲡⲟⲫⲏⲕⲏ ⲡⲥⲁⲡ ⲁⲛ ⲉⲧⲉⲣⲉ {41} ⲛ̄ⲛ̄",
+      "core_english": "her treasuries. Again the time when this {41} of the",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 59,
+          "type": "restoration",
+          "coptic": "ⲧⲉⲛⲫⲩⲙⲏⲥⲓⲥ",
+          "english": "this nature",
+          "basis": "Greek φύσις with feminine demonstrative ⲧⲉ-; cf. line 1; subject of the verb of looking in line 7",
+          "source_id": 45,
+          "section": 3452
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -564,6 +1060,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲉⲗ ⲏⲕ ⲛ̄ⲍⲏⲧ ⲁ̄ⲧⲛ̄ⲛⲁⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲉⲓⲛⲉ ⲉⲧⲁⲥⲛⲉⲩ ⲁⲣⲁϩ",
       "core_english": "eyes is drawn in heart to look out upon the likeness which she has seen,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -572,8 +1069,20 @@
       "chapter": 56,
       "line": 61,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲥⲝⲓⲧϩ ⲁⲍⲟⲩⲛ ⲉⲥⲁⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ {84}",
-      "core_english": "she has carried it inward, going inward to her storehouses, {85}",
+      "core_coptic": "ⲁⲥⲝⲓⲧϩ ⲁⲍⲟⲩⲛ ⲉⲥⲁⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ {42}",
+      "core_english": "she has carried it inward, going inward to her storehouses, {42}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 61,
+          "type": "restoration",
+          "coptic": "ⲁⲡ",
+          "english": "at the",
+          "basis": "ⲁⲡ- prefix beginning ⲁⲡⲥⲁⲡ 'at the time' — the word continues with ⲥⲁⲡ at the start of line 9",
+          "source_id": 46,
+          "section": 3454
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -582,8 +1091,36 @@
       "chapter": 56,
       "line": 62,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲁⲡ ⲛ̄ⲥⲙⲉⲩⲉ {86} ⲛⲥϯⲟⲩⲁⲓ̈ ⲛⲉ {87} ⲟⲩ ϣⲁ {88} ϩ",
-      "core_english": "time, and she ponders {89}, and gives herself {90} until {91}",
+      "core_coptic": "ⲥⲁⲡ ⲛ̄ⲥⲙⲉⲩⲉ {43} ⲛⲥϯⲟⲩⲁⲓ̈ ⲛⲉ {44} ⲟⲩ ϣⲁ {45} ϩ",
+      "core_english": "time, and she ponders {43}, and gives herself {44} until {45}",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 62,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲁϩ",
+          "english": "upon it",
+          "basis": "directional preposition with 3sg.m suffix; ⲥⲙⲉⲩⲉ ⲁⲣⲁϩ 'think upon it' is standard collocation",
+          "source_id": 47,
+          "section": 3455
+        },
+        {
+          "id": 44,
+          "segment": 62,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 48,
+          "section": 3455
+        },
+        {
+          "id": 45,
+          "segment": 62,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 49,
+          "section": 3455
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -592,8 +1129,30 @@
       "chapter": 56,
       "line": 63,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲛ̄ⲧⲩ̄ ⲁⲃⲁⲗ {92}ⲧ̄ⲉⲉϩ ⲙⲡⲁⲡⲁⲓⲧⲏⲧⲏⲥ {93}ⲧⲉ ⲙⲙⲁⲥ",
-      "core_english": "and she brings them forth, {94}giving (them) to the petitioner {95}who asks of her",
+      "core_coptic": "ⲛ̄ⲥⲛ̄ⲧⲩ̄ ⲁⲃⲁⲗ {46}ⲧ̄ⲉⲉϩ ⲙⲡⲁⲡⲁⲓⲧⲏⲧⲏⲥ {47}ⲧⲉ ⲙⲙⲁⲥ",
+      "core_english": "and she brings them forth, {46}giving (them) to the petitioner {47}who asks of her",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲛⲥ",
+          "english": "and she",
+          "basis": "conjunctive prefix ⲛ̄ⲥ- + ⲧⲉⲉϩ 'gives'; parallel construction with surrounding ⲛ̄ⲥ- conjunctive verb chain",
+          "source_id": 50,
+          "section": 3456
+        },
+        {
+          "id": 47,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲉⲧϣⲓ",
+          "english": "who asks",
+          "basis": "relative ⲉⲧ- + verb ϣⲓⲧⲉ/ⲁⲓⲧⲉⲓ 'to ask, petition' — confirmed by parallel ⲣⲉϩϣⲓⲛⲉ ⲉⲧϣⲓⲛⲉ ⲙ̄ⲙⲁⲥ in line 29 (segment 28)",
+          "source_id": 51,
+          "section": 3456
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -602,8 +1161,20 @@
       "chapter": 56,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲡⲉⲧⲟⲩⲱ{96}ⲉ ⲙ̄ⲙⲁⲥ ⲁⲣⲁϩ ⲉⲓⲧⲉ ⲃⲉ ⲟⲩⲁ̄ⲃⲁⲗ ⲍⲛ̄",
-      "core_english": "and the one who {97}desires it of her — whether something out of",
+      "core_coptic": "ⲙⲛ̄ ⲡⲉⲧⲟⲩⲱ{48}ⲉ ⲙ̄ⲙⲁⲥ ⲁⲣⲁϩ ⲉⲓⲧⲉ ⲃⲉ ⲟⲩⲁ̄ⲃⲁⲗ ⲍⲛ̄",
+      "core_english": "and the one who {48}desires it of her — whether something out of",
+      "apparatus": [
+        {
+          "id": 48,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "",
+          "basis": "single letter inside ⲡⲉⲧⲟⲩⲱϣⲉ 'the one who desires' (Lyc. ⲟⲩⲱϣ 'wish, desire')",
+          "source_id": 52,
+          "section": 3457
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -612,8 +1183,37 @@
       "chapter": 56,
       "line": 65,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲡ {98} {99} ⲡⲉ ⲛ̄ⲧⲉ ⲟⲩⲙⲉⲓ̈ⲉ {100} ⲡⲉ",
-      "core_english": "{101} is a {102} of a love {103} is",
+      "core_coptic": "ⲉⲡ {49} {50} ⲡⲉ ⲛ̄ⲧⲉ ⲟⲩⲙⲉⲓ̈ⲉ {51} ⲡⲉ",
+      "core_english": "{49} is a {50} of a love {51} is",
+      "apparatus": [
+        {
+          "id": 49,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲉⲡ",
+          "source_id": 53,
+          "section": 3458
+        },
+        {
+          "id": 50,
+          "segment": 65,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲉⲓⲛⲉ",
+          "english": "likeness",
+          "basis": "ⲟⲩⲉⲓⲛⲉ 'a likeness' (per terminology guide); fits the ⲡⲉ ⲛ̄ⲧⲉ predicate construction",
+          "source_id": 54,
+          "section": 3458
+        },
+        {
+          "id": 51,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 55,
+          "section": 3458
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -622,8 +1222,18 @@
       "chapter": 56,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{104} ⲟⲩⲙⲁⲥⲧⲉ ⲛϯⲍⲉ ⲁⲛ ϣⲁⲣⲉ ϯⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲉⲧⲙ̄ⲙⲉⲩ",
-      "core_english": "{105} a hate. In this manner again, that enthumesis",
+      "core_coptic": "{52} ⲟⲩⲙⲁⲥⲧⲉ ⲛϯⲍⲉ ⲁⲛ ϣⲁⲣⲉ ϯⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲉⲧⲙ̄ⲙⲉⲩ",
+      "core_english": "{52} a hate. In this manner again, that enthumesis",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 56,
+          "section": 3459
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -634,6 +1244,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϯ ⲛ̄ⲥⲣⲧⲍⲉ ⲉⲧⲉϣⲁⲥⲉⲉⲥ ⲍⲙ̄ ⲡⲓⲧⲩⲡⲟⲥ ⲡⲓⲧⲩⲡⲟⲥ",
       "core_english": "gives in like manner — which she does in this type. This type",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Type-marker — substrate transition"
     },
@@ -644,6 +1255,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲛⲛⲙⲉϣⲧⲉ ⲟⲩⲛ̄ⲧⲉⲥ ⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲙ̄ⲙⲉⲩ",
       "core_english": "is the enthumesis of the ears: she has her storehouses there",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ear-enthumesis substrate"
     },
@@ -654,6 +1266,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲱⲥ ⲁⲛ Ⲥⲱⲧⲙⲉ ⲛⲓⲙ ⲉⲥⲁⲝⲓⲧⲩ̄ ⲉⲓⲧⲉ ϩⲁⲛⲓⲧ ⲉⲓⲧⲉ ϩⲍⲁⲩ",
       "core_english": "likewise also: every hearing that she carries — whether beautiful or bitter",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -664,6 +1277,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲥⲝⲓⲧⲩ̄ ⲁⲍⲟⲩⲛ ⲛ̄ⲥⲕⲁⲁϩ ⲍⲛ ⲛⲉⲥⲏⲓ ⲙⲛ ⲛⲉⲥⲁⲡⲟⲫⲏ",
       "core_english": "she carries it inward, sets it in her houses and her treasur-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -672,8 +1286,19 @@
       "chapter": 56,
       "line": 71,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕⲏ ⲉⲧⲍⲓⲍⲟⲩⲛ ⲛ̄ⲥⲣⲁⲓ̈ⲥ ⲁⲣⲁϩ ⲍⲛ̄ ⲧⲉⲥⲝ {106} ⲙⲙⲏⲧ ⲛ̄",
-      "core_english": "ies which are within, and watches over it in her tes-{107}, ten of",
+      "core_coptic": "ⲕⲏ ⲉⲧⲍⲓⲍⲟⲩⲛ ⲛ̄ⲥⲣⲁⲓ̈ⲥ ⲁⲣⲁϩ ⲍⲛ̄ ⲧⲉⲥⲝ {53} ⲙⲙⲏⲧ ⲛ̄",
+      "core_english": "ies which are within, and watches over it in her tes-{53}, ten of",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 71,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲧⲉⲥⲝ",
+          "source_id": 57,
+          "section": 3464
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate — temporal periods"
     },
@@ -682,8 +1307,20 @@
       "chapter": 56,
       "line": 72,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲉ ⲛⲍⲟⲟⲩⲉ ⲙⲛ̄ⲛ̄ⲥⲁ ⲙⲏⲧ ⲛ̄ϣⲉ ⲛ̄ⲍⲟⲟⲩⲉ ⲛⲧⲉ̄ ⲟⲩⲉ {108} ⲛⲩ̄",
-      "core_english": "hundreds of days. After ten hundreds of days, when one {109} comes",
+      "core_coptic": "ϣⲉ ⲛⲍⲟⲟⲩⲉ ⲙⲛ̄ⲛ̄ⲥⲁ ⲙⲏⲧ ⲛ̄ϣⲉ ⲛ̄ⲍⲟⲟⲩⲉ ⲛⲧⲉ̄ ⲟⲩⲉ {54} ⲛⲩ̄",
+      "core_english": "hundreds of days. After ten hundreds of days, when one {54} comes",
+      "apparatus": [
+        {
+          "id": 54,
+          "segment": 72,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "to",
+          "basis": "single restored letter, possibly forming the prefix ⲉ-ⲛⲏⲩ 'coming' (subject 'one' in conditional clause); the verb continues into line 20 with ϣⲛ̄",
+          "source_id": 58,
+          "section": 3465
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Numerical substrate"
     },
@@ -694,6 +1331,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲛ̄ ϯⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲉⲧⲙ̄ⲙⲉⲩ ⲁⲡⲥⲱⲧⲙⲉ ⲉⲧⲁ̄ⲥⲥⲁⲧⲙⲉϩ",
       "core_english": "to seek that enthumesis pertaining to the hearing which she has heard,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -702,8 +1340,20 @@
       "chapter": 56,
       "line": 74,
       "classification": "cosmological_substrate",
-      "core_coptic": "{110}ϣ ⲁⲥⲝⲓⲧⲩ̄ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲛⲧⲟⲩⲛⲟⲩ",
-      "core_english": "{111} she has carried it inward to her storehouses; immediately",
+      "core_coptic": "{55}ϣ ⲁⲥⲝⲓⲧⲩ̄ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲛⲧⲟⲩⲛⲟⲩ",
+      "core_english": "{55} she has carried it inward to her storehouses; immediately",
+      "apparatus": [
+        {
+          "id": 55,
+          "segment": 74,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲓⲟⲩⲁ",
+          "english": "at this moment",
+          "basis": "Lyc. ⲙ̄ⲡⲓⲟⲩⲁϣ 'at this moment/wish' (cf. ⲡⲓⲛⲉⲩ in glossary as time-marker); only final ϣ visible",
+          "source_id": 59,
+          "section": 3467
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -712,8 +1362,30 @@
       "chapter": 56,
       "line": 75,
       "classification": "cosmological_substrate",
-      "core_coptic": "{112}ⲁⲥⲃ{113}ⲕ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲁⲡⲟⲫⲏⲕⲏ ⲛⲥϯⲟⲩⲁⲓ̈ ⲛ̄ⲥⲙⲟⲩϣⲧ",
-      "core_english": "{114}she habitually goes{115} inward to her treasuries, gives herself, examines,",
+      "core_coptic": "{56}ⲁⲥⲃ{57}ⲕ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲁⲡⲟⲫⲏⲕⲏ ⲛⲥϯⲟⲩⲁⲓ̈ ⲛ̄ⲥⲙⲟⲩϣⲧ",
+      "core_english": "{56}she habitually goes{57} inward to her treasuries, gives herself, examines,",
+      "apparatus": [
+        {
+          "id": 56,
+          "segment": 75,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "",
+          "basis": "habitual prefix ϣⲁ- of the verb ϣⲁⲥⲃⲱⲕ 'she habitually goes'; confirmed by parallel ϣⲁⲥⲃⲱⲕ ⲁⲍⲟⲩⲛ in line 29",
+          "source_id": 60,
+          "section": 3468
+        },
+        {
+          "id": 57,
+          "segment": 75,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "",
+          "basis": "medial vowel of ⲃⲱⲕ 'go'",
+          "source_id": 61,
+          "section": 3468
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -724,6 +1396,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲥⲕⲱⲧⲉ ⲥⲁ ⲡⲓⲥⲉϫⲉ ⲛ̄ⲥⲧⲛ̄ⲛⲁⲩϩ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲙⲁ ⲉⲧⲁⲥⲣ̄",
       "core_english": "and seeks for that word, and sends it forth from the place where she had",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -734,6 +1407,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲡ ⲛⲕⲁⲁϩ ⲛ̄ⲍⲏⲧⲩ̄ ⲡⲧⲟⲡⲟⲥ ⲉⲧⲥ̄ⲣⲁⲓ̈ⲥ ⲁⲣⲁϩ ⲛ̄ⲍⲏⲧⲩ̄",
       "core_english": "first set it within them — the place where she watches over it within them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -742,8 +1416,19 @@
       "chapter": 56,
       "line": 78,
       "classification": "cosmological_substrate",
-      "core_coptic": "{116} ⲡⲓⲧⲱϣ ⲡⲓⲧⲱϣ ⲁⲛ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲁⲛϣⲱⲗⲙⲉ",
-      "core_english": "{117} this boundary. This boundary again, the enthumesis of the place of smelling,",
+      "core_coptic": "{58} ⲡⲓⲧⲱϣ ⲡⲓⲧⲱϣ ⲁⲛ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲁⲛϣⲱⲗⲙⲉ",
+      "core_english": "{58} this boundary. This boundary again, the enthumesis of the place of smelling,",
+      "apparatus": [
+        {
+          "id": 58,
+          "segment": 78,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "ⲗⲗ",
+          "source_id": 62,
+          "section": 3471
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Smell-enthumesis transition — substrate"
     },
@@ -752,8 +1437,20 @@
       "chapter": 56,
       "line": 79,
       "classification": "cosmological_substrate",
-      "core_coptic": "{118}ⲁⲥⲣ̄ⲡⲓⲣⲏⲧⲉ ⲧⲍⲉ ⲛ̄ⲧⲁⲛ̄ⲃⲉⲗ ⲙⲛ̄ ⲧⲁⲙ̄ⲙⲁⲛⲥⲱⲧⲙⲉ",
-      "core_english": "{119}she does in this manner, like that of the eyes and that of the place of hearing:",
+      "core_coptic": "{59}ⲁⲥⲣ̄ⲡⲓⲣⲏⲧⲉ ⲧⲍⲉ ⲛ̄ⲧⲁⲛ̄ⲃⲉⲗ ⲙⲛ̄ ⲧⲁⲙ̄ⲙⲁⲛⲥⲱⲧⲙⲉ",
+      "core_english": "{59}she does in this manner, like that of the eyes and that of the place of hearing:",
+      "apparatus": [
+        {
+          "id": 59,
+          "segment": 79,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "",
+          "basis": "habitual prefix ϣⲁ- of ϣⲁⲥⲣ̄ⲡⲓⲣⲏⲧⲉ 'she does in this manner'",
+          "source_id": 63,
+          "section": 3472
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -762,8 +1459,40 @@
       "chapter": 56,
       "line": 80,
       "classification": "cosmological_substrate",
-      "core_coptic": "{120}ⲧⲁⲓ̈ ⲛⲓⲙ ⲉⲥⲁϣⲁⲗⲙ{121}ϩ ϣⲁⲥⲝⲓⲧϩ ⲁⲍⲟⲩⲛ {122} ⲛⲥ",
-      "core_english": "every {123}scent which she {124}smells, she habitually carries it inward {125}to herself, and",
+      "core_coptic": "{60}ⲧⲁⲓ̈ ⲛⲓⲙ ⲉⲥⲁϣⲁⲗⲙ{61}ϩ ϣⲁⲥⲝⲓⲧϩ ⲁⲍⲟⲩⲛ {62} ⲛⲥ",
+      "core_english": "every {60}scent which she {61}smells, she habitually carries it inward {62}to herself, and",
+      "apparatus": [
+        {
+          "id": 60,
+          "segment": 80,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "",
+          "basis": "initial letter of ⲥⲧⲁⲓ̈ 'scent' (per glossary)",
+          "source_id": 64,
+          "section": 3473
+        },
+        {
+          "id": 61,
+          "segment": 80,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "medial vowel of ⲉⲥⲁϣⲁⲗⲙⲉϩ 'she smells it'",
+          "source_id": 65,
+          "section": 3473
+        },
+        {
+          "id": 62,
+          "segment": 80,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲁⲥ",
+          "english": "to herself",
+          "basis": "directional + 3sg.f suffix; the scent carried inward to herself (the φύσις-faculty); parallel ⲁⲣⲁϩ in line 11",
+          "source_id": 66,
+          "section": 3473
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -772,8 +1501,20 @@
       "chapter": 56,
       "line": 81,
       "classification": "cosmological_substrate",
-      "core_coptic": "{126}ⲗⲩ̄ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲉⲧⲍⲓⲍⲟⲩⲛ Ⲥⲁⲡ ⲛⲓⲙ ⲉⲧⲟⲩⲛⲁ",
-      "core_english": "{127}brings (them) inward to her storehouses which are within. Every time when they shall",
+      "core_coptic": "{63}ⲗⲩ̄ ⲁⲍⲟⲩⲛ ⲁⲛⲉⲥⲧⲁⲙⲓⲟⲛ ⲉⲧⲍⲓⲍⲟⲩⲛ Ⲥⲁⲡ ⲛⲓⲙ ⲉⲧⲟⲩⲛⲁ",
+      "core_english": "{63}brings (them) inward to her storehouses which are within. Every time when they shall",
+      "apparatus": [
+        {
+          "id": 63,
+          "segment": 81,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "initial letter of verb form ⲁⲗⲩ̄ 'she carries (them)'",
+          "source_id": 67,
+          "section": 3474
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -782,8 +1523,20 @@
       "chapter": 56,
       "line": 82,
       "classification": "cosmological_substrate",
-      "core_coptic": "{128}ⲛⲧⲥ̄ ⲍⲓⲧⲙ̄ ⲡⲣⲉϩϣⲓⲛⲉ ⲉⲧϣⲓⲛⲉ ⲙ̄ⲙⲁⲥ ϣⲁⲥⲃⲱⲕ ⲁⲍⲟⲩⲛ",
-      "core_english": "{129}ask her, through the inquirer who asks of her, she habitually goes inward",
+      "core_coptic": "{64}ⲛⲧⲥ̄ ⲍⲓⲧⲙ̄ ⲡⲣⲉϩϣⲓⲛⲉ ⲉⲧϣⲓⲛⲉ ⲙ̄ⲙⲁⲥ ϣⲁⲥⲃⲱⲕ ⲁⲍⲟⲩⲛ",
+      "core_english": "{64}ask her, through the inquirer who asks of her, she habitually goes inward",
+      "apparatus": [
+        {
+          "id": 64,
+          "segment": 82,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "",
+          "basis": "initial letter of ϣⲛⲧⲥ̄ 'they ask her' (ϣⲓⲛⲉ + 3sg.f object)",
+          "source_id": 68,
+          "section": 3475
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -792,8 +1545,27 @@
       "chapter": 56,
       "line": 83,
       "classification": "cosmological_substrate",
-      "core_coptic": "{130} ⲛ̄ⲥ {131} ⲧⲁⲙⲓⲟⲛ ⲛⲥϯ ⲡⲣⲡⲙⲉⲩⲉ",
-      "core_english": "{132} and she {133} storehouse, and gives the remembrance",
+      "core_coptic": "{65} ⲛ̄ⲥ {66} ⲧⲁⲙⲓⲟⲛ ⲛⲥϯ ⲡⲣⲡⲙⲉⲩⲉ",
+      "core_english": "{65} and she {66} storehouse, and gives the remembrance",
+      "apparatus": [
+        {
+          "id": 65,
+          "segment": 83,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲥ",
+          "source_id": 69,
+          "section": 3476
+        },
+        {
+          "id": 66,
+          "segment": 83,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 70,
+          "section": 3476
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -804,6 +1576,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲓ̈ ⲙ̅ⲙⲉⲧⲉ ⲁⲗⲗⲁ ⲧⲕⲉⲧⲁⲡⲣⲟ ⲙ̅ⲛ̅ ⲡⲗⲉⲥ ⲉⲧⲛ̅ⲍⲏⲧϥ̅",
       "core_english": "these alone — but the other mouth and the tongue that is in him,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Taste-enthumesis substrate"
     },
@@ -814,6 +1587,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̅ ⲡⲙⲁⲛ̅ⲝⲓ†ⲡⲉ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲍⲱⲱϩ ⲟⲩⲏⲍ ⲛ̅ⲍⲏⲧϥ̅",
       "core_english": "with the place of taste-receiving — the enthumesis itself dwells in him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -824,6 +1598,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲛ̅ⲧⲉ †ⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲉⲧⲙ̅ⲙⲉⲩ ⲍⲱⲥ ⲁⲛ ⲙ̅ⲡⲓⲣⲏⲧⲉ ⲛ̅-",
       "core_english": "That enthumesis likewise has, in this manner of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -834,6 +1609,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲡⲙⲁⲛ̅ⲝⲓ†ⲡⲉ ⲍⲛ̅ⲥⲡⲏⲗⲁⲓⲟⲛ ⲙⲛ̅ ⲍⲛ̅ⲁⲡⲟⲑⲏⲕⲏ",
       "core_english": "the place of taste-receiving, caves and storehouses,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -844,6 +1620,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩⲛⲏⲍ ⲛⲉⲥ ⲁⲃⲁⲗ ⲥⲝⲓ ⲍⲱⲥ ⲁⲍⲟⲩⲛ ⲛ̅ⲛⲓ†ⲡⲉ ⲥⲱⲗ ⲙⲙⲁⲩ",
       "core_english": "which are open before her, and she takes likewise inward the tastes that are stored there,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -852,8 +1629,9 @@
       "chapter": 56,
       "line": 90,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲍⲟⲩⲛ ϣⲁ ⲛⲉⲩ ⲛⲓⲙ {134} ⲉⲧⲉⲣⲉ ⲟⲩⲉ ⲛⲁϣⲛⲧⲥ̅ ⲁⲩ†ⲡⲉ ⲉⲁ-",
-      "core_english": "inward at every hour. {135} when one shall ask her for a taste, after",
+      "core_coptic": "ⲁⲍⲟⲩⲛ ϣⲁ ⲛⲉⲩ ⲛⲓⲙ {67} ⲉⲧⲉⲣⲉ ⲟⲩⲉ ⲛⲁϣⲛⲧⲥ̅ ⲁⲩ†ⲡⲉ ⲉⲁ-",
+      "core_english": "inward at every hour. {67} when one shall ask her for a taste, after",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -862,8 +1640,9 @@
       "chapter": 56,
       "line": 91,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥ {136} ⲥ ϣⲁⲥⲧⲛ̅ⲛⲁⲩⲥ ⲁⲃⲁⲗ ⲛⲥ† ⲡⲣ̅ⲡⲙⲉⲩⲉ ⲛ††ⲡⲉ ⲉⲧⲙ̅-",
-      "core_english": "she has {137} it, she sends it forth and gives the recollection of that",
+      "core_coptic": "ⲥ {68} ⲥ ϣⲁⲥⲧⲛ̅ⲛⲁⲩⲥ ⲁⲃⲁⲗ ⲛⲥ† ⲡⲣ̅ⲡⲙⲉⲩⲉ ⲛ††ⲡⲉ ⲉⲧⲙ̅-",
+      "core_english": "she has {68} it, she sends it forth and gives the recollection of that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -872,8 +1651,9 @@
       "chapter": 56,
       "line": 92,
       "classification": "cosmological_substrate",
-      "core_coptic": "{138} ϣⲁⲥⲃⲁⲣⲃⲥ̅ ⲛ̅ⲥⲧⲉⲉⲥ ⲛ̅ⲥⲣ {139}",
-      "core_english": "{140} taste — she pours it forth and gives it, and she makes {141}",
+      "core_coptic": "{69} ϣⲁⲥⲃⲁⲣⲃⲥ̅ ⲛ̅ⲥⲧⲉⲉⲥ ⲛ̅ⲥⲣ {70}",
+      "core_english": "{69} taste — she pours it forth and gives it, and she makes {70}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -882,8 +1662,9 @@
       "chapter": 56,
       "line": 93,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲙ̅{142} ⲛ̅ⲥ† ⲡⲥⲣ̅ⲡⲙⲉⲩⲉ ⲙⲡⲣⲉϩϣ{143} ⲉⲧϣⲓⲛⲉ ⲙ̅ⲙⲁⲥ",
-      "core_english": "of that {144}, and she gives the recollection to the {145} who inquires of her.",
+      "core_coptic": "ⲉⲧⲙ̅{71} ⲛ̅ⲥ† ⲡⲥⲣ̅ⲡⲙⲉⲩⲉ ⲙⲡⲣⲉϩϣ{72} ⲉⲧϣⲓⲛⲉ ⲙ̅ⲙⲁⲥ",
+      "core_english": "of that {71}, and she gives the recollection to the {72} who inquires of her.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -892,8 +1673,9 @@
       "chapter": 56,
       "line": 94,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧⲉⲛⲑ{146}ⲙⲏⲥⲓⲥ ⲁⲛ ⲙ̅ⲡⲃⲁⲙⲃⲛ̅ ⲛ̅ⲛⲃⲓⲝ {147} ⲁⲛ ⲧⲉ ⲧⲉⲓ̈",
-      "core_english": "The {148} again of the touch of the hands — {149} also is this:",
+      "core_coptic": "Ⲧⲉⲛⲑ{73}ⲙⲏⲥⲓⲥ ⲁⲛ ⲙ̅ⲡⲃⲁⲙⲃⲛ̅ ⲛ̅ⲛⲃⲓⲝ {74} ⲁⲛ ⲧⲉ ⲧⲉⲓ̈",
+      "core_english": "The {73} again of the touch of the hands — {74} also is this:",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Touch-enthumesis substrate"
     },
@@ -902,8 +1684,9 @@
       "chapter": 56,
       "line": 95,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲛⲉⲩ ⲉⲧⲥⲁⲃⲁⲙⲃⲙ ⲟⲩⲃⲁⲙⲃⲙ {150} ⲁⲍⲟⲩ-",
-      "core_english": "the moment when she touches a touch, {151} inward,",
+      "core_coptic": "ⲡⲛⲉⲩ ⲉⲧⲥⲁⲃⲁⲙⲃⲙ ⲟⲩⲃⲁⲙⲃⲙ {75} ⲁⲍⲟⲩ-",
+      "core_english": "the moment when she touches a touch, {75} inward,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -912,8 +1695,9 @@
       "chapter": 56,
       "line": 96,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̅ {152} ⲁⲍⲟⲩⲛ ⲁⲧⲥ̅ⲁⲡⲟⲑⲏⲕⲏ ⲉⲧⲍⲓⲍⲟⲩⲛ {153} ⲉⲧⲉ-",
-      "core_english": "{154} inward to her storehouse that is within, {155} when",
+      "core_coptic": "ⲛ̅ {76} ⲁⲍⲟⲩⲛ ⲁⲧⲥ̅ⲁⲡⲟⲑⲏⲕⲏ ⲉⲧⲍⲓⲍⲟⲩⲛ {77} ⲉⲧⲉ-",
+      "core_english": "{76} inward to her storehouse that is within, {77} when",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -922,8 +1706,9 @@
       "chapter": 56,
       "line": 97,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲉ ⲟ{156}ⲉ ⲛⲁϣⲛ̅ †ⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲁⲡⲣ̅ⲡⲙⲉⲩⲉ {157}",
-      "core_english": "{158}one shall ask the enthumesis for the recollection {159},",
+      "core_coptic": "ⲣⲉ ⲟ{78}ⲉ ⲛⲁϣⲛ̅ †ⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲁⲡⲣ̅ⲡⲙⲉⲩⲉ {79}",
+      "core_english": "{78}one shall ask the enthumesis for the recollection {79},",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -934,6 +1719,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲥⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲛ ⲛ̅ⲥⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲙⲡⲣⲡⲙⲉⲩⲉ ⲙⲡⲓⲃⲁⲙ-",
       "core_english": "she goes inward also and brings forth the recollection of this",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -944,6 +1730,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲙ̅ ⲉⲧⲁⲥⲃⲙⲃⲱⲙϥ̅ ⲛⲥⲧⲉⲉϩ ⲙⲡⲉⲧϣⲓⲛⲉ ⲙ̅ⲙⲁⲥ ⲁⲣⲁϩ",
       "core_english": "touch that she touched, and gives it to the one who inquires of her about it.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -954,6 +1741,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲁⲛ ⲙ̅ⲡⲍⲏⲧ ⲉⲧⲟ ⲛ̅ⲣ̅ⲣⲟ ⲁⲝⲱⲩ ⲧⲏⲣⲟⲩ ⲛ̅ⲍⲟⲩⲟ",
       "core_english": "The enthumesis again of the heart, which is king over them all exceedingly,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Heart as king — substrate hierarchy"
     },
@@ -964,6 +1752,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̅ⲍⲟⲩⲟ ⲍⲱⲥ ⲁⲛ ⲙ̅ⲡⲓⲣⲏⲧⲉ ⲍⲱⲃ ⲛⲓⲙ ⲉⲧⲉⲣⲉ ††ⲉ ⲛⲉⲛ-",
       "core_english": "exceedingly likewise in this manner: every thing that the five en-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Five enthumeses — substrate"
     },
@@ -974,6 +1763,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲑⲩⲙⲏⲥⲓⲥ ⲛⲁⲝⲓⲧⲟⲩ ⲁⲍⲟⲩⲛ ⲛ̅ⲥⲉⲧⲉⲉⲩ ⲙ̅ⲡⲁⲣⲁⲑⲏⲕⲏ ⲁ-",
       "core_english": "thumeses shall take inward and give as a deposit (παραθήκη) to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -984,6 +1774,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙⲡⲍⲏⲧ ϣⲁⲥⲝⲓⲧⲟⲩ ⲛ̅ⲥⲣⲁⲓ̈ⲥ ⲁⲣⲁⲩ ⲥⲁⲡ",
       "core_english": "the enthumesis of the heart — she takes them and watches over them at every",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -994,6 +1785,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲙ ⲉⲧⲟⲩⲛⲁϣⲛⲧⲥ̅ ⲁⲡⲟⲩⲃⲁⲓⲗⲉ ϣⲁⲥⲧⲛⲛⲁⲩϩ ⲁⲃⲁⲗ",
       "core_english": "time when one shall ask of her for their charge, she sends them forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1004,6 +1796,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̅ⲥ† ⲛⲉⲩ ⲍⲱⲃ ⲛⲓⲙ ⲉⲧⲁⲩⲧⲉⲉϩ ⲁⲧⲟⲟⲧⲥ̅",
       "core_english": "and gives them every thing that they had handed over into her hand.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1012,8 +1805,9 @@
       "chapter": 56,
       "line": 106,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲉⲣⲉ ⲡⲥⲁⲝⲛⲉ ⲅⲁⲣ ⲙ̅ⲡⲍⲏⲧ ⲧⲛ̅ⲧⲁⲛⲧ̅ ⲁⲡⲣ̅ⲣⲟ ⲡⲉⲧⲉⲣⲉ ⲛⲥⲩ{160}",
-      "core_english": "For the counsel of the heart is likened to the king before whom all the {161}",
+      "core_coptic": "Ⲉⲣⲉ ⲡⲥⲁⲝⲛⲉ ⲅⲁⲣ ⲙ̅ⲡⲍⲏⲧ ⲧⲛ̅ⲧⲁⲛⲧ̅ ⲁⲡⲣ̅ⲣⲟ ⲡⲉⲧⲉⲣⲉ ⲛⲥⲩ{80}",
+      "core_english": "For the counsel of the heart is likened to the king before whom all the {80}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "King-simile — substrate (cosmic mapping, not contemporary king)"
     },
@@ -1022,8 +1816,9 @@
       "chapter": 56,
       "line": 107,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲛⲧⲉϩⲡⲟⲗⲓⲥ ⲙ̅ⲛ̅ ⲛⲁⲛⲝⲱⲝ ⲛ̅ⲧⲉϩⲙⲁⲧ{162}",
-      "core_english": "senators of his city and the principalities of his {163}",
+      "core_coptic": "ⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲛⲧⲉϩⲡⲟⲗⲓⲥ ⲙ̅ⲛ̅ ⲛⲁⲛⲝⲱⲝ ⲛ̅ⲧⲉϩⲙⲁⲧ{81}",
+      "core_english": "senators of his city and the principalities of his {81}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate simile"
     },
@@ -1032,8 +1827,9 @@
       "chapter": 56,
       "line": 108,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲧⲉ ⲕⲁⲁⲧ ⲍⲁⲧⲏϩ ⲥⲁⲡ ⲛⲓⲙ ⲉⲧⲉⲣⲉ ⲛⲉϩⲥⲧⲣⲁⲧⲏⲗⲁⲧⲏ{164}",
-      "core_english": "have placed [matters] before him, at every time when his {165}",
+      "core_coptic": "ⲃⲧⲉ ⲕⲁⲁⲧ ⲍⲁⲧⲏϩ ⲥⲁⲡ ⲛⲓⲙ ⲉⲧⲉⲣⲉ ⲛⲉϩⲥⲧⲣⲁⲧⲏⲗⲁⲧⲏ{82}",
+      "core_english": "have placed [matters] before him, at every time when his {82}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate simile"
     },
@@ -1042,8 +1838,9 @@
       "chapter": 56,
       "line": 109,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲁⲧⲁⲃⲍϩ ⲙ̅ⲡⲉⲧⲟⲩⲟⲩⲱϣ ⲧⲁⲃⲍϥ̅ ⲙ̅ⲙⲁϩ ϣⲁϩ† ⲛⲉⲩ ⲛ̅ⲧⲥ{166}",
-      "core_english": "shall request what they wish to request with might, he gives them, from the {167}",
+      "core_coptic": "ⲛⲁⲧⲁⲃⲍϩ ⲙ̅ⲡⲉⲧⲟⲩⲟⲩⲱϣ ⲧⲁⲃⲍϥ̅ ⲙ̅ⲙⲁϩ ϣⲁϩ† ⲛⲉⲩ ⲛ̅ⲧⲥ{83}",
+      "core_english": "shall request what they wish to request with might, he gives them, from the {83}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1054,6 +1851,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲟⲩⲗⲓⲁ ⲙ̅ⲛ̅ ⲡⲛⲱⲙⲏ ⲉⲧⲟⲩⲙⲁⲍⲉ ⲛ̅ⲍⲏⲧⲥ̅",
       "core_english": "senators and the gnome (γνώμη) by which they walk.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1062,8 +1860,9 @@
       "chapter": 56,
       "line": 111,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧⲁⲗⲓⲛ ⲁⲛ ⲉϩⲧⲛ̅ⲧⲁⲛⲧ̅ ⲁⲩⲕⲉⲗⲗⲁⲣⲓⲧⲏⲥ ⲝⲉ ⲍⲱⲃ {168} ⲉⲧ{169}",
+      "core_coptic": "Ⲧⲁⲗⲓⲛ ⲁⲛ ⲉϩⲧⲛ̅ⲧⲁⲛⲧ̅ ⲁⲩⲕⲉⲗⲗⲁⲣⲓⲧⲏⲥ ⲝⲉ ⲍⲱⲃ {84} ⲉⲧ{85}",
       "core_english": "Once again moreover he is likened to a cellarer (κελλαρίτης), for every thing that they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cellarer simile — substrate continues"
     },
@@ -1074,6 +1873,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲧⲛ̅ⲍⲟⲩⲧⲥ̅ ⲁⲣⲁⲩ ⲛ̅ⲥⲉⲧⲉⲟⲩⲉ ⲁⲧⲟⲟⲧⲥ̅ ϣⲁⲥⲝⲓⲧⲟⲩ",
       "core_english": "shall send to them, and they shall hand it over into her hand, she takes them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1084,6 +1884,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲥⲕⲁⲁⲩ ⲍⲛ̅ ⲍⲛ̅ⲥⲕⲉⲟⲥ ⲥⲕⲉⲟⲥ ⲍⲛ̅ ⲍⲛ̅ⲙⲁ ⲙⲁ ⲥⲁⲡ ⲛⲓⲙ",
       "core_english": "and places them in vessels (σκεῦος), vessel by vessel, in places, place by place, every time —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1092,8 +1893,9 @@
       "chapter": 56,
       "line": 114,
       "classification": "cosmological_substrate",
-      "core_coptic": "{170}",
-      "core_english": "{171}",
+      "core_coptic": "{86}",
+      "core_english": "{86}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna in substrate sequence"
     },
@@ -1102,8 +1904,9 @@
       "chapter": 56,
       "line": 115,
       "classification": "cosmological_substrate",
-      "core_coptic": "{172}",
-      "core_english": "{173}",
+      "core_coptic": "{87}",
+      "core_english": "{87}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna in substrate sequence"
     },
@@ -1112,8 +1915,9 @@
       "chapter": 56,
       "line": 116,
       "classification": "cosmological_substrate",
-      "core_coptic": "{174}",
-      "core_english": "{175}",
+      "core_coptic": "{88}",
+      "core_english": "{88}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lacuna in substrate sequence"
     },
@@ -1124,6 +1928,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲙ ⲡⲙⲁ ⲉⲧⲁⲥⲕⲁⲁϥ ⲙ̄ⲙⲉⲩ",
       "core_english": "in the place where she has placed it.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate close"
     },
@@ -1134,6 +1939,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧ̄ϩⲉ ϩⲱϥ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲛ̄",
       "core_english": "Such also is this",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate transition"
     },
@@ -1144,6 +1950,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲛⲫⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲥⲱⲙⲁ· ⲡⲓⲱⲣϩ ⲉⲧⲉⲣⲉ ⲛⲃⲉⲗ ⲛⲁⲓ̈ⲁⲣ",
       "core_english": "enthumesis of the body. The sight which the eyes shall look-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Body-enthumesis substrate"
     },
@@ -1154,6 +1961,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩϥ̄· ⲛ̄ⲥⲉⲧⲉϥ ⲁⲧⲟⲟⲧⲥ ⲛ̄ⲥⲝⲓⲧϥ̄ ⲁϩⲟⲩⲛ· ϣⲁⲥⲛⲧϥ̄ ⲁⲃⲁⲗ ⲁⲛ",
       "core_english": "at — and they give it to her hand and bring it inward; (and) again she brings it forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1162,8 +1970,20 @@
       "chapter": 56,
       "line": 121,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲛ̄ {176} ⲉⲧⲁⲥⲕⲁϥ ⲛϩⲏⲧⲟⲩ· ⲛ̄ⲥⲧⲉⲉϥ ⲙ̄ⲡⲉⲧϣⲓⲛⲉ ⲙ̄ⲙⲁⲥ",
-      "core_english": "from the {177} where she has placed it, and gives it to the one who seeks her.",
+      "core_coptic": "ϩⲛ̄ {89} ⲉⲧⲁⲥⲕⲁϥ ⲛϩⲏⲧⲟⲩ· ⲛ̄ⲥⲧⲉⲉϥ ⲙ̄ⲡⲉⲧϣⲓⲛⲉ ⲙ̄ⲙⲁⲥ",
+      "core_english": "from the {89} where she has placed it, and gives it to the one who seeks her.",
+      "apparatus": [
+        {
+          "id": 89,
+          "segment": 121,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲁⲙⲟⲛ",
+          "english": "the storehouses",
+          "basis": "Editor restored [ⲛⲧⲁⲙ]ⲟⲛ; Lyc. ⲛ̄ⲧⲁⲙⲟⲛ = ⲧⲁⲙⲓⲟⲛ ταμεῖον (already in glossary as 'storehouse / treasury'). Fits the cognitive-storage register: enthumesis stores impressions in inner storehouses.",
+          "source_id": 93,
+          "section": 3513
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1172,8 +1992,20 @@
       "chapter": 56,
       "line": 122,
       "classification": "cosmological_substrate",
-      "core_coptic": "{178} ⲡⲥⲱⲧⲙⲉ ⲁⲛ· ⲉⲧⲉⲣⲉ ⲙ̄ⲙⲉⲝⲉ ⲛⲁⲥⲁⲧⲙⲉϥ· ⲛ̄ⲥⲉⲧⲉϥ ⲁⲧⲟⲟⲧⲥ",
-      "core_english": "{179} the hearing also, which the ears shall hear, and they give it to her hand,",
+      "core_coptic": "{90} ⲡⲥⲱⲧⲙⲉ ⲁⲛ· ⲉⲧⲉⲣⲉ ⲙ̄ⲙⲉⲝⲉ ⲛⲁⲥⲁⲧⲙⲉϥ· ⲛ̄ⲥⲉⲧⲉϥ ⲁⲧⲟⲟⲧⲥ",
+      "core_english": "{90} the hearing also, which the ears shall hear, and they give it to her hand,",
+      "apparatus": [
+        {
+          "id": 90,
+          "segment": 122,
+          "type": "restoration",
+          "coptic": "Ⲧ̄ϩⲉ",
+          "english": "Such also is",
+          "basis": "Editor restored [ⲦⲦ]; parallel formula in line 1 'Ⲧ̄ϩⲉ ϩⲱϥ ⲁⲛ ⲧⲉ' and line 17 'Ⲧ̄ϩⲉ' confirms the discourse marker introducing parallel comparisons.",
+          "source_id": 94,
+          "section": 3514
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1184,6 +2016,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲥⲝⲓⲧϥ̄ ⲛ̄ⲧⲟⲟⲧⲟⲩ· ϣⲁ ⲛⲉⲩ ⲛⲓⲙ ⲉⲧⲟⲩⲛⲁϣⲛⲧⲥ̄ ⲁⲡⲓⲥⲱ",
       "core_english": "and she takes it from their hand. Whatever moment they shall ask her about that hear-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1192,8 +2025,20 @@
       "chapter": 56,
       "line": 124,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲉ ⲉⲧⲙ̄ⲙⲉⲩ· ϣⲁⲥⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲛ̄ⲥϯ ⲡⲥⲱⲧⲙⲉ ⲛⲛⲙⲉⲝ{180}",
-      "core_english": "ing, she brings (it) forth and gives the hearing of the ear{181}",
+      "core_coptic": "ⲧⲙⲉ ⲉⲧⲙ̄ⲙⲉⲩ· ϣⲁⲥⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲛ̄ⲥϯ ⲡⲥⲱⲧⲙⲉ ⲛⲛⲙⲉⲝ{91}",
+      "core_english": "ing, she brings (it) forth and gives the hearing of the ear{91}",
+      "apparatus": [
+        {
+          "id": 91,
+          "segment": 124,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(final letter -s)",
+          "basis": "Editor restored final ⲉ of ⲙⲉⲝⲉ 'ears'; same noun preserved in line 5 (ⲙ̄ⲙⲉⲝⲉ) and line 9 (ⲙⲙⲉϣⲧⲉ).",
+          "source_id": 95,
+          "section": 3516
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1204,6 +2049,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲉⲧⲁϥϣⲛ̄ⲧⲥ̄ ⲁⲡⲓⲥⲱⲧⲙⲉ ⲉⲧⲙ̄ⲙⲉⲩ· ϣⲁⲥⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲛⲥ",
       "core_english": "to the one who has asked her about that hearing. She brings (it) forth and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1214,6 +2060,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϯ ⲡⲥⲱⲧⲙⲉ ⲛⲙ̄ⲙⲉϣⲧⲉ ⲙ̄ⲡⲉⲧⲁϥϣⲛⲧⲥ̄·",
       "core_english": "gives the hearing of the ears to the one who has asked her.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1222,8 +2069,20 @@
       "chapter": 56,
       "line": 127,
       "classification": "cosmological_substrate",
-      "core_coptic": "{182} ⲡⲙⲁⲛϣⲱⲗⲙⲉ ⲁⲛ· ϩⲙ ⲡⲓⲥⲙⲁⲧ ⲡⲓⲥⲙⲁⲧ ⲡⲙⲁⲛⲝⲓϯⲡⲉ ⲁⲛ",
-      "core_english": "{183} the place of smelling also; in this same fashion likewise the place of receiving-taste",
+      "core_coptic": "{92} ⲡⲙⲁⲛϣⲱⲗⲙⲉ ⲁⲛ· ϩⲙ ⲡⲓⲥⲙⲁⲧ ⲡⲓⲥⲙⲁⲧ ⲡⲙⲁⲛⲝⲓϯⲡⲉ ⲁⲛ",
+      "core_english": "{92} the place of smelling also; in this same fashion likewise the place of receiving-taste",
+      "apparatus": [
+        {
+          "id": 92,
+          "segment": 127,
+          "type": "restoration",
+          "coptic": "Ⲧ̄ϩⲉ",
+          "english": "Such also is",
+          "basis": "Editor restored [ⲦⲦ]; same discourse marker as line 5 introducing the next sense in the enumeration (smell, then taste).",
+          "source_id": 96,
+          "section": 3519
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1232,8 +2091,40 @@
       "chapter": 56,
       "line": 128,
       "classification": "cosmological_substrate",
-      "core_coptic": "{184} ϩⲙ̄ ⲡⲓ{185} ⲡⲓⲧⲩⲡⲟⲥ· ⲡⲟⲁⲙⲟⲙ̄ ⲛⲛⲟⲓ{186} ϯ",
-      "core_english": "{187} in this {188}-type, this type. The grasping of the hand{189} gives—",
+      "core_coptic": "{93} ϩⲙ̄ ⲡⲓ{94} ⲡⲓⲧⲩⲡⲟⲥ· ⲡⲟⲁⲙⲟⲙ̄ ⲛⲛⲟⲓ{95} ϯ",
+      "core_english": "{93} in this {94}-type, this type. The grasping of the hand{95} gives—",
+      "apparatus": [
+        {
+          "id": 93,
+          "segment": 128,
+          "type": "restoration",
+          "coptic": "ⲧⲛ̄ⲧⲁⲛⲧ",
+          "english": "is likened",
+          "basis": "Editor restored [ⲧ]ⲛ̄[ⲧⲁⲛⲧ]; ⲛ̄ preserved between two restored portions. ⲧⲛ̄ⲧⲱⲛ qualitative 'be like, be likened' is the standard correspondential parable verb (cf. accumulated ⲥⲧⲛⲧⲁⲛⲧ, ⲧⲛⲧⲁⲛⲧ in glossary).",
+          "source_id": 97,
+          "section": 3520
+        },
+        {
+          "id": 94,
+          "segment": 128,
+          "type": "restoration",
+          "coptic": "ⲧⲩⲡⲟⲥ",
+          "english": "type",
+          "basis": "Editor restored ⲡⲓ[ⲧⲩⲡ]ⲟⲥ; the same word ⲡⲓⲧⲩⲡⲟⲥ is fully preserved immediately after, confirming the reading.",
+          "source_id": 98,
+          "section": 3520
+        },
+        {
+          "id": 95,
+          "segment": 128,
+          "type": "restoration",
+          "coptic": "ⲛⲟⲓⲝ",
+          "english": "(of the) hands",
+          "basis": "Editor restored final ⲝ of ⲛⲛⲟⲓⲝ; Lyc. plural of ϭⲓϫ 'hand.' Touch-faculty fits the sense-enumeration sequence (sight, hearing, smell, taste, touch).",
+          "source_id": 99,
+          "section": 3520
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1242,8 +2133,28 @@
       "chapter": 56,
       "line": 129,
       "classification": "cosmological_substrate",
-      "core_coptic": "{190}ⲓⲉⲩⲉ· ϣⲁⲩⲛ̄ⲧϥ ⲁⲃⲁⲗ ⲁϩⲟⲩⲛ ⲁ{191}",
-      "core_english": "{192} ... they bring it forth, inward unto {193}",
+      "core_coptic": "{96}ⲓⲉⲩⲉ· ϣⲁⲩⲛ̄ⲧϥ ⲁⲃⲁⲗ ⲁϩⲟⲩⲛ ⲁ{97}",
+      "core_english": "{96} ... they bring it forth, inward unto {97}",
+      "apparatus": [
+        {
+          "id": 96,
+          "segment": 129,
+          "type": "lacuna",
+          "est_chars": 13,
+          "partial": "ⲓⲉⲩⲉ at end of gap",
+          "source_id": 100,
+          "section": 3521
+        },
+        {
+          "id": 97,
+          "segment": 129,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲁ visible at start",
+          "source_id": 101,
+          "section": 3521
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1252,8 +2163,28 @@
       "chapter": 56,
       "line": 130,
       "classification": "cosmological_substrate",
-      "core_coptic": "{194} ⲡⲛⲉⲩ ⲁⲛ ⲉⲧⲟⲩⲛⲁϣⲛ{195} ⲁⲣⲁϥ· ϣⲁⲥⲛⲧϥ ⲁⲃⲁⲗ",
-      "core_english": "{196} the moment also when they shall ask{197} about it, she brings it forth",
+      "core_coptic": "{98} ⲡⲛⲉⲩ ⲁⲛ ⲉⲧⲟⲩⲛⲁϣⲛ{99} ⲁⲣⲁϥ· ϣⲁⲥⲛⲧϥ ⲁⲃⲁⲗ",
+      "core_english": "{98} the moment also when they shall ask{99} about it, she brings it forth",
+      "apparatus": [
+        {
+          "id": 98,
+          "segment": 130,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 102,
+          "section": 3522
+        },
+        {
+          "id": 99,
+          "segment": 130,
+          "type": "restoration",
+          "coptic": "ϣⲛ̄ⲧⲥ",
+          "english": "ask her",
+          "basis": "Editor restored [ⲧⲥ]; standard idiom ϣⲓⲛⲉ ⲛ̄ⲥⲱ⸗ϥ 'inquire about (it),' Lyc. with -ⲧⲥ̄ suffix referring back to the storing/giving feminine subject (the enthumesis). Same construction as ⲉⲧⲟⲩⲛⲁϣⲛⲧⲥ̄ in line 6.",
+          "source_id": 103,
+          "section": 3522
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1262,8 +2193,20 @@
       "chapter": 56,
       "line": 131,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲧⲉ{198}·",
-      "core_english": "and gives {199}.",
+      "core_coptic": "ⲛ̄ⲥⲧⲉ{100}·",
+      "core_english": "and gives {100}.",
+      "apparatus": [
+        {
+          "id": 100,
+          "segment": 131,
+          "type": "restoration",
+          "coptic": "ⲉϥ",
+          "english": "it",
+          "basis": "Editor restored ⲛⲥⲧⲉ[ⲉϥ]; standard 3sg.m. object suffix completing 'gives it,' parallel to ⲛ̄ⲥⲧⲉⲉϥ in lines 5 and 9.",
+          "source_id": 104,
+          "section": 3523
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate close"
     },
@@ -1272,8 +2215,20 @@
       "chapter": 56,
       "line": 133,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲝⲉ ⲟⲩⲛ ϩⲛ̄ⲁⲛⲟⲩⲣⲙϣⲉ ϣⲟⲟⲡ ϩⲓⲝ{200} ⲛⲓⲣⲱⲟⲩ ⲉⲩⲣⲁⲓ̈ⲥ ⲁⲣⲁⲩ·",
-      "core_english": "\"Now there are some watchmen who are set upo{201}n the gates, watching them;",
+      "core_coptic": "ⲝⲉ ⲟⲩⲛ ϩⲛ̄ⲁⲛⲟⲩⲣⲙϣⲉ ϣⲟⲟⲡ ϩⲓⲝ{101} ⲛⲓⲣⲱⲟⲩ ⲉⲩⲣⲁⲓ̈ⲥ ⲁⲣⲁⲩ·",
+      "core_english": "\"Now there are some watchmen who are set upo{101}n the gates, watching them;",
+      "apparatus": [
+        {
+          "id": 101,
+          "segment": 133,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(final n of ϩⲓⲝⲛ̄ 'upon')",
+          "basis": "Editor restored final ⲛ̄ of ϩⲓⲝⲛ̄ = ϩⲓϫⲛ̄ 'upon.' Standard preposition before ⲛⲓⲣⲱⲟⲩ 'the gates.'",
+          "source_id": 105,
+          "section": 3524
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Watchmen-at-gates substrate parable"
     },
@@ -1284,6 +2239,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲛ̄ ϩⲛ̄ϣⲁϣⲧ ⲁⲛ ⲁⲧⲃ̄ ϩⲓⲣⲛ̄ ⲛ̄ⲣⲱⲟⲩ· ⲉⲩⲛ̄ⲧⲟⲟⲧⲟⲩ ⲛ̄ⲛ̄ϩⲟⲩ",
       "core_english": "and there are also nets set before the gates; and they have guards",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1294,6 +2250,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲉⲧⲉ ⲉⲧⲣⲁⲓ̈ⲥ ⲁⲣⲁⲩ·",
       "core_english": "watching them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1304,6 +2261,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧ̄ϩⲉ ⲛϩⲛ̄ⲁⲛ̄ⲟⲩⲣⲙϣⲉ ⲉⲩⲣⲁⲓ̈ⲥ ⲁⲩⲧⲧⲁ",
       "core_english": "Just as some watchmen who keep watch over en-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1312,8 +2270,19 @@
       "chapter": 56,
       "line": 137,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲁⲙⲧⲟⲗⲏ ⲙⲛ̄ ϩⲛ̄ⲡⲩⲣⲅⲟⲥ ⲙ̄ⲛ ϩⲙ̄ⲙⲁⲛⲣⲁⲓ̈ⲥ· ⲉⲣⲉ {202}",
-      "core_english": "campments and towers and watch-posts, with {203}",
+      "core_coptic": "ⲣⲁⲙⲧⲟⲗⲏ ⲙⲛ̄ ϩⲛ̄ⲡⲩⲣⲅⲟⲥ ⲙ̄ⲛ ϩⲙ̄ⲙⲁⲛⲣⲁⲓ̈ⲥ· ⲉⲣⲉ {102}",
+      "core_english": "campments and towers and watch-posts, with {102}",
+      "apparatus": [
+        {
+          "id": 102,
+          "segment": 137,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "editor reads ⲛⲓⲣ-?-ϩ; possibly ⲛⲓⲣⲱⲟⲩ 'the gates' or related noun with one undetermined letter and trailing ϩ",
+          "source_id": 106,
+          "section": 3528
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1324,6 +2293,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲛ̄ϩⲏⲧⲟⲩ· ⲉⲣⲉ ⲛ̄ϣⲁϣⲧ ϩⲓⲣⲱⲩ ⲛ̄ⲛⲣⲱⲩ· ⲉⲣⲉ ⲛϩⲟⲩⲣⲉ",
       "core_english": "out from them, with the nets at the mouths of the gates, with the guards",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1334,6 +2304,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲁⲙⲁϩⲧⲉ ⲛ̄ⲛϣⲁϣⲧ ⲛ̄ⲛⲣⲱⲟⲩ· ⲉⲩϩⲙⲉⲥⲧ ϩⲓⲣⲙ̄ ⲡⲣⲟ·",
       "core_english": "holding the nets of the gates, sitting at the door.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1342,8 +2313,20 @@
       "chapter": 56,
       "line": 140,
       "classification": "cosmological_substrate",
-      "core_coptic": "{204} ⲙⲉⲛ ⲉⲧⲏⲡⲧ ⲁⲧⲟⲩⲡⲟⲗⲓⲥ ⲉⲩϣⲃ̄ⲣⲥⲩⲙ",
-      "core_english": "{205} indeed which is reckoned to their city, while it is fellow-cit-",
+      "core_coptic": "{103} ⲙⲉⲛ ⲉⲧⲏⲡⲧ ⲁⲧⲟⲩⲡⲟⲗⲓⲥ ⲉⲩϣⲃ̄ⲣⲥⲩⲙ",
+      "core_english": "{103} indeed which is reckoned to their city, while it is fellow-cit-",
+      "apparatus": [
+        {
+          "id": 103,
+          "segment": 140,
+          "type": "restoration",
+          "coptic": "ⲛⲓ̈ⲙⲁⲛⲣⲁⲓ̈ⲥ ⲡⲉ",
+          "english": "this watch-post",
+          "basis": "Editor restored [ⲛ]ⲓ̈ⲙⲁⲛⲣⲁⲓ̈ⲥ ⲡⲉ] with damage at left edge of column. ⲙⲁⲛⲣⲁⲓ̈ⲥ 'watch-post' (in glossary) fits the parable's gate-system (encampments, towers, watch-posts).",
+          "source_id": 107,
+          "section": 3531
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1352,8 +2335,20 @@
       "chapter": 56,
       "line": 141,
       "classification": "cosmological_substrate",
-      "core_coptic": "{206}ⲗⲓⲧⲏⲥ ⲡⲉ ⲛ̄ⲧⲉⲩ· ⲉϥⲏⲡⲧ ⲁⲧⲟⲩⲭⲱⲣⲁ· ϣⲁⲩⲟⲩⲉⲛ ⲛⲉϥ ⲙ̄",
-      "core_english": "{207}izen with them, while it is reckoned to their region — they open for him the",
+      "core_coptic": "{104}ⲗⲓⲧⲏⲥ ⲡⲉ ⲛ̄ⲧⲉⲩ· ⲉϥⲏⲡⲧ ⲁⲧⲟⲩⲭⲱⲣⲁ· ϣⲁⲩⲟⲩⲉⲛ ⲛⲉϥ ⲙ̄",
+      "core_english": "{104}izen with them, while it is reckoned to their region — they open for him the",
+      "apparatus": [
+        {
+          "id": 104,
+          "segment": 141,
+          "type": "restoration",
+          "coptic": "ⲡⲟ",
+          "english": "(initial po- of) -litēs",
+          "basis": "Editor restored [ⲡⲟ] at left edge; completes συμπολίτης 'fellow-citizen' begun at end of line 21 (ϣⲃ̄ⲣⲥⲩⲙ-).",
+          "source_id": 108,
+          "section": 3532
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1362,8 +2357,20 @@
       "chapter": 56,
       "line": 142,
       "classification": "cosmological_substrate",
-      "core_coptic": "{208}ⲟ· ⲛ̄ⲥⲉⲝⲓⲧϥ̄ ⲁϩⲟⲩⲛ ⲕⲁⲧⲁ ⲡⲟⲩⲱⲕ ⲛ̄ϩⲏⲧ· ⲡϣⲙ̄ⲙⲟ ⲇⲉ",
-      "core_english": "{209}gate, and bring him within according to their purpose of heart. But the stranger,",
+      "core_coptic": "{105}ⲟ· ⲛ̄ⲥⲉⲝⲓⲧϥ̄ ⲁϩⲟⲩⲛ ⲕⲁⲧⲁ ⲡⲟⲩⲱⲕ ⲛ̄ϩⲏⲧ· ⲡϣⲙ̄ⲙⲟ ⲇⲉ",
+      "core_english": "{105}gate, and bring him within according to their purpose of heart. But the stranger,",
+      "apparatus": [
+        {
+          "id": 105,
+          "segment": 142,
+          "type": "restoration",
+          "coptic": "ⲡⲣ",
+          "english": "(initial of) the gate",
+          "basis": "Editor restored [ⲡⲣ] at left edge; completes ⲡⲣⲟ 'the gate/door,' continuing 'they open for him the gate' from line 22.",
+          "source_id": 109,
+          "section": 3533
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1372,8 +2379,20 @@
       "chapter": 56,
       "line": 143,
       "classification": "cosmological_substrate",
-      "core_coptic": "{210}ⲱⲱϥ ⲉⲧⲛⲏⲩ· ϣⲁⲩⲕⲱⲗⲩ ⲙ̄ⲙⲁϥ· ⲛ̄ⲥⲉⲕⲁⲁϥ ⲉϥⲁϩⲉ ⲁ",
-      "core_english": "{211}himself who comes — they hinder him, and let him stand",
+      "core_coptic": "{106}ⲱⲱϥ ⲉⲧⲛⲏⲩ· ϣⲁⲩⲕⲱⲗⲩ ⲙ̄ⲙⲁϥ· ⲛ̄ⲥⲉⲕⲁⲁϥ ⲉϥⲁϩⲉ ⲁ",
+      "core_english": "{106}himself who comes — they hinder him, and let him stand",
+      "apparatus": [
+        {
+          "id": 106,
+          "segment": 143,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "(initial h-)",
+          "basis": "Editor restored [ϩ] at left edge; completes ϩⲱⲱϥ 'himself,' Lyc. intensive pronoun confirmed by parallels.",
+          "source_id": 110,
+          "section": 3534
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1382,8 +2401,20 @@
       "chapter": 56,
       "line": 144,
       "classification": "cosmological_substrate",
-      "core_coptic": "{212}ⲉⲧϥ̄ ϩⲓⲣⲙ̄ ⲡⲣⲟ· ⲙⲁⲩⲥⲩⲗⲗⲭⲱⲣⲏ ⲛⲉϥ ⲁⲧⲣⲉϥⲃⲱⲕ ⲁϩⲟⲩⲛ·",
-      "core_english": "{213}upon his feet at the door. They do not permit him to enter.",
+      "core_coptic": "{107}ⲉⲧϥ̄ ϩⲓⲣⲙ̄ ⲡⲣⲟ· ⲙⲁⲩⲥⲩⲗⲗⲭⲱⲣⲏ ⲛⲉϥ ⲁⲧⲣⲉϥⲃⲱⲕ ⲁϩⲟⲩⲛ·",
+      "core_english": "{107}upon his feet at the door. They do not permit him to enter.",
+      "apparatus": [
+        {
+          "id": 107,
+          "segment": 144,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "(initial r-)",
+          "basis": "Editor restored [ⲣ] at left edge; completes ⲁⲣⲉⲧϥ̄ 'on his feet' (Lyc. idiom for 'standing'), continuing ⲉϥⲁϩⲉ ⲁ- 'standing-up-' from line 24.",
+          "source_id": 111,
+          "section": 3535
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1392,8 +2423,20 @@
       "chapter": 56,
       "line": 145,
       "classification": "cosmological_substrate",
-      "core_coptic": "{214}ⲕⲉⲟⲩⲉ ⲁⲛ ⲉⲧⲟⲩⲛⲁⲝⲓⲧϥ ⲁϩⲟⲩⲛ ϩⲛ̄ ⲟⲩⲛⲁⲟ̄ ⲛ̄ϩⲓⲥⲉ· ϣⲁⲛ",
-      "core_english": "{215} other one whom they shall bring within with great toil, until",
+      "core_coptic": "{108}ⲕⲉⲟⲩⲉ ⲁⲛ ⲉⲧⲟⲩⲛⲁⲝⲓⲧϥ ⲁϩⲟⲩⲛ ϩⲛ̄ ⲟⲩⲛⲁⲟ̄ ⲛ̄ϩⲓⲥⲉ· ϣⲁⲛ",
+      "core_english": "{108} other one whom they shall bring within with great toil, until",
+      "apparatus": [
+        {
+          "id": 108,
+          "segment": 145,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restored [ⲡ] at left edge; completes definite article ⲡ- before ⲕⲉⲟⲩⲉ 'other one.'",
+          "source_id": 112,
+          "section": 3536
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1402,8 +2445,29 @@
       "chapter": 56,
       "line": 146,
       "classification": "cosmological_substrate",
-      "core_coptic": "{216}ⲝⲓⲧϥ ⲁϩⲟⲩⲛ ϣⲁⲕⲟⲛ̄ ϩⲛ̄ⲣⲓ ⲉⲛⲁϣⲱⲟⲩ· ⲉⲩϣ{217}",
-      "core_english": "{218}they bring him within into many cells, while {219}",
+      "core_coptic": "{109}ⲝⲓⲧϥ ⲁϩⲟⲩⲛ ϣⲁⲕⲟⲛ̄ ϩⲛ̄ⲣⲓ ⲉⲛⲁϣⲱⲟⲩ· ⲉⲩϣ{110}",
+      "core_english": "{109}they bring him within into many cells, while {110}",
+      "apparatus": [
+        {
+          "id": 109,
+          "segment": 146,
+          "type": "restoration",
+          "coptic": "ⲧⲟⲩ",
+          "english": "they",
+          "basis": "Editor restored [ⲧⲟⲩ] at left edge; ϣⲁⲛ-|-ⲧⲟⲩ-ⲝⲓⲧϥ 'until they bring him' completes the conjunction ϣⲁⲛⲧⲟⲩ- across the line break.",
+          "source_id": 113,
+          "section": 3537
+        },
+        {
+          "id": 110,
+          "segment": 146,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲉⲩϣ visible at start; possibly start of qualitative or relative form",
+          "source_id": 114,
+          "section": 3537
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1412,8 +2476,27 @@
       "chapter": 56,
       "line": 147,
       "classification": "cosmological_substrate",
-      "core_coptic": "{220} ⲉⲧⲙ̄ⲙⲉⲩ· ⲟⲩⲛ̄ ⲟⲩⲙⲏϣⲉ ϩⲛ ⲛ̄{221}",
-      "core_english": "{222} there. There is a multitude in the {223}",
+      "core_coptic": "{111} ⲉⲧⲙ̄ⲙⲉⲩ· ⲟⲩⲛ̄ ⲟⲩⲙⲏϣⲉ ϩⲛ ⲛ̄{112}",
+      "core_english": "{111} there. There is a multitude in the {112}",
+      "apparatus": [
+        {
+          "id": 111,
+          "segment": 147,
+          "type": "lacuna",
+          "est_chars": 13,
+          "partial": "..ϩ visible at start of gap",
+          "source_id": 115,
+          "section": 3538
+        },
+        {
+          "id": 112,
+          "segment": 147,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 116,
+          "section": 3538
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1422,8 +2505,29 @@
       "chapter": 56,
       "line": 148,
       "classification": "cosmological_substrate",
-      "core_coptic": "{224} ⲁⲣⲁⲩ· ⲧⲏⲡⲧⲥ̄ ⲛ̄ϣⲁϣⲧ ⲛⲛⲣ{225}",
-      "core_english": "{226} over them, the assemblage(?) of the nets of the gat{227}",
+      "core_coptic": "{113} ⲁⲣⲁⲩ· ⲧⲏⲡⲧⲥ̄ ⲛ̄ϣⲁϣⲧ ⲛⲛⲣ{114}",
+      "core_english": "{113} over them, the assemblage(?) of the nets of the gat{114}",
+      "apparatus": [
+        {
+          "id": 113,
+          "segment": 148,
+          "type": "lacuna",
+          "est_chars": 14,
+          "partial": "[. . .] ⲣ [. . . . . . . . . .]ⲥ̄ — small ⲣ visible mid-gap, ⲥ̄ at end",
+          "source_id": 117,
+          "section": 3539
+        },
+        {
+          "id": 114,
+          "segment": 148,
+          "type": "restoration",
+          "coptic": "ⲣⲱⲩ",
+          "english": "(of the) gates",
+          "basis": "Editor restored ⲛⲛⲣ[ⲱⲩ]; completes ⲛ̄-ⲛ̄-ⲣⲱⲩ 'of the gates,' Lyc. plural of ⲣⲟ 'gate/mouth' (parallel to ⲣⲱⲟⲩ in line 20).",
+          "source_id": 118,
+          "section": 3539
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1432,8 +2536,26 @@
       "chapter": 56,
       "line": 149,
       "classification": "cosmological_substrate",
-      "core_coptic": "{228} ϣⲟⲟⲡ ⲛ̄{229} ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲟⲩⲉ ⲛⲁⲟⲩⲱϣ ⲟⲩ",
-      "core_english": "{230} exists in {231} the moment when one shall will,",
+      "core_coptic": "{115} ϣⲟⲟⲡ ⲛ̄{116} ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲟⲩⲉ ⲛⲁⲟⲩⲱϣ ⲟⲩ",
+      "core_english": "{115} exists in {116} the moment when one shall will,",
+      "apparatus": [
+        {
+          "id": 115,
+          "segment": 149,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 119,
+          "section": 3540
+        },
+        {
+          "id": 116,
+          "segment": 149,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 120,
+          "section": 3540
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1442,8 +2564,18 @@
       "chapter": 56,
       "line": 150,
       "classification": "cosmological_substrate",
-      "core_coptic": "{232} ⲉⲣⲉ ⲛ̄ϣⲁϣⲧ ⲛ̄ⲧⲟⲟⲧϥ̄ ⲟⲩⲉⲛ",
-      "core_english": "{233} with the nets in his hand opening",
+      "core_coptic": "{117} ⲉⲣⲉ ⲛ̄ϣⲁϣⲧ ⲛ̄ⲧⲟⲟⲧϥ̄ ⲟⲩⲉⲛ",
+      "core_english": "{117} with the nets in his hand opening",
+      "apparatus": [
+        {
+          "id": 117,
+          "segment": 150,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 121,
+          "section": 3541
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1454,6 +2586,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲣⲟ ⲛ̄ϩⲉⲓⲛⲉ ⲁⲃⲁⲗ ⲙⲡⲉⲧⲗⲏⲟ́ ϩⲓⲍⲟⲩⲛ ⲙ̄ⲙⲁϩ",
       "core_english": "Concerning the Gate of Bringing-Forth, of him who abides within him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sub-section header — substrate cosmology of the gate"
     },
@@ -1464,6 +2597,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲣⲉ ⲡ̄ⲓⲥⲱⲙⲁ ⲍⲱⲱϩ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁϯⲡⲁ",
       "core_english": "This body itself is likened to the en-",
+      "apparatus": [],
       "removed_material": "Stripped frame: 'Ⲧ̄ⲧⲁϫⲉ ⲡⲫⲱⲥⲧⲏⲣ ϫⲉ' / 'The Illuminator says:'",
       "temporal_note": "Frame + start of body-as-encampment substrate teaching"
     },
@@ -1474,6 +2608,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲁⲙⲡⲧⲟⲗⲏ ⲉⲧⲟⲩⲁⲍⲉ ⲛⲣⲱⲟⲩ ⲍⲱⲱϩ ⲛ̄ⲧⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲙ̄ⲛ",
       "core_english": "campment which has gates; the encampment itself with",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1484,6 +2619,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲩⲍⲟⲩⲣⲉⲧⲉ ⲉⲩⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲛⲣⲱⲟⲩ ⲙ̄ⲛ ⲛⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ",
       "core_english": "its guards — they are likened to the gates and to the sense-organs",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1494,6 +2630,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲥⲱⲙⲁ ⲛ̄ⲣⲱⲟⲩ ⲟⲩⲛ ⲙⲡⲥⲱⲙⲁ ⲛⲉⲓ̈ ⲛⲉ ⲙ̄ⲙⲁⲛⲓ̈ⲱⲣⲍ̄",
       "core_english": "of the body. Now the gates of the body, these are: the places of seeing,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate enumeration of gates"
     },
@@ -1504,6 +2641,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁⲛ̄ⲥⲱⲧⲙⲉ ⲙⲛ ⲙ̄ⲙⲁⲛϣⲱⲗⲙⲉ ⲙⲛ̄ ⲛⲉⲧⲧⲛ̄ⲛⲁⲩ ⲁ",
       "core_english": "the places of hearing and the places of smelling, and those that look",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1514,6 +2652,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲁⲗ ⲛⲛⲥⲉϫⲉ ⲟⲩⲛ̄ ⲍⲙ̄ⲫⲩⲗⲁⲝ̄ ⲉⲛⲁϣⲱⲟⲩ ⲙⲛ̄ ⲟⲩⲙⲏⲏ",
       "core_english": "out, and the words. There are guards who are many, and a multi-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1524,6 +2663,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲉ ⲛⲁⲛⲟⲩⲣⲡ̄ϣⲉ ⲕⲁⲁⲧ ⲁϫⲛ̄ ⲙ̄ⲙⲉⲗⲟⲥ ⲙ̄ⲡⲥⲱⲙⲁ ⲉⲩⲣⲁⲓ̈ⲥ",
       "core_english": "tude of helpers placed upon the members of the body, keeping watch",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1534,6 +2674,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛⲟⲩⲣⲡⲱⲟⲩ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲁⲛ ⲛ̄ⲍⲏⲧϥ̄ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲥ̄",
       "core_english": "to help them. And the enthumesis within him, which is the teach-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1544,6 +2685,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲱ ⲙ̄ⲡⲥⲱⲙⲁ ⲧⲣ̄ⲣⲱ ⲛ̄ⲧⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲧⲏⲣⲥ̄ ϫⲉⲕⲁⲁⲥ",
       "core_english": "ing of the body, the queen of the whole encampment, so that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate — queen of encampment"
     },
@@ -1554,6 +2696,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁⲡ ⲉⲧⲉⲍⲛⲉⲥ ⲉⲥⲁⲟⲩⲉⲛ ⲡⲥⲁⲡ ⲁⲛ ⲉⲧⲉⲍⲛⲉⲥ ⲉϥⲁϣⲧⲉⲙ",
       "core_english": "the time when she pleases, she opens; and the time when she pleases, she shuts.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1562,8 +2705,30 @@
       "chapter": 56,
       "line": 162,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲟⲧ{234} ⲁⲉ ⲉⲣϣⲁⲛ ⲡⲛⲟⲩⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲉⲓ ϣⲁϩⲕⲱ{235}",
-      "core_english": "{236} the Mind of Light comes, {237}",
+      "core_coptic": "ⲍⲟⲧ{118} ⲁⲉ ⲉⲣϣⲁⲛ ⲡⲛⲟⲩⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲉⲓ ϣⲁϩⲕⲱ{119}",
+      "core_english": "{118} the Mind of Light comes, {119}",
+      "apparatus": [
+        {
+          "id": 118,
+          "segment": 162,
+          "type": "restoration",
+          "coptic": "ⲁⲛ",
+          "english": "When",
+          "basis": "Greek loanword ⲍⲟⲧⲁⲛ = ὅταν 'when'; restoration of two letters by editor.",
+          "source_id": 122,
+          "section": 3553
+        },
+        {
+          "id": 119,
+          "segment": 162,
+          "type": "restoration",
+          "coptic": "ⲧⲉ ⲁⲍⲟⲩⲛ̄",
+          "english": "he encircles inward",
+          "basis": "ⲕⲱⲧⲉ 'go around, encircle' + ⲁⲍⲟⲩⲛ 'inward'; restoration completes the verb of approach to the body's gates.",
+          "source_id": 123,
+          "section": 3553
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mind of Light arrives — substrate"
     },
@@ -1572,8 +2737,20 @@
       "chapter": 56,
       "line": 163,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲛ̄ⲣⲱⲟⲩ ⲙ̄ⲡⲥⲱⲙⲁ ϣⲁⲣⲉ ⲛⲁⲣⲭⲱⲛ ⲉⲧⲉ ⲍⲟⲩ{238}",
-      "core_english": "to the gates of the body, the archons who {239}",
+      "core_coptic": "ⲁⲛ̄ⲣⲱⲟⲩ ⲙ̄ⲡⲥⲱⲙⲁ ϣⲁⲣⲉ ⲛⲁⲣⲭⲱⲛ ⲉⲧⲉ ⲍⲟⲩ{120}",
+      "core_english": "to the gates of the body, the archons who {120}",
+      "apparatus": [
+        {
+          "id": 120,
+          "segment": 163,
+          "type": "restoration",
+          "coptic": "ⲣⲉⲧⲉ ⲛⲉ̄ ⲛ",
+          "english": "are guards of",
+          "basis": "ⲍⲟⲩⲣⲉⲧⲉ 'guards' (already in glossary) + copular ⲛⲉ + genitive ⲛ̄.",
+          "source_id": 124,
+          "section": 3554
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1582,8 +2759,30 @@
       "chapter": 56,
       "line": 164,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲣⲱⲟⲩ ϣⲁⲩⲣ̄ⲕ{240}ⲗⲩ ⲙ̄ⲙⲁϩ ⲛ̄ⲥⲉϣⲱⲡ ⲁⲣⲁϩ ⲁⲃ{241}ⲕ ⲁⲍⲟⲩ̄",
-      "core_english": "the gates, they hin{242}der him and do not receive him to en{243}ter inward.",
+      "core_coptic": "ⲛ̄ⲣⲱⲟⲩ ϣⲁⲩⲣ̄ⲕ{121}ⲗⲩ ⲙ̄ⲙⲁϩ ⲛ̄ⲥⲉϣⲱⲡ ⲁⲣⲁϩ ⲁⲃ{122}ⲕ ⲁⲍⲟⲩ̄",
+      "core_english": "the gates, they hin{121}der him and do not receive him to en{122}ter inward.",
+      "apparatus": [
+        {
+          "id": 121,
+          "segment": 164,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "(letter ⲱ in ⲣ̄ⲕⲱⲗⲩ)",
+          "basis": "Single letter restored within Greek loanword ⲕⲱⲗⲩ = κωλύω 'hinder, prevent.'",
+          "source_id": 125,
+          "section": 3555
+        },
+        {
+          "id": 122,
+          "segment": 164,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "(letter ⲱ in ⲁⲃⲱⲕ)",
+          "basis": "Single letter restored within ⲃⲱⲕ 'go.'",
+          "source_id": 126,
+          "section": 3555
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1592,8 +2791,30 @@
       "chapter": 56,
       "line": 165,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲁⲩⲁⲣⲭⲟⲩ ⲙ̄ⲡⲕⲱⲧ{244} ⲙ̄ⲡⲥⲱⲙⲁ ϫⲉ ⲛⲉ ⲡϣⲙ̄ⲙ{245} ⲁⲣⲁⲩ",
-      "core_english": "They take charge of the encircl{246}ing of the body, saying: he is a strang{247}er to them —",
+      "core_coptic": "ϣⲁⲩⲁⲣⲭⲟⲩ ⲙ̄ⲡⲕⲱⲧ{123} ⲙ̄ⲡⲥⲱⲙⲁ ϫⲉ ⲛⲉ ⲡϣⲙ̄ⲙ{124} ⲁⲣⲁⲩ",
+      "core_english": "They take charge of the encircl{123}ing of the body, saying: he is a strang{124}er to them —",
+      "apparatus": [
+        {
+          "id": 123,
+          "segment": 165,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(letter ⲉ in ⲡⲕⲱⲧⲉ)",
+          "basis": "Single letter restored; ⲡⲕⲱⲧⲉ 'the encircling' (already in glossary).",
+          "source_id": 127,
+          "section": 3556
+        },
+        {
+          "id": 124,
+          "segment": 165,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(letter ⲟ in ⲡϣⲙ̄ⲙⲟ)",
+          "basis": "Single letter restored; ⲡϣⲙ̄ⲙⲟ 'the stranger.'",
+          "source_id": 128,
+          "section": 3556
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1604,6 +2825,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲣⲁϩ",
       "core_english": "let him not enter unto them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1614,6 +2836,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲧⲁϩ ⲁⲉ ⲍⲱⲱϩ ⲡⲛⲟⲩⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ",
       "core_english": "But he himself, the Mind of Light,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1624,6 +2847,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲛ̄ ⲧⲉϩⲥⲟⲫⲓⲁ ⲍⲛ̄ ⲧⲉⲍⲣⲧⲉ ⲙⲛ ⲧⲉϩⲙⲛⲧⲁϣⲓⲣⲉ ϣⲁϩⲑⲃ̄",
       "core_english": "in his wisdom, in his fear, and in his multitude — he hum-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1634,6 +2858,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲓ̈ⲟ ⲛⲛ̄ⲍⲟⲩⲣⲉⲧⲉ ⲉⲧⲕⲁⲁⲧ ⲍⲓϫⲛ̄ ⲛ̄ⲣⲱⲟⲩ ⲙ̄ⲡⲥⲱⲙⲁ",
       "core_english": "bles the guards that are placed upon the gates of the body.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1644,6 +2869,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲛⲉⲩ ⲉⲧϥ̄ⲁⲟⲩⲱ ⲉϩⲑⲃ̄ⲓ̈ⲟ ⲙⲙⲁⲩ ϣⲁϩⲃⲓ ϣⲁϣⲧ ⲛ̄ⲧⲟ",
       "core_english": "The hour when he has finished humbling them, he takes the keys from the hands",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1654,6 +2880,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩ ⲛ̄ⲛ̄ⲣⲱⲟⲩ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲥⲱⲙⲁ ⲛ̄ⲣⲱⲟⲩ ⲙⲉⲛ ⲉⲧⲁⲩⲟⲩ",
       "core_english": "of all the gates of the body. The gates that they had open-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1664,6 +2891,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲛ ⲙ̄ⲡⲓⲥⲏⲩ ⲁⲙⲫⲁⲛⲧⲁⲥⲓⲁ ⲛ̄ⲧⲉⲡⲓⲑⲩⲙⲓⲁ ⲁⲧⲣⲟⲩϫⲓ ⲁ",
       "core_english": "ed at this time to the fantasy of desire, that they might receive in-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate — phantasy of desire"
     },
@@ -1672,8 +2900,20 @@
       "chapter": 56,
       "line": 173,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲟⲩⲛ ⲛ̄ⲛⲑⲉⲱⲣⲓⲁ ⲛ̄ⲧⲍⲏⲁⲟⲛⲏ ⲁⲡⲱⲛⲕ̄ ⲁⲍⲟⲩⲛ ⲛⲛ{248}",
-      "core_english": "ward the visions of pleasure, to scoop inward the {249}",
+      "core_coptic": "ⲍⲟⲩⲛ ⲛ̄ⲛⲑⲉⲱⲣⲓⲁ ⲛ̄ⲧⲍⲏⲁⲟⲛⲏ ⲁⲡⲱⲛⲕ̄ ⲁⲍⲟⲩⲛ ⲛⲛ{125}",
+      "core_english": "ward the visions of pleasure, to scoop inward the {125}",
+      "apparatus": [
+        {
+          "id": 125,
+          "segment": 173,
+          "type": "restoration",
+          "coptic": "ⲥⲉ",
+          "english": "wor-",
+          "basis": "ⲥⲉϫⲉ 'words' (Lyc. for ϣⲁϫⲉ); restoration of ⲥⲉ-.",
+          "source_id": 129,
+          "section": 3564
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1682,8 +2922,30 @@
       "chapter": 56,
       "line": 174,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϫⲉ ⲛ̄ⲧⲙⲉⲗⲉⲧⲁ ⲛ̄ⲛ̄ⲣⲁⲩϣ ⲙ̄ⲡⲃⲓ{250}ⲥ ⲁϫⲓ ⲁⲍⲟⲩⲛ ⲛⲛ̄ϯ{251}",
-      "core_english": "words of the meditation of the cares of the bi{252}os, to take inward the ta{253}-",
+      "core_coptic": "ϫⲉ ⲛ̄ⲧⲙⲉⲗⲉⲧⲁ ⲛ̄ⲛ̄ⲣⲁⲩϣ ⲙ̄ⲡⲃⲓ{126}ⲥ ⲁϫⲓ ⲁⲍⲟⲩⲛ ⲛⲛ̄ϯ{127}",
+      "core_english": "words of the meditation of the cares of the bi{126}os, to take inward the ta{127}-",
+      "apparatus": [
+        {
+          "id": 126,
+          "segment": 174,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "o",
+          "basis": "Single letter restored within Greek ⲡⲃⲓⲟⲥ = βίος 'life.'",
+          "source_id": 130,
+          "section": 3565
+        },
+        {
+          "id": 127,
+          "segment": 174,
+          "type": "restoration",
+          "coptic": "ⲡⲉ",
+          "english": "(syllable ⲡⲉ in ϯⲡⲉ)",
+          "basis": "ϯⲡⲉ 'taste' (already in glossary); -ⲡⲉ restored.",
+          "source_id": 131,
+          "section": 3565
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1694,6 +2956,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛ̄ⲧⲣⲟⲫⲁⲩⲉ ⲉⲧϣⲃ̄ⲓⲁⲓ̈ⲧ ⲛⲧⲉ ⲍⲛⲟⲟⲩⲱⲙ ⲉⲧϫⲁⲍⲙⲉ",
       "core_english": "stes of the various foods of the defiled eatings,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1702,8 +2965,20 @@
       "chapter": 56,
       "line": 176,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲍⲁⲛ ⲡⲛⲁⲃⲉ ⲉⲧⲛ̄ⲍⲏⲧϥ̄ ⲡⲉⲧⲟⲩⲱ ⲉϩϫⲓ ⲁⲍⲟⲩⲛ ⲙ̄ⲡⲉ{254}",
-      "core_english": "and unto Sin that is within him, that-which-begins to take inward th{255}is —",
+      "core_coptic": "ⲁⲍⲁⲛ ⲡⲛⲁⲃⲉ ⲉⲧⲛ̄ⲍⲏⲧϥ̄ ⲡⲉⲧⲟⲩⲱ ⲉϩϫⲓ ⲁⲍⲟⲩⲛ ⲙ̄ⲡⲉ{128}",
+      "core_english": "and unto Sin that is within him, that-which-begins to take inward th{128}is —",
+      "apparatus": [
+        {
+          "id": 128,
+          "segment": 176,
+          "type": "restoration",
+          "coptic": "ⲓ̈",
+          "english": "(letter ⲓ̈)",
+          "basis": "ⲡⲉⲓ̈ 'this'; single letter restored.",
+          "source_id": 132,
+          "section": 3567
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate"
     },
@@ -1714,6 +2989,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲉ ⲡϥ̄ⲍⲏⲧ ⲧⲏⲣϥ̄ ⲥⲱⲕ ⲛ̄ⲥⲱϩ",
       "core_english": "his entire heart drawing after him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate"
     }

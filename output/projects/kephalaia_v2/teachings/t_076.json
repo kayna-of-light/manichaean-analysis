@@ -5,7 +5,7 @@
   "start_section": 4475,
   "end_section": 4496,
   "total_sections": 22,
-  "total_lacunae": 56,
+  "total_lacunae": 28,
   "segments": [
     {
       "section": 4475,
@@ -13,7 +13,29 @@
       "line": 3,
       "classification": "mixed",
       "core_coptic": "{0} ⲙ̄ⲡⲧⲱⲛⲥ ... ⲉⲧⲃⲉ ⲡⲧ{1}",
-      "core_english": "{2} concerning the Awakening, ... about the Cal{3}",
+      "core_english": "{0} concerning the Awakening, ... about the Cal{1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲭⲉ",
+          "english": "Saying:",
+          "basis": "Lyc. ⲭⲉ = ϫⲉ, opening complementizer/quotative; single-letter restoration.",
+          "source_id": 6,
+          "section": 4475
+        },
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲱϩ",
+          "english": "ling",
+          "basis": "ⲡⲧ[ⲱϩ]ⲙⲉ = ⲡⲧⲱϩⲙⲉ 'the Calling' (in glossary), confirmed by line 2 continuation ⲙⲉ + ⲡⲥⲱⲧⲙⲉ pair.",
+          "source_id": 7,
+          "section": 4475
+        }
+      ],
       "removed_material": "Frame attribution 'he said again to them in this manner' stripped; substantive topic ('concerning the Awakening... about the Calling') retained as it defines the teaching unit.",
       "temporal_note": "Topic introduction — Calling and Awakening are cosmic substrate concepts."
     },
@@ -22,8 +44,30 @@
       "chapter": 75,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲭⲉ ⲉⲕⲓⲁ ⲡⲧⲱϩⲙⲉ ⲉⲧⲁⲩⲧⲛ̄ⲛⲁⲩ{5}",
-      "core_english": "{6} and the Hearing, saying: 'As for the Calling that they sent {7}",
+      "core_coptic": "{2} ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲭⲉ ⲉⲕⲓⲁ ⲡⲧⲱϩⲙⲉ ⲉⲧⲁⲩⲧⲛ̄ⲛⲁⲩ{3}",
+      "core_english": "{2} and the Hearing, saying: 'As for the Calling that they sent {3}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "ling",
+          "basis": "Final letters of ⲡⲧⲱϩⲙⲉ continuing from line 1.",
+          "source_id": 8,
+          "section": 4476
+        },
+        {
+          "id": 3,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ϩ ⲁ",
+          "english": " forth",
+          "basis": "ⲧⲛ̄ⲛⲁⲩ[ϩ ⲁ]ⲃⲁⲗ 'sent forth' — completing standard verb-phrase confirmed by ⲃⲁⲗ at line 3 start.",
+          "source_id": 9,
+          "section": 4476
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Calling/Hearing pair — cosmic correspondential dyad. Begins teaching of the first letter."
     },
@@ -32,8 +76,20 @@
       "chapter": 75,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲁⲗ ⲙ̄ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ̄ ⲛ̄ⲧϩⲟⲩⲓ̈ⲧⲉ ⲁϩⲭⲁⲩϩ {8}",
-      "core_english": "forth from the Living Spirit at the first — they placed him {9}",
+      "core_coptic": "ⲃⲁⲗ ⲙ̄ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ̄ ⲛ̄ⲧϩⲟⲩⲓ̈ⲧⲉ ⲁϩⲭⲁⲩϩ {4}",
+      "core_english": "forth from the Living Spirit at the first — they placed him {4}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁⲡⲱϣⲡⲧ",
+          "english": "to the molding",
+          "basis": "ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ 'molding of man' confirmed by line 4 ⲛ̄ⲣⲱⲙⲉ; standard Manichaean compound.",
+          "source_id": 10,
+          "section": 4477
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit (ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ) — major cosmic figure of Manichaean substrate."
     },
@@ -42,8 +98,20 @@
       "chapter": 75,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲟⲩⲉⲡⲓⲥⲧⲟⲗⲏ ⲧⲉ ⲛ̄ⲉⲓⲣⲏⲛⲏ ϩⲓ ⲁⲥⲡⲁⲥ{10}",
-      "core_english": "of man — it is a letter of peace and gree{11}",
+      "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲟⲩⲉⲡⲓⲥⲧⲟⲗⲏ ⲧⲉ ⲛ̄ⲉⲓⲣⲏⲛⲏ ϩⲓ ⲁⲥⲡⲁⲥ{5}",
+      "core_english": "of man — it is a letter of peace and gree{5}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲙⲟⲥ",
+          "english": "ting",
+          "basis": "ⲁⲥⲡⲁⲥ[ⲙⲟⲥ] = ἀσπασμός 'greeting' — standard restoration.",
+          "source_id": 11,
+          "section": 4478
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The cosmic letter (epistolē) of peace — the structural metaphor of the teaching."
     },
@@ -52,8 +120,30 @@
       "chapter": 75,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲧⲁϩⲥⲁϩⲥ̄ ⲁϩⲭⲁⲩⲥ̄ ϣⲁ ⲡⲉϩⲥⲁⲛ {12}ⲉⲧⲉⲣⲉ ⲛ̄{13}",
-      "core_english": "which one wrote and sent unto his brother, {14}in which all the {15}",
+      "core_coptic": "ⲧⲉⲧⲁϩⲥⲁϩⲥ̄ ⲁϩⲭⲁⲩⲥ̄ ϣⲁ ⲡⲉϩⲥⲁⲛ {6}ⲉⲧⲉⲣⲉ ⲛ̄{7}",
+      "core_english": "which one wrote and sent unto his brother, {6}in which all the {7}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "",
+          "basis": "[ⲧ]ⲉⲧⲉⲣⲉ — relative converter; single-letter restoration.",
+          "source_id": 12,
+          "section": 4479
+        },
+        {
+          "id": 7,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲁⲅⲅⲉ",
+          "english": "tid-",
+          "basis": "ⲛ̄[ⲁⲅⲅⲉ]ⲗⲓⲁ = ἀγγελία 'tidings, message' — confirmed by ⲗⲓⲁ at line 6 start.",
+          "source_id": 13,
+          "section": 4479
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the letter-correspondence."
     },
@@ -64,6 +154,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲥⲏϩ ⲁⲡⲓⲧⲛⲉ ⲁⲣⲁⲥ ⲙⲛ̄ ϩⲱⲃ ⲛⲓⲙ ⲉⲧⲛⲁ",
       "core_english": "tidings are written down upon it together with everything that shall",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Inscribed contents of the cosmic letter."
     },
@@ -72,8 +163,40 @@
       "chapter": 75,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲉ ⲁⲣⲁⲩ ⲁⲥⲙⲛⲧⲟⲩ ϩⲙ̄ ⲡⲓ̈ⲧⲱϩⲙⲉ {17} {18}",
-      "core_english": "{19} to them — she established them in that Calling {20}; this {21}",
+      "core_coptic": "{8}ⲉ ⲁⲣⲁⲩ ⲁⲥⲙⲛⲧⲟⲩ ϩⲙ̄ ⲡⲓ̈ⲧⲱϩⲙⲉ {9} {10}",
+      "core_english": "{8} to them — she established them in that Calling {9}; this {10}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ϣⲱⲡ",
+          "english": "happen",
+          "basis": "[ϣⲱⲡ]ⲉ continues ⲉⲧⲛⲁ-ϣⲱⲡⲉ 'shall happen' from line 6 end.",
+          "source_id": 14,
+          "section": 4481
+        },
+        {
+          "id": 9,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙ",
+          "english": "that",
+          "basis": "[ⲉⲧⲙ̄]ⲙⲉⲩ — standard demonstrative 'there/that'.",
+          "source_id": 15,
+          "section": 4481
+        },
+        {
+          "id": 10,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲡⲓ",
+          "english": "this",
+          "basis": "Beginning of ⲡⲓⲧⲱϩⲙⲉ 'this Calling'; continues into line 8.",
+          "source_id": 16,
+          "section": 4481
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The Calling establishes — substrate cosmogonic act."
     },
@@ -82,8 +205,28 @@
       "chapter": 75,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22}ϩⲙⲉ ⲉⲧⲙⲙⲉⲩ ⲛ̄ⲧⲁ ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ {23}",
-      "core_english": "{24}Calling there which the molding of man {25}",
+      "core_coptic": "{11}ϩⲙⲉ ⲉⲧⲙⲙⲉⲩ ⲛ̄ⲧⲁ ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ {12}",
+      "core_english": "{11}Calling there which the molding of man {12}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲧⲱ",
+          "english": "Cal-",
+          "basis": "[ⲧⲱ]ϩⲙⲉ — middle of ⲡⲓⲧⲱϩⲙⲉ from line 7.",
+          "source_id": 17,
+          "section": 4482
+        },
+        {
+          "id": 12,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 18,
+          "section": 4482
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Molding of man (ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ) — cosmic figure."
     },
@@ -92,8 +235,20 @@
       "chapter": 75,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26}ϩⲛⲏⲩⲧ ⲁϣⲱⲡⲉ",
-      "core_english": "{27} stands written, has come to be.",
+      "core_coptic": "{13}ϩⲛⲏⲩⲧ ⲁϣⲱⲡⲉ",
+      "core_english": "{13} stands written, has come to be.",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": ". ⲥ",
+          "english": "[ ] is",
+          "basis": "Visible ⲥϩⲛⲏⲩⲧ may be a qualitative form of ⲥϩⲁⲓ 'be written' (compare ⲥⲏϩ in adjacent lines); transcription marks one preceding character lost.",
+          "source_id": 19,
+          "section": 4483
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes first letter unit."
     },
@@ -102,8 +257,20 @@
       "chapter": 75,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲟⲩ{28}",
-      "core_english": "The An{29}",
+      "core_coptic": "ⲧⲟⲩ{14}",
+      "core_english": "The An{14}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲱϣⲃ ⲉⲧⲁⲩⲭⲁⲩϩ ⲁⲃⲁⲗ",
+          "english": "swer that they set forth",
+          "basis": "Editor's restoration: ⲧⲟⲩ[ⲱϣⲃ] = ⲡⲟⲩⲱϣⲃ 'the Answer' (in glossary), parallel to the Calling sent earlier; ⲁⲩⲭⲁⲩϩ ⲁⲃⲁⲗ 'they set forth' parallels ⲁϩⲭⲁⲩϩ in line 3.",
+          "source_id": 20,
+          "section": 4484
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Opens second letter (the Answer = ⲡⲟⲩⲱϣⲃ)."
     },
@@ -112,8 +279,30 @@
       "chapter": 75,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{30}ϣⲁⲣⲡⲧ ⲛ̄ⲣⲱⲙⲉ ⲁϩⲉⲓ ⲁⲡⲭⲓ{31}",
-      "core_english": "{32}First Man, came up to the Heigh{33}",
+      "core_coptic": "{15}ϣⲁⲣⲡⲧ ⲛ̄ⲣⲱⲙⲉ ⲁϩⲉⲓ ⲁⲡⲭⲓ{16}",
+      "core_english": "{15}First Man, came up to the Heigh{16}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲙⲡ",
+          "english": "from the",
+          "basis": "[ⲙⲡ]ϣⲁⲣⲡⲧ — preposition + 'first', completing ⲙ̄ⲡⲱⲁⲣⲡⲧ ⲛ̄ⲣⲱⲙⲉ 'from the First Man'.",
+          "source_id": 21,
+          "section": 4485
+        },
+        {
+          "id": 16,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲁⲡⲭⲓⲥⲉ ϣⲁ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ̄",
+          "english": "t up to the Living Spirit",
+          "basis": "Editor's restoration: ⲁⲡⲭⲓⲥⲉ 'to the Height' (in glossary as ⲡⲧⲭⲓⲥⲉ) + ϣⲁ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ̄ 'unto the Living Spirit' — standard cosmological ascent vocabulary mirroring line 3.",
+          "source_id": 22,
+          "section": 4485
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man ascending to the Height — pure substrate cosmography."
     },
@@ -122,8 +311,30 @@
       "chapter": 75,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34}ⲩⲉⲡⲓⲥⲧⲟⲗⲏ ϩⲱϩ ⲁⲛ ⲡⲉ ⲡⲉⲧⲙⲙⲉⲩ {35}",
-      "core_english": "{36} letter too is that one {37}",
+      "core_coptic": "{17}ⲩⲉⲡⲓⲥⲧⲟⲗⲏ ϩⲱϩ ⲁⲛ ⲡⲉ ⲡⲉⲧⲙⲙⲉⲩ {18}",
+      "core_english": "{17} letter too is that one {18}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "a",
+          "basis": "[ⲟ]ⲩⲉⲡⲓⲥⲧⲟⲗⲏ — indefinite article + epistolē; single-letter restoration.",
+          "source_id": 23,
+          "section": 4486
+        },
+        {
+          "id": 18,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲁⲩⲧⲛⲛⲁϩ ⲁⲃⲁⲗ ⲙ",
+          "english": "which was sent forth from",
+          "basis": "Editor's restoration: standard relative-perfect 'that they sent forth' parallel to lines 2-3; required by ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ in line 12.",
+          "source_id": 24,
+          "section": 4486
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second letter introduced parallel to the first."
     },
@@ -132,8 +343,20 @@
       "chapter": 75,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ ϣⲁ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ {38}",
-      "core_english": "the molding of man unto the Living Spirit, {39}",
+      "core_coptic": "ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ ϣⲁ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ {19}",
+      "core_english": "the molding of man unto the Living Spirit, {19}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲉⲣⲉ ⲛⲁⲅⲅⲉⲗⲓⲁ",
+          "english": "in which the tidings",
+          "basis": "Standard formula 'in which all the tidings... are written down' parallels lines 4-5; relative + ⲁⲅⲅⲉⲗⲓⲁ confirmed by ⲧⲏⲣⲟⲩ ⲥⲏϩ in line 13.",
+          "source_id": 25,
+          "section": 4487
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic dyad: molding of man → Living Spirit. Both within cosmic system."
     },
@@ -142,8 +365,20 @@
       "chapter": 75,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲣⲟⲩ ⲥⲏϩ ⲁⲡⲓⲧⲛⲉ ⲁⲣⲁⲥ ⲙⲛ̄ ⲛ̄ⲡⲟ{40}",
-      "core_english": "all are written down upon it together with the wa{41}",
+      "core_coptic": "ⲧⲏⲣⲟⲩ ⲥⲏϩ ⲁⲡⲓⲧⲛⲉ ⲁⲣⲁⲥ ⲙⲛ̄ ⲛ̄ⲡⲟ{20}",
+      "core_english": "all are written down upon it together with the wa{20}",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲗⲉⲙⲟⲥ ⲧⲏⲣⲟⲩ",
+          "english": "rs all",
+          "basis": "ⲛ̄ⲡⲟ[ⲗⲉⲙⲟⲥ ⲧⲏⲣⲟⲩ] 'all the wars' — standard Manichaean cosmic-conflict reference; required by line 14 ⲙⲗⲁϩ 'strifes' continuation.",
+          "source_id": 26,
+          "section": 4488
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Contents of the answer letter inscribed."
     },
@@ -152,8 +387,19 @@
       "chapter": 75,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲛ̄ⲙ̄ⲁ̄ⲟⲟϩ ⲉⲧⲁϩⲉⲓ̈ⲧⲟⲩ ⲛ̄ⲧⲁⲥⲧⲁ{42}",
-      "core_english": "and the strifes that came upon them, that they returned {43}",
+      "core_coptic": "ⲙⲛ̄ ⲛ̄ⲙ̄ⲁ̄ⲟⲟϩ ⲉⲧⲁϩⲉⲓ̈ⲧⲟⲩ ⲛ̄ⲧⲁⲥⲧⲁ{21}",
+      "core_english": "and the strifes that came upon them, that they returned {21}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": ".",
+          "source_id": 27,
+          "section": 4489
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Strifes/wars suffered by molding of man — cosmic conflict."
     },
@@ -162,8 +408,26 @@
       "chapter": 75,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ϩⲙ̄ ⲡⲟⲩⲱϣⲃ ⲉⲧⲁ ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ {45}",
-      "core_english": "{46} in the Answer which the molding of man {47}",
+      "core_coptic": "{22} ϩⲙ̄ ⲡⲟⲩⲱϣⲃ ⲉⲧⲁ ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱⲙⲉ {23}",
+      "core_english": "{22} in the Answer which the molding of man {23}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 28,
+          "section": 4490
+        },
+        {
+          "id": 23,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 29,
+          "section": 4490
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Answer (ⲡⲟⲩⲱϣⲃ) of molding of man — cosmic action."
     },
@@ -172,8 +436,29 @@
       "chapter": 75,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧ{48} ϩⲛ ϩⲱⲃ ⲛⲓⲙ ⲉⲁϩϣⲱⲡⲉ ⲙⲛ̄ ϩⲱⲃ ⲛⲓⲙ {49}",
-      "core_english": "{50} in everything that has happened, with everything {51}",
+      "core_coptic": "ⲧ{24} ϩⲛ ϩⲱⲃ ⲛⲓⲙ ⲉⲁϩϣⲱⲡⲉ ⲙⲛ̄ ϩⲱⲃ ⲛⲓⲙ {25}",
+      "core_english": "{24} in everything that has happened, with everything {25}",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": ". .",
+          "source_id": 30,
+          "section": 4491
+        },
+        {
+          "id": 25,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲉϩⲛⲁϣⲱⲡⲉ",
+          "english": "that shall happen",
+          "basis": "Editor's restoration; standard pair 'everything that has happened and everything that shall happen' confirmed by ⲉⲁϩϣⲱⲡⲉ in same line.",
+          "source_id": 31,
+          "section": 4491
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the inventory written in the cosmic letter."
     },
@@ -182,8 +467,20 @@
       "chapter": 75,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{52}ⲉⲧⲁⲩⲉⲓ̈ⲧϩ ⲧⲏⲣϥ̄ ⲙⲛ̄ ⲡⲉⲧⲥⲃⲧⲁⲓ̈ⲧ ⲁⲧⲟⲩⲉⲉϩ ⲛ̄ϩⲏⲧϩ",
-      "core_english": "{53} all that has come, and that which is prepared to be added unto him.",
+      "core_coptic": "{26}ⲉⲧⲁⲩⲉⲓ̈ⲧϩ ⲧⲏⲣϥ̄ ⲙⲛ̄ ⲡⲉⲧⲥⲃⲧⲁⲓ̈ⲧ ⲁⲧⲟⲩⲉⲉϩ ⲛ̄ϩⲏⲧϩ",
+      "core_english": "{26} all that has come, and that which is prepared to be added unto him.",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "[ⲡ]ⲉⲧⲁⲩⲉⲓ̈ⲧϩ — definite-article restoration before relative substantive.",
+          "source_id": 32,
+          "section": 4492
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic process language — what has come and what is to be added."
     },
@@ -192,8 +489,20 @@
       "chapter": 75,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ̄ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ ⲙⲙⲉ ⲁⲙⲡⲟⲗⲉⲙⲟⲥ ⲧ{54}ⲩ ⲙⲛ̄ ⲛⲕⲓⲛⲁⲩ",
-      "core_english": "The Living Spirit knows about all the wars{55} and the dange-",
+      "core_coptic": "ⲁ̄ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲥ ⲙⲙⲉ ⲁⲙⲡⲟⲗⲉⲙⲟⲥ ⲧ{27}ⲩ ⲙⲛ̄ ⲛⲕⲓⲛⲁⲩ",
+      "core_english": "The Living Spirit knows about all the wars{27} and the dange-",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲏⲣⲟ",
+          "english": " ",
+          "basis": "ⲧ[ⲏⲣⲟ]ⲩ 'all' — middle letters of ⲧⲏⲣⲟⲩ.",
+          "source_id": 33,
+          "section": 4493
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit's cosmic knowledge — substrate."
     },
@@ -204,6 +513,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲥ ⲙⲛ̄ ⲛⲁⲅⲱⲛ ⲉⲧⲁ ⲛ̄ⲁⲣⲭⲱⲛ ⲉⲓ̈ⲧⲟⲩ ⲙⲛ̄ ⲡⲱϣⲡⲧ ⲛ̄ⲣⲱ",
       "core_english": "rs and the contests which the archons brought against the molding of m-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Archons vs molding of man — pure cosmic conflict, both sides internal to the system."
     },
@@ -214,6 +524,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲉ",
       "core_english": "an.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Completes 'man'."
     },
@@ -224,6 +535,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲛⲟⲩⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲁⲛ ⲉⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲙ̄ⲡⲭⲣⲓⲥ",
       "core_english": "The Mind of Light too, which came forth from the Christ",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mind of Light (Nous of Light) emanating from Christ — cosmic substrate. The 'too' (ⲁⲛ) introduces the third iteration; its cosmic origin is substrate, but the destination shifts to ecclesial in the next segment."
     }

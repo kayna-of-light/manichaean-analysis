@@ -5,7 +5,7 @@
   "start_section": 600,
   "end_section": 631,
   "total_sections": 32,
-  "total_lacunae": 62,
+  "total_lacunae": 31,
   "segments": [
     {
       "section": 600,
@@ -13,7 +13,19 @@
       "line": 4,
       "classification": "mixed",
       "core_coptic": "{0}ⲏ ⲛ̄ⲛ̄ⲍⲙⲁⲧ ⲧⲏⲣⲟⲩ ⲉⲧⲁⲛⲓⲧ ⲡⲉ ⲡ",
-      "core_english": "the {1} of all the beautiful gifts is the",
+      "core_english": "the {0} of all the beautiful gifts is the",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲣⲭ",
+          "english": "beginning",
+          "basis": "Editor restores ⲧⲁⲣⲭⲏ; the chapter's structuring formula 'beginning of X is Y' is repeated throughout.",
+          "source_id": 5,
+          "section": 600
+        }
+      ],
       "removed_material": "Removed vocative 'my beloved' (ⲁⲙⲉⲣⲉⲧⲉ) — hortatory address. Kept the substrate teaching opening which states the systematic principle: all the beautiful gifts derive from [the Great Father of Lights].",
       "temporal_note": "Pivot point — vocative addresses audience, then teaching begins. The teaching itself states the chapter's organizing principle."
     },
@@ -22,8 +34,40 @@
       "chapter": 11,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲁⲟ̄ ⲛ̄ⲓ̈ⲱⲧ ⲛ̄ⲛ̄{3}ⲛⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲉⲩⲧ ⲍⲓ̈ⲧⲟⲟⲧϩ̄ ⲛ̄ⲛ̄{4}",
-      "core_english": "Gr{5}eat Father of the Lig{6}hts, since by his hand are given all the {7}",
+      "core_coptic": "{1}ⲁⲟ̄ ⲛ̄ⲓ̈ⲱⲧ ⲛ̄ⲛ̄{2}ⲛⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲉⲩⲧ ⲍⲓ̈ⲧⲟⲟⲧϩ̄ ⲛ̄ⲛ̄{3}",
+      "core_english": "Gr{1}eat Father of the Lig{2}hts, since by his hand are given all the {3}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "",
+          "basis": "Plural article restored before ⲛⲁⲟ̄ 'great.'",
+          "source_id": 6,
+          "section": 601
+        },
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁⲓ̈",
+          "english": "",
+          "basis": "Editor restores -ⲟⲩⲁⲓ̈- completing ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ 'lights.'",
+          "source_id": 7,
+          "section": 601
+        },
+        {
+          "id": 3,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲍⲙⲁⲧ",
+          "english": "gifts",
+          "basis": "Editor restores ⲍⲙⲁⲧ (= ϩⲙⲟⲧ 'gift'); parallels line 26.",
+          "source_id": 8,
+          "section": 601
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the teaching — Great Father of Lights as source of all gifts. Pure cosmological mapping."
     },
@@ -32,8 +76,20 @@
       "chapter": 11,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲏⲣⲟⲩ",
-      "core_english": "{9}.",
+      "core_coptic": "{4}ⲏⲣⲟⲩ",
+      "core_english": "{4}.",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "all",
+          "basis": "Editor restores initial ⲧ- of ⲧⲏⲣⲟⲩ 'all.'",
+          "source_id": 9,
+          "section": 602
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment closing previous teaching unit."
     },
@@ -44,6 +100,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲣⲭⲏ ⲛ̄ⲥⲙⲟⲩ ⲛⲓ̈ⲙ ⲙⲛ̄ ⲛ̄ⲧⲱⲃⲍ̄ ⲧⲏⲣⲟⲩ",
       "core_english": "The beginning of every blessing and of all prayers",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲧⲁⲣⲭⲏ formula = substrate enumeration head."
     },
@@ -54,6 +111,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲧⲙⲟ ⲛ̄ⲧⲉ ⲡⲱⲛⲍ̄ ⲡⲱⲁⲣⲡ ⲙ̄ⲡⲛ̅ⲁ̅ ⲉⲧⲟⲩⲁⲃⲉ",
       "core_english": "is the Mother of Life, the foremost of the Holy Spirit.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mother of Life identified as origin of blessing/prayer — cosmic mapping."
     },
@@ -62,8 +120,30 @@
       "chapter": 11,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲁⲛⲓⲧ ⲡⲉ ⲡⲙ{11}",
-      "core_english": "{12} (counsels) is the {13}",
+      "core_coptic": "{5} ⲁⲛⲓⲧ ⲡⲉ ⲡⲙ{6}",
+      "core_english": "{5} (counsels) is the {6}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲣⲭⲏ ⲍⲱϩ ⲛ̄ⲛ̄ⲥⲩⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲉⲧ",
+          "english": "Likewise the beginning of all the beautiful counsels",
+          "basis": "Editor restoration of repeated structuring phrase; ⲍⲱϩ 'likewise' parallels ⲁⲍⲁⲛ throughout.",
+          "source_id": 10,
+          "section": 605
+        },
+        {
+          "id": 6,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲁⲍⲱⲁⲙⲧ",
+          "english": "Third",
+          "basis": "Editor restores ⲡⲙⲁⲍⲱⲁⲙⲧ 'third' completing the title 'Third Ambassador' continued in next line.",
+          "source_id": 11,
+          "section": 605
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavily damaged — appears to continue 'The beginning of X is Y' enumeration."
     },
@@ -72,8 +152,30 @@
       "chapter": 11,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲁⲡⲉⲁⲩ ⲉⲧⲕⲁⲁⲧ ⲍⲙ̄ ⲡ{15}",
-      "core_english": "{16}, the King of Glory who is set in the {17}",
+      "core_coptic": "{7} ⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲁⲡⲉⲁⲩ ⲉⲧⲕⲁⲁⲧ ⲍⲙ̄ ⲡ{8}",
+      "core_english": "{7}, the King of Glory who is set in the {8}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+          "english": "Ambassador",
+          "basis": "Editor restores -ⲥⲃⲉⲩⲧⲏ-; standard 'Third Ambassador.'",
+          "source_id": 12,
+          "section": 606
+        },
+        {
+          "id": 8,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲕⲟⲥⲙⲟⲥ",
+          "english": "cosmos",
+          "basis": "Editor restores -ⲕⲟⲥⲙⲟⲥ; ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the cosmos' fits remaining trace.",
+          "source_id": 13,
+          "section": 606
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲁⲡⲉⲁⲩ — King of Glory, classic substrate cosmic figure. Score=83."
     },
@@ -82,8 +184,19 @@
       "chapter": 11,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲙ̄ⲡⲣ̄ⲣⲟ ⲛ̄ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ",
-      "core_english": "{19} of the King of the Lights.",
+      "core_coptic": "{9} ⲙ̄ⲡⲣ̄ⲣⲟ ⲛ̄ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ",
+      "core_english": "{9} of the King of the Lights.",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "[ ] . . .",
+          "source_id": 14,
+          "section": 607
+        }
+      ],
       "removed_material": null,
       "temporal_note": "King of Lights — cosmic figure."
     },
@@ -94,6 +207,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲣⲭⲏ ⲛ̄",
       "core_english": "The beginning of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration head."
     },
@@ -102,8 +216,20 @@
       "chapter": 11,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ⲟ ⲛⲓ̈ⲙ ⲡⲉ ⲡⲙⲉⲣⲓ̈ⲧ ⲛ̄ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ",
-      "core_english": "{21} every (honor) is the Beloved of the Lights.",
+      "core_coptic": "{10}ⲟ ⲛⲓ̈ⲙ ⲡⲉ ⲡⲙⲉⲣⲓ̈ⲧ ⲛ̄ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ",
+      "core_english": "{10} every (honor) is the Beloved of the Lights.",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "[ . . . . . ⲙⲛ̄ ⲧⲁⲓ̈]ⲟ",
+          "english": "[... and] honor",
+          "basis": "Editor restores ⲧⲁⲓⲟ 'honor'; parallels closing ⲉⲡⲧⲁⲓ̈ⲁⲓ̈ⲧ 'the honor' in next line.",
+          "source_id": 15,
+          "section": 609
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Beloved of Lights — substrate enumeration."
     },
@@ -114,6 +240,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲡⲧⲁⲓ̈ⲁ",
       "core_english": "The hono-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Beginning of next enumeration unit."
     },
@@ -122,8 +249,20 @@
       "chapter": 11,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22}ⲣⲟⲩ ⲙⲛ̄ ⲛ̄ⲕⲩⲛⲏⲕⲟⲥ ⲡⲉ ⲡⲱⲁⲣⲡ ⲛ̄",
-      "core_english": "{23} and the hunters is the First",
+      "core_coptic": "{11}ⲣⲟⲩ ⲙⲛ̄ ⲛ̄ⲕⲩⲛⲏⲕⲟⲥ ⲡⲉ ⲡⲱⲁⲣⲡ ⲛ̄",
+      "core_english": "{11} and the hunters is the First",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "[ⲓ̈ⲧ ⲧⲁⲣⲭⲏ ⲛ̄ⲛ̄ⲟ̄ⲉⲣⲉⲟ̄ⲉ ⲧⲏ]ⲣⲟⲩ",
+          "english": "[ed. The beginning of all the watchers]",
+          "basis": "Editor restores ⲓ̈ⲧ completing ⲉⲡⲧⲁⲓ̈ⲁⲓ̈ⲧ; then ⲧⲁⲣⲭⲏ formula resumes; ⲛⲟ̄ⲉⲣⲉⲟ̄ⲉ tentatively 'watchers/guards' (ⲟⲩⲣⲏ⳿ⲏ?), pairs with ⲕⲩⲛⲏⲅⲟⲥ 'hunters.'",
+          "source_id": 16,
+          "section": 611
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Hunters → First [Man]; cosmic functional class mapped onto cosmic figure."
     },
@@ -132,8 +271,20 @@
       "chapter": 11,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24}ⲙⲗⲁⲍ ⲧⲏⲣⲟⲩ ⲡⲉ",
-      "core_english": "{25} of all the [warriors] he is.",
+      "core_coptic": "{12}ⲙⲗⲁⲍ ⲧⲏⲣⲟⲩ ⲡⲉ",
+      "core_english": "{12} of all the [warriors] he is.",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "[ⲣⲱⲙⲉ ] . . . . . [ⲛ̄]ⲭⲁⲙⲗⲁⲍ",
+          "english": "[Man ...] of the [warriors]",
+          "basis": "Editor restores ⲣⲱⲙⲉ completing ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'First Man'; ⲭⲁⲙⲗⲁⲍ unidentified, contextually 'warriors/wrestlers' paired with hunters and watchers.",
+          "source_id": 17,
+          "section": 612
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Warriors enumeration continues."
     },
@@ -142,8 +293,40 @@
       "chapter": 11,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26} ⲉⲧⲁⲛⲥ ⲡⲓⲱⲧ ⲛⲧⲉ {27}ⲱⲛⲥ ⲡⲉⲧⲁϩⲥⲱ{28}",
-      "core_english": "{29} which is alive, the Father of {30}life, who has poured out {31}",
+      "core_coptic": "{13} ⲉⲧⲁⲛⲥ ⲡⲓⲱⲧ ⲛⲧⲉ {14}ⲱⲛⲥ ⲡⲉⲧⲁϩⲥⲱ{15}",
+      "core_english": "{13} which is alive, the Father of {14}life, who has poured out {15}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲡⲡⲛⲁ",
+          "english": "the Spirit",
+          "basis": "Editor restoration; ⲡⲛⲉⲩⲙⲁ as subject of 'living, Father of life'",
+          "source_id": 18,
+          "section": 613
+        },
+        {
+          "id": 14,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Definite article restored; ⲡⲱⲛⲥ = 'the life'",
+          "source_id": 19,
+          "section": 613
+        },
+        {
+          "id": 15,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲣ ⲁⲃⲁⲗ",
+          "english": "forth",
+          "basis": "Standard idiom ⲥⲱⲣ ⲁⲃⲁⲗ 'pour/scatter forth'",
+          "source_id": 20,
+          "section": 613
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father of Life — cosmic figure with action of pouring out."
     },
@@ -152,8 +335,30 @@
       "chapter": 11,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32}ⲡⲉϩⲧⲟⲩ ⲛϣⲏⲣⲉ ⲕⲁⲧⲁ ⲙⲁ ⲙⲁ· Ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲁⲣⲭⲓⲧ{33}",
-      "core_english": "{34} five sons in every place. The Origin of all the archi{35}",
+      "core_coptic": "{16}ⲡⲉϩⲧⲟⲩ ⲛϣⲏⲣⲉ ⲕⲁⲧⲁ ⲙⲁ ⲙⲁ· Ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲁⲣⲭⲓⲧ{17}",
+      "core_english": "{16} five sons in every place. The Origin of all the archi{17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "his",
+          "basis": "Possessive prefix ⲙⲡⲉϩⲧⲟⲩ 'his five (sons)' is regular Lyc.",
+          "source_id": 21,
+          "section": 614
+        },
+        {
+          "id": 17,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲉⲕⲧⲱⲛ",
+          "english": "tects",
+          "basis": "Word division across line: ⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ ('architects')",
+          "source_id": 22,
+          "section": 614
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five Sons = canonical substrate enumeration; new ⲧⲁⲣⲭⲏ unit begins."
     },
@@ -164,6 +369,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣⲟⲩ ⲙⲛ ⲛⲉⲕⲁⲧⲉ ⲡⲉ ⲡⲛⲁⲃ ⲛⲉⲕⲱⲧ ⲉⲧⲟ ⲛ̄ⲉ",
       "core_english": "and the builders, is the Great Builder who is glori-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Builder — cosmic figure mapped onto class of architects/builders."
     },
@@ -174,6 +380,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩ",
       "core_english": "fied.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of 'glorified.'"
     },
@@ -182,8 +389,9 @@
       "chapter": 11,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲥⲟⲩⲓⲧ ⲥⲱϩ ⲛ̄ⲛⲱⲙⲟⲫⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲧⲉ ⲧⲙ{36}",
-      "core_english": "The unique upholder of all the Omophoroi of the {37}",
+      "core_coptic": "ⲡⲥⲟⲩⲓⲧ ⲥⲱϩ ⲛ̄ⲛⲱⲙⲟⲫⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲧⲉ ⲧⲙ{18}",
+      "core_english": "The unique upholder of all the Omophoroi of the {18}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲛⲱⲙⲟⲫⲟⲣⲟⲥ = Omophoros, canonical substrate cosmic upholder."
     },
@@ -192,8 +400,9 @@
       "chapter": 11,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38} Ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲣⲉϩⲃⲱⲗ {39}",
-      "core_english": "{40} The Origin of all the Releasers {41}",
+      "core_coptic": "{19} Ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲣⲉϩⲃⲱⲗ {20}",
+      "core_english": "{19} The Origin of all the Releasers {20}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲧⲁⲣⲭⲏ enumeration of Releasers — substrate."
     },
@@ -202,8 +411,9 @@
       "chapter": 11,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲏ ⲡⲉⲧⲃⲱⲗ ⲁⲃⲁⲗ ⲉϩⲧⲟⲩⲱ ⲛ̄ⲛⲉⲧⲏⲓⲧ {42}",
-      "core_english": "— or, the one who looses to raise those who are bound {43}",
+      "core_coptic": "ⲏ ⲡⲉⲧⲃⲱⲗ ⲁⲃⲁⲗ ⲉϩⲧⲟⲩⲱ ⲛ̄ⲛⲉⲧⲏⲓⲧ {21}",
+      "core_english": "— or, the one who looses to raise those who are bound {21}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Functional gloss on the Releaser's cosmic role — internal to system."
     },
@@ -214,6 +424,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲛ̄ ⲛⲉϩⲥⲉⲭⲉ",
       "core_english": "by his words.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the Releaser definition."
     },
@@ -224,6 +435,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲥⲟⲫⲓⲁ ⲧⲏⲣⲟⲩ ⲛⲧⲉ",
       "core_english": "The Origin of all the Wisdoms of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Next enumeration."
     },
@@ -232,8 +444,9 @@
       "chapter": 11,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲏⲉ ⲡⲉ ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ {44}",
-      "core_english": "the Truth, is the Virgin of Light. {45}",
+      "core_coptic": "ⲧⲙⲏⲉ ⲡⲉ ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ {22}",
+      "core_english": "the Truth, is the Virgin of Light. {22}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ = Virgin of Light, canonical substrate marker. Score=60."
     },
@@ -242,8 +455,9 @@
       "chapter": 11,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{46}ⲓⲥⲧⲁⲛⲟⲥ ⲧⲏⲣⲟⲩ ⲉⲧⲧⲁⲓⲁⲓⲧ {47}",
-      "core_english": "{48}ates who are honored {49}",
+      "core_coptic": "{23}ⲓⲥⲧⲁⲛⲟⲥ ⲧⲏⲣⲟⲩ ⲉⲧⲧⲁⲓⲁⲓⲧ {24}",
+      "core_english": "{23}ates who are honored {24}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged enumeration item."
     },
@@ -252,8 +466,9 @@
       "chapter": 11,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ ⲛⲧⲁϩ ⲡⲉ ⲡⲣⲉϩⲛⲉⲥⲥ{50}",
-      "core_english": "is the Mind of Light, he who is the awakener {51}",
+      "core_coptic": "ⲡⲉ ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ ⲛⲧⲁϩ ⲡⲉ ⲡⲣⲉϩⲛⲉⲥⲥ{25}",
+      "core_english": "is the Mind of Light, he who is the awakener {25}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ = Mind of Light, central substrate figure as awakener."
     },
@@ -262,8 +477,9 @@
       "chapter": 11,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛ̄ⲕⲁⲧⲉ· ⲡⲣⲉϩⲥⲱⲩⲥ ⲁⲥⲟⲩⲛ ⲛ̄ⲛⲉⲧⲭ{52}ⲣⲁⲧ ⲁⲃⲁⲗ",
-      "core_english": "sleepers; the gatherer-to-recognition of those {53}tered forth,",
+      "core_coptic": "ⲧⲛ̄ⲕⲁⲧⲉ· ⲡⲣⲉϩⲥⲱⲩⲥ ⲁⲥⲟⲩⲛ ⲛ̄ⲛⲉⲧⲭ{26}ⲣⲁⲧ ⲁⲃⲁⲗ",
+      "core_english": "sleepers; the gatherer-to-recognition of those {26}tered forth,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mind of Light's cosmic functions enumerated."
     },
@@ -272,8 +488,9 @@
       "chapter": 11,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲓⲉⲧϩ ⲙ̄ⲡⲉⲧⲉⲣⲉ ⲡⲓⲉⲥⲟ ⲛⲁⲃⲁⲓⲗⲉ ⲁⲣ{54}",
-      "core_english": "(reaching) to the feet of him in whom the eye is not blinded {55}",
+      "core_coptic": "ⲛⲉⲓⲉⲧϩ ⲙ̄ⲡⲉⲧⲉⲣⲉ ⲡⲓⲉⲥⲟ ⲛⲁⲃⲁⲓⲗⲉ ⲁⲣ{27}",
+      "core_english": "(reaching) to the feet of him in whom the eye is not blinded {27}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continues description of cosmic figure — eye not blinded."
     },
@@ -282,8 +499,9 @@
       "chapter": 11,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲛⲓⲁⲧⲉ· ⲧⲁⲭⲣⲟ ⲛⲥⲏⲧϩ ⲉⲡⲉⲓⲁⲏ ⲛⲧⲁⲩ ⲛ{56}",
-      "core_english": "of the eyes — established firm in him, since they are {57}",
+      "core_coptic": "ⲛ̄ⲛⲓⲁⲧⲉ· ⲧⲁⲭⲣⲟ ⲛⲥⲏⲧϩ ⲉⲡⲉⲓⲁⲏ ⲛⲧⲁⲩ ⲛ{28}",
+      "core_english": "of the eyes — established firm in him, since they are {28}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continues description."
     },
@@ -292,8 +510,9 @@
       "chapter": 11,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲟⲩⲁⲓⲛⲉ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲧⲁⲛⲱⲛⲥ ⲧⲏⲣⲟⲩ ⲉⲣⲉ ⲛ{58}",
-      "core_english": "all the lights and all the lives, while the {59}",
+      "core_coptic": "ⲛⲟⲩⲁⲓⲛⲉ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲧⲁⲛⲱⲛⲥ ⲧⲏⲣⲟⲩ ⲉⲣⲉ ⲛ{29}",
+      "core_english": "all the lights and all the lives, while the {29}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic totality — lights and lives."
     },
@@ -302,8 +521,9 @@
       "chapter": 11,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲧⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲥⲁⲧⲟⲟⲧⲟⲩ· ⲛⲉⲓⲉⲧϩ ⲙ̄ⲡⲉⲧⲛ{60}",
-      "core_english": "souls all are under their hand. (Coming) to the feet of him who {61}",
+      "core_coptic": "ⲛⲧⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲥⲁⲧⲟⲟⲧⲟⲩ· ⲛⲉⲓⲉⲧϩ ⲙ̄ⲡⲉⲧⲛ{30}",
+      "core_english": "souls all are under their hand. (Coming) to the feet of him who {30}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Souls under cosmic hierarchy — substrate."
     },
@@ -314,6 +534,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲱⲛⲟⲩ ⲛ̄ϩⲙⲟⲩⲛ ⲁⲃⲁⲗ ⲥⲙ ⲡⲟⲩⲛⲁⲥⲧⲉ· ⲭⲉ ⲉϩⲁⲕⲗⲏ",
       "core_english": "open them eight-fold out from their grip, that they may inher-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eight-fold opening — substrate cosmological number; release from cosmic grip."
     },
@@ -324,6 +545,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲟⲛⲟⲙⲏ ⲛⲉⲙⲉⲩ ⲙ̄ⲡⲱⲛⲥ ϣⲁⲁⲛⲏⲥⲉ ⲛ̄ⲛⲁⲛⲏⲥⲉ",
       "core_english": "it with them the life forever and ever.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of the Mind-of-Light teaching — eschatological language but internal to the cosmic redemption pattern, not pivoting to audience exhortation."
     }

@@ -5,7 +5,7 @@
   "start_section": 5183,
   "end_section": 5206,
   "total_sections": 24,
-  "total_lacunae": 98,
+  "total_lacunae": 49,
   "segments": [
     {
       "section": 5183,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲡϩⲧⲁⲩ ⲛ̄ⲧⲩⲡⲟⲥ ⲉⲧϣⲟⲟⲡ",
       "core_english": "Concerning the four types which exist",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title naming the cosmological topic — the four types/archetypes."
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣ̄ⲓⲁ ⲍⲙ ⲡⲃⲉⲗ ⲙⲛ ⲡⲙⲁⲍⲧⲟⲩ ⲉⲧⲍⲏⲡ ⲣ̄ⲓⲁ",
       "core_english": "ⲣ̄ⲓⲁ — in the eye and the fifth which is hidden — ⲣ̄ⲓⲁ",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title continuation: substantive correspondence — eye → four+fifth-hidden structure."
     },
@@ -33,7 +35,28 @@
       "line": 3,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲍⲏⲧⲟⲩ ⲭⲉ ⲉⲩⲏⲡ {0}ⲙ{1}",
-      "core_english": "within them; for they belong {2}m{3}",
+      "core_english": "within them; for they belong {0}m{1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲁⲛ",
+          "english": "again to ",
+          "basis": "editor's restoration; ⲁⲛ functions as 'also/again' linking what they belong to",
+          "source_id": 0,
+          "section": 5185
+        },
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲙ",
+          "source_id": 1,
+          "section": 5185
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Title closing — defines who the archetypes belong to."
     },
@@ -42,8 +65,20 @@
       "chapter": 111,
       "line": 4,
       "classification": "mixed",
-      "core_coptic": "ⲭⲉ ⲟⲩⲛ ϩⲧⲁⲩ ⲛⲉ{4}ⲛⲉ ϣⲟⲟⲡ ⲍⲛ",
-      "core_english": "There are four like{5}nesses existing in",
+      "core_coptic": "ⲭⲉ ⲟⲩⲛ ϩⲧⲁⲩ ⲛⲉ{2}ⲛⲉ ϣⲟⲟⲡ ⲍⲛ",
+      "core_english": "There are four like{2}nesses existing in",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "li",
+          "basis": "completing ⲛⲉⲓⲛⲉ 'likenesses' (Lyc plural of ⲡⲉⲓⲛⲉ per terminology guide)",
+          "source_id": 3,
+          "section": 5186
+        }
+      ],
       "removed_material": "Stripped 'again he said' attribution frame ({2} ⲁⲛ ⲡⲁⲭⲉϩ); kept substantive opening of the four-archetype teaching.",
       "temporal_note": "Per-segment apostolic_dialogue score 22.22 reflects ⲡⲁⲭⲉϩ frame formula. Teaching content preserved."
     },
@@ -52,8 +87,29 @@
       "chapter": 111,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6}ⲣⲱⲙⲉ ⲉⲧⲓ̈ⲱⲣⲍ̄ ⲉⲩⲓ̈ⲱⲍⲣ̄ ⲙ̄{7}",
-      "core_english": "{8}men who see while being seen {9}",
+      "core_coptic": "{3}ⲣⲱⲙⲉ ⲉⲧⲓ̈ⲱⲣⲍ̄ ⲉⲩⲓ̈ⲱⲍⲣ̄ ⲙ̄{4}",
+      "core_english": "{3}men who see while being seen {4}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "the ",
+          "basis": "definite article completing ⲛ̄ⲣⲱⲙⲉ 'the men'",
+          "source_id": 4,
+          "section": 5187
+        },
+        {
+          "id": 4,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 12,
+          "partial": ".[. . .] . . . ⲛⲕ. [. .]",
+          "source_id": 5,
+          "section": 5187
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological description — the seeing/being-seen reciprocity, characteristic of correspondential mapping."
     },
@@ -62,8 +118,36 @@
       "chapter": 111,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲣⲓⲥ ⲡϩⲧⲁⲩ ⲉⲧⲍⲏⲡ ⲛ̄ⲍⲏⲧⲟⲩ {11}ⲥⲉⲏⲡ {12}",
-      "core_english": "{13}ris — the four hidden in them {14}they belong {15}",
+      "core_coptic": "{5}ⲣⲓⲥ ⲡϩⲧⲁⲩ ⲉⲧⲍⲏⲡ ⲛ̄ⲍⲏⲧⲟⲩ {6}ⲥⲉⲏⲡ {7}",
+      "core_english": "{5}ris — the four hidden in them {6}they belong {7}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "ⲣⲓⲥ — possibly tail of preceding compound (-ⲣⲓⲥ)",
+          "source_id": 6,
+          "section": 5188
+        },
+        {
+          "id": 6,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 7,
+          "section": 5188
+        },
+        {
+          "id": 7,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ".[. .]",
+          "source_id": 8,
+          "section": 5188
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Restates the four-hidden-within-them topic structurally."
     },
@@ -72,8 +156,28 @@
       "chapter": 111,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ϣ ⲙⲉⲛ ⲉⲧⲍⲙ ⲡ{17}",
-      "core_english": "{18}sh, indeed, which is in the {19}",
+      "core_coptic": "{8}ϣ ⲙⲉⲛ ⲉⲧⲍⲙ ⲡ{9}",
+      "core_english": "{8}sh, indeed, which is in the {9}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ϣ — tail of preceding word",
+          "source_id": 9,
+          "section": 5189
+        },
+        {
+          "id": 9,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 15,
+          "partial": "zerstört (destroyed)",
+          "source_id": 10,
+          "section": 5189
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged enumeration fragment continuing the systematic mapping."
     },
@@ -82,8 +186,30 @@
       "chapter": 111,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ⲱϩ ⲉϩⲏⲡ ⲁⲧⲥⲉⲧⲉ ⲉⲣⲉ ⲡⲕⲉⲕⲉ ⲏⲡ ⲁⲡⲛⲟ{21}",
-      "core_english": "{22}, itself is hidden to the fire, while the Darkness belongs to the De{23}",
+      "core_coptic": "{10}ⲱϩ ⲉϩⲏⲡ ⲁⲧⲥⲉⲧⲉ ⲉⲣⲉ ⲡⲕⲉⲕⲉ ⲏⲡ ⲁⲡⲛⲟ{11}",
+      "core_english": "{10}, itself is hidden to the fire, while the Darkness belongs to the De{11}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲍⲱ",
+          "english": "Itself",
+          "basis": "completing ⲍⲱⲱϩ 'himself/itself' (Lyc reflexive ⲍⲱⲱϥ, per dialect notes)",
+          "source_id": 11,
+          "section": 5190
+        },
+        {
+          "id": 11,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲩⲛ",
+          "english": "ep",
+          "basis": "completing ⲡⲛⲟⲩⲛ 'the Deep' (per glossary) — standard Manichaean cosmological pole paired with the Height",
+          "source_id": 12,
+          "section": 5190
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic correspondence: hiddenness mapped to fire; Darkness mapped to (presumably) the deep/abyss. Pure cosmos→cosmos."
     },
@@ -92,8 +218,20 @@
       "chapter": 111,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲉ ⲍⲱⲱϩ ⲉⲧⲓ̈ⲱⲣⲍ ⲡⲉⲧⲍⲏⲡ ⲍⲛ̄ ⲛⲉⲓ̈ ⲧ{24}",
-      "core_english": "But the Light himself, who watches that which is hidden in all the{25}",
+      "core_coptic": "ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲉ ⲍⲱⲱϩ ⲉⲧⲓ̈ⲱⲣⲍ ⲡⲉⲧⲍⲏⲡ ⲍⲛ̄ ⲛⲉⲓ̈ ⲧ{12}",
+      "core_english": "But the Light himself, who watches that which is hidden in all the{12}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲏⲣⲟⲩ",
+          "english": "se all",
+          "basis": "completing ⲧⲏⲣⲟⲩ 'all of them'; editor's restoration",
+          "source_id": 13,
+          "section": 5191
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Light personified as cosmic agent watching the hidden — substrate voice."
     },
@@ -104,6 +242,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉϩⲣⲉⲟ̄ⲣⲉⲟ̄ ⲁⲃⲁⲗ ⲡⲉ ⲡⲁⲏⲣ ⲉⲧⲁⲛⲍ",
       "core_english": "watching forth — it is the Living Air",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Identification of cosmic entity: Living Air (ⲡⲁⲏⲣ ⲉⲧⲁⲛⲍ). Classic substrate identification clause."
     },
@@ -112,8 +251,20 @@
       "chapter": 111,
       "line": 11,
       "classification": "mixed",
-      "core_coptic": "ⲉⲧⲃⲉ ⲉⲩ ϣⲁⲣⲉ ⲧⲁⲗⲟⲩ ⲙⲡⲃⲉⲗ {26}",
-      "core_english": "Why does the pupil of the eye habitually {27}",
+      "core_coptic": "ⲉⲧⲃⲉ ⲉⲩ ϣⲁⲣⲉ ⲧⲁⲗⲟⲩ ⲙⲡⲃⲉⲗ {13}",
+      "core_english": "Why does the pupil of the eye habitually {13}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲓ̈ⲱⲣ",
+          "english": "see",
+          "basis": "completing ⲓ̈ⲱⲣⲍ̄ 'see' (per glossary ⲓ̈ⲱⲣⲍ); continues to line 21",
+          "source_id": 15,
+          "section": 5193
+        }
+      ],
       "removed_material": "Stripped 'again he said' attribution frame ({14} ⲁⲛ ⲡⲁⲭⲉϩ ⲭⲉ); kept the substantive cosmological question about the pupil of the eye.",
       "temporal_note": "Substantive question about eye-correspondence — the question itself defines the teaching topic and is substrate."
     },
@@ -122,8 +273,30 @@
       "chapter": 111,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28}ⲣⲍ̄ ⲙⲉⲛ ⲍⲙ̄ ⲡⲍⲟⲟⲩⲉ ⲉⲥⲡⲱⲍ ⲁⲉ ⲁⲧⲟⲩϣ{29}ⲥ",
-      "core_english": "{30}see indeed during the day, but reaching the nig{31}she does",
+      "core_coptic": "{14}ⲣⲍ̄ ⲙⲉⲛ ⲍⲙ̄ ⲡⲍⲟⲟⲩⲉ ⲉⲥⲡⲱⲍ ⲁⲉ ⲁⲧⲟⲩϣ{15}ⲥ",
+      "core_english": "{14}see indeed during the day, but reaching the nig{15}she does",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲍ ⲉϩⲓ̈ⲱ",
+          "english": "(by) seeing",
+          "basis": "completing ⲉϩⲓ̈ⲱⲣⲍ̄ 'while seeing' from line 20 ⲓ̈ⲱⲣ",
+          "source_id": 16,
+          "section": 5194
+        },
+        {
+          "id": 15,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲏ ⲙⲁ",
+          "english": "ht does ",
+          "basis": "completing ⲁⲧⲟⲩϣⲏ 'to the night' + negation ⲙⲁⲥ 'she does not (see)'",
+          "source_id": 17,
+          "section": 5194
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of question: day/night optical correspondence. ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ-related score is from greek loanword, not ecclesial."
     },
@@ -132,8 +305,30 @@
       "chapter": 111,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32} ⲁⲣⲁ ⲉⲣⲉ ⲡⲓⲍⲱⲃ ⲥⲏⲙⲁⲛⲉ ⲍⲁ ⲉϣ ⲛ̄ⲙⲩⲥⲧⲏⲣ{33}",
-      "core_english": "{34} not? What does this matter then signify, of what myster{35}",
+      "core_coptic": "{16} ⲁⲣⲁ ⲉⲣⲉ ⲡⲓⲍⲱⲃ ⲥⲏⲙⲁⲛⲉ ⲍⲁ ⲉϣ ⲛ̄ⲙⲩⲥⲧⲏⲣ{17}",
+      "core_english": "{16} not? What does this matter then signify, of what myster{17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲓ̈ⲱⲣⲭ",
+          "english": "see",
+          "basis": "editor's restoration ⲓ̈ⲱⲣⲭ (Lyc variant of ⲓ̈ⲱⲣⲍ); completes the negation construction",
+          "source_id": 18,
+          "section": 5195
+        },
+        {
+          "id": 17,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲓⲟⲛ",
+          "english": "y",
+          "basis": "completing ⲙⲩⲥⲧⲏⲣⲓⲟⲛ 'mystery'",
+          "source_id": 19,
+          "section": 5195
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Question completing — 'what mystery does this signify' — substantive correspondential inquiry."
     },
@@ -142,8 +337,34 @@
       "chapter": 111,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36}ⲉ ⲙⲁⲣⲉ ⲧⲁⲗⲟⲩ ⲙⲡⲃⲉⲗ{37}ⲟⲩ{38}",
-      "core_english": "{39} — let the pupil of the eye {40}them{41}",
+      "core_coptic": "{18}ⲉ ⲙⲁⲣⲉ ⲧⲁⲗⲟⲩ ⲙⲡⲃⲉⲗ{19}ⲟⲩ{20}",
+      "core_english": "{18} — let the pupil of the eye {19}them{20}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 22,
+          "section": 5196
+        },
+        {
+          "id": 19,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 23,
+          "section": 5196
+        },
+        {
+          "id": 20,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 24,
+          "section": 5196
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmological correspondence on the pupil of the eye continues."
     },
@@ -152,8 +373,44 @@
       "chapter": 111,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42} ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡ{43} ⲡ{44}ⲙⲉ {45}",
-      "core_english": "{46} the mystery of the {47} the {48}me {49}",
+      "core_coptic": "{21} ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡ{22} ⲡ{23}ⲙⲉ {24}",
+      "core_english": "{21} the mystery of the {22} the {23}me {24}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 25,
+          "section": 5197
+        },
+        {
+          "id": 22,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ". [. . .]",
+          "source_id": 26,
+          "section": 5197
+        },
+        {
+          "id": 23,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ". . .",
+          "source_id": 27,
+          "section": 5197
+        },
+        {
+          "id": 24,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 28,
+          "section": 5197
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Manichaean_ecclesial score (60) is misleading — ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ here is cosmological mystery-language, not church sacrament."
     },
@@ -162,8 +419,53 @@
       "chapter": 111,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{50}ⲉⲕ{51}ⲡⲉ ⲡⲣⲟ ⲟⲩ{52}ⲍⲛ{53}ⲃⲁⲗ {54}",
-      "core_english": "{55}ek{56} is the gate {57}in{58}forth {59}",
+      "core_coptic": "{25}ⲉⲕ{26}ⲡⲉ ⲡⲣⲟ ⲟⲩ{27}ⲍⲛ{28}ⲃⲁⲗ {29}",
+      "core_english": "{25}ek{26} is the gate {27}in{28}forth {29}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 29,
+          "section": 5198
+        },
+        {
+          "id": 26,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": ". .",
+          "source_id": 30,
+          "section": 5198
+        },
+        {
+          "id": 27,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲟⲩ . . .",
+          "source_id": 31,
+          "section": 5198
+        },
+        {
+          "id": 28,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ". . .",
+          "source_id": 32,
+          "section": 5198
+        },
+        {
+          "id": 29,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 33,
+          "section": 5198
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic gate identification — substrate."
     },
@@ -172,8 +474,36 @@
       "chapter": 111,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{60} ⲙⲡⲓⲧⲛⲉ {61}ⲛⲧ{62}",
-      "core_english": "{63} of the lower place {64}nt{65}",
+      "core_coptic": "{30} ⲙⲡⲓⲧⲛⲉ {31}ⲛⲧ{32}",
+      "core_english": "{30} of the lower place {31}nt{32}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 21,
+          "partial": ". . . . . . .",
+          "source_id": 34,
+          "section": 5199
+        },
+        {
+          "id": 31,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ". [. . .]. .",
+          "source_id": 35,
+          "section": 5199
+        },
+        {
+          "id": 32,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 36,
+          "section": 5199
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Lower-place cosmic geography."
     },
@@ -182,8 +512,37 @@
       "chapter": 111,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{66}ⲙⲡⲕⲉϩⲧⲁⲩ ⲛ̄ⲕⲗⲓⲙⲁ ⲉⲡ{67}ⲁⲏ ⲍⲙ ⲡⲡ{68}",
-      "core_english": "{69} of the other four climes, un{70}til the end, in the {71}",
+      "core_coptic": "{33}ⲙⲡⲕⲉϩⲧⲁⲩ ⲛ̄ⲕⲗⲓⲙⲁ ⲉⲡ{34}ⲁⲏ ⲍⲙ ⲡⲡ{35}",
+      "core_english": "{33} of the other four climes, un{34}til the end, in the {35}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 37,
+          "section": 5200
+        },
+        {
+          "id": 34,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲉⲓ",
+          "english": "to th",
+          "basis": "editor's restoration completing ⲉⲡⲉⲓⲁⲏ 'unto this end' (cf. glossary ⲡⲉⲓⲁⲏ 'this end')",
+          "source_id": 38,
+          "section": 5200
+        },
+        {
+          "id": 35,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲡ",
+          "source_id": 39,
+          "section": 5200
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Four climes — cosmological geographical mapping."
     },
@@ -192,8 +551,37 @@
       "chapter": 111,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{72}ⲉ{73}ⲁⲃⲁⲗ ⲙⲡⲥⲁⲛⲧⲡⲉ ⲁϩ{74}",
-      "core_english": "{75}e{76}forth from the upper place, ah{77}",
+      "core_coptic": "{36}ⲉ{37}ⲁⲃⲁⲗ ⲙⲡⲥⲁⲛⲧⲡⲉ ⲁϩ{38}",
+      "core_english": "{36}e{37}forth from the upper place, ah{38}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": ". . . . . .",
+          "source_id": 40,
+          "section": 5201
+        },
+        {
+          "id": 37,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ". .",
+          "source_id": 41,
+          "section": 5201
+        },
+        {
+          "id": 38,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "[. . . . . . .]",
+          "source_id": 42,
+          "section": 5201
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Upper place — cosmic geography paired with the lower of seg 18."
     },
@@ -202,8 +590,36 @@
       "chapter": 111,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{78}ⲛⲁⲟ̄{79} ⲁⲩⲭⲉ{80}",
-      "core_english": "{81}great{82} they {83}",
+      "core_coptic": "{39}ⲛⲁⲟ̄{40} ⲁⲩⲭⲉ{41}",
+      "core_english": "{39}great{40} they {41}",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 43,
+          "section": 5202
+        },
+        {
+          "id": 40,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": ". . .",
+          "source_id": 44,
+          "section": 5202
+        },
+        {
+          "id": 41,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "open bracket — line continues into destroyed area",
+          "source_id": 45,
+          "section": 5202
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged fragment in cosmological sequence."
     },
@@ -212,8 +628,28 @@
       "chapter": 111,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{84}ⲧⲁⲛⲧ ⲉⲧⲁⲩⲉ ⲁⲡⲓⲧ{85}",
-      "core_english": "{86} likened — they sent down{87}",
+      "core_coptic": "{42}ⲧⲁⲛⲧ ⲉⲧⲁⲩⲉ ⲁⲡⲓⲧ{43}",
+      "core_english": "{42} likened — they sent down{43}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "ⲧⲁⲛⲧ — possibly qualitative of ⲧⲛ̄ⲧⲱⲛ 'be likened'",
+          "source_id": 46,
+          "section": 5203
+        },
+        {
+          "id": 43,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 12,
+          "partial": "ⲛⲉ — completing ⲁⲡⲓⲧⲛⲉ 'downward' then zerstört",
+          "source_id": 47,
+          "section": 5203
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Likened' — correspondential mapping vocabulary; sending down — cosmological act."
     },
@@ -222,8 +658,27 @@
       "chapter": 111,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88}ⲡⲛⲉⲩ ⲙ{89}ⲉⲧⲁⲛⲍ",
-      "core_english": "{90}the moment(?) {91} who lives",
+      "core_coptic": "{44}ⲡⲛⲉⲩ ⲙ{45}ⲉⲧⲁⲛⲍ",
+      "core_english": "{44}the moment(?) {45} who lives",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 48,
+          "section": 5204
+        },
+        {
+          "id": 45,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ". . ",
+          "source_id": 49,
+          "section": 5204
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living-one fragment — substrate identification clause."
     },
@@ -232,8 +687,40 @@
       "chapter": 111,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{92}ⲁⲣⲡ ⲛⲣ{93}ⲙⲉ ⲁϥⲉⲓ ⲁⲃⲁⲗ ⲛⲍⲏⲧϥ ⲁϥⲥⲟⲩ{94}",
-      "core_english": "The {95}First {96}Man came forth from him; he {97}knew",
+      "core_coptic": "{46}ⲁⲣⲡ ⲛⲣ{47}ⲙⲉ ⲁϥⲉⲓ ⲁⲃⲁⲗ ⲛⲍⲏⲧϥ ⲁϥⲥⲟⲩ{48}",
+      "core_english": "The {46}First {47}Man came forth from him; he {48}knew",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲡϣ",
+          "english": "the F[irst]",
+          "basis": "Editor restoration; ⲡϣⲁⲣⲡ 'first'; standard cosmogonic title ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ 'First Man'",
+          "source_id": 50,
+          "section": 5205
+        },
+        {
+          "id": 47,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "(middle vowel)",
+          "basis": "Editor restoration; middle vowel of ⲣⲱⲙⲉ 'man'",
+          "source_id": 51,
+          "section": 5205
+        },
+        {
+          "id": 48,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(final letter of 'knew')",
+          "basis": "Editor restoration; final ⲛ of ⲁϥⲥⲟⲩⲛ 'he knew'",
+          "source_id": 52,
+          "section": 5205
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man (ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ) cosmogonic emergence — core substrate."
     },
@@ -244,6 +731,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲱⲃ ⲛⲓⲙ : —",
       "core_english": "every thing.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of cosmogonic statement — First Man knew every thing. Substrate completion."
     }

@@ -5,7 +5,7 @@
   "start_section": 1595,
   "end_section": 1621,
   "total_sections": 27,
-  "total_lacunae": 88,
+  "total_lacunae": 43,
   "segments": [
     {
       "section": 1595,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲧⲃⲉ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ̄ ⲙⲛ ⲡⲡⲣⲉⲥⲃⲉⲩ",
       "core_english": "Concerning the First Man and the Ambas-",
+      "apparatus": [],
       "removed_material": "Chapter number 26",
       "temporal_note": "Substantive cosmological topic — First Man and Ambassador/Third Messenger."
     },
@@ -24,6 +25,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲏⲥ ⲙⲛ̄ ⲡⲧⲭⲁⲓ̈ ⲭⲉ ⲉⲩⲛ̄ⲧⲁⲛⲧ ⲁⲉⲩ",
       "core_english": "sador and the abode: To what are they likened?",
+      "apparatus": [],
       "removed_material": "Question framing 'To what are they likened?' is substantive — defines the teaching topic.",
       "temporal_note": "Substantive question defining the teaching sequence — substrate."
     },
@@ -33,7 +35,29 @@
       "line": 3,
       "classification": "mixed",
       "core_coptic": "ⲉⲣⲉ ⲡϣⲁⲣⲡ ⲛ̄{0} ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲛⲁ{1}",
-      "core_english": "The First {2} is likened to a great {3}",
+      "core_english": "The First {0} is likened to a great {1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲣⲱⲙⲉ",
+          "english": "Man",
+          "basis": "editor's restoration; ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ = First Man (per accumulated vocabulary)",
+          "source_id": 0,
+          "section": 1597
+        },
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲟ ⲛ̄",
+          "english": "",
+          "basis": "editor's restoration completing ⲁⲩⲛⲁⲟ 'a great' ",
+          "source_id": 1,
+          "section": 1597
+        }
+      ],
       "removed_material": "Dialogue frame 'Ⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉϩ' / 'Once again he said:' stripped.",
       "temporal_note": "Frame attribution + teaching simile."
     },
@@ -42,8 +66,30 @@
       "chapter": 26,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲱⲙⲉ ⲛ̄ⲉⲡⲓⲥⲏⲙⲟⲥ ⲉⲁⲩⲃⲓ ⲡ{4} ⲛⲧⲟⲟⲧϩ ⲁ{5}",
-      "core_english": "famous man, whose {6} was taken from him; he {7}",
+      "core_coptic": "ⲣⲱⲙⲉ ⲛ̄ⲉⲡⲓⲥⲏⲙⲟⲥ ⲉⲁⲩⲃⲓ ⲡ{2} ⲛⲧⲟⲟⲧϩ ⲁ{3}",
+      "core_english": "famous man, whose {2} was taken from him; he {3}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲉϩⲭⲣⲏⲙⲁ",
+          "english": "property",
+          "basis": "editor's restoration; matches recurrence ⲡⲉϩⲭⲣⲏⲙⲁ in lines 31, 33",
+          "source_id": 2,
+          "section": 1598
+        },
+        {
+          "id": 3,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ϩⲉⲓ",
+          "english": "came",
+          "basis": "editor's restoration of the verb 'come' (3sg)",
+          "source_id": 3,
+          "section": 1598
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the parable of First Man as famous man whose sons/property are taken."
     },
@@ -52,8 +98,40 @@
       "chapter": 26,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ⳨ⲟⲩⲁⲓ̈ ⲥⲁ ⲡⲉϩⲭⲣⲏⲙⲁ Ⲧϩⲉ {8} ⲧⲉⲓ ⲉⲧⲁ ⲡ{9}",
-      "core_english": "{10} after his property. So {11} is the manner in which the {12}",
+      "core_coptic": "ⲁ⳨ⲟⲩⲁⲓ̈ ⲥⲁ ⲡⲉϩⲭⲣⲏⲙⲁ Ⲧϩⲉ {4} ⲧⲉⲓ ⲉⲧⲁ ⲡ{5}",
+      "core_english": "{6} after his property. So {4} is the manner in which the {5}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁⲛ ⲧⲉ",
+          "english": "also",
+          "basis": "editor's restoration; standard correlative formula Ⲧϩⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ",
+          "source_id": 4,
+          "section": 1599
+        },
+        {
+          "id": 5,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ϣⲁⲣⲡ",
+          "english": "First",
+          "basis": "editor's restoration matching ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ in continuation",
+          "source_id": 5,
+          "section": 1599
+        },
+        {
+          "id": 6,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁ⳨ⲟⲩⲁⲓ̈",
+          "english": "set out",
+          "basis": "tentative reading of ⲁ⳨ⲟⲩⲁⲓ̈ ⲥⲁ as a verb of pursuit/setting-out, parallel to ⲉⲓ ⲥⲁ 'come after' in line 32",
+          "source_id": 6,
+          "section": 1599
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Parabolic teaching, cosmic→cosmic mapping."
     },
@@ -62,8 +140,30 @@
       "chapter": 26,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲛⲧⲁϩ ⲉⲓ ⲥⲁ ⲛⲉϩⲱⲛⲏⲣⲉ ⲁ{13} ϩⲙ ⲡⲧⲭⲓⲥⲉ {14}",
-      "core_english": "Man came after his sons forth {15} from the Height, {16}",
+      "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲛⲧⲁϩ ⲉⲓ ⲥⲁ ⲛⲉϩⲱⲛⲏⲣⲉ ⲁ{7} ϩⲙ ⲡⲧⲭⲓⲥⲉ {8}",
+      "core_english": "Man came after his sons forth {7} from the Height, {8}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲃⲁⲗ",
+          "english": "",
+          "basis": "editor's restoration completing ⲁⲃⲁⲗ",
+          "source_id": 7,
+          "section": 1600
+        },
+        {
+          "id": 8,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲭⲉϩ",
+          "english": "because",
+          "basis": "editor's restoration; ⲭⲉ = causal conjunction",
+          "source_id": 8,
+          "section": 1600
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man descending from the Height after his sons — core mythic content."
     },
@@ -72,8 +172,40 @@
       "chapter": 26,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲥⲁⲧϩⲟⲩ ⲛϩⲛ ⲡⲉϩⲭⲣⲏⲙⲁ ⲉⲧⲁϩⲭⲣⲁⲣ{17} ⲁⲃⲁⲗ ⲟⲩⲧ{18}",
-      "core_english": "they had {19} them in his property which had been scattered{20} forth in the {21}",
+      "core_coptic": "ⲁⲥⲁⲧϩⲟⲩ ⲛϩⲛ ⲡⲉϩⲭⲣⲏⲙⲁ ⲉⲧⲁϩⲭⲣⲁⲣ{9} ⲁⲃⲁⲗ ⲟⲩⲧ{10}",
+      "core_english": "they had {11} them in his property which had been scattered{9} forth in the {10}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "editor's restoration completing ⲭⲣⲁⲣⲉ 'be scattered' ",
+          "source_id": 9,
+          "section": 1601
+        },
+        {
+          "id": 10,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲱⲩ",
+          "english": "hand",
+          "basis": "editor's restoration; ⲟⲩⲧⲱⲩ = 'in the midst/hand of' ",
+          "source_id": 10,
+          "section": 1601
+        },
+        {
+          "id": 11,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲁⲥⲁⲧϩⲟⲩ",
+          "english": "scattered",
+          "basis": "tentative; ⲥⲁⲧϩ probably a Lyc reflex of ⲥⲱⲣⲙ̄/ϣⲣ̄ϣⲣ̄ 'scatter, disperse,' fitting parallel ⲭⲣⲁⲣⲉ ⲁⲃⲁⲗ in same line",
+          "source_id": 11,
+          "section": 1601
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Property scattered — cosmic dispersion theme."
     },
@@ -84,6 +216,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛⲉϩⲭⲁⲭⲉ",
       "core_english": "of his enemies.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic enemies — Darkness."
     },
@@ -92,8 +225,19 @@
       "chapter": 26,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲁⲩⲃⲓ ⲡⲉϩⲱⲛⲏⲣⲉ ⲥⲛⲉⲩ ⲛ̄ⲧⲟⲟⲧϥ̄ ϩⲛ̄ ⲛ{22}",
-      "core_english": "whose two sons were taken from him in the {23}",
+      "core_coptic": "ⲉⲁⲩⲃⲓ ⲡⲉϩⲱⲛⲏⲣⲉ ⲥⲛⲉⲩ ⲛ̄ⲧⲟⲟⲧϥ̄ ϩⲛ̄ ⲛ{12}",
+      "core_english": "whose two sons were taken from him in the {12}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ⲛ-",
+          "source_id": 13,
+          "section": 1603
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two sons taken — substrate parable continues."
     },
@@ -104,6 +248,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲓ ⲁⲃⲁⲗ ϩⲓⲣⲉⲧⲟⲩ ⲁⲥⲁⲧⲟⲩ",
       "core_english": "he came forth at their feet to seek them out.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic search/redemption."
     },
@@ -112,8 +257,30 @@
       "chapter": 26,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} ⲉ{25}",
-      "core_english": "{26} which {27}",
+      "core_coptic": "{13} ⲉ{14}",
+      "core_english": "{13} which {14}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "Ⲧϩⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ",
+          "english": "So also is the manner",
+          "basis": "editor's restoration; standard correlative formula introducing the explanation",
+          "source_id": 14,
+          "section": 1605
+        },
+        {
+          "id": 14,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲧⲁ",
+          "english": "in which",
+          "basis": "editor's restoration; ⲉⲧⲁ- = relative perfect 'which (did)' ",
+          "source_id": 15,
+          "section": 1605
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment within substrate sequence."
     },
@@ -122,8 +289,46 @@
       "chapter": 26,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28}ⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ {29} {30} ⲧⲣⲓ̈ⲉ ⲍⲓ ⲡⲭⲗⲥⲉ ⲉⲧⲃⲉ ⲡ{31}",
-      "core_english": "{32}First Man {33} {34} shines forth in the Sweetness, concerning {35}two",
+      "core_coptic": "{15}ⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ {16} {17} ⲧⲣⲓ̈ⲉ ⲍⲓ ⲡⲭⲗⲥⲉ ⲉⲧⲃⲉ ⲡ{18}",
+      "core_english": "{15}First Man {16} {17} shines forth in the Sweetness, concerning {18}two",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲡϣ",
+          "english": "[the] F-",
+          "basis": "completes ⲡϣⲁⲣⲡ 'the First' (Lyc. ⲱⲁⲣⲡ); fixed phrase ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man'",
+          "source_id": 16,
+          "section": 1606
+        },
+        {
+          "id": 16,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 17,
+          "section": 1606
+        },
+        {
+          "id": 17,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 18,
+          "section": 1606
+        },
+        {
+          "id": 18,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉϩ",
+          "english": "his",
+          "basis": "completes ⲡⲉϩ- (Lyc. possessive prefix = Sah. ⲡⲉϥ-); continues to ϣⲏⲣⲉ ⲥⲛⲉⲩ 'two sons' on next line",
+          "source_id": 19,
+          "section": 1606
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man in the Sweetness — cosmic location."
     },
@@ -132,8 +337,20 @@
       "chapter": 26,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲏⲣⲉ ⲥⲛⲉⲩ ⲉⲧⲁⲩⲭⲣⲁⲣ̄{36}ⲩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϩ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ ⲧⲉϩ",
-      "core_english": "sons who were scattered{37} forth from him, who are the",
+      "core_coptic": "ϣⲏⲣⲉ ⲥⲛⲉⲩ ⲉⲧⲁⲩⲭⲣⲁⲣ̄{19}ⲩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϩ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ ⲧⲉϩ",
+      "core_english": "sons who were scattered{19} forth from him, who are the",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲱⲟ",
+          "english": "(scattered) -forth-",
+          "basis": "completes ⲭⲣⲁⲣⲱⲟⲩ ⲁⲃⲁⲗ 'were scattered forth' (cf. accumulated ⲭⲣⲁⲣⲁⲧ ⲁⲃⲁⲗ)",
+          "source_id": 20,
+          "section": 1607
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Identifying the two sons cosmologically."
     },
@@ -144,6 +361,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲛⲉⲧϣⲟⲟⲡ ⲍⲛ ⲧⲟⲁⲙ ⲥⲛ̄ⲧⲉ ⲉϯⲣⲉ ⲛ̄ϩⲧⲟⲉ",
       "core_english": "Living Soul, those who exist in two powers, performing the fourth (watch).",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Living Soul, two powers, fourth watch — pure cosmic mapping."
     },
@@ -152,8 +370,28 @@
       "chapter": 26,
       "line": 16,
       "classification": "mixed",
-      "core_coptic": "ⲉⲣⲉ ⲡⲭⲁⲓ̈ {38} ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲛⲁⲟ ⲛ̄ⲃⲉⲣⲏⲍ {39}",
-      "core_english": "the ship {40} is likened to a great furnace, {41}",
+      "core_coptic": "ⲉⲣⲉ ⲡⲭⲁⲓ̈ {20} ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲛⲁⲟ ⲛ̄ⲃⲉⲣⲏⲍ {21}",
+      "core_english": "the ship {20} is likened to a great furnace, {21}",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲍⲟⲟⲩⲉ",
+          "english": "of the days",
+          "basis": "ⲡⲭⲁⲓ̈ ⲙ̄ⲡⲍⲟⲟⲩⲉ 'ship of the days' = sun-ship; standard Manichaean cosmological pair with ⲡⲭⲁⲓ̈ ⲛⲧⲟⲩⲱⲏ 'ship of the night' (moon)",
+          "source_id": 22,
+          "section": 1609
+        },
+        {
+          "id": 21,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 23,
+          "section": 1609
+        }
+      ],
       "removed_material": "Frame marker '{21} ⲁⲛ' / '{21} again' — recurring frame phrase.",
       "temporal_note": "Ship→furnace simile, cosmic→cosmic mapping."
     },
@@ -162,8 +400,37 @@
       "chapter": 26,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42} ⲉ̄ⲉⲧ {43} {44}ⲟ ⲙ̄ⲡⲛ̄ⲁ ⲍⲱϣϩ ⲉⲧⲛ̄ⲍⲏⲧϥ̄",
-      "core_english": "{45} ... {46} {47}eat Spirit dwells within him.",
+      "core_coptic": "{22} ⲉ̄ⲉⲧ {23} {24}ⲟ ⲙ̄ⲡⲛ̄ⲁ ⲍⲱϣϩ ⲉⲧⲛ̄ⲍⲏⲧϥ̄",
+      "core_english": "{22} ... {23} {24}eat Spirit dwells within him.",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 24,
+          "section": 1610
+        },
+        {
+          "id": 23,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲉ̄ⲉⲧ",
+          "source_id": 25,
+          "section": 1610
+        },
+        {
+          "id": 24,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲉⲣⲉ ⲡⲛⲁ",
+          "english": "as the gr-",
+          "basis": "completes ⲉⲣⲉ ⲡⲛⲁⲟ 'as the great' — circumstantial introducing 'great Spirit'",
+          "source_id": 26,
+          "section": 1610
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Great Spirit within the ship/furnace — cosmic indwelling."
     },
@@ -172,8 +439,20 @@
       "chapter": 26,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲣⲱⲙⲉ ⲛ̄{48}ⲧⲏⲥ ⲛ̄ⲥⲁⲃⲉ ⲉϩⲁⲧⲥⲁⲓ̈ⲟ ⲛ̄ϩ",
-      "core_english": "It is likened to a wise crafts{49}man, who adorns and",
+      "core_coptic": "ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲣⲱⲙⲉ ⲛ̄{25}ⲧⲏⲥ ⲛ̄ⲥⲁⲃⲉ ⲉϩⲁⲧⲥⲁⲓ̈ⲟ ⲛ̄ϩ",
+      "core_english": "It is likened to a wise crafts{25}man, who adorns and",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲧⲉⲭⲛⲓ",
+          "english": "crafts-",
+          "basis": "completes ⲧⲉⲭⲛⲓⲧⲏⲥ 'craftsman' (Greek τεχνίτης), standard combination ⲣⲱⲙⲉ ⲛ̄ⲧⲉⲭⲛⲓⲧⲏⲥ",
+          "source_id": 27,
+          "section": 1611
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wise craftsman simile — Living Spirit as demiurge-figure."
     },
@@ -182,8 +461,20 @@
       "chapter": 26,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲙⲓⲛⲉ ⲙ̄ⲡⲁⲛⲍⲟⲡⲗ̄{50} ⲁⲡⲡⲟⲗⲉⲙⲟⲥ",
-      "core_english": "fashions every full-armament{51} for the war.",
+      "core_coptic": "ⲥⲙⲓⲛⲉ ⲙ̄ⲡⲁⲛⲍⲟⲡⲗ̄{26} ⲁⲡⲡⲟⲗⲉⲙⲟⲥ",
+      "core_english": "fashions every full-armament{26} for the war.",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲓⲁ ⲛⲓⲙ̄",
+          "english": "every (full armor)",
+          "basis": "completes ⲡⲁⲛⲍⲟⲡⲗⲓⲁ 'panoply, full-armament' (Greek πανοπλία) + ⲛⲓⲙ̄ 'every'",
+          "source_id": 28,
+          "section": 1612
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic war armament — substrate mythic register."
     },
@@ -192,8 +483,20 @@
       "chapter": 26,
       "line": 20,
       "classification": "mixed",
-      "core_coptic": "ⲉⲣⲉ ⲡⲡ̄ⲛ̄ⲁ ⲉⲧⲁⲛⲍ̄ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲣⲱⲙⲉ ⲛ̄ⲭⲁⲗⲙ̄{52}ⲍ",
-      "core_english": "the Living Spirit is likened to a warrior{53} man",
+      "core_coptic": "ⲉⲣⲉ ⲡⲡ̄ⲛ̄ⲁ ⲉⲧⲁⲛⲍ̄ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲁⲩⲣⲱⲙⲉ ⲛ̄ⲭⲁⲗⲙ̄{27}ⲍ",
+      "core_english": "the Living Spirit is likened to a warrior{27} man",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲗⲁ",
+          "english": "warri-",
+          "basis": "completes ⲭⲁⲗⲙ̄ⲗⲁⲍ 'warrior' (cf. accumulated vocab)",
+          "source_id": 29,
+          "section": 1613
+        }
+      ],
       "removed_material": "Frame 'ⲧⲧⲁⲗⲓⲛ ⲁⲛ' / 'Once again' stripped.",
       "temporal_note": "Living Spirit as warrior — cosmic figure."
     },
@@ -202,8 +505,30 @@
       "chapter": 26,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉϩⲁⲃⲱⲕ ⲍⲓⲣⲉⲧϩ ⲛ̄ⲟ{54}ⲣⲉ ⲛ̄ⲛ̄ⲣ̄ⲣⲟ ⲉⲁⲩⲣⲁⲓⲭⲙⲁⲗⲱ{55}",
-      "core_english": "going unto the foot of a {56}son of kings whom they had taken capt{57}ive,",
+      "core_coptic": "ⲉϩⲁⲃⲱⲕ ⲍⲓⲣⲉⲧϩ ⲛ̄ⲟ{28}ⲣⲉ ⲛ̄ⲛ̄ⲣ̄ⲣⲟ ⲉⲁⲩⲣⲁⲓⲭⲙⲁⲗⲱ{29}",
+      "core_english": "going unto the foot of a {28}son of kings whom they had taken capt{29}ive,",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲩⲱⲏ",
+          "english": "(a) son",
+          "basis": "completes ⲟⲩⲱⲏⲣⲉ 'son' (Lyc. for ϣⲏⲣⲉ)",
+          "source_id": 30,
+          "section": 1614
+        },
+        {
+          "id": 29,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲧⲓⲍⲉ",
+          "english": "-(taken capt)ive",
+          "basis": "completes Greek loanword ⲣⲁⲓⲭⲙⲁⲗⲱⲧⲓⲍⲉ 'take captive'",
+          "source_id": 31,
+          "section": 1614
+        }
+      ],
       "removed_material": null,
       "temporal_note": "King's son captive — soul-redemption parable, substrate."
     },
@@ -212,8 +537,20 @@
       "chapter": 26,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲙⲁϩ ⲛ̄ϩⲥⲁⲧϩ ⲁ{58}ⲟⲓⲭ ⲛ̄ⲛⲉϩⲭⲁⲭⲉ",
-      "core_english": "drawing him out{59} hands of his enemies.",
+      "core_coptic": "ⲙ̄ⲙⲁϩ ⲛ̄ϩⲥⲁⲧϩ ⲁ{30}ⲟⲓⲭ ⲛ̄ⲛⲉϩⲭⲁⲭⲉ",
+      "core_english": "drawing him out{30} hands of his enemies.",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲃⲁⲗ ⲍⲛ ⲛ̄",
+          "english": "out from the",
+          "basis": "ⲥⲁⲧϩ ⲁⲃⲁⲗ ⲍⲛ ⲛ̄ⲟⲓⲭ 'draw out from the hands' — standard rescue idiom",
+          "source_id": 32,
+          "section": 1615
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Rescue from enemies — cosmic enemies of Light."
     },
@@ -222,8 +559,20 @@
       "chapter": 26,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉϩⲧⲛ̄ⲧⲁⲛⲧ̄ ⲍⲱϣ{60}ⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲛⲁⲟ ⲛ̄ⲣⲱⲙⲉ",
-      "core_english": "He likens {61}bassador to a great man,",
+      "core_coptic": "ⲉϩⲧⲛ̄ⲧⲁⲛⲧ̄ ⲍⲱϣ{31}ⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲛⲁⲟ ⲛ̄ⲣⲱⲙⲉ",
+      "core_english": "He likens {31}bassador to a great man,",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ϩ ⲛ̄ⲭⲓ ⲡⲡⲣⲉ",
+          "english": "(does) -indeed the Am-",
+          "basis": "completes ⲍⲱϣϩ 'indeed' (Lyc. ⲍⲱⲱϥ) + ⲛ̄ⲭⲓ subject-marker + ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'Ambassador'; standard Manichaean technical title",
+          "source_id": 33,
+          "section": 1616
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ambassador (Third Messenger) likened to great man — cosmic figure."
     },
@@ -232,8 +581,34 @@
       "chapter": 26,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{62} {63} {64} ⲉⲧⲃⲉ ⲡⲭⲣⲏⲙⲁ {65}",
-      "core_english": "{66} {67} {68} concerning the wealth {69}",
+      "core_coptic": "{32} {33} {34} ⲉⲧⲃⲉ ⲡⲭⲣⲏⲙⲁ {34}",
+      "core_english": "{32} {33} {34} concerning the wealth {34}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 34,
+          "section": 1617
+        },
+        {
+          "id": 33,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 35,
+          "section": 1617
+        },
+        {
+          "id": 34,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 36,
+          "section": 1617
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment within Ambassador parable."
     },
@@ -242,8 +617,36 @@
       "chapter": 26,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{70} {71} ⲟⲓⲭ ⲛ̄ⲛⲉϩⲁⲓⲭⲙ̄{72}",
-      "core_english": "{73} {74} hand of his cap{75}tives",
+      "core_coptic": "{35} {36} ⲟⲓⲭ ⲛ̄ⲛⲉϩⲁⲓⲭⲙ̄{37}",
+      "core_english": "{35} {36} hand of his cap{37}tives",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 37,
+          "section": 1618
+        },
+        {
+          "id": 36,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 38,
+          "section": 1618
+        },
+        {
+          "id": 37,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲁⲗⲱⲧⲟⲥ",
+          "english": "captives",
+          "basis": "completes ⲁⲓⲭⲙⲁⲗⲱⲧⲟⲥ 'captives' (Greek αἰχμάλωτος)",
+          "source_id": 39,
+          "section": 1618
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Captives motif — substrate parable."
     },
@@ -252,8 +655,26 @@
       "chapter": 26,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{76} {77} ⲛ̄ⲛⲓⲟⲁⲙ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ {78}",
-      "core_english": "{79} {80} of the powers of light {81}",
+      "core_coptic": "{38} {39} ⲛ̄ⲛⲓⲟⲁⲙ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ {39}",
+      "core_english": "{38} {39} of the powers of light {39}",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 40,
+          "section": 1619
+        },
+        {
+          "id": 39,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 41,
+          "section": 1619
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers of Light — cosmic register."
     },
@@ -262,8 +683,26 @@
       "chapter": 26,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{82} ϣⲏⲣⲉ ⲙⲛ̄ ⲧⲟⲩⲯⲩⲭⲏ ⲭⲉⲩⲛⲁ {83}",
-      "core_english": "{84} sons with their soul {85}",
+      "core_coptic": "{40} ϣⲏⲣⲉ ⲙⲛ̄ ⲧⲟⲩⲯⲩⲭⲏ ⲭⲉⲩⲛⲁ {41}",
+      "core_english": "{40} sons with their soul {41}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 42,
+          "section": 1620
+        },
+        {
+          "id": 41,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 43,
+          "section": 1620
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sons and soul — cosmic redemption."
     },
@@ -272,8 +711,18 @@
       "chapter": 26,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{86}ⲭⲡⲁⲥ ⲁⲧⲭⲱⲣⲁ ⲉⲧⲁⲩⲣⲁⲓⲭⲙⲁⲗⲱⲧⲓⲍⲉ",
-      "core_english": "{87}... to the country in which they had taken her captive.",
+      "core_coptic": "{42}ⲭⲡⲁⲥ ⲁⲧⲭⲱⲣⲁ ⲉⲧⲁⲩⲣⲁⲓⲭⲙⲁⲗⲱⲧⲓⲍⲉ",
+      "core_english": "{42}... to the country in which they had taken her captive.",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 44,
+          "section": 1621
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Captive country — cosmic mixture region."
     }

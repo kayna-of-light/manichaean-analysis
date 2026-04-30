@@ -5,7 +5,7 @@
   "start_section": 474,
   "end_section": 575,
   "total_sections": 102,
-  "total_lacunae": 96,
+  "total_lacunae": 50,
   "segments": [
     {
       "section": 474,
@@ -13,7 +13,19 @@
       "line": 4,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} ⲭⲉ ⲧⲉⲓⲣⲏⲛⲏ ⲙⲛ ⲡⲓⲭⲁⲓⲣⲉ ⲉⲧϣⲟⲟⲡ ϩⲙ ⲡⲕⲟⲥⲙⲟⲥ",
-      "core_english": "{1}: 'The peace and the greeting that exist in the world,",
+      "core_english": "{0}: 'The peace and the greeting that exist in the world,",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲛⲉϥ",
+          "english": "to him",
+          "basis": "Editor's restoration: standard formula 'they say to him' (ⲉⲩⲭⲱ ⲙⲙⲁⲥ ⲛⲉϥ ⲭⲉ).",
+          "source_id": 2,
+          "section": 474
+        }
+      ],
       "removed_material": null,
       "temporal_note": "substantive cosmological question — defines the teaching topic"
     },
@@ -22,8 +34,30 @@
       "chapter": 9,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲁⲃⲁⲗ {3}ⲓⲙ ⲏ ⲙⲙⲁⲛ ⲛⲧⲁϥ ⲧⲟⲩⲛⲉⲙ ⲉⲧϣⲟⲟⲡ ϩⲙ̄",
-      "core_english": "{4} from {5}, or not? Or the right hand that exists in",
+      "core_coptic": "{1} ⲁⲃⲁⲗ {2}ⲓⲙ ⲏ ⲙⲙⲁⲛ ⲛⲧⲁϥ ⲧⲟⲩⲛⲉⲙ ⲉⲧϣⲟⲟⲡ ϩⲙ̄",
+      "core_english": "{1} from {2}, or not? Or the right hand that exists in",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲁⲩⲉⲓ",
+          "english": "have they come",
+          "basis": "Editor's restoration: perfect relative ⲛⲧⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲛⲛⲓⲙ 'whence have they come' fits the interrogative context.",
+          "source_id": 3,
+          "section": 475
+        },
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛⲛ",
+          "english": "where",
+          "basis": "Editor's restoration: ⲛⲛⲓⲙ 'whence' interrogative.",
+          "source_id": 4,
+          "section": 475
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continuation of cosmological question"
     },
@@ -32,8 +66,20 @@
       "chapter": 9,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6}ⲁⲓ̈ⲁⲓ̈ⲧ ⲛⲧⲟⲟⲧϥ ⲛⲛⲣⲱⲙⲉ ⲧⲁⲛⲓⲙ ⲧⲉ ⲏ ⲡⲙⲁⲩ-",
-      "core_english": "{7} that is honored at the hands of men — whose is it? Or the my-",
+      "core_coptic": "{3}ⲁⲓ̈ⲁⲓ̈ⲧ ⲛⲧⲟⲟⲧϥ ⲛⲛⲣⲱⲙⲉ ⲧⲁⲛⲓⲙ ⲧⲉ ⲏ ⲡⲙⲁⲩ-",
+      "core_english": "{3} that is honored at the hands of men — whose is it? Or the my-",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲡⲕⲟⲥⲙⲟⲥ ⲉⲥⲧ",
+          "english": "the world that is",
+          "basis": "Editor's restoration: continuing the sentence from line 33 'right hand that exists in the world that is honored.'",
+          "source_id": 5,
+          "section": 476
+        }
+      ],
       "removed_material": null,
       "temporal_note": "question continuing"
     },
@@ -42,8 +88,20 @@
       "chapter": 9,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲁⲥⲙⲟⲥ ⲉⲧⲟⲩⲁⲥⲡⲁⲍⲉ ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ⲛ̄ϩⲏⲧϥ",
-      "core_english": "{9} by which they greet one another",
+      "core_coptic": "{4}ⲁⲥⲙⲟⲥ ⲉⲧⲟⲩⲁⲥⲡⲁⲍⲉ ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ⲛ̄ϩⲏⲧϥ",
+      "core_english": "{4} by which they greet one another",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲥⲧⲏⲣⲓⲟⲛ ⲙⲡⲁⲥⲡ",
+          "english": "stery of the salutation",
+          "basis": "Editor's restoration: completing ⲡⲙⲁⲩ-[ⲥⲧⲏⲣⲓⲟⲛ ⲙⲡⲁⲥⲡ]ⲁⲥⲙⲟⲥ across the line break.",
+          "source_id": 6,
+          "section": 477
+        }
+      ],
       "removed_material": null,
       "temporal_note": "question on greeting"
     },
@@ -52,8 +110,18 @@
       "chapter": 9,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲏ ⲛⲓⲙ ⲡⲉⲧⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲙ̄ⲡⲓ-",
-      "core_english": "{11}, or what is that which is manifested in this...",
+      "core_coptic": "{5} ⲏ ⲛⲓⲙ ⲡⲉⲧⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲙ̄ⲡⲓ-",
+      "core_english": "{5}, or what is that which is manifested in this...",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 8,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 7,
+          "section": 478
+        }
+      ],
       "removed_material": null,
       "temporal_note": "question continuation"
     },
@@ -64,6 +132,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲱϣⲧ ⲉⲧⲟⲩⲱϣⲧ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲛϩⲏⲧϥ̄ ⲏ ⲧⲭⲉⲓⲣⲟⲧⲟ",
       "core_english": "an obeisance with which they pay obeisance to one another, or the chirotonia",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "obeisance/chirotonia in question"
     },
@@ -74,6 +143,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲁ ⲉⲧⲉⲣⲉ ⲡⲛⲁⲃ ⲧⲩ̄ⲡⲥⲁⲡ ⲕⲱ ⲙ̄ⲙⲁⲥ ⲁⲭⲙ̄ ⲡⲉⲧϩⲁⲃⲉ",
       "core_english": "which the lord at-that-time places upon the humble one",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "chirotonia question"
     },
@@ -84,6 +154,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲣⲁⲣⲁϥ ⲉϥⲧ ⲛⲉϥ ⲛⲟⲩⲧⲁⲓ̈ⲟ ⲉϥⲉⲓⲣⲉ ⲙⲙⲁϥ ⲛⲛⲁⲃ ⲧⲁ",
       "core_english": "beneath him, giving him an honor, making him a lord —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "question on chirotonia"
     },
@@ -94,6 +165,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛⲓⲙ ⲧⲉ ⲧⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ",
       "core_english": "to whom does the chirotonia belong?'",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲧⲟⲧⲉ ⲡⲁⲭⲉϥ ⲁⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ' / 'Then he said to his disciples' — pure dialogue frame attribution",
       "temporal_note": "closing question + frame attribution"
     },
@@ -104,6 +176,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲉ ⲡⲓⲧⲟⲩ ⲛⲥⲉⲭⲉ ⲉⲧⲁⲧⲉⲧⲛ̄ϣⲛ̄ⲧ ⲁⲣⲁⲩ ⲥⲉⲟⲩⲁⲛϩ ⲙⲉⲛ",
       "core_english": "that, 'These five sayings about which you have asked: they are manifested, indeed,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "opening of teaching response — five sayings structure"
     },
@@ -114,6 +187,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲉⲩⲟ ⲛ̄ⲑⲉ ⲛⲛⲉⲧⲥⲁⲃⲕ ⲉⲩⲟ ⲛⲕⲟⲩⲓ",
       "core_english": "out in the world, being like the trifling things, being small —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuing teaching"
     },
@@ -124,6 +198,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁⲓⲧⲟⲓⲅⲉ ϩⲛⲛⲁⲃ ⲛⲉ ⲉⲩⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲁⲛⲁⲕ ⲡⲉⲧⲁⲟⲩⲱⲛϩ ⲛⲏ",
       "core_english": "yet they are great ones, being honored. I am the one who has revealed to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "first-person revelation but functioning as teaching frame"
     },
@@ -134,6 +209,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲛ̄ ⲁⲃⲁⲗ ⲙ̄ⲡⲟⲩⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲉⲕⲓⲁ ⲡⲓⲧⲟⲩ ⲙ̄ⲙⲉⲓ̈ⲛⲉ",
       "core_english": "you their mystery. Behold these five kinds:",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "five kinds enumeration opening"
     },
@@ -144,6 +220,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲉ ⲙ̄ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲛ̄ⲧⲁϥⲉⲓ ⲁⲃⲁⲗ ⲛϩⲏ",
       "core_english": "they are the mystery of the First Man who came forth out of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man — core cosmological figure"
     },
@@ -154,6 +231,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩ ϩⲙ̄ ⲡⲁⲓⲱⲛ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲛⲧⲁⲣⲉϥⲭⲱⲕ ⲁⲛ ⲁⲃⲁⲗ ⲙ̄",
       "core_english": "them, in the Aeon of Light, when he had completed",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Aeon of Light — substrate cosmology"
     },
@@ -164,6 +242,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉϥⲁⲅⲱⲛ ⲛⲧⲁϥⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ϩⲛ̄ ⲛⲓⲙⲉⲓ̈ⲛⲉ ⲉⲧⲁⲛⲓⲧ",
       "core_english": "his contest, when he went up in those beautiful kinds",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "contest/agon — First Man cosmic drama"
     },
@@ -174,6 +253,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩϣⲁⲡϥ̄ ⲁϩⲟⲩⲛ ϩⲛ̄ ⲛⲁⲓ̈ⲱⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ",
       "core_english": "and they received him into the Aeons of Light.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "reception into Aeons of Light"
     },
@@ -182,8 +262,20 @@
       "chapter": 9,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϣⲁⲣⲡ ⲛ̄ⲉⲓⲣⲏⲛⲏ ⲧⲉⲧⲁ ⲛⲛⲟⲩⲧⲉ ⲙⲛ ⲛ{12}ⲅⲉⲗⲟⲥ ϩⲙ ⲡⲕⲁϩ",
-      "core_english": "The first peace, which the gods and the a{13}ngels in the land",
+      "core_coptic": "ⲧϣⲁⲣⲡ ⲛ̄ⲉⲓⲣⲏⲛⲏ ⲧⲉⲧⲁ ⲛⲛⲟⲩⲧⲉ ⲙⲛ ⲛ{6}ⲅⲉⲗⲟⲥ ϩⲙ ⲡⲕⲁϩ",
+      "core_english": "The first peace, which the gods and the a{6}ngels in the land",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲁⲅ",
+          "english": "ng-",
+          "basis": "Editor restoration; word ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ split across line break.",
+          "source_id": 8,
+          "section": 491
+        }
+      ],
       "removed_material": null,
       "temporal_note": "FIRST PEACE — enumeration marker, gods and angels in Aeon of Light"
     },
@@ -194,6 +286,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲉⲉⲥ ⲙⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲙ̄ⲡⲥⲭⲩ ⲉⲧϥⲛⲏⲩ",
       "core_english": "of Light gave to the First Man at the time when he was coming",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Peace given to First Man"
     },
@@ -204,6 +297,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲟⲩⲃⲉ ⲡⲧⲭⲁⲭⲉ ⲛⲉⲣⲉ ⲛⲛⲟⲩⲧⲉ̄ ⲡⲉ ⲙⲛ̄ ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ",
       "core_english": "forth against the Enemy: the gods were, with the angels,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enemy — cosmic adversary"
     },
@@ -214,6 +308,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁϩⲉ ⲛⲉⲙⲉϥ ⲉⲩⲏⲧ ⲁⲣⲁϥ ⲉⲩⲧ ⲛⲉϥ ⲛⲧⲟⲩⲉⲓⲣⲏⲛⲏ ⲙⲛ̄",
       "core_english": "walking with him, running unto him, giving him their peace and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "angels giving peace to First Man"
     },
@@ -224,6 +319,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲟⲩⲭⲓⲛ ⲙⲛ̄ ⲡⲟⲩⲥⲙⲁⲙⲉ ⲙⲛ ⲛⲟⲩⲃⲣⲟ ⲧⲉⲓ ⲧⲉ ⲧϣⲁⲣⲡ",
       "core_english": "their hand and their blessing and their joy. This is the first",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "hand/blessing/joy — sequence members"
     },
@@ -234,6 +330,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲉⲓⲣⲏⲛⲏ ⲧⲉⲧⲁ ⲛⲛⲟⲩⲧⲉ ⲙⲛ ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ ⲧⲉⲉⲥ ⲙⲡϣⲁⲣⲡ",
       "core_english": "peace, which the gods and the angels gave to the First",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "recapitulation of first peace"
     },
@@ -244,6 +341,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲉϥⲛⲏⲩ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲁⲓⲱⲛ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ",
       "core_english": "Man as he was coming forth out of the Aeon of Light.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "closing first peace unit"
     },
@@ -254,6 +352,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϣⲁⲣⲡ ⲛ̄ⲟⲩⲛⲉⲙ ⲧⲉⲧⲁ ⲧⲙⲉⲩ ⲙ̄ⲡⲱⲛϩ ⲧⲉⲥ ⲙⲡϣⲁⲣⲡ ⲛ̄ⲣⲱ",
       "core_english": "The first right-hand: the one which the Mother of Life gave to the First",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "FIRST RIGHT-HAND — Mother of Life"
     },
@@ -264,6 +363,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲉ ⲙⲡⲥⲁⲡ ⲉⲧϥⲛⲏⲩ ⲁⲃⲁⲗ ⲁⲡⲁⲅⲱⲛ",
       "core_english": "Man at the time when he was going forth to the contest.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -272,8 +372,20 @@
       "chapter": 9,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧϣⲁⲣⲡ ⲛⲁⲥⲡⲁⲥⲙⲟⲥ ⲡⲉ ⲡⲉⲓ̈ ⲉⲧⲁ ⲧⲙⲉ{14} ⲙⲡⲱⲛϩ ⲁⲥⲡⲁ",
-      "core_english": "The first embrace is this one with which the Mother{15} of Life em-",
+      "core_coptic": "ⲧⲧϣⲁⲣⲡ ⲛⲁⲥⲡⲁⲥⲙⲟⲥ ⲡⲉ ⲡⲉⲓ̈ ⲉⲧⲁ ⲧⲙⲉ{7} ⲙⲡⲱⲛϩ ⲁⲥⲡⲁ",
+      "core_english": "The first embrace is this one with which the Mother{7} of Life em-",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 30,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "(no English equivalent)",
+          "basis": "Editor restoration; ⲧⲙⲉⲩ 'mother' standard form.",
+          "source_id": 9,
+          "section": 500
+        }
+      ],
       "removed_material": null,
       "temporal_note": "FIRST EMBRACE — enumeration"
     },
@@ -284,6 +396,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲉ ⲙⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲛϩⲏⲧϥ̄ ⲉϥⲁⲡⲱⲣⲭ ⲁⲣⲁⲥ ⲉϥⲛⲏⲩ",
       "core_english": "braced the First Man, as he was separating from her, coming",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -292,8 +405,20 @@
       "chapter": 9,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲡⲓⲧⲛⲉ ⲁⲡⲁⲅⲱⲛ ⲛⲉⲣⲉ ⲛⲕⲉⲛⲟⲩⲧⲉ ⲧⲏⲣⲟⲩ ⲡⲉ ⲙⲛ ⲛ{16}",
-      "core_english": "down to the contest. All the other gods, with the a{17}",
+      "core_coptic": "ⲁⲡⲓⲧⲛⲉ ⲁⲡⲁⲅⲱⲛ ⲛⲉⲣⲉ ⲛⲕⲉⲛⲟⲩⲧⲉ ⲧⲏⲣⲟⲩ ⲡⲉ ⲙⲛ ⲛ{8}",
+      "core_english": "down to the contest. All the other gods, with the a{8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲁⲅ",
+          "english": "n-",
+          "basis": "Editor restoration; word ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ split across line break.",
+          "source_id": 10,
+          "section": 502
+        }
+      ],
       "removed_material": null,
       "temporal_note": "gods and angels"
     },
@@ -302,8 +427,29 @@
       "chapter": 9,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲅⲉⲗⲟⲥ ⲉⲧϩⲛ̄ ⲛⲉⲱⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲣⲁⲥ{18}ϩⲉ ⲙ̄ⲙⲁϥ ⲛϣ{19}",
-      "core_english": "ngels that are in the Aeons of Light, em{20}braced him with {21}",
+      "core_coptic": "ⲅⲉⲗⲟⲥ ⲉⲧϩⲛ̄ ⲛⲉⲱⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲣⲁⲥ{9}ϩⲉ ⲙ̄ⲙⲁϥ ⲛϣ{10}",
+      "core_english": "ngels that are in the Aeons of Light, em{9}braced him with {10}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲡⲁ",
+          "english": "(verb stem)",
+          "basis": "Editor restoration; ⲣⲁⲥⲡⲁϩⲉ 'embraced' (Coptic verbal form built on ἀσπάζομαι), well-attested in lines 27, 28-29.",
+          "source_id": 11,
+          "section": 503
+        },
+        {
+          "id": 10,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲛϣ-",
+          "source_id": 12,
+          "section": 503
+        }
+      ],
       "removed_material": null,
       "temporal_note": "angels of Aeons of Light embracing"
     },
@@ -312,8 +458,20 @@
       "chapter": 9,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲛ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄ⲕⲛ̄ϩⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲛ ⲛⲣⲙⲛ̄{22}",
-      "core_english": "all of them again, with the other churches and the household-{23}",
+      "core_coptic": "ⲁⲛ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄ⲕⲛ̄ϩⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲛ ⲛⲣⲙⲛ̄{11}",
+      "core_english": "all of them again, with the other churches and the household-{11}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲏⲓ̈ ⲉ",
+          "english": "household-",
+          "basis": "Editor restoration; ⲣⲙⲛ̄-ⲏⲓ̈ 'man-of-the-house, household-member' standard compound; ⲉ-ⲧⲏⲡ at line 27 'reckoned' continues the syntax.",
+          "source_id": 13,
+          "section": 504
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'churches' here are the cosmic ekklesiai/aeon-assemblies, used in cosmic register; substrate"
     },
@@ -322,8 +480,20 @@
       "chapter": 9,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲡ ⲁⲡⲏⲓ̈ ⲛ̄ⲛⲉϥⲣⲱⲙⲉ ⲛⲉⲩⲣⲁⲥⲡⲁϩⲉ ⲙ̄ⲙⲁϥ ⲡⲉ ⲉ{24}",
-      "core_english": "members reckoned to the house of his men were embracing him as he {25}",
+      "core_coptic": "ⲧⲏⲡ ⲁⲡⲏⲓ̈ ⲛ̄ⲛⲉϥⲣⲱⲙⲉ ⲛⲉⲩⲣⲁⲥⲡⲁϩⲉ ⲙ̄ⲙⲁϥ ⲡⲉ ⲉ{12}",
+      "core_english": "members reckoned to the house of his men were embracing him as he {12}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ϥ",
+          "english": "(verbal suffix)",
+          "basis": "Editor restoration; 3sg.m. circumstantial prefix ⲉϥ- continuing onto next line as ⲁⲡⲱⲣⲭ.",
+          "source_id": 14,
+          "section": 505
+        }
+      ],
       "removed_material": null,
       "temporal_note": "household of his men — cosmic figures"
     },
@@ -332,8 +502,30 @@
       "chapter": 9,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲡⲱⲣⲭ ⲁⲣⲁⲩ ⲛⲉⲩⲧϩⲡⲟ ⲙ̄ⲙⲁϥ ⲁⲃⲁⲗ {26}ⲉ ⲉⲩⲣⲁ{27}",
-      "core_english": "separated from them; they were sending him forth, em{28}bracing {29}",
+      "core_coptic": "ⲁⲡⲱⲣⲭ ⲁⲣⲁⲩ ⲛⲉⲩⲧϩⲡⲟ ⲙ̄ⲙⲁϥ ⲁⲃⲁⲗ {13}ⲉ ⲉⲩⲣⲁ{14}",
+      "core_english": "separated from them; they were sending him forth, em{14}bracing {13}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "(particle)",
+          "basis": "Editor restoration; ⲡⲉ as enclitic supports the 'they were ...-ing him' periphrasis.",
+          "source_id": 15,
+          "section": 506
+        },
+        {
+          "id": 14,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲥⲡⲁϩⲉ",
+          "english": "(verb stem)",
+          "basis": "Editor restoration; ⲣⲁⲥⲡⲁϩⲉ 'embracing,' parallel to lines 23, 25, 27.",
+          "source_id": 16,
+          "section": 506
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -344,6 +536,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁϥ ϩⲙ̄ ⲡⲁⲥⲡⲁⲥⲙⲟⲥ ⲛⲧⲁⲅⲁⲡⲏ ⲙⲛ ⲡⲙⲉⲓ̈ⲉ",
       "core_english": "him with the embrace of love and affection.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "closing first embrace"
     },
@@ -352,8 +545,30 @@
       "chapter": 9,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϣⲁⲣⲡ ⲛⲟⲩⲱϣⲧ ⲡⲉ ⲡⲟⲩⲱϣⲧ ⲉⲧⲁ ⲡϣ{30}ⲡ ⲛⲣⲱ{31}",
-      "core_english": "The first obeisance is the obeisance which the Fi{32}rst Ma{33}",
+      "core_coptic": "ⲧϣⲁⲣⲡ ⲛⲟⲩⲱϣⲧ ⲡⲉ ⲡⲟⲩⲱϣⲧ ⲉⲧⲁ ⲡϣ{15}ⲡ ⲛⲣⲱ{16}",
+      "core_english": "The first obeisance is the obeisance which the Fi{15}rst Ma{16}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲁⲣ",
+          "english": "-",
+          "basis": "Editor restoration; ⲡϣⲁⲣⲡ 'first' standard formula here.",
+          "source_id": 17,
+          "section": 508
+        },
+        {
+          "id": 16,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲙⲉ",
+          "english": "n",
+          "basis": "Editor restoration; ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man' standard title.",
+          "source_id": 18,
+          "section": 508
+        }
+      ],
       "removed_material": null,
       "temporal_note": "FIRST OBEISANCE — enumeration"
     },
@@ -362,8 +577,20 @@
       "chapter": 9,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲱϣⲧ ⲛϩⲏⲧϥ ⲙ̄ⲡⲥⲁⲡ ⲉⲧϥⲛⲏⲩ ⲁⲃⲁ{34}ⲭϩ ⲉ",
-      "core_english": "performed at the time when he was coming forth {35}, to",
+      "core_coptic": "ⲟⲩⲱϣⲧ ⲛϩⲏⲧϥ ⲙ̄ⲡⲥⲁⲡ ⲉⲧϥⲛⲏⲩ ⲁⲃⲁ{17}ⲭϩ ⲉ",
+      "core_english": "performed at the time when he was coming forth {17}, to",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲗ ⲁⲡϣ",
+          "english": "forth to the [combat]",
+          "basis": "Editor restoration of ⲁⲡϣ-; ⲁⲃⲁⲗ ⲁⲡϣⲭϩ likely '[forth to the X]' where ⲡϣⲭϩ denotes the combat/struggle in the lower place; reading uncertain.",
+          "source_id": 19,
+          "section": 509
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -372,8 +599,20 @@
       "chapter": 9,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙ̄ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲛⲉϥⲕⲱⲗⲭ ⲛ̄ⲛⲉϥⲡ{36}",
-      "core_english": "the place of the lower side; bending his k{37}",
+      "core_coptic": "ⲧⲙ̄ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲛⲉϥⲕⲱⲗⲭ ⲛ̄ⲛⲉϥⲡ{18}",
+      "core_english": "the place of the lower side; bending his k{18}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲉⲧ ⲉϥⲟⲩⲱϣⲧ",
+          "english": "nees, he made obeisance",
+          "basis": "Editor restoration; ⲡⲉⲧ/ⲡⲁⲧ 'knee'; ⲕⲱⲗⲭ ⲛ̄ⲡⲁⲧ 'bend the knee' is standard idiom for proskynesis, and the verb ⲟⲩⲱϣⲧ governs the following ⲙ̄ⲡⲛⲟⲩⲧⲉ at line 33.",
+          "source_id": 20,
+          "section": 510
+        }
+      ],
       "removed_material": null,
       "temporal_note": "bending knees in obeisance"
     },
@@ -382,8 +621,20 @@
       "chapter": 9,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ ⲙⲛ̄ ⲛⲁⲓ̈ⲱⲛ ⲧⲏⲣ{38}",
-      "core_english": "to the God of Truth and all the Aeons {39}",
+      "core_coptic": "ⲙⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ ⲙⲛ̄ ⲛⲁⲓ̈ⲱⲛ ⲧⲏⲣ{19}",
+      "core_english": "to the God of Truth and all the Aeons {19}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲟⲩ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ",
+          "english": "of Light",
+          "basis": "Editor restoration; ⲛⲁⲓ̈ⲱⲛ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ 'all the Aeons of Light' is the standard formula throughout this kephalaion.",
+          "source_id": 21,
+          "section": 511
+        }
+      ],
       "removed_material": null,
       "temporal_note": "God of Truth and Aeons"
     },
@@ -394,6 +645,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲏⲡ ⲁⲡⲏⲓ̈ ⲛ̄ⲛⲉϩⲣⲱⲙⲉ ⲉϩⲧⲱⲃ̄ⲍ̄ ⲙⲙⲁⲩ ⲛⲟⲩⲃⲁⲙ ⲁ-",
       "core_english": "who belongs to the house of the men, to entreat there for a power, that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -404,6 +656,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲣⲉⲥⲱⲧ ⲁⲣⲁϩ ⲉϩⲛⲏⲩ ⲁⲃⲁⲗ",
       "core_english": "he might be saved with regard to him as they come forth.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "closing first obeisance"
     },
@@ -414,6 +667,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲱⲁⲣⲡ ⲛ̄ⲭⲉⲗⲣⲟⲧⲟⲛⲓⲁ ⲧⲉⲧⲁ ⲧⲙⲉⲩ ⲛⲧⲉ ⲡⲱⲛⲍ ⲕⲁⲁⲥ ⲁⲭⲛ̄",
       "core_english": "The first laying-on-of-hands which the Mother of Life set upon",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "FIRST CHIROTONIA — enumeration; Mother of Life"
     },
@@ -424,6 +678,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲡⲉ ⲙⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲥⲡⲁⲛⲍⲟⲡⲗⲓⲍⲉ ⲙ̄ⲙⲁϩ ⲁ̂ⲥⲉϩ",
       "core_english": "the head of the First Man — she armed him fully, she girded him",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "arming the First Man"
     },
@@ -434,6 +689,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲭⲱⲣⲉ ⲁⲥⲭⲉⲗⲣⲟⲧⲟⲛⲓ ⲙ̄ⲙⲁϩ ⲁⲥⲭⲁⲩϩ ⲁⲡⲛ̄ⲗⲁⲍ ⲁϩⲉⲓ",
       "core_english": "strongly, she laid hands upon him, she set him to the contest. He descended",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -444,6 +700,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲓⲧⲛⲉ ⲁϩⲭⲱⲕ ⲙⲡⲉϩⲁⲣⲱⲛ ⲍⲛ̄ ⲛⲛⲁⲃ ⲛⲃⲁⲙ ⲙⲛ ⲧⲙ̄ⲛ̄-",
       "core_english": "downward; he completed his battle with the great powers and the en-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "battle with great powers"
     },
@@ -454,6 +711,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲭⲁⲝⲉ",
       "core_english": "-mity.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "closing"
     },
@@ -464,6 +722,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲙ̄ ⲡ[ⲓ]ⲧⲟⲩ ⲙ̄ⲙⲉⲓ̈ⲉ ⲍⲙ̄ ⲡⲓⲧⲟⲩ ⲙ̄ⲙⲩⲥⲧ[ⲏ]ⲣⲓ-",
       "core_english": "In these five signs, in these five myster-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "five signs/mysteries summary"
     },
@@ -474,6 +733,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲛ ⲛⲧⲁ ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉⲓ ⲁⲃⲁⲗ ⲍⲛ̄ ⲛⲁⲓⲱⲛ ⲙ̄ⲡⲟⲩⲁ̈ⲓ̈ⲛⲉ",
       "core_english": "-ies the First Man came forth from the aeons of light",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -484,6 +744,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲃⲉ ⲡⲧⲭⲁⲝⲉ ⲁϩⲑⲃ̄ⲓ̈ⲁϩ ⲁϩⲃⲣⲟ ⲁⲣⲁϩ ⲛ̄ⲍⲏⲧ[ⲟ]ⲩ",
       "core_english": "against the enemy; he humbled him, he prevailed over them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "victory over enemy"
     },
@@ -494,6 +755,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲥⲁⲡ ⲁⲛ ⲉⲧⲁϩⲉⲓ ⲁⲍⲣⲏⲓ̈ ⲍⲙ̄ ⲡⲡ[ⲟⲗ]ⲉⲙⲟⲥ ⲛⲧ[ⲁ]ϩⲉⲓ ⲁⲍ[ⲟⲩⲛ]",
       "core_english": "The occasion again when he came up out of the war and came in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "second iteration begins — return from war"
     },
@@ -504,6 +766,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲧⲙⲛ̄ⲧⲣ̄ⲣⲟ ⲙ̄ⲡⲏⲓ̈ ⲛⲛⲉϩⲣⲱⲙⲉ ⲍⲙ̄ ⲡⲓⲧⲟⲩ ⲙ̄ⲙⲩⲥⲧⲏⲣⲓ-",
       "core_english": "to the kingdom of the house of the men, in these five myster-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "kingdom of house of men — cosmic"
     },
@@ -514,6 +777,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲛ — ⲧⲣⲏⲛⲏ ⲉⲧⲁ[ϩⲉⲓ] ⲁⲍⲣⲏⲓ̈ ⲛ̄ⲍⲏⲧ[ⲥ] ⲡⲉ ⲧⲣⲏⲛⲏ ⲉⲧⲁ ⲡ-",
       "core_english": "-ies — the peace which he came up in is the peace which the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "second peace"
     },
@@ -524,6 +788,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲱⲍⲙⲉ ⲧⲉⲥ ⲛⲉϩ [ⲛ]ⲧⲁⲣⲟⲩⲧⲛ̄ⲛⲁⲩϩ ⲁⲃⲁⲗ ⲙⲡ[ⲓ]ⲱⲧ ⲛⲧⲉ ⲡⲱ-",
       "core_english": "summoning gave to him when they sent him forth from the Father of Li-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Summons gave peace, sent from Father of Life"
     },
@@ -534,6 +799,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲍ̄ ⲁϩⲧ ⲛⲉϩ ⲛⲧⲣⲏⲛⲏ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲉⲕⲉ",
       "core_english": "-fe. He gave him the peace in the world of darkness.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "world of darkness — cosmic"
     },
@@ -544,6 +810,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲣⲏⲛⲏ ⲉⲧⲙ̄ⲙⲉⲩ ⲧⲉⲧⲁϩⲃⲱⲕ ⲁⲡⲓⲧⲛⲉ ⲛⲍⲏⲧⲥ ⲛ̄ⲧⲁⲥ ⲛ̄-",
       "core_english": "That peace which he went down in is itself",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "identity of peace going down/coming up"
     },
@@ -554,6 +821,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲧⲁ]ⲥ ⲁⲛ ⲧⲉⲧⲁϩⲉⲓ ⲁⲍⲣⲏⲓ̈ ⲛⲍⲏⲧⲥ ⲍⲙ̄ ⲡⲁⲣⲱⲛ ⲟⲩⲃⲉ ⲡⲙⲩ-",
       "core_english": "again the very same that he came up in out of the battle. Concerning the my-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -564,6 +832,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲥ]ⲧⲏⲣⲓⲟⲛ ⲃⲉ ⲛⲧⲉⲓⲣⲏⲛⲏ ⲉⲧⲙⲙⲉⲩ ⲉⲧⲁ ⲡⲧⲱⲍⲙⲉ ⲧⲉⲉⲥ ⲙ̄-",
       "core_english": "-stery, then, of that peace which the summoning gave",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "mystery of peace"
     },
@@ -574,6 +843,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ — ⲛ̄ⲧⲁ ⲧⲉⲓⲣⲏ ⲉⲧⲙ̄ⲡ̄ⲡⲓⲙⲁ ϣⲱⲡⲉ Ⲧⲉ-",
       "core_english": "to the First Man — this peace at this place became she",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -584,6 +854,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲩⲧⲉⲛ ⲁⲣⲁ[ⲥ] ⲁⲩⲥⲁⲧⲙⲉⲥ ⲟⲩⲧⲱⲩ ⲛ̄ⲛⲃⲁⲙ ⲙ̄ⲡⲓⲱⲧ +",
       "core_english": "to whom they were sent, whom they hearkened to, [as] a giving among the powers of the Father +",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers of Father — cosmic"
     },
@@ -594,6 +865,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁⲍⲥⲛⲧⲉ ⲁⲛ ⲛ̄ⲟⲩⲛⲉⲙ ⲧⲉⲧⲁ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲍ̄ ⲧⲉⲥ ⲙⲡⲱⲁⲣⲡ",
       "core_english": "Again the second, of the right hand, which the Living Spirit gave to the First",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "SECOND right hand — Living Spirit (cosmic figure)"
     },
@@ -604,6 +876,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲛ]ⲣⲱⲙⲉ ⲛ̄ⲧⲁⲣⲉϩ[ⲛ]ⲧϩ̄ ⲁⲍⲣⲏⲓ̈ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲁⲣⲱⲛ ⲟⲩⲃⲉ̂",
       "core_english": "Man when he brought him up out of the battle. Concerning",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -614,6 +887,7 @@
       "classification": "mixed",
       "core_coptic": "[ⲡ]ⲙⲩⲥⲧⲏⲣⲓⲟⲛ [ⲛⲧ]ⲟⲩⲛⲉⲙ ⲉⲧⲙⲙⲉⲩ ⲁ ⲧⲟⲩⲛⲉⲙ ϣⲱⲡⲉ",
       "core_english": "the mystery of that right hand: the right hand has become",
+      "apparatus": [],
       "removed_material": "Application begins — pivot from cosmic mystery to its earthly manifestation. Substrate identifies the cosmic mystery; the application 'in midst of these men giving to one another' begins next segment.",
       "temporal_note": "hinge segment — cosmic mystery → custom among men"
     },
@@ -624,6 +898,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲙⲁⲍⲥⲛⲉⲩ ⲁⲛ ⲛ̄ⲁⲥⲡⲁ-",
       "core_english": "Again the second, of the embra-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "SECOND embrace — Father of Life and Mother of the Living"
     },
@@ -634,6 +909,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲥ]ⲙⲟⲥ ⲡⲉⲧⲁ ⲡ[ⲓⲱⲧ ⲛⲧ]ⲉ ⲡⲱⲛⲍ̄ ⲙⲛ̄ ⲧⲙⲟ ⲛ̄ⲧⲉ ⲛⲉⲧⲁⲛⲍ̄",
       "core_english": "-ce, which the Father of Life and the Mother of the Living",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "cosmic figures"
     },
@@ -644,6 +920,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲥⲡⲁⲍⲉ ⲙ̄ⲡⲱ[ⲁⲣⲡ] ⲛ̄ⲣⲱⲙⲉ ⲛ̄ⲍⲏⲧϩ ⲛ̄ⲧⲁⲣⲉϩⲉⲓ ⲁⲍⲣⲏⲓ̈",
       "core_english": "embraced the First Man in, when he came up",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -654,6 +931,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲁⲃ]ⲁⲗ ⲍⲙ̄ ⲡⲁⲣⲱⲛ —",
       "core_english": "out of the battle —",
+      "apparatus": [],
       "removed_material": "Removed: 'ⲉⲣⲉ ⲡⲓⲁⲥⲡⲁⲥⲙⲟⲥ ⲁⲛ ϣⲟⲟⲡ ⲟⲩⲧⲱ[ϩ] ⲛ̄' / 'this embrace too exists as a custom among' — pivot to application",
       "temporal_note": "end of cosmic; application begins after dash"
     },
@@ -664,6 +942,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲦⲦ]ⲙⲁⲍⲥⲛⲉⲩ ⲛ[ⲟ]ⲩⲱϣⲧ ⲉⲧⲁ ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲟⲩⲱϣⲧ",
       "core_english": "The second, of worship, which the First Man worshipped",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "SECOND worship — enumeration"
     },
@@ -672,8 +951,18 @@
       "chapter": 9,
       "line": 75,
       "classification": "cosmological_substrate",
-      "core_coptic": "[ⲛ]ⲍⲏⲧϩ̄ {40} ⲍⲙ ⲡⲓⲛⲉⲩ ⲙ̄ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ ⲙⲛ",
-      "core_english": "in {41} in this gaze of the God of Truth and",
+      "core_coptic": "[ⲛ]ⲍⲏⲧϩ̄ {20} ⲍⲙ ⲡⲓⲛⲉⲩ ⲙ̄ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ ⲙⲛ",
+      "core_english": "in {20} in this gaze of the God of Truth and",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 75,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 23,
+          "section": 540
+        }
+      ],
       "removed_material": null,
       "temporal_note": "God of Truth"
     },
@@ -682,8 +971,18 @@
       "chapter": 9,
       "line": 76,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42} ⲛ̄ⲁ̈ⲓⲱⲛ ⲉⲧⲥⲙⲁⲙⲁⲁⲧ ⲙⲛ ⲛⲁⲓⲱⲛ ⲧⲏ[ⲣ]ⲟⲩ",
-      "core_english": "{43} of the blessed aeons and all the aeons",
+      "core_coptic": "{21} ⲛ̄ⲁ̈ⲓⲱⲛ ⲉⲧⲥⲙⲁⲙⲁⲁⲧ ⲙⲛ ⲛⲁⲓⲱⲛ ⲧⲏ[ⲣ]ⲟⲩ",
+      "core_english": "{21} of the blessed aeons and all the aeons",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 76,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 24,
+          "section": 541
+        }
+      ],
       "removed_material": null,
       "temporal_note": "all aeons"
     },
@@ -692,8 +991,20 @@
       "chapter": 9,
       "line": 77,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ⲧⲏⲣϩ ⲛ̄ⲧⲉ ⲡⲟⲩⲁ̈ⲓ̈ⲛⲉ ⲍⲟⲧⲁ̈[ⲛ]",
-      "core_english": "{45} entire of the light, when",
+      "core_coptic": "{22} ⲧⲏⲣϩ ⲛ̄ⲧⲉ ⲡⲟⲩⲁ̈ⲓ̈ⲛⲉ ⲍⲟⲧⲁ̈[ⲛ]",
+      "core_english": "{22} entire of the light, when",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 77,
+          "type": "restoration",
+          "coptic": "ⲡⲕⲁⲍ",
+          "english": "the land",
+          "basis": "editor's restoration in brackets; ⲡⲕⲁⲍ … ⲧⲏⲣϩ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ = 'the entire land of light' — standard Manichaean technical term for the Father's realm (cf. accumulated vocabulary entry ⲡⲛⲁⲟ ⲛⲕⲁⲍ)",
+          "source_id": 25,
+          "section": 542
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -704,6 +1015,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲁⲣⲉ ⲡⲓⲱⲧ ⲛⲧⲉ ⲡⲱⲛⲉ̂ ⲙⲛ ⲧⲙⲉⲩ ⲛ̄ⲧⲉ ⲛⲉⲧⲁⲛⲍ ⲙ̄",
       "core_english": "When the Father of Life and the Mother of the Living, of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Father of Life and Mother of Living"
     },
@@ -714,6 +1026,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲣⲱⲙⲉ ⲁⲍⲣⲏⲓ̈ ⲍⲙ ⲡⲛⲟⲩⲛ ⲙⲡⲁⲣⲱⲛ ⲟⲩⲃⲉ ⲡⲙⲩⲥⲧⲏ",
       "core_english": "Mankind, up out of the Deep, had passed forth toward the myste-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Deep, battle — cosmic"
     },
@@ -724,6 +1037,7 @@
       "classification": "mixed",
       "core_coptic": "ⲣⲓⲟⲛ ⲙ̄ⲡⲓⲙⲁⲍⲥⲛⲉⲩ ⲛⲟⲩⲱϣⲧ̄ ·",
       "core_english": "ry of the second worship —",
+      "apparatus": [],
       "removed_material": "Removed: 'ⲁ ⲡⲓⲟⲩⲱϣⲧ ϣⲱⲡⲉ ⲡⲉⲓ' / 'this worship became the one' — pivot to application",
       "temporal_note": "hinge — substrate ends at the dash"
     },
@@ -734,6 +1048,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛ̄",
       "core_english": "The second",
+      "apparatus": [],
       "removed_material": "Removed: 'ⲉⲣⲏⲩ ⲉⲩⲉⲓⲣⲉ ⲛ̄ⲟⲩⲧⲁⲓ̈ⲟ ⲛⲛⲉⲩⲉⲣⲏⲩ' / 'other, doing honor to one another' — application closing",
       "temporal_note": "transition: end of application + start of next enumeration unit"
     },
@@ -744,6 +1059,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ ⲧⲉⲓ ⲧⲉ · ⲭⲉ ⲛⲧⲁⲣⲉ ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲍ̂ ⲛ̄ ⲡϣⲁⲣⲡ",
       "core_english": "ordination is this: when the Living Spirit brought the First",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "SECOND ordination — Living Spirit"
     },
@@ -754,6 +1070,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲣⲱⲙⲉ ⲁⲍⲣⲏⲓ̈ ⲍⲙ̄ ⲡⲡⲟⲗⲉⲙⲟⲥ ⲁϥⲛⲁⲍⲙⲉϥ ⲁⲃⲁⲗ ⲛ̄ⲛ̄",
       "core_english": "Man up out of the war, he saved him from the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -764,6 +1081,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲓⲙⲉⲩⲉ ⲧⲏⲣⲟⲩ · ⲁϥⲛⲧϥ ⲁⲍⲣⲏⲓ̈ ⲁϥⲧⲙⲧⲁⲛ ⲛⲉϥ ⲍⲛ̄ ⲛ̄ⲛⲁⲅ",
       "core_english": "waves all, he brought him up, he gave rest to him in the great",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "waves of darkness — cosmic"
     },
@@ -774,6 +1092,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛⲁⲓⲱⲛ ⲛⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲉⲧⲏⲡ ⲁⲡⲏⲓ̈ ⲛⲛⲉϥⲣⲱⲙⲉ ·",
       "core_english": "aeons of light that belong to the house of his men.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "aeons of light"
     },
@@ -782,8 +1101,20 @@
       "chapter": 9,
       "line": 87,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁϥⲥⲉⲍⲱ{46} ⲁⲣⲉⲧϥ ⲍⲓⲧⲉⲍⲏ ⲙ̄ⲡⲓⲱⲧ ⲡⲭⲁⲓ̈ⲥ ⲙⲡⲧⲏⲣϥ ·",
-      "core_english": "He set {47} on his feet before the Father, the Lord of the All.",
+      "core_coptic": "ⲁϥⲥⲉⲍⲱ{23} ⲁⲣⲉⲧϥ ⲍⲓⲧⲉⲍⲏ ⲙ̄ⲡⲓⲱⲧ ⲡⲭⲁⲓ̈ⲥ ⲙⲡⲧⲏⲣϥ ·",
+      "core_english": "He set {23} on his feet before the Father, the Lord of the All.",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 87,
+          "type": "restoration",
+          "coptic": "ϥ",
+          "english": "him",
+          "basis": "pronominal suffix on ⲥⲉⲍⲱ⸗ ('made stand'); object is the First Man",
+          "source_id": 26,
+          "section": 551
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father, Lord of All — cosmic"
     },
@@ -794,6 +1125,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁⲡ ⲟⲩⲛ ⲉⲧⲁϥⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ ⲍⲓⲧⲉⲍⲏ ⲙⲡⲛⲁⲅ ⲛⲓⲱⲧ ⲛ̄ⲛ̄",
       "core_english": "At the time, then, when he went up before the Great Father of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -804,6 +1136,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲁⲓ̈ⲛⲉ · ⲁⲩⲍⲣⲁⲩ ⲉⲓ ϣⲁⲣⲁϥ ⲁⲃⲁⲗ ⲍⲓ ⲡⲭⲓⲥⲉ ⲉϥⲭⲱ ⲙⲙⲁⲥ",
       "core_english": "Lights, their voice came to him out from on high, saying",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "voice from on high"
     },
@@ -812,8 +1145,20 @@
       "chapter": 9,
       "line": 90,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲉ ⲧⲍⲙⲥ{48} ⲡⲁϣⲏⲣⲉ ⲡⲁϣⲁⲙⲓⲥⲉ ⲥⲁⲟⲩⲛⲉⲙ̄ⲙⲁⲓ̈ ϣⲁⲛⲧ",
-      "core_english": "'Sit{49}, my son, my firstborn, at my right hand until I",
+      "core_coptic": "ⲭⲉ ⲧⲍⲙⲥ{24} ⲡⲁϣⲏⲣⲉ ⲡⲁϣⲁⲙⲓⲥⲉ ⲥⲁⲟⲩⲛⲉⲙ̄ⲙⲁⲓ̈ ϣⲁⲛⲧ",
+      "core_english": "'Sit{24}, my son, my firstborn, at my right hand until I",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 90,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(imperative)",
+          "basis": "imperative ⲧⲍⲙⲥⲟ 'sit!' addressed to 'my son, my firstborn' (Ps 110:1 citation)",
+          "source_id": 27,
+          "section": 554
+        }
+      ],
       "removed_material": null,
       "temporal_note": "enthronement — though resembles Ps 110, in this context the cosmic firstborn (First Man) at right hand of Father — substrate enthronement scene"
     },
@@ -824,6 +1169,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁ ⲛⲉϥⲭⲁⲭⲉ ⲧⲏⲣⲟⲩ ⲛⲍⲩⲡⲟⲡⲟⲇⲓⲟⲛ ⲍⲁ ⲛⲉϥⲟⲩⲣⲏⲧⲉ ·",
       "core_english": "set all his enemies as a footstool under his feet.'",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "enemies as footstool"
     },
@@ -834,6 +1180,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁϥⲭⲓ ⲧⲛⲁⲅ ⲛⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ ⲭⲉϩⲁϣⲱⲡⲉ ⲛ̄ⲁⲣⲭⲏⲅⲟⲥ",
       "core_english": "He received the great ordination, so as to become leader",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "great ordination"
     },
@@ -844,6 +1191,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲛⲉϥⲥⲛⲏⲩ ⲍⲙ̄ ⲡⲁⲓⲱⲛ ⲛⲃ̄ⲣ̄ⲣⲉ · ⲟⲩⲃⲉ ⲡⲙⲩⲥⲧⲏⲣⲓ",
       "core_english": "of his brothers in the new aeon. Concerning the myste-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "new aeon"
     },
@@ -854,6 +1202,7 @@
       "classification": "mixed",
       "core_coptic": "ⲟⲛ ⲁⲛ ⲛ̄ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛ̄ⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ ·",
       "core_english": "ry again of the second ordination —",
+      "apparatus": [],
       "removed_material": "Removed: 'ⲁ ⲧⲭⲉⲓⲣⲟⲧⲟⲛⲓⲁ ϣⲱ' / 'the ordination be-' — pivot to application",
       "temporal_note": "hinge — application coming"
     },
@@ -864,6 +1213,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲧⲟⲩ ⲙ̄ⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲡⲓⲧⲟⲩ ⲙ̄ⲙⲉⲓⲛⲉ ⲛⲧⲁⲩϣⲱⲡⲉ ⲛϣⲁⲣⲡ ⲍⲛ ⲧⲙⲛⲧⲛⲟⲩⲧⲉ",
       "core_english": "These five mysteries, these five kinds, which became first in divinity",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "recapitulation of five mysteries in divinity"
     },
@@ -872,8 +1222,9 @@
       "chapter": 9,
       "line": 101,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ϣⲁⲣⲡ ⲛⲭⲓ ⲛⲓⲙⲩⲥⲧⲏⲣ{50} ⲍⲛ̄ ⲧⲙⲏⲧⲉ ⲛ̄ⲛ̄ⲅⲁⲙ ⲙ̄ⲡⲕⲉⲕⲉ",
+      "core_coptic": "ⲛ̄ϣⲁⲣⲡ ⲛⲭⲓ ⲛⲓⲙⲩⲥⲧⲏⲣ{25} ⲍⲛ̄ ⲧⲙⲏⲧⲉ ⲛ̄ⲛ̄ⲅⲁⲙ ⲙ̄ⲡⲕⲉⲕⲉ",
       "core_english": "from the beginning to receive the mysteries in the midst of the powers of darkness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers of darkness — cosmic register"
     },
@@ -882,8 +1233,20 @@
       "chapter": 9,
       "line": 123,
       "classification": "cosmological_substrate",
-      "core_coptic": "{51} ⲁⲛ ⲍⲙ̄ ⲡⲥⲏⲩ ⲛ̄ⲧⲟⲩⲟ̄ⲓⲛⲉⲓ ⲁⲃⲁⲗ ⲉⲧⲉϣⲁⲣⲉ ⲧⲙⲟⲣⲫⲏ",
-      "core_english": "{52}, at the time of their going forth, when the form",
+      "core_coptic": "{26} ⲁⲛ ⲍⲙ̄ ⲡⲥⲏⲩ ⲛ̄ⲧⲟⲩⲟ̄ⲓⲛⲉⲓ ⲁⲃⲁⲗ ⲉⲧⲉϣⲁⲣⲉ ⲧⲙⲟⲣⲫⲏ",
+      "core_english": "{26}, at the time of their going forth, when the form",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 123,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲁⲗⲓⲛ",
+          "english": "Again",
+          "basis": "Editor's restoration of πάλιν.",
+          "source_id": 48,
+          "section": 561
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Form of Light eschatology — soul's exit"
     },
@@ -894,6 +1257,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲉⲓ ⲁⲃⲁⲗ ⲍⲏⲧⲟⲩ ⲛⲉⲥⲁⲣⲟⲩ ⲭⲛ̄ ⲙ̄ⲡⲕⲉⲕⲉ ⲁⲡⲟⲩ",
       "core_english": "of light comes forth before them, and she draws them away from the darkness to the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Form of Light draws from darkness"
     },
@@ -902,8 +1266,19 @@
       "chapter": 9,
       "line": 125,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲓ̈ⲛⲉ ⲛ {53} ϣⲁⲣⲉ ⲧⲙⲟⲣⲫⲏ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲧⲍⲣⲕⲟ ⲡⲣⲱ",
-      "core_english": "light. {54}. The form of light stills the man",
+      "core_coptic": "ⲁⲓ̈ⲛⲉ ⲛ {27} ϣⲁⲣⲉ ⲧⲙⲟⲣⲫⲏ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲧⲍⲣⲕⲟ ⲡⲣⲱ",
+      "core_english": "light. {27}. The form of light stills the man",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 125,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲛ",
+          "source_id": 49,
+          "section": 563
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continuation"
     },
@@ -912,8 +1287,20 @@
       "chapter": 9,
       "line": 126,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉ ⲍⲙ̄ ⲡⲁⲥⲡⲁⲥⲙⲟⲥ ⲙⲛ ⲡⲉⲥⲍⲣⲁⲕ ⲁⲃⲁⲗ ⲛ̄{55} ⲛⲛ̄",
-      "core_english": "with the kiss and her stillness, away from the {56} of the",
+      "core_coptic": "ⲙⲉ ⲍⲙ̄ ⲡⲁⲥⲡⲁⲥⲙⲟⲥ ⲙⲛ ⲡⲉⲥⲍⲣⲁⲕ ⲁⲃⲁⲗ ⲛ̄{28} ⲛⲛ̄",
+      "core_english": "with the kiss and her stillness, away from the {28} of the",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 126,
+          "type": "restoration",
+          "coptic": "ⲧⲍⲣⲧⲉ",
+          "english": "fear",
+          "basis": "Editor's restoration; ϩⲣⲧⲉ 'fear, terror.'",
+          "source_id": 50,
+          "section": 564
+        }
+      ],
       "removed_material": null,
       "temporal_note": "kiss in cosmic eschatology"
     },
@@ -922,8 +1309,30 @@
       "chapter": 9,
       "line": 127,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲁⲓⲙⲱⲛ ⲉ{57} ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲍⲙ̄ ⲡⲉⲥⲉⲓ{58}ⲉ ⲍⲛ ⲧⲉⲥⲍⲓ",
-      "core_english": "demons that {59} his body. In her likeness, in her i-",
+      "core_coptic": "ⲁⲁⲓⲙⲱⲛ ⲉ{29} ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲍⲙ̄ ⲡⲉⲥⲉⲓ{30}ⲉ ⲍⲛ ⲧⲉⲥⲍⲓ",
+      "core_english": "demons that {29} his body. In her likeness, in her i-",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 127,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲉⲕⲟ",
+          "english": "destroy",
+          "basis": "Editor's restoration; ⲉⲧ-ⲧⲉⲕⲟ 'who destroy/corrupt.'",
+          "source_id": 51,
+          "section": 565
+        },
+        {
+          "id": 30,
+          "segment": 127,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "n",
+          "basis": "Editor's restoration of single letter ⲛ in ⲡⲉⲥⲉⲓⲛⲉ 'her likeness.'",
+          "source_id": 52,
+          "section": 565
+        }
+      ],
       "removed_material": null,
       "temporal_note": "demons of body"
     },
@@ -932,8 +1341,20 @@
       "chapter": 9,
       "line": 128,
       "classification": "mixed",
-      "core_coptic": "ⲕⲱⲛ ϣⲁⲣ{60} ⲡⲓⲍⲏⲧ ⲉⲧⲛⲏⲩ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲉϩⲥⲱ",
-      "core_english": "mage, {61} the heart who comes forth from his bod-",
+      "core_coptic": "ⲕⲱⲛ ϣⲁⲣ{31} ⲡⲓⲍⲏⲧ ⲉⲧⲛⲏⲩ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲉϩⲥⲱ",
+      "core_english": "mage, {31} the heart who comes forth from his bod-",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 128,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(habitual prefix)",
+          "basis": "Editor's restoration completing ϣⲁⲣⲉ habitual marker.",
+          "source_id": 53,
+          "section": 566
+        }
+      ],
       "removed_material": "Removed: 'ⲙⲡⲉⲕⲗⲉⲕⲧⲟⲥ' / 'of the elect (one)' — Manichaean institutional category inserted into eschatological scene",
       "temporal_note": "elect (ⲉⲕⲗⲉⲕⲧⲟⲥ) is institutional vocabulary — substrate is the Form-of-Light reception of soul"
     },
@@ -942,8 +1363,40 @@
       "chapter": 9,
       "line": 129,
       "classification": "cosmological_substrate",
-      "core_coptic": "{62} ⲍⲣⲁⲕ ⲁⲣ{63} ⲙⲛⲛⲥⲱⲥ ⲡⲁⲗⲧⲉⲗⲟⲥ ⲉⲧⲉⲙ{64}ⲍⲧⲉ ⲙ̄ⲡⲃⲣⲁ",
-      "core_english": "{65} is at peace {66}. After this, the angel who holds the pri-",
+      "core_coptic": "{32} ⲍⲣⲁⲕ ⲁⲣ{33} ⲙⲛⲛⲥⲱⲥ ⲡⲁⲗⲧⲉⲗⲟⲥ ⲉⲧⲉⲙ{34}ⲍⲧⲉ ⲙ̄ⲡⲃⲣⲁ",
+      "core_english": "{32} is at peace {33}. After this, the angel who holds the pri-",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 129,
+          "type": "restoration",
+          "coptic": "ⲙⲁ",
+          "english": "-y",
+          "basis": "Editor's restoration completing ⲡⲉϩⲥⲱⲙⲁ 'his body' from previous line.",
+          "source_id": 54,
+          "section": 567
+        },
+        {
+          "id": 33,
+          "segment": 129,
+          "type": "restoration",
+          "coptic": "ⲁϩ",
+          "english": "in him / unto him",
+          "basis": "Editor's restoration; ⲁⲣⲁϥ (Lyc ⲁⲣⲁϩ) 'to/unto him.'",
+          "source_id": 55,
+          "section": 567
+        },
+        {
+          "id": 34,
+          "segment": 129,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "a",
+          "basis": "Editor's restoration; ⲉⲧⲉⲙⲁⲍⲧⲉ = ⲉⲧ-ⲉⲙⲁϩⲧⲉ 'who holds.'",
+          "source_id": 56,
+          "section": 567
+        }
+      ],
       "removed_material": null,
       "temporal_note": "angel of prize — eschatological"
     },
@@ -952,8 +1405,18 @@
       "chapter": 9,
       "line": 130,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲓⲟⲛ ϣⲁϩⲥⲁⲩⲧⲛⲉ ⲛⲉϩ ⲛ̄ⲧⲟⲩⲛⲉⲙ ⲛ̄ϩⲥⲁⲕ{67}ⲉϩ ⲁⲃⲁⲗ ⲙ̄",
-      "core_english": "ze stretches forth his right (hand) and {68} draws him out from",
+      "core_coptic": "ⲃⲓⲟⲛ ϣⲁϩⲥⲁⲩⲧⲛⲉ ⲛⲉϩ ⲛ̄ⲧⲟⲩⲛⲉⲙ ⲛ̄ϩⲥⲁⲕ{35}ⲉϩ ⲁⲃⲁⲗ ⲙ̄",
+      "core_english": "ze stretches forth his right (hand) and {35} draws him out from",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 130,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 57,
+          "section": 568
+        }
+      ],
       "removed_material": null,
       "temporal_note": "angel's right hand draws soul"
     },
@@ -962,8 +1425,20 @@
       "chapter": 9,
       "line": 131,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲛⲟⲩⲛ ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲛϩϣⲁⲡⲧ̄ ⲁⲍⲟⲩⲛ ⲍⲙ̄ ⲡ{69}ⲥⲡⲁⲥⲙⲟⲥ",
-      "core_english": "the depth of his body, and welcomes him in by the {70}kiss",
+      "core_coptic": "ⲡⲛⲟⲩⲛ ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲛϩϣⲁⲡⲧ̄ ⲁⲍⲟⲩⲛ ⲍⲙ̄ ⲡ{36}ⲥⲡⲁⲥⲙⲟⲥ",
+      "core_english": "the depth of his body, and welcomes him in by the {36}kiss",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 131,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "a",
+          "basis": "Editor's restoration; ⲡⲁⲥⲡⲁⲥⲙⲟⲥ 'kiss.'",
+          "source_id": 58,
+          "section": 569
+        }
+      ],
       "removed_material": null,
       "temporal_note": "welcomed by kiss"
     },
@@ -972,8 +1447,30 @@
       "chapter": 9,
       "line": 132,
       "classification": "cosmological_substrate",
-      "core_coptic": "{71}ⲛ̄ ⲧⲁⲗⲁⲡⲏ ϣⲁⲣⲉ ⲧⲧⲩⲭⲏ ⲉⲧⲙⲙⲉⲩ ⲟⲩⲱϣ{72} ⲛ̄ⲧⲉⲥⲣⲁϩ",
-      "core_english": "{73} the embrace. That soul worships {74} her",
+      "core_coptic": "{37}ⲛ̄ ⲧⲁⲗⲁⲡⲏ ϣⲁⲣⲉ ⲧⲧⲩⲭⲏ ⲉⲧⲙⲙⲉⲩ ⲟⲩⲱϣ{38} ⲛ̄ⲧⲉⲥⲣⲁϩ",
+      "core_english": "{37} the embrace. That soul worships {38} her",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 132,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "with",
+          "basis": "Editor's restoration; ⲙⲛ̄ 'with' opens the line.",
+          "source_id": 59,
+          "section": 570
+        },
+        {
+          "id": 38,
+          "segment": 132,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "t",
+          "basis": "Editor's restoration completing ⲟⲩⲱϣⲧ 'worship.'",
+          "source_id": 60,
+          "section": 570
+        }
+      ],
       "removed_material": null,
       "temporal_note": "soul worships its redeemer"
     },
@@ -982,8 +1479,20 @@
       "chapter": 9,
       "line": 133,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲱⲧⲉ ⲉⲧⲉ ⲧⲙⲟⲣⲫⲏ ⲧⲉ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲍⲛ ⲧⲟⲩⲛ{75} ⲁⲉ ⲍⲱϩ",
+      "core_coptic": "ⲥⲱⲧⲉ ⲉⲧⲉ ⲧⲙⲟⲣⲫⲏ ⲧⲉ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲍⲛ ⲧⲟⲩⲛ{39} ⲁⲉ ⲍⲱϩ",
       "core_english": "redeemer, who is the form of light. In that very moment then she also",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 133,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "ou",
+          "basis": "Editor's restoration completing ⲧⲟⲩⲛⲟⲩ 'the (very) moment.'",
+          "source_id": 61,
+          "section": 571
+        }
+      ],
       "removed_material": null,
       "temporal_note": "redeemer = Form of Light — eschatological substrate"
     },
@@ -992,8 +1501,36 @@
       "chapter": 9,
       "line": 134,
       "classification": "cosmological_substrate",
-      "core_coptic": "{76}ⲉϣⲁ{77} ϣⲁϩⲭⲱⲕ ⲛ̄ϩⲁⲓ̈ⲉⲩⲧⲉ ⲕⲁⲧⲁ ⲛⲁ {78}",
-      "core_english": "{79} habitually {80}, she is completed with the {hayeute} according to {81}",
+      "core_coptic": "{40}ⲉϣⲁ{41} ϣⲁϩⲭⲱⲕ ⲛ̄ϩⲁⲓ̈ⲉⲩⲧⲉ ⲕⲁⲧⲁ ⲛⲁ {42}",
+      "core_english": "{40} habitually {41}, she is completed with the {hayeute} according to {42}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 134,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "which",
+          "basis": "Editor's restoration completing relative ⲉⲧⲉϣⲁ-.",
+          "source_id": 62,
+          "section": 572
+        },
+        {
+          "id": 41,
+          "segment": 134,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 63,
+          "section": 572
+        },
+        {
+          "id": 42,
+          "segment": 134,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 64,
+          "section": 572
+        }
+      ],
       "removed_material": null,
       "temporal_note": "completion — eschatological"
     },
@@ -1002,8 +1539,34 @@
       "chapter": 9,
       "line": 135,
       "classification": "cosmological_substrate",
-      "core_coptic": "{82}ⲛⲧⲉ ⲡ {83} ⲛⲍ {84} ⲍⲙ ⲡⲏⲓ̈ ⲛⲧⲉ ⲛⲉⲧⲁⲛⲍ̄ ⲙⲛ ⲛⲛⲟⲩ",
-      "core_english": "{85} of the {86} {87} in the house of the Living Ones, with the",
+      "core_coptic": "{43}ⲛⲧⲉ ⲡ {44} ⲛⲍ {45} ⲍⲙ ⲡⲏⲓ̈ ⲛⲧⲉ ⲛⲉⲧⲁⲛⲍ̄ ⲙⲛ ⲛⲛⲟⲩ",
+      "core_english": "{43} of the {44} {45} in the house of the Living Ones, with the",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 135,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 65,
+          "section": 573
+        },
+        {
+          "id": 44,
+          "segment": 135,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 66,
+          "section": 573
+        },
+        {
+          "id": 45,
+          "segment": 135,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 67,
+          "section": 573
+        }
+      ],
       "removed_material": null,
       "temporal_note": "house of the Living"
     },
@@ -1012,8 +1575,30 @@
       "chapter": 9,
       "line": 136,
       "classification": "mixed",
-      "core_coptic": "{88} ⲙⲛ̄ ⲛⲁⲗⲧⲉⲗ{89}",
-      "core_english": "{90} and the {91}angels",
+      "core_coptic": "{46} ⲙⲛ̄ ⲛⲁⲗⲧⲉⲗ{47}",
+      "core_english": "{46} and the {47}angels",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 136,
+          "type": "restoration",
+          "coptic": "ⲧⲉ",
+          "english": "gods",
+          "basis": "Editor's restoration completing ⲛⲛⲟⲩ|ⲧⲉ 'the gods' from previous line.",
+          "source_id": 68,
+          "section": 574
+        },
+        {
+          "id": 47,
+          "segment": 136,
+          "type": "restoration",
+          "coptic": "ⲟⲥ",
+          "english": "os",
+          "basis": "Editor's restoration completing ⲛⲁⲗⲧⲉⲗⲟⲥ 'the angels.'",
+          "source_id": 69,
+          "section": 574
+        }
+      ],
       "removed_material": "Removed: 'ⲙⲛ ⲛⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲧⲏⲣⲟⲩ ⲙⲛ ⲛ̄ⲥⲱⲧⲡ' / 'and all the apostles and the elect' — institutional categories appended to cosmic reception scene",
       "temporal_note": "angels are cosmic; apostles + elect (ⲥⲱⲧⲡ) are Manichaean institutional"
     },
@@ -1022,8 +1607,29 @@
       "chapter": 9,
       "line": 137,
       "classification": "cosmological_substrate",
-      "core_coptic": "{92}ϩⲭⲓ ⲡⲕⲗⲁⲙ {93} ⲛⲡⲉⲁⲩ ⲍⲙ̄ ⲡⲱⲛϩ ϣⲁⲁⲛⲏⲍⲉ",
-      "core_english": "{94}he receives the crown {95} of glory, in life, forever.",
+      "core_coptic": "{48}ϩⲭⲓ ⲡⲕⲗⲁⲙ {49} ⲛⲡⲉⲁⲩ ⲍⲙ̄ ⲡⲱⲛϩ ϣⲁⲁⲛⲏⲍⲉ",
+      "core_english": "{48}he receives the crown {49} of glory, in life, forever.",
+      "apparatus": [
+        {
+          "id": 48,
+          "segment": 137,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "and",
+          "basis": "Editor's restoration of conjunctive ⲛ̄- 'and.'",
+          "source_id": 70,
+          "section": 575
+        },
+        {
+          "id": 49,
+          "segment": 137,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ⲟⲩ",
+          "source_id": 71,
+          "section": 575
+        }
+      ],
       "removed_material": null,
       "temporal_note": "crown of glory — eschatological"
     }

@@ -5,7 +5,7 @@
   "start_section": 3569,
   "end_section": 3660,
   "total_sections": 92,
-  "total_lacunae": 75,
+  "total_lacunae": 38,
   "segments": [
     {
       "section": 3569,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲧⲃⲉ ⲁⲇⲁⲙ ⲡⲓϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ϫⲉ ⲙ̄ⲡⲥⲏⲩ",
       "core_english": "concerning Adam the first man — at the time",
+      "apparatus": [],
       "removed_material": "frame remnant 'reveal forth to me'",
       "temporal_note": "substantive cosmological question begins"
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁϩ ⲛⲧⲁⲩϩⲱⲅⲣⲁϥⲉ ⲙⲙⲁϩ ⲛⲉϣ ⲛϩⲉ",
       "core_english": "when they molded him, in what manner did they depict him,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "substantive cosmological question — molding/depicting Adam"
     },
@@ -34,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲏ ⲛⲧⲁⲩⲭⲡⲁϩ ⲛⲉϣ ⲛϩⲉ",
       "core_english": "or in what manner did they beget him?",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "question continues"
     },
@@ -43,7 +46,19 @@
       "line": 7,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} ⲟⲩⲛ ⲧⲉϩⲟ̄ⲓⲛⲭ",
-      "core_english": "{1} indeed his begett-",
+      "core_english": "{0} indeed his begett-",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲁⲗⲗⲁ",
+          "english": "But",
+          "basis": "Editor restoration of standard adversative ἀλλά opening the Illuminator's response after leer.",
+          "source_id": 0,
+          "section": 3572
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continues question about Adam's begetting"
     },
@@ -54,6 +69,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲟ ⲉⲓⲛⲉ ⲛⲧⲟ̄ⲓⲛⲭⲧⲟ ⲉⲧⲟⲩⲭⲧⲟ ⲙⲙⲁⲥ ⲙⲡⲟⲟⲩ ⲛ ⲧⲙⲛ̄",
       "core_english": "ing — is it like the begetting which they beget today in human-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "comparison with present begetting"
     },
@@ -64,6 +80,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲣⲱⲙⲉ ϫⲛ ⲙ̄ⲙⲁⲛ ⲟⲩⲛ ⲟⲩⲁⲓⲁϥⲟⲣⲁ ϣⲟⲟⲡ ⲁⲧⲉϩⲟ̄ⲓⲙⲙⲓ",
       "core_english": "kind, or rather is there a difference between his begett-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "question continues"
     },
@@ -72,8 +89,20 @@
       "chapter": 57,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲉ ⲙⲛ ⲧⲉⲧⲟⲩⲭⲧⲟ ⲙⲙⲁⲥ ⲙⲡⲟⲟⲩⲉ Ⲉⲡⲉⲓⲁⲏ {2} ⲁ",
-      "core_english": "ing and the one they beget today? Since {3} A-",
+      "core_coptic": "ⲥⲉ ⲙⲛ ⲧⲉⲧⲟⲩⲭⲧⲟ ⲙⲙⲁⲥ ⲙⲡⲟⲟⲩⲉ Ⲉⲡⲉⲓⲁⲏ {1} ⲁ",
+      "core_english": "ing and the one they beget today? Since {1} A-",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲉⲕⲓⲁ",
+          "english": "[indeed?]",
+          "basis": "Editor restoration of partially preserved ⲉⲕ + ⲓⲁ; reading and exact sense uncertain — possibly an emphatic particle continuing the protasis 'since...'.",
+          "source_id": 1,
+          "section": 3575
+        }
+      ],
       "removed_material": null,
       "temporal_note": "transition to description of Adam"
     },
@@ -84,6 +113,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲇⲁⲙ ⲟⲩⲭⲱⲣⲉ ⲡⲉ ⲛ̄ ⲧⲉϩⲁⲙⲁⲓ̈ⲏⲏⲥ ⲟⲩⲛⲁⲟ̄ ⲧⲉ ⲧⲉϩ",
       "core_english": "dam was a strong one in his support, his stat-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "primal man description"
     },
@@ -94,6 +124,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲏⲗⲓⲕⲓⲁ ⲛⲉⲉ ⲛⲉϩⲕⲉⲣⲙⲡⲉⲩⲉ ⲁϩⲣ̄ ⲁϩ ⲛ̄ⲣⲁⲙⲡⲉ ⲉϩ",
       "core_english": "ure was great according to his other years, having spent many years ex-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's stature/years"
     },
@@ -104,6 +135,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲟⲟⲡ ⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲁϩ ⲟⲩⲁⲉⲉⲧϩ ⲙ̄ⲙⲉⲧⲉ ⲉⲛ ⲡⲉ ⲛ̄",
       "core_english": "isting in the world; he alone was incomparable to those wh-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's incomparable strength"
     },
@@ -114,6 +146,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲛⲟ̄ⲛⲧⲩ̄ ⲉϩⲟ ⲛ̄ϫⲱⲣⲉ ⲁⲗⲗⲁ ⲛ̄ⲕⲉⲕⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲉⲧⲁⲩ",
       "core_english": "om we have likened (to him) in being strong. But all the others who were",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "comparison continues"
     },
@@ -124,6 +157,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲡⲁⲩ ⲛ ⲧⲉϩⲅⲉⲛⲉⲁ ⲛⲉⲉ ⲛⲟⲩⲣⲙ̄ⲡⲧⲉⲩⲉ ⲱⲟⲩⲁⲛⲟⲩ ⲛⲓ",
       "core_english": "begotten in his generation — they themselves were likewise in their years. The",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "first generations"
     },
@@ -132,8 +166,20 @@
       "chapter": 57,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲱⲙⲉ ⲛⲧⲁϩ ⲉⲧⲟⲩⲭⲧⲟ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ⲁ ⲧⲟⲩ{4}ⲓ̈ⲏ",
-      "core_english": "men whom they beget today — their {5}",
+      "core_coptic": "ⲣⲱⲙⲉ ⲛⲧⲁϩ ⲉⲧⲟⲩⲭⲧⲟ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ⲁ ⲧⲟⲩ{2}ⲓ̈ⲏ",
+      "core_english": "men whom they beget today — their {2}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲁⲙⲁ",
+          "english": "support",
+          "basis": "Editor restoration completing ⲧⲟⲩⲁⲙⲁⲓ̈ⲏⲏⲥ 'their support/foundation' — same lexeme as accumulated ⲁⲙⲁⲓ̈ⲏⲏⲥ; parallels ⲧⲉϩⲁⲙⲁⲓ̈ⲏⲏⲥ in line 23.",
+          "source_id": 2,
+          "section": 3581
+        }
+      ],
       "removed_material": null,
       "temporal_note": "contrast with today's men"
     },
@@ -142,8 +188,30 @@
       "chapter": 57,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲏⲥ ⲥⲃⲁⲕ ⲛⲧⲟⲩⲟ̄{6}ⲙ̄ ⲛⲟⲩⲕⲉⲣⲙⲡⲉⲩⲉ ⲟ̄ⲱⲭⲃⲉ {7}",
-      "core_english": "support has shrunk, their {8} of their other years is diminished — {9}",
+      "core_coptic": "ⲏⲥ ⲥⲃⲁⲕ ⲛⲧⲟⲩⲟ̄{3}ⲙ̄ ⲛⲟⲩⲕⲉⲣⲙⲡⲉⲩⲉ ⲟ̄ⲱⲭⲃⲉ {4}",
+      "core_english": "support has shrunk, their {3} of their other years is diminished — {4}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "might",
+          "basis": "Editor restoration in ⲧⲟⲩⲟ̄ⲁⲙ 'their might/power'; cognate with accumulated ⲛⲟⲁⲙ 'might/strength' (= ϫⲟⲙ).",
+          "source_id": 3,
+          "section": 3582
+        },
+        {
+          "id": 4,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲃⲉ",
+          "english": "concerning",
+          "basis": "Editor restoration; the phrase ⲉⲧⲃⲉ ⲉⲩ 'concerning what?' = 'why?' is standard idiom.",
+          "source_id": 4,
+          "section": 3582
+        }
+      ],
       "removed_material": null,
       "temporal_note": "diminishment of years"
     },
@@ -152,8 +220,30 @@
       "chapter": 57,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲩ ⲱⲱϩ ⲧⲟ̄ⲓⲙ̄ⲙ̄ⲓⲥⲉ ⲙⲡⲟⲟⲩ ⲛ̄{10}ⲧⲟⲩⲭⲧⲟ ⲙ̄ⲙⲁ{11}",
-      "core_english": "what is it? And the begetting today of {12}they beget {13}",
+      "core_coptic": "ⲉⲩ ⲱⲱϩ ⲧⲟ̄ⲓⲙ̄ⲙ̄ⲓⲥⲉ ⲙⲡⲟⲟⲩ ⲛ̄{5}ⲧⲟⲩⲭⲧⲟ ⲙ̄ⲙⲁ{6}",
+      "core_english": "what is it? And the begetting today of {5}they beget {6}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲛⲉ",
+          "english": "those whom",
+          "basis": "Editor restoration of ⲛ̄ⲛⲉⲧ- relative-plural genitive.",
+          "source_id": 5,
+          "section": 3583
+        },
+        {
+          "id": 6,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "(them)",
+          "basis": "Editor restoration of 3pl object suffix on ⲙ̄ⲙⲁⲩ.",
+          "source_id": 6,
+          "section": 3583
+        }
+      ],
       "removed_material": null,
       "temporal_note": "continues comparing begetting"
     },
@@ -162,8 +252,19 @@
       "chapter": 57,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲃ̄ⲓⲁⲓ̈ⲧ ⲡⲁⲣⲁ ⲧⲁⲛⲓϣⲁⲣⲡ ⲕⲉ{14}",
-      "core_english": "is altered from those of the first ke{15}",
+      "core_coptic": "ϣⲃ̄ⲓⲁⲓ̈ⲧ ⲡⲁⲣⲁ ⲧⲁⲛⲓϣⲁⲣⲡ ⲕⲉ{7}",
+      "core_english": "is altered from those of the first ke{7}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 14,
+          "partial": "ⲕⲉ-",
+          "source_id": 7,
+          "section": 3584
+        }
+      ],
       "removed_material": null,
       "temporal_note": "altered from first generations"
     },
@@ -174,6 +275,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲉϩⲙⲁ ⲡⲉϩⲙⲁ ⲉⲓⲥ ⲛ̄ⲕⲉⲥⲓⲟⲩ ⲙⲛ̄ ⲍⲱⲁⲓⲟⲛ ⲥⲉⲙⲏⲛ",
       "core_english": "each in his own place. Behold, the other stars also and zodiac-signs endure",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "stars and zodiacs — cosmological"
     },
@@ -184,6 +286,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲍⲛ̄ ⲛⲟⲩⲧⲟⲡⲟⲥ ⲉⲧⲃⲉ ⲉⲩ ⲧⲛⲟⲩ ⲛⲍⲱⲃ ⲁ ⲡⲁⲍⲉ ⲙⲛ",
       "core_english": "forth in their places. Wherefore now (is) the matter — the lifespan and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "lifespan question"
     },
@@ -194,6 +297,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲣⲙ̄ⲡⲉⲟⲩⲉ ⲛ̄ⲛⲓⲍⲁⲉⲩⲉ ⲥⲃⲁⲕ ⲁϩⲣ̄ⲕⲟⲩⲓ̈ ⲛⲍⲟⲩⲟ ⲁⲛ ⲁ",
       "core_english": "the years of these last (ones) have shrunk, become small, even still more than",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "last ones' years shrunk"
     },
@@ -204,6 +308,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲁⲣⲭⲁⲓⲟⲥ ⲉⲧⲏⲡ ⲁⲛⲓϣⲁⲣⲡ ⲛⲅⲉⲛⲉⲁ",
       "core_english": "the ancients who belong to the first generations.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ancients of first generations"
     },
@@ -214,6 +319,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛⲧⲁⲩⲁⲓ̈ⲉⲩⲧⲉ ⲁⲩⲥⲱⲧ ⲁⲩⲥⲃⲁⲕ",
       "core_english": "Their fathers were drawn-out, were diminished.",
+      "apparatus": [],
       "removed_material": "frame: 'who had asked him, namely'",
       "temporal_note": "summary statement of the teaching"
     },
@@ -224,6 +330,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲡⲉⲓⲁⲏ ⲟⲩⲛ ⲧⲟⲩ ⲛⲧⲩⲡⲟⲥ ⲛⲧⲉ ⲛⲉⲝⲟⲩⲥⲓⲁⲥⲧⲏⲥ ⲙⲛ̄",
       "core_english": "Since, therefore, there are five types of the powers and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "five-fold enumeration begins — core teaching"
     },
@@ -234,6 +341,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲉϩⲭⲁⲩⲙⲁⲓ̈ⲧ ⲕⲁⲁⲧ ⲍⲛ̄ ⲧⲥⲫⲁⲓⲣⲁ ⲛ̄ⲛⲍⲱⲁⲓⲟⲛ ⲙⲛ ⲙⲡⲧⲏ",
       "core_english": "way-leaders set in the sphere of the zodiac-signs and in the heav-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲣⲉϩⲭⲁⲩⲙⲁⲓ̈ⲧ — way-leaders, classic substrate marker"
     },
@@ -242,8 +350,20 @@
       "chapter": 57,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲉ ⲉⲧⲛⲧⲡⲉ ⲙ̄ⲙⲁⲥ ⲟⲩⲛⲧⲉⲩ ⲛⲣⲉⲛ ⲙ̄ⲙⲉⲩ ⲉⲩⲙ{16}",
-      "core_english": "-ens which are above her: they have names there, being {17}",
+      "core_coptic": "ⲟⲩⲉ ⲉⲧⲛⲧⲡⲉ ⲙ̄ⲙⲁⲥ ⲟⲩⲛⲧⲉⲩ ⲛⲣⲉⲛ ⲙ̄ⲙⲉⲩ ⲉⲩⲙ{8}",
+      "core_english": "-ens which are above her: they have names there, being {8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲙⲟⲩⲧⲉ",
+          "english": "called",
+          "basis": "Editor restoration completing ⲉⲩⲙ[ⲟⲩⲧⲉ] 'they being called' — circumstantial introducing the names that follow in lines 11-13",
+          "source_id": 9,
+          "section": 3592
+        }
+      ],
       "removed_material": null,
       "temporal_note": "names of cosmic powers"
     },
@@ -252,8 +372,20 @@
       "chapter": 57,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲛ̄ⲍⲏⲧⲟⲩ ⲡϣⲁⲣⲡ ⲛⲣⲉⲛ ⲡⲉ ⲧⲣⲁⲙⲡⲉ ⲡⲙⲁⲍ",
-      "core_english": "{19}: among them, the first name is the year, the second",
+      "core_coptic": "{9} ⲛ̄ⲍⲏⲧⲟⲩ ⲡϣⲁⲣⲡ ⲛⲣⲉⲛ ⲡⲉ ⲧⲣⲁⲙⲡⲉ ⲡⲙⲁⲍ",
+      "core_english": "{9}: among them, the first name is the year, the second",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 30,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲁⲩ",
+          "english": "by them",
+          "basis": "Editor restoration; ⲙⲟⲩⲧⲉ ⲁⲣⲁⲩ 'call upon them / call them by name' completes the verbal idiom from prior line",
+          "source_id": 10,
+          "section": 3593
+        }
+      ],
       "removed_material": null,
       "temporal_note": "enumeration: first/second"
     },
@@ -262,8 +394,20 @@
       "chapter": 57,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲡⲉ ⲡⲉⲃⲁⲧ ⲡⲙⲁⲍϣⲁⲙⲧ ⲡⲉ ⲡⲍⲟⲟⲩⲉ ⲡⲙⲁⲍ",
-      "core_english": "{21} is the month, the third is the day, the",
+      "core_coptic": "{10} ⲡⲉ ⲡⲉⲃⲁⲧ ⲡⲙⲁⲍϣⲁⲙⲧ ⲡⲉ ⲡⲍⲟⲟⲩⲉ ⲡⲙⲁⲍ",
+      "core_english": "{10} is the month, the third is the day, the",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲥⲛⲉⲩ",
+          "english": "second",
+          "basis": "Editor restoration of ordinal completing ⲡⲙⲁⲍ[ⲥⲛⲉ]ⲩ 'the second' in the enumeration year/month/day/hour/moment",
+          "source_id": 11,
+          "section": 3594
+        }
+      ],
       "removed_material": null,
       "temporal_note": "enumeration continues"
     },
@@ -272,8 +416,20 @@
       "chapter": 57,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22} ⲡⲉ ⲧⲟⲩⲛⲟⲩ ⲡⲙⲁⲍⲧⲟⲩ ⲡⲉ ⲧⲥⲟⲩⲥⲟⲩ ⲡⲡⲓⲧⲟⲩ ⲟⲩⲛ",
-      "core_english": "{23} is the hour, the fifth is the moment. The five then",
+      "core_coptic": "{11} ⲡⲉ ⲧⲟⲩⲛⲟⲩ ⲡⲙⲁⲍⲧⲟⲩ ⲡⲉ ⲧⲥⲟⲩⲥⲟⲩ ⲡⲡⲓⲧⲟⲩ ⲟⲩⲛ",
+      "core_english": "{11} is the hour, the fifth is the moment. The five then",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ϩⲧⲁⲩ",
+          "english": "fourth",
+          "basis": "Editor restoration of ordinal ⲡⲙⲁⲍ[ϩⲧⲁⲩ] 'the fourth' in the time-enumeration",
+          "source_id": 12,
+          "section": 3595
+        }
+      ],
       "removed_material": null,
       "temporal_note": "five-fold enumeration completes"
     },
@@ -282,8 +438,20 @@
       "chapter": 57,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} ⲙⲛ ⲡⲓⲧⲟⲩ ⲛⲟⲓⲕⲟⲥ ⲥⲉϣⲟⲟⲡ ⲍⲛ ⲧⲥⲫⲁⲓⲣⲁ ⲙⲛ",
-      "core_english": "{25} and the five houses exist in the sphere and",
+      "core_coptic": "{12} ⲙⲛ ⲡⲓⲧⲟⲩ ⲛⲟⲓⲕⲟⲥ ⲥⲉϣⲟⲟⲡ ⲍⲛ ⲧⲥⲫⲁⲓⲣⲁ ⲙⲛ",
+      "core_english": "{12} and the five houses exist in the sphere and",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲟⲡⲟⲥ",
+          "english": "places",
+          "basis": "Editor restoration: ⲡⲡⲓⲧⲟⲩ ⲟⲩⲛ [ⲛ]ⲧⲟⲡⲟⲥ ⲙⲛ ⲡⲓⲧⲟⲩ ⲛⲟⲓⲕⲟⲥ 'the five places and the five houses' — paired locative term",
+          "source_id": 13,
+          "section": 3596
+        }
+      ],
       "removed_material": null,
       "temporal_note": "five houses in sphere"
     },
@@ -294,6 +462,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲡⲏⲟⲩⲉ ⲟⲩⲛⲧⲉ ⲛⲓⲙⲁ ⲧⲉ ⲛⲟⲁⲙ ⲙⲙⲉⲩ ⲉⲩⲟ ⲛⲭⲁⲓ̈ⲥ ⲁ",
       "core_english": "the heavens. These places have powers in them, being lords over",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers as lords"
     },
@@ -304,6 +473,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲱⲩ ⲡⲭⲁⲓ̈ⲥ ⲛⲧⲣⲁⲙⲡⲉ ϣⲟⲟⲡ ⲡⲭⲁⲓ̈ⲥ ⲙ̄ⲡⲉⲃⲁⲧ ϣⲟⲟⲡ",
       "core_english": "them. The lord of the year exists, the lord of the month exists,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "enumeration of lords"
     },
@@ -314,6 +484,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲭⲁⲓ̈ⲥ ⲙⲡⲍⲟⲟⲩⲉ ϣⲟⲟⲡ ⲡⲭⲁⲓ̈ⲥ ⲛⲧⲟⲩⲛⲟⲩ ϣⲟⲟⲡ",
       "core_english": "the lord of the day exists, the lord of the hour exists,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "enumeration continues"
     },
@@ -324,6 +495,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲭⲁⲓ̈ⲥ ⲛ̄ⲧⲥⲟⲩⲥⲟⲩ ϣⲟⲟⲡ ⲡⲟⲩⲉ ⲁⲡⲥⲁⲗⲡ ⲛ̄ⲧⲡⲉ ⲙⲡⲉϩ",
       "core_english": "the lord of the moment exists. One (is) to the share of heaven, of his fel-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "five-fold complete; share-of-heaven mapping"
     },
@@ -334,6 +506,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲃⲏⲣ ⲡⲉⲧⲛ̄ⲧⲡⲉ ⲁⲡⲥⲁⲗⲡ ⲟ ⲙⲡⲭⲁⲓ̈ⲥ ⲁⲭⲛ̄ ⲡⲉⲧⲛ̄ⲡⲓⲧⲛⲉ",
       "core_english": "-low which is above; (one) to the share that is lord over that which is below,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "above/below cosmic mapping"
     },
@@ -342,8 +515,20 @@
       "chapter": 57,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲙⲁϩ ⲧⲙⲛ̄ⲧⲣⲱⲙⲉ ⲍⲱⲱⲥ ⲉⲧⲟⲩⲭⲡⲟ ⲙ̄ⲙⲁⲥ ⲙⲛ ⲧⲁ{26}",
-      "core_english": "even unto humanity itself which is begotten and the {27}",
+      "core_coptic": "ⲙ̄ⲙⲁϩ ⲧⲙⲛ̄ⲧⲣⲱⲙⲉ ⲍⲱⲱⲥ ⲉⲧⲟⲩⲭⲡⲟ ⲙ̄ⲙⲁⲥ ⲙⲛ ⲧⲁ{13}",
+      "core_english": "even unto humanity itself which is begotten and the {13}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲃ",
+          "english": "cattle",
+          "basis": "Editor restoration of inner letters [ⲛⲧⲃ] of ⲧⲁⲛⲧⲃⲛⲁⲩⲉ 'the cattle' which spans line break (line 20 ends ⲧⲁ-, line 21 begins ⲛⲁⲩⲉ); standard pairing of ⲣⲱⲙⲉ + ⲧⲃⲛⲏ",
+          "source_id": 14,
+          "section": 3602
+        }
+      ],
       "removed_material": null,
       "temporal_note": "extending to humanity"
     },
@@ -354,6 +539,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲩⲉ ⲉⲩⲭⲡⲟ ⲙⲙⲁⲩ ⲍⲛ ⲛⲓⲟⲁⲙ ⲛⲧⲁⲩ ⲁⲉ ⲍⲱⲱⲩ ⲛⲓⲟⲁⲙ",
       "core_english": "(cattle), being begotten among these powers. They themselves indeed, the powers,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers and begetting"
     },
@@ -364,6 +550,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲭⲓ ⲉⲝⲟⲩⲥⲓⲁ ⲭⲛ ⲛ̄ⲧⲁⲣⲭⲏ ⲙⲡⲥⲱⲛⲧ ϣⲁ ⲧⲍⲁⲏ ⲙⲡⲕⲟⲥ",
       "core_english": "have received authority from the beginning of the creation unto the end of the cos-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "authority from creation to cosmic end"
     },
@@ -374,6 +561,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲟⲥ ⲍⲛ̄ ⲧⲁⲣⲭⲏ ⲙⲉⲛ ⲛ̄ⲛⲅⲉⲛⲉⲁ ⲛⲉⲣⲉ ⲛⲟⲁⲙ ⲉⲧⲟ ⲛ̄ⲭⲁⲓ̈ⲥ",
       "core_english": "-mos. In the beginning indeed of the generations, the powers being lord",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers ruling the generations"
     },
@@ -384,6 +572,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲭⲛ ⲛⲣⲙ̄ⲡⲉⲩⲉ ⲡⲉ ⲟ ⲛ̄ⲣ̄ⲣⲟ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲁⲛ ⲧⲙⲏⲥⲉ ⲉⲧⲁⲩ",
       "core_english": "over the years are the ones reigning. Therefore also the offspring which they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "years-lords reigning — substrate"
     },
@@ -392,8 +581,20 @@
       "chapter": 57,
       "line": 44,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28} ⲍⲛ̄ ⲛⲟⲩⲅⲉⲛⲉⲁ ⲙ̄ⲛ ⲡⲟⲩⲭⲣⲟⲛⲟⲥ ⲁⲩⲟⲛ ⲛⲟⲩⲣⲙ",
-      "core_english": "{29} in their generations and their times became (people) of (long)",
+      "core_coptic": "{14} ⲍⲛ̄ ⲛⲟⲩⲅⲉⲛⲉⲁ ⲙ̄ⲛ ⲡⲟⲩⲭⲣⲟⲛⲟⲥ ⲁⲩⲟⲛ ⲛⲟⲩⲣⲙ",
+      "core_english": "{14} in their generations and their times became (people) of (long)",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 44,
+          "type": "restoration",
+          "coptic": "ⲭⲡⲁⲥ",
+          "english": "begot",
+          "basis": "Editor restoration of ⲭ- onset of ⲭⲡⲁⲥ 'begot it' (3sg.f object) — referring to the offspring (ⲧⲙⲏⲥⲉ) of line 24",
+          "source_id": 15,
+          "section": 3607
+        }
+      ],
       "removed_material": null,
       "temporal_note": "long-lived offspring"
     },
@@ -404,6 +605,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲩⲉ ⲉⲛⲉⲉⲩ ⲉⲩⲣⲍⲁⲍ ⲛ̄ⲁⲍⲉ ⲍⲛ̄ ⲧⲅⲉⲛⲉⲁ ⲛⲁⲁⲁⲙ ⲙⲛ",
       "core_english": "years, being many in lifespan, in the generation of Adam and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's generation"
     },
@@ -412,8 +614,20 @@
       "chapter": 57,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "{30} ⲡⲉϩϣⲏⲣⲉ ⲙⲛ ⲧⲁⲛⲉⲧⲁⲩⲉⲓ ⲙⲛⲛⲥⲱϩ ⲙⲛ̄",
-      "core_english": "{31} his son, and that of those who came after him, and",
+      "core_coptic": "{15} ⲡⲉϩϣⲏⲣⲉ ⲙⲛ ⲧⲁⲛⲉⲧⲁⲩⲉⲓ ⲙⲛⲛⲥⲱϩ ⲙⲛ̄",
+      "core_english": "{15} his son, and that of those who came after him, and",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲥⲏⲑⲏⲗ",
+          "english": "of Sethel",
+          "basis": "Editor restoration ⲧ- of ⲧⲁⲥⲏⲑⲏⲗ 'that of Sethel' — Sethel as son of Adam, standard Manichaean ancestor figure (cf. ϣⲁⲙⲓⲥⲉ 'firstborn' in vocabulary)",
+          "source_id": 16,
+          "section": 3609
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Adam's lineage"
     },
@@ -424,6 +638,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲥⲁⲧⲟⲩⲗⲟ ⲉⲩⲟ ⲛ̄ⲣ̄ⲣⲟ ⲛ̄ⲭⲓ ⲛⲟⲁⲙ ⲉⲧⲟ ⲛ̄ⲭⲁⲓ̈ⲥ ⲁⲭⲛ ⲛⲣⲙ̄",
       "core_english": "after their cessation — they being king, namely the powers being lord over the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "powers as kings"
     },
@@ -434,6 +649,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲩⲉ ⲁ ⲛⲟⲁⲙ ⲍⲱⲱⲩ ⲉⲧⲟ ⲛ̄ⲭⲁⲓ̈ⲥ ⲁⲭⲛ ⲛⲉⲃⲉⲧⲉ ⲣ̄ⲣⲣⲟ ⲧⲍⲉ",
       "core_english": "years. The powers themselves being lord over the months reigned. Just as",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "shift to month-lords"
     },
@@ -442,8 +658,20 @@
       "chapter": 57,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32} ⲭⲉ ⲥⲉⲥⲁⲃⲕ̄ ⲡⲁⲣⲁ ⲛⲣⲙ̄ⲡⲉⲩⲉ ⲧⲍⲉ ⲍⲱϩ ⲁⲛ",
-      "core_english": "{33}, since they are smaller than the years, in the same way also",
+      "core_coptic": "{16} ⲭⲉ ⲥⲉⲥⲁⲃⲕ̄ ⲡⲁⲣⲁ ⲛⲣⲙ̄ⲡⲉⲩⲉ ⲧⲍⲉ ⲍⲱϩ ⲁⲛ",
+      "core_english": "{16}, since they are smaller than the years, in the same way also",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ⲛⲛⲉⲃⲉⲧⲉ",
+          "english": "(of) the months",
+          "basis": "Editor restoration: comparison sentence requires 'the months' as subject — paralleling line 29 ⲁⲭⲛ ⲛⲉⲃⲉⲧⲉ",
+          "source_id": 17,
+          "section": 3612
+        }
+      ],
       "removed_material": null,
       "temporal_note": "months smaller than years"
     },
@@ -452,8 +680,30 @@
       "chapter": 57,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34} ⲧⲉⲓ̈ ⲛⲧⲙⲏⲥⲉ {35} ⲛⲍⲏⲧⲟⲩ ⲡⲟⲩⲁⲍⲉ ⲥⲁⲃⲕ̄",
-      "core_english": "{36} this offspring {37} among them — their lifespan is smaller",
+      "core_coptic": "{17} ⲧⲉⲓ̈ ⲛⲧⲙⲏⲥⲉ {18} ⲛⲍⲏⲧⲟⲩ ⲡⲟⲩⲁⲍⲉ ⲥⲁⲃⲕ̄",
+      "core_english": "{17} this offspring {18} among them — their lifespan is smaller",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 50,
+          "type": "restoration",
+          "coptic": "ⲧⲉ",
+          "english": "is",
+          "basis": "Editor restoration of feminine copula ⲧⲉ completing ⲧⲍⲉ ⲍⲱϩ ⲁⲛ [ⲧⲉ] 'so also is'",
+          "source_id": 18,
+          "section": 3613
+        },
+        {
+          "id": 18,
+          "segment": 50,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲁⲩⲭⲡⲁⲥ",
+          "english": "which they begot",
+          "basis": "Editor restoration of ⲧⲁⲩ in ⲉ[ⲧⲁⲩ]ⲭⲡⲁⲥ 'which they begot it'; relative-perfect with 3sg.f object referring to ⲧⲙⲏⲥⲉ",
+          "source_id": 19,
+          "section": 3613
+        }
+      ],
       "removed_material": null,
       "temporal_note": "smaller offspring lifespan"
     },
@@ -462,8 +712,20 @@
       "chapter": 57,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38} ⲍⲛ ⲧⲅⲉⲛⲉⲁ ⲛ̄ⲛⲟⲁⲙ ⲉⲧⲟ ⲛⲭⲁⲓ̈ⲥ",
-      "core_english": "{39} in the generation of the powers being lord",
+      "core_coptic": "{19} ⲍⲛ ⲧⲅⲉⲛⲉⲁ ⲛ̄ⲛⲟⲁⲙ ⲉⲧⲟ ⲛⲭⲁⲓ̈ⲥ",
+      "core_english": "{19} in the generation of the powers being lord",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲡⲁⲣⲁ ⲡⲁⲍⲉ ⲛⲛⲉⲧⲁⲩⲭⲡⲁⲩ",
+          "english": "than the lifespan of those whom they (the year-lords) begot",
+          "basis": "Editor restoration completing the comparative clause; structurally parallel to lines 30-31 (ⲡⲁⲣⲁ ⲛⲣⲙⲡⲉⲩⲉ) and contrasts month-offspring with year-offspring",
+          "source_id": 20,
+          "section": 3614
+        }
+      ],
       "removed_material": null,
       "temporal_note": "generation of ruling powers"
     },
@@ -474,6 +736,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛⲣⲡ̄ⲡⲧⲉⲩⲉ",
       "core_english": "We have spent (our) years.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "transitional gnomic — likely teaching summary; isolated voice but coheres with substrate"
     },
@@ -484,6 +747,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲁⲣⲉⲥⲭⲱⲕ ⲛⲭⲓ ⲧⲉⲍⲟⲩⲥⲓⲁ ⲛ̄ⲛ̄ⲟ̄ⲁⲙ ⲉⲧⲟ",
       "core_english": "When the authority of the powers which were",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of authority — substrate"
     },
@@ -494,6 +758,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲭⲁⲓ̈ⲥ ⲁⲛⲉⲃⲉⲧⲉ ⲁ ⲛⲟ̄ⲁⲙ ⲛ̄ⲛ̄ⲍⲟⲟⲩⲉ ⲭⲓ ⲉⲍⲟⲩⲥⲓⲁ ⲙ̄ⲛ",
       "core_english": "master over the months was completed, the powers of the days received authority and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "succession of powers (months → days)"
     },
@@ -504,6 +769,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲥⲱⲩ ⲧⲍⲉ ⲟ̄ⲉ ⲛ̄ⲛ̄ⲍⲟⲟⲩⲉ ⲭⲉ ⲥⲉⲥⲁⲃⲕ ⲡⲁⲣⲁ ⲛⲉⲃⲉⲧⲉ",
       "core_english": "(came) after them. Thus is the way of the days, that they are smaller than the months.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "days smaller than months"
     },
@@ -514,6 +780,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲛⲧⲙ̄ⲏⲥⲉ ⲉⲧⲁⲩⲭⲡⲁⲥ ⲛ̄ⲍⲏⲧⲟⲩ ⲡⲟⲩⲁⲍⲉ",
       "core_english": "Thus also is the case of the offspring whom they begot from them: their lifetime",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "offspring lifetime"
     },
@@ -524,6 +791,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲁⲃⲕ ⲡⲁⲣⲁ ⲡⲁⲍⲉ ⲛ̄ⲛⲉⲧⲁⲩⲭⲡⲁⲩ ⲍⲛ̄ ⲛⲟ̄ⲁⲙ ⲉⲧⲟ ⲛⲭⲁⲓ̈ⲥ",
       "core_english": "is shorter than the lifetime of those whom they begot in the powers which were master",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "lifetime contraction"
     },
@@ -532,8 +800,20 @@
       "chapter": 57,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲭⲛ̄ ⲛⲉⲃⲉⲧⲉ ⲛϯⲍⲉ {40} ⲁⲛ ⲧⲙ̄ⲏⲥⲉ ⲉⲧⲁⲩⲭⲡⲁⲥ ⲍⲛ̄ ⲛⲟⲩ",
-      "core_english": "over the months. In this manner, {41} also, is the offspring whom they begot in their",
+      "core_coptic": "ⲁⲭⲛ̄ ⲛⲉⲃⲉⲧⲉ ⲛϯⲍⲉ {20} ⲁⲛ ⲧⲙ̄ⲏⲥⲉ ⲉⲧⲁⲩⲭⲡⲁⲥ ⲍⲛ̄ ⲛⲟⲩ",
+      "core_english": "over the months. In this manner, {20} also, is the offspring whom they begot in their",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ϯⲍⲉ",
+          "english": "in this manner",
+          "basis": "editor restored final ⲉ; visible ϯⲍ requires completion to ϯⲍⲉ 'in this manner,' standard parallel construction with preceding ⲛϯⲍⲉ",
+          "source_id": 21,
+          "section": 3621
+        }
+      ],
       "removed_material": null,
       "temporal_note": "successive offspring stage"
     },
@@ -544,6 +824,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲩⲉ ⲙ̄ⲛ ⲧⲁⲛⲥⲟⲩⲥⲟⲩ ⲡⲟⲩⲁⲓ̈ⲍⲙ̄ⲉ ⲥⲁⲃⲕ ⲡⲁⲣⲁ ⲡⲁⲛⲉ",
       "core_english": "hours and moments — their lifetime is shorter than that of the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "five-fold completed in lifespan diminishment"
     },
@@ -554,6 +835,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲉⲧⲉ ⲙ̄ⲛ̄ ⲡⲁⲛⲍⲟⲟⲩⲉ",
       "core_english": "months and that of the days.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "concludes succession"
     },
@@ -562,8 +844,30 @@
       "chapter": 57,
       "line": 63,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲏ {42}ⲡⲕⲟⲥⲙⲟⲥ ⲧⲍⲛⲁⲥ ⲁⲍⲟⲩⲛ ⲛ̄ⲟⲩⲏⲣ ⲁ ⲡⲁⲍⲉ ⲛ̄ⲛ̄ⲣ̄{43}",
-      "core_english": "nd {44} the world has come near, how greatly the lifetime of {45}",
+      "core_coptic": "ⲏ {21}ⲡⲕⲟⲥⲙⲟⲥ ⲧⲍⲛⲁⲥ ⲁⲍⲟⲩⲛ ⲛ̄ⲟⲩⲏⲣ ⲁ ⲡⲁⲍⲉ ⲛ̄ⲛ̄ⲣ̄{22}",
+      "core_english": "nd {21} the world has come near, how greatly the lifetime of {22}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲙ̄",
+          "english": "of",
+          "basis": "editor restored genitive marker before ⲡⲕⲟⲥⲙⲟⲥ; standard ⲧⲍⲁⲏ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ 'end of the world'",
+          "source_id": 22,
+          "section": 3624
+        },
+        {
+          "id": 22,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "(letter)",
+          "basis": "editor restored ⲱ completing ⲣⲱⲙⲉ 'men/humanity,' which continues with -ⲙⲉ on next line",
+          "source_id": 23,
+          "section": 3624
+        }
+      ],
       "removed_material": null,
       "temporal_note": "world approaching its end — cosmological"
     },
@@ -572,8 +876,20 @@
       "chapter": 57,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉ ⲉⲓ ⲁⲍⲟⲩⲛ ⲁⲗⲁⲩⲉ ⲁ ⲛⲟⲩⲍⲟⲟⲩⲉ ⲥⲃⲁⲕ ⲁ ⲛⲟⲩⲣⲙ̄{46}",
-      "core_english": "men has come down to nothing, how their days have grown short and their {47}",
+      "core_coptic": "ⲙⲉ ⲉⲓ ⲁⲍⲟⲩⲛ ⲁⲗⲁⲩⲉ ⲁ ⲛⲟⲩⲍⲟⲟⲩⲉ ⲥⲃⲁⲕ ⲁ ⲛⲟⲩⲣⲙ̄{23}",
+      "core_english": "men has come down to nothing, how their days have grown short and their {23}",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲡⲧⲉⲩⲉ",
+          "english": "years",
+          "basis": "editor completed ⲣⲙ̄ⲡⲧⲉⲩⲉ 'years' (per accumulated vocabulary); confirmed by parallel ⲣⲡ̄ⲡⲧⲉⲩⲉ at line 1, 18 and full form at line 19",
+          "source_id": 24,
+          "section": 3625
+        }
+      ],
       "removed_material": null,
       "temporal_note": "diminishment teaching"
     },
@@ -582,8 +898,20 @@
       "chapter": 57,
       "line": 65,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟ̄ⲱⲭⲃⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲛⲉⲣⲉ ⲡⲱⲛⲍ̄ ⲡⲉ ⲙ̄ⲛ ⲡⲟⲩⲁⲓ̈ⲛ{48}",
-      "core_english": "have diminished? For the life and the light {49}",
+      "core_coptic": "ⲟ̄ⲱⲭⲃⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲛⲉⲣⲉ ⲡⲱⲛⲍ̄ ⲡⲉ ⲙ̄ⲛ ⲡⲟⲩⲁⲓ̈ⲛ{24}",
+      "core_english": "have diminished? For the life and the light {24}",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 65,
+          "type": "restoration",
+          "coptic": "ⲉ ⲉⲧ",
+          "english": "which are",
+          "basis": "editor completed final ⲉ of ⲡⲟⲩⲁⲓ̈ⲛⲉ 'the light' + relative ⲉⲧ; line 13 begins with ⲟ continuing ⲉⲧⲟ 'which are'",
+          "source_id": 25,
+          "section": 3626
+        }
+      ],
       "removed_material": null,
       "temporal_note": "life and light in cosmos — substrate"
     },
@@ -594,6 +922,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲍⲛ̄ ⲛⲓϣⲁⲣⲡ ⲛ̄ⲅⲉⲛⲉⲁ̣ⲓⲁ ⲛ̄ⲍⲟⲩⲟ ⲁⲧⲁⲡⲧⲟ",
       "core_english": "are in the world were in the first generations more abundantly than to-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "light/life abundance in first generations"
     },
@@ -604,6 +933,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲥⲃⲁⲕ ⲍⲛ̄ ⲧⲟⲩⲁⲙⲁ̣ⲓⲏⲏⲥ ⲁ ⲡⲟⲩⲁ",
       "core_english": "day's; for this very reason they have grown small in their support, (and) their life-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "diminishment cause"
     },
@@ -614,6 +944,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲉ ⲣⲕⲟⲩⲓ̈ ⲛⲧⲟⲟⲧⲟⲩ",
       "core_english": "time has become small in their hand.'",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "summary statement"
     },
@@ -624,6 +955,7 @@
       "classification": "mixed",
       "core_coptic": "ⲍⲁ ⲡⲣⲁ ⲛ̄ⲛ̄ⲣⲡ̄ⲡⲧⲉⲩⲉ ⲭⲉ ⲉⲧⲃⲉ ⲉⲩ ⲛⲍⲱⲃ ⲁ ⲛⲣⲙ̄",
       "core_english": "concerning the matter of the years — that 'For what cause have the y-",
+      "apparatus": [],
       "removed_material": "frame: 'me' (object of persuasion)",
       "temporal_note": "substantive question about years begins"
     },
@@ -634,6 +966,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲧⲉⲩⲉ ⲛ̄ⲛⲓⲁⲣⲭⲁⲓⲟⲥ ⲁⲓ̈ⲉⲩⲧⲉ ⲏ ⲉⲧⲃⲉ ⲉⲩ ⲛⲍⲱϥ ⲛ̄ⲧⲁϥ",
       "core_english": "ears of the ancients become long? Or for what cause itself",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "question continues — ancients"
     },
@@ -644,6 +977,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁ ⲛⲓⲍⲁⲉⲩⲉ ⲥⲃⲁⲕ ⲁⲕⲭⲟⲟⲥ ⲁⲣⲁⲓ̈ ⲁⲛ ⲭⲉ ⲁⲩⲥⲃⲁⲕ ⲍⲛ̄ ⲧⲟⲩ",
       "core_english": "have the latter ones become short?' Thou didst say to me also that 'They have become short in their",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "recapitulating teaching"
     },
@@ -654,6 +988,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲉⲁⲙⲁⲓ̈ⲏⲏⲥ ⲡⲁⲭⲉⲕ ⲭⲉ ⲛ̄ⲧⲁ ⲛⲉⲓ̈ ⲧⲏⲣⲟⲩ ⲥⲃⲁⲕ ⲛ̄ⲧⲗⲁⲓ̈",
       "core_english": "other support.' Thou didst say that 'All these have become small by the dimin-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "recapitulating teaching"
     },
@@ -664,6 +999,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟ̄ⲉ ⲙ̄ⲡⲱⲛⲍ̄ ⲙ̄ⲛ̄ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲉⲧⲁⲩⲃⲓⲧϥ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲉ",
       "core_english": "ishing of the life and the light which they have taken from the world.'",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "life and light withdrawn"
     },
@@ -674,6 +1010,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁⲧⲉⲟⲩⲟ ⲁⲣⲁⲁⲛ ⲙ̄ⲡⲓⲕⲉⲟⲩⲉ ⲭⲉ ⲛ̄ⲧⲁⲩⲣ̄ ⲉϣ ⲛⲍⲉ ⲛ̄ⲭⲡⲧⲟ",
       "core_english": "Declare to us also this other thing: how have they begotten",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "substantive question about Adam/Eve generation"
     },
@@ -684,6 +1021,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲙ̄ⲏⲥⲉ ⲧⲏⲣⲥ̄ ⲛⲧⲙ̄ⲛ̄ⲧⲣⲱⲙⲉ ⲁⲃⲁⲗ ⲍⲓⲧⲛ̄ ⲟⲩⲍⲁⲩⲧ ⲙ̄ⲛ̄ ⲟⲩ",
       "core_english": "the entire offspring of humanity through one male and one",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "all humanity from one couple — cosmological question"
     },
@@ -694,6 +1032,7 @@
       "classification": "mixed",
       "core_coptic": "ⲥⲍⲓⲙⲉ ⲁⲁⲁⲙ ⲙ̄ⲛ ⲉⲩⲍⲁ",
       "core_english": "female, Adam and Eve?'",
+      "apparatus": [],
       "removed_material": "frame: 'The Illuminator says to that catechumen'",
       "temporal_note": "completes question; frame begins for response"
     },
@@ -704,6 +1043,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲍⲉ ⲅⲁⲣ ⲧⲉ ⲛ̄ⲛⲓ",
       "core_english": "For thus is (the case) of the",
+      "apparatus": [],
       "removed_material": "frame: 'but recognize it that thou mayest understand'",
       "temporal_note": "transition into teaching response"
     },
@@ -714,6 +1054,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲡ ⲛ̄ⲅⲉⲛⲉⲁ ⲭⲉ ⲥⲉⲣⲍⲟⲩⲟ ⲍⲙ̄ ⲡⲟⲩⲟⲩⲁⲓ̈ⲛⲉ ⲥⲉⲟⲩⲁ",
       "core_english": "first generations: that they abound in their light, they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "first generations abound in light"
     },
@@ -722,8 +1063,20 @@
       "chapter": 57,
       "line": 83,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲉ ⲍⲛ̄ ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲛⲟⲩⲕⲉⲣⲡ̄ⲡⲧⲉⲩⲉ ⲟ ⲛⲛⲁⲟ̄ ⲧⲍⲉ ⲁⲛ ⲧ{50}",
-      "core_english": "are pure in their support, their other years are great. Thus also is{51}",
+      "core_coptic": "ⲃⲉ ⲍⲛ̄ ⲧⲁⲙⲁⲓ̈ⲏⲏⲥ ⲛⲟⲩⲕⲉⲣⲡ̄ⲡⲧⲉⲩⲉ ⲟ ⲛⲛⲁⲟ̄ ⲧⲍⲉ ⲁⲛ ⲧ{25}",
+      "core_english": "are pure in their support, their other years are great. Thus also is{25}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 83,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(letter)",
+          "basis": "editor restored final ⲉ completing copular ⲧⲉ 'is/it is'",
+          "source_id": 27,
+          "section": 3640
+        }
+      ],
       "removed_material": null,
       "temporal_note": "first generations great years"
     },
@@ -732,8 +1085,20 @@
       "chapter": 57,
       "line": 84,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲓ̈ ⲛⲧⲟⲩⲕⲉⲙ̄ⲏⲥⲉ ⲛⲁϣⲱⲥ ⲛ̄ⲍⲟⲩⲟ ⲁⲧⲙ̄ⲏⲥⲉ ⲛⲡⲓⲥⲏ̄{52}",
-      "core_english": "this of their other offspring — they are exceedingly many beyond the offspring of this t{53}ime.",
+      "core_coptic": "ⲧⲉⲓ̈ ⲛⲧⲟⲩⲕⲉⲙ̄ⲏⲥⲉ ⲛⲁϣⲱⲥ ⲛ̄ⲍⲟⲩⲟ ⲁⲧⲙ̄ⲏⲥⲉ ⲛⲡⲓⲥⲏ̄{26}",
+      "core_english": "this of their other offspring — they are exceedingly many beyond the offspring of this t{26}ime.",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 84,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "(letter)",
+          "basis": "editor restored final ⲩ of ⲡⲓⲥⲏⲩ 'this time' (per accumulated vocabulary)",
+          "source_id": 28,
+          "section": 3641
+        }
+      ],
       "removed_material": null,
       "temporal_note": "many offspring"
     },
@@ -742,8 +1107,28 @@
       "chapter": 57,
       "line": 85,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲩⲉⲓⲣⲉ ⲡⲉ ⲛ̄ⲟⲩⲛⲁⲟ̄ ⲛⲭⲣⲟⲛⲟⲥ {54} ⲙ̄ⲙⲁⲩ ⲍⲛ̄ {55}",
-      "core_english": "They were spending a great chronos {56} there in {57}",
+      "core_coptic": "ⲛⲉⲩⲉⲓⲣⲉ ⲡⲉ ⲛ̄ⲟⲩⲛⲁⲟ̄ ⲛⲭⲣⲟⲛⲟⲥ {27} ⲙ̄ⲙⲁⲩ ⲍⲛ̄ {28}",
+      "core_english": "They were spending a great chronos {27} there in {28}",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 85,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 29,
+          "section": 3642
+        },
+        {
+          "id": 28,
+          "segment": 85,
+          "type": "restoration",
+          "coptic": "ⲧⲕⲁ",
+          "english": "the womb",
+          "basis": "editor restored ⲧⲕⲁ as start of ⲧⲕⲁⲗⲁⲍⲏ 'the womb' (Coptic ⲕⲁⲗⲁϩⲏ); continued by ⲗⲁⲍⲏ at start of line 32 with ⲛⲧⲟⲩⲙⲉⲩ 'of their mother' confirming reading",
+          "source_id": 30,
+          "section": 3642
+        }
+      ],
       "removed_material": null,
       "temporal_note": "great chronos spent"
     },
@@ -752,8 +1137,18 @@
       "chapter": 57,
       "line": 86,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲗⲁⲍⲏ ⲛⲧⲟⲩⲙⲉⲩ ⲙ̄ⲛⲛⲥⲱⲥ ⲉⲩ{58}",
-      "core_english": "-laze of their mother; afterwards, {59}",
+      "core_coptic": "ⲗⲁⲍⲏ ⲛⲧⲟⲩⲙⲉⲩ ⲙ̄ⲛⲛⲥⲱⲥ ⲉⲩ{29}",
+      "core_english": "-laze of their mother; afterwards, {29}",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 86,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 31,
+          "section": 3643
+        }
+      ],
       "removed_material": null,
       "temporal_note": "mother's womb (cosmological birthing)"
     },
@@ -764,6 +1159,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱ ⲛⲟⲩⲙⲏϣⲉ ϩⲛ̄ ⲟⲩⲁⲧⲉ ⲛⲟⲩⲱⲧ ⲟⲩⲛ ⲥⲁⲡ ⲉϣⲁⲩⲭⲡⲟ",
       "core_english": "O what a multitude in one womb! There is a time when they beget",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "multiple birthing in archaic generations"
     },
@@ -772,8 +1168,20 @@
       "chapter": 57,
       "line": 88,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϯⲟⲩ ϩⲛ̄ ⲟⲩⲁⲧⲉ ⲛⲟⲩⲱⲧ ⲟⲩⲛ̄ ⲥⲁⲡ ⲉϣⲁⲩⲭⲡⲟ ⲥⲁⲩ ϩⲛ {60}ⲕⲁ",
-      "core_english": "five in one womb. There is a time when they beget seven in {61} wo-",
+      "core_coptic": "ϯⲟⲩ ϩⲛ̄ ⲟⲩⲁⲧⲉ ⲛⲟⲩⲱⲧ ⲟⲩⲛ̄ ⲥⲁⲡ ⲉϣⲁⲩⲭⲡⲟ ⲥⲁⲩ ϩⲛ {30}ⲕⲁ",
+      "core_english": "five in one womb. There is a time when they beget seven in {30} wo-",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 88,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "one",
+          "basis": "Editor restoration; standard indefinite article required by ⲟⲩⲕⲁⲗⲁϩⲏ ⲛⲟⲩⲱⲧ 'in one womb' parallel to line 1.",
+          "source_id": 32,
+          "section": 3645
+        }
+      ],
       "removed_material": null,
       "temporal_note": "five/seven in one womb — archaic enumeration"
     },
@@ -784,6 +1192,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗⲁϩⲏ ⲛⲟⲩⲱⲧ ⲟⲩⲛ̄ ⲟⲩⲁⲛ ⲙ̄ⲡⲟⲩⲭⲃⲉ ⲁⲛⲉⲓ̈ ⲟⲩⲛ ⲟⲩⲁⲛ",
       "core_english": "mb. There are some who do not exceed these, there are some",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "variations in birthing"
     },
@@ -793,7 +1202,18 @@
       "line": 90,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛ ⲙ̄ⲡϩⲟⲩⲟ ⲁⲛⲉⲓ̈ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁ ⲧⲙⲏⲥⲉ ⲛⲉⲩϩⲁ ⲁϣⲉⲓ̈",
-      "core_english": "in turn (who are) of more than these. For this reason, indeed, the bearing of their {62} has multipl-",
+      "core_english": "in turn (who are) of more than these. For this reason, indeed, the bearing of their {31} has multipl-",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 90,
+          "type": "lacuna",
+          "est_chars": 0,
+          "partial": "ⲛⲉⲩϩⲁ — uncertain reading; possibly 'their husbands' (ⲛⲉⲩ-ϩⲁⲓ) or 'their multitude' (ⲛⲉⲩ-ⲁϣⲉⲓ̈ⲧⲉ with elided morpheme)",
+          "source_id": 33,
+          "section": 3647
+        }
+      ],
       "removed_material": null,
       "temporal_note": "multiplication of bearing"
     },
@@ -804,6 +1224,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲙⲛ̄ ⲧⲁⲛⲉⲥⲱⲏⲣⲉ ⲁ ⲡⲕⲁϩ ⲙⲟⲩϩ ϩⲁⲣⲁⲩ ⲟⲩⲁϩⲉⲧⲟⲩ ⲉ",
       "core_english": "ied with their children. The earth was filled with them; they dwelt at",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "earth filled — primordial multiplication"
     },
@@ -814,6 +1235,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲓⲁⲏ ⲧⲙⲏⲥⲉ ⲛⲧⲟ̄ⲓⲛ̄ⲭⲡⲟ ⲛ̄ⲛⲣⲱⲙⲉ ⲛⲁⲣⲭⲁⲓⲟⲥ ⲉⲧⲁⲩ",
       "core_english": "this end. The bearing of the begetting of the ancient men who have been",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ancient men begotten"
     },
@@ -822,8 +1244,20 @@
       "chapter": 57,
       "line": 93,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲡⲁⲥ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲥⲱⲃⲓⲁⲓ̈ⲧ ⲛ̄ϩⲟⲩⲟ ⲁⲧⲁⲡⲟⲟⲩⲉ ⲉⲣ{63}",
-      "core_english": "begotten in the cosmos is altered, much in comparison to today, whi{64}",
+      "core_coptic": "ⲭⲡⲁⲥ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲥⲱⲃⲓⲁⲓ̈ⲧ ⲛ̄ϩⲟⲩⲟ ⲁⲧⲁⲡⲟⲟⲩⲉ ⲉⲣ{32}",
+      "core_english": "begotten in the cosmos is altered, much in comparison to today, whi{32}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 93,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "le",
+          "basis": "Editor restoration of circumstantial converter ⲉⲣⲉ continuing onto next line.",
+          "source_id": 34,
+          "section": 3650
+        }
+      ],
       "removed_material": null,
       "temporal_note": "alteration from primordial to today"
     },
@@ -834,6 +1268,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩⲟ̄ⲓⲛ̄ⲱ ⲙⲛ̄ ⲧⲟⲩⲟ̄ⲓⲙⲙⲓⲥⲉ ⲉⲓⲛⲉ ⲛⲧⲁϥ ⲉⲛ ⲛ̄ⲛⲟⲩⲭⲡⲟ̄",
       "core_english": "their conception and their bearing — its likeness is not the begetting",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "conception/bearing distinguished"
     },
@@ -842,8 +1277,20 @@
       "chapter": 57,
       "line": 95,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ϩⲁⲉⲩⲉ ⲉⲧⲁⲩⲭⲡⲟ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ϩⲛ̄ ⲧⲁⲧⲉ ⲛ̄ⲧⲥϩ{65}ⲉ",
-      "core_english": "of the latter ones whom they have begotten today in the womb of the wo{66}an.",
+      "core_coptic": "ⲛ̄ϩⲁⲉⲩⲉ ⲉⲧⲁⲩⲭⲡⲟ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ϩⲛ̄ ⲧⲁⲧⲉ ⲛ̄ⲧⲥϩ{33}ⲉ",
+      "core_english": "of the latter ones whom they have begotten today in the womb of the wo{33}an.",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 95,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "m",
+          "basis": "Editor restoration of ⲧⲥϩⲙⲉ 'the woman'; only ⲙ is missing in dotted gap.",
+          "source_id": 35,
+          "section": 3652
+        }
+      ],
       "removed_material": null,
       "temporal_note": "contrast with present"
     },
@@ -852,8 +1299,20 @@
       "chapter": 57,
       "line": 96,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲧⲟⲩⲡⲭⲟ ⲅⲁⲣ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ϩⲛ̄ ⲛⲓⲅⲉⲛⲉⲁ ⲛ̄ϩⲁ{67} ⲉⲩ",
-      "core_english": "For those whom they beget today in the {68} generations are",
+      "core_coptic": "ⲛⲉⲧⲟⲩⲡⲭⲟ ⲅⲁⲣ ⲙ̄ⲙⲁⲩ ⲙ̄ⲡⲟⲟⲩⲉ ϩⲛ̄ ⲛⲓⲅⲉⲛⲉⲁ ⲛ̄ϩⲁ{34} ⲉⲩ",
+      "core_english": "For those whom they beget today in the {34} generations are",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 96,
+          "type": "restoration",
+          "coptic": "ⲉⲩⲉ",
+          "english": "latter",
+          "basis": "Editor restoration of ⲛ̄ϩⲁⲉⲩⲉ 'latter ones' from parallel formulation in line 9.",
+          "source_id": 36,
+          "section": 3653
+        }
+      ],
       "removed_material": null,
       "temporal_note": "today's diminished offspring"
     },
@@ -862,8 +1321,20 @@
       "chapter": 57,
       "line": 97,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁϩⲉ ⲉⲩⲥⲁⲃⲕ̄ ⲣ̄ⲟ̄ⲁⲭⲉ ⲁⲩⲱ ⲣⲱ ϩⲛⲟⲩⲉ ⲟⲩⲉ ⲛⲉⲧⲟⲩⲭ{69}",
-      "core_english": "standing small (and) diminished, and, indeed, one by one those whom they be{70}",
+      "core_coptic": "ⲁϩⲉ ⲉⲩⲥⲁⲃⲕ̄ ⲣ̄ⲟ̄ⲁⲭⲉ ⲁⲩⲱ ⲣⲱ ϩⲛⲟⲩⲉ ⲟⲩⲉ ⲛⲉⲧⲟⲩⲭ{35}",
+      "core_english": "standing small (and) diminished, and, indeed, one by one those whom they be{35}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 97,
+          "type": "restoration",
+          "coptic": "ⲡⲟ ⲙ̄",
+          "english": "get th-",
+          "basis": "Editor restoration of ⲛⲉⲧⲟⲩⲭⲡⲟ ⲙ̄ⲙⲁⲩ 'those whom they beget' continuing into next line.",
+          "source_id": 37,
+          "section": 3654
+        }
+      ],
       "removed_material": null,
       "temporal_note": "one-by-one begetting"
     },
@@ -872,8 +1343,20 @@
       "chapter": 57,
       "line": 98,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁⲩ ϩⲛ̄ ⲟⲩⲕⲁⲗⲁϩⲏ ⲛⲟⲩⲱⲧ ⲙⲁⲗⲗⲁ ⲙⲟⲣⲓ̈ⲥ ⲥⲛⲉⲩ ⲏ ⲡ{71}ⲱⲭ",
-      "core_english": "are not in one womb, but in two parts, or {72}",
+      "core_coptic": "ⲙⲁⲩ ϩⲛ̄ ⲟⲩⲕⲁⲗⲁϩⲏ ⲛⲟⲩⲱⲧ ⲙⲁⲗⲗⲁ ⲙⲟⲣⲓ̈ⲥ ⲥⲛⲉⲩ ⲏ ⲡ{36}ⲱⲭ",
+      "core_english": "are not in one womb, but in two parts, or {36}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 98,
+          "type": "restoration",
+          "coptic": "ⲟ̄",
+          "english": "three (or similar numeral)",
+          "basis": "Editor restores [ⲟ̄] in ⲡⲟ̄ⲱⲭⲃⲉ. The lexeme ⲱⲭⲃⲉ recurs from line 3 (ⲙ̄ⲡⲟⲩⲭⲃⲉ 'they did not exceed/diminish'). In context 'two parts or X or more' a third numeral or quantitative term is expected; sense uncertain.",
+          "source_id": 38,
+          "section": 3655
+        }
+      ],
       "removed_material": null,
       "temporal_note": "splitting of births"
     },
@@ -884,6 +1367,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲉ ⲏ ⲡⲟⲩⲟ ⲉⲩⲣ̄ⲡⲕⲉⲟ ⲛ̄ⲟⲁⲓ̈ⲉ ϩ�m̄ ⲡⲉⲩⲉⲓⲛⲉ ⲉⲩⲥⲁⲃⲕ̄ ϩⲛ̄",
       "core_english": "or more, while they become another (kind) at a remove in their likeness, being small in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "altered likeness, small stature"
     },
@@ -892,8 +1376,20 @@
       "chapter": 57,
       "line": 100,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲟⲩⲟ̄ⲁⲧ ⲉⲩⲟ ⲛⲟ̄ⲱⲃ ϩⲛ̄ ⲛⲟⲩⲙⲉⲗⲟⲥ ⲛⲟⲩⲥⲃⲁⲩⲉ ⲙⲛ̄ {73}",
-      "core_english": "their stature, being feeble in their members, their teachings, and {74}",
+      "core_coptic": "ⲧⲟⲩⲟ̄ⲁⲧ ⲉⲩⲟ ⲛⲟ̄ⲱⲃ ϩⲛ̄ ⲛⲟⲩⲙⲉⲗⲟⲥ ⲛⲟⲩⲥⲃⲁⲩⲉ ⲙⲛ̄ {37}",
+      "core_english": "their stature, being feeble in their members, their teachings, and {37}",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 100,
+          "type": "restoration",
+          "coptic": "ⲛⲟⲩ",
+          "english": "their",
+          "basis": "Editor restoration of possessive ⲛⲟⲩⲥⲁⲭⲛⲉ 'their counsel' continuing onto next line.",
+          "source_id": 39,
+          "section": 3657
+        }
+      ],
       "removed_material": null,
       "temporal_note": "feebleness of present generation"
     },
@@ -904,6 +1400,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲁⲭⲛⲉ ⲙⲏϩ ⲛ̄ⲕⲁⲕⲓⲁ ϩⲛ̄ⲣⲙⲃⲱⲛⲉϥ ⲛⲉ ⲥⲉⲟ ⲛϩⲁⲥⲓⲉ",
       "core_english": "counsel filled with evil. They are men of wickedness; they are afflicted,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "moral characterization of present generation — but coheres with cosmological diminishment teaching"
     },
@@ -914,6 +1411,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲱⲭⲛⲉ ⲙ̄ⲡⲟⲩⲁϩⲉ ⲉⲩⲧⲁⲗⲁⲓⲡⲱⲣⲓ ⲡⲕⲉⲙⲟⲩ ⲧⲉϩⲁⲩ",
       "core_english": "they cease from their standing, being miserable. The other death is bad —",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "the other death (of darkness)"
     },
@@ -924,6 +1422,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟ̄ⲗⲁⲙ",
       "core_english": "of darkness.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "death of darkness — substrate cosmological term"
     }

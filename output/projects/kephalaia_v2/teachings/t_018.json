@@ -5,7 +5,7 @@
   "start_section": 1092,
   "end_section": 1187,
   "total_sections": 96,
-  "total_lacunae": 318,
+  "total_lacunae": 161,
   "segments": [
     {
       "section": 1092,
@@ -13,7 +13,39 @@
       "line": 4,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} ⲡⲟⲩⲁⲓⲛⲉ ⲛⲟⲩϩⲙⲉ ⲛ̄{1}ⲧⲟⲩ ⲛ̄{2}",
-      "core_english": "{3} the Light has been saved within {4}them from {5}",
+      "core_english": "{0} the Light has been saved within {1}them from {2}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ϣⲟⲟⲡ ⲉⲁ",
+          "english": "exist; and",
+          "basis": "Restoration completes 'ⲛⲉⲧ-ϣⲟⲟⲡ' from line 16; ⲉⲁ introduces the perfective state of the Light's saving",
+          "source_id": 5,
+          "section": 1092
+        },
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ϩⲏ",
+          "english": "",
+          "basis": "Middle ϩⲏ of ⲛ̄ϩⲏⲧⲟⲩ 'within them'",
+          "source_id": 6,
+          "section": 1092
+        },
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲧⲛ̄ ⲛⲁⲣ",
+          "english": "the ar-",
+          "basis": "ⲛ̄ⲧⲛ̄ 'from' + ⲛⲁⲣ[ⲭⲱⲛ] 'archons' — continuation onto line 18",
+          "source_id": 7,
+          "section": 1092
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Light's saving — substrate"
     },
@@ -22,8 +54,20 @@
       "chapter": 19,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲛ̄ⲟ̄ⲁⲙ ⲙ̄ⲡⲕⲉⲕⲉ ⲧⲏⲣⲟⲩ",
-      "core_english": "{7} the powers of the Darkness, all of them",
+      "core_coptic": "{3} ⲛ̄ⲟ̄ⲁⲙ ⲙ̄ⲡⲕⲉⲕⲉ ⲧⲏⲣⲟⲩ",
+      "core_english": "{3} the powers of the Darkness, all of them",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲭⲱⲛ ⲙⲛ̄",
+          "english": "[ar-]chons and",
+          "basis": "Completes ⲛⲁⲣⲭⲱⲛ 'archons' from line 17 + ⲙⲛ̄ 'with/and'",
+          "source_id": 8,
+          "section": 1093
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers of Darkness — cosmic"
     },
@@ -32,8 +76,40 @@
       "chapter": 19,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲛ̄†ⲟⲩⲱ ⲙⲛ̄ ⲧⲟ̄ⲓⲛⲛⲟⲩϩⲙⲉ ⲧⲉ ⲧⲁ{9}ϣⲁⲣ{10}",
-      "core_english": "{11}-raising and the saving is that of {12}{13}",
+      "core_coptic": "{4}ⲛ̄†ⲟⲩⲱ ⲙⲛ̄ ⲧⲟ̄ⲓⲛⲛⲟⲩϩⲙⲉ ⲧⲉ ⲧⲁ{5}ϣⲁⲣ{6}",
+      "core_english": "{4}-raising and the saving is that of {5}{6}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲧϣⲁⲣⲡ ⲛ̄ⲟ̄ⲓ",
+          "english": "The first",
+          "basis": "ⲧϣⲁⲣⲡ ⲛ̄ⲟ̄ⲓⲛ-ⲧⲟⲩⲱ 'the first raising' — paralleled by ⲧⲟ̄ⲓⲛⲛⲟⲩϩⲙⲉ 'the saving' immediately following",
+          "source_id": 9,
+          "section": 1094
+        },
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the ",
+          "basis": "ⲡ of ⲡϣⲁⲣⲡ 'the first'",
+          "source_id": 10,
+          "section": 1094
+        },
+        {
+          "id": 6,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲡ ⲛ̄ⲣⲱ",
+          "english": "First Ma",
+          "basis": "Continues into next line: ⲧⲁⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'that of the First Man'; ⲣⲱⲙⲉ split across line break with ⲙⲉ on line 20",
+          "source_id": 11,
+          "section": 1094
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enumeration of saving — substrate"
     },
@@ -42,8 +118,40 @@
       "chapter": 19,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉ {14}ⲁⲏ ⲡⲥⲏⲩ ⲉⲧⲁ ⲡϣⲁⲣⲡ ⲛ̄ⲣ{15}ⲙⲉ ⲣ̄ⲃⲁⲗ ⲁⲃⲁⲗ ϩ̄{16}",
-      "core_english": "{17} for at the time when the First Man went forth from {18}",
+      "core_coptic": "ⲙⲉ {7}ⲁⲏ ⲡⲥⲏⲩ ⲉⲧⲁ ⲡϣⲁⲣⲡ ⲛ̄ⲣ{8}ⲙⲉ ⲣ̄ⲃⲁⲗ ⲁⲃⲁⲗ ϩ̄{9}",
+      "core_english": "{7} for at the time when the First Man went forth from {9}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲉⲡⲉ",
+          "english": "n; because",
+          "basis": "ⲉⲡⲉⲁⲏ (Lyc 'because') continuing across line break — the ⲙⲉ completes ⲣⲱⲙⲉ from line 19",
+          "source_id": 12,
+          "section": 1095
+        },
+        {
+          "id": 8,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "",
+          "basis": "Middle ⲱ of ⲡⲣⲱⲙⲉ 'man'",
+          "source_id": 13,
+          "section": 1095
+        },
+        {
+          "id": 9,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "",
+          "basis": "Final ⲙ of ϩⲙ̄ 'in/from' — continuation 'from [the prison of]…'",
+          "source_id": 14,
+          "section": 1095
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man going forth — cosmic narrative"
     },
@@ -52,8 +160,29 @@
       "chapter": 19,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{19}ⲛⲁⲣⲭⲱⲛ ϩⲓⲧⲛ̄ ⲡⲡ̄ⲛ̄ⲁ̄ ⲉⲧⲁⲛϩ̄ ⲉⲧⲁϩⲉⲓ ϩ{20}",
-      "core_english": "{21} the archons through the Living Spirit who came {22}",
+      "core_coptic": "{10}ⲛⲁⲣⲭⲱⲛ ϩⲓⲧⲛ̄ ⲡⲡ̄ⲛ̄ⲁ̄ ⲉⲧⲁⲛϩ̄ ⲉⲧⲁϩⲉⲓ ϩ{11}",
+      "core_english": "{10} the archons through the Living Spirit who came {11}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲡϣⲧⲉⲕⲟ ⲛ̄",
+          "english": "the prison of",
+          "basis": "Standard ⲡϣⲧⲉⲕⲟ ⲛ̄ⲛⲁⲣⲭⲱⲛ 'the prison of the archons' — Manichaean cosmological commonplace for the captivity of the First Man",
+          "source_id": 15,
+          "section": 1096
+        },
+        {
+          "id": 11,
+          "segment": 8,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ϩ visible at end of line",
+          "source_id": 16,
+          "section": 1096
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons and Living Spirit — substrate"
     },
@@ -62,8 +191,20 @@
       "chapter": 19,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲩⲟⲩⲁⲓⲛⲉ ⲉⲛⲁϣⲱϩ ⲙⲛ̄ ⲟⲩⲟ̄ⲁⲙ {23}",
-      "core_english": "of the First Man — a great Light and a {24} power",
+      "core_coptic": "ⲙ̄ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲩⲟⲩⲁⲓⲛⲉ ⲉⲛⲁϣⲱϩ ⲙⲛ̄ ⲟⲩⲟ̄ⲁⲙ {12}",
+      "core_english": "of the First Man — a great Light and a {12} power",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲉⲛⲁϣⲱⲥ",
+          "english": "great",
+          "basis": "Parallels ⲉⲛⲁϣⲱϩ 'great' modifying the Light; expected with ⲟⲩⲟ̄ⲁⲙ 'a power' to give 'a great power'",
+          "source_id": 17,
+          "section": 1097
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man's great Light"
     },
@@ -72,8 +213,30 @@
       "chapter": 19,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{25} ⲛⲟⲩϩⲙⲉ ⲛ̄ⲧⲛ̄ ⲧⲁⲣⲭⲟⲛⲧⲓⲕⲏ ⲧⲏⲣⲥ̄ ⲁⲩⲉⲓ {26}",
-      "core_english": "{27} were saved from all the archonic host; they came {28}",
+      "core_coptic": "{13} ⲛⲟⲩϩⲙⲉ ⲛ̄ⲧⲛ̄ ⲧⲁⲣⲭⲟⲛⲧⲓⲕⲏ ⲧⲏⲣⲥ̄ ⲁⲩⲉⲓ {14}",
+      "core_english": "{13} were saved from all the archonic host; they came {14}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲛⲁϣⲱⲥ",
+          "english": "great",
+          "basis": "Continues line 23's predicate construction: 'a great Light and a great power were saved'",
+          "source_id": 18,
+          "section": 1098
+        },
+        {
+          "id": 14,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲁϩⲣⲏⲓ̈",
+          "english": "up",
+          "basis": "ⲁⲩⲉⲓ ⲁϩⲣⲏⲓ̈ 'they came up' — standard ascent vocabulary; line 25's 'with the First Man to the aeons of the Greatness' confirms upward motion",
+          "source_id": 19,
+          "section": 1098
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Salvation from archonic host"
     },
@@ -82,8 +245,40 @@
       "chapter": 19,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{29}ⲱⲛ {30}ⲧⲛⲁⲟ̄ ⲧⲉⲓ̈ {31}",
-      "core_english": "{32} aeons {33} of the Greatness. This {34}",
+      "core_coptic": "{15}ⲱⲛ {16}ⲧⲛⲁⲟ̄ ⲧⲉⲓ̈ {17}",
+      "core_english": "{15} aeons {16} of the Greatness. This {17}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲙⲛ̄ ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲛⲁ",
+          "english": "with the First Man unto the",
+          "basis": "Restoration completes the ascent-formula: 'they came up with the First Man unto the aeons (ⲁⲛⲓⲁⲓⲱⲛ) of the Greatness'",
+          "source_id": 20,
+          "section": 1099
+        },
+        {
+          "id": 16,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲙⲛ̄",
+          "english": "of the Great-",
+          "basis": "Genitive ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄ 'of the Greatness' — ⲙⲛ̄ restored, ⲧⲛⲁⲟ̄ visible",
+          "source_id": 21,
+          "section": 1099
+        },
+        {
+          "id": 17,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲧⲉ ⲧϣⲁⲣⲡ",
+          "english": "is the first",
+          "basis": "ⲧⲉⲓ̈ ⲧⲉ ⲧϣⲁⲣⲡ ⲛ̄ⲟ̄ⲓⲛⲣ̄ⲃⲁⲗ ⲁⲃⲁⲗ 'this is the first going-forth out' — chapter-internal closure formula",
+          "source_id": 22,
+          "section": 1099
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Aeons of Greatness"
     },
@@ -94,6 +289,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲟ̄ⲓⲛⲣ̄ⲃⲁⲗ ⲁⲃⲁⲗ",
       "core_english": "going-forth out.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes first salvation"
     },
@@ -102,8 +298,30 @@
       "chapter": 19,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲁϩⲥⲛ̄ⲧⲉ ⲛ̄ⲟ̄ⲓⲛⲛⲟⲩϩⲙⲉ ⲧⲉ ⲧⲁⲡⲡ̄ⲛ̄ⲁ̄ {35}ⲁⲛϩ̄ ⲉⲡⲉⲓⲁⲏ ⲛ̄ⲧⲁⲣ{36}",
-      "core_english": "The second saving is that of the Living Spirit, because when {37}",
+      "core_coptic": "ⲧⲙⲁϩⲥⲛ̄ⲧⲉ ⲛ̄ⲟ̄ⲓⲛⲛⲟⲩϩⲙⲉ ⲧⲉ ⲧⲁⲡⲡ̄ⲛ̄ⲁ̄ {18}ⲁⲛϩ̄ ⲉⲡⲉⲓⲁⲏ ⲛ̄ⲧⲁⲣ{19}",
+      "core_english": "The second saving is that of the Living Spirit, because when {19}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "",
+          "basis": "Relative converter ⲉⲧ in ⲡⲡ̄ⲛ̄ⲁ̄ ⲉⲧⲁⲛϩ̄ 'the Living Spirit'",
+          "source_id": 23,
+          "section": 1101
+        },
+        {
+          "id": 19,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "Final ⲉ of ⲛ̄ⲧⲁⲣⲉ 'when'",
+          "source_id": 24,
+          "section": 1101
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second saving enumerated — substrate"
     },
@@ -112,8 +330,39 @@
       "chapter": 19,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲧⲱⲛϩ̄ ⲙⲛ̄ {38}ⲙⲉⲩ ⲛ̄ⲧⲉ {39}ϩ ⲥⲙⲓⲛⲉ ⲛ̄{40}",
-      "core_english": "the Father of Life with the Mother of Life established {41}",
+      "core_coptic": "ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲧⲱⲛϩ̄ ⲙⲛ̄ {20}ⲙⲉⲩ ⲛ̄ⲧⲉ {21}ϩ ⲥⲙⲓⲛⲉ ⲛ̄{22}",
+      "core_english": "the Father of Life with the Mother of Life established {22}",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "",
+          "basis": "Article ⲧ of ⲧⲙⲉⲩ 'the Mother'",
+          "source_id": 25,
+          "section": 1102
+        },
+        {
+          "id": 21,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲡⲧⲱⲛ",
+          "english": "",
+          "basis": "ⲡⲧⲱⲛϩ̄ 'the Life' — parallel construction to preceding ⲡⲧⲱⲛϩ̄",
+          "source_id": 26,
+          "section": 1102
+        },
+        {
+          "id": 22,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "trace of one letter after ⲛ̄",
+          "source_id": 27,
+          "section": 1102
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father and Mother of Life — cosmic establishing"
     },
@@ -122,8 +371,46 @@
       "chapter": 19,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42} ⲙⲛ̄ ⲛ̄{43}ⲟⲥⲙⲟⲥ {44} {45}",
-      "core_english": "{46} and the {47}cosmoses {48} {49}",
+      "core_coptic": "{23} ⲙⲛ̄ ⲛ̄{24}ⲟⲥⲙⲟⲥ {25} {26}",
+      "core_english": "{23} and the {24}cosmoses {25} {26}",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 28,
+          "section": 1103
+        },
+        {
+          "id": 24,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲕ",
+          "english": "",
+          "basis": "ⲕ of ⲛ̄ⲕⲟⲥⲙⲟⲥ 'the cosmoses'",
+          "source_id": 29,
+          "section": 1103
+        },
+        {
+          "id": 25,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 18,
+          "source_id": 30,
+          "section": 1103
+        },
+        {
+          "id": 26,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲕⲟ",
+          "english": "[cos-]",
+          "basis": "Initial ⲕⲟ of ⲕⲟⲥⲙⲟⲥ continuing onto line 30",
+          "source_id": 31,
+          "section": 1103
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmoses"
     },
@@ -132,8 +419,40 @@
       "chapter": 19,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲙⲟⲥ ⲛ̄ⲕ{50}ϩ ⲙⲛ̄ ⲛⲟⲩ{51} ⲁⲩⲟⲩⲁⲓⲛⲉ ⲉⲛⲁϣⲱϩ ⲛ̄{52}",
-      "core_english": "[cos-]mos of {53}earth with their {54}, a great Light, im-{55}",
+      "core_coptic": "ⲥⲙⲟⲥ ⲛ̄ⲕ{27}ϩ ⲙⲛ̄ ⲛⲟⲩ{28} ⲁⲩⲟⲩⲁⲓⲛⲉ ⲉⲛⲁϣⲱϩ ⲛ̄{29}",
+      "core_english": "[cos-]mos of {27}earth with their {28}, a great Light, im-{29}",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Middle ⲁ of ⲕⲁϩ 'earth'",
+          "source_id": 32,
+          "section": 1104
+        },
+        {
+          "id": 28,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲭⲱⲛ",
+          "english": "archons",
+          "basis": "ⲛⲟⲩ-ⲁⲣⲭⲱⲛ 'their archons' — standard Manichaean cosmological inventory: cosmos of earth + its archons",
+          "source_id": 33,
+          "section": 1104
+        },
+        {
+          "id": 29,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲁⲧ",
+          "english": "",
+          "basis": "ⲛⲁⲧ- privative prefix of ⲛⲁⲧϯϣ-ⲁⲣⲁϩ 'immeasurable'",
+          "source_id": 34,
+          "section": 1104
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmos of earth and great Light"
     },
@@ -142,8 +461,39 @@
       "chapter": 19,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{56} ⲁⲣⲁϩ ⲛⲟⲩϩⲙⲉ ⲛ̄ⲧ{57}ⲟⲧⲟⲩ ϩ{58}",
-      "core_english": "{59}measurable, was saved from {60}their hands {61}",
+      "core_coptic": "{30} ⲁⲣⲁϩ ⲛⲟⲩϩⲙⲉ ⲛ̄ⲧ{31}ⲟⲧⲟⲩ ϩ{32}",
+      "core_english": "{30}measurable, was saved from {31}their hands {32}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ϯϣ",
+          "english": "-measurable",
+          "basis": "Completes ⲛⲁⲧϯϣ-ⲁⲣⲁϩ 'without giving measure to it' = 'immeasurable'; visible ⲁⲣⲁϩ on this line",
+          "source_id": 35,
+          "section": 1105
+        },
+        {
+          "id": 31,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "",
+          "basis": "Middle ⲟ of ⲛ̄ⲧⲟⲟⲧⲟⲩ 'from their hands'",
+          "source_id": 36,
+          "section": 1105
+        },
+        {
+          "id": 32,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ϩ visible at start of gap",
+          "source_id": 37,
+          "section": 1105
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Salvation from their hands"
     },
@@ -152,8 +502,38 @@
       "chapter": 19,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲱⲙⲉ ⲉⲧⲁ{62}ⲁⲙⲕϩ ⲉ{63} ⲟⲩⲁⲓ̈{64}",
-      "core_english": "Man whom they{65} swallowed {66} light{67}",
+      "core_coptic": "ⲣⲱⲙⲉ ⲉⲧⲁ{33}ⲁⲙⲕϩ ⲉ{34} ⲟⲩⲁⲓ̈{35}",
+      "core_english": "Man whom they{33} swallowed {34} light{35}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "",
+          "basis": "Subject pronoun -ⲩ of ⲉⲧⲁⲩⲁⲙⲕϩ 'whom they swallowed'",
+          "source_id": 38,
+          "section": 1106
+        },
+        {
+          "id": 34,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ⲉ visible at start",
+          "source_id": 39,
+          "section": 1106
+        },
+        {
+          "id": 35,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "ⲛⲉ presumably continues ⲟⲩⲁⲓⲛⲉ 'light'",
+          "source_id": 40,
+          "section": 1106
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Swallowed Man / Light — cosmic"
     },
@@ -162,8 +542,27 @@
       "chapter": 19,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{68} ϣⲁⲙⲧ ⲙ̄ⲡⲟⲗⲉⲙⲟⲥ {69}",
-      "core_english": "{70} third of the war {71}",
+      "core_coptic": "{36} ϣⲁⲙⲧ ⲙ̄ⲡⲟⲗⲉⲙⲟⲥ {37}",
+      "core_english": "{36} third of the war {37}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "the [ϣⲁ] of ϣⲁⲙⲧ is editor restoration; ⲙⲧ visible",
+          "source_id": 41,
+          "section": 1107
+        },
+        {
+          "id": 37,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 42,
+          "section": 1107
+        }
+      ],
       "removed_material": null,
       "temporal_note": "War narrative — substrate"
     },
@@ -172,8 +571,26 @@
       "chapter": 19,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{72} ⲁⲡⲥⲏⲩ ⲉⲧⲁϥ {73}",
-      "core_english": "{74} to the time when he {75}",
+      "core_coptic": "{38} ⲁⲡⲥⲏⲩ ⲉⲧⲁϥ {39}",
+      "core_english": "{38} to the time when he {39}",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 43,
+          "section": 1108
+        },
+        {
+          "id": 39,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 44,
+          "section": 1108
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic narrative time"
     },
@@ -182,8 +599,27 @@
       "chapter": 19,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{76} ⲉⲧⲛ̄ⲧⲡⲉ {77}",
-      "core_english": "{78} which is in heaven {79}",
+      "core_coptic": "{40} ⲉⲧⲛ̄ⲧⲡⲉ {41}",
+      "core_english": "{40} which is in heaven {41}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "one trace before ⲉⲧⲛ̄ⲧⲡⲉ",
+          "source_id": 45,
+          "section": 1109
+        },
+        {
+          "id": 41,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 46,
+          "section": 1109
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heaven — cosmic"
     },
@@ -192,8 +628,26 @@
       "chapter": 19,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{80} ⲟⲩ ⲁϫⲛ̄ ⲧ{81}",
-      "core_english": "{82} ...without the {83}",
+      "core_coptic": "{42} ⲟⲩ ⲁϫⲛ̄ ⲧ{43}",
+      "core_english": "{42} ...without the {43}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 47,
+          "section": 1110
+        },
+        {
+          "id": 43,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 48,
+          "section": 1110
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -202,8 +656,19 @@
       "chapter": 19,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{84} ⲕⲟⲥⲙⲟⲥ",
-      "core_english": "{85} cosmos",
+      "core_coptic": "{44} ⲕⲟⲥⲙⲟⲥ",
+      "core_english": "{44} cosmos",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "three traces before ⲕⲟⲥⲙⲟⲥ",
+          "source_id": 49,
+          "section": 1111
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmos"
     },
@@ -212,8 +677,19 @@
       "chapter": 19,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{86} ⲧⲙⲁⲍⲥⲛ̄ⲧⲉ ⲧⲉ ⲧⲁⲧⲙⲁⲍϣⲁⲙⲧ",
-      "core_english": "{87} The second is that of the third",
+      "core_coptic": "{45} ⲧⲙⲁⲍⲥⲛ̄ⲧⲉ ⲧⲉ ⲧⲁⲧⲙⲁⲍϣⲁⲙⲧ",
+      "core_english": "{45} The second is that of the third",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 12,
+          "partial": "[ⲧⲙⲁⲍ] of ⲧⲙⲁⲍⲥⲛⲧⲉ accepted as editor's word-completion",
+          "source_id": 50,
+          "section": 1112
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enumeration marker for third release"
     },
@@ -222,8 +698,38 @@
       "chapter": 19,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88} {89} ⲁϥⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ {90}",
-      "core_english": "{91} {92} he revealed forth {93}",
+      "core_coptic": "{46} {47} ⲁϥⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ {48}",
+      "core_english": "{46} {47} he revealed forth {48}",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+          "english": "of the Ambassador",
+          "basis": "Editor's restoration; the chapter context (line 16 closes 'the third of the Ambassador') confirms this is the section on the Third Ambassador's salvation.",
+          "source_id": 51,
+          "section": 1113
+        },
+        {
+          "id": 47,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 52,
+          "section": 1113
+        },
+        {
+          "id": 48,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲉϥ",
+          "english": "his",
+          "basis": "Editor's restoration; possessive prefix joining to ⲍⲓⲕⲱⲛ in the next line.",
+          "source_id": 53,
+          "section": 1113
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Revealed forth — cosmic act"
     },
@@ -232,8 +738,36 @@
       "chapter": 19,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{94} {95} ⲁϥ {96}",
-      "core_english": "{97} {98} he {99}",
+      "core_coptic": "{49} {50} ⲁϥ {51}",
+      "core_english": "{49} {50} he {51}",
+      "apparatus": [
+        {
+          "id": 49,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "ⲍⲓⲕⲱⲛ",
+          "english": "image",
+          "basis": "Editor's restoration; standard Manichaean term ⲧⲉϥⲍⲓⲕⲱⲛ 'his image' for the Ambassador's revealed form (cf. line 15, 18).",
+          "source_id": 54,
+          "section": 1114
+        },
+        {
+          "id": 50,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 55,
+          "section": 1114
+        },
+        {
+          "id": 51,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 56,
+          "section": 1114
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -242,8 +776,27 @@
       "chapter": 19,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "{100} ⲁⲣⲭⲟⲛⲧⲓⲕⲏ ⲁϥⲡ {101}",
-      "core_english": "{102} archonic host; he {103}",
+      "core_coptic": "{52} ⲁⲣⲭⲟⲛⲧⲓⲕⲏ ⲁϥⲡ {53}",
+      "core_english": "{52} archonic host; he {53}",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 29,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "[ⲁ] of ⲁⲣⲭⲟⲛⲧⲓⲕⲏ accepted as editor's word-completion",
+          "source_id": 57,
+          "section": 1115
+        },
+        {
+          "id": 53,
+          "segment": 29,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 58,
+          "section": 1115
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archonic host"
     },
@@ -252,8 +805,27 @@
       "chapter": 19,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "{104} ⲏⲙⲁ ⲉⲧⲁ ⲙ {105}",
-      "core_english": "{106} ...ēma which the {107}",
+      "core_coptic": "{54} ⲏⲙⲁ ⲉⲧⲁ ⲙ {55}",
+      "core_english": "{54} ...ēma which the {55}",
+      "apparatus": [
+        {
+          "id": 54,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "two traces before ⲏⲙⲁ",
+          "source_id": 59,
+          "section": 1116
+        },
+        {
+          "id": 55,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 60,
+          "section": 1116
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -262,8 +834,26 @@
       "chapter": 19,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "{108} ⲁⲃⲁⲗ ⲛ̄ⲧⲟⲟⲧⲟⲩ {109}",
-      "core_english": "{110} forth out of their hand {111}",
+      "core_coptic": "{56} ⲁⲃⲁⲗ ⲛ̄ⲧⲟⲟⲧⲟⲩ {57}",
+      "core_english": "{56} forth out of their hand {57}",
+      "apparatus": [
+        {
+          "id": 56,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 61,
+          "section": 1117
+        },
+        {
+          "id": 57,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 62,
+          "section": 1117
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Out of their hand"
     },
@@ -272,8 +862,26 @@
       "chapter": 19,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{112} ⲟⲩⲛ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲁ ⲡ {113}",
-      "core_english": "{114} therefore this is what the {115}",
+      "core_coptic": "{58} ⲟⲩⲛ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲁ ⲡ {59}",
+      "core_english": "{58} therefore this is what the {59}",
+      "apparatus": [
+        {
+          "id": 58,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 63,
+          "section": 1118
+        },
+        {
+          "id": 59,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 64,
+          "section": 1118
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Connective, damaged"
     },
@@ -282,8 +890,19 @@
       "chapter": 19,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "{116} ⲧⲉϥⲍⲓⲕⲱⲛ ⲉⲧⲡ̄ⲟⲩⲁⲓⲛⲉ ⲍⲙ̄ ⲧⲙⲁⲍ-",
-      "core_english": "{117} his image which is of light, in the thi-",
+      "core_coptic": "{60} ⲧⲉϥⲍⲓⲕⲱⲛ ⲉⲧⲡ̄ⲟⲩⲁⲓⲛⲉ ⲍⲙ̄ ⲧⲙⲁⲍ-",
+      "core_english": "{60} his image which is of light, in the thi-",
+      "apparatus": [
+        {
+          "id": 60,
+          "segment": 34,
+          "type": "lacuna",
+          "est_chars": 10,
+          "partial": "[ⲧⲉϥ] of ⲧⲉϥⲍⲓⲕⲱⲛ and [ⲟⲩⲁ] of ⲡⲟⲩⲁⲓⲛⲉ accepted as editor's word-completions",
+          "source_id": 65,
+          "section": 1119
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Image of light — substrate"
     },
@@ -294,6 +913,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
       "core_english": "rd Ambassador.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third Ambassador — key cosmic figure"
     },
@@ -304,6 +924,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁⲍϩⲧⲟⲉ ⲛ̄ⲟⲓⲛⲛⲟⲩⲍⲙⲉ ⲧⲉ ⲧⲁⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉⲡⲉⲓⲁⲏ ⲛ̄ⲧⲁ-",
       "core_english": "The fourth salvation is that of Jesus the Radiance, because when",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth release — Jesus the Radiance (cosmic figure here, not biographical)"
     },
@@ -314,6 +935,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲉϥⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲛ̄ ⲧⲍⲱⲛⲏ ⲁϥⲟⲩⲱⲛⲍ̄ ⲧⲉϥⲍⲓ-",
       "core_english": "he revealed himself out in the Zone, he revealed his im-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Revealed in Zone — cosmic"
     },
@@ -324,6 +946,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲱⲛ ⲁⲃⲁⲗ ⲛⲁⲍⲣⲛ̄ ⲛ̄ⲥⲧⲉⲣⲉⲱⲙⲁ ⲁϥⲥⲱⲧϥ̄ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ",
       "core_english": "-age forth before the firmaments; he chose the light",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Before firmaments — cosmic"
     },
@@ -332,8 +955,19 @@
       "chapter": 19,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ · ⲁϥⲥⲙⲓⲛⲉ ⲙ̄ⲡⲁⲣⲭⲓⲁⲕ {118}",
-      "core_english": "which is in the upper place. He established the arch-{119}",
+      "core_coptic": "ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ · ⲁϥⲥⲙⲓⲛⲉ ⲙ̄ⲡⲁⲣⲭⲓⲁⲕ {61}",
+      "core_english": "which is in the upper place. He established the arch-{61}",
+      "apparatus": [
+        {
+          "id": 61,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "Word ⲡⲁⲣⲭⲓⲁⲕ...ⲭⲏ partially preserved across line break; possibly ⲁⲣⲭⲓⲁ-(ⲕⲁⲑⲟⲗⲓ)ⲕⲏ or similar Greek-derived ecclesiastical compound; sense uncertain — 'arch-?-y of all the churches'",
+          "source_id": 66,
+          "section": 1124
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Upper place; he established the arch-"
     },
@@ -342,8 +976,18 @@
       "chapter": 19,
       "line": 40,
       "classification": "mixed",
-      "core_coptic": "ⲁϥϫⲓ ⲡⲉⲓⲛⲉ {120}",
-      "core_english": "he took the likeness {121}",
+      "core_coptic": "ⲁϥϫⲓ ⲡⲉⲓⲛⲉ {62}",
+      "core_english": "he took the likeness {62}",
+      "apparatus": [
+        {
+          "id": 62,
+          "segment": 40,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 67,
+          "section": 1125
+        }
+      ],
       "removed_material": "ⲭⲏ ⲛ̄ⲛ̄ⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ — 'archy of all the churches' is ecclesial-institutional vocabulary, mapping cosmic establishing onto the editor's church organization. The continuation 'he took the likeness' returns to cosmic narrative.",
       "temporal_note": "ⲉⲕⲕⲗⲏⲥⲓⲁ marker — institutional vocabulary embedded in cosmic narrative"
     },
@@ -352,8 +996,27 @@
       "chapter": 19,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "{122} ⲧⲉ̄ ⲁϥⲧⲛ̄ⲧⲱⲛϥ̄ ⲁⲛⲁⲅⲅⲉⲗⲟⲥ ⲍⲛ̄ ⲛ̄ {123} ϣⲁⲛ-",
-      "core_english": "{124} ...and he likened himself to angels in the {125} until",
+      "core_coptic": "{63} ⲧⲉ̄ ⲁϥⲧⲛ̄ⲧⲱⲛϥ̄ ⲁⲛⲁⲅⲅⲉⲗⲟⲥ ⲍⲛ̄ ⲛ̄ {64} ϣⲁⲛ-",
+      "core_english": "{63} ...and he likened himself to angels in the {64} until",
+      "apparatus": [
+        {
+          "id": 63,
+          "segment": 41,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "uncertain word ending in -ⲧⲉ",
+          "source_id": 68,
+          "section": 1126
+        },
+        {
+          "id": 64,
+          "segment": 41,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 69,
+          "section": 1126
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Likening to angels — cosmic descent"
     },
@@ -364,6 +1027,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉϥⲙⲁⲍⲉ ⲛ̄ϥⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲡⲗⲁⲥⲙⲁ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲛ̄ϥⲥⲙⲓⲛⲉ",
       "core_english": "he reached, and came down to the molding of the flesh, and established",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Descent to molding of flesh — cosmic"
     },
@@ -374,6 +1038,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲕⲁⲍ ⲙⲛ̄ ⲛ̄ⲧⲱⲟⲥ ⲧⲏⲣⲟⲩ ⲁϥⲧⲟⲩⲱ ⲍⲱϥ ⲁⲛ",
       "core_english": "the lands and all the mountains; he himself raised once again",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lands and mountains — cosmic"
     },
@@ -382,8 +1047,19 @@
       "chapter": 19,
       "line": 44,
       "classification": "cosmological_substrate",
-      "core_coptic": "{126} ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ ⲛ̄ⲁⲧⲧϣⲓ ⲁⲣⲁϥ ⲍⲙ̄ ⲡⲕⲱⲧ ⲧⲏⲣϥ̄ ⲁϥⲧ-",
-      "core_english": "{127} the immeasurable light, in the whole Building; he es-",
+      "core_coptic": "{65} ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ ⲛ̄ⲁⲧⲧϣⲓ ⲁⲣⲁϥ ⲍⲙ̄ ⲡⲕⲱⲧ ⲧⲏⲣϥ̄ ⲁϥⲧ-",
+      "core_english": "{65} the immeasurable light, in the whole Building; he es-",
+      "apparatus": [
+        {
+          "id": 65,
+          "segment": 44,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "[ⲙⲡⲟⲩⲁ] of ⲙⲡⲟⲩⲁⲓⲛⲉ accepted as editor's word-completion",
+          "source_id": 70,
+          "section": 1129
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Whole Building / immeasurable light — cosmic"
     },
@@ -394,6 +1070,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲧⲱⲍⲙⲉ ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲛ̄ⲛ̄ⲥⲧⲟⲭⲉⲓⲱⲛ ⲁϥⲙⲟⲩⲛⲕ̄ ⲛ̄-",
       "core_english": "-tablished the Call and the Hearing of the elements; he formed",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Call and Hearing of elements — cosmic"
     },
@@ -404,6 +1081,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲓⲏⲥ̄ ⲡⲗⲓⲗⲟⲩ ⲁϥⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ ⲁϥⲙ̄ⲧⲁⲛ ⲙ̄ⲙⲁϥ ⲍⲙ̄ ⲡ-",
       "core_english": "Jesus the Youth; he went up, he rested himself in the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Jesus the Youth — cosmic figure"
     },
@@ -414,6 +1092,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁⲍ ⲛ̄ⲟⲩⲁⲓⲛⲉ",
       "core_english": "Land of Light.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Land of Light — cosmic destination"
     },
@@ -424,6 +1103,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁⲍⲧ̄ⲉ ⲛ̄ⲟⲓⲛⲡ̄ⲃⲁⲗ",
       "core_english": "The fifth: the release-forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth release enumeration"
     },
@@ -434,6 +1114,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲙⲛ̄ ⲧⲟⲓⲛⲛⲟⲩⲍⲙⲉ ⲛ̄ⲧⲁⲥ ⲧⲉ ⲧⲁⲡⲛⲁⲟ̄ ⲛ̄ⲥⲁⲍⲛⲉ ⲉ-",
       "core_english": "and the salvation — hers is that of the Great Counsel, which",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Counsel — cosmic principle"
     },
@@ -444,6 +1125,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "-ⲧⲉ ⲡⲧⲱⲍⲙⲉ ⲡⲧⲉ ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲉⲡⲉⲓⲁⲏ ⲛ̄ⲧⲁϥ ⲍⲱϥ ⲁⲛ",
       "core_english": "is the Call together with the Hearing, because it itself also",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Call and Hearing — substrate identification"
     },
@@ -452,8 +1134,29 @@
       "chapter": 19,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "{128} ⲧⲯⲩⲭⲏ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡ{129} ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄",
-      "core_english": "{130} the soul out from the {131} of the Greatness",
+      "core_coptic": "{66} ⲧⲯⲩⲭⲏ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡ{67} ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄",
+      "core_english": "{66} the soul out from the {67} of the Greatness",
+      "apparatus": [
+        {
+          "id": 66,
+          "segment": 51,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "[ⲧ] of ⲧⲯⲩⲭⲏ accepted as editor's article-restoration",
+          "source_id": 71,
+          "section": 1136
+        },
+        {
+          "id": 67,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲍ",
+          "english": "land",
+          "basis": "Editor's tentative restoration (marked '?' in transcription); the cosmological idiom ⲡⲕⲁⲍ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄ 'the Land of the Greatness' fits the Manichaean designation of the Father's realm.",
+          "source_id": 72,
+          "section": 1136
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Soul from Greatness — cosmic"
     },
@@ -462,8 +1165,18 @@
       "chapter": 19,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "{132}",
-      "core_english": "{133}",
+      "core_coptic": "{68}",
+      "core_english": "{68}",
+      "apparatus": [
+        {
+          "id": 68,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 40,
+          "source_id": 73,
+          "section": 1137
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -472,8 +1185,36 @@
       "chapter": 19,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "{134} {135} ⲁⲩⲅⲁⲣⲥ ϩⲛ {136}",
-      "core_english": "{137} {138} for they ... her/it in {139}",
+      "core_coptic": "{69} {70} ⲁⲩⲅⲁⲣⲥ ϩⲛ {71}",
+      "core_english": "{69} {70} for they ... her/it in {71}",
+      "apparatus": [
+        {
+          "id": 69,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "...",
+          "source_id": 74,
+          "section": 1138
+        },
+        {
+          "id": 70,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": ".......",
+          "source_id": 75,
+          "section": 1138
+        },
+        {
+          "id": 71,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 76,
+          "section": 1138
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -482,8 +1223,18 @@
       "chapter": 19,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "{140}",
-      "core_english": "{141}",
+      "core_coptic": "{72}",
+      "core_english": "{72}",
+      "apparatus": [
+        {
+          "id": 72,
+          "segment": 54,
+          "type": "lacuna",
+          "est_chars": 40,
+          "source_id": 77,
+          "section": 1139
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -492,8 +1243,18 @@
       "chapter": 19,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "{142}",
-      "core_english": "{143}",
+      "core_coptic": "{73}",
+      "core_english": "{73}",
+      "apparatus": [
+        {
+          "id": 73,
+          "segment": 55,
+          "type": "lacuna",
+          "est_chars": 40,
+          "source_id": 78,
+          "section": 1140
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -502,8 +1263,29 @@
       "chapter": 19,
       "line": 56,
       "classification": "cosmological_substrate",
-      "core_coptic": "{144}ⲓ̈ⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛϩ {145}",
-      "core_english": "{146}is living Spirit {147}",
+      "core_coptic": "{74}ⲓ̈ⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛϩ {75}",
+      "core_english": "{74}is living Spirit {75}",
+      "apparatus": [
+        {
+          "id": 74,
+          "segment": 56,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "editor restoration; article",
+          "source_id": 79,
+          "section": 1141
+        },
+        {
+          "id": 75,
+          "segment": 56,
+          "type": "lacuna",
+          "est_chars": 10,
+          "partial": "........",
+          "source_id": 80,
+          "section": 1141
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit"
     },
@@ -512,8 +1294,18 @@
       "chapter": 19,
       "line": 57,
       "classification": "cosmological_substrate",
-      "core_coptic": "{148}",
-      "core_english": "{149}",
+      "core_coptic": "{76}",
+      "core_english": "{76}",
+      "apparatus": [
+        {
+          "id": 76,
+          "segment": 57,
+          "type": "lacuna",
+          "est_chars": 40,
+          "source_id": 81,
+          "section": 1142
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -522,8 +1314,18 @@
       "chapter": 19,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "{150}",
-      "core_english": "{151}",
+      "core_coptic": "{77}",
+      "core_english": "{77}",
+      "apparatus": [
+        {
+          "id": 77,
+          "segment": 58,
+          "type": "lacuna",
+          "est_chars": 40,
+          "source_id": 82,
+          "section": 1143
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -532,8 +1334,35 @@
       "chapter": 19,
       "line": 59,
       "classification": "cosmological_substrate",
-      "core_coptic": "{152} {153} {154}",
-      "core_english": "{155} {156} {157}",
+      "core_coptic": "{78} {79} {80}",
+      "core_english": "{78} {79} {80}",
+      "apparatus": [
+        {
+          "id": 78,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 83,
+          "section": 1144
+        },
+        {
+          "id": 79,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "....",
+          "source_id": 84,
+          "section": 1144
+        },
+        {
+          "id": 80,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 16,
+          "source_id": 85,
+          "section": 1144
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -542,8 +1371,28 @@
       "chapter": 19,
       "line": 60,
       "classification": "cosmological_substrate",
-      "core_coptic": "{158} ϩⲉ ⲉϩⲧ {159}",
-      "core_english": "{160} fall before {161}",
+      "core_coptic": "{81} ϩⲉ ⲉϩⲧ {82}",
+      "core_english": "{81} fall before {82}",
+      "apparatus": [
+        {
+          "id": 81,
+          "segment": 60,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "...",
+          "source_id": 86,
+          "section": 1145
+        },
+        {
+          "id": 82,
+          "segment": 60,
+          "type": "lacuna",
+          "est_chars": 13,
+          "partial": ".",
+          "source_id": 87,
+          "section": 1145
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -552,8 +1401,36 @@
       "chapter": 19,
       "line": 61,
       "classification": "cosmological_substrate",
-      "core_coptic": "{162} {163} ⲁⲃⲁⲗ ⲁⲡ{164}",
-      "core_english": "{165} {166} forth, to {167}",
+      "core_coptic": "{83} {84} ⲁⲃⲁⲗ ⲁⲡ{85}",
+      "core_english": "{83} {84} forth, to {85}",
+      "apparatus": [
+        {
+          "id": 83,
+          "segment": 61,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 88,
+          "section": 1146
+        },
+        {
+          "id": 84,
+          "segment": 61,
+          "type": "restoration",
+          "coptic": "ⲧⲟ̄ⲛⲣⲃⲁⲗ",
+          "english": "leap forth / shake forth",
+          "basis": "Editor restoration of initial ⲧⲟ̄; verbal stem ⲧⲱⲛ- + ⲣ̄ⲃⲁⲗ obscure; tentative",
+          "source_id": 89,
+          "section": 1146
+        },
+        {
+          "id": 85,
+          "segment": 61,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 90,
+          "section": 1146
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -562,8 +1439,26 @@
       "chapter": 19,
       "line": 62,
       "classification": "cosmological_substrate",
-      "core_coptic": "{168} ⲧⲧⲱⲁⲣⲡ ⲉ̄ {169}",
-      "core_english": "{170} the first {171}",
+      "core_coptic": "{86} ⲧⲧⲱⲁⲣⲡ ⲉ̄ {87}",
+      "core_english": "{86} the first {87}",
+      "apparatus": [
+        {
+          "id": 86,
+          "segment": 62,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 91,
+          "section": 1147
+        },
+        {
+          "id": 87,
+          "segment": 62,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 92,
+          "section": 1147
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First — likely enumeration of secondary list"
     },
@@ -572,8 +1467,37 @@
       "chapter": 19,
       "line": 63,
       "classification": "cosmological_substrate",
-      "core_coptic": "{172} {173}ⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ⲁϩ{174}",
-      "core_english": "{175} {176}go up, to {177}",
+      "core_coptic": "{88} {89}ⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ⲁϩ{90}",
+      "core_english": "{88} {89}go up, to {90}",
+      "apparatus": [
+        {
+          "id": 88,
+          "segment": 63,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": ".",
+          "source_id": 93,
+          "section": 1148
+        },
+        {
+          "id": 89,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲁϩ",
+          "english": "to",
+          "basis": "editor restoration",
+          "source_id": 94,
+          "section": 1148
+        },
+        {
+          "id": 90,
+          "segment": 63,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 95,
+          "section": 1148
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Going up — cosmic"
     },
@@ -582,8 +1506,36 @@
       "chapter": 19,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "{178} ⲉϩⲕ {179} {180}",
-      "core_english": "{181} ... {182} {183}",
+      "core_coptic": "{91} ⲉϩⲕ {92} {93}",
+      "core_english": "{91} ... {92} {93}",
+      "apparatus": [
+        {
+          "id": 91,
+          "segment": 64,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "....",
+          "source_id": 96,
+          "section": 1149
+        },
+        {
+          "id": 92,
+          "segment": 64,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "........",
+          "source_id": 97,
+          "section": 1149
+        },
+        {
+          "id": 93,
+          "segment": 64,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 98,
+          "section": 1149
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -592,8 +1544,28 @@
       "chapter": 19,
       "line": 65,
       "classification": "cosmological_substrate",
-      "core_coptic": "{184} ⲥⲟⲫⲓⲁ {185}",
-      "core_english": "{186} Wisdom {187}",
+      "core_coptic": "{94} ⲥⲟⲫⲓⲁ {95}",
+      "core_english": "{94} Wisdom {95}",
+      "apparatus": [
+        {
+          "id": 94,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "...",
+          "source_id": 99,
+          "section": 1150
+        },
+        {
+          "id": 95,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 13,
+          "partial": "...",
+          "source_id": 100,
+          "section": 1150
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wisdom — cosmic"
     },
@@ -602,8 +1574,45 @@
       "chapter": 19,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{188} ⲣ̄ⲡ̄ {189} {190} ⲡ {191}",
-      "core_english": "{192} ... {193} {194} ... {195}",
+      "core_coptic": "{96} ⲣ̄ⲡ̄ {97} {98} ⲡ {99}",
+      "core_english": "{96} ... {97} {98} ... {99}",
+      "apparatus": [
+        {
+          "id": 96,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "...",
+          "source_id": 101,
+          "section": 1151
+        },
+        {
+          "id": 97,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "......",
+          "source_id": 102,
+          "section": 1151
+        },
+        {
+          "id": 98,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 103,
+          "section": 1151
+        },
+        {
+          "id": 99,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ".  . .",
+          "source_id": 104,
+          "section": 1151
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -612,8 +1621,18 @@
       "chapter": 19,
       "line": 67,
       "classification": "cosmological_substrate",
-      "core_coptic": "{196}",
-      "core_english": "{197}",
+      "core_coptic": "{100}",
+      "core_english": "{100}",
+      "apparatus": [
+        {
+          "id": 100,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 105,
+          "section": 1152
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -622,8 +1641,9 @@
       "chapter": 19,
       "line": 68,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩⲧⲁⲩ {198}",
-      "core_english": "the fourth {199}",
+      "core_coptic": "ⲧⲧⲙⲁϩⲧⲁⲩ {101}",
+      "core_english": "the fourth {101}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth — enumeration of second listing"
     },
@@ -632,8 +1652,18 @@
       "chapter": 19,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "{200} ⲛⲧⲉϩⲥⲟⲫⲓⲁ",
-      "core_english": "{201} of his Wisdom",
+      "core_coptic": "{102} ⲛⲧⲉϩⲥⲟⲫⲓⲁ",
+      "core_english": "{102} of his Wisdom",
+      "apparatus": [
+        {
+          "id": 102,
+          "segment": 69,
+          "type": "lacuna",
+          "est_chars": 25,
+          "source_id": 107,
+          "section": 1154
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wisdom"
     },
@@ -642,8 +1672,19 @@
       "chapter": 19,
       "line": 70,
       "classification": "cosmological_substrate",
-      "core_coptic": "{202}",
-      "core_english": "{203}",
+      "core_coptic": "{103}",
+      "core_english": "{103}",
+      "apparatus": [
+        {
+          "id": 103,
+          "segment": 70,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "...",
+          "source_id": 108,
+          "section": 1155
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -652,8 +1693,9 @@
       "chapter": 19,
       "line": 71,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩⲧⲟⲩ ⲁⲉ ϩⲱϩ {204}",
-      "core_english": "And the fifth — also {205}",
+      "core_coptic": "ⲧⲧⲙⲁϩⲧⲟⲩ ⲁⲉ ϩⲱϩ {104}",
+      "core_english": "And the fifth — also {104}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth — enumeration"
     },
@@ -662,8 +1704,9 @@
       "chapter": 19,
       "line": 72,
       "classification": "cosmological_substrate",
-      "core_coptic": "{206}ϩ ⲁϩⲟⲩⲛ ⲱⲁⲣⲁϩ ⲛϩϩⲁⲣⲟ̄ϩ ⲛⲧⲉϩ",
-      "core_english": "{207} inward unto him, before his face, of his",
+      "core_coptic": "{105}ϩ ⲁϩⲟⲩⲛ ⲱⲁⲣⲁϩ ⲛϩϩⲁⲣⲟ̄ϩ ⲛⲧⲉϩ",
+      "core_english": "{105} inward unto him, before his face, of his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic figure's face"
     },
@@ -672,8 +1715,20 @@
       "chapter": 19,
       "line": 73,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲓⲕⲱⲛ ⲛⲟⲩⲁⲓ̈ⲛⲉ ϩⲙ̄ ⲡⲓⲁⲛⲁⲣⲉⲓⲁⲥ ⲛϩⲁⲉ ⲧⲧⲉ ⲛⲛⲁ{208}",
-      "core_english": "image of Light in this Panaretos. The last is the gr{209}",
+      "core_coptic": "ϩⲓⲕⲱⲛ ⲛⲟⲩⲁⲓ̈ⲛⲉ ϩⲙ̄ ⲡⲓⲁⲛⲁⲣⲉⲓⲁⲥ ⲛϩⲁⲉ ⲧⲧⲉ ⲛⲛⲁ{106}",
+      "core_english": "image of Light in this Panaretos. The last is the gr{106}",
+      "apparatus": [
+        {
+          "id": 106,
+          "segment": 73,
+          "type": "restoration",
+          "coptic": "ⲟ̄",
+          "english": "great",
+          "basis": "editor restoration of [ⲟ̄] completing ⲛⲛⲁⲟ̄ 'the great' (= ⲛⲁⲅ)",
+          "source_id": 111,
+          "section": 1158
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Image of Light in Panaretos — cosmic"
     },
@@ -682,8 +1737,9 @@
       "chapter": 19,
       "line": 74,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲟ̄ⲁⲙ {210} ⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲛⲧⲁⲩⲉⲓ ⲁⲩⲛⲁϩⲣⲉ {211}",
-      "core_english": "might {212} manifested forth, when they came they faced(?) {213}",
+      "core_coptic": "ⲛⲟ̄ⲁⲙ {107} ⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲛⲧⲁⲩⲉⲓ ⲁⲩⲛⲁϩⲣⲉ {108}",
+      "core_english": "might {107} manifested forth, when they came they faced(?) {108}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Might manifested — cosmic"
     },
@@ -692,8 +1748,9 @@
       "chapter": 19,
       "line": 75,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲟ {214} ⲁⲩⲥⲙ̄ⲛⲉ ⲁⲭⲛ̄ ⲛ{215}",
-      "core_english": "... {216} they established, without {217}",
+      "core_coptic": "ⲃⲟ {109} ⲁⲩⲥⲙ̄ⲛⲉ ⲁⲭⲛ̄ ⲛ{110}",
+      "core_english": "... {109} they established, without {110}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Established without"
     },
@@ -702,8 +1759,9 @@
       "chapter": 19,
       "line": 76,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲡ {218} ⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ {219} ⲛⲧⲁⲣⲉϩⲉⲓ ϩⲓ",
-      "core_english": "... {220} First Man {221} when he came upon",
+      "core_coptic": "ⲣⲡ {111} ⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ {112} ⲛⲧⲁⲣⲉϩⲉⲓ ϩⲓ",
+      "core_english": "... {111} First Man {112} when he came upon",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man — cosmic"
     },
@@ -712,8 +1770,9 @@
       "chapter": 19,
       "line": 77,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲉⲧ {222} ⲁⲃⲁⲗ ⲙⲡⲁⲣⲱⲛ ⲁϩϩⲱⲣⲟ̄ ⲁϩ{223}",
-      "core_english": "... {224} forth from the battle, to send forth, to {225}",
+      "core_coptic": "ⲣⲉⲧ {113} ⲁⲃⲁⲗ ⲙⲡⲁⲣⲱⲛ ⲁϩϩⲱⲣⲟ̄ ⲁϩ{114}",
+      "core_english": "... {113} forth from the battle, to send forth, to {114}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Battle — cosmic war"
     },
@@ -722,8 +1781,9 @@
       "chapter": 19,
       "line": 78,
       "classification": "cosmological_substrate",
-      "core_coptic": "{226} ⲕⲟⲥⲙⲟⲥ {227}",
-      "core_english": "{228} cosmos {229}",
+      "core_coptic": "{115} ⲕⲟⲥⲙⲟⲥ {116}",
+      "core_english": "{115} cosmos {116}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmos"
     },
@@ -732,8 +1792,9 @@
       "chapter": 19,
       "line": 79,
       "classification": "cosmological_substrate",
-      "core_coptic": "{230} ⲡⲱⲁⲣⲡ ⲛⲣⲱ{231}",
-      "core_english": "{232} the First M{233}",
+      "core_coptic": "{117} ⲡⲱⲁⲣⲡ ⲛⲣⲱ{118}",
+      "core_english": "{117} the First M{118}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man"
     },
@@ -742,8 +1803,9 @@
       "chapter": 19,
       "line": 80,
       "classification": "cosmological_substrate",
-      "core_coptic": "{234} ⲙⲡⲧⲉⲛⲃ̄ {235} ⲛ̄ⲧⲉϩⲟ̄ⲓⲛⲉⲓ {236}",
-      "core_english": "{237} ... {238} of his ... {239}",
+      "core_coptic": "{119} ⲙⲡⲧⲉⲛⲃ̄ {120} ⲛ̄ⲧⲉϩⲟ̄ⲓⲛⲉⲓ {121}",
+      "core_english": "{119} ... {120} of his ... {121}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -752,8 +1814,9 @@
       "chapter": 19,
       "line": 81,
       "classification": "cosmological_substrate",
-      "core_coptic": "{240} {241} {242} ⲙ̄ⲛ̄ {243}",
-      "core_english": "{244} {245} {246} with {247}",
+      "core_coptic": "{122} {123} {124} ⲙ̄ⲛ̄ {125}",
+      "core_english": "{122} {123} {124} with {125}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -762,8 +1825,9 @@
       "chapter": 19,
       "line": 82,
       "classification": "cosmological_substrate",
-      "core_coptic": "{248}",
-      "core_english": "{249}",
+      "core_coptic": "{126}",
+      "core_english": "{126}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -772,8 +1836,9 @@
       "chapter": 19,
       "line": 83,
       "classification": "cosmological_substrate",
-      "core_coptic": "{250}",
-      "core_english": "{251}",
+      "core_coptic": "{127}",
+      "core_english": "{127}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -782,8 +1847,9 @@
       "chapter": 19,
       "line": 84,
       "classification": "cosmological_substrate",
-      "core_coptic": "{252}",
-      "core_english": "{253}",
+      "core_coptic": "{128}",
+      "core_english": "{128}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -792,8 +1858,9 @@
       "chapter": 19,
       "line": 85,
       "classification": "cosmological_substrate",
-      "core_coptic": "{254}",
-      "core_english": "{255}",
+      "core_coptic": "{129}",
+      "core_english": "{129}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -802,8 +1869,9 @@
       "chapter": 19,
       "line": 86,
       "classification": "cosmological_substrate",
-      "core_coptic": "{256}",
-      "core_english": "{257}",
+      "core_coptic": "{130}",
+      "core_english": "{130}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -812,8 +1880,36 @@
       "chapter": 19,
       "line": 87,
       "classification": "cosmological_substrate",
-      "core_coptic": "{258}ⲕⲱ ⲉⲧⲃⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ {259}ⲧⲁϩⲃⲁⲟϩ ⲁⲃⲁⲗ ⲙ{260}",
-      "core_english": "{261}set concerning the Light {262}has reached forth from {263}",
+      "core_coptic": "{131}ⲕⲱ ⲉⲧⲃⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ {132}ⲧⲁϩⲃⲁⲟϩ ⲁⲃⲁⲗ ⲙ{133}",
+      "core_english": "{131}set concerning the Light {132}has reached forth from {133}",
+      "apparatus": [
+        {
+          "id": 131,
+          "segment": 87,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 136,
+          "section": 1172
+        },
+        {
+          "id": 132,
+          "segment": 87,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "which",
+          "basis": "Editor restoration of relative prefix",
+          "source_id": 137,
+          "section": 1172
+        },
+        {
+          "id": 133,
+          "segment": 87,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 138,
+          "section": 1172
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Concerning the Light — cosmic"
     },
@@ -822,8 +1918,19 @@
       "chapter": 19,
       "line": 88,
       "classification": "cosmological_substrate",
-      "core_coptic": "{264} ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
-      "core_english": "{265} of the Ambassador.",
+      "core_coptic": "{134} ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "core_english": "{134} of the Ambassador.",
+      "apparatus": [
+        {
+          "id": 134,
+          "segment": 88,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "...",
+          "source_id": 139,
+          "section": 1173
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ambassador — cosmic figure"
     },
@@ -832,8 +1939,20 @@
       "chapter": 19,
       "line": 89,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲥⲁⲭⲛ{266}",
-      "core_english": "The counsel {267}",
+      "core_coptic": "ⲧⲧⲥⲁⲭⲛ{135}",
+      "core_english": "The counsel {135}",
+      "apparatus": [
+        {
+          "id": 135,
+          "segment": 89,
+          "type": "restoration",
+          "coptic": "ⲉ ⲛ̄ⲧⲉ",
+          "english": "of",
+          "basis": "Editor restoration; standard genitive linker",
+          "source_id": 140,
+          "section": 1174
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Counsel — likely Great Counsel"
     },
@@ -842,8 +1961,29 @@
       "chapter": 19,
       "line": 90,
       "classification": "cosmological_substrate",
-      "core_coptic": "{268} ⲡⲱⲛϩ̄ ⲉⲧⲉ ⲡⲧⲱϩⲙⲉ ⲡⲉ ⲙⲛ ⲡⲥⲱⲧⲙⲉ ϩⲁⲡ̄{269}",
-      "core_english": "{270} the Life, which is the Calling and the Hearing {271}",
+      "core_coptic": "{136} ⲡⲱⲛϩ̄ ⲉⲧⲉ ⲡⲧⲱϩⲙⲉ ⲡⲉ ⲙⲛ ⲡⲥⲱⲧⲙⲉ ϩⲁⲡ̄{137}",
+      "core_english": "{136} the Life, which is the Calling and the Hearing {137}",
+      "apparatus": [
+        {
+          "id": 136,
+          "segment": 90,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restoration of definite article",
+          "source_id": 141,
+          "section": 1175
+        },
+        {
+          "id": 137,
+          "segment": 90,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ϩⲁⲡ̄",
+          "source_id": 142,
+          "section": 1175
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Life = Call + Hearing — substrate identification"
     },
@@ -852,8 +1992,26 @@
       "chapter": 19,
       "line": 91,
       "classification": "mixed",
-      "core_coptic": "{272} ⲡⲉ {273}",
-      "core_english": "{274} is {275}",
+      "core_coptic": "{138} ⲡⲉ {139}",
+      "core_english": "{138} is {139}",
+      "apparatus": [
+        {
+          "id": 138,
+          "segment": 91,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 143,
+          "section": 1176
+        },
+        {
+          "id": 139,
+          "segment": 91,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 144,
+          "section": 1176
+        }
+      ],
       "removed_material": "ⲣ̄ⲥⲫⲣⲁⲅⲓⲍⲉ ⲛ̄ⲧⲉⲛⲧⲟⲗⲏ ⲙ̄ⲛ ⲡϣⲁⲡ — 'sealing the commandment and the gift' is ecclesial-ritual vocabulary referring to community sacramental practice, not cosmic mapping.",
       "temporal_note": "Sealing the commandment — ecclesial sacramental layer in damaged context"
     },
@@ -862,8 +2020,19 @@
       "chapter": 19,
       "line": 93,
       "classification": "mixed",
-      "core_coptic": "{276}ⲱⲛϩ̄ ⲛ̄ⲧⲉ ⲡⲁⲛⲁⲣⲉⲓⲁⲥ ⲛ̄ϩⲡ̄ ⲡⲧⲁⲭⲟ ⲛ̄ⲙ̄ⲯⲩⲭⲁⲩⲉ",
-      "core_english": "{277} life of Panaretos secretly; the destruction of the souls",
+      "core_coptic": "{140}ⲱⲛϩ̄ ⲛ̄ⲧⲉ ⲡⲁⲛⲁⲣⲉⲓⲁⲥ ⲛ̄ϩⲡ̄ ⲡⲧⲁⲭⲟ ⲛ̄ⲙ̄ⲯⲩⲭⲁⲩⲉ",
+      "core_english": "{140} life of Panaretos secretly; the destruction of the souls",
+      "apparatus": [
+        {
+          "id": 140,
+          "segment": 93,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": ".",
+          "source_id": 148,
+          "section": 1177
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Panaretos and destruction of souls — cosmic; preserved as substrate"
     },
@@ -872,8 +2041,27 @@
       "chapter": 19,
       "line": 94,
       "classification": "cosmological_substrate",
-      "core_coptic": "{278} ϩⲁⲧⲛⲛⲁⲩ {279}ⲧⲱⲥ",
-      "core_english": "{280} near the time {281}",
+      "core_coptic": "{141} ϩⲁⲧⲛⲛⲁⲩ {142}ⲧⲱⲥ",
+      "core_english": "{141} near the time {142}",
+      "apparatus": [
+        {
+          "id": 141,
+          "segment": 94,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 149,
+          "section": 1178
+        },
+        {
+          "id": 142,
+          "segment": 94,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲧⲱⲥ",
+          "source_id": 150,
+          "section": 1178
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged"
     },
@@ -882,8 +2070,35 @@
       "chapter": 19,
       "line": 95,
       "classification": "cosmological_substrate",
-      "core_coptic": "{282} ⲟⲁⲙ ⲛ̄ⲧⲁⲩ{283} ⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲝ{284}",
-      "core_english": "{285} might which they {286} them forth from the {287}",
+      "core_coptic": "{143} ⲟⲁⲙ ⲛ̄ⲧⲁⲩ{144} ⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲝ{145}",
+      "core_english": "{143} might which they {144} them forth from the {145}",
+      "apparatus": [
+        {
+          "id": 143,
+          "segment": 95,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 151,
+          "section": 1179
+        },
+        {
+          "id": 144,
+          "segment": 95,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 152,
+          "section": 1179
+        },
+        {
+          "id": 145,
+          "segment": 95,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲡⲝ",
+          "source_id": 153,
+          "section": 1179
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Might forth from — cosmic"
     },
@@ -892,8 +2107,34 @@
       "chapter": 19,
       "line": 96,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄{288}ⲉⲥⲁⲛϩ̄ ⲛ̄{289}ϩ̄ ⲛ̄ⲡⲧⲱⲕ ⲛ̄ⲍⲏⲧ{290}",
-      "core_english": "{291} nourishing {292} of the purpose of heart {293}",
+      "core_coptic": "ⲛ̄{146}ⲉⲥⲁⲛϩ̄ ⲛ̄{147}ϩ̄ ⲛ̄ⲡⲧⲱⲕ ⲛ̄ⲍⲏⲧ{148}",
+      "core_english": "{146} nourishing {147} of the purpose of heart {148}",
+      "apparatus": [
+        {
+          "id": 146,
+          "segment": 96,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 154,
+          "section": 1180
+        },
+        {
+          "id": 147,
+          "segment": 96,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 155,
+          "section": 1180
+        },
+        {
+          "id": 148,
+          "segment": 96,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 156,
+          "section": 1180
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Possibly turning hortatory ('purpose of heart') but damaged"
     },
@@ -902,8 +2143,35 @@
       "chapter": 19,
       "line": 98,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲱⲣⲉ ⲁⲩⲃⲱⲕ {294}ⲝⲁⲭⲉ ⲁⲩⲃ{295} ⲁⲩ{296}",
-      "core_english": "...; they went {297} {298} they {299}",
+      "core_coptic": "ⲭⲱⲣⲉ ⲁⲩⲃⲱⲕ {149}ⲝⲁⲭⲉ ⲁⲩⲃ{150} ⲁⲩ{151}",
+      "core_english": "...; they went {149} {150} they {151}",
+      "apparatus": [
+        {
+          "id": 149,
+          "segment": 98,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 158,
+          "section": 1181
+        },
+        {
+          "id": 150,
+          "segment": 98,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲁⲩⲃ",
+          "source_id": 159,
+          "section": 1181
+        },
+        {
+          "id": 151,
+          "segment": 98,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 160,
+          "section": 1181
+        }
+      ],
       "removed_material": null,
       "temporal_note": "They went — narrative"
     },
@@ -912,8 +2180,26 @@
       "chapter": 19,
       "line": 99,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲣⲟⲩ ⲁⲭ{300}ⲟⲣⲟ ⲁ⳨ⲭⲱⲣⲁ ⲉⲧⲁⲩ{301}",
-      "core_english": "all {302} the region which they {303}",
+      "core_coptic": "ⲧⲏⲣⲟⲩ ⲁⲭ{152}ⲟⲣⲟ ⲁ⳨ⲭⲱⲣⲁ ⲉⲧⲁⲩ{153}",
+      "core_english": "all {152} the region which they {153}",
+      "apparatus": [
+        {
+          "id": 152,
+          "segment": 99,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 161,
+          "section": 1182
+        },
+        {
+          "id": 153,
+          "segment": 99,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 162,
+          "section": 1182
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Region — cosmic geography"
     },
@@ -922,8 +2208,26 @@
       "chapter": 19,
       "line": 100,
       "classification": "cosmological_substrate",
-      "core_coptic": "{304}ⲁⲩ ⲛ̄ⲍⲏⲧⲉ̄ ϣⲁⲁⲛⲏϩⲉ {305}",
-      "core_english": "{306} in him forever {307}",
+      "core_coptic": "{154}ⲁⲩ ⲛ̄ⲍⲏⲧⲉ̄ ϣⲁⲁⲛⲏϩⲉ {155}",
+      "core_english": "{154} in him forever {155}",
+      "apparatus": [
+        {
+          "id": 154,
+          "segment": 100,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 163,
+          "section": 1183
+        },
+        {
+          "id": 155,
+          "segment": 100,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 164,
+          "section": 1183
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Forever — cosmic eternity"
     },
@@ -932,8 +2236,18 @@
       "chapter": 19,
       "line": 101,
       "classification": "cosmological_substrate",
-      "core_coptic": "{308} ⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϩ ⲛ̄ⲧⲉⲍⲟⲩⲓⲧⲉ ⲉⲩⲁⲛⲁⲩ ⲍⲟⲩ",
-      "core_english": "{309} they came forth from the first place, looking at them",
+      "core_coptic": "{156} ⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϩ ⲛ̄ⲧⲉⲍⲟⲩⲓⲧⲉ ⲉⲩⲁⲛⲁⲩ ⲍⲟⲩ",
+      "core_english": "{156} they came forth from the first place, looking at them",
+      "apparatus": [
+        {
+          "id": 156,
+          "segment": 101,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 165,
+          "section": 1184
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Coming from first place — cosmic"
     },
@@ -944,6 +2258,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛ ⲁⲡⲟⲩⲁⲓ̈ⲛⲉ ⲛ̄ⲥⲉⲃⲱⲕ ⲁϩⲣⲏⲓ̈ ϣⲁⲣⲁϩ ⲁⲧⲍⲁⲏ",
       "core_english": "again unto the Light, that they may go up to him at the end.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ascent to Light — cosmic"
     },
@@ -952,8 +2267,34 @@
       "chapter": 19,
       "line": 104,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ{310} ⲁϩⲣⲏⲓ̈ ⲛ̄ⲟⲩ{311} ⲭⲛ̄ ⲛ̄ϣⲁⲣⲡⲧ ϣⲁ ⲙ{312}",
-      "core_english": "{313} upward {314} from the beginning unto {315}",
+      "core_coptic": "ⲁ{157} ⲁϩⲣⲏⲓ̈ ⲛ̄ⲟⲩ{158} ⲭⲛ̄ ⲛ̄ϣⲁⲣⲡⲧ ϣⲁ ⲙ{159}",
+      "core_english": "{157} upward {158} from the beginning unto {159}",
+      "apparatus": [
+        {
+          "id": 157,
+          "segment": 104,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 167,
+          "section": 1186
+        },
+        {
+          "id": 158,
+          "segment": 104,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 168,
+          "section": 1186
+        },
+        {
+          "id": 159,
+          "segment": 104,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 169,
+          "section": 1186
+        }
+      ],
       "removed_material": null,
       "temporal_note": "From beginning to end — cosmic"
     },
@@ -962,8 +2303,19 @@
       "chapter": 19,
       "line": 105,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲙⲁⲥ {316}",
-      "core_english": "with her {317}",
+      "core_coptic": "ⲙ̄ⲙⲁⲥ {160}",
+      "core_english": "with her {160}",
+      "apparatus": [
+        {
+          "id": 160,
+          "segment": 105,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "....",
+          "source_id": 170,
+          "section": 1187
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Damaged closing"
     }

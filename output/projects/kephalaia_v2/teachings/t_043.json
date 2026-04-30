@@ -5,7 +5,7 @@
   "start_section": 2395,
   "end_section": 2418,
   "total_sections": 24,
-  "total_lacunae": 27,
+  "total_lacunae": 13,
   "segments": [
     {
       "section": 2395,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲁ ⲡⲕⲉⲕⲉ ⲍⲱⲱϩ ⲡⲭⲁⲭⲉ",
       "core_english": "'The Darkness, also—the Enemy—",
+      "apparatus": [],
       "removed_material": "Stripped dialogue frame: 'Once again, at this hour he said'",
       "temporal_note": "Frame attribution opens substrate teaching about the Enemy."
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲉ ⲱⲁⲙⲧⲉ ⲙ̄ⲡⲗⲏⲅⲏ ⲉⲩⲍⲁⲩ ⲙⲛ̄ ⲱⲁⲙⲧ ⲙⲡⲟⲗⲉⲙ̄ⲟⲥ ⲙ̄ⲛ ⲍⲛ-",
       "core_english": "—because three bitter plagues, with three wars, and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substratic enumeration: three plagues / three wars."
     },
@@ -34,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲓⲛⲁⲩⲛⲟⲥ ⲉⲩⲍⲁⲩ ⲍⲓⲧⲛ̄ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲍⲙ ⲡⲓⲱⲁⲙⲧ ⲙ̄ⲡⲟⲗⲉⲙⲟⲥ",
       "core_english": "bitter dangers (have come) through the Light, in this third war",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic war framework."
     },
@@ -44,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲙⲙⲉⲩ",
       "core_english": "of theirs.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of preceding."
     },
@@ -54,6 +58,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲱⲁⲣⲡ ⲭⲉ ⲁⲩⲃⲓⲧϩ ⲛⲧⲙⲏⲧⲉ ⲁⲩⲡⲁⲣⲭⲩ",
       "core_english": "The First: that they took him from the midst, they separated them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration marker 'The First' — substrate structure."
     },
@@ -64,6 +69,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲉϩⲕⲁⲍ ⲛ̄ⲕⲉⲕⲉ ⲡⲉⲧⲁϩⲃⲱⲕ̄ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϩ ⲁⲩⲣ̄ⲣⲣⲟ ⲁ-",
       "core_english": "to his land of Darkness—who had gone forth from him; they reigned",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic geography — land of Darkness."
     },
@@ -74,6 +80,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲱϩ ⲍⲙ̄ ⲡⲓⲱⲁⲣⲡ ⲙ̄ⲡⲟⲗⲉⲙⲟⲥ ⲉⲧⲙ̄ⲙⲉⲩ ⲁⲩⲟ̄ⲁⲡϩ̄ ⲁⲩ-",
       "core_english": "over him in this first war; they reckoned him, they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First war narrative."
     },
@@ -83,7 +90,19 @@
       "line": 10,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲣϩ̄ ⲍⲛ ⲧⲧⲣⲭⲏ ⲉⲧⲁⲛⲍ̄",
-      "core_english": "{1}-bound him in the Living Principle.",
+      "core_english": "{0}-bound him in the Living Principle.",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲙⲁ",
+          "english": "they",
+          "basis": "Editor restores [ⲙⲁ]ⲣϩ̄ = ⲙⲟⲣ + 3sg.m. suffix 'they bound him.'",
+          "source_id": 2,
+          "section": 2402
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Principle = cosmic substrate."
     },
@@ -94,6 +113,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁⲍⲥⲛ̄ⲧⲉ ⲙⲡⲗⲏⲅⲏ",
       "core_english": "The Second Plague",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second enumeration marker."
     },
@@ -104,6 +124,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲡⲥⲏⲩ ⲉⲧϩⲁⲃⲱⲗ ⲁⲃⲁⲗ ⲛ̄ϩⲟⲩⲱⲧⲍ ⲁⲃⲁⲗ ⲛ̄ϩⲱⲭⲛⲉ ⲍⲛ̄",
       "core_english": "is the time when there is a release-forth, a separation-forth, a dividing in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eschatological cosmic process."
     },
@@ -114,6 +135,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲛⲁⲟ̄ ⲛ̄ⲥⲉⲧⲉ ⲛ̄ⲥⲉⲧⲉⲕⲁϩ ⲛⲥⲉⲱⲣⲱⲱⲣϩ̄ ⲁⲃⲁⲗ ⲛⲛⲍⲓⲕⲱ̄",
       "core_english": "the Great Fire; and they shall destroy and shake forth the icons—",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Fire — cosmic eschatology."
     },
@@ -124,6 +146,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲉ ⲛⲉⲓ̈ ⲛⲉ ⲧⲏⲣⲟⲩ ⲉⲧϩⲱⲟⲡⲧ ⲛ̄ⲍⲏⲧⲟⲩ ⲛ̄ⲥⲉⲥⲁⲩⲍϩ̄ ⲁⲍⲟⲩⲛ",
       "core_english": "which are all those things that are hidden in them—and they shall be gathered inward",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic gathering."
     },
@@ -132,8 +155,20 @@
       "chapter": 41,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲙ̄ⲣⲣⲉ ⲕⲁⲧⲁ ⲡⲉϩⲱⲁⲣⲡ ⲛ̄ⲧⲩⲡⲟⲥ ⲛ̄ϩⲣⲧ̄ⲍⲉ ⲉⲧⲉ ⲛⲉϩⲱⲟ-",
-      "core_english": "{3} the bond, according to its first type, in the manner in which they were",
+      "core_coptic": "{1}ⲙ̄ⲣⲣⲉ ⲕⲁⲧⲁ ⲡⲉϩⲱⲁⲣⲡ ⲛ̄ⲧⲩⲡⲟⲥ ⲛ̄ϩⲣⲧ̄ⲍⲉ ⲉⲧⲉ ⲛⲉϩⲱⲟ-",
+      "core_english": "{1} the bond, according to its first type, in the manner in which they were",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲁⲧ",
+          "english": "to",
+          "basis": "Editor restores ⲁⲍⲟⲩⲛ [ⲁⲧ]ⲙ̄ⲣⲣⲉ = ⲁ-ⲧ-ⲙⲣⲣⲉ 'into the bond.'",
+          "source_id": 3,
+          "section": 2407
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic bond / typology."
     },
@@ -142,8 +177,20 @@
       "chapter": 41,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4}ⲡ ⲙ̄ⲙⲁⲥ ⲭⲛ ⲛⲱⲁⲣⲡ ⲛ̄ⲧⲍⲟⲩⲓⲧⲉ",
-      "core_english": "{5}existing in her from the very first.",
+      "core_coptic": "{2}ⲡ ⲙ̄ⲙⲁⲥ ⲭⲛ ⲛⲱⲁⲣⲡ ⲛ̄ⲧⲍⲟⲩⲓⲧⲉ",
+      "core_english": "{2}existing in her from the very first.",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(qual.)",
+          "basis": "Editor restores [ⲟ]ⲡ giving ⲛⲉϩⲱⲟⲟⲡ 'they were existing' (qualitative of ϣⲱⲡⲉ).",
+          "source_id": 4,
+          "section": 2408
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic origin reference."
     },
@@ -152,8 +199,20 @@
       "chapter": 41,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6}ⲁⲍⲱⲁⲙⲧⲉ ⲙⲡⲗⲏⲅⲏ ⲉⲧⲁⲧⲉⲍⲟ ⲡⲭⲁⲭⲉ ⲡⲉ ⲡⲣⲁⲟ̄ⲱⲗ",
-      "core_english": "{7}The Third Plague that strikes the Enemy is the carrying-off",
+      "core_coptic": "{3}ⲁⲍⲱⲁⲙⲧⲉ ⲙⲡⲗⲏⲅⲏ ⲉⲧⲁⲧⲉⲍⲟ ⲡⲭⲁⲭⲉ ⲡⲉ ⲡⲣⲁⲟ̄ⲱⲗ",
+      "core_english": "{3}The Third Plague that strikes the Enemy is the carrying-off",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "Ⲧⲙ̄",
+          "english": "The",
+          "basis": "Editor restores [Ⲧⲙ̄]ⲁⲍⲱⲁⲙⲧⲉ = ⲧⲙⲁⲍⲱⲁⲙⲧⲉ 'the third (fem.).' Standard enlarged initial.",
+          "source_id": 5,
+          "section": 2409
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third enumeration marker — substrate structure."
     },
@@ -162,8 +221,20 @@
       "chapter": 41,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲍⲁⲏ ⲉⲧⲟⲩⲛⲁⲡⲱⲣⲭ ⲍⲱⲃ ⲛⲓⲙ ⲁⲃⲁⲗ ⲛ̄ⲥⲉⲡⲱⲣⲭ ⲡⲍⲁⲩⲧ",
-      "core_english": "{9} of the last (era), when they shall separate every thing forth, and they shall separate the male",
+      "core_coptic": "{4}ⲍⲁⲏ ⲉⲧⲟⲩⲛⲁⲡⲱⲣⲭ ⲍⲱⲃ ⲛⲓⲙ ⲁⲃⲁⲗ ⲛ̄ⲥⲉⲡⲱⲣⲭ ⲡⲍⲁⲩⲧ",
+      "core_english": "{4} of the last (era), when they shall separate every thing forth, and they shall separate the male",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲛⲧ",
+          "english": "of",
+          "basis": "Editor restores [ⲛⲧ]ⲍⲁⲏ = ⲛ̄-ⲧ-ⲍⲁⲏ 'of the last (era/one).'",
+          "source_id": 6,
+          "section": 2410
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eschatological separation."
     },
@@ -172,8 +243,20 @@
       "chapter": 41,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲍⲓⲙⲉ Ⲧ̄Ⲧⲍⲁⲩⲧ ⲙⲉⲛ ⲥⲉⲛⲁⲙⲁⲣϩ ⲍⲙ̄ ⲡⲃⲱⲗⲟⲥ ⲧⲥⲍⲓ-",
-      "core_english": "{11}the female. The male, indeed, they shall bind in the bōlos; the fe-",
+      "core_coptic": "{5}ⲍⲓⲙⲉ Ⲧ̄Ⲧⲍⲁⲩⲧ ⲙⲉⲛ ⲥⲉⲛⲁⲙⲁⲣϩ ⲍⲙ̄ ⲡⲃⲱⲗⲟⲥ ⲧⲥⲍⲓ-",
+      "core_english": "{5}the female. The male, indeed, they shall bind in the bōlos; the fe-",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲁⲧⲥ",
+          "english": "from the",
+          "basis": "Editor restores [ⲁⲧⲥ]ⲍⲓⲙⲉ = ⲁ-ⲧ-ⲥⲍⲓⲙⲉ 'from the female' completing the male/female contrast.",
+          "source_id": 7,
+          "section": 2411
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Bolos — cosmic prison."
     },
@@ -182,8 +265,40 @@
       "chapter": 41,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲱⲱⲥ ⲛ{13} ⲁ{14}ⲟⲩⲛ ⲁⲡⲧⲁⲫⲟⲥ Ⲥⲉⲛⲁⲡⲧⲁⲱϩ ⲅⲁⲣ",
-      "core_english": "{15}, also, shall be {16} in{17}ward to the tomb. For they shall reach",
+      "core_coptic": "{6}ⲱⲱⲥ ⲛ{7} ⲁ{8}ⲟⲩⲛ ⲁⲡⲧⲁⲫⲟⲥ Ⲥⲉⲛⲁⲡⲧⲁⲱϩ ⲅⲁⲣ",
+      "core_english": "{6}, also, shall be {7} in{8}ward to the tomb. For they shall reach",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲙⲉ ⲍ",
+          "english": "-male, also,",
+          "basis": "Editor restores [ⲙⲉ ⲍ]ⲱⲱⲥ completing ⲧⲥⲍⲓ-ⲙⲉ ⲍⲱⲱⲥ 'the female, herself/also' from the line break.",
+          "source_id": 8,
+          "section": 2412
+        },
+        {
+          "id": 7,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲁⲛⲟⲩⲭⲉ",
+          "english": "cast",
+          "basis": "Editor restores ⲛ[ⲁⲛⲟⲩⲭⲉ] = ⲛⲁ-ⲛⲟⲩⲭⲉ 'shall be cast' (ⲛⲟⲩϫⲉ 'throw, cast').",
+          "source_id": 9,
+          "section": 2412
+        },
+        {
+          "id": 8,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "-w-",
+          "basis": "Editor restores ⲁ[ⲍ]ⲟⲩⲛ = ⲁⲍⲟⲩⲛ 'inward' (Lyc. ⲁϩⲟⲩⲛ).",
+          "source_id": 10,
+          "section": 2412
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tomb — cosmic punishment site."
     },
@@ -192,8 +307,18 @@
       "chapter": 41,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲛ̄ⲱⲛⲉ ⲍⲛ̄ ⲧⲟⲩⲙⲏⲧⲉ ⲱⲁ ⲅⲉⲛⲉ-",
-      "core_english": "{19} of stone in their midst, unto generation",
+      "core_coptic": "{9} ⲛ̄ⲱⲛⲉ ⲍⲛ̄ ⲧⲟⲩⲙⲏⲧⲉ ⲱⲁ ⲅⲉⲛⲉ-",
+      "core_english": "{9} of stone in their midst, unto generation",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 11,
+          "section": 2413
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic stone bond."
     },
@@ -202,8 +327,20 @@
       "chapter": 41,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ⲁⲛⲏⲍⲉ̄",
-      "core_english": "{21} ever.",
+      "core_coptic": "{10}ⲁⲛⲏⲍⲉ̄",
+      "core_english": "{10} ever.",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲁ ⲅⲉⲛⲉⲁ ⲱⲁ ⲁⲛⲏⲍⲉ ⲛ",
+          "english": "unto generation, forever and",
+          "basis": "Editor restores the standard doxological formula ⲱⲁ ⲅⲉⲛⲉⲁ ⲁ ⲅⲉⲛⲉⲁ ⲱⲁ ⲁⲛⲏⲍⲉ ⲛⲁⲛⲏⲍⲉ̄ 'unto generation of generation, forever and ever' (see glossary entry ϣⲁⲁⲛⲏⲍⲉ ⲛⲛⲁⲛⲏⲍⲉ).",
+          "source_id": 12,
+          "section": 2414
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eternal bond."
     },
@@ -212,8 +349,20 @@
       "chapter": 41,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧ̄ⲍⲉ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲥⲛⲁϣⲱⲧⲉ ⲛⲭⲓ ⲧⲙⲡ̄ⲣⲉ ⲙⲡⲧⲭⲁⲭⲉ ⲍⲛ̄ ⲟⲩⲙⲡ̄{22}",
-      "core_english": "Such is the manner in which the fruit of the Enemy shall come to be in a heav{23}",
+      "core_coptic": "ⲧ̄ⲍⲉ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲥⲛⲁϣⲱⲧⲉ ⲛⲭⲓ ⲧⲙⲡ̄ⲣⲉ ⲙⲡⲧⲭⲁⲭⲉ ⲍⲛ̄ ⲟⲩⲙⲡ̄{11}",
+      "core_english": "Such is the manner in which the fruit of the Enemy shall come to be in a heav{11}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲡⲉ",
+          "english": "-en",
+          "basis": "completion of ⲟⲩⲙⲡ̄- as ⲟⲩⲙⲡⲏⲩⲉ/ⲡⲉ 'a heaven'; continues into line 2",
+          "source_id": 13,
+          "section": 2415
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Summary of cosmic outcome — fruit of the Enemy."
     },
@@ -223,7 +372,8 @@
       "line": 24,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲉⲥⲍⲁⲥⲉ ⲉⲥⲛⲁϣⲧ ⲧⲉⲧⲉ ⲙⲛ ⲧⲟ̄ⲓⲛ̄ⲃⲱⲗ ⲁⲃⲁⲗ ϣⲟⲟⲡ ⲛ̄",
-      "core_english": "{24}en, bitter and hard, in which there is no dissolution forth, existing in",
+      "core_english": "{11}en, bitter and hard, in which there is no dissolution forth, existing in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic state — irrevocable."
     },
@@ -232,8 +382,20 @@
       "chapter": 41,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲏⲧⲥ ⲁⲛⲏⲍⲉ ⲁⲗⲗⲁ {25} ⲙ̄ⲙⲁⲡϩ ⲁⲩⲙⲁⲡϥ̄ ϣⲁ ⲁⲛⲏⲍⲉ",
-      "core_english": "her forever; but {26} him with splittings, they have split him forever;",
+      "core_coptic": "ⲍⲏⲧⲥ ⲁⲛⲏⲍⲉ ⲁⲗⲗⲁ {12} ⲙ̄ⲙⲁⲡϩ ⲁⲩⲙⲁⲡϥ̄ ϣⲁ ⲁⲛⲏⲍⲉ",
+      "core_english": "her forever; but {12} him with splittings, they have split him forever;",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲁⲩⲡⲍ",
+          "english": "they have split",
+          "basis": "editor's bracketed restoration; verb parallel to ⲁⲩⲡⲍ in line 4 (uncontested); ⲡⲍ likely Lyc. reflex of ⲡⲱϩ 'split, divide' with ⲍ for ϩ; cognate object ⲙⲁⲡϩ confirms verbal-noun pairing",
+          "source_id": 14,
+          "section": 2417
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eternal cosmic outcome."
     },
@@ -244,6 +406,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲡⲍ ⲛⲡⲁⲣⲭϩ ⲁⲃⲁⲗ ⲁⲩⲡⲁⲣⲭϥ̄ ⲁⲃⲁⲗ ϣⲁ ⲁⲛⲏⲍⲉ",
       "core_english": "they have split him with separations forth, they have separated him forth forever.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closure of substrate teaching about the Enemy's fate."
     }

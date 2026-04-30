@@ -5,7 +5,7 @@
   "start_section": 5119,
   "end_section": 5134,
   "total_sections": 16,
-  "total_lacunae": 26,
+  "total_lacunae": 13,
   "segments": [
     {
       "section": 5119,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲧⲃⲗⲃⲓⲗⲉ ⲛⲃⲣⲉ ⲉⲧⲉϣⲁⲩ",
       "core_english": "Concerning the new grain that they habitually",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter title preserving the substantive cosmological topic — grain formed and destroyed by the elements."
     },
@@ -23,7 +24,29 @@
       "line": 2,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲏ   ⲙⲁⲁⲛⲕⲟ̈ ⲍⲛ̄ ⲛⲥⲧⲟⲓⲭⲉⲓⲟⲛ {0}   {1}",
-      "core_english": "✦   mold in the elements {2}   {3}",
+      "core_english": "✦   mold in the elements {0}   {1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "and",
+          "basis": "connector between the two relative clauses ⲉⲧⲉϣⲁⲩⲙⲁⲁⲛⲕⲟ̈ and ⲥⲉⲧⲉⲕⲁⲥ ⲁⲛ",
+          "source_id": 0,
+          "section": 5120
+        },
+        {
+          "id": 1,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲣⲏ",
+          "english": "✦",
+          "basis": "decorative ⲣⲏ marker matching the others on lines 14 and 16; ornamental",
+          "source_id": 1,
+          "section": 5120
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of title — molding in the elements is core cosmological topic."
     },
@@ -34,6 +57,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲧⲉⲕⲁⲥ ⲁⲛ ⲍⲓⲧⲟⲟⲧⲟⲩ",
       "core_english": "and they also destroy it through them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title closes the cosmological dyad: form and destroy through the elements."
     },
@@ -42,8 +66,19 @@
       "chapter": 108,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲓ̈ⲱⲧ ⲉⲧⲉⲧⲛ̄ⲛⲉⲩ ⲁⲣⲁⲥ ⲉϣⲁⲩⲙⲁⲁⲛⲕⲟ̈ ⲛ̄ⲥⲉ {4} ⲛ̄",
-      "core_english": "barley which you see — they are habitually molded and they {5}",
+      "core_coptic": "ⲓ̈ⲱⲧ ⲉⲧⲉⲧⲛ̄ⲛⲉⲩ ⲁⲣⲁⲥ ⲉϣⲁⲩⲙⲁⲁⲛⲕⲟ̈ ⲛ̄ⲥⲉ {2} ⲛ̄",
+      "core_english": "barley which you see — they are habitually molded and they {2}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": ". [. .]",
+          "source_id": 3,
+          "section": 5122
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Grain molded by the elements — cosmos→cosmos correspondence."
     },
@@ -52,8 +87,20 @@
       "chapter": 108,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲉⲧⲥⲁⲓ̈ⲁⲥ ⲍⲙ̄ ⲡⲓ+ⲟⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ϣⲁⲣⲉ ⲡⲍ{6}ⲙ",
-      "core_english": "adorn it in the five elements; the {7}heat",
+      "core_coptic": "ⲥⲉⲧⲥⲁⲓ̈ⲁⲥ ⲍⲙ̄ ⲡⲓ+ⲟⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ϣⲁⲣⲉ ⲡⲍ{3}ⲙ",
+      "core_english": "adorn it in the five elements; the {3}heat",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙⲁ",
+          "english": "",
+          "basis": "completes ⲡⲍⲙⲁⲙ 'the heat' (in glossary) — visible ⲡⲍ at end and ⲙ at start of next line, with ⲙⲁ in middle",
+          "source_id": 4,
+          "section": 5123
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five elements adorning the grain — substrate cosmological mapping."
     },
@@ -62,8 +109,20 @@
       "chapter": 108,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲙⲱϩ ⲙⲛ ⲡⲁⲣⲁϣ ⲥⲁⲛⲟⲩϣ +ⲃⲗⲃⲓⲗⲉ ⲛⲃⲣⲉ ⲙⲛ ⲡ",
-      "core_english": "{9}warms, and the cold nourishes the new grain and the",
+      "core_coptic": "{4}ⲙⲱϩ ⲙⲛ ⲡⲁⲣⲁϣ ⲥⲁⲛⲟⲩϣ +ⲃⲗⲃⲓⲗⲉ ⲛⲃⲣⲉ ⲙⲛ ⲡ",
+      "core_english": "{4}warms, and the cold nourishes the new grain and the",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "",
+          "basis": "single-letter restoration at line start; ⲍⲙⲱϩ likely Lyc. verb 'warms/is hot' (cf. ⲍⲙⲁⲙ 'heat,' ϩⲙⲟⲙ 'be hot') paired antithetically with ⲡⲁⲣⲁϣ 'cold' as the elemental heat-cold dyad",
+          "source_id": 5,
+          "section": 5124
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heat/cold dyad nourishing the grain — elemental correspondence."
     },
@@ -72,8 +131,20 @@
       "chapter": 108,
       "line": 9,
       "classification": "mixed",
-      "core_coptic": "{10}ⲏⲛ ⲧⲏⲣϥ̄",
-      "core_english": "{11}whole tree.",
+      "core_coptic": "{5}ⲏⲛ ⲧⲏⲣϥ̄",
+      "core_english": "{5}whole tree.",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "",
+          "basis": "completes ⲡϣⲏⲛ 'the tree' — agricultural register fits the new-grain parable",
+          "source_id": 6,
+          "section": 5125
+        }
+      ],
       "removed_material": "'Likewise then, these whom they have nourished' is the hinge to ecclesial application.",
       "temporal_note": "Closes the cosmological description of grain/tree, then pivots with 'Tⲍⲉ ⲟⲩⲛ' (Likewise then) to application."
     },
@@ -84,6 +155,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲟⲩⲍⲕⲟ",
       "core_english": "of a hunger.",
+      "apparatus": [],
       "removed_material": "'Likewise also is righteousness' opens the ecclesial application stretch.",
       "temporal_note": "Closes cosmological cause (hunger), pivots to 'Likewise also is righteousness' — explicit ecclesial application opener."
     },
@@ -94,6 +166,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲧⲁ ⲙⲛ ⲟⲩⲃⲱⲭⲃⲉ ϣⲱⲧⲉ ⲕⲁⲧⲁ ⲙⲁ ⲙⲁ ϩⲓⲧⲟ",
       "core_english": "Lack with a diminishment comes to be place by place through",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lack and diminishment as cosmic process — substrate causation language."
     },
@@ -104,6 +177,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉϣⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ ϣⲱⲧⲉ ⲛⲉⲥ",
       "core_english": "An affliction comes to be for her",
+      "apparatus": [],
       "removed_material": "Preceding 'they reached her' completes ecclesial reference; affliction-clause begins return to cosmological process.",
       "temporal_note": "Pivot back from ecclesial application to cosmic affliction language."
     },
@@ -112,8 +186,30 @@
       "chapter": 108,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲟⲧⲟⲩ ⲛ̄ⲛⲏ ⲉⲧⲙⲙⲉⲩ. ⲉϣⲁⲣⲉ ⲛⲣⲱⲙⲉ ⲁⲛ ⲥⲕⲁ{13}",
-      "core_english": "{14}-ugh those. The men also habitually stum-{15}",
+      "core_coptic": "{6}ⲟⲧⲟⲩ ⲛ̄ⲛⲏ ⲉⲧⲙⲙⲉⲩ. ⲉϣⲁⲣⲉ ⲛⲣⲱⲙⲉ ⲁⲛ ⲥⲕⲁ{7}",
+      "core_english": "{6}-ugh those. The men also habitually stum-{7}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲧⲟ",
+          "english": "-ugh",
+          "basis": "ϩⲓ|[ⲧⲟ]ⲟⲧⲟⲩ = ϩⲓⲧⲟⲟⲧⲟⲩ 'through them' — same compound preposition pattern as line 2",
+          "source_id": 21,
+          "section": 5129
+        },
+        {
+          "id": 7,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "stum-",
+          "basis": "ⲥⲕⲁ[ⲛ]|[ⲁⲁ]ⲗⲓⲍⲉ = Lyc form of Greek σκανδαλίζειν 'stumble, take offense' (in glossary). The split ⲥⲕⲁⲛ-ⲁⲁⲗⲓⲍⲉ reflects Lyc -ⲁⲁ- for Greek -δα-",
+          "source_id": 22,
+          "section": 5129
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Men stumbling through cosmic forces — cosmological causation."
     },
@@ -122,8 +218,20 @@
       "chapter": 108,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲗⲓⲍⲉ ⲛ̄ⲧⲟⲩⲗⲁⲓⲃⲉ ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲛ̄ⲧϩⲩⲗⲏ",
-      "core_english": "{17}-ble and become mad through the energeia of Hyle",
+      "core_coptic": "{8}ⲗⲓⲍⲉ ⲛ̄ⲧⲟⲩⲗⲁⲓⲃⲉ ϩⲓⲧⲛ̄ ⲧⲉⲛⲉⲣⲅⲓⲁ ⲛ̄ⲧϩⲩⲗⲏ",
+      "core_english": "{8}-ble and become mad through the energeia of Hyle",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲁⲁ",
+          "english": "-ble",
+          "basis": "Continuation of ⲥⲕⲁⲛⲇⲁⲗⲓⲍⲉ from previous line — Lyc orthography ⲥⲕⲁⲛⲁⲁⲗⲓⲍⲉ",
+          "source_id": 23,
+          "section": 5130
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Hyle (ϩⲩⲗⲏ) and her energeia — core cosmological substrate vocabulary."
     },
@@ -132,8 +240,20 @@
       "chapter": 108,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲩⲛⲏϩ ⲛ̄ϩⲏⲧⲟⲩ. ⲧⲉⲧⲁⲥⲕⲁⲧⲁⲕⲗⲩⲍⲉ ⲁⲭⲱⲩ ⲛ̄",
-      "core_english": "{19}-which dwells in them, who has inundated upon them with",
+      "core_coptic": "{9}ⲩⲛⲏϩ ⲛ̄ϩⲏⲧⲟⲩ. ⲧⲉⲧⲁⲥⲕⲁⲧⲁⲕⲗⲩⲍⲉ ⲁⲭⲱⲩ ⲛ̄",
+      "core_english": "{9}-which dwells in them, who has inundated upon them with",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲟ",
+          "english": "which d-",
+          "basis": "[ⲉⲧⲟ]ⲩⲛⲏϩ = ⲉⲧⲟⲩⲛⲏϩ 'which dwells' — relative qualitative of ⲟⲩⲱϩ 'dwell, abide' modifying ⲧϩⲩⲗⲏ",
+          "source_id": 24,
+          "section": 5131
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Hyle inundating — cosmic action language."
     },
@@ -142,8 +262,20 @@
       "chapter": 108,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}ϩⲁⲓⲃⲉⲥ. ⲧϩⲉ ⲁⲛ ⲉⲧⲉϣⲁⲥⲕⲁⲧⲁⲕⲗⲩⲍⲉ ⲛ̄ⲧⲉⲥ",
-      "core_english": "{21} shadow. The manner also in which she habitually inundates her",
+      "core_coptic": "{10}ϩⲁⲓⲃⲉⲥ. ⲧϩⲉ ⲁⲛ ⲉⲧⲉϣⲁⲥⲕⲁⲧⲁⲕⲗⲩⲍⲉ ⲛ̄ⲧⲉⲥ",
+      "core_english": "{10} shadow. The manner also in which she habitually inundates her",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲧⲉⲥ",
+          "english": "her",
+          "basis": "[ⲧⲉⲥ]ϩⲁⲓⲃⲉⲥ 'her shadow' — feminine possessive prefix on ϩⲁⲓⲃⲉⲥ. Confirmed by parallel ⲛ̄ⲧⲉⲥ-|[ϩⲁⲓⲃ]ⲉⲥ in next line",
+          "source_id": 25,
+          "section": 5132
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Shadow as cosmic agent — substrate."
     },
@@ -152,8 +284,20 @@
       "chapter": 108,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22}ⲉⲥ ⲁⲭⲛ̄ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛ̄ⲥⲧⲉⲕⲟ ⲛ̄ⲛ̄ⲕⲁⲣⲡⲟⲥ",
-      "core_english": "{23}-shadow upon the elements and destroys the fruits",
+      "core_coptic": "{11}ⲉⲥ ⲁⲭⲛ̄ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛ̄ⲥⲧⲉⲕⲟ ⲛ̄ⲛ̄ⲕⲁⲣⲡⲟⲥ",
+      "core_english": "{11}-shadow upon the elements and destroys the fruits",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ϩⲁⲓⲃ",
+          "english": "sh-",
+          "basis": "ⲛ̄ⲧⲉⲥ|[ϩⲁⲓⲃ]ⲉⲥ 'her shadow' — same word ⲡⲉⲥϩⲁⲓⲃⲉⲥ as previous line, here split across the line break",
+          "source_id": 26,
+          "section": 5133
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Shadow upon elements destroys fruits — cosmos→cosmos correspondence."
     },
@@ -162,8 +306,20 @@
       "chapter": 108,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} ⲛ̄ϣⲏⲛ ⲧⲏⲣⲟⲩ : —",
-      "core_english": "{25} all the trees : —",
+      "core_coptic": "{12} ⲛ̄ϣⲏⲛ ⲧⲏⲣⲟⲩ : —",
+      "core_english": "{12} all the trees : —",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲉ",
+          "english": "of",
+          "basis": "ⲛ̄ⲕⲁⲣⲡⲟⲥ [ⲛⲧⲉ] ⲛϣⲏⲛ ⲧⲏⲣⲟⲩ = 'fruits of all the trees' — standard genitive ⲛⲧⲉ",
+          "source_id": 27,
+          "section": 5134
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes the cosmological description with 'all the trees'."
     }

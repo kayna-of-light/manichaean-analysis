@@ -5,7 +5,7 @@
   "start_section": 3713,
   "end_section": 3758,
   "total_sections": 46,
-  "total_lacunae": 84,
+  "total_lacunae": 42,
   "segments": [
     {
       "section": 3713,
@@ -13,7 +13,29 @@
       "line": 1,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲝ̄ {0} ⲡϩ̄ⲧⲁⲩ ⲛ̄{1}ⲱⲧ ⲝ̄",
-      "core_english": "ⲝ̄ {2} the Four {3}ⲱⲧ ⲝ̄",
+      "core_english": "ⲝ̄ {0} the Four {1}ⲱⲧ ⲝ̄",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲃⲉ",
+          "english": "Concerning",
+          "basis": "Standard chapter heading formula ⲉⲧⲃⲉ + topic; only ⲉ visible at end.",
+          "source_id": 0,
+          "section": 3713
+        },
+        {
+          "id": 1,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "fathers (?)",
+          "basis": "Tentatively restored as ⲛⲓⲱⲧ 'fathers'; ⲡϩⲧⲁⲩ ⲛⲓⲱⲧ 'the four fathers' fits the heading formula. Only the final ⲱⲧ is preserved. Confidence low — the four-fathers grouping is unusual in Manichaean cosmology (the five Fathers are standard); could alternatively be a different word ending in -ⲱⲧ.",
+          "source_id": 1,
+          "section": 3713
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Chapter title naming the Four Fathers — substrate teaching topic."
     },
@@ -22,8 +44,29 @@
       "chapter": 60,
       "line": 2,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲝ̄ {4} ⲉⲩⲉⲓⲛⲉ ⲛ̄ⲉⲩ{5} ⲝ̄",
-      "core_english": "ⲝ̄ {6} they being a likeness of {7} ⲝ̄",
+      "core_coptic": "ⲝ̄ {2} ⲉⲩⲉⲓⲛⲉ ⲛ̄ⲉⲩ{3} ⲝ̄",
+      "core_english": "ⲝ̄ {2} they being a likeness of {3} ⲝ̄",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲭⲉ",
+          "english": "that",
+          "basis": "Standard ϫⲉ-clause introducer following ⲉⲧⲃⲉ-heading. Lyc. ⲭⲉ for ϫⲉ.",
+          "source_id": 2,
+          "section": 3714
+        },
+        {
+          "id": 3,
+          "segment": 2,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "title continues into space lost; ⲛ̄ⲉⲩ at break suggests genitive complement ('of...')",
+          "source_id": 3,
+          "section": 3714
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Title continuation — 'a likeness of' indicates correspondential teaching."
     },
@@ -32,8 +75,30 @@
       "chapter": 60,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲡⲣ{8}ⲧⲉ {9}ⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲭⲉ ⲟⲩⲛ̄ ⲍⲙⲙⲉⲗⲟⲥ",
-      "core_english": "In the man{10}r of {11}body of the flesh, that there are members",
+      "core_coptic": "ⲙ̄ⲡⲣ{4}ⲧⲉ {5}ⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲭⲉ ⲟⲩⲛ̄ ⲍⲙⲙⲉⲗⲟⲥ",
+      "core_english": "In the man{4}r of {5}body of the flesh, that there are members",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "n- (vowel in ⲡⲣⲏⲧⲉ 'manner')",
+          "basis": "ⲡⲣⲏⲧⲉ 'manner' (in accumulated vocabulary).",
+          "source_id": 5,
+          "section": 3715
+        },
+        {
+          "id": 5,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲙⲡ",
+          "english": "the",
+          "basis": "Genitive construction ⲙ̄ⲡⲥⲱⲙⲁ 'of the body.'",
+          "source_id": 6,
+          "section": 3715
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Opens correspondential simile: body of flesh has hidden and manifest members."
     },
@@ -42,8 +107,30 @@
       "chapter": 60,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲍⲏⲧϥ̄ ⲉⲧⲍⲏⲡ ⲟⲩⲛ ⲍⲛ̄ⲕⲉⲕⲁⲩⲉ ⲛⲍⲏⲧϥ̄ ⲉⲩⲟⲁⲗ{12} ⲁⲃⲁⲗ {13}",
-      "core_english": "in it which are hidden, and there are others in it which are reveal{14}ed forth, {15}",
+      "core_coptic": "ⲛⲍⲏⲧϥ̄ ⲉⲧⲍⲏⲡ ⲟⲩⲛ ⲍⲛ̄ⲕⲉⲕⲁⲩⲉ ⲛⲍⲏⲧϥ̄ ⲉⲩⲟⲁⲗ{6} ⲁⲃⲁⲗ {7}",
+      "core_english": "in it which are hidden, and there are others in it which are reveal{6}ed forth, {7}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "(ending of ⲟⲩⲱⲗⲡ̄ 'reveal')",
+          "basis": "ⲟⲩⲱⲗⲡ̄ ⲁⲃⲁⲗ 'reveal forth'; only final ⲡ lost.",
+          "source_id": 7,
+          "section": 3716
+        },
+        {
+          "id": 7,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "they being",
+          "basis": "Continues into ⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ 'manifest forth' on next line; the circumstantial ⲉⲩ- 'they being' is required.",
+          "source_id": 8,
+          "section": 3716
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues hidden/revealed distinction."
     },
@@ -52,8 +139,20 @@
       "chapter": 60,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩ{16} ⲛⲍⲏⲧϥ̄ ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁⲩ ⲉⲩⲭⲓ ϣⲟⲁ ⲍⲓ ⲡⲗⲏ-",
-      "core_english": "{17} in it, being touched, receiving honor in ful-",
+      "core_coptic": "ⲟⲩ{8} ⲛⲍⲏⲧϥ̄ ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁⲩ ⲉⲩⲭⲓ ϣⲟⲁ ⲍⲓ ⲡⲗⲏ-",
+      "core_english": "{8} in it, being touched, receiving honor in ful-",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲁⲛⲍ ⲁⲃⲁⲗ",
+          "english": "manifest forth",
+          "basis": "ⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ 'be manifest forth' (cf. ⲟⲩⲱⲛϩ ⲁⲃⲁⲗ in glossary). Continues from ⲟⲩ at start of line 11.",
+          "source_id": 9,
+          "section": 3717
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued substrate description."
     },
@@ -62,8 +161,40 @@
       "chapter": 60,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲏ ⲟⲩⲛ {19}ⲉⲕⲁⲩⲉ ⲛ̄ⲍⲏⲧϥ̄ ⲉⲙⲁⲩⲟⲙⲟ̄ⲙⲟⲩ ⲟⲩⲧ{20} ⲙⲁⲩ-",
-      "core_english": "-{21}lness. There are also {22}others in it which are not touched, nor{23} do they-",
+      "core_coptic": "{9}ⲏ ⲟⲩⲛ {10}ⲉⲕⲁⲩⲉ ⲛ̄ⲍⲏⲧϥ̄ ⲉⲙⲁⲩⲟⲙⲟ̄ⲙⲟⲩ ⲟⲩⲧ{11} ⲙⲁⲩ-",
+      "core_english": "-{9}lness. There are also {10}others in it which are not touched, nor{11} do they-",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "l- (in -ⲡⲗⲏⲣⲏ 'fullness')",
+          "basis": "ⲡⲗⲏⲣⲏ (πλήρης 'full/fullness') split across line break ⲡⲗⲏ-ⲣⲏ; single ⲣ restored.",
+          "source_id": 10,
+          "section": 3718
+        },
+        {
+          "id": 10,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲍⲛⲕ",
+          "english": "(in ⲍⲛⲕⲉⲕⲁⲩⲉ 'others')",
+          "basis": "Standard Coptic ϩⲛ̄-ⲕⲉ-ⲕⲁⲩⲉ 'some others'; Lyc. ⲍ for ϩ. Three letters restored.",
+          "source_id": 11,
+          "section": 3718
+        },
+        {
+          "id": 11,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(letter completing ⲟⲩⲧⲉ 'nor')",
+          "basis": "Greek loanword οὔτε; only final ⲉ lost.",
+          "source_id": 12,
+          "section": 3718
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Members not touched contrast."
     },
@@ -72,8 +203,20 @@
       "chapter": 60,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} ϣⲟⲁ ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲉⲣⲉ †ⲙⲛⲧⲛⲁⲟ̄ ⲧⲏⲣⲥ̄",
-      "core_english": "{25} honor — thus also is this, in which the entire Greatness",
+      "core_coptic": "{12} ϣⲟⲁ ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲉⲣⲉ †ⲙⲛⲧⲛⲁⲟ̄ ⲧⲏⲣⲥ̄",
+      "core_english": "{12} honor — thus also is this, in which the entire Greatness",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲭⲓ",
+          "english": "receive",
+          "basis": "ⲭⲓ ϣⲟⲁ 'receive honor' is the formula recurring at lines 11, 13, 17, 30-31. The verb ⲭⲓ continues from ⲙⲁⲩ- at end of line 12 ('they do not'). Cf. ϫⲓ ϣⲁⲩ in standard Coptic.",
+          "source_id": 13,
+          "section": 3719
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pivot to cosmic correspondent: the entire Greatness."
     },
@@ -82,8 +225,20 @@
       "chapter": 60,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲧⲉⲛ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲙⲙⲁⲥ {26}ⲛ̄ ⲟⲩⲁⲛ ⲛ̄ⲍⲏⲧⲥ ⲉϩⲍⲏⲡ",
-      "core_english": "we liken her: {27}there is one in her hidden,",
+      "core_coptic": "ⲛ̄ⲧⲉⲛ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲙⲙⲁⲥ {13}ⲛ̄ ⲟⲩⲁⲛ ⲛ̄ⲍⲏⲧⲥ ⲉϩⲍⲏⲡ",
+      "core_english": "we liken her: {13}there is one in her hidden,",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "there is",
+          "basis": "Standard existential ⲟⲩⲛ̄ 'there is' opening parallel clauses (cf. line 15). Two letters restored.",
+          "source_id": 14,
+          "section": 3720
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Explicit correspondential 'we liken'."
     },
@@ -92,8 +247,20 @@
       "chapter": 60,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲛ̄ ⲟⲩⲁⲛ ⲁⲛ ⲉϩⲟⲁⲗⲡ ⲁⲃⲁⲗ {28}ⲛ̄ ⲟⲩⲁⲛ ⲛ̄ⲍⲏⲧⲥ ⲉϩⲟⲩ-",
-      "core_english": "there is also one revealed forth, {29}there is one in her be-",
+      "core_coptic": "ⲟⲩⲛ̄ ⲟⲩⲁⲛ ⲁⲛ ⲉϩⲟⲁⲗⲡ ⲁⲃⲁⲗ {14}ⲛ̄ ⲟⲩⲁⲛ ⲛ̄ⲍⲏⲧⲥ ⲉϩⲟⲩ-",
+      "core_english": "there is also one revealed forth, {14}there is one in her be-",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "there is",
+          "basis": "Same as previous: existential ⲟⲩⲛ̄ in parallel construction.",
+          "source_id": 15,
+          "section": 3721
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enumeration of aspects of the Greatness."
     },
@@ -102,8 +269,30 @@
       "chapter": 60,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲏⲩ ⲁⲃⲁⲗ ⲙ̄ⲡϣⲟⲁ ⲙ̄ⲡ{30}ⲥⲉ ⲟⲩ{31} ⲟⲩⲁⲛ ⲁⲛ ⲛ̄ⲍⲏⲧⲥ̄ ⲉϩ-",
-      "core_english": "-ing far forth from the honor of the {32}Height; there {33}is also one in her re-",
+      "core_coptic": "ⲏⲩ ⲁⲃⲁⲗ ⲙ̄ⲡϣⲟⲁ ⲙ̄ⲡ{15}ⲥⲉ ⲟⲩ{16} ⲟⲩⲁⲛ ⲁⲛ ⲛ̄ⲍⲏⲧⲥ̄ ⲉϩ-",
+      "core_english": "-ing far forth from the honor of the {15}Height; there {16}is also one in her re-",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲭ",
+          "english": "(in ⲡⲭⲥⲉ 'the Height')",
+          "basis": "ⲡⲭⲥⲉ 'the Height' (in glossary, Lyc. for ⲡϫⲓⲥⲉ); editor's transcription has ⲍ which may reflect Lyc. ⲍ-onset variant or scribal slip. The cosmological 'far from the honor of the Height' fits the schema of hidden vs. exalted members.",
+          "source_id": 16,
+          "section": 3722
+        },
+        {
+          "id": 16,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(letter completing ⲟⲩⲛ 'there is')",
+          "basis": "Single ⲛ to complete the existential ⲟⲩⲛ̄.",
+          "source_id": 17,
+          "section": 3722
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued enumeration."
     },
@@ -114,6 +303,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲓ ϣⲟⲁ ⲍⲓ ⲡⲗⲏⲣⲏ ⲙ̄ⲡⲣⲏⲧⲉ ⲟⲩⲛ ⲛⲧⲥⲃⲱ ⲙ̄ⲡⲥⲱ-",
       "core_english": "-ceiving honor in fullness. In the manner that the teaching of the bo-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "New simile begins: teaching of the body."
     },
@@ -122,8 +312,20 @@
       "chapter": 60,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁ ⲉⲧⲟⲩⲏⲍ ⲍⲓⲍⲟⲩⲛ ⲉⲥⲍⲏⲡ ⲍⲛ̄ ⲛ̄{34}ⲟⲛ ⲉⲧⲍⲓⲍⲟⲩⲛ",
-      "core_english": "-dy is set within, being hidden in the {35}storehouses which are within",
+      "core_coptic": "ⲙⲁ ⲉⲧⲟⲩⲏⲍ ⲍⲓⲍⲟⲩⲛ ⲉⲥⲍⲏⲡ ⲍⲛ̄ ⲛ̄{17}ⲟⲛ ⲉⲧⲍⲓⲍⲟⲩⲛ",
+      "core_english": "-dy is set within, being hidden in the {17}storehouses which are within",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲙⲓ",
+          "english": "stor-",
+          "basis": "ⲧⲁⲙⲓⲟⲛ 'storehouse, tabernacle' (in glossary as Greek ταμεῖον/ταμιεῖον). The Manichaean five storehouses correspond to the inner organs of the body in this passage's anatomical-cosmological correspondence. Three letters lost.",
+          "source_id": 18,
+          "section": 3724
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Storehouses (ⲧⲁⲙⲓⲟⲛ) terminology — substrate cosmology."
     },
@@ -134,6 +336,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲥⲱⲙⲁ ⲉⲥⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲛ ⲕⲁⲧⲁ ⲡⲓⲧⲁⲛⲧⲛ ⲧⲍⲉ ⲍⲱ-",
       "core_english": "the body, not being manifested forth — according to this comparison thus al-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Explicit 'according to this comparison'."
     },
@@ -144,6 +347,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧϥ̄ϣⲟⲟⲡ ⲙ̄ⲙⲁⲥ ⲛⲭⲓ ⲡⲓⲱⲧ ⲡⲛⲟⲩⲧⲉ ⲛ̄-",
       "core_english": "-so is this, in which exists the Father, the God of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic figure: Father, God of Truth."
     },
@@ -154,6 +358,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲧⲙⲏⲉ ϩⲍⲏⲡ ⲍⲱⲱϩ ⲍⲛ̄ ⲧⲉϩⲙⲛ̄ⲧⲣ̄ⲣⲟ ϩⲟⲩⲁⲛⲍ̄ ⲁ-",
       "core_english": "Truth, being himself hidden in his kingship, being mani-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Father hidden/manifest in his kingship."
     },
@@ -164,6 +369,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲁⲗ ⲉⲛ ⲛⲁⲍⲣⲛ̄ ⲡⲓⲙⲁⲛ̄ⲭⲁⲓ̈ⲉ ⲉⲧⲍⲓⲃⲁⲗ ⲙ̄ⲡⲣⲏⲧⲉ ⲍⲱϩ",
       "core_english": "-fested forth, not before this place of emptiness which is outside; in the manner thus al-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Place of emptiness outside — substrate cosmography."
     },
@@ -174,6 +380,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲃⲉⲗ ⲥⲛⲉⲩ ⲙ̄ⲡⲥⲱⲙⲁ ⲭⲉ ⲥⲉⲟⲁⲗⲡ ⲁⲃⲁⲗ ⲥⲉⲟⲩⲁⲛⲍ̄",
       "core_english": "-so of the two eyes of the body, that they are revealed forth, they are manifested",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Two eyes simile begins."
     },
@@ -184,6 +391,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲥⲉⲣ̄ⲡⲕⲉⲧⲣ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲁⲡⲥⲱⲙⲁ ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ",
       "core_english": "forth, they also do the giving-of-light to the body — thus also is",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Two eyes give light to body."
     },
@@ -192,8 +400,30 @@
       "chapter": 60,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲓ̈ ⲙ̄{36}ⲭⲁⲓ̈ ⲥⲛⲉⲩ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲛⲉⲡⲡⲣ̄{37}ⲉ ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁ-",
-      "core_english": "this — the {38}two ships of light, the Radian{39}ces which are manifested",
+      "core_coptic": "ⲧⲉⲓ̈ ⲙ̄{18}ⲭⲁⲓ̈ ⲥⲛⲉⲩ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲛⲉⲡⲡⲣ̄{19}ⲉ ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁ-",
+      "core_english": "this — the {18}two ships of light, the Radian{19}ces which are manifested",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Definite article ⲡ- before ⲭⲁⲓ̈ 'ship.'",
+          "source_id": 19,
+          "section": 3731
+        },
+        {
+          "id": 19,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲓ̈",
+          "english": "(in ⲡⲡⲣⲓ̈ⲉ 'Radiance')",
+          "basis": "ⲡⲡⲣⲓ̈ⲉ 'the Radiance' (in glossary), here in plural ⲛⲉⲡⲡⲣⲓ̈ⲉ 'the Radiances' as title of the sun-and-moon ships of light.",
+          "source_id": 20,
+          "section": 3731
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two ships of light — substrate cosmic luminaries (sun and moon)."
     },
@@ -204,6 +434,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲁⲗ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϥ̄ ⲙⲛ̄ ⲡⲥⲱⲛⲧ ⲧⲏⲣϥ̄ ⲉⲙⲡⲉ",
       "core_english": "forth in the whole world and the whole creation. They have not",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic correspondence."
     },
@@ -214,6 +445,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲍⲱⲡ ⲁⲛⲏⲍⲉ ⲟⲓⲣⲁⲩ ⲟⲓⲣⲟ ⲡⲃⲉⲗ ⲥⲛⲉⲩ ⲙ̄ⲡⲥⲱ-",
       "core_english": "had their light hidden ever — they are alike, alike to the two eyes of the bo-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eyes/ships analogy continuing."
     },
@@ -222,8 +454,20 @@
       "chapter": 60,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁ ⲉⲣⲉ ⲧ†ⲩⲭⲏ ⲍⲱϩ ⲉⲧⲁⲛⲍ̄ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲙ̄{40}ⲣⲏⲧⲉ",
-      "core_english": "-dy, while the soul also lives, being likened in the {41}manner",
+      "core_coptic": "ⲙⲁ ⲉⲣⲉ ⲧ†ⲩⲭⲏ ⲍⲱϩ ⲉⲧⲁⲛⲍ̄ ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲙ̄{20}ⲣⲏⲧⲉ",
+      "core_english": "-dy, while the soul also lives, being likened in the {20}manner",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Definite article ⲡ- before ⲣⲏⲧⲉ 'manner.'",
+          "source_id": 21,
+          "section": 3734
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living soul (ⲯⲩⲭⲏ ⲉⲧⲁⲛⲍ) — substrate term."
     },
@@ -234,6 +478,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲧⲁⲍⲉ ⲁⲣⲉⲧⲥ̄ ⲍⲛ̄ ⲟⲩⲕⲁⲣⲁⲓ̈ⲧϩ ⲉⲥⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲛ̄ ⲟⲩ-",
       "core_english": "in which she stands fast in stillness, being manifested forth in a",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Soul described in substrate register."
     },
@@ -242,8 +487,20 @@
       "chapter": 60,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42}ⲁⲣⲁⲓ̈ⲧϥ̄ ⲉⲥⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁⲥ ⲉⲥⲭⲓ ϣ-",
-      "core_english": "{43}stillness, being manifested forth, they touching her, she receiving ho-",
+      "core_coptic": "{21}ⲁⲣⲁⲓ̈ⲧϥ̄ ⲉⲥⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁⲥ ⲉⲥⲭⲓ ϣ-",
+      "core_english": "{21}stillness, being manifested forth, they touching her, she receiving ho-",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲕ",
+          "english": "(in ⲕⲁⲣⲁⲓⲧϥ̄ 'stillness')",
+          "basis": "ⲡⲕⲁⲣⲁⲓ̈ⲧϩ 'the Stillness' (in glossary). Single ⲕ restored at start of line.",
+          "source_id": 22,
+          "section": 3736
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued."
     },
@@ -254,6 +511,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲁ ⲛⲧⲟⲟⲧⲟⲩ ⲛ̄††ⲉ ⲛ̄ⲥⲁⲣⲝ̄ ⲛⲉⲧⲧⲉⲕⲟ ⲙ̄ⲙⲁⲥ ⲉⲩϣⲱ-",
       "core_english": "-nor from the hands of the parts of the flesh which destroy her, they af-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Parts of flesh destroying soul — substrate dualism."
     },
@@ -262,8 +520,30 @@
       "chapter": 60,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44}ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲕⲁⲧⲁ ⲡⲙⲩⲥⲧⲏⲣ{45}ⲟⲛ ⲙ̄ⲡⲥⲱⲙⲁ",
-      "core_english": "{46}being likened according to the myster{47}y of the body",
+      "core_coptic": "{22}ⲧⲛ̄ⲧⲁⲛⲧ̄ ⲕⲁⲧⲁ ⲡⲙⲩⲥⲧⲏⲣ{23}ⲟⲛ ⲙ̄ⲡⲥⲱⲙⲁ",
+      "core_english": "{22}being likened according to the myster{23}y of the body",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲟⲉ ⲙⲙⲁⲥ ⲉⲥ",
+          "english": "-flicting her, [she] being",
+          "basis": "Continues from ⲉⲩϣⲱ- at end of line 31. Tentatively read as ⲉⲩϣⲱⲟⲉ ⲙ̄ⲙⲁⲥ 'they afflicting her' parallel to the preceding ⲛⲉⲧⲧⲉⲕⲟ ⲙⲙⲁⲥ 'those who destroy her.' The ⲉⲥ- introduces a feminine circumstantial referring back to the soul (ⲧⲯⲩⲭⲏ).",
+          "source_id": 23,
+          "section": 3738
+        },
+        {
+          "id": 23,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "y (in -mystery)",
+          "basis": "Greek loan ⲙⲩⲥⲧⲏⲣⲓⲟⲛ; single ⲓ restored before ⲟⲛ at line break.",
+          "source_id": 24,
+          "section": 3738
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mystery of the body — correspondential framing."
     },
@@ -272,8 +552,20 @@
       "chapter": 60,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{48} ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁϩ ⲉⲩⲉⲙⲁⲍⲧⲉ ⲙ̄ⲙⲁϩ",
-      "core_english": "{49} they touching it, they grasping it",
+      "core_coptic": "{24} ⲉⲩⲟⲁⲙⲟ̄ⲙ̄ ⲁⲣⲁϩ ⲉⲩⲉⲙⲁⲍⲧⲉ ⲙ̄ⲙⲁϩ",
+      "core_english": "{24} they touching it, they grasping it",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲉ ⲧⲥⲁⲣⲝ̄",
+          "english": "of the flesh",
+          "basis": "Continues 'mystery of the body of the flesh' from previous line — the standard Manichaean term-pair ⲡⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ 'body of the flesh' recurs throughout the chapter (lines 9, 23, 31).",
+          "source_id": 25,
+          "section": 3739
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued."
     },
@@ -284,6 +576,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉϩⲭⲓ ϣ6ⲁ ⲍⲓ ⲡⲗⲏⲅⲏ",
       "core_english": "while receiving wound and plague.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Wound and plague of soul — substrate."
     },
@@ -294,6 +587,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲣⲏⲧⲉ ⲍⲱⲱϩ ⲙ̄",
       "core_english": "In the manner, likewise also, of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "New simile introduced."
     },
@@ -304,6 +598,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲗⲉⲥ ⲉⲧⲥⲉⲝⲉ ⲉϩⲧⲉⲟⲩⲟ ⲉϩⲭⲡⲓⲟ ⲉϩ6ⲱⲗⲡ ⲁⲃⲁⲗ",
       "core_english": "the tongue which speaks, proclaiming, reproving, revealing forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Tongue simile — body member that reveals forth."
     },
@@ -314,6 +609,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲁ ⲍⲱⲃ ⲛⲓⲙ ⲉϩϣⲟⲟⲡ ⲍⲙ̄ ⲡⲓⲥⲱⲙⲁ ⲉⲧϣⲟⲟⲡ ⲍⲓⲍ",
       "core_english": "concerning every matter that exists in this body, that exists upon",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continued."
     },
@@ -324,6 +620,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲗⲉⲥ ⲉⲧⲍⲓⲃⲁⲗ 6ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲁⲣⲁϩ ϩⲧⲉⲟⲩⲟ ⲁⲛ ⲍⲁ",
       "core_english": "the tongue which is outside, revealing forth concerning him, also proclaiming concerning",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Tongue revealing inner matters."
     },
@@ -334,6 +631,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲁⲩ ⲙ̄ⲛ ⲡϣⲱⲥ ⲙⲡⲥⲱⲙⲁ ⲛ̄ⲧⲁϩ ⲁⲉ ⲡⲉⲧⲥⲉⲝⲉ ⲉϩ",
       "core_english": "the glory and the shame of the body. He, however, who speaks",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continued."
     },
@@ -342,8 +640,30 @@
       "chapter": 60,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "6ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲁ ⲡⲙ̄ⲕⲁⲍ ⲙⲡⲥⲱⲙⲁ ⲉⲓⲧ{50}ⲱⲛⲉ {51}",
-      "core_english": "revealing forth concerning the pain of the body, or {52}sickness {53}",
+      "core_coptic": "6ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲁ ⲡⲙ̄ⲕⲁⲍ ⲙⲡⲥⲱⲙⲁ ⲉⲓⲧ{25}ⲱⲛⲉ {26}",
+      "core_english": "revealing forth concerning the pain of the body, or {25}sickness {26}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "(initial letter of 'sickness')",
+          "basis": "Editor restores ϣ to complete ϣⲱⲛⲉ 'sickness'; the noun pairs naturally with ⲡⲙ̄ⲕⲁⲍ 'pain' in the bodily-affliction series.",
+          "source_id": 26,
+          "section": 3746
+        },
+        {
+          "id": 26,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲍⲙ̄",
+          "english": "in",
+          "basis": "Editor restores ⲍⲙ̄ (Lyc. = ϩⲙ̄) 'in'; standard preposition introducing 'his stripe' as locus of the sickness.",
+          "source_id": 27,
+          "section": 3746
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued."
     },
@@ -354,6 +674,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉϩⲥⲁϣ",
       "core_english": "his stripe.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "End of tongue simile."
     },
@@ -362,8 +683,30 @@
       "chapter": 60,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲉⲧⲉⲣ{54} ⲡⲡⲣ̄{55}",
-      "core_english": "Likewise also is this, whom {56} the {57}Radiance",
+      "core_coptic": "ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲉⲧⲉⲣ{27} ⲡⲡⲣ̄{28}",
+      "core_english": "Likewise also is this, whom {27} the {28}Radiance",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲉ ⲓⲏⲥ",
+          "english": "Jesus",
+          "basis": "Editor restores ⲉ (relative ⲉⲧⲉⲣⲉ) + ⲓⲏⲥ (Jesus). The full title ⲓⲏⲥ ⲡⲡⲣⲓⲉ 'Jesus the Radiance' is standard Manichaean Christological epithet (cf. accumulated vocabulary).",
+          "source_id": 28,
+          "section": 3748
+        },
+        {
+          "id": 28,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(final letter)",
+          "basis": "Editor restores final ⲉ to complete ⲡⲡⲣⲓⲉ 'the Radiance.'",
+          "source_id": 29,
+          "section": 3748
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pivot to cosmic correspondent — Radiance."
     },
@@ -372,8 +715,40 @@
       "chapter": 60,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛ{58}ⲁⲛⲧ ⲙⲙⲁⲥ ⲡⲉⲧⲉϣⲁⲩⲧⲛ̄ⲛⲁⲩϩ ⲁⲃ{59}ⲗ {60}ⲧⲙ̄ⲛⲧⲛⲁ6",
-      "core_english": "is com{61}pared to: he whom they send for{62}th {63}from the Greatness",
+      "core_coptic": "ⲧⲛ{29}ⲁⲛⲧ ⲙⲙⲁⲥ ⲡⲉⲧⲉϣⲁⲩⲧⲛ̄ⲛⲁⲩϩ ⲁⲃ{30}ⲗ {31}ⲧⲙ̄ⲛⲧⲛⲁ6",
+      "core_english": "is com{29}pared to: he whom they send for{30}th {31}from the Greatness",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(internal letter)",
+          "basis": "Editor restores ⲧ within ⲧⲛⲧⲁⲛⲧ 'be likened/compared.'",
+          "source_id": 30,
+          "section": 3749
+        },
+        {
+          "id": 30,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(internal letter)",
+          "basis": "Editor restores ⲁ within ⲁⲃⲁⲗ 'forth.'",
+          "source_id": 31,
+          "section": 3749
+        },
+        {
+          "id": 31,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(initial letter)",
+          "basis": "Editor restores ⲛ as initial letter of ⲛ̄ⲧⲙⲛⲧⲛⲁ6 'from the Greatness.'",
+          "source_id": 32,
+          "section": 3749
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sent forth from the Greatness — substrate cosmic mission."
     },
@@ -384,6 +759,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩ6ⲱⲗⲧ ⲁⲃⲁⲗ ϩⲟⲩⲱⲛⲉ ⲁⲃⲁⲗ ⲍⲁ ⲍⲱⲃ ⲛⲓⲙ ⲛⲧⲉ ⲡⲉⲧⲍⲓⲃⲁⲗ ⲙⲛ",
       "core_english": "to reveal forth and to manifest forth concerning every matter — of that which is outside and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Function of Radiance."
     },
@@ -392,8 +768,30 @@
       "chapter": 60,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉⲧⲍⲓⲍⲟⲩⲛ ⲡⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ ⲙ̄ⲛ ⲡⲉⲧ{64}ⲙ̄{65}ⲓⲧⲛ̄",
-      "core_english": "that which is within, that which is upon the upper side and that which {66}is upon{67} the lower side,",
+      "core_coptic": "ⲡⲉⲧⲍⲓⲍⲟⲩⲛ ⲡⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ ⲙ̄ⲛ ⲡⲉⲧ{32}ⲙ̄{33}ⲓⲧⲛ̄",
+      "core_english": "that which is within, that which is upon the upper side and that which {32}is upon{33} the lower side,",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲙⲡⲥⲁ",
+          "english": "upon the side of",
+          "basis": "Editor restores ⲙⲡⲥⲁ to complete ⲡⲉⲧⲙⲡⲥⲁⲙⲡⲓⲧⲛⲉ 'that which is upon the lower side' (cf. accumulated vocabulary ⲡⲥⲁⲙⲡⲓⲧⲛⲉ); pair-partner with the just-stated ⲡⲥⲁⲛⲧⲡⲉ.",
+          "source_id": 33,
+          "section": 3751
+        },
+        {
+          "id": 33,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "(initial letter)",
+          "basis": "Editor restores ⲡ as initial letter of ⲡⲓⲧⲛ̄ 'lower.'",
+          "source_id": 34,
+          "section": 3751
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmographic four-fold division."
     },
@@ -402,8 +800,30 @@
       "chapter": 60,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲓⲧⲉ ⲉⲧⲃⲉ ⲛⲁⲓⲱⲛ ⲉⲧⲍⲓⲃⲁⲗ ⲛⲉⲧⲍⲏⲡ ⲉⲧ{68}ⲍ {69}",
-      "core_english": "either concerning the aeons that are outside, the hidden ones, which {70}are mani{71}fest [forth not],",
+      "core_coptic": "ⲉⲓⲧⲉ ⲉⲧⲃⲉ ⲛⲁⲓⲱⲛ ⲉⲧⲍⲓⲃⲁⲗ ⲛⲉⲧⲍⲏⲡ ⲉⲧ{34}ⲍ {35}",
+      "core_english": "either concerning the aeons that are outside, the hidden ones, which {34}are mani{35}fest [forth not],",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁⲛ",
+          "english": "are mani-",
+          "basis": "Editor restores ⲟⲩⲁⲛ to complete ⲉⲧⲟⲩⲁⲛⲍ 'which are manifest' — the standard Manichaean revelation-verb.",
+          "source_id": 35,
+          "section": 3752
+        },
+        {
+          "id": 35,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲁⲃⲁⲗ ⲉⲛ",
+          "english": "forth not",
+          "basis": "Editor restores ⲁⲃⲁⲗ ⲉⲛ; the negation ⲉⲛ is required to distinguish 'the hidden ones (which are NOT manifest)' from 'the ships of light (which ARE manifest)' in the immediately following ⲉⲓⲧⲉ-clause.",
+          "source_id": 36,
+          "section": 3752
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Aeons (ⲁⲓⲱⲛ) — substrate cosmic structures."
     },
@@ -412,8 +832,30 @@
       "chapter": 60,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲓⲧⲉ ⲁⲛ ⲉⲧⲃⲉ ⲛⲉⲭⲏⲩ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ ⲉⲧⲟⲩⲁ{72}ⲃⲁⲗ ⲛ̄{73}",
-      "core_english": "or also concerning the ships of the Light which are mani{74}fest forth — {75}he it is",
+      "core_coptic": "ⲉⲓⲧⲉ ⲁⲛ ⲉⲧⲃⲉ ⲛⲉⲭⲏⲩ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ ⲉⲧⲟⲩⲁ{36}ⲃⲁⲗ ⲛ̄{37}",
+      "core_english": "or also concerning the ships of the Light which are mani{36}fest forth — {37}he it is",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲛⲍ ⲁ",
+          "english": "fest",
+          "basis": "Editor restores ⲛⲍ ⲁ to complete ⲉⲧⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ 'which are manifest forth.'",
+          "source_id": 37,
+          "section": 3753
+        },
+        {
+          "id": 37,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲧⲁϩ ⲡⲉ",
+          "english": "he it is",
+          "basis": "Editor restores ⲛ̄ⲧⲁϩ ⲡⲉ 'he it is' — the standard pivot phrase introducing the Christological identification (Jesus the Radiance is the one who reveals).",
+          "source_id": 38,
+          "section": 3753
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ships of Light — substrate cosmic luminaries."
     },
@@ -422,8 +864,20 @@
       "chapter": 60,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧ6ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲁⲣⲁⲩ ⲛ̄ⲧⲁϩ ⲁⲛ ⲡⲉⲧⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ {76}ⲟⲩⲉ",
-      "core_english": "who reveals forth concerning them; he also is the one who manifests forth {77}concerning the glo-",
+      "core_coptic": "ⲧ6ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲁⲣⲁⲩ ⲛ̄ⲧⲁϩ ⲁⲛ ⲡⲉⲧⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ {38}ⲟⲩⲉ",
+      "core_english": "who reveals forth concerning them; he also is the one who manifests forth {38}concerning the glo-",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲍⲁ ⲡ",
+          "english": "concerning the",
+          "basis": "Editor restores ⲍⲁ ⲡ to complete the prepositional phrase 'concerning the glory.'",
+          "source_id": 39,
+          "section": 3754
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Revealer function."
     },
@@ -434,6 +888,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩ ⲙ̄ⲛ ⲧⲙ̄ⲛⲧⲛⲁ6 ⲉⲧⲟⲩⲏⲍ ⲛ̄ⲍⲏⲧⲟⲩ ⲍⲁ ⲡⲣⲁ ⲁⲛ ⲙⲡⲓϣ6ⲁ",
       "core_english": "ry and the Greatness which dwells in them; also concerning this wound",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Greatness dwelling in aeons."
     },
@@ -442,8 +897,30 @@
       "chapter": 60,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ ⲡⲡⲗⲏⲅⲏ ⲛⲧⲯⲩ{78} ⲉⲧⲁⲛⲍ ⲓⲏⲥ ⲡⲉⲧⲟⲩⲱⲛ̄ⲍ ⲙ̄ⲙⲁϩ {79}",
-      "core_english": "and the plague of the living {80}soul — Jesus is the one who manifests it for{81}",
+      "core_coptic": "ⲙⲛ ⲡⲡⲗⲏⲅⲏ ⲛⲧⲯⲩ{39} ⲉⲧⲁⲛⲍ ⲓⲏⲥ ⲡⲉⲧⲟⲩⲱⲛ̄ⲍ ⲙ̄ⲙⲁϩ {40}",
+      "core_english": "and the plague of the living {39}soul — Jesus is the one who manifests it for{40}",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲭⲏ",
+          "english": "soul",
+          "basis": "Editor restores ⲭⲏ to complete ⲯⲩⲭⲏ 'soul' — the standard 'living soul' (ⲯⲩⲭⲏ ⲉⲧⲁⲛⲍ) of Manichaean cosmology.",
+          "source_id": 40,
+          "section": 3756
+        },
+        {
+          "id": 40,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(initial letter of 'forth')",
+          "basis": "Editor restores ⲁ as initial letter of ⲁⲃⲁⲗ continuing on next line.",
+          "source_id": 41,
+          "section": 3756
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Jesus identified as cosmic revealer of the living soul's plague — substrate cosmological function (Jesus the Splendor), not Gospel citation."
     },
@@ -452,8 +929,20 @@
       "chapter": 60,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲁⲗ ϩⲧⲁϣⲉⲁⲓϣ ⲍⲁ{82}ⲁⲥ ⲁⲛ ⲙⲛ̄ ⲡⲥⲙⲧⲁⲛ ϩⲟⲩⲱⲛⲍ̄ ⲁ",
-      "core_english": "th and proclaims concerning {83}her also, and concerning the rest, manifesting",
+      "core_coptic": "ⲃⲁⲗ ϩⲧⲁϣⲉⲁⲓϣ ⲍⲁ{41}ⲁⲥ ⲁⲛ ⲙⲛ̄ ⲡⲥⲙⲧⲁⲛ ϩⲟⲩⲱⲛⲍ̄ ⲁ",
+      "core_english": "th and proclaims concerning {41}her also, and concerning the rest, manifesting",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "(internal letter)",
+          "basis": "Editor restores ⲣ within ⲍⲁⲣⲁⲥ 'concerning her.'",
+          "source_id": 42,
+          "section": 3757
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued cosmic revelation function."
     },
@@ -464,6 +953,7 @@
       "classification": "mixed",
       "core_coptic": "ⲃⲁⲗ ⲍⲁ ⲡⲉⲥⲧⲟⲩⲃⲟ ⲙⲛ̄ ⲡⲉⲥⲧⲁ̄6ⲟ",
       "core_english": "forth concerning her purification and her healing.",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲉⲓⲥⲧⲉ ⲁⲓⲧⲟⲩⲛⲟⲩⲓⲉⲧ' / 'Behold, I have made known' — hortatory closure marker.",
       "temporal_note": "Segment pivots from substrate (purification/healing of soul) to hortatory closure formula."
     }

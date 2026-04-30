@@ -5,7 +5,7 @@
   "start_section": 3841,
   "end_section": 3900,
   "total_sections": 60,
-  "total_lacunae": 34,
+  "total_lacunae": 17,
   "segments": [
     {
       "section": 3841,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲁ ϣⲁⲙⲧ ⲛ̄ⲛⲁⲟ̄ ⲛ̄ⲍⲱⲃ ⲉⲩϣⲃⲓ̈ⲁⲧ ⲟⲩⲱⲛⲍ̄ ⲁ",
       "core_english": "Three great works, being altered, have manifested",
+      "apparatus": [],
       "removed_material": "Stripped 'words, saying:' (ⲥⲉⲭⲉ ⲭⲉ) — tail of dialogue attribution frame from previous segment.",
       "temporal_note": "Frame attribution wraps the topic-statement of the teaching. The 'three great works' announcement IS the teaching's structural opening."
     },
@@ -23,7 +24,19 @@
       "line": 3,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲁⲗ ⲍⲛ̄ {0} ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲟ̄ⲛⲧϩ",
-      "core_english": "forth in {1}, the First Man. For this reason there belongs to him",
+      "core_english": "forth in {0}, the First Man. For this reason there belongs to him",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲁⲇⲁⲙ",
+          "english": "Adam",
+          "basis": "Editor's restoration of remainder of name partially preserved as ⲁⲇ-.",
+          "source_id": 2,
+          "section": 3842
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues topic statement: works manifested in the First Man (Primal Man — substrate cosmic figure). 'For this reason' is internal teaching connective, not editorial bridge."
     },
@@ -34,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲛⲉⲉϩ ⲉϩⲟⲩⲁⲧⲃⲉ ⲡⲁⲣⲁ ⲛⲟ̄ⲁⲙ ⲉⲧⲧⲏⲧ ⲛⲉⲧⲍⲛ̄ ⲧⲡⲉ",
       "core_english": "eternally an exaltation above the powers united, those in heaven",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam exalted above all cosmic powers — substrate hierarchy."
     },
@@ -44,6 +58,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲛⲉⲧⲍⲛ̄ ⲡⲕⲁⲍ",
       "core_english": "and those in the earth.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the heaven/earth pair — substrate cosmic geography."
     },
@@ -54,6 +69,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧϣⲁⲣⲡ ⲭⲉ ⲁⲩⲕⲱ ⲁ",
       "core_english": "The first: that they placed",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration marker — first of three works. Substrate structural bone."
     },
@@ -64,6 +80,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲱϩ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲡⲉⲧⲭⲁⲥⲉ ⲁ ⲛⲁⲏⲙⲓⲟⲩⲣⲅⲟⲥ",
       "core_english": "upon him the icon of the Exalted One. The demiurges",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Icon of the Exalted One placed on Adam, demiurges as cosmic agents — substrate."
     },
@@ -72,8 +89,20 @@
       "chapter": 64,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲙⲡⲗⲁⲥⲧⲏⲥ ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲧⲁⲃⲉϩ ⲁⲍⲣⲛ̄ ⲡⲓⲛⲉ {2}",
-      "core_english": "and the molders of his body sealed (him) before the {3} likeness",
+      "core_coptic": "ⲙⲛ̄ ⲙⲡⲗⲁⲥⲧⲏⲥ ⲙ̄ⲡⲉϩⲥⲱⲙⲁ ⲧⲁⲃⲉϩ ⲁⲍⲣⲛ̄ ⲡⲓⲛⲉ {1}",
+      "core_english": "and the molders of his body sealed (him) before the {1} likeness",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "which is",
+          "basis": "Editor's restoration; relative converter linking ⲡⲓⲛⲉ to qualitative ⲡⲣⲓ̈ⲉ ('shines, is radiant') in the next line.",
+          "source_id": 3,
+          "section": 3847
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Demiurges and body-molders as cosmic crafters — substrate."
     },
@@ -84,6 +113,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲣⲓ̈ⲉ ⲛⲧⲍⲓⲕⲱⲛ ⲧⲉⲧⲁⲥⲟⲩⲱⲛⲍ̄ ⲛⲉⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲥⲁⲛⲧⲡⲉ",
       "core_english": "radiant of the icon, which manifested itself to them from the upper place.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "The radiant icon manifested from the upper realm — substrate cosmology."
     },
@@ -94,6 +124,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲟ̄ⲛ ⲧⲍⲓⲕⲱⲛ ⲛ̄ⲁⲇⲁⲙ ⲉⲥⲟⲩⲁⲧⲃⲉ ⲉⲛⲉⲥⲱⲥ",
       "core_english": "For this reason the icon of Adam exists exalted, beautiful,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's icon as cosmic referent — substrate."
     },
@@ -104,6 +135,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲍⲟⲩⲟ ⲁⲟ̄ⲁⲙ ⲛⲓⲙ ⲉϩⲧⲏⲧ ⲛⲁⲧⲡⲉ ⲙⲛ̄ ⲛⲁⲧⲓⲧⲛⲉ",
       "core_english": "more than every power, joined with those above and those below.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's icon joining above/below — substrate axis."
     },
@@ -114,6 +146,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁⲍⲍⲱⲃⲥⲛⲉⲩ ⲭⲉ ⲁⲩⲙⲟⲩⲛⲕ ⲛ̄ⲁⲇⲁⲙ ⲍⲙ̄ ⲡⲉϩⲕⲱⲧ",
       "core_english": "The second work: that they molded Adam in his structure",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second enumerated work — substrate."
     },
@@ -122,8 +155,20 @@
       "chapter": 64,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲛⲧϣⲁⲣⲡ ⲙ̄ⲙⲛⲧϣⲁⲙⲓⲥⲉ ⲛ̄ⲧⲉ ⲧⲡⲉ ⲙⲛ̄",
-      "core_english": "{5} of the firstborn-state of heaven and",
+      "core_coptic": "{2} ⲛⲧϣⲁⲣⲡ ⲙ̄ⲙⲛⲧϣⲁⲙⲓⲥⲉ ⲛ̄ⲧⲉ ⲧⲡⲉ ⲙⲛ̄",
+      "core_english": "{2} of the firstborn-state of heaven and",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲍⲓⲧⲛ ⲡⲟⲩⲁⲓ̈ⲛⲉ",
+          "english": "through the light",
+          "basis": "Editor's restoration; ⲍⲓⲧⲛ = Sah. ϩⲓⲧⲛ̄ 'through' + ⲡⲟⲩⲁⲓⲛⲉ 'the light' (partially preserved as -ⲁⲓ̈ⲛⲉ).",
+          "source_id": 4,
+          "section": 3852
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Adam molded after the firstborn-state of heaven — substrate."
     },
@@ -132,8 +177,20 @@
       "chapter": 64,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲟ̄ⲛ ⲡⲉϩ",
-      "core_english": "{7} the Five Sons. For this reason his",
+      "core_coptic": "{3} ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲟ̄ⲛ ⲡⲉϩ",
+      "core_english": "{3} the Five Sons. For this reason his",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲡⲕⲁⲍ",
+          "english": "the earth",
+          "basis": "Editor's restoration of ⲡⲕⲁⲍ ('the earth'); paired with ⲧⲡⲉ ('heaven') in the preceding line. Several characters of the gap remain unaccounted for; the connector ending in -ⲉ before ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ('the Five Sons') is unrecoverable.",
+          "source_id": 5,
+          "section": 3853
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five Sons — core substrate cosmic enumeration."
     },
@@ -142,8 +199,20 @@
       "chapter": 64,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8} ϣⲃⲓ̈ⲁⲓ̈ⲧ ⲡⲁⲣⲁ ⲡⲕⲱⲧ ⲙ̄ⲡⲕⲉⲥⲉⲡⲉ ⲛ̄ⲛ̄ⲥⲱⲱⲛⲧ",
-      "core_english": "{9} is altered compared with the structure of the rest of the creatures,",
+      "core_coptic": "{4} ϣⲃⲓ̈ⲁⲓ̈ⲧ ⲡⲁⲣⲁ ⲡⲕⲱⲧ ⲙ̄ⲡⲕⲉⲥⲉⲡⲉ ⲛ̄ⲛ̄ⲥⲱⲱⲛⲧ",
+      "core_english": "{4} is altered compared with the structure of the rest of the creatures,",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲕⲱⲧ ⲉ",
+          "english": "structure (which is)",
+          "basis": "Editor's restoration completing ⲡⲉϩⲕⲱⲧ 'his structure' begun at end of line 14, with relative converter ⲉ- introducing the qualitative ϣⲃⲓ̈ⲁⲓ̈ⲧ.",
+          "source_id": 6,
+          "section": 3854
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Adam's structure differs from rest of creatures — substrate."
     },
@@ -152,8 +221,20 @@
       "chapter": 64,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲡⲟⲩⲕⲱⲧ ϣⲃⲓ̈ⲁⲓ̈ⲧ ⲁⲇⲁⲙ",
-      "core_english": "{11} the structure of all the creatures is altered. Adam",
+      "core_coptic": "{5} ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲡⲟⲩⲕⲱⲧ ϣⲃⲓ̈ⲁⲓ̈ⲧ ⲁⲇⲁⲙ",
+      "core_english": "{5} the structure of all the creatures is altered. Adam",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲉⲡⲉⲓⲇⲏ",
+          "english": "since",
+          "basis": "Editor's restoration of standard Greek causal conjunction ἐπειδή.",
+          "source_id": 7,
+          "section": 3855
+        }
+      ],
       "removed_material": null,
       "temporal_note": "All creatures' structure altered — substrate."
     },
@@ -162,8 +243,20 @@
       "chapter": 64,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12} ⲉⲣⲉ ⲡⲙⲟⲩⲛⲕ ⲛⲧⲉϩⲯⲩⲭⲏ ⲥⲟⲩⲧⲁⲛⲧ ⲁⲭⲙ̄ ⲡ",
-      "core_english": "{13}, the molding of his soul is extended unto the",
+      "core_coptic": "{6} ⲉⲣⲉ ⲡⲙⲟⲩⲛⲕ ⲛⲧⲉϩⲯⲩⲭⲏ ⲥⲟⲩⲧⲁⲛⲧ ⲁⲭⲙ̄ ⲡ",
+      "core_english": "{6}, the molding of his soul is extended unto the",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲁϩ",
+          "english": "himself",
+          "basis": "Editor's restoration; Lyc. intensive pronoun ⲛ̄ⲧⲁϥ 'himself.'",
+          "source_id": 8,
+          "section": 3856
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Soul's molding extended through cosmic structure — substrate."
     },
@@ -174,6 +267,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁⲩⲧⲛⲉ ⲙⲛ̄ ⲧⲟ̄ⲓⲛⲥⲱⲣ ⲁⲃⲁⲗ ⲛ̄ⲛⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲟⲩⲛ ⲟⲩ",
       "core_english": "straight-extension and the spreading-forth of the elements. There is a",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Spreading-forth of the elements (στοιχεῖα) — substrate cosmic geometry."
     },
@@ -184,6 +278,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲩⲥ ⲛ̄ⲍⲏⲧϩ̄ ⲉϩⲟⲩⲁⲧⲃⲉ ⲡⲁⲣⲁ ⲡⲁⲛⲕⲉⲥⲱⲱⲛⲧ ⲙⲛ̄",
       "core_english": "Mind in him, exalted above that of the other creatures and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Νοῦς in Adam exalted above cosmic creatures — substrate."
     },
@@ -194,6 +289,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲛⲧⲃ̄ⲛⲁⲩⲉ",
       "core_english": "that of the cattle.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the comparison with cattle/creatures — substrate."
     },
@@ -204,6 +300,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁⲍϣⲁⲙⲧ ⲡⲉ ⲛ̄ⲥⲃⲁⲩ",
       "core_english": "The third is the teaching",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third enumerated work — the cosmic teaching/seal. Substrate."
     },
@@ -214,6 +311,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉ ⲙⲛ̄ ⲛ̄ⲥⲁⲭⲛⲉ ⲙⲛ̄ ⲡⲧⲁⲃⲉϩ ⲛ̄ⲛⲟ̄ⲁⲙ ⲧⲏⲣⲟⲩ ⲛⲁⲧⲡⲉ ⲙⲛ̄",
       "core_english": "and the counsels and the seal of all the powers, those above and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seal of all cosmic powers above/below — substrate axis."
     },
@@ -224,6 +322,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲧⲓⲧⲛⲉ ⲁ ⲛⲁⲏⲙⲓⲟⲩⲣⲅⲟⲥ ⲉⲧⲁⲩⲥⲙⲛⲧϩ̄ ⲥⲁⲩⲍⲟⲩ ⲁⲩⲧⲁ",
       "core_english": "those below — which the demiurges who established him gathered, and they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Demiurges gathering cosmic powers into Adam — substrate."
     },
@@ -234,6 +333,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲟⲩ ⲛ̄ⲍⲏⲧϩ̄ ⲛ̄ⲧⲁϩ ⲙⲛ̄ ⲧⲉϩⲥⲁⲓ̈ϣ ⲉⲩⲍⲁ ⲁⲩⲣⲏⲓ ⲍⲓ ⲟⲓⲕⲟⲥ",
       "core_english": "set within him himself with his portion, being arranged as houses",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Powers arranged in Adam as cosmic houses — substrate astrology."
     },
@@ -244,6 +344,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛ̄ⲍⲱⲇⲓⲟⲛ ⲙⲛ̄ ⲛ̄ⲥⲓⲟⲩ ⲙⲛ̄ ⲛⲉⲃⲉⲧⲉ ⲛ̄ⲍⲟⲟⲩⲉ ⲙⲛ̄ ⲛ̄ⲣⲙ",
       "core_english": "of the zodiac-signs and the stars and the divisions of the days and the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiac, stars, days, years — quintessential substrate astronomy/correspondence."
     },
@@ -254,6 +355,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲩⲉ ⲉⲡⲉⲓⲇⲏ ⲡⲧⲁⲃⲉϩ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϩ̄ ⲧⲁⲃⲉ ⲍⲛ̄",
       "core_english": "years. Since the seal of the entire cosmos is sealed in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Entire cosmos sealed in Adam — substrate macrocosm/microcosm."
     },
@@ -264,6 +366,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲇⲁⲙ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁ ⲧⲡⲉ ⲙⲛ̄ ⲡⲕⲁⲍ ⲕⲓⲙ ⲉⲧⲃⲏⲧϩ̄ ⲁⲩ",
       "core_english": "Adam, for this reason heaven and earth move on his account, they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Heaven and earth move on Adam's account — substrate cosmic dynamics."
     },
@@ -274,6 +377,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲧⲁⲣⲧⲣ̄ ⲙⲛ̄ ⲟⲩⲧⲁⲣⲁⲭⲏ ϣⲱⲡⲉ ⲛ̄ⲧⲉϩⲗⲁⲓⲟ̄ⲉ ⲟⲩⲧⲉ ⲛⲉⲧⲁ",
       "core_english": "are disturbed, and a turmoil comes to be on his occasion: both the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic turmoil at Adam's making — substrate."
     },
@@ -284,6 +388,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲧ ⲙⲛ̄ ⲛⲉⲧⲍⲁⲩ ⲛⲉⲧⲁⲛⲓⲧ ⲙⲉⲛ ⲉⲩⲥⲱⲕ ⲙ̄ⲙⲁϩ ⲁⲡⲱⲛⲍ̄",
       "core_english": "beautiful and the bitter ones. The beautiful indeed are drawn unto life",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Beautiful/bitter cosmic powers polarity — substrate."
     },
@@ -294,6 +399,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲧⲟⲩⲍⲓⲕⲱⲛ ⲙⲛ̄ ⲧⲟⲩⲙⲟⲣⲫⲏ ⲉⲧⲕⲁⲁⲧ ⲁⲭⲱϩ ⲛⲉⲧ",
       "core_english": "because of their icon and their form which is set upon him; the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Icon and form of cosmic powers set upon Adam — substrate."
     },
@@ -302,8 +408,20 @@
       "chapter": 64,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14}ⲁⲩ ⲍⲱⲱϩ ⲛⲉⲩⲥⲱⲕ ⲙ̄ⲙⲁϩ ⲁⲡⲙⲟⲩ ⲡⲉ ⲭⲉⲩⲛⲁⲣ̄ⲉⲯⲟⲩ",
-      "core_english": "{15}bitter themselves are drawn unto death — that they may exercise authority",
+      "core_coptic": "{7}ⲁⲩ ⲍⲱⲱϩ ⲛⲉⲩⲥⲱⲕ ⲙ̄ⲙⲁϩ ⲁⲡⲙⲟⲩ ⲡⲉ ⲭⲉⲩⲛⲁⲣ̄ⲉⲯⲟⲩ",
+      "core_english": "{7}bitter themselves are drawn unto death — that they may exercise authority",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "(those) bitter",
+          "basis": "Editor's restoration of initial ⲍ- of ⲍⲁⲩ ('bitter'), continuing the contrast 'beautiful' / 'bitter' from previous lines.",
+          "source_id": 9,
+          "section": 3870
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Bitter powers drawn to death — substrate cosmology."
     },
@@ -312,8 +430,20 @@
       "chapter": 64,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲓⲁ ⲛ̄ⲍⲏⲧϩ̄ ⲛ̄ⲥⲉⲭⲓⲟⲩⲱ ⲛ̄ⲧⲙⲛⲧⲣ̄ⲣⲟ ⲛ̄ⲥⲉⲫⲃ̄ⲓⲟ ⲛ̄ⲍⲏⲧϩ̄",
-      "core_english": "{17} in him, and take precedence in the kingship, and abase in him",
+      "core_coptic": "{8}ⲓⲁ ⲛ̄ⲍⲏⲧϩ̄ ⲛ̄ⲥⲉⲭⲓⲟⲩⲱ ⲛ̄ⲧⲙⲛⲧⲣ̄ⲣⲟ ⲛ̄ⲥⲉⲫⲃ̄ⲓⲟ ⲛ̄ⲍⲏⲧϩ̄",
+      "core_english": "{8} in him, and take precedence in the kingship, and abase in him",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "author(ity)",
+          "basis": "Editor's restoration completing Greek loan ἐξουσία (ⲣ̄-ⲉⲯⲟⲩⲥⲓⲁ 'exercise authority') split across line break.",
+          "source_id": 10,
+          "section": 3871
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers exercising authority and abasing in Adam — substrate cosmic dynamics, not contemporary 'kingship'."
     },
@@ -322,8 +452,20 @@
       "chapter": 64,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲧⲏⲣϩ̄",
-      "core_english": "{19} entire.",
+      "core_coptic": "{9} ⲧⲏⲣϩ̄",
+      "core_english": "{9} entire.",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲙⲡⲕⲟⲥⲙⲟⲥ",
+          "english": "the cosmos",
+          "basis": "Editor's restoration of standard Greek loan; the ⲙ̄- preserved beginning the genitive.",
+          "source_id": 11,
+          "section": 3872
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes the third work — substrate."
     },
@@ -334,6 +476,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲗⲓⲛ ⲁⲛ ⲙ̄ⲙⲉ ⲭⲉ ⲛ̄ⲧⲁ",
       "core_english": "Once again truly: that the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Internal teaching transition ('Once again truly') introducing the seven matters about Adam's kingship — not the Mani frame formula. Substrate connective within the teaching."
     },
@@ -342,8 +485,20 @@
       "chapter": 64,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲧⲱϣ ⲁⲇⲁⲙ ⲁⲩⲙⲁⲁⲛⲕϩ̄ ⲭⲉⲩⲛⲁⲣⲭⲁⲓ̈ⲥ ⲛ̄",
-      "core_english": "{21} appointed Adam (and) fashioned him, that they may be lord",
+      "core_coptic": "{10} ⲧⲱϣ ⲁⲇⲁⲙ ⲁⲩⲙⲁⲁⲛⲕϩ̄ ⲭⲉⲩⲛⲁⲣⲭⲁⲓ̈ⲥ ⲛ̄",
+      "core_english": "{10} appointed Adam (and) fashioned him, that they may be lord",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲣⲭⲱⲛ",
+          "english": "archons",
+          "basis": "Editor's restoration; standard Manichaean cosmological term, subject of the verb ⲧⲱϣ ('appointed').",
+          "source_id": 12,
+          "section": 3874
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic powers appointing/fashioning Adam — substrate."
     },
@@ -352,8 +507,20 @@
       "chapter": 64,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22} ⲛⲧⲙⲛⲧⲣⲣⲟ ⲉⲧⲃⲉ ⲥⲁϣϩ ⲛ̄ⲍⲱϩ",
-      "core_english": "{23} of the kingship. Concerning seven matters",
+      "core_coptic": "{11} ⲛⲧⲙⲛⲧⲣⲣⲟ ⲉⲧⲃⲉ ⲥⲁϣϩ ⲛ̄ⲍⲱϩ",
+      "core_english": "{11} of the kingship. Concerning seven matters",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲍⲏⲧϩ ⲛⲥⲉⲭⲓⲟⲩⲱ",
+          "english": "(in) him, and take precedence",
+          "basis": "Editor's partial restoration; ⲍⲏⲧϩ̄ ('in him') completing the preceding ⲛ̄- of line 33; then ⲛ̄ⲥⲉ-ⲭⲓⲟⲩⲱ 'and they take precedence,' parallel to the same construction in line 31.",
+          "source_id": 13,
+          "section": 3875
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Topic-statement of the seven enumerated matters — substrate structural bone."
     },
@@ -364,6 +531,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲱⲁⲣⲡ ⲭⲉ ⲁϥⲣ̄ⲫⲱⲥⲧⲏⲣ ⲍⲙ̄ ⲡⲟⲩⲥⲱⲱⲛⲧ ⲁⲛⲧⲓ ⲡⲟⲩ",
       "core_english": "The first: that he became an Illuminator (φωστήρ) in their creation, in place of the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam-as-φωστήρ in their cosmic creation — substrate (φωστήρ here is not Mani but Adam in cosmic role, in place of the Ambassador's icon)."
     },
@@ -374,6 +542,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁ̣ⲓⲛⲉ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲉⲧⲁϥⲟⲩⲱⲛⲍ ⲛⲉⲩ",
       "core_english": "light of the icon of the Ambassador, which he revealed to them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Icon of the Ambassador (πρεσβευτής = Third Messenger) — substrate cosmic figure."
     },
@@ -382,8 +551,20 @@
       "chapter": 64,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ ⲙ̄ⲡⲥⲁⲛⲧⲡⲉ {24}ⲁⲏ ⲁⲩⲣ̄ⲉⲡⲓⲑⲩⲙⲏ ⲧⲏⲣⲟⲩ ⲁ",
-      "core_english": "forth from above; {25} they all desired",
+      "core_coptic": "ⲁⲃⲁⲗ ⲙ̄ⲡⲥⲁⲛⲧⲡⲉ {12}ⲁⲏ ⲁⲩⲣ̄ⲉⲡⲓⲑⲩⲙⲏ ⲧⲏⲣⲟⲩ ⲁ",
+      "core_english": "forth from above; {12} they all desired",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲉⲡⲉ",
+          "english": "since",
+          "basis": "Greek ἐπειδή subordinator; visible suffix ⲁⲏ matches Lyc. spelling ⲉⲡⲉⲓⲁⲏ. Editor's brackets restore the prefix.",
+          "source_id": 14,
+          "section": 3878
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers desiring the icon — substrate seduction motif."
     },
@@ -394,6 +575,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲓⲛⲉ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁ ⲡⲟⲩⲍⲏⲧ",
       "core_english": "the likeness of the icon of the Ambassador — their heart",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Likeness of the Ambassador's icon — substrate."
     },
@@ -404,6 +586,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲱⲕ̄ ⲛ̄ⲥⲱⲥ",
       "core_english": "drew after her.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the seduction clause — substrate."
     },
@@ -414,6 +597,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲍⲥⲛⲉⲩ ⲭⲉⲩⲛⲁⲭⲱⲗⲍ̄",
       "core_english": "The second: that they shall draw",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second enumerated matter — substrate."
     },
@@ -424,6 +608,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲍⲏⲧϥ ⲙⲡⲟⲩⲁ̣ⲓⲛⲉ ⲛ̄ⲥⲉⲥⲁⲱⲧϥ ⲛⲥⲉⲣ̄ⲕⲱⲗⲩ ⲙ̄ⲙⲁϥ",
       "core_english": "from him the Light, and they shall ensnare him, and they shall hinder him",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Drawing of Light from Adam by powers — substrate cosmogony."
     },
@@ -434,6 +619,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲛ ⲧⲉϥⲟ̄ⲓⲛⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ ⲁⲡⲭⲁ̣ⲓⲥⲉ",
       "core_english": "in his going up to the Height.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam hindered in ascent to the Height — substrate."
     },
@@ -444,6 +630,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲍⲱⲁⲙⲧ ⲭⲉⲕⲁⲁⲥ ⲉⲧⲃⲉ ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩ",
       "core_english": "The third: that on account of the icon of the Ambas-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third enumerated matter — substrate."
     },
@@ -454,6 +641,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲥ ⲉⲧⲕⲁⲁⲧ ⲁⲭⲱϥ ⲉⲣⲉ ⲧⲙ̄ⲛ̄ⲧⲛⲟⲩⲧⲉ ⲧⲏⲣⲥ ⲛⲁⲑⲃ̄ⲓ̈ⲁⲥ",
       "core_english": "sador which is set upon him, the entire godhood shall humble itself",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Entire godhood humbled before Adam's icon — substrate."
     },
@@ -464,6 +652,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲩ ⲧⲁⲧⲡⲉ ⲙⲛ̄ ⲧⲁⲡⲓⲧⲛⲉ ⲉⲧⲃⲉ ⲡⲉⲓⲛⲉ ⲙ̄ⲡⲡⲣⲓ̈ⲉ ⲙ̄",
       "core_english": "for them — that of above and that of below — on account of the likeness of the Radiance of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Above/below pair humbled — substrate cosmic axis."
     },
@@ -474,6 +663,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁ̣ⲓⲉ ⲙ̄ⲡⲉϥⲗⲁⲍⲗⲉⲍ ⲭⲉ ϥⲗⲉⲍⲗⲁⲍⲧ ⲍⲙ̄ ⲡⲉϥⲉⲓⲛⲉ ⲡⲁ",
       "core_english": "the beauty of his lust, for he is desire-arousing in his likeness be-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adam's desire-arousing beauty — substrate seduction motif (cosmic-internal)."
     },
@@ -484,6 +674,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲁ ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ",
       "core_english": "yond all creatures.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Beyond all creatures — substrate hierarchy."
     },
@@ -492,8 +683,20 @@
       "chapter": 64,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲙⲁⲍϥⲧⲁⲩ ⲭⲉ {26} ⲟⲩ",
-      "core_english": "The fourth: that {27} a",
+      "core_coptic": "ⲡⲙⲁⲍϥⲧⲁⲩ ⲭⲉ {13} ⲟⲩ",
+      "core_english": "The fourth: that {13} a",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 50,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲁϥ",
+          "english": "he is",
+          "basis": "Editor's restoration of the copular pronoun introducing the predication 'he is X'; standard Coptic copula construction with ⲛ̄ⲧⲁϥ ⲡⲉ.",
+          "source_id": 15,
+          "section": 3889
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fourth enumerated matter — substrate."
     },
@@ -502,8 +705,20 @@
       "chapter": 64,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲟⲩⲣ ⲛ̄ⲧⲱⲃⲉ ⲙⲛ̄ ⲟⲩⲭⲁⲣⲁⲕⲧⲏⲣ ⲛⲃⲣ̄ⲡⲉ ⲭⲉ{28}",
-      "core_english": "imprint-figure of seal and a new character, in order {29}",
+      "core_coptic": "ϩⲟⲩⲣ ⲛ̄ⲧⲱⲃⲉ ⲙⲛ̄ ⲟⲩⲭⲁⲣⲁⲕⲧⲏⲣ ⲛⲃⲣ̄ⲡⲉ ⲭⲉ{14}",
+      "core_english": "imprint-figure of seal and a new character, in order {14}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲁⲥ ⲛ̄",
+          "english": "that",
+          "basis": "Editor's restoration completing the standard purpose-clause idiom ⲭⲉⲕⲁⲁⲥ 'in order that'; the ⲛ̄ links to the following object 'all the begettings.'",
+          "source_id": 16,
+          "section": 3890
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Imprint-seal and χαρακτήρ on Adam as cosmic stamp — substrate. The ecclesial flag (50.0) is a false positive: this is the cosmic seal on Adam, not a sacramental seal."
     },
@@ -512,8 +727,20 @@
       "chapter": 64,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲡⲟ ⲧⲏⲣⲟⲩ ⲉⲧⲟⲩⲛⲁⲭⲡⲁⲩ ⲉⲩⲁⲭⲡⲁⲩ ⲁⲍⲣⲛ̄ ⲡⲉϥⲧ{30}",
-      "core_english": "all the begettings which they shall beget shall be begotten before his {31}.",
+      "core_coptic": "ⲭⲡⲟ ⲧⲏⲣⲟⲩ ⲉⲧⲟⲩⲛⲁⲭⲡⲁⲩ ⲉⲩⲁⲭⲡⲁⲩ ⲁⲍⲣⲛ̄ ⲡⲉϥⲧ{15}",
+      "core_english": "all the begettings which they shall beget shall be begotten before his {15}.",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲱⲃⲉ",
+          "english": "imprint",
+          "basis": "Editor's restoration completing ⲡⲉϥⲧⲱⲃⲉ 'his imprint/seal' (cf. ⲧⲱⲃⲉ in glossary); confirmed by the parallel use of 'imprint of seal' in the same enumeration (line 13).",
+          "source_id": 17,
+          "section": 3891
+        }
+      ],
       "removed_material": null,
       "temporal_note": "All begettings sealed before Adam's pattern — substrate."
     },
@@ -524,6 +751,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲍⲧⲟⲩ ⲭⲉ ⲟⲩⲁⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲛⲍⲏⲧϥ̄ ⲛ̄ⲭⲓ ⲛⲧⲉⲭⲛ̣ⲏ",
       "core_english": "The fifth: that there shall be revealed in him all the arts (τέχναι)",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth enumerated matter — all arts revealed in Adam — substrate."
     },
@@ -534,6 +762,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣⲟⲩ ⲛⲛ̄ⲟ̄ⲁⲙ ⲛⲁⲧⲡⲉ ⲙⲛ̄ ⲛⲁⲡⲓⲧⲛⲉ ⲛⲉⲧⲍⲏⲧ ⲙⲛ ⲛ̣ⲉⲧ",
       "core_english": "of the powers of those above and those below, those that are hidden and those",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Arts of all cosmic powers above/below — substrate."
     },
@@ -544,6 +773,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟ̄ⲁⲗⲡ ⲁⲃⲁⲗ ⲛ̄ⲥⲉⲁ̣ⲓⲁⲕⲣⲓⲛⲉ ⲛ̄ⲍⲏⲧϥ̄ ⲙ̄ⲡⲧⲏⲣϥ̄ ⲛ̄ⲧⲉ ⲍⲱⲃ",
       "core_english": "that are revealed forth, and they shall discriminate (διακρίνειν) in him the All; for of every-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "All revealed in Adam, the All discriminated in him — substrate."
     },
@@ -554,6 +784,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲓⲙ ⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲓⲱⲱϥ",
       "core_english": "thing there is revelation upon him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "All revelation upon Adam — substrate."
     },
@@ -564,6 +795,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲍⲥⲁⲩ ⲭⲉ ⲉⲣⲉ ⲟⲩⲛⲁⲟ̄ ⲙ̄ⲡⲁⲧⲣⲱⲛⲓⲁ ⲛⲁⲱⲱⲡⲉ ⲛⲉⲩ",
       "core_english": "The sixth: that a great patronage (πατρωνία) shall come to be for them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sixth enumerated matter — cosmic patronage from Adam's icon — substrate."
     },
@@ -574,6 +806,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲛ̄ ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲉⲧⲭⲁⲥⲉ ⲉⲧⲕⲁⲁⲧ ⲁⲭⲱϥ ⲭⲉ ⲉⲣⲉ ⲛⲁⲧⲡⲉ ⲛⲁ",
       "core_english": "in the icon of the Most High that is set upon him; that those of above shall",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Icon of the Most High on Adam — substrate."
     },
@@ -582,8 +815,18 @@
       "chapter": 64,
       "line": 59,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32} ⲕⲉⲁⲣⲭⲱⲛ ⲛⲥⲉⲧⲙⲣⲗⲁⲩⲉ ⲙⲡⲉⲧⲍⲁⲩ ⲛⲉⲩ ⲉⲧⲃⲉ ⲁⲇⲁⲙ",
-      "core_english": "{33} the other archons, and shall not do any evil to them on account of Adam.",
+      "core_coptic": "{16} ⲕⲉⲁⲣⲭⲱⲛ ⲛⲥⲉⲧⲙⲣⲗⲁⲩⲉ ⲙⲡⲉⲧⲍⲁⲩ ⲛⲉⲩ ⲉⲧⲃⲉ ⲁⲇⲁⲙ",
+      "core_english": "{16} the other archons, and shall not do any evil to them on account of Adam.",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 59,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 18,
+          "section": 3898
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons restrained on Adam's account — substrate."
     },
@@ -594,6 +837,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲍⲥⲁⲱϥ̄ ⲭⲉ ⲉϥⲁⲣ̄ ⲁⲡⲉ ⲍⲓ ⲣ̄ⲣⲟ ⲍⲓ ⲭⲁ̣ⲓⲥ ⲁⲭⲛ̄ ⲛ̄ⲥⲱⲛⲧ̄",
       "core_english": "The seventh: that he shall be head and king and lord over the creatures",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seventh enumerated matter — Adam as head/king/lord over creatures — substrate culmination."
     },
@@ -604,6 +848,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣⲟⲩ ⲛ̄ⲥⲉⲭ̣ⲓⲟⲩⲱ ⲛⲍⲏⲧϥ ⲛ̄ⲧⲙⲛ̄ⲧⲣ̄ⲣⲟ",
       "core_english": "all, and they shall receive the kingship in him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the seventh matter — kingship received in Adam. Substrate closure."
     }

@@ -5,7 +5,7 @@
   "start_section": 3026,
   "end_section": 3049,
   "total_sections": 24,
-  "total_lacunae": 18,
+  "total_lacunae": 11,
   "segments": [
     {
       "section": 3026,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲫ",
       "core_english": "ⲙⲫ",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter number marker."
     },
@@ -23,7 +24,29 @@
       "line": 1,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲫ ⲉⲧⲃⲉ {0} {1}",
-      "core_english": "ⲙⲫ Concerning {2} {3}",
+      "core_english": "ⲙⲫ Concerning {0} {1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲡⲧⲣⲟⲭⲟⲥ ⲙⲛ ⲛⲁⲓⲍⲙⲉ",
+          "english": "the Wheel and the Heavens(?)",
+          "basis": "Editor's restoration; first three letters ⲡⲧⲣ are visible. The (?) marks editor's uncertainty about ⲛⲁⲓⲍⲙⲉ. Subject matter confirmed by lines 4-7.",
+          "source_id": 0,
+          "section": 3027
+        },
+        {
+          "id": 1,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲙⲫ",
+          "english": "ⲙⲫ",
+          "basis": "Closing chapter-number marker matching the opening; standard Kephalaia heading layout.",
+          "source_id": 1,
+          "section": 3027
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Chapter title — concerning the Wheel and Conduits, defining the cosmological topic."
     },
@@ -34,6 +57,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉ",
       "core_english": "con-",
+      "apparatus": [],
       "removed_material": "Frame attribution: 'The disciples questioned him, saying: Indeed, our Lord' — Q&A dialogue frame.",
       "temporal_note": "Pure attribution formula; substantive question begins next segment."
     },
@@ -44,6 +68,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲃⲉ ⲡⲓⲕⲉⲩⲉ ⲭⲉ ⲡⲱⲥ ⲡⲧⲣⲟⲭⲟⲥ ⲕⲱⲧⲉ ⲍⲓⲭⲛ̄ ⲛ̄ⲁⲓⲍⲙⲉ",
       "core_english": "-cerning this also: How does the Wheel turn upon the heavens",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question defining the teaching topic — the Wheel and the heavens."
     },
@@ -54,6 +79,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲭⲁⲗⲕ̄ ⲭⲛ̄ ⲛⲙ̄ⲡⲧⲏⲩⲉ ⲁⲛⲕⲁⲍ ⲁⲩⲱ ⲙ̄ⲡⲉϩϣⲁⲧⲟⲩ ⲏ ⲭⲉ",
       "core_english": "which are stretched out from the winds to the earth — and yet they have not pierced them; or how",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of cosmological question — heavens stretched from winds to earth."
     },
@@ -64,6 +90,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩ ⲛ̄ⲧⲁⲩ ⲛⲁⲓⲍⲙⲉ ⲙⲁⲩⲍⲗⲁⲙⲗⲙ̄ ⲁⲍⲟⲩⲛ ⲙⲛ ⲡⲧⲣⲟⲭⲟⲥ",
       "core_english": "is it that the heavens do not mingle inward with the Wheel",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question: heavens-Wheel non-mingling."
     },
@@ -72,8 +99,28 @@
       "chapter": 49,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉϩⲕⲱⲧⲉ̄ ⲉϩⲥⲓⲧⲉ {4} {5}",
-      "core_english": "as it turns and as it courses {6} {7}",
+      "core_coptic": "ⲉϩⲕⲱⲧⲉ̄ ⲉϩⲥⲓⲧⲉ {2} {3}",
+      "core_english": "as it turns and as it courses {2} {3}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 2,
+          "section": 3032
+        },
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲕⲟⲥⲙⲟⲥ",
+          "english": "cosmos",
+          "basis": "Editor's restoration; only initial ⲕ lost, ⲟⲥⲙⲟⲥ visible.",
+          "source_id": 3,
+          "section": 3032
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Completion of question; cosmic motion vocabulary."
     },
@@ -84,6 +131,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲙⲁⲣⲉ ⲛ̄ⲁⲓⲍⲙⲉ ϣⲱⲱⲧ",
       "core_english": "The heavens do not cleave (anything),",
+      "apparatus": [],
       "removed_material": "Attribution: 'The Illuminator answered them this' — dialogue frame.",
       "temporal_note": "Strip Illuminator/disciples frame; preserve teaching answer."
     },
@@ -94,6 +142,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲙⲁⲩϣⲱⲱⲧ ⲉⲡⲉⲓⲁⲏ ⲍⲙ̄ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲛ ⲛⲉ ⲧⲍⲉ ⲧⲉ",
       "core_english": "they cause no cleaving, since they are spiritual. Thus is",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic-systemic predication: heavens are spiritual, hence non-cleaving."
     },
@@ -104,6 +153,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲓ̈ ⲉⲧⲉⲣⲉ ⲛⲁⲓⲍⲙⲉ ⲧⲛ̄ⲧⲁⲛⲧ ⲁⲙⲙⲟⲩⲓ̈ⲉⲩⲉ ⲉⲧⲉⲣⲉ ⲛⲉⲭⲏⲩ",
       "core_english": "this, in which the heavens are likened to lions, in which the ships",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Correspondential mapping: heavens→lions, ships within them."
     },
@@ -114,6 +164,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲍⲱⲧ ⲛ̄ⲍⲏⲧⲟⲩ ⲭⲉ ϣⲁⲕⲟ̄ⲛ ⲡⲕⲟⲟⲍ ⲉⲧⲥⲁⲍⲁⲓ̈ⲧ ⲍⲙ ⲡⲧⲁⲡ",
       "core_english": "are firmly fixed within them. For habitually the figurehead which is set at the head,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ship-figurehead correspondence within cosmic system."
     },
@@ -122,8 +173,20 @@
       "chapter": 49,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲧⲁⲣⲭⲏ ⲙ̄ⲡⲧⲭⲁⲓ̈ ⲉϩⲡⲱⲍ ⲛ̄ⲙⲙⲟⲩⲓ̈ⲉ ⲉϩⲛⲟⲩⲭⲉ ⲙ̄{8}ⲁⲩ",
+      "core_coptic": "ⲛ̄ⲧⲁⲣⲭⲏ ⲙ̄ⲡⲧⲭⲁⲓ̈ ⲉϩⲡⲱⲍ ⲛ̄ⲙⲙⲟⲩⲓ̈ⲉ ⲉϩⲛⲟⲩⲭⲉ ⲙ̄{4}ⲁⲩ",
       "core_english": "at the front of the ship, cleaves the lions, casting them",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "(part of 'them')",
+          "basis": "Editor's restoration of single letter in ⲙ̄ⲙⲁⲩ ('them').",
+          "source_id": 4,
+          "section": 3037
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic mechanism description."
     },
@@ -132,8 +195,20 @@
       "chapter": 49,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲁ ⲡⲓⲥⲁ ⲙ̄ⲛ ⲡⲉⲓ̈ ⲡⲛⲉⲩ ⲟⲩⲛ ⲉⲧϩⲁⲡⲱⲣⲭ ⲙⲙⲟⲩ{9}",
+      "core_coptic": "ⲥⲁ ⲡⲓⲥⲁ ⲙ̄ⲛ ⲡⲉⲓ̈ ⲡⲛⲉⲩ ⲟⲩⲛ ⲉⲧϩⲁⲡⲱⲣⲭ ⲙⲙⲟⲩ{5}",
       "core_english": "to this side and to that, every hour separating the lions",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲓ̈ⲉⲩⲉ",
+          "english": "(plural ending of 'lions')",
+          "basis": "Editor's restoration completing ⲙⲙⲟⲩⲓ̈ⲉⲩⲉ ('lions') from visible ⲙⲙⲟⲩ-.",
+          "source_id": 5,
+          "section": 3038
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued cosmic mechanism."
     },
@@ -142,8 +217,30 @@
       "chapter": 49,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲧⲉ ⲡⲓⲭⲁⲓ̈ ⲉⲧⲙ̄ⲙⲉⲩ ⲟⲩⲉⲛ ⲁⲧⲙⲁⲩ ⲍⲙ ⲡⲉϩⲕⲟⲟ{10} ⲉⲧⲭ{11}",
-      "core_english": "of that ship, opening to those (lions) at his place which is {12}",
+      "core_coptic": "ⲛⲧⲉ ⲡⲓⲭⲁⲓ̈ ⲉⲧⲙ̄ⲙⲉⲩ ⲟⲩⲉⲛ ⲁⲧⲙⲁⲩ ⲍⲙ ⲡⲉϩⲕⲟⲟ{6} ⲉⲧⲭ{7}",
+      "core_english": "of that ship, opening to those (lions) at his place which is {7}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "(final letter)",
+          "basis": "Editor's restoration of single letter completing ⲡⲉϩⲕⲟⲟⲍ ('his place/figurehead').",
+          "source_id": 6,
+          "section": 3039
+        },
+        {
+          "id": 7,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲱⲧ",
+          "english": "extended/drawn",
+          "basis": "Editor's restoration of qualitative ⲉⲧⲭⲱⲧ from visible ⲉⲧⲭ-; possibly from ϫⲱⲧ 'stretch out, extend.'",
+          "source_id": 7,
+          "section": 3039
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued mechanism with damage placeholders."
     },
@@ -152,8 +249,20 @@
       "chapter": 49,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{13} ⲛⲧⲟⲩⲛⲟⲩ ⲉⲧⲙ̄ⲙⲉⲩ ⲉⲙⲡⲧⲁⲧⲉ ⲱⲥⲕ ϣⲱⲡⲉ ϣⲁⲣⲉ̄ ⲙⲙⲟⲩ",
-      "core_english": "{14} at that very hour, before delay comes, the",
+      "core_coptic": "{8} ⲛⲧⲟⲩⲛⲟⲩ ⲉⲧⲙ̄ⲙⲉⲩ ⲉⲙⲡⲧⲁⲧⲉ ⲱⲥⲕ ϣⲱⲡⲉ ϣⲁⲣⲉ̄ ⲙⲙⲟⲩ",
+      "core_english": "{8} at that very hour, before delay comes, the",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(initial letter)",
+          "basis": "Editor's restoration of single letter at line beginning.",
+          "source_id": 8,
+          "section": 3040
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Temporal description of cosmic mechanism."
     },
@@ -162,8 +271,20 @@
       "chapter": 49,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲓⲉⲩⲉ {15}ⲭⲧ̄ ⲙⲛ̄ ⲛⲟⲩⲉⲣⲏⲩ ⲍⲓⲡⲧⲁⲍⲟⲩ ⲙⲡⲧⲭⲁⲓ̈ ⲙⲁⲣⲉ̄ ⲡⲧⲙⲁ",
+      "core_coptic": "ⲓⲉⲩⲉ {9}ⲭⲧ̄ ⲙⲛ̄ ⲛⲟⲩⲉⲣⲏⲩ ⲍⲓⲡⲧⲁⲍⲟⲩ ⲙⲡⲧⲭⲁⲓ̈ ⲙⲁⲣⲉ̄ ⲡⲧⲙⲁ",
       "core_english": "lions are joined with one another upon their head of the ship, and the",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲙⲟⲩ",
+          "english": "(initial syllable)",
+          "basis": "Editor's restoration completing [ⲙⲟⲩ]ⲭⲧ̄ ('joined together').",
+          "source_id": 9,
+          "section": 3041
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic mechanism."
     },
@@ -174,6 +295,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲓ̈ⲧ ⲙ̄ⲡⲧⲭⲁⲓ̈ ⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲛ ⲧⲙⲏⲧⲉ ⲛ̄ⲙ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ",
       "core_english": "path of the ship reveals itself in the midst of the lions.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Path of ship through lions — cosmic mapping."
     },
@@ -184,6 +306,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲑⲉ ⲛⲟⲩⲍⲁⲗⲏⲧ ⲉϩⲧⲁⲓ̈ⲗⲉ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲧⲁⲏⲣ ⲉⲙⲁⲣⲉ ⲡⲉϩ",
       "core_english": "As a bird that ascends out from the air, and his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second analogy: bird in the air — both sides cosmic."
     },
@@ -194,6 +317,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁⲓ̈ⲧ ⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ ⲡⲧⲁⲏⲣ ⲍⲙ̄ ⲡⲓⲥⲙⲁⲧ ⲛⲛⲣⲱⲙⲉ",
       "core_english": "path does not reveal itself in the air — in the manner of the men",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of bird/sun analogy. 'Men in the sun' is internal cosmic-system reference, not contemporary social pointing."
     },
@@ -204,6 +328,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲙ̄ ⲡⲧⲣⲏ ⲍⲓⲍⲟⲩⲛ ⲛ̄ⲛⲁⲓⲍⲙⲉ ⲙⲁⲩϣⲟⲗⲁⲙⲗⲙ̄ ⲁⲛ ⲁⲍⲟⲩⲛ",
       "core_english": "in the sun: within the heavens, they do not mingle inward",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic non-mingling principle."
     },
@@ -214,6 +339,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲙⲉⲩ ⲟⲩⲧⲉ ⲙⲁⲕⲟⲡⲟⲩⲙⲁⲓ̈ⲧ ⲉϩⲥⲟⲩⲁⲛⲧ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲧⲁⲏⲣ",
       "core_english": "with them, neither do they cut their path to be recognized out from the air.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic principle — no path cut in air."
     },
@@ -224,6 +350,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡⲧⲣⲟⲭⲟⲥ ϩⲕⲱⲧⲉ ⲍⲛ̄ ⲛⲁⲓⲍⲙⲉ ⲙⲛ̄",
       "core_english": "Thus likewise is this of the Wheel: it turns within the heavens and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Application of analogy back to the Wheel cosmology."
     },
@@ -234,6 +361,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲧⲁⲏⲣ ⲙⲁⲣⲉ ⲡⲧⲣⲟⲭⲟⲥ ϣⲱⲱⲧ ⲛ̄ⲁⲓⲍⲙⲉ ⲟⲩⲧⲉ ⲛⲧⲁⲩ ⲍⲱ",
       "core_english": "the air; the Wheel does not cleave the heavens, nor do they (the heavens) them-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Final cosmological principle — Wheel/heavens non-cleavage."
     },
@@ -242,8 +370,20 @@
       "chapter": 49,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16} ⲛ̄ⲁⲓⲍⲙⲉ ⲙⲁⲩⲟⲗⲁⲙⲗⲙ̄ ⲁⲍⲟⲩⲛ ⲙⲛ ⲡⲧⲣⲟⲭⲟⲥ",
-      "core_english": "{17}, the heavens, mingle inward with the Wheel.",
+      "core_coptic": "{10} ⲛ̄ⲁⲓⲍⲙⲉ ⲙⲁⲩⲟⲗⲁⲙⲗⲙ̄ ⲁⲍⲟⲩⲛ ⲙⲛ ⲡⲧⲣⲟⲭⲟⲥ",
+      "core_english": "{10}, the heavens, mingle inward with the Wheel.",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲱⲩ",
+          "english": "(end of 'themselves')",
+          "basis": "Editor's restoration completing ⲍⲱⲱⲩ ('themselves') split across line break.",
+          "source_id": 10,
+          "section": 3049
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing cosmological statement; 100% substrate vocabulary."
     }

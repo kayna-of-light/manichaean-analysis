@@ -5,7 +5,7 @@
   "start_section": 1188,
   "end_section": 1205,
   "total_sections": 18,
-  "total_lacunae": 38,
+  "total_lacunae": 19,
   "segments": [
     {
       "section": 1188,
@@ -13,7 +13,19 @@
       "line": 4,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ ⲉⲧⲟⲩⲧⲣⲉⲛ ⲁⲣⲁϩ ⲉⲩⲧⲣⲉⲛ ⲁⲣⲁϩ ⲭⲉ ⲡⲓ̈ⲱⲧ",
-      "core_english": "{1} the Greatness, whom they name — they name him 'Father",
+      "core_english": "{0} the Greatness, whom they name — they name him 'Father",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲉ",
+          "english": "of",
+          "basis": "Editor restoration of genitive linker",
+          "source_id": 2,
+          "section": 1188
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question content begins — naming the Greatness 'Father'. Question itself reveals the teaching structure."
     },
@@ -22,8 +34,20 @@
       "chapter": 20,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲧⲙⲛⲧⲛⲁⲟ ⲉⲧⲃⲉ ⲉⲩ ⲛ̄ⲍⲱⲃ",
-      "core_english": "{3} the Greatness' — for what reason?",
+      "core_coptic": "{1} ⲧⲙⲛⲧⲛⲁⲟ ⲉⲧⲃⲉ ⲉⲩ ⲛ̄ⲍⲱⲃ",
+      "core_english": "{1} the Greatness' — for what reason?",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲉ",
+          "english": "of",
+          "basis": "Editor restoration of genitive linker",
+          "source_id": 3,
+          "section": 1189
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Completion of the substantive question. The question 'why is the Greatness called Father?' defines the entire teaching."
     },
@@ -34,6 +58,7 @@
       "classification": "mixed",
       "core_coptic": "ⲍⲁⲡⲣⲁ ⲛ̄ⲧⲙⲛⲧⲛⲁⲟ ⲭⲉ ⲟⲩⲉⲩ ⲧⲉ ⲭⲉ ⲥⲟⲩⲧⲣⲉⲛ ⲁ",
       "core_english": "concerning the Greatness — what is it that they name",
+      "apparatus": [],
       "removed_material": "Stripped 'to us' — petition residue from frame.",
       "temporal_note": "Substantive question content."
     },
@@ -44,6 +69,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲁⲥ ⲭⲉ ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ",
       "core_english": "her 'the Father of the Greatness'?",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Completion of the substantive question naming what is to be explained."
     },
@@ -54,6 +80,7 @@
       "classification": "mixed",
       "core_coptic": "ⲡⲓⲱⲧ ⲙⲉⲛ ⲛ̄ⲧⲁϩ ⲡⲉ ⲡϣⲁⲣⲡ ⲛ̄ⲧⲱⲕ",
       "core_english": "The Father indeed is the first who stands",
+      "apparatus": [],
       "removed_material": "Stripped 'to his disciples' — frame attribution residue.",
       "temporal_note": "Teaching response begins. apostolic_dialogue=37.5 reflects the residual frame; the body is substrate."
     },
@@ -64,6 +91,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲣⲉⲧϩ, ⲡⲉⲧⲉϣⲁⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ ⲭⲉ ⲡⲓ̈ⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛⲧⲛⲁⲟ.",
       "core_english": "fast — he whom they call 'the Father of the Greatness.'",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate identification: the First One who stands fast = Father of the Greatness."
     },
@@ -74,6 +102,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϩⲙⲛ̄ⲧⲛⲁⲟ ⲡⲉ ⲡⲛⲁⲟ ⲛ̄ⲕⲁⲍ, ⲡⲉⲓ̈ ⲉⲧϩⲟⲩⲏⲍ ⲉϩⲥⲙⲁⲛⲧ",
       "core_english": "The Greatness is the Great Land — this one who dwells, being established",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate cosmography: Greatness = Great Land. Domain → cosmic locus."
     },
@@ -82,8 +111,18 @@
       "chapter": 20,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲍⲏⲧϩ {4} ⲧⲟⲩⲥⲓⲁ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲉⲧⲭⲁⲩⲗⲉ ⲍⲁ ⲛ̄ⲛⲟⲩ",
-      "core_english": "in him {5} the substance of the Light which bears up under all the gods",
+      "core_coptic": "ⲛ̄ⲍⲏⲧϩ {2} ⲧⲟⲩⲥⲓⲁ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲉⲧⲭⲁⲩⲗⲉ ⲍⲁ ⲛ̄ⲛⲟⲩ",
+      "core_english": "in him {2} the substance of the Light which bears up under all the gods",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 4,
+          "section": 1195
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: substance of Light bearing up the gods. Pure cosmological structure."
     },
@@ -94,6 +133,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲧⲏⲣⲟⲩ ⲛ̄ⲣⲙ̄ⲙⲁⲁⲓ̈ ⲙⲛ̄ ⲛⲁⲅⲅⲉⲗⲟⲥ ⲙⲛ̄ ⲙ̄ⲙⲁⲛϣⲱⲡⲉ",
       "core_english": "the rich ones, with the angels and the dwelling-places",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate: cosmic inhabitants — gods, angels, dwelling-places."
     },
@@ -102,8 +142,18 @@
       "chapter": 20,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲥⲙⲁⲛⲧ ⲁⲭⲱϩ",
-      "core_english": "{7} established unto fullness.",
+      "core_coptic": "{3} ⲥⲙⲁⲛⲧ ⲁⲭⲱϩ",
+      "core_english": "{3} established unto fullness.",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 5,
+          "section": 1197
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate closing formula."
     },
@@ -112,8 +162,20 @@
       "chapter": 20,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲟⲩⲧⲉ ⲁⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲭⲉ",
-      "core_english": "{9} call the Third Ambassador",
+      "core_coptic": "{4}ⲟⲩⲧⲉ ⲁⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲭⲉ",
+      "core_english": "{4} call the Third Ambassador",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ϣⲁⲩⲙ",
+          "english": "Once again they",
+          "basis": "Editor restoration; standard formula opening parallel theological item, ϣⲁⲩⲙⲟⲩⲧⲉ 'they call'",
+          "source_id": 6,
+          "section": 1198
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: Third Ambassador (ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ) — key cosmic figure marker. cosmological_substrate=125."
     },
@@ -122,8 +184,20 @@
       "chapter": 20,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲡⲉ ⲡⲭⲁⲓ̈ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲛ̄ⲧⲉ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ",
-      "core_english": "{11} is the Vessel of Light of the Living Fire",
+      "core_coptic": "{5} ⲡⲉ ⲡⲭⲁⲓ̈ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲛ̄ⲧⲉ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ",
+      "core_english": "{5} is the Vessel of Light of the Living Fire",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲓ̈ⲱⲧ ⲧⲉϩⲙⲛⲧⲛⲁⲟ ⲡ",
+          "english": "'Father of the Greatness': it",
+          "basis": "Editor restoration paralleling the structure of lines 28-30 for the first Father",
+          "source_id": 7,
+          "section": 1199
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: Vessel of Light of the Living Fire — pure cosmography."
     },
@@ -132,8 +206,20 @@
       "chapter": 20,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12} ⲉϥⲥⲙⲁⲛⲧ ⲛⲥⲏⲧϥ:",
-      "core_english": "{13}, being established beneath him.",
+      "core_coptic": "{6} ⲉϥⲥⲙⲁⲛⲧ ⲛⲥⲏⲧϥ:",
+      "core_english": "{6}, being established beneath him.",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲡⲉⲧϩⲟⲩⲏⲥ ⲛ̄ⲏⲧϥ",
+          "english": "the one rooted within him",
+          "basis": "Editor restoration; ⲡⲉⲧϩⲟⲩⲏⲥ recurs in line 3 and line 10 in the same formula 'rooted in X, established beneath X.'",
+          "source_id": 8,
+          "section": 1200
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate locative formula — recurring 'established beneath him' as structural marker."
     },
@@ -142,8 +228,30 @@
       "chapter": 20,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲡⲧⲡⲣⲉ ϣⲁⲩⲙⲟⲩⲧⲉ̄ {15} ⲭⲉ ⲓⲱⲧ ⲥⲱϥ ⲁⲛ",
-      "core_english": "{16} the Radiance, they call {17} 'Father' likewise:",
+      "core_coptic": "{7} ⲡⲧⲡⲣⲉ ϣⲁⲩⲙⲟⲩⲧⲉ̄ {8} ⲭⲉ ⲓⲱⲧ ⲥⲱϥ ⲁⲛ",
+      "core_english": "{7} the Radiance, they call {8} 'Father' likewise:",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲓ̄ⲏ̄ⲥ",
+          "english": "Once again, Jesus",
+          "basis": "Editor restoration; ⲧⲧⲁⲗⲓⲛ ⲁⲛ is the standard sequence-marker; ⲓⲏⲥ ⲡⲧⲡⲣⲉ = 'Jesus the Radiance.'",
+          "source_id": 9,
+          "section": 1201
+        },
+        {
+          "id": 8,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲁⲣ",
+          "english": "to him (i.e. him)",
+          "basis": "Editor restoration; ϣⲁⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϥ is the standard idiom 'they call him.'",
+          "source_id": 10,
+          "section": 1201
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: Radiance/Column likewise called Father. Iterative naming-pattern."
     },
@@ -152,8 +260,20 @@
       "chapter": 20,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉϥ{18} ⲡⲉ ⲡⲧⲭⲁⲓ ⲛⲓ̈ⲙⲙⲟⲩⲗⲉⲩⲉ ⲉ̄ⲧⲁⲛⲥ̄ ⲡⲉⲧϩⲟⲩⲏⲥ",
-      "core_english": "his {19} is the beautiful abode of the counsels — the rooted one",
+      "core_coptic": "ⲧⲉϥ{9} ⲡⲉ ⲡⲧⲭⲁⲓ ⲛⲓ̈ⲙⲙⲟⲩⲗⲉⲩⲉ ⲉ̄ⲧⲁⲛⲥ̄ ⲡⲉⲧϩⲟⲩⲏⲥ",
+      "core_english": "his {9} is the beautiful abode of the counsels — the rooted one",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲙⲛⲧⲛⲁⲟ̄",
+          "english": "Greatness",
+          "basis": "Editor restoration; the formula 'his Greatness is X' recurs throughout this section.",
+          "source_id": 11,
+          "section": 1202
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: 'beautiful abode of the counsels' — cosmic locus."
     },
@@ -162,8 +282,40 @@
       "chapter": 20,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲁⲛ ⲁⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁ̄{21} ⲭⲉ ⲓⲱⲧ ⲧⲉ{22}",
-      "core_english": "{23} also call the Pillar of Gl{24} 'Father, his Gr{25}'",
+      "core_coptic": "{10} ⲁⲛ ⲁⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁ̄{11} ⲭⲉ ⲓⲱⲧ ⲧⲉ{12}",
+      "core_english": "{10} also call the Pillar of Gl{11} 'Father, his Gr{12}'",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ϣⲁⲩⲙⲟⲩⲧⲉ",
+          "english": "They call",
+          "basis": "Editor restoration; standard 'they call X' formula opening each cosmic title attribution.",
+          "source_id": 13,
+          "section": 1203
+        },
+        {
+          "id": 11,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲗ",
+          "english": "ory",
+          "basis": "Editor restoration completing ⲡⲉⲁ̄[ⲗ] = ⲡⲉⲁⲩ 'glory'; ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ = 'Pillar of Glory' per accumulated vocabulary.",
+          "source_id": 14,
+          "section": 1203
+        },
+        {
+          "id": 12,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ϩⲙⲛⲧⲛⲁⲟ̄",
+          "english": "eatness",
+          "basis": "Editor restoration; 'his Greatness' as identical formula to line 3 and 9.",
+          "source_id": 15,
+          "section": 1203
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: Pillar of Glory (ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ) called Father — cosmic figure."
     },
@@ -172,8 +324,46 @@
       "chapter": 20,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26} ⲡⲧⲟⲩ ⲛ̄ⲛⲟⲩⲧⲉ ⲛ̄{27} ⲉⲧⲟⲩⲁⲃ̄{28} ⲛⲉⲧ{29}",
-      "core_english": "{30} the five gods of {31} the holy ones, those {32}{33}",
+      "core_coptic": "{13} ⲡⲧⲟⲩ ⲛ̄ⲛⲟⲩⲧⲉ ⲛ̄{14} ⲉⲧⲟⲩⲁⲃ̄{15} ⲛⲉⲧ{16}",
+      "core_english": "{13} the five gods of {14} the holy ones, those {16}{15}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 16,
+          "section": 1204
+        },
+        {
+          "id": 14,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 17,
+          "section": 1204
+        },
+        {
+          "id": 15,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "y",
+          "basis": "Editor restoration completing ⲉⲧⲟⲩⲁⲃⲉ 'holy.'",
+          "source_id": 18,
+          "section": 1204
+        },
+        {
+          "id": 16,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "[who are]",
+          "basis": "Editor partial restoration of relative pronoun ⲛⲉⲧ[ⲟⲩ]ⲏⲥ continuing onto line 7.",
+          "source_id": 19,
+          "section": 1204
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: 'the five gods' — pentadic structure typical of substrate."
     },
@@ -182,8 +372,29 @@
       "chapter": 20,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34} ⲛⲥⲏⲧⲟⲩ ⲛ̄ⲧⲁⲩ {35}",
-      "core_english": "{36} beneath them, they {37}",
+      "core_coptic": "{17} ⲛⲥⲏⲧⲟⲩ ⲛ̄ⲧⲁⲩ {18}",
+      "core_english": "{17} beneath them, they {18}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲏⲥ ⲉⲧⲥⲙⲁⲛⲧ",
+          "english": "rooted, being established",
+          "basis": "Editor restoration; completing the same iterated formula 'rooted, established beneath them.'",
+          "source_id": 20,
+          "section": 1205
+        },
+        {
+          "id": 18,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 12,
+          "partial": "ⲩⲉ",
+          "source_id": 21,
+          "section": 1205
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate locative formula — structural pattern continues."
     }

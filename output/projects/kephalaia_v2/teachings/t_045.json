@@ -5,7 +5,7 @@
   "start_section": 2586,
   "end_section": 2659,
   "total_sections": 74,
-  "total_lacunae": 108,
+  "total_lacunae": 55,
   "segments": [
     {
       "section": 2586,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲁ ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛⲍ̄ ϣⲟⲩⲟ ⲡⲓϣⲁⲙⲧ̄ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲁⲃⲁⲗ",
       "core_english": "when the Father of Life poured forth these three Mighty Ones forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question — defines the teaching topic (Father of Life, three Mighty Ones)"
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲥⲁⲛⲧⲡⲉ ⲡⲁⲧⲙⲁⲩ ⲡⲁⲡⲕⲉⲕⲉ ⲙ̄ⲛ ⲡⲁⲧⲥⲉⲧⲉ ⲙⲏ ⲛ̄ⲧⲁϥ",
       "core_english": "from above — the one of the Mother, the one of the Darkness, and the one of the Fire — did he",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of question; tripartite cosmic mapping Mother/Darkness/Fire"
     },
@@ -34,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲟⲩⲱⲙ ⲁⲛⲟⲩⲍⲓⲧ ⲍⲙ̄ ⲡⲥⲡⲓⲣ ⲙ̄ⲡⲥⲧⲉⲣⲉⲱⲙⲁ ⲭⲛ̄ ⲙⲙⲁⲛ ⲛ̄",
       "core_english": "eat upon a single way upon the side of the firmament, or rather did he",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmological question continues — firmament-side reference"
     },
@@ -44,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁϥϣⲟⲩⲱⲙ ⲁⲡⲓⲕⲁⲍ ⲛ̄ϣⲁⲣⲡ ⲧⲟⲧⲉ ⲁϥⲥⲁⲍⲣⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲁⲍ",
       "core_english": "eat upon the first earth? Then he banished them out from the earth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "End of question / beginning of structural answer about banishment"
     },
@@ -53,7 +57,29 @@
       "line": 7,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ϥⲛⲁⲭⲟⲩ ⲁⲛⲟⲩⲧ{1}ⲥ",
-      "core_english": "{2}he cast them to a {3}place.'",
+      "core_english": "{0}he cast them to a {1}place.'",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(perfect prefix)",
+          "basis": "Editor restoration of perfect prefix ⲁ-.",
+          "source_id": 2,
+          "section": 2590
+        },
+        {
+          "id": 1,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲟⲡⲟ",
+          "english": "(completes 'place')",
+          "basis": "Editor restoration of ⲁⲛⲟⲩⲧⲟⲡⲟⲥ 'to a place' (Greek τόπος).",
+          "source_id": 3,
+          "section": 2590
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes the disciples' question — cosmic placement"
     },
@@ -62,8 +88,30 @@
       "chapter": 43,
       "line": 9,
       "classification": "mixed",
-      "core_coptic": "{4}ⲃⲉ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣ{5} ... ⲛ̄ⲧⲁⲣⲉ ⲡⲓⲱⲧ",
+      "core_coptic": "{2}ⲃⲉ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣ{3} ... ⲛ̄ⲧⲁⲣⲉ ⲡⲓⲱⲧ",
       "core_english": "concerning the Mighty Ones ... when the Father",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(completes 'concerning')",
+          "basis": "Editor restoration of ⲉⲧⲃⲉ 'concerning.'",
+          "source_id": 5,
+          "section": 2591
+        },
+        {
+          "id": 3,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(makes 'Mighty Ones')",
+          "basis": "Editor restoration of ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ 'Mighty Ones.'",
+          "source_id": 6,
+          "section": 2591
+        }
+      ],
       "removed_material": "Stripped 'thus is that which you shall come to know' — frame-introduction formula",
       "temporal_note": "Frame wraps substantive teaching topic; preserved cosmological referents"
     },
@@ -72,8 +120,30 @@
       "chapter": 43,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲡⲱⲛⲍ̄ ⲛⲟⲩⲉ ⲁϣ{7}ⲩⲟ ⲙ̄ⲡⲓϣⲁⲙⲧ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲛ̄ⲧⲁϥ",
-      "core_english": "{8}of Life was about to pour {9}forth these three Mighty Ones, he",
+      "core_coptic": "{4} ⲡⲱⲛⲍ̄ ⲛⲟⲩⲉ ⲁϣ{5}ⲩⲟ ⲙ̄ⲡⲓϣⲁⲙⲧ ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲛ̄ⲧⲁϥ",
+      "core_english": "{4}of Life was about to pour {5}forth these three Mighty Ones, he",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲉ",
+          "english": "of",
+          "basis": "Editor restoration of genitive ⲛ̄ⲧⲉ; 'the Father of Life.'",
+          "source_id": 7,
+          "section": 2592
+        },
+        {
+          "id": 5,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(completes 'pour out')",
+          "basis": "Editor restoration of ⲁϣⲟⲩⲟ 'to pour out.'",
+          "source_id": 8,
+          "section": 2592
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father of Life pours forth three Mighty Ones — cosmogonic narrative"
     },
@@ -82,8 +152,20 @@
       "chapter": 43,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲟⲩⲱⲙ ⲙ̄ⲡϣⲁⲙⲧ ⲁⲭ�m̄ ⲡⲓⲕⲁⲍ̄ ⲡⲟⲩⲉ ⲡⲟⲩⲉ ⲁⲧⲉϥⲛⲉⲉ ⲙⲛ",
-      "core_english": "{11}ate the three upon this earth, each one to his place and",
+      "core_coptic": "{6}ⲟⲩⲱⲙ ⲙ̄ⲡϣⲁⲙⲧ ⲁⲭ�m̄ ⲡⲓⲕⲁⲍ̄ ⲡⲟⲩⲉ ⲡⲟⲩⲉ ⲁⲧⲉϥⲛⲉⲉ ⲙⲛ",
+      "core_english": "{6}ate the three upon this earth, each one to his place and",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "(completes 'ate')",
+          "basis": "Editor restoration of ϣⲟⲩⲱⲙ 'ate.'",
+          "source_id": 9,
+          "section": 2593
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Each one to its cosmic place — substrate distribution"
     },
@@ -94,6 +176,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉϥⲕⲁⲓⲣⲟⲥ ⲁϥϣⲟⲩⲱⲙ ⲁϥⲍⲃⲣⲃⲱⲙⲟⲩ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁⲍ",
       "core_english": "his appointed time. He ate; he hurled them down to the earth.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmogonic action of Father of Life"
     },
@@ -102,8 +185,20 @@
       "chapter": 43,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲟⲧⲉ ⲁϥⲡⲁⲛⲕⲟⲩ ⲁϥⲭⲁⲗⲍⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲓⲕⲁⲍ ⲍⲛ̄ ⲧϣⲁⲙ",
-      "core_english": "{13}Then he drew them out, he cast them out from this earth in the three",
+      "core_coptic": "{7}ⲟⲧⲉ ⲁϥⲡⲁⲛⲕⲟⲩ ⲁϥⲭⲁⲗⲍⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲓⲕⲁⲍ ⲍⲛ̄ ⲧϣⲁⲙ",
+      "core_english": "{7}Then he drew them out, he cast them out from this earth in the three",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(makes 'then')",
+          "basis": "Editor restoration of ⲧⲟⲧⲉ.",
+          "source_id": 10,
+          "section": 2595
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Drawing out and casting — cosmogonic process"
     },
@@ -112,8 +207,20 @@
       "chapter": 43,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲛ̄ⲍⲃⲥⲱ ⲧⲁⲡⲧⲏⲩ ⲧⲁⲡⲙⲁⲩ ⲙⲛ̄ ⲧⲁⲧⲥⲉⲧⲉ ⲛⲉⲧⲟⲁⲗⲉ ⲁ",
-      "core_english": "{15}garments — that of the Wind, that of the Mother, with that of the Fire — those mounted upon",
+      "core_coptic": "{8} ⲛ̄ⲍⲃⲥⲱ ⲧⲁⲡⲧⲏⲩ ⲧⲁⲡⲙⲁⲩ ⲙⲛ̄ ⲧⲁⲧⲥⲉⲧⲉ ⲛⲉⲧⲟⲁⲗⲉ ⲁ",
+      "core_english": "{8}garments — that of the Wind, that of the Mother, with that of the Fire — those mounted upon",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲧⲉ",
+          "english": "three",
+          "basis": "Editor restoration of ⲧϣⲁⲙ[ⲧⲉ] 'three' (Lyc fem.)",
+          "source_id": 11,
+          "section": 2596
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three garments map: Wind/Mother/Fire — pure correspondence"
     },
@@ -122,8 +229,20 @@
       "chapter": 43,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16} ⲡⲉϥⲥⲱⲙⲁ ⲁϥϣⲟⲩⲱⲟⲩ ⲁϥⲡⲁⲍⲧⲟⲩ ⲁⲡϣⲁⲙⲧ ⲛ̄ⲍⲓⲓ̈ⲧ",
-      "core_english": "{17}his body. He poured them out, he cast them down upon the three roads",
+      "core_coptic": "{9} ⲡⲉϥⲥⲱⲙⲁ ⲁϥϣⲟⲩⲱⲟⲩ ⲁϥⲡⲁⲍⲧⲟⲩ ⲁⲡϣⲁⲙⲧ ⲛ̄ⲍⲓⲓ̈ⲧ",
+      "core_english": "{9}his body. He poured them out, he cast them down upon the three roads",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲭⲛ",
+          "english": "upon",
+          "basis": "Editor restoration; ⲁⲭⲛ̄ = Lyc ⲉϫⲛ̄ 'upon' splits across line break (line 32 ends ⲁ-, line 33 begins -ⲭⲛ̄ ⲡⲉϥⲥⲱⲙⲁ).",
+          "source_id": 12,
+          "section": 2597
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three roads — cosmic geography"
     },
@@ -132,8 +251,38 @@
       "chapter": 43,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲧⲁϥ{19}ⲛ̄ⲧⲟⲩ ⲁⲃⲁⲗ ⲍⲛ̄ ⲧⲟⲓⲛⲥⲙ{20}ⲉ ⲛⲛⲕⲟⲥⲙⲟⲥ",
-      "core_english": "{21}which he {22}established forth in the founding{23} of the cosmos",
+      "core_coptic": "{10}ⲧⲁϥ{11}ⲛ̄ⲧⲟⲩ ⲁⲃⲁⲗ ⲍⲛ̄ ⲧⲟⲓⲛⲥⲙ{12}ⲉ ⲛⲛⲕⲟⲥⲙⲟⲥ",
+      "core_english": "{10}which he {11}established forth in the founding{12} of the cosmos",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 13,
+          "section": 2598
+        },
+        {
+          "id": 11,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲥⲙ",
+          "english": "(makes 'established')",
+          "basis": "Editor restoration of ⲉⲧⲁϥⲥⲙⲛ̄ⲧⲟⲩ 'which he established them' (ⲥⲙⲛⲧ from ⲥⲙⲓⲛⲉ).",
+          "source_id": 14,
+          "section": 2598
+        },
+        {
+          "id": 12,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲓⲛ",
+          "english": "(makes 'founding')",
+          "basis": "Editor restoration of ⲧⲟⲓⲛⲥⲙⲓⲛⲉ 'founding/establishment' (action-noun on ⲥⲙⲓⲛⲉ).",
+          "source_id": 15,
+          "section": 2598
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Founding of the cosmos — cosmogonic"
     },
@@ -142,8 +291,36 @@
       "chapter": 43,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24} ⲛ̄ⲛ{25} ⲁⲩⲕ{26} ⲗⲁⲩⲉ ⲥⲱⲭⲡ̄",
-      "core_english": "{27} {28} {29} not anyone remained",
+      "core_coptic": "{13} ⲛ̄ⲛ{14} ⲁⲩⲕ{15} ⲗⲁⲩⲉ ⲥⲱⲭⲡ̄",
+      "core_english": "{13} {14} {15} not anyone remained",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 16,
+          "section": 2599
+        },
+        {
+          "id": 14,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲛ̄ⲛ_____",
+          "source_id": 17,
+          "section": 2599
+        },
+        {
+          "id": 15,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲁⲩⲕ___",
+          "source_id": 18,
+          "section": 2599
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavily damaged — context cosmogonic"
     },
@@ -152,8 +329,30 @@
       "chapter": 43,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲡⲧⲁϩⲟⲩ ϩⲓⲭⲛ ⲛϩⲟ ⲙⲡⲕⲁϩ ⲁⲃⲁⲗ ϩⲙ ⲡⲓϣⲁⲙⲧ {30}ⲁⲛ̄ⲭ{31}",
-      "core_english": "they have been set upon the faces of the earth out of the three {32}strongho{33}",
+      "core_coptic": "ⲁⲡⲧⲁϩⲟⲩ ϩⲓⲭⲛ ⲛϩⲟ ⲙⲡⲕⲁϩ ⲁⲃⲁⲗ ϩⲙ ⲡⲓϣⲁⲙⲧ {16}ⲁⲛ̄ⲭ{17}",
+      "core_english": "they have been set upon the faces of the earth out of the three {16}strongho{17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲙ",
+          "english": "the",
+          "basis": "Single letter [ⲙ] restored within ⲙ̄ⲙⲁⲛⲭⲓⲟⲡⲉ; the genitive linker plus initial ⲙ of the noun. Word continues to line 2.",
+          "source_id": 19,
+          "section": 2600
+        },
+        {
+          "id": 17,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "ld",
+          "basis": "Single letter [ⲓ] restored within ⲙⲁⲛⲭⲓⲟⲡⲉ — orthographic completion of certainly-readable word.",
+          "source_id": 20,
+          "section": 2600
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three strongholds — cosmic structure"
     },
@@ -164,6 +363,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲡⲉ ⲉⲧⲙ̄ⲙⲉⲩ ⲭⲉ ⲉⲕⲁⲇⲙ̄ ⲡⲟⲩⲙⲉⲓ̈ⲛⲉ ⲙⲛ̄ ⲡⲟⲩⲧⲩⲡⲟⲥ ⲉϩⲟⲩⲁⲛ",
       "core_english": "lds, those there, so that you may discern their likeness and their type, when they are mani-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Likeness/type (ⲙⲉⲓⲛⲉ/ⲧⲩⲡⲟⲥ) — correspondential vocabulary"
     },
@@ -172,8 +372,30 @@
       "chapter": 43,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲡⲉ{34}ⲓ̈{35}ⲓⲟⲛ ⲉⲧⲁϥⲥⲉⲡⲧⲉ ϩⲙ̄ ⲡⲙⲁⲩ ⲡⲉ",
-      "core_english": "fest forth out of the cosmos. The el{36}{37}ent which has been prepared in the water is",
+      "core_coptic": "ϩ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲡⲉ{18}ⲓ̈{19}ⲓⲟⲛ ⲉⲧⲁϥⲥⲉⲡⲧⲉ ϩⲙ̄ ⲡⲙⲁⲩ ⲡⲉ",
+      "core_english": "fest forth out of the cosmos. The el{18}{19}ent which has been prepared in the water is",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲧⲟ",
+          "english": "em",
+          "basis": "Editor's restoration of letters within Greek loanword ⲡⲉⲧⲟⲓⲭⲉⲓⲟⲛ = στοιχεῖον 'element' — unambiguous.",
+          "source_id": 21,
+          "section": 2602
+        },
+        {
+          "id": 19,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲭⲉ",
+          "english": "",
+          "basis": "Second letter-pair restored within ⲡⲉⲧⲟⲓ̈ⲭⲉⲓⲟⲛ 'the element.'",
+          "source_id": 22,
+          "section": 2602
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Element prepared in water — cosmic correspondence"
     },
@@ -184,6 +406,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲣⲱⲭⲉ̂ ⲙ̄ⲛ ⲡⲙⲁⲗⲁϩ ⲛ⸆ⲫⲁⲗⲁⲥⲥⲁ ⲉⲧⲙⲁⲗϩ ⲉⲧϩⲓϩⲟⲩⲛ ⲉⲧⲕⲱⲧⲉ",
       "core_english": "the burning, with the salt of the sea, the salty (one), which is within, which surrounds",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic geography: encircling salt sea"
     },
@@ -194,6 +417,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛ̄ⲕⲟⲥⲙⲟⲥ ⲡⲥⲉⲡⲧⲉ ⲇⲉ ϩⲱϥ ⲡⲉⲧⲁϥⲥⲉⲡⲧⲉ ⲁⲡⲕⲉⲕⲉ",
       "core_english": "to the cosmos. But the preparation, on its part, which he has prepared as the Darkness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Preparation against Darkness"
     },
@@ -202,8 +426,20 @@
       "chapter": 43,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲡⲓⲧⲁⲩ ⲛⲕⲙⲏⲙⲉ ⲉⲧϣⲟⲟⲡ ϩⲛ̄ ⲛⲕ{38} ⲙⲡⲥⲁⲙⲡⲣⲓ̈ⲉ",
-      "core_english": "is, is this mountain of darkness which exists in the {39} of the side-of-radiance",
+      "core_coptic": "ⲡⲉ ⲡⲓⲧⲁⲩ ⲛⲕⲙⲏⲙⲉ ⲉⲧϣⲟⲟⲡ ϩⲛ̄ ⲛⲕ{20} ⲙⲡⲥⲁⲙⲡⲣⲓ̈ⲉ",
+      "core_english": "is, is this mountain of darkness which exists in the {20} of the side-of-radiance",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲱⲧⲉ",
+          "english": "encompassing-circuits",
+          "basis": "Restoration of ⲕⲱⲧⲉ 'encompassing circuit' (in glossary) — the mountain of darkness exists ⲍⲛ̄ ⲛⲕⲱⲧⲉ ⲙⲡⲥⲁⲙⲡⲣⲓ̈ⲉ 'in the encompassing-circuits of the side of radiance.'",
+          "source_id": 23,
+          "section": 2605
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mountain of darkness / side-of-radiance — cosmic geography"
     },
@@ -214,6 +450,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲡⲧⲉⲗⲁⲏ ⲡⲥⲁⲡ ⲉⲧⲉⲣⲉ ⲡⲣⲏ ⲛⲁⲡⲡⲣⲉ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲙⲁⲣⲉ ⲗⲁⲁⲩ",
       "core_english": "unto the end. The time when the sun shines in the cosmos, no",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sun in cosmos — astronomical correspondence"
     },
@@ -224,6 +461,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲓ̈ⲁϩ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲛϩⲏⲧϥ̄ ⲉⲧⲃⲉ ⲡⲕⲉⲕⲉ ⲉⲧⲃⲉⲃⲉ",
       "core_english": "lamp of light becomes manifest forth from it because of the darkness which gushes",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lamp of light/darkness — cosmic light vs dark"
     },
@@ -232,8 +470,30 @@
       "chapter": 43,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃ{40} ⲉϥⲇⲱⲗⲡ ⲛ̄ⲧⲡⲉ ⲙ̄ⲙⲁϥ {41} ⲇⲉ ϩⲱⲱϥ",
-      "core_english": "{42}, covering the heaven from him. {43}, on its own part,",
+      "core_coptic": "ⲁⲃ{21} ⲉϥⲇⲱⲗⲡ ⲛ̄ⲧⲡⲉ ⲙ̄ⲙⲁϥ {22} ⲇⲉ ϩⲱⲱϥ",
+      "core_english": "{21}, covering the heaven from him. {22}, on its own part,",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲁⲗ ⲙⲙⲁϥ",
+          "english": "out forth from him",
+          "basis": "Editor's restoration completing ⲁⲃⲁⲗ ⲙⲙⲁϥ — standard directional 'forth from him.' First three letters ⲁⲃ visible.",
+          "source_id": 24,
+          "section": 2608
+        },
+        {
+          "id": 22,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲡⲥⲉⲡⲧⲉ",
+          "english": "the preparation",
+          "basis": "Editor's restoration of ⲡⲥⲉⲡⲧⲉ 'the preparation' — parallels lines 3, 5, 12 where same word appears in same construction.",
+          "source_id": 25,
+          "section": 2608
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic covering of heaven"
     },
@@ -244,6 +504,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲁϥⲥⲱⲭⲡ̄ ⲁⲡⲧⲁϩⲟⲩ ϩⲛ̄ ⲧⲥⲉⲧⲉ ϩⲓⲭⲙ̄ ⲡⲕⲁϩ ⲡⲉ ⲛⲧⲟⲩⲓ̈ⲉⲩⲉ ⲧⲏ",
       "core_english": "which has been left set in the fire upon the earth — these are the mountains, all",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fire in earth = mountains — cosmic correspondence"
     },
@@ -254,6 +515,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲟⲩ ⲙⲛ ⲙ̄ⲙⲟⲩⲉ ⲛⲉⲧⲉⲣⲉ ⲛⲥⲁⲗⲙⲉ ⲛⲧⲥⲉⲧⲉ ⲃⲉⲃⲉ ⲁϩⲣⲏⲓ̈ ⲛ̄ϩⲏ",
       "core_english": "of them, with the springs, in which the channels of the fire gush up forth from",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fire-channels in mountains — substrate correspondence"
     },
@@ -262,8 +524,20 @@
       "chapter": 43,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲟⲩ {44}ⲉⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁⲩ ⲛⲉⲓ̈ ⲅⲁⲣ ⲛⲉ ⲡⲥⲉⲡⲧⲉ ⲙ̄ⲡⲛⲁⲇ ⲙ̄ⲙⲁ",
-      "core_english": "them, {45} they manifest forth there. For these are the preparation of the great strong-",
+      "core_coptic": "ⲧⲟⲩ {23}ⲉⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁⲩ ⲛⲉⲓ̈ ⲅⲁⲣ ⲛⲉ ⲡⲥⲉⲡⲧⲉ ⲙ̄ⲡⲛⲁⲇ ⲙ̄ⲙⲁ",
+      "core_english": "them, {23} they manifest forth there. For these are the preparation of the great strong-",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲛⲥ",
+          "english": "and",
+          "basis": "Editor's restoration of ⲛ̄ⲥⲉ- conjunctive prefix; verb is ⲛ̄ⲥⲉⲟⲩⲱⲛϩ 'and they manifest.'",
+          "source_id": 26,
+          "section": 2611
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Great stronghold — cosmic geography"
     },
@@ -274,6 +548,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲭⲓⲟⲟⲣⲉ ⲡⲁⲓ̈⸆ⲁⲛⲟⲛ ⲉⲧⲁϥⲙⲟⲩⲭⲧ ⲙⲛ ⸆ⲥⲉⲧⲉ ⲉⲧⲛⲏⲩ ⲁϩⲣⲏⲓ",
       "core_english": "hold — this then which has been mingled with the fire that comes upward",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mingling of fire — substrate cosmogonic"
     },
@@ -282,8 +557,18 @@
       "chapter": 43,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ ⲙⲡⲕⲁϩ ⲁϩⲁⲛ ⲛⲧⲟⲩⲓ̈ⲉⲩⲉ ⲙⲛ ⲛⲥⲓⲃⲧ {46}",
-      "core_english": "out of the earth into the mountains and the slopes {47}",
+      "core_coptic": "ⲁⲃⲁⲗ ⲙⲡⲕⲁϩ ⲁϩⲁⲛ ⲛⲧⲟⲩⲓ̈ⲉⲩⲉ ⲙⲛ ⲛⲥⲓⲃⲧ {24}",
+      "core_english": "out of the earth into the mountains and the slopes {24}",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 31,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 27,
+          "section": 2613
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mountains/slopes — cosmic geography"
     },
@@ -292,8 +577,28 @@
       "chapter": 43,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁ ⲛⲉⲧⲉ ⲙⲁⲣⲉ ⸆ⲇⲉ ⲛ̄ⲱ{48}ⲛ ⲣⲱⲧ ⲛ̄ϩⲏⲧⲟⲩ ⲉⲣ{49}",
-      "core_english": "the places where no tr{50}ee grows in them {51}",
+      "core_coptic": "ⲙⲁ ⲛⲉⲧⲉ ⲙⲁⲣⲉ ⸆ⲇⲉ ⲛ̄ⲱ{25}ⲛ ⲣⲱⲧ ⲛ̄ϩⲏⲧⲟⲩ ⲉⲣ{26}",
+      "core_english": "the places where no tr{25}ee grows in them {26}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "",
+          "basis": "Single letter [ⲏ] restored within ⲱⲏⲛ 'tree' — unambiguous.",
+          "source_id": 28,
+          "section": 2614
+        },
+        {
+          "id": 26,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 29,
+          "section": 2614
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Places without trees — substrate cosmic geography"
     },
@@ -302,8 +607,18 @@
       "chapter": 43,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣ̄ϩⲟⲩⲟ ⲙⲡⲙⲁ ⲉⲧⲙⲙⲉⲩ ⲁⲃⲁⲗ ϩⲓⲧⲙ ⲡⲧⲙⲉⲗⲟⲥ ⲙⲛ {52}",
-      "core_english": "abound exceedingly, that very place, through the limb and {53}",
+      "core_coptic": "ⲣ̄ϩⲟⲩⲟ ⲙⲡⲙⲁ ⲉⲧⲙⲙⲉⲩ ⲁⲃⲁⲗ ϩⲓⲧⲙ ⲡⲧⲙⲉⲗⲟⲥ ⲙⲛ {27}",
+      "core_english": "abound exceedingly, that very place, through the limb and {27}",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 30,
+          "section": 2615
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate continuation"
     },
@@ -312,8 +627,19 @@
       "chapter": 43,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "{54} ⲉⲙⲁⲣⲉ ⸆ⲇⲉ ⲛⲱⲏⲛ",
-      "core_english": "{55} where no tree",
+      "core_coptic": "{28} ⲉⲙⲁⲣⲉ ⸆ⲇⲉ ⲛⲱⲏⲛ",
+      "core_english": "{28} where no tree",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 34,
+          "type": "lacuna",
+          "partial": "abgerieben (rubbed off)",
+          "est_chars": 30,
+          "source_id": 31,
+          "section": 2616
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate fragment"
     },
@@ -324,6 +650,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲱⲧ ⲙⲡⲙⲁ ⲉⲧⲙⲙⲉⲩ",
       "core_english": "grows in that very place.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes substrate teaching unit"
     },
@@ -334,6 +661,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲧⲃⲉ ⲙⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲉⲧ",
       "core_english": "concerning the strongholds that",
+      "apparatus": [],
       "removed_material": "Stripped 'that you may make known to us out' — petition formula",
       "temporal_note": "Substantive question topic preserved (the strongholds)"
     },
@@ -344,6 +672,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲱⲧⲉ ⲁⲡⲕⲟⲥⲙⲟⲥ ⲭⲉ ⲉⲧⲃⲉ ⲉⲩ ⲙ̄ⲡⲟⲩⲱⲟⲩⲱⲟⲩ ⲭⲛ̄ ⲛ̄ⲧⲡⲉ ⲁⲛ",
       "core_english": "surround the cosmos: for what reason were they not sent forth from the heaven to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question — strongholds surrounding cosmos"
     },
@@ -354,6 +683,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲟⲥⲥⲁ ⲉⲧⲁⲩⲥⲙⲛ̄ⲧⲟⲩ ⲁⲣⲁⲩ ⲁⲗⲗⲁ ⲉⲓⲙⲏⲧⲓ ⲛ̄ⲥⲉⲱⲟⲩⲱⲩ ⲛ̄ⲱⲁⲣⲡ",
       "core_english": "the fossae upon which they were established? But rather they were sent forth first",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fossae — cosmic structure of disciples' question"
     },
@@ -364,6 +694,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲕⲁϩ ⲙⲛⲛⲥⲱⲥ ⲛⲥⲉⲉⲱϩⲣⲉ ⲁⲣⲁⲩ ⲁⲃⲁⲗ ⲙⲡⲕⲁϩ ⲛⲥⲉⲛⲁⲭⲟⲩ ⲁϩⲣⲏ",
       "core_english": "to the earth, then they raised them up out of the earth, and they cast them up-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic process within question"
     },
@@ -374,6 +705,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲓ̈ ⲁⲛⲟⲩϩⲓⲧ",
       "core_english": "ward to the height.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "End of disciples' question"
     },
@@ -384,6 +716,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲛ̄ⲧⲁ ⲡⲓⲱⲧ ⲛ̄",
       "core_english": "the Father of",
+      "apparatus": [],
       "removed_material": "Stripped 'Be it known to you in this manner that this is' — frame transition",
       "temporal_note": "Frame transitions into substrate teaching with Father of Life"
     },
@@ -394,6 +727,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲡⲓⲱⲛϩ̣ ⲱⲟⲩⲟ ⲛⲓⲙⲁⲛ̄ⲭⲓⲟⲣⲉ ⲭⲛ ⲛⲡⲓⲡⲉ ⲁⲡⲕⲁϩ ⲛ̄ⲧⲁϥⲱⲟⲩⲱⲩ",
       "core_english": "Life sent forth the strongholds from the heaven to the earth — he sent them forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Father of Life sends forth strongholds — substrate cosmogony"
     },
@@ -404,6 +738,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲡⲓϩⲱⲃ ⲭⲉⲕⲁⲁⲥ ⲡⲙⲁⲩ ϩⲱϥ ⲁⲛ ⲡⲕⲉⲕⲉ ⲙⲛ̄ ⲧⲥⲉⲧⲉ ⲉⲧ",
       "core_english": "for this matter, in order that the water also and the darkness and the fire which",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Water/darkness/fire — tripartite cosmic elements"
     },
@@ -412,8 +747,20 @@
       "chapter": 43,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲟⲟⲡ ϩⲙ̄ ⲡⲓϣⲁⲙⲧ ⲛⲕⲁϩ ⲉⲩⲛⲁⲥⲱⲕ ⲛ̄{56}ⲓ ⲁϩⲣⲏⲓ̈ ⲟⲩⲃⲉ ⲛⲉ",
-      "core_english": "exist in the three earths might draw and {57}come up against those",
+      "core_coptic": "ϣⲟⲟⲡ ϩⲙ̄ ⲡⲓϣⲁⲙⲧ ⲛⲕⲁϩ ⲉⲩⲛⲁⲥⲱⲕ ⲛ̄{29}ⲓ ⲁϩⲣⲏⲓ̈ ⲟⲩⲃⲉ ⲛⲉ",
+      "core_english": "exist in the three earths might draw and {29}come up against those",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲥⲉ",
+          "english": "they",
+          "basis": "Editor's restoration of ⲛ̄ⲥⲉ- continuative prefix; verb is ⲛ̄ⲥⲉⲓ 'and they come.'",
+          "source_id": 33,
+          "section": 2626
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three earths drawing up against — cosmic process"
     },
@@ -422,8 +769,28 @@
       "chapter": 43,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲃⲁⲗ ⲛⲡⲧⲉ ⲛⲧⲉ ⲛⲕⲁϩ {58} ⲧⲟⲩⲃⲟ ⲛⲥⲉⲕ{59}",
-      "core_english": "that came down from above the earths {60} purification, and they {61}",
+      "core_coptic": "ⲧⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲃⲁⲗ ⲛⲡⲧⲉ ⲛⲧⲉ ⲛⲕⲁϩ {30} ⲧⲟⲩⲃⲟ ⲛⲥⲉⲕ{31}",
+      "core_english": "that came down from above the earths {30} purification, and they {31}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 47,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 34,
+          "section": 2627
+        },
+        {
+          "id": 31,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Single letter [ⲁ] restored within ⲛⲥⲉⲕⲁⲫⲁⲣⲓⲥⲉ 'and they purify' — beginning of Greek loan καθαρίζω.",
+          "source_id": 35,
+          "section": 2627
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Purification process — cosmic"
     },
@@ -432,8 +799,20 @@
       "chapter": 43,
       "line": 48,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲫⲁⲣⲓⲥⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲁϥⲱⲟⲩⲟ ⲛⲓⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁ{62}",
-      "core_english": "purify (them). For this reason he sent forth the strongholds downward to the eart{63}",
+      "core_coptic": "ⲫⲁⲣⲓⲥⲉ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲁϥⲱⲟⲩⲟ ⲛⲓⲙⲁⲛⲭⲓⲟⲟⲣⲉ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁ{32}",
+      "core_english": "purify (them). For this reason he sent forth the strongholds downward to the eart{32}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 48,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "h",
+          "basis": "Single letter [ϩ] restored at end of ⲡⲕⲁϩ 'the earth' — unambiguous.",
+          "source_id": 36,
+          "section": 2628
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Strongholds sent down — substrate cosmogony. Hortatory score is misleading: 'purify' here is cosmic purification not pastoral"
     },
@@ -444,6 +823,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲡⲙⲁⲩ ⲡⲁⲡⲕⲉⲕⲉ ⲙⲛ̄ ⲡⲁⲧⲥⲉⲧⲉ ⲭⲉⲕⲁⲁⲥ ϩⲱϥ ⲁⲛ ⲉⲣⲉ",
       "core_english": "those of the water, those of the darkness, and those of the fire — in order that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Tripartite enumeration: water/darkness/fire"
     },
@@ -452,8 +832,20 @@
       "chapter": 43,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲙⲁⲩ ⲡⲕⲉⲕⲉ ⲙⲛ̄ ⲧⲥⲉⲧⲉ ⲉⲧϣⲟⲟⲡ ϩⲛ̄ ⲛⲕⲁϩ ⲛⲁⲥⲱⲕ ⲁϩⲣⲏⲓ̈ {64}",
-      "core_english": "the water, the darkness and the fire that exist in the earths might draw upward {65}",
+      "core_coptic": "ⲡⲙⲁⲩ ⲡⲕⲉⲕⲉ ⲙⲛ̄ ⲧⲥⲉⲧⲉ ⲉⲧϣⲟⲟⲡ ϩⲛ̄ ⲛⲕⲁϩ ⲛⲁⲥⲱⲕ ⲁϩⲣⲏⲓ̈ {33}",
+      "core_english": "the water, the darkness and the fire that exist in the earths might draw upward {33}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 50,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "against",
+          "basis": "Editor's restoration of ⲟⲩ- beginning of ⲟⲩⲃⲉ 'against' — completes adversative phrase 'draw upward against those who...'",
+          "source_id": 37,
+          "section": 2630
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic tripartite drawing up"
     },
@@ -462,8 +854,20 @@
       "chapter": 43,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲉ ⲛⲏ ⲉⲧⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲃⲁⲗ ⲛⲡⲧⲉ ⲛ̄ⲱⲁⲣⲡ ⲙⲉⲛ ϩⲁⲧⲉϩ{66}",
-      "core_english": "against those that came down from above. First indeed, befor{67}",
+      "core_coptic": "ⲃⲉ ⲛⲏ ⲉⲧⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲃⲁⲗ ⲛⲡⲧⲉ ⲛ̄ⲱⲁⲣⲡ ⲙⲉⲛ ϩⲁⲧⲉϩ{34}",
+      "core_english": "against those that came down from above. First indeed, befor{34}",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "e",
+          "basis": "Single letter [ⲏ] restored at end of ϩⲁⲧⲉϩⲏ 'before' — unambiguous.",
+          "source_id": 38,
+          "section": 2631
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sequential cosmic process"
     },
@@ -472,8 +876,40 @@
       "chapter": 43,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛϩⲱⲃ ⲛⲓⲙ {68}ϥⲱⲟⲩⲟ ⲡⲙⲁⲩ ⲡⲥⲁⲣⲙⲉ {69}ⲉⲧⲟⲩ ⲛ̄ⲛⲁⲣⲭⲱ{70}",
-      "core_english": "everything, {71}he sent forth the water of Error, {72}their midst, of the archo{73}",
+      "core_coptic": "ⲛϩⲱⲃ ⲛⲓⲙ {35}ϥⲱⲟⲩⲟ ⲡⲙⲁⲩ ⲡⲥⲁⲣⲙⲉ {36}ⲉⲧⲟⲩ ⲛ̄ⲛⲁⲣⲭⲱ{37}",
+      "core_english": "everything, {35}he sent forth the water of Error, {36}their midst, of the archo{37}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Single letter [ⲁ] restored within ⲁϥⲱⲟⲩⲟ 'he sent forth' — unambiguous.",
+          "source_id": 39,
+          "section": 2632
+        },
+        {
+          "id": 36,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲧⲙ",
+          "english": "(in)",
+          "basis": "Editor's restoration of ⲧⲙ- beginning of ⲧⲙⲏⲧⲉ 'midst' (here ⲧⲙⲉⲧⲟⲩ 'their midst') — locates Water of Error among the archons.",
+          "source_id": 40,
+          "section": 2632
+        },
+        {
+          "id": 37,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "ns",
+          "basis": "Single letter [ⲛ] restored at end of ⲛⲁⲣⲭⲱⲛ 'the archons' — unambiguous.",
+          "source_id": 41,
+          "section": 2632
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Water of Error / archons — cosmic substrate"
     },
@@ -482,8 +918,38 @@
       "chapter": 43,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲛ̄ⲧⲡⲉ ⲁϥⲧ{74}ⲉ ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲁⲃⲁⲗ ⲙⲡ{75}{76}",
-      "core_english": "that are above. He puri{77}fied the firmaments out of the {78}{79}",
+      "core_coptic": "ⲉⲧⲛ̄ⲧⲡⲉ ⲁϥⲧ{38}ⲉ ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲁⲃⲁⲗ ⲙⲡ{39}{40}",
+      "core_english": "that are above. He puri{38}fied the firmaments out of the {39}{40}",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲃ",
+          "english": "",
+          "basis": "Editor's restoration of letters within ⲁϥⲧⲟⲩⲃⲉ 'he purified' — standard verb of cosmic purification.",
+          "source_id": 42,
+          "section": 2633
+        },
+        {
+          "id": 39,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ⲙⲁⲩ",
+          "english": "water",
+          "basis": "Editor's restoration of ⲡⲙⲁⲩ 'the water' — partial readable, completing the construction 'out of the water [of...]'.",
+          "source_id": 43,
+          "section": 2633
+        },
+        {
+          "id": 40,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 44,
+          "section": 2633
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Purification of firmaments — cosmic"
     },
@@ -492,8 +958,39 @@
       "chapter": 43,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "{80} ⲙ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ {81}ⲕⲉ ⲁϥⲱⲟⲩⲱⲩ ⲁⲡⲓⲧ{82}",
-      "core_english": "{83} the waters {84} of darkness; he sent them forth down{85}",
+      "core_coptic": "{41} ⲙ̄ⲙⲟⲩⲓ̈ⲉⲩⲉ {42}ⲕⲉ ⲁϥⲱⲟⲩⲱⲩ ⲁⲡⲓⲧ{43}",
+      "core_english": "{41} the waters {42} of darkness; he sent them forth down{43}",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 54,
+          "type": "lacuna",
+          "partial": ". (one trace)",
+          "est_chars": 1,
+          "source_id": 45,
+          "section": 2634
+        },
+        {
+          "id": 42,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲛⲕⲉ",
+          "english": "of the dark-",
+          "basis": "Editor's restoration of ⲛ̄ⲕⲉⲕⲉ 'of the darkness' — partial -ⲕⲉ visible; the waters of darkness are sent down.",
+          "source_id": 46,
+          "section": 2634
+        },
+        {
+          "id": 43,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲛⲉ ⲛⲧϩⲉ ⲉⲧⲉⲣⲉ ⲙ̄",
+          "english": "ward, in the manner that the…",
+          "basis": "Editor's restoration completing ⲁⲡⲓⲧⲛⲉ 'downward' and continuing 'in the manner that…' — standard typological-comparison formula begins next page.",
+          "source_id": 47,
+          "section": 2634
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Waters of darkness — substrate"
     },
@@ -504,6 +1001,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲟⲩⲗⲉⲩⲉ ⲍⲉⲗⲉ ϫⲛ ⲛⲧⲡⲉ ⲁⲧⲕⲁⲍ · ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ · ⲛⲓⲙⲙⲟⲩ-",
       "core_english": "Waters fell from heaven to earth; thus also are these waters,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Waters from heaven to earth — substrate process"
     },
@@ -514,6 +1012,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗⲉⲩⲉ ⲍⲱⲱϩ ⲉⲧⲓⲙⲡⲓⲧⲛⲉ ⲍⲛ ⲛⲕⲁⲍ · ⲁⲩⲥⲱⲕ ⲍⲱⲱϩ ⲁⲩⲉⲓ ⲁ-",
       "core_english": "themselves, which are below in the earth: they too were drawn; they came",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mirror cosmic process below"
     },
@@ -524,6 +1023,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲣⲏⲓ ⲓⲙⲡⲓⲧⲛⲉ ⲟⲩⲃⲉ ⲓⲙⲙⲟⲩⲗⲉ ⲉⲧⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲛⲧⲡⲉ ⲁⲛⲕⲁⲍ ·",
       "core_english": "upward from below to meet the waters that had come forth from heaven to the lands.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic kindred-meeting process"
     },
@@ -532,8 +1032,20 @@
       "chapter": 43,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "{86}ⲧⲟⲩⲃⲟ ⲁⲃⲁⲗ ⲛⲓⲙⲙⲟⲩⲗⲉⲩⲉ ⲛⲧⲙⲉⲧⲟⲩ ⲛ̄ⲕⲉⲕⲉ ⲉⲧϣⲟⲟⲡ ⲛⲍⲏⲧⲟⲩ ·",
-      "core_english": "{87} purified the waters from the Darkness which is in them.",
+      "core_coptic": "{44}ⲧⲟⲩⲃⲟ ⲁⲃⲁⲗ ⲛⲓⲙⲙⲟⲩⲗⲉⲩⲉ ⲛⲧⲙⲉⲧⲟⲩ ⲛ̄ⲕⲉⲕⲉ ⲉⲧϣⲟⲟⲡ ⲛⲍⲏⲧⲟⲩ ·",
+      "core_english": "{44} purified the waters from the Darkness which is in them.",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ⲁⲩ",
+          "english": "they (perfect prefix)",
+          "basis": "Editor's bracketed restoration [ⲁⲩ]ⲧⲟⲩⲃⲟ; standard 3pl perfect.",
+          "source_id": 48,
+          "section": 2638
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic purification of waters from Darkness"
     },
@@ -544,6 +1056,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲧⲉ ⲁϩⲥⲁⲍⲣⲟⲩ ⲁⲃⲁⲗ ⲁⲡⲥⲁⲛⲃⲁⲗ · ⲁϩⲉⲓⲧⲟⲩ ⲛⲟⲩⲛⲁⲅ ⲓⲙⲙⲁ-",
       "core_english": "Then they drove them forth to the outside, casting them into a great place",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Casting to outside place — cosmic geography"
     },
@@ -554,6 +1067,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛϫⲗⲟⲡⲉ ⲓⲙⲛ ⲟⲩⲥⲁⲃⲧ ⲛⲧⲉ ⲫⲁⲗⲁⲥⲥⲁ · ⲧⲉⲓ ⲉⲧⲕⲱⲧⲉ ⲁⲧⲕⲟⲥⲙⲟⲥ ·",
       "core_english": "of deceit, and a shore of the sea — this which surrounds the cosmos,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sea-shore surrounding cosmos — cosmic geography"
     },
@@ -564,6 +1078,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲓ ⲉ[ⲧⲉ]ⲡⲉ ⲛⲉϫⲏⲩ ⲡⲗⲉⲁ ⲛⲍⲏⲧⲥ · ⲙⲛⲛⲥⲁ ⲧⲙⲁⲩ ⲁϩ-",
       "core_english": "this in which the ships sail. After the water, was poured out",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ships sailing — cosmic seascape"
     },
@@ -574,6 +1089,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲟⲩⲟ ⲡⲕⲉⲕⲉ · ⲁϩⲧⲟⲩⲃⲟ ⲛⲛⲥⲧⲉⲣⲉⲱⲙⲁ · ⲁϩⲅⲁⲗⲅⲗ ⲁⲃⲁⲗ ⲓⲙ-",
       "core_english": "the Darkness; they purified the firmaments, rolling forth from",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Firmament purification — cosmic"
     },
@@ -584,6 +1100,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁⲩ ⲓⲙⲡⲕⲉⲕⲉ ⲉⲧⲟⲩⲁⲧⲡ ⲍⲁⲣⲁϩ · ⲁϩϣⲟⲩⲱϩ ⲁⲡⲓⲧⲛⲉ ⲁⲧⲕⲁⲍ ·",
       "core_english": "there the Darkness gathered upon him; they cast (it) down to the earth.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Darkness cast down to earth — cosmic process"
     },
@@ -594,6 +1111,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲍⲉ ⲉⲧⲁϩⲧⲟⲩⲃⲟ ⲛⲛⲥⲧⲉⲣⲉⲱⲙⲁ · ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲉⲧⲁϩⲧⲟⲩ[ⲃ]ⲟ ⲛ-",
       "core_english": "As they purified the firmaments, so also is this (the manner) in which they purified",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Parallel cosmic purification — substrate"
     },
@@ -604,6 +1122,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲕⲁⲍ · ⲁ ⲡⲕⲉⲕⲉ ⲉⲧⲍⲛ ⲛ̄ⲕⲁⲍ ⲥⲱⲕ ⲁⲍⲣⲏⲓ ⲟⲩⲃⲉ ⲡⲕⲉⲕⲉ [ⲉ]ⲧⲁⲩ-",
       "core_english": "the lands. The Darkness which is in the lands was drawn upward to meet the Darkness which had been",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Darkness kindred-meeting — substrate"
     },
@@ -612,8 +1131,30 @@
       "chapter": 43,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88} ⲁⲃⲁⲗ ⲛ̄ⲧⲡⲉ · ⲁϩⲥⲁⲍⲣⲟⲩ ⲁⲃⲁⲗ ⲓⲙⲡⲥⲛⲉⲩ · ⲁϩⲁⲧ{89} ⲁ-",
-      "core_english": "{90} forth from heaven; they drove them forth from both, gathering {91}",
+      "core_coptic": "{45} ⲁⲃⲁⲗ ⲛ̄ⲧⲡⲉ · ⲁϩⲥⲁⲍⲣⲟⲩ ⲁⲃⲁⲗ ⲓⲙⲡⲥⲛⲉⲩ · ⲁϩⲁⲧ{46} ⲁ-",
+      "core_english": "{45} forth from heaven; they drove them forth from both, gathering {46}",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 66,
+          "type": "restoration",
+          "coptic": "ϣⲟⲩⲱϩ",
+          "english": "cast",
+          "basis": "Editor's bracket [ϣⲟⲩⲱϩ]; verb of throwing/casting that fits 'cast forth from heaven' parallel to line 9 ⲁϩϣⲟⲩⲱϩ ⲁⲡⲓⲧⲛⲉ.",
+          "source_id": 49,
+          "section": 2646
+        },
+        {
+          "id": 46,
+          "segment": 66,
+          "type": "restoration",
+          "coptic": "ⲡⲟⲩ",
+          "english": "them",
+          "basis": "Editor's bracket ⲁϩⲁⲧ[ⲡⲟⲩ]: 3pl object suffix on ⲱⲧⲡ̄ 'gather'.",
+          "source_id": 50,
+          "section": 2646
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Driving forth from heaven — cosmic"
     },
@@ -622,8 +1163,37 @@
       "chapter": 43,
       "line": 67,
       "classification": "cosmological_substrate",
-      "core_coptic": "{92} {93} ⲉⲧⲙⲙⲉⲩ ⲛⲧⲉ ⲡⲕⲉⲕⲉ ⲧ{94}",
-      "core_english": "{95} {96} that yonder of the Darkness {97}",
+      "core_coptic": "{47} {48} ⲉⲧⲙⲙⲉⲩ ⲛⲧⲉ ⲡⲕⲉⲕⲉ ⲧ{49}",
+      "core_english": "{47} {48} that yonder of the Darkness {49}",
+      "apparatus": [
+        {
+          "id": 47,
+          "segment": 67,
+          "type": "restoration",
+          "coptic": "ⲁⲍⲟⲩⲛ",
+          "english": "in/within",
+          "basis": "Editor's bracket [ⲁⲍⲟⲩⲛ]; directional 'inward' continuing the gathering action from line 12.",
+          "source_id": 51,
+          "section": 2647
+        },
+        {
+          "id": 48,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 52,
+          "section": 2647
+        },
+        {
+          "id": 49,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 14,
+          "partial": "ⲧ",
+          "source_id": 53,
+          "section": 2647
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Darkness reference — fragment"
     },
@@ -632,8 +1202,18 @@
       "chapter": 43,
       "line": 68,
       "classification": "cosmological_substrate",
-      "core_coptic": "{98} ⲡⲙⲁⲩ · ⲁϩϣⲟⲩⲟ ⲁⲉ ⲧⲥⲉⲧⲉ ϫⲛ ⲛⲧⲡⲉ ⲁⲧⲕⲁⲍ ·",
-      "core_english": "{99} the water. And the fire was poured out from heaven to the earth.",
+      "core_coptic": "{50} ⲡⲙⲁⲩ · ⲁϩϣⲟⲩⲟ ⲁⲉ ⲧⲥⲉⲧⲉ ϫⲛ ⲛⲧⲡⲉ ⲁⲧⲕⲁⲍ ·",
+      "core_english": "{50} the water. And the fire was poured out from heaven to the earth.",
+      "apparatus": [
+        {
+          "id": 50,
+          "segment": 68,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 54,
+          "section": 2648
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fire poured from heaven — substrate"
     },
@@ -642,8 +1222,20 @@
       "chapter": 43,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ{100}ⲟⲩⲛⲟⲩ ⲉⲧⲓⲙⲙⲉⲩ · ⲁ ⲧⲥⲉⲧⲉ ⲁⲛ ⲉⲧⲁⲧⲡ ⲁⲍⲟⲩⲛ",
-      "core_english": "{101} hour. At that very moment also, the fire that was gathered within",
+      "core_coptic": "ⲙ{51}ⲟⲩⲛⲟⲩ ⲉⲧⲓⲙⲙⲉⲩ · ⲁ ⲧⲥⲉⲧⲉ ⲁⲛ ⲉⲧⲁⲧⲡ ⲁⲍⲟⲩⲛ",
+      "core_english": "{51} hour. At that very moment also, the fire that was gathered within",
+      "apparatus": [
+        {
+          "id": 51,
+          "segment": 69,
+          "type": "restoration",
+          "coptic": "ⲡⲓⲛⲉⲩ ⲛ̄ⲧ",
+          "english": "at that very",
+          "basis": "Surviving ⲙ[ at start and ⲟⲩⲛⲟⲩ 'hour' at end suggest temporal phrase ⲙ̄ⲡⲓⲛⲉⲩ ⲛ̄ⲧⲟⲩⲛⲟⲩ 'at that very hour' — common formula in this corpus.",
+          "source_id": 55,
+          "section": 2649
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fire gathered within — cosmic"
     },
@@ -654,6 +1246,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "[ⲍⲙ] ⲡⲕⲁⲍ ⲉⲧⲙⲡⲓⲧⲛⲉ ⲁⲥⲥⲱⲕ ⲁⲥⲉⲓ ⲁⲍⲣⲏⲓ ⲟⲩⲃⲉ ⲧⲉⲥⲥⲩⲧⲅⲉⲛⲏⲥ ·",
       "core_english": "[in] the lower earth was drawn, came up to meet its kindred.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fire meeting its kindred — cosmic process"
     },
@@ -664,6 +1257,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁ ⲥⲉⲧⲉ ⲟⲩⲱⲍ ⲁϫⲛ ⲥⲉⲧⲉ · ⲙⲛⲛⲥⲱⲥ ⲁϩⲥⲁⲍⲣⲉⲥ ⲁⲃⲁⲗ ⲁϩⲛⲁϫⲥ",
       "core_english": "Fire was added upon fire. Afterwards they drove it forth, casting it",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fire upon fire — substrate"
     },
@@ -674,6 +1268,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲉⲙⲛⲧⲉ ⲉⲧⲍⲓⲃⲁⲗ · ⲡⲉⲧⲁϩ[ⲥⲙⲛⲧϩ ⲁ]ⲣⲁⲩ ⲙⲡⲥⲁⲛⲃⲁⲗ ⲙⲡⲕⲟ-",
       "core_english": "into the West which is outside — that which had been [established for] them outside the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "West outside cosmos — cosmic geography"
     },
@@ -684,6 +1279,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲙⲟⲥ · ⲕⲁⲧⲁ ⲫⲉ ⲉⲧⲁϩⲧⲟⲩⲃⲟ ⲛⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲉⲧⲛ̄ⲧⲡⲉ̄ ⲁⲩⲙⲁ",
       "core_english": "cosmos. According to the manner in which they purified the firmaments which are above to be a place",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Firmament purification — substrate"
     },
@@ -692,8 +1288,19 @@
       "chapter": 43,
       "line": 74,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲓⲙⲙⲁⲍⲉ ⲙⲉⲛ ⲛⲙⲫⲱⲥⲧⲏⲣ {102}",
-      "core_english": "of going for the Illuminators {103}",
+      "core_coptic": "ⲓⲙⲙⲁⲍⲉ ⲙⲉⲛ ⲛⲙⲫⲱⲥⲧⲏⲣ {52}",
+      "core_english": "of going for the Illuminators {52}",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 74,
+          "type": "lacuna",
+          "est_chars": 20,
+          "partial": "abgerieben (rubbed off)",
+          "source_id": 56,
+          "section": 2654
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Illuminators here = celestial Lights (sun/moon path), not Mani — substrate astronomy"
     },
@@ -702,8 +1309,19 @@
       "chapter": 43,
       "line": 75,
       "classification": "cosmological_substrate",
-      "core_coptic": "{104} ⲏ ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲉⲧⲁϩⲧⲟⲩⲃⲟ ⲛⲛ̄ⲕⲁⲍ ⲉⲧⲙⲡⲓⲧⲛⲉ ⲁϩⲥⲱⲍ-",
-      "core_english": "{105} thus also is this the (manner) in which they purified the lands of the lower part, driving",
+      "core_coptic": "{53} ⲏ ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ ⲉⲧⲁϩⲧⲟⲩⲃⲟ ⲛⲛ̄ⲕⲁⲍ ⲉⲧⲙⲡⲓⲧⲛⲉ ⲁϩⲥⲱⲍ-",
+      "core_english": "{53} thus also is this the (manner) in which they purified the lands of the lower part, driving",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 75,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲏ",
+          "source_id": 57,
+          "section": 2655
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Parallel earth purification"
     },
@@ -712,8 +1330,18 @@
       "chapter": 43,
       "line": 76,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲉ ⲁⲃⲁⲗ ⲓⲙⲙⲁⲩ ⲛⲧⲥⲉⲧⲉ ⲙⲛ ⲡⲕⲉⲕⲉ ⲓⲙⲛ ⲡⲙⲁⲩ {106}",
-      "core_english": "forth from them the fire and the Darkness and the water {107}",
+      "core_coptic": "ⲣⲉ ⲁⲃⲁⲗ ⲓⲙⲙⲁⲩ ⲛⲧⲥⲉⲧⲉ ⲙⲛ ⲡⲕⲉⲕⲉ ⲓⲙⲛ ⲡⲙⲁⲩ {54}",
+      "core_english": "forth from them the fire and the Darkness and the water {54}",
+      "apparatus": [
+        {
+          "id": 54,
+          "segment": 76,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 58,
+          "section": 2656
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tripartite cosmic elements driven forth"
     },
@@ -724,6 +1352,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁϩⲧⲟⲩⲃⲁⲩ ⲁⲧⲅⲓⲛⲉⲓ ⲁⲍⲣⲏⲓ ⲛ†ϣⲁⲙⲧⲉ ⲛⲅⲁⲙ · ⲧⲁⲡⲧⲏⲩ · ⲡⲙⲁⲩ ·",
       "core_english": "they purified them, that the three powers might come up — that of the wind, the water,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three powers — Wind/Water/Fire enumeration"
     },
@@ -734,6 +1363,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ ⲧⲥⲉⲧⲉ · ⲛⲉⲧⲛⲏⲩ ⲁⲍⲣⲏⲓ ⲙⲡⲓⲙⲏⲧ ⲁⲃⲁⲗ ⲙⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲉⲧ-",
       "core_english": "and the fire — those which come up through the midst, forth from the Omophoros that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲱⲙⲟⲫⲟⲣⲟⲥ — key substrate cosmic figure (Earth-bearer)"
     },
@@ -744,6 +1374,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϫⲱⲃⲥ̄ ⲛⲛ̄ⲕⲁⲍ ·",
       "core_english": "bears the lands.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes Omophoros reference — substrate"
     }

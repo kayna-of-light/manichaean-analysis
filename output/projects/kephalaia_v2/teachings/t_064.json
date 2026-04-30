@@ -5,7 +5,7 @@
   "start_section": 3820,
   "end_section": 3840,
   "total_sections": 21,
-  "total_lacunae": 28,
+  "total_lacunae": 14,
   "segments": [
     {
       "section": 3820,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲟⲩⲉⲩ ⲧⲉ ⲧⲁⲅⲁⲡⲏ",
       "core_english": "What is the Love (ἀγάπη)?",
+      "apparatus": [],
       "removed_material": "Stripped frame formula '{0} ⲁⲛ ⲡⲁⲭⲉϥ {1}ⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ' / 'once more he said his disciples' — pure dialogue attribution.",
       "temporal_note": "Substantive cosmological question preserved; frame attribution stripped."
     },
@@ -23,7 +24,25 @@
       "line": 3,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲉ{1} ⲛⲓⲙ ⲉⲩⲙⲟⲩⲧⲉ ⲁⲣⲁⲥ ⲭⲉ ⲁⲅⲁⲡⲏ",
-      "core_english": "{2} every {3} which is called Love (ἀγάπη)",
+      "core_english": "{0} every {1} which is called Love (ἀγάπη)",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 2,
+          "section": 3821
+        },
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 3,
+          "section": 3821
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of the substantive question into teaching."
     },
@@ -32,8 +51,20 @@
       "chapter": 63,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲡⲉ ⲡϣⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛ̄ⲧⲛⲁϭ ⲡⲉⲧⲟⲩⲏϩ ϩⲙ̄ ⲡⲉϩ-",
-      "core_english": "{5} is the bond of the Greatness, that which dwells in his",
+      "core_coptic": "{2} ⲡⲉ ⲡϣⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛ̄ⲧⲛⲁϭ ⲡⲉⲧⲟⲩⲏϩ ϩⲙ̄ ⲡⲉϩ-",
+      "core_english": "{2} is the bond of the Greatness, that which dwells in his",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲅⲁⲡⲏ",
+          "english": "Love",
+          "basis": "ⲧ̄[ⲁⲅⲁ]ⲡⲏ — central ⲁⲅⲁ restored; preserved ⲧ̄ and ⲡⲏ secure the Greek loanword ἀγάπη with feminine article.",
+          "source_id": 4,
+          "section": 3822
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Love defined as the bond (ϣⲱⲧ) of the Greatness — internal cosmic correspondence."
     },
@@ -44,6 +75,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲁϩ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲛ̄ⲧⲁ ⲧⲙⲛ̄ⲧⲛⲟⲩⲧⲉ ⲧⲏⲣⲥ̄ ⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ",
       "core_english": "land which is in glory, in which the whole godhood was manifested forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Land of Light; whole godhood manifested — cosmic geography."
     },
@@ -52,8 +84,40 @@
       "chapter": 63,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲟⲩⲥⲱⲙⲁ ⲛⲟⲩⲱⲧ ⲉϩⲁⲛϩ̄ ⲡⲉ {7} {8}",
-      "core_english": "{9}. It is one body, joined: {10} {11}",
+      "core_coptic": "{3} ⲟⲩⲥⲱⲙⲁ ⲛⲟⲩⲱⲧ ⲉϩⲁⲛϩ̄ ⲡⲉ {4} {5}",
+      "core_english": "{3}. It is one body, joined: {4} {5}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲛϩⲏⲧϩ",
+          "english": "in it",
+          "basis": "[ⲛϩⲏⲧ]ϩ — preposition ⲛ̄ϩⲏⲧ⸗ with Lyc. ϩ for ϥ; refers to the land mentioned in line 2.",
+          "source_id": 5,
+          "section": 3824
+        },
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲡⲥⲛⲉⲩ",
+          "english": "the two",
+          "basis": "ⲡ]ⲥⲛⲉⲩ — article ⲡ- partially restored; standard ⲡⲥⲛⲉⲩ 'the two' as enumerative phrase.",
+          "source_id": 6,
+          "section": 3824
+        },
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲡϣⲱⲧ",
+          "english": "the bond",
+          "basis": "ⲡ]ϣⲱⲧ — article ⲡ- partially restored; same lexeme as line 1.",
+          "source_id": 7,
+          "section": 3824
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Single body unity-formula about the Greatness."
     },
@@ -62,8 +126,20 @@
       "chapter": 63,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12} ⲧⲉϩⲁⲅⲁⲡⲏ ⲉⲡⲉⲓⲁⲏ ⲁϩⲧⲉⲉϩ ⲟⲩⲁⲉⲧϩ ϩⲁ ϩⲱⲃ ⲛⲓⲙ",
-      "core_english": "{13} the love. Because he reached himself alone over every matter",
+      "core_coptic": "{6} ⲧⲉϩⲁⲅⲁⲡⲏ ⲉⲡⲉⲓⲁⲏ ⲁϩⲧⲉⲉϩ ⲟⲩⲁⲉⲧϩ ϩⲁ ϩⲱⲃ ⲛⲓⲙ",
+      "core_english": "{6} the love. Because he reached himself alone over every matter",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙⲛ",
+          "english": "with",
+          "basis": "[ⲙ]ⲛ — partially preserved conjunction ⲙⲛ̄ 'with, and.'",
+          "source_id": 8,
+          "section": 3825
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Etymological-cosmic explanation of why he is called Love."
     },
@@ -72,8 +148,20 @@
       "chapter": 63,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉϩϣⲟⲟⲡ ϩⲛ̄ {14} ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲙⲟⲩⲧⲉ ⲁⲡⲓ̈-",
-      "core_english": "that exists in {15}. Because of this they have called this Fa-",
+      "core_coptic": "ⲉϩϣⲟⲟⲡ ϩⲛ̄ {7} ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲙⲟⲩⲧⲉ ⲁⲡⲓ̈-",
+      "core_english": "that exists in {7}. Because of this they have called this Fa-",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲛⲉϩⲁⲓⲱⲛ",
+          "english": "his Aeons",
+          "basis": "ⲛⲉϩⲁ]ⲓⲱⲛ — Lyc. ⲛⲉϩ- 'his' + ⲁⲓⲱⲛ (Greek αἰών). Plural attested in glossary as ⲛⲉϩⲁⲓⲱⲛ.",
+          "source_id": 9,
+          "section": 3826
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲉⲧⲃⲉ ⲡⲉⲓ̈ ⲣⲱ ⲁⲩⲙⲟⲩⲧⲉ — naming-formula characteristic of substrate. Hortatory score is spurious (no actual exhortation)."
     },
@@ -84,6 +172,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲧ ⲡⲧⲝⲁⲓ̈ⲥ ⲙ̄ⲡⲧⲏⲣϩ ⲭⲉ ⲁⲅⲁⲡⲏ ⲉⲡⲉⲓⲁⲏ ⲁϩϯ ⲡϭⲣⲟ ⲛ̄",
       "core_english": "-ther, the Master of the All, 'Love,' because he gave the victory of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Father / Master of the All called Love — cosmic naming."
     },
@@ -92,8 +181,20 @@
       "chapter": 63,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16} ⲙⲛ̄ ⲛⲉϩⲙⲉⲗⲟⲥ",
-      "core_english": "{17} together with his members.",
+      "core_coptic": "{8} ⲙⲛ̄ ⲛⲉϩⲙⲉⲗⲟⲥ",
+      "core_english": "{8} together with his members.",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲛⲉϩⲁⲓⲱⲛ",
+          "english": "of his Aeons",
+          "basis": "ⲛⲉϩⲁ]ⲓⲱⲛ — same restoration as id 5; the victory belongs to the Aeons.",
+          "source_id": 10,
+          "section": 3828
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closes the Father-Love teaching unit."
     },
@@ -104,6 +205,7 @@
       "classification": "mixed",
       "core_coptic": "ⲟⲩⲉⲩ ϩⲱⲱϩ ⲡⲉ ⲡⲙⲁⲥⲧⲉ ⲡⲙⲁⲥⲧⲉ",
       "core_english": "And what then is hatred? Hatred",
+      "apparatus": [],
       "removed_material": "Stripped frame formula 'ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉϩ' / 'Once again he said' — pure attribution.",
       "temporal_note": "Substantive cosmological question opening the second teaching unit (on Hatred)."
     },
@@ -114,6 +216,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲡϣⲁⲣⲡ̄ ⲙ̄ⲙⲟⲩ ⲡⲉⲧⲁϩⲃⲉⲃⲉ ⲁϩⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲁϩ",
       "core_english": "is the first death, that which gushed forth and was manifested out of the land",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Hatred = first death from the land of Darkness — pure cosmic origin teaching."
     },
@@ -124,6 +227,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲕⲉⲕⲉ ⲡⲉⲓ̈ ⲭⲉ ⲁⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ ⲭⲉ ⲙⲁⲥⲧⲉ ⲉⲡⲉⲓⲁⲏ",
       "core_english": "of the Darkness — this is why they call it 'hatred,' because",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Etymological-cosmic naming-formula."
     },
@@ -134,6 +238,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁϩⲧⲉⲕⲟ ⲛⲧⲉϩⲙⲏⲥⲉ ⲧⲏⲣⲥ̄ ⲛ̄ⲧⲉ ⲡⲧⲉⲕⲟ ⲁϩⲣ̄ⲛⲁⲃⲉ ⲁⲕⲉ-",
       "core_english": "it destroyed her entire offspring of destruction; it sinned against another",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Internal cosmic action of Darkness/Hatred."
     },
@@ -144,6 +249,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϭⲁⲙ ⲛϣⲙⲙⲟ ⲁⲣⲁϩ ⲁϩⲧⲉⲕⲁⲥ ⲉⲧⲃⲉ ⲡⲉⲓ̈ ϣⲁⲩⲙⲟⲩⲧⲉ ⲁ-",
       "core_english": "power foreign to it, it destroyed her. Because of this they call",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Foreign power, naming-formula. Hortatory score spurious."
     },
@@ -152,8 +258,20 @@
       "chapter": 63,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲁϩ ⲭⲉ ⲡⲙⲉⲥⲧⲟⲩ ⲭⲉ ⲁϩⲉ{18}ⲣⲉ ⲛⲟⲩⲧⲉⲕⲟ ⲙⲛ̄ ⲟⲩⲱϭⲁ ⲉϩϩⲛ-",
-      "core_english": "it 'the hatred,' because it has {19} a destruction and a defect in",
+      "core_coptic": "ⲣⲁϩ ⲭⲉ ⲡⲙⲉⲥⲧⲟⲩ ⲭⲉ ⲁϩⲉ{9}ⲣⲉ ⲛⲟⲩⲧⲉⲕⲟ ⲙⲛ̄ ⲟⲩⲱϭⲁ ⲉϩϩⲛ-",
+      "core_english": "it 'the hatred,' because it has {9} a destruction and a defect in",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "wrought (in ⲁϩⲉⲓⲣⲉ)",
+          "basis": "ⲁϩⲉ]ⲓⲣⲉ — single letter ⲓ restored giving ⲁϩⲉⲓⲣⲉ = Lyc. ⲁϥⲉⲓⲣⲉ 'it has done/wrought.'",
+          "source_id": 25,
+          "section": 3834
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic-etymological explanation."
     },
@@ -164,6 +282,7 @@
       "classification": "mixed",
       "core_coptic": "ⲣⲝ̄ ⲙⲛ̄ ⲡⲉⲧⲉ ⲡⲱϩ ⲉⲙ ⲡⲉ",
       "core_english": "flesh, and (in) what is not its share.",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲙⲡⲟⲟⲩⲉ ⲁⲛ ϩⲉ{26}ⲣⲉ ⲛⲟⲩϣ{27}' / 'Today again they...' — temporal anchor pivoting to editorial present.",
       "temporal_note": "First clause completes substrate sentence; ⲙⲡⲟⲟⲩⲉ ('today') opens application layer."
     },
@@ -172,8 +291,20 @@
       "chapter": 63,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲓⲙ ϩⲛ̄ ⲧⲩⲡⲟⲥ ⲛⲓⲙ ⲡⲕⲉⲥⲧⲁⲩⲣⲟⲥ ⲁⲛ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧ{20}-",
-      "core_english": "in every type. The cross also of the Light — the {21}",
+      "core_coptic": "ⲛⲓⲙ ϩⲛ̄ ⲧⲩⲡⲟⲥ ⲛⲓⲙ ⲡⲕⲉⲥⲧⲁⲩⲣⲟⲥ ⲁⲛ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧ{10}-",
+      "core_english": "in every type. The cross also of the Light — the {10}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲡⲥⲩ",
+          "english": "soul (in ⲧⲡⲥⲩⲭⲏ)",
+          "basis": "ⲧ[†ⲩ]ⲭⲏ — Greek ψυχή; the symbol † here represents the ⲡⲥ ligature, completing ⲧⲡⲥⲩⲭⲏ 'the soul.'",
+          "source_id": 30,
+          "section": 3836
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲡⲕⲉⲥⲧⲁⲩⲣⲟⲥ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ — the Cross of Light, cosmic-substrate technical term."
     },
@@ -182,8 +313,20 @@
       "chapter": 63,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲏ ⲉⲧⲁⲛϩ̄ ⲛⲧⲁϩ ϩⲱϩ ⲁⲛ ϩⲧⲉⲕⲟ ⲙ̄ⲙⲁⲩ ϩⲙⲟⲩⲟⲩⲧ ⲙ̄{22}",
-      "core_english": "living soul — it itself also they destroyed, they killed {23}",
+      "core_coptic": "ⲭⲏ ⲉⲧⲁⲛϩ̄ ⲛⲧⲁϩ ϩⲱϩ ⲁⲛ ϩⲧⲉⲕⲟ ⲙ̄ⲙⲁⲩ ϩⲙⲟⲩⲟⲩⲧ ⲙ̄{11}",
+      "core_english": "living soul — it itself also they destroyed, they killed {11}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲙⲁⲩ",
+          "english": "them",
+          "basis": "ⲙ̄ⲙⲁ[ⲩ] — final ⲩ restored; standard 3pl object ⲙ̄ⲙⲁⲩ.",
+          "source_id": 31,
+          "section": 3837
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Soul (ⲯⲩⲭⲏ ⲉⲧⲁⲛϩ̄) — Manichaean cosmological substrate term continuous with Cross of Light."
     },
@@ -192,8 +335,20 @@
       "chapter": 63,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲉ ⲡⲙⲉⲥⲧⲟⲩ ⲡⲓⲁⲃⲁⲗ ⲙ̄ⲡⲙⲉⲥⲧⲟⲩ ⲡⲫⲑⲟⲛⲟⲥ ⲡⲓⲁⲃⲁⲗ {24}-",
-      "core_english": "'the hatred.' From the hatred — envy. From the {25}",
+      "core_coptic": "ⲭⲉ ⲡⲙⲉⲥⲧⲟⲩ ⲡⲓⲁⲃⲁⲗ ⲙ̄ⲡⲙⲉⲥⲧⲟⲩ ⲡⲫⲑⲟⲛⲟⲥ ⲡⲓⲁⲃⲁⲗ {12}-",
+      "core_english": "'the hatred.' From the hatred — envy. From the {12}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲙⲡ",
+          "english": "of the",
+          "basis": "[ⲙⲡ] — partitive genitive ⲙ̄ⲡ-; restored as continuation to ⲡⲫⲑⲟⲛⲟⲥ on line 33.",
+          "source_id": 33,
+          "section": 3838
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Genealogical chain hatred→envy→devil→wicked one — substrate enumeration of evil derivations."
     },
@@ -202,8 +357,20 @@
       "chapter": 63,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲫⲑⲟⲛⲟⲥ ⲡⲁⲁⲃⲟⲗⲟⲥ ⲡⲓⲁⲃⲁⲗ ⲙ̄ⲡⲁⲁⲃⲟⲗⲟⲥ ⲡⲡ{26}-",
-      "core_english": "envy — the devil. From the devil — the {27}",
+      "core_coptic": "ⲫⲑⲟⲛⲟⲥ ⲡⲁⲁⲃⲟⲗⲟⲥ ⲡⲓⲁⲃⲁⲗ ⲙ̄ⲡⲁⲁⲃⲟⲗⲟⲥ ⲡⲡ{13}-",
+      "core_english": "envy — the devil. From the devil — the {13}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲟⲛⲏ",
+          "english": "wicked- (continuing into next line)",
+          "basis": "ⲡⲡ[ⲟⲛⲏ] — Greek πονηρός 'wicked one'; ending -ⲣⲟⲥ visible at start of line 34.",
+          "source_id": 34,
+          "section": 3839
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of cosmological derivation chain."
     },
@@ -214,6 +381,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲟⲥ ⲡⲉⲧⲁϩϣⲱⲡⲉ ⲁⲃⲁⲗ ⲙ̄ⲡⲡⲟⲛⲏⲣⲟⲥ",
       "core_english": "wicked one — that which came forth from the wicked one.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the derivation chain — internal cosmic genealogy. Polemic flag triggered by ⲡⲟⲛⲏⲣⲟⲥ but here it is a cosmic principle within the chain, not an attack on rivals."
     }
