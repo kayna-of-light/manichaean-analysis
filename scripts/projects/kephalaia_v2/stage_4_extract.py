@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """
-Extract the core teaching layer from translated Kephalaia pages.
+Extract the core teaching layer from assembled Kephalaia chapters.
 
-Pipeline stage 4: runs AFTER stage_3_score.py, BEFORE stage_5_read.py.
+Pipeline stage 4: runs AFTER stage_3b_score.py, BEFORE stage_4b_teachings.py.
 
-This script sends each page to Claude WITH its pre-computed score data
+This script sends each chapter to Claude WITH its pre-computed score data
 as guidance. The LLM classifies each line segment by temporal layer.
 Layer categories are loaded dynamically from corpus_metadata.json (produced
 by stage_2_discover.py).
@@ -14,22 +14,22 @@ For mixed segments: oldest teaching extracted, removed material noted.
 For all others: core_text is null.
 
 Input:
-  - output/projects/kephalaia_v2/pages/p_NNN.json     (translation)
-  - output/projects/kephalaia_v2/scores/p_NNN.json    (scoring)
-  - output/projects/kephalaia_v2/corpus_metadata.json  (layer definitions)
+  - output/projects/kephalaia_v2/chapters/ch_NNN.json  (assembled chapter)
+  - output/projects/kephalaia_v2/scores/ch_NNN.json    (chapter scoring)
+  - output/projects/kephalaia_v2/corpus_metadata.json   (layer definitions)
 
 Output:
-  - output/projects/kephalaia_v2/core/p_NNN.json
+  - output/projects/kephalaia_v2/core/ch_NNN.json
 
 Usage:
     python scripts/projects/kephalaia_v2/stage_4_extract.py
-    python scripts/projects/kephalaia_v2/stage_4_extract.py --page 35
-    python scripts/projects/kephalaia_v2/stage_4_extract.py --range 10-50
+    python scripts/projects/kephalaia_v2/stage_4_extract.py --chapter 35
+    python scripts/projects/kephalaia_v2/stage_4_extract.py --range 1-50
     python scripts/projects/kephalaia_v2/stage_4_extract.py --dry-run
     python scripts/projects/kephalaia_v2/stage_4_extract.py --max-concurrency 4
 """
-import copy
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -42,6 +42,16 @@ from pipeline_base import (
     SCORES_DIR,
     PROJECT_DIR,
 )
+from stage_3b_score import (
+    load_corpus_metadata as _load_metadata_3b,
+    build_scoring_dicts,
+    score_text,
+    score_line,
+    build_bridge_patterns,
+    build_institutional_terms,
+)
+
+CHAPTERS_DIR = PROJECT_DIR / "chapters"
 
 
 # ---------------------------------------------------------------------------
@@ -96,18 +106,18 @@ def build_extract_tool(metadata: dict) -> dict:
         "name": "commit_extraction",
         "description": (
             "Commit the temporal layer classification for all segments "
-            "on this page. Call exactly once."
+            "in this chapter. Call exactly once."
         ),
         "input_schema": {
             "type": "object",
             "properties": {
-                "page": {
+                "chapter": {
                     "type": "integer",
-                    "description": "The manuscript page number.",
+                    "description": "The chapter number.",
                 },
                 "total_segments": {
                     "type": "integer",
-                    "description": "Total line segments on this page.",
+                    "description": "Total line segments in this chapter.",
                 },
                 "core_segments": {
                     "type": "integer",
@@ -119,22 +129,22 @@ def build_extract_tool(metadata: dict) -> dict:
                 "core_percentage": {
                     "type": "number",
                     "description": (
-                        "Estimated percentage of page content that is "
+                        "Estimated percentage of chapter content that is "
                         "core substrate teaching (0-100)."
                     ),
                 },
-                "page_note": {
+                "chapter_note": {
                     "type": "string",
                     "description": (
                         "Brief assessment: is the oldest teaching "
-                        "dominant on this page? Any distinctive features, "
+                        "dominant in this chapter? Any distinctive features, "
                         "editorial seams, or structural observations?"
                     ),
                 },
                 "segments": {
                     "type": "array",
                     "description": (
-                        "Classification for each line segment on the page."
+                        "Classification for each line segment in the chapter."
                     ),
                     "items": {
                         "type": "object",
@@ -196,8 +206,8 @@ def build_extract_tool(metadata: dict) -> dict:
                 },
             },
             "required": [
-                "page", "total_segments", "core_segments",
-                "core_percentage", "page_note", "segments",
+                "chapter", "total_segments", "core_segments",
+                "core_percentage", "chapter_note", "segments",
             ],
         },
     }
@@ -515,10 +525,10 @@ same hand at the same time.
 
 ## YOUR TASK
 
-You receive a page with:
-1. The translated line segments (Coptic + English + apparatus notes)
-2. The per-segment vocabulary scores
-3. Page-level features (teaching purity, editorial fatigue, damage)
+You receive a chapter with:
+1. The translated line segments (Coptic + English + page attribution)
+2. The per-segment vocabulary scores (computed from Coptic text)
+3. Chapter-level features (teaching purity, editorial fatigue, damage)
 
 Classify each segment by temporal layer. For {substrate_id} and mixed, \
 preserve the core teaching Coptic and English verbatim (both fields). \
@@ -615,6 +625,9 @@ class ExtractStage(PipelineStage):
         self.metadata: dict = {}
         self._system_prompt: str = ""
         self._substrate_id: str = "cosmological_substrate"
+        self._scoring_dicts: dict = {}
+        self._bridge_patterns: list = []
+        self._institutional_terms: set = set()
 
     def run(self) -> None:
         """Override to load metadata before base run."""
@@ -626,6 +639,11 @@ class ExtractStage(PipelineStage):
         self.tool_schema = build_extract_tool(self.metadata)
         self._system_prompt = build_system_prompt(self.metadata)
 
+        # Build scoring infrastructure for per-line scores
+        self._scoring_dicts = build_scoring_dicts(self.metadata)
+        self._bridge_patterns = build_bridge_patterns(self.metadata)
+        self._institutional_terms = build_institutional_terms(self.metadata)
+
         print(f"  Metadata: {len(vocabs)} scoring layers, "
               f"substrate = '{self._substrate_id}'")
 
@@ -635,134 +653,141 @@ class ExtractStage(PipelineStage):
         return self._system_prompt
 
     def get_input_dir(self) -> Path:
-        return PAGES_DIR
+        return CHAPTERS_DIR
 
     def get_output_dir(self) -> Path:
         return PROJECT_DIR / "core"
 
+    def add_arguments(self, parser) -> None:
+        """Add --chapter as alias for --page."""
+        parser.add_argument(
+            "--chapter", "-c", type=int, nargs="+", default=None,
+            help="Chapter number(s) to process (alias for --page)",
+        )
+
     def list_available(self) -> list[int]:
-        """Only pages that have BOTH translation and score output."""
-        import re as _re
-        pages_available = set()
-        for path in sorted(PAGES_DIR.glob("p_*.json")):
-            m = _re.match(r"p_(\d+)\.json", path.name)
+        """Chapters that have BOTH assembled text and score output."""
+        chapters_available = set()
+        for path in sorted(CHAPTERS_DIR.glob("ch_*.json")):
+            m = re.match(r"ch_(\d+)\.json", path.name)
             if m:
-                pages_available.add(int(m.group(1)))
+                chapters_available.add(int(m.group(1)))
 
         scores_available = set()
-        for path in sorted(SCORES_DIR.glob("p_*.json")):
-            m = _re.match(r"p_(\d+)\.json", path.name)
+        for path in sorted(SCORES_DIR.glob("ch_*.json")):
+            m = re.match(r"ch_(\d+)\.json", path.name)
             if m:
                 scores_available.add(int(m.group(1)))
 
-        return sorted(pages_available & scores_available)
+        return sorted(chapters_available & scores_available)
+
+    def is_done(self, page_num: int) -> bool:
+        """Check if output already exists for this chapter."""
+        return (
+            self.get_output_dir() / f"ch_{page_num:03d}.json"
+        ).exists()
+
+    def save_output(self, page_num: int, data: dict) -> None:
+        """Save the output JSON for a chapter (thread-safe)."""
+        from threading import Lock
+        output_dir = self.get_output_dir()
+        output_dir.mkdir(parents=True, exist_ok=True)
+        path = output_dir / f"ch_{page_num:03d}.json"
+        from pipeline_base import _write_lock
+        with _write_lock:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+
+    def select_pages(self, all_pages: list[int]) -> list[int]:
+        """Override to support --chapter as alias for --page."""
+        # If --chapter was used, treat as --page
+        if self.args.chapter is not None and self.args.page is None:
+            self.args.page = self.args.chapter
+        return super().select_pages(all_pages)
 
     def build_user_message(self, page_num: int) -> str:
-        """Load page + score data and format into user message."""
-        page_data = self.load_page_json(page_num, PAGES_DIR)
-        score_data = self.load_page_json(page_num, SCORES_DIR)
+        """Load chapter + score data and format into user message."""
+        ch_path = CHAPTERS_DIR / f"ch_{page_num:03d}.json"
+        score_path = SCORES_DIR / f"ch_{page_num:03d}.json"
 
-        if page_data is None:
-            print(f"  ERROR: No page data for p.{page_num}")
+        if not ch_path.exists():
+            print(f"  ERROR: No chapter data for ch.{page_num}")
             return None
-        if score_data is None:
-            print(f"  ERROR: No score data for p.{page_num}")
+        if not score_path.exists():
+            print(f"  ERROR: No score data for ch.{page_num}")
             return None
 
-        # Format page translation
-        lines_section = self._format_translation(page_data)
+        with open(ch_path, encoding="utf-8") as f:
+            chapter_data = json.load(f)
+        with open(score_path, encoding="utf-8") as f:
+            score_data = json.load(f)
 
-        # Format score data
-        scores_section = self._format_scores(score_data)
+        # Format chapter translation
+        lines_section = self._format_translation(chapter_data)
 
+        # Format score data (chapter-level + per-line)
+        scores_section = self._format_scores(chapter_data, score_data)
+
+        title = chapter_data.get("title", "")
         return (
-            f"## Page {page_num} — Translation\n\n"
+            f"## Chapter {page_num}: {title}\n\n"
             f"{lines_section}\n\n"
-            f"## Page {page_num} — Text-Critical Score Data\n\n"
+            f"## Chapter {page_num} — Text-Critical Score Data\n\n"
             f"{scores_section}\n\n"
             f"Classify each segment by temporal layer. "
             f"Call commit_extraction with the complete classification."
         )
 
-    def _format_translation(self, page_data: dict) -> str:
+    def _format_translation(self, chapter_data: dict) -> str:
         """Format translated lines for the prompt."""
-        lines = page_data.get("lines", [])
-        apparatus = page_data.get("apparatus", [])
-
+        lines = chapter_data.get("lines", [])
         parts = []
 
-        # Header
-        header = page_data.get("header", {})
-        if header:
-            parts.append(
-                f"Header: {header.get('title_coptic', '—')} "
-                f"= {header.get('title_english', '—')}"
-            )
-            parts.append("")
+        current_page = None
+        for line in lines:
+            page = line.get("_page")
+            if page != current_page:
+                current_page = page
+                parts.append(f"\n--- p.{page} ---")
 
-        # Lines
-        for seg in lines:
-            i = seg["i"]
-            n = seg["n"]
-            coptic = seg.get("coptic") or "[NULL — line lost]"
-            english = seg.get("english") or "[NULL — line lost]"
-            ba = " [BREAK]" if seg.get("break_after") else ""
-            parts.append(f"[i={i}, n={n}]{ba}")
+            i = line["i"]
+            n = line.get("n", i + 1)
+            coptic = line.get("coptic") or "[NULL — line lost]"
+            english = line.get("english") or "[NULL — line lost]"
+            parts.append(f"[i={i}, n={n}]")
             parts.append(f"  Coptic:  {coptic}")
             parts.append(f"  English: {english}")
 
-        # Apparatus summary
-        if apparatus:
-            parts.append("")
-            parts.append(f"Apparatus: {len(apparatus)} entries")
-            for a in apparatus[:20]:  # Limit to avoid token overflow
-                aid = a["id"]
-                atype = a["type"]
-                seg = a.get("segment", "?")
-                if atype == "lacuna":
-                    est = a.get("est_chars", "?")
-                    parts.append(
-                        f"  {{{aid}}} seg={seg} lacuna ~{est}ch"
-                    )
-                else:
-                    cop = a.get("coptic", "")
-                    eng = a.get("english", "")
-                    parts.append(
-                        f"  {{{aid}}} seg={seg} restoration: "
-                        f"{cop} = {eng}"
-                    )
-
         return "\n".join(parts)
 
-    def _format_scores(self, score_data: dict) -> str:
+    def _format_scores(self, chapter_data: dict, score_data: dict) -> str:
         """Format score data for the prompt.
 
-        Uses the actual keys from stage_3 output:
-        - page_scores: {layer_id: density} for each metadata layer
-        - page_features: {teaching_purity, editorial_fatigue_score, ...}
-        - segments: [{i, n, scores: {layer_id: density}, is_null, ...}]
-        - structural_units, damage, seam_flags, seams
+        Includes chapter-level features from the score file, plus
+        per-line scores computed on the fly from the chapter lines.
         """
         parts = []
+        lines = chapter_data.get("lines", [])
 
-        # Page-level summary
-        ps = score_data.get("page_scores", {})
-        pf = score_data.get("page_features", {})
-        damage = score_data.get("damage", {})
+        # Chapter-level summary from score file
+        parts.append("### Chapter-level features")
+        parts.append(f"- Title: {score_data.get('title', '—')}")
+        parts.append(f"- Total lines: {score_data.get('total_lines', 0)}")
+        parts.append(
+            f"- Non-null lines: {score_data.get('non_null_lines', 0)}"
+        )
 
-        parts.append("### Page-level features")
-
-        # Report all layer scores by their actual keys
-        for layer_id, density in ps.items():
+        scores_mean = score_data.get("scores_mean", {})
+        for layer_id, density in scores_mean.items():
             if density > 0:
-                parts.append(f"- {layer_id}: {density}")
+                parts.append(f"- {layer_id} (mean): {density}")
 
-        # Teaching purity and editorial fatigue
-        tp = pf.get("teaching_purity")
+        features = score_data.get("features", {})
+        tp = features.get("teaching_purity")
         if tp is not None:
             parts.append(f"- Teaching purity: {tp:.3f}")
 
-        fatigue = pf.get("editorial_fatigue_score", 0.0)
+        fatigue = features.get("editorial_fatigue_score", 0.0)
         parts.append(f"- Editorial fatigue score: {fatigue:.2f}")
         if fatigue > 0.5:
             parts.append(
@@ -775,7 +800,7 @@ class ExtractStage(PipelineStage):
             )
 
         # Fatigue detail per layer
-        detail = pf.get("editorial_fatigue_detail", {})
+        detail = features.get("editorial_fatigue_detail", {})
         for lid, vals in detail.items():
             shift = vals.get("shift", 0.0)
             if abs(shift) > 1.0:
@@ -786,70 +811,36 @@ class ExtractStage(PipelineStage):
                 )
 
         # Damage
+        damage = score_data.get("damage", {})
         parts.append(
             f"- Damage ratio: "
             f"{damage.get('damage_ratio', 0)*100:.1f}%"
         )
+        parts.append(f"- Seam flags: {score_data.get('seam_flags', 0)}")
         parts.append("")
 
-        # Structural units
-        units = score_data.get("structural_units", [])
-        if units:
-            parts.append(f"### Structural units ({len(units)})")
-            for u in units:
-                parts.append(
-                    f"  Unit: segments {u['start_i']}-{u['end_i']} "
-                    f"({u['segments']} segments)"
-                )
-            parts.append("")
-
-        # Build seam lookup for inline display
-        # seams array is parallel to segments — seams[i] = seam data for segment i
-        seams = score_data.get("seams", [])
-        seam_by_i = {}
-        for i, s in enumerate(seams):
-            if s.get("seam_flag"):
-                note = s.get("seam_note", "")
-                if not note:
-                    # Build note from available fields
-                    parts_s = []
-                    bp = s.get("bridge_phrase")
-                    if bp:
-                        parts_s.append(f"bridge: '{bp}'")
-                    inst = s.get("institutional_terms_found", [])
-                    if inst:
-                        parts_s.append(
-                            f"institutional: {', '.join(inst)}"
-                        )
-                    if s.get("register_shift"):
-                        parts_s.append("register shift")
-                    note = " + ".join(parts_s) if parts_s else (
-                        "editorial seam detected"
-                    )
-                seam_by_i[i] = note
-
-        # Per-segment scores (with seam flags inline)
-        segments = score_data.get("segments", [])
+        # Per-line scores (computed on the fly)
         parts.append("### Per-segment scores")
-        for seg in segments:
-            i = seg["i"]
-            scores = seg.get("scores", {})
-            is_null = seg.get("is_null", False)
-
-            if is_null:
+        for line in lines:
+            i = line["i"]
+            coptic = line.get("coptic")
+            if coptic is None:
                 parts.append(f"  [i={i}] NULL (line lost)")
                 continue
 
+            # Score this line against all vocabulary layers
+            scores = {}
+            for layer_id, markers in self._scoring_dicts.items():
+                s = score_text(coptic, markers)
+                if s > 0:
+                    scores[layer_id] = s
+
             score_str = " | ".join(
-                f"{k}={v}" for k, v in scores.items() if v > 0
+                f"{k}={v}" for k, v in scores.items()
             )
             if not score_str:
                 score_str = "no hits"
-
-            line = f"  [i={i}] {score_str}"
-            if i in seam_by_i:
-                line += f"\n    ⚠ SEAM: {seam_by_i[i]}"
-            parts.append(line)
+            parts.append(f"  [i={i}] {score_str}")
 
         return "\n".join(parts)
 

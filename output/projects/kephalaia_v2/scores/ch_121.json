@@ -1,0 +1,60 @@
+{
+  "chapter": 121,
+  "title": "Concerning the Sect of the Basket",
+  "total_lines": 78,
+  "non_null_lines": 72,
+  "scores_mean": {
+    "cosmological_substrate": 2.04,
+    "apostolic_dialogue": 4.49,
+    "manichaean_ecclesial": 5.34,
+    "manichaean_polemic": 4.64,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 146.67,
+    "apostolic_dialogue": 323.34,
+    "manichaean_ecclesial": 384.44,
+    "manichaean_polemic": 333.81,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.123,
+    "editorial_fatigue_score": -6.31,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 4.07,
+        "shift": 4.07
+      },
+      "apostolic_dialogue": {
+        "first_half": 7.13,
+        "second_half": 1.85,
+        "shift": -5.28
+      },
+      "manichaean_ecclesial": {
+        "first_half": 10.68,
+        "second_half": 0.0,
+        "shift": -10.68
+      },
+      "manichaean_polemic": {
+        "first_half": 9.27,
+        "second_half": 0.0,
+        "shift": -9.27
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 78,
+    "null_lines": 6,
+    "segments_with_gaps": 68,
+    "lacunae": 134,
+    "restorations": 1,
+    "damage_ratio": 0.872
+  },
+  "seam_flags": 1
+}

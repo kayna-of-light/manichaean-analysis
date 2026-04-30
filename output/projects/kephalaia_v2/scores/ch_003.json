@@ -1,0 +1,60 @@
+{
+  "chapter": 3,
+  "title": "The Interpretation of Happiness, Wisdom and Power; what they signify.",
+  "total_lines": 61,
+  "non_null_lines": 61,
+  "scores_mean": {
+    "cosmological_substrate": 6.09,
+    "apostolic_dialogue": 7.32,
+    "manichaean_ecclesial": 9.02,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 371.66,
+    "apostolic_dialogue": 446.67,
+    "manichaean_ecclesial": 550.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.272,
+    "editorial_fatigue_score": 1.81,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 6.94,
+        "second_half": 5.27,
+        "shift": -1.67
+      },
+      "apostolic_dialogue": {
+        "first_half": 11.0,
+        "second_half": 3.76,
+        "shift": -7.24
+      },
+      "manichaean_ecclesial": {
+        "first_half": 1.67,
+        "second_half": 16.13,
+        "shift": 14.46
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 61,
+    "null_lines": 0,
+    "segments_with_gaps": 56,
+    "lacunae": 111,
+    "restorations": 0,
+    "damage_ratio": 0.918
+  },
+  "seam_flags": 2
+}

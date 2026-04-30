@@ -1,0 +1,60 @@
+{
+  "chapter": 106,
+  "title": "There is no Joy that shall remain in the World till the End.",
+  "total_lines": 36,
+  "non_null_lines": 36,
+  "scores_mean": {
+    "cosmological_substrate": 1.39,
+    "apostolic_dialogue": 1.98,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.83
+  },
+  "scores_total": {
+    "cosmological_substrate": 50.0,
+    "apostolic_dialogue": 71.43,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 30.0
+  },
+  "features": {
+    "teaching_purity": 0.33,
+    "editorial_fatigue_score": -0.58,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 2.78,
+        "second_half": 0.0,
+        "shift": -2.78
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.97,
+        "second_half": 0.0,
+        "shift": -3.97
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 1.67,
+        "shift": 1.67
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 36,
+    "null_lines": 0,
+    "segments_with_gaps": 25,
+    "lacunae": 34,
+    "restorations": 0,
+    "damage_ratio": 0.694
+  },
+  "seam_flags": 0
+}

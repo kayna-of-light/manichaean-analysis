@@ -1,0 +1,60 @@
+{
+  "chapter": 4,
+  "title": "Concerning the Four Great Days that have come forth from one another, together with the Four Nights",
+  "total_lines": 97,
+  "non_null_lines": 94,
+  "scores_mean": {
+    "cosmological_substrate": 11.44,
+    "apostolic_dialogue": 1.89,
+    "manichaean_ecclesial": 2.13,
+    "manichaean_polemic": 0.92,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 1075.63,
+    "apostolic_dialogue": 177.78,
+    "manichaean_ecclesial": 200.0,
+    "manichaean_polemic": 86.36,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.699,
+    "editorial_fatigue_score": -1.55,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 13.52,
+        "second_half": 9.37,
+        "shift": -4.15
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.78,
+        "second_half": 0.0,
+        "shift": -3.78
+      },
+      "manichaean_ecclesial": {
+        "first_half": 4.26,
+        "second_half": 0.0,
+        "shift": -4.26
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 1.84,
+        "shift": 1.84
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 97,
+    "null_lines": 3,
+    "segments_with_gaps": 82,
+    "lacunae": 154,
+    "restorations": 5,
+    "damage_ratio": 0.845
+  },
+  "seam_flags": 1
+}

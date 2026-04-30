@@ -1,0 +1,60 @@
+{
+  "chapter": 7,
+  "title": "The Seventh, concerning the Five Fathers",
+  "total_lines": 82,
+  "non_null_lines": 82,
+  "scores_mean": {
+    "cosmological_substrate": 10.87,
+    "apostolic_dialogue": 5.0,
+    "manichaean_ecclesial": 3.83,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.98
+  },
+  "scores_total": {
+    "cosmological_substrate": 891.16,
+    "apostolic_dialogue": 410.0,
+    "manichaean_ecclesial": 314.28,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 80.36
+  },
+  "features": {
+    "teaching_purity": 0.526,
+    "editorial_fatigue_score": 2.1,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 12.76,
+        "second_half": 8.97,
+        "shift": -3.79
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.66,
+        "second_half": 6.34,
+        "shift": 2.68
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 7.67,
+        "shift": 7.67
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.96,
+        "second_half": 0.0,
+        "shift": -1.96
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 82,
+    "null_lines": 0,
+    "segments_with_gaps": 35,
+    "lacunae": 53,
+    "restorations": 0,
+    "damage_ratio": 0.427
+  },
+  "seam_flags": 1
+}

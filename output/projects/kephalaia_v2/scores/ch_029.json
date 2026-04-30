@@ -1,0 +1,60 @@
+{
+  "chapter": 29,
+  "title": "Concerning the Eighteen Great Thrones of all the Fathers",
+  "total_lines": 69,
+  "non_null_lines": 69,
+  "scores_mean": {
+    "cosmological_substrate": 14.18,
+    "apostolic_dialogue": 0.62,
+    "manichaean_ecclesial": 4.74,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.87
+  },
+  "scores_total": {
+    "cosmological_substrate": 978.69,
+    "apostolic_dialogue": 42.86,
+    "manichaean_ecclesial": 327.14,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 60.0
+  },
+  "features": {
+    "teaching_purity": 0.695,
+    "editorial_fatigue_score": -0.16,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 12.79,
+        "second_half": 15.53,
+        "shift": 2.74
+      },
+      "apostolic_dialogue": {
+        "first_half": 1.26,
+        "second_half": 0.0,
+        "shift": -1.26
+      },
+      "manichaean_ecclesial": {
+        "first_half": 3.53,
+        "second_half": 5.92,
+        "shift": 2.39
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.76,
+        "second_half": 0.0,
+        "shift": -1.76
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 69,
+    "null_lines": 0,
+    "segments_with_gaps": 42,
+    "lacunae": 57,
+    "restorations": 1,
+    "damage_ratio": 0.609
+  },
+  "seam_flags": 0
+}

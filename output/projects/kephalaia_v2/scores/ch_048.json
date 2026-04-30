@@ -1,0 +1,60 @@
+{
+  "chapter": 48,
+  "title": "Concerning the Conduits.",
+  "total_lines": 147,
+  "non_null_lines": 146,
+  "scores_mean": {
+    "cosmological_substrate": 14.41,
+    "apostolic_dialogue": 4.92,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.82
+  },
+  "scores_total": {
+    "cosmological_substrate": 2103.56,
+    "apostolic_dialogue": 718.25,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 119.05
+  },
+  "features": {
+    "teaching_purity": 0.715,
+    "editorial_fatigue_score": -0.3,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 16.17,
+        "second_half": 12.65,
+        "shift": -3.52
+      },
+      "apostolic_dialogue": {
+        "first_half": 5.17,
+        "second_half": 4.66,
+        "shift": -0.51
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.17,
+        "second_half": 0.46,
+        "shift": -0.71
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 147,
+    "null_lines": 1,
+    "segments_with_gaps": 77,
+    "lacunae": 119,
+    "restorations": 0,
+    "damage_ratio": 0.524
+  },
+  "seam_flags": 4
+}

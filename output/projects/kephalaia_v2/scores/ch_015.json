@@ -1,0 +1,60 @@
+{
+  "chapter": 15,
+  "title": "[Concerning the ... ...] Five [Parts ...] Worlds of [...]",
+  "total_lines": 58,
+  "non_null_lines": 55,
+  "scores_mean": {
+    "cosmological_substrate": 16.79,
+    "apostolic_dialogue": 1.82,
+    "manichaean_ecclesial": 3.27,
+    "manichaean_polemic": 2.91,
+    "hortatory_application": 0.78
+  },
+  "scores_total": {
+    "cosmological_substrate": 923.33,
+    "apostolic_dialogue": 100.0,
+    "manichaean_ecclesial": 180.0,
+    "manichaean_polemic": 160.0,
+    "hortatory_application": 42.86
+  },
+  "features": {
+    "teaching_purity": 0.657,
+    "editorial_fatigue_score": 2.49,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 32.98,
+        "shift": 32.98
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.7,
+        "second_half": 0.0,
+        "shift": -3.7
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 6.43,
+        "shift": 6.43
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 5.71,
+        "shift": 5.71
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 1.53,
+        "shift": 1.53
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 58,
+    "null_lines": 3,
+    "segments_with_gaps": 48,
+    "lacunae": 85,
+    "restorations": 0,
+    "damage_ratio": 0.828
+  },
+  "seam_flags": 0
+}

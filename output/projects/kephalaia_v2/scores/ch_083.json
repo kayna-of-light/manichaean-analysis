@@ -1,0 +1,60 @@
+{
+  "chapter": 83,
+  "title": "Concerning the Man who is ugly in his Body, [but] beautiful [in his Soul].",
+  "total_lines": 150,
+  "non_null_lines": 150,
+  "scores_mean": {
+    "cosmological_substrate": 6.57,
+    "apostolic_dialogue": 2.59,
+    "manichaean_ecclesial": 5.21,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 2.24
+  },
+  "scores_total": {
+    "cosmological_substrate": 984.89,
+    "apostolic_dialogue": 388.57,
+    "manichaean_ecclesial": 781.43,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 335.72
+  },
+  "features": {
+    "teaching_purity": 0.395,
+    "editorial_fatigue_score": -2.0,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 6.26,
+        "second_half": 6.87,
+        "shift": 0.61
+      },
+      "apostolic_dialogue": {
+        "first_half": 4.38,
+        "second_half": 0.8,
+        "shift": -3.58
+      },
+      "manichaean_ecclesial": {
+        "first_half": 9.09,
+        "second_half": 1.33,
+        "shift": -7.76
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.57,
+        "second_half": 3.9,
+        "shift": 3.33
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 150,
+    "null_lines": 0,
+    "segments_with_gaps": 133,
+    "lacunae": 244,
+    "restorations": 3,
+    "damage_ratio": 0.887
+  },
+  "seam_flags": 1
+}

@@ -1,0 +1,60 @@
+{
+  "chapter": 89,
+  "title": "The Chapter of the Nazorean who questions the Teacher",
+  "total_lines": 69,
+  "non_null_lines": 69,
+  "scores_mean": {
+    "cosmological_substrate": 0.0,
+    "apostolic_dialogue": 16.91,
+    "manichaean_ecclesial": 1.45,
+    "manichaean_polemic": 5.64,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 0.0,
+    "apostolic_dialogue": 1166.67,
+    "manichaean_ecclesial": 100.0,
+    "manichaean_polemic": 389.29,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.0,
+    "editorial_fatigue_score": -9.97,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "apostolic_dialogue": {
+        "first_half": 34.31,
+        "second_half": 0.0,
+        "shift": -34.31
+      },
+      "manichaean_ecclesial": {
+        "first_half": 1.68,
+        "second_half": 1.22,
+        "shift": -0.46
+      },
+      "manichaean_polemic": {
+        "first_half": 8.23,
+        "second_half": 3.13,
+        "shift": -5.1
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 69,
+    "null_lines": 0,
+    "segments_with_gaps": 37,
+    "lacunae": 42,
+    "restorations": 0,
+    "damage_ratio": 0.536
+  },
+  "seam_flags": 2
+}

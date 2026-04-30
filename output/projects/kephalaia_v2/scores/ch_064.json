@@ -1,0 +1,60 @@
+{
+  "chapter": 64,
+  "title": "[Concerning Adam]",
+  "total_lines": 62,
+  "non_null_lines": 62,
+  "scores_mean": {
+    "cosmological_substrate": 10.06,
+    "apostolic_dialogue": 2.3,
+    "manichaean_ecclesial": 0.81,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 2.79
+  },
+  "scores_total": {
+    "cosmological_substrate": 623.69,
+    "apostolic_dialogue": 142.86,
+    "manichaean_ecclesial": 50.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 173.1
+  },
+  "features": {
+    "teaching_purity": 0.63,
+    "editorial_fatigue_score": -1.54,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 13.67,
+        "second_half": 6.45,
+        "shift": -7.22
+      },
+      "apostolic_dialogue": {
+        "first_half": 4.61,
+        "second_half": 0.0,
+        "shift": -4.61
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 1.61,
+        "shift": 1.61
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 4.37,
+        "second_half": 1.21,
+        "shift": -3.16
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 62,
+    "null_lines": 0,
+    "segments_with_gaps": 18,
+    "lacunae": 19,
+    "restorations": 0,
+    "damage_ratio": 0.29
+  },
+  "seam_flags": 2
+}

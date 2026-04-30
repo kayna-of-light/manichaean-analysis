@@ -1,0 +1,60 @@
+{
+  "chapter": 99,
+  "title": "Concerning Transmigration",
+  "total_lines": 61,
+  "non_null_lines": 59,
+  "scores_mean": {
+    "cosmological_substrate": 0.0,
+    "apostolic_dialogue": 1.69,
+    "manichaean_ecclesial": 22.03,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 2.2
+  },
+  "scores_total": {
+    "cosmological_substrate": 0.0,
+    "apostolic_dialogue": 100.0,
+    "manichaean_ecclesial": 1300.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 130.0
+  },
+  "features": {
+    "teaching_purity": 0.0,
+    "editorial_fatigue_score": 1.45,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.45,
+        "second_half": 0.0,
+        "shift": -3.45
+      },
+      "manichaean_ecclesial": {
+        "first_half": 17.82,
+        "second_half": 26.11,
+        "shift": 8.29
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.72,
+        "second_half": 2.67,
+        "shift": 0.95
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 61,
+    "null_lines": 2,
+    "segments_with_gaps": 55,
+    "lacunae": 96,
+    "restorations": 0,
+    "damage_ratio": 0.902
+  },
+  "seam_flags": 0
+}

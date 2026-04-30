@@ -1,0 +1,60 @@
+{
+  "chapter": 55,
+  "title": "Concerning the Fashioning of Adam",
+  "total_lines": 139,
+  "non_null_lines": 139,
+  "scores_mean": {
+    "cosmological_substrate": 17.06,
+    "apostolic_dialogue": 0.96,
+    "manichaean_ecclesial": 0.54,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 1.68
+  },
+  "scores_total": {
+    "cosmological_substrate": 2371.28,
+    "apostolic_dialogue": 133.33,
+    "manichaean_ecclesial": 75.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 233.97
+  },
+  "features": {
+    "teaching_purity": 0.843,
+    "editorial_fatigue_score": -0.58,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 10.23,
+        "second_half": 23.79,
+        "shift": 13.56
+      },
+      "apostolic_dialogue": {
+        "first_half": 1.93,
+        "second_half": 0.0,
+        "shift": -1.93
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 1.07,
+        "shift": 1.07
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 2.42,
+        "second_half": 0.95,
+        "shift": -1.47
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 139,
+    "null_lines": 0,
+    "segments_with_gaps": 106,
+    "lacunae": 172,
+    "restorations": 1,
+    "damage_ratio": 0.763
+  },
+  "seam_flags": 1
+}

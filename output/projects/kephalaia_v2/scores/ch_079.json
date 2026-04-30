@@ -1,0 +1,60 @@
+{
+  "chapter": 79,
+  "title": "Concerning the Fasting of the Saints",
+  "total_lines": 31,
+  "non_null_lines": 31,
+  "scores_mean": {
+    "cosmological_substrate": 2.42,
+    "apostolic_dialogue": 3.23,
+    "manichaean_ecclesial": 34.21,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 75.0,
+    "apostolic_dialogue": 100.0,
+    "manichaean_ecclesial": 1060.6,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.061,
+    "editorial_fatigue_score": 5.6,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 5.0,
+        "second_half": 0.0,
+        "shift": -5.0
+      },
+      "apostolic_dialogue": {
+        "first_half": 6.67,
+        "second_half": 0.0,
+        "shift": -6.67
+      },
+      "manichaean_ecclesial": {
+        "first_half": 19.21,
+        "second_half": 48.28,
+        "shift": 29.07
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 31,
+    "null_lines": 0,
+    "segments_with_gaps": 24,
+    "lacunae": 31,
+    "restorations": 0,
+    "damage_ratio": 0.774
+  },
+  "seam_flags": 1
+}

@@ -1,0 +1,60 @@
+{
+  "chapter": 54,
+  "title": "[Concerning] the Quality of the Garments",
+  "total_lines": 57,
+  "non_null_lines": 57,
+  "scores_mean": {
+    "cosmological_substrate": 4.14,
+    "apostolic_dialogue": 0.0,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 235.71,
+    "apostolic_dialogue": 0.0,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 1.0,
+    "editorial_fatigue_score": 0.0,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 4.85,
+        "second_half": 3.45,
+        "shift": -1.4
+      },
+      "apostolic_dialogue": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 57,
+    "null_lines": 0,
+    "segments_with_gaps": 55,
+    "lacunae": 108,
+    "restorations": 1,
+    "damage_ratio": 0.965
+  },
+  "seam_flags": 0
+}

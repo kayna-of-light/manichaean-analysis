@@ -1,0 +1,60 @@
+{
+  "chapter": 66,
+  "title": "Concerning the Ambassador.",
+  "total_lines": 51,
+  "non_null_lines": 51,
+  "scores_mean": {
+    "cosmological_substrate": 4.93,
+    "apostolic_dialogue": 4.11,
+    "manichaean_ecclesial": 4.65,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 2.94
+  },
+  "scores_total": {
+    "cosmological_substrate": 251.19,
+    "apostolic_dialogue": 209.53,
+    "manichaean_ecclesial": 236.91,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 150.0
+  },
+  "features": {
+    "teaching_purity": 0.296,
+    "editorial_fatigue_score": 0.23,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 8.05,
+        "second_half": 1.92,
+        "shift": -6.13
+      },
+      "apostolic_dialogue": {
+        "first_half": 6.67,
+        "second_half": 1.65,
+        "shift": -5.02
+      },
+      "manichaean_ecclesial": {
+        "first_half": 4.55,
+        "second_half": 4.74,
+        "shift": 0.19
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 5.77,
+        "shift": 5.77
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 51,
+    "null_lines": 0,
+    "segments_with_gaps": 22,
+    "lacunae": 23,
+    "restorations": 0,
+    "damage_ratio": 0.431
+  },
+  "seam_flags": 1
+}

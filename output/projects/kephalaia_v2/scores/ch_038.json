@@ -1,0 +1,60 @@
+{
+  "chapter": 38,
+  "title": "Concerning the Light Mind and the Apostles and the Saints",
+  "total_lines": 444,
+  "non_null_lines": 443,
+  "scores_mean": {
+    "cosmological_substrate": 5.27,
+    "apostolic_dialogue": 2.65,
+    "manichaean_ecclesial": 3.21,
+    "manichaean_polemic": 1.3,
+    "hortatory_application": 0.56
+  },
+  "scores_total": {
+    "cosmological_substrate": 2333.12,
+    "apostolic_dialogue": 1175.88,
+    "manichaean_ecclesial": 1423.98,
+    "manichaean_polemic": 577.78,
+    "hortatory_application": 247.29
+  },
+  "features": {
+    "teaching_purity": 0.405,
+    "editorial_fatigue_score": 0.99,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 9.19,
+        "second_half": 1.36,
+        "shift": -7.83
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.41,
+        "second_half": 1.9,
+        "shift": -1.51
+      },
+      "manichaean_ecclesial": {
+        "first_half": 1.02,
+        "second_half": 5.4,
+        "shift": 4.38
+      },
+      "manichaean_polemic": {
+        "first_half": 0.2,
+        "second_half": 2.4,
+        "shift": 2.2
+      },
+      "hortatory_application": {
+        "first_half": 1.12,
+        "second_half": 0.0,
+        "shift": -1.12
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 444,
+    "null_lines": 1,
+    "segments_with_gaps": 332,
+    "lacunae": 521,
+    "restorations": 40,
+    "damage_ratio": 0.748
+  },
+  "seam_flags": 7
+}

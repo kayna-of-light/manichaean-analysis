@@ -1,0 +1,60 @@
+{
+  "chapter": 58,
+  "title": "The Four Powers that grieve",
+  "total_lines": 34,
+  "non_null_lines": 34,
+  "scores_mean": {
+    "cosmological_substrate": 0.98,
+    "apostolic_dialogue": 7.56,
+    "manichaean_ecclesial": 3.78,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.98
+  },
+  "scores_total": {
+    "cosmological_substrate": 33.33,
+    "apostolic_dialogue": 257.14,
+    "manichaean_ecclesial": 128.57,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 33.33
+  },
+  "features": {
+    "teaching_purity": 0.074,
+    "editorial_fatigue_score": -1.4,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 1.96,
+        "second_half": 0.0,
+        "shift": -1.96
+      },
+      "apostolic_dialogue": {
+        "first_half": 15.13,
+        "second_half": 0.0,
+        "shift": -15.13
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 7.56,
+        "shift": 7.56
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 1.96,
+        "shift": 1.96
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 34,
+    "null_lines": 0,
+    "segments_with_gaps": 12,
+    "lacunae": 15,
+    "restorations": 0,
+    "damage_ratio": 0.353
+  },
+  "seam_flags": 0
+}

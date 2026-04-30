@@ -1,0 +1,60 @@
+{
+  "chapter": 30,
+  "title": "Concerning the Three Garments",
+  "total_lines": 22,
+  "non_null_lines": 22,
+  "scores_mean": {
+    "cosmological_substrate": 16.23,
+    "apostolic_dialogue": 15.45,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 7.79
+  },
+  "scores_total": {
+    "cosmological_substrate": 357.13,
+    "apostolic_dialogue": 340.0,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 171.43
+  },
+  "features": {
+    "teaching_purity": 0.411,
+    "editorial_fatigue_score": -11.62,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 16.88,
+        "second_half": 15.58,
+        "shift": -1.3
+      },
+      "apostolic_dialogue": {
+        "first_half": 30.91,
+        "second_half": 0.0,
+        "shift": -30.91
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 15.58,
+        "second_half": 0.0,
+        "shift": -15.58
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 22,
+    "null_lines": 0,
+    "segments_with_gaps": 16,
+    "lacunae": 32,
+    "restorations": 2,
+    "damage_ratio": 0.727
+  },
+  "seam_flags": 0
+}
