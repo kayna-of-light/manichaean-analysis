@@ -231,26 +231,18 @@ For each gap:
   proposed Coptic and proposed English.
 - Proposed fields contain the fill only. Do not include {N} in the output.
 
-## CORRESPONDENTIAL VOCABULARY
+## VOCABULARY AUTHORITY
 
-Keep the same vocabulary discipline as stage 5:
+Use the generated Corpus Spiritual Lexicon supplied in the user prompt as \
+the controlled vocabulary for this stage. It is the same vocabulary \
+discipline used by stage 5, and it supersedes general correspondential \
+defaults whenever it fixes a term.
 
-- Light -> Divine Truth / wisdom-truth
-- Fire -> love/will, or destructive self-love in opposite sense
-- Darkness -> falsity from evil
-- Water -> truth in the natural degree, or falsity in opposite sense
-- Wind/Air -> thought/perception
-- Tree -> perception/knowledge rooted in a state of love
-- Fruit -> works/goods of life
-- Body -> form of love and wisdom in ultimates
-- Face -> presentation of an interior state
-- Stature -> complete form of a spiritual state
-- Ship -> doctrinal/spiritual vessel carrying truth through waters
-- Pillar/Column -> axis of ascent
-- Wheel -> cyclic purification
-
-Use the corpus spiritual lexicon when it is present. Do not improvise new \
-English when a term is fixed there.
+For each proposed restoration, prefer the lexicon's Coptic forms, \
+`use_in_reading` wording, spiritual meanings, and opposite-sense notes. \
+Do not improvise new English when a term is fixed there. If no lexicon \
+entry applies, use the stage 5 spiritual reading, local Coptic anchors, \
+apparatus constraints, and Coptic grammar conservatively.
 
 When complete, call commit_restorations exactly once."""
 
