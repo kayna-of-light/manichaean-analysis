@@ -314,6 +314,9 @@ class PipelineStage(ABC):
     description: str = ""
     tool_name: str = ""
     tool_schema: dict = {}
+    item_name: str = "page"
+    item_name_plural: str = "pages"
+    item_prefix: str = "p"
 
     def __init__(self) -> None:
         self.client: AnthropicFoundry | None = None
@@ -373,21 +376,21 @@ class PipelineStage(ABC):
     def is_done(self, page_num: int) -> bool:
         """Check if output already exists for this page."""
         return (
-            self.get_output_dir() / f"p_{page_num:03d}.json"
+            self.get_output_dir() / f"{self.item_prefix}_{page_num:03d}.json"
         ).exists()
 
     def save_output(self, page_num: int, data: dict) -> None:
         """Save the output JSON for a page (thread-safe)."""
         output_dir = self.get_output_dir()
         output_dir.mkdir(parents=True, exist_ok=True)
-        path = output_dir / f"p_{page_num:03d}.json"
+        path = output_dir / f"{self.item_prefix}_{page_num:03d}.json"
         with _write_lock:
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
     def load_page_json(self, page_num: int, source_dir: Path) -> dict | None:
         """Load a page JSON from a given directory."""
-        path = source_dir / f"p_{page_num:03d}.json"
+        path = source_dir / f"{self.item_prefix}_{page_num:03d}.json"
         if not path.exists():
             return None
         with open(path, encoding="utf-8") as f:
@@ -414,7 +417,7 @@ class PipelineStage(ABC):
         # Shared arguments
         parser.add_argument(
             "--page", "-p", type=int, nargs="+", default=None,
-            help="Page number(s) to process",
+            help=f"{self.item_name.title()} number(s) to process",
         )
         parser.add_argument("--range", "-r", type=str, default=None)
         parser.add_argument("--limit", "-l", type=int, default=None)
@@ -441,7 +444,10 @@ class PipelineStage(ABC):
             pages = [p for p in all_pages if p in requested]
             missing = requested - set(pages)
             if missing:
-                print(f"ERROR: Pages not found: {sorted(missing)}")
+                print(
+                    f"ERROR: {self.item_name_plural.title()} "
+                    f"not found: {sorted(missing)}"
+                )
                 sys.exit(1)
         elif args.range:
             m = re.match(r"(\d+)-(\d+)", args.range)
@@ -484,7 +490,7 @@ class PipelineStage(ABC):
             tool_name=self.tool_name,
             effort=self.args.effort,
             max_tokens=128_000,
-            page_label=f"p.{page_num}",
+            page_label=f"{self.item_prefix}.{page_num}",
             debug=self.debug,
         )
         return page_num, result
@@ -504,18 +510,19 @@ class PipelineStage(ABC):
             print(f"\nERROR: No input files in {self.get_input_dir()}")
             sys.exit(1)
         print(
-            f"\nFound {len(all_pages)} input pages "
-            f"(p.{all_pages[0]}-p.{all_pages[-1]})"
+            f"\nFound {len(all_pages)} input {self.item_name_plural} "
+            f"({self.item_prefix}.{all_pages[0]}-"
+            f"{self.item_prefix}.{all_pages[-1]})"
         )
 
         pages = self.select_pages(all_pages)
         if not pages:
-            print("All requested pages already processed.")
+            print(f"All requested {self.item_name_plural} already processed.")
             return
 
-        print(f"\nProcessing {len(pages)} pages:")
+        print(f"\nProcessing {len(pages)} {self.item_name_plural}:")
         for p in pages:
-            print(f"  p.{p:3d}")
+            print(f"  {self.item_prefix}.{p:3d}")
 
         if self.args.dry_run:
             print(f"\n[DRY RUN] No API calls made.")
@@ -536,7 +543,7 @@ class PipelineStage(ABC):
         if concurrency == 1:
             for i, page_num in enumerate(pages, 1):
                 print(
-                    f"[{i}/{len(pages)}] p.{page_num}...",
+                    f"[{i}/{len(pages)}] {self.item_prefix}.{page_num}...",
                     end=" ", flush=True,
                 )
                 _, result = self._process_one(page_num)
@@ -560,7 +567,7 @@ class PipelineStage(ABC):
             pbar = tqdm(
                 total=len(pages),
                 desc=f"Stage {self.stage_number}",
-                unit="page",
+                unit=self.item_name,
                 file=sys.stdout,
             )
 
@@ -574,19 +581,26 @@ class PipelineStage(ABC):
                     try:
                         pn, result = future.result()
                     except Exception as e:
-                        pbar.write(f"  p.{page_num}: EXCEPTION — {e}")
+                        pbar.write(
+                            f"  {self.item_prefix}.{page_num}: "
+                            f"EXCEPTION — {e}"
+                        )
                         errors.append(page_num)
                         pbar.update(1)
                         continue
                     if result is None:
-                        pbar.write(f"  p.{page_num}: FAILED")
+                        pbar.write(
+                            f"  {self.item_prefix}.{page_num}: FAILED"
+                        )
                         errors.append(page_num)
                         pbar.update(1)
                         continue
                     processed = self.process_result(page_num, result)
                     self.save_output(page_num, processed)
                     summary = self.format_summary(page_num, processed)
-                    pbar.write(f"  p.{page_num}: {summary}")
+                    pbar.write(
+                        f"  {self.item_prefix}.{page_num}: {summary}"
+                    )
                     results.append(processed)
                     pbar.update(1)
 
@@ -595,6 +609,6 @@ class PipelineStage(ABC):
         # Summary
         print(f"\n{'='*50}")
         print(f"STAGE {self.stage_number} COMPLETE: {self.stage_name}")
-        print(f"  Processed: {len(results)} pages")
+        print(f"  Processed: {len(results)} {self.item_name_plural}")
         if errors:
-            print(f"  Failed:    {len(errors)} pages — {errors}")
+            print(f"  Failed:    {len(errors)} {self.item_name_plural} — {errors}")
