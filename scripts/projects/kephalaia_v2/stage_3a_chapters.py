@@ -1,19 +1,19 @@
 """
 Stage 3a: Assemble v2 page-level data into chapter-level files.
 
-Reads chapter_index.json and combines page-level text (pages/) into
-per-chapter JSON files. Text is trimmed to exact line boundaries.
-
-Scoring happens in stage_3b_score_chapters.py AFTER assembly.
+Reads chapter_index.json and combines page-level JSON files into per-chapter
+JSON files with the same structure as page files:
+chapter/range/header/lines/apparatus/notes.
 
 Input:
-  - output/projects/kephalaia_v2/chapter_index.json
-  - output/projects/kephalaia_v2/pages/p_NNN.json
+    - output/projects/kephalaia_v2/chapter_index.json
+    - output/projects/kephalaia_v2/pages/p_NNN.json
 
 Output:
-  - output/projects/kephalaia_v2/chapters/ch_NNN.json
+    - output/projects/kephalaia_v2/chapters/ch_NNN.json
 """
 import json
+import re
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[3]
@@ -24,6 +24,7 @@ CHAPTERS_DIR = V2_OUTPUT / "chapters"
 # Our v2 corpus page range
 V2_FIRST_PAGE = 10
 V2_LAST_PAGE = 291
+MARKER_RE = re.compile(r"\{(\d+)\}")
 
 
 def load_json(path: Path) -> dict | None:
@@ -78,29 +79,98 @@ def filter_lines(lines: list[dict], page_num: int, ch: dict) -> list[dict]:
     return filtered
 
 
-def assemble_chapter_text(pages_data: list[tuple[int, dict]], ch: dict) -> str:
-    """Combine page-level line data into a single running English text for the chapter."""
-    parts = []
+def renumber_markers(text: str | None, marker_map: dict[int, int], next_id: list[int]) -> str | None:
+    """Renumber {N} markers in one line, preserving order of appearance."""
+    if text is None:
+        return None
+
+    def repl(match: re.Match) -> str:
+        old_id = int(match.group(1))
+        if old_id not in marker_map:
+            marker_map[old_id] = next_id[0]
+            next_id[0] += 1
+        return "{" + str(marker_map[old_id]) + "}"
+
+    return MARKER_RE.sub(repl, text)
+
+
+def assemble_chapter(pages_data: list[tuple[int, dict]], ch: dict) -> dict:
+    """Build chapter JSON with page-file structure and renumbered apparatus."""
+    lines: list[dict] = []
+    apparatus: list[dict] = []
+    notes: list[dict] = []
+    page_ranges: list[dict] = []
+    marker_maps: dict[int, dict[int, int]] = {}
+    segment_maps: dict[tuple[int, int], int] = {}
+    next_marker_id = [0]
+
     for page_num, page in pages_data:
-        lines = filter_lines(page.get("lines", []), page_num, ch)
-        if not lines:
+        filtered = filter_lines(page.get("lines", []), page_num, ch)
+        if not filtered:
             continue
-        parts.append(f"⟨p.{page_num}⟩")
-        for line in lines:
-            eng = line.get("english", "")
-            if eng:
-                parts.append(eng)
-    return "\n".join(parts)
 
+        page_ranges.append({
+            "page": page_num,
+            "start_line": filtered[0].get("n"),
+            "end_line": filtered[-1].get("n"),
+        })
 
-def assemble_chapter_lines(pages_data: list[tuple[int, dict]], ch: dict) -> list[dict]:
-    """Return the filtered lines (with page attribution) for scoring use."""
-    result = []
-    for page_num, page in pages_data:
-        lines = filter_lines(page.get("lines", []), page_num, ch)
-        for line in lines:
-            result.append({**line, "_page": page_num})
-    return result
+        page_marker_map: dict[int, int] = {}
+        marker_maps[page_num] = page_marker_map
+
+        for line in filtered:
+            new_i = len(lines)
+            old_i = line.get("i")
+            segment_maps[(page_num, old_i)] = new_i
+            lines.append({
+                "i": new_i,
+                "n": line.get("n"),
+                "coptic": renumber_markers(
+                    line.get("coptic"), page_marker_map, next_marker_id
+                ),
+                "english": renumber_markers(
+                    line.get("english"), page_marker_map, next_marker_id
+                ),
+            })
+
+        for entry in page.get("apparatus", []):
+            old_segment = entry.get("segment")
+            if (page_num, old_segment) not in segment_maps:
+                continue
+            old_id = entry.get("id")
+            if old_id not in page_marker_map:
+                continue
+            updated = dict(entry)
+            updated["id"] = page_marker_map[old_id]
+            updated["segment"] = segment_maps[(page_num, old_segment)]
+            apparatus.append(updated)
+
+        for note in page.get("notes", []):
+            old_segment = note.get("segment")
+            if (page_num, old_segment) not in segment_maps:
+                continue
+            updated = dict(note)
+            updated["segment"] = segment_maps[(page_num, old_segment)]
+            notes.append(updated)
+
+    return {
+        "chapter": ch["chapter"],
+        "range": {
+            "start_page": ch["start_page"],
+            "start_line": ch.get("start_line"),
+            "end_page": ch["end_page"],
+            "end_line": ch.get("end_line"),
+            "pages": page_ranges,
+        },
+        "header": {
+            "chapter_number": ch["chapter"],
+            "title_coptic": None,
+            "title_english": ch["title"],
+        },
+        "lines": lines,
+        "apparatus": apparatus,
+        "notes": notes,
+    }
 
 
 def main():
@@ -138,24 +208,9 @@ def main():
             else:
                 missing_pages.append(p)
 
-        # Assemble chapter text (with line-level trimming)
-        chapter_text = assemble_chapter_text(pages_data, ch)
-
-        # Also store the raw filtered lines for stage_3b scoring
-        chapter_lines = assemble_chapter_lines(pages_data, ch)
-
-        # Build output
-        output = {
-            "chapter": ch_num,
-            "title": ch["title"],
-            "start_page": ch["start_page"],
-            "start_line": ch.get("start_line"),
-            "end_page": ch["end_page"],
-            "end_line": ch.get("end_line"),
-            "missing_pages": missing_pages if missing_pages else None,
-            "text": chapter_text,
-            "lines": chapter_lines,
-        }
+        output = assemble_chapter(pages_data, ch)
+        if missing_pages:
+            output["range"]["missing_pages"] = missing_pages
 
         outpath = CHAPTERS_DIR / f"ch_{ch_num:03d}.json"
         with open(outpath, "w", encoding="utf-8") as f:

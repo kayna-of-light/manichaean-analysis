@@ -236,6 +236,8 @@ def assess_damage(lines: list[dict]) -> dict:
 def score_chapter(chapter_data: dict, scoring_dicts, bridge_pats, inst_terms) -> dict:
     """Run full scoring on a chapter file."""
     lines = chapter_data.get("lines", [])
+    header = chapter_data.get("header", {})
+    title = chapter_data.get("title") or header.get("title_english", "")
 
     # Score each line
     line_scores = [score_line(l, scoring_dicts) for l in lines]
@@ -268,7 +270,7 @@ def score_chapter(chapter_data: dict, scoring_dicts, bridge_pats, inst_terms) ->
 
     return {
         "chapter": chapter_data["chapter"],
-        "title": chapter_data["title"],
+        "title": title,
         "total_lines": len(lines),
         "non_null_lines": len(non_null),
         "scores_mean": chapter_scores,
