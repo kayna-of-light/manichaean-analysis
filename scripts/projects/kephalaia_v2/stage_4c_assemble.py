@@ -52,17 +52,17 @@ def load_teaching_index() -> dict:
         return json.load(f)
 
 
-def load_core_pages() -> dict[int, dict]:
-    """Load all core page JSONs into a dict keyed by page number."""
-    pages = {}
-    for path in sorted(CORE_DIR.glob("p_*.json")):
-        m = re.match(r"p_(\d+)\.json", path.name)
+def load_core_chapters() -> dict[int, dict]:
+    """Load all core chapter JSONs into a dict keyed by chapter number."""
+    chapters = {}
+    for path in sorted(CORE_DIR.glob("ch_*.json")):
+        m = re.match(r"ch_(\d+)\.json", path.name)
         if not m:
             continue
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        pages[int(m.group(1))] = data
-    return pages
+        chapters[int(m.group(1))] = data
+    return chapters
 
 
 # ---------------------------------------------------------------------------
@@ -111,11 +111,11 @@ def gather_teaching_segments(
     teaching_idx: int,
     teachings: list[dict],
     section_map: list[dict],
-    core_pages: dict[int, dict],
+    core_chapters: dict[int, dict],
 ) -> list[dict]:
-    """Gather all segments for a teaching from core page files.
+    """Gather all segments for a teaching from core chapter files.
 
-    Uses section_map to resolve §N → (page, line).
+    Uses section_map to resolve §N → (chapter, line).
     """
     start_section = teachings[teaching_idx]["section"]
 
@@ -129,15 +129,14 @@ def gather_teaching_segments(
     for sec_num in range(start_section, end_section + 1):
         # section_map is 0-indexed (§1 is at index 0)
         map_entry = section_map[sec_num - 1]
-        page_num = map_entry["page"]
+        chapter_num = map_entry["chapter"]
         line_idx = map_entry["line"]
 
-        page_data = core_pages.get(page_num)
-        if not page_data:
-            # Page not in core (shouldn't happen but be safe)
+        chapter_data = core_chapters.get(chapter_num)
+        if not chapter_data:
             segments.append({
                 "section": sec_num,
-                "page": page_num,
+                "chapter": chapter_num,
                 "line": line_idx,
                 "classification": None,
                 "core_coptic": None,
@@ -147,12 +146,12 @@ def gather_teaching_segments(
             })
             continue
 
-        page_segments = page_data.get("segments", [])
-        if line_idx < len(page_segments):
-            seg = page_segments[line_idx]
+        ch_segments = chapter_data.get("segments", [])
+        if line_idx < len(ch_segments):
+            seg = ch_segments[line_idx]
             segments.append({
                 "section": sec_num,
-                "page": page_num,
+                "chapter": chapter_num,
                 "line": line_idx,
                 "classification": seg.get("classification"),
                 "core_coptic": seg.get("core_coptic"),
@@ -164,7 +163,7 @@ def gather_teaching_segments(
             # Line index out of range
             segments.append({
                 "section": sec_num,
-                "page": page_num,
+                "chapter": chapter_num,
                 "line": line_idx,
                 "classification": None,
                 "core_coptic": None,
@@ -224,15 +223,15 @@ def main() -> None:
     print(f"\n  Teachings: {len(teachings)}")
     print(f"  Section map: {len(section_map)} sections")
 
-    # Load core pages
-    core_pages = load_core_pages()
-    print(f"  Core pages loaded: {len(core_pages)}")
+    # Load core chapters
+    core_chapters = load_core_chapters()
+    print(f"  Core chapters loaded: {len(core_chapters)}")
 
     if args.dry_run:
         # Show what would be produced
         print(f"\n[DRY RUN] Would write {len(teachings)} files to {TEACHINGS_DIR}/")
         for i, t in enumerate(teachings[:5]):
-            segs = gather_teaching_segments(i, teachings, section_map, core_pages)
+            segs = gather_teaching_segments(i, teachings, section_map, core_chapters)
             _, lacunae = renumber_lacunae(segs)
             print(f"  t_{i+1:03d}.json — §{t['section']:>4d} — {len(segs):>3d} sections, "
                   f"{lacunae:>3d} lacunae — {t['title'][:50]}")
@@ -246,7 +245,7 @@ def main() -> None:
     # Assemble each teaching
     total_lacunae = 0
     for i, teaching_entry in enumerate(teachings):
-        segments = gather_teaching_segments(i, teachings, section_map, core_pages)
+        segments = gather_teaching_segments(i, teachings, section_map, core_chapters)
         result = assemble_teaching(i + 1, teaching_entry, segments)
         total_lacunae += result["total_lacunae"]
 
