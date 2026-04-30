@@ -5,7 +5,7 @@
   "start_section": 1743,
   "end_section": 1805,
   "total_sections": 63,
-  "total_lacunae": 94,
+  "total_lacunae": 48,
   "segments": [
     {
       "section": 1743,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲑ̄",
       "core_english": "29",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "chapter number marker"
     },
@@ -23,7 +24,19 @@
       "line": 1,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} > · ⲉⲧⲃⲉ ⲡⲙⲛⲝⲙⲏⲛ ⲛ̄ⲛⲁⲟ̄ ⲛ · < ⲕⲑ̄",
-      "core_english": "{1} > · Concerning the Eight Great · < 29",
+      "core_english": "{0} > · Concerning the Eight Great · < 29",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲕⲑ̄",
+          "english": "29",
+          "basis": "Editor's restoration of the marginal chapter number 29 (already visible in lines 21 and at end of line 22).",
+          "source_id": 0,
+          "section": 1744
+        }
+      ],
       "removed_material": null,
       "temporal_note": "title — defines the substrate teaching topic"
     },
@@ -34,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "> · ⲫⲣⲟⲛⲟⲥ ⲛ̄ⲛⲓⲁⲧⲉ ⲧⲏⲣⲟⲩ · <",
       "core_english": "> · Thrones of all the Fathers · <",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "title continuation"
     },
@@ -44,6 +58,7 @@
       "classification": "mixed",
       "core_coptic": "ⲙⲛⲧⲝⲙⲏⲛ ⲛ̄",
       "core_english": "Eight",
+      "apparatus": [],
       "removed_material": "Stripped frame formula 'Once again he said to his disciples'; preserved the substantive numerical/cosmological content opening the teaching enumeration.",
       "temporal_note": "apostolic_dialogue score 42.86 confirms frame; content '18 [thrones]' is substrate"
     },
@@ -52,8 +67,20 @@
       "chapter": 29,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲛⲉⲧϣⲟⲟⲡ ⲛⲉⲧⲕⲁⲁⲧ ⲉⲧⲥ̄",
-      "core_english": "{3} are those which exist, which are set, es-",
+      "core_coptic": "{1} ⲛⲉⲧϣⲟⲟⲡ ⲛⲉⲧⲕⲁⲁⲧ ⲉⲧⲥ̄",
+      "core_english": "{1} are those which exist, which are set, es-",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲟ̄ ⲛⲫⲣⲟⲛⲟⲥ ⲛ̄ⲛⲓⲁⲧⲉ ⲧⲏⲣⲟⲩ",
+          "english": "great thrones of all the Fathers",
+          "basis": "Editor's restoration. Repeats the chapter-heading subject (lines 22-23): the eight great thrones of all the Fathers.",
+          "source_id": 2,
+          "section": 1747
+        }
+      ],
       "removed_material": null,
       "temporal_note": "structural language — 'those which exist, which are set'"
     },
@@ -64,6 +91,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁⲁⲛⲧ ⲍⲛ ⲙⲛⲝⲙⲏⲛ ⲙ̄ⲙⲁ ⲟⲩⲛ̄ ϯⲥ ⲙⲉⲛ ⲛⲍⲏⲧⲟⲩ",
       "core_english": "tablished in eight places. Six of them indeed are",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "enumeration structure introducing the eighteen thrones"
     },
@@ -72,8 +100,30 @@
       "chapter": 29,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲛⲁⲓⲱⲛ ⲉⲧⲍⲓⲃⲁⲗ ⲉⲩϣ{5}ⲡ",
-      "core_english": "{6} the outer aeons, ex{7}sting",
+      "core_coptic": "{2} ⲛⲁⲓⲱⲛ ⲉⲧⲍⲓⲃⲁⲗ ⲉⲩϣ{3}ⲡ",
+      "core_english": "{2} the outer aeons, ex{3}sting",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲁⲧ ⲍⲛ̄",
+          "english": "set in",
+          "basis": "Editor's restoration. Continues the formula ⲕⲁⲁⲧ ⲉⲧⲥⲙⲁⲁⲛⲧ from line 25-26 — 'set, established in the outer aeons.'",
+          "source_id": 3,
+          "section": 1749
+        },
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲟⲟ",
+          "english": "i-",
+          "basis": "Editor's restoration of the lacuna in ⲉⲩϣ[ⲟⲟ]ⲡ 'they exist.'",
+          "source_id": 4,
+          "section": 1749
+        }
+      ],
       "removed_material": null,
       "temporal_note": "outer aeons — cosmic geography"
     },
@@ -82,8 +132,20 @@
       "chapter": 29,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲛ ⲛⲕⲟⲥⲙⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲧⲉ ⲡⲁⲥⲉ",
-      "core_english": "{9} all the worlds of the Half (Region).",
+      "core_coptic": "{4}ⲛ ⲛⲕⲟⲥⲙⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲧⲉ ⲡⲁⲥⲉ",
+      "core_english": "{4} all the worlds of the Half (Region).",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "in",
+          "basis": "Editor's restoration of [ⲍ] giving the preposition ⲍⲛ 'in.'",
+          "source_id": 5,
+          "section": 1750
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Half Region cosmography"
     },
@@ -92,8 +154,20 @@
       "chapter": 29,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲣⲡ ⲛ̄ⲫⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲫⲣⲟⲛⲟⲥ ⲙ̄ⲡⲓⲱⲧ ⲡⲛⲟⲩⲧⲉ ⲛⲧⲉ",
-      "core_english": "The fi{11}rst throne is the throne of the Father, the God of",
+      "core_coptic": "{5}ⲣⲡ ⲛ̄ⲫⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲫⲣⲟⲛⲟⲥ ⲙ̄ⲡⲓⲱⲧ ⲡⲛⲟⲩⲧⲉ ⲛⲧⲉ",
+      "core_english": "The fi{5}rst throne is the throne of the Father, the God of",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲧⲧϣⲁ",
+          "english": "first",
+          "basis": "Editor's restoration. ⲧⲧϣⲁⲣⲡ = 'the first' (fem.) — pairs with ⲡϣⲁⲣⲡ ⲛⲫⲣⲟⲛⲟⲥ at line 32.",
+          "source_id": 6,
+          "section": 1751
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First throne enumeration: Father of Greatness"
     },
@@ -102,8 +176,20 @@
       "chapter": 29,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲉ ⲡⲣ̄ⲣⲟ ⲛⲛⲁⲓⲱⲛ ⲛⲧⲙⲛ̄ⲧⲛⲁⲟ̄ ⲡⲉⲧⲕⲁⲁⲧ ⲉⲧⲥⲙⲁ",
-      "core_english": "{13}, the King of the aeons of the Greatness, the one who is set, es-",
+      "core_coptic": "{6}ⲉ ⲡⲣ̄ⲣⲟ ⲛⲛⲁⲓⲱⲛ ⲛⲧⲙⲛ̄ⲧⲛⲁⲟ̄ ⲡⲉⲧⲕⲁⲁⲧ ⲉⲧⲥⲙⲁ",
+      "core_english": "{6}, the King of the aeons of the Greatness, the one who is set, es-",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲧⲙⲏⲉ",
+          "english": "the Truth",
+          "basis": "Editor's restoration. ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ = 'the God of Truth,' standard divine epithet.",
+          "source_id": 7,
+          "section": 1752
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲣ̄ⲣⲟ ⲛ̄ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄ — substrate cosmological title"
     },
@@ -112,8 +198,30 @@
       "chapter": 29,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲟⲩⲁⲉⲉϩ ⲍⲛ̄ ⲧⲉϩⲟⲩⲥ{15}ⲁ ⲙ̄ⲙⲓⲛ ⲙ̄",
-      "core_english": "{16} alone in his own essen{17}ce, by",
+      "core_coptic": "{7} ⲟⲩⲁⲉⲉϩ ⲍⲛ̄ ⲧⲉϩⲟⲩⲥ{8}ⲁ ⲙ̄ⲙⲓⲛ ⲙ̄",
+      "core_english": "{7} alone in his own essen{8}ce, by",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲁⲛⲧ",
+          "english": "(established)",
+          "basis": "Editor's restoration completing ⲉⲧⲥⲙⲁ-/[ⲁ]ⲛⲧ from preceding line ('established'); plus a partially visible word with trailing ϩ.",
+          "source_id": 8,
+          "section": 1753
+        },
+        {
+          "id": 8,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "-c-",
+          "basis": "Editor's restoration of [ⲓ] in ⲧⲉϩⲟⲩⲥ[ⲓ]ⲁ 'his essence.'",
+          "source_id": 9,
+          "section": 1753
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ousia of the Father — substrate"
     },
@@ -122,8 +230,20 @@
       "chapter": 29,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲁⲣⲁϩ ⲡⲉⲓ ⲡⲉ ⲡϣⲁⲣⲡ ⲛⲫⲣⲟⲛⲟⲥ",
-      "core_english": "{19}upon him. This is the first throne,",
+      "core_coptic": "{9}ⲁⲣⲁϩ ⲡⲉⲓ ⲡⲉ ⲡϣⲁⲣⲡ ⲛⲫⲣⲟⲛⲟⲥ",
+      "core_english": "{9}upon him. This is the first throne,",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲙⲁϩ . . . . ⲍⲁⲣⲓⲍ",
+          "english": "himself ... upon him-",
+          "basis": "Editor's partial restoration. ⲙ̄ⲙⲁϩ 'himself' (cf. line 5); ⲍⲁⲣⲓⲍⲁⲣⲁϩ = ϩⲁⲣⲓϩⲁⲣⲁϥ 'upon his very self' (reduplicated reflexive).",
+          "source_id": 10,
+          "section": 1754
+        }
+      ],
       "removed_material": null,
       "temporal_note": "summation of first throne — score flag misleading; this is structural substrate"
     },
@@ -132,8 +252,18 @@
       "chapter": 29,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲡⲉⲧⲟⲩⲁⲧⲃⲉ ⲁⲛⲫⲣⲟⲛⲟⲥ ⲧⲏⲣⲟⲩ",
-      "core_english": "{21} the one which surpasses all the thrones.",
+      "core_coptic": "{10} ⲡⲉⲧⲟⲩⲁⲧⲃⲉ ⲁⲛⲫⲣⲟⲛⲟⲥ ⲧⲏⲣⲟⲩ",
+      "core_english": "{10} the one which surpasses all the thrones.",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 11,
+          "section": 1755
+        }
+      ],
       "removed_material": null,
       "temporal_note": "completion of first throne unit"
     },
@@ -142,8 +272,20 @@
       "chapter": 29,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁⲍⲥⲛⲉⲩ ⲛ̄ⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲧⲙⲉⲩ ⲛ̄ⲧⲉ ⲡⲧⲱⲛϩ ⲉⲧⲟⲓ̈ ⲛ̄{22}",
-      "core_english": "The second throne is that of the Mother of Life, who is in {23}",
+      "core_coptic": "ⲧⲧⲙⲁⲍⲥⲛⲉⲩ ⲛ̄ⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲧⲙⲉⲩ ⲛ̄ⲧⲉ ⲡⲧⲱⲛϩ ⲉⲧⲟⲓ̈ ⲛ̄{11}",
+      "core_english": "The second throne is that of the Mother of Life, who is in {11}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "glory",
+          "basis": "the visible ⲁⲩ at start of line 2 completes ⲛ̄ⲉⲁⲩ 'in glory' — only one letter ⲉ is restored",
+          "source_id": 12,
+          "section": 1756
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second throne: Mother of Life — substrate enumeration"
     },
@@ -154,6 +296,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲁⲣⲭⲏ ⲛⲙ̄ⲡⲣⲟⲃⲟⲗⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲉⲧⲁⲩⲉⲓ",
       "core_english": "glory — she who is the beginning of all the emanations that have come",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ἀρχή of the προβολαί — substrate emanation language"
     },
@@ -164,6 +307,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲓⲕⲟⲥⲙⲟⲥ",
       "core_english": "to this cosmos.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of second throne unit"
     },
@@ -174,6 +318,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩⲱⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲉ",
       "core_english": "The third throne is that of the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third throne enumeration"
     },
@@ -184,6 +329,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲥⲙⲁⲛⲧ ⲙ̄ⲡⲓⲱⲧ ⲡⲧⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲉⲧⲉ ⲛⲧⲁϩ ⲡⲉⲧⲁϩ",
       "core_english": "Established One of the Father, the First Man, who is the one who",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man — core substrate cosmic figure"
     },
@@ -194,6 +340,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲃ̄ⲟ ⲛ̄ⲧⲱⲁⲣⲡ ⲛ̄ⲙⲛⲧⲭⲁⲭⲉ ⲧⲏⲣⲥ̄ ⲉⲧⲁⲥⲱⲱⲡⲉ ϩⲛ̄ ⲛ̄",
       "core_english": "subdued the foremost of all Enmity that came to be in the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "primordial battle — substrate"
     },
@@ -204,6 +351,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲉⲕⲉ",
       "core_english": "worlds of the Darkness.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ — Darkness cosmography"
     },
@@ -214,6 +362,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩϩⲧⲁⲩ ⲛ̄ⲑⲣⲟⲛⲟⲥ ⲡⲉ",
       "core_english": "The fourth throne is that of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth throne enumeration"
     },
@@ -224,6 +373,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲡⲙⲉⲣⲓⲧ ⲛ̄ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲡⲡⲛⲁⲃ̄ ⲙⲙⲉⲣⲓⲧ ⲉⲧⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲛ̄",
       "core_english": "the Beloved of the Lights, the Great Beloved, the honored one of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Beloved of the Lights — substrate cosmic title"
     },
@@ -234,6 +384,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ̄ ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲃ̄",
       "core_english": "the aeons of the Greatness.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of fourth throne unit"
     },
@@ -244,6 +395,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩⲧⲟⲩ ⲛⲑⲣⲟⲛⲟⲥ",
       "core_english": "The fifth throne",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth throne enumeration"
     },
@@ -254,6 +406,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ̄ ⲡⲁⲡⲛⲁⲃ̄ ⲛⲉⲕⲱⲧ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲡⲛⲁⲃ̄ ⲛⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ",
       "core_english": "is that of the Great Builder, who is in glory, the Great Architect,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Builder / ἀρχιτέκτων — substrate cosmic figure"
     },
@@ -262,8 +415,9 @@
       "chapter": 29,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉⲧⲁϩⲕⲱⲧ ⲙ̄ⲡⲁⲓⲱⲛ ⲛⲃ̄ⲣ̄ⲡⲉ ⲁⲩⲙⲛⲧⲃ{24} ⲁ{25}ⲧⲁⲗ{26}",
-      "core_english": "who built the new aeon and a {27} {28} {29}",
+      "core_coptic": "ⲡⲉⲧⲁϩⲕⲱⲧ ⲙ̄ⲡⲁⲓⲱⲛ ⲛⲃ̄ⲣ̄ⲡⲉ ⲁⲩⲙⲛⲧⲃ{12} ⲁ{13}ⲧⲁⲗ{14}",
+      "core_english": "who built the new aeon and a {12} {13} {14}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "construction of the New Aeon — substrate cosmography. Score flag for ecclesial=60 likely from ⲙⲛⲧⲃ-fragment, but context is clearly cosmic"
     },
@@ -272,8 +426,9 @@
       "chapter": 29,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄{30}ⲓ̈ⲁⲧⲉ̄ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲁⲙⲟⲩⲣ ϩⲱⲱϩ {31}ⲩⲥⲫⲩ",
-      "core_english": "of {32} Fathers of the Light; and a place of binding, even {33} prison-",
+      "core_coptic": "ⲛ̄{15}ⲓ̈ⲁⲧⲉ̄ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲁⲙⲟⲩⲣ ϩⲱⲱϩ {16}ⲩⲥⲫⲩ",
+      "core_english": "of {15} Fathers of the Light; and a place of binding, even {16} prison-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fathers of Light + place of binding for the Enemy — substrate"
     },
@@ -284,6 +439,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗⲁⲕ̄ⲏ ⲙⲡⲭⲁⲭⲉ ⲙ̄ⲛ ⲛⲉϩⲃⲁⲙ",
       "core_english": "house of the Enemy and his powers.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of fifth throne unit"
     },
@@ -292,8 +448,9 @@
       "chapter": 29,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲡⲁⲡⲡ̄ⲛⲁ ⲉⲧⲁⲛϩ̄ ⲡⲧⲭⲱⲣⲉ̄ {34} ⲡⲉⲧⲁϩⲉⲓⲛⲉ",
-      "core_english": "is that of the Living Spirit, the Strong One {35}, the one who brought",
+      "core_coptic": "ⲡⲉ ⲡⲁⲡⲡ̄ⲛⲁ ⲉⲧⲁⲛϩ̄ ⲡⲧⲭⲱⲣⲉ̄ {17} ⲡⲉⲧⲁϩⲉⲓⲛⲉ",
+      "core_english": "is that of the Living Spirit, the Strong One {17}, the one who brought",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sixth throne: Living Spirit — substrate cosmic figure"
     },
@@ -302,8 +459,9 @@
       "chapter": 29,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁϩⲣⲏⲓ̈ ⲙⲡⲧⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲃⲁⲗ ϩⲙ ⲡ{36}",
-      "core_english": "up the First Man out from the {37},",
+      "core_coptic": "ⲁϩⲣⲏⲓ̈ ⲙⲡⲧⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲁⲃⲁⲗ ϩⲙ ⲡ{18}",
+      "core_english": "up the First Man out from the {18},",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "rescue of First Man — substrate myth"
     },
@@ -312,8 +470,9 @@
       "chapter": 29,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲁϩϩⲱⲣⲃ̄ ϩⲱⲱϩ ⲁϩⲥⲙ̄ⲓⲛⲉ ⲛⲛⲕⲟⲥⲙⲟ{38}",
-      "core_english": "who himself cast (them) down and established the worlds {39}",
+      "core_coptic": "ⲉⲧⲁϩϩⲱⲣⲃ̄ ϩⲱⲱϩ ⲁϩⲥⲙ̄ⲓⲛⲉ ⲛⲛⲕⲟⲥⲙⲟ{19}",
+      "core_english": "who himself cast (them) down and established the worlds {19}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Living Spirit's establishing of worlds — substrate"
     },
@@ -322,8 +481,9 @@
       "chapter": 29,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲩⲕⲁⲑⲁⲣⲓⲥⲙⲟⲥ ⲙⲉⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲣ̄ⲡⲉ {40}",
-      "core_english": "— a purification on the one hand of the Light, and a fettering {41}",
+      "core_coptic": "ⲁⲩⲕⲁⲑⲁⲣⲓⲥⲙⲟⲥ ⲙⲉⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲩⲙⲣ̄ⲡⲉ {20}",
+      "core_english": "— a purification on the one hand of the Light, and a fettering {20}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "purification of Light / fettering of Darkness — substrate cosmic process. Ecclesial=60 score flag is misleading; ⲙⲣ̄ⲡⲉ here means 'fettering', not church"
     },
@@ -334,6 +494,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃ̄ⲁⲙ ⲛⲧⲙⲛⲧⲭⲁⲭⲉ",
       "core_english": "powers of the Enmity.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of sixth throne unit"
     },
@@ -342,8 +503,9 @@
       "chapter": 29,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩⲥⲁⲱ̄ ⲛⲑ{42}",
-      "core_english": "The seventh {43}",
+      "core_coptic": "ⲧⲧⲙⲁϩⲥⲁⲱ̄ ⲛⲑ{21}",
+      "core_english": "The seventh {21}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seventh throne enumeration"
     },
@@ -354,6 +516,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲡⲙⲁϩⲱⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲣ̄ⲡⲟ ⲛ̄ⲧϩⲱⲛⲏ ⲡ",
       "core_english": "that of the Third Ambassador, the King of the Zone, the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third Ambassador / πρεσβευτής — core substrate figure"
     },
@@ -364,6 +527,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲁⲓⲥ ϩⲱⲱϩ ⲛⲛⲥⲩⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ",
       "core_english": "Lord himself of all the counsels.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of seventh throne unit"
     },
@@ -372,8 +536,9 @@
       "chapter": 29,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩⲱⲙⲟⲩⲛ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲓⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉ̄ⲧⲉ̄ ⲛⲧⲁϩ {44}",
-      "core_english": "The eighth throne is that of Jesus the Radiance, who {45}",
+      "core_coptic": "ⲧⲧⲙⲁϩⲱⲙⲟⲩⲛ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲓⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉ̄ⲧⲉ̄ ⲛⲧⲁϩ {22}",
+      "core_english": "The eighth throne is that of Jesus the Radiance, who {22}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eighth throne: Jesus the Radiance — substrate cosmic figure"
     },
@@ -382,8 +547,9 @@
       "chapter": 29,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲣⲉϩⲃⲱⲗ ⲁⲃⲁⲗ ⲙ̄ⲛ ⲡⲣⲉϩⲥⲱⲧⲉ {46}ⲙ̄ⲯⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ",
-      "core_english": "the Releaser and the Redeemer {47} all souls.",
+      "core_coptic": "ⲡⲣⲉϩⲃⲱⲗ ⲁⲃⲁⲗ ⲙ̄ⲛ ⲡⲣⲉϩⲥⲱⲧⲉ {23}ⲙ̄ⲯⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ",
+      "core_english": "the Releaser and the Redeemer {23} all souls.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Releaser/Redeemer of souls — substrate soteriology"
     },
@@ -392,8 +558,9 @@
       "chapter": 29,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲙⲡⲛⲁⲃ̄ ⲛⲛ{48}",
-      "core_english": "The ninth throne is the throne of the Great {49}",
+      "core_coptic": "ⲧⲧⲙⲁϩⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲙⲡⲛⲁⲃ̄ ⲛⲛ{24}",
+      "core_english": "The ninth throne is the throne of the Great {24}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ninth throne: Great [Splendor/Light] — eschatological gathering point"
     },
@@ -402,8 +569,9 @@
       "chapter": 29,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲱⲁⲣⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ ⲥⲱⲩϩ ⲁⲣⲁϩ ⲛⲧⲉ ⲡ{50}",
-      "core_english": "all the churches gather, and (to whom) all the {51}",
+      "core_coptic": "ⲱⲁⲣⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ ⲥⲱⲩϩ ⲁⲣⲁϩ ⲛⲧⲉ ⲡ{25}",
+      "core_english": "all the churches gather, and (to whom) all the {25}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲛⲉⲕⲕⲗⲏⲥⲓⲁ here likely refers to cosmic/eschatological assemblies of light gathered at the Great Splendor's throne, not contemporary Manichaean churches; substrate gathering motif"
     },
@@ -414,6 +582,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣϩ ⲉⲧⲛⲁⲥⲱⲧϩ ⲁⲃⲁⲗ ⲙⲡⲕⲟⲥⲙⲟⲥ ⲕⲱⲗ ⲁⲣⲁϩ",
       "core_english": "entire that shall be saved out from the cosmos is gathered up to him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "eschatological in-gathering — substrate"
     },
@@ -422,8 +591,9 @@
       "chapter": 29,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲓ ⲛⲉ ⲡⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲛⲧⲉ ⲡⲡ{52} ⲛⲉⲧⲕⲁⲁⲧ ϩⲛ ⲛⲁⲓⲱ{53}",
-      "core_english": "These are the nine thrones of the {54}, those that are placed in the aeo{55}",
+      "core_coptic": "ⲛⲉⲓ ⲛⲉ ⲡⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲛⲧⲉ ⲡⲡ{26} ⲛⲉⲧⲕⲁⲁⲧ ϩⲛ ⲛⲁⲓⲱ{27}",
+      "core_english": "These are the nine thrones of the {26}, those that are placed in the aeo{27}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "summary of the nine outer thrones"
     },
@@ -432,8 +602,9 @@
       "chapter": 29,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧϩⲓⲃⲁⲗ ⲛⲛⲓ̈ⲁⲧⲉ̄ ⲙ̄ⲡⲁⲡⲉⲁⲩ {56}",
-      "core_english": "that are outside the Fathers of the Glorious One {57}",
+      "core_coptic": "ⲉⲧϩⲓⲃⲁⲗ ⲛⲛⲓ̈ⲁⲧⲉ̄ ⲙ̄ⲡⲁⲡⲉⲁⲩ {28}",
+      "core_english": "that are outside the Fathers of the Glorious One {28}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fathers of the Glorious One — substrate cosmography"
     },
@@ -442,8 +613,9 @@
       "chapter": 29,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲕⲉⲯⲓⲥ ϩⲱⲱϩ ⲛⲑⲣⲟⲛⲟⲥ ⲉⲧⲕⲁⲁⲧ ϩⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛ̄{58}",
-      "core_english": "And the other nine thrones, those that are placed in this cosmos {59}",
+      "core_coptic": "ⲧⲧⲕⲉⲯⲓⲥ ϩⲱⲱϩ ⲛⲑⲣⲟⲛⲟⲥ ⲉⲧⲕⲁⲁⲧ ϩⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛ̄{29}",
+      "core_english": "And the other nine thrones, those that are placed in this cosmos {29}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "transition to nine inner thrones — structural"
     },
@@ -452,8 +624,9 @@
       "chapter": 29,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϩⲱⲛⲏ ⲛⲉⲓ̈ ⲛⲉ ⲱ̄ⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ϩⲙ ⲡⲭⲁⲓ̈ ⲙ{60}",
-      "core_english": "the Zone, these they are: three thrones in the ship of the {61}",
+      "core_coptic": "ⲧϩⲱⲛⲏ ⲛⲉⲓ̈ ⲛⲉ ⲱ̄ⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ϩⲙ ⲡⲭⲁⲓ̈ ⲙ{30}",
+      "core_english": "the Zone, these they are: three thrones in the ship of the {30}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zone + ship of [day] — substrate astronomical"
     },
@@ -462,8 +635,9 @@
       "chapter": 29,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲉ ⲟⲩⲉ ⲡⲉ ⲡⲁⲡ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲙⲁϩⲥⲛⲉⲩ ⲡ{62}",
-      "core_english": "One of them is that of the Ambassador, the second {63}",
+      "core_coptic": "ⲟⲩⲉ ⲟⲩⲉ ⲡⲉ ⲡⲁⲡ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲙⲁϩⲥⲛⲉⲩ ⲡ{31}",
+      "core_english": "One of them is that of the Ambassador, the second {31}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Ambassador — substrate cosmic figure in day-ship"
     },
@@ -474,6 +648,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲛⲁⲃ̄ ⲙⲡ̄ⲛⲁ ⲡⲙⲁϩⲱⲁⲙⲧ ⲡⲉ ⲡⲁⲡⲡ̄ⲛⲁ ⲉⲧⲁⲛϩ̄",
       "core_english": "the Great One of the Spirit, the third is that of the Living Spirit.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Spirit, Living Spirit — substrate triad"
     },
@@ -482,8 +657,9 @@
       "chapter": 29,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲟⲩⲛ̄ ⲕⲉⲱⲁⲙⲧ ϩⲙ ⲡⲭⲁⲓ̈ ⲉⲧ{64}",
-      "core_english": "And again, there are three more in the ship that {65}:",
+      "core_coptic": "ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲟⲩⲛ̄ ⲕⲉⲱⲁⲙⲧ ϩⲙ ⲡⲭⲁⲓ̈ ⲉⲧ{32}",
+      "core_english": "And again, there are three more in the ship that {32}:",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲁⲗⲓⲛ marker continues enumeration into night-ship; structural"
     },
@@ -492,8 +668,9 @@
       "chapter": 29,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲧⲱⲁⲣⲡ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲛ̄ⲓⲏⲥ ⲡⲣ̄ⲓ̈ⲉ {66}",
-      "core_english": "the first is the throne of Jesus the Radiance, {67}",
+      "core_coptic": "ⲡⲧⲱⲁⲣⲡ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲛ̄ⲓⲏⲥ ⲡⲣ̄ⲓ̈ⲉ {33}",
+      "core_english": "the first is the throne of Jesus the Radiance, {33}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Jesus Radiance in night-ship — substrate"
     },
@@ -502,8 +679,9 @@
       "chapter": 29,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲧⲱⲁⲣⲡ̄ ⲛ̄ⲣⲱⲙⲉ ⲡⲙⲁϩⲱⲁⲙⲧ ⲡⲉ̄ ⲡ{68}",
-      "core_english": "the First Man, the third is that of {69}",
+      "core_coptic": "ⲡⲧⲱⲁⲣⲡ̄ ⲛ̄ⲣⲱⲙⲉ ⲡⲙⲁϩⲱⲁⲙⲧ ⲡⲉ̄ ⲡ{34}",
+      "core_english": "the First Man, the third is that of {34}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man — substrate cosmic figure"
     },
@@ -512,8 +690,20 @@
       "chapter": 29,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲟⲩⲁⲓⲛⲉ {70} ⲛⲫⲟⲛⲟⲥ ⲥⲙⲁⲁⲛⲧ ⲍⲙ ⲡⲧⲭⲁⲓ ⲥⲛⲉⲩ",
-      "core_english": "The Light: {71} throne, established in the Second Ship.",
+      "core_coptic": "ⲡⲟⲩⲁⲓⲛⲉ {35} ⲛⲫⲟⲛⲟⲥ ⲥⲙⲁⲁⲛⲧ ⲍⲙ ⲡⲧⲭⲁⲓ ⲥⲛⲉⲩ",
+      "core_english": "The Light: {35} throne, established in the Second Ship.",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲡⲙⲁⲍⲥⲟⲟⲩ",
+          "english": "the sixth",
+          "basis": "ⲧⲧⲓⲥⲁⲩ in MS — likely a Lycopolitan/dialectal ordinal for 'sixth' (cf. ⲥⲟⲟⲩ '6'). Required by the sequence: line 2 has 'seventh,' line 4 has 'eighth,' line 8 has 'ninth' (ⲡⲙⲁⲍϯⲥ), line 12 confirms 'the [nine] great thrones.'",
+          "source_id": 37,
+          "section": 1793
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Light in second ship — substrate"
     },
@@ -524,6 +714,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁⲍⲥⲁϣϥ ⲍⲱⲱϥ ⲛⲫⲟⲛⲟⲥ ⲡⲉ ⲡⲉⲧⲥⲙⲁⲁⲛⲧ ⲍⲙ ⲡⲙⲁⲍ",
       "core_english": "The seventh throne itself is the one established in the seventh",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seventh inner throne enumeration"
     },
@@ -534,6 +725,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲁϣϥ ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲉⲣⲉ ⲡⲛⲁⲃ ⲛⲛ̄ⲣⲡⲟ ⲛⲧⲉ ⲡⲧⲁⲓⲟ ⲍⲙⲉ",
       "core_english": "firmament, with the Great King of Honor",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great King of Honor in the seventh firmament — substrate cosmography"
     },
@@ -544,6 +736,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲧ ⲁⲭⲱϥ ⲡⲙⲁⲍϣⲙⲟⲩⲛ ⲛⲫⲟⲛⲟⲥ ⲡⲉ ⲡⲉⲧⲥⲙⲁⲁ",
       "core_english": "seated upon it. The eighth throne is the one est-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eighth inner throne enumeration"
     },
@@ -554,6 +747,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲧ̄ ⲍⲙ ⲡⲁⲏⲣ ⲉⲣⲉ ⲡⲕⲣⲓⲧⲏⲥ ⲛⲧⲉ ⲧⲙⲏⲉ ⲍⲙⲉⲥⲧ ⲁⲭⲱϥ ⲉ",
       "core_english": "ablished in the air, with the Judge of Truth seated upon it,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Judge of Truth in the air — substrate"
     },
@@ -564,6 +758,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲛⲧⲁϥ ⲡⲉⲧϯⲍⲉⲡ ⲁⲛⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ϣⲁⲣⲉ ϣⲁⲙⲧ̄ ⲙ̄ⲙⲁⲓⲧ",
       "core_english": "who is the one who gives judgment to all men. Three ways",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "judgment + three ways — substrate eschatology"
     },
@@ -572,8 +767,30 @@
       "chapter": 29,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲱⲣⲝ ⲁⲃⲁⲗ ⲍⲓ{72}ⲉϥⲉⲍⲏ ⲟⲩⲉ ⲁⲧⲡⲙⲟⲩ ⲟⲩⲉ ⲁⲡⲱⲛⲍ ⲟⲩ{73} ⲁ",
+      "core_coptic": "ⲡⲱⲣⲝ ⲁⲃⲁⲗ ⲍⲓ{36}ⲉϥⲉⲍⲏ ⲟⲩⲉ ⲁⲧⲡⲙⲟⲩ ⲟⲩⲉ ⲁⲡⲱⲛⲍ ⲟⲩ{37} ⲁ",
       "core_english": "divide forth before him: one to death, one to life, one to",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(restoration of single damaged letter)",
+          "basis": "Editor restores [ⲧ] in ⲍⲓ[ⲧ]ⲉϥⲉⲍⲏ = ϩⲓⲧⲉϥϩⲏ 'before him.'",
+          "source_id": 38,
+          "section": 1799
+        },
+        {
+          "id": 37,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(restoration)",
+          "basis": "Editor restores [ⲉ] in ⲟⲩ[ⲉ] 'one,' completing the parallel triplet ⲟⲩⲉ ... ⲟⲩⲉ ... ⲟⲩⲉ.",
+          "source_id": 39,
+          "section": 1799
+        }
+      ],
       "removed_material": null,
       "temporal_note": "three-fold division at judgment — classic substrate eschatological mapping"
     },
@@ -584,6 +801,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲧⲱⲧ ⲡⲙⲁⲍϯⲥ ⲛⲫⲟⲛⲟⲥ ⲉⲧⲕⲁⲁⲧ ⲉⲧⲥⲙⲁⲛⲧ̄",
       "core_english": "the agreement. The ninth throne, which is set, established,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "completion of three ways + opening of ninth-throne enumeration; the structural marker itself is substrate, but content shifts to ecclesial in i=60"
     },
@@ -592,8 +810,40 @@
       "chapter": 29,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ{74} ⲛⲉ ⲡ{75}ⲥ ⲛ̄ⲛⲁⲃ ⲛ{76}ⲣⲟ",
-      "core_english": "{77} are the {78} great th{79}-",
+      "core_coptic": "ⲛ{38} ⲛⲉ ⲡ{39}ⲥ ⲛ̄ⲛⲁⲃ ⲛ{40}ⲣⲟ",
+      "core_english": "{38} are the {39} great th{40}-",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲉⲓ",
+          "english": "These",
+          "basis": "Editor restores [ⲉⲓ] completing ⲛⲉⲓ 'these,' the demonstrative subject of identification clause.",
+          "source_id": 47,
+          "section": 1801
+        },
+        {
+          "id": 39,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ϯ",
+          "english": "nine",
+          "basis": "Editor restores [ϯ] completing ⲡϯⲥ 'the nine' (= ⲯⲓⲥ); confirms the sequence of nine cosmic thrones, of which thrones 6-9 have been enumerated above.",
+          "source_id": 48,
+          "section": 1801
+        },
+        {
+          "id": 40,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲫ",
+          "english": "thr-",
+          "basis": "Editor restores [ⲫ] completing ⲫⲣⲟⲛⲟⲥ = θρόνος 'throne.' Note this confirms ⲫⲟⲛⲟⲥ throughout = θρόνος 'throne,' not φόνος 'murder' or φύλαξ 'guardian.'",
+          "source_id": 49,
+          "section": 1801
+        }
+      ],
       "removed_material": null,
       "temporal_note": "summary recap formula 'these are the [eighteen] great thrones' — structural substrate"
     },
@@ -602,8 +852,19 @@
       "chapter": 29,
       "line": 65,
       "classification": "cosmological_substrate",
-      "core_coptic": "{80} ⲉⲧⲥⲙⲁⲁⲛⲧ ⲍⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛ̄",
-      "core_english": "{81}, established in this cosmos of",
+      "core_coptic": "{41} ⲉⲧⲥⲙⲁⲁⲛⲧ ⲍⲙ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲛ̄",
+      "core_english": "{41}, established in this cosmos of",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 10,
+          "partial": "ⲛⲟⲥ at start (= -ⲛⲟⲥ ending of ⲫⲣⲟⲛⲟⲥ from previous line)",
+          "source_id": 50,
+          "section": 1802
+        }
+      ],
       "removed_material": null,
       "temporal_note": "structural recap"
     },
@@ -612,8 +873,27 @@
       "chapter": 29,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{82} ⲙ̄ⲡⲁⲡⲉⲁⲩ ⲡⲉⲧⲉⲣⲉ ⲛⲥ{83}ⲏ",
-      "core_english": "{84} of the Glorious One, which the {85}",
+      "core_coptic": "{42} ⲙ̄ⲡⲁⲡⲉⲁⲩ ⲡⲉⲧⲉⲣⲉ ⲛⲥ{43}ⲏ",
+      "core_english": "{42} of the Glorious One, which the {43}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "ⲟⲩⲁⲓⲛⲉ visible in [restoration] = 'light'",
+          "source_id": 51,
+          "section": 1803
+        },
+        {
+          "id": 43,
+          "segment": 66,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 52,
+          "section": 1803
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Glorious One — substrate cosmographic title"
     },
@@ -622,8 +902,26 @@
       "chapter": 29,
       "line": 67,
       "classification": "cosmological_substrate",
-      "core_coptic": "{86} ⲧⲁⲗⲁⲩ {87}",
-      "core_english": "{88} place them {89}",
+      "core_coptic": "{44} ⲧⲁⲗⲁⲩ {45}",
+      "core_english": "{44} place them {45}",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 17,
+          "source_id": 53,
+          "section": 1804
+        },
+        {
+          "id": 45,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 54,
+          "section": 1804
+        }
+      ],
       "removed_material": null,
       "temporal_note": "fragmentary closing recap"
     },
@@ -632,8 +930,27 @@
       "chapter": 29,
       "line": 68,
       "classification": "cosmological_substrate",
-      "core_coptic": "{90} ⲙⲛ̄ {91}ⲉⲩ",
-      "core_english": "{92} with {93}",
+      "core_coptic": "{46} ⲙⲛ̄ {47}ⲉⲩ",
+      "core_english": "{46} with {47}",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 68,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 55,
+          "section": 1805
+        },
+        {
+          "id": 47,
+          "segment": 68,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "ⲛ . ⲧⲉ . . .",
+          "source_id": 56,
+          "section": 1805
+        }
+      ],
       "removed_material": null,
       "temporal_note": "fragmentary closing"
     }

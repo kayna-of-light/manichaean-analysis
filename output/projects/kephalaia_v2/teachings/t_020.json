@@ -5,7 +5,7 @@
   "start_section": 1206,
   "end_section": 1235,
   "total_sections": 30,
-  "total_lacunae": 117,
+  "total_lacunae": 60,
   "segments": [
     {
       "section": 1206,
@@ -13,7 +13,17 @@
       "line": 6,
       "classification": "cosmological_substrate",
       "core_coptic": "{0} ⲡⲟⲩⲁⲓⲛⲉ ⲛⲁⲥⲣⲛ̄ ⲛⲉⲧⲛⲁⲥⲁⲧⲙⲉϥ ⲛ̄ⲥⲉⲥⲛⲟⲩⲱ",
-      "core_english": "{1} the light shall be poured out upon those who shall hear him, and they shall recogni",
+      "core_english": "{0} the light shall be poured out upon those who shall hear him, and they shall recogni",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 7,
+          "section": 1206
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Bridges into the topic; uses substrate vocabulary of light pouring out."
     },
@@ -24,6 +34,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉϩ ⲉⲧⲃⲉ ⲡϣⲁⲣⲓⲧ ⲛⲓⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛⲧⲛⲁⲟ̄ ⲧⲥⲉ ⲉⲧϩϣⲟ",
       "core_english": "ze (him), concerning the First Father of the Greatness — this is the one who exi",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Topic statement: the First Father of the Greatness — substrate cosmic figure."
     },
@@ -32,8 +43,18 @@
       "chapter": 21,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲥⲙⲁⲛⲧ ⲥⲙ ⲡϥⲧ ⲙⲙⲉⲗⲟⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ",
-      "core_english": "sts, {3} established in his five members of light, which are",
+      "core_coptic": "{1} ⲥⲙⲁⲛⲧ ⲥⲙ ⲡϥⲧ ⲙⲙⲉⲗⲟⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ",
+      "core_english": "sts, {1} established in his five members of light, which are",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 8,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 8,
+          "section": 1208
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five members of light — classic substrate enumeration of the Father's anatomy."
     },
@@ -42,8 +63,28 @@
       "chapter": 21,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲛⲉⲧⲉ ⲙⲛ ϣⲓ ⲙⲛ̄ ⲙⲉⲧⲣⲟⲛ ⲁⲣⲁ{5}",
-      "core_english": "{6} which have no measure nor measure-rule with{7}",
+      "core_coptic": "{2} ⲛⲉⲧⲉ ⲙⲛ ϣⲓ ⲙⲛ̄ ⲙⲉⲧⲣⲟⲛ ⲁⲣⲁ{3}",
+      "core_english": "{2} which have no measure nor measure-rule with{3}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 9,
+          "section": 1209
+        },
+        {
+          "id": 3,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "them",
+          "basis": "Editor partial restoration of 3pl pronominal suffix on ⲁⲣⲁ⸗.",
+          "source_id": 10,
+          "section": 1209
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Apophatic description — substrate register about the Greatness."
     },
@@ -52,8 +93,28 @@
       "chapter": 21,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8} ⲡⲛⲟⲩⲥ ⲡⲙⲉⲩⲉ ⲧⲥⲃⲱ ⲡⲥⲁⲭⲛⲉ ⲙⲛ {9}",
-      "core_english": "{10} the mind, the thought, the teaching, the counsel and {11}",
+      "core_coptic": "{4} ⲡⲛⲟⲩⲥ ⲡⲙⲉⲩⲉ ⲧⲥⲃⲱ ⲡⲥⲁⲭⲛⲉ ⲙⲛ {5}",
+      "core_english": "{4} the mind, the thought, the teaching, the counsel and {5}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 11,
+          "section": 1210
+        },
+        {
+          "id": 5,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲡⲙⲁⲕⲙⲉⲕ",
+          "english": "the reflection",
+          "basis": "Editor restoration completing the canonical five-faculty list (mind, thought, teaching, counsel, reflection) per terminology guide.",
+          "source_id": 12,
+          "section": 1210
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The classic five intellectual members: nous/ennoia/phronesis/enthymesis/logismos — core substrate enumeration."
     },
@@ -62,8 +123,30 @@
       "chapter": 21,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12} ⲡⲉϩⲙⲛⲧⲥⲛⲁⲩⲥ ⲙⲙⲉⲗⲟⲥ ⲛⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ̄ ⲛ{13}",
-      "core_english": "{14} his twelve members of light, which {15}",
+      "core_coptic": "{6} ⲡⲉϩⲙⲛⲧⲥⲛⲁⲩⲥ ⲙⲙⲉⲗⲟⲥ ⲛⲟⲩⲁⲓⲛⲉ ⲉⲧⲉ̄ ⲛ{7}",
+      "core_english": "{6} his twelve members of light, which {7}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲙⲉⲕ",
+          "english": "[...]",
+          "basis": "Editor restoration of final syllable of [ⲡⲙⲁⲕ]ⲙⲉⲕ 'reflection,' continuing from line 23.",
+          "source_id": 13,
+          "section": 1211
+        },
+        {
+          "id": 7,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲩ",
+          "english": "are",
+          "basis": "Editor restoration; ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ = 'which are' is standard apposition formula.",
+          "source_id": 14,
+          "section": 1211
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve members of light — substrate enumeration."
     },
@@ -72,8 +155,20 @@
       "chapter": 21,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉ ⲧⲉϩⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛ̄ⲥⲟⲫⲓⲁ ⲟⲩⲛ ⲧⲟⲩ ⲛⲛⲁⲟ̄ ⲙⲙⲉⲗ{16}",
-      "core_english": "are the twelve Wisdoms. There are five great mem{17}",
+      "core_coptic": "ⲛⲉ ⲧⲉϩⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛ̄ⲥⲟⲫⲓⲁ ⲟⲩⲛ ⲧⲟⲩ ⲛⲛⲁⲟ̄ ⲙⲙⲉⲗ{8}",
+      "core_english": "are the twelve Wisdoms. There are five great mem{8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲟⲥ",
+          "english": "bers",
+          "basis": "Editor restoration completing ⲙⲙⲉⲗⲟⲥ 'members.'",
+          "source_id": 15,
+          "section": 1212
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve Wisdoms identified with twelve members; five great members named — substrate equivalence formula."
     },
@@ -82,8 +177,28 @@
       "chapter": 21,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲟⲩⲁⲓⲛⲉ ϣⲟⲟⲡ ⲥⲙ ⲡⲧⲟⲩⲉ ⲡⲧⲟⲩⲉ {18} ⲟⲩⲛ ⲧⲉ ⲛⲛⲁ{19}",
-      "core_english": "of light existing within each one {20}; there are five great",
+      "core_coptic": "ⲛⲟⲩⲁⲓⲛⲉ ϣⲟⲟⲡ ⲥⲙ ⲡⲧⲟⲩⲉ ⲡⲧⲟⲩⲉ {9} ⲟⲩⲛ ⲧⲉ ⲛⲛⲁ{10}",
+      "core_english": "of light existing within each one {9}; there are five great",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 16,
+          "section": 1213
+        },
+        {
+          "id": 10,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲟ̄",
+          "english": "ones",
+          "basis": "Editor restoration completing ⲛⲛⲁⲟ̄ 'great (ones).'",
+          "source_id": 17,
+          "section": 1213
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Distributive structure — substrate."
     },
@@ -92,8 +207,36 @@
       "chapter": 21,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲥⲁⲗⲙⲉ ⲛⲧⲉ ⲡⲥⲙⲁⲙⲉ ⲃⲉⲃⲉ ⲁⲃⲁ̄{21} ⲧⲟⲩ ⲛⲛⲁⲟ̄{22}",
-      "core_english": "{23} of the Blessed One, gushed forth {24} five great",
+      "core_coptic": "ⲛⲥⲁⲗⲙⲉ ⲛⲧⲉ ⲡⲥⲙⲁⲙⲉ ⲃⲉⲃⲉ ⲁⲃⲁ̄{11} ⲧⲟⲩ ⲛⲛⲁⲟ̄{12}",
+      "core_english": "{13} of the Blessed One, gushed forth {11} five great",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲗ",
+          "source_id": 18,
+          "section": 1214
+        },
+        {
+          "id": 12,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 19,
+          "section": 1214
+        },
+        {
+          "id": 13,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 0,
+          "partial": "ⲛⲥⲁⲗⲙⲉ — sense uncertain; possibly 'branches/rays' or a Lyc plural form related to bodies/limbs of light",
+          "source_id": 20,
+          "section": 1214
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Emanation imagery — gushing forth from the Blessed One."
     },
@@ -102,8 +245,28 @@
       "chapter": 21,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{25} ⲛⲟⲩⲁⲓ{26}",
-      "core_english": "{27} of li{28}",
+      "core_coptic": "{14} ⲛⲟⲩⲁⲓ{15}",
+      "core_english": "{14} of li{15}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 30,
+          "source_id": 21,
+          "section": 1215
+        },
+        {
+          "id": 15,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲛⲉ",
+          "english": "ght",
+          "basis": "Editor restoration completing ⲛⲟⲩⲁⲓ[ⲛⲉ] 'of light.'",
+          "source_id": 22,
+          "section": 1215
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Surviving fragment 'of light' — substrate context."
     },
@@ -112,8 +275,28 @@
       "chapter": 21,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϣⲁⲣⲓⲧ ⲡⲉ ⲡⲉϩⲟⲩⲁⲓⲛⲉ ⲉ̄ⲧⲣⲟⲩ{29} {30} ⲁϥⲃⲉⲃⲉ̄",
-      "core_english": "The first is his Light which sh{31} {32} he gushed",
+      "core_coptic": "ⲧϣⲁⲣⲓⲧ ⲡⲉ ⲡⲉϩⲟⲩⲁⲓⲛⲉ ⲉ̄ⲧⲣⲟⲩ{16} {17} ⲁϥⲃⲉⲃⲉ̄",
+      "core_english": "The first is his Light which sh{16} {17} he gushed",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲁⲓⲛⲉ",
+          "english": "ines",
+          "basis": "Editor restoration; ⲉⲧⲣⲟⲩⲁⲓⲛⲉ = causative 'which causes-to-shine/which illuminates.'",
+          "source_id": 23,
+          "section": 1216
+        },
+        {
+          "id": 17,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 24,
+          "section": 1216
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Begins the numbered enumeration: First = Light."
     },
@@ -122,8 +305,38 @@
       "chapter": 21,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ ⲙ̄ⲙⲁϥ ⲛϩⲟⲩⲱⲧ{33} {34}ⲁⲓⲱⲛ ⲧⲏⲣ{35}",
-      "core_english": "forth from him in oneness{36} {37} all the aeons{38}",
+      "core_coptic": "ⲁⲃⲁⲗ ⲙ̄ⲙⲁϥ ⲛϩⲟⲩⲱⲧ{18} {19}ⲁⲓⲱⲛ ⲧⲏⲣ{20}",
+      "core_english": "forth from him in oneness{18} {19} all the aeons{20}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "[...]",
+          "basis": "Editor partial restoration; ⲛϩⲟⲩⲱⲧⲥ̄ adverbial 'in singularity / uniquely.'",
+          "source_id": 25,
+          "section": 1217
+        },
+        {
+          "id": 19,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 26,
+          "section": 1217
+        },
+        {
+          "id": 20,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "[...]",
+          "basis": "Editor partial restoration of plural marker on ⲧⲏⲣ[ⲟⲩ] 'all.'",
+          "source_id": 27,
+          "section": 1217
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of First — emanates into all aeons."
     },
@@ -132,8 +345,18 @@
       "chapter": 21,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲁⲥⲥⲛⲧⲉ ⲡⲉ ⲡⲥⲧⲛⲟⲩϥⲉ ⲛⲧⲉ̄ ⲧ{39}",
-      "core_english": "The second is the fragrance of the {40}",
+      "core_coptic": "ⲧⲙⲁⲥⲥⲛⲧⲉ ⲡⲉ ⲡⲥⲧⲛⲟⲩϥⲉ ⲛⲧⲉ̄ ⲧ{21}",
+      "core_english": "The second is the fragrance of the {21}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 28,
+          "section": 1218
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second = fragrance — substrate sensory mapping."
     },
@@ -142,8 +365,19 @@
       "chapter": 21,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛϣⲁϣⲉ ⲁⲛⲁⲓⲱⲛ ⲧⲏⲣⲟⲩ ⲛⲧⲙⲛⲧⲛⲁⲟ̄ {41}",
-      "core_english": "spreading into all the aeons of the Greatness {42}",
+      "core_coptic": "ⲛϣⲁϣⲉ ⲁⲛⲁⲓⲱⲛ ⲧⲏⲣⲟⲩ ⲛⲧⲙⲛⲧⲛⲁⲟ̄ {22}",
+      "core_english": "spreading into all the aeons of the Greatness {22}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "wohl leer (probably blank — structural section break)",
+          "source_id": 29,
+          "section": 1219
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation — fragrance spreads into the aeons."
     },
@@ -152,8 +386,18 @@
       "chapter": 21,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲁⲥϣⲁⲙⲧⲉ ⲡⲉ ⲡⲉϩⲥⲣⲁⲩ ⲉⲧⲁⲛ̄ⲥ ⲛⲧⲉ {43}",
-      "core_english": "The third is his beautiful voice of {44}",
+      "core_coptic": "ⲧⲙⲁⲥϣⲁⲙⲧⲉ ⲡⲉ ⲡⲉϩⲥⲣⲁⲩ ⲉⲧⲁⲛ̄ⲥ ⲛⲧⲉ {23}",
+      "core_english": "The third is his beautiful voice of {23}",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 30,
+          "section": 1220
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third = beautiful voice — substrate enumeration continues."
     },
@@ -162,8 +406,26 @@
       "chapter": 21,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{45}ⲉ ⲛⲉϩⲁⲓⲱⲛ ⲧⲏⲣⲟⲩ {46}",
-      "core_english": "{47} all the aeons {48}",
+      "core_coptic": "{24}ⲉ ⲛⲉϩⲁⲓⲱⲛ ⲧⲏⲣⲟⲩ {25}",
+      "core_english": "{24} all the aeons {25}",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 31,
+          "section": 1221
+        },
+        {
+          "id": 25,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 32,
+          "section": 1221
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation — voice fills all aeons."
     },
@@ -172,8 +434,18 @@
       "chapter": 21,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲁⲥϩⲧⲟⲉ ⲧⲉ ⲧⲉϩⲙⲛⲧⲉ̄ⲛ {49}",
-      "core_english": "The fourth is his {50}",
+      "core_coptic": "ⲧⲙⲁⲥϩⲧⲟⲉ ⲧⲉ ⲧⲉϩⲙⲛⲧⲉ̄ⲛ {26}",
+      "core_english": "The fourth is his {26}",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 22,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 33,
+          "section": 1222
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fourth in the enumeration — substrate."
     },
@@ -182,8 +454,44 @@
       "chapter": 21,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{51} ⲃⲉⲃⲉ ⲁⲃⲁⲗ ⲙⲙⲁϩ {52} {53} ⲁⲃⲁⲗ ⲛ̄ {54}",
-      "core_english": "{55} gushes forth from him {56} {57} forth {58}",
+      "core_coptic": "{27} ⲃⲉⲃⲉ ⲁⲃⲁⲗ ⲙⲙⲁϩ {28} {29} ⲁⲃⲁⲗ ⲛ̄ {30}",
+      "core_english": "{27} gushes forth from him {28} {29} forth {30}",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲃⲉ",
+          "english": "[which]",
+          "basis": "Editor restoration of the verb-stem ⲃⲉⲃⲉ 'to gush forth'; only the doubled syllable is preserved.",
+          "source_id": 34,
+          "section": 1223
+        },
+        {
+          "id": 28,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 35,
+          "section": 1223
+        },
+        {
+          "id": 29,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 36,
+          "section": 1223
+        },
+        {
+          "id": 30,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 37,
+          "section": 1223
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Emanation language — substrate fragment."
     },
@@ -192,8 +500,44 @@
       "chapter": 21,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{59} ⲉ ⲧⲉ ⲧⲉϩⲛⲁⲟ̄ ⲛ {60} {61} ⲉⲁⲣ ⲉⲧ {62} ⲉ",
-      "core_english": "{63} is the Greatness {64} {65} ... which {66}",
+      "core_coptic": "{31} ⲉ ⲧⲉ ⲧⲉϩⲛⲁⲟ̄ ⲛ {32} {33} ⲉⲁⲣ ⲉⲧ {34} ⲉ",
+      "core_english": "{31} is the Greatness {32} {33} ... which {34}",
+      "apparatus": [
+        {
+          "id": 31,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲧⲙⲁⲍⲧ̄",
+          "english": "the fifth",
+          "basis": "Editor restores feminine ordinal ⲧⲙⲁⲍⲧ̄ⲉ 'the fifth' agreeing with ⲧⲉϩⲛⲁⲟ̄ 'the Greatness'; matches the Five Greatnesses pattern from accumulated vocabulary.",
+          "source_id": 38,
+          "section": 1224
+        },
+        {
+          "id": 32,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 39,
+          "section": 1224
+        },
+        {
+          "id": 33,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 40,
+          "section": 1224
+        },
+        {
+          "id": 34,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 41,
+          "section": 1224
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment naming the Greatness — substrate."
     },
@@ -202,8 +546,48 @@
       "chapter": 21,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{67} ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ̄ⲥⲏⲣ {68} {69} ⲁⲃⲁⲗ ⲛ {70}",
-      "core_english": "{71} revealed forth every {72} {73} forth {74}",
+      "core_coptic": "{35} ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ̄ⲥⲏⲣ {36} {37} ⲁⲃⲁⲗ ⲛ {38}",
+      "core_english": "{35} revealed forth every {36} {37} forth {38}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲥⲟⲩ",
+          "english": "she",
+          "basis": "Editor restores ⲧⲁⲥⲟⲩⲱⲗⲡ ⲁⲃⲁⲗ 'she revealed forth' — ⲱⲗⲡ ⲁⲃⲁⲗ visible.",
+          "source_id": 42,
+          "section": 1225
+        },
+        {
+          "id": 36,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲛⲓⲙ",
+          "english": "every",
+          "basis": "Editor restores ⲛⲓⲙ 'every' after ⲛ̄ⲥⲏⲣ; sense 'every region/scattering.'",
+          "source_id": 43,
+          "section": 1225
+        },
+        {
+          "id": 37,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙⲏⲛ",
+          "english": "which abide",
+          "basis": "Editor restores ⲉⲧⲙⲏⲛ ⲁⲃⲁⲗ 'which remain forth' — qualitative ⲙⲏⲛ from ⲙⲟⲩⲛ 'remain, abide.'",
+          "source_id": 44,
+          "section": 1225
+        },
+        {
+          "id": 38,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 45,
+          "section": 1225
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Revelation/emanation language — substrate."
     },
@@ -212,8 +596,19 @@
       "chapter": 21,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲣⲟⲩ ⲧⲉⲧⲁⲩⲍⲱⲣⲡⲁϥⲉ ⲙ̄ⲙⲁⲥ ⲛⲍⲏⲧⲟⲩ {75}",
-      "core_english": "all of them, that which {12a} her in them {76}",
+      "core_coptic": "ⲧⲏⲣⲟⲩ ⲧⲉⲧⲁⲩⲍⲱⲣⲡⲁϥⲉ ⲙ̄ⲙⲁⲥ ⲛⲍⲏⲧⲟⲩ {39}",
+      "core_english": "all of them, that which {12a} her in them {39}",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲧⲉⲧⲁⲩⲍⲱⲣⲡⲁϥⲉ visible but obscure verb form preceding the gap",
+          "source_id": 46,
+          "section": 1226
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate fragment — internal cosmic process."
     },
@@ -222,8 +617,26 @@
       "chapter": 21,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥϥⲣⲁⲣ̄ⲓⲍⲉ ⲛ̄ⲍⲏⲧⲟⲩ {77} ⲣⲥϥⲣⲁⲣ̄ⲍⲉ {78}",
-      "core_english": "she seals in them {79} ... seal {80}",
+      "core_coptic": "ⲥϥⲣⲁⲣ̄ⲓⲍⲉ ⲛ̄ⲍⲏⲧⲟⲩ {40} ⲣⲥϥⲣⲁⲣ̄ⲍⲉ {41}",
+      "core_english": "she seals in them {40} ... seal {41}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 47,
+          "section": 1227
+        },
+        {
+          "id": 41,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 48,
+          "section": 1227
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sealing imagery — within cosmic system, substrate."
     },
@@ -232,8 +645,34 @@
       "chapter": 21,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲩⲧⲛⲛⲁⲃⲁⲗ {81} ⲍⲉ {82} ⲛⲉ ⲍⲙ̄ {83}",
-      "core_english": "while they are sent forth {84} ... {85} ... in {86}",
+      "core_coptic": "ⲉⲩⲧⲛⲛⲁⲃⲁⲗ {42} ⲍⲉ {43} ⲛⲉ ⲍⲙ̄ {44}",
+      "core_english": "while they are sent forth {42} ... {43} ... in {44}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 49,
+          "section": 1228
+        },
+        {
+          "id": 43,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 50,
+          "section": 1228
+        },
+        {
+          "id": 44,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 51,
+          "section": 1228
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Emanation/sending forth — substrate."
     },
@@ -242,8 +681,44 @@
       "chapter": 21,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉ {87} ⲥⲉⲝⲥⲁⲛⲉϣ ⲍⲱϩ {88} +ⲛⲟⲩ {89} {90}",
-      "core_english": "{91} they nourish also {92} ... {93} {94}",
+      "core_coptic": "ⲛⲉ {45} ⲥⲉⲝⲥⲁⲛⲉϣ ⲍⲱϩ {46} +ⲛⲟⲩ {47} {48}",
+      "core_english": "{45} they nourish also {46} ... {47} {48}",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 29,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 52,
+          "section": 1229
+        },
+        {
+          "id": 46,
+          "segment": 29,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 53,
+          "section": 1229
+        },
+        {
+          "id": 47,
+          "segment": 29,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 54,
+          "section": 1229
+        },
+        {
+          "id": 48,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲡⲧⲉϩ",
+          "english": "the",
+          "basis": "Editor restoration at line-end — partial only; sense uncertain.",
+          "source_id": 55,
+          "section": 1229
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Nourishment within cosmic process — substrate."
     },
@@ -252,8 +727,35 @@
       "chapter": 21,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲣⲁⲣ ⲍⲱϩ ⲉⲧⲁⲛⲍ ⲛⲧ {95} ⲡ {96} ⲟⲩⲣⲁⲧ {97}",
-      "core_english": "... the living thing of {98} ... {99} ... {100}",
+      "core_coptic": "ⲍⲣⲁⲣ ⲍⲱϩ ⲉⲧⲁⲛⲍ ⲛⲧ {49} ⲡ {50} ⲟⲩⲣⲁⲧ {51}",
+      "core_english": "... the living thing of {49} ... {50} ... {51}",
+      "apparatus": [
+        {
+          "id": 49,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "ⲍⲣⲁ[ⲣ] visible at line-start; sense uncertain",
+          "source_id": 56,
+          "section": 1230
+        },
+        {
+          "id": 50,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 57,
+          "section": 1230
+        },
+        {
+          "id": 51,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 58,
+          "section": 1230
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living thing — substrate fragment."
     },
@@ -262,8 +764,18 @@
       "chapter": 21,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲉⲍⲱϩ ⲛ̄ⲃ̄ⲣ̄ⲣⲉ ⲧⲉⲧⲉϣⲁⲥⲃⲉⲃⲉ ⲁⲃⲁⲗ ⲙⲙⲁⲥ {101}",
-      "core_english": "they are also new — that which gushes forth from her {102}",
+      "core_coptic": "ⲥⲉⲍⲱϩ ⲛ̄ⲃ̄ⲣ̄ⲣⲉ ⲧⲉⲧⲉϣⲁⲥⲃⲉⲃⲉ ⲁⲃⲁⲗ ⲙⲙⲁⲥ {52}",
+      "core_english": "they are also new — that which gushes forth from her {52}",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 31,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 59,
+          "section": 1231
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continual emanation — substrate."
     },
@@ -272,8 +784,26 @@
       "chapter": 21,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ ⲉϣⲁⲩⲁ {103} ⲛ̄ⲥⲉⲣ̄ⲡⲙ̄ⲙⲁⲟ ⲍⲛ̄ ⲧ {104}",
-      "core_english": "forth, when they {105} and become rich in the {106}",
+      "core_coptic": "ⲁⲃⲁⲗ ⲉϣⲁⲩⲁ {53} ⲛ̄ⲥⲉⲣ̄ⲡⲙ̄ⲙⲁⲟ ⲍⲛ̄ ⲧ {54}",
+      "core_english": "forth, when they {53} and become rich in the {54}",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 60,
+          "section": 1232
+        },
+        {
+          "id": 54,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 61,
+          "section": 1232
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Becoming rich — within cosmic system, substrate."
     },
@@ -282,8 +812,27 @@
       "chapter": 21,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲱϩ ⲉⲧⲛⲉⲥⲱⲥ {107} ⲕⲟⲛⲟⲣⲡⲁϥⲓⲁ {108}",
-      "core_english": "the beautiful thing {109} ... {110}",
+      "core_coptic": "ⲍⲱϩ ⲉⲧⲛⲉⲥⲱⲥ {55} ⲕⲟⲛⲟⲣⲡⲁϥⲓⲁ {56}",
+      "core_english": "the beautiful thing {55} ... {56}",
+      "apparatus": [
+        {
+          "id": 55,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲍ]ⲕⲟⲛⲟⲣⲡⲁϥ[ⲓⲁ — obscure word, possibly Greek loanword",
+          "source_id": 62,
+          "section": 1233
+        },
+        {
+          "id": 56,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 63,
+          "section": 1233
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Beautiful thing — substrate aesthetic register."
     },
@@ -292,8 +841,26 @@
       "chapter": 21,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲧⲕⲟⲥⲙⲏⲥⲓⲥ {111} ⲛⲥⲉⲱⲛⲍ ⲛ {112}",
-      "core_english": "of the ordering {113} and they live {114}",
+      "core_coptic": "ⲛ̄ⲧⲕⲟⲥⲙⲏⲥⲓⲥ {57} ⲛⲥⲉⲱⲛⲍ ⲛ {58}",
+      "core_english": "of the ordering {57} and they live {58}",
+      "apparatus": [
+        {
+          "id": 57,
+          "segment": 34,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 64,
+          "section": 1234
+        },
+        {
+          "id": 58,
+          "segment": 34,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 65,
+          "section": 1234
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic ordering (kosmesis) — substrate vocabulary."
     },
@@ -302,8 +869,18 @@
       "chapter": 21,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "{115} ϣⲁ ⲁⲛⲏⲍⲉ",
-      "core_english": "{116} unto eternity",
+      "core_coptic": "{59} ϣⲁ ⲁⲛⲏⲍⲉ",
+      "core_english": "{59} unto eternity",
+      "apparatus": [
+        {
+          "id": 59,
+          "segment": 35,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 66,
+          "section": 1235
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing 'unto eternity' — final substrate doxological tag of the chapter."
     }

@@ -5,7 +5,7 @@
   "start_section": 1992,
   "end_section": 2008,
   "total_sections": 17,
-  "total_lacunae": 39,
+  "total_lacunae": 20,
   "segments": [
     {
       "section": 1992,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗ̄ⲍ",
       "core_english": "37",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter number — structural marker for the teaching unit."
     },
@@ -23,7 +24,19 @@
       "line": 1,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗ̄{0} ⲉⲧⲃⲉ ⲧϣⲁⲙⲧⲉ ⲛ̄ⲍⲱⲛⲏ ⲗ̄ⲍ",
-      "core_english": "3{1}: Concerning the three Zones. 37",
+      "core_english": "3{0}: Concerning the three Zones. 37",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 1,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "7",
+          "basis": "Editor restoration of chapter numeral; flanking ⲗ̄ⲍ confirms reading.",
+          "source_id": 0,
+          "section": 1993
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substantive topic title — defines the cosmological teaching subject (the three Zones)."
     },
@@ -34,6 +47,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉⲧⲃⲉ ⲡⲡⲛ̄ⲁ ⲉⲧⲁⲛⲍ ϫⲉ ⲛ̄",
       "core_english": "concerning the Living Spirit: 'Whe-",
+      "apparatus": [],
       "removed_material": "Stripped dialogue-frame attribution: '{1} ⲁⲛ ⲡⲁϫⲉ ⲡϥⲱⲥⲧⲏⲣ' / '{1} once again the Illuminator said' — pure hagiographic frame formula. Preserved the substantive topic of the teaching (the Living Spirit, who builds the worlds and hangs the Zones).",
       "temporal_note": "Classic apostolic dialogue frame wrapping a substantive cosmological topic. The 'Living Spirit' (ⲡⲡⲛ̄ⲁ ⲉⲧⲁⲛⲍ) is a substratic cosmic figure — the demiurge who fashions the world-structure."
     },
@@ -44,6 +58,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲣⲉϩⲕⲱⲧ ⲁϩⲥⲙ̄ⲛⲉ ⲛⲛ̄ⲕⲟⲥⲙⲟⲥ ⲁϩⲉⲓϣⲉ ⲛⲛⲍⲱⲛⲏ",
       "core_english": "n he built and established the worlds, he hung the Zones,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmogonic action: Living Spirit's building of worlds and hanging of Zones — pure cosmological substrate."
     },
@@ -54,6 +69,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲛ ⲛⲟⲩⲍⲱⲛⲏ ⲙⲡⲧⲍⲟⲩⲛ ⲛ̄ⲟⲩⲍⲱⲛⲏ ⲁⲛ ⲛϣⲁⲣⲡ ⲛⲍϣ",
       "core_english": "a Zone within another Zone again. The first Zo-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration begins ('the first Zone') — substrate teaching structure."
     },
@@ -62,8 +78,20 @@
       "chapter": 37,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲏ ⲡⲧⲉ ⲧ̄ⲉ ⲛⲟⲁⲙ ⲙⲡⲕⲉⲕⲉ ⲛ̄ⲧⲉ ⲛⲍⲁⲩⲧ ⲙⲛ̄ ⲛ̄ⲥⲍⲓⲁⲙⲉ",
-      "core_english": "{3}ne is the five powers of the Darkness, of the males and the females.",
+      "core_coptic": "{1}ⲏ ⲡⲧⲉ ⲧ̄ⲉ ⲛⲟⲁⲙ ⲙⲡⲕⲉⲕⲉ ⲛ̄ⲧⲉ ⲛⲍⲁⲩⲧ ⲙⲛ̄ ⲛ̄ⲥⲍⲓⲁⲙⲉ",
+      "core_english": "{1}ne is the five powers of the Darkness, of the males and the females.",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "—",
+          "basis": "Editor restoration completing ⲍⲱⲛⲏ across line break.",
+          "source_id": 2,
+          "section": 1997
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Identification: Zone = five powers of Darkness, male and female. Pure cosmological correspondence."
     },
@@ -74,6 +102,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲓ ϫⲉ ⲁϩⲉϣⲧ ⲟⲩⲍⲱⲛⲏ ⲍⲛ̄ ⲟⲩⲍⲱⲛⲏ ⲛ̄ⲧⲁϩⲉⲓϣⲉ ⲛⲧ̄ⲉ",
       "core_english": "This is why he hung a Zone within a Zone — that he hung the five",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Explanatory linkage of the nested-Zone structure to the cosmological purpose — substrate."
     },
@@ -84,6 +113,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲛ̄ⲟⲁⲙ ⲙⲡⲕⲉⲕⲉ ⲍⲙ̄ ⲡⲧⲟⲩ ⲛⲣⲙ̄ⲁⲛⲧⲡ̄ⲉ ⲛϣⲏⲣⲉ ⲙ̄ⲡⲣⲱ",
       "core_english": "powers of the Darkness within the five heaven-men, the sons of the M-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Five-fold cosmological mapping: powers of Darkness within five heaven-men/sons of the Primal Man — substrate."
     },
@@ -92,8 +122,20 @@
       "chapter": 37,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4}ⲉ ⲉⲡⲉⲓⲁⲏ ⲉⲣⲉ ⲧⲙⲛⲧϫⲁϫⲉ ⲧⲏⲣⲥ̄ ϫⲁⲗϫ ⲉⲥⲙⲏⲡ ⲛⲍⲏⲧⲟⲩ",
-      "core_english": "{5}an, since all the enmity is fettered, reckoned within them",
+      "core_coptic": "{2}ⲉ ⲉⲡⲉⲓⲁⲏ ⲉⲣⲉ ⲧⲙⲛⲧϫⲁϫⲉ ⲧⲏⲣⲥ̄ ϫⲁⲗϫ ⲉⲥⲙⲏⲡ ⲛⲍⲏⲧⲟⲩ",
+      "core_english": "{2}an, since all the enmity is fettered, reckoned within them",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "—",
+          "basis": "Editor restoration completing ⲡⲣⲱⲙⲉ across line break.",
+          "source_id": 3,
+          "section": 2000
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues the cosmological theme of the fettering of enmity (Darkness) within the cosmic structure — substrate."
     },
@@ -102,8 +144,20 @@
       "chapter": 37,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲓⲍⲟⲩⲛ ⲍⲱⲱϩ ⲛⲧⲍⲱⲛⲏ ⲡⲧⲉ ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲙⲡⲡ{6}",
-      "core_english": "within. And the (other) Zone is the five sons of the {7}",
+      "core_coptic": "ⲍⲓⲍⲟⲩⲛ ⲍⲱⲱϩ ⲛⲧⲍⲱⲛⲏ ⲡⲧⲉ ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲙⲡⲡ{3}",
+      "core_english": "within. And the (other) Zone is the five sons of the {3}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲛⲁ ⲉⲧⲁⲛⲍ",
+          "english": "Living Spirit",
+          "basis": "Editor restoration; standard Manichaean title in cosmic context (cf. line 3).",
+          "source_id": 4,
+          "section": 2001
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second Zone identification — five sons of [Primal Man / Living Spirit, lacuna]. Substrate enumeration."
     },
@@ -112,8 +166,39 @@
       "chapter": 37,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8} {9}ⲣⲉ ⲡⲕⲱⲧ ⲧⲏⲣϩ ⲁϣⲉ ⲙ̄ⲙⲁⲩ ⲉϩϫ{10}",
-      "core_english": "{11} the whole structure is hung there upon{12}",
+      "core_coptic": "{4} {5}ⲣⲉ ⲡⲕⲱⲧ ⲧⲏⲣϩ ⲁϣⲉ ⲙ̄ⲙⲁⲩ ⲉϩϫ{6}",
+      "core_english": "{4} the whole structure is hung there upon{6}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲉⲡⲉⲓⲁⲏ",
+          "english": "since",
+          "basis": "Editor restoration; conjunction parallel to line 9.",
+          "source_id": 5,
+          "section": 2002
+        },
+        {
+          "id": 5,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(circumstantial prefix)",
+          "basis": "Editor restoration of pre-nominal converter ⲉⲣⲉ.",
+          "source_id": 6,
+          "section": 2002
+        },
+        {
+          "id": 6,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲉϩϫ",
+          "source_id": 7,
+          "section": 2002
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic-architecture description — the whole structure (ⲡⲕⲱⲧ) hung. Substrate idiom."
     },
@@ -122,8 +207,37 @@
       "chapter": 37,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{13}ⲧⲙⲉ ⲁⲣⲁϩ ⲍⲱⲱϩ ⲛ̄ⲕⲉ{14} {15}",
-      "core_english": "{16} him, also other {17} {18}",
+      "core_coptic": "{7}ⲧⲙⲉ ⲁⲣⲁϩ ⲍⲱⲱϩ ⲛ̄ⲕⲉ{8} {9}",
+      "core_english": "{7} him, also other {8} {9}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 10,
+          "partial": "ⲥⲱⲧⲙⲉ?",
+          "source_id": 8,
+          "section": 2003
+        },
+        {
+          "id": 8,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲩⲉ",
+          "english": "(things)",
+          "basis": "Editor restoration completing ⲛ̄ⲕⲉⲕⲁⲩⲉ 'and other things' (idiom).",
+          "source_id": 9,
+          "section": 2003
+        },
+        {
+          "id": 9,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 10,
+          "section": 2003
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavy lacuna; surviving syntax ('also other') continues cosmological enumeration."
     },
@@ -132,8 +246,27 @@
       "chapter": 37,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{19}ⲛⲥⲱⲩ ⲧⲧⲉⲓ̄ ⲁⲉ ϫⲉ ⲁϩⲉⲓ ϣⲁ {20}",
-      "core_english": "{21} after him. But this (one) is that he hung {22}",
+      "core_coptic": "{10}ⲛⲥⲱⲩ ⲧⲧⲉⲓ̄ ⲁⲉ ϫⲉ ⲁϩⲉⲓ ϣⲁ {11}",
+      "core_english": "{10} after him. But this (one) is that he hung {11}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 11,
+          "section": 2004
+        },
+        {
+          "id": 11,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ". .",
+          "source_id": 12,
+          "section": 2004
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavy lacuna; 'he hung' continues the cosmogonic action of the Living Spirit — substrate."
     },
@@ -142,8 +275,29 @@
       "chapter": 37,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{23}ⲉⲣⲉⲱⲙⲁ ⲉⲧⲛ̄ⲧⲡⲉ ϣ {24}",
-      "core_english": "{25}rmament which is above {26}",
+      "core_coptic": "{12}ⲉⲣⲉⲱⲙⲁ ⲉⲧⲛ̄ⲧⲡⲉ ϣ {13}",
+      "core_english": "{12}rmament which is above {13}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲥⲧ",
+          "english": "fi-",
+          "basis": "Editor restoration of Greek loanword στερέωμα 'firmament.'",
+          "source_id": 13,
+          "section": 2005
+        },
+        {
+          "id": 13,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ϣ",
+          "source_id": 14,
+          "section": 2005
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Firmament reference — cosmic-structure vocabulary, substrate."
     },
@@ -152,8 +306,28 @@
       "chapter": 37,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{27} ⲉⲧⲍⲛ̄ ⲟⲩⲍⲱⲛⲏ ⲡⲧⲉ ⲡⲛⲁⲟ̄ ⲛ̄{28}",
-      "core_english": "{29} which is in a Zone — is the great {30}",
+      "core_coptic": "{14} ⲉⲧⲍⲛ̄ ⲟⲩⲍⲱⲛⲏ ⲡⲧⲉ ⲡⲛⲁⲟ̄ ⲛ̄{15}",
+      "core_english": "{14} which is in a Zone — is the great {15}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 15,
+          "section": 2006
+        },
+        {
+          "id": 15,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲣ̄ⲣⲟ ⲛⲧⲉ ⲡⲧⲁⲓ̄ⲟ",
+          "english": "King of Honor",
+          "basis": "Editor restoration; standard Manichaean cosmological title for the cosmic ruler atop the firmament (cf. accumulated vocab).",
+          "source_id": 16,
+          "section": 2006
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued Zone identification ('the great [N]') — substrate."
     },
@@ -162,8 +336,36 @@
       "chapter": 37,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧϣ{31} {32} ⲍⲓⲍⲟⲩⲛ ⲙⲡⲕ {33}",
-      "core_english": "who ex{34} {35} within the {36}",
+      "core_coptic": "ⲉⲧϣ{16} {17} ⲍⲓⲍⲟⲩⲛ ⲙⲡⲕ {18}",
+      "core_english": "who ex{16} {17} within the {18}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲟⲟⲡ",
+          "english": "ists",
+          "basis": "Editor restoration completing ⲉⲧϣⲟⲟⲡ 'who exists.'",
+          "source_id": 17,
+          "section": 2007
+        },
+        {
+          "id": 17,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 18,
+          "section": 2007
+        },
+        {
+          "id": 18,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 19,
+          "section": 2007
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavy lacuna; 'within the [N]' continues the nested-Zone enumeration — substrate."
     },
@@ -172,8 +374,19 @@
       "chapter": 37,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{37} ⲧⲉ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ",
-      "core_english": "{38} of the cosmos.'",
+      "core_coptic": "{19} ⲧⲉ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ",
+      "core_english": "{19} of the cosmos.'",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": ".",
+          "source_id": 20,
+          "section": 2008
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing genitive '...of the cosmos' — closes the cosmological teaching unit. Substrate."
     }

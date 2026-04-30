@@ -5,7 +5,7 @@
   "start_section": 390,
   "end_section": 452,
   "total_sections": 63,
-  "total_lacunae": 85,
+  "total_lacunae": 50,
   "segments": [
     {
       "section": 390,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ϯⲟⲩ ⲛⲓ̄ⲱⲧ ⲛⲉ",
       "core_english": "There are five Fathers",
+      "apparatus": [],
       "removed_material": "Stripped 'them in this manner in his revelation, saying:' — apostolic dialogue frame. Kept the substantive cosmological opening.",
       "temporal_note": "Frame closes; teaching opens with the enumeration topic."
     },
@@ -23,7 +24,19 @@
       "line": 7,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϣⲟⲟⲡ ⲛⲧⲁⲩⲧⲱⲍⲙⲉ ⲟⲩⲉ ⲁⲃⲁⲗ ⲛ̄ⲟⲩⲉ ⲛⲧⲁ ⲟⲩⲉ {0} ⲉ|",
-      "core_english": "in existence, who were called forth one from another, where one {1} forth",
+      "core_english": "in existence, who were called forth one from another, where one {0} forth",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲁⲛ",
+          "english": "again (came)",
+          "basis": "editor's restoration; resumes 'one came forth from another' refrain",
+          "source_id": 1,
+          "section": 391
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate emanation pattern"
     },
@@ -34,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲛ̄ⲟⲩⲉ ⲡϣⲁⲣⲡ ⲛⲓⲱⲧ ⲡⲉ ⲡⲓ̄ⲱⲧ ⲛⲧⲉ ⲧⲙⲛ̄",
       "core_english": "from another. The first Father is the Father of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration: First Father"
     },
@@ -42,8 +56,30 @@
       "chapter": 7,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛⲁⲟ ⲡⲡⲁⲡⲉⲁⲩ ⲉⲧⲥⲙⲁⲙⲁⲁⲧ ⲡ{2}ⲧⲉ ⲙⲛ̄ ϣⲓ ⲁⲧⲉϩⲙ̄{3}",
+      "core_coptic": "ⲧⲛⲁⲟ ⲡⲡⲁⲡⲉⲁⲩ ⲉⲧⲥⲙⲁⲙⲁⲁⲧ ⲡ{1}ⲧⲉ ⲙⲛ̄ ϣⲓ ⲁⲧⲉϩⲙ̄{2}",
       "core_english": "Greatness, the glorious blessed one, who has no measure to his",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(relative)",
+          "basis": "ⲡⲉⲧⲉ relative pronoun",
+          "source_id": 2,
+          "section": 393
+        },
+        {
+          "id": 2,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(of his) Great-(ness)",
+          "basis": "ⲁⲧⲉϩⲙⲛⲧⲛⲁⲟ 'to his Greatness' — completes the abstract",
+          "source_id": 3,
+          "section": 393
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father of Greatness — core substrate vocabulary ⲡⲡⲁⲡⲉⲁⲩ"
     },
@@ -52,8 +88,30 @@
       "chapter": 7,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛⲁⲟ ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ ⲡϣⲁⲣⲡ ⲙ̄ⲙ{4}ⲛⲟⲅⲉⲛⲏⲥ ⲡϣ{5}",
+      "core_coptic": "ⲧⲛⲁⲟ ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ ⲡϣⲁⲣⲡ ⲙ̄ⲙ{3}ⲛⲟⲅⲉⲛⲏⲥ ⲡϣ{4}",
       "core_english": "Greatness, who is himself the first Only-Begotten, the",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(Only-)",
+          "basis": "ⲙⲟⲛⲟⲅⲉⲛⲏⲥ 'Only-Begotten' — standard restoration",
+          "source_id": 4,
+          "section": 394
+        },
+        {
+          "id": 4,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(fir-)st",
+          "basis": "ⲡϣⲁⲣⲡ 'the first' continues onto next line",
+          "source_id": 5,
+          "section": 394
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic monogenes"
     },
@@ -62,8 +120,20 @@
       "chapter": 7,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣ̄ⲡ ⲛϣⲁⲁⲛⲏⲍⲉ ⲉⲧϣⲟⲟⲡ ⲙⲛ ϯⲟ{6} ϣⲁⲁⲛⲏⲍⲉ",
+      "core_coptic": "ⲣ̄ⲡ ⲛϣⲁⲁⲛⲏⲍⲉ ⲉⲧϣⲟⲟⲡ ⲙⲛ ϯⲟ{5} ϣⲁⲁⲛⲏⲍⲉ",
       "core_english": "first eternal one, who exists with the five eternal Fathers,",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲩ ⲛⲓ",
+          "english": "u (Fath-)",
+          "basis": "ϯⲟⲩ ⲛⲓⲱⲧ 'five Fathers' — established formula",
+          "source_id": 6,
+          "section": 395
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five eternal Fathers — substrate"
     },
@@ -74,6 +144,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲧϣⲟⲟⲡ ⲍⲁⲧⲉⲍⲏ ⲛⲍⲱⲃ ⲛⲓⲙ ⲉⲧⲁ̄ϩϣⲱⲡⲉ ⲙⲛ ⲡⲉ",
       "core_english": "who exists before all things that have come into being and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmogonic"
     },
@@ -82,8 +153,20 @@
       "chapter": 7,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲛⲁϣⲱⲡⲉ ⲛ̄ⲧⲁϩ ⲟⲉ ⲡⲓⲱⲧ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲁϩⲧⲱⲍⲙ{7}",
+      "core_coptic": "ⲧⲛⲁϣⲱⲡⲉ ⲛ̄ⲧⲁϩ ⲟⲉ ⲡⲓⲱⲧ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲁϩⲧⲱⲍⲙ{6}",
       "core_english": "that shall come into being. He himself is the glorious Father. He emanated",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "-ed",
+          "basis": "ⲁϩⲧⲱⲍⲙⲉ 'he emanated' — verbal ending",
+          "source_id": 7,
+          "section": 397
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Glorious Father — substrate"
     },
@@ -92,8 +175,30 @@
       "chapter": 7,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲁⲙⲧⲉ ⲙⲡⲣⲟⲃⲟⲗⲏ ⲁⲃⲁⲗ ⲙⲙⲁϩ ⲡ{8}ⲣⲡ ⲡⲉ ⲡⲧⲛⲁ{9}",
+      "core_coptic": "ϣⲁⲙⲧⲉ ⲙⲡⲣⲟⲃⲟⲗⲏ ⲁⲃⲁⲗ ⲙⲙⲁϩ ⲡ{7}ⲣⲡ ⲡⲉ ⲡⲧⲛⲁ{8}",
       "core_english": "three emanations from himself: the first is the Great",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ϣⲁ",
+          "english": "fir-",
+          "basis": "ⲡϣⲁⲣⲡ 'the first'",
+          "source_id": 8,
+          "section": 398
+        },
+        {
+          "id": 8,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "Great",
+          "basis": "ⲡⲧⲛⲁⲟ 'the Great' — standard form",
+          "source_id": 9,
+          "section": 398
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three emanations enumeration"
     },
@@ -104,6 +209,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲡ̄ⲛⲁ̄ ⲧϣⲁⲣⲡ ⲙ̄ⲙⲉⲩ ⲧⲉⲧⲁⲥⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲓⲱⲧ ⲁⲥⲟⲩ",
       "core_english": "Spirit, the first one there, who came forth from the Father; she",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Spirit emanation"
     },
@@ -112,8 +218,30 @@
       "chapter": 7,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲛ̄ϣⲁⲣⲡ ⲡⲙⲁⲍⲥⲛ{10} ⲡⲙⲉⲣ{11}",
+      "core_coptic": "ⲱⲛⲍ̄ ⲁⲃⲁⲗ ⲛ̄ϣⲁⲣⲡ ⲡⲙⲁⲍⲥⲛ{9} ⲡⲙⲉⲣ{10}",
       "core_english": "manifested forth as first. The second is the Beloved of",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲉⲩ ⲡ",
+          "english": "(sec-)ond is",
+          "basis": "ⲡⲙⲁⲍⲥⲛⲉⲩ ⲡⲉ 'the second is'",
+          "source_id": 10,
+          "section": 400
+        },
+        {
+          "id": 10,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲓⲧ ⲛ̄",
+          "english": "Beloved of",
+          "basis": "ⲡⲙⲉⲣⲓⲧ ⲛ̄ⲛⲟⲩⲁⲓⲛⲉ 'the Beloved of the Lights'",
+          "source_id": 11,
+          "section": 400
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second emanation: Beloved of Lights"
     },
@@ -122,8 +250,30 @@
       "chapter": 7,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲟⲩⲁⲓ̄ⲛⲉ ⲡⲧⲛⲁⲟ ⲙ̄ⲙⲉⲣⲓⲧ ⲉⲧⲟ ⲛ̄ⲉ{12}ⲧⲧⲁⲓ̄ⲁⲓ̄{13}",
+      "core_coptic": "ⲛⲟⲩⲁⲓ̄ⲛⲉ ⲡⲧⲛⲁⲟ ⲙ̄ⲙⲉⲣⲓⲧ ⲉⲧⲟ ⲛ̄ⲉ{11}ⲧⲧⲁⲓ̄ⲁⲓ̄{12}",
       "core_english": "the Lights, the Great Beloved who is glorious, the honored one,",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲁⲩ ⲡⲉ",
+          "english": "glory, (the)",
+          "basis": "ⲉⲧⲟ ⲛ̄ⲉⲁⲩ 'who is glorious'",
+          "source_id": 12,
+          "section": 401
+        },
+        {
+          "id": 12,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲧ ⲡⲉ",
+          "english": "honored one,",
+          "basis": "ⲡⲉⲧⲧⲁⲓⲁⲓⲧ 'the honored one'",
+          "source_id": 13,
+          "section": 401
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -132,8 +282,30 @@
       "chapter": 7,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲓⲱⲧ {14}ⲱⲗⲡ ⲁⲃⲁ{15}ⲏⲧϩ",
+      "core_coptic": "ⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲓⲱⲧ {13}ⲱⲗⲡ ⲁⲃⲁ{14}ⲏⲧϩ",
       "core_english": "who came forth from the Father, who has been revealed from him.",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲁϩⲟ",
+          "english": "has been",
+          "basis": "ⲁϩⲟⲩⲱⲗⲡ 'has been revealed' — perfect of ⲟⲩⲱⲗⲡ̄/ⲟⲩⲱⲛϩ",
+          "source_id": 14,
+          "section": 402
+        },
+        {
+          "id": 14,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲗ ⲛ̄ⲍ",
+          "english": "from h(im)",
+          "basis": "ⲁⲃⲁⲗ ⲛ̄ⲍⲏⲧϩ 'from him'",
+          "source_id": 15,
+          "section": 402
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -142,8 +314,20 @@
       "chapter": 7,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲙⲁⲍϣⲁⲙⲧ ⲛ̄ⲓⲱⲧ ⲡⲉ ⲡⲙⲁⲍϣⲁⲙ{16}",
-      "core_english": "The third Father is the Third {17},",
+      "core_coptic": "ⲡⲙⲁⲍϣⲁⲙⲧ ⲛ̄ⲓⲱⲧ ⲡⲉ ⲡⲙⲁⲍϣⲁⲙ{15}",
+      "core_english": "The third Father is the Third {15},",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+          "english": "Ambassador",
+          "basis": "ⲡⲙⲁⲍϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'the Third Ambassador' — standard Manichaean title for the third emanation",
+          "source_id": 16,
+          "section": 403
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third emanation enumeration"
     },
@@ -152,8 +336,30 @@
       "chapter": 7,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲍⲟⲩⲓⲧ ⲛ̄ⲛⲥⲩⲙⲃⲟⲩⲗ{18} {19}",
-      "core_english": "the first of all the counselors, {20}",
+      "core_coptic": "ⲡⲍⲟⲩⲓⲧ ⲛ̄ⲛⲥⲩⲙⲃⲟⲩⲗ{16} {17}",
+      "core_english": "the first of all the counselors, {17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲟⲥ ⲧⲏⲣⲟⲩ",
+          "english": "all the counselors",
+          "basis": "ⲛⲥⲩⲙⲃⲟⲩⲗⲟⲥ ⲧⲏⲣⲟⲩ 'all the counselors'",
+          "source_id": 17,
+          "section": 404
+        },
+        {
+          "id": 17,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲡⲉⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲙ̄",
+          "english": "who came forth from",
+          "basis": "editor's restoration; standard formula 'who came forth from (the Father)' — parallels lines 28 and 31",
+          "source_id": 18,
+          "section": 404
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Counselors structure"
     },
@@ -164,6 +370,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡϣⲁⲣⲡ ⲛ̄ⲓⲱⲧ ⲁϩⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ⲡⲉⲓ̈ ⲡⲉ ⲡϣⲁⲣⲡ ⲛ̄ⲓⲱⲧ",
       "core_english": "The First Father has been revealed. This is the First Father:",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Restatement of substrate enumeration"
     },
@@ -174,6 +381,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϣⲁⲣⲡ ⲛⲟⲁⲙ ⲡⲉⲧⲁ ⲧϣⲁⲙⲧⲉ ⲛⲛⲁⲟ ⲛⲟⲁⲙ ⲉⲓ ⲁⲃⲁⲗ ⲙⲙⲁϥ",
       "core_english": "the First Power, from whom the three great Powers came forth.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Power → three Powers"
     },
@@ -184,6 +392,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲓ̈ ⲡⲉ ⲡϣⲁⲣⲡ ⲛ̄ⲓⲱⲧ ⲡϣⲁⲣⲡ ⲛϣⲁⲁⲛⲏϩⲉ ⲧⲛⲟⲩⲛⲉ",
       "core_english": "This is the First Father, the First Eternal One, the root",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Root of all lights — substrate"
     },
@@ -194,6 +403,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲛⲟⲩⲁⲓ̈ⲛⲉ ⲧⲏⲣⲟⲩ ⲡⲉⲧⲁ ⲧϣⲁⲙⲧⲉ ⲙⲡⲣⲟⲃⲟⲗⲏ ⲉⲓ ⲁⲃⲁⲗ ⲙ",
       "core_english": "of all the lights, from whom the three emanations came forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": null
     },
@@ -204,6 +414,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁϥ ⲁⲩⲫⲃ̄ⲓ̈ⲟ ⲙ̄ⲡⲕⲉⲕⲉ ⲁⲩⲟⲩⲱⲥϥ ⲙⲡⲉϥⲱⲕ ⲛϩⲏⲧ ⲁⲩ",
       "core_english": "from him. They humbled the Darkness; they laid waste its pride-of-heart; they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic action against Darkness — substrate"
     },
@@ -214,6 +425,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϯ ⲡⲟⲣⲟ ⲛⲉⲩ ⲟⲩⲁⲉⲧⲟⲩ ⲁⲩϯ ⲡⲟⲣⲟ ⲁⲛ ⲛ̄ⲛⲟⲩⲁⲓⲱⲛ",
       "core_english": "gave kingship to themselves alone; they also gave kingship to the aeons.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Kingship of aeons"
     },
@@ -224,6 +436,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁϩⲥⲛⲉⲩ ⲛⲓⲱⲧ ⲉⲧⲁϥⲉⲓ ⲁⲃⲁⲗ ⲙⲡϣⲁⲣⲡ ⲛⲓⲱⲧ ⲡⲉ ⲡⲙⲁϩ",
       "core_english": "The Second Father, who came forth from the First Father, is the Third",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second Father enumeration"
     },
@@ -234,6 +447,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲡⲣⲟⲧⲟⲙⲏ ⲙ̄ⲡⲣ̄ⲣⲟ ⲛ̄ⲛⲟⲩⲁⲓ̈ⲛⲉ",
       "core_english": "Ambassador, the Protomē of the King of the Lights.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third Ambassador (ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ) — core substrate marker"
     },
@@ -244,6 +458,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲧⲁϥ ϩⲱϥ ⲁⲛ ⲁϥⲧⲱϩⲙⲉ ⲁϥⲧⲛ̄ⲛⲁⲩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϥ ⲛϣⲁⲙ",
       "core_english": "He himself also called; he sent forth from himself three",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three powers emanation"
     },
@@ -254,6 +469,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲛⲟⲁⲙ ⲧⲟⲩⲓⲉ ⲡⲉ ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ ⲙⲡⲣⲱⲙⲉ ⲉⲧⲭⲏⲕ",
       "core_english": "Powers. The first is the Pillar of Glory, the Perfect Man,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pillar of Glory — core substrate"
     },
@@ -264,6 +480,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲃⲁⲗ ⲡⲉⲧⲃⲓ ⲁϩⲣⲏⲓ̈ ϩⲁ ⲛϩⲃⲏⲩⲉ ⲧⲏⲣⲟⲩ ⲡⲛⲁⲟ ⲛⲥⲧⲩⲗⲟⲥ",
       "core_english": "perfect, who bears upward under all things, the great Pillar",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": null
     },
@@ -274,6 +491,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲉ ⲡⲥⲙⲁⲙⲉ ⲡⲛⲁⲟ ⲛⲱⲙⲟⲫⲟⲣⲟⲥ ⲉⲧⲛⲉⲉϥ ⲁⲛⲱⲙⲟ",
       "core_english": "of Praise, the great Omophoros, who bears up all the omopho-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Omophoros — core substrate marker ⲛⲱⲙⲟⲫⲟⲣⲟⲥ"
     },
@@ -284,6 +502,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ Ⲧⲙⲁϩⲥⲛ̄ⲧⲉ ⲡⲉ ⲓⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉⲧⲟ ⲛⲉⲁⲩ",
       "core_english": "phoroi. The second is Jesus the Radiance, who is glorious,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Jesus the Radiance — substrate cosmic figure"
     },
@@ -292,8 +511,20 @@
       "chapter": 7,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "{21}ⲉⲧⲉϣⲁⲩϯ ϩⲓⲧⲟⲟⲧϥ ⲙⲡⲱⲛⲉ̄ ϣⲁⲁⲛⲏϩⲉ ⲧⲙⲁϩ",
-      "core_english": "{22} through whom they give the eternal life. The third",
+      "core_coptic": "{18}ⲉⲧⲉϣⲁⲩϯ ϩⲓⲧⲟⲟⲧϥ ⲙⲡⲱⲛⲉ̄ ϣⲁⲁⲛⲏϩⲉ ⲧⲙⲁϩ",
+      "core_english": "{18} through whom they give the eternal life. The third",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "[He is the one]",
+          "basis": "Editor restores article ⲡ at line start; with following ⲉⲧⲉϣⲁⲩϯ creates relative 'the one through whom they give'",
+          "source_id": 19,
+          "section": 418
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -302,8 +533,20 @@
       "chapter": 7,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲁⲙⲧⲉ ⲧⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲥⲟⲫ{23}ⲁ ⲉⲧⲟ ⲛⲉⲁⲩ ⲧⲉ",
-      "core_english": "is the Virgin of the Light, the Soph{24}a, who is glorious,",
+      "core_coptic": "ϣⲁⲙⲧⲉ ⲧⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲥⲟⲫ{19}ⲁ ⲉⲧⲟ ⲛⲉⲁⲩ ⲧⲉ",
+      "core_english": "is the Virgin of the Light, the Soph{19}a, who is glorious,",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "i",
+          "basis": "Editor restores ⲓ in ⲧⲥⲟⲫ[ⲓ]ⲁ",
+          "source_id": 20,
+          "section": 419
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Virgin of Light (ⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡⲟⲩⲁⲓⲛⲉ) — core substrate marker"
     },
@@ -312,8 +555,20 @@
       "chapter": 7,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲃⲓ ⲙⲡϩⲏⲧ ⲛⲛ̄{25}ⲱⲛ ⲙⲛ ⲛⲟⲁⲙ ϩⲛ̄ ⲧⲉⲥϩⲓⲕⲱⲛ ⲉⲥⲭⲱⲕ",
-      "core_english": "who steals away the heart of the {26}ons and the Powers by her image, perfect",
+      "core_coptic": "ⲧⲃⲓ ⲙⲡϩⲏⲧ ⲛⲛ̄{20}ⲱⲛ ⲙⲛ ⲛⲟⲁⲙ ϩⲛ̄ ⲧⲉⲥϩⲓⲕⲱⲛ ⲉⲥⲭⲱⲕ",
+      "core_english": "who steals away the heart of the {20}ons and the Powers by her image, perfect",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲭ",
+          "english": "Arch-",
+          "basis": "Editor restores ⲁⲣⲭ in ⲛ̄ⲛ̄[ⲁⲣⲭ]ⲱⲛ (Archons)",
+          "source_id": 21,
+          "section": 420
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seduction of archons — substrate cosmology"
     },
@@ -322,8 +577,20 @@
       "chapter": 7,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ ⲙⲡⲱⲕ ⲛϩ{27}ⲧ ⲛⲧⲙⲛⲧⲛⲁⲟ",
-      "core_english": "in the pride-of-h{28}t of greatness.",
+      "core_coptic": "ⲁⲃⲁⲗ ⲙⲡⲱⲕ ⲛϩ{21}ⲧ ⲛⲧⲙⲛⲧⲛⲁⲟ",
+      "core_english": "in the pride-of-h{21}t of greatness.",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "ear",
+          "basis": "Editor restores ⲏ in ⲛϩ[ⲏ]ⲧ (heart)",
+          "source_id": 22,
+          "section": 421
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -334,6 +601,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁϩϣⲁⲙⲧ ⲛⲓⲱⲧ ⲉⲧⲁϥⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲙⲁϩⲥⲛⲉⲩ ⲛⲓⲱⲧ ⲛ̄",
       "core_english": "The Third Father, who came forth from the Second Father — he",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third Father enumeration"
     },
@@ -344,6 +612,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁϥ ⲡⲉ ⲓⲏⲥ ⲡⲡⲣⲓ̈ⲉ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ ⲛⲧⲁϥ ϩⲱϥ ⲁⲛ ⲁϥⲧⲱϩⲙⲉ̄",
       "core_english": "is Jesus the Radiance, who is glorious. He himself also called",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": null
     },
@@ -354,6 +623,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛϣⲁⲙⲧ ⲛⲧⲱϩⲙⲉ ⲁⲡⲉⲓⲛⲉ ⲙⲡⲙⲁϩⲥⲛⲉⲩ ⲛⲓⲱⲧ",
       "core_english": "three callings, after the likeness of the Second Father.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three callings — pattern parallel"
     },
@@ -362,8 +632,20 @@
       "chapter": 7,
       "line": 41,
       "classification": "mixed",
-      "core_coptic": "ⲧϣⲁⲣⲡ ⲙⲉⲛ ⲛⲟⲁⲙ ⲉⲧⲁϥⲧⲁϩⲙⲉⲥ ⲡⲉ ⲡⲛⲟⲩ{29} ⲛⲟⲩⲁⲓ̈ⲛⲉ̄",
-      "core_english": "The first power that he called is the Min{30} of Light,",
+      "core_coptic": "ⲧϣⲁⲣⲡ ⲙⲉⲛ ⲛⲟⲁⲙ ⲉⲧⲁϥⲧⲁϩⲙⲉⲥ ⲡⲉ ⲡⲛⲟⲩ{22} ⲛⲟⲩⲁⲓ̈ⲛⲉ̄",
+      "core_english": "The first power that he called is the Min{22} of Light,",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "d",
+          "basis": "Editor restores ⲥ in ⲡⲛⲟⲩ[ⲥ] (Mind)",
+          "source_id": 23,
+          "section": 425
+        }
+      ],
       "removed_material": "Following ecclesial epithets ('father of all the apostles', 'first of the churches') begin in next segments.",
       "temporal_note": "Mind of Light is substrate cosmic name; ecclesial overlay begins immediately after."
     },
@@ -374,6 +656,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲙⲁϩⲥⲛ̄ⲧⲉ ⲛ̄ⲟⲁⲙ ⲉⲧⲁ ⲓⲏⲥ ⲧⲁϩ",
       "core_english": "The second power that Jesus cal-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Enumeration: Second Power = Judge"
     },
@@ -382,8 +665,30 @@
       "chapter": 7,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "{31}ⲉⲥ ⲡⲉ ⲡⲛⲁ{32}ⲧⲏⲥ ⲉⲧϯϩⲉⲡ ⲁⲛϯⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ",
-      "core_english": "{33}led is the {34}dge who judges all the souls",
+      "core_coptic": "{23}ⲉⲥ ⲡⲉ ⲡⲛⲁ{24}ⲧⲏⲥ ⲉⲧϯϩⲉⲡ ⲁⲛϯⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ",
+      "core_english": "{23}led is the {24}dge who judges all the souls",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "l-",
+          "basis": "Editor restores ⲙ completing ⲧⲁϩ-[ⲙ]ⲉⲥ (called) across line break",
+          "source_id": 26,
+          "section": 427
+        },
+        {
+          "id": 24,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲟ ⲛ̄ⲕⲣⲓ",
+          "english": "great Ju-",
+          "basis": "Editor restores ⲡⲛⲁ[ⲟ ⲛ̄ⲕⲣⲓ]ⲧⲏⲥ (the great Judge), standard Manichaean title",
+          "source_id": 27,
+          "section": 427
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Just Judge of souls — cosmic figure"
     },
@@ -392,8 +697,38 @@
       "chapter": 7,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "{35}ⲛ̄ⲣⲱⲙⲉ ⲉⲣ{36}ⲥⲕⲏⲛⲏ ⲥⲙⲁⲁⲛⲧ̄ ϩⲛ̄ ⲡⲁⲏⲣ ϩⲁ {37}",
-      "core_english": "{38} men, with {39} tabernacle established in the air, under {40}",
+      "core_coptic": "{25}ⲛ̄ⲣⲱⲙⲉ ⲉⲣ{26}ⲥⲕⲏⲛⲏ ⲥⲙⲁⲁⲛⲧ̄ ϩⲛ̄ ⲡⲁⲏⲣ ϩⲁ {27}",
+      "core_english": "{25} men, with {26} tabernacle established in the air, under {27}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "of",
+          "basis": "Editor restores genitive marker [ⲛ̄] before ⲛ̄ⲣⲱⲙⲉ",
+          "source_id": 28,
+          "section": 428
+        },
+        {
+          "id": 26,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲉ ⲧⲉϥ",
+          "english": "his",
+          "basis": "Editor restores ⲉⲣ[ⲉ ⲧⲉϥ]ⲥⲕⲏⲛⲏ — circumstantial + possessive 'while his tabernacle'",
+          "source_id": 29,
+          "section": 428
+        },
+        {
+          "id": 27,
+          "segment": 47,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 30,
+          "section": 428
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tabernacle in air — cosmic geography"
     },
@@ -402,8 +737,28 @@
       "chapter": 7,
       "line": 48,
       "classification": "cosmological_substrate",
-      "core_coptic": "{41} ⲧⲣⲟⲭⲟⲥ {42}ⲥⲓⲟⲩ Ⲧⲙⲁϩϣⲁⲙⲧⲉ ⲛⲟⲁⲙ ⲡⲉ",
-      "core_english": "{43} the wheel {44} of the stars. The third Power is",
+      "core_coptic": "{28} ⲧⲣⲟⲭⲟⲥ {29}ⲥⲓⲟⲩ Ⲧⲙⲁϩϣⲁⲙⲧⲉ ⲛⲟⲁⲙ ⲡⲉ",
+      "core_english": "{28} the wheel {29} of the stars. The third Power is",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 48,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "after ϩⲁ on previous line; likely article ⲡ",
+          "source_id": 31,
+          "section": 429
+        },
+        {
+          "id": 29,
+          "segment": 48,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "trace before ⲥⲓⲟⲩ; likely ⲛ̄ⲛ̄ (genitive of stars)",
+          "source_id": 32,
+          "section": 429
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wheel of stars — substrate astronomy"
     },
@@ -412,8 +767,29 @@
       "chapter": 7,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "{45}ⲓⲗⲟⲩ ⲧⲛⲁ{46} ⲟⲩⲁⲓ̈ⲛⲉ ϩⲙ ⲡⲉϥⲡⲣⲟⲥⲱ",
-      "core_english": "the {47}outh, the great {48} of light. In his coun-",
+      "core_coptic": "{30}ⲓⲗⲟⲩ ⲧⲛⲁ{31} ⲟⲩⲁⲓ̈ⲛⲉ ϩⲙ ⲡⲉϥⲡⲣⲟⲥⲱ",
+      "core_english": "the {30}outh, the great {31} of light. In his coun-",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ⲡⲗ",
+          "english": "Y-",
+          "basis": "Editor restores [ⲡⲗ]ⲓⲗⲟⲩ (the Youth), standard Manichaean title for the Third Power",
+          "source_id": 33,
+          "section": 430
+        },
+        {
+          "id": 31,
+          "segment": 49,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲟ restored completing ⲧⲛⲁⲟ 'great' (fem.); then feminine noun lost — possibly ⲡⲁⲣⲑⲉⲛⲟⲥ ('maiden') by parallel with line 15",
+          "source_id": 34,
+          "section": 430
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third power — Youth/Light pillar"
     },
@@ -422,8 +798,18 @@
       "chapter": 7,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲟⲛ ⲥⲛⲉⲩ ϩⲙ {49} ⲉⲓ̈ⲥⲉⲭⲉ ⲁⲧⲡⲏ ⲉⲧⲁϥⲥⲙⲛⲧϥ",
-      "core_english": "tenance are two faces in {50} gazing toward the heaven that he established",
+      "core_coptic": "ⲡⲟⲛ ⲥⲛⲉⲩ ϩⲙ {32} ⲉⲓ̈ⲥⲉⲭⲉ ⲁⲧⲡⲏ ⲉⲧⲁϥⲥⲙⲛⲧϥ",
+      "core_english": "tenance are two faces in {32} gazing toward the heaven that he established",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 50,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 35,
+          "section": 431
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two faces — substrate iconography"
     },
@@ -432,8 +818,50 @@
       "chapter": 7,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "{51}ⲙ̄ ⲡⲧⲱϩⲙⲉ {52} ⲡⲥⲱⲧⲙⲉ {53} ϩⲱϥ ⲁⲣⲉⲧϥ ϩⲁⲧⲙ ⲡϥⲓ̈{54}",
-      "core_english": "{55} the calling {56} the hearing. {57} likewise before his Fa{58},",
+      "core_coptic": "{33}ⲙ̄ ⲡⲧⲱϩⲙⲉ {34} ⲡⲥⲱⲧⲙⲉ {35} ϩⲱϥ ⲁⲣⲉⲧϥ ϩⲁⲧⲙ ⲡϥⲓ̈{36}",
+      "core_english": "{33} the calling {34} the hearing. {35} likewise before his Fa{36},",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "i-",
+          "basis": "Editor restores ϩ in [ϩ]ⲙ̄ (in)",
+          "source_id": 36,
+          "section": 432
+        },
+        {
+          "id": 34,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲛ̄",
+          "english": "and",
+          "basis": "Editor restores conjunction [ⲙ̄ⲛ̄] between ⲡⲧⲱϩⲙⲉ and ⲡⲥⲱⲧⲙⲉ",
+          "source_id": 37,
+          "section": 432
+        },
+        {
+          "id": 35,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲁϥⲧⲱⲕ",
+          "english": "he stood firm",
+          "basis": "Editor restores [ⲁϥⲧⲱⲕ] before ϩⲱϥ ⲁⲣⲉⲧϥ — standard ⲧⲱⲕ ⲁⲣⲉⲧ⸗ idiom 'stand firm'",
+          "source_id": 38,
+          "section": 432
+        },
+        {
+          "id": 36,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲱⲧ",
+          "english": "ther",
+          "basis": "Editor restores ⲱⲧ in ⲡϥⲓ̈[ⲱⲧ] (his Father)",
+          "source_id": 39,
+          "section": 432
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Call/Hearing pair — substrate"
     },
@@ -442,8 +870,38 @@
       "chapter": 7,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "{59}ⲣ̄ⲣⲟ ⲛ {60} ⲙ̄ⲡⲥⲏ{61} ⲛⲉⲩ ⲁⲣⲁϥ ⲉϥⲭⲱ ⲙⲙⲁⲥ",
-      "core_english": "{62} King of {63}, of the Son{64}. They saw him saying:",
+      "core_coptic": "{37}ⲣ̄ⲣⲟ ⲛ {38} ⲙ̄ⲡⲥⲏ{39} ⲛⲉⲩ ⲁⲣⲁϥ ⲉϥⲭⲱ ⲙⲙⲁⲥ",
+      "core_english": "{37} King of {38}, of the Son{39}. They saw him saying:",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restores article ⲡ in [ⲡ]ⲣ̄ⲣⲟ (the King)",
+          "source_id": 40,
+          "section": 433
+        },
+        {
+          "id": 38,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "noun completing 'King of...' — possibly 'Lights' or 'Glory'",
+          "source_id": 41,
+          "section": 433
+        },
+        {
+          "id": 39,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲣ restored completing ⲡⲥⲏⲣ[ⲉ] 'the Son'; then ~4 chars lost — possibly 'of Greatness' or similar epithet",
+          "source_id": 42,
+          "section": 433
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -452,8 +910,29 @@
       "chapter": 7,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "{65} {66}ⲛⲁⲕ ⲡⲉⲧⲁⲓ̈ⲛⲉⲩ ⲁⲣⲁϥ ϩⲁⲧⲙ ⲡⲁⲓ̈ⲱⲧ",
-      "core_english": "{67} '{68} am the one who has seen him with my Father;",
+      "core_coptic": "{40} {41}ⲛⲁⲕ ⲡⲉⲧⲁⲓ̈ⲛⲉⲩ ⲁⲣⲁϥ ϩⲁⲧⲙ ⲡⲁⲓ̈ⲱⲧ",
+      "core_english": "{40} '{41} am the one who has seen him with my Father;",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 7,
+          "partial": "continuation of saying introduced at end of L31 (ⲉϥⲭⲱ ⲙⲙⲁⲥ 'saying')",
+          "source_id": 43,
+          "section": 434
+        },
+        {
+          "id": 41,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "I",
+          "basis": "Editor restores ⲁ in [ⲁ]ⲛⲁⲕ ('I am')",
+          "source_id": 44,
+          "section": 434
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic figure speaking — Johannine-like phrasing but in substrate cosmic context"
     },
@@ -462,8 +941,20 @@
       "chapter": 7,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "{69}ⲱⲧⲛⲉ ϩⲱⲧⲧⲏⲛⲉ ⲡⲉⲧⲁⲧⲉⲧⲛ̄ⲛⲉⲩ ⲁ",
-      "core_english": "{70} you. You also: what you have seen",
+      "core_coptic": "{42}ⲱⲧⲛⲉ ϩⲱⲧⲧⲏⲛⲉ ⲡⲉⲧⲁⲧⲉⲧⲛ̄ⲛⲉⲩ ⲁ",
+      "core_english": "{42} you. You also: what you have seen",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲡⲉϯⲭⲱ ⲙⲙⲁϥ ⲛ̄ⲧ",
+          "english": "this is what I am saying to",
+          "basis": "Editor restores standard speech-formula bridging 'with my Father' to 'you' before ⲱⲧⲛⲉ",
+          "source_id": 45,
+          "section": 435
+        }
+      ],
       "removed_material": null,
       "temporal_note": null
     },
@@ -472,8 +963,20 @@
       "chapter": 7,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "{71} ⲡⲉⲧⲉⲧⲛ̄ⲉⲓⲣⲉ ⲙⲙⲁϥ",
-      "core_english": "{72} is what you do.'",
+      "core_coptic": "{43} ⲡⲉⲧⲉⲧⲛ̄ⲉⲓⲣⲉ ⲙⲙⲁϥ",
+      "core_english": "{43} is what you do.'",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 55,
+          "type": "restoration",
+          "coptic": "ⲣⲁϥ ϩⲁⲧⲙ̄ ⲡⲉⲧⲛⲓ̈ⲱⲧ",
+          "english": "him with your Father",
+          "basis": "Editor restores parallel to L32 (ⲁⲣⲁϥ ϩⲁⲧⲙ̄ ⲡⲁⲓ̈ⲱⲧ); the saying mirrors John 8:38 'what you have seen with your Father is what you do'",
+          "source_id": 46,
+          "section": 436
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing of Third power's quoted speech"
     },
@@ -484,6 +987,7 @@
       "classification": "mixed",
       "core_coptic": "ⲧⲧⲙⲁⲍϩⲧⲁⲩ ⲛ̄ⲓⲱⲧ ⲡⲉ ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ",
       "core_english": "The fourth Father is the Mind of Light,",
+      "apparatus": [],
       "removed_material": "Stripped 'the chooser of all churches' — ecclesial overlay applied to substrate Mind of Light.",
       "temporal_note": "Substrate enumeration marker preserved with cosmic identification."
     },
@@ -494,6 +998,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲟⲁⲙ ⲁⲧⲡⲉⲓⲛⲉ ⲛ̄ⲓⲏⲥ. ⲧϣⲁⲣⲡ̄ ⲛ̄ⲟⲁⲙ ⲡⲉ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ",
       "core_english": "powers in the likeness of Jesus. The first power is the apostle",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three-power enumeration in likeness of Jesus — substrate pattern"
     },
@@ -504,6 +1009,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁⲍⲧⲟⲩ ⲁⲉ ⲍⲱϣ ⲛ̄ⲓⲱⲧ ⲡⲉ ⲧⲙⲟⲣⲫⲏ ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲧⲉⲧⲉ-",
       "core_english": "And the fifth Father also is the form of light which",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth Father enumeration — substrate"
     },
@@ -512,8 +1018,20 @@
       "chapter": 7,
       "line": 68,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲁⲥⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ ⲛ̄ⲟⲩⲁⲛ ⲛⲓⲙ ⲉⲧⲛⲁⲃ{73} ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲉϩⲥⲱ-",
-      "core_english": "is revealed to everyone who will {74} forth from the bo-",
+      "core_coptic": "ϣⲁⲥⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ ⲛ̄ⲟⲩⲁⲛ ⲛⲓⲙ ⲉⲧⲛⲁⲃ{44} ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲉϩⲥⲱ-",
+      "core_english": "is revealed to everyone who will {44} forth from the bo-",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 68,
+          "type": "restoration",
+          "coptic": "ⲱⲕ",
+          "english": "go",
+          "basis": "ⲃⲱⲕ ⲁⲃⲁⲗ idiom 'go forth' — partial ⲃ visible, completes standard verb of departing the body",
+          "source_id": 47,
+          "section": 440
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Soul leaving body — substrate eschatology"
     },
@@ -522,8 +1040,20 @@
       "chapter": 7,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲁ ⲁⲍⲣⲛ̄ ⲡⲉⲓⲛⲉ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲙⲛ̄ ⲡϣⲁ{75}",
-      "core_english": "dy, into the likeness of the icon of the apostle and the {76}",
+      "core_coptic": "ⲙⲁ ⲁⲍⲣⲛ̄ ⲡⲉⲓⲛⲉ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲙ̄ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲙⲛ̄ ⲡϣⲁ{45}",
+      "core_english": "dy, into the likeness of the icon of the apostle and the {45}",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 69,
+          "type": "restoration",
+          "coptic": "ⲙⲧ",
+          "english": "three",
+          "basis": "Editor restoration ⲡϣⲁ[ⲙⲧ] = ⲡϣⲁⲙⲧ 'three' — confirmed by line 18 which counts off 'these are the three angels'",
+          "source_id": 48,
+          "section": 441
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Icon of apostle is overlay-marker but tightly woven into substrate eschatological encounter"
     },
@@ -532,8 +1062,20 @@
       "chapter": 7,
       "line": 70,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲛⲁⲟ ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ ⲉⲧⲟⲓ ⲛ̄ⲉⲁⲩ ⲉⲧⲛⲏⲩ ⲛⲉⲙⲉⲥ. ⲡⲟⲩⲉ ⲉϩⲉⲙ{77}-",
-      "core_english": "great angels who are glorious, who come with her. The one to {78}",
+      "core_coptic": "ⲛ̄ⲛⲁⲟ ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ ⲉⲧⲟⲓ ⲛ̄ⲉⲁⲩ ⲉⲧⲛⲏⲩ ⲛⲉⲙⲉⲥ. ⲡⲟⲩⲉ ⲉϩⲉⲙ{46}-",
+      "core_english": "great angels who are glorious, who come with her. The one to {46}",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 70,
+          "type": "restoration",
+          "coptic": "ⲁⲍ",
+          "english": "hold",
+          "basis": "Editor restoration ⲉϩⲉⲙ[ⲁⲍ]ⲧⲉ = ⲉϩⲉⲙⲁⲍⲧⲉ 'to hold/grasp' — confirmed by parallel ⲡⲉⲧⲉⲙⲁⲍⲧⲉ in line 17 of same enumeration",
+          "source_id": 49,
+          "section": 442
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three angels — substrate retinue"
     },
@@ -544,6 +1086,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲙ̄ⲡⲃⲣⲁⲃⲓⲟⲛ ⲍⲛ̄ ⲧⲉϩⲟⲓⲝ. ⲡⲙⲁⲍⲥⲛⲉⲩ ⲉϩⲃⲓ ⲍⲁ ⲑⲃⲥⲱ",
       "core_english": "the prize in his right hand. The second comes bearing the garment",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Prize, garment — substrate symbols"
     },
@@ -554,6 +1097,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲟⲩⲁⲓⲛⲉ. ⲡⲙⲁⲍϣⲁⲙⲧ̄ ⲡⲉ ⲡⲉⲧⲉⲙⲁⲍⲧⲉ ⲛ̄ⲧⲟⲣⲏⲧⲉ",
       "core_english": "of light. The third is the one who holds the diadem",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Diadem — substrate emblem"
     },
@@ -564,6 +1108,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲡⲥⲧⲉⲫⲁⲛⲟⲥ ⲙⲛ̄ ⲡⲕⲗⲁⲙ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓⲛⲉ. ⲛⲉⲓ ⲛⲉ ⲡϣⲁ-",
       "core_english": "and the wreath and the crown of light. These are the th-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Wreath and crown of light — substrate"
     },
@@ -574,6 +1119,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲧ̄ ⲛ̄ⲁⲅⲅⲉⲗⲟⲥ ⲛ̄ⲧⲉ ⲡⲟⲩⲁⲓⲛⲉ ⲛⲉⲧⲉϣⲁⲩⲉⲓ ⲙⲛ̄ ⲧⲙⲟⲣⲫⲏ",
       "core_english": "ree angels of light who come with the form",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three angels of light — substrate"
     },
@@ -584,6 +1130,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲟⲩⲁⲓⲛⲉ ⲛ̄ⲥⲉⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ ⲛⲉⲙⲉⲥ",
       "core_english": "of light, and they are revealed with her",
+      "apparatus": [],
       "removed_material": "Stripped 'to the elect and to the' — ecclesial categories begin here.",
       "temporal_note": "Substrate revelation cut as ecclesial recipients named; ecclesial score 128.57 confirms overlay"
     },
@@ -592,8 +1139,20 @@
       "chapter": 7,
       "line": 77,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ. ⲁⲩⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ, ⲁⲩⲟⲱ{79} ⲁⲃⲁⲗ ⲍⲓⲧⲛ̄ ⲛⲉⲩⲉ-",
-      "core_english": "from one another. They were revealed, they {80} through one an-",
+      "core_coptic": "ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ. ⲁⲩⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ, ⲁⲩⲟⲱ{47} ⲁⲃⲁⲗ ⲍⲓⲧⲛ̄ ⲛⲉⲩⲉ-",
+      "core_english": "from one another. They were revealed, they {47} through one an-",
+      "apparatus": [
+        {
+          "id": 47,
+          "segment": 77,
+          "type": "restoration",
+          "coptic": "ⲗⲡ",
+          "english": "were disclosed",
+          "basis": "Editor restoration ⲁⲩⲟⲱ[ⲗⲡ] = ⲁⲩⲟⲱⲗⲡ̄ ⲁⲃⲁⲗ 'they were disclosed' — verbal pair with ⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ 'were revealed,' standard Manichaean revelatory doublet",
+          "source_id": 50,
+          "section": 448
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing summary of Five Fathers cascade — substrate"
     },
@@ -602,8 +1161,20 @@
       "chapter": 7,
       "line": 78,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲏⲩ. ⲛⲉⲓ ⲉⲧϩ̄ ⲙ̄ⲡⲉⲧⲛⲁⲥⲛⲟⲩⲱⲛⲟⲩ ⲛ̄ϩⲣⲛ̄ⲟⲓⲉ ⲙⲙ{81}",
-      "core_english": "other. These are those of him who will recognize them before {82} faces,",
+      "core_coptic": "ⲣⲏⲩ. ⲛⲉⲓ ⲉⲧϩ̄ ⲙ̄ⲡⲉⲧⲛⲁⲥⲛⲟⲩⲱⲛⲟⲩ ⲛ̄ϩⲣⲛ̄ⲟⲓⲉ ⲙⲙ{48}",
+      "core_english": "other. These are those of him who will recognize them before {48} faces,",
+      "apparatus": [
+        {
+          "id": 48,
+          "segment": 78,
+          "type": "restoration",
+          "coptic": "ⲁⲩ",
+          "english": "their",
+          "basis": "Editor restoration ⲙⲙ[ⲁⲩ] = ⲙ̄ⲙⲁⲩ '(of) them, their' — required for sense 'before their faces'",
+          "source_id": 51,
+          "section": 449
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing summary"
     },
@@ -614,6 +1185,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲉ ϩⲁⲟⲓⲛⲉ ⲙ̄ⲡⲱⲛⲍ ϣⲁ ⲁⲛⲏⲍⲉ, ⲛ̄ϩⲣ̄ⲭⲓ ⲛ̄ⲛⲓⲍⲃ̄ⲥⲁⲩⲉ ⲛ̄ⲟⲩ-",
       "core_english": "so that some attain life forever, to receive these garments of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eschatological garments — substrate"
     },
@@ -622,8 +1194,20 @@
       "chapter": 7,
       "line": 80,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲓⲛⲉ ⲉⲧⲉϣⲁⲩⲧⲉⲓⲧⲟⲩ ⲛ̄ⲛ̄ⲁⲓⲕⲁⲓⲟⲥ {83} ⲛ̄ⲧⲁⲓⲣⲏⲛⲏ",
-      "core_english": "light which they give to the righteous, {84} of peace,",
+      "core_coptic": "ⲁⲓⲛⲉ ⲉⲧⲉϣⲁⲩⲧⲉⲓⲧⲟⲩ ⲛ̄ⲛ̄ⲁⲓⲕⲁⲓⲟⲥ {49} ⲛ̄ⲧⲁⲓⲣⲏⲛⲏ",
+      "core_english": "light which they give to the righteous, {49} of peace,",
+      "apparatus": [
+        {
+          "id": 49,
+          "segment": 80,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲓⲥⲧⲟⲥ",
+          "english": "the faithful",
+          "basis": "Editor restoration — standard pairing 'the righteous, the faithful' (δίκαιοι καὶ πιστοί) in Manichaean designations of the elect",
+          "source_id": 52,
+          "section": 451
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Garments to the righteous"
     },
@@ -634,6 +1218,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲛ̄ⲥⲁⲛⲣ̄ⲙⲛ̄ⲧⲛⲁϩⲣⲉ :",
       "core_english": "and the men of mercy.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing on righteous/peace/mercy — substrate epilogue"
     }

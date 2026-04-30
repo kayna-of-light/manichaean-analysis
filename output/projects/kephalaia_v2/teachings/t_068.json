@@ -5,7 +5,7 @@
   "start_section": 4009,
   "end_section": 4051,
   "total_sections": 43,
-  "total_lacunae": 42,
+  "total_lacunae": 21,
   "segments": [
     {
       "section": 4009,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲝ̅ⲋ̅ ⲉⲧⲃⲉ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲝ̅ⲋ̅",
       "core_english": "66. Concerning the Ambassador. 66",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title with ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ — the Ambassador/Third Messenger, key cosmic substrate marker."
     },
@@ -23,7 +24,19 @@
       "line": 2,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲧⲛ̄ⲙ̄ⲙⲉ ⲕⲁⲧⲁ ⲧϩⲉ ⲉⲧⲟⲩⲱⲛϩ ⲛⲏⲧⲛⲉ ⲁⲃⲁⲗ ⲭⲉ ⲟⲩ",
-      "core_english": "{1} know in the manner that is being manifested forth to you — that there",
+      "core_english": "{0} know in the manner that is being manifested forth to you — that there",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲉ",
+          "english": "and you may",
+          "basis": "Editor restoration; standard conjunctive ⲛⲧⲉⲧⲛ̄- continuation of preceding ⲛ̄ⲧⲉⲧⲛⲛⲉⲩ 'see'",
+          "source_id": 0,
+          "section": 4010
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Teaching introduction running into substrate."
     },
@@ -34,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ ⲛⲁⲟ̄ ⲥⲛⲉⲩ ⲙ̄ⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲟⲩⲁⲛϩ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲓⲣⲏ ⲉⲧⲧⲣ̄",
       "core_english": "are two great mysteries manifested forth in this sun which gives",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Two mysteries in the sun — defines the teaching structure of the chapter."
     },
@@ -44,6 +58,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲁⲓ̈ⲛⲉ ϩⲛ̄ ⲧⲉⲩⲟ̄ⲓⲙ̄ⲡⲣ̄ⲓⲉ ⲙⲛ̄ ⲧⲉⲩⲟ̄ⲓⲛϩⲱⲧⲏ̄ ⲙⲓⲧⲛⲉⲩ",
       "core_english": "light — in his shining-forth and in his setting. Look,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sunrise/sunset binary structuring the teaching."
     },
@@ -52,8 +67,20 @@
       "chapter": 66,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉⲛ ⲉⲧⲩ̄ⲁⲧⲣ̄ⲓⲉ ⲛⲩ̄ⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ϣⲁ{2}",
-      "core_english": "indeed, when he is to shine and be manifested forth in the cosmos until {3}",
+      "core_coptic": "ⲙⲉⲛ ⲉⲧⲩ̄ⲁⲧⲣ̄ⲓⲉ ⲛⲩ̄ⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ϣⲁ{1}",
+      "core_english": "indeed, when he is to shine and be manifested forth in the cosmos until {1}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲡⲉ",
+          "english": "the [time/turn]",
+          "basis": "Editor preserves only ⲡⲉ; likely ϣⲁ-ⲡⲉ[ⲛⲁⲩ]/ⲡⲉ[ⲩⲛⲉⲩ] 'until the [hour]' but only article-fragment is certain",
+          "source_id": 1,
+          "section": 4013
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate cosmology."
     },
@@ -62,8 +89,20 @@
       "chapter": 66,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲥⲱⲧ ⲛ̄ⲭⲱⲩ ⲁⲃⲁⲗ ϩ{4}",
-      "core_english": "all the creatures of flesh — they draw themselves forth out of {5}",
+      "core_coptic": "ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲥⲱⲧ ⲛ̄ⲭⲱⲩ ⲁⲃⲁⲗ ϩ{2}",
+      "core_english": "all the creatures of flesh — they draw themselves forth out of {2}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲛ ⲫⲓⲛⲏⲃ",
+          "english": "the sleep",
+          "basis": "Editor restoration; context (creatures emerging at sunrise from where they slept) supports 'sleep' (Greek ὕπνος); ⲫⲓⲛⲏⲃ likely = ⲡ-ⲉⲛⲏⲃ",
+          "source_id": 2,
+          "section": 4014
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Creatures emerging at sunrise — substrate."
     },
@@ -74,6 +113,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲟⲩϣⲟⲟⲡ ⲛ̄ϩⲏⲧⲩ̄ ⲟⲩⲃⲉ ⲡⲡⲣ̄ⲓⲉ ⲙ̄ⲡⲣⲏ ⲡⲛⲉⲩ ϩⲱ",
       "core_english": "in which they exist, against the Radiance of the sun. Look,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -84,6 +124,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱⲩ ⲛ̄ⲣⲟⲩϩⲉ ⲉⲧⲉⲣⲉ ⲡⲣⲏ ⲛⲁϩⲱⲧⲏ̄ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ",
       "core_english": "again, at the evening, when the sun is to set forth from the cosmos:",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sunset cosmology."
     },
@@ -94,6 +135,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲉ ⲛ̄ⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ⲙ̄ⲙⲁⲁ ⲛⲓⲙ ⲙⲛ̄ ⲛ̄ⲕⲉⲧⲃ̄ⲛⲁⲩⲉ ⲧⲏⲣⲟⲩ",
       "core_english": "all men of every place, together with all the (other) cattle,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate cosmology of nightfall."
     },
@@ -104,6 +146,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲩⲃⲱⲕ ⲁϩⲟⲩⲛ ⲁⲛⲟⲩⲙⲁⲛϩⲱⲡ ⲛ̄ⲕⲙⲏⲙⲉ ϣⲁⲣⲉ ⲡⲙⲏ",
       "core_english": "are wont to go in into their hiding-places of darkness; the multi-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -114,6 +157,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲉ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣⲩ̄ ϣⲧⲉⲙ ⲛ̄ⲣⲱⲟⲩ ⲛ̄ⲧⲉ ⲧⲟⲩϣⲏ ⲛ̄ⲕⲙⲏⲙⲉ",
       "core_english": "tude of the whole cosmos shut their mouths, and the night of darkness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -124,6 +168,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲓ ⲁⲭⲱⲩ ⲛ̄ⲥⲉϣⲉ ⲛⲉⲩ ⲁϩⲟⲩⲛ ⲛ̄ⲥⲉⲟⲩⲱϩ ⲙ̄ⲡϩⲟⲩⲛ ⲛ̄ⲧⲟⲩ",
       "core_english": "comes upon them, and they go in, and they dwell within their",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -134,6 +179,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲏ ⲛ̄ⲕⲙⲏⲙⲉ ϩⲛ̄ ⲛⲟⲩⲙⲁⲛϩⲱⲡ",
       "core_english": "night of darkness in their hiding-places.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -144,6 +190,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲛⲁⲟ̄ ⲧⲟⲛⲱ ⲡⲉ ⲡⲓⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲉⲧⲟⲩⲁⲛϩ̄ ⲁⲃⲁⲗ ϩⲙ̄ ⲡⲣⲏ",
       "core_english": "A great Raising-up is this mystery which is manifested forth in the sun.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Identification of the first mystery as 'great Raising-up' — cosmic substrate."
     },
@@ -152,8 +199,20 @@
       "chapter": 66,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲥⲁⲡ ⲅⲁⲣ ⲉⲧⲉⲣⲉ ⲡⲣⲏ ⲛⲁⲡⲣ̄ⲓⲉ {6}ⲱⲛϩ̄ ⲁⲃⲁⲗ ϩⲛ̄ ⲧⲁⲣ",
-      "core_english": "For the time when the sun shall shine and {7} be manifested forth from the be-",
+      "core_coptic": "ⲡⲥⲁⲡ ⲅⲁⲣ ⲉⲧⲉⲣⲉ ⲡⲣⲏ ⲛⲁⲡⲣ̄ⲓⲉ {3}ⲱⲛϩ̄ ⲁⲃⲁⲗ ϩⲛ̄ ⲧⲁⲣ",
+      "core_english": "For the time when the sun shall shine and {3} be manifested forth from the be-",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲛⲩ̄ⲟⲩ",
+          "english": "and",
+          "basis": "Editor restoration; Lyc. conjunctive ⲛϥ-ⲟⲩⲱⲛϩ̄ 'and (the sun) shall be manifested,' parallel to preceding ⲛⲁⲡⲣ̄ⲓⲉ 'shall shine'",
+          "source_id": 3,
+          "section": 4023
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -162,8 +221,20 @@
       "chapter": 66,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲏ ⲙ̄ⲡϩⲟⲟⲩⲉ ⲛ̄ⲧⲉ ⲛ̄ⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ⲟⲩⲉⲛ ⲁⲛⲟⲩⲣⲱⲟⲩ ⲛ̄ⲧ{8}",
-      "core_english": "ginning of the day — all men open their mouths, of {9}",
+      "core_coptic": "ⲭⲏ ⲙ̄ⲡϩⲟⲟⲩⲉ ⲛ̄ⲧⲉ ⲛ̄ⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ⲟⲩⲉⲛ ⲁⲛⲟⲩⲣⲱⲟⲩ ⲛ̄ⲧ{4}",
+      "core_english": "ginning of the day — all men open their mouths, of {4}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "of",
+          "basis": "Editor restoration; ⲛ̄ⲧ[ⲉ] 'of' completing the genitive into ⲧⲙⲛ̄ⲧⲣⲱⲙⲉ on next line",
+          "source_id": 4,
+          "section": 4024
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -172,8 +243,20 @@
       "chapter": 66,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲛ̄ⲧⲣⲱⲙⲉ ⲧⲏⲣⲥ̄ ⲙⲛ̄ ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲉⲓ ⲁⲃⲁⲗ ⲁⲡⲕⲁ{10}",
-      "core_english": "all humanity, and all creatures come forth onto the {11}",
+      "core_coptic": "ⲧⲙⲛ̄ⲧⲣⲱⲙⲉ ⲧⲏⲣⲥ̄ ⲙⲛ̄ ⲛ̄ⲥⲱⲱⲛⲧ ⲧⲏⲣⲟⲩ ⲉⲓ ⲁⲃⲁⲗ ⲁⲡⲕⲁ{5}",
+      "core_english": "all humanity, and all creatures come forth onto the {5}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "earth",
+          "basis": "Editor restoration ⲡⲕⲁ[ϩ] 'the earth'; required as referent of motion-verb ⲉⲓ ⲁⲃⲁⲗ ⲁ- 'come forth onto'",
+          "source_id": 5,
+          "section": 4025
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -182,8 +265,20 @@
       "chapter": 66,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁϣⲁⲣϣⲣ̄ ⲙⲡⲓⲥⲧⲁⲩⲣⲟⲥ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲡⲉⲧⲁϩⲉ ⲁⲣⲉⲧⲩ ϩ{12}",
-      "core_english": "to scatter upon this Cross of Light which stands fast in {13}",
+      "core_coptic": "ⲁϣⲁⲣϣⲣ̄ ⲙⲡⲓⲥⲧⲁⲩⲣⲟⲥ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲡⲉⲧⲁϩⲉ ⲁⲣⲉⲧⲩ ϩ{6}",
+      "core_english": "to scatter upon this Cross of Light which stands fast in {6}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲛ ⲟⲩ",
+          "english": "in a",
+          "basis": "Editor restoration; ϩ[ⲛ ⲟⲩ]ⲕⲁⲣⲁⲓ̈ⲧⲩ̄ 'in a stillness' is a standard idiomatic prepositional construction",
+          "source_id": 6,
+          "section": 4026
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cross of Light — cosmic substrate image (cosmic Light dispersed in matter)."
     },
@@ -192,8 +287,20 @@
       "chapter": 66,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕⲁⲣⲁⲓ̈ⲧⲩ̄ ⲉⲣⲉ ⲡⲉⲓ̈ ⲡⲧⲏϩ ⲁⲧⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡϣⲁⲣⲡ̄ {14}",
-      "core_english": "stillness; and this matches the mystery of the First {15}",
+      "core_coptic": "ⲕⲁⲣⲁⲓ̈ⲧⲩ̄ ⲉⲣⲉ ⲡⲉⲓ̈ ⲡⲧⲏϩ ⲁⲧⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡϣⲁⲣⲡ̄ {7}",
+      "core_english": "stillness; and this matches the mystery of the First {7}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(of)",
+          "basis": "Editor restoration; standard genitive linker ⲙ̄ⲡϣⲁⲣⲡ̄ [ⲛ̄]ⲣⲱⲙⲉ 'of the First Man'",
+          "source_id": 7,
+          "section": 4027
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Correspondential mapping: sunrise ↔ First Man's emergence."
     },
@@ -202,8 +309,20 @@
       "chapter": 66,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲱⲙⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲡⲧⲥⲏⲩ ϩⲱⲱⲩ ⲉⲧⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲛ̄ⲧⲙⲛ̄{16}",
-      "core_english": "Man; for at the very time when they came forth from the Great-{17}",
+      "core_coptic": "ⲣⲱⲙⲉ ⲉⲡⲉⲓ̈ⲁⲏ ⲡⲧⲥⲏⲩ ϩⲱⲱⲩ ⲉⲧⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲛ̄ⲧⲙⲛ̄{8}",
+      "core_english": "Man; for at the very time when they came forth from the Great-{8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "(suffix)",
+          "basis": "Editor restoration; ⲛ̄ⲧⲙⲛ̄[ⲧ]ⲛⲁⲟ̄ 'from the Greatness,' standard Manichaean cosmological term",
+          "source_id": 8,
+          "section": 4028
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man cosmic substrate."
     },
@@ -212,8 +331,20 @@
       "chapter": 66,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲁⲟ̄ ⲁⲩⲡⲣ̄ⲓⲉ ⲁⲭⲛ̄ ⲛ̄ϣⲏⲣⲉ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲉⲕⲉ ⲛ̄ⲧⲟⲩⲛ{18}",
-      "core_english": "ness, they shone forth upon all the sons of the Darkness; in that hou{19}",
+      "core_coptic": "ⲛⲁⲟ̄ ⲁⲩⲡⲣ̄ⲓⲉ ⲁⲭⲛ̄ ⲛ̄ϣⲏⲣⲉ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲉⲕⲉ ⲛ̄ⲧⲟⲩⲛ{9}",
+      "core_english": "ness, they shone forth upon all the sons of the Darkness; in that hou{9}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "r",
+          "basis": "Editor restoration; ⲛ̄ⲧⲟⲩⲛ[ⲟⲩ] = ⲛ̄ⲧⲟⲩⲛⲟⲩ 'in (the) hour,' completing the time-marker continued in next line",
+          "source_id": 9,
+          "section": 4029
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate cosmogony."
     },
@@ -222,8 +353,20 @@
       "chapter": 66,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲙⲙⲉⲩ ⲁ ⲛ̄ϣⲏⲣⲉ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲉⲕⲉ ⲉⲓ ⲁⲃⲁⲗ ϩⲛ̄ ⲛⲟⲩⲧⲁⲙ{20}",
-      "core_english": "(that hour) all the sons of the Darkness came forth from their store-{21}",
+      "core_coptic": "ⲉⲧⲙⲙⲉⲩ ⲁ ⲛ̄ϣⲏⲣⲉ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲉⲕⲉ ⲉⲓ ⲁⲃⲁⲗ ϩⲛ̄ ⲛⲟⲩⲧⲁⲙ{10}",
+      "core_english": "(that hour) all the sons of the Darkness came forth from their store-{10}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "-",
+          "basis": "Editor restoration; ⲛⲟⲩⲧⲁⲙ[ⲓ]ⲟⲛ 'their storehouse(s)' continues to next line",
+          "source_id": 10,
+          "section": 4030
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -232,8 +375,20 @@
       "chapter": 66,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲛ ⲛⲉⲩⲟ̄ⲁⲙ ⲙⲛ̄ ⲛⲉⲩⲙⲁⲧⲉⲟ̄ⲧⲉ ⲁⲩⲕⲁ ⲛⲟⲩⲃⲏ{22}",
-      "core_english": "houses, their powers, and their dwelling-places; they left their cav{23}",
+      "core_coptic": "ⲟⲛ ⲛⲉⲩⲟ̄ⲁⲙ ⲙⲛ̄ ⲛⲉⲩⲙⲁⲧⲉⲟ̄ⲧⲉ ⲁⲩⲕⲁ ⲛⲟⲩⲃⲏ{11}",
+      "core_english": "houses, their powers, and their dwelling-places; they left their cav{11}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲃ ⲛ̄ⲥⲱⲩ",
+          "english": "ern behind them",
+          "basis": "Editor restoration; ⲛⲟⲩⲃⲏ[ⲃ ⲛ̄ⲥⲱⲩ] 'their cave(rn) behind them' — ⲃⲏⲃ as 'cave/hole' parallel to ⲙⲁⲛϩⲱⲡ 'hiding-place' earlier",
+          "source_id": 11,
+          "section": 4031
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -242,8 +397,20 @@
       "chapter": 66,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲛⲟⲩⲛⲟⲩⲛ ⲛ̄ⲕⲙⲏⲙⲉ ⲁⲩⲧⲉⲕⲟ ⲙ̄ⲡⲥⲱⲙⲁ ⲉⲧ{24}",
-      "core_english": "and their Deep of darkness; they destroyed the body which is {25}",
+      "core_coptic": "ⲙⲛ̄ ⲛⲟⲩⲛⲟⲩⲛ ⲛ̄ⲕⲙⲏⲙⲉ ⲁⲩⲧⲉⲕⲟ ⲙ̄ⲡⲥⲱⲙⲁ ⲉⲧ{12}",
+      "core_english": "and their Deep of darkness; they destroyed the body which is {12}",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ϩⲓⲃⲁⲗ",
+          "english": "outer",
+          "basis": "Editor restoration; ⲡⲥⲱⲙⲁ ⲉⲧ[ϩⲓⲃⲁⲗ] 'the outer body' — Manichaean cosmological term for the external archonic body",
+          "source_id": 12,
+          "section": 4032
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -252,8 +419,20 @@
       "chapter": 66,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲧⲉ ⲡⲉⲩⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲉⲧⲟ̄ⲁⲗⲉ ⲁⲭⲙ̄ ⲡⲉ{26}",
-      "core_english": "of their Five Sons who are mounted upon their {27}",
+      "core_coptic": "ⲛ̄ⲧⲉ ⲡⲉⲩⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲉⲧⲟ̄ⲁⲗⲉ ⲁⲭⲙ̄ ⲡⲉ{13}",
+      "core_english": "of their Five Sons who are mounted upon their {13}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲩⲥⲱⲙⲁ ϩⲙ ⲡ",
+          "english": "body in the",
+          "basis": "Editor restoration; ⲡⲉ[ⲩⲥ]ⲱ[ⲙⲁ ϩⲙ ⲡ] 'their body, in the [war/cosmos]' — continuing into next page",
+          "source_id": 13,
+          "section": 4033
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five Sons of Darkness — substrate marker."
     },
@@ -264,6 +443,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲡ̄ ⲛ̄ⲁⲅⲱⲛ ⲉⲧⲙ̄ⲙⲉⲩ",
       "core_english": "That is the first contest.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of first mystery — substrate enumeration."
     },
@@ -272,8 +452,20 @@
       "chapter": 66,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲥⲁⲧⲧ ⲍⲱⲱϩ {28}",
-      "core_english": "The Election itself, {29}",
+      "core_coptic": "ⲧⲧⲥⲁⲧⲧ ⲍⲱⲱϩ {14}",
+      "core_english": "The Election itself, {14}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲉⲣⲉ",
+          "english": "in which",
+          "basis": "Editor restored single letter ⲣ in ⲉⲧⲉ[ⲣ]ⲉ; standard Lyc. relative converter ⲉⲧⲉⲣⲉ. Whole word treated as restored unit per the bracketed letter.",
+          "source_id": 14,
+          "section": 4035
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Election' here = cosmic choosing-out of Light at sunset/end, not ecclesial Elect. Substrate term parallel to first mystery."
     },
@@ -282,8 +474,20 @@
       "chapter": 66,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲣⲏ ⲛⲁⲍⲱⲧⲡ̄ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲛ̄ϩⲍⲱⲧⲡ̄ {30}",
-      "core_english": "the sun shall be chosen forth out of the cosmos with the chosen ones {31}",
+      "core_coptic": "ⲧⲣⲏ ⲛⲁⲍⲱⲧⲡ̄ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲛ̄ϩⲍⲱⲧⲡ̄ {15}",
+      "core_english": "the sun shall be chosen forth out of the cosmos with the chosen ones {15}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲍⲏⲧϩ",
+          "english": "of his heart",
+          "basis": "Editor restored final letter ϩ (3sg.m. suffix) in ⲛ̄ⲍⲏⲧ[ϩ]. The complete word means 'his heart' — Lyc. ⲍⲏⲧϩ = Sah. ϩⲏⲧϥ̄.",
+          "source_id": 15,
+          "section": 4036
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -294,6 +498,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲉ ⲛ̄ⲣⲱⲙⲉ ⲧⲏⲣⲟⲩ ⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲛⲟⲩⲙⲁⲛⲍⲱⲡ ⲙⲛ̄",
       "core_english": "of all men. They go in unto their hiding-places and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -304,6 +509,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲩⲏⲓ̈ ⲛ̄ⲥⲉⲍⲁⲡⲟⲩ ⲉⲣⲉ ⲡⲉⲓ̈ ⲡⲧⲏⲍ ⲁⲛ ⲁⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ",
       "core_english": "their houses, and they hide themselves. This too matches the mystery",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Correspondential mapping: sunset ↔ end of cosmos."
     },
@@ -314,6 +520,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲍⲁⲏ ⲉϩⲧⲙⲉⲓ̈ⲛⲉ ⲍⲁ ⲧⲥⲩⲛⲧⲉⲗⲉⲓⲁ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲭⲉ",
       "core_english": "of the end which gives the sign at the consummation of the cosmos: for",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate eschatology."
     },
@@ -322,8 +529,20 @@
       "chapter": 66,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲥⲏⲩ ⲉⲧⲉⲣⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲏⲣϥ̄ ⲛⲁⲧⲟⲩⲃⲟ ⲛ̄ϩⲥⲱⲧϥ̄ {32}",
-      "core_english": "the time when the entire Light shall be purified and chosen {33}",
+      "core_coptic": "ⲡⲥⲏⲩ ⲉⲧⲉⲣⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲏⲣϥ̄ ⲛⲁⲧⲟⲩⲃⲟ ⲛ̄ϩⲥⲱⲧϥ̄ {16}",
+      "core_english": "the time when the entire Light shall be purified and chosen {16}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲍⲙ̄",
+          "english": "in",
+          "basis": "Editor restored ⲙ at line 6 end before ⲡⲕⲟⲥⲙⲟⲥ (line 7); Lyc. ⲍⲙ̄ = Sah. ϩⲙ̄ 'in.'",
+          "source_id": 16,
+          "section": 4040
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate purification of Light."
     },
@@ -334,6 +553,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲕⲟⲥⲙⲟⲥ ⲍⲛ̄ ⲧⲍⲁⲏ ⲉⲧⲙ̄ⲙⲉⲩ ⲡⲣⲁⲃⲱⲗ ⲛ̄ⲍⲱⲃ ⲛⲓⲙ",
       "core_english": "the cosmos — in that very end, the dissolution of every thing,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -344,6 +564,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲛⲁⲣⲉⲓⲁⲥ ⲛ̄ⲍⲁⲉ ⲛⲁⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲛ̄ϩⲍⲱⲅⲣⲁⲫⲉ ⲙ̄",
       "core_english": "the last Extraction shall gather inward unto the depiction of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲁⲛⲁⲣⲉⲓⲁⲥ — last Extraction, cosmic substrate process."
     },
@@ -354,6 +575,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁϩ ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ ⲧⲍⲁⲏ ⲛ̄ⲟⲩⲛⲟⲩ ⲛ̄ⲧⲉ ⲡⲧⲍⲟⲟⲩⲉ ⲡⲥⲏⲩ",
       "core_english": "fullness, which is the end of the hour of the day, the time",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -362,8 +584,20 @@
       "chapter": 66,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲉⲣⲉ ⲡⲁⲛⲁⲣⲉⲓⲁⲥ ⲛ̄ⲍⲁⲉ ⲛⲁⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ {34}",
-      "core_english": "in which the last Extraction shall go upward {35}",
+      "core_coptic": "ⲉⲧⲉⲣⲉ ⲡⲁⲛⲁⲣⲉⲓⲁⲥ ⲛ̄ⲍⲁⲉ ⲛⲁⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ {17}",
+      "core_english": "in which the last Extraction shall go upward {17}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲁⲡⲁⲓⲱⲛ ⲙ̄",
+          "english": "to the Aeon of",
+          "basis": "Editor restored ⲛ ⲙ at end of line 10, completing ⲁⲡⲁⲓⲱⲛ ('to the Aeon') and connecting to ⲡⲟⲩⲁⲓⲛⲉ ('of Light') at line 11 start.",
+          "source_id": 17,
+          "section": 4044
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -374,6 +608,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲟⲩⲁⲓ̈ⲛⲉ · ⲡⲧⲭⲁⲭⲉ ⲍⲱϥ ⲡⲙⲟⲩ ϩⲛⲁⲃⲱⲕ ⲁⲍⲟⲩⲛ̄ ⲁ",
       "core_english": "the Light. The Enemy himself, Death, shall go in unto",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate cosmic Enemy/Death."
     },
@@ -382,8 +617,30 @@
       "chapter": 66,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36} ⲁⲡⲙⲁⲛ̄ⲱⲡⲧ ⲁⲍⲟⲩⲛ ⲛ̄ⲙ̄ⲧⲩⲭⲁⲩⲉ ⲛ̄{37}",
-      "core_english": "{38}, unto the place of judgment, into the souls of {39}",
+      "core_coptic": "{18} ⲁⲡⲙⲁⲛ̄ⲱⲡⲧ ⲁⲍⲟⲩⲛ ⲛ̄ⲙ̄ⲧⲩⲭⲁⲩⲉ ⲛ̄{19}",
+      "core_english": "{18}, unto the place of judgment, into the souls of {19}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲧⲙⲡⲣⲉ",
+          "english": "the sunless place",
+          "basis": "Editor restored initial ⲧ in [ⲧ]ⲙ̄ⲡ̄ⲣⲉ. Translator interprets ⲧⲙ̄ⲡⲣⲉ as ⲧⲙ̄- (privative) + ⲡⲣⲉ/ⲡⲣⲏ ('sun') = 'the sunless [place]' — fits parallel pairing with ⲡⲙⲁⲛ̄ⲱⲡⲧ ('place of judgment'), ⲧⲟⲩⲱⲏ ⲛ̄ⲕⲉⲕⲉ ('night of darkness'), and the chapter's sun-typology. Translation tentative — see notes.",
+          "source_id": 18,
+          "section": 4046
+        },
+        {
+          "id": 19,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲣⲛⲏⲧⲏⲥ",
+          "english": "the deniers",
+          "basis": "Editor restored middle letters ⲛⲏ in ⲛⲁⲣ[ⲛⲏ]ⲧⲏⲥ; Greek loanword ἀρνητής 'denier, repudiator' is the only viable completion. Standard Manichaean polemical term.",
+          "source_id": 19,
+          "section": 4046
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate eschatology."
     },
@@ -394,6 +651,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲛ̄ⲣⲉϩⲭⲓⲟⲩⲁ ⲛⲉⲧⲁⲩⲙⲉⲣⲓ ⲡⲕⲉⲕⲉ ⲥⲉⲛⲁⲃⲱⲕ ⲁⲍⲟⲩⲛ",
       "core_english": "and the blasphemers, those who loved the Darkness — they shall go in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate eschatological category."
     },
@@ -402,8 +660,20 @@
       "chapter": 66,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲙⲉϩ ⲁⲧⲙⲡ̄ⲣⲉ ⲛ̄ⲧⲉ ⲧⲟⲩⲱⲏ ⲛ̄ⲕⲉⲕⲉ ϣⲱⲡⲉ {40} ⲙ̄",
-      "core_english": "with him into the sunless region of the night of darkness — befalling {41} — until",
+      "core_coptic": "ⲛⲉⲙⲉϩ ⲁⲧⲙⲡ̄ⲣⲉ ⲛ̄ⲧⲉ ⲧⲟⲩⲱⲏ ⲛ̄ⲕⲉⲕⲉ ϣⲱⲡⲉ {20} ⲙ̄",
+      "core_english": "with him into the sunless region of the night of darkness — befalling {20} — until",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲁⲭⲱⲩ",
+          "english": "(falling) upon them",
+          "basis": "Editor restored final letter ⲩ (3pl. suffix) in ⲁⲭⲱ[ⲩ]. Translator reads ⲁⲭⲱⲩ as Lyc. ⲉϫⲱⲟⲩ 'upon them' (with ⲭ for ϫ); idiom ϣⲱⲡⲉ + ⲉϫⲱ⸗ = 'happen upon, befall.' Hence 'becoming-upon-them' = befalling them. Tentative.",
+          "source_id": 20,
+          "section": 4048
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -414,6 +684,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲧⲉ ⲡⲧⲣⲉⲛ ⲭⲉ ⲟⲩⲁⲓ̈ⲛⲉ ⲡⲣⲓ̈ⲉ ⲛⲉⲩ ⲭⲛ̄ ⲙ̄ⲡⲓⲛⲉⲩ ⲉⲓⲥ",
       "core_english": "they have been named: 'a Light shines for them.' From this very moment, behold,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate."
     },
@@ -424,6 +695,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲥⲛⲉⲩ ⲥⲉⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲣⲏ ⲙ̄ⲙⲏⲛⲉ",
       "core_english": "two mysteries are revealed in the sun daily,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate summation of two mysteries."
     },
@@ -434,6 +706,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲉ ⲛⲧⲁϩ ⲡⲉ ⲡⲓⲫⲱⲥⲧⲏⲣ ⲉⲡⲡⲣⲓ̈ⲉ",
       "core_english": "which is this Illuminator who radiates.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲓⲫⲱⲥⲧⲏⲣ here = the radiating Sun (cosmic luminary), not Mani-as-Illuminator. Substrate."
     }

@@ -5,7 +5,7 @@
   "start_section": 1236,
   "end_section": 1276,
   "total_sections": 41,
-  "total_lacunae": 155,
+  "total_lacunae": 79,
   "segments": [
     {
       "section": 1236,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕ̄ⲃ̄",
       "core_english": "22",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter number marker — structural header for the teaching unit."
     },
@@ -23,7 +24,17 @@
       "line": 1,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}",
-      "core_english": "{1}",
+      "core_english": "{0}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 1,
+          "type": "lacuna",
+          "est_chars": 11,
+          "source_id": 0,
+          "section": 1237
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna placeholder; contextually within the substrate header block."
     },
@@ -32,8 +43,19 @@
       "chapter": 22,
       "line": 2,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕ̄ⲃ̄ {2} ⲡⲧⲕⲁⲍ ⲙⲡⲧⲟⲩⲁ̄ⲛⲉ ⲕ̄ⲃ̄",
-      "core_english": "22 {3} the land of light. 22",
+      "core_coptic": "ⲕ̄ⲃ̄ {1} ⲡⲧⲕⲁⲍ ⲙⲡⲧⲟⲩⲁ̄ⲛⲉ ⲕ̄ⲃ̄",
+      "core_english": "22 {1} the land of light. 22",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 2,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "Likely ⲉⲧⲃⲉ 'concerning' in the chapter-heading formula 'Chapter 22: concerning the land of light'",
+          "source_id": 1,
+          "section": 1238
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Chapter title naming the cosmological topic — the Land of Light. Substantive cosmological subject heading."
     },
@@ -42,8 +64,18 @@
       "chapter": 22,
       "line": 3,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4} ⲍⲙ̄ ⲡⲡⲛⲁⲟ̄ ⲛⲕⲁⲍ ⲛⲧⲉ ⲧⲙⲛⲧⲛⲁⲟ̄",
-      "core_english": "{5} in the great land of the Greatness",
+      "core_coptic": "{2} ⲍⲙ̄ ⲡⲡⲛⲁⲟ̄ ⲛⲕⲁⲍ ⲛⲧⲉ ⲧⲙⲛⲧⲛⲁⲟ̄",
+      "core_english": "{2} in the great land of the Greatness",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 12,
+          "source_id": 2,
+          "section": 1239
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲧⲙⲛⲧⲛⲁⲟ̄ (the Greatness) — pure cosmological substrate naming the Father's realm."
     },
@@ -52,8 +84,18 @@
       "chapter": 22,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6}",
-      "core_english": "{7}",
+      "core_coptic": "{3}",
+      "core_english": "{3}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 21,
+          "source_id": 6,
+          "section": 1240
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate teaching."
     },
@@ -62,8 +104,18 @@
       "chapter": 22,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8} ⲧϩ ⲙⲡⲥⲁⲛⲧⲓⲧⲉ",
-      "core_english": "{9} ... of the lower side",
+      "core_coptic": "{4} ⲧϩ ⲙⲡⲥⲁⲛⲧⲓⲧⲉ",
+      "core_english": "{4} ... of the lower side",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 8,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 7,
+          "section": 1241
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic-spatial register ('lower side') — substrate geography."
     },
@@ -72,8 +124,34 @@
       "chapter": 22,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲡⲣⲟⲥⲱⲡⲧⲟⲛ ⲡⲧⲉ ⲛ {11} ⲣ ⲉⲧⲣ̄ {12}",
-      "core_english": "{13} face of {14} ... which {15}",
+      "core_coptic": "{5} ⲡⲣⲟⲥⲱⲡⲧⲟⲛ ⲡⲧⲉ ⲛ {6} ⲣ ⲉⲧⲣ̄ {7}",
+      "core_english": "{5} face of {6} ... which {7}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 8,
+          "section": 1242
+        },
+        {
+          "id": 6,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 9,
+          "section": 1242
+        },
+        {
+          "id": 7,
+          "segment": 9,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 10,
+          "section": 1242
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲡⲣⲟⲥⲱⲡⲧⲟⲛ (face) — typical zoomorphic/physiognomic correspondence vocabulary."
     },
@@ -82,8 +160,19 @@
       "chapter": 22,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}",
-      "core_english": "{17}",
+      "core_coptic": "{8}",
+      "core_english": "{8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 30,
+          "partial": "stark abgerieben (heavily rubbed off)",
+          "source_id": 11,
+          "section": 1243
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate."
     },
@@ -92,8 +181,18 @@
       "chapter": 22,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲉⲧⲁⲛⲍ̄",
-      "core_english": "{19} living",
+      "core_coptic": "{9} ⲉⲧⲁⲛⲍ̄",
+      "core_english": "{9} living",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 28,
+          "source_id": 12,
+          "section": 1244
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲉⲧⲁⲛⲍ̄ ('living') — substrate epithet, used for living waters/ambrosia/drug throughout the chapter."
     },
@@ -102,8 +201,18 @@
       "chapter": 22,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20}",
-      "core_english": "{21}",
+      "core_coptic": "{10}",
+      "core_english": "{10}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 30,
+          "source_id": 13,
+          "section": 1245
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate."
     },
@@ -112,8 +221,26 @@
       "chapter": 22,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲃⲁⲗ {22} ⲛ ⲙ̄ⲙⲁ {23}",
-      "core_english": "forth {24} ... {25}",
+      "core_coptic": "ⲁⲃⲁⲗ {11} ⲛ ⲙ̄ⲙⲁ {12}",
+      "core_english": "forth {11} ... {12}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 21,
+          "source_id": 14,
+          "section": 1246
+        },
+        {
+          "id": 12,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 15,
+          "section": 1246
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -122,8 +249,26 @@
       "chapter": 22,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26} ⲁⲍⲱ {27} ⲍⲱϩ",
-      "core_english": "{28} ... {29} also",
+      "core_coptic": "{13} ⲁⲍⲱ {14} ⲍⲱϩ",
+      "core_english": "{13} ... {14} also",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 16,
+          "section": 1247
+        },
+        {
+          "id": 14,
+          "segment": 14,
+          "type": "lacuna",
+          "est_chars": 19,
+          "source_id": 17,
+          "section": 1247
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -132,8 +277,26 @@
       "chapter": 22,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{30} ⲛⲟⲩⲁ̄ⲛⲉ ⲙⲛ̄ {31}",
-      "core_english": "{32} of light and {33}",
+      "core_coptic": "{15} ⲛⲟⲩⲁ̄ⲛⲉ ⲙⲛ̄ {16}",
+      "core_english": "{15} of light and {16}",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 26,
+          "source_id": 18,
+          "section": 1248
+        },
+        {
+          "id": 16,
+          "segment": 15,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 19,
+          "section": 1248
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲛⲟⲩⲁ̄ⲛⲉ ('of light') — core substrate vocabulary."
     },
@@ -142,8 +305,18 @@
       "chapter": 22,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34}",
-      "core_english": "{35}",
+      "core_coptic": "{17}",
+      "core_english": "{17}",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 25,
+          "source_id": 20,
+          "section": 1249
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate."
     },
@@ -152,8 +325,18 @@
       "chapter": 22,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36} ⲙ̄ⲡⲣⲟⲥⲱⲡⲧⲟⲛ",
-      "core_english": "{37} of the face",
+      "core_coptic": "{18} ⲙ̄ⲡⲣⲟⲥⲱⲡⲧⲟⲛ",
+      "core_english": "{18} of the face",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 24,
+          "source_id": 21,
+          "section": 1250
+        }
+      ],
       "removed_material": null,
       "temporal_note": "ⲡⲣⲟⲥⲱⲡⲧⲟⲛ — physiognomic correspondence vocabulary."
     },
@@ -162,8 +345,19 @@
       "chapter": 22,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38}",
-      "core_english": "{39}",
+      "core_coptic": "{19}",
+      "core_english": "{19}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 18,
+          "type": "lacuna",
+          "est_chars": 14,
+          "partial": "geringe Spuren (slight traces only)",
+          "source_id": 22,
+          "section": 1251
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate."
     },
@@ -172,8 +366,9 @@
       "chapter": 22,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{40} ⲁⲃⲁⲗ ⲁϥ{41} {42}ⲣⲟⲥⲱⲡⲟⲛ ⲛ̄ⲧⲉ ⲡ{43}",
-      "core_english": "{44} forth, he {45} {46} face of the {47}",
+      "core_coptic": "{20} ⲁⲃⲁⲗ ⲁϥ{21} {22}ⲣⲟⲥⲱⲡⲟⲛ ⲛ̄ⲧⲉ ⲡ{23}",
+      "core_english": "{20} forth, he {21} {22} face of the {23}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲣⲟⲥⲱⲡⲟⲛ (face) — substrate physiognomic mapping."
     },
@@ -182,8 +377,9 @@
       "chapter": 22,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩ̄ⲛ ⲧ{48} ⲛⲉ ⲟⲩⲛ ⲧⲟⲩ{49} ⲙⲉ ⲛ̄ⲧⲉ ⲡⲧⲥⲙⲁⲙ{50}",
-      "core_english": "in the {51}; there are the {52} of the bless{53}",
+      "core_coptic": "ϩ̄ⲛ ⲧ{24} ⲛⲉ ⲟⲩⲛ ⲧⲟⲩ{25} ⲙⲉ ⲛ̄ⲧⲉ ⲡⲧⲥⲙⲁⲙ{26}",
+      "core_english": "in the {24}; there are the {25} of the bless{26}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲧⲥⲙⲁⲙ- (blessed) — cosmological vocabulary of the upper realm."
     },
@@ -192,8 +388,9 @@
       "chapter": 22,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲁⲁⲣ{54} ϩⲙ̄ ⲡ{55} {56}ⲁⲙⲃⲣⲟⲥⲓⲁ ⲉⲧⲁⲛϩ̄ {57} ϩⲉ",
-      "core_english": "{58} in the {59} {60} living ambrosia {61} ...",
+      "core_coptic": "ⲃⲁⲁⲣ{27} ϩⲙ̄ ⲡ{28} {29}ⲁⲙⲃⲣⲟⲥⲓⲁ ⲉⲧⲁⲛϩ̄ {30} ϩⲉ",
+      "core_english": "{27} in the {28} {29} living ambrosia {30} ...",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Living ambrosia (ⲁⲙⲃⲣⲟⲥⲓⲁ ⲉⲧⲁⲛϩ̄) — pure cosmological substrate of the Land of Light."
     },
@@ -202,8 +399,9 @@
       "chapter": 22,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉ {62} ⲙⲟⲩⲭⲧ {63} ⲉⲩϣⲱⲡⲉ ⲛ̄ⲟⲩϩⲓⲕ̄ⲱ",
-      "core_english": "... {64} mixed {65}, becoming an im",
+      "core_coptic": "ⲧⲉ {31} ⲙⲟⲩⲭⲧ {32} ⲉⲩϣⲱⲡⲉ ⲛ̄ⲟⲩϩⲓⲕ̄ⲱ",
+      "core_english": "... {31} mixed {32}, becoming an im",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mixture/image (ϩⲓⲕⲱⲛ) — substrate cosmological process vocabulary."
     },
@@ -212,8 +410,9 @@
       "chapter": 22,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲱ {66} ⲡⲁϩⲣ ⲉⲧⲁⲛ{67} ϩⲱϥ ⲉⲧⲁⲛϩ̄ ⲉϣⲁ",
-      "core_english": "-age {68} the living drug {69}; he too living, when",
+      "core_coptic": "ⲛ̄ⲱ {33} ⲡⲁϩⲣ ⲉⲧⲁⲛ{34} ϩⲱϥ ⲉⲧⲁⲛϩ̄ ⲉϣⲁ",
+      "core_english": "-age {33} the living drug {34}; he too living, when",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲁϩⲣ ⲉⲧⲁⲛϩ̄ (the living drug/medicine) — classic Manichaean cosmological substrate term for the divine vivifying substance."
     },
@@ -222,8 +421,9 @@
       "chapter": 22,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲉ ⲧ{70} ⲉⲧⲙ̄ⲙⲉⲩ {71} ⲭⲛ ⲛⲁⲣⲱⲛ ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲙⲛⲧⲛⲁϭ",
-      "core_english": "the {72} that very one {73} all the {74} of the Greatness",
+      "core_coptic": "ⲣⲉ ⲧ{35} ⲉⲧⲙ̄ⲙⲉⲩ {36} ⲭⲛ ⲛⲁⲣⲱⲛ ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲙⲛⲧⲛⲁϭ",
+      "core_english": "the {35} that very one {36} all the {37} of the Greatness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲧⲙⲛⲧⲛⲁϭ (the Greatness) — central substrate cosmic figure."
     },
@@ -232,8 +432,9 @@
       "chapter": 22,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{75} ⲱ ⲙⲛ̄ ⲟⲩϭ{76} ⲉⲛⲉⲥⲱⲥ ⲁⲛⲙⲉⲗⲟⲥ ⲙⲡⲟⲩⲥⲱⲙⲁ",
-      "core_english": "{77} ... with a {78}, beautiful are the members of their body",
+      "core_coptic": "{38} ⲱ ⲙⲛ̄ ⲟⲩϭ{39} ⲉⲛⲉⲥⲱⲥ ⲁⲛⲙⲉⲗⲟⲥ ⲙⲡⲟⲩⲥⲱⲙⲁ",
+      "core_english": "{38} ... with a {39}, beautiful are the members of their body",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Members (ⲙⲉⲗⲟⲥ) of the body — anthropomorphic correspondential mapping of cosmic beings, classic substrate."
     },
@@ -242,8 +443,9 @@
       "chapter": 22,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{79} ⲉⲧϥ̄ⲱⲟⲟⲡ {80} ⲡⲧⲕⲁϩ ⲙ̄ⲡⲟⲩⲁ̄ⲓⲛⲉ ⲧⲟⲩ",
-      "core_english": "{81} which exists {82} the Land of Light, their",
+      "core_coptic": "{40} ⲉⲧϥ̄ⲱⲟⲟⲡ {41} ⲡⲧⲕⲁϩ ⲙ̄ⲡⲟⲩⲁ̄ⲓⲛⲉ ⲧⲟⲩ",
+      "core_english": "{40} which exists {41} the Land of Light, their",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "ⲡⲧⲕⲁϩ ⲙ̄ⲡⲟⲩⲁ̄ⲓⲛⲉ (the Land of Light) — chapter's central cosmological topic."
     },
@@ -252,8 +454,9 @@
       "chapter": 22,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{83}ⲛϩ ⲧϩⲉ ⲛⲛⲛⲟⲩⲧⲉ ⲧⲏⲣⲟⲩ ⲛ̄ⲣⲙ̄ⲙⲁⲁⲓ̈ ⲙⲛ ⲛ̄",
-      "core_english": "{84}life, like all the rich gods and the",
+      "core_coptic": "{42}ⲛϩ ⲧϩⲉ ⲛⲛⲛⲟⲩⲧⲉ ⲧⲏⲣⲟⲩ ⲛ̄ⲣⲙ̄ⲙⲁⲁⲓ̈ ⲙⲛ ⲛ̄",
+      "core_english": "{42}life, like all the rich gods and the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "All the rich gods — substrate cosmology of the upper pleroma."
     },
@@ -262,8 +465,9 @@
       "chapter": 22,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "{85}ⲧⲁⲩⲧⲁϩⲙⲟⲩ ⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲓⲱⲧ ⲧϩⲉ ⲁⲛ ⲧⲉ",
-      "core_english": "{86} were summoned, having come forth from the Father; so likewise",
+      "core_coptic": "{43}ⲧⲁⲩⲧⲁϩⲙⲟⲩ ⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲙⲡⲓⲱⲧ ⲧϩⲉ ⲁⲛ ⲧⲉ",
+      "core_english": "{43} were summoned, having come forth from the Father; so likewise",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Summoning forth from the Father (ⲡⲓⲱⲧ) — substrate cosmogonic process."
     },
@@ -272,8 +476,9 @@
       "chapter": 22,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉ̄{87}ⲓⲉⲩⲉ ⲧⲏⲣⲟⲩ {88} ⲛϩⲁⲗⲙⲉ ⲙⲛ ⲛ̄ⲱⲏⲛ",
-      "core_english": "{89} all the {90} {91} the {92} and the trees",
+      "core_coptic": "ⲧⲉ̄{44}ⲓⲉⲩⲉ ⲧⲏⲣⲟⲩ {45} ⲛϩⲁⲗⲙⲉ ⲙⲛ ⲛ̄ⲱⲏⲛ",
+      "core_english": "{44} all the {46} {45} the {47} and the trees",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Trees (ⲛ̄ⲱⲏⲛ) of the Land of Light — substrate cosmic flora."
     },
@@ -282,8 +487,9 @@
       "chapter": 22,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ {93}ⲃⲉⲃⲉ ⲁⲃⲁⲗ {94} ⲏ ⲡⲧⲛⲁϭ ⲡⲉ",
-      "core_english": "{95} gushing forth {96} ... is the great one",
+      "core_coptic": "ⲛ {48}ⲃⲉⲃⲉ ⲁⲃⲁⲗ {49} ⲏ ⲡⲧⲛⲁϭ ⲡⲉ",
+      "core_english": "{48} gushing forth {49} ... is the great one",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Gushing forth (springs/waters) — substrate cosmological imagery of the Land of Light."
     },
@@ -292,8 +498,9 @@
       "chapter": 22,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩ {97} ϩⲱⲃ ⲛⲓⲙ ⲉⲧⲕ̄ {98} ⲛ ⲁⲃⲁⲗ {99}",
-      "core_english": "{100} every thing which {101} forth {102}",
+      "core_coptic": "ⲟⲩ {50} ϩⲱⲃ ⲛⲓⲙ ⲉⲧⲕ̄ {51} ⲛ ⲁⲃⲁⲗ {52}",
+      "core_english": "{50} every thing which {51} forth {52}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -302,8 +509,9 @@
       "chapter": 22,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲛ {103}ⲭⲱⲗ ⲟⲩⲧⲉ ⲙⲁⲩ ⲟⲩⲧⲉ {104}",
-      "core_english": "{105} falsehood, neither death nor {106}",
+      "core_coptic": "ⲛⲛ {53}ⲭⲱⲗ ⲟⲩⲧⲉ ⲙⲁⲩ ⲟⲩⲧⲉ {54}",
+      "core_english": "{53} falsehood, neither death nor {54}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Negation of falsehood and death — substrate description of the upper realm's ontological purity."
     },
@@ -312,8 +520,9 @@
       "chapter": 22,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲓ̈ ⲛ{107} ⲡⲉⲧⲉ ⲧⲙⲉ {108}",
-      "core_english": "these are {109} that which the truth {110}",
+      "core_coptic": "ⲛⲉⲓ̈ ⲛ{55} ⲡⲉⲧⲉ ⲧⲙⲉ {56}",
+      "core_english": "these are {55} that which the truth {56}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Truth (ⲧⲙⲉ) — substrate ontological category."
     },
@@ -322,8 +531,9 @@
       "chapter": 22,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "{111}",
-      "core_english": "{112}",
+      "core_coptic": "{57}",
+      "core_english": "{57}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pure lacuna; contextually within substrate."
     },
@@ -332,8 +542,9 @@
       "chapter": 22,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧⲙⲁϩ {113} ⲛⲁϭ ⲛ{114}ⲁⲓⲛⲉ ⲡⲁϩⲣ ⲉⲧⲁⲛϩ̄ ⲡⲟⲩ{115}",
-      "core_english": "the fullness {116} great light, the living drug, their {117}",
+      "core_coptic": "ⲧⲧⲙⲁϩ {58} ⲛⲁϭ ⲛ{59}ⲁⲓⲛⲉ ⲡⲁϩⲣ ⲉⲧⲁⲛϩ̄ ⲡⲟⲩ{60}",
+      "core_english": "the fullness {58} great light, the living drug, their {60}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fullness, great light, living drug — three substrate cosmological terms in succession."
     },
@@ -342,8 +553,9 @@
       "chapter": 22,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "{118} {119}ⲧⲛⲁϭ ⲟⲩⲏϩ ⲉⲩⲥⲙⲁⲛⲧ ⲛϩⲏⲧϥ̄ {120}",
-      "core_english": "{121} {122} Greatness; they dwell, being established in him {123}",
+      "core_coptic": "{61} {62}ⲧⲛⲁϭ ⲟⲩⲏϩ ⲉⲩⲥⲙⲁⲛⲧ ⲛϩⲏⲧϥ̄ {63}",
+      "core_english": "{61} {62} Greatness; they dwell, being established in him {63}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Dwelling established in the Greatness — substrate cosmic-locative description."
     },
@@ -352,8 +564,9 @@
       "chapter": 22,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "{124}ⲗⲟⲥ ⲉⲧ {125}",
-      "core_english": "{126} which {127}",
+      "core_coptic": "{64}ⲗⲟⲥ ⲉⲧ {65}",
+      "core_english": "{64} which {65}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -362,8 +575,9 @@
       "chapter": 22,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "{128} ⲉ ⲙⲛ̄ ⲙⲡ {129} ⲛⲛ {130} ⲣ {131}",
-      "core_english": "{132} ... and the {133} {134} {135}",
+      "core_coptic": "{66} ⲉ ⲙⲛ̄ ⲙⲡ {67} ⲛⲛ {68} ⲣ {69}",
+      "core_english": "{66} ... and the {67} {68} {69}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -372,8 +586,9 @@
       "chapter": 22,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "{136} ⲛⲛⲁⲱⲣⲟⲛ ⲙ̄ⲡⲧⲛⲁϭ ⲛ{137}",
-      "core_english": "{138} of the gifts of the Great {139}",
+      "core_coptic": "{70} ⲛⲛⲁⲱⲣⲟⲛ ⲙ̄ⲡⲧⲛⲁϭ ⲛ{71}",
+      "core_english": "{70} of the gifts of the Great {71}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Gifts (ⲁⲱⲣⲟⲛ/δῶρον) of the Greatness — substrate cosmic emanation vocabulary."
     },
@@ -382,8 +597,9 @@
       "chapter": 22,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "{140} ⲧ ⲡⲉ {141}",
-      "core_english": "{142} ... is {143}",
+      "core_coptic": "{72} ⲧ ⲡⲉ {73}",
+      "core_english": "{72} ... is {73}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -392,8 +608,9 @@
       "chapter": 22,
       "line": 44,
       "classification": "cosmological_substrate",
-      "core_coptic": "{144} ⲁ ϩⲛ ⲧ {145}",
-      "core_english": "{146} in the {147}",
+      "core_coptic": "{74} ⲁ ϩⲛ ⲧ {75}",
+      "core_english": "{74} in the {75}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context."
     },
@@ -402,8 +619,9 @@
       "chapter": 22,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲓⲉⲧϥ ⲙ̄ⲡⲉⲧⲛⲁⲥ{148} {149}",
-      "core_english": "these are his {150} the one who will kn{151} {152}",
+      "core_coptic": "ⲛⲉⲓⲉⲧϥ ⲙ̄ⲡⲉⲧⲛⲁⲥ{76} {77}",
+      "core_english": "these are his {76} the one who will kn{76} {77}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fragment within substrate context; potential recapitulation 'these are his...' in the closing register of substrate description."
     },
@@ -412,8 +630,9 @@
       "chapter": 22,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "{153}",
-      "core_english": "{154}",
+      "core_coptic": "{78}",
+      "core_english": "{78}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pure lacuna closing the chapter."
     }

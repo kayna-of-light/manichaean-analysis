@@ -5,7 +5,7 @@
   "start_section": 4409,
   "end_section": 4433,
   "total_sections": 25,
-  "total_lacunae": 69,
+  "total_lacunae": 35,
   "segments": [
     {
       "section": 4409,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲧ ⲉⲧⲃⲉ ⲫⲑⲟⲛⲟⲥ ⲛⲧⲍⲩⲗⲏ ⲟⲧ",
       "core_english": "(ornament) Concerning the envy of Matter (ornament)",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title names the substrate topic — envy as cosmological principle of ⲧⲍⲩⲗⲏ (Matter/hyle)"
     },
@@ -23,7 +24,19 @@
       "line": 3,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲑⲟⲛⲟⲥ ⲧⲏⲣϥ̄ ⲧⲉ †ϣⲁⲣⲡ̄ ⲙⲫⲩⲥⲓⲥ ⲉⲧⲁⲥϣⲱ{0}",
-      "core_english": "All envy is the first nature that came-into-being{1}",
+      "core_english": "All envy is the first nature that came-into-being{0}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲡⲉ",
+          "english": "",
+          "basis": "Completes ϣⲱⲡⲉ 'become, come into being' across line break",
+          "source_id": 1,
+          "section": 4410
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Foundational definition: envy as ϣⲁⲣⲡ ⲙⲫⲩⲥⲓⲥ (primordial nature). Substrate ontological mapping."
     },
@@ -32,8 +45,18 @@
       "chapter": 73,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲛ̄ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ ⲍⲙ̄ ⲡⲓⲫⲑⲟⲛⲟⲥ ⲉⲧⲁ {2}",
-      "core_english": "in the worlds of the Darkness. In this envy that {3}",
+      "core_coptic": "ⲍⲛ̄ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ ⲍⲙ̄ ⲡⲓⲫⲑⲟⲛⲟⲥ ⲉⲧⲁ {1}",
+      "core_english": "in the worlds of the Darkness. In this envy that {1}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 2,
+          "section": 4411
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic geography: ⲛⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲉⲕⲉ (worlds of Darkness)"
     },
@@ -42,8 +65,36 @@
       "chapter": 73,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉ ⲛ̄ⲍⲏⲧϥ̄ ⲁ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ {4} ⲧⲉⲥⲙⲉⲧⲟ{5} {6}",
-      "core_english": "within him, the First Man {7}her venom{8} {9}",
+      "core_coptic": "ⲛⲉ ⲛ̄ⲍⲏⲧϥ̄ ⲁ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ {2} ⲧⲉⲥⲙⲉⲧⲟ{3} {4}",
+      "core_english": "within him, the First Man {2}her venom{3} {4}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 3,
+          "section": 4412
+        },
+        {
+          "id": 3,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "",
+          "basis": "Completes ⲧⲉⲥⲙⲉⲧⲟⲩ 'her venom/poison' (cf. glossary ⲙⲉⲧⲟⲩ 'poison')",
+          "source_id": 4,
+          "section": 4412
+        },
+        {
+          "id": 4,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 5,
+          "section": 4412
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First envy: against ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ (First Man)"
     },
@@ -52,8 +103,28 @@
       "chapter": 73,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲥⲡⲟⲛⲏⲣⲓⲁ ⲁⲛⲉϩⲍⲃⲥⲁⲩ{10}{11}",
-      "core_english": "her wickedness onto his garment{12}{13}",
+      "core_coptic": "ⲧⲉⲥⲡⲟⲛⲏⲣⲓⲁ ⲁⲛⲉϩⲍⲃⲥⲁⲩ{5}{6}",
+      "core_english": "her wickedness onto his garment{5}{6}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "s",
+          "basis": "Completes ⲁⲛⲉϩⲍⲃⲥⲁⲩⲉ 'onto his garments'",
+          "source_id": 6,
+          "section": 4413
+        },
+        {
+          "id": 6,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 7,
+          "section": 4413
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of First Man / garment narrative"
     },
@@ -62,8 +133,18 @@
       "chapter": 73,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲥϣⲁⲧⲟⲩ ⲁⲥⲥⲁⲕⲟⲩ ⲛⲉⲥ{14}",
-      "core_english": "She cut them, she destroyed them, her {15}",
+      "core_coptic": "ⲁⲥϣⲁⲧⲟⲩ ⲁⲥⲥⲁⲕⲟⲩ ⲛⲉⲥ{7}",
+      "core_english": "She cut them, she destroyed them, her {7}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 8,
+          "section": 4414
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mythic action of Matter against First Man's elements"
     },
@@ -72,8 +153,20 @@
       "chapter": 73,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲧϣⲁⲣⲡ̄ ⲛ̄ⲍⲓⲕⲱⲛ ⲙⲡⲡⲣⲉⲥⲃⲉⲩⲧ{16}",
-      "core_english": "She envied the first icon of the Ambassador{17}",
+      "core_coptic": "ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲧϣⲁⲣⲡ̄ ⲛ̄ⲍⲓⲕⲱⲛ ⲙⲡⲡⲣⲉⲥⲃⲉⲩⲧ{8}",
+      "core_english": "She envied the first icon of the Ambassador{8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲏⲥ",
+          "english": "(of the) Ambassador",
+          "basis": "Editor's restoration completing ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ; Greek loanword πρεσβευτής (in glossary).",
+          "source_id": 9,
+          "section": 4415
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second envy: against the icon of ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ (Third Messenger)"
     },
@@ -82,8 +175,20 @@
       "chapter": 73,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲧⲁϩⲟⲩⲁⲛⲍⲥ ⲛⲉⲥ ⲁⲃⲁⲗ ⲍⲓ ⲡⲧⲭⲓⲥⲉ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡ̄{18}",
-      "core_english": "which was revealed to her forth from the Height that is in the upper plac{19}",
+      "core_coptic": "ⲧⲉⲧⲁϩⲟⲩⲁⲛⲍⲥ ⲛⲉⲥ ⲁⲃⲁⲗ ⲍⲓ ⲡⲧⲭⲓⲥⲉ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡ̄{9}",
+      "core_english": "which was revealed to her forth from the Height that is in the upper plac{9}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(upper) place",
+          "basis": "Editor's restoration completing ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' (in glossary).",
+          "source_id": 10,
+          "section": 4416
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic Height — substrate vertical geography"
     },
@@ -92,8 +197,30 @@
       "chapter": 73,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲡⲉϩⲉⲓⲛⲉ ⲉⲧⲁⲥⲓⲁⲣⲍϩ̄ ⲁⲥⲥⲙ̄ⲛ ⲡⲧⲁⲃⲉϩ ⲙⲛ ⲧⲍ{21}",
-      "core_english": "{22} his likeness, which she beheld; she set the imprint together with the {23}",
+      "core_coptic": "{10} ⲡⲉϩⲉⲓⲛⲉ ⲉⲧⲁⲥⲓⲁⲣⲍϩ̄ ⲁⲥⲥⲙ̄ⲛ ⲡⲧⲁⲃⲉϩ ⲙⲛ ⲧⲍ{11}",
+      "core_english": "{10} his likeness, which she beheld; she set the imprint together with the {11}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲍⲙ̄",
+          "english": "in",
+          "basis": "Editor's restoration of standard preposition ⲍⲙ̄/ϩⲙ̄ 'in.'",
+          "source_id": 11,
+          "section": 4417
+        },
+        {
+          "id": 11,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "(the i)con",
+          "basis": "Editor's restoration completing ⲍⲓⲕⲱⲛ 'icon' (Greek εἰκών).",
+          "source_id": 12,
+          "section": 4417
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Imprint/likeness — substrate mythological act"
     },
@@ -102,8 +229,20 @@
       "chapter": 73,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕⲱⲛ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲁⲥⲕⲱ ⲙⲡⲭⲁⲣⲁⲕⲧⲏⲣ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲉ{24}",
-      "core_english": "(i)con of the flesh. She placed the character of {25}at icon",
+      "core_coptic": "ⲕⲱⲛ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲁⲥⲕⲱ ⲙⲡⲭⲁⲣⲁⲕⲧⲏⲣ ⲛ̄ⲧⲍⲓⲕⲱⲛ ⲉ{12}",
+      "core_english": "(i)con of the flesh. She placed the character of {12}at icon",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲧⲙ",
+          "english": "tha(t)",
+          "basis": "Editor's restoration completing ⲉⲧⲙⲙⲉⲩ 'that, there.'",
+          "source_id": 13,
+          "section": 4418
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Icon of flesh / character of icon — correspondential substrate"
     },
@@ -114,6 +253,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲉⲩ ⲍⲛ̄ ⲧⲥⲁⲣⲝ̄ ⲡⲉⲥⲭⲡⲟ ⲙ̄ⲙⲓⲛ ⲙ̄ⲙⲁⲥ",
       "core_english": "in the flesh — her own very begetting.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Flesh as Matter's own begetting — substrate"
     },
@@ -122,8 +262,30 @@
       "chapter": 73,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26}ⲍϣⲁⲙⲧ ⲛⲥⲁⲡ ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲁⲁⲁⲙ ⲡϣⲁ{27}",
-      "core_english": "{28} time also she envied Adam, the fi{29}",
+      "core_coptic": "{13}ⲍϣⲁⲙⲧ ⲛⲥⲁⲡ ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲁⲁⲁⲙ ⲡϣⲁ{14}",
+      "core_english": "{13} time also she envied Adam, the fi{14}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲙⲁ",
+          "english": "The (third)",
+          "basis": "Editor's restoration of ordinal prefix ⲧⲧⲙⲁⲍ-, giving ⲧⲧⲙⲁⲍϣⲁⲙⲧ 'the third' (cf. glossary feminine ordinal series).",
+          "source_id": 14,
+          "section": 4420
+        },
+        {
+          "id": 14,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲣⲡ",
+          "english": "(fir)st",
+          "basis": "Editor's restoration completing ⲡϣⲁⲣⲡ 'the first.'",
+          "source_id": 15,
+          "section": 4420
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third envy enumeration: Adam — substrate enumeration marker preserved"
     },
@@ -132,8 +294,20 @@
       "chapter": 73,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{30}ⲙⲉ ⲁⲥⲧⲱⲣⲡ ⲛⲧⲟⲟⲧϥ̄ ⲛ̄ⲟⲩⲟ̄ⲁⲙ ⲁⲥⲭⲡⲁⲥ ⲍⲛ ⲟⲩ",
-      "core_english": "{31}n; she snatched a power from his hand. She begot her in a",
+      "core_coptic": "{15}ⲙⲉ ⲁⲥⲧⲱⲣⲡ ⲛⲧⲟⲟⲧϥ̄ ⲛ̄ⲟⲩⲟ̄ⲁⲙ ⲁⲥⲭⲡⲁⲥ ⲍⲛ ⲟⲩ",
+      "core_english": "{15}n; she snatched a power from his hand. She begot her in a",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲛⲣⲱ",
+          "english": "ma(n)",
+          "basis": "Editor's restoration completing ⲣⲱⲙⲉ 'man' (the line 6 'first' modifies 'first man').",
+          "source_id": 16,
+          "section": 4421
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mythic theft of power from Adam"
     },
@@ -142,8 +316,9 @@
       "chapter": 73,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32} ⲛⲁⲁⲁⲙ",
-      "core_english": "{33} of Adam.",
+      "core_coptic": "{16} ⲛⲁⲁⲁⲙ",
+      "core_english": "{16} of Adam.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of Adam narrative"
     },
@@ -152,8 +327,9 @@
       "chapter": 73,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲙⲁⲍϩⲧⲁⲩ ⲛⲥⲁⲡ {34}",
-      "core_english": "The fourth time {35}",
+      "core_coptic": "ⲡⲙⲁⲍϩⲧⲁⲩ ⲛⲥⲁⲡ {17}",
+      "core_english": "The fourth time {17}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth enumeration marker — substrate structure"
     },
@@ -162,8 +338,9 @@
       "chapter": 73,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36}ⲑⲟⲛ{37} ⲁⲛϣⲁ{38}ⲥⲉ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄ϣⲁⲣⲡ ⲛ̄{39}",
-      "core_english": "{40}{41} all the firstborn ones and the first {42}",
+      "core_coptic": "{18}ⲑⲟⲛ{19} ⲁⲛϣⲁ{20}ⲥⲉ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄ϣⲁⲣⲡ ⲛ̄{21}",
+      "core_english": "{18}{19} all the firstborn ones and the first {21}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth envy: against firstborn ones"
     },
@@ -172,8 +349,9 @@
       "chapter": 73,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{43}ⲉ ⲡⲭ̄ⲥ ⲡⲙⲁⲕⲁⲣⲓⲟⲥ ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ ⲡⲓⲱⲧ ⲛⲛ",
-      "core_english": "{44} the blessed Christ, who is the father of the",
+      "core_coptic": "{22}ⲉ ⲡⲭ̄ⲥ ⲡⲙⲁⲕⲁⲣⲓⲟⲥ ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ ⲡⲓⲱⲧ ⲛⲛ",
+      "core_english": "{22} the blessed Christ, who is the father of the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Christ in cosmic-paternal role within mythic enumeration; Manichaean Christ as cosmic figure here, substrate-internal"
     },
@@ -182,8 +360,9 @@
       "chapter": 73,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{45} ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲁϩ ⲍⲱϩ ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲧⲉ̄ϩ",
-      "core_english": "{46} all. She also envied his",
+      "core_coptic": "{23} ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲁϩ ⲍⲱϩ ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁⲧⲉ̄ϩ",
+      "core_english": "{23} all. She also envied his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of envy enumeration"
     },
@@ -192,8 +371,9 @@
       "chapter": 73,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{47} ⲡϣⲉ ⲙ̄ⲡⲥⲧⲁⲩⲣⲟⲥ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ {48}ⲓⲁ",
-      "core_english": "{49} the wood of the cross. She envied {50} (the fa)",
+      "core_coptic": "{24} ⲡϣⲉ ⲙ̄ⲡⲥⲧⲁⲩⲣⲟⲥ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ {25}ⲓⲁ",
+      "core_english": "{24} the wood of the cross. She envied {25} (the fa)",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Wood of cross — within mythic enumeration"
     },
@@ -202,8 +382,9 @@
       "chapter": 73,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{51}ⲓⲕⲁⲓⲟⲥⲩⲛⲏ ⲁⲥⲕⲱⲍ ⲁⲧ {52} ⲁⲣ̄",
-      "core_english": "{53} Righteousness; she was zealous against {54}...",
+      "core_coptic": "{26}ⲓⲕⲁⲓⲟⲥⲩⲛⲏ ⲁⲥⲕⲱⲍ ⲁⲧ {27} ⲁⲣ̄",
+      "core_english": "{26} Righteousness; she was zealous against {27}...",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Envy of Righteousness — substrate abstraction"
     },
@@ -212,8 +393,9 @@
       "chapter": 73,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{55}ⲥⲁⲩⲍⲥ̄ ⲧⲏⲣⲟⲩ ⲛ̄ⲕ{56} {57}ⲟⲩⲙⲉ̄{58} ⲁⲭⲱϩ",
-      "core_english": "{59}their entire gathering of {60}{61} their thought {62}, to penetrate",
+      "core_coptic": "{28}ⲥⲁⲩⲍⲥ̄ ⲧⲏⲣⲟⲩ ⲛ̄ⲕ{29} {30}ⲟⲩⲙⲉ̄{31} ⲁⲭⲱϩ",
+      "core_english": "{28}their entire gathering of {29}{30} their thought {31}, to penetrate",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation; gathering of cosmic envoys"
     },
@@ -222,8 +404,9 @@
       "chapter": 73,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{63}ⲛⲍⲏⲧⲟⲩ ⲙ̄ⲡⲧⲱⲕ ⲛ̄ⲍⲏⲧ ⲛ̄ⲧⲉⲥⲕⲁⲕⲓⲁ ⲁⲥⲃ{64} ⲙ̄",
-      "core_english": "{65} within them through the purpose-of-heart of her evil; she {66} them",
+      "core_coptic": "{32}ⲛⲍⲏⲧⲟⲩ ⲙ̄ⲡⲧⲱⲕ ⲛ̄ⲍⲏⲧ ⲛ̄ⲧⲉⲥⲕⲁⲕⲓⲁ ⲁⲥⲃ{33} ⲙ̄",
+      "core_english": "{32} within them through the purpose-of-heart of her evil; she {33} them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Purpose-of-heart of Matter's evil — substrate cosmic agency"
     },
@@ -232,8 +415,20 @@
       "chapter": 73,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲗⲏ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲟⲩ ⲫⲑⲟⲛⲟⲥ ⲡⲉ ⲡⲉⲓ̈ ⲛ̄ⲧⲉⲥⲕ{67}",
-      "core_english": "Matter, the enthumesis of Death. Envy — this is, of her wic{68}",
+      "core_coptic": "ⲗⲏ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲟⲩ ⲫⲑⲟⲛⲟⲥ ⲡⲉ ⲡⲉⲓ̈ ⲛ̄ⲧⲉⲥⲕ{34}",
+      "core_english": "Matter, the enthumesis of Death. Envy — this is, of her wic{34}",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 55,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "ked-",
+          "basis": "Editor's restoration completing ⲕⲁⲕⲓⲁ 'wickedness' across line break",
+          "source_id": 67,
+          "section": 4431
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate definition: Matter = ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙⲡⲙⲟⲩ (enthumesis of Death). Core ontological mapping."
     },
@@ -244,6 +439,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲓⲁ ⲡⲉⲧⲥⲛⲟⲩⲭⲉ ⲙ̄ⲙⲁϩ ⲁⲧⲣⲉⲓ̈ⲧⲉ ⲧⲏⲣⲥ̄ ⲛⲧⲉ ⲡⲱⲛⲍ̄",
       "core_english": "kedness — which casts him out from the entire kind of the Living One,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Function of envy: casting from kind of ⲡⲱⲛⲍ (Living One) — substrate cosmic action"
     },
@@ -254,6 +450,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲛ̄ ⲛ̄ⲧⲍⲟⲩⲓ̈ⲧⲉ ⲛ̄ⲧⲁⲣⲭⲏ",
       "core_english": "from the first of the beginning",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲩⲁⲍⲟⲩⲛ ⲁⲡⲁⲟⲩⲁⲓ̈ⲩ' / 'until today' — editorial bridge connecting substrate to editor's present (typical seam)",
       "temporal_note": "Seam segment: opens with substrate cosmic-temporal phrase, pivots to 'until today' which transitions to ecclesial frame"
     }

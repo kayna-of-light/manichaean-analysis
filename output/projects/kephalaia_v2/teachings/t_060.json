@@ -5,7 +5,7 @@
   "start_section": 3679,
   "end_section": 3712,
   "total_sections": 34,
-  "total_lacunae": 61,
+  "total_lacunae": 31,
   "segments": [
     {
       "section": 3679,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲁ ⲛⲍⲃⲥⲁⲩⲉ",
       "core_english": "The garments",
+      "apparatus": [],
       "removed_material": "Stripped 'Once again he said to his disciples' — pure dialogue-frame attribution.",
       "temporal_note": "Frame formula introduces substrate teaching about the weeping of the garments/sons."
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ϣⲏⲣⲉ ⲙ̄ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲣⲓⲙⲉ· ⲧⲟⲛⲱ ⲛϣⲁⲙⲧ ⲛ̄ⲥⲁⲡ",
       "core_english": "of the sons of the First Man wept; they raised up (their cry) three times,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man (ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ) — core cosmological figure; numbered weeping enumeration begins."
     },
@@ -34,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛⲛⲥⲱⲥ ⲁⲩⲕⲁⲣⲱⲩ· ⲟⲩⲛ̄ ⲕⲉⲙⲁⲍϩⲧⲁⲩ ⲛ̄ⲣⲓⲙⲉ",
       "core_english": "thereafter they fell silent. There is also another fourth weeping",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth-weeping ordinal introduced — substrate enumeration structure."
     },
@@ -44,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩⲁⲣⲓⲙⲉ ⲛⲍⲏⲧϥ̄ ⲁⲧⲍⲁⲏ· ⲛ̄ⲥⲉⲍⲣⲁⲕ ⲁⲃⲁⲗ ⲙ̄ⲡⲟⲩⲣⲓⲙⲉ",
       "core_english": "in which they shall weep at the end, and they shall be stilled from their weeping,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eschatological cosmology, internal to the system."
     },
@@ -54,6 +58,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲥⲉⲧⲙ̄ⲛⲁⲩⲍⲟⲩ ⲁⲣⲓⲙⲉ ⲭⲛ̄ ⲙ̄ⲡⲓⲛⲉⲩ",
       "core_english": "and they shall not see them weeping again from this hour onward.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the four-weeping enumeration introduction."
     },
@@ -64,6 +69,18 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲧϣⲁⲣⲡ ⲟⲩⲛ ⲣⲓⲙⲉ ⲉⲧⲁⲩⲣⲓⲙⲉ ⲛⲍⲏⲧϥ̄ ⲡⲉ ⲡⲥⲁ{0}",
       "core_english": "Now the first weeping in which they wept is the time",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "(end of ⲥⲁⲡ)",
+          "basis": "Editor restoration; ⲡⲥⲁⲡ 'the time' (cf. accumulated vocabulary)",
+          "source_id": 0,
+          "section": 3684
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Begins the first item of the enumeration: 'The first weeping...'"
     },
@@ -74,6 +91,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲁⲩⲛⲉⲩ ⲁⲡⲕⲉⲕⲉ ⲡⲧⲭⲁⲭⲉ ⲉϩⲁϣⲉ ⲁⲡⲁⲟⲉ ⲟⲩⲃⲏⲩ",
       "core_english": "when they saw the Darkness, the Enemy, hanging extended at a distance against them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Darkness as cosmic Enemy — substrate cosmogony of the first confrontation."
     },
@@ -84,6 +102,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲙ̄ⲙⲉ ⲁⲍⲱⲃ ⲛⲓⲙ ⲉⲧⲛⲁⲧⲉⲍⲁⲩ· ⲁⲩⲣ̄ⲁⲓⲥⲫⲁⲛⲉ ⲁ",
       "core_english": "They knew every matter that would befall them; they perceived",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic foreknowledge of the sons before descent."
     },
@@ -93,7 +112,19 @@
       "line": 11,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲧⲛⲁⲛⲉⲍⲥⲉ ⲁⲣⲁⲩ· ⲛϥ̄ⲉⲓ ⲁⲭⲱⲩ ⲁⲃⲁⲗ ⲍⲓⲧⲟⲟⲧϥ̄ {1}",
-      "core_english": "what would rise up against them, and would come upon them through him. {2}",
+      "core_english": "what would rise up against them, and would come upon them through him. {1}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲁⲗ",
+          "english": "But—",
+          "basis": "Editor restoration; ⲁⲗⲗⲁ 'but' opening the contrastive clause continued in line 33",
+          "source_id": 1,
+          "section": 3687
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues internal cosmic narration."
     },
@@ -102,8 +133,30 @@
       "chapter": 59,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲗⲁ ⲉⲧⲃⲉ ⲧⲁⲛⲁⲅⲕⲏ ⲁⲩⲍⲁϣⲟⲩ ⲁⲍⲟⲩⲛ ⲁ{3}ⲁϩ {4}",
-      "core_english": "-but on account of the Necessity, they hastened in unto {5}him; {6}",
+      "core_coptic": "ⲗⲁ ⲉⲧⲃⲉ ⲧⲁⲛⲁⲅⲕⲏ ⲁⲩⲍⲁϣⲟⲩ ⲁⲍⲟⲩⲛ ⲁ{2}ⲁϩ {3}",
+      "core_english": "-but on account of the Necessity, they hastened in unto {2}him; {3}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "(in ⲁⲣⲁϩ)",
+          "basis": "Editor restoration completing ⲁⲣⲁϩ 'unto him'",
+          "source_id": 2,
+          "section": 3688
+        },
+        {
+          "id": 3,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲁⲩⲙⲓϣⲉ",
+          "english": "they fought",
+          "basis": "Editor restoration; ⲙⲓϣⲉ 'fight' is the natural verb completing the action of running into the Darkness, parallel to the kephalaion's martial-cosmogonic context",
+          "source_id": 3,
+          "section": 3688
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Necessity (ⲁⲛⲁⲅⲕⲏ) — substrate cosmological term for the descent compulsion."
     },
@@ -112,8 +165,30 @@
       "chapter": 59,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{7} ⲡⲥⲁⲧⲧ ⲉⲧⲉⲣⲉ ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛⲁⲃⲱⲕ {8}",
-      "core_english": "{9}, the chosen [moment] in which the Andrias shall go {10},",
+      "core_coptic": "{4} ⲡⲥⲁⲧⲧ ⲉⲧⲉⲣⲉ ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛⲁⲃⲱⲕ {5}",
+      "core_english": "{4}, the chosen [moment] in which the Andrias shall go {5},",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙⲙⲉⲩ",
+          "english": "that",
+          "basis": "Standard demonstrative; only ⲉⲧ bracketed, ⲙⲙⲉⲩ visible",
+          "source_id": 4,
+          "section": 3689
+        },
+        {
+          "id": 5,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲁϩⲣⲏⲓ̈",
+          "english": "upward",
+          "basis": "Standard Lyc directional with ⲃⲱⲕ; idiom ⲃⲱⲕ ⲁϩⲣⲏⲓ̈ 'go up'",
+          "source_id": 5,
+          "section": 3689
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Andrias (ⲡⲁⲛⲇⲣⲉⲓⲁⲥ) — core cosmological figure of the eschatological statue."
     },
@@ -122,8 +197,40 @@
       "chapter": 59,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{11} {12} ⲥⲉⲛⲁⲣⲓⲙⲉ ⲭⲉ {13} ⲁ",
-      "core_english": "{14} {15}; they shall weep, for {16} to",
+      "core_coptic": "{6} {7} ⲥⲉⲛⲁⲣⲓⲙⲉ ⲭⲉ {8} ⲁ",
+      "core_english": "{6} {7}; they shall weep, for {8} to",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲛⲥⲉⲕⲁⲁⲩ",
+          "english": "and they shall leave them",
+          "basis": "Conjunctive ⲛⲥⲉ + ⲕⲁⲁⲩ; only ⲛ̄ⲥ bracketed",
+          "source_id": 6,
+          "section": 3690
+        },
+        {
+          "id": 7,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁϩⲉⲧⲟⲩ",
+          "english": "by themselves alone",
+          "basis": "Standard ⲟⲩⲁⲉⲉⲧ⸗ 'alone' with 3pl suffix; only ⲧ bracketed",
+          "source_id": 7,
+          "section": 3690
+        },
+        {
+          "id": 8,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲥⲉⲛⲁⲥⲱⲭⲡ̄",
+          "english": "they shall remain",
+          "basis": "ⲥⲱϫⲡ̄ 'remain, be left behind'; only ⲡ bracketed",
+          "source_id": 8,
+          "section": 3690
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued cosmological weeping discourse."
     },
@@ -132,8 +239,30 @@
       "chapter": 59,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{17} ϩⲛ̄ ⲧⲫⲗⲓⲯⲓⲥ ⲱⲁ ⲁⲛⲏϩⲉ ⲉⲡⲉⲓⲁⲏ {18}",
-      "core_english": "{19} in the affliction forever, since {20}",
+      "core_coptic": "{9} ϩⲛ̄ ⲧⲫⲗⲓⲯⲓⲥ ⲱⲁ ⲁⲛⲏϩⲉ ⲉⲡⲉⲓⲁⲏ {10}",
+      "core_english": "{9} in the affliction forever, since {10}",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲡⲁϩⲟⲩ",
+          "english": "behind",
+          "basis": "Completes idiom ⲥⲱⲭⲡ ⲁⲡⲁϩⲟⲩ 'be left behind'; only ⲡⲁ bracketed",
+          "source_id": 9,
+          "section": 3691
+        },
+        {
+          "id": 10,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲥⲉⲛⲁⲱⲁⲧⲟⲩ",
+          "english": "they shall be cut off",
+          "basis": "Verb ⲱⲁⲧ 'cut off' as in ll.11, 21; bracketed [ⲁⲱⲁⲧ] continues into l.4 [ⲟⲩ]",
+          "source_id": 10,
+          "section": 3691
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Eschatological torment of bound souls — internal cosmic structure."
     },
@@ -142,8 +271,30 @@
       "chapter": 59,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{21} ⲛ̄ⲥⲉⲡⲁⲣⲭⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛ̄ϩⲁⲉ {22}",
-      "core_english": "{23}, and they shall be separated forth from the Last Andrias {24}",
+      "core_coptic": "{11} ⲛ̄ⲥⲉⲡⲁⲣⲭⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛ̄ϩⲁⲉ {12}",
+      "core_english": "{11}, and they shall be separated forth from the Last Andrias {12}",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "(them)",
+          "basis": "3pl object suffix completing ⲱⲁⲧⲟⲩ from l.3",
+          "source_id": 11,
+          "section": 3692
+        },
+        {
+          "id": 12,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲉⲓ̈ⲧⲟ",
+          "english": "of this manner",
+          "basis": "Lyc ⲛⲧⲉⲓϩⲉ-like demonstrative phrase; bracket [ⲉⲓ̈ⲧ] inside, completion -ⲩ in l.5",
+          "source_id": 12,
+          "section": 3692
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Last Andrias — substrate eschatological structure."
     },
@@ -152,8 +303,20 @@
       "chapter": 59,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{25} ⲁⲩⲁⲛⲁⲅⲕⲏ ⲛⲭⲓ ⲛⲓⲯⲩⲭⲁⲩⲉ ⲉⲧⲥⲃ̄ⲧⲁⲓ̈ⲧ ⲁⲡⲥⲱⲣⲙⲉ",
-      "core_english": "{26} — by a necessity, namely the souls who are prepared for the Error,",
+      "core_coptic": "{13} ⲁⲩⲁⲛⲁⲅⲕⲏ ⲛⲭⲓ ⲛⲓⲯⲩⲭⲁⲩⲉ ⲉⲧⲥⲃ̄ⲧⲁⲓ̈ⲧ ⲁⲡⲥⲱⲣⲙⲉ",
+      "core_english": "{13} — by a necessity, namely the souls who are prepared for the Error,",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "(suffix)",
+          "basis": "Completes -ⲟⲩ of ⲛⲧⲉⲓⲧⲟⲩ from l.4",
+          "source_id": 13,
+          "section": 3693
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Souls/Error — Necessity is cosmic, Error is the cosmic going-astray of souls."
     },
@@ -162,8 +325,30 @@
       "chapter": 59,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{27} ⲧⲱⲃ̄ⲓⲱ ⲛⲛ̄ϩⲃⲏⲩⲉ ⲉⲧⲁⲩⲉⲓ̈ⲧⲟⲩ ⲛⲉⲧⲛⲁ {28}",
-      "core_english": "{29} the recompense of the works which they have done. Those who shall enter {30}",
+      "core_coptic": "{14} ⲧⲱⲃ̄ⲓⲱ ⲛⲛ̄ϩⲃⲏⲩⲉ ⲉⲧⲁⲩⲉⲓ̈ⲧⲟⲩ ⲛⲉⲧⲛⲁ {15}",
+      "core_english": "{14} the recompense of the works which they have done. Those who shall enter {15}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲕⲁⲧⲁ",
+          "english": "according to",
+          "basis": "Greek loan κατά; only ⲕⲁⲧ bracketed",
+          "source_id": 14,
+          "section": 3694
+        },
+        {
+          "id": 15,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲁϩⲟⲩⲛ ⲁⲡ",
+          "english": "into the",
+          "basis": "Standard ⲁϩⲟⲩⲛ ⲁ- 'into'; bracket [ⲛ ⲁ] completes ⲁϩⲟⲩⲛ ⲁⲡ-, continues into l.7 ⲕⲉⲕⲉ",
+          "source_id": 15,
+          "section": 3694
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic recompense within the system."
     },
@@ -172,8 +357,20 @@
       "chapter": 59,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{31} ⲛ̄ⲥⲉⲙⲁⲣⲟⲩ ⲙⲛ̄ ⲡⲕⲉⲕⲉ ⲧϩⲉ ⲉⲧⲁⲩⲉⲡⲓⲑⲩⲙⲓ ⲁⲣⲁϩ",
-      "core_english": "{32}, and they shall be bound with the Darkness — in the manner that they desired toward it,",
+      "core_coptic": "{16} ⲛ̄ⲥⲉⲙⲁⲣⲟⲩ ⲙⲛ̄ ⲡⲕⲉⲕⲉ ⲧϩⲉ ⲉⲧⲁⲩⲉⲡⲓⲑⲩⲙⲓ ⲁⲣⲁϩ",
+      "core_english": "{16}, and they shall be bound with the Darkness — in the manner that they desired toward it,",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲕⲉⲕⲉ",
+          "english": "Darkness",
+          "basis": "Cosmological term; only ⲕⲉⲕ bracketed",
+          "source_id": 16,
+          "section": 3695
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Final binding of souls with Darkness — internal cosmic outcome."
     },
@@ -182,8 +379,40 @@
       "chapter": 59,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{33}ⲙⲉⲣⲓⲧⲩ̄ ⲁⲩⲕⲁ {34} ϩⲁⲧⲏϩ ϩⲛ̄ ⲧⲟⲩⲛⲟⲩ {35}",
-      "core_english": "{36} loved it, set {37} before it, hour by {38},",
+      "core_coptic": "{17}ⲙⲉⲣⲓⲧⲩ̄ ⲁⲩⲕⲁ {18} ϩⲁⲧⲏϩ ϩⲛ̄ ⲧⲟⲩⲛⲟⲩ {19}",
+      "core_english": "{17} loved it, set {18} before it, hour by {19},",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲁⲩ",
+          "english": "they",
+          "basis": "Perfect 3pl ⲁⲩ-; only ⲩ bracketed",
+          "source_id": 17,
+          "section": 3696
+        },
+        {
+          "id": 18,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲡⲟⲩⲉϩⲟ",
+          "english": "their face",
+          "basis": "Standard idiom ⲕⲱ ⲡⲟⲩϩⲟ ϩⲁⲧⲏ⸗ 'set their face toward'; only ⲡ bracketed",
+          "source_id": 18,
+          "section": 3696
+        },
+        {
+          "id": 19,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲧⲟⲩⲛⲟⲩ",
+          "english": "hour",
+          "basis": "Reduplicated ⲧⲟⲩⲛⲟⲩ ⲧⲟⲩⲛⲟⲩ 'hour by hour, continually'; only ⲛ bracketed in second instance",
+          "source_id": 19,
+          "section": 3696
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continued internal narration."
     },
@@ -192,8 +421,40 @@
       "chapter": 59,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{39} ⲉⲧⲉⲣⲉ ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛ̄ϩⲁⲉ ⲛⲁ {40} {41}",
-      "core_english": "{42}, in which the Last Andrias shall go {43} {44}.",
+      "core_coptic": "{20} ⲉⲧⲉⲣⲉ ⲡⲁⲛⲇⲣⲉⲓⲁⲥ ⲛ̄ϩⲁⲉ ⲛⲁ {21} {22}",
+      "core_english": "{20}, in which the Last Andrias shall go {21} {22}.",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙⲙⲉⲩ",
+          "english": "that",
+          "basis": "Demonstrative; only ⲧⲙ̄ bracketed",
+          "source_id": 20,
+          "section": 3697
+        },
+        {
+          "id": 21,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲁϩⲣⲏⲓ̈",
+          "english": "upward",
+          "basis": "Directional; only ⲣ bracketed",
+          "source_id": 21,
+          "section": 3697
+        },
+        {
+          "id": 22,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲛϩⲏⲧⲥ̄",
+          "english": "in it",
+          "basis": "Preposition ϩⲛ̄ + 3sg.f suffix; only ⲧⲥ̄ bracketed",
+          "source_id": 22,
+          "section": 3697
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Last Andrias going — eschatological substrate event."
     },
@@ -202,8 +463,20 @@
       "chapter": 59,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{45} ⲙⲛⲛ̄ⲥⲱϩ ⲛ̄ⲥⲉⲧ ⲟⲩⲛⲁⲟ̄ ⲛ̄ϩⲣⲁⲩ ⲭⲉ ⲥⲉⲛⲁ",
-      "core_english": "{46} after him, and they shall give a great voice, for they shall",
+      "core_coptic": "{23} ⲙⲛⲛ̄ⲥⲱϩ ⲛ̄ⲥⲉⲧ ⲟⲩⲛⲁⲟ̄ ⲛ̄ϩⲣⲁⲩ ⲭⲉ ⲥⲉⲛⲁ",
+      "core_english": "{23} after him, and they shall give a great voice, for they shall",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲥⲉⲛⲁⲣⲓⲙⲉ",
+          "english": "they shall weep",
+          "basis": "Future + verb; only ⲉⲛ bracketed",
+          "source_id": 23,
+          "section": 3698
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Great voice of bound souls — internal eschatology."
     },
@@ -214,6 +487,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱⲁⲁⲧⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲁⲟⲩⲏⲧ ⲙ̄ⲡⲓⲛⲁⲟ̄ ⲛⲁⲛⲇⲣⲉⲓⲁⲥ ⲛⲥⲉ",
       "core_english": "be cut off from the unity of this great Andrias and they shall",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cut off from unity of Andrias — substrate."
     },
@@ -222,8 +496,19 @@
       "chapter": 59,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲱⲭⲡ̄ ⲁⲡⲁϩⲟⲩ ⲱⲁ ⲁⲛⲏϩⲉ ⲡⲓⲛⲁⲟ̄ ⲛⲣⲓⲙⲉ ⲛ{47}ⲡ ⲉ",
-      "core_english": "remain behind forever. This great weeping of {48}p who",
+      "core_coptic": "ⲥⲱⲭⲡ̄ ⲁⲡⲁϩⲟⲩ ⲱⲁ ⲁⲛⲏϩⲉ ⲡⲓⲛⲁⲟ̄ ⲛⲣⲓⲙⲉ ⲛ{24}ⲡ ⲉ",
+      "core_english": "remain behind forever. This great weeping of {24}p who",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "between ⲛ and ⲡ",
+          "source_id": 24,
+          "section": 3700
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Great weeping introduces the elements' weeping description."
     },
@@ -232,8 +517,28 @@
       "chapter": 59,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲟⲩⲁϩⲉ ϩⲱⲟⲡⲧ ϩⲓⲧⲉϩⲏ ⲛⲙ̄ⲯⲩⲭⲁⲩⲉ ⲙⲛ ⲙ{49} ⲛ̄{50}",
-      "core_english": "stand hidden before the souls and m{51} of n{52}",
+      "core_coptic": "ⲧⲟⲩⲁϩⲉ ϩⲱⲟⲡⲧ ϩⲓⲧⲉϩⲏ ⲛⲙ̄ⲯⲩⲭⲁⲩⲉ ⲙⲛ ⲙ{25} ⲛ̄{26}",
+      "core_english": "stand hidden before the souls and m{25} of n{26}",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "after ⲙ",
+          "source_id": 25,
+          "section": 3701
+        },
+        {
+          "id": 26,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "after ⲛ̄",
+          "source_id": 26,
+          "section": 3701
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic agents standing before souls — substrate."
     },
@@ -242,8 +547,20 @@
       "chapter": 59,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲥⲃ̄ⲧⲁⲓ̈ⲧ ⲁⲡⲥⲱⲣⲙⲉ ⲕⲁⲧⲁ ⲛⲟⲩϩⲃⲏⲩⲉ {53} ⲁⲉ",
-      "core_english": "who are prepared for the Error according to their works. {54}, but",
+      "core_coptic": "ⲉⲧⲥⲃ̄ⲧⲁⲓ̈ⲧ ⲁⲡⲥⲱⲣⲙⲉ ⲕⲁⲧⲁ ⲛⲟⲩϩⲃⲏⲩⲉ {27} ⲁⲉ",
+      "core_english": "who are prepared for the Error according to their works. {27}, but",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲉⲩⲛⲁⲣⲓⲙⲉ",
+          "english": "they shall weep",
+          "basis": "Future circumstantial; only ⲛⲁ bracketed",
+          "source_id": 27,
+          "section": 3702
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Souls prepared for Error — substrate."
     },
@@ -254,6 +571,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲙ̄ ⲡⲓⲣⲓⲙⲉ ⲉⲧⲙ̄ⲙⲉⲩ ⲥⲉⲛⲁⲕⲁⲣⲱⲩ ⲁⲃⲁⲗ ⲛϩⲏⲧⲩ̄ ⲉⲛ ⲁ",
       "core_english": "in that weeping they shall not be silenced from it for",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eternal eschatological weeping — substrate."
     },
@@ -264,6 +582,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲏϩⲉ ⲉⲡⲉⲓⲁⲏ ⲙⲛ̄ ⲙ̄ⲧⲁⲛ ⲛⲁⲧⲉϩⲁⲩ ⲭⲛ ⲙⲡⲓⲛⲉⲩ",
       "core_english": "ever, since no rest shall reach them from this moment.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate eschatology continues."
     },
@@ -274,6 +593,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲧⲁⲩ ⲁⲉ ϩⲱⲱⲩ ⲛ̄ϩⲃⲥⲁⲩⲉ ⲛ̄ⲧⲉ ⲛⲓⲥⲧⲟⲓⲭⲉⲓⲟⲛ ⲛⲉ ⲡⲓⲙⲁϩ",
       "core_english": "But they themselves — the firmaments of the elements — they are the fourth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Firmaments of the elements (ⲛⲓⲥⲧⲟⲓⲭⲉⲓⲟⲛ) — central cosmological identification, the title-figure of the chapter."
     },
@@ -284,6 +604,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲧⲁⲩ ⲛ̄ⲣⲓⲙⲉ ⲟ ⲙⲡⲱⲱ ⲛ̄ϩⲏⲧ ⲁⲣⲁⲩ ϩⲛ̄ⲁⲱⲧ̄ ⲛⲁϩⲣⲉⲩ ⲛ̄",
       "core_english": "fourth weeping, being grieved at heart over them with lamentation before them, more",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth weeping enumerated — substrate."
     },
@@ -292,8 +613,20 @@
       "chapter": 59,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϩⲟⲩⲟ ⲁⲡⲓⲕⲉⲱⲁⲙⲧ ⲛ̄ⲣⲓⲙⲉ ⲛ̄ⲱⲁⲣⲡⲧ ⲡⲱⲩ ⲉⲛ ⲡⲉ {55}",
-      "core_english": "than the other three first weepings; theirs is not {56}",
+      "core_coptic": "ϩⲟⲩⲟ ⲁⲡⲓⲕⲉⲱⲁⲙⲧ ⲛ̄ⲣⲓⲙⲉ ⲛ̄ⲱⲁⲣⲡⲧ ⲡⲱⲩ ⲉⲛ ⲡⲉ {28}",
+      "core_english": "than the other three first weepings; theirs is not {28}",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲡⲓⲙⲁϩ",
+          "english": "the",
+          "basis": "Demonstrative + ordinal-prefix beginning ⲡⲓⲙⲁϩϩⲧⲁⲩ 'the fourth'; only final ϩ bracketed (at line end before [ϩⲧ]ⲁⲩ in l.20)",
+          "source_id": 28,
+          "section": 3707
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Comparison to first three weepings — completes the four-fold structure."
     },
@@ -302,8 +635,30 @@
       "chapter": 59,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "{57} ⲛ̄ⲣⲓⲙⲉ ⲁⲗⲗⲁ ⲉⲩⲣⲓⲙⲉ ⲉⲩⲡⲏⲱ ⲛ̄ϩⲏⲧ ϩⲁ ⲛⲓ{58}",
-      "core_english": "{59} weeping, but they weep being grieved at heart over the {60}",
+      "core_coptic": "{29} ⲛ̄ⲣⲓⲙⲉ ⲁⲗⲗⲁ ⲉⲩⲣⲓⲙⲉ ⲉⲩⲡⲏⲱ ⲛ̄ϩⲏⲧ ϩⲁ ⲛⲓ{30}",
+      "core_english": "{29} weeping, but they weep being grieved at heart over the {30}",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ϩⲧⲁⲩ",
+          "english": "fourth",
+          "basis": "Lyc ⲡⲓⲙⲁϩϩⲧⲁⲩ 'the fourth' — completes the ordinal across line break",
+          "source_id": 29,
+          "section": 3708
+        },
+        {
+          "id": 30,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲯⲩⲭⲁⲩⲉ",
+          "english": "souls",
+          "basis": "Standard plural ⲯⲩⲭⲁⲩⲉ; only ⲉ bracketed",
+          "source_id": 30,
+          "section": 3708
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continues elements' weeping description."
     },
@@ -314,6 +669,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲧⲟⲩⲛⲁⲱⲁⲧⲟⲩ ⲁⲃⲁⲗ ⲙ̄ⲡⲙⲧⲁⲛ ⲉⲡⲉⲓⲁⲏ ⲙⲛ̄ ⲙ̄ⲧⲁⲛ ⲛⲁ",
       "core_english": "who shall be cut off from the rest, since no rest shall",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Souls cut off from cosmic rest — substrate."
     },
@@ -324,6 +680,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱⲱⲡⲉ ⲛⲉⲩ ⲁⲧⲣⲟⲩⲙ̄ⲧⲁⲛ ⲙ̄ⲙⲁⲩ ⲁⲃⲁⲗ ⲛ̄ⲧⲃⲁⲥⲁⲛⲟⲥ ⲱⲁ",
       "core_english": "come to be for them that they may rest there, away from the torment, for",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eternal torment — internal eschatological state."
     },
@@ -334,6 +691,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲛⲏϩⲉ",
       "core_english": "ever.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closes the cosmological four-weeping teaching."
     },
@@ -344,6 +702,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲧⲗⲁⲓ̈ⲟ̄ⲉ ⲣⲱ ⲛ̄ⲧϩⲁⲏ ⲛ̄ⲧⲟ̄ⲓⲛ̄ⲥⲱⲣⲙⲉ ⲛ̄ⲙ̄ⲯⲩ",
       "core_english": "And the cause indeed of the last going-astray of the souls",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Bridge segment: still names the cosmic 'last going-astray of souls' (substrate concept), but pivots into apostolic-biographical material in i=37ff."
     }

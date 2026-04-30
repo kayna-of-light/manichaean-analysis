@@ -5,7 +5,7 @@
   "start_section": 453,
   "end_section": 473,
   "total_sections": 21,
-  "total_lacunae": 14,
+  "total_lacunae": 7,
   "segments": [
     {
       "section": 453,
@@ -13,7 +13,28 @@
       "line": 4,
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲛ̄ⲧⲁⲣⲉ ⲓⲏⲥ ⲡϣⲏⲣⲉ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ {0} ⲁⲛⲓⲕⲟⲥⲙⲟ{1}",
-      "core_english": "When Jesus the Son of the Greatness {2} to the world{3},",
+      "core_english": "When Jesus the Son of the Greatness {0} to the world{1},",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲉⲓ",
+          "english": "came",
+          "basis": "Editor restoration [ⲉⲓ] = 'came' — required main verb for the temporal clause 'when Jesus the Son of the Greatness [came] to the worlds'",
+          "source_id": 1,
+          "section": 453
+        },
+        {
+          "id": 1,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": "ⲥ",
+          "source_id": 2,
+          "section": 453
+        }
+      ],
       "removed_material": "Stripped 'ⲉⲍⲏ, ⲭⲉ' / 'him, saying:' as dialogue attribution.",
       "temporal_note": "Cosmic descent narrative wrapped in dialogue frame."
     },
@@ -22,8 +43,20 @@
       "chapter": 8,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲡⲥⲏⲩ ⲉⲧⲁϩⲟⲱⲗⲡ̄ ⲁⲃⲁⲗ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ {4}",
-      "core_english": "at the time when he was disclosed of the Greatness, {5}",
+      "core_coptic": "ⲙ̄ⲡⲥⲏⲩ ⲉⲧⲁϩⲟⲱⲗⲡ̄ ⲁⲃⲁⲗ ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ {2}",
+      "core_english": "at the time when he was disclosed of the Greatness, {2}",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁϩⲧⲉⲗⲟ ⲁⲙⲏⲧ",
+          "english": "he mounted upon (four)",
+          "basis": "Editor restoration — verb ⲁϩⲧⲉⲗⲟ 'he mounted' demanded by chapter title and following 'mounts.' Reading ⲁⲙⲏⲧ uncertain; contextually a numeral or directional",
+          "source_id": 3,
+          "section": 454
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic descent narrative."
     },
@@ -32,8 +65,20 @@
       "chapter": 8,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ. ⲁϩⲙⲁⲍⲉ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ {6}",
-      "core_english": "mounts. He walked in the world {7}.",
+      "core_coptic": "ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ. ⲁϩⲙⲁⲍⲉ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ {3}",
+      "core_english": "mounts. He walked in the world {3}.",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲍⲏⲧⲟⲩ",
+          "english": "in them",
+          "basis": "Editor restoration [ⲛⲍⲏⲧⲟⲩ] = ⲛ̄ⲍⲏⲧⲟⲩ 'in them' — completes the sentence 'he walked in the world in them (i.e. in the mounts)'",
+          "source_id": 4,
+          "section": 455
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Introduces enumeration."
     },
@@ -42,8 +87,20 @@
       "chapter": 8,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲧϣⲁⲣⲡ̄ ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ ⲡⲉ ⲡⲭⲁⲓ ⲛ̄ⲟⲩⲁⲓⲛ{8}",
-      "core_english": "The first mount is the vessel of light, {9}",
+      "core_coptic": "ⲧⲧϣⲁⲣⲡ̄ ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ ⲡⲉ ⲡⲭⲁⲓ ⲛ̄ⲟⲩⲁⲓⲛ{4}",
+      "core_english": "The first mount is the vessel of light, {4}",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲉ ⲉⲡⲉⲓⲁⲏ ⲛ̄",
+          "english": "since",
+          "basis": "Editor restoration [ⲉⲡⲉⲓⲁⲏ ⲛ̄] = ἐπειδή + relative — the causal connector linking the first mount to the receipt of commandments in the next line",
+          "source_id": 5,
+          "section": 456
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First enumerated mount — substrate enumeration begins."
     },
@@ -52,8 +109,20 @@
       "chapter": 8,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁϩⲭⲓ ⲉⲛⲧⲟⲗⲏ ⲛ̄ⲧⲛ̄ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ {10}",
-      "core_english": "he received commandments from the Ambassador {11}.",
+      "core_coptic": "ⲧⲁϩⲭⲓ ⲉⲛⲧⲟⲗⲏ ⲛ̄ⲧⲛ̄ ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ {5}",
+      "core_english": "he received commandments from the Ambassador {5}.",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲍⲏⲧϩ̄",
+          "english": "in it",
+          "basis": "Editor restoration [ⲛⲍⲏⲧϩ̄] = ⲛ̄ⲍⲏⲧϥ̄ 'in it' (i.e. in the vessel of light) — completes 'he received commandments from the Ambassador in it'",
+          "source_id": 6,
+          "section": 457
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ambassador (ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ) is core substrate marker — Third Messenger figure."
     },
@@ -64,6 +133,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩⲥⲛⲉⲩ ⲛϩⲁⲣⲙⲁ ⲡⲉ ⲡⲧⲭⲁⲓ̈ ⲙⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉⲡⲉⲓ-",
       "core_english": "The second chariot is the abode of the First Man, since",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second mount — First Man (ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ) is core cosmic figure."
     },
@@ -74,6 +144,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲏ ⲧⲉϩⲥⲕⲏⲛⲏ ⲥⲙⲁⲛⲧ ⲛ̄ϩⲏⲧϥ",
       "core_english": "the tabernacle is established in him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of second mount."
     },
@@ -84,6 +155,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩϣⲁⲙⲧ ⲡⲉ ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ ⲡⲣⲱⲙⲉ ⲉⲧⲭⲏⲕ ⲁⲃⲁⲗ ⲉⲡⲉⲓ-",
       "core_english": "The third is the Pillar of Glory, the Man who is perfect, since",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third mount — Pillar of Glory is canonical substrate cosmic figure."
     },
@@ -94,6 +166,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲏ ⲛⲧⲁϥⲡⲓⲉ ⲛϩⲏⲧϥ̄ ⲁϥⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁϥⲟⲩⲱⲛϩ ⲁⲃⲁⲗ ϩⲙ ⲡⲕⲟ-",
       "core_english": "he shone forth in him, came down, was made manifest in the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation."
     },
@@ -104,6 +177,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲙⲟⲥ ⲧⲧⲙⲁϩϩⲧⲁⲩ ⲡⲉ ⲡⲧⲱϩⲙⲉ ⲉⲧⲁϥⲣ̄ⲫⲟⲣⲉ ⲙⲙⲁϥ",
       "core_english": "world. The fourth is the Call that he wore",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth mount — Call (ⲡⲧⲱϩⲙⲉ), classic Manichaean cosmic principle."
     },
@@ -114,6 +188,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲭⲙ̄ ⲡⲉϥⲥⲱⲙⲁ ⲧⲧⲙⲁϩⲧⲟⲩ ⲡⲉ ⲡⲥⲱⲧⲙⲉ ⲉⲧⲁϥⲃⲁⲗⲉϥ",
       "core_english": "upon his body. The fifth is the Answer that he donned",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fifth mount — Answer paired with Call."
     },
@@ -124,6 +199,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲭⲙ ⲡⲧⲱϩⲙⲉ ⲧⲧⲙⲁϩⲥⲁⲩ ⲡⲉ ⲡⲁⲏⲣ ⲉⲧⲁⲛϩ̄ ⲉⲡⲉⲓⲁⲏ ⲛ̄-",
       "core_english": "upon the Call. The sixth is the living Air; since",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sixth mount — element series begins."
     },
@@ -134,6 +210,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁϥ ϩⲱϥ ⲁⲛ ⲁϥⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲙⲁϥ ⲁϥⲭⲓⲧⲱϩⲥ̄ ⲛϩⲏⲧϥ",
       "core_english": "he himself also wore him, he received anointing in him.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of sixth."
     },
@@ -144,6 +221,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲧⲙⲁϩⲥⲁϣϥ̄ ⲡⲉ ⲡⲧⲏⲩ ⲉⲧⲁⲛϩ̄ ⲉⲧⲛⲓϥⲉ ⲧⲧⲙⲁϩϣⲙⲟⲩⲛ",
       "core_english": "The seventh is the living Wind that breathes. The eighth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seventh and eighth mounts — element correspondences."
     },
@@ -154,6 +232,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲉⲧⲡⲣⲟⲩⲁⲓ̈ⲛⲉ ⲧⲧⲙⲁϩⲡⲥⲧⲓⲥ ⲡⲉ ⲡⲙⲁⲩ ⲉ-",
       "core_english": "is the Light that radiates light. The ninth is the Water that",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eighth and ninth mounts."
     },
@@ -164,6 +243,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲛϩ̄ ⲧⲧⲙⲁϩⲙⲏⲧ ⲡⲉ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛϩ̄ ⲉⲧⲛ̄ⲡⲡⲉ ⲙ̄ⲙⲁⲩ ⲧⲏⲣⲟⲩ",
       "core_english": "lives. The tenth is the Fire that lives, that is mingled in them all.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Tenth mount completes the elemental series — five-element cosmology embedded."
     },
@@ -174,6 +254,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉϥⲙⲁϩⲉ ⲡⲉ ϩⲙ̄ ⲡⲓⲙⲏⲧ ⲛ̄ϩⲁⲣⲙⲁ ϩⲛ ⲛϩⲱⲣⲃ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄-",
       "core_english": "His walking is in this ten of chariots, in all the forms and in the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Summation of the ten — closes the substrate enumeration cleanly."
     },
@@ -182,8 +263,18 @@
       "chapter": 8,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{12}ⲟⲩⲉ ⲧⲏⲣⲟⲩ ⲛⲁⲧⲡⲉ ⲙⲛ̄ ⲛⲁⲡⲓⲧⲛⲉ",
-      "core_english": "{13}, all those of above and those of below.",
+      "core_coptic": "{6}ⲟⲩⲉ ⲧⲏⲣⲟⲩ ⲛⲁⲧⲡⲉ ⲙⲛ̄ ⲛⲁⲡⲓⲧⲛⲉ",
+      "core_english": "{6}, all those of above and those of below.",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 7,
+          "section": 470
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic above/below totality — substrate closure."
     },
@@ -194,6 +285,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲓ̈ⲛⲛⲥⲁ ⲧⲣⲉϥⲣ̄ⲫⲟⲣⲉ ⲙ̄ⲡⲓⲙⲏⲧ ⲁϥⲉⲓ ⲁϥⲃⲱⲗⲡ ⲁⲃⲁⲗ ϩⲛ ⲧ-",
       "core_english": "After he wore this ten, he came, he was unveiled in the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Bridge from ten cosmic mounts to flesh — still cosmological descent voice. The transition begins here but content remains substrate-cosmic."
     },
@@ -204,6 +296,7 @@
       "classification": "mixed",
       "core_coptic": "ⲡⲓⲙⲏⲧ ⲛ̄ϩⲁⲣ-",
       "core_english": "This ten of char-",
+      "apparatus": [],
       "removed_material": "Removed 'ⲙⲉⲛⲏ ⲛ̄ϣⲏⲣⲉ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲙⲛ̄ ⲧⲙⲏⲉ' / 'ae, the daughters of the Light and of the Truth' (closes the ecclesial fourth).",
       "temporal_note": "Ecclesial close runs into a return to the cosmic ten summary."
     },
@@ -214,6 +307,7 @@
       "classification": "mixed",
       "core_coptic": "ⲙⲁ ⲉⲧⲁϥⲧⲉⲗⲟ ⲁⲣⲁⲩ ϩ̄ⲛ ⲧⲍⲱⲛⲏ",
       "core_english": "iots upon which he mounted in the Girdle,",
+      "apparatus": [],
       "removed_material": "Removed 'ⲙⲛ ⲡⲕⲉϥⲧⲁⲩ ⲉⲧϩ̄ⲛ ⲧⲥⲁⲣⲝ̄' / 'with the other four that are in the flesh' — the ecclesial supplement.",
       "temporal_note": "Returns to substrate ten + Girdle (cosmic), with editorial addition of the four-in-flesh."
     }

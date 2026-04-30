@@ -5,7 +5,7 @@
   "start_section": 576,
   "end_section": 599,
   "total_sections": 24,
-  "total_lacunae": 56,
+  "total_lacunae": 28,
   "segments": [
     {
       "section": 576,
@@ -13,7 +13,29 @@
       "line": 6,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲧⲛⲟⲓ̈ ⲛⲉⲁⲩ ⲛ̄ⲧⲱⲧⲛ̄ ⲡⲙⲛ̄ⲧⲉⲩ̈ⲧⲉ ⲛⲛⲁⲟ̄ ⲛ{0}ⲓⲱⲛ ⲛ̄ⲧⲉ ⲡ{1}",
-      "core_english": "You are glorious, you the Twelve Great {2}ons of the {3}",
+      "core_english": "You are glorious, you the Twelve Great {0}ons of the {1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "Ae",
+          "basis": "Editor restoration in ⲛ[ⲁ]ⲓⲱⲛ 'Aeons.'",
+          "source_id": 10,
+          "section": 576
+        },
+        {
+          "id": 1,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁⲓ̈",
+          "english": "Light",
+          "basis": "Editor restoration completing ⲡ[ⲟⲩⲁⲓ̈](ⲛⲉ) 'the Light'; the ⲛⲉ is preserved at line 31 start.",
+          "source_id": 11,
+          "section": 576
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Quoted prayer of Sethel addressing the Twelve Great Aeons of Light — cosmological invocation, the substrate content the chapter is unpacking."
     },
@@ -22,8 +44,30 @@
       "chapter": 10,
       "line": 7,
       "classification": "mixed",
-      "core_coptic": "ϩⲛ̄ⲉⲩ ⲛⲉ ⲡ{4}ⲛ̄ⲧⲉⲩ̈ⲧⲉ ⲛ̄ⲛⲁ{5}",
-      "core_english": "what are the Twel{6}ve Gre{7}t",
+      "core_coptic": "ϩⲛ̄ⲉⲩ ⲛⲉ ⲡ{2}ⲛ̄ⲧⲉⲩ̈ⲧⲉ ⲛ̄ⲛⲁ{3}",
+      "core_english": "what are the Twel{2}ve Gre{3}t",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "lve",
+          "basis": "Editor restoration in ⲡ[ⲙ]ⲛ̄ⲧⲉⲩ̈ⲧⲉ 'twelve.'",
+          "source_id": 12,
+          "section": 577
+        },
+        {
+          "id": 3,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲟ̄",
+          "english": "a",
+          "basis": "Editor restoration completing ⲛⲁ[ⲟ̄] 'great.'",
+          "source_id": 13,
+          "section": 577
+        }
+      ],
       "removed_material": "Stripped 'Tell us, our Lord' frame request; preserved the substantive cosmological question about the Twelve Great Aeons.",
       "temporal_note": "Substantive cosmological question wrapped in dialogue frame."
     },
@@ -32,8 +76,20 @@
       "chapter": 10,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{8}ⲓⲱⲛ ⲛⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ",
-      "core_english": "{9}ons of the Light.",
+      "core_coptic": "{4}ⲓⲱⲛ ⲛⲧⲉ ⲡⲟⲩⲁⲓ̈ⲛⲉ",
+      "core_english": "{4}ons of the Light.",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲛⲁ",
+          "english": "Ae",
+          "basis": "Editor restoration completing [ⲛⲁ]ⲓⲱⲛ 'Aeons.'",
+          "source_id": 14,
+          "section": 578
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Completion of the question: 'Aeons of the Light' — cosmological topic."
     },
@@ -42,8 +98,28 @@
       "chapter": 10,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲡⲓ̈ⲧⲛⲉ ⲁⲍⲉ ⲁⲣⲉⲧⲩ̄ ⲍⲙ̄ ⲙⲛⲧⲉϩⲧⲉ ⲛ{11}",
-      "core_english": "{12} the lower one stands at the foremost of the {13}",
+      "core_coptic": "{5} ⲡⲓ̈ⲧⲛⲉ ⲁⲍⲉ ⲁⲣⲉⲧⲩ̄ ⲍⲙ̄ ⲙⲛⲧⲉϩⲧⲉ ⲛ{6}",
+      "core_english": "{5} the lower one stands at the foremost of the {6}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 21,
+          "section": 579
+        },
+        {
+          "id": 6,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲟ̄ ⲛ̄ⲁⲓⲱⲛ",
+          "english": "great Aeons",
+          "basis": "Editor restoration; visible -ⲱⲛ at end of bracketed portion confirms ⲁⲓⲱⲛ; ⲛⲁⲟ̄ standard Lyc. plural ⲛⲁϭ before ⲛ̄.",
+          "source_id": 22,
+          "section": 579
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Teaching begins: positional cosmology — 'stands at the foremost of'. Structural-impersonal voice."
     },
@@ -52,8 +128,20 @@
       "chapter": 10,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲓⲭⲉⲱⲛ ⲛ̄ⲱϩⲣⲉ ⲙ̄ⲡⲱⲁⲣⲡ",
-      "core_english": "{15} elements that dwell of the First",
+      "core_coptic": "{7} ⲓⲭⲉⲱⲛ ⲛ̄ⲱϩⲣⲉ ⲙ̄ⲡⲱⲁⲣⲡ",
+      "core_english": "{7} elements that dwell of the First",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "[ . . . . . . ⲡⲧⲟⲩ ⲛ̄ⲥⲧⲟ]",
+          "english": "the five elem-",
+          "basis": "Editor restoration of approx 7 chars before visible ⲓⲭⲉⲱⲛ; standard Manichaean phrase ⲡⲧⲟⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲱⲛ 'the five elements' (= the five Light Sons of First Man).",
+          "source_id": 23,
+          "section": 580
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Elements / First [Man] — substrate cosmology."
     },
@@ -64,6 +152,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲣⲱⲙⲉ ⲁⲍⲁⲛ ⲡⲧⲱⲍⲙⲉ ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲉⲩⲧⲁⲍⲥ ⲁⲣⲁⲩ",
       "core_english": "Man. Likewise the Calling and the Hearing — they are joined to them,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First Man + Calling and Hearing (Tōzme/Sōtme) — classic substrate cosmological pairing within the system."
     },
@@ -74,6 +163,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩⲟⲩⲛⲍ ⲛ̄ⲍⲏⲧⲟⲩ ⲱⲁⲣⲉ ⲛⲉⲓ̈ ⲣ̄ ⲥⲁⲱϩ ⲡⲧⲟⲩ ⲙⲛ̄ ⲡⲥⲛⲉⲩ",
       "core_english": "being manifest within them. These become seven — the five with the two.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Numerical cosmology: five + two = seven. Substrate enumeration."
     },
@@ -82,8 +172,19 @@
       "chapter": 10,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16} ⲱϩⲣⲉ ⲛⲉ ⲙ̄ⲡⲛⲉⲩⲙⲁ ⲉⲧⲁⲛⲍ̄ ⲉⲧ",
-      "core_english": "{17} are dwelling of the Living Spirit who",
+      "core_coptic": "{8} ⲱϩⲣⲉ ⲛⲉ ⲙ̄ⲡⲛⲉⲩⲙⲁ ⲉⲧⲁⲛⲍ̄ ⲉⲧ",
+      "core_english": "{8} are dwelling of the Living Spirit who",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 13,
+          "partial": "[.]ⲕⲏ[. . . . . . . .] ⲧ . .",
+          "source_id": 24,
+          "section": 583
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit (Pneuma Etanḥ) — cosmic agent within the substrate."
     },
@@ -92,8 +193,20 @@
       "chapter": 10,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18} ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲁⲍⲁⲛ ⲡⲡⲛ̅ⲁ̅",
-      "core_english": "{19} all of the cosmos. Likewise the Spirit",
+      "core_coptic": "{9} ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲁⲍⲁⲛ ⲡⲡⲛ̅ⲁ̅",
+      "core_english": "{9} all of the cosmos. Likewise the Spirit",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲭⲁⲩⲗⲉ ⲍⲁ ⲛ̄ⲍⲣⲏⲱⲉ",
+          "english": "bears under the burdens",
+          "basis": "Editor restoration; ⲭⲁⲩⲗⲉ ⲍⲁ ⲛⲍⲣⲏⲱⲉ 'bear under the burdens' is the Pillar-of-Glory's standard activity, fitting context.",
+          "source_id": 25,
+          "section": 584
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmos-Spirit correspondence."
     },
@@ -102,8 +215,20 @@
       "chapter": 10,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲛ̄ⲣⲱⲙⲉ ⲛ̄ⲟⲩⲗⲁⲧⲉ ⲛⲉ ⲛⲉ ⲡⲙⲛⲧⲉϩ",
-      "core_english": "{21} Man — they are one (single thing). It is the foremost",
+      "core_coptic": "{10} ⲛ̄ⲣⲱⲙⲉ ⲛ̄ⲟⲩⲗⲁⲧⲉ ⲛⲉ ⲛⲉ ⲡⲙⲛⲧⲉϩ",
+      "core_english": "{10} Man — they are one (single thing). It is the foremost",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲁⲛⲍ̄ ⲙⲛ̄ ⲡⲱⲁⲣⲡ",
+          "english": "the Living, with the First",
+          "basis": "Editor restoration; ⲡⲡⲛ̅ⲁ̅ ⲉⲧⲁⲛⲍ̄ 'the Living Spirit' standard pairing with First Man.",
+          "source_id": 26,
+          "section": 585
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Identification of First Man as one entity — substrate."
     },
@@ -112,8 +237,20 @@
       "chapter": 10,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉ ⲛ̄ⲥ{22}ⲧⲉⲟⲩⲁⲩ ⲡⲥⲙⲁⲙⲉ ⲉⲧⲟ ⲙ̄ⲙⲛⲧⲉϩⲧⲉ ⲙ̄",
-      "core_english": "of {23} unto them. The blessing which is foremost of",
+      "core_coptic": "ⲧⲉ ⲛ̄ⲥ{11}ⲧⲉⲟⲩⲁⲩ ⲡⲥⲙⲁⲙⲉ ⲉⲧⲟ ⲙ̄ⲙⲛⲧⲉϩⲧⲉ ⲙ̄",
+      "core_english": "of {11} unto them. The blessing which is foremost of",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲙⲁⲙⲉ ⲉⲧⲁϩ",
+          "english": "the blessing which is set",
+          "basis": "Editor restoration completing ⲥⲙⲁⲙⲉ; ⲉⲧⲁϩ- relative perfect prefix.",
+          "source_id": 27,
+          "section": 586
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of structural-positional cosmology."
     },
@@ -122,8 +259,19 @@
       "chapter": 10,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲣⲟⲥ{24} ⲉⲧⲉ ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲕ ⲁⲣⲉⲧϩ̄ ⲛ̄ⲍⲏⲧⲩ̄",
-      "core_english": "pros{25}, which is the cosmos established firm in him.",
+      "core_coptic": "ⲡⲣⲟⲥ{12} ⲉⲧⲉ ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲕ ⲁⲣⲉⲧϩ̄ ⲛ̄ⲍⲏⲧⲩ̄",
+      "core_english": "pros{12}, which is the cosmos established firm in him.",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 21,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲡⲣⲟⲥ-",
+          "source_id": 28,
+          "section": 587
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmos established in the cosmic agent — substrate."
     },
@@ -132,8 +280,30 @@
       "chapter": 10,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26} ⲛ̄ⲧⲉ ⲡⲟⲩⲁ{27}",
-      "core_english": "{28} of the Lig{29}",
+      "core_coptic": "{13} ⲛ̄ⲧⲉ ⲡⲟⲩⲁ{14}",
+      "core_english": "{13} of the Lig{14}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "[ . . . . ⲡⲙⲛⲧⲉϩⲧⲉ ⲛ̄ⲁⲓ]ⲱⲛ",
+          "english": "[the foremost of the Aeo]ns",
+          "basis": "Editor restoration; ⲡⲙⲛⲧⲉϩⲧⲉ ⲛ̄ⲁⲓⲱⲛ parallels ⲙⲛⲧⲉϩⲧⲉ in lines 1, 7-8.",
+          "source_id": 29,
+          "section": 588
+        },
+        {
+          "id": 14,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "[ⲓ̈ⲛⲉ . . . . .]",
+          "english": "[ht ...]",
+          "basis": "Editor restores -ⲓⲛⲉ completing ⲟⲩⲁⲓⲛⲉ 'light'; subsequent ~5 chars lost.",
+          "source_id": 30,
+          "section": 588
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'of the Light' — substrate cosmology, heavily damaged."
     },
@@ -142,8 +312,20 @@
       "chapter": 10,
       "line": 23,
       "classification": "mixed",
-      "core_coptic": "ⲍⲙ̄ ⲡⲉϩⲱⲗⲏⲛ ⲭⲉ ⲁⲩⲃⲁ{30}ⲟⲩ",
-      "core_english": "in his struggle, that they were rele{31}ased",
+      "core_coptic": "ⲍⲙ̄ ⲡⲉϩⲱⲗⲏⲛ ⲭⲉ ⲁⲩⲃⲁ{15}ⲟⲩ",
+      "core_english": "in his struggle, that they were rele{15}ased",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲗ",
+          "english": "",
+          "basis": "ⲃⲁⲗⲟⲩ 'they were released'; the ⲗ is editor-restored.",
+          "source_id": 32,
+          "section": 589
+        }
+      ],
       "removed_material": "Stripped 'of Seth, on their account' — citation reference back to the Sethel prayer frame; preserved the substantive cosmological action of release-through-struggle.",
       "temporal_note": "Mix of citation reference (Sethel) and substantive cosmological description of release/struggle (the Living Spirit's redemptive work)."
     },
@@ -152,8 +334,28 @@
       "chapter": 10,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32} ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲛ ⲁ ⲧⲭⲱⲣⲁ {33}",
-      "core_english": "{34} which is not manifest, into the region {35}",
+      "core_coptic": "{16} ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲛ ⲁ ⲧⲭⲱⲣⲁ {17}",
+      "core_english": "{16} which is not manifest, into the region {17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "[ . . . . ] ⲧⲭⲱⲣⲁ",
+          "english": "[...] the region",
+          "basis": "Editor restores ⲧⲭⲱⲣⲁ; preceding ~4 chars lost.",
+          "source_id": 33,
+          "section": 590
+        },
+        {
+          "id": 17,
+          "segment": 24,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 34,
+          "section": 590
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'the region not manifest' — cosmic geography."
     },
@@ -162,8 +364,28 @@
       "chapter": 10,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36} ⲁⲍⲣⲏⲓ̈ ⲍⲁ ⲡⲭⲁⲭⲉ {37}",
-      "core_english": "{38} up against the Enemy {39}",
+      "core_coptic": "{18} ⲁⲍⲣⲏⲓ̈ ⲍⲁ ⲡⲭⲁⲭⲉ {19}",
+      "core_english": "{18} up against the Enemy {19}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "[ . . . . ⲧⲱⲕ ⲁ]ⲣⲉⲧⲟⲩ ⲁⲩⲃⲱⲕ",
+          "english": "[...stand fast]; they went",
+          "basis": "Editor restores ⲧⲱⲕ ⲁⲣⲉⲧⲟⲩ idiom 'stand firm' and completes ⲁⲩⲃⲱⲕ from visible ⲁⲩⲃ-.",
+          "source_id": 35,
+          "section": 591
+        },
+        {
+          "id": 19,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 36,
+          "section": 591
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The Enemy (Darkness) — cosmic adversary, substrate."
     },
@@ -172,8 +394,28 @@
       "chapter": 10,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{40} ⲛⲉⲩ ⲡⲙⲁⲍⲁⲓ̈ⲡⲧⲉ ⲉⲧⲍⲏⲡ ⲉⲧ {41}",
-      "core_english": "{42} to them, the hidden chamber which {43}",
+      "core_coptic": "{20} ⲛⲉⲩ ⲡⲙⲁⲍⲁⲓ̈ⲡⲧⲉ ⲉⲧⲍⲏⲡ ⲉⲧ {21}",
+      "core_english": "{20} to them, the hidden chamber which {21}",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "[ . . . . . ⲧⲱⲃ]ⲓ̈ⲱ",
+          "english": "[... to render?]",
+          "basis": "Editor restores -ⲧⲱⲃⲓⲱ; sense 'to render/repay/restore' (ⲧⲱⲱⲃⲉ); identification of compound ⲡⲙⲁⲍⲁⲓⲡⲧⲉ ('hidden chamber/repository?') is uncertain.",
+          "source_id": 37,
+          "section": 592
+        },
+        {
+          "id": 21,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 38,
+          "section": 592
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Hidden chamber' — cosmic locus, substrate."
     },
@@ -182,8 +424,27 @@
       "chapter": 10,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲉⲧⲁϩⲉ ⲁⲃⲁⲗ ⲙ̄ⲡⲓ̈ⲱⲧ ⲡ{45}",
-      "core_english": "{46} the Ambassador, the one who came forth from the Father, the {47}",
+      "core_coptic": "{22} ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲉⲧⲁϩⲉ ⲁⲃⲁⲗ ⲙ̄ⲡⲓ̈ⲱⲧ ⲡ{23}",
+      "core_english": "{22} the Ambassador, the one who came forth from the Father, the {23}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "[ ] . . . ",
+          "source_id": 39,
+          "section": 593
+        },
+        {
+          "id": 23,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 40,
+          "section": 593
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Presbeutēs (the Third Messenger) — core substrate marker."
     },
@@ -192,8 +453,28 @@
       "chapter": 10,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{48} ⲁϩⲉ ⲁϩⲧⲱⲕ ⲁⲣⲉⲧϩ̄ ⲍⲛ̄ ⲧⲙⲏⲧⲉ ⲛ̄ⲛⲉⲓ̈ {49}",
-      "core_english": "{50} he came and stood firm in the midst of these {51}",
+      "core_coptic": "{24} ⲁϩⲉ ⲁϩⲧⲱⲕ ⲁⲣⲉⲧϩ̄ ⲍⲛ̄ ⲧⲙⲏⲧⲉ ⲛ̄ⲛⲉⲓ̈ {25}",
+      "core_english": "{24} he came and stood firm in the midst of these {25}",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "[ . . . . ⲁϩⲉ]",
+          "english": "[... he came/stood]",
+          "basis": "Editor restores ⲁϩⲉ; preceding ~4 chars lost. Likely the subject (Ambassador?) coming forth and standing.",
+          "source_id": 41,
+          "section": 594
+        },
+        {
+          "id": 25,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 42,
+          "section": 594
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic stationing of the Ambassador — substrate."
     },
@@ -202,8 +483,20 @@
       "chapter": 10,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ ⲭⲉ ⲡⲓ̈ⲱⲧ ⲉⲧⲁⲛⲓⲧ ⲛ̄ⲛⲁ{52}",
-      "core_english": "they call him 'the beautiful Father of all the Aeons {53}'",
+      "core_coptic": "ⲉⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ ⲭⲉ ⲡⲓ̈ⲱⲧ ⲉⲧⲁⲛⲓⲧ ⲛ̄ⲛⲁ{26}",
+      "core_english": "they call him 'the beautiful Father of all the Aeons {26}'",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲓⲱⲛ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄ⲛⲟⲩⲧⲉ",
+          "english": "and the gods",
+          "basis": "Editor restoration; standard formula 'all the Aeons and the gods' parallels lines 17-18 context.",
+          "source_id": 43,
+          "section": 595
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Naming of the cosmic Father — substrate epithet."
     },
@@ -214,6 +507,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲧⲟⲩⲁⲃⲉ ⲙⲛ̄ ⲛⲉⲧⲧⲏⲧ ⲁ-ϩⲱⲱⲡⲉ ⲛ̄ⲁⲣⲭⲏⲅⲟⲥ ⲙⲛ̄ ⲟⲩ",
       "core_english": "the holy ones, with those joined to become leaders and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'Holy ones' here are cosmic Aeon-leaders (archēgoi), not ecclesial figures — both sides remain within the cosmic system."
     },
@@ -224,6 +518,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲟ̄ ⲛ̄ⲣ̄ⲣⲟ ⲁⲡⲓ̈ⲛⲉ ⲙ̄ⲡⲱⲁⲣⲡ ⲛ̄ⲓ̈ⲱⲧ ⲡⲭⲁⲓ̈ⲥ ⲛ̄ⲛⲓ̈ⲥⲩ",
       "core_english": "great kings in the likeness of the First Father, the Lord of the coun-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Great Kings in the likeness of the First Father — pure correspondential cosmology."
     },
@@ -234,6 +529,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲛ̄ⲧⲁⲩⲭⲱⲗⲭ ⲡⲓ̈ⲕⲟⲥⲙⲟⲥ ⲍⲙ̄ ⲡⲓ̈ⲱⲕ ⲛ̄ⲍⲏⲧ",
       "core_english": "sels — all those who fashioned this cosmos in this purpose of heart",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmogonic act: the kings/counselors fashion the cosmos — substrate."
     },
@@ -242,8 +538,18 @@
       "chapter": 10,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{54} ⲁⲧⲍⲁⲏ ⲛ̄ⲛ̄ⲍⲃⲏⲩⲉ ⲧⲏⲣⲟⲩ",
-      "core_english": "{55} unto the end of all the works.",
+      "core_coptic": "{27} ⲁⲧⲍⲁⲏ ⲛ̄ⲛ̄ⲍⲃⲏⲩⲉ ⲧⲏⲣⲟⲩ",
+      "core_english": "{27} unto the end of all the works.",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 44,
+          "section": 599
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closure of the cosmogonic teaching — 'end of all the works'."
     }

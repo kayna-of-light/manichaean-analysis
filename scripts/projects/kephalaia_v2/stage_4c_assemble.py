@@ -12,7 +12,8 @@ No LLM calls — pure data assembly.
 
 Input:
   - output/projects/kephalaia_v2/teaching_index.json
-  - output/projects/kephalaia_v2/core/p_NNN.json
+    - output/projects/kephalaia_v2/core/ch_NNN.json
+    - output/projects/kephalaia_v2/chapters/ch_NNN.json
 
 Output:
   - output/projects/kephalaia_v2/teachings/t_NNN.json
@@ -34,6 +35,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 PROJECT_DIR = REPO_ROOT / "output" / "projects" / "kephalaia_v2"
 CORE_DIR = PROJECT_DIR / "core"
+CHAPTERS_DIR = PROJECT_DIR / "chapters"
 TEACHINGS_DIR = PROJECT_DIR / "teachings"
 INDEX_PATH = PROJECT_DIR / "teaching_index.json"
 
@@ -65,6 +67,19 @@ def load_core_chapters() -> dict[int, dict]:
     return chapters
 
 
+def load_source_chapters() -> dict[int, dict]:
+    """Load assembled chapter JSONs, including lines and apparatus."""
+    chapters = {}
+    for path in sorted(CHAPTERS_DIR.glob("ch_*.json")):
+        m = re.match(r"ch_(\d+)\.json", path.name)
+        if not m:
+            continue
+        with open(path, encoding="utf-8") as f:
+            data = json.load(f)
+        chapters[int(m.group(1))] = data
+    return chapters
+
+
 # ---------------------------------------------------------------------------
 # Lacuna renumbering
 # ---------------------------------------------------------------------------
@@ -72,31 +87,59 @@ def load_core_chapters() -> dict[int, dict]:
 LACUNA_RE = re.compile(r"\{(\d+)\}")
 
 
-def renumber_lacunae(segments: list[dict], start_from: int = 0) -> tuple[list[dict], int]:
-    """Renumber all {N} lacuna markers sequentially across segments.
+def renumber_lacunae(
+    segments: list[dict],
+    start_from: int = 0,
+) -> tuple[list[dict], int]:
+    """Renumber lacuna markers sequentially across a teaching.
 
-    Returns (updated_segments, next_available_number).
-    Operates on core_coptic and core_english fields.
+    Coptic, English, and apparatus must share the same new ID for the
+    same physical gap. Original IDs are only unique inside a chapter, so
+    the mapping key is (chapter, old_id).
     """
     counter = start_from
     result = []
+    marker_map: dict[tuple[int, int], int] = {}
+
+    def get_new_id(chapter: int, old_id: int) -> int:
+        nonlocal counter
+        key = (chapter, old_id)
+        if key not in marker_map:
+            marker_map[key] = counter
+            counter += 1
+        return marker_map[key]
 
     for seg in segments:
         new_seg = dict(seg)  # shallow copy
+        chapter = int(new_seg.get("chapter", -1))
+        segment_marker_ids: set[int] = set()
 
         for field in ("core_coptic", "core_english"):
             text = new_seg.get(field)
             if not text:
                 continue
 
-            # Find all {N} in order, replace with new sequential numbers
             def replace_lacuna(match):
-                nonlocal counter
-                replacement = f"{{{counter}}}"
-                counter += 1
-                return replacement
+                old_id = int(match.group(1))
+                segment_marker_ids.add(old_id)
+                return f"{{{get_new_id(chapter, old_id)}}}"
 
             new_seg[field] = LACUNA_RE.sub(replace_lacuna, text)
+
+        updated_apparatus = []
+        for entry in new_seg.get("apparatus", []):
+            old_id = entry.get("id")
+            if old_id is None or int(old_id) not in segment_marker_ids:
+                continue
+            updated = dict(entry)
+            updated["source_id"] = old_id
+            updated["id"] = marker_map[(chapter, int(old_id))]
+            updated["section"] = new_seg.get("section")
+            updated_apparatus.append(updated)
+        new_seg["apparatus"] = sorted(
+            updated_apparatus,
+            key=lambda item: item["id"],
+        )
 
         result.append(new_seg)
 
@@ -112,6 +155,7 @@ def gather_teaching_segments(
     teachings: list[dict],
     section_map: list[dict],
     core_chapters: dict[int, dict],
+    source_chapters: dict[int, dict],
 ) -> list[dict]:
     """Gather all segments for a teaching from core chapter files.
 
@@ -133,6 +177,13 @@ def gather_teaching_segments(
         line_idx = map_entry["line"]
 
         chapter_data = core_chapters.get(chapter_num)
+        source_chapter = source_chapters.get(chapter_num, {})
+        apparatus_by_segment: dict[int, list[dict]] = {}
+        for entry in source_chapter.get("apparatus", []):
+            segment = entry.get("segment")
+            if isinstance(segment, int):
+                apparatus_by_segment.setdefault(segment, []).append(entry)
+
         if not chapter_data:
             segments.append({
                 "section": sec_num,
@@ -141,6 +192,7 @@ def gather_teaching_segments(
                 "classification": None,
                 "core_coptic": None,
                 "core_english": None,
+                "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": None,
                 "temporal_note": None,
             })
@@ -156,6 +208,7 @@ def gather_teaching_segments(
                 "classification": seg.get("classification"),
                 "core_coptic": seg.get("core_coptic"),
                 "core_english": seg.get("core_english"),
+                "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": seg.get("removed_material"),
                 "temporal_note": seg.get("temporal_note"),
             })
@@ -168,6 +221,7 @@ def gather_teaching_segments(
                 "classification": None,
                 "core_coptic": None,
                 "core_english": None,
+                "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": None,
                 "temporal_note": None,
             })
@@ -214,6 +268,7 @@ def main() -> None:
     print("  Group core segments by teaching, renumber lacunae")
     print(f"  Input:  {INDEX_PATH}")
     print(f"          {CORE_DIR}")
+    print(f"          {CHAPTERS_DIR}")
     print(f"  Output: {TEACHINGS_DIR}")
 
     # Load teaching index
@@ -225,13 +280,17 @@ def main() -> None:
 
     # Load core chapters
     core_chapters = load_core_chapters()
+    source_chapters = load_source_chapters()
     print(f"  Core chapters loaded: {len(core_chapters)}")
+    print(f"  Source chapters loaded: {len(source_chapters)}")
 
     if args.dry_run:
         # Show what would be produced
         print(f"\n[DRY RUN] Would write {len(teachings)} files to {TEACHINGS_DIR}/")
         for i, t in enumerate(teachings[:5]):
-            segs = gather_teaching_segments(i, teachings, section_map, core_chapters)
+            segs = gather_teaching_segments(
+                i, teachings, section_map, core_chapters, source_chapters
+            )
             _, lacunae = renumber_lacunae(segs)
             print(f"  t_{i+1:03d}.json — §{t['section']:>4d} — {len(segs):>3d} sections, "
                   f"{lacunae:>3d} lacunae — {t['title'][:50]}")
@@ -245,7 +304,9 @@ def main() -> None:
     # Assemble each teaching
     total_lacunae = 0
     for i, teaching_entry in enumerate(teachings):
-        segments = gather_teaching_segments(i, teachings, section_map, core_chapters)
+        segments = gather_teaching_segments(
+            i, teachings, section_map, core_chapters, source_chapters
+        )
         result = assemble_teaching(i + 1, teaching_entry, segments)
         total_lacunae += result["total_lacunae"]
 

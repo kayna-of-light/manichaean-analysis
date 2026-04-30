@@ -5,7 +5,7 @@
   "start_section": 4152,
   "end_section": 4328,
   "total_sections": 177,
-  "total_lacunae": 174,
+  "total_lacunae": 89,
   "segments": [
     {
       "section": 4152,
@@ -14,6 +14,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲉⲣⲉ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϥ̄ ⲡⲥⲁⲛⲧⲧⲧⲉ ⲙⲛ̄",
       "core_english": "This whole cosmos, the upper side and",
+      "apparatus": [],
       "removed_material": "Strip 'he said to his disciples' — apostolic dialogue attribution.",
       "temporal_note": "Frame attribution wraps the opening cosmological proposition."
     },
@@ -23,7 +24,29 @@
       "line": 7,
       "classification": "cosmological_substrate",
       "core_coptic": "{0}ⲥⲁⲙⲡⲓⲧⲛⲉ {1}ⲟⲡ ⲁⲍⲣⲙ̄ ⲡⲓⲛⲉ ⲙⲡⲥⲱⲙⲁ ⲙ̄ⲡⲣⲱ",
-      "core_english": "the {2}lower side, ex{3}ists with respect to the likeness of the body of the man,",
+      "core_english": "the {0}lower side, ex{1}ists with respect to the likeness of the body of the man,",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restoration of definite article ⲡ in [ⲡ]ⲥⲁⲙⲡⲓⲧⲛⲉ 'the lower side.'",
+          "source_id": 2,
+          "section": 4153
+        },
+        {
+          "id": 1,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ϣⲟ",
+          "english": "ex",
+          "basis": "Editor restoration of [ϣⲟ]ⲟⲡ 'exists' (qualitative of ϣⲱⲡⲉ).",
+          "source_id": 3,
+          "section": 4153
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Opening thesis of microcosmic correspondence."
     },
@@ -32,8 +55,20 @@
       "chapter": 70,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{4}ⲟⲩⲟⲩⲛⲕ ⲙ̄ⲡⲓⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲁ",
-      "core_english": "{5}formation of this body of the flesh ...",
+      "core_coptic": "{2}ⲟⲩⲟⲩⲛⲕ ⲙ̄ⲡⲓⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲁ",
+      "core_english": "{2}formation of this body of the flesh ...",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲙⲉ ⲉⲣⲉ ⲡⲙ",
+          "english": "while the",
+          "basis": "Editor restoration completing ⲡⲣⲱ-[ⲙⲉ] 'man' across line break, plus circumstantial ⲉⲣⲉ ⲡⲙ[ⲟⲩⲟⲩⲛⲕ] 'while the [formation].'",
+          "source_id": 4,
+          "section": 4154
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic/body fusion statement."
     },
@@ -44,6 +79,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲣⲛ̄ ⲡⲓⲛⲉ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ ⲉⲣⲉ ⲧⲉϩⲁⲡⲉ ϣⲟⲟⲡ ⲁⲡⲉⲓⲛⲉ",
       "core_english": "In the likeness of the cosmos: his head exists according to the likeness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Body-cosmos mapping begins: head."
     },
@@ -54,6 +90,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲧⲁⲡⲁⲣⲭⲏ ⲛ̄ⲧϯⲉ ⲛϩⲃⲥⲱ ⲭⲛ̄ ⲙ̄ⲡⲉϩⲙⲟⲩⲧ ⲁⲉ ⲍⲱⲱϩ",
       "core_english": "of the firstfruit of the five garments. From his neck again,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Head→firstfruit of five garments."
     },
@@ -64,6 +101,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲡⲓⲧⲛⲉ ϣⲁ ⲡⲙⲁ ⲙ̄ⲡⲉϩⲍⲏⲧ ⲉϩⲧⲛ̄ⲧⲁⲛⲧ̄ ⲕⲁⲧⲁ ⲡⲉⲓⲛⲉ",
       "core_english": "downward unto the place of his heart, being likened according to the likeness",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Neck-to-heart mapping."
     },
@@ -74,6 +112,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲙⲏⲧ ⲛ̄ⲥⲧⲉⲣⲉⲱⲙⲁ ⲉⲣⲉ ⲡⲍⲏⲧ ⲁⲉ ⲁⲛ ⲙ̄ⲙⲉⲩ ⲕⲁⲧⲁ ⲡⲓ-",
       "core_english": "of the ten firmaments. The heart, again, is there according to the like-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Neck→ten firmaments."
     },
@@ -84,6 +123,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉ ⲙ̄ⲡⲧⲣⲟⲭⲟⲥ ⲛ̄ⲧⲥ̄ⲫⲁⲓⲣⲁ ⲉⲧⲥⲓⲧⲉ ⲭⲛ̄ ⲙ̄ⲡⲉϩⲍⲏⲧ ⲁⲉ",
       "core_english": "-ness of the wheel of the sphere that sows. From his heart again,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Heart→wheel of the sphere that sows."
     },
@@ -94,6 +134,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁ ⲡⲓⲧⲛⲉ ϣⲁ ⲛⲉϩϣⲡⲁⲧ ⲉϩϣⲟⲟⲡ ⲁⲡⲉⲓⲛⲉ ⲙ̄ⲡⲓⲁⲏⲣ",
       "core_english": "downward unto his thighs, existing according to the likeness of the air",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Heart-to-thighs→air."
     },
@@ -102,8 +143,20 @@
       "chapter": 70,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲛⲏⲩ ⲭⲛ̄ ⲛ̄ⲧⲥⲫⲁⲓⲣⲁ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁⲍ {6}",
-      "core_english": "that comes from the spheres downward unto the earth. {7}",
+      "core_coptic": "ⲉⲧⲛⲏⲩ ⲭⲛ̄ ⲛ̄ⲧⲥⲫⲁⲓⲣⲁ ⲁⲡⲓⲧⲛⲉ ⲁⲡⲕⲁⲍ {3}",
+      "core_english": "that comes from the spheres downward unto the earth. {3}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲧⲙⲁⲛⲍⲁⲩⲧ",
+          "english": "The dwelling-place(?)",
+          "basis": "Editor restoration based on parallel-place in body-cosmos correspondence: the middle body-region (heart-to-thighs) corresponds to the air/earth zone. ⲙⲁⲛ- 'place of' + ⲍⲁⲩⲧ (root unidentified — possibly Lyc. reflex of a 'staying/dwelling' or 'lower' verb). Sense uncertain; tentative gloss based on the apposition 'X of the body that exists according to the likeness of this earth.'",
+          "source_id": 5,
+          "section": 4161
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Air from spheres to earth."
     },
@@ -114,6 +167,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲥⲱⲙⲁ ⲉϩϣⲟⲟⲡ ⲕⲁⲡⲓⲛⲉ ⲙⲡⲓⲛⲁⲩ ⲛⲕⲁⲍ ⲭⲛ̄ ⲛⲉϩ-",
       "core_english": "of the body, existing according to the likeness of this earth. From his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Body→earth."
     },
@@ -124,6 +178,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲡⲁⲧ ⲁⲉ ⲍⲱⲱϩ ⲁⲡⲓⲧⲛⲉ ϣⲁ ⲛⲉϩⲕⲉⲍⲧⲉ ⲉϩϣⲟⲟⲡ ⲁ-",
       "core_english": "thighs again, downward unto his knees, existing according to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Thigh-to-knees mapping."
     },
@@ -134,6 +189,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲛⲉ ⲙ̄ⲡϣⲁⲙⲧ ⲛ̄ⲕⲁⲍ ⲛ̄ⲥⲛϩⲉ ⲁⲉ ⲍⲱⲱϩ ⲛ̄ⲣⲉⲧϩ ⲁⲡⲓ-",
       "core_english": "the likeness of the three earths. His shins, again, on the feet, according to the like-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Knees→three earths."
     },
@@ -144,6 +200,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉ ⲙ̄ⲡⲟⲩⲣⲏⲍ ⲉⲧⲉⲣⲉ ⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲧⲏⲕ ⲁⲣⲉⲧϩ ⲛⲍⲏⲧϥ̄",
       "core_english": "-ness of the watch on which the Omophoros stands fast within it.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Shins→watch where Omophoros stands."
     },
@@ -154,6 +211,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟ̄ⲁⲡ ⲛ̄ⲣⲉⲧϥ̄ ⲁⲡⲉⲓⲛⲉ ⲙ̄ⲡⲛⲁⲩ ⲛ̄ⲕⲁⲍ ⲉⲧⲉⲣⲉ ⲡⲱⲙⲟ-",
       "core_english": "The soles of his feet according to the likeness of this earth on which the Omopho-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Soles→earth bearing Omophoros."
     },
@@ -164,6 +222,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲟⲣⲟⲥ ⲧⲏⲕ ⲁⲣⲉⲧϩ ⲁⲭⲱϩ ⲙⲛ̄ ⲡϩⲧⲁⲩ ⲛ̄ⲧⲱⲟ̄ⲥ ⲉⲧⲍⲁ ⲛⲉϩ-",
       "core_english": "-phoros stands fast upon it, with the four mountains which are below his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Four mountains under feet."
     },
@@ -172,8 +231,20 @@
       "chapter": 70,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲣⲏⲧⲉ ⲡⲉϩⲍⲏⲧⲁⲣ {8} ⲙ̄ⲡⲙⲁⲛⲭⲗⲟⲣⲉ ⲛ̄ⲧⲥⲉⲧⲉ",
-      "core_english": "feet. His liver {9} of the stronghold of fire.",
+      "core_coptic": "ⲟⲩⲣⲏⲧⲉ ⲡⲉϩⲍⲏⲧⲁⲣ {4} ⲙ̄ⲡⲙⲁⲛⲭⲗⲟⲣⲉ ⲛ̄ⲧⲥⲉⲧⲉ",
+      "core_english": "feet. His liver {4} of the stronghold of fire.",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲁⲡⲓⲛⲉ",
+          "english": "according to the likeness",
+          "basis": "Editor restoration of the formulaic phrase ⲁⲡⲓⲛⲉ that recurs throughout this body-cosmos mapping (lines 1, 3, 5, 6, 8, 10, 12, 15, 16, 17). The ⲁ is partially visible; ⲡ is restored.",
+          "source_id": 6,
+          "section": 4168
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Liver→stronghold of fire."
     },
@@ -184,6 +255,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧϥ̄ⲥⲁⲣⲝ̄ ⲁⲡⲉⲓⲛⲉ ⲙ̄ⲡⲙⲁⲛⲭⲗⲟⲣⲉ ⲙ̄ⲡⲕⲉⲕⲉ ⲡⲉϩⲥ-",
       "core_english": "His flesh, according to the likeness of the stronghold of darkness. His sin-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Flesh→stronghold of darkness."
     },
@@ -194,6 +266,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁϩ ⲁⲡⲓⲛⲉ ⲙ̄ⲡⲙⲁⲛⲭⲗⲟⲣⲉ ⲙ̄ⲡⲙⲁⲩ ⲧⲍⲉ ⲟⲩⲛ ⲧⲉ",
       "core_english": "-ew, according to the likeness of the stronghold of water. Thus indeed it",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sinew→stronghold of water."
     },
@@ -204,6 +277,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲓ̄ ⲉⲧⲉⲣⲉ ⲡⲕⲟⲩⲓ̄ ⲛⲥⲱⲙⲁ ϣⲟⲟⲡ ⲕⲁⲧⲁ ⲡⲉⲓⲛⲉ ⲙⲡⲛⲁⲩ",
       "core_english": "is — that the small body exists according to the likeness of this",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Summary: small body in likeness of cosmos."
     },
@@ -214,6 +288,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲕⲟⲥⲙⲟⲥ ⲍⲛ̄ ⲛⲉϩⲥⲧⲉⲣⲉⲱⲙⲁ ⲍⲛ̄ ⲛⲉϩⲍⲱⲣⲟ̄ ⲍⲛ̄ ⲛⲉϩ-",
       "core_english": "cosmos: in his firmaments, in his hosts, in his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Microcosm summary continues."
     },
@@ -224,6 +299,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩⲓ̄ⲉⲩⲉ ⲛⲉϩⲥⲃⲧⲉⲟⲩⲉ ⲙⲛ̄ ⲛⲉϩⲙⲁⲛⲭⲗⲟⲣⲉ ⲧⲍⲉ ⲉⲧⲁⲓ̄",
       "core_english": "stations, his preparations, and his strongholds. Thus have I",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Summary list of cosmic features."
     },
@@ -234,6 +310,7 @@
       "classification": "mixed",
       "core_coptic": "ⲭⲉ ⲟⲩⲛ̄ ⲧⲉ ⲛ̄ⲛⲁⲩ ⲙ̄ⲡⲁⲣⲁⲙⲡⲟⲗⲏ ϣⲟⲟⲡ ⲍⲛ̄ ⲧ-",
       "core_english": "what is the manner in which the encampment exists in the",
+      "apparatus": [],
       "removed_material": "Strip 'forth:' — frame.",
       "temporal_note": "Substantive cosmological question."
     },
@@ -244,6 +321,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲟ̄ ⲛ̄ⲍⲱⲛⲏ ⲉⲧⲍⲓⲃⲁⲗ ⲉⲧⲉⲣⲉ ⲡⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ ⲙ̄ⲡⲧⲡⲛⲁ",
       "core_english": "great Zone which is outside, in which the Five Sons of the Spi-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Five Sons of the Spirit of Living."
     },
@@ -254,6 +332,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲁⲛⲍ̄ ⲟ ⲛⲭⲁⲓ̄ⲥ ⲁⲣⲁⲩ ⲍⲛ̄ ⲧϣⲁⲣⲡ̄ ⲙⲉ ⲛⲟⲩⲣⲱϣⲉ ⲉⲧⲙ̄",
       "core_english": "-rit of the Living are masters over them. In the first watch which is in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "First watch enumeration begins."
     },
@@ -264,6 +343,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁⲛⲧⲡⲉ ⲧⲉⲧⲉⲣⲉ ⲫⲉⲣⲣⲟⲕⲁⲧⲟⲭⲟⲥ ⲟ ⲛ̄ⲭⲁⲓ̄ⲥ ⲁⲣⲁⲥ",
       "core_english": "the upper place — wherein the Pherrokatochos is master over it,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pherrokatochos in first watch."
     },
@@ -274,6 +354,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲙ̄ ⲡⲗⲱⲃϣ̄ ⲛ̄ⲛ̄ⲍⲃⲏⲩⲉ ⲧⲏⲣⲟⲩ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ϣⲟⲟⲡ",
       "core_english": "in the mingling of all the works — his authority exists",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Authority of Pherrokatochos."
     },
@@ -282,8 +363,18 @@
       "chapter": 70,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲓⲭⲛ̄ ⲧϣⲁⲙⲧⲉ ⲙ̄ⲡⲉ ⲛⲉⲧⲙ̄ⲡⲓⲧⲓⲛⲉ ⲙⲉⲛ ⲙ̄ⲙⲁϩ ⲉⲩ {10}",
-      "core_english": "upon the three (parts) of heaven, those of below indeed, there being {11}",
+      "core_coptic": "ⲍⲓⲭⲛ̄ ⲧϣⲁⲙⲧⲉ ⲙ̄ⲡⲉ ⲛⲉⲧⲙ̄ⲡⲓⲧⲓⲛⲉ ⲙⲉⲛ ⲙ̄ⲙⲁϩ ⲉⲩ {5}",
+      "core_english": "upon the three (parts) of heaven, those of below indeed, there being {5}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 35,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 7,
+          "section": 4179
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three parts of heaven."
     },
@@ -292,8 +383,19 @@
       "chapter": 70,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉⲧ {12} ⲙ̄ⲡⲛⲁⲩ ⲛ̄ⲣ̄ⲣⲟ ⲛ̄ⲧⲉ ⲡⲧⲁⲓ̄ⲟ",
-      "core_english": "{13} of the great King of Honor.",
+      "core_coptic": "ⲡⲉⲧ {6} ⲙ̄ⲡⲛⲁⲩ ⲛ̄ⲣ̄ⲣⲟ ⲛ̄ⲧⲉ ⲡⲧⲁⲓ̄ⲟ",
+      "core_english": "{6} of the great King of Honor.",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 36,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲡⲉⲧ (preceding partial 'the one who/that which')",
+          "source_id": 8,
+          "section": 4180
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Great King of Honor."
     },
@@ -304,6 +406,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "Ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛⲟⲩⲣⲱϣⲉ ⲧⲉⲧⲉⲣⲉ ⲡⲛⲁⲩ ⲛⲣ̄ⲣⲟ ⲛⲧⲉ ⲡⲧⲁⲓ̄ⲟ",
       "core_english": "The second of a watch, in which the great King of Honor",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second watch enumeration."
     },
@@ -314,6 +417,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟ ⲛ̄ⲭⲁⲓ̄ⲥ ⲁⲣⲁⲥ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲍⲱⲱϩ ⲍⲓⲭⲙ̄ ⲡⲥⲁϣϩ",
       "core_english": "is master over it; his authority again is upon the seven",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "King of Honor's authority."
     },
@@ -322,8 +426,20 @@
       "chapter": 70,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲉⲧⲙ̄ⲡⲉⲥⲏⲧ ⲙⲙⲁϩ {14}",
-      "core_english": "firmaments which are below, there. {15}",
+      "core_coptic": "ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲉⲧⲙ̄ⲡⲉⲥⲏⲧ ⲙⲙⲁϩ {7}",
+      "core_english": "firmaments which are below, there. {7}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "Ⲧⲙⲁⲍϣⲁⲙⲧⲉ",
+          "english": "The third",
+          "basis": "Editor restoration completing the ordinal series ⲧϣⲁⲣⲡ̄ ('first,' line 23) — Ⲧⲙⲁⲍⲥⲛⲧⲉ ('second,' line 28) — Ⲧⲙⲁⲍϣⲁⲙⲧⲉ ('third'). The continuation in line 31 'in which Adamas...' confirms the third Watch begins here.",
+          "source_id": 9,
+          "section": 4183
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seven firmaments."
     },
@@ -332,8 +448,20 @@
       "chapter": 70,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲟⲩⲣ̄ⲱϣⲉ ⲧⲉⲧⲉⲣⲉ ⲡⲁⲇⲁⲙⲁⲥ {16}",
-      "core_english": "of a watch, in which Adamas {17}",
+      "core_coptic": "ⲛⲟⲩⲣ̄ⲱϣⲉ ⲧⲉⲧⲉⲣⲉ ⲡⲁⲇⲁⲙⲁⲥ {8}",
+      "core_english": "of a watch, in which Adamas {8}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲟ ⲛⲭⲁⲓ̄ⲥ ⲁⲣⲁⲥ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ",
+          "english": "is master over it; his authority",
+          "basis": "Editor restoration based on the parallel formulae of the First Watch (lines 23-25: 'wherein the Pherrokatochos is master over it... his authority exists upon...') and Second Watch (lines 28-29: 'in which the great King of Honor is master over it; his authority again is upon...').",
+          "source_id": 10,
+          "section": 4184
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third watch — Adamas."
     },
@@ -342,8 +470,30 @@
       "chapter": 70,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲣⲟ ⲭⲛ ⲙ̄ⲡⲥⲧⲉⲣⲉⲱⲙⲁ ϣⲁⲡⲓⲧⲛⲉ ⲁⲣⲉⲧϥ̄ ⲙ̄ⲡ{19}",
-      "core_english": "the {20}King — from the firmament unto below he stands fast on the {21},",
+      "core_coptic": "{9}ⲣⲟ ⲭⲛ ⲙ̄ⲡⲥⲧⲉⲣⲉⲱⲙⲁ ϣⲁⲡⲓⲧⲛⲉ ⲁⲣⲉⲧϥ̄ ⲙ̄ⲡ{10}",
+      "core_english": "the {9}King — from the firmament unto below he stands fast on the {10},",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲣ̄",
+          "english": "(supralinear restored)",
+          "basis": "Editor restored supralinear stroke in ⲣ[ⲣ̄]ⲣⲟ; word ⲣⲣⲟ 'king' is certain",
+          "source_id": 11,
+          "section": 4185
+        },
+        {
+          "id": 10,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲕⲁϩ",
+          "english": "land",
+          "basis": "Editor restoration ⲙ̄ⲡ[ⲕⲁϩ]; matches the cosmographic schema of lands sustained by the King",
+          "source_id": 12,
+          "section": 4185
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Adamas firmly stands."
     },
@@ -352,8 +502,30 @@
       "chapter": 70,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22}ⲟⲣⲱ ⲕⲁⲧⲁ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲁⲧⲥⲫⲁⲓⲣⲁ ⲙⲛ̄ ⲛ̄{23}",
-      "core_english": "{24}strong according to his authority over the sphere with the {25}wor-",
+      "core_coptic": "{11}ⲟⲣⲱ ⲕⲁⲧⲁ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲁⲧⲥⲫⲁⲓⲣⲁ ⲙⲛ̄ ⲛ̄{12}",
+      "core_english": "{11}strong according to his authority over the sphere with the {12}wor-",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲛϩⲭ",
+          "english": "(qualitative onset)",
+          "basis": "Editor restoration giving ⲛϩⲭⲟⲣⲱ, qualitative 'strong/firm-standing' (Lyc. reflex of ⲛϫⲱⲱⲣⲉ)",
+          "source_id": 13,
+          "section": 4186
+        },
+        {
+          "id": 12,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲕⲟ",
+          "english": "(of the wor-)",
+          "basis": "Editor restoration ⲛ̄[ⲕⲟ] continuing to ⲥⲙⲟⲥ on next line — ⲛ̄ⲕⲟⲥⲙⲟⲥ 'worlds'",
+          "source_id": 14,
+          "section": 4186
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Authority over sphere."
     },
@@ -364,6 +536,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲙⲟⲥ ⲙ̄ⲧⲁϩⲣ ⲙⲛ̄ ⲡⲕⲉϩⲧⲟⲩ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲉⲧⲧⲏϣ ϩⲙ̄",
       "core_english": "lds of strength, with the other five worlds appointed in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Five worlds of strength."
     },
@@ -374,6 +547,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲕⲁϩ",
       "core_english": "this land.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of third watch."
     },
@@ -384,6 +558,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲙⲁϩϩⲧⲟⲉ ⲛⲟⲩⲣ̄ϣⲉ ⲉⲧⲉⲣⲉ ⲡⲣ̄ⲣⲟ ⲙ",
       "core_english": "The fourth watch in which the King",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth watch — King of Glory."
     },
@@ -394,6 +569,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉⲁⲩ ⲉⲙⲁϩⲧⲉ ⲁⲣⲁⲥ ⲡⲉ ⲡϣⲁⲙⲧ ⲛ̄ⲧⲣⲟⲭⲟⲥ ⲧⲉϩ",
       "core_english": "of Glory exercises authority is the three wheels. His",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three wheels."
     },
@@ -402,8 +578,30 @@
       "chapter": 70,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "{26}ⲟⲩⲥⲓⲁ ⲇⲉ ⲕⲁⲁⲧ ⲁⲭⲙ̄ ⲡϣⲁⲙ̄ⲧ ⲛ̄ⲕⲁϩ ⲉⲧϩⲓⲭⲛ̄ ⲧⲁⲡ{27}",
-      "core_english": "{28}ity is laid upon the three lands which are upon the {29}",
+      "core_coptic": "{13}ⲟⲩⲥⲓⲁ ⲇⲉ ⲕⲁⲁⲧ ⲁⲭⲙ̄ ⲡϣⲁⲙ̄ⲧ ⲛ̄ⲕⲁϩ ⲉⲧϩⲓⲭⲛ̄ ⲧⲁⲡ{14}",
+      "core_english": "{13}ity is laid upon the three lands which are upon the {14}",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲉⲝ",
+          "english": "author-",
+          "basis": "Editor restoration of [ⲉⲝ]ⲟⲩⲥⲓⲁ 'authority' (Greek loanword); ⲧⲉϩ- on prior line is possessive 'his'",
+          "source_id": 15,
+          "section": 4191
+        },
+        {
+          "id": 14,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "head",
+          "basis": "Editor restoration ⲧⲁⲡ[ⲉ] 'head' — context of Omophoros's anatomy",
+          "source_id": 16,
+          "section": 4191
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three lands."
     },
@@ -414,6 +612,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲱⲙⲟⲫⲟⲣⲟⲥ",
       "core_english": "of the Omophoros.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Omophoros reference."
     },
@@ -422,8 +621,20 @@
       "chapter": 70,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲁϩ{30}ⲉ ⲛⲟⲩⲣ̄ϣⲉ ⲧⲉ ⲧⲟⲩⲣ",
-      "core_english": "The {31} watch is the watch",
+      "core_coptic": "ⲧⲙⲁϩ{15}ⲉ ⲛⲟⲩⲣ̄ϣⲉ ⲧⲉ ⲧⲟⲩⲣ",
+      "core_english": "The {15} watch is the watch",
+      "apparatus": [
+        {
+          "id": 15,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ϯ",
+          "english": "fifth",
+          "basis": "Restoration ⲧⲙⲁϩ[ϯ]ⲉ 'the fifth (watch).' Line 4 has ⲧⲙⲁϩϩⲧⲟⲉ 'fourth' (King of Glory); the structurally next ordinal is fifth (Omophoros)",
+          "source_id": 17,
+          "section": 4193
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fifth watch enumeration."
     },
@@ -434,6 +645,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲉ ⲉⲧⲉⲣⲉ ⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲟ ⲛⲉ̄ⲝⲟⲩⲥⲓⲁ ⲁⲭⲱⲥ ⲛ̄ϩⲟ",
       "core_english": "in which the Omophoros is in authority, as also a",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Omophoros' authority."
     },
@@ -444,6 +656,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲭⲁⲓ̈ⲥ ⲁⲛ ⲕⲁⲧⲁ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲁⲭⲙ̄ ⲡⲓⲛⲁϭ ⲛ̄ⲕⲁϩ",
       "core_english": "lord, according to his authority over this great land",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Authority over great land."
     },
@@ -454,6 +667,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲉϩⲧⲏⲕ ⲁⲣⲉⲧϥ̄ ⲁⲭⲱϩ ⲙⲛ̄ ⲡϩⲧⲁⲩ ⲛⲧⲱϭⲥ̄ ⲉⲧϩⲁ",
       "core_english": "which stands fast upon him, with the four extremities which are at",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Four extremities."
     },
@@ -462,8 +676,29 @@
       "chapter": 70,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲉⲧϥ̄ ⲁ {32} ϣⲱⲡⲉ ϩⲛ̄ {33} ⲛⲟⲩⲣ̄ϣⲉ ⲕⲁⲧⲁ ⲟⲩ",
-      "core_english": "his feet. {34} came to pass in the {35} watches, each at",
+      "core_coptic": "ⲣⲉⲧϥ̄ ⲁ {16} ϣⲱⲡⲉ ϩⲛ̄ {17} ⲛⲟⲩⲣ̄ϣⲉ ⲕⲁⲧⲁ ⲟⲩ",
+      "core_english": "his feet. {16} came to pass in the {17} watches, each at",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 53,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": "ⲫⲁⲓ_ⲓⲥ",
+          "source_id": 18,
+          "section": 4197
+        },
+        {
+          "id": 17,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ϯⲟⲩⲉ",
+          "english": "five",
+          "basis": "Tentative — the kephalaion enumerates exactly five watches (Pherrokatochos, King of Honor, Adamas, King of Glory, Omophoros); summary line requires 'in the five watches'",
+          "source_id": 19,
+          "section": 4197
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic events in the watches."
     },
@@ -474,6 +709,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲓ̈ϣ ⲟⲩⲁⲓ̈ϣ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲙⲉⲛ ⲙ̄ⲫⲉⲣⲣⲟⲕⲁⲧⲟⲭⲟⲥ",
       "core_english": "its season. In the watch indeed of the Pherrokatochos,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pherrokatochos' season."
     },
@@ -482,8 +718,20 @@
       "chapter": 70,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ ⲡⲛ{36} ⲟⲩⲱϣⲉ ⲭⲉϩⲁⲃⲉⲃⲉ ⲁϩⲣⲏⲓ̈ ⲟⲩⲃⲉ ⲧⲉ̣ⲓⲕⲱⲛ",
-      "core_english": "{37}Sin sought to gush up against this icon",
+      "core_coptic": "ⲁ ⲡⲛ{18} ⲟⲩⲱϣⲉ ⲭⲉϩⲁⲃⲉⲃⲉ ⲁϩⲣⲏⲓ̈ ⲟⲩⲃⲉ ⲧⲉ̣ⲓⲕⲱⲛ",
+      "core_english": "{18}Sin sought to gush up against this icon",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 55,
+          "type": "restoration",
+          "coptic": "ⲁⲃⲉ",
+          "english": "Sin",
+          "basis": "Editor restoration ⲡⲛ[ⲁⲃⲉ] 'Sin' — standard Manichaean cosmic principle that assails the icon of the Ambassador",
+          "source_id": 20,
+          "section": 4199
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sin against icon of Ambassador."
     },
@@ -492,8 +740,20 @@
       "chapter": 70,
       "line": 56,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲕⲱⲗⲩ ⲇⲉ̄ ⲙⲙⲁϩ ⲁⲃⲁⲗ ⲙ{38}ⲙⲁ",
-      "core_english": "of the Ambassador; but they prevented him from {39} place",
+      "core_coptic": "ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲕⲱⲗⲩ ⲇⲉ̄ ⲙⲙⲁϩ ⲁⲃⲁⲗ ⲙ{19}ⲙⲁ",
+      "core_english": "of the Ambassador; but they prevented him from {19} place",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 56,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restoration ⲙ[ⲡ]ⲙⲁ 'from the place'",
+          "source_id": 21,
+          "section": 4200
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ambassador (Presbeutēs) — cosmic figure."
     },
@@ -504,6 +764,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲙ̄ⲙⲉⲩ ⲁϩⲛⲁⲩϩϥ̄ ⲁⲡⲓⲧⲛⲉ ϩⲛ̄ ⲟⲩϣⲓⲡⲉ",
       "core_english": "there: he was cast down in shame.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cast down narrative."
     },
@@ -514,6 +775,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲕⲙ̄ⲧⲟ ⲁⲛ ⲙⲛ̄ ⲟⲩⲕⲣⲁϩ ϣⲱⲡⲉ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲙⲡⲛⲁϭ",
       "core_english": "An earthquake also and a trembling came to pass in the watch of the great",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Earthquake event."
     },
@@ -524,6 +786,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲣ̄ⲣⲟ ⲛⲧⲉ ⲡⲧⲁⲓ̈ⲟ ⲉⲧⲉ ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ ⲛⲉⲧⲁⲩϣⲱⲡⲉ",
       "core_english": "King of Honor, who is the Egregoroi who came to be",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Egregoroi/Watchers in second watch."
     },
@@ -532,8 +795,27 @@
       "chapter": 70,
       "line": 60,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙ̄ⲡⲥⲁⲡ ⲉⲧⲁⲩⲛⲁⲣ̄ {40} ⲉⲩ {41} ⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲛ̄ⲭⲓ ⲛⲉ",
-      "core_english": "at the time when they were going to {42} {43}; they came down by",
+      "core_coptic": "ⲙ̄ⲡⲥⲁⲡ ⲉⲧⲁⲩⲛⲁⲣ̄ {20} ⲉⲩ {21} ⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲛ̄ⲭⲓ ⲛⲉ",
+      "core_english": "at the time when they were going to {20} {21}; they came down by",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 60,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 22,
+          "section": 4204
+        },
+        {
+          "id": 21,
+          "segment": 60,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲉⲩ",
+          "source_id": 23,
+          "section": 4204
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Egregoroi descent."
     },
@@ -544,6 +826,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁⲩⲧⲛ̄ⲛⲁⲩⲥⲟⲩ ϣⲁⲛⲧⲟⲩⲫⲃ̄ⲓⲁⲩ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ",
       "core_english": "those who sent them, until they were subdued. In the watch also",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Subdued by senders."
     },
@@ -552,8 +835,20 @@
       "chapter": 70,
       "line": 62,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲡⲁⲇⲁⲙⲁⲥ ⲁ ⲛ̄ϩⲟⲩϩⲉ ⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ{44}",
-      "core_english": "of Adamas, the abortions came down; they molded {45}",
+      "core_coptic": "ⲙⲡⲁⲇⲁⲙⲁⲥ ⲁ ⲛ̄ϩⲟⲩϩⲉ ⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ{22}",
+      "core_english": "of Adamas, the abortions came down; they molded {22}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 62,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restoration ⲙ[ⲡ]ⲡⲗⲁⲥⲙⲁ 'the molding'",
+          "source_id": 24,
+          "section": 4206
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Adamas — abortions descend."
     },
@@ -564,6 +859,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲗⲁⲥⲙⲁ ⲛⲧⲉ ⲧⲥⲁⲣⲝ̄ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ ⲙⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲉⲁⲩ",
       "core_english": "the molding of the flesh. In the watch also of the King of Glory",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Molding of flesh."
     },
@@ -572,8 +868,20 @@
       "chapter": 70,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "{46}ⲩⲕⲓⲛⲏⲥⲓⲥ ϣⲱⲡⲉ ϩⲙ ⲡⲓϣⲁⲙⲧ ⲛ̄ⲕⲁϩ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄",
-      "core_english": "{47} motion came to pass in this three lands which are upon",
+      "core_coptic": "{23}ⲩⲕⲓⲛⲏⲥⲓⲥ ϣⲱⲡⲉ ϩⲙ ⲡⲓϣⲁⲙⲧ ⲛ̄ⲕⲁϩ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄",
+      "core_english": "{23} motion came to pass in this three lands which are upon",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "a",
+          "basis": "Editor restoration [ⲁ]ⲩⲕⲓⲛⲏⲥⲓⲥ; Lycopolitan indefinite ⲁⲩ for ⲟⲩ before Greek loanword κίνησις 'motion'",
+          "source_id": 25,
+          "section": 4208
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Motion in three lands."
     },
@@ -584,6 +892,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲡⲉ ⲙⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲁ ⲧⲉ̣ⲓⲏⲙ̄ⲙⲁϩⲉ ⲥⲱϩⲧ ⲙⲛ",
       "core_english": "the upper side of the Omophoros. This grasping was woven together with",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Omophoros' upper side."
     },
@@ -592,8 +901,20 @@
       "chapter": 70,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{48}ⲟ̄ⲓⲛⲉⲓ ⲁϩⲣⲏⲓ̈ ⲙⲡⲓϣⲁⲙⲧ ⲛ̄ⲧⲣⲟⲭⲟⲥ ⲡⲁⲡⲧⲏⲩ ⲡⲁ",
-      "core_english": "{49} rising-up of these three wheels — that of the wind, that",
+      "core_coptic": "{24}ⲟ̄ⲓⲛⲉⲓ ⲁϩⲣⲏⲓ̈ ⲙⲡⲓϣⲁⲙⲧ ⲛ̄ⲧⲣⲟⲭⲟⲥ ⲡⲁⲡⲧⲏⲩ ⲡⲁ",
+      "core_english": "{24} rising-up of these three wheels — that of the wind, that",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 66,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "the",
+          "basis": "Editor restoration [ⲧ]ⲟ̄ⲓⲛⲉⲓ 'the coming/rising-up' (action-noun on ⲉⲓ 'come,' attested in glossary)",
+          "source_id": 26,
+          "section": 4210
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Three wheels: wind/water/fire."
     },
@@ -604,6 +925,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲁⲩ ⲙⲛ̄ ⲡⲁⲧⲥⲉⲧⲉ",
       "core_english": "of the water, and that of the fire.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Three wheels enumerated."
     },
@@ -614,6 +936,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ ⲙⲡⲱⲙⲟ",
       "core_english": "In the watch also of the Omopho-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Omophoros watch."
     },
@@ -622,8 +945,20 @@
       "chapter": 70,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "{50}ⲟⲣⲟⲥ ⲁ ⲛⲧⲱϭⲥ̄ ⲉⲧⲛ̄ⲡⲓⲧⲛⲉ ⲃⲱϣ ⲁⲩⲕⲱϩ ⲛ̄ⲧⲟⲩ",
-      "core_english": "{51}phoros, the lower extremities dried up; they stretched out their",
+      "core_coptic": "{25}ⲟⲣⲟⲥ ⲁ ⲛⲧⲱϭⲥ̄ ⲉⲧⲛ̄ⲡⲓⲧⲛⲉ ⲃⲱϣ ⲁⲩⲕⲱϩ ⲛ̄ⲧⲟⲩ",
+      "core_english": "{25}phoros, the lower extremities dried up; they stretched out their",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 69,
+          "type": "restoration",
+          "coptic": "ⲫ",
+          "english": "-pho-",
+          "basis": "Editor restoration ⲡⲱⲙⲟ[ⲫ]ⲟⲣⲟⲥ 'Omophoros' — continuation of word from prior line",
+          "source_id": 27,
+          "section": 4213
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Lower extremities event."
     },
@@ -632,8 +967,30 @@
       "chapter": 70,
       "line": 70,
       "classification": "cosmological_substrate",
-      "core_coptic": "{52}ⲣ̄ⲣⲉ ⲁⲩⲛⲁϭ ⲛ{53}ⲙⲧⲟ ϣⲱⲡⲉ ⲙ̄ⲡⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ",
-      "core_english": "{54}bonds; a great {55}earthquake came to pass in that place.",
+      "core_coptic": "{26}ⲣ̄ⲣⲉ ⲁⲩⲛⲁϭ ⲛ{27}ⲙⲧⲟ ϣⲱⲡⲉ ⲙ̄ⲡⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ",
+      "core_english": "{26}bonds; a great {27}earthquake came to pass in that place.",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 70,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "(bond)",
+          "basis": "Editor restoration ⲧⲟⲩ[ⲙ]ⲣ̄ⲣⲉ 'their bonds'",
+          "source_id": 28,
+          "section": 4214
+        },
+        {
+          "id": 27,
+          "segment": 70,
+          "type": "restoration",
+          "coptic": "ⲕ",
+          "english": "earth-",
+          "basis": "Editor restoration ⲛ[ⲕ]ⲙⲧⲟ 'earthquake' — same lexeme as ⲕⲙ̄ⲧⲟ in line 16 and glossary",
+          "source_id": 29,
+          "section": 4214
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Earthquake at fifth watch."
     },
@@ -642,8 +999,50 @@
       "chapter": 70,
       "line": 71,
       "classification": "cosmological_substrate",
-      "core_coptic": "{56} ⲙ̄ⲡⲓ{57}ⲟⲩ {58}ⲛⲣⲁⲓ̈ⲥ ⲭⲉ ⲥⲉϣⲟⲟⲡ ϩⲛ̄ {59}ⲛⲁϭ ⲛ",
-      "core_english": "{60} of the {61}five {62}watch-posts, because they exist in {63} great",
+      "core_coptic": "{28} ⲙ̄ⲡⲓ{29}ⲟⲩ {30}ⲛⲣⲁⲓ̈ⲥ ⲭⲉ ⲥⲉϣⲟⲟⲡ ϩⲛ̄ {31}ⲛⲁϭ ⲛ",
+      "core_english": "{28} of the {29}five {30}watch-posts, because they exist in {31} great",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 71,
+          "type": "restoration",
+          "coptic": "ⲧϩⲉ",
+          "english": "Such is the manner",
+          "basis": "Editor restoration [ⲧϩⲉ] 'manner' — standard Coptic discourse-summarizer 'the manner of X' closing the section",
+          "source_id": 30,
+          "section": 4215
+        },
+        {
+          "id": 29,
+          "segment": 71,
+          "type": "restoration",
+          "coptic": "ϯ",
+          "english": "five",
+          "basis": "Tentative — context demands ⲡⲓϯⲟⲩ 'the five' (watch-posts), parallel to the five watches enumerated above",
+          "source_id": 31,
+          "section": 4215
+        },
+        {
+          "id": 30,
+          "segment": 71,
+          "type": "restoration",
+          "coptic": "ⲙⲙⲁ",
+          "english": "watch-",
+          "basis": "Editor restoration [ⲙⲙⲁ]ⲛⲣⲁⲓ̈ⲥ 'watch-posts' (in glossary)",
+          "source_id": 32,
+          "section": 4215
+        },
+        {
+          "id": 31,
+          "segment": 71,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "a",
+          "basis": "Restoration of single missing character before ⲛⲁϭ — Coptic indefinite article",
+          "source_id": 33,
+          "section": 4215
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five watch-posts."
     },
@@ -652,8 +1051,19 @@
       "chapter": 70,
       "line": 72,
       "classification": "cosmological_substrate",
-      "core_coptic": "{64} ⲙ̄ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲉⲧⲁⲓ̈ⲧⲉⲟⲩⲁⲩ",
-      "core_english": "{65} of the array which I have proclaimed.",
+      "core_coptic": "{32} ⲙ̄ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲉⲧⲁⲓ̈ⲧⲉⲟⲩⲁⲩ",
+      "core_english": "{32} of the array which I have proclaimed.",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 72,
+          "type": "lacuna",
+          "est_chars": 12,
+          "partial": "ⲙⲣ̄ⲣⲉ(?) ⲛⲧⲉ ___ⲉ",
+          "source_id": 34,
+          "section": 4216
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing of encampment teaching."
     },
@@ -662,8 +1072,20 @@
       "chapter": 70,
       "line": 73,
       "classification": "mixed",
-      "core_coptic": "ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙ̄ⲡ̄ⲓⲥⲱⲙⲁ ⲉⲧⲉⲣⲉ ⲛⲉ{66}",
-      "core_english": "is this the manner of this body, in which the {67}",
+      "core_coptic": "ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙ̄ⲡ̄ⲓⲥⲱⲙⲁ ⲉⲧⲉⲣⲉ ⲛⲉ{33}",
+      "core_english": "is this the manner of this body, in which the {33}",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 73,
+          "type": "restoration",
+          "coptic": "ⲕ",
+          "english": "(letter ⲕ; beginning of ⲛⲉⲕⲗⲉⲕⲧⲟⲥ 'the elect,' word continues on line 2)",
+          "basis": "Greek loan ἐκλεκτοί virtually certain from context (ⲣ̄ⲫⲟⲣⲉ 'wear,' ⲡⲣⲱⲙⲉ ⲛⲉⲕⲗⲉⲕⲧⲟⲥ 'elect man' line 4)",
+          "source_id": 36,
+          "section": 4217
+        }
+      ],
       "removed_material": "Strip '{35}you also' — application addressee.",
       "temporal_note": "Transitional summary."
     },
@@ -674,6 +1096,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛⲍⲏⲧϥ̄ ⲉⲣⲉ ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲣⲁⲓ̈ⲥ ⲁⲣⲁⲩ ⲙⲛ̄ ⲡⲣⲙ̄",
       "core_english": "in him, while the Mind of Light keeps watch over them, together with the new",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mind of Light/new Man are cosmic; flows into ecclesial application."
     },
@@ -684,6 +1107,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲃⲣ̄ⲣⲉ ⲉⲧⲛⲉⲙⲉϩ ⲡⲣⲱⲙⲉ",
       "core_english": "Man, who shall fill the man",
+      "apparatus": [],
       "removed_material": "Strip 'ⲛⲉⲕⲗⲉⲕⲧⲟⲥ' / 'elect' (institutional category) and 'ⲉⲧⲛⲁⲇⲇ-' (application).",
       "temporal_note": "Seam flag fires here — 'elect' inserted into cosmic-mapping language."
     },
@@ -694,6 +1118,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛϥⲟⲃ̄ⲓ̈ⲟ ⲛⲧⲡⲣⲟⲧⲟⲙⲏ ⲙ̄ⲡⲉϩⲍⲟ ⲉⲧⲛ̄ⲧⲡⲉ ⲙ̄ⲡⲉϩⲥⲱ",
       "core_english": "and shall be in the likeness of the Protomē of his face which is above his bo-",
+      "apparatus": [],
       "removed_material": "Strip 'ⲙⲁⲍⲉ' application verb.",
       "temporal_note": "Protomē correspondence — substratic mapping."
     },
@@ -704,6 +1129,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲫⲉⲣⲅⲟⲕⲁⲧⲟⲭⲟⲥ ⲉⲧⲉⲙⲁⲍⲧⲉ ⲁ",
       "core_english": "the mystery of the Phergokatochos who grasps u-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Phergokatochos cosmic mystery."
     },
@@ -714,6 +1140,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲛ̄ ⲧⲟⲩⲣ̄ⲱϣⲉ ⲉⲧⲛ̄ⲧⲡⲉ ⲛ̄ⲧⲍⲱⲛⲏ",
       "core_english": "pon their watch which is above the Zone.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Watch above the Zone."
     },
@@ -724,6 +1151,7 @@
       "classification": "mixed",
       "core_coptic": "ⲉϥϣⲟⲟⲡ ⲁⲡⲙⲉⲓ̈ⲛⲉ ⲙ̄ⲡⲛⲁⲃ́",
       "core_english": "being in the sign of the great",
+      "apparatus": [],
       "removed_material": "Strip 'his heart, and shall fashion it in his likeness' — application of practitioner.",
       "temporal_note": "Sign of King of Honor — substratic correspondence in application context."
     },
@@ -734,6 +1162,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲣ̄ⲣⲟ ⲛ̄ⲧⲉ ⲡⲧⲁⲓ̈ⲟ ⲉⲧⲟⲃ̄ⲓ̈ⲟ ⲛ̄ⲧⲥⲁϣϥ̄ⲉ ⲙ̄ⲡⲉ",
       "core_english": "King of Honor, who is in the likeness of the seventh heaven.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "King of Honor → seventh heaven."
     },
@@ -744,6 +1173,7 @@
       "classification": "mixed",
       "core_coptic": "ⲁⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲁⲇⲁⲙⲁⲥ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲡⲉⲧ",
       "core_english": "in the mystery of Adamas of Light, the one who",
+      "apparatus": [],
       "removed_material": "Strip 'being' framing.",
       "temporal_note": "Adamas of Light correspondence."
     },
@@ -754,6 +1184,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲃ̄ⲓ̈ⲟ ⲛⲑⲩⲗⲏ",
       "core_english": "is in the likeness of Hyle.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Adamas → Hyle correspondence."
     },
@@ -764,6 +1195,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲉⲁⲩ ⲡⲉⲧⲕⲱⲧⲉ ⲛ̄ⲛⲧⲣⲟⲭⲟⲥ ⲉϥⲧⲛ̄ⲛⲁⲩ",
       "core_english": "of the King of Glory, who turns the wheels, sending forth",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "King of Glory turning wheels."
     },
@@ -774,6 +1206,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲧⲡⲉ ⲙ̄ⲡⲱⲛⲍ",
       "core_english": "upward to the heaven of Life.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Heaven of Life."
     },
@@ -784,6 +1217,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲣ̄ⲣⲉ ⲛ̄ⲧⲉ ϯⲣⲏⲛⲏ ⲃⲓⲣⲁϩ ⲃⲓⲣⲉ̄ ⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲡⲉⲧⲟⲃ̄",
       "core_english": "bond of Peace — Birah-Birē — the Omophoros, the one who is in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Birah-Birē bond and Omophoros."
     },
@@ -794,6 +1228,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲓ̈ⲟ ⲍⲛ̄ ⲛⲉϩⲧⲉⲃ́ⲥⲉ ⲛ̄ⲛⲛⲟⲩⲛ ⲉⲧⲙ̄ⲡⲓⲧⲛⲉ ⲧⲥⲃⲱ ⲍⲱ",
       "core_english": "the likeness in his soles in the Deep below. The teaching itself",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Soles → Deep correspondence."
     },
@@ -804,6 +1239,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲱϩ ⲛ̄ⲧⲉ ⲧⲥⲟⲫⲓⲁ ⲧⲉⲧⲕⲱⲧⲉ ⲍⲙ̄ ⲡⲥⲱⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ ⲁ",
       "core_english": "of Wisdom, which encompasses in that body, to-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Teaching of Wisdom encompassing body."
     },
@@ -814,6 +1250,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲛⲉ ⲛⲧ̄ⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧⲉⲧⲛⲁ ⲁⲧⲡⲉ ⲉⲥ",
       "core_english": "ward the likeness of the Virgin of Light, who shall (go) up, com-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Virgin of Light correspondence."
     },
@@ -824,6 +1261,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲏⲩ ⲁⲡⲓⲧⲛ̄ ⲍⲛ̄ ϯⲍⲱⲛⲏ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ ⲙⲛ̄ ⲧⲉⲧⲙ̄ⲡ",
       "core_english": "ing down in the Zone of the upper place and that of the lo-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Two Zones."
     },
@@ -834,6 +1272,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲁⲛⲡⲓⲧⲛⲉ ⲧⲁⲅⲁⲡⲏ ⲍⲱⲱϩ ⲙⲛ̄ ⲡⲣⲉϣⲉ ⲡⲧⲛⲁⲍⲧⲉ̄",
       "core_english": "wer place. Love itself with joy, faith",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Triad Love/Joy/Faith — substratic but borderline ethical."
     },
@@ -842,8 +1281,20 @@
       "chapter": 70,
       "line": 101,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲧⲙⲏⲉ ⲉⲧⲉϣⲁⲣⲉ ⲡⲣⲱⲙⲉ ϣ{68}ⲍ̄ ⲛ̄ⲍⲏⲧⲟⲩ ⲉⲩϣⲟⲟⲡ",
-      "core_english": "and truth, in which the man habitually liv{69}es in them — they being",
+      "core_coptic": "ⲙⲛ̄ ⲧⲙⲏⲉ ⲉⲧⲉϣⲁⲣⲉ ⲡⲣⲱⲙⲉ ϣ{34}ⲍ̄ ⲛ̄ⲍⲏⲧⲟⲩ ⲉⲩϣⲟⲟⲡ",
+      "core_english": "and truth, in which the man habitually liv{34}es in them — they being",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 101,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "(middle letter of ϣⲱⲛⲍ̄/ϣⲛⲍ̄ 'live')",
+          "basis": "Lyc. reflex of ϣⲱⲛϩ̄/ⲱⲛϩ̄ 'live'; sense fits 'in which the man habitually lives'",
+          "source_id": 40,
+          "section": 4235
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Truth — virtues mapped to ships of light."
     },
@@ -852,8 +1303,20 @@
       "chapter": 70,
       "line": 102,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲡⲓⲛⲉ ⲙ̄ⲡⲓⲭⲁⲓ̈ ⲥⲛⲉⲩ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲉⲡⲉⲓⲁⲏ ⲉϣⲁⲣⲉ ⲧϯ{70}",
-      "core_english": "in the likeness of the two ships of light, because the so{71}",
+      "core_coptic": "ⲁⲡⲓⲛⲉ ⲙ̄ⲡⲓⲭⲁⲓ̈ ⲥⲛⲉⲩ ⲛ̄ⲟⲩⲁⲓ̈ⲛⲉ ⲉⲡⲉⲓⲁⲏ ⲉϣⲁⲣⲉ ⲧϯ{35}",
+      "core_english": "in the likeness of the two ships of light, because the so{35}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 102,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "ul (completion of ⲧⲯⲩⲭⲏ/ⲧϯⲩⲭⲏ 'the soul')",
+          "basis": "Greek loan ψυχή; orthographic ⲧϯⲩⲭⲏ for ⲧⲯⲩⲭⲏ",
+          "source_id": 41,
+          "section": 4236
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two ships of light correspondence."
     },
@@ -864,6 +1327,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ ⲛ̄ⲍⲏⲧⲟⲩ ⲛ̄ⲥⲣ̄ⲃⲁⲗ ⲁⲃⲁⲗ ⲍⲓⲧⲟⲟⲧⲟⲩ",
       "core_english": "ul which is living goes upward in them and goes forth out through them",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Living soul ascent."
     },
@@ -872,8 +1336,20 @@
       "chapter": 70,
       "line": 104,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲉⲓ ⲁⲍⲣⲏⲓ̈ ⲁⲃⲁⲗ ⲛ̄ⲛⲛⲟⲩⲛ ⲉⲧⲙ̄ⲡⲓⲧⲛⲉ ⲛ̄ⲥⲕⲁⲧⲁⲛⲧⲁ ⲁ̄{72}",
-      "core_english": "and they come upward forth out of the Deep below, and arrive at {73}",
+      "core_coptic": "ⲛ̄ⲥⲉⲓ ⲁⲍⲣⲏⲓ̈ ⲁⲃⲁⲗ ⲛ̄ⲛⲛⲟⲩⲛ ⲉⲧⲙ̄ⲡⲓⲧⲛⲉ ⲛ̄ⲥⲕⲁⲧⲁⲛⲧⲁ ⲁ̄{36}",
+      "core_english": "and they come upward forth out of the Deep below, and arrive at {36}",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 104,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "(letter ⲡ; beginning of ⲡⲭⲥⲉ 'the Height,' word continues on line 29)",
+          "basis": "ⲁⲡⲭⲥⲉ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ 'to the Height which is in the upper place,' standard cosmographic pole (cf. ⲡⲭⲥⲉ in glossary)",
+          "source_id": 42,
+          "section": 4238
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Soul ascent through Deep."
     },
@@ -882,8 +1358,20 @@
       "chapter": 70,
       "line": 105,
       "classification": "cosmological_substrate",
-      "core_coptic": "{74}ⲥⲉ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ",
-      "core_english": "{75} the Height which is in the upper place.",
+      "core_coptic": "{37}ⲥⲉ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ",
+      "core_english": "{37} the Height which is in the upper place.",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 105,
+          "type": "restoration",
+          "coptic": "ⲭ",
+          "english": "(letter ⲭ; middle of ⲡⲭⲥⲉ 'the Height')",
+          "basis": "completion of ⲡⲭⲥⲉ",
+          "source_id": 43,
+          "section": 4239
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Height of upper place."
     },
@@ -892,8 +1380,30 @@
       "chapter": 70,
       "line": 107,
       "classification": "mixed",
-      "core_coptic": "ⲭⲉ ⲟⲩⲛ̄ ϩⲧⲁⲩ ⲛⲕⲟⲥⲙⲟⲥ ϣⲟⲟⲡ ⲍ{76}ⲓ̈ⲥⲱⲙⲁ ⲛⲧⲉ ⲧⲥ{77}",
-      "core_english": "that there are four cosmoses existing {78}this body of {79}",
+      "core_coptic": "ⲭⲉ ⲟⲩⲛ̄ ϩⲧⲁⲩ ⲛⲕⲟⲥⲙⲟⲥ ϣⲟⲟⲡ ⲍ{38}ⲓ̈ⲥⲱⲙⲁ ⲛⲧⲉ ⲧⲥ{39}",
+      "core_english": "that there are four cosmoses existing {38}this body of {39}",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 107,
+          "type": "restoration",
+          "coptic": "ⲙ ⲡ",
+          "english": "in the",
+          "basis": "ⲍⲙ ⲡⲓ̈ⲥⲱⲙⲁ 'in this body,' standard preposition + demonstrative + noun",
+          "source_id": 45,
+          "section": 4240
+        },
+        {
+          "id": 39,
+          "segment": 107,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲝ̄",
+          "english": "flesh",
+          "basis": "ⲧⲥⲁⲣⲝ̄ 'the flesh' (Greek σάρξ); 'body of flesh' standard collocation",
+          "source_id": 46,
+          "section": 4240
+        }
+      ],
       "removed_material": "Strip frame transition.",
       "temporal_note": "Four cosmoses of body — substantive cosmological proposition."
     },
@@ -902,8 +1412,30 @@
       "chapter": 70,
       "line": 108,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲛ̄ ⲥⲁϣϥ̄ ⲛ̄ⲁⲣⲭⲱⲛ ⲧⲙ̄ⲡⲥⲁⲡ ⲱⲟ{80}ⲱⲙⲁ {81}",
-      "core_english": "There are seven archons of the time, ex{82}body {83}",
+      "core_coptic": "ⲟⲩⲛ̄ ⲥⲁϣϥ̄ ⲛ̄ⲁⲣⲭⲱⲛ ⲧⲙ̄ⲡⲥⲁⲡ ⲱⲟ{40}ⲱⲙⲁ {41}",
+      "core_english": "There are seven archons of the time, ex{40}body {41}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 108,
+          "type": "restoration",
+          "coptic": "ⲟⲡ ⲍⲙ ⲡⲥ",
+          "english": "ists in the",
+          "basis": "ⲱⲟⲟⲡ ⲍⲙ ⲡⲥⲱⲙⲁ 'exists in the body,' parallel to line 30 construction",
+          "source_id": 47,
+          "section": 4241
+        },
+        {
+          "id": 41,
+          "segment": 108,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡϩⲧⲁⲩ ⲛ̄",
+          "english": "of the four",
+          "basis": "continuation 'of the four cosmoses' (ⲕⲟⲥⲙⲟⲥ on line 32); ⲡϩⲧⲁⲩ 'the four' is Lyc. (in glossary)",
+          "source_id": 48,
+          "section": 4241
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seven archons enumeration."
     },
@@ -914,6 +1446,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲟⲥⲙⲟⲥ",
       "core_english": "cosmoses.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation."
     },
@@ -922,8 +1455,20 @@
       "chapter": 70,
       "line": 110,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϣⲁⲣⲡ ⲙⲉⲛ ⲛⲕ{84}",
-      "core_english": "The first indeed of the c{85}",
+      "core_coptic": "ⲧϣⲁⲣⲡ ⲙⲉⲛ ⲛⲕ{42}",
+      "core_english": "The first indeed of the c{42}",
+      "apparatus": [
+        {
+          "id": 42,
+          "segment": 110,
+          "type": "restoration",
+          "coptic": "ⲟⲥⲙⲟⲥ ⲡⲉ ⲭⲛ ⲙⲡⲉϩ",
+          "english": "osmoses, namely, is upon his (head/...)",
+          "basis": "ⲧϣⲁⲣⲡ ⲙⲉⲛ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲡⲉ ⲉϫⲛ̄ ⲙⲡⲉϩ-(X) 'the first of the cosmoses is upon his (X)'; the body-part X presumably ⲁⲡⲉ 'head' continuing onto next page",
+          "source_id": 49,
+          "section": 4243
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First cosmos enumeration begins."
     },
@@ -934,6 +1479,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲟⲩⲧ ⲁⲧⲡⲉ ⲡⲥⲁϣϥ ⲇⲉ ⲍⲱⲱϥ ⲛⲁⲣⲭⲱⲛ ⲉⲧϣⲟⲟⲡ",
       "core_english": "...neck up to heaven. The seven, themselves, the archons that exist",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seven archons of first cosmos."
     },
@@ -942,8 +1488,20 @@
       "chapter": 70,
       "line": 112,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲙ̄ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄ⲧⲡⲉ ⲛⲉⲓ̈ ⲛⲉ {86}",
-      "core_english": "in this cosmos that is of the upper side, these are: {87},",
+      "core_coptic": "ⲍⲙ̄ ⲡⲓⲕⲟⲥⲙⲟⲥ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄ⲧⲡⲉ ⲛⲉⲓ̈ ⲛⲉ {43}",
+      "core_english": "in this cosmos that is of the upper side, these are: {43},",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 112,
+          "type": "restoration",
+          "coptic": "ⲡⲙⲁⲛⲓⲱⲣⲍ",
+          "english": "the place of seeing",
+          "basis": "Editor's restoration of [ⲍ]; ⲓⲱⲣⲍ = Lyc. ⲱⲣϩ̄/ⲓⲱⲣϩ̄ 'see, watch' (cf. ⲣⲉϩⲓ̈ⲱⲣⲍ 'watcher' in glossary)",
+          "source_id": 50,
+          "section": 4245
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Upper-side archons."
     },
@@ -954,6 +1512,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲛⲉⲩ ⲙ̄ⲛ ⲡⲙⲁⲛⲥⲱⲧⲙ̄ ⲥⲛⲉⲩ ⲙ̄ⲛ ⲡⲙⲁⲛϣⲱⲗⲙ̄ ⲥⲛⲉⲩ",
       "core_english": "two; with the place of hearing, two; with the place of smelling, two.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Sense organs as archons."
     },
@@ -964,6 +1523,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲕⲉⲟⲩⲉ ⲧⲉ ⲧⲧⲁⲡⲣⲟ ⲉⲧⲉ· ⲡⲙⲁⲛⲭⲓⲧⲡⲉ ⲡⲉ",
       "core_english": "The other one is the mouth, which is the place of receiving-taste.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mouth = place of taste."
     },
@@ -972,8 +1532,20 @@
       "chapter": 70,
       "line": 115,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88} ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲡⲉ ⲭⲛ̄ ⲙ̄ⲡⲉϥⲙⲟⲩⲧ ⲁⲡⲓⲧⲛ̄ ϣⲁ",
-      "core_english": "{89} cosmos is from his neck downward as far as",
+      "core_coptic": "{44} ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲡⲉ ⲭⲛ̄ ⲙ̄ⲡⲉϥⲙⲟⲩⲧ ⲁⲡⲓⲧⲛ̄ ϣⲁ",
+      "core_english": "{44} cosmos is from his neck downward as far as",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 115,
+          "type": "restoration",
+          "coptic": "ⲧⲧⲙⲁⲍⲥⲛⲉⲩ",
+          "english": "The second",
+          "basis": "Editor's restoration; ordinal pattern ⲙⲁⲍ-ⲥⲛⲉⲩ 'second' established by line 6's ⲡⲓⲙⲁⲍⲥⲛⲉⲩ",
+          "source_id": 51,
+          "section": 4248
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second cosmos boundary."
     },
@@ -982,8 +1554,20 @@
       "chapter": 70,
       "line": 116,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉϥϣⲁϣⲡⲉ ⲧⲏⲣⲥ̄ ⲡⲥⲁϣϥ ⲇⲉ ⲍⲱϥ ⲛⲁⲣⲭⲱⲛ ⲉ̣{90}",
-      "core_english": "his entire ϣⲁϣⲡⲉ. The seven, themselves, the archons {91}",
+      "core_coptic": "ⲧⲉϥϣⲁϣⲡⲉ ⲧⲏⲣⲥ̄ ⲡⲥⲁϣϥ ⲇⲉ ⲍⲱϥ ⲛⲁⲣⲭⲱⲛ ⲉ̣{45}",
+      "core_english": "his entire ϣⲁϣⲡⲉ. The seven, themselves, the archons {45}",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 116,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "that",
+          "basis": "Editor's restoration; relative ⲉⲧ- continues into line 7 ϣⲟⲟⲡ",
+          "source_id": 52,
+          "section": 4249
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seven archons of second cosmos."
     },
@@ -992,8 +1576,20 @@
       "chapter": 70,
       "line": 117,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲟⲟⲡ ⲍⲙ̄ ⲡⲓⲙⲁⲍⲥⲛⲉⲩ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲛⲉ ⲡⲉϥⲟ̄ⲃⲁⲓ̈ {92}",
-      "core_english": "exist in this second cosmos are: his {93} arms,",
+      "core_coptic": "ϣⲟⲟⲡ ⲍⲙ̄ ⲡⲓⲙⲁⲍⲥⲛⲉⲩ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲛⲉ ⲡⲉϥⲟ̄ⲃⲁⲓ̈ {46}",
+      "core_english": "exist in this second cosmos are: his {46} arms,",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 117,
+          "type": "restoration",
+          "coptic": "ⲥⲛⲉⲩ",
+          "english": "two",
+          "basis": "Editor's restoration; pairs continue the body-pair pattern (two arms)",
+          "source_id": 53,
+          "section": 4250
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second cosmos archons begin."
     },
@@ -1002,8 +1598,20 @@
       "chapter": 70,
       "line": 118,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧϣⲟⲟⲡ ⲕⲁⲧⲁ ⲡⲓⲛⲉ ⲙ̄ⲡⲉϥⲙⲉϣⲧⲉ ⲥⲛⲉⲩ ⲛⲉⲧ{94}",
-      "core_english": "that exist according to the likeness of his two ears, those that {95}-",
+      "core_coptic": "ⲉⲧϣⲟⲟⲡ ⲕⲁⲧⲁ ⲡⲓⲛⲉ ⲙ̄ⲡⲉϥⲙⲉϣⲧⲉ ⲥⲛⲉⲩ ⲛⲉⲧ{47}",
+      "core_english": "that exist according to the likeness of his two ears, those that {47}-",
+      "apparatus": [
+        {
+          "id": 47,
+          "segment": 118,
+          "type": "restoration",
+          "coptic": "ϣⲟ",
+          "english": "ex-",
+          "basis": "Editor's restoration of split word ⲛⲉⲧ[ϣⲟ]ⲟⲡ 'those that exist'",
+          "source_id": 54,
+          "section": 4251
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Arms ↔ ears correspondence."
     },
@@ -1014,6 +1622,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲡ ⲍⲙ̄ ⲡϥ̄ϣⲁⲣⲡ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲉⲧⲙ̄ⲡⲥⲁⲛⲧⲡⲉ ⲙⲛ ⲧⲉϥ",
       "core_english": "ist in his first cosmos that is of the upper side; with his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cross-reference to first cosmos."
     },
@@ -1024,6 +1633,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲓⲃⲉ ⲥⲛ̄ⲧⲉ ⲛⲉⲧϣⲟⲟⲡ ⲁⲡⲉⲓⲛⲉ ⲛ̄ⲛⲉϥⲙⲁⲛ̄ϣⲱⲗⲙⲉ",
       "core_english": "two breasts that exist according to the likeness of his places of smelling;",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Breasts ↔ smelling correspondence."
     },
@@ -1034,6 +1644,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲡⲃⲉⲗ ⲥⲛⲉⲩ ⲙ̄ⲡⲉϥⲍⲏⲧ ⲙⲛ̄ ⲡϣⲓⲭⲍϥ̄ ⲙ̄ⲡⲥⲧⲟⲙⲁ-",
       "core_english": "with the two eyes of his heart, with the depth of his stoma-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Eyes of heart, stomach."
     },
@@ -1044,6 +1655,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲟⲥ ⲉⲧⲟⲩⲧⲱϥ ⲉⲧⲟⲩⲧⲱϥ ⲛ̄ⲧⲕⲓⲃⲉ ⲥⲛ̄ⲧⲉ ⲉⲧⲍⲛ̄ ⲧⲙⲉⲥⲧ-",
       "core_english": "ch which is right between, between the two breasts that are in the breast-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Stomach between breasts."
     },
@@ -1054,6 +1666,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲏⲧ ⲁⲡⲓⲛⲉ ⲛ̄ⲧⲧⲁⲡⲣⲟ ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲟⲩⲛ ⲥⲁϣϥ̄ ⲛ-",
       "core_english": "of-the-heart, according to the likeness of the mouth. Once again, then, seven",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Stomach ↔ mouth. Third cosmos transition."
     },
@@ -1064,6 +1677,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲣⲭⲱⲛ ϣⲟⲟⲡ ⲍⲙ̄ ⲡⲙⲁⲍϣⲁⲙⲧ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲥⲱⲙⲁ",
       "core_english": "archons exist in the third cosmos of the body,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third cosmos archons."
     },
@@ -1074,6 +1688,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉ̣ⲧⲉ̣ ⲛⲉⲓ̈ ⲛⲉ ⲡⲱⲧ ⲡⲟⲩⲁϥ ⲡⲛⲁⲗϣ ⲡⲍⲏⲡⲁⲣ ⲡⲥⲓϣⲉ",
       "core_english": "which are these: the ⲡⲱⲧ, the ⲡⲟⲩⲁϥ, the ⲡⲛⲁⲗⲱ, the liver, the bile,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Third cosmos enumeration."
     },
@@ -1084,6 +1699,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲡⲉϥⲟ̄ⲗⲱⲧ ⲥⲛ̄ⲧⲉ ⲡⲙⲁⲍϥⲧⲁⲩ ⲛⲕⲟⲥⲙⲟⲥ ⲁⲛ ⲉ̣ⲧⲙ̄-",
       "core_english": "with his two kidneys. The fourth cosmos again, which is of",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Two kidneys; transition to fourth."
     },
@@ -1094,6 +1710,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲧⲛⲉ ⲟⲩⲛ ⲕⲉⲥⲁϣϥ̄ ⲛ̄ⲍⲏⲧϥ̄ ⲙⲡⲓⲥⲙⲁⲧ ⲡⲓⲥⲙⲁⲧ ⲡⲉϥ-",
       "core_english": "the lower part — there are also seven within it, of this manner. This manner: his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth cosmos archons begin."
     },
@@ -1104,6 +1721,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉⲧⲉ ⲥⲛⲉⲩ ⲙⲛ̄ ⲡⲉϥⲭⲁⲓ̈ⲧ ⲥⲛⲉⲩ ⲙⲛ̄ ⲧⲉϥⲕⲉⲍⲧⲉ ⲥⲛ̄ⲧⲉ",
       "core_english": "two ⲧⲉⲧⲉ, with his two ⲭⲁⲓ̈ⲧ, with his two thighs,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Lower-body archons."
     },
@@ -1114,6 +1732,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲛ ⲡⲙⲉⲗⲟⲥ ⲉⲧⲉⲣⲉ ⲡⲟ̄ⲣⲁⲟ̄ ⲛⲏⲩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁϥ ⲡⲉⲧⲭⲡⲟ",
       "core_english": "and the member from which the seed comes forth, which begets",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Seed-member."
     },
@@ -1124,6 +1743,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲙ̄ⲙⲟⲣⲫⲁⲩⲉ ⲧⲏⲣⲟⲩ",
       "core_english": "all the forms.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "All forms."
     },
@@ -1134,6 +1754,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲥ ⲙⲛ̄ ⲡⲧⲁⲩⲣⲟⲥ ⲡⲁ̣ⲓⲁⲩⲙⲟⲥ ⲡⲕⲁⲣⲕⲓⲛⲟⲥ ⲡⲗⲉⲱⲛ",
       "core_english": "es with the Taurus, the Gemini, the Cancer, the Leo,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiac enumeration."
     },
@@ -1144,6 +1765,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲡⲍⲩⲅⲟⲥ ⲡⲥⲕⲟⲣⲡⲓⲟⲥ ⲡⲧⲟⲝⲟⲧⲏⲥ ⲡⲁⲓ-",
       "core_english": "the Virgo, the Libra, the Scorpio, the Sagittarius, the Ai-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiac enumeration."
     },
@@ -1154,6 +1776,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲅⲟⲉⲣⲟⲥ ⲡⲍⲩⲇⲣⲏⲭⲟⲟⲥ ⲙⲛ̄ ⲡⲓⲭⲑⲩⲥ ⲛⲉⲓ̈ ⲛⲉ ⲡⲙⲛⲧ-",
       "core_english": "gokeros, the Hydrochoos, with the Ichthys — these are the twel-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Capricorn through Pisces."
     },
@@ -1164,6 +1787,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲛⲁⲩⲥ ⲛⲍⲱⲇⲓⲟⲛ ⲛⲉⲧϣⲟⲟⲡ ⲍⲛ̄ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲡⲉ ⲉⲧⲍⲛ̄",
       "core_english": "ve zodiac-signs that exist in the cosmoi of the upper place that are in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Twelve zodiacs in cosmoi above."
     },
@@ -1174,6 +1798,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲥⲫⲁⲓⲣⲁ ⲉⲩⲭⲁⲗⲭ ⲉⲩⲙⲏⲣ ⲍⲙ̄ ⲡⲓⲧⲣⲟⲭⲟⲥ ⲉⲧⲕⲱⲧⲉ ⲡⲉ-",
       "core_english": "the sphere, mingled, bound in this wheel that turns, in which",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiacs in turning wheel."
     },
@@ -1184,6 +1809,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲟⲩⲧⲣⲁⲓ̈ⲧ ⲉⲩⲁϥⲧ ⲉⲩⲭⲁⲓ̈ⲧ ⲛ̄ⲍⲏⲧϥ̄ ⲉⲕⲓ ⲇⲉ ⲁⲡⲓⲙⲛⲧⲥⲛⲁⲩⲥ",
       "core_english": "they are stationed, they are fixed, they are placed within. And coming to all the twelve",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiacs fixed."
     },
@@ -1194,6 +1820,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣⲟⲩ ⲛ̄ⲍⲱⲇⲓⲟⲛ ⲧⲍⲉ ⲧⲉ ⲧⲉⲓ̈ ⲉⲧⲁⲩⲧⲁϣⲟⲩ ⲁⲩⲉⲉⲩ ⲛ̄ⲭⲱⲭ",
       "core_english": "zodiac-signs: this is the manner in which they have been appointed, made into a circuit",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiacs in circuit."
     },
@@ -1202,8 +1829,19 @@
       "chapter": 70,
       "line": 139,
       "classification": "cosmological_substrate",
-      "core_coptic": "{96}ⲟⲥ ⲉⲧⲍⲛ̄ ⲧⲥⲫⲁⲓⲣⲁ ⲉ̣ⲧⲍⲁ ⲧⲡⲉ ⲉⲧⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲡⲉ ⲛ̄ⲛ-",
-      "core_english": "{97}-os that are in the sphere that is above the heaven, which is the wheel of the",
+      "core_coptic": "{48}ⲟⲥ ⲉⲧⲍⲛ̄ ⲧⲥⲫⲁⲓⲣⲁ ⲉ̣ⲧⲍⲁ ⲧⲡⲉ ⲉⲧⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲡⲉ ⲛ̄ⲛ-",
+      "core_english": "{48}-os that are in the sphere that is above the heaven, which is the wheel of the",
+      "apparatus": [
+        {
+          "id": 48,
+          "segment": 139,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ending in -ⲟⲥ",
+          "source_id": 56,
+          "section": 4271
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wheel of stars."
     },
@@ -1212,8 +1850,9 @@
       "chapter": 70,
       "line": 140,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲓⲟⲩ ⲥⲉⲧⲏϣ ⲟⲩⲛ ⲙⲡⲓⲣⲏⲧⲉ ⲥⲉⲭⲁⲛϥ̄ ⲁⲧⲣⲉⲕⲟ̄ⲛ ⲧⲁⲡⲉ ⲛ̄- {98}",
-      "core_english": "stars. They are appointed, then, in this manner, they are set so as to make ⲕⲟ̄ⲛ a head of {99}",
+      "core_coptic": "ⲥⲓⲟⲩ ⲥⲉⲧⲏϣ ⲟⲩⲛ ⲙⲡⲓⲣⲏⲧⲉ ⲥⲉⲭⲁⲛϥ̄ ⲁⲧⲣⲉⲕⲟ̄ⲛ ⲧⲁⲡⲉ ⲛ̄- {49}",
+      "core_english": "stars. They are appointed, then, in this manner, they are set so as to make ⲕⲟ̄ⲛ a head of {49}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Stars appointed."
     },
@@ -1223,7 +1862,17 @@
       "line": 141,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲕⲟ̄ⲛ ⲡⲥⲉⲧ ⲇⲉ ⲍⲱϥ . . ⲉⲟⲩⲉ",
-      "core_english": "of ⲕⲟ̄ⲛ. The fire (?), itself, {100} ...eoue",
+      "core_english": "of ⲕⲟ̄ⲛ. The fire (?), itself, {50} ...eoue",
+      "apparatus": [
+        {
+          "id": 50,
+          "segment": 141,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 58,
+          "section": 4273
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fragmentary cosmic continuation."
     },
@@ -1232,8 +1881,18 @@
       "chapter": 70,
       "line": 142,
       "classification": "cosmological_substrate",
-      "core_coptic": "{101} ⲥⲉϣⲟⲟⲡ ⲁⲛ ⲙⲡⲓⲣⲏⲧⲉ ⲛⲭⲓ",
-      "core_english": "{102} they exist also in this manner of receiving",
+      "core_coptic": "{51} ⲥⲉϣⲟⲟⲡ ⲁⲛ ⲙⲡⲓⲣⲏⲧⲉ ⲛⲭⲓ",
+      "core_english": "{51} they exist also in this manner of receiving",
+      "apparatus": [
+        {
+          "id": 51,
+          "segment": 142,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 59,
+          "section": 4274
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation."
     },
@@ -1244,6 +1903,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲉⲓ̈ ⲉⲧⲁⲛⲧⲉⲟⲩⲁⲩ ⲥⲁ ⲛⲉⲩⲉⲣⲏⲩ ⲙ̄ⲡⲓⲥⲱⲙⲁ ⲥⲉⲱⲡ",
       "core_english": "These things that we have proclaimed concerning one another of this body, they are reckoned",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Reckoning of zodiac body parts."
     },
@@ -1254,6 +1914,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁⲩ ⲍⲛ̄ ⲟⲩⲏⲡⲉ ⲙⲛ̄ ⲟⲩⲁⲣⲓⲑⲙⲟⲥ ⲭⲛ̄ ⲧⲁⲡⲉ ϣⲁ ⲛⲟⲩ",
       "core_english": "there in a count and a number, from head down to",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Count and number."
     },
@@ -1264,6 +1925,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲏⲧⲉ ⲧⲉϩⲁⲡⲉ ⲡⲉ ⲡⲕⲣⲓⲟⲥ ⲡⲉϩⲙⲟⲩⲧ ⲙⲛ̄ ⲛⲉϩⲛⲁ",
       "core_english": "feet. His head is the Ram; his neck and his shoul-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Head ↔ Ram."
     },
@@ -1274,6 +1936,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲃ ⲡⲉ ⲡⲧⲁⲩⲣⲟⲥ ⲡⲉϩⲭⲛⲁⲍ ⲥⲛⲉⲩ ⲡⲁ̣ⲇⲁⲩⲙⲟⲥ",
       "core_english": "ders are the Bull; his two arms are the Twins;",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Neck ↔ Bull, arms ↔ Twins."
     },
@@ -1284,6 +1947,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉϩϣⲁϣⲡⲉ ⲡⲉ ⲡⲕⲁⲣⲕⲓⲛⲟⲥ ⲡⲉϩⲥⲧⲟⲙⲁⲭⲟⲥ ⲡⲉ",
       "core_english": "his breast is the Crab; his stomach is",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Breast ↔ Crab."
     },
@@ -1292,8 +1956,20 @@
       "chapter": 70,
       "line": 148,
       "classification": "cosmological_substrate",
-      "core_coptic": "{103}ⲗⲉⲱⲛ ⲍⲏⲧϥ̄ ⲡⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲡⲕⲉⲥ ⲛ̄ⲝ̣ⲓⲥⲉ ⲛ̄ⲧ-",
-      "core_english": "{104}Lion; his belly is the Virgin; the bone of his loin of",
+      "core_coptic": "{52}ⲗⲉⲱⲛ ⲍⲏⲧϥ̄ ⲡⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲡⲕⲉⲥ ⲛ̄ⲝ̣ⲓⲥⲉ ⲛ̄ⲧ-",
+      "core_english": "{52}Lion; his belly is the Virgin; the bone of his loin of",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 148,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "definite article restored before ⲗⲉⲱⲛ",
+          "source_id": 60,
+          "section": 4280
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Stomach ↔ Lion, belly ↔ Virgin."
     },
@@ -1302,8 +1978,20 @@
       "chapter": 70,
       "line": 149,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ{105}ⲓ̈ⲏⲛⲥ ⲙⲛ̄ ⲛⲉϩϣⲡⲁⲧ ⲡⲉ ⲡⲍⲩⲅⲟⲥ ⲕⲟⲩⲟⲩⲛϥ̄ ⲡⲉ",
-      "core_english": "(his) sup{106}port and his thighs are the Scales; his groin is",
+      "core_coptic": "ⲁ{53}ⲓ̈ⲏⲛⲥ ⲙⲛ̄ ⲛⲉϩϣⲡⲁⲧ ⲡⲉ ⲡⲍⲩⲅⲟⲥ ⲕⲟⲩⲟⲩⲛϥ̄ ⲡⲉ",
+      "core_english": "(his) sup{53}port and his thighs are the Scales; his groin is",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 149,
+          "type": "restoration",
+          "coptic": "ⲙⲁ",
+          "english": "(syllable of) support",
+          "basis": "ⲁ[ⲙⲁ]ⲓ̈ⲏⲛⲥ — middle syllable of the body-part term ⲁⲙⲁⲓⲏⲛⲥ already attested elsewhere meaning 'support, foundation'",
+          "source_id": 61,
+          "section": 4281
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Thighs ↔ Scales."
     },
@@ -1312,8 +2000,30 @@
       "chapter": 70,
       "line": 150,
       "classification": "cosmological_substrate",
-      "core_coptic": "{107}ⲕⲟⲣⲡⲓⲟⲥ ⲛⲉϩⲕⲉⲍⲧⲉ ⲡⲉ ⲡⲧⲟϫⲟⲧⲏⲥ ⲛⲉϩⲡⲉⲧ ⲡ{108}",
-      "core_english": "{109}Scorpion; his thighs are the Archer; his knees ar{110}",
+      "core_coptic": "{54}ⲕⲟⲣⲡⲓⲟⲥ ⲛⲉϩⲕⲉⲍⲧⲉ ⲡⲉ ⲡⲧⲟϫⲟⲧⲏⲥ ⲛⲉϩⲡⲉⲧ ⲡ{55}",
+      "core_english": "{54}Scorpion; his thighs are the Archer; his knees ar{55}",
+      "apparatus": [
+        {
+          "id": 54,
+          "segment": 150,
+          "type": "restoration",
+          "coptic": "ⲡⲥ",
+          "english": "the Sc-",
+          "basis": "[ⲡⲥ]ⲕⲟⲣⲡⲓⲟⲥ — definite article + initial letters of 'Scorpion'",
+          "source_id": 62,
+          "section": 4282
+        },
+        {
+          "id": 55,
+          "segment": 150,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(copular)",
+          "basis": "ⲡ[ⲉ] copular particle restored at line end",
+          "source_id": 63,
+          "section": 4282
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Groin ↔ Scorpion."
     },
@@ -1322,8 +2032,20 @@
       "chapter": 70,
       "line": 151,
       "classification": "cosmological_substrate",
-      "core_coptic": "{111}ⲟⲕⲉⲣⲟⲥ ⲛ̄ⲥⲛϩⲉ ⲛ̄ⲣⲉⲧϥ̄ ⲡⲉ ⲡⲍⲩⲇⲣⲏⲭⲟⲟⲥ",
-      "core_english": "{112}-corn; the calves of his legs are the Water-Pourer;",
+      "core_coptic": "{56}ⲟⲕⲉⲣⲟⲥ ⲛ̄ⲥⲛϩⲉ ⲛ̄ⲣⲉⲧϥ̄ ⲡⲉ ⲡⲍⲩⲇⲣⲏⲭⲟⲟⲥ",
+      "core_english": "{56}-corn; the calves of his legs are the Water-Pourer;",
+      "apparatus": [
+        {
+          "id": 56,
+          "segment": 151,
+          "type": "restoration",
+          "coptic": "ⲡⲁⲓⲣ",
+          "english": "the Capri- (initial syllables)",
+          "basis": "[ⲡⲁⲓⲣ]ⲟⲕⲉⲣⲟⲥ = 'the Capricorn (αἰγόκερως)' — only the latter part survives",
+          "source_id": 64,
+          "section": 4283
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Knees ↔ Capricorn."
     },
@@ -1334,6 +2056,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲁⲡ ⲛ̄ⲛⲉϩⲟⲩⲣⲏⲧⲉ ⲡⲉ ⲡⲓⲭⲑⲩⲥ ⲉⲓⲥ ⲛⲉⲓ̈ ⲍⲱⲩ",
       "core_english": "the soles of his feet are the Fish. Behold these themselves",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Soles ↔ Fish — closes whole-body zodiac."
     },
@@ -1344,6 +2067,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩⲥⲏⲣ ⲁⲃⲁⲗ ⲥⲁ ⲛⲉⲩⲉⲣⲏⲩ ⲥⲉϣⲟⲟⲡ ⲍⲙ̄ ⲡⲓⲥⲱⲙⲁ",
       "core_english": "are spread forth one alongside another; they exist in this body",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiac spread in body."
     },
@@ -1354,6 +2078,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩⲡⲁϣⲥ̄ ⲉⲩⲣⲁⲕⲉ ⲁⲡⲓⲛⲉ ⲙ̄ⲡⲓⲙⲛ̄ⲧⲥⲛⲁⲩⲥ ⲛ̄ⲍⲱ-",
       "core_english": "divided, inclined unto the likeness of the twelve zodiac-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Body in likeness of twelve."
     },
@@ -1364,6 +2089,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲭⲁⲁⲛϥ̄ ⲍⲱⲱⲩ ⲥⲉϣⲏϣ ⲟⲩⲃⲉ ⲛⲉⲩⲉⲣⲏⲩ ⲧⲁⲡⲉ",
       "core_english": "(creatures); they are themselves placed, weighed against one another, head",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Zodiacs balanced."
     },
@@ -1372,8 +2098,30 @@
       "chapter": 70,
       "line": 156,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲃⲉ ⲡⲥⲉⲧ ⲧ{113}ⲉ {114}ⲧⲟⲩϣⲟⲟⲡ ⲙ̄ⲙⲁⲥ ⲍⲙ̄ ⲡⲧⲣⲟⲭⲟⲥ",
-      "core_english": "against the foundation. The {115}manner in which they exist in the wheel",
+      "core_coptic": "ⲟⲩⲃⲉ ⲡⲥⲉⲧ ⲧ{57}ⲉ {58}ⲧⲟⲩϣⲟⲟⲡ ⲙ̄ⲙⲁⲥ ⲍⲙ̄ ⲡⲧⲣⲟⲭⲟⲥ",
+      "core_english": "against the foundation. The {57}manner in which they exist in the wheel",
+      "apparatus": [
+        {
+          "id": 57,
+          "segment": 156,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "(letter of 'manner')",
+          "basis": "ⲧ[ⲍ]ⲉ = 'the manner' — Lycopolitan ⲧⲍⲉ for ⲧϩⲉ",
+          "source_id": 65,
+          "section": 4288
+        },
+        {
+          "id": 58,
+          "segment": 156,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(relative prefix)",
+          "basis": "[ⲉ]ⲧⲟⲩϣⲟⲟⲡ = 'in which they exist' — relative ⲉⲧ-",
+          "source_id": 66,
+          "section": 4288
+        }
+      ],
       "removed_material": null,
       "temporal_note": "In the wheel."
     },
@@ -1382,8 +2130,20 @@
       "chapter": 70,
       "line": 157,
       "classification": "cosmological_substrate",
-      "core_coptic": "{116} ⲁⲧⲡⲉ",
-      "core_english": "{117} above.",
+      "core_coptic": "{59} ⲁⲧⲡⲉ",
+      "core_english": "{59} above.",
+      "apparatus": [
+        {
+          "id": 59,
+          "segment": 157,
+          "type": "lacuna",
+          "segment_comment": "see partial",
+          "est_chars": 11,
+          "partial": "ⲉ ⲉⲉⲧ",
+          "source_id": 67,
+          "section": 4289
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Above."
     },
@@ -1394,6 +2154,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲉⲱⲡ ⲙ̄ⲙⲁⲩ ⲍⲱⲱⲩ ⲍⲛ̄",
       "core_english": "They themselves are reckoned in",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Reckoning."
     },
@@ -1404,6 +2165,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲡⲉ ⲍⲙ̄ ⲡⲁⲣⲓⲑⲙⲟⲥ ⲙ̄ⲡⲥⲱⲙⲁ ⲙⲛ̄ ⲛⲉϩⲙⲉⲗⲟⲥ ⲧⲏ-",
       "core_english": "the count, in the number of the body and his members",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Count of body members."
     },
@@ -1414,6 +2176,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲟⲩ ⲡⲉⲧⲁⲛⲧⲉⲟⲩⲁϩ ⲇⲉ ⲭⲉ ⲥⲉⲡⲁϣⲥ̄ ⲥⲉⲣⲁⲕⲉ ⲥⲉⲡⲁ-",
       "core_english": "all. What we have proclaimed, that they are divided, they incline, they are",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Recapitulation."
     },
@@ -1424,6 +2187,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣϣ ⲡⲉⲓ̈ ⲡⲉ ⲉⲡⲉⲓⲇⲏ ⲭⲛ̄ ⲛ̄ⲧⲉϩⲁⲡⲉ ⲁⲡⲓⲧⲛⲉ ϣⲁ ⲧⲉϩ-",
       "core_english": "spread — this is, since from his head downward unto his",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "From head down."
     },
@@ -1434,6 +2198,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲡⲉ ϣⲁⲩⲱⲡ ⲥⲁⲩ ⲥⲁ ⲟⲃⲟⲩⲣ ⲙ̄ⲙⲁϩ ⲕⲉⲥⲁⲩ ⲥⲁ ⲟⲩⲛⲉⲙ",
       "core_english": "ankle, one half is reckoned to the left side of him, another half to the right",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right/left split begins."
     },
@@ -1444,6 +2209,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁϩ ⲡⲥⲁⲩ ⲉⲧⲍⲛ̄ ⲧⲉϩⲟⲩⲛⲉⲙ ⲁⲡⲓⲧⲛⲉ ⲡⲉ ⲛⲉⲓ̈ ⲉ̄ϯ-",
       "core_english": "of him. The half that is on his right going downward — these I am about",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right side enumeration."
     },
@@ -1454,6 +2220,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲁⲧⲉⲟⲩⲁⲩ ⲡⲥ̄ⲙⲉⲩ ⲛ̄ⲟⲩⲛⲉⲙ ⲡⲉ ⲡⲕⲣⲓⲟⲥ ⲧⲉϩⲛⲁⲍ-",
       "core_english": "to proclaim. The right side-of-the-head is the Ram; his right shoul-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right head ↔ Ram."
     },
@@ -1464,6 +2231,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲉ ⲛ̄ⲟⲩⲛⲉⲙ ⲡⲉ ⲡⲧⲁⲩⲣⲟⲥ ⲡⲉϩⲭⲛⲁⲍ ⲛ̄ⲟⲩⲛⲉⲙ ⲡⲉ",
       "core_english": "der is the Bull; his right arm is",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right shoulder ↔ Bull."
     },
@@ -1474,6 +2242,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁ̣ⲇⲁⲩⲙⲟⲥ ⲡⲉϩⲥⲡⲓⲣ ⲛ̄ⲟⲩⲛⲉⲙ ⲡⲉ ⲡⲕⲁⲣⲕⲓⲛⲟⲥ",
       "core_english": "the Twins; his right rib is the Crab;",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right rib ↔ Crab."
     },
@@ -1484,6 +2253,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉϩⲥⲧⲟⲙⲁⲭⲟⲥ ⲡⲉ ⲡⲗⲉⲱⲛ ⲡⲥⲁ ⲛ̄ⲟⲩⲛⲉⲙ ⲛ̄ⲛⲉϩⲁⲧⲉ",
       "core_english": "his stomach is the Lion; the right side of his entrails",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Stomach ↔ Lion."
     },
@@ -1492,8 +2262,9 @@
       "chapter": 70,
       "line": 168,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲡⲕⲉⲥ{118} ⲍⲱⲱϩ ⲉⲧⲁⲛⲭⲟⲟⲥ ⲉ-",
-      "core_english": "is the Virgin. The other half{119} also that we have spoken",
+      "core_coptic": "ⲡⲉ ⲡⲡⲁⲣⲑⲉⲛⲟⲥ ⲡⲕⲉⲥ{60} ⲍⲱⲱϩ ⲉⲧⲁⲛⲭⲟⲟⲥ ⲉ-",
+      "core_english": "is the Virgin. The other half{60} also that we have spoken",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Right entrails ↔ Virgin; transition to left."
     },
@@ -1504,6 +2275,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲃⲏⲧⲟⲩ ⲭⲉ ⲥⲉϣⲟⲟⲡ ⲥⲁⲟⲃⲟⲩⲣ ⲙ̄ⲙⲁϩ ⲉⲩⲛⲏⲩ ⲍⲱ-",
       "core_english": "concerning, that they exist on the left side of him, themselves coming",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Left side enumeration."
     },
@@ -1512,8 +2284,9 @@
       "chapter": 70,
       "line": 170,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲱϩ ⲭⲛ̄ ⲛ̄ⲧⲉϩⲧⲡⲉ ϣⲁ ⲧⲉϩⲁⲡⲉ ⲧϩⲟⲃⲣⲁⲥⲟⲩⲛ {120}",
-      "core_english": "up from his ankle unto his head: the left-hip-region {121}",
+      "core_coptic": "ⲱϩ ⲭⲛ̄ ⲛ̄ⲧⲉϩⲧⲡⲉ ϣⲁ ⲧⲉϩⲁⲡⲉ ⲧϩⲟⲃⲣⲁⲥⲟⲩⲛ {61}",
+      "core_english": "up from his ankle unto his head: the left-hip-region {61}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Left hip-region."
     },
@@ -1522,8 +2295,9 @@
       "chapter": 70,
       "line": 171,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ ⲡⲍⲩⲅⲟⲥ ⲡϥ̄ⲥⲡⲓⲣ ⲛ̄ⲟⲃⲟⲩⲣ ⲡⲉ ⲡⲥⲕⲟⲣⲡⲓ{122}",
-      "core_english": "is the Scales; his left rib is the Scor{123}-pion;",
+      "core_coptic": "ⲡⲉ ⲡⲍⲩⲅⲟⲥ ⲡϥ̄ⲥⲡⲓⲣ ⲛ̄ⲟⲃⲟⲩⲣ ⲡⲉ ⲡⲥⲕⲟⲣⲡⲓ{62}",
+      "core_english": "is the Scales; his left rib is the Scor{62}-pion;",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Left mappings."
     },
@@ -1532,8 +2306,9 @@
       "chapter": 70,
       "line": 172,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉϩⲕⲓⲃⲉ ⲛ̄ⲟⲃⲟⲩⲣ ⲙⲛ̄ ⲧⲟⲗⲱⲧⲉ ⲛ̄ⲟⲃⲟⲩⲣ {124}",
-      "core_english": "his left loin and the left kidney {125}",
+      "core_coptic": "ⲡⲉϩⲕⲓⲃⲉ ⲛ̄ⲟⲃⲟⲩⲣ ⲙⲛ̄ ⲧⲟⲗⲱⲧⲉ ⲛ̄ⲟⲃⲟⲩⲣ {63}",
+      "core_english": "his left loin and the left kidney {63}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Left loin/kidney."
     },
@@ -1542,8 +2317,9 @@
       "chapter": 70,
       "line": 173,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϫⲟⲧⲏⲥ ⲡⲉϩⲕⲁⲗⲁⲛⲕⲉⲍ ⲛ{126}-",
-      "core_english": "-cher; his {127}-corn",
+      "core_coptic": "ϫⲟⲧⲏⲥ ⲡⲉϩⲕⲁⲗⲁⲛⲕⲉⲍ ⲛ{64}-",
+      "core_english": "-cher; his {64}-corn",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Left mappings."
     },
@@ -1552,8 +2328,29 @@
       "chapter": 70,
       "line": 174,
       "classification": "cosmological_substrate",
-      "core_coptic": "{128} ⲧⲉϩⲛⲁⲍⲃⲉ ⲛ̄ⲃⲟⲩⲣ ⲡⲉ ⲡⲍⲩⲇⲣⲏⲭⲟⲟ{129}",
-      "core_english": "{130}; his left tooth is the Hydrochoos {131}",
+      "core_coptic": "{65} ⲧⲉϩⲛⲁⲍⲃⲉ ⲛ̄ⲃⲟⲩⲣ ⲡⲉ ⲡⲍⲩⲇⲣⲏⲭⲟⲟ{66}",
+      "core_english": "{65}; his left tooth is the Hydrochoos {66}",
+      "apparatus": [
+        {
+          "id": 65,
+          "segment": 174,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲣⲟⲥ",
+          "source_id": 73,
+          "section": 4306
+        },
+        {
+          "id": 66,
+          "segment": 174,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "[Aquarius]",
+          "basis": "Single-letter restoration completing Greek ὑδροχόος (Aquarius); the Coptic ⲡⲍⲩⲇⲣⲏⲭⲟⲟ requires final ⲥ.",
+          "source_id": 74,
+          "section": 4306
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Left tooth ↔ Water-Pourer."
     },
@@ -1562,8 +2359,29 @@
       "chapter": 70,
       "line": 175,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉϩⲥⲙⲉⲩ ⲛ̄ⲃⲟⲩⲣ ⲡⲉ ⲡⲓⲭⲑⲩⲥ ⲧⲍⲉ ⲧⲉ ⲧⲉⲓ̈ {132}",
-      "core_english": "his left {133} is the Ichthus [Pisces]. Such is this {134}",
+      "core_coptic": "ⲡⲉϩⲥⲙⲉⲩ ⲛ̄ⲃⲟⲩⲣ ⲡⲉ ⲡⲓⲭⲑⲩⲥ ⲧⲍⲉ ⲧⲉ ⲧⲉⲓ̈ {67}",
+      "core_english": "his left {68} is the Ichthus [Pisces]. Such is this {67}",
+      "apparatus": [
+        {
+          "id": 67,
+          "segment": 175,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲁ",
+          "english": "which the",
+          "basis": "Editor restoration: introduces relative clause continuing into line 3 ('which the demiurge of the body...').",
+          "source_id": 75,
+          "section": 4307
+        },
+        {
+          "id": 68,
+          "segment": 175,
+          "type": "lacuna",
+          "est_chars": 0,
+          "partial": "ⲥⲙⲉⲩ — body part of unidentified type, paired with 'left' (cf. line 1 'left tooth'); possibly a Lycopolitan term for jaw, eyebrow, or other facial body-part. Translated 'X' since the term is physically present but not securely identifiable.",
+          "source_id": 76,
+          "section": 4307
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Left ↔ Pisces."
     },
@@ -1572,8 +2390,20 @@
       "chapter": 70,
       "line": 176,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲇⲁⲙⲙⲟⲩⲣⲅⲟⲥ ⲙ̄ⲡⲥⲱⲙⲁ ⲧⲁϣⲟⲩ ⲍⲱⲱϩ ⲁϩ{135}",
-      "core_english": "the demiurge of the body multiplied them himself, he {136}",
+      "core_coptic": "ⲡⲇⲁⲙⲙⲟⲩⲣⲅⲟⲥ ⲙ̄ⲡⲥⲱⲙⲁ ⲧⲁϣⲟⲩ ⲍⲱⲱϩ ⲁϩ{69}",
+      "core_english": "the demiurge of the body multiplied them himself, he {69}",
+      "apparatus": [
+        {
+          "id": 69,
+          "segment": 176,
+          "type": "restoration",
+          "coptic": "ⲍⲁⲣⲃⲟⲩ",
+          "english": "subjected them",
+          "basis": "Editor restoration; the verb continues into line 4 'ⲃⲟⲩ' (3pl object suffix), giving ⲍⲁⲣⲡ̄/ⲍⲁⲣⲃ̄ + 3pl object — a verb of subjection/oppression matching the parallel ⲁϩϣⲁϣⲟⲩ 'he scattered them' that follows.",
+          "source_id": 77,
+          "section": 4308
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Demiurge of body."
     },
@@ -1582,8 +2412,20 @@
       "chapter": 70,
       "line": 177,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲟⲩ ⲁϩϣⲁϣⲟⲩ ⲟⲩⲃⲉ ⲛⲉϩⲉⲣⲏⲩ ⲧⲁⲡⲉ ⲟⲩⲃⲉ ⲡ̄{137}",
-      "core_english": "[subjected] them, he scattered them against one another, head against {138}",
+      "core_coptic": "ⲃⲟⲩ ⲁϩϣⲁϣⲟⲩ ⲟⲩⲃⲉ ⲛⲉϩⲉⲣⲏⲩ ⲧⲁⲡⲉ ⲟⲩⲃⲉ ⲡ̄{70}",
+      "core_english": "[subjected] them, he scattered them against one another, head against {70}",
+      "apparatus": [
+        {
+          "id": 70,
+          "segment": 177,
+          "type": "restoration",
+          "coptic": "ⲥⲉⲧ",
+          "english": "[feet]",
+          "basis": "Editor restoration. The trace ⲡ̄[ⲥⲉⲧ] = 'feet' (= ⲡⲁⲧ/ⲣⲁⲧ); the antithetical doublet 'head against feet' is the standard Coptic idiom for total internal conflict.",
+          "source_id": 78,
+          "section": 4309
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Scattered against one another."
     },
@@ -1592,8 +2434,20 @@
       "chapter": 70,
       "line": 179,
       "classification": "mixed",
-      "core_coptic": "ⲭⲉ ⲟⲩⲛ̄ ⲍⲛ̄ⲃⲁⲙ ⲉⲛⲁϣⲱⲟⲩ ϣⲟ{139}",
-      "core_english": "there are powers, many, dwell{140}",
+      "core_coptic": "ⲭⲉ ⲟⲩⲛ̄ ⲍⲛ̄ⲃⲁⲙ ⲉⲛⲁϣⲱⲟⲩ ϣⲟ{71}",
+      "core_english": "there are powers, many, dwell{71}",
+      "apparatus": [
+        {
+          "id": 71,
+          "segment": 179,
+          "type": "restoration",
+          "coptic": "ⲡⲧ",
+          "english": "ing",
+          "basis": "Editor restoration completing ϣⲟⲡⲧ̄ qualitative of ϣⲱⲡⲉ 'become, exist, dwell.'",
+          "source_id": 80,
+          "section": 4310
+        }
+      ],
       "removed_material": "Strip 'I shall proclaim unto you in truth' — apostolic frame.",
       "temporal_note": "Substantive cosmological proposition wrapped in frame."
     },
@@ -1602,8 +2456,20 @@
       "chapter": 70,
       "line": 180,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲙ ⲡⲓⲥⲱⲙⲁ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ ⲛ̄ⲣⲙ̄ⲛ̄ⲏⲓ̈ ⲉⲧⲟ ⲛ̄ⲁⲛⲝⲱ{141}",
-      "core_english": "in this body, who are the inhabitants who are princip{142}",
+      "core_coptic": "ⲍⲙ ⲡⲓⲥⲱⲙⲁ ⲉⲧⲉ ⲛ̄ⲧⲁⲩ ⲛⲉ ⲛ̄ⲣⲙ̄ⲛ̄ⲏⲓ̈ ⲉⲧⲟ ⲛ̄ⲁⲛⲝⲱ{72}",
+      "core_english": "in this body, who are the inhabitants who are princip{72}",
+      "apparatus": [
+        {
+          "id": 72,
+          "segment": 180,
+          "type": "restoration",
+          "coptic": "ⲭ",
+          "english": "alities",
+          "basis": "Editor restoration completing ⲁⲛⲝⲱⲭ 'principalities' (already in vocabulary).",
+          "source_id": 81,
+          "section": 4311
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers/inhabitants in body."
     },
@@ -1612,8 +2478,20 @@
       "chapter": 70,
       "line": 181,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲍⲏⲧϥ̄ ⲟⲩⲛ ϣⲙⲟⲩⲛ ⲛ̄ϣⲉ ⲙⲛ ⲍⲙⲉ ⲛ̄ⲧⲃⲁ ⲛ̄{143}",
-      "core_english": "in him: there are eight hundred and forty myriads of {144}",
+      "core_coptic": "ⲛ̄ⲍⲏⲧϥ̄ ⲟⲩⲛ ϣⲙⲟⲩⲛ ⲛ̄ϣⲉ ⲙⲛ ⲍⲙⲉ ⲛ̄ⲧⲃⲁ ⲛ̄{73}",
+      "core_english": "in him: there are eight hundred and forty myriads of {73}",
+      "apparatus": [
+        {
+          "id": 73,
+          "segment": 181,
+          "type": "restoration",
+          "coptic": "ⲁⲣ",
+          "english": "ar-",
+          "basis": "Editor restoration: word ⲁⲣⲭⲱⲛ 'archons' begins here and continues to line 9 'ⲭⲱⲛ.'",
+          "source_id": 82,
+          "section": 4312
+        }
+      ],
       "removed_material": null,
       "temporal_note": "840 myriads of archons."
     },
@@ -1622,8 +2500,30 @@
       "chapter": 70,
       "line": 182,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲱⲛ ⲉⲩⲟ ⲛ̄ⲁⲡⲉ ⲍⲙ̄ ⲡⲥ{145}ⲙⲁ ⲙⲡⲣⲱⲙⲉ ⲉⲩⲥⲏⲣ ⲁⲃ̄{146}",
-      "core_english": "-chons being heads in the b{147}dy of man, being spread fo{148}",
+      "core_coptic": "ⲭⲱⲛ ⲉⲩⲟ ⲛ̄ⲁⲡⲉ ⲍⲙ̄ ⲡⲥ{74}ⲙⲁ ⲙⲡⲣⲱⲙⲉ ⲉⲩⲥⲏⲣ ⲁⲃ̄{75}",
+      "core_english": "-chons being heads in the b{74}dy of man, being spread fo{75}",
+      "apparatus": [
+        {
+          "id": 74,
+          "segment": 182,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "o",
+          "basis": "Single-letter restoration completing ⲡⲥⲱⲙⲁ 'the body.'",
+          "source_id": 83,
+          "section": 4313
+        },
+        {
+          "id": 75,
+          "segment": 182,
+          "type": "restoration",
+          "coptic": "ⲁⲗ",
+          "english": "rth",
+          "basis": "Editor restoration completing ⲁⲃⲁⲗ 'forth' — the directional adverb following ⲥⲏⲣ 'spread.'",
+          "source_id": 84,
+          "section": 4313
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons as heads in body."
     },
@@ -1634,6 +2534,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲩⲧⲏⲕ ⲁⲣⲉⲧⲟⲩ ϩⲧⲁⲩ ϩⲧⲁⲩ ⲕⲁⲧⲁ ⲟⲓⲕⲟⲥ ⲧⲏⲡⲉ ⲙⲛ",
       "core_english": "standing fast four by four according to house. The number with",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Four by four houses."
     },
@@ -1644,6 +2545,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲁⲣⲓⲑⲙⲟⲥ ⲛ̄ⲛⲟⲩⲟⲓⲕⲟⲥ ⲡⲉ ϣⲏⲧ ⲙⲏⲧ ⲛ̄ⲧⲃⲁ",
       "core_english": "the number of their houses: it is two hundred and ten myriads.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "210 myriads of houses."
     },
@@ -1652,8 +2554,20 @@
       "chapter": 70,
       "line": 185,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲥⲁⲡ ⲉⲧⲉⲣⲉ ⲛⲓⲁⲣⲭⲱⲛ ⲧⲏⲣⲟⲩ ⲛⲁⲉⲓ ⲉⲩϣⲗⲏ ⲉⲩ{149}ⲁ",
-      "core_english": "At the time when all the archons shall come, crying out, w{150}",
+      "core_coptic": "ⲡⲥⲁⲡ ⲉⲧⲉⲣⲉ ⲛⲓⲁⲣⲭⲱⲛ ⲧⲏⲣⲟⲩ ⲛⲁⲉⲓ ⲉⲩϣⲗⲏ ⲉⲩ{76}ⲁ",
+      "core_english": "At the time when all the archons shall come, crying out, w{76}",
+      "apparatus": [
+        {
+          "id": 76,
+          "segment": 185,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "alking",
+          "basis": "Editor restoration of single letter ⲙ; the verb ⲙⲁⲍⲉ 'walk' (Lyc. for ⲙⲟⲟϣⲉ) begins here and continues to line 13.",
+          "source_id": 85,
+          "section": 4316
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons coming."
     },
@@ -1662,8 +2576,20 @@
       "chapter": 70,
       "line": 186,
       "classification": "cosmological_substrate",
-      "core_coptic": "{151}ⲟⲩⲛ ⲙⲡⲥⲱⲙⲁ ⲛ̄ⲥⲉⲧⲱⲙⲧ ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ϣⲁⲩ",
-      "core_english": "{152}ward into the body, then they meet one another, they",
+      "core_coptic": "{77}ⲟⲩⲛ ⲙⲡⲥⲱⲙⲁ ⲛ̄ⲥⲉⲧⲱⲙⲧ ⲛ̄ⲛⲉⲩⲉⲣⲏⲩ ϣⲁⲩ",
+      "core_english": "{77}ward into the body, then they meet one another, they",
+      "apparatus": [
+        {
+          "id": 77,
+          "segment": 186,
+          "type": "restoration",
+          "coptic": "ⲍⲉ ⲉⲓⲍ",
+          "english": "in",
+          "basis": "Editor restoration: ⲙⲁⲍⲉ ⲉⲓⲍⲟⲩⲛ 'walk inward' (Lyc. for ⲙⲟⲟϣⲉ ⲉϩⲟⲩⲛ) — the standard idiom for intrusive entry into the body.",
+          "source_id": 86,
+          "section": 4317
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons meet in body."
     },
@@ -1672,8 +2598,18 @@
       "chapter": 70,
       "line": 187,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲱⲃⲡ ⲛⲉⲩⲉⲣⲏⲩ ⲛ̄ⲥⲉⲧⲉⲕⲟ ⲛⲉⲩⲉⲣⲏⲩ ⲛⲥⲉ {153}",
-      "core_english": "rebuke one another, they destroy one another, they {154}",
+      "core_coptic": "ⲟⲩⲱⲃⲡ ⲛⲉⲩⲉⲣⲏⲩ ⲛ̄ⲥⲉⲧⲉⲕⲟ ⲛⲉⲩⲉⲣⲏⲩ ⲛⲥⲉ {78}",
+      "core_english": "rebuke one another, they destroy one another, they {78}",
+      "apparatus": [
+        {
+          "id": 78,
+          "segment": 187,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 87,
+          "section": 4318
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archons destroy each other."
     },
@@ -1682,8 +2618,20 @@
       "chapter": 70,
       "line": 188,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲍⲏⲧⲟⲩ ⲙⲉⲩ ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲍ{155}",
-      "core_english": "within them. There at the moment when {156}",
+      "core_coptic": "ⲛⲍⲏⲧⲟⲩ ⲙⲉⲩ ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲍ{79}",
+      "core_english": "within them. There at the moment when {79}",
+      "apparatus": [
+        {
+          "id": 79,
+          "segment": 188,
+          "type": "restoration",
+          "coptic": "ⲛⲃⲁⲙ",
+          "english": "some powers",
+          "basis": "Editor restoration of ⲍⲛ̄ⲃⲁⲙ 'some powers' (cf. ⲍⲛ̄ⲃⲁⲙ in line 6); fits the iterative cosmological enumeration pattern, though continuation is lost.",
+          "source_id": 88,
+          "section": 4319
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Process within them."
     },
@@ -1692,8 +2640,30 @@
       "chapter": 70,
       "line": 189,
       "classification": "cosmological_substrate",
-      "core_coptic": "{157}ⲥⲁⲡ ϣⲁⲩⲃⲁⲃⲟⲩ ⲁⲃⲁⲗ ⲙⲡⲥⲱⲙⲁ ⲙⲡⲣⲱⲙⲉ ⲉⲧϩ{158}",
-      "core_english": "{159}time, they are released forth from the body of the man who shall {160}",
+      "core_coptic": "{80}ⲥⲁⲡ ϣⲁⲩⲃⲁⲃⲟⲩ ⲁⲃⲁⲗ ⲙⲡⲥⲱⲙⲁ ⲙⲡⲣⲱⲙⲉ ⲉⲧϩ{81}",
+      "core_english": "{80}time, they are released forth from the body of the man who shall {81}",
+      "apparatus": [
+        {
+          "id": 80,
+          "segment": 189,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Editor restoration of single letter ⲡ; reconstructs ⲡⲥⲁⲡ 'the time' as resumption of the temporal-clause structure begun at line 12.",
+          "source_id": 89,
+          "section": 4320
+        },
+        {
+          "id": 81,
+          "segment": 189,
+          "type": "restoration",
+          "coptic": "ⲛⲁ",
+          "english": "shall",
+          "basis": "Editor restoration: ⲉⲧϩⲛⲁ 'who shall' (relative + future) introduces 'die in him' on line 17.",
+          "source_id": 90,
+          "section": 4320
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Released from dying body."
     },
@@ -1702,8 +2672,20 @@
       "chapter": 70,
       "line": 190,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲟⲩ ⲛ̄ⲍⲏⲧϩ ⲛ̄ⲥⲉⲣ̄ ⲓ̈ϩⲧ ⲉϩⲍⲁⲩ ⲍⲓ ⲥⲁϣ ⲍⲓ ⲡⲗⲏⲅⲏ ⲉϩ{161}",
-      "core_english": "die in him, and they are struck with evil, with stripe upon blow, with bur{162}",
+      "core_coptic": "ⲙⲟⲩ ⲛ̄ⲍⲏⲧϩ ⲛ̄ⲥⲉⲣ̄ ⲓ̈ϩⲧ ⲉϩⲍⲁⲩ ⲍⲓ ⲥⲁϣ ⲍⲓ ⲡⲗⲏⲅⲏ ⲉϩ{82}",
+      "core_english": "die in him, and they are struck with evil, with stripe upon blow, with bur{82}",
+      "apparatus": [
+        {
+          "id": 82,
+          "segment": 190,
+          "type": "restoration",
+          "coptic": "ⲣⲁ",
+          "english": "n",
+          "basis": "Editor restoration: ⲉϩⲣⲁⲭⲍ̄ 'burnings' — the Lyc. plural/abstract of ⲣⲱⲭⲍ̄ 'burn' (cf. accumulated vocab).",
+          "source_id": 91,
+          "section": 4321
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sicknesses arising from departing archons."
     },
@@ -1712,8 +2694,30 @@
       "chapter": 70,
       "line": 191,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲍ̄ ⲍⲙ̄ ⲡⲥⲱⲙⲁ ⲉⲓⲧⲉ ⲛⲉⲩⲁⲣϣⲱⲛⲉ ⲁⲣⲁ{163} ⲍⲓⲍⲟ{164}",
-      "core_english": "ning in the body, whether their sicknesses upon {165} (him), within {166}",
+      "core_coptic": "ⲭⲍ̄ ⲍⲙ̄ ⲡⲥⲱⲙⲁ ⲉⲓⲧⲉ ⲛⲉⲩⲁⲣϣⲱⲛⲉ ⲁⲣⲁ{83} ⲍⲓⲍⲟ{84}",
+      "core_english": "ning in the body, whether their sicknesses upon {83} (him), within {84}",
+      "apparatus": [
+        {
+          "id": 83,
+          "segment": 191,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "him",
+          "basis": "Single-letter restoration of 3sg.m. suffix on ⲁⲣⲁ⸗ 'upon (him).'",
+          "source_id": 92,
+          "section": 4322
+        },
+        {
+          "id": 84,
+          "segment": 191,
+          "type": "restoration",
+          "coptic": "ⲩⲛ",
+          "english": "",
+          "basis": "Editor restoration completing ⲍⲓⲍⲟⲩⲛ 'within.'",
+          "source_id": 93,
+          "section": 4322
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Sicknesses of archons within or outside body."
     },
@@ -1724,6 +2728,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁⲛ ⲛ̄ⲧⲁϩ ⲉⲩⲁⲉⲓ ⲁⲃⲁⲗ ⲍⲓⲱⲱϩ ⲍⲓⲃⲁⲗ ϣⲁⲣⲉ ⲛ̄ⲡⲗⲏ",
       "core_english": "or that they come forth upon him outside. The blo-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Archons emerging outside."
     },
@@ -1734,6 +2739,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲅⲏ ⲉⲧⲙ̄ⲙⲉⲩ ⲕⲱⲗ ⲛ̄ϣⲁⲣⲡ̄ ⲛ̄ⲥⲉϣⲟⲩⲟ ⲛⲟⲩⲙⲟⲩⲛ̄ⲍⲙⲟⲩ",
       "core_english": "ws there are first wrapped, and they pour forth a flow of saltwater",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Saltwater flow."
     },
@@ -1742,8 +2748,18 @@
       "chapter": 70,
       "line": 194,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲥⲉϣⲟⲩⲟ ⲛⲟⲩⲙⲟⲩⲛ̄ⲭⲱⲍⲙⲉ ⲁⲃⲁⲗ ϣⲁⲛⲧⲟⲩⲕⲱⲗ {167}",
-      "core_english": "and they pour forth a flow of defilement until they bind {168}",
+      "core_coptic": "ⲛ̄ⲥⲉϣⲟⲩⲟ ⲛⲟⲩⲙⲟⲩⲛ̄ⲭⲱⲍⲙⲉ ⲁⲃⲁⲗ ϣⲁⲛⲧⲟⲩⲕⲱⲗ {85}",
+      "core_english": "and they pour forth a flow of defilement until they bind {85}",
+      "apparatus": [
+        {
+          "id": 85,
+          "segment": 194,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 94,
+          "section": 4325
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Defilement flow."
     },
@@ -1752,8 +2768,29 @@
       "chapter": 70,
       "line": 195,
       "classification": "cosmological_substrate",
-      "core_coptic": "{169} ⲛ̄ⲧⲉ ⲧⲙⲉⲥⲍⲱⲩ ⲡⲱⲣⲕ̄ ⲍⲛ̄ ⲧⲡⲗⲏⲅⲏ ⲙⲛ̄ⲛ̄ⲥⲱⲥ {170}",
-      "core_english": "{171} of the matter — drawn forth in the wound. Afterwards {172}",
+      "core_coptic": "{86} ⲛ̄ⲧⲉ ⲧⲙⲉⲥⲍⲱⲩ ⲡⲱⲣⲕ̄ ⲍⲛ̄ ⲧⲡⲗⲏⲅⲏ ⲙⲛ̄ⲛ̄ⲥⲱⲥ {87}",
+      "core_english": "{86} of the matter — drawn forth in the wound. Afterwards {87}",
+      "apparatus": [
+        {
+          "id": 86,
+          "segment": 195,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": "trace before -ⲉ",
+          "source_id": 95,
+          "section": 4326
+        },
+        {
+          "id": 87,
+          "segment": 195,
+          "type": "restoration",
+          "coptic": "ϣⲁ",
+          "english": "there is",
+          "basis": "Editor restoration: ϣⲁⲣⲉ habitual prefix beginning the next clause 'a treatment is applied,' continuing into line 23.",
+          "source_id": 96,
+          "section": 4326
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Matter in wound."
     },
@@ -1762,8 +2799,20 @@
       "chapter": 70,
       "line": 196,
       "classification": "cosmological_substrate",
-      "core_coptic": "{173}ⲉ ⲛⲟⲩϣⲃⲁ ⲕⲁⲍⲕⲍ ⲛ̄ⲥⲉⲑⲉⲣⲁⲡⲉⲩⲉ ⲛ̄ⲥⲉⲁⲥⲉⲓ̈ⲧⲉ ⲁ",
+      "core_coptic": "{88}ⲉ ⲛⲟⲩϣⲃⲁ ⲕⲁⲍⲕⲍ ⲛ̄ⲥⲉⲑⲉⲣⲁⲡⲉⲩⲉ ⲛ̄ⲥⲉⲁⲥⲉⲓ̈ⲧⲉ ⲁ",
       "core_english": "an exchange of scraping, and they apply therapy, and they soothe (it) out",
+      "apparatus": [
+        {
+          "id": 88,
+          "segment": 196,
+          "type": "restoration",
+          "coptic": "ⲣ",
+          "english": "is applied",
+          "basis": "Editor restoration: completes ϣⲁⲣⲉ 'there is/comes about' from line 22.",
+          "source_id": 97,
+          "section": 4327
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Therapy."
     },
@@ -1774,6 +2823,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲃⲁⲗ ⲛ̄ⲙ̄ⲙⲁ ⲉⲧⲁⲩⲉⲓ ⲁⲃⲁⲗ ⲍⲓⲱⲱⲩ",
       "core_english": "from the place from which they came forth upon them.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of disease/healing teaching."
     }

@@ -5,7 +5,7 @@
   "start_section": 128,
   "end_section": 217,
   "total_sections": 90,
-  "total_lacunae": 296,
+  "total_lacunae": 149,
   "segments": [
     {
       "section": 128,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲡϩⲧⲁⲩ ⲛⲛⲁⲟ̄ ⲛⲍⲟⲟⲩⲉ",
       "core_english": "Concerning the four great days,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substantive cosmological topic — names the teaching structure."
     },
@@ -23,7 +24,19 @@
       "line": 2,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁ̄ ⲉ{0} ⲉⲓ ⲁⲃⲁⲗ ⲙⲛ̄ ⲛⲟⲩⲉⲣⲏⲩ ⲁ̄",
-      "core_english": "— that {1} came forth one from another —",
+      "core_english": "— that {0} came forth one from another —",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ⲧⲁⲩ",
+          "english": "they",
+          "basis": "3pl prefix of perfect ⲉⲧⲁⲩⲉⲓ 'that they came'; partial trace of ⲉ visible.",
+          "source_id": 0,
+          "section": 129
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Title continuation — defines emanation pattern."
     },
@@ -34,6 +47,7 @@
       "classification": "mixed",
       "core_coptic": "ϩⲧⲁⲩ ⲛⲛⲁⲟ̄ ⲛⲍⲟⲟⲩⲉ ⲛⲉⲧⲁⲩⲉⲓ",
       "core_english": "Four great days are they that came",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲧⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉ ⲡⲫⲱⲥⲧⲏⲣ ⲭⲉ' / 'once more the Illuminator says:' — pure dialogue frame attribution.",
       "temporal_note": "Strong apostolic_dialogue marker (177.78); strip frame, preserve substrate opening."
     },
@@ -42,8 +56,30 @@
       "chapter": 4,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2} ⲧⲁⲍⲙⲟⲩ {3} ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲡϣⲁⲣⲡ ⲛ̄",
-      "core_english": "{4} they were summoned {5} one another. The first",
+      "core_coptic": "{1} ⲧⲁⲍⲙⲟⲩ {2} ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲡϣⲁⲣⲡ ⲛ̄",
+      "core_english": "{1} they were summoned {2} one another. The first",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁⲃⲁⲗ ⲛⲛⲟⲩⲉⲣⲏⲩ ⲁⲩ",
+          "english": "forth from one another and",
+          "basis": "Direct parallel in line 33-34 (ⲁⲃⲁⲗ ⲛⲛⲟⲩⲉⲣⲏⲩ ⲉ]ⲧⲁⲩⲧⲁⲍⲙⲟⲩ); same formula repeated.",
+          "source_id": 1,
+          "section": 131
+        },
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲁⲃⲁⲗ",
+          "english": "forth from",
+          "basis": "Editor's bracket; ⲧⲁⲍⲙ ⲁⲃⲁⲗ is the standard idiom 'summon forth.'",
+          "source_id": 2,
+          "section": 131
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate: emanation language + enumeration marker 'The first'."
     },
@@ -52,8 +88,30 @@
       "chapter": 4,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{6} ⲡⲉ ⲡⲓⲱⲧ ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲙⲏⲉ̄ ⲡϣⲁ{7}",
-      "core_english": "{8} is the Father, the God of Truth, the {9}",
+      "core_coptic": "{3} ⲡⲉ ⲡⲓⲱⲧ ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲙⲏⲉ̄ ⲡϣⲁ{4}",
+      "core_english": "{3} is the Father, the God of Truth, the {4}",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲟ̄ ⲛ̄ⲍⲟⲟⲩⲉ",
+          "english": "great day",
+          "basis": "Continuation of 'first' from previous line; the formula repeats for each of the Four.",
+          "source_id": 3,
+          "section": 132
+        },
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲣⲡ",
+          "english": "first",
+          "basis": "Completion of ⲡϣⲁⲣⲡ 'the first'; bracket spans into lacuna of further phrase.",
+          "source_id": 4,
+          "section": 132
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First day = Father/God of Truth — substrate identity-mapping."
     },
@@ -62,8 +120,29 @@
       "chapter": 4,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10} ⲏⲧⲉ ⲛⲛⲁⲓⲱⲛ ⲛⲧϩⲙⲛⲧⲛⲁⲟ̄ ⲍⲛ ⲧⲉϩ{11}",
-      "core_english": "{12} midst of the aeons of greatness in the {13}",
+      "core_coptic": "{5} ⲏⲧⲉ ⲛⲛⲁⲓⲱⲛ ⲛⲧϩⲙⲛⲧⲛⲁⲟ̄ ⲍⲛ ⲧⲉϩ{6}",
+      "core_english": "{5} midst of the aeons of greatness in the {6}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 10,
+          "partial": "ⲛ̄ⲙ",
+          "source_id": 5,
+          "section": 133
+        },
+        {
+          "id": 6,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲛⲧ",
+          "english": "king-",
+          "basis": "Continuation of ⲧⲉϩⲙ̄ⲛⲧⲣⲣⲟ 'the kingdom' across the line break.",
+          "source_id": 6,
+          "section": 133
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic geography: aeons of greatness."
     },
@@ -72,8 +151,20 @@
       "chapter": 4,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14} ⲧⲁⲛⲍ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛⲟⲩⲛⲟⲩ ⲙ̄ⲡⲓⲛⲁⲟ̄ ⲛⲍⲟⲟⲩⲉ",
-      "core_english": "{15} living. The twelve hours of this great day",
+      "core_coptic": "{7} ⲧⲁⲛⲍ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛⲟⲩⲛⲟⲩ ⲙ̄ⲡⲓⲛⲁⲟ̄ ⲛⲍⲟⲟⲩⲉ",
+      "core_english": "{7} living. The twelve hours of this great day",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲣⲣⲟ ⲉ",
+          "english": "-dom which is",
+          "basis": "Completion of ⲧⲉϩⲙ̄ⲛⲧⲣⲣⲟ ⲉⲧⲁⲛⲍ 'the living kingdom'; standard Manichaean phrase.",
+          "source_id": 7,
+          "section": 134
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve-hour structure of the day — substrate enumeration."
     },
@@ -82,8 +173,30 @@
       "chapter": 4,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16} ⲙⲛⲧⲥⲛⲁⲩⲥ̄ ⲛⲛⲁⲟ̄ ⲛⲣⲙⲙⲁⲟ ⲛ̄ⲛⲟⲩⲧⲉ ⲛⲧⲉ ⲧⲙⲛⲧ{17}",
-      "core_english": "{18} twelve great rich gods of the {19}",
+      "core_coptic": "{8} ⲙⲛⲧⲥⲛⲁⲩⲥ̄ ⲛⲛⲁⲟ̄ ⲛⲣⲙⲙⲁⲟ ⲛ̄ⲛⲟⲩⲧⲉ ⲛⲧⲉ ⲧⲙⲛⲧ{9}",
+      "core_english": "{8} twelve great rich gods of the {9}",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲡⲉ ⲡ",
+          "english": "are the",
+          "basis": "Copular construction: predicate of preceding 'twelve hours.'",
+          "source_id": 8,
+          "section": 135
+        },
+        {
+          "id": 9,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲟ̄",
+          "english": "greatness",
+          "basis": "Completion of ⲧⲙⲛⲧⲛⲁⲟ̄ 'the greatness'; standard Manichaean term for the Light Realm.",
+          "source_id": 9,
+          "section": 135
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve gods correspondence."
     },
@@ -92,8 +205,20 @@
       "chapter": 4,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛ̄ϣⲁⲣⲡ ⲛⲧⲱⲍⲙⲉ ⲉⲧⲁϩⲧⲁⲍⲙⲟⲩ ⲁⲍⲣⲛ̄",
-      "core_english": "{21} who are the first calls — they who were summoned before",
+      "core_coptic": "{10} ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛ̄ϣⲁⲣⲡ ⲛⲧⲱⲍⲙⲉ ⲉⲧⲁϩⲧⲁⲍⲙⲟⲩ ⲁⲍⲣⲛ̄",
+      "core_english": "{10} who are the first calls — they who were summoned before",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲛⲉⲓ̄",
+          "english": "These",
+          "basis": "Demonstrative subject; structurally required by the relative ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ.",
+          "source_id": 10,
+          "section": 136
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Calls — cosmic agents."
     },
@@ -102,8 +227,20 @@
       "chapter": 4,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "{22} ⲉϩⲙⲛⲧⲛⲁⲟ̄ ⲁϩⲥⲁⲣⲟⲩ ⲁⲃⲁⲗ ⲁⲡϩⲧⲁⲩ ⲛⲕⲗⲓⲙⲁ ϣⲁⲙⲧ",
+      "core_coptic": "{11} ⲉϩⲙⲛⲧⲛⲁⲟ̄ ⲁϩⲥⲁⲣⲟⲩ ⲁⲃⲁⲗ ⲁⲡϩⲧⲁⲩ ⲛⲕⲗⲓⲙⲁ ϣⲁⲙⲧ",
       "core_english": "the greatness; they spread themselves out toward the four climes, three",
+      "apparatus": [
+        {
+          "id": 11,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "the",
+          "basis": "Completion of ⲧⲉϩⲙⲛⲧⲛⲁⲟ̄ across line break.",
+          "source_id": 11,
+          "section": 137
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Four climes / spatial cosmic deployment."
     },
@@ -114,6 +251,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲙⲧ ⲙ̄ⲡⲙ̄ⲧⲟ ⲙⲡⲉϩⲍⲟ",
       "core_english": "by three before each face.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Spatial structuring: three by three."
     },
@@ -124,6 +262,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲡⲙⲁⲍⲥⲛⲉⲩ ⲛⲍⲟⲟⲩⲉ ⲡⲉ ⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲉ",
       "core_english": "The second great day is the Third Ambassador, he who",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Second day = Third Ambassador (ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ) — core substrate marker."
     },
@@ -132,8 +271,20 @@
       "chapter": 4,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲟⲩⲏⲍ ⲍⲙ ⲡⲧⲭⲁⲓ̄ ⲛ̄ⲟⲩⲁⲓ̄ⲛⲉ ⲧⲉϩⲙⲛⲧⲥⲛⲁⲩⲥⲉ̄ ⲛⲟⲩ{23} ⲡⲉ",
-      "core_english": "dwells in the ship of light. His twelve hours {24} are",
+      "core_coptic": "ⲧⲟⲩⲏⲍ ⲍⲙ ⲡⲧⲭⲁⲓ̄ ⲛ̄ⲟⲩⲁⲓ̄ⲛⲉ ⲧⲉϩⲙⲛⲧⲥⲛⲁⲩⲥⲉ̄ ⲛⲟⲩ{12} ⲡⲉ",
+      "core_english": "dwells in the ship of light. His twelve hours {12} are",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲛⲟⲩ",
+          "english": "hours",
+          "basis": "Completion of ⲛⲟⲩⲛⲟⲩ 'hours' (lit. 'the hours').",
+          "source_id": 12,
+          "section": 140
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ship of Light — cosmic vehicle."
     },
@@ -142,8 +293,20 @@
       "chapter": 4,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "{25} ⲙⲛⲧⲥⲛⲁⲩ{26} ⲁⲣⲑⲉⲛⲟⲥ ⲉⲧⲁϩⲧⲁⲍⲙⲟⲩ ⲍⲛ ⲧⲉϩⲙⲛⲧⲛⲁⲟ̄",
-      "core_english": "the {27} twelve {28} virgins, who were summoned in the greatness.",
+      "core_coptic": "{13} ⲙⲛⲧⲥⲛⲁⲩ{14} ⲁⲣⲑⲉⲛⲟⲥ ⲉⲧⲁϩⲧⲁⲍⲙⲟⲩ ⲍⲛ ⲧⲉϩⲙⲛⲧⲛⲁⲟ̄",
+      "core_english": "the {13} twelve {14} virgins, who were summoned in the greatness.",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲥⲉ ⲙⲡ",
+          "english": "twelve",
+          "basis": "Completion of ⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲙⲡⲁⲣⲑⲉⲛⲟⲥ 'twelve virgins'; well-attested Manichaean group.",
+          "source_id": 13,
+          "section": 141
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve Virgins — cosmic correspondence to twelve hours."
     },
@@ -152,8 +315,9 @@
       "chapter": 4,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲡⲙⲁⲍϣⲁⲙⲧ ⲛⲍⲟⲟⲩⲉ ⲡⲉ ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ ⲡⲛⲁⲟ̄ ⲛ{29}",
-      "core_english": "The third great day is the Pillar of Glory, the great O{30}",
+      "core_coptic": "ⲧⲡⲙⲁⲍϣⲁⲙⲧ ⲛⲍⲟⲟⲩⲉ ⲡⲉ ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ ⲡⲛⲁⲟ̄ ⲛ{15}",
+      "core_english": "The third great day is the Pillar of Glory, the great O{15}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pillar of Glory / Omophorus — substrate."
     },
@@ -162,8 +326,18 @@
       "chapter": 4,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{31} ⲫⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲡⲉⲧⲭⲁⲩⲗⲉ ⲉ {32}",
-      "core_english": "{33}phoroi, who bears upon {34}",
+      "core_coptic": "{16} ⲫⲟⲣⲟⲥ ⲧⲏⲣⲟⲩ ⲡⲉⲧⲭⲁⲩⲗⲉ ⲉ {17}",
+      "core_english": "{16}phoroi, who bears upon {17}",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 16,
+          "section": 143
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Omophorus continuation."
     },
@@ -174,6 +348,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲏⲣⲟⲩ ⲛⲁⲧⲡⲉ ⲙⲛ ⲛⲁⲡⲓⲧⲛ ⲧϩⲙⲛ̄ⲧⲥⲛⲁⲩⲥⲉ ⲛⲟⲩⲛⲟⲩ ⲡⲉ",
       "core_english": "all those above and those below. The twelve hours are",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Above/below cosmic axis."
     },
@@ -182,8 +357,20 @@
       "chapter": 4,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡϯⲟⲩ ϣⲏⲣⲉ {35} ⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲡϯⲟⲩ ⲛϣⲏⲣⲉ ⲙⲡⲡ̄ⲛ̄{36}",
-      "core_english": "the five sons {37} the First Man (and) the five sons of the Spirit{38}",
+      "core_coptic": "ⲡϯⲟⲩ ϣⲏⲣⲉ {18} ⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲡϯⲟⲩ ⲛϣⲏⲣⲉ ⲙⲡⲡ̄ⲛ̄{19}",
+      "core_english": "the five sons {18} the First Man (and) the five sons of the Spirit{19}",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Final letter of ⲡⲡⲛ̄ⲁ (= πνεῦμα), 'the Spirit.'",
+          "source_id": 18,
+          "section": 145
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five Sons of First Man + Five Sons of Living Spirit — core five-fold mapping."
     },
@@ -192,8 +379,9 @@
       "chapter": 4,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲁⲛⲍ ⲉⲧⲉ ⲛ̄{39} ⲉⲧⲭⲁⲩⲗⲉ ⲍⲁ ⲛ̄ⲍⲣⲏϣⲉ ⲧⲏⲣⲟⲩ ⲙⲡⲕⲟ",
-      "core_english": "living, who {40} bear all the burdens of the cos-",
+      "core_coptic": "ⲉⲧⲁⲛⲍ ⲉⲧⲉ ⲛ̄{20} ⲉⲧⲭⲁⲩⲗⲉ ⲍⲁ ⲛ̄ⲍⲣⲏϣⲉ ⲧⲏⲣⲟⲩ ⲙⲡⲕⲟ",
+      "core_english": "living, who {20} bear all the burdens of the cos-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Bearer-cosmology of Atlas/Omophorus."
     },
@@ -204,6 +392,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲙⲟⲥ ⲁⲍⲁⲛ ⲡⲧⲱⲍⲙⲉ ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ ⲉⲧⲏⲡ ⲁⲣⲛ ⲡⲟⲩⲙⲏⲧ",
       "core_english": "mos, and the Call and the Hearing, that are reckoned with their ten",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Call and Hearing — cosmic personifications."
     },
@@ -214,6 +403,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲥⲁⲛ ⲛⲉⲓ̄ ⲛⲉ ⲧⲙⲛ̄ⲧⲥⲛⲁⲩⲥⲉ ⲛⲟⲩⲛⲟⲩ ⲛⲟⲩⲁⲓⲛⲉ ⲛⲧⲉ ⲡⲙⲁⲍ",
       "core_english": "brothers. These are the twelve hours of light of the third",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate summary of third day's twelve hours."
     },
@@ -222,8 +412,9 @@
       "chapter": 4,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲁⲙⲧ ⲛⲍⲟⲟ{41}",
+      "core_coptic": "ϣⲁⲙⲧ ⲛⲍⲟⲟ{21}",
       "core_english": "great day.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of third-day section."
     },
@@ -234,6 +425,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲡⲙⲁⲍϩⲧⲁⲩ ⲛ̄ⲍⲟⲟⲩ ⲡⲉ ⲓⲏⲥ",
       "core_english": "The fourth day is Jesus",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Fourth day = Jesus the Radiance — Mani's cosmic Jesus, structurally fits the day-mapping."
     },
@@ -242,8 +434,9 @@
       "chapter": 4,
       "line": 25,
       "classification": "mixed",
-      "core_coptic": "ⲡⲡⲣ̄ⲉ ⲡⲉⲧ{42}",
-      "core_english": "the Radiance, who {43}",
+      "core_coptic": "ⲡⲡⲣ̄ⲉ ⲡⲉⲧ{22}",
+      "core_english": "the Radiance, who {22}",
+      "apparatus": [],
       "removed_material": "Stripped 'ⲧⲉϩⲉⲕⲕⲗⲏⲥⲓⲁ ⲧϩⲙⲛⲧⲥⲛⲁⲩⲥⲉ' / 'the church. The twelve' — explicit ecclesia reference points outside the cosmic system into the contemporary church. Note: high manichaean_ecclesial score (200.0).",
       "temporal_note": "Strong ecclesial vocabulary marker; the church-reference is editorial integration of Jesus the Radiance into the institutional church. Substrate identity preserved."
     },
@@ -252,8 +445,9 @@
       "chapter": 4,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{44} ⲩⲛⲟⲩ ⲡⲉ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛⲥⲟⲫⲓⲁ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛⲉϩⲟⲩ",
-      "core_english": "{45} hours are the twelve wisdoms, which are the days",
+      "core_coptic": "{23} ⲩⲛⲟⲩ ⲡⲉ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ ⲛⲥⲟⲫⲓⲁ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛⲉϩⲟⲩ",
+      "core_english": "{23} hours are the twelve wisdoms, which are the days",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Twelve Wisdoms = days — cosmic enumeration."
     },
@@ -262,8 +456,20 @@
       "chapter": 4,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{46} ⲁ {47} ⲛⲉⲓ̄ ⲛⲉ ⲡϩⲧⲁⲩ ⲛⲛⲁⲟ̄ ⲛⲍⲟⲟⲩ ⲉⲧⲁⲩⲉⲓ",
-      "core_english": "{48} {49}. These are the four great days that came",
+      "core_coptic": "{24} ⲁ {25} ⲛⲉⲓ̄ ⲛⲉ ⲡϩⲧⲁⲩ ⲛⲛⲁⲟ̄ ⲛⲍⲟⲟⲩ ⲉⲧⲁⲩⲉⲓ",
+      "core_english": "{24} {25}. These are the four great days that came",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 27,
+          "type": "restoration",
+          "coptic": "ⲩⲉ ⲛ̄ⲟⲩⲁⲓⲛⲉ",
+          "english": "of light",
+          "basis": "Completion of ⲛⲉϩⲟⲩⲉ ⲛ̄ⲟⲩⲁⲓⲛⲉ 'days of light'; standard Manichaean phrase, parallel to ⲛⲟⲩⲛⲟⲩ ⲛⲟⲩⲁⲓⲛⲉ above (line 29).",
+          "source_id": 24,
+          "section": 153
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate recapitulation."
     },
@@ -272,8 +478,9 @@
       "chapter": 4,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{50} ⲧⲁⲩⲧⲁⲍⲙⲟⲩ ⲁⲃⲁⲗ ⲛⲛⲟⲩⲉⲣⲏⲩ ⲛⲧⲁⲩ",
-      "core_english": "{51} they were summoned forth from one another. They",
+      "core_coptic": "{26} ⲧⲁⲩⲧⲁⲍⲙⲟⲩ ⲁⲃⲁⲗ ⲛⲛⲟⲩⲉⲣⲏⲩ ⲛⲧⲁⲩ",
+      "core_english": "{26} they were summoned forth from one another. They",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate emanation summary."
     },
@@ -282,8 +489,20 @@
       "chapter": 4,
       "line": 29,
       "classification": "mixed",
-      "core_coptic": "{52} {53} ⲁⲛ ⲛⲓⲙ ⲉⲧⲛⲁⲥⲛ̄ⲟⲩⲱⲛⲟⲩ ⲛϩⲧⲉ",
-      "core_english": "{54} {55} every one who shall know them in faith",
+      "core_coptic": "{27} {28} ⲁⲛ ⲛⲓⲙ ⲉⲧⲛⲁⲥⲛ̄ⲟⲩⲱⲛⲟⲩ ⲛϩⲧⲉ",
+      "core_english": "{27} {28} every one who shall know them in faith",
+      "apparatus": [
+        {
+          "id": 27,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲛⲉⲓⲉⲧϩ ⲛⲟⲩ",
+          "english": "they are; every",
+          "basis": "Editor's reading; parallel to line 5 'every one who shall know them.'",
+          "source_id": 27,
+          "section": 155
+        }
+      ],
       "removed_material": "Possibly hortatory/beatitude tail — tail too damaged to extract cleanly. Conservatively retained as substrate-promise pattern.",
       "temporal_note": "Borderline: 'every one who shall know them in faith' is a beatitude/promise that pivots from substrate to addressee. Heavy lacuna; retaining as mixed/substrate."
     },
@@ -292,8 +511,36 @@
       "chapter": 4,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "{56} ⲁ̄ⲙ {57} ϫⲉ ⲛ̄ⲧⲍⲉ ⲭⲉ ϩⲧⲁⲩ ⲛⲍⲟⲟⲩ{58}",
-      "core_english": "{59} ... {60} thus, that four are the day{61}",
+      "core_coptic": "{29} ⲁ̄ⲙ {30} ϫⲉ ⲛ̄ⲧⲍⲉ ⲭⲉ ϩⲧⲁⲩ ⲛⲍⲟⲟⲩ{31}",
+      "core_english": "{29} ... {30} thus, that four are the day{31}",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 31,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 32,
+          "section": 156
+        },
+        {
+          "id": 30,
+          "segment": 31,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 33,
+          "section": 156
+        },
+        {
+          "id": 31,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲉ ⲡⲉⲧϣⲟ",
+          "english": "s that exist",
+          "basis": "Editor's bracketed restoration; reads forward into line 2 'ⲡⲉⲧϣⲟ-ⲟⲡ'.",
+          "source_id": 34,
+          "section": 156
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pivot to nights — substrate transitional."
     },
@@ -302,8 +549,20 @@
       "chapter": 4,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲡ ⲧ{62} ⲧⲉ ⲧⲉ ⲭⲉ ϩⲧⲟⲉ ⲍⲱⲱϩ ⲛⲟⲩϣⲛ ⲡⲉⲧϣⲟⲟⲡ",
-      "core_english": "[s that exi]st; this is {63} the way, that four likewise are the nights that exist.",
+      "core_coptic": "ⲟⲡ ⲧ{32} ⲧⲉ ⲧⲉ ⲭⲉ ϩⲧⲟⲉ ⲍⲱⲱϩ ⲛⲟⲩϣⲛ ⲡⲉⲧϣⲟⲟⲡ",
+      "core_english": "[s that exi]st; this is {32} the way, that four likewise are the nights that exist.",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲍⲉ",
+          "english": "",
+          "basis": "Editor's restoration of ⲧⲍⲉ 'this way.'",
+          "source_id": 35,
+          "section": 157
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Introduces four-nights structure — substrate."
     },
@@ -312,8 +571,30 @@
       "chapter": 4,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧϣⲁⲣⲡ ⲛⲟⲩϣ{64} ⲡⲉ ⲡⲕⲁⲍ ⲙⲡⲕⲉⲕⲉ ⲟⲩⲛ̄ⲧⲉⲥ ⲙ{65}ⲧⲥ",
-      "core_english": "The first nig{66} is the land of darkness; she has tw{67}-",
+      "core_coptic": "Ⲧϣⲁⲣⲡ ⲛⲟⲩϣ{33} ⲡⲉ ⲡⲕⲁⲍ ⲙⲡⲕⲉⲕⲉ ⲟⲩⲛ̄ⲧⲉⲥ ⲙ{34}ⲧⲥ",
+      "core_english": "The first nig{33} is the land of darkness; she has tw{34}-",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "ht",
+          "basis": "Editor's restoration; -ⲛ completes ⲟⲩϣⲛ 'night.'",
+          "source_id": 36,
+          "section": 158
+        },
+        {
+          "id": 34,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "el",
+          "basis": "Editor's restoration of ⲙⲛ̄ⲧⲥⲛⲁⲩⲥⲉ 'twelve.'",
+          "source_id": 37,
+          "section": 158
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First night = Land of Darkness — primary substrate."
     },
@@ -322,8 +603,40 @@
       "chapter": 4,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ{68}ⲩⲥ{69}ⲃⲉⲥ ⲁ̄ⲙⲉⲩ ⲛⲕⲙⲛⲙⲉ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛⲉⲥⲟ{70}",
-      "core_english": "el{71}ve {72}shadows in them of darkness, which are her t{73}-",
+      "core_coptic": "ⲛ{35}ⲩⲥ{36}ⲃⲉⲥ ⲁ̄ⲙⲉⲩ ⲛⲕⲙⲛⲙⲉ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛⲉⲥⲟ{37}",
+      "core_english": "el{35}ve {36}shadows in them of darkness, which are her t{37}-",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "ve",
+          "basis": "Editor's restoration in ⲥⲛⲁⲩⲥⲉ.",
+          "source_id": 38,
+          "section": 159
+        },
+        {
+          "id": 36,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲉ ⲛⲍⲁ",
+          "english": " (twelve) ",
+          "basis": "Editor's restoration; ⲍⲁⲃⲉⲥ = ϩⲁⲓⲃⲉⲥ 'shadow.'",
+          "source_id": 39,
+          "section": 159
+        },
+        {
+          "id": 37,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲩ",
+          "english": "wel-",
+          "basis": "Editor's restoration; -ⲩ completes ⲛⲉⲥⲟⲩⲛⲁⲩⲉ 'her twelve.'",
+          "source_id": 40,
+          "section": 159
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve shadows correspondence."
     },
@@ -332,8 +645,40 @@
       "chapter": 4,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲁⲩ{74}ⲕⲉⲕⲉ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ {75}ⲃⲉⲥ ⲛⲧϣ{76}",
-      "core_english": "wel{77} of darkness. The twelve {78}shadows of the f{79}-",
+      "core_coptic": "ⲛⲁⲩ{38}ⲕⲉⲕⲉ ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ {39}ⲃⲉⲥ ⲛⲧϣ{40}",
+      "core_english": "wel{38} of darkness. The twelve {39}shadows of the f{40}-",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲉ ⲛ",
+          "english": "ve of (the) ",
+          "basis": "Editor's restoration; completes 'twelve of darkness.'",
+          "source_id": 41,
+          "section": 160
+        },
+        {
+          "id": 39,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲛⲍⲁ",
+          "english": "",
+          "basis": "Editor's restoration; ⲛⲍⲁⲃⲉⲥ 'shadows.'",
+          "source_id": 42,
+          "section": 160
+        },
+        {
+          "id": 40,
+          "segment": 35,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲡ ⲛⲟⲩ",
+          "english": "irst ni-",
+          "basis": "Editor's restoration; ⲧϣⲁⲣⲡ ⲛⲟⲩϣⲛ 'first night.'",
+          "source_id": 43,
+          "section": 160
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate enumeration of shadows."
     },
@@ -342,8 +687,40 @@
       "chapter": 4,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲛ ⲡ{80} ⲡⲧⲟⲩ {81}ⲭⲉⲓⲱⲛ ⲙⲡⲕⲁⲍ ⲙⲡⲕⲉⲕⲉ {82}",
-      "core_english": "[irst night] {83} are the five {84}elements of the land of darkness, {85}",
+      "core_coptic": "ϣⲛ ⲡ{41} ⲡⲧⲟⲩ {42}ⲭⲉⲓⲱⲛ ⲙⲡⲕⲁⲍ ⲙⲡⲕⲉⲕⲉ {43}",
+      "core_english": "[irst night] {41} are the five {42}elements of the land of darkness, {43}",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": " is/are",
+          "basis": "Editor's restoration; copular ⲡⲉ.",
+          "source_id": 44,
+          "section": 161
+        },
+        {
+          "id": 42,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲛⲥⲧⲟ",
+          "english": "",
+          "basis": "Editor's restoration; -ⲥⲧⲟ- completes ⲛⲥⲧⲟⲭⲉⲓⲱⲛ 'of elements.'",
+          "source_id": 45,
+          "section": 161
+        },
+        {
+          "id": 43,
+          "segment": 36,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲁⲩ",
+          "english": "[which]",
+          "basis": "Editor's restoration; relative perfective.",
+          "source_id": 46,
+          "section": 161
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five elements of Land of Darkness — substrate."
     },
@@ -352,8 +729,39 @@
       "chapter": 4,
       "line": 37,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲉⲃⲉ {86}ⲁⲗ ⲍⲙ ⲡⲉϩⲧⲟⲩ {87}ⲥⲑⲏⲧⲏⲣⲓⲟⲛ ⲙⲛ ⲧⲉ{88}",
-      "core_english": "[which] gushed forth {89} from the five {90}senses and the {91}",
+      "core_coptic": "ⲃⲉⲃⲉ {44}ⲁⲗ ⲍⲙ ⲡⲉϩⲧⲟⲩ {45}ⲥⲑⲏⲧⲏⲣⲓⲟⲛ ⲙⲛ ⲧⲉ{46}",
+      "core_english": "[which] gushed forth {44} from the five {45}senses and the {46}",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲁⲃ",
+          "english": "",
+          "basis": "Editor's restoration; ⲃⲉⲃⲉ ⲁⲃⲁⲗ 'gushed forth.'",
+          "source_id": 47,
+          "section": 162
+        },
+        {
+          "id": 45,
+          "segment": 37,
+          "type": "restoration",
+          "coptic": "ⲛⲁ",
+          "english": "",
+          "basis": "Editor's restoration; completes ⲛⲁⲥⲑⲏⲧⲏⲣⲓⲟⲛ 'of senses.'",
+          "source_id": 48,
+          "section": 162
+        },
+        {
+          "id": 46,
+          "segment": 37,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲧⲉ",
+          "source_id": 49,
+          "section": 162
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five-senses correspondence."
     },
@@ -362,8 +770,47 @@
       "chapter": 4,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉⲧⲁⲩ {92} ⲍⲙ ⲡⲉϩ{93}ⲟⲩ {94}ⲭⲉⲓⲱⲛ ⲙⲛ ⲧⲉϩⲧⲉ {95}",
-      "core_english": "which {96} in the five {97} {98}elements and the four {99}",
+      "core_coptic": "ⲉⲧⲁⲩ {47} ⲍⲙ ⲡⲉϩ{48}ⲟⲩ {49}ⲭⲉⲓⲱⲛ ⲙⲛ ⲧⲉϩⲧⲉ {50}",
+      "core_english": "which {47} in the five {48} {49}elements and the four {50}",
+      "apparatus": [
+        {
+          "id": 47,
+          "segment": 38,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 50,
+          "section": 163
+        },
+        {
+          "id": 48,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "five",
+          "basis": "Editor's restoration in ⲡⲉϩⲧⲟⲩ.",
+          "source_id": 51,
+          "section": 163
+        },
+        {
+          "id": 49,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲛⲥⲧⲟ",
+          "english": "",
+          "basis": "Editor's restoration; completes ⲥⲧⲟⲭⲉⲓⲱⲛ.",
+          "source_id": 52,
+          "section": 163
+        },
+        {
+          "id": 50,
+          "segment": 38,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲧⲉϩⲧⲉ",
+          "source_id": 53,
+          "section": 163
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five elements + four (storehouses?)."
     },
@@ -372,8 +819,53 @@
       "chapter": 4,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲧⲟⲩ {100} ⲛⲁ ⲉⲧⲟⲩⲛⲍ ⲍⲛ̄ ⲛⲉϩ{101}ⲭⲉⲓⲱⲛ {102} {103} ⲏⲛ {104}",
-      "core_english": "the five {105} which exist in the {106}elements {107} {108} {109}",
+      "core_coptic": "ⲡⲧⲟⲩ {51} ⲛⲁ ⲉⲧⲟⲩⲛⲍ ⲍⲛ̄ ⲛⲉϩ{52}ⲭⲉⲓⲱⲛ {53} {54} ⲏⲛ {55}",
+      "core_english": "the five {51} which exist in the {52}elements {53} {54} {55}",
+      "apparatus": [
+        {
+          "id": 51,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 54,
+          "section": 164
+        },
+        {
+          "id": 52,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲛⲉϩⲥⲧⲟ",
+          "english": "",
+          "basis": "Editor's restoration; completes 'in the elements.'",
+          "source_id": 55,
+          "section": 164
+        },
+        {
+          "id": 53,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 56,
+          "section": 164
+        },
+        {
+          "id": 54,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 57,
+          "section": 164
+        },
+        {
+          "id": 55,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲏⲛ",
+          "source_id": 58,
+          "section": 164
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate elements continuation; heavy damage."
     },
@@ -382,8 +874,50 @@
       "chapter": 4,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉⲓ̈ ⲛ{110} ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ {111}ⲃⲉⲥ ⲁ̄ⲛ ⲙⲡⲛⲁ ⲛⲧϣ{112} ⲛⲟⲩ{113}",
-      "core_english": "These ar{114} the twelve {115}shadows likewise of the spirit of the f{116} ni{117}",
+      "core_coptic": "ⲛⲉⲓ̈ ⲛ{56} ⲧⲙⲛⲧⲥⲛⲁⲩⲥⲉ {57}ⲃⲉⲥ ⲁ̄ⲛ ⲙⲡⲛⲁ ⲛⲧϣ{58} ⲛⲟⲩ{59}",
+      "core_english": "These ar{56} the twelve {57}shadows likewise of the spirit of the f{58} ni{59}",
+      "apparatus": [
+        {
+          "id": 56,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "e",
+          "basis": "Editor's restoration; copular ⲛⲉ.",
+          "source_id": 59,
+          "section": 165
+        },
+        {
+          "id": 57,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲛⲍⲁ",
+          "english": "",
+          "basis": "Editor's restoration; ⲍⲁⲃⲉⲥ 'shadows.'",
+          "source_id": 60,
+          "section": 165
+        },
+        {
+          "id": 58,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲁⲣⲡ",
+          "english": "irst",
+          "basis": "Editor's restoration; ϣⲁⲣⲡ 'first.'",
+          "source_id": 61,
+          "section": 165
+        },
+        {
+          "id": 59,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ϣⲛ",
+          "english": "ght",
+          "basis": "Editor's restoration; completes ⲟⲩϣⲛ 'night.'",
+          "source_id": 62,
+          "section": 165
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate summary first night's twelve shadows."
     },
@@ -392,8 +926,18 @@
       "chapter": 4,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛⲟⲩϣⲛ ⲡⲉ ⲧⲍⲩⲗⲏ ⲧⲍⲱⲣⲡⲁⲫⲟⲥ {118}",
-      "core_english": "The second night is Matter, the image-painter (zōgraphos) {119}",
+      "core_coptic": "Ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛⲟⲩϣⲛ ⲡⲉ ⲧⲍⲩⲗⲏ ⲧⲍⲱⲣⲡⲁⲫⲟⲥ {60}",
+      "core_english": "The second night is Matter, the image-painter (zōgraphos) {60}",
+      "apparatus": [
+        {
+          "id": 60,
+          "segment": 41,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 63,
+          "section": 166
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Second night = Matter / Image-painter — substrate identity-mapping."
     },
@@ -402,8 +946,36 @@
       "chapter": 4,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "{120} ⲛⲧ {121} ⲧⲉⲧⲁⲥⲍⲱ{122}",
-      "core_english": "{123} ... {124} who painted-image{125}",
+      "core_coptic": "{61} ⲛⲧ {62} ⲧⲉⲧⲁⲥⲍⲱ{63}",
+      "core_english": "{61} ... {62} who painted-image{63}",
+      "apparatus": [
+        {
+          "id": 61,
+          "segment": 42,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 64,
+          "section": 167
+        },
+        {
+          "id": 62,
+          "segment": 42,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 65,
+          "section": 167
+        },
+        {
+          "id": 63,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲣⲡⲁⲫⲉ",
+          "english": "d",
+          "basis": "Editor's restoration; verbal form of ζωγραφεῖν 'to paint, depict' — followed by further lacuna of ~5 chars not represented here.",
+          "source_id": 66,
+          "section": 167
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of zōgraphos function."
     },
@@ -412,8 +984,40 @@
       "chapter": 4,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "{126}ⲛ ⲧ{127}ⲭⲟⲛⲧⲓⲕⲏ ⲧⲏⲣⲥ ⲉⲧⲍⲛ̄ ⲛⲕⲟⲥⲙⲟ{128}",
-      "core_english": "{129}and the entire {130}archonic order which is in the world{131}",
+      "core_coptic": "{64}ⲛ ⲧ{65}ⲭⲟⲛⲧⲓⲕⲏ ⲧⲏⲣⲥ ⲉⲧⲍⲛ̄ ⲛⲕⲟⲥⲙⲟ{66}",
+      "core_english": "{64}and the entire {65}archonic order which is in the world{66}",
+      "apparatus": [
+        {
+          "id": 64,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "",
+          "basis": "Editor's restoration; ⲙⲛ 'and.'",
+          "source_id": 67,
+          "section": 168
+        },
+        {
+          "id": 65,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲁⲣ",
+          "english": "",
+          "basis": "Editor's restoration; ⲁⲣⲭⲟⲛⲧⲓⲕⲏ 'archonic order.'",
+          "source_id": 68,
+          "section": 168
+        },
+        {
+          "id": 66,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲥ ⲛⲧⲉ ⲡⲕⲉⲕⲉ ⲧⲉ",
+          "english": "s of darkness; she who",
+          "basis": "Editor's restoration; ⲛⲕⲟⲥⲙⲟⲥ ⲛⲧⲉ ⲡⲕⲉⲕⲉ 'worlds of darkness.'",
+          "source_id": 69,
+          "section": 168
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Archonic order — cosmic structure."
     },
@@ -422,8 +1026,30 @@
       "chapter": 4,
       "line": 44,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁⲥⲡⲗⲁⲥⲥⲉ ⲁ̄ⲙⲁⲥ ⲍⲛ ⲧⲟⲩ {132}ⲥⲑⲏⲧⲏⲣⲓⲟⲛ ⲧⲟⲩ {133}",
-      "core_english": "she molded them in the five {134}senses, the five {135}",
+      "core_coptic": "ⲧⲁⲥⲡⲗⲁⲥⲥⲉ ⲁ̄ⲙⲁⲥ ⲍⲛ ⲧⲟⲩ {67}ⲥⲑⲏⲧⲏⲣⲓⲟⲛ ⲧⲟⲩ {68}",
+      "core_english": "she molded them in the five {67}senses, the five {68}",
+      "apparatus": [
+        {
+          "id": 67,
+          "segment": 44,
+          "type": "restoration",
+          "coptic": "ⲛⲁ",
+          "english": "",
+          "basis": "Editor's restoration; completes ⲛⲁⲥⲑⲏⲧⲏⲣⲓⲟⲛ.",
+          "source_id": 70,
+          "section": 169
+        },
+        {
+          "id": 68,
+          "segment": 44,
+          "type": "restoration",
+          "coptic": "ⲛⲍⲁⲩⲧ",
+          "english": "tastes",
+          "basis": "Editor's restoration; ⲛⲍⲁⲩⲧ 'the tastes' — five tastes paired with five senses, attested in this kephalaion.",
+          "source_id": 71,
+          "section": 169
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Five-senses molding — substrate."
     },
@@ -432,8 +1058,30 @@
       "chapter": 4,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ̄ⲛ ⲧⲉ {136}ⲙⲉ ⲥⲛⲉⲩ ⲕⲁⲧⲁ ⲕⲟⲥⲙⲟⲥ ⲁⲍⲛ ⲧⲥⲉⲧⲉ ⲁ̄ⲛ {137}",
-      "core_english": "again of the two {138}voices, world by world, upon the fire, again {139}",
+      "core_coptic": "ⲁ̄ⲛ ⲧⲉ {69}ⲙⲉ ⲥⲛⲉⲩ ⲕⲁⲧⲁ ⲕⲟⲥⲙⲟⲥ ⲁⲍⲛ ⲧⲥⲉⲧⲉ ⲁ̄ⲛ {70}",
+      "core_english": "again of the two {69}voices, world by world, upon the fire, again {70}",
+      "apparatus": [
+        {
+          "id": 69,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲛⲥⲍ",
+          "english": "",
+          "basis": "Editor's restoration; ⲥⲍⲙⲉ = ⲥⲙⲏ 'voice.'",
+          "source_id": 72,
+          "section": 170
+        },
+        {
+          "id": 70,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲧⲍⲏⲁⲟ",
+          "english": "[the pleasure (hēdonē)]",
+          "basis": "Editor's restoration; ⲧⲍⲏⲁⲟⲛⲏ = ἡδονή.",
+          "source_id": 73,
+          "section": 170
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic distribution by world."
     },
@@ -442,8 +1090,40 @@
       "chapter": 4,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲏ {140}ⲟⲩⲛⲍ ⲍⲛ ⲛ̄ⲍⲁⲩⲧ ⲙⲛ̄ ⲛ{141}ⲁⲙⲉ ⲉⲥⲗⲱⲃϣ ⲁ̄{142}",
-      "core_english": "those {143}which are in the tastes and the {144}voices, mingling {145}",
+      "core_coptic": "ⲛⲏ {71}ⲟⲩⲛⲍ ⲍⲛ ⲛ̄ⲍⲁⲩⲧ ⲙⲛ̄ ⲛ{72}ⲁⲙⲉ ⲉⲥⲗⲱⲃϣ ⲁ̄{73}",
+      "core_english": "those {71}which are in the tastes and the {72}voices, mingling {73}",
+      "apparatus": [
+        {
+          "id": 71,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "",
+          "basis": "Editor's restoration; relative ⲉⲧ-.",
+          "source_id": 74,
+          "section": 171
+        },
+        {
+          "id": 72,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲥⲍ",
+          "english": "",
+          "basis": "Editor's restoration; ⲥⲍⲁⲙⲉ 'voices.'",
+          "source_id": 75,
+          "section": 171
+        },
+        {
+          "id": 73,
+          "segment": 46,
+          "type": "restoration",
+          "coptic": "ⲙⲁⲩ",
+          "english": "in them",
+          "basis": "Editor's restoration; ⲁ̄ⲙⲁⲩ 'in them.'",
+          "source_id": 76,
+          "section": 171
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tastes/voices — sensory-correspondence vocabulary."
     },
@@ -452,8 +1132,20 @@
       "chapter": 4,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲍⲟⲩⲛ ⲁⲛⲟⲩⲉⲣⲏⲩ ⲛⲉⲓ̈ ⲛⲉ ⲡⲙⲛ̄ⲧⲥⲛⲁⲩⲥ ⲁ̄ⲡⲛⲁ ⲛⲧⲉⲓ{146}",
-      "core_english": "into one another. These are the twelve belonging to the spirit of this {147}",
+      "core_coptic": "ⲁⲍⲟⲩⲛ ⲁⲛⲟⲩⲉⲣⲏⲩ ⲛⲉⲓ̈ ⲛⲉ ⲡⲙⲛ̄ⲧⲥⲛⲁⲩⲥ ⲁ̄ⲡⲛⲁ ⲛⲧⲉⲓ{74}",
+      "core_english": "into one another. These are the twelve belonging to the spirit of this {74}",
+      "apparatus": [
+        {
+          "id": 74,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲙⲁⲍ",
+          "english": "",
+          "basis": "Editor's restoration; ⲙⲁⲍⲥⲛⲧⲉ 'second.'",
+          "source_id": 77,
+          "section": 172
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve of the second-night spirit."
     },
@@ -464,6 +1156,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲛⲧⲉ ⲛⲟⲩϣⲛ ⲛ̄ⲧⲁⲥ ⲣⲱ ⲧⲍⲩⲗⲏ ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ ⲙⲡⲙⲟⲩ ⲧⲉ",
       "core_english": "second night, namely Matter herself, the desire (enthumēsis) of death; she",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Matter = enthumēsis of death — substrate identification."
     },
@@ -472,8 +1165,20 @@
       "chapter": 4,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁⲥⲧ{148} ⲡⲣⲟ ⲛ̄ⲛⲁⲡⲕⲉⲕⲉ ⲙⲛ ⲛⲉϩⲃⲁⲙ ⲧⲱⲕ ⲁⲣⲉⲧϩ ⲁⲡⲡⲟ",
-      "core_english": "she who set{149} the door for those of the darkness with the powers; she stood firm for the wa-",
+      "core_coptic": "ⲧⲁⲥⲧ{75} ⲡⲣⲟ ⲛ̄ⲛⲁⲡⲕⲉⲕⲉ ⲙⲛ ⲛⲉϩⲃⲁⲙ ⲧⲱⲕ ⲁⲣⲉⲧϩ ⲁⲡⲡⲟ",
+      "core_english": "she who set{75} the door for those of the darkness with the powers; she stood firm for the wa-",
+      "apparatus": [
+        {
+          "id": 75,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "Editor's restoration; ⲧⲁⲥⲧⲉ 'who set/opened.'",
+          "source_id": 78,
+          "section": 174
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic warfare narration."
     },
@@ -484,6 +1189,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲗⲉⲙⲟⲥ ⲙⲛ̄ ⲡⲁ̄ⲗⲁⲍ ⲟⲩⲃⲉ ⲛⲁⲓⲱⲛ ⲛ̄ⲧⲉ ⲧⲙⲛⲧⲛⲁⲃ ⲁⲗⲗⲁ",
       "core_english": "-r and the strife against the aeons of the divinity. But",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "War against aeons of divinity."
     },
@@ -492,8 +1198,30 @@
       "chapter": 4,
       "line": 51,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲩⲃⲁⲡϩ ⲁⲩⲃⲱⲣⲃ ⲁⲣⲁϩ ⲍⲓⲧⲛ ⲡϣⲁ{150}ⲱⲙⲉ ⲁⲩⲃ{151}",
-      "core_english": "they were struck down, they were bound upon him by the F{152}an; they {153}",
+      "core_coptic": "ⲁⲩⲃⲁⲡϩ ⲁⲩⲃⲱⲣⲃ ⲁⲣⲁϩ ⲍⲓⲧⲛ ⲡϣⲁ{76}ⲱⲙⲉ ⲁⲩⲃ{77}",
+      "core_english": "they were struck down, they were bound upon him by the F{76}an; they {77}",
+      "apparatus": [
+        {
+          "id": 76,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲣⲡ ⲛⲣ",
+          "english": "irst M",
+          "basis": "Editor's restoration; ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ 'the First Man.'",
+          "source_id": 79,
+          "section": 176
+        },
+        {
+          "id": 77,
+          "segment": 51,
+          "type": "restoration",
+          "coptic": "ⲓⲧϩ",
+          "english": "carried him off",
+          "basis": "Editor's restoration; ⲃⲓ-ⲧ⸗ⲥ 'they carried it/her off.'",
+          "source_id": 80,
+          "section": 176
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Defeat narrative — First Man bound the dark."
     },
@@ -502,8 +1230,47 @@
       "chapter": 4,
       "line": 52,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣ{154} {155} ⲧⲉ ⲍⲓⲧⲛ̄ ⲛ̄ⲃⲁⲙ {156} ⲁⲩⲛⲧ{157}",
-      "core_english": "unt{158} {159} ... by the powers {160} they brought {161}",
+      "core_coptic": "ϣ{78} {79} ⲧⲉ ⲍⲓⲧⲛ̄ ⲛ̄ⲃⲁⲙ {80} ⲁⲩⲛⲧ{81}",
+      "core_english": "unt{78} {79} ... by the powers {80} they brought {81}",
+      "apparatus": [
+        {
+          "id": 78,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "il",
+          "basis": "Editor's restoration; ϣⲁ- 'until.'",
+          "source_id": 81,
+          "section": 177
+        },
+        {
+          "id": 79,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 9,
+          "partial": "ⲧⲉ",
+          "source_id": 82,
+          "section": 177
+        },
+        {
+          "id": 80,
+          "segment": 52,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 83,
+          "section": 177
+        },
+        {
+          "id": 81,
+          "segment": 52,
+          "type": "restoration",
+          "coptic": "ϩ ⲁ",
+          "english": "him up",
+          "basis": "Editor's restoration; ⲁⲩⲛⲧϩ 'they brought him.' Continues into next line.",
+          "source_id": 84,
+          "section": 177
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic powers narrative; lacunose."
     },
@@ -512,8 +1279,20 @@
       "chapter": 4,
       "line": 53,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲣⲏⲓ ⲁⲃⲁⲗ ⲙⲡⲕⲁⲍ ⲁ̄ⲡⲙⲟⲩ ⲁⲩⲕ{162}",
-      "core_english": "up out of the land of death; they pl{163}",
+      "core_coptic": "ⲍⲣⲏⲓ ⲁⲃⲁⲗ ⲙⲡⲕⲁⲍ ⲁ̄ⲡⲙⲟⲩ ⲁⲩⲕ{82}",
+      "core_english": "up out of the land of death; they pl{82}",
+      "apparatus": [
+        {
+          "id": 82,
+          "segment": 53,
+          "type": "restoration",
+          "coptic": "ⲁⲁϩ",
+          "english": "aced him",
+          "basis": "Editor's restoration; ⲕⲁⲁ⸗ϥ 'placed him' — followed by further lacuna ~6 chars and restoration ⲙⲡⲥⲁⲛ 'of the upper'.",
+          "source_id": 85,
+          "section": 178
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Land of death raised up."
     },
@@ -522,8 +1301,30 @@
       "chapter": 4,
       "line": 54,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲡⲉ ⲙⲛ ⲡⲥⲁⲛⲧⲓⲧⲛⲉ ⲍⲙ ⲡⲕⲟⲥⲙⲟⲥ {164}ϩ ⲍⲛ ⲧⲧⲉ ⲛⲧⲁ{165}",
-      "core_english": "above and below in the {166}whole world, in the way that-",
+      "core_coptic": "ⲧⲡⲉ ⲙⲛ ⲡⲥⲁⲛⲧⲓⲧⲛⲉ ⲍⲙ ⲡⲕⲟⲥⲙⲟⲥ {83}ϩ ⲍⲛ ⲧⲧⲉ ⲛⲧⲁ{84}",
+      "core_english": "above and below in the {83}whole world, in the way that-",
+      "apparatus": [
+        {
+          "id": 83,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲧⲏⲣ",
+          "english": "en",
+          "basis": "Editor's restoration; ⲧⲏⲣϩ 'whole.'",
+          "source_id": 86,
+          "section": 179
+        },
+        {
+          "id": 84,
+          "segment": 54,
+          "type": "restoration",
+          "coptic": "ⲓⲉ",
+          "english": "",
+          "basis": "Editor's restoration; ⲛⲧⲁⲓⲉ 'in this way.'",
+          "source_id": 87,
+          "section": 179
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Above/below/world axis."
     },
@@ -532,8 +1333,30 @@
       "chapter": 4,
       "line": 55,
       "classification": "cosmological_substrate",
-      "core_coptic": "{167} ⲉⲧⲛⲧⲡⲉ ⲍⲛ̄ ⲙⲡⲏⲩⲉ ⲁⲍⲛ ⲧⲧⲉ ⲛ̄{168}ⲉ {169}ⲙⲡⲥⲁⲛⲧⲓⲧⲛⲉ",
-      "core_english": "{170}-which is above in the heavens, and in the way th{171}at {172}of the lower side",
+      "core_coptic": "{84} ⲉⲧⲛⲧⲡⲉ ⲍⲛ̄ ⲙⲡⲏⲩⲉ ⲁⲍⲛ ⲧⲧⲉ ⲛ̄{85}ⲉ {86}ⲙⲡⲥⲁⲛⲧⲓⲧⲛⲉ",
+      "core_english": "{84}-which is above in the heavens, and in the way th{85}at {86}of the lower side",
+      "apparatus": [
+        {
+          "id": 85,
+          "segment": 55,
+          "type": "restoration",
+          "coptic": "ⲧⲁ",
+          "english": "at-com",
+          "basis": "Editor's restoration; ⲛ̄ⲧⲁⲉ relative.",
+          "source_id": 88,
+          "section": 180
+        },
+        {
+          "id": 86,
+          "segment": 55,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "es",
+          "basis": "Editor's restoration; ⲉⲧ- relative.",
+          "source_id": 89,
+          "section": 180
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heavens above / lower side mapping."
     },
@@ -542,8 +1365,20 @@
       "chapter": 4,
       "line": 56,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲛ ⲛⲕⲁⲍ ⲉⲧⲛⲧⲓⲧⲛⲉ ⲁⲍⲁⲛ ⲡⲍⲙⲁⲙ {173}ⲁⲣⲁϣ ⲉⲧⲉ",
-      "core_english": "in the lower lands, alongside the heat {174}cold which is",
+      "core_coptic": "ⲍⲛ ⲛⲕⲁⲍ ⲉⲧⲛⲧⲓⲧⲛⲉ ⲁⲍⲁⲛ ⲡⲍⲙⲁⲙ {87}ⲁⲣⲁϣ ⲉⲧⲉ",
+      "core_english": "in the lower lands, alongside the heat {87}cold which is",
+      "apparatus": [
+        {
+          "id": 87,
+          "segment": 56,
+          "type": "restoration",
+          "coptic": "ⲙⲛ ⲡ",
+          "english": " and the ",
+          "basis": "Editor's restoration; standard ⲙⲛ̄ conjunction with article.",
+          "source_id": 90,
+          "section": 181
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Heat/cold polarity."
     },
@@ -552,8 +1387,20 @@
       "chapter": 4,
       "line": 57,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲓⲱⲧ ⲡⲉ ⲙⲛ̄ ⲧⲙⲟ ⲧⲟⲩⲥⲉⲧⲉ ⲙⲛ̄ ⲧⲟⲩⲍ{175}ⲁⲟⲛⲏ",
-      "core_english": "the father and the mother — their fire and their pl{176}easure (hēdonē).",
+      "core_coptic": "ⲡⲓⲱⲧ ⲡⲉ ⲙⲛ̄ ⲧⲙⲟ ⲧⲟⲩⲥⲉⲧⲉ ⲙⲛ̄ ⲧⲟⲩⲍ{88}ⲁⲟⲛⲏ",
+      "core_english": "the father and the mother — their fire and their pl{88}easure (hēdonē).",
+      "apparatus": [
+        {
+          "id": 88,
+          "segment": 57,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "",
+          "basis": "Editor's restoration; ⲍⲏⲁⲟⲛⲏ = ἡδονή 'pleasure.'",
+          "source_id": 91,
+          "section": 182
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father/mother polarity = fire/hēdonē — substrate correspondence."
     },
@@ -562,8 +1409,30 @@
       "chapter": 4,
       "line": 58,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧⲉⲓ ⲧⲉ ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛ̄ⲟⲩϣⲛ ⲉⲧⲁⲩⲭⲡⲁⲥ {177}ⲁⲗ {178}ⲧϣⲁⲣⲡ ⲛⲟⲩ",
-      "core_english": "This is the second night, which they begot {179}forth {180}from the first ni-",
+      "core_coptic": "Ⲧⲉⲓ ⲧⲉ ⲧⲙⲁⲍⲥⲛⲧⲉ ⲛ̄ⲟⲩϣⲛ ⲉⲧⲁⲩⲭⲡⲁⲥ {89}ⲁⲗ {90}ⲧϣⲁⲣⲡ ⲛⲟⲩ",
+      "core_english": "This is the second night, which they begot {89}forth {90}from the first ni-",
+      "apparatus": [
+        {
+          "id": 89,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ⲁⲃ",
+          "english": "",
+          "basis": "Editor's restoration; ⲁⲃⲁⲗ 'forth.'",
+          "source_id": 92,
+          "section": 183
+        },
+        {
+          "id": 90,
+          "segment": 58,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "",
+          "basis": "Editor's restoration; ⲛ̄ⲧϣⲁⲣⲡ 'of the first.'",
+          "source_id": 93,
+          "section": 183
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate emanation summary."
     },
@@ -572,8 +1441,30 @@
       "chapter": 4,
       "line": 59,
       "classification": "cosmological_substrate",
-      "core_coptic": "ϣⲛ ⲁⲩⲃⲱⲣⲃ ⲁⲣⲁⲥ ⲍⲓⲧⲛ̄ ⲡϣⲁⲣⲡ ⲛⲣ{181}ⲙⲉ ⲁⲩⲛⲧⲥ ⲁⲍⲣⲏ{182}",
-      "core_english": "ght; they bound her by the First M{183}an; they brought her u{184}p",
+      "core_coptic": "ϣⲛ ⲁⲩⲃⲱⲣⲃ ⲁⲣⲁⲥ ⲍⲓⲧⲛ̄ ⲡϣⲁⲣⲡ ⲛⲣ{91}ⲙⲉ ⲁⲩⲛⲧⲥ ⲁⲍⲣⲏ{92}",
+      "core_english": "ght; they bound her by the First M{91}an; they brought her u{92}p",
+      "apparatus": [
+        {
+          "id": 91,
+          "segment": 59,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "",
+          "basis": "Editor's restoration; ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ 'First Man.'",
+          "source_id": 94,
+          "section": 184
+        },
+        {
+          "id": 92,
+          "segment": 59,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "",
+          "basis": "Editor's restoration; ⲁⲍⲣⲏⲓ 'upward.'",
+          "source_id": 95,
+          "section": 184
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man binding."
     },
@@ -582,8 +1473,28 @@
       "chapter": 4,
       "line": 60,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲓⲧⲛ̄ ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ ⲁⲩⲕⲁⲥ ⲍⲙ ⲡⲓⲕⲟⲥⲙⲟ{185} ⲉⲧⲧⲏⲧ ⲉ {186}",
-      "core_english": "by the Living Spirit; they placed her in this wo{187}rld which is joined to {188}",
+      "core_coptic": "ⲍⲓⲧⲛ̄ ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ ⲁⲩⲕⲁⲥ ⲍⲙ ⲡⲓⲕⲟⲥⲙⲟ{93} ⲉⲧⲧⲏⲧ ⲉ {94}",
+      "core_english": "by the Living Spirit; they placed her in this wo{93}rld which is joined to {94}",
+      "apparatus": [
+        {
+          "id": 93,
+          "segment": 60,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "",
+          "basis": "Editor's restoration; -ⲥ completes ⲕⲟⲥⲙⲟⲥ.",
+          "source_id": 96,
+          "section": 185
+        },
+        {
+          "id": 94,
+          "segment": 60,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 97,
+          "section": 185
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit places Matter in this world."
     },
@@ -592,8 +1503,39 @@
       "chapter": 4,
       "line": 61,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲣⲁ{189} ⲁ̄ⲡⲥⲁⲛⲧⲧⲉ ⲙⲛ ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲡ{190} {191}",
-      "core_english": "her, to the upper side and the lower side; the {192}upper {193}",
+      "core_coptic": "ⲁⲣⲁ{95} ⲁ̄ⲡⲥⲁⲛⲧⲧⲉ ⲙⲛ ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲡ{96} {97}",
+      "core_english": "her, to the upper side and the lower side; the {96}upper {97}",
+      "apparatus": [
+        {
+          "id": 95,
+          "segment": 61,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "",
+          "basis": "Editor's restoration; ⲁⲣⲁⲥ 'to her' (3fs).",
+          "source_id": 98,
+          "section": 186
+        },
+        {
+          "id": 96,
+          "segment": 61,
+          "type": "restoration",
+          "coptic": "ⲥⲁⲛⲧⲧⲉ",
+          "english": "",
+          "basis": "Editor's restoration; ⲡⲥⲁⲛⲧⲧⲉ 'the upper side.'",
+          "source_id": 99,
+          "section": 186
+        },
+        {
+          "id": 97,
+          "segment": 61,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ". . [. . .",
+          "source_id": 100,
+          "section": 186
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Upper/lower axis."
     },
@@ -602,8 +1544,18 @@
       "chapter": 4,
       "line": 62,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲍⲁⲩⲧ ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲁⲡ{194}",
-      "core_english": "[is the senses-organ] of the tastes; the lower side to {195}",
+      "core_coptic": "ⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲍⲁⲩⲧ ⲡⲥⲁⲙⲡⲓⲧⲛⲉ ⲁⲡ{98}",
+      "core_english": "[is the senses-organ] of the tastes; the lower side to {98}",
+      "apparatus": [
+        {
+          "id": 98,
+          "segment": 62,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 101,
+          "section": 187
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Senses-of-tastes correspondence."
     },
@@ -612,8 +1564,20 @@
       "chapter": 4,
       "line": 63,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲍ{196}ⲙⲉ",
-      "core_english": "wo{197}men.",
+      "core_coptic": "ⲥⲍ{99}ⲙⲉ",
+      "core_english": "wo{99}men.",
+      "apparatus": [
+        {
+          "id": 99,
+          "segment": 63,
+          "type": "restoration",
+          "coptic": "ⲓⲁ",
+          "english": "",
+          "basis": "Editor's restoration; ⲥⲍⲓⲁⲙⲉ = ⲥϩⲓⲙⲉ 'woman.'",
+          "source_id": 102,
+          "section": 188
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Lower side = women — substrate gendered correspondence."
     },
@@ -622,8 +1586,20 @@
       "chapter": 4,
       "line": 64,
       "classification": "cosmological_substrate",
-      "core_coptic": "Ⲧⲙⲁⲍϣⲁⲙⲧ{198}",
-      "core_english": "The thi{199}rd [night is the five]",
+      "core_coptic": "Ⲧⲙⲁⲍϣⲁⲙⲧ{100}",
+      "core_english": "The thi{100}rd [night is the five]",
+      "apparatus": [
+        {
+          "id": 100,
+          "segment": 64,
+          "type": "restoration",
+          "coptic": "ⲉ ⲛⲟⲩϣⲛ ⲡⲉ ⲡⲧⲟⲩ",
+          "english": " night is the five",
+          "basis": "Editor's restoration; ⲧⲙⲁⲍϣⲁⲙⲧⲉ ⲛⲟⲩϣⲛ 'the third night,' followed by line 34's 'worlds of flesh' establishes the third = five fleshly worlds.",
+          "source_id": 103,
+          "section": 189
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third night opening — substrate enumeration."
     },
@@ -632,8 +1608,26 @@
       "chapter": 4,
       "line": 65,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲥⲁⲣⲝ {200} {201}",
-      "core_english": "worlds of flesh {202} {203}",
+      "core_coptic": "ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲥⲁⲣⲝ {101} {102}",
+      "core_english": "worlds of flesh {101} {102}",
+      "apparatus": [
+        {
+          "id": 101,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 104,
+          "section": 190
+        },
+        {
+          "id": 102,
+          "segment": 65,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 105,
+          "section": 190
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Worlds of flesh — substrate."
     },
@@ -642,8 +1636,20 @@
       "chapter": 4,
       "line": 66,
       "classification": "cosmological_substrate",
-      "core_coptic": "{204}ⲧ' ⲙⲛ̄ ⲧ⳨ⲉ ⲛⲥⲍⲙⲉ ⲛⲉⲛⲧⲁⲩⲭⲡⲁⲩ ⲁⲃⲁⲗ ⲛⲛ̄ⲟⲁⲙ",
-      "core_english": "{205} together with the ⳨ⲉ of the women, those whom they begot from the powers",
+      "core_coptic": "{103}ⲧ' ⲙⲛ̄ ⲧ⳨ⲉ ⲛⲥⲍⲙⲉ ⲛⲉⲛⲧⲁⲩⲭⲡⲁⲩ ⲁⲃⲁⲗ ⲛⲛ̄ⲟⲁⲙ",
+      "core_english": "{103} together with the ⳨ⲉ of the women, those whom they begot from the powers",
+      "apparatus": [
+        {
+          "id": 103,
+          "segment": 66,
+          "type": "restoration",
+          "coptic": "ⲍⲁⲩ",
+          "english": "Male",
+          "basis": "Standard Manichaean pairing ⲍⲁⲩⲧ ⲙⲛ̄ ... ⲛ̄ⲥⲍⲙⲉ 'male and ... female'; cf. line 7 ⲛⲍⲁⲩⲧ ⲍⲓ ⲥⲍⲓⲙⲉ",
+          "source_id": 106,
+          "section": 191
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate emanation pattern."
     },
@@ -652,8 +1658,18 @@
       "chapter": 4,
       "line": 67,
       "classification": "cosmological_substrate",
-      "core_coptic": "{206} ⲡⲉ̣ ⲁⲩⲍⲉ̣ⲉ ⲁⲭⲙ̄ ⲡⲕⲁⲍ ⲉⲩⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ ⲡⲡⲉ",
-      "core_english": "{207} it is, they fell upon the earth, being manifest from the heaven",
+      "core_coptic": "{104} ⲡⲉ̣ ⲁⲩⲍⲉ̣ⲉ ⲁⲭⲙ̄ ⲡⲕⲁⲍ ⲉⲩⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ ⲡⲡⲉ",
+      "core_english": "{104} it is, they fell upon the earth, being manifest from the heaven",
+      "apparatus": [
+        {
+          "id": 104,
+          "segment": 67,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 107,
+          "section": 192
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fall narrative — substrate cosmogony."
     },
@@ -662,8 +1678,20 @@
       "chapter": 4,
       "line": 68,
       "classification": "cosmological_substrate",
-      "core_coptic": "{208} ⲙⲛ̄ ⲡⲡⲉⲧⲁⲟⲃⲉ ⲁⲍⲛ̄ ⲧⲥⲉⲧⲉ ⲙⲛ ⲧⲍⲏⲇⲟⲛⲏ",
-      "core_english": "{209} together with the abomination, by the fire and the pleasure",
+      "core_coptic": "{105} ⲙⲛ̄ ⲡⲡⲉⲧⲁⲟⲃⲉ ⲁⲍⲛ̄ ⲧⲥⲉⲧⲉ ⲙⲛ ⲧⲍⲏⲇⲟⲛⲏ",
+      "core_english": "{105} together with the abomination, by the fire and the pleasure",
+      "apparatus": [
+        {
+          "id": 105,
+          "segment": 68,
+          "type": "restoration",
+          "coptic": "ⲧⲯⲟⲩⲱⲩ",
+          "english": "the defilement",
+          "basis": "Editor restoration; ⲡⲥⲱⲱϥ/ⲯⲟⲟⲩⲩ 'defilement, pollution' fits the fire/pleasure context paired with ⲡⲉⲧⲁⲟⲃⲉ",
+          "source_id": 108,
+          "section": 193
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Fire and hēdonē repeated."
     },
@@ -672,8 +1700,20 @@
       "chapter": 4,
       "line": 69,
       "classification": "cosmological_substrate",
-      "core_coptic": "{210} ⲛ̄ⲍⲏⲧⲟⲩ ⲉⲧⲕ̣ⲙ ⲁⲣⲁⲩ ⲁⲍⲟⲩⲛ ⲁⲛⲟⲩⲁⲣⲏⲩ",
-      "core_english": "{211} in them, which presses upon them inward toward one another",
+      "core_coptic": "{106} ⲛ̄ⲍⲏⲧⲟⲩ ⲉⲧⲕ̣ⲙ ⲁⲣⲁⲩ ⲁⲍⲟⲩⲛ ⲁⲛⲟⲩⲁⲣⲏⲩ",
+      "core_english": "{106} in them, which presses upon them inward toward one another",
+      "apparatus": [
+        {
+          "id": 106,
+          "segment": 69,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲟⲩⲏⲍ",
+          "english": "which dwells",
+          "basis": "Editor restoration; ⲟⲩⲱϩ 'dwell, abide' relative form",
+          "source_id": 109,
+          "section": 194
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Internal forces description."
     },
@@ -682,8 +1722,20 @@
       "chapter": 4,
       "line": 70,
       "classification": "cosmological_substrate",
-      "core_coptic": "{212} ⲍⲱⲥ ⲧⲉ̣ⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲟⲩ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲟⲩ",
-      "core_english": "{213} herself is the desire of death — she who is their",
+      "core_coptic": "{107} ⲍⲱⲥ ⲧⲉ̣ⲛⲑⲩⲙⲏⲥⲓⲥ ⲙ̄ⲡⲙⲟⲩ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲟⲩ",
+      "core_english": "{107} herself is the desire of death — she who is their",
+      "apparatus": [
+        {
+          "id": 107,
+          "segment": 70,
+          "type": "restoration",
+          "coptic": "ⲧⲍⲩⲗⲏ",
+          "english": "Matter",
+          "basis": "Editor restoration; ὕλη with feminine article — confirmed by parallel in line 16 ⲛⲍⲱⲇⲟⲛ ⲛ̄ⲧⲉ ⲧⲍⲩⲗⲏ",
+          "source_id": 110,
+          "section": 195
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enthumēsis of death repeated."
     },
@@ -692,8 +1744,20 @@
       "chapter": 4,
       "line": 71,
       "classification": "cosmological_substrate",
-      "core_coptic": "{214} ⲧⲏⲣⲟⲩ ⲉⲩ⳨ⲣⲉⲛ ⲁⲣⲁⲥ ⲛ̄ⲍⲏⲧⲟⲩ ⲭⲉ ⲧⲟⲩⲱⲏ ⲯⲁⲣⲉ",
-      "core_english": "{215} of them all, whom they call among themselves, that is, the dwelling-place of the",
+      "core_coptic": "{108} ⲧⲏⲣⲟⲩ ⲉⲩ⳨ⲣⲉⲛ ⲁⲣⲁⲥ ⲛ̄ⲍⲏⲧⲟⲩ ⲭⲉ ⲧⲟⲩⲱⲏ ⲯⲁⲣⲉ",
+      "core_english": "{108} of them all, whom they call among themselves, that is, the dwelling-place of the",
+      "apparatus": [
+        {
+          "id": 108,
+          "segment": 71,
+          "type": "restoration",
+          "coptic": "ⲙⲉⲩ",
+          "english": "mother",
+          "basis": "Editor restoration; ⲧⲟⲩ-ⲙⲉⲩ ⲧⲏⲣⲟⲩ 'their mother of all' — Matter as mother of the cosmic powers",
+          "source_id": 111,
+          "section": 196
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Dwelling-place terminology."
     },
@@ -702,8 +1766,20 @@
       "chapter": 4,
       "line": 72,
       "classification": "cosmological_substrate",
-      "core_coptic": "{216} ⲛⲛⲥⲁⲣⲝ̄ ⲛⲍⲁⲩⲧ ⲍⲓ ⲥⲍⲓⲙⲉ ⲁⲍⲁⲛ ⲧⲥⲉⲧⲉ ⲙⲛ ⲧⲍⲏ",
-      "core_english": "{217} of fleshes, of male and female, beside the fire and the plea-",
+      "core_coptic": "{109} ⲛⲛⲥⲁⲣⲝ̄ ⲛⲍⲁⲩⲧ ⲍⲓ ⲥⲍⲓⲙⲉ ⲁⲍⲁⲛ ⲧⲥⲉⲧⲉ ⲙⲛ ⲧⲍⲏ",
+      "core_english": "{109} of fleshes, of male and female, beside the fire and the plea-",
+      "apparatus": [
+        {
+          "id": 109,
+          "segment": 72,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲕⲟⲥⲙⲟⲥ",
+          "english": "world",
+          "basis": "Editor restoration; ⲡⲕⲟⲥⲙⲟⲥ ⲛ̄ⲛⲥⲁⲣⲝ 'the world of fleshes' is a fixed phrase, cf. line 10",
+          "source_id": 112,
+          "section": 197
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Male/female flesh / fire+pleasure."
     },
@@ -712,8 +1788,29 @@
       "chapter": 4,
       "line": 73,
       "classification": "cosmological_substrate",
-      "core_coptic": "{218} ⲙⲛ̄ⲧⲥⲛⲁⲩⲥⲉ ⲛ̄ⲟⲩⲛⲟⲩ ⲛ̄ⲧⲉ {219}",
-      "core_english": "{220} the twelve hours of {221}",
+      "core_coptic": "{110} ⲙⲛ̄ⲧⲥⲛⲁⲩⲥⲉ ⲛ̄ⲟⲩⲛⲟⲩ ⲛ̄ⲧⲉ {111}",
+      "core_english": "{110} the twelve hours of {111}",
+      "apparatus": [
+        {
+          "id": 110,
+          "segment": 73,
+          "type": "restoration",
+          "coptic": "ⲇⲟⲛⲏ",
+          "english": "-sure",
+          "basis": "Editor restoration completing ⲧⲍⲏⲇⲟⲛⲏ from prior line",
+          "source_id": 113,
+          "section": 198
+        },
+        {
+          "id": 111,
+          "segment": 73,
+          "type": "lacuna",
+          "est_chars": 11,
+          "partial": "small lacuna after ⲇⲟⲛⲏ then 9-dot lacuna at end of line",
+          "source_id": 114,
+          "section": 198
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve hours enumeration."
     },
@@ -722,8 +1819,28 @@
       "chapter": 4,
       "line": 74,
       "classification": "cosmological_substrate",
-      "core_coptic": "{222} ⲟⲩⲱⲏ {223} ⲍ̣ⲱⲥ ⲁⲛ ⲧⲙⲁⲍⲯⲁⲙⲧⲉ ⲛⲟⲩⲱⲏ ⲉⲧⲍⲛ",
-      "core_english": "{224} dwelling-place {225} herself also. The third dwelling-place which is in",
+      "core_coptic": "{112} ⲟⲩⲱⲏ {113} ⲍ̣ⲱⲥ ⲁⲛ ⲧⲙⲁⲍⲯⲁⲙⲧⲉ ⲛⲟⲩⲱⲏ ⲉⲧⲍⲛ",
+      "core_english": "{112} dwelling-place {113} herself also. The third dwelling-place which is in",
+      "apparatus": [
+        {
+          "id": 112,
+          "segment": 74,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 115,
+          "section": 199
+        },
+        {
+          "id": 113,
+          "segment": 74,
+          "type": "restoration",
+          "coptic": "ⲛ̄ⲧⲁⲥ",
+          "english": "of theirs",
+          "basis": "Editor restoration; possessive 3pl",
+          "source_id": 116,
+          "section": 199
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Third dwelling-place enumeration."
     },
@@ -732,8 +1849,40 @@
       "chapter": 4,
       "line": 75,
       "classification": "cosmological_substrate",
-      "core_coptic": "{226}ⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲥ{227}ⲁⲣⲝ̄ ⲛⲧⲁⲩⲭⲡⲧⲁⲥ ⲁⲃⲁⲗ ⲛⲧⲙⲁⲍ̄{228}ⲛⲧⲉ ⲛ",
-      "core_english": "the {229} world of the {230} flesh — they begot her from the se{231}cond",
+      "core_coptic": "{114}ⲕⲟⲥⲙⲟⲥ ⲛ̄ⲧⲥ{115}ⲁⲣⲝ̄ ⲛⲧⲁⲩⲭⲡⲧⲁⲥ ⲁⲃⲁⲗ ⲛⲧⲙⲁⲍ̄{116}ⲛⲧⲉ ⲛ",
+      "core_english": "the {114} world of the {115} flesh — they begot her from the se{116}cond",
+      "apparatus": [
+        {
+          "id": 114,
+          "segment": 75,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "[article]",
+          "basis": "Editor restoration of single letter completing ⲛ̄ⲕⲟⲥⲙⲟⲥ",
+          "source_id": 117,
+          "section": 200
+        },
+        {
+          "id": 115,
+          "segment": 75,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "[medial vowel]",
+          "basis": "Editor restoration completing ⲛ̄ⲧⲥⲁⲣⲝ",
+          "source_id": 118,
+          "section": 200
+        },
+        {
+          "id": 116,
+          "segment": 75,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "[s]",
+          "basis": "Editor restoration completing ⲙⲁⲍⲥⲛⲧⲉ 'second'",
+          "source_id": 119,
+          "section": 200
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Generative pattern of dwellings."
     },
@@ -742,8 +1891,30 @@
       "chapter": 4,
       "line": 76,
       "classification": "cosmological_substrate",
-      "core_coptic": "{232}ⲱⲏ ⲧⲉⲧⲁ ⲡ{233} ⲉⲧⲁⲛⲍ̄ ⲣⲥⲧⲁⲩⲣⲉ ⲙⲙⲁⲥ ⲍⲙ ⲡⲕⲟ",
-      "core_english": "{234} dwelling-place, which the Living {235} crucified, in the wor-",
+      "core_coptic": "{117}ⲱⲏ ⲧⲉⲧⲁ ⲡ{118} ⲉⲧⲁⲛⲍ̄ ⲣⲥⲧⲁⲩⲣⲉ ⲙⲙⲁⲥ ⲍⲙ ⲡⲕⲟ",
+      "core_english": "{117} dwelling-place, which the Living {118} crucified, in the wor-",
+      "apparatus": [
+        {
+          "id": 117,
+          "segment": 76,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "dwelling [the]",
+          "basis": "Editor restoration completing ⲛⲟⲩⲱⲏ",
+          "source_id": 120,
+          "section": 201
+        },
+        {
+          "id": 118,
+          "segment": 76,
+          "type": "restoration",
+          "coptic": "ⲡⲛⲁ̄",
+          "english": "Spirit",
+          "basis": "Editor restoration; ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄ = the Living Spirit, Manichaean technical term, with ⲣⲥⲧⲁⲩⲣⲉ following ('crucified')",
+          "source_id": 121,
+          "section": 201
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living Spirit (?) crucified — substrate."
     },
@@ -752,8 +1923,28 @@
       "chapter": 4,
       "line": 77,
       "classification": "cosmological_substrate",
-      "core_coptic": "{236}ⲛⲧⲡⲉ ⲙⲛ ⲡⲥⲁⲛⲡⲓ̣ⲧⲛⲉ ⲍⲛ ⲧⲡⲉ ⲙ {237}",
-      "core_english": "{238} above and the below, in the heaven {239}",
+      "core_coptic": "{119}ⲛⲧⲡⲉ ⲙⲛ ⲡⲥⲁⲛⲡⲓ̣ⲧⲛⲉ ⲍⲛ ⲧⲡⲉ ⲙ {120}",
+      "core_english": "{119} above and the below, in the heaven {120}",
+      "apparatus": [
+        {
+          "id": 119,
+          "segment": 77,
+          "type": "restoration",
+          "coptic": "ⲥⲙⲟⲥ ⲉⲧⲧⲏⲧ ⲡⲥⲁ",
+          "english": "world which is joined: the place",
+          "basis": "Editor restoration; ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' standard pair with ⲡⲥⲁⲛⲡⲓⲧⲛⲉ",
+          "source_id": 122,
+          "section": 202
+        },
+        {
+          "id": 120,
+          "segment": 77,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 123,
+          "section": 202
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Above/below pairing."
     },
@@ -762,8 +1953,28 @@
       "chapter": 4,
       "line": 78,
       "classification": "cosmological_substrate",
-      "core_coptic": "{240} ⲧ̄ⲙⲁⲍⲥⲧⲟⲉ ⲛ̄ⲟⲩⲱⲏ ⲡⲉ ⲡⲛⲟⲙⲟⲥ ⲙ̄{241}",
-      "core_english": "{242} the seventh dwelling-place is the law of {243}",
+      "core_coptic": "{121} ⲧ̄ⲙⲁⲍⲥⲧⲟⲉ ⲛ̄ⲟⲩⲱⲏ ⲡⲉ ⲡⲛⲟⲙⲟⲥ ⲙ̄{122}",
+      "core_english": "{121} the seventh dwelling-place is the law of {122}",
+      "apparatus": [
+        {
+          "id": 121,
+          "segment": 78,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 124,
+          "section": 203
+        },
+        {
+          "id": 122,
+          "segment": 78,
+          "type": "restoration",
+          "coptic": "ⲡⲛⲁⲃⲉ",
+          "english": "Sin",
+          "basis": "Editor restoration spanning to next line; ⲡⲛⲟⲙⲟⲥ ⲙ̄ⲡⲛⲁⲃⲉ 'the law of Sin' (cf. Rom 7:23, standard Manichaean usage)",
+          "source_id": 125,
+          "section": 203
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seventh dwelling = nomos — substrate identification."
     },
@@ -772,8 +1983,30 @@
       "chapter": 4,
       "line": 79,
       "classification": "cosmological_substrate",
-      "core_coptic": "{244} ⲡⲡⲛⲁ̄ ⲛⲕⲉⲕ̣ⲉ ⲡⲉ ⲉⲧⲥⲉⲭⲉ ⲍⲙ ⲡⲙⲛⲧⲥⲛⲁⲩ{245}",
-      "core_english": "{246} is the spirit of darkness, which is set in the twel{247}",
+      "core_coptic": "{123} ⲡⲡⲛⲁ̄ ⲛⲕⲉⲕ̣ⲉ ⲡⲉ ⲉⲧⲥⲉⲭⲉ ⲍⲙ ⲡⲙⲛⲧⲥⲛⲁⲩ{124}",
+      "core_english": "{123} is the spirit of darkness, which is set in the twel{124}",
+      "apparatus": [
+        {
+          "id": 123,
+          "segment": 79,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲉ",
+          "english": "which is",
+          "basis": "Editor restoration; relative copula introducing the gloss",
+          "source_id": 126,
+          "section": 204
+        },
+        {
+          "id": 124,
+          "segment": 79,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "-ve",
+          "basis": "Editor restoration completing ⲡⲙⲛⲧⲥⲛⲁⲩⲥ 'the twelve'",
+          "source_id": 127,
+          "section": 204
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Spirit of darkness in the twelve."
     },
@@ -782,8 +2015,20 @@
       "chapter": 4,
       "line": 80,
       "classification": "cosmological_substrate",
-      "core_coptic": "{248} ⲡⲙⲛⲧⲥⲛⲁⲩⲥ ⲛ̄ⲇⲟⲅⲙⲁ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛ̄ⲕⲱⲕ̄ ⲁ",
-      "core_english": "{249} the twelve doctrines, which are the strippings na-",
+      "core_coptic": "{125} ⲡⲙⲛⲧⲥⲛⲁⲩⲥ ⲛ̄ⲇⲟⲅⲙⲁ ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ ⲛ̄ⲕⲱⲕ̄ ⲁ",
+      "core_english": "{125} the twelve doctrines, which are the strippings na-",
+      "apparatus": [
+        {
+          "id": 125,
+          "segment": 80,
+          "type": "restoration",
+          "coptic": "ⲙ̄ⲡⲛⲁ̄",
+          "english": "spirits",
+          "basis": "Editor restoration; ⲡⲙⲛⲧⲥⲛⲁⲩⲥ ⲙ̄ⲡⲛⲁ 'the twelve spirits' parallel to ⲙⲛⲧⲥⲛⲁⲩⲥ ⲛ̄ⲇⲟⲅⲙⲁ",
+          "source_id": 128,
+          "section": 205
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve doctrines (ⲇⲟⲅⲙⲁ) here function as cosmic structure (=zodiacs of matter at i=81), NOT contemporary heresies. Polemic-vocabulary score is misleading: this is substrate cosmology absorbing ⲇⲟⲅⲙⲁ as a cosmic register."
     },
@@ -792,8 +2037,20 @@
       "chapter": 4,
       "line": 81,
       "classification": "cosmological_substrate",
-      "core_coptic": "{250} ⲡⲙ̄ⲛⲧⲥⲛⲁⲩⲥ̣ ⲛⲍⲱⲇⲟⲛ ⲛ̄ⲧⲉ ⲧⲍⲩⲗⲏ ⲉⲧⲉ ⲛⲧⲁⲩ",
-      "core_english": "{251} the twelve zodiac-signs of the matter, which are",
+      "core_coptic": "{126} ⲡⲙ̄ⲛⲧⲥⲛⲁⲩⲥ̣ ⲛⲍⲱⲇⲟⲛ ⲛ̄ⲧⲉ ⲧⲍⲩⲗⲏ ⲉⲧⲉ ⲛⲧⲁⲩ",
+      "core_english": "{126} the twelve zodiac-signs of the matter, which are",
+      "apparatus": [
+        {
+          "id": 126,
+          "segment": 81,
+          "type": "restoration",
+          "coptic": "ⲍⲏⲩ",
+          "english": "-ked",
+          "basis": "Editor restoration; ⲕⲱⲕ ⲁⲍⲏⲩ idiom 'to strip naked'",
+          "source_id": 129,
+          "section": 206
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve zodiacs of matter — pure cosmic correspondence."
     },
@@ -802,8 +2059,20 @@
       "chapter": 4,
       "line": 82,
       "classification": "cosmological_substrate",
-      "core_coptic": "{252} ⲛⲉⲥⲫⲣⲟⲛⲟⲥ ⲧⲉⲧⲧⲏⲟ̄ ⲁⲃⲁⲗ ⲉⲥⲣ̄ⲍⲱⲓⲣⲁⲫⲉ ⲉⲥⲟⲩ",
-      "core_english": "{253} the prudent ones, which is sent forth, painting, mani-",
+      "core_coptic": "{127} ⲛⲉⲥⲫⲣⲟⲛⲟⲥ ⲧⲉⲧⲧⲏⲟ̄ ⲁⲃⲁⲗ ⲉⲥⲣ̄ⲍⲱⲓⲣⲁⲫⲉ ⲉⲥⲟⲩ",
+      "core_english": "{127} the prudent ones, which is sent forth, painting, mani-",
+      "apparatus": [
+        {
+          "id": 127,
+          "segment": 82,
+          "type": "restoration",
+          "coptic": "ⲛⲉ",
+          "english": "the",
+          "basis": "Editor restoration; copular ⲛⲉ before plural noun",
+          "source_id": 130,
+          "section": 207
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Image-painting (zōgraphos) function continued."
     },
@@ -812,8 +2081,30 @@
       "chapter": 4,
       "line": 83,
       "classification": "cosmological_substrate",
-      "core_coptic": "{254}ⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲣⲙ̄ⲛⲉⲥ ⲛⲟⲩⲛⲁⲩⲉ ⲇⲉ ⲍⲱϥ ⲛ̄⳨ⲙⲁⲍⲥ̣{255}",
-      "core_english": "{256}-fest from the Ancient One. To them, moreover, likewise, the seven{257}",
+      "core_coptic": "{128}ⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲙ̄ ⲡⲣⲙ̄ⲛⲉⲥ ⲛⲟⲩⲛⲁⲩⲉ ⲇⲉ ⲍⲱϥ ⲛ̄⳨ⲙⲁⲍⲥ̣{129}",
+      "core_english": "{128}-fest from the Ancient One. To them, moreover, likewise, the seven{129}",
+      "apparatus": [
+        {
+          "id": 128,
+          "segment": 83,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "[a]",
+          "basis": "Editor restoration completing ⲟⲩⲁⲛⲍ̄ 'manifest'",
+          "source_id": 131,
+          "section": 208
+        },
+        {
+          "id": 129,
+          "segment": 83,
+          "type": "restoration",
+          "coptic": "ⲧⲟⲉ",
+          "english": "-th",
+          "basis": "Editor restoration completing ⲙⲁⲍⲥⲧⲟⲉ 'seventh'",
+          "source_id": 132,
+          "section": 208
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ancient One (ⲡⲣⲙⲛⲉⲥ) — cosmic principle."
     },
@@ -822,8 +2113,20 @@
       "chapter": 4,
       "line": 84,
       "classification": "cosmological_substrate",
-      "core_coptic": "{258} ⲛⲟⲩⲱⲏ ⲉⲧⲉ ⲡⲣⲙⲛⲉⲥ ⲡⲉ ⲉⲧⲟ ⲛ̄ⲣⲣⲟ ⲍ̄ⲛ ⲛ̄ⲇⲟⲅⲙⲁ ⲡⲉ ⲡ{259}",
-      "core_english": "{260} dwelling-place, which is the Ancient One who reigns among the doctrines, is the {261}",
+      "core_coptic": "{130} ⲛⲟⲩⲱⲏ ⲉⲧⲉ ⲡⲣⲙⲛⲉⲥ ⲡⲉ ⲉⲧⲟ ⲛ̄ⲣⲣⲟ ⲍ̄ⲛ ⲛ̄ⲇⲟⲅⲙⲁ ⲡⲉ ⲡ{131}",
+      "core_english": "{130} dwelling-place, which is the Ancient One who reigns among the doctrines, is the {131}",
+      "apparatus": [
+        {
+          "id": 130,
+          "segment": 84,
+          "type": "restoration",
+          "coptic": "ⲙⲛⲧ",
+          "english": "twelve",
+          "basis": "Editor restoration; ⲙⲛⲧⲥⲛⲁⲩⲥ as in lines 14, 15, 16",
+          "source_id": 133,
+          "section": 209
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Ancient One reigns in the doctrines — substrate cosmic kingship over the twelve dogma-zodiacs. The polemic score (36.36) misreads ⲇⲟⲅⲙⲁ as contemporary; it is cosmic here."
     },
@@ -832,8 +2135,18 @@
       "chapter": 4,
       "line": 85,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲛⲁⲩⲥ ⲙ̄ⲡⲛⲁ̄ ⲉⲧ̣{262}ⲩ ⲧ {263} ⲙ̄ⲡⲣⲙ̄ⲛⲉⲥ ⲉⲧⲉ ⲛⲧⲁⲩ",
-      "core_english": "twelve spirits which {264} {265} of the Ancient One, which are",
+      "core_coptic": "ⲥⲛⲁⲩⲥ ⲙ̄ⲡⲛⲁ̄ ⲉⲧ̣{132}ⲩ ⲧ {133} ⲙ̄ⲡⲣⲙ̄ⲛⲉⲥ ⲉⲧⲉ ⲛⲧⲁⲩ",
+      "core_english": "twelve spirits which {132} {133} of the Ancient One, which are",
+      "apparatus": [
+        {
+          "id": 132,
+          "segment": 85,
+          "type": "lacuna",
+          "est_chars": 6,
+          "source_id": 135,
+          "section": 210
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Twelve spirits of Ancient One — substrate enumeration."
     },
@@ -842,8 +2155,36 @@
       "chapter": 4,
       "line": 89,
       "classification": "mixed",
-      "core_coptic": "{266} {267}ⲁⲕⲣⲓⲛⲉ {268}",
-      "core_english": "{269} {270} judges {271}",
+      "core_coptic": "{134} {135}ⲁⲕⲣⲓⲛⲉ {136}",
+      "core_english": "{134} {135} judges {136}",
+      "apparatus": [
+        {
+          "id": 134,
+          "segment": 89,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 137,
+          "section": 211
+        },
+        {
+          "id": 135,
+          "segment": 89,
+          "type": "restoration",
+          "coptic": "ⲇ",
+          "english": "[d]",
+          "basis": "Editor restoration; ⲇⲁⲕⲣⲓⲛⲉ from Greek δια-/δοκι-κρίνειν 'judge, discriminate'",
+          "source_id": 138,
+          "section": 211
+        },
+        {
+          "id": 136,
+          "segment": 89,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 139,
+          "section": 211
+        }
+      ],
       "removed_material": "Stripped 'ⲙⲫⲟⲟⲩ' / 'today' — temporal anchor pointing to editor's present. The judging-function itself fits substrate eschatology; the 'today' reaches outside.",
       "temporal_note": "Editorial 'today' marker; lacuna context limits cleaner extraction."
     },
@@ -852,8 +2193,28 @@
       "chapter": 4,
       "line": 90,
       "classification": "cosmological_substrate",
-      "core_coptic": "{272} {273}ⲡⲙⲟⲩ ⲧⲉ̣ ⲧⲉ ⲧⲙⲁⲍⲥⲧⲟⲉ ⲛ̄ⲟⲩ",
-      "core_english": "{274} of {275} death she is. The seventh dwelling-",
+      "core_coptic": "{137} {138}ⲡⲙⲟⲩ ⲧⲉ̣ ⲧⲉ ⲧⲙⲁⲍⲥⲧⲟⲉ ⲛ̄ⲟⲩ",
+      "core_english": "{137} of {138} death she is. The seventh dwelling-",
+      "apparatus": [
+        {
+          "id": 137,
+          "segment": 90,
+          "type": "lacuna",
+          "est_chars": 13,
+          "source_id": 140,
+          "section": 212
+        },
+        {
+          "id": 138,
+          "segment": 90,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "[m]",
+          "basis": "Editor restoration completing ⲙ̄ⲡⲙⲟⲩ 'of death'",
+          "source_id": 141,
+          "section": 212
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Seventh dwelling = death — substrate identification."
     },
@@ -862,8 +2223,37 @@
       "chapter": 4,
       "line": 91,
       "classification": "cosmological_substrate",
-      "core_coptic": "{276} {277} ⲉⲧⲁⲩⲉ̣ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲁ ⲟⲩⲉ {278}",
-      "core_english": "{279} {280} which came forth from one another to one {281}",
+      "core_coptic": "{139} {140} ⲉⲧⲁⲩⲉ̣ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲁ ⲟⲩⲉ {141}",
+      "core_english": "{139} {140} which came forth from one another to one {141}",
+      "apparatus": [
+        {
+          "id": 139,
+          "segment": 91,
+          "type": "restoration",
+          "coptic": "ⲱⲏ",
+          "english": "-place",
+          "basis": "Editor restoration completing ⲟⲩⲱⲏ 'dwelling-place' from preceding line",
+          "source_id": 142,
+          "section": 213
+        },
+        {
+          "id": 140,
+          "segment": 91,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 143,
+          "section": 213
+        },
+        {
+          "id": 141,
+          "segment": 91,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲟⲩⲉ visible at line-end",
+          "source_id": 144,
+          "section": 213
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate emanation summary."
     },
@@ -872,8 +2262,28 @@
       "chapter": 4,
       "line": 92,
       "classification": "cosmological_substrate",
-      "core_coptic": "{282} ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲛ̄ⲛ̄ⲍⲟⲟⲩⲉ ⲛ̄{283}",
-      "core_english": "{284} according to the manner of the days of {285}",
+      "core_coptic": "{142} ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲛ̄ⲛ̄ⲍⲟⲟⲩⲉ ⲛ̄{143}",
+      "core_english": "{142} according to the manner of the days of {143}",
+      "apparatus": [
+        {
+          "id": 142,
+          "segment": 92,
+          "type": "lacuna",
+          "est_chars": 14,
+          "source_id": 145,
+          "section": 214
+        },
+        {
+          "id": 143,
+          "segment": 92,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁⲛⲉ",
+          "english": "manifestation/light",
+          "basis": "Editor restoration; ⲟⲩⲁⲛⲉ likely = ⲟⲩⲱⲛϩ 'manifestation' or ⲟⲩⲁⲓⲛⲉ 'light'",
+          "source_id": 146,
+          "section": 214
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Comparison to days-pattern."
     },
@@ -882,8 +2292,28 @@
       "chapter": 4,
       "line": 93,
       "classification": "cosmological_substrate",
-      "core_coptic": "{286} ⲁⲩⲟ̄ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲧⲍⲉ ⲍⲱ{287}",
-      "core_english": "{288} they were uncovered from one another; thus also like{289}-",
+      "core_coptic": "{144} ⲁⲩⲟ̄ⲱⲗⲡ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ ⲧⲍⲉ ⲍⲱ{145}",
+      "core_english": "{144} they were uncovered from one another; thus also like{145}-",
+      "apparatus": [
+        {
+          "id": 144,
+          "segment": 93,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 147,
+          "section": 215
+        },
+        {
+          "id": 145,
+          "segment": 93,
+          "type": "restoration",
+          "coptic": "ϥ",
+          "english": "-wise",
+          "basis": "Editor restoration completing ⲍⲱϥ 'likewise, also'",
+          "source_id": 148,
+          "section": 215
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate emanation pattern."
     },
@@ -892,8 +2322,18 @@
       "chapter": 4,
       "line": 94,
       "classification": "cosmological_substrate",
-      "core_coptic": "{290} ⲛⲧⲁⲩⲱⲱⲧⲉ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ",
-      "core_english": "{291} which were separated from one another",
+      "core_coptic": "{146} ⲛⲧⲁⲩⲱⲱⲧⲉ ⲁⲃⲁⲗ ⲛ̄ⲛⲟⲩⲉⲣⲏⲩ",
+      "core_english": "{146} which were separated from one another",
+      "apparatus": [
+        {
+          "id": 146,
+          "segment": 94,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 149,
+          "section": 216
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Separation pattern — substrate."
     },
@@ -902,8 +2342,30 @@
       "chapter": 4,
       "line": 95,
       "classification": "mixed",
-      "core_coptic": "{292}ⲓ̄ⲉⲧϩ ⲙ̄{293}ⲥⲛⲟⲩⲱⲛⲟⲩ ⲛϩⲡⲁⲣⲭⲟⲩ ⲁⲃⲁⲗ ⲛϩ",
-      "core_english": "{294} feet of {295} make-them-manifest as ὑπάρχοντες (existing-things) forth from",
+      "core_coptic": "{147}ⲓ̄ⲉⲧϩ ⲙ̄{148}ⲥⲛⲟⲩⲱⲛⲟⲩ ⲛϩⲡⲁⲣⲭⲟⲩ ⲁⲃⲁⲗ ⲛϩ",
+      "core_english": "{147} feet of {148} make-them-manifest as ὑπάρχοντες (existing-things) forth from",
+      "apparatus": [
+        {
+          "id": 147,
+          "segment": 95,
+          "type": "restoration",
+          "coptic": "ⲛⲉ",
+          "english": "these are",
+          "basis": "Editor restoration; demonstrative-copular ⲛⲉⲓ̈ before relative",
+          "source_id": 150,
+          "section": 217
+        },
+        {
+          "id": 148,
+          "segment": 95,
+          "type": "restoration",
+          "coptic": "ⲡⲉⲧⲛⲁ",
+          "english": "him who will",
+          "basis": "Editor restoration; future relative ⲡⲉⲧⲛⲁ- + verb ⲥ-ⲟⲩⲱⲛⲟⲩ 'cause-them-to-be-revealed'",
+          "source_id": 151,
+          "section": 217
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Borderline pastoral closing — 'making manifest as existing things' may be hortatory turn. Heavily lacunose."
     }

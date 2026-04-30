@@ -5,7 +5,7 @@
   "start_section": 4706,
   "end_section": 4742,
   "total_sections": 37,
-  "total_lacunae": 54,
+  "total_lacunae": 27,
   "segments": [
     {
       "section": 4706,
@@ -13,7 +13,19 @@
       "line": 4,
       "classification": "mixed",
       "core_coptic": "ⲡϩⲧⲁⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ {0}ⲁⲧϥ̄",
-      "core_english": "These four elements — {1}chosen one —",
+      "core_english": "These four elements — {0}chosen one —",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲡⲉⲧⲥ",
+          "english": "the ",
+          "basis": "Editor restoration; completing ⲡⲉⲧⲥⲁⲧϥ̄ 'the chosen one' (qualitative substantive of ⲥⲱⲧⲡ̄), parallel to ⲡⲥⲁⲧⲧ in glossary",
+          "source_id": 4,
+          "section": 4706
+        }
+      ],
       "removed_material": "Removed dialogue frame attribution: 'ⲥⲁⲩⲍⲟ̄, ⲡⲁⲭⲉϩ ⲛ̄ϯⲍⲉ ⲭⲉ' / 'gathering, he said thus:'",
       "temporal_note": "Frame attribution stripped; substantive teaching opener about the four elements preserved."
     },
@@ -24,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲉ ⲭⲛ̄ ⲛ̄ⲧⲁⲣⲭⲏ. ⲍⲙ̄ⲡⲉⲧⲟⲩⲁⲃⲉ ⲛⲉ, ⲍⲙ̄ⲡⲉⲧⲁⲛⲍ̄ ⲛⲉ ⲙⲛ̄",
       "core_english": "it is from the beginning. They are in the holy ones, they are in the living ones, with",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmological teaching: the four elements are 'from the beginning' - the impersonal-structural voice. 'Holy ones' here = cosmic holy beings (paired with luminaries below), not ecclesial."
     },
@@ -32,8 +45,19 @@
       "chapter": 94,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲛ̄ϥⲱⲥⲧⲏⲣ. ⲁⲗⲗⲁ ⲁ̄ⲛ ⲡⲥⲛⲏⲩ ⲉⲧⲁⲩⲉⲓⲙⲉ {2}",
-      "core_english": "luminaries. But moreover, the brethren who knew {3}",
+      "core_coptic": "ⲍⲛ̄ϥⲱⲥⲧⲏⲣ. ⲁⲗⲗⲁ ⲁ̄ⲛ ⲡⲥⲛⲏⲩ ⲉⲧⲁⲩⲉⲓⲙⲉ {1}",
+      "core_english": "luminaries. But moreover, the brethren who knew {1}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲧ",
+          "source_id": 5,
+          "section": 4708
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Luminaries' completes the cosmic list; transition into narrative of the 'first contest' (cosmic primal mixing event), still substrate. 'Brethren' here may refer to cosmic brethren / sons of light."
     },
@@ -42,8 +66,20 @@
       "chapter": 94,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲙ̄ ⲡⲓϣⲁⲣⲡ ⲛ̄ⲁⲅⲱⲛ ⲉⲧⲙ̄ⲙⲉⲩ, ⲁ ⲡⲥⲁⲣⲙⲉ {4} ⲁ-",
-      "core_english": "in that first contest the Error {5} in-",
+      "core_coptic": "ⲍⲙ̄ ⲡⲓϣⲁⲣⲡ ⲛ̄ⲁⲅⲱⲛ ⲉⲧⲙ̄ⲙⲉⲩ, ⲁ ⲡⲥⲁⲣⲙⲉ {2} ⲁ-",
+      "core_english": "in that first contest the Error {2} in-",
+      "apparatus": [
+        {
+          "id": 2,
+          "segment": 7,
+          "type": "restoration",
+          "coptic": "ⲙⲟⲩⲭⲧ",
+          "english": "mingled",
+          "basis": "Editor restoration; ⲙⲟⲩⲝⲧ̄ 'mingle' (in glossary) is the standard cosmogonic verb for the mingling of Error/Darkness with Light in the first contest",
+          "source_id": 6,
+          "section": 4709
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The 'first contest' = primordial cosmic battle; Error and Darkness as cosmic agents - core substrate."
     },
@@ -54,6 +90,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲟⲩⲛ ⲛⲉⲙⲉⲩ ⲙⲛ̄ ⲡⲕⲉⲕⲉ ⲙ̄ⲡⲧⲭⲁⲭⲉ ⲉⲧⲁϩⲙⲟⲩⲭⲧ ⲛⲉ-",
       "core_english": "-ward with them, and the Darkness of the Enemy which had mingled with",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Mixing of Darkness with the elements - cosmic substrate."
     },
@@ -62,8 +99,20 @@
       "chapter": 94,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉⲩ. ⲡⲥⲁⲡ ⲇⲉ ⲉⲧⲁⲩⲛⲏⲩ ⲁⲍⲟⲩⲛ ⲁⲡⲥⲱⲙⲁ, {6}ⲕⲁ-",
-      "core_english": "them. But at the time when they came inward to the body, {7} le-",
+      "core_coptic": "ⲙⲉⲩ. ⲡⲥⲁⲡ ⲇⲉ ⲉⲧⲁⲩⲛⲏⲩ ⲁⲍⲟⲩⲛ ⲁⲡⲥⲱⲙⲁ, {3}ⲕⲁ-",
+      "core_english": "them. But at the time when they came inward to the body, {3} le-",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "as they",
+          "basis": "Editor restoration; circumstantial 3pl prefix ⲉⲩ- before ⲕⲁ-ⲕⲟⲩ 'leave them'",
+          "source_id": 7,
+          "section": 4711
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic descent of elements into body - core substrate process description."
     },
@@ -74,6 +123,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲟⲩ ⲁⲍⲏⲩ ⲛ̄ⲛⲓⲍⲃⲥⲁⲩⲉ ⲉⲧⲭⲁⲍⲙⲉ ⲛ̄ⲥⲉⲕⲁⲁⲩ ⲍⲛ̄ ⲧⲥⲁⲣⲝ̄.",
       "core_english": "-ave naked the defiled garments, and they leave them in the flesh.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Defiled garments / flesh - cosmic correspondence (garment = bodily covering)."
     },
@@ -84,6 +134,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ϣⲁⲣⲉ ⲛⲟⲩⲭⲱⲍⲙⲉ ⲉ̄ⲧⲁⲩⲕⲁⲕⲟⲩ ⲁⲍⲏⲩ ⲙ̄ⲙⲁⲩ ⲟⲩⲱ-",
       "core_english": "These defilements which they have stripped off there habitually re-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuing process description - substrate."
     },
@@ -92,8 +143,18 @@
       "chapter": 94,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲛ̄ ⲟⲩ ⲛ{8} ⲛ̄ⲥⲉⲡ̄ ⲟⲩⲕⲓⲛⲇⲩⲛⲟⲥ ⲙ̄ⲡⲥⲱ-",
-      "core_english": "-veal themselves forth in a {9}, and they become a danger to the bo-",
+      "core_coptic": "ⲛⲍ̄ ⲁⲃⲁⲗ ⲍⲛ̄ ⲟⲩ ⲛ{4} ⲛ̄ⲥⲉⲡ̄ ⲟⲩⲕⲓⲛⲇⲩⲛⲟⲥ ⲙ̄ⲡⲥⲱ-",
+      "core_english": "-veal themselves forth in a {4}, and they become a danger to the bo-",
+      "apparatus": [
+        {
+          "id": 4,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 8,
+          "section": 4714
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate continuation."
     },
@@ -104,6 +165,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲁ",
       "core_english": "-dy.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation."
     },
@@ -112,8 +174,20 @@
       "chapter": 94,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲃⲱϣ ⲙ̄ⲡⲓⲡⲉ̄ⲧⲭⲱⲍⲙⲉ ⲉⲧⲉϣⲁⲣⲉ {10}ⲉ",
-      "core_english": "The nakedness of this defiled-one, which the {11}",
+      "core_coptic": "ⲡⲃⲱϣ ⲙ̄ⲡⲓⲡⲉ̄ⲧⲭⲱⲍⲙⲉ ⲉⲧⲉϣⲁⲣⲉ {5}ⲉ",
+      "core_english": "The nakedness of this defiled-one, which the {5}",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲧⲥⲉⲧ",
+          "english": "[fire]",
+          "basis": "Editor restoration; ⲧⲥⲉⲧⲉ 'the fire' is the cosmic agent that strips the defilements (cf. ⲡⲭⲁⲓ̈ ⲛⲧⲥⲉⲧⲉ 'sun-ship of fire' in glossary). Direct correspondence with the elements-purification theme",
+          "source_id": 9,
+          "section": 4716
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Beginning of the systematic stripping-naked chain - quintessential substrate enumeration."
     },
@@ -122,8 +196,20 @@
       "chapter": 94,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲃⲁϣⲥ ⲙ̄ⲙⲁϩ ⲛ̄ⲥⲕⲁⲁϩ ⲍⲙ̄ ⲡⲥⲱⲙⲁ — ⲛ̄ⲧⲁϩ ⲡⲉ ⲟ{12}ⲁϩ.",
-      "core_english": "strips of them and she sets in the body — that is a {13}.",
+      "core_coptic": "ⲃⲁϣⲥ ⲙ̄ⲙⲁϩ ⲛ̄ⲥⲕⲁⲁϩ ⲍⲙ̄ ⲡⲥⲱⲙⲁ — ⲛ̄ⲧⲁϩ ⲡⲉ ⲟ{6}ⲁϩ.",
+      "core_english": "strips of them and she sets in the body — that is a {6}.",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲩⲥⲛ",
+          "english": "bond",
+          "basis": "Editor restoration of ⲟ[ⲩⲥⲛ]ⲁϩ 'a bond,' confirmed by line 18 ⲡⲃⲱϣ ⲙ̄ⲡⲥⲛⲁϩ 'the nakedness of the bond' which presupposes the bond as the previous term in the chain",
+          "source_id": 10,
+          "section": 4717
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate definitional formula 'X is Y'."
     },
@@ -134,6 +220,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲃⲱϣ ⲙ̄ⲡⲥⲛⲁϩ ⲡⲉ ⲧⲃⲁⲗⲕⲉ. ⲡⲃⲱϣ ⲛ̄ⲧⲃⲁⲗⲕⲉ ⲡⲉ ⲡ-",
       "core_english": "The nakedness of the bond is the wrath. The nakedness of the wrath is the",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pure substrate chain definitions: bond→wrath→..."
     },
@@ -144,6 +231,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲣⲉⲩⲙⲁ ⲛ̄ⲕⲱⲕ ⲁⲍⲏⲩ ⲍⲱⲱⲩ ⲉⲧⲉⲣⲉ ⲙ̄ⲙⲟⲩⲗⲉⲩⲉ ⲃⲱϣ",
       "core_english": "flow of strippings-naked itself, with which the counsels strip",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate chain continues."
     },
@@ -154,6 +242,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙ̄ⲙⲁⲩ ⲁⲃⲁⲗ ⲙ̄ⲙⲁⲩ ⲡⲉ ⲧⲉⲡⲓⲑⲩⲙⲓⲁ. ⲡⲃⲱϣ ⲍⲱⲱⲥ ⲛ̄ⲧⲉ-",
       "core_english": "themselves out of them — that is the desire. The nakedness also of de-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chain continues: flow→desire."
     },
@@ -164,6 +253,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲓⲑⲩⲙⲓⲁ ⲧⲉ ⲡⲥⲓϣⲉ. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲙ̄ⲡⲥⲓϣⲉ ⲡⲉ ⲡⲍ-",
       "core_english": "-sire is the bitterness. The stripping naked of the bitterness is the he-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "desire→bitterness→heat."
     },
@@ -172,8 +262,20 @@
       "chapter": 94,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "{14}ⲁⲙ. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲇⲉ ⲉⲧⲉϣⲁⲣⲉ ⲡⲟⲩⲁⲓ̄ⲛⲉ ⲃⲁϣϩ ⲙ̄-",
-      "core_english": "{15}-at. But the stripping naked which the light strips of",
+      "core_coptic": "{7}ⲁⲙ. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲇⲉ ⲉⲧⲉϣⲁⲣⲉ ⲡⲟⲩⲁⲓ̄ⲛⲉ ⲃⲁϣϩ ⲙ̄-",
+      "core_english": "{7}-at. But the stripping naked which the light strips of",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "",
+          "basis": "Editor restoration of [ⲙ]ⲁⲙ completing ⲡⲍⲙⲁⲙ 'the heat' (Lyc ⲍⲙⲁⲙ = Sah ϩⲙⲟⲙ, in glossary), continuing from ⲡⲍ at end of line 21",
+          "source_id": 11,
+          "section": 4722
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate continues - light as cosmic agent."
     },
@@ -182,8 +284,20 @@
       "chapter": 94,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "{16}ⲁϩ ⲡⲉ ⲧⲥⲁⲣⲝ̄. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲡⲉ ⲡⲱⲕⲙⲉ.",
-      "core_english": "{17}them is the flesh. The stripping naked of the flesh is the gloom.",
+      "core_coptic": "{8}ⲁϩ ⲡⲉ ⲧⲥⲁⲣⲝ̄. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲡⲉ ⲡⲱⲕⲙⲉ.",
+      "core_english": "{8}them is the flesh. The stripping naked of the flesh is the gloom.",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "",
+          "basis": "Editor restoration of [ⲙ]ⲁϩ completing ⲙ̄ⲙⲁϩ 'of them' (3pl object), continuing from ⲙ̄ at end of line 22",
+          "source_id": 12,
+          "section": 4723
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Chain: flesh→gloom."
     },
@@ -192,8 +306,20 @@
       "chapter": 94,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "{18}ⲕⲱⲕ ⲁⲍⲏⲩ ⲙ̄ⲡⲱⲕⲙⲉ ⲡⲉ ⲧⲙ̄ⲛⲧⲁϣⲧⲙ̄ⲙⲉ. ⲛ̄ⲕⲱⲕ ⲁ-",
-      "core_english": "{19}stripping naked of the gloom is severity. The strippings na-",
+      "core_coptic": "{9}ⲕⲱⲕ ⲁⲍⲏⲩ ⲙ̄ⲡⲱⲕⲙⲉ ⲡⲉ ⲧⲙ̄ⲛⲧⲁϣⲧⲙ̄ⲙⲉ. ⲛ̄ⲕⲱⲕ ⲁ-",
+      "core_english": "{9}stripping naked of the gloom is severity. The strippings na-",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "The ",
+          "basis": "Editor restoration of [ⲡ]ⲕⲱⲕ 'the stripping' (definite article ⲡ-)",
+          "source_id": 13,
+          "section": 4724
+        }
+      ],
       "removed_material": null,
       "temporal_note": "gloom→severity."
     },
@@ -202,8 +328,29 @@
       "chapter": 94,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "{20} ⲉⲧⲉϣⲁⲣⲉ ⲡϣⲏⲛ ⲃⲁϣϩ ⲙ̄ⲙⲁⲩ — ⲛ̄ⲧⲁⲩ ⲛⲉ ⲛ̄{21}",
-      "core_english": "{22} which the tree strips of them — they are the {23}",
+      "core_coptic": "{10} ⲉⲧⲉϣⲁⲣⲉ ⲡϣⲏⲛ ⲃⲁϣϩ ⲙ̄ⲙⲁⲩ — ⲛ̄ⲧⲁⲩ ⲛⲉ ⲛ̄{11}",
+      "core_english": "{10} which the tree strips of them — they are the {11}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲍⲏⲩ",
+          "english": "ked",
+          "basis": "Editor restoration; completing ⲁⲍⲏⲩ 'naked' continuing from ⲛ̄ⲕⲱⲕ ⲁ at end of line 24",
+          "source_id": 14,
+          "section": 4725
+        },
+        {
+          "id": 11,
+          "segment": 23,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲛ̄ⲍⲣ . ⲟⲩ",
+          "source_id": 15,
+          "section": 4725
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The cosmic Tree as agent - substrate."
     },
@@ -214,6 +361,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲛⲧⲏⲩ ⲙ̄ⲡϣⲓⲡⲉ. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲛ̄ⲛⲧⲏⲩ ⲙ̄ⲡϣⲓⲡⲉ",
       "core_english": "of the winds of shame. The stripping naked of the winds of shame",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Winds of shame - cosmic correspondence."
     },
@@ -222,8 +370,26 @@
       "chapter": 94,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{24}ϣⲙ̄ⲛⲧ{25}. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲍⲱⲱϩ ⲛ̄ⲧⲡ̄-",
-      "core_english": "{26} eight {27}. The stripping naked also of the",
+      "core_coptic": "{12}ϣⲙ̄ⲛⲧ{13}. ⲡⲕⲱⲕ ⲁⲍⲏⲩ ⲍⲱⲱϩ ⲛ̄ⲧⲡ̄-",
+      "core_english": "{12} eight {13}. The stripping naked also of the",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 16,
+          "section": 4727
+        },
+        {
+          "id": 13,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 17,
+          "section": 4727
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Numbered enumeration ('eight') - substrate structure."
     },
@@ -232,8 +398,29 @@
       "chapter": 94,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{28} ⲡⲉ ⲡⲥⲉ{29} ⲙ̄ⲡⲓⲙ̄ⲛⲧⲥⲛⲁⲩⲥ ⲛ̄ⲕⲱⲕ ⲁⲍⲏⲩ",
-      "core_english": "{30} is the {31} of these twelve strippings naked",
+      "core_coptic": "{14} ⲡⲉ ⲡⲥⲉ{15} ⲙ̄ⲡⲓⲙ̄ⲛⲧⲥⲛⲁⲩⲥ ⲛ̄ⲕⲱⲕ ⲁⲍⲏⲩ",
+      "core_english": "{14} is the {15} of these twelve strippings naked",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲙⲓⲏ",
+          "english": "[?]",
+          "basis": "Editor restoration; lexeme uncertain, possibly an ordinal or technical term in the chain of twelve strippings naked. Continues ⲛ̄ⲧⲡ̄- from end of line 27",
+          "source_id": 18,
+          "section": 4728
+        },
+        {
+          "id": 15,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲡⲥⲉ",
+          "source_id": 19,
+          "section": 4728
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Twelve strippings naked' - numbered substrate enumeration totaling the chain."
     },
@@ -242,8 +429,18 @@
       "chapter": 94,
       "line": 27,
       "classification": "cosmological_substrate",
-      "core_coptic": "{32}ϣⲁⲣⲉ ⲡⲓϩⲧⲁⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ",
-      "core_english": "{33} the four elements",
+      "core_coptic": "{16}ϣⲁⲣⲉ ⲡⲓϩⲧⲁⲩ ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ",
+      "core_english": "{16} the four elements",
+      "apparatus": [
+        {
+          "id": 16,
+          "segment": 27,
+          "type": "lacuna",
+          "est_chars": 16,
+          "source_id": 20,
+          "section": 4729
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Score=100 cosmological_substrate; the four elements core."
     },
@@ -252,8 +449,18 @@
       "chapter": 94,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "{34}ⲁ ⲡⲉⲧⲉϣⲁⲩⲥⲁⲩⲍⲟⲩ ⲁⲍⲟⲩⲛ",
-      "core_english": "{35} that which they gather inward",
+      "core_coptic": "{17}ⲁ ⲡⲉⲧⲉϣⲁⲩⲥⲁⲩⲍⲟⲩ ⲁⲍⲟⲩⲛ",
+      "core_english": "{17} that which they gather inward",
+      "apparatus": [
+        {
+          "id": 17,
+          "segment": 28,
+          "type": "lacuna",
+          "est_chars": 15,
+          "source_id": 21,
+          "section": 4730
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Process description of gathering elements - substrate."
     },
@@ -262,8 +469,20 @@
       "chapter": 94,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "{36}ⲛ̄ⲧⲟⲩ ⲍⲛ̄ ⲧⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲛ̄ⲧⲣⲟⲫⲏ ⲛⲧⲩⲭⲓⲕⲟ̄",
-      "core_english": "{37} them in the economy of psychic food,",
+      "core_coptic": "{18}ⲛ̄ⲧⲟⲩ ⲍⲛ̄ ⲧⲟⲓⲕⲟⲛⲟⲙⲓⲁ ⲛ̄ⲧⲣⲟⲫⲏ ⲛⲧⲩⲭⲓⲕⲟ̄",
+      "core_english": "{18} them in the economy of psychic food,",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲟ̅",
+          "english": "they bring",
+          "basis": "Single-character restoration. With ⲛ̄ⲧⲟⲩ (3pl object suffix) yields ⲟⲛ̄ⲧⲟⲩ 'they bring them' (Lyc. for ⲉⲓⲛⲉ; cf. glossary entry ⲟⲛ̄ⲧ⸗). Habitual sense fits the iterative description.",
+          "source_id": 22,
+          "section": 4731
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Economy of psychic food' - the cosmic alimentary mechanism for soul-elements; substrate."
     },
@@ -272,8 +491,20 @@
       "chapter": 94,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "{38}ⲉⲓ ⲁⲍⲟⲩⲛ ⲁⲡⲥⲱⲙⲁ ⲡⲛⲉⲩ ⲉⲧⲟⲩⲛⲏⲩ ⲁⲍⲟⲩⲛ ⲁ",
-      "core_english": "{39} come into the body, the moment when they come into a",
+      "core_coptic": "{19}ⲉⲓ ⲁⲍⲟⲩⲛ ⲁⲡⲥⲱⲙⲁ ⲡⲛⲉⲩ ⲉⲧⲟⲩⲛⲏⲩ ⲁⲍⲟⲩⲛ ⲁ",
+      "core_english": "{19} come into the body, the moment when they come into a",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 30,
+          "type": "restoration",
+          "coptic": "ⲉⲧ",
+          "english": "those who",
+          "basis": "Relative marker ⲉⲧ- restored from context — the relative ⲉⲧⲟⲩⲛⲏⲩ later in the line confirms the antecedent.",
+          "source_id": 23,
+          "section": 4732
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic descent of elements into body."
     },
@@ -284,6 +515,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲥⲱⲙⲁ ⲛ̄ⲥⲉⲥⲱⲧϥ̄ ⲛ̄ⲥⲉⲧⲟⲩⲃⲟ ⲛ̄ⲥⲉⲱⲍⲉ ⲁⲣⲉⲧⲟⲩ",
       "core_english": "body — and they are chosen, and they are purified, and they stand fast",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'Chosen/purified' as cosmic process verbs (of soul-elements), not ecclesial categories here."
     },
@@ -292,8 +524,20 @@
       "chapter": 94,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "{40}ⲛ ⲧⲟⲩⲍⲓⲕⲱⲛ ⲉⲧⲁⲛⲍ̄ ⲉⲧⲉ ⲡⲣⲙ̄ⲛ̄ⲃϥ̄ⲣⲉ ⲡⲉ ϣⲁⲩⲱⲛⲍ̄",
-      "core_english": "{41} their living icon, which is the New Man — they live",
+      "core_coptic": "{20}ⲛ ⲧⲟⲩⲍⲓⲕⲱⲛ ⲉⲧⲁⲛⲍ̄ ⲉⲧⲉ ⲡⲣⲙ̄ⲛ̄ⲃϥ̄ⲣⲉ ⲡⲉ ϣⲁⲩⲱⲛⲍ̄",
+      "core_english": "{20} their living icon, which is the New Man — they live",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 32,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "in",
+          "basis": "Restoration of ⲍ to give ⲍⲛ̄ 'in' (Lyc. for ϩⲛ̄); standard locative preposition introducing 'their living icon.'",
+          "source_id": 24,
+          "section": 4734
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The 'living icon' / 'New Man' - cosmic anthropological substrate."
     },
@@ -302,8 +546,19 @@
       "chapter": 94,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{42}ϩ ⲛⲥⲉⲭⲓ ⲁⲣⲁⲩ ⲙⲡⲛⲟⲩⲥ ⲛⲟⲩⲁ̈ⲓⲛⲉ ⲛⲥⲉⲧⲟⲩⲃⲟ",
-      "core_english": "{43} and they receive to themselves the Mind of Light, and they are purified",
+      "core_coptic": "{21}ϩ ⲛⲥⲉⲭⲓ ⲁⲣⲁⲩ ⲙⲡⲛⲟⲩⲥ ⲛⲟⲩⲁ̈ⲓⲛⲉ ⲛⲥⲉⲧⲟⲩⲃⲟ",
+      "core_english": "{21} and they receive to themselves the Mind of Light, and they are purified",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ϩ",
+          "source_id": 25,
+          "section": 4735
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Mind of Light' (Nous of Light) - core Manichaean cosmology that draws on the substrate."
     },
@@ -314,6 +569,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲍⲛ ⲧⲟⲩⲍⲓⲕⲱⲛ ⲛ̄ⲥⲉⲉⲓ ⲁⲃⲁⲗ ⲉⲩⲥⲁⲧϩ ⲉⲩⲟⲩⲁⲃⲉ ⲛⲥⲉ",
       "core_english": "in their icon, and they come forth, being chosen, being holy, and they",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Substrate continuation of soul-element ascent."
     },
@@ -324,6 +580,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲱⲍ ⲁⲡⲟⲩϣⲁⲣⲡ ⲛ̄ⲙⲧⲁⲛ",
       "core_english": "reach to their first rest.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "'First rest' - cosmic eschatological terminus."
     },
@@ -334,6 +591,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲥⲁⲡ ⲟⲩⲛ ⲉⲧⲉϣⲁⲩⲡⲱⲍ̣",
       "core_english": "The time, then, in which they reach",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continues substrate; transitions toward the ecclesial reference in next segment."
     },
@@ -342,8 +600,20 @@
       "chapter": 94,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲍⲣ{44}ⲧⲭⲱⲣⲁ ⲛⲛⲉⲧⲁⲛⲍ̄ ⲛⲉⲓ̈ ⲁⲉ ⲍⲱⲱϩ ⲉⲧⲛⲏⲩ ⲁ",
-      "core_english": "upward {45} the country of the Living Ones. But these themselves who come into",
+      "core_coptic": "ⲁⲍⲣ{22}ⲧⲭⲱⲣⲁ ⲛⲛⲉⲧⲁⲛⲍ̄ ⲛⲉⲓ̈ ⲁⲉ ⲍⲱⲱϩ ⲉⲧⲛⲏⲩ ⲁ",
+      "core_english": "upward {22} the country of the Living Ones. But these themselves who come into",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 38,
+          "type": "restoration",
+          "coptic": "ⲏⲓ̈ ⲁ",
+          "english": "up to",
+          "basis": "Standard Manichaean idiom ⲁⲍⲣⲏⲓ̈ ⲁ- 'upward to'; only ⲏⲓ̈ ⲁ is restored, completing the directional phrase.",
+          "source_id": 26,
+          "section": 4739
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'Country of the Living Ones' - cosmic geography. Substrate."
     },
@@ -352,8 +622,26 @@
       "chapter": 94,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "{46} ⲛ̄ⲣⲉϩⲣⲛⲁⲃⲉ ⲛⲥⲉⲭⲱⲃⲉ ⲛ̄ⲍⲏⲧⲟⲩ ⲛ̄ⲥⲉⲧⲛ{47}",
-      "core_english": "{48} of sinners — they multiply within them, and they {49}",
+      "core_coptic": "{23} ⲛ̄ⲣⲉϩⲣⲛⲁⲃⲉ ⲛⲥⲉⲭⲱⲃⲉ ⲛ̄ⲍⲏⲧⲟⲩ ⲛ̄ⲥⲉⲧⲛ{24}",
+      "core_english": "{23} of sinners — they multiply within them, and they {24}",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 27,
+          "section": 4740
+        },
+        {
+          "id": 24,
+          "segment": 39,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 28,
+          "section": 4740
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Counterpart fate of unpurified - substrate eschatology."
     },
@@ -362,8 +650,19 @@
       "chapter": 94,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲟ{50} ⲍⲛ̄ ⲍⲛⲛⲁⲃⲉ ⲧⲟⲩⲍⲁⲏ ⲛⲁϣⲱⲡⲉ ⲁⲙⲉⲧⲁⲅ",
-      "core_english": "{51} in sins. Their end shall come to be transmi-",
+      "core_coptic": "ⲥⲟ{25} ⲍⲛ̄ ⲍⲛⲛⲁⲃⲉ ⲧⲟⲩⲍⲁⲏ ⲛⲁϣⲱⲡⲉ ⲁⲙⲉⲧⲁⲅ",
+      "core_english": "{25} in sins. Their end shall come to be transmi-",
+      "apparatus": [
+        {
+          "id": 25,
+          "segment": 40,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲥⲟ",
+          "source_id": 29,
+          "section": 4741
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Transmigration as fate - substrate."
     },
@@ -372,8 +671,20 @@
       "chapter": 94,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "{52}ⲥⲙⲟⲥ ⲙⲛ ⲟⲩⲧ̄ⲛⲁ̄ : -",
-      "core_english": "{53}gration, with a sentencing.",
+      "core_coptic": "{26}ⲥⲙⲟⲥ ⲙⲛ ⲟⲩⲧ̄ⲛⲁ̄ : -",
+      "core_english": "{26}gration, with a sentencing.",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲅ",
+          "english": "g-",
+          "basis": "Single letter ⲅ restored to complete ⲙⲉⲧⲁⲅⲅⲥⲙⲟⲥ (= Greek μετάγγισμός 'decanting/transmigration') begun on previous line.",
+          "source_id": 30,
+          "section": 4742
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing colophon mark, substrate closure."
     }

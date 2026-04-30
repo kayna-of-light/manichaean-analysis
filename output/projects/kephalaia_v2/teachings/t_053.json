@@ -5,7 +5,7 @@
   "start_section": 3094,
   "end_section": 3141,
   "total_sections": 48,
-  "total_lacunae": 127,
+  "total_lacunae": 70,
   "segments": [
     {
       "section": 3094,
@@ -13,7 +13,19 @@
       "line": 2,
       "classification": "mixed",
       "core_coptic": "ⲡⲥⲏⲩ ⲉⲧⲁ ⲡ{0}",
-      "core_english": "The time when the {1}",
+      "core_english": "The time when the {0}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 2,
+          "type": "restoration",
+          "coptic": "ϣⲁⲣⲡⲧ",
+          "english": "First",
+          "basis": "Editor's restoration of ϣⲁⲣⲡⲧ ('first') anticipating ⲣⲱⲙⲉ in line 33 — the chapter title 'Concerning the First Man' confirms this.",
+          "source_id": 1,
+          "section": 3094
+        }
+      ],
       "removed_material": "Stripped 'Once again the {0} said' (ⲡⲧⲁⲗⲓⲛ ⲁⲛ ⲡⲁⲭⲉ ⲡⲛ̄{0} ⲭⲉ) — standard Illuminator-frame attribution. Apostolic_dialogue score 87.5.",
       "temporal_note": "Frame attribution wraps a substantive teaching opener about the First Man's descent."
     },
@@ -22,8 +34,48 @@
       "chapter": 51,
       "line": 3,
       "classification": "cosmological_substrate",
-      "core_coptic": "{2}ⲣⲱⲙⲉ ⲉⲓ ⲁⲃⲁⲗ {3}ⲃⲉ ⲡⲭⲁ{4} {5}",
-      "core_english": "{6}Man came forth against the {7} {8}",
+      "core_coptic": "{1}ⲣⲱⲙⲉ ⲉⲓ ⲁⲃⲁⲗ {2}ⲃⲉ ⲡⲭⲁ{3} {4}",
+      "core_english": "{1}Man came forth against the {3} {4}",
+      "apparatus": [
+        {
+          "id": 1,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲛ",
+          "english": "",
+          "basis": "Editor's restoration of plural article ⲛ̄ before ⲣⲱⲙⲉ; restores 'the First Man' from chapter title.",
+          "source_id": 2,
+          "section": 3095
+        },
+        {
+          "id": 2,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "",
+          "basis": "Editor's restoration of preposition ⲟⲩⲃⲉ ('against').",
+          "source_id": 3,
+          "section": 3095
+        },
+        {
+          "id": 3,
+          "segment": 3,
+          "type": "restoration",
+          "coptic": "ⲭⲉ",
+          "english": "Enemy",
+          "basis": "Editor's restoration completing ⲡⲭⲁⲭⲉ ('the Enemy').",
+          "source_id": 4,
+          "section": 3095
+        },
+        {
+          "id": 4,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 16,
+          "source_id": 5,
+          "section": 3095
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man's emergence against the Enemy — core mythic event."
     },
@@ -32,8 +84,35 @@
       "chapter": 51,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{9} ⲍⲃⲥⲱ ⲉⲧ{10} {11} ⲡⲕⲉⲕⲉ ⲍⲛ ⲧⲍⲃ̄ⲥⲱ",
-      "core_english": "{12} garment which {13} {14} the Darkness in the garment",
+      "core_coptic": "{5} ⲍⲃⲥⲱ ⲉⲧ{6} {7} ⲡⲕⲉⲕⲉ ⲍⲛ ⲧⲍⲃ̄ⲥⲱ",
+      "core_english": "{5} garment which {6} {7} the Darkness in the garment",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 8,
+          "partial": "ϩ",
+          "source_id": 6,
+          "section": 3096
+        },
+        {
+          "id": 6,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 7,
+          "section": 3096
+        },
+        {
+          "id": 7,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 8,
+          "section": 3096
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Garment correspondence — substrate."
     },
@@ -42,8 +121,20 @@
       "chapter": 51,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{15}ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ̂ ⲍⲛ̄ ⲧⲍⲃⲥⲱ ⲉⲧⲙ̄ⲙⲉⲩ ⲁϩⲱϣⲙⲉ ⲙ̄",
-      "core_english": "{16}of the living fire in that garment. It quenched the",
+      "core_coptic": "{8}ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ̂ ⲍⲛ̄ ⲧⲍⲃⲥⲱ ⲉⲧⲙ̄ⲙⲉⲩ ⲁϩⲱϣⲙⲉ ⲙ̄",
+      "core_english": "{8}of the living fire in that garment. It quenched the",
+      "apparatus": [
+        {
+          "id": 8,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "of (the)",
+          "basis": "editor's restoration; standard genitive linker",
+          "source_id": 9,
+          "section": 3097
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living fire quenching the Enemy — pure substrate cosmogony."
     },
@@ -52,8 +143,20 @@
       "chapter": 51,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲟⲩⲟ̂ⲥⲉ ⲙ̄ⲡⲧⲭⲁⲭⲉ ⲁϩⲉⲓⲛⲉ ⲁⲡⲓⲧⲛⲉ ⲛ̄ⲧ{17}ϩⲫⲗⲩⲁⲣⲓⲁ",
+      "core_coptic": "ⲡⲟⲩⲟ̂ⲥⲉ ⲙ̄ⲡⲧⲭⲁⲭⲉ ⲁϩⲉⲓⲛⲉ ⲁⲡⲓⲧⲛⲉ ⲛ̄ⲧ{9}ϩⲫⲗⲩⲁⲣⲓⲁ",
       "core_english": "expanse of the Enemy. It brought down its foolishness",
+      "apparatus": [
+        {
+          "id": 9,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "the",
+          "basis": "editor's restoration; ⲛ̄ⲧⲉϩ- = 'his/its'",
+          "source_id": 10,
+          "section": 3098
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmogonic action — substrate."
     },
@@ -64,6 +167,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲙⲛ̄ ⲧⲉϩⲙⲛⲧⲭⲁⲥⲓⲍⲏⲧ ⲁ ⲧⲟⲩⲉⲓ ⲙⲉⲛ ⲛ̄ⲟⲩⲱⲧ ⲣⲱϣⲉ",
       "core_english": "and his arrogance. One alone indeed sufficed",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic narrative."
     },
@@ -72,8 +176,30 @@
       "chapter": 51,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲣⲁⲩ {18}ⲗⲁ ⲉⲡ{19}ⲓⲁ̄ⲏ ⲁ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ ⲣ̄ⲟ̂ⲱⲃ̄ ⲉⲧⲃⲉ ⲡⲧⲉⲓ",
-      "core_english": "for them. {20} since the living fire did work, on account of this",
+      "core_coptic": "ⲁⲣⲁⲩ {10}ⲗⲁ ⲉⲡ{11}ⲓⲁ̄ⲏ ⲁ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ ⲣ̄ⲟ̂ⲱⲃ̄ ⲉⲧⲃⲉ ⲡⲧⲉⲓ",
+      "core_english": "for them. {10} since the living fire did work, on account of this",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲁⲗ̄",
+          "english": "but",
+          "basis": "ⲁⲗⲗⲁ from Greek ἀλλά",
+          "source_id": 11,
+          "section": 3100
+        },
+        {
+          "id": 11,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration",
+          "source_id": 12,
+          "section": 3100
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Living fire working — substrate."
     },
@@ -82,8 +208,20 @@
       "chapter": 51,
       "line": 9,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁϩⲧ ⲛ{21} ⲛ̄ⲍⲃⲥⲱ ⲧⲁⲡⲧⲧⲏⲩ ⲧⲁⲡⲙⲁⲩ ⲧⲁⲡⲧⲟⲩ",
-      "core_english": "she gave {22} of garments: that of the wind, that of the water, that of the",
+      "core_coptic": "ⲁϩⲧ ⲛ{12} ⲛ̄ⲍⲃⲥⲱ ⲧⲁⲡⲧⲧⲏⲩ ⲧⲁⲡⲙⲁⲩ ⲧⲁⲡⲧⲟⲩ",
+      "core_english": "she gave {12} of garments: that of the wind, that of the water, that of the",
+      "apparatus": [
+        {
+          "id": 12,
+          "segment": 9,
+          "type": "restoration",
+          "coptic": "ⲉⲥ ⲕⲉϩⲧⲟ",
+          "english": "(her) other four",
+          "basis": "editor's restoration; pattern matches ⲡⲉϩⲕⲉϩⲧⲁⲩ ⲛⲥⲁⲛ in line 22 ('his other four')",
+          "source_id": 13,
+          "section": 3101
+        }
+      ],
       "removed_material": null,
       "temporal_note": "The four-garment enumeration — wind, water, light, air. Pure substrate elemental mapping."
     },
@@ -92,8 +230,20 @@
       "chapter": 51,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲓⲛⲉ ⲙⲛ ⲧⲁⲡⲁ{23}ⲣ ⲡⲧⲉⲓ ⲁ̄ⲉ ⲭⲉ ⲁϩⲧⲉ̂ⲓⲧⲟⲩ ⲙ̄ⲡϩⲧⲁⲓⲉ ⲛ̄",
-      "core_english": "light, and that of the {24}air. This then is — that she gave them — the four kinds —",
+      "core_coptic": "ⲁⲓⲛⲉ ⲙⲛ ⲧⲁⲡⲁ{13}ⲣ ⲡⲧⲉⲓ ⲁ̄ⲉ ⲭⲉ ⲁϩⲧⲉ̂ⲓⲧⲟⲩ ⲙ̄ⲡϩⲧⲁⲓⲉ ⲛ̄",
+      "core_english": "light, and that of the {13}air. This then is — that she gave them — the four kinds —",
+      "apparatus": [
+        {
+          "id": 13,
+          "segment": 10,
+          "type": "restoration",
+          "coptic": "ⲏ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲡⲁⲏⲣ 'the air'",
+          "source_id": 14,
+          "section": 3102
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Completion of the four-garment enumeration."
     },
@@ -102,8 +252,60 @@
       "chapter": 51,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲁϩⲧⲉ̂{25}ⲧⲟⲩ ⲭ{26}ⲕⲁ{27}ⲥ ⲉⲩⲛⲁⲣ̄ⲃⲟⲏⲑ{28}ⲥ ⲙ̄ⲡⲓⲛⲟⲩⲧⲉ ⲉⲧ{29}",
+      "core_coptic": "ⲧⲁϩⲧⲉ̂{14}ⲧⲟⲩ ⲭ{15}ⲕⲁ{16}ⲥ ⲉⲩⲛⲁⲣ̄ⲃⲟⲏⲑ{17}ⲥ ⲙ̄ⲡⲓⲛⲟⲩⲧⲉ ⲉⲧ{18}",
       "core_english": "she gave them in order that they shall be helpers to that god",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲓ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration",
+          "source_id": 15,
+          "section": 3103
+        },
+        {
+          "id": 15,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲭⲉⲕⲁⲁⲥ",
+          "source_id": 16,
+          "section": 3103
+        },
+        {
+          "id": 16,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲭⲉⲕⲁⲁⲥ",
+          "source_id": 17,
+          "section": 3103
+        },
+        {
+          "id": 17,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲟ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲃⲟⲏⲑⲟⲥ",
+          "source_id": 18,
+          "section": 3103
+        },
+        {
+          "id": 18,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲉⲧⲙ̄ⲙⲉⲩ continuing onto next line",
+          "source_id": 19,
+          "section": 3103
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Helpers-of-the-god clause — substrate teleology."
     },
@@ -112,8 +314,48 @@
       "chapter": 51,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉⲩ ⲉ̂{30} ⲛⲧⲁ{31} ⲡ{32}ⲉ̂ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ̂ ⲭⲉⲕⲁⲁⲥ ⲛⲉ ⲡ{33}",
-      "core_english": "— which is the living fire — in order that {34}",
+      "core_coptic": "ⲙⲉⲩ ⲉ̂{19} ⲛⲧⲁ{20} ⲡ{21}ⲉ̂ ⲧⲥⲉⲧⲉ ⲉⲧⲁⲛⲍ̂ ⲭⲉⲕⲁⲁⲥ ⲛⲉ ⲡ{22}",
+      "core_english": "— which is the living fire — in order that {22}",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲧⲉ ⲛ",
+          "english": "which",
+          "basis": "editor's restoration; standard relative ⲉⲧⲉ ⲛ̄ⲧⲁϩ ⲡⲉ 'which is/which it is'",
+          "source_id": 20,
+          "section": 3104
+        },
+        {
+          "id": 20,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ϩ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration",
+          "source_id": 21,
+          "section": 3104
+        },
+        {
+          "id": 21,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "is",
+          "basis": "editor's restoration of copula ⲡⲉ",
+          "source_id": 22,
+          "section": 3104
+        },
+        {
+          "id": 22,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 23,
+          "section": 3104
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Identification of the god as the living fire."
     },
@@ -122,8 +364,60 @@
       "chapter": 51,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "{35}{36} ⲛ{37}ⲥ̄{38} ⲉ̂ⲧⲁⲛⲍ ⲛ̄ϩⲭⲱⲧⲉ̂ ⲙ̄ⲙⲁⲥ ⲛⲧⲉ̂ {39}ⲉⲧⲟⲩ",
-      "core_english": "{40}{41} the {42} living {43}, that they may surround it, and the {44}",
+      "core_coptic": "{23}{24} ⲛ{25}ⲥ̄{26} ⲉ̂ⲧⲁⲛⲍ ⲛ̄ϩⲭⲱⲧⲉ̂ ⲙ̄ⲙⲁⲥ ⲛⲧⲉ̂ {27}ⲉⲧⲟⲩ",
+      "core_english": "{23}{24} the {25} living {26}, that they may surround it, and the {27}",
+      "apparatus": [
+        {
+          "id": 23,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲍ",
+          "english": "in (the)",
+          "basis": "editor's restoration of ⲍⲍⲟⲩⲛ 'within'",
+          "source_id": 24,
+          "section": 3105
+        },
+        {
+          "id": 24,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲍⲟⲩⲛ",
+          "english": "within",
+          "basis": "editor's restoration; ⲍⲍⲟⲩⲛ = ⲍⲛ̄ϩⲟⲩⲛ 'within'",
+          "source_id": 25,
+          "section": 3105
+        },
+        {
+          "id": 25,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "the",
+          "basis": "editor's restoration of feminine article",
+          "source_id": 26,
+          "section": 3105
+        },
+        {
+          "id": 26,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲉ",
+          "english": "fire",
+          "basis": "editor's restoration of ⲥⲉⲧⲉ 'fire'",
+          "source_id": 27,
+          "section": 3105
+        },
+        {
+          "id": 27,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲧⲙ",
+          "english": "midst",
+          "basis": "editor's restoration; ⲧⲙⲏⲧⲉ 'midst'",
+          "source_id": 28,
+          "section": 3105
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Surrounding action of helpers — substrate."
     },
@@ -132,8 +426,20 @@
       "chapter": 51,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲛ̄ ⲧ{45}ⲭⲉ ϣⲁⲁⲧⲥ̄ ⲁⲃⲁⲗ ⲁ ⲧⲥⲉⲧⲉ ⲙⲉⲛ ⲭⲓ",
-      "core_english": "and {46}, that it may be cut off forth. The fire indeed received",
+      "core_coptic": "ⲙⲛ̄ ⲧ{28}ⲭⲉ ϣⲁⲁⲧⲥ̄ ⲁⲃⲁⲗ ⲁ ⲧⲥⲉⲧⲉ ⲙⲉⲛ ⲭⲓ",
+      "core_english": "and {28}, that it may be cut off forth. The fire indeed received",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲙⲛⲧⲭⲁ",
+          "english": "Enmity",
+          "basis": "editor's restoration of ⲙⲛⲧⲭⲁⲭⲉ; standard cosmic principle",
+          "source_id": 29,
+          "section": 3106
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate — fire receiving."
     },
@@ -142,8 +448,20 @@
       "chapter": 51,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩϣ{47} ⲟⲩⲡⲗⲏⲣⲏ ⲍⲙ̄ ⲡⲧⲉⲥⲥⲱⲙⲁ ⲁⲗⲗⲁ ⲍⲟⲙⲱⲥ",
-      "core_english": "a destruction {48} a wound in her body. But nevertheless,",
+      "core_coptic": "ⲟⲩϣ{29} ⲟⲩⲡⲗⲏⲣⲏ ⲍⲙ̄ ⲡⲧⲉⲥⲥⲱⲙⲁ ⲁⲗⲗⲁ ⲍⲟⲙⲱⲥ",
+      "core_english": "a destruction {29} a wound in her body. But nevertheless,",
+      "apparatus": [
+        {
+          "id": 29,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲟ̂ⲁ ⲙⲛ",
+          "english": "and",
+          "basis": "editor's restoration; cf. parallel doublet ⲟⲩϣⲟ̂ⲁ ⲙⲛ̄ ⲟⲩⲡⲗⲏⲣⲏ in line 15",
+          "source_id": 30,
+          "section": 3107
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wounding-in-the-body theme — substrate."
     },
@@ -152,8 +470,37 @@
       "chapter": 51,
       "line": 16,
       "classification": "cosmological_substrate",
-      "core_coptic": "{49} ⲛⲟ̂ⲁⲙ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕ{50}ⲕⲉ ⲉⲧⲃⲏⲧⲥ̄ ⲣ {51} ⲭⲉ ⲁⲥ",
-      "core_english": "{52} all the powers of the Darkness on account of her, {53} that she",
+      "core_coptic": "{30} ⲛⲟ̂ⲁⲙ ⲧⲏⲣⲟⲩ ⲙ̄ⲡⲕ{31}ⲕⲉ ⲉⲧⲃⲏⲧⲥ̄ ⲣ {32} ⲭⲉ ⲁⲥ",
+      "core_english": "{30} all the powers of the Darkness on account of her, {32} that she",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": ".ⲥ.",
+          "source_id": 31,
+          "section": 3108
+        },
+        {
+          "id": 31,
+          "segment": 16,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "(restored letter)",
+          "basis": "editor's restoration of ⲡⲕⲉⲕⲉ",
+          "source_id": 32,
+          "section": 3108
+        },
+        {
+          "id": 32,
+          "segment": 16,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 33,
+          "section": 3108
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Powers of Darkness — cosmic agents."
     },
@@ -162,8 +509,35 @@
       "chapter": 51,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "{54} ⲛ̄ⲁⲛⲁⲣ̄ⲕⲏ ⲁⲡⲧⲉⲥ {55} {56} ⲛ̄ⲥⲁⲛ ⲁⲧⲣⲟⲩϣⲙ",
-      "core_english": "{57} by necessity to her {58} {59} another, that they may",
+      "core_coptic": "{33} ⲛ̄ⲁⲛⲁⲣ̄ⲕⲏ ⲁⲡⲧⲉⲥ {34} {35} ⲛ̄ⲥⲁⲛ ⲁⲧⲣⲟⲩϣⲙ",
+      "core_english": "{33} by necessity to her {34} {35} another, that they may",
+      "apparatus": [
+        {
+          "id": 33,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 34,
+          "section": 3109
+        },
+        {
+          "id": 34,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 2,
+          "partial": ".ⲉ",
+          "source_id": 35,
+          "section": 3109
+        },
+        {
+          "id": 35,
+          "segment": 17,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 36,
+          "section": 3109
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Necessity-binding language — substrate."
     },
@@ -172,8 +546,20 @@
       "chapter": 51,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲉ̂ ⲉⲩⲭⲓ ⲟⲩϣⲟ̂ⲁ ⲙⲛ̄ ⲟⲩⲡⲗⲏⲣ{60}ⲱⲩ ⲁ ⲧⲟ̂ⲁⲙ ⲙ̄ⲡⲧⲭⲁ",
-      "core_english": "{61}, as they too receive a destruction and a wound. The power of the En-",
+      "core_coptic": "ⲡⲉ̂ ⲉⲩⲭⲓ ⲟⲩϣⲟ̂ⲁ ⲙⲛ̄ ⲟⲩⲡⲗⲏⲣ{36}ⲱⲩ ⲁ ⲧⲟ̂ⲁⲙ ⲙ̄ⲡⲧⲭⲁ",
+      "core_english": "{36}, as they too receive a destruction and a wound. The power of the En-",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲏ ⲍⲱ",
+          "english": "themselves",
+          "basis": "editor's restoration; ⲍⲱⲱⲩ 'themselves' (Lyc. emphatic pronoun)",
+          "source_id": 37,
+          "section": 3110
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Wound parallel — substrate."
     },
@@ -182,8 +568,20 @@
       "chapter": 51,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲭⲉ ⲧⲱⲧ ⲁⲍⲟⲩⲛ ⲛⲉⲙⲉⲩ ⲁⲗⲗ{62}ⲧⲁϩ ⲙ̄ⲡⲉ ⲡⲕⲉⲕⲉ",
-      "core_english": "-emy did not join in with them; but {63}, the Darkness did not",
+      "core_coptic": "ⲭⲉ ⲧⲱⲧ ⲁⲍⲟⲩⲛ ⲛⲉⲙⲉⲩ ⲁⲗⲗ{37}ⲧⲁϩ ⲙ̄ⲡⲉ ⲡⲕⲉⲕⲉ",
+      "core_english": "-emy did not join in with them; but {37}, the Darkness did not",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲁ ⲡⲁⲏⲣ ⲛ̄",
+          "english": "the air, it",
+          "basis": "editor's restoration; ⲡⲁⲏⲣ ⲛ̄ⲧⲁϩ = 'the air — he/it'",
+          "source_id": 38,
+          "section": 3111
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enemy/Darkness as cosmic agent."
     },
@@ -194,6 +592,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲱⲧ' ⲁⲍⲟⲩⲛ ⲛⲉⲙⲉϩ ⲟⲩⲧⲉ ⲙ̄ⲡⲉ ⲡⲣⲱⲭⲍ ⲙ̄ⲡⲧⲭⲁⲭⲉ ϣⲭⲱ",
       "core_english": "join in with him; nor was the burning of the Enemy able to en-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Burning of the Enemy — cosmic substrate."
     },
@@ -204,6 +603,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲉ ⲙ̄ⲙⲁϩ ⲍⲟⲙⲱⲥ ⲡⲕⲉⲟⲩⲉ ⲉⲧⲁϩⲥⲉⲡⲉ ⲁⲡⲁⲍⲟⲩ ⲭⲱⲣⲓⲥ",
       "core_english": "-circle him. Nevertheless, the other one which remained behind, without",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic narrative."
     },
@@ -214,6 +614,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲡⲗⲏⲣⲏ ⲉⲧⲉ ⲡⲁⲏⲣ ⲡⲉ ⲁϩⲕⲁⲕϩ̄ ⲁⲍⲏⲩ ⲛ̄ⲟⲩⲍⲃⲥⲱ ⲙⲛ̄ ⲟⲩ",
       "core_english": "wound — which is the air — was stripped naked of a garment and a",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Identification of air with the wounded — substrate elemental mapping."
     },
@@ -222,8 +623,20 @@
       "chapter": 51,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟ̂ⲁⲙ ⲁϩⲧⲉⲉⲥ ⲙ̄ⲡⲉϩ{64}ⲁⲩ ⲛ̄ⲥⲁⲛ ⲁⲡⲉϩⲙⲁ ⲭⲉⲕⲁⲁⲥ ⲍⲛ",
-      "core_english": "power. She gave it to his {65} other in his place, in order that in",
+      "core_coptic": "ⲟ̂ⲁⲙ ⲁϩⲧⲉⲉⲥ ⲙ̄ⲡⲉϩ{38}ⲁⲩ ⲛ̄ⲥⲁⲛ ⲁⲡⲉϩⲙⲁ ⲭⲉⲕⲁⲁⲥ ⲍⲛ",
+      "core_english": "power. She gave it to his {38} other in his place, in order that in",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ϩⲧ",
+          "english": "four",
+          "basis": "editor's restoration of ⲡⲉϩϩⲧⲁⲩ 'his four'; cf. ⲡϩⲧⲁⲩ 'the four' in vocabulary",
+          "source_id": 39,
+          "section": 3115
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substitution within the elemental brotherhood."
     },
@@ -232,8 +645,20 @@
       "chapter": 51,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "{66}ⲃ̄ⲥⲱ ⲉⲧⲙ̄ⲙⲉⲩ ⲛ̄ⲧⲉ ⲡⲁⲏⲣ ⲉⲧⲁⲛⲍ ⲉⲩⲛⲁⲣⲭⲱⲣⲉ ⲛ̄ⲥⲉ",
-      "core_english": "that {67}garment of the living air they may prevail and",
+      "core_coptic": "{39}ⲃ̄ⲥⲱ ⲉⲧⲙ̄ⲙⲉⲩ ⲛ̄ⲧⲉ ⲡⲁⲏⲣ ⲉⲧⲁⲛⲍ ⲉⲩⲛⲁⲣⲭⲱⲣⲉ ⲛ̄ⲥⲉ",
+      "core_english": "that {39}garment of the living air they may prevail and",
+      "apparatus": [
+        {
+          "id": 39,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲧⲍ",
+          "english": "(the) gar-",
+          "basis": "editor's restoration of ⲧⲍⲃⲥⲱ 'the garment'",
+          "source_id": 40,
+          "section": 3116
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Garment of the living air — pure correspondential substrate."
     },
@@ -242,8 +667,18 @@
       "chapter": 51,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "{68} ⲍⲏⲩ ⲛ̄ⲥⲉⲧⲱⲕ ⲁⲍⲟⲩⲛ ⲛ̄ⲭⲓ ⲡⲉϩⲕⲉϩⲧⲁⲩ ⲛ̄ⲥⲁⲛ ⲛ̄ϩ",
-      "core_english": "{69} naked, and his other four be joined together",
+      "core_coptic": "{40} ⲍⲏⲩ ⲛ̄ⲥⲉⲧⲱⲕ ⲁⲍⲟⲩⲛ ⲛ̄ⲭⲓ ⲡⲉϩⲕⲉϩⲧⲁⲩ ⲛ̄ⲥⲁⲛ ⲛ̄ϩ",
+      "core_english": "{40} naked, and his other four be joined together",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 41,
+          "section": 3117
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Joining of the four brothers — substrate enumeration."
     },
@@ -252,8 +687,29 @@
       "chapter": 51,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "{70}ⲱⲡⲉ ⲛⲉⲩ ⲙ̄ⲡⲛ {71} ⲛ̄ⲱⲛⲍ",
-      "core_english": "{72}become for them in the {73} of life",
+      "core_coptic": "{41}ⲱⲡⲉ ⲛⲉⲩ ⲙ̄ⲡⲛ {42} ⲛ̄ⲱⲛⲍ",
+      "core_english": "{41}become for them in the {42} of life",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ϣ",
+          "english": "may (it)",
+          "basis": "editor's restoration of ϣⲱⲡⲉ 'become'",
+          "source_id": 42,
+          "section": 3118
+        },
+        {
+          "id": 42,
+          "segment": 26,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲡⲛ",
+          "source_id": 43,
+          "section": 3118
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing 'of life' formula — substrate."
     },
@@ -262,8 +718,18 @@
       "chapter": 52,
       "line": 3,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲁⲓ̂ⲛⲉ ⲉⲕⲓⲁ ⲡⲕⲉⲕⲉ̂ ⲛⲧⲍⲟⲩⲓ̂ⲧⲉ ⲛⲧⲁϩⲟ̂ⲣⲟ ⲁⲣⲁϩ {74}",
-      "core_english": "Light, when the foremost Darkness reigned over him {75}",
+      "core_coptic": "ⲟⲩⲁⲓ̂ⲛⲉ ⲉⲕⲓⲁ ⲡⲕⲉⲕⲉ̂ ⲛⲧⲍⲟⲩⲓ̂ⲧⲉ ⲛⲧⲁϩⲟ̂ⲣⲟ ⲁⲣⲁϩ {43}",
+      "core_english": "Light, when the foremost Darkness reigned over him {43}",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 3,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 7,
+          "section": 3119
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Begins teaching content; cosmological_substrate score 42.86. Light/Darkness cosmic narrative."
     },
@@ -272,8 +738,27 @@
       "chapter": 52,
       "line": 4,
       "classification": "cosmological_substrate",
-      "core_coptic": "{76}ⲏ ⲙⲛ ⲡⲣⲁⲭ {77} ϩϣⲟⲟⲡ ⲍⲙ ⲡⲟⲩⲁⲓ̂ⲛⲉ",
-      "core_english": "{78} and the {79} that exists in the Light",
+      "core_coptic": "{44}ⲏ ⲙⲛ ⲡⲣⲁⲭ {45} ϩϣⲟⲟⲡ ⲍⲙ ⲡⲟⲩⲁⲓ̂ⲛⲉ",
+      "core_english": "{44} and the {45} that exists in the Light",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 8,
+          "section": 3120
+        },
+        {
+          "id": 45,
+          "segment": 4,
+          "type": "lacuna",
+          "est_chars": 5,
+          "partial": "ⲣⲁⲭ",
+          "source_id": 9,
+          "section": 3120
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic Light description."
     },
@@ -282,8 +767,44 @@
       "chapter": 52,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "{80}ⲛ̄ⲟⲩⲏⲣ {81} {82}ⲓ̂ⲛⲉ ⲉⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲍⲛ {83}",
-      "core_english": "{84} how much {85} {86}light that came forth from {87}",
+      "core_coptic": "{46}ⲛ̄ⲟⲩⲏⲣ {47} {48}ⲓ̂ⲛⲉ ⲉⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲍⲛ {49}",
+      "core_english": "{46} how much {47} {48}light that came forth from {49}",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 10,
+          "section": 3121
+        },
+        {
+          "id": 47,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 11,
+          "section": 3121
+        },
+        {
+          "id": 48,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲟⲩⲁ",
+          "english": "the",
+          "basis": "editor's restoration of ⲟⲩⲁⲓⲛⲉ 'light'",
+          "source_id": 12,
+          "section": 3121
+        },
+        {
+          "id": 49,
+          "segment": 5,
+          "type": "lacuna",
+          "est_chars": 1,
+          "source_id": 13,
+          "section": 3121
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic emergence formula — light coming forth."
     },
@@ -292,8 +813,26 @@
       "chapter": 52,
       "line": 6,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88} ⲍⲙ̄ ⲡⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ ⲍⲛ̄ ⲟⲩ {89}",
-      "core_english": "{90} in that place, in a {91}",
+      "core_coptic": "{50} ⲍⲙ̄ ⲡⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ ⲍⲛ̄ ⲟⲩ {51}",
+      "core_english": "{50} in that place, in a {51}",
+      "apparatus": [
+        {
+          "id": 50,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 16,
+          "source_id": 14,
+          "section": 3122
+        },
+        {
+          "id": 51,
+          "segment": 6,
+          "type": "lacuna",
+          "est_chars": 2,
+          "source_id": 15,
+          "section": 3122
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic location reference, severely damaged."
     },
@@ -302,8 +841,18 @@
       "chapter": 52,
       "line": 7,
       "classification": "cosmological_substrate",
-      "core_coptic": "{92} ⲛ̄ⲟⲩⲱⲧ ⲉ",
-      "core_english": "{93} one/single",
+      "core_coptic": "{52} ⲛ̄ⲟⲩⲱⲧ ⲉ",
+      "core_english": "{52} one/single",
+      "apparatus": [
+        {
+          "id": 52,
+          "segment": 7,
+          "type": "lacuna",
+          "est_chars": 24,
+          "source_id": 16,
+          "section": 3123
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Likely cosmological 'one/single' — context substrate."
     },
@@ -312,8 +861,19 @@
       "chapter": 52,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{94}",
-      "core_english": "{95}",
+      "core_coptic": "{53}",
+      "core_english": "{53}",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 8,
+          "type": "lacuna",
+          "est_chars": 28,
+          "partial": "ⲱⲕ",
+          "source_id": 17,
+          "section": 3124
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Almost entirely lacunose, but in cosmological context — substrate."
     },
@@ -324,6 +884,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲙⲛⲧⲛⲁϭ ⲙⲡⲟⲩⲁϊⲛⲉ ⲙⲛ ⲛⲟⲩⲉⲣⲏⲩ ⲁⲛⲏϩⲉ",
       "core_english": "the Greatness of the Light is with one another forever,",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Core cosmic-substrate proposition: the Greatness of the Light in eternal unity."
     },
@@ -334,6 +895,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲧⲉ ⲙⲡⲉ ⲟⲩⲁⲛ ⲙ̄ⲙⲁⲩ ⲡⲁⲣⲁⲃⲁ ⲛ̄ⲧⲉⲛⲧⲟⲗⲏ ⲙⲛ ⲡⲡⲁ",
       "core_english": "nor has any one among them transgressed the commandment and the par-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Description of the harmony among the Light beings — internal cosmic order."
     },
@@ -344,6 +906,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲁⲅⲅⲉⲗⲓⲁ ⲉⲧⲁ ⲡⲉϩⲥⲁⲛ ⲧⲉⲉⲥ ⲁⲧⲟⲟⲧϥ̄ ⲁⲧⲙⲉⲧ ⲡⲕⲉ",
       "core_english": "-aggelia which his brother has given to him, not to be like the dark-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic relations among the Light beings, contrasted to Darkness."
     },
@@ -354,6 +917,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲕⲉ ⲇⲉ ⲛ̄ⲧⲁϩ ⲡⲭⲁⲭⲉ ⲛ̄ⲧⲁⲩⲧⲁⲭⲁϩ ⲁⲩⲟⲩⲁⲥϩ ⲉⲡⲉⲓⲇⲏ",
       "core_english": "ness. But he is the enemy whom they have appointed and reaped, since",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continued cosmic teaching about Darkness as enemy."
     },
@@ -364,6 +928,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲧⲁϊⲡⲣⲁⲭ ⲡⲉ ϩⲡⲁⲣⲝ̄ ⲁⲭⲱϩ ⲟⲩⲁⲉⲉⲧϩ ⲧⲕⲉⲙⲛ̄",
       "core_english": "he is one of (a single) practice in the principle, he himself alone; while the other king-",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic principle/practice (ⲡⲣⲁⲭ / ⲁⲣⲭⲏ) — substrate doctrinal vocabulary."
     },
@@ -372,8 +937,20 @@
       "chapter": 52,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲣ̄ⲡⲟ ⲁⲛ ⲡⲁⲣⲝ̄ ⲁⲭⲱⲥ ⲟⲩⲁⲉⲉⲧⲥ̄ ⲛ̄ⲕ{96}ⲁⲩⲕⲁ",
-      "core_english": "dom too is the principle itself, she herself alone. The {97} have left",
+      "core_coptic": "ⲧⲣ̄ⲡⲟ ⲁⲛ ⲡⲁⲣⲝ̄ ⲁⲭⲱⲥ ⲟⲩⲁⲉⲉⲧⲥ̄ ⲛ̄ⲕ{54}ⲁⲩⲕⲁ",
+      "core_english": "dom too is the principle itself, she herself alone. The {54} have left",
+      "apparatus": [
+        {
+          "id": 54,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉϭⲁⲙ ⲇⲉ ⲉⲧ",
+          "english": "other powers, however, who",
+          "basis": "Editor's restoration; ⲛ̄ⲕⲉϭⲁⲙ 'other powers' fits the parallel of ⲛⲉϩⲕⲉϭⲁⲙ in line 9.",
+          "source_id": 18,
+          "section": 3130
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two-kingdom cosmic structure: each kingdom is its own principle."
     },
@@ -382,8 +959,20 @@
       "chapter": 52,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲟⲩⲛⲟⲩⲛ ⲛ̄ⲥⲱⲩ ⲁⲩⲉⲓ ⲁϩⲣⲏⲓ̈ ⲉⲩⲟⲩ{98} ⲛ̄ⲥⲱϩ ⲛ̄ⲧⲁⲩⲧⲁ",
-      "core_english": "their Deep behind them and have come up, {99} after him whom they have ap-",
+      "core_coptic": "ⲡⲟⲩⲛⲟⲩⲛ ⲛ̄ⲥⲱⲩ ⲁⲩⲉⲓ ⲁϩⲣⲏⲓ̈ ⲉⲩⲟⲩ{55} ⲛ̄ⲥⲱϩ ⲛ̄ⲧⲁⲩⲧⲁ",
+      "core_english": "their Deep behind them and have come up, {55} after him whom they have ap-",
+      "apparatus": [
+        {
+          "id": 55,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲱϩ",
+          "english": "going",
+          "basis": "Editor's restoration; completion of ⲟⲩⲱϩ ⲛ̄ⲥⲁ 'follow after, pursue' (idiom).",
+          "source_id": 19,
+          "section": 3131
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic narrative — leaving the Deep, ascending after their appointed king. Substrate cosmic action."
     },
@@ -394,6 +983,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲭⲁⲩ ϩⲱⲁⲛⲟⲩ ⲉⲧⲃⲉ ⲡⲡⲣⲁⲭ̄ ⲉⲧϣⲟⲟⲡ ⲛϩⲏⲧⲟⲩ ⲧⲏⲣⲟⲩ",
       "core_english": "pointed for themselves, on account of the practice that exists in them all.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Continues principle/practice teaching."
     },
@@ -404,6 +994,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩϣⲁⲣⲱⲣ̄ ⲙ̄ⲡⲕⲉⲕⲉ ⲁⲩⲫⲃ̄ⲓ̈ⲟ ⲛ̄ⲛⲉϩⲕⲉϭⲁⲙ ⲉⲡⲉⲓⲇⲏ",
       "core_english": "They scattered the Darkness; they humbled the other powers, since",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Cosmic action — scattering Darkness, humbling powers; cosmological_substrate score 60.0."
     },
@@ -412,8 +1003,30 @@
       "chapter": 52,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧϭ{100} ⲙ̄ⲡⲓϣⲁⲣⲡ ⲛ̄ⲟⲩⲁϊⲛⲉ ⲉⲧⲙⲙⲉⲩ {101} ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ",
-      "core_english": "the {102} of that first Light {103} after the manner",
+      "core_coptic": "ⲧϭ{56} ⲙ̄ⲡⲓϣⲁⲣⲡ ⲛ̄ⲟⲩⲁϊⲛⲉ ⲉⲧⲙⲙⲉⲩ {57} ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ",
+      "core_english": "the {56} of that first Light {57} after the manner",
+      "apparatus": [
+        {
+          "id": 56,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲁⲙ",
+          "english": "power",
+          "basis": "Editor's restoration; completion of ⲧϭⲁⲙ 'the power.'",
+          "source_id": 20,
+          "section": 3134
+        },
+        {
+          "id": 57,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ϣⲟⲟⲡ",
+          "english": "exists",
+          "basis": "Editor's restoration; standard predicate ϣⲟⲟⲡ 'exists' fitting context.",
+          "source_id": 21,
+          "section": 3134
+        }
+      ],
       "removed_material": null,
       "temporal_note": "'First Light' — cosmic origin."
     },
@@ -422,8 +1035,30 @@
       "chapter": 52,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲧ{104}ⲛⲧⲣ̄ⲡⲟ ⲙ̄ⲡⲓⲕⲟⲥⲙⲟⲥ ⲭⲉ ϩⲟⲥⲟⲛ ⲛ{105}ⲩⲥⲧⲏ",
-      "core_english": "of the {106}kingdom of this cosmos. For as long as her {107}-myster-",
+      "core_coptic": "ⲛⲧ{58}ⲛⲧⲣ̄ⲡⲟ ⲙ̄ⲡⲓⲕⲟⲥⲙⲟⲥ ⲭⲉ ϩⲟⲥⲟⲛ ⲛ{59}ⲩⲥⲧⲏ",
+      "core_english": "of the {58}kingdom of this cosmos. For as long as her {59}-myster-",
+      "apparatus": [
+        {
+          "id": 58,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲙ",
+          "english": "",
+          "basis": "Editor's restoration of single damaged letter completing ⲧⲙⲛⲧⲣ̄ⲡⲟ 'the kingdom.'",
+          "source_id": 22,
+          "section": 3135
+        },
+        {
+          "id": 59,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲉⲥⲱⲃⲣⲙ̄",
+          "english": "fellow-",
+          "basis": "Editor's restoration; ⲥⲱⲃⲣ-ⲙⲩⲥⲧⲏⲣⲓⲟⲛ 'fellow-mystery' confirmed by undamaged occurrence in line 15.",
+          "source_id": 23,
+          "section": 3135
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic kingdom structure — mysteries internal to the system."
     },
@@ -432,8 +1067,28 @@
       "chapter": 52,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲣⲓⲟⲛ ϩⲙⲉⲧⲉ ⲛⲉⲙⲉⲥ ϩⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲙⲙ̄{108}{109}ⲛ̄",
-      "core_english": "ies agree with her in that king{110}dom {111}",
+      "core_coptic": "ⲣⲓⲟⲛ ϩⲙⲉⲧⲉ ⲛⲉⲙⲉⲥ ϩⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲙⲙ̄{60}{61}ⲛ̄",
+      "core_english": "ies agree with her in that king{60}dom {61}",
+      "apparatus": [
+        {
+          "id": 60,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲉⲩ",
+          "english": "",
+          "basis": "Editor's restoration; completion of ⲉⲧⲙⲙⲉⲩ 'that.'",
+          "source_id": 24,
+          "section": 3136
+        },
+        {
+          "id": 61,
+          "segment": 20,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 25,
+          "section": 3136
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Mysteries of the kingdom — substrate cosmic vocabulary."
     },
@@ -442,8 +1097,20 @@
       "chapter": 52,
       "line": 21,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲉⲣⲱϣⲧⲏⲣⲉ ⲙⲙⲁⲥ ⲛⲥⲭⲓ ⲉⲁⲩ ⲁⲡⲉⲧⲥⲙ̄ⲙ̄{112} ⲛϩⲟⲩ",
-      "core_english": "they do honor to her; they shall receive glory according to that which is {113}, ex-",
+      "core_coptic": "ⲥⲉⲣⲱϣⲧⲏⲣⲉ ⲙⲙⲁⲥ ⲛⲥⲭⲓ ⲉⲁⲩ ⲁⲡⲉⲧⲥⲙ̄ⲙ̄{62} ⲛϩⲟⲩ",
+      "core_english": "they do honor to her; they shall receive glory according to that which is {62}, ex-",
+      "apparatus": [
+        {
+          "id": 62,
+          "segment": 21,
+          "type": "restoration",
+          "coptic": "ⲁⲛⲧ",
+          "english": "established (for them)",
+          "basis": "Restoration of ⲥⲙⲙⲁⲛⲧ 'is established' (qualitative, cf. accumulated vocabulary).",
+          "source_id": 26,
+          "section": 3137
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic kingdom honored by its mysteries."
     },
@@ -452,8 +1119,40 @@
       "chapter": 52,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲱⲧⲃⲉ ⲛⲥⲭⲓⲥⲉ ⲛ̄ϩⲟⲩⲟ {114}ϩⲕⲉⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲁϣⲉ {115} ⲟⲩⲃ{116}",
-      "core_english": "ceedingly shall they be exalted more than {117}the other kingdom that rose {118} against {119}her.",
+      "core_coptic": "ⲱⲧⲃⲉ ⲛⲥⲭⲓⲥⲉ ⲛ̄ϩⲟⲩⲟ {63}ϩⲕⲉⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲁϣⲉ {64} ⲟⲩⲃ{65}",
+      "core_english": "ceedingly shall they be exalted more than {63}the other kingdom that rose {64} against {65}her.",
+      "apparatus": [
+        {
+          "id": 63,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Editor's restoration of single letter.",
+          "source_id": 27,
+          "section": 3138
+        },
+        {
+          "id": 64,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲁⲡⲁϭⲉ",
+          "english": "in combat",
+          "basis": "Editor's restoration; ⲡⲁϭⲉ likely 'fight, combat' governed by ⲟⲩⲃⲏⲥ 'against her.' Confidence moderate.",
+          "source_id": 28,
+          "section": 3138
+        },
+        {
+          "id": 65,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲏⲥ",
+          "english": "",
+          "basis": "Editor's restoration completing ⲟⲩⲃⲏⲥ 'against her.'",
+          "source_id": 29,
+          "section": 3138
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Two-kingdom cosmic contrast continues."
     },
@@ -462,8 +1161,30 @@
       "chapter": 52,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲙⲛⲧⲣ̄ⲡⲟ ⲇⲉ ⲛ̄ⲧⲁ{120}ⲣⲉ ⲛⲉⲥⲱⲃⲣⲙⲩⲥⲧⲏⲣⲓⲟⲛ {121}",
-      "core_english": "But the kingdom whose{122} fellow-mysteries {123}-",
+      "core_coptic": "ⲧⲙⲛⲧⲣ̄ⲡⲟ ⲇⲉ ⲛ̄ⲧⲁ{66}ⲣⲉ ⲛⲉⲥⲱⲃⲣⲙⲩⲥⲧⲏⲣⲓⲟⲛ {67}",
+      "core_english": "But the kingdom whose{66} fellow-mysteries {67}-",
+      "apparatus": [
+        {
+          "id": 66,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲥ ⲧⲉⲧⲉ",
+          "english": "",
+          "basis": "Editor's restoration; ⲛ̄ⲧⲁⲥ ⲧⲉⲧⲉⲣⲉ 'whose ... she-is.'",
+          "source_id": 30,
+          "section": 3139
+        },
+        {
+          "id": 67,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲡⲁⲣⲭ",
+          "english": "have transgressed/separated",
+          "basis": "Editor's restoration of stem ⲡⲁⲣⲭ-; likely a verb (παραβα-/πωρϫ-) meaning 'transgress, depart' from her, parallel to ⲡⲁⲣⲁⲃⲁ in line 2. Reading uncertain.",
+          "source_id": 31,
+          "section": 3139
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Despite ecclesial vocabulary score (60.0), the term 'fellow-mysteries' here is cosmic mystery vocabulary tied to the two-kingdom myth, not Manichaean church liturgy."
     },
@@ -472,8 +1193,20 @@
       "chapter": 52,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲭⲱⲥ ⲧⲁⲛⲁⲣⲕⲏ {124}ⲟⲩⲧⲁⲭⲟ ϩⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲙⲙⲉⲩ ⲛ̄ϩ{125}",
-      "core_english": "against her — the necessity {126}for them to perish in that kingdom, hum-",
+      "core_coptic": "ⲁⲭⲱⲥ ⲧⲁⲛⲁⲣⲕⲏ {68}ⲟⲩⲧⲁⲭⲟ ϩⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲙⲙⲉⲩ ⲛ̄ϩ{69}",
+      "core_english": "against her — the necessity {68}for them to perish in that kingdom, hum-",
+      "apparatus": [
+        {
+          "id": 68,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲧⲉ ⲁⲧⲣ",
+          "english": "is",
+          "basis": "Editor's restoration; ⲧⲉ ⲁⲧⲣⲟⲩ- 'is, that they should-' completing the necessity-clause.",
+          "source_id": 32,
+          "section": 3140
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic necessity (ⲁⲛⲁⲣⲕⲏ) of perishing — cosmic fate of opposing kingdom."
     },
@@ -484,6 +1217,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲫⲃ̄ⲓⲁⲥ ⲛⲥⲉⲓ ϩⲁ ⲧϭⲓⲭ ⲛ̄ϩⲙⲛⲧⲣ̄ⲡⲟ ⲉⲧⲁϩⲉ ⲁⲣⲉⲧⲥ̄ ⲟⲩⲃⲏⲥ",
       "core_english": "blings, and to come under the hand of the kingdom that stands against her.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Closing of the cosmic two-kingdom teaching unit."
     }

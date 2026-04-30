@@ -5,7 +5,7 @@
   "start_section": 1825,
   "end_section": 1872,
   "total_sections": 48,
-  "total_lacunae": 142,
+  "total_lacunae": 71,
   "segments": [
     {
       "section": 1825,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲁ̄",
       "core_english": "(51)",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Page/section number marker."
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉⲧⲃⲉ ⲡⲧⲱⲍⲙⲉ ⲭⲉ ⲛ̄ⲧⲁϥ",
       "core_english": "Concerning the Call: that he",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Chapter title — names the substrate topic (the Call/Summons descending)."
     },
@@ -34,6 +36,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛ̄ⲁ̄ ⲃⲱⲕ ⲁⲡⲓⲧⲛⲉ ⲛⲉϣ ⲙⲙⲉⲗⲟⲥ ⲛ̄ⲁ̄",
       "core_english": "(51) went down into how many members (51)",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title continuation — substantive cosmological question about the limbs of the Soul."
     },
@@ -44,6 +47,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲧⲉ ⲧϯⲩⲭⲏ ϣⲁ ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ",
       "core_english": "of the Soul, unto the First Man.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Title continuation — names the First Man as the cosmic terminus of the descent."
     },
@@ -53,7 +57,39 @@
       "line": 5,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲧⲁ {0}ⲡⲧⲱⲍⲙⲉ ⲃⲱⲕ ⲁⲡⲓⲧⲛⲉ ⲍⲛ̄ ⲉϣ ⲙ̄ⲙⲉⲗⲟⲥ ⲛ̄{1}ϯⲩⲭ{2}",
-      "core_english": "into how many members of the {3} Soul did the Call go down — of the {4}{5} Liv-",
+      "core_english": "into how many members of the {0} Soul did the Call go down — of the {1}{2} Liv-",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "",
+          "basis": "Article ⲡ- before ⲧⲱⲍⲙⲉ; restored from context.",
+          "source_id": 1,
+          "section": 1829
+        },
+        {
+          "id": 1,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲧ",
+          "english": "",
+          "basis": "Letter completing ⲛ̄ⲧ- genitive marker before ϯⲩⲭⲏ.",
+          "source_id": 2,
+          "section": 1829
+        },
+        {
+          "id": 2,
+          "segment": 5,
+          "type": "restoration",
+          "coptic": "ⲏ ⲉⲧ",
+          "english": "the",
+          "basis": "Restoring ϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ 'Living Soul' as completion of standard formula.",
+          "source_id": 3,
+          "section": 1829
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substantive cosmological question — defines the teaching topic."
     },
@@ -62,8 +98,30 @@
       "chapter": 31,
       "line": 6,
       "classification": "mixed",
-      "core_coptic": "ⲁ{6} ⲡⲣⲱⲙⲉ ⲉⲧϣⲟⲟⲡ ⲍⲙ̄ ⲡ{7}ⲱⲛ",
-      "core_english": "-ing {8} the man who is in the {9}aeon?",
+      "core_coptic": "ⲁ{3} ⲡⲣⲱⲙⲉ ⲉⲧϣⲟⲟⲡ ⲍⲙ̄ ⲡ{4}ⲱⲛ",
+      "core_english": "-ing {3} the man who is in the {4}aeon?",
+      "apparatus": [
+        {
+          "id": 3,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲛⲍ̄ ϣⲁ",
+          "english": "ng (Soul) unto",
+          "basis": "Completes ⲉⲧⲁⲛⲍ̄ ϣⲁ 'Living, unto'; standard cosmological formula.",
+          "source_id": 4,
+          "section": 1830
+        },
+        {
+          "id": 4,
+          "segment": 6,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Single letter completing ⲡⲁⲱⲛ = ⲡⲁⲓⲱⲛ 'the aeon.'",
+          "source_id": 5,
+          "section": 1830
+        }
+      ],
       "removed_material": "ⲉⲡⲉ{6}ⲇⲏ ⲥⲥⲏⲍ ⲍⲛ — 'Since it is written in' — citation formula introducing scriptural appeal.",
       "temporal_note": "Question completes; then a citation formula ('since it is written') begins. The citation appeal is editorial."
     },
@@ -72,8 +130,20 @@
       "chapter": 31,
       "line": 8,
       "classification": "cosmological_substrate",
-      "core_coptic": "{10}ⲱⲛ ⲧⲍⲉ ⲛⲟⲩⲏⲓ̈ ⲛ̄ϣⲉ",
-      "core_english": "{11}aeon, in the manner of a house of wood.",
+      "core_coptic": "{5}ⲱⲛ ⲧⲍⲉ ⲛⲟⲩⲏⲓ̈ ⲛ̄ϣⲉ",
+      "core_english": "{5}aeon, in the manner of a house of wood.",
+      "apparatus": [
+        {
+          "id": 5,
+          "segment": 8,
+          "type": "restoration",
+          "coptic": "ⲛⲁ",
+          "english": "(ai)",
+          "basis": "Editor restoration completing the noun ⲁⲓⲱⲛ 'aeon' from preceding line.",
+          "source_id": 9,
+          "section": 1831
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Tail of the citation but contains the substrate correspondential image — the aeon/house of wood. Substrate content."
     },
@@ -82,8 +152,18 @@
       "chapter": 31,
       "line": 10,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁ ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲙⲉⲛ ⲃⲁⲗϥ ⲁⲃⲁⲗ ⲁϥ{12}",
-      "core_english": "As for the First Man, indeed, he was released forth, he {13}",
+      "core_coptic": "ⲁ ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲙⲉⲛ ⲃⲁⲗϥ ⲁⲃⲁⲗ ⲁϥ{6}",
+      "core_english": "As for the First Man, indeed, he was released forth, he {6}",
+      "apparatus": [
+        {
+          "id": 6,
+          "segment": 10,
+          "type": "lacuna",
+          "est_chars": 10,
+          "source_id": 11,
+          "section": 1832
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Begins the cosmological exposition of the First Man."
     },
@@ -92,8 +172,36 @@
       "chapter": 31,
       "line": 11,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲙⲉⲗⲟⲥ ⲛⲧϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲧⲍⲉ ⲉⲧⲁⲓⲥⲍⲉⲓ̈ ⲛ{14} {15} {16}",
-      "core_english": "members of the Living Soul, in the manner I have written to {17} {18} {19}",
+      "core_coptic": "ⲙⲙⲉⲗⲟⲥ ⲛⲧϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲧⲍⲉ ⲉⲧⲁⲓⲥⲍⲉⲓ̈ ⲛ{7} {8} {9}",
+      "core_english": "members of the Living Soul, in the manner I have written to {7} {8} {9}",
+      "apparatus": [
+        {
+          "id": 7,
+          "segment": 11,
+          "type": "restoration",
+          "coptic": "ⲏⲧⲛⲉ",
+          "english": "you (pl.)",
+          "basis": "Restoring 2pl object pronoun on ⲥⲍⲉⲓ̈ ⲛ⸗ 'write to'; standard teacher-to-disciples formula.",
+          "source_id": 12,
+          "section": 1833
+        },
+        {
+          "id": 8,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 13,
+          "section": 1833
+        },
+        {
+          "id": 9,
+          "segment": 11,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 14,
+          "section": 1833
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate teaching on members of the Living Soul. 'I have written' is internal cross-reference, not editorial."
     },
@@ -102,8 +210,45 @@
       "chapter": 31,
       "line": 12,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲧϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲁϥⲙ̄ {20} ⲙ̄ⲡϥ{21}ⲟⲩⲛ̄ ⲁ {22} {23}",
-      "core_english": "of the Living Soul, he {24} did not {25}know {26} {27}",
+      "core_coptic": "ⲛ̄ⲧϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ ⲁϥⲙ̄ {10} ⲙ̄ⲡϥ{11}ⲟⲩⲛ̄ ⲁ {12} {13}",
+      "core_english": "of the Living Soul, he {10} did not {11}know {12} {13}",
+      "apparatus": [
+        {
+          "id": 10,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 3,
+          "partial": "ⲁϥⲙ̄ visible at start",
+          "source_id": 15,
+          "section": 1834
+        },
+        {
+          "id": 11,
+          "segment": 12,
+          "type": "restoration",
+          "coptic": "ⲥ",
+          "english": "",
+          "basis": "Single letter completing ⲡϥⲥⲟⲩⲛ̄ 'he did not know' (negative perfect).",
+          "source_id": 16,
+          "section": 1834
+        },
+        {
+          "id": 12,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 17,
+          "section": 1834
+        },
+        {
+          "id": 13,
+          "segment": 12,
+          "type": "lacuna",
+          "est_chars": 4,
+          "source_id": 18,
+          "section": 1834
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate continuation, heavily damaged."
     },
@@ -112,8 +257,48 @@
       "chapter": 31,
       "line": 13,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ {28} ⲁⲗⲗⲁ ⲡⲣⲱⲙⲉ ⲙ̄ⲙⲁⲕⲁⲣⲓⲟⲥ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ {29}ϥϣ{30}ⲡⲉ̄ {31}",
-      "core_english": "{32} but the blessed Man who is glorious, {33} {34}came to be {35}",
+      "core_coptic": "ⲛ {14} ⲁⲗⲗⲁ ⲡⲣⲱⲙⲉ ⲙ̄ⲙⲁⲕⲁⲣⲓⲟⲥ ⲉⲧⲟⲓ̈ ⲛⲉⲁⲩ {15}ϥϣ{16}ⲡⲉ̄ {17}",
+      "core_english": "{14} but the blessed Man who is glorious, {15} {16}came to be {17}",
+      "apparatus": [
+        {
+          "id": 14,
+          "segment": 13,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 19,
+          "section": 1835
+        },
+        {
+          "id": 15,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Single letter completing the perfect-tense particle ⲁϥ-.",
+          "source_id": 20,
+          "section": 1835
+        },
+        {
+          "id": 16,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲱ",
+          "english": "",
+          "basis": "Single letter completing ϣⲱⲡⲉ 'come to be.'",
+          "source_id": 21,
+          "section": 1835
+        },
+        {
+          "id": 17,
+          "segment": 13,
+          "type": "restoration",
+          "coptic": "ⲍⲛ̄",
+          "english": "in",
+          "basis": "Restored preposition introducing the following series 'in his image, in his form...'",
+          "source_id": 22,
+          "section": 1835
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic naming of the First Man as 'blessed Man who is glorious'."
     },
@@ -122,8 +307,20 @@
       "chapter": 31,
       "line": 14,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲟⲩⲡⲉⲧⲍⲏⲡ ⲍⲛ̄ ⲧⲉϥⲍⲓⲕⲱⲛ ⲍⲛ̄ ⲧⲉϥⲙⲟⲣⲫⲏ ⲍⲛ ⲧ{36}ϥⲁⲅⲁ",
-      "core_english": "a hidden one, in his image, in his form, in {37}his lo-",
+      "core_coptic": "ⲟⲩⲡⲉⲧⲍⲏⲡ ⲍⲛ̄ ⲧⲉϥⲍⲓⲕⲱⲛ ⲍⲛ̄ ⲧⲉϥⲙⲟⲣⲫⲏ ⲍⲛ ⲧ{18}ϥⲁⲅⲁ",
+      "core_english": "a hidden one, in his image, in his form, in {18}his lo-",
+      "apparatus": [
+        {
+          "id": 18,
+          "segment": 14,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "Single letter completing ⲧⲉϥ- 'his.'",
+          "source_id": 23,
+          "section": 1836
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate sequence: hidden/image/form/love — register is the cosmic structural enumeration."
     },
@@ -132,8 +329,20 @@
       "chapter": 31,
       "line": 15,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲏ ⲍⲛ̄ ⲧⲉϥⲡⲁⲣⲑⲉⲛⲟⲥ ⲉⲧⲟⲩⲁⲃⲉ ⲉⲧⲉ ⲛ̄ⲧⲁⲥ ⲡⲉ ⲧⲡ{38}ⲑⲉ",
-      "core_english": "-ve, in his holy Virgin, who is the {39}Vir-",
+      "core_coptic": "ⲡⲏ ⲍⲛ̄ ⲧⲉϥⲡⲁⲣⲑⲉⲛⲟⲥ ⲉⲧⲟⲩⲁⲃⲉ ⲉⲧⲉ ⲛ̄ⲧⲁⲥ ⲡⲉ ⲧⲡ{19}ⲑⲉ",
+      "core_english": "-ve, in his holy Virgin, who is the {19}Vir-",
+      "apparatus": [
+        {
+          "id": 19,
+          "segment": 15,
+          "type": "restoration",
+          "coptic": "ⲁⲣ",
+          "english": "",
+          "basis": "Letters completing ⲡⲁⲣⲑⲉⲛⲟⲥ 'virgin.'",
+          "source_id": 24,
+          "section": 1837
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Identification of the holy Virgin as the Virgin of Light — pure cosmic mapping."
     },
@@ -144,6 +353,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛⲟⲥ ⲙⲡⲟⲩⲁⲓ̈ⲛⲉ ⲧϯⲩⲭⲏ ⲙ̄ⲡⲓⲱⲧ",
       "core_english": "-gin of the Light, the Soul of the Father.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Virgin of Light = Soul of the Father — core substrate correspondence."
     },
@@ -152,8 +362,20 @@
       "chapter": 31,
       "line": 17,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲙⲡ̄ⲥⲱⲙⲁ ⲛⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲭⲉ ⲉⲣⲉ ⲧⲛⲟⲩⲛⲉ ⲛ̄ⲙⲙⲉⲗ{40}",
-      "core_english": "After the manner of the body of the flesh: the root of all the {41}mem-",
+      "core_coptic": "ⲕⲁⲧⲁ ⲡⲣⲏⲧⲉ ⲙⲡ̄ⲥⲱⲙⲁ ⲛⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲭⲉ ⲉⲣⲉ ⲧⲛⲟⲩⲛⲉ ⲛ̄ⲙⲙⲉⲗ{20}",
+      "core_english": "After the manner of the body of the flesh: the root of all the {20}mem-",
+      "apparatus": [
+        {
+          "id": 20,
+          "segment": 17,
+          "type": "restoration",
+          "coptic": "ⲟⲥ",
+          "english": "",
+          "basis": "Letters completing ⲙⲉⲗⲟⲥ 'members.'",
+          "source_id": 25,
+          "section": 1839
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Explicit correspondential analogy: cosmic First Man ↔ body-of-flesh."
     },
@@ -162,8 +384,20 @@
       "chapter": 31,
       "line": 18,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲏⲣⲟⲩ ⲁϣⲉ ⲁⲧⲁⲡⲉ ⲭⲉ ⲉⲩϣⲁⲛϣⲱⲧ ⲟⲩⲉ ⲍⲛ̄ ⲙ̄ⲙⲉⲗⲟⲥ {42}",
-      "core_english": "-bers hangs from the head — for if they cut off one of the members of {43}",
+      "core_coptic": "ⲧⲏⲣⲟⲩ ⲁϣⲉ ⲁⲧⲁⲡⲉ ⲭⲉ ⲉⲩϣⲁⲛϣⲱⲧ ⲟⲩⲉ ⲍⲛ̄ ⲙ̄ⲙⲉⲗⲟⲥ {21}",
+      "core_english": "-bers hangs from the head — for if they cut off one of the members of {21}",
+      "apparatus": [
+        {
+          "id": 21,
+          "segment": 18,
+          "type": "restoration",
+          "coptic": "ⲙ̄",
+          "english": "",
+          "basis": "Genitive marker introducing ⲡⲣⲱⲙⲉ 'the man' on next line.",
+          "source_id": 26,
+          "section": 1840
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of head/members analogy."
     },
@@ -172,8 +406,29 @@
       "chapter": 31,
       "line": 19,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲣⲱⲙⲉ ⲉⲣⲉ ⲧⲁⲡⲉ ϣⲟⲟⲡ ⲟⲩⲛⲧⲉϥ ⲍⲉⲗⲡⲓⲥ ⲛⲛ {44} {45}",
-      "core_english": "the man, the head being present, he has hope of {46} {47}",
+      "core_coptic": "ⲡⲣⲱⲙⲉ ⲉⲣⲉ ⲧⲁⲡⲉ ϣⲟⲟⲡ ⲟⲩⲛⲧⲉϥ ⲍⲉⲗⲡⲓⲥ ⲛⲛ {22} {23}",
+      "core_english": "the man, the head being present, he has hope of {22} {23}",
+      "apparatus": [
+        {
+          "id": 22,
+          "segment": 19,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": "ⲛⲛ then trace",
+          "source_id": 27,
+          "section": 1841
+        },
+        {
+          "id": 23,
+          "segment": 19,
+          "type": "restoration",
+          "coptic": "ⲛⲁⲱⲡⲉ ⲙ̄",
+          "english": "of being there",
+          "basis": "Tentative restoration: ⲛⲁ- future + ⲱⲡⲉ 'be' + ⲙ̄- in 'there' (= ⲙⲙⲉⲩ on next line). Continues sense of 'has hope of being there.'",
+          "source_id": 28,
+          "section": 1841
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of correspondential reasoning."
     },
@@ -182,8 +437,30 @@
       "chapter": 31,
       "line": 20,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲙⲉⲩ ⲁⲗⲗⲁ ⲉⲩϣⲁⲛϣⲱⲧ ⲧⲉϥⲁⲡⲉ ⲡⲥⲱⲙⲁ ⲧⲏⲣ{48}ⲁⲙ{49}",
-      "core_english": "being there. But if they cut off his head, the whole bo{50}dy will di{51}-",
+      "core_coptic": "ⲙⲉⲩ ⲁⲗⲗⲁ ⲉⲩϣⲁⲛϣⲱⲧ ⲧⲉϥⲁⲡⲉ ⲡⲥⲱⲙⲁ ⲧⲏⲣ{24}ⲁⲙ{25}",
+      "core_english": "being there. But if they cut off his head, the whole bo{24}dy will di{25}-",
+      "apparatus": [
+        {
+          "id": 24,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ϥ ⲛ",
+          "english": "",
+          "basis": "Restoring ⲧⲏⲣϥ̄ 'whole' suffix and future marker ⲛⲁ-.",
+          "source_id": 29,
+          "section": 1842
+        },
+        {
+          "id": 25,
+          "segment": 20,
+          "type": "restoration",
+          "coptic": "ⲟⲩ",
+          "english": "",
+          "basis": "Letters completing ⲛⲁⲙⲟⲩ 'will die.'",
+          "source_id": 30,
+          "section": 1842
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of head/body teaching."
     },
@@ -194,6 +471,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲛϥ̄ⲥⲱⲣⲙⲉ",
       "core_english": "-e and perish.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Completes the correspondence."
     },
@@ -202,8 +480,30 @@
       "chapter": 31,
       "line": 22,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡϣⲁⲣ{52}ⲣⲱ{53}",
-      "core_english": "Thus also is this of the Fir{54}st Ma{55}-",
+      "core_coptic": "ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡϣⲁⲣ{26}ⲣⲱ{27}",
+      "core_english": "Thus also is this of the Fir{26}st Ma{27}-",
+      "apparatus": [
+        {
+          "id": 26,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲡ ⲛ",
+          "english": "",
+          "basis": "Completing ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ 'First Man' standard title.",
+          "source_id": 31,
+          "section": 1844
+        },
+        {
+          "id": 27,
+          "segment": 22,
+          "type": "restoration",
+          "coptic": "ⲙⲉ",
+          "english": "",
+          "basis": "Letters completing ⲣⲱⲙⲉ 'man.'",
+          "source_id": 32,
+          "section": 1844
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Pivots application of analogy back to the First Man — substrate transition formula."
     },
@@ -212,8 +512,30 @@
       "chapter": 31,
       "line": 23,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲧⲁϥ ⲡⲉ ⲧⲁⲡⲉ ⲉⲣⲉ ⲛⲉϥϣⲏⲣⲉ ⲁϥⲧ ⲛ̄ⲍⲏⲧⲥ ⲙ̄ⲙ{56}ⲗⲟⲥ {57}",
-      "core_english": "-n: He is the head, his sons being attached therein — the {58}mem{59}-bers of",
+      "core_coptic": "ⲛⲧⲁϥ ⲡⲉ ⲧⲁⲡⲉ ⲉⲣⲉ ⲛⲉϥϣⲏⲣⲉ ⲁϥⲧ ⲛ̄ⲍⲏⲧⲥ ⲙ̄ⲙ{28}ⲗⲟⲥ {29}",
+      "core_english": "-n: He is the head, his sons being attached therein — the {28}mem{29}-bers of",
+      "apparatus": [
+        {
+          "id": 28,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "",
+          "basis": "Letter completing ⲙⲙⲉⲗⲟⲥ 'members.'",
+          "source_id": 33,
+          "section": 1845
+        },
+        {
+          "id": 29,
+          "segment": 23,
+          "type": "restoration",
+          "coptic": "ⲛ̄",
+          "english": "of",
+          "basis": "Genitive marker before ⲧⲉϥϯⲩⲭⲏ 'his Soul.'",
+          "source_id": 34,
+          "section": 1845
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man = head; sons = members. Cosmic mapping."
     },
@@ -222,8 +544,30 @@
       "chapter": 31,
       "line": 24,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉϥϯⲩⲭⲏ ⲏ ⲙ̄ⲙⲁⲛ ⲛⲧⲁϥ ⲙⲡⲣⲏⲧⲉ ⲙ̄ⲡⲁⲏⲣ ⲉⲧ{60}ⲛⲍ {61}",
-      "core_english": "his Soul. Or rather, He is in the manner of the {62}living air {63}",
+      "core_coptic": "ⲧⲉϥϯⲩⲭⲏ ⲏ ⲙ̄ⲙⲁⲛ ⲛⲧⲁϥ ⲙⲡⲣⲏⲧⲉ ⲙ̄ⲡⲁⲏⲣ ⲉⲧ{30}ⲛⲍ {31}",
+      "core_english": "his Soul. Or rather, He is in the manner of the {30}living air {31}",
+      "apparatus": [
+        {
+          "id": 30,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲁ",
+          "english": "",
+          "basis": "Letter completing ⲉⲧⲁⲛⲍ 'living.'",
+          "source_id": 35,
+          "section": 1846
+        },
+        {
+          "id": 31,
+          "segment": 24,
+          "type": "restoration",
+          "coptic": "ⲉ",
+          "english": "from",
+          "basis": "Restoring ⲉⲧⲉⲣⲉ 'in which' (relative converter), continuing onto next line.",
+          "source_id": 36,
+          "section": 1846
+        }
+      ],
       "removed_material": null,
       "temporal_note": "New correspondence: First Man = living air sustaining flesh."
     },
@@ -232,8 +576,29 @@
       "chapter": 31,
       "line": 25,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉⲣⲉ ⲥⲁⲣⲝ̄ ⲛ{64} ⲛ{65}",
-      "core_english": "in {66}which all flesh wholly lives, drawing breath, {67}",
+      "core_coptic": "ⲧⲉⲣⲉ ⲥⲁⲣⲝ̄ ⲛ{32} ⲛ{33}",
+      "core_english": "in {32}which all flesh wholly lives, drawing breath, {33}",
+      "apparatus": [
+        {
+          "id": 32,
+          "segment": 25,
+          "type": "restoration",
+          "coptic": "ⲙ ⲁⲡⲧⲏⲣϥ̄ ⲁⲛⲍ ⲁⲣⲁϥ ⲉϥⲭⲓ ⲛⲓϥⲉ",
+          "english": "every which wholly lives in him, drawing breath",
+          "basis": "Editor restoration: ⲛⲓⲙ ⲁⲡⲧⲏⲣϥ̄ ⲁⲛⲍ ⲁⲣⲁϥ ⲉϥⲭⲓ ⲛⲓϥⲉ — standard expansion of the air-anima metaphor.",
+          "source_id": 37,
+          "section": 1847
+        },
+        {
+          "id": 33,
+          "segment": 25,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲛϥ visible",
+          "source_id": 38,
+          "section": 1847
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of air/breath correspondence."
     },
@@ -242,8 +607,20 @@
       "chapter": 31,
       "line": 26,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛ̄ⲍⲏⲧϥ̄ ⲭⲉ ⲧϥⲁⲡⲉ ⲕⲁⲁⲧ ⲁⲭⲙ̄ ⲡⲥⲱⲙⲁ ⲙ̄ⲡⲥⲧⲩⲗ{68}",
-      "core_english": "from him. For his head is laid upon the body of the Pil{69}lar of",
+      "core_coptic": "ⲛ̄ⲍⲏⲧϥ̄ ⲭⲉ ⲧϥⲁⲡⲉ ⲕⲁⲁⲧ ⲁⲭⲙ̄ ⲡⲥⲱⲙⲁ ⲙ̄ⲡⲥⲧⲩⲗ{34}",
+      "core_english": "from him. For his head is laid upon the body of the Pil{34}lar of",
+      "apparatus": [
+        {
+          "id": 34,
+          "segment": 26,
+          "type": "restoration",
+          "coptic": "ⲟⲥ ⲙ̄ⲡⲉ",
+          "english": "of Glo-",
+          "basis": "Restoring ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ 'Pillar of Glory,' standard Manichaean title.",
+          "source_id": 39,
+          "section": 1848
+        }
+      ],
       "removed_material": null,
       "temporal_note": "First Man's head laid on the Pillar — cosmic geography."
     },
@@ -254,6 +631,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲁⲩ ⲍⲙ ⲡⲭⲓⲥⲉ ⲙⲡⲕⲟⲥⲙⲟⲥ",
       "core_english": "Glory in the Height of the cosmos.",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Pillar of Glory in the Height — cosmic locus."
     },
@@ -262,8 +640,20 @@
       "chapter": 31,
       "line": 28,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧ{70}",
-      "core_english": "Thus also is {71}",
+      "core_coptic": "ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧ{35}",
+      "core_english": "Thus also is {35}",
+      "apparatus": [
+        {
+          "id": 35,
+          "segment": 28,
+          "type": "restoration",
+          "coptic": "ⲉ ⲧⲉⲓ̈ ⲙ̄",
+          "english": "this of",
+          "basis": "Restoring ⲧⲉ ⲧⲉⲓ̈ ⲙ̄- 'this of-,' parallelism with line 25 'ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ.'",
+          "source_id": 40,
+          "section": 1850
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate transition formula."
     },
@@ -272,8 +662,20 @@
       "chapter": 31,
       "line": 29,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲡⲓⲱⲧ ⲡⲣⲱⲙⲉ ⲙⲙⲁⲕⲁⲣⲓⲟⲥ ⲉϥϣⲟⲟⲡ ⲧⲍⲉ ⲛⲧⲁ{72}",
-      "core_english": "the Father, the blessed Man, being in the manner of the {73}hea-",
+      "core_coptic": "ⲡⲓⲱⲧ ⲡⲣⲱⲙⲉ ⲙⲙⲁⲕⲁⲣⲓⲟⲥ ⲉϥϣⲟⲟⲡ ⲧⲍⲉ ⲛⲧⲁ{36}",
+      "core_english": "the Father, the blessed Man, being in the manner of the {36}hea-",
+      "apparatus": [
+        {
+          "id": 36,
+          "segment": 29,
+          "type": "restoration",
+          "coptic": "ⲡⲉ ⲉⲧⲍⲓⲭⲛ ⲡ",
+          "english": "head that is over the",
+          "basis": "Editor restoration completing the parallel construction 'in the manner of the head over the body' (cf. line 32 ⲉⲧⲍⲓⲭⲛ̄ ⲡⲥⲧⲩⲗⲟⲥ).",
+          "source_id": 41,
+          "section": 1851
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Father = blessed Man = head over body. Cosmic correspondence."
     },
@@ -282,8 +684,18 @@
       "chapter": 31,
       "line": 30,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲥⲱⲙⲁ ⲙⲓⲛ ⲡⲁⲏⲣ ⲉⲧⲍⲓⲭⲛ̄ ⲡⲥⲧⲩⲗⲟⲥ ⲉϥⲕⲁⲁⲧ ⲍ{74}",
-      "core_english": "-d that is over the body, and the air that is over the Pillar — laid in {75}",
+      "core_coptic": "ⲥⲱⲙⲁ ⲙⲓⲛ ⲡⲁⲏⲣ ⲉⲧⲍⲓⲭⲛ̄ ⲡⲥⲧⲩⲗⲟⲥ ⲉϥⲕⲁⲁⲧ ⲍ{37}",
+      "core_english": "-d that is over the body, and the air that is over the Pillar — laid in {37}",
+      "apparatus": [
+        {
+          "id": 37,
+          "segment": 30,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 42,
+          "section": 1852
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic structural map: head over body, air over Pillar."
     },
@@ -292,8 +704,30 @@
       "chapter": 31,
       "line": 31,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲉϥⲧⲁⲭⲣⲁⲓ̈ⲧ ⲍⲛ̄ ⲧⲉϥⲡⲁⲣⲑⲉⲛⲟⲥ ⲛⲟ{76} ⲉⲧⲉ {77} ⲧⲉ",
-      "core_english": "established in his Virgin of {78}Light, who is {79}",
+      "core_coptic": "ⲉϥⲧⲁⲭⲣⲁⲓ̈ⲧ ⲍⲛ̄ ⲧⲉϥⲡⲁⲣⲑⲉⲛⲟⲥ ⲛⲟ{38} ⲉⲧⲉ {39} ⲧⲉ",
+      "core_english": "established in his Virgin of {38}Light, who is {39}",
+      "apparatus": [
+        {
+          "id": 38,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲩⲁⲓ̈ⲛⲉ",
+          "english": "",
+          "basis": "Restoring ⲛⲟⲩⲁⲓ̈ⲛⲉ 'of light' completing ⲡⲁⲣⲑⲉⲛⲟⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ, standard Manichaean title (Virgin of Light).",
+          "source_id": 43,
+          "section": 1853
+        },
+        {
+          "id": 39,
+          "segment": 31,
+          "type": "restoration",
+          "coptic": "ⲛⲧⲁⲥ",
+          "english": "she",
+          "basis": "Restoring 3sg.f. independent pronoun in 'who is.'",
+          "source_id": 44,
+          "section": 1853
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Established in the Virgin of Light."
     },
@@ -302,8 +736,19 @@
       "chapter": 31,
       "line": 32,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲧⲉϥϯⲩⲭⲏ ⲉⲧⲉϥⲣⲫⲟⲣⲉ ⲙ̄ⲙⲁⲥ {80}",
-      "core_english": "his Soul, which he wears {81}",
+      "core_coptic": "ⲧⲉϥϯⲩⲭⲏ ⲉⲧⲉϥⲣⲫⲟⲣⲉ ⲙ̄ⲙⲁⲥ {40}",
+      "core_english": "his Soul, which he wears {40}",
+      "apparatus": [
+        {
+          "id": 40,
+          "segment": 32,
+          "type": "lacuna",
+          "est_chars": 16,
+          "partial": ". . at start",
+          "source_id": 45,
+          "section": 1854
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Virgin = his Soul which he wears — substrate identification."
     },
@@ -312,8 +757,29 @@
       "chapter": 31,
       "line": 33,
       "classification": "cosmological_substrate",
-      "core_coptic": "{82} {83} ⲡⲛⲟⲩⲥ ⲡⲙⲉⲩⲉ ⲧⲥⲃⲱ ⲡⲥⲁⲭⲛⲉ ⲙⲛ",
-      "core_english": "{84} {85}: the mind, the thought, the teaching, the counsel, and",
+      "core_coptic": "{41} {42} ⲡⲛⲟⲩⲥ ⲡⲙⲉⲩⲉ ⲧⲥⲃⲱ ⲡⲥⲁⲭⲛⲉ ⲙⲛ",
+      "core_english": "{41} {42}: the mind, the thought, the teaching, the counsel, and",
+      "apparatus": [
+        {
+          "id": 41,
+          "segment": 33,
+          "type": "lacuna",
+          "est_chars": 1,
+          "partial": "ϩ",
+          "source_id": 46,
+          "section": 1855
+        },
+        {
+          "id": 42,
+          "segment": 33,
+          "type": "restoration",
+          "coptic": "ⲉⲧⲙ̄ⲙⲉⲩ",
+          "english": "that very",
+          "basis": "Standard demonstrative ⲉⲧⲙ̄ⲙⲉⲩ; only [ⲧⲙ] damaged within the clear word ⲉ[ⲧⲙ]ⲙⲉⲩ",
+          "source_id": 47,
+          "section": 1855
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Enumeration of the five intellectual faculties — classic substrate enumeration (mind/thought/insight/counsel/...)."
     },
@@ -322,8 +788,20 @@
       "chapter": 31,
       "line": 34,
       "classification": "cosmological_substrate",
-      "core_coptic": "{86} ⲛⲉⲧⲁϩⲧⲟⲩⲱ ⲙⲙⲁⲩ ⲁϩⲧⲛⲛⲁⲩⲥⲟⲩ ⲁⲃⲁⲗ",
-      "core_english": "{87} — those who raised them up have sent them forth",
+      "core_coptic": "{43} ⲛⲉⲧⲁϩⲧⲟⲩⲱ ⲙⲙⲁⲩ ⲁϩⲧⲛⲛⲁⲩⲥⲟⲩ ⲁⲃⲁⲗ",
+      "core_english": "{43} — those who raised them up have sent them forth",
+      "apparatus": [
+        {
+          "id": 43,
+          "segment": 34,
+          "type": "restoration",
+          "coptic": "ⲡⲙⲁⲕⲙⲉⲕ",
+          "english": "reflection",
+          "basis": "Fifth of the five faculties; only [ⲁⲕ] damaged in clear word ⲡⲙ[ⲁⲕ]ⲙⲉⲕ; cf. mandatory glossary",
+          "source_id": 48,
+          "section": 1856
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate narrative: cosmic agents send forth the faculties."
     },
@@ -332,8 +810,19 @@
       "chapter": 31,
       "line": 35,
       "classification": "cosmological_substrate",
-      "core_coptic": "{88} ⲡⲉϩⲱⲕ ⲛ̄ⲍⲏⲧ ⲁϩⲥⲛⲉⲓⲛⲉ ⲁϩⲙⲁⲍⲉ ⲛⲥⲱⲟⲩ",
-      "core_english": "{89}, his purpose of heart; they passed by, walking after them",
+      "core_coptic": "{44} ⲡⲉϩⲱⲕ ⲛ̄ⲍⲏⲧ ⲁϩⲥⲛⲉⲓⲛⲉ ⲁϩⲙⲁⲍⲉ ⲛⲥⲱⲟⲩ",
+      "core_english": "{44}, his purpose of heart; they passed by, walking after them",
+      "apparatus": [
+        {
+          "id": 44,
+          "segment": 35,
+          "type": "lacuna",
+          "est_chars": 4,
+          "partial": "ⲙⲙ...ⲡ",
+          "source_id": 49,
+          "section": 1857
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Continuation of cosmic narrative."
     },
@@ -342,8 +831,19 @@
       "chapter": 31,
       "line": 36,
       "classification": "cosmological_substrate",
-      "core_coptic": "{90} ⲛ̄ⲧⲉϩⲧⲩⲭⲏ ⲉⲧⲁⲛⲍ̂ ⲉⲧⲭⲁⲗⲝ̄ ⲟⲩⲧⲱⲟⲩ ⲛ̄ⲛⲃⲉⲝ̄ⲉⲩ",
-      "core_english": "{91} of his living soul that is slackened among the bewildered ones",
+      "core_coptic": "{45} ⲛ̄ⲧⲉϩⲧⲩⲭⲏ ⲉⲧⲁⲛⲍ̂ ⲉⲧⲭⲁⲗⲝ̄ ⲟⲩⲧⲱⲟⲩ ⲛ̄ⲛⲃⲉⲝ̄ⲉⲩ",
+      "core_english": "{45} of his living soul that is slackened among the bewildered ones",
+      "apparatus": [
+        {
+          "id": 45,
+          "segment": 36,
+          "type": "lacuna",
+          "est_chars": 6,
+          "partial": "ⲡ...ⲥ",
+          "source_id": 50,
+          "section": 1858
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic narrative — Living Soul slackened among bewildered ones."
     },
@@ -354,6 +854,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲉ̄ ⲉⲩϣⲟⲟⲡ ⲕⲁⲧⲁ ⲡⲉⲓⲛⲉ ⲛⲙ̄ⲙⲉⲗⲟⲥ ⲙⲡⲉⲥⲥⲱⲙⲁ ⲙ̄ⲛ",
       "core_english": "(5) — they being according to the likeness of the members of her body and",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "Members ↔ body correspondence — substrate."
     },
@@ -362,8 +863,18 @@
       "chapter": 31,
       "line": 38,
       "classification": "cosmological_substrate",
-      "core_coptic": "{92} ⲕⲟⲥⲙⲟⲥ ⲡⲥⲏⲩ ⲇⲉ ⲉⲧⲁⲩⲧⲛⲛⲁⲩⲥ̄ⲟⲩ",
-      "core_english": "{93} cosmos. Now the time when they sent them forth,",
+      "core_coptic": "{46} ⲕⲟⲥⲙⲟⲥ ⲡⲥⲏⲩ ⲇⲉ ⲉⲧⲁⲩⲧⲛⲛⲁⲩⲥ̄ⲟⲩ",
+      "core_english": "{46} cosmos. Now the time when they sent them forth,",
+      "apparatus": [
+        {
+          "id": 46,
+          "segment": 38,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 51,
+          "section": 1860
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate continuation — cosmos."
     },
@@ -372,8 +883,30 @@
       "chapter": 31,
       "line": 39,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲍⲙ {94} ⲛ̄ⲧⲁϩϭⲛ̄ⲧϩ ⲍⲛ̄ ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡ{95}",
-      "core_english": "in {96}, he found him in the Virgin of {97}",
+      "core_coptic": "ⲍⲙ {47} ⲛ̄ⲧⲁϩϭⲛ̄ⲧϩ ⲍⲛ̄ ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡ{48}",
+      "core_english": "in {47}, he found him in the Virgin of {48}",
+      "apparatus": [
+        {
+          "id": 47,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲡⲥⲏⲩ ⲉⲧⲙ̄ⲙⲉⲩ",
+          "english": "that very time",
+          "basis": "Standard temporal phrase ⲍⲙ ⲡⲥⲏⲩ ⲉⲧⲙ̄ⲙⲉⲩ 'in that time'; ⲥ and ⲏ partially visible",
+          "source_id": 52,
+          "section": 1861
+        },
+        {
+          "id": 48,
+          "segment": 39,
+          "type": "restoration",
+          "coptic": "ⲡⲟⲩⲁⲓⲛⲉ",
+          "english": "Light",
+          "basis": "Standard title ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ 'the Virgin of Light'; first part ⲙⲡ[ⲟⲩⲁ] visible, completes on next line",
+          "source_id": 53,
+          "section": 1861
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Found in the Virgin of Light — substrate locus."
     },
@@ -382,8 +915,20 @@
       "chapter": 31,
       "line": 40,
       "classification": "cosmological_substrate",
-      "core_coptic": "{98} ⲁⲡⲉⲧϩ ⲉϩⲥⲁⲡⲥ̄ ⲉ[ϩ]ⲧⲱⲃⲍ ⲛⲟⲩϭⲁⲙ",
-      "core_english": "{99} before him, beseeching, praying for a power",
+      "core_coptic": "{49} ⲁⲡⲉⲧϩ ⲉϩⲥⲁⲡⲥ̄ ⲉ[ϩ]ⲧⲱⲃⲍ ⲛⲟⲩϭⲁⲙ",
+      "core_english": "{49} before him, beseeching, praying for a power",
+      "apparatus": [
+        {
+          "id": 49,
+          "segment": 40,
+          "type": "restoration",
+          "coptic": "ⲁⲩⲱ ⲁϩⲁⲍⲉ",
+          "english": "and he stood",
+          "basis": "[ⲓⲛⲉ ⲁⲩ]ⲱ continues 'Light'; [ⲁϩ] restores perfect prefix on visible ⲁⲍⲉ 'stood'",
+          "source_id": 54,
+          "section": 1862
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate cosmic action."
     },
@@ -392,8 +937,38 @@
       "chapter": 31,
       "line": 41,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲁⲛ {100} {101} ⲛⲉϩ ⲛⲟⲩⲉⲓⲣⲏⲛⲏ ⲙ̄ⲛ ⲟⲩ{102}",
-      "core_english": "again {103} {104} him a peace and a {105}",
+      "core_coptic": "ⲁⲛ {50} {51} ⲛⲉϩ ⲛⲟⲩⲉⲓⲣⲏⲛⲏ ⲙ̄ⲛ ⲟⲩ{52}",
+      "core_english": "again {50} {51} him a peace and a {52}",
+      "apparatus": [
+        {
+          "id": 50,
+          "segment": 41,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 55,
+          "section": 1863
+        },
+        {
+          "id": 51,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲁϩϯ",
+          "english": "he gave",
+          "basis": "Idiom ⲁϩϯ ⲛⲉϥ 'he gave him'; only [ⲁϩ] restored, ⲧ visible",
+          "source_id": 56,
+          "section": 1863
+        },
+        {
+          "id": 52,
+          "segment": 41,
+          "type": "restoration",
+          "coptic": "ⲁⲥⲡⲁⲥⲙⲟⲥ",
+          "english": "kiss",
+          "basis": "Standard greeting-pair 'peace and kiss'; only [ⲥⲙⲟⲥ] tail damaged",
+          "source_id": 57,
+          "section": 1863
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate cosmic gift — peace etc."
     },
@@ -402,8 +977,28 @@
       "chapter": 31,
       "line": 42,
       "classification": "cosmological_substrate",
-      "core_coptic": "{106} {107} ⲛⲉϩ ⲙ̄ⲡϣⲙ̄ⲛⲟⲩϩⲉ ⲉⲧⲁⲛⲓⲧ",
-      "core_english": "{108} {109} him the beautiful fragrance",
+      "core_coptic": "{53} {54} ⲛⲉϩ ⲙ̄ⲡϣⲙ̄ⲛⲟⲩϩⲉ ⲉⲧⲁⲛⲓⲧ",
+      "core_english": "{53} {54} him the beautiful fragrance",
+      "apparatus": [
+        {
+          "id": 53,
+          "segment": 42,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 58,
+          "section": 1864
+        },
+        {
+          "id": 54,
+          "segment": 42,
+          "type": "restoration",
+          "coptic": "ⲁϩϯ",
+          "english": "he gave",
+          "basis": "Same idiom as line 9; ⲁϩ[ⲧ] with ⲁϩ visible and [ⲧ] restored",
+          "source_id": 59,
+          "section": 1864
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Beautiful fragrance — substrate sensory correspondence."
     },
@@ -412,8 +1007,38 @@
       "chapter": 31,
       "line": 43,
       "classification": "cosmological_substrate",
-      "core_coptic": "{110} {111}ⲱⲙⲉ ⲛⲧⲁϩ ⲍⲱⲱϩ ⲡⲣⲱⲙⲉ ⲁϩⲧ {112}",
-      "core_english": "{113} the {114}man, who himself the Man, gave {115}",
+      "core_coptic": "{55} {56}ⲱⲙⲉ ⲛⲧⲁϩ ⲍⲱⲱϩ ⲡⲣⲱⲙⲉ ⲁϩⲧ {57}",
+      "core_english": "{55} the {56}man, who himself the Man, gave {57}",
+      "apparatus": [
+        {
+          "id": 55,
+          "segment": 43,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 60,
+          "section": 1865
+        },
+        {
+          "id": 56,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲡ",
+          "english": "the",
+          "basis": "Definite article restored within clear word [ⲡ]ⲱⲙⲉ",
+          "source_id": 61,
+          "section": 1865
+        },
+        {
+          "id": 57,
+          "segment": 43,
+          "type": "restoration",
+          "coptic": "ⲛⲉϩ",
+          "english": "him",
+          "basis": "ⲛⲉϩ 'to him' completes the idiom ⲁϩϯ ⲛⲉϩ 'he gave him' as in lines 9-10",
+          "source_id": 62,
+          "section": 1865
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Substrate Man-figure narrative."
     },
@@ -422,8 +1047,18 @@
       "chapter": 31,
       "line": 44,
       "classification": "cosmological_substrate",
-      "core_coptic": "{116} ⲛⲛⲉϩⲙⲉⲗⲟⲥ ⲛϩⲥⲱⲩⲍ ⲧⲉϩⲧⲩⲭⲏ ⲁⲍⲟⲩⲛ",
-      "core_english": "{117} his members, to gather his soul inward",
+      "core_coptic": "{58} ⲛⲛⲉϩⲙⲉⲗⲟⲥ ⲛϩⲥⲱⲩⲍ ⲧⲉϩⲧⲩⲭⲏ ⲁⲍⲟⲩⲛ",
+      "core_english": "{58} his members, to gather his soul inward",
+      "apparatus": [
+        {
+          "id": 58,
+          "segment": 44,
+          "type": "lacuna",
+          "est_chars": 8,
+          "source_id": 63,
+          "section": 1866
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Gathering of the Soul — core substrate process."
     },
@@ -432,8 +1067,28 @@
       "chapter": 31,
       "line": 45,
       "classification": "cosmological_substrate",
-      "core_coptic": "{118} ⲁϩⲕⲁⲧϩ ⲁⲡⲉϩⲙⲁ ⲧⲍⲉ ⲙⲡⲓ{119}",
-      "core_english": "{120} he turned him back to his place. Thus the {121}",
+      "core_coptic": "{59} ⲁϩⲕⲁⲧϩ ⲁⲡⲉϩⲙⲁ ⲧⲍⲉ ⲙⲡⲓ{60}",
+      "core_english": "{59} he turned him back to his place. Thus the {60}",
+      "apparatus": [
+        {
+          "id": 59,
+          "segment": 45,
+          "type": "lacuna",
+          "est_chars": 9,
+          "source_id": 64,
+          "section": 1867
+        },
+        {
+          "id": 60,
+          "segment": 45,
+          "type": "restoration",
+          "coptic": "ⲡⲩⲣⲅⲥ̄ⲕⲟⲥ",
+          "english": "tower",
+          "basis": "Greek πύργος/πυργίσκος; only [ⲅ] damaged in clear word ⲡⲓⲡⲩⲣ[ⲅ]ⲥ̄ⲕⲟⲥ",
+          "source_id": 65,
+          "section": 1867
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Return to cosmic place."
     },
@@ -442,8 +1097,18 @@
       "chapter": 31,
       "line": 46,
       "classification": "cosmological_substrate",
-      "core_coptic": "{122} ⲙⲁⲁⲛⲕϥ̄ ⲛ̄ⲥⲉⲧⲥⲁⲓⲁϩ ⲍ̄ⲛ̄ ⲟⲩⲧⲉⲭⲛⲏ",
-      "core_english": "{123} fashion him and adorn him with an art",
+      "core_coptic": "{61} ⲙⲁⲁⲛⲕϥ̄ ⲛ̄ⲥⲉⲧⲥⲁⲓⲁϩ ⲍ̄ⲛ̄ ⲟⲩⲧⲉⲭⲛⲏ",
+      "core_english": "{61} fashion him and adorn him with an art",
+      "apparatus": [
+        {
+          "id": 61,
+          "segment": 46,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 66,
+          "section": 1868
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Cosmic fashioning."
     },
@@ -452,8 +1117,36 @@
       "chapter": 31,
       "line": 47,
       "classification": "cosmological_substrate",
-      "core_coptic": "{124} {125} {126} ⲛⲍⲣⲟⲟⲩ ⲉⲧⲁϩⲧⲛⲛⲁⲩⲥⲟⲩ",
-      "core_english": "{127} {128} {129} the voices that they sent forth",
+      "core_coptic": "{62} {63} {64} ⲛⲍⲣⲟⲟⲩ ⲉⲧⲁϩⲧⲛⲛⲁⲩⲥⲟⲩ",
+      "core_english": "{62} {63} {64} the voices that they sent forth",
+      "apparatus": [
+        {
+          "id": 62,
+          "segment": 47,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 67,
+          "section": 1869
+        },
+        {
+          "id": 63,
+          "segment": 47,
+          "type": "restoration",
+          "coptic": "ⲡⲗⲁⲥⲙⲁ",
+          "english": "molding",
+          "basis": "Greek loanword πλάσμα standardly used in Manichaean cosmology; ⲡ]ⲗⲁⲥ[ⲙⲁ partially visible",
+          "source_id": 68,
+          "section": 1869
+        },
+        {
+          "id": 64,
+          "segment": 47,
+          "type": "lacuna",
+          "est_chars": 3,
+          "source_id": 69,
+          "section": 1869
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Voices sent forth — substrate cosmic action."
     },
@@ -462,8 +1155,46 @@
       "chapter": 31,
       "line": 48,
       "classification": "cosmological_substrate",
-      "core_coptic": "{130}ⲁⲱⲙⲥ̄ ⲁⲍⲟⲩⲛ {131} {132} {133}",
-      "core_english": "{134} they submerged inward, {135} {136} {137}",
+      "core_coptic": "{65}ⲁⲱⲙⲥ̄ ⲁⲍⲟⲩⲛ {66} {67} {68}",
+      "core_english": "{65} they submerged inward, {66} {67} {68}",
+      "apparatus": [
+        {
+          "id": 65,
+          "segment": 48,
+          "type": "lacuna",
+          "est_chars": 7,
+          "source_id": 70,
+          "section": 1870
+        },
+        {
+          "id": 66,
+          "segment": 48,
+          "type": "restoration",
+          "coptic": "ⲛϩⲙⲟⲟϣⲙⲉ",
+          "english": "to walk",
+          "basis": "Lyc. ⲙⲁⲉⲉ/ⲙⲟⲟϣⲉ 'walk' (cf. ⲙⲁⲉⲉ ⲁⲡⲓⲧⲛⲉ in vocab); editor restoration [ⲛϩⲙⲟ]",
+          "source_id": 71,
+          "section": 1870
+        },
+        {
+          "id": 67,
+          "segment": 48,
+          "type": "restoration",
+          "coptic": "ⲁⲃⲁⲗ",
+          "english": "forth",
+          "basis": "Standard ⲙⲟⲟϣⲉ ⲁⲃⲁⲗ 'walk forth'; only [ⲁⲗ] damaged",
+          "source_id": 72,
+          "section": 1870
+        },
+        {
+          "id": 68,
+          "segment": 48,
+          "type": "lacuna",
+          "est_chars": 5,
+          "source_id": 73,
+          "section": 1870
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Submerged inward — substrate."
     },
@@ -472,8 +1203,20 @@
       "chapter": 31,
       "line": 49,
       "classification": "cosmological_substrate",
-      "core_coptic": "{138} ⲉⲧⲁⲥⲗⲱⲭⲍ̂ ⲍⲙ ⲡⲭⲁⲭⲉ ⲁⲩⲥⲱⲍ ⲁⲍⲟⲩⲛ ⲁⲩⲉ̄ⲓ ⲉⲩ",
-      "core_english": "{139} that has been defiled in the Enemy; they drew (her) inward, they came being",
+      "core_coptic": "{69} ⲉⲧⲁⲥⲗⲱⲭⲍ̂ ⲍⲙ ⲡⲭⲁⲭⲉ ⲁⲩⲥⲱⲍ ⲁⲍⲟⲩⲛ ⲁⲩⲉ̄ⲓ ⲉⲩ",
+      "core_english": "{69} that has been defiled in the Enemy; they drew (her) inward, they came being",
+      "apparatus": [
+        {
+          "id": 69,
+          "segment": 49,
+          "type": "restoration",
+          "coptic": "ⲡⲯⲩⲭⲏ",
+          "english": "the soul",
+          "basis": "Editor reading ⲧ[ⲗ]ⲭⲏ — likely scribal/orthographic variant of ⲧⲯⲩⲭⲏ 'the soul' fitting context of line 17 ('defiled in the enemy, drawn back inward')",
+          "source_id": 74,
+          "section": 1871
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Soul defiled in Enemy, drawn inward — substrate."
     },
@@ -482,8 +1225,20 @@
       "chapter": 31,
       "line": 50,
       "classification": "cosmological_substrate",
-      "core_coptic": "{140} ⲁⲡⲉⲧⲟⲩ ⲁⲡⲟⲩⲱⲍⲙⲉ ⲍ̄ⲛ ⲧⲍⲓⲕⲱⲛ ⲛⲧⲉ ⲡⲟⲩⲓⲱⲧ",
-      "core_english": "{141} in their place at the answering, in the icon of their Father",
+      "core_coptic": "{70} ⲁⲡⲉⲧⲟⲩ ⲁⲡⲟⲩⲱⲍⲙⲉ ⲍ̄ⲛ ⲧⲍⲓⲕⲱⲛ ⲛⲧⲉ ⲡⲟⲩⲓⲱⲧ",
+      "core_english": "{70} in their place at the answering, in the icon of their Father",
+      "apparatus": [
+        {
+          "id": 70,
+          "segment": 50,
+          "type": "restoration",
+          "coptic": "ⲧⲱⲕ",
+          "english": "Stand fast",
+          "basis": "Idiom ⲧⲱⲕ ⲁⲣⲉⲧ⸗ 'stand fast' (in vocab) with [ⲧ] restored before clear ⲱⲕ",
+          "source_id": 75,
+          "section": 1872
+        }
+      ],
       "removed_material": null,
       "temporal_note": "Closing substrate vision: in the icon of the Father."
     }

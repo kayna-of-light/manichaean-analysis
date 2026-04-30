@@ -5,7 +5,7 @@
   "start_section": 5499,
   "end_section": 5504,
   "total_sections": 6,
-  "total_lacunae": 6,
+  "total_lacunae": 3,
   "segments": [
     {
       "section": 5499,
@@ -14,6 +14,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲕ̄",
       "core_english": "120",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "chapter number marker"
     },
@@ -24,6 +25,7 @@
       "classification": "cosmological_substrate",
       "core_coptic": "ⲣⲕ̄ ⲉⲧⲃⲉ ⲧⲟⲩⲥⲓⲁ ⲥⲛⲧⲉ ⲣⲕ̄",
       "core_english": "120 — Concerning the Two Substances — 120",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "title — names the substratic dualist teaching topic"
     },
@@ -33,7 +35,19 @@
       "line": 4,
       "classification": "cosmological_substrate",
       "core_coptic": "ⲟⲩⲥⲓⲁ ⲥⲛⲧⲉ ⲛⲉⲧϣⲟⲟⲡ ⲛ̄ⲧⲁⲣⲭⲏ {0} ⲡ{1}",
-      "core_english": "Two substances are those existing from the beginning: {2} the {3}",
+      "core_english": "Two substances are those existing from the beginning: {0} the {1}",
+      "apparatus": [
+        {
+          "id": 0,
+          "segment": 4,
+          "type": "restoration",
+          "coptic": "ⲡⲟⲩⲁⲓ̈",
+          "english": "Lig-",
+          "basis": "Editor's restoration; ⲡⲟⲩⲁⲓⲛⲉ 'the Light' continuing into ⲛⲉ on line 29 — the standard first member of the dualistic catalogue light/darkness",
+          "source_id": 3,
+          "section": 5501
+        }
+      ],
       "removed_material": null,
       "temporal_note": "the foundational dualist declaration — primary substratic teaching of the chapter"
     },
@@ -42,8 +56,9 @@
       "chapter": 120,
       "line": 5,
       "classification": "cosmological_substrate",
-      "core_coptic": "ⲛⲉ ⲙⲛ ⲡⲕⲉⲕⲉ ⲡⲉⲧⲁⲛⲓⲧ ⲙⲛ̄ ⲡⲉⲧⲥⲁ{4}",
-      "core_english": "Light and the Darkness, the beautiful and the bit{5}",
+      "core_coptic": "ⲛⲉ ⲙⲛ ⲡⲕⲉⲕⲉ ⲡⲉⲧⲁⲛⲓⲧ ⲙⲛ̄ ⲡⲉⲧⲥⲁ{2}",
+      "core_english": "Light and the Darkness, the beautiful and the bit{2}",
+      "apparatus": [],
       "removed_material": null,
       "temporal_note": "the two substances named — Light/Darkness, beautiful/bitter; pure cosmic→cosmic mapping"
     },
@@ -54,6 +69,7 @@
       "classification": "mixed",
       "core_coptic": "ⲡⲙⲟⲩ",
       "core_english": "the death.",
+      "apparatus": [],
       "removed_material": "'But you, the offspring of...' shifts to second-person address — pivot to audience",
       "temporal_note": "opens with substrate term (death paired with prior bitterness/darkness) but pivots to vocative"
     },
@@ -64,6 +80,7 @@
       "classification": "mixed",
       "core_coptic": "ⲛ̄ⲡⲱⲣⲭ ⲡⲡⲉⲧⲁⲛⲓⲧ ⲁⲃⲁⲗ ⲙ̄ⲡⲕⲉⲕⲉ",
       "core_english": "separating the beautiful one forth from the Darkness",
+      "apparatus": [],
       "removed_material": "surrounding polemical/exhortative frame stripped — but the kernel here is a substratic statement of the dualist separation",
       "temporal_note": "echoes the substrate teaching of beautiful/Darkness separation, embedded in polemical context"
     }
