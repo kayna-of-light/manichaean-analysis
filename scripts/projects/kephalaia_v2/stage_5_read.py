@@ -257,6 +257,9 @@ class ReadStage(PipelineStage):
     description = "Spiritual-sense reading of assembled teachings"
     tool_name = "commit_reading"
     tool_schema = READ_TOOL
+    item_name = "teaching"
+    item_name_plural = "teachings"
+    item_prefix = "t"
 
     def get_system_prompt(self) -> str:
         return SYSTEM_PROMPT
