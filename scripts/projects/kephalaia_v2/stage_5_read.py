@@ -5,9 +5,12 @@ Correspondential reading of assembled teachings.
 Pipeline stage 5: runs AFTER stage_4c_assemble.py, BEFORE stage_6_restore.py.
 
 This stage produces a standalone spiritual reading of each teaching.
-It translates the natural sense into its spiritual sense via
-correspondences. The reading is used downstream by restore.py as
-context for gap-filling — and also stands as an independent output.
+Now that the corpus has been separated into teaching-level units, the
+reading is a single whole-teaching explanation rather than a per-line
+paraphrase. It explains the teaching's story, movement, correspondential
+logic, and meaning in one coherent read. The reading is used downstream
+by restore.py as context for gap-filling — and also stands as an
+independent reader-facing output.
 
 Input:
   - output/projects/kephalaia_v2/teachings/t_NNN.json  (from stage 4c)
@@ -52,124 +55,58 @@ READ_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
-            "teaching": {
-                "type": "integer",
-                "description": "The teaching number.",
+            "title": {
+                "type": "string",
+                "description": "Short descriptive title for the reading.",
             },
-            "segments_read": {
-                "type": "integer",
-                "description": "Number of core segments read.",
-            },
-            "reading_note": {
+            "arc": {
                 "type": "string",
                 "description": (
-                    "Brief assessment: what spiritual process does "
-                    "this teaching describe from beginning to end? "
-                    "What is the single arc?"
+                    "One or two sentences naming the complete movement "
+                    "of the teaching from beginning to end."
                 ),
             },
-            "segments": {
+            "reading": {
+                "type": "string",
+                "description": (
+                    "The full reader-facing explanation of the teaching. "
+                    "Write in coherent paragraphs. Explain what the "
+                    "teaching describes, how the imagery works, and what "
+                    "spiritual process is being taught. This is not a "
+                    "line-by-line paraphrase and not a lexical apparatus."
+                ),
+            },
+            "major_images": {
                 "type": "array",
                 "description": (
-                    "Spiritual reading for each core segment."
+                    "Only the major recurring images needed to understand "
+                    "the teaching as a whole. Do not make this exhaustive."
                 ),
                 "items": {
                     "type": "object",
                     "properties": {
-                        "i": {
-                            "type": "integer",
-                            "description": (
-                                "Section number for this teaching segment."
-                            ),
-                        },
-                        "spiritual_sense": {
+                        "image": {
                             "type": "string",
-                            "description": (
-                                "The spiritual reading: translate every "
-                                "natural image into its correspondential "
-                                "reality. Not commentary — translation. "
-                                "Continuous prose. Preserve {N} gap "
-                                "placeholders at their positions."
-                            ),
+                            "description": "Natural/cosmological image in the teaching.",
                         },
-                        "key_correspondences": {
-                            "type": "array",
-                            "description": (
-                                "Major correspondences used in this "
-                                "segment (natural → spiritual)."
-                            ),
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "natural": {
-                                        "type": "string",
-                                        "description": (
-                                            "The natural-plane term."
-                                        ),
-                                    },
-                                    "spiritual": {
-                                        "type": "string",
-                                        "description": (
-                                            "The spiritual reality."
-                                        ),
-                                    },
-                                },
-                                "required": ["natural", "spiritual"],
-                            },
-                        },
-                        "coptic_anchors": {
-                            "type": "array",
-                            "description": (
-                                "Important Coptic words or phrases that "
-                                "controlled the reading. Empty if no "
-                                "specific Coptic anchor is identifiable."
-                            ),
-                            "items": {
-                                "type": "object",
-                                "properties": {
-                                    "coptic": {
-                                        "type": "string",
-                                        "description": "The Coptic form.",
-                                    },
-                                    "english": {
-                                        "type": "string",
-                                        "description": (
-                                            "The project vocabulary English "
-                                            "term for this form."
-                                        ),
-                                    },
-                                    "spiritual": {
-                                        "type": "string",
-                                        "description": (
-                                            "The spiritual meaning used in "
-                                            "the segment reading."
-                                        ),
-                                    },
-                                },
-                                "required": ["coptic", "english", "spiritual"],
-                            },
-                        },
-                        "confidence": {
+                        "meaning": {
                             "type": "string",
-                            "enum": ["clear", "probable", "uncertain"],
-                            "description": (
-                                "How confidently the spiritual sense "
-                                "can be read. 'clear' = straightforward "
-                                "correspondence. 'probable' = good fit "
-                                "with minor ambiguity. 'uncertain' = "
-                                "multiple plausible readings."
-                            ),
+                            "description": "Spiritual reality expressed by the image.",
                         },
                     },
-                    "required": [
-                        "i", "spiritual_sense",
-                        "key_correspondences", "coptic_anchors", "confidence",
-                    ],
+                    "required": ["image", "meaning"],
                 },
+            },
+            "confidence": {
+                "type": "string",
+                "enum": ["clear", "probable", "uncertain"],
+                "description": (
+                    "Overall confidence in the whole-teaching reading."
+                ),
             },
         },
         "required": [
-            "teaching", "segments_read", "reading_note", "segments",
+            "title", "arc", "reading", "major_images", "confidence",
         ],
     },
 }
@@ -184,9 +121,10 @@ You are an expert in the doctrine of correspondences as written by \
 Emanuel Swedenborg, with deep specialization in ancient cosmological \
 vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
 
-You translate text from its natural sense into its spiritual sense. \
-Not annotation, not commentary — translation. Every natural image is \
-replaced by the spiritual reality it expresses through correspondence.
+You read a complete teaching through the doctrine of correspondences and \
+explain what it means as one coherent spiritual argument. The goal is a \
+reader-facing explanation of the whole teaching, not a line-by-line \
+paraphrase and not a lexical apparatus.
 
 ## THE CORRESPONDENTIAL METHOD
 
@@ -253,8 +191,9 @@ Coptic controls when vocabulary matters. Preserve this project's \
 translation decisions: ⲧⲥⲃⲱ is teaching, not insight; ⲡⲉⲓⲛⲉ is \
 likeness; Jesus ⲡⲡⲣⲓ̈ⲉ is Jesus the Radiance.
 
-Your job: translate the shell into what it contains. Read through the \
-imagery to the spiritual reality being expressed.
+Your job: tell the full story of the teaching. Explain what the teaching \
+describes, why its sequence matters, what spiritual process is moving \
+through it, and how its major images work together.
 
 ## GAP ANCHORS
 
@@ -262,20 +201,14 @@ The text contains numbered gap placeholders like {0}, {1}, {2}. \
 These are lacunae (missing text) that will be restored later using \
 your spiritual reading as a guide.
 
-As you translate each passage, PRESERVE these gap markers inline in \
-your spiritual prose at the corresponding position. When you reach \
-a gap, write what the spiritual sense requires at that point and \
-embed the marker so a restorer can see exactly what spiritual \
-reality belongs there.
-
-Example:
-  Original: "the great {3}, the battle that the Darkness spread"
-  Spiritual: "the great {3} assault that falsity from evil propagated"
+Do not try to account for every gap marker in the reading. If a major \
+lacuna materially affects the teaching's meaning, mention the uncertainty \
+in ordinary prose. Otherwise read the surviving teaching as a whole.
 
 ## RULES
 
-1. **Translate, don't annotate.** Replace every natural image with its \
-   spiritual reality. Produce continuous prose.
+1. **Read the whole teaching.** Produce a full story/explanation of the \
+    teaching, in coherent paragraphs.
 2. **When an image resists**, say so briefly and give your best reading.
 3. **Opposite sense:** Fire, water, animals can be positive or negative \
    depending on context (love vs. self-love, truth vs. falsity). \
@@ -287,11 +220,15 @@ Example:
    body parts, faces, limbs — read them as the Grand Man: the \
    form of love and wisdom at different registers.
 6. **Follow the arc:** The teaching has a beginning, middle, and end. \
-   Your reading should reveal the spiritual process flowing through it.
-7. **Use the lexicon:** If a term appears in the spiritual lexicon, use \
-   that stable spiritual meaning and project vocabulary.
-8. **Name Coptic anchors:** For each segment, record the important \
-   Coptic forms that shaped the reading in `coptic_anchors`.
+    Your reading should reveal the spiritual process flowing through it.
+7. **Use the lexicon silently:** If a term appears in the spiritual \
+    lexicon, use that stable spiritual meaning and project vocabulary, \
+    but do not turn the reading into a vocabulary list.
+8. **Keep support material short:** `major_images` is an aid to the \
+    reading, not the main product.
+
+The `reading` field should be the primary output. It should be readable on \
+its own by someone asking: "What does this teaching describe?"
 
 When complete, call commit_reading exactly once."""
 
@@ -343,7 +280,7 @@ def format_lexicon_summary(lexicon: dict) -> str:
 class ReadStage(PipelineStage):
     stage_name = "Correspondential Reading"
     stage_number = 5
-    description = "Spiritual-sense reading of assembled teachings"
+    description = "Whole-teaching correspondential reading"
     tool_name = "commit_reading"
     tool_schema = READ_TOOL
     item_name = "teaching"
@@ -381,25 +318,33 @@ class ReadStage(PipelineStage):
                 teachings.append(int(m.group(1)))
         return teachings
 
-    def is_done(self, num: int) -> bool:
-        """Check if reading output already exists for this teaching."""
-        return (self.get_output_dir() / f"t_{num:03d}.json").exists()
+    def is_done(self, page_num: int) -> bool:
+        """Check if a whole-teaching reading output already exists."""
+        path = self.get_output_dir() / f"t_{page_num:03d}.json"
+        if not path.exists():
+            return False
+        try:
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, json.JSONDecodeError):
+            return False
+        return bool(data.get("reading"))
 
-    def save_output(self, num: int, data: dict) -> None:
+    def save_output(self, page_num: int, data: dict) -> None:
         """Save the output JSON for a teaching (thread-safe)."""
         from pipeline_base import _write_lock
         output_dir = self.get_output_dir()
         output_dir.mkdir(parents=True, exist_ok=True)
-        path = output_dir / f"t_{num:03d}.json"
+        path = output_dir / f"t_{page_num:03d}.json"
         with _write_lock:
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
-    def build_user_message(self, teaching_num: int) -> str:
+    def build_user_message(self, page_num: int) -> str | None:
         """Load assembled teaching and format prompt."""
-        path = TEACHINGS_DIR / f"t_{teaching_num:03d}.json"
+        path = TEACHINGS_DIR / f"t_{page_num:03d}.json"
         if not path.exists():
-            print(f"  ERROR: No teaching file for t.{teaching_num}")
+            print(f"  ERROR: No teaching file for t.{page_num}")
             return None
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
@@ -420,13 +365,10 @@ class ReadStage(PipelineStage):
             return None
 
         parts = [
-            f"## Teaching {teaching_num}: {title}",
-            f"(Confidence: {confidence} | Core segments: {len(core_segments)})",
+            f"## Teaching {page_num}: {title}",
+            f"(Confidence: {confidence})",
             "",
         ]
-        parts.append("Use each section number (the § value) as the segment `i` in your output.")
-        parts.append("")
-
         if lexicon_summary:
             parts.extend([
                 "## Corpus Spiritual Lexicon",
@@ -452,28 +394,23 @@ class ReadStage(PipelineStage):
             parts.append("")
 
         parts.append(
-            "Read each segment's spiritual sense via correspondences. "
-            "Call commit_reading with the complete reading."
+            "Read the teaching as one complete spiritual argument. Write "
+            "a full explanation of what the whole teaching describes. Do "
+            "not produce a per-section or per-line reading. Call "
+            "commit_reading with the complete teaching-level reading."
         )
 
         return "\n".join(parts)
 
-    def process_result(self, teaching_num: int, result: dict) -> dict:
-        """Normalize segment IDs to source section numbers.
-
-        The prompt asks the model to use section numbers as `i`, but some
-        large teachings may be tempting to number from zero. Stage 6 joins
-        readings to teaching segments by section, so enforce that contract
-        mechanically when the segment count matches the teaching file.
-        """
-        result.setdefault("teaching", teaching_num)
-
-        path = TEACHINGS_DIR / f"t_{teaching_num:03d}.json"
+    def process_result(self, page_num: int, result: dict) -> dict:
+        """Add pipeline-generated index metadata after the tool call."""
+        path = TEACHINGS_DIR / f"t_{page_num:03d}.json"
+        core_segment_count = 0
         if path.exists():
             with open(path, encoding="utf-8") as f:
                 teaching = json.load(f)
-            expected_sections = [
-                segment.get("section")
+            core_segment_count = sum(
+                1
                 for segment in teaching.get("segments", [])
                 if segment.get("classification") in (
                     "cosmological_substrate", "mixed",
@@ -482,27 +419,19 @@ class ReadStage(PipelineStage):
                     segment.get("core_english")
                     or segment.get("core_coptic")
                 )
-            ]
-        else:
-            expected_sections = []
+            )
 
-        reading_segments = result.get("segments", [])
-        for segment in reading_segments:
-            segment.setdefault("coptic_anchors", [])
-
-        if len(reading_segments) == len(expected_sections):
-            for segment, section in zip(reading_segments, expected_sections):
-                segment["i"] = section
-            result["segments_read"] = len(reading_segments)
-
+        result["_index"] = {
+            "teaching": page_num,
+            "core_segments": core_segment_count,
+        }
         return result
 
-    def format_summary(self, teaching_num: int, result: dict) -> str:
+    def format_summary(self, page_num: int, result: dict) -> str:
         """Format a one-line summary."""
-        n = result.get("segments_read", 0)
-        note = result.get("reading_note", "")
+        note = result.get("arc") or result.get("title", "")
         short_note = note[:60] + "..." if len(note) > 60 else note
-        return f"OK — {n} segments read: {short_note}"
+        return f"OK — whole reading: {short_note}"
 
 
 # ---------------------------------------------------------------------------

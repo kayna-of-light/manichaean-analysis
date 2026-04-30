@@ -179,23 +179,26 @@ You receive:
 1. **The core teaching text** with Coptic and English side by side.
 2. **The apparatus** for each gap, including lacuna/restoration type, \
    estimated character count, partial traces, and existing editorial fills.
-3. **The provided correspondential reading**, where each gap marker is \
-   preserved in spiritual prose at the corresponding position.
+3. **The provided correspondential reading**, a whole-teaching explanation \
+    of the spiritual system and arc being described.
 4. **The spiritual lexicon** when available, giving stable vocabulary for \
    the corpus.
 
 ## RESTORATION METHOD
 
 Before deciding fills, identify the Swedenborgian system being described \
-in this teaching. The spiritual reading tells you WHAT spiritual reality \
-the passage expresses. The restoration must then express that spiritual \
-reality in the text's own natural/cosmological register.
+in this teaching. The spiritual reading tells you the whole teaching's \
+spiritual arc. Use that whole-reading context together with the local \
+Coptic, English, and apparatus to decide what reality belongs at each gap. \
+The restoration must then express that spiritual reality in the text's own \
+natural/cosmological register.
 
 For each gap:
 
 1. Locate the {N} marker in the Coptic and English core text.
-2. Locate the same {N} marker in the spiritual reading, if present.
-3. Read the local spiritual reality: what belongs there in the inner sense?
+2. Use the whole-teaching reading to identify the governing spiritual arc.
+3. Read the local Coptic and English context: what belongs there in the \
+    teaching's inner sense?
 4. Translate that reality back into the Kephalaia's natural-plane terms.
 5. Check the apparatus: type, estimated characters, traces, and editor fill.
 6. Check Coptic grammar: article, status constructus, prepositions, and \
@@ -376,7 +379,8 @@ class RestoreStage(PipelineStage):
             if not match:
                 continue
             num = int(match.group(1))
-            if not (READINGS_DIR / f"t_{num:03d}.json").exists():
+            reading = load_json(READINGS_DIR / f"t_{num:03d}.json")
+            if not reading or not reading.get("reading"):
                 continue
             teaching = load_json(path)
             if teaching and has_gaps(teaching):
@@ -397,11 +401,6 @@ class RestoreStage(PipelineStage):
         gaps = collect_gaps(teaching)
         if not gaps:
             return None
-
-        reading_segments = {
-            segment.get("i"): segment
-            for segment in reading.get("segments", [])
-        }
 
         title = teaching.get("title", "")
         lexicon_summary = self.get_lexicon_summary()
@@ -456,24 +455,29 @@ class RestoreStage(PipelineStage):
             "## Correspondential Reading",
             "",
         ])
-        for segment in teaching.get("segments", []):
-            section = segment.get("section")
-            if section not in reading_segments:
-                continue
-            reading_segment = reading_segments[section]
-            spiritual = reading_segment.get("spiritual_sense", "")
-            if not spiritual:
-                continue
-            parts.append(f"### Section {section}")
-            parts.append(spiritual)
+        if reading.get("reading"):
+            if reading.get("title"):
+                parts.append(f"Title: {reading.get('title')}")
+            if reading.get("arc"):
+                parts.append(f"Arc: {reading.get('arc')}")
+            parts.append("")
+            parts.append(reading.get("reading", ""))
+            parts.append("")
 
-            anchors = reading_segment.get("coptic_anchors", [])
-            if anchors:
-                rendered = "; ".join(
-                    f"{a.get('coptic')}={a.get('english')} -> {a.get('spiritual')}"
-                    for a in anchors
-                )
-                parts.append(f"Coptic anchors: {rendered}")
+            images = reading.get("major_images") or []
+            if images:
+                parts.append("Major images:")
+                for image in images:
+                    parts.append(
+                        f"- {image.get('image')}: {image.get('meaning')}"
+                    )
+                parts.append("")
+
+        else:
+            parts.append(
+                "No whole-teaching reading is available. Re-run the "
+                "correspondential reading stage before restoration."
+            )
             parts.append("")
 
         parts.append(
