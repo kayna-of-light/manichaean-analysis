@@ -179,7 +179,7 @@ You receive:
 1. **The core teaching text** with Coptic and English side by side.
 2. **The apparatus** for each gap, including lacuna/restoration type, \
    estimated character count, partial traces, and existing editorial fills.
-3. **The correspondential reading** from stage 5, where each gap marker is \
+3. **The provided correspondential reading**, where each gap marker is \
    preserved in spiritual prose at the corresponding position.
 4. **The spiritual lexicon** when available, giving stable vocabulary for \
    the corpus.
@@ -234,14 +234,14 @@ For each gap:
 ## VOCABULARY AUTHORITY
 
 Use the generated Corpus Spiritual Lexicon supplied in the user prompt as \
-the controlled vocabulary for this stage. It is the same vocabulary \
-discipline used by stage 5, and it supersedes general correspondential \
-defaults whenever it fixes a term.
+the controlled vocabulary for this restoration. It is the same vocabulary \
+discipline used in the provided reading, and it supersedes general \
+correspondential defaults whenever it fixes a term.
 
 For each proposed restoration, prefer the lexicon's Coptic forms, \
 `use_in_reading` wording, spiritual meanings, and opposite-sense notes. \
 Do not improvise new English when a term is fixed there. If no lexicon \
-entry applies, use the stage 5 spiritual reading, local Coptic anchors, \
+entry applies, use the provided spiritual reading, local Coptic anchors, \
 apparatus constraints, and Coptic grammar conservatively.
 
 When complete, call commit_restorations exactly once."""
