@@ -1,0 +1,60 @@
+{
+  "chapter": 53,
+  "title": "Concerning the First Man.",
+  "total_lines": 72,
+  "non_null_lines": 71,
+  "scores_mean": {
+    "cosmological_substrate": 7.5,
+    "apostolic_dialogue": 0.7,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 532.15,
+    "apostolic_dialogue": 50.0,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.914,
+    "editorial_fatigue_score": -0.36,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 13.78,
+        "second_half": 1.39,
+        "shift": -12.39
+      },
+      "apostolic_dialogue": {
+        "first_half": 1.43,
+        "second_half": 0.0,
+        "shift": -1.43
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 72,
+    "null_lines": 1,
+    "segments_with_gaps": 54,
+    "lacunae": 82,
+    "restorations": 0,
+    "damage_ratio": 0.75
+  },
+  "seam_flags": 0
+}

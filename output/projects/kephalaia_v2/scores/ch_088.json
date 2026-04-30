@@ -1,0 +1,60 @@
+{
+  "chapter": 88,
+  "title": "Concerning the Catechumen who found fault with the Elect: why he is angry.",
+  "total_lines": 87,
+  "non_null_lines": 87,
+  "scores_mean": {
+    "cosmological_substrate": 1.83,
+    "apostolic_dialogue": 4.6,
+    "manichaean_ecclesial": 8.32,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 8.16
+  },
+  "scores_total": {
+    "cosmological_substrate": 159.53,
+    "apostolic_dialogue": 400.0,
+    "manichaean_ecclesial": 723.68,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 710.12
+  },
+  "features": {
+    "teaching_purity": 0.08,
+    "editorial_fatigue_score": 1.46,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 3.71,
+        "second_half": 0.0,
+        "shift": -3.71
+      },
+      "apostolic_dialogue": {
+        "first_half": 3.49,
+        "second_half": 5.68,
+        "shift": 2.19
+      },
+      "manichaean_ecclesial": {
+        "first_half": 10.45,
+        "second_half": 6.23,
+        "shift": -4.22
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 4.19,
+        "second_half": 12.04,
+        "shift": 7.85
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 87,
+    "null_lines": 0,
+    "segments_with_gaps": 46,
+    "lacunae": 59,
+    "restorations": 2,
+    "damage_ratio": 0.529
+  },
+  "seam_flags": 3
+}

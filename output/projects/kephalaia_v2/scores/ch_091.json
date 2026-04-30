@@ -1,0 +1,60 @@
+{
+  "chapter": 91,
+  "title": "Also concerning the Catechumen; shall he be saved in a single Body?",
+  "total_lines": 208,
+  "non_null_lines": 208,
+  "scores_mean": {
+    "cosmological_substrate": 0.93,
+    "apostolic_dialogue": 3.53,
+    "manichaean_ecclesial": 22.07,
+    "manichaean_polemic": 0.55,
+    "hortatory_application": 0.63
+  },
+  "scores_total": {
+    "cosmological_substrate": 192.86,
+    "apostolic_dialogue": 734.53,
+    "manichaean_ecclesial": 4591.06,
+    "manichaean_polemic": 114.29,
+    "hortatory_application": 130.36
+  },
+  "features": {
+    "teaching_purity": 0.033,
+    "editorial_fatigue_score": -2.2,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.41,
+        "second_half": 1.44,
+        "shift": 1.03
+      },
+      "apostolic_dialogue": {
+        "first_half": 5.38,
+        "second_half": 1.68,
+        "shift": -3.7
+      },
+      "manichaean_ecclesial": {
+        "first_half": 24.96,
+        "second_half": 19.19,
+        "shift": -5.77
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 1.1,
+        "shift": 1.1
+      },
+      "hortatory_application": {
+        "first_half": 0.84,
+        "second_half": 0.41,
+        "shift": -0.43
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 208,
+    "null_lines": 0,
+    "segments_with_gaps": 130,
+    "lacunae": 169,
+    "restorations": 0,
+    "damage_ratio": 0.625
+  },
+  "seam_flags": 5
+}

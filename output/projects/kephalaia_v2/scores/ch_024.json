@@ -1,0 +1,60 @@
+{
+  "chapter": 24,
+  "title": "[... / ...]",
+  "total_lines": 212,
+  "non_null_lines": 209,
+  "scores_mean": {
+    "cosmological_substrate": 2.38,
+    "apostolic_dialogue": 1.35,
+    "manichaean_ecclesial": 0.27,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.4
+  },
+  "scores_total": {
+    "cosmological_substrate": 496.67,
+    "apostolic_dialogue": 282.86,
+    "manichaean_ecclesial": 57.14,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 83.33
+  },
+  "features": {
+    "teaching_purity": 0.54,
+    "editorial_fatigue_score": 0.61,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 2.2,
+        "second_half": 2.55,
+        "shift": 0.35
+      },
+      "apostolic_dialogue": {
+        "first_half": 0.0,
+        "second_half": 2.69,
+        "shift": 2.69
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.54,
+        "shift": 0.54
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.8,
+        "second_half": 0.0,
+        "shift": -0.8
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 212,
+    "null_lines": 3,
+    "segments_with_gaps": 171,
+    "lacunae": 296,
+    "restorations": 0,
+    "damage_ratio": 0.807
+  },
+  "seam_flags": 0
+}

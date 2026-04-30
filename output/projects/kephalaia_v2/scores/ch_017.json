@@ -1,0 +1,60 @@
+{
+  "chapter": 17,
+  "title": "The Chapter of the Three Seasons",
+  "total_lines": 87,
+  "non_null_lines": 86,
+  "scores_mean": {
+    "cosmological_substrate": 8.45,
+    "apostolic_dialogue": 6.12,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 1.28
+  },
+  "scores_total": {
+    "cosmological_substrate": 726.79,
+    "apostolic_dialogue": 526.67,
+    "manichaean_ecclesial": 0.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 110.0
+  },
+  "features": {
+    "teaching_purity": 0.533,
+    "editorial_fatigue_score": -0.49,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 10.48,
+        "second_half": 6.42,
+        "shift": -4.06
+      },
+      "apostolic_dialogue": {
+        "first_half": 6.98,
+        "second_half": 5.27,
+        "shift": -1.71
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.4,
+        "second_half": 1.16,
+        "shift": -0.24
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 87,
+    "null_lines": 1,
+    "segments_with_gaps": 73,
+    "lacunae": 139,
+    "restorations": 0,
+    "damage_ratio": 0.839
+  },
+  "seam_flags": 0
+}

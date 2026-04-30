@@ -1,0 +1,60 @@
+{
+  "chapter": 73,
+  "title": "Concerning the Envy of Matter",
+  "total_lines": 66,
+  "non_null_lines": 66,
+  "scores_mean": {
+    "cosmological_substrate": 3.59,
+    "apostolic_dialogue": 6.02,
+    "manichaean_ecclesial": 5.7,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 1.87
+  },
+  "scores_total": {
+    "cosmological_substrate": 237.14,
+    "apostolic_dialogue": 397.62,
+    "manichaean_ecclesial": 376.07,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 123.22
+  },
+  "features": {
+    "teaching_purity": 0.209,
+    "editorial_fatigue_score": -1.21,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 3.72,
+        "second_half": 3.46,
+        "shift": -0.26
+      },
+      "apostolic_dialogue": {
+        "first_half": 11.04,
+        "second_half": 1.01,
+        "shift": -10.03
+      },
+      "manichaean_ecclesial": {
+        "first_half": 3.68,
+        "second_half": 7.72,
+        "shift": 4.04
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.3,
+        "second_half": 2.44,
+        "shift": 1.14
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 66,
+    "null_lines": 0,
+    "segments_with_gaps": 45,
+    "lacunae": 73,
+    "restorations": 0,
+    "damage_ratio": 0.682
+  },
+  "seam_flags": 1
+}

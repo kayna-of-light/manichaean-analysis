@@ -1,0 +1,60 @@
+{
+  "chapter": 39,
+  "title": "Concerning the Three Days and the Two Deaths",
+  "total_lines": 86,
+  "non_null_lines": 86,
+  "scores_mean": {
+    "cosmological_substrate": 7.24,
+    "apostolic_dialogue": 5.38,
+    "manichaean_ecclesial": 2.53,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.83
+  },
+  "scores_total": {
+    "cosmological_substrate": 622.86,
+    "apostolic_dialogue": 462.86,
+    "manichaean_ecclesial": 217.86,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 71.43
+  },
+  "features": {
+    "teaching_purity": 0.453,
+    "editorial_fatigue_score": -3.29,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 6.18,
+        "second_half": 8.31,
+        "shift": 2.13
+      },
+      "apostolic_dialogue": {
+        "first_half": 10.76,
+        "second_half": 0.0,
+        "shift": -10.76
+      },
+      "manichaean_ecclesial": {
+        "first_half": 2.91,
+        "second_half": 2.16,
+        "shift": -0.75
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.66,
+        "second_half": 0.0,
+        "shift": -1.66
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 86,
+    "null_lines": 0,
+    "segments_with_gaps": 51,
+    "lacunae": 67,
+    "restorations": 0,
+    "damage_ratio": 0.593
+  },
+  "seam_flags": 1
+}

@@ -1,0 +1,60 @@
+{
+  "chapter": 20,
+  "title": "The Chapter of the Name of the Fathers",
+  "total_lines": 32,
+  "non_null_lines": 32,
+  "scores_mean": {
+    "cosmological_substrate": 5.25,
+    "apostolic_dialogue": 13.67,
+    "manichaean_ecclesial": 2.08,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 167.86,
+    "apostolic_dialogue": 437.5,
+    "manichaean_ecclesial": 66.67,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.25,
+    "editorial_fatigue_score": -5.79,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 10.49,
+        "shift": 10.49
+      },
+      "apostolic_dialogue": {
+        "first_half": 27.34,
+        "second_half": 0.0,
+        "shift": -27.34
+      },
+      "manichaean_ecclesial": {
+        "first_half": 0.0,
+        "second_half": 4.17,
+        "shift": 4.17
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 32,
+    "null_lines": 0,
+    "segments_with_gaps": 20,
+    "lacunae": 33,
+    "restorations": 0,
+    "damage_ratio": 0.625
+  },
+  "seam_flags": 1
+}

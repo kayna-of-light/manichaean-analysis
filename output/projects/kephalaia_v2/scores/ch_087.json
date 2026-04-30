@@ -1,0 +1,60 @@
+{
+  "chapter": 87,
+  "title": "Concerning the Alms, that [ ... ] life in the Church.",
+  "total_lines": 75,
+  "non_null_lines": 75,
+  "scores_mean": {
+    "cosmological_substrate": 2.4,
+    "apostolic_dialogue": 4.98,
+    "manichaean_ecclesial": 23.57,
+    "manichaean_polemic": 0.67,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 180.36,
+    "apostolic_dialogue": 373.81,
+    "manichaean_ecclesial": 1768.11,
+    "manichaean_polemic": 50.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.076,
+    "editorial_fatigue_score": -4.34,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 1.35,
+        "second_half": 3.43,
+        "shift": 2.08
+      },
+      "apostolic_dialogue": {
+        "first_half": 6.76,
+        "second_half": 3.26,
+        "shift": -3.5
+      },
+      "manichaean_ecclesial": {
+        "first_half": 29.92,
+        "second_half": 17.39,
+        "shift": -12.53
+      },
+      "manichaean_polemic": {
+        "first_half": 1.35,
+        "second_half": 0.0,
+        "shift": -1.35
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 75,
+    "null_lines": 0,
+    "segments_with_gaps": 40,
+    "lacunae": 47,
+    "restorations": 0,
+    "damage_ratio": 0.533
+  },
+  "seam_flags": 1
+}

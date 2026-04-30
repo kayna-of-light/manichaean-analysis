@@ -1,0 +1,60 @@
+{
+  "chapter": 14,
+  "title": "The Interpretation [of] the S[i]lence, the Fast, [the Peace], the Day, [and] the Rest; [what] they are.",
+  "total_lines": 43,
+  "non_null_lines": 37,
+  "scores_mean": {
+    "cosmological_substrate": 1.35,
+    "apostolic_dialogue": 0.68,
+    "manichaean_ecclesial": 2.7,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 50.0,
+    "apostolic_dialogue": 25.0,
+    "manichaean_ecclesial": 100.0,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.286,
+    "editorial_fatigue_score": -1.74,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 0.0,
+        "second_half": 2.63,
+        "shift": 2.63
+      },
+      "apostolic_dialogue": {
+        "first_half": 1.39,
+        "second_half": 0.0,
+        "shift": -1.39
+      },
+      "manichaean_ecclesial": {
+        "first_half": 5.56,
+        "second_half": 0.0,
+        "shift": -5.56
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 43,
+    "null_lines": 6,
+    "segments_with_gaps": 35,
+    "lacunae": 83,
+    "restorations": 0,
+    "damage_ratio": 0.814
+  },
+  "seam_flags": 0
+}

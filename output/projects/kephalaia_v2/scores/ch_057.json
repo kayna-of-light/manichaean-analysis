@@ -1,0 +1,60 @@
+{
+  "chapter": 57,
+  "title": "Concerning the Generation of Adam.",
+  "total_lines": 108,
+  "non_null_lines": 108,
+  "scores_mean": {
+    "cosmological_substrate": 1.91,
+    "apostolic_dialogue": 6.54,
+    "manichaean_ecclesial": 1.93,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.86
+  },
+  "scores_total": {
+    "cosmological_substrate": 206.55,
+    "apostolic_dialogue": 706.66,
+    "manichaean_ecclesial": 208.33,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 93.33
+  },
+  "features": {
+    "teaching_purity": 0.17,
+    "editorial_fatigue_score": 3.25,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 3.83,
+        "second_half": 0.0,
+        "shift": -3.83
+      },
+      "apostolic_dialogue": {
+        "first_half": 0.74,
+        "second_half": 12.35,
+        "shift": 11.61
+      },
+      "manichaean_ecclesial": {
+        "first_half": 1.54,
+        "second_half": 2.31,
+        "shift": 0.77
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.56,
+        "second_half": 1.17,
+        "shift": 0.61
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 108,
+    "null_lines": 0,
+    "segments_with_gaps": 36,
+    "lacunae": 41,
+    "restorations": 0,
+    "damage_ratio": 0.333
+  },
+  "seam_flags": 2
+}

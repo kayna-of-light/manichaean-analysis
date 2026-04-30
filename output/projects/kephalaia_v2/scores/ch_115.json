@@ -1,0 +1,60 @@
+{
+  "chapter": 115,
+  "title": "The Catechumen asks the Apostle: will Rest come about for Someone who has come out of the Body, if the Saints pray over and make an Alms-offering for him?",
+  "total_lines": 323,
+  "non_null_lines": 317,
+  "scores_mean": {
+    "cosmological_substrate": 2.46,
+    "apostolic_dialogue": 1.06,
+    "manichaean_ecclesial": 7.15,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.63
+  },
+  "scores_total": {
+    "cosmological_substrate": 778.7,
+    "apostolic_dialogue": 334.64,
+    "manichaean_ecclesial": 2267.73,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 200.0
+  },
+  "features": {
+    "teaching_purity": 0.217,
+    "editorial_fatigue_score": 0.97,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 4.42,
+        "second_half": 0.5,
+        "shift": -3.92
+      },
+      "apostolic_dialogue": {
+        "first_half": 1.44,
+        "second_half": 0.67,
+        "shift": -0.77
+      },
+      "manichaean_ecclesial": {
+        "first_half": 4.19,
+        "second_half": 10.1,
+        "shift": 5.91
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 1.27,
+        "second_half": 0.0,
+        "shift": -1.27
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 323,
+    "null_lines": 6,
+    "segments_with_gaps": 275,
+    "lacunae": 551,
+    "restorations": 0,
+    "damage_ratio": 0.851
+  },
+  "seam_flags": 2
+}

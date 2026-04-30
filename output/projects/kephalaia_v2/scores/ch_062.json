@@ -1,0 +1,60 @@
+{
+  "chapter": 62,
+  "title": "Concerning the Three Rocks",
+  "total_lines": 24,
+  "non_null_lines": 24,
+  "scores_mean": {
+    "cosmological_substrate": 15.15,
+    "apostolic_dialogue": 7.29,
+    "manichaean_ecclesial": 5.85,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "scores_total": {
+    "cosmological_substrate": 363.69,
+    "apostolic_dialogue": 175.0,
+    "manichaean_ecclesial": 140.47,
+    "manichaean_polemic": 0.0,
+    "hortatory_application": 0.0
+  },
+  "features": {
+    "teaching_purity": 0.535,
+    "editorial_fatigue_score": -2.11,
+    "editorial_fatigue_detail": {
+      "cosmological_substrate": {
+        "first_half": 11.11,
+        "second_half": 19.2,
+        "shift": 8.09
+      },
+      "apostolic_dialogue": {
+        "first_half": 14.58,
+        "second_half": 0.0,
+        "shift": -14.58
+      },
+      "manichaean_ecclesial": {
+        "first_half": 2.78,
+        "second_half": 8.93,
+        "shift": 6.15
+      },
+      "manichaean_polemic": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      },
+      "hortatory_application": {
+        "first_half": 0.0,
+        "second_half": 0.0,
+        "shift": 0.0
+      }
+    }
+  },
+  "damage": {
+    "total_lines": 24,
+    "null_lines": 0,
+    "segments_with_gaps": 14,
+    "lacunae": 17,
+    "restorations": 0,
+    "damage_ratio": 0.583
+  },
+  "seam_flags": 1
+}
