@@ -1,0 +1,119 @@
+{
+  "teaching": 80,
+  "total_gaps_in_core": 10,
+  "gaps_restored": 10,
+  "gaps_unrestorable": 0,
+  "restoration_note": "Teaching describes a single heavenly prosopon bearing two faces (agape vs. love-of-strife) which the powers of heaven habitually refine on account of the Living Soul mingled in them. All ten gaps are small mechanical completions of partially preserved Coptic words (ⲡⲣⲟⲥⲱⲡⲟⲛ, ⲥⲛⲉⲩ, ⲧⲍⲣⲧⲉ, ⲡⲉⲓⲛⲉ, ⲛ̄ⲍⲏⲧⲟⲩ, etc.) and the directional adverb ⲁⲍⲣⲏⲓ̈ ('upward') paired with ⲥⲱⲧϥ̄ 'refine'. Editor proposals are well-constrained by surviving traces, the bilingual mirror, and the two-faces structural formula; all confirmed.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 4537,
+      "chapter": 82,
+      "line": 95,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲛ",
+      "proposed_english": "(s)",
+      "basis": "Completes ⲡⲣⲟⲥⲱⲡⲟⲛ 'face' from preserved ⲡⲣⲟⲥⲱⲡ-; mechanical word-end at line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4538,
+      "chapter": 82,
+      "line": 96,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲛⲉⲩ",
+      "proposed_english": "two",
+      "basis": "The teaching's structural formula (cf. §4541 'ⲥⲛⲉⲩ ⲡⲡⲣⲟⲥⲱⲡⲟⲛ' — two faces) requires the enumeration 'two: in the face of agape and the face of [fear]'. Lycopolitan ⲥⲛⲉⲩ from lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4538,
+      "chapter": 82,
+      "line": 96,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲛ ⲛ̄",
+      "proposed_english": "of",
+      "basis": "Completes ⲡⲣⲟⲥⲱⲡⲟⲛ ⲛ̄- 'face of-' before the genitive that continues into §4539 with ⲧⲍⲣⲧⲉ 'fear'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4539,
+      "chapter": 82,
+      "line": 97,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "proposed_english": "the ",
+      "basis": "Feminine article ⲧ- completing ⲧⲍⲣⲧⲉ 'the fear' (paired contrastively with ⲧⲁⲅⲁⲧⲏ in the previous line).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4539,
+      "chapter": 82,
+      "line": 97,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉⲩ",
+      "proposed_english": "two ",
+      "basis": "Trace ⲥ- + 'faces' demands ⲥⲛⲉⲩ 'two'; matches the structural formula of two faces revealed from one prosopon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4540,
+      "chapter": 82,
+      "line": 98,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱⲃⲉ",
+      "proposed_english": "all",
+      "basis": "Trace ⲉⲧⲭ- + English 'sm-' fits qualitative ⲉⲧⲭⲱⲃⲉ 'that is small/weak'; describes the soul's diminished/mingled state in the heavenly powers.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 6,
+      "section": 4541,
+      "chapter": 82,
+      "line": 99,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ̄",
+      "proposed_english": "the ",
+      "basis": "Trace ⲡ-...-ⲉⲓⲛⲉ requires ⲡ̄ⲉⲓⲛⲉ 'the likeness'; with ⲥⲛⲉⲩ following: 'in the All — for in the likeness, two: the face of A-(gape)…'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 4543,
+      "chapter": 82,
+      "line": 101,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲛ ⲛ̄",
+      "proposed_english": "ce of",
+      "basis": "Continuation from §4542 ⲡⲧⲕⲉⲡⲣⲟⲥⲱ- 'the other fa-'; completes ⲡⲣⲟⲥⲱⲡⲟⲛ ⲛ̄- governing ⲧⲙⲛⲧⲭⲁⲓⲙⲗⲁⲍ ('face of the love-of-strife').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 4543,
+      "chapter": 82,
+      "line": 101,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍⲣⲏⲓ̈",
+      "proposed_english": "upward",
+      "basis": "Lycopolitan ⲁⲍⲣⲏⲓ̈ = Sahidic ⲉϩⲣⲁⲓ̈; pairs with ⲥⲱⲧϥ̄ 'refine' to give 'refine upward', the regenerative extraction of the Living Soul (cf. lexicon: 'purify' / 'convey upward').",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 9,
+      "section": 4544,
+      "chapter": 82,
+      "line": 102,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲍⲏⲧ",
+      "proposed_english": "from them — ",
+      "basis": "Trace -ⲟⲩ + 3pl referent in context yields ⲛ̄ⲍⲏⲧⲟⲩ 'from them' (Lyc. = Sah. ⲛ̄ϩⲏⲧⲟⲩ); the heavenly powers refine the strife out of themselves.",
+      "confidence": "high"
+    }
+  ]
+}

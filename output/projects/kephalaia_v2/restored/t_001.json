@@ -1,0 +1,130 @@
+{
+  "teaching": 1,
+  "total_gaps_in_core": 11,
+  "gaps_restored": 10,
+  "gaps_unrestorable": 1,
+  "restoration_note": "Creation-fall fragment describing the proprium's first formation: cosmic clash → mingling → Hyle's bringing-forth → molding of Adam in the Deep → Adam eating from the bitter tree. Editor restorations confirmed for the polemos/mystery/Pllaste/First Man/suffix-pronoun formulae which are tightly constrained by Coptic grammar and standard Manichaean phraseology. Two pure lacunae: {2} restored as ⲙⲗⲁⲍ (4 chars; appositional 'great battle, the battle that...'), {4} as ⲧⲏⲣϥ̄ (standard collocation 'this whole cosmos', low confidence). {7} (8 chars, partial ⲁ) left unrestorable — too many candidates for Hyle's bringing-forth (her abortions / her moldings / of death / of the cosmos) cannot be discriminated by the trace alone.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 1,
+      "chapter": 1,
+      "line": 176,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲙ̄",
+      "proposed_english": "fi",
+      "basis": "Editor restoration ⲙ̄ⲙ̄ϣⲉ ('of fighting'). The genitive prefix ⲙ̄ⲙ̄- before ϣⲉ is grammatically required and aligns with 'mystery of the clash of fighting'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1,
+      "chapter": 1,
+      "line": 176,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲙⲟⲥ",
+      "proposed_english": "r",
+      "basis": "Editor restoration completing the Greek loanword ⲡⲡⲟⲗⲉⲙⲟⲥ ('the war'), the standard lexicon term for cosmic wars-and-salvations. Fully constrained.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 2,
+      "chapter": 1,
+      "line": 177,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲗⲁⲍ",
+      "proposed_english": "battle, ",
+      "basis": "4-char lacuna in 'ⲡⲛⲁⲟ̄ ⲛ___ⲡⲙ̄ⲗⲁⲍ'. Appositional structure with following ⲡⲙ̄ⲗⲁⲍ supports repetition of the noun ⲙⲗⲁⲍ ('battle/war'), giving 'the great battle, the battle that the Darkness unleashed forth'. Char count fits exactly.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 3,
+      "section": 2,
+      "chapter": 1,
+      "line": 177,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲥⲱⲥ",
+      "proposed_english": "ward",
+      "basis": "Editor restoration completing the standard temporal connector ⲙⲛⲛⲥⲱⲥ ('afterward'). Fixed formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 3,
+      "chapter": 1,
+      "line": 179,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲏⲣϥ̄",
+      "proposed_english": "entire",
+      "basis": "4-char lacuna following ⲡⲓ̈ⲕⲟⲥⲙⲟⲥ. Standard Coptic collocation ⲡⲓⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϥ̄ ('this whole cosmos') fits character count and the lexicon's emphasis on 'cosmos' as the complete arena of mingled state into which Darkness was drawn up. Other completions possible (e.g. continuation into next clause); marking low.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 4,
+      "chapter": 1,
+      "line": 181,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲟⲩ",
+      "proposed_english": "god",
+      "basis": "Editor restoration ⲛ̄ⲛⲟⲩⲧⲉ ('the gods of the Light'). The visible -ⲧⲉ suffix and plural ⲛⲍⲏⲧⲟⲩ ('in them') confirm a plural divine subject — the standard Manichaean 'gods of the Light' who indwell the captive powers, corresponding to the Living Soul / Five Sons dispersed for refinement.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4,
+      "chapter": 1,
+      "line": 181,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲓ̈ⲛⲉ ⲁⲃⲁⲗ",
+      "proposed_english": "ht forth",
+      "basis": "Editor restoration completing ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲁⲃⲁⲗ ('the Light forth') as object of ⲁⲥⲱⲧϥ ('to refine'). Standard refinery-motif: refining the Light out of the dark powers.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5,
+      "chapter": 1,
+      "line": 182,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "8-char lacuna with single partial trace ⲁ following ⲧⲁⲡⲟ ('bringing-forth') of Error/Hyle. Multiple plausible completions naming what she brings forth (ⲛ̄ⲛⲉⲥⲍⲟⲩⲍⲉ 'her abortions', ⲙ̄ⲡⲙⲟⲩ 'of death', ⲙ̄ⲡⲕⲉⲕⲉ 'of darkness', ⲛ̄ⲛⲉⲥⲡⲗⲁⲥⲙⲁ 'her moldings') cannot be discriminated by the single ⲁ trace alone. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 6,
+      "chapter": 1,
+      "line": 183,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲧⲟ̄",
+      "proposed_english": "the mystery of the ",
+      "basis": "Editor restoration ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛ̄ⲧ-ⲁⲡⲗⲁⲥⲥⲉ ('the mystery of the molding'). Parallels 'mystery of the clash' in §1, and 'molding of Adam' is the lexicon's exact phrase for the proprium's first formation in the Deep.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 6,
+      "chapter": 1,
+      "line": 183,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ ⲛⲣⲱ",
+      "proposed_english": "t man",
+      "basis": "Editor restoration completing ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ — but here functioning as the epithet of Adam ('Adam, the first[-formed] man'). The lexicon notes Adam = 'the natural man as molded, the proprium in its first formation'. Fixed formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 7,
+      "chapter": 1,
+      "line": 185,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϥ",
+      "proposed_english": "",
+      "basis": "Editor restoration of the 3ms suffix pronoun on ⲛ̄ⲍⲏⲧ- ('from it'), referring back to the bitter tree. Standard prepositional phrase, fully grammatically constrained.",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "teaching": 33,
+  "total_gaps_in_core": 10,
+  "gaps_restored": 6,
+  "gaps_unrestorable": 4,
+  "restoration_note": "The teaching enumerates the Five Works the Living Spirit built into the conquered archons' bodies (bearing-disc on Omophoros, Pillar of Glory, molding of the Gehennas, pillars in the great sea, four walls around strongholds). The strongest constraints are the parallel ordinal formulae ⲧⲧϣⲁⲣⲡ / ⲧⲧⲙⲁⲍⲥⲛⲉⲩ / ⲧⲧⲙⲁⲍϣⲁⲙⲧ / ⲧⲧⲙⲁⲍϩⲧⲁⲩ / ⲧⲧⲙⲁⲍϯⲟⲩ, which fix gaps {3} and {5}; the editor's enumeration-anticipation fills {0} and {1}; gap {4} is fixed by the article required before ⲥⲧⲩⲗⲟⲥ. Gap {2} (modifier of ⲍⲃⲉ 'shoulder'), {6}/{7} (line-break artifacts within ⲡⲙⲁ and ⲡⲙⲟⲩⲛⲕ but possibly real damage), {8} (unspecified determiner of ⲛⲥⲧⲩⲗⲟⲥ — number not fixed by the reading), and {9} (number-form before ⲥⲁϣϩⲉ ⲛⲧⲁⲓ̈ⲉ̣) lack sufficient constraint to fill responsibly. {9} is given a low-confidence proposal as ⲡⲙⲁⲍ since ordinal morphology is the only natural fit.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 1910,
+      "chapter": 33,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ ϯⲟⲩ",
+      "proposed_english": "five",
+      "basis": "Editor's restoration ⲥⲙ̄[ⲛ̄ ϯⲟⲩ] 'established five' fits perfectly: the title speaks of 'the Five Things,' and the body enumerates exactly five ordinals (first–fifth). Five is the Manichaean measure of complete natural-rational order (lexicon: 'Five').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1911,
+      "chapter": 33,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ ⲍⲛ̄ ⲛ̄ⲥⲱⲙⲁ",
+      "proposed_english": "in the bodies",
+      "basis": "Editor's restoration completes ⲁⲛⲧⲉⲗ[ⲙ] (canals) and matches the title's ⲍⲛ ⲛⲥⲱⲙⲁ ⲛⲛⲁⲣⲭⲱⲛ 'in the bodies of the archons.' The reading explicitly identifies veins and canals as 'the channels of communication that exist in the bound powers of self-love' through which the Living Spirit works in the bodies.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 2,
+      "section": 1913,
+      "chapter": 33,
+      "line": 7,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "The gap stands between ⲁⲭⲛ (= ⲉϫⲛ 'upon') and ⲍⲃⲉ 'shoulder' on the next line. It could be a definite article ⲧ-, a modifier such as 'right' (ⲟⲩⲛⲁⲙ), or simply nothing. No traces, no character count, and no parallel constrain the choice; honest non-restoration is preferable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 3,
+      "section": 1915,
+      "chapter": 33,
+      "line": 9,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲍⲥⲛⲉ",
+      "proposed_english": "",
+      "basis": "Strict parallel with ⲧⲧⲙⲁⲍϩⲧⲁⲩ (fourth) and ⲧⲧⲙⲁⲍϯⲟⲩ (fifth) requires ⲧⲧⲙⲁⲍⲥⲛⲉⲩ for 'the second.' Visible ⲧⲧⲙ̄...ⲩ exactly brackets the missing ⲁⲍⲥⲛⲉ. The English 'second' already represents the word; the gap fills internal Coptic morphology only.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 1915,
+      "chapter": 33,
+      "line": 9,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡ",
+      "proposed_english": "",
+      "basis": "ⲙ̄{4} runs into ⲥⲧⲩⲗⲟⲥ on the next line; ⲙ̄ⲡⲥⲧⲩⲗⲟⲥ 'of the Pillar' is required by Coptic grammar (genitive ⲙ̄ + definite article ⲡ-). The Pillar referenced is the Pillar of Glory, the axis of ascent named in the next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 1917,
+      "chapter": 33,
+      "line": 11,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲧⲧⲙⲁ",
+      "proposed_english": "",
+      "basis": "Parallel formula: surviving ⲍϣⲁⲙⲧ requires the prefix ⲧⲧⲙⲁ- to yield ⲧⲧⲙⲁⲍϣⲁⲙⲧ 'the third,' matching ⲧⲧⲙⲁⲍϩⲧⲁⲩ / ⲧⲧⲙⲁⲍϯⲟⲩ. English 'The third' renders the whole; the gap fills only Coptic morphology.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 1917,
+      "chapter": 33,
+      "line": 11,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "ⲡⲉ ⲡ{6} | ⲙⲁ likely represents a line-break split within ⲡⲙⲁ 'the place' (yielding 'the place of the molding of the Gehennas,' which fits the reading). However, since this is marked as a true unknown gap with no apparatus, and a substantive may have stood here, the safer course is non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 1918,
+      "chapter": 33,
+      "line": 12,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "ⲡⲙⲟⲩ{7}ⲛ̄ⲕ appears to be an internal split of ⲡⲙⲟⲩⲛⲕ 'the molding,' confirmed by the English 'form{7}ation' showing the gap inside one word. If genuine damage rather than line-artifact, the missing material cannot be specified beyond the word's own continuation; mark unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 1919,
+      "chapter": 33,
+      "line": 13,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "proposed_english": null,
+      "basis": "ⲡ{8} ⲛ̄ⲥⲧⲩⲗⲟⲥ requires a head noun or numeral (e.g., ⲡϯⲟⲩ 'five' or ⲡϩⲧⲁⲩ 'four'), but the reading does not specify how many pillars are planted in the great sea, and no traces or parallel from the corpus fix the choice. Honest non-restoration is preferable to inventing a number.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 1920,
+      "chapter": 33,
+      "line": 14,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲙⲁⲍ",
+      "proposed_english": "the",
+      "basis": "ⲍⲛ̄ {9} | ⲥⲁϣϩⲉ ⲛⲧⲁⲓ̈ⲉ̣ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ reads naturally as 'in the seventh kind of the cosmos.' The Lycopolitan ordinal prefix ⲡⲙⲁⲍ- (= Sahidic ⲡⲙⲉϩ-) attached to ⲥⲁϣϥ̄ gives 'the seventh.' Reading explicitly says 'seventh marks fullness in ultimates.' Low confidence because the morpheme could alternatively be ⲡⲙⲁ 'the place' (apposition) — the surface trace decision cannot be confirmed without the manuscript.",
+      "confidence": "low"
+    }
+  ]
+}

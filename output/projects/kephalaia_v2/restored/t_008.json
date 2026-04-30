@@ -1,0 +1,86 @@
+{
+  "teaching": 8,
+  "total_gaps_in_core": 7,
+  "gaps_restored": 7,
+  "gaps_unrestorable": 0,
+  "restoration_note": "Teaching describes Jesus the Son's graduated descent through ten chariots — celestial ship, redemptive Human/tabernacle, Pillar of Glory, Call, Answer, and the five living elements (Air, Wind, Light, Water, Fire) — culminating in unveiling within the cosmic Zone. Most gaps are tightly constrained: {0}, {3}, {4}, {5} are editorial small-fill restorations confirmed by Coptic grammar (temporal clause verb, prepositional phrase, parallel ⲉⲡⲉⲓⲁⲏ-formula matching sections 458/461). {1} is forced by the visible trace and English plural 'worlds.' {2} is well-constrained by the chapter structure: 'he mounted upon ten' followed immediately by 'mounts.' {6} (4 chars + ⲟⲩⲉ plural ending) is restored as ⲥⲙⲟⲧⲟⲩⲉ in low-moderate confidence as the natural doublet to ϩⲱⲣⲃ ('forms/fashions'); the apparatus and parallelism support a plural noun of similar meaning.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓ",
+      "proposed_english": "came",
+      "basis": "Required main verb in ⲛ̄ⲧⲁⲣⲉ- temporal clause: 'when Jesus the Son of the Greatness [came] to the worlds.' ⲉⲓ is the standard Coptic verb of coming/descent and matches the lexicon's ⲉⲓ ⲁⲡⲓⲧⲛⲉ 'descend' family. Editor's proposal is correct and corresponds spiritually to the Lord's accommodating descent into the cosmos that begins this whole arc.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲥ",
+      "proposed_english": "s",
+      "basis": "Visible partial trace 'ⲥ' with 1 char; completes ⲛⲓⲕⲟⲥⲙⲟⲥ (plural 'worlds'), confirmed by English rendering and the standard Coptic plural article ⲛⲓ-. Forced reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 454,
+      "chapter": 8,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲧⲉⲗⲟ ⲁⲙⲏⲧ",
+      "proposed_english": "he mounted upon ten",
+      "basis": "The next line begins ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ ('mounts/chariots'), and the chapter is explicitly about ten chariots (cf. ⲡⲓⲙⲏⲧ ⲛ̄ϩⲁⲣⲙⲁ in §469, §472). The construction 'he mounted upon ten mounts' supplies the governing main clause for the entire enumeration that follows. Editor's proposal correctly identifies ⲁϩⲧⲉⲗⲟ as the verb of mounting and ⲙⲏⲧ as the numeral 'ten' (lexicon: Ten = broader completeness, here total accommodation).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 455,
+      "chapter": 8,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲍⲏⲧⲟⲩ",
+      "proposed_english": "in them",
+      "basis": "Resumptive prepositional phrase referring back to the ten mounts just named: 'he walked in the world in them.' Standard Lycopolitan ⲛ̄ⲍⲏⲧⲟⲩ (= ⲛ̄ϩⲏⲧⲟⲩ). Grammatically forced and parallel to {5} ⲛ̄ⲍⲏⲧϥ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 456,
+      "chapter": 8,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲉⲡⲉⲓⲁⲏ ⲛ̄",
+      "proposed_english": "since",
+      "basis": "Parallel formula confirmed by sections 458 (ⲉⲡⲉⲓ-...ⲁⲏ) and 461 (ⲉⲡⲉⲓ-...ⲁⲏ): each chariot's identification is followed by a causal ⲉⲡⲉⲓⲁⲏ ('since') clause introducing what was received or done in/on it. The final ⲉ also completes ⲟⲩⲁⲓⲛⲉ ('light'). Editor's proposal correct.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 457,
+      "chapter": 8,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲍⲏⲧϥ̄",
+      "proposed_english": "in it",
+      "basis": "Resumptive 'in it' referring to ⲡⲭⲁⲓ ⲛ̄ⲟⲩⲁⲓⲛⲉ (vessel of light, masculine). 'He received commandments from the Ambassador in it' — i.e., in the vessel that is the first chariot. Grammatically forced; parallel to {3} ⲛ̄ⲍⲏⲧⲟⲩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 470,
+      "chapter": 8,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲥⲙⲟⲧ",
+      "proposed_english": "fashions",
+      "basis": "Gap is exactly 4 characters and the visible word ends in -ⲟⲩⲉ (Coptic plural). The construction 'ⲛϩⲱⲣⲃ ⲧⲏⲣⲟⲩ ⲙⲛ̄ ⲛ̄[?]ⲟⲩⲉ ⲧⲏⲣⲟⲩ' calls for a noun parallel/synonymous with ϩⲱⲣⲃ ('forms/figures'). ⲥⲙⲟⲧⲟⲩⲉ (plural of ⲥⲙⲟⲧ 'fashion, manner, kind') fits the four-character slot exactly and supplies the natural doublet. The two together cover all 'fashions and forms, those above and those below' — the totality of cosmic states the Lord's chariots traverse. Lexicon reserves 'form'/'likeness' for ⲙⲟⲣⲫⲏ/ⲡⲉⲓⲛⲉ, so 'fashions' is used here for ⲥⲙⲟⲧ.",
+      "confidence": "low"
+    }
+  ]
+}

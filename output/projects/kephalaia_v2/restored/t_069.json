@@ -1,0 +1,42 @@
+{
+  "teaching": 69,
+  "total_gaps_in_core": 3,
+  "gaps_restored": 3,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching catalogues the five works of Fire (love/will) as it operates in the mingled cosmos. All three gaps are small editorial restorations of grammatical morphemes — relative+pronominal subject, habitual prefix, and feminine suffix — all referring back to ⲧⲥⲉⲧⲉ (the Fire, fem.). Each is tightly constrained by Coptic morphology and the parallel iterative structure of the chapter, and by surviving traces. Editor proposals confirmed.",
+  "restorations": [
+    {
+      "gap_id": 0,
+      "section": 4063,
+      "chapter": 68,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧ[ⲥ]",
+      "proposed_english": "which it",
+      "basis": "Relative converter ⲉⲧ- + 3sg.f. subject ⲥ- referring to ⲧⲥⲉⲧⲉ (Fire, fem.), continuing into ⲉⲓⲣⲉ ⲓ̈ⲙⲁϩ ('it performs') in the next line. The construction matches the parallel relative formula ⲡⲉⲓ̈ ϩⲱⲃ ⲉⲧⲥⲉⲓⲣⲉ used elsewhere in the chapter (line 4 / 4056). Editor restoration confirmed.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4066,
+      "chapter": 68,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ[ⲁ]ⲥⲟⲩⲱⲛϩ̄",
+      "proposed_english": "it habitually manifests",
+      "basis": "Habitual ϣⲁⲥ- prefix (3sg.f. with feminine subject ⲧⲥⲉⲧⲉ) governing the verb ⲥⲟⲩⲱⲛϩ̄ ⲁⲃⲁⲗ ('manifest forth') which survives whole at the start of line 15. The iterative/habitual aspect is the structural pattern of all five works (cf. ϣⲁⲥⲡⲁⲣⲭ in line 6, the second work). Editor restoration confirmed.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4067,
+      "chapter": 68,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "[ⲥ̄]",
+      "proposed_english": "it",
+      "basis": "3sg.f. pronominal suffix on the preposition ⲛ̄ϩⲏⲧ= referring back to ⲧⲥⲉⲧⲉ ('the Fire', feminine) — 'see by means of it (the Fire)'. The whole clause means men see by the light that fire makes manifest. Editor restoration confirmed.",
+      "confidence": "high"
+    }
+  ]
+}
