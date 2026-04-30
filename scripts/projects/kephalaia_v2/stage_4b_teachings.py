@@ -43,11 +43,12 @@ CORE_DIR = PROJECT_DIR / "core"
 
 SYSTEM_PROMPT = """\
 You are an expert in the textual criticism of ancient composite texts, \
-with deep specialization in the correspondential tradition — the science \
-of describing spiritual realities through their natural expressions. You \
-have mastered Swedenborg's doctrine of correspondences, the Persian and \
-Zoroastrian mēnōg/gētīg ontology, Manichaean cosmology, and the textual \
-transmission of what Swedenborg called "the Ancient Word."
+with deep specialization in the correspondential tradition — the \
+science of describing spiritual realities through their natural \
+expressions. You have mastered Swedenborg's doctrine of \
+correspondences, the Persian mēnōg/gētīg ontology, Manichaean \
+cosmology, and the textual transmission of what Swedenborg called \
+"the Ancient Word."
 
 ## WHAT YOU ARE LOOKING AT
 
@@ -55,71 +56,111 @@ The text you receive is the **oldest teaching substrate** of the Coptic \
 Kephalaia of the Teacher — already extracted from its editorial \
 compilation. Editorial framing, exhortation, institutional material, \
 and later Manichaean additions have been removed. What remains is the \
-Persian and Bene Qedem substrate: impersonal cosmological- \
-correspondential teaching that maps domain onto domain, being onto \
-being, degree onto degree.
-
-The substrate has a distinctive quality: **both sides of every mapping \
-stay within the cosmic system.** It maps realm → zoomorphic form, \
-being → metal, faculty → element, body → cosmic structure. The voice \
-is impersonal, structural, systematic — "how things work." It expounds \
-directly.
+Persian and Bene Qedem substrate: cosmological-correspondential \
+teaching expressed through natural and cosmic imagery.
 
 Each line is prefixed with a continuous section number [§N] running \
-from §1 to the end of the corpus. This is a smooth unbroken sequence \
-with no gaps. Lacunae within the Coptic are rendered as {N} \
-placeholders. Lines that are completely destroyed have been omitted.
+from §1 to the end of the corpus. Lacunae within the Coptic are \
+rendered as {N} placeholders. Lines that are completely destroyed have \
+been omitted.
+
+The corpus is divided by `---` markers which indicate the locations \
+of chapter boundaries placed by the ancient Manichaean editors. These \
+are structural signals — most represent genuine teaching boundaries, \
+but some are editorial artifacts (a single teaching may occasionally \
+span a `---` if its arc continues across the marker). Use them as \
+strong hints, not absolute rules.
+
+## HOW TO READ A CORRESPONDENTIAL TEACHING
+
+This is the critical instruction. Do NOT read the text literally. \
+The cosmological imagery — realms, elements, beings, body parts, \
+wheels, pillars, ships — is the **outer shell**. It is correspondence. \
+Each natural image expresses a spiritual reality through its actual \
+function. What the text is ACTUALLY teaching lives inside the imagery.
+
+When the text describes "five worlds of darkness, each with its king \
+and its element," it is not teaching you zoology or geography. It is \
+teaching how evil stratifies into discrete degrees, each with its own \
+ruling principle and mode of operation. The five kings ARE the five \
+modes of self-love, expressed through their animal forms.
+
+When it describes "the First Man going forth and being swallowed, and \
+then the Living Spirit coming to rescue him," it is teaching one \
+complete spiritual process: how truth descends into the natural \
+degree, is overcome by falsity there, and is then retrieved by a \
+higher operation. The First Man, the swallowing, the Living Spirit — \
+these are all stations in ONE arc.
+
+A **correspondential teaching** is therefore a text that tells ONE \
+complete spiritual story from beginning to end, using cosmological \
+imagery as its vehicle. The story has an arc. It introduces a \
+situation, develops it through its stages, and arrives at completion.
 
 ## YOUR TASK
 
 Read the substrate and identify where each individual \
-**correspondential teaching** begins. A teaching is a self-contained \
-unit that takes ONE subject and maps it — describing its structure, \
-its parts, its correspondences to other domains, its place in the \
-cosmic architecture.
+correspondential teaching begins. A teaching is a self-contained \
+unit that delivers ONE complete spiritual truth through its \
+cosmological imagery.
 
-This is what the Kephalaia calls a "kephalaion" — a chapter of the \
-teaching. Each kephalaion IS a correspondential mapping: it takes a \
-subject ("Concerning the Five Worlds of Darkness," "Concerning the \
-Wheel," "Concerning the Body of the First Man") and expounds that \
-subject's cosmological structure through correspondence.
+### HOW TO IDENTIFY ONE TEACHING
 
-### WHAT CONSTITUTES ONE TEACHING
+Ask: "What is this passage actually teaching — what spiritual \
+truth is being expressed through these images?" The answer to that \
+question defines the teaching unit.
 
-A teaching develops ONE correspondential mapping through as many \
-lines as it takes. It may span many pages. Examples:
-- "The Five Worlds of Darkness" — maps five realms, their kings, \
-  their faces, their elements, their modes
-- "The Wheel and its Zones" — maps the wheel's structure, \
-  what each zone does, how they relate to purification
-- "The Body of the First Man and his Five Sons" — maps body \
-  parts to cosmic powers
-- "The Three Days" — maps three temporal phases to three \
-  processes of transformation
+A teaching runs for as many lines as it takes to complete its arc. \
+It may enumerate parts (First... Second... Third...) — these are \
+STAGES WITHIN the same arc, not separate teachings. The Five \
+Salvations is ONE teaching about how light is progressively freed \
+from captivity. The Three Days is ONE teaching about temporal \
+process. Enumerations develop the arc; they do not break it.
 
-A teaching ends when the mapping is complete and the text moves \
-to a DIFFERENT subject — a different thing being mapped.
+A teaching ends when its spiritual arc completes and a genuinely \
+DIFFERENT truth begins to be told. The subject of the teaching is \
+not "the First Man" or "the Wheel" — those are images. The subject \
+is the spiritual process being described through those images. A \
+new teaching begins only when that process is complete and a new, \
+unrelated process starts.
+
+### BOUNDARY SIGNALS (strong to weak)
+
+1. **Title phrase** in the Coptic: "Concerning X" / "The Chapter \
+   of X" / ⲉⲧⲃⲉ + noun phrase — almost always a true boundary
+2. **`---` marker** (chapter boundary): strong signal. Most mark \
+   genuine teaching boundaries. Override only if the spiritual arc \
+   clearly continues unbroken across the marker.
+3. **Complete subject change**: the spiritual process being taught \
+   changes entirely (from "how purification works" to "how the \
+   body is structured")
 
 ### WHAT IS NOT A BOUNDARY
 
-- A paragraph break within a single mapping
-- An enumeration continuing (First... Second... Third... within \
-  the SAME subject)
-- A sub-aspect of the larger mapping (e.g. "the eyes of the King" \
-  is part of "the King of Darkness," not a separate teaching)
+- An enumeration continuing within the same arc (First Salvation \
+  → Second Salvation → Third... is ONE teaching)
+- A sub-component of the larger structure (the eyes of the King \
+  of Darkness is part of the teaching on the King of Darkness)
+- A new metaphor illustrating the same process
+- A paragraph break or transition within a single teaching
 
-### WHAT IS A BOUNDARY
+### GUIDANCE ON THE `---` MARKERS
 
-- The subject itself changes (from "the Wheel" to "the Pillar")
-- A new correspondential mapping begins (from mapping the body to \
-  mapping the firmaments)
-- A title phrase appears ("Concerning X" / "The Chapter of X")
+- If a `---` appears AND the spiritual subject changes: boundary.
+- If a `---` appears but the SAME spiritual arc continues \
+  uninterrupted (rare): do NOT split. Mark confidence "low" on \
+  the next boundary you do identify.
+- If NO `---` appears but the text clearly shifts to a wholly \
+  different spiritual subject mid-chapter: still mark a boundary, \
+  but this should be rare.
 
 ### WHAT TO OUTPUT
 
 For each teaching you identify, provide:
 - The §N section number where it STARTS
-- A brief title describing what is being mapped (in English)
+- A brief title describing what is being TAUGHT (the spiritual \
+  content, not just the imagery). E.g. "How light is freed from \
+  captivity through five stages" rather than just "Five Salvations."
 - Your confidence (high/moderate/low)
 
 Call commit_teachings once with the complete list."""
@@ -216,12 +257,26 @@ def format_corpus(chapters: list[dict]) -> tuple[str, list[dict]]:
         mapping each §(i+1) back to its original manuscript location.
 
     Only includes segments classified as cosmological_substrate or mixed.
+    Inserts `---` between chapters as structural markers.
     """
     parts: list[str] = []
     section_map: list[dict] = []  # index i → §(i+1)
+    prev_chapter_had_content = False
 
     for ch in chapters:
         cn = ch["chapter_num"]
+        chapter_has_content = any(
+            seg.get("classification", "") in ("cosmological_substrate", "mixed")
+            and seg.get("core_coptic")
+            for seg in ch["segments"]
+        )
+        if not chapter_has_content:
+            continue
+
+        # Insert separator between chapters (not before the first)
+        if prev_chapter_had_content:
+            parts.append("---")
+
         for seg in ch["segments"]:
             cls = seg.get("classification", "")
             if cls not in ("cosmological_substrate", "mixed"):
@@ -233,6 +288,8 @@ def format_corpus(chapters: list[dict]) -> tuple[str, list[dict]]:
             n = len(section_map) + 1
             parts.append(f"[§{n}] {coptic}")
             section_map.append({"section": n, "chapter": cn, "line": line_i})
+
+        prev_chapter_had_content = True
 
     return "\n".join(parts), section_map
 
