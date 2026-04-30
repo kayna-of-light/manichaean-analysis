@@ -1,34 +1,28 @@
 #!/usr/bin/env python3
 """
-Bilingual restoration of lacunae in core teaching segments.
+Teaching-level bilingual restoration of lacunae in core segments.
 
 Pipeline stage 6: runs AFTER stage_5_read.py, BEFORE stage_7_review.py.
 
-This stage uses the correspondential reading (Stage 4) as semantic
-context to propose restorations for gaps ({N} placeholders) in the
-core teaching. Each restoration includes:
-- Proposed Coptic
-- Proposed English
-- Basis (why this reading: spiritual context, traces, parallels)
-- Confidence level
-
-Only gaps in CORE segments (substrate/mixed) are restored.
-Non-core gaps are irrelevant to the teaching and skipped.
+This stage restores gaps in assembled teaching files, not page files. It
+uses Coptic and English core text, stage 5 correspondential readings, the
+pre-reading spiritual lexicon, and the original apparatus metadata that
+stage 4c carries forward into each teaching segment.
 
 Input:
-  - output/projects/kephalaia_v2/pages/p_NNN.json    (translation)
-  - output/projects/kephalaia_v2/core/p_NNN.json     (extraction)
-  - output/projects/kephalaia_v2/readings/p_NNN.json (reading)
+  - output/projects/kephalaia_v2/teachings/t_NNN.json
+  - output/projects/kephalaia_v2/readings/t_NNN.json
+  - output/projects/kephalaia_v2/spiritual_lexicon.json (optional)
 
 Output:
-  - output/projects/kephalaia_v2/restored/p_NNN.json
+  - output/projects/kephalaia_v2/restored/t_NNN.json
 
 Usage:
-    python scripts/projects/kephalaia_v2/restore.py
-    python scripts/projects/kephalaia_v2/restore.py --page 35
-    python scripts/projects/kephalaia_v2/restore.py --range 10-50
-    python scripts/projects/kephalaia_v2/restore.py --dry-run
-    python scripts/projects/kephalaia_v2/restore.py --max-concurrency 4
+    python scripts/projects/kephalaia_v2/stage_6_restore.py
+    python scripts/projects/kephalaia_v2/stage_6_restore.py --page 5
+    python scripts/projects/kephalaia_v2/stage_6_restore.py --range 1-20
+    python scripts/projects/kephalaia_v2/stage_6_restore.py --dry-run
+    python scripts/projects/kephalaia_v2/stage_6_restore.py --max-concurrency 32
 """
 import json
 import re
@@ -37,14 +31,14 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from pipeline_base import (
-    PipelineStage,
-    PAGES_DIR,
-    PROJECT_DIR,
-)
+from pipeline_base import PipelineStage, PROJECT_DIR  # noqa: E402
+from stage_5_read import format_lexicon_summary  # noqa: E402
 
-CORE_DIR = PROJECT_DIR / "core"
+TEACHINGS_DIR = PROJECT_DIR / "teachings"
 READINGS_DIR = PROJECT_DIR / "readings"
+SPIRITUAL_LEXICON_PATH = PROJECT_DIR / "spiritual_lexicon.json"
+
+LACUNA_RE = re.compile(r"\{(\d+)\}")
 
 
 # ---------------------------------------------------------------------------
@@ -54,86 +48,82 @@ READINGS_DIR = PROJECT_DIR / "readings"
 RESTORE_TOOL = {
     "name": "commit_restorations",
     "description": (
-        "Commit all proposed gap restorations for this page. "
+        "Commit all proposed gap restorations for this teaching. "
         "Call exactly once."
     ),
     "input_schema": {
         "type": "object",
         "properties": {
-            "page": {
+            "teaching": {
                 "type": "integer",
-                "description": "The manuscript page number.",
+                "description": "The teaching number.",
             },
             "total_gaps_in_core": {
                 "type": "integer",
-                "description": (
-                    "Total {N} placeholders found in core segments."
-                ),
+                "description": "Total unique {N} gaps in core segments.",
             },
             "gaps_restored": {
                 "type": "integer",
-                "description": (
-                    "Number of gaps for which a restoration is "
-                    "proposed (may be less than total if some are "
-                    "unrestorable)."
-                ),
+                "description": "Number of gaps with proposed restorations.",
             },
             "gaps_unrestorable": {
                 "type": "integer",
-                "description": (
-                    "Gaps with insufficient context for restoration."
-                ),
+                "description": "Number of gaps deliberately left unrestored.",
             },
             "restoration_note": {
                 "type": "string",
                 "description": (
-                    "Brief assessment of overall restoration "
-                    "confidence. Any patterns or challenges?"
+                    "Brief assessment of the teaching's restoration logic: "
+                    "what system is being described, what constrained the "
+                    "fills, and what remained too damaged."
                 ),
             },
             "restorations": {
                 "type": "array",
-                "description": (
-                    "Proposed restorations for each gap in core "
-                    "segments."
-                ),
+                "description": "One decision for each unique gap in core text.",
                 "items": {
                     "type": "object",
                     "properties": {
                         "gap_id": {
                             "type": "integer",
-                            "description": (
-                                "The apparatus ID matching {N} in text."
-                            ),
+                            "description": "The ID matching {N} in the teaching.",
                         },
-                        "segment_i": {
+                        "section": {
                             "type": "integer",
-                            "description": (
-                                "The segment index containing this gap."
-                            ),
+                            "description": "The section containing the gap.",
+                        },
+                        "chapter": {
+                            "type": "integer",
+                            "description": "Source chapter number.",
+                        },
+                        "line": {
+                            "type": "integer",
+                            "description": "Source chapter line index.",
+                        },
+                        "gap_type": {
+                            "type": "string",
+                            "description": "Apparatus type: lacuna, restoration, or unknown.",
                         },
                         "proposed_coptic": {
                             "type": ["string", "null"],
                             "description": (
-                                "Proposed Coptic restoration. Null if "
-                                "unrestorable."
+                                "Proposed Coptic fill only, without {N}. "
+                                "Null if unrestorable."
                             ),
                         },
                         "proposed_english": {
                             "type": ["string", "null"],
                             "description": (
-                                "Proposed English restoration. Null if "
-                                "unrestorable."
+                                "Proposed English fill only, without {N}. "
+                                "Null if unrestorable."
                             ),
                         },
                         "basis": {
                             "type": "string",
                             "description": (
-                                "Why this reading is proposed: "
-                                "spiritual context from the reading, "
-                                "surviving letter traces (partial), "
-                                "parallel passages, grammatical "
-                                "constraints, formulaic patterns."
+                                "Why this decision fits: spiritual anchor, "
+                                "Coptic grammar, traces, character count, "
+                                "parallel formula, or reason for skipping."
                             ),
                         },
                         "confidence": {
@@ -142,16 +132,14 @@ RESTORE_TOOL = {
                                 "high", "moderate", "low", "unrestorable",
                             ],
                             "description": (
-                                "'high' = strong constraints determine "
-                                "the reading. 'moderate' = good fit but "
-                                "alternatives possible. 'low' = best "
-                                "guess only. 'unrestorable' = insufficient "
-                                "context."
+                                "high = strongly constrained; moderate = "
+                                "good fit with alternatives; low = weak but "
+                                "still useful; unrestorable = no fill."
                             ),
                         },
                     },
                     "required": [
-                        "gap_id", "segment_i",
+                        "gap_id", "section", "chapter", "line", "gap_type",
                         "proposed_coptic", "proposed_english",
                         "basis", "confidence",
                     ],
@@ -159,7 +147,7 @@ RESTORE_TOOL = {
             },
         },
         "required": [
-            "page", "total_gaps_in_core", "gaps_restored",
+            "teaching", "total_gaps_in_core", "gaps_restored",
             "gaps_unrestorable", "restoration_note", "restorations",
         ],
     },
@@ -173,75 +161,96 @@ RESTORE_TOOL = {
 SYSTEM_PROMPT = """\
 You are an expert in the doctrine of correspondences as written by \
 Emanuel Swedenborg, with deep specialization in ancient cosmological \
-vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions. \
+vocabulary: Zoroastrian, Manichaean, Persian-Iranian, Syriac, and Coptic. \
 You are also an expert Coptologist specializing in the Lycopolitan \
 (sub-Achmimic) dialect.
 
-You are restoring lacunae in the oldest teaching substrate of the \
-Coptic Kephalaia. The text has gaps marked with numbered placeholders \
-{0}, {1}, etc. Your task is to fill these gaps using:
+You are restoring lacunae in the oldest teaching substrate of the Coptic \
+Kephalaia. The text has gaps marked with numbered placeholders like {0}, \
+{1}, {2}. Your task is not to guess missing words from English alone. Your \
+task is to use the spiritual reading to identify what reality belongs at \
+the gap, then translate that reality back into the Kephalaia's own \
+natural-plane Coptic vocabulary.
 
-1. **The correspondential reading** — a spiritual-sense translation that \
-   shows WHAT spiritual reality each passage describes. The gaps appear \
-   in the reading at their natural positions, anchoring the spiritual \
-   context to the physical gap.
+## WHAT YOU RECEIVE
 
-2. **The apparatus** — which tells you the TYPE of each gap:
-   - **lacuna** (est_chars): text is physically lost. You know \
-     approximately how many characters are missing.
-   - **restoration** (coptic, english, basis): an editor already \
-     proposed a reading. REVIEW it through the correspondential lens. \
-     Confirm if it fits the spiritual sense, or propose a better word.
+You receive:
 
-3. **Surviving traces** — when the apparatus includes "partial" text, \
-   these are visible letter fragments that constrain the restoration.
-
-4. **Grammatical constraints** — Coptic morphology limits what can fit. \
-   A gap after ⲡ- must be a masculine singular noun. A gap after ⲉ- \
-   must be an infinitive or circumstantial clause.
+1. **The core teaching text** with Coptic and English side by side.
+2. **The apparatus** for each gap, including lacuna/restoration type, \
+   estimated character count, partial traces, and existing editorial fills.
+3. **The correspondential reading** from stage 5, where each gap marker is \
+   preserved in spiritual prose at the corresponding position.
+4. **The spiritual lexicon** when available, giving stable vocabulary for \
+   the corpus.
 
 ## RESTORATION METHOD
 
-For each gap in a core segment:
+Before deciding fills, identify the Swedenborgian system being described \
+in this teaching. The spiritual reading tells you WHAT spiritual reality \
+the passage expresses. The restoration must then express that spiritual \
+reality in the text's own natural/cosmological register.
 
-1. Find the gap in the spiritual reading → understand what spiritual \
-   reality belongs at this position
-2. Check the apparatus → know the gap type, size, and any traces
-3. Translate the spiritual reality BACK into the text's own vocabulary — \
-   the natural-plane language of the Kephalaia
-4. Verify: does the Coptic form fit grammatically? Does the character \
-   count match est_chars? Do surviving traces match?
-5. If multiple candidates exist, choose the one most consistent with \
-   the teaching's register and the specific correspondential pattern
+For each gap:
+
+1. Locate the {N} marker in the Coptic and English core text.
+2. Locate the same {N} marker in the spiritual reading, if present.
+3. Read the local spiritual reality: what belongs there in the inner sense?
+4. Translate that reality back into the Kephalaia's natural-plane terms.
+5. Check the apparatus: type, estimated characters, traces, and editor fill.
+6. Check Coptic grammar: article, status constructus, prepositions, and \
+   dialect morphology.
+7. If the fill is not constrained, mark it unrestorable.
 
 ## COPTIC CONSTRAINTS
 
-- Lycopolitan dialect (sub-Achmimic): ⲁ for Sahidic ⲟ, ⲉⲓ for Sahidic ⲏ
-- Greek loanwords are common for technical terms
-- Status constructus forms are common before nouns
-- The definite article system: ⲡ-/ⲧ-/ⲛ- (m/f/pl)
-- Conjugation bases: ⲁϥ- (past), ϥ- (present), ⲉϥⲉ- (future)
+- Lycopolitan/sub-Achmimic dialect: ⲁ often corresponds to Sahidic ⲟ; \
+  ⲉⲓ often corresponds to Sahidic ⲏ.
+- Greek loanwords are common for technical terms.
+- Status constructus forms are common before nouns.
+- Definite articles matter: ⲡ-/ⲧ-/ⲛ- constrain gender and number.
+- Prepositions matter: ⲁⲃⲁⲗ, ⲛ̄, ϩⲛ̄, ⲁ-/ⲉ- often constrain whether a \
+  noun, infinitive, or clause can fit.
+- Estimated character count matters. A proposed Coptic fill should fit the \
+  approximate length unless the apparatus is clearly uncertain.
+- Visible partial traces are binding. A proposed Coptic fill must include \
+  the visible letters in the right position.
 
-## RULES
+## RESTORATION POLICY
 
-1. **Bilingual output required.** Every restoration must include BOTH \
-   proposed Coptic and proposed English.
-2. **Character count matters.** For lacunae with est_chars, your Coptic \
-   restoration should approximately match the character count.
-3. **Traces constrain.** When partial text is given, your restoration \
-   must include those visible letters at the correct position.
-4. **Editor restorations are not sacred.** When the apparatus includes \
-   a "restoration" type entry, the editor proposed a reading. Review it. \
-   If it fits the spiritual sense, confirm it. If the spiritual reading \
-   suggests something better, propose the better word with explanation.
-5. **Unrestorable is honest.** If a gap has no constraining context \
-   (isolated lacuna, no surrounding text, no reading), mark it as \
-   unrestorable rather than guessing.
-6. **Keep the register.** The teaching uses specific cosmic vocabulary — \
-   do not substitute generic words when a specific cosmic term exists.
-7. **Preserve {N} placeholders** in your thinking but fill them in the \
-   output. The proposed_coptic and proposed_english fields contain the \
-   FILL only, not the placeholder marker.
+- **Restoration apparatus entries** are editor proposals. Review them \
+  through the correspondential reading. Confirm if they fit; correct them \
+  if the spiritual and Coptic constraints point elsewhere.
+- **Small lacunae** should be restored when grammar and spiritual context \
+  constrain the fill.
+- **Medium lacunae** should be restored only when a formula, parallel, or \
+  strong structural pattern constrains them.
+- **Large or weakly constrained lacunae** should be marked unrestorable. \
+  Honest non-restoration is better than a smooth invention.
+- **Bilingual output is required.** Every restored gap must include both \
+  proposed Coptic and proposed English.
+- Proposed fields contain the fill only. Do not include {N} in the output.
+
+## CORRESPONDENTIAL VOCABULARY
+
+Keep the same vocabulary discipline as stage 5:
+
+- Light -> Divine Truth / wisdom-truth
+- Fire -> love/will, or destructive self-love in opposite sense
+- Darkness -> falsity from evil
+- Water -> truth in the natural degree, or falsity in opposite sense
+- Wind/Air -> thought/perception
+- Tree -> perception/knowledge rooted in a state of love
+- Fruit -> works/goods of life
+- Body -> form of love and wisdom in ultimates
+- Face -> presentation of an interior state
+- Stature -> complete form of a spiritual state
+- Ship -> doctrinal/spiritual vessel carrying truth through waters
+- Pillar/Column -> axis of ascent
+- Wheel -> cyclic purification
+
+Use the corpus spiritual lexicon when it is present. Do not improvise new \
+English when a term is fixed there.
 
 When complete, call commit_restorations exactly once."""
 
@@ -250,33 +259,92 @@ When complete, call commit_restorations exactly once."""
 # Helpers
 # ---------------------------------------------------------------------------
 
-def find_gaps_in_core(
-    page_data: dict, core_data: dict,
-) -> list[dict]:
-    """Find all gaps (apparatus entries) that fall in core segments.
+def load_json(path: Path) -> dict | None:
+    """Load JSON if present."""
+    if not path.exists():
+        return None
+    with open(path, encoding="utf-8") as file:
+        return json.load(file)
 
-    Returns a list of apparatus entries whose segment is classified
-    as substrate or mixed in the core extraction.
-    """
-    # Which segments are core?
-    core_segments = set()
-    for seg in core_data.get("segments", []):
-        if seg.get("classification") in ("cosmological_substrate", "mixed"):
-            core_segments.add(seg["i"])
 
-    # Filter apparatus to core segments only
-    apparatus = page_data.get("apparatus", [])
-    core_gaps = []
-    for entry in apparatus:
-        seg_i = entry.get("segment")
-        if isinstance(seg_i, int) and seg_i in core_segments:
-            core_gaps.append(entry)
-        elif seg_i == "header":
-            # Headers can be core too — include if any header content
-            # was classified as core (rare but possible)
-            pass
+def load_lexicon_summary() -> str:
+    """Load and compact the spiritual lexicon for prompt context."""
+    lexicon = load_json(SPIRITUAL_LEXICON_PATH)
+    if not lexicon:
+        return ""
+    return format_lexicon_summary(lexicon)
 
-    return core_gaps
+
+def segment_gap_ids(segment: dict) -> set[int]:
+    """Return unique gap IDs appearing in Coptic or English text."""
+    ids: set[int] = set()
+    for field in ("core_coptic", "core_english"):
+        text = segment.get(field) or ""
+        for match in LACUNA_RE.finditer(text):
+            ids.add(int(match.group(1)))
+    return ids
+
+
+def collect_gaps(teaching: dict) -> list[dict]:
+    """Collect one restoration target per unique teaching-level gap ID."""
+    gaps_by_id: dict[int, dict] = {}
+
+    for segment in teaching.get("segments", []):
+        if segment.get("classification") not in (
+            "cosmological_substrate", "mixed",
+        ):
+            continue
+        gap_ids = segment_gap_ids(segment)
+        if not gap_ids:
+            continue
+
+        apparatus = {
+            entry.get("id"): entry
+            for entry in segment.get("apparatus", [])
+            if isinstance(entry.get("id"), int)
+        }
+        for gap_id in gap_ids:
+            entry = apparatus.get(gap_id, {})
+            gaps_by_id[gap_id] = {
+                "gap_id": gap_id,
+                "section": segment.get("section"),
+                "chapter": segment.get("chapter"),
+                "line": segment.get("line"),
+                "classification": segment.get("classification"),
+                "core_coptic": segment.get("core_coptic") or "",
+                "core_english": segment.get("core_english") or "",
+                "apparatus": entry,
+            }
+
+    return [gaps_by_id[key] for key in sorted(gaps_by_id)]
+
+
+def has_gaps(teaching: dict) -> bool:
+    """Return True if the teaching has any core gaps."""
+    return bool(collect_gaps(teaching))
+
+
+def format_apparatus(entry: dict) -> str:
+    """Format one apparatus entry for the prompt."""
+    if not entry:
+        return "type=unknown; no apparatus entry carried forward"
+    gap_type = entry.get("type", "unknown")
+    if gap_type == "lacuna":
+        parts = ["type=lacuna"]
+        if entry.get("est_chars") is not None:
+            parts.append(f"est_chars={entry.get('est_chars')}")
+        if entry.get("partial"):
+            parts.append(f"partial='{entry.get('partial')}'")
+        return "; ".join(parts)
+    if gap_type == "restoration":
+        coptic = entry.get("coptic", "")
+        english = entry.get("english", "")
+        basis = entry.get("basis", "")
+        return (
+            f"type=restoration; proposed_coptic='{coptic}'; "
+            f"proposed_english='{english}'; basis='{basis}'"
+        )
+    return f"type={gap_type}"
 
 
 # ---------------------------------------------------------------------------
@@ -286,9 +354,13 @@ def find_gaps_in_core(
 class RestoreStage(PipelineStage):
     stage_name = "Restore Lacunae"
     stage_number = 6
-    description = "Bilingual gap-filling using correspondential context"
+    description = "Teaching-level bilingual gap-filling"
     tool_name = "commit_restorations"
     tool_schema = RESTORE_TOOL
+    item_name = "teaching"
+    item_name_plural = "teachings"
+    item_prefix = "t"
+    _lexicon_summary: str | None = None
 
     def get_system_prompt(self) -> str:
         return SYSTEM_PROMPT
@@ -299,114 +371,131 @@ class RestoreStage(PipelineStage):
     def get_output_dir(self) -> Path:
         return PROJECT_DIR / "restored"
 
+    def get_lexicon_summary(self) -> str:
+        if self._lexicon_summary is None:
+            self._lexicon_summary = load_lexicon_summary()
+        return self._lexicon_summary
+
     def list_available(self) -> list[int]:
-        """Pages with readings output."""
-        pages = []
-        for path in sorted(READINGS_DIR.glob("p_*.json")):
-            m = re.match(r"p_(\d+)\.json", path.name)
-            if m:
-                pages.append(int(m.group(1)))
-        return pages
+        """Teachings with readings and at least one core gap."""
+        teachings = []
+        for path in sorted(TEACHINGS_DIR.glob("t_*.json")):
+            match = re.match(r"t_(\d+)\.json", path.name)
+            if not match:
+                continue
+            num = int(match.group(1))
+            if not (READINGS_DIR / f"t_{num:03d}.json").exists():
+                continue
+            teaching = load_json(path)
+            if teaching and has_gaps(teaching):
+                teachings.append(num)
+        return teachings
 
-    def build_user_message(self, page_num: int) -> str:
-        """Load page + core + reading and format prompt."""
-        page_data = self.load_page_json(page_num, PAGES_DIR)
-        core_data = self.load_page_json(page_num, CORE_DIR)
-        reading_data = self.load_page_json(page_num, READINGS_DIR)
-
-        if page_data is None:
-            print(f"  ERROR: No page data for p.{page_num}")
+    def build_user_message(self, teaching_num: int) -> str | None:
+        """Load teaching + reading and format restoration prompt."""
+        teaching = load_json(TEACHINGS_DIR / f"t_{teaching_num:03d}.json")
+        reading = load_json(READINGS_DIR / f"t_{teaching_num:03d}.json")
+        if teaching is None:
+            print(f"  ERROR: No teaching file for t.{teaching_num}")
             return None
-        if core_data is None:
-            print(f"  ERROR: No core data for p.{page_num}")
-            return None
-        if reading_data is None:
-            print(f"  ERROR: No reading data for p.{page_num}")
+        if reading is None:
+            print(f"  ERROR: No reading file for t.{teaching_num}")
             return None
 
-        # Find gaps in core segments
-        core_gaps = find_gaps_in_core(page_data, core_data)
-
-        if not core_gaps:
-            # No gaps in core — nothing to restore
+        gaps = collect_gaps(teaching)
+        if not gaps:
             return None
+
+        reading_segments = {
+            segment.get("i"): segment
+            for segment in reading.get("segments", [])
+        }
+
+        title = teaching.get("title", "")
+        lexicon_summary = self.get_lexicon_summary()
 
         parts = [
-            f"## Page {page_num} — Lacuna Restoration",
-            f"({len(core_gaps)} gaps in core segments)",
+            f"## Teaching {teaching_num}: {title}",
+            f"Total unique core gaps: {len(gaps)}",
             "",
         ]
 
-        # Section 1: Core text with gaps highlighted
-        parts.append("### Core Teaching Text (with gaps)")
-        parts.append("")
+        if lexicon_summary:
+            parts.extend([
+                "## Corpus Spiritual Lexicon",
+                lexicon_summary,
+                "",
+            ])
 
-        core_segments = {
-            s["i"]: s for s in core_data.get("segments", [])
-            if s.get("classification") in ("cosmological_substrate", "mixed")
-        }
-        page_lines = {
-            seg["i"]: seg for seg in page_data.get("lines", [])
-        }
-
-        for i in sorted(core_segments.keys()):
-            seg = core_segments[i]
-            orig = page_lines.get(i, {})
-            coptic = seg.get("core_coptic") or orig.get("coptic") or ""
-            english = seg.get("core_english") or orig.get("english") or ""
-            parts.append(f"[i={i}] Coptic: {coptic}")
-            parts.append(f"        English: {english}")
+        parts.extend([
+            "## Core Teaching Text",
+            "",
+        ])
+        for segment in teaching.get("segments", []):
+            if segment.get("classification") not in (
+                "cosmological_substrate", "mixed",
+            ):
+                continue
+            if not (segment.get("core_coptic") or segment.get("core_english")):
+                continue
+            section = segment.get("section")
+            chapter = segment.get("chapter")
+            line = segment.get("line")
+            parts.append(f"### Section {section} | ch.{chapter}.{line}")
+            parts.append(f"Coptic: {segment.get('core_coptic') or ''}")
+            parts.append(f"English: {segment.get('core_english') or ''}")
             parts.append("")
 
-        # Section 2: Apparatus for core gaps
-        parts.append("### Apparatus (gaps in core only)")
-        parts.append("")
-        for entry in core_gaps:
-            gap_id = entry["id"]
-            seg_i = entry.get("segment", "?")
-            gap_type = entry["type"]
-            if gap_type == "lacuna":
-                est = entry.get("est_chars", "?")
-                partial = entry.get("partial", "")
-                parts.append(
-                    f"  {{{gap_id}}} seg={seg_i} LACUNA ~{est}ch"
-                    + (f" traces: '{partial}'" if partial else "")
-                )
-            else:
-                cop = entry.get("coptic", "")
-                eng = entry.get("english", "")
-                basis = entry.get("basis", "")
-                parts.append(
-                    f"  {{{gap_id}}} seg={seg_i} RESTORATION: "
-                    f"{cop} = '{eng}' (basis: {basis})"
-                )
-        parts.append("")
+        parts.extend([
+            "## Gap Apparatus",
+            "",
+        ])
+        for gap in gaps:
+            parts.append(
+                f"{{{gap['gap_id']}}} Section {gap['section']} "
+                f"ch.{gap['chapter']}.{gap['line']} | "
+                f"{format_apparatus(gap['apparatus'])}"
+            )
+            parts.append(f"  Coptic context: {gap['core_coptic']}")
+            parts.append(f"  English context: {gap['core_english']}")
+            parts.append("")
 
-        # Section 3: Spiritual reading
-        parts.append("### Correspondential Reading")
-        parts.append("")
-        reading_segs = {
-            s["i"]: s for s in reading_data.get("segments", [])
-        }
-        for i in sorted(core_segments.keys()):
-            if i in reading_segs:
-                r = reading_segs[i]
-                parts.append(f"[i={i}] {r.get('spiritual_sense', '')}")
-                parts.append("")
+        parts.extend([
+            "## Correspondential Reading",
+            "",
+        ])
+        for segment in teaching.get("segments", []):
+            section = segment.get("section")
+            if section not in reading_segments:
+                continue
+            reading_segment = reading_segments[section]
+            spiritual = reading_segment.get("spiritual_sense", "")
+            if not spiritual:
+                continue
+            parts.append(f"### Section {section}")
+            parts.append(spiritual)
+
+            anchors = reading_segment.get("coptic_anchors", [])
+            if anchors:
+                rendered = "; ".join(
+                    f"{a.get('coptic')}={a.get('english')} -> {a.get('spiritual')}"
+                    for a in anchors
+                )
+                parts.append(f"Coptic anchors: {rendered}")
+            parts.append("")
 
         parts.append(
-            "Restore each gap using the spiritual reading as context. "
-            "Call commit_restorations with all proposed fills."
+            "Restore every listed gap or mark it unrestorable. Call "
+            "commit_restorations with one restoration decision per gap."
         )
-
         return "\n".join(parts)
 
-    def process_result(self, page_num: int, result: dict) -> dict:
-        """Pass through the raw result."""
+    def process_result(self, teaching_num: int, result: dict) -> dict:
+        """Attach lightweight consistency metadata."""
+        result.setdefault("teaching", teaching_num)
         return result
 
-    def format_summary(self, page_num: int, result: dict) -> str:
-        """Format a one-line summary."""
+    def format_summary(self, teaching_num: int, result: dict) -> str:
         total = result.get("total_gaps_in_core", 0)
         restored = result.get("gaps_restored", 0)
         unrestorable = result.get("gaps_unrestorable", 0)

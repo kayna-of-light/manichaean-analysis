@@ -11,6 +11,7 @@ context for gap-filling — and also stands as an independent output.
 
 Input:
   - output/projects/kephalaia_v2/teachings/t_NNN.json  (from stage 4c)
+    - output/projects/kephalaia_v2/spiritual_lexicon.json  (from stage 4d, optional)
 
 Output:
   - output/projects/kephalaia_v2/readings/t_NNN.json
@@ -35,6 +36,7 @@ from pipeline_base import (
 )
 
 TEACHINGS_DIR = PROJECT_DIR / "teachings"
+SPIRITUAL_LEXICON_PATH = PROJECT_DIR / "spiritual_lexicon.json"
 
 
 # ---------------------------------------------------------------------------
@@ -77,7 +79,7 @@ READ_TOOL = {
                         "i": {
                             "type": "integer",
                             "description": (
-                                "Segment index (matching the page JSON)."
+                                "Section number for this teaching segment."
                             ),
                         },
                         "spiritual_sense": {
@@ -115,6 +117,38 @@ READ_TOOL = {
                                 "required": ["natural", "spiritual"],
                             },
                         },
+                        "coptic_anchors": {
+                            "type": "array",
+                            "description": (
+                                "Important Coptic words or phrases that "
+                                "controlled the reading. Empty if no "
+                                "specific Coptic anchor is identifiable."
+                            ),
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "coptic": {
+                                        "type": "string",
+                                        "description": "The Coptic form.",
+                                    },
+                                    "english": {
+                                        "type": "string",
+                                        "description": (
+                                            "The project vocabulary English "
+                                            "term for this form."
+                                        ),
+                                    },
+                                    "spiritual": {
+                                        "type": "string",
+                                        "description": (
+                                            "The spiritual meaning used in "
+                                            "the segment reading."
+                                        ),
+                                    },
+                                },
+                                "required": ["coptic", "english", "spiritual"],
+                            },
+                        },
                         "confidence": {
                             "type": "string",
                             "enum": ["clear", "probable", "uncertain"],
@@ -129,7 +163,7 @@ READ_TOOL = {
                     },
                     "required": [
                         "i", "spiritual_sense",
-                        "key_correspondences", "confidence",
+                        "key_correspondences", "coptic_anchors", "confidence",
                     ],
                 },
             },
@@ -208,6 +242,17 @@ You receive a COMPLETE TEACHING — one spiritual arc from beginning to \
 end. The teaching uses cosmological imagery as its vehicle, but the \
 imagery is the outer shell. Inside is a spiritual process being taught.
 
+You also receive the corpus-level spiritual lexicon when it exists. \
+That lexicon controls vocabulary. Use its `use_in_reading` wording and \
+spiritual meanings unless a local passage clearly requires an opposite \
+sense or narrower application. Do not improvise alternative English for \
+terms already fixed by the lexicon.
+
+Read Coptic and English together. The English is helpful, but the \
+Coptic controls when vocabulary matters. Preserve this project's \
+translation decisions: ⲧⲥⲃⲱ is teaching, not insight; ⲡⲉⲓⲛⲉ is \
+likeness; Jesus ⲡⲡⲣⲓ̈ⲉ is Jesus the Radiance.
+
 Your job: translate the shell into what it contains. Read through the \
 imagery to the spiritual reality being expressed.
 
@@ -243,8 +288,52 @@ Example:
    form of love and wisdom at different registers.
 6. **Follow the arc:** The teaching has a beginning, middle, and end. \
    Your reading should reveal the spiritual process flowing through it.
+7. **Use the lexicon:** If a term appears in the spiritual lexicon, use \
+   that stable spiritual meaning and project vocabulary.
+8. **Name Coptic anchors:** For each segment, record the important \
+   Coptic forms that shaped the reading in `coptic_anchors`.
 
 When complete, call commit_reading exactly once."""
+
+
+def format_lexicon_summary(lexicon: dict) -> str:
+    """Format spiritual_lexicon.json as compact prompt context."""
+    entries = lexicon.get("entries", [])
+    total = lexicon.get("total_entries", len(entries))
+    lines = [f"Spiritual lexicon ({total} entries):"]
+
+    for entry in entries:
+        term = entry.get("english_term") or entry.get("natural_term") or "?"
+        category = entry.get("category", "?")
+        coptic_forms = entry.get("coptic_forms") or []
+        if isinstance(coptic_forms, str):
+            coptic_forms = [coptic_forms]
+        coptic = ", ".join(coptic_forms)
+        meaning = (
+            entry.get("spiritual_meaning")
+            or entry.get("spiritual_correspondence")
+            or ""
+        )
+        use = entry.get("use_in_reading") or meaning
+        opposite = entry.get("opposite_sense") or ""
+        confidence = entry.get("confidence", "")
+
+        prefix = f"- {term} [{category}"
+        if confidence:
+            prefix += f", {confidence}"
+        prefix += "]"
+        if coptic:
+            prefix += f" (Coptic: {coptic})"
+        line = f"{prefix}: {meaning}"
+        if use and use != meaning:
+            line += f" Use: {use}"
+        elif use:
+            line += f" Use: {use}"
+        if opposite:
+            line += f" Opposite sense: {opposite}"
+        lines.append(line)
+
+    return "\n".join(lines)
 
 
 # ---------------------------------------------------------------------------
@@ -260,6 +349,7 @@ class ReadStage(PipelineStage):
     item_name = "teaching"
     item_name_plural = "teachings"
     item_prefix = "t"
+    _lexicon_summary: str | None = None
 
     def get_system_prompt(self) -> str:
         return SYSTEM_PROMPT
@@ -269,6 +359,18 @@ class ReadStage(PipelineStage):
 
     def get_output_dir(self) -> Path:
         return PROJECT_DIR / "readings"
+
+    def get_lexicon_summary(self) -> str:
+        """Load the pre-reading lexicon once and format it for prompts."""
+        if self._lexicon_summary is not None:
+            return self._lexicon_summary
+        if not SPIRITUAL_LEXICON_PATH.exists():
+            self._lexicon_summary = ""
+            return self._lexicon_summary
+        with open(SPIRITUAL_LEXICON_PATH, encoding="utf-8") as f:
+            lexicon = json.load(f)
+        self._lexicon_summary = format_lexicon_summary(lexicon)
+        return self._lexicon_summary
 
     def list_available(self) -> list[int]:
         """List available teaching numbers."""
@@ -305,6 +407,7 @@ class ReadStage(PipelineStage):
         title = data.get("title", "")
         confidence = data.get("confidence", "")
         segments = data.get("segments", [])
+        lexicon_summary = self.get_lexicon_summary()
 
         # Filter to only core segments (with content)
         core_segments = [
@@ -321,6 +424,19 @@ class ReadStage(PipelineStage):
             f"(Confidence: {confidence} | Core segments: {len(core_segments)})",
             "",
         ]
+        parts.append("Use each section number (the § value) as the segment `i` in your output.")
+        parts.append("")
+
+        if lexicon_summary:
+            parts.extend([
+                "## Corpus Spiritual Lexicon",
+                lexicon_summary,
+                "",
+                "Use this lexicon as the vocabulary authority for the "
+                "reading below. The local Coptic and English still control "
+                "which entries apply in each segment.",
+                "",
+            ])
 
         for seg in core_segments:
             sec = seg.get("section", "?")
@@ -343,7 +459,42 @@ class ReadStage(PipelineStage):
         return "\n".join(parts)
 
     def process_result(self, teaching_num: int, result: dict) -> dict:
-        """Pass through the raw result."""
+        """Normalize segment IDs to source section numbers.
+
+        The prompt asks the model to use section numbers as `i`, but some
+        large teachings may be tempting to number from zero. Stage 6 joins
+        readings to teaching segments by section, so enforce that contract
+        mechanically when the segment count matches the teaching file.
+        """
+        result.setdefault("teaching", teaching_num)
+
+        path = TEACHINGS_DIR / f"t_{teaching_num:03d}.json"
+        if path.exists():
+            with open(path, encoding="utf-8") as f:
+                teaching = json.load(f)
+            expected_sections = [
+                segment.get("section")
+                for segment in teaching.get("segments", [])
+                if segment.get("classification") in (
+                    "cosmological_substrate", "mixed",
+                )
+                and (
+                    segment.get("core_english")
+                    or segment.get("core_coptic")
+                )
+            ]
+        else:
+            expected_sections = []
+
+        reading_segments = result.get("segments", [])
+        for segment in reading_segments:
+            segment.setdefault("coptic_anchors", [])
+
+        if len(reading_segments) == len(expected_sections):
+            for segment, section in zip(reading_segments, expected_sections):
+                segment["i"] = section
+            result["segments_read"] = len(reading_segments)
+
         return result
 
     def format_summary(self, teaching_num: int, result: dict) -> str:
