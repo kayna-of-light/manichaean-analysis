@@ -191,28 +191,28 @@ COMMIT_TEACHINGS_TOOL = {
 # Corpus assembly — core segments only (substrate + mixed), with page.line refs
 # ---------------------------------------------------------------------------
 
-def load_core_pages() -> list[dict]:
-    """Load all core extraction JSONs sorted by page number."""
-    pages = []
-    for path in sorted(CORE_DIR.glob("p_*.json")):
-        m = re.match(r"p_(\d+)\.json", path.name)
+def load_core_chapters() -> list[dict]:
+    """Load all core extraction JSONs sorted by chapter number."""
+    chapters = []
+    for path in sorted(CORE_DIR.glob("ch_*.json")):
+        m = re.match(r"ch_(\d+)\.json", path.name)
         if not m:
             continue
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
-        pages.append({
-            "page_num": int(m.group(1)),
+        chapters.append({
+            "chapter_num": int(m.group(1)),
             "segments": data.get("segments", []),
         })
-    pages.sort(key=lambda x: x["page_num"])
-    return pages
+    chapters.sort(key=lambda x: x["chapter_num"])
+    return chapters
 
 
-def format_corpus(pages: list[dict]) -> tuple[str, list[dict]]:
+def format_corpus(chapters: list[dict]) -> tuple[str, list[dict]]:
     """Format core segments as continuous §N numbered Coptic text.
 
     Returns:
-        (corpus_text, section_map) where section_map[i] = {page, line}
+        (corpus_text, section_map) where section_map[i] = {chapter, line}
         mapping each §(i+1) back to its original manuscript location.
 
     Only includes segments classified as cosmological_substrate or mixed.
@@ -220,9 +220,9 @@ def format_corpus(pages: list[dict]) -> tuple[str, list[dict]]:
     parts: list[str] = []
     section_map: list[dict] = []  # index i → §(i+1)
 
-    for page in pages:
-        pn = page["page_num"]
-        for seg in page["segments"]:
+    for ch in chapters:
+        cn = ch["chapter_num"]
+        for seg in ch["segments"]:
             cls = seg.get("classification", "")
             if cls not in ("cosmological_substrate", "mixed"):
                 continue
@@ -232,7 +232,7 @@ def format_corpus(pages: list[dict]) -> tuple[str, list[dict]]:
             line_i = seg["i"]
             n = len(section_map) + 1
             parts.append(f"[§{n}] {coptic}")
-            section_map.append({"section": n, "page": pn, "line": line_i})
+            section_map.append({"section": n, "chapter": cn, "line": line_i})
 
     return "\n".join(parts), section_map
 
@@ -254,7 +254,7 @@ def process_result(tool_input: dict | None, section_map: list[dict]) -> dict:
     # Build lookup: §N → {page, line}
     lookup = {entry["section"]: entry for entry in section_map}
 
-    # Resolve each chapter's section back to page.line
+    # Resolve each chapter's section back to chapter.line
     resolved = []
     for ch in chapters:
         sec = ch["section"]
@@ -262,7 +262,7 @@ def process_result(tool_input: dict | None, section_map: list[dict]) -> dict:
         if ref:
             resolved.append({
                 "section": sec,
-                "page": ref["page"],
+                "chapter": ref["chapter"],
                 "line": ref["line"],
                 "title": ch["title"],
                 "confidence": ch.get("confidence", "?"),
@@ -271,7 +271,7 @@ def process_result(tool_input: dict | None, section_map: list[dict]) -> dict:
             print(f"  WARNING: §{sec} not found in section map!")
             resolved.append({
                 "section": sec,
-                "page": -1,
+                "chapter": -1,
                 "line": -1,
                 "title": ch["title"],
                 "confidence": ch.get("confidence", "?"),
@@ -281,7 +281,7 @@ def process_result(tool_input: dict | None, section_map: list[dict]) -> dict:
     for i, ch in enumerate(resolved[:20]):
         conf = ch.get("confidence", "?")
         print(f"  {i+1:3d}. [§{ch['section']:4d}] [{conf:8s}] "
-              f"p.{ch['page']},{ch['line']}: {ch['title'][:55]}")
+              f"ch.{ch['chapter']},{ch['line']}: {ch['title'][:55]}")
     if len(resolved) > 20:
         print(f"  ... and {len(resolved) - 20} more")
 
@@ -328,20 +328,20 @@ def main() -> None:
     print(f"  Input:  {CORE_DIR}")
     print(f"  Output: {PROJECT_DIR / 'teaching_index.json'}")
 
-    # Load core pages
-    pages = load_core_pages()
-    if not pages:
+    # Load core chapters
+    chapters = load_core_chapters()
+    if not chapters:
         print(f"\nERROR: No core files found in {CORE_DIR}")
         sys.exit(1)
-    print(f"\nLoaded {len(pages)} core pages")
+    print(f"\nLoaded {len(chapters)} core chapters")
 
     # Format corpus
-    corpus_text, section_map = format_corpus(pages)
+    corpus_text, section_map = format_corpus(chapters)
     est_tokens = len(corpus_text) / 3.5
     total_segments = len(section_map)
     print(f"  Corpus: {len(corpus_text):,} chars (~{est_tokens:,.0f} tokens)")
     print(f"  Core segments: {total_segments}")
-    print(f"  Pages: {pages[0]['page_num']}-{pages[-1]['page_num']}")
+    print(f"  Chapters: {chapters[0]['chapter_num']}-{chapters[-1]['chapter_num']}")
     print(f"  Sections: §1-§{total_segments}")
 
     if args.dry_run:

@@ -38,7 +38,6 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from pipeline_base import (
     PipelineStage,
-    PAGES_DIR,
     SCORES_DIR,
     PROJECT_DIR,
 )
@@ -630,24 +629,154 @@ class ExtractStage(PipelineStage):
         self._institutional_terms: set = set()
 
     def run(self) -> None:
-        """Override to load metadata before base run."""
-        # Load metadata first — needed for tool schema and system prompt
+        """Full execution — chapter-oriented, no base class run()."""
+        import time
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+        from pipeline_base import create_client
+
+        self.args = self.parse_args()
+        self.debug = self.args.debug
+
+        # Load metadata
         self.metadata = load_metadata()
         vocabs = self.metadata.get("scoring_vocabularies", [])
         if vocabs:
             self._substrate_id = vocabs[0]["id"]
         self.tool_schema = build_extract_tool(self.metadata)
         self._system_prompt = build_system_prompt(self.metadata)
-
-        # Build scoring infrastructure for per-line scores
         self._scoring_dicts = build_scoring_dicts(self.metadata)
         self._bridge_patterns = build_bridge_patterns(self.metadata)
         self._institutional_terms = build_institutional_terms(self.metadata)
 
-        print(f"  Metadata: {len(vocabs)} scoring layers, "
+        print(f"Stage {self.stage_number}: {self.stage_name}")
+        print(f"  {self.description}")
+        print(f"  Input:  {self.get_input_dir()}")
+        print(f"  Output: {self.get_output_dir()}")
+        print(f"  Metadata: {len(vocabs)} layers, "
               f"substrate = '{self._substrate_id}'")
 
-        super().run()
+        all_chapters = self.list_available()
+        if not all_chapters:
+            print(f"\nERROR: No input files in {self.get_input_dir()}")
+            sys.exit(1)
+        print(f"\nFound {len(all_chapters)} chapters "
+              f"(ch.{all_chapters[0]}-ch.{all_chapters[-1]})")
+
+        chapters = self._select_chapters(all_chapters)
+        if not chapters:
+            print("All requested chapters already processed.")
+            return
+
+        print(f"\nProcessing {len(chapters)} chapters:")
+        for ch in chapters:
+            print(f"  ch.{ch:3d}")
+
+        if self.args.dry_run:
+            print("\n[DRY RUN] No API calls made.")
+            return
+
+        self.client, self.deployment = create_client()
+        print(f"\nDeployment: {self.deployment}")
+        print(f"Thinking effort: {self.args.effort}")
+        print()
+
+        self.get_output_dir().mkdir(parents=True, exist_ok=True)
+
+        concurrency = max(1, self.args.max_concurrency)
+        results: list[dict] = []
+        errors: list[int] = []
+
+        if concurrency == 1:
+            for i, ch in enumerate(chapters, 1):
+                print(
+                    f"[{i}/{len(chapters)}] ch.{ch}...",
+                    end=" ", flush=True,
+                )
+                _, result = self._process_one(ch)
+                if result is None:
+                    print("FAILED")
+                    errors.append(ch)
+                    continue
+                processed = self.process_result(ch, result)
+                self.save_output(ch, processed)
+                summary = self.format_summary(ch, processed)
+                print(summary)
+                results.append(processed)
+                if i < len(chapters):
+                    time.sleep(0.5)
+        else:
+            from tqdm import tqdm
+            print(f"Running with {concurrency} parallel workers\n",
+                  flush=True)
+            pbar = tqdm(
+                total=len(chapters), desc="Stage 4",
+                unit="ch", file=sys.stdout,
+            )
+            with ThreadPoolExecutor(max_workers=concurrency) as executor:
+                futures = {
+                    executor.submit(self._process_one, ch): ch
+                    for ch in chapters
+                }
+                for future in as_completed(futures):
+                    ch = futures[future]
+                    try:
+                        _, result = future.result()
+                    except Exception as e:
+                        pbar.write(f"  ch.{ch}: EXCEPTION — {e}")
+                        errors.append(ch)
+                        pbar.update(1)
+                        continue
+                    if result is None:
+                        pbar.write(f"  ch.{ch}: FAILED")
+                        errors.append(ch)
+                        pbar.update(1)
+                        continue
+                    processed = self.process_result(ch, result)
+                    self.save_output(ch, processed)
+                    summary = self.format_summary(ch, processed)
+                    pbar.write(f"  ch.{ch}: {summary}")
+                    results.append(processed)
+                    pbar.update(1)
+            pbar.close()
+
+        print(f"\n{'='*50}")
+        print(f"STAGE {self.stage_number} COMPLETE: {self.stage_name}")
+        print(f"  Processed: {len(results)} chapters")
+        if errors:
+            print(f"  Failed:    {len(errors)} chapters — {errors}")
+
+    def _select_chapters(self, all_chapters: list[int]) -> list[int]:
+        """Apply CLI filters to select which chapters to process."""
+        args = self.args
+
+        if args.chapter is not None:
+            requested = set(args.chapter)
+            chapters = [c for c in all_chapters if c in requested]
+            missing = requested - set(chapters)
+            if missing:
+                print(f"ERROR: Chapters not found: {sorted(missing)}")
+                sys.exit(1)
+        elif args.range:
+            m = re.match(r"(\d+)-(\d+)", args.range)
+            if not m:
+                print("ERROR: Invalid range. Use '1-50'")
+                sys.exit(1)
+            start, end = int(m.group(1)), int(m.group(2))
+            chapters = [c for c in all_chapters if start <= c <= end]
+        else:
+            chapters = all_chapters
+
+        if args.limit:
+            chapters = chapters[:args.limit]
+
+        if not args.overwrite:
+            to_process = [c for c in chapters if not self.is_done(c)]
+            skipped = len(chapters) - len(to_process)
+            if skipped > 0:
+                print(f"  Skipping {skipped} already done (use --overwrite)")
+            chapters = to_process
+
+        return chapters
 
     def get_system_prompt(self) -> str:
         return self._system_prompt
@@ -658,12 +787,29 @@ class ExtractStage(PipelineStage):
     def get_output_dir(self) -> Path:
         return PROJECT_DIR / "core"
 
-    def add_arguments(self, parser) -> None:
-        """Add --chapter as alias for --page."""
+    def parse_args(self):
+        """Parse CLI arguments."""
+        import argparse
+        parser = argparse.ArgumentParser(
+            description=f"Stage {self.stage_number}: {self.description}"
+        )
         parser.add_argument(
             "--chapter", "-c", type=int, nargs="+", default=None,
-            help="Chapter number(s) to process (alias for --page)",
+            help="Chapter number(s) to process",
         )
+        parser.add_argument("--range", "-r", type=str, default=None)
+        parser.add_argument("--limit", "-l", type=int, default=None)
+        parser.add_argument("--dry-run", "-n", action="store_true")
+        parser.add_argument("--overwrite", action="store_true")
+        parser.add_argument(
+            "--effort", default="xhigh",
+            choices=["low", "medium", "high", "xhigh", "max"],
+        )
+        parser.add_argument("--debug", action="store_true")
+        parser.add_argument(
+            "--max-concurrency", "-j", type=int, default=1,
+        )
+        return parser.parse_args()
 
     def list_available(self) -> list[int]:
         """Chapters that have BOTH assembled text and score output."""
@@ -681,40 +827,32 @@ class ExtractStage(PipelineStage):
 
         return sorted(chapters_available & scores_available)
 
-    def is_done(self, page_num: int) -> bool:
+    def is_done(self, ch: int) -> bool:
         """Check if output already exists for this chapter."""
         return (
-            self.get_output_dir() / f"ch_{page_num:03d}.json"
+            self.get_output_dir() / f"ch_{ch:03d}.json"
         ).exists()
 
-    def save_output(self, page_num: int, data: dict) -> None:
+    def save_output(self, ch: int, data: dict) -> None:
         """Save the output JSON for a chapter (thread-safe)."""
-        from threading import Lock
         output_dir = self.get_output_dir()
         output_dir.mkdir(parents=True, exist_ok=True)
-        path = output_dir / f"ch_{page_num:03d}.json"
+        path = output_dir / f"ch_{ch:03d}.json"
         from pipeline_base import _write_lock
         with _write_lock:
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
 
-    def select_pages(self, all_pages: list[int]) -> list[int]:
-        """Override to support --chapter as alias for --page."""
-        # If --chapter was used, treat as --page
-        if self.args.chapter is not None and self.args.page is None:
-            self.args.page = self.args.chapter
-        return super().select_pages(all_pages)
-
-    def build_user_message(self, page_num: int) -> str:
+    def build_user_message(self, ch: int) -> str:
         """Load chapter + score data and format into user message."""
-        ch_path = CHAPTERS_DIR / f"ch_{page_num:03d}.json"
-        score_path = SCORES_DIR / f"ch_{page_num:03d}.json"
+        ch_path = CHAPTERS_DIR / f"ch_{ch:03d}.json"
+        score_path = SCORES_DIR / f"ch_{ch:03d}.json"
 
         if not ch_path.exists():
-            print(f"  ERROR: No chapter data for ch.{page_num}")
+            print(f"  ERROR: No chapter data for ch.{ch}")
             return None
         if not score_path.exists():
-            print(f"  ERROR: No score data for ch.{page_num}")
+            print(f"  ERROR: No score data for ch.{ch}")
             return None
 
         with open(ch_path, encoding="utf-8") as f:
@@ -728,11 +866,12 @@ class ExtractStage(PipelineStage):
         # Format score data (chapter-level + per-line)
         scores_section = self._format_scores(chapter_data, score_data)
 
-        title = chapter_data.get("title", "")
+        header = chapter_data.get("header", {})
+        title = chapter_data.get("title") or header.get("title_english", "")
         return (
-            f"## Chapter {page_num}: {title}\n\n"
+            f"## Chapter {ch}: {title}\n\n"
             f"{lines_section}\n\n"
-            f"## Chapter {page_num} — Text-Critical Score Data\n\n"
+            f"## Chapter {ch} — Text-Critical Score Data\n\n"
             f"{scores_section}\n\n"
             f"Classify each segment by temporal layer. "
             f"Call commit_extraction with the complete classification."
@@ -743,13 +882,7 @@ class ExtractStage(PipelineStage):
         lines = chapter_data.get("lines", [])
         parts = []
 
-        current_page = None
         for line in lines:
-            page = line.get("_page")
-            if page != current_page:
-                current_page = page
-                parts.append(f"\n--- p.{page} ---")
-
             i = line["i"]
             n = line.get("n", i + 1)
             coptic = line.get("coptic") or "[NULL — line lost]"
@@ -844,11 +977,11 @@ class ExtractStage(PipelineStage):
 
         return "\n".join(parts)
 
-    def process_result(self, page_num: int, result: dict) -> dict:
+    def process_result(self, ch: int, result: dict) -> dict:
         """Pass through the raw result (already structured)."""
         return result
 
-    def format_summary(self, page_num: int, result: dict) -> str:
+    def format_summary(self, ch: int, result: dict) -> str:
         """Format a one-line summary."""
         total = result.get("total_segments", 0)
         core = result.get("core_segments", 0)
