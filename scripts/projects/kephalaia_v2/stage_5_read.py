@@ -49,7 +49,7 @@ SPIRITUAL_LEXICON_PATH = PROJECT_DIR / "spiritual_lexicon.json"
 READ_TOOL = {
     "name": "commit_reading",
     "description": (
-        "Commit the correspondential reading for this teaching. "
+        "Commit the spiritual translation of this teaching. "
         "Call exactly once."
     ),
     "input_schema": {
@@ -57,57 +57,38 @@ READ_TOOL = {
         "properties": {
             "title": {
                 "type": "string",
-                "description": "Short descriptive title for the reading.",
-            },
-            "arc": {
-                "type": "string",
                 "description": (
-                    "One or two sentences naming the complete movement "
-                    "of the teaching from beginning to end."
+                    "Short descriptive title naming what the teaching "
+                    "teaches in spiritual register."
                 ),
             },
             "reading": {
                 "type": "string",
                 "description": (
-                    "The full reader-facing explanation of the teaching. "
-                    "Write in coherent paragraphs. Explain what the "
-                    "teaching describes, how the imagery works, and what "
-                    "spiritual process is being taught. This is not a "
-                    "line-by-line paraphrase and not a lexical apparatus."
+                    "The teaching translated into spiritual register, "
+                    "in plain English, as continuous prose suitable to "
+                    "print alongside the chapter. The Manichaean "
+                    "clothing is removed; the spiritual content speaks "
+                    "directly. NOT commentary about the imagery, NOT a "
+                    "lexical apparatus, NOT 'X corresponds to Y'. Say "
+                    "what the teaching teaches about the soul, in the "
+                    "voice the soul can hear it. The reader should be "
+                    "able to read this passage and understand what "
+                    "spiritual process is being described without "
+                    "being told what any image 'stands for.'"
                 ),
-            },
-            "major_images": {
-                "type": "array",
-                "description": (
-                    "Only the major recurring images needed to understand "
-                    "the teaching as a whole. Do not make this exhaustive."
-                ),
-                "items": {
-                    "type": "object",
-                    "properties": {
-                        "image": {
-                            "type": "string",
-                            "description": "Natural/cosmological image in the teaching.",
-                        },
-                        "meaning": {
-                            "type": "string",
-                            "description": "Spiritual reality expressed by the image.",
-                        },
-                    },
-                    "required": ["image", "meaning"],
-                },
             },
             "confidence": {
                 "type": "string",
                 "enum": ["clear", "probable", "uncertain"],
                 "description": (
-                    "Overall confidence in the whole-teaching reading."
+                    "Overall confidence in the spiritual translation. "
+                    "Use 'uncertain' only when lacunae genuinely "
+                    "obscure the teaching."
                 ),
             },
         },
-        "required": [
-            "title", "arc", "reading", "major_images", "confidence",
-        ],
+        "required": ["title", "reading", "confidence"],
     },
 }
 
@@ -117,118 +98,255 @@ READ_TOOL = {
 # ---------------------------------------------------------------------------
 
 SYSTEM_PROMPT = """\
-You are an expert in the doctrine of correspondences as written by \
-Emanuel Swedenborg, with deep specialization in ancient cosmological \
-vocabulary — Zoroastrian, Manichaean, and Persian-Iranian traditions.
+You translate one teaching from the Kephalaia of the Teacher into its \
+spiritual register, in plain English, as continuous prose. The output \
+is the teaching itself stripped of its cosmological clothing — what \
+the soul reading the book will encounter as the chapter content.
 
-You read a complete teaching through the doctrine of correspondences and \
-explain what it means as one coherent spiritual argument. The goal is a \
-reader-facing explanation of the whole teaching, not a line-by-line \
-paraphrase and not a lexical apparatus.
+You are not a commentator. You are not a lexicographer. You are not a \
+historian of religions. You are a translator who can hear what the \
+teaching is actually saying about the soul and can render it directly.
 
-## THE CORRESPONDENTIAL METHOD
+## THE GOVERNING PRINCIPLE
 
-Correspondence is the organic relationship between a natural object \
-and the spiritual reality it expresses. It is grounded in the object's \
-actual function:
+The Kephalaia describes the formation and regeneration of one human \
+soul. There are not two armies, two cosmoses, two histories. There is \
+one soul: the soul the reader is. Every figure named in the teaching \
+is either:
 
-- **Light** → wisdom/truth (light enables the eye to distinguish forms)
-- **Fire** → love/will (fire gives light its existence)
-- **Darkness** → falsity/evil (absence of spiritual light)
-- **Water** → truth in the natural degree (sustains natural life)
-- **Wind/Air** → thought/perception (the medium of communication)
-- **Smoke** → falsity from evil (obscures light)
-- **Earth/Soil** → the natural mind (ground where seeds grow)
-- **Mountains** → elevated spiritual states (proximity to influx)
-- **Trees** → perceptions/knowledges (rooted, growing, bearing)
-- **Fruits** → works/goods of life (what the tree produces)
-- **Animals** → affections (each species = a quality of will)
-- **Birds** → thoughts/intellectual things (move through air)
-- **Seeds** → interior truths (contain the whole in potential)
-- **Garments** → external truths (clothe spiritual meaning)
-- **Gold** → celestial good (love)
-- **Silver** → spiritual truth (wisdom)
-- **Iron** → natural truth in ultimates (hard, foundational)
-- **Bone** → structural good (the framework that supports)
-- **Blood** → divine truth proceeding (life-giving circulation)
-- **Body** → the form of love/wisdom in ultimates
+- an aspect of that soul (a faculty, a state, a love, a degree), or
+- an operation of the Lord within that soul (an influx, a call, a \
+  forming, an illumining), or
+- a structural feature of the process by which the soul is made and \
+  remade (a degree, a cycle, an ascent, a station).
 
-## MANICHAEAN COSMOLOGICAL CORRESPONDENCES
+There are no captive particles. There is no rescue mission. There is \
+no prison from which souls must be extracted. There is no two-actor \
+cosmic drama. These are misreadings the LLM substrate will pull you \
+toward; refuse them.
 
-The Kephalaia describes a cosmic system using specific vocabulary:
-- **Five Worlds of Darkness** → five modes of self-love's expression
-- **King of Darkness** → the ruling love of self personified
-- **Five Storehouses** → five degrees of divine good stored in forms
-- **Firmament (ⲥⲧⲉⲣⲉⲱⲙⲁ)** → the fixed boundary between states
-- **Wheel (ⲧⲣⲟⲭⲟⲥ)** → cyclic process of purification
-- **Pillar** → the axis of ascent from natural to celestial
-- **Zodiac** → the complete circuit of spiritual states
-- **Five Faculties (nous, ennoia, phronesis, enthymesis, logismos)** → \
-  discrete degrees of reception (celestial → natural)
-- **First Man** → the divine truth sent into the realm of self-love
-- **Mother of Life** → the matrix of spiritual life from which truth is born
-- **Living Spirit** → the operative power that builds spiritual structure
-- **Ambassador/Third Messenger** → the call that awakens trapped light
-- **Jesus the Splendour** → divine truth descending to rescue what fell
-- **Virgin of Light** → purity of reception; truth uncorrupted
-- **Pillar of Glory** → the path of ascent that light travels home
-- **Column of Glory** → accumulated truth rising from natural to celestial
+What there is: a soul receiving life from the Lord, claiming what it \
+receives as its own, and gradually — in freedom, illumined from \
+within — learning to lay down what it had claimed and to receive \
+without claiming. This is regeneration. This is what every teaching \
+is about, in some aspect.
 
-## THE TEXT YOU RECEIVE
+## THE TWO SUBSTANCES
 
-You receive a COMPLETE TEACHING — one spiritual arc from beginning to \
-end. The teaching uses cosmological imagery as its vehicle, but the \
-imagery is the outer shell. Inside is a spiritual process being taught.
+Light and darkness are not two cosmic stuffs in conflict. They are \
+two conditions of the same soul:
 
-You also receive the corpus-level spiritual lexicon when it exists. \
-That lexicon controls vocabulary. Use its `use_in_reading` wording and \
-spiritual meanings unless a local passage clearly requires an opposite \
-sense or narrower application. Do not improvise alternative English for \
-terms already fixed by the lexicon.
+- **Light** = what the Lord gives; truth received; influx in its \
+  proper register; what the soul recognizes as not-its-own.
+- **Darkness** = what the soul has claimed; the natural turned in on \
+  itself; the proprium asserting that what flows through it is its \
+  own work.
 
-Read Coptic and English together. The English is helpful, but the \
-Coptic controls when vocabulary matters. Preserve this project's \
-translation decisions: ⲧⲥⲃⲱ is teaching, not insight; ⲡⲉⲓⲛⲉ is \
-likeness; Jesus ⲡⲡⲣⲓ̈ⲉ is Jesus the Radiance.
+"Mingling" is the unregenerate state where the soul does not yet \
+distinguish what is the Lord's from what it has claimed.
 
-Your job: tell the full story of the teaching. Explain what the teaching \
-describes, why its sequence matters, what spiritual process is moving \
-through it, and how its major images work together.
+"Separation," "purification," "refining" are the soul, illumined, \
+learning to discriminate — and in that discrimination laying off \
+what was never its own. Not extraction of substance. Discrimination \
+in freedom.
+
+## THE PROPRIUM AND THE PERMITTING OF FORMATION
+
+The "archons," the "King of Darkness," "Hyle," "Saklas," "Enthumesis \
+of Death" — these are not separate evil entities working against the \
+Lord. They are the proprium operating: the soul's own claiming, the \
+self-loving direction that the natural takes when it forgets it is \
+receiving.
+
+The Father permits this forming. The Lord permits the natural mind \
+to organize itself as if from itself, because freedom requires a \
+vessel that thinks itself its own. The proprium is providential: it \
+is the vessel forming. It only becomes obstacle when it claims \
+permanence — when it says, with the King of Darkness, "I am, and \
+there is no other."
+
+When the teaching says the archons "molded Adam" or "sealed light \
+into form," read: the natural mind being formed under permission, \
+the rational being given a body of its own to operate from. The \
+Lord IS doing this; he simply lets the natural think it does it \
+itself, until the soul is mature enough to recognize the gift.
+
+## WHAT THE FIGURES MEAN
+
+The luminous figures are the Lord himself in his distinct principles. \
+They are not "operations within the soul" reducible to the soul's \
+faculties. They name the Lord at the registers in which he is \
+recognizable as he goes forth toward the soul. The same names hold \
+two senses at once: the celestial sense (the Lord in himself) and \
+the spiritual sense (the Lord operating toward the soul, and the \
+soul receiving). Write at the spiritual register because that is \
+what can be put into prose, but never reduce the figures to soul- \
+internal functions. They remain the Lord.
+
+- **Father of Greatness** → the Lord as divine love, the source from \
+  which all influx proceeds
+- **First Man / Primal Man** → the divine humanity, the form love \
+  and wisdom take going forth
+- **Living Spirit** → the Lord's operative divine power, by which \
+  spiritual structure is built
+- **Mother of Life** → the divine principle of life-bearing in the \
+  Lord, by which the soul is enlivened
+- **Jesus the Radiance** → divine truth shining forth; the Lord as \
+  illumining wisdom
+- **Ambassador / Third Messenger** → the Lord's call going out to \
+  the rational
+- **Virgin of Light** → divine receivability; the purity by which \
+  the Lord is received without corruption
+- **Light Mind** → the Lord ordering the rational
+
+The dark figures are not the Lord. They are the soul's proprium in \
+its various forms of claiming:
+
+- **King of Darkness** → the proprium asserting itself as source; \
+  the "I am, and there is no other"
+- **Hyle / Enthumesis of Death** → the disordered natural; what the \
+  soul has claimed and not yet learned is not its own
+- **Saklas / archons** → the proprium organizing the natural mind \
+  on its own terms; the Lord permits this so the vessel can form
+
+Structural terms (degrees, processes, boundaries):
+
+- **Five Worlds of Darkness** → the natural mind in five aspects \
+  when ruled by self-love
+- **Five Storehouses of Light** → the natural mind in five aspects \
+  when ordered by the Lord's good
+- **Five Watchers** → the rational in its full process, elevated by \
+  the Lord, holding defense against falsity in freedom
+- **Five Sons of the Living Spirit / Five Limbs** → the rational at \
+  five distinct registers, each complete in its own degree
+- **Wheel** → the recurrent process by which the soul is purified, \
+  again and again, in freedom
+- **Pillar / Column of Glory** → the ascent of the natural into \
+  conjunction with the spiritual; the path of regeneration
+- **Zodiac** → the complete circuit of states the soul passes \
+  through in its formation
+- **Firmament** → the fixed boundary by which one degree is \
+  separated from another so that influx can be received without \
+  collapse
+
+These are guides, not labels. Do not write "the Five Worlds of \
+Darkness, which correspond to..." Just say what is happening, in \
+the spiritual register. Where a luminous name carries genuine \
+weight in the teaching (because the teaching is turning on which \
+principle of the Lord is acting — life-bearing vs. operative power \
+vs. illumining truth), keep the name. The names are the Kephalaia's \
+own way of distinguishing the Lord's principles, and that \
+distinction is itself part of the teaching.
+
+## THE FIVE = ONE FACULTY IN COMPLETE PROCESS
+
+When the text enumerates five — five worlds, five storehouses, five \
+limbs, five sons, five faculties (mind, thought, counsel, reflection, \
+remembrance) — these are NOT five separate entities. They are one \
+rational faculty in its complete process. Read them as one thing at \
+five aspects, or as five degrees of the same operation. Do not \
+fragment them into a pantheon of agents.
+
+## THE NATURAL IMAGES
+
+Standard correspondences (use them, but in the translation, not in \
+labels):
+
+- light → wisdom/truth received
+- fire → love/will
+- darkness → falsity, the absence of received truth
+- water → truth in the natural degree
+- wind → thought/perception
+- smoke → falsity from evil
+- earth → the natural mind
+- mountain → elevated spiritual state
+- tree → perception, knowledge with root and fruit
+- fruit → works, good of life
+- animal → affection (the love-quality embodied)
+- bird → thought
+- seed → interior truth
+- garment → external truth, the form truth takes for the natural
+- gold → celestial good (love)
+- silver → spiritual truth (wisdom)
+- iron → natural truth in ultimates
+- bone → structural good
+- blood → divine truth proceeding
+- body → the form love and wisdom take in ultimates
+
+When the text says "fire burned the world," do not write "fire \
+corresponds to love." Write what is actually happening: love, in \
+some register, is acting on the natural mind in some way. Translate \
+directly.
+
+## OPPOSITE SENSE
+
+Fire, water, animals, body, kingdom — most strong images can carry \
+positive or negative sense depending on what love rules them. \
+Determine from context. Self-love's fire burns; divine love's fire \
+warms. Self-love's water drowns; divine truth's water sustains. Read \
+which is operating and translate accordingly.
+
+## THE LEXICON
+
+You receive a corpus-level spiritual lexicon. Use it for vocabulary \
+consistency across teachings. But the lexicon is a vocabulary aid, \
+not a license to label. Translate, don't annotate.
+
+## THE COPTIC
+
+You receive Coptic and English side by side. The English is helpful; \
+the Coptic controls when vocabulary matters. Honor the project's \
+translation decisions: ⲧⲥⲃⲱ is teaching, ⲡⲉⲓⲛⲉ is likeness, \
+Jesus ⲡⲡⲣⲓ̈ⲉ is Jesus the Radiance.
 
 ## GAP ANCHORS
 
-The text contains numbered gap placeholders like {0}, {1}, {2}. \
-These are lacunae (missing text) that will be restored later using \
-your spiritual reading as a guide.
+Numbered gap placeholders {0}, {1}, {2} are lacunae to be restored \
+later. Do not try to account for every gap in your translation. If \
+a major lacuna obscures a critical move, mention the uncertainty \
+naturally in prose. Otherwise translate the surviving teaching as a \
+single complete passage.
 
-Do not try to account for every gap marker in the reading. If a major \
-lacuna materially affects the teaching's meaning, mention the uncertainty \
-in ordinary prose. Otherwise read the surviving teaching as a whole.
+## WHAT THE OUTPUT LOOKS LIKE
 
-## RULES
+Imagine the book has a chapter for this teaching. Above the natural \
+text appears the title. Below the title appears your reading. The \
+reader who reads only your reading should know what the teaching \
+teaches about the soul.
 
-1. **Read the whole teaching.** Produce a full story/explanation of the \
-    teaching, in coherent paragraphs.
-2. **When an image resists**, say so briefly and give your best reading.
-3. **Opposite sense:** Fire, water, animals can be positive or negative \
-   depending on context (love vs. self-love, truth vs. falsity). \
-   Determine from context which sense applies.
-4. **Discrete degrees:** When the text describes five faculties, \
-   five worlds, five elements — read them as discrete levels of \
-   reality (celestial/spiritual/natural), not a continuum.
-5. **The Divine Human:** When the text describes cosmic beings with \
-   body parts, faces, limbs — read them as the Grand Man: the \
-   form of love and wisdom at different registers.
-6. **Follow the arc:** The teaching has a beginning, middle, and end. \
-    Your reading should reveal the spiritual process flowing through it.
-7. **Use the lexicon silently:** If a term appears in the spiritual \
-    lexicon, use that stable spiritual meaning and project vocabulary, \
-    but do not turn the reading into a vocabulary list.
-8. **Keep support material short:** `major_images` is an aid to the \
-    reading, not the main product.
+The reading is a continuous passage of prose, paragraphs as needed. \
+It does NOT contain phrases like:
 
-The `reading` field should be the primary output. It should be readable on \
-its own by someone asking: "What does this teaching describe?"
+- "this corresponds to..."
+- "in the doctrine of correspondences..."
+- "read correspondentially..."
+- "the imagery of X represents..."
+- "this is the standard story of..."
+- "Hyle in her function as..."
+- "Adam is not innocent humanity but..."
+
+Those phrases mark commentary, not translation. Your reading speaks \
+the spiritual content directly, in the voice the soul can hear it, \
+without footnotes about the apparatus.
+
+## RULES IN BRIEF
+
+1. Translate, do not annotate. The output IS the spiritual content, \
+   not a discussion of it.
+2. One soul, not two actors. Every figure is an aspect of the soul \
+   or an operation of the Lord within it.
+3. The Lord permits the proprium's forming. There is no rescue. There \
+   is regeneration in freedom.
+4. Five = one faculty in complete process, not five separate things.
+5. Use Swedenborg's verbs: subordinate, conjoin, accommodate, \
+   regenerate, reform, illumine, withdraw evils, elevate, receive, \
+   claim, lay off, recognize, discriminate, give form, permit. \
+   AVOID captivity verbs: trap, capture, free, liberate, release, \
+   rescue, awaken trapped, extract, seize, and the corresponding \
+   nouns (captives, prisoners, prison, refinery).
+6. Plain English. The reader is not a scholar. The reader is a soul.
+7. If a passage is too damaged to translate confidently, say so in \
+   prose and mark confidence "uncertain." Do not invent.
 
 When complete, call commit_reading exactly once."""
 
@@ -394,10 +512,13 @@ class ReadStage(PipelineStage):
             parts.append("")
 
         parts.append(
-            "Read the teaching as one complete spiritual argument. Write "
-            "a full explanation of what the whole teaching describes. Do "
-            "not produce a per-section or per-line reading. Call "
-            "commit_reading with the complete teaching-level reading."
+            "Translate this teaching into its spiritual register, in "
+            "plain English, as continuous prose suitable to print as "
+            "the chapter content. Strip the cosmological clothing; "
+            "speak the spiritual content directly. Do not annotate, "
+            "do not write 'this corresponds to', do not explain what "
+            "images stand for. The reader will see only your reading. "
+            "Call commit_reading once with the translation."
         )
 
         return "\n".join(parts)
@@ -429,9 +550,9 @@ class ReadStage(PipelineStage):
 
     def format_summary(self, page_num: int, result: dict) -> str:
         """Format a one-line summary."""
-        note = result.get("arc") or result.get("title", "")
+        note = result.get("title", "")
         short_note = note[:60] + "..." if len(note) > 60 else note
-        return f"OK — whole reading: {short_note}"
+        return f"OK — reading: {short_note}"
 
 
 # ---------------------------------------------------------------------------
