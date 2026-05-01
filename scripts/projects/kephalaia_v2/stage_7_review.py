@@ -1,35 +1,35 @@
 #!/usr/bin/env python3
 """
-Advisory review of the full extracted/restored corpus.
+Advisory review of teaching-level extraction, readings, and restorations.
 
-Pipeline stage 7: runs AFTER stage_6_restore.py, BEFORE stage_8_lexicon.py.
-This stage is ADVISORY — its output informs but does not bind.
+Pipeline stage 7: runs AFTER stage_6_restore.py, before downstream
+synthesis. This stage is ADVISORY: its output informs but does not bind.
 
-Feeds the complete corpus (all core + restored pages) to Claude in a
-single prompt. The model reads the entire teaching holistically and
-reviews for:
-- Naming overlays: Manichaean editorial names still in core
-- Residual editorial material that slipped through extraction
-- Over-stripped passages: genuine substrate removed
-- Misplaced content: teaching fragments from other sequences
-- Inconsistent extraction across pages
-- Cross-page patterns visible only at corpus scale
+Feeds one or more complete teachings to Claude in a single prompt. The
+model reviews for:
+- Naming overlays or residual editorial material still in core text
+- Over-stripped passages where genuine substrate may have been removed
+- Misplaced content or inconsistent extraction across teachings
+- Whole-reading problems in the Stage 5 spiritual explanation
+- Restoration-quality problems in the Stage 6 lacuna decisions
+- Cross-teaching patterns visible only at corpus scale
 - Deeper transmission layers visible through Persian vocabulary
 
-Output is a single JSON file (not per-page).
-
 Input:
-  - output/projects/kephalaia_v2/core/p_NNN.json     (all)
-  - output/projects/kephalaia_v2/readings/p_NNN.json  (all)
-  - output/projects/kephalaia_v2/restored/p_NNN.json  (all)
+    - output/projects/kephalaia_v2/teachings/t_NNN.json
+    - output/projects/kephalaia_v2/readings/t_NNN.json
+    - output/projects/kephalaia_v2/restored/t_NNN.json
 
 Output:
-  - output/projects/kephalaia_v2/review.json
+    - output/projects/kephalaia_v2/review.json for a full run
+    - output/projects/kephalaia_v2/review_tNNN.json or review_sample.json for
+        selected teaching runs
 
 Usage:
-    python scripts/projects/kephalaia_v2/review.py
-    python scripts/projects/kephalaia_v2/review.py --dry-run
-    python scripts/projects/kephalaia_v2/review.py --debug
+        python scripts/projects/kephalaia_v2/stage_7_review.py
+        python scripts/projects/kephalaia_v2/stage_7_review.py --dry-run
+        python scripts/projects/kephalaia_v2/stage_7_review.py --page 12 --debug
+        python scripts/projects/kephalaia_v2/stage_7_review.py --range 1-10
 """
 import argparse
 import json
@@ -46,10 +46,10 @@ from pipeline_base import (
     PROJECT_DIR,
 )
 
-CORE_DIR = PROJECT_DIR / "core"
+TEACHINGS_DIR = PROJECT_DIR / "teachings"
 READINGS_DIR = PROJECT_DIR / "readings"
 RESTORED_DIR = PROJECT_DIR / "restored"
-OUTPUT_FILE = PROJECT_DIR / "review.json"
+DEFAULT_OUTPUT_FILE = PROJECT_DIR / "review.json"
 
 
 # ---------------------------------------------------------------------------
@@ -64,15 +64,22 @@ REVIEW_TOOL = {
     "input_schema": {
         "type": "object",
         "properties": {
-            "total_pages_reviewed": {
+            "total_teachings_reviewed": {
                 "type": "integer",
-                "description": "Number of pages in the review corpus.",
+                "description": "Number of teachings in the review corpus.",
+            },
+            "scope": {
+                "type": "string",
+                "description": (
+                    "Short description of the review scope, e.g. "
+                    "'all teachings' or 'teaching 12 smoke test'."
+                ),
             },
             "overall_assessment": {
                 "type": "string",
                 "description": (
                     "High-level assessment of extraction quality. "
-                    "Is the core coherent as a continuous teaching? "
+                    "Are the teachings coherent as teaching units? "
                     "Are there systematic problems?"
                 ),
             },
@@ -90,24 +97,34 @@ REVIEW_TOOL = {
                                 "over_stripped",
                                 "misplaced_content",
                                 "inconsistency",
-                                "cross_page_pattern",
+                                "cross_teaching_pattern",
                                 "transmission_layer",
+                                "reading_quality",
                                 "restoration_quality",
+                                "schema_artifact",
                             ],
                             "description": "Category of finding.",
                         },
-                        "pages": {
+                        "teachings": {
                             "type": "array",
                             "items": {"type": "integer"},
                             "description": (
-                                "Page numbers affected by this finding."
+                                "Teaching numbers affected by this finding."
                             ),
                         },
-                        "segments": {
+                        "sections": {
                             "type": "array",
                             "items": {"type": "integer"},
                             "description": (
-                                "Segment indices affected (if specific)."
+                                "Section numbers affected, if specific."
+                            ),
+                        },
+                        "gaps": {
+                            "type": "array",
+                            "items": {"type": "integer"},
+                            "description": (
+                                "Gap IDs affected, if this concerns "
+                                "restoration quality."
                             ),
                         },
                         "description": {
@@ -136,7 +153,7 @@ REVIEW_TOOL = {
                         },
                     },
                     "required": [
-                        "type", "pages", "segments",
+                        "type", "teachings", "sections", "gaps",
                         "description", "severity", "suggestion",
                     ],
                 },
@@ -157,15 +174,20 @@ REVIEW_TOOL = {
                         "pages": {
                             "type": "array",
                             "items": {"type": "integer"},
-                            "description": "Relevant pages.",
+                            "description": "Deprecated; use teachings.",
+                        },
+                        "teachings": {
+                            "type": "array",
+                            "items": {"type": "integer"},
+                            "description": "Relevant teachings.",
                         },
                     },
-                    "required": ["observation", "pages"],
+                    "required": ["observation", "teachings"],
                 },
             },
         },
         "required": [
-            "total_pages_reviewed", "overall_assessment",
+            "total_teachings_reviewed", "scope", "overall_assessment",
             "findings", "structural_observations",
         ],
     },
@@ -181,20 +203,22 @@ You are an expert in ancient cosmological vocabulary — Zoroastrian, \
 Manichaean, and Persian-Iranian traditions — with deep knowledge of \
 Swedenborg's doctrine of correspondences.
 
-You have been given the COMPLETE extracted and restored teaching \
-substrate of the Coptic Kephalaia. This substrate is the oldest \
-layer of the text — Persian correspondential teaching that predates \
-Mani's editorial compilation.
+You have been given teaching-level outputs from the Coptic Kephalaia \
+pipeline. Each teaching may include core Coptic/English text, notes on \
+material removed during extraction, a whole-teaching correspondential \
+reading, and lacuna restoration decisions.
 
 Your task is REVIEW — reading the entire corpus holistically to \
-identify problems that per-page processing cannot catch:
+identify problems that local processing cannot catch. Do not assume \
+anything about earlier pipeline stages beyond what is explicitly shown \
+in the prompt.
 
 ## WHAT TO LOOK FOR
 
 1. **Naming overlays**: Manichaean editorial names still present in \
-   text classified as "substrate." E.g., "the Apostle of Light" is a \
-   Manichaean title for Mani — if it appears in core text, it was \
-   missed by extraction.
+    text classified as core substrate. E.g., "the Apostle of Light" is \
+    a Manichaean title for Mani — if it appears in core text, it may \
+    have been missed by extraction.
 
 2. **Residual editorial material**: Exhortations, audience address, \
    institutional vocabulary that slipped through the layer filter.
@@ -210,23 +234,29 @@ identify problems that per-page processing cannot catch:
 5. **Inconsistency**: The same entity/concept treated differently on \
    different pages without justification.
 
-6. **Cross-page patterns**: Teaching sequences that span page boundaries — \
-   does the transition work? Are structural units coherent?
+6. **Cross-teaching patterns**: Teaching sequences that span multiple \
+    teaching units. Do the transitions work? Are structural units coherent?
 
 7. **Transmission layers**: Evidence of Persian/Iranian vocabulary or \
    concepts visible through the Coptic translation. These are not \
    problems — they are observations about the text's prehistory.
 
-8. **Restoration quality**: Where gap restorations seem inconsistent \
-   with the surrounding teaching, or where better restorations are \
-   suggested by corpus-scale context.
+8. **Reading quality**: Where the whole-teaching reading overclaims, \
+    misses the obvious spiritual arc, imports a system not present in \
+    the text, or contradicts the Coptic/English core.
+
+9. **Restoration quality**: Where gap restorations seem inconsistent \
+    with the surrounding teaching, visible traces, Coptic grammar, or \
+    corpus-scale context. Do not penalize honest non-restoration. Do \
+    flag restored gaps whose English fill is empty or merely a fragment \
+    if that makes the restoration unusable for review.
 
 ## OUTPUT
 
 Produce a structured review with:
 - Overall assessment of extraction quality
-- Individual findings (categorized, with page references)
-- Structural observations about the teaching visible at corpus scale
+- Individual findings categorized with teaching, section, and gap IDs
+- Structural observations visible at teaching or corpus scale
 
 This review is ADVISORY. The human will decide which findings to act on.
 
@@ -237,64 +267,189 @@ When complete, call commit_review exactly once."""
 # Corpus assembly
 # ---------------------------------------------------------------------------
 
-def load_all_pages(directory: Path) -> dict[int, dict]:
-    """Load all page JSONs from a directory, keyed by page number."""
-    pages = {}
-    for path in sorted(directory.glob("p_*.json")):
-        m = re.match(r"p_(\d+)\.json", path.name)
-        if m:
-            page_num = int(m.group(1))
-            with open(path, encoding="utf-8") as f:
-                pages[page_num] = json.load(f)
-    return pages
+def load_all_teachings(directory: Path) -> dict[int, dict]:
+    """Load all teaching JSONs from a directory, keyed by teaching number."""
+    teachings = {}
+    for path in sorted(directory.glob("t_*.json")):
+        match = re.match(r"t_(\d+)\.json", path.name)
+        if not match:
+            continue
+        teaching_num = int(match.group(1))
+        with open(path, encoding="utf-8") as f:
+            teachings[teaching_num] = json.load(f)
+    return teachings
+
+
+def parse_range(range_text: str) -> list[int]:
+    """Parse a CLI range like 1-10 into teaching numbers."""
+    match = re.fullmatch(r"\s*(\d+)\s*-\s*(\d+)\s*", range_text)
+    if not match:
+        raise ValueError(f"Invalid range '{range_text}'. Use START-END.")
+    start = int(match.group(1))
+    end = int(match.group(2))
+    if start > end:
+        raise ValueError(f"Invalid range '{range_text}': start > end.")
+    return list(range(start, end + 1))
+
+
+def select_teaching_numbers(
+    available: list[int],
+    *,
+    teaching: int | None = None,
+    range_text: str | None = None,
+    limit: int | None = None,
+) -> list[int]:
+    """Apply CLI selection flags to available teaching numbers."""
+    if teaching is not None and range_text is not None:
+        raise ValueError("Use --teaching/--page or --range, not both.")
+
+    available_set = set(available)
+    if teaching is not None:
+        selected = [teaching]
+    elif range_text:
+        selected = parse_range(range_text)
+    else:
+        selected = list(available)
+
+    missing = [num for num in selected if num not in available_set]
+    if missing:
+        raise ValueError(
+            "Selected teachings are unavailable: "
+            + ", ".join(str(num) for num in missing)
+        )
+
+    if limit is not None:
+        if limit < 1:
+            raise ValueError("--limit must be >= 1")
+        selected = selected[:limit]
+
+    return selected
+
+
+def shorten(text: str | None, limit: int = 260) -> str:
+    """Trim long note text for compact prompt formatting."""
+    if not text:
+        return ""
+    text = re.sub(r"\s+", " ", str(text)).strip()
+    if len(text) <= limit:
+        return text
+    return text[: limit - 3].rstrip() + "..."
+
+
+def default_output_file(selected: list[int], all_count: int) -> Path:
+    """Choose a safe output path for full vs sample reviews."""
+    if len(selected) == all_count:
+        return DEFAULT_OUTPUT_FILE
+    if len(selected) == 1:
+        return PROJECT_DIR / f"review_t{selected[0]:03d}.json"
+    first = selected[0]
+    last = selected[-1]
+    if selected == list(range(first, last + 1)):
+        return PROJECT_DIR / f"review_t{first:03d}-t{last:03d}.json"
+    return PROJECT_DIR / "review_sample.json"
+
+
+def format_restoration_decision(restoration: dict) -> str:
+    """Format one Stage 6 restoration decision compactly."""
+    gap_id = restoration.get("gap_id", "?")
+    section = restoration.get("section", "?")
+    confidence = restoration.get("confidence", "?")
+    coptic = restoration.get("proposed_coptic") or ""
+    english = restoration.get("proposed_english") or ""
+    basis = shorten(restoration.get("basis"), 220)
+
+    parts = [f"gap {gap_id}", f"section {section}", f"confidence={confidence}"]
+    if coptic:
+        parts.append(f"coptic={coptic}")
+    if english:
+        parts.append(f"english={english}")
+    if basis:
+        parts.append(f"basis={basis}")
+    return " | ".join(parts)
 
 
 def format_corpus_for_review(
-    core_pages: dict[int, dict],
-    reading_pages: dict[int, dict],
-    restored_pages: dict[int, dict],
+    teaching_numbers: list[int],
+    teachings: dict[int, dict],
+    readings: dict[int, dict],
+    restorations_by_teaching: dict[int, dict],
 ) -> str:
     """Format the entire corpus into a single review prompt."""
     parts = []
 
-    for page_num in sorted(core_pages.keys()):
-        core = core_pages[page_num]
-        reading = reading_pages.get(page_num, {})
-        restored = restored_pages.get(page_num, {})
+    for teaching_num in teaching_numbers:
+        teaching = teachings[teaching_num]
+        reading = readings.get(teaching_num, {})
+        restored = restorations_by_teaching.get(teaching_num, {})
+        title = teaching.get("title", "")
 
-        parts.append(f"═══ Page {page_num} ═══")
+        parts.append(f"=== Teaching {teaching_num}: {title} ===")
+        parts.append(f"Extraction confidence: {teaching.get('confidence', '')}")
 
-        # Core segments
-        core_segs = [
-            s for s in core.get("segments", [])
-            if s.get("classification") in ("cosmological_substrate", "mixed")
-        ]
-        reading_segs = {
-            s["i"]: s for s in reading.get("segments", [])
-        }
+        parts.append("\n## Core Text")
+        for segment in teaching.get("segments", []):
+            if segment.get("classification") not in (
+                "cosmological_substrate", "mixed",
+            ):
+                continue
+            coptic = segment.get("core_coptic") or ""
+            english = segment.get("core_english") or ""
+            if not (coptic or english):
+                continue
+            section = segment.get("section")
+            chapter = segment.get("chapter")
+            line = segment.get("line")
+            classification = segment.get("classification", "")
+            parts.append(
+                f"[t{teaching_num}:s{section} ch.{chapter}.{line} "
+                f"{classification}]"
+            )
+            if coptic:
+                parts.append(f"Coptic: {coptic}")
+            if english:
+                parts.append(f"English: {english}")
+            removed = shorten(segment.get("removed_material"), 220)
+            if removed:
+                parts.append(f"Removed note: {removed}")
+            temporal = shorten(segment.get("temporal_note"), 220)
+            if temporal:
+                parts.append(f"Temporal note: {temporal}")
+            parts.append("")
 
-        for seg in core_segs:
-            i = seg["i"]
-            coptic = seg.get("core_coptic") or ""
-            english = seg.get("core_english") or ""
-            parts.append(f"  [p{page_num}:i{i}] {english}")
-            # Include spiritual reading as context
-            if i in reading_segs:
-                spiritual = reading_segs[i].get("spiritual_sense", "")
-                if spiritual:
-                    parts.append(f"    → {spiritual}")
-
-        # Restoration summary
-        restorations = restored.get("restorations", [])
-        if restorations:
-            filled = [
-                r for r in restorations
-                if r.get("confidence") != "unrestorable"
-            ]
-            if filled:
+        parts.append("## Whole-Teaching Correspondential Reading")
+        if reading.get("title"):
+            parts.append(f"Reading title: {reading.get('title')}")
+        if reading.get("arc"):
+            parts.append(f"Arc: {reading.get('arc')}")
+        if reading.get("reading"):
+            parts.append(reading.get("reading", ""))
+        images = reading.get("major_images") or []
+        if images:
+            parts.append("Major images:")
+            for image in images:
                 parts.append(
-                    f"  [{len(filled)} gaps restored on this page]"
+                    f"- {image.get('image')}: {image.get('meaning')}"
                 )
+        if not reading:
+            parts.append("No reading file found for this teaching.")
+
+        parts.append("\n## Stage 6 Restoration Decisions")
+        total = restored.get("total_gaps_in_core", 0)
+        restored_count = restored.get("gaps_restored", 0)
+        unrestorable_count = restored.get("gaps_unrestorable", 0)
+        parts.append(
+            f"Total gaps: {total}; restored: {restored_count}; "
+            f"unrestorable: {unrestorable_count}"
+        )
+        note = shorten(restored.get("restoration_note"), 500)
+        if note:
+            parts.append(f"Restoration note: {note}")
+        decisions = restored.get("restorations", [])
+        if decisions:
+            for decision in decisions:
+                parts.append(f"- {format_restoration_decision(decision)}")
+        else:
+            parts.append("No restoration file or no restoration decisions found.")
 
         parts.append("")
 
@@ -307,11 +462,27 @@ def format_corpus_for_review(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Stage 6: Advisory corpus-scale review"
+        description="Stage 7: Advisory teaching-level corpus review"
     )
     parser.add_argument("--dry-run", "-n", action="store_true")
     parser.add_argument("--debug", action="store_true")
     parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument(
+        "--teaching", "--page", dest="teaching", type=int,
+        help="Review a single teaching number (alias --page kept for pipeline consistency).",
+    )
+    parser.add_argument(
+        "--range", dest="range_text",
+        help="Review an inclusive teaching range, e.g. 1-10.",
+    )
+    parser.add_argument(
+        "--limit", type=int,
+        help="Review only the first N selected teachings.",
+    )
+    parser.add_argument(
+        "--output", type=Path,
+        help="Output JSON path. Relative paths are resolved under the project directory.",
+    )
     parser.add_argument(
         "--effort", default="max",
         choices=["low", "medium", "high", "xhigh", "max"],
@@ -322,30 +493,62 @@ def parse_args() -> argparse.Namespace:
 def main() -> None:
     args = parse_args()
 
-    print("Stage 6: Advisory Review")
-    print("  Corpus-scale review of extraction + restoration quality")
-    print(f"  Output: {OUTPUT_FILE}")
+    print("Stage 7: Advisory Review")
+    print("  Teaching-level review of extraction + reading + restoration quality")
 
-    if OUTPUT_FILE.exists() and not args.overwrite:
+    # Load all data
+    teachings = load_all_teachings(TEACHINGS_DIR)
+    readings = load_all_teachings(READINGS_DIR)
+    restorations_by_teaching = load_all_teachings(RESTORED_DIR)
+
+    if not teachings:
+        print(f"\nERROR: No teachings in {TEACHINGS_DIR}")
+        sys.exit(1)
+
+    try:
+        selected = select_teaching_numbers(
+            sorted(teachings.keys()),
+            teaching=args.teaching,
+            range_text=args.range_text,
+            limit=args.limit,
+        )
+    except ValueError as exc:
+        print(f"\nERROR: {exc}")
+        sys.exit(1)
+
+    output_file = args.output or default_output_file(selected, len(teachings))
+    if not output_file.is_absolute():
+        output_file = PROJECT_DIR / output_file
+
+    print(f"  Output: {output_file}")
+
+    if output_file.exists() and not args.overwrite:
         print("\n  Review already exists (use --overwrite)")
         return
 
-    # Load all data
-    core_pages = load_all_pages(CORE_DIR)
-    reading_pages = load_all_pages(READINGS_DIR)
-    restored_pages = load_all_pages(RESTORED_DIR)
+    missing_readings = [num for num in selected if num not in readings]
+    missing_restored = [
+        num for num in selected if num not in restorations_by_teaching
+    ]
 
-    if not core_pages:
-        print(f"\nERROR: No core pages in {CORE_DIR}")
-        sys.exit(1)
-
-    print(f"\n  Core pages:     {len(core_pages)}")
-    print(f"  Reading pages:  {len(reading_pages)}")
-    print(f"  Restored pages: {len(restored_pages)}")
+    print(f"\n  Teachings:      {len(teachings)} available")
+    print(f"  Readings:       {len(readings)} available")
+    print(f"  Restorations:   {len(restorations_by_teaching)} available")
+    print(f"  Selected:       {len(selected)} teaching(s)")
+    if missing_readings:
+        print(
+            "  WARNING: Missing readings for: "
+            + ", ".join(str(num) for num in missing_readings)
+        )
+    if missing_restored:
+        print(
+            "  WARNING: Missing restorations for: "
+            + ", ".join(str(num) for num in missing_restored)
+        )
 
     # Format corpus
     corpus_text = format_corpus_for_review(
-        core_pages, reading_pages, restored_pages
+        selected, teachings, readings, restorations_by_teaching
     )
     print(f"  Corpus size:    {len(corpus_text):,} chars")
 
@@ -359,11 +562,19 @@ def main() -> None:
     print(f"  Effort: {args.effort}")
     print("\n  Sending corpus for review...", flush=True)
 
+    if len(selected) == len(teachings):
+        scope = "all teachings"
+    elif len(selected) == 1:
+        scope = f"teaching {selected[0]}"
+    else:
+        scope = f"teachings {selected[0]}-{selected[-1]}"
+
     user_msg = (
-        f"## Complete Teaching Corpus ({len(core_pages)} pages)\n\n"
+        f"## Review Scope: {scope}\n\n"
+        f"Selected teachings: {', '.join(str(num) for num in selected)}\n\n"
         f"{corpus_text}\n\n"
-        f"Review this corpus holistically. Look for extraction "
-        f"artifacts, inconsistencies, and structural patterns. "
+        f"Review this corpus holistically. Look for extraction, reading, "
+        f"and restoration artifacts, inconsistencies, and structural patterns. "
         f"Call commit_review with your findings."
     )
 
@@ -375,7 +586,7 @@ def main() -> None:
         tools=[REVIEW_TOOL],
         tool_name="commit_review",
         effort=args.effort,
-        page_label="corpus",
+        page_label=scope,
         debug=args.debug,
     )
 
@@ -384,7 +595,7 @@ def main() -> None:
         sys.exit(1)
 
     # Save
-    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+    with open(output_file, "w", encoding="utf-8") as f:
         json.dump(result, f, indent=2, ensure_ascii=False)
 
     n_findings = len(result.get("findings", []))
@@ -393,7 +604,7 @@ def main() -> None:
         f"\nReview complete: {n_findings} findings, "
         f"{n_observations} structural observations"
     )
-    print(f"  Output: {OUTPUT_FILE}")
+    print(f"  Output: {output_file}")
 
 
 if __name__ == "__main__":
