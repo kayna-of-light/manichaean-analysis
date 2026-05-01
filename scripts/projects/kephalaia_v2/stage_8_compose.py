@@ -310,8 +310,9 @@ You are an expert in the doctrine of correspondences as written by \
 Emanuel Swedenborg, with deep specialization in ancient cosmological \
 vocabulary: Zoroastrian, Manichaean, Persian-Iranian, Syriac, and Coptic.
 
-You are composing the book-level architecture of the Coptic Kephalaia's \
-oldest teaching substrate.
+You are composing the book-level architecture of the Ancient Word as \
+theorized by Emanual Swedenborg. The content presented is an extract of \
+the oldest layers of the Coptic Kephalaia's..
 
 ## WHAT HAS ALREADY BEEN DONE
 
@@ -332,8 +333,24 @@ lexicon. Use the supplied lexicon summary only as vocabulary authority for \
 recognizing recurring systems.
 
 Each teaching includes a whole-teaching correspondential reading. These \
-readings show each teaching's spiritual arc and may help identify sequence \
-and grouping.
+readings show each teaching's spiritual arc.
+
+## PRIMARY ORGANIZING PRINCIPLE
+
+Compose by SPIRITUAL READING, not by surface narrative. The Stage 5 \
+correspondential reading is the primary structural signal; the cosmological \
+story (emanations, archons, light/darkness mixture, ships of the sun and \
+moon, etc.) is the natural-degree vessel through which the spiritual content \
+is expressed. Two teachings that tell different cosmological stories but \
+deliver the same spiritual content (e.g. how the proprium claims what flows \
+through it; how influx descends through discrete degrees; how the Lord is \
+present at every level of the regenerating soul) belong together. Two \
+teachings that share cosmological vocabulary but deliver different spiritual \
+content do not.
+
+Group and sequence on what the reading says the teaching IS — not on what \
+the surface story depicts. When the cosmogonic sequence and the spiritual \
+arc disagree about grouping, follow the spiritual arc.
 
 Some lacunae have been restored where Coptic, English, apparatus, and \
 spiritual context constrained a fill. The prompt shows compact restoration \
@@ -377,20 +394,30 @@ as precise manuscript-line alignment beyond what the source data supports.
 
 ## STRUCTURAL PRINCIPLES TO LOOK FOR
 
-1. Cosmogonic sequence: emanation, descent, mixture, rescue, purification, \
-   ascent, completion.
-2. Correspondence maps: body, faculty, element, geography, astronomy, or \
+(Listed in priority order. Higher-priority principles override lower ones \
+when they disagree about grouping.)
+
+1. Spiritual arc convergence: teachings whose Stage 5 readings describe \
+   the same correspondential movement, even when their surface stories \
+   differ.
+2. Subject coherence at the spiritual level: teachings about the same \
+   spiritual system (proprium, influx, regeneration, the Divine Human in \
+   ultimates, the discrete degrees, the ruling love) regardless of which \
+   cosmological figures carry the content.
+3. Correspondence maps: body, faculty, element, geography, astronomy, or \
    ritual mapped onto spiritual process.
-3. Repeated treatments: the same system appearing in fuller and fragmentary \
-   forms. Prefer the fuller form; mark fragments as parallel or excluded.
-4. Transmission layers: Persian/Iranian substrate, Coptic translation layer, \
-   and Manichaean naming overlay. This matters for grouping but is not itself \
-   an error.
-5. Teaching seams: where one arc completes and the next builds from it.
-6. Numerical structures: three-fold, five-fold, seven-fold, ten-fold, or \
+4. Numerical structures: three-fold, five-fold, seven-fold, ten-fold, or \
    twelve-fold sequences that organize local teaching material.
-7. Subject coherence: teachings about the same topic or system.
-8. Sequential arc: teachings that form a progression.
+5. Repeated treatments: the same spiritual system appearing in fuller and \
+   fragmentary forms. Prefer the fuller form; mark fragments as parallel \
+   or excluded.
+6. Cosmogonic sequence at the surface (emanation, descent, mixture, \
+   rescue, purification, ascent, completion). Use only as a tiebreaker \
+   among teachings whose spiritual content is already coherent.
+7. Transmission layers: Persian/Iranian substrate, Coptic translation \
+   layer, and Manichaean naming overlay. This matters for grouping but \
+   is not itself an error.
+8. Teaching seams: where one arc completes and the next builds from it.
 
 ## RULES
 
@@ -971,11 +998,25 @@ def run_composition_loop(
                         }),
                     })
 
-        # Add assistant response and tool results to messages
-        messages.append({"role": "assistant", "content": response.content})
-
-        if tool_results:
-            messages.append({"role": "user", "content": tool_results})
+        # Add assistant response and tool results to messages.
+        # The Anthropic API rejects assistant messages whose final block is
+        # `thinking`. If the model emitted only thinking (no text, no
+        # tool_use), we cannot append the response — drop it and treat the
+        # turn as a no-op so the nudge below restarts cleanly.
+        has_actionable = bool(text_parts) or bool(tool_results)
+        if has_actionable:
+            messages.append(
+                {"role": "assistant", "content": response.content}
+            )
+            if tool_results:
+                messages.append(
+                    {"role": "user", "content": tool_results}
+                )
+        else:
+            print(
+                "  [WARN] Assistant emitted only thinking — "
+                "skipping assistant turn and nudging."
+            )
 
         # Check completeness
         report = _completeness_report(
@@ -986,8 +1027,14 @@ def run_composition_loop(
             print("\n  Composition complete.")
             break
 
-        # If model stopped without tool calls, nudge it
-        if response.stop_reason == "end_turn" and not tool_results:
+        # If model stopped without tool calls (or emitted only thinking),
+        # nudge it to commit something next turn.
+        if not has_actionable:
+            continuation = _build_continuation_prompt(report)
+            print(f"  [NUDGE] {continuation[:200]}...")
+            messages.append({"role": "user", "content": continuation})
+
+        elif response.stop_reason == "end_turn" and not tool_results:
             continuation = _build_continuation_prompt(report)
             print(f"  [NUDGE] {continuation[:200]}...")
             messages.append({"role": "user", "content": continuation})
