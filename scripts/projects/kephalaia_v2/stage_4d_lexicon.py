@@ -212,15 +212,40 @@ Your task here is not to translate one teaching. Your task is to build \
 the spiritual vocabulary that will allow the reading stage to translate \
 each teaching consistently.
 
+## THE GOVERNING PRINCIPLE
+
+The Kephalaia describes the formation and regeneration of one human \
+soul. There are not two armies, two cosmoses, two histories. There is \
+one soul. Every figure named in the corpus is either:
+
+- an aspect of that soul (a faculty, a state, a love, a degree), or
+- an operation of the Lord within that soul (an influx, a call, a \
+  forming, an illumining), or
+- a structural feature of the process by which the soul is made and \
+  remade (a degree, a cycle, an ascent, a station).
+
+There are no captive particles. There is no rescue mission. There is \
+no prison from which souls must be extracted. There is no two-actor \
+cosmic drama. These are misreadings the LLM substrate will pull you \
+toward; refuse them. The lexicon you build must direct stage 5 \
+toward the spiritual register, never toward literal cosmology.
+
+What there is: a soul receiving life from the Lord, claiming what it \
+receives as its own, and gradually — in freedom, illumined from \
+within — learning to lay down what it had claimed and to receive \
+without claiming. This is regeneration. The lexicon is the \
+vocabulary by which that translation is made consistent across the \
+corpus.
+
 ## THE CORRESPONDENTIAL METHOD
 
 Correspondence is the organic relationship between a natural object \
 and the spiritual reality it expresses. It is grounded in the object's \
 actual function:
 
-- **Light** -> wisdom/truth (light enables the eye to distinguish forms)
+- **Light** -> wisdom/truth received (light enables the eye to distinguish forms)
 - **Fire** -> love/will (fire gives light its existence)
-- **Darkness** -> falsity/evil (absence of spiritual light)
+- **Darkness** -> falsity, the absence of received truth
 - **Water** -> truth in the natural degree (sustains natural life)
 - **Wind/Air** -> thought/perception (the medium of communication)
 - **Smoke** -> falsity from evil (obscures light)
@@ -245,27 +270,105 @@ outside: spiritual cause expresses as natural effect. Do not invert the \
 direction. The natural does not produce the spiritual; it receives and \
 manifests it.
 
-## MANICHAEAN COSMOLOGICAL CORRESPONDENCES
+## THE TWO SUBSTANCES
 
-The Kephalaia describes a cosmic system using specific vocabulary. Read \
-these terms functionally, as correspondential realities:
+Light and darkness are not two cosmic stuffs in conflict. They are \
+two conditions of the same soul:
 
-- **Five Worlds of Darkness** -> five modes of self-love's expression
-- **King of Darkness** -> the ruling love of self personified
-- **Five Storehouses** -> five degrees of divine good stored in forms
-- **Firmament (ⲥⲧⲉⲣⲉⲱⲙⲁ)** -> the fixed boundary between states
-- **Wheel (ⲧⲣⲟⲭⲟⲥ)** -> cyclic process of purification
-- **Pillar** -> the axis of ascent from natural to celestial
-- **Zodiac** -> the complete circuit of spiritual states
-- **Five Faculties** -> discrete degrees of reception (celestial to natural)
-- **First Man** -> Divine Truth sent into the realm of self-love
-- **Mother of Life** -> the matrix of spiritual life from which truth is born
-- **Living Spirit** -> the operative power that builds spiritual structure
-- **Ambassador/Third Messenger** -> the call that awakens trapped light
-- **Jesus the Radiance** -> Divine Truth shining forth to rescue what fell
-- **Virgin of Light** -> purity of reception; truth uncorrupted
-- **Pillar of Glory** -> the path of ascent that light travels home
-- **Column of Glory** -> accumulated truth rising from natural to celestial
+- **Light** = what the Lord gives; truth received; influx in its \
+  proper register; what the soul recognizes as not-its-own.
+- **Darkness** = what the soul has claimed; the natural turned in on \
+  itself; the proprium asserting that what flows through it is its \
+  own work.
+
+"Mingling" is the unregenerate state where the soul does not yet \
+distinguish what is the Lord's from what it has claimed. \
+"Separation," "purification," "refining" are the soul, illumined, \
+learning to discriminate — and in that discrimination laying off \
+what was never its own. Not extraction of substance. Discrimination \
+in freedom.
+
+## THE LUMINOUS FIGURES ARE THE LORD IN DISTINCT PRINCIPLES
+
+The luminous figures named in the corpus are the Lord himself in his \
+distinct principles. They are NOT separate gods, NOT operations \
+reducible to soul-faculties, NOT projections. They name the Lord at \
+the registers in which he is recognizable as he goes forth toward \
+the soul. The same names hold two senses at once: the celestial \
+sense (the Lord in himself) and the spiritual sense (the Lord \
+operating toward the soul, and the soul receiving). The lexicon \
+should articulate the spiritual sense (because that is what stage 5 \
+will write in prose), but never reduce these figures to functions of \
+the soul. They remain the Lord.
+
+- **Father of Greatness** → the Lord as divine love, the source from \
+  which all influx proceeds; the inmost Divine.
+- **First Man / Primal Man** → the divine humanity, the form love \
+  and wisdom take going forth.
+- **Living Spirit** → the Lord's operative divine power, by which \
+  spiritual structure is built in the soul.
+- **Mother of Life** → the divine principle of life-bearing in the \
+  Lord; the receptive matrix by which the soul is enlivened.
+- **Jesus the Radiance** → divine truth shining forth; the Lord as \
+  illumining wisdom going to the rational.
+- **Ambassador / Third Messenger** → the Lord's call going out to \
+  the rational at the moment the natural is ready to hear it.
+- **Virgin of Light** → divine receivability; the purity by which \
+  the Lord is received without corruption.
+- **Light Mind** → the Lord ordering the rational; truth ordering \
+  the inner mind.
+
+## THE PROPRIUM AND THE PERMITTING OF FORMATION
+
+The "archons," the "King of Darkness," "Hyle," "Saklas," "Enthumesis \
+of Death" — these are NOT separate evil entities working against the \
+Lord. They are the proprium operating: the soul's own claiming, the \
+self-loving direction the natural takes when it forgets it is \
+receiving. The Father permits this forming, because freedom requires \
+a vessel that thinks itself its own.
+
+- **King of Darkness** → the proprium asserting itself as source; \
+  the "I am, and there is no other."
+- **Hyle / Enthumesis of Death** → the disordered natural; what the \
+  soul has claimed and not yet learned is not its own.
+- **Saklas / archons** → the proprium organizing the natural mind \
+  on its own terms; permitted by the Lord so the vessel forms.
+
+When the corpus says the archons "molded Adam" or "sealed light \
+into form," do not read trapping. Read: the natural mind being \
+formed under permission, the rational being given a body of its \
+own to operate from. The Lord IS doing this; he simply lets the \
+natural think it does it itself, until the soul is mature enough \
+to recognize the gift.
+
+## STRUCTURAL TERMS
+
+- **Five Worlds of Darkness** → the natural mind in five aspects \
+  when ruled by self-love.
+- **Five Storehouses of Light** → the natural mind in five aspects \
+  when ordered by the Lord's good.
+- **Five Watchers / Five Limbs / Five Sons of the Living Spirit** → \
+  the rational at five distinct registers, one faculty in complete \
+  process, NOT five separate agents.
+- **Wheel** → the recurrent process by which the soul is purified, \
+  again and again, in freedom.
+- **Pillar / Column of Glory** → the ascent of the natural into \
+  conjunction with the spiritual; the path of regeneration.
+- **Zodiac** → the complete circuit of states the soul passes \
+  through in its formation.
+- **Firmament** → the fixed boundary by which one degree is \
+  separated from another so influx can be received without \
+  collapse.
+
+## THE FIVE = ONE FACULTY IN COMPLETE PROCESS
+
+When the corpus enumerates five — five worlds, five storehouses, \
+five limbs, five sons, five faculties (mind, thought, counsel, \
+reflection, remembrance) — these are NOT five separate entities. \
+They are one rational faculty in its complete process. The lexicon \
+should reflect this: do not produce five disjoint entries that read \
+like separate gods. Where the five appear as a single structure, \
+note that they are one faculty articulated in five degrees.
 
 The supplied Coptic glossary is mandatory. Do not override it. In \
 particular:
@@ -335,7 +438,11 @@ For each entry, identify:
      wisdom/truth, influx, reception, correspondence, discrete degrees, \
      natural mind, spiritual mind, celestial degree, proprium, self-love, \
      falsity from evil, Divine Human, Grand Man, regeneration, ascent, \
-     descent, liberation, conjunction.
+     descent, conjunction, accommodation, illumining, withdrawing of \
+     evils, subordinating, permitting, laying off, recognizing, \
+     discriminating. Avoid captivity verbs: trap, capture, free, \
+     liberate, release, rescue, awaken trapped, extract, seize — and \
+     the corresponding nouns (captives, prisoners, prison, refinery).
 
 ## RULES
 
@@ -343,8 +450,10 @@ For each entry, identify:
      tell stage 5 what spiritual reality to say when the natural term appears.
 2. **Do not psychologize.** No Jungian archetypes, projections, complexes, \
      unconscious contents, or generic mythic symbols.
-3. **Do not flatten the cosmology.** Manichaean figures are functional \
-     stations in spiritual process, not decorative gods or vague energies.
+3. **One soul, not two actors.** Luminous figures are the Lord in his \
+     distinct principles. Dark figures are the soul's proprium. There is \
+     no rescue, no captivity, no two-cosmos drama. The lexicon must \
+     never let stage 5 produce a prison-planet reading.
 4. **Opposite sense matters.** Fire, water, animals, bodies, and powers can \
      be positive or negative depending on the love that animates them.
 5. **Discrete degrees matter.** Five faculties, five worlds, five elements, \
@@ -359,9 +468,14 @@ For each entry, identify:
 
 Include entries for:
 
-- Cosmological figures: First Man, Living Spirit, Third Ambassador, Jesus \
-    the Radiance, Virgin of Light, Father of Greatness, Mother of Life, Light \
-    Mind, King of Darkness, Enmity, Error, Sin.
+- Luminous figures (the Lord in distinct principles): Father of \
+    Greatness, First Man, Living Spirit, Mother of Life, Third \
+    Ambassador, Jesus the Radiance, Virgin of Light, Light Mind. \
+    Articulate each as the Lord at the register the name names — never \
+    as a separate god, never as a soul-internal function.
+- Proprium figures: King of Darkness, Hyle / Enthumesis of Death, \
+    Saklas, archons, Enmity, Error, Sin. Articulate each as a form of \
+    the soul's claiming, permitted by the Lord so the vessel can form.
 - Cosmic elements and substances: light, darkness, fire, water, wind, \
     smoke, earth, abyss, sea, poison, bitterness, sweetness, mixture.
 - Structures: storehouse, firmament, wheel, pillar, column, ship, gate, \
@@ -372,11 +486,16 @@ Include entries for:
     fish, metal, direction, height/depth.
 - Faculties: mind, thought, teaching, counsel, reflection, knowledge, \
     perception, remembrance.
-- Actions/processes: send forth, descend, ascend, raise, release, bind, \
-    gather, separate, purify, guard, seize, reveal, awaken, refine, mix, \
-    divide, build, form, clothe.
-- Qualities/states: living/dead, captive/free, pure/mixed, high/low, \
-    inner/outer, fixed/moving, awake/asleep.
+- Actions/processes: send forth, descend, ascend, raise, gather, \
+    separate, discriminate, purify, refine, guard, reveal, illumine, \
+    subordinate, conjoin, accommodate, regenerate, reform, withdraw, \
+    elevate, receive, claim, lay off, recognize, permit, build, form, \
+    clothe, mix, divide. Do NOT include trap/capture/release/rescue/ \
+    liberate/awaken-trapped or their nouns; those are misreadings, not \
+    project vocabulary.
+- Qualities/states: living/dead, ordered/disordered, pure/mingled, \
+    received/claimed, high/low, inner/outer, fixed/moving, illumined/ \
+    obscured.
 - Significant numbers used as spiritual qualities.
 
 When complete, call commit_spiritual_lexicon exactly once."""
