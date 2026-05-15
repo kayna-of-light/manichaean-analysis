@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# data (SQLite db + backups; never committed)
+data/reviewer.db
+data/reviewer.db-shm
+data/reviewer.db-wal
+data/backups/
+data/exports/
+
+# misc
+.DS_Store
+*.log
+.env*.local

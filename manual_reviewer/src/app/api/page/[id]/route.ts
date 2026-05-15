@@ -1,0 +1,250 @@
+import { NextRequest, NextResponse } from "next/server";
+import {
+  readInitialBaseline,
+  readV2Geometry,
+  textBodyImageUrl,
+  getWitnessTokensForPage,
+  type WitnessToken,
+} from "@/lib/pipelineReaders";
+import {
+  mergeTokens,
+  readBlobEdits,
+  readClusterOverridesByIds,
+  readLineStatuses,
+  readNewBboxes,
+} from "@/lib/repo";
+import type { BaselineLine, BaselineToken, Token } from "@/lib/zodSchemas";
+import { getDb } from "@/lib/db";
+
+export const dynamic = "force-dynamic";
+
+/**
+ * v2 canvas / v1 baseline. The image is the v2 text_body crop. Line geometry
+ * comes from v2 body_geometry baselines; token positions are v1 img_quads
+ * remapped into v2 text_body coordinates by the offline transposer
+ * (scripts/projects/manual_reviewer_ingest/transpose_v1_to_v2.py).
+ *
+ * Editing layers (blob_edits / cluster_overrides / new_bboxes / unset_blobs /
+ * line statuses) are unchanged — overrides on top of the baseline tokens,
+ * keyed by (page, line_index, blob_id).
+ */
+export async function GET(
+  _req: NextRequest,
+  ctx: { params: Promise<{ id: string }> },
+) {
+  const { id } = await ctx.params;
+  const page = id.padStart(3, "0");
+  const pageInt = parseInt(page, 10);
+  if (!Number.isFinite(pageInt)) {
+    return NextResponse.json({ error: "invalid page id" }, { status: 400 });
+  }
+
+  const baseline = await readInitialBaseline(page);
+  if (!baseline) {
+    return NextResponse.json({ error: "page not found" }, { status: 404 });
+  }
+
+  // v2 geometry provides actual ink bounding boxes per row — much better for
+  // line strip cropping than deriving from baseline_y.
+  // bbox format is [x, y, width, height] — convert to [x0, y0, x1, y1].
+  const v2Rows = await readV2Geometry(page);
+  const rowBboxMap = new Map<number, [number, number, number, number]>();
+  if (v2Rows) {
+    for (const r of v2Rows) {
+      const [bx, by, bw, bh] = r.bbox;
+      rowBboxMap.set(r.index, [bx, by, bx + bw, by + bh]);
+    }
+  }
+
+  // LLM witness data: provides final_label (with combining marks from mark
+  // attachment) and corrected base characters from LLM alignment.
+  const witnessMap = await getWitnessTokensForPage(page);
+
+  const baselineYs = baseline.lines.map((l) => l.baseline_y).sort((a, b) => a - b);
+  const steps: number[] = [];
+  for (let i = 1; i < baselineYs.length; i++) steps.push(baselineYs[i] - baselineYs[i - 1]);
+  steps.sort((a, b) => a - b);
+  const medianStep = steps.length > 0 ? steps[Math.floor(steps.length / 2)] : 40;
+  const halfStep = Math.max(medianStep / 2, 12);
+
+  const clusterIds = new Set<number>();
+  for (const ln of baseline.lines) {
+    for (const t of ln.tokens) {
+      const cid = parseInt(t.cluster, 10);
+      if (Number.isFinite(cid)) clusterIds.add(cid);
+    }
+  }
+
+  const edits = readBlobEdits(pageInt);
+  const clusterOverrides = readClusterOverridesByIds([...clusterIds]);
+  const newBboxes = readNewBboxes(pageInt);
+  const parsedNewBboxes = newBboxes.map((nb) => ({
+    ...nb,
+    diacritics: parseDiacritics(nb.diacritics),
+  }));
+  const lineStatuses = readLineStatuses(pageInt);
+
+  const db = getDb();
+  const unsetRows = db
+    .prepare<[number], { line_index: number; blob_id: string }>(
+      "SELECT line_index, blob_id FROM unset_blobs WHERE page = ?",
+    )
+    .all(pageInt);
+  const unsetSet = new Set(unsetRows.map((r) => `${r.line_index}:${r.blob_id}`));
+
+  const [imgW, imgH] = baseline.image_size;
+  const builtLines = baseline.lines.map((ln) =>
+    buildLine(ln, page, halfStep, imgW, imgH, rowBboxMap, witnessMap),
+  );
+
+  const mergedLines = builtLines.map((ln) => {
+    const tokens = mergeTokens(
+      pageInt,
+      ln.tokens,
+      edits,
+      clusterOverrides,
+      unsetSet,
+    );
+    const tokensWithQuad = tokens.map((t, idx) => ({
+      ...t,
+      img_quad: ln.quads[idx],
+    }));
+    const status = lineStatuses.get(ln.line_index) ?? {
+      status: "pending" as const,
+      note: null,
+    };
+    return {
+      line_index: ln.line_index,
+      tokens: tokensWithQuad,
+      warped_size: ln.warped_size,
+      line_quad: ln.line_quad,
+      status: status.status,
+      note: status.note,
+    };
+  });
+
+  return NextResponse.json({
+    page,
+    page_int: pageInt,
+    image_size: [imgW, imgH] as [number, number],
+    page_size: [imgW, imgH] as [number, number],
+    bbox: { x0: 0, y0: 0, x1: imgW, y1: imgH },
+    baseline_y_warped: 0,
+    warp_height: 0,
+    image_url: textBodyImageUrl(page),
+    lines: mergedLines,
+    new_bboxes: parsedNewBboxes,
+    baseline_meta: {
+      rows_v1: baseline.rows_v1 ?? null,
+      rows_v2: baseline.rows_v2 ?? null,
+      rows_aligned: baseline.rows_aligned ?? null,
+      tokens_excluded: baseline.tokens_excluded ?? null,
+    },
+  });
+}
+
+function parseDiacritics(value: string | null): string[] {
+  if (!value) return [];
+  try {
+    const parsed = JSON.parse(value);
+    return Array.isArray(parsed) ? parsed.filter((v): v is string => typeof v === "string") : [];
+  } catch {
+    return [];
+  }
+}
+
+function buildLine(
+  ln: BaselineLine,
+  page: string,
+  halfStep: number,
+  imgW: number,
+  imgH: number,
+  rowBboxMap: Map<number, [number, number, number, number]>,
+  witnessMap: Map<string, WitnessToken>,
+) {
+  const allTokens: Token[] = ln.tokens.map((t) =>
+    baselineTokenToToken(t, page, ln.line_index),
+  );
+  const allQuads: (number[][] | null)[] = ln.tokens.map((t) => t.geometry.img_quad);
+
+  // Apply display_label and overline_mark_id from the composite index.
+  // NOTE: baseline uses 1-based line indices; composite/index uses 0-based.
+  for (const t of allTokens) {
+    const key = `${page}:${t.line_index - 1}:${t.blob_id}`;
+    const w = witnessMap.get(key);
+    if (w?.final_label) {
+      t.label = w.final_label;
+    }
+    if (w?.overline_mark_id != null) {
+      t.overline_mark_id = w.overline_mark_id;
+    }
+  }
+
+  // Use v2 geometry row bbox if available — this is the actual ink extent.
+  // Add margin matching the v2 review sheet so chars aren't clipped at edges.
+  // Both LineCanvas and TokenStrip will share this x/y extent.
+  // Fall back to baseline_y heuristic only when geometry is missing.
+  const LINE_MARGIN_X = 12;
+  const LINE_MARGIN_Y = 6;
+  const rowBbox = rowBboxMap.get(ln.line_index);
+  let x0: number, x1: number, yTop: number, yBot: number;
+  if (rowBbox) {
+    x0 = Math.max(0, rowBbox[0] - LINE_MARGIN_X);
+    yTop = Math.max(0, rowBbox[1] - LINE_MARGIN_Y);
+    x1 = Math.min(imgW, rowBbox[2] + LINE_MARGIN_X);
+    yBot = Math.min(imgH, rowBbox[3] + LINE_MARGIN_Y);
+  } else {
+    x0 = Math.max(0, Math.min(ln.x_span[0], ln.x_span[1]));
+    x1 = Math.min(imgW, Math.max(ln.x_span[0], ln.x_span[1]));
+    const step = halfStep * 2;
+    yTop = ln.baseline_y - step * 0.85;
+    yBot = ln.baseline_y + step * 0.15;
+  }
+
+  const line_quad: number[][] = [
+    [x0, yTop],
+    [x1, yTop],
+    [x1, yBot],
+    [x0, yBot],
+  ];
+  const warped_size: [number, number] = [
+    Math.max(x1 - x0, 1),
+    Math.max(yBot - yTop, 1),
+  ];
+  return { line_index: ln.line_index, tokens: allTokens, quads: allQuads, line_quad, warped_size };
+}
+
+function baselineTokenToToken(
+  t: BaselineToken,
+  page: string,
+  line_index: number,
+): Token {
+  const [ax0, ay0, ax1, ay1] = t.geometry.aabb;
+  const width = ax1 - ax0;
+  const height = ay1 - ay0;
+  const area = width * height;
+  return {
+    page,
+    line_index,
+    blob_id: t.blob_id,
+    cluster: t.cluster,
+    label: t.label ?? null,
+    manual_override: t.manual_override ?? null,
+    manual_warning: t.manual_warning ?? null,
+    subcluster_override: t.subcluster_override ?? null,
+    geometric_override: t.geometric_override ?? null,
+    editorial_override: t.editorial_override ?? null,
+    review: t.review ?? false,
+    candidates: t.candidates ?? [],
+    overline_mark_id: null,
+    geometry: {
+      warped_bbox: t.geometry.warped_bbox,
+      width,
+      height,
+      area,
+      aspect: height > 0 ? width / height : 0,
+      center_x: (ax0 + ax1) / 2,
+      center_y: (ay0 + ay1) / 2,
+    },
+  };
+}
