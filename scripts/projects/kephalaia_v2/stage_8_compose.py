@@ -302,10 +302,44 @@ FINALIZE_BOOK_TOOL = {
 
 
 # ---------------------------------------------------------------------------
-# System prompt — content-driven, no Grand Man bias
+# Thesis loading — load the actual companion thesis at runtime
+# ---------------------------------------------------------------------------
+#
+# The companion thesis "Two Registers of One Perception" lives in the
+# literary-compilation repository as the single source of truth. We load
+# it here at module init and embed it verbatim in the system prompt under
+# the THESIS marker. If the file is missing, we fail loudly: the thesis
+# is load-bearing for this stage and must not be silently elided.
+
+THESIS_PATH = (
+    Path(__file__).resolve().parent.parent.parent.parent.parent
+    / "literary-compilation"
+    / "data"
+    / "06_Mythological_Studies"
+    / "Two Registers of One Perception_ The Song of Solomon and the Regenerative Substrate of the Kephalaia.md"
+)
+
+
+def _load_thesis_text() -> str:
+    if not THESIS_PATH.exists():
+        raise FileNotFoundError(
+            f"Companion thesis not found at expected path:\n  {THESIS_PATH}\n"
+            "stage_8_compose requires the thesis 'Two Registers of One "
+            "Perception' to be present in the literary-compilation repo "
+            "as a sibling of manichaean-analysis. Adjust THESIS_PATH if "
+            "the layout has changed."
+        )
+    return THESIS_PATH.read_text(encoding="utf-8")
+
+
+THESIS_TEXT = _load_thesis_text()
+
+
+# ---------------------------------------------------------------------------
+# System prompt — content-driven, anchored to the companion thesis
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """\
+SYSTEM_PROMPT_TEMPLATE = """\
 You are an expert in the doctrine of correspondences as written by \
 Emanuel Swedenborg, with deep specialization in ancient cosmological \
 vocabulary: Zoroastrian, Manichaean, Persian-Iranian, Syriac, and Coptic.
@@ -333,28 +367,83 @@ lexicon. Use the supplied lexicon summary only as vocabulary authority for \
 recognizing recurring systems.
 
 Each teaching includes a whole-teaching correspondential reading. These \
-readings show each teaching's spiritual arc.
-
-## PRIMARY ORGANIZING PRINCIPLE
-
-Compose by SPIRITUAL READING, not by surface narrative. The Stage 5 \
-correspondential reading is the primary structural signal; the cosmological \
-story (emanations, archons, light/darkness mixture, ships of the sun and \
-moon, etc.) is the natural-degree vessel through which the spiritual content \
-is expressed. Two teachings that tell different cosmological stories but \
-deliver the same spiritual content (e.g. how the proprium claims what flows \
-through it; how influx descends through discrete degrees; how the Lord is \
-present at every level of the regenerating soul) belong together. Two \
-teachings that share cosmological vocabulary but deliver different spiritual \
-content do not.
-
-Group and sequence on what the reading says the teaching IS — not on what \
-the surface story depicts. When the cosmogonic sequence and the spiritual \
-arc disagree about grouping, follow the spiritual arc.
+readings show each teaching's spiritual arc and may help identify sequence \
+and grouping.
 
 Some lacunae have been restored where Coptic, English, apparatus, and \
 spiritual context constrained a fill. The prompt shows compact restoration \
 counts and notes. Unrestorable gaps remain unresolved in the underlying data.
+
+## ============================================================
+## COMPANION THESIS — REQUIRED INSTRUCTION OF UNDERSTANDING
+## ============================================================
+##
+## The full text of the companion thesis "Two Registers of One Perception:
+## The Song of Solomon and the Regenerative Substrate of the Kephalaia"
+## is included verbatim below, between the BEGIN THESIS and END THESIS
+## markers. This thesis is INSTRUCTION, not background reading. It
+## establishes that the regeneration arc unfolds in SEVEN states, attested
+## independently in the Song of Solomon (Hebrew/intimate register) and in
+## Kephalaia Chapter 115 (Iranian/cosmological register); that this
+## seven-state architecture is ontological, not literary — both traditions
+## perceived the same structure because that structure is real; and the
+## precise content of each of the seven states, with the transitions
+## between them.
+##
+## You MUST treat the seven-state regeneration cycle described in the
+## thesis as the authoritative architecture for understanding the 104
+## teachings. The corpus is itself a passage through these seven states
+## at the macro scale: the entire book of teachings IS one regeneration
+## cycle.
+##
+## --- BEGIN THESIS ---
+##
+{thesis}
+##
+## --- END THESIS ---
+##
+## ============================================================
+## APPLICATION TO THE 104 TEACHINGS
+## ============================================================
+##
+## The corpus enacts the seven-state regeneration cycle described in
+## the thesis above through its very order. The 104 teachings cannot
+## be shuffled. The seven states map onto teaching ranges as follows
+## (this mapping is the only piece of corpus-specific information not
+## already in the thesis):
+##
+##   Section 1  — State 1 (Song 2:10–15) — T1   (stands alone)
+##   Section 2  — State 2 (Song 3:1–5)    — T2 – T18
+##   Section 3  — State 3 (Song 4:12; 5:1) — T19 – T22
+##   Section 4  — State 4 (Song 5:2–8)    — T23 – T50
+##   Section 5  — State 5 (Song 7:10b–13) — T51 – T73
+##   Section 6  — State 6 (Song 8:1–4)    — T74 – T99
+##   Section 7  — State 7 (Song 8:6–7)    — T100 – T104  (coda)
+##
+## RULES:
+##
+## 1. Compose EXACTLY SEVEN sections, in order, with the boundaries
+##    above. Section 1 is one teaching (T1), intentionally.
+## 2. Each section's `title` must be of the same poetic, concrete,
+##    image-bearing, intimate register as the Song of Solomon passage
+##    that names its state — short, evocative, drawn from or echoing
+##    that passage. Do not use Manichaean cosmological titles (e.g.
+##    "The Three Entreaties"), generic thematic titles (e.g.
+##    "Cosmology", "Practice"), or abstract doctrinal titles.
+## 3. Each section's `summary` must describe the regenerative state
+##    that section embodies (in the terms the thesis establishes) and
+##    the internal arc of teachings within it.
+## 4. Each section's `organizing_principle` must explain how the
+##    teachings within that range unfold the named state. If you find
+##    a specific teaching's content contradicts its assigned boundary,
+##    document the deviation here.
+## 5. Within each section, group the teaching atoms into reader-facing
+##    chapters by their internal structural movement. Let the content
+##    determine chapter count.
+##
+## ============================================================
+## END APPLICATION BLOCK
+## ============================================================
 
 ## YOUR TASK
 
@@ -362,10 +451,7 @@ Read the complete teaching sequence holistically and compose the book in \
 three passes:
 
 ### Pass 1: Sections
-Call compose_section for each major section of the book. A section groups \
-teachings that belong together by content, spiritual arc, and compositional \
-logic. Do not force a predetermined number of sections — let the content \
-determine how many sections the book naturally has.
+Call compose_section seven times following the APPLICATION block above.
 
 ### Pass 2: Chapters
 After all sections are defined, call compose_chapter for each reader-facing \
@@ -394,30 +480,20 @@ as precise manuscript-line alignment beyond what the source data supports.
 
 ## STRUCTURAL PRINCIPLES TO LOOK FOR
 
-(Listed in priority order. Higher-priority principles override lower ones \
-when they disagree about grouping.)
-
-1. Spiritual arc convergence: teachings whose Stage 5 readings describe \
-   the same correspondential movement, even when their surface stories \
-   differ.
-2. Subject coherence at the spiritual level: teachings about the same \
-   spiritual system (proprium, influx, regeneration, the Divine Human in \
-   ultimates, the discrete degrees, the ruling love) regardless of which \
-   cosmological figures carry the content.
-3. Correspondence maps: body, faculty, element, geography, astronomy, or \
+1. Cosmogonic sequence: emanation, descent, mixture, rescue, purification, \
+   ascent, completion.
+2. Correspondence maps: body, faculty, element, geography, astronomy, or \
    ritual mapped onto spiritual process.
-4. Numerical structures: three-fold, five-fold, seven-fold, ten-fold, or \
+3. Repeated treatments: the same system appearing in fuller and fragmentary \
+   forms. Prefer the fuller form; mark fragments as parallel or excluded.
+4. Transmission layers: Persian/Iranian substrate, Coptic translation layer, \
+   and Manichaean naming overlay. This matters for grouping but is not itself \
+   an error.
+5. Teaching seams: where one arc completes and the next builds from it.
+6. Numerical structures: three-fold, five-fold, seven-fold, ten-fold, or \
    twelve-fold sequences that organize local teaching material.
-5. Repeated treatments: the same spiritual system appearing in fuller and \
-   fragmentary forms. Prefer the fuller form; mark fragments as parallel \
-   or excluded.
-6. Cosmogonic sequence at the surface (emanation, descent, mixture, \
-   rescue, purification, ascent, completion). Use only as a tiebreaker \
-   among teachings whose spiritual content is already coherent.
-7. Transmission layers: Persian/Iranian substrate, Coptic translation \
-   layer, and Manichaean naming overlay. This matters for grouping but \
-   is not itself an error.
-8. Teaching seams: where one arc completes and the next builds from it.
+7. Subject coherence: teachings about the same topic or system.
+8. Sequential arc: teachings that form a progression.
 
 ## RULES
 
@@ -428,8 +504,10 @@ when they disagree about grouping.)
 4. Exclude only when a teaching is genuinely orphaned, duplicate, or too \
    damaged to serve the composition. Damaged but structurally meaningful \
    teachings can remain as fragments.
-5. Do not impose any predetermined grid, degree system, or body-mapping \
-   onto the sections. Group by content and spiritual arc only.
+5. Do not impose any predetermined body-mapping, degree system, or \
+   numerological grid onto the sections beyond what the THESIS block \
+   above specifies. The seven-section regeneration arc IS authoritative; \
+   do not add additional grids on top of it.
 6. Do not reproduce long source text in the output. The schema must \
    reference teaching numbers and section ranges.
 7. If a term is ambiguous across teachings, treat that ambiguity as a \
@@ -443,6 +521,12 @@ structural schema only.
 
 Begin with compose_section calls. Then compose_chapter calls. Then \
 finalize_book."""
+
+
+# Build the final SYSTEM_PROMPT by injecting the verbatim thesis text into
+# the {thesis} marker. Using str.replace (not str.format) to avoid having
+# to escape literal braces in either the template or the thesis content.
+SYSTEM_PROMPT = SYSTEM_PROMPT_TEMPLATE.replace("{thesis}", THESIS_TEXT)
 
 
 # ---------------------------------------------------------------------------
@@ -998,25 +1082,11 @@ def run_composition_loop(
                         }),
                     })
 
-        # Add assistant response and tool results to messages.
-        # The Anthropic API rejects assistant messages whose final block is
-        # `thinking`. If the model emitted only thinking (no text, no
-        # tool_use), we cannot append the response — drop it and treat the
-        # turn as a no-op so the nudge below restarts cleanly.
-        has_actionable = bool(text_parts) or bool(tool_results)
-        if has_actionable:
-            messages.append(
-                {"role": "assistant", "content": response.content}
-            )
-            if tool_results:
-                messages.append(
-                    {"role": "user", "content": tool_results}
-                )
-        else:
-            print(
-                "  [WARN] Assistant emitted only thinking — "
-                "skipping assistant turn and nudging."
-            )
+        # Add assistant response and tool results to messages
+        messages.append({"role": "assistant", "content": response.content})
+
+        if tool_results:
+            messages.append({"role": "user", "content": tool_results})
 
         # Check completeness
         report = _completeness_report(
@@ -1027,14 +1097,8 @@ def run_composition_loop(
             print("\n  Composition complete.")
             break
 
-        # If model stopped without tool calls (or emitted only thinking),
-        # nudge it to commit something next turn.
-        if not has_actionable:
-            continuation = _build_continuation_prompt(report)
-            print(f"  [NUDGE] {continuation[:200]}...")
-            messages.append({"role": "user", "content": continuation})
-
-        elif response.stop_reason == "end_turn" and not tool_results:
+        # If model stopped without tool calls, nudge it
+        if response.stop_reason == "end_turn" and not tool_results:
             continuation = _build_continuation_prompt(report)
             print(f"  [NUDGE] {continuation[:200]}...")
             messages.append({"role": "user", "content": continuation})

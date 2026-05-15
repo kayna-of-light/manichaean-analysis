@@ -209,6 +209,15 @@ python scripts/scrape_gnosis.py
 
 ---
 
+## Skills
+
+| Skill | Purpose |
+|---|---|
+| [kephalaia-page-audit](skills/kephalaia-page-audit/SKILL.md) | Per-page visual audit of `output/projects/kephalaia_v2/pages/p_NNN.json` against manuscript image and Gardner translation. Use when working through `temp/page_audit_chores.md`. |
+| [kephalaia-ocr-correction](skills/kephalaia-ocr-correction/SKILL.md) | Manuscript-first OCR correction workflow for `output/projects/kephalaia_ocr`: review sheets, mixed shape clusters, subcluster labels, lacuna dots, connected Coptic blobs, rebuilds, and verification. |
+
+---
+
 ## Standing Rules
 
 - **No git commits** — the user manages git operations directly
