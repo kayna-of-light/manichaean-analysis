@@ -25,11 +25,13 @@ Thumbs.db
 *.swp
 *.swo
 
-# Output (PDFs are generated, not tracked)
-output/pdfs/
-
-# Extracted page images (derived from copyrighted PDF — not tracked)
-output/projects/kephalaia_v2/coptic/images/
+# Output (synced to Google Drive, not tracked)
+output/
 
 # Large data
 *.pdf
+
+# Manual reviewer local state (SQLite db, backups, exports)
+manual_reviewer/data/
+manual_reviewer/.next/
+manual_reviewer/node_modules/

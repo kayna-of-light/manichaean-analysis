@@ -13,6 +13,10 @@ This project is part of a multi-repository research framework:
 | **[nag-hammadi-analysis](https://github.com/kayna-of-light/NagHammadiLibrary)** | Correspondential reading of the complete Nag Hammadi Library |
 | **[proto-luke-reconstruction](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
 
+## Artifact Storage
+
+Generated `output/` artifacts are mirrored to Google Drive under `.git-data/manichaean-analysis/output/` and are not tracked in Git. See `docs/artifact_storage.md` for the sync command and recovery policy.
+
 ## Why Manichaeism?
 
 Mani (216–274 CE) explicitly synthesized Zoroaster, Buddha, and Jesus — claiming to complete their "partial truths" in a universal religion. The Manichaean tradition is the **only historical religion to have been officially adopted by the Uyghur Khaganate** (762/763 CE), placing its scriptures physically in the cave libraries of "Great Tartary" — the Turfan/Turpan region that Swedenborg described as preserving the Ancient Word.
