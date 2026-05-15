@@ -214,19 +214,37 @@ TRANSLATE_TOOL = {
                             ),
                         },
                         "est_chars": {
-                            "type": "integer",
+                            "type": ["integer", "null"],
                             "description": (
                                 "(lacuna only) Estimated characters lost, "
-                                "roughly based on dot count or estimated "
-                                "visual length of dotted gap in "
-                                "transcription. Editorial estimate."
+                                "based on dot count or estimated visual "
+                                "length of the dotted gap. Editorial "
+                                "estimate, not exact. Use null when the "
+                                "editor declined to estimate — empty "
+                                "brackets [ ] with no dots, or German "
+                                "destruction markers (abgerieben, "
+                                "zerstört, unlesbar, verwischt, geringe "
+                                "Spuren, fast völlig zerstört, nicht zu "
+                                "lesen). null means 'extent unknown', "
+                                "NOT zero."
                             ),
                         },
                         "partial": {
                             "type": "string",
                             "description": (
-                                "(lacuna only, optional) Any visible letter "
-                                "traces that don't resolve to a word."
+                                "(lacuna only, optional) Either: (a) any "
+                                "visible letter traces that don't resolve "
+                                "to a word, or (b) the verbatim editor "
+                                "marker explaining the gap, in the original "
+                                "German — e.g. 'abgerieben' (rubbed off), "
+                                "'zerstört' (destroyed), 'verwischt' "
+                                "(smudged), 'geringe Spuren' (faint traces), "
+                                "'unlesbar' (illegible), 'nicht zu lesen' "
+                                "(cannot be read), 'fast völlig zerstört' "
+                                "(almost completely destroyed). Markers "
+                                "may combine: 'verwischt und abgerieben'. "
+                                "This preserves the editor's diagnosis of "
+                                "WHY the gap exists."
                             ),
                         },
                         "coptic": {
@@ -249,6 +267,22 @@ TRANSLATE_TOOL = {
                                 "(restoration only) Why this reading is "
                                 "proposed — surviving traces, context, "
                                 "parallel passages, idiom recognition."
+                            ),
+                        },
+                        "uncertain": {
+                            "type": "boolean",
+                            "description": (
+                                "(restoration only, optional, default "
+                                "false) True when the reading is "
+                                "transmitted on the manuscript but the "
+                                "editor marks it doubtful — letters "
+                                "printed with subscript dots in "
+                                "Polotsky/Böhlig, or followed by '(?)'. "
+                                "The text IS present (it is not a "
+                                "lacuna), but the editor cannot read it "
+                                "with confidence. Downstream stages "
+                                "should treat uncertain=true as evidence "
+                                "to weigh, not as fixed ground truth."
                             ),
                         },
                     },
@@ -425,9 +459,15 @@ corresponding position.
 ```json
 {{"id": 0, "segment": 3, "type": "lacuna", "est_chars": 8}}
 ```
-- `est_chars`: estimated lost characters based on dot count. This is \
-  the editor's visual estimate, not exact.
-- `partial` (optional): any visible letter traces that don't form a word.
+- `est_chars`: estimated lost characters based on dot count. Editorial \
+  estimate, not exact. Use `null` when the editor declined to \
+  estimate — empty brackets `[ ]` or German destruction markers. \
+  `null` means 'extent unknown'; never use `0`.
+- `partial` (optional): either visible letter traces that don't form a \
+  word, OR the verbatim German editor marker for this gap (e.g. \
+  `"abgerieben"`, `"zerstört"`, `"geringe Spuren"`, \
+  `"verwischt und abgerieben"`). Use this to preserve the editor's \
+  diagnosis of WHY the gap exists.
 
 **restoration** — text is lost, but a reading is proposed:
 ```json
@@ -439,20 +479,29 @@ Restorations come from two sources:
 2. **Your restorations** — when you can confidently identify a word \
    from surviving traces + context. Note this in the `basis` field.
 
+Set `uncertain: true` on a restoration when the editor marks the \
+reading as doubtful — letters with subscript dots in Polotsky/Böhlig, \
+or followed by `(?)`. The text IS transmitted (so it is not a \
+lacuna), but the editor cannot read it with confidence.
+
 ### Reading the transcription damage markers
 
 | Marker | Meaning | Your action |
 |--------|---------|-------------|
 | `[text]` | Editor restoration | → `restoration` apparatus entry |
-| `. .` or `. . .` | Lost letters (dot count ≈ char count) | → `lacuna` apparatus entry |
-| `[. . . . .]` | Bracketed lacuna | → `lacuna` apparatus entry |
-| `leer` (end-of-line) | Section ends before line edge | Set `break_after: true` on that line |
-| `leer` (mid-line) | Scribal section break within a line | Split into two entries with same `n`, sequential `i`; first gets `break_after: true` |
-| `unlesbar` / `unleserlich` | Unreadable (ink present but illegible) | → `lacuna` apparatus entry |
-| `zerstört` | Papyrus destroyed (physically missing) | → `lacuna` apparatus entry |
-| `abgerieben` / `verwischt` | Rubbed off / smudged (ink removed by friction) | → `lacuna` apparatus entry |
-| `nicht zu lesen` / `Rest nicht zu lesen` | Cannot be read | → `lacuna` apparatus entry |
-| `fast völlig zerstört` / `vollständig zerstört` | Whole line(s) destroyed | Set coptic/english to null |
+| dotted letters / `(?)` | Editor reads, but is doubtful | → `restoration` with `uncertain: true` |
+| `. .` or `. . .` | Lost letters (dot count ≈ char count) | → `lacuna` with `est_chars` = dot count |
+| `[. . . . .]` | Bracketed dotted gap | → `lacuna` with `est_chars` = dot count |
+| `[ ]` (empty brackets) | Lost text, extent not estimated | → `lacuna` with `est_chars: null` |
+| `[abgerieben]` / `abgerieben` | Rubbed off | → `lacuna` with `est_chars: null`, `partial: "abgerieben"` |
+| `[verwischt]` / `verwischt` | Smudged | → `lacuna` with `est_chars: null`, `partial: "verwischt"` |
+| `[zerstört]` / `zerstört` | Papyrus destroyed | → `lacuna` with `est_chars: null`, `partial: "zerstört"` |
+| `[unlesbar]` / `unlesbar` / `unleserlich` | Illegible | → `lacuna` with `est_chars: null`, `partial: "unlesbar"` |
+| `[geringe Spuren]` | Faint traces only | → `lacuna` with `est_chars: null`, `partial: "geringe Spuren"` |
+| `nicht zu lesen` / `Rest nicht zu lesen` | Cannot be read | → `lacuna` with `est_chars: null`, `note: "nicht zu lesen"` |
+| `fast völlig zerstört` / `vollständig zerstört` | Whole line(s) destroyed | Set coptic/english to null, OR `lacuna` with `est_chars: null`, `partial: "fast völlig zerstört"` |
+| `leer` (end-of-line) | Scribal blank — section ends before line edge | Set `break_after: true` on that line. NOT a lacuna. |
+| `leer` (mid-line) | Scribal blank — section break within a line | Split into two entries with same `n`, sequential `i`; first gets `break_after: true`. NOT a lacuna. |
 
 ### Example
 
@@ -474,6 +523,39 @@ Apparatus:
   {{"id": 2, "segment": 0, "type": "restoration", "coptic": "ⲟⲩⲁⲓ̈ⲛⲉ", "english": "light", "basis": "partial ⲟ visible; continues to next segment"}}
 ]
 ```
+
+### Reading conventions of the printed page
+
+The Polotsky/Böhlig print convention encodes the manuscript through \
+several layers. You must see THROUGH them to the underlying text.
+
+1. **Coptic is *scriptio continua*.** The manuscript has NO spaces \
+   between words. Any whitespace you see between Coptic letters in \
+   the OCR is an editorial insertion for readability, and it must \
+   be ignored. Treat each line as one continuous character stream. \
+   The single exception is `leer`, which is a deliberate scribal \
+   blank space (a section break, handled above, NOT a gap). \
+   This rule applies only to Coptic. Do NOT strip whitespace from \
+   the English fields.
+
+2. **Brackets are positional, not structural.** A pair of square \
+   brackets `[...]` groups whatever editorial content happens to fall \
+   inside one margin span on the printed page. The bracket pair itself \
+   is not a single data event. Decompose the contents into separate \
+   apparatus entries by run-of-same-kind: each contiguous run of \
+   supplied letters becomes one `restoration`, each contiguous run of \
+   dots becomes one `lacuna`. \
+   Worked example — `[ⲣⲟ . . ⲃ]ⲣⲏⲧⲉ`: \
+   → `restoration` `"ⲣⲟ"` + `lacuna` `est_chars=2` + `restoration` \
+   `"ⲃ"` + plain text `ⲣⲏⲧⲉ`. Three apparatus entries from one bracket \
+   pair, plus certain text.
+
+3. **Merge adjacent same-kind gaps.** Bracket boundaries at line \
+   edges are margin artifacts. If a bracketed dotted run is \
+   immediately adjacent to an unbracketed dotted run with no \
+   intervening text, that is ONE continuous lacuna — sum the dot \
+   counts. Example: `[. . .] . . . .` is one `lacuna` with \
+   `est_chars=7`, not two.
 
 ### Critical rules
 

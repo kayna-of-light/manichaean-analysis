@@ -60,15 +60,15 @@ RESTORE_TOOL = {
             },
             "total_gaps_in_core": {
                 "type": "integer",
-                "description": "Total unique {N} gaps in core segments.",
+                "description": "Total unique {N} gaps in the Coptic core.",
             },
             "gaps_restored": {
                 "type": "integer",
-                "description": "Number of gaps with proposed restorations.",
+                "description": "Number of Coptic gaps with proposed fills.",
             },
             "gaps_unrestorable": {
                 "type": "integer",
-                "description": "Number of gaps deliberately left unrestored.",
+                "description": "Number of Coptic gaps left unrestored.",
             },
             "restoration_note": {
                 "type": "string",
@@ -78,28 +78,24 @@ RESTORE_TOOL = {
                     "fills, and what remained too damaged."
                 ),
             },
-            "restorations": {
+            "coptic_restorations": {
                 "type": "array",
-                "description": "One decision for each unique gap in core text.",
+                "description": (
+                    "One decision per unique {N} gap in the Coptic core. "
+                    "Coptic-only: each entry says what Coptic letters fill "
+                    "the gap. The English side is handled separately in "
+                    "`english_segments` and `english_restorations`."
+                ),
                 "items": {
                     "type": "object",
                     "properties": {
                         "gap_id": {
                             "type": "integer",
-                            "description": "The ID matching {N} in the teaching.",
+                            "description": "The ID matching {N} in the Coptic core.",
                         },
-                        "section": {
-                            "type": "integer",
-                            "description": "The section containing the gap.",
-                        },
-                        "chapter": {
-                            "type": "integer",
-                            "description": "Source chapter number.",
-                        },
-                        "line": {
-                            "type": "integer",
-                            "description": "Source chapter line index.",
-                        },
+                        "section": {"type": "integer"},
+                        "chapter": {"type": "integer"},
+                        "line": {"type": "integer"},
                         "gap_type": {
                             "type": "string",
                             "description": "Apparatus type: lacuna, restoration, or unknown.",
@@ -107,21 +103,16 @@ RESTORE_TOOL = {
                         "proposed_coptic": {
                             "type": ["string", "null"],
                             "description": (
-                                "Proposed Coptic fill only, without {N}. "
-                                "Null if unrestorable."
-                            ),
-                        },
-                        "proposed_english": {
-                            "type": ["string", "null"],
-                            "description": (
-                                "Proposed English fill only, without {N}. "
-                                "Null if unrestorable."
+                                "Coptic letter fill only, no {N}, no "
+                                "brackets. Must respect partial traces "
+                                "and the estimated character count. Null "
+                                "if unrestorable."
                             ),
                         },
                         "basis": {
                             "type": "string",
                             "description": (
-                                "Why this decision fits: spiritual anchor, "
+                                "Why this fill fits: spiritual anchor, "
                                 "Coptic grammar, traces, character count, "
                                 "parallel formula, or reason for skipping."
                             ),
@@ -133,22 +124,132 @@ RESTORE_TOOL = {
                             ],
                             "description": (
                                 "high = strongly constrained; moderate = "
-                                "good fit with alternatives; low = weak but "
-                                "still useful; unrestorable = no fill."
+                                "good fit with alternatives; low = weak "
+                                "but useful; unrestorable = no fill."
                             ),
                         },
                     },
                     "required": [
                         "gap_id", "section", "chapter", "line", "gap_type",
-                        "proposed_coptic", "proposed_english",
-                        "basis", "confidence",
+                        "proposed_coptic", "basis", "confidence",
+                    ],
+                },
+            },
+            "english_segments": {
+                "type": "array",
+                "description": (
+                    "One entry per Coptic core segment that contains at "
+                    "least one gap. Provide a fresh, natural English "
+                    "translation of the segment as it should read once "
+                    "the Coptic restorations are accepted, with your own "
+                    "{N} placeholders marking ONLY the English-side "
+                    "lexical gaps that arise from translation. Coptic "
+                    "morphology with no English correlate (articles, "
+                    "particles, status prefixes) gets no English "
+                    "placeholder. Vocabulary already used by the editor "
+                    "for surrounding extant Coptic is the preferred "
+                    "choice; you may improve a word when the Coptic "
+                    "restoration makes a more precise translation "
+                    "possible. Match each entry to its Coptic segment "
+                    "by section, chapter, line."
+                ),
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "section": {"type": "integer"},
+                        "chapter": {"type": "integer"},
+                        "line": {"type": "integer"},
+                        "core_english": {
+                            "type": "string",
+                            "description": (
+                                "Natural English translation of this "
+                                "segment, with {N} placeholders for the "
+                                "English-side gaps you intend to fill in "
+                                "`english_restorations`. Use the same "
+                                "{N} numbering space as `english_"
+                                "restorations` (one shared id space "
+                                "across the teaching)."
+                            ),
+                        },
+                    },
+                    "required": [
+                        "section", "chapter", "line", "core_english",
+                    ],
+                },
+            },
+            "english_restorations": {
+                "type": "array",
+                "description": (
+                    "One entry per {N} English placeholder in your "
+                    "`english_segments`. Each English gap is a genuine "
+                    "lexical gap arising from translation; it does not "
+                    "have to mirror a Coptic gap one-to-one."
+                ),
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "eng_gap_id": {
+                            "type": "integer",
+                            "description": (
+                                "The ID matching {N} in `english_"
+                                "segments.core_english`. Numbering is "
+                                "global within the teaching."
+                            ),
+                        },
+                        "section": {"type": "integer"},
+                        "chapter": {"type": "integer"},
+                        "line": {"type": "integer"},
+                        "proposed_english": {
+                            "type": ["string", "null"],
+                            "description": (
+                                "English fill only, no {N}, no brackets. "
+                                "May be one word or several; whatever "
+                                "fits cleanly into the surrounding "
+                                "English. Null if unrestorable."
+                            ),
+                        },
+                        "coptic_gap_refs": {
+                            "type": "array",
+                            "items": {"type": "integer"},
+                            "description": (
+                                "List of Coptic `gap_id` values that "
+                                "this English fill corresponds to. May "
+                                "be empty (e.g. an English particle "
+                                "introduced by translation), one (the "
+                                "common case), or several (when one "
+                                "English phrase covers multiple Coptic "
+                                "gaps)."
+                            ),
+                        },
+                        "confidence": {
+                            "type": "string",
+                            "enum": [
+                                "high", "moderate", "low", "unrestorable",
+                            ],
+                        },
+                        "basis": {
+                            "type": "string",
+                            "description": (
+                                "Why this English fill fits: which "
+                                "Coptic restorations support it, "
+                                "translation register, lexicon match, "
+                                "or reason for skipping."
+                            ),
+                        },
+                    },
+                    "required": [
+                        "eng_gap_id", "section", "chapter", "line",
+                        "proposed_english", "coptic_gap_refs",
+                        "confidence", "basis",
                     ],
                 },
             },
         },
         "required": [
             "teaching", "total_gaps_in_core", "gaps_restored",
-            "gaps_unrestorable", "restoration_note", "restorations",
+            "gaps_unrestorable", "restoration_note",
+            "coptic_restorations", "english_segments",
+            "english_restorations",
         ],
     },
 }
@@ -166,44 +267,90 @@ You are also an expert Coptologist specializing in the Lycopolitan \
 (sub-Achmimic) dialect.
 
 You are restoring lacunae in the oldest teaching substrate of the Coptic \
-Kephalaia. The text has gaps marked with numbered placeholders like {0}, \
-{1}, {2}. Your task is not to guess missing words from English alone. Your \
-task is to use the spiritual reading to identify what reality belongs at \
-the gap, then translate that reality back into the Kephalaia's own \
-natural-plane Coptic vocabulary.
+Kephalaia. The Coptic core has gaps marked with numbered placeholders \
+{0}, {1}, {2}. Your task is to use the spiritual reading to identify \
+what reality belongs at each gap, then express that reality in the \
+Kephalaia's own natural-plane Coptic vocabulary, then translate the \
+restored Coptic into clean English.
 
 ## WHAT YOU RECEIVE
 
-You receive:
+1. **The Coptic core text** with numbered {N} placeholders for damaged spans.
+2. **The editor's partial English** as reference. It is a useful gloss \
+   but it is letter-mirrored to the Coptic and is NOT authoritative for \
+   your output. You write your own English from the restored Coptic.
+3. **The apparatus** for each Coptic gap: type, estimated character \
+   count, partial traces, and any editor proposal.
+4. **The whole-teaching correspondential reading** explaining the \
+   spiritual system and arc.
+5. **The spiritual lexicon** when available, giving stable corpus \
+   vocabulary.
 
-1. **The core teaching text** with Coptic and English side by side.
-2. **The apparatus** for each gap, including lacuna/restoration type, \
-   estimated character count, partial traces, and existing editorial fills.
-3. **The provided correspondential reading**, a whole-teaching explanation \
-    of the spiritual system and arc being described.
-4. **The spiritual lexicon** when available, giving stable vocabulary for \
-   the corpus.
+## OUTPUT CONTRACT
 
-## RESTORATION METHOD
+You produce three parallel structures.
 
-Before deciding fills, identify the Swedenborgian system being described \
-in this teaching. The spiritual reading tells you the whole teaching's \
-spiritual arc. Use that whole-reading context together with the local \
-Coptic, English, and apparatus to decide what reality belongs at each gap. \
-The restoration must then express that spiritual reality in the text's own \
-natural/cosmological register.
+### 1. `coptic_restorations`
 
-For each gap:
+One entry per Coptic {N} gap. Each entry holds the Coptic letters that \
+fill the gap (or null if unrestorable). This is Coptic-only.
 
-1. Locate the {N} marker in the Coptic and English core text.
+Method per gap:
+
+1. Locate the {N} marker in the Coptic core.
 2. Use the whole-teaching reading to identify the governing spiritual arc.
-3. Read the local Coptic and English context: what belongs there in the \
-    teaching's inner sense?
-4. Translate that reality back into the Kephalaia's natural-plane terms.
-5. Check the apparatus: type, estimated characters, traces, and editor fill.
-6. Check Coptic grammar: article, status constructus, prepositions, and \
+3. Read the local Coptic context: what reality belongs there?
+4. Express that reality in the Kephalaia's natural-plane Coptic terms.
+5. Check the apparatus: type, estimated characters, partial traces, \
+   editor proposal.
+6. Check Coptic grammar: article, status constructus, prepositions, \
    dialect morphology.
-7. If the fill is not constrained, mark it unrestorable.
+7. If the fill is not constrained, mark unrestorable.
+
+### 2. `english_segments`
+
+For each Coptic segment that contains at least one gap, write a clean, \
+natural English translation of the whole segment as it should read once \
+the Coptic restorations are accepted. Place your own {N} placeholders \
+ONLY where there is a genuine English-side lexical gap arising from \
+translation — i.e. a span the English reader needs and which depends on \
+your Coptic restoration to have a sensible value. Coptic morphology \
+with no English correlate (articles, particles, status prefixes, \
+inflectional letters) gets no English placeholder.
+
+The Coptic is the source of truth. The English is its translation. \
+Vocabulary already used in the editor's partial English for the \
+surrounding extant Coptic is the preferred choice; you have full \
+freedom to refine wording when your Coptic restoration makes a more \
+precise English term possible. Stay within the segment — do not write \
+content that belongs to a neighbouring segment.
+
+**Cross-segment continuity (English-side awareness).** The Coptic is \
+segmented by the editor for line/page reasons; consecutive segments \
+often form a single Coptic clause whose word order does not survive in \
+English. When you translate, look at the segments before and after the \
+one you are writing. If a Coptic word in this segment has already been \
+folded naturally into the previous segment's English (e.g. a \
+postpositive ⲧⲏⲣⲟⲩ absorbed into "all the X" upstream, or a status \
+constructus carried forward), do not re-state it here. In that case \
+emit the segment's `core_english` as just the trailing punctuation \
+("." or ",") or as an empty string. Likewise, if a word in this \
+segment will more naturally surface in the next segment's English, \
+defer it. The reader sees the segments concatenated; one English \
+expression per Coptic reality, never two.
+
+### 3. `english_restorations`
+
+One entry per {N} placeholder in your `english_segments`. Each entry \
+holds the English fill (or null if unrestorable) and a list of Coptic \
+`gap_id` values it covers. The list may be empty (an English particle \
+introduced for grammar), one (the common case), or several (when one \
+English phrase covers several Coptic gaps).
+
+Numbering: `eng_gap_id` is global within the teaching. The first \
+English {N} is `0`, the next is `1`, and so on, regardless of which \
+segment they appear in. The numbering space is independent of the \
+Coptic `gap_id` space.
 
 ## COPTIC CONSTRAINTS
 
@@ -214,38 +361,38 @@ For each gap:
 - Definite articles matter: ⲡ-/ⲧ-/ⲛ- constrain gender and number.
 - Prepositions matter: ⲁⲃⲁⲗ, ⲛ̄, ϩⲛ̄, ⲁ-/ⲉ- often constrain whether a \
   noun, infinitive, or clause can fit.
-- Estimated character count matters. A proposed Coptic fill should fit the \
-  approximate length unless the apparatus is clearly uncertain.
-- Visible partial traces are binding. A proposed Coptic fill must include \
-  the visible letters in the right position.
+- Estimated character count matters. A proposed Coptic fill should fit \
+  the approximate length unless the apparatus is clearly uncertain.
+- Visible partial traces are binding. A proposed Coptic fill must \
+  include the visible letters in the right position.
 
 ## RESTORATION POLICY
 
-- **Restoration apparatus entries** are editor proposals. Review them \
-  through the correspondential reading. Confirm if they fit; correct them \
-  if the spiritual and Coptic constraints point elsewhere.
-- **Small lacunae** should be restored when grammar and spiritual context \
-  constrain the fill.
-- **Medium lacunae** should be restored only when a formula, parallel, or \
-  strong structural pattern constrains them.
-- **Large or weakly constrained lacunae** should be marked unrestorable. \
-  Honest non-restoration is better than a smooth invention.
-- **Bilingual output is required.** Every restored gap must include both \
-  proposed Coptic and proposed English.
-- Proposed fields contain the fill only. Do not include {N} in the output.
+- **Editor restoration entries** in the apparatus are proposals. \
+  Review them through the correspondential reading. Confirm them when \
+  they fit; correct them when the spiritual and Coptic constraints \
+  point elsewhere.
+- **Small lacunae** should be restored when grammar and spiritual \
+  context constrain the fill.
+- **Medium lacunae** should be restored only when a formula, parallel, \
+  or strong structural pattern constrains them.
+- **Large or weakly constrained lacunae** should be marked \
+  unrestorable. Honest non-restoration is better than a smooth \
+  invention.
+- `proposed_coptic` and `proposed_english` contain only the fill \
+  letters / words. No {N}, no brackets, no parentheses.
 
 ## VOCABULARY AUTHORITY
 
-Use the generated Corpus Spiritual Lexicon supplied in the user prompt as \
-the controlled vocabulary for this restoration. It is the same vocabulary \
-discipline used in the provided reading, and it supersedes general \
-correspondential defaults whenever it fixes a term.
+Use the generated Corpus Spiritual Lexicon supplied in the user prompt \
+as the controlled vocabulary. It supersedes general correspondential \
+defaults whenever it fixes a term.
 
-For each proposed restoration, prefer the lexicon's Coptic forms, \
-`use_in_reading` wording, spiritual meanings, and opposite-sense notes. \
-Do not improvise new English when a term is fixed there. If no lexicon \
-entry applies, use the provided spiritual reading, local Coptic anchors, \
-apparatus constraints, and Coptic grammar conservatively.
+For each Coptic restoration, prefer the lexicon's Coptic forms. For \
+English, prefer the lexicon's `use_in_reading` wording, spiritual \
+meanings, and opposite-sense notes. If no lexicon entry applies, use \
+the provided spiritual reading, local Coptic anchors, apparatus \
+constraints, and Coptic grammar conservatively.
 
 When complete, call commit_restorations exactly once."""
 

@@ -53,7 +53,7 @@ import httpx
 from anthropic import AnthropicFoundry
 from dotenv import dotenv_values
 
-from stage_3_score import (
+from scripts.projects.kephalaia.stage_3_score import (
     load_corpus_metadata,
     split_paragraphs,
     load_analysis,

@@ -183,6 +183,16 @@ def gather_teaching_segments(
             segment = entry.get("segment")
             if isinstance(segment, int):
                 apparatus_by_segment.setdefault(segment, []).append(entry)
+        # Source chapter lines (with stage-1 `break_after` flags) keyed
+        # by their `i` index — same numbering space as core segments.
+        source_lines_by_i: dict[int, dict] = {}
+        for ln in source_chapter.get("lines", []) or []:
+            i_val = ln.get("i")
+            if isinstance(i_val, int):
+                source_lines_by_i[i_val] = ln
+        break_after = bool(
+            source_lines_by_i.get(line_idx, {}).get("break_after")
+        )
 
         if not chapter_data:
             segments.append({
@@ -195,6 +205,7 @@ def gather_teaching_segments(
                 "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": None,
                 "temporal_note": None,
+                "break_after": break_after,
             })
             continue
 
@@ -211,6 +222,7 @@ def gather_teaching_segments(
                 "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": seg.get("removed_material"),
                 "temporal_note": seg.get("temporal_note"),
+                "break_after": break_after,
             })
         else:
             # Line index out of range
@@ -224,6 +236,7 @@ def gather_teaching_segments(
                 "apparatus": apparatus_by_segment.get(line_idx, []),
                 "removed_material": None,
                 "temporal_note": None,
+                "break_after": break_after,
             })
 
     return segments

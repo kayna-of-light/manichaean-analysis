@@ -122,7 +122,7 @@ def assemble_chapter(pages_data: list[tuple[int, dict]], ch: dict) -> dict:
             new_i = len(lines)
             old_i = line.get("i")
             segment_maps[(page_num, old_i)] = new_i
-            lines.append({
+            entry = {
                 "i": new_i,
                 "n": line.get("n"),
                 "coptic": renumber_markers(
@@ -131,7 +131,14 @@ def assemble_chapter(pages_data: list[tuple[int, dict]], ch: dict) -> dict:
                 "english": renumber_markers(
                     line.get("english"), page_marker_map, next_marker_id
                 ),
-            })
+            }
+            # Carry through the explicit paragraph-break flag from
+            # stage 1 (set by the translator on `leer` markers — the
+            # scribal section breaks). Downstream stages must respect
+            # this; do not invent paragraphing rules.
+            if line.get("break_after"):
+                entry["break_after"] = True
+            lines.append(entry)
 
         for entry in page.get("apparatus", []):
             old_segment = entry.get("segment")
