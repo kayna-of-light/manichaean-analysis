@@ -47,3 +47,5 @@ conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --re
 ```
 
 Git should keep source code, scripts, findings, and documentation. Large generated output should be restored from Drive when needed.
+
+Large source artifacts that exceed GitHub's warning threshold should also be stored in Drive rather than committed directly. Use `--archive` for one-off preservation when a source OCR dump is too large for normal Git history.
