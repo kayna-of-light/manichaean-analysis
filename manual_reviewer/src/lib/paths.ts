@@ -91,4 +91,3 @@ export const IMAGE_ROOTS: { key: string; dir: string }[] = [
   { key: "textbody", dir: PIPELINE_V2.textBody },
   { key: "pages_v2", dir: PIPELINE_V2.pagesCropped },
 ];
-
