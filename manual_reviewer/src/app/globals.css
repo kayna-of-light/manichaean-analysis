@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* ----------------------------------------------------------
+   Tailwind v4 CSS-first config: glass theme tokens
+   ---------------------------------------------------------- */
+@theme {
+  --font-sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-coptic: "Noto Sans Coptic", "Antinoou", "New Athena Unicode", serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Mono", "Menlo", monospace;
+
+  /* Glass surface palette — light */
+  --color-glass-bg: oklch(98% 0.01 80);
+  --color-glass-surface: oklch(100% 0 0 / 0.06);
+  --color-glass-border: oklch(0% 0 0 / 0.12);
+  --color-glass-fg: oklch(20% 0.02 260);
+  --color-glass-muted: oklch(45% 0.02 260);
+  --color-glass-accent: #c8a465;
+  --color-glass-accent-strong: #a07a36;
+
+  /* Status colors */
+  --color-status-pending: oklch(70% 0.02 260);
+  --color-status-progress: oklch(75% 0.13 80);
+  --color-status-done: oklch(65% 0.16 145);
+  --color-status-flagged: oklch(65% 0.20 25);
+}
+
+/* ----------------------------------------------------------
+   Dark scheme overrides — apply when [data-theme="dark"]
+   ---------------------------------------------------------- */
+[data-theme="dark"] {
+  --color-glass-bg: oklch(14% 0.02 260);
+  --color-glass-surface: oklch(100% 0 0 / 0.05);
+  --color-glass-border: oklch(100% 0 0 / 0.10);
+  --color-glass-fg: oklch(96% 0.01 80);
+  --color-glass-muted: oklch(70% 0.02 260);
+}
+
+/* ----------------------------------------------------------
+   Base
+   ---------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  background: var(--color-glass-bg);
+  color: var(--color-glass-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, oklch(85% 0.06 80 / 0.25), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, oklch(70% 0.08 260 / 0.18), transparent 60%);
+  background-attachment: fixed;
+}
+
+[data-theme="dark"] body {
+  background-image:
+    radial-gradient(1200px 600px at 10% -10%, oklch(35% 0.08 80 / 0.20), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, oklch(35% 0.10 260 / 0.18), transparent 60%);
+}
+
+/* ----------------------------------------------------------
+   Glass utility (used by AppShell + Drawer)
+   ---------------------------------------------------------- */
+.glass {
+  background: var(--color-glass-surface);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(20px) saturate(140%);
+  -webkit-backdrop-filter: blur(20px) saturate(140%);
+}
+
+.coptic {
+  font-family: var(--font-coptic);
+  font-feature-settings: "liga" 0;
+}

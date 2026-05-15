@@ -1,0 +1,590 @@
+import "server-only";
+import { getDb } from "./db";
+import type { Token } from "./zodSchemas";
+
+/* ----------------------------------------------------------------------------
+ * Types
+ * ------------------------------------------------------------------------- */
+
+export type LineStatus = "pending" | "in_progress" | "done" | "flagged";
+
+export interface BlobEditRow {
+  page: number;
+  line_index: number;
+  blob_id: string;
+  label: string | null;
+  diacritics: string | null;
+  lacuna_bracket: string | null;
+  deleted: number;
+  overline_mark_id: number | null;
+  source: string;
+  updated_at: string;
+}
+
+export interface NewBboxRow {
+  id: string;
+  page: number;
+  line_index: number;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  coord_space: "warped" | "image";
+  label: string | null;
+  diacritics: string | null;
+  lacuna_bracket: string | null;
+  overline_mark_id: number | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ClusterOverrideRow {
+  cluster_id: number;
+  label: string | null;
+  diacritics: string | null;
+  note: string | null;
+  applied_at: string;
+}
+
+export interface TaskRow {
+  id: number;
+  page: number;
+  line_index: number;
+  kind: string;
+  note: string | null;
+  resolved: number;
+  created_at: string;
+  resolved_at: string | null;
+}
+
+/* ----------------------------------------------------------------------------
+ * Reads
+ * ------------------------------------------------------------------------- */
+
+export function readBlobEdits(page: number): Map<string, BlobEditRow> {
+  const db = getDb();
+  const rows = db
+    .prepare<[number], BlobEditRow>(
+      "SELECT * FROM blob_edits WHERE page = ?",
+    )
+    .all(page);
+  const m = new Map<string, BlobEditRow>();
+  for (const r of rows) m.set(`${r.line_index}:${r.blob_id}`, r);
+  return m;
+}
+
+export function readNewBboxes(page: number): NewBboxRow[] {
+  const db = getDb();
+  return db
+    .prepare<[number], NewBboxRow>(
+      "SELECT * FROM new_bboxes WHERE page = ? ORDER BY line_index, id",
+    )
+    .all(page);
+}
+
+export function readLineStatuses(
+  page: number,
+): Map<number, { status: LineStatus; note: string | null }> {
+  const db = getDb();
+  const rows = db
+    .prepare<[number], { line_index: number; status: LineStatus; note: string | null }>(
+      "SELECT line_index, status, note FROM lines WHERE page = ?",
+    )
+    .all(page);
+  const m = new Map<number, { status: LineStatus; note: string | null }>();
+  for (const r of rows) m.set(r.line_index, { status: r.status, note: r.note });
+  return m;
+}
+
+export function readClusterOverride(
+  clusterId: number,
+): ClusterOverrideRow | null {
+  const db = getDb();
+  return (
+    db
+      .prepare<[number], ClusterOverrideRow>(
+        "SELECT * FROM cluster_overrides WHERE cluster_id = ?",
+      )
+      .get(clusterId) ?? null
+  );
+}
+
+export function readClusterOverridesByIds(
+  clusterIds: number[],
+): Map<number, ClusterOverrideRow> {
+  const m = new Map<number, ClusterOverrideRow>();
+  if (clusterIds.length === 0) return m;
+  const db = getDb();
+  const placeholders = clusterIds.map(() => "?").join(",");
+  const rows = db
+    .prepare<number[], ClusterOverrideRow>(
+      `SELECT * FROM cluster_overrides WHERE cluster_id IN (${placeholders})`,
+    )
+    .all(...clusterIds);
+  for (const r of rows) m.set(r.cluster_id, r);
+  return m;
+}
+
+export function isBlobUnset(
+  page: number,
+  lineIndex: number,
+  blobId: string | number,
+): boolean {
+  const db = getDb();
+  const r = db
+    .prepare<[number, number, string]>(
+      "SELECT 1 FROM unset_blobs WHERE page = ? AND line_index = ? AND blob_id = ?",
+    )
+    .get(page, lineIndex, String(blobId));
+  return Boolean(r);
+}
+
+export function readOpenTasks(page?: number): TaskRow[] {
+  const db = getDb();
+  if (page === undefined) {
+    return db
+      .prepare<[], TaskRow>(
+        "SELECT * FROM tasks WHERE resolved = 0 ORDER BY created_at DESC",
+      )
+      .all();
+  }
+  return db
+    .prepare<[number], TaskRow>(
+      "SELECT * FROM tasks WHERE page = ? AND resolved = 0 ORDER BY created_at DESC",
+    )
+    .all(page);
+}
+
+/* ----------------------------------------------------------------------------
+ * Writes (transactional with audit_log)
+ * ------------------------------------------------------------------------- */
+
+function withAudit<T>(
+  action: string,
+  page: number | null,
+  lineIndex: number | null,
+  targetId: string | null,
+  before: unknown,
+  after: unknown,
+  fn: () => T,
+): T {
+  const db = getDb();
+  const tx = db.transaction(() => {
+    const result = fn();
+    db.prepare(
+      `INSERT INTO audit_log (action, page, line_index, target_id, before, after)
+       VALUES (?, ?, ?, ?, ?, ?)`,
+    ).run(
+      action,
+      page,
+      lineIndex,
+      targetId,
+      before === undefined ? null : JSON.stringify(before),
+      after === undefined ? null : JSON.stringify(after),
+    );
+    db.prepare(
+      `INSERT INTO pages(page, status, last_edited_at)
+       VALUES (?, 'in_progress', datetime('now'))
+       ON CONFLICT(page) DO UPDATE SET last_edited_at = excluded.last_edited_at`,
+    ).run(page ?? 0);
+    return result;
+  });
+  return tx.immediate();
+}
+
+export interface UpsertEditInput {
+  page: number;
+  line_index: number;
+  blob_id: string;
+  label?: string | null;
+  diacritics?: string[] | null;
+  lacuna_bracket?: string | null;
+  deleted?: boolean;
+  overline_mark_id?: number | null;
+  source?: "manual" | "candidate" | "cluster";
+}
+
+export function upsertBlobEdit(input: UpsertEditInput) {
+  const db = getDb();
+  const key = [input.page, input.line_index, input.blob_id] as const;
+  const before = db
+    .prepare<[number, number, string], BlobEditRow>(
+      "SELECT * FROM blob_edits WHERE page = ? AND line_index = ? AND blob_id = ?",
+    )
+    .get(...key);
+
+  const after: BlobEditRow = {
+    page: input.page,
+    line_index: input.line_index,
+    blob_id: input.blob_id,
+    label: input.label !== undefined ? input.label : (before?.label ?? null),
+    diacritics: input.diacritics
+      ? JSON.stringify(input.diacritics)
+      : (before?.diacritics ?? null),
+    lacuna_bracket:
+      input.lacuna_bracket !== undefined
+        ? input.lacuna_bracket
+        : (before?.lacuna_bracket ?? null),
+    deleted:
+      input.deleted === undefined ? (before?.deleted ?? 0) : input.deleted ? 1 : 0,
+    overline_mark_id:
+      input.overline_mark_id !== undefined
+        ? input.overline_mark_id
+        : (before?.overline_mark_id ?? null),
+    source: input.source ?? "manual",
+    updated_at: new Date().toISOString(),
+  };
+
+  return withAudit(
+    "blob_edit.upsert",
+    input.page,
+    input.line_index,
+    input.blob_id,
+    before,
+    after,
+    () => {
+      db.prepare(
+        `INSERT INTO blob_edits
+         (page, line_index, blob_id, label, diacritics, lacuna_bracket,
+          deleted, overline_mark_id, source, updated_at)
+         VALUES (@page, @line_index, @blob_id, @label, @diacritics,
+                 @lacuna_bracket, @deleted, @overline_mark_id, @source, @updated_at)
+         ON CONFLICT(page, line_index, blob_id) DO UPDATE SET
+           label = excluded.label,
+           diacritics = excluded.diacritics,
+           lacuna_bracket = excluded.lacuna_bracket,
+           deleted = excluded.deleted,
+           overline_mark_id = excluded.overline_mark_id,
+           source = excluded.source,
+           updated_at = excluded.updated_at`,
+      ).run(after);
+      return after;
+    },
+  );
+}
+
+export function setLineStatus(
+  page: number,
+  lineIndex: number,
+  status: LineStatus,
+  note: string | null = null,
+) {
+  const db = getDb();
+  const before = db
+    .prepare<[number, number]>(
+      "SELECT status, note FROM lines WHERE page = ? AND line_index = ?",
+    )
+    .get(page, lineIndex);
+  return withAudit(
+    "line.set_status",
+    page,
+    lineIndex,
+    null,
+    before,
+    { status, note },
+    () => {
+      db.prepare(
+        `INSERT INTO lines (page, line_index, status, note, updated_at)
+         VALUES (?, ?, ?, ?, datetime('now'))
+         ON CONFLICT(page, line_index) DO UPDATE SET
+           status = excluded.status,
+           note = excluded.note,
+           updated_at = excluded.updated_at`,
+      ).run(page, lineIndex, status, note);
+    },
+  );
+}
+
+export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at" | "id"> & {
+  id?: string;
+}) {
+  const db = getDb();
+  const id = input.id ?? `new_p${String(input.page).padStart(3, "0")}_l${String(
+    input.line_index,
+  ).padStart(2, "0")}_${Date.now().toString(36)}`;
+  const after = {
+    ...input,
+    id,
+    created_at: new Date().toISOString(),
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit(
+    "new_bbox.create",
+    input.page,
+    input.line_index,
+    id,
+    null,
+    after,
+    () => {
+      db.prepare(
+        `INSERT INTO new_bboxes
+         (id, page, line_index, x0, y0, x1, y1, coord_space, label,
+          diacritics, lacuna_bracket, overline_mark_id, created_at, updated_at)
+         VALUES (@id, @page, @line_index, @x0, @y0, @x1, @y1, @coord_space,
+                 @label, @diacritics, @lacuna_bracket, @overline_mark_id, @created_at, @updated_at)`,
+      ).run(after);
+      return after;
+    },
+  );
+}
+
+export function deleteNewBbox(id: string) {
+  const db = getDb();
+  const before = db
+    .prepare<[string], NewBboxRow>("SELECT * FROM new_bboxes WHERE id = ?")
+    .get(id);
+  if (!before) return null;
+  return withAudit(
+    "new_bbox.delete",
+    before.page,
+    before.line_index,
+    id,
+    before,
+    null,
+    () => {
+      db.prepare("DELETE FROM new_bboxes WHERE id = ?").run(id);
+      return before;
+    },
+  );
+}
+
+export function updateNewBbox(
+  id: string,
+  updates: { label?: string | null; diacritics?: string | null; overline_mark_id?: number | null },
+) {
+  const db = getDb();
+  const before = db
+    .prepare<[string], NewBboxRow>("SELECT * FROM new_bboxes WHERE id = ?")
+    .get(id);
+  if (!before) return null;
+  const after = {
+    ...before,
+    label: updates.label !== undefined ? updates.label : before.label,
+    diacritics: updates.diacritics !== undefined ? updates.diacritics : before.diacritics,
+    overline_mark_id:
+      updates.overline_mark_id !== undefined ? updates.overline_mark_id : before.overline_mark_id,
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit(
+    "new_bbox.update",
+    before.page,
+    before.line_index,
+    id,
+    before,
+    after,
+    () => {
+      db.prepare(
+        `UPDATE new_bboxes
+         SET label = @label,
+             diacritics = @diacritics,
+             overline_mark_id = @overline_mark_id,
+             updated_at = @updated_at
+         WHERE id = @id`,
+      ).run({
+        id,
+        label: after.label,
+        diacritics: after.diacritics,
+        overline_mark_id: after.overline_mark_id,
+        updated_at: after.updated_at,
+      });
+      return after;
+    },
+  );
+}
+
+export function applyClusterOverride(
+  clusterId: number,
+  label: string | null,
+  diacritics: string[] | null = null,
+  note: string | null = null,
+) {
+  const db = getDb();
+  const before = readClusterOverride(clusterId);
+  const after: ClusterOverrideRow = {
+    cluster_id: clusterId,
+    label,
+    diacritics: diacritics ? JSON.stringify(diacritics) : null,
+    note,
+    applied_at: new Date().toISOString(),
+  };
+  return withAudit(
+    "cluster_override.apply",
+    null,
+    null,
+    String(clusterId),
+    before,
+    after,
+    () => {
+      db.prepare(
+        `INSERT INTO cluster_overrides
+         (cluster_id, label, diacritics, note, applied_at)
+         VALUES (@cluster_id, @label, @diacritics, @note, @applied_at)
+         ON CONFLICT(cluster_id) DO UPDATE SET
+           label = excluded.label,
+           diacritics = excluded.diacritics,
+           note = excluded.note,
+           applied_at = excluded.applied_at`,
+      ).run(after);
+      return after;
+    },
+  );
+}
+
+export function unsetBlob(
+  page: number,
+  lineIndex: number,
+  blobId: string,
+  removedFromCluster: number | null,
+) {
+  const db = getDb();
+  return withAudit(
+    "cluster.unset_blob",
+    page,
+    lineIndex,
+    blobId,
+    null,
+    { removedFromCluster },
+    () => {
+      db.prepare(
+        `INSERT OR REPLACE INTO unset_blobs
+         (page, line_index, blob_id, removed_from_cluster, moved_at)
+         VALUES (?, ?, ?, ?, datetime('now'))`,
+      ).run(page, lineIndex, blobId, removedFromCluster);
+    },
+  );
+}
+
+export function resetLine(page: number, lineIndex: number) {
+  const db = getDb();
+  const beforeEdits = db
+    .prepare<[number, number], BlobEditRow>(
+      "SELECT * FROM blob_edits WHERE page = ? AND line_index = ?",
+    )
+    .all(page, lineIndex);
+  const beforeUnset = db
+    .prepare<[number, number]>(
+      "SELECT * FROM unset_blobs WHERE page = ? AND line_index = ?",
+    )
+    .all(page, lineIndex);
+  const beforeNewBboxes = db
+    .prepare<[number, number], NewBboxRow>(
+      "SELECT * FROM new_bboxes WHERE page = ? AND line_index = ?",
+    )
+    .all(page, lineIndex);
+
+  return withAudit(
+    "line.reset",
+    page,
+    lineIndex,
+    null,
+    { edits: beforeEdits, unset: beforeUnset, new_bboxes: beforeNewBboxes },
+    null,
+    () => {
+      db.prepare("DELETE FROM blob_edits WHERE page = ? AND line_index = ?").run(
+        page,
+        lineIndex,
+      );
+      db.prepare("DELETE FROM unset_blobs WHERE page = ? AND line_index = ?").run(
+        page,
+        lineIndex,
+      );
+      db.prepare("DELETE FROM new_bboxes WHERE page = ? AND line_index = ?").run(
+        page,
+        lineIndex,
+      );
+      return {
+        deleted_edits: beforeEdits.length,
+        deleted_unset: beforeUnset.length,
+        deleted_new_bboxes: beforeNewBboxes.length,
+      };
+    },
+  );
+}
+
+export function createTask(
+  page: number,
+  lineIndex: number,
+  kind: string,
+  note: string | null = null,
+) {
+  const db = getDb();
+  return withAudit("task.create", page, lineIndex, null, null, { kind, note }, () => {
+    const info = db
+      .prepare(
+        `INSERT INTO tasks (page, line_index, kind, note) VALUES (?, ?, ?, ?)`,
+      )
+      .run(page, lineIndex, kind, note);
+    return Number(info.lastInsertRowid);
+  });
+}
+
+export function resolveTask(taskId: number) {
+  const db = getDb();
+  const before = db
+    .prepare<[number], TaskRow>("SELECT * FROM tasks WHERE id = ?")
+    .get(taskId);
+  if (!before) return null;
+  return withAudit("task.resolve", before.page, before.line_index, String(taskId), before, null, () => {
+    db.prepare(
+      "UPDATE tasks SET resolved = 1, resolved_at = datetime('now') WHERE id = ?",
+    ).run(taskId);
+  });
+}
+
+/* ----------------------------------------------------------------------------
+ * Effective token: merge pipeline token with manual edits + cluster overrides
+ * ------------------------------------------------------------------------- */
+
+export interface EffectiveToken extends Token {
+  effective_label: string | null;
+  user_modified: boolean;
+  unset: boolean;
+  deleted: boolean;
+  user_edit?: BlobEditRow;
+  cluster_override?: ClusterOverrideRow;
+}
+
+export function mergeTokens(
+  page: number,
+  tokens: Token[],
+  edits: Map<string, BlobEditRow>,
+  clusterOverrides: Map<number, ClusterOverrideRow>,
+  unsetSet: Set<string>,
+): EffectiveToken[] {
+  return tokens.map((t) => {
+    const key = `${t.line_index}:${t.blob_id}`;
+    const edit = edits.get(key);
+    const clusterIdInt = parseInt(t.cluster, 10);
+    const co = Number.isFinite(clusterIdInt)
+      ? clusterOverrides.get(clusterIdInt)
+      : undefined;
+    const deleted = Boolean(edit?.deleted);
+    const manuallyCleared = Boolean(edit && !deleted && edit.label === "");
+    const unset = unsetSet.has(key) || manuallyCleared;
+    // Precedence: deleted > user edit > cluster override > geometric > manual_override > pipeline label
+    const effective = deleted
+      ? null
+      : (edit?.label ??
+        (co && !unset ? co.label : null) ??
+        t.geometric_override?.label ??
+        t.manual_override?.label ??
+        t.label ??
+        null);
+    const userModified = Boolean(edit) || Boolean(co);
+    // Overline: if user has a blob_edit row, its overline_mark_id wins (even if null = cleared)
+    const overlineMarkId = edit
+      ? (edit.overline_mark_id ?? null)
+      : (t.overline_mark_id ?? null);
+    void page;
+    return {
+      ...t,
+      overline_mark_id: overlineMarkId,
+      effective_label: effective,
+      user_modified: userModified,
+      unset,
+      deleted,
+      user_edit: edit,
+      cluster_override: co,
+    };
+  });
+}
