@@ -426,6 +426,23 @@ def print_path_sample(paths: list[str], *, heading: str, limit: int = 25) -> Non
         print(f"  ... and {len(paths) - limit} more")
 
 
+def print_prefix_status(local_paths: set[str], remote_paths: set[str], *, depth: int = 2) -> None:
+    prefixes: set[str] = set()
+    for path in local_paths | remote_paths:
+        parts = path.split("/")
+        if len(parts) >= depth:
+            prefixes.add("/".join(parts[:depth]) + "/")
+
+    if not prefixes:
+        return
+    print("\nPrefix status")
+    for prefix in sorted(prefixes):
+        local_count = sum(1 for path in local_paths if path.startswith(prefix))
+        remote_count = sum(1 for path in remote_paths if path.startswith(prefix))
+        if local_count != remote_count:
+            print(f"  {prefix} local={local_count} remote={remote_count}")
+
+
 def confirm_destructive_action(*, label: str, token: str, yes: bool, dry_run: bool) -> None:
     if dry_run or yes:
         return
@@ -723,6 +740,67 @@ def mirror_artifacts(
         raise SystemExit(1)
 
 
+def status_artifacts(
+    *,
+    source_root: Path,
+    drive_root_id: str,
+    drive_root_name: str,
+    repo_folder_name: str,
+    remote_subfolder: str,
+    oauth_client: Path,
+    oauth_token: Path,
+    retries: int,
+) -> None:
+    if not source_root.exists():
+        raise SystemExit(f"Source folder not found: {source_root}")
+    if not oauth_client.exists():
+        raise SystemExit(f"OAuth client JSON not found: {oauth_client}")
+
+    local_files = iter_files(source_root)
+    local_paths = {path.relative_to(source_root).as_posix(): path for path in local_files}
+    local_bytes = sum(path.stat().st_size for path in local_files)
+
+    print(f"Source: {source_root}", flush=True)
+    print(f"Local files: {len(local_files)}", flush=True)
+    print(f"Local bytes: {human_size(local_bytes)}", flush=True)
+    print(f"Drive path: {drive_root_name}/{repo_folder_name}/{remote_subfolder}", flush=True)
+    print("Mode: status", flush=True)
+
+    service = _drive_service(oauth_client, oauth_token)
+    mirror = DriveMirror(service, dry_run=False, retries=retries)
+    root = mirror.find_child(drive_root_id, drive_root_name, mime_type=FOLDER_MIME)
+    repo = mirror.find_child(root["id"], repo_folder_name, mime_type=FOLDER_MIME) if root else None
+    source_id = find_remote_folder_path(mirror, repo["id"], remote_subfolder) if repo else None
+
+    if not source_id:
+        print("Remote files: 0")
+        print("Remote bytes: 0.00 B")
+        print("File progress: 0.0%")
+        print("Byte progress: 0.0%")
+        print(f"Missing remotely: {len(local_paths)}")
+        print("Remote extras: 0")
+        return
+
+    remote_files, _remote_folders = collect_remote_tree(mirror, source_id)
+    remote_paths = set(remote_files)
+    remote_bytes = sum(int(item.get("size", 0) or 0) for item in remote_files.values())
+    missing_remote = sorted(set(local_paths) - remote_paths)
+    remote_extras = sorted(remote_paths - set(local_paths))
+
+    file_progress = (len(remote_files) / len(local_files) * 100) if local_files else 100.0
+    byte_progress = (remote_bytes / local_bytes * 100) if local_bytes else 100.0
+
+    print(f"Remote files: {len(remote_files)}")
+    print(f"Remote bytes: {human_size(remote_bytes)}")
+    print(f"File progress: {len(remote_files)}/{len(local_files)} ({file_progress:.1f}%)")
+    print(f"Byte progress: {remote_bytes}/{local_bytes} ({byte_progress:.1f}%)")
+    print(f"Missing remotely: {len(missing_remote)}")
+    print(f"Remote extras: {len(remote_extras)}")
+    print_prefix_status(set(local_paths), remote_paths)
+    print_path_sample(missing_remote, heading="\nMissing remote sample")
+    print_path_sample(remote_extras, heading="\nRemote extra sample")
+
+
 def upload_single_artifact(
     *,
     local_file: Path,
@@ -842,6 +920,7 @@ def main() -> None:
         help="Local folder to mirror. Can be repeated. Defaults to output/, data/, and manual_reviewer/data/.",
     )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
+    parser.add_argument("--status", action="store_true", help="Compare local files to the Drive mirror without changing anything")
     parser.add_argument(
         "--restore-archive",
         nargs="?",
@@ -871,11 +950,14 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    selected_modes = sum(bool(value) for value in (args.archive, args.restore, args.restore_archive, args.verify_archive))
+    selected_modes = sum(
+        bool(value)
+        for value in (args.archive, args.status, args.restore, args.restore_archive, args.verify_archive)
+    )
     if selected_modes > 1:
-        raise SystemExit("Use only one of --archive, --restore, --restore-archive, or --verify-archive")
-    if args.limit is not None and (args.restore or args.restore_archive or args.verify_archive):
-        raise SystemExit("--limit is only supported for upload/mirror sync, not restore or archive verification")
+        raise SystemExit("Use only one of --archive, --status, --restore, --restore-archive, or --verify-archive")
+    if args.limit is not None and (args.status or args.restore or args.restore_archive or args.verify_archive):
+        raise SystemExit("--limit is only supported for upload/mirror sync")
 
     source_specs: list[tuple[Path, str]] = []
     if not args.archive and not args.restore_archive and not args.verify_archive:
@@ -884,6 +966,20 @@ def main() -> None:
                 (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
                 for source in args.source
             ]
+        elif args.status:
+            for index, (source_root, remote_subfolder) in enumerate(source_specs, 1):
+                if len(source_specs) > 1:
+                    print(f"\n=== Status {index}/{len(source_specs)}: {remote_subfolder} ===")
+                status_artifacts(
+                    source_root=source_root,
+                    drive_root_id=args.drive_root_id,
+                    drive_root_name=args.drive_root_name,
+                    repo_folder_name=args.repo_folder_name,
+                    remote_subfolder=remote_subfolder,
+                    oauth_client=Path(args.oauth_client),
+                    oauth_token=Path(args.oauth_token),
+                    retries=args.retries,
+                )
         elif args.restore:
             source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS]
         else:
