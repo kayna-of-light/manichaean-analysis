@@ -385,6 +385,7 @@ def collect_remote_tree(
     mirror: DriveMirror,
     folder_id: str,
     rel_prefix: str = "",
+    duplicate_files: Optional[list[tuple[str, dict[str, Any]]]] = None,
 ) -> tuple[dict[str, dict[str, Any]], list[tuple[str, dict[str, Any]]]]:
     files: dict[str, dict[str, Any]] = {}
     folders: list[tuple[str, dict[str, Any]]] = []
@@ -397,10 +398,18 @@ def collect_remote_tree(
         rel_path = f"{rel_prefix}/{name}" if rel_prefix else name
         if mime_type == FOLDER_MIME:
             folders.append((rel_path, item))
-            child_files, child_folders = collect_remote_tree(mirror, item_id, rel_path)
-            files.update(child_files)
+            child_files, child_folders = collect_remote_tree(mirror, item_id, rel_path, duplicate_files)
+            for child_path, child_item in child_files.items():
+                if child_path in files:
+                    if duplicate_files is not None:
+                        duplicate_files.append((child_path, child_item))
+                    continue
+                files[child_path] = child_item
             folders.extend(child_folders)
         else:
+            if duplicate_files is not None and rel_path in files:
+                duplicate_files.append((rel_path, item))
+                continue
             files[rel_path] = item
     return files, folders
 
@@ -463,19 +472,22 @@ def delete_remote_extras(
         print("Remote cleanup: mirror folder does not exist yet; no remote extras to preview")
         return 0, 0
 
-    remote_files, remote_folders = collect_remote_tree(mirror, source_id)
+    duplicate_files: list[tuple[str, dict[str, Any]]] = []
+    remote_files, remote_folders = collect_remote_tree(mirror, source_id, duplicate_files=duplicate_files)
     extra_files = sorted(set(remote_files) - desired_paths)
     desired_folders = desired_folder_paths(desired_paths)
     candidate_folders = sorted(rel for rel, _item in remote_folders if rel not in desired_folders)
 
-    if not extra_files and not candidate_folders:
+    if not extra_files and not duplicate_files and not candidate_folders:
         print("Remote cleanup: no extras")
         return 0, 0
 
     print("\nRemote cleanup warning")
     print(f"Remote files not present locally: {len(extra_files)}")
+    print(f"Duplicate remote files: {len(duplicate_files)}")
     print(f"Remote folders that may become empty: {len(candidate_folders)}")
     print_path_sample(extra_files, heading="Files to delete from Drive:")
+    print_path_sample([rel_path for rel_path, _item in duplicate_files], heading="Duplicate files to delete from Drive:")
     print_path_sample(candidate_folders, heading="Folders to delete from Drive if empty:")
 
     confirm_destructive_action(
@@ -492,7 +504,12 @@ def delete_remote_extras(
         deleted_files += 1
         print(f"delete remote file: {rel_path}")
 
-    if extra_files or candidate_folders:
+    for rel_path, item in duplicate_files:
+        mirror.delete_item(item["id"], rel_path)
+        deleted_files += 1
+        print(f"delete duplicate remote file: {rel_path}")
+
+    if extra_files or duplicate_files or candidate_folders:
         mirror.children_cache.clear()
 
     for rel_path, item in sorted(remote_folders, key=lambda pair: pair[0].count("/"), reverse=True):
@@ -781,7 +798,8 @@ def status_artifacts(
         print("Remote extras: 0")
         return
 
-    remote_files, _remote_folders = collect_remote_tree(mirror, source_id)
+    duplicate_files: list[tuple[str, dict[str, Any]]] = []
+    remote_files, _remote_folders = collect_remote_tree(mirror, source_id, duplicate_files=duplicate_files)
     remote_paths = set(remote_files)
     remote_bytes = sum(int(item.get("size", 0) or 0) for item in remote_files.values())
     missing_remote = sorted(set(local_paths) - remote_paths)
@@ -796,9 +814,11 @@ def status_artifacts(
     print(f"Byte progress: {remote_bytes}/{local_bytes} ({byte_progress:.1f}%)")
     print(f"Missing remotely: {len(missing_remote)}")
     print(f"Remote extras: {len(remote_extras)}")
+    print(f"Remote duplicates: {len(duplicate_files)}")
     print_prefix_status(set(local_paths), remote_paths)
     print_path_sample(missing_remote, heading="\nMissing remote sample")
     print_path_sample(remote_extras, heading="\nRemote extra sample")
+    print_path_sample([rel_path for rel_path, _item in duplicate_files], heading="\nRemote duplicate sample")
 
 
 def upload_single_artifact(
