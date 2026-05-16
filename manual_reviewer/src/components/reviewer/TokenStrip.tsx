@@ -24,11 +24,9 @@ interface Props {
 /** Position of a token within its overline group */
 type OverlinePos = "solo" | "first" | "middle" | "last" | null;
 
-const GROUP_BLOCKED_ABOVE_CODEPOINTS = new Set([
+const OVERLINE_CODEPOINTS = new Set([
   "\u0304",
   "\u0305",
-  "\u0307",
-  "\u0308",
   "\uFE24",
   "\uFE25",
   "\uFE26",
@@ -44,8 +42,8 @@ function overlineChar(pos: OverlinePos): string {
   }
 }
 
-function stripGroupBlockedAboveCodepoints(text: string): string {
-  return [...text].filter((ch) => !GROUP_BLOCKED_ABOVE_CODEPOINTS.has(ch)).join("");
+function stripOverlineCodepoints(text: string): string {
+  return [...text].filter((ch) => !OVERLINE_CODEPOINTS.has(ch)).join("");
 }
 
 function tokenDisplay(t: ReviewToken, olPos: OverlinePos): string {
@@ -74,7 +72,7 @@ function tokenDisplay(t: ReviewToken, olPos: OverlinePos): string {
     display = lbl;
   }
   // Group overlines are rendered from overline_mark_id; single overlines stay in the label.
-  if (olPos) display = stripGroupBlockedAboveCodepoints(display) + overlineChar(olPos);
+  if (olPos) display = stripOverlineCodepoints(display) + overlineChar(olPos);
   return display;
 }
 
@@ -105,7 +103,7 @@ function tokenBounds(t: ReviewToken): { x: number; left: number; right: number }
 function newBboxDisplay(label: string | null, olPos: OverlinePos): string {
   const display = label || "·";
   if (!olPos) return display;
-  return stripGroupBlockedAboveCodepoints(display) + overlineChar(olPos);
+  return stripOverlineCodepoints(display) + overlineChar(olPos);
 }
 
 function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | undefined): StripItem[] {

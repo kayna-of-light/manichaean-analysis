@@ -149,6 +149,10 @@ export const BaselineTokenSchema = z.object({
   blob_id: z.number(),
   cluster: z.string(),
   label: z.string().nullable().optional(),
+  overline_mark_id: z.number().nullable().optional(),
+  review_sheet_source: z.string().nullable().optional(),
+  review_sheet_raw_label: z.string().nullable().optional(),
+  v1_provenance: z.unknown().nullable().optional(),
   manual_override: OverrideSchema.nullable().optional(),
   manual_warning: OverrideSchema.nullable().optional(),
   geometric_override: OverrideSchema.nullable().optional(),
@@ -161,7 +165,7 @@ export const BaselineTokenSchema = z.object({
     aabb: z.tuple([z.number(), z.number(), z.number(), z.number()]),
     warped_bbox: z.tuple([z.number(), z.number(), z.number(), z.number()]),
   }),
-});
+}).passthrough();
 export type BaselineToken = z.infer<typeof BaselineTokenSchema>;
 
 export const BaselineLineSchema = z.object({

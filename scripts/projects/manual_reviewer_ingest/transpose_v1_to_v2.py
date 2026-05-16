@@ -1,29 +1,38 @@
-"""Transpose v1 OCR results onto the v2 body crop / geometry for the manual reviewer.
+"""Reproduce manual-reviewer initial data from the review-sheet ground truth.
 
 v2 is leading:
 - canvas:  output/projects/kephalaia_ocr_v2/line_body_split/text_body/p{NNN}_text_body.jpg
 - rows:    output/projects/kephalaia_ocr_v2/body_geometry/pages/p{NNN}_geometry.json
             (geometry_rows[].baseline_y + x_span in v2 text_body coordinates)
 
-v1 supplies tokens (cluster, label, candidates, overrides) with geometry in its
-own body-crop coordinates:
-- tokens:  output/projects/kephalaia_ocr/contextual_review/clusters_shape_padded_split_bodycrop_corrected_k240/line_sequences.jsonl
+v1 supplies character evidence with geometry in its own body-crop coordinates:
+- tokens:  output/projects/kephalaia_ocr/llm_witness/clusters_shape_padded_split_bodycrop_corrected_k240/composite_line_sequences.jsonl
 - quads:   output/projects/kephalaia_ocr/pages_base_split_chars_bodycrop_corrected/keph_p{NNN}_lines_base_split.json
             (lines[].blobs[].img_quad in v1 body-crop coordinates)
+
+The character labels are resolved by importing the same choose_display_label()
+used by build_page_review_sheet.py. The review sheet is the ground truth; this
+script does not re-infer labels with a separate fallback chain.
 
 Per row we compute an affine map (x_span + baseline_y; isotropic y-scale ~= x-scale)
 that takes a v1 img_quad point to a v2 text_body point. Rows are matched by
 ordinal index; if v1 and v2 disagree on row count we mark the page low-confidence
 but still emit (best effort, no rows dropped on the v2 side).
 
-Output: output/projects/kephalaia_manual_reviewer/initial_baseline/p{NNN}.json
+Output: manual_reviewer/data/ingest/
+    initial_baseline/p{NNN}.json
+    assets/v2/text_body/p{NNN}_text_body.jpg
+    assets/v2/body_geometry/pages/p{NNN}_geometry.json
+    artifacts/page_review_sheets/keph_p{NNN}_review.{json,html,png} when present
 """
 
 from __future__ import annotations
 
 import argparse
+import importlib.util
 import json
 import math
+import shutil
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -33,9 +42,13 @@ from typing import Any
 REPO = Path(__file__).resolve().parents[3]
 V1_OCR = REPO / "output" / "projects" / "kephalaia_ocr"
 V2_OCR = REPO / "output" / "projects" / "kephalaia_ocr_v2"
-OUT_ROOT = REPO / "output" / "projects" / "kephalaia_manual_reviewer"
+WEBAPP_DIR = REPO / "manual_reviewer"
+OUT_ROOT = WEBAPP_DIR / "data" / "ingest"
 INITIAL_DIR = OUT_ROOT / "initial_baseline"
 SUMMARY_PATH = OUT_ROOT / "summary.json"
+INGEST_TEXT_BODY_DIR = OUT_ROOT / "assets" / "v2" / "text_body"
+INGEST_BODY_GEOM_DIR = OUT_ROOT / "assets" / "v2" / "body_geometry" / "pages"
+INGEST_REVIEW_SHEET_DIR = OUT_ROOT / "artifacts" / "page_review_sheets"
 
 V1_LINE_SPLIT_DIR = V1_OCR / "pages_base_split_chars_bodycrop_corrected"
 V1_LINE_SEQUENCES = (
@@ -47,6 +60,77 @@ V1_LINE_SEQUENCES = (
 V2_BODY_GEOM_DIR = V2_OCR / "body_geometry" / "pages"
 V2_LINE_BODY_META_DIR = V2_OCR / "line_body_split" / "metadata"
 V2_TEXT_BODY_DIR = V2_OCR / "line_body_split" / "text_body"
+REVIEW_SHEET_SCRIPT = REPO / "scripts" / "projects" / "kephalaia_ocr" / "build_page_review_sheet.py"
+REVIEW_SHEET_ARTIFACT_DIR = REPO / "temp" / "projects" / "kephalaia_ocr" / "page_review_sheets"
+REVIEW_SHEET_IMAGE_DIR = V1_OCR / "page_review_sheets"
+V1_CONTEXT_DIR = V1_OCR / "contextual_review" / "clusters_shape_padded_split_bodycrop_corrected_k240"
+
+
+def load_review_sheet_module():
+    spec = importlib.util.spec_from_file_location("kephalaia_review_sheet", REVIEW_SHEET_SCRIPT)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot import {REVIEW_SHEET_SCRIPT}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+REVIEW_SHEET = load_review_sheet_module()
+
+
+def primary_overline_mark_id(token: dict[str, Any]) -> int | None:
+    for mark in token.get("attached_marks") or []:
+        if mark.get("kind") in {"overline", "horizontal_mark"} and mark.get("id") is not None:
+            return int(mark["id"])
+    return None
+
+
+def resolve_review_sheet_label(token: dict[str, Any], review_decisions: dict[str, dict[str, Any]]) -> tuple[str, str, str | None, int | None]:
+    text, source, _color, raw_label = REVIEW_SHEET.choose_display_label(
+        token,
+        review_decisions,
+        True,
+    )
+    return str(text), str(source), (str(raw_label) if raw_label else None), primary_overline_mark_id(token)
+
+
+def copy_if_exists(src: Path, dst: Path, dry_run: bool) -> bool:
+    if not src.exists():
+        return False
+    if not dry_run:
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+    return True
+
+
+def copy_page_assets(page: str, dry_run: bool) -> dict[str, Any]:
+    copied: dict[str, Any] = {}
+    copied["text_body"] = copy_if_exists(
+        V2_TEXT_BODY_DIR / f"p{page}_text_body.jpg",
+        INGEST_TEXT_BODY_DIR / f"p{page}_text_body.jpg",
+        dry_run,
+    )
+    copied["body_geometry"] = copy_if_exists(
+        V2_BODY_GEOM_DIR / f"p{page}_geometry.json",
+        INGEST_BODY_GEOM_DIR / f"p{page}_geometry.json",
+        dry_run,
+    )
+    copied["review_manifest"] = copy_if_exists(
+        REVIEW_SHEET_ARTIFACT_DIR / f"keph_p{page}_review.json",
+        INGEST_REVIEW_SHEET_DIR / f"keph_p{page}_review.json",
+        dry_run,
+    )
+    copied["review_html"] = copy_if_exists(
+        REVIEW_SHEET_ARTIFACT_DIR / f"keph_p{page}_review.html",
+        INGEST_REVIEW_SHEET_DIR / f"keph_p{page}_review.html",
+        dry_run,
+    )
+    copied["review_png"] = copy_if_exists(
+        REVIEW_SHEET_IMAGE_DIR / f"keph_p{page}_review.png",
+        INGEST_REVIEW_SHEET_DIR / f"keph_p{page}_review.png",
+        dry_run,
+    )
+    return copied
 
 
 @dataclass
@@ -203,6 +287,7 @@ def quad_axis_aligned(quad: list[list[float]]) -> list[float]:
 def transpose_page(
     page: str,
     sequences_by_page: dict[str, list[dict[str, Any]]],
+    review_decisions: dict[str, dict[str, Any]],
 ) -> dict[str, Any] | None:
     v1_load = load_v1_blobs(page)
     v2_load = load_v2_rows(page)
@@ -272,15 +357,40 @@ def transpose_page(
             if not (0 <= cx <= img_w and 0 <= cy <= img_h):
                 excluded_token_total += 1
                 continue
+            display_label, display_source, raw_label, overline_mark_id = resolve_review_sheet_label(
+                tok,
+                review_decisions,
+            )
             t = {
                 "blob_id": bid,
-                "cluster": tok.get("cluster"),
-                "label": tok.get("label"),
-                "manual_override": tok.get("manual_override"),
+                "cluster": str(tok.get("cluster") or "unclustered"),
+                # Ground truth for the webapp initial state: this is exactly the
+                # text resolved by build_page_review_sheet.py.
+                "label": display_label,
+                "overline_mark_id": overline_mark_id,
+                "review_sheet_source": display_source,
+                "review_sheet_raw_label": raw_label,
+                # Preserve v1 evidence for inspection, but do not expose it as
+                # active override fields that can re-overwrite the sheet label.
+                "v1_provenance": {
+                    "label": tok.get("label"),
+                    "final_label": tok.get("final_label"),
+                    "final_label_source": tok.get("final_label_source"),
+                    "manual_override": tok.get("manual_override"),
+                    "manual_warning": tok.get("manual_warning"),
+                    "geometric_override": tok.get("geometric_override"),
+                    "editorial_override": tok.get("editorial_override"),
+                    "subcluster_override": tok.get("subcluster_override"),
+                    "attached_marks": tok.get("attached_marks") or [],
+                    "geometry_mark_kinds": tok.get("geometry_mark_kinds") or [],
+                    "llm_alignment": tok.get("llm_alignment"),
+                    "split_metadata": tok.get("split_metadata"),
+                },
+                "manual_override": None,
                 "manual_warning": tok.get("manual_warning"),
-                "geometric_override": tok.get("geometric_override"),
-                "editorial_override": tok.get("editorial_override"),
-                "subcluster_override": tok.get("subcluster_override"),
+                "geometric_override": None,
+                "editorial_override": None,
+                "subcluster_override": None,
                 "candidates": tok.get("candidates") or [],
                 "review": bool(tok.get("review")),
                 "geometry": {
@@ -303,7 +413,7 @@ def transpose_page(
         )
 
     text_body_rel = (
-        V2_TEXT_BODY_DIR.relative_to(REPO).as_posix() + f"/p{page}_text_body.jpg"
+        (INGEST_TEXT_BODY_DIR.relative_to(WEBAPP_DIR)).as_posix() + f"/p{page}_text_body.jpg"
     )
     return {
         "page": page,
@@ -326,7 +436,11 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
-    INITIAL_DIR.mkdir(parents=True, exist_ok=True)
+    if not args.dry_run:
+        INITIAL_DIR.mkdir(parents=True, exist_ok=True)
+        INGEST_TEXT_BODY_DIR.mkdir(parents=True, exist_ok=True)
+        INGEST_BODY_GEOM_DIR.mkdir(parents=True, exist_ok=True)
+        INGEST_REVIEW_SHEET_DIR.mkdir(parents=True, exist_ok=True)
 
     # Page set: every page that has v2 geometry. v2 is leading.
     page_set: list[str] = []
@@ -350,14 +464,17 @@ def main() -> None:
     print(f"[transpose] loading v1 line_sequences …", file=sys.stderr)
     sequences_by_page = load_jsonl_by_page(V1_LINE_SEQUENCES)
     print(f"[transpose] {len(sequences_by_page)} v1 pages with sequences", file=sys.stderr)
+    review_decisions = REVIEW_SHEET.load_review_decisions(V1_CONTEXT_DIR / "review_cluster_context.json")
+    print(f"[transpose] loaded {len(review_decisions)} review-sheet cluster decisions", file=sys.stderr)
 
     summary_pages: list[dict[str, Any]] = []
     n_ok = 0
     for page in page_set:
-        result = transpose_page(page, sequences_by_page)
+        result = transpose_page(page, sequences_by_page, review_decisions)
         if not result:
             continue
         if result.get("status") == "ok":
+            copied_assets = copy_page_assets(page, args.dry_run)
             out_path = INITIAL_DIR / f"p{page}.json"
             if not args.dry_run:
                 out_path.write_text(json.dumps(result, ensure_ascii=False), encoding="utf-8")
@@ -371,6 +488,7 @@ def main() -> None:
                     "rows_aligned": result["rows_aligned"],
                     "tokens_excluded": result["tokens_excluded"],
                     "image_size": result["image_size"],
+                    "assets": copied_assets,
                 }
             )
             print(
@@ -385,6 +503,11 @@ def main() -> None:
     summary = {
         "total_pages": len(page_set),
         "ok_pages": n_ok,
+        "output_root": str(OUT_ROOT.relative_to(REPO)),
+        "label_ground_truth": str(REVIEW_SHEET_SCRIPT.relative_to(REPO)),
+        "label_source": str(V1_LINE_SEQUENCES.relative_to(REPO)),
+        "geometry_source": str(V2_BODY_GEOM_DIR.relative_to(REPO)),
+        "text_body_source": str(V2_TEXT_BODY_DIR.relative_to(REPO)),
         "pages": summary_pages,
     }
     if not args.dry_run:
