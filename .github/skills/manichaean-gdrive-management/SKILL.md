@@ -68,6 +68,7 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
 2. Preview small syncs before doing a large operation:
 
    ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --status --source output --retries 12
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dry-run --limit 10
    ```
 

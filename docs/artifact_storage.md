@@ -63,6 +63,9 @@ conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --ve
 Useful options:
 
 ```powershell
+# Compare local files to the Drive mirror without changing anything
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --status --source output --retries 12
+
 # Preview without uploading. The limit applies per source folder.
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dry-run --limit 10
 
