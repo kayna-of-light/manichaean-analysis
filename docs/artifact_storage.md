@@ -2,11 +2,12 @@
 
 Generated artifacts belong in Google Drive, not Git history. Source data also gets a Drive mirror so oversized OCR dumps and recovered source material have an external safety copy.
 
-The default repository sync mirrors `output/` and `data/` to:
+The default repository sync mirrors `output/`, `data/`, and `manual_reviewer/data/` to:
 
 ```text
 My Drive/.git-data/manichaean-analysis/output/
 My Drive/.git-data/manichaean-analysis/data/
+My Drive/.git-data/manichaean-analysis/manual_reviewer/data/
 ```
 
 Run the mirror from the repository root:
@@ -15,7 +16,7 @@ Run the mirror from the repository root:
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py
 ```
 
-The script reuses the working Google Drive OAuth client and token from `literary-compilation/secrets/`. It creates missing Drive folders, uploads missing or changed files, skips files that already match by checksum, and never deletes remote files. The default sync includes both `output/` and `data/` when present; a clean checkout without `output/` skips that missing default source. Use `--source output` or `--source data` for a targeted single-folder sync.
+The script reuses the working Google Drive OAuth client and token from `literary-compilation/secrets/`. It creates missing Drive folders, uploads missing or changed files, skips files that already match by checksum, and never deletes remote files. The default sync includes `output/`, `data/`, and `manual_reviewer/data/` when present; a clean checkout without generated local folders skips those missing default sources. Use `--source output`, `--source data`, or `--source manual_reviewer/data` for a targeted single-folder sync.
 
 For a fast complete safety backup, create and upload a single archive:
 
@@ -45,6 +46,7 @@ conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dr
 
 # Sync only one source folder
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
 
 # Retry harder on flaky network connections
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --retries 12
