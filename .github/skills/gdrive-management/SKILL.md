@@ -11,7 +11,9 @@ Use this skill for `manichaean-analysis` tasks involving Google Drive storage, e
 
 - Backing up or mirroring generated `output/` artifacts, repository `data/` sources, and `manual_reviewer/data/` local review data.
 - Uploading large OCR dumps or other files that should not enter Git history.
+- Pruning old Drive files when local mirror files were deleted.
 - Restoring generated artifacts from Drive archives.
+- Restoring the Drive mirror into a fresh clone or new machine.
 - Verifying whether Drive holds a safety copy before cleanup.
 - Keeping Git history free of generated files and blobs `>= 50 MB`.
 
@@ -53,7 +55,7 @@ C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_oauth_clien
 C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_token.json
 ```
 
-It creates missing Drive folders, uploads missing or changed files, skips files that match by checksum, and never deletes remote files.
+It creates missing Drive folders, uploads missing or changed files, skips files that match by checksum, and deletes remote files that no longer exist locally after confirmation. Set `LITERARY_COMPILATION_SECRETS` or pass `--oauth-client` / `--oauth-token` when the sibling `literary-compilation/secrets/` folder is not available.
 
 ## Standard Workflow
 
@@ -77,12 +79,20 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
 
    By default this mirrors `output/`, `data/`, and `manual_reviewer/data/` when present. A clean checkout without generated local folders skips those missing default sources. The limit in `--limit N` applies per source folder.
 
+   This is a true local-to-Drive mirror. Remote files missing locally are deleted after a `DELETE_REMOTE` confirmation. Use `--dry-run` first to preview, `--yes` after reviewing, or `--no-delete` when an upload/update-only pass is required.
+
    To mirror only one folder:
 
    ```powershell
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source output --retries 12
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
+   ```
+
+   Confirm reviewed deletions non-interactively:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --yes --retries 12
    ```
 
 4. Prefer archive mode for immediate complete backups of large output trees:
@@ -99,7 +109,21 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --archive "path/to/large-source-file.json" --retries 12
    ```
 
-6. Restore an archive from a local copy into the repository root:
+6. Restore the Drive mirror into a fresh clone:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
+   ```
+
+   Restore creates/updates local files but does not delete local extras unless explicitly requested:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --prune-local --retries 12
+   ```
+
+   `--prune-local` requires typing `DELETE_LOCAL` before deleting local files that are missing from Drive. Use `--yes` only after reviewing a dry run.
+
+7. Restore an archive from a local copy into the repository root:
 
    ```powershell
    tar -xzf temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
@@ -111,6 +135,7 @@ Before cleanup or promotion work, confirm preservation:
 
 - There is a Drive archive under `.git-data/manichaean-analysis/archives/` when a full safety backup is needed.
 - The default Drive mirror includes `.git-data/manichaean-analysis/output/`, `.git-data/manichaean-analysis/data/`, and `.git-data/manichaean-analysis/manual_reviewer/data/`.
+- Run `--dry-run` before any sync expected to delete remote files.
 - Large generated files are not staged.
 - `output/` is ignored or locally excluded.
 - New Git objects do not include blobs `>= 50 MB`.
@@ -132,9 +157,9 @@ foreach ($line in $objects) {
 
 ## Standing Rules
 
-- Do not delete local artifacts as part of Drive sync unless the user explicitly asks.
+- Do not delete local artifacts as part of Drive restore unless the user explicitly asks via `--prune-local`.
 - Do not use `git reset --hard` or destructive checkout to clean artifacts.
 - Do not use Drive as proof of safety unless upload completion is visible.
-- Do not use `--delete` behavior. The artifact sync script is intentionally non-deleting.
+- Do not bypass destructive prompts unless a dry run has already been reviewed or the user explicitly asked for non-interactive cleanup.
 - Preserve old branch refs before promoting cleaned Git history.
 - Record any important Drive location in `docs/artifact_storage.md` when the storage policy changes.

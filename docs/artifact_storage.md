@@ -16,7 +16,9 @@ Run the mirror from the repository root:
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py
 ```
 
-The script reuses the working Google Drive OAuth client and token from `literary-compilation/secrets/`. It creates missing Drive folders, uploads missing or changed files, skips files that already match by checksum, and never deletes remote files. The default sync includes `output/`, `data/`, and `manual_reviewer/data/` when present; a clean checkout without generated local folders skips those missing default sources. Use `--source output`, `--source data`, or `--source manual_reviewer/data` for a targeted single-folder sync.
+The script reuses the working Google Drive OAuth client and token from the sibling `literary-compilation/secrets/` folder. Set `LITERARY_COMPILATION_SECRETS` or pass `--oauth-client` / `--oauth-token` if the secrets live elsewhere. It creates missing Drive folders, uploads missing or changed files, skips files that already match by checksum, and deletes remote files that no longer exist locally after confirmation. The default sync includes `output/`, `data/`, and `manual_reviewer/data/` when present; a clean checkout without generated local folders skips those missing default sources. Use `--source output`, `--source data`, or `--source manual_reviewer/data` for a targeted single-folder sync.
+
+Normal sync is a true local-to-Drive mirror. If the script finds remote files that are not present locally, it prints a warning and requires typing `DELETE_REMOTE` before deleting them. Use `--yes` for an already-reviewed non-interactive run, or `--no-delete` for upload/update-only behavior.
 
 For a fast complete safety backup, create and upload a single archive:
 
@@ -48,9 +50,29 @@ conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dr
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
 
+# After reviewing the warning, confirm remote cleanup non-interactively
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --yes --retries 12
+
+# Upload/update only, without deleting remote extras
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --no-delete --retries 12
+
 # Retry harder on flaky network connections
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --retries 12
 ```
+
+To restore the Drive mirror into a fresh clone:
+
+```powershell
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
+```
+
+Restore creates or updates local files from Drive. It does not delete local extras unless explicitly requested:
+
+```powershell
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --prune-local --retries 12
+```
+
+When `--prune-local` finds local files missing from Drive, it requires typing `DELETE_LOCAL` before deleting them. Use `--dry-run` first to preview restore or cleanup actions.
 
 Git should keep source code, scripts, findings, documentation, and normal-sized source data. Large generated output should be restored from Drive when needed.
 
