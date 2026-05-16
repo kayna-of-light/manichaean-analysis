@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
-"""Mirror generated artifacts to Google Drive.
+"""Mirror repository artifacts to Google Drive.
 
-This is intended for large, generated folders such as ``output/`` that should
-not live in Git history. By default it mirrors this repository's ``output/``
-tree into:
+This is intended for large generated folders and source-data mirrors that need
+Drive preservation in addition to Git. By default it mirrors this repository's
+``output/`` and ``data/`` trees into:
 
     My Drive/.git-data/manichaean-analysis/output/
+    My Drive/.git-data/manichaean-analysis/data/
 
 The script only creates folders and uploads or updates files. It never deletes
 remote files.
@@ -23,7 +24,8 @@ from typing import Any, Callable, Optional, TypeVar
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
-DEFAULT_SOURCE = REPO_ROOT / "output"
+DEFAULT_SOURCES = (REPO_ROOT / "output", REPO_ROOT / "data")
+DEFAULT_REPO_FOLDER_NAME = "manichaean-analysis"
 
 # Reuse the known-good OAuth app and token from literary-compilation.
 LIT_COMP_SECRETS = Path(r"C:\Users\mlf\source\github\literary-compilation\secrets")
@@ -351,12 +353,17 @@ def upload_single_artifact(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Mirror generated artifacts to Google Drive")
-    parser.add_argument("--source", default=str(DEFAULT_SOURCE), help="Local folder to mirror")
+    parser = argparse.ArgumentParser(description="Mirror repository artifacts to Google Drive")
+    parser.add_argument(
+        "--source",
+        action="append",
+        default=None,
+        help="Local folder to mirror. Can be repeated. Defaults to output/ and data/.",
+    )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
     parser.add_argument("--drive-root-id", default="root", help="Parent Drive folder id; default is My Drive root")
     parser.add_argument("--drive-root-name", default=".git-data", help="Top-level artifact folder name")
-    parser.add_argument("--repo-folder-name", default=REPO_ROOT.name, help="Repository folder name under drive-root-name")
+    parser.add_argument("--repo-folder-name", default=DEFAULT_REPO_FOLDER_NAME, help="Repository folder name under drive-root-name")
     parser.add_argument("--remote-subfolder", default=None, help="Remote subfolder name; default is source folder name")
     parser.add_argument("--oauth-client", default=str(DEFAULT_OAUTH_CLIENT), help="OAuth client JSON path")
     parser.add_argument("--oauth-token", default=str(DEFAULT_OAUTH_TOKEN), help="OAuth token cache path")
@@ -371,8 +378,18 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    source_root = Path(args.source).resolve()
-    remote_subfolder = args.remote_subfolder or source_root.name
+    if args.source:
+        source_roots = [Path(source).resolve() for source in args.source]
+    else:
+        missing_defaults = [path for path in DEFAULT_SOURCES if not path.exists()]
+        for missing in missing_defaults:
+            print(f"Skipping missing default source: {missing}")
+        source_roots = [path.resolve() for path in DEFAULT_SOURCES if path.exists()]
+        if not source_roots:
+            default_list = ", ".join(str(path) for path in DEFAULT_SOURCES)
+            raise SystemExit(f"No default source folders found: {default_list}")
+    if args.remote_subfolder and len(source_roots) != 1 and not args.archive:
+        raise SystemExit("--remote-subfolder can only be used when mirroring one --source folder")
 
     try:
         if args.archive:
@@ -388,19 +405,22 @@ def main() -> None:
                 retries=args.retries,
             )
         else:
-            mirror_artifacts(
-                source_root=source_root,
-                drive_root_id=args.drive_root_id,
-                drive_root_name=args.drive_root_name,
-                repo_folder_name=args.repo_folder_name,
-                remote_subfolder=remote_subfolder,
-                oauth_client=Path(args.oauth_client),
-                oauth_token=Path(args.oauth_token),
-                dry_run=args.dry_run,
-                limit=args.limit,
-                retries=args.retries,
-                progress_every=max(1, args.progress_every),
-            )
+            for index, source_root in enumerate(source_roots, 1):
+                if len(source_roots) > 1:
+                    print(f"\n=== Source {index}/{len(source_roots)}: {source_root.name} ===")
+                mirror_artifacts(
+                    source_root=source_root,
+                    drive_root_id=args.drive_root_id,
+                    drive_root_name=args.drive_root_name,
+                    repo_folder_name=args.repo_folder_name,
+                    remote_subfolder=args.remote_subfolder or source_root.name,
+                    oauth_client=Path(args.oauth_client),
+                    oauth_token=Path(args.oauth_token),
+                    dry_run=args.dry_run,
+                    limit=args.limit,
+                    retries=args.retries,
+                    progress_every=max(1, args.progress_every),
+                )
     except Exception as exc:
         friendly = _describe_http_error(exc)
         if friendly:
