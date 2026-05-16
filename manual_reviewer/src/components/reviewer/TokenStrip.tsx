@@ -54,11 +54,19 @@ function tokenDisplay(t: ReviewToken, olPos: OverlinePos): string {
   if (lbl.startsWith("_")) {
     switch (lbl) {
       case "_lacuna_dot":
+        display = "."; break;
+      case "_middle_dot":
         display = "\u00B7"; break;
       case "_left_square_bracket":
         display = "["; break;
       case "_right_square_bracket":
         display = "]"; break;
+      case "_left_parenthesis":
+      case "_left_paren":
+        display = "("; break;
+      case "_right_parenthesis":
+      case "_right_paren":
+        display = ")"; break;
       case "_unknown":
         display = "\u2E2C"; break;
       case "_connected_needs_literal_reading":
@@ -69,7 +77,7 @@ function tokenDisplay(t: ReviewToken, olPos: OverlinePos): string {
         display = lbl; break;
     }
   } else {
-    display = lbl;
+    display = lbl === "\u02D9" || lbl === "\u0387" ? "\u00B7" : lbl;
   }
   // Group overlines are rendered from overline_mark_id; single overlines stay in the label.
   if (olPos) display = stripOverlineCodepoints(display) + overlineChar(olPos);

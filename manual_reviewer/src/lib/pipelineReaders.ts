@@ -19,7 +19,7 @@ const BASELINE_FILE_RE = /^p(\d{3,4})\.json$/;
 
 let _pageList: string[] | null = null;
 let _lineSeqIndex: Map<string, LineRecord[]> | null = null;
-const _baselineCache = new Map<string, Baseline | null>();
+const _baselineCache = new Map<string, { mtimeMs: number; value: Baseline | null }>();
 
 /**
  * Returns sorted list of page ids that exist on disk. Cheap; cached.
@@ -61,15 +61,17 @@ export async function listPages(): Promise<string[]> {
  * cluster/label state. Cached per-process.
  */
 export async function readInitialBaseline(page: string): Promise<Baseline | null> {
-  if (_baselineCache.has(page)) return _baselineCache.get(page) ?? null;
   const f = path.join(MANUAL_REVIEWER.initialBaseline, `p${page}.json`);
   if (!fs.existsSync(f)) {
-    _baselineCache.set(page, null);
+    _baselineCache.set(page, { mtimeMs: -1, value: null });
     return null;
   }
+  const mtimeMs = fs.statSync(f).mtimeMs;
+  const cached = _baselineCache.get(page);
+  if (cached && cached.mtimeMs === mtimeMs) return cached.value;
   const txt = await fsPromises.readFile(f, "utf8");
   const parsed = BaselineSchema.parse(JSON.parse(txt));
-  _baselineCache.set(page, parsed);
+  _baselineCache.set(page, { mtimeMs, value: parsed });
   return parsed;
 }
 
@@ -85,19 +87,21 @@ export interface V2RowGeometry {
   x_span: [number, number];
 }
 
-const _geometryCache = new Map<string, V2RowGeometry[] | null>();
+const _geometryCache = new Map<string, { mtimeMs: number; value: V2RowGeometry[] | null }>();
 
 /**
  * Read the v2 body_geometry for a page. Returns row bboxes (ink extents)
  * which provide accurate crop bounds for line strips.
  */
 export async function readV2Geometry(page: string): Promise<V2RowGeometry[] | null> {
-  if (_geometryCache.has(page)) return _geometryCache.get(page) ?? null;
   const f = path.join(PIPELINE_V2.bodyGeometryPages, `p${page}_geometry.json`);
   if (!fs.existsSync(f)) {
-    _geometryCache.set(page, null);
+    _geometryCache.set(page, { mtimeMs: -1, value: null });
     return null;
   }
+  const mtimeMs = fs.statSync(f).mtimeMs;
+  const cached = _geometryCache.get(page);
+  if (cached && cached.mtimeMs === mtimeMs) return cached.value;
   const txt = await fsPromises.readFile(f, "utf8");
   const data = JSON.parse(txt);
   const rows: V2RowGeometry[] = (data.geometry_rows ?? []).map((r: Record<string, unknown>) => ({
@@ -106,7 +110,7 @@ export async function readV2Geometry(page: string): Promise<V2RowGeometry[] | nu
     baseline_y: r.baseline_y as number,
     x_span: r.x_span as [number, number],
   }));
-  _geometryCache.set(page, rows);
+  _geometryCache.set(page, { mtimeMs, value: rows });
   return rows;
 }
 

@@ -27,9 +27,9 @@ interface Props {
 
 /**
  * Renders the body image clipped to one line strip and overlays each
- * token's img_quad. Uses a div container with CSS background-image
- * positioned so the strip is visible at its native page coordinates,
- * then draws SVG overlays on top in the same coordinate system.
+ * token's img_quad. The image and overlays live in the same SVG viewBox
+ * so there is only one browser transform between page coordinates and
+ * screen pixels.
  */
 export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, onNewBbox, newBboxes, onNewBboxClick }: Props) {
   const ref = useRef<HTMLDivElement>(null);
@@ -164,10 +164,6 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
         position: "relative",
         width: "100%",
         height: stripH * scale,
-        backgroundImage: `url(${page.image_url})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: `${pageW * scale}px ${pageH * scale}px`,
-        backgroundPosition: `-${x0 * scale}px -${y0 * scale}px`,
         borderRadius: 1,
         overflow: "hidden",
         backgroundColor: "var(--color-glass-surface)",
@@ -184,6 +180,15 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
         preserveAspectRatio="none"
         style={{ position: "absolute", inset: 0, pointerEvents: drawMode ? "none" : undefined }}
       >
+        <image
+          href={page.image_url}
+          x={0}
+          y={0}
+          width={pageW}
+          height={pageH}
+          preserveAspectRatio="none"
+          style={{ pointerEvents: "none" }}
+        />
         {line.tokens.map((t) => {
           if (!t.img_quad) return null;
           if (t.deleted) return null;

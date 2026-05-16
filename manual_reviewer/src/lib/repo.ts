@@ -450,8 +450,132 @@ export function unsetBlob(
          (page, line_index, blob_id, removed_from_cluster, moved_at)
          VALUES (?, ?, ?, ?, datetime('now'))`,
       ).run(page, lineIndex, blobId, removedFromCluster);
+      // A blob being unset shouldn't also be tracked as reassigned.
+      db.prepare(
+        `DELETE FROM cluster_reassignments
+         WHERE page = ? AND line_index = ? AND blob_id = ?`,
+      ).run(page, lineIndex, blobId);
     },
   );
+}
+
+export interface ClusterReassignmentRow {
+  page: number;
+  line_index: number;
+  blob_id: string;
+  from_cluster: number | null;
+  to_cluster: number;
+  note: string | null;
+  moved_at: string;
+}
+
+/** Move a single blob from `fromCluster` (informational) to `toCluster`. */
+export function reassignBlob(
+  page: number,
+  lineIndex: number,
+  blobId: string,
+  fromCluster: number | null,
+  toCluster: number,
+  note: string | null = null,
+) {
+  const db = getDb();
+  return withAudit(
+    "cluster.reassign_blob",
+    page,
+    lineIndex,
+    blobId,
+    { fromCluster },
+    { toCluster, note },
+    () => {
+      db.prepare(
+        `INSERT INTO cluster_reassignments
+         (page, line_index, blob_id, from_cluster, to_cluster, note, moved_at)
+         VALUES (?, ?, ?, ?, ?, ?, datetime('now'))
+         ON CONFLICT(page, line_index, blob_id) DO UPDATE SET
+           from_cluster = excluded.from_cluster,
+           to_cluster   = excluded.to_cluster,
+           note         = excluded.note,
+           moved_at     = excluded.moved_at`,
+      ).run(page, lineIndex, blobId, fromCluster, toCluster, note);
+      // Reassigning a previously-unset blob brings it back into a cluster.
+      db.prepare(
+        `DELETE FROM unset_blobs
+         WHERE page = ? AND line_index = ? AND blob_id = ?`,
+      ).run(page, lineIndex, blobId);
+    },
+  );
+}
+
+/** Clear an existing reassignment, returning the blob to its original cluster. */
+export function clearReassignment(
+  page: number,
+  lineIndex: number,
+  blobId: string,
+) {
+  const db = getDb();
+  const before = db
+    .prepare<[number, number, string], ClusterReassignmentRow>(
+      `SELECT * FROM cluster_reassignments
+       WHERE page = ? AND line_index = ? AND blob_id = ?`,
+    )
+    .get(page, lineIndex, blobId) ?? null;
+  if (!before) return null;
+  return withAudit(
+    "cluster.clear_reassignment",
+    page,
+    lineIndex,
+    blobId,
+    before,
+    null,
+    () => {
+      db.prepare(
+        `DELETE FROM cluster_reassignments
+         WHERE page = ? AND line_index = ? AND blob_id = ?`,
+      ).run(page, lineIndex, blobId);
+    },
+  );
+}
+
+/** All reassignments for a single page. Keyed by `lineIndex:blobId`. */
+export function readReassignmentsForPage(
+  page: number,
+): Map<string, ClusterReassignmentRow> {
+  const db = getDb();
+  const rows = db
+    .prepare<[number], ClusterReassignmentRow>(
+      `SELECT * FROM cluster_reassignments WHERE page = ?`,
+    )
+    .all(page);
+  const m = new Map<string, ClusterReassignmentRow>();
+  for (const r of rows) m.set(`${r.line_index}:${r.blob_id}`, r);
+  return m;
+}
+
+/** All blobs reassigned INTO a given cluster (from anywhere in the corpus). */
+export function readReassignmentsToCluster(
+  toCluster: number,
+): ClusterReassignmentRow[] {
+  const db = getDb();
+  return db
+    .prepare<[number], ClusterReassignmentRow>(
+      `SELECT * FROM cluster_reassignments WHERE to_cluster = ?`,
+    )
+    .all(toCluster);
+}
+
+/** All blobs reassigned AWAY from a given cluster. Keyed by `page:line:blob`. */
+export function readReassignmentsFromCluster(
+  fromCluster: number,
+): Map<string, ClusterReassignmentRow> {
+  const db = getDb();
+  const rows = db
+    .prepare<[number], ClusterReassignmentRow>(
+      `SELECT * FROM cluster_reassignments WHERE from_cluster = ?`,
+    )
+    .all(fromCluster);
+  const m = new Map<string, ClusterReassignmentRow>();
+  for (const r of rows) m.set(`${r.page}:${r.line_index}:${r.blob_id}`, r);
+  return m;
 }
 
 export function resetLine(page: number, lineIndex: number) {
@@ -550,13 +674,18 @@ export function mergeTokens(
   edits: Map<string, BlobEditRow>,
   clusterOverrides: Map<number, ClusterOverrideRow>,
   unsetSet: Set<string>,
+  reassignments?: Map<string, ClusterReassignmentRow>,
 ): EffectiveToken[] {
   return tokens.map((t) => {
     const key = `${t.line_index}:${t.blob_id}`;
     const edit = edits.get(key);
-    const clusterIdInt = parseInt(t.cluster, 10);
-    const co = Number.isFinite(clusterIdInt)
-      ? clusterOverrides.get(clusterIdInt)
+    const reassign = reassignments?.get(key) ?? null;
+    const originalClusterInt = parseInt(t.cluster, 10);
+    const effectiveClusterInt = reassign ? reassign.to_cluster
+      : Number.isFinite(originalClusterInt) ? originalClusterInt
+      : null;
+    const co = effectiveClusterInt != null
+      ? clusterOverrides.get(effectiveClusterInt)
       : undefined;
     const deleted = Boolean(edit?.deleted);
     const manuallyCleared = Boolean(edit && !deleted && edit.label === "");
@@ -570,7 +699,7 @@ export function mergeTokens(
         t.manual_override?.label ??
         t.label ??
         null);
-    const userModified = Boolean(edit) || Boolean(co);
+    const userModified = Boolean(edit) || Boolean(co) || Boolean(reassign);
     // Overline: if user has a blob_edit row, its overline_mark_id wins (even if null = cleared)
     const overlineMarkId = edit
       ? (edit.overline_mark_id ?? null)
@@ -578,6 +707,9 @@ export function mergeTokens(
     void page;
     return {
       ...t,
+      cluster: effectiveClusterInt != null
+        ? String(effectiveClusterInt).padStart(3, "0")
+        : t.cluster,
       overline_mark_id: overlineMarkId,
       effective_label: effective,
       user_modified: userModified,

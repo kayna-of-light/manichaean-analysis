@@ -13,6 +13,7 @@ export interface ChooserAnchor {
   pageInt: number;
   lineIndex: number;
   blobId: string | number;
+  cluster: string | null;
   currentLabel: string | null;
   currentDiacritics: string[];
   candidates: string[];
