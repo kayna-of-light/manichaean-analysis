@@ -102,8 +102,11 @@ export interface SpecialMarker {
 
 export const SPECIAL_MARKERS: SpecialMarker[] = [
   { token: ".", display: ".", key: ".", name: "lacuna dot" },
+  { token: "\u00B7", display: "\u00B7", key: "\u00B7", name: "middle dot (apparatus)" },
   { token: "[", display: "[", key: "[", name: "left bracket" },
   { token: "]", display: "]", key: "]", name: "right bracket" },
+  { token: "(", display: "(", key: "(", name: "left parenthesis" },
+  { token: ")", display: ")", key: ")", name: "right parenthesis" },
 ];
 
 export const SPECIAL_KEYMAP: Record<string, string> = (() => {

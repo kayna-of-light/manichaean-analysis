@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 3;
+const SCHEMA_VERSION = 4;
 
 let _db: DB | null = null;
 
@@ -113,6 +113,21 @@ function migrate(db: DB) {
       PRIMARY KEY (page, line_index, blob_id)
     );
 
+    CREATE TABLE IF NOT EXISTS cluster_reassignments (
+      page          INTEGER NOT NULL,
+      line_index    INTEGER NOT NULL,
+      blob_id       TEXT NOT NULL,
+      from_cluster  INTEGER,
+      to_cluster    INTEGER NOT NULL,
+      note          TEXT,
+      moved_at      TEXT NOT NULL DEFAULT (datetime('now')),
+      PRIMARY KEY (page, line_index, blob_id)
+    );
+    CREATE INDEX IF NOT EXISTS idx_cluster_reassign_to
+      ON cluster_reassignments(to_cluster);
+    CREATE INDEX IF NOT EXISTS idx_cluster_reassign_from
+      ON cluster_reassignments(from_cluster);
+
     CREATE TABLE IF NOT EXISTS tasks (
       id           INTEGER PRIMARY KEY AUTOINCREMENT,
       page         INTEGER NOT NULL,
@@ -166,6 +181,13 @@ function migrate(db: DB) {
     if (!cols.some((c) => c.name === "overline_mark_id")) {
       db.exec("ALTER TABLE new_bboxes ADD COLUMN overline_mark_id INTEGER");
     }
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run("3");
+  }
+
+  if (currentVersion < 4) {
+    // cluster_reassignments is created above via CREATE IF NOT EXISTS; just bump.
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));

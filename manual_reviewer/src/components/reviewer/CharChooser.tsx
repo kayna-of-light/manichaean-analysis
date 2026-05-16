@@ -14,6 +14,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutlined";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
+import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import { COPTIC_LETTERS, DIACRITICS, SPECIAL_MARKERS } from "@/lib/copticInventory";
 import { intentFromKey, applyDiacritic } from "@/lib/copticKeymap";
 import { useReviewerStore } from "./store";
@@ -85,11 +86,17 @@ interface Props {
 /** Convert legacy cluster-name labels to their display character */
 function displayLabel(lbl: string | null | undefined): string {
   if (!lbl) return "";
+  if (lbl === "\u02D9" || lbl === "\u0387") return "\u00B7";
   if (!lbl.startsWith("_")) return lbl;
   switch (lbl) {
-    case "_lacuna_dot": return "\u00B7";
+    case "_lacuna_dot": return ".";
+    case "_middle_dot": return "\u00B7";
     case "_left_square_bracket": return "[";
     case "_right_square_bracket": return "]";
+    case "_left_parenthesis": return "(";
+    case "_right_parenthesis": return ")";
+    case "_left_paren": return "(";
+    case "_right_paren": return ")";
     case "_unknown": return "\u2E2C";
     case "_connected_needs_literal_reading": return "\u2248";
     case "_blank": return "\u2423";
@@ -335,6 +342,21 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
             blob {String(anchor.blobId)} · line {anchor.lineIndex}
           </Typography>
           <Box sx={{ flex: 1 }} />
+          {anchor.cluster && (
+            <Button
+              size="small"
+              variant="outlined"
+              startIcon={<HubOutlinedIcon fontSize="small" />}
+              component="a"
+              href={`/cluster/${parseInt(anchor.cluster, 10)}`}
+              target="_blank"
+              rel="noopener"
+              sx={{ minWidth: 0, px: 1, py: 0.25, fontSize: 11, textTransform: "none" }}
+              title="Open cluster manager (new tab)"
+            >
+              cluster {anchor.cluster}
+            </Button>
+          )}
           <Button
             size="small"
             variant={rawMode ? "contained" : "outlined"}
@@ -564,17 +586,21 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
           Specials
         </Typography>
         <Stack direction="row" spacing={0.5} sx={{ my: 0.5, flexWrap: "wrap" }}>
-          {SPECIAL_MARKERS.map((s) => (
-            <Button
-              key={s.token}
-              size="small"
-              variant="outlined"
-              onClick={() => updateLabel(s.token, [])}
-              title={s.name}
-            >
-              {s.display}
-            </Button>
-          ))}
+          {SPECIAL_MARKERS.map((s) => {
+            const isActive = displayLabel(anchor.currentLabel) === s.token;
+            return (
+              <Button
+                key={s.token}
+                size="small"
+                variant={isActive ? "contained" : "outlined"}
+                color={isActive ? "primary" : "inherit"}
+                onClick={() => updateLabel(isActive ? null : s.token, [])}
+                title={s.name}
+              >
+                {s.display}
+              </Button>
+            );
+          })}
         </Stack>
         <Divider sx={{ my: 1 }} />
         <Stack direction="row" spacing={1}>

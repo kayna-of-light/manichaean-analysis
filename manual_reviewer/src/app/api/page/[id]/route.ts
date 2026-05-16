@@ -10,6 +10,7 @@ import {
   readClusterOverridesByIds,
   readLineStatuses,
   readNewBboxes,
+  readReassignmentsForPage,
 } from "@/lib/repo";
 import type { BaselineLine, BaselineToken, Token } from "@/lib/zodSchemas";
 import { getDb } from "@/lib/db";
@@ -70,6 +71,8 @@ export async function GET(
   }
 
   const edits = readBlobEdits(pageInt);
+  const reassignments = readReassignmentsForPage(pageInt);
+  for (const r of reassignments.values()) clusterIds.add(r.to_cluster);
   const clusterOverrides = readClusterOverridesByIds([...clusterIds]);
   const newBboxes = readNewBboxes(pageInt);
   const parsedNewBboxes = newBboxes.map((nb) => ({
@@ -98,6 +101,7 @@ export async function GET(
       edits,
       clusterOverrides,
       unsetSet,
+      reassignments,
     );
     const tokensWithQuad = tokens.map((t, idx) => ({
       ...t,
@@ -160,22 +164,23 @@ function buildLine(
   );
   const allQuads: (number[][] | null)[] = ln.tokens.map((t) => t.geometry.img_quad);
 
-  // Use v2 geometry row bbox if available — this is the actual ink extent.
-  // Add margin matching the v2 review sheet so chars aren't clipped at edges.
-  // Both LineCanvas and TokenStrip will share this x/y extent.
-  // Fall back to baseline_y heuristic only when geometry is missing.
-  const LINE_MARGIN_X = 12;
+  // Use a stable page-wide x-frame for every strip. If each row crops to its
+  // own ink width, short rows are magnified much more than long rows and the
+  // reviewer feels like boxes drift when scrolling between lines.
   const LINE_MARGIN_Y = 6;
   const rowBbox = rowBboxMap.get(ln.line_index);
+  const quadBounds = boundsForQuads(allQuads);
   let x0: number, x1: number, yTop: number, yBot: number;
+  x0 = 0;
+  x1 = imgW;
   if (rowBbox) {
-    x0 = Math.max(0, rowBbox[0] - LINE_MARGIN_X);
     yTop = Math.max(0, rowBbox[1] - LINE_MARGIN_Y);
-    x1 = Math.min(imgW, rowBbox[2] + LINE_MARGIN_X);
     yBot = Math.min(imgH, rowBbox[3] + LINE_MARGIN_Y);
+    if (quadBounds) {
+      yTop = Math.max(0, Math.min(yTop, quadBounds[1] - LINE_MARGIN_Y));
+      yBot = Math.min(imgH, Math.max(yBot, quadBounds[3] + LINE_MARGIN_Y));
+    }
   } else {
-    x0 = Math.max(0, Math.min(ln.x_span[0], ln.x_span[1]));
-    x1 = Math.min(imgW, Math.max(ln.x_span[0], ln.x_span[1]));
     const step = halfStep * 2;
     yTop = ln.baseline_y - step * 0.85;
     yBot = ln.baseline_y + step * 0.15;
@@ -192,6 +197,20 @@ function buildLine(
     Math.max(yBot - yTop, 1),
   ];
   return { line_index: ln.line_index, tokens: allTokens, quads: allQuads, line_quad, warped_size };
+}
+
+function boundsForQuads(quads: (number[][] | null)[]): [number, number, number, number] | null {
+  const xs: number[] = [];
+  const ys: number[] = [];
+  for (const quad of quads) {
+    if (!quad) continue;
+    for (const point of quad) {
+      xs.push(point[0]);
+      ys.push(point[1]);
+    }
+  }
+  if (xs.length === 0 || ys.length === 0) return null;
+  return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)];
 }
 
 function baselineTokenToToken(
