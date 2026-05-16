@@ -574,7 +574,9 @@ export function readReassignmentsFromCluster(
     )
     .all(fromCluster);
   const m = new Map<string, ClusterReassignmentRow>();
-  for (const r of rows) m.set(`${r.page}:${r.line_index}:${r.blob_id}`, r);
+  for (const r of rows) {
+    m.set(`${String(r.page).padStart(3, "0")}:${r.line_index}:${r.blob_id}`, r);
+  }
   return m;
 }
 
