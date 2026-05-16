@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Mirror repository artifacts to Google Drive.
+"""Mirror repository artifacts to and from Google Drive.
 
 This is intended for large generated folders and source-data mirrors that need
 Drive preservation in addition to Git. By default it mirrors this repository's
@@ -9,14 +9,17 @@ Drive preservation in addition to Git. By default it mirrors this repository's
     My Drive/.git-data/manichaean-analysis/data/
     My Drive/.git-data/manichaean-analysis/manual_reviewer/data/
 
-The script only creates folders and uploads or updates files. It never deletes
-remote files.
+Normal sync is a true mirror: it creates and updates changed files, skips
+unchanged files, and deletes remote files that no longer exist locally after an
+explicit confirmation. Restore mode downloads the Drive mirror back into a fresh
+clone.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import os
 import mimetypes
 import time
 from pathlib import Path
@@ -33,7 +36,12 @@ DEFAULT_SOURCE_SPECS = (
 DEFAULT_REPO_FOLDER_NAME = "manichaean-analysis"
 
 # Reuse the known-good OAuth app and token from literary-compilation.
-LIT_COMP_SECRETS = Path(r"C:\Users\mlf\source\github\literary-compilation\secrets")
+LIT_COMP_SECRETS = Path(
+    os.environ.get(
+        "LITERARY_COMPILATION_SECRETS",
+        str(REPO_ROOT.parent / "literary-compilation" / "secrets"),
+    )
+)
 DEFAULT_OAUTH_CLIENT = LIT_COMP_SECRETS / "google_drive_oauth_client.json"
 DEFAULT_OAUTH_TOKEN = LIT_COMP_SECRETS / "google_drive_token.json"
 
@@ -164,6 +172,10 @@ class DriveMirror:
 
     def ensure_folder(self, parent_id: str, folder_name: str) -> str:
         if self.dry_run:
+            if not parent_id.startswith("DRY_RUN_FOLDER_"):
+                found = self.find_child(parent_id, folder_name, mime_type=FOLDER_MIME)
+                if found:
+                    return found["id"]
             digest = hashlib.sha256(f"{parent_id}/{folder_name}".encode("utf-8")).hexdigest()[:12]
             return f"DRY_RUN_FOLDER_{digest}"
 
@@ -238,9 +250,41 @@ class DriveMirror:
 
         return action
 
+    def delete_item(self, file_id: str, label: str) -> None:
+        if self.dry_run:
+            return
+        request = self.service.files().delete(fileId=file_id)
+        _with_retries(f"delete {label}", request.execute, self.retries)
+
+    def download_file(self, file_id: str, local_file: Path) -> None:
+        from googleapiclient.http import MediaIoBaseDownload
+
+        if self.dry_run:
+            return
+
+        _safe_mkdir(local_file.parent)
+        temp_file = local_file.with_name(f"{local_file.name}.download")
+        request = self.service.files().get_media(fileId=file_id)
+        with temp_file.open("wb") as handle:
+            downloader = MediaIoBaseDownload(handle, request, chunksize=DEFAULT_CHUNK_SIZE)
+            done = False
+            while not done:
+                _status, done = _with_retries(
+                    f"download {local_file.name}",
+                    downloader.next_chunk,
+                    self.retries,
+                )
+        temp_file.replace(local_file)
+
 
 def iter_files(source_root: Path) -> list[Path]:
     return sorted(path for path in source_root.rglob("*") if path.is_file())
+
+
+def relative_file_paths(source_root: Path) -> set[str]:
+    if not source_root.exists():
+        return set()
+    return {path.relative_to(source_root).as_posix() for path in iter_files(source_root)}
 
 
 def human_size(num_bytes: int) -> str:
@@ -267,6 +311,268 @@ def ensure_remote_folder_path(mirror: DriveMirror, parent_id: str, remote_subfol
     return folder_id
 
 
+def find_remote_folder_path(mirror: DriveMirror, parent_id: str, remote_subfolder: str) -> Optional[str]:
+    folder_id = parent_id
+    parts = [part for part in remote_subfolder.replace("\\", "/").split("/") if part]
+    for part in parts:
+        found = mirror.find_child(folder_id, part, mime_type=FOLDER_MIME)
+        if not found:
+            return None
+        folder_id = found["id"]
+    return folder_id
+
+
+def collect_remote_tree(
+    mirror: DriveMirror,
+    folder_id: str,
+    rel_prefix: str = "",
+) -> tuple[dict[str, dict[str, Any]], list[tuple[str, dict[str, Any]]]]:
+    files: dict[str, dict[str, Any]] = {}
+    folders: list[tuple[str, dict[str, Any]]] = []
+    for item in mirror.list_children(folder_id):
+        name = item.get("name")
+        item_id = item.get("id")
+        mime_type = item.get("mimeType")
+        if not name or not item_id or not mime_type:
+            continue
+        rel_path = f"{rel_prefix}/{name}" if rel_prefix else name
+        if mime_type == FOLDER_MIME:
+            folders.append((rel_path, item))
+            child_files, child_folders = collect_remote_tree(mirror, item_id, rel_path)
+            files.update(child_files)
+            folders.extend(child_folders)
+        else:
+            files[rel_path] = item
+    return files, folders
+
+
+def desired_folder_paths(file_paths: set[str]) -> set[str]:
+    folders: set[str] = set()
+    for rel_path in file_paths:
+        parts = Path(rel_path).parts[:-1]
+        current: list[str] = []
+        for part in parts:
+            current.append(part)
+            folders.add("/".join(current))
+    return folders
+
+
+def print_path_sample(paths: list[str], *, heading: str, limit: int = 25) -> None:
+    if not paths:
+        return
+    print(heading)
+    for path in paths[:limit]:
+        print(f"  - {path}")
+    if len(paths) > limit:
+        print(f"  ... and {len(paths) - limit} more")
+
+
+def confirm_destructive_action(*, label: str, token: str, yes: bool, dry_run: bool) -> None:
+    if dry_run or yes:
+        return
+    answer = input(f"Type {token} to {label}: ")
+    if answer != token:
+        raise SystemExit("Cancelled; no files were deleted.")
+
+
+def delete_remote_extras(
+    *,
+    mirror: DriveMirror,
+    source_id: str,
+    desired_paths: set[str],
+    dry_run: bool,
+    yes: bool,
+) -> tuple[int, int]:
+    if dry_run and source_id.startswith("DRY_RUN_FOLDER_"):
+        print("Remote cleanup: mirror folder does not exist yet; no remote extras to preview")
+        return 0, 0
+
+    remote_files, remote_folders = collect_remote_tree(mirror, source_id)
+    extra_files = sorted(set(remote_files) - desired_paths)
+    desired_folders = desired_folder_paths(desired_paths)
+    candidate_folders = sorted(rel for rel, _item in remote_folders if rel not in desired_folders)
+
+    if not extra_files and not candidate_folders:
+        print("Remote cleanup: no extras")
+        return 0, 0
+
+    print("\nRemote cleanup warning")
+    print(f"Remote files not present locally: {len(extra_files)}")
+    print(f"Remote folders that may become empty: {len(candidate_folders)}")
+    print_path_sample(extra_files, heading="Files to delete from Drive:")
+    print_path_sample(candidate_folders, heading="Folders to delete from Drive if empty:")
+
+    confirm_destructive_action(
+        label="delete remote files that are not present locally",
+        token="DELETE_REMOTE",
+        yes=yes,
+        dry_run=dry_run,
+    )
+
+    deleted_files = 0
+    deleted_folders = 0
+    for rel_path in extra_files:
+        mirror.delete_item(remote_files[rel_path]["id"], rel_path)
+        deleted_files += 1
+        print(f"delete remote file: {rel_path}")
+
+    if extra_files or candidate_folders:
+        mirror.children_cache.clear()
+
+    for rel_path, item in sorted(remote_folders, key=lambda pair: pair[0].count("/"), reverse=True):
+        if rel_path in desired_folders:
+            continue
+        if dry_run:
+            print(f"delete remote folder if empty: {rel_path}")
+            deleted_folders += 1
+            continue
+        children = mirror.list_children(item["id"])
+        if children:
+            continue
+        mirror.delete_item(item["id"], rel_path)
+        mirror.children_cache.clear()
+        deleted_folders += 1
+        print(f"delete remote folder: {rel_path}")
+
+    return deleted_files, deleted_folders
+
+
+def delete_local_extras(
+    *,
+    source_root: Path,
+    remote_paths: set[str],
+    dry_run: bool,
+    yes: bool,
+) -> tuple[int, int]:
+    local_paths = relative_file_paths(source_root)
+    extra_files = sorted(local_paths - remote_paths)
+    if not extra_files:
+        print("Local cleanup: no extras")
+        return 0, 0
+
+    print("\nLocal cleanup warning")
+    print(f"Local files not present in Drive mirror: {len(extra_files)}")
+    print_path_sample(extra_files, heading="Files to delete locally:")
+    confirm_destructive_action(
+        label="delete local files that are not present in Drive",
+        token="DELETE_LOCAL",
+        yes=yes,
+        dry_run=dry_run,
+    )
+
+    deleted_files = 0
+    for rel_path in extra_files:
+        local_file = source_root / Path(rel_path)
+        if dry_run:
+            print(f"delete local file: {rel_path}")
+        else:
+            local_file.unlink(missing_ok=True)
+            print(f"delete local file: {rel_path}")
+        deleted_files += 1
+
+    deleted_folders = 0
+    if source_root.exists():
+        for folder in sorted((path for path in source_root.rglob("*") if path.is_dir()), key=lambda path: len(path.parts), reverse=True):
+            try:
+                if dry_run:
+                    if not any(folder.iterdir()):
+                        print(f"delete local folder if empty: {folder.relative_to(source_root).as_posix()}")
+                        deleted_folders += 1
+                    continue
+                folder.rmdir()
+                print(f"delete local folder: {folder.relative_to(source_root).as_posix()}")
+                deleted_folders += 1
+            except OSError:
+                continue
+
+    return deleted_files, deleted_folders
+
+
+def restore_artifacts(
+    *,
+    destination_root: Path,
+    drive_root_id: str,
+    drive_root_name: str,
+    repo_folder_name: str,
+    remote_subfolder: str,
+    oauth_client: Path,
+    oauth_token: Path,
+    dry_run: bool,
+    retries: int,
+    progress_every: int,
+    prune_local: bool,
+    yes: bool,
+    required_remote: bool,
+) -> None:
+    if not oauth_client.exists():
+        raise SystemExit(f"OAuth client JSON not found: {oauth_client}")
+
+    print(f"Destination: {destination_root}")
+    print(f"Drive path: {drive_root_name}/{repo_folder_name}/{remote_subfolder}")
+    print(f"Mode: {'dry-run restore' if dry_run else 'restore'}")
+    print(f"Delete local extras: {'yes' if prune_local else 'no'}")
+
+    service = _drive_service(oauth_client, oauth_token)
+    mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
+    root = mirror.find_child(drive_root_id, drive_root_name, mime_type=FOLDER_MIME)
+    if not root:
+        raise SystemExit(f"Drive folder not found: {drive_root_name}")
+    repo = mirror.find_child(root["id"], repo_folder_name, mime_type=FOLDER_MIME)
+    if not repo:
+        raise SystemExit(f"Drive repo folder not found: {drive_root_name}/{repo_folder_name}")
+    source_id = find_remote_folder_path(mirror, repo["id"], remote_subfolder)
+    if not source_id:
+        message = f"Drive mirror folder not found: {drive_root_name}/{repo_folder_name}/{remote_subfolder}"
+        if required_remote:
+            raise SystemExit(message)
+        print(f"Skipping missing remote source: {message}")
+        return
+
+    remote_files, _remote_folders = collect_remote_tree(mirror, source_id)
+    remote_paths = set(remote_files)
+    total_bytes = sum(int(item.get("size", 0)) for item in remote_files.values())
+    print(f"Remote files: {len(remote_files)}")
+    print(f"Remote bytes: {human_size(total_bytes)}")
+
+    counts = {"create": 0, "update": 0, "skip": 0, "failed": 0}
+    for index, rel_path in enumerate(sorted(remote_files), 1):
+        item = remote_files[rel_path]
+        local_file = destination_root / Path(rel_path)
+        remote_size = int(item.get("size", -1))
+        remote_md5 = item.get("md5Checksum")
+        if local_file.exists() and remote_md5 and local_file.stat().st_size == remote_size and _md5_file(local_file) == remote_md5:
+            action = "skip"
+        else:
+            action = "update" if local_file.exists() else "create"
+            try:
+                mirror.download_file(item["id"], local_file)
+            except Exception as exc:
+                counts["failed"] += 1
+                print(f"[{index}/{len(remote_files)}] failed {human_size(max(remote_size, 0)):>10} {rel_path}: {exc}", flush=True)
+                continue
+        counts[action] += 1
+        should_print = action != "skip" or progress_every <= 1 or index % progress_every == 0
+        if should_print:
+            print(f"[{index}/{len(remote_files)}] {action:6} {human_size(max(remote_size, 0)):>10} {rel_path}", flush=True)
+
+    print("\nRestore done")
+    print(f"Created: {counts['create']}")
+    print(f"Updated: {counts['update']}")
+    print(f"Skipped: {counts['skip']}")
+    print(f"Failed: {counts['failed']}")
+    if prune_local:
+        deleted_files, deleted_folders = delete_local_extras(
+            source_root=destination_root,
+            remote_paths=remote_paths,
+            dry_run=dry_run,
+            yes=yes,
+        )
+        print(f"Deleted local files: {deleted_files}{' (dry-run)' if dry_run else ''}")
+        print(f"Deleted local folders: {deleted_folders}{' (dry-run)' if dry_run else ''}")
+    if counts["failed"]:
+        raise SystemExit(1)
+
+
 def mirror_artifacts(
     *,
     source_root: Path,
@@ -280,22 +586,29 @@ def mirror_artifacts(
     limit: Optional[int],
     retries: int,
     progress_every: int,
+    delete_extras: bool,
+    yes: bool,
 ) -> None:
     if not source_root.exists():
         raise SystemExit(f"Source folder not found: {source_root}")
     if not oauth_client.exists():
         raise SystemExit(f"OAuth client JSON not found: {oauth_client}")
 
-    files = iter_files(source_root)
+    all_files = iter_files(source_root)
+    desired_paths = {path.relative_to(source_root).as_posix() for path in all_files}
+    files = all_files
     if limit is not None:
         files = files[:limit]
 
-    total_bytes = sum(path.stat().st_size for path in files)
+    total_bytes = sum(path.stat().st_size for path in all_files)
     print(f"Source: {source_root}")
-    print(f"Files: {len(files)}")
+    print(f"Files: {len(all_files)}")
+    if limit is not None:
+        print(f"Limited upload/check pass: first {len(files)} files")
     print(f"Bytes: {human_size(total_bytes)}")
     print(f"Drive path: {drive_root_name}/{repo_folder_name}/{remote_subfolder}")
-    print(f"Mode: {'dry-run' if dry_run else 'upload'}")
+    print(f"Mode: {'dry-run' if dry_run else 'mirror'}")
+    print(f"Delete remote extras: {'yes' if delete_extras else 'no'}")
 
     service = _drive_service(oauth_client, oauth_token)
     mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
@@ -337,6 +650,16 @@ def mirror_artifacts(
     print(f"Updated: {counts['update']}")
     print(f"Skipped: {counts['skip']}")
     print(f"Failed: {counts['failed']}")
+    if delete_extras:
+        deleted_files, deleted_folders = delete_remote_extras(
+            mirror=mirror,
+            source_id=source_id,
+            desired_paths=desired_paths,
+            dry_run=dry_run,
+            yes=yes,
+        )
+        print(f"Deleted remote files: {deleted_files}{' (dry-run)' if dry_run else ''}")
+        print(f"Deleted remote folders: {deleted_folders}{' (dry-run)' if dry_run else ''}")
     if counts["failed"]:
         raise SystemExit(1)
 
@@ -381,6 +704,7 @@ def main() -> None:
         help="Local folder to mirror. Can be repeated. Defaults to output/, data/, and manual_reviewer/data/.",
     )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
+    parser.add_argument("--restore", action="store_true", help="Restore mirrored Drive folders into local source folders")
     parser.add_argument("--drive-root-id", default="root", help="Parent Drive folder id; default is My Drive root")
     parser.add_argument("--drive-root-name", default=".git-data", help="Top-level artifact folder name")
     parser.add_argument("--repo-folder-name", default=DEFAULT_REPO_FOLDER_NAME, help="Repository folder name under drive-root-name")
@@ -390,6 +714,9 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Preview without creating folders or uploading files")
     parser.add_argument("--limit", type=int, default=None, help="Process only first N files")
     parser.add_argument("--retries", type=int, default=8, help="Retries per Drive operation")
+    parser.add_argument("--no-delete", action="store_true", help="Upload/update only; do not delete remote files missing locally")
+    parser.add_argument("--prune-local", action="store_true", help="With --restore, delete local files missing from the Drive mirror")
+    parser.add_argument("--yes", action="store_true", help="Skip destructive confirmation prompts")
     parser.add_argument(
         "--progress-every",
         type=int,
@@ -398,21 +725,30 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    if args.source:
-        source_specs = [
-            (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
-            for source in args.source
-        ]
-    else:
-        missing_defaults = [(path, remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if not path.exists()]
-        for missing, remote_subfolder in missing_defaults:
-            print(f"Skipping missing default source: {missing}")
-        source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if path.exists()]
-        if not source_specs:
-            default_list = ", ".join(str(path) for path, _remote_subfolder in DEFAULT_SOURCE_SPECS)
-            raise SystemExit(f"No default source folders found: {default_list}")
-    if args.remote_subfolder and len(source_specs) != 1 and not args.archive:
-        raise SystemExit("--remote-subfolder can only be used when mirroring one --source folder")
+    if args.archive and args.restore:
+        raise SystemExit("--archive and --restore cannot be used together")
+    if args.limit is not None and args.restore:
+        raise SystemExit("--limit is only supported for upload/mirror sync, not restore")
+
+    source_specs: list[tuple[Path, str]] = []
+    if not args.archive:
+        if args.source:
+            source_specs = [
+                (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
+                for source in args.source
+            ]
+        elif args.restore:
+            source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS]
+        else:
+            missing_defaults = [(path, remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if not path.exists()]
+            for missing, remote_subfolder in missing_defaults:
+                print(f"Skipping missing default source: {missing}")
+            source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if path.exists()]
+            if not source_specs:
+                default_list = ", ".join(str(path) for path, _remote_subfolder in DEFAULT_SOURCE_SPECS)
+                raise SystemExit(f"No default source folders found: {default_list}")
+        if args.remote_subfolder and len(source_specs) != 1:
+            raise SystemExit("--remote-subfolder can only be used when mirroring one --source folder")
 
     try:
         if args.archive:
@@ -427,6 +763,25 @@ def main() -> None:
                 dry_run=args.dry_run,
                 retries=args.retries,
             )
+        elif args.restore:
+            for index, (destination_root, remote_subfolder) in enumerate(source_specs, 1):
+                if len(source_specs) > 1:
+                    print(f"\n=== Restore {index}/{len(source_specs)}: {remote_subfolder} ===")
+                restore_artifacts(
+                    destination_root=destination_root,
+                    drive_root_id=args.drive_root_id,
+                    drive_root_name=args.drive_root_name,
+                    repo_folder_name=args.repo_folder_name,
+                    remote_subfolder=remote_subfolder,
+                    oauth_client=Path(args.oauth_client),
+                    oauth_token=Path(args.oauth_token),
+                    dry_run=args.dry_run,
+                    retries=args.retries,
+                    progress_every=max(1, args.progress_every),
+                    prune_local=args.prune_local,
+                    yes=args.yes,
+                    required_remote=bool(args.source),
+                )
         else:
             for index, (source_root, remote_subfolder) in enumerate(source_specs, 1):
                 if len(source_specs) > 1:
@@ -443,6 +798,8 @@ def main() -> None:
                     limit=args.limit,
                     retries=args.retries,
                     progress_every=max(1, args.progress_every),
+                    delete_extras=not args.no_delete,
+                    yes=args.yes,
                 )
     except Exception as exc:
         friendly = _describe_http_error(exc)
