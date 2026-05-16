@@ -6,6 +6,8 @@ const accent = "#c8a465";
 
 export function buildTheme(mode: "light" | "dark") {
   const isDark = mode === "dark";
+  const textPrimary = isDark ? "oklch(96% 0.01 80)" : "oklch(20% 0.02 260)";
+  const textSecondary = isDark ? "oklch(70% 0.02 260)" : "oklch(45% 0.02 260)";
   return createTheme({
     cssVariables: true,
     colorSchemes: { light: true, dark: true },
@@ -16,6 +18,17 @@ export function buildTheme(mode: "light" | "dark") {
       background: {
         default: isDark ? "rgba(20,18,24,0.0)" : "rgba(250,248,244,0.0)",
         paper: isDark ? "rgba(255,255,255,0.05)" : "rgba(255,255,255,0.55)",
+      },
+      text: {
+        primary: textPrimary,
+        secondary: textSecondary,
+        disabled: isDark ? "rgba(244,241,232,0.38)" : "rgba(36,35,42,0.38)",
+      },
+      action: {
+        active: textPrimary,
+        disabled: isDark ? "rgba(244,241,232,0.30)" : "rgba(36,35,42,0.26)",
+        hover: isDark ? "rgba(244,241,232,0.08)" : "rgba(36,35,42,0.05)",
+        selected: isDark ? "rgba(200,164,101,0.18)" : "rgba(200,164,101,0.12)",
       },
       divider: isDark ? "rgba(255,255,255,0.10)" : "rgba(0,0,0,0.12)",
     },
@@ -43,6 +56,7 @@ export function buildTheme(mode: "light" | "dark") {
         defaultProps: { elevation: 0, color: "transparent" },
         styleOverrides: {
           root: {
+            color: textPrimary,
             backdropFilter: "blur(24px) saturate(140%)",
             WebkitBackdropFilter: "blur(24px) saturate(140%)",
             background: isDark ? "rgba(20,18,24,0.55)" : "rgba(255,255,255,0.55)",
@@ -53,6 +67,23 @@ export function buildTheme(mode: "light" | "dark") {
       MuiButton: {
         defaultProps: { disableElevation: true },
         styleOverrides: { root: { borderRadius: 10 } },
+      },
+      MuiIconButton: {
+        styleOverrides: {
+          root: {
+            color: "var(--color-glass-fg)",
+            "&.Mui-disabled": {
+              color: "color-mix(in oklch, var(--color-glass-muted), transparent 35%)",
+            },
+          },
+        },
+      },
+      MuiSvgIcon: {
+        styleOverrides: {
+          root: {
+            color: "inherit",
+          },
+        },
       },
       MuiDrawer: {
         styleOverrides: {

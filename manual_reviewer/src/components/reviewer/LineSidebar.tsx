@@ -1,5 +1,6 @@
 "use client";
 import { Box, Chip, List, ListItemButton, Typography } from "@mui/material";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagIcon from "@mui/icons-material/Flag";
 import type { ReviewLine } from "./hooks";
 
@@ -22,12 +23,21 @@ function statusColor(status: string): { bg: string; fg: string } {
   }
 }
 
+function StatusMarker({ status, color }: { status: string; color: string }) {
+  return (
+    <Box sx={{ width: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
+      {status === "done" && <CheckCircleIcon sx={{ fontSize: 14, color }} />}
+      {status === "flagged" && <FlagIcon sx={{ fontSize: 14, color }} />}
+    </Box>
+  );
+}
+
 export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
   return (
     <Box
       className="glass"
       sx={{
-        width: 220,
+        width: 156,
         flexShrink: 0,
         height: "100%",
         overflowY: "auto",
@@ -39,7 +49,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
       </Typography>
       <List dense disablePadding sx={{ mt: 1 }}>
         {lines.map((l) => {
-          const review = l.tokens.filter((t) => t.review).length;
+          const attention = l.tokens.filter((t) => t.review).length;
           const edited = l.tokens.filter((t) => t.user_modified).length;
           const c = statusColor(l.status);
           return (
@@ -47,39 +57,54 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
               key={l.line_index}
               selected={selectedIndex === l.line_index}
               onClick={() => onSelect(l.line_index)}
+              title={`Line ${l.line_index}: ${l.status}; ${attention} attention; ${edited} edits`}
               sx={{
                 borderRadius: 1,
                 mb: 0.5,
+                minHeight: 30,
+                px: 0.75,
+                py: 0.5,
+                overflow: "hidden",
+                border: "1px solid transparent",
+                bgcolor: l.status === "done" || l.status === "flagged" ? c.bg : undefined,
                 "&.Mui-selected": {
                   bgcolor: "rgba(200,164,101,0.12)",
                   border: "1px solid var(--color-glass-accent)",
                 },
               }}
             >
-              <Box sx={{ flex: 1 }}>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-                  <Typography sx={{ fontVariantNumeric: "tabular-nums" }} variant="body2">
-                    {String(l.line_index).padStart(2, "0")}
-                  </Typography>
-                  {l.status === "flagged" && (
-                    <FlagIcon sx={{ fontSize: 14, color: c.fg }} />
-                  )}
-                  <Box sx={{ flex: 1 }} />
+              <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, width: "100%", minWidth: 0 }}>
+                <StatusMarker status={l.status} color={c.fg} />
+                <Typography sx={{ fontVariantNumeric: "tabular-nums", minWidth: 20 }} variant="body2">
+                  {String(l.line_index).padStart(2, "0")}
+                </Typography>
+                <Box sx={{ flex: 1, minWidth: 0 }} />
+                {attention > 0 && (
                   <Chip
                     size="small"
-                    label={l.status}
+                    label={attention}
                     sx={{
-                      height: 18,
+                      height: 16,
                       fontSize: 10,
-                      bgcolor: c.bg,
-                      color: c.fg,
-                      borderRadius: 1,
+                      bgcolor: "rgba(255,200,90,0.18)",
+                      borderRadius: 0.75,
+                      "& .MuiChip-label": { px: 0.5 },
                     }}
                   />
-                </Box>
-                <Typography variant="caption" color="text.secondary">
-                  {l.tokens.length} tokens · {review} review · {edited} edits
-                </Typography>
+                )}
+                {edited > 0 && (
+                  <Chip
+                    size="small"
+                    label={`${edited}e`}
+                    sx={{
+                      height: 16,
+                      fontSize: 10,
+                      bgcolor: "rgba(200,164,101,0.18)",
+                      borderRadius: 0.75,
+                      "& .MuiChip-label": { px: 0.5 },
+                    }}
+                  />
+                )}
               </Box>
             </ListItemButton>
           );
