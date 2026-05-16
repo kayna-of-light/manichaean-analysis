@@ -966,20 +966,6 @@ def main() -> None:
                 (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
                 for source in args.source
             ]
-        elif args.status:
-            for index, (source_root, remote_subfolder) in enumerate(source_specs, 1):
-                if len(source_specs) > 1:
-                    print(f"\n=== Status {index}/{len(source_specs)}: {remote_subfolder} ===")
-                status_artifacts(
-                    source_root=source_root,
-                    drive_root_id=args.drive_root_id,
-                    drive_root_name=args.drive_root_name,
-                    repo_folder_name=args.repo_folder_name,
-                    remote_subfolder=remote_subfolder,
-                    oauth_client=Path(args.oauth_client),
-                    oauth_token=Path(args.oauth_token),
-                    retries=args.retries,
-                )
         elif args.restore:
             source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS]
         else:
@@ -1026,6 +1012,20 @@ def main() -> None:
                 dry_run=args.dry_run,
                 retries=args.retries,
             )
+        elif args.status:
+            for index, (source_root, remote_subfolder) in enumerate(source_specs, 1):
+                if len(source_specs) > 1:
+                    print(f"\n=== Status {index}/{len(source_specs)}: {remote_subfolder} ===")
+                status_artifacts(
+                    source_root=source_root,
+                    drive_root_id=args.drive_root_id,
+                    drive_root_name=args.drive_root_name,
+                    repo_folder_name=args.repo_folder_name,
+                    remote_subfolder=remote_subfolder,
+                    oauth_client=Path(args.oauth_client),
+                    oauth_token=Path(args.oauth_token),
+                    retries=args.retries,
+                )
         elif args.restore:
             for index, (destination_root, remote_subfolder) in enumerate(source_specs, 1):
                 if len(source_specs) > 1:
