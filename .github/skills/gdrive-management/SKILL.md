@@ -9,7 +9,7 @@ description: "Manage Google Drive storage for manichaean-analysis artifacts. Use
 
 Use this skill for `manichaean-analysis` tasks involving Google Drive storage, especially:
 
-- Backing up or mirroring generated `output/` artifacts and repository `data/` sources.
+- Backing up or mirroring generated `output/` artifacts, repository `data/` sources, and `manual_reviewer/data/` local review data.
 - Uploading large OCR dumps or other files that should not enter Git history.
 - Restoring generated artifacts from Drive archives.
 - Verifying whether Drive holds a safety copy before cleanup.
@@ -19,7 +19,7 @@ This skill is about artifact storage. It is not for syncing the source text libr
 
 ## Storage Policy
 
-Generated artifacts belong in Google Drive, not Git history. The `data/` folder is mirrored to Drive as a safety copy, while normal-sized source data can still remain in Git.
+Generated artifacts belong in Google Drive, not Git history. The `data/` folder is mirrored to Drive as a safety copy, while normal-sized source data can still remain in Git. The manual reviewer local data folder is also mirrored because it is intentionally ignored from Git.
 
 Primary Drive location:
 
@@ -32,6 +32,7 @@ Standard subfolders:
 ```text
 .git-data/manichaean-analysis/output/
 .git-data/manichaean-analysis/data/
+.git-data/manichaean-analysis/manual_reviewer/data/
 .git-data/manichaean-analysis/archives/
 ```
 
@@ -68,19 +69,20 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dry-run --limit 10
    ```
 
-3. For the default per-file mirror of `output/` and `data/`:
+3. For the default per-file mirror of `output/`, `data/`, and `manual_reviewer/data/`:
 
    ```powershell
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --retries 12
    ```
 
-   By default this mirrors both `output/` and `data/` when present. A clean checkout without `output/` skips that missing default source. The limit in `--limit N` applies per source folder.
+   By default this mirrors `output/`, `data/`, and `manual_reviewer/data/` when present. A clean checkout without generated local folders skips those missing default sources. The limit in `--limit N` applies per source folder.
 
    To mirror only one folder:
 
    ```powershell
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source output --retries 12
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
    ```
 
 4. Prefer archive mode for immediate complete backups of large output trees:
@@ -108,7 +110,7 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
 Before cleanup or promotion work, confirm preservation:
 
 - There is a Drive archive under `.git-data/manichaean-analysis/archives/` when a full safety backup is needed.
-- The default Drive mirror includes `.git-data/manichaean-analysis/output/` and `.git-data/manichaean-analysis/data/`.
+- The default Drive mirror includes `.git-data/manichaean-analysis/output/`, `.git-data/manichaean-analysis/data/`, and `.git-data/manichaean-analysis/manual_reviewer/data/`.
 - Large generated files are not staged.
 - `output/` is ignored or locally excluded.
 - New Git objects do not include blobs `>= 50 MB`.

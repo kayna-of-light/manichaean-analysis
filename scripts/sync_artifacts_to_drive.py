@@ -3,10 +3,11 @@
 
 This is intended for large generated folders and source-data mirrors that need
 Drive preservation in addition to Git. By default it mirrors this repository's
-``output/`` and ``data/`` trees into:
+``output/``, ``data/``, and ``manual_reviewer/data/`` trees into:
 
     My Drive/.git-data/manichaean-analysis/output/
     My Drive/.git-data/manichaean-analysis/data/
+    My Drive/.git-data/manichaean-analysis/manual_reviewer/data/
 
 The script only creates folders and uploads or updates files. It never deletes
 remote files.
@@ -24,7 +25,11 @@ from typing import Any, Callable, Optional, TypeVar
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
-DEFAULT_SOURCES = (REPO_ROOT / "output", REPO_ROOT / "data")
+DEFAULT_SOURCE_SPECS = (
+    (REPO_ROOT / "output", "output"),
+    (REPO_ROOT / "data", "data"),
+    (REPO_ROOT / "manual_reviewer" / "data", "manual_reviewer/data"),
+)
 DEFAULT_REPO_FOLDER_NAME = "manichaean-analysis"
 
 # Reuse the known-good OAuth app and token from literary-compilation.
@@ -247,6 +252,21 @@ def human_size(num_bytes: int) -> str:
     return f"{size:.2f} GB"
 
 
+def default_remote_subfolder(source_root: Path) -> str:
+    try:
+        return source_root.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
+    except ValueError:
+        return source_root.name
+
+
+def ensure_remote_folder_path(mirror: DriveMirror, parent_id: str, remote_subfolder: str) -> str:
+    folder_id = parent_id
+    parts = [part for part in remote_subfolder.replace("\\", "/").split("/") if part]
+    for part in parts:
+        folder_id = mirror.ensure_folder(folder_id, part)
+    return folder_id
+
+
 def mirror_artifacts(
     *,
     source_root: Path,
@@ -282,7 +302,7 @@ def mirror_artifacts(
 
     root_id = mirror.ensure_folder(drive_root_id, drive_root_name)
     repo_id = mirror.ensure_folder(root_id, repo_folder_name)
-    source_id = mirror.ensure_folder(repo_id, remote_subfolder)
+    source_id = ensure_remote_folder_path(mirror, repo_id, remote_subfolder)
 
     folder_cache: dict[tuple[str, ...], str] = {(): source_id}
     counts = {"create": 0, "update": 0, "skip": 0, "failed": 0}
@@ -347,7 +367,7 @@ def upload_single_artifact(
     mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
     root_id = mirror.ensure_folder(drive_root_id, drive_root_name)
     repo_id = mirror.ensure_folder(root_id, repo_folder_name)
-    folder_id = mirror.ensure_folder(repo_id, remote_subfolder)
+    folder_id = ensure_remote_folder_path(mirror, repo_id, remote_subfolder)
     action = mirror.upload_file(folder_id, local_file, local_file.name)
     print(f"{action}: {local_file.name}")
 
@@ -358,7 +378,7 @@ def main() -> None:
         "--source",
         action="append",
         default=None,
-        help="Local folder to mirror. Can be repeated. Defaults to output/ and data/.",
+        help="Local folder to mirror. Can be repeated. Defaults to output/, data/, and manual_reviewer/data/.",
     )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
     parser.add_argument("--drive-root-id", default="root", help="Parent Drive folder id; default is My Drive root")
@@ -379,16 +399,19 @@ def main() -> None:
     args = parser.parse_args()
 
     if args.source:
-        source_roots = [Path(source).resolve() for source in args.source]
+        source_specs = [
+            (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
+            for source in args.source
+        ]
     else:
-        missing_defaults = [path for path in DEFAULT_SOURCES if not path.exists()]
-        for missing in missing_defaults:
+        missing_defaults = [(path, remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if not path.exists()]
+        for missing, remote_subfolder in missing_defaults:
             print(f"Skipping missing default source: {missing}")
-        source_roots = [path.resolve() for path in DEFAULT_SOURCES if path.exists()]
-        if not source_roots:
-            default_list = ", ".join(str(path) for path in DEFAULT_SOURCES)
+        source_specs = [(path.resolve(), remote_subfolder) for path, remote_subfolder in DEFAULT_SOURCE_SPECS if path.exists()]
+        if not source_specs:
+            default_list = ", ".join(str(path) for path, _remote_subfolder in DEFAULT_SOURCE_SPECS)
             raise SystemExit(f"No default source folders found: {default_list}")
-    if args.remote_subfolder and len(source_roots) != 1 and not args.archive:
+    if args.remote_subfolder and len(source_specs) != 1 and not args.archive:
         raise SystemExit("--remote-subfolder can only be used when mirroring one --source folder")
 
     try:
@@ -405,15 +428,15 @@ def main() -> None:
                 retries=args.retries,
             )
         else:
-            for index, source_root in enumerate(source_roots, 1):
-                if len(source_roots) > 1:
-                    print(f"\n=== Source {index}/{len(source_roots)}: {source_root.name} ===")
+            for index, (source_root, remote_subfolder) in enumerate(source_specs, 1):
+                if len(source_specs) > 1:
+                    print(f"\n=== Source {index}/{len(source_specs)}: {remote_subfolder} ===")
                 mirror_artifacts(
                     source_root=source_root,
                     drive_root_id=args.drive_root_id,
                     drive_root_name=args.drive_root_name,
                     repo_folder_name=args.repo_folder_name,
-                    remote_subfolder=args.remote_subfolder or source_root.name,
+                    remote_subfolder=remote_subfolder,
                     oauth_client=Path(args.oauth_client),
                     oauth_token=Path(args.oauth_token),
                     dry_run=args.dry_run,
