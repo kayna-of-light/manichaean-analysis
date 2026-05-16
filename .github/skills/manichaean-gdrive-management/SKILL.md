@@ -1,6 +1,6 @@
 ---
-name: gdrive-management
-description: "Manage Google Drive storage for manichaean-analysis artifacts. Use when asked to sync, mirror, archive, back up, restore, or inspect generated output, large OCR files, .git-data, Google Drive, gdrive, Drive artifacts, or scripts/sync_artifacts_to_drive.py."
+name: manichaean-gdrive-management
+description: "Manage Google Drive storage for manichaean-analysis artifacts. Use when asked to sync, mirror, archive, back up, restore, or inspect Manichaean generated output, large OCR files, .git-data/manichaean-analysis, Google Drive, gdrive, Drive artifacts, or scripts/sync_artifacts_to_drive.py."
 ---
 
 # Google Drive Artifact Management
