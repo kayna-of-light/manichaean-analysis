@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import { PIPELINE } from "@/lib/paths";
-import { readInitialBaseline, textBodyImageUrl } from "@/lib/pipelineReaders";
+import { listPages, readInitialBaseline, textBodyImageUrl } from "@/lib/pipelineReaders";
 import {
   applyClusterOverride,
   clearReassignment,
@@ -13,41 +13,10 @@ import {
   unsetBlob,
 } from "@/lib/repo";
 import { getDb } from "@/lib/db";
+import type { BaselineToken } from "@/lib/zodSchemas";
 import { z } from "zod";
 
 export const dynamic = "force-dynamic";
-
-interface AssignmentRow {
-  page: string;
-  line_index: number;
-  blob_id: number;
-  warped_bbox: [number, number, number, number];
-  area: number;
-  cluster: number;
-  distance: number;
-}
-
-// One-shot in-memory index: cluster -> rows. Streamed once.
-let _byCluster: Map<number, AssignmentRow[]> | null = null;
-
-async function loadAssignments(): Promise<Map<number, AssignmentRow[]>> {
-  if (_byCluster) return _byCluster;
-  const m = new Map<number, AssignmentRow[]>();
-  const file = PIPELINE.clusterAssignments;
-  if (!fs.existsSync(file)) {
-    _byCluster = m;
-    return m;
-  }
-  const txt = await fs.promises.readFile(file, "utf8");
-  const arr = JSON.parse(txt) as AssignmentRow[];
-  for (const row of arr) {
-    const list = m.get(row.cluster) ?? [];
-    list.push(row);
-    m.set(row.cluster, list);
-  }
-  _byCluster = m;
-  return m;
-}
 
 const QuerySchema = z.object({
   limit: z.coerce.number().min(1).max(5000).default(500),
@@ -57,10 +26,12 @@ const QuerySchema = z.object({
 interface EnrichedMember {
   page: string;
   line_index: number;
+  source_line_index: number | null;
   blob_id: number;
   origin_cluster: number;
   reassigned: boolean;
   unset: boolean;
+  label: string | null;
   warped_bbox: [number, number, number, number];
   area: number;
   distance: number | null;
@@ -70,45 +41,74 @@ interface EnrichedMember {
   image_size: [number, number] | null;
 }
 
-async function enrich(
+interface BaselineClusterIndex {
+  byCluster: Map<number, EnrichedMember[]>;
+  byKey: Map<string, EnrichedMember>;
+}
+
+function memberKey(page: string, lineIndex: number, blobId: string | number) {
+  return `${page}:${lineIndex}:${blobId}`;
+}
+
+function areaFromAabb(aabb: [number, number, number, number]): number {
+  return Math.max(0, aabb[2] - aabb[0]) * Math.max(0, aabb[3] - aabb[1]);
+}
+
+function memberFromBaselineToken(
   page: string,
-  line_index: number,
-  blob_id: number,
-  origin_cluster: number,
-  reassigned: boolean,
-  unset: boolean,
-  warped_bbox: [number, number, number, number],
-  area: number,
-  distance: number | null,
-): Promise<EnrichedMember> {
-  const baseline = await readInitialBaseline(page);
-  let img_quad: [number, number][] | null = null;
-  let aabb: [number, number, number, number] | null = null;
-  let image_size: [number, number] | null = null;
-  if (baseline) {
-    image_size = baseline.image_size;
-    const ln = baseline.lines.find((l) => l.line_index === line_index);
-    const tk = ln?.tokens.find((t) => t.blob_id === blob_id);
-    if (tk) {
-      img_quad = tk.geometry.img_quad as [number, number][];
-      aabb = tk.geometry.aabb;
-    }
-  }
+  lineIndex: number,
+  sourceLineIndex: number | null,
+  imageSize: [number, number],
+  token: BaselineToken,
+): EnrichedMember | null {
+  const originCluster = parseInt(token.cluster, 10);
+  if (!Number.isFinite(originCluster)) return null;
+  const aabb = token.geometry.aabb;
   return {
     page,
-    line_index,
-    blob_id,
-    origin_cluster,
-    reassigned,
-    unset,
-    warped_bbox,
-    area,
-    distance,
-    img_quad,
+    line_index: lineIndex,
+    source_line_index: sourceLineIndex,
+    blob_id: token.blob_id,
+    origin_cluster: originCluster,
+    reassigned: false,
+    unset: false,
+    label: token.label ?? null,
+    warped_bbox: token.geometry.warped_bbox,
+    area: areaFromAabb(aabb),
+    distance: null,
+    img_quad: token.geometry.img_quad,
     aabb,
     image_url: textBodyImageUrl(page),
-    image_size,
+    image_size: imageSize,
   };
+}
+
+async function loadBaselineClusterIndex(): Promise<BaselineClusterIndex> {
+  const byCluster = new Map<number, EnrichedMember[]>();
+  const byKey = new Map<string, EnrichedMember>();
+  const pages = await listPages();
+  for (const page of pages) {
+    const baseline = await readInitialBaseline(page);
+    if (!baseline) continue;
+    for (const line of baseline.lines) {
+      const sourceLineIndex = line.v1_line_index ?? null;
+      for (const token of line.tokens) {
+        const member = memberFromBaselineToken(
+          page,
+          line.line_index,
+          sourceLineIndex,
+          baseline.image_size,
+          token,
+        );
+        if (!member) continue;
+        byKey.set(memberKey(member.page, member.line_index, member.blob_id), member);
+        const bucket = byCluster.get(member.origin_cluster) ?? [];
+        bucket.push(member);
+        byCluster.set(member.origin_cluster, bucket);
+      }
+    }
+  }
+  return { byCluster, byKey };
 }
 
 export async function GET(
@@ -126,8 +126,8 @@ export async function GET(
     offset: searchParams.get("offset"),
   });
 
-  const map = await loadAssignments();
-  const original = map.get(cid) ?? [];
+  const baselineIndex = await loadBaselineClusterIndex();
+  const original = baselineIndex.byCluster.get(cid) ?? [];
   const reassignedAway = readReassignmentsFromCluster(cid); // page:line:blob → row
   const reassignedIn = readReassignmentsToCluster(cid);
 
@@ -144,84 +144,41 @@ export async function GET(
   );
 
   // Effective members = original − reassignedAway − unset + reassignedIn
-  type PresentRow = {
-    page: string;
-    line_index: number;
-    blob_id: number;
-    origin_cluster: number;
-    reassigned: boolean;
-    unset: boolean;
-    warped_bbox: [number, number, number, number];
-    area: number;
-    distance: number | null;
-  };
-  const present = new Map<string, PresentRow>();
+  const present = new Map<string, EnrichedMember>();
 
   for (const r of original) {
-    const key = `${r.page}:${r.line_index}:${r.blob_id}`;
+    const key = memberKey(r.page, r.line_index, r.blob_id);
     if (reassignedAway.has(key)) continue;
-    present.set(key, {
-      page: r.page,
-      line_index: r.line_index,
-      blob_id: r.blob_id,
-      origin_cluster: cid,
-      reassigned: false,
-      unset: unsetKey.has(key),
-      warped_bbox: r.warped_bbox,
-      area: r.area,
-      distance: r.distance,
-    });
+    if (unsetKey.has(key)) continue;
+    present.set(key, r);
   }
 
-  // Look up reassigned-in rows' original assignment metadata.
-  const assignByKey = new Map<string, AssignmentRow>();
-  for (const list of map.values()) {
-    for (const r of list) {
-      assignByKey.set(`${r.page}:${r.line_index}:${r.blob_id}`, r);
-    }
-  }
   for (const r of reassignedIn) {
     const page = String(r.page).padStart(3, "0");
-    const key = `${page}:${r.line_index}:${r.blob_id}`;
-    const a = assignByKey.get(key);
+    const key = memberKey(page, r.line_index, r.blob_id);
+    if (unsetKey.has(key)) continue;
+    const member = baselineIndex.byKey.get(key);
+    if (!member) continue;
     present.set(key, {
-      page,
-      line_index: r.line_index,
-      blob_id: parseInt(r.blob_id, 10),
+      ...member,
       origin_cluster: r.from_cluster ?? cid,
       reassigned: true,
-      unset: unsetKey.has(key),
-      warped_bbox: a?.warped_bbox ?? [0, 0, 0, 0],
-      area: a?.area ?? 0,
-      distance: a?.distance ?? null,
+      unset: false,
     });
   }
 
-  // Sort: reassigned-in first, then by distance ascending.
+  // Sort: reassigned-in first, then page/line/position for predictable review.
   const sorted = [...present.values()].sort((a, b) => {
     if (a.reassigned !== b.reassigned) return a.reassigned ? -1 : 1;
-    const da = a.distance ?? 1e9;
-    const dbb = b.distance ?? 1e9;
-    return da - dbb;
+    if (a.page !== b.page) return a.page.localeCompare(b.page);
+    if (a.line_index !== b.line_index) return a.line_index - b.line_index;
+    const ax = a.aabb?.[0] ?? 0;
+    const bx = b.aabb?.[0] ?? 0;
+    return ax - bx;
   });
 
   const total = sorted.length;
-  const slice = sorted.slice(q.offset, q.offset + q.limit);
-  const members: EnrichedMember[] = await Promise.all(
-    slice.map((m) =>
-      enrich(
-        m.page,
-        m.line_index,
-        m.blob_id,
-        m.origin_cluster,
-        m.reassigned,
-        m.unset,
-        m.warped_bbox,
-        m.area,
-        m.distance,
-      ),
-    ),
-  );
+  const members = sorted.slice(q.offset, q.offset + q.limit);
 
   // Cluster centroid thumbnails (pre-rendered by pipeline)
   const padded = String(cid).padStart(3, "0");

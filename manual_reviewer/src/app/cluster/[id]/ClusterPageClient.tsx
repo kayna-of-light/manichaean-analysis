@@ -23,10 +23,12 @@ import { MemberCrop } from "@/components/cluster/MemberCrop";
 interface ClusterMember {
   page: string;
   line_index: number;
+  source_line_index: number | null;
   blob_id: number;
   origin_cluster: number;
   reassigned: boolean;
   unset: boolean;
+  label: string | null;
   warped_bbox: [number, number, number, number];
   area: number;
   distance: number | null;
@@ -63,7 +65,7 @@ export function ClusterPageClient({ clusterId }: { clusterId: number }) {
   const query = useQuery<ClusterData>({
     queryKey: ["cluster-page", clusterId],
     queryFn: async () => {
-      const res = await fetch(`/api/cluster/${clusterId}?limit=2000`);
+      const res = await fetch(`/api/cluster/${clusterId}?limit=5000`);
       if (!res.ok) throw new Error("cluster fetch failed");
       return res.json();
     },
@@ -409,11 +411,23 @@ export function ClusterPageClient({ clusterId }: { clusterId: number }) {
                   </Tooltip>
                   <Typography
                     variant="caption"
-                    sx={{ fontSize: 10, color: "text.secondary" }}
+                    sx={{ fontSize: 10, color: "text.secondary", textAlign: "right" }}
                   >
                     p{m.page}·{m.line_index}/{m.blob_id}
                   </Typography>
                 </Stack>
+                {m.label && (
+                  <Typography
+                    sx={{
+                      fontFamily: "var(--font-coptic)",
+                      fontSize: 18,
+                      lineHeight: 1,
+                      textAlign: "center",
+                    }}
+                  >
+                    {m.label}
+                  </Typography>
+                )}
                 {(m.reassigned || m.unset || m.distance != null) && (
                   <Stack direction="row" spacing={0.25} sx={{ flexWrap: "wrap" }}>
                     {m.reassigned && (
