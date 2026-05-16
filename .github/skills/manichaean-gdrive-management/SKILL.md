@@ -55,7 +55,7 @@ C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_oauth_clien
 C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_token.json
 ```
 
-It creates missing Drive folders, uploads missing or changed files, skips files that match by checksum, and deletes remote files that no longer exist locally after confirmation. Set `LITERARY_COMPILATION_SECRETS` or pass `--oauth-client` / `--oauth-token` when the sibling `literary-compilation/secrets/` folder is not available.
+It creates missing Drive folders, uploads missing or changed files, skips files that match by checksum, and deletes remote files that no longer exist locally after confirmation. It can also restore and verify full output archives from the Drive `archives/` folder. Set `LITERARY_COMPILATION_SECRETS` or pass `--oauth-client` / `--oauth-token` when the sibling `literary-compilation/secrets/` folder is not available.
 
 ## Standard Workflow
 
@@ -109,11 +109,31 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --archive "path/to/large-source-file.json" --retries 12
    ```
 
-6. Restore the Drive mirror into a fresh clone:
+6. Restore the complete generated `output/` tree from a Drive archive:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive --retries 12
+   ```
+
+   Restore a specific archive when needed:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive manichaean-analysis-output-YYYYMMDD.tar.gz --retries 12
+   ```
+
+   Verify a local archive after manual download or extraction:
+
+   ```powershell
+   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --verify-archive temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
+   ```
+
+7. Restore the per-file Drive mirror into a fresh clone:
 
    ```powershell
    conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
    ```
+
+   Use `--restore-archive` for complete generated `output/` recovery unless the per-file output mirror has been verified complete.
 
    Restore creates/updates local files but does not delete local extras unless explicitly requested:
 
@@ -123,7 +143,7 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
 
    `--prune-local` requires typing `DELETE_LOCAL` before deleting local files that are missing from Drive. Use `--yes` only after reviewing a dry run.
 
-7. Restore an archive from a local copy into the repository root:
+8. Restore an archive from a local copy into the repository root:
 
    ```powershell
    tar -xzf temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
@@ -134,6 +154,7 @@ It creates missing Drive folders, uploads missing or changed files, skips files 
 Before cleanup or promotion work, confirm preservation:
 
 - There is a Drive archive under `.git-data/manichaean-analysis/archives/` when a full safety backup is needed.
+- Complete `output/` recovery uses `--restore-archive`; do not assume the per-file `output/` mirror is complete until a restore dry-run or file-count comparison proves it.
 - The default Drive mirror includes `.git-data/manichaean-analysis/output/`, `.git-data/manichaean-analysis/data/`, and `.git-data/manichaean-analysis/manual_reviewer/data/`.
 - Run `--dry-run` before any sync expected to delete remote files.
 - Large generated files are not staged.

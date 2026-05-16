@@ -12,7 +12,8 @@ Drive preservation in addition to Git. By default it mirrors this repository's
 Normal sync is a true mirror: it creates and updates changed files, skips
 unchanged files, and deletes remote files that no longer exist locally after an
 explicit confirmation. Restore mode downloads the Drive mirror back into a fresh
-clone.
+clone. Archive restore mode downloads and extracts a full ``.tar.gz`` safety
+archive from Drive; use it when the complete generated ``output/`` tree is needed.
 """
 
 from __future__ import annotations
@@ -21,6 +22,7 @@ import argparse
 import hashlib
 import os
 import mimetypes
+import tarfile
 import time
 from pathlib import Path
 from typing import Any, Callable, Optional, TypeVar
@@ -34,6 +36,7 @@ DEFAULT_SOURCE_SPECS = (
     (REPO_ROOT / "manual_reviewer" / "data", "manual_reviewer/data"),
 )
 DEFAULT_REPO_FOLDER_NAME = "manichaean-analysis"
+ARCHIVE_CACHE_DIR = REPO_ROOT / "temp" / "gdrive_archives"
 
 # Reuse the known-good OAuth app and token from literary-compilation.
 LIT_COMP_SECRETS = Path(
@@ -143,7 +146,7 @@ class DriveMirror:
         while True:
             request = self.service.files().list(
                 q=f"'{parent_id}' in parents and trashed=false",
-                fields="nextPageToken, files(id, name, mimeType, size, md5Checksum)",
+                fields="nextPageToken, files(id, name, mimeType, size, md5Checksum, modifiedTime)",
                 pageToken=page_token,
                 pageSize=1000,
             )
@@ -256,7 +259,7 @@ class DriveMirror:
         request = self.service.files().delete(fileId=file_id)
         _with_retries(f"delete {label}", request.execute, self.retries)
 
-    def download_file(self, file_id: str, local_file: Path) -> None:
+    def download_file(self, file_id: str, local_file: Path, total_size: Optional[int] = None) -> None:
         from googleapiclient.http import MediaIoBaseDownload
 
         if self.dry_run:
@@ -268,12 +271,18 @@ class DriveMirror:
         with temp_file.open("wb") as handle:
             downloader = MediaIoBaseDownload(handle, request, chunksize=DEFAULT_CHUNK_SIZE)
             done = False
+            last_progress = -1
             while not done:
-                _status, done = _with_retries(
+                status, done = _with_retries(
                     f"download {local_file.name}",
                     downloader.next_chunk,
                     self.retries,
                 )
+                if status and total_size and total_size >= 100 * 1024 * 1024:
+                    progress = int(status.progress() * 100)
+                    if progress >= last_progress + 5:
+                        last_progress = progress
+                        print(f"download progress {local_file.name}: {progress}%", flush=True)
         temp_file.replace(local_file)
 
 
@@ -285,6 +294,56 @@ def relative_file_paths(source_root: Path) -> set[str]:
     if not source_root.exists():
         return set()
     return {path.relative_to(source_root).as_posix() for path in iter_files(source_root)}
+
+
+def validate_archive_members(archive_path: Path, destination_root: Path) -> tuple[int, int]:
+    root = destination_root.resolve()
+    file_count = 0
+    dir_count = 0
+    with tarfile.open(archive_path, "r:gz") as archive:
+        for member in archive.getmembers():
+            if member.issym() or member.islnk():
+                raise SystemExit(f"Archive links are not supported: {member.name}")
+            target = (destination_root / member.name).resolve()
+            if target != root and root not in target.parents:
+                raise SystemExit(f"Unsafe archive member path: {member.name}")
+            if member.isfile():
+                file_count += 1
+            elif member.isdir():
+                dir_count += 1
+    return file_count, dir_count
+
+
+def verify_archive_contents(archive_path: Path, destination_root: Path, max_missing: int = 80) -> tuple[int, int]:
+    missing: list[str] = []
+    checked = 0
+    with tarfile.open(archive_path, "r:gz") as archive:
+        for member in archive.getmembers():
+            if not member.isfile():
+                continue
+            checked += 1
+            local_file = destination_root / member.name
+            if not local_file.is_file() or local_file.stat().st_size != member.size:
+                if len(missing) < max_missing:
+                    missing.append(member.name)
+
+    print(f"Archive files checked: {checked}")
+    print(f"Archive files missing or size-mismatched: {len(missing)}")
+    for path in missing:
+        print(f"missing {path}")
+    return checked, len(missing)
+
+
+def extract_archive(archive_path: Path, destination_root: Path, dry_run: bool) -> None:
+    file_count, dir_count = validate_archive_members(archive_path, destination_root)
+    print(f"Archive members: {file_count} files, {dir_count} folders")
+    print(f"Extract target: {destination_root}")
+    if dry_run:
+        print("dry-run: archive extraction skipped")
+        return
+    with tarfile.open(archive_path, "r:gz") as archive:
+        archive.extractall(destination_root)
+    print("Archive extracted")
 
 
 def human_size(num_bytes: int) -> str:
@@ -695,6 +754,85 @@ def upload_single_artifact(
     print(f"{action}: {local_file.name}")
 
 
+def restore_archive_from_drive(
+    *,
+    archive_name: str,
+    drive_root_id: str,
+    drive_root_name: str,
+    repo_folder_name: str,
+    remote_subfolder: str,
+    oauth_client: Path,
+    oauth_token: Path,
+    dry_run: bool,
+    retries: int,
+) -> None:
+    if not oauth_client.exists():
+        raise SystemExit(f"OAuth client JSON not found: {oauth_client}")
+
+    print(f"Drive path: {drive_root_name}/{repo_folder_name}/{remote_subfolder}")
+    print(f"Archive selection: {archive_name}")
+    print(f"Mode: {'dry-run archive restore' if dry_run else 'archive restore'}")
+
+    service = _drive_service(oauth_client, oauth_token)
+    mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
+    root = mirror.find_child(drive_root_id, drive_root_name, mime_type=FOLDER_MIME)
+    if not root:
+        raise SystemExit(f"Drive folder not found: {drive_root_name}")
+    repo = mirror.find_child(root["id"], repo_folder_name, mime_type=FOLDER_MIME)
+    if not repo:
+        raise SystemExit(f"Drive repo folder not found: {drive_root_name}/{repo_folder_name}")
+    archive_folder_id = find_remote_folder_path(mirror, repo["id"], remote_subfolder)
+    if not archive_folder_id:
+        raise SystemExit(f"Drive archive folder not found: {drive_root_name}/{repo_folder_name}/{remote_subfolder}")
+
+    archives = [
+        item
+        for item in mirror.list_children(archive_folder_id)
+        if item.get("mimeType") != FOLDER_MIME and str(item.get("name", "")).endswith(".tar.gz")
+    ]
+    if not archives:
+        raise SystemExit(f"No .tar.gz archives found in {drive_root_name}/{repo_folder_name}/{remote_subfolder}")
+
+    if archive_name in {"", "latest"}:
+        selected = max(archives, key=lambda item: (str(item.get("modifiedTime", "")), str(item.get("name", ""))))
+    else:
+        matches = [item for item in archives if item.get("name") == archive_name]
+        if not matches:
+            available = ", ".join(sorted(str(item.get("name")) for item in archives))
+            raise SystemExit(f"Archive not found: {archive_name}. Available archives: {available}")
+        selected = matches[0]
+
+    selected_name = str(selected["name"])
+    remote_size = int(selected.get("size", 0))
+    remote_md5 = selected.get("md5Checksum")
+    local_archive = ARCHIVE_CACHE_DIR / selected_name
+    print(f"Selected archive: {selected_name}")
+    print(f"Remote bytes: {human_size(remote_size)}")
+    print(f"Local cache: {local_archive}")
+
+    need_download = True
+    if local_archive.is_file() and remote_size and local_archive.stat().st_size == remote_size:
+        if not remote_md5 or _md5_file(local_archive) == remote_md5:
+            need_download = False
+
+    if dry_run:
+        print(f"dry-run: would {'download' if need_download else 'reuse'} archive")
+        print("dry-run: archive extraction skipped")
+        return
+
+    if need_download:
+        _safe_mkdir(local_archive.parent)
+        mirror.download_file(selected["id"], local_archive, total_size=remote_size)
+        print(f"downloaded: {local_archive}")
+    else:
+        print(f"reuse: {local_archive}")
+
+    extract_archive(local_archive, REPO_ROOT, dry_run=False)
+    _checked, missing = verify_archive_contents(local_archive, REPO_ROOT)
+    if missing:
+        raise SystemExit(1)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Mirror repository artifacts to Google Drive")
     parser.add_argument(
@@ -704,6 +842,14 @@ def main() -> None:
         help="Local folder to mirror. Can be repeated. Defaults to output/, data/, and manual_reviewer/data/.",
     )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
+    parser.add_argument(
+        "--restore-archive",
+        nargs="?",
+        const="latest",
+        default=None,
+        help="Download and extract an archive from the Drive archives folder. Use without a value for the latest archive.",
+    )
+    parser.add_argument("--verify-archive", default=None, help="Verify that all files in a local .tar.gz archive exist under the repo root")
     parser.add_argument("--restore", action="store_true", help="Restore mirrored Drive folders into local source folders")
     parser.add_argument("--drive-root-id", default="root", help="Parent Drive folder id; default is My Drive root")
     parser.add_argument("--drive-root-name", default=".git-data", help="Top-level artifact folder name")
@@ -725,13 +871,14 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    if args.archive and args.restore:
-        raise SystemExit("--archive and --restore cannot be used together")
-    if args.limit is not None and args.restore:
-        raise SystemExit("--limit is only supported for upload/mirror sync, not restore")
+    selected_modes = sum(bool(value) for value in (args.archive, args.restore, args.restore_archive, args.verify_archive))
+    if selected_modes > 1:
+        raise SystemExit("Use only one of --archive, --restore, --restore-archive, or --verify-archive")
+    if args.limit is not None and (args.restore or args.restore_archive or args.verify_archive):
+        raise SystemExit("--limit is only supported for upload/mirror sync, not restore or archive verification")
 
     source_specs: list[tuple[Path, str]] = []
-    if not args.archive:
+    if not args.archive and not args.restore_archive and not args.verify_archive:
         if args.source:
             source_specs = [
                 (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
@@ -751,9 +898,29 @@ def main() -> None:
             raise SystemExit("--remote-subfolder can only be used when mirroring one --source folder")
 
     try:
-        if args.archive:
+        if args.verify_archive:
+            archive_path = Path(args.verify_archive).resolve()
+            if not archive_path.is_file():
+                raise SystemExit(f"Archive file not found: {archive_path}")
+            validate_archive_members(archive_path, REPO_ROOT)
+            _checked, missing = verify_archive_contents(archive_path, REPO_ROOT)
+            if missing:
+                raise SystemExit(1)
+        elif args.archive:
             upload_single_artifact(
                 local_file=Path(args.archive).resolve(),
+                drive_root_id=args.drive_root_id,
+                drive_root_name=args.drive_root_name,
+                repo_folder_name=args.repo_folder_name,
+                remote_subfolder=args.remote_subfolder or "archives",
+                oauth_client=Path(args.oauth_client),
+                oauth_token=Path(args.oauth_token),
+                dry_run=args.dry_run,
+                retries=args.retries,
+            )
+        elif args.restore_archive:
+            restore_archive_from_drive(
+                archive_name=args.restore_archive,
                 drive_root_id=args.drive_root_id,
                 drive_root_name=args.drive_root_name,
                 repo_folder_name=args.repo_folder_name,

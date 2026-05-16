@@ -34,10 +34,30 @@ Archive uploads go to:
 My Drive/.git-data/manichaean-analysis/archives/
 ```
 
-To restore an archive into the repository root:
+For full `output/` disaster recovery, use the archive. The archive is the complete safety copy; the per-file `output/` mirror is useful for targeted restores, but it can lag if a full mirror pass did not finish.
+
+Restore the latest Drive archive into the repository root:
+
+```powershell
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive --retries 12
+```
+
+Restore a specific Drive archive by name:
+
+```powershell
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive manichaean-analysis-output-YYYYMMDD.tar.gz --retries 12
+```
+
+If the archive was downloaded manually, extract it into the repository root:
 
 ```powershell
 tar -xzf temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
+```
+
+Verify a local archive has been fully restored:
+
+```powershell
+conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --verify-archive temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
 ```
 
 Useful options:
@@ -65,6 +85,8 @@ To restore the Drive mirror into a fresh clone:
 ```powershell
 conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
 ```
+
+This restores the per-file mirrors (`output/`, `data/`, and `manual_reviewer/data/`). For complete generated `output/` recovery, prefer `--restore-archive` unless a verified full per-file mirror is known to exist.
 
 Restore creates or updates local files from Drive. It does not delete local extras unless explicitly requested:
 
