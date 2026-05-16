@@ -3,8 +3,6 @@ import {
   readInitialBaseline,
   readV2Geometry,
   textBodyImageUrl,
-  getWitnessTokensForPage,
-  type WitnessToken,
 } from "@/lib/pipelineReaders";
 import {
   mergeTokens,
@@ -56,10 +54,6 @@ export async function GET(
     }
   }
 
-  // LLM witness data: provides final_label (with combining marks from mark
-  // attachment) and corrected base characters from LLM alignment.
-  const witnessMap = await getWitnessTokensForPage(page);
-
   const baselineYs = baseline.lines.map((l) => l.baseline_y).sort((a, b) => a - b);
   const steps: number[] = [];
   for (let i = 1; i < baselineYs.length; i++) steps.push(baselineYs[i] - baselineYs[i - 1]);
@@ -94,7 +88,7 @@ export async function GET(
 
   const [imgW, imgH] = baseline.image_size;
   const builtLines = baseline.lines.map((ln) =>
-    buildLine(ln, page, halfStep, imgW, imgH, rowBboxMap, witnessMap),
+    buildLine(ln, page, halfStep, imgW, imgH, rowBboxMap),
   );
 
   const mergedLines = builtLines.map((ln) => {
@@ -160,25 +154,11 @@ function buildLine(
   imgW: number,
   imgH: number,
   rowBboxMap: Map<number, [number, number, number, number]>,
-  witnessMap: Map<string, WitnessToken>,
 ) {
   const allTokens: Token[] = ln.tokens.map((t) =>
     baselineTokenToToken(t, page, ln.line_index),
   );
   const allQuads: (number[][] | null)[] = ln.tokens.map((t) => t.geometry.img_quad);
-
-  // Apply display_label and overline_mark_id from the composite index.
-  // NOTE: baseline uses 1-based line indices; composite/index uses 0-based.
-  for (const t of allTokens) {
-    const key = `${page}:${t.line_index - 1}:${t.blob_id}`;
-    const w = witnessMap.get(key);
-    if (w?.final_label) {
-      t.label = w.final_label;
-    }
-    if (w?.overline_mark_id != null) {
-      t.overline_mark_id = w.overline_mark_id;
-    }
-  }
 
   // Use v2 geometry row bbox if available — this is the actual ink extent.
   // Add margin matching the v2 review sheet so chars aren't clipped at edges.
@@ -236,7 +216,7 @@ function baselineTokenToToken(
     editorial_override: t.editorial_override ?? null,
     review: t.review ?? false,
     candidates: t.candidates ?? [],
-    overline_mark_id: null,
+    overline_mark_id: t.overline_mark_id ?? null,
     geometry: {
       warped_bbox: t.geometry.warped_bbox,
       width,

@@ -12,18 +12,21 @@ export const PIPELINE_DIR =
   process.env.KEPH_OUTPUT_DIR ??
   path.join(repoRoot, "output", "projects", "kephalaia_ocr");
 
+export const DATA_DIR =
+  process.env.KEPH_DATA_DIR ?? path.join(process.cwd(), "data");
+
+export const INGEST_DIR =
+  process.env.KEPH_INGEST_DIR ?? path.join(DATA_DIR, "ingest");
+
 /** Root for v2 pipeline outputs (line_body_split + body_geometry). */
 export const PIPELINE_V2_DIR =
   process.env.KEPH_OUTPUT_V2_DIR ??
-  path.join(repoRoot, "output", "projects", "kephalaia_ocr_v2");
+  path.join(INGEST_DIR, "assets", "v2");
 
 /** Root for the manual-reviewer-specific ingest layer (transposed baseline). */
 export const MANUAL_REVIEWER_DIR =
   process.env.KEPH_MANUAL_REVIEWER_DIR ??
-  path.join(repoRoot, "output", "projects", "kephalaia_manual_reviewer");
-
-export const DATA_DIR =
-  process.env.KEPH_DATA_DIR ?? path.join(process.cwd(), "data");
+  INGEST_DIR;
 
 export const DB_PATH = path.join(DATA_DIR, "reviewer.db");
 export const BACKUP_DIR = path.join(DATA_DIR, "backups");
@@ -69,7 +72,7 @@ export const PIPELINE = {
 /** v2 ingest paths. v2 body crop + body_geometry is the leading canvas. */
 export const PIPELINE_V2 = {
   pagesCropped: path.join(PIPELINE_V2_DIR, "pages_cropped"),
-  textBody: path.join(PIPELINE_V2_DIR, "line_body_split", "text_body"),
+  textBody: path.join(PIPELINE_V2_DIR, "text_body"),
   lineBodyMetadata: path.join(PIPELINE_V2_DIR, "line_body_split", "metadata"),
   bodyGeometryPages: path.join(PIPELINE_V2_DIR, "body_geometry", "pages"),
   bodyGeometryMasks: path.join(PIPELINE_V2_DIR, "body_geometry", "masks"),
