@@ -18,6 +18,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import FlagIcon from "@mui/icons-material/Flag";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
+import DoneAllIcon from "@mui/icons-material/DoneAll";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import {
   usePageData,
@@ -598,9 +599,42 @@ export default function ReviewPage() {
               >
                 Page {prev}
               </Button>
-              <Typography variant="caption" color="text.secondary">
-                End of page {pageId}
-              </Typography>
+              {(() => {
+                const pendingLines = data.lines.filter(
+                  (l) => l.status !== "done" && l.status !== "flagged",
+                );
+                if (pendingLines.length === 0) {
+                  return (
+                    <Typography variant="caption" color="text.secondary">
+                      End of page {pageId}
+                    </Typography>
+                  );
+                }
+                return (
+                  <Button
+                    size="small"
+                    variant="outlined"
+                    color="success"
+                    startIcon={<DoneAllIcon />}
+                    disabled={editMutation.isPending}
+                    onClick={async () => {
+                      if (
+                        !confirm(
+                          `Mark all ${pendingLines.length} unflagged pending line(s) on page ${pageId} as done?`,
+                        )
+                      )
+                        return;
+                      for (const l of pendingLines) {
+                        await editMutation.mutateAsync({
+                          line_status: { line_index: l.line_index, status: "done" },
+                        });
+                      }
+                    }}
+                  >
+                    Mark {pendingLines.length} as done
+                  </Button>
+                );
+              })()}
               <Button
                 size="small"
                 variant="outlined"
