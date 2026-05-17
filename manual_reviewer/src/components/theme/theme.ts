@@ -6,14 +6,17 @@ const accent = "#c8a465";
 
 export function buildTheme(mode: "light" | "dark") {
   const isDark = mode === "dark";
-  const textPrimary = isDark ? "oklch(96% 0.01 80)" : "oklch(20% 0.02 260)";
-  const textSecondary = isDark ? "oklch(70% 0.02 260)" : "oklch(45% 0.02 260)";
+  // rgb() is required so MUI 9 can derive *Channel tokens for alpha
+  // computation. oklch() values trigger console warnings and silently
+  // suppress translucent variants (faint outlined buttons).
+  const textPrimary = isDark ? "rgb(244,241,232)" : "rgb(36,35,42)";
+  const textSecondary = isDark ? "rgb(178,170,158)" : "rgb(98,96,108)";
   return createTheme({
     cssVariables: true,
     colorSchemes: { light: true, dark: true },
     palette: {
       mode,
-      primary: { main: accent, contrastText: isDark ? "#1a1410" : "#1a1410" },
+      primary: { main: accent, contrastText: "#1a1410" },
       secondary: { main: "#6f87b0" },
       background: {
         default: isDark ? "rgba(20,18,24,0.0)" : "rgba(250,248,244,0.0)",

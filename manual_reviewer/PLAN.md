@@ -459,6 +459,141 @@ Use this as the running checklist. Tick boxes as items ship.
 - [x] Manual `POST /api/backup` endpoint + button in the top bar
 - [x] `data/` is gitignored from the parent repo's perspective
 
+### Phase 11 — Cluster manager v2 + chooser enhancements
+
+The cluster page was rebuilt to derive membership from the transposed v2 baseline
+(commit pending). With correct membership in place we now upgrade the cluster
+manager UX, unify the label-editing surface, add a cluster overview, and fix a
+batch of cross-cutting UI issues (theme contrast, char preview, active-blob
+filtering).
+
+**Guiding principles**
+- The cluster's membership is the **set of currently active baseline tokens** whose
+  `cluster == cid`. Removed / unset / non-emitted blobs must not be counted or shown.
+- The cluster label and the per-blob label are the **same kind of value**, so they
+  must use the **same editor** (`CharChooser`), with diacritics suppressed for the
+  cluster-label use case.
+- Per-blob diacritics are the user's manual work; bulk operations on the cluster
+  must never erase them. Bulk operations change the **base character** only.
+- "Unassigned" is a real, addressable cluster — a sentinel id (`-1` /
+  `"unassigned"`) — not an absence. Clearing a blob from a cluster means
+  reassigning it to the unassigned cluster.
+
+#### 11.1 Active-only cluster membership
+- [x] `GET /api/cluster/[id]` filters out tokens that are deleted, unset, or
+      otherwise hidden from the page reviewer (single source of truth =
+      `readInitialBaseline` + edits + `unset_blobs`).
+- [x] Add a `Cluster.active_total` field separate from `original_total` (raw
+      assignment count) so the UI shows real counts.
+- [x] Verify on a few clusters that `active_total` equals the count of crops
+      visible on the corresponding pages.
+- [x] Unassigned cluster: introduce sentinel id `-1` (label "Unassigned"). The API
+      treats it as a normal cluster but its members are blobs whose
+      `cluster_reassignments.to_cluster = -1` (or original cluster was missing).
+
+#### 11.2 Cluster label editor = `CharChooser`
+- [x] Instead of mutating `CharChooser` (deeply coupled to the reviewer's
+      mutation pipeline), introduce a standalone `CopticPicker` that mirrors the
+      chooser's visual layout (Coptic keyboard + specials) but with diacritics
+      and bracket markers suppressed.
+- [x] Replace the cluster page's text input + "Apply" with a button that opens
+      `ClusterLabelDialog` wrapping `CopticPicker`.
+- [x] Apply writes through the existing `apply_label` action (cluster override).
+- [x] Clear override remains, relabeled "Remove cluster label".
+
+#### 11.3 Multiselect UX (shift + ctrl/cmd)
+- [x] Track `selection: Set<string>` and `anchorId: string | null` in the cluster
+      page client.
+- [x] Plain click → select only this blob, set anchor.
+- [x] Ctrl/Cmd + click → toggle this blob in selection, set anchor.
+- [x] Shift + click → select contiguous range from anchor (in current grid
+      order) **without** clearing existing selection, anchor unchanged.
+- [x] Ctrl/Cmd + A → select all currently rendered members.
+- [x] Esc → clear selection.
+- [x] Selection toolbar shows `N selected of M`, plus per-action buttons; buttons
+      are disabled with a tooltip when `N == 0`.
+- [x] Visual: selected crops get a strong accent border + subtle background tint
+      that is readable in both light and dark theme.
+
+#### 11.4 Selection action buttons — clear names, clear behaviour
+Replace the current vague labels with explicit, verb-first names. Each shows a
+confirm dialog summarising what it will do.
+
+- [x] **"Move selection to another cluster…"** — explicit target field, tooltips.
+- [x] **"Clear selection from this cluster"** — reassigns to sentinel `-1`,
+      drops cluster-derived labels, preserves per-blob manual edits and
+      diacritics.
+- [x] **"Create new cluster from selection…"** — opens `NewClusterDialog`
+      (see 11.6).
+- [x] **"Undo reassignments for selection"** — surfaced with count.
+- [x] **"Mark as not-a-character"** — renamed from "Unset N".
+- [x] Buttons disable themselves (with tooltip) when no selection.
+
+#### 11.5 Cluster overview page
+- [x] New `GET /api/clusters` returns active counts, override labels, and a
+      sample member crop per cluster.
+- [x] `ClustersOverview` component renders one card per cluster with id, label,
+      active count, sample crop, baseline count.
+- [x] Card click → `/cluster/[id]`.
+- [x] Sort: by id / by active count desc / by active count asc / by label.
+- [x] Filter: non-empty / all / has label / missing label / unassigned.
+- [x] Search by id or label substring.
+- [x] Pagination (60 per page).
+
+#### 11.6 Create-new-cluster flow
+- [x] Action available from any cluster page when selection ≥ 1.
+- [x] `NewClusterDialog` wraps `CopticPicker` with a `Skip (no label)` action.
+- [x] `POST /api/clusters { action: "create_from_selection" }` allocates the
+      lowest free positive id beyond the current max (taking baseline,
+      overrides, and reassignments into account), records an override if a
+      label was picked, reassigns the selected blobs.
+- [x] Per-blob diacritics: preserved by design (overrides only set the base
+      label; `mergeTokens` applies them to the *effective* cluster id).
+- [x] Redirect to the new cluster's page after creation.
+- [x] User-created cluster ids reuse the existing `cluster_overrides` table —
+      `applyClusterOverride` accepts any integer id, so no schema change.
+
+#### 11.7 Home navigation: Pages | Clusters
+- [x] Home page rebuilt around a `Tabs` switcher: **Pages** (old grid extracted
+      into `PagesOverview`) | **Clusters** (`ClustersOverview`).
+- [x] Selection persisted in `localStorage` so reloads keep the user's last view.
+
+#### 11.8 Theme audit (light + dark contrast)
+- [x] Theme palette: replaced `oklch()` text colors with `rgb()` so MUI 9 can
+      compute `*Channel` tokens. This eliminates the runtime warnings that
+      silently muted button colors (faint outlined buttons in dark mode are
+      now properly rendered).
+- [x] Selection toolbar, member captions, cluster overview cards, home tabs all
+      use palette tokens (`text.primary`, `text.secondary`, `text.disabled`,
+      `var(--color-glass-*)`) that flip per theme.
+- [x] Visual smoke pass on `/cluster/46` and `/` (Clusters tab) in dark mode.
+
+#### 11.9 Char preview in `CharChooser`
+- [x] `ChooserAnchor` gained an optional `preview: { imageUrl, imageSize, aabb }`.
+- [x] The three `openChooser(...)` call sites in `app/review/[page]/page.tsx`
+      (token, new-bbox, pending-new-bbox auto-open) populate `preview` from
+      `data.image_url` + `data.image_size` + computed aabb.
+- [x] New `ChooserPreview` component renders the crop with a one-step zoom
+      toggle (fit vs. context, padded by the glyph's own height).
+- [x] Wired into both `CharChooser` (token mode) and `CopticPicker` (cluster
+      label + new-cluster dialogs).
+
+#### 11.10 Sequencing
+Implementation order (each step independently mergeable):
+
+1. 11.1 active-only membership + unassigned sentinel (foundation).
+2. 11.2 `CharChooser` refactor with `mode` prop.
+3. 11.3 multiselect UX.
+4. 11.4 button rename + "Clear from cluster" action.
+5. 11.9 chooser preview + zoom (uses the new chooser shape).
+6. 11.6 create-new-cluster flow (depends on 11.2 + 11.3 + 11.4).
+7. 11.5 cluster overview page.
+8. 11.7 home tab switcher.
+9. 11.8 theme audit pass (done last so all new surfaces are covered).
+
+Each step ends with: typecheck clean, browser smoke check on at least one
+cluster, and a screenshot in both themes for visual changes.
+
 ---
 
 ## 6. Decisions log

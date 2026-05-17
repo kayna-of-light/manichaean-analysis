@@ -8,6 +8,13 @@ export interface OverlineNeighbor {
   isNewBbox?: boolean;
 }
 
+export interface ChooserPreview {
+  imageUrl: string;
+  imageSize: [number, number];
+  /** [x0, y0, x1, y1] in image-space pixels. */
+  aabb: [number, number, number, number];
+}
+
 export interface ChooserAnchor {
   page: string;
   pageInt: number;
@@ -22,6 +29,8 @@ export interface ChooserAnchor {
   leftNeighbor: OverlineNeighbor | null;
   rightNeighbor: OverlineNeighbor | null;
   isNewBbox?: boolean;
+  /** Optional crop info for the upper-right preview in the chooser. */
+  preview?: ChooserPreview | null;
   // Staged overline changes (null = no change, number = set, -1 = clear)
   pendingOverline: {
     self: number | null | undefined;      // undefined = no change

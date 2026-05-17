@@ -2,7 +2,6 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "node:fs";
 import path from "node:path";
 import { PIPELINE } from "@/lib/paths";
-import { listPages, readInitialBaseline, textBodyImageUrl } from "@/lib/pipelineReaders";
 import {
   applyClusterOverride,
   clearReassignment,
@@ -13,7 +12,11 @@ import {
   unsetBlob,
 } from "@/lib/repo";
 import { getDb } from "@/lib/db";
-import type { BaselineToken } from "@/lib/zodSchemas";
+import {
+  loadBaselineClusterIndex,
+  memberKey,
+  type ClusterMemberCore,
+} from "@/lib/clusterIndex";
 import { z } from "zod";
 
 export const dynamic = "force-dynamic";
@@ -23,93 +26,8 @@ const QuerySchema = z.object({
   offset: z.coerce.number().min(0).default(0),
 });
 
-interface EnrichedMember {
-  page: string;
-  line_index: number;
-  source_line_index: number | null;
-  blob_id: number;
-  origin_cluster: number;
-  reassigned: boolean;
-  unset: boolean;
-  label: string | null;
-  warped_bbox: [number, number, number, number];
-  area: number;
-  distance: number | null;
-  img_quad: [number, number][] | null;
-  aabb: [number, number, number, number] | null;
-  image_url: string;
-  image_size: [number, number] | null;
-}
+type EnrichedMember = ClusterMemberCore;
 
-interface BaselineClusterIndex {
-  byCluster: Map<number, EnrichedMember[]>;
-  byKey: Map<string, EnrichedMember>;
-}
-
-function memberKey(page: string, lineIndex: number, blobId: string | number) {
-  return `${page}:${lineIndex}:${blobId}`;
-}
-
-function areaFromAabb(aabb: [number, number, number, number]): number {
-  return Math.max(0, aabb[2] - aabb[0]) * Math.max(0, aabb[3] - aabb[1]);
-}
-
-function memberFromBaselineToken(
-  page: string,
-  lineIndex: number,
-  sourceLineIndex: number | null,
-  imageSize: [number, number],
-  token: BaselineToken,
-): EnrichedMember | null {
-  const originCluster = parseInt(token.cluster, 10);
-  if (!Number.isFinite(originCluster)) return null;
-  const aabb = token.geometry.aabb;
-  return {
-    page,
-    line_index: lineIndex,
-    source_line_index: sourceLineIndex,
-    blob_id: token.blob_id,
-    origin_cluster: originCluster,
-    reassigned: false,
-    unset: false,
-    label: token.label ?? null,
-    warped_bbox: token.geometry.warped_bbox,
-    area: areaFromAabb(aabb),
-    distance: null,
-    img_quad: token.geometry.img_quad,
-    aabb,
-    image_url: textBodyImageUrl(page),
-    image_size: imageSize,
-  };
-}
-
-async function loadBaselineClusterIndex(): Promise<BaselineClusterIndex> {
-  const byCluster = new Map<number, EnrichedMember[]>();
-  const byKey = new Map<string, EnrichedMember>();
-  const pages = await listPages();
-  for (const page of pages) {
-    const baseline = await readInitialBaseline(page);
-    if (!baseline) continue;
-    for (const line of baseline.lines) {
-      const sourceLineIndex = line.v1_line_index ?? null;
-      for (const token of line.tokens) {
-        const member = memberFromBaselineToken(
-          page,
-          line.line_index,
-          sourceLineIndex,
-          baseline.image_size,
-          token,
-        );
-        if (!member) continue;
-        byKey.set(memberKey(member.page, member.line_index, member.blob_id), member);
-        const bucket = byCluster.get(member.origin_cluster) ?? [];
-        bucket.push(member);
-        byCluster.set(member.origin_cluster, bucket);
-      }
-    }
-  }
-  return { byCluster, byKey };
-}
 
 export async function GET(
   req: NextRequest,
@@ -194,9 +112,14 @@ export async function GET(
   return NextResponse.json({
     cluster_id: cid,
     total,
+    active_total: total,
     original_total: original.length,
     reassigned_in: reassignedIn.length,
     reassigned_away: reassignedAway.size,
+    unset_excluded: original.reduce(
+      (n, r) => n + (unsetKey.has(memberKey(r.page, r.line_index, r.blob_id)) ? 1 : 0),
+      0,
+    ),
     offset: q.offset,
     limit: q.limit,
     members,
