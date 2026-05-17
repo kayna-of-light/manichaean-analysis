@@ -1,21 +1,39 @@
 "use client";
+import { useEffect, useState } from "react";
 import {
   Box,
-  Button,
-  Chip,
-  CircularProgress,
   Paper,
   Stack,
+  Tab,
+  Tabs,
   Typography,
 } from "@mui/material";
-import { usePagesList } from "@/components/reviewer/hooks";
-import Link from "next/link";
+import { PagesOverview } from "@/components/reviewer/PagesOverview";
+import { ClustersOverview } from "@/components/cluster/ClustersOverview";
+
+type HomeTab = "pages" | "clusters";
+
+const STORAGE_KEY = "manual_reviewer.home_tab";
 
 export default function Page() {
-  const { data, isLoading } = usePagesList();
+  const [tab, setTab] = useState<HomeTab>("pages");
+
+  // Persist tab selection across reloads.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const saved = window.localStorage.getItem(STORAGE_KEY);
+    if (saved === "pages" || saved === "clusters") setTab(saved);
+  }, []);
+
+  const onChange = (_e: React.SyntheticEvent, value: HomeTab) => {
+    setTab(value);
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(STORAGE_KEY, value);
+    }
+  };
 
   return (
-    <Box sx={{ maxWidth: 1100, mx: "auto" }}>
+    <Box sx={{ maxWidth: 1300, mx: "auto" }}>
       <Paper elevation={0} sx={{ p: 4, borderRadius: 4 }}>
         <Stack spacing={2}>
           <Box>
@@ -23,66 +41,14 @@ export default function Page() {
               Manual Reviewer
             </Typography>
             <Typography variant="h3" sx={{ mt: 0.5 }}>
-              Kephalaia · pages
-            </Typography>
-            <Typography sx={{ mt: 1, opacity: 0.75, maxWidth: 720 }}>
-              Pick a page to review. Each tile shows the page status and the
-              counts of completed and flagged lines.
+              Kephalaia
             </Typography>
           </Box>
-          {isLoading && <CircularProgress />}
-          {data && (
-            <Box
-              sx={{
-                display: "grid",
-                gridTemplateColumns: "repeat(auto-fill, minmax(110px, 1fr))",
-                gap: 1,
-              }}
-            >
-              {data.pages.map((p) => (
-                <Button
-                  key={p.page}
-                  component={Link}
-                  href={`/review/${p.page}`}
-                  variant="outlined"
-                  sx={{
-                    flexDirection: "column",
-                    py: 1.5,
-                    borderColor:
-                      p.flagged_lines > 0
-                        ? "rgba(220,120,120,0.6)"
-                        : "var(--color-glass-border)",
-                  }}
-                >
-                  <Typography
-                    sx={{ fontVariantNumeric: "tabular-nums", fontSize: 18 }}
-                  >
-                    p{p.page}
-                  </Typography>
-                  <Stack direction="row" spacing={0.5} sx={{ mt: 0.5 }}>
-                    {p.done_lines > 0 && (
-                      <Chip
-                        size="small"
-                        label={`${p.done_lines}✓`}
-                        sx={{ height: 18, fontSize: 10 }}
-                      />
-                    )}
-                    {p.flagged_lines > 0 && (
-                      <Chip
-                        size="small"
-                        label={p.flagged_lines}
-                        sx={{
-                          height: 18,
-                          fontSize: 10,
-                          bgcolor: "rgba(220,120,120,0.2)",
-                        }}
-                      />
-                    )}
-                  </Stack>
-                </Button>
-              ))}
-            </Box>
-          )}
+          <Tabs value={tab} onChange={onChange}>
+            <Tab value="pages" label="Pages" />
+            <Tab value="clusters" label="Clusters" />
+          </Tabs>
+          {tab === "pages" ? <PagesOverview /> : <ClustersOverview />}
         </Stack>
       </Paper>
     </Box>

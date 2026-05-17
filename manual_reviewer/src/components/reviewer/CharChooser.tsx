@@ -19,6 +19,7 @@ import { COPTIC_LETTERS, DIACRITICS, SPECIAL_MARKERS } from "@/lib/copticInvento
 import { intentFromKey, applyDiacritic } from "@/lib/copticKeymap";
 import { useReviewerStore } from "./store";
 import { useEditMutation } from "./hooks";
+import { ChooserPreview } from "./ChooserPreview";
 
 const COPTIC_KEYBOARD_LAYOUT: (string | null)[][] = [
   ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "6"],
@@ -369,22 +370,35 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
             <CloseIcon fontSize="small" />
           </IconButton>
         </Stack>
-        <TextField
-          inputRef={inputRef}
-          value={displayLabel(currentLabelForDisplay)}
-          onChange={() => {/* read-only proxy */}}
-          fullWidth
-          autoFocus
-          size="small"
-          sx={{
-            my: 1,
-            input: {
-              fontFamily: "var(--font-coptic)",
-              fontSize: 22,
-              textAlign: "center",
-            },
-          }}
-        />
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{ my: 1, alignItems: "center" }}
+        >
+          <TextField
+            inputRef={inputRef}
+            value={displayLabel(currentLabelForDisplay)}
+            onChange={() => {/* read-only proxy */}}
+            fullWidth
+            autoFocus
+            size="small"
+            sx={{
+              flex: 1,
+              input: {
+                fontFamily: "var(--font-coptic)",
+                fontSize: 22,
+                textAlign: "center",
+              },
+            }}
+          />
+          {anchor.preview && (
+            <ChooserPreview
+              imageUrl={anchor.preview.imageUrl}
+              imageSize={anchor.preview.imageSize}
+              aabb={anchor.preview.aabb}
+            />
+          )}
+        </Stack>
         {anchor.candidates.length > 0 && (
           <>
             <Typography variant="caption" color="text.secondary">
