@@ -48,6 +48,25 @@ function tokenCenterX(t: ReviewToken): number {
   return 0;
 }
 
+function tokenAabb(t: ReviewToken): [number, number, number, number] | null {
+  const q = t.img_quad;
+  if (q && q.length > 0) {
+    const xs = q.map((p) => p[0]);
+    const ys = q.map((p) => p[1]);
+    return [Math.min(...xs), Math.min(...ys), Math.max(...xs), Math.max(...ys)];
+  }
+  return null;
+}
+
+function newBboxAabb(nb: NewBbox): [number, number, number, number] {
+  return [
+    Math.min(nb.x0, nb.x1),
+    Math.min(nb.y0, nb.y1),
+    Math.max(nb.x0, nb.x1),
+    Math.max(nb.y0, nb.y1),
+  ];
+}
+
 function newBboxCenterX(nb: NewBbox): number {
   return (nb.x0 + nb.x1) / 2;
 }
@@ -169,6 +188,11 @@ export default function ReviewPage() {
       leftNeighbor: left,
       rightNeighbor: right,
       isNewBbox: true,
+      preview: {
+        imageUrl: data.image_url,
+        imageSize: data.image_size,
+        aabb: newBboxAabb(nb),
+      },
       pendingOverline: { self: undefined, left: undefined, right: undefined },
     });
   }, [pendingNewBboxOpen, data, pageId, openChooser, setPopoverEl]);
@@ -267,6 +291,15 @@ export default function ReviewPage() {
       overlineMarkId: t.overline_mark_id ?? null,
       leftNeighbor: left,
       rightNeighbor: right,
+      preview: (() => {
+        const aabb = tokenAabb(t);
+        if (!aabb) return null;
+        return {
+          imageUrl: data.image_url,
+          imageSize: data.image_size,
+          aabb,
+        };
+      })(),
       pendingOverline: { self: undefined, left: undefined, right: undefined },
     });
   };
@@ -316,6 +349,11 @@ export default function ReviewPage() {
       leftNeighbor: left,
       rightNeighbor: right,
       isNewBbox: true,
+      preview: {
+        imageUrl: data.image_url,
+        imageSize: data.image_size,
+        aabb: newBboxAabb(nb),
+      },
       pendingOverline: { self: undefined, left: undefined, right: undefined },
     });
   };
@@ -460,79 +498,81 @@ export default function ReviewPage() {
                   </Box>
                 )}
 
-                {/* Hover toolbar, top-right, floats above content */}
-                <Stack
-                  className="line-toolbar"
-                  direction="row"
-                  spacing={0.25}
-                  sx={{
-                    position: "absolute",
-                    top: 4,
-                    right: 32,
-                    alignItems: "center",
-                    px: 0.5,
-                    py: 0.25,
-                    borderRadius: 1,
-                    bgcolor: "rgba(20,20,24,0.72)",
-                    backdropFilter: "blur(6px)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    zIndex: 3,
-                  }}
-                >
-                  <Tooltip title="Reset line">
-                    <IconButton
-                      size="small"
-                      sx={{ p: 0.5 }}
-                      onClick={() => {
-                        if (!confirm(`Reset line ${line.line_index} to initial state? All edits on this line will be removed.`)) return;
-                        editMutation.mutate({ reset_line: { line_index: line.line_index } });
-                      }}
-                    >
-                      <RestartAltIcon sx={{ fontSize: 16 }} />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title={isDrawing ? "Cancel drawing" : "Add bbox"}>
-                    <IconButton
-                      size="small"
-                      sx={{ p: 0.5, color: isDrawing ? "primary.main" : "inherit" }}
-                      onClick={() => setDrawLineIndex(isDrawing ? null : line.line_index)}
-                    >
-                      <AddBoxOutlinedIcon sx={{ fontSize: 16 }} />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title={line.status === "flagged" ? "Unflag (f)" : "Flag (f)"}>
-                    <IconButton
-                      size="small"
-                      sx={{ p: 0.5, color: line.status === "flagged" ? "warning.main" : "inherit" }}
-                      onClick={() =>
-                        editMutation.mutate({
-                          line_status: {
-                            line_index: line.line_index,
-                            status: toggledFlagStatus(line.status),
-                          },
-                        })
-                      }
-                    >
-                      <FlagOutlinedIcon sx={{ fontSize: 16 }} />
-                    </IconButton>
-                  </Tooltip>
-                  <Tooltip title={line.status === "done" ? "Reopen (d)" : "Done (d)"}>
-                    <IconButton
-                      size="small"
-                      sx={{ p: 0.5, color: line.status === "done" ? "success.main" : "inherit" }}
-                      onClick={() =>
-                        editMutation.mutate({
-                          line_status: {
-                            line_index: line.line_index,
-                            status: toggledDoneStatus(line.status),
-                          },
-                        })
-                      }
-                    >
-                      <CheckCircleOutlineIcon sx={{ fontSize: 16 }} />
-                    </IconButton>
-                  </Tooltip>
-                </Stack>
+                {/* Hover toolbar, top-right, floats above content. Do not render at all while drawing to avoid blocking pointer events. */}
+                {!isDrawing && (
+                  <Stack
+                    className="line-toolbar"
+                    direction="row"
+                    spacing={0.25}
+                    sx={{
+                      position: "absolute",
+                      top: 4,
+                      right: 32,
+                      alignItems: "center",
+                      px: 0.5,
+                      py: 0.25,
+                      borderRadius: 1,
+                      bgcolor: "rgba(20,20,24,0.72)",
+                      backdropFilter: "blur(6px)",
+                      border: "1px solid rgba(255,255,255,0.08)",
+                      zIndex: 3,
+                    }}
+                  >
+                    <Tooltip title="Reset line">
+                      <IconButton
+                        size="small"
+                        sx={{ p: 0.5 }}
+                        onClick={() => {
+                          if (!confirm(`Reset line ${line.line_index} to initial state? All edits on this line will be removed.`)) return;
+                          editMutation.mutate({ reset_line: { line_index: line.line_index } });
+                        }}
+                      >
+                        <RestartAltIcon sx={{ fontSize: 16 }} />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title={isDrawing ? "Cancel drawing" : "Add bbox"}>
+                      <IconButton
+                        size="small"
+                        sx={{ p: 0.5, color: isDrawing ? "primary.main" : "inherit" }}
+                        onClick={() => setDrawLineIndex(isDrawing ? null : line.line_index)}
+                      >
+                        <AddBoxOutlinedIcon sx={{ fontSize: 16 }} />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title={line.status === "flagged" ? "Unflag (f)" : "Flag (f)"}>
+                      <IconButton
+                        size="small"
+                        sx={{ p: 0.5, color: line.status === "flagged" ? "warning.main" : "inherit" }}
+                        onClick={() =>
+                          editMutation.mutate({
+                            line_status: {
+                              line_index: line.line_index,
+                              status: toggledFlagStatus(line.status),
+                            },
+                          })
+                        }
+                      >
+                        <FlagOutlinedIcon sx={{ fontSize: 16 }} />
+                      </IconButton>
+                    </Tooltip>
+                    <Tooltip title={line.status === "done" ? "Reopen (d)" : "Done (d)"}>
+                      <IconButton
+                        size="small"
+                        sx={{ p: 0.5, color: line.status === "done" ? "success.main" : "inherit" }}
+                        onClick={() =>
+                          editMutation.mutate({
+                            line_status: {
+                              line_index: line.line_index,
+                              status: toggledDoneStatus(line.status),
+                            },
+                          })
+                        }
+                      >
+                        <CheckCircleOutlineIcon sx={{ fontSize: 16 }} />
+                      </IconButton>
+                    </Tooltip>
+                  </Stack>
+                )}
 
                 <LineCanvas
                   page={data}
