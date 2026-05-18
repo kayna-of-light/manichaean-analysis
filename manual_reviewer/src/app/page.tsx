@@ -10,8 +10,9 @@ import {
 } from "@mui/material";
 import { PagesOverview } from "@/components/reviewer/PagesOverview";
 import { ClustersOverview } from "@/components/cluster/ClustersOverview";
+import { EditorialOverview } from "@/components/editorial/EditorialOverview";
 
-type HomeTab = "pages" | "clusters";
+type HomeTab = "pages" | "clusters" | "editorial";
 
 const STORAGE_KEY = "manual_reviewer.home_tab";
 
@@ -22,7 +23,7 @@ export default function Page() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved === "pages" || saved === "clusters") setTab(saved);
+    if (saved === "pages" || saved === "clusters" || saved === "editorial") setTab(saved);
   }, []);
 
   const onChange = (_e: React.SyntheticEvent, value: HomeTab) => {
@@ -47,8 +48,11 @@ export default function Page() {
           <Tabs value={tab} onChange={onChange}>
             <Tab value="pages" label="Pages" />
             <Tab value="clusters" label="Clusters" />
+            <Tab value="editorial" label="Editorial" />
           </Tabs>
-          {tab === "pages" ? <PagesOverview /> : <ClustersOverview />}
+          {tab === "pages" && <PagesOverview />}
+          {tab === "clusters" && <ClustersOverview />}
+          {tab === "editorial" && <EditorialOverview />}
         </Stack>
       </Paper>
     </Box>

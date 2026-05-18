@@ -216,7 +216,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
             const cx = (Math.min(...qxs) + Math.max(...qxs)) / 2;
             const cy = (Math.min(...qys) + Math.max(...qys)) / 2;
             return (
-              <g key={`${t.line_index}-${t.blob_id}`}>
+              <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${t.blob_id}`}>
                 <circle
                   cx={cx}
                   cy={cy}
@@ -248,7 +248,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
           }
 
           return (
-            <g key={`${t.line_index}-${t.blob_id}`}>
+            <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${t.blob_id}`}>
               <polygon
                 points={points}
                 fill={isHighlight ? "rgba(200,164,101,0.18)" : "rgba(0,0,0,0)"}

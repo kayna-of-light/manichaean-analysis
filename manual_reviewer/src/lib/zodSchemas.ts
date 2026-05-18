@@ -29,6 +29,7 @@ export const OverrideSchema = z
 export const TokenSchema = z.object({
   page: z.string(),
   line_index: z.number(),
+  v1_line_index: z.number().optional(),
   blob_id: z.number(),
   split_metadata: z.unknown().nullable().optional(),
   split_expected_base: z.string().nullable().optional(),
@@ -147,6 +148,7 @@ export type TaskInput = z.infer<typeof TaskInputSchema>;
 
 export const BaselineTokenSchema = z.object({
   blob_id: z.number(),
+  v1_line_index: z.number().optional(),
   cluster: z.string(),
   label: z.string().nullable().optional(),
   overline_mark_id: z.number().nullable().optional(),

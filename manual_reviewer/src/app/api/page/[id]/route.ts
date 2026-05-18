@@ -4,6 +4,7 @@ import {
   readV2Geometry,
   textBodyImageUrl,
 } from "@/lib/pipelineReaders";
+import { buildEditorialOverlayForPage } from "@/lib/editorial";
 import {
   mergeTokens,
   readBlobEdits,
@@ -88,6 +89,12 @@ export async function GET(
     )
     .all(pageInt);
   const unsetSet = new Set(unsetRows.map((r) => `${r.line_index}:${r.blob_id}`));
+  const editorialOverlays = await buildEditorialOverlayForPage(
+    page,
+    baseline,
+    unsetSet,
+    reassignments,
+  );
 
   const [imgW, imgH] = baseline.image_size;
   const builtLines = baseline.lines.map((ln) =>
@@ -102,6 +109,7 @@ export async function GET(
       clusterOverrides,
       unsetSet,
       reassignments,
+      editorialOverlays,
     );
     const tokensWithQuad = tokens.map((t, idx) => ({
       ...t,
@@ -225,6 +233,7 @@ function baselineTokenToToken(
   return {
     page,
     line_index,
+    v1_line_index: t.v1_line_index,
     blob_id: t.blob_id,
     cluster: t.cluster,
     label: t.label ?? null,
