@@ -4,6 +4,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 export interface ReviewToken {
   page: string;
   line_index: number;
+  v1_line_index?: number;
   blob_id: number;
   cluster: string;
   label: string | null;
@@ -25,8 +26,25 @@ export interface ReviewToken {
     label: string | null;
     diacritics: string | null;
   };
+  editorial_overlay?: {
+    label: string;
+    sentence_id: number;
+    array_id: number;
+    sentence_text: string;
+    span_position: number;
+    span_count: number;
+    cluster_array: number[];
+  };
   manual_override?: { label?: string | null } | null;
   geometric_override?: { label?: string | null } | null;
+  editorial_override?: {
+    label?: string | null;
+    marker_type?: string;
+    marker_text?: string;
+    span_position?: number;
+    span_count?: number;
+    confidence?: string;
+  } | null;
   manual_warning?: unknown;
   split_metadata?: unknown;
 }
@@ -132,6 +150,7 @@ export interface PageListItem {
   last_edited_at: string | null;
   done_lines: number;
   flagged_lines: number;
+  total_lines: number;
 }
 
 export function usePagesList() {

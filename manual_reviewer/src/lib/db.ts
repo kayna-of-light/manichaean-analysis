@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 4;
+const SCHEMA_VERSION = 5;
 
 let _db: DB | null = null;
 
@@ -128,6 +128,28 @@ function migrate(db: DB) {
     CREATE INDEX IF NOT EXISTS idx_cluster_reassign_from
       ON cluster_reassignments(from_cluster);
 
+    CREATE TABLE IF NOT EXISTS editorial_sentences (
+      id          INTEGER PRIMARY KEY AUTOINCREMENT,
+      text        TEXT NOT NULL UNIQUE,
+      active      INTEGER NOT NULL DEFAULT 1,
+      note        TEXT,
+      created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+      updated_at  TEXT NOT NULL DEFAULT (datetime('now'))
+    );
+
+    CREATE TABLE IF NOT EXISTS editorial_cluster_arrays (
+      id          INTEGER PRIMARY KEY AUTOINCREMENT,
+      sentence_id INTEGER NOT NULL,
+      name        TEXT,
+      clusters    TEXT NOT NULL,
+      active      INTEGER NOT NULL DEFAULT 1,
+      created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+      updated_at  TEXT NOT NULL DEFAULT (datetime('now')),
+      FOREIGN KEY(sentence_id) REFERENCES editorial_sentences(id) ON DELETE CASCADE
+    );
+    CREATE INDEX IF NOT EXISTS idx_editorial_arrays_sentence
+      ON editorial_cluster_arrays(sentence_id);
+
     CREATE TABLE IF NOT EXISTS tasks (
       id           INTEGER PRIMARY KEY AUTOINCREMENT,
       page         INTEGER NOT NULL,
@@ -188,6 +210,13 @@ function migrate(db: DB) {
 
   if (currentVersion < 4) {
     // cluster_reassignments is created above via CREATE IF NOT EXISTS; just bump.
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run(String(SCHEMA_VERSION));
+  }
+
+  if (currentVersion < 5) {
+    // editorial_* tables are created above via CREATE IF NOT EXISTS; just bump.
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));

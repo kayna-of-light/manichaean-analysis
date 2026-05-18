@@ -57,6 +57,40 @@ export interface TaskRow {
   resolved_at: string | null;
 }
 
+export interface EditorialSentenceRow {
+  id: number;
+  text: string;
+  active: number;
+  note: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface EditorialClusterArrayRow {
+  id: number;
+  sentence_id: number;
+  name: string | null;
+  clusters: string;
+  active: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface EditorialArrayWithSentence extends EditorialClusterArrayRow {
+  sentence_text: string;
+  sentence_active: number;
+}
+
+export interface EditorialTokenOverlay {
+  label: string;
+  sentence_id: number;
+  array_id: number;
+  sentence_text: string;
+  span_position: number;
+  span_count: number;
+  cluster_array: number[];
+}
+
 /* ----------------------------------------------------------------------------
  * Reads
  * ------------------------------------------------------------------------- */
@@ -153,6 +187,37 @@ export function readOpenTasks(page?: number): TaskRow[] {
       "SELECT * FROM tasks WHERE page = ? AND resolved = 0 ORDER BY created_at DESC",
     )
     .all(page);
+}
+
+export function readEditorialSentences(): EditorialSentenceRow[] {
+  const db = getDb();
+  return db
+    .prepare<[], EditorialSentenceRow>(
+      "SELECT * FROM editorial_sentences ORDER BY lower(text), id",
+    )
+    .all();
+}
+
+export function readEditorialClusterArrays(): EditorialClusterArrayRow[] {
+  const db = getDb();
+  return db
+    .prepare<[], EditorialClusterArrayRow>(
+      "SELECT * FROM editorial_cluster_arrays ORDER BY sentence_id, id",
+    )
+    .all();
+}
+
+export function readActiveEditorialArraysWithSentences(): EditorialArrayWithSentence[] {
+  const db = getDb();
+  return db
+    .prepare<[], EditorialArrayWithSentence>(
+      `SELECT a.*, s.text AS sentence_text, s.active AS sentence_active
+       FROM editorial_cluster_arrays a
+       JOIN editorial_sentences s ON s.id = a.sentence_id
+       WHERE a.active = 1 AND s.active = 1
+       ORDER BY s.id, a.id`,
+    )
+    .all();
 }
 
 /* ----------------------------------------------------------------------------
@@ -644,6 +709,147 @@ export function createTask(
   });
 }
 
+export function createEditorialSentence(
+  text: string,
+  active = true,
+  note: string | null = null,
+): EditorialSentenceRow {
+  const db = getDb();
+  const after = {
+    text,
+    active: active ? 1 : 0,
+    note,
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit("editorial_sentence.create", null, null, text, null, after, () => {
+    db.prepare(
+      `INSERT INTO editorial_sentences (text, active, note, created_at, updated_at)
+       VALUES (@text, @active, @note, datetime('now'), @updated_at)
+       ON CONFLICT(text) DO UPDATE SET
+         active = excluded.active,
+         note = excluded.note,
+         updated_at = excluded.updated_at`,
+    ).run(after);
+    return db
+      .prepare<[string], EditorialSentenceRow>(
+        "SELECT * FROM editorial_sentences WHERE text = ?",
+      )
+      .get(text)!;
+  });
+}
+
+export function updateEditorialSentence(
+  id: number,
+  updates: { text?: string; active?: boolean; note?: string | null },
+): EditorialSentenceRow | null {
+  const db = getDb();
+  const before = db
+    .prepare<[number], EditorialSentenceRow>(
+      "SELECT * FROM editorial_sentences WHERE id = ?",
+    )
+    .get(id);
+  if (!before) return null;
+  const after: EditorialSentenceRow = {
+    ...before,
+    text: updates.text !== undefined ? updates.text : before.text,
+    active: updates.active !== undefined ? (updates.active ? 1 : 0) : before.active,
+    note: updates.note !== undefined ? updates.note : before.note,
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit("editorial_sentence.update", null, null, String(id), before, after, () => {
+    db.prepare(
+      `UPDATE editorial_sentences
+       SET text = @text, active = @active, note = @note, updated_at = @updated_at
+       WHERE id = @id`,
+    ).run(after);
+    return after;
+  });
+}
+
+export function deleteEditorialSentence(id: number): EditorialSentenceRow | null {
+  const db = getDb();
+  const before = db
+    .prepare<[number], EditorialSentenceRow>(
+      "SELECT * FROM editorial_sentences WHERE id = ?",
+    )
+    .get(id);
+  if (!before) return null;
+  return withAudit("editorial_sentence.delete", null, null, String(id), before, null, () => {
+    db.prepare("DELETE FROM editorial_sentences WHERE id = ?").run(id);
+    return before;
+  });
+}
+
+export function createEditorialClusterArray(
+  sentenceId: number,
+  clusters: number[],
+  name: string | null = null,
+  active = true,
+): EditorialClusterArrayRow {
+  const db = getDb();
+  const after = {
+    sentence_id: sentenceId,
+    name,
+    clusters: JSON.stringify(clusters),
+    active: active ? 1 : 0,
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit("editorial_array.create", null, null, String(sentenceId), null, after, () => {
+    const info = db.prepare(
+      `INSERT INTO editorial_cluster_arrays
+       (sentence_id, name, clusters, active, created_at, updated_at)
+       VALUES (@sentence_id, @name, @clusters, @active, datetime('now'), @updated_at)`,
+    ).run(after);
+    return db
+      .prepare<[number], EditorialClusterArrayRow>(
+        "SELECT * FROM editorial_cluster_arrays WHERE id = ?",
+      )
+      .get(Number(info.lastInsertRowid))!;
+  });
+}
+
+export function updateEditorialClusterArray(
+  id: number,
+  updates: { clusters?: number[]; name?: string | null; active?: boolean },
+): EditorialClusterArrayRow | null {
+  const db = getDb();
+  const before = db
+    .prepare<[number], EditorialClusterArrayRow>(
+      "SELECT * FROM editorial_cluster_arrays WHERE id = ?",
+    )
+    .get(id);
+  if (!before) return null;
+  const after: EditorialClusterArrayRow = {
+    ...before,
+    name: updates.name !== undefined ? updates.name : before.name,
+    clusters: updates.clusters !== undefined ? JSON.stringify(updates.clusters) : before.clusters,
+    active: updates.active !== undefined ? (updates.active ? 1 : 0) : before.active,
+    updated_at: new Date().toISOString(),
+  };
+  return withAudit("editorial_array.update", null, null, String(id), before, after, () => {
+    db.prepare(
+      `UPDATE editorial_cluster_arrays
+       SET name = @name, clusters = @clusters, active = @active, updated_at = @updated_at
+       WHERE id = @id`,
+    ).run(after);
+    return after;
+  });
+}
+
+export function deleteEditorialClusterArray(id: number): EditorialClusterArrayRow | null {
+  const db = getDb();
+  const before = db
+    .prepare<[number], EditorialClusterArrayRow>(
+      "SELECT * FROM editorial_cluster_arrays WHERE id = ?",
+    )
+    .get(id);
+  if (!before) return null;
+  return withAudit("editorial_array.delete", null, null, String(id), before, null, () => {
+    db.prepare("DELETE FROM editorial_cluster_arrays WHERE id = ?").run(id);
+    return before;
+  });
+}
+
 export function resolveTask(taskId: number) {
   const db = getDb();
   const before = db
@@ -668,6 +874,7 @@ export interface EffectiveToken extends Token {
   deleted: boolean;
   user_edit?: BlobEditRow;
   cluster_override?: ClusterOverrideRow;
+  editorial_overlay?: EditorialTokenOverlay;
 }
 
 export function mergeTokens(
@@ -677,6 +884,7 @@ export function mergeTokens(
   clusterOverrides: Map<number, ClusterOverrideRow>,
   unsetSet: Set<string>,
   reassignments?: Map<string, ClusterReassignmentRow>,
+  editorialOverlays?: Map<string, EditorialTokenOverlay>,
 ): EffectiveToken[] {
   return tokens.map((t) => {
     const key = `${t.line_index}:${t.blob_id}`;
@@ -689,19 +897,21 @@ export function mergeTokens(
     const co = effectiveClusterInt != null
       ? clusterOverrides.get(effectiveClusterInt)
       : undefined;
+    const eo = editorialOverlays?.get(key);
     const deleted = Boolean(edit?.deleted);
     const manuallyCleared = Boolean(edit && !deleted && edit.label === "");
     const unset = unsetSet.has(key) || manuallyCleared;
-    // Precedence: deleted > user edit > cluster override > geometric > manual_override > pipeline label
+    // Precedence: deleted > user edit > editorial overlay > cluster override > geometric > manual_override > pipeline label
     const effective = deleted
       ? null
       : (edit?.label ??
+        eo?.label ??
         (co && !unset ? co.label : null) ??
         t.geometric_override?.label ??
         t.manual_override?.label ??
         t.label ??
         null);
-    const userModified = Boolean(edit) || Boolean(co) || Boolean(reassign);
+    const userModified = Boolean(edit) || Boolean(eo) || Boolean(co) || Boolean(reassign);
     // Overline: if user has a blob_edit row, its overline_mark_id wins (even if null = cleared)
     const overlineMarkId = edit
       ? (edit.overline_mark_id ?? null)
@@ -719,6 +929,7 @@ export function mergeTokens(
       deleted,
       user_edit: edit,
       cluster_override: co,
+      editorial_overlay: eo,
     };
   });
 }

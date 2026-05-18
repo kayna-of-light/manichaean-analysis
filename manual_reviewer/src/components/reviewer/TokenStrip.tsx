@@ -86,14 +86,15 @@ function tokenDisplay(t: ReviewToken, olPos: OverlinePos): string {
 
 function tokenStateColor(t: ReviewToken): string | undefined {
   if (t.unset) return "rgba(255,99,71,0.35)";
+  if (t.editorial_overlay) return "rgba(185,95,0,0.22)";
   if (t.user_modified) return "rgba(200,164,101,0.35)";
   if (t.review) return "rgba(255,200,90,0.30)";
   return undefined;
 }
 
 type StripItem =
-  | { kind: "token"; key: string; x: number; left: number; right: number; overlineMarkId: number | null; token: ReviewToken }
-  | { kind: "new"; key: string; x: number; left: number; right: number; overlineMarkId: number | null; nb: NewBboxStripItem };
+  | { kind: "token"; key: string; x: number; left: number; right: number; overlineMarkId: number | null; v1Line: number; token: ReviewToken }
+  | { kind: "new"; key: string; x: number; left: number; right: number; overlineMarkId: number | null; v1Line: number; nb: NewBboxStripItem };
 
 function tokenBounds(t: ReviewToken): { x: number; left: number; right: number } {
   const q = t.img_quad;
@@ -120,8 +121,9 @@ function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | 
       const bounds = tokenBounds(token);
       return {
         kind: "token" as const,
-        key: `t:${token.blob_id}`,
+        key: `t:${token.line_index}:${token.v1_line_index ?? 0}:${token.blob_id}`,
         overlineMarkId: token.overline_mark_id ?? null,
+        v1Line: token.v1_line_index ?? 0,
         token,
         ...bounds,
       };
@@ -133,9 +135,10 @@ function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | 
       left: nb.x0,
       right: nb.x1,
       overlineMarkId: nb.overline_mark_id ?? null,
+      v1Line: 0,
       nb,
     })),
-  ].sort((a, b) => a.x - b.x);
+  ].sort((a, b) => a.v1Line !== b.v1Line ? a.v1Line - b.v1Line : a.x - b.x);
 }
 
 export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Props) {
@@ -186,20 +189,17 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
           whiteSpace: "nowrap",
         }}
       >
-        {line.tokens.map((t) => {
-          if (t.deleted) return null;
-          return (
-          <TokenChar
-            key={`${t.line_index}-${t.blob_id}`}
-            t={t}
-            olPos={olPosMap.get(`t:${t.blob_id}`) ?? null}
-            isSelected={
-              selectedLine === line.line_index && selectedBlobId === t.blob_id
-            }
+        {stripItems.map((item) => (
+          <StripItemChar
+            key={item.key}
+            item={item}
+            olPos={olPosMap.get(item.key) ?? null}
+            selectedLine={selectedLine}
+            selectedBlobId={selectedBlobId}
             onTokenClick={onTokenClick}
+            onNewBboxClick={onNewBboxClick}
           />
-          );
-        })}
+        ))}
       </Box>
     );
   }
@@ -260,19 +260,15 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
           }}
         />
       ))}
-      {line.tokens.map((t) => {
-        if (t.deleted) return null;
-        const q = t.img_quad;
+      {stripItems.map((item) => {
         const cx =
-          q && q.length > 0
-            ? q.reduce((s, p) => s + p[0], 0) / q.length
-            : (x0 + x1) / 2;
+          item.kind === "token" && item.token.img_quad && item.token.img_quad.length > 0
+            ? item.token.img_quad.reduce((s, p) => s + p[0], 0) / item.token.img_quad.length
+            : item.x;
         const leftPct = ((cx - x0) / span) * 100;
-        const isSelected =
-          selectedLine === line.line_index && selectedBlobId === t.blob_id;
         return (
           <Box
-            key={`${t.line_index}-${t.blob_id}`}
+            key={item.key}
             sx={{
               position: "absolute",
               left: `${leftPct}%`,
@@ -280,55 +276,68 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
               transform: "translateX(-50%)",
             }}
           >
-            <TokenChar
-              t={t}
-              olPos={olPosMap.get(`t:${t.blob_id}`) ?? null}
-              isSelected={isSelected}
+            <StripItemChar
+              item={item}
+              olPos={olPosMap.get(item.key) ?? null}
+              selectedLine={selectedLine}
+              selectedBlobId={selectedBlobId}
               onTokenClick={onTokenClick}
+              onNewBboxClick={onNewBboxClick}
             />
           </Box>
         );
       })}
-      {newBboxes?.map((nb) => {
-        const cx = (nb.x0 + nb.x1) / 2;
-        const leftPct = ((cx - x0) / span) * 100;
-        const isSelected = selectedBlobId === nb.id;
-        const olPos = olPosMap.get(`n:${nb.id}`) ?? null;
-        const display = newBboxDisplay(nb.label, olPos);
-        return (
-          <Box
-            key={`nb-${nb.id}`}
-            sx={{
-              position: "absolute",
-              left: `${leftPct}%`,
-              top: 0,
-              transform: "translateX(-50%)",
-            }}
-          >
-            <Tooltip title={`new bbox ${nb.id.slice(0, 8)}`} placement="top" arrow>
-              <span
-                className="coptic"
-                onClick={(e) =>
-                  onNewBboxClick?.(nb, { clientX: e.clientX, clientY: e.clientY })
-                }
-                style={{
-                  cursor: "pointer",
-                  padding: "0 1px",
-                  borderRadius: 2,
-                  backgroundColor: "rgba(80,200,120,0.25)",
-                  outline: isSelected
-                    ? "1.5px solid rgba(80,200,120,0.9)"
-                    : undefined,
-                  color: nb.label ? "inherit" : "var(--color-text-muted, #999)",
-                }}
-              >
-                {display}
-              </span>
-            </Tooltip>
-          </Box>
-        );
-      })}
     </Box>
+  );
+}
+
+interface StripItemCharProps {
+  item: StripItem;
+  olPos: OverlinePos;
+  selectedLine: number | null;
+  selectedBlobId: number | string | null;
+  onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
+  onNewBboxClick?: (nb: NewBboxStripItem, evt: { clientX: number; clientY: number }) => void;
+}
+
+function StripItemChar({
+  item,
+  olPos,
+  selectedLine,
+  selectedBlobId,
+  onTokenClick,
+  onNewBboxClick,
+}: StripItemCharProps) {
+  if (item.kind === "token") {
+    return (
+      <TokenChar
+        t={item.token}
+        olPos={olPos}
+        isSelected={selectedLine === item.token.line_index && selectedBlobId === item.token.blob_id}
+        onTokenClick={onTokenClick}
+      />
+    );
+  }
+
+  const display = newBboxDisplay(item.nb.label, olPos);
+  const isSelected = selectedBlobId === item.nb.id;
+  return (
+    <Tooltip title={`new bbox ${item.nb.id.slice(0, 8)}`} placement="top" arrow>
+      <span
+        className="coptic"
+        onClick={(e) => onNewBboxClick?.(item.nb, { clientX: e.clientX, clientY: e.clientY })}
+        style={{
+          cursor: "pointer",
+          padding: "0 1px",
+          borderRadius: 2,
+          backgroundColor: "rgba(80,200,120,0.25)",
+          outline: isSelected ? "1.5px solid rgba(80,200,120,0.9)" : undefined,
+          color: item.nb.label ? "inherit" : "var(--color-text-muted, #999)",
+        }}
+      >
+        {display}
+      </span>
+    </Tooltip>
   );
 }
 
@@ -354,6 +363,9 @@ function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
             blob {t.blob_id} · cluster {t.cluster}
           </div>
           <div>label: {t.effective_label ?? "—"}</div>
+          {t.editorial_overlay && (
+            <div>editorial: {t.editorial_overlay.sentence_text}</div>
+          )}
           {t.candidates.length > 0 && (
             <div>candidates: {t.candidates.slice(0, 6).join(" ")}</div>
           )}
