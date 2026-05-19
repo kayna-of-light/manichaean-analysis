@@ -12,12 +12,5 @@
     "**/manual_reviewer/node_modules/**": true,
     "**/output/**": true,
     "**/temp/**": true
-  },
-  "files.exclude": {
-    "cache": true,
-    "manual_reviewer/.next": true,
-    "manual_reviewer/node_modules": true,
-    "output": true,
-    "temp": true
   }
 }

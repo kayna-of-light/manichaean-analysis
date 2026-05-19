@@ -216,6 +216,9 @@ python scripts/scrape_gnosis.py
 | [kephalaia-editorial-fingerprint-mapping](skills/kephalaia-editorial-fingerprint-mapping/SKILL.md) | Manual content-first mapping of German editorial sentences to cluster-array fingerprints in `temp/editorial_sentences.json`; use for Manual Reviewer editorial overlay work. |
 | [kephalaia-page-audit](skills/kephalaia-page-audit/SKILL.md) | Per-page visual audit of `output/projects/kephalaia_v2/pages/p_NNN.json` against manuscript image and Gardner translation. Use when working through `temp/page_audit_chores.md`. |
 | [kephalaia-ocr-correction](skills/kephalaia-ocr-correction/SKILL.md) | Manuscript-first OCR correction workflow for `output/projects/kephalaia_ocr`: review sheets, mixed shape clusters, subcluster labels, lacuna dots, connected Coptic blobs, rebuilds, and verification. |
+| [manual-reviewer-ui-component](skills/manual-reviewer-ui-component/SKILL.md) | Build UI components for the Manual Reviewer: MUI 9 + Tailwind 4 glass morphism theme, design tokens, dark mode, component composition. |
+| [manual-reviewer-api-route](skills/manual-reviewer-api-route/SKILL.md) | Add Next.js API route handlers: route patterns, Zod validation, SQLite repo access, dynamic params, error handling. |
+| [manual-reviewer-feature](skills/manual-reviewer-feature/SKILL.md) | Full vertical slice: SQLite migration → repo functions → Zod schema → API route → React Query hook → Zustand store → UI component. |
 
 ---
 
