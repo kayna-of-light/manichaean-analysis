@@ -5,6 +5,7 @@ import {
   Button,
   Chip,
   CircularProgress,
+  LinearProgress,
   Stack,
   Typography,
 } from "@mui/material";
@@ -29,48 +30,78 @@ export function PagesOverview() {
             gap: 1,
           }}
         >
-          {data.pages.map((p) => (
-            <Button
-              key={p.page}
-              component={Link}
-              href={`/review/${p.page}`}
-              variant="outlined"
-              sx={{
-                flexDirection: "column",
-                py: 1.5,
-                borderColor:
-                  p.flagged_lines > 0
-                    ? "rgba(220,120,120,0.6)"
-                    : "var(--color-glass-border)",
-              }}
-            >
-              <Typography
-                sx={{ fontVariantNumeric: "tabular-nums", fontSize: 18 }}
+          {data.pages.map((p) => {
+            const checked = p.done_lines + p.flagged_lines;
+            const total = p.total_lines;
+            const progress = total > 0 ? (checked / total) * 100 : 0;
+            const allDone = total > 0 && checked >= total;
+            return (
+              <Button
+                key={p.page}
+                component={Link}
+                href={`/review/${p.page}`}
+                variant="outlined"
+                sx={{
+                  flexDirection: "column",
+                  py: 1.5,
+                  borderColor: allDone
+                    ? "rgba(100,200,100,0.6)"
+                    : p.flagged_lines > 0
+                      ? "rgba(220,120,120,0.6)"
+                      : "var(--color-glass-border)",
+                }}
               >
-                p{p.page}
-              </Typography>
-              <Stack direction="row" spacing={0.5} sx={{ mt: 0.5 }}>
-                {p.done_lines > 0 && (
-                  <Chip
-                    size="small"
-                    label={`${p.done_lines}✓`}
-                    sx={{ height: 18, fontSize: 10 }}
-                  />
-                )}
-                {p.flagged_lines > 0 && (
-                  <Chip
-                    size="small"
-                    label={p.flagged_lines}
+                <Typography
+                  sx={{ fontVariantNumeric: "tabular-nums", fontSize: 18 }}
+                >
+                  p{p.page}
+                </Typography>
+                {total > 0 && (
+                  <LinearProgress
+                    variant="determinate"
+                    value={progress}
                     sx={{
-                      height: 18,
-                      fontSize: 10,
-                      bgcolor: "rgba(220,120,120,0.2)",
+                      width: "100%",
+                      mt: 0.75,
+                      height: 4,
+                      borderRadius: 2,
+                      backgroundColor: "rgba(255,255,255,0.1)",
+                      "& .MuiLinearProgress-bar": {
+                        backgroundColor: allDone
+                          ? "rgba(100,200,100,0.8)"
+                          : "rgba(140,180,255,0.7)",
+                      },
                     }}
                   />
                 )}
-              </Stack>
-            </Button>
-          ))}
+                <Stack direction="row" spacing={0.5} sx={{ mt: 0.5 }}>
+                  {p.done_lines > 0 && (
+                    <Chip
+                      size="small"
+                      label={`${p.done_lines}✓`}
+                      sx={{ height: 18, fontSize: 10 }}
+                    />
+                  )}
+                  {p.flagged_lines > 0 && (
+                    <Chip
+                      size="small"
+                      label={p.flagged_lines}
+                      sx={{
+                        height: 18,
+                        fontSize: 10,
+                        bgcolor: "rgba(220,120,120,0.2)",
+                      }}
+                    />
+                  )}
+                  {total > 0 && checked > 0 && (
+                    <Typography sx={{ fontSize: 9, opacity: 0.6, alignSelf: "center" }}>
+                      {checked}/{total}
+                    </Typography>
+                  )}
+                </Stack>
+              </Button>
+            );
+          })}
         </Box>
       )}
     </Stack>

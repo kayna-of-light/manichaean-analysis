@@ -31,11 +31,68 @@ from __future__ import annotations
 import argparse
 import importlib.util
 import json
+import re
 import shutil
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
+
+# German editorial marker patterns (from detect_editorial_markers.py)
+_GERMAN_EDITORIAL_RE = re.compile(
+    r"\b(?:leer|abgerieben|verwischt|zerst[öo]rt|unleserlich|undeutlich|"
+    r"unlesbar|Spuren|nicht\s+zu\s+lesen|nicht\s+gelesen|nicht\s+lesbar|"
+    r"v[öo]llig|\xdcberschrift)\b",
+    re.IGNORECASE,
+)
+# Coptic Unicode block (U+2C80–U+2CFF)
+_COPTIC_RE = re.compile(r'[\u2C80-\u2CFF]')
+# Content that's NOT structural (dots, brackets, pipes, spaces)
+_SUBSTANTIVE_CONTENT_RE = re.compile(r'[^\s.|,\[\]\(\){}]')
+
+
+def _is_pure_editorial_line(llm_text: str) -> bool:
+    """True if llm_text is purely German editorial (markers + dots, no Coptic).
+
+    Also returns True for blank lines where the LLM found no readable content
+    (just dots/brackets/pipes) — these blobs shouldn't display as Coptic.
+    """
+    if not llm_text:
+        return False
+    # If the line contains Coptic characters, it's a mixed/Coptic line
+    if _COPTIC_RE.search(llm_text):
+        return False
+    # If it has German editorial markers → pure editorial
+    if _GERMAN_EDITORIAL_RE.search(llm_text):
+        return True
+    # If there's no substantive content at all (just dots, brackets, pipes, spaces)
+    # → blank editorial line
+    if not _SUBSTANTIVE_CONTENT_RE.search(llm_text):
+        return True
+    return False
+
+
+def _editorial_marker_chars(text: str | None) -> list[str]:
+    if not text:
+        return []
+    return re.findall(r"[A-Za-zÄÖÜäöüß]", str(text))
+
+
+def _has_exact_editorial_fingerprint(editorial_override: dict[str, Any]) -> bool:
+    """True only when one marker character maps to one blob cluster.
+
+    Editorial overrides must be fingerprints, not line-level text spread across
+    whatever blobs happened to be unclaimed. Spaces in the German marker do not
+    count as characters.
+    """
+    marker_chars = _editorial_marker_chars(editorial_override.get("marker_text") or editorial_override.get("marker_type"))
+    blob_ids = editorial_override.get("blob_ids") or []
+    display_chars = editorial_override.get("display_chars") or []
+    if not marker_chars or len(blob_ids) != len(marker_chars):
+        return False
+    if display_chars and display_chars != marker_chars:
+        return False
+    return True
 
 REPO = Path(__file__).resolve().parents[3]
 V1_OCR = REPO / "output" / "projects" / "kephalaia_ocr"
@@ -259,8 +316,107 @@ def _bbox_frame_size(bbox: dict[str, Any]) -> tuple[int, int]:
     return (int(round(float(bbox["x1"]) - float(bbox["x0"]))), int(round(float(bbox["y1"]) - float(bbox["y0"]))))
 
 
-def load_v1_body_frame(page: str, image_size: tuple[int, int]) -> BodyFrame | None:
-    candidates: list[tuple[int, BodyFrame]] = []
+def find_crop_origin_by_template_match(
+    page: str,
+    image_size: tuple[int, int],
+    blobs_data: list[dict[str, Any]],
+    hint_x: int = 400,
+    hint_y: int = 250,
+) -> tuple[float, float] | None:
+    """Find (x0, y0) where the v1 image frame sits in the full page using ink matching.
+
+    The v1 img_quad coordinates are in a frame that is a 1:1 crop of the full page.
+    This function finds the crop origin by matching blob center positions against
+    ink pixels in the full-page binarized image.
+    """
+    img_path = V2_DESKEW.IMAGES_DIR / f"keph_p{page}.jpg"
+    if not img_path.exists():
+        return None
+
+    # Collect blob centers from raw split data
+    centers: list[tuple[float, float]] = []
+    for ln in blobs_data:
+        for b in ln.get("blobs", []):
+            quad = b.get("img_quad")
+            if quad and len(quad) == 4 and all(len(p) == 2 for p in quad):
+                cx = sum(p[0] for p in quad) / 4.0
+                cy = sum(p[1] for p in quad) / 4.0
+                centers.append((cx, cy))
+
+    if len(centers) < 20:
+        return None
+
+    # Subsample for speed (use every 5th center)
+    sampled = centers[::5]
+
+    # Load and binarize full page
+    full = V2_DESKEW.cv2.imread(str(img_path), V2_DESKEW.cv2.IMREAD_GRAYSCALE)
+    if full is None:
+        return None
+    full_h, full_w = full.shape
+    _, full_bin = V2_DESKEW.cv2.threshold(full, 0, 255, V2_DESKEW.cv2.THRESH_BINARY_INV | V2_DESKEW.cv2.THRESH_OTSU)
+
+    img_w, img_h = image_size
+    max_x0 = full_w - img_w
+    max_y0 = full_h - img_h
+
+    # Coarse search: step=8, range ±120 around hint
+    best_score = -1
+    best_x0, best_y0 = hint_x, hint_y
+    for dy in range(-120, 121, 8):
+        for dx in range(-120, 121, 8):
+            x0 = hint_x + dx
+            y0 = hint_y + dy
+            if x0 < 0 or y0 < 0 or x0 > max_x0 or y0 > max_y0:
+                continue
+            hits = 0
+            for cx, cy in sampled:
+                px = int(round(x0 + cx))
+                py = int(round(y0 + cy))
+                if 0 <= px < full_w and 0 <= py < full_h and full_bin[py, px] > 0:
+                    hits += 1
+            if hits > best_score:
+                best_score = hits
+                best_x0 = x0
+                best_y0 = y0
+
+    # Fine search: step=1, range ±10 around coarse best
+    coarse_x, coarse_y = best_x0, best_y0
+    for dy in range(-10, 11):
+        for dx in range(-10, 11):
+            x0 = coarse_x + dx
+            y0 = coarse_y + dy
+            if x0 < 0 or y0 < 0 or x0 > max_x0 or y0 > max_y0:
+                continue
+            hits = 0
+            for cx, cy in sampled:
+                px = int(round(x0 + cx))
+                py = int(round(y0 + cy))
+                if 0 <= px < full_w and 0 <= py < full_h and full_bin[py, px] > 0:
+                    hits += 1
+            if hits > best_score:
+                best_score = hits
+                best_x0 = x0
+                best_y0 = y0
+
+    accuracy = best_score / len(sampled) if sampled else 0
+    if accuracy < 0.3:
+        return None  # Not confident enough
+    return (float(best_x0), float(best_y0))
+
+
+def load_v1_body_frame(page: str, image_size: tuple[int, int], blobs_data: list[dict[str, Any]] | None = None) -> BodyFrame | None:
+    """Load or compute the body frame origin for the v1 image coordinate system.
+
+    The v1 img_quad coordinates are in a frame that is a 1:1 crop of the full page.
+    We need the (x0, y0) origin of that crop. Strategy:
+    1. Check body_bbox files for an exact-size match (score=0) — use directly
+    2. Otherwise, template-match blob centers against full-page ink to find origin
+    3. Fall back to best-available bbox with a warning
+    """
+    img_w, img_h = image_size
+
+    # Step 1: look for an exact-match body_bbox (size == image_size)
     for root in V1_BODY_FRAME_DIRS:
         bbox_path = root / f"keph_p{page}_body_bbox.json"
         if not bbox_path.exists():
@@ -270,30 +426,61 @@ def load_v1_body_frame(page: str, image_size: tuple[int, int]) -> BodyFrame | No
         if not all(key in bbox for key in ("x0", "y0", "x1", "y1")):
             continue
         bbox_size = _bbox_frame_size(bbox)
-        score = abs(bbox_size[0] - image_size[0]) + abs(bbox_size[1] - image_size[1])
-        img_path = root / f"keph_p{page}_body.jpg"
-        if img_path.exists():
-            img = V2_DESKEW.cv2.imread(str(img_path))
-            if img is not None:
-                actual_size = (int(img.shape[1]), int(img.shape[0]))
-                score = min(score, abs(actual_size[0] - image_size[0]) + abs(actual_size[1] - image_size[1]))
-        frame = BodyFrame(
-            x0=float(bbox["x0"]),
-            y0=float(bbox["y0"]),
-            x1=float(bbox["x1"]),
-            y1=float(bbox["y1"]),
-            image_size=image_size,
-            source=relative(bbox_path),
-        )
-        if score == 0:
-            return frame
-        candidates.append((score, frame))
-    if not candidates:
-        return None
-    candidates.sort(key=lambda item: item[0])
-    score, frame = candidates[0]
-    frame.source = f"{frame.source} (nearest frame; size delta {score}px)"
-    return frame
+        if bbox_size == image_size:
+            # Exact match: this bbox describes the correct crop origin
+            return BodyFrame(
+                x0=float(bbox["x0"]),
+                y0=float(bbox["y0"]),
+                x1=float(bbox["x0"]) + float(img_w),
+                y1=float(bbox["y0"]) + float(img_h),
+                image_size=image_size,
+                source=relative(bbox_path),
+            )
+
+    # Step 2: template-match to find correct origin
+    if blobs_data is not None:
+        # Get a hint from any available bbox
+        hint_x, hint_y = 400, 250
+        for root in V1_BODY_FRAME_DIRS:
+            bbox_path = root / f"keph_p{page}_body_bbox.json"
+            if bbox_path.exists():
+                data = json.loads(bbox_path.read_text(encoding="utf-8"))
+                bbox = data.get("bbox") or {}
+                if "x0" in bbox and "y0" in bbox:
+                    hint_x = int(float(bbox["x0"]))
+                    hint_y = int(float(bbox["y0"]))
+                    break
+
+        origin = find_crop_origin_by_template_match(page, image_size, blobs_data, hint_x, hint_y)
+        if origin is not None:
+            x0, y0 = origin
+            return BodyFrame(
+                x0=x0,
+                y0=y0,
+                x1=x0 + float(img_w),
+                y1=y0 + float(img_h),
+                image_size=image_size,
+                source=f"template_match (page {page})",
+            )
+
+    # Step 3: fallback — use nearest bbox but force scale=1
+    for root in V1_BODY_FRAME_DIRS:
+        bbox_path = root / f"keph_p{page}_body_bbox.json"
+        if not bbox_path.exists():
+            continue
+        data = json.loads(bbox_path.read_text(encoding="utf-8"))
+        bbox = data.get("bbox") or {}
+        if "x0" in bbox and "y0" in bbox:
+            return BodyFrame(
+                x0=float(bbox["x0"]),
+                y0=float(bbox["y0"]),
+                x1=float(bbox["x0"]) + float(img_w),
+                y1=float(bbox["y0"]) + float(img_h),
+                image_size=image_size,
+                source=f"{relative(bbox_path)} (fallback, scale=1 forced)",
+            )
+
+    return None
 
 
 def load_v1_blobs(page: str) -> V1PageGeometry | None:
@@ -303,9 +490,11 @@ def load_v1_blobs(page: str) -> V1PageGeometry | None:
         return None
     data = json.loads(path.read_text(encoding="utf-8"))
     img_size = tuple(data.get("image_size") or (0, 0))
-    body_frame = load_v1_body_frame(page, img_size)  # type: ignore[arg-type]
+    body_frame = load_v1_body_frame(page, img_size, blobs_data=data.get("lines"))  # type: ignore[arg-type]
+    # body_frame is no longer required for the affine transform, but we store
+    # it for diagnostics if available.
     if body_frame is None:
-        return None
+        body_frame = BodyFrame(x0=0, y0=0, x1=float(img_size[0]), y1=float(img_size[1]), image_size=img_size, source="synthetic_identity")  # type: ignore[arg-type]
     clean_by_index: dict[int, dict[str, Any]] = {}
     clean_line_step: float | None = None
     clean_path = V1_CLEAN_DIR / f"kraken_p{page}_body_clean.json"
@@ -548,6 +737,154 @@ def transform_img_quad(v1_page: V1PageGeometry, v2_frame: V2FrameTransform, quad
     return out
 
 
+def _v1_ink_width(v1_line: V1Line) -> float:
+    """Compute ink width from warped_bbox (known coordinate system)."""
+    xs: list[float] = []
+    for b in v1_line.blobs:
+        xs.extend([float(b.warped_bbox[0]), float(b.warped_bbox[2])])
+    return max(xs) - min(xs) if xs else 0.0
+
+
+def _v1_img_y_center(v1_line: V1Line) -> float | None:
+    """Compute y-center from img_quad (for ordering/matching only)."""
+    ys: list[float] = []
+    for b in v1_line.blobs:
+        for pt in b.img_quad:
+            ys.append(pt[1])
+    return (min(ys) + max(ys)) / 2.0 if ys else None
+
+
+def match_rows_by_width(
+    v1_lines_by_line: dict[int, V1Line],
+    v1_indices: list[int],
+    v2_rows: list["V2Row"],
+) -> list[tuple[int, "V2Row"]]:
+    """Match v1 lines to v2 rows using ink width + y-proximity.
+
+    Algorithm:
+    1. Sort v1 lines by y-position (top-to-bottom, same as v2)
+    2. Pre-filter obvious noise: v1 lines far narrower than the page norm
+       (mirrors v2's min_row_x_span filter)
+    3. Estimate per-page width scale from median full-width lines
+    4. Greedy forward matching using combined width + y-ordinal score
+
+    This handles pages where v1 has extra lines (fragments, headers, footers)
+    because noise is pre-filtered and width incompatibility skips the rest.
+    """
+    import statistics
+
+    n_v2 = len(v2_rows)
+    if not v1_indices or n_v2 == 0:
+        return []
+
+    # Build v1 data sorted by y-position
+    v1_data: list[tuple[int, float, float]] = []  # (line_idx, y_center, ink_width)
+    for idx in v1_indices:
+        v1_line = v1_lines_by_line[idx]
+        y = _v1_img_y_center(v1_line)
+        if y is None:
+            continue
+        w = _v1_ink_width(v1_line)
+        v1_data.append((idx, y, w))
+    v1_data.sort(key=lambda x: x[1])
+
+    if not v1_data:
+        return []
+
+    # --- PRE-FILTER: remove obvious noise lines ---
+    # Mirrors v2's min_row_x_span (70px) and min_row_components (3).
+    # Also remove lines whose width is < 15% of the page's median full-width,
+    # as these are scattered marks that v2 never detects as rows.
+    v1_ws_all = [w for _, _, w in v1_data]
+    v1_max_w = max(v1_ws_all) if v1_ws_all else 1.0
+    v1_full_ws = [w for w in v1_ws_all if w > v1_max_w * 0.5]
+    median_full_w = statistics.median(v1_full_ws) if v1_full_ws else v1_max_w
+
+    # Threshold: at least 15% of median full-width, and at least 70px (v2's absolute min)
+    noise_threshold = max(median_full_w * 0.15, 70.0)
+
+    # Also compute the minimum v2 width to avoid over-filtering
+    v2_widths = [r.x_span[1] - r.x_span[0] for r in v2_rows]
+    min_v2_w = min(v2_widths) if v2_widths else 0.0
+
+    # Keep lines that are either above the noise threshold, or at least as wide
+    # as the narrowest v2 row (so we don't filter out real short rows)
+    v1_filtered: list[tuple[int, float, float]] = []
+    for idx, y, w in v1_data:
+        v1_line = v1_lines_by_line[idx]
+        n_blobs = len(v1_line.blobs)
+        # Keep if: width above noise threshold, OR width compatible with a v2 row,
+        # OR has many blobs (real text line, just narrow)
+        if w >= noise_threshold or w >= min_v2_w * 0.5 or n_blobs >= 10:
+            v1_filtered.append((idx, y, w))
+
+    v1_data = v1_filtered
+    if not v1_data:
+        return []
+
+    # If v1 count <= v2 count after filtering, ordinal match
+    if len(v1_data) <= n_v2:
+        return [(v1_data[k][0], v2_rows[k]) for k in range(min(len(v1_data), n_v2))]
+
+    # Estimate width scale: median of full-width lines (>50% of max)
+    v1_ws = [w for _, _, w in v1_data]
+    v1_max = max(v1_ws) if v1_ws else 1.0
+    v2_max = max(v2_widths) if v2_widths else 1.0
+    v1_full = [w for w in v1_ws if w > v1_max * 0.5]
+    v2_full = [w for w in v2_widths if w > v2_max * 0.5]
+    if v1_full and v2_full:
+        scale = statistics.median(v2_full) / statistics.median(v1_full)
+    else:
+        scale = 1.0
+
+    # Greedy forward matching using width similarity + y-ordinal proximity
+    v1_cursor = 0
+    aligned: list[tuple[int, "V2Row"]] = []
+
+    for j in range(n_v2):
+        v2_w = v2_widths[j]
+        # Expected v1 ordinal position for this v2 row
+        expected_v1_frac = j / max(n_v2 - 1, 1)
+
+        # Look-ahead window
+        remaining_v2 = n_v2 - j
+        remaining_v1 = len(v1_data) - v1_cursor
+        max_look = v1_cursor + (remaining_v1 - remaining_v2) + 1
+
+        best_i = -1
+        best_score = float("inf")
+
+        for i in range(v1_cursor, min(max_look, len(v1_data))):
+            v1_w_scaled = v1_data[i][2] * scale
+            # Width difference (0 = perfect match, 1 = completely different)
+            w_max = max(v1_w_scaled, v2_w, 1.0)
+            w_diff = abs(v1_w_scaled - v2_w) / w_max
+
+            # Y-ordinal proximity (how far is this v1 line from its expected position)
+            v1_frac = i / max(len(v1_data) - 1, 1)
+            y_diff = abs(v1_frac - expected_v1_frac)
+
+            # Combined score: width is primary (weight 1.0), y-ordinal is tiebreaker (weight 0.3)
+            score = w_diff + 0.3 * y_diff
+
+            if score < best_score:
+                best_score = score
+                best_i = i
+
+        if best_i >= 0 and best_score < 0.7:
+            aligned.append((v1_data[best_i][0], v2_rows[j]))
+            v1_cursor = best_i + 1
+        else:
+            # No good match found - skip this v2 row
+            pass
+
+    return aligned
+
+
+
+
+
+
 def quad_axis_aligned(quad: list[list[float]]) -> list[float]:
     xs = [p[0] for p in quad]
     ys = [p[1] for p in quad]
@@ -561,151 +898,250 @@ def transpose_page(
 ) -> dict[str, Any] | None:
     v1_load = load_v1_blobs(page)
     v2_load = load_v2_rows(page)
-    v2_frame = build_v2_frame_transform(page)
     if v1_load is None:
         return {"page": page, "status": "missing_v1_geometry"}
     if v2_load is None:
         return {"page": page, "status": "missing_v2_geometry"}
-    if v2_frame is None:
-        return {"page": page, "status": "missing_v2_frame_transform"}
     v1_lines_by_line = v1_load.lines_by_line
     v2_rows, v2_img_size = v2_load
 
-    sequence_rows = sequences_by_page.get(page) or []
-    # Build {line_index: units[]} from the v1 composite witness. This is the
-    # same source used by the review sheet: attached marks are already folded
-    # into their base unit, and standalone marks remain as their own units.
-    v1_tokens_by_line: dict[int, list[dict[str, Any]]] = {}
-    for rec in sequence_rows:
-        v1_tokens_by_line[int(rec["line_index"])] = rec.get("units") or rec.get("tokens", [])
+    # Build the full geometric transform: v1 bodycrop → full page → v2 text_body.
+    # This gives pixel-accurate placement without heuristic matching.
+    v2_frame = build_v2_frame_transform(page)
+    if v2_frame is None:
+        return {"page": page, "status": "missing_v2_frame_transform"}
 
-    # Align by ordinal: take v1 line indices that have BOTH tokens and blobs.
+    sequence_rows = sequences_by_page.get(page) or []
+    v1_tokens_by_line: dict[int, list[dict[str, Any]]] = {}
+    llm_text_by_line: dict[int, str] = {}
+    for rec in sequence_rows:
+        line_idx = int(rec["line_index"])
+        v1_tokens_by_line[line_idx] = rec.get("units") or rec.get("tokens", [])
+        llm_text_by_line[line_idx] = str(rec.get("llm_text") or "")
+
     v1_indices = sorted(
         idx for idx in v1_lines_by_line if idx in v1_tokens_by_line and v1_lines_by_line[idx].blobs
     )
     n_v1 = len(v1_indices)
     n_v2 = len(v2_rows)
-    aligned: list[tuple[int, V2Row]] = []
-    # Greedy ordinal alignment. If counts differ we still emit as many as match.
-    for k, v2_row in enumerate(v2_rows):
-        if k >= n_v1:
-            break
-        aligned.append((v1_indices[k], v2_row))
 
+    # Phase 1: Transform ALL v1 blobs to v2 text_body coordinates.
+    # blob_key = (v1_line_idx, blob_id) → transformed geometry
+    all_blob_geom: dict[tuple[int, int], dict[str, Any]] = {}
+    for v1_idx in v1_indices:
+        v1_line = v1_lines_by_line[v1_idx]
+        for b in v1_line.blobs:
+            transformed_quad = transform_img_quad(v1_load, v2_frame, b.img_quad)
+            if transformed_quad is None:
+                continue
+            xs = [p[0] for p in transformed_quad]
+            ys = [p[1] for p in transformed_quad]
+            aabb = [round(min(xs), 3), round(min(ys), 3), round(max(xs), 3), round(max(ys), 3)]
+            # Round quad corners
+            q2 = [[round(p[0], 3), round(p[1], 3)] for p in transformed_quad]
+            all_blob_geom[(v1_idx, b.blob_id)] = {
+                "img_quad": q2,
+                "aabb": aabb,
+                "warped_bbox": b.warped_bbox,
+            }
+
+    # Phase 2: Assign each transformed blob to the nearest v2 row by y-center.
+    v2_baselines = [r.baseline_y for r in v2_rows]
+    img_w, img_h = v2_img_size
+
+    # blob_key → v2_row_index
+    blob_row_assignment: dict[tuple[int, int], int] = {}
+    for key, geom in all_blob_geom.items():
+        aabb = geom["aabb"]
+        cy = (aabb[1] + aabb[3]) / 2.0
+        cx = (aabb[0] + aabb[2]) / 2.0
+        # Skip blobs outside the text_body canvas
+        if not (0 <= cx <= img_w and 0 <= cy <= img_h):
+            continue
+        # Find nearest v2 row by y-distance to baseline
+        best_row_idx = 0
+        best_dist = abs(cy - v2_baselines[0])
+        for ri in range(1, n_v2):
+            d = abs(cy - v2_baselines[ri])
+            if d < best_dist:
+                best_dist = d
+                best_row_idx = ri
+            elif d > best_dist:
+                # baselines are sorted, so once distance increases, stop
+                break
+        blob_row_assignment[key] = best_row_idx
+
+    # Phase 3: Build output lines grouped by v2 row.
+    # For each v2 row, collect all blobs assigned to it and merge with token data.
     out_lines: list[dict[str, Any]] = []
     excluded_token_total = 0
-    for v1_idx, v2_row in aligned:
-        v1_line = v1_lines_by_line[v1_idx]
-        v1_blobs = v1_line.blobs
 
-        # v2 row bbox is the authoritative membership gate after the page-frame transform.
-        row_bbox = v2_row.bbox  # (x, y, w, h) or None
+    # Invert assignment: v2_row_index → list of (v1_line_idx, blob_id)
+    row_blobs: dict[int, list[tuple[int, int]]] = {i: [] for i in range(n_v2)}
+    for key, row_idx in blob_row_assignment.items():
+        row_blobs[row_idx].append(key)
 
-        def _inside_v2_row(aabb: list[float]) -> bool:
-            if row_bbox is None:
-                return True
-            rx, ry, rw, rh = row_bbox
-            cx = (aabb[0] + aabb[2]) / 2.0
-            cy = (aabb[1] + aabb[3]) / 2.0
-            return (
-                (rx - ROW_GATE_X_PAD) <= cx <= (rx + rw + ROW_GATE_X_PAD)
-                and (ry - ROW_GATE_Y_PAD) <= cy <= (ry + rh + ROW_GATE_Y_PAD)
-            )
+    for row_idx in range(n_v2):
+        v2_row = v2_rows[row_idx]
+        assigned_keys = row_blobs[row_idx]
+        if not assigned_keys:
+            continue
 
-        # Build a map blob_id -> transformed quad and aabb
-        blob_geom: dict[int, dict[str, Any]] = {}
-        for b in v1_blobs:
-            q2 = transform_img_quad(v1_load, v2_frame, b.img_quad)
-            if q2 is None:
-                continue
-            aabb = quad_axis_aligned(q2)
-            blob_geom[b.blob_id] = {
-                "img_quad": q2,
-                "warped_bbox": b.warped_bbox,
-                "source_img_quad": b.img_quad,
-                "aabb": aabb,
-            }
+        # Determine which v1 lines contribute to this row (for v1_line_index field)
+        v1_lines_in_row = sorted(set(k[0] for k in assigned_keys))
+        # Use the v1 line that contributes the most blobs
+        v1_line_counts = {}
+        for k in assigned_keys:
+            v1_line_counts[k[0]] = v1_line_counts.get(k[0], 0) + 1
+        primary_v1_line = max(v1_line_counts, key=v1_line_counts.get)
 
-        # Merge v1 composite units with transformed geometry. Drop only units
-        # that cannot be placed on the v2 canvas; mark attachment decisions come
-        # from the v1 composite witness, not from v2 geometry.
+        # Build blob_id set for quick lookup
+        assigned_blob_ids: dict[int, set[int]] = {}
+        for v1_idx, bid in assigned_keys:
+            assigned_blob_ids.setdefault(v1_idx, set()).add(bid)
+
+        # Merge with token data from the v1 composite witness
         tokens_out: list[dict[str, Any]] = []
-        for tok in v1_tokens_by_line[v1_idx]:
-            if tok.get("edge_fragment"):
-                excluded_token_total += 1
+        for v1_idx in v1_lines_in_row:
+            if v1_idx not in v1_tokens_by_line:
                 continue
-            bid = int(tok["blob_id"])
-            geom = blob_geom.get(bid)
-            if not geom:
-                # No geometry: skip (cannot place on canvas)
-                excluded_token_total += 1
-                continue
-            aabb = geom["aabb"]
-            # Inside the v2 text_body image?
-            img_w, img_h = v2_img_size
-            cx = (aabb[0] + aabb[2]) / 2.0
-            cy = (aabb[1] + aabb[3]) / 2.0
-            if not (0 <= cx <= img_w and 0 <= cy <= img_h):
-                excluded_token_total += 1
-                continue
-            # Inside the v2 row bbox? v2 line geometry is authoritative.
-            if not _inside_v2_row(aabb):
-                excluded_token_total += 1
-                continue
-            display_label, display_source, raw_label, overline_mark_id = resolve_review_sheet_label(
-                tok,
-                review_decisions,
-            )
-            t = {
-                "blob_id": bid,
-                "cluster": str(tok.get("cluster") or "unclustered"),
-                # Ground truth for the webapp initial state: this is exactly the
-                # text resolved by build_page_review_sheet.py.
-                "label": display_label,
-                "overline_mark_id": overline_mark_id,
-                "review_sheet_source": display_source,
-                "review_sheet_raw_label": raw_label,
-                # Preserve v1 evidence for inspection, but do not expose it as
-                # active override fields that can re-overwrite the sheet label.
-                "v1_provenance": {
-                    "label": tok.get("label"),
-                    "final_label": tok.get("final_label"),
-                    "final_label_source": tok.get("final_label_source"),
-                    "manual_override": tok.get("manual_override"),
+            blob_ids_for_line = assigned_blob_ids.get(v1_idx, set())
+            for tok in v1_tokens_by_line[v1_idx]:
+                if tok.get("edge_fragment"):
+                    excluded_token_total += 1
+                    continue
+                bid = int(tok["blob_id"])
+                if bid not in blob_ids_for_line:
+                    continue
+                key = (v1_idx, bid)
+                geom = all_blob_geom.get(key)
+                if not geom:
+                    excluded_token_total += 1
+                    continue
+
+                # The upstream editorial override file is no longer a source of
+                # truth for Manual Reviewer ingest. The reviewer baseline must
+                # be the pre-overlay token stream; clean editorial fingerprints
+                # are built separately from that stream.
+                tok = {**tok, "editorial_override": None}
+
+                display_label, display_source, raw_label, overline_mark_id = resolve_review_sheet_label(
+                    tok,
+                    review_decisions,
+                )
+                t = {
+                    "blob_id": bid,
+                    "v1_line_index": v1_idx,
+                    "cluster": str(tok.get("cluster") or "unclustered"),
+                    "label": display_label,
+                    "overline_mark_id": overline_mark_id,
+                    "review_sheet_source": display_source,
+                    "review_sheet_raw_label": raw_label,
+                    "v1_provenance": {
+                        "label": tok.get("label"),
+                        "final_label": tok.get("final_label"),
+                        "final_label_source": tok.get("final_label_source"),
+                        "manual_override": tok.get("manual_override"),
+                        "manual_warning": tok.get("manual_warning"),
+                        "geometric_override": tok.get("geometric_override"),
+                        "editorial_override": None,
+                        "subcluster_override": tok.get("subcluster_override"),
+                        "attached_marks": tok.get("attached_marks") or [],
+                        "geometry_mark_kinds": tok.get("geometry_mark_kinds") or [],
+                        "llm_alignment": tok.get("llm_alignment"),
+                        "split_metadata": tok.get("split_metadata"),
+                    },
+                    "manual_override": None,
                     "manual_warning": tok.get("manual_warning"),
-                    "geometric_override": tok.get("geometric_override"),
-                    "editorial_override": tok.get("editorial_override"),
-                    "subcluster_override": tok.get("subcluster_override"),
-                    "attached_marks": tok.get("attached_marks") or [],
-                    "geometry_mark_kinds": tok.get("geometry_mark_kinds") or [],
-                    "llm_alignment": tok.get("llm_alignment"),
-                    "split_metadata": tok.get("split_metadata"),
-                },
-                "manual_override": None,
-                "manual_warning": tok.get("manual_warning"),
-                "geometric_override": None,
-                "editorial_override": None,
-                "subcluster_override": None,
-                "candidates": tok.get("candidates") or [],
-                "review": bool(tok.get("review")),
-                "geometry": {
-                    "img_quad": geom["img_quad"],
-                    "aabb": geom["aabb"],
-                    "warped_bbox": geom["warped_bbox"],
-                },
-            }
-            tokens_out.append(t)
-        # Order tokens left-to-right by aabb x-center (manuscript Coptic reads l→r).
-        tokens_out.sort(key=lambda t: (t["geometry"]["aabb"][0] + t["geometry"]["aabb"][2]) / 2.0)
+                    "geometric_override": None,
+                    "editorial_override": None,
+                    "subcluster_override": None,
+                    "candidates": tok.get("candidates") or [],
+                    "review": bool(tok.get("review")),
+                    "geometry": {
+                        "img_quad": geom["img_quad"],
+                        "aabb": geom["aabb"],
+                        "warped_bbox": geom["warped_bbox"],
+                    },
+                }
+                tokens_out.append(t)
+
+        if not tokens_out:
+            continue
+
+        # Order tokens: group by v1 line first, then left-to-right within each line.
+        # This prevents editorial text from one v1 line appearing between Coptic
+        # from another v1 line when multiple v1 lines merge into a single v2 row.
+        tokens_out.sort(key=lambda t: (t["v1_line_index"], (t["geometry"]["aabb"][0] + t["geometry"]["aabb"][2]) / 2.0))
+
+        # Post-process: suppress editorial false positives.
+        # Short editorial markers (like "leer", 4 chars) can false-match on Coptic
+        # blobs whose shapes happen to match. Real markers appear at the EDGE of
+        # their line's content (end or beginning), not embedded between Coptic.
+        # Rule: if a short editorial run (< 8 consecutive tokens) is BETWEEN Coptic
+        # tokens on the same v1 line, it's a false positive — revert to the
+        # non-editorial label from v1_provenance.
+        for v1_idx in v1_lines_in_row:
+            line_tokens = [t for t in tokens_out if t["v1_line_index"] == v1_idx]
+            n = len(line_tokens)
+            if n == 0:
+                continue
+            # Identify runs of consecutive editorial tokens
+            i = 0
+            while i < n:
+                if "editorial" not in line_tokens[i].get("review_sheet_source", ""):
+                    i += 1
+                    continue
+                # Found start of editorial run
+                j = i
+                while j < n and "editorial" in line_tokens[j].get("review_sheet_source", ""):
+                    j += 1
+                run_len = j - i
+                # Long runs (>= 8 tokens) are trusted — they can't false-match
+                if run_len >= 8:
+                    i = j
+                    continue
+                # Check if this short run is BETWEEN Coptic tokens
+                has_coptic_before = any(
+                    "editorial" not in line_tokens[k].get("review_sheet_source", "")
+                    and _COPTIC_RE.search(line_tokens[k].get("label", ""))
+                    for k in range(0, i)
+                )
+                has_coptic_after = any(
+                    "editorial" not in line_tokens[k].get("review_sheet_source", "")
+                    and _COPTIC_RE.search(line_tokens[k].get("label", ""))
+                    for k in range(j, n)
+                )
+                if has_coptic_before and has_coptic_after:
+                    # False positive: revert these tokens to their non-editorial label
+                    for k in range(i, j):
+                        prov = line_tokens[k].get("v1_provenance", {}) or {}
+                        fallback = prov.get("final_label") or prov.get("label") or "?"
+                        line_tokens[k]["label"] = str(fallback)
+                        line_tokens[k]["review_sheet_source"] = "final:assigned"
+                i = j
+
         out_lines.append(
             {
                 "line_index": v2_row.line_index,
-                "v1_line_index": v1_idx,
+                "v1_line_index": primary_v1_line,
                 "baseline_y": v2_row.baseline_y,
                 "x_span": list(v2_row.x_span),
                 "tokens": tokens_out,
             }
         )
+
+    # Count tokens that had no geometry or were outside canvas
+    for v1_idx in v1_indices:
+        if v1_idx not in v1_tokens_by_line:
+            continue
+        for tok in v1_tokens_by_line[v1_idx]:
+            if tok.get("edge_fragment"):
+                continue
+            bid = int(tok["blob_id"])
+            key = (v1_idx, bid)
+            if key not in all_blob_geom and key not in blob_row_assignment:
+                excluded_token_total += 1
 
     text_body_rel = (
         (INGEST_TEXT_BODY_DIR.relative_to(WEBAPP_DIR)).as_posix() + f"/p{page}_text_body.jpg"
@@ -716,15 +1152,6 @@ def transpose_page(
         "image": text_body_rel,
         "image_size": list(v2_img_size),
         "v1_image_size": list(v1_load.image_size),
-        "v1_body_frame": {
-            "source": v1_load.body_frame.source,
-            "bbox": [v1_load.body_frame.x0, v1_load.body_frame.y0, v1_load.body_frame.x1, v1_load.body_frame.y1],
-        },
-        "v2_frame": {
-            "source_size": list(v2_frame.source_size),
-            "crop_origin": list(v2_frame.crop_origin),
-            "text_origin": list(v2_frame.text_origin),
-        },
         "rows_v1": n_v1,
         "rows_v2": n_v2,
         "rows_aligned": len(out_lines),

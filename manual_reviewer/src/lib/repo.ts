@@ -72,6 +72,8 @@ export interface EditorialClusterArrayRow {
   name: string | null;
   clusters: string;
   active: number;
+  min_length: number | null;
+  max_length: number | null;
   created_at: string;
   updated_at: string;
 }
@@ -785,6 +787,8 @@ export function createEditorialClusterArray(
   clusters: number[],
   name: string | null = null,
   active = true,
+  minLength: number | null = null,
+  maxLength: number | null = null,
 ): EditorialClusterArrayRow {
   const db = getDb();
   const after = {
@@ -792,13 +796,15 @@ export function createEditorialClusterArray(
     name,
     clusters: JSON.stringify(clusters),
     active: active ? 1 : 0,
+    min_length: minLength,
+    max_length: maxLength,
     updated_at: new Date().toISOString(),
   };
   return withAudit("editorial_array.create", null, null, String(sentenceId), null, after, () => {
     const info = db.prepare(
       `INSERT INTO editorial_cluster_arrays
-       (sentence_id, name, clusters, active, created_at, updated_at)
-       VALUES (@sentence_id, @name, @clusters, @active, datetime('now'), @updated_at)`,
+       (sentence_id, name, clusters, active, min_length, max_length, created_at, updated_at)
+       VALUES (@sentence_id, @name, @clusters, @active, @min_length, @max_length, datetime('now'), @updated_at)`,
     ).run(after);
     return db
       .prepare<[number], EditorialClusterArrayRow>(
@@ -810,7 +816,7 @@ export function createEditorialClusterArray(
 
 export function updateEditorialClusterArray(
   id: number,
-  updates: { clusters?: number[]; name?: string | null; active?: boolean },
+  updates: { clusters?: number[]; name?: string | null; active?: boolean; min_length?: number | null; max_length?: number | null },
 ): EditorialClusterArrayRow | null {
   const db = getDb();
   const before = db
@@ -824,12 +830,14 @@ export function updateEditorialClusterArray(
     name: updates.name !== undefined ? updates.name : before.name,
     clusters: updates.clusters !== undefined ? JSON.stringify(updates.clusters) : before.clusters,
     active: updates.active !== undefined ? (updates.active ? 1 : 0) : before.active,
+    min_length: updates.min_length !== undefined ? updates.min_length : before.min_length,
+    max_length: updates.max_length !== undefined ? updates.max_length : before.max_length,
     updated_at: new Date().toISOString(),
   };
   return withAudit("editorial_array.update", null, null, String(id), before, after, () => {
     db.prepare(
       `UPDATE editorial_cluster_arrays
-       SET name = @name, clusters = @clusters, active = @active, updated_at = @updated_at
+       SET name = @name, clusters = @clusters, active = @active, min_length = @min_length, max_length = @max_length, updated_at = @updated_at
        WHERE id = @id`,
     ).run(after);
     return after;
