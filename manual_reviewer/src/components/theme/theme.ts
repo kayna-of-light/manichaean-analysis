@@ -12,8 +12,64 @@ export function buildTheme(mode: "light" | "dark") {
   const textPrimary = isDark ? "rgb(244,241,232)" : "rgb(36,35,42)";
   const textSecondary = isDark ? "rgb(178,170,158)" : "rgb(98,96,108)";
   return createTheme({
-    cssVariables: true,
-    colorSchemes: { light: true, dark: true },
+    cssVariables: {
+      colorSchemeSelector: "data-theme",
+    },
+    colorSchemes: {
+      light: {
+        palette: {
+          primary: { main: accent, contrastText: "#1a1410" },
+          secondary: { main: "#6f87b0" },
+          error: { main: "#d32f2f" },
+          warning: { main: "#ed6c02" },
+          info: { main: "#0288d1" },
+          success: { main: "#2e7d32" },
+          background: {
+            default: "rgba(250,248,244,0.0)",
+            paper: "rgba(255,255,255,0.55)",
+          },
+          text: {
+            primary: "rgb(36,35,42)",
+            secondary: "rgb(98,96,108)",
+            disabled: "rgba(36,35,42,0.38)",
+          },
+          action: {
+            active: "rgb(36,35,42)",
+            disabled: "rgba(36,35,42,0.26)",
+            hover: "rgba(36,35,42,0.05)",
+            selected: "rgba(200,164,101,0.12)",
+          },
+          divider: "rgba(0,0,0,0.12)",
+        },
+      },
+      dark: {
+        palette: {
+          primary: { main: accent, contrastText: "#1a1410" },
+          secondary: { main: "#6f87b0" },
+          error: { main: "#f44336" },
+          warning: { main: "#ffa726" },
+          info: { main: "#29b6f6" },
+          success: { main: "#66bb6a" },
+          background: {
+            default: "rgba(20,18,24,0.0)",
+            paper: "rgba(255,255,255,0.05)",
+          },
+          text: {
+            primary: "rgb(244,241,232)",
+            secondary: "rgb(178,170,158)",
+            disabled: "rgba(244,241,232,0.38)",
+          },
+          action: {
+            active: "rgb(244,241,232)",
+            disabled: "rgba(244,241,232,0.30)",
+            hover: "rgba(244,241,232,0.08)",
+            selected: "rgba(200,164,101,0.18)",
+          },
+          divider: "rgba(255,255,255,0.10)",
+        },
+      },
+    },
+    defaultColorScheme: mode,
     palette: {
       mode,
       primary: { main: accent, contrastText: "#1a1410" },
