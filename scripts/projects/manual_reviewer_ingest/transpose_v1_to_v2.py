@@ -130,6 +130,14 @@ ROW_GATE_X_PAD = 0.0
 ROW_GATE_Y_PAD = 0.0
 V1_STRIP_MARGIN_X = 8.0
 V1_STRIP_MARGIN_Y = 4.0
+ALIGNMENT_SCORE_MIN_TOKENS = 20
+ALIGNMENT_TRIGGER_HIT_RATE = 0.98
+ALIGNMENT_TRIGGER_P90_DIST = 3.0
+ALIGNMENT_SEARCH_RADIUS = 80
+ALIGNMENT_COARSE_STEP = 4
+ALIGNMENT_MIN_SCORE_GAIN = 5.0
+ALIGNMENT_MIN_HIT_GAIN = 0.03
+ALIGNMENT_MIN_P90_GAIN = 2.0
 
 
 def relative(path: Path) -> str:
@@ -346,9 +354,6 @@ def find_crop_origin_by_template_match(
     if len(centers) < 20:
         return None
 
-    # Subsample for speed (use every 5th center)
-    sampled = centers[::5]
-
     # Load and binarize full page
     full = V2_DESKEW.cv2.imread(str(img_path), V2_DESKEW.cv2.IMREAD_GRAYSCALE)
     if full is None:
@@ -360,46 +365,49 @@ def find_crop_origin_by_template_match(
     max_x0 = full_w - img_w
     max_y0 = full_h - img_h
 
-    # Coarse search: step=8, range ±120 around hint
+    if max_x0 < 0 or max_y0 < 0:
+        return None  # Image larger than full page - impossible
+
+    import numpy as np
+    # Vectorized search using ALL centers (no subsampling bias)
+    centers_arr = np.array(centers)  # shape (N, 2)
+    cx_arr = np.round(centers_arr[:, 0]).astype(np.int32)
+    cy_arr = np.round(centers_arr[:, 1]).astype(np.int32)
+
+    def score_origin(x0: int, y0: int) -> int:
+        px = cx_arr + x0
+        py = cy_arr + y0
+        valid = (px >= 0) & (px < full_w) & (py >= 0) & (py < full_h)
+        hits = np.sum(full_bin[py[valid], px[valid]] > 0)
+        return int(hits)
+
+    # Coarse search: full valid range with step=8
+    coarse_step = 8
     best_score = -1
     best_x0, best_y0 = hint_x, hint_y
-    for dy in range(-120, 121, 8):
-        for dx in range(-120, 121, 8):
-            x0 = hint_x + dx
-            y0 = hint_y + dy
-            if x0 < 0 or y0 < 0 or x0 > max_x0 or y0 > max_y0:
-                continue
-            hits = 0
-            for cx, cy in sampled:
-                px = int(round(x0 + cx))
-                py = int(round(y0 + cy))
-                if 0 <= px < full_w and 0 <= py < full_h and full_bin[py, px] > 0:
-                    hits += 1
-            if hits > best_score:
-                best_score = hits
+    for y0 in range(0, max_y0 + 1, coarse_step):
+        for x0 in range(0, max_x0 + 1, coarse_step):
+            s = score_origin(x0, y0)
+            if s > best_score:
+                best_score = s
                 best_x0 = x0
                 best_y0 = y0
 
-    # Fine search: step=1, range ±10 around coarse best
+    # Fine search: step=1, range +/-8 around coarse best
     coarse_x, coarse_y = best_x0, best_y0
-    for dy in range(-10, 11):
-        for dx in range(-10, 11):
+    for dy in range(-coarse_step, coarse_step + 1):
+        for dx in range(-coarse_step, coarse_step + 1):
             x0 = coarse_x + dx
             y0 = coarse_y + dy
             if x0 < 0 or y0 < 0 or x0 > max_x0 or y0 > max_y0:
                 continue
-            hits = 0
-            for cx, cy in sampled:
-                px = int(round(x0 + cx))
-                py = int(round(y0 + cy))
-                if 0 <= px < full_w and 0 <= py < full_h and full_bin[py, px] > 0:
-                    hits += 1
-            if hits > best_score:
-                best_score = hits
+            s = score_origin(x0, y0)
+            if s > best_score:
+                best_score = s
                 best_x0 = x0
                 best_y0 = y0
 
-    accuracy = best_score / len(sampled) if sampled else 0
+    accuracy = best_score / len(centers) if centers else 0
     if accuracy < 0.3:
         return None  # Not confident enough
     return (float(best_x0), float(best_y0))
@@ -891,6 +899,197 @@ def quad_axis_aligned(quad: list[list[float]]) -> list[float]:
     return [min(xs), min(ys), max(xs), max(ys)]
 
 
+def _load_text_body_ink(page: str) -> tuple[Any, Any] | None:
+    img_path = V2_TEXT_BODY_DIR / f"p{page}_text_body.jpg"
+    gray = V2_DESKEW.cv2.imread(str(img_path), V2_DESKEW.cv2.IMREAD_GRAYSCALE)
+    if gray is None:
+        return None
+    _thr, ink = V2_DESKEW.cv2.threshold(
+        gray,
+        0,
+        255,
+        V2_DESKEW.cv2.THRESH_BINARY_INV | V2_DESKEW.cv2.THRESH_OTSU,
+    )
+    ink = V2_DESKEW.cv2.dilate(ink, V2_DESKEW.np.ones((3, 3), V2_DESKEW.np.uint8), iterations=1)
+    dist = V2_DESKEW.cv2.distanceTransform(255 - ink, V2_DESKEW.cv2.DIST_L2, 3)
+    return ink, dist
+
+
+def _alignment_score(
+    geoms: list[dict[str, Any]],
+    ink: Any,
+    dist: Any,
+    dx: int = 0,
+    dy: int = 0,
+) -> dict[str, float]:
+    height, width = ink.shape
+    hits = 0
+    distances: list[float] = []
+    area_fracs: list[float] = []
+    for geom in geoms:
+        aabb = geom.get("aabb") or []
+        if len(aabb) != 4:
+            continue
+        x0 = float(aabb[0]) + dx
+        y0 = float(aabb[1]) + dy
+        x1 = float(aabb[2]) + dx
+        y1 = float(aabb[3]) + dy
+        ix0 = max(0, int(V2_DESKEW.np.floor(x0)))
+        iy0 = max(0, int(V2_DESKEW.np.floor(y0)))
+        ix1 = min(width, int(V2_DESKEW.np.ceil(x1)))
+        iy1 = min(height, int(V2_DESKEW.np.ceil(y1)))
+        if ix1 <= ix0 or iy1 <= iy0:
+            distances.append(999.0)
+            area_fracs.append(0.0)
+            continue
+        crop = ink[iy0:iy1, ix0:ix1]
+        ink_count = int(V2_DESKEW.np.sum(crop > 0))
+        hits += int(ink_count > 0)
+        area_fracs.append(ink_count / max((ix1 - ix0) * (iy1 - iy0), 1))
+        cx = int(round((x0 + x1) / 2.0))
+        cy = int(round((y0 + y1) / 2.0))
+        if 0 <= cx < width and 0 <= cy < height:
+            distances.append(float(dist[cy, cx]))
+        else:
+            distances.append(999.0)
+
+    if not distances:
+        return {
+            "hit_rate": 0.0,
+            "median_center_dist": 999.0,
+            "p90_center_dist": 999.0,
+            "area_ink_frac": 0.0,
+            "score": -999.0,
+        }
+    arr = V2_DESKEW.np.asarray(distances, dtype=V2_DESKEW.np.float32)
+    hit_rate = hits / len(distances)
+    median_center_dist = float(V2_DESKEW.np.median(arr))
+    p90_center_dist = float(V2_DESKEW.np.percentile(arr, 90))
+    area_ink_frac = float(V2_DESKEW.np.mean(V2_DESKEW.np.asarray(area_fracs, dtype=V2_DESKEW.np.float32)))
+    score = hit_rate * 100.0 + area_ink_frac * 25.0 - median_center_dist * 2.0 - p90_center_dist * 0.5
+    return {
+        "hit_rate": float(hit_rate),
+        "median_center_dist": median_center_dist,
+        "p90_center_dist": p90_center_dist,
+        "area_ink_frac": area_ink_frac,
+        "score": float(score),
+    }
+
+
+def _is_alignment_scoreable_token(token: dict[str, Any], review_decisions: dict[str, dict[str, Any]]) -> bool:
+    if token.get("edge_fragment"):
+        return False
+    token_without_editorial = {**token, "editorial_override": None}
+    display_label, display_source, _raw_label, _overline_mark_id = resolve_review_sheet_label(
+        token_without_editorial,
+        review_decisions,
+    )
+    if "editorial" in display_source:
+        return False
+    return bool(_COPTIC_RE.search(display_label))
+
+
+def _apply_text_body_shift(all_blob_geom: dict[tuple[int, int], dict[str, Any]], dx: int, dy: int) -> None:
+    for geom in all_blob_geom.values():
+        geom["img_quad"] = [[round(float(x) + dx, 3), round(float(y) + dy, 3)] for x, y in geom["img_quad"]]
+        aabb = geom["aabb"]
+        geom["aabb"] = [
+            round(float(aabb[0]) + dx, 3),
+            round(float(aabb[1]) + dy, 3),
+            round(float(aabb[2]) + dx, 3),
+            round(float(aabb[3]) + dy, 3),
+        ]
+
+
+def refine_text_body_alignment(
+    page: str,
+    all_blob_geom: dict[tuple[int, int], dict[str, Any]],
+    v1_tokens_by_line: dict[int, list[dict[str, Any]]],
+    review_decisions: dict[str, dict[str, Any]],
+) -> dict[str, Any]:
+    """Apply a guarded page-level text-body shift when real glyphs miss ink.
+
+    The crop-origin template matcher can land on a plausible but horizontally
+    biased page origin when the old body crop differs from the corrected split
+    frame. This second pass validates the transformed boxes in the exact
+    Manual Reviewer coordinate space and only applies a uniform correction when
+    the ink score improves substantially for real Coptic glyph tokens.
+    """
+    scoreable_geoms: list[dict[str, Any]] = []
+    for v1_idx, tokens in v1_tokens_by_line.items():
+        for token in tokens:
+            try:
+                bid = int(token["blob_id"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            geom = all_blob_geom.get((v1_idx, bid))
+            if geom is None:
+                continue
+            if _is_alignment_scoreable_token(token, review_decisions):
+                scoreable_geoms.append(geom)
+
+    correction: dict[str, Any] = {
+        "dx": 0,
+        "dy": 0,
+        "applied": False,
+        "scoreable_tokens": len(scoreable_geoms),
+    }
+    if len(scoreable_geoms) < ALIGNMENT_SCORE_MIN_TOKENS:
+        return correction
+
+    ink_data = _load_text_body_ink(page)
+    if ink_data is None:
+        return correction
+    ink, dist = ink_data
+    base = _alignment_score(scoreable_geoms, ink, dist)
+    correction["base"] = base
+    if (
+        base["hit_rate"] >= ALIGNMENT_TRIGGER_HIT_RATE
+        and base["p90_center_dist"] <= ALIGNMENT_TRIGGER_P90_DIST
+    ):
+        return correction
+
+    best_dx = 0
+    best_dy = 0
+    best = base
+    for dy in range(-ALIGNMENT_SEARCH_RADIUS, ALIGNMENT_SEARCH_RADIUS + 1, ALIGNMENT_COARSE_STEP):
+        for dx in range(-ALIGNMENT_SEARCH_RADIUS, ALIGNMENT_SEARCH_RADIUS + 1, ALIGNMENT_COARSE_STEP):
+            score = _alignment_score(scoreable_geoms, ink, dist, dx, dy)
+            if score["score"] > best["score"]:
+                best = score
+                best_dx = dx
+                best_dy = dy
+
+    coarse_dx = best_dx
+    coarse_dy = best_dy
+    for dy in range(coarse_dy - ALIGNMENT_COARSE_STEP, coarse_dy + ALIGNMENT_COARSE_STEP + 1):
+        if dy < -ALIGNMENT_SEARCH_RADIUS or dy > ALIGNMENT_SEARCH_RADIUS:
+            continue
+        for dx in range(coarse_dx - ALIGNMENT_COARSE_STEP, coarse_dx + ALIGNMENT_COARSE_STEP + 1):
+            if dx < -ALIGNMENT_SEARCH_RADIUS or dx > ALIGNMENT_SEARCH_RADIUS:
+                continue
+            score = _alignment_score(scoreable_geoms, ink, dist, dx, dy)
+            if score["score"] > best["score"]:
+                best = score
+                best_dx = dx
+                best_dy = dy
+
+    correction["best"] = best
+    score_gain = best["score"] - base["score"]
+    hit_gain = best["hit_rate"] - base["hit_rate"]
+    p90_gain = base["p90_center_dist"] - best["p90_center_dist"]
+    if (
+        (best_dx != 0 or best_dy != 0)
+        and score_gain >= ALIGNMENT_MIN_SCORE_GAIN
+        and hit_gain >= ALIGNMENT_MIN_HIT_GAIN
+        and p90_gain >= ALIGNMENT_MIN_P90_GAIN
+    ):
+        _apply_text_body_shift(all_blob_geom, best_dx, best_dy)
+        correction.update({"dx": best_dx, "dy": best_dy, "applied": True})
+
+    return correction
+
+
 def transpose_page(
     page: str,
     sequences_by_page: dict[str, list[dict[str, Any]]],
@@ -944,6 +1143,13 @@ def transpose_page(
                 "aabb": aabb,
                 "warped_bbox": b.warped_bbox,
             }
+
+    alignment_correction = refine_text_body_alignment(
+        page,
+        all_blob_geom,
+        v1_tokens_by_line,
+        review_decisions,
+    )
 
     # Phase 2: Assign each transformed blob to the nearest v2 row by y-center.
     v2_baselines = [r.baseline_y for r in v2_rows]
@@ -1156,6 +1362,7 @@ def transpose_page(
         "rows_v2": n_v2,
         "rows_aligned": len(out_lines),
         "tokens_excluded": excluded_token_total,
+        "geometry_correction": alignment_correction,
         "lines": out_lines,
     }
 
@@ -1218,13 +1425,19 @@ def main() -> None:
                     "rows_v2": result["rows_v2"],
                     "rows_aligned": result["rows_aligned"],
                     "tokens_excluded": result["tokens_excluded"],
+                    "geometry_correction": result.get("geometry_correction"),
                     "image_size": result["image_size"],
                     "assets": copied_assets,
                 }
             )
+            correction = result.get("geometry_correction") or {}
+            correction_note = ""
+            if correction.get("applied"):
+                correction_note = f"; text shift dx={correction.get('dx')} dy={correction.get('dy')}"
             print(
                 f"  p{page}: aligned {result['rows_aligned']}/{result['rows_v2']} v2 rows "
-                f"(v1 has {result['rows_v1']}); excluded {result['tokens_excluded']} tokens",
+                f"(v1 has {result['rows_v1']}); excluded {result['tokens_excluded']} tokens"
+                f"{correction_note}",
                 file=sys.stderr,
             )
         else:
