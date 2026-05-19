@@ -447,25 +447,57 @@ function applyArrayOverlay(
   const clusters = parseClusterArray(row.clusters);
   const chars = sentenceCharsNoSpaces(row.sentence_text);
   if (clusters.length === 0 || clusters.length !== chars.length) return;
+  const hasWildcard = patternHasWildcard(clusters);
   for (const lineTokens of liveLines) {
-    if (lineTokens.length < clusters.length) continue;
-    for (let start = 0; start <= lineTokens.length - clusters.length; start += 1) {
-      const window = lineTokens.slice(start, start + clusters.length);
-      if (!clustersMatchExact(window, clusters)) continue;
-      for (let index = 0; index < window.length; index += 1) {
-        const token = window[index];
-        const key = tokenKey(token.line_index, token.blob_id);
-        if (overlay.has(key)) continue;
-        overlay.set(key, {
-          label: chars[index],
-          sentence_id: row.sentence_id,
-          array_id: row.id,
-          sentence_text: row.sentence_text,
-          span_position: index,
-          span_count: chars.length,
-          cluster_array: clusters,
-        });
+    if (!hasWildcard) {
+      if (lineTokens.length < clusters.length) continue;
+      for (let start = 0; start <= lineTokens.length - clusters.length; start += 1) {
+        const window = lineTokens.slice(start, start + clusters.length);
+        if (!clustersMatchExact(window, clusters)) continue;
+        applyOverlayWindow(row, clusters, chars, window, overlay);
+      }
+      continue;
+    }
+
+    const seen = new Set<string>();
+    for (let start = 0; start < lineTokens.length; start += 1) {
+      const windowMatches = patternMatchAt(
+        lineTokens,
+        start,
+        clusters,
+        row.min_length,
+        row.max_length,
+      );
+      for (const window of windowMatches) {
+        if (window.length !== chars.length) continue;
+        const key = `${start}:${window.length}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        applyOverlayWindow(row, clusters, chars, window, overlay);
       }
     }
+  }
+}
+
+function applyOverlayWindow(
+  row: EditorialArrayWithSentence,
+  clusters: number[],
+  chars: string[],
+  window: LiveToken[],
+  overlay: Map<string, EditorialTokenOverlay>,
+) {
+  for (let index = 0; index < window.length; index += 1) {
+    const token = window[index];
+    const key = tokenKey(token.line_index, token.blob_id);
+    if (overlay.has(key)) continue;
+    overlay.set(key, {
+      label: chars[index],
+      sentence_id: row.sentence_id,
+      array_id: row.id,
+      sentence_text: row.sentence_text,
+      span_position: index,
+      span_count: chars.length,
+      cluster_array: clusters,
+    });
   }
 }
