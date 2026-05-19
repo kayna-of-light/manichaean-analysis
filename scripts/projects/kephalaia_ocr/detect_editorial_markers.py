@@ -228,11 +228,11 @@ def flatten(group: list[list[dict[str, Any]]]) -> list[dict[str, Any]]:
 
 
 def display_chars_for_group(marker_text: str, group: list[list[dict[str, Any]]]) -> list[str]:
-    """Distribute marker text characters across blob positions.
+    """Return one marker character per blob position.
 
-    When a run has more blobs than the word has letters (elastic match),
-    spread the letters proportionally — each blob gets the nearest letter
-    from the word so nothing shows as unassigned.
+    Spaces between German words are not marker characters. If the blob count
+    does not match the marker character count, the caller should not create an
+    editorial fingerprint.
     """
     output: list[str] = []
     for word, run in zip(marker_words(marker_text), group):
@@ -240,14 +240,6 @@ def display_chars_for_group(marker_text: str, group: list[list[dict[str, Any]]])
         run_length = len(run)
         if run_length == len(chars):
             output.extend(chars)
-        elif run_length > len(chars) and chars:
-            # Distribute letters proportionally across blob positions
-            for i in range(run_length):
-                char_idx = min(int(i * len(chars) / run_length), len(chars) - 1)
-                output.append(chars[char_idx])
-        elif run_length > 0:
-            output.extend(chars[:max(0, run_length - 1)])
-            output.append("".join(chars[max(0, run_length - 1):]))
     return output
 
 
@@ -298,6 +290,13 @@ def make_override(
 ) -> dict[str, Any]:
     units = flatten(group)
     clusters = [str(unit.get("cluster")) for unit in units]
+    marker_chars = display_chars(str(match["marker_text"]))
+    display = display_chars_for_group(str(match["marker_text"]), group)
+    if len(units) != len(marker_chars) or display != marker_chars:
+        raise ValueError(
+            f"Editorial marker {match['marker_text']!r} on p{row['page']} "
+            f"l{row['line_index']} has {len(units)} blobs for {len(marker_chars)} chars"
+        )
     return {
         "page": str(row["page"]),
         "line_index": int(row["line_index"]),
@@ -305,7 +304,7 @@ def make_override(
         "label": EDITORIAL_LABEL,
         "marker_type": match["marker_type"],
         "marker_text": match["marker_text"],
-        "display_chars": display_chars_for_group(str(match["marker_text"]), group),
+        "display_chars": display,
         "confidence": confidence,
         "source": relative(witness_path),
         "evidence": str(row.get("llm_text") or ""),
@@ -346,26 +345,6 @@ def build_outputs(
                     groups = [selected]
                     confidence = "generated_llm_bootstrap_cluster_span"
             if len(groups) != 1:
-                elastic_groups = matching_elastic_run_groups(
-                    strict_runs,
-                    str(match["marker_text"]),
-                    max_word_gap,
-                )
-                selected = select_bootstrap_group(row, match, elastic_groups)
-                if selected is not None:
-                    groups = [selected]
-                    confidence = "generated_elastic_cluster_span"
-            if len(groups) != 1:
-                elastic_bootstrap_groups = matching_elastic_run_groups(
-                    bootstrap_runs,
-                    str(match["marker_text"]),
-                    max_word_gap,
-                )
-                selected = select_bootstrap_group(row, match, elastic_bootstrap_groups)
-                if selected is not None:
-                    groups = [selected]
-                    confidence = "generated_llm_bootstrap_elastic_span"
-            if len(groups) != 1:
                 target = ambiguous if groups else unmatched
                 target.append({
                     "page": str(row["page"]),
@@ -381,11 +360,7 @@ def build_outputs(
                         str(match["marker_text"]),
                         max_word_gap,
                     )),
-                    "elastic_candidate_count": len(matching_elastic_run_groups(
-                        bootstrap_runs,
-                        str(match["marker_text"]),
-                        max_word_gap,
-                    )),
+                    "elastic_candidate_count": 0,
                     "evidence": text,
                 })
                 continue
@@ -564,11 +539,6 @@ def vocabulary_scan(
 
             # Structural match: run lengths must match word lengths
             groups = matching_run_groups(runs, marker_type, max_word_gap)
-            if not groups:
-                groups = matching_elastic_run_groups(
-                    runs, marker_type, max_word_gap, max_total_extra=2,
-                )
-
             for group in groups:
                 flat = flatten(group)
                 keys = {(page, line_idx, int(u["blob_id"])) for u in flat}
@@ -619,7 +589,7 @@ def vocabulary_scan(
 
 
 # ---------------------------------------------------------------------------
-# Phase 3: line-level fallback for German lines with unclaimed blobs
+# Phase 3: line-level fallback is intentionally disabled.
 # ---------------------------------------------------------------------------
 
 def _is_assigned_coptic(unit: dict[str, Any]) -> bool:
@@ -639,12 +609,8 @@ def line_level_fallback(
     prior_overrides: list[dict[str, Any]],
     witness_path: Path,
 ) -> list[dict[str, Any]]:
-    """Claim all unclaimed blobs on lines where the LLM text matches German
-    editorial patterns but Phase 1/2 could not align blobs individually.
-
-    This handles cases where German words are printed as connected multi-char
-    blobs or scattered dot remnants that don't match expected character counts.
-    """
+    """Disabled: editorial markers require exact cluster fingerprints."""
+    return []
     # Build set of already-claimed blob keys
     claimed: set[tuple[str, int, int]] = set()
     for ov in prior_overrides:
@@ -793,20 +759,13 @@ def run(args: argparse.Namespace) -> None:
     )
     print(f"Phase 1 (LLM-bootstrapped): {len(overrides)} overrides")
 
-    # Phase 2: vocabulary-based fuzzy matching on uncovered lines
-    phase2_overrides, phase2_sigs = vocabulary_scan(
-        rows, overrides, witness_path, args.max_letter_gap, args.max_word_gap,
-    )
-    if phase2_overrides:
-        overrides.extend(phase2_overrides)
-        overrides.sort(
-            key=lambda item: (str(item["page"]), int(item["line_index"]), item["blob_ids"])
-        )
-        for marker_type, counter in phase2_sigs.items():
-            signature_counts[marker_type] += counter
-        print(f"Phase 2 (vocab fuzzy):      {len(phase2_overrides)} additional overrides")
-    else:
-        print("Phase 2 (vocab fuzzy):      0 additional overrides")
+    # Phase 2: vocabulary-based fuzzy matching — DISABLED
+    # This phase scans ALL lines for cluster patterns matching German words,
+    # but in practice generates massive false positives (9600+ blobs) because
+    # Coptic and German share enough character shapes to trigger fuzzy matches
+    # on Coptic-dense lines. The LLM transcript is far more reliable for
+    # identifying German editorial text.
+    print("Phase 2 (vocab fuzzy):      DISABLED (excessive false positives on Coptic text)")
 
     # Phase 3: line-level fallback — claim all unclaimed blobs on German lines
     phase3_overrides = line_level_fallback(rows, overrides, witness_path)

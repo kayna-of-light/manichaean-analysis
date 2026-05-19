@@ -12,7 +12,7 @@ import {
 
 export const dynamic = "force-dynamic";
 
-const ClusterArraySchema = z.array(z.number().int()).max(200);
+const ClusterArraySchema = z.array(z.number().int().min(-3)).max(200);
 
 const ActionSchema = z.discriminatedUnion("action", [
   z.object({
@@ -38,6 +38,8 @@ const ActionSchema = z.discriminatedUnion("action", [
     name: z.string().nullable().optional(),
     clusters: ClusterArraySchema,
     active: z.boolean().optional(),
+    min_length: z.number().int().positive().nullable().optional(),
+    max_length: z.number().int().positive().nullable().optional(),
   }),
   z.object({
     action: z.literal("update_array"),
@@ -45,6 +47,8 @@ const ActionSchema = z.discriminatedUnion("action", [
     name: z.string().nullable().optional(),
     clusters: ClusterArraySchema.optional(),
     active: z.boolean().optional(),
+    min_length: z.number().int().positive().nullable().optional(),
+    max_length: z.number().int().positive().nullable().optional(),
   }),
   z.object({
     action: z.literal("delete_array"),
@@ -89,6 +93,8 @@ export async function POST(req: NextRequest) {
           body.clusters,
           body.name ?? null,
           body.active ?? true,
+          body.min_length ?? null,
+          body.max_length ?? null,
         );
         break;
       case "update_array":
@@ -96,6 +102,8 @@ export async function POST(req: NextRequest) {
           clusters: body.clusters,
           name: body.name,
           active: body.active,
+          min_length: body.min_length,
+          max_length: body.max_length,
         });
         break;
       case "delete_array":

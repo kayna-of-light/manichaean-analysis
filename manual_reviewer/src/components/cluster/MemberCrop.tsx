@@ -9,6 +9,9 @@ interface Props {
   aabb: [number, number, number, number] | null;
   /** Target display height for the crop. */
   displayHeight?: number;
+  /** Maximum display width (px). If the natural width exceeds this, the image
+   *  is scaled down proportionally so both dimensions fit. */
+  maxDisplayWidth?: number;
   /** Padding around the crop, in source-image pixels. */
   pad?: number;
   outline?: string;
@@ -25,6 +28,7 @@ export function MemberCrop({
   imageSize,
   aabb,
   displayHeight = 56,
+  maxDisplayWidth,
   pad = 4,
   outline,
   background = "var(--color-glass-surface)",
@@ -50,14 +54,21 @@ export function MemberCrop({
   const py1 = Math.min(imgH, y1 + pad);
   const cropW = Math.max(1, px1 - px0);
   const cropH = Math.max(1, py1 - py0);
-  const scale = displayHeight / cropH;
-  const dispW = Math.max(8, Math.round(cropW * scale));
+  let scale = displayHeight / cropH;
+  let dispW = Math.max(8, Math.round(cropW * scale));
+  let dispH = displayHeight;
+  // If max width is set and the natural width exceeds it, scale down to fit.
+  if (maxDisplayWidth && dispW > maxDisplayWidth) {
+    scale = maxDisplayWidth / cropW;
+    dispW = maxDisplayWidth;
+    dispH = Math.max(8, Math.round(cropH * scale));
+  }
 
   return (
     <Box
       sx={{
         width: dispW,
-        height: displayHeight,
+        height: dispH,
         overflow: "hidden",
         position: "relative",
         borderRadius: 1,

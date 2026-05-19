@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 5;
+const SCHEMA_VERSION = 6;
 
 let _db: DB | null = null;
 
@@ -217,6 +217,20 @@ function migrate(db: DB) {
 
   if (currentVersion < 5) {
     // editorial_* tables are created above via CREATE IF NOT EXISTS; just bump.
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run("5");
+  }
+
+  if (currentVersion < 6) {
+    // Add min_length / max_length columns for wildcard pattern matching.
+    const cols = db.pragma("table_info(editorial_cluster_arrays)") as Array<{ name: string }>;
+    if (!cols.some((c) => c.name === "min_length")) {
+      db.exec("ALTER TABLE editorial_cluster_arrays ADD COLUMN min_length INTEGER");
+    }
+    if (!cols.some((c) => c.name === "max_length")) {
+      db.exec("ALTER TABLE editorial_cluster_arrays ADD COLUMN max_length INTEGER");
+    }
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));
