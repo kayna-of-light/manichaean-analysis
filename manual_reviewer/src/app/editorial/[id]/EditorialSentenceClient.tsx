@@ -570,9 +570,14 @@ function PatternStrip({
       })}
 
       {draftClusters.length === 0 && (
-        <Typography variant="body2" color="text.secondary" sx={{ ml: 1 }}>
-          Empty — click + to add slots
-        </Typography>
+        <Button
+          size="small"
+          startIcon={<AddIcon />}
+          onClick={() => onInsert(0)}
+          sx={{ ml: 1 }}
+        >
+          Add slot
+        </Button>
       )}
     </Box>
   );
@@ -596,7 +601,7 @@ function InsertGap({
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
       sx={{
-        width: 20,
+        width: 24,
         height: 64,
         display: "flex",
         alignItems: "center",
@@ -604,19 +609,24 @@ function InsertGap({
         flexShrink: 0,
       }}
     >
-      {visible && (
-        <IconButton
-          size="small"
-          color="primary"
-          onClick={(e) => {
-            e.stopPropagation();
-            onInsert();
-          }}
-          sx={{ width: 18, height: 18, p: 0 }}
-        >
-          <AddIcon sx={{ fontSize: 14 }} />
-        </IconButton>
-      )}
+      <IconButton
+        size="small"
+        color="primary"
+        onClick={(e) => {
+          e.stopPropagation();
+          onInsert();
+        }}
+        sx={{
+          width: 22,
+          height: 22,
+          p: 0,
+          opacity: visible ? 1 : 0.25,
+          transition: "opacity 0.15s",
+          "&:hover": { opacity: 1 },
+        }}
+      >
+        <AddIcon sx={{ fontSize: 16 }} />
+      </IconButton>
     </Box>
   );
 }

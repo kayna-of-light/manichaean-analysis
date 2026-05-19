@@ -4,10 +4,19 @@ import { listPages, readInitialBaseline } from "@/lib/pipelineReaders";
 
 export const dynamic = "force-dynamic";
 
-interface PageProgressRow {
+interface PageRow {
   page: number;
   status: string;
   last_edited_at: string | null;
+}
+
+interface LineProgressRow {
+  page: number;
+  line_index: number;
+  status: string;
+}
+
+interface PageProgress {
   done_lines: number;
   flagged_lines: number;
 }
@@ -17,18 +26,23 @@ export async function GET() {
   const db = getDb();
 
   const rows = db
-    .prepare<[], PageProgressRow>(
+    .prepare<[], PageRow>(
       `SELECT
-         p.page                                                AS page,
-         p.status                                              AS status,
-         p.last_edited_at                                      AS last_edited_at,
-         COALESCE(SUM(CASE WHEN l.status = 'done' THEN 1 ELSE 0 END), 0)    AS done_lines,
-         COALESCE(SUM(CASE WHEN l.status = 'flagged' THEN 1 ELSE 0 END), 0) AS flagged_lines
-       FROM pages p LEFT JOIN lines l ON l.page = p.page
-       GROUP BY p.page`,
+         p.page           AS page,
+         p.status         AS status,
+         p.last_edited_at AS last_edited_at
+       FROM pages p`,
     )
     .all();
   const byId = new Map(rows.map((r) => [r.page, r]));
+
+  const lineRows = db
+    .prepare<[], LineProgressRow>(
+      `SELECT page, line_index, status
+       FROM lines
+       WHERE status IN ('done', 'flagged')`,
+    )
+    .all();
 
   // Read total line counts from baseline files (cached per-process)
   const lineCounts = new Map<string, number>();
@@ -39,16 +53,31 @@ export async function GET() {
     }),
   );
 
+  const progressByPage = new Map<number, PageProgress>();
+  for (const line of lineRows) {
+    const page = String(line.page).padStart(3, "0");
+    const totalLines = lineCounts.get(page) ?? 0;
+    if (line.line_index < 0 || line.line_index >= totalLines) continue;
+    const progress = progressByPage.get(line.page) ?? {
+      done_lines: 0,
+      flagged_lines: 0,
+    };
+    if (line.status === "done") progress.done_lines += 1;
+    if (line.status === "flagged") progress.flagged_lines += 1;
+    progressByPage.set(line.page, progress);
+  }
+
   const items = pages.map((p) => {
     const pid = parseInt(p, 10);
     const row = byId.get(pid);
+    const progress = progressByPage.get(pid);
     return {
       page: p,
       pageInt: pid,
       status: row?.status ?? "pending",
       last_edited_at: row?.last_edited_at ?? null,
-      done_lines: row?.done_lines ?? 0,
-      flagged_lines: row?.flagged_lines ?? 0,
+      done_lines: progress?.done_lines ?? 0,
+      flagged_lines: progress?.flagged_lines ?? 0,
       total_lines: lineCounts.get(p) ?? 0,
     };
   });

@@ -12,6 +12,8 @@ import {
 import { usePagesList } from "@/components/reviewer/hooks";
 import Link from "next/link";
 
+const clampProgress = (value: number) => Math.min(100, Math.max(0, value));
+
 export function PagesOverview() {
   const { data, isLoading } = usePagesList();
 
@@ -33,8 +35,9 @@ export function PagesOverview() {
           {data.pages.map((p) => {
             const checked = p.done_lines + p.flagged_lines;
             const total = p.total_lines;
-            const progress = total > 0 ? (checked / total) * 100 : 0;
-            const allDone = total > 0 && checked >= total;
+            const boundedChecked = total > 0 ? Math.min(checked, total) : checked;
+            const progress = total > 0 ? clampProgress((boundedChecked / total) * 100) : 0;
+            const allDone = total > 0 && boundedChecked >= total;
             return (
               <Button
                 key={p.page}
