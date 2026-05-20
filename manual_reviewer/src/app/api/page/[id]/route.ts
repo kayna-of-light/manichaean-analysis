@@ -15,6 +15,7 @@ import {
 } from "@/lib/repo";
 import type { BaselineLine, BaselineToken, Token } from "@/lib/zodSchemas";
 import { getDb } from "@/lib/db";
+import { editIdsForBaselineLine } from "@/lib/tokenIdentity";
 
 export const dynamic = "force-dynamic";
 
@@ -26,7 +27,9 @@ export const dynamic = "force-dynamic";
  *
  * Editing layers (blob_edits / cluster_overrides / new_bboxes / unset_blobs /
  * line statuses) are unchanged — overrides on top of the baseline tokens,
- * keyed by (page, line_index, blob_id).
+ * keyed by (page, line_index, edit_id). edit_id is the source blob_id unless
+ * that id appears multiple times on the same line, in which case it receives
+ * a stable occurrence suffix so edits target one rendered box.
  */
 export async function GET(
   _req: NextRequest,
@@ -167,8 +170,9 @@ function buildLine(
   imgH: number,
   rowBboxMap: Map<number, [number, number, number, number]>,
 ) {
-  const allTokens: Token[] = ln.tokens.map((t) =>
-    baselineTokenToToken(t, page, ln.line_index),
+  const editIds = editIdsForBaselineLine(ln);
+  const allTokens: Token[] = ln.tokens.map((t, index) =>
+    baselineTokenToToken(t, page, ln.line_index, editIds[index]),
   );
   const allQuads: (number[][] | null)[] = ln.tokens.map((t) => t.geometry.img_quad);
 
@@ -225,6 +229,7 @@ function baselineTokenToToken(
   t: BaselineToken,
   page: string,
   line_index: number,
+  edit_id: string,
 ): Token {
   const [ax0, ay0, ax1, ay1] = t.geometry.aabb;
   const width = ax1 - ax0;
@@ -235,6 +240,7 @@ function baselineTokenToToken(
     line_index,
     v1_line_index: t.v1_line_index,
     blob_id: t.blob_id,
+    edit_id,
     cluster: t.cluster,
     label: t.label ?? null,
     manual_override: t.manual_override ?? null,

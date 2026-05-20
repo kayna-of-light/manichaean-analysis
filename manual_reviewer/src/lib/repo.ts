@@ -895,7 +895,7 @@ export function mergeTokens(
   editorialOverlays?: Map<string, EditorialTokenOverlay>,
 ): EffectiveToken[] {
   return tokens.map((t) => {
-    const key = `${t.line_index}:${t.blob_id}`;
+    const key = `${t.line_index}:${t.edit_id ?? t.blob_id}`;
     const edit = edits.get(key);
     const reassign = reassignments?.get(key) ?? null;
     const originalClusterInt = parseInt(t.cluster, 10);

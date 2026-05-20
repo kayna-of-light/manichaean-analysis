@@ -6,6 +6,7 @@ export interface ReviewToken {
   line_index: number;
   v1_line_index?: number;
   blob_id: number;
+  edit_id?: string;
   cluster: string;
   label: string | null;
   effective_label: string | null;

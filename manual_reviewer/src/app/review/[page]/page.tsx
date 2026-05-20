@@ -89,10 +89,14 @@ function itemToNeighbor(item: OrderedLineItem | null) {
     };
   }
   return {
-    blobId: item.token.blob_id,
+    blobId: tokenEditId(item.token),
     label: item.token.effective_label,
     overlineMarkId: item.token.overline_mark_id ?? null,
   };
+}
+
+function tokenEditId(token: ReviewToken): string {
+  return token.edit_id ?? String(token.blob_id);
 }
 
 function toggledFlagStatus(status: string | undefined) {
@@ -273,7 +277,7 @@ export default function ReviewPage() {
     const lineNewBboxes = data.new_bboxes.filter((nb) => nb.line_index === t.line_index);
     const items = orderedLineItems(line?.tokens ?? [], lineNewBboxes);
     const idx = items.findIndex(
-      (item) => item.kind === "token" && item.token.blob_id === t.blob_id && item.token.line_index === t.line_index,
+      (item) => item.kind === "token" && tokenEditId(item.token) === tokenEditId(t),
     );
     const left = idx > 0 ? itemToNeighbor(items[idx - 1]) : null;
     const right = idx >= 0 && idx < items.length - 1 ? itemToNeighbor(items[idx + 1]) : null;
@@ -282,7 +286,7 @@ export default function ReviewPage() {
       page: pageId,
       pageInt: data.page_int,
       lineIndex: t.line_index,
-      blobId: t.blob_id,
+      blobId: tokenEditId(t),
       cluster: t.cluster ?? null,
       currentLabel: t.effective_label,
       currentDiacritics: [],
