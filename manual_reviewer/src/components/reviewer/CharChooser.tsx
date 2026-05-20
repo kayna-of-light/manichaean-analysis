@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Box,
   Button,
@@ -15,7 +15,12 @@ import CloseIcon from "@mui/icons-material/Close";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutlined";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
-import { COPTIC_LETTERS, DIACRITICS, SPECIAL_MARKERS } from "@/lib/copticInventory";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import {
+  COPTIC_LETTERS,
+  DIACRITICS,
+  SPECIAL_MARKERS,
+} from "@/lib/copticInventory";
 import { intentFromKey, applyDiacritic } from "@/lib/copticKeymap";
 import { useReviewerStore } from "./store";
 import type { EditMutationPayload } from "./hooks";
@@ -106,6 +111,19 @@ function displayLabel(lbl: string | null | undefined): string {
   }
 }
 
+function graphemes(input: string): string[] {
+  if (typeof Intl !== "undefined" && "Segmenter" in Intl) {
+    const segmenter = new Intl.Segmenter(undefined, { granularity: "grapheme" });
+    return [...segmenter.segment(input)].map((segment) => segment.segment);
+  }
+  return [...input];
+}
+
+function sequenceLabelsFromText(input: string): string[] {
+  return graphemes(input.normalize("NFC"))
+    .filter((segment) => !/^\s+$/u.test(segment));
+}
+
 export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Props) {
   const anchor = useReviewerStore((s) => s.chooserAnchor);
   const updateLabel = useReviewerStore((s) => s.updateChooserLabel);
@@ -113,12 +131,29 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
   const toggleOverlineRight = useReviewerStore((s) => s.toggleOverlineRight);
   const closeChooser = useReviewerStore((s) => s.closeChooser);
   const inputRef = useRef<HTMLInputElement>(null);
+  const sequenceInputRef = useRef<HTMLInputElement>(null);
   const [, force] = useState(0);
   const [rawMode, setRawMode] = useState(false);
+  const [sequenceMode, setSequenceMode] = useState(false);
+  const [sequenceText, setSequenceText] = useState("");
 
   const submitEdit = (payload: EditMutationPayload) => {
     closeChooser();
     window.setTimeout(() => mutateEdit(payload), 250);
+  };
+
+  const insertSequenceText = (text: string) => {
+    const input = sequenceInputRef.current;
+    const current = input?.value ?? sequenceText;
+    const start = input?.selectionStart ?? current.length;
+    const end = input?.selectionEnd ?? start;
+    const next = current.slice(0, start) + text + current.slice(end);
+    setSequenceText(next);
+    requestAnimationFrame(() => {
+      sequenceInputRef.current?.focus();
+      const pos = start + text.length;
+      sequenceInputRef.current?.setSelectionRange(pos, pos);
+    });
   };
 
   // Focus input when the popover opens so keymap captures keys.
@@ -128,6 +163,18 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
       return () => clearTimeout(t);
     }
   }, [anchorEl]);
+
+  useEffect(() => {
+    if (sequenceMode && sequenceInputRef.current) {
+      const t = setTimeout(() => sequenceInputRef.current?.focus(), 30);
+      return () => clearTimeout(t);
+    }
+  }, [sequenceMode]);
+
+  useEffect(() => {
+    setSequenceMode(false);
+    setSequenceText("");
+  }, [anchor?.page, anchor?.lineIndex, anchor?.blobId]);
 
   const commit = (deleted = false) => {
     if (!anchor) return;
@@ -230,6 +277,44 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
     });
   };
 
+  const sequenceLabels = useMemo(() => sequenceLabelsFromText(sequenceText), [sequenceText]);
+
+  const commitSequence = () => {
+    if (!anchor || sequenceLabels.length === 0) return;
+    const targets = anchor.sequenceTargets.slice(0, sequenceLabels.length);
+    if (targets.length !== sequenceLabels.length) return;
+
+    const blobEdits: EditMutationPayload["blob_edits"] = [];
+    const newBboxUpdates: EditMutationPayload["update_new_bboxes"] = [];
+
+    targets.forEach((target, index) => {
+      const label = sequenceLabels[index];
+      if (target.kind === "new") {
+        newBboxUpdates.push({
+          id: String(target.blobId),
+          label,
+          diacritics: [],
+          overline_mark_id: null,
+        });
+      } else {
+        blobEdits.push({
+          line_index: anchor.lineIndex,
+          blob_id: target.blobId,
+          label,
+          diacritics: [],
+          deleted: false,
+          overline_mark_id: null,
+          source: "manual",
+        });
+      }
+    });
+
+    submitEdit({
+      ...(blobEdits.length > 0 ? { blob_edits: blobEdits } : {}),
+      ...(newBboxUpdates.length > 0 ? { update_new_bboxes: newBboxUpdates } : {}),
+    });
+  };
+
   const clearLabel = () => {
     updateLabel(null, []);
     force((n) => n + 1);
@@ -237,6 +322,14 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
 
   const onKeyDown = (e: React.KeyboardEvent) => {
     if (!anchor) return;
+
+    if ((e.target as HTMLElement).closest("[data-sequence-input='true']")) {
+      if (e.key === "Escape") {
+        e.preventDefault();
+        closeChooser();
+      }
+      return;
+    }
 
     if (e.key === "Delete") {
       e.preventDefault();
@@ -315,6 +408,9 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
   const currentLabelForDisplay = groupBlocksAbove
     ? stripDiacriticSlot(anchor.currentLabel, "above")
     : anchor.currentLabel;
+  const sequenceTargetCount = anchor.sequenceTargets.length;
+  const sequenceApplyCount = sequenceLabels.length;
+  const sequenceCanApply = sequenceApplyCount > 0 && sequenceApplyCount <= sequenceTargetCount;
 
   const clearAboveForGroup = () => {
     const stripped = stripDiacriticSlot(anchor.currentLabel, "above");
@@ -363,6 +459,15 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
           >
             ABC
           </Button>
+          <Button
+            size="small"
+            variant={sequenceMode ? "contained" : "outlined"}
+            startIcon={<KeyboardDoubleArrowRightIcon fontSize="small" />}
+            onClick={() => setSequenceMode((v) => !v)}
+            sx={{ minWidth: 0, px: 1, py: 0.25, fontSize: 11, textTransform: "none" }}
+          >
+            Seq
+          </Button>
           <IconButton size="small" onClick={onClose} aria-label="close">
             <CloseIcon fontSize="small" />
           </IconButton>
@@ -396,6 +501,70 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
             />
           )}
         </Stack>
+        {sequenceMode && (
+          <Stack spacing={0.75} sx={{ my: 1 }}>
+            <TextField
+              inputRef={sequenceInputRef}
+              value={sequenceText}
+              onChange={(event) => setSequenceText(event.target.value)}
+              onKeyDown={(event) => {
+                event.stopPropagation();
+                if ((event.ctrlKey || event.metaKey) && event.key === "Enter") {
+                  event.preventDefault();
+                  if (sequenceCanApply) commitSequence();
+                } else if (event.key === "Escape") {
+                  event.preventDefault();
+                  closeChooser();
+                } else if (!rawMode && !event.ctrlKey && !event.metaKey) {
+                  const intent = intentFromKey(event);
+                  if (intent?.kind === "label") {
+                    event.preventDefault();
+                    insertSequenceText(intent.label);
+                  } else if (intent?.kind === "special") {
+                    event.preventDefault();
+                    insertSequenceText(intent.token);
+                  } else if (intent?.kind === "diacritic") {
+                    event.preventDefault();
+                    insertSequenceText(intent.combining);
+                  }
+                }
+              }}
+              data-sequence-input="true"
+              fullWidth
+              multiline
+              minRows={2}
+              maxRows={4}
+              size="small"
+              placeholder="ⲡⲁⲓⲣⲏⲧⲉ"
+              sx={{
+                textarea: {
+                  fontFamily: "var(--font-coptic)",
+                  fontSize: 20,
+                  lineHeight: 1.35,
+                },
+              }}
+            />
+            <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
+              <Typography
+                variant="caption"
+                color={sequenceApplyCount > sequenceTargetCount ? "error" : "text.secondary"}
+              >
+                {sequenceApplyCount} / {sequenceTargetCount}
+              </Typography>
+              <Box sx={{ flex: 1 }} />
+              <Button
+                size="small"
+                variant="contained"
+                startIcon={<KeyboardDoubleArrowRightIcon fontSize="small" />}
+                disabled={!sequenceCanApply || editPending}
+                onClick={commitSequence}
+              >
+                Apply {Math.min(sequenceApplyCount, sequenceTargetCount)}
+              </Button>
+            </Stack>
+            <Divider sx={{ my: 0.5 }} />
+          </Stack>
+        )}
         {anchor.candidates.length > 0 && (
           <>
             <Typography variant="caption" color="text.secondary">

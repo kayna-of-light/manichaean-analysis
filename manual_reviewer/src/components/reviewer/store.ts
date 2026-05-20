@@ -15,6 +15,13 @@ export interface ChooserPreview {
   aabb: [number, number, number, number];
 }
 
+export interface SequenceTarget {
+  kind: "token" | "new";
+  blobId: string | number;
+  label: string | null;
+  centerX: number;
+}
+
 export interface ChooserAnchor {
   page: string;
   pageInt: number;
@@ -29,6 +36,7 @@ export interface ChooserAnchor {
   leftNeighbor: OverlineNeighbor | null;
   rightNeighbor: OverlineNeighbor | null;
   isNewBbox?: boolean;
+  sequenceTargets: SequenceTarget[];
   /** Optional crop info for the upper-right preview in the chooser. */
   preview?: ChooserPreview | null;
   // Staged overline changes (null = no change, number = set, -1 = clear)
