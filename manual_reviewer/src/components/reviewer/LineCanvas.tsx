@@ -84,6 +84,8 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
   const pageW = page.image_size[0];
   const pageH = page.image_size[1];
 
+  const tokenId = (token: ReviewToken) => token.edit_id ?? String(token.blob_id);
+
   const tokenBboxes = line.tokens.map((t) => {
     if (!t.img_quad || t.deleted) return null;
     const qxs = t.img_quad.map((p) => p[0]);
@@ -104,7 +106,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     };
   });
 
-  const hiddenBlobIds = new Set<number | string>();
+  const hiddenBlobIds = new Set<string>();
   for (const current of tokenBboxes) {
     if (!current || current.area <= 0) continue;
     for (const other of tokenBboxes) {
@@ -113,7 +115,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
       const overlapH = Math.max(0, Math.min(current.bottom, other.bottom) - Math.max(current.top, other.top));
       const covered = (overlapW * overlapH) / current.area;
       if (covered >= 0.88) {
-        hiddenBlobIds.add(current.token.blob_id);
+        hiddenBlobIds.add(tokenId(current.token));
         break;
       }
     }
@@ -193,11 +195,11 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
           if (!t.img_quad) return null;
           if (t.deleted) return null;
           const isHighlight =
-            highlightBlob !== null && highlightBlob === t.blob_id;
+            highlightBlob !== null && String(highlightBlob) === tokenId(t);
           const needsReview = t.review || t.user_modified || (t.candidates?.length ?? 0) > 0;
           const qxs = t.img_quad.map((p) => p[0]);
           const qys = t.img_quad.map((p) => p[1]);
-          const isHiddenByOverlap = hiddenBlobIds.has(t.blob_id);
+          const isHiddenByOverlap = hiddenBlobIds.has(tokenId(t));
 
           const stroke = isHiddenByOverlap
             ? "rgba(255,0,220,0.95)"
@@ -216,7 +218,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
             const cx = (Math.min(...qxs) + Math.max(...qxs)) / 2;
             const cy = (Math.min(...qys) + Math.max(...qys)) / 2;
             return (
-              <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${t.blob_id}`}>
+              <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`}>
                 <circle
                   cx={cx}
                   cy={cy}
@@ -248,7 +250,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
           }
 
           return (
-            <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${t.blob_id}`}>
+            <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`}>
               <polygon
                 points={points}
                 fill={isHighlight ? "rgba(200,164,101,0.18)" : "rgba(0,0,0,0)"}

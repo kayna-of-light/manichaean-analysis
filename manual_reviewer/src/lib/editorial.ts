@@ -16,6 +16,7 @@ import {
   readInitialBaseline,
   textBodyImageUrl,
 } from "./pipelineReaders";
+import { editIdsForBaselineLine, editKey } from "./tokenIdentity";
 import type { Baseline, BaselineToken } from "./zodSchemas";
 
 export interface EditorialMatchPreview {
@@ -56,6 +57,7 @@ interface LiveToken {
   line_index: number;
   v1_line_index: number | null;
   blob_id: number;
+  edit_id: string;
   cluster: number | null;
   token: BaselineToken;
 }
@@ -177,15 +179,20 @@ export function maybeSeedEditorialDataset(): void {
 }
 
 function tokenKey(lineIndex: number, blobId: number | string): string {
-  return `${lineIndex}:${blobId}`;
+  return editKey(lineIndex, blobId);
+}
+
+function liveTokenKey(token: LiveToken): string {
+  return tokenKey(token.line_index, token.edit_id);
 }
 
 function effectiveCluster(
   token: BaselineToken,
   lineIndex: number,
+  editId: string,
   reassignments: Map<string, ClusterReassignmentRow>,
 ): number | null {
-  const reassignment = reassignments.get(tokenKey(lineIndex, token.blob_id));
+  const reassignment = reassignments.get(tokenKey(lineIndex, editId));
   if (reassignment) return reassignment.to_cluster;
   const parsed = Number(token.cluster);
   return Number.isFinite(parsed) ? parsed : null;
@@ -197,18 +204,21 @@ function liveLinesForBaseline(
   unsetSet: Set<string>,
   reassignments: Map<string, ClusterReassignmentRow>,
 ): LiveToken[][] {
-  return baseline.lines.map((line) =>
-    line.tokens
-      .filter((token) => !unsetSet.has(tokenKey(line.line_index, token.blob_id)))
-      .map((token) => ({
+  return baseline.lines.map((line) => {
+    const editIds = editIdsForBaselineLine(line);
+    return line.tokens
+      .map((token, index) => ({ token, editId: editIds[index] }))
+      .filter(({ editId }) => !unsetSet.has(tokenKey(line.line_index, editId)))
+      .map(({ token, editId }) => ({
         page,
         line_index: line.line_index,
         v1_line_index: token.v1_line_index ?? line.v1_line_index ?? null,
         blob_id: token.blob_id,
-        cluster: effectiveCluster(token, line.line_index, reassignments),
+        edit_id: editId,
+        cluster: effectiveCluster(token, line.line_index, editId, reassignments),
         token,
-      })),
-  );
+      }));
+  });
 }
 
 function aabbUnion(tokens: LiveToken[]): [number, number, number, number] | null {
@@ -323,7 +333,7 @@ function matchArrayOnBaseline(
           line_index: window[0].line_index,
           v1_line_index: window[0].v1_line_index,
           token_count: window.length,
-          token_keys: window.map((token) => tokenKey(token.line_index, token.blob_id)),
+          token_keys: window.map(liveTokenKey),
           blob_ids: window.map((token) => token.blob_id),
           image_url: imageUrl,
           image_size: baseline.image_size,
@@ -346,7 +356,7 @@ function matchArrayOnBaseline(
             line_index: window[0].line_index,
             v1_line_index: window[0].v1_line_index,
             token_count: window.length,
-            token_keys: window.map((token) => tokenKey(token.line_index, token.blob_id)),
+            token_keys: window.map(liveTokenKey),
             blob_ids: window.map((token) => token.blob_id),
             image_url: imageUrl,
             image_size: baseline.image_size,
@@ -488,7 +498,7 @@ function applyOverlayWindow(
 ) {
   for (let index = 0; index < window.length; index += 1) {
     const token = window[index];
-    const key = tokenKey(token.line_index, token.blob_id);
+    const key = liveTokenKey(token);
     if (overlay.has(key)) continue;
     overlay.set(key, {
       label: chars[index],

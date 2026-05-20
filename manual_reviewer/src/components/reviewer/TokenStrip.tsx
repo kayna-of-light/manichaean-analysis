@@ -109,6 +109,10 @@ function tokenBounds(t: ReviewToken): { x: number; left: number; right: number }
   return { x: 0, left: 0, right: 0 };
 }
 
+function tokenEditId(token: ReviewToken): string {
+  return token.edit_id ?? String(token.blob_id);
+}
+
 function newBboxDisplay(label: string | null, olPos: OverlinePos): string {
   const display = label || "·";
   if (!olPos) return display;
@@ -121,7 +125,7 @@ function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | 
       const bounds = tokenBounds(token);
       return {
         kind: "token" as const,
-        key: `t:${token.line_index}:${token.v1_line_index ?? 0}:${token.blob_id}`,
+        key: `t:${token.line_index}:${token.v1_line_index ?? 0}:${tokenEditId(token)}`,
         overlineMarkId: token.overline_mark_id ?? null,
         v1Line: token.v1_line_index ?? 0,
         token,
@@ -313,7 +317,7 @@ function StripItemChar({
       <TokenChar
         t={item.token}
         olPos={olPos}
-        isSelected={selectedLine === item.token.line_index && selectedBlobId === item.token.blob_id}
+        isSelected={selectedLine === item.token.line_index && String(selectedBlobId) === tokenEditId(item.token)}
         onTokenClick={onTokenClick}
       />
     );
@@ -362,6 +366,9 @@ function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
           <div>
             blob {t.blob_id} · cluster {t.cluster}
           </div>
+          {t.edit_id && t.edit_id !== String(t.blob_id) && (
+            <div>edit id: {t.edit_id}</div>
+          )}
           <div>label: {t.effective_label ?? "—"}</div>
           {t.editorial_overlay && (
             <div>editorial: {t.editorial_overlay.sentence_text}</div>

@@ -31,6 +31,7 @@ export const TokenSchema = z.object({
   line_index: z.number(),
   v1_line_index: z.number().optional(),
   blob_id: z.number(),
+  edit_id: z.string().optional(),
   split_metadata: z.unknown().nullable().optional(),
   split_expected_base: z.string().nullable().optional(),
   split_expected_text: z.string().nullable().optional(),
