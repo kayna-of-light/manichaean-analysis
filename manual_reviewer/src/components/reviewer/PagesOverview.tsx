@@ -33,11 +33,10 @@ export function PagesOverview() {
           }}
         >
           {data.pages.map((p) => {
-            const checked = p.done_lines + p.flagged_lines;
             const total = p.total_lines;
-            const boundedChecked = total > 0 ? Math.min(checked, total) : checked;
-            const progress = total > 0 ? clampProgress((boundedChecked / total) * 100) : 0;
-            const allDone = total > 0 && boundedChecked >= total;
+            const completed = total > 0 ? Math.min(p.done_lines, total) : p.done_lines;
+            const progress = total > 0 ? clampProgress((completed / total) * 100) : 0;
+            const allDone = total > 0 && completed >= total;
             return (
               <Button
                 key={p.page}
@@ -96,9 +95,9 @@ export function PagesOverview() {
                       }}
                     />
                   )}
-                  {total > 0 && checked > 0 && (
+                  {total > 0 && (p.done_lines > 0 || p.flagged_lines > 0) && (
                     <Typography sx={{ fontSize: 9, opacity: 0.6, alignSelf: "center" }}>
-                      {checked}/{total}
+                      {completed}/{total}
                     </Typography>
                   )}
                 </Stack>
