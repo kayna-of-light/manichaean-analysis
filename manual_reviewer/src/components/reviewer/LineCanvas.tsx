@@ -106,11 +106,15 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     };
   });
 
+  const visibleTokenBboxes = tokenBboxes.filter(
+    (bbox): bbox is NonNullable<(typeof tokenBboxes)[number]> => bbox !== null,
+  );
+
   const hiddenBlobIds = new Set<string>();
-  for (const current of tokenBboxes) {
-    if (!current || current.area <= 0) continue;
-    for (const other of tokenBboxes) {
-      if (!other || other === current || other.area <= current.area * 1.25) continue;
+  for (const current of visibleTokenBboxes) {
+    if (current.area <= 0) continue;
+    for (const other of visibleTokenBboxes) {
+      if (other === current || other.area <= current.area * 1.25) continue;
       const overlapW = Math.max(0, Math.min(current.right, other.right) - Math.max(current.left, other.left));
       const overlapH = Math.max(0, Math.min(current.bottom, other.bottom) - Math.max(current.top, other.top));
       const covered = (overlapW * overlapH) / current.area;
@@ -120,6 +124,90 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
       }
     }
   }
+
+  const baseTokenBboxes = [...visibleTokenBboxes]
+    .filter((bbox) => !hiddenBlobIds.has(tokenId(bbox.token)))
+    .sort((a, b) => b.area - a.area);
+  const hiddenTokenBboxes = [...visibleTokenBboxes]
+    .filter((bbox) => hiddenBlobIds.has(tokenId(bbox.token)))
+    .sort((a, b) => b.area - a.area);
+
+  const renderTokenOverlay = (
+    t: ReviewToken,
+    variant: "base" | "hidden",
+  ) => {
+    const isHighlight =
+      highlightBlob !== null && String(highlightBlob) === tokenId(t);
+    const needsReview = t.review || t.user_modified || (t.candidates?.length ?? 0) > 0;
+    const qxs = t.img_quad?.map((p) => p[0]) ?? [];
+    const qys = t.img_quad?.map((p) => p[1]) ?? [];
+
+    const stroke = variant === "hidden"
+      ? "rgba(255,0,220,0.95)"
+      : t.unset
+        ? "rgba(255,99,71,0.8)"
+        : t.user_modified
+          ? "var(--color-glass-accent)"
+          : needsReview
+            ? "rgba(255,200,90,0.8)"
+            : "rgba(100,160,220,0.55)";
+    const points = t.img_quad
+      ?.map((p) => `${p[0]},${p[1]}`)
+      .join(" ") ?? "";
+    const key = `${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`;
+
+    if (variant === "hidden") {
+      const cx = (Math.min(...qxs) + Math.max(...qxs)) / 2;
+      const cy = (Math.min(...qys) + Math.max(...qys)) / 2;
+      return (
+        <g key={key}>
+          <circle
+            cx={cx}
+            cy={cy}
+            r={5}
+            fill="rgba(255,0,220,0.2)"
+            stroke="rgba(255,0,220,0.95)"
+            strokeWidth={2}
+            vectorEffect="non-scaling-stroke"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
+            }}
+          />
+          <polygon
+            points={points}
+            fill="rgba(255,0,220,0.35)"
+            stroke="rgba(255,0,220,0.95)"
+            strokeWidth={1.5}
+            vectorEffect="non-scaling-stroke"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
+            }}
+          />
+        </g>
+      );
+    }
+
+    return (
+      <g key={key}>
+        <polygon
+          points={points}
+          fill={isHighlight ? "rgba(200,164,101,0.18)" : "rgba(0,0,0,0)"}
+          stroke={stroke}
+          strokeWidth={isHighlight ? 1.6 : 0.8}
+          vectorEffect="non-scaling-stroke"
+          style={{ cursor: "pointer" }}
+          onClick={(e) => {
+            e.stopPropagation();
+            onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
+          }}
+        />
+      </g>
+    );
+  };
 
   const clientToImage = (clientX: number, clientY: number) => {
     const rect = ref.current?.getBoundingClientRect();
@@ -191,81 +279,8 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
           preserveAspectRatio="none"
           style={{ pointerEvents: "none" }}
         />
-        {line.tokens.map((t) => {
-          if (!t.img_quad) return null;
-          if (t.deleted) return null;
-          const isHighlight =
-            highlightBlob !== null && String(highlightBlob) === tokenId(t);
-          const needsReview = t.review || t.user_modified || (t.candidates?.length ?? 0) > 0;
-          const qxs = t.img_quad.map((p) => p[0]);
-          const qys = t.img_quad.map((p) => p[1]);
-          const isHiddenByOverlap = hiddenBlobIds.has(tokenId(t));
-
-          const stroke = isHiddenByOverlap
-            ? "rgba(255,0,220,0.95)"
-            : t.unset
-              ? "rgba(255,99,71,0.8)"
-              : t.user_modified
-                ? "var(--color-glass-accent)"
-                : needsReview
-                  ? "rgba(255,200,90,0.8)"
-                  : "rgba(100,160,220,0.55)";
-          const points = t.img_quad
-            .map((p) => `${p[0]},${p[1]}`)
-            .join(" ");
-
-          if (isHiddenByOverlap) {
-            const cx = (Math.min(...qxs) + Math.max(...qxs)) / 2;
-            const cy = (Math.min(...qys) + Math.max(...qys)) / 2;
-            return (
-              <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`}>
-                <circle
-                  cx={cx}
-                  cy={cy}
-                  r={5}
-                  fill="rgba(255,0,220,0.2)"
-                  stroke="rgba(255,0,220,0.95)"
-                  strokeWidth={2}
-                  vectorEffect="non-scaling-stroke"
-                  style={{ cursor: "pointer" }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
-                  }}
-                />
-                <polygon
-                  points={points}
-                  fill="rgba(255,0,220,0.35)"
-                  stroke="rgba(255,0,220,0.95)"
-                  strokeWidth={1.5}
-                  vectorEffect="non-scaling-stroke"
-                  style={{ cursor: "pointer" }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
-                  }}
-                />
-              </g>
-            );
-          }
-
-          return (
-            <g key={`${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`}>
-              <polygon
-                points={points}
-                fill={isHighlight ? "rgba(200,164,101,0.18)" : "rgba(0,0,0,0)"}
-                stroke={stroke}
-                strokeWidth={isHighlight ? 1.6 : 0.8}
-                vectorEffect="non-scaling-stroke"
-                style={{ cursor: "pointer" }}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
-                }}
-              />
-            </g>
-          );
-        })}
+        {baseTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "base"))}
+        {hiddenTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "hidden"))}
         {drag && (
           <rect
             x={Math.min(drag.x0, drag.x1)}
