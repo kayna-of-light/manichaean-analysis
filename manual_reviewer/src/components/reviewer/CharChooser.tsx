@@ -18,7 +18,7 @@ import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import { COPTIC_LETTERS, DIACRITICS, SPECIAL_MARKERS } from "@/lib/copticInventory";
 import { intentFromKey, applyDiacritic } from "@/lib/copticKeymap";
 import { useReviewerStore } from "./store";
-import { useEditMutation } from "./hooks";
+import type { EditMutationPayload } from "./hooks";
 import { ChooserPreview } from "./ChooserPreview";
 
 const COPTIC_KEYBOARD_LAYOUT: (string | null)[][] = [
@@ -79,9 +79,10 @@ function toggleExclusiveDiacritic(
 }
 
 interface Props {
-  pageId: string;
   anchorEl: HTMLElement | null;
   onClose: () => void;
+  mutateEdit: (payload: EditMutationPayload) => void;
+  editPending: boolean;
 }
 
 /** Convert legacy cluster-name labels to their display character */
@@ -105,16 +106,20 @@ function displayLabel(lbl: string | null | undefined): string {
   }
 }
 
-export function CharChooser({ pageId, anchorEl, onClose }: Props) {
+export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Props) {
   const anchor = useReviewerStore((s) => s.chooserAnchor);
   const updateLabel = useReviewerStore((s) => s.updateChooserLabel);
   const toggleOverlineLeft = useReviewerStore((s) => s.toggleOverlineLeft);
   const toggleOverlineRight = useReviewerStore((s) => s.toggleOverlineRight);
   const closeChooser = useReviewerStore((s) => s.closeChooser);
-  const mutation = useEditMutation(pageId);
   const inputRef = useRef<HTMLInputElement>(null);
   const [, force] = useState(0);
   const [rawMode, setRawMode] = useState(false);
+
+  const submitEdit = (payload: EditMutationPayload) => {
+    closeChooser();
+    window.setTimeout(() => mutateEdit(payload), 250);
+  };
 
   // Focus input when the popover opens so keymap captures keys.
   useEffect(() => {
@@ -178,10 +183,7 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
     // For new bboxes: delete removes the bbox; save updates its label
     if (anchor.isNewBbox) {
       if (deleted) {
-        mutation.mutate(
-          { delete_new_bboxes: [String(anchor.blobId)] },
-          { onSuccess: () => closeChooser() },
-        );
+        submitEdit({ delete_new_bboxes: [String(anchor.blobId)] });
       } else {
         if (pending.left !== undefined && anchor.leftNeighbor) {
           addOverlineUpdate(anchor.leftNeighbor, pending.left);
@@ -189,21 +191,18 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
         if (pending.right !== undefined && anchor.rightNeighbor) {
           addOverlineUpdate(anchor.rightNeighbor, pending.right);
         }
-        mutation.mutate(
-          {
-            update_new_bboxes: [
-              {
-                id: String(anchor.blobId),
-                label,
-                diacritics,
-                ...(pending.self !== undefined || isCleared ? { overline_mark_id: selfId } : {}),
-              },
-              ...newBboxUpdates,
-            ],
-            ...(blobEdits.length > 0 ? { blob_edits: blobEdits } : {}),
-          },
-          { onSuccess: () => closeChooser() },
-        );
+        submitEdit({
+          update_new_bboxes: [
+            {
+              id: String(anchor.blobId),
+              label,
+              diacritics,
+              ...(pending.self !== undefined || isCleared ? { overline_mark_id: selfId } : {}),
+            },
+            ...newBboxUpdates,
+          ],
+          ...(blobEdits.length > 0 ? { blob_edits: blobEdits } : {}),
+        });
       }
       return;
     }
@@ -225,13 +224,10 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
     if (pending.right !== undefined && anchor.rightNeighbor) {
       addOverlineUpdate(anchor.rightNeighbor, pending.right);
     }
-    mutation.mutate(
-      {
-        blob_edits: blobEdits,
-        ...(newBboxUpdates.length > 0 ? { update_new_bboxes: newBboxUpdates } : {}),
-      },
-      { onSuccess: () => closeChooser() },
-    );
+    submitEdit({
+      blob_edits: blobEdits,
+      ...(newBboxUpdates.length > 0 ? { update_new_bboxes: newBboxUpdates } : {}),
+    });
   };
 
   const clearLabel = () => {
@@ -333,6 +329,7 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
       open={Boolean(anchorEl)}
       anchorEl={anchorEl}
       onClose={onClose}
+      transitionDuration={0}
       anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       transformOrigin={{ vertical: "top", horizontal: "center" }}
       slotProps={{ paper: { sx: { p: 2, maxWidth: 520 } } }}
@@ -622,14 +619,14 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
             startIcon={<CheckIcon />}
             variant="contained"
             onClick={() => commit()}
-            disabled={mutation.isPending}
+            disabled={editPending}
           >
             Save (Enter)
           </Button>
           <Button
             startIcon={<BackspaceOutlinedIcon />}
             onClick={clearLabel}
-            disabled={mutation.isPending}
+            disabled={editPending}
           >
             Clear (Backspace)
           </Button>
@@ -637,7 +634,7 @@ export function CharChooser({ pageId, anchorEl, onClose }: Props) {
             color="error"
             startIcon={<DeleteOutlineIcon />}
             onClick={() => commit(true)}
-            disabled={mutation.isPending}
+            disabled={editPending}
           >
             Delete
           </Button>

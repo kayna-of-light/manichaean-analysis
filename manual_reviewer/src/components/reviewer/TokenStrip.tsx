@@ -1,6 +1,6 @@
 "use client";
 import { useMemo } from "react";
-import { Box, Tooltip } from "@mui/material";
+import { Box } from "@mui/material";
 import type { ReviewLine, ReviewToken } from "./hooks";
 import { useReviewerStore } from "./store";
 
@@ -117,6 +117,17 @@ function newBboxDisplay(label: string | null, olPos: OverlinePos): string {
   const display = label || "·";
   if (!olPos) return display;
   return stripOverlineCodepoints(display) + overlineChar(olPos);
+}
+
+function tokenTitle(t: ReviewToken): string {
+  const lines = [
+    `blob ${t.blob_id} · cluster ${t.cluster}`,
+    `label: ${t.effective_label ?? "—"}`,
+  ];
+  if (t.edit_id && t.edit_id !== String(t.blob_id)) lines.splice(1, 0, `edit id: ${t.edit_id}`);
+  if (t.editorial_overlay) lines.push(`editorial: ${t.editorial_overlay.sentence_text}`);
+  if (t.candidates.length > 0) lines.push(`candidates: ${t.candidates.slice(0, 6).join(" ")}`);
+  return lines.join("\n");
 }
 
 function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | undefined): StripItem[] {
@@ -326,22 +337,21 @@ function StripItemChar({
   const display = newBboxDisplay(item.nb.label, olPos);
   const isSelected = selectedBlobId === item.nb.id;
   return (
-    <Tooltip title={`new bbox ${item.nb.id.slice(0, 8)}`} placement="top" arrow>
-      <span
-        className="coptic"
-        onClick={(e) => onNewBboxClick?.(item.nb, { clientX: e.clientX, clientY: e.clientY })}
-        style={{
-          cursor: "pointer",
-          padding: "0 1px",
-          borderRadius: 2,
-          backgroundColor: "rgba(80,200,120,0.25)",
-          outline: isSelected ? "1.5px solid rgba(80,200,120,0.9)" : undefined,
-          color: item.nb.label ? "inherit" : "var(--color-text-muted, #999)",
-        }}
-      >
-        {display}
-      </span>
-    </Tooltip>
+    <span
+      className="coptic"
+      title={`new bbox ${item.nb.id.slice(0, 8)}`}
+      onClick={(e) => onNewBboxClick?.(item.nb, { clientX: e.clientX, clientY: e.clientY })}
+      style={{
+        cursor: "pointer",
+        padding: "0 1px",
+        borderRadius: 2,
+        backgroundColor: "rgba(80,200,120,0.25)",
+        outline: isSelected ? "1.5px solid rgba(80,200,120,0.9)" : undefined,
+        color: item.nb.label ? "inherit" : "var(--color-text-muted, #999)",
+      }}
+    >
+      {display}
+    </span>
   );
 }
 
@@ -360,52 +370,31 @@ function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
   const bg = tokenStateColor(t);
   const isUnset = t.unset && !t.effective_label;
   return (
-    <Tooltip
-      title={
-        <Box sx={{ fontSize: 12, lineHeight: 1.5 }}>
-          <div>
-            blob {t.blob_id} · cluster {t.cluster}
-          </div>
-          {t.edit_id && t.edit_id !== String(t.blob_id) && (
-            <div>edit id: {t.edit_id}</div>
-          )}
-          <div>label: {t.effective_label ?? "—"}</div>
-          {t.editorial_overlay && (
-            <div>editorial: {t.editorial_overlay.sentence_text}</div>
-          )}
-          {t.candidates.length > 0 && (
-            <div>candidates: {t.candidates.slice(0, 6).join(" ")}</div>
-          )}
-        </Box>
+    <span
+      className="coptic"
+      title={tokenTitle(t)}
+      onClick={(e) =>
+        onTokenClick(t, { clientX: e.clientX, clientY: e.clientY })
       }
-      placement="top"
-      arrow
+      style={{
+        cursor: "pointer",
+        padding: "0 1px",
+        borderRadius: 2,
+        display: isUnset ? "inline-flex" : undefined,
+        alignItems: isUnset ? "center" : undefined,
+        justifyContent: isUnset ? "center" : undefined,
+        minWidth: isUnset ? 10 : undefined,
+        height: isUnset ? 16 : undefined,
+        verticalAlign: isUnset ? "middle" : undefined,
+        border: isUnset ? "1px dashed rgba(255,99,71,0.8)" : undefined,
+        backgroundColor: bg,
+        outline: isSelected
+          ? "1.5px solid var(--color-glass-accent)"
+          : undefined,
+        color: t.effective_label ? "inherit" : "var(--color-text-muted, #999)",
+      }}
     >
-      <span
-        className="coptic"
-        onClick={(e) =>
-          onTokenClick(t, { clientX: e.clientX, clientY: e.clientY })
-        }
-        style={{
-          cursor: "pointer",
-          padding: "0 1px",
-          borderRadius: 2,
-          display: isUnset ? "inline-flex" : undefined,
-          alignItems: isUnset ? "center" : undefined,
-          justifyContent: isUnset ? "center" : undefined,
-          minWidth: isUnset ? 10 : undefined,
-          height: isUnset ? 16 : undefined,
-          verticalAlign: isUnset ? "middle" : undefined,
-          border: isUnset ? "1px dashed rgba(255,99,71,0.8)" : undefined,
-          backgroundColor: bg,
-          outline: isSelected
-            ? "1.5px solid var(--color-glass-accent)"
-            : undefined,
-          color: t.effective_label ? "inherit" : "var(--color-text-muted, #999)",
-        }}
-      >
-        {display}
-      </span>
-    </Tooltip>
+      {display}
+    </span>
   );
 }

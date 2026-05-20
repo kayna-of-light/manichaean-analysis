@@ -59,9 +59,14 @@ export const useReviewerStore = create<ReviewerState>((set) => ({
   selectedBlobId: null,
   chooserOpen: false,
   chooserAnchor: null,
-  setSelectedLine: (idx) => set({ selectedLine: idx }),
+  setSelectedLine: (idx) =>
+    set((s) => (s.selectedLine === idx ? s : { selectedLine: idx })),
   selectBlob: (lineIndex, blobId) =>
-    set({ selectedLine: lineIndex, selectedBlobId: blobId }),
+    set((s) =>
+      s.selectedLine === lineIndex && s.selectedBlobId === blobId
+        ? s
+        : { selectedLine: lineIndex, selectedBlobId: blobId },
+    ),
   openChooser: (anchor) =>
     set({ chooserOpen: true, chooserAnchor: anchor }),
   closeChooser: () => set({ chooserOpen: false, chooserAnchor: null }),

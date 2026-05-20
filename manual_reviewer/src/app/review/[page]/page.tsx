@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { memo, type Dispatch, type SetStateAction, useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
   Box,
@@ -231,30 +231,11 @@ export default function ReviewPage() {
     return () => window.removeEventListener("keydown", onKey);
   }, [data, selectedLine, scrollToLine, editMutation, chooserAnchor]);
 
-  if (isLoading) {
-    return (
-      <Box sx={{ p: 4, display: "flex", justifyContent: "center" }}>
-        <CircularProgress />
-      </Box>
-    );
-  }
-  if (error || !data) {
-    return (
-      <Box sx={{ p: 4 }}>
-        <Typography color="error">page {pageId} not found</Typography>
-      </Box>
-    );
-  }
-
-  const pageIds = pagesList?.pages.map((p) => p.page) ?? [];
-  const cpos = pageIds.indexOf(pageId);
-  const prev = cpos > 0 ? pageIds[cpos - 1] : null;
-  const next = cpos >= 0 && cpos < pageIds.length - 1 ? pageIds[cpos + 1] : null;
-
-  const onTokenClick = (
+  const onTokenClick = useCallback((
     t: ReviewToken,
     evt: { clientX: number; clientY: number },
   ) => {
+    if (!data) return;
     // synthesize a virtual anchor at the click position so the popover lands here
     const virtual = {
       getBoundingClientRect: () =>
@@ -306,12 +287,13 @@ export default function ReviewPage() {
       })(),
       pendingOverline: { self: undefined, left: undefined, right: undefined },
     });
-  };
+  }, [data, openChooser, pageId, setSelectedLine]);
 
-  const openNewBboxChooser = (
+  const openNewBboxChooser = useCallback((
     nb: NewBbox,
     evt: { clientX: number; clientY: number } | null,
   ) => {
+    if (!data) return;
     setSelectedLine(nb.line_index);
     const rect = lineRefs.current.get(nb.line_index)?.getBoundingClientRect();
     const x = evt?.clientX ?? (rect ? rect.left + rect.width / 2 : 0);
@@ -360,7 +342,27 @@ export default function ReviewPage() {
       },
       pendingOverline: { self: undefined, left: undefined, right: undefined },
     });
-  };
+  }, [data, openChooser, pageId, setSelectedLine]);
+
+  if (isLoading) {
+    return (
+      <Box sx={{ p: 4, display: "flex", justifyContent: "center" }}>
+        <CircularProgress />
+      </Box>
+    );
+  }
+  if (error || !data) {
+    return (
+      <Box sx={{ p: 4 }}>
+        <Typography color="error">page {pageId} not found</Typography>
+      </Box>
+    );
+  }
+
+  const pageIds = pagesList?.pages.map((p) => p.page) ?? [];
+  const cpos = pageIds.indexOf(pageId);
+  const prev = cpos > 0 ? pageIds[cpos - 1] : null;
+  const next = cpos >= 0 && cpos < pageIds.length - 1 ? pageIds[cpos + 1] : null;
 
   return (
     <Box sx={{ display: "flex", height: "calc(100dvh - 114px)", gap: 1.5 }}>
@@ -411,217 +413,23 @@ export default function ReviewPage() {
             gap: 1.5,
           }}
         >
-          {data.lines.map((line) => {
-            const lineNewBboxes = data.new_bboxes.filter((nb) => nb.line_index === line.line_index);
-            const mappedNewBboxes = lineNewBboxes.map((nb) => ({
-              id: nb.id,
-              x0: nb.x0,
-              y0: nb.y0,
-              x1: nb.x1,
-              y1: nb.y1,
-              label: nb.label,
-              overline_mark_id: nb.overline_mark_id ?? null,
-            }));
-            const isSelectedLine = selectedLine === line.line_index;
-            const isDrawing = drawLineIndex === line.line_index;
-            return (
-              <Box
-                key={line.line_index}
-                ref={(node: HTMLDivElement | null) => setLineRef(line.line_index, node)}
-                className="glass line-card"
-                onFocus={() => setSelectedLine(line.line_index)}
-                onMouseEnter={() => setSelectedLine(line.line_index)}
-                sx={{
-                  position: "relative",
-                  p: 1.5,
-                  pt: 1,
-                  flexShrink: 0,
-                  overflow: "visible",
-                  scrollMarginTop: 8,
-                  border: isSelectedLine
-                    ? "1px solid var(--color-glass-accent)"
-                    : "1px solid transparent",
-                  "& .line-toolbar": {
-                    opacity: 0,
-                    visibility: "hidden",
-                    transition: "opacity 120ms ease",
-                  },
-                  "&:hover .line-toolbar, &:focus-within .line-toolbar": {
-                    opacity: 1,
-                    visibility: "visible",
-                  },
-                }}
-              >
-                {/* Ruler-style line number, top-right corner */}
-                <Typography
-                  component="span"
-                  sx={{
-                    position: "absolute",
-                    top: 4,
-                    right: 8,
-                    fontSize: 10,
-                    fontWeight: 600,
-                    lineHeight: 1,
-                    letterSpacing: 0.5,
-                    fontVariantNumeric: "tabular-nums",
-                    color: "text.disabled",
-                    pointerEvents: "none",
-                    userSelect: "none",
-                    zIndex: 2,
-                  }}
-                >
-                  {String(line.line_index).padStart(2, "0")}
-                </Typography>
-
-                {/* Status badge, top-left corner — only when done or flagged */}
-                {(line.status === "done" || line.status === "flagged") && (
-                  <Box
-                    sx={{
-                      position: "absolute",
-                      top: 4,
-                      left: 6,
-                      display: "flex",
-                      alignItems: "center",
-                      gap: 0.5,
-                      px: 0.5,
-                      py: 0.25,
-                      borderRadius: 0.75,
-                      bgcolor: line.status === "done" ? "success.main" : "warning.main",
-                      color: "common.white",
-                      lineHeight: 1,
-                      pointerEvents: "none",
-                      zIndex: 2,
-                      boxShadow: "0 1px 2px rgba(0,0,0,0.25)",
-                    }}
-                  >
-                    {line.status === "done" ? (
-                      <CheckCircleIcon sx={{ fontSize: 12 }} />
-                    ) : (
-                      <FlagIcon sx={{ fontSize: 12 }} />
-                    )}
-                  </Box>
-                )}
-
-                {/* Hover toolbar, top-right, floats above content. Do not render at all while drawing to avoid blocking pointer events. */}
-                {!isDrawing && (
-                  <Stack
-                    className="line-toolbar"
-                    direction="row"
-                    spacing={0.25}
-                    sx={{
-                      position: "absolute",
-                      top: 4,
-                      right: 32,
-                      alignItems: "center",
-                      px: 0.5,
-                      py: 0.25,
-                      borderRadius: 1,
-                      bgcolor: "rgba(20,20,24,0.72)",
-                      backdropFilter: "blur(6px)",
-                      border: "1px solid rgba(255,255,255,0.08)",
-                      zIndex: 3,
-                    }}
-                  >
-                    <Tooltip title="Reset line">
-                      <IconButton
-                        size="small"
-                        sx={{ p: 0.5 }}
-                        onClick={() => {
-                          if (!confirm(`Reset line ${line.line_index} to initial state? All edits on this line will be removed.`)) return;
-                          editMutation.mutate({ reset_line: { line_index: line.line_index } });
-                        }}
-                      >
-                        <RestartAltIcon sx={{ fontSize: 16 }} />
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title={isDrawing ? "Cancel drawing" : "Add bbox"}>
-                      <IconButton
-                        size="small"
-                        sx={{ p: 0.5, color: isDrawing ? "primary.main" : "inherit" }}
-                        onClick={() => setDrawLineIndex(isDrawing ? null : line.line_index)}
-                      >
-                        <AddBoxOutlinedIcon sx={{ fontSize: 16 }} />
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title={line.status === "flagged" ? "Unflag (f)" : "Flag (f)"}>
-                      <IconButton
-                        size="small"
-                        sx={{ p: 0.5, color: line.status === "flagged" ? "warning.main" : "inherit" }}
-                        onClick={() =>
-                          editMutation.mutate({
-                            line_status: {
-                              line_index: line.line_index,
-                              status: toggledFlagStatus(line.status),
-                            },
-                          })
-                        }
-                      >
-                        <FlagOutlinedIcon sx={{ fontSize: 16 }} />
-                      </IconButton>
-                    </Tooltip>
-                    <Tooltip title={line.status === "done" ? "Reopen (d)" : "Done (d)"}>
-                      <IconButton
-                        size="small"
-                        sx={{ p: 0.5, color: line.status === "done" ? "success.main" : "inherit" }}
-                        onClick={() =>
-                          editMutation.mutate({
-                            line_status: {
-                              line_index: line.line_index,
-                              status: toggledDoneStatus(line.status),
-                            },
-                          })
-                        }
-                      >
-                        <CheckCircleOutlineIcon sx={{ fontSize: 16 }} />
-                      </IconButton>
-                    </Tooltip>
-                  </Stack>
-                )}
-
-                <LineCanvas
-                  page={data}
-                  line={line}
-                  highlightBlob={isSelectedLine ? selectedBlobId : null}
-                  onTokenClick={onTokenClick}
-                  drawMode={isDrawing}
-                  newBboxes={mappedNewBboxes}
-                  onNewBbox={(bbox) => {
-                    editMutation.mutate(
-                      {
-                        new_bboxes: [
-                          {
-                            line_index: line.line_index,
-                            ...bbox,
-                            coord_space: "image",
-                          },
-                        ],
-                      },
-                      {
-                        onSuccess: (result) => {
-                          const newId = result?.new_bboxes?.[0];
-                          if (newId) setPendingNewBboxOpen(newId);
-                        },
-                      },
-                    );
-                    setDrawLineIndex(null);
-                  }}
-                  onNewBboxClick={(nb, evt) => {
-                    const source = data.new_bboxes.find((b) => b.id === nb.id);
-                    if (source) openNewBboxChooser(source, evt);
-                  }}
-                />
-                <TokenStrip
-                  line={line}
-                  onTokenClick={onTokenClick}
-                  newBboxes={mappedNewBboxes}
-                  onNewBboxClick={(nb, evt) => {
-                    const source = data.new_bboxes.find((b) => b.id === nb.id);
-                    if (source) openNewBboxChooser(source, evt);
-                  }}
-                />
-              </Box>
-            );
-          })}
+          {data.lines.map((line) => (
+            <ReviewLineCard
+              key={line.line_index}
+              page={data}
+              line={line}
+              selectedLine={selectedLine}
+              selectedBlobId={selectedBlobId}
+              drawLineIndex={drawLineIndex}
+              setLineRef={setLineRef}
+              setSelectedLine={setSelectedLine}
+              setDrawLineIndex={setDrawLineIndex}
+              setPendingNewBboxOpen={setPendingNewBboxOpen}
+              mutateEdit={editMutation.mutate}
+              onTokenClick={onTokenClick}
+              openNewBboxChooser={openNewBboxChooser}
+            />
+          ))}
 
           {(prev || next) && (
             <Stack
@@ -700,8 +508,9 @@ export default function ReviewPage() {
       <ClusterPanel clusterId={clusterId} onClose={() => setClusterId(null)} />
 
       <CharChooser
-        pageId={pageId}
         anchorEl={popoverEl}
+        mutateEdit={editMutation.mutate}
+        editPending={editMutation.isPending}
         onClose={() => {
           setPopoverEl(null);
           closeChooser();
@@ -710,3 +519,240 @@ export default function ReviewPage() {
     </Box>
   );
 }
+
+interface ReviewLineCardProps {
+  page: ReviewPage;
+  line: ReviewPage["lines"][number];
+  selectedLine: number | null;
+  selectedBlobId: string | number | null;
+  drawLineIndex: number | null;
+  setLineRef: (lineIndex: number, node: HTMLDivElement | null) => void;
+  setSelectedLine: (idx: number | null) => void;
+  setDrawLineIndex: Dispatch<SetStateAction<number | null>>;
+  setPendingNewBboxOpen: Dispatch<SetStateAction<string | null>>;
+  mutateEdit: ReturnType<typeof useEditMutation>["mutate"];
+  onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
+  openNewBboxChooser: (nb: NewBbox, evt: { clientX: number; clientY: number } | null) => void;
+}
+
+const ReviewLineCard = memo(function ReviewLineCard({
+  page,
+  line,
+  selectedLine,
+  selectedBlobId,
+  drawLineIndex,
+  setLineRef,
+  setSelectedLine,
+  setDrawLineIndex,
+  setPendingNewBboxOpen,
+  mutateEdit,
+  onTokenClick,
+  openNewBboxChooser,
+}: ReviewLineCardProps) {
+  const lineNewBboxes = page.new_bboxes.filter((nb) => nb.line_index === line.line_index);
+  const mappedNewBboxes = lineNewBboxes.map((nb) => ({
+    id: nb.id,
+    x0: nb.x0,
+    y0: nb.y0,
+    x1: nb.x1,
+    y1: nb.y1,
+    label: nb.label,
+    overline_mark_id: nb.overline_mark_id ?? null,
+  }));
+  const isSelectedLine = selectedLine === line.line_index;
+  const isDrawing = drawLineIndex === line.line_index;
+
+  return (
+    <Box
+      ref={(node: HTMLDivElement | null) => setLineRef(line.line_index, node)}
+      className="glass line-card"
+      onFocus={() => setSelectedLine(line.line_index)}
+      onMouseEnter={() => setSelectedLine(line.line_index)}
+      sx={{
+        position: "relative",
+        p: 1.5,
+        pt: 1,
+        flexShrink: 0,
+        overflow: "visible",
+        scrollMarginTop: 8,
+        border: isSelectedLine
+          ? "1px solid var(--color-glass-accent)"
+          : "1px solid transparent",
+        "& .line-toolbar": {
+          opacity: 0,
+          visibility: "hidden",
+          transition: "opacity 120ms ease",
+        },
+        "&:hover .line-toolbar, &:focus-within .line-toolbar": {
+          opacity: 1,
+          visibility: "visible",
+        },
+      }}
+    >
+      <Typography
+        component="span"
+        sx={{
+          position: "absolute",
+          top: 4,
+          right: 8,
+          fontSize: 10,
+          fontWeight: 600,
+          lineHeight: 1,
+          letterSpacing: 0.5,
+          fontVariantNumeric: "tabular-nums",
+          color: "text.disabled",
+          pointerEvents: "none",
+          userSelect: "none",
+          zIndex: 2,
+        }}
+      >
+        {String(line.line_index).padStart(2, "0")}
+      </Typography>
+
+      {(line.status === "done" || line.status === "flagged") && (
+        <Box
+          sx={{
+            position: "absolute",
+            top: 4,
+            left: 6,
+            display: "flex",
+            alignItems: "center",
+            gap: 0.5,
+            px: 0.5,
+            py: 0.25,
+            borderRadius: 0.75,
+            bgcolor: line.status === "done" ? "success.main" : "warning.main",
+            color: "common.white",
+            lineHeight: 1,
+            pointerEvents: "none",
+            zIndex: 2,
+            boxShadow: "0 1px 2px rgba(0,0,0,0.25)",
+          }}
+        >
+          {line.status === "done" ? (
+            <CheckCircleIcon sx={{ fontSize: 12 }} />
+          ) : (
+            <FlagIcon sx={{ fontSize: 12 }} />
+          )}
+        </Box>
+      )}
+
+      {!isDrawing && (
+        <Stack
+          className="line-toolbar"
+          direction="row"
+          spacing={0.25}
+          sx={{
+            position: "absolute",
+            top: 4,
+            right: 32,
+            alignItems: "center",
+            px: 0.5,
+            py: 0.25,
+            borderRadius: 1,
+            bgcolor: "rgba(20,20,24,0.72)",
+            backdropFilter: "blur(6px)",
+            border: "1px solid rgba(255,255,255,0.08)",
+            zIndex: 3,
+          }}
+        >
+          <Tooltip title="Reset line">
+            <IconButton
+              size="small"
+              sx={{ p: 0.5 }}
+              onClick={() => {
+                if (!confirm(`Reset line ${line.line_index} to initial state? All edits on this line will be removed.`)) return;
+                mutateEdit({ reset_line: { line_index: line.line_index } });
+              }}
+            >
+              <RestartAltIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title={isDrawing ? "Cancel drawing" : "Add bbox"}>
+            <IconButton
+              size="small"
+              sx={{ p: 0.5, color: isDrawing ? "primary.main" : "inherit" }}
+              onClick={() => setDrawLineIndex(isDrawing ? null : line.line_index)}
+            >
+              <AddBoxOutlinedIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title={line.status === "flagged" ? "Unflag (f)" : "Flag (f)"}>
+            <IconButton
+              size="small"
+              sx={{ p: 0.5, color: line.status === "flagged" ? "warning.main" : "inherit" }}
+              onClick={() =>
+                mutateEdit({
+                  line_status: {
+                    line_index: line.line_index,
+                    status: toggledFlagStatus(line.status),
+                  },
+                })
+              }
+            >
+              <FlagOutlinedIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title={line.status === "done" ? "Reopen (d)" : "Done (d)"}>
+            <IconButton
+              size="small"
+              sx={{ p: 0.5, color: line.status === "done" ? "success.main" : "inherit" }}
+              onClick={() =>
+                mutateEdit({
+                  line_status: {
+                    line_index: line.line_index,
+                    status: toggledDoneStatus(line.status),
+                  },
+                })
+              }
+            >
+              <CheckCircleOutlineIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+        </Stack>
+      )}
+
+      <LineCanvas
+        page={page}
+        line={line}
+        highlightBlob={isSelectedLine ? selectedBlobId : null}
+        onTokenClick={onTokenClick}
+        drawMode={isDrawing}
+        newBboxes={mappedNewBboxes}
+        onNewBbox={(bbox) => {
+          mutateEdit(
+            {
+              new_bboxes: [
+                {
+                  line_index: line.line_index,
+                  ...bbox,
+                  coord_space: "image",
+                },
+              ],
+            },
+            {
+              onSuccess: (result) => {
+                const newId = result?.results?.new_bboxes?.[0];
+                if (newId) setPendingNewBboxOpen(newId);
+              },
+            },
+          );
+          setDrawLineIndex(null);
+        }}
+        onNewBboxClick={(nb, evt) => {
+          const source = page.new_bboxes.find((bbox) => bbox.id === nb.id);
+          if (source) openNewBboxChooser(source, evt);
+        }}
+      />
+      <TokenStrip
+        line={line}
+        onTokenClick={onTokenClick}
+        newBboxes={mappedNewBboxes}
+        onNewBboxClick={(nb, evt) => {
+          const source = page.new_bboxes.find((bbox) => bbox.id === nb.id);
+          if (source) openNewBboxChooser(source, evt);
+        }}
+      />
+    </Box>
+  );
+});
