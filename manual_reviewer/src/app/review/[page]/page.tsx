@@ -32,7 +32,7 @@ import { LineCanvas } from "@/components/reviewer/LineCanvas";
 import { TokenStrip } from "@/components/reviewer/TokenStrip";
 import { CharChooser } from "@/components/reviewer/CharChooser";
 import { ClusterPanel } from "@/components/reviewer/ClusterPanel";
-import { useReviewerStore } from "@/components/reviewer/store";
+import { useReviewerStore, type SequenceTarget } from "@/components/reviewer/store";
 
 type NewBbox = ReviewPage["new_bboxes"][number];
 
@@ -93,6 +93,28 @@ function itemToNeighbor(item: OrderedLineItem | null) {
     label: item.token.effective_label,
     overlineMarkId: item.token.overline_mark_id ?? null,
   };
+}
+
+function itemToSequenceTarget(item: OrderedLineItem): SequenceTarget {
+  if (item.kind === "new") {
+    return {
+      kind: "new",
+      blobId: item.nb.id,
+      label: item.nb.label,
+      centerX: item.x,
+    };
+  }
+  return {
+    kind: "token",
+    blobId: tokenEditId(item.token),
+    label: item.token.effective_label,
+    centerX: item.x,
+  };
+}
+
+function sequenceTargetsFrom(items: OrderedLineItem[], startIndex: number): SequenceTarget[] {
+  if (startIndex < 0) return [];
+  return items.slice(startIndex).map(itemToSequenceTarget);
 }
 
 function tokenEditId(token: ReviewToken): string {
@@ -192,6 +214,7 @@ export default function ReviewPage() {
       leftNeighbor: left,
       rightNeighbor: right,
       isNewBbox: true,
+      sequenceTargets: sequenceTargetsFrom(items, idx),
       preview: {
         imageUrl: data.image_url,
         imageSize: data.image_size,
@@ -276,6 +299,7 @@ export default function ReviewPage() {
       overlineMarkId: t.overline_mark_id ?? null,
       leftNeighbor: left,
       rightNeighbor: right,
+      sequenceTargets: sequenceTargetsFrom(items, idx),
       preview: (() => {
         const aabb = tokenAabb(t);
         if (!aabb) return null;
@@ -335,6 +359,7 @@ export default function ReviewPage() {
       leftNeighbor: left,
       rightNeighbor: right,
       isNewBbox: true,
+      sequenceTargets: sequenceTargetsFrom(items, idx),
       preview: {
         imageUrl: data.image_url,
         imageSize: data.image_size,
