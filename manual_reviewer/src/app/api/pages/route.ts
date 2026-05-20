@@ -46,18 +46,24 @@ export async function GET() {
 
   // Read total line counts from baseline files (cached per-process)
   const lineCounts = new Map<string, number>();
+  const lineIndexes = new Map<string, Set<number>>();
   await Promise.all(
     pages.map(async (p) => {
       const baseline = await readInitialBaseline(p);
-      if (baseline) lineCounts.set(p, baseline.lines.length);
+      if (baseline) {
+        lineCounts.set(p, baseline.lines.length);
+        lineIndexes.set(
+          p,
+          new Set(baseline.lines.map((line) => line.line_index)),
+        );
+      }
     }),
   );
 
   const progressByPage = new Map<number, PageProgress>();
   for (const line of lineRows) {
     const page = String(line.page).padStart(3, "0");
-    const totalLines = lineCounts.get(page) ?? 0;
-    if (line.line_index < 0 || line.line_index >= totalLines) continue;
+    if (!lineIndexes.get(page)?.has(line.line_index)) continue;
     const progress = progressByPage.get(line.page) ?? {
       done_lines: 0,
       flagged_lines: 0,
