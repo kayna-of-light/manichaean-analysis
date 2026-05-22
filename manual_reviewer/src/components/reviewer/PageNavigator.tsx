@@ -52,6 +52,13 @@ export function PageNavigator() {
                   sx={{ height: 18, fontSize: 10, bgcolor: "rgba(220,120,120,0.2)" }}
                 />
               )}
+              {p.special_lines > 0 && (
+                <Chip
+                  size="small"
+                  label={`${p.special_lines}★`}
+                  sx={{ height: 18, fontSize: 10, bgcolor: "rgba(245,205,90,0.18)" }}
+                />
+              )}
               {p.done_lines > 0 && (
                 <Chip
                   size="small"

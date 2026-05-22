@@ -131,29 +131,42 @@ function tokenTitle(t: ReviewToken): string {
 }
 
 function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | undefined): StripItem[] {
-  return [
-    ...tokens.filter((t) => !t.deleted).map((token) => {
-      const bounds = tokenBounds(token);
-      return {
-        kind: "token" as const,
-        key: `t:${token.line_index}:${token.v1_line_index ?? 0}:${tokenEditId(token)}`,
-        overlineMarkId: token.overline_mark_id ?? null,
-        v1Line: token.v1_line_index ?? 0,
-        token,
-        ...bounds,
-      };
-    }),
-    ...(newBboxes ?? []).map((nb) => ({
+  // Compute sorted visible tokens to determine v1Line for new_bboxes
+  const visibleTokens = tokens.filter((t) => !t.deleted);
+  const tokenItems = visibleTokens.map((token) => {
+    const bounds = tokenBounds(token);
+    return {
+      kind: "token" as const,
+      key: `t:${token.line_index}:${token.v1_line_index ?? 0}:${tokenEditId(token)}`,
+      overlineMarkId: token.overline_mark_id ?? null,
+      v1Line: token.v1_line_index ?? 0,
+      token,
+      ...bounds,
+    };
+  });
+
+  // For new_bboxes, determine v1Line from nearest token by x position
+  const nbItems = (newBboxes ?? []).map((nb) => {
+    const cx = (nb.x0 + nb.x1) / 2;
+    let bestV1Line = 0;
+    let bestDist = Infinity;
+    for (const ti of tokenItems) {
+      const d = Math.abs(ti.x - cx);
+      if (d < bestDist) { bestDist = d; bestV1Line = ti.v1Line; }
+    }
+    return {
       kind: "new" as const,
       key: `n:${nb.id}`,
-      x: (nb.x0 + nb.x1) / 2,
+      x: cx,
       left: nb.x0,
       right: nb.x1,
       overlineMarkId: nb.overline_mark_id ?? null,
-      v1Line: 0,
+      v1Line: bestV1Line,
       nb,
-    })),
-  ].sort((a, b) => a.v1Line !== b.v1Line ? a.v1Line - b.v1Line : a.x - b.x);
+    };
+  });
+
+  return [...tokenItems, ...nbItems].sort((a, b) => a.v1Line !== b.v1Line ? a.v1Line - b.v1Line : a.x - b.x);
 }
 
 export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Props) {

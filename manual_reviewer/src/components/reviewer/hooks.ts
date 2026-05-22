@@ -55,7 +55,7 @@ export interface ReviewLine {
   tokens: ReviewToken[];
   warped_size: [number, number] | null;
   line_quad: number[][] | null;
-  status: "pending" | "in_progress" | "done" | "flagged";
+  status: "pending" | "in_progress" | "done" | "flagged" | "special";
   note: string | null;
 }
 
@@ -292,15 +292,18 @@ function updatePagesListCache(
   if (!old) return old;
   const doneLines = page.lines.filter((line) => line.status === "done").length;
   const flaggedLines = page.lines.filter((line) => line.status === "flagged").length;
+  const specialLines = page.lines.filter((line) => line.status === "special").length;
+  const completedLines = doneLines + specialLines;
   return {
     pages: old.pages.map((item) => {
       if (item.page !== pageId) return item;
       return {
         ...item,
-        status: doneLines === page.lines.length ? "complete" : "in_progress",
+        status: completedLines === page.lines.length ? "complete" : "in_progress",
         last_edited_at: new Date().toISOString(),
         done_lines: doneLines,
         flagged_lines: flaggedLines,
+        special_lines: specialLines,
         total_lines: page.lines.length,
       };
     }),
@@ -378,6 +381,7 @@ export interface PageListItem {
   last_edited_at: string | null;
   done_lines: number;
   flagged_lines: number;
+  special_lines: number;
   total_lines: number;
 }
 

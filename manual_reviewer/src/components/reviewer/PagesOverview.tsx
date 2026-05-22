@@ -21,7 +21,7 @@ export function PagesOverview() {
     <Stack spacing={2}>
       <Typography sx={{ opacity: 0.75, maxWidth: 720 }}>
         Pick a page to review. Each tile shows the page status and the counts
-        of completed and flagged lines.
+        of completed, special, and flagged lines.
       </Typography>
       {isLoading && <CircularProgress />}
       {data && (
@@ -34,7 +34,9 @@ export function PagesOverview() {
         >
           {data.pages.map((p) => {
             const total = p.total_lines;
-            const completed = total > 0 ? Math.min(p.done_lines, total) : p.done_lines;
+            const specialLines = p.special_lines ?? 0;
+            const completedRaw = p.done_lines + specialLines;
+            const completed = total > 0 ? Math.min(completedRaw, total) : completedRaw;
             const progress = total > 0 ? clampProgress((completed / total) * 100) : 0;
             const allDone = total > 0 && completed >= total;
             return (
@@ -50,6 +52,8 @@ export function PagesOverview() {
                     ? "rgba(100,200,100,0.6)"
                     : p.flagged_lines > 0
                       ? "rgba(220,120,120,0.6)"
+                      : specialLines > 0
+                        ? "rgba(245,205,90,0.6)"
                       : "var(--color-glass-border)",
                 }}
               >
@@ -95,7 +99,18 @@ export function PagesOverview() {
                       }}
                     />
                   )}
-                  {total > 0 && (p.done_lines > 0 || p.flagged_lines > 0) && (
+                  {specialLines > 0 && (
+                    <Chip
+                      size="small"
+                      label={`${specialLines}★`}
+                      sx={{
+                        height: 18,
+                        fontSize: 10,
+                        bgcolor: "rgba(245,205,90,0.18)",
+                      }}
+                    />
+                  )}
+                  {total > 0 && (completed > 0 || p.flagged_lines > 0) && (
                     <Typography sx={{ fontSize: 9, opacity: 0.6, alignSelf: "center" }}>
                       {completed}/{total}
                     </Typography>

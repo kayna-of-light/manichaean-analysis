@@ -19,6 +19,7 @@ interface LineProgressRow {
 interface PageProgress {
   done_lines: number;
   flagged_lines: number;
+  special_lines: number;
 }
 
 export async function GET() {
@@ -40,7 +41,7 @@ export async function GET() {
     .prepare<[], LineProgressRow>(
       `SELECT page, line_index, status
        FROM lines
-       WHERE status IN ('done', 'flagged')`,
+        WHERE status IN ('done', 'flagged', 'special')`,
     )
     .all();
 
@@ -67,9 +68,11 @@ export async function GET() {
     const progress = progressByPage.get(line.page) ?? {
       done_lines: 0,
       flagged_lines: 0,
+      special_lines: 0,
     };
     if (line.status === "done") progress.done_lines += 1;
     if (line.status === "flagged") progress.flagged_lines += 1;
+    if (line.status === "special") progress.special_lines += 1;
     progressByPage.set(line.page, progress);
   }
 
@@ -84,6 +87,7 @@ export async function GET() {
       last_edited_at: row?.last_edited_at ?? null,
       done_lines: progress?.done_lines ?? 0,
       flagged_lines: progress?.flagged_lines ?? 0,
+      special_lines: progress?.special_lines ?? 0,
       total_lines: lineCounts.get(p) ?? 0,
     };
   });

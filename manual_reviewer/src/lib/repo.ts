@@ -6,7 +6,7 @@ import type { Token } from "./zodSchemas";
  * Types
  * ------------------------------------------------------------------------- */
 
-export type LineStatus = "pending" | "in_progress" | "done" | "flagged";
+export type LineStatus = "pending" | "in_progress" | "done" | "flagged" | "special";
 
 export interface BlobEditRow {
   page: number;
@@ -34,6 +34,7 @@ export interface NewBboxRow {
   diacritics: string | null;
   lacuna_bracket: string | null;
   overline_mark_id: number | null;
+  missplit_review_id: number | null;
   created_at: string;
   updated_at: string;
 }
@@ -368,7 +369,7 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
   const db = getDb();
   const id = input.id ?? `new_p${String(input.page).padStart(3, "0")}_l${String(
     input.line_index,
-  ).padStart(2, "0")}_${Date.now().toString(36)}`;
+  ).padStart(2, "0")}_${Date.now().toString(36)}_${Math.random().toString(36).slice(2, 6)}`;
   const after = {
     ...input,
     id,
@@ -386,9 +387,9 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
       db.prepare(
         `INSERT INTO new_bboxes
          (id, page, line_index, x0, y0, x1, y1, coord_space, label,
-          diacritics, lacuna_bracket, overline_mark_id, created_at, updated_at)
+          diacritics, lacuna_bracket, overline_mark_id, missplit_review_id, created_at, updated_at)
          VALUES (@id, @page, @line_index, @x0, @y0, @x1, @y1, @coord_space,
-                 @label, @diacritics, @lacuna_bracket, @overline_mark_id, @created_at, @updated_at)`,
+                 @label, @diacritics, @lacuna_bracket, @overline_mark_id, @missplit_review_id, @created_at, @updated_at)`,
       ).run(after);
       return after;
     },
@@ -896,7 +897,12 @@ export function mergeTokens(
 ): EffectiveToken[] {
   return tokens.map((t) => {
     const key = `${t.line_index}:${t.edit_id ?? t.blob_id}`;
-    const edit = edits.get(key);
+    // Fallback: if edit_id is suffixed (e.g. "2#1") but DB has raw blob_id ("2"),
+    // try the raw key. This handles edits created by the missplit resolve endpoint.
+    const rawKey = t.edit_id && t.edit_id !== String(t.blob_id)
+      ? `${t.line_index}:${t.blob_id}`
+      : null;
+    const edit = edits.get(key) ?? (rawKey ? edits.get(rawKey) : undefined) ?? undefined;
     const reassign = reassignments?.get(key) ?? null;
     const originalClusterInt = parseInt(t.cluster, 10);
     const effectiveClusterInt = reassign ? reassign.to_cluster
@@ -940,4 +946,168 @@ export function mergeTokens(
       editorial_overlay: eo,
     };
   });
+}
+
+/* --------------------------------------------------------------------------
+ * Missplit Reviews
+ * -------------------------------------------------------------------------- */
+
+export interface MissplitReviewRow {
+  id: number;
+  page: number;
+  line_index: number;
+  blob_ids: string;
+  status: string;
+  new_labels: string | null;
+  created_at: string;
+  resolved_at: string | null;
+}
+
+export function readMissplitReviews(): MissplitReviewRow[] {
+  const db = getDb();
+  return db
+    .prepare("SELECT * FROM missplit_reviews ORDER BY page, line_index")
+    .all() as MissplitReviewRow[];
+}
+
+export function readMissplitReviewsByKey(
+  page: number,
+  lineIndex: number,
+  blobIds: number[],
+): MissplitReviewRow | undefined {
+  const db = getDb();
+  const key = JSON.stringify(blobIds);
+  return db
+    .prepare(
+      "SELECT * FROM missplit_reviews WHERE page = ? AND line_index = ? AND blob_ids = ?",
+    )
+    .get(page, lineIndex, key) as MissplitReviewRow | undefined;
+}
+
+export function resolveMissplitAsCorrect(
+  page: number,
+  lineIndex: number,
+  blobIds: number[],
+): number {
+  const db = getDb();
+  const key = JSON.stringify(blobIds);
+  const existing = db
+    .prepare(
+      "SELECT id FROM missplit_reviews WHERE page = ? AND line_index = ? AND blob_ids = ?",
+    )
+    .get(page, lineIndex, key) as { id: number } | undefined;
+
+  if (existing) {
+    db.prepare(
+      `UPDATE missplit_reviews
+       SET status = 'correct', resolved_at = datetime('now')
+       WHERE id = ?`,
+    ).run(existing.id);
+    return existing.id;
+  }
+
+  const result = db.prepare(
+    `INSERT INTO missplit_reviews (page, line_index, blob_ids, status, resolved_at)
+     VALUES (?, ?, ?, 'correct', datetime('now'))`,
+  ).run(page, lineIndex, key);
+  return Number(result.lastInsertRowid);
+}
+
+export function resolveMissplitAsFixed(
+  page: number,
+  lineIndex: number,
+  blobIds: number[],
+  newLabels: string[],
+): number {
+  const db = getDb();
+  const key = JSON.stringify(blobIds);
+  const labelsJson = JSON.stringify(newLabels);
+  const existing = db
+    .prepare(
+      "SELECT id FROM missplit_reviews WHERE page = ? AND line_index = ? AND blob_ids = ?",
+    )
+    .get(page, lineIndex, key) as { id: number } | undefined;
+
+  if (existing) {
+    db.prepare(
+      `UPDATE missplit_reviews
+       SET status = 'fixed', new_labels = ?, resolved_at = datetime('now')
+       WHERE id = ?`,
+    ).run(labelsJson, existing.id);
+    return existing.id;
+  }
+
+  const result = db.prepare(
+    `INSERT INTO missplit_reviews (page, line_index, blob_ids, status, new_labels, resolved_at)
+     VALUES (?, ?, ?, 'fixed', ?, datetime('now'))`,
+  ).run(page, lineIndex, key, labelsJson);
+  return Number(result.lastInsertRowid);
+}
+
+/**
+ * Revert a missplit review: delete the review record, remove any new_bboxes
+ * linked to that review, and un-delete the original blobs.
+ */
+export function revertMissplitReview(reviewId: number) {
+  const db = getDb();
+  const review = db
+    .prepare<[number], { id: number; page: number; line_index: number; blob_ids: string; status: string }>(
+      "SELECT id, page, line_index, blob_ids, status FROM missplit_reviews WHERE id = ?",
+    )
+    .get(reviewId);
+  if (!review) return null;
+
+  const blobIds: number[] = JSON.parse(review.blob_ids);
+
+  const doRevert = db.transaction(() => {
+    // 1. Un-delete original blobs
+    for (const blobId of blobIds) {
+      const existing = db
+        .prepare("SELECT deleted FROM blob_edits WHERE page = ? AND line_index = ? AND blob_id = ?")
+        .get(review.page, review.line_index, String(blobId)) as { deleted: number } | undefined;
+      if (existing?.deleted) {
+        db.prepare(
+          `UPDATE blob_edits SET deleted = 0, updated_at = datetime('now')
+           WHERE page = ? AND line_index = ? AND blob_id = ?`,
+        ).run(review.page, review.line_index, String(blobId));
+      }
+    }
+
+    // 2. Delete new_bboxes linked to this specific review
+    const bboxes = db
+      .prepare<[number], { id: string }>(
+        "SELECT id FROM new_bboxes WHERE missplit_review_id = ?",
+      )
+      .all(reviewId);
+
+    if (bboxes.length > 0) {
+      // Linked via FK — only delete those belonging to this review
+      for (const bbox of bboxes) {
+        deleteNewBbox(bbox.id);
+      }
+    } else {
+      // Legacy: no FK linkage — fall back to spatial overlap with original blob aabbs
+      // Get the original blob aabb from blob_edits or detection
+      // For safety, only delete bboxes that spatially match the original blobs
+      const origAabbs = blobIds.map((bid) => {
+        // We don't have the original aabb stored, so fall back to page+line
+        return null;
+      });
+      // If we can't spatially match, delete ALL on the line (legacy behavior)
+      const lineBboxes = db
+        .prepare<[number, number], { id: string }>(
+          "SELECT id FROM new_bboxes WHERE page = ? AND line_index = ?",
+        )
+        .all(review.page, review.line_index);
+      for (const bbox of lineBboxes) {
+        deleteNewBbox(bbox.id);
+      }
+    }
+
+    // 3. Delete the review record
+    db.prepare("DELETE FROM missplit_reviews WHERE id = ?").run(reviewId);
+  });
+
+  doRevert();
+  return { page: review.page, lineIndex: review.line_index };
 }
