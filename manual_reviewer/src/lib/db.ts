@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 6;
+const SCHEMA_VERSION = 8;
 
 let _db: DB | null = null;
 
@@ -162,6 +162,19 @@ function migrate(db: DB) {
     );
     CREATE INDEX IF NOT EXISTS idx_tasks_open ON tasks(resolved, page);
 
+    CREATE TABLE IF NOT EXISTS missplit_reviews (
+      id          INTEGER PRIMARY KEY AUTOINCREMENT,
+      page        INTEGER NOT NULL,
+      line_index  INTEGER NOT NULL,
+      blob_ids    TEXT NOT NULL,
+      status      TEXT NOT NULL DEFAULT 'pending',
+      new_labels  TEXT,
+      created_at  TEXT NOT NULL DEFAULT (datetime('now')),
+      resolved_at TEXT
+    );
+    CREATE INDEX IF NOT EXISTS idx_missplit_page ON missplit_reviews(page, line_index);
+    CREATE INDEX IF NOT EXISTS idx_missplit_status ON missplit_reviews(status);
+
     CREATE TABLE IF NOT EXISTS audit_log (
       id         INTEGER PRIMARY KEY AUTOINCREMENT,
       at         TEXT NOT NULL DEFAULT (datetime('now')),
@@ -231,6 +244,25 @@ function migrate(db: DB) {
     if (!cols.some((c) => c.name === "max_length")) {
       db.exec("ALTER TABLE editorial_cluster_arrays ADD COLUMN max_length INTEGER");
     }
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run("6");
+  }
+
+  if (currentVersion < 7) {
+    // missplit_reviews table — created above via CREATE IF NOT EXISTS; just bump.
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run("7");
+  }
+
+  if (currentVersion < 8) {
+    // Add missplit_review_id to new_bboxes for proper FK linkage
+    const cols = db.pragma("table_info(new_bboxes)") as Array<{ name: string }>;
+    if (!cols.some((c) => c.name === "missplit_review_id")) {
+      db.exec("ALTER TABLE new_bboxes ADD COLUMN missplit_review_id INTEGER");
+    }
+    db.exec("CREATE INDEX IF NOT EXISTS idx_new_bboxes_review ON new_bboxes(missplit_review_id)");
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));

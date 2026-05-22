@@ -11,8 +11,9 @@ import {
 import { PagesOverview } from "@/components/reviewer/PagesOverview";
 import { ClustersOverview } from "@/components/cluster/ClustersOverview";
 import { EditorialOverview } from "@/components/editorial/EditorialOverview";
+import { MissplitPageClient } from "./missplit/MissplitPageClient";
 
-type HomeTab = "pages" | "clusters" | "editorial";
+type HomeTab = "pages" | "clusters" | "editorial" | "missplit";
 
 const STORAGE_KEY = "manual_reviewer.home_tab";
 
@@ -23,7 +24,7 @@ export default function Page() {
   useEffect(() => {
     if (typeof window === "undefined") return;
     const saved = window.localStorage.getItem(STORAGE_KEY);
-    if (saved === "pages" || saved === "clusters" || saved === "editorial") setTab(saved);
+    if (saved === "pages" || saved === "clusters" || saved === "editorial" || saved === "missplit") setTab(saved);
   }, []);
 
   const onChange = (_e: React.SyntheticEvent, value: HomeTab) => {
@@ -49,10 +50,12 @@ export default function Page() {
             <Tab value="pages" label="Pages" />
             <Tab value="clusters" label="Clusters" />
             <Tab value="editorial" label="Editorial" />
+            <Tab value="missplit" label="Missplit" />
           </Tabs>
           {tab === "pages" && <PagesOverview />}
           {tab === "clusters" && <ClustersOverview />}
           {tab === "editorial" && <EditorialOverview />}
+          {tab === "missplit" && <MissplitPageClient />}
         </Stack>
       </Paper>
     </Box>

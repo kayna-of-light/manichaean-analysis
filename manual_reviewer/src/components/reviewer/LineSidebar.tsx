@@ -2,6 +2,7 @@
 import { Box, Chip, List, ListItemButton, Typography } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagIcon from "@mui/icons-material/Flag";
+import StarIcon from "@mui/icons-material/Star";
 import type { ReviewLine } from "./hooks";
 
 interface Props {
@@ -18,6 +19,8 @@ function statusColor(status: string): { bg: string; fg: string } {
       return { bg: "rgba(200,164,101,0.15)", fg: "var(--color-glass-accent)" };
     case "flagged":
       return { bg: "rgba(220,120,120,0.18)", fg: "rgb(230,140,140)" };
+    case "special":
+      return { bg: "rgba(245,205,90,0.18)", fg: "var(--color-status-special)" };
     default:
       return { bg: "var(--color-glass-surface)", fg: "var(--color-glass-muted)" };
   }
@@ -28,6 +31,7 @@ function StatusMarker({ status, color }: { status: string; color: string }) {
     <Box sx={{ width: 16, display: "flex", alignItems: "center", justifyContent: "center" }}>
       {status === "done" && <CheckCircleIcon sx={{ fontSize: 14, color }} />}
       {status === "flagged" && <FlagIcon sx={{ fontSize: 14, color }} />}
+      {status === "special" && <StarIcon sx={{ fontSize: 14, color }} />}
     </Box>
   );
 }
@@ -66,7 +70,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
                 py: 0.5,
                 overflow: "hidden",
                 border: "1px solid transparent",
-                bgcolor: l.status === "done" || l.status === "flagged" ? c.bg : undefined,
+                bgcolor: l.status === "done" || l.status === "flagged" || l.status === "special" ? c.bg : undefined,
                 "&.Mui-selected": {
                   bgcolor: "rgba(200,164,101,0.12)",
                   border: "1px solid var(--color-glass-accent)",

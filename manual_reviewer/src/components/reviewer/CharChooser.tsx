@@ -129,6 +129,7 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
   const updateLabel = useReviewerStore((s) => s.updateChooserLabel);
   const toggleOverlineLeft = useReviewerStore((s) => s.toggleOverlineLeft);
   const toggleOverlineRight = useReviewerStore((s) => s.toggleOverlineRight);
+  const toggleOverlineSelf = useReviewerStore((s) => s.toggleOverlineSelf);
   const closeChooser = useReviewerStore((s) => s.closeChooser);
   const inputRef = useRef<HTMLInputElement>(null);
   const sequenceInputRef = useRef<HTMLInputElement>(null);
@@ -698,12 +699,18 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
                   size="small"
                   variant={selfId != null ? "contained" : "outlined"}
                   color={selfId != null ? "primary" : "inherit"}
-                  disabled
+                  disabled={selfId == null}
+                  onClick={() => {
+                    toggleOverlineSelf();
+                    force((n) => n + 1);
+                  }}
                   sx={{
                     minWidth: 36, fontFamily: "var(--font-coptic)", fontSize: 16,
                     borderRadius: 0, borderLeft: "none", borderRight: "none",
                   }}
-                  title="Single-character overlines are in Diacritics; use the side buttons for grouped overlines"
+                  title={selfId != null
+                    ? "Clear group overline from this character"
+                    : "Single-character overlines are in Diacritics; use the side buttons for grouped overlines"}
                 >
                   {displayLabel(currentLabelForDisplay) || "?"}
                 </Button>

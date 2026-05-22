@@ -110,31 +110,125 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     (bbox): bbox is NonNullable<(typeof tokenBboxes)[number]> => bbox !== null,
   );
 
-  const hiddenBlobIds = new Set<string>();
+  const minorOverlapBlobIds = new Set<string>();
   for (const current of visibleTokenBboxes) {
-    if (current.area <= 0) continue;
+    if (current.width <= 0 || current.area <= 0) continue;
     for (const other of visibleTokenBboxes) {
       if (other === current || other.area <= current.area * 1.25) continue;
       const overlapW = Math.max(0, Math.min(current.right, other.right) - Math.max(current.left, other.left));
-      const overlapH = Math.max(0, Math.min(current.bottom, other.bottom) - Math.max(current.top, other.top));
-      const covered = (overlapW * overlapH) / current.area;
-      if (covered >= 0.88) {
-        hiddenBlobIds.add(tokenId(current.token));
+      const xCoverage = overlapW / current.width;
+      if (xCoverage >= 0.8) {
+        minorOverlapBlobIds.add(tokenId(current.token));
         break;
       }
     }
   }
 
+  // Detect likely unsplit blobs: width/height ratio is scale-invariant.
+  // Normal wide chars (ⲙ, ϫ) max out around ratio 1.57. True unsplit blobs
+  // start at ~1.75 because width roughly doubles while height stays constant.
+  // Edge case: a uniformly enlarged character (e.g. section-initial ⲡ) can
+  // hit ratio 1.76 but is also much TALLER than the line. For blobs taller
+  // than 1.7× the line's median height, require a higher ratio (2.0) since
+  // uniform scaling preserves ratio — only extreme widening is unsplit.
+  const MIN_HEIGHT_FOR_UNSPLIT = 10;
+  const MIN_WH_RATIO_FOR_UNSPLIT = 1.7;
+  const TALL_BLOB_HEIGHT_FACTOR = 1.7;
+  const TALL_BLOB_RATIO_FOR_UNSPLIT = 2.0;
+  const unsplitBlobIds = new Set<string>();
+
+  // Compute line median height (excluding dots/noise < 8px)
+  const lineHeights = visibleTokenBboxes
+    .filter((b) => b.height >= 8)
+    .map((b) => b.height);
+  lineHeights.sort((a, b) => a - b);
+  const medianHeight = lineHeights.length > 0
+    ? lineHeights[Math.floor(lineHeights.length / 2)]
+    : 15;
+
+  for (const bbox of visibleTokenBboxes) {
+    if (bbox.height < MIN_HEIGHT_FOR_UNSPLIT) continue;
+    const ratio = bbox.width / bbox.height;
+    const isTall = bbox.height > medianHeight * TALL_BLOB_HEIGHT_FACTOR;
+    const threshold = isTall ? TALL_BLOB_RATIO_FOR_UNSPLIT : MIN_WH_RATIO_FOR_UNSPLIT;
+    if (ratio >= threshold) {
+      unsplitBlobIds.add(tokenId(bbox.token));
+    }
+  }
+
+  // Detect likely oversplit blobs: consecutive narrow blobs packed at
+  // minimum gap. "Narrow" = width / line_median_height < 0.80. This is
+  // scale-invariant (both scale together on resize) and correctly excludes
+  // tall chars like ⲕ/ϥ whose own w/h is low only because of descenders.
+  // Fragments are vertical slices of a character — narrow relative to the
+  // LINE, not relative to their own height. Two or more such fragments
+  // at minimum gap signals oversplit.
+  const MAX_GAP_FOR_OVERSPLIT = 1.5;
+  const MAX_WIDTH_RATIO_FOR_FRAGMENT = 0.80; // width / line_median_height
+  const missplitBlobIds = new Set<string>();
+
+  // Sort visible blobs by x-center position within the line
+  const sortedByX = [...visibleTokenBboxes].sort((a, b) => {
+    const aCx = (a.left + a.right) / 2;
+    const bCx = (b.left + b.right) / 2;
+    return aCx - bCx;
+  });
+
+  // Find tight-gap groups, then flag runs of 2+ fragments/undersplit within them
+  // Within a tight group, both fragments AND undersplit blobs form the run
+  // (they're all pieces of the same character). Only normal-width blobs break.
+  let tightStart = 0;
+  for (let i = 1; i <= sortedByX.length; i++) {
+    const gap = i < sortedByX.length
+      ? sortedByX[i].left - sortedByX[i - 1].right
+      : Infinity;
+    if (gap > MAX_GAP_FOR_OVERSPLIT) {
+      // End of a tight group [tightStart..i). Find combined sub-runs.
+      let runStart = -1;
+      let fragCount = 0;
+      for (let j = tightStart; j < i; j++) {
+        const isFragment = sortedByX[j].width / medianHeight < MAX_WIDTH_RATIO_FOR_FRAGMENT;
+        const isUndersplit = unsplitBlobIds.has(tokenId(sortedByX[j].token));
+        if (isFragment || isUndersplit) {
+          if (runStart < 0) { runStart = j; fragCount = 0; }
+          if (isFragment) fragCount++;
+        } else {
+          // Normal blob breaks the run
+          if (runStart >= 0 && j - runStart >= 2 && fragCount >= 1) {
+            for (let k = runStart; k < j; k++) {
+              missplitBlobIds.add(tokenId(sortedByX[k].token));
+            }
+          }
+          runStart = -1;
+          fragCount = 0;
+        }
+      }
+      // Close any trailing run
+      if (runStart >= 0 && i - runStart >= 2 && fragCount >= 1) {
+        for (let k = runStart; k < i; k++) {
+          missplitBlobIds.add(tokenId(sortedByX[k].token));
+        }
+      }
+      tightStart = i;
+    }
+  }
+
   const baseTokenBboxes = [...visibleTokenBboxes]
-    .filter((bbox) => !hiddenBlobIds.has(tokenId(bbox.token)))
+    .filter((bbox) => !minorOverlapBlobIds.has(tokenId(bbox.token)) && !unsplitBlobIds.has(tokenId(bbox.token)) && !missplitBlobIds.has(tokenId(bbox.token)))
     .sort((a, b) => b.area - a.area);
-  const hiddenTokenBboxes = [...visibleTokenBboxes]
-    .filter((bbox) => hiddenBlobIds.has(tokenId(bbox.token)))
+  const minorOverlapTokenBboxes = [...visibleTokenBboxes]
+    .filter((bbox) => minorOverlapBlobIds.has(tokenId(bbox.token)))
+    .sort((a, b) => b.area - a.area);
+  const unsplitTokenBboxes = [...visibleTokenBboxes]
+    .filter((bbox) => unsplitBlobIds.has(tokenId(bbox.token)) && !missplitBlobIds.has(tokenId(bbox.token)))
+    .sort((a, b) => b.area - a.area);
+  const missplitTokenBboxes = [...visibleTokenBboxes]
+    .filter((bbox) => missplitBlobIds.has(tokenId(bbox.token)))
     .sort((a, b) => b.area - a.area);
 
   const renderTokenOverlay = (
     t: ReviewToken,
-    variant: "base" | "hidden",
+    variant: "base" | "minor-overlap" | "unsplit" | "missplit",
   ) => {
     const isHighlight =
       highlightBlob !== null && String(highlightBlob) === tokenId(t);
@@ -142,32 +236,37 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     const qxs = t.img_quad?.map((p) => p[0]) ?? [];
     const qys = t.img_quad?.map((p) => p[1]) ?? [];
 
-    const stroke = variant === "hidden"
-      ? "rgba(255,0,220,0.95)"
-      : t.unset
-        ? "rgba(255,99,71,0.8)"
-        : t.user_modified
-          ? "var(--color-glass-accent)"
-          : needsReview
-            ? "rgba(255,200,90,0.8)"
-            : "rgba(100,160,220,0.55)";
+    const stroke = variant === "minor-overlap"
+      ? "var(--color-review-minor-overlap)"
+      : variant === "unsplit"
+        ? "var(--color-review-unsplit)"
+        : variant === "missplit"
+          ? "var(--color-review-missplit)"
+          : t.unset
+            ? "rgba(255,99,71,0.8)"
+            : t.user_modified
+              ? "var(--color-glass-accent)"
+              : needsReview
+                ? "rgba(255,200,90,0.8)"
+                : "rgba(100,160,220,0.55)";
     const points = t.img_quad
       ?.map((p) => `${p[0]},${p[1]}`)
       .join(" ") ?? "";
     const key = `${t.line_index}-${t.v1_line_index ?? 0}-${tokenId(t)}`;
 
-    if (variant === "hidden") {
-      const cx = (Math.min(...qxs) + Math.max(...qxs)) / 2;
-      const cy = (Math.min(...qys) + Math.max(...qys)) / 2;
+    if (variant === "minor-overlap") {
       return (
-        <g key={key}>
-          <circle
-            cx={cx}
-            cy={cy}
-            r={5}
-            fill="rgba(255,0,220,0.2)"
-            stroke="rgba(255,0,220,0.95)"
-            strokeWidth={2}
+        <g
+          key={key}
+          data-overlap-treatment="minor-x-overlap"
+          data-line-index={t.line_index}
+          data-token-id={tokenId(t)}
+        >
+          <polygon
+            points={points}
+            fill="var(--color-review-minor-overlap-fill)"
+            stroke="var(--color-review-minor-overlap)"
+            strokeWidth={1.5}
             vectorEffect="non-scaling-stroke"
             style={{ cursor: "pointer" }}
             onClick={(e) => {
@@ -175,11 +274,49 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
               onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
             }}
           />
+        </g>
+      );
+    }
+
+    if (variant === "unsplit") {
+      return (
+        <g
+          key={key}
+          data-quality-issue="unsplit-blob"
+          data-line-index={t.line_index}
+          data-token-id={tokenId(t)}
+        >
           <polygon
             points={points}
-            fill="rgba(255,0,220,0.35)"
-            stroke="rgba(255,0,220,0.95)"
+            fill="var(--color-review-unsplit-fill)"
+            stroke="var(--color-review-unsplit)"
+            strokeWidth={1.8}
+            strokeDasharray="4 2"
+            vectorEffect="non-scaling-stroke"
+            style={{ cursor: "pointer" }}
+            onClick={(e) => {
+              e.stopPropagation();
+              onTokenClick(t, { clientX: e.clientX, clientY: e.clientY });
+            }}
+          />
+        </g>
+      );
+    }
+
+    if (variant === "missplit") {
+      return (
+        <g
+          key={key}
+          data-quality-issue="missplit-blob"
+          data-line-index={t.line_index}
+          data-token-id={tokenId(t)}
+        >
+          <polygon
+            points={points}
+            fill="var(--color-review-missplit-fill)"
+            stroke="var(--color-review-missplit)"
             strokeWidth={1.5}
+            strokeDasharray="2 2"
             vectorEffect="non-scaling-stroke"
             style={{ cursor: "pointer" }}
             onClick={(e) => {
@@ -280,19 +417,6 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
           style={{ pointerEvents: "none" }}
         />
         {baseTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "base"))}
-        {hiddenTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "hidden"))}
-        {drag && (
-          <rect
-            x={Math.min(drag.x0, drag.x1)}
-            y={Math.min(drag.y0, drag.y1)}
-            width={Math.abs(drag.x1 - drag.x0)}
-            height={Math.abs(drag.y1 - drag.y0)}
-            fill="rgba(200,164,101,0.2)"
-            stroke="var(--color-glass-accent)"
-            strokeWidth={1.2}
-            vectorEffect="non-scaling-stroke"
-          />
-        )}
         {newBboxes?.map((nb) => (
           <rect
             key={nb.id}
@@ -311,6 +435,21 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
             }}
           />
         ))}
+        {minorOverlapTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "minor-overlap"))}
+        {unsplitTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "unsplit"))}
+        {missplitTokenBboxes.map((bbox) => renderTokenOverlay(bbox.token, "missplit"))}
+        {drag && (
+          <rect
+            x={Math.min(drag.x0, drag.x1)}
+            y={Math.min(drag.y0, drag.y1)}
+            width={Math.abs(drag.x1 - drag.x0)}
+            height={Math.abs(drag.y1 - drag.y0)}
+            fill="rgba(200,164,101,0.2)"
+            stroke="var(--color-glass-accent)"
+            strokeWidth={1.2}
+            vectorEffect="non-scaling-stroke"
+          />
+        )}
       </svg>
     </Box>
   );

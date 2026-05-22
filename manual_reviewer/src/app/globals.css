@@ -22,6 +22,15 @@
   --color-status-progress: oklch(75% 0.13 80);
   --color-status-done: oklch(65% 0.16 145);
   --color-status-flagged: oklch(65% 0.20 25);
+  --color-status-special: var(--color-yellow-400, oklch(85.2% 0.199 91.936));
+  --color-status-special-border: var(--color-yellow-500, oklch(79.5% 0.184 86.047));
+  --color-status-special-fg: var(--color-yellow-900, oklch(42.1% 0.095 57.708));
+  --color-review-minor-overlap: var(--color-red-600, oklch(57.7% 0.245 27.325));
+  --color-review-minor-overlap-fill: color-mix(in oklch, var(--color-review-minor-overlap) 38%, transparent);
+  --color-review-unsplit: oklch(75% 0.18 70);
+  --color-review-unsplit-fill: color-mix(in oklch, var(--color-review-unsplit) 20%, transparent);
+  --color-review-missplit: oklch(72% 0.14 200);
+  --color-review-missplit-fill: color-mix(in oklch, var(--color-review-missplit) 20%, transparent);
 }
 
 /* ----------------------------------------------------------

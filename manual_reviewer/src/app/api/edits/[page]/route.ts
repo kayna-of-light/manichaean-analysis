@@ -27,7 +27,7 @@ const BodySchema = z.object({
   line_status: z
     .object({
       line_index: z.number(),
-      status: z.enum(["pending", "in_progress", "done", "flagged"]),
+      status: z.enum(["pending", "in_progress", "done", "flagged", "special"]),
       note: z.string().nullable().optional(),
     })
     .optional(),
@@ -92,6 +92,7 @@ export async function POST(
         diacritics: b.diacritics ? JSON.stringify(b.diacritics) : null,
         lacuna_bracket: b.lacuna_bracket ?? null,
         overline_mark_id: null,
+        missplit_review_id: null,
       });
       results.new_bboxes.push(inserted.id);
     }

@@ -149,8 +149,7 @@ export const useReviewerStore = create<ReviewerState>((set) => ({
         // Remove self from group — only clear self, neighbors keep their marks
         pending.self = null;
       } else {
-        // Create a new solo overline mark
-        pending.self = Date.now();
+        return s;
       }
       return { chooserAnchor: { ...a, pendingOverline: pending } };
     }),

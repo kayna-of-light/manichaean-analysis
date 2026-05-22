@@ -17,6 +17,8 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutlined";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import FlagIcon from "@mui/icons-material/Flag";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
+import StarIcon from "@mui/icons-material/Star";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
@@ -127,6 +129,10 @@ function toggledFlagStatus(status: string | undefined) {
 
 function toggledDoneStatus(status: string | undefined) {
   return status === "done" ? "pending" : "done";
+}
+
+function toggledSpecialStatus(status: string | undefined) {
+  return status === "special" ? "pending" : "special";
 }
 
 export default function ReviewPage() {
@@ -247,6 +253,11 @@ export default function ReviewPage() {
         const curLine = data.lines.find((l) => l.line_index === cur);
         editMutation.mutate({
           line_status: { line_index: cur, status: toggledDoneStatus(curLine?.status) },
+        });
+      } else if (e.key === "s") {
+        const curLine = data.lines.find((l) => l.line_index === cur);
+        editMutation.mutate({
+          line_status: { line_index: cur, status: toggledSpecialStatus(curLine?.status) },
         });
       }
     };
@@ -481,7 +492,7 @@ export default function ReviewPage() {
               </Button>
               {(() => {
                 const pendingLines = data.lines.filter(
-                  (l) => l.status !== "done" && l.status !== "flagged",
+                  (l) => l.status !== "done" && l.status !== "flagged" && l.status !== "special",
                 );
                 if (pendingLines.length === 0) {
                   return (
@@ -634,7 +645,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
         {String(line.line_index).padStart(2, "0")}
       </Typography>
 
-      {(line.status === "done" || line.status === "flagged") && (
+      {(line.status === "done" || line.status === "flagged" || line.status === "special") && (
         <Box
           sx={{
             position: "absolute",
@@ -646,8 +657,10 @@ const ReviewLineCard = memo(function ReviewLineCard({
             px: 0.5,
             py: 0.25,
             borderRadius: 0.75,
-            bgcolor: line.status === "done" ? "success.main" : "warning.main",
-            color: "common.white",
+            bgcolor: line.status === "done" ? "success.main" : line.status === "flagged" ? "error.main" : undefined,
+            backgroundColor: line.status === "special" ? "var(--color-status-special)" : undefined,
+            color: line.status === "special" ? "var(--color-status-special-fg)" : "common.white",
+            border: line.status === "special" ? "1px solid var(--color-status-special-border)" : undefined,
             lineHeight: 1,
             pointerEvents: "none",
             zIndex: 2,
@@ -656,6 +669,8 @@ const ReviewLineCard = memo(function ReviewLineCard({
         >
           {line.status === "done" ? (
             <CheckCircleIcon sx={{ fontSize: 12 }} />
+          ) : line.status === "special" ? (
+            <StarIcon sx={{ fontSize: 12 }} />
           ) : (
             <FlagIcon sx={{ fontSize: 12 }} />
           )}
@@ -716,6 +731,22 @@ const ReviewLineCard = memo(function ReviewLineCard({
               }
             >
               <FlagOutlinedIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title={line.status === "special" ? "Unmark special (s)" : "Special (s)"}>
+            <IconButton
+              size="small"
+              sx={{ p: 0.5, color: line.status === "special" ? "var(--color-status-special)" : "inherit" }}
+              onClick={() =>
+                mutateEdit({
+                  line_status: {
+                    line_index: line.line_index,
+                    status: toggledSpecialStatus(line.status),
+                  },
+                })
+              }
+            >
+              <StarBorderIcon sx={{ fontSize: 16 }} />
             </IconButton>
           </Tooltip>
           <Tooltip title={line.status === "done" ? "Reopen (d)" : "Done (d)"}>
