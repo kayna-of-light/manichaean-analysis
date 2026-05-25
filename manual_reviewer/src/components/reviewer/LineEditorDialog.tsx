@@ -149,13 +149,7 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
   // Viewport — generous padding to show edge characters in context
   const view = useMemo(() => {
     if (!data) return null;
-    const [rx, ry, rw, rh] = data.row_bbox;
-    const padX = 30;
-    const padY = 16;
-    const x = Math.max(0, rx - padX);
-    const y = Math.max(0, ry - padY);
-    const width = Math.min(data.image_size[0] - x, rw + padX * 2);
-    const height = Math.min(data.image_size[1] - y, padY * 2 + rh);
+    const [x, y, width, height] = data.preview_bbox;
     return { x, y, width: Math.max(1, width), height: Math.max(1, height) };
   }, [data]);
 
@@ -177,6 +171,15 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
     () => existingBoxes.filter((b) => !deletedExistingIds.has(b.id)),
     [existingBoxes, deletedExistingIds],
   );
+  const replaceLineIndices = useMemo(() => {
+    if (data) return data.source_indices.length ? data.source_indices : [data.line_index];
+    return lineIndex == null ? [] : [lineIndex];
+  }, [data, lineIndex]);
+  const replaceLineIndexSet = useMemo(() => new Set(replaceLineIndices), [replaceLineIndices]);
+  const replaceTokenCount = useMemo(() => page.lines
+    .filter((pageLine) => replaceLineIndexSet.has(pageLine.line_index))
+    .reduce((count, pageLine) => count + pageLine.tokens.filter((token) => !token.deleted).length, 0),
+  [page.lines, replaceLineIndexSet]);
 
   const reading = useMemo(() => {
     const included = [
@@ -188,20 +191,13 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
 
   /* ─── Generate ─────────────────────────────────────────────── */
 
-  const buildGeneratedProposals = (replaceSavedBoxes: boolean) => {
+  const buildGeneratedProposals = () => {
     if (!data) return;
-    return data.proposals
-      .filter((p) => {
-        if (replaceSavedBoxes) return true;
-        return !activeExistingBoxes.some(
-          (e) => p.x0 < e.x1 && p.x1 > e.x0 && p.y0 < e.y1 && p.y1 > e.y0,
-        );
-      })
-      .map((p) => toEditable(p, true)); // selected by default
+    return data.proposals.map((p) => toEditable(p, true));
   };
 
   const doGenerate = () => {
-    const newProposals = buildGeneratedProposals(replaceExistingBoxes);
+    const newProposals = buildGeneratedProposals();
     if (!newProposals) return;
     setProposals(newProposals);
     setGenerated(true);
@@ -211,10 +207,6 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
   const handleReplaceExistingBoxesChange = (checked: boolean) => {
     setReplaceExistingBoxes(checked);
     setFocusedId(null);
-    if (generated) {
-      const newProposals = buildGeneratedProposals(checked);
-      if (newProposals) setProposals(newProposals);
-    }
   };
 
   /* ─── Proposal selection ───────────────────────────────────── */
@@ -375,10 +367,9 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
     if (!data) return;
     const payload: EditMutationPayload = {};
     const shouldReplaceExistingBoxes = replaceExistingBoxes && generated;
-    const replacedLineIndices = new Set(data.source_indices.length ? data.source_indices : [data.line_index]);
     const replacementBlobDeletes = shouldReplaceExistingBoxes
       ? page.lines
-        .filter((pageLine) => replacedLineIndices.has(pageLine.line_index))
+        .filter((pageLine) => replaceLineIndexSet.has(pageLine.line_index))
         .flatMap((pageLine) => pageLine.tokens
           .filter((token) => !token.deleted)
           .map((token) => ({
@@ -673,13 +664,12 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
                 <Checkbox
                   size="small"
                   checked={replaceExistingBoxes}
-                  disabled={activeExistingBoxes.length === 0}
-                  aria-label="Replace saved boxes on this line"
+                  aria-label="Overwrite existing line data"
                   onChange={(event) => handleReplaceExistingBoxesChange(event.target.checked)}
                   sx={{ p: 0.25 }}
                 />
-                <Typography variant="body2" color={activeExistingBoxes.length === 0 ? "text.secondary" : "text.primary"}>
-                  Replace {activeExistingBoxes.length} saved box{activeExistingBoxes.length === 1 ? "" : "es"} on Accept
+                <Typography variant="body2" color="text.primary">
+                  Overwrite existing line data on Accept ({replaceTokenCount} token{replaceTokenCount === 1 ? "" : "s"}, {activeExistingBoxes.length} saved box{activeExistingBoxes.length === 1 ? "" : "es"})
                 </Typography>
               </Stack>
               {proposals.length === 0 ? (
@@ -766,13 +756,12 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
                 <Checkbox
                   size="small"
                   checked={replaceExistingBoxes}
-                  disabled={activeExistingBoxes.length === 0}
-                  aria-label="Replace saved boxes on this line"
+                  aria-label="Overwrite existing line data"
                   onChange={(event) => handleReplaceExistingBoxesChange(event.target.checked)}
                   sx={{ p: 0.25 }}
                 />
-                <Typography variant="body2" color={activeExistingBoxes.length === 0 ? "text.secondary" : "text.primary"}>
-                  Replace {activeExistingBoxes.length} saved box{activeExistingBoxes.length === 1 ? "" : "es"} on Accept
+                <Typography variant="body2" color="text.primary">
+                  Overwrite existing line data on Accept ({replaceTokenCount} token{replaceTokenCount === 1 ? "" : "s"}, {activeExistingBoxes.length} saved box{activeExistingBoxes.length === 1 ? "" : "es"})
                 </Typography>
               </Stack>
             </Box>
