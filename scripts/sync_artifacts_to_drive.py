@@ -14,16 +14,29 @@ unchanged files, and deletes remote files that no longer exist locally after an
 explicit confirmation. Restore mode downloads the Drive mirror back into a fresh
 clone. Archive restore mode downloads and extracts a full ``.tar.gz`` safety
 archive from Drive; use it when the complete generated ``output/`` tree is needed.
+Mirror mode caches Drive folder IDs under ``temp/gdrive_mirror_cache/`` and uses
+bounded parallel workers for per-file checksum/upload work. The local cache and
+archive cache directories are excluded from file discovery so they are not
+mirrored back into Drive.
+
+For frequent Manual Reviewer preservation, use ``--manual-reviewer-db``. That
+creates a consistent SQLite backup snapshot of ``manual_reviewer/data/reviewer.db``
+and uploads only that database file, skipping static ingest artifacts and SQLite
+runtime sidecar files.
 """
 
 from __future__ import annotations
 
 import argparse
 import hashlib
+import json
 import os
 import mimetypes
+import sqlite3
 import tarfile
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any, Callable, Optional, TypeVar
 
@@ -37,6 +50,9 @@ DEFAULT_SOURCE_SPECS = (
 )
 DEFAULT_REPO_FOLDER_NAME = "manichaean-analysis"
 ARCHIVE_CACHE_DIR = REPO_ROOT / "temp" / "gdrive_archives"
+MIRROR_CACHE_DIR = REPO_ROOT / "temp" / "gdrive_mirror_cache"
+DEFAULT_CACHE_FILE = MIRROR_CACHE_DIR / "drive_cache.json"
+CACHE_VERSION = 1
 
 # Reuse the known-good OAuth app and token from literary-compilation.
 LIT_COMP_SECRETS = Path(
@@ -50,7 +66,116 @@ DEFAULT_OAUTH_TOKEN = LIT_COMP_SECRETS / "google_drive_token.json"
 
 FOLDER_MIME = "application/vnd.google-apps.folder"
 DEFAULT_CHUNK_SIZE = 16 * 1024 * 1024
+DEFAULT_WORKERS = 4
 T = TypeVar("T")
+UNKNOWN_REMOTE = object()
+
+
+def _drive_query_value(value: str) -> str:
+    return "'" + value.replace("\\", "\\\\").replace("'", "\\'") + "'"
+
+
+def _is_relative_to(path: Path, parent: Path) -> bool:
+    try:
+        path.resolve().relative_to(parent.resolve())
+        return True
+    except ValueError:
+        return False
+
+
+def _is_excluded_sync_path(path: Path) -> bool:
+    excluded_roots = (MIRROR_CACHE_DIR, ARCHIVE_CACHE_DIR)
+    return any(_is_relative_to(path, excluded_root) for excluded_root in excluded_roots)
+
+
+class DriveMetadataCache:
+    def __init__(self, cache_file: Path, enabled: bool) -> None:
+        self.cache_file = cache_file
+        self.enabled = enabled
+        self.changed = False
+        self.data: dict[str, Any] = {"version": CACHE_VERSION, "folders": {}}
+        if not enabled or not cache_file.exists():
+            return
+        try:
+            loaded = json.loads(cache_file.read_text(encoding="utf-8"))
+        except Exception:
+            return
+        if loaded.get("version") == CACHE_VERSION and isinstance(loaded.get("folders"), dict):
+            self.data = loaded
+
+    def _folder_key(self, parent_id: str, folder_name: str) -> str:
+        return f"{parent_id}\u001f{folder_name}"
+
+    def get_folder(self, parent_id: str, folder_name: str) -> Optional[dict[str, Any]]:
+        if not self.enabled:
+            return None
+        item = self.data.get("folders", {}).get(self._folder_key(parent_id, folder_name))
+        return item if isinstance(item, dict) else None
+
+    def set_folder(self, parent_id: str, folder_name: str, item: dict[str, Any]) -> None:
+        if not self.enabled:
+            return
+        folder_item = {
+            "id": item.get("id"),
+            "name": item.get("name", folder_name),
+            "mimeType": item.get("mimeType", FOLDER_MIME),
+            "modifiedTime": item.get("modifiedTime"),
+        }
+        if not folder_item["id"]:
+            return
+        self.data.setdefault("folders", {})[self._folder_key(parent_id, folder_name)] = folder_item
+        self.changed = True
+
+    def forget_folder(self, parent_id: str, folder_name: str) -> None:
+        if not self.enabled:
+            return
+        key = self._folder_key(parent_id, folder_name)
+        if key in self.data.setdefault("folders", {}):
+            del self.data["folders"][key]
+            self.changed = True
+
+    def save(self) -> None:
+        if not self.enabled or not self.changed:
+            return
+        _safe_mkdir(self.cache_file.parent)
+        temp_file = self.cache_file.with_suffix(".json.tmp")
+        temp_file.write_text(json.dumps(self.data, indent=2, sort_keys=True), encoding="utf-8")
+        temp_file.replace(self.cache_file)
+        self.changed = False
+
+
+class OptionalProgress:
+    def __init__(self, total: int, desc: str, unit: str, enabled: bool = True) -> None:
+        self.bar: Any = None
+        if not enabled or total <= 0:
+            return
+        try:
+            from tqdm import tqdm
+
+            self.bar = tqdm(total=total, desc=desc, unit=unit, dynamic_ncols=True)
+        except Exception:
+            self.bar = None
+
+    @property
+    def active(self) -> bool:
+        return self.bar is not None
+
+    def update(self, **postfix: int) -> None:
+        if not self.bar:
+            return
+        if postfix:
+            self.bar.set_postfix(postfix, refresh=False)
+        self.bar.update(1)
+
+    def write(self, message: str) -> None:
+        if self.bar:
+            self.bar.write(message)
+        else:
+            print(message, flush=True)
+
+    def close(self) -> None:
+        if self.bar:
+            self.bar.close()
 
 
 def _safe_mkdir(path: Path) -> None:
@@ -87,7 +212,7 @@ def _with_retries(label: str, func: Callable[[], T], retries: int) -> T:
             time.sleep(delay)
 
 
-def _drive_service(oauth_client: Path, oauth_token: Path):
+def _drive_service(oauth_client: Path, oauth_token: Path, *, persist_token: bool = True):
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
     from google_auth_oauthlib.flow import InstalledAppFlow
@@ -107,8 +232,9 @@ def _drive_service(oauth_client: Path, oauth_token: Path):
     if not creds:
         raise SystemExit("OAuth credentials could not be created")
 
-    _safe_mkdir(oauth_token.parent)
-    oauth_token.write_text(creds.to_json(), encoding="utf-8")
+    if persist_token:
+        _safe_mkdir(oauth_token.parent)
+        oauth_token.write_text(creds.to_json(), encoding="utf-8")
     return build("drive", "v3", credentials=creds, cache_discovery=False)
 
 
@@ -131,11 +257,22 @@ def _describe_http_error(exc: Exception) -> Optional[str]:
 
 
 class DriveMirror:
-    def __init__(self, service, dry_run: bool, retries: int) -> None:
+    def __init__(self, service, dry_run: bool, retries: int, metadata_cache: Optional[DriveMetadataCache] = None) -> None:
         self.service = service
         self.dry_run = dry_run
         self.retries = retries
+        self.metadata_cache = metadata_cache
         self.children_cache: dict[str, list[dict[str, Any]]] = {}
+
+    def get_item(self, file_id: str) -> Optional[dict[str, Any]]:
+        request = self.service.files().get(
+            fileId=file_id,
+            fields="id, name, mimeType, size, md5Checksum, modifiedTime, trashed, parents",
+        )
+        try:
+            return _with_retries(f"get item {file_id}", request.execute, self.retries)
+        except Exception:
+            return None
 
     def list_children(self, parent_id: str) -> list[dict[str, Any]]:
         if parent_id in self.children_cache:
@@ -145,7 +282,7 @@ class DriveMirror:
         page_token: Optional[str] = None
         while True:
             request = self.service.files().list(
-                q=f"'{parent_id}' in parents and trashed=false",
+                q=f"{_drive_query_value(parent_id)} in parents and trashed=false",
                 fields="nextPageToken, files(id, name, mimeType, size, md5Checksum, modifiedTime)",
                 pageToken=page_token,
                 pageSize=1000,
@@ -165,11 +302,40 @@ class DriveMirror:
         name: str,
         mime_type: Optional[str] = None,
     ) -> Optional[dict[str, Any]]:
-        for item in self.list_children(parent_id):
+        if mime_type == FOLDER_MIME and self.metadata_cache:
+            cached = self.metadata_cache.get_folder(parent_id, name)
+            if cached and cached.get("id"):
+                item = None if self.dry_run else self.get_item(str(cached["id"]))
+                if self.dry_run:
+                    return cached
+                parents = item.get("parents", []) if item else []
+                if (
+                    item
+                    and not item.get("trashed")
+                    and item.get("name") == name
+                    and item.get("mimeType") == FOLDER_MIME
+                    and (not parents or parent_id in parents)
+                ):
+                    self.metadata_cache.set_folder(parent_id, name, item)
+                    return item
+                self.metadata_cache.forget_folder(parent_id, name)
+
+        query = f"{_drive_query_value(parent_id)} in parents and name = {_drive_query_value(name)} and trashed=false"
+        if mime_type:
+            query += f" and mimeType = {_drive_query_value(mime_type)}"
+        request = self.service.files().list(
+            q=query,
+            fields="files(id, name, mimeType, size, md5Checksum, modifiedTime)",
+            pageSize=10,
+        )
+        response = _with_retries(f"find child {name} in {parent_id}", request.execute, self.retries)
+        for item in response.get("files", []):
             if item.get("name") != name:
                 continue
             if mime_type and item.get("mimeType") != mime_type:
                 continue
+            if mime_type == FOLDER_MIME and self.metadata_cache:
+                self.metadata_cache.set_folder(parent_id, name, item)
             return item
         return None
 
@@ -190,20 +356,29 @@ class DriveMirror:
         request = self.service.files().create(body=metadata, fields="id, name, mimeType")
         created = _with_retries(f"create folder {folder_name}", request.execute, self.retries)
         self.children_cache.setdefault(parent_id, []).append(created)
+        if self.metadata_cache:
+            self.metadata_cache.set_folder(parent_id, folder_name, created)
         return created["id"]
 
-    def upload_file(self, parent_id: str, local_file: Path, remote_name: str) -> str:
+    def upload_file(
+        self,
+        parent_id: str,
+        local_file: Path,
+        remote_name: str,
+        existing: Any = UNKNOWN_REMOTE,
+    ) -> str:
         from googleapiclient.http import MediaFileUpload
 
         local_size = local_file.stat().st_size
-        if self.dry_run:
-            return "create"
-
         local_md5 = _md5_file(local_file)
-        existing = self.find_child(parent_id, remote_name)
+        if existing is UNKNOWN_REMOTE:
+            existing = self.find_child(parent_id, remote_name)
 
         if existing and existing.get("md5Checksum") == local_md5 and int(existing.get("size", -1)) == local_size:
             return "skip"
+
+        if self.dry_run:
+            return "update" if existing else "create"
 
         mime_type = mimetypes.guess_type(local_file.name)[0] or "application/octet-stream"
         media = MediaFileUpload(
@@ -287,7 +462,15 @@ class DriveMirror:
 
 
 def iter_files(source_root: Path) -> list[Path]:
-    return sorted(path for path in source_root.rglob("*") if path.is_file())
+    files: list[Path] = []
+    for root, dirs, filenames in os.walk(source_root):
+        root_path = Path(root)
+        dirs[:] = [dirname for dirname in dirs if not _is_excluded_sync_path(root_path / dirname)]
+        for filename in filenames:
+            path = root_path / filename
+            if not _is_excluded_sync_path(path) and path.is_file():
+                files.append(path)
+    return sorted(files)
 
 
 def relative_file_paths(source_root: Path) -> set[str]:
@@ -425,6 +608,56 @@ def desired_folder_paths(file_paths: set[str]) -> set[str]:
     return folders
 
 
+def build_remote_folder_cache(
+    *,
+    mirror: DriveMirror,
+    source_id: str,
+    remote_folders: list[tuple[str, dict[str, Any]]],
+    desired_paths: set[str],
+) -> dict[tuple[str, ...], str]:
+    folder_ids: dict[tuple[str, ...], str] = {(): source_id}
+
+    for rel_path, item in sorted(remote_folders, key=lambda pair: pair[0].count("/")):
+        parts = tuple(Path(rel_path).parts)
+        folder_ids[parts] = item["id"]
+        if mirror.metadata_cache:
+            parent_parts = parts[:-1]
+            parent_id = folder_ids.get(parent_parts)
+            if parent_id:
+                mirror.metadata_cache.set_folder(parent_id, parts[-1], item)
+
+    for rel_folder in sorted(desired_folder_paths(desired_paths), key=lambda path: (path.count("/"), path)):
+        parts = tuple(Path(rel_folder).parts)
+        if parts in folder_ids:
+            continue
+        parent_parts = parts[:-1]
+        parent_id = folder_ids[parent_parts]
+        folder_id = mirror.ensure_folder(parent_id, parts[-1])
+        folder_ids[parts] = folder_id
+
+    return folder_ids
+
+
+def upload_file_worker(
+    *,
+    oauth_client: Path,
+    oauth_token: Path,
+    dry_run: bool,
+    retries: int,
+    parent_id: str,
+    local_file: Path,
+    remote_name: str,
+    existing: Optional[dict[str, Any]],
+) -> str:
+    worker_state = upload_file_worker.__dict__.setdefault("state", threading.local())
+    mirror = getattr(worker_state, "mirror", None)
+    if mirror is None:
+        service = None if dry_run else _drive_service(oauth_client, oauth_token, persist_token=False)
+        mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
+        worker_state.mirror = mirror
+    return mirror.upload_file(parent_id, local_file, remote_name, existing=existing)
+
+
 def print_path_sample(paths: list[str], *, heading: str, limit: int = 25) -> None:
     if not paths:
         return
@@ -467,13 +700,17 @@ def delete_remote_extras(
     desired_paths: set[str],
     dry_run: bool,
     yes: bool,
+    remote_files: Optional[dict[str, dict[str, Any]]] = None,
+    remote_folders: Optional[list[tuple[str, dict[str, Any]]]] = None,
+    duplicate_files: Optional[list[tuple[str, dict[str, Any]]]] = None,
 ) -> tuple[int, int]:
     if dry_run and source_id.startswith("DRY_RUN_FOLDER_"):
         print("Remote cleanup: mirror folder does not exist yet; no remote extras to preview")
         return 0, 0
 
-    duplicate_files: list[tuple[str, dict[str, Any]]] = []
-    remote_files, remote_folders = collect_remote_tree(mirror, source_id, duplicate_files=duplicate_files)
+    if remote_files is None or remote_folders is None or duplicate_files is None:
+        duplicate_files = []
+        remote_files, remote_folders = collect_remote_tree(mirror, source_id, duplicate_files=duplicate_files)
     extra_files = sorted(set(remote_files) - desired_paths)
     desired_folders = desired_folder_paths(desired_paths)
     candidate_folders = sorted(rel for rel, _item in remote_folders if rel not in desired_folders)
@@ -628,25 +865,31 @@ def restore_artifacts(
     print(f"Remote bytes: {human_size(total_bytes)}")
 
     counts = {"create": 0, "update": 0, "skip": 0, "failed": 0}
-    for index, rel_path in enumerate(sorted(remote_files), 1):
-        item = remote_files[rel_path]
-        local_file = destination_root / Path(rel_path)
-        remote_size = int(item.get("size", -1))
-        remote_md5 = item.get("md5Checksum")
-        if local_file.exists() and remote_md5 and local_file.stat().st_size == remote_size and _md5_file(local_file) == remote_md5:
-            action = "skip"
-        else:
-            action = "update" if local_file.exists() else "create"
-            try:
-                mirror.download_file(item["id"], local_file)
-            except Exception as exc:
-                counts["failed"] += 1
-                print(f"[{index}/{len(remote_files)}] failed {human_size(max(remote_size, 0)):>10} {rel_path}: {exc}", flush=True)
-                continue
-        counts[action] += 1
-        should_print = action != "skip" or progress_every <= 1 or index % progress_every == 0
-        if should_print:
-            print(f"[{index}/{len(remote_files)}] {action:6} {human_size(max(remote_size, 0)):>10} {rel_path}", flush=True)
+    progress = OptionalProgress(len(remote_files), "restore", "file")
+    try:
+        for index, rel_path in enumerate(sorted(remote_files), 1):
+            item = remote_files[rel_path]
+            local_file = destination_root / Path(rel_path)
+            remote_size = int(item.get("size", -1))
+            remote_md5 = item.get("md5Checksum")
+            if local_file.exists() and remote_md5 and local_file.stat().st_size == remote_size and _md5_file(local_file) == remote_md5:
+                action = "skip"
+            else:
+                action = "update" if local_file.exists() else "create"
+                try:
+                    mirror.download_file(item["id"], local_file)
+                except Exception as exc:
+                    counts["failed"] += 1
+                    progress.write(f"[{index}/{len(remote_files)}] failed {human_size(max(remote_size, 0)):>10} {rel_path}: {exc}")
+                    progress.update(create=counts["create"], update=counts["update"], skip=counts["skip"], failed=counts["failed"])
+                    continue
+            counts[action] += 1
+            should_print = action != "skip" or (not progress.active and (progress_every <= 1 or index % progress_every == 0))
+            if should_print:
+                progress.write(f"[{index}/{len(remote_files)}] {action:6} {human_size(max(remote_size, 0)):>10} {rel_path}")
+            progress.update(create=counts["create"], update=counts["update"], skip=counts["skip"], failed=counts["failed"])
+    finally:
+        progress.close()
 
     print("\nRestore done")
     print(f"Created: {counts['create']}")
@@ -681,6 +924,9 @@ def mirror_artifacts(
     progress_every: int,
     delete_extras: bool,
     yes: bool,
+    workers: int,
+    cache_file: Path,
+    use_cache: bool,
 ) -> None:
     if not source_root.exists():
         raise SystemExit(f"Source folder not found: {source_root}")
@@ -703,40 +949,88 @@ def mirror_artifacts(
     print(f"Mode: {'dry-run' if dry_run else 'mirror'}")
     print(f"Delete remote extras: {'yes' if delete_extras else 'no'}")
 
+    metadata_cache = DriveMetadataCache(cache_file, enabled=use_cache)
     service = _drive_service(oauth_client, oauth_token)
-    mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
+    mirror = DriveMirror(service, dry_run=dry_run, retries=retries, metadata_cache=metadata_cache)
 
-    root_id = mirror.ensure_folder(drive_root_id, drive_root_name)
-    repo_id = mirror.ensure_folder(root_id, repo_folder_name)
-    source_id = ensure_remote_folder_path(mirror, repo_id, remote_subfolder)
+    try:
+        root_id = mirror.ensure_folder(drive_root_id, drive_root_name)
+        repo_id = mirror.ensure_folder(root_id, repo_folder_name)
+        source_id = ensure_remote_folder_path(mirror, repo_id, remote_subfolder)
 
-    folder_cache: dict[tuple[str, ...], str] = {(): source_id}
+        duplicate_files: list[tuple[str, dict[str, Any]]] = []
+        if dry_run and source_id.startswith("DRY_RUN_FOLDER_"):
+            remote_files, remote_folders = {}, []
+        else:
+            remote_files, remote_folders = collect_remote_tree(mirror, source_id, duplicate_files=duplicate_files)
+        folder_cache = build_remote_folder_cache(
+            mirror=mirror,
+            source_id=source_id,
+            remote_folders=remote_folders,
+            desired_paths=desired_paths,
+        )
+    finally:
+        metadata_cache.save()
+
     counts = {"create": 0, "update": 0, "skip": 0, "failed": 0}
+    worker_count = max(1, workers)
+    print(f"Remote files: {len(remote_files)}")
+    print(f"Remote folders: {len(remote_folders)}")
+    print(f"Workers: {worker_count}")
 
+    tasks: list[tuple[int, Path, str, str, Optional[dict[str, Any]], int]] = []
     for index, local_file in enumerate(files, 1):
         rel = local_file.relative_to(source_root)
-        parent_parts = rel.parts[:-1]
-        parent_id = source_id
-        current_parts: list[str] = []
-        for part in parent_parts:
-            current_parts.append(part)
-            key = tuple(current_parts)
-            if key in folder_cache:
-                parent_id = folder_cache[key]
-                continue
-            parent_id = mirror.ensure_folder(parent_id, part)
-            folder_cache[key] = parent_id
+        rel_path = rel.as_posix()
+        parent_id = folder_cache[tuple(rel.parts[:-1])]
+        tasks.append((index, local_file, rel_path, parent_id, remote_files.get(rel_path), local_file.stat().st_size))
 
-        try:
-            action = mirror.upload_file(parent_id, local_file, rel.name)
-            counts[action] += 1
-            should_print = action != "skip" or progress_every <= 1 or index % progress_every == 0
-            if should_print:
-                print(f"[{index}/{len(files)}] {action:6} {human_size(local_file.stat().st_size):>10} {rel.as_posix()}", flush=True)
-        except Exception as exc:
-            counts["failed"] += 1
-            print(f"[{index}/{len(files)}] failed {human_size(local_file.stat().st_size):>10} {rel.as_posix()}: {exc}", flush=True)
-            continue
+    progress = OptionalProgress(len(tasks), "mirror", "file")
+    try:
+        if worker_count <= 1 or len(tasks) <= 1:
+            for completed, (_index, local_file, rel_path, parent_id, existing, local_size) in enumerate(tasks, 1):
+                try:
+                    action = mirror.upload_file(parent_id, local_file, local_file.name, existing=existing)
+                    counts[action] += 1
+                    should_print = action != "skip" or (not progress.active and (progress_every <= 1 or completed % progress_every == 0))
+                    if should_print:
+                        progress.write(f"[{completed}/{len(tasks)}] {action:6} {human_size(local_size):>10} {rel_path}")
+                except Exception as exc:
+                    counts["failed"] += 1
+                    progress.write(f"[{completed}/{len(tasks)}] failed {human_size(local_size):>10} {rel_path}: {exc}")
+                finally:
+                    progress.update(create=counts["create"], update=counts["update"], skip=counts["skip"], failed=counts["failed"])
+        else:
+            with ThreadPoolExecutor(max_workers=worker_count) as executor:
+                futures = {
+                    executor.submit(
+                        upload_file_worker,
+                        oauth_client=oauth_client,
+                        oauth_token=oauth_token,
+                        dry_run=dry_run,
+                        retries=retries,
+                        parent_id=parent_id,
+                        local_file=local_file,
+                        remote_name=local_file.name,
+                        existing=existing,
+                    ): (local_file, rel_path, local_size)
+                    for _index, local_file, rel_path, parent_id, existing, local_size in tasks
+                }
+                for completed, future in enumerate(as_completed(futures), 1):
+                    local_file, rel_path, local_size = futures[future]
+                    try:
+                        action = future.result()
+                        counts[action] += 1
+                        should_print = action != "skip" or (not progress.active and (progress_every <= 1 or completed % progress_every == 0))
+                        if should_print:
+                            progress.write(f"[{completed}/{len(tasks)}] {action:6} {human_size(local_size):>10} {rel_path}")
+                    except Exception as exc:
+                        counts["failed"] += 1
+                        progress.write(f"[{completed}/{len(tasks)}] failed {human_size(local_size):>10} {rel_path}: {exc}")
+                    finally:
+                        progress.update(create=counts["create"], update=counts["update"], skip=counts["skip"], failed=counts["failed"])
+    finally:
+        progress.close()
 
     print("\nDone")
     print(f"Created: {counts['create']}")
@@ -750,6 +1044,9 @@ def mirror_artifacts(
             desired_paths=desired_paths,
             dry_run=dry_run,
             yes=yes,
+            remote_files=remote_files,
+            remote_folders=remote_folders,
+            duplicate_files=duplicate_files,
         )
         print(f"Deleted remote files: {deleted_files}{' (dry-run)' if dry_run else ''}")
         print(f"Deleted remote folders: {deleted_folders}{' (dry-run)' if dry_run else ''}")
@@ -852,6 +1149,64 @@ def upload_single_artifact(
     print(f"{action}: {local_file.name}")
 
 
+def create_sqlite_snapshot(source_db: Path, snapshot_db: Path) -> Path:
+    _safe_mkdir(snapshot_db.parent)
+    snapshot_db.unlink(missing_ok=True)
+    source_uri = f"file:{source_db.as_posix()}?mode=ro"
+    source_conn = sqlite3.connect(source_uri, uri=True, timeout=30)
+    try:
+        dest_conn = sqlite3.connect(snapshot_db)
+        try:
+            source_conn.backup(dest_conn)
+        finally:
+            dest_conn.close()
+    finally:
+        source_conn.close()
+    return snapshot_db
+
+
+def upload_manual_reviewer_db(
+    *,
+    drive_root_id: str,
+    drive_root_name: str,
+    repo_folder_name: str,
+    remote_subfolder: str,
+    oauth_client: Path,
+    oauth_token: Path,
+    dry_run: bool,
+    retries: int,
+) -> None:
+    source_db = REPO_ROOT / "manual_reviewer" / "data" / "reviewer.db"
+    wal_file = source_db.with_name("reviewer.db-wal")
+    shm_file = source_db.with_name("reviewer.db-shm")
+    if not source_db.exists():
+        raise SystemExit(f"Manual Reviewer database not found: {source_db}")
+    if not oauth_client.exists():
+        raise SystemExit(f"OAuth client JSON not found: {oauth_client}")
+
+    snapshot_db = ARCHIVE_CACHE_DIR / "manual_reviewer_db" / "reviewer.db"
+    upload_source = source_db if dry_run else create_sqlite_snapshot(source_db, snapshot_db)
+
+    print(f"Database: {source_db}")
+    print(f"Database bytes: {human_size(source_db.stat().st_size)}")
+    if wal_file.exists():
+        print(f"WAL bytes: {human_size(wal_file.stat().st_size)}")
+    if shm_file.exists():
+        print(f"SHM bytes: {human_size(shm_file.stat().st_size)}")
+    print(f"Snapshot: {upload_source}")
+    print(f"Snapshot bytes: {human_size(upload_source.stat().st_size)}")
+    print(f"Drive path: {drive_root_name}/{repo_folder_name}/{remote_subfolder}/reviewer.db")
+    print(f"Mode: {'dry-run db snapshot upload' if dry_run else 'db snapshot upload'}")
+
+    service = _drive_service(oauth_client, oauth_token)
+    mirror = DriveMirror(service, dry_run=dry_run, retries=retries)
+    root_id = mirror.ensure_folder(drive_root_id, drive_root_name)
+    repo_id = mirror.ensure_folder(root_id, repo_folder_name)
+    folder_id = ensure_remote_folder_path(mirror, repo_id, remote_subfolder)
+    action = mirror.upload_file(folder_id, upload_source, "reviewer.db")
+    print(f"{action}: reviewer.db")
+
+
 def restore_archive_from_drive(
     *,
     archive_name: str,
@@ -939,6 +1294,11 @@ def main() -> None:
         default=None,
         help="Local folder to mirror. Can be repeated. Defaults to output/, data/, and manual_reviewer/data/.",
     )
+    parser.add_argument(
+        "--manual-reviewer-db",
+        action="store_true",
+        help="Upload a consistent snapshot of manual_reviewer/data/reviewer.db only.",
+    )
     parser.add_argument("--archive", default=None, help="Upload a single archive file instead of mirroring a folder")
     parser.add_argument("--status", action="store_true", help="Compare local files to the Drive mirror without changing anything")
     parser.add_argument(
@@ -959,6 +1319,9 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="Preview without creating folders or uploading files")
     parser.add_argument("--limit", type=int, default=None, help="Process only first N files")
     parser.add_argument("--retries", type=int, default=8, help="Retries per Drive operation")
+    parser.add_argument("--workers", type=int, default=DEFAULT_WORKERS, help="Parallel file check/upload workers for mirror mode")
+    parser.add_argument("--cache-file", default=str(DEFAULT_CACHE_FILE), help="Local Drive metadata cache file")
+    parser.add_argument("--no-drive-cache", action="store_true", help="Disable cached Drive folder IDs")
     parser.add_argument("--no-delete", action="store_true", help="Upload/update only; do not delete remote files missing locally")
     parser.add_argument("--prune-local", action="store_true", help="With --restore, delete local files missing from the Drive mirror")
     parser.add_argument("--yes", action="store_true", help="Skip destructive confirmation prompts")
@@ -972,15 +1335,15 @@ def main() -> None:
 
     selected_modes = sum(
         bool(value)
-        for value in (args.archive, args.status, args.restore, args.restore_archive, args.verify_archive)
+        for value in (args.archive, args.manual_reviewer_db, args.status, args.restore, args.restore_archive, args.verify_archive)
     )
     if selected_modes > 1:
-        raise SystemExit("Use only one of --archive, --status, --restore, --restore-archive, or --verify-archive")
-    if args.limit is not None and (args.status or args.restore or args.restore_archive or args.verify_archive):
+        raise SystemExit("Use only one of --archive, --manual-reviewer-db, --status, --restore, --restore-archive, or --verify-archive")
+    if args.limit is not None and (args.manual_reviewer_db or args.status or args.restore or args.restore_archive or args.verify_archive):
         raise SystemExit("--limit is only supported for upload/mirror sync")
 
     source_specs: list[tuple[Path, str]] = []
-    if not args.archive and not args.restore_archive and not args.verify_archive:
+    if not args.archive and not args.manual_reviewer_db and not args.restore_archive and not args.verify_archive:
         if args.source:
             source_specs = [
                 (Path(source).resolve(), args.remote_subfolder or default_remote_subfolder(Path(source).resolve()))
@@ -1015,6 +1378,17 @@ def main() -> None:
                 drive_root_name=args.drive_root_name,
                 repo_folder_name=args.repo_folder_name,
                 remote_subfolder=args.remote_subfolder or "archives",
+                oauth_client=Path(args.oauth_client),
+                oauth_token=Path(args.oauth_token),
+                dry_run=args.dry_run,
+                retries=args.retries,
+            )
+        elif args.manual_reviewer_db:
+            upload_manual_reviewer_db(
+                drive_root_id=args.drive_root_id,
+                drive_root_name=args.drive_root_name,
+                repo_folder_name=args.repo_folder_name,
+                remote_subfolder=args.remote_subfolder or "manual_reviewer/data",
                 oauth_client=Path(args.oauth_client),
                 oauth_token=Path(args.oauth_token),
                 dry_run=args.dry_run,
@@ -1083,6 +1457,9 @@ def main() -> None:
                     progress_every=max(1, args.progress_every),
                     delete_extras=not args.no_delete,
                     yes=args.yes,
+                    workers=args.workers,
+                    cache_file=Path(args.cache_file),
+                    use_cache=not args.no_drive_cache,
                 )
     except Exception as exc:
         friendly = _describe_http_error(exc)
