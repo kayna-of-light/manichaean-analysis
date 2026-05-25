@@ -2,7 +2,6 @@
 import { useMemo } from "react";
 import { Box } from "@mui/material";
 import type { ReviewLine, ReviewToken, TokenWarningEntry } from "./hooks";
-import { useReviewerStore } from "./store";
 
 export type WarningMap = Map<string, TokenWarningEntry>;
 
@@ -27,6 +26,7 @@ interface Props {
   newBboxes?: NewBboxStripItem[];
   onNewBboxClick?: (nb: NewBboxStripItem, evt: { clientX: number; clientY: number }) => void;
   warnings?: WarningMap;
+  selectedBlobId?: number | string | null;
 }
 
 /** Position of a token within its overline group */
@@ -194,10 +194,7 @@ function isOverlineSkip(item: StripItem): boolean {
   return lbl != null && OVERLINE_SKIP_LABELS.has(lbl);
 }
 
-export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warnings }: Props) {
-  const selectedBlobId = useReviewerStore((s) => s.selectedBlobId);
-  const selectedLine = useReviewerStore((s) => s.selectedLine);
-
+export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warnings, selectedBlobId = null }: Props) {
   const stripItems = useMemo(() => buildStripItems(line.tokens, newBboxes), [line.tokens, newBboxes]);
 
   // Compute overline position for each visible item.
@@ -259,7 +256,6 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warn
               key={item.key}
               item={item}
               olPos={olPosMap.get(item.key) ?? null}
-              selectedLine={selectedLine}
               selectedBlobId={selectedBlobId}
               onTokenClick={onTokenClick}
               onNewBboxClick={onNewBboxClick}
@@ -346,7 +342,6 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warn
             <StripItemChar
               item={item}
               olPos={olPosMap.get(item.key) ?? null}
-              selectedLine={selectedLine}
               selectedBlobId={selectedBlobId}
               onTokenClick={onTokenClick}
               onNewBboxClick={onNewBboxClick}
@@ -366,7 +361,6 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warn
 interface StripItemCharProps {
   item: StripItem;
   olPos: OverlinePos;
-  selectedLine: number | null;
   selectedBlobId: number | string | null;
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   onNewBboxClick?: (nb: NewBboxStripItem, evt: { clientX: number; clientY: number }) => void;
@@ -376,7 +370,6 @@ interface StripItemCharProps {
 function StripItemChar({
   item,
   olPos,
-  selectedLine,
   selectedBlobId,
   onTokenClick,
   onNewBboxClick,
@@ -387,7 +380,7 @@ function StripItemChar({
       <TokenChar
         t={item.token}
         olPos={olPos}
-        isSelected={selectedLine === item.token.line_index && String(selectedBlobId) === tokenEditId(item.token)}
+        isSelected={String(selectedBlobId) === tokenEditId(item.token)}
         onTokenClick={onTokenClick}
         warningLevel={warningLevel}
       />

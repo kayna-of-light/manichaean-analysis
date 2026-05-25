@@ -199,11 +199,8 @@ export default function ReviewPage() {
   const selectedLine = useReviewerStore((s) => s.selectedLine);
   const setSelectedLine = useReviewerStore((s) => s.setSelectedLine);
   const openChooser = useReviewerStore((s) => s.openChooser);
-  const closeChooser = useReviewerStore((s) => s.closeChooser);
-  const chooserAnchor = useReviewerStore((s) => s.chooserAnchor);
   const selectedBlobId = useReviewerStore((s) => s.selectedBlobId);
 
-  const [popoverEl, setPopoverEl] = useState<HTMLElement | null>(null);
   const [clusterId, setClusterId] = useState<number | null>(null);
   const [drawLineIndex, setDrawLineIndex] = useState<number | null>(null);
   const [lineEditorLineIndex, setLineEditorLineIndex] = useState<number | null>(null);
@@ -270,7 +267,6 @@ export default function ReviewPage() {
           toJSON: () => ({}),
         }) as DOMRect,
     } as unknown as HTMLElement;
-    setPopoverEl(virtual);
     openChooser({
       page: pageId,
       pageInt: data.page_int,
@@ -292,13 +288,13 @@ export default function ReviewPage() {
         aabb: newBboxAabb(nb),
       },
       pendingOverline: { self: undefined, left: undefined, right: undefined },
-    });
-  }, [pendingNewBboxOpen, data, pageId, openChooser, setPopoverEl]);
+    }, virtual);
+  }, [pendingNewBboxOpen, data, pageId, openChooser]);
 
   // keyboard: j/k step lines, f flag, d done
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (chooserAnchor) return; // chooser owns keys
+      if (useReviewerStore.getState().chooserOpen) return; // chooser owns keys
       if (e.key === "Escape" && drawLineIndex !== null) {
         e.preventDefault();
         setDrawLineIndex(null);
@@ -333,10 +329,11 @@ export default function ReviewPage() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [data, selectedLine, scrollToLine, editMutation, chooserAnchor, drawLineIndex]);
+  }, [data, selectedLine, scrollToLine, editMutation, drawLineIndex]);
 
   const handleMoveLine = useCallback((direction: "up" | "down") => {
-    if (!chooserAnchor || !data) return;
+    const chooserAnchor = useReviewerStore.getState().chooserAnchor;
+    if (!chooserAnchor) return;
     moveLineMutation.mutate({
       page: parseInt(pageId, 10),
       line_index: chooserAnchor.lineIndex,
@@ -344,7 +341,7 @@ export default function ReviewPage() {
       direction,
       is_new_bbox: chooserAnchor.isNewBbox ?? false,
     });
-  }, [chooserAnchor, data, moveLineMutation, pageId]);
+  }, [moveLineMutation, pageId]);
 
   const handleDuplicateLine = useCallback((line: ReviewPage["lines"][number], newBboxes: NewBbox[]) => {
     if (!data) return;
@@ -375,7 +372,6 @@ export default function ReviewPage() {
           toJSON: () => ({}),
         }) as DOMRect,
     } as unknown as HTMLElement;
-    setPopoverEl(virtual);
 
     setSelectedLine(t.line_index);
     const line = data.lines.find((l) => l.line_index === t.line_index);
@@ -411,7 +407,7 @@ export default function ReviewPage() {
         };
       })(),
       pendingOverline: { self: undefined, left: undefined, right: undefined },
-    });
+    }, virtual);
   }, [data, openChooser, pageId, setSelectedLine]);
 
   const openNewBboxChooser = useCallback((
@@ -437,7 +433,6 @@ export default function ReviewPage() {
           toJSON: () => ({}),
         }) as DOMRect,
     } as unknown as HTMLElement;
-    setPopoverEl(virtual);
 
     const line = data.lines.find((l) => l.line_index === nb.line_index);
     const lineNewBboxes = data.new_bboxes.filter((b) => b.line_index === nb.line_index);
@@ -467,7 +462,7 @@ export default function ReviewPage() {
         aabb: newBboxAabb(nb),
       },
       pendingOverline: { self: undefined, left: undefined, right: undefined },
-    });
+    }, virtual);
   }, [data, openChooser, pageId, setSelectedLine]);
 
   if (isLoading) {
@@ -547,8 +542,8 @@ export default function ReviewPage() {
               key={line.line_index}
               page={data}
               line={line}
-              selectedLine={selectedLine}
-              selectedBlobId={selectedBlobId}
+              isSelectedLine={selectedLine === line.line_index}
+              selectedBlobId={selectedLine === line.line_index ? selectedBlobId : null}
               drawLineIndex={drawLineIndex}
               setLineRef={setLineRef}
               setSelectedLine={setSelectedLine}
@@ -641,14 +636,9 @@ export default function ReviewPage() {
       <ClusterPanel clusterId={clusterId} onClose={() => setClusterId(null)} />
 
       <CharChooser
-        anchorEl={popoverEl}
         mutateEdit={editMutation.mutate}
         editPending={editMutation.isPending}
         onMoveLine={handleMoveLine}
-        onClose={() => {
-          setPopoverEl(null);
-          closeChooser();
-        }}
       />
 
       <LineEditorDialog
@@ -666,7 +656,7 @@ export default function ReviewPage() {
 interface ReviewLineCardProps {
   page: ReviewPage;
   line: ReviewPage["lines"][number];
-  selectedLine: number | null;
+  isSelectedLine: boolean;
   selectedBlobId: string | number | null;
   drawLineIndex: number | null;
   setLineRef: (lineIndex: number, node: HTMLDivElement | null) => void;
@@ -685,7 +675,7 @@ interface ReviewLineCardProps {
 const ReviewLineCard = memo(function ReviewLineCard({
   page,
   line,
-  selectedLine,
+  isSelectedLine,
   selectedBlobId,
   drawLineIndex,
   setLineRef,
@@ -711,7 +701,6 @@ const ReviewLineCard = memo(function ReviewLineCard({
     label: nb.label,
     overline_mark_id: nb.overline_mark_id ?? null,
   }));
-  const isSelectedLine = selectedLine === line.line_index;
   const isDrawing = drawLineIndex === line.line_index;
 
   return (
@@ -949,6 +938,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
           if (source) openNewBboxChooser(source, evt);
         }}
         warnings={warningMap}
+        selectedBlobId={isSelectedLine ? selectedBlobId : null}
       />
     </Box>
   );

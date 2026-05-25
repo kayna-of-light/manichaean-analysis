@@ -86,8 +86,6 @@ function toggleExclusiveDiacritic(
 }
 
 interface Props {
-  anchorEl: HTMLElement | null;
-  onClose: () => void;
   mutateEdit: (payload: EditMutationPayload) => void;
   editPending: boolean;
   onMoveLine?: (direction: "up" | "down") => void;
@@ -127,8 +125,9 @@ function sequenceLabelsFromText(input: string): string[] {
     .filter((segment) => !/^\s+$/u.test(segment));
 }
 
-export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMoveLine }: Props) {
+export function CharChooser({ mutateEdit, editPending, onMoveLine }: Props) {
   const anchor = useReviewerStore((s) => s.chooserAnchor);
+  const anchorEl = useReviewerStore((s) => s.chooserAnchorEl);
   const updateLabel = useReviewerStore((s) => s.updateChooserLabel);
   const toggleOverlineLeft = useReviewerStore((s) => s.toggleOverlineLeft);
   const toggleOverlineRight = useReviewerStore((s) => s.toggleOverlineRight);
@@ -141,9 +140,11 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMove
   const [sequenceMode, setSequenceMode] = useState(false);
   const [sequenceText, setSequenceText] = useState("");
 
+  const handleClose = () => closeChooser();
+
   const submitEdit = (payload: EditMutationPayload) => {
     closeChooser();
-    window.setTimeout(() => mutateEdit(payload), 250);
+    mutateEdit(payload);
   };
 
   const insertSequenceText = (text: string) => {
@@ -428,7 +429,7 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMove
     <Popover
       open={Boolean(anchorEl)}
       anchorEl={anchorEl}
-      onClose={onClose}
+      onClose={handleClose}
       transitionDuration={0}
       anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
       transformOrigin={{ vertical: "top", horizontal: "center" }}
@@ -445,14 +446,14 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMove
                 size="small"
                 title="Move to line above"
                 disabled={anchor.lineIndex <= 0}
-                onClick={() => { onMoveLine("up"); onClose(); }}
+                onClick={() => { onMoveLine("up"); handleClose(); }}
               >
                 <ArrowUpwardIcon fontSize="small" />
               </IconButton>
               <IconButton
                 size="small"
                 title="Move to line below"
-                onClick={() => { onMoveLine("down"); onClose(); }}
+                onClick={() => { onMoveLine("down"); handleClose(); }}
               >
                 <ArrowDownwardIcon fontSize="small" />
               </IconButton>
@@ -491,7 +492,7 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMove
           >
             Seq
           </Button>
-          <IconButton size="small" onClick={onClose} aria-label="close">
+          <IconButton size="small" onClick={handleClose} aria-label="close">
             <CloseIcon fontSize="small" />
           </IconButton>
         </Stack>
@@ -837,7 +838,7 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMove
             Delete
           </Button>
           <Box sx={{ flex: 1 }} />
-          <Button onClick={onClose}>Cancel (Esc)</Button>
+          <Button onClick={handleClose}>Cancel (Esc)</Button>
         </Stack>
       </Box>
     </Popover>
