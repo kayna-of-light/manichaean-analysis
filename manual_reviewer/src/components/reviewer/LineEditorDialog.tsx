@@ -44,6 +44,16 @@ interface EditableBox extends Omit<LineEditorBox, "source"> {
   selected: boolean;
 }
 
+interface ActiveGeometryBox {
+  id: string;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  points: string | null;
+  label: string | null;
+}
+
 interface Props {
   open: boolean;
   page: ReviewPage;
@@ -109,6 +119,34 @@ function displayLabel(lbl: string | null): string {
   if (lbl === "." || lbl === "_lacuna_dot") return "·";
   if (lbl.startsWith("_")) return "?";
   return lbl;
+}
+
+function tokenToActiveGeometryBox(token: ReviewLine["tokens"][number]): ActiveGeometryBox | null {
+  const quad = token.img_quad?.filter((point) => point.length >= 2) ?? [];
+  if (quad.length > 0) {
+    const xs = quad.map((point) => point[0]);
+    const ys = quad.map((point) => point[1]);
+    return {
+      id: `active_${token.line_index}_${token.edit_id ?? token.blob_id}`,
+      x0: Math.min(...xs),
+      y0: Math.min(...ys),
+      x1: Math.max(...xs),
+      y1: Math.max(...ys),
+      points: quad.map((point) => `${point[0]},${point[1]}`).join(" "),
+      label: token.effective_label,
+    };
+  }
+  const bbox = token.geometry?.warped_bbox;
+  if (!bbox) return null;
+  return {
+    id: `active_${token.line_index}_${token.edit_id ?? token.blob_id}`,
+    x0: Math.min(bbox[0], bbox[2]),
+    y0: Math.min(bbox[1], bbox[3]),
+    x1: Math.max(bbox[0], bbox[2]),
+    y1: Math.max(bbox[1], bbox[3]),
+    points: null,
+    label: token.effective_label,
+  };
 }
 
 /* ─── Main Component ─────────────────────────────────────────────────── */
@@ -189,6 +227,13 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
   const replaceTokenCount = useMemo(() => page.lines
     .filter((pageLine) => replaceLineIndexSet.has(pageLine.line_index))
     .reduce((count, pageLine) => count + pageLine.tokens.filter((token) => !token.deleted).length, 0),
+  [page.lines, replaceLineIndexSet]);
+  const activeGeometryBoxes = useMemo(() => page.lines
+    .filter((pageLine) => replaceLineIndexSet.has(pageLine.line_index))
+    .flatMap((pageLine) => pageLine.tokens
+      .filter((token) => !token.deleted)
+      .map(tokenToActiveGeometryBox)
+      .filter((box): box is ActiveGeometryBox => Boolean(box))),
   [page.lines, replaceLineIndexSet]);
 
   const reading = useMemo(() => {
@@ -451,6 +496,41 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
 
   /* ─── Canvas box render ────────────────────────────────────── */
 
+  const renderActiveGeometry = (box: ActiveGeometryBox) => {
+    const normalized = normalizeBox(box);
+    const commonProps = {
+      fill: "transparent",
+      stroke: "var(--color-glass-fg)",
+      strokeWidth: 0.9,
+      strokeDasharray: "2 2",
+      vectorEffect: "non-scaling-stroke" as const,
+    };
+    return (
+      <g key={box.id} opacity={0.65} style={{ pointerEvents: "none" }}>
+        {box.points ? (
+          <polygon points={box.points} {...commonProps} />
+        ) : (
+          <rect
+            x={normalized.x0} y={normalized.y0}
+            width={boxWidth(normalized)} height={boxHeight(normalized)}
+            {...commonProps}
+          />
+        )}
+        {box.label && (
+          <text
+            x={normalized.x0 + 1}
+            y={Math.max(view?.y ?? 0, normalized.y0 - 2)}
+            fontSize={7}
+            fill="var(--color-glass-fg)"
+            style={{ fontFamily: "var(--font-coptic)", pointerEvents: "none" }}
+          >
+            {displayLabel(box.label)}
+          </text>
+        )}
+      </g>
+    );
+  };
+
   const renderBox = (box: EditableBox) => {
     const normalized = normalizeBox(box);
     const focused = focusedId === box.id;
@@ -553,7 +633,8 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
               </Button>
             </Tooltip>
             <Box sx={{ flex: 1 }} />
-            <Chip size="small" label={`${existingBoxes.length - deletedExistingIds.size} saved`} color="success" variant="outlined" />
+            <Chip size="small" label={`${activeGeometryBoxes.length} active`} variant="outlined" />
+            <Chip size="small" label={`${activeExistingBoxes.length} saved`} color="success" variant="outlined" />
             {generated && (
               <Chip
                 size="small"
@@ -595,6 +676,7 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
                   width={data.image_size[0]} height={data.image_size[1]}
                   preserveAspectRatio="none" style={{ pointerEvents: "none" }}
                 />
+                {activeGeometryBoxes.map(renderActiveGeometry)}
                 {existingBoxes.filter((b) => !deletedExistingIds.has(b.id)).map(renderBox)}
                 {proposals.map(renderBox)}
                 {dragRect && (
