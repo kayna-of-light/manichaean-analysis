@@ -56,7 +56,14 @@ interface Props {
 type DragState =
   | { kind: "draw"; startX: number; startY: number; x: number; y: number }
   | { kind: "move"; id: string; offsetX: number; offsetY: number; width: number; height: number }
-  | { kind: "resize"; id: string; corner: "nw" | "ne" | "sw" | "se" };
+  | {
+      kind: "resize";
+      id: string;
+      corner: "nw" | "ne" | "sw" | "se";
+      startBox: { x0: number; y0: number; x1: number; y1: number };
+      offsetX: number;
+      offsetY: number;
+    };
 
 const MIN_BOX_SIZE = 3;
 const LACUNA_DOT_BOX_SIZE = 8;
@@ -158,8 +165,11 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
   const clientToImage = useCallback((clientX: number, clientY: number) => {
     const rect = frameRef.current?.getBoundingClientRect();
     if (!rect || !view) return null;
-    return { x: view.x + (clientX - rect.left) / scale, y: view.y + (clientY - rect.top) / scale };
-  }, [view, scale]);
+    return {
+      x: view.x + ((clientX - rect.left) * view.width) / rect.width,
+      y: view.y + ((clientY - rect.top) * view.height) / rect.height,
+    };
+  }, [view]);
 
   /* ─── Derived state ────────────────────────────────────────── */
 
@@ -310,8 +320,18 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
     if (!point) return;
     event.preventDefault();
     event.stopPropagation();
+    const startBox = normalizeBox(box);
+    const cornerX = corner.includes("w") ? startBox.x0 : startBox.x1;
+    const cornerY = corner.includes("n") ? startBox.y0 : startBox.y1;
     setFocusedId(box.id);
-    setDrag({ kind: "resize", id: box.id, corner });
+    setDrag({
+      kind: "resize",
+      id: box.id,
+      corner,
+      startBox,
+      offsetX: point.x - cornerX,
+      offsetY: point.y - cornerY,
+    });
   };
 
   const updateBox = (id: string, updater: (b: EditableBox) => EditableBox) => {
@@ -333,11 +353,13 @@ export function LineEditorDialog({ open, page, line, onClose, mutateEdit, editPe
       return;
     }
     updateBox(drag.id, (b) => {
-      const next = { ...b };
-      if (drag.corner.includes("n")) next.y0 = point.y;
-      if (drag.corner.includes("s")) next.y1 = point.y;
-      if (drag.corner.includes("w")) next.x0 = point.x;
-      if (drag.corner.includes("e")) next.x1 = point.x;
+      const handleX = point.x - drag.offsetX;
+      const handleY = point.y - drag.offsetY;
+      const next = { ...b, ...drag.startBox };
+      if (drag.corner.includes("n")) next.y0 = handleY;
+      if (drag.corner.includes("s")) next.y1 = handleY;
+      if (drag.corner.includes("w")) next.x0 = handleX;
+      if (drag.corner.includes("e")) next.x1 = handleX;
       return next;
     });
   };
