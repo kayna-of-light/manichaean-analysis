@@ -22,6 +22,7 @@ import StarIcon from "@mui/icons-material/Star";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
+import TextFieldsIcon from "@mui/icons-material/TextFields";
 import {
   usePageData,
   useEditMutation,
@@ -36,6 +37,7 @@ import { LineCanvas } from "@/components/reviewer/LineCanvas";
 import { TokenStrip, type WarningMap } from "@/components/reviewer/TokenStrip";
 import { CharChooser } from "@/components/reviewer/CharChooser";
 import { ClusterPanel } from "@/components/reviewer/ClusterPanel";
+import { LineEditorDialog } from "@/components/reviewer/LineEditorDialog";
 import { useReviewerStore, type SequenceTarget } from "@/components/reviewer/store";
 
 type NewBbox = ReviewPage["new_bboxes"][number];
@@ -157,6 +159,7 @@ export default function ReviewPage() {
   const [popoverEl, setPopoverEl] = useState<HTMLElement | null>(null);
   const [clusterId, setClusterId] = useState<number | null>(null);
   const [drawLineIndex, setDrawLineIndex] = useState<number | null>(null);
+  const [lineEditorLineIndex, setLineEditorLineIndex] = useState<number | null>(null);
   const [pendingNewBboxOpen, setPendingNewBboxOpen] = useState<string | null>(null);
   const lineRefs = useRef(new Map<number, HTMLDivElement>());
 
@@ -430,6 +433,9 @@ export default function ReviewPage() {
   const cpos = pageIds.indexOf(pageId);
   const prev = cpos > 0 ? pageIds[cpos - 1] : null;
   const next = cpos >= 0 && cpos < pageIds.length - 1 ? pageIds[cpos + 1] : null;
+  const lineEditorLine = lineEditorLineIndex == null
+    ? null
+    : (data.lines.find((line) => line.line_index === lineEditorLineIndex) ?? null);
 
   return (
     <Box sx={{ display: "flex", height: "calc(100dvh - 114px)", gap: 1.5 }}>
@@ -491,6 +497,7 @@ export default function ReviewPage() {
               setLineRef={setLineRef}
               setSelectedLine={setSelectedLine}
               setDrawLineIndex={setDrawLineIndex}
+              onOpenLineEditor={setLineEditorLineIndex}
               setPendingNewBboxOpen={setPendingNewBboxOpen}
               mutateEdit={editMutation.mutate}
               onTokenClick={onTokenClick}
@@ -585,6 +592,15 @@ export default function ReviewPage() {
           closeChooser();
         }}
       />
+
+      <LineEditorDialog
+        open={lineEditorLineIndex != null}
+        page={data}
+        line={lineEditorLine}
+        onClose={() => setLineEditorLineIndex(null)}
+        mutateEdit={editMutation.mutate}
+        editPending={editMutation.isPending}
+      />
     </Box>
   );
 }
@@ -598,6 +614,7 @@ interface ReviewLineCardProps {
   setLineRef: (lineIndex: number, node: HTMLDivElement | null) => void;
   setSelectedLine: (idx: number | null) => void;
   setDrawLineIndex: Dispatch<SetStateAction<number | null>>;
+  onOpenLineEditor: (lineIndex: number) => void;
   setPendingNewBboxOpen: Dispatch<SetStateAction<string | null>>;
   mutateEdit: ReturnType<typeof useEditMutation>["mutate"];
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
@@ -614,6 +631,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
   setLineRef,
   setSelectedLine,
   setDrawLineIndex,
+  onOpenLineEditor,
   setPendingNewBboxOpen,
   mutateEdit,
   onTokenClick,
@@ -751,6 +769,16 @@ const ReviewLineCard = memo(function ReviewLineCard({
               onClick={() => setDrawLineIndex(isDrawing ? null : line.line_index)}
             >
               <AddBoxOutlinedIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Line editor">
+            <IconButton
+              aria-label={`Open line editor for line ${displayIndex}`}
+              size="small"
+              sx={{ p: 0.5 }}
+              onClick={() => onOpenLineEditor(line.line_index)}
+            >
+              <TextFieldsIcon sx={{ fontSize: 16 }} />
             </IconButton>
           </Tooltip>
           <Tooltip title={line.status === "flagged" ? "Unflag (f)" : "Flag (f)"}>

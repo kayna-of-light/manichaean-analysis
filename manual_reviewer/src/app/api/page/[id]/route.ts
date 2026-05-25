@@ -207,7 +207,7 @@ export async function GET(
       };
       mergedLines.push({
         line_index: row.index,
-        display_index: row.display_index,
+        display_index: displayIndexForLine(canonicalLayout, row.index),
         tokens: [],
         warped_size: [imgW, Math.max(yBot - yTop, 1)] as [number, number],
         line_quad,
@@ -263,7 +263,7 @@ function normalizeBlobEditMap(
   return normalized;
 }
 
-function normalizeLineBlobMap<T extends { line_index?: number; blob_id?: string }>(
+function normalizeLineBlobMap<T>(
   map: Map<string, T>,
   layout: CanonicalLineLayout | null,
 ): Map<string, T> {
@@ -271,9 +271,10 @@ function normalizeLineBlobMap<T extends { line_index?: number; blob_id?: string 
   for (const [key, value] of map.entries()) {
     const [lineIndexRaw, blobId] = key.split(":", 2);
     const lineIndex = canonicalizeLineIndex(layout, Number(lineIndexRaw));
+    const lineValue = value as T & { line_index?: number };
     normalized.set(
       `${lineIndex}:${blobId}`,
-      value.line_index == null ? value : { ...value, line_index: lineIndex },
+      lineValue.line_index == null ? value : { ...lineValue, line_index: lineIndex },
     );
   }
   return normalized;

@@ -78,8 +78,10 @@ export interface ReviewPage {
     x1: number;
     y1: number;
     coord_space: string;
+    kind?: "base" | "lacuna_dot" | "mark" | null;
     label: string | null;
     diacritics?: string[] | null;
+    lacuna_bracket?: string | null;
     overline_mark_id?: number | null;
   }[];
 }
@@ -143,12 +145,24 @@ export interface EditMutationPayload {
     x1: number;
     y1: number;
     coord_space?: "warped" | "image";
+    kind?: "base" | "lacuna_dot" | "mark" | null;
     label?: string | null;
+    diacritics?: string[] | null;
+    lacuna_bracket?: string | null;
+    overline_mark_id?: number | null;
   }[];
   update_new_bboxes?: {
     id: string;
+    line_index?: number;
+    x0?: number;
+    y0?: number;
+    x1?: number;
+    y1?: number;
+    coord_space?: "warped" | "image";
+    kind?: "base" | "lacuna_dot" | "mark" | null;
     label?: string | null;
     diacritics?: string[];
+    lacuna_bracket?: string | null;
     overline_mark_id?: number | null;
   }[];
   delete_new_bboxes?: string[];
@@ -258,9 +272,11 @@ function applyEditPayload(
           x1: bbox.x1,
           y1: bbox.y1,
           coord_space: bbox.coord_space ?? "warped",
+          kind: bbox.kind ?? "base",
           label: bbox.label ?? null,
-          diacritics: null,
-          overline_mark_id: null,
+          diacritics: bbox.diacritics ?? null,
+          lacuna_bracket: bbox.lacuna_bracket ?? null,
+          overline_mark_id: bbox.overline_mark_id ?? null,
         })),
       ],
     };
@@ -277,8 +293,17 @@ function applyEditPayload(
         changed = true;
         return {
           ...bbox,
+          line_index: update.line_index !== undefined ? update.line_index : bbox.line_index,
+          x0: update.x0 !== undefined ? update.x0 : bbox.x0,
+          y0: update.y0 !== undefined ? update.y0 : bbox.y0,
+          x1: update.x1 !== undefined ? update.x1 : bbox.x1,
+          y1: update.y1 !== undefined ? update.y1 : bbox.y1,
+          coord_space: update.coord_space !== undefined ? update.coord_space : bbox.coord_space,
+          kind: update.kind !== undefined ? update.kind : bbox.kind,
           label: update.label !== undefined ? update.label : bbox.label,
           diacritics: update.diacritics !== undefined ? update.diacritics : bbox.diacritics,
+          lacuna_bracket:
+            update.lacuna_bracket !== undefined ? update.lacuna_bracket : bbox.lacuna_bracket,
           overline_mark_id:
             update.overline_mark_id !== undefined
               ? update.overline_mark_id
@@ -453,5 +478,55 @@ export function usePagesList() {
       if (!res.ok) throw new Error("failed to load pages");
       return res.json();
     },
+  });
+}
+
+export interface LineEditorBox {
+  id: string;
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  label: string | null;
+  source: "proposal" | "existing";
+  source_component_ids: number[];
+  split_method: string;
+  confidence: "strong" | "usable" | "needs_review" | "reference";
+  kind: "base" | "lacuna_dot" | "mark";
+  include: boolean;
+}
+
+export interface LineEditorComponent {
+  id: number;
+  bbox: [number, number, number, number];
+  kind: "base" | "dot" | "horizontal" | "excluded" | "other";
+  area_px: number;
+}
+
+export interface LineEditorData {
+  page: string;
+  page_int: number;
+  line_index: number;
+  display_index: number;
+  source_indices: number[];
+  image_size: [number, number];
+  image_url: string;
+  row_bbox: [number, number, number, number];
+  components: LineEditorComponent[];
+  proposals: LineEditorBox[];
+  existing_bboxes: LineEditorBox[];
+  templates: { label: string; label_slug: string; sample_count: number | null }[];
+}
+
+export function useLineEditorData(pageId: string, lineIndex: number | null, enabled: boolean) {
+  return useQuery<LineEditorData>({
+    queryKey: ["line-editor", pageId, lineIndex],
+    queryFn: async () => {
+      if (lineIndex == null) throw new Error("missing line index");
+      const res = await fetch(`/api/line-editor/${pageId}/${lineIndex}`);
+      if (!res.ok) throw new Error(`failed to load line editor data: ${res.status}`);
+      return res.json();
+    },
+    enabled: enabled && Boolean(pageId) && lineIndex != null,
   });
 }

@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 9;
+const SCHEMA_VERSION = 10;
 
 let _db: DB | null = null;
 
@@ -87,6 +87,7 @@ function migrate(db: DB) {
       x1              REAL NOT NULL,
       y1              REAL NOT NULL,
       coord_space     TEXT NOT NULL DEFAULT 'warped',
+      kind            TEXT NOT NULL DEFAULT 'base',
       label           TEXT,
       diacritics      TEXT,
       lacuna_bracket  TEXT,
@@ -273,6 +274,17 @@ function migrate(db: DB) {
     const cols = db.pragma("table_info(new_bboxes)") as Array<{ name: string }>;
     if (!cols.some((c) => c.name === "lost_overline")) {
       db.exec("ALTER TABLE new_bboxes ADD COLUMN lost_overline INTEGER DEFAULT 0");
+    }
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run(String(SCHEMA_VERSION));
+  }
+
+  if (currentVersion < 10) {
+    const cols = db.pragma("table_info(new_bboxes)") as Array<{ name: string }>;
+    if (!cols.some((c) => c.name === "kind")) {
+      db.exec("ALTER TABLE new_bboxes ADD COLUMN kind TEXT NOT NULL DEFAULT 'base'");
+      db.exec("UPDATE new_bboxes SET kind = 'lacuna_dot' WHERE label IN ('.', '_lacuna_dot')");
     }
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
