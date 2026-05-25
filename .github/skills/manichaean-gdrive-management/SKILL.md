@@ -1,187 +1,97 @@
 ---
 name: manichaean-gdrive-management
-description: "Manage Google Drive storage for manichaean-analysis artifacts. Use when asked to sync, mirror, archive, back up, restore, or inspect Manichaean generated output, large OCR files, .git-data/manichaean-analysis, Google Drive, gdrive, Drive artifacts, or scripts/sync_artifacts_to_drive.py."
+description: "Mirror or restore manichaean-analysis ignored/additional repo files with scripts/sync_artifacts_to_drive.py and Google Drive .git-data/manichaean-analysis."
 ---
 
-# Google Drive Artifact Management
+# Google Drive Mirror
 
-## When To Use
+Use this skill when the user asks to sync, mirror, back up, restore, inspect, or repair the Google Drive mirror for `manichaean-analysis` artifacts.
 
-Use this skill for `manichaean-analysis` tasks involving Google Drive storage, especially:
+## Contract
 
-- Backing up or mirroring generated `output/` artifacts, repository `data/` sources, and `manual_reviewer/data/` local review data.
-- Uploading large OCR dumps or other files that should not enter Git history.
-- Pruning old Drive files when local mirror files were deleted.
-- Restoring generated artifacts from Drive archives.
-- Restoring the Drive mirror into a fresh clone or new machine.
-- Verifying whether Drive holds a safety copy before cleanup.
-- Keeping Git history free of generated files and blobs `>= 50 MB`.
+The script mirrors additional repo files that are not safely represented by Git, so a fresh clone can be restored into a working state.
 
-This skill is about artifact storage. It is not for syncing the source text library as styled PDFs.
+Default local sources:
 
-## Storage Policy
+```text
+output/
+data/
+manual_reviewer/data/
+```
 
-Generated artifacts belong in Google Drive, not Git history. The `data/` folder is mirrored to Drive as a safety copy, while normal-sized source data can still remain in Git. The manual reviewer local data folder is also mirrored because it is intentionally ignored from Git.
-
-Primary Drive location:
+Default Drive target:
 
 ```text
 My Drive/.git-data/manichaean-analysis/
 ```
 
-Standard subfolders:
+This is a true local-to-Drive mirror. Local files are ground truth during upload mirror mode: changed/missing Drive files are created or updated, unchanged files are skipped by checksum/size, and remote extras are deleted only after the `DELETE_REMOTE` prompt unless `--yes` is explicitly used.
 
-```text
-.git-data/manichaean-analysis/output/
-.git-data/manichaean-analysis/data/
-.git-data/manichaean-analysis/manual_reviewer/data/
-.git-data/manichaean-analysis/archives/
-```
+The script keeps a local Drive metadata cache at `temp/gdrive_mirror_cache/drive_cache.json`. That cache and `temp/gdrive_archives/` are excluded from mirror file discovery and must not be mirrored.
 
-Git should keep source code, scripts, findings, documentation, and reasonably sized source data. Do not commit generated `output/` trees. Avoid adding new blobs `>= 50 MB`; upload oversized source OCR dumps with archive mode instead.
+## Commands
 
-## Script
-
-Use the repository script:
+Run commands from the repository root:
 
 ```powershell
-conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py
+cd C:\Users\mlf\source\github\manichaean-analysis
 ```
 
-The script reuses the Google Drive OAuth client and token from:
-
-```text
-C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_oauth_client.json
-C:\Users\mlf\source\github\literary-compilation\secrets\google_drive_token.json
-```
-
-It creates missing Drive folders, uploads missing or changed files, skips files that match by checksum, and deletes remote files that no longer exist locally after confirmation. It can also restore and verify full output archives from the Drive `archives/` folder. Set `LITERARY_COMPILATION_SECRETS` or pass `--oauth-client` / `--oauth-token` when the sibling `literary-compilation/secrets/` folder is not available.
-
-## Standard Workflow
-
-1. Check Git status before touching storage:
-
-   ```powershell
-   git status --short --branch
-   ```
-
-2. Preview small syncs before doing a large operation:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --status --source output --retries 12
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --dry-run --limit 10
-   ```
-
-3. For the default per-file mirror of `output/`, `data/`, and `manual_reviewer/data/`:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --retries 12
-   ```
-
-   By default this mirrors `output/`, `data/`, and `manual_reviewer/data/` when present. A clean checkout without generated local folders skips those missing default sources. The limit in `--limit N` applies per source folder.
-
-   This is a true local-to-Drive mirror. Remote files missing locally are deleted after a `DELETE_REMOTE` confirmation. Use `--dry-run` first to preview, `--yes` after reviewing, or `--no-delete` when an upload/update-only pass is required.
-
-   To mirror only one folder:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source output --retries 12
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
-   ```
-
-   Confirm reviewed deletions non-interactively:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --yes --retries 12
-   ```
-
-4. Prefer archive mode for immediate complete backups of large output trees:
-
-   ```powershell
-   New-Item -ItemType Directory -Force temp/gdrive_archives
-   tar -czf temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz output
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --archive temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz --retries 12
-   ```
-
-5. Upload one oversized source artifact with archive mode:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --archive "path/to/large-source-file.json" --retries 12
-   ```
-
-6. Restore the complete generated `output/` tree from a Drive archive:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive --retries 12
-   ```
-
-   Restore a specific archive when needed:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore-archive manichaean-analysis-output-YYYYMMDD.tar.gz --retries 12
-   ```
-
-   Verify a local archive after manual download or extraction:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --verify-archive temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
-   ```
-
-7. Restore the per-file Drive mirror into a fresh clone:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
-   ```
-
-   Use `--restore-archive` for complete generated `output/` recovery unless the per-file output mirror has been verified complete.
-
-   Restore creates/updates local files but does not delete local extras unless explicitly requested:
-
-   ```powershell
-   conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --prune-local --retries 12
-   ```
-
-   `--prune-local` requires typing `DELETE_LOCAL` before deleting local files that are missing from Drive. Use `--yes` only after reviewing a dry run.
-
-8. Restore an archive from a local copy into the repository root:
-
-   ```powershell
-   tar -xzf temp/gdrive_archives/manichaean-analysis-output-YYYYMMDD.tar.gz
-   ```
-
-## Safety Checks
-
-Before cleanup or promotion work, confirm preservation:
-
-- There is a Drive archive under `.git-data/manichaean-analysis/archives/` when a full safety backup is needed.
-- Complete `output/` recovery uses `--restore-archive`; do not assume the per-file `output/` mirror is complete until a restore dry-run or file-count comparison proves it.
-- The default Drive mirror includes `.git-data/manichaean-analysis/output/`, `.git-data/manichaean-analysis/data/`, and `.git-data/manichaean-analysis/manual_reviewer/data/`.
-- Run `--dry-run` before any sync expected to delete remote files.
-- Large generated files are not staged.
-- `output/` is ignored or locally excluded.
-- New Git objects do not include blobs `>= 50 MB`.
-
-Large blob check for new commits against upstream:
+Full mirror with live progress:
 
 ```powershell
-$objects = git rev-list --objects '@{u}..HEAD'
-foreach ($line in $objects) {
-  $idx = $line.IndexOf(' ')
-  if ($idx -lt 0) { continue }
-  $hash = $line.Substring(0, $idx)
-  $path = $line.Substring($idx + 1)
-  if ((git cat-file -t $hash) -ne 'blob') { continue }
-  $size = [int64](git cat-file -s $hash)
-  if ($size -ge 50MB) { "{0:n2} MB`t{1}" -f ($size / 1MB), $path }
-}
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --retries 12
 ```
 
-## Standing Rules
+Tune parallel file work when needed:
 
-- Do not delete local artifacts as part of Drive restore unless the user explicitly asks via `--prune-local`.
-- Do not use `git reset --hard` or destructive checkout to clean artifacts.
-- Do not use Drive as proof of safety unless upload completion is visible.
-- Do not bypass destructive prompts unless a dry run has already been reviewed or the user explicitly asked for non-interactive cleanup.
-- Preserve old branch refs before promoting cleaned Git history.
-- Record any important Drive location in `docs/artifact_storage.md` when the storage policy changes.
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --workers 2 --retries 12
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --workers 6 --retries 12
+```
+
+Mirror only one source:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --source output --retries 12
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --source data --retries 12
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --source manual_reviewer/data --retries 12
+```
+
+Inspect or preview:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --status --source manual_reviewer/data --retries 12
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --dry-run --limit 10 --retries 12
+```
+
+Upload/update without deleting Drive extras:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --no-delete --retries 12
+```
+
+Restore the Drive mirror into a fresh clone:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --retries 12
+```
+
+Only prune local extras during restore when explicitly requested:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --restore --prune-local --retries 12
+```
+
+Optional frequent Manual Reviewer state backup. This is not a replacement for the full mirror:
+
+```powershell
+conda run --no-capture-output -n literary-compilation python scripts/sync_artifacts_to_drive.py --manual-reviewer-db --retries 12
+```
+
+## Notes
+
+- Use `--no-capture-output` so progress, prompts, and failures are visible.
+- Do not mirror the cache; the script excludes it automatically.
+- Do not bypass deletion prompts unless the user has clearly confirmed local ground truth or asked for non-interactive cleanup.
+- The OAuth client and token are reused from `literary-compilation/secrets/` by default.
