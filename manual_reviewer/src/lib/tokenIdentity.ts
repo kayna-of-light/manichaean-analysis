@@ -1,6 +1,4 @@
-import type { BaselineLine } from "./zodSchemas";
-
-export function editIdsForBaselineLine(line: Pick<BaselineLine, "tokens">): string[] {
+export function editIdsForBaselineLine(line: { tokens: Array<{ blob_id: number }> }): string[] {
   const totals = new Map<number, number>();
   for (const token of line.tokens) {
     totals.set(token.blob_id, (totals.get(token.blob_id) ?? 0) + 1);

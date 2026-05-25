@@ -7,6 +7,7 @@ import type { Token } from "./zodSchemas";
  * ------------------------------------------------------------------------- */
 
 export type LineStatus = "pending" | "in_progress" | "done" | "flagged" | "special";
+export type NewBboxKind = "base" | "lacuna_dot" | "mark";
 
 export interface BlobEditRow {
   page: number;
@@ -30,6 +31,7 @@ export interface NewBboxRow {
   x1: number;
   y1: number;
   coord_space: "warped" | "image";
+  kind: NewBboxKind;
   label: string | null;
   diacritics: string | null;
   lacuna_bracket: string | null;
@@ -273,6 +275,12 @@ export interface UpsertEditInput {
   source?: "manual" | "candidate" | "cluster";
 }
 
+function normalizeNewBboxKind(kind: NewBboxKind | null | undefined, label?: string | null): NewBboxKind {
+  if (kind === "base" || kind === "lacuna_dot" || kind === "mark") return kind;
+  if (label === "." || label === "_lacuna_dot") return "lacuna_dot";
+  return "base";
+}
+
 export function upsertBlobEdit(input: UpsertEditInput) {
   const db = getDb();
   const key = [input.page, input.line_index, input.blob_id] as const;
@@ -364,9 +372,10 @@ export function setLineStatus(
   );
 }
 
-export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at" | "id" | "lost_overline"> & {
+export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at" | "id" | "lost_overline" | "kind"> & {
   id?: string;
   lost_overline?: number;
+  kind?: NewBboxKind | null;
 }) {
   const db = getDb();
   const id = input.id ?? `new_p${String(input.page).padStart(3, "0")}_l${String(
@@ -375,6 +384,7 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
   const after = {
     ...input,
     id,
+    kind: normalizeNewBboxKind(input.kind, input.label),
     lost_overline: input.lost_overline ?? 0,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
@@ -389,9 +399,9 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
     () => {
       db.prepare(
         `INSERT INTO new_bboxes
-         (id, page, line_index, x0, y0, x1, y1, coord_space, label,
+         (id, page, line_index, x0, y0, x1, y1, coord_space, kind, label,
           diacritics, lacuna_bracket, overline_mark_id, lost_overline, missplit_review_id, created_at, updated_at)
-         VALUES (@id, @page, @line_index, @x0, @y0, @x1, @y1, @coord_space,
+         VALUES (@id, @page, @line_index, @x0, @y0, @x1, @y1, @coord_space, @kind,
                  @label, @diacritics, @lacuna_bracket, @overline_mark_id, @lost_overline, @missplit_review_id, @created_at, @updated_at)`,
       ).run(after);
       return after;
@@ -421,7 +431,19 @@ export function deleteNewBbox(id: string) {
 
 export function updateNewBbox(
   id: string,
-  updates: { label?: string | null; diacritics?: string | null; overline_mark_id?: number | null },
+  updates: {
+    line_index?: number;
+    x0?: number;
+    y0?: number;
+    x1?: number;
+    y1?: number;
+    coord_space?: "warped" | "image";
+    kind?: NewBboxKind | null;
+    label?: string | null;
+    diacritics?: string | null;
+    lacuna_bracket?: string | null;
+    overline_mark_id?: number | null;
+  },
 ) {
   const db = getDb();
   const before = db
@@ -430,8 +452,17 @@ export function updateNewBbox(
   if (!before) return null;
   const after = {
     ...before,
+    line_index: updates.line_index !== undefined ? updates.line_index : before.line_index,
+    x0: updates.x0 !== undefined ? updates.x0 : before.x0,
+    y0: updates.y0 !== undefined ? updates.y0 : before.y0,
+    x1: updates.x1 !== undefined ? updates.x1 : before.x1,
+    y1: updates.y1 !== undefined ? updates.y1 : before.y1,
+    coord_space: updates.coord_space !== undefined ? updates.coord_space : before.coord_space,
+    kind: updates.kind !== undefined ? normalizeNewBboxKind(updates.kind, updates.label ?? before.label) : before.kind,
     label: updates.label !== undefined ? updates.label : before.label,
     diacritics: updates.diacritics !== undefined ? updates.diacritics : before.diacritics,
+    lacuna_bracket:
+      updates.lacuna_bracket !== undefined ? updates.lacuna_bracket : before.lacuna_bracket,
     overline_mark_id:
       updates.overline_mark_id !== undefined ? updates.overline_mark_id : before.overline_mark_id,
     updated_at: new Date().toISOString(),
@@ -446,15 +477,31 @@ export function updateNewBbox(
     () => {
       db.prepare(
         `UPDATE new_bboxes
-         SET label = @label,
+         SET line_index = @line_index,
+             x0 = @x0,
+             y0 = @y0,
+             x1 = @x1,
+             y1 = @y1,
+             coord_space = @coord_space,
+             kind = @kind,
+             label = @label,
              diacritics = @diacritics,
+             lacuna_bracket = @lacuna_bracket,
              overline_mark_id = @overline_mark_id,
              updated_at = @updated_at
          WHERE id = @id`,
       ).run({
         id,
+        line_index: after.line_index,
+        x0: after.x0,
+        y0: after.y0,
+        x1: after.x1,
+        y1: after.y1,
+        coord_space: after.coord_space,
+        kind: after.kind,
         label: after.label,
         diacritics: after.diacritics,
+        lacuna_bracket: after.lacuna_bracket,
         overline_mark_id: after.overline_mark_id,
         updated_at: after.updated_at,
       });

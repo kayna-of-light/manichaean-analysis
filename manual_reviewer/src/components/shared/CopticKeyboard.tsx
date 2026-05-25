@@ -323,8 +323,7 @@ export function CopticKeyboard(props: CopticKeyboardProps) {
           aria-label="backspace"
           disabled={
             mode === "single"
-              ? (props as SingleModeProps).value == null ||
-                (props as SingleModeProps).value.length === 0
+              ? ((props as SingleModeProps).value ?? "").length === 0
               : (props as MultiModeProps).value.length === 0
           }
         >

@@ -439,7 +439,7 @@ function MissplitCard({
 
       {/* Status chip + revert */}
       {item.status !== "pending" && (
-        <Stack direction="row" spacing={0.5} alignItems="center">
+        <Stack direction="row" spacing={0.5} sx={{ alignItems: "center" }}>
           <Chip
             label={item.status}
             size="small"

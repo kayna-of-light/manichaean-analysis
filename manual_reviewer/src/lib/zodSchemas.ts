@@ -127,9 +127,11 @@ export const NewBboxInputSchema = z.object({
   x1: z.number(),
   y1: z.number(),
   coord_space: z.enum(["warped", "image"]).default("warped"),
+  kind: z.enum(["base", "lacuna_dot", "mark"]).optional(),
   label: z.string().nullable().optional(),
   diacritics: z.array(z.string()).nullable().optional(),
   lacuna_bracket: z.string().nullable().optional(),
+  overline_mark_id: z.number().nullable().optional(),
 });
 export type NewBboxInput = z.infer<typeof NewBboxInputSchema>;
 

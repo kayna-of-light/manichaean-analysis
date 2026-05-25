@@ -19,8 +19,16 @@ export const dynamic = "force-dynamic";
 
 const UpdateNewBboxSchema = z.object({
   id: z.string(),
+  line_index: z.number().optional(),
+  x0: z.number().optional(),
+  y0: z.number().optional(),
+  x1: z.number().optional(),
+  y1: z.number().optional(),
+  coord_space: z.enum(["warped", "image"]).optional(),
+  kind: z.enum(["base", "lacuna_dot", "mark"]).optional(),
   label: z.string().nullable().optional(),
   diacritics: z.array(z.string()).optional(),
+  lacuna_bracket: z.string().nullable().optional(),
   overline_mark_id: z.number().nullable().optional(),
 });
 
@@ -71,6 +79,10 @@ export async function POST(
     new_bboxes: body.new_bboxes?.map((bbox) => ({
       ...bbox,
       line_index: canonicalLineIndex(bbox.line_index),
+    })),
+    update_new_bboxes: body.update_new_bboxes?.map((bbox) => ({
+      ...bbox,
+      line_index: bbox.line_index !== undefined ? canonicalLineIndex(bbox.line_index) : undefined,
     })),
     line_status: body.line_status
       ? { ...body.line_status, line_index: canonicalLineIndex(body.line_status.line_index) }
@@ -199,10 +211,11 @@ export async function POST(
         x1: b.x1,
         y1: b.y1,
         coord_space: b.coord_space,
+        kind: b.kind ?? null,
         label: b.label ?? null,
         diacritics: b.diacritics ? JSON.stringify(b.diacritics) : null,
         lacuna_bracket: b.lacuna_bracket ?? null,
-        overline_mark_id: null,
+        overline_mark_id: b.overline_mark_id ?? null,
         missplit_review_id: null,
       });
       results.new_bboxes.push(inserted.id);
@@ -257,6 +270,14 @@ export async function POST(
       const updated = updateNewBbox(u.id, {
         label: u.label !== undefined ? u.label : undefined,
         diacritics: u.diacritics ? JSON.stringify(u.diacritics) : undefined,
+        line_index: u.line_index,
+        x0: u.x0,
+        y0: u.y0,
+        x1: u.x1,
+        y1: u.y1,
+        coord_space: u.coord_space,
+        kind: u.kind !== undefined ? u.kind : undefined,
+        lacuna_bracket: u.lacuna_bracket !== undefined ? u.lacuna_bracket : undefined,
         overline_mark_id: u.overline_mark_id !== undefined ? u.overline_mark_id : undefined,
       });
       if (updated) results.updated_bboxes += 1;
