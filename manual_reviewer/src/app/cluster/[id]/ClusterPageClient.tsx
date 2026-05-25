@@ -32,6 +32,7 @@ interface ClusterMember {
   origin_cluster: number;
   reassigned: boolean;
   unset: boolean;
+  deleted?: boolean;
   label: string | null;
   warped_bbox: [number, number, number, number];
   area: number;
@@ -584,16 +585,21 @@ export function ClusterPageClient({ clusterId }: { clusterId: number }) {
                   borderRadius: 1,
                   border: isSel
                     ? "2px solid var(--color-glass-accent, #C8A465)"
-                    : m.reassigned
-                      ? "1.5px dashed var(--color-secondary, #b08)"
-                      : "1px solid var(--color-glass-border)",
+                    : m.deleted
+                      ? "1.5px solid rgba(244, 67, 54, 0.6)"
+                      : m.reassigned
+                        ? "1.5px dashed var(--color-secondary, #b08)"
+                        : "1px solid var(--color-glass-border)",
                   outline: isAnchor
                     ? "1px dotted var(--color-glass-accent, #C8A465)"
                     : "none",
                   outlineOffset: isAnchor ? 2 : 0,
                   background: isSel
                     ? "rgba(200, 164, 101, 0.15)"
-                    : "var(--color-glass-surface)",
+                    : m.deleted
+                      ? "rgba(244, 67, 54, 0.08)"
+                      : "var(--color-glass-surface)",
+                  opacity: m.deleted ? 0.55 : 1,
                   display: "flex",
                   flexDirection: "column",
                   gap: 0.5,
@@ -602,6 +608,21 @@ export function ClusterPageClient({ clusterId }: { clusterId: number }) {
                   transition: "background 120ms ease-out",
                 }}
               >
+                {m.deleted && (
+                  <Chip
+                    label="DELETED"
+                    size="small"
+                    sx={{
+                      alignSelf: "center",
+                      height: 16,
+                      fontSize: 9,
+                      fontWeight: 700,
+                      bgcolor: "rgba(244, 67, 54, 0.2)",
+                      color: "#f44336",
+                      borderRadius: 0.5,
+                    }}
+                  />
+                )}
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <MemberCrop
                     imageUrl={m.image_url}

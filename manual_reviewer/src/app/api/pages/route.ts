@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getDb } from "@/lib/db";
-import { listPages, readInitialBaseline } from "@/lib/pipelineReaders";
+import { buildCanonicalLineLayout } from "@/lib/canonicalLines";
+import { listPages, readInitialBaseline, readV2Geometry } from "@/lib/pipelineReaders";
 
 export const dynamic = "force-dynamic";
 
@@ -45,11 +46,21 @@ export async function GET() {
     )
     .all();
 
-  // Read total line counts from baseline files (cached per-process)
+  // v2 body geometry is the page-structure source of truth. Fall back to the
+  // transposed baseline only for pages missing geometry artifacts.
   const lineCounts = new Map<string, number>();
   const lineIndexes = new Map<string, Set<number>>();
+  const canonicalByPage = new Map<string, Map<number, number>>();
   await Promise.all(
     pages.map(async (p) => {
+      const canonicalLayout = buildCanonicalLineLayout(await readV2Geometry(p));
+      if (canonicalLayout) {
+        lineCounts.set(p, canonicalLayout.rows.length);
+        lineIndexes.set(p, canonicalLayout.lineIndexes);
+        canonicalByPage.set(p, canonicalLayout.canonicalBySourceIndex);
+        return;
+      }
+
       const baseline = await readInitialBaseline(p);
       if (baseline) {
         lineCounts.set(p, baseline.lines.length);
@@ -61,19 +72,32 @@ export async function GET() {
     }),
   );
 
-  const progressByPage = new Map<number, PageProgress>();
+  const statusByPage = new Map<number, Map<number, string>>();
   for (const line of lineRows) {
     const page = String(line.page).padStart(3, "0");
-    if (!lineIndexes.get(page)?.has(line.line_index)) continue;
-    const progress = progressByPage.get(line.page) ?? {
+    const canonicalLineIndex = canonicalByPage.get(page)?.get(line.line_index) ?? line.line_index;
+    if (!lineIndexes.get(page)?.has(canonicalLineIndex)) continue;
+    const statuses = statusByPage.get(line.page) ?? new Map<number, string>();
+    const existing = statuses.get(canonicalLineIndex);
+    if (!existing || statusRank(line.status) > statusRank(existing)) {
+      statuses.set(canonicalLineIndex, line.status);
+    }
+    statusByPage.set(line.page, statuses);
+  }
+
+  const progressByPage = new Map<number, PageProgress>();
+  for (const [page, statuses] of statusByPage.entries()) {
+    const progress: PageProgress = {
       done_lines: 0,
       flagged_lines: 0,
       special_lines: 0,
     };
-    if (line.status === "done") progress.done_lines += 1;
-    if (line.status === "flagged") progress.flagged_lines += 1;
-    if (line.status === "special") progress.special_lines += 1;
-    progressByPage.set(line.page, progress);
+    for (const status of statuses.values()) {
+      if (status === "done") progress.done_lines += 1;
+      if (status === "flagged") progress.flagged_lines += 1;
+      if (status === "special") progress.special_lines += 1;
+    }
+    progressByPage.set(page, progress);
   }
 
   const items = pages.map((p) => {
@@ -93,4 +117,11 @@ export async function GET() {
   });
 
   return NextResponse.json({ pages: items });
+}
+
+function statusRank(status: string): number {
+  if (status === "flagged") return 4;
+  if (status === "special") return 3;
+  if (status === "done") return 2;
+  return 1;
 }

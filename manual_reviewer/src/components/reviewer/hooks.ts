@@ -52,6 +52,7 @@ export interface ReviewToken {
 
 export interface ReviewLine {
   line_index: number;
+  display_index?: number;
   tokens: ReviewToken[];
   warped_size: [number, number] | null;
   line_quad: number[][] | null;
@@ -92,6 +93,34 @@ export function usePageData(pageId: string) {
       return res.json();
     },
     enabled: Boolean(pageId),
+  });
+}
+
+// ─── Bigram warnings ──────────────────────────────────────────────────────────
+
+export interface TokenWarningEntry {
+  lineIndex: number;
+  blobId: number | string;
+  level: "warn" | "alert";
+  reasons: string[];
+}
+
+interface WarningsResponse {
+  page: number;
+  warnings: TokenWarningEntry[];
+  stats: { total_tokens: number; warnings_count: number; alerts_count: number };
+}
+
+export function usePageWarnings(pageId: string) {
+  return useQuery<WarningsResponse>({
+    queryKey: ["warnings", pageId],
+    queryFn: async () => {
+      const res = await fetch(`/api/warnings/${pageId}`);
+      if (!res.ok) throw new Error("Failed to load warnings");
+      return res.json();
+    },
+    enabled: Boolean(pageId),
+    staleTime: 5 * 60 * 1000, // cache for 5 minutes
   });
 }
 
@@ -370,6 +399,37 @@ export function useEditMutation(pageId: string) {
       } else if (payload.reset_line) {
         qc.invalidateQueries({ queryKey: ["pages"] });
       }
+
+      // Invalidate warnings so dots refresh after edits
+      qc.invalidateQueries({ queryKey: ["warnings", pageId] });
+    },
+  });
+}
+
+export function useMoveLine(pageId: string) {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: async (params: {
+      page: number;
+      line_index: number;
+      blob_id: number | string;
+      direction: "up" | "down";
+      is_new_bbox: boolean;
+    }) => {
+      const res = await fetch("/api/move-line", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(params),
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error ?? `move-line failed: ${res.status}`);
+      }
+      return res.json();
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["page", pageId] });
+      qc.invalidateQueries({ queryKey: ["warnings", pageId] });
     },
   });
 }

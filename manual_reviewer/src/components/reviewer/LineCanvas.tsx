@@ -3,6 +3,9 @@ import { useEffect, useRef, useState } from "react";
 import { Box } from "@mui/material";
 import type { ReviewLine, ReviewPage, ReviewToken } from "./hooks";
 import { useReviewerStore } from "./store";
+import { computeUnsplitLineStats, isUnsplit } from "@/lib/unsplitLogic";
+
+const LACUNA_DOT_BOX_SIZE = 8;
 
 interface NewBboxOverlay {
   id: string;
@@ -14,13 +17,22 @@ interface NewBboxOverlay {
   overline_mark_id?: number | null;
 }
 
+export interface NewBboxDraft {
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  label?: string | null;
+  openEditor?: boolean;
+}
+
 interface Props {
   page: ReviewPage;
   line: ReviewLine;
   highlightBlob?: string | number | null;
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   drawMode?: boolean;
-  onNewBbox?: (bbox: { x0: number; y0: number; x1: number; y1: number }) => void;
+  onNewBbox?: (bbox: NewBboxDraft) => void;
   newBboxes?: NewBboxOverlay[];
   onNewBboxClick?: (nb: NewBboxOverlay, evt: { clientX: number; clientY: number }) => void;
 }
@@ -35,7 +47,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
   const ref = useRef<HTMLDivElement>(null);
   const [containerWidth, setContainerWidth] = useState(900);
   const selectBlob = useReviewerStore((s) => s.selectBlob);
-  const [drag, setDrag] = useState<{ x0: number; y0: number; x1: number; y1: number } | null>(null);
+  const [drag, setDrag] = useState<{ x0: number; y0: number; x1: number; y1: number; skipEditor: boolean } | null>(null);
 
   useEffect(() => {
     if (!ref.current) return;
@@ -124,34 +136,18 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     }
   }
 
-  // Detect likely unsplit blobs: width/height ratio is scale-invariant.
-  // Normal wide chars (ⲙ, ϫ) max out around ratio 1.57. True unsplit blobs
-  // start at ~1.75 because width roughly doubles while height stays constant.
-  // Edge case: a uniformly enlarged character (e.g. section-initial ⲡ) can
-  // hit ratio 1.76 but is also much TALLER than the line. For blobs taller
-  // than 1.7× the line's median height, require a higher ratio (2.0) since
-  // uniform scaling preserves ratio — only extreme widening is unsplit.
-  const MIN_HEIGHT_FOR_UNSPLIT = 10;
-  const MIN_WH_RATIO_FOR_UNSPLIT = 1.7;
-  const TALL_BLOB_HEIGHT_FACTOR = 1.7;
-  const TALL_BLOB_RATIO_FOR_UNSPLIT = 2.0;
+  // Detect likely unsplit blobs using shared logic (also used by missplitDetection.ts).
   const unsplitBlobIds = new Set<string>();
 
-  // Compute line median height (excluding dots/noise < 8px)
-  const lineHeights = visibleTokenBboxes
-    .filter((b) => b.height >= 8)
-    .map((b) => b.height);
-  lineHeights.sort((a, b) => a - b);
-  const medianHeight = lineHeights.length > 0
-    ? lineHeights[Math.floor(lineHeights.length / 2)]
-    : 15;
+  const unsplitDims = visibleTokenBboxes.map((b) => ({
+    width: b.width,
+    height: b.height,
+  }));
+  const unsplitStats = computeUnsplitLineStats(unsplitDims);
+  const medianHeight = unsplitStats.medianHeight;
 
   for (const bbox of visibleTokenBboxes) {
-    if (bbox.height < MIN_HEIGHT_FOR_UNSPLIT) continue;
-    const ratio = bbox.width / bbox.height;
-    const isTall = bbox.height > medianHeight * TALL_BLOB_HEIGHT_FACTOR;
-    const threshold = isTall ? TALL_BLOB_RATIO_FOR_UNSPLIT : MIN_WH_RATIO_FOR_UNSPLIT;
-    if (ratio >= threshold) {
+    if (isUnsplit(bbox.width, bbox.height, unsplitStats)) {
       unsplitBlobIds.add(tokenId(bbox.token));
     }
   }
@@ -358,7 +354,22 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     if (!drawMode) return;
     const p = clientToImage(e.clientX, e.clientY);
     if (!p) return;
-    setDrag({ x0: p[0], y0: p[1], x1: p[0], y1: p[1] });
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.ctrlKey) {
+      const half = LACUNA_DOT_BOX_SIZE / 2;
+      setDrag(null);
+      onNewBbox?.({
+        x0: p[0] - half,
+        y0: p[1] - half,
+        x1: p[0] + half,
+        y1: p[1] + half,
+        label: ".",
+        openEditor: false,
+      });
+      return;
+    }
+    setDrag({ x0: p[0], y0: p[1], x1: p[0], y1: p[1], skipEditor: e.shiftKey });
   };
   const onMouseMove = (e: React.MouseEvent) => {
     if (!drag) return;
@@ -366,13 +377,15 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
     if (!p) return;
     setDrag((d) => (d ? { ...d, x1: p[0], y1: p[1] } : d));
   };
-  const onMouseUp = () => {
+  const onMouseUp = (e: React.MouseEvent) => {
     if (!drag) return;
+    const skipEditor = drag.skipEditor || e.shiftKey;
     const bbox = {
       x0: Math.min(drag.x0, drag.x1),
       y0: Math.min(drag.y0, drag.y1),
       x1: Math.max(drag.x0, drag.x1),
       y1: Math.max(drag.y0, drag.y1),
+      ...(skipEditor ? { label: "", openEditor: false } : {}),
     };
     setDrag(null);
     if (bbox.x1 - bbox.x0 > 2 && bbox.y1 - bbox.y0 > 2 && onNewBbox) {
