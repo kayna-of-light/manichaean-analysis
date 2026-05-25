@@ -44,6 +44,7 @@ export interface LineEditorPayload {
   image_size: [number, number];
   image_url: string;
   row_bbox: [number, number, number, number];
+  preview_bbox: [number, number, number, number];
   components: LineEditorComponent[];
   proposals: LineEditorBox[];
   existing_bboxes: LineEditorBox[];
@@ -569,19 +570,19 @@ export async function buildLineEditorPayload(
     LINE_EDITOR_PREVIEW_PAD_Y,
     raw.image_size,
   );
-  const proposalScanBbox: Box = {
-    left: previewBbox.left,
-    top: rowBbox.top,
-    width: previewBbox.width,
-    height: rowBbox.height,
-  };
-  const previewComponents = raw.components
+  const proposalScanBbox = expandBox(
+    rowBbox,
+    LINE_EDITOR_PREVIEW_PAD_X,
+    0,
+    raw.image_size,
+  );
+  const proposalComponents = raw.components
     .filter((component) => boxesIntersect(componentBox(component), proposalScanBbox))
     .sort((a, b) => componentBox(a).left - componentBox(b).left || componentBox(a).top - componentBox(b).top);
-  const baseComponents = previewComponents.filter((component) => isBaseComponent(component, primaryRow));
+  const baseComponents = proposalComponents.filter((component) => isBaseComponent(component, primaryRow));
   const { typicalWidth, narrowWidth } = rowTypicalWidth(baseComponents);
 
-  for (const component of previewComponents) {
+  for (const component of proposalComponents) {
     const box = componentBox(component);
     const area = component.area_px ?? 0;
     if (box.width < 2 || box.height < 3 || area < 4) continue;
@@ -600,7 +601,7 @@ export async function buildLineEditorPayload(
         label: ".",
         source: "proposal",
         source_component_ids: [component.id],
-        split_method: "preview_lacuna_dot",
+        split_method: "geometry_lacuna_dot",
         confidence: "usable",
         kind: "lacuna_dot",
         include: true,
@@ -612,7 +613,7 @@ export async function buildLineEditorPayload(
         label: null,
         source: "proposal",
         source_component_ids: [component.id],
-        split_method: "preview_mark",
+        split_method: "geometry_mark",
         confidence: "reference",
         kind: "mark",
         include: false,
@@ -624,7 +625,7 @@ export async function buildLineEditorPayload(
         label: null,
         source: "proposal",
         source_component_ids: [component.id],
-        split_method: "preview_component",
+        split_method: "geometry_component",
         confidence: "needs_review",
         kind: "base",
         include: true,
@@ -648,6 +649,7 @@ export async function buildLineEditorPayload(
     image_size: raw.image_size,
     image_url: `/api/image?root=textbody&p=${encodeURIComponent(`p${page}_text_body.jpg`)}`,
     row_bbox: [rowBbox.left, rowBbox.top, rowBbox.width, rowBbox.height],
+    preview_bbox: [previewBbox.left, previewBbox.top, previewBbox.width, previewBbox.height],
     components: componentRecords.sort((a, b) => a.bbox[0] - b.bbox[0]),
     proposals: proposals.sort((a, b) => a.x0 - b.x0 || a.y0 - b.y0),
     existing_bboxes: existing,

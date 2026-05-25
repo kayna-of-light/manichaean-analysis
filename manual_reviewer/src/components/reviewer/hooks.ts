@@ -512,6 +512,7 @@ export interface LineEditorData {
   image_size: [number, number];
   image_url: string;
   row_bbox: [number, number, number, number];
+  preview_bbox: [number, number, number, number];
   components: LineEditorComponent[];
   proposals: LineEditorBox[];
   existing_bboxes: LineEditorBox[];
