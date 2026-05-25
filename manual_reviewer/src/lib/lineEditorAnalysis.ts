@@ -51,6 +51,11 @@ export interface LineEditorPayload {
   templates: LineEditorTemplateInfo[];
 }
 
+interface BuildLineEditorOptions {
+  targetLineIndex?: number;
+  displayIndex?: number;
+}
+
 interface RawGeometryPage {
   page: string;
   input: string;
@@ -545,16 +550,21 @@ export async function buildLineEditorPayload(
   page: string,
   lineIndex: number,
   existingNewBboxes: NewBboxRow[],
+  options: BuildLineEditorOptions = {},
 ): Promise<LineEditorPayload | null> {
   const pageInt = parseInt(page, 10);
   if (!Number.isFinite(pageInt)) return null;
   const raw = await readRawGeometry(page);
   const layout = buildCanonicalLineLayout(raw.geometry_rows);
   const canonicalLineIndex = canonicalizeLineIndex(layout, lineIndex);
+  const targetLineIndex = options.targetLineIndex ?? canonicalLineIndex;
   const canonicalRow = layout?.rows.find((row) => row.index === canonicalLineIndex);
-  const sourceIndices = sourceIndicesForCanonicalLine(layout, canonicalLineIndex);
+  const geometrySourceIndices = sourceIndicesForCanonicalLine(layout, canonicalLineIndex);
+  const targetSourceIndices = options.targetLineIndex == null
+    ? geometrySourceIndices
+    : [targetLineIndex];
   const rowByIndex = new Map(raw.geometry_rows.map((row) => [row.index, row]));
-  const primaryRow = sourceIndices
+  const primaryRow = geometrySourceIndices
     .map((index) => rowByIndex.get(index))
     .find((row): row is RawGeometryRow => Boolean(row))
     ?? rowByIndex.get(canonicalLineIndex)
@@ -634,18 +644,22 @@ export async function buildLineEditorPayload(
   }
 
   const existing = existingNewBboxes
-    .filter((row) => canonicalizeLineIndex(layout, row.line_index) === canonicalLineIndex)
+    .filter((row) => (
+      options.targetLineIndex == null
+        ? canonicalizeLineIndex(layout, row.line_index) === targetLineIndex
+        : row.line_index === targetLineIndex
+    ))
     .map((row) => existingToBox({
       ...row,
-      line_index: canonicalizeLineIndex(layout, row.line_index),
+      line_index: targetLineIndex,
     }));
 
   return {
     page,
     page_int: pageInt,
-    line_index: canonicalLineIndex,
-    display_index: canonicalRow.display_index,
-    source_indices: sourceIndices,
+    line_index: targetLineIndex,
+    display_index: options.displayIndex ?? canonicalRow.display_index,
+    source_indices: targetSourceIndices,
     image_size: raw.image_size,
     image_url: `/api/image?root=textbody&p=${encodeURIComponent(`p${page}_text_body.jpg`)}`,
     row_bbox: [rowBbox.left, rowBbox.top, rowBbox.width, rowBbox.height],

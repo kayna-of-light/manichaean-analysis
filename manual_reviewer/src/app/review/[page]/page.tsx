@@ -23,12 +23,15 @@ import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 import DoneAllIcon from "@mui/icons-material/DoneAll";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import TextFieldsIcon from "@mui/icons-material/TextFields";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import {
   usePageData,
   useEditMutation,
   useMoveLine,
+  useDuplicateLine,
   usePagesList,
   usePageWarnings,
+  type DuplicateLineBboxPayload,
   type ReviewPage,
   type ReviewToken,
 } from "@/components/reviewer/hooks";
@@ -82,6 +85,49 @@ function orderedLineItems(tokens: ReviewToken[], newBboxes: NewBbox[]): OrderedL
     ...tokens.filter((t) => !t.deleted).map((token) => ({ kind: "token" as const, x: tokenCenterX(token), token })),
     ...newBboxes.map((nb) => ({ kind: "new" as const, x: newBboxCenterX(nb), nb })),
   ].sort((a, b) => a.x - b.x);
+}
+
+function tokenToDuplicateBbox(token: ReviewToken): DuplicateLineBboxPayload | null {
+  if (token.deleted) return null;
+  const bbox = tokenAabb(token) ?? token.geometry?.warped_bbox ?? null;
+  if (!bbox) return null;
+  return {
+    x0: bbox[0],
+    y0: bbox[1],
+    x1: bbox[2],
+    y1: bbox[3],
+    coord_space: "image",
+    kind: "base",
+    label: token.effective_label ?? token.label ?? null,
+    diacritics: null,
+    lacuna_bracket: null,
+    overline_mark_id: token.overline_mark_id ?? null,
+  };
+}
+
+function newBboxToDuplicateBbox(nb: NewBbox): DuplicateLineBboxPayload {
+  return {
+    x0: nb.x0,
+    y0: nb.y0,
+    x1: nb.x1,
+    y1: nb.y1,
+    coord_space: nb.coord_space === "warped" ? "warped" : "image",
+    kind: nb.kind ?? "base",
+    label: nb.label,
+    diacritics: nb.diacritics ?? null,
+    lacuna_bracket: nb.lacuna_bracket ?? null,
+    overline_mark_id: nb.overline_mark_id ?? null,
+  };
+}
+
+function duplicateBboxesForLine(
+  line: ReviewPage["lines"][number],
+  newBboxes: NewBbox[],
+): DuplicateLineBboxPayload[] {
+  return [
+    ...line.tokens.map(tokenToDuplicateBbox).filter((bbox): bbox is DuplicateLineBboxPayload => bbox != null),
+    ...newBboxes.map(newBboxToDuplicateBbox),
+  ];
 }
 
 function itemToNeighbor(item: OrderedLineItem | null) {
@@ -148,6 +194,7 @@ export default function ReviewPage() {
   const { data: warningsData } = usePageWarnings(pageId);
   const editMutation = useEditMutation(pageId);
   const moveLineMutation = useMoveLine(pageId);
+  const duplicateLineMutation = useDuplicateLine(pageId);
 
   const selectedLine = useReviewerStore((s) => s.selectedLine);
   const setSelectedLine = useReviewerStore((s) => s.setSelectedLine);
@@ -298,6 +345,15 @@ export default function ReviewPage() {
       is_new_bbox: chooserAnchor.isNewBbox ?? false,
     });
   }, [chooserAnchor, data, moveLineMutation, pageId]);
+
+  const handleDuplicateLine = useCallback((line: ReviewPage["lines"][number], newBboxes: NewBbox[]) => {
+    if (!data) return;
+    duplicateLineMutation.mutate({
+      page: data.page_int,
+      source_line_index: line.line_index,
+      bboxes: duplicateBboxesForLine(line, newBboxes),
+    });
+  }, [data, duplicateLineMutation]);
 
   const onTokenClick = useCallback((
     t: ReviewToken,
@@ -502,6 +558,8 @@ export default function ReviewPage() {
               mutateEdit={editMutation.mutate}
               onTokenClick={onTokenClick}
               openNewBboxChooser={openNewBboxChooser}
+              onDuplicateLine={handleDuplicateLine}
+              duplicatePending={duplicateLineMutation.isPending}
               warningMap={warningMap}
             />
           ))}
@@ -619,6 +677,8 @@ interface ReviewLineCardProps {
   mutateEdit: ReturnType<typeof useEditMutation>["mutate"];
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   openNewBboxChooser: (nb: NewBbox, evt: { clientX: number; clientY: number } | null) => void;
+  onDuplicateLine: (line: ReviewPage["lines"][number], newBboxes: NewBbox[]) => void;
+  duplicatePending: boolean;
   warningMap: WarningMap;
 }
 
@@ -636,6 +696,8 @@ const ReviewLineCard = memo(function ReviewLineCard({
   mutateEdit,
   onTokenClick,
   openNewBboxChooser,
+  onDuplicateLine,
+  duplicatePending,
   warningMap,
 }: ReviewLineCardProps) {
   const displayIndex = line.display_index ?? line.line_index;
@@ -760,6 +822,17 @@ const ReviewLineCard = memo(function ReviewLineCard({
               }}
             >
               <RestartAltIcon sx={{ fontSize: 16 }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title="Duplicate row">
+            <IconButton
+              aria-label={`Duplicate row ${displayIndex}`}
+              size="small"
+              sx={{ p: 0.5 }}
+              disabled={duplicatePending}
+              onClick={() => onDuplicateLine(line, lineNewBboxes)}
+            >
+              <ContentCopyIcon sx={{ fontSize: 16 }} />
             </IconButton>
           </Tooltip>
           <Tooltip title={isDrawing ? "Cancel drawing" : "Add bbox"}>

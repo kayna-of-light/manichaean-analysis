@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 10;
+const SCHEMA_VERSION = 11;
 
 let _db: DB | null = null;
 
@@ -176,6 +176,18 @@ function migrate(db: DB) {
     CREATE INDEX IF NOT EXISTS idx_missplit_page ON missplit_reviews(page, line_index);
     CREATE INDEX IF NOT EXISTS idx_missplit_status ON missplit_reviews(status);
 
+    CREATE TABLE IF NOT EXISTS line_duplicates (
+      id                INTEGER PRIMARY KEY AUTOINCREMENT,
+      page              INTEGER NOT NULL,
+      source_line_index INTEGER NOT NULL,
+      line_index        INTEGER NOT NULL,
+      ordinal           INTEGER NOT NULL,
+      created_at        TEXT NOT NULL DEFAULT (datetime('now')),
+      UNIQUE(page, line_index)
+    );
+    CREATE INDEX IF NOT EXISTS idx_line_duplicates_page
+      ON line_duplicates(page, source_line_index);
+
     CREATE TABLE IF NOT EXISTS audit_log (
       id         INTEGER PRIMARY KEY AUTOINCREMENT,
       at         TEXT NOT NULL DEFAULT (datetime('now')),
@@ -286,6 +298,13 @@ function migrate(db: DB) {
       db.exec("ALTER TABLE new_bboxes ADD COLUMN kind TEXT NOT NULL DEFAULT 'base'");
       db.exec("UPDATE new_bboxes SET kind = 'lacuna_dot' WHERE label IN ('.', '_lacuna_dot')");
     }
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run(String(SCHEMA_VERSION));
+  }
+
+  if (currentVersion < 11) {
+    // line_duplicates table — created above via CREATE IF NOT EXISTS; just bump.
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));

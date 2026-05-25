@@ -61,6 +61,15 @@ export interface TaskRow {
   resolved_at: string | null;
 }
 
+export interface LineDuplicateRow {
+  id: number;
+  page: number;
+  source_line_index: number;
+  line_index: number;
+  ordinal: number;
+  created_at: string;
+}
+
 export interface EditorialSentenceRow {
   id: number;
   text: string;
@@ -134,6 +143,27 @@ export function readLineStatuses(
   const m = new Map<number, { status: LineStatus; note: string | null }>();
   for (const r of rows) m.set(r.line_index, { status: r.status, note: r.note });
   return m;
+}
+
+export function readLineDuplicates(page: number): LineDuplicateRow[] {
+  const db = getDb();
+  return db
+    .prepare<[number], LineDuplicateRow>(
+      `SELECT * FROM line_duplicates
+       WHERE page = ?
+       ORDER BY source_line_index, ordinal, line_index`,
+    )
+    .all(page);
+}
+
+export function readLineDuplicateByLine(page: number, lineIndex: number): LineDuplicateRow | null {
+  const db = getDb();
+  return db
+    .prepare<[number, number], LineDuplicateRow>(
+      `SELECT * FROM line_duplicates
+       WHERE page = ? AND line_index = ?`,
+    )
+    .get(page, lineIndex) ?? null;
 }
 
 export function readClusterOverride(
@@ -368,6 +398,40 @@ export function setLineStatus(
            note = excluded.note,
            updated_at = excluded.updated_at`,
       ).run(page, lineIndex, status, note);
+    },
+  );
+}
+
+export function createLineDuplicate(input: {
+  page: number;
+  source_line_index: number;
+  line_index: number;
+  ordinal: number;
+}): LineDuplicateRow {
+  const db = getDb();
+  const after = {
+    ...input,
+    created_at: new Date().toISOString(),
+  };
+  return withAudit(
+    "line_duplicate.create",
+    input.page,
+    input.source_line_index,
+    String(input.line_index),
+    null,
+    after,
+    () => {
+      db.prepare(
+        `INSERT INTO line_duplicates
+         (page, source_line_index, line_index, ordinal, created_at)
+         VALUES (@page, @source_line_index, @line_index, @ordinal, @created_at)`,
+      ).run(after);
+      return db
+        .prepare<[number, number], LineDuplicateRow>(
+          `SELECT * FROM line_duplicates
+           WHERE page = ? AND line_index = ?`,
+        )
+        .get(input.page, input.line_index)!;
     },
   );
 }
@@ -738,13 +802,31 @@ export function resetLine(page: number, lineIndex: number) {
       "SELECT * FROM new_bboxes WHERE page = ? AND line_index = ?",
     )
     .all(page, lineIndex);
+  const beforeDuplicate = db
+    .prepare<[number, number], LineDuplicateRow>(
+      "SELECT * FROM line_duplicates WHERE page = ? AND line_index = ?",
+    )
+    .all(page, lineIndex);
+  const beforeStatus = beforeDuplicate.length
+    ? db
+        .prepare<[number, number]>(
+          "SELECT * FROM lines WHERE page = ? AND line_index = ?",
+        )
+        .all(page, lineIndex)
+    : [];
 
   return withAudit(
     "line.reset",
     page,
     lineIndex,
     null,
-    { edits: beforeEdits, unset: beforeUnset, new_bboxes: beforeNewBboxes },
+    {
+      edits: beforeEdits,
+      unset: beforeUnset,
+      new_bboxes: beforeNewBboxes,
+      duplicate: beforeDuplicate,
+      status: beforeStatus,
+    },
     null,
     () => {
       db.prepare("DELETE FROM blob_edits WHERE page = ? AND line_index = ?").run(
@@ -759,10 +841,21 @@ export function resetLine(page: number, lineIndex: number) {
         page,
         lineIndex,
       );
+      if (beforeDuplicate.length) {
+        db.prepare("DELETE FROM line_duplicates WHERE page = ? AND line_index = ?").run(
+          page,
+          lineIndex,
+        );
+        db.prepare("DELETE FROM lines WHERE page = ? AND line_index = ?").run(
+          page,
+          lineIndex,
+        );
+      }
       return {
         deleted_edits: beforeEdits.length,
         deleted_unset: beforeUnset.length,
         deleted_new_bboxes: beforeNewBboxes.length,
+        deleted_duplicate_lines: beforeDuplicate.length,
       };
     },
   );

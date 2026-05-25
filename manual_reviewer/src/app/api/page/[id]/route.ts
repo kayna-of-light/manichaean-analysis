@@ -15,6 +15,7 @@ import {
   mergeTokens,
   readBlobEdits,
   readClusterOverridesByIds,
+  readLineDuplicates,
   readLineStatuses,
   readNewBboxes,
   readReassignmentsForPage,
@@ -215,7 +216,30 @@ export async function GET(
         note: status.note,
       });
     }
-    mergedLines.sort((a, b) => a.line_index - b.line_index);
+    mergedLines.sort(compareReviewLines);
+  }
+
+  const lineDuplicates = readLineDuplicates(pageInt);
+  if (lineDuplicates.length > 0) {
+    for (const duplicate of lineDuplicates) {
+      const sourceLine = mergedLines.find((line) => line.line_index === duplicate.source_line_index);
+      if (!sourceLine) continue;
+      const status = lineStatuses.get(duplicate.line_index) ?? {
+        status: "pending" as const,
+        note: null,
+      };
+      const sourceDisplayIndex = sourceLine.display_index ?? sourceLine.line_index;
+      mergedLines.push({
+        line_index: duplicate.line_index,
+        display_index: sourceDisplayIndex + duplicate.ordinal / 100,
+        tokens: [],
+        warped_size: sourceLine.warped_size,
+        line_quad: sourceLine.line_quad,
+        status: status.status,
+        note: status.note,
+      });
+    }
+    mergedLines.sort(compareReviewLines);
   }
 
   const canonicalNewBboxes = parsedNewBboxes.map((bbox) => ({
@@ -300,6 +324,16 @@ function normalizeSingletonOverlines(
   for (const normalizers of grouped.values()) {
     if (normalizers.length === 1) normalizers[0]();
   }
+}
+
+function compareReviewLines(
+  a: { line_index: number; display_index?: number },
+  b: { line_index: number; display_index?: number },
+): number {
+  const aDisplay = a.display_index ?? a.line_index;
+  const bDisplay = b.display_index ?? b.line_index;
+  if (aDisplay !== bDisplay) return aDisplay - bDisplay;
+  return a.line_index - b.line_index;
 }
 
 function parseDiacritics(value: string | null): string[] {
