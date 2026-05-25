@@ -170,6 +170,25 @@ export interface EditMutationPayload {
   reset_line?: { line_index: number };
 }
 
+export interface DuplicateLineBboxPayload {
+  x0: number;
+  y0: number;
+  x1: number;
+  y1: number;
+  coord_space?: "warped" | "image";
+  kind?: "base" | "lacuna_dot" | "mark" | null;
+  label?: string | null;
+  diacritics?: string[] | null;
+  lacuna_bracket?: string | null;
+  overline_mark_id?: number | null;
+}
+
+export interface DuplicateLinePayload {
+  page: number;
+  source_line_index: number;
+  bboxes: DuplicateLineBboxPayload[];
+}
+
 interface EditMutationResult {
   ok: boolean;
   results?: {
@@ -455,6 +474,29 @@ export function useMoveLine(pageId: string) {
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["page", pageId] });
       qc.invalidateQueries({ queryKey: ["warnings", pageId] });
+    },
+  });
+}
+
+export function useDuplicateLine(pageId: string) {
+  const qc = useQueryClient();
+  return useMutation({
+    mutationFn: async (params: DuplicateLinePayload) => {
+      const res = await fetch("/api/duplicate-line", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(params),
+      });
+      if (!res.ok) {
+        const err = await res.json().catch(() => ({}));
+        throw new Error(err.error ?? `duplicate-line failed: ${res.status}`);
+      }
+      return res.json();
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ["page", pageId] });
+      qc.invalidateQueries({ queryKey: ["warnings", pageId] });
+      qc.invalidateQueries({ queryKey: ["pages"] });
     },
   });
 }

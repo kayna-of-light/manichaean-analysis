@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { buildLineEditorPayload } from "@/lib/lineEditorAnalysis";
-import { readNewBboxes } from "@/lib/repo";
+import { readLineDuplicateByLine, readNewBboxes } from "@/lib/repo";
+import { buildCanonicalLineLayout, displayIndexForLine } from "@/lib/canonicalLines";
+import { readV2Geometry } from "@/lib/pipelineReaders";
 
 export const dynamic = "force-dynamic";
 
@@ -21,10 +23,23 @@ export async function GET(
   if (!parsed) return NextResponse.json({ error: "invalid page or line" }, { status: 400 });
 
   try {
+    const duplicate = readLineDuplicateByLine(parsed.pageInt, parsed.lineIndex);
+    const geometryLineIndex = duplicate?.source_line_index ?? parsed.lineIndex;
+    const options = duplicate
+      ? {
+          targetLineIndex: duplicate.line_index,
+          displayIndex:
+            displayIndexForLine(
+              buildCanonicalLineLayout(await readV2Geometry(parsed.page)),
+              duplicate.source_line_index,
+            ) + duplicate.ordinal / 100,
+        }
+      : undefined;
     const payload = await buildLineEditorPayload(
       parsed.page,
-      parsed.lineIndex,
+      geometryLineIndex,
       readNewBboxes(parsed.pageInt),
+      options,
     );
     if (!payload) return NextResponse.json({ error: "line not found" }, { status: 404 });
     return NextResponse.json(payload);

@@ -17,6 +17,11 @@ interface LineProgressRow {
   status: string;
 }
 
+interface LineDuplicateRow {
+  page: number;
+  line_index: number;
+}
+
 interface PageProgress {
   done_lines: number;
   flagged_lines: number;
@@ -43,6 +48,13 @@ export async function GET() {
       `SELECT page, line_index, status
        FROM lines
         WHERE status IN ('done', 'flagged', 'special')`,
+    )
+    .all();
+
+  const duplicateRows = db
+    .prepare<[], LineDuplicateRow>(
+      `SELECT page, line_index
+       FROM line_duplicates`,
     )
     .all();
 
@@ -73,6 +85,14 @@ export async function GET() {
   );
 
   const statusByPage = new Map<number, Map<number, string>>();
+  for (const duplicate of duplicateRows) {
+    const page = String(duplicate.page).padStart(3, "0");
+    const indexes = lineIndexes.get(page) ?? new Set<number>();
+    indexes.add(duplicate.line_index);
+    lineIndexes.set(page, indexes);
+    lineCounts.set(page, (lineCounts.get(page) ?? 0) + 1);
+  }
+
   for (const line of lineRows) {
     const page = String(line.page).padStart(3, "0");
     const canonicalLineIndex = canonicalByPage.get(page)?.get(line.line_index) ?? line.line_index;

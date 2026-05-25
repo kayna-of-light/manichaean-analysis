@@ -26,6 +26,7 @@ export async function POST() {
   const cluster_overrides = db.prepare("SELECT * FROM cluster_overrides").all();
   const rawUnsetBlobs = db.prepare("SELECT * FROM unset_blobs").all() as LineIndexedRow[];
   const rawLines = db.prepare("SELECT * FROM lines").all() as LineIndexedRow[];
+  const line_duplicates = db.prepare("SELECT * FROM line_duplicates").all();
   const tasks = db.prepare("SELECT * FROM tasks").all();
 
   const layouts = await loadLayouts([
@@ -55,6 +56,7 @@ export async function POST() {
     cluster_overrides,
     unset_blobs,
     lines,
+    line_duplicates,
     tasks,
   };
   const stamp = new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19);
@@ -66,6 +68,7 @@ export async function POST() {
     cluster_overrides: cluster_overrides.length,
     unset_blobs: unset_blobs.length,
     lines: lines.length,
+    line_duplicates: line_duplicates.length,
     tasks: tasks.length,
   } });
 }
