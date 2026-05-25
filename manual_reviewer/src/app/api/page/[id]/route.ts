@@ -218,6 +218,12 @@ export async function GET(
     mergedLines.sort((a, b) => a.line_index - b.line_index);
   }
 
+  const canonicalNewBboxes = parsedNewBboxes.map((bbox) => ({
+    ...bbox,
+    line_index: canonicalizeLineIndex(canonicalLayout, bbox.line_index),
+  }));
+  normalizeSingletonOverlines(mergedLines, canonicalNewBboxes);
+
   return NextResponse.json({
     page,
     page_int: pageInt,
@@ -228,10 +234,7 @@ export async function GET(
     warp_height: 0,
     image_url: textBodyImageUrl(page),
     lines: mergedLines,
-    new_bboxes: parsedNewBboxes.map((bbox) => ({
-      ...bbox,
-      line_index: canonicalizeLineIndex(canonicalLayout, bbox.line_index),
-    })),
+    new_bboxes: canonicalNewBboxes,
     baseline_meta: {
       rows_v1: baseline.rows_v1 ?? null,
       rows_v2: baseline.rows_v2 ?? null,
@@ -239,6 +242,64 @@ export async function GET(
       tokens_excluded: baseline.tokens_excluded ?? null,
     },
   });
+}
+
+const SIMPLE_OVERLINE = "\u0304";
+
+function addSimpleOverline(label: string | null): string | null {
+  if (!label || label.includes(SIMPLE_OVERLINE)) return label;
+  return `${label}${SIMPLE_OVERLINE}`;
+}
+
+function addSimpleOverlineDiacritic(diacritics: string[]): string[] {
+  return diacritics.includes(SIMPLE_OVERLINE) ? diacritics : [...diacritics, SIMPLE_OVERLINE];
+}
+
+function normalizeSingletonOverlines(
+  lines: Array<{
+    line_index: number;
+    tokens: Array<{
+      deleted?: boolean;
+      overline_mark_id?: number | null;
+      effective_label: string | null;
+    }>;
+  }>,
+  newBboxes: Array<{
+    line_index: number;
+    overline_mark_id: number | null;
+    label: string | null;
+    diacritics: string[];
+  }>,
+) {
+  const grouped = new Map<string, Array<() => void>>();
+  const add = (lineIndex: number, markId: number | null | undefined, normalize: () => void) => {
+    if (markId == null) return;
+    const key = `${lineIndex}:${markId}`;
+    const items = grouped.get(key) ?? [];
+    items.push(normalize);
+    grouped.set(key, items);
+  };
+
+  for (const line of lines) {
+    for (const token of line.tokens) {
+      if (token.deleted) continue;
+      add(line.line_index, token.overline_mark_id, () => {
+        token.effective_label = addSimpleOverline(token.effective_label);
+        token.overline_mark_id = null;
+      });
+    }
+  }
+  for (const bbox of newBboxes) {
+    add(bbox.line_index, bbox.overline_mark_id, () => {
+      bbox.label = addSimpleOverline(bbox.label);
+      bbox.diacritics = addSimpleOverlineDiacritic(bbox.diacritics);
+      bbox.overline_mark_id = null;
+    });
+  }
+
+  for (const normalizers of grouped.values()) {
+    if (normalizers.length === 1) normalizers[0]();
+  }
 }
 
 function parseDiacritics(value: string | null): string[] {
