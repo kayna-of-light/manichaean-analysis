@@ -16,6 +16,8 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutlined";
 import BackspaceOutlinedIcon from "@mui/icons-material/BackspaceOutlined";
 import HubOutlinedIcon from "@mui/icons-material/HubOutlined";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import {
   COPTIC_LETTERS,
   DIACRITICS,
@@ -88,6 +90,7 @@ interface Props {
   onClose: () => void;
   mutateEdit: (payload: EditMutationPayload) => void;
   editPending: boolean;
+  onMoveLine?: (direction: "up" | "down") => void;
 }
 
 /** Convert legacy cluster-name labels to their display character */
@@ -124,7 +127,7 @@ function sequenceLabelsFromText(input: string): string[] {
     .filter((segment) => !/^\s+$/u.test(segment));
 }
 
-export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Props) {
+export function CharChooser({ anchorEl, onClose, mutateEdit, editPending, onMoveLine }: Props) {
   const anchor = useReviewerStore((s) => s.chooserAnchor);
   const updateLabel = useReviewerStore((s) => s.updateChooserLabel);
   const toggleOverlineLeft = useReviewerStore((s) => s.toggleOverlineLeft);
@@ -436,6 +439,25 @@ export function CharChooser({ anchorEl, onClose, mutateEdit, editPending }: Prop
           <Typography variant="caption" color="text.secondary">
             blob {String(anchor.blobId)} · line {anchor.lineIndex}
           </Typography>
+          {onMoveLine && (
+            <>
+              <IconButton
+                size="small"
+                title="Move to line above"
+                disabled={anchor.lineIndex <= 0}
+                onClick={() => { onMoveLine("up"); onClose(); }}
+              >
+                <ArrowUpwardIcon fontSize="small" />
+              </IconButton>
+              <IconButton
+                size="small"
+                title="Move to line below"
+                onClick={() => { onMoveLine("down"); onClose(); }}
+              >
+                <ArrowDownwardIcon fontSize="small" />
+              </IconButton>
+            </>
+          )}
           <Box sx={{ flex: 1 }} />
           {anchor.cluster && (
             <Button

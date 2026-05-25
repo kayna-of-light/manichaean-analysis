@@ -95,8 +95,24 @@ export async function GET(
     return ax - bx;
   });
 
+  // Load deleted-blob keys for marking in the UI
+  const deletedRows = db
+    .prepare<[], { page: number; line_index: number; blob_id: string }>(
+      "SELECT page, line_index, blob_id FROM blob_edits WHERE deleted = 1",
+    )
+    .all();
+  const deletedKeys = new Set<string>(
+    deletedRows.map(
+      (r) => `${String(r.page).padStart(3, "0")}:${r.line_index}:${r.blob_id}`,
+    ),
+  );
+
   const total = sorted.length;
-  const members = sorted.slice(q.offset, q.offset + q.limit);
+  const membersSlice = sorted.slice(q.offset, q.offset + q.limit);
+  const members = membersSlice.map((m) => ({
+    ...m,
+    deleted: deletedKeys.has(memberKey(m.page, m.line_index, m.blob_id)),
+  }));
 
   // Cluster centroid thumbnails (pre-rendered by pipeline)
   const padded = String(cid).padStart(3, "0");

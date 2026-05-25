@@ -2,8 +2,9 @@ import "server-only";
 import fs from "node:fs";
 import path from "node:path";
 import { INGEST_DIR } from "./paths";
-import { readBlobEdits } from "./repo";
+import { readBlobEdits, readClusterOverridesByIds, readReassignmentsForPage } from "./repo";
 import { editIdsForBaselineLine } from "./tokenIdentity";
+import { computeUnsplitLineStats, isUnsplit, MIN_HEIGHT_FOR_UNSPLIT, MIN_WH_RATIO_FOR_UNSPLIT, TALL_BLOB_HEIGHT_FACTOR, TALL_BLOB_RATIO_FOR_UNSPLIT } from "./unsplitLogic";
 
 /* --------------------------------------------------------------------------
  * Missplit (oversplit) detection — server-side mirror of the LineCanvas logic.
@@ -70,6 +71,7 @@ export function detectMissplitGroups(pageFilter?: number): MissplitGroup[] {
       tokens: Array<{
         blob_id: number;
         label: string;
+        cluster?: string;
         geometry: {
           aabb: [number, number, number, number];
           img_quad: number[][] | null;
@@ -77,20 +79,55 @@ export function detectMissplitGroups(pageFilter?: number): MissplitGroup[] {
       }>;
     }>;
 
-    // Load blob edits once per page to exclude deleted blobs
+    // Load blob edits once per page to exclude deleted blobs & resolve labels
     const edits = readBlobEdits(pageInt);
+    // Load reassignments to determine effective cluster
+    const reassignments = readReassignmentsForPage(pageInt);
+
+    // Collect unique cluster IDs for this page to load overrides
+    // (include both baseline clusters and reassignment targets)
+    const clusterIds = new Set<number>();
+    for (const line of lines) {
+      for (const t of line.tokens) {
+        if (t.cluster) {
+          const cid = parseInt(t.cluster, 10);
+          if (Number.isFinite(cid)) clusterIds.add(cid);
+        }
+      }
+    }
+    for (const r of reassignments.values()) {
+      clusterIds.add(r.to_cluster);
+    }
+    const clusterOverrides = readClusterOverridesByIds([...clusterIds]);
 
     for (const line of lines) {
       // Build proper edit IDs that handle duplicate blob_ids within a line
       const editIds = editIdsForBaselineLine(line);
-      const activeTokens = line.tokens.filter((t, idx) => {
+      // Filter deleted and resolve effective labels in a single pass
+      const activeTokens: typeof line.tokens = [];
+      for (let idx = 0; idx < line.tokens.length; idx++) {
+        const t = line.tokens[idx];
         const editId = editIds[idx];
         const edit = edits.get(`${line.line_index}:${editId}`)
-          // Fallback: if edit_id is suffixed (e.g. "2#1") but DB has raw blob_id ("2"),
-          // try raw key. Handles edits created by missplit resolve endpoint.
           ?? (editId !== String(t.blob_id) ? edits.get(`${line.line_index}:${t.blob_id}`) : undefined);
-        return !edit?.deleted;
-      });
+        if (edit?.deleted) continue;
+        // Resolve effective label: blob_edit.label > cluster_override(effective_cluster).label > baseline
+        let label = t.label;
+        if (edit?.label) {
+          label = edit.label;
+        } else {
+          // Determine effective cluster (reassignment overrides baseline)
+          const reassign = reassignments.get(`${line.line_index}:${t.blob_id}`);
+          const effectiveCluster = reassign
+            ? reassign.to_cluster
+            : (t.cluster ? parseInt(t.cluster, 10) : NaN);
+          if (Number.isFinite(effectiveCluster)) {
+            const co = clusterOverrides.get(effectiveCluster);
+            if (co?.label) label = co.label;
+          }
+        }
+        activeTokens.push({ ...t, label });
+      }
       // Overlap detection first (no exclusion) — catches large blobs containing fragments
       const overlapGroups = detectOverlapGroups(pageInt, line.line_index, activeTokens, imageSize);
       const overlapBlobIds = new Set<number>();
@@ -244,15 +281,8 @@ function buildGroup(
  * Undersplit detection — blobs that are too wide and likely contain multiple
  * characters that should have been separated.
  *
- * Mirrors the logic in LineCanvas.tsx:
- *   width/height >= 1.7 for normal blobs
- *   width/height >= 2.0 for tall blobs (height > 1.7× median)
+ * Uses shared logic from unsplitLogic.ts (also used by LineCanvas.tsx).
  * -------------------------------------------------------------------------- */
-
-const MIN_HEIGHT_FOR_UNSPLIT = 10;
-const MIN_WH_RATIO_FOR_UNSPLIT = 1.7;
-const TALL_BLOB_HEIGHT_FACTOR = 1.7;
-const TALL_BLOB_RATIO_FOR_UNSPLIT = 2.0;
 
 function detectUnsplitForLine(
   page: number,
@@ -280,51 +310,44 @@ function detectUnsplitForLine(
   }
   if (items.length === 0) return [];
 
-  // Compute line median height
-  const heights = items
-    .map((it) => it.aabb[3] - it.aabb[1])
-    .filter((h) => h >= MIN_HEIGHT_FOR_MEDIAN);
-  heights.sort((a, b) => a - b);
-  const medianHeight =
-    heights.length > 0 ? heights[Math.floor(heights.length / 2)] : 15;
+  const dims = items.map((it) => ({
+    width: it.aabb[2] - it.aabb[0],
+    height: it.aabb[3] - it.aabb[1],
+  }));
+  const stats = computeUnsplitLineStats(dims);
 
   const results: MissplitGroup[] = [];
 
-  for (const it of items) {
+  for (let i = 0; i < items.length; i++) {
+    const it = items[i];
     if (excludeBlobIds?.has(it.blobId)) continue;
-    const h = it.aabb[3] - it.aabb[1];
-    const w = it.aabb[2] - it.aabb[0];
-    if (h < MIN_HEIGHT_FOR_UNSPLIT) continue;
-    const ratio = w / h;
-    const isTall = h > medianHeight * TALL_BLOB_HEIGHT_FACTOR;
-    const threshold = isTall ? TALL_BLOB_RATIO_FOR_UNSPLIT : MIN_WH_RATIO_FOR_UNSPLIT;
-    if (ratio >= threshold) {
-      results.push({
-        page,
-        lineIndex,
-        blobIds: [it.blobId],
-        labels: [it.label],
-        aabb: it.aabb,
-        blobAabbs: [it.aabb],
-        imgQuads: [it.imgQuad],
-        medianHeight,
-        imageSize,
-        type: "undersplit",
-      });
-    }
+    const { width: w, height: h } = dims[i];
+    if (!isUnsplit(w, h, stats)) continue;
+
+    results.push({
+      page,
+      lineIndex,
+      blobIds: [it.blobId],
+      labels: [it.label],
+      aabb: it.aabb,
+      blobAabbs: [it.aabb],
+      imgQuads: [it.imgQuad],
+      medianHeight: stats.medianHeight,
+      imageSize,
+      type: "undersplit",
+    });
   }
 
   return results;
 }
 
 /* --------------------------------------------------------------------------
- * Overlap detection — blobs whose bounding boxes are spatially contained
- * within a larger blob.  When multiple small blobs overlap a single large
- * blob, it indicates fragmented OCR that should have been one character.
+ * Overlap detection — blobs whose bounding boxes significantly overlap in
+ * x-range.  Any overlap is suspicious regardless of relative size — it
+ * indicates duplicate OCR, fragmented detection, or stacked bboxes.
  * -------------------------------------------------------------------------- */
 
-const MIN_OVERLAP_RATIO = 0.80; // 80% of smaller blob's x-range within larger (matches page)
-const MIN_AREA_FACTOR = 1.25; // larger blob must be 1.25× the area of the smaller (matches page)
+const MIN_OVERLAP_RATIO = 0.80; // 80% mutual x-overlap to flag
 
 function detectOverlapGroups(
   page: number,
@@ -362,58 +385,64 @@ function detectOverlapGroups(
   const medianHeight =
     heights.length > 0 ? heights[Math.floor(heights.length / 2)] : 15;
 
-  // Mirror the page-side logic: for each blob, check if any larger blob
-  // (area >= 1.25×) covers 80%+ of its x-range. If so, mark the smaller
-  // as overlapping with the larger.
-  // Build adjacency: which items overlap which larger item
-  const overlapParent = new Map<number, number>(); // idx → parent idx
+  // Find all pairs where x-overlap is ≥ 80% of EITHER blob's width.
+  // Union-find to group transitive overlaps together.
+  const parent = new Map<number, number>();
+  function find(x: number): number {
+    while (parent.has(x) && parent.get(x) !== x) x = parent.get(x)!;
+    return x;
+  }
+  function union(a: number, b: number): void {
+    const ra = find(a), rb = find(b);
+    if (ra !== rb) parent.set(rb, ra);
+  }
 
-  for (const current of items) {
-    const currentW = current.aabb[2] - current.aabb[0];
-    const currentH = current.aabb[3] - current.aabb[1];
-    const currentArea = currentW * currentH;
-    if (currentW <= 0 || currentArea <= 0) continue;
+  for (let i = 0; i < items.length; i++) {
+    const a = items[i];
+    const aW = a.aabb[2] - a.aabb[0];
+    if (aW <= 0) continue;
 
-    for (const other of items) {
-      if (other.idx === current.idx) continue;
-      const otherW = other.aabb[2] - other.aabb[0];
-      const otherH = other.aabb[3] - other.aabb[1];
-      const otherArea = otherW * otherH;
-      if (otherArea <= currentArea * MIN_AREA_FACTOR) continue;
+    for (let j = i + 1; j < items.length; j++) {
+      const b = items[j];
+      const bW = b.aabb[2] - b.aabb[0];
+      if (bW <= 0) continue;
 
-      const overlapX0 = Math.max(current.aabb[0], other.aabb[0]);
-      const overlapX1 = Math.min(current.aabb[2], other.aabb[2]);
+      const overlapX0 = Math.max(a.aabb[0], b.aabb[0]);
+      const overlapX1 = Math.min(a.aabb[2], b.aabb[2]);
       const overlap = Math.max(0, overlapX1 - overlapX0);
-      if (overlap / currentW >= MIN_OVERLAP_RATIO) {
-        overlapParent.set(current.idx, other.idx);
-        break;
+
+      // Flag if overlap covers ≥ 80% of EITHER blob's width
+      if (overlap / aW >= MIN_OVERLAP_RATIO || overlap / bW >= MIN_OVERLAP_RATIO) {
+        if (!parent.has(a.idx)) parent.set(a.idx, a.idx);
+        if (!parent.has(b.idx)) parent.set(b.idx, b.idx);
+        union(a.idx, b.idx);
       }
     }
   }
 
-  if (overlapParent.size === 0) return [];
+  if (parent.size === 0) return [];
 
-  // Group by parent: collect all children that point to the same parent
-  const parentToChildren = new Map<number, number[]>();
-  for (const [childIdx, parentIdx] of overlapParent) {
-    const list = parentToChildren.get(parentIdx) ?? [];
-    list.push(childIdx);
-    parentToChildren.set(parentIdx, list);
+  // Collect groups from union-find
+  const groups = new Map<number, number[]>();
+  for (const idx of parent.keys()) {
+    const root = find(idx);
+    const list = groups.get(root) ?? [];
+    list.push(idx);
+    groups.set(root, list);
   }
 
   const results: MissplitGroup[] = [];
   const itemByIdx = new Map(items.map((it) => [it.idx, it]));
 
-  for (const [parentIdx, childIdxs] of parentToChildren) {
-    const parent = itemByIdx.get(parentIdx)!;
-    const children = childIdxs.map((i) => itemByIdx.get(i)!);
-    const groupItems = [parent, ...children];
+  for (const [, memberIdxs] of groups) {
+    if (memberIdxs.length < 2) continue;
+    const groupItems = memberIdxs.map((i) => itemByIdx.get(i)!);
 
     // Sort by x-center for consistent ordering
     groupItems.sort((a, b) => {
       const aCx = (a.aabb[0] + a.aabb[2]) / 2;
       const bCx = (b.aabb[0] + b.aabb[2]) / 2;
-      return aCx - bCx;
+      return aCx - bCx || a.idx - b.idx;
     });
 
     const x0 = Math.min(...groupItems.map((it) => it.aabb[0]));

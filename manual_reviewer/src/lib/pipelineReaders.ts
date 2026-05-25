@@ -85,6 +85,7 @@ export interface V2RowGeometry {
   bbox: [number, number, number, number]; // [x, y, width, height]
   baseline_y: number;
   x_span: [number, number];
+  source: string;
 }
 
 const _geometryCache = new Map<string, { mtimeMs: number; value: V2RowGeometry[] | null }>();
@@ -109,6 +110,7 @@ export async function readV2Geometry(page: string): Promise<V2RowGeometry[] | nu
     bbox: r.bbox as [number, number, number, number],
     baseline_y: r.baseline_y as number,
     x_span: r.x_span as [number, number],
+    source: (r.source as string) || "",
   }));
   _geometryCache.set(page, { mtimeMs, value: rows });
   return rows;

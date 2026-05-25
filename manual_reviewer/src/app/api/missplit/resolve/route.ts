@@ -8,6 +8,7 @@ import {
   upsertBlobEdit,
 } from "@/lib/repo";
 import { getDb } from "@/lib/db";
+import { readInitialBaseline } from "@/lib/pipelineReaders";
 
 export const dynamic = "force-dynamic";
 
@@ -69,6 +70,31 @@ export async function POST(req: NextRequest) {
   const createdIds: string[] = [];
   let reviewId: number;
 
+  // Check if any of the deleted blobs had an overline mark (baseline or edit)
+  const pageStr = String(body.page).padStart(3, "0");
+  const baseline = await readInitialBaseline(pageStr);
+  let hadOverline = false;
+  if (baseline) {
+    const line = baseline.lines.find((l) => l.line_index === body.lineIndex);
+    if (line) {
+      for (const blobId of body.blobIds) {
+        const tok = line.tokens.find((t) => t.blob_id === blobId);
+        if (tok && tok.overline_mark_id != null) { hadOverline = true; break; }
+      }
+    }
+  }
+  // Also check blob_edits (user may have manually set overline_mark_id)
+  if (!hadOverline) {
+    for (const blobId of body.blobIds) {
+      const row = db
+        .prepare<[number, number, string], { overline_mark_id: number | null }>(
+          "SELECT overline_mark_id FROM blob_edits WHERE page = ? AND line_index = ? AND blob_id = ?",
+        )
+        .get(body.page, body.lineIndex, String(blobId));
+      if (row?.overline_mark_id != null) { hadOverline = true; break; }
+    }
+  }
+
   const runFix = db.transaction(() => {
     // Step 1: Mark old blobs as deleted
     for (const blobId of body.blobIds) {
@@ -106,6 +132,7 @@ export async function POST(req: NextRequest) {
         diacritics: null,
         lacuna_bracket: null,
         overline_mark_id: null,
+        lost_overline: hadOverline ? 1 : 0,
         missplit_review_id: reviewId!,
       });
       createdIds.push(created.id);

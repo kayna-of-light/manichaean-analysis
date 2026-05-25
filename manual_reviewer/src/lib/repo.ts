@@ -35,6 +35,7 @@ export interface NewBboxRow {
   lacuna_bracket: string | null;
   overline_mark_id: number | null;
   missplit_review_id: number | null;
+  lost_overline: number;
   created_at: string;
   updated_at: string;
 }
@@ -363,8 +364,9 @@ export function setLineStatus(
   );
 }
 
-export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at" | "id"> & {
+export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at" | "id" | "lost_overline"> & {
   id?: string;
+  lost_overline?: number;
 }) {
   const db = getDb();
   const id = input.id ?? `new_p${String(input.page).padStart(3, "0")}_l${String(
@@ -373,6 +375,7 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
   const after = {
     ...input,
     id,
+    lost_overline: input.lost_overline ?? 0,
     created_at: new Date().toISOString(),
     updated_at: new Date().toISOString(),
   };
@@ -387,9 +390,9 @@ export function createNewBbox(input: Omit<NewBboxRow, "created_at" | "updated_at
       db.prepare(
         `INSERT INTO new_bboxes
          (id, page, line_index, x0, y0, x1, y1, coord_space, label,
-          diacritics, lacuna_bracket, overline_mark_id, missplit_review_id, created_at, updated_at)
+          diacritics, lacuna_bracket, overline_mark_id, lost_overline, missplit_review_id, created_at, updated_at)
          VALUES (@id, @page, @line_index, @x0, @y0, @x1, @y1, @coord_space,
-                 @label, @diacritics, @lacuna_bracket, @overline_mark_id, @missplit_review_id, @created_at, @updated_at)`,
+                 @label, @diacritics, @lacuna_bracket, @overline_mark_id, @lost_overline, @missplit_review_id, @created_at, @updated_at)`,
       ).run(after);
       return after;
     },
@@ -455,6 +458,29 @@ export function updateNewBbox(
         overline_mark_id: after.overline_mark_id,
         updated_at: after.updated_at,
       });
+      return after;
+    },
+  );
+}
+
+export function moveNewBboxToLine(id: string, newLineIndex: number) {
+  const db = getDb();
+  const before = db
+    .prepare<[string], NewBboxRow>("SELECT * FROM new_bboxes WHERE id = ?")
+    .get(id);
+  if (!before) return null;
+  const after = { ...before, line_index: newLineIndex, updated_at: new Date().toISOString() };
+  return withAudit(
+    "new_bbox.move_line",
+    before.page,
+    before.line_index,
+    id,
+    before,
+    after,
+    () => {
+      db.prepare(
+        "UPDATE new_bboxes SET line_index = @line_index, updated_at = @updated_at WHERE id = @id",
+      ).run({ id, line_index: newLineIndex, updated_at: after.updated_at });
       return after;
     },
   );

@@ -1,5 +1,5 @@
 "use client";
-import { memo, type Dispatch, type SetStateAction, useCallback, useEffect, useRef, useState } from "react";
+import { memo, useMemo, type Dispatch, type SetStateAction, useCallback, useEffect, useRef, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import {
   Box,
@@ -25,13 +25,15 @@ import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import {
   usePageData,
   useEditMutation,
+  useMoveLine,
   usePagesList,
+  usePageWarnings,
   type ReviewPage,
   type ReviewToken,
 } from "@/components/reviewer/hooks";
 import { LineSidebar } from "@/components/reviewer/LineSidebar";
 import { LineCanvas } from "@/components/reviewer/LineCanvas";
-import { TokenStrip } from "@/components/reviewer/TokenStrip";
+import { TokenStrip, type WarningMap } from "@/components/reviewer/TokenStrip";
 import { CharChooser } from "@/components/reviewer/CharChooser";
 import { ClusterPanel } from "@/components/reviewer/ClusterPanel";
 import { useReviewerStore, type SequenceTarget } from "@/components/reviewer/store";
@@ -141,7 +143,9 @@ export default function ReviewPage() {
   const pageId = (params?.page ?? "").padStart(3, "0");
   const { data, isLoading, error } = usePageData(pageId);
   const { data: pagesList } = usePagesList();
+  const { data: warningsData } = usePageWarnings(pageId);
   const editMutation = useEditMutation(pageId);
+  const moveLineMutation = useMoveLine(pageId);
 
   const selectedLine = useReviewerStore((s) => s.selectedLine);
   const setSelectedLine = useReviewerStore((s) => s.setSelectedLine);
@@ -167,6 +171,17 @@ export default function ReviewPage() {
       lineRefs.current.get(lineIndex)?.scrollIntoView({ behavior, block: "start" });
     });
   }, [setSelectedLine]);
+
+  // Build warning lookup map: "lineIndex:blobId" → entry
+  const warningMap: WarningMap = useMemo(() => {
+    const map: WarningMap = new Map();
+    if (warningsData?.warnings) {
+      for (const w of warningsData.warnings) {
+        map.set(`${w.lineIndex}:${w.blobId}`, w);
+      }
+    }
+    return map;
+  }, [warningsData]);
 
   // default-select the first line
   useEffect(() => {
@@ -234,6 +249,11 @@ export default function ReviewPage() {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (chooserAnchor) return; // chooser owns keys
+      if (e.key === "Escape" && drawLineIndex !== null) {
+        e.preventDefault();
+        setDrawLineIndex(null);
+        return;
+      }
       if (!data) return;
       const idxArr = data.lines.map((l) => l.line_index);
       const cur = selectedLine ?? idxArr[0];
@@ -263,7 +283,18 @@ export default function ReviewPage() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [data, selectedLine, scrollToLine, editMutation, chooserAnchor]);
+  }, [data, selectedLine, scrollToLine, editMutation, chooserAnchor, drawLineIndex]);
+
+  const handleMoveLine = useCallback((direction: "up" | "down") => {
+    if (!chooserAnchor || !data) return;
+    moveLineMutation.mutate({
+      page: parseInt(pageId, 10),
+      line_index: chooserAnchor.lineIndex,
+      blob_id: chooserAnchor.blobId,
+      direction,
+      is_new_bbox: chooserAnchor.isNewBbox ?? false,
+    });
+  }, [chooserAnchor, data, moveLineMutation, pageId]);
 
   const onTokenClick = useCallback((
     t: ReviewToken,
@@ -464,6 +495,7 @@ export default function ReviewPage() {
               mutateEdit={editMutation.mutate}
               onTokenClick={onTokenClick}
               openNewBboxChooser={openNewBboxChooser}
+              warningMap={warningMap}
             />
           ))}
 
@@ -547,6 +579,7 @@ export default function ReviewPage() {
         anchorEl={popoverEl}
         mutateEdit={editMutation.mutate}
         editPending={editMutation.isPending}
+        onMoveLine={handleMoveLine}
         onClose={() => {
           setPopoverEl(null);
           closeChooser();
@@ -569,6 +602,7 @@ interface ReviewLineCardProps {
   mutateEdit: ReturnType<typeof useEditMutation>["mutate"];
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   openNewBboxChooser: (nb: NewBbox, evt: { clientX: number; clientY: number } | null) => void;
+  warningMap: WarningMap;
 }
 
 const ReviewLineCard = memo(function ReviewLineCard({
@@ -584,7 +618,9 @@ const ReviewLineCard = memo(function ReviewLineCard({
   mutateEdit,
   onTokenClick,
   openNewBboxChooser,
+  warningMap,
 }: ReviewLineCardProps) {
+  const displayIndex = line.display_index ?? line.line_index;
   const lineNewBboxes = page.new_bboxes.filter((nb) => nb.line_index === line.line_index);
   const mappedNewBboxes = lineNewBboxes.map((nb) => ({
     id: nb.id,
@@ -642,7 +678,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
           zIndex: 2,
         }}
       >
-        {String(line.line_index).padStart(2, "0")}
+        {String(displayIndex).padStart(2, "0")}
       </Typography>
 
       {(line.status === "done" || line.status === "flagged" || line.status === "special") && (
@@ -701,7 +737,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
               size="small"
               sx={{ p: 0.5 }}
               onClick={() => {
-                if (!confirm(`Reset line ${line.line_index} to initial state? All edits on this line will be removed.`)) return;
+                if (!confirm(`Reset line ${displayIndex} to initial state? All edits on this line will be removed.`)) return;
                 mutateEdit({ reset_line: { line_index: line.line_index } });
               }}
             >
@@ -776,24 +812,27 @@ const ReviewLineCard = memo(function ReviewLineCard({
         drawMode={isDrawing}
         newBboxes={mappedNewBboxes}
         onNewBbox={(bbox) => {
+          const { label, openEditor = true, ...geometry } = bbox;
           mutateEdit(
             {
               new_bboxes: [
                 {
                   line_index: line.line_index,
-                  ...bbox,
+                  ...geometry,
                   coord_space: "image",
+                  ...(label !== undefined ? { label } : {}),
                 },
               ],
             },
             {
               onSuccess: (result) => {
+                if (!openEditor) return;
                 const newId = result?.results?.new_bboxes?.[0];
                 if (newId) setPendingNewBboxOpen(newId);
               },
             },
           );
-          setDrawLineIndex(null);
+          if (openEditor) setDrawLineIndex(null);
         }}
         onNewBboxClick={(nb, evt) => {
           const source = page.new_bboxes.find((bbox) => bbox.id === nb.id);
@@ -808,6 +847,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
           const source = page.new_bboxes.find((bbox) => bbox.id === nb.id);
           if (source) openNewBboxChooser(source, evt);
         }}
+        warnings={warningMap}
       />
     </Box>
   );

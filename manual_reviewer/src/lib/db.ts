@@ -4,7 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { BACKUP_DIR, DATA_DIR, DB_PATH, ensureDataDirs } from "./paths";
 
-const SCHEMA_VERSION = 8;
+const SCHEMA_VERSION = 9;
 
 let _db: DB | null = null;
 
@@ -263,6 +263,17 @@ function migrate(db: DB) {
       db.exec("ALTER TABLE new_bboxes ADD COLUMN missplit_review_id INTEGER");
     }
     db.exec("CREATE INDEX IF NOT EXISTS idx_new_bboxes_review ON new_bboxes(missplit_review_id)");
+    db.prepare(
+      "UPDATE meta SET value = ? WHERE key = 'schema_version'",
+    ).run("8");
+  }
+
+  if (currentVersion < 9) {
+    // Track when a new_bbox replaced a blob that had an overline mark
+    const cols = db.pragma("table_info(new_bboxes)") as Array<{ name: string }>;
+    if (!cols.some((c) => c.name === "lost_overline")) {
+      db.exec("ALTER TABLE new_bboxes ADD COLUMN lost_overline INTEGER DEFAULT 0");
+    }
     db.prepare(
       "UPDATE meta SET value = ? WHERE key = 'schema_version'",
     ).run(String(SCHEMA_VERSION));

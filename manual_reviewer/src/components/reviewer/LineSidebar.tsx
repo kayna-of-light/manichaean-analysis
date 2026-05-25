@@ -53,6 +53,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
       </Typography>
       <List dense disablePadding sx={{ mt: 1 }}>
         {lines.map((l) => {
+          const displayIndex = l.display_index ?? l.line_index;
           const attention = l.tokens.filter((t) => t.review).length;
           const edited = l.tokens.filter((t) => t.user_modified).length;
           const c = statusColor(l.status);
@@ -61,7 +62,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
               key={l.line_index}
               selected={selectedIndex === l.line_index}
               onClick={() => onSelect(l.line_index)}
-              title={`Line ${l.line_index}: ${l.status}; ${attention} attention; ${edited} edits`}
+              title={`Line ${displayIndex}: ${l.status}; ${attention} attention; ${edited} edits`}
               sx={{
                 borderRadius: 1,
                 mb: 0.5,
@@ -80,7 +81,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.5, width: "100%", minWidth: 0 }}>
                 <StatusMarker status={l.status} color={c.fg} />
                 <Typography sx={{ fontVariantNumeric: "tabular-nums", minWidth: 20 }} variant="body2">
-                  {String(l.line_index).padStart(2, "0")}
+                  {String(displayIndex).padStart(2, "0")}
                 </Typography>
                 <Box sx={{ flex: 1, minWidth: 0 }} />
                 {attention > 0 && (

@@ -1,8 +1,15 @@
 "use client";
 import { useMemo } from "react";
 import { Box } from "@mui/material";
-import type { ReviewLine, ReviewToken } from "./hooks";
+import type { ReviewLine, ReviewToken, TokenWarningEntry } from "./hooks";
 import { useReviewerStore } from "./store";
+
+export type WarningMap = Map<string, TokenWarningEntry>;
+
+/** Build lookup key for warning map */
+function warningKey(lineIndex: number, blobId: number | string): string {
+  return `${lineIndex}:${blobId}`;
+}
 
 export interface NewBboxStripItem {
   id: string;
@@ -19,6 +26,7 @@ interface Props {
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   newBboxes?: NewBboxStripItem[];
   onNewBboxClick?: (nb: NewBboxStripItem, evt: { clientX: number; clientY: number }) => void;
+  warnings?: WarningMap;
 }
 
 /** Position of a token within its overline group */
@@ -169,13 +177,32 @@ function buildStripItems(tokens: ReviewToken[], newBboxes: NewBboxStripItem[] | 
   return [...tokenItems, ...nbItems].sort((a, b) => a.v1Line !== b.v1Line ? a.v1Line - b.v1Line : a.x - b.x);
 }
 
-export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Props) {
+/** Characters that should not receive an overline combining mark, even if
+ *  they are part of an overline group. They remain visually "inside" the group
+ *  but the macron skips over them. */
+const OVERLINE_SKIP_LABELS = new Set([
+  "[", "]", "(", ")", ".", "\u00B7",
+  "_left_square_bracket", "_right_square_bracket",
+  "_left_parenthesis", "_right_parenthesis", "_left_paren", "_right_paren",
+  "_lacuna_dot", "_middle_dot",
+]);
+
+function isOverlineSkip(item: StripItem): boolean {
+  const lbl = item.kind === "token"
+    ? item.token.effective_label
+    : item.nb.label;
+  return lbl != null && OVERLINE_SKIP_LABELS.has(lbl);
+}
+
+export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick, warnings }: Props) {
   const selectedBlobId = useReviewerStore((s) => s.selectedBlobId);
   const selectedLine = useReviewerStore((s) => s.selectedLine);
 
   const stripItems = useMemo(() => buildStripItems(line.tokens, newBboxes), [line.tokens, newBboxes]);
 
   // Compute overline position for each visible item.
+  // Brackets/dots inside an overline group are skipped — they stay in the group
+  // but don't receive the combining macron character.
   const olPosMap = useMemo(() => {
     const map = new Map<string, OverlinePos>();
     let i = 0;
@@ -184,12 +211,18 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
       if (mid != null) {
         let j = i + 1;
         while (j < stripItems.length && stripItems[j].overlineMarkId === mid) j++;
-        const groupLen = j - i;
+        // Collect non-skip indices within this overline group
+        const letterIndices: number[] = [];
         for (let k = i; k < j; k++) {
+          if (!isOverlineSkip(stripItems[k])) letterIndices.push(k);
+        }
+        // Assign positions only to non-skip items
+        for (let li = 0; li < letterIndices.length; li++) {
+          const k = letterIndices[li];
           let pos: OverlinePos;
-          if (groupLen === 1) pos = "solo";
-          else if (k === i) pos = "first";
-          else if (k === j - 1) pos = "last";
+          if (letterIndices.length === 1) pos = "solo";
+          else if (li === 0) pos = "first";
+          else if (li === letterIndices.length - 1) pos = "last";
           else pos = "middle";
           map.set(stripItems[k].key, pos);
         }
@@ -217,17 +250,23 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
           whiteSpace: "nowrap",
         }}
       >
-        {stripItems.map((item) => (
-          <StripItemChar
-            key={item.key}
-            item={item}
-            olPos={olPosMap.get(item.key) ?? null}
-            selectedLine={selectedLine}
-            selectedBlobId={selectedBlobId}
-            onTokenClick={onTokenClick}
-            onNewBboxClick={onNewBboxClick}
-          />
-        ))}
+        {stripItems.map((item) => {
+          const wKey = item.kind === "token"
+            ? warningKey(item.token.line_index, item.token.blob_id)
+            : warningKey(line.line_index, `nb:${item.nb.id}`);
+          return (
+            <StripItemChar
+              key={item.key}
+              item={item}
+              olPos={olPosMap.get(item.key) ?? null}
+              selectedLine={selectedLine}
+              selectedBlobId={selectedBlobId}
+              onTokenClick={onTokenClick}
+              onNewBboxClick={onNewBboxClick}
+              warningLevel={wKey ? warnings?.get(wKey)?.level : undefined}
+            />
+          );
+        })}
       </Box>
     );
   }
@@ -311,6 +350,11 @@ export function TokenStrip({ line, onTokenClick, newBboxes, onNewBboxClick }: Pr
               selectedBlobId={selectedBlobId}
               onTokenClick={onTokenClick}
               onNewBboxClick={onNewBboxClick}
+              warningLevel={warnings?.get(
+                item.kind === "token"
+                  ? warningKey(item.token.line_index, item.token.blob_id)
+                  : warningKey(line.line_index, `nb:${item.nb.id}`)
+              )?.level}
             />
           </Box>
         );
@@ -326,6 +370,7 @@ interface StripItemCharProps {
   selectedBlobId: number | string | null;
   onTokenClick: (token: ReviewToken, evt: { clientX: number; clientY: number }) => void;
   onNewBboxClick?: (nb: NewBboxStripItem, evt: { clientX: number; clientY: number }) => void;
+  warningLevel?: "warn" | "alert";
 }
 
 function StripItemChar({
@@ -335,6 +380,7 @@ function StripItemChar({
   selectedBlobId,
   onTokenClick,
   onNewBboxClick,
+  warningLevel,
 }: StripItemCharProps) {
   if (item.kind === "token") {
     return (
@@ -343,6 +389,7 @@ function StripItemChar({
         olPos={olPos}
         isSelected={selectedLine === item.token.line_index && String(selectedBlobId) === tokenEditId(item.token)}
         onTokenClick={onTokenClick}
+        warningLevel={warningLevel}
       />
     );
   }
@@ -376,9 +423,10 @@ interface CharProps {
     token: ReviewToken,
     evt: { clientX: number; clientY: number },
   ) => void;
+  warningLevel?: "warn" | "alert";
 }
 
-function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
+function TokenChar({ t, olPos, isSelected, onTokenClick, warningLevel }: CharProps) {
   const display = tokenDisplay(t, olPos);
   const bg = tokenStateColor(t);
   const isUnset = t.unset && !t.effective_label;
@@ -393,12 +441,12 @@ function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
         cursor: "pointer",
         padding: "0 1px",
         borderRadius: 2,
-        display: isUnset ? "inline-flex" : undefined,
-        alignItems: isUnset ? "center" : undefined,
+        display: "inline-flex",
+        flexDirection: "column",
+        alignItems: "center",
         justifyContent: isUnset ? "center" : undefined,
         minWidth: isUnset ? 10 : undefined,
-        height: isUnset ? 16 : undefined,
-        verticalAlign: isUnset ? "middle" : undefined,
+        verticalAlign: "top",
         border: isUnset ? "1px dashed rgba(255,99,71,0.8)" : undefined,
         backgroundColor: bg,
         outline: isSelected
@@ -407,7 +455,19 @@ function TokenChar({ t, olPos, isSelected, onTokenClick }: CharProps) {
         color: t.effective_label ? "inherit" : "var(--color-text-muted, #999)",
       }}
     >
-      {display}
+      <span style={{ lineHeight: "20px" }}>{display}</span>
+      {warningLevel && (
+        <span
+          style={{
+            width: 5,
+            height: 5,
+            borderRadius: "50%",
+            backgroundColor: warningLevel === "alert" ? "#ff5252" : "#ffc107",
+            marginTop: 1,
+            flexShrink: 0,
+          }}
+        />
+      )}
     </span>
   );
 }
