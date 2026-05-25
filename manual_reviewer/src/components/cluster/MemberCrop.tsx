@@ -66,32 +66,29 @@ export function MemberCrop({
 
   return (
     <Box
+      component="svg"
+      viewBox={`${px0} ${py0} ${cropW} ${cropH}`}
+      preserveAspectRatio="none"
+      aria-hidden="true"
       sx={{
         width: dispW,
         height: dispH,
         overflow: "hidden",
-        position: "relative",
         borderRadius: 1,
         background,
         border: outline ?? "1px solid var(--color-glass-border)",
+        display: "block",
+        pointerEvents: "none",
+        userSelect: "none",
       }}
     >
-      <Box
-        component="img"
-        src={imageUrl}
-        alt="member"
-        draggable={false}
-        sx={{
-          position: "absolute",
-          left: 0,
-          top: 0,
-          width: imgW * scale,
-          height: imgH * scale,
-          transform: `translate(${-px0 * scale}px, ${-py0 * scale}px)`,
-          maxWidth: "none",
-          pointerEvents: "none",
-          userSelect: "none",
-        }}
+      <image
+        href={imageUrl}
+        x={0}
+        y={0}
+        width={imgW}
+        height={imgH}
+        preserveAspectRatio="none"
       />
     </Box>
   );

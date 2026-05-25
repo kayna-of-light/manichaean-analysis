@@ -51,10 +51,11 @@ interface ReviewerState {
   selectedLine: number | null;
   selectedBlobId: string | number | null;
   chooserOpen: boolean;
+  chooserAnchorEl: HTMLElement | null;
   chooserAnchor: ChooserAnchor | null;
   setSelectedLine: (idx: number | null) => void;
   selectBlob: (lineIndex: number, blobId: string | number | null) => void;
-  openChooser: (anchor: ChooserAnchor) => void;
+  openChooser: (anchor: ChooserAnchor, anchorEl?: HTMLElement | null) => void;
   closeChooser: () => void;
   updateChooserLabel: (label: string | null, diacritics?: string[]) => void;
   toggleOverlineLeft: () => void;
@@ -66,6 +67,7 @@ export const useReviewerStore = create<ReviewerState>((set) => ({
   selectedLine: null,
   selectedBlobId: null,
   chooserOpen: false,
+  chooserAnchorEl: null,
   chooserAnchor: null,
   setSelectedLine: (idx) =>
     set((s) => (s.selectedLine === idx ? s : { selectedLine: idx })),
@@ -75,9 +77,9 @@ export const useReviewerStore = create<ReviewerState>((set) => ({
         ? s
         : { selectedLine: lineIndex, selectedBlobId: blobId },
     ),
-  openChooser: (anchor) =>
-    set({ chooserOpen: true, chooserAnchor: anchor }),
-  closeChooser: () => set({ chooserOpen: false, chooserAnchor: null }),
+  openChooser: (anchor, anchorEl = null) =>
+    set({ chooserOpen: true, chooserAnchor: anchor, chooserAnchorEl: anchorEl }),
+  closeChooser: () => set({ chooserOpen: false, chooserAnchor: null, chooserAnchorEl: null }),
   updateChooserLabel: (label, diacritics) =>
     set((s) => {
       if (!s.chooserAnchor) return s;
