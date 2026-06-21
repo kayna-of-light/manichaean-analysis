@@ -96,7 +96,6 @@ function tokenStateColor(t: ReviewToken): string | undefined {
   if (t.unset) return "rgba(255,99,71,0.35)";
   if (t.editorial_overlay) return "rgba(185,95,0,0.22)";
   if (t.user_modified) return "rgba(200,164,101,0.35)";
-  if (t.review) return "rgba(255,200,90,0.30)";
   return undefined;
 }
 

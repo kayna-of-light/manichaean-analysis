@@ -229,15 +229,23 @@ export async function GET(
         note: null,
       };
       const sourceDisplayIndex = sourceLine.display_index ?? sourceLine.line_index;
-      mergedLines.push({
+      const duplicateLine = {
         line_index: duplicate.line_index,
         display_index: sourceDisplayIndex + duplicate.ordinal / 100,
+        duplicate: {
+          id: duplicate.id,
+          source_line_index: duplicate.source_line_index,
+          ordinal: duplicate.ordinal,
+        },
         tokens: [],
         warped_size: sourceLine.warped_size,
         line_quad: sourceLine.line_quad,
         status: status.status,
         note: status.note,
-      });
+      } as (typeof mergedLines)[number] & {
+        duplicate: { id: number; source_line_index: number; ordinal: number };
+      };
+      mergedLines.push(duplicateLine);
     }
     mergedLines.sort(compareReviewLines);
   }

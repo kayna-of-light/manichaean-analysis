@@ -53,6 +53,11 @@ export interface ReviewToken {
 export interface ReviewLine {
   line_index: number;
   display_index?: number;
+  duplicate?: {
+    id: number;
+    source_line_index: number;
+    ordinal: number;
+  };
   tokens: ReviewToken[];
   warped_size: [number, number] | null;
   line_quad: number[][] | null;
