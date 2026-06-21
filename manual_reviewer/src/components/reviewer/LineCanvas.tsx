@@ -228,7 +228,6 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
   ) => {
     const isHighlight =
       highlightBlob !== null && String(highlightBlob) === tokenId(t);
-    const needsReview = t.review || t.user_modified || (t.candidates?.length ?? 0) > 0;
     const qxs = t.img_quad?.map((p) => p[0]) ?? [];
     const qys = t.img_quad?.map((p) => p[1]) ?? [];
 
@@ -242,9 +241,7 @@ export function LineCanvas({ page, line, highlightBlob, onTokenClick, drawMode, 
             ? "rgba(255,99,71,0.8)"
             : t.user_modified
               ? "var(--color-glass-accent)"
-              : needsReview
-                ? "rgba(255,200,90,0.8)"
-                : "rgba(100,160,220,0.55)";
+              : "rgba(100,160,220,0.55)";
     const points = t.img_quad
       ?.map((p) => `${p[0]},${p[1]}`)
       .join(" ") ?? "";

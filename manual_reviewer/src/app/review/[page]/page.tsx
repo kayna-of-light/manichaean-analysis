@@ -24,6 +24,7 @@ import DoneAllIcon from "@mui/icons-material/DoneAll";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 import TextFieldsIcon from "@mui/icons-material/TextFields";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import DeleteOutlineIcon from "@mui/icons-material/DeleteOutlined";
 import {
   usePageData,
   useEditMutation,
@@ -692,6 +693,7 @@ const ReviewLineCard = memo(function ReviewLineCard({
 }: ReviewLineCardProps) {
   const displayIndex = line.display_index ?? line.line_index;
   const lineNewBboxes = page.new_bboxes.filter((nb) => nb.line_index === line.line_index);
+  const isDuplicateLine = line.duplicate != null;
   const mappedNewBboxes = lineNewBboxes.map((nb) => ({
     id: nb.id,
     x0: nb.x0,
@@ -801,18 +803,35 @@ const ReviewLineCard = memo(function ReviewLineCard({
             zIndex: 3,
           }}
         >
-          <Tooltip title="Reset line">
-            <IconButton
-              size="small"
-              sx={{ p: 0.5 }}
-              onClick={() => {
-                if (!confirm(`Reset line ${displayIndex} to initial state? All edits on this line will be removed.`)) return;
-                mutateEdit({ reset_line: { line_index: line.line_index } });
-              }}
-            >
-              <RestartAltIcon sx={{ fontSize: 16 }} />
-            </IconButton>
-          </Tooltip>
+          {isDuplicateLine ? (
+            <Tooltip title="Delete duplicate row">
+              <IconButton
+                aria-label={`Delete duplicate row ${displayIndex}`}
+                size="small"
+                color="error"
+                sx={{ p: 0.5 }}
+                onClick={() => {
+                  if (!confirm(`Delete duplicate row ${displayIndex}? This removes the duplicate row and its boxes.`)) return;
+                  mutateEdit({ reset_line: { line_index: line.line_index } });
+                }}
+              >
+                <DeleteOutlineIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </Tooltip>
+          ) : (
+            <Tooltip title="Reset line">
+              <IconButton
+                size="small"
+                sx={{ p: 0.5 }}
+                onClick={() => {
+                  if (!confirm(`Reset line ${displayIndex} to initial state? All edits on this line will be removed.`)) return;
+                  mutateEdit({ reset_line: { line_index: line.line_index } });
+                }}
+              >
+                <RestartAltIcon sx={{ fontSize: 16 }} />
+              </IconButton>
+            </Tooltip>
+          )}
           <Tooltip title="Duplicate row">
             <IconButton
               aria-label={`Duplicate row ${displayIndex}`}

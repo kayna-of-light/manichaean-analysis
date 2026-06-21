@@ -54,7 +54,6 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
       <List dense disablePadding sx={{ mt: 1 }}>
         {lines.map((l) => {
           const displayIndex = l.display_index ?? l.line_index;
-          const attention = l.tokens.filter((t) => t.review).length;
           const edited = l.tokens.filter((t) => t.user_modified).length;
           const c = statusColor(l.status);
           return (
@@ -62,7 +61,7 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
               key={l.line_index}
               selected={selectedIndex === l.line_index}
               onClick={() => onSelect(l.line_index)}
-              title={`Line ${displayIndex}: ${l.status}; ${attention} attention; ${edited} edits`}
+              title={`Line ${displayIndex}: ${l.status}; ${edited} edits`}
               sx={{
                 borderRadius: 1,
                 mb: 0.5,
@@ -84,19 +83,6 @@ export function LineSidebar({ lines, selectedIndex, onSelect }: Props) {
                   {String(displayIndex).padStart(2, "0")}
                 </Typography>
                 <Box sx={{ flex: 1, minWidth: 0 }} />
-                {attention > 0 && (
-                  <Chip
-                    size="small"
-                    label={attention}
-                    sx={{
-                      height: 16,
-                      fontSize: 10,
-                      bgcolor: "rgba(255,200,90,0.18)",
-                      borderRadius: 0.75,
-                      "& .MuiChip-label": { px: 0.5 },
-                    }}
-                  />
-                )}
                 {edited > 0 && (
                   <Chip
                     size="small"
