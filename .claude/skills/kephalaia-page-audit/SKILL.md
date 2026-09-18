@@ -59,10 +59,10 @@ Do these in order. Do not skip steps.
 ### Step 1 — Read the page sources
 
 Read in parallel:
-1. `read_file` on the existing JSON (full).
-2. `read_file` on `keph_pNNN_pass2.txt`.
-3. `view_image` on `keph_pNNN.jpg`.
-4. Read the Gardner section for page `N` with the regex above (or use `grep_search` for `\(N\)`).
+1. `Read` on the existing JSON (full).
+2. `Read` on `keph_pNNN_pass2.txt`.
+3. `Read` on `keph_pNNN.jpg`.
+4. Read the Gardner section for page `N` with the regex above (or use `Grep` for `\(N\)`).
 
 ### Step 2 — Walk every apparatus entry against the image
 
@@ -99,7 +99,7 @@ If you renumbered, do a final scan: count distinct `{N}` placeholders in lines+h
 
 ### Step 5 — Save and check off
 
-Write the updated JSON. Run `get_errors` if Python tooling is involved (it isn't here, but the file should remain valid JSON — verify by reading it back if any complex edit was made). Mark the page as `[x]` in `temp/page_audit_chores.md`.
+Write the updated JSON. Check for problems with the `problems` tool if Python tooling is involved (it isn't here, but the file should remain valid JSON — verify by reading it back if any complex edit was made). Mark the page as `[x]` in `temp/page_audit_chores.md`.
 
 ## Stub pages
 

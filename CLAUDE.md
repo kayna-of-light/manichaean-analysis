@@ -26,7 +26,7 @@ Mani (216–274 CE) is the critical bridge figure. Born into an Elcesaite (Jewis
 
 | Repository | Purpose |
 |---|---|
-| **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage framework — research collection, synthesis, and source documents |
+| **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage framework — knowledge graph, source documents |
 | **[structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)** | Empirical data analysis — NDE, past-life memory, MallWorld |
 | **[NagHammadiLibrary](https://github.com/kayna-of-light/NagHammadiLibrary)** | NHL correspondential reading project |
 | **[ProtoLuke](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
@@ -85,8 +85,7 @@ The proprium is the sense of self as separate — self-love. It is **not evil in
 
 ```
 manichaean-analysis/
-├── .github/
-│   └── copilot-instructions.md     # This file
+├── CLAUDE.md                        # This file
 ├── data/                            # Source PDF/data files
 ├── output/
 │   ├── texts/                      # Scraped texts (markdown, one per text)
@@ -206,6 +205,19 @@ conda activate manichaean
 ```bash
 python scripts/scrape_gnosis.py
 ```
+
+---
+
+## Skills
+
+| Skill | Purpose |
+|---|---|
+| [kephalaia-editorial-fingerprint-mapping](.claude/skills/kephalaia-editorial-fingerprint-mapping/SKILL.md) | Manual content-first mapping of German editorial sentences to cluster-array fingerprints in `temp/editorial_sentences.json`; use for Manual Reviewer editorial overlay work. |
+| [kephalaia-page-audit](.claude/skills/kephalaia-page-audit/SKILL.md) | Per-page visual audit of `output/projects/kephalaia_v2/pages/p_NNN.json` against manuscript image and Gardner translation. Use when working through `temp/page_audit_chores.md`. |
+| [kephalaia-ocr-correction](.claude/skills/kephalaia-ocr-correction/SKILL.md) | Manuscript-first OCR correction workflow for `output/projects/kephalaia_ocr`: review sheets, mixed shape clusters, subcluster labels, lacuna dots, connected Coptic blobs, rebuilds, and verification. |
+| [manual-reviewer-ui-component](.claude/skills/manual-reviewer-ui-component/SKILL.md) | Build UI components for the Manual Reviewer: MUI 9 + Tailwind 4 glass morphism theme, design tokens, dark mode, component composition. |
+| [manual-reviewer-api-route](.claude/skills/manual-reviewer-api-route/SKILL.md) | Add Next.js API route handlers: route patterns, Zod validation, SQLite repo access, dynamic params, error handling. |
+| [manual-reviewer-feature](.claude/skills/manual-reviewer-feature/SKILL.md) | Full vertical slice: SQLite migration → repo functions → Zod schema → API route → React Query hook → Zustand store → UI component. |
 
 ---
 

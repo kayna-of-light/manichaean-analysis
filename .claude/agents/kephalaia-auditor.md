@@ -1,9 +1,8 @@
 ---
 name: kephalaia-auditor
 description: Per-page visual auditor for Kephalaia v2. Audits one page range (typically 3-5 pages) of `output/projects/kephalaia_v2/pages/p_NNN.json` against the manuscript image, pass-2 OCR transcription, and Gardner translation. Applies the kephalaia-page-audit skill rules. Returns a brief report of changes per page and updates `temp/page_audit_chores.md` checkmarks.
-tools: ["read", "edit", "search", "view_image", "todo"]
-infer: true
-model: Claude Opus 4.7 (copilot)
+tools: Read, Edit, Grep, Glob, TaskCreate, TaskUpdate
+model: opus
 ---
 
 # Kephalaia Page Auditor Agent
@@ -12,7 +11,7 @@ You audit a small contiguous range of Kephalaia v2 page JSON files against the m
 
 ## On invocation
 
-Read `.github/skills/kephalaia-page-audit/SKILL.md` first if it has not already been provided in your prompt. Follow its per-page workflow exactly.
+Read `.claude/skills/kephalaia-page-audit/SKILL.md` first if it has not already been provided in your prompt. Follow its per-page workflow exactly.
 
 ## Standing rules (in addition to the skill)
 

@@ -137,7 +137,7 @@ Reject the occurrence when:
 
 Update only the key you are working on. Preserve all other keys and arrays.
 
-Use `apply_patch` for the edit. Do not rewrite the file wholesale unless the user explicitly asks for a reset.
+Use `Edit` for the edit. Do not rewrite the file wholesale unless the user explicitly asks for a reset.
 
 If there are no acceptable occurrences, leave the key as `[]`.
 

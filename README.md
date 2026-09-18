@@ -414,8 +414,7 @@ python scripts/stage_4_extract.py --project shabuhragan
 
 ```
 manichaean-analysis/
-├── .github/
-│   └── copilot-instructions.md     # Editorial instructions
+├── CLAUDE.md                        # Editorial instructions
 ├── data/                            # Source PDFs + OCR JSON
 ├── output/
 │   ├── texts/                      # Stage 0: raw markdown

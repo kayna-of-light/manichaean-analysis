@@ -5,6 +5,8 @@ description: "Use when: reviewing unreviewed Coptic OCR scan-page markdown expor
 
 # Coptic OCR Reviewer Skill
 
+This is the **text-only export review** skill. For user-authorized visual inspection and local edits in the browser app, use [Manual Reviewer browser-assisted review](../manual-reviewer-browser-review/SKILL.md). That separate workflow does not expand this skill's p010–p029 training boundary.
+
 Use this skill to review unreviewed scan-page OCR markdown exports from the printed Kephalaia paper/edition:
 
 `temp/manual_reviewer_markdown_export/out`
