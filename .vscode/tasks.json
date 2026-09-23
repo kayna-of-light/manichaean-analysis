@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start Manual Reviewer",
+			"type": "shell",
+			"command": "pnpm",
+			"args": [
+				"--dir",
+				"manual_reviewer",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
