@@ -1,0 +1,976 @@
+{
+  "teaching": 96,
+  "total_gaps_in_core": 49,
+  "gaps_restored": 17,
+  "gaps_unrestorable": 32,
+  "restoration_note": "Teaching distinguishes a visible register of understanding (the eye and what it sees by day) from a hidden register (the four operations carried within the body of the natural mind), with the pupil as gate between upper and lower places. The first half (5183–5195) is well-preserved with editor restorations confirmed by formula and grammar: ⲛⲉⲓⲛⲉ 'likenesses,' ⲍⲱⲱϩ 'itself,' ⲡⲛⲟⲩⲛ 'the Deep,' ⲧⲏⲣⲟⲩ 'all,' ⲓ̈ⲱⲣⲍ̄/ⲓ̈ⲱⲣⲭ̄ 'see,' ⲁⲧⲟⲩϣⲏ 'to the night,' ⲙⲩⲥⲧⲏⲣⲓⲟⲛ. The closing line gives ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'First Man' coming forth from him in whom every thing is known. The middle stretch (5196–5204) is severely damaged; only the structural anchors remain (the gate ⲡⲣⲟ; lower place ⲙⲡⲓⲧⲛⲉ; four climes; upper place ⲡⲥⲁⲛⲧⲡⲉ; Living Spirit/moment), so most gaps there are honestly unrestorable.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5185,
+      "chapter": 111,
+      "line": 3,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛ",
+      "basis": "Editor's restoration; ⲁⲛ as 'also/again' linking the eye-types to a further register where they also belong.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5185,
+      "chapter": 111,
+      "line": 3,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Only 3 chars with partial ⲙ; could be ⲙ̄ⲡⲕⲉ-, ⲙⲁⲩ, ⲙⲛ̄ etc. Insufficient context to fix the destination of belonging.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 2,
+      "section": 5186,
+      "chapter": 111,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Editor's restoration; completes ⲛⲉⲓⲛⲉ 'likenesses' (Lyc plural of ⲡⲉⲓⲛⲉ); demanded by the surrounding spelling.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5187,
+      "chapter": 111,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor's restoration; definite article ⲛ̄- before ⲣⲱⲙⲉ 'men' (plural).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 5187,
+      "chapter": 111,
+      "line": 5,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars with broken trace ⲛⲕ in middle; the qualifier of 'men who see while being seen' is not constrained beyond that.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 5,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Only 2 chars before -ⲣⲓⲥ; tail of an unidentifiable preceding word, possibly Greek-derived.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 6,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars between 'four hidden in them' and ⲥⲉⲏⲡ 'they belong'; no formula constrains the link.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after ⲥⲉⲏⲡ; could be a preposition (ⲁⲣⲁⲩ, ⲁⲡⲕⲉ-) but not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 5189,
+      "chapter": 111,
+      "line": 7,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars before ϣ — possibly ⲡⲗⲱⲃϣ̄ 'mingling' or a similar element-name, but not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 5189,
+      "chapter": 111,
+      "line": 7,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "15 chars marked zerstört; entire object of the locative phrase is destroyed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 5190,
+      "chapter": 111,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲱ",
+      "basis": "Editor's restoration; completes ⲍⲱⲱϩ (Lyc reflexive 'itself'), agreeing with the parallel ⲡⲟⲩⲁⲓⲛⲉ ⲁⲉ ⲍⲱⲱϩ in line 9.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5190,
+      "chapter": 111,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲛ",
+      "basis": "Editor's restoration; completes ⲡⲛⲟⲩⲛ 'the Deep,' the standard Manichaean cosmic pole paired with the Height to which the Darkness belongs.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 5191,
+      "chapter": 111,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲣⲟⲩ",
+      "basis": "Editor's restoration; completes ⲧⲏⲣⲟⲩ 'all of them,' standard locution after ⲍⲛ̄ ⲛⲉⲓ̈ ⲧ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 5193,
+      "chapter": 111,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ̈ⲱⲣ",
+      "basis": "Editor's restoration; completes ⲓ̈ⲱⲣⲍ̄ 'see,' the verb that wraps to the next line beginning ⲣⲍ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 5194,
+      "chapter": 111,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ ⲉϩⲓ̈ⲱ",
+      "basis": "Editor's restoration; completes the construction ⲉϩⲓ̈ⲱⲣⲍ̄ 'while seeing,' picking up the verb from line 11.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 5194,
+      "chapter": 111,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ ⲙⲁ",
+      "basis": "Editor's restoration; ⲁⲧⲟⲩϣⲏ 'to the night' + negative ⲙⲁ-ϥ/ⲙⲁ-ⲥ 'she does (not see),' completed by the visible final ⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 5195,
+      "chapter": 111,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ̈ⲱⲣⲭ",
+      "basis": "Editor's restoration; ⲓ̈ⲱⲣⲭ (Lyc variant of ⲓ̈ⲱⲣⲍ̄ 'see') completing the negation 'she does not see.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 5195,
+      "chapter": 111,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲟⲛ",
+      "basis": "Editor's restoration; completes the Greek loanword ⲙⲩⲥⲧⲏⲣⲓⲟⲛ 'mystery.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars introducing the answer; could be 'ⲡⲉⲓ̈ⲍⲱⲃ ⲇⲉ' or a longer formula, but not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 19,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars; verb governing the pupil's action, but no formula fixes it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 20,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after ⲟⲩ; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 21,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars opening the apodosis introducing 'the mystery'; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 22,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars after article ⲡ-; the noun governed by 'the mystery of'; not fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars before -ⲙⲉ; possibly ⲣⲱ for ⲣⲱⲙⲉ 'man,' but with so much surrounding loss the word identity is not fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 24,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars at line-end; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars opening; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 26,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars between ⲉⲕ and ⲡⲉ ⲡⲣⲟ 'is the gate'; not fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 27,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after ⲟⲩ; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars between ⲍⲛ and ⲃⲁⲗ; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars at line-end; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 30,
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "21 chars; opening of 'X of the lower place'; far too long to constrain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 31,
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars before -ⲛⲧ-; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 32,
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars at line-end; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 33,
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars opening; preposition+article governing the four climes, but not fixed (could be ⲍⲛ̄ⲡ-, ⲁⲡ-, ϣⲁⲡ-).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 34,
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓ",
+      "basis": "Editor's restoration; completes ⲉⲡⲉⲓⲁⲏ 'unto this end' (per glossary).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲣⲏⲧⲉ",
+      "basis": "4 chars after ⲡⲡ; ⲡⲡⲣⲏⲧⲉ 'the manner' fits the slot ('in the manner of...'); other options (ⲡⲱⲛⲍ̄, ⲡⲗⲁⲛⲏ) less idiomatic here. Low confidence.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 36,
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars opening; subject of 'X forth from the upper place'; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 37,
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars before ⲁⲃⲁⲗ; not fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 38,
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars at line-end; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 39,
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars before ⲛⲁⲟ̄ 'great'; subject phrase not fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 40,
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4 chars after ⲛⲁⲟ̄; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 41,
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars at line-end after ⲁⲩⲭⲉ-; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 42,
+      "section": 5203,
+      "chapter": 111,
+      "line": 22,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars; -ⲧⲁⲛⲧ likely qualitative of ⲧⲛ̄ⲧⲱⲛ 'be likened,' but the subject of comparison is lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 43,
+      "section": 5203,
+      "chapter": 111,
+      "line": 22,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars after ⲁⲡⲓⲧ-; completes ⲁⲡⲓⲧⲛⲉ 'downward' but the clause continuation is destroyed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 44,
+      "section": 5204,
+      "chapter": 111,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars opening; not constrained even with ⲡⲛⲉⲩ following.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 45,
+      "section": 5204,
+      "chapter": 111,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars between ⲙ and ⲉⲧⲁⲛⲍ̄ 'who lives'; could be ⲡⲡⲛ̄ⲁ̄ giving ⲙ̄ⲡⲡⲛ̄ⲁ̄ ⲉⲧⲁⲛⲍ̄ 'of the Living Spirit,' but reading too uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 46,
+      "section": 5205,
+      "chapter": 111,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡϣ",
+      "basis": "Editor's restoration; completes ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'First Man,' the standard cosmogonic title.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 5205,
+      "chapter": 111,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor's restoration; middle vowel of ⲣⲱⲙⲉ 'man.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 5205,
+      "chapter": 111,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor's restoration; final ⲛ of ⲁϥⲥⲟⲩⲛ 'he knew,' followed by ⲍⲱⲃ ⲛⲓⲙ 'every thing.'",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5185,
+      "chapter": 111,
+      "line": 3,
+      "core_english": "within them; for they belong also {0}."
+    },
+    {
+      "section": 5186,
+      "chapter": 111,
+      "line": 4,
+      "core_english": "There are four likenesses existing in"
+    },
+    {
+      "section": 5187,
+      "chapter": 111,
+      "line": 5,
+      "core_english": "the men who see while being themselves seen, {1}"
+    },
+    {
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "core_english": "{2} — the four hidden within them; {3} they belong {4}"
+    },
+    {
+      "section": 5189,
+      "chapter": 111,
+      "line": 7,
+      "core_english": "{5}, indeed, which is in the {6},"
+    },
+    {
+      "section": 5190,
+      "chapter": 111,
+      "line": 8,
+      "core_english": "is itself hidden to the fire, while the Darkness belongs to the Deep."
+    },
+    {
+      "section": 5191,
+      "chapter": 111,
+      "line": 9,
+      "core_english": "But the Light himself, who watches what is hidden in all of them,"
+    },
+    {
+      "section": 5193,
+      "chapter": 111,
+      "line": 11,
+      "core_english": "Why does the pupil of the eye habitually see"
+    },
+    {
+      "section": 5194,
+      "chapter": 111,
+      "line": 12,
+      "core_english": "while seeing, indeed, during the day, but reaching the night she does"
+    },
+    {
+      "section": 5195,
+      "chapter": 111,
+      "line": 13,
+      "core_english": "not see? What then does this matter signify, of what mystery?"
+    },
+    {
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "core_english": "{7} — let the pupil of the eye {8} them {9}"
+    },
+    {
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "core_english": "{10} the mystery of the {11}, the {12} {13}"
+    },
+    {
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "core_english": "{14} is the gate, {15} forth {16}"
+    },
+    {
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "core_english": "{17} of the lower place {18}"
+    },
+    {
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "core_english": "{19} of the other four climes, until this end, in the {20}"
+    },
+    {
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "core_english": "{21} forth from the upper place, {22}"
+    },
+    {
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "core_english": "{23} great {24}, they"
+    },
+    {
+      "section": 5203,
+      "chapter": 111,
+      "line": 22,
+      "core_english": "{25} likened — they sent down {26}"
+    },
+    {
+      "section": 5204,
+      "chapter": 111,
+      "line": 23,
+      "core_english": "{27} the moment {28} who lives."
+    },
+    {
+      "section": 5205,
+      "chapter": 111,
+      "line": 24,
+      "core_english": "The First Man came forth from him, and he knew every thing."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5185,
+      "chapter": 111,
+      "line": 3,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic destination of belonging is lost (only partial ⲙ visible)."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5187,
+      "chapter": 111,
+      "line": 5,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char qualifier of 'men who see while being seen' is destroyed."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "unrestorable",
+      "basis": "Tail -ⲣⲓⲥ of an unidentified preceding word."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "unrestorable",
+      "basis": "6 chars between 'four hidden in them' and 'they belong'; not constrained."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5188,
+      "chapter": 111,
+      "line": 6,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char tail after 'they belong'; the destination is lost."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 5189,
+      "chapter": 111,
+      "line": 7,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject ending in -ϣ is unidentifiable."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 5189,
+      "chapter": 111,
+      "line": 7,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "unrestorable",
+      "basis": "15-char object of 'in the X' marked zerstört."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char opening of the answer is destroyed."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb governing 'the pupil of the eye' is lost."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 5196,
+      "chapter": 111,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char tail not constrained."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        21
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char opening leading into 'the mystery' is destroyed."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "Noun governed by 'mystery of' is lost."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word ending in -ⲙⲉ (possibly ⲣⲱⲙⲉ 'man') not fixed by surviving traces."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 5197,
+      "chapter": 111,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char line-end not constrained."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        25,
+        26
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject identified as 'the gate' but its qualifier (the ⲉⲕ-... segment) is lost."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27,
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "Phrase between ⲟⲩ- and -ⲃⲁⲗ 'forth' is destroyed."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 5198,
+      "chapter": 111,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char line-end not constrained."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "unrestorable",
+      "basis": "21-char opening before 'of the lower place'; far too long to constrain."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 5199,
+      "chapter": 111,
+      "line": 18,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        31,
+        32
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing material after 'lower place' is destroyed."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        33
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opening preposition/article phrase governing 'the other four climes' is lost."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 5200,
+      "chapter": 111,
+      "line": 19,
+      "proposed_english": "manner",
+      "coptic_gap_refs": [
+        35
+      ],
+      "confidence": "low",
+      "basis": "If Coptic ⲡⲡⲣⲏⲧⲉ ('the manner') is correct, English reads 'in the manner.' Low confidence; could equally be 'in the life' or another noun."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        36,
+        37
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of 'forth from the upper place' is lost."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 5201,
+      "chapter": 111,
+      "line": 20,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        38
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing 7 chars destroyed."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        39,
+        40
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject phrase containing ⲛⲁⲟ̄ 'great' is otherwise lost."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 5202,
+      "chapter": 111,
+      "line": 21,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb after ⲁⲩⲭⲉ- not constrained."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 5203,
+      "chapter": 111,
+      "line": 22,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        42
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of comparison preceding -ⲧⲁⲛⲧ ('likened') is destroyed."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 5203,
+      "chapter": 111,
+      "line": 22,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        43
+      ],
+      "confidence": "unrestorable",
+      "basis": "Continuation after 'sent down' is destroyed."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 5204,
+      "chapter": 111,
+      "line": 23,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        44
+      ],
+      "confidence": "unrestorable",
+      "basis": "9-char opening before ⲡⲛⲉⲩ 'the moment' is lost."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 5204,
+      "chapter": 111,
+      "line": 23,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        45
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word linking 'the moment' and 'who lives' is destroyed; possibly the Living Spirit, but not fixed."
+    }
+  ]
+}

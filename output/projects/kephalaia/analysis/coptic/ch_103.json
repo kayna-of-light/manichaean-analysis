@@ -1,0 +1,84 @@
+{
+  "chapter_number": 103,
+  "manuscript_pages": "257,8 - 258,3",
+  "coptic_tokens": 396,
+  "greek_loanwords": {
+    "total_density_pct": 4.29,
+    "cosmological_density_pct": 2.02,
+    "ecclesiastical_density_pct": 1.77,
+    "cosmological_ratio": 0.533,
+    "cosmological_count": 8,
+    "ecclesiastical_count": 7,
+    "general_count": 2,
+    "total_greek": 17,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 3,
+      "ⲛⲟⲩⲥ": 4,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 4,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲁⲅⲁⲡⲏ": 1,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 0,
+    "sahidic_count": 78,
+    "total_dialect_markers": 78,
+    "subachmimic_ratio": 0.0,
+    "subachmimic_forms": [],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×14",
+      "ϩⲛ̄×11",
+      "ⲁϩ×25",
+      "ϩⲓ×6",
+      "ϩⲁ×4",
+      "ϩⲏⲧ×6",
+      "ϩⲱⲃ×4",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 69,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 7,
+    "bracketed_restorations": 42,
+    "empty_brackets": 3,
+    "leer_markers": 3
+  },
+  "english_classification": {
+    "chapter_number": 103,
+    "chapter_title": "Concerning the Five Wonders that the Light Mind shall display in the Elect",
+    "total_paragraphs": 9,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter contains no extractable substrate. Teaching purity is extremely low (0.143). The entire chapter describes five qualities of the Manichaean elect person indwelt by the Light Mind: wisdom/preaching, faith, peace in the assembly, love of brethren, and fear of excommunication. While the Light Mind is a cosmic entity, every mapping points outward from the cosmic system into the institutional church community — the elect's preaching, others believing, the assembly, brothers and sisters, legal excommunication from the church. No mapping stays cosmos→cosmos. The chapter is institutional teaching about community roles, framed by dialogue formula and closed with exhortation. The five-fold enumeration form could theoretically reflect a substrate teaching about five faculties of Nous, but the content as transmitted is entirely about ecclesial practice, with no cosmic correspondences preserved.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "institutional": 6,
+      "exhortation": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.00 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

@@ -1,0 +1,543 @@
+{
+  "teaching": 34,
+  "total_gaps_in_core": 35,
+  "gaps_restored": 29,
+  "gaps_unrestorable": 6,
+  "restoration_note": "The teaching is a numbered litany of works the Lord performs within the self's architecture, each introduced by 'ⲡⲙⲁⲍ-N ⲭⲉ ⲁ...' (the Nth, because...). The ordinal scaffolding (second through tenth) and the recurring formula 'ⲭⲉ ⲁ' tightly constrain most gaps; partial traces (ⲁⲙⲧ → ⲙⲁⲍϣⲁⲙⲧ; ⲁⲍⲥⲁⲩ → ⲙⲁⲍⲥⲁⲩ; ⲟⲩⲛ → ⲙⲁⲍϣⲙⲟⲩⲛ; ⲙⲏⲧ → ⲙⲁⲍⲙⲏⲧ; ⲉⲥⲃⲉⲩ → ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ; ⲥⲙⲟⲥ → ⲙⲉⲧⲁⲗⲗⲁⲥⲥⲙⲟⲥ; ⲍ̄ⲱⲛⲏ → ⲧⲍⲱⲛⲏ) lock in the technical vocabulary. A small number of content-heavy lacunae (the predicate of the fourth work {10}, the close of the fifth and the subject of the sixth {13}/{15}, the trailing prepositional phrase after night/day separation {27}) are too weakly constrained to restore honestly.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 1925,
+      "chapter": 34,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲉ ⲁ ⲡ",
+      "basis": "Standard litany opener ⲭⲉ ⲁ + def. article before ⲛⲁⲃ ⲛⲉⲕⲱⲧ (Great Builder).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1925,
+      "chapter": 34,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓ",
+      "basis": "ⲉⲓ ⲁⲃⲁⲗ idiom 'come forth'; verb required before ⲁⲕⲱⲧ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 1925,
+      "chapter": 34,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡⲁⲓⲱⲛ",
+      "basis": "ⲱⲛ remains visible at end; lexicon 'New Aeon' = ⲡⲁⲓⲱⲛ ⲛⲃⲣ̄ⲣⲉ; the Great Builder rebuilds the aeon anew.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 1926,
+      "chapter": 34,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙⲁⲍⲥⲛⲉⲩ",
+      "basis": "Ordinal 'second' in litany; matches enumeration through tenth.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 1926,
+      "chapter": 34,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ ⲡⲭ",
+      "basis": "ⲥⲉ preserved completes ⲡⲭⲥⲉ 'the Height'; ships of doctrine fill the upper reaches of the rational.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙⲁⲍϣ",
+      "basis": "ⲁⲙⲧ preserved completes ⲙⲁⲍϣⲁⲙⲧ 'third'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": null,
+      "basis": "Only ⲧⲉ visible; could be a numeric/locative qualifier of ⲧⲣⲟⲭⲟⲥ but no parallel locks it. Better not to invent.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄",
+      "basis": "Completes ⲛⲧⲛⲛⲁⲩ 'send forth' (lexicon for emanation).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Completes ⲡⲱⲛⲍ 'life'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 1928,
+      "chapter": 34,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡ",
+      "basis": "Directional preposition ⲁ- + def. article ⲡ- before ⲕⲁⲍ 'earth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 1928,
+      "chapter": 34,
+      "line": 9,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char content gap immediately after ⲭⲉ ⲁ; could be the verbal subject of the fourth work but no parallel constrains it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 11,
+      "section": 1929,
+      "chapter": 34,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙⲁⲍⲧⲟⲩ ⲡ",
+      "basis": "Ordinal 'fifth' (ⲙⲁⲍϯⲟⲩ) + predicative ⲡⲉ before ⲣⲱⲟⲩ 'gates'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 1929,
+      "chapter": 34,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "Completes ⲛⲣⲱⲟⲩ 'gates'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap with no traces; likely the close of the fifth work or a connective phrase, but unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙ̄",
+      "basis": "ⲁⲍⲥⲁⲩ preserved completes ⲙⲁⲍⲥⲁⲩ 'sixth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Partial ⲛⲉⲙ...ⲉ; uncertain — possibly a paired noun ('the gates likewise of X'), but no controlling parallel.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 16,
+      "section": 1931,
+      "chapter": 34,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲁⲩⲟⲩⲉ",
+      "basis": "Standard ⲟⲩⲱⲛ 'open' formula carried over from preceding line; ⲛ ⲙ̄ⲙⲁⲩ preserved.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 1931,
+      "chapter": 34,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲭⲛ̄",
+      "basis": "Lyc. ⲁϫⲛ̄ / ⲉϫⲛ 'upon, against' before ⲡⲥⲁⲣⲙⲉ 'the Error'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 1932,
+      "chapter": 34,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ ⲡ",
+      "basis": "Completes ⲙⲁⲍⲥⲁϣⲏ 'seventh' + predicative ⲡⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 1933,
+      "chapter": 34,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲛⲁⲃⲉ",
+      "basis": "Lexicon 'Sin' = ⲡⲛⲁⲃⲉ; spiritual reading: 'discrimination by which what is the Lord's is separated out from the self's forms' (Sin separated from the archons).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 20,
+      "section": 1933,
+      "chapter": 34,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲧⲗⲁⲩ",
+      "basis": "ⲃⲉ̄ visible suggests ⲗⲁⲩⲃⲉ 'rage/madness' as the disordered affect under which the archons operate; lexically possible but not securely fixed.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 21,
+      "section": 1933,
+      "chapter": 34,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲙⲁⲍ",
+      "basis": "Continues into next line ϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'of the Third Ambassador'; standard title from lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 1934,
+      "chapter": 34,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁⲙⲧ ⲙⲡⲣ",
+      "basis": "ⲉⲥⲃⲉⲩⲧⲏⲥ preserved completes ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ; with {21} forms ⲙ̄ⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'of the Third Ambassador'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 1934,
+      "chapter": 34,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏ",
+      "basis": "Internal letters of ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 1934,
+      "chapter": 34,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Completes ⲍⲉⲓⲉ 'fall' (cf. parallel ⲛ̄ⲍⲟⲩⲍⲉ ⲍⲉⲓⲉ in §1936).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 1935,
+      "chapter": 34,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙⲁⲍϣⲙ",
+      "basis": "ⲟⲩⲛ preserved completes ⲙⲁⲍϣⲙⲟⲩⲛ 'eighth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 1935,
+      "chapter": 34,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲁ ⲧⲟⲩ",
+      "basis": "Standard ⲭⲉ ⲁ formula + ⲧⲟⲩⲱⲏ 'night' (ⲱⲏ preserved).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 1935,
+      "chapter": 34,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char trailing phrase after ⲡⲱⲣⲭ ⲁⲃⲁⲗ; reading suggests 'from one another' but no traces fix it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 1936,
+      "chapter": 34,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲍⲉ",
+      "basis": "Sequence ⲛ̄ⲍⲟⲩⲍⲉ ⲍⲉⲓⲉ 'the abortions fell'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 1937,
+      "chapter": 34,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡⲓ",
+      "basis": "Completes ⲁⲡⲓⲧⲛⲉ 'downward' (lexicon: descent of failed self-products).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 1937,
+      "chapter": 34,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲍ",
+      "basis": "Completes ⲡⲙⲁⲍⲙⲏⲧ 'the tenth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 1937,
+      "chapter": 34,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲙⲉⲧⲁⲗⲗⲁ",
+      "basis": "ⲥⲙⲟⲥ preserved; lexicon 'metarrhismos/metallassmos' — transfer of states across the Zone.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 1937,
+      "chapter": 34,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲱⲡ",
+      "basis": "ⲉ preserved completes ϣⲱⲡⲉ 'come to be'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 1938,
+      "chapter": 34,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Preposition ⲍⲛ 'in' (ⲛ visible).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 1938,
+      "chapter": 34,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Def. article on ⲧⲍⲱⲛⲏ 'the Zone' (lexicon: complete circuit of the natural).",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 1925,
+      "chapter": 34,
+      "line": 6,
+      "core_english": "Because the Great Builder came forth, he built {0} anew."
+    },
+    {
+      "section": 1926,
+      "chapter": 34,
+      "line": 7,
+      "core_english": "The second, because the ships filled {1} in the heavens."
+    },
+    {
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "core_english": "The third, because the wheels {2} send forth the life."
+    },
+    {
+      "section": 1928,
+      "chapter": 34,
+      "line": 9,
+      "core_english": "to the earth and the worlds that are above. The fourth, because {3}."
+    },
+    {
+      "section": 1929,
+      "chapter": 34,
+      "line": 10,
+      "core_english": "The fifth is the gates of the ships which are opened inward."
+    },
+    {
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "core_english": "{4} The sixth is the gates likewise of {5}"
+    },
+    {
+      "section": 1931,
+      "chapter": 34,
+      "line": 12,
+      "core_english": "which are opened upon the Error."
+    },
+    {
+      "section": 1932,
+      "chapter": 34,
+      "line": 13,
+      "core_english": "The seventh is."
+    },
+    {
+      "section": 1933,
+      "chapter": 34,
+      "line": 14,
+      "core_english": "the Sin which you separated forth from the archons of the {6} of the"
+    },
+    {
+      "section": 1934,
+      "chapter": 34,
+      "line": 15,
+      "core_english": "Third Ambassador, after they fell upon the earth,"
+    },
+    {
+      "section": 1935,
+      "chapter": 34,
+      "line": 16,
+      "core_english": "The eighth, because the night and the day are separated forth {7}."
+    },
+    {
+      "section": 1936,
+      "chapter": 34,
+      "line": 18,
+      "core_english": "The ninth, because the abortions fell"
+    },
+    {
+      "section": 1937,
+      "chapter": 34,
+      "line": 19,
+      "core_english": "downward. The tenth, because the metallassmoi came to be"
+    },
+    {
+      "section": 1938,
+      "chapter": 34,
+      "line": 20,
+      "core_english": "in the Zone."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 1925,
+      "chapter": 34,
+      "line": 6,
+      "proposed_english": "the aeon",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "ⲙⲡⲁⲓⲱⲛ — the Great Builder rebuilds the aeon anew (lexicon: aeon = state in process)."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 1926,
+      "chapter": 34,
+      "line": 7,
+      "proposed_english": "the Height",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "high",
+      "basis": "ⲍⲛ ⲡⲭⲥⲉ — vessels of doctrine launched into the higher reaches of the rational."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 1927,
+      "chapter": 34,
+      "line": 8,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic qualifier of ⲧⲣⲟⲭⲟⲥ ('the wheels') unrecoverable; no English fill possible."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 1928,
+      "chapter": 34,
+      "line": 9,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "unrestorable",
+      "basis": "Predicate of the fourth work is lost; cannot be reconstructed without traces."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "unrestorable",
+      "basis": "Closing phrase of the fifth work is lost; six-char gap unconstrained."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 1930,
+      "chapter": 34,
+      "line": 11,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of the gates 'likewise of [...]' lost; only fragmentary ⲛⲉⲙ...ⲉ visible."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 1933,
+      "chapter": 34,
+      "line": 14,
+      "proposed_english": "rage",
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "low",
+      "basis": "ⲗⲁⲩⲃⲉ 'rage/madness' as the disordered affect organizing the archons; tentative reading from ⲃⲉ̄ trace."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 1935,
+      "chapter": 34,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing 4-char phrase after the separation of night and day cannot be securely restored."
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "chapter_number": 66,
+  "manuscript_pages": "164,9 - 165,24",
+  "coptic_tokens": 456,
+  "greek_loanwords": {
+    "total_density_pct": 3.51,
+    "cosmological_density_pct": 1.54,
+    "ecclesiastical_density_pct": 1.1,
+    "cosmological_ratio": 0.583,
+    "cosmological_count": 7,
+    "ecclesiastical_count": 5,
+    "general_count": 4,
+    "total_greek": 16,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 6,
+      "ⲥⲱⲙⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲙⲩⲥⲧⲏⲣⲓⲟⲛ": 3,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.88,
+    "dialogue_openings": 2,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 2,
+    "exhortation_markers": 0,
+    "total_formulaic": 4,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲡⲓⲫⲱⲥⲧⲏⲣ"
+      },
+      {
+        "type": "dialogue_opening",
+        "match": "ⲡⲓⲫⲱⲥⲧⲏⲣ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 46,
+    "sahidic_count": 31,
+    "total_dialect_markers": 77,
+    "subachmimic_ratio": 0.597,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×3",
+      "ⲍⲛ̄×3",
+      "ⲁⲍ×12",
+      "ⲍⲓ×2",
+      "ⲍⲁ×9",
+      "ⲍⲏⲧ×1",
+      "ⲍⲱⲃ×1",
+      "ⲍⲣⲏ×1",
+      "ⲍⲱⲡ×2",
+      "ⲍⲉ×4",
+      "ⲍⲁⲉ×2",
+      "ⲍⲁⲏ×3"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×5",
+      "ϩⲛ̄×4",
+      "ⲁϩ×9",
+      "ϩⲓ×1",
+      "ϩⲁ×2",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲡ×2",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 72,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 0,
+    "bracketed_restorations": 28,
+    "empty_brackets": 0,
+    "leer_markers": 3
+  },
+  "english_classification": {
+    "chapter_number": 66,
+    "chapter_title": "Concerning the Ambassador",
+    "total_paragraphs": 8,
+    "core_paragraphs": 5,
+    "core_percentage": 75,
+    "chapter_note": "Clean chapter structure: dialogue frame (¶1) → substrate teaching (¶2-6) → exhortation (¶7) → dialogue frame closure (¶8). The substrate core is a tightly structured cosmological correspondence teaching mapping two daily solar phenomena (sunrise/sunset) onto two terminal cosmic events (First Man's descent into Darkness / Last Statue's final ascent). Both sides of every mapping remain within the cosmic system. The teaching uses the natural solar cycle as a correspondential key to the entire cosmic drama — the 'second time' of mixture is the daylight between two eternal nights. The exhortation in ¶7 is a clear later addition applying the teaching to pastoral urgency. No editorial bridge material detected. The substrate dominates this chapter.",
+    "classification_distribution": {
+      "dialogue_frame": 2,
+      "substrate": 5,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (75%) with high cosmological Greek ratio (0.58)",
+      "CONCORDANT: English detected 2 dialogue_frame paragraph(s), Coptic confirms 2 dialogue opening(s)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 2,
+    "flag_count": 0
+  }
+}

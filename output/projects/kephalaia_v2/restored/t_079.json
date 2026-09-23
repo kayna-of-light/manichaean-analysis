@@ -1,0 +1,103 @@
+{
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4533,
+      "chapter": 79,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧ",
+      "basis": "Editor restoration of the feminine article + ordinal prefix yielding ⲧⲧⲙⲁϩⲥⲛⲉⲩ 'the second' (Lyc. fem. ordinal). This is a numbered teaching-point in a series ('the second [thing to grasp]') and the morphology is fully determined by the visible -ⲙⲁϩⲥⲛⲉⲩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4533,
+      "chapter": 79,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲁϩ",
+      "basis": "Standard Lycopolitan directional 'unto him/it' after ⲛⲏⲩ ⲁϩⲟⲩⲛ ('come in'). The reading places the soul receiving under the Lord's ordering, so 'comes in unto him' fits both the grammar and the spiritual arc of daily reception of influx.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4533,
+      "chapter": 79,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲛⲟ",
+      "basis": "Letter-completion of the Greek loanword οἰκονομία ('dispensation') split across the line break: ⲧⲟⲓⲕ-[ⲟⲛⲟ]-ⲙⲓⲁ (continued at the start of section 4534). Fully determined by the visible letters on either side.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4534,
+      "chapter": 79,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁ",
+      "basis": "Letter-completion of the Greek loan verb καθαρίζω 'to cleanse' split across the line break: ⲛⲥ-[ⲕⲁ]-ⲑⲁⲣⲓϩⲉ (continued at the start of section 4535). 'Cleanses' is the second member of the purification triad ⲧⲟⲩⲃⲟ / ⲕⲁⲑⲁⲣⲓⲍⲉ / ⲥⲱⲧϥ̄ that the reading describes.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4535,
+      "chapter": 79,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓⲱ",
+      "basis": "Editor restoration completing Lyc. ⲥⲉⲓⲱⲉ (Sah. ⲉⲓⲱ) 'wash, wash forth.' Fits the third element of the purification series ⲧⲟⲩⲃⲟ – ⲕⲁⲑⲁⲣⲓⲍⲉ – ⲥⲱⲧϥ̄ – ⲉⲓⲱⲉ ⲁⲃⲁⲗ before the object 'the mingling.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4535,
+      "chapter": 79,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Genitive/connective preposition ⲙ̄ before ⲡⲕⲉⲕⲉ at the start of the next segment, giving ⲧⲥⲩⲧⲕⲣⲁⲥⲓⲥ ⲙ̄ⲡⲕⲉⲕⲉ 'the mingling of the Darkness.' Determined by what follows in section 4536 and by the standard noun-of-noun construction.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4533,
+      "chapter": 79,
+      "line": 8,
+      "core_english": "The second: that the soul which comes in {0} through the dispensation"
+    },
+    {
+      "section": 4534,
+      "chapter": 79,
+      "line": 9,
+      "core_english": "of nourishment day by day — habitually she purifies and cleanses,"
+    },
+    {
+      "section": 4535,
+      "chapter": 79,
+      "line": 10,
+      "core_english": "and filters, and washes forth the mingling of"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4533,
+      "chapter": 79,
+      "line": 8,
+      "proposed_english": "unto him",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Renders the directional ⲁⲣⲁϩ restored at Coptic gap 1: the soul comes in 'unto him' — i.e. enters under the Lord's ordering as the daily reception of influx that the reading describes. The other Coptic gaps in this segment (0 and 2) are pure morphology / word-internal letter-fills whose English values ('The second' and 'dispensation') are already carried by the visible Coptic on either side and need no separate placeholder."
+    }
+  ],
+  "gaps_restored": 6,
+  "gaps_unrestorable": 0,
+  "total_gaps_in_core": 6,
+  "restoration_note": "Teaching 79 describes the daily-reception model of regeneration: the soul, carrying within herself the whole archonic host (4532), receives nourishment day by day and through that ongoing influx purifies, cleanses, filters and washes forth the mingled Darkness she had claimed. The six gaps are all editor restorations of high-confidence type: an ordinal prefix (ⲧⲧ-), a directional ('unto him'), and four letter-completions of words split across line breaks — Greek οἰκονομία, καθαρίζω, the Lyc. verb ⲥⲉⲓⲱⲉ, and the genitive ⲙ̄. The purification triad ⲧⲟⲩⲃⲟ / ⲕⲁⲑⲁⲣⲓⲍⲉ / ⲥⲱⲧϥ̄ / ⲉⲓⲱⲉ ⲁⲃⲁⲗ structurally constrains the verbal fills, and the closing ⲡⲕⲉⲕⲉ ⲉⲧⲙⲁϫⲧ̄ ⲁϩⲟⲩⲛ confirms 'the mingling of the Darkness' as the object washed forth. Nothing was left unrestorable.",
+  "teaching": 79
+}

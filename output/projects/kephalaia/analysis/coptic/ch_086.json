@@ -1,0 +1,105 @@
+{
+  "chapter_number": 86,
+  "manuscript_pages": "213,21 - 216,30",
+  "coptic_tokens": 896,
+  "greek_loanwords": {
+    "total_density_pct": 2.57,
+    "cosmological_density_pct": 0.45,
+    "ecclesiastical_density_pct": 0.56,
+    "cosmological_ratio": 0.444,
+    "cosmological_count": 4,
+    "ecclesiastical_count": 5,
+    "general_count": 14,
+    "total_greek": 23,
+    "cosmological_words": {
+      "ⲛⲟⲩⲥ": 2,
+      "ⲥⲱⲙⲁ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.22,
+    "dialogue_openings": 1,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 1,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲗⲟⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 124,
+    "sahidic_count": 66,
+    "total_dialect_markers": 190,
+    "subachmimic_ratio": 0.653,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×20",
+      "ⲍⲛ̄×14",
+      "ⲁⲍ×26",
+      "ⲍⲓ×15",
+      "ⲍⲁ×21",
+      "ⲍⲏⲧ×19",
+      "ⲍⲱⲃ×2",
+      "ⲍⲁⲗ×3",
+      "ⲍⲉ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×11",
+      "ϩⲛ̄×10",
+      "ⲁϩ×24",
+      "ϩⲁ×6",
+      "ϩⲏⲧ×5",
+      "ϩⲱⲃ×1",
+      "ϩⲁⲗ×1",
+      "ϩⲉ×5"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 136,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 22,
+    "bracketed_restorations": 106,
+    "empty_brackets": 13,
+    "leer_markers": 11
+  },
+  "english_classification": {
+    "chapter_number": 86,
+    "chapter_title": "The Chapter of the Man who asks: Why [am] I sometimes at peace, and troubled at other times?",
+    "total_paragraphs": 12,
+    "core_paragraphs": 6,
+    "core_percentage": 50,
+    "chapter_note": "The chapter divides cleanly into an extended dialogue-frame question (¶1-5) and a cosmological teaching answer (¶6-11). The substrate teaching is distinctive: it maps psychic disturbance and peace to two cosmic mechanisms — (1) stellar/archontic influence via roots and birth-signs, and (2) the light/dark ratio in nourishment, including a transmigration doctrine about 'justified souls' whose 'dues have ceased' entering through food. Both mechanisms stay entirely within the cosmic system. Gardner flags the 'dues have ceased' passage as potentially Buddhist-influenced (karmic consequences). The dialogue frame is unusually elaborate — three paragraphs describing the disciple's experiential states. ¶4 introduces Manichaean institutional practices (fasting, psalms, prayer) into the question. The seam flag on ¶11 is a false positive — the paragraph recaps substrate conduit-teaching without institutional application. Negative editorial fatigue score and increasing substrate density in the second half confirm the teaching core is concentrated in ¶6-11.",
+    "classification_distribution": {
+      "dialogue_frame": 6,
+      "mixed": 3,
+      "substrate": 3
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 6 dialogue_frame paragraph(s), Coptic confirms 1 dialogue opening(s)"
+    ],
+    "discordance_flags": [
+      "NOTABLE: Coptic has 1 blessing formula(s) and 0 exhortation marker(s), but English classified 0 paragraphs as exhortation"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

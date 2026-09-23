@@ -1,0 +1,96 @@
+{
+  "chapter_number": 5,
+  "manuscript_pages": "(28,1 - 30,11)",
+  "coptic_tokens": 637,
+  "greek_loanwords": {
+    "total_density_pct": 2.67,
+    "cosmological_density_pct": 1.73,
+    "ecclesiastical_density_pct": 0.31,
+    "cosmological_ratio": 0.846,
+    "cosmological_count": 11,
+    "ecclesiastical_count": 2,
+    "general_count": 4,
+    "total_greek": 17,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 6,
+      "ⲁⲣⲭⲏ": 2,
+      "ⲥⲱⲙⲁ": 2,
+      "ⲅⲉⲛⲟⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 76,
+    "sahidic_count": 62,
+    "total_dialect_markers": 138,
+    "subachmimic_ratio": 0.551,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×6",
+      "ⲍⲛ×14",
+      "ⲍⲛ̄×12",
+      "ⲁⲍ×17",
+      "ⲍⲓ×3",
+      "ⲍⲁ×6",
+      "ⲍⲏⲧ×7",
+      "ⲍⲣⲏ×2",
+      "ⲍⲉ×5",
+      "ⲍⲁⲉ×1",
+      "ⲍⲁⲏ×3"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×2",
+      "ϩⲛ̄×2",
+      "ⲁϩ×23",
+      "ϩⲓ×7",
+      "ϩⲁ×11",
+      "ϩⲏⲧ×4",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×10"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 115,
+    "damaged_lines": 2,
+    "lacunae_density": 0.017,
+    "dot_sequences": 38,
+    "bracketed_restorations": 100,
+    "empty_brackets": 4,
+    "leer_markers": 8
+  },
+  "english_classification": {
+    "chapter_number": 5,
+    "chapter_title": "Concerning Four Hunters of Light and Four of Darkness",
+    "total_paragraphs": 12,
+    "core_paragraphs": 9,
+    "core_percentage": 73,
+    "chapter_note": "The substrate is a well-preserved four-fold parallel enumeration mapping cosmic agents to hunter correspondences (net, ship, sea). Both light and dark series follow the same structural template. The substrate is dominant in the light hunters (except P4 where 'his holy church' intrudes) and in the first three dark hunters. The fourth dark hunter (P11) is almost entirely overwritten by editorial bridge material identifying 'every sect' and 'erroneous teaching' in the contemporary world. Two exhortation beatitudes close each series. The substrate vocabulary drops sharply in the second half, consistent with editorial fatigue replacing the fourth dark hunter's cosmic content with polemical application.",
+    "classification_distribution": {
+      "mixed": 3,
+      "substrate": 6,
+      "exhortation": 2,
+      "dialogue_frame": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (73%) with high cosmological Greek ratio (0.85)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

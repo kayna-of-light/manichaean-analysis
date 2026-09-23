@@ -1,0 +1,532 @@
+{
+  "teaching": 70,
+  "total_gaps_in_core": 29,
+  "gaps_restored": 29,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching describes the twelve zodia as the complete circuit of states the soul cycles through under the self's organization, the five wandering planets as particular self-loves moving among them, the two anabibazons as the dry/moist (masculine/feminine) registers of self-love, and the sun and moon as not strangers to the structure but reckoned in by the necessity of the economy so that light may enter the natural mind. Restoration is heavily constrained because the teaching contains its own structural summary (§§4138-4151), giving direct parallels for the catalogue (especially §4139 ⲛⲧⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ ⲁⲃⲁⲗ ⲙⲡϯⲟⲩ ⲛⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ for {1}). Most gaps are orthographic line-break completions of Greek zodiac names (Aries, Virgo, Scorpio, Taurus, Pisces, ⲥⲫⲁⲓⲣⲁ, etc.) or standard formulae (ⲙⲛ̄, ⲇⲉ ⲍⲱⲱϥ, ⲡⲓⲙⲛ̄ⲧⲥⲛⲁⲩⲥ). The Water-world triad needed Pisces ({6}) to complete a 12-count when Smoke=2, Fire=2, Wind=3, Water=3, Darkness=2. The short parallel formula ⲣⲙⲛⲧⲃⲟⲟⲛⲉ ⲛⲓⲙ ⲍⲓ ⲕⲁⲕⲓⲁ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ from §4111 supplies {10}-{11}. The trace ⲛⲉ...ⲩ at {9} is the only weakly-constrained gap; a phrase completing -ⲟⲛⲉ (from ⲧⲙⲛⲧⲃⲟⲟⲛⲉ) and starting a new clause is plausible but not certain.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4080,
+      "chapter": 69,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Object suffix completing ⲁϩⲕⲁⲧϩ-ⲟⲩ 'has bound them' from the previous line (§4079 ends ⲁϩⲕⲁⲧϩ). Standard 3pl object suffix.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4087,
+      "chapter": 69,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ",
+      "basis": "Direct parallel in §4139-4140 of this same teaching: ⲛⲧⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ ⲁⲃⲁⲗ ⲙⲡϯⲟⲩ ⲛⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ ⲁⲩⲙⲁⲣⲟⲩ ⲍⲛ̄ ⲧⲟⲫⲁⲓⲣⲁ — 'they were molded out of the five worlds of darkness; they were bound in the sphere.' This explicit summary supersedes the editor's ⲧⲁⲕⲙⲟⲩ proposal, which has no parallel in the corpus. ⲡⲗⲁⲥⲥⲉ is the corpus's standard verb for the self's forming of the natural mind.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4088,
+      "chapter": 69,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲫⲁⲓⲣⲁ",
+      "basis": "Completes ⲧⲥⲫⲁⲓⲣⲁ 'the sphere' (Greek σφαῖρα) split across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4089,
+      "chapter": 69,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ̄",
+      "basis": "Standard conjunction joining the two zodiac-signs of the Smoke-world; pairs Gemini (ⲡⲁⲓⲁⲩⲙⲟⲥ at end of §4088) with Sagittarius (ⲡⲧⲟⲝⲟⲧⲏⲥ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4092,
+      "chapter": 69,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲡ",
+      "basis": "Completes ⲉⲩ-ⲏⲡ 'they belong/are reckoned' split across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4093,
+      "chapter": 69,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ",
+      "basis": "Standard conjunction in zodiac listing, joining the third Water-world sign to Cancer+Virgo.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4093,
+      "chapter": 69,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲓⲭⲑⲩⲥ",
+      "basis": "Pisces completes the Water-world triplet (Cancer+Virgo+Pisces). Confirmed by §4121 ⲡⲓⲭⲑⲩⲥ ⲙⲛ̄ ⲡⲕⲁⲣⲕⲓⲛⲟⲥ where Pisces is grouped with Cancer. The 12-count requires Water=3 since Smoke=2, Fire=2, Wind=3, Darkness=2.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 4094,
+      "chapter": 69,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ̄",
+      "basis": "Standard conjunction pairing Capricorn (ⲡⲁⲓⲅⲟⲕⲉⲣⲱⲥ at end of §4093) with Scorpio in the Darkness-world.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 4095,
+      "chapter": 69,
+      "line": 36,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲛ̄ⲧⲥⲛⲁⲩⲥ",
+      "basis": "Completes the summary 'these are the twelve archons of wickedness'; ⲙⲛⲧⲥⲛⲁⲩⲥ '12' is the standard count for the zodia and matches the lexicon entry 'twelve zodia bound in the sphere'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 4096,
+      "chapter": 69,
+      "line": 37,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲛⲉ ⲛⲏⲩ ⲁⲃⲁⲗ ⲛϩⲏⲧⲟⲩ",
+      "basis": "Completes -ⲟⲛⲉ from preceding ⲧⲙⲛⲧⲃⲟ-, giving ⲧⲙⲛⲧⲃⲟⲟⲛⲉ 'wickedness'; the trace ⲛⲉ...ⲩ at est. 12 chars admits ⲛⲏⲩ ('comes') ⲁⲃⲁⲗ ⲛϩⲏⲧⲟⲩ ('forth out of them') as a habitual relative clause matching ⲛⲉⲧⲉⲙⲁⲣⲉ 'those whom (habitually)'. Sense-parallel to §4111 ⲉⲧⲣⲙⲛⲧⲃⲟⲟⲛⲉ ⲛⲓⲙ. Weakly constrained.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 10,
+      "section": 4097,
+      "chapter": 69,
+      "line": 38,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲕⲁⲕⲓⲁ",
+      "basis": "Direct parallel in §4111 ⲉⲧⲣⲙⲛⲧⲃⲟⲟⲛⲉ ⲛⲓⲙ ⲍⲓ ⲕⲁⲕⲓⲁ ⲍⲛ̄ ⲭⲱⲣⲁ ⲛⲓⲙ — the same enumeration formula (every evil and wickedness, in the cosmos, in the tree, in the flesh). 'ⲕⲁⲕⲓⲁ' fits the est. 5 characters and the conjunction ⲙⲛ̄ at the end of the previous segment.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 4097,
+      "chapter": 69,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲙ ⲡⲕⲟ",
+      "basis": "Completes ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the cosmos' split across line break. Editor reading; matches the parallel triple ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ / ⲍⲙ̄ ⲡϣⲏⲛ / ⲍⲛ̄ ⲧⲥⲁⲣⲝ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 4104,
+      "chapter": 69,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡ",
+      "basis": "Standard preposition before ⲕⲉⲕⲉ in the planet-world series 'reckoned to the world of X'; completes ⲡⲕⲟⲥⲙⲟⲥ ⲙ̄ⲡⲕⲉⲕⲉ for Saturn/Kronos.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 4107,
+      "chapter": 69,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲇⲉ ⲍⲱ",
+      "basis": "Standard ⲇⲉ ⲍⲱⲱϥ formula matching the parallels in §§4101 (ⲇⲉ ⲍⲱⲱⲥ for Aphrodite), 4102 (ⲇⲉ ⲍⲱⲱϥ for Ares), 4119 (ⲇⲉ ⲍⲱⲱϥ for Gemini); each celestial body in the enumeration is introduced this way.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 4114,
+      "chapter": 69,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "ⲉ[ⲩ]ⲥⲏⲣ — circumstantial 3pl prefix introducing the next clause 'that they are spread forth fastened to four sides' (continuing in §4115).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 4116,
+      "chapter": 69,
+      "line": 57,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲥ",
+      "basis": "Completion of Greek loanword ⲡⲕⲣⲓⲟⲥ 'Aries' across the line break. The next line begins the side-1 triplet (Aries, Leo, Sagittarius), confirmed by §4117.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 4118,
+      "chapter": 69,
+      "line": 59,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲥ",
+      "basis": "Completion of ⲡⲡⲁⲣⲑⲉⲛⲟⲥ 'Virgo' across the line break. The Taurus+Capricorn+Virgo triplet for side 2 is complete.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 4120,
+      "chapter": 69,
+      "line": 61,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Completion of ⲡⲥⲕⲟⲣⲡⲓⲟⲥ 'Scorpio' across line break (the next line begins ⲟⲥ). Single letter ⲟ closes ⲥⲕⲟⲣⲡⲓ-ⲟ before the line wraps to -ⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 4121,
+      "chapter": 69,
+      "line": 62,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "ⲥ[ⲉ]ⲕⲁⲁⲧ — 3pl subject prefix of stative 'they are placed' opening the summary clause continued in §4122.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 4122,
+      "chapter": 69,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ",
+      "basis": "Completion of ⲁⲃⲁⲗ 'forth' (in ⲥⲉⲥⲏⲣ ⲁⲃⲁⲗ 'spread forth') across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 4123,
+      "chapter": 69,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲓ",
+      "basis": "Completion of ⲡⲕⲣⲓⲟⲥ 'Aries' across line break (next line begins ⲟⲥ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 4125,
+      "chapter": 69,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Relative prefix [ⲉ]ⲧⲙⲁⲍⲉ 'who are mounted upon him' — circumstantial relative continuing the description of the way-leaders.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 4126,
+      "chapter": 69,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completion of verb ϯ[ⲉ]ⲍⲟ 'strike, give a blow' — 'an affliction strikes upon all the cattle of the dry land below'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 4128,
+      "chapter": 69,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲁ",
+      "basis": "Standard formula ⲛ̄ⲥⲁ ⲥⲁ ⲙ̄- 'on the side of —' parallel to §4123 (ⲛ̄ⲥⲁ ⲥⲁ ⲙⲡⲕⲣⲓⲟⲥ). Introduces the Taurus-Virgo-Capricorn side.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 4128,
+      "chapter": 69,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲟⲥ",
+      "basis": "Completion of ⲡⲧⲁⲩⲣⲟⲥ 'Taurus' across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 4129,
+      "chapter": 69,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ",
+      "basis": "ϣ[ⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ] — habitual subject formula directly paralleling §4126-4127 (ϣⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ ϯⲉⲍⲟ 'an affliction strikes'); but here the affliction concerns the ripenings/figs/fruits of trees in §4130-4131, so the verb continued may be ϣⲱⲧⲉ rather than ϯⲉⲍⲟ. The habitual + ⲟⲩⲑⲗⲓⲯⲓⲥ opening is secure.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 4138,
+      "chapter": 69,
+      "line": 79,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲥⲛ",
+      "basis": "Completes ⲡⲓⲙⲛ̄ⲧⲥⲛⲁⲩⲥ 'the twelve' — the standard zodiac figure across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 4142,
+      "chapter": 69,
+      "line": 83,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Definite article ⲡ in ⲙ[ⲡ]ⲕⲉⲕⲉ 'of the Darkness' — the standard form of the cosmic-element noun.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 4143,
+      "chapter": 69,
+      "line": 84,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Completes [ⲥ]ⲛⲉⲩ 'two' referring to the two anabibazons (the dry/moist registers, lunar nodes) — confirmed by §4110 ⲡⲁⲛⲁⲃⲓⲃⲁⲍⲱⲛ ⲥⲛⲉⲩ.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4080,
+      "chapter": 69,
+      "line": 21,
+      "core_english": "has fettered them in the sphere of the upper place that circles every"
+    },
+    {
+      "section": 4087,
+      "chapter": 69,
+      "line": 28,
+      "core_english": "{0} out of the five worlds of the Darkness, and were bound in the"
+    },
+    {
+      "section": 4088,
+      "chapter": 69,
+      "line": 29,
+      "core_english": "sphere, and they took two zodiac-signs per world. Gemini"
+    },
+    {
+      "section": 4089,
+      "chapter": 69,
+      "line": 30,
+      "core_english": "with Sagittarius belong to the world of the Smoke, that is"
+    },
+    {
+      "section": 4092,
+      "chapter": 69,
+      "line": 33,
+      "core_english": "belong to the world of the Wind. Cancer and Virgo"
+    },
+    {
+      "section": 4093,
+      "chapter": 69,
+      "line": 34,
+      "core_english": "and {1} belong to the world of the Water. Capricorn"
+    },
+    {
+      "section": 4094,
+      "chapter": 69,
+      "line": 35,
+      "core_english": "with Scorpio belong to the world of the Darkness. These are"
+    },
+    {
+      "section": 4095,
+      "chapter": 69,
+      "line": 36,
+      "core_english": "the {2} archons of Wickedness — those whom the wicked-"
+    },
+    {
+      "section": 4096,
+      "chapter": 69,
+      "line": 37,
+      "core_english": "{3}. For they are the doer of every evil and"
+    },
+    {
+      "section": 4097,
+      "chapter": 69,
+      "line": 38,
+      "core_english": "{4} in the cosmos, whether in the tree or in the flesh"
+    },
+    {
+      "section": 4104,
+      "chapter": 69,
+      "line": 45,
+      "core_english": "of the Darkness. But the two Anabibazons themselves are reckoned to the"
+    },
+    {
+      "section": 4107,
+      "chapter": 69,
+      "line": 48,
+      "core_english": "but the Sun himself, with the Moon, were brought in among them by a"
+    },
+    {
+      "section": 4114,
+      "chapter": 69,
+      "line": 55,
+      "core_english": "concerning the zodiac-signs: that they are"
+    },
+    {
+      "section": 4116,
+      "chapter": 69,
+      "line": 57,
+      "core_english": "these four places, and they are joined to the surrounding sphere. Aries,"
+    },
+    {
+      "section": 4118,
+      "chapter": 69,
+      "line": 59,
+      "core_english": "side. Taurus himself, Capricorn with Virgo"
+    },
+    {
+      "section": 4120,
+      "chapter": 69,
+      "line": 61,
+      "core_english": "Libra with Aquarius — reckoned to another side. Scorpio,"
+    },
+    {
+      "section": 4121,
+      "chapter": 69,
+      "line": 62,
+      "core_english": "Pisces with Cancer — reckoned to another lot. They"
+    },
+    {
+      "section": 4122,
+      "chapter": 69,
+      "line": 63,
+      "core_english": "are placed therefore in this manner, fastened to the four sides, spread forth"
+    },
+    {
+      "section": 4123,
+      "chapter": 69,
+      "line": 64,
+      "core_english": "in the sphere. The time, indeed, when they shall plunder along the side of Aries,"
+    },
+    {
+      "section": 4125,
+      "chapter": 69,
+      "line": 66,
+      "core_english": "the steward who is upon him, who measures him, with the way-leaders who"
+    },
+    {
+      "section": 4126,
+      "chapter": 69,
+      "line": 67,
+      "core_english": "are mounted upon him, in those very ones — an affliction strikes"
+    },
+    {
+      "section": 4128,
+      "chapter": 69,
+      "line": 69,
+      "core_english": "But the time itself when they shall plunder on the side of Taurus,"
+    },
+    {
+      "section": 4129,
+      "chapter": 69,
+      "line": 70,
+      "core_english": "Virgo with Capricorn — {5}"
+    },
+    {
+      "section": 4138,
+      "chapter": 69,
+      "line": 79,
+      "core_english": "concerning the twelve"
+    },
+    {
+      "section": 4142,
+      "chapter": 69,
+      "line": 83,
+      "core_english": "from the five worlds of the land of the Darkness."
+    },
+    {
+      "section": 4143,
+      "chapter": 69,
+      "line": 84,
+      "core_english": "concerning the two anabibazons, that they stand fast"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4087,
+      "chapter": 69,
+      "line": 28,
+      "proposed_english": "they were molded",
+      "coptic_gap_refs": [
+        1
+      ],
+      "basis": "Direct match for ⲛⲧⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ as supplied by the parallel summary in §4139 (ⲡⲗⲁⲥⲥⲉ = mold/form, lexicon entry 'form/build/mold'). The English 'molded' is what §4139's identical clause is rendered as in the editor's gloss.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4093,
+      "chapter": 69,
+      "line": 34,
+      "proposed_english": "Pisces",
+      "coptic_gap_refs": [
+        6
+      ],
+      "basis": "ⲡⲓⲭⲑⲩⲥ = Pisces; the third Water-world sign needed to complete the 12-count, consistent with Pisces' pairing with Cancer in §4121.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4095,
+      "chapter": 69,
+      "line": 36,
+      "proposed_english": "twelve",
+      "coptic_gap_refs": [
+        8
+      ],
+      "basis": "ⲡⲙⲛ̄ⲧⲥⲛⲁⲩⲥ = the twelve; the standard count of the zodia bound in the sphere as stated throughout the teaching.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4096,
+      "chapter": 69,
+      "line": 37,
+      "proposed_english": "wickedness comes forth out of them",
+      "coptic_gap_refs": [
+        9
+      ],
+      "basis": "Renders ⲧⲙⲛⲧⲃⲟⲟⲛⲉ ⲛⲏⲩ ⲁⲃⲁⲗ ⲛϩⲏⲧⲟⲩ; completes the relative clause introduced by ⲛⲉⲧⲉⲙⲁⲣⲉ ('those whom habitually wickedness comes forth from'). Sense parallel to §4111. Weakly constrained.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4097,
+      "chapter": 69,
+      "line": 38,
+      "proposed_english": "wickedness",
+      "coptic_gap_refs": [
+        10,
+        11
+      ],
+      "basis": "ⲕⲁⲕⲓⲁ ⲍⲙ ⲡⲕⲟⲥⲙⲟⲥ = 'wickedness in the cosmos'; together {10} and {11} produce a single English phrase, with the cosmos-noun continued naturally into the surrounding text. Parallel of §4111.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4129,
+      "chapter": 69,
+      "line": 70,
+      "proposed_english": "an affliction comes about",
+      "coptic_gap_refs": [
+        25
+      ],
+      "basis": "ϣⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ ϣⲱⲧⲉ — habitual subject formula directly paralleling §4126 (ϣⲁⲣⲉ ⲟⲩⲑⲗⲓⲯⲓⲥ ϯⲉⲍⲟ); the Taurus/Virgo/Capricorn side governs the agricultural sphere (ripenings, figs, fruits in §4130-4131), so the verb is ϣⲱⲧⲉ ('come about') rather than ϯⲉⲍⲟ ('strike').",
+      "confidence": "moderate"
+    }
+  ]
+}

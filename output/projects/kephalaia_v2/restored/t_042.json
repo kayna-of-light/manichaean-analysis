@@ -1,0 +1,492 @@
+{
+  "teaching": 42,
+  "total_gaps_in_core": 22,
+  "gaps_restored": 14,
+  "gaps_unrestorable": 8,
+  "restoration_note": "The teaching describes the three works fixed at the consummation: the regenerated new earth that itself shines, the quenching of the fire of self-love, and the desolation of those who claimed what flowed through them — bound finally in the last bolos, fenced from the regenerated soul by a great boundary forever. The frame formulas are well-constrained: ⲙⲛⲧⲉⲩ...ⲙ̄ⲙⲉⲩ, ⲡⲉⲣⲁⲥ, ⲟⲩⲃⲉ, ⲙⲟⲩⲣ ⲍⲱⲱⲩ, ⲕⲁⲁⲩ, ⲟⲩⲱⲛⲉ ⲛⲧⲁⲱ, ⲡⲕⲉⲕⲉ ⲙⲛ ⲡⲭⲁⲭⲉ, ⲥⲱⲧⲙ̄, and the doxological ⲱⲁ ⲁⲛⲏⲍⲉ̄ ⲛⲛⲁⲛⲏⲍⲉ̄. The damaged interior of work 1 and work 2 (gaps 5,6,7,9,10,11,12,16) is left unrestorable: not enough partial traces or formulaic context to fix the verbs and nouns there.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 2370,
+      "chapter": 40,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲉⲩ",
+      "basis": "Editor's standard 3pl idiom ⲙⲛⲧⲉⲩ X ⲙ̄ⲙⲉⲩ 'they have no X'; here completing ⲙ̄ⲙ[ⲉⲩ] at line edge.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 2371,
+      "chapter": 40,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Future-III prefix ⲉⲩⲁ- whose verb ⲙⲟⲩⲣ continues at the head of section 2372 ('they shall bind').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 2372,
+      "chapter": 40,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "ⲧⲱⲕ ⲁⲣⲉⲧϩ ⲟⲩⲃⲉ 'stand fast against' is the standard contest formula; ⲟⲩⲃ[ⲉ] is fixed.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 2373,
+      "chapter": 40,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲥ",
+      "basis": "Greek loan πέρας 'end' — pairs explicitly with ⲁⲣⲭⲏ 'beginning' just preceding, and echoes ⲕⲉⲡⲉⲣⲁⲥ in 40.6.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 2375,
+      "chapter": 40,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Demonstrative/copular ⲡⲉ at line edge, opening the relative clause continuing into 2376 ⲧⲁⲩⲧⲁϣϥ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 2376,
+      "chapter": 40,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Partial ⲛⲉⲥ + ~5 chars: not constrained enough to choose between possessive forms (ⲛⲉⲥⲍⲃⲏⲩⲉ etc.) or another stem; the entire mid-clause is too damaged to fix.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 6,
+      "section": 2376,
+      "chapter": 40,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Partial ⲛⲟ + ~4 chars before next-section -ⲣⲁϩ: no formula or trace fixes the word.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 2377,
+      "chapter": 40,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "~3 unread chars between ⲉⲧⲓ̈ⲙⲉⲩ and ⲕⲁⲧϩ; could be a verb or particle but no trace constrains it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 2377,
+      "chapter": 40,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱϥ",
+      "basis": "ⲁⲭⲱϥ 'upon him' (Lyc. for Sah. ⲁϫⲱϥ) parallels the earlier ⲁⲭⲙ̄ ⲡⲓⲕⲁⲍ in the same line and gives the right antecedent (the new land or First Man).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 9,
+      "section": 2378,
+      "chapter": 40,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "ⲥⲉⲛⲁ + ~5 chars opens the second work but no partial trace and no parallel formula constrains the verb (quench? destroy? overthrow?).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 2378,
+      "chapter": 40,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "ⲛⲥⲉⲥ + ~4 chars: a paired verb to gap {9}; without the first verb fixed, no responsible reconstruction.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 11,
+      "section": 2379,
+      "chapter": 40,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Single character at line break: any of several conjunctions or articles fits; no constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 12,
+      "section": 2379,
+      "chapter": 40,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "~17 chars, only first letter ⲧ visible; far too long and weakly traced to restore.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 13,
+      "section": 2383,
+      "chapter": 40,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲡ̄ ⲁⲃⲁⲗ",
+      "basis": "ⲁⲩϣⲱⲣⲡ̄ ⲁⲃⲁⲗ 'they were torn/separated forth' — fits visible ⲁⲩϣⲱ + final ⲗ with editor's [ⲁⲃⲁ] restoration; matches reading's 'each set apart according to its bitter works.' Other ϣⲱ-stems (ϣⲱⲡⲉ, ϣⲱⲱⲧ) are possible.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 14,
+      "section": 2387,
+      "chapter": 40,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲣ",
+      "basis": "ⲥⲉⲛⲁⲙ̄[ⲟⲩⲣ] ⲍⲱⲱⲩ — the standard reflexive 'they shall bind themselves' (ⲙⲟⲩⲣ + ⲍⲱⲱⲩ), confirmed by following ⲍⲱⲱⲩ ⲍⲛ̄ ⲧⲙ̄ⲣⲣⲉ ⲛ̄ⲍⲁⲏ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 2388,
+      "chapter": 40,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁ",
+      "basis": "ⲛ̄ⲥⲉ[ⲕⲁ]ⲁⲩ — Lyc. ⲕⲁ + 3pl pronominal ⲁⲩ = 'set/leave them'; the natural completion of the binding clause and matches the reading's 'sealed off forever.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 2389,
+      "chapter": 40,
+      "line": 24,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars at end of comparison list ('as ember-pit, as gloom, as shadow ⲁⲧⲉⲓⲃⲉ ___'); could be another descriptive feminine noun pointing to ⲡⲱⲧⲉⲕⲟ in 2390, but unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 17,
+      "section": 2390,
+      "chapter": 40,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲱ",
+      "basis": "ⲛ̄[ⲟⲩⲱ]ⲛⲉ = ⲟⲩⲱⲛⲉ 'stone' (Lyc. for Sah. ⲱⲛⲉ); paired with ⲛⲧⲁⲱ 'boundary' in next segment yields 'boundary-stone' — exactly what the reading demands as the great fixed marker between regenerated soul and bolos.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 2391,
+      "chapter": 40,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲉⲕ",
+      "basis": "ⲡ[ⲕⲉⲕ]ⲉ 'the Darkness' — required first member of the pair 'between the Darkness and the Enemy' (ⲁⲡⲭⲁⲭⲉ in 2392); standard lexicon entry.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 2392,
+      "chapter": 40,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "ⲛⲟⲩ[ⲥ]ⲱⲧⲙ̄ — negative subjunctive of ⲥⲱⲧⲙ̄ 'hear'; pairs with ⲛⲉⲩⲍⲣⲁⲩ 'their voice' in 2393 ('that they may not hear one another's voice').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 2394,
+      "chapter": 40,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛⲏ",
+      "basis": "Standard doxological formula ⲱⲁ ⲁⲛⲏⲍⲉ̄ ⲛⲛⲁⲛⲏⲍⲉ̄ 'unto the eternity of the eternities.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 2394,
+      "chapter": 40,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁ",
+      "basis": "Completes ⲛ[ⲛⲁ]ⲛⲏⲍⲉ̄ in the standard 'forever and ever' formula.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 2370,
+      "chapter": 40,
+      "line": 5,
+      "core_english": "in the Light, according to a beginning. For they have no other form,"
+    },
+    {
+      "section": 2371,
+      "chapter": 40,
+      "line": 6,
+      "core_english": "nor any other end, by which they should cease willing to be; since they shall"
+    },
+    {
+      "section": 2372,
+      "chapter": 40,
+      "line": 7,
+      "core_english": "bind the Darkness, the Enemy, within them — he who has stood fast against"
+    },
+    {
+      "section": 2373,
+      "chapter": 40,
+      "line": 8,
+      "core_english": "the Light from the beginning. Therefore these works have no end"
+    },
+    {
+      "section": 2375,
+      "chapter": 40,
+      "line": 10,
+      "core_english": "The first work, then, is this new land which sheds light, the one"
+    },
+    {
+      "section": 2376,
+      "chapter": 40,
+      "line": 11,
+      "core_english": "(which) they appointed and turned upon this land, {0}"
+    },
+    {
+      "section": 2377,
+      "chapter": 40,
+      "line": 12,
+      "core_english": "...upon him by this alien body which yonder {1} turned upon him."
+    },
+    {
+      "section": 2378,
+      "chapter": 40,
+      "line": 13,
+      "core_english": "The second work — this is, that they shall {2} and they shall {3}"
+    },
+    {
+      "section": 2379,
+      "chapter": 40,
+      "line": 14,
+      "core_english": "the new land. {4} in this manner {5}"
+    },
+    {
+      "section": 2383,
+      "chapter": 40,
+      "line": 18,
+      "core_english": "themselves in their works; they {6} from one another, they have set"
+    },
+    {
+      "section": 2387,
+      "chapter": 40,
+      "line": 22,
+      "core_english": "with the icons of every form. They shall {7}"
+    },
+    {
+      "section": 2388,
+      "chapter": 40,
+      "line": 23,
+      "core_english": "themselves with those creatures in the last bond forever, and they shall {8} them"
+    },
+    {
+      "section": 2389,
+      "chapter": 40,
+      "line": 24,
+      "core_english": "as an ember-pit, as gloom, as a shadow without measure {9}"
+    },
+    {
+      "section": 2390,
+      "chapter": 40,
+      "line": 25,
+      "core_english": "— which is the prison of the Enemy. They shall set her being a {10}"
+    },
+    {
+      "section": 2391,
+      "chapter": 40,
+      "line": 26,
+      "core_english": "of boundary with a great guard, between the two: between the {11}"
+    },
+    {
+      "section": 2392,
+      "chapter": 40,
+      "line": 27,
+      "core_english": "and the Enemy, so that they may not strike one another, nor {12}"
+    },
+    {
+      "section": 2394,
+      "chapter": 40,
+      "line": 29,
+      "core_english": "forever and ever."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 2376,
+      "chapter": 40,
+      "line": 11,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        5,
+        6
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gaps {5} and {6} are too damaged to fix; the English mid-phrase cannot be supplied."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 2377,
+      "chapter": 40,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap {7} is a 3-char span with no traces or formula to constrain the verb."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 2378,
+      "chapter": 40,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "unrestorable",
+      "basis": "First verb of the second work is lost; reading suggests 'quench' but the Coptic stem is unrecoverable."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 2378,
+      "chapter": 40,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "unrestorable",
+      "basis": "Second paired verb of the second work is lost with no constraints."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 2379,
+      "chapter": 40,
+      "line": 14,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-character Coptic gap with no constraint."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 2379,
+      "chapter": 40,
+      "line": 14,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "unrestorable",
+      "basis": "~17 chars lost with only ⲧ visible; the clause cannot be reconstructed."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 2383,
+      "chapter": 40,
+      "line": 18,
+      "proposed_english": "were separated",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "low",
+      "basis": "Reflects ϣⲱⲣⲡ̄ ⲁⲃⲁⲗ as 'were torn/separated forth' — the reading specifies that each sinner is set apart from the others according to its bitter works. Confidence kept low because the verb stem is not securely traced."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 2387,
+      "chapter": 40,
+      "line": 22,
+      "proposed_english": "bind",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "high",
+      "basis": "Completes ⲙⲟⲩⲣ ⲍⲱⲱⲩ 'bind themselves'; the verb is fixed by the reflexive ⲍⲱⲱⲩ in the next segment."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 2388,
+      "chapter": 40,
+      "line": 23,
+      "proposed_english": "leave",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "high",
+      "basis": "ⲕⲁⲁⲩ 'leave/set them' — closes the binding clause; rendered 'leave' to capture the sealed-off, abandoned-in-place sense of the bolos at consummation."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 2389,
+      "chapter": 40,
+      "line": 24,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "unrestorable",
+      "basis": "5 unread chars at the end of the comparison list; cannot be securely supplied."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 2390,
+      "chapter": 40,
+      "line": 25,
+      "proposed_english": "stone",
+      "coptic_gap_refs": [
+        17
+      ],
+      "confidence": "high",
+      "basis": "ⲟⲩⲱⲛⲉ 'stone' — paired with ⲛⲧⲁⲱ 'boundary' in the following segment, giving 'boundary-stone': the great fixed marker the reading describes between the regenerated soul and the bolos."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 2391,
+      "chapter": 40,
+      "line": 26,
+      "proposed_english": "Darkness",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲕⲉⲕⲉ 'the Darkness' — required first member of the pair 'between the Darkness and the Enemy'; standard lexicon term."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 2392,
+      "chapter": 40,
+      "line": 27,
+      "proposed_english": "hear",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "high",
+      "basis": "Completes ⲥⲱⲧⲙ̄ 'hear'; the object 'their voice' (ⲛⲉⲩⲍⲣⲁⲩ) follows in the next segment."
+    }
+  ]
+}

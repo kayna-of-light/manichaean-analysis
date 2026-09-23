@@ -1,0 +1,101 @@
+{
+  "chapter_number": 116,
+  "manuscript_pages": "280,20 - 282,6",
+  "coptic_tokens": 430,
+  "greek_loanwords": {
+    "total_density_pct": 1.86,
+    "cosmological_density_pct": 0.47,
+    "ecclesiastical_density_pct": 1.16,
+    "cosmological_ratio": 0.286,
+    "cosmological_count": 2,
+    "ecclesiastical_count": 5,
+    "general_count": 1,
+    "total_greek": 8,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 3,
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1,
+      "ⲙⲁⲑⲏⲧⲏⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.7,
+    "dialogue_openings": 2,
+    "disciple_questions": 0,
+    "response_formulas": 1,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 3,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "dialogue_opening",
+        "match": "ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      },
+      {
+        "type": "response_formula",
+        "match": "ⲁⲛⲁⲕ ⲡⲉⲧⲛⲁ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 11,
+    "sahidic_count": 57,
+    "total_dialect_markers": 68,
+    "subachmimic_ratio": 0.162,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×2",
+      "ⲍⲛ̄×1",
+      "ⲁⲍ×4",
+      "ⲍⲁ×1",
+      "ⲍⲏⲧ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×17",
+      "ϩⲛ̄×9",
+      "ⲁϩ×14",
+      "ϩⲓ×5",
+      "ϩⲁ×4",
+      "ϩⲏⲧ×1",
+      "ϩⲱⲃ×3",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 107,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 62,
+    "bracketed_restorations": 83,
+    "empty_brackets": 24,
+    "leer_markers": 6
+  },
+  "english_classification": {
+    "chapter_number": 116,
+    "chapter_title": "Concerning why if a [Nail] is cut the Person shall not be sick; but if a Limb is cut he shall immediately be pained.",
+    "total_paragraphs": 7,
+    "core_paragraphs": 2,
+    "core_percentage": 62,
+    "chapter_note": "Heavily lacunose chapter preserving a body-cosmos correspondence teaching: body↔earth, limbs↔trees, varieties of trees↔varieties of body parts (some regrow when cut, others do not). This is systematic body-cosmos mapping consistent with the substrate pattern identified in Ch.70. The teaching purity score of 0.0 is misleading — the substrate vocabulary here uses common terms (body, earth, trees) rather than the marked zoomorphic/metal terms the pipeline detects. The STRUCTURE is pure correspondential mapping: both sides stay within the natural/cosmic system. Dialogue frame is dominant by paragraph count (5 of 7) but the two teaching paragraphs contain the bulk of the word count. No editorial bridge, institutional, or exhortation layers detected — this chapter appears to be substrate teaching wrapped in dialogue frame with no later editorial extension.",
+    "classification_distribution": {
+      "dialogue_frame": 5,
+      "mixed": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 5 dialogue_frame paragraph(s), Coptic confirms 2 dialogue opening(s)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.16 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "chapter_number": 35,
+  "chapter_title": "Concerning the Four Works of the Ambassador",
+  "total_lacunae": 4,
+  "lacunae_map": {
+    "3": [
+      {
+        "index": 1,
+        "start": 87,
+        "end": 92,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ],
+    "4": [
+      {
+        "index": 1,
+        "start": 121,
+        "end": 126,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ],
+    "5": [
+      {
+        "index": 1,
+        "start": 19,
+        "end": 34,
+        "original": "[made apparent]",
+        "content": "made apparent",
+        "gap_type": "square"
+      },
+      {
+        "index": 2,
+        "start": 88,
+        "end": 93,
+        "original": "[...]",
+        "content": "...",
+        "gap_type": "square"
+      }
+    ]
+  },
+  "spiritual_reading": "# Spiritual Translation\n\n**¶1:** At the time when the Divine Emissary made perceptible the form of Divine Wisdom to the understanding, four complete spiritual operations were disclosed, each surpassing in excellence and eminence all that had been known.\n\n**¶2:** The first is the form of Divine Wisdom itself, made manifest in the splendor of celestial light — the Lord's own Truth as it appears to the interior sight of the regenerating mind.\n\n**¶3:** The second is that all passages of communication between the successive degrees of the mind were opened at that moment. They open [GAP-1: *the spiritual sense here requires the opening to occur before or ahead of the Divine influx as it descends through the degrees*] and close behind the influx once it has passed through — for each discrete degree receives the Divine proceeding and, having transmitted it inward, seals itself so that the communication moves only forward into what is more interior.\n\n**¶4:** The third is the wisdom and the liberation of good from bondage to falsity, which was purified through the perception of Divine Truth. That wisdom exceeds the wisdom that the Divine shall [GAP-2: *the spiritual sense requires a future or ongoing gathering — a collecting of scattered goods and truths not yet liberated*].\n\n**¶5:** The fourth: The Divine has [GAP-3: REVIEW *made apparent*] — through the perfection of regenerate minds — the containing vessel of celestial wisdom, the doctrine that carries purified good back toward its origin. The Divine has [GAP-4: *the spiritual sense requires an act of vivifying, filling, or perfecting*] the living good united to truth, which radiated in completeness and fullness over all the states of spiritual enmity and opposition where evil and falsity had ruled.",
+  "reconstructions": [
+    {
+      "paragraph": 1,
+      "reconstructed_text": "At the time when the Ambassador displayed his image, four great works were revealed that are very excellent and outstanding."
+    },
+    {
+      "paragraph": 2,
+      "reconstructed_text": "The first is his image that he displayed in a glorious image."
+    },
+    {
+      "paragraph": 3,
+      "reconstructed_text": "The second is all the doors of the firmaments that were opened at that time. They open [before him] and shut behind him."
+    },
+    {
+      "paragraph": 4,
+      "reconstructed_text": "The third is the light and the releasing that was purified by his image. That light is more than the light that he shall [gather]"
+    },
+    {
+      "paragraph": 5,
+      "reconstructed_text": "The fourth: He has [made apparent], by the perfection of people, his light ship. He has [perfected] the living soul that shone forth in perfection and fullness over the worlds of enmity."
+    }
+  ],
+  "fills": [
+    {
+      "paragraph": 3,
+      "index": 1,
+      "gap_id": "GAP-1",
+      "fill": "before him",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The doors of the firmaments (passages between discrete degrees) open ahead of the descending influx and close behind it, expressing the principle that each degree receives and transmits the Divine proceeding forward into what is more interior.",
+      "confidence": "high",
+      "notes": ""
+    },
+    {
+      "paragraph": 4,
+      "index": 1,
+      "gap_id": "GAP-2",
+      "fill": "gather",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading specifies a future collecting of scattered goods and truths not yet liberated; in Manichaean cosmology \"gather\" is the standard term for the ongoing collection of dispersed light particles, and it distinguishes the future work from the purification already described.",
+      "confidence": "moderate",
+      "notes": ""
+    },
+    {
+      "paragraph": 5,
+      "index": 1,
+      "gap_id": "GAP-3",
+      "fill": "made apparent",
+      "original": "made apparent",
+      "gap_type": "editorial",
+      "gap_size": "editorial",
+      "explanation": "The editor's choice fits the spiritual sense — the Divine makes perceptible (apparent) the containing vessel of celestial wisdom through the perfection of regenerate minds; \"made apparent\" accurately conveys the disclosure of something previously hidden.",
+      "confidence": "moderate",
+      "notes": "editorial confirmed"
+    },
+    {
+      "paragraph": 5,
+      "index": 2,
+      "gap_id": "GAP-4",
+      "fill": "perfected",
+      "original": "...",
+      "gap_type": "square",
+      "gap_size": "small",
+      "explanation": "The spiritual reading calls for an act of vivifying or perfecting, and \"perfected\" both matches the spiritual sense and echoes the \"perfection and fullness\" that follows, while distinguishing this fourth work from the purification described in the third.",
+      "confidence": "moderate",
+      "notes": ""
+    }
+  ],
+  "violations": [],
+  "assessment": "3 restored, 1 editorial reviewed (1 confirmed, 0 corrected)"
+}

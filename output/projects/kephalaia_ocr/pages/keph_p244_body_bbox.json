@@ -1,0 +1,39 @@
+{
+  "page_size": [
+    1553,
+    2258
+  ],
+  "bbox": {
+    "x0": 520,
+    "y0": 182,
+    "x1": 1523,
+    "y1": 1122
+  },
+  "crop_method": "projection_pure",
+  "rules_detected": [
+    {
+      "y_mid": 158.5,
+      "width_frac": 0.721
+    }
+  ],
+  "band_top": 164.0,
+  "band_bottom": 2077.36,
+  "ln_column": {
+    "x_left": 481,
+    "x_right": 489,
+    "y_first": 200,
+    "y_last": 1104,
+    "body_left": 551,
+    "body_right": 1301,
+    "ln_runs": [
+      [
+        481,
+        489,
+        9
+      ]
+    ],
+    "ln_width": 9,
+    "n_digits": null,
+    "step": null
+  }
+}

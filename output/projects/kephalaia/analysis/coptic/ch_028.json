@@ -1,0 +1,108 @@
+{
+  "chapter_number": 28,
+  "manuscript_pages": "79,13 - 81,20",
+  "coptic_tokens": 638,
+  "greek_loanwords": {
+    "total_density_pct": 3.61,
+    "cosmological_density_pct": 1.57,
+    "ecclesiastical_density_pct": 0.78,
+    "cosmological_ratio": 0.667,
+    "cosmological_count": 10,
+    "ecclesiastical_count": 5,
+    "general_count": 8,
+    "total_greek": 23,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1,
+      "ⲛⲟⲩⲥ": 2,
+      "ⲁⲓⲱⲛ": 3,
+      "ⲕⲟⲥⲙⲟⲥ": 3,
+      "ⲥⲧⲟⲓⲭⲉⲓⲟⲛ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲁⲓⲕⲁⲓⲟⲥⲩⲛⲏ": 4,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.31,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 2,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 70,
+    "sahidic_count": 75,
+    "total_dialect_markers": 145,
+    "subachmimic_ratio": 0.483,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×15",
+      "ⲍⲛ̄×11",
+      "ⲁⲍ×10",
+      "ⲍⲓ×3",
+      "ⲍⲁ×6",
+      "ⲍⲏⲧ×3",
+      "ⲍⲣⲏ×4",
+      "ⲍⲁⲗ×1",
+      "ⲍⲉ×12",
+      "ⲍⲁⲉ×1",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×6",
+      "ϩⲛ̄×2",
+      "ⲁϩ×44",
+      "ϩⲓ×4",
+      "ϩⲁ×2",
+      "ϩⲏⲧ×1",
+      "ϩⲉ×13"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 112,
+    "damaged_lines": 1,
+    "lacunae_density": 0.009,
+    "dot_sequences": 20,
+    "bracketed_restorations": 134,
+    "empty_brackets": 7,
+    "leer_markers": 14
+  },
+  "english_classification": {
+    "chapter_number": 28,
+    "chapter_title": "[Concerning the T]welve Judges [of] the Father",
+    "total_paragraphs": 16,
+    "core_paragraphs": 14,
+    "core_percentage": 88,
+    "chapter_note": "This chapter is dominated by a clean twelve-fold enumeration of cosmic judges — a systematic substrate teaching with strong structural integrity. Each judge is mapped to a cosmic being and a judicial function; both sides of every mapping stay within the cosmic system. The enumeration is bookended by an introduction (¶2) and a recapitulation (¶15) that form an inclusio around the Father of Greatness. Only ¶1 (dialogue frame) and ¶16 (exhortation) are clearly later layers, plus one institutional insertion ('holy church') in ¶13. The editorial fatigue data confirms the exhortation shift in the final paragraph. The ¶15 seam flag is a false positive — it is a recapitulation with 0.0 institutional vocabulary, not an institutional extension. The teaching purity (0.729) reflects the dominant substrate layer with minimal overlay.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "substrate": 13,
+      "mixed": 1,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (88%) with high cosmological Greek ratio (0.67)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.48 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

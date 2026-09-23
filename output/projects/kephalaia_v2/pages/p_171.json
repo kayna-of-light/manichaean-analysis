@@ -1,0 +1,469 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲣ̄",
+      "english": "(supralinear restored)",
+      "basis": "Editor restored supralinear stroke in ⲣ[ⲣ̄]ⲣⲟ; word ⲣⲣⲟ 'king' is certain"
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲕⲁϩ",
+      "english": "land",
+      "basis": "Editor restoration ⲙ̄ⲡ[ⲕⲁϩ]; matches the cosmographic schema of lands sustained by the King"
+    },
+    {
+      "id": 2,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲛϩⲭ",
+      "english": "(qualitative onset)",
+      "basis": "Editor restoration giving ⲛϩⲭⲟⲣⲱ, qualitative 'strong/firm-standing' (Lyc. reflex of ⲛϫⲱⲱⲣⲉ)"
+    },
+    {
+      "id": 3,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲕⲟ",
+      "english": "(of the wor-)",
+      "basis": "Editor restoration ⲛ̄[ⲕⲟ] continuing to ⲥⲙⲟⲥ on next line — ⲛ̄ⲕⲟⲥⲙⲟⲥ 'worlds'"
+    },
+    {
+      "id": 4,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲉⲝ",
+      "english": "author-",
+      "basis": "Editor restoration of [ⲉⲝ]ⲟⲩⲥⲓⲁ 'authority' (Greek loanword); ⲧⲉϩ- on prior line is possessive 'his'"
+    },
+    {
+      "id": 5,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "head",
+      "basis": "Editor restoration ⲧⲁⲡ[ⲉ] 'head' — context of Omophoros's anatomy"
+    },
+    {
+      "id": 6,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ϯ",
+      "english": "fifth",
+      "basis": "Restoration ⲧⲙⲁϩ[ϯ]ⲉ 'the fifth (watch).' Line 4 has ⲧⲙⲁϩϩⲧⲟⲉ 'fourth' (King of Glory); the structurally next ordinal is fifth (Omophoros)"
+    },
+    {
+      "id": 7,
+      "segment": 12,
+      "type": "lacuna",
+      "est_chars": 1,
+      "partial": "ⲫⲁⲓ_ⲓⲥ"
+    },
+    {
+      "id": 8,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ϯⲟⲩⲉ",
+      "english": "five",
+      "basis": "Tentative — the kephalaion enumerates exactly five watches (Pherrokatochos, King of Honor, Adamas, King of Glory, Omophoros); summary line requires 'in the five watches'"
+    },
+    {
+      "id": 9,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ⲁⲃⲉ",
+      "english": "Sin",
+      "basis": "Editor restoration ⲡⲛ[ⲁⲃⲉ] 'Sin' — standard Manichaean cosmic principle that assails the icon of the Ambassador"
+    },
+    {
+      "id": 10,
+      "segment": 15,
+      "type": "restoration",
+      "coptic": "ⲡ",
+      "english": "the",
+      "basis": "Editor restoration ⲙ[ⲡ]ⲙⲁ 'from the place'"
+    },
+    {
+      "id": 11,
+      "segment": 19,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 12,
+      "segment": 19,
+      "type": "lacuna",
+      "est_chars": 3,
+      "partial": "ⲉⲩ"
+    },
+    {
+      "id": 13,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲡ",
+      "english": "the",
+      "basis": "Editor restoration ⲙ[ⲡ]ⲡⲗⲁⲥⲙⲁ 'the molding'"
+    },
+    {
+      "id": 14,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "a",
+      "basis": "Editor restoration [ⲁ]ⲩⲕⲓⲛⲏⲥⲓⲥ; Lycopolitan indefinite ⲁⲩ for ⲟⲩ before Greek loanword κίνησις 'motion'"
+    },
+    {
+      "id": 15,
+      "segment": 25,
+      "type": "restoration",
+      "coptic": "ⲧ",
+      "english": "the",
+      "basis": "Editor restoration [ⲧ]ⲟ̄ⲓⲛⲉⲓ 'the coming/rising-up' (action-noun on ⲉⲓ 'come,' attested in glossary)"
+    },
+    {
+      "id": 16,
+      "segment": 28,
+      "type": "restoration",
+      "coptic": "ⲫ",
+      "english": "-pho-",
+      "basis": "Editor restoration ⲡⲱⲙⲟ[ⲫ]ⲟⲣⲟⲥ 'Omophoros' — continuation of word from prior line"
+    },
+    {
+      "id": 17,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲙ",
+      "english": "(bond)",
+      "basis": "Editor restoration ⲧⲟⲩ[ⲙ]ⲣ̄ⲣⲉ 'their bonds'"
+    },
+    {
+      "id": 18,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲕ",
+      "english": "earth-",
+      "basis": "Editor restoration ⲛ[ⲕ]ⲙⲧⲟ 'earthquake' — same lexeme as ⲕⲙ̄ⲧⲟ in line 16 and glossary"
+    },
+    {
+      "id": 19,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲧϩⲉ",
+      "english": "Such is the manner",
+      "basis": "Editor restoration [ⲧϩⲉ] 'manner' — standard Coptic discourse-summarizer 'the manner of X' closing the section"
+    },
+    {
+      "id": 20,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ϯ",
+      "english": "five",
+      "basis": "Tentative — context demands ⲡⲓϯⲟⲩ 'the five' (watch-posts), parallel to the five watches enumerated above"
+    },
+    {
+      "id": 21,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲙⲙⲁ",
+      "english": "watch-",
+      "basis": "Editor restoration [ⲙⲙⲁ]ⲛⲣⲁⲓ̈ⲥ 'watch-posts' (in glossary)"
+    },
+    {
+      "id": 22,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲟⲩ",
+      "english": "a",
+      "basis": "Restoration of single missing character before ⲛⲁϭ — Coptic indefinite article"
+    },
+    {
+      "id": 23,
+      "segment": 31,
+      "type": "lacuna",
+      "est_chars": 12,
+      "partial": "ⲙⲣ̄ⲣⲉ(?) ⲛⲧⲉ ___ⲉ"
+    }
+  ],
+  "header": {
+    "page_number": "ⲣ̄ⲟⲁ",
+    "title_coptic": "ⲙⲡⲥⲁϩ",
+    "title_english": "Of the Teacher"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "{0}ⲣⲟ ⲭⲛ ⲙ̄ⲡⲥⲧⲉⲣⲉⲱⲙⲁ ϣⲁⲡⲓⲧⲛⲉ ⲁⲣⲉⲧϥ̄ ⲙ̄ⲡ{1}",
+      "english": "the {0}King — from the firmament unto below he stands fast on the {1},"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "{2}ⲟⲣⲱ ⲕⲁⲧⲁ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲁⲧⲥⲫⲁⲓⲣⲁ ⲙⲛ̄ ⲛ̄{3}",
+      "english": "{2}strong according to his authority over the sphere with the {3}wor-"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "ⲥⲙⲟⲥ ⲙ̄ⲧⲁϩⲣ ⲙⲛ̄ ⲡⲕⲉϩⲧⲟⲩ ⲛ̄ⲕⲟⲥⲙⲟⲥ ⲉⲧⲧⲏϣ ϩⲙ̄",
+      "english": "lds of strength, with the other five worlds appointed in"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ⲡⲓⲕⲁϩ",
+      "english": "this land.",
+      "break_after": true
+    },
+    {
+      "i": 4,
+      "n": 4,
+      "coptic": "ⲧⲙⲁϩϩⲧⲟⲉ ⲛⲟⲩⲣ̄ϣⲉ ⲉⲧⲉⲣⲉ ⲡⲣ̄ⲣⲟ ⲙ",
+      "english": "The fourth watch in which the King"
+    },
+    {
+      "i": 5,
+      "n": 5,
+      "coptic": "ⲡⲉⲁⲩ ⲉⲙⲁϩⲧⲉ ⲁⲣⲁⲥ ⲡⲉ ⲡϣⲁⲙⲧ ⲛ̄ⲧⲣⲟⲭⲟⲥ ⲧⲉϩ",
+      "english": "of Glory exercises authority is the three wheels. His"
+    },
+    {
+      "i": 6,
+      "n": 6,
+      "coptic": "{4}ⲟⲩⲥⲓⲁ ⲇⲉ ⲕⲁⲁⲧ ⲁⲭⲙ̄ ⲡϣⲁⲙ̄ⲧ ⲛ̄ⲕⲁϩ ⲉⲧϩⲓⲭⲛ̄ ⲧⲁⲡ{5}",
+      "english": "{4}ity is laid upon the three lands which are upon the {5}"
+    },
+    {
+      "i": 7,
+      "n": 7,
+      "coptic": "ⲙ̄ⲡⲱⲙⲟⲫⲟⲣⲟⲥ",
+      "english": "of the Omophoros.",
+      "break_after": true
+    },
+    {
+      "i": 8,
+      "n": 7,
+      "coptic": "ⲧⲙⲁϩ{6}ⲉ ⲛⲟⲩⲣ̄ϣⲉ ⲧⲉ ⲧⲟⲩⲣ",
+      "english": "The {6} watch is the watch"
+    },
+    {
+      "i": 9,
+      "n": 8,
+      "coptic": "ϣⲉ ⲉⲧⲉⲣⲉ ⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲟ ⲛⲉ̄ⲝⲟⲩⲥⲓⲁ ⲁⲭⲱⲥ ⲛ̄ϩⲟ",
+      "english": "in which the Omophoros is in authority, as also a"
+    },
+    {
+      "i": 10,
+      "n": 9,
+      "coptic": "ⲛ̄ⲭⲁⲓ̈ⲥ ⲁⲛ ⲕⲁⲧⲁ ⲧⲉϩⲉⲝⲟⲩⲥⲓⲁ ⲁⲭⲙ̄ ⲡⲓⲛⲁϭ ⲛ̄ⲕⲁϩ",
+      "english": "lord, according to his authority over this great land"
+    },
+    {
+      "i": 11,
+      "n": 10,
+      "coptic": "ⲉⲧⲉϩⲧⲏⲕ ⲁⲣⲉⲧϥ̄ ⲁⲭⲱϩ ⲙⲛ̄ ⲡϩⲧⲁⲩ ⲛⲧⲱϭⲥ̄ ⲉⲧϩⲁ",
+      "english": "which stands fast upon him, with the four extremities which are at"
+    },
+    {
+      "i": 12,
+      "n": 11,
+      "coptic": "ⲣⲉⲧϥ̄ ⲁ {7} ϣⲱⲡⲉ ϩⲛ̄ {8} ⲛⲟⲩⲣ̄ϣⲉ ⲕⲁⲧⲁ ⲟⲩ",
+      "english": "his feet. {7} came to pass in the {8} watches, each at"
+    },
+    {
+      "i": 13,
+      "n": 12,
+      "coptic": "ⲁⲓ̈ϣ ⲟⲩⲁⲓ̈ϣ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲙⲉⲛ ⲙ̄ⲫⲉⲣⲣⲟⲕⲁⲧⲟⲭⲟⲥ",
+      "english": "its season. In the watch indeed of the Pherrokatochos,"
+    },
+    {
+      "i": 14,
+      "n": 13,
+      "coptic": "ⲁ ⲡⲛ{9} ⲟⲩⲱϣⲉ ⲭⲉϩⲁⲃⲉⲃⲉ ⲁϩⲣⲏⲓ̈ ⲟⲩⲃⲉ ⲧⲉ̣ⲓⲕⲱⲛ",
+      "english": "{9}Sin sought to gush up against this icon"
+    },
+    {
+      "i": 15,
+      "n": 14,
+      "coptic": "ⲙ̄ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲁⲩⲕⲱⲗⲩ ⲇⲉ̄ ⲙⲙⲁϩ ⲁⲃⲁⲗ ⲙ{10}ⲙⲁ",
+      "english": "of the Ambassador; but they prevented him from {10} place"
+    },
+    {
+      "i": 16,
+      "n": 15,
+      "coptic": "ⲉⲧⲙ̄ⲙⲉⲩ ⲁϩⲛⲁⲩϩϥ̄ ⲁⲡⲓⲧⲛⲉ ϩⲛ̄ ⲟⲩϣⲓⲡⲉ",
+      "english": "there: he was cast down in shame.",
+      "break_after": true
+    },
+    {
+      "i": 17,
+      "n": 16,
+      "coptic": "ⲁⲩⲕⲙ̄ⲧⲟ ⲁⲛ ⲙⲛ̄ ⲟⲩⲕⲣⲁϩ ϣⲱⲡⲉ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲙⲡⲛⲁϭ",
+      "english": "An earthquake also and a trembling came to pass in the watch of the great"
+    },
+    {
+      "i": 18,
+      "n": 17,
+      "coptic": "ⲛ̄ⲣ̄ⲣⲟ ⲛⲧⲉ ⲡⲧⲁⲓ̈ⲟ ⲉⲧⲉ ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ ⲛⲉⲧⲁⲩϣⲱⲡⲉ",
+      "english": "King of Honor, who is the Egregoroi who came to be"
+    },
+    {
+      "i": 19,
+      "n": 18,
+      "coptic": "ⲙ̄ⲡⲥⲁⲡ ⲉⲧⲁⲩⲛⲁⲣ̄ {11} ⲉⲩ {12} ⲁⲩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲛ̄ⲭⲓ ⲛⲉ",
+      "english": "at the time when they were going to {11} {12}; they came down by"
+    },
+    {
+      "i": 20,
+      "n": 19,
+      "coptic": "ⲧⲁⲩⲧⲛ̄ⲛⲁⲩⲥⲟⲩ ϣⲁⲛⲧⲟⲩⲫⲃ̄ⲓⲁⲩ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ",
+      "english": "those who sent them, until they were subdued. In the watch also"
+    },
+    {
+      "i": 21,
+      "n": 20,
+      "coptic": "ⲙⲡⲁⲇⲁⲙⲁⲥ ⲁ ⲛ̄ϩⲟⲩϩⲉ ⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ{13}",
+      "english": "of Adamas, the abortions came down; they molded {13}"
+    },
+    {
+      "i": 22,
+      "n": 21,
+      "coptic": "ⲡⲗⲁⲥⲙⲁ ⲛⲧⲉ ⲧⲥⲁⲣⲝ̄ ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ ⲙⲡⲣ̄ⲣⲟ ⲙ̄ⲡⲉⲁⲩ",
+      "english": "the molding of the flesh. In the watch also of the King of Glory"
+    },
+    {
+      "i": 23,
+      "n": 22,
+      "coptic": "{14}ⲩⲕⲓⲛⲏⲥⲓⲥ ϣⲱⲡⲉ ϩⲙ ⲡⲓϣⲁⲙⲧ ⲛ̄ⲕⲁϩ ⲉⲧⲙ̄ⲡⲥⲁⲛ̄",
+      "english": "{14} motion came to pass in this three lands which are upon"
+    },
+    {
+      "i": 24,
+      "n": 23,
+      "coptic": "ⲧⲡⲉ ⲙⲡⲱⲙⲟⲫⲟⲣⲟⲥ ⲁ ⲧⲉ̣ⲓⲏⲙ̄ⲙⲁϩⲉ ⲥⲱϩⲧ ⲙⲛ",
+      "english": "the upper side of the Omophoros. This grasping was woven together with"
+    },
+    {
+      "i": 25,
+      "n": 24,
+      "coptic": "{15}ⲟ̄ⲓⲛⲉⲓ ⲁϩⲣⲏⲓ̈ ⲙⲡⲓϣⲁⲙⲧ ⲛ̄ⲧⲣⲟⲭⲟⲥ ⲡⲁⲡⲧⲏⲩ ⲡⲁ",
+      "english": "{15} rising-up of these three wheels — that of the wind, that"
+    },
+    {
+      "i": 26,
+      "n": 25,
+      "coptic": "ⲡⲙⲁⲩ ⲙⲛ̄ ⲡⲁⲧⲥⲉⲧⲉ",
+      "english": "of the water, and that of the fire.",
+      "break_after": true
+    },
+    {
+      "i": 27,
+      "n": 25,
+      "coptic": "ϩⲛ̄ ⲧⲟⲩⲣ̄ϣⲉ ⲁⲛ ⲙⲡⲱⲙⲟ",
+      "english": "In the watch also of the Omopho-"
+    },
+    {
+      "i": 28,
+      "n": 26,
+      "coptic": "{16}ⲟⲣⲟⲥ ⲁ ⲛⲧⲱϭⲥ̄ ⲉⲧⲛ̄ⲡⲓⲧⲛⲉ ⲃⲱϣ ⲁⲩⲕⲱϩ ⲛ̄ⲧⲟⲩ",
+      "english": "{16}phoros, the lower extremities dried up; they stretched out their"
+    },
+    {
+      "i": 29,
+      "n": 27,
+      "coptic": "{17}ⲣ̄ⲣⲉ ⲁⲩⲛⲁϭ ⲛ{18}ⲙⲧⲟ ϣⲱⲡⲉ ⲙ̄ⲡⲙⲁ ⲉⲧⲙ̄ⲙⲉⲩ",
+      "english": "{17}bonds; a great {18}earthquake came to pass in that place."
+    },
+    {
+      "i": 30,
+      "n": 28,
+      "coptic": "{19} ⲙ̄ⲡⲓ{20}ⲟⲩ {21}ⲛⲣⲁⲓ̈ⲥ ⲭⲉ ⲥⲉϣⲟⲟⲡ ϩⲛ̄ {22}ⲛⲁϭ ⲛ",
+      "english": "{19} of the {20}five {21}watch-posts, because they exist in {22} great"
+    },
+    {
+      "i": 31,
+      "n": 29,
+      "coptic": "{23} ⲙ̄ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲉⲧⲁⲓ̈ⲧⲉⲟⲩⲁⲩ",
+      "english": "{23} of the array which I have proclaimed."
+    }
+  ],
+  "notes": [
+    {
+      "segment": 0,
+      "coptic_form": "ⲣⲣⲟ ⲭⲛ ⲙ̄ⲡⲥⲧⲉⲣⲉⲱⲙⲁ ϣⲁⲡⲓⲧⲛⲉ ⲁⲣⲉⲧϥ̄",
+      "decision": "Translated 'the King — from the firmament unto below he stands fast' — preserving the spatial-cosmological reach of the King's authority from upper firmament down to the four lower lands. The structure introduces the five-watch schema that follows.",
+      "confidence": "high"
+    },
+    {
+      "segment": 8,
+      "coptic_form": "ⲧⲙⲁϩ[ϯ]ⲉ ⲛⲟⲩⲣ̄ϣⲉ",
+      "decision": "Restored 'fifth' rather than another ordinal because the kephalaion enumerates exactly five watches; line 4 has 'fourth' (King of Glory's watch over the three wheels), and the next ordinal ('fifth') logically belongs to the Omophoros. The single missing character ϯ fits Lyc. ⲙⲁϩϯⲉ.",
+      "confidence": "high"
+    },
+    {
+      "segment": 9,
+      "coptic_form": "ⲁⲭⲱⲥ ⲛ̄ϩⲟⲛ̄ⲭⲁⲓ̈ⲥ ⲁⲛ",
+      "decision": "Read as 'as also a lord' — Greek ὡς + ⲛ̄ϩⲟⲛ ('as') + ⲛ̄ⲭⲁⲓ̈ⲥ ('a lord') with reinforcing ⲁⲛ. The Omophoros holds authority not merely as bearer but also as sovereign over the great middle land — a doubled cosmic title.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 11,
+      "coptic_form": "ⲡϩⲧⲁⲩ ⲛⲧⲱϭⲥ̄",
+      "decision": "Translated 'the four extremities' — ⲧⲱϭⲥ̄ likely means 'limbs/extremities/joints' here; in context with 'at his feet' these are the four lower lands set beneath the great middle land. Corresponds antithetically to the three lands on the head.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 12,
+      "coptic_form": "ϩⲛ̄ [ϯⲟⲩⲉ] ⲛⲟⲩⲣ̄ϣⲉ ⲕⲁⲧⲁ ⲟⲩⲁⲓ̈ϣ ⲟⲩⲁⲓ̈ϣ",
+      "decision": "The summary line 'in the five watches each at its season' wraps the cosmic-temporal framework before launching into the per-watch description (lines 12ff). The 'season' (ⲟⲩⲁⲓ̈ϣ ⲟⲩⲁⲓ̈ϣ) means 'each at its proper time.'",
+      "confidence": "high"
+    },
+    {
+      "segment": 14,
+      "coptic_form": "ⲁ ⲡⲛⲁⲃⲉ ⲟⲩⲱϣⲉ ⲭⲉϩⲁⲃⲉⲃⲉ ⲁϩⲣⲏⲓ̈",
+      "decision": "ⲭⲉϩⲁⲃⲉⲃⲉ parsed as infinitive of a verb of bubbling/gushing-up (cf. ⲃⲉⲃⲉ 'gush forth' in glossary). 'Sin sought to gush up against the icon of the Ambassador' fits the Manichaean motif of dark substance straining upward toward the Third Ambassador's revealed image and being repelled.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲡⲛⲁϭ ⲛ̄ⲣ̄ⲣⲟ ⲛⲧⲉ ⲡⲧⲁⲓ̈ⲟ ⲉⲧⲉ ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ",
+      "decision": "Identification: 'the great King of Honor, that is the Egregoroi.' This is striking — typically the King of Honor is a single hypostasis (in glossary). Here he is glossed as the Watchers (Egregoroi). Possibly an exegetical equation specific to this passage: in the King of Honor's watch, the Egregoroi-event takes place (their descent and binding by the four angels).",
+      "confidence": "high"
+    },
+    {
+      "segment": 20,
+      "coptic_form": "ϣⲁⲛⲧⲟⲩⲫⲃ̄ⲓⲁⲩ",
+      "decision": "Read as ⲧⲟⲩ-ⲫⲃⲓⲁⲩ from ⲫⲃⲟ 'subdue, vanquish' (in glossary). 'Until they were subdued' fits the Manichaean myth of the Egregoroi's binding by the four angels after their descent.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 23,
+      "coptic_form": "[ⲁ ⲟ]ⲩⲕⲓⲛⲏⲥⲓⲥ ϣⲱⲡⲉ",
+      "decision": "The form ⲁⲩⲕⲓⲛⲏⲥⲓⲥ (with restored ⲁ) reflects Lyc. indefinite-article ⲁⲩ for ⲟⲩ before the Greek loanword κίνησις 'motion.' Standard Manichaean term for cosmic disturbance.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 24,
+      "coptic_form": "ⲧⲉⲓⲏⲙⲙⲁϩⲉ ⲥⲱϩⲧ",
+      "decision": "ⲏⲙⲙⲁϩⲉ tentatively parsed as a verbal noun on ⲉⲙⲁϩⲧⲉ 'grasp, exercise authority' — 'this grasping/seizure'; ⲥⲱϩⲧ qualitative of ⲥⲁϩⲧ̄ 'weave, intertwine.' Together: 'this seizure was woven together with the rising-up of the three wheels' — the King of Glory's authority over the wheels operates as an integrated cosmic-mechanical event. Confidence low; alternative readings possible.",
+      "confidence": "low"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲁⲩⲕⲱϩ ⲛ̄ⲧⲟⲩⲙⲣ̄ⲣⲉ",
+      "decision": "ⲕⲱϩ taken as 'stretch out' (Crum); 'they stretched out their bonds' — describes the Omophoros's lower extremities (the four lands at his feet) drying up and their fastenings being pulled taut, producing the great earthquake. Could alternatively mean 'kindled' or 'were jealous-of'; spatial sense fits best.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 31,
+      "coptic_form": "ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ ⲉⲧⲁⲓ̈ⲧⲉⲟⲩⲁⲩ",
+      "decision": "ⲡⲁⲣⲁⲙⲡⲧⲟⲗⲏ — Greek παρεμβολή 'array, encampment' (orthographic variant of ⲡⲁⲣⲁⲙⲡⲟⲗⲏ in glossary; cf. plural ⲡⲁⲣⲁⲙⲡⲟⲗⲁⲩⲉ also in glossary). 'The array which I have proclaimed' refers to the cosmographic structure (5 watches × cosmic events) the apostle has just enumerated.",
+      "confidence": "high"
+    }
+  ],
+  "page": 171
+}

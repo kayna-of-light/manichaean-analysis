@@ -1,0 +1,769 @@
+{
+  "teaching": 74,
+  "total_gaps_in_core": 35,
+  "gaps_restored": 28,
+  "gaps_unrestorable": 7,
+  "restoration_note": "Teaching describes envy as the self's first motion: Hyle, seeing the divine humanity descend, claims its forms by counterfeiting them. The text catalogs successive 'times' — venom on garments, icon of the Ambassador, character into flesh, Adam's power, the firstborn works, Christ, cross, righteousness. The formulaic 'ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲁ-' (she envied) recurs and constrains many gaps. Editor restorations confirmed where they fit. Larger gaps (6, 7, 24, 27, 33) lack sufficient constraint and are marked unrestorable. Gap 1 also resists a clean fit despite multiple tries.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4410,
+      "chapter": 73,
+      "line": 3,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉ",
+      "basis": "Editor's restoration completes ϣⲱⲡⲉ 'come into being' across line break; standard Coptic perfect with ⲉⲧⲁⲥ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4411,
+      "chapter": 73,
+      "line": 4,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap between ⲉⲧⲁ and ⲛⲉ resists confident constraint; verb form unclear and editor offers no proposal.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 2,
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲥⲕⲱ",
+      "basis": "4-char verb governing 'her venom'; ⲁⲥⲕⲱ 'she placed/cast' fits the formula and parallels later ⲁⲥⲕⲱ ⲙⲡⲭⲁⲣⲁⲕⲧⲏⲣ in 4418.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 3,
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Editor's restoration completing ⲧⲉⲥⲙⲉⲧⲟⲩ 'her venom'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲱ",
+      "basis": "3-char connector between 'her venom' and 'her wickedness'; ⲁⲩⲱ 'and' fits length and standard parallelism.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 5,
+      "section": 4413,
+      "chapter": 73,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration completing ⲍⲃⲥⲁⲩⲉ 'garments'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4413,
+      "chapter": 73,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "15-char gap completing the predicate of 'her wickedness onto his garments'; too unconstrained for honest restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 4414,
+      "chapter": 73,
+      "line": 7,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14-char object/clause after 'she destroyed them, her ___'; insufficient anchor for confident fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 4415,
+      "chapter": 73,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲥ",
+      "basis": "Editor's restoration completing ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'Ambassador'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 4416,
+      "chapter": 73,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration completing ⲡⲥⲁⲛⲧⲡⲉ 'the upper place'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 4417,
+      "chapter": 73,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲙ̄",
+      "basis": "Editor's restoration of preposition ⲍⲙ̄/ϩⲙ̄ 'in'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 4417,
+      "chapter": 73,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Editor's restoration completing ⲍⲓⲕⲱⲛ 'icon' across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 4418,
+      "chapter": 73,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙ",
+      "basis": "Editor's restoration completing ⲉⲧⲙⲙⲉⲩ 'that'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 4420,
+      "chapter": 73,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧⲙⲁ",
+      "basis": "Editor's restoration of feminine ordinal prefix forming ⲧⲧⲙⲁⲍϣⲁⲙⲧ 'the third'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 4420,
+      "chapter": 73,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲡ",
+      "basis": "Editor's restoration completing ⲡϣⲁⲣⲡ 'the first'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 4421,
+      "chapter": 73,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲣⲱ",
+      "basis": "Editor's restoration completing ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 4422,
+      "chapter": 73,
+      "line": 15,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲥⲁⲣⲝ",
+      "basis": "Continues 'she begot her in a ___ of Adam'; parallel with ⲍⲛ̄ ⲧⲥⲁⲣⲝ 'in the flesh' from 4419 (her own begetting in flesh).",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 17,
+      "section": 4423,
+      "chapter": 73,
+      "line": 16,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ",
+      "basis": "Formulaic 'the Nth time also she envied' parallels 4420 'ⲍϣⲁⲙⲧ ⲛⲥⲁⲡ ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 18,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲥⲣ̄ⲫ",
+      "basis": "Forms ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ 'she envied' with the visible -ⲑⲟⲛ-, repeating the formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ 'she envied'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲣⲡⲙⲙⲓ",
+      "basis": "Forms ⲛⲉⲛϣⲁⲣⲡ ⲙ̄ⲙⲓⲥⲉ 'the firstborn ones' (ⲁⲛ = ⲛⲉⲛ pl. art.) matching the editor's translation.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 21,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲍⲃⲏⲩⲉ",
+      "basis": "Per the reading, 'the firstborn ones and the first works'; ⲍⲃⲏⲩⲉ 'works' fits parallelism.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 22,
+      "section": 4425,
+      "chapter": 73,
+      "line": 18,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲥⲣ̄ⲫⲑⲟⲛ",
+      "basis": "Visible 'ⲉ ⲡⲭ̄ⲥ' suggests verb-ending ⲉ + Christ as object; standard formula ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ ⲡⲭⲥ 'she envied Christ'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 23,
+      "section": 4426,
+      "chapter": 73,
+      "line": 19,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛⲁⲓⲱⲛ",
+      "basis": "Previous segment ends 'ⲡⲓⲱⲧ ⲛⲛ-'; the reading has 'father of all'. ⲛ̄ⲛⲁⲓⲱⲛ ⲧⲏⲣⲟⲩ 'of all the aeons' fits.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 24,
+      "section": 4427,
+      "chapter": 73,
+      "line": 20,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Continuation of ⲁⲧⲉ̄ϩ- from prior line into 'wood of the cross' is uncertain; multiple readings possible.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 4427,
+      "chapter": 73,
+      "line": 20,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲧⲥⲟⲫ",
+      "basis": "Visible -ⲓⲁ trace + envy-formula suggests ⲁⲧⲥⲟⲫⲓⲁ 'wisdom/Sophia', companion to righteousness in next segment.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 26,
+      "section": 4428,
+      "chapter": 73,
+      "line": 21,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲧⲇ",
+      "basis": "Forms ⲁⲧⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ 'against righteousness'; preposition ⲁ + ⲧ + ⲇ matches the visible -ⲓⲕⲁⲓⲟⲥⲩⲛⲏ.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 27,
+      "section": 4428,
+      "chapter": 73,
+      "line": 21,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Object of 'she was zealous against' too unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲉⲩ",
+      "basis": "Forms ⲡⲉⲩⲥⲁⲩⲍⲥ̄ 'their gathering' with the visible -ⲥⲁⲩⲍⲥ̄ (gathering, ⲥⲱⲩϩ); ⲧⲏⲣⲟⲩ 'all' follows.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 29,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲕⲓⲁ",
+      "basis": "Visible 'ⲛ̄ⲕ-' + theme of envy/wickedness recurring (cf. ⲕⲁⲕⲓⲁ in 4430-4431); ⲛ̄ⲕⲁⲕⲓⲁ 'of evil' fits.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 30,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲙⲛⲡ",
+      "basis": "Forms ⲙⲛ̄ ⲡⲟⲩⲙⲉⲩⲉ 'and their thought', joining 'gathering of evil' with 'their thought'.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 31,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲩⲉ",
+      "basis": "Completes ⲙⲉⲩⲉ 'thought' with visible ⲙⲉ̄- prefix.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 4430,
+      "chapter": 73,
+      "line": 23,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲍⲟⲩⲛ",
+      "basis": "Previous infinitive ⲁⲭⲱϩ 'to penetrate' takes directional ⲁϩⲟⲩⲛ ⲛ̄ⲍⲏⲧⲟⲩ 'into them'.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 33,
+      "section": 4430,
+      "chapter": 73,
+      "line": 23,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Verb ⲁⲥⲃ- with object ⲙ̄- not sufficiently constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 34,
+      "section": 4431,
+      "chapter": 73,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration completing ⲕⲁⲕⲓⲁ 'wickedness' across the line break.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4410,
+      "chapter": 73,
+      "line": 3,
+      "core_english": "All envy is the first nature that came into being{0}"
+    },
+    {
+      "section": 4411,
+      "chapter": 73,
+      "line": 4,
+      "core_english": "in the worlds of the Darkness. In this envy that {1}"
+    },
+    {
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "core_english": "within him, the First Man, {2} her venom {3}"
+    },
+    {
+      "section": 4413,
+      "chapter": 73,
+      "line": 6,
+      "core_english": "her wickedness onto his garments{4}"
+    },
+    {
+      "section": 4414,
+      "chapter": 73,
+      "line": 7,
+      "core_english": "She cut them, she destroyed them; her {5}"
+    },
+    {
+      "section": 4415,
+      "chapter": 73,
+      "line": 8,
+      "core_english": "She envied the first icon of the Ambassador,"
+    },
+    {
+      "section": 4416,
+      "chapter": 73,
+      "line": 9,
+      "core_english": "which had been revealed to her from the Height that is in the upper place."
+    },
+    {
+      "section": 4417,
+      "chapter": 73,
+      "line": 10,
+      "core_english": "In his likeness, which she beheld, she set the imprint together with the i-"
+    },
+    {
+      "section": 4418,
+      "chapter": 73,
+      "line": 11,
+      "core_english": "con of the flesh. She placed the character of that icon"
+    },
+    {
+      "section": 4420,
+      "chapter": 73,
+      "line": 13,
+      "core_english": "The third time also, she envied Adam, the fir-"
+    },
+    {
+      "section": 4421,
+      "chapter": 73,
+      "line": 14,
+      "core_english": "st man; she snatched a power from his hand. She begot her in a"
+    },
+    {
+      "section": 4422,
+      "chapter": 73,
+      "line": 15,
+      "core_english": "{6} of Adam."
+    },
+    {
+      "section": 4423,
+      "chapter": 73,
+      "line": 16,
+      "core_english": "The fourth time, {7}"
+    },
+    {
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "core_english": "{8} envied {9} all the firstborn ones and the first {10},"
+    },
+    {
+      "section": 4425,
+      "chapter": 73,
+      "line": 18,
+      "core_english": "{11} the blessed Christ, who is the father of"
+    },
+    {
+      "section": 4426,
+      "chapter": 73,
+      "line": 19,
+      "core_english": "all {12}, whom he also reached. She also envied his"
+    },
+    {
+      "section": 4427,
+      "chapter": 73,
+      "line": 20,
+      "core_english": "{13} the wood of the cross. She envied {14}"
+    },
+    {
+      "section": 4428,
+      "chapter": 73,
+      "line": 21,
+      "core_english": "{15} Righteousness; she was zealous against {16} to..."
+    },
+    {
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "core_english": "{17} their entire gathering of {18} and {19} their thought, to penetrate"
+    },
+    {
+      "section": 4430,
+      "chapter": 73,
+      "line": 23,
+      "core_english": "{20} within them through the heart's-purpose of her evil; she {21} them"
+    },
+    {
+      "section": 4431,
+      "chapter": 73,
+      "line": 55,
+      "core_english": "Matter, the enthumesis of Death. Envy — this is, of her wic{22}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4410,
+      "chapter": 73,
+      "line": 3,
+      "proposed_english": "",
+      "coptic_gap_refs": [
+        0
+      ],
+      "basis": "ⲡⲉ closes ϣⲱⲡⲉ 'came into being' — already absorbed into the English verb.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4411,
+      "chapter": 73,
+      "line": 4,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        1
+      ],
+      "basis": "Coptic gap unrestorable; the relative clause cannot be confidently completed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "proposed_english": "she cast",
+      "coptic_gap_refs": [
+        2
+      ],
+      "basis": "ⲁⲥⲕⲱ 'she placed/cast' supplies the verb governing 'her venom'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4412,
+      "chapter": 73,
+      "line": 5,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        3,
+        4
+      ],
+      "basis": "ⲩ closes ⲧⲉⲥⲙⲉⲧⲟⲩ 'her venom' (already English'd as 'her venom') and ⲁⲩⲱ adds the conjunction joining venom to wickedness.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4413,
+      "chapter": 73,
+      "line": 6,
+      "proposed_english": "s",
+      "coptic_gap_refs": [
+        5,
+        6
+      ],
+      "basis": "ⲉ pluralizes ⲍⲃⲥⲁⲩⲉ 'garments'; remaining 15-char clause unrestorable.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4414,
+      "chapter": 73,
+      "line": 7,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        7
+      ],
+      "basis": "14-char gap unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 4422,
+      "chapter": 73,
+      "line": 15,
+      "proposed_english": "flesh",
+      "coptic_gap_refs": [
+        16
+      ],
+      "basis": "ⲥⲁⲣⲝ 'flesh' parallels 4419 'in the flesh — her own very begetting'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 4423,
+      "chapter": 73,
+      "line": 16,
+      "proposed_english": "again she envied",
+      "coptic_gap_refs": [
+        17
+      ],
+      "basis": "Restored ⲁⲛ ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ following the formula 'the Nth time also she envied'.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "proposed_english": "she",
+      "coptic_gap_refs": [
+        18
+      ],
+      "basis": "ⲁⲥⲣ̄ⲫ supplies the perfect prefix and root; English subject pronoun.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "proposed_english": "",
+      "coptic_gap_refs": [
+        19
+      ],
+      "basis": "ⲉ closes the verb ⲁⲥⲣ̄ⲫⲑⲟⲛⲉ; absorbed into 'envied'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 4424,
+      "chapter": 73,
+      "line": 17,
+      "proposed_english": "works",
+      "coptic_gap_refs": [
+        20,
+        21
+      ],
+      "basis": "ⲣⲡⲙⲙⲓ closes 'firstborn'; ⲍⲃⲏⲩⲉ supplies 'works' per the reading's 'firstborn things and first works'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 4425,
+      "chapter": 73,
+      "line": 18,
+      "proposed_english": "she envied",
+      "coptic_gap_refs": [
+        22
+      ],
+      "basis": "ⲁⲥⲣ̄ⲫⲑⲟⲛ supplies 'she envied' the formulaic verb governing Christ.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 4426,
+      "chapter": 73,
+      "line": 19,
+      "proposed_english": "the aeons",
+      "coptic_gap_refs": [
+        23
+      ],
+      "basis": "ⲛⲁⲓⲱⲛ 'aeons' completes 'father of all the aeons'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 4427,
+      "chapter": 73,
+      "line": 20,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "basis": "Connection between his '___' and 'the wood of the cross' unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 4427,
+      "chapter": 73,
+      "line": 20,
+      "proposed_english": "Wisdom",
+      "coptic_gap_refs": [
+        25
+      ],
+      "basis": "ⲁⲧⲥⲟⲫⲓⲁ 'against Sophia/Wisdom', companion to Righteousness.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 4428,
+      "chapter": 73,
+      "line": 21,
+      "proposed_english": "against",
+      "coptic_gap_refs": [
+        26
+      ],
+      "basis": "ⲁⲧⲇ supplies preposition ⲁ + ⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ 'against righteousness'.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 4428,
+      "chapter": 73,
+      "line": 21,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "basis": "Object of zealous-against unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "proposed_english": "their",
+      "coptic_gap_refs": [
+        28
+      ],
+      "basis": "ⲡⲉⲩ supplies 'their' before ⲥⲁⲩⲍⲥ̄ 'gathering'.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "proposed_english": "evil",
+      "coptic_gap_refs": [
+        29
+      ],
+      "basis": "ⲁⲕⲓⲁ closes ⲕⲁⲕⲓⲁ 'evil/wickedness'.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 4429,
+      "chapter": 73,
+      "line": 22,
+      "proposed_english": "the",
+      "coptic_gap_refs": [
+        30,
+        31
+      ],
+      "basis": "ⲙⲛ̄ ⲡⲟⲩⲙⲉⲩⲉ 'and the(ir) thought'; ⲩⲉ closes ⲙⲉⲩⲉ 'thought'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 4430,
+      "chapter": 73,
+      "line": 23,
+      "proposed_english": "into",
+      "coptic_gap_refs": [
+        32
+      ],
+      "basis": "ⲁϩⲟⲩⲛ ⲛ̄ⲍⲏⲧⲟⲩ 'into them' supplies the directional preposition.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 4430,
+      "chapter": 73,
+      "line": 23,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        33
+      ],
+      "basis": "Verb ⲁⲥⲃ- unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 4431,
+      "chapter": 73,
+      "line": 55,
+      "proposed_english": "ked-",
+      "coptic_gap_refs": [
+        34
+      ],
+      "basis": "ⲁ closes ⲕⲁⲕⲓⲁ 'wickedness' across the line break.",
+      "confidence": "high"
+    }
+  ]
+}

@@ -15,7 +15,14 @@ This project is part of a multi-repository research framework:
 
 ## Artifact Storage
 
-Generated `output/` artifacts are mirrored to Google Drive under `.git-data/manichaean-analysis/output/` and are not tracked in Git. See `docs/artifact_storage.md` for the sync command and recovery policy.
+Git retains hard-to-reproduce LLM results, manual corrections, and reviewed OCR
+inputs, including selected data under `output/`. Known rebuildable images,
+geometry, reports, and sequence streams are selectively ignored. The complete
+artifact tree is also mirrored to Google Drive under
+`.git-data/manichaean-analysis/`. See [the storage policy](docs/artifact_storage.md)
+for retention rules, rebuild sources, and recovery commands. Before pushing, run
+`python scripts/check_git_artifact_sizes.py` to check every unpublished commit
+against GitHub's file-size limit.
 
 ## Why Manichaeism?
 

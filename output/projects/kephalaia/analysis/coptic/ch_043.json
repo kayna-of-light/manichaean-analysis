@@ -1,0 +1,100 @@
+{
+  "chapter_number": 43,
+  "manuscript_pages": "111,18 - 113,25",
+  "coptic_tokens": 777,
+  "greek_loanwords": {
+    "total_density_pct": 1.93,
+    "cosmological_density_pct": 0.51,
+    "ecclesiastical_density_pct": 0.39,
+    "cosmological_ratio": 0.571,
+    "cosmological_count": 4,
+    "ecclesiastical_count": 3,
+    "general_count": 8,
+    "total_greek": 15,
+    "cosmological_words": {
+      "ⲁⲓⲱⲛ": 1,
+      "ⲕⲟⲥⲙⲟⲥ": 3
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.13,
+    "dialogue_openings": 1,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 1,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "Ⲧⲟⲧⲉ ⲡⲁⲭⲉ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 83,
+    "sahidic_count": 81,
+    "total_dialect_markers": 164,
+    "subachmimic_ratio": 0.506,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×8",
+      "ⲍⲛ̄×4",
+      "ⲁⲍ×40",
+      "ⲍⲓ×6",
+      "ⲍⲁ×2",
+      "ⲍⲏⲧ×4",
+      "ⲍⲱⲃ×1",
+      "ⲍⲣⲏ×7",
+      "ⲍⲉ×9",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×5",
+      "ϩⲛ̄×3",
+      "ⲁϩ×47",
+      "ϩⲓ×6",
+      "ϩⲁ×3",
+      "ϩⲏⲧ×2",
+      "ϩⲱⲃ×2",
+      "ϩⲣⲏ×5",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 115,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 23,
+    "bracketed_restorations": 77,
+    "empty_brackets": 5,
+    "leer_markers": 7
+  },
+  "english_classification": {
+    "chapter_number": 43,
+    "chapter_title": "Concerning the Vessels",
+    "total_paragraphs": 12,
+    "core_paragraphs": 12,
+    "core_percentage": 92,
+    "chapter_note": "A remarkably clean teaching chapter dominated by substrate cosmological process description. The chapter describes the three-fold discharge cycle: the Father of Life pours dark vessels (water, darkness, fire) onto earth, the corresponding dark elements in the earths are drawn upward by sympathetic attraction ('like draws like'), then both are swept into prepared pits. The systematic parallel structure across paragraphs 9-11 (water, then darkness, then fire) is classic substrate enumeration. No editorial bridge, institutional, or exhortation material detected. The only later material is dialogue frame formulas in paragraphs 1, 2, 7, 8. The term 'Father of Life' for the demiurge (rather than 'Living Spirit') may preserve an earlier stratum as Gardner notes. The negative editorial fatigue score confirms the chapter stays consistently substratic throughout.",
+    "classification_distribution": {
+      "mixed": 4,
+      "substrate": 8
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (92%) with high cosmological Greek ratio (0.57)"
+    ],
+    "discordance_flags": [
+      "DISCORDANT: Coptic has 1 dialogue opening(s) but English classified 0 paragraphs as dialogue_frame"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

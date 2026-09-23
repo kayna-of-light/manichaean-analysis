@@ -1,0 +1,2488 @@
+{
+  "teaching": 85,
+  "total_gaps_in_core": 119,
+  "gaps_restored": 85,
+  "gaps_unrestorable": 34,
+  "restoration_note": "The teaching catalogues three states of perception (clouds) that bear influx — rising from fire (love), water (natural truth), and wind (thought) — each appearing in the air-of-the-midst over against the Virgin of Light. Editor restorations are largely confirmed by the formulaic structure: each cloud has its 'sign,' the archons clothe themselves with what they reach upon, and the Lord's discriminating operations (angels) strip them. Many small gaps (single letters, plural articles, suffix completions) are constrained by the surrounding morphology. Larger lacunae in sections 4764–4765, 4793–4795, 4798, 4802–4804, 4813–4814 remain unrestorable: the parallel formulas are partially preserved but the specific lexical content of those particular clauses is too damaged to reconstruct without invention. The cosmographic finale (seven fossae, great sea, Omophoros) is recoverable from the lexicon's standard Manichaean cosmography.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4744,
+      "chapter": 95,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲗ",
+      "basis": "Standard ⲁⲃⲁⲗ 'forth' completion across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4745,
+      "chapter": 95,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲏⲩ",
+      "basis": "3 chars after partial ⲛ̄: ⲛ̄ⲧⲏⲩ 'with the winds.' The cloud rising from the earth bears wind/thought (one of the three causes named below).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 2,
+      "section": 4747,
+      "chapter": 95,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Directional ⲁ- 'to' continuing into ⲧⲡⲉ 'the heaven' on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4748,
+      "chapter": 95,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲛⲉ",
+      "basis": "Standard title ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ 'Virgin of Light' confirmed by lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4748,
+      "chapter": 95,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completing relative ⲉⲧⲉ 'which' continuing onto next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4749,
+      "chapter": 95,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲍ ⲉⲧ",
+      "basis": "Completes ⲛⲓⲱⲣⲍ 'the watching/gazing' (cf. ⲣⲉϩⲓ̈ⲱⲣⲍ 'watcher') with relative ⲉⲧ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲉ ⲡ",
+      "basis": "4 chars likely 'ⲉⲧⲉ ⲡ-' with following 'his recompense.' Reconstruction tentative.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 7,
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Definite article ⲧ giving ⲧⲉϩϣⲃⲓⲱ 'his recompense.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4 chars after ⲱ (end of ⲧⲉϩϣⲃⲓⲱ); continuation unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 4751,
+      "chapter": 95,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "13 chars after ⲟⲩⲃⲉ 'against' — purification language requires a specific opposing element (smoke/darkness/fire) but the exact phrasing cannot be recovered.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 4752,
+      "chapter": 95,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars; the manifestation-formula continues but specifics damaged beyond recovery.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 11,
+      "section": 4753,
+      "chapter": 95,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲉ",
+      "basis": "Particle 'but/and' (ⲁⲉ = ⲇⲉ) opening the new clause about archons; partial ⲉ visible.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 12,
+      "section": 4753,
+      "chapter": 95,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲗ",
+      "basis": "ⲣ̄-ⲃⲁⲗ ⲁⲃⲁⲗ idiom 'peer forth' completing across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 4754,
+      "chapter": 95,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲓ",
+      "basis": "Definite plural article ⲛⲓ- continuing to ⲁⲅⲅⲉⲗⲟⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 4755,
+      "chapter": 95,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Completes ⲥⲉⲥⲁⲩⲛⲉ 'they know.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 4756,
+      "chapter": 95,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲙ ⲁ",
+      "basis": "Reduplicated ⲟⲁⲙⲟⲙ 'strike' + directional ⲁ- continuing into ⲣⲁϩ on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 4757,
+      "chapter": 95,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes relative ⲉⲧⲉⲣⲉ 'in which' opening next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 4758,
+      "chapter": 95,
+      "line": 24,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩ ⲁ",
+      "basis": "Completes ⲟⲁⲡⲟⲩ 'strike them' + directional ⲁ- continuing into ⲣⲁϩ.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 18,
+      "section": 4759,
+      "chapter": 95,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ ⲁ",
+      "basis": "ⲁⲍⲟⲩⲛ ⲁ- 'inward to' continuing across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 4760,
+      "chapter": 95,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Completes Greek loanword ⲗⲏⲥⲧⲏⲥ 'thief.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 4761,
+      "chapter": 95,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩ",
+      "basis": "ⲡⲁⲣⲁⲣⲁϩ 'more than him.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 4763,
+      "chapter": 95,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Definite article ⲙ̄- with relative ⲡⲉⲧ- 'with that which.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 4764,
+      "chapter": 95,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars in damaged context; specifics unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 4764,
+      "chapter": 95,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4 chars in damaged context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 24,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Heavily damaged passage with multiple small lacunae.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Heavily damaged passage.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 26,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Heavily damaged passage.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 27,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Heavily damaged passage.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 4766,
+      "chapter": 95,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲏ",
+      "basis": "Completes ⲟⲩϣⲏⲛ 'a tree' — first member of the triad tree/cattle/men.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 4766,
+      "chapter": 95,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉⲧ",
+      "basis": "Relative perfect ⲡⲉⲧⲁⲩ- 'which they have' continuing into ⲟⲛⲙⲁⲓⲧ 'opened way.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 4769,
+      "chapter": 95,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Completes ⲛϣⲏⲣⲉ 'sons' continuing into next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 4771,
+      "chapter": 95,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "Ⲧ",
+      "basis": "Feminine definite article ⲧ- opening ⲧⲕⲗⲟⲟⲗⲉ 'the cloud.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 4774,
+      "chapter": 95,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Completes ⲥⲱⲧⲙ̄ 'hear.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 4775,
+      "chapter": 95,
+      "line": 41,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars opening line; transition phrase unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 34,
+      "section": 4776,
+      "chapter": 95,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣ",
+      "basis": "Completes ⲁⲣⲁⲩ 'unto them' from preceding line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 4777,
+      "chapter": 95,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩⲕⲗⲟⲟⲗ",
+      "basis": "Editor's restoration; ⲁⲩⲕⲗⲟⲟⲗⲉ 'a cloud' continues the cloud-context.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 36,
+      "section": 4778,
+      "chapter": 95,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱⲩ ⲛⲧⲁⲩ",
+      "basis": "ⲛⲥⲱⲩ 'after them' completing 'leave behind' + ⲛⲧⲁⲩ 'they' opening emphatic clause.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 4778,
+      "chapter": 95,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲛ",
+      "basis": "Completes future relative ⲉⲧⲟⲩⲛⲁ- 'where they shall.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 4779,
+      "chapter": 95,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲍⲁϩ",
+      "basis": "Formulaic ⲙⲁ ⲛⲓⲙ ⲉⲧⲟⲩⲛⲁⲧⲉⲍⲁϩ 'every place where they shall reach' (recurring on this page).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 4779,
+      "chapter": 95,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲱ",
+      "basis": "Completes Greek loanword ⲭⲓⲱⲛ 'snow.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 4780,
+      "chapter": 95,
+      "line": 46,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲱⲣ",
+      "basis": "4 chars ending in ⲁϩ; possibly ⲡⲱⲣⲁϩ 'split, smash' affecting the seed-fruits, but uncertain.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 41,
+      "section": 4781,
+      "chapter": 95,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲍⲛ̄ ⲙ",
+      "basis": "5 chars before 'ⲁ ⲛⲓⲙ': likely ⲍⲛ̄ ⲙⲁ ⲛⲓⲙ 'in every place.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 42,
+      "section": 4781,
+      "chapter": 95,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛ ⲉⲧ",
+      "basis": "ⲁⲛ + relative ⲉⲧ- forming standard 'every place also where.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 4782,
+      "chapter": 95,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲓⲁⲅⲅ",
+      "basis": "5 chars completing into -ⲉⲗⲟⲥ; ⲛⲓⲁⲅⲅⲉⲗⲟⲥ 'the angels' fits the contrast with 'my members.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 44,
+      "section": 4783,
+      "chapter": 95,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲱⲧ",
+      "basis": "Standard doublet ⲡⲱⲧ ⲛ̄ⲥⲱⲣ 'flight and dispersal.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 4784,
+      "chapter": 95,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲕⲗⲟⲟⲗⲉ",
+      "basis": "ⲧⲕⲗⲟⲟⲗⲉ recurs as the chapter's keyword; here introducing the third (wind) cloud.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 4785,
+      "chapter": 95,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "Completes ⲡⲁⲣⲑⲉⲛⲟⲥ across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 4786,
+      "chapter": 95,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲑⲉⲛⲟⲥ",
+      "basis": "Completes ⲡⲁⲣⲑⲉⲛⲟⲥ from preceding line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 4787,
+      "chapter": 95,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲡⲛⲟⲫⲟⲥ",
+      "basis": "Greek loanword γνόφος 'gloom'; fits the dark-windy sign of the wind-cloud.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 49,
+      "section": 4788,
+      "chapter": 95,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Completes preposition ⲍⲛ̄ 'in.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 50,
+      "section": 4789,
+      "chapter": 95,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Completes ⲧⲟⲩⲃⲟ 'purification.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 51,
+      "section": 4791,
+      "chapter": 95,
+      "line": 57,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Completes ⲧⲟⲩⲍⲓⲕⲱⲛ 'their icon.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 4793,
+      "chapter": 95,
+      "line": 59,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars; the verbal object after 'they wake' unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 53,
+      "section": 4793,
+      "chapter": 95,
+      "line": 59,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲁϩ",
+      "basis": "4 chars; verb governing 'their ships' — likely 'break/wreck' (ⲡⲱϩ Lyc. ⲡⲁϩ), but uncertain.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 54,
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Completes ⲛⲟⲩⲧⲉⲕⲟⲩⲉ 'their destruction'; partial ⲉ at end fits.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 55,
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars in damaged context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 56,
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars in damaged context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 57,
+      "section": 4795,
+      "chapter": 95,
+      "line": 61,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲍⲟⲩⲛ",
+      "basis": "4 chars likely directional 'inside/into' before 'wandering'; standard idiom.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 58,
+      "section": 4796,
+      "chapter": 95,
+      "line": 62,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲛⲉ ⲛⲧⲟⲩⲛⲟⲩ ⲉⲩⲛⲁ",
+      "basis": "Editor's restoration; completes 'of the Light, in the hour they shall' — parallel to other cloud-formulas.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 59,
+      "section": 4797,
+      "chapter": 95,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Completes ⲃⲁϣⲟⲩ 'they shall be released.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 60,
+      "section": 4797,
+      "chapter": 95,
+      "line": 63,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars after 'from her'; specifics unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 61,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars in damaged sequence.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 62,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars in damaged sequence.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 63,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars in damaged sequence.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 64,
+      "section": 4799,
+      "chapter": 95,
+      "line": 65,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars between repeated 'her sign' phrases; unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 65,
+      "section": 4801,
+      "chapter": 95,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲯ",
+      "basis": "Completes ⲥⲱⲧⲯ = ⲥⲱⲧⲡ̄ 'chosen' qualitative.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 66,
+      "section": 4802,
+      "chapter": 95,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars in damaged context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 67,
+      "section": 4802,
+      "chapter": 95,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars in damaged context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 68,
+      "section": 4803,
+      "chapter": 95,
+      "line": 69,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars before 'ⲣⲉⲩ'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 69,
+      "section": 4803,
+      "chapter": 95,
+      "line": 69,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4 chars with partial ⲯ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 70,
+      "section": 4803,
+      "chapter": 95,
+      "line": 70,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after 'ⲟⲩ'; uncertain object of ⲃⲓ 'bear.'",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 71,
+      "section": 4804,
+      "chapter": 95,
+      "line": 70,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "17 chars; too damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 72,
+      "section": 4804,
+      "chapter": 95,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲧⲉⲗⲟⲥ",
+      "basis": "Editor's restoration; possibly Lyc. variant of ⲁⲅⲅⲉⲗⲟⲥ 'messengers/angels.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 73,
+      "section": 4806,
+      "chapter": 95,
+      "line": 72,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍⲣⲏⲓ̈",
+      "basis": "Standard collocation ⲭⲉⲥⲧ ⲁⲍⲣⲏⲓ̈ 'depart upward.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 74,
+      "section": 4807,
+      "chapter": 95,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ",
+      "basis": "Completes ⲁⲃⲁⲗ 'forth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 75,
+      "section": 4807,
+      "chapter": 95,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲍⲓⲕⲱⲛ",
+      "basis": "ⲧⲍⲓⲕⲱⲛ ⲛ̄ⲧⲡⲁⲣⲑⲉⲛⲟⲥ 'icon of the Virgin' continuing across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 76,
+      "section": 4808,
+      "chapter": 95,
+      "line": 74,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars; the specific sign-formula for the joined-air cloud unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 77,
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Completes ⲧⲟⲩⲃⲟ 'purification' (parallel to other cloud-sections).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 78,
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲧⲁⲛ",
+      "basis": "Standard collocation ⲍⲛ̄ ⲟⲩⲍⲣⲁⲕ ⲙⲛ ⲟⲩⲙⲧⲁⲛ 'in stillness and rest.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 79,
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars between 'rest' and 'archons' — unclear connector.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 80,
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲓⲁⲣⲭⲱⲛ",
+      "basis": "ⲛⲓⲁⲣⲭⲱⲛ ⲉⲧⲛⲁⲃⲁϣⲟⲩ continues into next line 'who shall be released.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 81,
+      "section": 4810,
+      "chapter": 95,
+      "line": 76,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes ⲛⲥⲉⲉⲓ 'and they shall come.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 82,
+      "section": 4811,
+      "chapter": 95,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲯ",
+      "basis": "Editor's restoration; ⲟ̄ⲛⲧⲯ from ⲱⲛⲧ⸗ 'go to.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 83,
+      "section": 4812,
+      "chapter": 95,
+      "line": 78,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after 'unutterable thing of them'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 84,
+      "section": 4813,
+      "chapter": 95,
+      "line": 79,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars with partial ⲥ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 85,
+      "section": 4813,
+      "chapter": 95,
+      "line": 79,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Completes ϣⲁⲛⲧⲉ 'until.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 86,
+      "section": 4814,
+      "chapter": 95,
+      "line": 80,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "No apparatus carried forward; unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 87,
+      "section": 4817,
+      "chapter": 95,
+      "line": 83,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁⲩⲃⲧⲟⲩ",
+      "basis": "Editor's restoration; visible -ⲧⲟⲩ as 3pl suffix; ϣⲁⲩⲃⲧⲟⲩ habitual + verb of bringing.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 88,
+      "section": 4817,
+      "chapter": 95,
+      "line": 83,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars between 'midst' and 'they swallow'; unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 89,
+      "section": 4818,
+      "chapter": 95,
+      "line": 84,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁⲩⲉⲣⲉ",
+      "basis": "Editor restoration; visible -ⲣⲉ suggests habitual + ⲉⲓⲣⲉ 'do/cause.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 90,
+      "section": 4818,
+      "chapter": 95,
+      "line": 84,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲕⲓⲛⲇⲩⲛⲟⲥ",
+      "basis": "Editor restoration; Greek κίνδυνος 'peril' in plural.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 91,
+      "section": 4819,
+      "chapter": 95,
+      "line": 85,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁ",
+      "basis": "Editor restoration ⲟ[ⲩⲁ] continuing into ⲟⲩⲁⲧⲟⲩ 'transfer them.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 92,
+      "section": 4820,
+      "chapter": 95,
+      "line": 86,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩⲁⲛⲉ",
+      "basis": "Editor restoration; the angels bring forth the light/manifestation from the souls.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 93,
+      "section": 4821,
+      "chapter": 95,
+      "line": 87,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲝ ⲛ̄ⲁⲁⲙⲱⲛ",
+      "basis": "Editor restoration; 'cast the demons' (Lyc. ⲁⲁⲙⲱⲛ = ⲇⲁⲓⲙⲱⲛ).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 94,
+      "section": 4821,
+      "chapter": 95,
+      "line": 87,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲍⲃⲁⲗ",
+      "basis": "ⲉⲧⲍⲃⲁⲗ = ⲉⲧϩⲓⲃⲟⲗ 'which is outside.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 95,
+      "section": 4822,
+      "chapter": 95,
+      "line": 88,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲛⲝⲟⲟⲣⲉ",
+      "basis": "Editor restoration; standard Manichaean cosmographic term 'place of dispersion.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 96,
+      "section": 4823,
+      "chapter": 95,
+      "line": 89,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲉ ⲉⲧϣⲟⲟⲡ ⲙ̄ⲡⲥⲁⲛⲃⲁⲗ ⲙⲡⲕⲟⲥⲙⲟ",
+      "basis": "Editor restoration; standard Manichaean cosmography 'the waters which exist on the outside of the cosmos.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 97,
+      "section": 4826,
+      "chapter": 95,
+      "line": 94,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars between 'fossae' and 'until'; the specific co-named structure unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 98,
+      "section": 4827,
+      "chapter": 95,
+      "line": 95,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁⲛⲧⲟⲩⲡⲱⲍ ⲁⲛⲕⲁⲍ ⲉⲧⲙⲡⲓⲧⲛⲉ",
+      "basis": "Editor restoration; 'until they reach the lands which are below.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 99,
+      "section": 4827,
+      "chapter": 95,
+      "line": 95,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars before 'feet of the Omophoros'; uncertain modifier.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 100,
+      "section": 4830,
+      "chapter": 95,
+      "line": 99,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲏⲧ",
+      "basis": "3 chars; per the reading the archons are running/fleeing as the angels chase them.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 101,
+      "section": 4831,
+      "chapter": 95,
+      "line": 100,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars opening clause; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 102,
+      "section": 4831,
+      "chapter": 95,
+      "line": 100,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after 'fear to them'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 103,
+      "section": 4832,
+      "chapter": 95,
+      "line": 101,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉⲧⲟⲩⲧⲟⲉ",
+      "basis": "Editor restoration; ⲧⲟⲉ 'hand over, entrust.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 104,
+      "section": 4834,
+      "chapter": 95,
+      "line": 103,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲡⲓϣⲏⲛ",
+      "basis": "6 chars; 'with the tree' parallels 'with the flesh' in same line — the tree-flesh pairing recurs.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 105,
+      "section": 4834,
+      "chapter": 95,
+      "line": 103,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "3 chars connector after 'begetting'; likely ⲛⲧⲉ 'of.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 106,
+      "section": 4835,
+      "chapter": 95,
+      "line": 104,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲁⲡⲓ",
+      "basis": "4 chars; 'that of the' tree-flesh pair (ⲡⲁⲡⲓϣⲏⲛ ⲙⲛ ⲡⲁⲧⲥⲁⲣⲝ̄).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 107,
+      "section": 4836,
+      "chapter": 95,
+      "line": 105,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲟⲩⲛ̄ⲃⲁⲗ ⲁⲭⲱⲩ",
+      "basis": "Editor restoration; 'their eyes upon them' fits with ⲕⲁ 'set' from previous line.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 108,
+      "section": 4839,
+      "chapter": 95,
+      "line": 108,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲍⲣⲏⲓ̈ ⲁⲡⲓⲙⲁ ⲉⲧ",
+      "basis": "12 chars; 'upward to the place which (is)' — directional formula leading to ⲥⲁⲛⲧⲡⲉ.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 109,
+      "section": 4840,
+      "chapter": 95,
+      "line": 109,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "16 chars; the verbal phrase preceding 'standing on their feet' too damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 110,
+      "section": 4841,
+      "chapter": 95,
+      "line": 110,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩⲱ ⲍⲛ̄ ⲛⲟⲩⲍⲓⲕⲱⲛ",
+      "basis": "Editor restoration; 'and in their icons' — surviving -ⲕⲱⲛ confirms εἰκών.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 111,
+      "section": 4842,
+      "chapter": 95,
+      "line": 111,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ",
+      "basis": "Completes ⲛ̄ϩⲏⲧⲟⲩ across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 112,
+      "section": 4843,
+      "chapter": 95,
+      "line": 112,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Completes ⲛ̄ϩⲏⲧⲟⲩ from preceding line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 113,
+      "section": 4843,
+      "chapter": 95,
+      "line": 112,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ ⲙ",
+      "basis": "Completes ⲡⲓⲥⲁϣϩ ⲙ̄ⲙⲁⲓⲧ 'the seven paths' across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 114,
+      "section": 4844,
+      "chapter": 95,
+      "line": 113,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁⲓ",
+      "basis": "Completes ⲙⲁⲓⲧ 'paths' (Lyc. for ⲙⲟⲉⲓⲧ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 115,
+      "section": 4844,
+      "chapter": 95,
+      "line": 113,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Completes ⲉⲧⲁⲩⲛⲟⲩϫⲉ 'where they have cast.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 116,
+      "section": 4845,
+      "chapter": 95,
+      "line": 114,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Completes ⲛⲟⲩϫⲉ 'cast' from preceding line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 117,
+      "section": 4845,
+      "chapter": 95,
+      "line": 114,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes ⲧⲟⲩⲙⲏⲧⲉ 'their midst.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 118,
+      "section": 4846,
+      "chapter": 95,
+      "line": 115,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲥⲉ",
+      "basis": "3 chars opening clause; likely conjunctive ⲛⲥⲉ- 'and they.'",
+      "confidence": "low"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4744,
+      "chapter": 95,
+      "line": 10,
+      "core_english": "they habitually break her forth,"
+    },
+    {
+      "section": 4745,
+      "chapter": 95,
+      "line": 11,
+      "core_english": "they themselves, from a place — and they come up upon this great land with the {0},"
+    },
+    {
+      "section": 4747,
+      "chapter": 95,
+      "line": 13,
+      "core_english": "The cloud, indeed, which habitually comes up forth from the fire — to"
+    },
+    {
+      "section": 4748,
+      "chapter": 95,
+      "line": 14,
+      "core_english": "the heaven, over against the likeness of the Virgin of {1}, which"
+    },
+    {
+      "section": 4749,
+      "chapter": 95,
+      "line": 15,
+      "core_english": "she habitually manifests him forth to her — this is the sign of the watching, which"
+    },
+    {
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "core_english": "exists in the fruits, {2} his recompense {3}"
+    },
+    {
+      "section": 4751,
+      "chapter": 95,
+      "line": 17,
+      "core_english": "And they are habitually purified within her, against {4}"
+    },
+    {
+      "section": 4752,
+      "chapter": 95,
+      "line": 18,
+      "core_english": "the light, which she habitually manifests him {5}"
+    },
+    {
+      "section": 4753,
+      "chapter": 95,
+      "line": 19,
+      "core_english": "{6} the archons strip the fruits and they peer forth"
+    },
+    {
+      "section": 4754,
+      "chapter": 95,
+      "line": 20,
+      "core_english": "and they bow down. But they are habitually sent at the feet of the"
+    },
+    {
+      "section": 4755,
+      "chapter": 95,
+      "line": 21,
+      "core_english": "angels at their hour, that they may strike them, since they know"
+    },
+    {
+      "section": 4756,
+      "chapter": 95,
+      "line": 22,
+      "core_english": "that they never do any good; in every place where they shall strike"
+    },
+    {
+      "section": 4757,
+      "chapter": 95,
+      "line": 23,
+      "core_english": "upon, they make for him a death and a destruction. The manner in which"
+    },
+    {
+      "section": 4758,
+      "chapter": 95,
+      "line": 24,
+      "core_english": "the angels shall stand at their feet and come, beyond striking them upon,"
+    },
+    {
+      "section": 4759,
+      "chapter": 95,
+      "line": 25,
+      "core_english": "they gather under their command before them and they go in to"
+    },
+    {
+      "section": 4760,
+      "chapter": 95,
+      "line": 26,
+      "core_english": "where they shall reach upon, and they don themselves there in the manner of a thief"
+    },
+    {
+      "section": 4763,
+      "chapter": 95,
+      "line": 29,
+      "core_english": "there, who are released forth from the cloud — they don themselves with what"
+    },
+    {
+      "section": 4764,
+      "chapter": 95,
+      "line": 30,
+      "core_english": "they shall reach upon. {7} into to {8}"
+    },
+    {
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "core_english": "{9} her foot, which they have not {10} {11} {12} shall come to be"
+    },
+    {
+      "section": 4766,
+      "chapter": 95,
+      "line": 32,
+      "core_english": "into anything there, whether it be a tree, which they have opened"
+    },
+    {
+      "section": 4769,
+      "chapter": 95,
+      "line": 35,
+      "core_english": "destroy them in the fire of their body — those archons are the sons"
+    },
+    {
+      "section": 4771,
+      "chapter": 95,
+      "line": 37,
+      "core_english": "But the cloud itself, which is conveyed upward forth from"
+    },
+    {
+      "section": 4774,
+      "chapter": 95,
+      "line": 40,
+      "core_english": "habitually come to be in the air in sundry likenesses, and they hear"
+    },
+    {
+      "section": 4775,
+      "chapter": 95,
+      "line": 41,
+      "core_english": "{13}. There are also times when those archons reckoned"
+    },
+    {
+      "section": 4776,
+      "chapter": 95,
+      "line": 42,
+      "core_english": "unto them, who exist in the cloud also for a moment, and they hasten"
+    },
+    {
+      "section": 4777,
+      "chapter": 95,
+      "line": 43,
+      "core_english": "into {14} there, and they overtake by her hand, and they leave her"
+    },
+    {
+      "section": 4778,
+      "chapter": 95,
+      "line": 44,
+      "core_english": "{15}, this is so: that every place where they shall"
+    },
+    {
+      "section": 4779,
+      "chapter": 95,
+      "line": 45,
+      "core_english": "reach, they make a frost and a hail and a snow"
+    },
+    {
+      "section": 4780,
+      "chapter": 95,
+      "line": 46,
+      "core_english": "{16} of the seed-fruits and of the fruits and of the crops, and they"
+    },
+    {
+      "section": 4781,
+      "chapter": 95,
+      "line": 47,
+      "core_english": "{17} every place also where they shall reach, they also send (them) up upon"
+    },
+    {
+      "section": 4782,
+      "chapter": 95,
+      "line": 48,
+      "core_english": "the {18} which they strike, while my members"
+    },
+    {
+      "section": 4783,
+      "chapter": 95,
+      "line": 49,
+      "core_english": "flight and dispersal, to reckon them, they habitually declare the destruction"
+    },
+    {
+      "section": 4784,
+      "chapter": 95,
+      "line": 50,
+      "core_english": "the cloud also, which shall be raised upward forth from the wind,"
+    },
+    {
+      "section": 4785,
+      "chapter": 95,
+      "line": 51,
+      "core_english": "coming up to the air of the midst against the likeness of the Vir-"
+    },
+    {
+      "section": 4786,
+      "chapter": 95,
+      "line": 52,
+      "core_english": "gin, which habitually reveals herself forth — this is the sign:"
+    },
+    {
+      "section": 4787,
+      "chapter": 95,
+      "line": 53,
+      "core_english": "the gloom of wind, which they habitually breathe forth in vehemence."
+    },
+    {
+      "section": 4788,
+      "chapter": 95,
+      "line": 54,
+      "core_english": "In those winds, namely, and the gusts, life happens —"
+    },
+    {
+      "section": 4789,
+      "chapter": 95,
+      "line": 55,
+      "core_english": "purification within her. The archons too, who shall be released — the clo-"
+    },
+    {
+      "section": 4791,
+      "chapter": 95,
+      "line": 57,
+      "core_english": "their icon. All the rivers and the seas which they shall"
+    },
+    {
+      "section": 4793,
+      "chapter": 95,
+      "line": 59,
+      "core_english": "reach and arrive at — they habitually make waves within them, and they wake {19} and they {20} their ships, and they"
+    },
+    {
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "core_english": "declare their destruction {21} {22} and they reckon them"
+    },
+    {
+      "section": 4795,
+      "chapter": 95,
+      "line": 61,
+      "core_english": "and they bring them {23} into wandering."
+    },
+    {
+      "section": 4796,
+      "chapter": 95,
+      "line": 62,
+      "core_english": "The cloud also of the Light, in the hour they shall {24}"
+    },
+    {
+      "section": 4797,
+      "chapter": 95,
+      "line": 63,
+      "core_english": "be released from her {25}"
+    },
+    {
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "core_english": "the {26} of the {27} {28} the Virgin habitually"
+    },
+    {
+      "section": 4799,
+      "chapter": 95,
+      "line": 65,
+      "core_english": "reveals — her sign also {29} her sign indeed is"
+    },
+    {
+      "section": 4801,
+      "chapter": 95,
+      "line": 67,
+      "core_english": "Life happens within her — chosen in stillness and quietness."
+    },
+    {
+      "section": 4802,
+      "chapter": 95,
+      "line": 68,
+      "core_english": "Of archons too who shall be released from her, {30} also {31}"
+    },
+    {
+      "section": 4803,
+      "chapter": 95,
+      "line": 69,
+      "core_english": "who shall come forth, {32}, they habitually leave {33}, and they bear a {34}"
+    },
+    {
+      "section": 4804,
+      "chapter": 95,
+      "line": 70,
+      "core_english": "within him {35} of the {36}"
+    },
+    {
+      "section": 4806,
+      "chapter": 95,
+      "line": 72,
+      "core_english": "The cloud also which habitually departs upward,"
+    },
+    {
+      "section": 4807,
+      "chapter": 95,
+      "line": 73,
+      "core_english": "forth from the air which is joined, and they come to the lower side against the icon"
+    },
+    {
+      "section": 4808,
+      "chapter": 95,
+      "line": 74,
+      "core_english": "of the Virgin — her sign is this: that {37}"
+    },
+    {
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "core_english": "purification within him in stillness and rest, {38}, of the archons"
+    },
+    {
+      "section": 4810,
+      "chapter": 95,
+      "line": 76,
+      "core_english": "who shall be released from that cloud, and they shall come"
+    },
+    {
+      "section": 4811,
+      "chapter": 95,
+      "line": 77,
+      "core_english": "forth from her — every place to which they shall go {39}"
+    },
+    {
+      "section": 4812,
+      "chapter": 95,
+      "line": 78,
+      "core_english": "they habitually declare to him an unutterable thing of them {40}"
+    },
+    {
+      "section": 4813,
+      "chapter": 95,
+      "line": 79,
+      "core_english": "is one with {41} until"
+    },
+    {
+      "section": 4814,
+      "chapter": 95,
+      "line": 80,
+      "core_english": "They reckon them and receive them into their midst, in a stripping {42}"
+    },
+    {
+      "section": 4817,
+      "chapter": 95,
+      "line": 83,
+      "core_english": "flesh; {43} into the midst {44} they swallow"
+    },
+    {
+      "section": 4818,
+      "chapter": 95,
+      "line": 84,
+      "core_english": "{45} some great {46}, but it is not"
+    },
+    {
+      "section": 4819,
+      "chapter": 95,
+      "line": 85,
+      "core_english": "those archons; rather, the angels habitually {47}"
+    },
+    {
+      "section": 4820,
+      "chapter": 95,
+      "line": 86,
+      "core_english": "transfer them into their (own) midst, and they bring forth {48} from them, and"
+    },
+    {
+      "section": 4821,
+      "chapter": 95,
+      "line": 87,
+      "core_english": "{49} upward to the seven fossae {50}"
+    },
+    {
+      "section": 4822,
+      "chapter": 95,
+      "line": 88,
+      "core_english": "outside the great sea, which is {51} of the"
+    },
+    {
+      "section": 4823,
+      "chapter": 95,
+      "line": 89,
+      "core_english": "waters {52}"
+    },
+    {
+      "section": 4826,
+      "chapter": 95,
+      "line": 94,
+      "core_english": "'Those fossae and the {53} until"
+    },
+    {
+      "section": 4827,
+      "chapter": 95,
+      "line": 95,
+      "core_english": "{54} of the {55} feet"
+    },
+    {
+      "section": 4830,
+      "chapter": 95,
+      "line": 99,
+      "core_english": "in the becoming of archons, at this hour in which the archons {56}"
+    },
+    {
+      "section": 4831,
+      "chapter": 95,
+      "line": 100,
+      "core_english": "{57}, that the angels are running after them, giving fear to them, {58}"
+    },
+    {
+      "section": 4832,
+      "chapter": 95,
+      "line": 101,
+      "core_english": "{59} into their hand of the commandments. But those archons,"
+    },
+    {
+      "section": 4834,
+      "chapter": 95,
+      "line": 103,
+      "core_english": "{60} together with the flesh, and they swallow them in the begetting {61}"
+    },
+    {
+      "section": 4835,
+      "chapter": 95,
+      "line": 104,
+      "core_english": "{62} tree and that of the flesh; the angels habitually set their"
+    },
+    {
+      "section": 4836,
+      "chapter": 95,
+      "line": 105,
+      "core_english": "eyes upon them, watching over them, until the hour in which"
+    },
+    {
+      "section": 4839,
+      "chapter": 95,
+      "line": 108,
+      "core_english": "{63} the upper place, and they pour them forth out of"
+    },
+    {
+      "section": 4840,
+      "chapter": 95,
+      "line": 109,
+      "core_english": "{64} (standing) on their feet in their first form-"
+    },
+    {
+      "section": 4841,
+      "chapter": 95,
+      "line": 110,
+      "core_english": "s and in their icons which were within them from the beginning"
+    },
+    {
+      "section": 4842,
+      "chapter": 95,
+      "line": 111,
+      "core_english": "they take the light from them, who have drawn back behind in"
+    },
+    {
+      "section": 4843,
+      "chapter": 95,
+      "line": 112,
+      "core_english": "them. But they themselves shall be cast down to the seven paths"
+    },
+    {
+      "section": 4844,
+      "chapter": 95,
+      "line": 113,
+      "core_english": "which are outside, those of the great sea, the place to which they have cast"
+    },
+    {
+      "section": 4845,
+      "chapter": 95,
+      "line": 114,
+      "core_english": "the abortions to it, when they fall back to their midst,"
+    },
+    {
+      "section": 4846,
+      "chapter": 95,
+      "line": 115,
+      "core_english": "{65} and they take the light that is in them."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4745,
+      "chapter": 95,
+      "line": 11,
+      "proposed_english": "winds",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛ̄ⲧⲏⲩ 'winds' — one of the three causes (fire/water/wind) named in the teaching."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4748,
+      "chapter": 95,
+      "line": 14,
+      "proposed_english": "Light",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "Standard title: Virgin of Light."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char lacuna with uncertain syntactic role."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4750,
+      "chapter": 95,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char lacuna after 'his recompense' — continuation unrecoverable."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4751,
+      "chapter": 95,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "unrestorable",
+      "basis": "13-char lacuna; the specific element opposed in purification cannot be recovered."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4752,
+      "chapter": 95,
+      "line": 18,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char lacuna; specifics of the manifestation-formula damaged."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 4753,
+      "chapter": 95,
+      "line": 19,
+      "proposed_english": "But",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "low",
+      "basis": "Likely particle ⲁⲉ/ⲇⲉ opening the new clause about the archons."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 4764,
+      "chapter": 95,
+      "line": 30,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "9-char lacuna in damaged context."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 4764,
+      "chapter": 95,
+      "line": 30,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char lacuna in damaged context."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily damaged passage with multiple consecutive lacunae."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily damaged passage."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily damaged passage."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 4765,
+      "chapter": 95,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily damaged passage."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 4775,
+      "chapter": 95,
+      "line": 41,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        33
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char opening; transition phrase damaged."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 4777,
+      "chapter": 95,
+      "line": 43,
+      "proposed_english": "a cloud",
+      "coptic_gap_refs": [
+        35
+      ],
+      "confidence": "moderate",
+      "basis": "Editor's restoration ⲁⲩⲕⲗⲟⲟⲗⲉ continues the cloud-context."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 4778,
+      "chapter": 95,
+      "line": 44,
+      "proposed_english": "behind. They themselves",
+      "coptic_gap_refs": [
+        36
+      ],
+      "confidence": "high",
+      "basis": "ⲛⲥⲱⲩ ⲛⲧⲁⲩ 'after them. They' — completes 'leave behind' and opens emphatic clause."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 4780,
+      "chapter": 95,
+      "line": 46,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        40
+      ],
+      "confidence": "low",
+      "basis": "4-char verb ending in -ⲁϩ; possibly 'splitting/striking' but not securely recoverable."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 4781,
+      "chapter": 95,
+      "line": 47,
+      "proposed_english": "in",
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "low",
+      "basis": "Likely ⲍⲛ̄ ⲙⲁ ⲛⲓⲙ 'in every place.'"
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 4782,
+      "chapter": 95,
+      "line": 48,
+      "proposed_english": "angels",
+      "coptic_gap_refs": [
+        43
+      ],
+      "confidence": "low",
+      "basis": "ⲛⲓⲁⲅⲅⲉⲗⲟⲥ tentatively, contrasting with 'my members' that follow."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 4793,
+      "chapter": 95,
+      "line": 59,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        52
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char object of 'wake' damaged."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 4793,
+      "chapter": 95,
+      "line": 59,
+      "proposed_english": "break",
+      "coptic_gap_refs": [
+        53
+      ],
+      "confidence": "low",
+      "basis": "Verb governing 'their ships' — 'break/wreck' fits the storm context but uncertain."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        54,
+        55
+      ],
+      "confidence": "unrestorable",
+      "basis": "Two adjacent damaged spans; only the noun-suffix 'their destruction' is recoverable."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 4794,
+      "chapter": 95,
+      "line": 60,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        56
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char lacuna in damaged context."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 4795,
+      "chapter": 95,
+      "line": 61,
+      "proposed_english": "down",
+      "coptic_gap_refs": [
+        57
+      ],
+      "confidence": "low",
+      "basis": "Likely directional 'inside/down' before 'wandering.'"
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 4796,
+      "chapter": 95,
+      "line": 62,
+      "proposed_english": "be released",
+      "coptic_gap_refs": [
+        58
+      ],
+      "confidence": "moderate",
+      "basis": "Editor's restoration completes 'of the Light, in the hour they shall (be released).'"
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 4797,
+      "chapter": 95,
+      "line": 63,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        60
+      ],
+      "confidence": "unrestorable",
+      "basis": "7-char lacuna; specifics damaged."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        61
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char lacuna."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        62
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char lacuna."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 4798,
+      "chapter": 95,
+      "line": 64,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        63
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char lacuna."
+    },
+    {
+      "eng_gap_id": 29,
+      "section": 4799,
+      "chapter": 95,
+      "line": 65,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        64
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char lacuna between repeated 'sign' phrases."
+    },
+    {
+      "eng_gap_id": 30,
+      "section": 4802,
+      "chapter": 95,
+      "line": 68,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        66
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char lacuna."
+    },
+    {
+      "eng_gap_id": 31,
+      "section": 4802,
+      "chapter": 95,
+      "line": 68,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        67
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char lacuna."
+    },
+    {
+      "eng_gap_id": 32,
+      "section": 4803,
+      "chapter": 95,
+      "line": 69,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        68
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char lacuna with partial ⲣⲉⲩ."
+    },
+    {
+      "eng_gap_id": 33,
+      "section": 4803,
+      "chapter": 95,
+      "line": 69,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        69
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char object of 'leave' damaged."
+    },
+    {
+      "eng_gap_id": 34,
+      "section": 4803,
+      "chapter": 95,
+      "line": 70,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        70
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char object of 'bear' damaged."
+    },
+    {
+      "eng_gap_id": 35,
+      "section": 4804,
+      "chapter": 95,
+      "line": 70,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        71
+      ],
+      "confidence": "unrestorable",
+      "basis": "17-char lacuna; too damaged."
+    },
+    {
+      "eng_gap_id": 36,
+      "section": 4804,
+      "chapter": 95,
+      "line": 70,
+      "proposed_english": "messengers",
+      "coptic_gap_refs": [
+        72
+      ],
+      "confidence": "moderate",
+      "basis": "Editor's identification of ⲁⲣⲧⲉⲗⲟⲥ as variant of ⲁⲅⲅⲉⲗⲟⲥ."
+    },
+    {
+      "eng_gap_id": 37,
+      "section": 4808,
+      "chapter": 95,
+      "line": 74,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        76
+      ],
+      "confidence": "unrestorable",
+      "basis": "9-char lacuna; specific sign-formula not recoverable."
+    },
+    {
+      "eng_gap_id": 38,
+      "section": 4809,
+      "chapter": 95,
+      "line": 75,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        79
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char connector unrecoverable."
+    },
+    {
+      "eng_gap_id": 39,
+      "section": 4811,
+      "chapter": 95,
+      "line": 77,
+      "proposed_english": "to",
+      "coptic_gap_refs": [
+        82
+      ],
+      "confidence": "low",
+      "basis": "Continuation of ⲱⲛⲧⲯ 'go to' with damaged completion."
+    },
+    {
+      "eng_gap_id": 40,
+      "section": 4812,
+      "chapter": 95,
+      "line": 78,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        83
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char lacuna at end of clause."
+    },
+    {
+      "eng_gap_id": 41,
+      "section": 4813,
+      "chapter": 95,
+      "line": 79,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        84
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char lacuna with partial ⲥ."
+    },
+    {
+      "eng_gap_id": 42,
+      "section": 4814,
+      "chapter": 95,
+      "line": 80,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        86
+      ],
+      "confidence": "unrestorable",
+      "basis": "No apparatus carried; unknown content."
+    },
+    {
+      "eng_gap_id": 43,
+      "section": 4817,
+      "chapter": 95,
+      "line": 83,
+      "proposed_english": "they bring them",
+      "coptic_gap_refs": [
+        87
+      ],
+      "confidence": "moderate",
+      "basis": "Editor's restoration ϣⲁⲩⲃⲧⲟⲩ — habitual + verb of bringing/leading + 3pl object."
+    },
+    {
+      "eng_gap_id": 44,
+      "section": 4817,
+      "chapter": 95,
+      "line": 83,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        88
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char lacuna between 'midst' and 'they swallow.'"
+    },
+    {
+      "eng_gap_id": 45,
+      "section": 4818,
+      "chapter": 95,
+      "line": 84,
+      "proposed_english": "they cause",
+      "coptic_gap_refs": [
+        89
+      ],
+      "confidence": "moderate",
+      "basis": "ϣⲁⲩⲉⲣⲉ — habitual + ⲉⲓⲣⲉ 'do/cause.'"
+    },
+    {
+      "eng_gap_id": 46,
+      "section": 4818,
+      "chapter": 95,
+      "line": 84,
+      "proposed_english": "perils",
+      "coptic_gap_refs": [
+        90
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲕⲓⲛⲇⲩⲛⲟⲥ — Greek κίνδυνος 'perils' in plural."
+    },
+    {
+      "eng_gap_id": 47,
+      "section": 4819,
+      "chapter": 95,
+      "line": 85,
+      "proposed_english": "transfer",
+      "coptic_gap_refs": [
+        91
+      ],
+      "confidence": "moderate",
+      "basis": "ⲟⲩⲁ continuing into ⲟⲩⲁⲧⲟⲩ 'transfer them' on next line."
+    },
+    {
+      "eng_gap_id": 48,
+      "section": 4820,
+      "chapter": 95,
+      "line": 86,
+      "proposed_english": "their light",
+      "coptic_gap_refs": [
+        92
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲟⲩⲁⲛⲉ 'their light/manifestation' — the angels bring forth the light from the souls."
+    },
+    {
+      "eng_gap_id": 49,
+      "section": 4821,
+      "chapter": 95,
+      "line": 87,
+      "proposed_english": "they cast the demons",
+      "coptic_gap_refs": [
+        93
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲁⲝ ⲛ̄ⲁⲁⲙⲱⲛ — 'cast the demons' upward to the seven fossae."
+    },
+    {
+      "eng_gap_id": 50,
+      "section": 4821,
+      "chapter": 95,
+      "line": 87,
+      "proposed_english": "which are outside",
+      "coptic_gap_refs": [
+        94
+      ],
+      "confidence": "high",
+      "basis": "ⲉⲧⲍⲃⲁⲗ = ⲉⲧϩⲓⲃⲟⲗ 'which is outside.'"
+    },
+    {
+      "eng_gap_id": 51,
+      "section": 4822,
+      "chapter": 95,
+      "line": 88,
+      "proposed_english": "the place of dispersion",
+      "coptic_gap_refs": [
+        95
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲙⲁⲛⲝⲟⲟⲣⲉ — Manichaean cosmographic term."
+    },
+    {
+      "eng_gap_id": 52,
+      "section": 4823,
+      "chapter": 95,
+      "line": 89,
+      "proposed_english": "which exist on the outside of the cosmos",
+      "coptic_gap_refs": [
+        96
+      ],
+      "confidence": "moderate",
+      "basis": "Standard Manichaean cosmography for the outer waters."
+    },
+    {
+      "eng_gap_id": 53,
+      "section": 4826,
+      "chapter": 95,
+      "line": 94,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        97
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char lacuna; specific co-named structure unrecoverable."
+    },
+    {
+      "eng_gap_id": 54,
+      "section": 4827,
+      "chapter": 95,
+      "line": 95,
+      "proposed_english": "they reach the lands which are below",
+      "coptic_gap_refs": [
+        98
+      ],
+      "confidence": "moderate",
+      "basis": "Editor's reconstruction of the cosmographic descent."
+    },
+    {
+      "eng_gap_id": 55,
+      "section": 4827,
+      "chapter": 95,
+      "line": 95,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        99
+      ],
+      "confidence": "unrestorable",
+      "basis": "7-char modifier of 'feet' damaged."
+    },
+    {
+      "eng_gap_id": 56,
+      "section": 4830,
+      "chapter": 95,
+      "line": 99,
+      "proposed_english": "flee",
+      "coptic_gap_refs": [
+        100
+      ],
+      "confidence": "moderate",
+      "basis": "Per the reading the archons run/flee while the angels chase them."
+    },
+    {
+      "eng_gap_id": 57,
+      "section": 4831,
+      "chapter": 95,
+      "line": 100,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        101
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char opening damaged."
+    },
+    {
+      "eng_gap_id": 58,
+      "section": 4831,
+      "chapter": 95,
+      "line": 100,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        102
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char trailing phrase damaged."
+    },
+    {
+      "eng_gap_id": 59,
+      "section": 4832,
+      "chapter": 95,
+      "line": 101,
+      "proposed_english": "those whom they entrust",
+      "coptic_gap_refs": [
+        103
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲉⲧⲟⲩⲧⲟⲉ 'those whom they hand over/entrust.'"
+    },
+    {
+      "eng_gap_id": 60,
+      "section": 4834,
+      "chapter": 95,
+      "line": 103,
+      "proposed_english": "the tree",
+      "coptic_gap_refs": [
+        104
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡϣⲏⲛ paired with ⲧⲥⲁⲣⲝ̄ 'the flesh' in the tree-flesh begetting formula."
+    },
+    {
+      "eng_gap_id": 61,
+      "section": 4834,
+      "chapter": 95,
+      "line": 103,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        105
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char connector after 'begetting'; uncertain."
+    },
+    {
+      "eng_gap_id": 62,
+      "section": 4835,
+      "chapter": 95,
+      "line": 104,
+      "proposed_english": "of the",
+      "coptic_gap_refs": [
+        106
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲁⲡⲓ 'that of the' completing 'tree and that of the flesh.'"
+    },
+    {
+      "eng_gap_id": 63,
+      "section": 4839,
+      "chapter": 95,
+      "line": 108,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        108
+      ],
+      "confidence": "low",
+      "basis": "12-char directional phrase 'upward to the place of/which is the upper.'"
+    },
+    {
+      "eng_gap_id": 64,
+      "section": 4840,
+      "chapter": 95,
+      "line": 109,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        109
+      ],
+      "confidence": "unrestorable",
+      "basis": "16-char verbal phrase too damaged."
+    },
+    {
+      "eng_gap_id": 65,
+      "section": 4846,
+      "chapter": 95,
+      "line": 115,
+      "proposed_english": "and they come",
+      "coptic_gap_refs": [
+        118
+      ],
+      "confidence": "low",
+      "basis": "3-char clause-opener; conjunctive ⲛⲥⲉ- 'and they.'"
+    }
+  ]
+}

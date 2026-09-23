@@ -1,0 +1,409 @@
+{
+  "review_file": "C:\\Users\\mlf\\source\\github\\manichaean-analysis\\output\\projects\\kephalaia\\corpus_review.json",
+  "project": "kephalaia",
+  "timestamp": "2026-02-20T17:29:05",
+  "findings_processed": 13,
+  "findings_applied": 10,
+  "findings_skipped": 3,
+  "total_edits": 60,
+  "total_warnings": 0,
+  "elapsed_s": 968.7,
+  "entries": [
+    {
+      "finding_id": 1,
+      "category": "naming_overlay",
+      "status": "applied",
+      "tool_calls": 26,
+      "edits_applied": 26,
+      "warnings": 0,
+      "elapsed_s": 335.7,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The fourth day is Jesus the Splendour. His twelve hours'; new_text='The fourth day is the Splendour. His twelve hours'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The third hunter is Jesus the Splendour, who came from the greatness, who hunts'; new_text='The third hunter is the Splendour, who came from the greatness, who hunts'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The second is glorious Jesus the Splendour; [the] one through whom'; new_text='The second is the glorious Splendour; [the] one through whom'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='he is glorious Jesus the Splendour. And, again, he too'; new_text='he is the glorious Splendour. And, again, he too'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='whom Jesus summo[n]ed is the gre[at Jud]ge'; new_text='whom the Splendour summo[n]ed is the gre[at Jud]ge'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='after the pattern of Jesus.'; new_text='after the pattern of the Splendour.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='When Jesus the Son of Greatness came to these worlds'; new_text='When the Son of Greatness came to these worlds'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[is Jesus the Splendour]; or the one who delivers'; new_text='[is the Splendour]; or the one who delivers'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='is Jesus the Splendour, and all his powers'; new_text='is the Splendour, and all his powers'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='whom Jesus the Splendour by his advent has appointed'; new_text='whom the Splendour by his advent has appointed'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The advent also of Jesus the Splendour, the time when he came'; new_text='The advent also of the Splendour, the time when he came'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='the advent of Jesus the Splendour. It happened like this'; new_text='the advent of the Splendour. It happened like this'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='when Jesus was sent and he [came to Adam]'; new_text='when the Splendour was sent and he [came to Adam]'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Jesus the glorious one waged against all the rebels'; new_text='the glorious Splendour waged against all the rebels'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='that of Jesus the Splendour, since whe[n he was]'; new_text='that of the Splendour, since whe[n he was]'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Jesus the Splendour shall himself also be called'; new_text='the Splendour shall himself also be called'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='with Jesus the Splendour and the Virgin of Light'; new_text='with the Splendour and the Virgin of Light'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The eighth judge is Jesus the Splendour, the father of all the apostles'; new_text='The eighth judge is the Splendour, the father of all the apostles'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Then they sent Jesus the Splendour. He came'; new_text='Then they sent the Splendour. He came'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='that of Jesus the Splendour, who [is] the releaser and redeemer'; new_text='that of the Splendour, who [is] the releaser and redeemer'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='the throne of Jesus the Splendour, [the second is that of]'; new_text='the throne of the Splendour, [the second is that of]'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='what Jesus the Splendour is like, who shall be sent'; new_text='what the Splendour is like, who shall be sent'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[the adv]ent of Jesus the Splendour, the glorious one who came'; new_text='[the adv]ent of the Splendour, the glorious one who came'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Also, Jesus the Splendour perfected the will'; new_text='Also, the Splendour perfected the will'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='that is Jesus the Splendour. He granted'; new_text='that is the Splendour. He granted'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[through] Jesus the Splendour, the light power'; new_text='[through] the Splendour, the light power'"
+        }
+      ]
+    },
+    {
+      "finding_id": 2,
+      "category": "naming_overlay",
+      "status": "applied",
+      "tool_calls": 13,
+      "edits_applied": 13,
+      "warnings": 0,
+      "elapsed_s": 75.5,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The first power whom he summoned is the Light Mind.'; new_text='The first power whom he summoned is Wahman.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The fourth father is the Light Mind. And'; new_text='The fourth father is Wahman. And'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='is the Light Mind; who is the awakene[r of they] who sleep, the gatherer in o...'; new_text='is Wahman; who is the awakene[r of they] who sleep, the gatherer in of the on...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The fourth resurrector is the Light Mind, because [it awakens the soul from f...'; new_text='The fourth resurrector is Wahman, because [it awakens the soul from forgetful...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The eleventh judge is the Light Mind, he who shall come and appear in the world.'; new_text='The eleventh judge is Wahman, he who shall come and appear in the world.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='However, if and wh[en] the Light Mind comes, it shall tu[rn i]n to the orific...'; new_text='However, if and wh[en] Wahman comes, it shall tu[rn i]n to the orifices of th...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Nevertheless, the Light Mind by its wisdom and awe and diligence shall hum[ble]'; new_text='Nevertheless, Wahman by its wisdom and awe and diligence shall hum[ble]'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='By the power of the Light Mind that has suffused him and lived in the body he...'; new_text='By the power of Wahman that has suffused him and lived in the body he has hum...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='and the purpose of the Light Mind.'; new_text='and the purpose of Wahman.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='and the Light Mind is watching over them, and the new man who is with him.'; new_text='and Wahman is watching over them, and the new man who is with him.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='when the Light Mind will come to it, shall be purified by the power of wisdom...'; new_text='when Wahman will come to it, shall be purified by the power of wisdom and obe...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text=\"what is named 'virginal' is the Light Mind, should he come and assume the ima...\"; new_text=\"what is named 'virginal' is Wahman, should he come and assume the images [of]...\""
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='which the Light Mind shall form in him; and it goes into him and dwells in him.'; new_text='which Wahman shall form in him; and it goes into him and dwells in him.'"
+        }
+      ]
+    },
+    {
+      "finding_id": 3,
+      "category": "naming_overlay",
+      "status": "applied",
+      "tool_calls": 2,
+      "edits_applied": 2,
+      "warnings": 0,
+      "elapsed_s": 39.1,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='amongst them are Saklas and his consort and the ones whom they have served'; new_text='amongst them are Az and his consort Jeh and the ones whom they have served'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='among them the ruling self-intelligence and its conjugial evil, and the hered...'; new_text='among them the ruling concupiscence and its corrupting seduction, and the her...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 4,
+      "category": "residual_editorial",
+      "status": "applied",
+      "tool_calls": 2,
+      "edits_applied": 2,
+      "warnings": 0,
+      "elapsed_s": 57.6,
+      "changes": [
+        {
+          "tool": "delete_text",
+          "args_summary": "text_to_delete='[§529] There are some among us telling us that we [know and perceive] that th...'"
+        },
+        {
+          "tool": "delete_text",
+          "args_summary": "text_to_delete='[§529]* There are some among us who say that we [GAP-1: perceive (?)] that Di...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 5,
+      "category": "naming_overlay",
+      "status": "applied",
+      "tool_calls": 2,
+      "edits_applied": 2,
+      "warnings": 0,
+      "elapsed_s": 52.0,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='they have blasphemed and despised the Holy Spirit since [ev]ery generation of...'; new_text='they have blasphemed and despised the Bounteous Spirit since [ev]ery generati...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The H[o]ly Spirit reigns. It does all that it pleases. It annuls [the] will o...'; new_text='The Bounteous Spirit reigns. It does all that it pleases. It annuls [the] wil...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 6,
+      "category": "naming_overlay",
+      "status": "applied",
+      "tool_calls": 2,
+      "edits_applied": 2,
+      "warnings": 0,
+      "elapsed_s": 43.3,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='Its consideration is the holy church.'; new_text='Its consideration is Srōsh.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The outermost reception is the communion of those conjoined in charity.'; new_text='The outermost reception is the Obedient Hearkening that first receives divine...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 7,
+      "category": "residual_editorial",
+      "status": "applied",
+      "tool_calls": 1,
+      "edits_applied": 1,
+      "warnings": 0,
+      "elapsed_s": 20.0,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[the] heart of the elect one, who is come forth from his bo[d]y, shall be cal...'; new_text='[the] heart of the righteous one, who is come forth from his bo[d]y, shall be...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 8,
+      "category": "residual_editorial",
+      "status": "applied",
+      "tool_calls": 9,
+      "edits_applied": 9,
+      "warnings": 0,
+      "elapsed_s": 73.7,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[§78] The first power is the Apostle of Light.'; new_text='[§78] The first power is the Envoy of Light.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='who shall come to the apostle and appear to him, becoming companion to him, s...'; new_text='who shall come to the envoy and appear to him, becoming companion to him, sti...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='corresponding to the pattern of the image to the apostle; and the thr[ee] gre...'; new_text='corresponding to the pattern of the image to the envoy; and the thr[ee] great...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='seal the commandment and the [mission] of all [the] apostles.'; new_text='seal the commandment and the [mission] of all [the] envoys.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='the father of all the apostles; because after the Ambassador had displayed hi...'; new_text='the father of all the envoys; because after the Ambassador had displayed his ...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='The ninth throne appointed and established is for the [a]postle.'; new_text='The ninth throne appointed and established is for the [e]nvoy.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='They have been sent in an embassy and an apostolate to this building.'; new_text='They have been sent in an embassy and an envoyship to this building.'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[§313]* The ninth governing principle, ordained and established in this spher...'; new_text='[§313]* The ninth governing principle, ordained and established in this spher...'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='They have been sent as a mission and an apostolate into this constructed spir...'; new_text='They have been sent as a mission and an embassy into this constructed spiritu...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 9,
+      "category": "over_stripped",
+      "status": "applied",
+      "tool_calls": 1,
+      "edits_applied": 1,
+      "warnings": 0,
+      "elapsed_s": 142.7,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='[§122] [The first resurrector is the Living Spirit, who awakens] it therein [...'; new_text='[§122] The first resurrector is the Living Spirit. He awakens the soul therei...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 10,
+      "category": "over_stripped",
+      "status": "skipped",
+      "tool_calls": 1,
+      "edits_applied": 0,
+      "warnings": 0,
+      "elapsed_s": 46.0,
+      "changes": [
+        {
+          "tool": "skip_finding",
+          "args_summary": "reason='The lacuna at §405 is genuine manuscript damage, not an extraction artifact. ...'"
+        }
+      ],
+      "text_output": "Looking at this finding carefully, I need to evaluate whether §405's content was stripped during extraction or represents genuine manuscript loss.\n\n**Evidence pointing to genuine manuscript loss:**\n\n1. The notation `\"The [first is / ...]\"` uses the same bracket-and-ellipsis convention (`[ ... ]`, `[ ... / ... ]`) used throughout the corpus to mark **physical manuscript damage** — not stripped content. Stripped content would simply be absent, not marked with lacuna indicators.\n\n2. The correspondi"
+    },
+    {
+      "finding_id": 11,
+      "category": "residual_editorial",
+      "status": "applied",
+      "tool_calls": 2,
+      "edits_applied": 2,
+      "warnings": 0,
+      "elapsed_s": 47.1,
+      "changes": [
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='He also gave hope to Adam, and the good news [of the] glorious [kingdom]'; new_text='He also gave hope to Adam, and the tidings [of the] glorious [kingdom]'"
+        },
+        {
+          "tool": "replace_text",
+          "args_summary": "old_text='It also gave hope to the volitional faculty, and the glad tidings [GAP-62] of...'; new_text='It also gave hope to the volitional faculty, and the tidings [GAP-62] of glor...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 12,
+      "category": "naming_overlay",
+      "status": "skipped",
+      "tool_calls": 1,
+      "edits_applied": 0,
+      "warnings": 0,
+      "elapsed_s": 19.3,
+      "changes": [
+        {
+          "tool": "skip_finding",
+          "args_summary": "reason='The finding\\'s recommendation is to \"flag\" the passage rather than to make a s...'"
+        }
+      ]
+    },
+    {
+      "finding_id": 13,
+      "category": "inconsistent_extraction",
+      "status": "skipped",
+      "tool_calls": 1,
+      "edits_applied": 0,
+      "warnings": 0,
+      "elapsed_s": 16.6,
+      "changes": [
+        {
+          "tool": "skip_finding",
+          "args_summary": "reason='The finding itself concludes that the current state is \"largely consistent\" a...'"
+        }
+      ]
+    }
+  ]
+}

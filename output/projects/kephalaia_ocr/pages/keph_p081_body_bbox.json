@@ -1,0 +1,43 @@
+{
+  "page_size": [
+    1553,
+    2258
+  ],
+  "bbox": {
+    "x0": 431,
+    "y0": 291,
+    "x1": 1328,
+    "y1": 1723
+  },
+  "crop_method": "projection_left_column",
+  "n_body_candidates": 33,
+  "n_body_lines": 29,
+  "body_run_lengths": [
+    19,
+    10
+  ],
+  "body_line_step": 41.0,
+  "body_text_start_min": 394,
+  "body_text_start_q25": 499.0,
+  "body_text_start_median": 500.0,
+  "body_text_end_q95": 1268.0,
+  "rules_detected": [
+    {
+      "y_mid": 155.5,
+      "width_frac": 0.723
+    },
+    {
+      "y_mid": 1824.0,
+      "width_frac": 0.068
+    }
+  ],
+  "band_top": 161.0,
+  "band_bottom": 1820.0,
+  "ln_col_extent": {
+    "y_top": 316,
+    "y_bot": 1112,
+    "x_left": 395,
+    "x_right": 420
+  },
+  "footnote_top_detected": null
+}

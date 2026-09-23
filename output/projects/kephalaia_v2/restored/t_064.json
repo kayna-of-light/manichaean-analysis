@@ -1,0 +1,387 @@
+{
+  "teaching": 64,
+  "total_gaps_in_core": 14,
+  "gaps_restored": 12,
+  "gaps_unrestorable": 2,
+  "restoration_note": "The teaching builds two parallel doctrinal cascades: Love is the bond (ϣⲱⲧ) of the Greatness, the one body in the land of glory where the whole godhood is manifested, the conjoining principle by which the Father gives victory to his Aeons together with his members. Hatred is the first death gushing forth from the land of darkness, destroying its own offspring of destruction, and through the cross of the living soul producing the cascade hatred → envy → devil → wicked one. The editor's proposals are well-grounded in partial traces, standard Manichaean Coptic formulas, and the Lycopolitan dialect features (ϩ for ϥ, ⲉⲓ for ⲏ); they are accepted with high confidence. The two unrestorable gaps {0}/{1} in section 3821 form an introductory clause whose pattern with mid-word visible ⲉ does not match a recoverable formula at the given character counts.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 3821,
+      "chapter": 63,
+      "line": 3,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Pattern '[5 chars]ⲉ[6 chars] ⲛⲓⲙ ⲉⲩⲙⲟⲩⲧⲉ ⲁⲣⲁⲥ ⲭⲉ ⲁⲅⲁⲡⲏ' with visible internal ⲉ does not constrain to a standard Kephalaia introductory formula. Honest non-restoration is preferable to invention.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 1,
+      "section": 3821,
+      "chapter": 63,
+      "line": 3,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Same clause as gap 0; the surrounding 'every X which they call love' construction is recognizable but the specific noun (name? manner? matter?) cannot be fixed at 6 characters with only ⲉ visible.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 2,
+      "section": 3822,
+      "chapter": 63,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲅⲁⲡⲏ",
+      "basis": "Editor's proposal accepted: ⲧ̄[ⲁⲅⲁ]ⲡⲏ — feminine article + Greek ἀγάπη; subject of the sentence answering 'what is love?' Anchored by lexicon entry love = ⲧⲁⲅⲁⲡⲏ (ⲡϣⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛⲧⲛⲁⲋ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛϩⲏⲧϩ",
+      "basis": "Editor's proposal accepted: Lycopolitan ⲛ̄ϩⲏⲧ⸗ϩ (= S. ⲛ̄ϩⲏⲧϥ) 'in it,' referring back to the land of glory where the godhood was manifested; ϩ for ϥ is regular Lyc. Same dialect feature appears in ⲉϩⲁⲛϩ̄ in this very line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲛⲉⲩ",
+      "basis": "Editor's proposal accepted: ⲡ]ⲥⲛⲉⲩ 'the two' — appositive enumeration of the joined body's two named aspects (the bond and the love), matching lexicon entry 'two = conjunction and polarity.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 5,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡϣⲱⲧ",
+      "basis": "Editor's proposal accepted: ⲡ]ϣⲱⲧ 'the bond' — repetition of the lexeme from line 4 (ⲡϣⲱⲧ ⲛ̄ⲧⲉ ⲧⲙⲛ̄ⲧⲛⲁϭ); the first member of the joined pair 'bond + love.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 3825,
+      "chapter": 63,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ",
+      "basis": "Editor's proposal accepted: [ⲙ]ⲛ — conjunction ⲙⲛ̄ 'and/with' linking ⲡϣⲱⲧ (line 6) with ⲧⲉϩⲁⲅⲁⲡⲏ (line 7), completing the pair 'the bond and the love.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 3826,
+      "chapter": 63,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉϩⲁⲓⲱⲛ",
+      "basis": "Editor's proposal accepted: ⲛⲉϩⲁ]ⲓⲱⲛ — Lyc. possessive ⲛⲉϩ- 'his' + Greek αἰών pl.; love is the bond that exists in his Aeons. Lexicon: aeon = ⲁⲓⲱⲛ, structural state in process.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 3828,
+      "chapter": 63,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉϩⲁⲓⲱⲛ",
+      "basis": "Editor's proposal accepted: parallel to gap 7. The Father gave victory to his Aeons together with his members — Aeons and members forming the dual recipients of the divine victory of love.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 3834,
+      "chapter": 63,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Editor's proposal accepted: single letter ⲓ giving ⲁϩⲉⲓⲣⲉ (Lyc. ⲁϥ-ⲉⲓⲣⲉ) 'it has done/wrought.' Subject is ⲡⲙⲉⲥⲧⲟⲩ (hatred) which has wrought destruction and defect.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 3836,
+      "chapter": 63,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲩ",
+      "basis": "Editor's proposal accepted: ⲧ[ⲡⲥⲩ]ⲭⲏ — feminine article + Greek ψυχή; the soul, modified by ⲉⲧⲁⲛϩ̄ 'living' on the next line, completing the phrase 'the cross of the Light, the living soul.' Lexicon: ⲧⲩⲭⲏ = the rational and its life.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 3837,
+      "chapter": 63,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁⲩ",
+      "basis": "Editor's proposal accepted: ⲙ̄ⲙⲁ[ⲩ] — standard 3pl object pronoun 'them.' Object of ϩⲙⲟⲩⲟⲩⲧ 'they killed.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 3838,
+      "chapter": 63,
+      "line": 36,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡ",
+      "basis": "Editor's proposal accepted: [ⲙⲡ] — partitive/genitive prefix ⲙ̄ⲡ- continuing into ⲡⲫⲑⲟⲛⲟⲥ at the start of the next line, giving 'from the envy.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 3839,
+      "chapter": 63,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲛⲏ",
+      "basis": "Editor's proposal accepted: ⲡⲡ[ⲟⲛⲏ]- — Greek πονηρός 'wicked one'; the suffix -ⲣⲟⲥ visible at start of the next line completes ⲡⲡⲟⲛⲏⲣⲟⲥ. Final term in the cascade hatred → envy → devil → wicked one.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 3821,
+      "chapter": 63,
+      "line": 3,
+      "core_english": "{0} every {1} which is called Love."
+    },
+    {
+      "section": 3822,
+      "chapter": 63,
+      "line": 4,
+      "core_english": "{2} is the bond of the Greatness, that which dwells in his"
+    },
+    {
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "core_english": "{3}, it is one body, joined: {4}, {5}"
+    },
+    {
+      "section": 3825,
+      "chapter": 63,
+      "line": 7,
+      "core_english": "{6} the love. Because he extended himself alone over every matter"
+    },
+    {
+      "section": 3826,
+      "chapter": 63,
+      "line": 8,
+      "core_english": "that exists in {7}. Because of this they have called this Fa-"
+    },
+    {
+      "section": 3828,
+      "chapter": 63,
+      "line": 10,
+      "core_english": "{8} together with his members."
+    },
+    {
+      "section": 3834,
+      "chapter": 63,
+      "line": 29,
+      "core_english": "it 'the hatred,' because it has {9} a destruction and a defect within"
+    },
+    {
+      "section": 3836,
+      "chapter": 63,
+      "line": 33,
+      "core_english": "in every type. The cross also of the Light — the {10}-"
+    },
+    {
+      "section": 3837,
+      "chapter": 63,
+      "line": 34,
+      "core_english": "living soul — it itself also they destroyed, they killed {11}"
+    },
+    {
+      "section": 3838,
+      "chapter": 63,
+      "line": 36,
+      "core_english": "'the hatred.' From hatred — envy. From {12}"
+    },
+    {
+      "section": 3839,
+      "chapter": 63,
+      "line": 37,
+      "core_english": "envy — the devil. From the devil — the {13}-"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 3821,
+      "chapter": 63,
+      "line": 3,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap 0 cannot be restored, so the English fill is also indeterminate."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 3821,
+      "chapter": 63,
+      "line": 3,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap 1 cannot be restored; the noun governed by ⲛⲓⲙ ('every X') is unconstrained."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 3822,
+      "chapter": 63,
+      "line": 4,
+      "proposed_english": "Love",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲁⲅⲁⲡⲏ as subject of the doctrinal definition; lexicon use_in_reading: 'love that conjoins; the highest principle of the New Man; the inmost bond of the rational with the Lord.'"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "proposed_english": "In it",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "ⲛϩⲏⲧϩ = Lyc. 'in it,' referring back to the land of glory where the godhood was manifested."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "proposed_english": "the two",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲥⲛⲉⲩ = 'the two'; lexicon two = conjunction and polarity, here enumerating the two named aspects of the joined body."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 3824,
+      "chapter": 63,
+      "line": 6,
+      "proposed_english": "the bond",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "high",
+      "basis": "ⲡϣⲱⲧ = 'the bond,' repeating the central lexeme from line 4."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 3825,
+      "chapter": 63,
+      "line": 7,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "ⲙⲛ̄ as conjunction linking 'the bond' (preceding segment) with 'the love'; English natural rendering 'and.'"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 3826,
+      "chapter": 63,
+      "line": 8,
+      "proposed_english": "his Aeons",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "high",
+      "basis": "ⲛⲉϩⲁⲓⲱⲛ = 'his Aeons'; lexicon aeon = a state in process, here the Father's structural states in which love dwells."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 3828,
+      "chapter": 63,
+      "line": 10,
+      "proposed_english": "of his Aeons",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "Same restoration as 7; the victory belongs to the Aeons together with the members — 'the victory of his Aeons.'"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 3834,
+      "chapter": 63,
+      "line": 29,
+      "proposed_english": "wrought",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "high",
+      "basis": "ⲁϩⲉⲓⲣⲉ = ⲁϥⲉⲓⲣⲉ 'it has wrought/done'; the verb of hatred's destruction-action."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 3836,
+      "chapter": 63,
+      "line": 33,
+      "proposed_english": "soul",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲥⲩ + ⲭⲏ (next line) = ψυχή 'soul'; the cross of Light is identified with the living soul. Lexicon: the rational and its life."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 3837,
+      "chapter": 63,
+      "line": 34,
+      "proposed_english": "them",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "high",
+      "basis": "ⲙ̄ⲙⲁⲩ = 3pl object pronoun, the object of 'they killed.'"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 3838,
+      "chapter": 63,
+      "line": 36,
+      "proposed_english": "envy",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "high",
+      "basis": "ⲙ̄ⲡ- + ⲡⲫⲑⲟⲛⲟⲥ (continuing onto next line) = 'from the envy'; second link in the cascade hatred → envy → devil → wicked one."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 3839,
+      "chapter": 63,
+      "line": 37,
+      "proposed_english": "wicked one",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲡⲟⲛⲏ- + -ⲣⲟⲥ (next line) = πονηρός 'wicked one'; the final term issuing from the devil in the self's cascade of hatred."
+    }
+  ]
+}

@@ -1,0 +1,1385 @@
+{
+  "teaching": 101,
+  "total_gaps_in_core": 58,
+  "gaps_restored": 22,
+  "gaps_unrestorable": 36,
+  "restoration_note": "The teaching is a doctrine of discrimination concerning regeneration: not every laying-off costs the soul the same, since some self-loves are surface outgrowths to be pruned painlessly (hair/nails on head, hands, feet) while others are structural members. The parable shifts to trees: body=land (ⲡⲕⲁⲍ), members=trees (ⲛⲱⲏⲛ); three classes — (a) regrow when cut, (b) regrow another time as rooted trees, (c) once removed do not return. Restorations were tightly constrained where parallel formulae recur (ⲣⲱⲧ 'grow,' ⲛ̄ⲕⲉⲥⲁⲡ 'another time,' ⲉⲩⲧⲛ̄ⲧⲁⲛⲧ 'being likened,' ⲛ̄ⲛⲓⲉⲉⲃⲉ 'hair/nails'). Mid-page sections 5436, 5443-5455 were heavily abraded; long lacunae there left unrestorable. The closing application to ⲁⲕⲁⲫⲁⲣⲥⲓⲁ 'impurities of food' and ⲥⲁⲣⲝ̄ ⲉⲧⲗⲉϩⲗⲁϩⲧ 'desire-arousing flesh' frames surface regrowth as the ordinary condition of a flesh fed from below.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5424,
+      "chapter": 116,
+      "line": 1,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲛⲓⲉⲉⲃⲉ",
+      "basis": "Editor's ⲓⲉⲉⲃⲉ + definite plural article ⲛ̄ⲛⲓ-, the standard pattern for direct object after ⲯⲱⲱⲧ. Refers to outer growths (hair/nails) whose cutting causes no pain — the parable's surface-trimming term, paralleled by {2}, {3}, {6}.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 1,
+      "section": 5425,
+      "chapter": 116,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ̄ⲓⲉ̄",
+      "basis": "Editor's reading: chapter-number marker (ⲣ̄ⲓⲉ̄ = 115) inserted into the Coptic line as a marginal/columnar quirk; interrupts the verb ⲯⲱⲱⲧ between syllables but is not part of the running text.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 2,
+      "section": 5429,
+      "chapter": 116,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲛⲓⲉⲉ",
+      "basis": "First half of ⲛ̄ⲛⲓⲉⲉⲃⲉ 'the hair/nails' before line break; completed by {3} ⲃⲉ ⲛ̄ on next line. Editor parallels {0}.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 3,
+      "section": 5430,
+      "chapter": 116,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲉ ⲛ̄",
+      "basis": "Editor's restoration: completes ⲛⲓⲉⲉⲃⲉ (split across line break) plus genitive linker ⲛ̄ before ⲛⲉⲩⲟ̄ϫ 'their hands'. Together with {2}: 'the hair of their hands.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 4,
+      "section": 5430,
+      "chapter": 116,
+      "line": 9,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲗⲁⲩⲉ",
+      "basis": "4 chars; ⲗⲁⲩⲉ 'anything/at all' completes the negative habitual ⲙⲁⲩⲓ̈ⲙⲉ ⲁⲣⲁⲩ ⲗⲁⲩⲉ 'they do not feel them at all,' the standard Coptic negative reinforcer. Fits parable: trimming the outer hair causes no felt pain whatever.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 5431,
+      "chapter": 116,
+      "line": 10,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars with partial 'ⲉ'. The clause is structurally 'they grow and they ⲉ...' but the verb cannot be securely fixed; possibly ⲉⲣⲱⲧ ⲁⲛ 'grow again' but spacing uncertain. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 6,
+      "section": 5432,
+      "chapter": 116,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲃⲉ",
+      "basis": "3 chars completing ⲛⲓⲉⲉⲃⲉ 'the hair/nails' — partial 'ⲛⲓ̈ⲉ' visible immediately before; standard parable lexeme; estimate matches exactly.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5432,
+      "chapter": 116,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars with partial 'ⲣⲉ'. Verb describing what the nails do (presumably 'grow back' or 'come up again') but exact phrasing not constrained. Better left honest.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 5433,
+      "chapter": 116,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars completing the clause about the tip regrowing; possibly continued with ⲛ̄ⲕⲉⲥⲁⲡ 'another time' + introductory phrase, but no firm constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 5434,
+      "chapter": 116,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars after 'they cut a finger of theirs upon the...'. Could be ⲥⲁⲣⲝ̄, ⲡⲥⲱⲙⲁ, or ⲡⲉϫⲁⲕ but no decisive constraint. Unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 5435,
+      "chapter": 116,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱⲙ",
+      "basis": "Editor's restoration: ⲡⲥⲱⲙⲁ 'the body' — completes the standard parable phrase 'members of the body.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5435,
+      "chapter": 116,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars relative-clause continuation; partial 'ⲉⲧⲕⲁ-' suggests a stative or relative form but multiple options (ⲉⲧⲕⲁⲃⲁⲗ, ⲉⲧⲕⲁⲍⲣⲏⲩ, etc.); insufficient constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 12,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars at line start, no constraint. Heavily abraded section.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 13,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars with traces 'ⲟ . . . ⲙ' — too rubbed for secure reconstruction.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲛ̄ ⲙ̄ⲡ",
+      "basis": "Editor's restoration: Lyc ⲭⲛ̄ ⲙ̄ⲡⲓⲛⲉⲩ = Sah ϫⲓⲛ ⲙ̄ⲡⲓⲛⲁⲩ 'from this hour' — fixed time-marker idiom completed by visible ⲛⲉⲩ following.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after ⲁⲧ-; possibly ⲁⲧⲟⲩ or part of an adverbial, but unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 16,
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars before ⲡⲉⲱⲙⲁ; could be ⲍⲣⲁⲓ̈ ⲍⲙ̄ 'within' or another locative, but no firm cue.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 17,
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's single-letter restoration completing ⲛ̄ⲕⲉⲥⲁⲡ 'another time/turn' — standard formula in this teaching (cf. lines 10, 25, 26).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "†ⲱⲃ",
+      "basis": "ⲟⲩⲛ̄ †ⲱⲃ 'there is a matter' — standard existential introducing a disciple's question (the segment likely transitions to a follow-up inquiry). Editor's reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 5438,
+      "chapter": 116,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲡ",
+      "basis": "Editor: completes ⲉⲣⲉ ⲡⲥⲱⲙⲁ 'while the body (is likened to the land)' — circumstantial introducing the parable's first leg.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 5438,
+      "chapter": 116,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲛⲓ",
+      "basis": "Editor: completes ⲉⲣⲉ ⲛⲓⲙⲉⲗⲟⲥ 'while the members' — parallel circumstantial for the second leg of the simile.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 5438,
+      "chapter": 116,
+      "line": 22,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "2 chars with partial 'ⲩ'; completes ⲍⲱⲱⲟⲩ 'they themselves' (Lyc form), the standard reflexive pronoun in this construction; matches estimate.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 22,
+      "section": 5439,
+      "chapter": 116,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars with partial 'ⲣⲟ'; possibly ⲉⲩⲣⲟⲧ 'sprouting' or part of a compound, but uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 5439,
+      "chapter": 116,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ̄ⲕⲉ",
+      "basis": "ⲟⲩⲛ̄ ⲍⲛ̄ⲕⲉ-ⲛⲱⲏⲛ 'there are some other trees' — exact parallel to line 26 ⲟⲩⲛ̄ ⲍⲛ̄ⲕⲉⲕⲁⲩⲉ ⲁⲛ 'there are also other ones'; sets up the threefold tree-classification.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 24,
+      "section": 5440,
+      "chapter": 116,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱⲡ",
+      "basis": "Editor's restoration: completes Lyc habitual ⲱⲁⲩⲱⲱⲡⲉ (= Sah ϣⲁⲩϣⲱⲡⲉ) 'they (habitually) become.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 5441,
+      "chapter": 116,
+      "line": 25,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲣ",
+      "basis": "2 chars between visible ⲙ and ⲟⲩ; ⲙ̄ⲡⲟⲩⲙⲟⲣⲟⲩ 'without their being bound' — from ⲙⲟⲩⲣ 'bind,' fitting the image of trees that stand fast on their own without external support; matches estimate exactly.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 26,
+      "section": 5442,
+      "chapter": 116,
+      "line": 26,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars at line start before ⲟⲩⲛ̄; possibly ⲡⲁⲗⲓⲛ 'again' or a discourse-particle, but no firm constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 27,
+      "section": 5442,
+      "chapter": 116,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲱⲧ",
+      "basis": "Editor: ⲙⲁⲩ-ⲣⲱⲧ 'they do not grow' — antithetical pair to the regrowing trees; identical to line 31 ⲙⲁⲩⲣⲱⲧ in same syntactic position.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 5443,
+      "chapter": 116,
+      "line": 27,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars before unclear ϩⲁⲛⲧⲉ; abraded.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 5443,
+      "chapter": 116,
+      "line": 27,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25 chars rubbed; nothing securely restorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 30,
+      "section": 5444,
+      "chapter": 116,
+      "line": 28,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "16 chars at line opening; introduces a new tree-class but no firm parallel.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 31,
+      "section": 5444,
+      "chapter": 116,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧ",
+      "basis": "Editor: completes qualitative ⲉⲩⲧⲛ̄ⲧⲁⲛⲧ 'being likened' — recurring formula throughout the simile.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 5445,
+      "chapter": 116,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars at line start before ⲛⲉⲧⲉ-; possibly demonstrative or discourse marker, no firm cue.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 33,
+      "section": 5445,
+      "chapter": 116,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲣⲏⲧⲉ",
+      "basis": "4 chars; ⲁⲡⲟⲩⲣⲏⲧⲉ ⲟⲩⲱⲍ 'to their feet again' — picks up the parable's standing-on-feet imagery from line 25 (ⲛ̄ⲥⲉⲧⲱⲕ ⲁⲣⲉⲧⲟⲩ); fits estimate exactly.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 34,
+      "section": 5446,
+      "chapter": 116,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars rubbed; no traces sufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 35,
+      "section": 5446,
+      "chapter": 116,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars rubbed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 36,
+      "section": 5447,
+      "chapter": 116,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars in obscure context (the surrounding ⲟⲓⲣⲁⲩ ⲟⲓⲣⲉ is itself unclear).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 37,
+      "section": 5448,
+      "chapter": 116,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars before 'ⲣⲱⲧ ⲟⲩⲧⲉ ⲙⲁⲩ-' — likely contains a negative habitual but no firm reconstruction.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 38,
+      "section": 5448,
+      "chapter": 116,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10 chars; verb in negative habitual but unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 39,
+      "section": 5449,
+      "chapter": 116,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30 chars heavily damaged with scattered traces; cannot be securely reconstructed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 40,
+      "section": 5450,
+      "chapter": 116,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25 chars rubbed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 41,
+      "section": 5451,
+      "chapter": 116,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "33 chars rubbed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 42,
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor: completes Lyc habitual prefix ⲱⲁϥ-ⲣ̄-ⲉⲛⲉϩ 'he habitually does forever' (= Sah ϣⲁϥ-).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars with scattered traces; not securely restorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 44,
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars; verb completion of ⲛ̄ⲥⲉⲣⲱⲧ 'and they grow' but continuation unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 45,
+      "section": 5453,
+      "chapter": 116,
+      "line": 39,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars before ⲍⲛ̄ ⲛ̄ⲁⲕⲁⲫⲁⲣⲥⲓⲁ 'in the impurities' — possibly habitual prefix or discourse particle, but unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 46,
+      "section": 5453,
+      "chapter": 116,
+      "line": 39,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars after ⲛ̄ⲧⲟⲩⲁⲙ 'of their food'; clause continuation but no firm cue.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 47,
+      "section": 5454,
+      "chapter": 116,
+      "line": 40,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars with only ⲱⲟⲁ visible afterward; no constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 48,
+      "section": 5455,
+      "chapter": 116,
+      "line": 41,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30 chars rubbed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 49,
+      "section": 5456,
+      "chapter": 116,
+      "line": 42,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12 chars with sparse traces; introduces 'forth from there, this desire-arousing flesh' but lead-in unrecoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 50,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars; insufficient context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 51,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1 char; insufficient context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 52,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars; surrounded by obscure ⲙⲁⲍⲥⲁⲧⲡ.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 53,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1 char; unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 54,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars; unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 55,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8 chars rubbed at line start.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 56,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛ",
+      "basis": "Editor: ⲉⲧ[ⲁⲛ]ϩ qualitative 'living' (Lyc for ⲉⲧⲟⲛϩ̄) — standard descriptor of ⲥⲁⲣⲝ̄ in Manichaean cosmology, the living flesh inhabited by the soul.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 57,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars after subjunctive ⲛ̄ⲥⲉ-; verb unconstrained.",
+      "confidence": "unrestorable"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5424,
+      "chapter": 116,
+      "line": 1,
+      "core_english": "Concerning why, when they cut {0}, the"
+    },
+    {
+      "section": 5425,
+      "chapter": 116,
+      "line": 2,
+      "core_english": "man is not pained, but when they cut"
+    },
+    {
+      "section": 5429,
+      "chapter": 116,
+      "line": 8,
+      "core_english": "head of the body of the man, and they cut {1}"
+    },
+    {
+      "section": 5430,
+      "chapter": 116,
+      "line": 9,
+      "core_english": "{2} their hands with their feet, they do not feel them {3}"
+    },
+    {
+      "section": 5431,
+      "chapter": 116,
+      "line": 10,
+      "core_english": "in any of these — namely, they grow and they {4}"
+    },
+    {
+      "section": 5432,
+      "chapter": 116,
+      "line": 11,
+      "core_english": "another time — the manner in which the {5} {6}"
+    },
+    {
+      "section": 5433,
+      "chapter": 116,
+      "line": 12,
+      "core_english": "this — of the tip — they grow {7}"
+    },
+    {
+      "section": 5434,
+      "chapter": 116,
+      "line": 13,
+      "core_english": "they cut a finger of theirs upon the {8}"
+    },
+    {
+      "section": 5435,
+      "chapter": 116,
+      "line": 14,
+      "core_english": "in the members of the {9} which {10}"
+    },
+    {
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "core_english": "{11} there {12} {13} hour {14}"
+    },
+    {
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "core_english": "{15} the body, another time. Now there is {16}"
+    },
+    {
+      "section": 5438,
+      "chapter": 116,
+      "line": 22,
+      "core_english": "the body is likened to the land, while the members themselves"
+    },
+    {
+      "section": 5439,
+      "chapter": 116,
+      "line": 23,
+      "core_english": "{17} within him, being likened to trees. There are {18}"
+    },
+    {
+      "section": 5440,
+      "chapter": 116,
+      "line": 24,
+      "core_english": "trees which, when one plants them sprouting in the land, they become"
+    },
+    {
+      "section": 5441,
+      "chapter": 116,
+      "line": 25,
+      "core_english": "and they grow another time, and they stand fast on their feet without {19} them"
+    },
+    {
+      "section": 5442,
+      "chapter": 116,
+      "line": 26,
+      "core_english": "{20} there are also other ones which, when they cut them, do not {21}"
+    },
+    {
+      "section": 5443,
+      "chapter": 116,
+      "line": 27,
+      "core_english": "{22} ϩⲁⲛⲧⲉ {23}"
+    },
+    {
+      "section": 5444,
+      "chapter": 116,
+      "line": 28,
+      "core_english": "{24} and they grow being likened"
+    },
+    {
+      "section": 5445,
+      "chapter": 116,
+      "line": 29,
+      "core_english": "{25} those which when they cut them and they grow to their {26} again"
+    },
+    {
+      "section": 5446,
+      "chapter": 116,
+      "line": 30,
+      "core_english": "{27} they themselves which exist {28}"
+    },
+    {
+      "section": 5447,
+      "chapter": 116,
+      "line": 31,
+      "core_english": "which when they cut them, they do not grow ⲟⲓⲣⲁⲩ ⲟⲓⲣⲉ {29} which"
+    },
+    {
+      "section": 5448,
+      "chapter": 116,
+      "line": 32,
+      "core_english": "{30} grow, nor do they {31}"
+    },
+    {
+      "section": 5449,
+      "chapter": 116,
+      "line": 33,
+      "core_english": "{32}"
+    },
+    {
+      "section": 5450,
+      "chapter": 116,
+      "line": 34,
+      "core_english": "{33}"
+    },
+    {
+      "section": 5451,
+      "chapter": 116,
+      "line": 36,
+      "core_english": "{34}"
+    },
+    {
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "core_english": "he habitually does forever {35} and they grow {36}"
+    },
+    {
+      "section": 5453,
+      "chapter": 116,
+      "line": 39,
+      "core_english": "{37} in the impurities of their food {38}"
+    },
+    {
+      "section": 5454,
+      "chapter": 116,
+      "line": 40,
+      "core_english": "{39}"
+    },
+    {
+      "section": 5455,
+      "chapter": 116,
+      "line": 41,
+      "core_english": "{40}"
+    },
+    {
+      "section": 5456,
+      "chapter": 116,
+      "line": 42,
+      "core_english": "{41} forth from there, this flesh which is desire-arousing forth"
+    },
+    {
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "core_english": "{42} {43} if ⲙⲁⲍⲥⲁⲧⲡ {44} a {45} a {46}"
+    },
+    {
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "core_english": "{47} in the {48} flesh and they {49}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5424,
+      "chapter": 116,
+      "line": 1,
+      "proposed_english": "the hair",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲛ̄ⲛⲓⲉⲉⲃⲉ — outer growths cut painlessly (hair/nails); spiritual reading specifies 'hair and the tip of the head and the end of a finger' as the surface-trimming class."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5429,
+      "chapter": 116,
+      "line": 8,
+      "proposed_english": "the hair",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "moderate",
+      "basis": "Same lexeme ⲛ̄ⲛⲓⲉⲉⲃⲉ as gap {0}; introduces the parallel statement that cutting hair on head, hands, and feet is unfelt."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5430,
+      "chapter": 116,
+      "line": 9,
+      "proposed_english": "of",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲃⲉ ⲛ̄ — second half of ⲛⲓⲉⲉⲃⲉ + genitive linker ⲛ̄, surfacing in English as the connective 'of' bridging 'hair' to 'their hands.'"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5430,
+      "chapter": 116,
+      "line": 9,
+      "proposed_english": "at all",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "low",
+      "basis": "Coptic ⲗⲁⲩⲉ functions as standard negative reinforcer ('anything/at all'); fits parable's emphasis on no felt pain whatsoever from surface trimming."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5431,
+      "chapter": 116,
+      "line": 10,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic verb after 'they grow and they...' cannot be securely fixed."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 5432,
+      "chapter": 116,
+      "line": 11,
+      "proposed_english": "hair",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲉⲃⲉ completes ⲛⲓⲉⲉⲃⲉ — the parable's surface-growth term; clause: 'the manner in which the hair...'"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 5432,
+      "chapter": 116,
+      "line": 11,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb describing what the hair does (likely 'grow back') is unconstrained."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 5433,
+      "chapter": 116,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char continuation about regrowth of the tip is too damaged."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 5434,
+      "chapter": 116,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of 'upon the...' not securely fixed."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 5435,
+      "chapter": 116,
+      "line": 14,
+      "proposed_english": "body",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲡⲥⲱⲙⲁ 'the body,' completing standard parable phrase 'members of the body.'"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 5435,
+      "chapter": 116,
+      "line": 14,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "unrestorable",
+      "basis": "Relative clause continuation unconstrained."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily abraded line opening."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "unrestorable",
+      "basis": "5 chars with insufficient traces."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "proposed_english": "from this",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "high",
+      "basis": "Lyc ⲭⲛ̄ ⲙ̄ⲡⲓⲛⲉⲩ = 'from this hour' — fixed time-marker idiom."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 5436,
+      "chapter": 116,
+      "line": 15,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char terminus uncertain."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "unrestorable",
+      "basis": "7 chars before 'the body' unconstrained."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 5437,
+      "chapter": 116,
+      "line": 16,
+      "proposed_english": "a matter",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲟⲩⲛ̄ †ⲱⲃ 'there is a matter' — existential introducing the disciple's pending question; standard phrasing."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 5439,
+      "chapter": 116,
+      "line": 23,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "3 chars with partial 'ⲣⲟ' insufficient."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 5439,
+      "chapter": 116,
+      "line": 23,
+      "proposed_english": "some other",
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲟⲩⲛ̄ ⲍⲛ̄ⲕⲉ-ⲛⲱⲏⲛ 'there are some other trees' — sets up the threefold tree-classification, parallel to line 26."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 5441,
+      "chapter": 116,
+      "line": 25,
+      "proposed_english": "binding",
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "low",
+      "basis": "Coptic ⲙ̄ⲡⲟⲩⲙⲟⲣⲟⲩ 'without their being bound' — from ⲙⲟⲩⲣ 'bind'; trees stand fast on their own without external support."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 5442,
+      "chapter": 116,
+      "line": 26,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char particle/discourse marker unconstrained."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 5442,
+      "chapter": 116,
+      "line": 26,
+      "proposed_english": "grow",
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲙⲁⲩ-ⲣⲱⲧ 'they do not grow' — third class of trees, those that once cut do not return."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 5443,
+      "chapter": 116,
+      "line": 27,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "Heavily abraded."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 5443,
+      "chapter": 116,
+      "line": 27,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "25 chars rubbed."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 5444,
+      "chapter": 116,
+      "line": 28,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "unrestorable",
+      "basis": "16-char line opening unconstrained."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 5445,
+      "chapter": 116,
+      "line": 29,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        32
+      ],
+      "confidence": "unrestorable",
+      "basis": "5 chars at line start without firm cue."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 5445,
+      "chapter": 116,
+      "line": 29,
+      "proposed_english": "feet",
+      "coptic_gap_refs": [
+        33
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲣⲏⲧⲉ 'feet' — picks up the parable's standing-on-feet imagery from line 25."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 5446,
+      "chapter": 116,
+      "line": 30,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        34
+      ],
+      "confidence": "unrestorable",
+      "basis": "Rubbed."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 5446,
+      "chapter": 116,
+      "line": 30,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        35
+      ],
+      "confidence": "unrestorable",
+      "basis": "Rubbed."
+    },
+    {
+      "eng_gap_id": 29,
+      "section": 5447,
+      "chapter": 116,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        36
+      ],
+      "confidence": "unrestorable",
+      "basis": "Surrounding text obscure."
+    },
+    {
+      "eng_gap_id": 30,
+      "section": 5448,
+      "chapter": 116,
+      "line": 32,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        37
+      ],
+      "confidence": "unrestorable",
+      "basis": "9 chars unconstrained."
+    },
+    {
+      "eng_gap_id": 31,
+      "section": 5448,
+      "chapter": 116,
+      "line": 32,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        38
+      ],
+      "confidence": "unrestorable",
+      "basis": "10 chars unconstrained."
+    },
+    {
+      "eng_gap_id": 32,
+      "section": 5449,
+      "chapter": 116,
+      "line": 33,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        39
+      ],
+      "confidence": "unrestorable",
+      "basis": "30 chars heavily damaged."
+    },
+    {
+      "eng_gap_id": 33,
+      "section": 5450,
+      "chapter": 116,
+      "line": 34,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        40
+      ],
+      "confidence": "unrestorable",
+      "basis": "25 chars rubbed."
+    },
+    {
+      "eng_gap_id": 34,
+      "section": 5451,
+      "chapter": 116,
+      "line": 36,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "unrestorable",
+      "basis": "33 chars rubbed."
+    },
+    {
+      "eng_gap_id": 35,
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        43
+      ],
+      "confidence": "unrestorable",
+      "basis": "8 chars with scattered traces."
+    },
+    {
+      "eng_gap_id": 36,
+      "section": 5452,
+      "chapter": 116,
+      "line": 38,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        44
+      ],
+      "confidence": "unrestorable",
+      "basis": "8 chars unconstrained."
+    },
+    {
+      "eng_gap_id": 37,
+      "section": 5453,
+      "chapter": 116,
+      "line": 39,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        45
+      ],
+      "confidence": "unrestorable",
+      "basis": "5 chars before 'in the impurities' unclear."
+    },
+    {
+      "eng_gap_id": 38,
+      "section": 5453,
+      "chapter": 116,
+      "line": 39,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        46
+      ],
+      "confidence": "unrestorable",
+      "basis": "7 chars after 'their food' unconstrained."
+    },
+    {
+      "eng_gap_id": 39,
+      "section": 5454,
+      "chapter": 116,
+      "line": 40,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        47
+      ],
+      "confidence": "unrestorable",
+      "basis": "Insufficient traces."
+    },
+    {
+      "eng_gap_id": 40,
+      "section": 5455,
+      "chapter": 116,
+      "line": 41,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        48
+      ],
+      "confidence": "unrestorable",
+      "basis": "30 chars rubbed."
+    },
+    {
+      "eng_gap_id": 41,
+      "section": 5456,
+      "chapter": 116,
+      "line": 42,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        49
+      ],
+      "confidence": "unrestorable",
+      "basis": "12 chars with sparse traces."
+    },
+    {
+      "eng_gap_id": 42,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        50
+      ],
+      "confidence": "unrestorable",
+      "basis": "2 chars insufficient."
+    },
+    {
+      "eng_gap_id": 43,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        51
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single char."
+    },
+    {
+      "eng_gap_id": 44,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        52
+      ],
+      "confidence": "unrestorable",
+      "basis": "3 chars amid obscure surroundings."
+    },
+    {
+      "eng_gap_id": 45,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        53
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single char."
+    },
+    {
+      "eng_gap_id": 46,
+      "section": 5457,
+      "chapter": 116,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        54
+      ],
+      "confidence": "unrestorable",
+      "basis": "3 chars."
+    },
+    {
+      "eng_gap_id": 47,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        55
+      ],
+      "confidence": "unrestorable",
+      "basis": "8 chars rubbed at line start."
+    },
+    {
+      "eng_gap_id": 48,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "proposed_english": "living",
+      "coptic_gap_refs": [
+        56
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲉⲧⲁⲛϩ 'living' — Lyc qualitative; the standard 'living flesh' descriptor in Manichaean usage, the flesh inhabited by the soul."
+    },
+    {
+      "eng_gap_id": 49,
+      "section": 5458,
+      "chapter": 116,
+      "line": 44,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        57
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char verb after subjunctive ⲛ̄ⲥⲉ- unconstrained."
+    }
+  ]
+}

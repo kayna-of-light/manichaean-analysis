@@ -1,0 +1,931 @@
+{
+  "teaching": 99,
+  "total_gaps_in_core": 57,
+  "gaps_restored": 46,
+  "gaps_unrestorable": 11,
+  "restoration_note": "The teaching describes three icons (registers) of the inner life in the righteous: pneumatic (New Man, where Mind of Light dwells), psychic (residue/remainder still mingled with passions), and somatic (outermost, where soul descends to feed). The Living Soul daily passes through all three, laying off body in the somatic, laying off passions in the psychic, and conjoining inward with patience/faith/love (Virgin of Light) in the pneumatic. Most gaps are line-break completions of standard formulae (icon, New Man, Indweller, Virgin of Light, paint/adorn, redeem, purify), which I've confirmed against editor proposals with high confidence. The middle section (5267-5274) describing the somatic descent and emergence of the Virgin contains substantive lacunae that resist restoration: I have left {12}-{15}, {18}, {20}-{23}, and {49} unrestorable since the surrounding Coptic provides only the affection-list framework without enough constraint to fix specific terms.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5258,
+      "chapter": 114,
+      "line": 3,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Editor restoration of existential ⲟⲩⲛ̄ 'there is/are' before ϣⲁⲙ[ⲧⲉ] 'three'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5259,
+      "chapter": 114,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Completes ϣⲁⲙ-ⲧⲉ 'three' (feminine) across line break before ⲛⲍⲓⲕⲱⲛ 'icons'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5260,
+      "chapter": 114,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧϣⲁⲣ",
+      "basis": "Standard enumeration opener ⲧϣⲁⲣⲡ ⲧⲉ 'the first is'; first of three icons",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5260,
+      "chapter": 114,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Single letter completing ⲡⲛⲉⲩⲙⲁⲧⲓⲕⲟⲛ 'pneumatic'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 5260,
+      "chapter": 114,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉ",
+      "basis": "Copula ⲡⲉ in cleft sentence ⲉⲧⲉ ⲡⲣⲙⲛⲃⲣⲣⲉ ⲡⲉ 'which is the New Man'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 5261,
+      "chapter": 114,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍ",
+      "basis": "ⲁⲍⲟⲩⲛ 'inward' — the soteriological direction (Lycopolitan form of ⲉϩⲟⲩⲛ); Mind of Light goes inward into the New Man",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 5262,
+      "chapter": 114,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Article ⲡ̄ before ⲥⲱⲭⲡ 'residue' across line break",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5263,
+      "chapter": 114,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Genitive ⲛ̄ 'of' before ⲧⲯⲩⲭⲓⲕⲟⲛ",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 5264,
+      "chapter": 114,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭ",
+      "basis": "Single letter completing ⲯⲩ-ⲭⲓⲕⲟⲛ across line break",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 5264,
+      "chapter": 114,
+      "line": 9,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲧⲉ",
+      "basis": "Relative ⲉⲧⲉ 'which' fitting est_chars=3, introducing the descriptive clause about the Old Man's temporal origin",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 10,
+      "section": 5264,
+      "chapter": 114,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲟⲡ ϫⲓ",
+      "basis": "Completes ϣ[ⲟⲟⲡ ϫⲓ]ⲛⲛⲥⲁⲡ 'exists from the time of'; ϣ visible at start, ⲛⲛ at end, with ϫⲓⲛ 'from' as standard temporal preposition",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 11,
+      "section": 5266,
+      "chapter": 114,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱⲙⲁⲧⲓⲕⲟⲛ",
+      "basis": "Third icon in pneumatic/psychic/somatic triad; the somatic icon 'contains them all' as outermost form",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 5267,
+      "chapter": 114,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Surrounding fragments ('every... unto the All') provide insufficient constraint for a 13-character fill",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 13,
+      "section": 5267,
+      "chapter": 114,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "End-of-line lacuna with only 'the hour when...' preceding; cannot fix 3-char trace verbally",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 5268,
+      "chapter": 114,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Beginning of new clause; could be a verb form preceding ⲁⲍⲟⲩⲛ 'inward' but no constraint fixes the specific 4-char fill",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 5268,
+      "chapter": 114,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "End of clause about 'sinking down through food'; could be ⲁⲡⲉⲥⲏⲧ 'downward' but creates redundancy with following ⲁⲡⲓⲧⲛⲉ; honest non-restoration",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 16,
+      "section": 5269,
+      "chapter": 114,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Verb form preceding ⲁⲡⲓⲧⲛⲉ 'downward' — could be ⲱⲁⲥⲉⲓ 'she habitually comes' or similar, but 4-char trace insufficient to fix",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 17,
+      "section": 5270,
+      "chapter": 114,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲇⲉ ⲉⲧ",
+      "basis": "Standard relative ⲇⲉ ⲉⲧϣⲟⲟⲡ 'which exists' continuing description of somatic icon",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 5271,
+      "chapter": 114,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Beginning of clause about ascent; 10-char trace could be a temporal connector or verb but lacks sufficient constraint",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 19,
+      "section": 5272,
+      "chapter": 114,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "Habitual prefix ϣⲁⲥⲃⲁϣⲥ̄ 'she habitually pours her' (parallel to same form at line 29)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 5272,
+      "chapter": 114,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Predicate after 'enemies which' — likely ⲱⲁⲩ or ⲙⲁⲁϫⲧ 'are mingled' but 4-char fill not fixed",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 21,
+      "section": 5273,
+      "chapter": 114,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Start of vice-list before ⲃⲗⲕⲉ 'wrath'; partial parallel with 5291 list but 11-char fill cannot be fixed without traces",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 22,
+      "section": 5273,
+      "chapter": 114,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Connector after ⲧⲉⲡⲓⲑⲩⲙⲓⲁ 'desire' continuing the vice-list; likely ⲙⲛ ⲧ 'and the' but unfixed",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 5274,
+      "chapter": 114,
+      "line": 20,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "16-character fill before ⲛⲉⲙⲉⲥ 'with her' — likely concludes vice-list with ⲉⲧⲙⲁⲁϫⲧ̄ 'which are mingled' but precise wording uncertain",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 24,
+      "section": 5274,
+      "chapter": 114,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡⲉ",
+      "basis": "ϣⲁⲡⲉ = ϣⲱⲡⲉ 'becomes' (Lyc); ⲧⲟⲧⲉ ϣⲁⲡⲉ ⲟⲩⲡⲁⲣⲑⲉⲛⲟⲥ 'then there comes to be a virgin'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 5275,
+      "chapter": 114,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲑⲉⲛⲟⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ ⲉⲓ ⲛⲥ",
+      "basis": "Completes [ⲡⲁⲣ]ⲑⲉⲛⲟⲥ ⲛⲟⲩⲁⲓⲛⲉ 'Virgin of Light' (lexicon entry) + ⲉⲓ 'come' + ⲛⲥ- conjunctive prefix",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 5275,
+      "chapter": 114,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧ",
+      "basis": "ⲛ̄ⲧⲍⲓⲕⲱⲛ 'from the icon' — preposition + article",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 5276,
+      "chapter": 114,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Genitive marker before ⲡⲛⲧⲕ̄ⲛ 'the Indweller'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 5276,
+      "chapter": 114,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛϩⲏⲧⲥ",
+      "basis": "Standard locative 'in her' (referring to Virgin/soul); 'the Indweller who exists in her'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 29,
+      "section": 5276,
+      "chapter": 114,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "Single letter completing ⲡ[ⲣ]ⲙⲛⲃⲣⲡⲉ 'New Man'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 5276,
+      "chapter": 114,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲡⲉ ⲡⲉ",
+      "basis": "Completes ⲡⲣⲙⲛⲃⲣⲡⲉ ⲡⲉ 'is the New Man' — formula matching parallels at lines 5, 7, 22",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 5277,
+      "chapter": 114,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Single letter completing ⲉⲧⲙ̄ⲙⲉⲩ 'that one' (demonstrative)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 5277,
+      "chapter": 114,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲥⲃ",
+      "basis": "Conjunctive ⲛⲥⲃⲱⲕ 'and travels' (3sg.f of ⲃⲱⲕ); continues into ⲱⲕ at start of line 24",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 5278,
+      "chapter": 114,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲡⲉ",
+      "basis": "Completes ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' (lexicon: ⲥⲁⲛⲧⲡⲉ)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 5279,
+      "chapter": 114,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲥ",
+      "basis": "Conjunctive prefix ⲛⲥ- before ϫⲓⲧⲥ̄ 'takes her'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 5279,
+      "chapter": 114,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲁⲫ",
+      "basis": "Completes ⲍⲱⲣⲣⲁⲫⲉ 'paint' (Greek ζωγραφεῖν)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 5280,
+      "chapter": 114,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Final letter of ⲍⲱⲣⲣⲁⲫⲉ before ⲙⲙⲁⲥ 'her'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 5280,
+      "chapter": 114,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩⲓ",
+      "basis": "Start of ϩⲓϩⲟⲩⲛ 'inside'; continues into ⲟⲩⲛ at line 27",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 5281,
+      "chapter": 114,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Completes ϩⲓϩⲟⲩⲛ 'inside'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 5282,
+      "chapter": 114,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲟⲥ",
+      "basis": "Completes ⲡⲁⲣⲑⲉⲛⲟⲥ 'Virgin' (Greek παρθένος)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 5283,
+      "chapter": 114,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Single letter completing ⲧϩⲉ 'the manner' (Lyc form of Sah ⲑⲉ)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 5283,
+      "chapter": 114,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱ",
+      "basis": "Start of ⲥⲱⲧⲏ 'redeem/save' (Lyc); continues into ⲧⲏ at line 30",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 42,
+      "section": 5284,
+      "chapter": 114,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏ ⲁ",
+      "basis": "Completes ⲥⲱⲧⲏ ⲁⲃⲁⲗ 'redeemed forth'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 5285,
+      "chapter": 114,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲁⲓ",
+      "basis": "Start of ⲡⲁⲓⲕⲁⲓⲟⲥ 'righteous one' (Lyc form of δίκαιος)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 5286,
+      "chapter": 114,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲥ",
+      "basis": "Completes ⲧⲩⲡⲟⲥ 'type' (Greek τύπος)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 5287,
+      "chapter": 114,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ ⲛϩ",
+      "basis": "Completes ⲧⲟⲩⲃⲟ ⲛ̄ϩⲟⲟⲩⲉ ⲛⲓⲙ 'purified every day'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 5287,
+      "chapter": 114,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲍⲓ",
+      "basis": "Continuing ⲛ̄[ⲍⲓ]ⲕ[ⲱⲛ] 'icons' across line break — these three icons",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 5288,
+      "chapter": 114,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲱⲛ",
+      "basis": "Completes ⲕ[ⲱⲛ] of ⲛⲍⲓⲕⲱⲛ 'icons'; ⲕ visible as partial trace",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 5291,
+      "chapter": 114,
+      "line": 37,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲣⲅⲏ",
+      "basis": "ⲧⲉⲥⲟⲣⲅⲏ 'her wrath' (Greek ὀργή) — heads vice-list, fits 5-char estimate; parallels 5273 list",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 49,
+      "section": 5291,
+      "chapter": 114,
+      "line": 37,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "ⲧⲙⲛⲧ-X-ⲙⲉ pattern (continuing into 5292's ⲙⲉ); compound abstract noun (vice) but specific 4-char root unfixed",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 50,
+      "section": 5293,
+      "chapter": 114,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Article ⲧ- before ϩⲓⲕⲱⲛ 'the icon'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 51,
+      "section": 5293,
+      "chapter": 114,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Single letter completing ϩⲱⲱⲥ '(she) herself/however' (3sg.f intensive)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 5294,
+      "chapter": 114,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙⲛ",
+      "basis": "Start of ⲧⲙⲛⲧϩⲁⲣⲱϩⲏⲧ 'patience' (lexicon entry); continues into ⲧϩⲁⲣⲱϩⲏⲧ at line 41",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 53,
+      "section": 5297,
+      "chapter": 114,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Single letter completing ⲱⲁⲩⲙⲟⲩⲧⲉ 'they habitually call'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 54,
+      "section": 5298,
+      "chapter": 114,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲥ",
+      "basis": "Completes ⲛ̄ⲧⲁⲥ 'she/it is she' (independent pronoun)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 55,
+      "section": 5298,
+      "chapter": 114,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲡⲉ",
+      "basis": "Completes ⲧⲱⲁⲣⲡⲉ 'the first' (feminine of ⲱⲁⲣⲡ)",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 56,
+      "section": 5299,
+      "chapter": 114,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁ",
+      "basis": "Completes ⲛ̄ⲧⲁⲥ 'she' (independent pronoun) — closing 'she is the first... she also is the last'",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5258,
+      "chapter": 114,
+      "line": 3,
+      "core_english": "There are three"
+    },
+    {
+      "section": 5259,
+      "chapter": 114,
+      "line": 4,
+      "core_english": "icons that exist in the elect (eklektos) man."
+    },
+    {
+      "section": 5260,
+      "chapter": 114,
+      "line": 5,
+      "core_english": "The first is the spiritual (pneumatikon) icon, which is the New Man, she"
+    },
+    {
+      "section": 5261,
+      "chapter": 114,
+      "line": 6,
+      "core_english": "in whom the Mind of Light fashions himself and goes inward"
+    },
+    {
+      "section": 5262,
+      "chapter": 114,
+      "line": 7,
+      "core_english": "into him and dwells in him. The second icon is the re-"
+    },
+    {
+      "section": 5263,
+      "chapter": 114,
+      "line": 8,
+      "core_english": "-sidue and the remainder of the New Man, which is the icon of the psy-"
+    },
+    {
+      "section": 5264,
+      "chapter": 114,
+      "line": 9,
+      "core_english": "-chic, which is bound into the flesh — this is the Old Man which exists from"
+    },
+    {
+      "section": 5266,
+      "chapter": 114,
+      "line": 11,
+      "core_english": "the somatic (sōmatikon), which contains them all. The three icons"
+    },
+    {
+      "section": 5267,
+      "chapter": 114,
+      "line": 12,
+      "core_english": "{0} every... unto the All. The hour when {1}"
+    },
+    {
+      "section": 5268,
+      "chapter": 114,
+      "line": 13,
+      "core_english": "{2} through the food of eating, she sinks down {3}"
+    },
+    {
+      "section": 5269,
+      "chapter": 114,
+      "line": 14,
+      "core_english": "{4} downward unto the somatic icon. The somatic"
+    },
+    {
+      "section": 5270,
+      "chapter": 114,
+      "line": 15,
+      "core_english": "which exists in her — she pours her there and sets her in the icon"
+    },
+    {
+      "section": 5271,
+      "chapter": 114,
+      "line": 16,
+      "core_english": "{5}, as she also is conveyed upward, and she falls unto the icon"
+    },
+    {
+      "section": 5272,
+      "chapter": 114,
+      "line": 17,
+      "core_english": "she pours her, the psychic, unto the enemies which {6}"
+    },
+    {
+      "section": 5273,
+      "chapter": 114,
+      "line": 18,
+      "core_english": "{7} wrath, desire, {8}"
+    },
+    {
+      "section": 5274,
+      "chapter": 114,
+      "line": 20,
+      "core_english": "{9} with her. Then there comes to be a vir-"
+    },
+    {
+      "section": 5275,
+      "chapter": 114,
+      "line": 21,
+      "core_english": "-gin of Light, who comes and reveals herself forth to her from the icon"
+    },
+    {
+      "section": 5276,
+      "chapter": 114,
+      "line": 22,
+      "core_english": "of the Indweller, which exists in her, which is the New Man, it is —"
+    },
+    {
+      "section": 5277,
+      "chapter": 114,
+      "line": 23,
+      "core_english": "that Virgin blazes a path, and tra-"
+    },
+    {
+      "section": 5278,
+      "chapter": 114,
+      "line": 24,
+      "core_english": "-vels before her inward, and draws her up to the height, to the upper place,"
+    },
+    {
+      "section": 5279,
+      "chapter": 114,
+      "line": 25,
+      "core_english": "and she brings her in to the icon of the Indweller, and pai-"
+    },
+    {
+      "section": 5280,
+      "chapter": 114,
+      "line": 26,
+      "core_english": "-nts her, and adorns her in the New Man, in-"
+    },
+    {
+      "section": 5281,
+      "chapter": 114,
+      "line": 27,
+      "core_english": "-side, and she takes the seal in all the members of the Vir-"
+    },
+    {
+      "section": 5282,
+      "chapter": 114,
+      "line": 28,
+      "core_english": "-gin of Light who exists, who dwells in the New Man."
+    },
+    {
+      "section": 5283,
+      "chapter": 114,
+      "line": 29,
+      "core_english": "This then is the manner: the Living Member is habitually re-"
+    },
+    {
+      "section": 5284,
+      "chapter": 114,
+      "line": 30,
+      "core_english": "-deemed forth from every life — the one who comes into the body of"
+    },
+    {
+      "section": 5285,
+      "chapter": 114,
+      "line": 31,
+      "core_english": "the Righteous one outside, in the dispensation of the prophecy, in this ty-"
+    },
+    {
+      "section": 5286,
+      "chapter": 114,
+      "line": 32,
+      "core_english": "-pe. The type in this manner: the Living Soul is habitually puri-"
+    },
+    {
+      "section": 5287,
+      "chapter": 114,
+      "line": 33,
+      "core_english": "-fied every day in the All, and crosses through these three i-"
+    },
+    {
+      "section": 5288,
+      "chapter": 114,
+      "line": 34,
+      "core_english": "-cons. She habitually releases the body which is not hers,"
+    },
+    {
+      "section": 5291,
+      "chapter": 114,
+      "line": 37,
+      "core_english": "her wrath, the bitterness, the desire, the {10}"
+    },
+    {
+      "section": 5293,
+      "chapter": 114,
+      "line": 39,
+      "core_english": "evil teachings which are not hers. But in the icon, however,"
+    },
+    {
+      "section": 5294,
+      "chapter": 114,
+      "line": 40,
+      "core_english": "of the pneumatikon, she habitually lives and joins inward with"
+    },
+    {
+      "section": 5297,
+      "chapter": 114,
+      "line": 43,
+      "core_english": "of Light, who is a robe to the New Man, whom they habitually ca-"
+    },
+    {
+      "section": 5298,
+      "chapter": 114,
+      "line": 44,
+      "core_english": "-ll by the name 'the hour of life', who is she; she is the first"
+    },
+    {
+      "section": 5299,
+      "chapter": 114,
+      "line": 45,
+      "core_english": "She; she also is the last. : —"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5267,
+      "chapter": 114,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap {12} (13 chars) preceding 'every... unto the All' has insufficient constraint; cannot fix English content"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5267,
+      "chapter": 114,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap {13} at line end ('the hour when...') unrestorable; English fill not determinable"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5268,
+      "chapter": 114,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        14
+      ],
+      "basis": "Coptic gap {14} preceding ⲟⲩⲛ 'within' unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5268,
+      "chapter": 114,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        15
+      ],
+      "basis": "Coptic gap {15} after 'she sinks down' unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5269,
+      "chapter": 114,
+      "line": 14,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        16
+      ],
+      "basis": "Coptic gap {16} (verb form before ⲁⲡⲓⲧⲛⲉ 'downward') unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 5271,
+      "chapter": 114,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        18
+      ],
+      "basis": "Coptic gap {18} (10 chars opening clause about ascent) unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 5272,
+      "chapter": 114,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        20
+      ],
+      "basis": "Coptic gap {20} (predicate after 'enemies which') unrestorable; likely 'are mingled' but unfixed",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 5273,
+      "chapter": 114,
+      "line": 18,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        21
+      ],
+      "basis": "Coptic gap {21} (start of vice-list) unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 5273,
+      "chapter": 114,
+      "line": 18,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "basis": "Coptic gap {22} (continuation of vice-list after 'desire') unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 5274,
+      "chapter": 114,
+      "line": 20,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        23
+      ],
+      "basis": "Coptic gap {23} (concluding the vice-list before 'with her') unrestorable",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 5291,
+      "chapter": 114,
+      "line": 37,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        49
+      ],
+      "basis": "Coptic gap {49} (ⲧⲙⲛⲧ-X-ⲙⲉ vice-name) unrestorable; English term not determinable",
+      "confidence": "unrestorable"
+    }
+  ]
+}

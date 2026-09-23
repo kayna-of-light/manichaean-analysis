@@ -1,0 +1,91 @@
+{
+  "chapter_number": 120,
+  "manuscript_pages": "286,24 - 288,18",
+  "coptic_tokens": 588,
+  "greek_loanwords": {
+    "total_density_pct": 3.06,
+    "cosmological_density_pct": 1.53,
+    "ecclesiastical_density_pct": 0.51,
+    "cosmological_ratio": 0.75,
+    "cosmological_count": 9,
+    "ecclesiastical_count": 3,
+    "general_count": 6,
+    "total_greek": 18,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 2,
+      "ⲥⲱⲙⲁ": 2,
+      "ⲟⲩⲥⲓⲁ": 4,
+      "ⲁⲣⲭⲏ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ": 1,
+      "ⲡⲣⲉⲥⲃⲩⲧⲉⲣⲟⲥ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 42,
+    "sahidic_count": 32,
+    "total_dialect_markers": 74,
+    "subachmimic_ratio": 0.568,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×6",
+      "ⲍⲛ̄×3",
+      "ⲁⲍ×4",
+      "ⲍⲓ×3",
+      "ⲍⲁ×9",
+      "ⲍⲏⲧ×3",
+      "ⲍⲱⲃ×1",
+      "ⲍⲁⲗ×1",
+      "ⲍⲉ×9",
+      "ⲍⲁⲉ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×4",
+      "ⲁϩ×23",
+      "ϩⲁ×1",
+      "ϩⲉ×4"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 108,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 36,
+    "bracketed_restorations": 122,
+    "empty_brackets": 17,
+    "leer_markers": 4
+  },
+  "english_classification": {
+    "chapter_number": 120,
+    "chapter_title": "Concerning the Two Essences",
+    "total_paragraphs": 8,
+    "core_paragraphs": 1,
+    "core_percentage": 4,
+    "chapter_note": "This chapter is overwhelmingly polemical, not expository. The title names a substrate topic (the two essences = primordial duality) but the chapter uses that topic as a weapon against monotheism rather than systematically mapping it. Mani is preaching/arguing, not teaching cosmological correspondences. The only substrate fragment is the brief naming of the two essences and their paired opposites in the opening paragraph. The remainder is direct argumentative address ('you'), rhetorical catalogues of evil, citations of Jesus's tree parable as proof-text, and eschatological warnings. Teaching purity 0.000 confirms this. No systematic mapping (face→realm, metal→body, taste→world) appears anywhere. The five trees are mentioned in ¶6 but as citation within polemic, not as expounded teaching. Heavy lacunae throughout make the chapter additionally fragmentary.",
+    "classification_distribution": {
+      "mixed": 1,
+      "editorial_bridge": 5,
+      "exhortation": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: Low substrate (4%) but high cosmological Greek (0.75) — Coptic suggests more substrate content than English classification captured"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

@@ -1,0 +1,565 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲓⲃ",
+      "english": "12",
+      "basis": "expected page number; brackets in transcription"
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲙ̄",
+      "english": "At",
+      "basis": "ⲙ̄ⲡⲛⲉⲩ idiom 'at the time' supplied by editor"
+    },
+    {
+      "id": 2,
+      "segment": 2,
+      "type": "restoration",
+      "coptic": "ⲧ",
+      "english": "that",
+      "basis": "completing ⲉⲧⲙ̄ⲙⲉⲩ 'that very [hour]'"
+    },
+    {
+      "id": 3,
+      "segment": 3,
+      "type": "restoration",
+      "coptic": "ⲗⲏⲥⲓⲁ",
+      "english": "Church",
+      "basis": "completion of ⲕ[ⲗⲏⲥⲓⲁ] from line break"
+    },
+    {
+      "id": 4,
+      "segment": 3,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 5,
+      "segment": 3,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 6,
+      "segment": 5,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 7,
+      "segment": 6,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 8,
+      "segment": 7,
+      "type": "lacuna",
+      "est_chars": 1
+    },
+    {
+      "id": 9,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲙ̄ⲡⲛⲁⲃⲉ",
+      "english": "of Sin",
+      "basis": "[ⲙ̄ⲡ] visible at end of line 8; [ⲛⲁⲃⲉ] supplied at start of line 9 (ⲧⲥⲁⲣⲝ ⲙ̄ⲡⲛⲁⲃⲉ 'flesh of Sin' standard Manichaean phrase)"
+    },
+    {
+      "id": 10,
+      "segment": 8,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 11,
+      "segment": 8,
+      "type": "restoration",
+      "coptic": "ⲁ",
+      "english": "the",
+      "basis": "definite article supplied before ⲧⲟⲓⲛⲉⲓ"
+    },
+    {
+      "id": 12,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 13,
+      "segment": 9,
+      "type": "restoration",
+      "coptic": "ⲛⲧ",
+      "english": "in the",
+      "basis": "completing [ⲛⲧ]ⲍⲉ 'in the way'"
+    },
+    {
+      "id": 14,
+      "segment": 10,
+      "type": "restoration",
+      "coptic": "ⲡϣⲁⲙ̄ⲓⲥⲉ",
+      "english": "the firstborn",
+      "basis": "[ⲡϣⲁ]ⲙ̄ⲓⲥⲉ — Lycopolitan ϣⲁⲙⲓⲥⲉ 'firstborn,' standard epithet of Sethel/Seth in Manichaean tradition"
+    },
+    {
+      "id": 15,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲉⲛⲱⲭ",
+      "english": "Enoch",
+      "basis": "[ⲉⲛⲱⲭ] supplied; ϫ[ⲛ ⲛ]ⲉⲛⲱⲭ 'from Enoch' immediately follows confirming the name"
+    },
+    {
+      "id": 16,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ϫⲛ ⲛ",
+      "english": "from",
+      "basis": "ϫ[ⲛ ⲛ]ⲉⲛⲱⲭ — preposition 'from' before Enoch"
+    },
+    {
+      "id": 17,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ϣⲁ",
+      "english": "up",
+      "basis": "completing ϣ[ⲁ]ⲍⲣⲏⲓ̈ 'up to'"
+    },
+    {
+      "id": 18,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲡ",
+      "english": "the",
+      "basis": "[ⲡ]ϣⲏⲣⲉ — definite article supplied"
+    },
+    {
+      "id": 19,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲛⲱⲍⲉ",
+      "english": "of Noah",
+      "basis": "Shem son of Noah is the standard genealogy; only 2-3 letters lost at line end"
+    },
+    {
+      "id": 20,
+      "segment": 12,
+      "n": 13,
+      "type": "lacuna",
+      "est_chars": 60,
+      "partial": "Nicht gelesen — entire line not read by editor"
+    },
+    {
+      "id": 21,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 22,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 7
+    },
+    {
+      "id": 23,
+      "segment": 14,
+      "type": "restoration",
+      "coptic": "ⲃⲟⲩⲇⲇⲁⲥ",
+      "english": "Buddha",
+      "basis": "[ⲃⲟⲩ]ⲇ̄ⲇ̄ⲁⲥ — supplied by editor; Buddha as apostle to the East is a standard Manichaean teaching"
+    },
+    {
+      "id": 24,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 25,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 26,
+      "segment": 15,
+      "type": "lacuna",
+      "est_chars": 7
+    },
+    {
+      "id": 27,
+      "segment": 16,
+      "type": "restoration",
+      "coptic": "ⲍⲁⲣⲁⲑⲏⲥ",
+      "english": "Zarathustra",
+      "basis": "ⲛⲍ[ⲁ]/[ⲣⲁ]ⲑ̄ⲏⲥ split across lines 17-18; the Persian apostle preceding Hystaspes"
+    },
+    {
+      "id": 28,
+      "segment": 17,
+      "type": "restoration",
+      "coptic": "ⲡⲡⲣ̄ⲣⲟ",
+      "english": "the King",
+      "basis": "[ⲡⲡ]ⲣ̄ⲣⲟ — title of Hystaspes (Vishtaspa)"
+    },
+    {
+      "id": 29,
+      "segment": 18,
+      "type": "restoration",
+      "coptic": "ⲡⲭⲣⲥ",
+      "english": "the Christ",
+      "basis": "[ⲡⲭⲣⲥ] — completing 'Jesus [the Christ]' from end of line 19"
+    },
+    {
+      "id": 30,
+      "segment": 20,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 31,
+      "segment": 20,
+      "type": "lacuna",
+      "est_chars": 9
+    },
+    {
+      "id": 32,
+      "segment": 21,
+      "type": "lacuna",
+      "est_chars": 2
+    },
+    {
+      "id": 33,
+      "segment": 21,
+      "type": "lacuna",
+      "est_chars": 15
+    },
+    {
+      "id": 34,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 35,
+      "segment": 27,
+      "type": "restoration",
+      "coptic": "ⲙ̄ⲛ̄",
+      "english": "and",
+      "basis": "conjunction supplied: 'his Twelve [and] his Seventy-two'"
+    },
+    {
+      "id": 36,
+      "segment": 30,
+      "type": "restoration",
+      "coptic": "ⲍⲙ ⲡⲙⲛⲧⲥⲛⲁⲩⲥ",
+      "english": "from the Twelve",
+      "basis": "ⲍ[ⲙ ⲡⲙⲛⲧⲥ]ⲛⲁⲩⲥ — Judas is one of the Twelve"
+    },
+    {
+      "id": 37,
+      "segment": 31,
+      "type": "restoration",
+      "coptic": "ⲁ ⲛⲛⲓⲟⲩⲇⲇⲓⲟⲥ",
+      "english": "the Jews",
+      "basis": "ⲡⲇⲟⲣⲙ̄[ⲁ ⲛⲛⲓⲟ]ⲩⲇⲇⲓⲟⲥ — completing 'the people [of the Jews]'"
+    },
+    {
+      "id": 38,
+      "segment": 32,
+      "type": "restoration",
+      "coptic": "ⲁϩⲡⲁⲣⲁⲇⲇⲟⲩ ⲙⲙⲁϩ ⲁⲧⲟⲟ",
+      "english": "he handed him over into the hands",
+      "basis": "completion across lines 33-34: ⲁϩⲡⲁⲣⲁⲇ̄]ⲇⲟⲩ ⲙ̄[ⲙⲁϩ ⲁⲧⲟⲟ]/ⲧⲟⲩ — standard betrayal language (παραδίδωμι)"
+    },
+    {
+      "id": 39,
+      "segment": 33,
+      "type": "restoration",
+      "coptic": "ⲁ ⲛⲓⲟⲩⲇⲇⲓ",
+      "english": "The Jews",
+      "basis": "[ⲁ ⲛⲓ̈ⲟⲩⲇ̄ⲇ̄ⲓ] — start of next sentence at line end, completed on next page"
+    }
+  ],
+  "header": {
+    "page_number": "{0}",
+    "title_coptic": "ⲛ̄ⲕⲉⲫⲁⲗⲁⲓⲟⲛ",
+    "title_english": "Chapter"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "{1}ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲛⲁϫⲉⲥⲧ̄ϥ ⲁⲡⲧϫⲓⲥⲉ ⲛⲧⲁϩ",
+      "english": "{1} the time when the apostle will lift himself up to the Height, he"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ⲙⲛ ⲧⲉϩⲉⲕⲕⲗⲏⲥⲓⲁ ⲛ̄ⲥⲉⲗⲟ ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ ⲛⲧⲟⲩⲛⲟⲩ ⲉ",
+      "english": "with his Church, and they cease in the world. In that very"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "{2}ⲙ̄ⲙⲉⲩ ϣⲁⲩⲧⲛⲛⲁⲩ ⲕⲉⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲍⲓⲣⲉⲧϩ ⲛⲧⲕⲉⲉⲕ",
+      "english": "{2} hour, they send another apostle to oversee the other"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "{3} {4} ⲩⲉ ⲙ̄ⲙⲁⲥ {5} ⲛⲏ ⲁⲗⲗⲁ ⲛ̄ϣⲁⲣⲡ̄",
+      "english": "{3} {4} ... ... {5} ... but in the first place"
+    },
+    {
+      "i": 4,
+      "n": 5,
+      "coptic": "ϣⲁϩⲡ̄ ⲙⲙⲟⲣⲫⲁⲩⲉ ⲛ̄ⲧⲉϩⲉⲕⲕⲗⲏⲥⲓⲁ ⲛ̄ⲣⲙ̄ⲍⲉ ⲍⲙ ⲡⲧϫⲓⲥⲉ",
+      "english": "the forms of the Church of the freemen are concealed in the Height"
+    },
+    {
+      "i": 5,
+      "n": 6,
+      "coptic": "ⲛⲧⲍⲉ ⲉⲧⲁⲓ̈ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ̄ ⲡⲛⲉⲩ ⲉⲧ {6}",
+      "english": "in the way that I have told you. The time when {6}"
+    },
+    {
+      "i": 6,
+      "n": 7,
+      "coptic": "ϣⲁϩⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲍⲱϩ ⲁⲛ ⲛϩⲟⲩⲱⲛⲍ {7}",
+      "english": "he comes down — himself again — to manifest {7}"
+    },
+    {
+      "i": 7,
+      "n": 8,
+      "coptic": "{8} ⲛϩⲧⲟⲩⲱ ⲛⲧϥ̄ⲉⲕⲕⲗⲏⲥⲓⲁ ⲛϩⲛⲁⲍⲙⲉⲥ ⲛⲧⲛ ⲧⲥⲁⲣⲝ̄ {9}",
+      "english": "{8} to raise his Church, to save them from the flesh {9}"
+    },
+    {
+      "i": 8,
+      "n": 9,
+      "coptic": "{10} {11} ⲧⲟⲓⲛⲉⲓ ⲙⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ϣⲱⲡⲉ ⲁⲡⲥⲁⲡ",
+      "english": "{10} {11} the coming of the apostle has come to pass time"
+    },
+    {
+      "i": 9,
+      "n": 10,
+      "coptic": "{12} {13}ⲍⲉ ⲉⲧⲁⲓ̈ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ ϫⲛ ⲛ̄ⲥⲏⲑⲏⲗ",
+      "english": "{12} {13} way that I have told you, from Sethel"
+    },
+    {
+      "i": 10,
+      "n": 11,
+      "coptic": "{14} ⲛϣⲏⲣⲉ ⲛ̄ⲁⲇⲁⲙ ϣⲁⲍⲣⲏⲓ̈ ⲁⲉⲛⲱϣ ⲁⲍⲁⲛ",
+      "english": "{14} son of Adam, up to Enosh, again to"
+    },
+    {
+      "i": 11,
+      "n": 12,
+      "coptic": "{15} {16}ⲉⲛⲱⲭ {17}ⲍⲣⲏⲓ̈ ⲁⲥⲏⲙ {18}ϣⲏⲣⲉ ⲛ{19}",
+      "english": "{15}; {16} Enoch up to Shem {18} the son of {19}"
+    },
+    {
+      "i": 12,
+      "n": 13,
+      "coptic": "{20}",
+      "english": "{20}"
+    },
+    {
+      "i": 13,
+      "n": 14,
+      "coptic": "{21} ⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲛⲛⲥⲱⲥ ⲁⲛ {22}",
+      "english": "{21} Church. Then again {22}"
+    },
+    {
+      "i": 14,
+      "n": 15,
+      "coptic": "{23} ⲁⲧⲁⲛⲁⲧⲟⲗⲏ ⲙⲛ ⲁⲩⲣⲉⲛⲧⲏⲥ ⲙⲛ ⲡⲕⲉ {24}",
+      "english": "{23} to the East, with Aurentes and the other {24}"
+    },
+    {
+      "i": 15,
+      "n": 16,
+      "coptic": "{25}ⲧⲉ ⲉⲧⲁⲩⲧⲛⲛⲁⲩⲥⲟⲩ ⲁⲡⲥⲁⲛⲙ̄ⲙⲧⲣⲓ̈ⲉ ϫⲛ ⲛⲧⲟⲓⲛⲉⲓ",
+      "english": "{25} who were sent to the Eastern lands; from the coming"
+    },
+    {
+      "i": 16,
+      "n": 17,
+      "coptic": "ⲛ̄ⲃⲟⲩⲇ̄ⲇ̄ⲁⲥ ⲙ̄ⲛ̄ ⲁⲩⲣⲉⲛⲧⲏⲥ ϣⲁⲍⲣⲏⲓ̈ ⲁⲧⲟⲓⲛⲉⲓ ⲛ",
+      "english": "of Buddha and Aurentes up to the coming of"
+    },
+    {
+      "i": 17,
+      "n": 18,
+      "coptic": "{27} ⲁⲧⲡⲉⲣⲥⲓⲥ ⲡⲥⲁⲧⲧ ⲉⲧⲁϩⲉⲓ ϣⲁ ⲍⲩⲥⲧⲁⲥⲡⲏⲥ",
+      "english": "{27} to Persia, the chosen one who came to Hystaspes"
+    },
+    {
+      "i": 18,
+      "n": 19,
+      "coptic": "{28} ϫⲛ̄ ⲛⲧⲟⲓⲛⲉⲓ ⲛⲍⲁⲣⲁⲑ̄ⲏⲥ ϣⲁⲍⲣⲏⲓ̈ ⲁⲧⲟⲓⲛⲉⲓ ⲛⲓⲏⲥ",
+      "english": "{28}. From the coming of Zarathustra up to the coming of Jesus"
+    },
+    {
+      "i": 19,
+      "n": 20,
+      "coptic": "{29} ⲡϣⲏⲣⲉ ⲛⲧⲙⲛⲧⲛⲁⲟ̄",
+      "english": "{29}, the Son of the Greatness.",
+      "break_after": true
+    },
+    {
+      "i": 20,
+      "n": 21,
+      "coptic": "{30} ⲛⲓⲏⲥ ⲡⲭⲣⲥ ⲡⲛ̄ϫⲁⲓ̈ⲥ ⲁϩⲉⲓ {31}",
+      "english": "{30} Jesus the Christ, the Lord, came {31}"
+    },
+    {
+      "i": 21,
+      "n": 22,
+      "coptic": "{32} ⲍⲛ̄ ⲟⲩⲡⲛⲓⲕⲟⲛ ⲍⲛ̄ ⲟⲩⲥⲱⲙⲁ {33}",
+      "english": "{32} in a spiritual (way), in a body {33}"
+    },
+    {
+      "i": 22,
+      "n": 23,
+      "coptic": "ⲧⲉ ⲛⲧⲍⲉ ⲉⲧⲁⲓ̈ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ ⲉⲧⲃⲏⲧϩ ⲁⲓⲥ {34} ⲁⲣⲁϩ",
+      "english": "in the way that I have told you concerning him. Jesus {34} concerning him,"
+    },
+    {
+      "i": 23,
+      "n": 24,
+      "coptic": "ϫⲉ ⲛⲧⲁϩⲉⲓ ⲭⲱⲣⲓⲥ ⲥⲱⲙⲁ ⲁ ⲛⲉϩⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲁⲛ ⲧⲁϣⲉⲁⲓ̈ϣ",
+      "english": "that he came without a body. His apostles also proclaimed"
+    },
+    {
+      "i": 24,
+      "n": 25,
+      "coptic": "ⲍⲁⲣⲁϩ ϫⲉ ⲁϩϫⲓ ⲟⲩⲙⲟⲣⲫⲏ ⲛⲟ̄ⲁⲟⲩⲁⲛ ⲟⲩⲥⲭⲏⲙⲁ ⲛⲑⲉ ⲛ",
+      "english": "concerning him that he received a form of someone, an appearance such as that of"
+    },
+    {
+      "i": 25,
+      "n": 26,
+      "coptic": "ⲛ[ⲓ]ⲣⲱⲙⲉ ⲁϩⲉⲓ ⲁⲡⲓⲧⲛ̄ ⲁϩⲟ̄ⲱⲗⲡ ⲁⲃⲁⲗ ⲍⲙ ⲡⲕⲟⲥⲙⲟⲥ ⲍⲙ̄",
+      "english": "men. He came down; he revealed himself in the world, in"
+    },
+    {
+      "i": 26,
+      "n": 27,
+      "coptic": "ⲡⲇ̄ⲟⲣⲙⲁ ⲛⲛⲓ̈ⲟⲩⲇ̄ⲇ̄ⲓⲟⲥ ⲁϩⲥⲱⲧⲡ ⲙⲡⲉϩⲙⲛⲧⲥⲛⲁⲩⲥ",
+      "english": "the people of the Jews. He chose his Twelve"
+    },
+    {
+      "i": 27,
+      "n": 28,
+      "coptic": "{35} ⲡⲉϩϣⲃⲉⲥⲛⲁⲩⲥ ⲁϩⲡ̄ ⲡⲱⲕ ⲛⲍⲏⲧ ⲙⲡⲉϩⲓ̈ⲱⲧ ⲉⲧⲁϩ",
+      "english": "{35} his Seventy-two. He received the heart's purpose of his Father, who"
+    },
+    {
+      "i": 28,
+      "n": 29,
+      "coptic": "ⲧⲛ̄ⲛⲁⲩϩ ⲁⲡⲕⲟⲥⲙⲟⲥ ⲙⲛ̄ⲛ̄ⲥⲱⲥ ⲁ ⲡⲡⲟⲛⲏⲣⲟⲥ ⲛⲉⲍⲉ",
+      "english": "had sent him into the world. Afterwards the Evil One cast"
+    },
+    {
+      "i": 29,
+      "n": 30,
+      "coptic": "ⲛ̄ⲟⲩⲫⲑⲟⲛⲟⲥ ⲁⲡⲇ̄ⲟⲣⲙⲁ ⲛⲛⲓ̈ⲟⲩⲇ̄ⲇ̄ⲓⲟⲥ ⲁ ⲡⲥⲁⲧⲁⲛⲁⲥ ⲃⲱⲕ",
+      "english": "envy into the people of the Jews. Satan went"
+    },
+    {
+      "i": 30,
+      "n": 31,
+      "coptic": "ⲁⲍⲟⲩⲛ ⲁⲓ̈ⲟⲩⲇ̄ⲁⲥ ⲡⲓⲥⲕⲁⲣⲓⲱⲧⲏⲥ ⲟⲩⲉ {36}",
+      "english": "into Judas Iscariot, one {36},"
+    },
+    {
+      "i": 31,
+      "n": 32,
+      "coptic": "ⲛⲓⲏⲥ ⲁϩⲕⲁⲧⲏⲅⲟⲣⲉ ⲙⲙⲁϩ ⲛⲁⲍⲣⲛ̄ ⲡⲇ̄ⲟⲣⲙ̄{37}",
+      "english": "of Jesus. He accused him before the people {37},"
+    },
+    {
+      "i": 32,
+      "n": 33,
+      "coptic": "ⲍⲙ̄ ⲡⲉϩⲁⲥⲡⲁⲥⲙⲟⲥ {38}",
+      "english": "with his kiss; {38}"
+    },
+    {
+      "i": 33,
+      "n": 34,
+      "coptic": "ⲧⲟⲩ ⲛⲛⲓ̈ⲟⲩⲇ̄ⲇ̄ⲓⲟⲥ ⲙⲛ ⲧⲥⲡⲉⲓⲣⲁ ⲛⲛⲙⲁⲧⲁ{39}",
+      "english": "of the Jews and the cohort of the soldiers. {39}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": 2,
+      "coptic_form": "ⲍⲓⲣⲉⲧϩ",
+      "decision": "Lycopolitan ϩⲓⲣⲁⲧϥ̄ 'at his foot, at his side, beside.' In the context of one apostle being sent ⲍⲓⲣⲉⲧϩ ⲛⲧⲕⲉⲉⲕⲕⲗⲏⲥⲓⲁ — 'at the foot of / over' the next Church — the idiom denotes assignment or oversight. Rendered 'to oversee' to capture the supervisory sense.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 4,
+      "coptic_form": "ϣⲁϩⲡ̄",
+      "decision": "Read as ϣⲁϥϩⲱⲡ̄ 'they conceal / are concealed' (habitual + ϩⲱⲡ 'hide'). The ⲙⲟⲣⲫⲁⲩⲉ ('forms', plural of μορφή) of the Church-of-Free-Ones are kept hidden in the Height before each apostle's descent.",
+      "confidence": "high"
+    },
+    {
+      "segment": 6,
+      "coptic_form": "ⲍⲱϩ ⲁⲛ",
+      "decision": "Lycopolitan ϩⲱⲱϥ ⲁⲛ = 'himself also / himself again.' The apostle 'himself comes down again' to manifest. Could alternately read ⲍⲱϩ as standalone particle 'also'; chose 'himself again' as more idiomatic to context of recurring descent.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 7,
+      "coptic_form": "ⲛϩⲧⲟⲩⲱ",
+      "decision": "ⲛ-ⲧⲟⲩⲱ — purposive infinitive 'to raise.' Mandated rendering 'raise' preserves the upward soteriological direction. Paired with ⲛⲁϩⲙⲉⲥ ('to save them from the flesh').",
+      "confidence": "high"
+    },
+    {
+      "segment": 19,
+      "coptic_form": "ⲧⲙⲛⲧⲛⲁⲟ̄",
+      "decision": "ⲙⲛⲧⲛⲁϭ 'greatness, majesty.' Standard Manichaean title 'Son of the Greatness' for Jesus = υἱὸς τοῦ Μεγέθους.",
+      "confidence": "high"
+    },
+    {
+      "segment": 21,
+      "coptic_form": "ⲡⲛⲓⲕⲟⲛ",
+      "decision": "Greek πνευματικόν 'spiritual.' The phrase 'in a spiritual (way), in a body' captures the Manichaean Christology of Christ's docetic-yet-corporeal mode of incarnation, immediately glossed by ⲭⲱⲣⲓⲥ ⲥⲱⲙⲁ 'without a body' in line 24.",
+      "confidence": "high"
+    },
+    {
+      "segment": 24,
+      "coptic_form": "ⲟⲩⲙⲟⲣⲫⲏ ⲛⲟ̄ⲁⲟⲩⲁⲛ",
+      "decision": "ⲛⲟ̄ⲁⲟⲩⲁⲛ analyzed as ⲛ̄-ⲟⲩⲁ-ⲟⲩⲁⲛ 'of one of someone' or simply 'of a person/somebody.' This phrase echoes Phil 2:7 (μορφὴν δούλου / σχῆμα ὡς ἄνθρωπος); but the Coptic here does not use the Lycopolitan word for slave (ⲍⲙϩⲁⲗ) but rather a generic indefinite. Translated 'a form of someone' to preserve the indefiniteness while ⲥⲭⲏⲙⲁ ⲛⲑⲉ ⲛ̄ⲛⲓⲣⲱⲙⲉ ('appearance like that of men') glosses it.",
+      "confidence": "low"
+    },
+    {
+      "segment": 26,
+      "coptic_form": "ⲡⲇ̄ⲟⲣⲙⲁ",
+      "decision": "Likely Coptic reflex of Greek δῆμος 'people, populace, community,' with epenthetic -ⲣ- (or possibly conflation with δρόμος 'circuit, jurisdiction'). The three occurrences (lines 27, 30, 32) are consistent with 'the people of the Jews' as a collective community: Christ revealed himself in it, Satan entered into it, Judas accused before it. Rendering 'the people' rather than 'doctrine' (δόγμα).",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 27,
+      "coptic_form": "ⲁϩⲡ̄ ⲡⲱⲕ ⲛⲍⲏⲧ",
+      "decision": "ⲁϩⲡ̄ from ϣⲱⲡ 'receive'; ⲡⲱⲕ ⲛϩⲏⲧ — Lycopolitan idiom for 'turn/inclination of heart' = 'purpose, will, intent.' 'He received the heart's purpose of his Father (who sent him into the world)' = he took up the Father's commission.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 28,
+      "coptic_form": "ⲛⲉⲍⲉ",
+      "decision": "ⲛⲟⲩϫⲉ 'cast, throw.' The Evil One 'cast envy' into the people of the Jews — a transitive action of injection. Standard Manichaean diabology of envy as cast pollutant.",
+      "confidence": "high"
+    }
+  ],
+  "page": 12
+}

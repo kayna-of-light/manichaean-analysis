@@ -1,0 +1,1226 @@
+{
+  "teaching": 87,
+  "total_gaps_in_core": 160,
+  "gaps_restored": 110,
+  "gaps_unrestorable": 50,
+  "restoration_note": "The teaching has two main movements. (1) Ch.97 sets out three modes by which the natural produces flesh — conjunction, failed productions (abortions), and self-molding — and then gives a horticultural typology of perception: where enthumesis lodges (root / branches / body-and-seed) determines how a perception propagates and how it must be cleared. (2) Ch.98 contrasts virgin (light untouched by mingling) with continent (light mingled then chosen out and stood again), running this distinction through cosmic, inner-rational, and outer-fleshly registers. The horticultural section is heavily formulaic, and editor proposals there (ⲕⲁⲣⲡⲟⲥ, ⲡⲗⲁⲥⲥⲉ, ⲉⲛⲑⲩⲙⲏⲥⲓⲥ, ⲕⲗⲁⲁⲟⲥ, ⲛⲟⲩⲛⲉ, ⲕⲟⲩⲟⲩⲛϥ̄, etc.) are confirmed by the recurring Manichaean diction. Ch.98's parallel formulae about 'tasting death' and 'coming to the war of the Enemy' constrain {115}, {131}, {132}, {136} with high confidence. The opening {0-1} headline, the long fragmentary middle of ch.97 (lines 13-25), and the closing dragon teaching (ch.100, {158-159}) are too damaged for principled fills and are marked unrestorable.",
+  "coptic_restorations": "[\n{\"gap_id\":0,\"section\":4854,\"chapter\":97,\"line\":0,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Headline fragment with only ⲩϩ visible; no constrained restoration possible.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":1,\"section\":4854,\"chapter\":97,\"line\":0,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Headline fragment continuing {0}; insufficient context.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":2,\"section\":4856,\"chapter\":97,\"line\":2,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲛ̄ ⲧⲱⲍ\",\"basis\":\"First of three modes of begetting; parallel ϩⲛ ⲛϩⲟⲩϩⲉ 'in abortions' (next clause) and 'self-molding' demands here the conjunction-mode. ⲧⲱⲍ (Lyc.) = conjoin/conjunction; fits 4-char count after ϩ.\",\"confidence\":\"moderate\"},\n{\"gap_id\":3,\"section\":4857,\"chapter\":97,\"line\":3,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲩϩ\",\"basis\":\"Editor restoration completing ⲛⲉ-/ⲩϩⲟⲩϩⲉ across line break — the parallel ⲛⲉⲧⲁⲩⲭⲡⲟ formula.\",\"confidence\":\"high\"},\n{\"gap_id\":4,\"section\":4857,\"chapter\":97,\"line\":3,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉⲧ\",\"basis\":\"Override of editor's ⲩϩ: context demands 'and those who mold themselves alone' (next line ⲧⲟⲩⲡⲗⲁⲥⲥⲉ ⲙⲙⲁⲩ ⲟⲩⲁⲉⲧⲟⲩ). ⲛⲉⲧ- relative converter introduces the third mode.\",\"confidence\":\"moderate\"},\n{\"gap_id\":5,\"section\":4859,\"chapter\":97,\"line\":6,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲥⲱ\",\"basis\":\"Editor: completes ⲛ̄ⲥⲱⲱⲛⲧ̄ 'creatures' across line break.\",\"confidence\":\"high\"},\n{\"gap_id\":6,\"section\":4860,\"chapter\":97,\"line\":7,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧ\",\"basis\":\"Editor: tail of ⲥⲱⲱⲛⲧ̄.\",\"confidence\":\"high\"},\n{\"gap_id\":7,\"section\":4860,\"chapter\":97,\"line\":7,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲧⲏⲣⲟⲩ\",\"basis\":\"5 chars between 'creatures' and 'of the earth'; ⲧⲏⲣⲟⲩ 'all of them' fits exactly and matches the inclusive register ⲧⲃⲛⲁⲩⲉ ⲧⲏⲣⲟⲩ from the previous line.\",\"confidence\":\"moderate\"},\n{\"gap_id\":8,\"section\":4860,\"chapter\":97,\"line\":7,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧⲁⲭⲣⲟ\",\"basis\":\"Editor: Lyc form of ⲧⲁϫⲣⲟ 'establish, make firm.'\",\"confidence\":\"high\"},\n{\"gap_id\":9,\"section\":4861,\"chapter\":97,\"line\":8,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲉ\",\"basis\":\"Single letter completing ⲉⲓⲛⲉ 'likeness'; partial trace ⲉ confirms.\",\"confidence\":\"high\"},\n{\"gap_id\":10,\"section\":4861,\"chapter\":97,\"line\":8,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"6 chars; verb of bringing forth out of the covering, but no diagnostic trace.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":11,\"section\":4861,\"chapter\":97,\"line\":8,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"7 chars; continuation of verb cluster, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":12,\"section\":4862,\"chapter\":97,\"line\":9,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"11-char gap at line head; ranks of begetting parallel to ϩⲛϩⲟⲩϩⲉ ϩⲛⲕⲉⲕⲁⲩⲉ but no diagnostic.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":13,\"section\":4862,\"chapter\":97,\"line\":9,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"4 chars between ⲡⲁ and ϩⲛϩⲟⲩϩⲉ; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":14,\"section\":4863,\"chapter\":97,\"line\":10,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲉ ⲉⲩⲡⲗⲁⲥⲥ\",\"basis\":\"Editor: 'while they mold,' parallel to ⲡⲗⲁⲥⲥⲉ in line 11 and ⲡⲟⲩⲡⲗⲁⲥⲙⲁ later same line.\",\"confidence\":\"high\"},\n{\"gap_id\":15,\"section\":4863,\"chapter\":97,\"line\":10,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"2-char particle, underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":16,\"section\":4864,\"chapter\":97,\"line\":11,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲡⲗⲁⲥⲙⲁ ⲡⲱ\",\"basis\":\"9 chars at line head; ⲡⲗⲁⲥⲙⲁ ⲙ̄ⲡⲱⲏⲛ 'molding of the tree' connects line 10's ⲡⲟⲩⲡⲗⲁⲥⲙⲁ to next visible -ⲏⲛ. Reading is conjectural; mark low.\",\"confidence\":\"low\"},\n{\"gap_id\":17,\"section\":4864,\"chapter\":97,\"line\":11,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧ\",\"basis\":\"Editor: completes ϣⲁⲙⲧ̄ 'three' (parallel ϣⲁⲙⲧ ⲛ̄ⲭⲡ̄ⲟ in line 8).\",\"confidence\":\"high\"},\n{\"gap_id\":18,\"section\":4865,\"chapter\":97,\"line\":12,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars at line head, no diagnostic.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":19,\"section\":4865,\"chapter\":97,\"line\":12,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛⲉ\",\"basis\":\"Editor: ⲟⲩⲁ[ⲛⲉ] 'manifestation, light' at the time of three-mode existence.\",\"confidence\":\"moderate\"},\n{\"gap_id\":20,\"section\":4865,\"chapter\":97,\"line\":12,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"7 chars; underdetermined object of ⲟⲩⲱϣ 'desire.'\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":21,\"section\":4866,\"chapter\":97,\"line\":13,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Mid-page lacuna, no diagnostic.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":22,\"section\":4866,\"chapter\":97,\"line\":13,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":23,\"section\":4866,\"chapter\":97,\"line\":13,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":24,\"section\":4866,\"chapter\":97,\"line\":13,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"2-char particle, partial ⲛⲁ but no clear word.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":25,\"section\":4867,\"chapter\":97,\"line\":14,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"7-char head, fragmentary classification of eaters.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":26,\"section\":4867,\"chapter\":97,\"line\":14,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":27,\"section\":4867,\"chapter\":97,\"line\":14,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉ ϩⲓ\",\"basis\":\"Editor: completes ⲃⲣⲉ 'fresh-fruit' + ϩⲓ 'and,' matching next line ⲃⲣⲉ ϩⲓ ⲕⲁⲣⲡⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":28,\"section\":4868,\"chapter\":97,\"line\":15,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"7-char head, no diagnostic.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":29,\"section\":4868,\"chapter\":97,\"line\":15,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars, underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":30,\"section\":4869,\"chapter\":97,\"line\":16,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"8 chars with partial ⲉⲉϩ; verb of extending toward 'the All.' Underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":31,\"section\":4869,\"chapter\":97,\"line\":16,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"6 chars, conjunctive verb; no clear constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":32,\"section\":4870,\"chapter\":97,\"line\":17,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5-char head; transition into discussion of 'the three types.'\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":33,\"section\":4870,\"chapter\":97,\"line\":17,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲥ\",\"basis\":\"Editor: completes ⲧⲩⲡⲟⲥ τύπος.\",\"confidence\":\"high\"},\n{\"gap_id\":34,\"section\":4870,\"chapter\":97,\"line\":17,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲥ ⲙⲛ ⲧ\",\"basis\":\"Editor: completes ⲫⲩⲥⲓⲥ + ⲙⲛ̄ ⲧ-.\",\"confidence\":\"high\"},\n{\"gap_id\":35,\"section\":4871,\"chapter\":97,\"line\":18,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"8 chars; sense is 'they differ at the time when they exist in the land of X' but no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":36,\"section\":4871,\"chapter\":97,\"line\":18,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁϩ\",\"basis\":\"Editor: completes ⲡⲕⲁϩ 'land.'\",\"confidence\":\"high\"},\n{\"gap_id\":37,\"section\":4871,\"chapter\":97,\"line\":18,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars naming the land; could be ⲕⲉⲕⲉ 'darkness' but length excludes; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":38,\"section\":4872,\"chapter\":97,\"line\":19,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"2 chars, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":39,\"section\":4872,\"chapter\":97,\"line\":19,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":40,\"section\":4872,\"chapter\":97,\"line\":19,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"6 chars, end of line; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":41,\"section\":4873,\"chapter\":97,\"line\":20,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, possessive object 'their X'; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":42,\"section\":4873,\"chapter\":97,\"line\":20,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, parallel possessive; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":43,\"section\":4874,\"chapter\":97,\"line\":21,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"2 chars before reference to the Ambassador; particle/connector underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":44,\"section\":4874,\"chapter\":97,\"line\":21,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"6-char clause continuation about the Ambassador; no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":45,\"section\":4875,\"chapter\":97,\"line\":22,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"7 chars before 'all the powers'; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":46,\"section\":4875,\"chapter\":97,\"line\":22,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":47,\"section\":4876,\"chapter\":97,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, fragmentary line.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":48,\"section\":4876,\"chapter\":97,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"12 chars, fragmentary.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":49,\"section\":4877,\"chapter\":97,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Line is mostly destroyed.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":50,\"section\":4877,\"chapter\":97,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Destroyed.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":51,\"section\":4877,\"chapter\":97,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Destroyed.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":52,\"section\":4877,\"chapter\":97,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Destroyed.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":53,\"section\":4877,\"chapter\":97,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Destroyed.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":54,\"section\":4878,\"chapter\":97,\"line\":25,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϩ\",\"basis\":\"Editor: completes ⲛ̄ϩⲏⲧϥ̄ 'in him.'\",\"confidence\":\"high\"},\n{\"gap_id\":55,\"section\":4878,\"chapter\":97,\"line\":25,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars, underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":56,\"section\":4878,\"chapter\":97,\"line\":25,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars, underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":57,\"section\":4878,\"chapter\":97,\"line\":25,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"5 chars, end of line, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":58,\"section\":4879,\"chapter\":97,\"line\":26,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"2 chars before 'the first'; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":59,\"section\":4879,\"chapter\":97,\"line\":26,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"6 chars after 'the first'; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":60,\"section\":4880,\"chapter\":97,\"line\":27,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲍⲟⲗⲱⲥ\",\"basis\":\"Editor: Greek ὅλως 'wholly.'\",\"confidence\":\"high\"},\n{\"gap_id\":61,\"section\":4880,\"chapter\":97,\"line\":27,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲥⲡⲗⲁⲥⲥⲉ\",\"basis\":\"Editor: 3sg.f perfect of πλάσσειν 'mold' — Enthumesis as subject.\",\"confidence\":\"high\"},\n{\"gap_id\":62,\"section\":4881,\"chapter\":97,\"line\":28,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛ̄ⲛⲱⲏⲛ\",\"basis\":\"Editor: plural of ⲡⲱⲏⲛ 'tree'; -ⲛ traces visible.\",\"confidence\":\"high\"},\n{\"gap_id\":63,\"section\":4881,\"chapter\":97,\"line\":28,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"Plant-name following 'thornbushes... and brambles'; identity underdetermined though clearly bitter/thorny species.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":64,\"section\":4883,\"chapter\":97,\"line\":30,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲩⲙⲏ\",\"basis\":\"Editor: middle of ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ; ⲧⲉⲛⲑ visible end of line, ⲥⲓⲥ visible start of next.\",\"confidence\":\"high\"},\n{\"gap_id\":65,\"section\":4884,\"chapter\":97,\"line\":31,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉⲧⲁⲩ\",\"basis\":\"Editor: relative perfect 3pl prefix introducing ⲧⲁϭⲟⲩ 'planted.'\",\"confidence\":\"high\"},\n{\"gap_id\":66,\"section\":4885,\"chapter\":97,\"line\":32,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲉ\",\"basis\":\"Editor: ⲇⲉ-particle.\",\"confidence\":\"high\"},\n{\"gap_id\":67,\"section\":4885,\"chapter\":97,\"line\":32,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧⲉⲛ\",\"basis\":\"Editor: head of ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ continuing on next line.\",\"confidence\":\"high\"},\n{\"gap_id\":68,\"section\":4886,\"chapter\":97,\"line\":33,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲙⲏⲥⲓ\",\"basis\":\"Editor: middle of ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":69,\"section\":4886,\"chapter\":97,\"line\":33,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲍⲟⲥⲟⲛ\",\"basis\":\"Editor: Greek ὅσον 'as long as,' Lyc. ⲍ-onset.\",\"confidence\":\"high\"},\n{\"gap_id\":70,\"section\":4887,\"chapter\":97,\"line\":34,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛ̄\",\"basis\":\"Editor: tail of ⲉⲩⲍⲛ̄ 'while they were as.'\",\"confidence\":\"high\"},\n{\"gap_id\":71,\"section\":4888,\"chapter\":97,\"line\":35,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲁⲣ\",\"basis\":\"Editor: head of ⲕⲁⲣⲡⲟⲥ 'fruit'; -ⲡⲟⲥ visible next line.\",\"confidence\":\"high\"},\n{\"gap_id\":72,\"section\":4889,\"chapter\":97,\"line\":36,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲏⲥⲓⲥ\",\"basis\":\"Editor: tail of ⲧⲉⲛⲑⲩⲙⲏⲥⲓⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":73,\"section\":4890,\"chapter\":97,\"line\":37,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲣ\",\"basis\":\"Editor: middle of ⲥⲁⲣⲓ̄ 'flesh' (Lyc.).\",\"confidence\":\"high\"},\n{\"gap_id\":74,\"section\":4892,\"chapter\":97,\"line\":39,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲣⲉ\",\"basis\":\"Editor: completes ⲙⲉⲣⲉ-/their.\",\"confidence\":\"high\"},\n{\"gap_id\":75,\"section\":4895,\"chapter\":97,\"line\":42,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϭⲁ\",\"basis\":\"Editor: middle of ⲛϭⲁⲙ 'powers.'\",\"confidence\":\"high\"},\n{\"gap_id\":76,\"section\":4896,\"chapter\":97,\"line\":43,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲕⲉⲕⲉ\",\"basis\":\"4 chars at line head; previous line ends ⲛⲛ̄[ϭⲁ]ⲙ ⲛ̄ — the powers belong to ⲕⲉⲕⲉ 'darkness.' Length matches.\",\"confidence\":\"moderate\"},\n{\"gap_id\":77,\"section\":4896,\"chapter\":97,\"line\":43,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars + visible ϩⲧ; the 'counsel and teaching of the X-Y' resists certain reconstruction.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":78,\"section\":4896,\"chapter\":97,\"line\":43,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"4 chars after ⲉⲧⲁ-; relative-clause continuation, underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":79,\"section\":4898,\"chapter\":97,\"line\":45,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲡⲟⲥ\",\"basis\":\"Editor: tail of ⲕⲁⲣⲡⲟⲥ 'fruit.'\",\"confidence\":\"high\"},\n{\"gap_id\":80,\"section\":4902,\"chapter\":97,\"line\":49,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉ\",\"basis\":\"Editor: circumstantial converter ⲉ-.\",\"confidence\":\"high\"},\n{\"gap_id\":81,\"section\":4903,\"chapter\":97,\"line\":50,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲱⲱ\",\"basis\":\"Editor: middle of ⲉϣⲁⲩⲱⲱⲧⲉ 'when they cut.'\",\"confidence\":\"high\"},\n{\"gap_id\":82,\"section\":4904,\"chapter\":97,\"line\":51,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲧⲁϭⲟⲩ\",\"basis\":\"5 chars at line head; the propagation typology requires 'they (re-)plant them' here; Lyc ⲧⲁϭⲟⲩ matches and parallels ⲛ̄ⲥⲉⲧⲁϭⲟⲩ in line 50.\",\"confidence\":\"moderate\"},\n{\"gap_id\":83,\"section\":4904,\"chapter\":97,\"line\":51,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛ\",\"basis\":\"Editor: tail of ⲟⲩⲱⲏⲛ 'a tree.'\",\"confidence\":\"high\"},\n{\"gap_id\":84,\"section\":4905,\"chapter\":97,\"line\":52,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧ ⲕⲗⲁ\",\"basis\":\"Editor: bridges -ⲧ + ⲕⲗⲁⲟⲥ 'branches.'\",\"confidence\":\"high\"},\n{\"gap_id\":85,\"section\":4906,\"chapter\":97,\"line\":53,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛⲧⲟⲩ\",\"basis\":\"Editor: 3pl possessive ⲛ̄ⲧⲟⲩ- before ⲛⲟⲩⲛⲉ 'root.'\",\"confidence\":\"high\"},\n{\"gap_id\":86,\"section\":4906,\"chapter\":97,\"line\":53,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲡ ⲛ\",\"basis\":\"Editor: ⲛⲕⲉⲥⲁⲡ 'another time' + linking ⲛ-.\",\"confidence\":\"high\"},\n{\"gap_id\":87,\"section\":4907,\"chapter\":97,\"line\":54,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲥⲉⲧ\",\"basis\":\"Editor: ⲛ̄ⲥⲉϯ 'and they give/bear (fruit).'\",\"confidence\":\"high\"},\n{\"gap_id\":88,\"section\":4907,\"chapter\":97,\"line\":54,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲣⲉ ⲧ\",\"basis\":\"Editor: circumstantial ⲉⲣⲉ + 3pl ⲧⲟⲩ-.\",\"confidence\":\"high\"},\n{\"gap_id\":89,\"section\":4907,\"chapter\":97,\"line\":54,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲡⲟⲩ\",\"basis\":\"Editor: 3pl possessive + start of ⲕⲟⲩⲟⲩⲛϩ 'bosom.'\",\"confidence\":\"high\"},\n{\"gap_id\":90,\"section\":4908,\"chapter\":97,\"line\":55,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲟⲩⲟⲩ\",\"basis\":\"Editor: head of ⲕⲟⲩⲟⲩⲛϩ̄ 'bosom.'\",\"confidence\":\"high\"},\n{\"gap_id\":91,\"section\":4908,\"chapter\":97,\"line\":55,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲩⲛⲟ\",\"basis\":\"Editor: middle of ⲧⲟⲩⲛⲟⲩⲛⲉ 'their root.'\",\"confidence\":\"high\"},\n{\"gap_id\":92,\"section\":4908,\"chapter\":97,\"line\":55,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"4-char verb after habitual ϣⲁⲩ-; underdetermined though semantically a verb of standing/persisting.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":93,\"section\":4909,\"chapter\":97,\"line\":56,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"11-char head; substantial loss, no constraint.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":94,\"section\":4909,\"chapter\":97,\"line\":56,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars; underdetermined adverbial.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":95,\"section\":4910,\"chapter\":97,\"line\":57,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"16 chars; most of line lost, no anchor.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":96,\"section\":4910,\"chapter\":97,\"line\":57,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϩ ⲉⲧⲉ\",\"basis\":\"Editor: tail of ⲍⲱⲱϩ + relative ⲉⲧⲉ.\",\"confidence\":\"high\"},\n{\"gap_id\":97,\"section\":4911,\"chapter\":97,\"line\":58,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϣⲁⲩ\",\"basis\":\"Editor: habitual ϣⲁⲩ- prefix on ϣⲁⲁⲧⲟⲩ 'they cut them.'\",\"confidence\":\"high\"},\n{\"gap_id\":98,\"section\":4912,\"chapter\":97,\"line\":59,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲟⲩⲛϥ̄\",\"basis\":\"Editor: tail of ⲡⲟⲩⲕⲟⲩⲟⲩⲛϥ̄ 'their bosom.'\",\"confidence\":\"high\"},\n{\"gap_id\":99,\"section\":4913,\"chapter\":97,\"line\":60,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲁⲁⲧ\",\"basis\":\"Editor: 'is placed' — recurring formula with ⲉⲛⲑⲩⲙⲏⲥⲓⲥ as subject.\",\"confidence\":\"high\"},\n{\"gap_id\":100,\"section\":4914,\"chapter\":97,\"line\":61,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛϩⲛ\",\"basis\":\"Editor: indefinite plural before ⲕⲗⲁⲁⲟⲥ 'branches.'\",\"confidence\":\"high\"},\n{\"gap_id\":101,\"section\":4915,\"chapter\":97,\"line\":62,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲙ\",\"basis\":\"Editor: completes ⲉⲛⲑⲩⲙⲏⲥⲓⲥ across line break.\",\"confidence\":\"high\"},\n{\"gap_id\":102,\"section\":4916,\"chapter\":97,\"line\":63,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϩⲓ ⲉϥ\",\"basis\":\"Editor: Manichaean doublet ⲥⲱⲙⲁ ϩⲓ ⲥⲁⲣⲝ 'body and flesh.'\",\"confidence\":\"high\"},\n{\"gap_id\":103,\"section\":4916,\"chapter\":97,\"line\":63,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛⲉ\",\"basis\":\"Editor: ⲛⲉⲧϣⲟⲟⲡ 'those existing.'\",\"confidence\":\"high\"},\n{\"gap_id\":104,\"section\":4917,\"chapter\":97,\"line\":64,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲟⲡ\",\"basis\":\"Editor: tail of ϣⲟⲟⲡ.\",\"confidence\":\"high\"},\n{\"gap_id\":105,\"section\":4918,\"chapter\":97,\"line\":65,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲁⲣ\",\"basis\":\"Editor: head of ⲕⲁⲣⲡⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":106,\"section\":4919,\"chapter\":97,\"line\":66,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲁⲣ\",\"basis\":\"Editor: head of ⲕⲁⲣⲡⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":107,\"section\":4920,\"chapter\":97,\"line\":67,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲁⲣ\",\"basis\":\"Editor: head of ⲕⲁⲣⲡⲟⲥ before section-end marker ϥ̄ⲏ.\",\"confidence\":\"high\"},\n{\"gap_id\":108,\"section\":4923,\"chapter\":98,\"line\":5,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲩⲉ\",\"basis\":\"Editor: completes ⲟⲩⲉⲩ 'what?'\",\"confidence\":\"high\"},\n{\"gap_id\":109,\"section\":4924,\"chapter\":98,\"line\":6,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉⲧ\",\"basis\":\"Editor: completes ⲡⲉⲧⲟⲩⲙⲟⲩⲧⲉ.\",\"confidence\":\"high\"},\n{\"gap_id\":110,\"section\":4925,\"chapter\":98,\"line\":7,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲡⲁ\",\"basis\":\"Editor: completes ⲡⲁⲣⲑⲉⲛⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":111,\"section\":4925,\"chapter\":98,\"line\":7,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉ\",\"basis\":\"Editor: ⲭⲉ/ϫⲉ introducing direct quotation.\",\"confidence\":\"high\"},\n{\"gap_id\":112,\"section\":4925,\"chapter\":98,\"line\":7,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲡⲉⲅ\",\"basis\":\"Editor: parallel ⲁⲡⲉⲅⲕⲣⲁⲧⲏⲥ 'to the continent.'\",\"confidence\":\"high\"},\n{\"gap_id\":113,\"section\":4927,\"chapter\":98,\"line\":9,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲉ\",\"basis\":\"Editor: head of ⲉⲅⲕⲣⲁⲧⲏⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":114,\"section\":4930,\"chapter\":98,\"line\":16,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲟ\",\"basis\":\"Editor: completes ⲡⲁⲣⲑⲉⲛⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":115,\"section\":4930,\"chapter\":98,\"line\":16,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲭⲓⲧⲡⲉ\",\"basis\":\"Editor: ⲭⲓ-ϯⲡⲉ 'taste'; the parallel formula in line 33 confirms 'has not tasted of death.'\",\"confidence\":\"high\"},\n{\"gap_id\":116,\"section\":4931,\"chapter\":98,\"line\":17,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲡ\",\"basis\":\"Editor: completes ⲙ̄ⲡⲙⲟⲩ 'of death.'\",\"confidence\":\"high\"},\n{\"gap_id\":117,\"section\":4932,\"chapter\":98,\"line\":18,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲟⲡⲡ ⲁ\",\"basis\":\"Editor: ⲉϥϣⲟⲡⲡ ⲁ- 'exists for/unto.'\",\"confidence\":\"high\"},\n{\"gap_id\":118,\"section\":4933,\"chapter\":98,\"line\":19,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲡⲙ\",\"basis\":\"Editor: head of ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ.\",\"confidence\":\"high\"},\n{\"gap_id\":119,\"section\":4933,\"chapter\":98,\"line\":19,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲧ ⲙⲛ ⲡ\",\"basis\":\"Editor: ⲁϥⲙⲟⲩⲭⲧ ⲙⲛ̄ ⲡⲕⲉⲕⲉ 'mingled with the Darkness.'\",\"confidence\":\"high\"},\n{\"gap_id\":120,\"section\":4934,\"chapter\":98,\"line\":20,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲉⲕⲉ\",\"basis\":\"Editor: completes ⲡⲕⲉⲕⲉ 'the Darkness.'\",\"confidence\":\"high\"},\n{\"gap_id\":121,\"section\":4934,\"chapter\":98,\"line\":20,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"10-char tail with possible ⲙⲁⲓⲧ trace; phrase 'in the bodies of the X-path' is plausible but not constrained.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":122,\"section\":4935,\"chapter\":98,\"line\":21,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲁⲉ\",\"basis\":\"2-char particle at line head before ⲁϥⲃⲱⲕ; ⲇⲉ/ⲁⲉ 'then' is the natural narrative connector for the ascent.\",\"confidence\":\"moderate\"},\n{\"gap_id\":123,\"section\":4935,\"chapter\":98,\"line\":21,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲩ\",\"basis\":\"Editor: 3pl perfect prefix on ⲙⲟⲩⲧⲉ 'they called.'\",\"confidence\":\"high\"},\n{\"gap_id\":124,\"section\":4935,\"chapter\":98,\"line\":21,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ϥ ⲭⲉ ⲉⲅ\",\"basis\":\"Editor: ⲁⲣⲁϥ ⲭⲉ ⲉⲅⲕⲣⲁⲧⲏⲥ 'him \"continent.\"'\",\"confidence\":\"high\"},\n{\"gap_id\":125,\"section\":4936,\"chapter\":98,\"line\":22,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕⲣⲁⲧⲏⲥ\",\"basis\":\"Editor: tail of ⲉⲅⲕⲣⲁⲧⲏⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":126,\"section\":4936,\"chapter\":98,\"line\":22,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲑⲉⲛ\",\"basis\":\"Editor: middle of ⲡⲁⲣⲑⲉⲛⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":127,\"section\":4936,\"chapter\":98,\"line\":22,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲛⲉⲧⲉ\",\"basis\":\"4 chars after 'the holy virgins'; relative ⲛⲉⲧⲉ 'who' begins the description (next line ⲉϣⲁⲩⲉⲓ ⲁⲃⲁⲗ).\",\"confidence\":\"moderate\"},\n{\"gap_id\":128,\"section\":4937,\"chapter\":98,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"4 chars at line head; underdetermined connector.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":129,\"section\":4937,\"chapter\":98,\"line\":23,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲭⲉ\",\"basis\":\"Editor: completes ⲡⲭⲁⲭⲉ 'the Enemy.'\",\"confidence\":\"high\"},\n{\"gap_id\":130,\"section\":4937,\"chapter\":98,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"10 chars at line end; underdetermined.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":131,\"section\":4938,\"chapter\":98,\"line\":24,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲙⲡⲉⲩ\",\"basis\":\"Parallel formula in lines 25-26 (ⲉⲧⲉⲙⲡⲉϥⲭⲓⲧⲡⲉ ⲙ̄ⲡⲙⲟⲩ ⲟⲩⲧⲉ) requires 3pl perfect negative ⲙ̄ⲡⲟⲩ-: 'they have not tasted of death, neither.'\",\"confidence\":\"high\"},\n{\"gap_id\":132,\"section\":4938,\"chapter\":98,\"line\":24,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲙⲡⲟⲩⲉⲓ ⲁⲡⲡⲟⲗⲉⲙⲟⲥ\",\"basis\":\"17 chars; the parallel in 4931 ('neither has it come to the war of the Enemy') gives the formula precisely. Length matches.\",\"confidence\":\"high\"},\n{\"gap_id\":133,\"section\":4939,\"chapter\":98,\"line\":25,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲡⲉ ⲡⲓⲟⲩ\",\"basis\":\"Section transitions to definition: 'is the light' — next line begins ⲁⲓⲛⲉ completing ⲟⲩⲁⲓⲛⲉ. So end of this line = ⲡⲉ ⲡⲓⲟⲩ-.\",\"confidence\":\"moderate\"},\n{\"gap_id\":134,\"section\":4940,\"chapter\":98,\"line\":26,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲧ\",\"basis\":\"Editor's note (mislabeled as {135}) reads ⲁϩⲥⲱⲧϩ̄ 'was chosen' — single letter ⲧ between ⲥⲱ and ϩ.\",\"confidence\":\"high\"},\n{\"gap_id\":135,\"section\":4940,\"chapter\":98,\"line\":26,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁ\",\"basis\":\"Single letter completing ⲁϩⲉⲓ ⲁⲃⲁⲗ 'came forth' — the standard Manichaean ascent formula with ⲁⲃⲁⲗ continuing on next line.\",\"confidence\":\"high\"},\n{\"gap_id\":136,\"section\":4941,\"chapter\":98,\"line\":27,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲉⲅⲕⲣⲁⲧⲏⲥ\",\"basis\":\"ⲧⲙⲛ̄ⲧ-X = abstract noun. The whole pericope is defining ⲉⲅⲕⲣⲁⲧⲏⲥ as the light that mingled, was chosen, came out, and stood firm 'in continence.' The standing-firm formula in line 32 substitutes ⲧⲍⲓⲕⲱⲛ ⲛ̄ⲛⲛⲟⲩⲧⲉ, but here the abstract ⲧⲙⲛ̄ⲧⲉⲅⲕⲣⲁⲧⲏⲥ closes the cosmic definition.\",\"confidence\":\"moderate\"},\n{\"gap_id\":137,\"section\":4942,\"chapter\":98,\"line\":28,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲛ̄ⲧⲉ\",\"basis\":\"'received the taste {137} desire' — genitive ⲛ̄ⲧⲉ links 'taste' to ⲡⲓⲑⲩⲙⲓⲁ continuing on next line.\",\"confidence\":\"high\"},\n{\"gap_id\":138,\"section\":4943,\"chapter\":98,\"line\":29,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲁϩⲣ̄ ⲟⲩ\",\"basis\":\"Required transition: 'purified himself from her, and-became a holy one' — perfect ⲁϩⲣ̄ + indefinite ⲟⲩ before ⲡⲉⲧⲟⲩⲁⲁⲃⲉ starting next line.\",\"confidence\":\"moderate\"},\n{\"gap_id\":139,\"section\":4944,\"chapter\":98,\"line\":30,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲭⲉ ⲡⲁ\",\"basis\":\"'whom they called {139}' followed by ⲣⲑⲉⲛⲟⲥ on next line: standard naming-formula ⲭⲉ ⲡⲁⲣⲑⲉⲛⲟⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":140,\"section\":4945,\"chapter\":98,\"line\":31,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲡⲁ\",\"basis\":\"Head of ⲡⲁⲣⲑⲉⲛⲟⲥ continuing across line break.\",\"confidence\":\"high\"},\n{\"gap_id\":141,\"section\":4945,\"chapter\":98,\"line\":31,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛ\",\"basis\":\"Override: editor's apparatus basis says ⲡⲁⲣⲑⲉⲛⲟⲥ but the gap is in ⲧⲍⲓⲕⲱ_ requiring ⲛ to complete ⲍⲓⲕⲱⲛ 'icon.'\",\"confidence\":\"high\"},\n{\"gap_id\":142,\"section\":4946,\"chapter\":98,\"line\":32,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲡ\",\"basis\":\"Doubled article in ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'the Ambassador.'\",\"confidence\":\"high\"},\n{\"gap_id\":143,\"section\":4946,\"chapter\":98,\"line\":32,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲕ\",\"basis\":\"Override: completes ⲁϩⲃⲱⲕ 'went' (single letter; editor's 'ⲡ' is misplaced).\",\"confidence\":\"high\"},\n{\"gap_id\":144,\"section\":4946,\"chapter\":98,\"line\":32,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲁⲍⲣⲏⲓ̈ ⲁⲡⲟⲩⲁⲓⲛⲉ\",\"basis\":\"Editor's intent: ⲁϩⲃⲱⲕ ⲁⲍⲣⲏⲓ̈ + 'reached up to the light'; standard upward-motion formula closing the ⲡⲁⲣⲑⲉⲛⲟⲥ-as-Ambassador-icon definition.\",\"confidence\":\"moderate\"},\n{\"gap_id\":145,\"section\":4947,\"chapter\":98,\"line\":33,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲙⲟⲩⲧⲉ\",\"basis\":\"ⲡⲉⲧⲟⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ 'he whom they call' — recurring naming-formula across this pericope.\",\"confidence\":\"high\"},\n{\"gap_id\":146,\"section\":4948,\"chapter\":98,\"line\":34,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲁϩ\",\"basis\":\"'the light that {146}-remained-behind': perfect prefix ⲉⲁϩ- across line break before ⲥⲉⲡⲉ 'remain.'\",\"confidence\":\"high\"},\n{\"gap_id\":147,\"section\":4949,\"chapter\":98,\"line\":35,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲙⲛ̄ ⲡⲉⲧⲛⲁ\",\"basis\":\"'that which goes upward [and that which goes] downward': the parallel construction ⲡⲉⲧⲛⲁ ⲁⲧⲡⲉ ⲙⲛ̄ ⲡⲉⲧⲛⲁ ⲁⲡⲓⲧⲛ̄ describes the two streams of light in the metangismos.\",\"confidence\":\"high\"},\n{\"gap_id\":148,\"section\":4950,\"chapter\":98,\"line\":36,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲁⲉ\",\"basis\":\"'There is {148} a portion' — ⲁⲉ/ⲇⲉ discourse particle.\",\"confidence\":\"moderate\"},\n{\"gap_id\":149,\"section\":4951,\"chapter\":98,\"line\":37,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲥ\",\"basis\":\"Single letter completing ⲧⲥⲁⲣⲝ̄ 'the flesh.'\",\"confidence\":\"high\"},\n{\"gap_id\":150,\"section\":4951,\"chapter\":98,\"line\":37,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲣⲱ\",\"basis\":\"Override editor: ⲛⲛⲣⲱⲙⲉ 'of the men/humans' — the ⲡⲗⲁⲥⲙⲁ ⲛ̄ⲧⲥⲁⲣⲝ̄ ⲛ̄ⲛⲣⲱⲙⲉ 'molding of the flesh of the humans' is the standard idiom for the human body.\",\"confidence\":\"high\"},\n{\"gap_id\":151,\"section\":4952,\"chapter\":98,\"line\":38,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲏⲧⲥ̄ ⲛ\",\"basis\":\"ⲛϩⲏⲧⲥ̄ 'in her/it' + linking ⲛ before ⲧⲍⲉⲗⲡⲓⲥ 'the hope.'\",\"confidence\":\"low\"},\n{\"gap_id\":152,\"section\":4955,\"chapter\":98,\"line\":41,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲛ̄\",\"basis\":\"Genitive linking 'the icons of the elect.'\",\"confidence\":\"high\"},\n{\"gap_id\":153,\"section\":4956,\"chapter\":98,\"line\":42,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲏⲥ\",\"basis\":\"Tail of ⲉⲅⲕⲣⲁⲧⲏⲥ.\",\"confidence\":\"high\"},\n{\"gap_id\":154,\"section\":4960,\"chapter\":98,\"line\":46,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲟⲩⲧⲉ\",\"basis\":\"'has not joined himself to a woman, neither has defiled himself in intercourse' — standard double negation ⲟⲩⲧⲉ.\",\"confidence\":\"moderate\"},\n{\"gap_id\":155,\"section\":4962,\"chapter\":98,\"line\":48,\"gap_type\":\"unknown\",\"proposed_coptic\":\"ⲁⲩⲙⲟⲩⲧⲉ ⲍ\",\"basis\":\"Completes ⲁⲩⲙⲟⲩⲧⲉ ⲍⲱϩ ⲁⲣⲁϩ 'they also call him' — the recurring formula opening each definition pair.\",\"confidence\":\"high\"},\n{\"gap_id\":156,\"section\":4964,\"chapter\":98,\"line\":50,\"gap_type\":\"restoration\",\"proposed_coptic\":\"ⲛϩ\",\"basis\":\"Editor: conjunctive ⲛϥ̄/ⲛϩ̄ + ⲕⲁⲁⲥ 'and-leaves-her.'\",\"confidence\":\"high\"},\n{\"gap_id\":157,\"section\":4964,\"chapter\":98,\"line\":50,\"gap_type\":\"lacuna\",\"proposed_coptic\":\"ⲛⲁⲣ̄\",\"basis\":\"6 chars after ϥ̄; future/becoming construction ϥ̄ⲛⲁⲣ̄ ⲟⲩⲉⲅⲕⲣⲁⲧⲏⲥ 'he becomes a continent,' parallel to line 39 ⲛϥ̄ⲣ̄ ⲟⲩⲡⲉⲧⲟⲩⲁⲃⲉ.\",\"confidence\":\"moderate\"},\n{\"gap_id\":158,\"section\":4970,\"chapter\":100,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"19-char head linking the somatic/pneumatic dragon imagery to 'the flesh of X'; the few visible lines of ch.100 are too sparse to fix the syntax.\",\"confidence\":\"unrestorable\"},\n{\"gap_id\":159,\"section\":4970,\"chapter\":100,\"line\":23,\"gap_type\":\"lacuna\",\"proposed_coptic\":null,\"basis\":\"3 chars qualifying ⲧⲥⲁⲣⲝ̄; underdetermined.\",\"confidence\":\"unrestorable\"}\n]",
+  "english_segments": [
+    {
+      "section": 4854,
+      "chapter": 97,
+      "line": 0,
+      "core_english": "{0}"
+    },
+    {
+      "section": 4856,
+      "chapter": 97,
+      "line": 2,
+      "core_english": "who were begotten in {1} and those—"
+    },
+    {
+      "section": 4857,
+      "chapter": 97,
+      "line": 3,
+      "core_english": "who were begotten in the abortions, and those who"
+    },
+    {
+      "section": 4859,
+      "chapter": 97,
+      "line": 6,
+      "core_english": "all the cattle that you see, and the rest of the crea-"
+    },
+    {
+      "section": 4860,
+      "chapter": 97,
+      "line": 7,
+      "core_english": "tures, all of them, of the earth — they are established in three"
+    },
+    {
+      "section": 4861,
+      "chapter": 97,
+      "line": 8,
+      "core_english": "likeness(es). {2} them out from the covering, while they"
+    },
+    {
+      "section": 4862,
+      "chapter": 97,
+      "line": 9,
+      "core_english": "in {3} {4} in abortions, in oth-"
+    },
+    {
+      "section": 4863,
+      "chapter": 97,
+      "line": 10,
+      "core_english": "ers, while they mold them themselves alone in their molding {5}"
+    },
+    {
+      "section": 4864,
+      "chapter": 97,
+      "line": 11,
+      "core_english": "{6}; their nourishment also exists in three"
+    },
+    {
+      "section": 4865,
+      "chapter": 97,
+      "line": 12,
+      "core_english": "{7} manifestations in them. They desire {8}"
+    },
+    {
+      "section": 4866,
+      "chapter": 97,
+      "line": 13,
+      "core_english": "{9} that they will give {10} {11} as they {12}"
+    },
+    {
+      "section": 4867,
+      "chapter": 97,
+      "line": 14,
+      "core_english": "in {13} {14} eating fresh-fruit and"
+    },
+    {
+      "section": 4868,
+      "chapter": 97,
+      "line": 15,
+      "core_english": "{15} {16} eating fresh-fruit and fruits"
+    },
+    {
+      "section": 4869,
+      "chapter": 97,
+      "line": 16,
+      "core_english": "{17} unto the All, and they {18}"
+    },
+    {
+      "section": 4870,
+      "chapter": 97,
+      "line": 17,
+      "core_english": "{19} the three types from their nature with the"
+    },
+    {
+      "section": 4871,
+      "chapter": 97,
+      "line": 18,
+      "core_english": "{20} at the time when they exist in the land of {21}"
+    },
+    {
+      "section": 4872,
+      "chapter": 97,
+      "line": 19,
+      "core_english": "{22} in {23} their reckoning {24}"
+    },
+    {
+      "section": 4873,
+      "chapter": 97,
+      "line": 20,
+      "core_english": "in their {25} their {26}"
+    },
+    {
+      "section": 4874,
+      "chapter": 97,
+      "line": 21,
+      "core_english": "{27} the Ambassador {28}"
+    },
+    {
+      "section": 4875,
+      "chapter": 97,
+      "line": 22,
+      "core_english": "{29} all the powers {30}"
+    },
+    {
+      "section": 4876,
+      "chapter": 97,
+      "line": 23,
+      "core_english": "{31} {32}"
+    },
+    {
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "core_english": "{33} {34} {35} {36} {37}"
+    },
+    {
+      "section": 4878,
+      "chapter": 97,
+      "line": 25,
+      "core_english": "in him in {38} {39} {40}"
+    },
+    {
+      "section": 4879,
+      "chapter": 97,
+      "line": 26,
+      "core_english": "{41} the first {42}"
+    },
+    {
+      "section": 4880,
+      "chapter": 97,
+      "line": 27,
+      "core_english": "they were planted wholly, by the name that says, 'Sprout up as grass!' She molded"
+    },
+    {
+      "section": 4881,
+      "chapter": 97,
+      "line": 28,
+      "core_english": "the trees that are bitter, the thornbushes of dark-land and the brambles and the {43}"
+    },
+    {
+      "section": 4883,
+      "chapter": 97,
+      "line": 30,
+      "core_english": "Because that enthumesis,"
+    },
+    {
+      "section": 4884,
+      "chapter": 97,
+      "line": 31,
+      "core_english": "that one is hidden in the flesh-eating archons; these whom they"
+    },
+    {
+      "section": 4885,
+      "chapter": 97,
+      "line": 32,
+      "core_english": "planted indeed as grass in the manner from when they were in their substance. The en-"
+    },
+    {
+      "section": 4886,
+      "chapter": 97,
+      "line": 33,
+      "core_english": "thumesis herself, who came down out of the archons — as long as"
+    },
+    {
+      "section": 4887,
+      "chapter": 97,
+      "line": 34,
+      "core_english": "they were as fruit and as grass at first — they had not yet planted them-"
+    },
+    {
+      "section": 4888,
+      "chapter": 97,
+      "line": 35,
+      "core_english": "selves as flesh nor as ox — she molded the trees that bear fr-"
+    },
+    {
+      "section": 4889,
+      "chapter": 97,
+      "line": 36,
+      "core_english": "uits of nourishment, their kind being sweet. The enthume-"
+    },
+    {
+      "section": 4890,
+      "chapter": 97,
+      "line": 37,
+      "core_english": "sis again, who came down out of the powers that eat fl-"
+    },
+    {
+      "section": 4892,
+      "chapter": 97,
+      "line": 39,
+      "core_english": "from which no nourishment is given forth at all from them: their"
+    },
+    {
+      "section": 4895,
+      "chapter": 97,
+      "line": 42,
+      "core_english": "planted it through Sin, who came down out of the powers of"
+    },
+    {
+      "section": 4896,
+      "chapter": 97,
+      "line": 43,
+      "core_english": "darkness, according to the counsel and the teaching of {44} which {45}"
+    },
+    {
+      "section": 4898,
+      "chapter": 97,
+      "line": 45,
+      "core_english": "fruits within itself in various likenesses and in various forms."
+    },
+    {
+      "section": 4902,
+      "chapter": 97,
+      "line": 49,
+      "core_english": "they do not sprout, nor do they bear fruit. Now there are others which when they"
+    },
+    {
+      "section": 4903,
+      "chapter": 97,
+      "line": 50,
+      "core_english": "cut their branches, and they (re-)plant them. There are some"
+    },
+    {
+      "section": 4904,
+      "chapter": 97,
+      "line": 51,
+      "core_english": "that they plant, and they bear a fruit growing upward, becoming a tree of"
+    },
+    {
+      "section": 4905,
+      "chapter": 97,
+      "line": 52,
+      "core_english": "branches. These then which when they cut them from"
+    },
+    {
+      "section": 4906,
+      "chapter": 97,
+      "line": 53,
+      "core_english": "their root, they cast them forth, and they raise them again another time, and"
+    },
+    {
+      "section": 4907,
+      "chapter": 97,
+      "line": 54,
+      "core_english": "they bear fruit, while their enthumesis is placed in their"
+    },
+    {
+      "section": 4908,
+      "chapter": 97,
+      "line": 55,
+      "core_english": "bosom and their root. Therefore again they {46}"
+    },
+    {
+      "section": 4909,
+      "chapter": 97,
+      "line": 56,
+      "core_english": "{47} a standing-fast they have, {48}"
+    },
+    {
+      "section": 4910,
+      "chapter": 97,
+      "line": 57,
+      "core_english": "{49} other trees also, which"
+    },
+    {
+      "section": 4911,
+      "chapter": 97,
+      "line": 58,
+      "core_english": "are habitually cut, since they do not grow at their root nor at their bos-"
+    },
+    {
+      "section": 4912,
+      "chapter": 97,
+      "line": 59,
+      "core_english": "om, while their enthumesis, which habitually paints there,"
+    },
+    {
+      "section": 4913,
+      "chapter": 97,
+      "line": 60,
+      "core_english": "is placed in distress. The others, on the other hand, which they take"
+    },
+    {
+      "section": 4914,
+      "chapter": 97,
+      "line": 61,
+      "core_english": "some branches from upon them and lay them down and raise them up — while their en-"
+    },
+    {
+      "section": 4915,
+      "chapter": 97,
+      "line": 62,
+      "core_english": "thumesis, which is the painter for them, is placed in their body"
+    },
+    {
+      "section": 4916,
+      "chapter": 97,
+      "line": 63,
+      "core_english": "and flesh, while the enthumesis exists in the bosoms of those exist-"
+    },
+    {
+      "section": 4917,
+      "chapter": 97,
+      "line": 64,
+      "core_english": "ing in their branches. The others again, which habitually grow through"
+    },
+    {
+      "section": 4918,
+      "chapter": 97,
+      "line": 65,
+      "core_english": "fruit and seed — their counsel is placed in their"
+    },
+    {
+      "section": 4919,
+      "chapter": 97,
+      "line": 66,
+      "core_english": "fruit. Therefore they are habitually molded and grow through their"
+    },
+    {
+      "section": 4920,
+      "chapter": 97,
+      "line": 67,
+      "core_english": "fruit."
+    },
+    {
+      "section": 4923,
+      "chapter": 98,
+      "line": 5,
+      "core_english": "What is the virgin whom they name 'virgin,'"
+    },
+    {
+      "section": 4924,
+      "chapter": 98,
+      "line": 6,
+      "core_english": "or the one whom they call 'continent' — what is it? Or, when they call"
+    },
+    {
+      "section": 4925,
+      "chapter": 98,
+      "line": 7,
+      "core_english": "the virgin 'virgin' — to what sign? Or to the conti-"
+    },
+    {
+      "section": 4927,
+      "chapter": 98,
+      "line": 9,
+      "core_english": "'continent' — to what sign?\""
+    },
+    {
+      "section": 4930,
+      "chapter": 98,
+      "line": 16,
+      "core_english": "-gin unto the sign of the entire Light, which has not tasted"
+    },
+    {
+      "section": 4931,
+      "chapter": 98,
+      "line": 17,
+      "core_english": "of the death, neither has it come to the war of the Enemy."
+    },
+    {
+      "section": 4932,
+      "chapter": 98,
+      "line": 18,
+      "core_english": "But that which they call 'continent' exists for"
+    },
+    {
+      "section": 4933,
+      "chapter": 98,
+      "line": 19,
+      "core_english": "the mystery of the Light which came and was mingled with the"
+    },
+    {
+      "section": 4934,
+      "chapter": 98,
+      "line": 20,
+      "core_english": "Darkness, and was defiled in the bodies {50}"
+    },
+    {
+      "section": 4935,
+      "chapter": 98,
+      "line": 21,
+      "core_english": "then he went up unto the Light, they called him 'con-"
+    },
+    {
+      "section": 4936,
+      "chapter": 98,
+      "line": 22,
+      "core_english": "tinent.' Once again, the holy virgins, those who"
+    },
+    {
+      "section": 4937,
+      "chapter": 98,
+      "line": 23,
+      "core_english": "{51} habitually come forth against the enemy {52}"
+    },
+    {
+      "section": 4938,
+      "chapter": 98,
+      "line": 24,
+      "core_english": "have not tasted of death, neither have they come to the war of the Enemy."
+    },
+    {
+      "section": 4939,
+      "chapter": 98,
+      "line": 25,
+      "core_english": "He whom they also call 'continent one' is the light"
+    },
+    {
+      "section": 4940,
+      "chapter": 98,
+      "line": 26,
+      "core_english": "that mingled with the Darkness, was chosen, came"
+    },
+    {
+      "section": 4941,
+      "chapter": 98,
+      "line": 27,
+      "core_english": "out from all the creatures, stood firm in continence."
+    },
+    {
+      "section": 4942,
+      "chapter": 98,
+      "line": 28,
+      "core_english": "They called him 'continent one' for this reason: he received the taste of"
+    },
+    {
+      "section": 4943,
+      "chapter": 98,
+      "line": 29,
+      "core_english": "desire, but afterwards purified himself from her, and became"
+    },
+    {
+      "section": 4944,
+      "chapter": 98,
+      "line": 30,
+      "core_english": "a holy one. Once again, he whom they called 'vir-"
+    },
+    {
+      "section": 4945,
+      "chapter": 98,
+      "line": 31,
+      "core_english": "-gin,' is the light that was chosen in the icon of"
+    },
+    {
+      "section": 4946,
+      "chapter": 98,
+      "line": 32,
+      "core_english": "the Ambassador, went up, reached up to the light,"
+    },
+    {
+      "section": 4947,
+      "chapter": 98,
+      "line": 33,
+      "core_english": "stood firm in the icon of the gods. He whom they call"
+    },
+    {
+      "section": 4948,
+      "chapter": 98,
+      "line": 34,
+      "core_english": "also 'continent one' is the remainder of the light that"
+    },
+    {
+      "section": 4949,
+      "chapter": 98,
+      "line": 35,
+      "core_english": "remained behind in him who was purified — that which goes upward and that which goes"
+    },
+    {
+      "section": 4950,
+      "chapter": 98,
+      "line": 36,
+      "core_english": "downward in the metangismos. There is then a portion in"
+    },
+    {
+      "section": 4951,
+      "chapter": 98,
+      "line": 37,
+      "core_english": "him that habitually falls and reaches the molding of the flesh of the men."
+    },
+    {
+      "section": 4952,
+      "chapter": 98,
+      "line": 38,
+      "core_english": "That one also is habitually chosen in the flesh, and {53} the"
+    },
+    {
+      "section": 4955,
+      "chapter": 98,
+      "line": 41,
+      "core_english": "of Light, who habitually comes and bears the icons of the elect."
+    },
+    {
+      "section": 4956,
+      "chapter": 98,
+      "line": 42,
+      "core_english": "And he whom they also call 'continent one' is"
+    },
+    {
+      "section": 4960,
+      "chapter": 98,
+      "line": 46,
+      "core_english": "in the flesh is a man who has not joined himself to a woman, neither has"
+    },
+    {
+      "section": 4962,
+      "chapter": 98,
+      "line": 48,
+      "core_english": "they also call 'continent one' is the man who has a wife"
+    },
+    {
+      "section": 4964,
+      "chapter": 98,
+      "line": 50,
+      "core_english": "and leaves her behind. For this reason he becomes a continent"
+    },
+    {
+      "section": 4970,
+      "chapter": 100,
+      "line": 23,
+      "core_english": "{54} of the flesh of {55}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4854,
+      "chapter": 97,
+      "line": 0,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        0,
+        1
+      ],
+      "confidence": "unrestorable",
+      "basis": "Headline destroyed; no English content recoverable."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4856,
+      "chapter": 97,
+      "line": 2,
+      "proposed_english": "conjunction",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "moderate",
+      "basis": "First of three modes of begetting (parallel to abortions and self-molding); ⲧⲱⲍ as conjunction-mode."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4861,
+      "chapter": 97,
+      "line": 8,
+      "proposed_english": "and they bring",
+      "coptic_gap_refs": [
+        10,
+        11
+      ],
+      "confidence": "low",
+      "basis": "Verb of bringing forth implied by directional ⲁⲃⲁⲗ; underdetermined."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4862,
+      "chapter": 97,
+      "line": 9,
+      "proposed_english": "the conjunction",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "low",
+      "basis": "Parallel to following 'in abortions, in others'; conjecture only."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4862,
+      "chapter": 97,
+      "line": 9,
+      "proposed_english": "these",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "low",
+      "basis": "Underdetermined demonstrative."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4863,
+      "chapter": 97,
+      "line": 10,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char particle, no constraint."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 4864,
+      "chapter": 97,
+      "line": 11,
+      "proposed_english": "the molding of the tree",
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "low",
+      "basis": "ⲡⲗⲁⲥⲙⲁ ⲙ̄ⲡⲱⲏⲛ — conjectural; the line bridges plant-imagery and the three-fold typology."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 4865,
+      "chapter": 97,
+      "line": 12,
+      "proposed_english": "three",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "low",
+      "basis": "Underdetermined; possibly numeral."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 4865,
+      "chapter": 97,
+      "line": 12,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of ⲟⲩⲱϣ 'desire' lost."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 4866,
+      "chapter": 97,
+      "line": 13,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        21
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 4866,
+      "chapter": 97,
+      "line": 13,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 4866,
+      "chapter": 97,
+      "line": 13,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 4866,
+      "chapter": 97,
+      "line": 13,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 4867,
+      "chapter": 97,
+      "line": 14,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost class-name of eaters."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 4867,
+      "chapter": 97,
+      "line": 14,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 4868,
+      "chapter": 97,
+      "line": 15,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 4868,
+      "chapter": 97,
+      "line": 15,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 4869,
+      "chapter": 97,
+      "line": 16,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb of extending to 'the All' lost."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 4869,
+      "chapter": 97,
+      "line": 16,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        31
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 4870,
+      "chapter": 97,
+      "line": 17,
+      "proposed_english": "according to",
+      "coptic_gap_refs": [
+        32
+      ],
+      "confidence": "low",
+      "basis": "Connector before 'the three types'; conjecture."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 4871,
+      "chapter": 97,
+      "line": 18,
+      "proposed_english": "they differ",
+      "coptic_gap_refs": [
+        35
+      ],
+      "confidence": "low",
+      "basis": "Verb introducing temporal clause; underdetermined."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 4871,
+      "chapter": 97,
+      "line": 18,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        37
+      ],
+      "confidence": "unrestorable",
+      "basis": "Land-name lost."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 4872,
+      "chapter": 97,
+      "line": 19,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        38
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 4872,
+      "chapter": 97,
+      "line": 19,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        39
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 4872,
+      "chapter": 97,
+      "line": 19,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        40
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 4873,
+      "chapter": 97,
+      "line": 20,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 4873,
+      "chapter": 97,
+      "line": 20,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        42
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 4874,
+      "chapter": 97,
+      "line": 21,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        43
+      ],
+      "confidence": "unrestorable",
+      "basis": "Connector before 'the Ambassador' lost."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 4874,
+      "chapter": 97,
+      "line": 21,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        44
+      ],
+      "confidence": "unrestorable",
+      "basis": "Predicate about the Ambassador lost."
+    },
+    {
+      "eng_gap_id": 29,
+      "section": 4875,
+      "chapter": 97,
+      "line": 22,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        45
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 30,
+      "section": 4875,
+      "chapter": 97,
+      "line": 22,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        46
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 31,
+      "section": 4876,
+      "chapter": 97,
+      "line": 23,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        47
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 32,
+      "section": 4876,
+      "chapter": 97,
+      "line": 23,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        48
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 33,
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        49
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line destroyed."
+    },
+    {
+      "eng_gap_id": 34,
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        50
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line destroyed."
+    },
+    {
+      "eng_gap_id": 35,
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        51
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line destroyed."
+    },
+    {
+      "eng_gap_id": 36,
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        52
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line destroyed."
+    },
+    {
+      "eng_gap_id": 37,
+      "section": 4877,
+      "chapter": 97,
+      "line": 24,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        53
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line destroyed."
+    },
+    {
+      "eng_gap_id": 38,
+      "section": 4878,
+      "chapter": 97,
+      "line": 25,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        55
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 39,
+      "section": 4878,
+      "chapter": 97,
+      "line": 25,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        56
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 40,
+      "section": 4878,
+      "chapter": 97,
+      "line": 25,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        57
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 41,
+      "section": 4879,
+      "chapter": 97,
+      "line": 26,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        58
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 42,
+      "section": 4879,
+      "chapter": 97,
+      "line": 26,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        59
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 43,
+      "section": 4881,
+      "chapter": 97,
+      "line": 28,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        63
+      ],
+      "confidence": "unrestorable",
+      "basis": "Plant-name in the bitter-thorn list lost."
+    },
+    {
+      "eng_gap_id": 44,
+      "section": 4896,
+      "chapter": 97,
+      "line": 43,
+      "proposed_english": "the powers",
+      "coptic_gap_refs": [
+        77
+      ],
+      "confidence": "low",
+      "basis": "Continuation of 'counsel and teaching of the X'; conjecture from the immediately preceding 'powers of darkness.'"
+    },
+    {
+      "eng_gap_id": 45,
+      "section": 4896,
+      "chapter": 97,
+      "line": 43,
+      "proposed_english": "were",
+      "coptic_gap_refs": [
+        78
+      ],
+      "confidence": "low",
+      "basis": "Relative-clause continuation; underdetermined."
+    },
+    {
+      "eng_gap_id": 46,
+      "section": 4908,
+      "chapter": 97,
+      "line": 55,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        92
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb after 'they' lost."
+    },
+    {
+      "eng_gap_id": 47,
+      "section": 4909,
+      "chapter": 97,
+      "line": 56,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        93
+      ],
+      "confidence": "unrestorable",
+      "basis": "11-char head lost."
+    },
+    {
+      "eng_gap_id": 48,
+      "section": 4909,
+      "chapter": 97,
+      "line": 56,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        94
+      ],
+      "confidence": "unrestorable",
+      "basis": "Lost."
+    },
+    {
+      "eng_gap_id": 49,
+      "section": 4910,
+      "chapter": 97,
+      "line": 57,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        95
+      ],
+      "confidence": "unrestorable",
+      "basis": "16-char head lost."
+    },
+    {
+      "eng_gap_id": 50,
+      "section": 4934,
+      "chapter": 98,
+      "line": 20,
+      "proposed_english": "of the path",
+      "coptic_gap_refs": [
+        121
+      ],
+      "confidence": "low",
+      "basis": "Apparatus notes a partial ⲙⲁⲓⲧ trace; conjectural rendering of 'bodies of the path/way' as the realm of mingling."
+    },
+    {
+      "eng_gap_id": 51,
+      "section": 4937,
+      "chapter": 98,
+      "line": 23,
+      "proposed_english": "these",
+      "coptic_gap_refs": [
+        128
+      ],
+      "confidence": "low",
+      "basis": "Demonstrative introducing the relative clause about the holy virgins."
+    },
+    {
+      "eng_gap_id": 52,
+      "section": 4937,
+      "chapter": 98,
+      "line": 23,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        130
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char tail lost; predicate of holy virgins' contest with the enemy."
+    },
+    {
+      "eng_gap_id": 53,
+      "section": 4952,
+      "chapter": 98,
+      "line": 38,
+      "proposed_english": "in him is",
+      "coptic_gap_refs": [
+        151
+      ],
+      "confidence": "low",
+      "basis": "ⲛϩⲏⲧⲥ̄ ⲛ before ⲧⲍⲉⲗⲡⲓⲥ 'the hope'; underdetermined."
+    },
+    {
+      "eng_gap_id": 54,
+      "section": 4970,
+      "chapter": 100,
+      "line": 23,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        158
+      ],
+      "confidence": "unrestorable",
+      "basis": "19-char head of dragon-coda lost."
+    },
+    {
+      "eng_gap_id": 55,
+      "section": 4970,
+      "chapter": 100,
+      "line": 23,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        159
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char qualifier of 'flesh' lost."
+    }
+  ]
+}

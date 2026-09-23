@@ -1,0 +1,973 @@
+{
+  "teaching": 29,
+  "total_gaps_in_core": 48,
+  "gaps_restored": 40,
+  "gaps_unrestorable": 8,
+  "restoration_note": "The teaching catalogues nine cosmic thrones (described as eight in the heading) — fixed registers of divine recognition outside the formed cosmos — followed by nine more within it (three in each of two ships, plus three at fixed firmaments). Most gaps are letter-level completions of standard formulae (ordinal sequence, ⲉⲧⲥⲙⲁⲁⲛⲧ formula, ⲉⲩϣⲟⲟⲡ, ⲍⲓⲧⲉϥϩⲏ, ⲇⲉⲥⲙⲟⲫⲩⲗⲁⲕⲏ) constrained by surviving traces and the ordinal/parallel structure. Substantive content gaps are constrained by the throne-list (Living Spirit's epithet, the First Man being raised from the contest, the worlds of light established, fettering of Enmity's powers, the Light Mind as ninth throne to whom churches gather and the Light entire is gathered). The closing summary (sections 1801-1805) is too fragmentary to restore beyond the editor's anchored letters; gaps 28, 43-47 left unrestorable.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 1744,
+      "chapter": 29,
+      "line": 1,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲑ̄",
+      "basis": "Editor restores marginal chapter number 29, identical to the visible ⲕⲑ̄ at line end.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1747,
+      "chapter": 29,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲟ̄ ⲛⲫⲣⲟⲛⲟⲥ ⲛ̄ⲛⲓⲁⲧⲉ ⲧⲏⲣⲟⲩ",
+      "basis": "Editor's restoration: repeats heading 'great thrones of all the Fathers' as subject of the relative clause 'are those which exist, set, established'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 1749,
+      "chapter": 29,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁⲁⲧ ⲍⲛ̄",
+      "basis": "Editor's restoration completing the formula ⲕⲁⲁⲧ ⲉⲧⲥⲙⲁⲁⲛⲧ ⲍⲛ̄ 'set, established in' — 'six of them are set in the outer aeons'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 1749,
+      "chapter": 29,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲟ",
+      "basis": "Editor restores ⲉⲩϣ[ⲟⲟ]ⲡ 'they exist'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 1750,
+      "chapter": 29,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Editor restores [ⲍ] giving ⲍⲛ 'in' before ⲛⲕⲟⲥⲙⲟⲥ ⲧⲏⲣⲟⲩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 1751,
+      "chapter": 29,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲧϣⲁ",
+      "basis": "Editor restores ⲧⲧϣⲁⲣⲡ 'the first' (fem. with throne-feminine in this dialect), parallel to ⲡϣⲁⲣⲡ ⲛⲫⲣⲟⲛⲟⲥ later in the line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 1752,
+      "chapter": 29,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙⲏⲉ",
+      "basis": "Editor restores ⲡⲛⲟⲩⲧⲉ ⲛ̄ⲧⲉ ⲧⲙⲏⲉ 'the God of Truth' — standard divine epithet of the Father of Greatness.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 1753,
+      "chapter": 29,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛⲧ",
+      "basis": "Editor's restoration completes ⲉⲧⲥⲙⲁ-/[ⲁ]ⲛⲧ 'established' carrying over from line 9.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 1753,
+      "chapter": 29,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Editor restores [ⲓ] in ⲧⲉϩⲟⲩⲥ[ⲓ]ⲁ 'his essence'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 1754,
+      "chapter": 29,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲙⲁϩ ⲍⲁⲣⲓⲍ",
+      "basis": "Editor's restoration: ⲙ̄ⲙⲁϩ 'himself' parallel to line 5; ⲍⲁⲣⲓⲍⲁⲣⲁϩ = ϩⲁⲣⲓϩⲁⲣⲁϥ 'upon his very self' (reduplicated reflexive). 'By himself, abiding upon himself.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 10,
+      "section": 1755,
+      "chapter": 29,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲛⲁⲟ̄ ⲉⲧⲭⲁⲥⲉ",
+      "basis": "13 chars; the first throne is the supreme one, fitting epithet 'the great exalted one' that surpasses all others — natural complement to ⲡⲉⲧⲟⲩⲁⲧⲃⲉ ⲁⲛⲫⲣⲟⲛⲟⲥ ⲧⲏⲣⲟⲩ.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 11,
+      "section": 1756,
+      "chapter": 29,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration: with the visible ⲁⲩ at start of next line completes ⲛ̄[ⲉ]ⲁⲩ 'in glory' — Mother of Life is in glory.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲣ̄ⲣⲟ",
+      "basis": "ⲁⲩⲙⲛⲧⲃ may be misread for ⲁⲩⲙⲛⲧⲣⲣⲟ 'and a kingdom'; Great Builder built the new aeon and a kingdom for the Fathers of Light. Tentative.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 13,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Damaged span between ⲁ and ⲧⲁⲗ; cannot reconstruct without more trace.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Trailing fragment after ⲧⲁⲗ; insufficient context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 1769,
+      "chapter": 29,
+      "line": 26,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛⲓ",
+      "basis": "Article ⲛ̄[ⲛⲓ]ⲓⲁⲧⲉ 'of the Fathers' — the dwellings of the Fathers of Light prepared by the Great Builder.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 16,
+      "section": 1769,
+      "chapter": 29,
+      "line": 26,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁⲩⲇⲉⲥⲙⲟⲫ",
+      "basis": "The visible ⲩⲥⲫⲩⲗⲁⲕⲏ continuing into next line completes Greek ⲇⲉⲥⲙⲟⲫⲩⲗⲁⲕⲏ 'prison-house'; restoration supplies 'and a prison-house' (ⲁⲩ- 'and a' + ⲇⲉⲥⲙⲟⲫ-).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 1771,
+      "chapter": 29,
+      "line": 29,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛ̄ⲧⲙⲛ̄ⲧⲛⲁⲟ̄",
+      "basis": "Living Spirit's epithet 'the Strong One of the Greatness'; pairs with the standard Manichaean title and matches the throne-list register of divine outgoing.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 18,
+      "section": 1772,
+      "chapter": 29,
+      "line": 30,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲟⲗⲉⲙⲟⲥ",
+      "basis": "Living Spirit's signature act: brought up the First Man out from the contest/war (ⲡⲡⲟⲗⲉⲙⲟⲥ) — standard Manichaean cosmogony. The reading explicitly identifies this as 'lifting the divine humanity out of the contest'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 1773,
+      "chapter": 29,
+      "line": 31,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ",
+      "basis": "Completes ⲛⲕⲟⲥⲙⲟ[ⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ] 'the worlds of the Light' — Living Spirit cast down (the powers) and established the worlds of light, the antithesis to next line's powers of Enmity.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 1774,
+      "chapter": 29,
+      "line": 32,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲇⲉ ⲛ̄ⲛⲉϩ",
+      "basis": "Completes the ⲙⲉⲛ … ⲇⲉ pair: 'a purification on the one hand of the Light, and a fettering on the other of the powers of the Enmity'; ⲛ̄ⲛⲉϩ- is the start of ⲛⲉϩⲃⲁⲙ continuing into line 33.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 1776,
+      "chapter": 29,
+      "line": 34,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲣⲟⲛⲟⲥ ⲡⲉ",
+      "basis": "Completes ⲛⲑ[ⲣⲟⲛⲟⲥ ⲡⲉ] 'the seventh throne is' — fixed formula for each throne entry.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 1779,
+      "chapter": 29,
+      "line": 37,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲉ",
+      "basis": "Copular ⲡⲉ 'is' completes ⲉⲧⲉ ⲛⲧⲁϩ [ⲡⲉ] ⲡⲣⲉϩⲃⲱⲗ 'who is the Releaser'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 1780,
+      "chapter": 29,
+      "line": 38,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛ̄ⲧⲉ",
+      "basis": "Genitive ⲛ̄ⲧⲉ 'of' linking 'Releaser and Redeemer of all souls'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 1781,
+      "chapter": 29,
+      "line": 39,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲟⲩⲥ ⲡⲉⲧⲉ",
+      "basis": "Completes ⲡⲛⲁⲃ̄ ⲛ̄ⲛ[ⲟⲩⲥ ⲡⲉⲧⲉ]ⲱⲁⲣⲉ 'the Great Mind, to whom habitually [the churches gather]' — ninth throne = Light Mind, the register at which all received truth gathers (per the reading).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 1782,
+      "chapter": 29,
+      "line": 40,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲟⲩⲁⲓⲛⲉ",
+      "basis": "Completes ⲡ[ⲟⲩⲁⲓⲛⲉ] ⲧⲏⲣϥ̄ 'the Light entire that shall be saved out from the cosmos is gathered up to him' — standard Manichaean conclusion of regeneration.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 1784,
+      "chapter": 29,
+      "line": 42,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲉⲁⲩ",
+      "basis": "Completes ⲡⲡ[ⲉⲁⲩ] 'the Glory'; thrones of the Glory, parallel to next line's 'Fathers of the Glorious One'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 27,
+      "section": 1784,
+      "chapter": 29,
+      "line": 42,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛ",
+      "basis": "Completes ⲛⲁⲓⲱ[ⲛ] 'aeons' — those placed in the [outer] aeons.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 1785,
+      "chapter": 29,
+      "line": 43,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "End-of-line lacuna with no surviving traces; could be an additional epithet or transition phrase, but no constraint to choose among alternatives.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 1786,
+      "chapter": 29,
+      "line": 45,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Completes ⲛ̄[ⲧⲉ] 'of' linking 'this cosmos of the Zone' (ⲧϩⲱⲛⲏ continues at start of next section).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 1787,
+      "chapter": 29,
+      "line": 46,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲣⲏ",
+      "basis": "Three thrones in the ship of the Sun — Third Ambassador, Great One of Spirit, Living Spirit are on the Sun-Ship in standard Manichaean cosmology; the Second Ship (line 52) is then the Moon-Ship.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 31,
+      "section": 1788,
+      "chapter": 29,
+      "line": 47,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲉ ⲡⲉ ⲡⲁⲡ",
+      "basis": "Completes 'the second is that of the' continuing into ⲡⲛⲁⲃ̄ ⲙⲡ̄ⲛⲁ 'the Great One of the Spirit' at start of next section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 1790,
+      "chapter": 29,
+      "line": 49,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲍⲓⲡⲉϥⲥⲁ",
+      "basis": "ⲡⲭⲁⲓ̈ ⲉⲧ[ⲍⲓⲡⲉϥⲥⲁ] 'the ship that is next/beside it' — relative introducing the second ship; section 1793 confirms 'Second Ship'.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 33,
+      "section": 1791,
+      "chapter": 29,
+      "line": 50,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲙⲁϩⲥⲛⲉⲩ ⲡⲉ ⲡⲁ",
+      "basis": "Continues the enumeration: 'the second is that of [the First Man]' — section 1792 begins ⲡⲧⲱⲁⲣⲡ̄ ⲛ̄ⲣⲱⲙⲉ 'the First Man'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 1792,
+      "chapter": 29,
+      "line": 51,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙⲡⲟⲩⲁⲓⲛⲉ",
+      "basis": "The third throne in the Second Ship: standard Manichaean cosmology gives Virgin of Light alongside Jesus and First Man; section 1793 then resumes 'of the Light' confirming this reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 1793,
+      "chapter": 29,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲍⲥⲟⲟⲩ",
+      "basis": "Editor's restoration: dialectal ordinal 'sixth'; required by the running count (line 53 gives 'seventh', line 55 'eighth', line 59 'ninth'). The Virgin of Light's throne is sixth in the cosmic series.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 1799,
+      "chapter": 29,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restores [ⲧ] in ⲍⲓ[ⲧ]ⲉϥⲉⲍⲏ = ϩⲓⲧⲉϥϩⲏ 'before him'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 1799,
+      "chapter": 29,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor restores [ⲉ] completing ⲟⲩ[ⲉ] 'one' in the triplet ⲟⲩⲉ … ⲟⲩⲉ … ⲟⲩⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 1801,
+      "chapter": 29,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓ",
+      "basis": "Editor restores ⲛ[ⲉⲓ] 'these' as demonstrative subject.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 1801,
+      "chapter": 29,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯ",
+      "basis": "Editor restores [ϯ]ⲥ in ⲡϯⲥ 'the nine'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 1801,
+      "chapter": 29,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲫ",
+      "basis": "Editor restores [ⲫ] completing ⲫⲣⲟⲛⲟⲥ = θρόνος 'throne'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 1802,
+      "chapter": 29,
+      "line": 65,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲉ",
+      "basis": "10 chars with ⲛⲟⲥ at start (end of ⲫⲣⲟⲛⲟⲥ from previous line); plausible completion ⲛⲟⲥ ⲧⲏⲣⲟⲩ ⲛⲉ 'are all the thrones' before relative ⲉⲧⲥⲙⲁⲁⲛⲧ.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 42,
+      "section": 1803,
+      "chapter": 29,
+      "line": 66,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲟⲩⲁⲓⲛⲉ",
+      "basis": "7 chars exactly = ⲡⲟⲩⲁⲓⲛⲉ 'the Light'; partial trace ⲟⲩⲁⲓⲛⲉ noted in apparatus. 'Cosmos of the Light, of the Glorious One.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 1803,
+      "chapter": 29,
+      "line": 66,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2 chars between ⲛⲥ and ⲏ; insufficient trace to discriminate among possible verbs/relatives.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 44,
+      "section": 1804,
+      "chapter": 29,
+      "line": 67,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "17-char lacuna with no surviving traces; cannot reconstruct.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 45,
+      "section": 1804,
+      "chapter": 29,
+      "line": 67,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char lacuna following ⲧⲁⲗⲁⲩ 'place them'; no traces.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 46,
+      "section": 1805,
+      "chapter": 29,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char lacuna with no traces; sentence too damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 47,
+      "section": 1805,
+      "chapter": 29,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char lacuna with only 'ⲛ . ⲧⲉ . . .' as trace; insufficient to constrain a fill.",
+      "confidence": "unrestorable"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 1744,
+      "chapter": 29,
+      "line": 1,
+      "core_english": "{0} · Concerning the Eight Great ·"
+    },
+    {
+      "section": 1747,
+      "chapter": 29,
+      "line": 4,
+      "core_english": "{1} are those which exist, which are set, es-"
+    },
+    {
+      "section": 1749,
+      "chapter": 29,
+      "line": 6,
+      "core_english": "set in the outer aeons, existing"
+    },
+    {
+      "section": 1750,
+      "chapter": 29,
+      "line": 7,
+      "core_english": "in all the worlds of the Half (Region)."
+    },
+    {
+      "section": 1751,
+      "chapter": 29,
+      "line": 8,
+      "core_english": "The first throne is the throne of the Father, the God of"
+    },
+    {
+      "section": 1752,
+      "chapter": 29,
+      "line": 9,
+      "core_english": "Truth, the King of the aeons of the Greatness, the one who is set, es-"
+    },
+    {
+      "section": 1753,
+      "chapter": 29,
+      "line": 10,
+      "core_english": "tablished alone in his own essence, by"
+    },
+    {
+      "section": 1754,
+      "chapter": 29,
+      "line": 11,
+      "core_english": "himself, abiding upon his very self. This is the first throne,"
+    },
+    {
+      "section": 1755,
+      "chapter": 29,
+      "line": 12,
+      "core_english": "{2} the one which surpasses all the thrones."
+    },
+    {
+      "section": 1756,
+      "chapter": 29,
+      "line": 13,
+      "core_english": "The second throne is that of the Mother of Life, who is in glory —"
+    },
+    {
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "core_english": "who built the new aeon and a {3}, a {4}, a dwelling{5}"
+    },
+    {
+      "section": 1769,
+      "chapter": 29,
+      "line": 26,
+      "core_english": "of the Fathers of the Light; and a place of binding, even a prison-"
+    },
+    {
+      "section": 1771,
+      "chapter": 29,
+      "line": 29,
+      "core_english": "is that of the Living Spirit, the Strong One {6}, the one who brought"
+    },
+    {
+      "section": 1772,
+      "chapter": 29,
+      "line": 30,
+      "core_english": "up the First Man out from the {7},"
+    },
+    {
+      "section": 1773,
+      "chapter": 29,
+      "line": 31,
+      "core_english": "who himself cast (them) down and established the worlds {8}"
+    },
+    {
+      "section": 1774,
+      "chapter": 29,
+      "line": 32,
+      "core_english": "— a purification on the one hand of the Light, and on the other a fettering of the"
+    },
+    {
+      "section": 1776,
+      "chapter": 29,
+      "line": 34,
+      "core_english": "The seventh throne is"
+    },
+    {
+      "section": 1779,
+      "chapter": 29,
+      "line": 37,
+      "core_english": "The eighth throne is that of Jesus the Radiance, who is"
+    },
+    {
+      "section": 1780,
+      "chapter": 29,
+      "line": 38,
+      "core_english": "the Releaser and the Redeemer of all souls."
+    },
+    {
+      "section": 1781,
+      "chapter": 29,
+      "line": 39,
+      "core_english": "The ninth throne is the throne of the Great {9}, to whom"
+    },
+    {
+      "section": 1782,
+      "chapter": 29,
+      "line": 40,
+      "core_english": "all the churches habitually gather, and to whom the {10}"
+    },
+    {
+      "section": 1784,
+      "chapter": 29,
+      "line": 42,
+      "core_english": "These are the nine thrones of the {11}, those that are placed in the aeons"
+    },
+    {
+      "section": 1785,
+      "chapter": 29,
+      "line": 43,
+      "core_english": "that are outside the Fathers of the Glorious One{12}."
+    },
+    {
+      "section": 1786,
+      "chapter": 29,
+      "line": 45,
+      "core_english": "And the other nine thrones, those that are placed in this cosmos of"
+    },
+    {
+      "section": 1787,
+      "chapter": 29,
+      "line": 46,
+      "core_english": "the Zone, these they are: three thrones in the ship of the {13},"
+    },
+    {
+      "section": 1788,
+      "chapter": 29,
+      "line": 47,
+      "core_english": "one of them is that of the Ambassador, the second is that of"
+    },
+    {
+      "section": 1790,
+      "chapter": 29,
+      "line": 49,
+      "core_english": "And again, there are three more in the ship that {14}:"
+    },
+    {
+      "section": 1791,
+      "chapter": 29,
+      "line": 50,
+      "core_english": "the first is the throne of Jesus the Radiance, the second is that of"
+    },
+    {
+      "section": 1792,
+      "chapter": 29,
+      "line": 51,
+      "core_english": "the First Man, the third is that of {15}"
+    },
+    {
+      "section": 1793,
+      "chapter": 29,
+      "line": 52,
+      "core_english": "of the Light. The sixth throne is established in the Second Ship."
+    },
+    {
+      "section": 1799,
+      "chapter": 29,
+      "line": 58,
+      "core_english": "divide forth before him: one to death, one to life, one to"
+    },
+    {
+      "section": 1801,
+      "chapter": 29,
+      "line": 64,
+      "core_english": "These are the nine great thr-"
+    },
+    {
+      "section": 1802,
+      "chapter": 29,
+      "line": 65,
+      "core_english": "ones {16}, established in this cosmos of"
+    },
+    {
+      "section": 1803,
+      "chapter": 29,
+      "line": 66,
+      "core_english": "the Light, of the Glorious One, which the {17}"
+    },
+    {
+      "section": 1804,
+      "chapter": 29,
+      "line": 67,
+      "core_english": "{18} place them {19}"
+    },
+    {
+      "section": 1805,
+      "chapter": 29,
+      "line": 68,
+      "core_english": "{20} with {21}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 1744,
+      "chapter": 29,
+      "line": 1,
+      "proposed_english": "29",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "Marginal chapter number, restored by editor."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 1747,
+      "chapter": 29,
+      "line": 4,
+      "proposed_english": "The eight great thrones of all the Fathers",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Editor's restoration repeats the heading subject of the chapter."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 1755,
+      "chapter": 29,
+      "line": 12,
+      "proposed_english": "the great exalted one,",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "low",
+      "basis": "13-char lacuna; the first throne surpasses all others, so a superlative epithet fits, but the precise wording is unconstrained."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "proposed_english": "kingdom",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "low",
+      "basis": "Tentative reading of ⲁⲩⲙⲛⲧⲃ as ⲁⲩⲙⲛⲧⲣⲣⲟ; Great Builder built a kingdom for the Fathers of Light."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap 13 left unrestored."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 1768,
+      "chapter": 29,
+      "line": 25,
+      "proposed_english": "...",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap 14 left unrestored; the surviving ⲧⲁⲗ suggests something like 'a place / a tabernacle' but cannot be confirmed."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 1771,
+      "chapter": 29,
+      "line": 29,
+      "proposed_english": "of the Greatness",
+      "coptic_gap_refs": [
+        17
+      ],
+      "confidence": "moderate",
+      "basis": "Standard epithet pairing with 'Strong One' for the Living Spirit at the register of the divine outgoing."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 1772,
+      "chapter": 29,
+      "line": 30,
+      "proposed_english": "contest",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "high",
+      "basis": "Living Spirit's defining act in Manichaean cosmology: raising the First Man from the war/contest with darkness; the reading explicitly identifies this as 'lifts the divine humanity up out of the contest'."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 1773,
+      "chapter": 29,
+      "line": 31,
+      "proposed_english": "of the Light,",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "high",
+      "basis": "Casting down the powers and establishing the worlds of light is the antithesis to next line's purification of the Light and fettering of Enmity's powers."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 1781,
+      "chapter": 29,
+      "line": 39,
+      "proposed_english": "Mind,",
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "high",
+      "basis": "Ninth throne = Light Mind / Great Mind, the register at which all received truth gathers (per the reading: 'the Lord ordering the rational from within … into whom everything within the soul that is to be saved is gathered')."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 1782,
+      "chapter": 29,
+      "line": 40,
+      "proposed_english": "Light",
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "high",
+      "basis": "Completes 'the Light entire that shall be saved out from the cosmos is gathered up to him'."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 1784,
+      "chapter": 29,
+      "line": 42,
+      "proposed_english": "Glory",
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "moderate",
+      "basis": "Thrones of the Glory, parallel to next line's 'Fathers of the Glorious One'."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 1785,
+      "chapter": 29,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "End-of-line lacuna; no traces."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 1787,
+      "chapter": 29,
+      "line": 46,
+      "proposed_english": "Sun",
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "moderate",
+      "basis": "Sun-Ship carries Third Ambassador, Great One of Spirit, and Living Spirit in standard Manichaean cosmology; Second Ship (line 52) is then the Moon-Ship of Jesus, First Man, Virgin of Light."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 1790,
+      "chapter": 29,
+      "line": 49,
+      "proposed_english": "is next to it",
+      "coptic_gap_refs": [
+        32
+      ],
+      "confidence": "low",
+      "basis": "Relative introducing the second ship; phrasing tentative."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 1792,
+      "chapter": 29,
+      "line": 51,
+      "proposed_english": "the Virgin of the Light",
+      "coptic_gap_refs": [
+        34
+      ],
+      "confidence": "high",
+      "basis": "Standard third member of the Moon-Ship's triad with Jesus the Radiance and First Man; section 1793 immediately resumes 'of the Light' confirming the identification."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 1802,
+      "chapter": 29,
+      "line": 65,
+      "proposed_english": "all of them",
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "low",
+      "basis": "10-char lacuna with ⲛⲟⲥ at start; plausible completion 'all the thrones are' before the relative."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 1803,
+      "chapter": 29,
+      "line": 66,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        43
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap 43 unrestorable."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 1804,
+      "chapter": 29,
+      "line": 67,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        44
+      ],
+      "confidence": "unrestorable",
+      "basis": "17-char lacuna; no traces."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 1804,
+      "chapter": 29,
+      "line": 67,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        45
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char lacuna; no traces."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 1805,
+      "chapter": 29,
+      "line": 68,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        46
+      ],
+      "confidence": "unrestorable",
+      "basis": "Sentence too damaged."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 1805,
+      "chapter": 29,
+      "line": 68,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        47
+      ],
+      "confidence": "unrestorable",
+      "basis": "Sentence too damaged."
+    }
+  ]
+}

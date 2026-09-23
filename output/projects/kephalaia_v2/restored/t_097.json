@@ -1,0 +1,758 @@
+{
+  "teaching": 97,
+  "total_gaps_in_core": 49,
+  "gaps_restored": 39,
+  "gaps_unrestorable": 10,
+  "restoration_note": "The teaching has two clear movements: (a) the fivefold integrity of the natural — none of the five degrees can be missing or the whole collapses, and what the self produces in the flesh today is humbled because it cannot match the height/breadth/length/depth of the elevated states and is finally swallowed up in the great sea of natural perception; (b) the Lord makes five things known to the rational — kind-of-the-light, how aeons and darkness exist, how the light shames the power of darkness, that the soul has come to the boundary of death-in-the-flesh and is brought out by the upper gate, and that the self's coverings of the Good are bound at last. The second half (5222–5236) consists almost entirely of editor letter-completions and ordinal restorations (ⲡϣⲁⲣⲧ̄, ⲡⲙ̄ⲁⲍⲥⲛⲉⲩ, ⲡⲙⲁⲍϣⲁⲙⲧ, Ⲧ̄Ⲧⲙⲁⲍϥⲧⲁⲩ, Ⲧ̄Ⲧⲙⲁⲍϯⲟⲩ) that are highly constrained by the visible parts of the words and by the parallel ordinal-formula structure; these are all confident. Section 5231's ⲥⲱⲙⲁ ('body, which is the flesh') is a clean four-character fit with strong corpus parallels. The genuinely damaged stretches are 5208's middle (ⲛⲧⲥⲁⲣⲝ̄ ___ ___ ___ ⲙⲡⲟⲟⲩⲉ ⲍⲓⲝⲛ ⲛⲍⲟ ⲙⲡⲕⲁⲍ ___) where the participial verb of 'rising up today' cannot be securely fixed, 5209's prepositional phrase '___ forth from ___-ⲗⲉ which exceeds' (the noun ending in -ⲗⲉ is unrecoverable), 5211's 3-char tail after 'mountains', and 5216–5217's stretch about how the productions are gathered into a single sea and swallowed in some manner — the verb at {19}+ⲟⲩⲁⲡ and the partial-ⲭⲟⲟ word at {22} are not constrained by the lexicon or by the visible surroundings.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5207,
+      "chapter": 112,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲟⲥ",
+      "basis": "Editor restoration; final letters of ⲕⲟⲥⲙⲟⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲥ",
+      "basis": "Editor restoration; ⲛ̄-ⲧⲥⲁⲣⲝ̄ 'of the flesh', genitive + feminine article + Greek loan ⲥⲁⲣⲝ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲁⲓ̈",
+      "basis": "3-char demonstrative anchoring 'these things of the flesh' before the verb of producing/becoming; matches the reading's 'whatever the self produces in the natural'. Plausible but not strongly constrained.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 3,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ϣⲱⲡ",
+      "basis": "3 chars ending in visible ⲡ; verb ϣⲱⲡ 'come to be, exist' fits the participial sense 'which come to be today on the face of the earth' (cf. the reading's 'whatever rises up today on the face of the earth'). Letter-count exact, but other 3-char ⲡ-final verbs cannot be excluded.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 4,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char tail at end of clause; could be a connective like ⲁⲩⲱ or a subject-of-future like ⲥⲉⲛⲁ leading into the next line, but no anchor fixes it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 5,
+      "section": 5209,
+      "chapter": 112,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char opening before ⲁⲃⲁⲗ ⲍⲙ̄ 'forth from'; expected verb of motion (e.g. ⲉⲩⲉⲓ 'they come') but no trace constrains the choice.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 6,
+      "section": 5209,
+      "chapter": 112,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char noun ending in visible ⲗⲉ, the thing 'which is exceedingly great' that the productions come forth from. ⲕⲗⲟⲟⲗⲉ 'cloud' fits letter-count but does not match the 'exceeding' modifier; no other lexicon entry ending -ⲗⲉ is supported by context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 7,
+      "section": 5210,
+      "chapter": 112,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ ⲛ",
+      "basis": "Editor restoration; ⲙⲛ̄ ⲛⲉⲩⲉⲣⲏⲩ 'with one another'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 5210,
+      "chapter": 112,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Editor restoration; ⲙ of ⲙⲛ̄ 'with' between ⲟⲩⲉ … ⲟⲩⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 5210,
+      "chapter": 112,
+      "line": 15,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲱ",
+      "basis": "3-char connective at end of clause leading into the following 'they come not up to the height'; ⲁⲩⲱ 'and' is the standard transition and fits the count.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 10,
+      "section": 5211,
+      "chapter": 112,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲉⲛⲏⲩ ⲉⲛ",
+      "basis": "Translator restoration; exact parallel construction in the next clause: ⲥⲉⲛⲏⲩ ⲉⲛ ⲁⲍⲣⲛ̄ 'they come not up to'. Begins the dimensional series.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5211,
+      "chapter": 112,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char tail after 'of one of these mountains'; could be a deictic (ⲛⲁⲓ̈) or particle, but no anchor.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 12,
+      "section": 5212,
+      "chapter": 112,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁⲧⲁ",
+      "basis": "Editor restoration; ⲕⲁⲧⲁ ⲡⲉϩⲭⲓⲥⲉ 'according to its height' opens the iterated ⲕⲁⲧⲁ-clauses.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 5213,
+      "chapter": 112,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉϩ",
+      "basis": "Editor restoration; ⲧⲉϩ-ⲟⲩⲉϣⲥ̄ⲥⲉ 'its breadth' continuing the dimensional series.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 5213,
+      "chapter": 112,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲧⲉ",
+      "basis": "Editor restoration; ⲟⲩⲧⲉ 'nor' matching the iterated negative-disjunctive structure of the dimensional series.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 5214,
+      "chapter": 112,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡ",
+      "basis": "Editor restoration; ⲁ-ⲡϣⲓⲭⲍϥ̄ 'unto its depth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 5214,
+      "chapter": 112,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗⲗⲁ ⲡ",
+      "basis": "Editor restoration; ⲁⲗⲗⲁ ⲡ- 'but the' opening the next clause.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 5215,
+      "chapter": 112,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲉ",
+      "basis": "Editor restoration; ⲟⲩⲉ ⲡⲟⲩⲉ 'each one'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 5215,
+      "chapter": 112,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃ",
+      "basis": "Editor restoration; final letters of ⲡⲟⲩⲛⲁⲃ 'their great one' (Lyc ⲛⲁⲃ = Sah. ⲛⲟϭ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap before visible ⲟⲩⲁⲡ; expected verb of gathering/coming-into, but no secure parallel.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 20,
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap between ⲟⲩⲁⲡ and ⲁⲩⲑⲁⲗⲁⲥⲥⲁ; could be a particle but unconstrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 21,
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap after ⲉ before partial ⲭⲟⲟ; no anchor.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 22,
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap with partial ⲭⲟⲟ visible; verb-stem cannot be fixed without further trace.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 5217,
+      "chapter": 112,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲑⲁ",
+      "basis": "Editor restoration; ⲑⲁⲗⲁⲥⲥⲁ 'sea', continuing the sea-image from the previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 5217,
+      "chapter": 112,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor restoration; ⲉ in ⲟⲉⲧⲉ (Lyc. for ⲛ̄ⲑⲉ 'in the manner').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 5217,
+      "chapter": 112,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char tail describing the manner of swallowing; large gap with no surviving anchor.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 26,
+      "section": 5218,
+      "chapter": 112,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor restoration; completes ⲁⲭⲛ̄ 'without' (Lyc. ⲁϫⲛ̄), parallel to the surrounding ⲁⲭⲛ̄ phrases.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 5219,
+      "chapter": 112,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Editor restoration; completes ⲟⲩⲥⲓⲁ (Greek οὐσία) begun by ⲧ at end of previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 5220,
+      "chapter": 112,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲁⲩⲱ",
+      "basis": "Completes qualitative ⲟⲩⲁⲃⲉ 'holy' and opens the next clause with ⲁⲩⲱ 'and'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 5221,
+      "chapter": 112,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "basis": "Perfect-tense prefix ⲁ⸗ + 3pl ⲩ for ⲁⲩ-ⲃⲗⲁⲥⲫⲏⲙⲓ 'they blasphemed'; supplies the subject of the verb against the Sophia.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 5222,
+      "chapter": 112,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃ",
+      "basis": "Editor restoration; final ⲃ of ⲍⲱⲃ 'matter, work', ϯⲟⲩ ⲛⲛⲁⲃ ⲛ̄ⲍⲱⲃ 'five great matters'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 5223,
+      "chapter": 112,
+      "line": 68,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡϣⲁⲣⲧ̄",
+      "basis": "Editor restoration; Lyc. ordinal 'the first', opens the enumeration of the five things made known.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 5223,
+      "chapter": 112,
+      "line": 68,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor restoration; final ⲉ completing ⲡⲟⲩⲁⲓⲛⲉ 'the Light'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 5224,
+      "chapter": 112,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙ̄",
+      "basis": "Editor restoration; Lyc. article ⲡ̄- + ordinal ⲙⲁⲍⲥⲛⲉⲩ 'the second'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 5224,
+      "chapter": 112,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲙⲛⲧ",
+      "basis": "Editor restoration; ⲛ̄-ⲧⲙⲛ̄ⲧ- joining to ⲛⲁⲃ at start of next line to form ⲧⲙⲛ̄ⲧⲛⲁⲃ 'the Greatness' — i.e. 'the aeons of the Greatness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 5225,
+      "chapter": 112,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲃ",
+      "basis": "Editor restoration; continues 'Greatness' from previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 5225,
+      "chapter": 112,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration; article ⲧ- joining to ⲍⲉ ⲙ at start of next line to form ⲧⲍⲉ ⲙ̄ⲡⲕⲉⲕⲉ 'the manner of the Darkness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 5226,
+      "chapter": 112,
+      "line": 71,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲉ ⲙ",
+      "basis": "Editor restoration; continues 'manner of the Darkness' from previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 5226,
+      "chapter": 112,
+      "line": 71,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor restoration; internal ⲱ completing ⲍⲱⲱⲥ = Lyc. ϩⲱⲱⲥ 'itself, also'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 5227,
+      "chapter": 112,
+      "line": 72,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲍ",
+      "basis": "Editor restoration; Lyc. ordinal 'the third', opening the third item.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 5227,
+      "chapter": 112,
+      "line": 72,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲃ",
+      "basis": "Editor restoration; completes ⲧⲙⲛ̄ⲧⲛⲁⲃ 'the Greatness' — here 'the Greatness of the Light' across the line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 5228,
+      "chapter": 112,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲟ",
+      "basis": "Editor restoration; ⲛ̄ⲟⲩⲁⲓⲛⲉ 'of light', completing 'the Greatness of the Light'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 42,
+      "section": 5228,
+      "chapter": 112,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Editor restoration; final ⲙ of ⲧⲃⲁⲙ (Lyc. for ⲧϭⲟⲙ) 'the power', joining to ⲙⲡ at start of next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 5229,
+      "chapter": 112,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡ",
+      "basis": "Editor restoration; genitive ⲙ̄- + article ⲡ-, 'of the (Darkness)'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 5231,
+      "chapter": 112,
+      "line": 76,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲥⲱⲙⲁ",
+      "basis": "4-char noun explicated by the following ⲉⲧⲉ ⲧⲥⲁⲣⲝ̄ ⲧⲉ 'which is the flesh'; ⲥⲱⲙⲁ 'body' is the standard corpus-internal pairing 'body, which is the flesh' (cf. body-anatomy lexicon: 'the form of love and wisdom in ultimates'). The previous line's ⲡⲙⲟⲩ ⲛⲧⲟⲩ + ⲥⲱⲙⲁ yields 'the death of their body'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 45,
+      "section": 5232,
+      "chapter": 112,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "basis": "Editor restoration; 3pl perfect prefix ⲁⲩ- beginning the verb ⲁⲩⲥⲱⲍⲡ 'they were sealed'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 5232,
+      "chapter": 112,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor restoration; internal ⲱ between ⲥ and ⲍⲡ forming ⲥⲱⲍⲡ 'shut up, sealed' (Lyc. = Sah. ⲥⲱⲡⲉ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 5236,
+      "chapter": 112,
+      "line": 81,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃ",
+      "basis": "Editor restoration; internal ⲃ completing the habitual ϣⲁⲩⲃⲱⲃⲥ 'they habitually cover'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 5236,
+      "chapter": 112,
+      "line": 81,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲅ",
+      "basis": "Editor restoration; internal ⲅ completing the Greek loanword ⲡⲁⲅⲁⲫⲟⲛ = ἀγαθόν 'the Good'.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5207,
+      "chapter": 112,
+      "line": 11,
+      "core_english": "For if one of all these five whole cosmoses"
+    },
+    {
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "core_english": "of the flesh, {0} that {1} today upon the faces of the earth, {2}"
+    },
+    {
+      "section": 5209,
+      "chapter": 112,
+      "line": 13,
+      "core_english": "{3} forth from {4} which is exceedingly great, they shall be humbled"
+    },
+    {
+      "section": 5210,
+      "chapter": 112,
+      "line": 15,
+      "core_english": "with one another, one with one, upon this whole earth of theirs, and"
+    },
+    {
+      "section": 5211,
+      "chapter": 112,
+      "line": 16,
+      "core_english": "they come not up to the height, against the stature of one of these mountains, {5}"
+    },
+    {
+      "section": 5212,
+      "chapter": 112,
+      "line": 17,
+      "core_english": "according to its height; nor do they come up to their breadth according to"
+    },
+    {
+      "section": 5213,
+      "chapter": 112,
+      "line": 18,
+      "core_english": "its breadth; nor unto its length according to its length, nor"
+    },
+    {
+      "section": 5214,
+      "chapter": 112,
+      "line": 19,
+      "core_english": "unto its depth according to its depth. Not only this, but the"
+    },
+    {
+      "section": 5215,
+      "chapter": 112,
+      "line": 20,
+      "core_english": "each one of all of them, from their small unto their great"
+    },
+    {
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "core_english": "{6} unto a single sea,"
+    },
+    {
+      "section": 5217,
+      "chapter": 112,
+      "line": 23,
+      "core_english": "that sea, that they may be swallowed up in the manner {7}"
+    },
+    {
+      "section": 5218,
+      "chapter": 112,
+      "line": 33,
+      "core_english": "without his power that bears the All, nor without the"
+    },
+    {
+      "section": 5219,
+      "chapter": 112,
+      "line": 34,
+      "core_english": "substance that is manifest forth, which gives sign for the All"
+    },
+    {
+      "section": 5220,
+      "chapter": 112,
+      "line": 41,
+      "core_english": ", without the power that bears the All, without his holy light; and"
+    },
+    {
+      "section": 5221,
+      "chapter": 112,
+      "line": 42,
+      "core_english": "they have blasphemed against his Sophia who is glorious, while bringing forth"
+    },
+    {
+      "section": 5222,
+      "chapter": 112,
+      "line": 67,
+      "core_english": "And he revealed to them five great matters."
+    },
+    {
+      "section": 5223,
+      "chapter": 112,
+      "line": 68,
+      "core_english": "The first: that he informed them that they belong to the kind of the Light."
+    },
+    {
+      "section": 5224,
+      "chapter": 112,
+      "line": 69,
+      "core_english": "The second: that he loosened forth for them concerning the aeons of the Great-"
+    },
+    {
+      "section": 5225,
+      "chapter": 112,
+      "line": 70,
+      "core_english": "-ness, how they exist, and he taught them concerning the"
+    },
+    {
+      "section": 5226,
+      "chapter": 112,
+      "line": 71,
+      "core_english": "manner of the Darkness, the manner also in which it itself exists."
+    },
+    {
+      "section": 5227,
+      "chapter": 112,
+      "line": 72,
+      "core_english": "The third time, he proclaimed to them concerning the Great-"
+    },
+    {
+      "section": 5228,
+      "chapter": 112,
+      "line": 73,
+      "core_english": "-ness of light, what is the manner in which it put to shame the pow-"
+    },
+    {
+      "section": 5229,
+      "chapter": 112,
+      "line": 74,
+      "core_english": "-er of the Darkness, prevailing over it."
+    },
+    {
+      "section": 5231,
+      "chapter": 112,
+      "line": 76,
+      "core_english": "body, which is the flesh, until they reach there, and he brings"
+    },
+    {
+      "section": 5232,
+      "chapter": 112,
+      "line": 77,
+      "core_english": "them forth out of the gate of Amente which is at the upper side; that they were sealed"
+    },
+    {
+      "section": 5236,
+      "chapter": 112,
+      "line": 81,
+      "core_english": "habitually cover upon the Good and upon the righteousness which"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "proposed_english": "these things",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "low",
+      "basis": "ⲛⲁⲓ̈ as demonstrative subject for what is produced of the flesh; supplies the antecedent of the relative."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "proposed_english": "come to be",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "low",
+      "basis": "Translates ϣⲱⲡ 'come to be, exist' — the productions of the flesh appearing on the face of the earth, matching the reading's 'whatever rises up today on the face of the earth'."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5208,
+      "chapter": 112,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char tail at end of clause; cannot be fixed."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5208,
+      "chapter": 112,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char opening verb of motion before 'forth from' — likely 'they come' but unconstrained."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5209,
+      "chapter": 112,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "unrestorable",
+      "basis": "Noun ending in -ⲗⲉ that 'exceeds'; the lexicon yields no certain match."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 5211,
+      "chapter": 112,
+      "line": 16,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char tail after 'these mountains'; no anchor."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 5216,
+      "chapter": 112,
+      "line": 21,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        19,
+        20,
+        21,
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "Cluster of four small lacunae forming a single damaged clause about how the productions are gathered/come together; only the partial trace ⲭⲟⲟ survives, and the verb-stem cannot be fixed."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 5217,
+      "chapter": 112,
+      "line": 23,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "unrestorable",
+      "basis": "9-char description of the manner of swallowing; large gap with no surviving anchor."
+    }
+  ]
+}

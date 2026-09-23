@@ -1,0 +1,2221 @@
+{
+  "cluster": "036",
+  "source_clusters_dir": "output\\projects\\kephalaia_ocr\\clusters_shape_padded_split_bodycrop_corrected_k240",
+  "mode": "all",
+  "n_subclusters": 16,
+  "geometry_weight": 2.0,
+  "pixel_weight": 1.0,
+  "profile_weight": 0.75,
+  "feature_mode": "shape",
+  "preserve_aspect": true,
+  "n_items": 1327,
+  "summary": [
+    {
+      "subcluster": 0,
+      "size": 121,
+      "width_p50": 7.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "193",
+          "line_index": 15,
+          "blob_id": 15,
+          "warped_bbox": [
+            635,
+            12,
+            641,
+            43
+          ]
+        },
+        {
+          "page": "172",
+          "line_index": 25,
+          "blob_id": 15,
+          "warped_bbox": [
+            415,
+            13,
+            421,
+            44
+          ]
+        },
+        {
+          "page": "049",
+          "line_index": 26,
+          "blob_id": 14,
+          "warped_bbox": [
+            298,
+            16,
+            304,
+            47
+          ]
+        },
+        {
+          "page": "042",
+          "line_index": 29,
+          "blob_id": 12,
+          "warped_bbox": [
+            88,
+            12,
+            94,
+            43
+          ]
+        },
+        {
+          "page": "218",
+          "line_index": 23,
+          "blob_id": 10,
+          "warped_bbox": [
+            582,
+            14,
+            588,
+            45
+          ]
+        },
+        {
+          "page": "019",
+          "line_index": 33,
+          "blob_id": 13,
+          "warped_bbox": [
+            440,
+            17,
+            446,
+            48
+          ]
+        },
+        {
+          "page": "056",
+          "line_index": 19,
+          "blob_id": 9,
+          "warped_bbox": [
+            469,
+            12,
+            475,
+            43
+          ]
+        },
+        {
+          "page": "013",
+          "line_index": 30,
+          "blob_id": 13,
+          "warped_bbox": [
+            619,
+            13,
+            625,
+            44
+          ]
+        },
+        {
+          "page": "160",
+          "line_index": 0,
+          "blob_id": 9,
+          "warped_bbox": [
+            758,
+            12,
+            764,
+            43
+          ]
+        },
+        {
+          "page": "094",
+          "line_index": 4,
+          "blob_id": 10,
+          "warped_bbox": [
+            729,
+            14,
+            735,
+            45
+          ]
+        },
+        {
+          "page": "204",
+          "line_index": 4,
+          "blob_id": 10,
+          "warped_bbox": [
+            325,
+            13,
+            331,
+            44
+          ]
+        },
+        {
+          "page": "217",
+          "line_index": 30,
+          "blob_id": 11,
+          "warped_bbox": [
+            636,
+            15,
+            642,
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 1,
+      "size": 187,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "188",
+          "line_index": 20,
+          "blob_id": 12,
+          "warped_bbox": [
+            267,
+            18,
+            271,
+            44
+          ]
+        },
+        {
+          "page": "120",
+          "line_index": 0,
+          "blob_id": 2,
+          "warped_bbox": [
+            31,
+            19,
+            35,
+            45
+          ]
+        },
+        {
+          "page": "102",
+          "line_index": 30,
+          "blob_id": 18,
+          "warped_bbox": [
+            556,
+            18,
+            560,
+            45
+          ]
+        },
+        {
+          "page": "085",
+          "line_index": 36,
+          "blob_id": 3,
+          "warped_bbox": [
+            65,
+            18,
+            69,
+            44
+          ]
+        },
+        {
+          "page": "222",
+          "line_index": 3,
+          "blob_id": 9,
+          "warped_bbox": [
+            543,
+            16,
+            547,
+            42
+          ]
+        },
+        {
+          "page": "022",
+          "line_index": 28,
+          "blob_id": 11,
+          "warped_bbox": [
+            564,
+            19,
+            568,
+            45
+          ]
+        },
+        {
+          "page": "100",
+          "line_index": 13,
+          "blob_id": 10,
+          "warped_bbox": [
+            414,
+            17,
+            418,
+            44
+          ]
+        },
+        {
+          "page": "078",
+          "line_index": 19,
+          "blob_id": 16,
+          "warped_bbox": [
+            166,
+            21,
+            170,
+            47
+          ]
+        },
+        {
+          "page": "107",
+          "line_index": 4,
+          "blob_id": 14,
+          "warped_bbox": [
+            179,
+            15,
+            183,
+            41
+          ]
+        },
+        {
+          "page": "098",
+          "line_index": 29,
+          "blob_id": 11,
+          "warped_bbox": [
+            79,
+            16,
+            83,
+            42
+          ]
+        },
+        {
+          "page": "042",
+          "line_index": 18,
+          "blob_id": 5,
+          "warped_bbox": [
+            337,
+            17,
+            341,
+            43
+          ]
+        },
+        {
+          "page": "170",
+          "line_index": 13,
+          "blob_id": 12,
+          "warped_bbox": [
+            507,
+            17,
+            511,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 2,
+      "size": 34,
+      "width_p50": 8.0,
+      "height_p50": 25.0,
+      "nearest_samples": [
+        {
+          "page": "223",
+          "line_index": 38,
+          "blob_id": 48,
+          "warped_bbox": [
+            137,
+            25,
+            143,
+            51
+          ]
+        },
+        {
+          "page": "126",
+          "line_index": 24,
+          "blob_id": 8,
+          "warped_bbox": [
+            650,
+            13,
+            655,
+            37
+          ]
+        },
+        {
+          "page": "236",
+          "line_index": 5,
+          "blob_id": 5,
+          "warped_bbox": [
+            242,
+            12,
+            249,
+            36
+          ]
+        },
+        {
+          "page": "158",
+          "line_index": 6,
+          "blob_id": 11,
+          "warped_bbox": [
+            547,
+            12,
+            553,
+            36
+          ]
+        },
+        {
+          "page": "010",
+          "line_index": 25,
+          "blob_id": 14,
+          "warped_bbox": [
+            130,
+            13,
+            135,
+            37
+          ]
+        },
+        {
+          "page": "051",
+          "line_index": 24,
+          "blob_id": 4,
+          "warped_bbox": [
+            489,
+            12,
+            496,
+            36
+          ]
+        },
+        {
+          "page": "172",
+          "line_index": 9,
+          "blob_id": 7,
+          "warped_bbox": [
+            623,
+            11,
+            630,
+            35
+          ]
+        },
+        {
+          "page": "048",
+          "line_index": 29,
+          "blob_id": 15,
+          "warped_bbox": [
+            39,
+            16,
+            44,
+            39
+          ]
+        },
+        {
+          "page": "192",
+          "line_index": 13,
+          "blob_id": 6,
+          "warped_bbox": [
+            526,
+            11,
+            533,
+            35
+          ]
+        },
+        {
+          "page": "103",
+          "line_index": 28,
+          "blob_id": 12,
+          "warped_bbox": [
+            203,
+            12,
+            210,
+            37
+          ]
+        },
+        {
+          "page": "063",
+          "line_index": 14,
+          "blob_id": 15,
+          "warped_bbox": [
+            710,
+            12,
+            715,
+            36
+          ]
+        },
+        {
+          "page": "126",
+          "line_index": 28,
+          "blob_id": 10,
+          "warped_bbox": [
+            288,
+            14,
+            293,
+            37
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 3,
+      "size": 67,
+      "width_p50": 7.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "199",
+          "line_index": 28,
+          "blob_id": 8,
+          "warped_bbox": [
+            259,
+            14,
+            265,
+            45
+          ]
+        },
+        {
+          "page": "102",
+          "line_index": 25,
+          "blob_id": 15,
+          "warped_bbox": [
+            577,
+            14,
+            583,
+            45
+          ]
+        },
+        {
+          "page": "219",
+          "line_index": 12,
+          "blob_id": 14,
+          "warped_bbox": [
+            545,
+            14,
+            551,
+            45
+          ]
+        },
+        {
+          "page": "199",
+          "line_index": 29,
+          "blob_id": 11,
+          "warped_bbox": [
+            278,
+            15,
+            284,
+            46
+          ]
+        },
+        {
+          "page": "166",
+          "line_index": 20,
+          "blob_id": 7,
+          "warped_bbox": [
+            579,
+            12,
+            585,
+            43
+          ]
+        },
+        {
+          "page": "038",
+          "line_index": 32,
+          "blob_id": 15,
+          "warped_bbox": [
+            655,
+            15,
+            661,
+            46
+          ]
+        },
+        {
+          "page": "079",
+          "line_index": 20,
+          "blob_id": 15,
+          "warped_bbox": [
+            95,
+            12,
+            101,
+            43
+          ]
+        },
+        {
+          "page": "211",
+          "line_index": 15,
+          "blob_id": 14,
+          "warped_bbox": [
+            780,
+            13,
+            786,
+            44
+          ]
+        },
+        {
+          "page": "209",
+          "line_index": 15,
+          "blob_id": 11,
+          "warped_bbox": [
+            769,
+            13,
+            775,
+            44
+          ]
+        },
+        {
+          "page": "198",
+          "line_index": 23,
+          "blob_id": 8,
+          "warped_bbox": [
+            227,
+            12,
+            233,
+            43
+          ]
+        },
+        {
+          "page": "188",
+          "line_index": 27,
+          "blob_id": 10,
+          "warped_bbox": [
+            165,
+            12,
+            171,
+            43
+          ]
+        },
+        {
+          "page": "146",
+          "line_index": 29,
+          "blob_id": 8,
+          "warped_bbox": [
+            87,
+            16,
+            93,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 4,
+      "size": 36,
+      "width_p50": 8.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "228",
+          "line_index": 26,
+          "blob_id": 8,
+          "warped_bbox": [
+            181,
+            12,
+            188,
+            43
+          ]
+        },
+        {
+          "page": "175",
+          "line_index": 6,
+          "blob_id": 8,
+          "warped_bbox": [
+            471,
+            11,
+            478,
+            42
+          ]
+        },
+        {
+          "page": "173",
+          "line_index": 27,
+          "blob_id": 7,
+          "warped_bbox": [
+            411,
+            12,
+            418,
+            43
+          ]
+        },
+        {
+          "page": "073",
+          "line_index": 32,
+          "blob_id": 11,
+          "warped_bbox": [
+            616,
+            14,
+            623,
+            45
+          ]
+        },
+        {
+          "page": "137",
+          "line_index": 1,
+          "blob_id": 5,
+          "warped_bbox": [
+            99,
+            13,
+            106,
+            44
+          ]
+        },
+        {
+          "page": "127",
+          "line_index": 26,
+          "blob_id": 14,
+          "warped_bbox": [
+            377,
+            12,
+            384,
+            43
+          ]
+        },
+        {
+          "page": "273",
+          "line_index": 21,
+          "blob_id": 6,
+          "warped_bbox": [
+            108,
+            11,
+            115,
+            43
+          ]
+        },
+        {
+          "page": "139",
+          "line_index": 0,
+          "blob_id": 3,
+          "warped_bbox": [
+            353,
+            12,
+            360,
+            43
+          ]
+        },
+        {
+          "page": "286",
+          "line_index": 19,
+          "blob_id": 7,
+          "warped_bbox": [
+            45,
+            13,
+            52,
+            45
+          ]
+        },
+        {
+          "page": "174",
+          "line_index": 0,
+          "blob_id": 2,
+          "warped_bbox": [
+            71,
+            14,
+            78,
+            45
+          ]
+        },
+        {
+          "page": "195",
+          "line_index": 30,
+          "blob_id": 9,
+          "warped_bbox": [
+            900,
+            16,
+            907,
+            47
+          ]
+        },
+        {
+          "page": "258",
+          "line_index": 12,
+          "blob_id": 9,
+          "warped_bbox": [
+            621,
+            15,
+            628,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 5,
+      "size": 91,
+      "width_p50": 6.0,
+      "height_p50": 40.0,
+      "nearest_samples": [
+        {
+          "page": "181",
+          "line_index": 9,
+          "blob_id": 12,
+          "warped_bbox": [
+            8,
+            10,
+            13,
+            50
+          ]
+        },
+        {
+          "page": "132",
+          "line_index": 10,
+          "blob_id": 5,
+          "warped_bbox": [
+            447,
+            10,
+            452,
+            49
+          ]
+        },
+        {
+          "page": "197",
+          "line_index": 9,
+          "blob_id": 7,
+          "warped_bbox": [
+            325,
+            10,
+            330,
+            50
+          ]
+        },
+        {
+          "page": "139",
+          "line_index": 11,
+          "blob_id": 5,
+          "warped_bbox": [
+            215,
+            10,
+            220,
+            49
+          ]
+        },
+        {
+          "page": "200",
+          "line_index": 1,
+          "blob_id": 11,
+          "warped_bbox": [
+            581,
+            11,
+            586,
+            51
+          ]
+        },
+        {
+          "page": "030",
+          "line_index": 27,
+          "blob_id": 8,
+          "warped_bbox": [
+            499,
+            11,
+            504,
+            51
+          ]
+        },
+        {
+          "page": "288",
+          "line_index": 28,
+          "blob_id": 9,
+          "warped_bbox": [
+            534,
+            11,
+            539,
+            50
+          ]
+        },
+        {
+          "page": "225",
+          "line_index": 24,
+          "blob_id": 5,
+          "warped_bbox": [
+            8,
+            10,
+            13,
+            50
+          ]
+        },
+        {
+          "page": "075",
+          "line_index": 3,
+          "blob_id": 10,
+          "warped_bbox": [
+            193,
+            11,
+            198,
+            51
+          ]
+        },
+        {
+          "page": "087",
+          "line_index": 26,
+          "blob_id": 14,
+          "warped_bbox": [
+            365,
+            12,
+            370,
+            51
+          ]
+        },
+        {
+          "page": "145",
+          "line_index": 30,
+          "blob_id": 6,
+          "warped_bbox": [
+            8,
+            10,
+            13,
+            50
+          ]
+        },
+        {
+          "page": "145",
+          "line_index": 30,
+          "blob_id": 8,
+          "warped_bbox": [
+            259,
+            10,
+            264,
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 6,
+      "size": 77,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "065",
+          "line_index": 6,
+          "blob_id": 4,
+          "warped_bbox": [
+            183,
+            17,
+            187,
+            43
+          ]
+        },
+        {
+          "page": "034",
+          "line_index": 4,
+          "blob_id": 9,
+          "warped_bbox": [
+            306,
+            17,
+            310,
+            43
+          ]
+        },
+        {
+          "page": "049",
+          "line_index": 5,
+          "blob_id": 10,
+          "warped_bbox": [
+            801,
+            16,
+            805,
+            43
+          ]
+        },
+        {
+          "page": "091",
+          "line_index": 31,
+          "blob_id": 12,
+          "warped_bbox": [
+            93,
+            13,
+            97,
+            40
+          ]
+        },
+        {
+          "page": "241",
+          "line_index": 1,
+          "blob_id": 17,
+          "warped_bbox": [
+            701,
+            17,
+            705,
+            43
+          ]
+        },
+        {
+          "page": "069",
+          "line_index": 3,
+          "blob_id": 9,
+          "warped_bbox": [
+            130,
+            15,
+            134,
+            42
+          ]
+        },
+        {
+          "page": "060",
+          "line_index": 16,
+          "blob_id": 15,
+          "warped_bbox": [
+            337,
+            17,
+            341,
+            43
+          ]
+        },
+        {
+          "page": "051",
+          "line_index": 14,
+          "blob_id": 19,
+          "warped_bbox": [
+            309,
+            19,
+            313,
+            45
+          ]
+        },
+        {
+          "page": "085",
+          "line_index": 26,
+          "blob_id": 21,
+          "warped_bbox": [
+            160,
+            18,
+            164,
+            44
+          ]
+        },
+        {
+          "page": "051",
+          "line_index": 12,
+          "blob_id": 15,
+          "warped_bbox": [
+            426,
+            18,
+            430,
+            44
+          ]
+        },
+        {
+          "page": "016",
+          "line_index": 0,
+          "blob_id": 12,
+          "warped_bbox": [
+            707,
+            18,
+            711,
+            45
+          ]
+        },
+        {
+          "page": "076",
+          "line_index": 30,
+          "blob_id": 12,
+          "warped_bbox": [
+            99,
+            16,
+            103,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 7,
+      "size": 85,
+      "width_p50": 10.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "197",
+          "line_index": 22,
+          "blob_id": 5,
+          "warped_bbox": [
+            44,
+            10,
+            53,
+            41
+          ]
+        },
+        {
+          "page": "212",
+          "line_index": 28,
+          "blob_id": 11,
+          "warped_bbox": [
+            389,
+            15,
+            398,
+            46
+          ]
+        },
+        {
+          "page": "066",
+          "line_index": 36,
+          "blob_id": 4,
+          "warped_bbox": [
+            140,
+            9,
+            149,
+            40
+          ]
+        },
+        {
+          "page": "196",
+          "line_index": 28,
+          "blob_id": 15,
+          "warped_bbox": [
+            531,
+            14,
+            539,
+            45
+          ]
+        },
+        {
+          "page": "023",
+          "line_index": 3,
+          "blob_id": 10,
+          "warped_bbox": [
+            485,
+            12,
+            494,
+            43
+          ]
+        },
+        {
+          "page": "105",
+          "line_index": 4,
+          "blob_id": 5,
+          "warped_bbox": [
+            433,
+            12,
+            442,
+            43
+          ]
+        },
+        {
+          "page": "210",
+          "line_index": 11,
+          "blob_id": 8,
+          "warped_bbox": [
+            192,
+            13,
+            201,
+            44
+          ]
+        },
+        {
+          "page": "113",
+          "line_index": 24,
+          "blob_id": 7,
+          "warped_bbox": [
+            344,
+            15,
+            353,
+            46
+          ]
+        },
+        {
+          "page": "152",
+          "line_index": 30,
+          "blob_id": 8,
+          "warped_bbox": [
+            308,
+            13,
+            317,
+            44
+          ]
+        },
+        {
+          "page": "246",
+          "line_index": 6,
+          "blob_id": 8,
+          "warped_bbox": [
+            419,
+            11,
+            428,
+            42
+          ]
+        },
+        {
+          "page": "147",
+          "line_index": 12,
+          "blob_id": 5,
+          "warped_bbox": [
+            354,
+            13,
+            363,
+            44
+          ]
+        },
+        {
+          "page": "246",
+          "line_index": 5,
+          "blob_id": 11,
+          "warped_bbox": [
+            106,
+            12,
+            114,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 8,
+      "size": 9,
+      "width_p50": 17.0,
+      "height_p50": 42.0,
+      "nearest_samples": [
+        {
+          "page": "250",
+          "line_index": 17,
+          "blob_id": 3,
+          "warped_bbox": [
+            214,
+            11,
+            230,
+            52
+          ]
+        },
+        {
+          "page": "271",
+          "line_index": 22,
+          "blob_id": 9,
+          "warped_bbox": [
+            612,
+            12,
+            628,
+            53
+          ]
+        },
+        {
+          "page": "174",
+          "line_index": 19,
+          "blob_id": 6,
+          "warped_bbox": [
+            698,
+            12,
+            714,
+            53
+          ]
+        },
+        {
+          "page": "274",
+          "line_index": 23,
+          "blob_id": 12,
+          "warped_bbox": [
+            45,
+            14,
+            61,
+            55
+          ]
+        },
+        {
+          "page": "248",
+          "line_index": 23,
+          "blob_id": 7,
+          "warped_bbox": [
+            304,
+            13,
+            322,
+            53
+          ]
+        },
+        {
+          "page": "261",
+          "line_index": 27,
+          "blob_id": 8,
+          "warped_bbox": [
+            243,
+            9,
+            259,
+            51
+          ]
+        },
+        {
+          "page": "208",
+          "line_index": 33,
+          "blob_id": 6,
+          "warped_bbox": [
+            321,
+            16,
+            337,
+            59
+          ]
+        },
+        {
+          "page": "265",
+          "line_index": 30,
+          "blob_id": 14,
+          "warped_bbox": [
+            695,
+            12,
+            708,
+            52
+          ]
+        },
+        {
+          "page": "166",
+          "line_index": 32,
+          "blob_id": 23,
+          "warped_bbox": [
+            224,
+            32,
+            240,
+            59
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 9,
+      "size": 145,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "155",
+          "line_index": 3,
+          "blob_id": 8,
+          "warped_bbox": [
+            540,
+            16,
+            544,
+            43
+          ]
+        },
+        {
+          "page": "015",
+          "line_index": 6,
+          "blob_id": 12,
+          "warped_bbox": [
+            175,
+            20,
+            179,
+            47
+          ]
+        },
+        {
+          "page": "116",
+          "line_index": 7,
+          "blob_id": 9,
+          "warped_bbox": [
+            50,
+            18,
+            54,
+            44
+          ]
+        },
+        {
+          "page": "200",
+          "line_index": 15,
+          "blob_id": 8,
+          "warped_bbox": [
+            537,
+            16,
+            541,
+            42
+          ]
+        },
+        {
+          "page": "138",
+          "line_index": 23,
+          "blob_id": 12,
+          "warped_bbox": [
+            97,
+            18,
+            101,
+            45
+          ]
+        },
+        {
+          "page": "053",
+          "line_index": 12,
+          "blob_id": 17,
+          "warped_bbox": [
+            375,
+            17,
+            379,
+            44
+          ]
+        },
+        {
+          "page": "047",
+          "line_index": 3,
+          "blob_id": 13,
+          "warped_bbox": [
+            628,
+            14,
+            632,
+            40
+          ]
+        },
+        {
+          "page": "093",
+          "line_index": 9,
+          "blob_id": 15,
+          "warped_bbox": [
+            470,
+            18,
+            474,
+            44
+          ]
+        },
+        {
+          "page": "122",
+          "line_index": 1,
+          "blob_id": 11,
+          "warped_bbox": [
+            655,
+            16,
+            659,
+            43
+          ]
+        },
+        {
+          "page": "252",
+          "line_index": 20,
+          "blob_id": 18,
+          "warped_bbox": [
+            548,
+            15,
+            552,
+            42
+          ]
+        },
+        {
+          "page": "054",
+          "line_index": 14,
+          "blob_id": 25,
+          "warped_bbox": [
+            280,
+            17,
+            284,
+            43
+          ]
+        },
+        {
+          "page": "160",
+          "line_index": 11,
+          "blob_id": 15,
+          "warped_bbox": [
+            311,
+            16,
+            315,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 10,
+      "size": 195,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "237",
+          "line_index": 17,
+          "blob_id": 14,
+          "warped_bbox": [
+            285,
+            15,
+            289,
+            42
+          ]
+        },
+        {
+          "page": "169",
+          "line_index": 3,
+          "blob_id": 11,
+          "warped_bbox": [
+            536,
+            15,
+            540,
+            42
+          ]
+        },
+        {
+          "page": "014",
+          "line_index": 7,
+          "blob_id": 16,
+          "warped_bbox": [
+            609,
+            17,
+            613,
+            43
+          ]
+        },
+        {
+          "page": "032",
+          "line_index": 23,
+          "blob_id": 22,
+          "warped_bbox": [
+            606,
+            17,
+            610,
+            43
+          ]
+        },
+        {
+          "page": "126",
+          "line_index": 14,
+          "blob_id": 14,
+          "warped_bbox": [
+            385,
+            17,
+            389,
+            43
+          ]
+        },
+        {
+          "page": "281",
+          "line_index": 5,
+          "blob_id": 17,
+          "warped_bbox": [
+            68,
+            19,
+            72,
+            45
+          ]
+        },
+        {
+          "page": "117",
+          "line_index": 25,
+          "blob_id": 19,
+          "warped_bbox": [
+            195,
+            16,
+            199,
+            43
+          ]
+        },
+        {
+          "page": "114",
+          "line_index": 28,
+          "blob_id": 16,
+          "warped_bbox": [
+            397,
+            19,
+            401,
+            46
+          ]
+        },
+        {
+          "page": "162",
+          "line_index": 26,
+          "blob_id": 17,
+          "warped_bbox": [
+            261,
+            19,
+            265,
+            45
+          ]
+        },
+        {
+          "page": "193",
+          "line_index": 16,
+          "blob_id": 12,
+          "warped_bbox": [
+            235,
+            19,
+            239,
+            46
+          ]
+        },
+        {
+          "page": "109",
+          "line_index": 1,
+          "blob_id": 12,
+          "warped_bbox": [
+            343,
+            15,
+            347,
+            42
+          ]
+        },
+        {
+          "page": "128",
+          "line_index": 0,
+          "blob_id": 4,
+          "warped_bbox": [
+            250,
+            17,
+            254,
+            43
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 11,
+      "size": 55,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "258",
+          "line_index": 31,
+          "blob_id": 12,
+          "warped_bbox": [
+            562,
+            16,
+            566,
+            44
+          ]
+        },
+        {
+          "page": "274",
+          "line_index": 16,
+          "blob_id": 9,
+          "warped_bbox": [
+            565,
+            17,
+            569,
+            45
+          ]
+        },
+        {
+          "page": "287",
+          "line_index": 6,
+          "blob_id": 14,
+          "warped_bbox": [
+            524,
+            16,
+            528,
+            43
+          ]
+        },
+        {
+          "page": "253",
+          "line_index": 18,
+          "blob_id": 11,
+          "warped_bbox": [
+            483,
+            17,
+            487,
+            44
+          ]
+        },
+        {
+          "page": "254",
+          "line_index": 6,
+          "blob_id": 18,
+          "warped_bbox": [
+            541,
+            15,
+            545,
+            42
+          ]
+        },
+        {
+          "page": "255",
+          "line_index": 29,
+          "blob_id": 22,
+          "warped_bbox": [
+            603,
+            19,
+            607,
+            46
+          ]
+        },
+        {
+          "page": "280",
+          "line_index": 12,
+          "blob_id": 15,
+          "warped_bbox": [
+            540,
+            20,
+            544,
+            47
+          ]
+        },
+        {
+          "page": "257",
+          "line_index": 21,
+          "blob_id": 9,
+          "warped_bbox": [
+            647,
+            18,
+            651,
+            45
+          ]
+        },
+        {
+          "page": "267",
+          "line_index": 6,
+          "blob_id": 14,
+          "warped_bbox": [
+            481,
+            15,
+            485,
+            43
+          ]
+        },
+        {
+          "page": "114",
+          "line_index": 24,
+          "blob_id": 13,
+          "warped_bbox": [
+            465,
+            18,
+            469,
+            45
+          ]
+        },
+        {
+          "page": "198",
+          "line_index": 7,
+          "blob_id": 12,
+          "warped_bbox": [
+            356,
+            19,
+            360,
+            45
+          ]
+        },
+        {
+          "page": "247",
+          "line_index": 21,
+          "blob_id": 7,
+          "warped_bbox": [
+            499,
+            17,
+            503,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 12,
+      "size": 31,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "121",
+          "line_index": 18,
+          "blob_id": 9,
+          "warped_bbox": [
+            330,
+            20,
+            334,
+            46
+          ]
+        },
+        {
+          "page": "192",
+          "line_index": 18,
+          "blob_id": 10,
+          "warped_bbox": [
+            405,
+            16,
+            409,
+            43
+          ]
+        },
+        {
+          "page": "141",
+          "line_index": 14,
+          "blob_id": 13,
+          "warped_bbox": [
+            654,
+            19,
+            658,
+            45
+          ]
+        },
+        {
+          "page": "254",
+          "line_index": 24,
+          "blob_id": 16,
+          "warped_bbox": [
+            462,
+            18,
+            466,
+            45
+          ]
+        },
+        {
+          "page": "230",
+          "line_index": 18,
+          "blob_id": 12,
+          "warped_bbox": [
+            682,
+            16,
+            686,
+            44
+          ]
+        },
+        {
+          "page": "207",
+          "line_index": 20,
+          "blob_id": 13,
+          "warped_bbox": [
+            334,
+            18,
+            338,
+            44
+          ]
+        },
+        {
+          "page": "036",
+          "line_index": 20,
+          "blob_id": 10,
+          "warped_bbox": [
+            400,
+            19,
+            404,
+            45
+          ]
+        },
+        {
+          "page": "193",
+          "line_index": 19,
+          "blob_id": 17,
+          "warped_bbox": [
+            293,
+            20,
+            297,
+            46
+          ]
+        },
+        {
+          "page": "107",
+          "line_index": 1,
+          "blob_id": 11,
+          "warped_bbox": [
+            297,
+            19,
+            301,
+            44
+          ]
+        },
+        {
+          "page": "268",
+          "line_index": 23,
+          "blob_id": 8,
+          "warped_bbox": [
+            598,
+            20,
+            602,
+            47
+          ]
+        },
+        {
+          "page": "212",
+          "line_index": 19,
+          "blob_id": 9,
+          "warped_bbox": [
+            502,
+            19,
+            506,
+            45
+          ]
+        },
+        {
+          "page": "125",
+          "line_index": 10,
+          "blob_id": 14,
+          "warped_bbox": [
+            219,
+            18,
+            223,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 13,
+      "size": 51,
+      "width_p50": 7.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "202",
+          "line_index": 27,
+          "blob_id": 14,
+          "warped_bbox": [
+            489,
+            13,
+            495,
+            44
+          ]
+        },
+        {
+          "page": "188",
+          "line_index": 24,
+          "blob_id": 9,
+          "warped_bbox": [
+            544,
+            13,
+            550,
+            44
+          ]
+        },
+        {
+          "page": "147",
+          "line_index": 2,
+          "blob_id": 9,
+          "warped_bbox": [
+            565,
+            14,
+            571,
+            44
+          ]
+        },
+        {
+          "page": "264",
+          "line_index": 18,
+          "blob_id": 8,
+          "warped_bbox": [
+            464,
+            15,
+            470,
+            47
+          ]
+        },
+        {
+          "page": "053",
+          "line_index": 6,
+          "blob_id": 12,
+          "warped_bbox": [
+            322,
+            12,
+            328,
+            43
+          ]
+        },
+        {
+          "page": "214",
+          "line_index": 5,
+          "blob_id": 8,
+          "warped_bbox": [
+            417,
+            11,
+            423,
+            42
+          ]
+        },
+        {
+          "page": "012",
+          "line_index": 9,
+          "blob_id": 9,
+          "warped_bbox": [
+            474,
+            12,
+            480,
+            43
+          ]
+        },
+        {
+          "page": "224",
+          "line_index": 19,
+          "blob_id": 7,
+          "warped_bbox": [
+            148,
+            13,
+            154,
+            44
+          ]
+        },
+        {
+          "page": "214",
+          "line_index": 12,
+          "blob_id": 8,
+          "warped_bbox": [
+            293,
+            13,
+            299,
+            44
+          ]
+        },
+        {
+          "page": "146",
+          "line_index": 3,
+          "blob_id": 4,
+          "warped_bbox": [
+            243,
+            13,
+            249,
+            44
+          ]
+        },
+        {
+          "page": "237",
+          "line_index": 9,
+          "blob_id": 5,
+          "warped_bbox": [
+            621,
+            13,
+            627,
+            43
+          ]
+        },
+        {
+          "page": "238",
+          "line_index": 0,
+          "blob_id": 5,
+          "warped_bbox": [
+            397,
+            13,
+            403,
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 14,
+      "size": 101,
+      "width_p50": 5.0,
+      "height_p50": 28.0,
+      "nearest_samples": [
+        {
+          "page": "120",
+          "line_index": 15,
+          "blob_id": 6,
+          "warped_bbox": [
+            308,
+            18,
+            312,
+            44
+          ]
+        },
+        {
+          "page": "169",
+          "line_index": 24,
+          "blob_id": 24,
+          "warped_bbox": [
+            265,
+            32,
+            269,
+            58
+          ]
+        },
+        {
+          "page": "053",
+          "line_index": 27,
+          "blob_id": 8,
+          "warped_bbox": [
+            320,
+            15,
+            324,
+            42
+          ]
+        },
+        {
+          "page": "139",
+          "line_index": 5,
+          "blob_id": 4,
+          "warped_bbox": [
+            565,
+            17,
+            569,
+            44
+          ]
+        },
+        {
+          "page": "182",
+          "line_index": 19,
+          "blob_id": 10,
+          "warped_bbox": [
+            636,
+            17,
+            640,
+            44
+          ]
+        },
+        {
+          "page": "076",
+          "line_index": 9,
+          "blob_id": 11,
+          "warped_bbox": [
+            449,
+            16,
+            453,
+            43
+          ]
+        },
+        {
+          "page": "073",
+          "line_index": 1,
+          "blob_id": 13,
+          "warped_bbox": [
+            299,
+            18,
+            303,
+            45
+          ]
+        },
+        {
+          "page": "012",
+          "line_index": 17,
+          "blob_id": 7,
+          "warped_bbox": [
+            261,
+            16,
+            265,
+            42
+          ]
+        },
+        {
+          "page": "130",
+          "line_index": 24,
+          "blob_id": 12,
+          "warped_bbox": [
+            678,
+            17,
+            682,
+            43
+          ]
+        },
+        {
+          "page": "203",
+          "line_index": 26,
+          "blob_id": 14,
+          "warped_bbox": [
+            124,
+            20,
+            128,
+            47
+          ]
+        },
+        {
+          "page": "239",
+          "line_index": 7,
+          "blob_id": 12,
+          "warped_bbox": [
+            566,
+            17,
+            570,
+            44
+          ]
+        },
+        {
+          "page": "032",
+          "line_index": 17,
+          "blob_id": 7,
+          "warped_bbox": [
+            273,
+            19,
+            277,
+            45
+          ]
+        }
+      ]
+    },
+    {
+      "subcluster": 15,
+      "size": 42,
+      "width_p50": 8.0,
+      "height_p50": 32.0,
+      "nearest_samples": [
+        {
+          "page": "076",
+          "line_index": 17,
+          "blob_id": 8,
+          "warped_bbox": [
+            785,
+            12,
+            792,
+            43
+          ]
+        },
+        {
+          "page": "188",
+          "line_index": 6,
+          "blob_id": 11,
+          "warped_bbox": [
+            35,
+            12,
+            42,
+            42
+          ]
+        },
+        {
+          "page": "153",
+          "line_index": 1,
+          "blob_id": 1,
+          "warped_bbox": [
+            321,
+            13,
+            329,
+            45
+          ]
+        },
+        {
+          "page": "144",
+          "line_index": 30,
+          "blob_id": 13,
+          "warped_bbox": [
+            73,
+            12,
+            81,
+            43
+          ]
+        },
+        {
+          "page": "290",
+          "line_index": 10,
+          "blob_id": 14,
+          "warped_bbox": [
+            713,
+            13,
+            720,
+            44
+          ]
+        },
+        {
+          "page": "144",
+          "line_index": 15,
+          "blob_id": 5,
+          "warped_bbox": [
+            603,
+            13,
+            611,
+            45
+          ]
+        },
+        {
+          "page": "142",
+          "line_index": 15,
+          "blob_id": 14,
+          "warped_bbox": [
+            778,
+            14,
+            785,
+            45
+          ]
+        },
+        {
+          "page": "255",
+          "line_index": 21,
+          "blob_id": 7,
+          "warped_bbox": [
+            145,
+            13,
+            152,
+            45
+          ]
+        },
+        {
+          "page": "280",
+          "line_index": 19,
+          "blob_id": 10,
+          "warped_bbox": [
+            699,
+            13,
+            706,
+            45
+          ]
+        },
+        {
+          "page": "177",
+          "line_index": 10,
+          "blob_id": 5,
+          "warped_bbox": [
+            485,
+            13,
+            492,
+            43
+          ]
+        },
+        {
+          "page": "043",
+          "line_index": 18,
+          "blob_id": 9,
+          "warped_bbox": [
+            404,
+            14,
+            411,
+            45
+          ]
+        },
+        {
+          "page": "211",
+          "line_index": 8,
+          "blob_id": 6,
+          "warped_bbox": [
+            298,
+            13,
+            305,
+            45
+          ]
+        }
+      ]
+    }
+  ]
+}

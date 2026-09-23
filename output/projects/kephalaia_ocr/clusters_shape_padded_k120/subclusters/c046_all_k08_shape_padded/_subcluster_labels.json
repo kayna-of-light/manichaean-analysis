@@ -1,0 +1,31 @@
+{
+  "description": "Reviewed labels for second-stage shape subclusters of coarse cluster 046. Only visually coherent subclusters are labeled; mixed/noise/printed contamination remains unlabeled.",
+  "source_summary": "_summary.json",
+  "labels": {
+    "01": {
+      "label": "_lacuna_dot",
+      "confidence": "strong",
+      "evidence": "Coherent 3x5 lacuna-dot forms in context samples; includes p010 l11 b34, index 402, and p010 l13 b46, index 507."
+    },
+    "02": {
+      "label": "_lacuna_dot",
+      "confidence": "strong",
+      "evidence": "Coherent tiny lacuna-dot forms in context samples; includes p010 l21 b40, index 776."
+    },
+    "04": {
+      "label": "_lacuna_dot",
+      "confidence": "strong",
+      "evidence": "Coherent 3x5 lacuna-dot forms in context samples; includes p010 l9 b38, index 327; p010 l9 b41, index 330; and p010 l11 b35, index 418."
+    },
+    "05": {
+      "label": "_lacuna_dot",
+      "confidence": "strong",
+      "evidence": "Coherent 3x6 lacuna-dot forms in context samples; includes p010 l13 b45, index 506."
+    },
+    "06": {
+      "label": "_lacuna_dot",
+      "confidence": "strong",
+      "evidence": "Coherent elongated lacuna-dot forms in context samples; includes p010 l16 b30, index 597."
+    }
+  }
+}

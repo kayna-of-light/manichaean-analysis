@@ -1,0 +1,926 @@
+{
+  "teaching": 45,
+  "total_gaps_in_core": 55,
+  "gaps_restored": 42,
+  "gaps_unrestorable": 13,
+  "restoration_note": "Teaching 45 describes the Lord (Father of Life) sending his operative power downward into the natural mind in three accommodations — wind/perception, water/truth, fire/love — and then drawing them up again so that what cannot be conjoined is cast beyond the cosmos. The text is highly formulaic, with parallel passages for each of the three purifications, and editor restorations are mostly orthographic completions of words that recur multiple times in the same teaching. I accepted virtually all editor proposals where they were short (1-3 letters) completions of certainly-readable words (ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ, ⲁⲃⲁⲗ, ⲱⲏⲛ, ⲡⲉⲧⲟⲓⲭⲉⲓⲟⲛ, ⲡⲥⲁⲣⲙⲉ, etc.). For mid-sized gaps where parallel passages constrained the form (e.g. {39}-{40} 'water of Error', {50} 'after the water', {51} 'at that very hour') I proposed with moderate confidence based on formula. Larger lacunae without traces ({13}-{15}, {24}, {26}, {27}, {28}, {30}, {41}, {48}, {49}, {52}, {53}, {54}) I left unrestorable: the formulaic register suggests their content but does not constrain it tightly enough.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 2590,
+      "chapter": 43,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's perfect prefix ⲁ-, giving ⲁϥⲛⲁⲭⲟⲩ 'he cast them' — the verb ⲛⲟⲩϫⲉ with 3pl object suffix.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 2590,
+      "chapter": 43,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲡⲟ",
+      "basis": "Completes ⲁⲛⲟⲩⲧⲟⲡⲟⲥ 'to a place' (Greek τόπος); editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 2591,
+      "chapter": 43,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧ",
+      "basis": "Completes ⲉⲧⲃⲉ 'concerning' — the heading-formula recurs at section 2618 and is here introducing the chapter on the Mighty Ones.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 2591,
+      "chapter": 43,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes ⲙ̄ⲙⲁⲛⲭⲓⲟⲟⲣⲉ 'Mighty Ones / strongholds'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 2592,
+      "chapter": 43,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "Genitive ⲛ̄ⲧⲉ joining ⲡⲓⲱⲧ (end of prior segment) to ⲡⲱⲛⲍ̄: 'the Father of Life,' the title that frames the whole teaching.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 2592,
+      "chapter": 43,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Completes ⲁϣⲟⲩⲟ 'about to pour out'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 2593,
+      "chapter": 43,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "Completes ϣⲟⲩⲱⲙ 'ate' — the verb governs this whole sentence and recurs in 2594, 2588.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 2595,
+      "chapter": 43,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Completes ⲧⲟⲧⲉ 'then' — the temporal connector beginning the next narrative step.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 2596,
+      "chapter": 43,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Completes ⲧϣⲁⲙⲧⲉ 'three' (Lyc fem.), continuing 'the three garments' enumerated in this segment.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 2597,
+      "chapter": 43,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲛ",
+      "basis": "Completes ⲁⲭⲛ̄ (= Sahidic ⲉϫⲛ̄) 'upon' across the line break; ⲁ- visible at end of preceding line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 2598,
+      "chapter": 43,
+      "line": 16,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲏ ⲉ",
+      "basis": "Relative pronoun + relative converter producing 'those which he established'; ⲧⲁϥⲥⲙⲛ̄ⲧⲟⲩ following requires the relative converter ⲉ-. Length ~5 chars including space fits.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 11,
+      "section": 2598,
+      "chapter": 43,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲙ",
+      "basis": "Completes ⲥⲙⲛ̄ⲧⲟⲩ 'established them' (verb ⲥⲙⲓⲛⲉ with 3pl suffix); editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 2598,
+      "chapter": 43,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲛ",
+      "basis": "Completes ⲧⲟⲓⲛⲥⲙⲓⲛⲉ 'the founding/establishment' (action-noun on ⲥⲙⲓⲛⲉ); editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 2599,
+      "chapter": 43,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10 chars without traces; opens a clause whose content (probably the names of the three or a verb of dispatching) cannot be recovered safely.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 2599,
+      "chapter": 43,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars after ⲛ̄ⲛ-; could be a noun in genitive (e.g. ⲛ̄ⲛ-ⲙⲁⲛ-, ⲛ̄ⲛ-ⲕⲁϩ) but no parallel constrains it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 2599,
+      "chapter": 43,
+      "line": 17,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars after ⲁⲩⲕ-; possibly a verb of putting/throwing but cannot be specified from traces.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 16,
+      "section": 2600,
+      "chapter": 43,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲙ",
+      "basis": "Genitive linker + initial ⲙ of ⲙⲁⲛⲭⲓⲟⲡⲉ 'stronghold'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 2600,
+      "chapter": 43,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Completes ⲙⲁⲛⲭⲓⲟⲡⲉ; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 2602,
+      "chapter": 43,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲟ",
+      "basis": "Completes Greek loanword ⲡⲉⲧⲟⲓ̈ⲭⲉⲓⲟⲛ = στοιχεῖον 'element'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 2602,
+      "chapter": 43,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲉ",
+      "basis": "Second letter-pair within ⲡⲉⲧⲟⲓ̈ⲭⲉⲓⲟⲛ; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 2605,
+      "chapter": 43,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱⲧⲉ",
+      "basis": "Completes ⲛⲕⲱⲧⲉ 'encompassing-circuits' (lexicon entry for ⲕⲱⲧⲉ); the dark mountain stands in the surrounding circuits of the side-of-radiance.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 2608,
+      "chapter": 43,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲗ ⲙⲙⲁϥ",
+      "basis": "Completes ⲁⲃⲁⲗ ⲙⲙⲁϥ 'forth from him' — standard directional formula; ⲁⲃ- visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 2608,
+      "chapter": 43,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲉⲡⲧⲉ",
+      "basis": "'The preparation' — recurs in lines 20, 22, 29 as the technical term for what is set down at the cosmic perimeter.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 2611,
+      "chapter": 43,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲥ",
+      "basis": "Conjunctive prefix ⲛ̄ⲥⲉ- producing ⲛ̄ⲥⲉⲟⲩⲱⲛϩ 'and they manifest'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 2613,
+      "chapter": 43,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9 chars without traces at end of clause about mountains and slopes; could be a relative clause or directional, but no formula fixes it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 2614,
+      "chapter": 43,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ",
+      "basis": "Completes ⲱⲏⲛ 'tree' (Lyc form of ϣⲏⲛ); editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 2614,
+      "chapter": 43,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars without strong constraint; the clause continues but its predicate cannot be recovered.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 27,
+      "section": 2615,
+      "chapter": 43,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4 chars after ⲙⲛ 'and'; another body part (perhaps ⲡⲕⲉⲥ 'bone', ⲥⲛⲁϩ, or a faculty) — too many candidates.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 2616,
+      "chapter": 43,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30 chars rubbed off; full clause not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 2626,
+      "chapter": 43,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲉ",
+      "basis": "Conjunctive ⲛ̄ⲥⲉ-, producing ⲛⲥⲉⲓ 'and they come'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 2627,
+      "chapter": 43,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars connecting 'above the earths' to 'purification'; possible candidates ⲛⲥⲉⲣ̄, ⲁⲡⲟⲩ, ⲉⲩⲣ̄ but none secure.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 31,
+      "section": 2627,
+      "chapter": 43,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Initial letter of ⲕⲁⲫⲁⲣⲓⲥⲉ (Greek καθαρίζω) 'purify'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 2628,
+      "chapter": 43,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ",
+      "basis": "Final ϩ of ⲡⲕⲁϩ 'the earth'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 2630,
+      "chapter": 43,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Initial of ⲟⲩⲃⲉ 'against'; the adversative formula 'draw upward against those who came down' parallels line 46.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 2631,
+      "chapter": 43,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ",
+      "basis": "Completes ϩⲁⲧⲉϩⲏ 'before'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 2632,
+      "chapter": 43,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Perfect prefix giving ⲁϥⲱⲟⲩⲟ 'he sent forth'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 2632,
+      "chapter": 43,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙ",
+      "basis": "Initial of ⲧⲙⲏⲧⲉ/ⲧⲙⲉⲧⲟⲩ 'their midst'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 2632,
+      "chapter": 43,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Final ⲛ of ⲛⲁⲣⲭⲱⲛ 'the archons'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 2633,
+      "chapter": 43,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲃ",
+      "basis": "Within ⲁϥⲧⲟⲩⲃⲉ 'he purified' — the central verb of cosmic purification; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 2633,
+      "chapter": 43,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁⲩ",
+      "basis": "ⲡⲙⲁⲩ 'the water'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 2633,
+      "chapter": 43,
+      "line": 53,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛ̄ⲡⲥⲁⲣⲙⲉ",
+      "basis": "Parallel to line 52 ⲡⲙⲁⲩ ⲡⲥⲁⲣⲙⲉ 'water of Error': here 'firmaments [purified] out of the water of Error' fits the 9-char gap.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 41,
+      "section": 2634,
+      "chapter": 43,
+      "line": 54,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1 single-letter trace; could be ⲱ of ⲁⲩⲱ, ⲁ of perfect, or final letter of preceding word — not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 42,
+      "section": 2634,
+      "chapter": 43,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲕⲉ",
+      "basis": "ⲛ̄ⲕⲉⲕⲉ 'of darkness' qualifying the waters; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 2634,
+      "chapter": 43,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ ⲛⲧϩⲉ ⲉⲧⲉⲣⲉ ⲙ̄",
+      "basis": "Completes ⲁⲡⲓⲧⲛⲉ 'downward' and opens the typological-comparison formula 'in the manner that the [waters fell from heaven]' — the comparison continues in 2635; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 2638,
+      "chapter": 43,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "basis": "3pl perfect prefix ⲁⲩ- giving ⲁⲩⲧⲟⲩⲃⲟ 'they purified'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 2646,
+      "chapter": 43,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲟⲩⲱϩ",
+      "basis": "Verb of casting parallel to line 9 ⲁϩϣⲟⲩⲱϩ ⲁⲡⲓⲧⲛⲉ; the relative ⲉⲧⲁⲩ- requires a verb; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 2646,
+      "chapter": 43,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩ",
+      "basis": "3pl object suffix on ⲱⲧⲡ̄ 'gather', producing ⲁϩⲁⲧⲡⲟⲩ 'they gathered them'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 2647,
+      "chapter": 43,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍⲟⲩⲛ",
+      "basis": "Directional 'inward' continuing the gathering action; editor proposal accepted.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 48,
+      "section": 2647,
+      "chapter": 43,
+      "line": 67,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5 chars, no constraint; could be ⲁⲡⲙⲁ 'to the place' but the line is too damaged for confidence.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 49,
+      "section": 2647,
+      "chapter": 43,
+      "line": 67,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14 chars after a single ⲧ; cannot be reconstructed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 50,
+      "section": 2648,
+      "chapter": 43,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲛⲛⲥⲁ",
+      "basis": "Parallel to 2641 ⲙⲛⲛⲥⲁ ⲧⲙⲁⲩ 'after the water': here 'after the water, the fire was poured out' completes the threefold sequence (water → darkness → fire). 6 chars fits est 7.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 51,
+      "section": 2649,
+      "chapter": 43,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲓⲛⲉⲩ ⲛ̄ⲧ",
+      "basis": "Completes the temporal formula ⲙ̄ⲡⲓⲛⲉⲩ ⲛ̄ⲧⲟⲩⲛⲟⲩ 'at that very hour'; editor proposal accepted.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 2654,
+      "chapter": 43,
+      "line": 74,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20 chars rubbed off after ⲫⲱⲥⲧⲏⲣ 'illuminators'; content (probably a relative clause about the path of the sun and moon) not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 53,
+      "section": 2655,
+      "chapter": 43,
+      "line": 75,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3 chars before ⲏ; final letters of preceding clause cannot be reconstructed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 54,
+      "section": 2656,
+      "chapter": 43,
+      "line": 76,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7 chars after the listing 'fire and Darkness and water'; could be a directional or relative ⲉⲧⲙ̄ⲙⲉⲩ but not constrained enough.",
+      "confidence": "unrestorable"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 2590,
+      "chapter": 43,
+      "line": 7,
+      "core_english": "he cast them to a place.'"
+    },
+    {
+      "section": 2591,
+      "chapter": 43,
+      "line": 9,
+      "core_english": "concerning the strongholds ... when the Father"
+    },
+    {
+      "section": 2592,
+      "chapter": 43,
+      "line": 10,
+      "core_english": "of Life was about to pour forth these three strongholds, he"
+    },
+    {
+      "section": 2593,
+      "chapter": 43,
+      "line": 11,
+      "core_english": "ate the three upon this earth, each one to his place and"
+    },
+    {
+      "section": 2595,
+      "chapter": 43,
+      "line": 13,
+      "core_english": "Then he drew them out, he cast them out from this earth in the three"
+    },
+    {
+      "section": 2596,
+      "chapter": 43,
+      "line": 14,
+      "core_english": "garments — that of the Wind, that of the Mother, with that of the Fire — those mounted upon"
+    },
+    {
+      "section": 2597,
+      "chapter": 43,
+      "line": 15,
+      "core_english": "his body. He poured them out, he cast them down upon the three roads"
+    },
+    {
+      "section": 2598,
+      "chapter": 43,
+      "line": 16,
+      "core_english": "{0} which he established forth in the founding of the cosmos"
+    },
+    {
+      "section": 2599,
+      "chapter": 43,
+      "line": 17,
+      "core_english": "{1} no one remained"
+    },
+    {
+      "section": 2600,
+      "chapter": 43,
+      "line": 18,
+      "core_english": "they have been set upon the faces of the earth out of the three strong-"
+    },
+    {
+      "section": 2602,
+      "chapter": 43,
+      "line": 20,
+      "core_english": "out of the cosmos. The element which has been prepared in the water is"
+    },
+    {
+      "section": 2605,
+      "chapter": 43,
+      "line": 23,
+      "core_english": "is, this mountain of darkness which exists in the encompassing-circuits of the side-of-radiance"
+    },
+    {
+      "section": 2608,
+      "chapter": 43,
+      "line": 26,
+      "core_english": "out from him, covering the heaven from him. The preparation, on its own part,"
+    },
+    {
+      "section": 2611,
+      "chapter": 43,
+      "line": 29,
+      "core_english": "there, and they manifest forth there. For these are the preparation of the great strong-"
+    },
+    {
+      "section": 2613,
+      "chapter": 43,
+      "line": 31,
+      "core_english": "out of the earth into the mountains and the slopes {2}"
+    },
+    {
+      "section": 2614,
+      "chapter": 43,
+      "line": 32,
+      "core_english": "the places where no tree grows in them, {3}"
+    },
+    {
+      "section": 2615,
+      "chapter": 43,
+      "line": 33,
+      "core_english": "abound exceedingly in that very place, through the limb and {4}"
+    },
+    {
+      "section": 2616,
+      "chapter": 43,
+      "line": 34,
+      "core_english": "{5} where no tree"
+    },
+    {
+      "section": 2626,
+      "chapter": 43,
+      "line": 46,
+      "core_english": "exist in the three earths might draw and come up against those"
+    },
+    {
+      "section": 2627,
+      "chapter": 43,
+      "line": 47,
+      "core_english": "that came down from above the earths {6} purification, and they pu-"
+    },
+    {
+      "section": 2628,
+      "chapter": 43,
+      "line": 48,
+      "core_english": "rify them. For this reason he sent forth the strongholds downward to the earth,"
+    },
+    {
+      "section": 2630,
+      "chapter": 43,
+      "line": 50,
+      "core_english": "the water, the darkness and the fire that exist in the earths might draw upward against"
+    },
+    {
+      "section": 2631,
+      "chapter": 43,
+      "line": 51,
+      "core_english": "those that came down from above. First indeed, before"
+    },
+    {
+      "section": 2632,
+      "chapter": 43,
+      "line": 52,
+      "core_english": "everything, he sent forth the water of Error in their midst, of the archons"
+    },
+    {
+      "section": 2633,
+      "chapter": 43,
+      "line": 53,
+      "core_english": "that are above. He purified the firmaments out of the water {7}"
+    },
+    {
+      "section": 2634,
+      "chapter": 43,
+      "line": 54,
+      "core_english": "{8} the waters of darkness; he sent them forth downward, in the manner that the"
+    },
+    {
+      "section": 2638,
+      "chapter": 43,
+      "line": 58,
+      "core_english": "They purified the waters from the Darkness which is in them."
+    },
+    {
+      "section": 2646,
+      "chapter": 43,
+      "line": 66,
+      "core_english": "cast forth from heaven; they drove them forth from both, gathering them"
+    },
+    {
+      "section": 2647,
+      "chapter": 43,
+      "line": 67,
+      "core_english": "inward {9} that yonder of the Darkness"
+    },
+    {
+      "section": 2648,
+      "chapter": 43,
+      "line": 68,
+      "core_english": "after the water. And the fire was poured out from heaven to the earth"
+    },
+    {
+      "section": 2649,
+      "chapter": 43,
+      "line": 69,
+      "core_english": "at that very hour. At that very moment also, the fire that was gathered within"
+    },
+    {
+      "section": 2654,
+      "chapter": 43,
+      "line": 74,
+      "core_english": "of going for the Illuminators {10}"
+    },
+    {
+      "section": 2655,
+      "chapter": 43,
+      "line": 75,
+      "core_english": "{11} thus also is this the manner in which they purified the lands of the lower part, driving"
+    },
+    {
+      "section": 2656,
+      "chapter": 43,
+      "line": 76,
+      "core_english": "forth from them the fire and the Darkness and the water {12}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 2598,
+      "chapter": 43,
+      "line": 16,
+      "proposed_english": "those",
+      "coptic_gap_refs": [
+        10
+      ],
+      "basis": "My proposed Coptic ⲛⲏ ⲉ supplies the relative pronoun 'those (which)' — anchoring the relative clause about the three roads being established at the cosmos's founding. Low-confidence on the Coptic side, but English required to make the clause syntactically whole.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 2599,
+      "chapter": 43,
+      "line": 17,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        13,
+        14,
+        15
+      ],
+      "basis": "Three clustered lacunae preceding 'no one remained'; content cannot be reconstructed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 2613,
+      "chapter": 43,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "basis": "9-char lacuna at end of clause about mountains and slopes; not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 2614,
+      "chapter": 43,
+      "line": 32,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        26
+      ],
+      "basis": "7-char lacuna continuing the clause about barren places; not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 2615,
+      "chapter": 43,
+      "line": 33,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "basis": "Second member of an enumeration paired with 'limb' (μέλος); could be 'bone' or another bodily/structural term, but not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 2616,
+      "chapter": 43,
+      "line": 34,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        28
+      ],
+      "basis": "30-char rubbed-off span; opens a new clause about the barren places — content not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 2627,
+      "chapter": 43,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        30
+      ],
+      "basis": "5-char span between 'above the earths' and 'purification'; the syntactic role (verb of doing or preposition 'for their') is unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 2633,
+      "chapter": 43,
+      "line": 53,
+      "proposed_english": "of Error",
+      "coptic_gap_refs": [
+        40
+      ],
+      "basis": "Parallel to line 52 'water of Error' (ⲡⲙⲁⲩ ⲡⲥⲁⲣⲙⲉ): the firmaments are purified out of the same Water of Error just sent forth among the archons.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 2634,
+      "chapter": 43,
+      "line": 54,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        41
+      ],
+      "basis": "Single trace gives no English content; cannot supply a fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 2647,
+      "chapter": 43,
+      "line": 67,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        48,
+        49
+      ],
+      "basis": "Two damaged spans bracketing 'that yonder of the Darkness'; content not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 2654,
+      "chapter": 43,
+      "line": 74,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        52
+      ],
+      "basis": "20-char rubbed-off span; not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 2655,
+      "chapter": 43,
+      "line": 75,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        53
+      ],
+      "basis": "3-char span before ⲏ 'or'; final letters of preceding clause not recoverable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 2656,
+      "chapter": 43,
+      "line": 76,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        54
+      ],
+      "basis": "7-char span after the threefold listing 'fire, Darkness, water'; possibly a directional but not constrained.",
+      "confidence": "unrestorable"
+    }
+  ]
+}

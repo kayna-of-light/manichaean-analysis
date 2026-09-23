@@ -25,11 +25,47 @@ Thumbs.db
 *.swp
 *.swo
 
-# Output (synced to Google Drive, not tracked)
-output/
+# Large source PDFs are restored from the private artifact mirror.
+data/*.pdf
 
-# Large data
-*.pdf
+# Keep LLM responses, corrected text, labels, overrides, and review snapshots.
+# Exclude only known rebuildable products; see docs/artifact_storage.md.
+/output/pdfs/*.pdf
+/output/projects/kephalaia/analysis/chapters/*.json
+/output/projects/kephalaia_v2/scores/*.json
+/output/projects/kephalaia_v2/coptic/images/*.jpg
+
+# OCR previews, montages, and crops (not geometry/label JSON beside them).
+/output/projects/kephalaia_ocr/**/*.png
+/output/projects/kephalaia_ocr/pages/*.jpg
+/output/projects/kephalaia_ocr/pages_base_split*/*.jpg
+/output/projects/kephalaia_ocr/*.log
+
+# Rebuilt from saved transcriptions, cluster mappings, and manual overrides.
+/output/projects/kephalaia_ocr/contextual_review/*/line_sequences.jsonl
+/output/projects/kephalaia_ocr/contextual_review/*/missing_assignments.json
+/output/projects/kephalaia_ocr/contextual_review/*/review_cluster_context.json
+/output/projects/kephalaia_ocr/contextual_review/*/review_cluster_context.md
+/output/projects/kephalaia_ocr/contextual_review/*/review_cluster_decision_table.md
+/output/projects/kephalaia_ocr/llm_witness/*/composite_line_sequences.jsonl
+/output/projects/kephalaia_ocr/llm_witness/*/review_llm_witness.json
+/output/projects/kephalaia_ocr/llm_witness/*/review_llm_witness.md
+/output/projects/kephalaia_ocr/llm_witness/*/summary.json
+/output/projects/kephalaia_ocr/llm_witness/*/resolver_recommendations.json
+/output/projects/kephalaia_ocr/llm_witness/*/resolver_recommendations.md
+/output/projects/kephalaia_ocr/llm_witness/*/mark_witness.md
+
+# v2 image/geometry builders; summaries and crop metadata remain trackable.
+/output/projects/kephalaia_ocr_v2/pages_cropped/*.jpg
+/output/projects/kephalaia_ocr_v2/line_body_split/common/*.jpg
+/output/projects/kephalaia_ocr_v2/line_body_split/line_numbers/*.jpg
+/output/projects/kephalaia_ocr_v2/line_body_split/text_body/*.jpg
+/output/projects/kephalaia_ocr_v2/line_body_split/reviews/*.jpg
+/output/projects/kephalaia_ocr_v2/line_body_split/reviews/*.png
+/output/projects/kephalaia_ocr_v2/body_geometry/pages/*.json
+/output/projects/kephalaia_ocr_v2/body_geometry/masks/*.png
+/output/projects/kephalaia_ocr_v2/body_geometry/reviews/*.jpg
+/output/projects/kephalaia_ocr_v2/body_geometry/reviews/*.png
 
 # Manual reviewer local state (SQLite db, backups, exports)
 manual_reviewer/data/

@@ -1,0 +1,97 @@
+{
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4063,
+      "chapter": 68,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲥ",
+      "basis": "Editor restoration of the relative converter ⲉⲧ- with 3sg.f. resumptive ⲥ- referring to ⲧⲥⲉⲧⲉ. The verb ⲉⲓⲣⲉ in the next segment requires a relative subject prefix, and ⲡⲙⲁϩϩⲧⲁⲩ ⲛ̄ϩⲱⲃ ⲉⲧⲥⲉⲓⲣⲉ ⲓ̈ⲙⲁϩ exactly mirrors the formula at line 4 (ⲡϣⲁⲣⲡ ϩⲱⲃ ⲉⲧⲥⲉⲓⲣⲉ ⲓ̈ⲙⲁϩ). High confidence: form, gender, and parallel formula all converge.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4066,
+      "chapter": 68,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁ",
+      "basis": "Editor restoration of the habitual prefix ϣⲁ- (3sg.f. ϣⲁⲥ-) attaching to ⲥⲟⲩⲱⲛϩ̄ in the next segment. The iterative-habitual aspect governs every previous numbered work in the chapter (ⲥⲣⲱⲭϩ̄, ϣⲁⲥⲡⲁⲣⲭ, ⲥ†), and the surviving ⲥⲟⲩⲱⲛϩ̄ confirms that what is missing is the aspectual prefix only.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4067,
+      "chapter": 68,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Editor restoration of the 3sg.f. suffix pronoun on ⲛ̄ϩⲏⲧ=, anaphoric to ⲧⲥⲉⲧⲉ (the Fire, feminine). The whole chapter consistently uses 3sg.f. pronouns for the Fire (ⲥⲣⲱⲭϩ̄, ϣⲁⲥⲡⲁⲣⲭ, ⲁⲣⲁⲥ, ⲛ̄ϩⲏⲧⲥ̄ in line 13). High confidence: grammar fully constrained.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4063,
+      "chapter": 68,
+      "line": 11,
+      "core_english": "-ness to whoever shall touch it. The fourth work which {0}"
+    },
+    {
+      "section": 4066,
+      "chapter": 68,
+      "line": 14,
+      "core_english": "The fifth:"
+    },
+    {
+      "section": 4067,
+      "chapter": 68,
+      "line": 15,
+      "core_english": "{1} habitually manifests forth a light, that men may see by means of {2}."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4063,
+      "chapter": 68,
+      "line": 11,
+      "proposed_english": "it",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "Renders the 3sg.f. relative subject ⲉⲧⲥ- referring back to ⲧⲥⲉⲧⲉ ('the Fire'). English requires an explicit subject pronoun where Coptic uses a bound relative prefix. Matches the editor's partial English and the parallel construction at line 4."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4067,
+      "chapter": 68,
+      "line": 15,
+      "proposed_english": "it",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Renders the habitual subject morpheme ϣⲁⲥ- (3sg.f.) folded into the next segment's English. The Coptic prefix carries both subject (it) and aspect (habitually); 'habitually' is supplied in the segment text as the natural translation of ϣⲁ-, while {1} carries the explicit subject pronoun English requires."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4067,
+      "chapter": 68,
+      "line": 15,
+      "proposed_english": "it",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "Renders the 3sg.f. suffix on ⲛ̄ϩⲏⲧ= referring to ⲧⲥⲉⲧⲉ. 'By means of it' renders the prepositional phrase ⲛ̄ϩⲏⲧⲥ̄ in its instrumental sense, naming the Fire (love) as that by means of which men see — the spiritual point of the fifth work."
+    }
+  ],
+  "gaps_restored": 3,
+  "gaps_unrestorable": 0,
+  "total_gaps_in_core": 3,
+  "restoration_note": "All three gaps are minor morphological restorations within a tightly patterned numbered list (the Five Works of the Fire). Each is constrained by (a) the surrounding habitual-iterative formula governing every other work in the chapter, (b) the consistent 3sg.f. anaphora to ⲧⲥⲉⲧⲉ, and (c) the surviving verb stems that show exactly which clitic is missing. The editor proposals all hold. Spiritually this is the chapter on love (ⲧⲥⲉⲧⲉ) as the active principle in the natural mind, and the restorations preserve the iterative present that marks love's continuous operation: it consumes, separates four likenesses, gives savor, shapes vessels, and manifests light — the five works by which the rational lives.",
+  "teaching": 69
+}

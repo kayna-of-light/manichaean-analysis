@@ -1,0 +1,94 @@
+{
+  "chapter_number": 53,
+  "manuscript_pages": "129,5 - 131,9",
+  "coptic_tokens": 532,
+  "greek_loanwords": {
+    "total_density_pct": 3.2,
+    "cosmological_density_pct": 1.5,
+    "ecclesiastical_density_pct": 0.19,
+    "cosmological_ratio": 0.889,
+    "cosmological_count": 8,
+    "ecclesiastical_count": 1,
+    "general_count": 8,
+    "total_greek": 17,
+    "cosmological_words": {
+      "ⲫⲩⲥⲓⲥ": 1,
+      "ⲥⲱⲙⲁ": 4,
+      "ⲉⲛⲉⲣⲅⲓⲁ": 2,
+      "ϩⲩⲗⲏ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 47,
+    "sahidic_count": 39,
+    "total_dialect_markers": 86,
+    "subachmimic_ratio": 0.547,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×6",
+      "ⲍⲛ̄×4",
+      "ⲁⲍ×8",
+      "ⲍⲓ×1",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×10",
+      "ⲍⲱⲃ×5",
+      "ⲍⲣⲏ×1",
+      "ⲍⲁⲗ×1",
+      "ⲍⲉ×6",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×8",
+      "ϩⲛ̄×2",
+      "ⲁϩ×16",
+      "ϩⲁ×4",
+      "ϩⲏⲧ×3",
+      "ϩⲱⲃ×1",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×2"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 100,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 22,
+    "bracketed_restorations": 126,
+    "empty_brackets": 10,
+    "leer_markers": 8
+  },
+  "english_classification": {
+    "chapter_number": 53,
+    "chapter_title": "Concerning the First Man",
+    "total_paragraphs": 7,
+    "core_paragraphs": 7,
+    "core_percentage": 97,
+    "chapter_note": "This chapter is almost entirely oldest teaching substrate. The only editorial element is the dialogue frame formula in ¶1. The teaching describes the First Man's descent, the construction of the universe from captured dark powers, and the devastation of the dark storehouses — using two correspondential analogies (marsh/net and body/head-limbs). The body-cosmos mapping in ¶5-6 is a recognized substrate marker. No institutional, exhortation, or editorial bridge vocabulary appears anywhere in the chapter. Despite heavy lacunae damage throughout, the cosmological process narrative is coherent and systematic.",
+    "classification_distribution": {
+      "mixed": 1,
+      "substrate": 6
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (97%) with high cosmological Greek ratio (0.89)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

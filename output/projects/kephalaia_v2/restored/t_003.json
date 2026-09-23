@@ -1,0 +1,1332 @@
+{
+  "teaching": 3,
+  "total_gaps_in_core": 80,
+  "gaps_restored": 73,
+  "gaps_unrestorable": 7,
+  "restoration_note": "This teaching maps Eudaimonia, Sophia, and Power across three registers: the natural world (where they pass), the cosmic order (recognized as gift), and the Lord himself (Father, Living Spirit, Third Ambassador / Mind, Virgin of Light, Pillar of Glory, Five Sons). Editor restorations carried the bulk of the work; lexical anchors (Pillar of Glory, Virgin of Light, Light Mind, Five Sons of First Man, Land of Light, aeons of greatness) constrained the larger gaps. Sections 107-108 are whole-line lacunae with no formula to anchor and are honestly marked unrestorable. Several smaller bridging gaps in §90-92, §95-96, §113, §117 admit only low-confidence proposals because the grammar permits multiple cohesive fillers.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 87,
+      "chapter": 3,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩ",
+      "basis": "Editor restoration: interrogative ⲍⲛ̄[ⲉⲩ] 'what?' — opens the question 'what are these three?'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 88,
+      "chapter": 3,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲧ ⲛ̄ⲍⲱⲃ",
+      "basis": "Editor restoration: completes ⲡⲓϣⲁ[ⲙⲧ ⲛ̄ⲍⲱⲃ] 'these three things' — standard formula introducing a triad.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 89,
+      "chapter": 3,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲥⲟⲫⲓⲁ",
+      "basis": "Editor restoration: triadic enumeration Eudaimonia + [Sophia] + Power, the governing triad of the whole teaching.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 90,
+      "chapter": 3,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲍⲏⲧⲟⲩ",
+      "basis": "Editor restoration: standard prepositional phrase 'in them' completing the boasting clause.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 90,
+      "chapter": 3,
+      "line": 7,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲛ",
+      "basis": "Discourse particle 'again/in turn' introducing the first of the three registers; parallel to ⲁⲛ at §116, §119, §121.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 90,
+      "chapter": 3,
+      "line": 7,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲱⲟⲟⲡ ⲡⲉ",
+      "basis": "Predicate verb 'exists is' — parallel to §116 'their Eudaimonia exists in the cosmos.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 6,
+      "section": 91,
+      "chapter": 3,
+      "line": 8,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲥⲱⲟⲟⲡ",
+      "basis": "Feminine subject 'while she exists' continuing the subject Eudaimonia from §90; matches following ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the world.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 7,
+      "section": 91,
+      "chapter": 3,
+      "line": 8,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩϣⲟⲩ",
+      "basis": "Reduplication: ⲟⲩϣ[ⲟⲩϣⲟⲩ] 'a boast' — directly parallel to §89 ⲣⲱⲙⲉ ϣⲟⲩϣⲟⲩ 'men boast' and §93 [ϣⲟⲩ]ϣⲟⲩ 'they boast.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 92,
+      "chapter": 3,
+      "line": 9,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲉⲥⲱⲣⲁ",
+      "basis": "Feminine subject of ϣⲁⲥⲟⲩⲉⲓⲛⲉ 'she passes by'; the reading speaks of worldly blessedness 'lost when its hour goes by' — ⲱⲣⲁ 'hour' is the Greek loan idiomatic here.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 9,
+      "section": 92,
+      "chapter": 3,
+      "line": 9,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲇⲉ",
+      "basis": "Discourse particle bridging 'her hour [then] of the world she passes by.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 10,
+      "section": 93,
+      "chapter": 3,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲟⲩ",
+      "basis": "Editor restoration: [ϣⲟⲩ]ϣⲟⲩ reduplicated 'they boast,' matching §89.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 93,
+      "chapter": 3,
+      "line": 10,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲉⲁⲩ",
+      "basis": "Object of ⲥⲙⲁⲙⲉ ⲛ- 'blessed in/with X'; ⲛⲉⲁⲩ 'glory' fits 4 chars after partial ⲛ-, and parallels §99 'Eudaimonia of glory.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 12,
+      "section": 94,
+      "chapter": 3,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor restoration: definite article on [ⲡ]ⲍⲱⲃ 'the matter.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 94,
+      "chapter": 3,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲏⲉ ⲡⲉ",
+      "basis": "ⲍⲛ̄ ⲟⲩ[ⲙⲏⲉ] 'in a truth' — the editor's English 'tru-' confirms; with copula filling 5 chars.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 14,
+      "section": 94,
+      "chapter": 3,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Single-character lacuna with partial ⲛⲉ; insufficient context to determine whether ⲛⲉ continues a verb or starts a new pronoun.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 95,
+      "chapter": 3,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration: feminine prefix [ⲧ]ⲥⲉⲃⲟⲑⲏⲛⲉ 'she is paired-with.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 95,
+      "chapter": 3,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲧⲟ",
+      "basis": "Relative + ⲉⲧⲟ 'which is' — anchoring the qualifying clause for the heavenly Eudaimonia.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 17,
+      "section": 95,
+      "chapter": 3,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲉⲁⲩ",
+      "basis": "'which is glory' — parallel to §101 'the Sophia which is glory'; 6-char fit allows for a clitic copula.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 18,
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲟ",
+      "basis": "Editor restoration: completes [ⲥⲟ]ⲫⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲍⲱⲱⲥ",
+      "basis": "Feminine 'she also' — discourse particle parallel to §90 ⲁⲛ; 4 chars.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 20,
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap after fragmented ⲉⲙ; no clear anchor in context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 21,
+      "section": 97,
+      "chapter": 3,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲍⲉ ⲉⲧⲉⲣⲉ",
+      "basis": "Editor restoration: 'the manner that' — relative construction introducing the structural account.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 97,
+      "chapter": 3,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲩ",
+      "basis": "Editor restoration: line break splits ⲧⲉⲩⲁⲁⲙⲟⲛⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 98,
+      "chapter": 3,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲁ",
+      "basis": "Editor restoration: completes [ⲁⲁ]ⲙⲟⲛⲓⲁ from previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 98,
+      "chapter": 3,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration: definite article [ⲧ]ⲥⲟⲫⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 99,
+      "chapter": 3,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲩⲁⲁⲙⲟ",
+      "basis": "Editor restoration: line opening, completing [ⲧⲉⲩⲁⲁⲙⲟ]ⲛⲓⲁ — formula identical to §112, §117.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 99,
+      "chapter": 3,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "Editor restoration: genitive linker 'of (Truth)' — standard Manichaean title 'the God of Truth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 100,
+      "chapter": 3,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙⲏⲉ ⲡⲉⲧ",
+      "basis": "Editor restoration: ⲡⲛⲟⲩⲧⲉ ⲛⲧⲉ ⲧⲙⲏⲉ ⲡⲉⲧⲥⲙⲁⲛⲧ 'the God of Truth, who is established.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 100,
+      "chapter": 3,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩⲁ̈ⲓⲛⲉ",
+      "basis": "Editor restoration: 'the great land of [the Light]' — Land of Light is the inmost dwelling of the Father per the lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 101,
+      "chapter": 3,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲫ",
+      "basis": "Single-letter restoration within ⲥⲟ[ⲫ]ⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 101,
+      "chapter": 3,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Single-letter restoration within ⲍ[ⲱ]ϩ 'again.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 101,
+      "chapter": 3,
+      "line": 20,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲏⲩ",
+      "basis": "Completes ⲉⲧⲛ[ⲏⲩ] 'which comes' — verb of descent leading directly into §102 'downward, runs in all the aeons.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 102,
+      "chapter": 3,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲥⲛⲏⲩ ⲇⲉ",
+      "basis": "Verb of descent matching partial ⲁ...ⲩ; the reading describes Sophia as 'the divine going-down' through the aeons.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 33,
+      "section": 103,
+      "chapter": 3,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Single-letter completing ⲛ̄[ⲧ]ⲁⲩ 'they themselves.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 105,
+      "chapter": 3,
+      "line": 24,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲁⲛⲧ ⲛⲍⲏⲧϩ",
+      "basis": "Continues ⲉⲩⲥ[ⲙⲁⲛⲧ ⲛⲍⲏⲧϩ] 'being established in him' — exact parallel to §120 ⲉⲧⲥⲙⲁⲛⲧ ⲛⲍⲏⲧϩ.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 35,
+      "section": 106,
+      "chapter": 3,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲉ ⲛⲁ",
+      "basis": "Editor restoration: ⲭⲉ ⲛⲁ[ⲓⲱⲛ] 'as the aeons,' completing the calling formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 106,
+      "chapter": 3,
+      "line": 25,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛ̄ⲧⲙⲛⲧⲛⲁⲟ̄",
+      "basis": "'aeons of greatness' — the Twelve Aeons of Greatness as the standard Manichaean designation for the aeons summoned forth from the Father.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 37,
+      "section": 107,
+      "chapter": 3,
+      "line": 26,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Whole-line lacuna of 18 chars with only partial ⲱⲟⲩⲉ; no formula or parallel anchors a fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 38,
+      "section": 108,
+      "chapter": 3,
+      "line": 27,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Whole-line lacuna of 28 chars with no surviving traces.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 39,
+      "section": 109,
+      "chapter": 3,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉⲧⲟⲩⲙⲟⲩⲧⲉ",
+      "basis": "Editor restoration: 'the one whom they call' — parallel to §106 ⲛⲉⲧⲟⲩⲙⲟⲩⲧⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 109,
+      "chapter": 3,
+      "line": 28,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲣⲉϥⲧⲛⲛⲁⲩ",
+      "basis": "Within partial ⲡⲣⲏ...ⲧⲛ; the Sun = Third Ambassador as ⲡⲣⲉϥⲧⲛⲛⲁⲩ 'the sender' / messenger fits the Third Ambassador identification.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 41,
+      "section": 110,
+      "chapter": 3,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲣⲁϩ ⲁⲛ ⲭⲉ",
+      "basis": "'(call) him also as' — direct parallel to §109 ⲁⲣⲁϩ ⲭⲉ ⲡⲣⲏ; second epithet for Third Ambassador, the living fire.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 42,
+      "section": 110,
+      "chapter": 3,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲍⲱⲁⲙⲧ ⲙ̄",
+      "basis": "Editor restoration: 'the Third (Ambassador)' bridging into ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ on next line — standard title; the local 'second of the Greatness' is its position in this triad's count.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 43,
+      "section": 111,
+      "chapter": 3,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲣⲉ",
+      "basis": "Editor restoration: completes ⲡⲣⲉ[ⲥⲃⲉⲩⲧⲏⲥ] Ambassador.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 111,
+      "chapter": 3,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲉ ⲡⲉⲩ",
+      "basis": "Bridging copula 'is their' linking 'second of the Greatness' to the next line's [ⲧⲉⲩ]ⲁⲁⲙⲟⲛⲓⲁ.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 45,
+      "section": 111,
+      "chapter": 3,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲩ",
+      "basis": "Editor restoration: 'their' continues into ⲁⲁⲙⲟⲛⲓⲁ on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 112,
+      "chapter": 3,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲁ",
+      "basis": "Editor restoration: completes [ⲉⲩⲁⲁ]ⲙⲟⲛⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 112,
+      "chapter": 3,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲛⲍ",
+      "basis": "Editor restoration: ⲡⲡⲛⲁ ⲉ[ⲧⲁⲛⲍ̄] 'the Living Spirit,' standard Manichaean title.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 112,
+      "chapter": 3,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲉⲣⲟⲩ ⲡⲉ",
+      "basis": "'is theirs' — clausal terminator binding the Eudaimonia of glory to the Living Spirit identification.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 49,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲍⲱⲱⲥ",
+      "basis": "Feminine 'she also/in turn' introducing Sophia as the next subject parallel to §101, §119.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 50,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲥⲟⲫⲓⲁ",
+      "basis": "Editor restoration: feminine subject 'the Sophia is the mother of...' — at this register, Sophia is identified with the Mother of the Living Spirit.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 51,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Editor restoration: completes ⲡⲧⲱⲛ̄[ⲍ] 'the Living-One.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲡⲛⲁ ⲇⲉ",
+      "basis": "'the Spirit, then' — closes the clause and begins the next; conventional bridging.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 53,
+      "section": 114,
+      "chapter": 3,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": "Ⲧⲟⲁⲙ ⲁⲛ ⲉⲧⲍⲙ̄ ⲡⲭⲁⲓ̈",
+      "basis": "Subject 'The Power again which is in the cosmos' — direct parallel to §119 'the Power again that is in the cosmos is of the gods.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 54,
+      "section": 114,
+      "chapter": 3,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏⲣⲟⲩ ⲛ̄",
+      "basis": "Editor restoration: 'all the (rich)' — formula 'all the rich gods and the angels.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 55,
+      "section": 115,
+      "chapter": 3,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲙ̄ⲙ",
+      "basis": "Editor restoration: completes [ⲣⲙ̄ⲙ]ⲁⲁⲓ̈ 'rich.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 56,
+      "section": 116,
+      "chapter": 3,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲓ̈ ⲛⲙⲙⲟⲩ",
+      "basis": "Editor restoration: ⲡⲭ[ⲁⲓ̈] 'cosmos' + 'with them' — formula matching §115 'within the cosmos.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 57,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲉⲩⲉ ⲉⲧⲁⲛⲍ",
+      "basis": "Editor restoration: 'the living fathers' — Lycopolitan ⲓⲉⲩⲉ for ⲉⲓⲱⲧⲉ; opens the third-register description.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 58,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Single-character lacuna without traces; cannot be uniquely fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 59,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲛ̄ ⲛⲁⲅⲅⲉⲗⲟⲥ",
+      "basis": "Conjoint phrase 'and the angels' parallel to the formula 'fathers/rich and angels' in §104, §115, §120.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 60,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor restoration: completes ⲧⲉⲩⲁⲁⲓⲙⲟⲛⲓ[ⲁ].",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 61,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲉ ⲡ",
+      "basis": "Copula + article 'is the' bridging into 'mind of the Father' on next line.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 62,
+      "section": 118,
+      "chapter": 3,
+      "line": 37,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲛⲁⲃ̄ ⲛⲛⲟⲩⲥ ⲡⲉ",
+      "basis": "At this register Eudaimonia = Light Mind (ⲡⲛⲁⲃ̄ ⲛ̄ⲛⲟⲩⲥ); 'is the Lord of Mind, the mind of the Father.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 63,
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲉ ⲧⲡⲁⲣ",
+      "basis": "'is the Vir-' bridging into ⲫⲉⲛ — Sophia at the cosmic register = Virgin of Light, lexicon entry 'pure receivability.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 64,
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲫⲉⲛ",
+      "basis": "Editor restoration: completes ⲡⲧⲁⲣ[ⲫⲉⲛ]ⲟⲥ 'Virgin' (Lycopolitan).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 65,
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Editor restoration: completes ⲙⲡ[ⲟⲩ]ⲁⲓ̈ⲛⲉ 'of the light.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 66,
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Editor restoration: completes ⲉⲧ[ⲍ]ⲙ̄ 'which is in.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 67,
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Editor restoration: completes ⲛⲛⲟⲩ[ⲧⲉ] 'of the gods.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 68,
+      "section": 120,
+      "chapter": 3,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏⲣⲟⲩ",
+      "basis": "Editor restoration: 'all' — formula 'all the rich and angels.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 69,
+      "section": 120,
+      "chapter": 3,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲙ",
+      "basis": "Editor restoration: completes ⲛ[ⲣⲙ]ⲙⲁⲁⲓ̈ 'the rich.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 70,
+      "section": 120,
+      "chapter": 3,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲧϩ",
+      "basis": "Editor restoration: completes ⲛⲍ[ⲏⲧϩ] 'in him.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 71,
+      "section": 122,
+      "chapter": 3,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲧⲩⲗⲟⲥ ⲙⲡⲉⲁⲩ",
+      "basis": "Editor restoration confirmed by lexicon: Pillar of Glory = Perfect Man (ⲡⲣⲱⲙⲉ ⲉⲧⲭⲏⲕ ⲁⲃⲁⲗ) — the path of regeneration as natural ascending into conjunction.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 72,
+      "section": 123,
+      "chapter": 3,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯⲟⲩ ⲛⲱⲏⲣⲉ ⲙⲡ",
+      "basis": "Editor restoration: 'Five Sons of the [Living Spirit]' — structural parallel to §124-125 'Five Sons of First Man'; the Five Sons of Living Spirit (Adamas, King of Honor, Great Builder, Pillar of Glory, Omophoros) order the rational.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 73,
+      "section": 124,
+      "chapter": 3,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ ⲡⲉ",
+      "basis": "Editor restoration: completes ⲛⲟⲁ[ⲙ ⲡⲉ] 'is the Power.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 74,
+      "section": 124,
+      "chapter": 3,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲧⲉ ⲡⲉ",
+      "basis": "Genitive linker 'of the' between 'great Might is' and 'Five Sons of First Man.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 75,
+      "section": 124,
+      "chapter": 3,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯ",
+      "basis": "Editor restoration: ⲡ[ϯ]ⲟⲩ ⲛⲱⲏⲣⲉ 'the Five Sons,' continuing into next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 76,
+      "section": 125,
+      "chapter": 3,
+      "line": 44,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲉⲧⲟⲩⲙⲟⲩⲧⲉ",
+      "basis": "'those whom they call' — parallel to the calling formula in §106, §109; introduces a name or qualification of the Five Sons.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 77,
+      "section": 125,
+      "chapter": 3,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲁⲣ",
+      "basis": "Editor restoration: continuing into ⲃⲉ on next line; relative-perfect 'those who became.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 78,
+      "section": 126,
+      "chapter": 3,
+      "line": 45,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲡⲡⲱⲁⲣⲡ",
+      "basis": "With partial ⲉⲡⲡ, the natural completion is ⲉⲡⲡ[ⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ] '(belonging) to the First Man,' echoing the Five Sons of First Man motif.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 79,
+      "section": 127,
+      "chapter": 3,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉϩⲃ̄",
+      "basis": "Editor restoration: verb of bearing-up 'carries up under the All' — Pillar of Glory / Omophoros function: bearing the natural mind in being.",
+      "confidence": "moderate"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 87,
+      "chapter": 3,
+      "line": 4,
+      "core_english": "What are these three?"
+    },
+    {
+      "section": 88,
+      "chapter": 3,
+      "line": 5,
+      "core_english": "three things which they refer to in the world: Eudaimonia,"
+    },
+    {
+      "section": 89,
+      "chapter": 3,
+      "line": 6,
+      "core_english": "Wisdom, and Power, in which men boast"
+    },
+    {
+      "section": 90,
+      "chapter": 3,
+      "line": 7,
+      "core_english": "in them. Their Eudaimonia of the world {0}"
+    },
+    {
+      "section": 91,
+      "chapter": 3,
+      "line": 8,
+      "core_english": "{1} in the world; she has a boast"
+    },
+    {
+      "section": 92,
+      "chapter": 3,
+      "line": 9,
+      "core_english": "{2} of the world, she passes by."
+    },
+    {
+      "section": 93,
+      "chapter": 3,
+      "line": 10,
+      "core_english": "They boast in them, in them they are blessed in {3}."
+    },
+    {
+      "section": 94,
+      "chapter": 3,
+      "line": 11,
+      "core_english": "The matter, then, is revealed in a {4}"
+    },
+    {
+      "section": 95,
+      "chapter": 3,
+      "line": 13,
+      "core_english": "She is paired with another Eudaimonia {5}"
+    },
+    {
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "core_english": "Sophia {6} stands beside another Power, {7}"
+    },
+    {
+      "section": 97,
+      "chapter": 3,
+      "line": 16,
+      "core_english": "the manner in which the matter exists, of these three Eu-"
+    },
+    {
+      "section": 98,
+      "chapter": 3,
+      "line": 17,
+      "core_english": "daimonias: the Sophia and the Power."
+    },
+    {
+      "section": 99,
+      "chapter": 3,
+      "line": 18,
+      "core_english": "The Eudaimonia of glory is the Father, the God of"
+    },
+    {
+      "section": 100,
+      "chapter": 3,
+      "line": 19,
+      "core_english": "Truth, who is established in the great land of the Light."
+    },
+    {
+      "section": 101,
+      "chapter": 3,
+      "line": 20,
+      "core_english": "The Sophia, again, which is glory: it is the Great One of the Spirit which co-"
+    },
+    {
+      "section": 102,
+      "chapter": 3,
+      "line": 21,
+      "core_english": "{8} downward, which runs in all the aeons,"
+    },
+    {
+      "section": 103,
+      "chapter": 3,
+      "line": 22,
+      "core_english": "they themselves who stand firm in him. The great Might is of"
+    },
+    {
+      "section": 105,
+      "chapter": 3,
+      "line": 24,
+      "core_english": "summoned forth out from him, being established in him, who"
+    },
+    {
+      "section": 106,
+      "chapter": 3,
+      "line": 25,
+      "core_english": "are those who are called the aeons of greatness {9}"
+    },
+    {
+      "section": 107,
+      "chapter": 3,
+      "line": 26,
+      "core_english": "{10}"
+    },
+    {
+      "section": 108,
+      "chapter": 3,
+      "line": 27,
+      "core_english": "{11}"
+    },
+    {
+      "section": 109,
+      "chapter": 3,
+      "line": 28,
+      "core_english": "the one whom they call him 'the Sun, {12}'"
+    },
+    {
+      "section": 110,
+      "chapter": 3,
+      "line": 29,
+      "core_english": "and call him also as the living fire, the Third"
+    },
+    {
+      "section": 111,
+      "chapter": 3,
+      "line": 30,
+      "core_english": "Ambassador, the second of the Greatness; {13} their"
+    },
+    {
+      "section": 112,
+      "chapter": 3,
+      "line": 31,
+      "core_english": "Eudaimonia which is glory is the Living Spirit {14}."
+    },
+    {
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "core_english": "{15} the Sophia is the mother of the Living-One, {16}"
+    },
+    {
+      "section": 114,
+      "chapter": 3,
+      "line": 33,
+      "core_english": "The Power again, which is in the cosmos, is of the gods, all the"
+    },
+    {
+      "section": 115,
+      "chapter": 3,
+      "line": 34,
+      "core_english": "rich and the angels which are within the cosmos."
+    },
+    {
+      "section": 116,
+      "chapter": 3,
+      "line": 35,
+      "core_english": "Their Eudaimonia again — the Sophia and the Power — exists in the cosmos with them."
+    },
+    {
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "core_english": "{17} {18} their Eudaimonia is the"
+    },
+    {
+      "section": 118,
+      "chapter": 3,
+      "line": 37,
+      "core_english": "{19} mind of the Father."
+    },
+    {
+      "section": 119,
+      "chapter": 3,
+      "line": 38,
+      "core_english": "The Sophia again is the Virgin of light. The Power again that is in the cosmos is of the gods,"
+    },
+    {
+      "section": 120,
+      "chapter": 3,
+      "line": 39,
+      "core_english": "all the rich and the angels which are firmly established in him."
+    },
+    {
+      "section": 122,
+      "chapter": 3,
+      "line": 41,
+      "core_english": "phia and the Power. Their Eudaimonia is the Pillar of Glory,"
+    },
+    {
+      "section": 123,
+      "chapter": 3,
+      "line": 42,
+      "core_english": "the Perfect Man. The Sophia is the Five Sons of the"
+    },
+    {
+      "section": 124,
+      "chapter": 3,
+      "line": 43,
+      "core_english": "Living Spirit. The great Might in turn is {20} the Five"
+    },
+    {
+      "section": 125,
+      "chapter": 3,
+      "line": 44,
+      "core_english": "Sons of the First Man, {21} who came to"
+    },
+    {
+      "section": 126,
+      "chapter": 3,
+      "line": 45,
+      "core_english": "be, those who exist within the All, {22}"
+    },
+    {
+      "section": 127,
+      "chapter": 3,
+      "line": 46,
+      "core_english": "carries up under the All."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 90,
+      "chapter": 3,
+      "line": 7,
+      "proposed_english": "exists",
+      "coptic_gap_refs": [
+        4,
+        5
+      ],
+      "confidence": "low",
+      "basis": "Predicate verb completing 'their Eudaimonia of the world exists' — parallel to §116; Coptic ⲱⲟⲟⲡ ⲡⲉ."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 91,
+      "chapter": 3,
+      "line": 8,
+      "proposed_english": "While she exists",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "low",
+      "basis": "Feminine continuative subject for the Eudaimonia carried over from §90."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 92,
+      "chapter": 3,
+      "line": 9,
+      "proposed_english": "Her hour",
+      "coptic_gap_refs": [
+        8,
+        9
+      ],
+      "confidence": "low",
+      "basis": "ⲧⲉⲥⲱⲣⲁ ⲇⲉ — feminine subject of ϣⲁⲥⲟⲩⲉⲓⲛⲉ 'she passes by'; the reading speaks of worldly blessedness as 'held only for a moment.'"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 93,
+      "chapter": 3,
+      "line": 10,
+      "proposed_english": "glory",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲉⲁⲩ 'glory' fits the 4-char slot after partial ⲛ-; parallels §99 'Eudaimonia of glory.'"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 94,
+      "chapter": 3,
+      "line": 11,
+      "proposed_english": "truth",
+      "coptic_gap_refs": [
+        13,
+        14
+      ],
+      "confidence": "moderate",
+      "basis": "ⲍⲛ̄ ⲟⲩⲙⲏⲉ 'in a truth' — editor's English 'tru-' + the trailing ⲛⲉ confirms truth; final 1-char piece undetermined."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 95,
+      "chapter": 3,
+      "line": 13,
+      "proposed_english": "which is glory",
+      "coptic_gap_refs": [
+        16,
+        17
+      ],
+      "confidence": "low",
+      "basis": "Likely qualifier for the heavenly Eudaimonia paralleling §101 'Sophia which is glory.'"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "proposed_english": "also",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "low",
+      "basis": "Discourse particle ⲍⲱⲱⲥ 'she also,' continuing the pairing motif."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 96,
+      "chapter": 3,
+      "line": 14,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char gap after fragmented ⲉⲙ; no anchor."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 102,
+      "chapter": 3,
+      "line": 21,
+      "proposed_english": "and she came",
+      "coptic_gap_refs": [
+        32
+      ],
+      "confidence": "low",
+      "basis": "Verb of descent matching partial ⲁ...ⲩ; 'the divine going-down' that runs through the aeons."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 106,
+      "chapter": 3,
+      "line": 25,
+      "proposed_english": "of greatness",
+      "coptic_gap_refs": [
+        36
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛ̄ⲧⲙⲛⲧⲛⲁⲟ̄ — the Twelve Aeons of Greatness; 'aeons of greatness' duplicates inner sense already glossed."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 107,
+      "chapter": 3,
+      "line": 26,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        37
+      ],
+      "confidence": "unrestorable",
+      "basis": "Whole-line lacuna with only partial ⲱⲟⲩⲉ; no formula anchors a fill."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 108,
+      "chapter": 3,
+      "line": 27,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        38
+      ],
+      "confidence": "unrestorable",
+      "basis": "Whole-line lacuna of 28 chars with no traces."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 109,
+      "chapter": 3,
+      "line": 28,
+      "proposed_english": "the messenger",
+      "coptic_gap_refs": [
+        40
+      ],
+      "confidence": "low",
+      "basis": "Within partial ⲡⲣⲏ...ⲧⲛ; second epithet of the Sun = Third Ambassador, the divine messenger."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 111,
+      "chapter": 3,
+      "line": 30,
+      "proposed_english": "is",
+      "coptic_gap_refs": [
+        44
+      ],
+      "confidence": "low",
+      "basis": "Bridging copula linking 'second of the Greatness' to 'their Eudaimonia.'"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 112,
+      "chapter": 3,
+      "line": 31,
+      "proposed_english": "theirs",
+      "coptic_gap_refs": [
+        48
+      ],
+      "confidence": "low",
+      "basis": "Clausal terminator binding the Eudaimonia identification to the Living Spirit."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "proposed_english": "She also",
+      "coptic_gap_refs": [
+        49,
+        50
+      ],
+      "confidence": "low",
+      "basis": "Feminine 'she also/in turn' introducing Sophia; ⲍⲱⲱⲥ + subject ⲧⲥⲟⲫⲓⲁ."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 113,
+      "chapter": 3,
+      "line": 32,
+      "proposed_english": "the Spirit then",
+      "coptic_gap_refs": [
+        52
+      ],
+      "confidence": "low",
+      "basis": "Closes the 'mother of the Living [Spirit]' clause and bridges to the next."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "proposed_english": "The living fathers",
+      "coptic_gap_refs": [
+        57,
+        58
+      ],
+      "confidence": "low",
+      "basis": "Editor's reading of ⲓⲉⲩⲉ ⲉⲧⲁⲛⲍ as the opening subject; uncertain at this length."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 117,
+      "chapter": 3,
+      "line": 36,
+      "proposed_english": "and the angels",
+      "coptic_gap_refs": [
+        59,
+        60,
+        61
+      ],
+      "confidence": "low",
+      "basis": "Conjoint phrase paralleling §104, §115, §120."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 118,
+      "chapter": 3,
+      "line": 37,
+      "proposed_english": "Lord of mind, the",
+      "coptic_gap_refs": [
+        62
+      ],
+      "confidence": "low",
+      "basis": "At this register Eudaimonia = Light Mind (ⲡⲛⲁⲃ̄ ⲛ̄ⲛⲟⲩⲥ), 'the mind of the Father.'"
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 124,
+      "chapter": 3,
+      "line": 43,
+      "proposed_english": "of",
+      "coptic_gap_refs": [
+        74
+      ],
+      "confidence": "low",
+      "basis": "Genitive linker between 'great Might is' and 'Five Sons of First Man.'"
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 125,
+      "chapter": 3,
+      "line": 44,
+      "proposed_english": "those whom they call",
+      "coptic_gap_refs": [
+        76,
+        77
+      ],
+      "confidence": "low",
+      "basis": "Calling formula parallel to §106, §109; identifies the Five Sons of First Man."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 126,
+      "chapter": 3,
+      "line": 45,
+      "proposed_english": "belonging to the First Man",
+      "coptic_gap_refs": [
+        78
+      ],
+      "confidence": "low",
+      "basis": "Partial ⲉⲡⲡ suggests ⲉⲡⲡⲱⲁⲣⲡ ⲛⲣⲱⲙⲉ; preserves the Five Sons of First Man motif into the closing 'carries up under the All.'"
+    }
+  ]
+}

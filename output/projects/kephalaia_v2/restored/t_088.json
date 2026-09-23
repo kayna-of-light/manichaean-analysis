@@ -1,0 +1,717 @@
+{
+  "teaching": 88,
+  "total_gaps_in_core": 47,
+  "gaps_restored": 44,
+  "gaps_unrestorable": 3,
+  "restoration_note": "The teaching enumerates the body's structural articulation as the dragon (enthumesis of body): seven sense-organs above (two eyes, two ears, two nostrils, one tongue) on the foremost-bust of the upper-man, seven members of the body below (paired and singular), and five 'caves' of the dragon (tongue, throat, heart, breath, bond) through which it gathers and casts forth. Most restorations are tightly constrained by visible traces, parallel formulas (the recurring 'ⲧⲥⲁϣϩⲃⲉ ⲛⲁⲡⲉ' / 'ⲡⲥⲁϣϥ ⲛⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ' framing), and the symmetric upper-side / lower-side pairing. Genuine difficulties remain at gap 0 (3-char opener with no preceding context), gap 13 (10-char relative clause connector), gaps 23-24 (the unparalleled feminine-dual + singular members of the body's seven-fold list), and the wholly fragmentary section 4982 around 'ⲁⲣⲭⲱⲛ'. Gap 45 (6 chars between 'in them' and 'they shall call') is reconstructed conservatively as ⲧⲏⲣⲟⲩ.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4971,
+      "chapter": 100,
+      "line": 24,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲧⲉ",
+      "basis": "3-char opener at section/line start preceding ⲧⲙⲛⲧⲉϩⲧⲉ. ⲉⲧⲉ ('namely / which is') is the most natural Lycopolitan filler that preserves the feminine determination of the following article (ⲧ-) and does not collide with the demonstrative ⲧⲁⲓ̈, which would absorb the article. Low confidence — could also be a closing copula '·' of a prior question.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 1,
+      "section": 4971,
+      "chapter": 100,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲙⲛⲧⲉϩⲧⲉ",
+      "basis": "Editor's reading: visible ⲧⲙ-...-ⲉϩⲧ- with internal [ⲛⲧ] and [ⲉ] restored. ⲧⲙⲛⲧⲉϩⲧⲉ ('the foremost / fore-rank') is confirmed by the parallel ⲙⲛⲧⲉϩⲧⲉ ⲛⲁⲡⲉ in line 47 and the fixed idiom ⲣ̄ⲙⲛⲧⲉϩⲧⲉ ⲛⲁⲡⲉ in line 38.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4971,
+      "chapter": 100,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲭⲙ̄",
+      "basis": "Editor: visible ⲁⲭ- + restored final ⲙ̄ giving Lyc. ⲁⲭⲙ̄ = Sah. ⲉϫⲛ̄ 'upon.' Required by the following ⲡⲁⲣⲁⲕⲱⲛ ('upon the dragon').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4972,
+      "chapter": 100,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲁⲣⲁⲕⲱⲛ",
+      "basis": "Visible ⲡⲁ- + restored [ⲣⲁⲕⲱⲛ]. The dragon is the governing image of the whole teaching: enthumesis of the body, the seven-fold-of-head's substrate. Confirmed by repeated ⲡⲁⲣⲁⲕⲱⲛ in lines 31, 39, 41, 48.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4972,
+      "chapter": 100,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲍⲓ",
+      "basis": "Editor: visible ⲉⲧ- + restored [ⲍⲓ] = Lyc. ⲉⲧϩⲓ 'which are upon,' continuing into ⲭⲛ̄ ('upon') on the next line. The relative clause governs ⲡⲥⲁϣϥ ⲛⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4973,
+      "chapter": 100,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲡⲉ",
+      "basis": "Editor: visible -ⲡⲉ + restored [ⲧⲁ] = ⲧⲁⲡⲉ 'the head.' The seven sense-organs are 'upon the head of the body.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 4973,
+      "chapter": 100,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧϩ",
+      "basis": "Editor: line-end fragment of ⲉⲧϩⲓⲱⲣⲍ̄ ('which see'), continuing into the next line's ⲓⲱⲣⲍ. Standard relative-qualitative construction.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 4974,
+      "chapter": 100,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ̈ⲱⲣⲍ",
+      "basis": "Editor: line-start completion of ⲉⲧϩⲓⲱⲣⲍ̄ from line 26 — Lyc. qualitative of ⲓⲱⲣϩ 'see.' Required by the dual eye-organs.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 4974,
+      "chapter": 100,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor: definite article ⲡ- before ⲙⲁⲛⲥⲱⲧⲙ̄ 'the place of hearing.' Required by parallelism with ⲡⲙⲁⲛⲓⲱⲣⲍ̄ ('the place of seeing').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 4974,
+      "chapter": 100,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲧ",
+      "basis": "Editor: middle of ⲛⲍⲏⲧⲟⲩ 'in them,' completing into next line's -ⲟⲩ. Required by parallelism with the same prepositional phrase three lines earlier.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 4975,
+      "chapter": 100,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ ⲡⲙⲁ",
+      "basis": "Editor: line-start completion ⲟⲩ (closing ⲛⲍⲏⲧⲟⲩ) + ⲡⲙⲁ (opening ⲡⲙⲁⲛϣⲱⲗⲙⲉ 'the place of smelling'). Required by formal parallel with ⲡⲙⲁⲛⲓⲱⲣⲍ̄ and ⲡⲙⲁⲛⲥⲱⲧⲙ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 4975,
+      "chapter": 100,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ",
+      "basis": "Editor: visible ⲡⲕⲉ- + restored ⲗ, opening ⲡⲕⲉⲗⲉⲥ 'and the tongue' (the seventh sense-organ, completing the standard eyes-ears-nostrils-tongue enumeration).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 4976,
+      "chapter": 100,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲥ",
+      "basis": "Editor: line-start completion of ⲡⲕⲉⲗⲉⲥ from line 28.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 4976,
+      "chapter": 100,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩⲉⲉⲓ ⲡⲉ",
+      "basis": "10-char span connecting singular ⲡⲕⲉⲗⲉⲥ (the tongue) to the relative ⲉϩⲥⲱⲧⲡ ('which chooses'). Since the eye/ear/nostril each used dual ⲥⲛⲉⲩ + relative, the singular tongue requires the singular copular formula 'ⲟⲩⲉⲉⲓ ⲡⲉ' ('it is one [which]…'). Fits ~10 chars with surrounding spacing.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 14,
+      "section": 4977,
+      "chapter": 100,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲍ",
+      "basis": "Editor: line-start completion of ⲛⲍⲏⲧϥ 'in it.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 4978,
+      "chapter": 100,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲓ̈ ⲧⲉ",
+      "basis": "Editor: feminine demonstrative copula 'this is' opening the summative answer-formula. Fits the structure of catechetical reply.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 4978,
+      "chapter": 100,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲑⲏⲧⲏⲣⲓⲟⲛ",
+      "basis": "Editor: completion of ⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ from visible ⲁⲓⲥ-, continuing onto next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 4979,
+      "chapter": 100,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲑⲏⲧ",
+      "basis": "Editor: line-start completion of ⲁⲓⲥⲑⲏⲧⲏⲣⲓⲟⲛ from line 31.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 4979,
+      "chapter": 100,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲡⲉ",
+      "basis": "3-char genitive complement after visible ⲛ̄, specifying ⲡⲣⲱⲙⲉ. The opposition with ⲡⲥⲁⲛⲡⲓⲧⲛⲉ ('lower side') three lines below requires ⲡⲣⲱⲙⲉ ⲛ̄ⲧⲡⲉ ('the man of the upper'). ⲧⲡⲉ = 'the upper / heaven' fits 3 chars exactly.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 4980,
+      "chapter": 100,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲛ ⲡⲣⲱⲙⲉ",
+      "basis": "8-char span paralleling ⲡⲣⲱⲙⲉ ⲛ̄ⲧⲡⲉ from previous line: 'ⲙⲛ ⲡⲣⲱⲙⲉ ⲙ̄ⲡⲥⲁⲛⲡⲓⲧⲛⲉ' = 'and the man of the lower side.' Symmetric upper-man / lower-man pairing structures the whole passage.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 4980,
+      "chapter": 100,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡ",
+      "basis": "Editor: definite-genitive prefix before ⲥⲁⲛⲡⲓⲧⲛⲉ = ⲙ̄ⲡⲥⲁⲛⲡⲓⲧⲛⲉ 'of the lower side.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 4980,
+      "chapter": 100,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲱ",
+      "basis": "Editor: line-end fragment of ⲡⲥⲱⲙⲁ 'the body,' continuing into next line's ⲙⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁ",
+      "basis": "Editor: line-start completion of ⲡⲥⲱⲙⲁ from line 33.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲕⲓⲃⲉ",
+      "basis": "5-char feminine-dual member of the body's seven-fold (followed by ⲥⲛⲧⲉ 'two'). ⲛ̄ⲕⲓⲃⲉ 'breasts' is feminine and pairs naturally with the next item ⲡⲧⲉⲧⲉ ⲥⲛⲉⲩ 'the two haunches' in a corporeal-articulation list. Low confidence: ⲛϭⲓϫ 'hands' and other dual fem nouns are also possible.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 24,
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char line-end completion after visible ⲡ-, opening a singular member-noun whose remainder is lost in the fragmentary section 4982. Without the continuation no fill is constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 4982,
+      "chapter": 100,
+      "line": 35,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Left-edge of fragmentary line; only ⲁⲣⲭⲱⲛ visible with no surrounding context. Cannot constrain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 26,
+      "section": 4982,
+      "chapter": 100,
+      "line": 35,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Right-edge of same fragmentary line; word continuing past ⲁⲣⲭⲱⲛ is wholly lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 27,
+      "section": 4983,
+      "chapter": 100,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲥⲁ",
+      "basis": "Editor: visible -ϣϩⲉ + restored [ⲧⲥⲁ] = ⲧⲥⲁϣϩⲉ 'the seven-fold,' parallel to ⲧⲥⲁϣϩⲃⲉ in line 31.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 4983,
+      "chapter": 100,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲡⲉ ⲉⲧⲛ",
+      "basis": "Editor: line-end matching the parallel formula ⲧⲥⲁϣϩⲃⲉ ⲛⲁⲡⲉ in line 31; ⲉⲧⲛ- introduces the relative clause continuing on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 4984,
+      "chapter": 100,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲡⲉ",
+      "basis": "Editor: visible -ⲡⲉ + restored ⲧ. ⲧⲡⲉ 'heaven / the upper' is the cosmological pole opposite ⲛⲁⲡⲓⲧⲛ̄ 'those below' that follows in the same line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 4984,
+      "chapter": 100,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉϩⲧⲉ",
+      "basis": "Editor: completion of the idiom ⲣ̄ⲙⲛⲧⲉϩⲧⲉ ⲛⲁⲡⲉ 'act as foremost-of-head,' continuing into line 39's ⲛⲁⲡⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 4985,
+      "chapter": 100,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲟ",
+      "basis": "Editor: line-end + line-40 visible ⲟⲥ giving ⲭⲟⲟⲥ 'they have spoken' (Lyc. = ϫⲟⲟⲥ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 4986,
+      "chapter": 100,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor: single letter completing ⲁⲭⲱⲩ = ⲉϫⲱⲟⲩ 'upon them.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 4987,
+      "chapter": 100,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲗⲉⲥ",
+      "basis": "Editor: visible ⲗⲉ + restored ⲡ and ⲥ. ⲡⲗⲉⲥ 'the tongue' (Lyc. ⲗⲉⲥ = Sah. ⲗⲁⲥ) is the canonical first 'cave' of the dragon-of-enthumesis schema.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 4988,
+      "chapter": 100,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲍⲏⲧ",
+      "basis": "Editor: visible ⲡⲍ + restored ⲏⲧ. ⲡⲍⲏⲧ 'the heart' is the third member of the body-cave schema, between throat (2nd) and breath (4th).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 4989,
+      "chapter": 100,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲛⲁϩ ⲉⲧ",
+      "basis": "Editor: line-end ⲡⲥ visible + restored ⲛⲁϩ ⲉⲧ. ⲡⲥⲛⲁϩ 'the bond/fastening' (lexicon: 'what holds in place') as the fifth cave; the relative ⲉⲧ- continues into ⲟⲩⲏⲍ ('is set') on the next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 4990,
+      "chapter": 100,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛϩ",
+      "basis": "Editor: conjunctive prefix continuing into next line's ⲟⲩⲱⲛⲍ̄ giving ⲛϩⲟⲩⲱⲛⲍ̄ 'and (it) reveals.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 4991,
+      "chapter": 100,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Editor: single-letter line-start of ⲟⲩⲱⲛⲍ̄ ⲁⲃⲁⲗ 'reveals forth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 4991,
+      "chapter": 100,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲁⲛⲧⲡⲉ",
+      "basis": "Editor: visible ⲡ at line-end + ⲥⲁⲛ + ⲧ on next line + visible ⲡⲉ. ⲡⲥⲁⲛⲧⲡⲉ 'the upper side,' paired with ⲡⲥⲁⲙⲡⲧⲛ 'the lower side' on the following line. Standard upper/lower opposition of the dragon's vertical war.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 4992,
+      "chapter": 100,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor: single letter completing ⲡⲥⲁⲛⲧⲡⲉ from line 45.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 4992,
+      "chapter": 100,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ",
+      "basis": "Editor: line-end ⲍⲛ̄ (= Lyc. for ϩⲛ̄ 'in') continuing into line 47's ⲧⲉϩⲙⲛⲧⲉϩⲧⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 4993,
+      "chapter": 100,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor: single line-start letter completing ⲧⲉϩⲙⲛⲧⲉϩⲧⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 42,
+      "section": 4993,
+      "chapter": 100,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Editor: ⲍⲙ̄ at line-end (Lyc. = ϩⲙ̄ 'in'), continuing into ⲡⲁⲣⲁⲕⲱⲛ on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 4995,
+      "chapter": 100,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲃⲉ",
+      "basis": "Editor: visible ⲍⲱ + restored ⲧⲃⲉ giving ⲍⲱⲧⲃⲉ (Lyc. for ϩⲱⲧⲃ̄) 'slay/kill,' continuing into line 50's ⲙ̄|ⲙⲁⲥ 'her.' The soul that recognizes the dragon-enthumesis prevails over and slays her.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 4996,
+      "chapter": 100,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁⲥ",
+      "basis": "Editor: visible ⲁ + restored ⲙ and ⲥ at line-start, completing ⲙ̄|ⲙⲁⲥ 'her' (object pronoun, fem., = the dragon/enthumesis).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 4996,
+      "chapter": 100,
+      "line": 50,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲏⲣⲟⲩ",
+      "basis": "6-char span between ⲛⲍⲏⲧⲟⲩ ('in them') and ⲉⲩⲙⲟⲩⲧⲉ ⲁ ('they shall call'). ⲧⲏⲣⲟⲩ 'all' is the most natural 6-letter intensifier modifying ⲛⲍⲏⲧⲟⲩ ('in them all'). Low confidence — could also be a temporal connective like ⲧⲟⲧⲉ.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 46,
+      "section": 4996,
+      "chapter": 100,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲙⲟⲩⲧⲉ ⲁ",
+      "basis": "Editor: continues into next line's ⲣⲁϩ giving ⲉⲩⲙⲟⲩⲧⲉ ⲁⲣⲁϩ 'they shall call to him,' introducing direct speech of acclamation by those who recognize.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4971,
+      "chapter": 100,
+      "line": 24,
+      "core_english": "{0} the foremost-of-head itself, which is stretched upon"
+    },
+    {
+      "section": 4972,
+      "chapter": 100,
+      "line": 25,
+      "core_english": "the dragon. These are: the seven sense-organs which are upon"
+    },
+    {
+      "section": 4973,
+      "chapter": 100,
+      "line": 26,
+      "core_english": "the head of the body — namely, two are the places of seeing which"
+    },
+    {
+      "section": 4974,
+      "chapter": 100,
+      "line": 27,
+      "core_english": "see in them; the two places of hearing which hear in"
+    },
+    {
+      "section": 4975,
+      "chapter": 100,
+      "line": 28,
+      "core_english": "them; the place of smelling, two which smell in them; and the"
+    },
+    {
+      "section": 4976,
+      "chapter": 100,
+      "line": 29,
+      "core_english": "tongue {1} which chooses in it, taking"
+    },
+    {
+      "section": 4977,
+      "chapter": 100,
+      "line": 30,
+      "core_english": "in it the tastes which are varied, that exist in every likeness."
+    },
+    {
+      "section": 4978,
+      "chapter": 100,
+      "line": 31,
+      "core_english": "This is the seven-fold of head of the dragon — the seven sense-"
+    },
+    {
+      "section": 4979,
+      "chapter": 100,
+      "line": 32,
+      "core_english": "organs which are upon the foremost-bust of the man of the upper side"
+    },
+    {
+      "section": 4980,
+      "chapter": 100,
+      "line": 33,
+      "core_english": "and the man of the lower side. The seven-fold which are of the bo-"
+    },
+    {
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "core_english": "dy are these: the two {2}; the two haunches; the {3}"
+    },
+    {
+      "section": 4982,
+      "chapter": 100,
+      "line": 35,
+      "core_english": "{4} archon {5}"
+    },
+    {
+      "section": 4983,
+      "chapter": 100,
+      "line": 37,
+      "core_english": "the seven-fold of head which..."
+    },
+    {
+      "section": 4984,
+      "chapter": 100,
+      "line": 38,
+      "core_english": "Heaven indeed and those below — they shall be perfected and act as foremost-"
+    },
+    {
+      "section": 4985,
+      "chapter": 100,
+      "line": 39,
+      "core_english": "of-head over the dragon, his five caves which they have spoken"
+    },
+    {
+      "section": 4986,
+      "chapter": 100,
+      "line": 40,
+      "core_english": "concerning them, that he gathers them inward and casts them forth upon them"
+    },
+    {
+      "section": 4987,
+      "chapter": 100,
+      "line": 41,
+      "core_english": "by the dragon. They themselves are these: the first is the tongue;"
+    },
+    {
+      "section": 4988,
+      "chapter": 100,
+      "line": 42,
+      "core_english": "the second is the throat; the third is the heart;"
+    },
+    {
+      "section": 4989,
+      "chapter": 100,
+      "line": 43,
+      "core_english": "the fourth is the breath; the fifth is the bond which"
+    },
+    {
+      "section": 4990,
+      "chapter": 100,
+      "line": 44,
+      "core_english": "is set within them, which also peers forth from them and"
+    },
+    {
+      "section": 4991,
+      "chapter": 100,
+      "line": 45,
+      "core_english": "reveals his likeness forth, with the contemplation of the upper"
+    },
+    {
+      "section": 4992,
+      "chapter": 100,
+      "line": 46,
+      "core_english": "side and the lower side, making a war in"
+    },
+    {
+      "section": 4993,
+      "chapter": 100,
+      "line": 47,
+      "core_english": "his foremost-of-head. He who shall recognize them in"
+    },
+    {
+      "section": 4995,
+      "chapter": 100,
+      "line": 49,
+      "core_english": "the body — and shall fight with her and prevail over her and slay"
+    },
+    {
+      "section": 4996,
+      "chapter": 100,
+      "line": 50,
+      "core_english": "her in them {6}, they shall call to him"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4971,
+      "chapter": 100,
+      "line": 24,
+      "proposed_english": "namely",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "low",
+      "basis": "Renders proposed Coptic ⲉⲧⲉ as the explanatory connective 'namely / which is.' Low confidence — the 3-char opener could also be a sentence-closing copula carried over from a lost question."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4976,
+      "chapter": 100,
+      "line": 29,
+      "proposed_english": "is one",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "moderate",
+      "basis": "Renders proposed Coptic ⲟⲩⲉⲉⲓ ⲡⲉ — the singular copular formula needed because the tongue is the seventh, single sense-organ (whereas eyes/ears/nostrils each used dual ⲥⲛⲉⲩ + relative)."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "proposed_english": "breasts",
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "low",
+      "basis": "Renders proposed Coptic ⲛ̄ⲕⲓⲃⲉ as the feminine-dual first item of the body's seven-fold list. Low confidence — could equally be 'hands' (ⲛϭⲓϫ) or another paired feminine member."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4981,
+      "chapter": 100,
+      "line": 34,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "Singular masculine member at line-end, broken off into fragmentary section 4982; no constraint."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4982,
+      "chapter": 100,
+      "line": 35,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "unrestorable",
+      "basis": "Left edge of fragmentary line; cannot reconstruct surrounding word."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4982,
+      "chapter": 100,
+      "line": 35,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "unrestorable",
+      "basis": "Right edge of fragmentary line; cannot reconstruct surrounding word."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 4996,
+      "chapter": 100,
+      "line": 50,
+      "proposed_english": "all",
+      "coptic_gap_refs": [
+        45
+      ],
+      "confidence": "low",
+      "basis": "Renders proposed Coptic ⲧⲏⲣⲟⲩ as intensifier of ⲛⲍⲏⲧⲟⲩ ('in them all'), marking that the soul prevails over the dragon in every one of its openings. Low confidence."
+    }
+  ]
+}

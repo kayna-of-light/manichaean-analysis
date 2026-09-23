@@ -1,0 +1,89 @@
+{
+  "chapter_number": 33,
+  "manuscript_pages": "86,18 - 86,30",
+  "coptic_tokens": 211,
+  "greek_loanwords": {
+    "total_density_pct": 3.32,
+    "cosmological_density_pct": 1.9,
+    "ecclesiastical_density_pct": 1.42,
+    "cosmological_ratio": 0.571,
+    "cosmological_count": 4,
+    "ecclesiastical_count": 3,
+    "general_count": 0,
+    "total_greek": 7,
+    "cosmological_words": {
+      "ⲁⲱⲛ": 1,
+      "ⲥⲱⲙⲁ": 2,
+      "ⲕⲟⲥⲙⲟⲥ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 42,
+    "sahidic_count": 15,
+    "total_dialect_markers": 57,
+    "subachmimic_ratio": 0.737,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×10",
+      "ⲍⲛ̄×7",
+      "ⲁⲍ×9",
+      "ⲍⲓ×2",
+      "ⲍⲁ×3",
+      "ⲍⲏⲧ×1",
+      "ⲍⲱⲃ×5",
+      "ⲍⲣⲏ×1",
+      "ⲍⲉ×1",
+      "ⲍⲁⲉ×1",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ⲁϩ×9",
+      "ϩⲁ×2",
+      "ϩⲉ×3",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 38,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 8,
+    "bracketed_restorations": 53,
+    "empty_brackets": 4,
+    "leer_markers": 8
+  },
+  "english_classification": {
+    "chapter_number": 33,
+    "chapter_title": "Concerning the Five Things that he constructed with the hard Bodies of the Rulers",
+    "total_paragraphs": 6,
+    "core_paragraphs": 6,
+    "core_percentage": 93,
+    "chapter_note": "This is a remarkably clean substrate chapter — a brief, systematic five-fold cosmological enumeration with minimal editorial overlay. The only non-substrate material is the dialogue frame attribution in paragraph 1. The teaching maps demon body parts (veins, skulls) to cosmic architectural structures (disc, arches, mould, pillars, walls). Both sides of every mapping stay entirely within the cosmic system. No editorial bridge, no institutional content, no exhortation. The negative editorial fatigue score (-2.72) confirms substrate dominance throughout, with substrate density actually increasing in the second half. This chapter preserves the oldest teaching layer nearly intact.",
+    "classification_distribution": {
+      "mixed": 1,
+      "substrate": 5
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (93%) with high cosmological Greek ratio (0.57)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

@@ -1,0 +1,769 @@
+{
+  "teaching": 11,
+  "total_gaps_in_core": 31,
+  "gaps_restored": 25,
+  "gaps_unrestorable": 6,
+  "restoration_note": "The teaching is a doxological litany: 'The Origin (ⲧⲁⲣⲭⲏ) of all X is [Title of the Lord]'. The repeating frame strongly constrains the early fills (ⲧⲁⲣⲭⲏ, ⲧⲏⲣⲟⲩ, ⲡ-, ⲙⲛ̄). The named registers (Father of Greatness, Mother of Life, Third Ambassador/King of Glory, Beloved of Lights, First Man, Living Spirit/Father of Life, Great Builder, Living Spirit upholding Omophoroi, Jesus the Radiance as Releaser, Virgin of Light, Mind of Light) are recoverable from the litany pattern and from explicit cues like 'looses to raise those bound by his words' (Jesus the Radiance) and 'awakener of the sleepers; gatherer-to-recognition' (Light Mind). The latter half (Sections 622–629) is a damaged climactic peroration about all lights, lives, and souls being under the Mind of Light's hand; the terminal lacunae beyond standard line-break joins ({22}–{24}, {27}–{29}) lack enough trace to constrain a fill and are left unrestorable.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 600,
+      "chapter": 11,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲣⲭ",
+      "basis": "Editor restoration; the structuring formula ⲧⲁⲣⲭⲏ ⲛ̄… ⲧⲏⲣⲟⲩ ⲡⲉ X 'the beginning of all X is Y' opens every paragraph of this teaching.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 601,
+      "chapter": 11,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲛ̄",
+      "basis": "Definite article + ⲛ̄- before ⲛⲁⲟ̄, completing ⲡⲛⲁⲟ̄ ⲛ̄ⲓⲱⲧ 'the Great Father' (Father of Greatness).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 601,
+      "chapter": 11,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁⲓ̈",
+      "basis": "Editor restoration completing ⲛ̄ⲛ̄ⲟⲩⲁⲓⲛⲉ 'of the Lights'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 601,
+      "chapter": 11,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲙⲁⲧ",
+      "basis": "Editor restoration; mirrors ⲛ̄ⲍⲙⲁⲧ ⲧⲏⲣⲟⲩ 'all the gifts' from the opening line — the Father of Greatness is the hand by which every gift is given.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 602,
+      "chapter": 11,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration: initial ⲧ- of ⲧⲏⲣⲟⲩ continued from ⲛ̄ⲍⲙⲁⲧ ⲧⲏⲣⲟⲩ across the line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 605,
+      "chapter": 11,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲣⲭⲏ ⲍⲱϩ ⲛ̄ⲛ̄ⲥⲩⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ ⲉⲧ",
+      "basis": "Editor restoration; the litany resumes 'Likewise (ⲍⲱϩ), the beginning of all the counsels which (are beautiful)…' — counsels (ⲥⲩⲙⲃⲟⲩⲗⲓⲁ/ⲥⲁⲭⲛⲉ) are the faculty proper to the Third Ambassador as Great Counsel.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 605,
+      "chapter": 11,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍϣⲁⲙⲧ",
+      "basis": "Editor restoration; ⲡⲙⲁⲍϣⲁⲙⲧ 'the Third' begins the title ⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ continued in the next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 606,
+      "chapter": 11,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "basis": "Editor restoration; completes the standard title 'Third Ambassador', who is then identified as 'the King of Glory who is set in the cosmos'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 606,
+      "chapter": 11,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲟⲥⲙⲟⲥ",
+      "basis": "Editor restoration; ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the cosmos' is the standard locus of the King of Glory's setting.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 607,
+      "chapter": 11,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Six-character lacuna with only faint traces. The phrase '… of the King of the Lights' could be 'son' (ⲡⲱⲏⲣⲉ), 'right hand' (ⲧⲟⲩⲛⲉⲙ), or 'glory' (ⲡⲉⲁⲩ); without partial letters fixing the word, no fill is genuinely constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 609,
+      "chapter": 11,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲣⲭⲏ ⲛ̄ⲡⲉⲁⲩ ⲙⲛ̄ ⲡⲧⲁⲓ",
+      "basis": "Editor restoration: ends in -ⲟ to give ⲧⲁⲓⲟ 'honor'; the litany head ⲧⲁⲣⲭⲏ ⲛ̄ⲡⲉⲁⲩ ⲙⲛ̄ ⲡⲧⲁⲓⲟ ⲛⲓⲙ 'beginning of every glory and honor' fits the Beloved of Lights as the register where divine love is recognized and returned.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 611,
+      "chapter": 11,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲧ· ⲧⲁⲣⲭⲏ ⲛ̄ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ ⲧⲏ",
+      "basis": "Editor restoration; ⲓⲧ closes ⲉⲡⲧⲁⲓⲁⲓⲧ from prev line, then the formula resumes with ⲧⲁⲣⲭⲏ ⲛ̄… ⲧⲏⲣⲟⲩ. Watchers (ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ) paired with hunters (ⲕⲩⲛⲏⲅⲟⲥ) anticipate First Man as warrior in the next line.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 12,
+      "section": 612,
+      "chapter": 11,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲱⲙⲉ ⲧⲁⲣⲭⲏ ⲛ̄ⲛ̄ⲭⲁ",
+      "basis": "Editor restoration: ⲣⲱⲙⲉ closes ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'First Man'; the next litany head 'origin of all the [warriors]' fits ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ as the principle of every contender in the rational. ⲭⲁⲙⲗⲁⲍ is the rare term completed by the visible -ⲙⲗⲁⲍ.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 13,
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲡⲛⲁ",
+      "basis": "Editor restoration; the predicate that follows — 'which is alive, the Father of life, who has poured forth … five sons' — is the standard description of the Living Spirit (ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄) as Father of Life with his Five Sons.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Definite article: ⲡⲱⲛⲥ 'the life' as object of ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛⲥ 'Father of Life'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ ⲁⲃⲁⲗ",
+      "basis": "Editor restoration; ⲥⲱⲣ ⲁⲃⲁⲗ 'pour/scatter forth' — the Father of Life pouring forth his five sons in every place.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 614,
+      "chapter": 11,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Editor restoration; ⲙ̄ⲡⲉϩⲧⲟⲩ ⲛ̄ϣⲏⲣⲉ 'his five sons' is regular Lyc. possessive construction.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 614,
+      "chapter": 11,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲕⲧⲱⲛ",
+      "basis": "Editor restoration; ⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ 'architects' broken across line, identified as the Great Builder's order.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 617,
+      "chapter": 11,
+      "line": 21,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛⲧⲛⲁⲟ̄",
+      "basis": "ⲧⲙ- begins ⲧⲙⲛⲧⲛⲁⲟ̄ 'the Greatness'; the Omophoroi belong 'of the Greatness' as bearing-up principles supporting the rational from below the King of Greatness.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 618,
+      "chapter": 11,
+      "line": 23,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲉ ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄·",
+      "basis": "Closes the previous sentence: 'the unique upholder of all the Omophoroi of the Greatness is the Living Spirit.' The Living Spirit is the operative power that orders and supports the rational, and stands as the Lord behind every upholder.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 20,
+      "section": 618,
+      "chapter": 11,
+      "line": 23,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲡⲉ ⲓⲏⲥ ⲡⲡⲣⲓⲉ",
+      "basis": "The next clause names 'the one who looses to raise those who are bound by his words' — Jesus the Radiance, divine truth illumining and freeing the rational by spoken truth; he is therefore the origin of all the Releasers (ⲣⲉϩⲃⲱⲗ).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 21,
+      "section": 619,
+      "chapter": 11,
+      "line": 24,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Trailing fragment between 'those who are bound' and 'by his words' on the next line; could be ⲍⲛ̄ ⲡⲟⲩⲥⲛⲁⲍ 'in their bond' or simply a connective. No partial letters constrain the fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 22,
+      "section": 622,
+      "chapter": 11,
+      "line": 27,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲧⲁⲣⲭⲏ ⲛ̄ⲛ̄",
+      "basis": "Begins the next litany cycle. The chapter's repeating head ⲧⲁⲣⲭⲏ ⲛ̄ⲛ̄… ⲧⲏⲣⲟⲩ is the only constrained material; the noun continued in {23} as -ⲓⲥⲧⲁⲛⲟⲥ is unidentified.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 23,
+      "section": 623,
+      "chapter": 11,
+      "line": 28,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Word ending in -ⲓⲥⲧⲁⲛⲟⲥ is unidentified — possibly a Persian-form titular term for an order subordinate to the Mind of Light. No corpus parallel fixes it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 24,
+      "section": 623,
+      "chapter": 11,
+      "line": 28,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲧⲏⲣⲟⲩ ⲡⲉ",
+      "basis": "The litany frame requires ⲧⲏⲣⲟⲩ closing the noun phrase and ⲡⲉ introducing the predicate 'is the Mind of Light' that follows.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 25,
+      "section": 624,
+      "chapter": 11,
+      "line": 29,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲉ ⲛ̄ⲛⲉⲧ",
+      "basis": "Joins ⲡⲣⲉϩⲛⲉⲥⲥⲉ to ⲛ̄ⲛⲉⲧⲛ̄ⲕⲁⲧⲉ 'awakener of those who sleep' across the line break — Light Mind awakening sleepers is the lexicon's stable description.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 26,
+      "section": 625,
+      "chapter": 11,
+      "line": 30,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲏ",
+      "basis": "Single letter completing ⲛⲉⲧⲭⲏⲣ ⲁⲃⲁⲗ 'those scattered forth' — the Light Mind gathers back into recognition what self-love had scattered.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 27,
+      "section": 626,
+      "chapter": 11,
+      "line": 31,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Trailing ⲁⲣ- before ⲛ̄ⲛⲓⲁⲧⲉ 'of the eyes' is not constrained by formula or trace; could be a particle or the start of a noun. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 627,
+      "chapter": 11,
+      "line": 32,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "'since they are N of all the lights and lives' — the noun could be source/wellspring/kings/sons. No trace fixes the word.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 628,
+      "chapter": 11,
+      "line": 33,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Conjunction ⲉⲣⲉ ⲛ- expects a noun phrase carried into next line's ⲛ̄ⲧⲩⲭⲁⲩⲉ ⲧⲏⲣⲟⲩ 'all the souls'. Without trace, no fill is constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 30,
+      "section": 629,
+      "chapter": 11,
+      "line": 34,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲁ",
+      "basis": "ⲡⲉⲧⲛⲁ-ⲟⲩⲱⲛⲟⲩ 'who will open them' — future relative — joining ⲡⲉⲧⲛ- across the line to the verb ⲟⲩⲱⲛⲟⲩ on the next line.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 600,
+      "chapter": 11,
+      "line": 4,
+      "core_english": "The {0} of all the beautiful gifts is the"
+    },
+    {
+      "section": 601,
+      "chapter": 11,
+      "line": 5,
+      "core_english": "Great Father of the Lights, since by his hand are given all the {1}."
+    },
+    {
+      "section": 602,
+      "chapter": 11,
+      "line": 6,
+      "core_english": ""
+    },
+    {
+      "section": 605,
+      "chapter": 11,
+      "line": 9,
+      "core_english": "{2} which are beautiful is the {3}"
+    },
+    {
+      "section": 606,
+      "chapter": 11,
+      "line": 10,
+      "core_english": "{4}, the King of Glory who is set in the {5}"
+    },
+    {
+      "section": 607,
+      "chapter": 11,
+      "line": 11,
+      "core_english": "{6} of the King of the Lights."
+    },
+    {
+      "section": 609,
+      "chapter": 11,
+      "line": 13,
+      "core_english": "{7} every honor is the Beloved of the Lights."
+    },
+    {
+      "section": 611,
+      "chapter": 11,
+      "line": 15,
+      "core_english": "{8} is the First"
+    },
+    {
+      "section": 612,
+      "chapter": 11,
+      "line": 16,
+      "core_english": "{9} of all the warriors he is."
+    },
+    {
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "core_english": "{10} which is alive, the Father of life, who has poured {11}"
+    },
+    {
+      "section": 614,
+      "chapter": 11,
+      "line": 18,
+      "core_english": "{12} five sons in every place. The Origin of all the archi-"
+    },
+    {
+      "section": 617,
+      "chapter": 11,
+      "line": 21,
+      "core_english": "The unique upholder of all the Omophoroi of the {13}"
+    },
+    {
+      "section": 618,
+      "chapter": 11,
+      "line": 23,
+      "core_english": "{14} The Origin of all the Releasers {15}"
+    },
+    {
+      "section": 619,
+      "chapter": 11,
+      "line": 24,
+      "core_english": "— or, the one who looses to raise those who are bound{16}"
+    },
+    {
+      "section": 622,
+      "chapter": 11,
+      "line": 27,
+      "core_english": "the Truth, is the Virgin of Light. {17}"
+    },
+    {
+      "section": 623,
+      "chapter": 11,
+      "line": 28,
+      "core_english": "{18}ates who are honored{19}"
+    },
+    {
+      "section": 624,
+      "chapter": 11,
+      "line": 29,
+      "core_english": "is the Mind of Light, he who is the awakener {20}"
+    },
+    {
+      "section": 625,
+      "chapter": 11,
+      "line": 30,
+      "core_english": "sleepers; the gatherer-to-recognition of those {21}scattered forth,"
+    },
+    {
+      "section": 626,
+      "chapter": 11,
+      "line": 31,
+      "core_english": "reaching to the feet of him in whom the eye is not blinded{22}"
+    },
+    {
+      "section": 627,
+      "chapter": 11,
+      "line": 32,
+      "core_english": "of the eyes — established firm in him, since they are{23}"
+    },
+    {
+      "section": 628,
+      "chapter": 11,
+      "line": 33,
+      "core_english": "all the lights and all the lives, while{24}"
+    },
+    {
+      "section": 629,
+      "chapter": 11,
+      "line": 34,
+      "core_english": "souls all are under their hand. Coming to the feet of him who {25} open them"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 600,
+      "chapter": 11,
+      "line": 4,
+      "proposed_english": "beginning",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲁⲣⲭⲏ — head of every paragraph in this litany."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 601,
+      "chapter": 11,
+      "line": 5,
+      "proposed_english": "gifts",
+      "coptic_gap_refs": [
+        3,
+        4
+      ],
+      "confidence": "high",
+      "basis": "ⲍⲙⲁⲧ ⲧⲏⲣⲟⲩ 'all the gifts' — the Father of Greatness as hand by which every gift is given. The ⲧ- of {4} folds into 'all'."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 605,
+      "chapter": 11,
+      "line": 9,
+      "proposed_english": "Likewise, the beginning of all the counsels",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "high",
+      "basis": "Editor restoration of the repeated litany head with ⲍⲱϩ 'likewise'; counsels (ⲥⲩⲙⲃⲟⲩⲗⲓⲁ) are the faculty governed by the Third Ambassador as Great Counsel."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 605,
+      "chapter": 11,
+      "line": 9,
+      "proposed_english": "Third",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲙⲁⲍϣⲁⲙⲧ 'the Third', completing the title carried into the next line."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 606,
+      "chapter": 11,
+      "line": 10,
+      "proposed_english": "Ambassador",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ — Third Ambassador, then identified as King of Glory."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 606,
+      "chapter": 11,
+      "line": 10,
+      "proposed_english": "cosmos",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲕⲟⲥⲙⲟⲥ — the King of Glory's accommodated locus."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 607,
+      "chapter": 11,
+      "line": 11,
+      "proposed_english": "…",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "unrestorable",
+      "basis": "Six-letter lacuna with only faint traces; no constrained fill."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 609,
+      "chapter": 11,
+      "line": 13,
+      "proposed_english": "The beginning of every glory and",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲁⲣⲭⲏ ⲛ̄ⲡⲉⲁⲩ ⲙⲛ̄ ⲡⲧⲁⲓⲟ ⲛⲓⲙ 'beginning of every glory and honor' — Beloved of Lights as register where love is recognized and returned."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 611,
+      "chapter": 11,
+      "line": 15,
+      "proposed_english": "the honored. The beginning of all the watchers and the hunters",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "moderate",
+      "basis": "Closes ⲉⲡⲧⲁⲓⲁⲓⲧ 'the honored' from prev line and resumes the litany; watchers (ⲛⲉⲅⲣⲏⲅⲟⲣⲟⲥ) paired with hunters anticipates First Man as the principle of every contender."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 612,
+      "chapter": 11,
+      "line": 16,
+      "proposed_english": "Man, the origin",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "moderate",
+      "basis": "ⲣⲱⲙⲉ closes 'First Man' and the next litany head 'origin of all the warriors' opens; First Man is the principle of every faculty that contends in the rational."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "proposed_english": "The Spirit",
+      "coptic_gap_refs": [
+        13,
+        14
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄ — Living Spirit, Father of Life with his five sons. The article {14} is morphology absorbed into 'the'."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 613,
+      "chapter": 11,
+      "line": 17,
+      "proposed_english": "forth",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "high",
+      "basis": "ⲥⲱⲣ ⲁⲃⲁⲗ 'pour/scatter forth'."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 614,
+      "chapter": 11,
+      "line": 18,
+      "proposed_english": "his",
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "high",
+      "basis": "ⲙ̄ⲡⲉϩⲧⲟⲩ — possessive 'his five sons'."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 617,
+      "chapter": 11,
+      "line": 21,
+      "proposed_english": "Greatness.",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲙⲛⲧⲛⲁⲟ̄ — Omophoroi of the Greatness, the bearing-up principles supporting the rational from below the divine register of greatness."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 618,
+      "chapter": 11,
+      "line": 23,
+      "proposed_english": "is the Living Spirit.",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "moderate",
+      "basis": "Closes the previous sentence: the unique upholder behind every Omophoros is the Living Spirit, the operative power ordering and sustaining the rational."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 618,
+      "chapter": 11,
+      "line": 23,
+      "proposed_english": "is Jesus the Radiance.",
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "moderate",
+      "basis": "The next clause defines this title: 'the one who looses to raise those bound by his words' — divine truth illumining and freeing the rational by spoken truth."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 619,
+      "chapter": 11,
+      "line": 24,
+      "proposed_english": "…",
+      "coptic_gap_refs": [
+        21
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing fragment with no constraining trace."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 622,
+      "chapter": 11,
+      "line": 27,
+      "proposed_english": "The beginning of all the",
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "low",
+      "basis": "Litany head resumes; the noun (ending in -ⲓⲥⲧⲁⲛⲟⲥ in {23}) is unidentified."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 623,
+      "chapter": 11,
+      "line": 28,
+      "proposed_english": "…",
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word ending -ⲓⲥⲧⲁⲛⲟⲥ has no corpus parallel that fixes the order being named."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 623,
+      "chapter": 11,
+      "line": 28,
+      "proposed_english": ", all of them,",
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "moderate",
+      "basis": "ⲧⲏⲣⲟⲩ ⲡⲉ — the litany frame's 'all of them, is …' bridging into the predicate 'is the Mind of Light' on the next line."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 624,
+      "chapter": 11,
+      "line": 29,
+      "proposed_english": "of those who",
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "moderate",
+      "basis": "Joins 'awakener' to 'sleepers' on the next line — ⲡⲣⲉϩⲛⲉⲥⲥⲉ ⲛ̄ⲛⲉⲧⲛ̄ⲕⲁⲧⲉ; Light Mind awakening sleepers is the stable register."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 625,
+      "chapter": 11,
+      "line": 30,
+      "proposed_english": "scat-",
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "low",
+      "basis": "ⲛⲉⲧⲭⲏⲣ ⲁⲃⲁⲗ 'those scattered forth' — Light Mind gathering back into recognition what self-love had scattered."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 626,
+      "chapter": 11,
+      "line": 31,
+      "proposed_english": "…",
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "unrestorable",
+      "basis": "ⲁⲣ- with no constraining trace; could be a particle or noun-start."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 627,
+      "chapter": 11,
+      "line": 32,
+      "proposed_english": "…",
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "Predicate 'they are N of all the lights and lives' — noun not constrained by trace."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 628,
+      "chapter": 11,
+      "line": 33,
+      "proposed_english": "the",
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "ⲉⲣⲉ ⲛ- expects a noun phrase carried into the next line's 'all the souls'; without trace, no fill constrained. English placeholder kept minimal."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 629,
+      "chapter": 11,
+      "line": 34,
+      "proposed_english": "will",
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲉⲧⲛⲁ-ⲟⲩⲱⲛⲟⲩ — future relative 'who will open them', the eight-fold opening into the new aeon."
+    }
+  ]
+}

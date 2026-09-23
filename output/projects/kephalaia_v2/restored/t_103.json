@@ -1,0 +1,91 @@
+{
+  "teaching": 103,
+  "total_gaps_in_core": 3,
+  "gaps_restored": 3,
+  "gaps_unrestorable": 0,
+  "restoration_note": "This teaching states the foundational doctrine of the Two Substances/Two Essences as it stood in the oldest substrate: light and darkness as the two conditions of the soul (what is given vs. what is claimed). The standard Manichaean formula uses three parallel pairs — Light/Darkness, beautiful/bitter, life/death — which fully constrains the gaps. Gap 0 is the copular ⲛⲉ binding subject to predicate; gap 1 completes ⲡⲟⲩⲁⲓ̈ⲛⲉ wrapping across the line break (as the editor recognized, though the gap labeling required reassignment); gap 2 carries the second and third pairs into ⲡⲙⲟⲩ on the following line.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5501,
+      "chapter": 120,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Copular ⲛⲉ binding the plural subject ⲛⲉⲧϣⲟⲟⲡ ⲛ̄ⲧⲁⲣⲭⲏ ('those existing from the beginning') to the predicate ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲙⲛ̄ ⲡⲕⲉⲕⲉ. The standard Kephalaia copular construction for plural subjects in dualistic catalogues. The editor's proposal of ⲡⲟⲩⲁⲓ̈ apparently belongs to the wrap of ⲡⲟⲩⲁⲓ̈ⲛⲉ across the line, which is encoded in gap {1}; gap {0} is the connecting predicator.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5501,
+      "chapter": 120,
+      "line": 4,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲟⲩⲁⲓ̈",
+      "basis": "ⲡ is the visible trace at line-end and ⲛⲉ begins the next line; the word being split is ⲡⲟⲩⲁⲓ̈ⲛⲉ ('the Light'), the obligatory first member of the dualistic pair light/darkness in the Two Substances doctrine. Editor's note explicitly identifies this as 'ⲡⲟⲩⲁⲓⲛⲉ continuing into ⲛⲉ on line 29.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5502,
+      "chapter": 120,
+      "line": 5,
+      "gap_type": "unknown",
+      "proposed_coptic": "ϣⲉ ⲡⲱⲛϩ ⲙⲛ̄",
+      "basis": "Completes ⲡⲉⲧⲥⲁϣⲉ ('the bitter') and continues the standard Manichaean triple-pair formula. With ⲡⲙⲟⲩ alone in section 5503, we need ⲡⲱⲛϩ ⲙⲛ̄ ⲡⲙⲟⲩ ('life and the death') as the third pair, paralleling Light/Darkness and beautiful/bitter. The triadic catalogue ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲙⲛ̄ ⲡⲕⲉⲕⲉ / ⲡⲉⲧⲁⲛⲓⲧ ⲙⲛ̄ ⲡⲉⲧⲥⲁϣⲉ / ⲡⲱⲛϩ ⲙⲛ̄ ⲡⲙⲟⲩ is the established Kephalaia formula for the Two Substances.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5501,
+      "chapter": 120,
+      "line": 4,
+      "core_english": "Two substances are those existing from the beginning: {0} the {1}"
+    },
+    {
+      "section": 5502,
+      "chapter": 120,
+      "line": 5,
+      "core_english": "and the Darkness, the beautiful and the {2}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5501,
+      "chapter": 120,
+      "line": 4,
+      "proposed_english": "they are",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "Renders the copular ⲛⲉ joining the plural subject 'those existing from the beginning' to the predicate 'the Light and the Darkness.' Standard English rendering of Coptic plural copular ⲛⲉ in catalogue formulae."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5501,
+      "chapter": 120,
+      "line": 4,
+      "proposed_english": "Light",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Completes 'the Light' (ⲡⲟⲩⲁⲓ̈ⲛⲉ), the first member of the dualistic pair. Lexicon: light = what the Lord gives; truth received; influx in its proper register."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5502,
+      "chapter": 120,
+      "line": 5,
+      "proposed_english": "bitter, life and",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "Completes 'the bitter' and adds the third pair 'life and (the death)' that flows into ⲡⲙⲟⲩ in the next segment. The triadic formula light/darkness, beautiful/bitter, life/death is the standard Kephalaia articulation of the Two Substances. Lexicon: bitterness = falsity from evil; life/dead = conjunction with the Lord vs. separation from him."
+    }
+  ]
+}

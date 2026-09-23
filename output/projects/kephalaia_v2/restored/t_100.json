@@ -1,0 +1,3930 @@
+{
+  "teaching": 100,
+  "total_gaps_in_core": 213,
+  "gaps_restored": 130,
+  "gaps_unrestorable": 83,
+  "restoration_note": "This kephalaion narrates the cosmogonic prayer-cycle: the Mother of Life (= the divine principle of life-bearing in the Lord) prays to the Father for the First Man (= the Divine Human) who has descended into affliction in the land of darkness; the Father sends the Living Spirit (the operative power and 'Expander') to raise him; afterwards the same five gather and intercede for the living soul still mingled in the fleshes of death, whereupon the Father sends the Third Ambassador, who chooses her forth and sets her on her feet in joy; finally Jesus the Radiance is named as completing the purpose of heart of the elements. The first half (sections 5300–5382) is largely intact and the editor's letter-completions are secure (morphological completions of known Manichaean technical vocabulary: ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ, ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ, ⲣⲉϩϯⲟⲩⲁⲥⲧⲛ̄, ⲡⲍⲩⲡⲟⲁⲟⲝⲉⲩⲥ, ⲡⲁⲛⲭⲱⲭ, ϯⲩⲭⲏ, ⲁⲣⲉⲧϥ̄/ⲁⲣⲉⲧⲥ̄ idioms). Sections 5383–5407 are extensively rubbed off; only short editor-flagged completions (ⲁⲩⲟⲩⲱⲛϩ, ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ, ϣⲁ ⲁⲛⲏⲍⲉ, ⲡⲗⲁⲥⲙⲁ, ⲡⲟⲩⲁⲓⲛⲉ) are recoverable. The closing exhortation (5423) addresses the audience: 'you stand fast on your feet,' linking the cosmogonic prayer to the hearer's regeneration.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5300,
+      "chapter": 115,
+      "line": 28,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap with partial ⲍ; no formula or parallel constrains the fill. Could be ⲍⲱⲱϥ 'himself' or start of new clause; honest non-restoration preferred.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 1,
+      "section": 5301,
+      "chapter": 115,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap ending in ⲁ; could be a discourse particle or end of preceding word. Insufficient constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 2,
+      "section": 5302,
+      "chapter": 115,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Editor's secure restoration: definite article ⲙ̄- before ⲡⲟⲩⲧⲱⲃⲍ̄ 'their prayer'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5303,
+      "chapter": 115,
+      "line": 38,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14-char gap at line start with no traces; though context suggests a verb of prayer/petition followed by a topical phrase, no precise formula constrains the fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 4,
+      "section": 5304,
+      "chapter": 115,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡⲱⲛⲍ ⲁⲥⲁⲓⲧⲓ ⲁⲥϣⲗ",
+      "basis": "Editor's restoration completing the title ⲧⲙⲉⲩ ⲙⲡⲱⲛⲍ̄ 'the Mother of Life' and a parallel verb-chain leading to ⲁⲥⲧⲱⲃⲍ̄, ⲁⲥⲧⲉⲁⲩ, ⲁⲥⲥⲙⲁⲙⲉ.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 5,
+      "section": 5305,
+      "chapter": 115,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Editor's secure restoration: genitive marker introducing recap of ⲡϣⲁⲣⲡ ⲛ̄ⲧⲱⲕ ⲁⲣⲉⲧϩ 'the First Standing-Fast'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 5305,
+      "chapter": 115,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ ⲉⲧⲉ",
+      "basis": "Editor's restoration completing ⲁⲣⲉⲧϩ 'his feet' + relative ⲉⲧⲉ 'which'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5305,
+      "chapter": 115,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲱ",
+      "basis": "Editor's secure restoration: begins ⲁⲥⲧⲱⲃⲍ̄ 'she prayed' continued in next line as ⲃⲍ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 5306,
+      "chapter": 115,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲍ",
+      "basis": "Editor's secure restoration: completes ⲁⲥⲧⲱⲃⲍ̄ from previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 5306,
+      "chapter": 115,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲥ",
+      "basis": "Editor's restoration: perfect prefix beginning ⲁⲥⲝⲓ 'she received' continued in next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 5307,
+      "chapter": 115,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲝⲓ",
+      "basis": "Editor's restoration: completes ⲁⲥⲝⲓ 'she received'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5307,
+      "chapter": 115,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor's restoration: begins ⲉⲧⲛⲉⲙⲉⲥ 'which are with her' continued in next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 5308,
+      "chapter": 115,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Editor's restoration: completes ⲉⲧⲛⲉⲙⲉⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 5308,
+      "chapter": 115,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧ",
+      "basis": "Editor's restoration: begins ⲉⲧⲃⲉ 'because of'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 5309,
+      "chapter": 115,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲉ ⲧ",
+      "basis": "Editor's restoration: completes ⲉⲧⲃⲉ ⲧⲍⲉ 'because of the manner'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 5309,
+      "chapter": 115,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration: completes ⲡⲥⲁⲙⲡⲓⲧⲛⲉ 'the lower side'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 5310,
+      "chapter": 115,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲧ",
+      "basis": "Editor's restoration: begins ⲁϩⲧⲟⲩⲓⲁϩ 'and he joined himself'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 5310,
+      "chapter": 115,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲉϩ",
+      "basis": "Editor's restoration: begins ⲧⲉⲉϩ-ⲟⲩⲁⲉⲧϥ̄ 'gave himself'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 5311,
+      "chapter": 115,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁ",
+      "basis": "Editor's restoration: completes ⲟⲩⲁⲉⲧϥ̄ 'himself'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 5311,
+      "chapter": 115,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁⲍ",
+      "basis": "Editor's restoration: begins ⲡⲕⲁⲍ ⲙⲡⲧⲉⲕⲟ 'land of destruction'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 5312,
+      "chapter": 115,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Editor's restoration: genitive linker before ⲡⲧⲉⲕⲟ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 5312,
+      "chapter": 115,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Editor's restoration: genitive linker before ⲡⲕⲉⲕⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 5313,
+      "chapter": 115,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲉ",
+      "basis": "Editor's restoration: middle of ⲡⲕⲉⲕⲉ 'the darkness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 5313,
+      "chapter": 115,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Editor's restoration: begins ⲡⲫⲟⲥⲥⲁ 'encampment/host'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 5314,
+      "chapter": 115,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲥⲁ",
+      "basis": "Editor's restoration: completes ⲡⲫⲟⲥⲥⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 5314,
+      "chapter": 115,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲗⲟⲥ",
+      "basis": "Editor's restoration: completes ⲡⲁⲓⲁⲃⲟⲗⲟⲥ 'the Devil'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 5315,
+      "chapter": 115,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩⲧⲛ",
+      "basis": "Editor's restoration: ⲉϩⲛ̄-ⲧⲁⲛⲧ 'in their likeness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 5315,
+      "chapter": 115,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲛ",
+      "basis": "Editor's restoration: ⲧⲙⲏⲧⲉ ⲛ-ⲛⲉϩⲭⲁⲝⲉ 'midst of his enemies'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 5316,
+      "chapter": 115,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉϩ",
+      "basis": "Editor's restoration: middle of ⲛⲉϩⲭⲁⲝⲉ 'his enemies'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 5316,
+      "chapter": 115,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯ",
+      "basis": "Editor's restoration: begins ⲁⲥϯⲉⲁⲩ 'she gave glory'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 5317,
+      "chapter": 115,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "basis": "Editor's restoration: completes ⲉⲁⲩ 'glory'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 5317,
+      "chapter": 115,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "Editor's restoration: begins ⲡϣⲁⲣⲡ 'the first'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 5318,
+      "chapter": 115,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄",
+      "basis": "Editor's restoration: begins ⲛ̄ⲟⲩⲃⲁⲙ 'a power'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 5319,
+      "chapter": 115,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲙ",
+      "basis": "Editor's restoration: completes ⲟⲩⲃⲁⲙ 'a power'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 5320,
+      "chapter": 115,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ̄",
+      "basis": "Editor's restoration: ⲡ-article of ⲡⲛⲟⲩⲧⲉ 'God'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 5320,
+      "chapter": 115,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ ⲉ",
+      "basis": "Editor's restoration: ⲧⲍⲉ ⲟⲩⲛ ⲉⲧⲁⲥⲧⲱⲃⲍ̄ 'the manner then in which she prayed'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 5321,
+      "chapter": 115,
+      "line": 56,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲧⲱ",
+      "basis": "Editor's restoration: middle of ⲧⲁⲥⲧⲱⲃⲍ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 5321,
+      "chapter": 115,
+      "line": 56,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ",
+      "basis": "Editor's restoration: completes ⲡⲉⲥⲱⲗⲏⲗ 'her prayer'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 5322,
+      "chapter": 115,
+      "line": 57,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor's restoration: begins ⲧⲙⲛⲧⲛⲁⲃ 'the Greatness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 5323,
+      "chapter": 115,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃ̄",
+      "basis": "Editor's restoration: completes ⲧⲁⲙⲛⲧⲛⲁⲃ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 5323,
+      "chapter": 115,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃ̄ⲁⲙ",
+      "basis": "Editor's restoration: completes ⲧⲛⲁⲃ ⲛ̄ⲃⲁⲙ 'great power'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 5324,
+      "chapter": 115,
+      "line": 59,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Editor's restoration: begins ⲟⲩⲛⲁⲃ ⲛⲃⲁⲙ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 42,
+      "section": 5325,
+      "chapter": 115,
+      "line": 60,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration: completes ⲛⲁⲃ̄ ⲛⲃⲁⲙ 'great power'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 5325,
+      "chapter": 115,
+      "line": 60,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲉ",
+      "basis": "Editor's restoration: begins ⲁⲛⲙⲉⲑⲟⲣⲓⲟⲛ 'unto the boundary'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 5326,
+      "chapter": 115,
+      "line": 61,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ",
+      "basis": "Editor's restoration: completes ⲁⲃⲁⲗ 'forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 5327,
+      "chapter": 115,
+      "line": 62,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ",
+      "basis": "Editor's restoration: completes ⲁⲣⲉⲧϥ̄ 'against him'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 5328,
+      "chapter": 115,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration: completes ⲧⲙⲉⲩ 'Mother'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 5328,
+      "chapter": 115,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩ",
+      "basis": "Editor's restoration: begins ⲁϩⲣ̄ⲟⲩⲁⲡⲟⲍⲏⲙⲓⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 5329,
+      "chapter": 115,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration: completes ⲛⲉϩⲭⲁⲝⲉ 'his enemies'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 49,
+      "section": 5330,
+      "chapter": 115,
+      "line": 65,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲉⲕⲉ",
+      "basis": "Editor's restoration: ⲡⲕⲁⲍ ⲙ̄ⲡⲕⲉⲕⲉ 'land of the Darkness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 50,
+      "section": 5331,
+      "chapter": 115,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ̄",
+      "basis": "Editor's restoration: ⲛ̄ⲧⲁϩ-ⲣ̄-ⲃⲱⲃ 'because he had become weak'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 51,
+      "section": 5331,
+      "chapter": 115,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡ",
+      "basis": "Editor's restoration: ⲃⲁⲡϥ̄ 'struck him down'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 52,
+      "section": 5331,
+      "chapter": 115,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲧϩ ⲁ",
+      "basis": "Editor's restoration: ⲁϩⲝⲓⲧϩ ⲁⲍⲟⲩⲛ 'and he took him inward'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 53,
+      "section": 5332,
+      "chapter": 115,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧϩ ⲁϩϯⲟⲩ",
+      "basis": "Editor's restoration: ⲁⲣⲉⲧϩ ⲁϩϯⲟⲩⲁⲥⲧⲛ̄ 'on his feet, gave expanse'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 54,
+      "section": 5333,
+      "chapter": 115,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛ",
+      "basis": "Only the final letter of ⲡⲙ̄ⲧⲁⲛ 'rest' is recoverable; the remaining ~9 chars form a transition with no clear formula.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 55,
+      "section": 5334,
+      "chapter": 115,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲥⲧⲛ̄",
+      "basis": "Editor's restoration: completes ⲣⲉϩϯⲟⲩⲁⲥⲧⲛ̄ 'Expander', the standard epithet of the Living Spirit.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 56,
+      "section": 5334,
+      "chapter": 115,
+      "line": 69,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap with no traces; transitional content not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 57,
+      "section": 5335,
+      "chapter": 115,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲡ",
+      "basis": "Editor's restoration: completes ⲡⲍⲩⲡⲟⲁⲟⲝⲉⲩⲥ 'the receiver' (ὑποδοχεύς).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 58,
+      "section": 5335,
+      "chapter": 115,
+      "line": 70,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap at line end; epithet/relative clause continuation, no clear constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 59,
+      "section": 5336,
+      "chapter": 115,
+      "line": 71,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "11-char gap; relative clause about the receiver, no specific formula.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 60,
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap with no traces or formula.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 61,
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap ending in -ⲉ; no clear referent.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 62,
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲓⲧⲓ",
+      "basis": "ⲁⲥⲁ- visible at start; completes ⲁⲥⲁⲓⲧⲓ 'she petitioned' — a verb of the prayer-sequence parallel to lines above.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 63,
+      "section": 5338,
+      "chapter": 115,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's single-letter restoration completing the qualitative ⲉⲧⲁϩⲟⲩⲉⲉ 'who has gone forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 64,
+      "section": 5338,
+      "chapter": 115,
+      "line": 73,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲁⲗ",
+      "basis": "Editor's restoration: completes the directional ⲁⲃⲁⲗ 'forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 65,
+      "section": 5339,
+      "chapter": 115,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration: perfect prefix ⲁ- of ⲁⲥⲧⲱⲃⲥ̄ 'she interceded'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 66,
+      "section": 5339,
+      "chapter": 115,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲃⲱⲕ",
+      "basis": "Editor's restoration: ⲁϩⲃⲱⲕ 'in order to go' — purpose-infinitive.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 67,
+      "section": 5340,
+      "chapter": 115,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's single-letter restoration completing ⲁⲃⲁⲗ across line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 68,
+      "section": 5341,
+      "chapter": 115,
+      "line": 76,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱϩ",
+      "basis": "Editor's restoration completing ⲁϩⲥⲉⲥⲱϩ 'to gather (qualitative)'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 69,
+      "section": 5342,
+      "chapter": 115,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲁ",
+      "basis": "Editor's restoration; reads with following line as 'rest him after toil'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 70,
+      "section": 5354,
+      "chapter": 115,
+      "line": 99,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration: completes ⲁⲩⲁⲓϯ 'they gave'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 71,
+      "section": 5355,
+      "chapter": 115,
+      "line": 100,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "4-char gap before ⲡⲁⲛⲭⲱⲭ 'wellspring'; genitive linker ⲛ̄ⲧⲉ 'of' is the most plausible fill in this construction.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 72,
+      "section": 5356,
+      "chapter": 115,
+      "line": 101,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "Editor's restoration: genitive linker before ⲧⲙⲛⲧⲁϣⲓⲣⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 73,
+      "section": 5357,
+      "chapter": 115,
+      "line": 102,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ ⲛ̄ⲧϯⲩ",
+      "basis": "Editor's restoration: completes ⲛϩⲧⲟⲩⲃⲟ ⲁⲃⲁⲗ ⲛ̄ⲧϯⲩⲭⲏ 'purify forth the soul'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 74,
+      "section": 5358,
+      "chapter": 115,
+      "line": 103,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩϣⲁⲏⲁ ⲁⲩⲧ",
+      "basis": "Editor's restoration: structural parallel with the Mother's intercession at her consummation — 'at the consummation they interceded'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 75,
+      "section": 5359,
+      "chapter": 115,
+      "line": 104,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗⲏⲗ",
+      "basis": "Editor's restoration: completes ⲡⲟⲩϣⲗⲏⲗ 'their prayer'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 76,
+      "section": 5360,
+      "chapter": 115,
+      "line": 105,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏⲙⲁ",
+      "basis": "Editor's restoration: completes ⲡⲟⲩⲁⲓⲧⲏⲙⲁ 'their request'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 77,
+      "section": 5361,
+      "chapter": 115,
+      "line": 106,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12-char gap with only -ⲁⲥ trace at end; no constraining formula identifies the noun.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 78,
+      "section": 5362,
+      "chapter": 115,
+      "line": 107,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲛⲧ",
+      "basis": "Editor's restoration: 'the Ambassador, who' — secured by the immediate reference to ⲡⲙⲁⲍϣⲁⲙⲧ 'the third' = Third Ambassador.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 79,
+      "section": 5363,
+      "chapter": 115,
+      "line": 108,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯⲩⲭⲏ",
+      "basis": "Editor's restoration: ⲁⲧ-ϯⲩⲭⲏ 'the soul' — confirmed by parallel ⲁⲧϯⲩⲭⲏ in line 4.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 80,
+      "section": 5363,
+      "chapter": 115,
+      "line": 108,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ",
+      "basis": "Editor's restoration: preposition ⲍⲛ̄ 'in' linking to ⲟⲩⲙⲣ̄ⲣⲉ 'a bond' in next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 81,
+      "section": 5365,
+      "chapter": 115,
+      "line": 110,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "No apparatus entry; no traces. Unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 82,
+      "section": 5365,
+      "chapter": 115,
+      "line": 110,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲭⲓ",
+      "basis": "Editor's restoration: ⲡⲭⲓⲥⲉ 'the Height' — Manichaean cosmological term for the upper light realm.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 83,
+      "section": 5366,
+      "chapter": 115,
+      "line": 111,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲉ",
+      "basis": "Editor's restoration: completes ⲡⲭⲓⲥⲉ from previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 84,
+      "section": 5366,
+      "chapter": 115,
+      "line": 111,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲉ",
+      "basis": "Editor's restoration: begins ⲁⲣⲉⲧⲥ̄ 'her feet' (ⲧⲏⲕ ⲁⲣⲉⲧ⸗ idiom).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 85,
+      "section": 5367,
+      "chapter": 115,
+      "line": 112,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲥ",
+      "basis": "Editor's restoration: completes ⲁⲣⲉⲧⲥ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 86,
+      "section": 5368,
+      "chapter": 115,
+      "line": 113,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ ⲉⲧⲧⲏⲧ",
+      "basis": "Editor's restoration: completes ⲡⲛⲟⲩⲛ ⲉⲧⲧⲏⲧ ⲛⲉⲙⲉⲥ 'the Deep that is joined with her'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 87,
+      "section": 5369,
+      "chapter": 115,
+      "line": 114,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏⲥ",
+      "basis": "Editor's restoration: completes ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'the Ambassador'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 88,
+      "section": 5370,
+      "chapter": 115,
+      "line": 115,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap with no traces; preposition or verb not specifiable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 89,
+      "section": 5370,
+      "chapter": 115,
+      "line": 115,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap; the noun governed by ⲧⲉϥ 'his' is not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 90,
+      "section": 5371,
+      "chapter": 115,
+      "line": 116,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Editor's restoration: ⲟⲩⲛ̄ 'indeed/then', discourse particle.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 91,
+      "section": 5372,
+      "chapter": 115,
+      "line": 117,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃ",
+      "basis": "Editor's restoration: begins ⲁⲃⲱⲗ ⲁⲃⲁⲗ 'to release forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 92,
+      "section": 5378,
+      "chapter": 115,
+      "line": 123,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char noun governed by ⲡ-article and genitive ⲛⲡⲓⲱⲧ; could be ⲥⲁⲭⲛⲉ 'counsel' or ⲡⲱⲕ ⲛⲍⲏⲧ 'purpose of heart' but neither secured.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 93,
+      "section": 5378,
+      "chapter": 115,
+      "line": 123,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char relative clause; verb not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 94,
+      "section": 5379,
+      "chapter": 115,
+      "line": 124,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲁⲩⲧⲱⲃⲍ",
+      "basis": "Editor's restoration: 'those who prayed', parallel to lines 13 and 29.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 95,
+      "section": 5380,
+      "chapter": 115,
+      "line": 125,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯⲩⲭⲏ",
+      "basis": "Editor's restoration: ⲛ̄ⲧ-ϯⲩⲭⲏ 'of the soul'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 96,
+      "section": 5380,
+      "chapter": 115,
+      "line": 125,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ ⲁⲃⲁⲗ",
+      "basis": "Editor's restoration: completes ⲁϥⲃⲁⲗⲥ̄ ⲁⲃⲁⲗ 'he released her forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 97,
+      "section": 5383,
+      "chapter": 115,
+      "line": 140,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "15-char gap; no formula constrains the fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 98,
+      "section": 5384,
+      "chapter": 115,
+      "line": 141,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14-char gap after 'reveal forth his icon'; no constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 99,
+      "section": 5385,
+      "chapter": 115,
+      "line": 142,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "13-char gap with ⲁⲧ trace; no clear formula.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 100,
+      "section": 5386,
+      "chapter": 115,
+      "line": 143,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30-char gap; entirely lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 101,
+      "section": 5386,
+      "chapter": 115,
+      "line": 143,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap with ⲡⲛ̄ trace; insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 102,
+      "section": 5386,
+      "chapter": 115,
+      "line": 143,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap with no traces.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 103,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 104,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 105,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 106,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 107,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛϩ",
+      "basis": "Editor's restoration: completes ⲁⲩⲟⲩⲱⲛϩ 'they revealed'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 108,
+      "section": 5388,
+      "chapter": 115,
+      "line": 145,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 109,
+      "section": 5388,
+      "chapter": 115,
+      "line": 145,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 110,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 111,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩⲁⲛⲉ",
+      "basis": "Editor's restoration of ⲡⲟⲩⲁⲛⲉ 'manifestation'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 112,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap with ⲝ[ⲥⲕ trace; insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 113,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 114,
+      "section": 5390,
+      "chapter": 115,
+      "line": 147,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 115,
+      "section": 5390,
+      "chapter": 115,
+      "line": 147,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap; relative clause about the First Man.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 116,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 117,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 118,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 119,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 120,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 121,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 122,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 123,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 124,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 125,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 126,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 127,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 128,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 129,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 130,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor's restoration; ⲁⲩⲃⲱⲛ may begin ⲃⲱⲗ ⲁⲃⲁⲗ or ⲃⲱⲛⲉ; sense uncertain.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 131,
+      "section": 5394,
+      "chapter": 115,
+      "line": 151,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration: completes ⲁⲃⲁⲛ/ⲁⲃⲁⲗ 'forth'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 132,
+      "section": 5394,
+      "chapter": 115,
+      "line": 151,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 133,
+      "section": 5395,
+      "chapter": 115,
+      "line": 153,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 134,
+      "section": 5395,
+      "chapter": 115,
+      "line": 153,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 135,
+      "section": 5395,
+      "chapter": 115,
+      "line": 153,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 136,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 137,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 138,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "15-char gap, destroyed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 139,
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 140,
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 141,
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor's restoration: completes ⲡⲥⲱⲙⲁ 'the body'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 142,
+      "section": 5398,
+      "chapter": 115,
+      "line": 156,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "Editor's restoration: ϣⲛⲏⲛ; possibly ϣⲏⲛ 'tree' or related form.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 143,
+      "section": 5398,
+      "chapter": 115,
+      "line": 156,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 144,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 145,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 146,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 147,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁ",
+      "basis": "Editor's restoration: completes ⲡⲥⲱⲙⲁ 'the body'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 148,
+      "section": 5400,
+      "chapter": 115,
+      "line": 160,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 149,
+      "section": 5400,
+      "chapter": 115,
+      "line": 160,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 150,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 151,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 152,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 153,
+      "section": 5402,
+      "chapter": 115,
+      "line": 162,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 154,
+      "section": 5402,
+      "chapter": 115,
+      "line": 162,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 155,
+      "section": 5403,
+      "chapter": 115,
+      "line": 165,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 156,
+      "section": 5403,
+      "chapter": 115,
+      "line": 165,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲧⲏⲥ",
+      "basis": "Editor's restoration: completes ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'the Ambassador'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 157,
+      "section": 5404,
+      "chapter": 115,
+      "line": 166,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 158,
+      "section": 5404,
+      "chapter": 115,
+      "line": 166,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "25-char gap, rubbed off.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 159,
+      "section": 5405,
+      "chapter": 115,
+      "line": 167,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "35-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 160,
+      "section": 5406,
+      "chapter": 115,
+      "line": 168,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 161,
+      "section": 5406,
+      "chapter": 115,
+      "line": 168,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 162,
+      "section": 5407,
+      "chapter": 115,
+      "line": 169,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 163,
+      "section": 5407,
+      "chapter": 115,
+      "line": 169,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 164,
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap; coordinated noun phrase, not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 165,
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁ ⲁⲛⲏⲍⲉ",
+      "basis": "Editor's restoration: standard fixed phrase 'unto eternity'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 166,
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 167,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 168,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡϣⲁⲣⲡ",
+      "basis": "Editor's restoration: 'the first'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 169,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 170,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 171,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 172,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char abstract noun on ⲙⲛⲧ-, no clear referent.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 173,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 174,
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ̄ⲏ̄ⲥ̄",
+      "basis": "Editor's restoration: divine name secured by apposition with ⲡⲡⲣ̄ⲃⲉ 'the Radiance'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 175,
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲝⲱⲕ",
+      "basis": "Editor's restoration: ⲝⲱⲕ ⲁⲃⲁⲗ 'complete, fulfill'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 176,
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲱⲕ",
+      "basis": "Editor's restoration: ⲡⲱⲕ ⲛ̄ⲍⲏⲧ 'purpose of heart' is recurrent technical phrase.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 177,
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap continuing into damage.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 178,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap with ⲁⲥ trace.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 179,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 180,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 181,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 182,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 183,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁⲓⲛⲉ",
+      "basis": "Editor's restoration: ⲟⲩⲁⲓⲛⲉ 'light'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 184,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 185,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 186,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 187,
+      "section": 5414,
+      "chapter": 115,
+      "line": 179,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲣⲉⲥⲃⲉⲩ",
+      "basis": "8-char gap ending in -ⲧⲏⲥ; ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'Ambassador' is the most likely Greek-derived agentive title in this context, fitting the recap of the Third Ambassador's action.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 188,
+      "section": 5414,
+      "chapter": 115,
+      "line": 179,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char relative perfect verb form, not specifiable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 189,
+      "section": 5414,
+      "chapter": 115,
+      "line": 179,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉ",
+      "basis": "Single ⲉ trace at start of relative ⲉⲧⲉ 'which is'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 190,
+      "section": 5415,
+      "chapter": 115,
+      "line": 180,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉⲓ",
+      "basis": "Editor's restoration: demonstrative subject of ⲡⲉⲓ ⲡⲉ ⲓⲏⲥ ⲡⲡⲣⲃⲉ 'This is Jesus the Radiance'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 191,
+      "section": 5415,
+      "chapter": 115,
+      "line": 180,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϥϯ",
+      "basis": "Editor's restoration: perfect 3sg with verb ϯ 'give'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 192,
+      "section": 5416,
+      "chapter": 115,
+      "line": 183,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 193,
+      "section": 5416,
+      "chapter": 115,
+      "line": 183,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 194,
+      "section": 5417,
+      "chapter": 115,
+      "line": 184,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 195,
+      "section": 5417,
+      "chapter": 115,
+      "line": 184,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 196,
+      "section": 5418,
+      "chapter": 115,
+      "line": 185,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char abstract noun on ⲙⲛⲧ-, not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 197,
+      "section": 5418,
+      "chapter": 115,
+      "line": 185,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 198,
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "Editor's restoration: completes ⲟⲩⲱⲛⲍ̄ 'manifest, reveal'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 199,
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap, no constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 200,
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap with ⲉⲓ trace.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 201,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 202,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor's restoration: definite article completing ⲡⲧⲱⲃⲍ̄ 'the prayer'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 203,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap with ⲛ start, ⲉ end; not constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 204,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Completes ⲡⲟⲩⲁⲓⲛⲉ 'the Light' across line break.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 205,
+      "section": 5421,
+      "chapter": 115,
+      "line": 190,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "14-char gap, abgerieben.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 206,
+      "section": 5421,
+      "chapter": 115,
+      "line": 190,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲙⲁ",
+      "basis": "Editor's restoration: completes ⲡⲗⲁⲥⲙⲁ 'molding' (πλάσμα).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 207,
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 208,
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap, abgerieben.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 209,
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲓ",
+      "basis": "Editor's restoration: demonstrative completing ⲧⲍⲉ ⲁⲛ ⲧⲉ ⲧⲉⲓ '...thus also is this...'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 210,
+      "section": 5423,
+      "chapter": 115,
+      "line": 192,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap, line begin damaged.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 211,
+      "section": 5423,
+      "chapter": 115,
+      "line": 192,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap; the entity being molded not specified.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 212,
+      "section": 5423,
+      "chapter": 115,
+      "line": 192,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor's restoration: ⲁⲣⲉⲧⲧⲏⲛⲉ 'on your feet'.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5300,
+      "chapter": 115,
+      "line": 28,
+      "core_english": "For this prayer came into being from the firsts {0}"
+    },
+    {
+      "section": 5301,
+      "chapter": 115,
+      "line": 29,
+      "core_english": "{1} the gods first prayed to their Father; they gave to them"
+    },
+    {
+      "section": 5302,
+      "chapter": 115,
+      "line": 30,
+      "core_english": "their prayer and their request."
+    },
+    {
+      "section": 5303,
+      "chapter": 115,
+      "line": 38,
+      "core_english": "{2} every work; the Great One of the Spirit, the Mother"
+    },
+    {
+      "section": 5304,
+      "chapter": 115,
+      "line": 39,
+      "core_english": "of Life requested, prayed; she beseeched, she glorified, she blessed."
+    },
+    {
+      "section": 5305,
+      "chapter": 115,
+      "line": 40,
+      "core_english": "Of the First Standing-Fast, which indeed is the Father, she pra-"
+    },
+    {
+      "section": 5306,
+      "chapter": 115,
+      "line": 41,
+      "core_english": "-yed him a prayer, she petitioned him a petition; she"
+    },
+    {
+      "section": 5307,
+      "chapter": 115,
+      "line": 42,
+      "core_english": "received a great gift for herself, together with the great powers which are wi-"
+    },
+    {
+      "section": 5308,
+      "chapter": 115,
+      "line": 43,
+      "core_english": "-th her. She prayed a prayer for the First Man, be-"
+    },
+    {
+      "section": 5309,
+      "chapter": 115,
+      "line": 44,
+      "core_english": "-cause of the manner that he had come forth to keep guard over the lower-"
+    },
+    {
+      "section": 5310,
+      "chapter": 115,
+      "line": 45,
+      "core_english": "side, and joined himself to the Mother of Life, and separated from her, and gave him-"
+    },
+    {
+      "section": 5311,
+      "chapter": 115,
+      "line": 46,
+      "core_english": "-self in great affliction, and received the strife in the land"
+    },
+    {
+      "section": 5312,
+      "chapter": 115,
+      "line": 47,
+      "core_english": "of destruction, with sorrow and with weakness, in the worlds of"
+    },
+    {
+      "section": 5313,
+      "chapter": 115,
+      "line": 48,
+      "core_english": "the Darkness, in the depths which are fearful, in the midst of the en-"
+    },
+    {
+      "section": 5314,
+      "chapter": 115,
+      "line": 49,
+      "core_english": "-campment of the demons, a binding of the powers of the De-"
+    },
+    {
+      "section": 5315,
+      "chapter": 115,
+      "line": 50,
+      "core_english": "-vil. For while he was in their likeness they reigned, standing over him in the midst of"
+    },
+    {
+      "section": 5316,
+      "chapter": 115,
+      "line": 51,
+      "core_english": "his enemies. The petition however that she had supplicated, she prayed, she gave"
+    },
+    {
+      "section": 5317,
+      "chapter": 115,
+      "line": 52,
+      "core_english": "glory, blessed, and received — the Mother of Life — from the Father, the fir-"
+    },
+    {
+      "section": 5318,
+      "chapter": 115,
+      "line": 53,
+      "core_english": "-st Standing-Fast, that for which she had supplicated him: that he might send a"
+    },
+    {
+      "section": 5319,
+      "chapter": 115,
+      "line": 54,
+      "core_english": "power, a faith, a redeemer, a helper to the Son"
+    },
+    {
+      "section": 5320,
+      "chapter": 115,
+      "line": 55,
+      "core_english": "of God, the one who stood in the affliction. So then is the manner in which she"
+    },
+    {
+      "section": 5321,
+      "chapter": 115,
+      "line": 56,
+      "core_english": "prayed, supplicated; this also is the manner in which her prayer"
+    },
+    {
+      "section": 5322,
+      "chapter": 115,
+      "line": 57,
+      "core_english": "was completed, was received within before the Father of the Great-"
+    },
+    {
+      "section": 5323,
+      "chapter": 115,
+      "line": 58,
+      "core_english": "-ness; he saw it, and gave to her her prayer, the great power:"
+    },
+    {
+      "section": 5324,
+      "chapter": 115,
+      "line": 59,
+      "core_english": "the Living Spirit, the first Expander. They came in a"
+    },
+    {
+      "section": 5325,
+      "chapter": 115,
+      "line": 60,
+      "core_english": "great power — the Mother of Life with the Living Spirit — unto the bo-"
+    },
+    {
+      "section": 5326,
+      "chapter": 115,
+      "line": 61,
+      "core_english": "-undary of the limit; they brought up the First Man forth"
+    },
+    {
+      "section": 5327,
+      "chapter": 115,
+      "line": 62,
+      "core_english": "of that war and that contest which had stood firm against him,"
+    },
+    {
+      "section": 5328,
+      "chapter": 115,
+      "line": 63,
+      "core_english": "and he gave him the gift of the Mother of Life. And"
+    },
+    {
+      "section": 5329,
+      "chapter": 115,
+      "line": 64,
+      "core_english": "he made a journey, and removed (it) far from those who are his enemies,"
+    },
+    {
+      "section": 5330,
+      "chapter": 115,
+      "line": 65,
+      "core_english": "in great affliction — the one who was in the land of the Darkness"
+    },
+    {
+      "section": 5331,
+      "chapter": 115,
+      "line": 66,
+      "core_english": "— since he had become weak. The Living Spirit struck him down, and took him in-"
+    },
+    {
+      "section": 5332,
+      "chapter": 115,
+      "line": 67,
+      "core_english": "-ward to himself, and released him forth, and set him on his feet, gave"
+    },
+    {
+      "section": 5333,
+      "chapter": 115,
+      "line": 68,
+      "core_english": "expanse for him in the country of rest{3}"
+    },
+    {
+      "section": 5334,
+      "chapter": 115,
+      "line": 69,
+      "core_english": "the Living Spirit, the first Expander {4}"
+    },
+    {
+      "section": 5335,
+      "chapter": 115,
+      "line": 70,
+      "core_english": "of the purpose of heart of the third, the receiver {5}"
+    },
+    {
+      "section": 5336,
+      "chapter": 115,
+      "line": 71,
+      "core_english": "...likeness with the receiver who {6}"
+    },
+    {
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "core_english": "{7} a great might {8} of the Beloved, she petitioned"
+    },
+    {
+      "section": 5338,
+      "chapter": 115,
+      "line": 73,
+      "core_english": "the First Man, who has gone forth, in order to raise him f-"
+    },
+    {
+      "section": 5339,
+      "chapter": 115,
+      "line": 74,
+      "core_english": "she interceded for him, that he might stand fast in this all, in order to go"
+    },
+    {
+      "section": 5340,
+      "chapter": 115,
+      "line": 75,
+      "core_english": "to the place of destruction and of foulness — he who has released him forth,"
+    },
+    {
+      "section": 5341,
+      "chapter": 115,
+      "line": 76,
+      "core_english": "to redeem him, to give him room forth from this all, to gather"
+    },
+    {
+      "section": 5342,
+      "chapter": 115,
+      "line": 77,
+      "core_english": "him on his feet in rest and joy, that he might rest him after toil,"
+    },
+    {
+      "section": 5354,
+      "chapter": 115,
+      "line": 99,
+      "core_english": "they gave to him a request, that he might give them the power"
+    },
+    {
+      "section": 5355,
+      "chapter": 115,
+      "line": 100,
+      "core_english": "of the wellspring, a steerer of all the works"
+    },
+    {
+      "section": 5356,
+      "chapter": 115,
+      "line": 101,
+      "core_english": "of the multitude that have been established, that he might come and purify"
+    },
+    {
+      "section": 5357,
+      "chapter": 115,
+      "line": 102,
+      "core_english": "forth the living soul, which has stood up on her feet in this all."
+    },
+    {
+      "section": 5358,
+      "chapter": 115,
+      "line": 103,
+      "core_english": "At the consummation they interceded with their Father; he took from their hands their pra-"
+    },
+    {
+      "section": 5359,
+      "chapter": 115,
+      "line": 104,
+      "core_english": "-yer; he gave to them their intercession and their re-"
+    },
+    {
+      "section": 5360,
+      "chapter": 115,
+      "line": 105,
+      "core_english": "-quest; he summoned forth from him"
+    },
+    {
+      "section": 5361,
+      "chapter": 115,
+      "line": 106,
+      "core_english": "{9} which is the third of"
+    },
+    {
+      "section": 5362,
+      "chapter": 115,
+      "line": 107,
+      "core_english": "the Ambassador, who has come forth in the power of his …"
+    },
+    {
+      "section": 5363,
+      "chapter": 115,
+      "line": 108,
+      "core_english": "Greatness; he saw the entire soul, the manner in which she is mingled in"
+    },
+    {
+      "section": 5365,
+      "chapter": 115,
+      "line": 110,
+      "core_english": "{10} which his brothers established, that came forth from the Height"
+    },
+    {
+      "section": 5366,
+      "chapter": 115,
+      "line": 111,
+      "core_english": ". He also saw the living soul, that she is mingled, standing on her feet"
+    },
+    {
+      "section": 5367,
+      "chapter": 115,
+      "line": 112,
+      "core_english": "in a great punishment, oppressed in the scourge of the Deep"
+    },
+    {
+      "section": 5368,
+      "chapter": 115,
+      "line": 113,
+      "core_english": "that is joined with her."
+    },
+    {
+      "section": 5369,
+      "chapter": 115,
+      "line": 114,
+      "core_english": "But he himself, the Ambassador,"
+    },
+    {
+      "section": 5370,
+      "chapter": 115,
+      "line": 115,
+      "core_english": "{11} his {12} in his mercies, he revealed forth in this manner,"
+    },
+    {
+      "section": 5371,
+      "chapter": 115,
+      "line": 116,
+      "core_english": "indeed, before this Hades that is harsh, that is in the lower side,"
+    },
+    {
+      "section": 5372,
+      "chapter": 115,
+      "line": 117,
+      "core_english": "to release forth the living soul. He chose her forth out of the fleshes"
+    },
+    {
+      "section": 5378,
+      "chapter": 115,
+      "line": 123,
+      "core_english": "the {13} of the Father, that which {14}. He gave the prayer"
+    },
+    {
+      "section": 5379,
+      "chapter": 115,
+      "line": 124,
+      "core_english": "of those who prayed him. The third is the purpose of heart"
+    },
+    {
+      "section": 5380,
+      "chapter": 115,
+      "line": 125,
+      "core_english": "of the living soul, which he released forth. He completed her, he"
+    },
+    {
+      "section": 5383,
+      "chapter": 115,
+      "line": 140,
+      "core_english": "him, at the third turn {15}"
+    },
+    {
+      "section": 5384,
+      "chapter": 115,
+      "line": 141,
+      "core_english": "to reveal forth his icon {16}"
+    },
+    {
+      "section": 5385,
+      "chapter": 115,
+      "line": 142,
+      "core_english": "he hid his icon to {17}"
+    },
+    {
+      "section": 5386,
+      "chapter": 115,
+      "line": 143,
+      "core_english": "{18} he stood fast"
+    },
+    {
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "core_english": "{19} they revealed"
+    },
+    {
+      "section": 5388,
+      "chapter": 115,
+      "line": 145,
+      "core_english": "{20} they {21}"
+    },
+    {
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "core_english": "{22} the manifestation {23} with the {24}"
+    },
+    {
+      "section": 5390,
+      "chapter": 115,
+      "line": 147,
+      "core_english": "{25} the First Man who {26}"
+    },
+    {
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "core_english": "{27} laughter {28} to him in {29}"
+    },
+    {
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "core_english": "{30} with {31} which is lofty {32} in the boundary {33}"
+    },
+    {
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "core_english": "{34} garments {35} they {36}"
+    },
+    {
+      "section": 5394,
+      "chapter": 115,
+      "line": 151,
+      "core_english": "forth {37}"
+    },
+    {
+      "section": 5395,
+      "chapter": 115,
+      "line": 153,
+      "core_english": "{38}"
+    },
+    {
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "core_english": "{39} in {40} they saw to him {41}"
+    },
+    {
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "core_english": "{42} their voice {43} the body"
+    },
+    {
+      "section": 5398,
+      "chapter": 115,
+      "line": 156,
+      "core_english": "tree(?) {44}"
+    },
+    {
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "core_english": "{45} her {46} prayer {47} the body"
+    },
+    {
+      "section": 5400,
+      "chapter": 115,
+      "line": 160,
+      "core_english": "{48} prayer {49}"
+    },
+    {
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "core_english": "{50} she prayed {51} inward {52}"
+    },
+    {
+      "section": 5402,
+      "chapter": 115,
+      "line": 162,
+      "core_english": "{53} freeman {54}"
+    },
+    {
+      "section": 5403,
+      "chapter": 115,
+      "line": 165,
+      "core_english": "{55} the Ambassador"
+    },
+    {
+      "section": 5404,
+      "chapter": 115,
+      "line": 166,
+      "core_english": "{56} in {57}"
+    },
+    {
+      "section": 5405,
+      "chapter": 115,
+      "line": 167,
+      "core_english": "{58}"
+    },
+    {
+      "section": 5406,
+      "chapter": 115,
+      "line": 168,
+      "core_english": "{59} indeed {60}"
+    },
+    {
+      "section": 5407,
+      "chapter": 115,
+      "line": 169,
+      "core_english": "{61} also {62}"
+    },
+    {
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "core_english": "with the Living Ones, with {63}, forever, {64}"
+    },
+    {
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "core_english": "{65} with-man, the first {66} forth from {67}"
+    },
+    {
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "core_english": "{68} the {69}; he gave them the hope {70}"
+    },
+    {
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "core_english": "Jesus himself the Radiance completed forth the purpose of heart {71}"
+    },
+    {
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "core_english": "{72} the purpose of heart {73} in the {74} their {75}"
+    },
+    {
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "core_english": "{76} they found the light {77} the purpose {78} of {79}"
+    },
+    {
+      "section": 5414,
+      "chapter": 115,
+      "line": 179,
+      "core_english": "the Ambassador, who has {80}; he gave them the power which is"
+    },
+    {
+      "section": 5415,
+      "chapter": 115,
+      "line": 180,
+      "core_english": "This is Jesus the Radiance; he gave the purpose of heart of the elements"
+    },
+    {
+      "section": 5416,
+      "chapter": 115,
+      "line": 183,
+      "core_english": "{81} forever, the first {82}"
+    },
+    {
+      "section": 5417,
+      "chapter": 115,
+      "line": 184,
+      "core_english": "{83} they made him stand as freeman {84}"
+    },
+    {
+      "section": 5418,
+      "chapter": 115,
+      "line": 185,
+      "core_english": "of the {85}; revealed his enemies; he received the hope {86}"
+    },
+    {
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "core_english": "revealed {87} Jesus the Radiance, the power of light {88}"
+    },
+    {
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "core_english": "{89} with the prayer of the {90} of the Light"
+    },
+    {
+      "section": 5421,
+      "chapter": 115,
+      "line": 190,
+      "core_english": "{91} of the molding"
+    },
+    {
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "core_english": "{92} and {93} thus also is this"
+    },
+    {
+      "section": 5423,
+      "chapter": 115,
+      "line": 192,
+      "core_english": "molding of {94}, you stand fast on your feet"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5300,
+      "chapter": 115,
+      "line": 28,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable; no constraint."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5301,
+      "chapter": 115,
+      "line": 29,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable; particle/connector lost."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5303,
+      "chapter": 115,
+      "line": 38,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "unrestorable",
+      "basis": "14-char Coptic gap unrestorable; clause-opening lost."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5333,
+      "chapter": 115,
+      "line": 68,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        54
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap completes 'rest' but the further ~9 chars of transitional content cannot be reconstructed."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5334,
+      "chapter": 115,
+      "line": 69,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        56
+      ],
+      "confidence": "unrestorable",
+      "basis": "7-char trailing gap with no constraint."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 5335,
+      "chapter": 115,
+      "line": 70,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        58
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char trailing gap with no constraint."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 5336,
+      "chapter": 115,
+      "line": 71,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        59
+      ],
+      "confidence": "unrestorable",
+      "basis": "11-char relative clause continuation lost."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        60
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char gap, no traces."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 5337,
+      "chapter": 115,
+      "line": 72,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        61
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap; not constrained."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 5361,
+      "chapter": 115,
+      "line": 106,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        77
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char gap with only -ⲁⲥ trace; noun cannot be specified."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 5365,
+      "chapter": 115,
+      "line": 110,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        81
+      ],
+      "confidence": "unrestorable",
+      "basis": "Antecedent lost; no apparatus entry."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 5370,
+      "chapter": 115,
+      "line": 115,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        88
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char preposition/verb lost."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 5370,
+      "chapter": 115,
+      "line": 115,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        89
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char noun governed by 'his' not constrained."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 5378,
+      "chapter": 115,
+      "line": 123,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        92
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char noun governed by 'of the Father' not specifiable."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 5378,
+      "chapter": 115,
+      "line": 123,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        93
+      ],
+      "confidence": "unrestorable",
+      "basis": "7-char relative clause verb lost."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 5383,
+      "chapter": 115,
+      "line": 140,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        97
+      ],
+      "confidence": "unrestorable",
+      "basis": "15-char gap, no constraint."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 5384,
+      "chapter": 115,
+      "line": 141,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        98
+      ],
+      "confidence": "unrestorable",
+      "basis": "14-char gap, no constraint."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 5385,
+      "chapter": 115,
+      "line": 142,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        99
+      ],
+      "confidence": "unrestorable",
+      "basis": "13-char gap, no constraint."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 5386,
+      "chapter": 115,
+      "line": 143,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        100,
+        101,
+        102
+      ],
+      "confidence": "unrestorable",
+      "basis": "Multiple long gaps, all lost."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 5387,
+      "chapter": 115,
+      "line": 144,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        103,
+        104,
+        105,
+        106
+      ],
+      "confidence": "unrestorable",
+      "basis": "Multiple gaps; only 'they revealed' (107=ⲛϩ) recoverable."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 5388,
+      "chapter": 115,
+      "line": 145,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        108
+      ],
+      "confidence": "unrestorable",
+      "basis": "30-char gap."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 5388,
+      "chapter": 115,
+      "line": 145,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        109
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        110
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        112
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char gap."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 5389,
+      "chapter": 115,
+      "line": 146,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        113
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 5390,
+      "chapter": 115,
+      "line": 147,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        114
+      ],
+      "confidence": "unrestorable",
+      "basis": "20-char gap."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 5390,
+      "chapter": 115,
+      "line": 147,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        115
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char relative clause lost."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        116
+      ],
+      "confidence": "unrestorable",
+      "basis": "20-char gap."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        117,
+        118
+      ],
+      "confidence": "unrestorable",
+      "basis": "Multiple short gaps lost."
+    },
+    {
+      "eng_gap_id": 29,
+      "section": 5391,
+      "chapter": 115,
+      "line": 148,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        119
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap."
+    },
+    {
+      "eng_gap_id": 30,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        120
+      ],
+      "confidence": "unrestorable",
+      "basis": "20-char gap."
+    },
+    {
+      "eng_gap_id": 31,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        121
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char gap."
+    },
+    {
+      "eng_gap_id": 32,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        122
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap."
+    },
+    {
+      "eng_gap_id": 33,
+      "section": 5392,
+      "chapter": 115,
+      "line": 149,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        123,
+        124
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing gaps lost."
+    },
+    {
+      "eng_gap_id": 34,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        125,
+        126
+      ],
+      "confidence": "unrestorable",
+      "basis": "Long gap and short gap lost."
+    },
+    {
+      "eng_gap_id": 35,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        127,
+        128
+      ],
+      "confidence": "unrestorable",
+      "basis": "Gaps surrounding 'garments' lost."
+    },
+    {
+      "eng_gap_id": 36,
+      "section": 5393,
+      "chapter": 115,
+      "line": 150,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        129,
+        130
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb fragment ⲁⲩⲃⲱⲛ uncertain."
+    },
+    {
+      "eng_gap_id": 37,
+      "section": 5394,
+      "chapter": 115,
+      "line": 151,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        131,
+        132
+      ],
+      "confidence": "unrestorable",
+      "basis": "Only 'forth' fragment recoverable."
+    },
+    {
+      "eng_gap_id": 38,
+      "section": 5395,
+      "chapter": 115,
+      "line": 153,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        133,
+        134,
+        135
+      ],
+      "confidence": "unrestorable",
+      "basis": "Entire line lost."
+    },
+    {
+      "eng_gap_id": 39,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        136
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 40,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        137
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char gap."
+    },
+    {
+      "eng_gap_id": 41,
+      "section": 5396,
+      "chapter": 115,
+      "line": 154,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        138
+      ],
+      "confidence": "unrestorable",
+      "basis": "15-char gap, destroyed."
+    },
+    {
+      "eng_gap_id": 42,
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        139
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 43,
+      "section": 5397,
+      "chapter": 115,
+      "line": 155,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        140,
+        141
+      ],
+      "confidence": "unrestorable",
+      "basis": "Only -ⲁ ending of ⲡⲥⲱⲙⲁ recoverable."
+    },
+    {
+      "eng_gap_id": 44,
+      "section": 5398,
+      "chapter": 115,
+      "line": 156,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        142,
+        143
+      ],
+      "confidence": "unrestorable",
+      "basis": "Only ϣ trace of possible ϣⲏⲛ 'tree'; remainder rubbed off."
+    },
+    {
+      "eng_gap_id": 45,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        144
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 46,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        145
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char gap."
+    },
+    {
+      "eng_gap_id": 47,
+      "section": 5399,
+      "chapter": 115,
+      "line": 157,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        146,
+        147
+      ],
+      "confidence": "unrestorable",
+      "basis": "Only -ⲙⲁ ending of ⲡⲥⲱⲙⲁ recoverable."
+    },
+    {
+      "eng_gap_id": 48,
+      "section": 5400,
+      "chapter": 115,
+      "line": 160,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        148
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 49,
+      "section": 5400,
+      "chapter": 115,
+      "line": 160,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        149
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap, rubbed off."
+    },
+    {
+      "eng_gap_id": 50,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        150
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 51,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        151
+      ],
+      "confidence": "unrestorable",
+      "basis": "14-char gap."
+    },
+    {
+      "eng_gap_id": 52,
+      "section": 5401,
+      "chapter": 115,
+      "line": 161,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        152
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap."
+    },
+    {
+      "eng_gap_id": 53,
+      "section": 5402,
+      "chapter": 115,
+      "line": 162,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        153
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 54,
+      "section": 5402,
+      "chapter": 115,
+      "line": 162,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        154
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap, rubbed off."
+    },
+    {
+      "eng_gap_id": 55,
+      "section": 5403,
+      "chapter": 115,
+      "line": 165,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        155
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap."
+    },
+    {
+      "eng_gap_id": 56,
+      "section": 5404,
+      "chapter": 115,
+      "line": 166,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        157
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 57,
+      "section": 5404,
+      "chapter": 115,
+      "line": 166,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        158
+      ],
+      "confidence": "unrestorable",
+      "basis": "25-char gap."
+    },
+    {
+      "eng_gap_id": 58,
+      "section": 5405,
+      "chapter": 115,
+      "line": 167,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        159
+      ],
+      "confidence": "unrestorable",
+      "basis": "35-char gap, only ⲉ trace."
+    },
+    {
+      "eng_gap_id": 59,
+      "section": 5406,
+      "chapter": 115,
+      "line": 168,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        160
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 60,
+      "section": 5406,
+      "chapter": 115,
+      "line": 168,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        161
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap."
+    },
+    {
+      "eng_gap_id": 61,
+      "section": 5407,
+      "chapter": 115,
+      "line": 169,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        162
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap."
+    },
+    {
+      "eng_gap_id": 62,
+      "section": 5407,
+      "chapter": 115,
+      "line": 169,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        163
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap."
+    },
+    {
+      "eng_gap_id": 63,
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        164
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap; coordinated noun lost."
+    },
+    {
+      "eng_gap_id": 64,
+      "section": 5408,
+      "chapter": 115,
+      "line": 173,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        166
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char gap continuing into damage."
+    },
+    {
+      "eng_gap_id": 65,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        167
+      ],
+      "confidence": "unrestorable",
+      "basis": "1-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 66,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        169
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap after 'the first'."
+    },
+    {
+      "eng_gap_id": 67,
+      "section": 5409,
+      "chapter": 115,
+      "line": 174,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        170
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap."
+    },
+    {
+      "eng_gap_id": 68,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        171
+      ],
+      "confidence": "unrestorable",
+      "basis": "1-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 69,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        172
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char abstract noun on ⲙⲛⲧ-, not specifiable."
+    },
+    {
+      "eng_gap_id": 70,
+      "section": 5410,
+      "chapter": 115,
+      "line": 175,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        173
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char gap continuing into damage."
+    },
+    {
+      "eng_gap_id": 71,
+      "section": 5411,
+      "chapter": 115,
+      "line": 176,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        177
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap continuing into damage."
+    },
+    {
+      "eng_gap_id": 72,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        178
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char gap with ⲁⲥ trace."
+    },
+    {
+      "eng_gap_id": 73,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        179
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap."
+    },
+    {
+      "eng_gap_id": 74,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        180
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char gap."
+    },
+    {
+      "eng_gap_id": 75,
+      "section": 5412,
+      "chapter": 115,
+      "line": 177,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        181
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap."
+    },
+    {
+      "eng_gap_id": 76,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        182
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 77,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        184
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char gap."
+    },
+    {
+      "eng_gap_id": 78,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        185
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char gap."
+    },
+    {
+      "eng_gap_id": 79,
+      "section": 5413,
+      "chapter": 115,
+      "line": 178,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        186
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap continuing into damage."
+    },
+    {
+      "eng_gap_id": 80,
+      "section": 5414,
+      "chapter": 115,
+      "line": 179,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        188
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char relative perfect verb form not specifiable."
+    },
+    {
+      "eng_gap_id": 81,
+      "section": 5416,
+      "chapter": 115,
+      "line": 183,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        192
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 82,
+      "section": 5416,
+      "chapter": 115,
+      "line": 183,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        193
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap."
+    },
+    {
+      "eng_gap_id": 83,
+      "section": 5417,
+      "chapter": 115,
+      "line": 184,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        194
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 84,
+      "section": 5417,
+      "chapter": 115,
+      "line": 184,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        195
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap."
+    },
+    {
+      "eng_gap_id": 85,
+      "section": 5418,
+      "chapter": 115,
+      "line": 185,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        196
+      ],
+      "confidence": "unrestorable",
+      "basis": "Abstract noun on ⲙⲛⲧ- not specifiable."
+    },
+    {
+      "eng_gap_id": 86,
+      "section": 5418,
+      "chapter": 115,
+      "line": 185,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        197
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap continuing into damage."
+    },
+    {
+      "eng_gap_id": 87,
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        199
+      ],
+      "confidence": "unrestorable",
+      "basis": "4-char gap."
+    },
+    {
+      "eng_gap_id": 88,
+      "section": 5419,
+      "chapter": 115,
+      "line": 186,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        200
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap with ⲉⲓ trace."
+    },
+    {
+      "eng_gap_id": 89,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        201
+      ],
+      "confidence": "unrestorable",
+      "basis": "3-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 90,
+      "section": 5420,
+      "chapter": 115,
+      "line": 187,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        203
+      ],
+      "confidence": "unrestorable",
+      "basis": "Noun ending in -ⲉ between 'of the' and 'of the Light' not specifiable."
+    },
+    {
+      "eng_gap_id": 91,
+      "section": 5421,
+      "chapter": 115,
+      "line": 190,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        205
+      ],
+      "confidence": "unrestorable",
+      "basis": "14-char gap, abgerieben."
+    },
+    {
+      "eng_gap_id": 92,
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        207
+      ],
+      "confidence": "unrestorable",
+      "basis": "6-char gap, line begin damaged."
+    },
+    {
+      "eng_gap_id": 93,
+      "section": 5422,
+      "chapter": 115,
+      "line": 191,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        208
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char gap, abgerieben."
+    },
+    {
+      "eng_gap_id": 94,
+      "section": 5423,
+      "chapter": 115,
+      "line": 192,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        210,
+        211
+      ],
+      "confidence": "unrestorable",
+      "basis": "The entity being molded is not specifiable; the addressee remains the audience addressed in 'you stand fast.'"
+    }
+  ]
+}

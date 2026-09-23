@@ -1,0 +1,87 @@
+{
+  "page": "077",
+  "source": "output/projects/kephalaia_ocr_v2/pages_cropped/keph_p077.jpg",
+  "source_size": [
+    1042,
+    1857
+  ],
+  "body_gap": {
+    "split_x": 86,
+    "confidence": "strong",
+    "method": "line_number_ruler_gap",
+    "line_number_col_right": 74,
+    "body_left": 98,
+    "gap_width": 24
+  },
+  "common_y": {
+    "y0": 208,
+    "y1": 1671,
+    "method": "line_number_ruler",
+    "line_numbers": {
+      "available": true,
+      "candidate_count": 164,
+      "row_count": 33,
+      "all_row_count": 33,
+      "line_step": 41.003,
+      "y_top": 230,
+      "y_bottom": 1649,
+      "col_left": 49,
+      "col_right": 74,
+      "ruler_band": [
+        35,
+        95
+      ],
+      "first_row_center": 238.235,
+      "last_row_center": 1641.026,
+      "discarded_row_centers": [],
+      "gap_start": 76,
+      "body_left": 98,
+      "confidence": "strong"
+    }
+  },
+  "common_crop": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/common/p077_common.jpg",
+    "x_range": [
+      31,
+      1010
+    ],
+    "size": [
+      979,
+      1463
+    ]
+  },
+  "line_numbers": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/line_numbers/p077_line_numbers.jpg",
+    "x_range": [
+      31,
+      86
+    ],
+    "size": [
+      55,
+      1463
+    ]
+  },
+  "text_body": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/text_body/p077_text_body.jpg",
+    "x_range": [
+      80,
+      1010
+    ],
+    "size": [
+      930,
+      1463
+    ],
+    "right_edge_preservation": null
+  },
+  "review": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/reviews/p077_review.jpg",
+    "size": [
+      1280,
+      1938
+    ]
+  },
+  "margins": {
+    "x": 18,
+    "y": 22
+  }
+}

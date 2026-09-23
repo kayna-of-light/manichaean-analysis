@@ -1,0 +1,132 @@
+{
+  "page": "290",
+  "source": "output/projects/kephalaia_ocr_v2/pages_cropped/keph_p290.jpg",
+  "source_size": [
+    1001,
+    1896
+  ],
+  "body_gap": {
+    "split_x": 106,
+    "confidence": "strong",
+    "method": "line_number_ruler_gap",
+    "line_number_col_right": 75,
+    "body_left": 136,
+    "gap_width": 61
+  },
+  "common_y": {
+    "y0": 213,
+    "y1": 1667,
+    "method": "line_number_ruler",
+    "line_numbers": {
+      "available": true,
+      "candidate_count": 80,
+      "row_count": 28,
+      "all_row_count": 29,
+      "line_step": 42.184,
+      "y_top": 235,
+      "y_bottom": 1645,
+      "col_left": 50,
+      "col_right": 75,
+      "ruler_band": [
+        35,
+        95
+      ],
+      "first_row_center": 243.397,
+      "last_row_center": 1635.249,
+      "discarded_row_centers": [
+        59.21
+      ],
+      "gap_start": 77,
+      "body_left": 136,
+      "confidence": "strong"
+    }
+  },
+  "common_crop": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/common/p290_common.jpg",
+    "x_range": [
+      32,
+      1001
+    ],
+    "size": [
+      969,
+      1454
+    ]
+  },
+  "line_numbers": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/line_numbers/p290_line_numbers.jpg",
+    "x_range": [
+      32,
+      93
+    ],
+    "size": [
+      61,
+      1454
+    ]
+  },
+  "text_body": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/text_body/p290_text_body.jpg",
+    "x_range": [
+      118,
+      1001
+    ],
+    "size": [
+      883,
+      1454
+    ],
+    "right_edge_preservation": {
+      "method": "row_aligned_sparse_right_ink",
+      "original_x_range": [
+        118,
+        969
+      ],
+      "adjusted_x_range": [
+        118,
+        1001
+      ],
+      "raw_right_before_margin": 951,
+      "raw_right_after_preservation": 990,
+      "candidate_count": 2,
+      "kept_count": 2,
+      "max_gap_from_trim": 74,
+      "sample_kept_components": [
+        {
+          "bbox": [
+            985,
+            1199,
+            990,
+            1202
+          ],
+          "area": 9,
+          "support_mode": "row",
+          "gap_from_trim": 34,
+          "row_support_count": 30,
+          "row_support_area": 3253
+        },
+        {
+          "bbox": [
+            937,
+            454,
+            952,
+            470
+          ],
+          "area": 134,
+          "support_mode": "local",
+          "gap_from_trim": 0,
+          "row_support_count": 33,
+          "row_support_area": 4683
+        }
+      ]
+    }
+  },
+  "review": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/reviews/p290_review.jpg",
+    "size": [
+      1257,
+      1938
+    ]
+  },
+  "margins": {
+    "x": 18,
+    "y": 22
+  }
+}

@@ -1,0 +1,981 @@
+{
+  "teaching": 7,
+  "total_gaps_in_core": 50,
+  "gaps_restored": 46,
+  "gaps_unrestorable": 4,
+  "restoration_note": "The teaching describes the five registers at which the Lord is recognized as he goes forth: Father of Greatness → Beloved of Lights → Third Ambassador → Jesus the Radiance → Mind of Light → Form of Light. Most gaps are clipped letters at line breaks (titles, perfect prefixes, genitive markers, splits like ⲡϣⲁⲣⲡ / ⲡⲙⲁⲍⲥⲛⲉⲩ / ⲙⲟⲛⲟⲅⲉⲛⲏⲥ), strongly constrained by parallel formulae and the Manichaean lexicon. Four mid-line lacunae remain too weakly constrained: {27} (3-char span between 'air' and 'wheel'), {39} (~4 chars after 'Son'), {40} (~7-char speech opener before 'I am'), and the feminine-noun titles in §430-431 ({31}, {32}), where I offer cautious low-confidence proposals along the spiritual axis the reading sets out (Mother of Light; unity).",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 391,
+      "chapter": 7,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛ",
+      "basis": "Editor's restoration; refrain 'one came forth again from another' (ⲛⲧⲁ ⲟⲩⲉ ⲁⲛ ⲉⲓ ⲁⲃⲁⲗ ⲛ̄ⲟⲩⲉ); standard adverb of repetition.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 393,
+      "chapter": 7,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Completes ⲡⲉⲧⲉ — relative pronoun introducing ⲙⲛ̄ ϣⲓ 'has no measure'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 393,
+      "chapter": 7,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄",
+      "basis": "Completes ⲁⲧⲉϩⲙ̄ⲛ̄|ⲧⲛⲁⲟ split across line break; abstract ⲙⲛⲧⲛⲁⲟ 'greatness'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 394,
+      "chapter": 7,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "ⲙⲟⲛⲟⲅⲉⲛⲏⲥ 'Only-Begotten' — standard Greek loan, traces ⲙ_ⲛⲟⲅⲉⲛⲏⲥ require ⲟ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 394,
+      "chapter": 7,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "ⲡϣ_ + line break to ⲣ̄ⲡ → ⲡϣⲁⲣⲡ 'first'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 395,
+      "chapter": 7,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ ⲛⲓ",
+      "basis": "Established formula ϯⲟⲩ ⲛⲓⲱⲧ 'the five Fathers' (lexicon: Five Great Greatnesses); cohort of the teaching's title.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 397,
+      "chapter": 7,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Verbal ending of ⲧⲱⲍⲙⲉ 'emanate/call forth' — perfect ⲁϩ-ⲧⲱⲍⲙⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 398,
+      "chapter": 7,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣⲁ",
+      "basis": "ⲡϣⲁⲣⲡ 'the first' split: ⲡ_ⲣⲡ requires ϣⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 398,
+      "chapter": 7,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ",
+      "basis": "ⲡⲧⲛⲁⲟ 'the Great' — completes the standard masc. epithet preceding ⲡ̄ⲛⲁ̄ on the next line ('Great Spirit').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 400,
+      "chapter": 7,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩ ⲡⲉ",
+      "basis": "ⲡⲙⲁⲍⲥⲛⲉⲩ ⲡⲉ 'the second is' — ordinal formula matching ⲡϣⲁⲣⲡ above.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 400,
+      "chapter": 7,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲧ ⲛ̄",
+      "basis": "ⲡⲙⲉⲣⲓⲧ ⲛ̄ⲛⲟⲩⲁⲓⲛⲉ 'Beloved of the Lights' — established lexicon title; ⲛⲟⲩⲁⲓ̈ⲛⲉ visible on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 401,
+      "chapter": 7,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ ⲡⲉ",
+      "basis": "Standard epithet ⲉⲧⲟ ⲛ̄ⲉⲁⲩ 'who is glorious' followed by copula+article ⲡⲉⲧ-, exactly mirroring §417 of Jesus the Radiance.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 401,
+      "chapter": 7,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ ⲡⲉ",
+      "basis": "ⲡⲉⲧⲧⲁⲓ̈ⲁⲓ̈ⲧ ⲡⲉ 'the honored one' — qualitative of ⲧⲁⲓⲟ (lexicon ⲡⲣ̄ⲣⲟ ⲙⲡⲧⲁⲓⲟ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 402,
+      "chapter": 7,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲟⲩ",
+      "basis": "Perfect ⲁϩ- + ⲟⲩⲱⲗⲡ̄ 'has been revealed' (lexicon: ⲟⲩⲱⲗⲡ ⲁⲃⲁⲗ 'manifest').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 402,
+      "chapter": 7,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗ ⲛ̄ϩ",
+      "basis": "ⲁⲃⲁⲗ ⲛ̄ϩⲏⲧϥ̄ 'from him'; trace ⲏⲧϩ shows the pronoun-bearing prep, completing ⲁⲃⲁ_ ⲛ̄_ⲏⲧϥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 403,
+      "chapter": 7,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ",
+      "basis": "Established Manichaean title ⲡⲙⲁⲍϣⲁⲙⲧ ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ 'Third Ambassador' (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 404,
+      "chapter": 7,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲥ ⲧⲏⲣⲟⲩ",
+      "basis": "ⲛ̄ⲛⲥⲩⲙⲃⲟⲩⲗⲟⲥ ⲧⲏⲣⲟⲩ 'of all the counselors' — standard plural Greek loan + ⲧⲏⲣⲟⲩ collective.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 404,
+      "chapter": 7,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉⲧⲁϩⲉⲓ ⲁⲃⲁⲗ ⲙ̄",
+      "basis": "Editor's restoration; the same descent-formula 'who came forth from (the Father)' appears at §392, §411, §422.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 18,
+      "section": 418,
+      "chapter": 7,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Article ⲡ + ⲉⲧⲉϣⲁⲩϯ creates 'the (one) through whom they give'; standard relative.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 419,
+      "chapter": 7,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "ⲧⲥⲟⲫⲓⲁ — Greek loan, single-letter break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 420,
+      "chapter": 7,
+      "line": 36,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲭ",
+      "basis": "ⲛⲁⲣⲭⲱⲛ 'the Archons' — visible ⲛⲛ̄_ⲱⲛ requires ⲁⲣⲭ (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 421,
+      "chapter": 7,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ",
+      "basis": "ⲡⲱⲕ ⲛϩⲏⲧ 'pride-of-heart'; single vowel.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 425,
+      "chapter": 7,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "ⲡⲛⲟⲩⲥ ⲛ̄ⲟⲩⲁⲓⲛⲉ 'Mind of Light' — established title (lexicon: Light Mind).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 427,
+      "chapter": 7,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "ⲧⲁϩ-ⲙⲉⲥ 'called' split across line break; verb ⲧⲱϩⲙⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 427,
+      "chapter": 7,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ ⲛ̄ⲕⲣⲓ",
+      "basis": "ⲡⲛⲁⲟ ⲛ̄ⲕⲣⲓⲧⲏⲥ 'the great Judge' — standard Manichaean title for the second power of Jesus the Radiance.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 428,
+      "chapter": 7,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄",
+      "basis": "Genitive marker before ⲛ̄ⲣⲱⲙⲉ 'of men' — judges all souls of men.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 428,
+      "chapter": 7,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲧⲉϥ",
+      "basis": "Circumstantial ⲉⲣⲉ + possessive ⲧⲉϥⲥⲕⲏⲛⲏ 'while his tabernacle (is established)'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 428,
+      "chapter": 7,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char span between 'air' and the article ⲡ + ⲧⲣⲟⲭⲟⲥ on the next line; possibilities (ⲧⲡⲉ 'heaven', ⲡⲣⲏ 'sun') are not securely constrained. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 429,
+      "chapter": 7,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor's note: article ⲡ before ⲧⲣⲟⲭⲟⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 429,
+      "chapter": 7,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛ̄ⲛ̄",
+      "basis": "Genitive of stars: ⲡⲧⲣⲟⲭⲟⲥ ⲛ̄ⲛ̄ⲥⲓⲟⲩ 'wheel of the stars' (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 430,
+      "chapter": 7,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲗ",
+      "basis": "ⲡⲗⲓⲗⲟⲩ 'the Youth' — Jesus the Youth (Lilou), standard third power title (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 430,
+      "chapter": 7,
+      "line": 49,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟ ⲙ̄ⲙⲉⲩ ⲛ̄",
+      "basis": "Feminine 'great X of light': trying ⲧⲛⲁⲟ ⲙ̄ⲙⲉⲩ ⲛ̄ⲟⲩⲁⲓⲛⲉ 'great Mother of Light' (paired with the Youth Lilou). Roughly fits 6-char estimate. Genuinely uncertain — the editor's ⲡⲁⲣⲑⲉⲛⲟⲥ is too long.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 32,
+      "section": 431,
+      "chapter": 7,
+      "line": 50,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲟⲩⲱⲧ",
+      "basis": "'two faces in unity gazing toward heaven' — ⲡⲟⲩⲱⲧ 'oneness/unity' fits 6-char span and the doctrinal point that the calling and the hearing are one face. Tentative.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 33,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ",
+      "basis": "ϩⲙ̄ 'in' — single letter completing the preposition.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲛ̄",
+      "basis": "Conjunction 'and' joining ⲡⲧⲱϩⲙⲉ 'the calling' and ⲡⲥⲱⲧⲙⲉ 'the hearing' — the Great Counsel pair (lexicon: ⲡⲧⲱⲍⲙⲉ ⲙⲛ̄ ⲡⲥⲱⲧⲙⲉ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϥⲧⲱⲕ",
+      "basis": "ⲧⲱⲕ ⲁⲣⲉⲧ⸗ 'stand firm' — ⲁϥⲧⲱⲕ ϩⲱϥ ⲁⲣⲉⲧϥ 'he likewise stood firm before his Father'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 36,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱⲧ",
+      "basis": "ⲡϥⲓ̈ⲱⲧ 'his Father' — possessive at line end.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Article ⲡⲣ̄ⲣⲟ 'the King' — title formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲧⲁⲓⲟ",
+      "basis": "5-char title for the Lord at this register; ⲡⲣ̄ⲣⲟ ⲙⲡⲧⲁⲓⲟ 'King of Honor' (lexicon entry; the Lord governing the seven firmaments) fits length and matches the heaven-establishing context of this passage.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 39,
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "~4 chars after ⲡⲥⲏⲣⲉ 'the Son' — possibilities (ⲛ̄ⲧⲡⲉ 'of heaven', ⲙ̄ⲡⲉⲁⲩ 'of glory') are not securely constrained. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 40,
+      "section": 434,
+      "chapter": 7,
+      "line": 53,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char speech-opener preceding ⲁⲛⲁⲕ 'I am'. ⲭⲉ alone is too short and there is no firm parallel for the longer span. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 41,
+      "section": 434,
+      "chapter": 7,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "ⲁⲛⲁⲕ 'I' — independent pronoun opening the saying.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 42,
+      "section": 435,
+      "chapter": 7,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉϯⲭⲱ ⲙⲙⲁϥ ⲛ̄ⲧ",
+      "basis": "Editor's bridge formula 'this is what I am saying to' linking 'with my Father' to ⲱⲧⲛⲉ 'you (pl.)'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 43,
+      "section": 436,
+      "chapter": 7,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲁϥ ϩⲁⲧⲙ̄ ⲡⲉⲧⲛⲓ̈ⲱⲧ",
+      "basis": "Mirror of §434 ⲁⲣⲁϥ ϩⲁⲧⲙ̄ ⲡⲁⲓ̈ⲱⲧ 'him with my Father' → here 'him with your Father' (cf. Jn 8:38 form).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 440,
+      "chapter": 7,
+      "line": 68,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱⲕ",
+      "basis": "ⲃⲱⲕ ⲁⲃⲁⲗ 'go forth' — partial ⲃ visible; standard verb of leaving the body.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 45,
+      "section": 441,
+      "chapter": 7,
+      "line": 69,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲧ",
+      "basis": "ⲡϣⲁⲙⲧ 'three' — confirmed by §445-446 'these are the three angels'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 442,
+      "chapter": 7,
+      "line": 70,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲍ",
+      "basis": "ⲉϩⲉⲙⲁⲍⲧⲉ 'to hold/grasp' — paralleled by ⲡⲉⲧⲉⲙⲁⲍⲧⲉ in §444.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 47,
+      "section": 448,
+      "chapter": 7,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗⲡ",
+      "basis": "ⲁⲩⲟⲱⲗⲡ̄ ⲁⲃⲁⲗ 'they were disclosed' — revelatory doublet with ⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 449,
+      "chapter": 7,
+      "line": 78,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩ",
+      "basis": "ⲙ̄ⲙⲁⲩ '(of) them, their' — required for 'before their faces'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 49,
+      "section": 451,
+      "chapter": 7,
+      "line": 80,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲡⲓⲥⲧⲟⲥ",
+      "basis": "Standard pairing 'the righteous and the faithful' (δίκαιοι καὶ πιστοί) for the Manichaean elect.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 391,
+      "chapter": 7,
+      "line": 7,
+      "core_english": "in existence, who were called forth one from another, where one came forth {0}"
+    },
+    {
+      "section": 393,
+      "chapter": 7,
+      "line": 9,
+      "core_english": "Greatness, the glorious blessed one, who has no measure to his greatness,"
+    },
+    {
+      "section": 394,
+      "chapter": 7,
+      "line": 10,
+      "core_english": "the Greatness, who is himself the first Only-Begotten, the first"
+    },
+    {
+      "section": 395,
+      "chapter": 7,
+      "line": 11,
+      "core_english": "eternal one, who exists with the five eternal Fathers,"
+    },
+    {
+      "section": 397,
+      "chapter": 7,
+      "line": 13,
+      "core_english": "that shall come into being. He himself is the glorious Father. He emanated"
+    },
+    {
+      "section": 398,
+      "chapter": 7,
+      "line": 14,
+      "core_english": "three emanations from himself: the first is the Great"
+    },
+    {
+      "section": 400,
+      "chapter": 7,
+      "line": 16,
+      "core_english": "manifested forth as first. The second is the Beloved of"
+    },
+    {
+      "section": 401,
+      "chapter": 7,
+      "line": 17,
+      "core_english": "the Lights, the Great Beloved who is glorious, the honored one,"
+    },
+    {
+      "section": 402,
+      "chapter": 7,
+      "line": 18,
+      "core_english": "who came forth from the Father, who has been revealed from him."
+    },
+    {
+      "section": 403,
+      "chapter": 7,
+      "line": 19,
+      "core_english": "The third Father is the Third {1},"
+    },
+    {
+      "section": 404,
+      "chapter": 7,
+      "line": 20,
+      "core_english": "the first of all the counselors, {2},"
+    },
+    {
+      "section": 418,
+      "chapter": 7,
+      "line": 34,
+      "core_english": "{3} through whom they give the eternal life. The third"
+    },
+    {
+      "section": 419,
+      "chapter": 7,
+      "line": 35,
+      "core_english": "is the Virgin of the Light, the Sophia, who is glorious,"
+    },
+    {
+      "section": 420,
+      "chapter": 7,
+      "line": 36,
+      "core_english": "who steals away the heart of the {4} and the Powers by her image, perfect"
+    },
+    {
+      "section": 421,
+      "chapter": 7,
+      "line": 37,
+      "core_english": "in the pride-of-heart of greatness."
+    },
+    {
+      "section": 425,
+      "chapter": 7,
+      "line": 41,
+      "core_english": "The first power that he called is the Mind of Light,"
+    },
+    {
+      "section": 427,
+      "chapter": 7,
+      "line": 46,
+      "core_english": "called is the great {5} who judges all the souls"
+    },
+    {
+      "section": 428,
+      "chapter": 7,
+      "line": 47,
+      "core_english": "of men, while his tabernacle is established in the air, beneath {6}"
+    },
+    {
+      "section": 429,
+      "chapter": 7,
+      "line": 48,
+      "core_english": "the wheel of the stars. The third Power is"
+    },
+    {
+      "section": 430,
+      "chapter": 7,
+      "line": 49,
+      "core_english": "the {7}, the great {8} of light. In his coun-"
+    },
+    {
+      "section": 431,
+      "chapter": 7,
+      "line": 50,
+      "core_english": "tenance are two faces in {9}, gazing toward the heaven that he established"
+    },
+    {
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "core_english": "in the calling {10} the hearing. {11} likewise before his Father,"
+    },
+    {
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "core_english": "the King of {12}, of the Son {13}. They saw him saying:"
+    },
+    {
+      "section": 434,
+      "chapter": 7,
+      "line": 53,
+      "core_english": "{14} 'I am the one who has seen him with my Father;"
+    },
+    {
+      "section": 435,
+      "chapter": 7,
+      "line": 54,
+      "core_english": "{15} you. You also: what you have seen"
+    },
+    {
+      "section": 436,
+      "chapter": 7,
+      "line": 55,
+      "core_english": "{16} is what you do.'"
+    },
+    {
+      "section": 440,
+      "chapter": 7,
+      "line": 68,
+      "core_english": "is revealed to everyone who will {17} forth from the bo-"
+    },
+    {
+      "section": 441,
+      "chapter": 7,
+      "line": 69,
+      "core_english": "dy, into the likeness of the icon of the apostle and the {18}"
+    },
+    {
+      "section": 442,
+      "chapter": 7,
+      "line": 70,
+      "core_english": "great angels who are glorious, who come with her. The one to {19}"
+    },
+    {
+      "section": 448,
+      "chapter": 7,
+      "line": 77,
+      "core_english": "from one another. They were revealed; they {20} through one an-"
+    },
+    {
+      "section": 449,
+      "chapter": 7,
+      "line": 78,
+      "core_english": "other. These are those of him who will recognize them before {21} faces,"
+    },
+    {
+      "section": 451,
+      "chapter": 7,
+      "line": 80,
+      "core_english": "light which they give to the righteous, {22}, the men of peace,"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 391,
+      "chapter": 7,
+      "line": 7,
+      "proposed_english": "again",
+      "coptic_gap_refs": [
+        0
+      ],
+      "basis": "ⲁⲛ 'again' — refrain of repeated emanation.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 403,
+      "chapter": 7,
+      "line": 19,
+      "proposed_english": "Ambassador",
+      "coptic_gap_refs": [
+        15
+      ],
+      "basis": "Standard title 'Third Ambassador' (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 404,
+      "chapter": 7,
+      "line": 20,
+      "proposed_english": "who came forth from the First Father",
+      "coptic_gap_refs": [
+        17
+      ],
+      "basis": "Standard descent-formula paralleling §392, §411, §422.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 418,
+      "chapter": 7,
+      "line": 34,
+      "proposed_english": "He is the one",
+      "coptic_gap_refs": [
+        18
+      ],
+      "basis": "Article + relative ⲡⲉⲧⲉϣⲁⲩϯ — 'he is the one through whom they give'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 420,
+      "chapter": 7,
+      "line": 36,
+      "proposed_english": "Archons",
+      "coptic_gap_refs": [
+        20
+      ],
+      "basis": "ⲛⲁⲣⲭⲱⲛ 'Archons' — particular forms of the self (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 427,
+      "chapter": 7,
+      "line": 46,
+      "proposed_english": "Judge",
+      "coptic_gap_refs": [
+        24
+      ],
+      "basis": "ⲡⲛⲁⲟ ⲛ̄ⲕⲣⲓⲧⲏⲥ 'great Judge' — discriminating power (lexicon: great judges / King's judges).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 428,
+      "chapter": 7,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "basis": "3-char Coptic span between 'air' and 'the wheel' is not securely restorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 430,
+      "chapter": 7,
+      "line": 49,
+      "proposed_english": "Youth",
+      "coptic_gap_refs": [
+        30
+      ],
+      "basis": "ⲡⲗⲓⲗⲟⲩ — Jesus the Youth (Lilou), the third power of Jesus the Radiance (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 430,
+      "chapter": 7,
+      "line": 49,
+      "proposed_english": "Mother",
+      "coptic_gap_refs": [
+        31
+      ],
+      "basis": "Tentative reading of feminine 'great Mother of light' as the consort/correlate of the Youth at this register; not securely constrained.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 431,
+      "chapter": 7,
+      "line": 50,
+      "proposed_english": "unity",
+      "coptic_gap_refs": [
+        32
+      ],
+      "basis": "Two faces (calling and hearing) gazing toward heaven 'in unity' — the Great Counsel as one structural conversation. Tentative.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        34
+      ],
+      "basis": "Conjunction joining 'the calling' and 'the hearing'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 432,
+      "chapter": 7,
+      "line": 51,
+      "proposed_english": "He stood firm",
+      "coptic_gap_refs": [
+        35
+      ],
+      "basis": "ⲧⲱⲕ ⲁⲣⲉⲧ⸗ idiom 'stand firm' — the Youth standing before his Father.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "proposed_english": "Honor",
+      "coptic_gap_refs": [
+        38
+      ],
+      "basis": "ⲡⲣ̄ⲣⲟ ⲙⲡⲧⲁⲓⲟ 'King of Honor' — the Lord governing the discrete degrees (lexicon).",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 433,
+      "chapter": 7,
+      "line": 52,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        39
+      ],
+      "basis": "~4-char epithet after 'the Son' is not securely constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 434,
+      "chapter": 7,
+      "line": 53,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        40
+      ],
+      "basis": "7-char speech opener preceding 'I am' has no firm parallel.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 435,
+      "chapter": 7,
+      "line": 54,
+      "proposed_english": "this is what I am saying to",
+      "coptic_gap_refs": [
+        42
+      ],
+      "basis": "Editor's bridge formula linking 'with my Father' to 'you (pl.)' before ⲱⲧⲛⲉ.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 436,
+      "chapter": 7,
+      "line": 55,
+      "proposed_english": "him with your Father",
+      "coptic_gap_refs": [
+        43
+      ],
+      "basis": "Mirror of §434 'him with my Father' transferred to the addressees (cf. Jn 8:38).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 440,
+      "chapter": 7,
+      "line": 68,
+      "proposed_english": "go",
+      "coptic_gap_refs": [
+        44
+      ],
+      "basis": "ⲃⲱⲕ ⲁⲃⲁⲗ 'go forth' — leaving the body.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 441,
+      "chapter": 7,
+      "line": 69,
+      "proposed_english": "three",
+      "coptic_gap_refs": [
+        45
+      ],
+      "basis": "ⲡϣⲁⲙⲧ 'three' — completes 'the three angels of light' confirmed in §445-446.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 442,
+      "chapter": 7,
+      "line": 70,
+      "proposed_english": "hold",
+      "coptic_gap_refs": [
+        46
+      ],
+      "basis": "ⲉϩⲉⲙⲁⲍⲧⲉ 'to hold' — parallel with §444 'the one who holds the diadem'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 448,
+      "chapter": 7,
+      "line": 77,
+      "proposed_english": "were disclosed",
+      "coptic_gap_refs": [
+        47
+      ],
+      "basis": "ⲟⲩⲱⲗⲡ̄ ⲁⲃⲁⲗ 'be disclosed' — revelatory doublet with ⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 449,
+      "chapter": 7,
+      "line": 78,
+      "proposed_english": "their",
+      "coptic_gap_refs": [
+        48
+      ],
+      "basis": "ⲙ̄ⲙⲁⲩ 'them/their' — possessive in 'before their faces'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 451,
+      "chapter": 7,
+      "line": 80,
+      "proposed_english": "the faithful",
+      "coptic_gap_refs": [
+        49
+      ],
+      "basis": "ⲙ̄ⲡⲓⲥⲧⲟⲥ — standard 'righteous and faithful' pairing for the Manichaean elect.",
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "teaching": 67,
+  "total_gaps_in_core": 16,
+  "gaps_restored": 16,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching contrasts night (self-shadow with three evils: blindness, fear/disturbance, and a third evil whose predicate is largely lost in the lacuna at {2}) with the rising sun (divine truth in the rational, with five gifts plus three further likenesses bearing the Father's mystery). Gaps were highly constrained: editor proposals for the formulaic ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ structure ({2}), ⲙⲟⲩϩ ⲁⲃⲁⲗ ({1}), ⲣⲫⲟⲣⲉ ({0}), the ⲡⲕⲟⲥⲙⲟⲥ formula ({6}), ⲛⲉϩⲁⲓⲱⲛ ({8}), ⲛⲓⲙ ({9}), ⲉⲓⲥ ({10}), ⲡⲟⲩⲁⲓ̈ⲛⲉ ({12}), ⲡⲗⲁⲛⲏ ({14}), and ⲛⲙ̄ⲙⲉⲓ̈ⲛⲉ ({15}) all fit grammar and parallels. For {11} I corrected the editor's apparent slip (proposing ⲁⲃⲁⲗ where ⲁⲃⲁⲗ already opens the next line) to a single ⲓ completing ⲛⲉⲧⲟⲩⲉⲓ. Gap {4} contains visible but lexically uncertain ⲛⲁⲟⲩⲣⲡ̄ϣⲉ, kept with low confidence as 'rulers/principalities' paired with ⲛⲟ̄ⲁⲙ.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 3947,
+      "chapter": 65,
+      "line": 76,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲫⲟ",
+      "basis": "Editor's ⲣⲫⲟⲣⲉ (Greek φορεῖν, 'bear/wear upon'). The two-letter completion of ⲣ- visible at line end yields the standard verb that takes ⲛⲉⲣⲱⲙⲉ on the next line: 'her fear and disturbance bear (upon) all men.' Length and trace fit.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 3948,
+      "chapter": 65,
+      "line": 77,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ ⲁⲃⲁⲗ",
+      "basis": "Standard Manichaean Coptic ⲙⲟⲩϩ ⲁⲃⲁⲗ ⲛ̄- 'be filled forth by'; subject ⲡⲕⲟⲥⲙⲟⲥ ⲧⲏⲣϥ̄, agent ⲛⲧⲟⲩϣⲏ on next line. Visible ⲙⲟⲩ- requires this completion.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 3950,
+      "chapter": 65,
+      "line": 79,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲧⲟⲩϣⲏ",
+      "basis": "Formulaic ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ + (subject) opens every numbered evil/good item in this kephalaion (cf. lines 75, 86). Visible ⲡ- attaches the article. The third evil's predicate after ⲧⲟⲩϣⲏ is largely lost in the line/page break before the section turns to the sun's first gift.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 3,
+      "section": 3964,
+      "chapter": 65,
+      "line": 93,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉⲥⲉ",
+      "basis": "Standard qualitative ⲛⲉⲥⲉ- 'be beautiful' — the predicate of ⲡⲉϩⲥⲁⲓ̈ⲉ ⲁⲛ on the next line ('beautiful is his beauty also'). Editor's reading; minimal trace fits.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 3966,
+      "chapter": 65,
+      "line": 95,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲛⲁⲟⲩⲣⲡ̄ϣⲉ",
+      "basis": "The letters are physically present but the lexeme is uncertain. Paired with ⲛⲟ̄ⲁⲙ 'powers,' it most plausibly names a class of cosmic authorities — read as 'rulers/principalities' (parallel to the surrounding contrast: peace exalted beyond all powers and rulers in the cosmos).",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 3975,
+      "chapter": 65,
+      "line": 104,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Final consonant of ⲡⲓⲙⲟⲩⲍ (= ⲡⲓⲙⲟⲩϩ 'this fullness'); confirmed by following relative ⲉⲧϥ̄ⲙⲏⲍ ⲛⲍⲏⲧϥ 'when it is filled in him.' One-letter trace.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 3981,
+      "chapter": 65,
+      "line": 110,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲟⲥⲙⲟⲥ",
+      "basis": "Editor's reading; ⲍⲏ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the cosmos' is the running formula (lines 81, 93, 117, 132). Visible ⲡ- requires this completion.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 3982,
+      "chapter": 65,
+      "line": 111,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲁⲓ̈ⲛⲉ ⲟⲩ",
+      "basis": "ⲡⲉϩⲟ- visible; the parallel from line 109 (ⲡⲉϩⲟⲩⲁⲓ̈ⲛⲉ ⲟⲩⲁⲧⲃⲉ) supplies 'his light is exalted...' as the explanatory clause introducing the second mystery of the sun (the height of light corresponding to the Father's light).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 3983,
+      "chapter": 65,
+      "line": 112,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲱⲛ",
+      "basis": "Visible ⲛⲉϩⲁ- requires ⲛⲉϩⲁⲓⲱⲛ (Lyc. plural with epenthetic ϩ, 'the aeons'). Father's light surpasses the light of every aeon — the only referent that completes the cosmological hierarchy after stars/lights/cosmos already named.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 3990,
+      "chapter": 65,
+      "line": 119,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲓⲙ",
+      "basis": "Standard ⲛ̄ⲥⲏⲩ ⲛⲓⲙ 'at every season,' paired with ⲟⲩⲛⲟⲩ ⲛⲓⲙ 'every hour' immediately following — temporal totality formula closing the third mystery of the sun.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 3992,
+      "chapter": 65,
+      "line": 121,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓⲥ",
+      "basis": "Discourse interjection ⲉⲓⲥ 'behold' opening the second of the two great mysteries (light/darkness dyad). Trace -ⲥ visible at line head.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 3993,
+      "chapter": 65,
+      "line": 122,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Correcting an apparent editor slip: ⲁⲃⲁⲗ already opens the following line, so the small end-of-line gap fills only the verb-final ⲓ of ⲛⲉⲧⲟⲩⲉⲓ ('those who come,' Lyc. relative of ⲉⲓ). Phrase ⲛⲉⲧⲟⲩⲉⲓ ⲁⲃⲁⲗ ⲙ̄ⲙⲏⲛⲉ 'those who come forth daily' results.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 3995,
+      "chapter": 65,
+      "line": 124,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩⲁⲓ̈ⲛⲉ",
+      "basis": "The standard Manichaean dyad ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲙⲛ̄ ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲕⲉⲕⲉ; the second member ⲙⲡⲕⲉⲕⲉ is preserved, requiring 'light' as the first.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 3996,
+      "chapter": 65,
+      "line": 125,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Editor's reading: copular ⲛⲉ closing 'they are revealed daily.' One-syllable closure consistent with sense and length.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 3997,
+      "chapter": 65,
+      "line": 126,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲗⲁⲛⲏ",
+      "basis": "ⲍⲛ̄ ⲧⲟⲩⲡⲗⲁⲛⲏ 'in their wandering' — the natural mind's circuit considered as planetary-deceptive motion; the construction ⲛⲉⲩ ⲁⲃⲁⲗ ⲁⲣⲁⲩ ⲍⲛ̄ ⲧⲟⲩⲡⲗⲁⲛⲏ 'behold them in their wandering' frames the dyad. Editor's reading confirmed.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 3999,
+      "chapter": 65,
+      "line": 128,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲙ̄ⲙⲉⲓ̈ⲛⲉ",
+      "basis": "Trailing -ⲙⲉⲓ̈ⲛⲉ 'signs' is preserved; restored definite plural ⲛⲙ̄- gives ⲛⲙ̄ⲙⲉⲓ̈ⲛⲉ ⲧⲏⲣⲟⲩ 'all the signs' that the sun reveals daily — the graces (ⲛⲉϩⲭⲁⲣⲓⲥⲙⲁ) on the following line.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 3947,
+      "chapter": 65,
+      "line": 76,
+      "core_english": "her shadow is manifested forth, her fear and her disturbance {0}"
+    },
+    {
+      "section": 3948,
+      "chapter": 65,
+      "line": 77,
+      "core_english": "upon all men; the entire cosmos is {1}"
+    },
+    {
+      "section": 3950,
+      "chapter": 65,
+      "line": 79,
+      "core_english": "The third: at the {2}…"
+    },
+    {
+      "section": 3964,
+      "chapter": 65,
+      "line": 93,
+      "core_english": "beyond all the lights that exist in the cosmos."
+    },
+    {
+      "section": 3966,
+      "chapter": 65,
+      "line": 95,
+      "core_english": "also is exalted beyond all powers and the {3} that"
+    },
+    {
+      "section": 3975,
+      "chapter": 65,
+      "line": 104,
+      "core_english": "the All — in the manner that the disc of the moon does not diminish in this {4},"
+    },
+    {
+      "section": 3981,
+      "chapter": 65,
+      "line": 110,
+      "core_english": "all the stars and all the lights that exist in the {5},"
+    },
+    {
+      "section": 3982,
+      "chapter": 65,
+      "line": 111,
+      "core_english": "for the mystery of the light of the Father, because his {6} is"
+    },
+    {
+      "section": 3983,
+      "chapter": 65,
+      "line": 112,
+      "core_english": "greatly exalted beyond the light of the {7}."
+    },
+    {
+      "section": 3990,
+      "chapter": 65,
+      "line": 119,
+      "core_english": "land of light. He is hidden in his icon at {8} season"
+    },
+    {
+      "section": 3992,
+      "chapter": 65,
+      "line": 121,
+      "core_english": "{9} the second mystery."
+    },
+    {
+      "section": 3993,
+      "chapter": 65,
+      "line": 122,
+      "core_english": "the mystery of the night and that of the days, those that come"
+    },
+    {
+      "section": 3995,
+      "chapter": 65,
+      "line": 124,
+      "core_english": "{10} and the mystery of the darkness — they are revealed daily"
+    },
+    {
+      "section": 3996,
+      "chapter": 65,
+      "line": 125,
+      "core_english": "in the creation of heaven. As visions, behold them in their"
+    },
+    {
+      "section": 3997,
+      "chapter": 65,
+      "line": 126,
+      "core_english": "{11}. The mystery of the first great light is"
+    },
+    {
+      "section": 3999,
+      "chapter": 65,
+      "line": 128,
+      "core_english": "into the cosmos to reveal {12} all of"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 3947,
+      "chapter": 65,
+      "line": 76,
+      "proposed_english": "bear",
+      "coptic_gap_refs": [
+        0
+      ],
+      "basis": "Renders ⲣⲫⲟⲣⲉ (φορεῖν) — fear and disturbance 'bear upon' men, continuing into next segment.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 3948,
+      "chapter": 65,
+      "line": 77,
+      "proposed_english": "filled forth",
+      "coptic_gap_refs": [
+        1
+      ],
+      "basis": "Renders ⲙⲟⲩϩ ⲁⲃⲁⲗ; the cosmos is 'filled forth by the night' (agent supplied in following segment).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 3950,
+      "chapter": 65,
+      "line": 79,
+      "proposed_english": "time when the night",
+      "coptic_gap_refs": [
+        2
+      ],
+      "basis": "Renders the formulaic ⲡⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲧⲟⲩϣⲏ that opens each numbered evil/good. The third evil's predicate after this is essentially lost.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 3966,
+      "chapter": 65,
+      "line": 95,
+      "proposed_english": "rulers",
+      "coptic_gap_refs": [
+        4
+      ],
+      "basis": "Tentative rendering of the lexically uncertain ⲛⲁⲟⲩⲣⲡ̄ϣⲉ paired with ⲛⲟ̄ⲁⲙ 'powers' — peace surpasses all powers and rulers in the cosmos.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 3975,
+      "chapter": 65,
+      "line": 104,
+      "proposed_english": "fullness",
+      "coptic_gap_refs": [
+        5
+      ],
+      "basis": "ⲡⲓⲙⲟⲩⲍ = 'this fullness'; clarified by the next clause 'when it is filled in him.' The moon does not diminish in its fullness.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 3981,
+      "chapter": 65,
+      "line": 110,
+      "proposed_english": "cosmos",
+      "coptic_gap_refs": [
+        6
+      ],
+      "basis": "Standard ⲍⲏ̄ ⲡⲕⲟⲥⲙⲟⲥ formula — 'lights that exist in the cosmos.'",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 3982,
+      "chapter": 65,
+      "line": 111,
+      "proposed_english": "light",
+      "coptic_gap_refs": [
+        7
+      ],
+      "basis": "ⲡⲉϩⲟⲩⲁⲓ̈ⲛⲉ 'his light' — subject of the comparative clause that follows.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 3983,
+      "chapter": 65,
+      "line": 112,
+      "proposed_english": "aeons",
+      "coptic_gap_refs": [
+        8
+      ],
+      "basis": "ⲛⲉϩⲁⲓⲱⲛ — the Father's light surpasses every aeon's light (the topmost cosmological referent in the hierarchy).",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 3990,
+      "chapter": 65,
+      "line": 119,
+      "proposed_english": "every",
+      "coptic_gap_refs": [
+        9
+      ],
+      "basis": "ⲛⲓⲙ in ⲛ̄ⲥⲏⲩ ⲛⲓⲙ 'every season,' parallel to 'every hour' on the next line.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 3992,
+      "chapter": 65,
+      "line": 121,
+      "proposed_english": "Behold,",
+      "coptic_gap_refs": [
+        10
+      ],
+      "basis": "Discourse opener ⲉⲓⲥ 'behold' introducing the second of the two great mysteries.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 3995,
+      "chapter": 65,
+      "line": 124,
+      "proposed_english": "the mystery of the light",
+      "coptic_gap_refs": [
+        12
+      ],
+      "basis": "Completes the dyad ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲟⲩⲁⲓ̈ⲛⲉ ⲙⲛ̄ ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲙ̄ⲡⲕⲉⲕⲉ — light and darkness as the two visible mysteries.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 3997,
+      "chapter": 65,
+      "line": 126,
+      "proposed_english": "wandering",
+      "coptic_gap_refs": [
+        14
+      ],
+      "basis": "ⲡⲗⲁⲛⲏ — the natural mind's circuit considered as wandering, in which day and night are seen as visions.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 3999,
+      "chapter": 65,
+      "line": 128,
+      "proposed_english": "the signs of",
+      "coptic_gap_refs": [
+        15
+      ],
+      "basis": "ⲛⲙ̄ⲙⲉⲓ̈ⲛⲉ 'the signs' — the sun comes daily into the cosmos to reveal all the signs of his graces (the latter named on the next line).",
+      "confidence": "high"
+    }
+  ]
+}

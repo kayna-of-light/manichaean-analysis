@@ -1,0 +1,35 @@
+{
+  "description": "Manual target overlay for connected Coptic base blobs missed by automatic witness/context target selection. These entries do not assign Unicode labels; they only force root splitting so child glyphs re-enter the normal clustering flow.",
+  "targets": [
+    {
+      "page": "011",
+      "line_index": 26,
+      "blob_id": 35,
+      "review_index": 1031,
+      "cluster": "141",
+      "expected_text": "ⲙⲁ",
+      "reason": "manual_force_connected_split",
+      "evidence": "User review: p011 sheet index 1031 is the same alpha form as index 971, not zeta with an above dot; force parent blob 35 to split as ⲙⲁ so the alpha child re-enters normal clustering without a spurious middle dot child."
+    },
+    {
+      "page": "012",
+      "line_index": 15,
+      "blob_id": 19,
+      "review_index": 538,
+      "cluster": "080",
+      "expected_child_count": 2,
+      "reason": "manual_force_connected_split",
+      "evidence": "User review: p012 sheet index 538 still appears as a connected character. Geometry dry-run supports a 2-child split."
+    },
+    {
+      "page": "011",
+      "line_index": 32,
+      "blob_id": 15,
+      "review_index": 1266,
+      "cluster": "052",
+      "expected_child_count": 3,
+      "reason": "manual_force_connected_split",
+      "evidence": "User review: p011 sheet index 1266 still appears as a connected character. Geometry dry-run supports a 3-child split."
+    }
+  ]
+}

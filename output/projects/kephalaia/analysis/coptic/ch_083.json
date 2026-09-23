@@ -1,0 +1,109 @@
+{
+  "chapter_number": 83,
+  "manuscript_pages": "200,9 - 204,23",
+  "coptic_tokens": 938,
+  "greek_loanwords": {
+    "total_density_pct": 3.2,
+    "cosmological_density_pct": 0.53,
+    "ecclesiastical_density_pct": 0.96,
+    "cosmological_ratio": 0.357,
+    "cosmological_count": 5,
+    "ecclesiastical_count": 9,
+    "general_count": 16,
+    "total_greek": 30,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1,
+      "ⲛⲟⲩⲥ": 1,
+      "ⲯⲩⲭⲏ": 1,
+      "ⲁⲓⲱⲛ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 3,
+      "ⲉⲕⲗⲉⲕⲧⲟⲥ": 3,
+      "ⲁⲅⲁⲡⲏ": 1,
+      "ⲁⲥⲡⲁⲥⲙⲟⲥ": 1,
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.21,
+    "dialogue_openings": 1,
+    "disciple_questions": 1,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲡⲁⲭⲉϩ ⲁⲣⲁⲩ"
+      },
+      {
+        "type": "disciple_question",
+        "match": "ⲁⲭⲓⲥ ⲁⲣⲁⲛ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 46,
+    "sahidic_count": 119,
+    "total_dialect_markers": 165,
+    "subachmimic_ratio": 0.279,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×8",
+      "ⲍⲛ̄×6",
+      "ⲁⲍ×12",
+      "ⲍⲓ×6",
+      "ⲍⲁ×1",
+      "ⲍⲏⲧ×5",
+      "ⲍⲣⲏ×4",
+      "ⲍⲉ×2"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×24",
+      "ϩⲛ̄×9",
+      "ⲁϩ×35",
+      "ϩⲓ×6",
+      "ϩⲁ×15",
+      "ϩⲏⲧ×4",
+      "ϩⲣⲏ×3",
+      "ϩⲁⲗ×5",
+      "ϩⲉ×14"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 177,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 120,
+    "bracketed_restorations": 231,
+    "empty_brackets": 86,
+    "leer_markers": 8
+  },
+  "english_classification": {
+    "chapter_number": 83,
+    "chapter_title": "Concerning the Man who is ugly in his Body, [but] beautiful [in his Soul].",
+    "total_paragraphs": 18,
+    "core_paragraphs": 0,
+    "core_percentage": 0,
+    "chapter_note": "This chapter contains no identifiable cosmological-correspondential substrate. It is entirely later material: apostolic narrative about Mani publicly embracing a deformed elect member (¶1-7), natural-philosophical teaching about pearl formation used as parable vehicle (¶9-13), parable interpretation mapping to institutional and cosmic entities (¶14-17), and exhortation closure (¶18). While cosmic vocabulary appears in ¶16-17 (aeons of light, aeons of greatness, light-givers), it serves parable interpretation rather than constituting standalone systematic cosmological teaching. The pearl natural philosophy, while historically interesting (as Gardner notes), is Mani's own pedagogical content, not pre-Mani substrate. Teaching purity is very low (0.186). The Gospel citation in ¶6 ('the saviour says') confirms the chapter's late editorial composition.",
+    "classification_distribution": {
+      "institutional": 13,
+      "dialogue_frame": 2,
+      "editorial_bridge": 2,
+      "exhortation": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: English detected 2 dialogue_frame paragraph(s), Coptic confirms 1 dialogue opening(s)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.28 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

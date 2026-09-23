@@ -1,0 +1,102 @@
+{
+  "chapter_number": 24,
+  "manuscript_pages": "70,8 - 76,14",
+  "coptic_tokens": 1318,
+  "greek_loanwords": {
+    "total_density_pct": 2.58,
+    "cosmological_density_pct": 1.06,
+    "ecclesiastical_density_pct": 0.53,
+    "cosmological_ratio": 0.667,
+    "cosmological_count": 14,
+    "ecclesiastical_count": 7,
+    "general_count": 13,
+    "total_greek": 34,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 2,
+      "ⲕⲟⲥⲙⲟⲥ": 7,
+      "ⲁⲱⲛ": 1,
+      "ⲟⲩⲥⲓⲁ": 1,
+      "ⲅⲉⲛⲉⲁ": 2,
+      "ⲥⲧⲟⲓⲭⲉⲓⲟⲛ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲡⲁⲣⲑⲉⲛⲟⲥ": 2,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 4,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 57,
+    "sahidic_count": 176,
+    "total_dialect_markers": 233,
+    "subachmimic_ratio": 0.245,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×1",
+      "ⲍⲛ×6",
+      "ⲍⲛ̄×6",
+      "ⲁⲍ×17",
+      "ⲍⲓ×6",
+      "ⲍⲁ×7",
+      "ⲍⲏⲧ×5",
+      "ⲍⲱⲃ×1",
+      "ⲍⲣⲏ×1",
+      "ⲍⲁⲗ×1",
+      "ⲍⲉ×6"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×8",
+      "ϩⲛ×23",
+      "ϩⲛ̄×11",
+      "ⲁϩ×81",
+      "ϩⲓ×3",
+      "ϩⲁ×11",
+      "ϩⲏⲧ×6",
+      "ϩⲱⲃ×2",
+      "ϩⲣⲏ×5",
+      "ϩⲉ×21",
+      "ϩⲁⲉ×2",
+      "ϩⲁⲏ×3"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 254,
+    "damaged_lines": 13,
+    "lacunae_density": 0.051,
+    "dot_sequences": 207,
+    "bracketed_restorations": 247,
+    "empty_brackets": 35,
+    "leer_markers": 21
+  },
+  "english_classification": {
+    "chapter_number": 24,
+    "chapter_title": "[... / ...]",
+    "total_paragraphs": 32,
+    "core_paragraphs": 32,
+    "core_percentage": 93,
+    "chapter_note": "This chapter is dominated by the oldest teaching substrate. Teaching purity is 0.912. The core teaching maps cosmic emanation processes onto immeasurable durations — a systematic cosmological teaching about the time-structure of divine evocations (Great Spirit, Mother of Life, First Man, five sons) and the parallel evil emanation from Matter. The six-fold enumeration (¶24-30) is a distinctive structural feature mapping temporal phases of cosmic history. The only significant later-layer intrusions are mild: (1) scattered first-person pedagogical address formulas ('Listen also to this, how I would teach you it'; 'which I have told you'), and (2) institutional vocabulary ('apostles and teachers') in ¶17-18, ¶30, ¶32 where the teaching about epistemic limits regarding eternity is framed through Manichaean institutional figures. No editorial bridge, no exhortation, no strong institutional material. The chapter is remarkably intact as substrate teaching.",
+    "classification_distribution": {
+      "substrate": 22,
+      "mixed": 10
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (93%) with high cosmological Greek ratio (0.67)"
+    ],
+    "discordance_flags": [
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.24 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 1,
+    "flag_count": 1
+  }
+}

@@ -1,0 +1,521 @@
+{
+  "teaching": 12,
+  "total_gaps_in_core": 19,
+  "gaps_restored": 14,
+  "gaps_unrestorable": 5,
+  "restoration_note": "The teaching describes the Five Sayings as foundational doctrines naming the Lord at his successive registers — Father (unnameable), Third Ambassador, Father of Life, First Father — by which the rational mind is grounded. Gaps {6}, {8}, {13} are tightly constrained by formula (Third Ambassador, Father of Life, their substance per editor). The middle section about 'she' humbling the powers (Mother of Life sending First Man into the contest with the King of Darkness) and 'the cosmos standing firm by might' allowed moderate restorations. The opening segment naming faculties (Mind of X / and the Y) and several short fragmentary lines (sections 634, 638-end of 7) were too damaged for confident restoration and are marked unrestorable.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 633,
+      "chapter": 12,
+      "line": 10,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Context 'ⲡⲛⲟⲩⲥ ⲛ̄ⲧ{0}ⲧⲱⲛ' is too narrow to constrain — could be a possessive, a Greek genitive plural, or a name. No apparatus traces to fix it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 1,
+      "section": 633,
+      "chapter": 12,
+      "line": 10,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "ⲡⲛⲟ- could begin ⲡⲛⲟⲩⲥ, ⲡⲛⲟⲏⲙⲁ, or ⲡⲛⲟⲙⲟⲥ. The five-faculty reading would suggest 'thought' but the constraint is insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 2,
+      "section": 634,
+      "chapter": 12,
+      "line": 13,
+      "gap_type": "unknown",
+      "proposed_coptic": null,
+      "basis": "Only one preserved letter ⲕ. Section is too fragmentary to restore meaningfully.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 3,
+      "section": 635,
+      "chapter": 12,
+      "line": 15,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲣϥ̄",
+      "basis": "ⲡⲓⲱⲧ ⲡⲧⲱⲣϥ̄ would yield 'the Father, the All/whole' — paralleling the Plērōma title. The reading anchors the first saying to the unnameable Father as source.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 4,
+      "section": 636,
+      "chapter": 12,
+      "line": 16,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲉⲓⲛⲉ",
+      "basis": "ⲡⲉⲧⲉ ⲙ̄ⲧⲉ ⲗⲁⲩⲉ ⲉⲓⲛⲉ ⲙ̄ⲙⲁϥ = 'who has no likeness/equal' — standard Manichaean apophatic formula for the Father of Greatness.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 637,
+      "chapter": 12,
+      "line": 17,
+      "gap_type": "unknown",
+      "proposed_coptic": "ⲣⲉⲛ ⲡⲉ ⲡ",
+      "basis": "Bridging clause: 'The second name is the [Third Ambassador]' — links ⲡⲙⲁⲥⲥⲛⲉⲩ to the title that follows in {6}.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 6,
+      "section": 638,
+      "chapter": 12,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲍϣⲁⲙⲧ",
+      "basis": "Editor's restoration confirmed and refined: ⲡⲙⲁⲍϣⲁⲙⲧ ⲙ̄ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ = 'the Third Ambassador,' a fixed Manichaean title in lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 638,
+      "chapter": 12,
+      "line": 18,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲙⲁⲥϥⲧⲁⲩ ⲡⲉ ⲡⲓⲱⲧ",
+      "basis": "22 chars: bridges from Third Ambassador (second saying) to the next-listed name. The fourth-saying-formula 'the fourth is the Father' fits the catechetical sequence and is followed by 'of life' in 639.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 8,
+      "section": 639,
+      "chapter": 12,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲱⲛⲍ̄",
+      "basis": "4 chars exactly: 'the Father of life' (ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛⲍ̄) is a fixed lexicon title (Father of Life), and the surrounding context 'ⲙ̄ⲡⲱⲛⲍ̄... ⲍⲱϩ ⲭⲉ ⲡ̄ⲓⲱⲧ ⲛ ___' demands it.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 641,
+      "chapter": 12,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙ̄ⲡⲱⲛⲍ̄ ⲡⲉ",
+      "basis": "Reading: 'These names together establish the law of the living.' ⲡⲛⲟⲙⲟⲥ ⲙ̄ⲡⲱⲛⲍ̄ ⲡⲉ ('The Law is of life') fits ~6 chars and bridges to 'living' in next line.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 10,
+      "section": 642,
+      "chapter": 12,
+      "line": 24,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ϣⲁⲣⲡ ⲛ̄",
+      "basis": "5 chars. ⲡϣⲁⲣⲡ ⲛ̄ⲛⲟⲙⲟⲥ = 'the first law.' The reading describes this as the foundational ordering principle distinguishing good from bitter.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 11,
+      "section": 643,
+      "chapter": 12,
+      "line": 25,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲉ ⲛ̄ⲧⲁⲥ",
+      "basis": "5 chars: 'For she — she herself — gave the king of the aeons of light unto the enmity.' Standard Lycopolitan emphatic ⲛ̄ⲧⲁⲥ construction.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 12,
+      "section": 644,
+      "chapter": 12,
+      "line": 26,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙ̄ⲡⲣ̄ⲣⲟ ⲛ̄ⲡⲕⲉⲕⲉ",
+      "basis": "12 chars: 'She humbled the abortions of the King of Darkness' — fits the Mother of Life subordinating the self's evocations through First Man's descent.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 13,
+      "section": 645,
+      "chapter": 12,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲟⲩⲟⲩⲥⲓⲁ",
+      "basis": "Editor's restoration: line-end ⲧⲟⲩ + line-start ⲟⲩⲥⲓⲁ = 'their substance' — i.e. the substance of the abortions/powers of darkness.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 645,
+      "chapter": 12,
+      "line": 28,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars between ⲁⲣⲁ and ⲙ̄ⲙⲁⲩ. Could be a place noun or particle phrase but no traces constrain it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 647,
+      "chapter": 12,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲍ",
+      "basis": "1 char. ⲍⲛ̄ⲟⲁⲙ = 'in might' (Lyc for ϩⲛ̄ ϭⲟⲙ); the surviving ⲛ̄ supplies the second consonant of the preposition. Reading anchors this on 'the cosmos held firm in might.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 16,
+      "section": 647,
+      "chapter": 12,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙ̄ⲡⲣⲱⲙⲉ",
+      "basis": "6 chars: 'in the might of the [First] Man the cosmos stands firm' — corresponds to First Man / Omophoros bearing the cosmos from below, as the reading specifies.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 17,
+      "section": 648,
+      "chapter": 12,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲓⲧⲟⲩ ⲛ̄ⲥⲉⲭⲉ",
+      "basis": "9 chars: echoes the teaching's opening ⲡⲓⲧⲟⲩ ⲛ̄ⲥⲉⲭⲉ 'the five sayings.' Reading: 'though the soul speaks five sayings... all of them together are one body, living.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 18,
+      "section": 649,
+      "chapter": 12,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6 chars ending -ⲏⲩⲉ. Reading suggests 'distinct degrees that exceed one another,' but the precise verb/noun form (e.g. ⲣ̄ⲍⲟⲩⲏⲩⲉ 'they exceed') is not securely constrainable.",
+      "confidence": "unrestorable"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 633,
+      "chapter": 12,
+      "line": 10,
+      "core_english": "make a foundation for the Mind of {0} and the {1}"
+    },
+    {
+      "section": 634,
+      "chapter": 12,
+      "line": 13,
+      "core_english": "{2}"
+    },
+    {
+      "section": 635,
+      "chapter": 12,
+      "line": 15,
+      "core_english": "name to him. In this name is the Father, the {3},"
+    },
+    {
+      "section": 636,
+      "chapter": 12,
+      "line": 16,
+      "core_english": "the unnameable, who has no {4}"
+    },
+    {
+      "section": 637,
+      "chapter": 12,
+      "line": 17,
+      "core_english": "of his name. The second {5}"
+    },
+    {
+      "section": 638,
+      "chapter": 12,
+      "line": 18,
+      "core_english": "the {6} Ambassador; {7}"
+    },
+    {
+      "section": 639,
+      "chapter": 12,
+      "line": 19,
+      "core_english": "of life — whom they themselves call: 'the Father of {8}',"
+    },
+    {
+      "section": 641,
+      "chapter": 12,
+      "line": 23,
+      "core_english": "The Law {9}"
+    },
+    {
+      "section": 642,
+      "chapter": 12,
+      "line": 24,
+      "core_english": "living, the {10} law of those who are good and those who are bitter, of"
+    },
+    {
+      "section": 643,
+      "chapter": 12,
+      "line": 25,
+      "core_english": "For {11} gave the king of the aeons of light unto the en-"
+    },
+    {
+      "section": 644,
+      "chapter": 12,
+      "line": 26,
+      "core_english": "-mity. She humbled the abortions {12},"
+    },
+    {
+      "section": 645,
+      "chapter": 12,
+      "line": 28,
+      "core_english": "{13} and their cosmos. She poured forth upon {14} them"
+    },
+    {
+      "section": 647,
+      "chapter": 12,
+      "line": 30,
+      "core_english": "{15} the might {16} the cosmos stands firm of"
+    },
+    {
+      "section": 648,
+      "chapter": 12,
+      "line": 31,
+      "core_english": "{17} all of them, they are one body, living,"
+    },
+    {
+      "section": 649,
+      "chapter": 12,
+      "line": 33,
+      "core_english": "{18} beyond one another."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 633,
+      "chapter": 12,
+      "line": 10,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable; English correlate undeterminable."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 633,
+      "chapter": 12,
+      "line": 10,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable; the second faculty's identity is not secure."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 634,
+      "chapter": 12,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "unrestorable",
+      "basis": "Section too fragmentary."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 635,
+      "chapter": 12,
+      "line": 15,
+      "proposed_english": "All",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "low",
+      "basis": "Renders ⲡⲧⲱⲣϥ̄ (Plērōma/All) as a divine title for the Father; matches lexicon entry for ⲡⲧⲏⲣϥ̄."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 636,
+      "chapter": 12,
+      "line": 16,
+      "proposed_english": "likeness",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "low",
+      "basis": "Renders ⲉⲓⲛⲉ in the apophatic formula 'no likeness/equal' (lexicon: likeness = ⲡⲉⲓⲛⲉ)."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 637,
+      "chapter": 12,
+      "line": 17,
+      "proposed_english": "name is the",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "low",
+      "basis": "Bridging phrase carrying 'the second [name is the Third] Ambassador.'"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 638,
+      "chapter": 12,
+      "line": 18,
+      "proposed_english": "Third",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "Standard rendering of ⲡⲙⲁⲍϣⲁⲙⲧ in the fixed title 'Third Ambassador' (lexicon)."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 638,
+      "chapter": 12,
+      "line": 18,
+      "proposed_english": "the fourth is the Father",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "low",
+      "basis": "Catechetical sequence: after the Third Ambassador comes the Father (of Life) as the next named saying."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 639,
+      "chapter": 12,
+      "line": 19,
+      "proposed_english": "Life",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "Lexicon: Father of Life = ⲡⲓⲱⲧ ⲛ̄ⲧⲉ ⲡⲱⲛⲍ̄. The fixed title is unambiguous here."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 641,
+      "chapter": 12,
+      "line": 23,
+      "proposed_english": "is of life,",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "low",
+      "basis": "Reading: 'these names establish the law of the living.' Bridges to 'living' in the next line."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 642,
+      "chapter": 12,
+      "line": 24,
+      "proposed_english": "first",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡϣⲁⲣⲡ = 'first.' The first / foundational law that distinguishes good from bitter."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 643,
+      "chapter": 12,
+      "line": 25,
+      "proposed_english": "she herself",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "low",
+      "basis": "Renders ⲛ̄ⲧⲁⲥ ⲡⲉ — emphatic 'she herself' for the Mother of Life sending forth First Man."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 644,
+      "chapter": 12,
+      "line": 26,
+      "proposed_english": "of the King of Darkness",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "low",
+      "basis": "The 'abortions/evocations' belong to the King of Darkness; the Mother subordinates the self's failed productions through First Man's contest."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 645,
+      "chapter": 12,
+      "line": 28,
+      "proposed_english": "their substance",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "high",
+      "basis": "Editor's restoration ⲧⲟⲩⲟⲩⲥⲓⲁ — referring to the substance of the abortions/powers humbled."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 645,
+      "chapter": 12,
+      "line": 28,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 647,
+      "chapter": 12,
+      "line": 30,
+      "proposed_english": "In",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "low",
+      "basis": "Renders ⲍ(ⲛ̄) preposition: 'In the might [of the Man] the cosmos stands firm.'"
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 647,
+      "chapter": 12,
+      "line": 30,
+      "proposed_english": "of the Man",
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "low",
+      "basis": "ⲙ̄ⲡⲣⲱⲙⲉ — corresponds to First Man / the Omophoros principle bearing up the natural mind from below, as the reading specifies."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 648,
+      "chapter": 12,
+      "line": 31,
+      "proposed_english": "the five sayings,",
+      "coptic_gap_refs": [
+        17
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲓⲧⲟⲩ ⲛ̄ⲥⲉⲭⲉ — the teaching's keyword inclusio, marking that the five sayings are one living body."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 649,
+      "chapter": 12,
+      "line": 33,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "unrestorable",
+      "basis": "Coptic gap unrestorable; the precise verbal/nominal form ending in -ⲏⲩⲉ is not secure."
+    }
+  ]
+}

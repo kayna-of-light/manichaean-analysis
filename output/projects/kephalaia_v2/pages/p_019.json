@@ -1,0 +1,747 @@
+{
+  "apparatus": [
+    {
+      "id": 0,
+      "segment": "header",
+      "type": "restoration",
+      "coptic": "ⲥⲁⲍ",
+      "english": "Teacher",
+      "basis": "standard running title ⲙⲡⲥⲁⲍ 'Of the Teacher'; final letters lost"
+    },
+    {
+      "id": 1,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ",
+      "english": "apostles",
+      "basis": "[ⲥ]ⲧⲟⲗⲟⲥ in MS; only initial restored; context of the Twelve confirms ⲁⲡⲟⲥⲧⲟⲗⲟⲥ"
+    },
+    {
+      "id": 2,
+      "segment": 0,
+      "type": "lacuna",
+      "est_chars": 3,
+      "partial": "ⲁⲩⲝ"
+    },
+    {
+      "id": 3,
+      "segment": 0,
+      "type": "restoration",
+      "coptic": "ⲡⲙⲛⲧⲥⲛⲁⲩⲥ ⲛⲁⲡⲟ",
+      "english": "of the twelve apo-",
+      "basis": "standard formula 'number of the twelve apostles'; continues onto next line as -ⲥⲧⲟⲗⲟⲥ"
+    },
+    {
+      "id": 4,
+      "segment": 1,
+      "type": "restoration",
+      "coptic": "ⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲣⲁϥ",
+      "english": "entered into him",
+      "basis": "Luke 22:3 / John 13:27 'Satan entered into him' (Judas)"
+    },
+    {
+      "id": 5,
+      "segment": 2,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 6,
+      "segment": 3,
+      "type": "lacuna",
+      "est_chars": 8,
+      "partial": "ⲍⲭⲙ ⲡⲧⲱⲉ — 'upon the mountain' fragment"
+    },
+    {
+      "id": 7,
+      "segment": 4,
+      "type": "restoration",
+      "coptic": "ⲁⲩ",
+      "english": "they",
+      "basis": "verbal prefix needed for ⲙⲟⲩⲧⲉ in next line: 'they called him'"
+    },
+    {
+      "id": 8,
+      "segment": 5,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 9,
+      "segment": 6,
+      "type": "lacuna",
+      "est_chars": 15
+    },
+    {
+      "id": 10,
+      "segment": 6,
+      "type": "restoration",
+      "coptic": "ⲥⲥⲏⲍ ⲉⲧⲃⲉ",
+      "english": "it is written concerning",
+      "basis": "parallel to line 2 ⲥⲥⲏⲍ ⲉⲧⲃⲏⲧϥ; introduces Pauline citation"
+    },
+    {
+      "id": 11,
+      "segment": 7,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 12,
+      "segment": 7,
+      "type": "restoration",
+      "coptic": "ⲛ̄ⲧⲉⲕⲕⲗⲏ",
+      "english": "of the Chur-",
+      "basis": "ⲉⲕⲕⲗⲏ-ⲥⲓⲁ continues onto line 8; Pauline self-description as persecutor of the Church (1 Cor 15:9 / Gal 1:13)"
+    },
+    {
+      "id": 13,
+      "segment": 8,
+      "type": "lacuna",
+      "est_chars": 18
+    },
+    {
+      "id": 14,
+      "segment": 9,
+      "type": "lacuna",
+      "est_chars": 25
+    },
+    {
+      "id": 15,
+      "segment": 10,
+      "type": "lacuna",
+      "est_chars": 25,
+      "partial": "...ⲏⲧ..."
+    },
+    {
+      "id": 16,
+      "segment": 11,
+      "type": "restoration",
+      "coptic": "ⲕⲁⲗⲩ",
+      "english": "caly-",
+      "basis": "ⲛⲁⲡⲟ[ⲕⲁⲗⲩ]†ⲓⲥ = 'of revelations'; standard Greek loan ἀποκάλυψις"
+    },
+    {
+      "id": 17,
+      "segment": 11,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 18,
+      "segment": 12,
+      "type": "restoration",
+      "coptic": "ⲙⲡ̄",
+      "english": "of the",
+      "basis": "[ⲙⲡ̄]ⲁⲭⲁⲓ̈ⲥ = 'of the Lord'; Lycopolitan ⲁⲭⲁⲓ̈ⲥ for ⲡϫⲟⲉⲓⲥ"
+    },
+    {
+      "id": 19,
+      "segment": 12,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 20,
+      "segment": 13,
+      "type": "lacuna",
+      "est_chars": 20
+    },
+    {
+      "id": 21,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 22,
+      "segment": 14,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 23,
+      "segment": 15,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 24,
+      "segment": 15,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 25,
+      "segment": 16,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 26,
+      "segment": 16,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 27,
+      "segment": 17,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 28,
+      "segment": 17,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 29,
+      "segment": 18,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 30,
+      "segment": 19,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 31,
+      "segment": 20,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 32,
+      "segment": 21,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 33,
+      "segment": 21,
+      "type": "restoration",
+      "coptic": "ⲧⲍⲉⲣ",
+      "english": "the inter-",
+      "basis": "continues to ⲙⲏⲛⲓⲁ on line 22 = 'interpretation'"
+    },
+    {
+      "id": 34,
+      "segment": 22,
+      "type": "lacuna",
+      "est_chars": 20
+    },
+    {
+      "id": 35,
+      "segment": 23,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 36,
+      "segment": 23,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 37,
+      "segment": 23,
+      "type": "restoration",
+      "coptic": "ⲉ",
+      "english": "which",
+      "basis": "relative particle introducing line 24 ⲧⲁ ⲡⲓⲥⲱⲣ ⲧⲉⲟⲩⲁⲩ 'which the Savior spoke'"
+    },
+    {
+      "id": 38,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲧⲁ ⲡⲓ",
+      "english": "which the",
+      "basis": "relative + article: 'which the Savior'"
+    },
+    {
+      "id": 39,
+      "segment": 24,
+      "type": "restoration",
+      "coptic": "ⲡⲁⲣⲁⲃⲟⲗⲏ",
+      "english": "parable",
+      "basis": "context of the two-trees parable; Greek loan"
+    },
+    {
+      "id": 40,
+      "segment": 25,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 41,
+      "segment": 25,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 42,
+      "segment": 26,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 43,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 44,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 45,
+      "segment": 27,
+      "type": "lacuna",
+      "est_chars": 5
+    },
+    {
+      "id": 46,
+      "segment": 28,
+      "type": "lacuna",
+      "est_chars": 3
+    },
+    {
+      "id": 47,
+      "segment": 28,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 48,
+      "segment": 29,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 49,
+      "segment": 29,
+      "type": "restoration",
+      "coptic": "ⲉⲩⲥ",
+      "english": "preter",
+      "basis": "ⲡⲧⲍⲉⲣⲙⲏⲛ[ⲉⲩⲥ] = 'the interpreter' (ἑρμηνεύς)"
+    },
+    {
+      "id": 50,
+      "segment": 29,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 51,
+      "segment": 30,
+      "type": "lacuna",
+      "est_chars": 6
+    },
+    {
+      "id": 52,
+      "segment": 30,
+      "type": "lacuna",
+      "est_chars": 4
+    },
+    {
+      "id": 53,
+      "segment": 30,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 54,
+      "segment": 31,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 55,
+      "segment": 32,
+      "type": "lacuna",
+      "est_chars": 14
+    },
+    {
+      "id": 56,
+      "segment": 32,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 57,
+      "segment": 33,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 58,
+      "segment": 33,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 59,
+      "segment": 34,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 60,
+      "segment": 34,
+      "type": "lacuna",
+      "est_chars": 10
+    },
+    {
+      "id": 61,
+      "segment": 35,
+      "type": "lacuna",
+      "est_chars": 12
+    },
+    {
+      "id": 62,
+      "segment": 35,
+      "type": "restoration",
+      "coptic": "ⲥ",
+      "english": "(Pillar)",
+      "basis": "ⲡ[ⲥ]ⲧⲩⲗⲟⲥ = 'the Pillar' (στῦλος); standard Manichaean technical term"
+    },
+    {
+      "id": 63,
+      "segment": 35,
+      "type": "lacuna",
+      "est_chars": 8
+    },
+    {
+      "id": 64,
+      "segment": 35,
+      "type": "lacuna",
+      "est_chars": 12
+    }
+  ],
+  "header": {
+    "page_number": "ⲓⲋ",
+    "title_coptic": "ⲙⲡ̄{0}",
+    "title_english": "Of the {0}"
+  },
+  "lines": [
+    {
+      "i": 0,
+      "n": 1,
+      "coptic": "{1} ⲁⲩⲝⲏⲡⲉ ⲙⲙⲁϥ ⲍⲛ̄ ⲑⲏⲡⲉ {3}",
+      "english": "{1}, they counted him in the number {3}"
+    },
+    {
+      "i": 1,
+      "n": 2,
+      "coptic": "ⲧⲍⲁⲏ ⲭⲉ ⲥⲥⲏⲍ ⲉⲧⲃⲏⲧϥ̄ ⲭⲉ ⲁ ⲡⲥⲁⲧⲁⲛⲁⲥ {4}",
+      "english": "the end. For it is written concerning him that 'Satan {4}.'"
+    },
+    {
+      "i": 2,
+      "n": 3,
+      "coptic": "ⲁϥ† ⲡⲓⲥⲱⲣ ⲁⲧⲟⲟⲧϥ̄ ⲛ̄ⲛ̄ⲟⲩⲁⲁⲟⲥ ⲁⲩⲟ́ {5}",
+      "english": "He gave the Savior into the hand of the Jews, and {5}"
+    },
+    {
+      "i": 3,
+      "n": 4,
+      "coptic": "ⲍⲭⲙ ⲡⲧⲱⲉ",
+      "english": "upon the mountain.",
+      "break_after": true
+    },
+    {
+      "i": 4,
+      "n": 4,
+      "coptic": "ⲟⲩⲁⲁⲥ ⲟⲩⲛ ⲡⲓⲥⲕⲁⲣⲓⲱⲧⲏⲥ {7}",
+      "english": "Judas, then, the Iscariot — {7}"
+    },
+    {
+      "i": 5,
+      "n": 5,
+      "coptic": "ⲙⲟⲩⲧⲉ ⲁⲣⲁϥ ⲛ̄ⲱⲁⲣⲡ̄ ⲭⲉ ⲣⲱⲙⲉ ⲉϥⲁⲛⲓⲧ {8}",
+      "english": "called him at first 'a beautiful man' {8}"
+    },
+    {
+      "i": 6,
+      "n": 6,
+      "coptic": "ⲛⲉϥ ⲍⲓ ⲡⲣⲟⲁⲟⲧⲏⲥ ⲍⲓ ⲣⲉϩⲍⲱⲧⲃⲉ {9} {10}",
+      "english": "he was a betrayer and a murderer {9} {10}"
+    },
+    {
+      "i": 7,
+      "n": 7,
+      "coptic": "ⲡⲁⲩⲗⲟⲥ ⲭⲉ ⲛⲉϩⲟ ⲛⲁⲱⲕⲧⲏⲥ ⲛⲱⲁⲣⲡ̄ {11} {12}",
+      "english": "Paul, that 'he was at first a persecutor {11} {12}"
+    },
+    {
+      "i": 8,
+      "n": 8,
+      "coptic": "ⲥⲓⲁ ⲙⲡⲛⲟⲩⲧⲉ ⲉϩⲁⲱⲕⲉ {13}",
+      "english": "-ch of God, persecuting {13}"
+    },
+    {
+      "i": 9,
+      "n": 9,
+      "coptic": "{14}",
+      "english": "{14}"
+    },
+    {
+      "i": 10,
+      "n": 10,
+      "coptic": "{15}",
+      "english": "{15}"
+    },
+    {
+      "i": 11,
+      "n": 11,
+      "coptic": "ⲛⲟⲩⲛⲁⲟ́ ⲛⲁⲡⲟ{16}†ⲓⲥ ⲁϩⲉⲩⲁ {17}",
+      "english": "great revelations to a {17}"
+    },
+    {
+      "i": 12,
+      "n": 12,
+      "coptic": "ⲧⲉⲕⲕⲗⲏⲥⲓⲁ {18}ⲁⲭⲁⲓ̈ⲥ ⲁϥ {19}",
+      "english": "the Church {18} of the Lord, he {19}"
+    },
+    {
+      "i": 13,
+      "n": 13,
+      "coptic": "ⲧϥ̄ ⲉϩⲍⲁⲩ ⲛ̄ⲱⲁⲣⲡ̄ ⲙ̄ⲛ ⲛⲟⲩⲥ {20}",
+      "english": "...evil at first, with their... {20}",
+      "break_after": true
+    },
+    {
+      "i": 14,
+      "n": 14,
+      "coptic": "{21} ⲛⲍⲉⲣⲙⲏⲛⲉⲩⲉ ⲙ {22}",
+      "english": "{21} interpreting {22}"
+    },
+    {
+      "i": 15,
+      "n": 15,
+      "coptic": "{23}ⲉ ⲧⲟⲩⲍⲉⲣⲙⲏⲛⲓⲁ ⲧⲁ {24}",
+      "english": "{23} their interpretation {24}"
+    },
+    {
+      "i": 16,
+      "n": 16,
+      "coptic": "{25} ⲣⲱⲙⲉ ⲉϩⲁⲛⲓⲧ ⲛ̄ⲥⲁⲩⲧⲛ̄ {26}",
+      "english": "{25} beautiful men, upright {26}"
+    },
+    {
+      "i": 17,
+      "n": 17,
+      "coptic": "{27} ⲉϩⲍⲁⲩ ⲍⲟⲗⲟⲧⲉⲗⲱⲥ ⲉⲡⲉⲓⲁⲏ ⲛⲧⲛ̄ {28}",
+      "english": "{27} wholly evil, since {28}"
+    },
+    {
+      "i": 18,
+      "n": 18,
+      "coptic": "ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ ⲍⲓⲧⲛ̄ ⲡⲓⲧⲱⲧ ⲙ̄ⲡ̄ {29}",
+      "english": "they were molded by the agreement of the {29}"
+    },
+    {
+      "i": 19,
+      "n": 19,
+      "coptic": "ⲉⲩⲁⲍⲉ ⲁⲣⲉⲧⲟⲩ ⲧⲏⲣⲟⲩ ⲍⲛ ⲟⲩⲁⲣⲁ {30}",
+      "english": "all of them standing in one {30}"
+    },
+    {
+      "i": 20,
+      "n": 20,
+      "coptic": "ⲛ̄ⲧⲁⲩ†ⲉⲓⲛⲉ ⲁⲣⲁⲩ ⲁⲩⲥⲙⲛⲧⲟⲩ ⲍⲙ ⲡ̄ {31}",
+      "english": "they were brought, they were established in the {31}"
+    },
+    {
+      "i": 21,
+      "n": 21,
+      "coptic": "ⲉⲧⲧⲏⲧ ⲍⲛ̄ ⲛ̄ⲍⲃⲏⲩⲉ ⲧⲏⲣⲟⲩ",
+      "english": "joined together in all the works.",
+      "break_after": true
+    },
+    {
+      "i": 22,
+      "n": 21,
+      "coptic": "ⲉⲥⲧⲉ {32} ⲧⲉ {33}",
+      "english": "Concerning {32} the {33}"
+    },
+    {
+      "i": 23,
+      "n": 22,
+      "coptic": "ⲙⲏⲛⲓⲁ ⲛ̄ⲛⲁⲟⲣ̄ⲙⲁ ⲥⲛⲉⲩ {34}",
+      "english": "-pretation of the two visions {34}"
+    },
+    {
+      "i": 24,
+      "n": 23,
+      "coptic": "{35}ⲥⲱⲧⲙ̄ ⲛⲧⲁⲟⲩⲱⲛⲍ ⲛⲏⲧⲛ̄ ⲁⲃⲁⲗ ⲉⲧⲃⲉ ⲧ{36} {37}",
+      "english": "{35} listen, that I might reveal to you concerning the {36} {37}"
+    },
+    {
+      "i": 25,
+      "n": 24,
+      "coptic": "{38}ⲥⲱⲣ ⲧⲉⲟⲩⲁⲩ ⲍⲛ̄ ⲧ{39} ⲉⲧⲃⲉ ⲡⲧⲱⲏⲛ ⲉⲧⲁⲛⲓⲧ ⲙⲛ",
+      "english": "{38} Savior spoke in the {39} concerning the beautiful tree and"
+    },
+    {
+      "i": 26,
+      "n": 25,
+      "coptic": "ⲡⲧⲱⲏⲛ ⲉⲧⲍⲁⲩ {40}ⲁⲱⲱ ⲙ̄ⲙⲁ {41}",
+      "english": "the bitter tree {40} {41}"
+    },
+    {
+      "i": 27,
+      "n": 26,
+      "coptic": "ⲙⲛ̄ⲱⲁⲩ ⲭⲉ ⲍⲛⲉⲩ ⲛⲉ {42} ⲙⲛ ⲛⲟⲩⲥⲁⲛⲍⲟⲩⲛ",
+      "english": "they do not have (knowledge) that they are {42} and their innermost"
+    },
+    {
+      "i": 28,
+      "n": 27,
+      "coptic": "{43} ⲥⲁⲩⲛⲉ ⲉⲩⲧⲁⲛⲧⲛ̄ {44} ⲭⲉ ⲍⲛ̄ ⲧⲟⲩⲍⲉⲣⲙⲏⲛⲓⲁ {45}",
+      "english": "{43} knowing that they are similar {44} that in their interpretation {45}"
+    },
+    {
+      "i": 29,
+      "n": 28,
+      "coptic": "{46} ⲭⲉ ⲍⲛⲉⲩ ⲛⲉ ⲡⲓⲱⲏⲛ ⲥⲛⲉⲩ",
+      "english": "{46} that the two trees are two.",
+      "break_after": true
+    },
+    {
+      "i": 30,
+      "n": 28,
+      "coptic": "{47}",
+      "english": "{47}"
+    },
+    {
+      "i": 31,
+      "n": 29,
+      "coptic": "ⲧⲍⲉ ⲉ†ⲛⲁⲟⲩⲱⲛⲍ̄ ⲛⲏⲧⲛ̄ {48} ⲡⲧⲍⲉⲣⲙⲏⲛ{49} {50}",
+      "english": "the manner I shall reveal to you {48} the inter{49} {50}"
+    },
+    {
+      "i": 32,
+      "n": 30,
+      "coptic": "ⲛⲱⲏⲛ ⲙ {51} ⲕⲟⲛⲓⲁ {52} ⲉ ⲡⲓⲱⲧ ⲡ̄ {53}",
+      "english": "trees {51} -konia {52} the Father {53}"
+    },
+    {
+      "i": 33,
+      "n": 31,
+      "coptic": "ⲛ̄ⲛⲱⲃ ⲧⲏⲣⲟⲩ ⲍⲛ̄ ⲧⲱⲏⲣ {54}",
+      "english": "all the works in the tree {54}"
+    },
+    {
+      "i": 34,
+      "n": 32,
+      "coptic": "{55} ⲛⲕⲟⲥⲙⲟⲥ ⲧⲉⲕⲙ ⲍⲛ ⲧⲉ {56}",
+      "english": "{55} the world... in the {56}"
+    },
+    {
+      "i": 35,
+      "n": 33,
+      "coptic": "{57} ⲟⲛⲓⲁ ⲙⲡⲓⲱⲏⲛ ⲉⲧⲁⲛⲓⲧ ⲡⲉ {58}",
+      "english": "{57} -onia of the beautiful tree is {58}"
+    },
+    {
+      "i": 36,
+      "n": 34,
+      "coptic": "{59}ⲧⲁⲥ ⲛⲉ ⲡⲟⲩⲁⲛⲉ ⲙⲡⲓⲱⲏⲛ ⲉⲧⲁⲛⲓⲧ ⲛ{60}",
+      "english": "{59} are the manifestation of the beautiful tree {60}"
+    },
+    {
+      "i": 37,
+      "n": 35,
+      "coptic": "{61} ⲡ̄{62}ⲧⲩⲗⲟⲥ {63}{64}",
+      "english": "{61} the Pillar {63}{64}"
+    }
+  ],
+  "notes": [
+    {
+      "segment": 0,
+      "coptic_form": "[ⲁⲡⲟ]ⲥⲧⲟⲗⲟⲥ ⲁⲩⲝⲏⲡⲉ ⲙⲙⲁϥ",
+      "decision": "Restored '[apo]stles' on the basis of the running theme of this kephalaion (the Twelve Apostles) and the surviving final letters -ⲥⲧⲟⲗⲟⲥ. The figure being 'counted in the number of the twelve' must be Judas, who is the explicit subject of the next clause.",
+      "confidence": "high"
+    },
+    {
+      "segment": 1,
+      "coptic_form": "ⲁ ⲡⲥⲁⲧⲁⲛⲁⲥ [ⲃⲱⲕ ⲁⲍⲟⲩⲛ ⲁⲣⲁϥ]",
+      "decision": "The fixed Lucan/Johannine formula 'Satan entered into him' (Luke 22:3 / John 13:27) is the only natural completion in this context (Judas, betrayal, the Savior delivered to the Jews).",
+      "confidence": "high"
+    },
+    {
+      "segment": 4,
+      "coptic_form": "ⲟⲩⲁⲁⲥ ... ⲡⲓⲥⲕⲁⲣⲓⲱⲧⲏⲥ",
+      "decision": "ⲟⲩⲁⲁⲥ = Judas (Lyc. for ⲓⲟⲩⲇⲁⲥ); ⲡⲓⲥⲕⲁⲣⲓⲱⲧⲏⲥ = the Iscariot. The 'mountain' reference at the start of the line plausibly continues the preceding clause about Jesus or the disciples on a mountain, before the new sentence begins about Judas.",
+      "confidence": "high"
+    },
+    {
+      "segment": 5,
+      "coptic_form": "ⲣⲱⲙⲉ ⲉϥⲁⲛⲓⲧ",
+      "decision": "'A beautiful man' — ⲁⲛⲓⲧ is the qualitative of ⲁⲛⲁⲓ 'be beautiful, become good.' This contrasts with what Judas became (betrayer, murderer). The pattern parallels Paul's biography in line 7: each was 'at first' (ⲛ̄ⲱⲁⲣⲡ̄) one thing, then became another.",
+      "confidence": "high"
+    },
+    {
+      "segment": 6,
+      "coptic_form": "ⲡⲣⲟⲁⲟⲧⲏⲥ ... ⲣⲉϩⲍⲱⲧⲃⲉ",
+      "decision": "Greek προδότης 'betrayer' (Lyc. ⲡⲣⲟⲁⲟⲧⲏⲥ); compound ⲣⲉϥ-ϩⲱⲧⲃⲉ 'doer-of-killing' = murderer. Standard New Testament vocabulary applied to Judas.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 7,
+      "coptic_form": "ⲡⲁⲩⲗⲟⲥ ... ⲛⲁⲱⲕⲧⲏⲥ ⲛⲱⲁⲣⲡ̄",
+      "decision": "Greek διώκτης 'persecutor' — Paul's self-description in 1 Tim 1:13 ('formerly I was a blasphemer, persecutor, insolent man') and parallel passages. 'Persecutor at first' establishes the Pauline mirror-image of Judas: Paul went from evil to good, Judas the reverse.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 14,
+      "coptic_form": "ⲛⲍⲉⲣⲙⲏⲛⲉⲩⲉ",
+      "decision": "'To interpret' — the verbal form. Indicates the transition into the new chapter's hermeneutic discourse on the parable of the two trees.",
+      "confidence": "certain"
+    },
+    {
+      "segment": 18,
+      "coptic_form": "ⲡⲓⲧⲱⲧ",
+      "decision": "ⲡⲓⲧⲱⲧ = 'the agreement, accord, harmony' (from ⲧⲱⲧ 'be joined, agreed'). Whatever the molded ones are, they are made by the consenting agreement of some power. The participle ⲁⲩⲡⲗⲁⲥⲥⲉ ⲙ̄ⲙⲁⲩ uses Greek πλάσσειν, the technical Manichaean verb for archonic fashioning.",
+      "confidence": "high"
+    },
+    {
+      "segment": 22,
+      "coptic_form": "ⲉⲥⲧⲉ ... [ⲧⲍⲉⲣ]ⲙⲏⲛⲓⲁ ⲛ̄ⲛⲁⲟⲣ̄ⲙⲁ ⲥⲛⲉⲩ",
+      "decision": "This appears to be the chapter heading: 'Concerning the [interp]retation of two visions (ὁράματα).' The two ὁράματα turn out (line 24-25) to be the parable of the beautiful tree and the bitter tree. ⲛⲁⲟⲣ̄ⲙⲁ = Greek ὅραμα 'vision, sight.'",
+      "confidence": "high"
+    },
+    {
+      "segment": 25,
+      "coptic_form": "[ⲧⲁ ⲡⲓ]ⲥⲱⲣ ⲧⲉⲟⲩⲁⲩ ⲍⲛ̄ ⲧ[ⲡⲁⲣⲁⲃⲟⲗⲏ]",
+      "decision": "'[Which the] Savior spoke in the [parable] concerning the beautiful tree and the bitter tree.' Standard Manichaean exegetical formula introducing a synoptic parable (here the two-trees logion of Matt 7:17-18 / Luke 6:43-44).",
+      "confidence": "high"
+    },
+    {
+      "segment": 27,
+      "coptic_form": "ⲙⲛ̄ⲱⲁⲩ ⲭⲉ ⲍⲛⲉⲩ ⲛⲉ",
+      "decision": "ⲙⲛ̄- here functions as the negative existential/possessive 'they have not' (knowledge); the implicit object is supplied by parallelism with line 28 ⲥⲁⲩⲛⲉ 'knowing.' Rendered 'they do not have (knowledge) that they are...' — the contrast is with those who DO know that the two trees are two distinct realities.",
+      "confidence": "moderate"
+    },
+    {
+      "segment": 29,
+      "coptic_form": "ⲍⲛⲉⲩ ⲛⲉ ⲡⲓⲱⲏⲛ ⲥⲛⲉⲩ",
+      "decision": "'The two trees are two' — the dualist thesis stated explicitly. Mani's exegesis insists that the parable indicates two ontologically distinct trees rooted in two distinct grounds (light and matter), against the monist allegorizers of single-substance doctrines.",
+      "confidence": "high"
+    },
+    {
+      "segment": 36,
+      "coptic_form": "ⲡⲟⲩⲁⲛⲉ ⲙⲡⲓⲱⲏⲛ ⲉⲧⲁⲛⲓⲧ",
+      "decision": "ⲟⲩⲁⲛⲉ likely = ⲟⲩⲱⲛϩ 'manifestation, showing-forth' or possibly a term for 'branch/shoot.' Given the exegetical context ('these are X of the beautiful tree'), 'manifestation' fits as a typological identifier. Tentative — the lexeme may also denote a botanical part.",
+      "confidence": "low"
+    }
+  ],
+  "page": 19
+}

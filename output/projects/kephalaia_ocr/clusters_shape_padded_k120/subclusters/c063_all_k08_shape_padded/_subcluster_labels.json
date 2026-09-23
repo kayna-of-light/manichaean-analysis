@@ -1,0 +1,21 @@
+{
+  "description": "Reviewed labels for second-stage shape subclusters of coarse cluster 063. Only visually coherent subclusters are labeled; mixed/noise/printed contamination remains unlabeled.",
+  "source_summary": "_summary.json",
+  "labels": {
+    "00": {
+      "label": "ⲝ",
+      "confidence": "strong",
+      "evidence": "Coherent tall xi-shaped manuscript forms; includes p010 l24 b18, index 864, final letter of ⲥⲁⲣ̣ⲝ."
+    },
+    "02": {
+      "label": "ⲧ",
+      "confidence": "strong",
+      "evidence": "Coherent tau-shaped manuscript forms in montage and context samples."
+    },
+    "05": {
+      "label": "ⲧ",
+      "confidence": "strong",
+      "evidence": "Second coherent tau-shaped manuscript subcluster; separated by shape from s02 but same letter value."
+    }
+  }
+}

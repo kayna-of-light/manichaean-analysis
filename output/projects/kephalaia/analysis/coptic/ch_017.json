@@ -1,0 +1,99 @@
+{
+  "chapter_number": 17,
+  "manuscript_pages": "55,16 - 57,32",
+  "coptic_tokens": 588,
+  "greek_loanwords": {
+    "total_density_pct": 3.57,
+    "cosmological_density_pct": 1.7,
+    "ecclesiastical_density_pct": 1.02,
+    "cosmological_ratio": 0.625,
+    "cosmological_count": 10,
+    "ecclesiastical_count": 6,
+    "general_count": 5,
+    "total_greek": 21,
+    "cosmological_words": {
+      "ⲕⲟⲥⲙⲟⲥ": 8,
+      "ⲡⲛ̅ⲁ̅": 1,
+      "ⲅⲉⲛⲉⲁ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 4
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.17,
+    "dialogue_openings": 1,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 1,
+    "details": [
+      {
+        "type": "dialogue_opening",
+        "match": "ⲡⲁⲭⲉϩ ⲁⲣⲁⲩ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 49,
+    "sahidic_count": 40,
+    "total_dialect_markers": 89,
+    "subachmimic_ratio": 0.551,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×3",
+      "ⲍⲛ×2",
+      "ⲁⲍ×20",
+      "ⲍⲓ×6",
+      "ⲍⲁ×2",
+      "ⲍⲏⲧ×5",
+      "ⲍⲣⲏ×7",
+      "ⲍⲱⲡ×1",
+      "ⲍⲉ×2",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×3",
+      "ϩⲛ×8",
+      "ϩⲛ̄×5",
+      "ⲁϩ×14",
+      "ϩⲓ×1",
+      "ϩⲁ×4",
+      "ϩⲣⲏ×1",
+      "ϩⲉ×2",
+      "ϩⲁⲏ×2"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 107,
+    "damaged_lines": 5,
+    "lacunae_density": 0.047,
+    "dot_sequences": 60,
+    "bracketed_restorations": 135,
+    "empty_brackets": 11,
+    "leer_markers": 5
+  },
+  "english_classification": {
+    "chapter_number": 17,
+    "chapter_title": "The Chapter of the Three Seasons",
+    "total_paragraphs": 13,
+    "core_paragraphs": 12,
+    "core_percentage": 87,
+    "chapter_note": "This chapter is dominated by the oldest teaching layer. The substrate presents a systematic temporal-cosmological framework: three periods of cosmic history defined by the actions of cosmic agents (First Man, Living Spirit, Mother of Life, Ambassador, Sin). Both sides of every mapping stay within the cosmic system — no contemporary application, no institutional content, no exhortation. The only editorial material is dialogue frame attribution in paragraphs 1, 7, 8, 9, 10. The teaching about relative durations (first period longest, second shortest, third intermediate) is a distinctive substrate feature — systematic quantitative comparison of cosmic epochs. Jesus here is Jesus the Splendour, a cosmic emanation figure, not a historical reference. The chapter shows no editorial fatigue; it maintains substrate register throughout.",
+    "classification_distribution": {
+      "mixed": 4,
+      "substrate": 8,
+      "dialogue_frame": 1
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (87%) with high cosmological Greek ratio (0.62)",
+      "CONCORDANT: English detected 1 dialogue_frame paragraph(s), Coptic confirms 1 dialogue opening(s)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 2,
+    "flag_count": 0
+  }
+}

@@ -1,0 +1,1232 @@
+{
+  "teaching": 31,
+  "total_gaps_in_core": 71,
+  "gaps_restored": 55,
+  "gaps_unrestorable": 16,
+  "restoration_note": "The teaching describes the Lord as Divine Human descending into the soul's members via the head/body correspondence: the First Man is the head, his five sons (mind, thought, teaching, counsel, reflection) are sent forth as members hanging from him, and his head rests on the Pillar of Glory in the Height. Most small gaps are well-constrained: morphological completions (ⲏ ⲉⲧⲁⲛⲍ̄, ⲡⲁⲣⲑⲉⲛⲟⲥ, ⲙⲉⲗⲟⲥ), standard titles (Virgin of Light, Pillar of Glory, First Man), and parallel formulas (ⲍⲛ̄ ⲧⲉϥⲍⲓⲕⲱⲛ ⲍⲛ̄ ⲧⲉϥⲙⲟⲣⲫⲏ, ⲡⲥⲏⲩ ⲉⲧⲙ̄ⲙⲉⲩ, ⲁϩϯ ⲛⲉϥ). Larger lacunae in lines 11–13, 33–35, 41–48 (the closing scene of fashioning and gathering) lack adequate constraints — only fragmentary partials and broad context — and are marked low or unrestorable to preserve honesty. The gift sequence (peace/kiss, fragrance, gathering inward) is structurally clear but the specific subjects and verbs of each line cannot be securely restored.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 1829,
+      "chapter": 31,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor proposal: definite article ⲡ- prefixed to ⲧⲱⲍⲙⲉ. Single-letter completion.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 1829,
+      "chapter": 31,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor proposal: completing ⲛ̄ⲧ- genitive marker before ϯⲩⲭⲏ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 1829,
+      "chapter": 31,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ ⲉⲧ",
+      "basis": "Editor proposal: completing ϯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ 'Living Soul' as standard formula, continuing onto next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 1830,
+      "chapter": 31,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲍ̄ ϣⲁ",
+      "basis": "Editor proposal: completes ⲉⲧⲁⲛⲍ̄ ϣⲁ 'Living, unto'. Standard title formula closing 'Living Soul, unto the Man'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 1830,
+      "chapter": 31,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor proposal: single letter completing ⲡⲁⲱⲛ = ⲡⲁⲓⲱⲛ 'the aeon'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 1831,
+      "chapter": 31,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁ",
+      "basis": "Editor proposal: completing ⲁⲓⲱⲛ wrapped from prior line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 1832,
+      "chapter": 31,
+      "line": 10,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲗⲱⲃϣ̄ ⲍⲛ̄ ⲛⲉϥ",
+      "basis": "Spiritual reading: First Man, once loosed, mingles with his members (the soul-life he is sent to gather). ⲗⲱⲃϣ̄ 'mingle' is the established verb for the unregenerate state where what is the Lord's and what the soul has claimed are not yet sorted; fits ~10 chars.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 7,
+      "section": 1833,
+      "chapter": 31,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏⲧⲛⲉ",
+      "basis": "Editor proposal: 2pl object pronoun on ⲥⲍⲉⲓ̈ ⲛ⸗ 'write to (you-pl.)'; standard teacher-to-disciples address.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 1833,
+      "chapter": 31,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char span without partial trace; cannot be securely constrained — could be a temporal or place reference ('previously,' 'in another place') but no formula fixes it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 1833,
+      "chapter": 31,
+      "line": 11,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char span continuing the back-reference phrase opened by gap 8; insufficient anchor.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 10,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap after partial ⲁϥⲙ̄; could be a verb stem like ⲙⲟⲩⲣ, ⲙⲉⲩⲉ, but the surrounding clause ('he ... did not know') is too thin to fix it.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 11,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Editor proposal: single letter completing ⲡϥⲥⲟⲩⲛ̄ 'he did not know' (negative perfect).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char span; object of 'know' but no partial trace; could be ⲡⲙⲟⲩ 'death' or other but weakly constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 13,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char continuation of preceding gap; no anchor.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap before ⲁⲗⲗⲁ; no partial trace, no formula.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 15,
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor proposal: perfect-tense particle ⲁϥ- single letter.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Editor proposal: single letter completing ϣⲱⲡⲉ 'come to be'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ̄",
+      "basis": "Editor proposal: preposition ⲍⲛ̄ 'in' introducing the catalog 'in his image, in his form, in his love'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 1836,
+      "chapter": 31,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor proposal: single letter completing ⲧⲉϥ- 'his'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 1837,
+      "chapter": 31,
+      "line": 15,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣ",
+      "basis": "Editor proposal: completing ⲡⲁⲣⲑⲉⲛⲟⲥ 'Virgin'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 1839,
+      "chapter": 31,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲥ",
+      "basis": "Editor proposal: completing ⲙⲉⲗⲟⲥ 'members' (line wraps to ⲧⲏⲣⲟⲩ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 1840,
+      "chapter": 31,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Editor proposal: genitive marker ⲙ̄- before ⲡⲣⲱⲙⲉ on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 1841,
+      "chapter": 31,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁ",
+      "basis": "Single letter completing ⲛⲛⲁ-/future or genitive linker; restoration matches editor's proposal that the phrase continues 'has hope of being there'.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 23,
+      "section": 1841,
+      "chapter": 31,
+      "line": 19,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲱⲡⲉ ⲙ̄",
+      "basis": "Editor proposal: future ⲛⲁ- + ⲱⲡⲉ 'be' + ⲙ̄- 'in', continuing 'has hope of being there' with ⲙⲙⲉⲩ on next line.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 24,
+      "section": 1842,
+      "chapter": 31,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϥ ⲛ",
+      "basis": "Editor proposal: completing ⲧⲏⲣϥ̄ 'whole' + future ⲛⲁ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 1842,
+      "chapter": 31,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Editor proposal: completing ⲛⲁⲙⲟⲩ 'will die'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 1844,
+      "chapter": 31,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ ⲛ",
+      "basis": "Editor proposal: completing ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'First Man' standard title.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 1844,
+      "chapter": 31,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲉ",
+      "basis": "Editor proposal: completing ⲣⲱⲙⲉ 'man'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 1845,
+      "chapter": 31,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor proposal: single letter completing ⲙⲙⲉⲗⲟⲥ 'members'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 1845,
+      "chapter": 31,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄",
+      "basis": "Editor proposal: genitive marker before ⲧⲉϥϯⲩⲭⲏ 'his Soul'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 1846,
+      "chapter": 31,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor proposal: single letter completing ⲉⲧⲁⲛⲍ̄ 'living'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 1846,
+      "chapter": 31,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor proposal: completing ⲉⲧⲉⲣⲉ relative converter, continuing onto next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 1847,
+      "chapter": 31,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ ⲁⲡⲧⲏⲣϥ̄ ⲁⲛⲍ ⲁⲣⲁϥ ⲉϥⲭⲓ ⲛⲓϥⲉ",
+      "basis": "Editor proposal: standard expansion of the air-anima metaphor 'every flesh wholly lives in him, drawing breath'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 1847,
+      "chapter": 31,
+      "line": 25,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ϥⲱⲛⲍ",
+      "basis": "Partial ⲛϥ visible at start; in air-anima context the natural complement is 'and he lives' — circumstantial ⲛϥ̄- + ⲱⲛⲍ̄ from ⲁⲛⲍ root.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 34,
+      "section": 1848,
+      "chapter": 31,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲥ ⲙ̄ⲡⲉ",
+      "basis": "Editor proposal: completing ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ 'Pillar of Glory', standard cosmological title (= path of regeneration in lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 1850,
+      "chapter": 31,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲧⲉⲓ̈ ⲙ̄",
+      "basis": "Editor proposal: ⲧⲉ ⲧⲉⲓ̈ ⲙ̄- 'this of-' parallels line 22 'ⲧⲍⲉ ⲍⲱϥ ⲁⲛ ⲧⲉ ⲧⲉⲓ̈ ⲙⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 1851,
+      "chapter": 31,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉ ⲉⲧⲍⲓⲭⲛ ⲡ",
+      "basis": "Editor proposal: completing parallel construction 'in the manner of the head over the body' (cf. line 30 ⲉⲧⲍⲓⲭⲛ̄ ⲡⲥⲧⲩⲗⲟⲥ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 1852,
+      "chapter": 31,
+      "line": 30,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap after ⲉϥⲕⲁⲁⲧ ⲍ-; could be ⲍⲛ̄ + suffix or ⲁⲃⲁⲗ but no anchor; not securely constrained.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 38,
+      "section": 1853,
+      "chapter": 31,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩⲁⲓ̈ⲛⲉ",
+      "basis": "Editor proposal: completing ⲡⲁⲣⲑⲉⲛⲟⲥ ⲛⲟⲩⲁⲓ̈ⲛⲉ 'Virgin of Light', established Manichaean title.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 1853,
+      "chapter": 31,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲁⲥ",
+      "basis": "Editor proposal: 3sg.f. independent pronoun in 'who is' (referring to fem. ⲡⲁⲣⲑⲉⲛⲟⲥ/ϯⲩⲭⲏ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 1854,
+      "chapter": 31,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲑⲉ ⲛ̄ⲟⲩⲍⲃⲥⲱ ⲉⲥⲁⲛⲍ̄",
+      "basis": "16-char span; from clothing/garment lexicon: 'as a living garment'. ⲣⲫⲟⲣⲉ collocates with ⲍⲃⲥⲱ; the Soul-as-garment of First Man is a standard correspondence. Speculative on exact wording.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 41,
+      "section": 1855,
+      "chapter": 31,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char trace ϩ; introduces the five faculties list but no clear formula fixes the head-noun.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 42,
+      "section": 1855,
+      "chapter": 31,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲙ̄ⲙⲉⲩ",
+      "basis": "Editor proposal: standard demonstrative ⲉⲧⲙ̄ⲙⲉⲩ 'that very'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 43,
+      "section": 1856,
+      "chapter": 31,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲙⲁⲕⲙⲉⲕ",
+      "basis": "Editor proposal: ⲡⲙⲁⲕⲙⲉⲕ 'reflection', fifth of the five faculties (mind, thought, teaching, counsel, reflection) per lexicon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 1857,
+      "chapter": 31,
+      "line": 35,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap with partials ⲙⲙ...ⲡ; could be ⲕⲁⲧⲁ ⲡ- 'according to' but partials don't match cleanly.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 45,
+      "section": 1858,
+      "chapter": 31,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap with partials ⲡ...ⲥ; could be ⲡⲱⲣϣ̄ⲥ̄ 'spread her' or ⲡⲏⲣϣ̄ⲥ̄ but uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 46,
+      "section": 1860,
+      "chapter": 31,
+      "line": 38,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙ̄ⲡⲉⲓ̈ ⲛⲁϭ ⲛ̄",
+      "basis": "8-char gap before ⲕⲟⲥⲙⲟⲥ; standard collocation 'of this great cosmos' fits — likeness of body and the great cosmos as the natural mind in formation. Speculative.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 47,
+      "section": 1861,
+      "chapter": 31,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥⲏⲩ ⲉⲧⲙ̄ⲙⲉⲩ",
+      "basis": "Editor proposal: standard temporal phrase ⲍⲙ ⲡⲥⲏⲩ ⲉⲧⲙ̄ⲙⲉⲩ 'in that very time'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 48,
+      "section": 1861,
+      "chapter": 31,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟⲩⲁⲓⲛⲉ",
+      "basis": "Editor proposal: completing ⲧⲡⲁⲣⲑⲉⲛⲟⲥ ⲙ̄ⲡⲟⲩⲁⲓⲛⲉ 'Virgin of Light'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 49,
+      "section": 1862,
+      "chapter": 31,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩⲱ ⲁϩⲁⲍⲉ",
+      "basis": "Editor proposal: 'and he stood' — perfect prefix on visible ⲁⲍⲉ 'stood'; continuing the supplicatory scene.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 50,
+      "section": 1863,
+      "chapter": 31,
+      "line": 41,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲓⲱⲧ",
+      "basis": "7-char gap before ⲁϩϯ 'gave'; the giver of peace and kiss in the gathering scene is the Father (Father of Greatness sending gifts to the rational). Loose match.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 51,
+      "section": 1863,
+      "chapter": 31,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩϯ",
+      "basis": "Editor proposal: idiom ⲁϩϯ ⲛⲉϥ 'he gave him', with ⲧ visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 1863,
+      "chapter": 31,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲥⲡⲁⲥⲙⲟⲥ",
+      "basis": "Editor proposal: standard greeting-pair 'peace and kiss' (lexicon: kissing/embrace as conjunction).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 53,
+      "section": 1864,
+      "chapter": 31,
+      "line": 42,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄",
+      "basis": "9-char gap before ⲁϩϯ; in the parallel sequence of givers, the Living Spirit is the operative power that gives the fragrance (good of love sensed). Fits character count.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 54,
+      "section": 1864,
+      "chapter": 31,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩϯ",
+      "basis": "Editor proposal: parallel idiom 'he gave', with ⲁϩ visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 55,
+      "section": 1865,
+      "chapter": 31,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲱ ⲡⲣ",
+      "basis": "5-char span continuing the chain of givers; conjunction + article fits.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 56,
+      "section": 1865,
+      "chapter": 31,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor proposal: definite article restored within clear word [ⲡ]ⲱⲙⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 57,
+      "section": 1865,
+      "chapter": 31,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉϩ",
+      "basis": "Editor proposal: ⲛⲉϩ 'to him' completing the idiom ⲁϩϯ ⲛⲉϩ 'he gave him' as in lines 41-42.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 58,
+      "section": 1866,
+      "chapter": 31,
+      "line": 44,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁϩⲧⲛⲛⲁⲩ",
+      "basis": "8-char gap before ⲛⲛⲉϩⲙⲉⲗⲟⲥ; ⲧⲛⲛⲁⲩ 'send forth' is the established verb for the rational sent to gather the soul. Fits sense and approximate length.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 59,
+      "section": 1867,
+      "chapter": 31,
+      "line": 45,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap before ⲁϩⲕⲁⲧϩ 'turned him'; lacks partial trace and formula.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 60,
+      "section": 1867,
+      "chapter": 31,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲩⲣⲅⲥ̄ⲕⲟⲥ",
+      "basis": "Editor proposal: Greek πύργος/πυργίσκος 'tower', with ⲅ damaged in clear word.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 61,
+      "section": 1868,
+      "chapter": 31,
+      "line": 46,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲁⲣⲭⲓ ⲛ",
+      "basis": "7-char gap; 'they began to fashion him' fits the sequence of fashioning/adorning that follows.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 62,
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap opening section; insufficient context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 63,
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲗⲁⲥⲙⲁ",
+      "basis": "Editor proposal: Greek πλάσμα 'molding', standard Manichaean cosmological term; partials ⲡ]ⲗⲁⲥ[ⲙⲁ visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 64,
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap; could be a connector (ⲙ̄ⲛ̄, ⲍⲛ̄) but unfixable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 65,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap; cannot reconstruct subject of ⲁⲱⲙⲥ̄ 'submerged' securely.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 66,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛϩⲙⲟⲟϣⲙⲉ",
+      "basis": "Editor proposal: Lyc. ⲙⲁⲉⲉ/ⲙⲟⲟϣⲉ 'walk'; partials [ⲛϩⲙⲟ] visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 67,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ",
+      "basis": "Editor proposal: standard ⲙⲟⲟϣⲉ ⲁⲃⲁⲗ 'walk forth'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 68,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲡⲓⲧⲛⲉ",
+      "basis": "5-char gap; ⲁⲡⲓⲧⲛⲉ 'downward' is established complement of ⲃⲱⲕ/ⲙⲟⲟϣⲉ in this teaching's descent imagery.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 69,
+      "section": 1871,
+      "chapter": 31,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲯⲩⲭⲏ",
+      "basis": "Editor proposal: ⲧⲯⲩⲭⲏ 'the soul' — fits context of soul defiled in the Enemy and drawn back inward.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 70,
+      "section": 1872,
+      "chapter": 31,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲱⲕ",
+      "basis": "Editor proposal: idiom ⲧⲱⲕ ⲁⲣⲉⲧ⸗ 'stand fast', with [ⲧ] before clear ⲱⲕ.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 1829,
+      "chapter": 31,
+      "line": 5,
+      "core_english": "Into how many members of the Soul did the Call go down — of the Liv-"
+    },
+    {
+      "section": 1830,
+      "chapter": 31,
+      "line": 6,
+      "core_english": "-ing Soul, unto the Man who is in the aeon?"
+    },
+    {
+      "section": 1831,
+      "chapter": 31,
+      "line": 8,
+      "core_english": "Aeon, in the manner of a house of wood."
+    },
+    {
+      "section": 1832,
+      "chapter": 31,
+      "line": 10,
+      "core_english": "As for the First Man, indeed, he was loosed forth; he {0} the"
+    },
+    {
+      "section": 1833,
+      "chapter": 31,
+      "line": 11,
+      "core_english": "members of the Living Soul, in the manner I have written to you {1}"
+    },
+    {
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "core_english": "of the Living Soul. He {2} did not know {3}"
+    },
+    {
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "core_english": "{4}, but the blessed Man who is glorious came to be in"
+    },
+    {
+      "section": 1836,
+      "chapter": 31,
+      "line": 14,
+      "core_english": "a hidden one — in his image, in his form, in his lo-"
+    },
+    {
+      "section": 1837,
+      "chapter": 31,
+      "line": 15,
+      "core_english": "-ve, in his holy Virgin, who is the Vir-"
+    },
+    {
+      "section": 1839,
+      "chapter": 31,
+      "line": 17,
+      "core_english": "After the manner of the body of the flesh: the root of all the mem-"
+    },
+    {
+      "section": 1840,
+      "chapter": 31,
+      "line": 18,
+      "core_english": "-bers hangs from the head — for if they cut off one of the members of"
+    },
+    {
+      "section": 1841,
+      "chapter": 31,
+      "line": 19,
+      "core_english": "the man, the head being present, he has hope of being there"
+    },
+    {
+      "section": 1842,
+      "chapter": 31,
+      "line": 20,
+      "core_english": "still. But if they cut off his head, the whole body will di-"
+    },
+    {
+      "section": 1844,
+      "chapter": 31,
+      "line": 22,
+      "core_english": "Thus also is this of the First Ma-"
+    },
+    {
+      "section": 1845,
+      "chapter": 31,
+      "line": 23,
+      "core_english": "-n: He is the head, his sons being attached therein — the mem-bers of"
+    },
+    {
+      "section": 1846,
+      "chapter": 31,
+      "line": 24,
+      "core_english": "his Soul. Or rather, he is in the manner of the living air in which"
+    },
+    {
+      "section": 1847,
+      "chapter": 31,
+      "line": 25,
+      "core_english": "every flesh wholly lives in him, drawing breath, {5}"
+    },
+    {
+      "section": 1848,
+      "chapter": 31,
+      "line": 26,
+      "core_english": "from him. For his head is laid upon the body of the Pillar of"
+    },
+    {
+      "section": 1850,
+      "chapter": 31,
+      "line": 28,
+      "core_english": "Thus also is this of"
+    },
+    {
+      "section": 1851,
+      "chapter": 31,
+      "line": 29,
+      "core_english": "the Father, the blessed Man, being in the manner of the head that is over the"
+    },
+    {
+      "section": 1852,
+      "chapter": 31,
+      "line": 30,
+      "core_english": "body, and the air that is over the Pillar — laid {6},"
+    },
+    {
+      "section": 1853,
+      "chapter": 31,
+      "line": 31,
+      "core_english": "established in his Virgin of Light, who is"
+    },
+    {
+      "section": 1854,
+      "chapter": 31,
+      "line": 32,
+      "core_english": "his Soul, which he wears {7}."
+    },
+    {
+      "section": 1855,
+      "chapter": 31,
+      "line": 33,
+      "core_english": "{8} those very ones: the mind, the thought, the teaching, the counsel, and"
+    },
+    {
+      "section": 1856,
+      "chapter": 31,
+      "line": 34,
+      "core_english": "the reflection — those who raised them up have sent them forth"
+    },
+    {
+      "section": 1857,
+      "chapter": 31,
+      "line": 35,
+      "core_english": "{9} his purpose of heart; they passed by, walking after them"
+    },
+    {
+      "section": 1858,
+      "chapter": 31,
+      "line": 36,
+      "core_english": "{10} of his living soul that is slackened among the bewildered ones"
+    },
+    {
+      "section": 1860,
+      "chapter": 31,
+      "line": 38,
+      "core_english": "{11} cosmos. Now the time when they sent them forth,"
+    },
+    {
+      "section": 1861,
+      "chapter": 31,
+      "line": 39,
+      "core_english": "in that very time, he found him in the Virgin of Light,"
+    },
+    {
+      "section": 1862,
+      "chapter": 31,
+      "line": 40,
+      "core_english": "and he stood before him, beseeching, praying for a power"
+    },
+    {
+      "section": 1863,
+      "chapter": 31,
+      "line": 41,
+      "core_english": "again. {12} gave him a peace and a kiss."
+    },
+    {
+      "section": 1864,
+      "chapter": 31,
+      "line": 42,
+      "core_english": "{13} gave him the beautiful fragrance."
+    },
+    {
+      "section": 1865,
+      "chapter": 31,
+      "line": 43,
+      "core_english": "{14} the man, who himself, the Man, gave him"
+    },
+    {
+      "section": 1866,
+      "chapter": 31,
+      "line": 44,
+      "core_english": "{15} his members, to gather his soul inward,"
+    },
+    {
+      "section": 1867,
+      "chapter": 31,
+      "line": 45,
+      "core_english": "{16} he turned him back to his place. Thus the tower —"
+    },
+    {
+      "section": 1868,
+      "chapter": 31,
+      "line": 46,
+      "core_english": "{17} fashion him and adorn him with an art,"
+    },
+    {
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "core_english": "{18} the molding {19} the voices that they sent forth —"
+    },
+    {
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "core_english": "{20} they submerged inward, to walk forth {21},"
+    },
+    {
+      "section": 1871,
+      "chapter": 31,
+      "line": 49,
+      "core_english": "the soul that has been defiled in the Enemy; they drew her inward, they came being"
+    },
+    {
+      "section": 1872,
+      "chapter": 31,
+      "line": 50,
+      "core_english": "Stand fast in their place at the answering, in the icon of their Father."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 1832,
+      "chapter": 31,
+      "line": 10,
+      "proposed_english": "mingled with",
+      "coptic_gap_refs": [
+        6
+      ],
+      "basis": "Coptic ⲗⲱⲃϣ̄ ⲍⲛ̄ ⲛⲉϥ — the First Man, once loosed, mingles with the members of the soul. Lexicon: ⲗⲱⲃϣ̄ = mingling, the unregenerate state where light and the soul's claim are not yet sorted.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 1833,
+      "chapter": 31,
+      "line": 11,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        8,
+        9
+      ],
+      "basis": "Coptic gaps 8 and 9 unrestorable; cannot be filled.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        10
+      ],
+      "basis": "Coptic gap 10 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 1834,
+      "chapter": 31,
+      "line": 12,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        12,
+        13
+      ],
+      "basis": "Object of 'know' in gaps 12-13 cannot be securely restored.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 1835,
+      "chapter": 31,
+      "line": 13,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        14
+      ],
+      "basis": "Opening of clause unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 1847,
+      "chapter": 31,
+      "line": 25,
+      "proposed_english": "and lives",
+      "coptic_gap_refs": [
+        33
+      ],
+      "basis": "Coptic ⲛϥ̄ⲱⲛⲍ̄ — circumstantial 'and he lives', completing the air-anima formula 'all flesh draws breath from him and lives'.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 1852,
+      "chapter": 31,
+      "line": 30,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        37
+      ],
+      "basis": "Coptic gap 37 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 1854,
+      "chapter": 31,
+      "line": 32,
+      "proposed_english": "as a living garment",
+      "coptic_gap_refs": [
+        40
+      ],
+      "basis": "Coptic ⲛⲑⲉ ⲛ̄ⲟⲩⲍⲃⲥⲱ ⲉⲥⲁⲛⲍ̄ — the Soul as the garment First Man wears; lexicon: ⲣⲫⲟⲣⲉ + ⲍⲃⲥⲱ. Speculative.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 1855,
+      "chapter": 31,
+      "line": 33,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        41
+      ],
+      "basis": "Coptic gap 41 unrestorable; head-noun introducing the five faculties cannot be fixed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 1857,
+      "chapter": 31,
+      "line": 35,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        44
+      ],
+      "basis": "Coptic gap 44 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 1858,
+      "chapter": 31,
+      "line": 36,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        45
+      ],
+      "basis": "Coptic gap 45 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 1860,
+      "chapter": 31,
+      "line": 38,
+      "proposed_english": "of this great",
+      "coptic_gap_refs": [
+        46
+      ],
+      "basis": "Coptic ⲙ̄ⲡⲉⲓ̈ ⲛⲁϭ ⲛ̄- — referring back to 'likeness of the members of her body and of this great cosmos'. Speculative.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 1863,
+      "chapter": 31,
+      "line": 41,
+      "proposed_english": "the Father",
+      "coptic_gap_refs": [
+        50,
+        51
+      ],
+      "basis": "Coptic ⲡⲓⲱⲧ ⲁϩϯ — the Father gives peace and kiss in the gathering scene. Lexicon: kissing/embrace as conjunction of love.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 1864,
+      "chapter": 31,
+      "line": 42,
+      "proposed_english": "the Living Spirit",
+      "coptic_gap_refs": [
+        53,
+        54
+      ],
+      "basis": "Coptic ⲡⲡⲛⲁ ⲉⲧⲁⲛⲍ̄ ⲁϩϯ — the Living Spirit gives the fragrance (lexicon: fragrance = good of love sensed; Living Spirit = operative power that orders).",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 1865,
+      "chapter": 31,
+      "line": 43,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        55,
+        56
+      ],
+      "basis": "Continuing the chain of givers; the Man is third giver. Connector unrestorable in detail.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 1866,
+      "chapter": 31,
+      "line": 44,
+      "proposed_english": "he sent forth",
+      "coptic_gap_refs": [
+        58
+      ],
+      "basis": "Coptic ⲁϩⲧⲛⲛⲁⲩ — the Lord sending forth the members; ⲧⲛⲛⲁⲩ is the established verb (lexicon: send forth/emanate).",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 1867,
+      "chapter": 31,
+      "line": 45,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        59
+      ],
+      "basis": "Coptic gap 59 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 1868,
+      "chapter": 31,
+      "line": 46,
+      "proposed_english": "they began to",
+      "coptic_gap_refs": [
+        61
+      ],
+      "basis": "Coptic ⲁⲩⲁⲣⲭⲓ ⲛ- — completing 'they began to fashion him'. Speculative.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        62
+      ],
+      "basis": "Coptic gap 62 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 1869,
+      "chapter": 31,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        64
+      ],
+      "basis": "Coptic gap 64 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        65
+      ],
+      "basis": "Coptic gap 65 unrestorable.",
+      "confidence": "unrestorable"
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 1870,
+      "chapter": 31,
+      "line": 48,
+      "proposed_english": "downward",
+      "coptic_gap_refs": [
+        68
+      ],
+      "basis": "Coptic ⲁⲡⲓⲧⲛⲉ — established directional complement of descent verbs in this teaching.",
+      "confidence": "low"
+    }
+  ]
+}

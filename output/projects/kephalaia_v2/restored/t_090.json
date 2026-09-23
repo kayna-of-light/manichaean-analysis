@@ -1,0 +1,119 @@
+{
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5056,
+      "chapter": 104,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Single-letter completion of ϣⲓ 'measure' yielding the idiom ⲉⲙⲛ̄ ϣⲓ ⲁⲣⲁϥ 'there is no measure to it' — the breath-offspring is so continuous and pervasive (issuing from all the members) that it cannot be measured. Editor's reading is grammatically and lexically secure.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 5060,
+      "chapter": 104,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Greek loanword ἐπιθυμία broken across line-break: ⲉⲡⲓⲑ̄ⲩ- + ⲙⲓⲁ continuing in the next line. Single missing vowel ⲩ. The phrase ⲧϩⲏⲇⲟⲛⲏ ⲛⲧⲉⲡⲓⲑⲩⲙⲓⲁ 'pleasure of desire' is a stock formula for sexual generation, here producing the fourth offspring (inner conjunction of love and wisdom).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲉ",
+      "basis": "Completion of ⲡⲉϥⲙⲉⲩⲉ 'his thought' (second of the five faculties per the lexicon — ⲡⲙⲉⲩⲉ). Triplet ⲡⲉϥⲟⲩⲱϣⲉ ⲛ̄ϩⲏⲧ — ⲡⲉϥⲙⲉⲩⲉ — ⲧⲉϥⲁⲅⲁⲡⲏ ('desire of heart — thought — love') describes the parents' affective stance toward the begotten fifth offspring.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲅ",
+      "basis": "ⲧϥ-ⲁⲅ-ⲁⲡⲏ = ⲧⲉϥⲁⲅⲁⲡⲏ 'his love' (Greek ἀγάπη); the visible -ⲁⲡⲏ requires preceding ⲁⲅ to form the loanword. Closes the standard triad desire–thought–love by which parents recognize the bodily offspring (ⲡⲓⲝⲡⲟ ⲛ̄ⲥⲱⲙⲁⲧⲓⲕⲟⲛ).",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5056,
+      "chapter": 104,
+      "line": 8,
+      "core_english": "the mind, and it comes forth from all his members, and there is no {0} to"
+    },
+    {
+      "section": 5060,
+      "chapter": 104,
+      "line": 12,
+      "core_english": "The fourth is that which they habitually beget through the pleasure of {1}"
+    },
+    {
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "core_english": "his {2} and his {3}, which they seek after daily, in"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5056,
+      "chapter": 104,
+      "line": 8,
+      "proposed_english": "measure",
+      "coptic_gap_refs": [
+        0
+      ],
+      "basis": "ϣⲓ = 'measure'; the breath-offspring issues continually from every member and cannot be reckoned.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5060,
+      "chapter": 104,
+      "line": 12,
+      "proposed_english": "desire",
+      "coptic_gap_refs": [
+        1
+      ],
+      "basis": "ⲉⲡⲓⲑⲩⲙⲓⲁ = ἐπιθυμία 'desire'; the standard pairing with ἡδονή 'pleasure' for procreative joining renders 'pleasure of desire'.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "proposed_english": "thought",
+      "coptic_gap_refs": [
+        2
+      ],
+      "basis": "ⲡⲙⲉⲩⲉ = 'thought' per the corpus lexicon (the second of the five faculties); fits the desire-thought-love triad.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5066,
+      "chapter": 104,
+      "line": 18,
+      "proposed_english": "love",
+      "coptic_gap_refs": [
+        3
+      ],
+      "basis": "ⲧⲁⲅⲁⲡⲏ = 'love' (ἀγάπη) per the lexicon; closes the parents' affective triad toward their begotten bodily offspring.",
+      "confidence": "high"
+    }
+  ],
+  "teaching": 90,
+  "total_gaps_in_core": 4,
+  "gaps_restored": 4,
+  "gaps_unrestorable": 0,
+  "restoration_note": "All four gaps are short scribal lacunae within fixed lexical items: ϣⲓ 'measure' completes the immeasurability of the breath-offspring; ⲉⲡⲓⲑⲩⲙⲓⲁ is a loanword broken across a line; ⲡⲉϥⲙⲉⲩⲉ 'his thought' and ⲧⲉϥⲁⲅⲁⲡⲏ 'his love' close the standard desire–thought–love triad by which the parents acknowledge the fifth, bodily offspring while ignoring the four hidden ones (breath, speech, operation-under-shame, inner conjunction). All restorations are constrained by partial traces, surrounding morphology, and the corpus lexicon."
+}

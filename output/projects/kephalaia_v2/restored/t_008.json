@@ -1,0 +1,192 @@
+{
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲓ",
+      "basis": "Editor restoration ⲉⲓ 'came' supplies the required main verb of the temporal clause ⲛ̄ⲧⲁⲣⲉ … 'when Jesus the Son of the Greatness came'. The lexicon entry ⲉⲓ ⲁⲡⲓⲧⲛⲉ (descend/come down) is the standard verb for the Lord's accommodation toward the world; here it heads the whole teaching, which describes the descent through ten chariots.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲥ",
+      "basis": "One-character lacuna with partial ⲥ visible. The word is plainly ⲁⲛⲓⲕⲟⲥⲙⲟⲥ ('to the worlds'), and the missing letter is the final ⲥ of ⲕⲟⲥⲙⲟⲥ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 454,
+      "chapter": 8,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲧⲉⲗⲟ ⲁⲙⲏⲧ",
+      "basis": "Editor restoration. The chapter heading and the immediately following ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ ('mounts') require a finite ⲧⲉⲗⲟ-verb here; ⲁⲙⲏⲧ ('upon ten') is constrained by ⲡⲓⲙⲏⲧ ⲛ̄ϩⲁⲣⲙⲁ in Section 469 and by the lexicon's 'ten chariots' entry, which is precisely the structure being introduced.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 3,
+      "section": 455,
+      "chapter": 8,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲍⲏⲧⲟⲩ",
+      "basis": "Editor restoration. ⲛ̄ⲍⲏⲧⲟⲩ ('in them') is the natural completion of 'he walked in the world …', the antecedent being ⲙ̄ⲙⲁⲛⲧⲉⲗⲟ (the mounts) just named. The plural pronominal suffix is fixed by the antecedent.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 456,
+      "chapter": 8,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲉⲡⲉⲓⲁⲏ ⲛ̄",
+      "basis": "Editor restoration. Final ⲉ closes ⲟⲩⲁⲓⲛⲉ; ⲉⲡⲉⲓⲁⲏ ⲛ̄ (Greek ἐπειδή + relative) is the causal connector required to introduce the subordinate clause 'since he received commandments from the Ambassador' that follows. The same connector recurs in Sections 458 and 460.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 457,
+      "chapter": 8,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲍⲏⲧϥ̄",
+      "basis": "Editor restoration. ⲛ̄ⲍⲏⲧϥ̄ ('in it') closes the clause: the antecedent is ⲡⲭⲁⲓ ⲛ̄ⲟⲩⲁⲓⲛⲉ (the vessel of light, masculine singular), so the singular masculine suffix -ϥ is required.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 470,
+      "chapter": 8,
+      "line": 21,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲥⲙⲁⲧ",
+      "basis": "Four-character lacuna preceding ⲟⲩⲉ ⲧⲏⲣⲟⲩ; with the carry-over ⲛ̄- from the preceding line, this yields ⲛ̄ⲥⲙⲁⲧⲟⲩⲉ ⲧⲏⲣⲟⲩ ('all the likenesses/forms'), pairing with the immediately preceding ⲛϩⲱⲣⲃ ⲧⲏⲣⲟⲩ ('all the forms'). The doublet 'forms and likenesses' fits the lexicon's ⲡⲉⲓⲛⲉ entry on likeness as the form of correspondence and the reading's 'every form of the soul'.",
+      "confidence": "moderate"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "core_english": "When Jesus the Son of the Greatness {0} to the worlds,"
+    },
+    {
+      "section": 454,
+      "chapter": 8,
+      "line": 5,
+      "core_english": "at the time when he was disclosed from the Greatness, {1}"
+    },
+    {
+      "section": 455,
+      "chapter": 8,
+      "line": 6,
+      "core_english": "mounts. He walked in the world {2}."
+    },
+    {
+      "section": 456,
+      "chapter": 8,
+      "line": 7,
+      "core_english": "The first mount is the vessel of light, {3}"
+    },
+    {
+      "section": 457,
+      "chapter": 8,
+      "line": 8,
+      "core_english": "he received commandments from the Ambassador {4}."
+    },
+    {
+      "section": 470,
+      "chapter": 8,
+      "line": 21,
+      "core_english": "the {5}, all those of above and those of below."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 453,
+      "chapter": 8,
+      "line": 4,
+      "proposed_english": "came",
+      "coptic_gap_refs": [
+        0,
+        1
+      ],
+      "confidence": "high",
+      "basis": "Renders ⲉⲓ in its lexicon sense (descend/come down): the Lord's accommodation toward the soul. The plural ⲕⲟⲥⲙⲟⲥ is folded into the natural English 'worlds'; no separate English placeholder is needed for the single restored ⲥ."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 454,
+      "chapter": 8,
+      "line": 5,
+      "proposed_english": "he mounted upon ten",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "moderate",
+      "basis": "Renders the editor's ⲁϩⲧⲉⲗⲟ ⲁⲙⲏⲧ. The teaching's structure (Sections 456–468) lists ten mounts/chariots; the lexicon entry 'ten chariots / ten harmata' is the structure the Lord descends through. 'Mounted upon' preserves the chariot/vessel imagery used by the editor at Section 473."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 455,
+      "chapter": 8,
+      "line": 6,
+      "proposed_english": "in them",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "Renders ⲛ̄ⲍⲏⲧⲟⲩ; antecedent is the ten mounts just named. The reading explicitly says 'in these ten the Lord walks through every form of the soul'."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 456,
+      "chapter": 8,
+      "line": 7,
+      "proposed_english": "since",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "high",
+      "basis": "Renders the causal ⲉⲡⲉⲓⲁⲏ ⲛ̄ that introduces the subordinate clause about receiving commandments from the Ambassador. Mirrors the editor's translation of the same connector at Sections 458 and 460. The closing ⲉ of ⲟⲩⲁⲓⲛⲉ has no separate English correlate."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 457,
+      "chapter": 8,
+      "line": 8,
+      "proposed_english": "in it",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "high",
+      "basis": "Renders ⲛ̄ⲍⲏⲧϥ̄, masculine singular suffix referring to ⲡⲭⲁⲓ ⲛ̄ⲟⲩⲁⲓⲛⲉ (the vessel of light). The first vessel takes its commission from the Lord's call as it goes out; the commandments are received within that doctrinal vessel."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 470,
+      "chapter": 8,
+      "line": 21,
+      "proposed_english": "likenesses",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "moderate",
+      "basis": "Renders the restored ⲥⲙⲁⲧⲟⲩⲉ, paired with ⲛϩⲱⲣⲃ ⲧⲏⲣⲟⲩ ('all the forms') just preceding. The lexicon glosses ⲡⲉⲓⲛⲉ/ⲟⲩⲉⲓⲛⲉ as 'the form of correspondence; how the spiritual takes shape in the natural', exactly the function of the ten chariots described here."
+    }
+  ],
+  "teaching": 8,
+  "total_gaps_in_core": 7,
+  "gaps_restored": 7,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching describes Jesus the Radiance descending through ten harmata — orderly accommodations of divine truth toward the soul. Six of the seven gaps are tightly constrained: a single-letter completion (ⲕⲟⲥⲙⲟⲥ), the framing verb of descent (ⲉⲓ), two pronominal completions (ⲛ̄ⲍⲏⲧⲟⲩ, ⲛ̄ⲍⲏⲧϥ̄), the recurring causal connector ⲉⲡⲉⲓⲁⲏ, and the editor's verb ⲁϩⲧⲉⲗⲟ ⲁⲙⲏⲧ supported by the chapter's ten-chariot framework. Gap 6 is constrained to a 4-character word ending in ⲟⲩⲉ paired with ϩⲱⲣⲃ; ⲥⲙⲁⲧ ('likenesses/forms') gives the natural doublet 'every form and every likeness' aligned with the lexicon's 'form of correspondence' sense. No gap was left unrestorable."
+}

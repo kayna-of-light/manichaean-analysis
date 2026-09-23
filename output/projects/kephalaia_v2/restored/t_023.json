@@ -1,0 +1,3460 @@
+{
+  "teaching": 23,
+  "total_gaps_in_core": 155,
+  "gaps_restored": 71,
+  "gaps_unrestorable": 84,
+  "restoration_note": "This teaching describes Hyle/Enthumesis of Death as the self that molds a cosmos from itself, and the Lord's reply through First Man going forth in his god-garments. The opening (1304-1316) sets up the question of how mingling of light/dark, life/death came to be — these gaps are mostly recoverable through editor proposals. The middle (1317-1331) describing Hyle's seizing of First Man and her self-molding in her own land is heavily damaged but constrained by the recurring formula ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙⲙⲁⲥ ⲟⲩⲁⲉⲉⲥ \"she molded herself alone.\" The dragons/beasts/destroyers list (1343-49) and the archon's counsel (1350-55) are partially restorable. The Father's reply (1379-1389) describing the gathering of demons and First Man's clothing in god-garments to teach the Lights is well-constrained by Coptic morphology. Sections 1356-1372 are too fragmentary to restore meaningfully — these were marked unrestorable. The closing (1390-1395) is largely lost. Editor restorations were accepted throughout when grammar and spiritual context confirmed them.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 1304,
+      "chapter": 23,
+      "line": 27,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲁⲓ",
+      "basis": "Demonstrative ⲛⲁⲓ 'these (things)' — 3 chars fits exactly; introduces 'these which exist from eternity' as the things the soul cannot account for on its own.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 1,
+      "section": 1305,
+      "chapter": 23,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄ⲙⲉ ⲭⲉ",
+      "basis": "Editor restoration confirmed; standard idiom ⲣⲱⲙⲉ ⲉⲧⲣⲉϥⲙ̄ⲙⲉ ⲭⲉ 'a man to know that.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ̄ⲱⲗⲡ",
+      "basis": "Editor restoration; ⲟⲩⲱⲗⲡ ⲁⲃⲁⲗ 'reveal' fits the context of speaking and bringing forth concerning origins.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap before isolated ⲣⲏ — too uncertain to restore; could be word-end of various nouns.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 4,
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, no constraints.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 5,
+      "section": 1307,
+      "chapter": 23,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩϣ",
+      "basis": "Editor restoration; ⲉⲩϣⲟⲟⲡ 'they exist' completes the parallel question structure.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 1307,
+      "chapter": 23,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩ",
+      "basis": "Editor restoration; ⲛⲧⲁϩ = relative perfect 3sg.m. 'when he...'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 1308,
+      "chapter": 23,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁϩ",
+      "basis": "Editor restoration; ⲧⲁϩⲕⲙ̄ⲧϥ̄ = 'seized him' — Hyle/the King of Darkness seizing the First Man.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 1308,
+      "chapter": 23,
+      "line": 31,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap at line-end with no constraints; could be subject-pronoun or article+noun start.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 9,
+      "section": 1309,
+      "chapter": 23,
+      "line": 32,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁϩⲉ",
+      "basis": "3-char perfect prefix before ⲉϩⲁⲉⲓ ('came down'); subject is First Man descending as king to the country of the Living Ones. Lyc. perfect ⲁϩ- + epenthetic vowel.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 10,
+      "section": 1310,
+      "chapter": 23,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ̄ ⲡⲱⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ ⲉ",
+      "basis": "Editor restoration; First Man as the standard cosmic opponent confronting Darkness in this section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 1310,
+      "chapter": 23,
+      "line": 33,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap with no clear constraint.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 12,
+      "section": 1311,
+      "chapter": 23,
+      "line": 34,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap ending in ϩ, but verb root unclear; possibly ⲁϥⲉⲓϩ or motion verb. Insufficient anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 13,
+      "section": 1313,
+      "chapter": 23,
+      "line": 36,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap with partial ϣ; could be ϣⲁ 'until' or beginning of various nouns.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 14,
+      "section": 1314,
+      "chapter": 23,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲛⲁⲟ̄ⲛⲉⲟ̄",
+      "basis": "Text physically present; ⲡⲛⲁⲟ̄ ('great') + ⲛⲉⲟ̄ paired with ⲡⲙⲓϣⲉ 'battle' = the great combat/contest of cosmogony.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 1315,
+      "chapter": 23,
+      "line": 39,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲧⲁⲩ",
+      "basis": "4-char relative-perfect plural prefix before ⲭⲁⲗⲭ 'mingled'; subject is the dark powers who mingled Light with Darkness.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 16,
+      "section": 1316,
+      "chapter": 23,
+      "line": 40,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲗⲱⲃϣ̄ ⲙⲛ̄ ⲡ",
+      "basis": "10-char parallel verbal expression to 'they mingled the Light with the Darkness'; ⲗⲱⲃϣ̄ 'mingle' (lexicon) plus connector ⲙⲛ̄ 'with'.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 17,
+      "section": 1317,
+      "chapter": 23,
+      "line": 41,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲧⲍⲩⲗⲏ ⲁⲥⲧⲁϩ",
+      "basis": "Subject + perfect verb continuing -ⲕⲙ̄ⲧϥ̄ 'seized him.' The narrative now turns to Hyle (ⲧⲍⲩⲗⲏ) seizing the substance of the Light, paralleling {7}. Approximate 10-char fit.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 18,
+      "section": 1318,
+      "chapter": 23,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲏⲥⲓⲥ",
+      "basis": "Editor restoration; completes ⲉⲛⲑⲩⲙⲏⲥⲓⲥ across the line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 1319,
+      "chapter": 23,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙ̄",
+      "basis": "Verb-subject combination; ⲡⲗⲁⲥⲥⲉ ('mold/form,' from lexicon) is the recurring verb of Hyle's activity (cf. ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙⲙⲁⲥ in {68}). She molded the whole land of Darkness.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 20,
+      "section": 1319,
+      "chapter": 23,
+      "line": 43,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap completing ⲧⲉⲥⲁ̄- 'her [X]'; too short to constrain choice between ⲧⲉⲥⲁⲡⲉ 'her head' or ⲧⲉⲥⲁⲏ 'her end' etc.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 21,
+      "section": 1320,
+      "chapter": 23,
+      "line": 44,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap with no anchoring traces; uncertain noun phrase concerning the Light in the Deep.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 22,
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap before ⲟⲩⲥⲓⲁ 'substance'; verb phrase uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration; ⲛⲍⲏⲧⲥ = 'in her' with 3sg.f. suffix.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "13-char gap, too long with no anchoring traces.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "11-char gap before ⲉⲡⲧⲉⲓⲇⲏ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 26,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲡⲧⲉⲓⲇⲏ",
+      "basis": "Editor restoration; Greek ἐπειδή 'since.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 29,
+      "section": 1323,
+      "chapter": 23,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap ending in ⲕ; word boundary uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 30,
+      "section": 1323,
+      "chapter": 23,
+      "line": 47,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap; the side of [X] with X uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 31,
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap ending in ⲉ; verb with -ⲙ̄ⲙⲁϩ suffix likely but stem uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 32,
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲡⲧⲉⲓⲇⲏ ⲡ",
+      "basis": "Editor restoration; Greek ἐπειδή + masc. article.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲉϩⲥⲱⲙⲁ",
+      "basis": "Editor restoration; ⲡⲉϩ- = Lyc. possessive 'his' + ⲥⲱⲙⲁ 'body.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap before ⲡⲁⲣⲁ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 35,
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲁⲣⲁ",
+      "basis": "Editor restoration; Greek παρά 'beside, beyond.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "10-char gap; the head noun of 'every... that exists' is lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 37,
+      "section": 1326,
+      "chapter": 23,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲙ̄ ⲡⲕⲟⲥⲙ",
+      "basis": "Editor restoration; ⲍⲙ̄ ⲡⲕⲟⲥⲙⲟⲥ 'in the cosmos.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 1326,
+      "chapter": 23,
+      "line": 50,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Zero-character gap (end of word ⲡⲕⲟⲥⲙⲟⲥ followed by paragraph break).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 39,
+      "section": 1327,
+      "chapter": 23,
+      "line": 51,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap ending in ⲛⲉ; word uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 40,
+      "section": 1327,
+      "chapter": 23,
+      "line": 51,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 41,
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap before ⲫⲑⲟⲛⲟⲥ 'envy'; subject/article unclear.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 42,
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char relative verb governing 'the land of darkness'; verb stem uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 43,
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲉⲕⲉ",
+      "basis": "Editor restoration; ⲡⲕⲁⲍ ⲙ̄ⲡⲕⲉⲕⲉ = 'the land of Darkness,' standard Manichaean term.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 44,
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap before ⲡⲙⲁⲕⲙⲉⲕ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 45,
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁⲕ",
+      "basis": "Editor restoration; ⲙⲁⲕⲙⲉⲕ 'reflection' (5th faculty).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 46,
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap ending in ⲉ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 47,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap; uncertain context.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 48,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 49,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 50,
+      "section": 1331,
+      "chapter": 23,
+      "line": 55,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12-char gap; sentence opener with 'Then' uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 51,
+      "section": 1331,
+      "chapter": 23,
+      "line": 55,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor restoration; ⲁⲃⲁⲗ 'forth' completed from initial ⲁ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 52,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor restoration; def. article ⲡ- before ⲕⲉⲕⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 53,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap; verb complement uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 54,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char head noun for 'a [X] his members'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 55,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 56,
+      "section": 1333,
+      "chapter": 23,
+      "line": 57,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap before ⲱⲁⲭⲉ 'word'; uncertain modifier.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 57,
+      "section": 1333,
+      "chapter": 23,
+      "line": 57,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "19-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 58,
+      "section": 1334,
+      "chapter": 23,
+      "line": 58,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "12-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 59,
+      "section": 1334,
+      "chapter": 23,
+      "line": 58,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 60,
+      "section": 1335,
+      "chapter": 23,
+      "line": 59,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap before ⲛⲍⲏⲧⲟⲩ 'in them'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 61,
+      "section": 1336,
+      "chapter": 23,
+      "line": 60,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "13-char gap before ⲛⲓⲙ 'every'; head noun uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 62,
+      "section": 1336,
+      "chapter": 23,
+      "line": 60,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ ⲁⲥ",
+      "basis": "Editor restoration; ⲥⲁⲣⲥ̄ ⲁⲃⲁⲗ = 'spread forth,' followed by ⲁⲥⲭⲡⲁⲥ 'she begot her.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 63,
+      "section": 1337,
+      "chapter": 23,
+      "line": 61,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "16-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 64,
+      "section": 1337,
+      "chapter": 23,
+      "line": 61,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲁⲩ ⲛⲉ",
+      "basis": "Editor restoration; ⲉⲧⲉ ⲛⲧⲁⲩ ⲛⲉ = 'which are.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 65,
+      "section": 1338,
+      "chapter": 23,
+      "line": 62,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap at end of list of five elements; punctuation or sentence connector.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 66,
+      "section": 1339,
+      "chapter": 23,
+      "line": 63,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲥⲡⲗⲁⲥⲥⲉ",
+      "basis": "8-char verb 'she molded' (lexicon: ⲡⲗⲁⲥⲥⲉ form/build/mold); fits the recurring formula of Hyle's self-fashioning. Subject continues 'the growth of trees.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 67,
+      "section": 1339,
+      "chapter": 23,
+      "line": 63,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, punctuation only.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 68,
+      "section": 1340,
+      "chapter": 23,
+      "line": 64,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char clause-opener before ⲁⲥⲡⲗⲁⲥⲥⲉ 'she molded'; uncertain (Ⲧⲟⲧⲉ, Ⲁⲩⲱ + particle?).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 69,
+      "section": 1340,
+      "chapter": 23,
+      "line": 64,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲟⲩⲛ",
+      "basis": "4-char noun for 'in the [X]' where she molds herself alone. ⲡⲛⲟⲩⲛ 'the Deep/Abyss' (lexicon: lowest state of natural mind, where self-love roots) fits Hyle's self-creation; cf. ⲡⲧⲉⲥⲛⲟⲩⲛ 'her Deep' in {1343}.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 70,
+      "section": 1341,
+      "chapter": 23,
+      "line": 65,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char clause-opener; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 71,
+      "section": 1341,
+      "chapter": 23,
+      "line": 65,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛ̄ ⲍⲛ̄",
+      "basis": "Editor restoration; ⲍⲛ̄ 'in,' likely beginning of 'in many emanations.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 72,
+      "section": 1342,
+      "chapter": 23,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲣⲟⲃⲟ",
+      "basis": "Editor restoration; ⲡⲣⲟⲃⲟⲗⲁⲩⲉ = plural of προβολή 'emanation.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 73,
+      "section": 1342,
+      "chapter": 23,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲉ",
+      "basis": "Editor restoration; ⲉⲩⲉⲓⲛⲉ ⲉⲛ = 'not in the likeness.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 74,
+      "section": 1342,
+      "chapter": 23,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ ⲍⲛ̄",
+      "basis": "Editor restoration; standard Lyc. expression for source/origin.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 75,
+      "section": 1343,
+      "chapter": 23,
+      "line": 67,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲣⲁⲙⲧ",
+      "basis": "Editor restoration; ⲕⲣⲙⲣⲁⲙⲧ = 'dark, dusky,' qualifying the many creatures of Hyle's Deep.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 76,
+      "section": 1344,
+      "chapter": 23,
+      "line": 68,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲱ ⲍⲛ̄",
+      "basis": "6-char list-connector before 'destroyers and dragons and beasts.' ⲁⲩⲱ ⲍⲛ̄ 'and (some)' fits indefinite plural construction.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 77,
+      "section": 1344,
+      "chapter": 23,
+      "line": 68,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ ⲍⲛⲑⲏⲣⲓⲱⲛ",
+      "basis": "Editor restoration; θηρίον 'beast,' standard pairing with dragons.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 78,
+      "section": 1345,
+      "chapter": 23,
+      "line": 69,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Zero-char placeholder (continues from previous line).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 79,
+      "section": 1345,
+      "chapter": 23,
+      "line": 69,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap at line-end after string of verbs ('she stood, she fell, she gave way'); uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 80,
+      "section": 1346,
+      "chapter": 23,
+      "line": 70,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲩ",
+      "basis": "2-char circumstantial prefix 'being'; ⲉⲩ ⲍⲛ̄ ⲙ̄ⲙⲟⲣⲫⲁⲩⲉ ⲉⲧⲃⲁⲓⲧ = 'being in foul forms.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 81,
+      "section": 1346,
+      "chapter": 23,
+      "line": 70,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap, punctuation.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 82,
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap; ⲁⲣⲁⲙⲧ obscure.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 83,
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char verb form, uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 84,
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor restoration; ⲙⲛ̄ 'and.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 85,
+      "section": 1348,
+      "chapter": 23,
+      "line": 72,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲛⲛⲉⲩⲉⲣⲏⲩ",
+      "basis": "9-char gap completing 'they kill [one another]' — ⲛⲛⲉⲩⲉⲣⲏⲩ exactly matches and is parallel to the next line ('one against another'). Fits the abortions-killing-each-other motif.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 86,
+      "section": 1350,
+      "chapter": 23,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲑⲃⲟ",
+      "basis": "Editor restoration; ⲑⲃⲃⲓⲟ 'humble, abase' with prefix ⲁϩ-/ⲁ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 87,
+      "section": 1350,
+      "chapter": 23,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲧⲉ",
+      "basis": "Editor restoration; ⲡⲧⲉϩⲕⲟⲥⲙⲟⲥ = 'this cosmos.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 88,
+      "section": 1350,
+      "chapter": 23,
+      "line": 74,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor restoration; ⲙⲛ̄ 'and.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 89,
+      "section": 1351,
+      "chapter": 23,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁϩⲣ̄",
+      "basis": "Editor restoration; ⲣ̄-ⲁⲓⲥⲑⲁⲛⲉ 'to perceive.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 90,
+      "section": 1351,
+      "chapter": 23,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁⲓⲛⲉ",
+      "basis": "Editor restoration; ⲡⲟⲩⲁⲓⲛⲉ 'the Light,' which the archons perceive and seek to claim.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 91,
+      "section": 1352,
+      "chapter": 23,
+      "line": 76,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char fragment ⲛⲁϩ; insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 92,
+      "section": 1353,
+      "chapter": 23,
+      "line": 77,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩⲃⲉ",
+      "basis": "4-char preposition 'against' fits 'they ventured to make war [against] the lofty kingship' continuing into next section.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 93,
+      "section": 1354,
+      "chapter": 23,
+      "line": 78,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap with fragmentary traces ⲡ.ⲭ.; could reference Father of Greatness or great king but uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 94,
+      "section": 1355,
+      "chapter": 23,
+      "line": 79,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲃ",
+      "basis": "Editor restoration; ⲡⲓⲱⲧ ⲛⲧⲉ ⲧⲙⲛ̄ⲧⲛⲁⲃ̄ = standard 'Father of Greatness' (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 95,
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap, fragmentary line.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 96,
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 97,
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char fragment, insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 98,
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 99,
+      "section": 1357,
+      "chapter": 23,
+      "line": 81,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char verbal phrase, uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 100,
+      "section": 1357,
+      "chapter": 23,
+      "line": 81,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char fragment ϩ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 101,
+      "section": 1357,
+      "chapter": 23,
+      "line": 81,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟ",
+      "basis": "Editor restoration; ⲡⲟ joined with ⲗⲉⲙⲟⲥ at start of next line = ⲡⲟⲗⲉⲙⲟⲥ 'war.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 102,
+      "section": 1358,
+      "chapter": 23,
+      "line": 82,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲱⲣⲁ ⲙⲡ",
+      "basis": "Editor restoration; standard 'region of the Light' (ⲭⲱⲣⲁ ⲛ̄ⲡⲟⲩⲁⲓⲛⲉ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 103,
+      "section": 1358,
+      "chapter": 23,
+      "line": 82,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap at line-end; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 104,
+      "section": 1359,
+      "chapter": 23,
+      "line": 83,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap; possibly 'wisdom of the Greatness/Father of Greatness' but specifics lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 105,
+      "section": 1360,
+      "chapter": 23,
+      "line": 84,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap at line-end after 'against her'; uncertain continuation.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 106,
+      "section": 1360,
+      "chapter": 23,
+      "line": 84,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Zero-char gap (commentary on existing verb ⲁϩⲩⲃⲧ̄ϩ of uncertain root).",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 107,
+      "section": 1361,
+      "chapter": 23,
+      "line": 85,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 108,
+      "section": 1362,
+      "chapter": 23,
+      "line": 86,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥ",
+      "basis": "Editor restoration; ⲡⲥⲏⲩ 'the time' fits with ⲙⲉⲛ ⲉⲧⲙ̄ⲙⲉⲩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 109,
+      "section": 1362,
+      "chapter": 23,
+      "line": 86,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "22-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 110,
+      "section": 1363,
+      "chapter": 23,
+      "line": 87,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap before ⲙⲁ 'place'; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 111,
+      "section": 1363,
+      "chapter": 23,
+      "line": 87,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "21-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 112,
+      "section": 1364,
+      "chapter": 23,
+      "line": 88,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "9-char gap, fragmentary.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 113,
+      "section": 1364,
+      "chapter": 23,
+      "line": 88,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 114,
+      "section": 1365,
+      "chapter": 23,
+      "line": 89,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "28-char gap, completely lost line.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 115,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap before ⲛⲟⲩⲧⲉ 'god'; uncertain modifier.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 116,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "7-char gap at line-end.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 117,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char fragment ⲯⲉ; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 118,
+      "section": 1367,
+      "chapter": 23,
+      "line": 91,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "18-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 119,
+      "section": 1367,
+      "chapter": 23,
+      "line": 91,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap, no anchors.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 120,
+      "section": 1368,
+      "chapter": 23,
+      "line": 92,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 121,
+      "section": 1369,
+      "chapter": 23,
+      "line": 93,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲃ̄",
+      "basis": "Editor restoration; ⲡⲛⲁⲃ̄ 'the great' with head-noun lost (likely 'the great war' or 'the great deep').",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 122,
+      "section": 1370,
+      "chapter": 23,
+      "line": 94,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "5-char gap with partial ⲛ̄ⲩ; uncertain corrupted spelling.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 123,
+      "section": 1370,
+      "chapter": 23,
+      "line": 94,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap at line-end; uncertain verb.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 124,
+      "section": 1371,
+      "chapter": 23,
+      "line": 95,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲣⲡⲟⲗⲉⲙⲉ",
+      "basis": "7-char gap ending in -ⲙⲉ before ⲟⲩⲃⲏⲥ 'against her'; ⲣⲡⲟⲗⲉⲙⲉ 'make war' (Greek loanword) fits exactly. Parallel to ⲁⲣ̄ ⲟⲩⲡⲟⲗⲉⲙⲟⲥ at {1353}.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 125,
+      "section": 1373,
+      "chapter": 23,
+      "line": 97,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap ending ⲯⲉ; uncertain word.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 126,
+      "section": 1374,
+      "chapter": 23,
+      "line": 98,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲡ",
+      "basis": "Editor restoration; ⲡⲩⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man' (lexicon).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 127,
+      "section": 1377,
+      "chapter": 23,
+      "line": 101,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char verb-start fragment ⲁⲩ; insufficient.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 128,
+      "section": 1378,
+      "chapter": 23,
+      "line": 102,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲩⲭⲓ ",
+      "basis": "Editor restoration; ϫⲓ-ⲃⲁⲙ 'take power' is standard construction.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 129,
+      "section": 1378,
+      "chapter": 23,
+      "line": 102,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap at line-end; uncertain continuation.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 130,
+      "section": 1379,
+      "chapter": 23,
+      "line": 103,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Editor restoration; ⲧⲕⲁⲕⲓⲁ 'the evil' (Greek κακία) requires fem. article.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 131,
+      "section": 1379,
+      "chapter": 23,
+      "line": 103,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char gap at line-end; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 132,
+      "section": 1380,
+      "chapter": 23,
+      "line": 104,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "1-char gap before ⲍⲙ̄ ⲡⲁⲣⲭⲱⲛ; uncertain particle/article.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 133,
+      "section": 1380,
+      "chapter": 23,
+      "line": 104,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓⲟ",
+      "basis": "Editor restoration; completes verb ⲫⲃⲓⲟ 'abase, humble.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 134,
+      "section": 1381,
+      "chapter": 23,
+      "line": 105,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲁ",
+      "basis": "Editor restoration; ⲁϩⲟⲩⲛ ⲁⲣⲁϩ 'in unto him' with 3sg.m. suffix.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 135,
+      "section": 1382,
+      "chapter": 23,
+      "line": 106,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char infinitive phrase opening; uncertain stem.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 136,
+      "section": 1382,
+      "chapter": 23,
+      "line": 106,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Editor restoration; ⲁⲣⲉⲧϩ ⲁ + obj continues to 'stand fast for the war.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 137,
+      "section": 1383,
+      "chapter": 23,
+      "line": 107,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor restoration; standard ⲡⲡⲟⲗⲉⲙⲟⲥ 'the war.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 138,
+      "section": 1386,
+      "chapter": 23,
+      "line": 110,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲡⲡ",
+      "basis": "Editor restoration; ⲉⲡⲡⲣ̄ⲓⲱⲩ = 'unto the Lights' — the divine Light-emanations First Man addresses.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 139,
+      "section": 1386,
+      "chapter": 23,
+      "line": 110,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "4-char gap completing ⲟⲩⲡⲁⲣ-; could be ⲟⲩⲡⲁⲣⲁⲅⲅⲉⲗⲓⲁ 'command' or ⲟⲩⲡⲁⲣⲁⲇⲟⲥⲓⲥ 'tradition' but undetermined.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 140,
+      "section": 1386,
+      "chapter": 23,
+      "line": 110,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉϩⲁ⳨",
+      "basis": "Editor restoration confirming text physically present; adverb of motion.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 141,
+      "section": 1387,
+      "chapter": 23,
+      "line": 111,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲁⲩⲱ",
+      "basis": "3-char connector 'and' linking the parallel infinitives ('to teach... to reveal...'). Standard list-connector before ⲁϩⲟⲩⲱⲛϩ 'to be revealed.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 142,
+      "section": 1387,
+      "chapter": 23,
+      "line": 111,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Zero-char marker; relative ⲉⲧ continues into next line lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 143,
+      "section": 1388,
+      "chapter": 23,
+      "line": 112,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "8-char verb-form fragment ending in ϩ̄; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 144,
+      "section": 1388,
+      "chapter": 23,
+      "line": 112,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩⲁⲣⲃⲟⲩ",
+      "basis": "Editor commentary on existing text; verb of uncertain root paired with 'wear them' and 'cast them upon each other' — likely 'subject/press down them.'",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 145,
+      "section": 1389,
+      "chapter": 23,
+      "line": 113,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char clause-opener; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 146,
+      "section": 1389,
+      "chapter": 23,
+      "line": 113,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲗⲟⲥ",
+      "basis": "Editor restoration; ⲛⲉϩⲙⲉⲗⲟⲥ 'their members' (Greek μέλος).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 147,
+      "section": 1390,
+      "chapter": 23,
+      "line": 114,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "30-char gap, completely lost line.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 148,
+      "section": 1391,
+      "chapter": 23,
+      "line": 115,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "23-char gap, completely lost line.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 149,
+      "section": 1392,
+      "chapter": 23,
+      "line": 116,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "19-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 150,
+      "section": 1392,
+      "chapter": 23,
+      "line": 116,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲓⲛⲇⲩⲛⲟⲥ",
+      "basis": "Editor restoration; Greek κίνδυνος 'dangers,' surviving traces match.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 151,
+      "section": 1393,
+      "chapter": 23,
+      "line": 117,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "20-char gap, too long.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 152,
+      "section": 1393,
+      "chapter": 23,
+      "line": 117,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap at line-end; uncertain.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 153,
+      "section": 1394,
+      "chapter": 23,
+      "line": 118,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "19-char gap, too long; subject of 'his powers' lost.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 154,
+      "section": 1395,
+      "chapter": 23,
+      "line": 119,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "19-char gap with partial ⲍⲟⲩⲧⲉ; uncertain.",
+      "confidence": "unrestorable"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 1304,
+      "chapter": 23,
+      "line": 27,
+      "core_english": "{0} which exist from eternity — and there is no power in any man that he might"
+    },
+    {
+      "section": 1305,
+      "chapter": 23,
+      "line": 28,
+      "core_english": "{1} how they exist, since there is no other power"
+    },
+    {
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "core_english": "{2} them, that it might speak and bring forth concerning their {3}"
+    },
+    {
+      "section": 1307,
+      "chapter": 23,
+      "line": 30,
+      "core_english": "{4} in what way. But from the time when {5} came"
+    },
+    {
+      "section": 1308,
+      "chapter": 23,
+      "line": 31,
+      "core_english": "{6} him, and conveyed him upward against the Light, {7}"
+    },
+    {
+      "section": 1309,
+      "chapter": 23,
+      "line": 32,
+      "core_english": "{8} descended as king to the country of the Living Ones."
+    },
+    {
+      "section": 1310,
+      "chapter": 23,
+      "line": 33,
+      "core_english": "{9} forth against him to hinder him, {10}"
+    },
+    {
+      "section": 1311,
+      "chapter": 23,
+      "line": 34,
+      "core_english": "{11} near him, out of the house of the Living Ones, to hinder"
+    },
+    {
+      "section": 1313,
+      "chapter": 23,
+      "line": 36,
+      "core_english": "the Darkness, life with death. There is {12} in the midst — there is power"
+    },
+    {
+      "section": 1314,
+      "chapter": 23,
+      "line": 38,
+      "core_english": "for them to be revealed, in what way the {13} and the battle came"
+    },
+    {
+      "section": 1315,
+      "chapter": 23,
+      "line": 39,
+      "core_english": "to be in what way; {14} mingled the Light in the Darkness — that which they"
+    },
+    {
+      "section": 1316,
+      "chapter": 23,
+      "line": 40,
+      "core_english": "{15} life in death."
+    },
+    {
+      "section": 1317,
+      "chapter": 23,
+      "line": 41,
+      "core_english": "{16} him in his substance. His enthumesis"
+    },
+    {
+      "section": 1318,
+      "chapter": 23,
+      "line": 42,
+      "core_english": "in her own land alone, she..."
+    },
+    {
+      "section": 1319,
+      "chapter": 23,
+      "line": 43,
+      "core_english": "{17} the whole land of Darkness in her {18}"
+    },
+    {
+      "section": 1320,
+      "chapter": 23,
+      "line": 44,
+      "core_english": "{19} of the Light in the Deep. For"
+    },
+    {
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "core_english": "{20} substance in her {21}"
+    },
+    {
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "core_english": "{22} since a {23} they reckoned {24}"
+    },
+    {
+      "section": 1323,
+      "chapter": 23,
+      "line": 47,
+      "core_english": "{25} in his side of {26} the first nature"
+    },
+    {
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "core_english": "{27} indeed, since {28} body is established"
+    },
+    {
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "core_english": "{29} beyond the contriver, {30} every... that exists"
+    },
+    {
+      "section": 1326,
+      "chapter": 23,
+      "line": 50,
+      "core_english": "in the cosmos."
+    },
+    {
+      "section": 1327,
+      "chapter": 23,
+      "line": 51,
+      "core_english": "{31} of immortality {32}"
+    },
+    {
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "core_english": "{33} envy which {34} the land of Darkness"
+    },
+    {
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "core_english": "{35} reflection in {36} the wickedness"
+    },
+    {
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "core_english": "{37} that she... {38} ... {39} against this land"
+    },
+    {
+      "section": 1331,
+      "chapter": 23,
+      "line": 55,
+      "core_english": "{40} Then in agreement, {41} forth from the land"
+    },
+    {
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "core_english": "of the Darkness she drew {42} carrying a {43} his members {44}"
+    },
+    {
+      "section": 1333,
+      "chapter": 23,
+      "line": 57,
+      "core_english": "{45} word {46}"
+    },
+    {
+      "section": 1334,
+      "chapter": 23,
+      "line": 58,
+      "core_english": "{47} they were {48}"
+    },
+    {
+      "section": 1335,
+      "chapter": 23,
+      "line": 59,
+      "core_english": "{49} in them"
+    },
+    {
+      "section": 1336,
+      "chapter": 23,
+      "line": 60,
+      "core_english": "{50} every; she spread {51} she begot her"
+    },
+    {
+      "section": 1337,
+      "chapter": 23,
+      "line": 61,
+      "core_english": "{52} which {53} the"
+    },
+    {
+      "section": 1338,
+      "chapter": 23,
+      "line": 62,
+      "core_english": "smoke, fire, wind, water, and the Darkness {54}"
+    },
+    {
+      "section": 1339,
+      "chapter": 23,
+      "line": 63,
+      "core_english": "{55} the growth of trees; she came up {56}"
+    },
+    {
+      "section": 1340,
+      "chapter": 23,
+      "line": 64,
+      "core_english": "{57} she molded herself alone in the {58}"
+    },
+    {
+      "section": 1341,
+      "chapter": 23,
+      "line": 65,
+      "core_english": "{59} she begot herself alone in her begetting, in"
+    },
+    {
+      "section": 1342,
+      "chapter": 23,
+      "line": 66,
+      "core_english": "many emanations, not in the likeness of one another, out from"
+    },
+    {
+      "section": 1343,
+      "chapter": 23,
+      "line": 67,
+      "core_english": "the storehouses of her Deep — many creatures being {60}"
+    },
+    {
+      "section": 1344,
+      "chapter": 23,
+      "line": 68,
+      "core_english": "{61} destroyers, and dragons, and beasts"
+    },
+    {
+      "section": 1345,
+      "chapter": 23,
+      "line": 69,
+      "core_english": "being evil — she stood up, she fell, she gave way {62}"
+    },
+    {
+      "section": 1346,
+      "chapter": 23,
+      "line": 70,
+      "core_english": "{63} in foul forms of those there in the darkness {64}"
+    },
+    {
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "core_english": "{65} and in the one that {66} in their evil and"
+    },
+    {
+      "section": 1348,
+      "chapter": 23,
+      "line": 72,
+      "core_english": "their hatred, in that they kill {67}"
+    },
+    {
+      "section": 1350,
+      "chapter": 23,
+      "line": 74,
+      "core_english": "Then the counsel of their archon {68} this cosmos and"
+    },
+    {
+      "section": 1351,
+      "chapter": 23,
+      "line": 75,
+      "core_english": "his powers to perceive the substance of the {69}"
+    },
+    {
+      "section": 1352,
+      "chapter": 23,
+      "line": 76,
+      "core_english": "{70}"
+    },
+    {
+      "section": 1353,
+      "chapter": 23,
+      "line": 77,
+      "core_english": "they ventured to make war {71}"
+    },
+    {
+      "section": 1354,
+      "chapter": 23,
+      "line": 78,
+      "core_english": "with the lofty kingship and the {72}"
+    },
+    {
+      "section": 1355,
+      "chapter": 23,
+      "line": 79,
+      "core_english": "But he himself, the Father of {73}"
+    },
+    {
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "core_english": "{74}"
+    },
+    {
+      "section": 1357,
+      "chapter": 23,
+      "line": 81,
+      "core_english": "truly, as they {75} is, indeed, that the war"
+    },
+    {
+      "section": 1358,
+      "chapter": 23,
+      "line": 82,
+      "core_english": "they disturbed the region of the Light {76}"
+    },
+    {
+      "section": 1359,
+      "chapter": 23,
+      "line": 83,
+      "core_english": "in the wisdom of the {77}"
+    },
+    {
+      "section": 1360,
+      "chapter": 23,
+      "line": 84,
+      "core_english": "they {78} her, against her, {79}"
+    },
+    {
+      "section": 1361,
+      "chapter": 23,
+      "line": 85,
+      "core_english": "{80} against her"
+    },
+    {
+      "section": 1362,
+      "chapter": 23,
+      "line": 86,
+      "core_english": "the time, then, {81}"
+    },
+    {
+      "section": 1363,
+      "chapter": 23,
+      "line": 87,
+      "core_english": "{82} place {83}"
+    },
+    {
+      "section": 1364,
+      "chapter": 23,
+      "line": 88,
+      "core_english": "{84}"
+    },
+    {
+      "section": 1365,
+      "chapter": 23,
+      "line": 89,
+      "core_english": "{85}"
+    },
+    {
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "core_english": "{86} against {87} god {88}"
+    },
+    {
+      "section": 1367,
+      "chapter": 23,
+      "line": 91,
+      "core_english": "{89} forth from her {90}"
+    },
+    {
+      "section": 1368,
+      "chapter": 23,
+      "line": 92,
+      "core_english": "without her, forth {91} in the elements, in the smoke,"
+    },
+    {
+      "section": 1369,
+      "chapter": 23,
+      "line": 93,
+      "core_english": "fire, wind, water and the Darkness — she came up in the great {92}"
+    },
+    {
+      "section": 1370,
+      "chapter": 23,
+      "line": 94,
+      "core_english": "{93} standing fast in the trees, they {94}"
+    },
+    {
+      "section": 1371,
+      "chapter": 23,
+      "line": 95,
+      "core_english": "{95} against her"
+    },
+    {
+      "section": 1373,
+      "chapter": 23,
+      "line": 97,
+      "core_english": "{96} she molded the fruits while still standing fast in"
+    },
+    {
+      "section": 1374,
+      "chapter": 23,
+      "line": 98,
+      "core_english": "them; they were summoned in the manner of garments of the sons of the First"
+    },
+    {
+      "section": 1377,
+      "chapter": 23,
+      "line": 101,
+      "core_english": "out — the fruits in her offspring — they fell upon the earth, they {97}"
+    },
+    {
+      "section": 1378,
+      "chapter": 23,
+      "line": 102,
+      "core_english": "took power from the elements; they were nourished within them, {98}"
+    },
+    {
+      "section": 1379,
+      "chapter": 23,
+      "line": 103,
+      "core_english": "the evil, and with concupiscence {99}"
+    },
+    {
+      "section": 1380,
+      "chapter": 23,
+      "line": 104,
+      "core_english": "{100} in the archon, the wellspring of all the demons, to abase"
+    },
+    {
+      "section": 1381,
+      "chapter": 23,
+      "line": 105,
+      "core_english": "his worlds and his powers, to gather them all in unto him,"
+    },
+    {
+      "section": 1382,
+      "chapter": 23,
+      "line": 106,
+      "core_english": "{101}, to stand ready for the strife, to stand fast for"
+    },
+    {
+      "section": 1383,
+      "chapter": 23,
+      "line": 107,
+      "core_english": "the war with that Land of Light, and the great"
+    },
+    {
+      "section": 1386,
+      "chapter": 23,
+      "line": 110,
+      "core_english": "unto the Lights, to speak with them, that there be given into their hands a {102}"
+    },
+    {
+      "section": 1387,
+      "chapter": 23,
+      "line": 111,
+      "core_english": "{103} to be revealed forth to them, to teach them every work which {104}"
+    },
+    {
+      "section": 1388,
+      "chapter": 23,
+      "line": 112,
+      "core_english": "{105} unto them, to wear them, to subject them"
+    },
+    {
+      "section": 1389,
+      "chapter": 23,
+      "line": 113,
+      "core_english": "{106} to cast them one upon another, upon their members"
+    },
+    {
+      "section": 1390,
+      "chapter": 23,
+      "line": 114,
+      "core_english": "{107}"
+    },
+    {
+      "section": 1391,
+      "chapter": 23,
+      "line": 115,
+      "core_english": "{108}"
+    },
+    {
+      "section": 1392,
+      "chapter": 23,
+      "line": 116,
+      "core_english": "{109} dangers upon us"
+    },
+    {
+      "section": 1393,
+      "chapter": 23,
+      "line": 117,
+      "core_english": "{110} the height of the earth {111}"
+    },
+    {
+      "section": 1394,
+      "chapter": 23,
+      "line": 118,
+      "core_english": "{112} and all his powers"
+    },
+    {
+      "section": 1395,
+      "chapter": 23,
+      "line": 119,
+      "core_english": "{113} there being no measure to her"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 1304,
+      "chapter": 23,
+      "line": 27,
+      "proposed_english": "the things",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲁⲓ 'these (things)' as the conditions of the soul that seem to have always been there."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 1305,
+      "chapter": 23,
+      "line": 28,
+      "proposed_english": "to know that",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲙ̄ⲙⲉ ⲭⲉ standard idiom."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "proposed_english": "reveal",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲟ̄ⲱⲗⲡ; the Lord's making truth seen (lexicon)."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 1306,
+      "chapter": 23,
+      "line": 29,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        3,
+        4
+      ],
+      "confidence": "unrestorable",
+      "basis": "The trailing noun phrase is lost; ⲣⲏ alone gives no constraint."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 1307,
+      "chapter": 23,
+      "line": 30,
+      "proposed_english": "they exist",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲉⲩϣⲟⲟⲡ."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 1307,
+      "chapter": 23,
+      "line": 30,
+      "proposed_english": "he",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "Editor's ϩ = relative perfect 3sg.m."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 1308,
+      "chapter": 23,
+      "line": 31,
+      "proposed_english": "he seized",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲧⲁϩ; the King of Darkness/Hyle seizing the First Man."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 1308,
+      "chapter": 23,
+      "line": 31,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end fragment lost."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 1309,
+      "chapter": 23,
+      "line": 32,
+      "proposed_english": "he",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "low",
+      "basis": "Perfect prefix subject; First Man descending."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 1310,
+      "chapter": 23,
+      "line": 33,
+      "proposed_english": "the First Man came",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "Editor's full restoration."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 1310,
+      "chapter": 23,
+      "line": 33,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char fragment unanchored."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 1311,
+      "chapter": 23,
+      "line": 34,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb with partial ϩ but root unclear."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 1313,
+      "chapter": 23,
+      "line": 36,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "unrestorable",
+      "basis": "Particle/word fragment ϣ ambiguous."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 1314,
+      "chapter": 23,
+      "line": 38,
+      "proposed_english": "great combat",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲛⲁⲟ̄ⲛⲉⲟ̄ paired with ⲡⲙⲓϣⲉ 'battle.'"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 1315,
+      "chapter": 23,
+      "line": 39,
+      "proposed_english": "they",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲧⲁⲩ relative perfect plural — the dark powers as agents."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 1316,
+      "chapter": 23,
+      "line": 40,
+      "proposed_english": "they mingled",
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "low",
+      "basis": "Parallel verbal phrase to 'they mingled the Light with the Darkness.'"
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 1317,
+      "chapter": 23,
+      "line": 41,
+      "proposed_english": "Hyle seized",
+      "coptic_gap_refs": [
+        17
+      ],
+      "confidence": "low",
+      "basis": "Subject + perfect verb of seizing parallel to {7}; Hyle as Enthumesis is the central agent of this teaching."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 1319,
+      "chapter": 23,
+      "line": 43,
+      "proposed_english": "she molded",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲗⲁⲥⲥⲉ recurs as the verb of Hyle's self-fashioning (cf. ⲁⲥⲡⲗⲁⲥⲥⲉ ⲙⲙⲁⲥ in {1340})."
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 1319,
+      "chapter": 23,
+      "line": 43,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "unrestorable",
+      "basis": "1-char gap completing ⲧⲉⲥⲁ̄- but specific noun unclear."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 1320,
+      "chapter": 23,
+      "line": 44,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        21
+      ],
+      "confidence": "unrestorable",
+      "basis": "10-char phrase concerning the Light in the Deep, lost."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb-phrase preceding 'substance' is lost."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 1321,
+      "chapter": 23,
+      "line": 45,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "13-char gap with no anchors."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opening of section lost."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "unrestorable",
+      "basis": "Indefinite noun lost."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 1322,
+      "chapter": 23,
+      "line": 46,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-char fragment."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 1323,
+      "chapter": 23,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "9-char word ending in ⲕ unidentified."
+    },
+    {
+      "eng_gap_id": 26,
+      "section": 1323,
+      "chapter": 23,
+      "line": 47,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of 'side of' lost."
+    },
+    {
+      "eng_gap_id": 27,
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        31
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb fragment with -ⲙ̄ⲙⲁϩ suffix only partially constrained."
+    },
+    {
+      "eng_gap_id": 28,
+      "section": 1324,
+      "chapter": 23,
+      "line": 48,
+      "proposed_english": "his",
+      "coptic_gap_refs": [
+        32,
+        33
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲉⲡⲧⲉⲓⲇⲏ ⲡ + ⲡⲉϩⲥⲱⲙⲁ; 'since his body is established.'"
+    },
+    {
+      "eng_gap_id": 29,
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        34
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opening particle lost."
+    },
+    {
+      "eng_gap_id": 30,
+      "section": 1325,
+      "chapter": 23,
+      "line": 49,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        36
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of ⲡⲁⲗⲁⲙⲁⲥ lost."
+    },
+    {
+      "eng_gap_id": 31,
+      "section": 1327,
+      "chapter": 23,
+      "line": 51,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        39
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word ending in ⲛⲉ before 'of immortality' uncertain."
+    },
+    {
+      "eng_gap_id": 32,
+      "section": 1327,
+      "chapter": 23,
+      "line": 51,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        40
+      ],
+      "confidence": "unrestorable",
+      "basis": "2-char gap at line-end."
+    },
+    {
+      "eng_gap_id": 33,
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        41
+      ],
+      "confidence": "unrestorable",
+      "basis": "Article/modifier of 'envy' lost."
+    },
+    {
+      "eng_gap_id": 34,
+      "section": 1328,
+      "chapter": 23,
+      "line": 52,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        42
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb governing 'land of Darkness' lost."
+    },
+    {
+      "eng_gap_id": 35,
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        44,
+        45
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of reflection lost; only the bare ⲙⲁⲕⲙⲉⲕ stem confirmed."
+    },
+    {
+      "eng_gap_id": 36,
+      "section": 1329,
+      "chapter": 23,
+      "line": 53,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        46
+      ],
+      "confidence": "unrestorable",
+      "basis": "Modifier of 'wickedness' lost."
+    },
+    {
+      "eng_gap_id": 37,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        47
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opening lost."
+    },
+    {
+      "eng_gap_id": 38,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        48
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb fragment lost."
+    },
+    {
+      "eng_gap_id": 39,
+      "section": 1330,
+      "chapter": 23,
+      "line": 54,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        49
+      ],
+      "confidence": "unrestorable",
+      "basis": "Continuation lost."
+    },
+    {
+      "eng_gap_id": 40,
+      "section": 1331,
+      "chapter": 23,
+      "line": 55,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        50
+      ],
+      "confidence": "unrestorable",
+      "basis": "12-char opener lost."
+    },
+    {
+      "eng_gap_id": 41,
+      "section": 1331,
+      "chapter": 23,
+      "line": 55,
+      "proposed_english": "out",
+      "coptic_gap_refs": [
+        51
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲁⲃⲁⲗ 'forth/out.'"
+    },
+    {
+      "eng_gap_id": 42,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        52,
+        53
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of 'she drew' uncertain (only article ⲡ confirmed for the preceding 'darkness')."
+    },
+    {
+      "eng_gap_id": 43,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        54
+      ],
+      "confidence": "unrestorable",
+      "basis": "Head noun of 'a [X], his members' uncertain."
+    },
+    {
+      "eng_gap_id": 44,
+      "section": 1332,
+      "chapter": 23,
+      "line": 56,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        55
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end fragment lost."
+    },
+    {
+      "eng_gap_id": 45,
+      "section": 1333,
+      "chapter": 23,
+      "line": 57,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        56
+      ],
+      "confidence": "unrestorable",
+      "basis": "Modifier of 'word' lost."
+    },
+    {
+      "eng_gap_id": 46,
+      "section": 1333,
+      "chapter": 23,
+      "line": 57,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        57
+      ],
+      "confidence": "unrestorable",
+      "basis": "19-char gap, too long."
+    },
+    {
+      "eng_gap_id": 47,
+      "section": 1334,
+      "chapter": 23,
+      "line": 58,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        58
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opening lost."
+    },
+    {
+      "eng_gap_id": 48,
+      "section": 1334,
+      "chapter": 23,
+      "line": 58,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        59
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing 18-char gap lost."
+    },
+    {
+      "eng_gap_id": 49,
+      "section": 1335,
+      "chapter": 23,
+      "line": 59,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        60
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject preceding 'in them' lost."
+    },
+    {
+      "eng_gap_id": 50,
+      "section": 1336,
+      "chapter": 23,
+      "line": 60,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        61
+      ],
+      "confidence": "unrestorable",
+      "basis": "Head noun of 'every' lost."
+    },
+    {
+      "eng_gap_id": 51,
+      "section": 1336,
+      "chapter": 23,
+      "line": 60,
+      "proposed_english": "forth, then",
+      "coptic_gap_refs": [
+        62
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲁⲃⲁⲗ ⲁⲥ continues 'spread forth, she begot.'"
+    },
+    {
+      "eng_gap_id": 52,
+      "section": 1337,
+      "chapter": 23,
+      "line": 61,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        63
+      ],
+      "confidence": "unrestorable",
+      "basis": "16-char antecedent lost."
+    },
+    {
+      "eng_gap_id": 53,
+      "section": 1337,
+      "chapter": 23,
+      "line": 61,
+      "proposed_english": "are",
+      "coptic_gap_refs": [
+        64
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲛⲧⲁⲩ ⲛⲉ = 'which are.'"
+    },
+    {
+      "eng_gap_id": 54,
+      "section": 1338,
+      "chapter": 23,
+      "line": 62,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        65
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-char trailing gap."
+    },
+    {
+      "eng_gap_id": 55,
+      "section": 1339,
+      "chapter": 23,
+      "line": 63,
+      "proposed_english": "she molded",
+      "coptic_gap_refs": [
+        66
+      ],
+      "confidence": "moderate",
+      "basis": "ⲁⲥⲡⲗⲁⲥⲥⲉ fits the 8-char estimate and the recurring formula of Hyle's self-molding."
+    },
+    {
+      "eng_gap_id": 56,
+      "section": 1339,
+      "chapter": 23,
+      "line": 63,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        67
+      ],
+      "confidence": "unrestorable",
+      "basis": "Trailing punctuation/short word."
+    },
+    {
+      "eng_gap_id": 57,
+      "section": 1340,
+      "chapter": 23,
+      "line": 64,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        68
+      ],
+      "confidence": "unrestorable",
+      "basis": "Clause opener uncertain."
+    },
+    {
+      "eng_gap_id": 58,
+      "section": 1340,
+      "chapter": 23,
+      "line": 64,
+      "proposed_english": "Deep",
+      "coptic_gap_refs": [
+        69
+      ],
+      "confidence": "moderate",
+      "basis": "ⲡⲛⲟⲩⲛ 'the Deep/Abyss' (lexicon: lowest state where self-love roots) where Hyle molds herself; cf. 'storehouses of her Deep' in {1343}."
+    },
+    {
+      "eng_gap_id": 59,
+      "section": 1341,
+      "chapter": 23,
+      "line": 65,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        70
+      ],
+      "confidence": "unrestorable",
+      "basis": "Clause-opener uncertain."
+    },
+    {
+      "eng_gap_id": 60,
+      "section": 1343,
+      "chapter": 23,
+      "line": 67,
+      "proposed_english": "dark",
+      "coptic_gap_refs": [
+        75
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲕⲣⲙⲣⲁⲙⲧ qualifies the creatures of Hyle's Deep."
+    },
+    {
+      "eng_gap_id": 61,
+      "section": 1344,
+      "chapter": 23,
+      "line": 68,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        76,
+        77
+      ],
+      "confidence": "moderate",
+      "basis": "List-connector before 'destroyers and dragons and beasts.' The editor's ⲍⲛⲑⲏⲣⲓⲱⲛ 'beasts' anchors the list."
+    },
+    {
+      "eng_gap_id": 62,
+      "section": 1345,
+      "chapter": 23,
+      "line": 69,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        78,
+        79
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end of verb chain lost."
+    },
+    {
+      "eng_gap_id": 63,
+      "section": 1346,
+      "chapter": 23,
+      "line": 70,
+      "proposed_english": "being",
+      "coptic_gap_refs": [
+        80
+      ],
+      "confidence": "low",
+      "basis": "ⲉⲩ circumstantial 'being' fits 'in foul forms.'"
+    },
+    {
+      "eng_gap_id": 64,
+      "section": 1346,
+      "chapter": 23,
+      "line": 70,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        81
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-char punctuation."
+    },
+    {
+      "eng_gap_id": 65,
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        82
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opener fragment ⲁⲣⲁⲙⲧ obscure."
+    },
+    {
+      "eng_gap_id": 66,
+      "section": 1347,
+      "chapter": 23,
+      "line": 71,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        83,
+        84
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb fragment lost; only ⲙⲛ̄ 'and' from {84} confirmed."
+    },
+    {
+      "eng_gap_id": 67,
+      "section": 1348,
+      "chapter": 23,
+      "line": 72,
+      "proposed_english": "one another",
+      "coptic_gap_refs": [
+        85
+      ],
+      "confidence": "moderate",
+      "basis": "ⲛⲛⲉⲩⲉⲣⲏⲩ fits the 9-char estimate and the parallel motif 'they kill one another, spreading out one against another' in the next section."
+    },
+    {
+      "eng_gap_id": 68,
+      "section": 1350,
+      "chapter": 23,
+      "line": 74,
+      "proposed_english": "humbled",
+      "coptic_gap_refs": [
+        86,
+        87,
+        88
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲁϩⲑⲃⲟ + ⲡⲧⲉϩⲕⲟⲥⲙⲟⲥ + ⲙⲛ̄: the archon's counsel humbled this cosmos and..."
+    },
+    {
+      "eng_gap_id": 69,
+      "section": 1351,
+      "chapter": 23,
+      "line": 75,
+      "proposed_english": "Light",
+      "coptic_gap_refs": [
+        89,
+        90
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲁϩⲣ̄ + ⲟⲩⲁⲓⲛⲉ; the archons perceiving the substance of the Light."
+    },
+    {
+      "eng_gap_id": 70,
+      "section": 1352,
+      "chapter": 23,
+      "line": 76,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        91
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-char fragment."
+    },
+    {
+      "eng_gap_id": 71,
+      "section": 1353,
+      "chapter": 23,
+      "line": 77,
+      "proposed_english": "against",
+      "coptic_gap_refs": [
+        92
+      ],
+      "confidence": "moderate",
+      "basis": "ⲟⲩⲃⲉ 'against' fits the 4-char estimate; war 'against the lofty kingship.'"
+    },
+    {
+      "eng_gap_id": 72,
+      "section": 1354,
+      "chapter": 23,
+      "line": 78,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        93
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of 'and the [...]' lost."
+    },
+    {
+      "eng_gap_id": 73,
+      "section": 1355,
+      "chapter": 23,
+      "line": 79,
+      "proposed_english": "Greatness",
+      "coptic_gap_refs": [
+        94
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲛⲁⲃ; standard 'Father of Greatness.'"
+    },
+    {
+      "eng_gap_id": 74,
+      "section": 1356,
+      "chapter": 23,
+      "line": 80,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        95,
+        96,
+        97,
+        98
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line largely lost."
+    },
+    {
+      "eng_gap_id": 75,
+      "section": 1357,
+      "chapter": 23,
+      "line": 81,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        99,
+        100,
+        101
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb fragments uncertain; only ⲡⲟ→ⲡⲟⲗⲉⲙⲟⲥ 'war' carries to next line."
+    },
+    {
+      "eng_gap_id": 76,
+      "section": 1358,
+      "chapter": 23,
+      "line": 82,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        102,
+        103
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end after 'region of the Light' lost."
+    },
+    {
+      "eng_gap_id": 77,
+      "section": 1359,
+      "chapter": 23,
+      "line": 83,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        104
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap; possibly 'Greatness' but specifics lost."
+    },
+    {
+      "eng_gap_id": 78,
+      "section": 1360,
+      "chapter": 23,
+      "line": 84,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        106
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb ⲁϩⲩⲃⲧ̄ϩ obscure."
+    },
+    {
+      "eng_gap_id": 79,
+      "section": 1360,
+      "chapter": 23,
+      "line": 84,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        105
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end lost."
+    },
+    {
+      "eng_gap_id": 80,
+      "section": 1361,
+      "chapter": 23,
+      "line": 85,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        107
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap, too long."
+    },
+    {
+      "eng_gap_id": 81,
+      "section": 1362,
+      "chapter": 23,
+      "line": 86,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        108,
+        109
+      ],
+      "confidence": "unrestorable",
+      "basis": "Editor's ⲡⲥ→ⲡⲥⲏⲩ 'the time' confirmed but rest lost."
+    },
+    {
+      "eng_gap_id": 82,
+      "section": 1363,
+      "chapter": 23,
+      "line": 87,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        110
+      ],
+      "confidence": "unrestorable",
+      "basis": "Modifier of 'place' lost."
+    },
+    {
+      "eng_gap_id": 83,
+      "section": 1363,
+      "chapter": 23,
+      "line": 87,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        111
+      ],
+      "confidence": "unrestorable",
+      "basis": "21-char gap, too long."
+    },
+    {
+      "eng_gap_id": 84,
+      "section": 1364,
+      "chapter": 23,
+      "line": 88,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        112,
+        113
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line largely lost; only ⲫⲉ visible."
+    },
+    {
+      "eng_gap_id": 85,
+      "section": 1365,
+      "chapter": 23,
+      "line": 89,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        114
+      ],
+      "confidence": "unrestorable",
+      "basis": "28-char gap, completely lost."
+    },
+    {
+      "eng_gap_id": 86,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        117
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word fragment ⲯⲉ unanchored."
+    },
+    {
+      "eng_gap_id": 87,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        115
+      ],
+      "confidence": "unrestorable",
+      "basis": "Modifier of 'god' lost."
+    },
+    {
+      "eng_gap_id": 88,
+      "section": 1366,
+      "chapter": 23,
+      "line": 90,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        116
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end lost."
+    },
+    {
+      "eng_gap_id": 89,
+      "section": 1367,
+      "chapter": 23,
+      "line": 91,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        118
+      ],
+      "confidence": "unrestorable",
+      "basis": "18-char gap, too long."
+    },
+    {
+      "eng_gap_id": 90,
+      "section": 1367,
+      "chapter": 23,
+      "line": 91,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        119
+      ],
+      "confidence": "unrestorable",
+      "basis": "Object of 'from her' lost."
+    },
+    {
+      "eng_gap_id": 91,
+      "section": 1368,
+      "chapter": 23,
+      "line": 92,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        120
+      ],
+      "confidence": "unrestorable",
+      "basis": "5-char preposition/adverb lost."
+    },
+    {
+      "eng_gap_id": 92,
+      "section": 1369,
+      "chapter": 23,
+      "line": 93,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        121
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲛⲁⲃ̄ 'great' confirmed; head-noun lost."
+    },
+    {
+      "eng_gap_id": 93,
+      "section": 1370,
+      "chapter": 23,
+      "line": 94,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        122
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of 'standing fast in the trees' uncertain."
+    },
+    {
+      "eng_gap_id": 94,
+      "section": 1370,
+      "chapter": 23,
+      "line": 94,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        123
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end verb lost."
+    },
+    {
+      "eng_gap_id": 95,
+      "section": 1371,
+      "chapter": 23,
+      "line": 95,
+      "proposed_english": "to make war",
+      "coptic_gap_refs": [
+        124
+      ],
+      "confidence": "moderate",
+      "basis": "ⲣⲡⲟⲗⲉⲙⲉ 'make war' fits 7-char gap before ⲟⲩⲃⲏⲥ 'against her,' parallel to {1353}."
+    },
+    {
+      "eng_gap_id": 96,
+      "section": 1373,
+      "chapter": 23,
+      "line": 97,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        125
+      ],
+      "confidence": "unrestorable",
+      "basis": "Word fragment ⲯⲉ uncertain."
+    },
+    {
+      "eng_gap_id": 97,
+      "section": 1377,
+      "chapter": 23,
+      "line": 101,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        127
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb start ⲁⲩ only fragment."
+    },
+    {
+      "eng_gap_id": 98,
+      "section": 1378,
+      "chapter": 23,
+      "line": 102,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        129
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end continuation lost."
+    },
+    {
+      "eng_gap_id": 99,
+      "section": 1379,
+      "chapter": 23,
+      "line": 103,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        131
+      ],
+      "confidence": "unrestorable",
+      "basis": "Continuation of concupiscence list lost."
+    },
+    {
+      "eng_gap_id": 100,
+      "section": 1380,
+      "chapter": 23,
+      "line": 104,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        132
+      ],
+      "confidence": "unrestorable",
+      "basis": "Single-char particle/article lost."
+    },
+    {
+      "eng_gap_id": 101,
+      "section": 1382,
+      "chapter": 23,
+      "line": 106,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        135
+      ],
+      "confidence": "unrestorable",
+      "basis": "8-char infinitive opening lost."
+    },
+    {
+      "eng_gap_id": 102,
+      "section": 1386,
+      "chapter": 23,
+      "line": 110,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        139
+      ],
+      "confidence": "unrestorable",
+      "basis": "Greek-derived noun beginning ⲟⲩⲡⲁⲣ- not specifiable; could be tradition, command, etc."
+    },
+    {
+      "eng_gap_id": 103,
+      "section": 1387,
+      "chapter": 23,
+      "line": 111,
+      "proposed_english": "and",
+      "coptic_gap_refs": [
+        141
+      ],
+      "confidence": "moderate",
+      "basis": "ⲁⲩⲱ 'and' as connector before parallel infinitives 'to be revealed... to teach... to wear...'"
+    },
+    {
+      "eng_gap_id": 104,
+      "section": 1387,
+      "chapter": 23,
+      "line": 111,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        142
+      ],
+      "confidence": "unrestorable",
+      "basis": "Relative continuation lost."
+    },
+    {
+      "eng_gap_id": 105,
+      "section": 1388,
+      "chapter": 23,
+      "line": 112,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        143
+      ],
+      "confidence": "unrestorable",
+      "basis": "Verb ending in ϩ̄ uncertain."
+    },
+    {
+      "eng_gap_id": 106,
+      "section": 1389,
+      "chapter": 23,
+      "line": 113,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        145
+      ],
+      "confidence": "unrestorable",
+      "basis": "Opener of infinitive sequence lost."
+    },
+    {
+      "eng_gap_id": 107,
+      "section": 1390,
+      "chapter": 23,
+      "line": 114,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        147
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line entirely lost."
+    },
+    {
+      "eng_gap_id": 108,
+      "section": 1391,
+      "chapter": 23,
+      "line": 115,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        148
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line entirely lost."
+    },
+    {
+      "eng_gap_id": 109,
+      "section": 1392,
+      "chapter": 23,
+      "line": 116,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        149,
+        150
+      ],
+      "confidence": "high",
+      "basis": "Editor's ⲕⲓⲛⲇⲩⲛⲟⲥ 'dangers' confirmed; opener lost."
+    },
+    {
+      "eng_gap_id": 110,
+      "section": 1393,
+      "chapter": 23,
+      "line": 117,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        151
+      ],
+      "confidence": "unrestorable",
+      "basis": "20-char gap before 'the height of the earth' lost."
+    },
+    {
+      "eng_gap_id": 111,
+      "section": 1393,
+      "chapter": 23,
+      "line": 117,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        152
+      ],
+      "confidence": "unrestorable",
+      "basis": "Line-end fragment lost."
+    },
+    {
+      "eng_gap_id": 112,
+      "section": 1394,
+      "chapter": 23,
+      "line": 118,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        153
+      ],
+      "confidence": "unrestorable",
+      "basis": "Subject of 'and all his powers' lost."
+    },
+    {
+      "eng_gap_id": 113,
+      "section": 1395,
+      "chapter": 23,
+      "line": 119,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        154
+      ],
+      "confidence": "unrestorable",
+      "basis": "Closing clause largely lost."
+    }
+  ]
+}

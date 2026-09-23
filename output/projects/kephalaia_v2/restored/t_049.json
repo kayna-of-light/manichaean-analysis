@@ -1,0 +1,636 @@
+{
+  "teaching": 49,
+  "total_gaps_in_core": 28,
+  "gaps_restored": 24,
+  "gaps_unrestorable": 4,
+  "restoration_note": "The teaching enumerates four registers of the self (upper firmaments, eight lower earths, strongholds-and-fortifications, the revolving star-wheel) and develops an extended king-and-comitatus simile for how the whole self-loving formation is gathered into the wheel. Most gaps are editor-restored letter completions of known vocabulary (Wheel ⲡⲡⲣⲟⲭⲟⲥ, powers ⲛⲟⲁⲙ, property ⲭⲣⲏⲙⲁ, women ⲥⲍⲓⲁⲙⲉ, Life ⲡⲱⲛϩ̄, also ⲣⲱ, because-of ⲉⲧⲃⲉ, Lyc 3sg.m -ϥ) — these are accepted with high confidence. Gap {0} (preparations ⲛⲥⲃⲧⲉⲩⲉ) is the parallel to 'strongholds' that follows. Gap {6} continuing to 'Mother of Life' rests on the fixed Manichaean pair Father-of-Life / Mother-of-Life. Gap {4} (a noun for what the wheel is heavy with, after 'shame') most likely points to concupiscence/desire given the explicit thematic phrase in line 26 ('great powers of concupiscence') but is left at low confidence since the Lyc form ending in -ⲉ does not match the bare ⲟⲩⲁⲍⲓⲏⲧ used elsewhere. Gap {7} (3 chars in 'her lash _ raised up in shame') and gaps {21}-{24} (the king's possessions, where the line is heavily fragmented just before the description of what was 'spread forth from his hunger') are too weakly constrained and are marked unrestorable or low-confidence.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 2827,
+      "chapter": 47,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲃ",
+      "basis": "Editor's restoration ⲛ̄[ⲥⲃ]ⲧⲉⲩⲉ 'preparations' from ⲥⲟⲃⲧⲉ; semantic parallel to ⲙⲁⲛⲭⲓⲟⲟⲣⲉ 'strongholds' that follows in line 17, and structurally matches the third register of the self described in the reading as 'settled disorders that ring the natural mind round about'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 2832,
+      "chapter": 47,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Final ⲉ completing the Lyc ordinal ⲩⲧⲟⲉ 'fourth' (cf. parallel ⲧⲱⲁⲣⲡ, ⲧⲙⲁϩⲥⲛⲧⲉ, ⲧⲙⲁϩϣⲁⲙⲧⲉ in lines 7, 11, 16).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 2833,
+      "chapter": 47,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕⲁⲧ",
+      "basis": "Editor's restoration ⲡⲉⲧ[ⲕⲁⲧ] qualitative of ⲕⲁ 'lay/be set'; fits 'the sphere of stars that lies in a great shame' as the fourth register, the wheel itself.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 2833,
+      "chapter": 47,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲁⲟ̄ ⲙ",
+      "basis": "Editor's restoration ⲟⲩ[ⲛⲁⲟ̄ ⲙ]ⲙⲛⲧⲁϣⲓⲡⲉ 'a great shame'; trace of ⲁ visible. The wheel's heaviness with shame is explicit in the reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 2834,
+      "chapter": 47,
+      "line": 23,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲟⲩⲁⲍⲓⲏⲧⲉ",
+      "basis": "9-char gap, partial 'ⲟⲩ...ⲉ'. The reading explicitly says the wheel is heavy with 'shame and concupiscence', and line 26 uses ⲟⲩⲁⲍⲓⲏⲧ for concupiscence; ⲟⲩⲁⲍⲓⲏⲧⲉ is the same lexeme with a Lyc -ⲉ ending. Length and trace approximate but the exact final form is uncertain.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 5,
+      "section": 2835,
+      "chapter": 47,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Internal letter of ⲡ[ⲱ]ⲛϩ̄ 'Life'; restoration certain by formulaic phrase 'Father of Life'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 2835,
+      "chapter": 47,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲛ ⲧⲁⲧⲙⲉⲩ ⲛ",
+      "basis": "Standard Manichaean conjunction Father of Life ⲙⲛ Mother of Life; the next segment opens with ⲛⲉⲧⲁⲛⲍ̂ 'the Living Ones' completing the title 'Mother of the Living Ones'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 2836,
+      "chapter": 47,
+      "line": 25,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "3-char gap between ⲡⲉⲥⲓϣ 'her lash' and ⲁⲓ̈ⲧ ⲧⲟⲛⲱ. Verbal/copular form is uncertain (could be ⲡⲉ, ⲡⲉⲛ̄, ⲇⲉ, etc.) and the surrounding morphology is too fragmentary to constrain a fill.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 2837,
+      "chapter": 47,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲟ",
+      "basis": "Editor restoration; relative-attributive ⲉⲧⲟ linking ⲛⲟⲁⲗⲗⲁϣⲓⲡⲉ to the following ⲛ̄ϩⲏⲧⲥ̄ 'in her' in line 27.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 2842,
+      "chapter": 47,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲗⲝ",
+      "basis": "Editor restoration ⲁⲩⲝ[ⲁⲗⲝ]ⲟⲩ from ⲝⲁⲗⲝ = ϫⲱⲗϫ̄ 'mingle, fashion together'; fits the sequence 'they spread, they intermingled, they hung' describing the binding of the archons into the wheel.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 2843,
+      "chapter": 47,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲟ",
+      "basis": "Editor restoration of internal letters of ⲡⲡⲣⲟⲭⲟⲥ 'the Wheel'; the noun is the central image of the teaching and recurs throughout (cf. lines 3, 30, 41, 45, 48-49).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 2844,
+      "chapter": 47,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲙ",
+      "basis": "Editor restoration completing ⲛⲟⲁⲙ 'powers'; this lexeme appears in lines 4 (ⲛⲁⲟ̄ ⲛϩⲱⲃ ⲛⲭⲱⲣⲉ), 7 (ⲛ̄ⲟ̄ⲁⲙ), 20 (ⲛⲟ̄ⲁⲙ), 26 (ⲛⲟⲁⲙ ⲛ̄ⲟⲩⲁⲍⲓⲏⲧ), 39, 41 — well established here.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 2845,
+      "chapter": 47,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲱ",
+      "basis": "Editor restoration; ⲣⲱ enclitic 'too, also', a common postpositive in this dialect, fitting the parallel construction 'those whom they hung also in the Wheel'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 2845,
+      "chapter": 47,
+      "line": 34,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲡⲣⲟ",
+      "basis": "Editor restoration; ⲡⲡⲣⲟⲭⲟⲥ 'the Wheel' — the syllable ⲭⲟⲥ continues at the start of section 2846, line 35.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 2846,
+      "chapter": 47,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲃⲉ",
+      "basis": "Editor restoration completing ⲉ[ⲧⲃⲉ] 'because of', introducing the reason clause 'because of the Spirit and the fire that turn there in him' in section 2847.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 2854,
+      "chapter": 47,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧ",
+      "basis": "Editor restoration; relative converter forming ⲉⲧⲛ̄ⲧⲡⲉ 'that are above' modifying the giving-direction; the locative ⲡⲉ ⲙ̄ⲙⲁⲩ continues at the start of section 2855.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 2863,
+      "chapter": 47,
+      "line": 52,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor restoration of genitive linker ⲛ̄ⲧⲉ 'of'; the syllable -ⲧⲉ is preserved at the start of the segment.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 2864,
+      "chapter": 47,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Editor restoration of definite article ⲡ- before ⲁϣⲉⲓ̈ⲧⲉ 'multitude'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 2864,
+      "chapter": 47,
+      "line": 53,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲣⲏⲙⲁ",
+      "basis": "Editor restoration completing ⲡⲭⲣⲏⲙⲁ 'property/wealth'; the same lexeme occurs again in line 55 and explicitly in line 74 as part of the king's possessions in the simile.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 2865,
+      "chapter": 47,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor restoration of genitive ⲛ̄- before ⲧⲉⲡⲓⲑⲩⲙⲓⲁ 'desire'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 2865,
+      "chapter": 47,
+      "line": 54,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲍ",
+      "basis": "Editor restoration of internal letters of ⲛ̄ⲛ̄ⲥⲍⲓⲁⲙⲉ 'of women' (Lyc ⲥⲍⲓⲁⲙⲉ = Sah. ⲥϩⲓⲙⲉ); fits 'desire of women' in the catalogue of the king's possessions.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 2866,
+      "chapter": 47,
+      "line": 55,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲙⲡⲉϥ",
+      "basis": "4-char gap immediately before ⲭⲣⲏⲙⲁ. The Lyc 3sg.m possessive form ⲙⲡⲉϥ- 'of his' fits exactly and matches the parallel ⲡⲉϩⲕⲟⲙⲓⲧⲁⲧⲟⲛ 'his comitatus' / ⲡⲉϩⲙⲛⲧⲣⲣⲟ 'his kingship' that pervade the king-simile in lines 57-67. Grammatical context (preceding ⲁⲍⲁⲛ 'with') is partly damaged.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 22,
+      "section": 2866,
+      "chapter": 47,
+      "line": 55,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "6-char gap with final ⲉ visible, between ⲭⲣⲏⲙⲁ and ⲙⲛ ⲛⲧⲃⲛⲁⲩⲉ. Could be a plural marker, a qualifying noun in apposition, or a participial phrase, but no parallel in the passage closes this off. Best left unrestored.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 23,
+      "section": 2867,
+      "chapter": 47,
+      "line": 56,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "13-char gap at the start of the line, evidently a predicate nominal or participial phrase qualifying the property and animals as 'being [something] which were spread forth from his hunger'. The reading suggests something like 'desires/affections that issued from his hunger', but no constraint fixes a particular noun phrase.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 24,
+      "section": 2867,
+      "chapter": 47,
+      "line": 56,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "2-char gap with two illegible traces, immediately following gap 23. Without further constraint on gap 23 the bridging element here cannot be reconstructed.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 25,
+      "section": 2877,
+      "chapter": 47,
+      "line": 66,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Editor restoration of relative converter ⲉ- forming ⲉⲧⲙⲏⲣ 'who/which are bound', modifying ⲇⲁⲙ 'realms'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 2882,
+      "chapter": 47,
+      "line": 71,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϥ",
+      "basis": "Final consonant of Lyc ⲧⲏⲣϥ̄ 'entire, whole' — cf. ⲧⲏⲣϩ in line 19 and again ⲧⲏⲣϩ/ⲧⲏⲣϥ̄ throughout (lines 38, 47, 51, 58, 67, 68, 75).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 2886,
+      "chapter": 47,
+      "line": 75,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϥ",
+      "basis": "Final consonant of Lyc ⲧⲏⲣϥ̄ 'entire' modifying ⲡⲥⲱⲱⲛⲧ̄ 'creation'; same form recurs in immediately following line 76 ⲡⲓⲍⲱⲃ ⲧⲏⲣϩ.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 2827,
+      "chapter": 47,
+      "line": 16,
+      "core_english": "The third kind is the {0}"
+    },
+    {
+      "section": 2832,
+      "chapter": 47,
+      "line": 21,
+      "core_english": "The fourth"
+    },
+    {
+      "section": 2833,
+      "chapter": 47,
+      "line": 22,
+      "core_english": "kind is the sphere of stars that {1} in a {2}"
+    },
+    {
+      "section": 2834,
+      "chapter": 47,
+      "line": 23,
+      "core_english": "shame, being heavy in a great {3},"
+    },
+    {
+      "section": 2835,
+      "chapter": 47,
+      "line": 24,
+      "core_english": "the Father of Life {4}"
+    },
+    {
+      "section": 2836,
+      "chapter": 47,
+      "line": 25,
+      "core_english": "the Living Ones. Her lash {5}, raised up in shame,"
+    },
+    {
+      "section": 2837,
+      "chapter": 47,
+      "line": 26,
+      "core_english": "because of the great powers of concupiscence and the shamelessnesses {6}"
+    },
+    {
+      "section": 2842,
+      "chapter": 47,
+      "line": 31,
+      "core_english": "each one in the third kind: they spread them forth, they {7} them,"
+    },
+    {
+      "section": 2843,
+      "chapter": 47,
+      "line": 32,
+      "core_english": "they hung them facing one another in single accord — the {8}"
+    },
+    {
+      "section": 2844,
+      "chapter": 47,
+      "line": 33,
+      "core_english": "likewise is equal with them in his might, in the {9} of"
+    },
+    {
+      "section": 2845,
+      "chapter": 47,
+      "line": 34,
+      "core_english": "the Enmity that is bound in him — those whom they hung {10} in {11}"
+    },
+    {
+      "section": 2846,
+      "chapter": 47,
+      "line": 35,
+      "core_english": "Wheel that turns, because of their concupiscence, so that {12}"
+    },
+    {
+      "section": 2854,
+      "chapter": 47,
+      "line": 43,
+      "core_english": "side, they receive it with them and give it to those above,"
+    },
+    {
+      "section": 2863,
+      "chapter": 47,
+      "line": 52,
+      "core_english": "of the love-of-strife that is gathered into him, and also with"
+    },
+    {
+      "section": 2864,
+      "chapter": 47,
+      "line": 53,
+      "core_english": "the multitude of {13}, and the kingship, and the beautiful likeness"
+    },
+    {
+      "section": 2865,
+      "chapter": 47,
+      "line": 54,
+      "core_english": "of the desire of {14}, that is gathered into him together with"
+    },
+    {
+      "section": 2866,
+      "chapter": 47,
+      "line": 55,
+      "core_english": "{15} property{16}, and those animals there, being"
+    },
+    {
+      "section": 2867,
+      "chapter": 47,
+      "line": 56,
+      "core_english": "{17} which were spread forth from his hunger"
+    },
+    {
+      "section": 2877,
+      "chapter": 47,
+      "line": 66,
+      "core_english": "realms which are bound in the sphere before the archonic host, and the"
+    },
+    {
+      "section": 2882,
+      "chapter": 47,
+      "line": 71,
+      "core_english": "to the way-leaders of the world — that which they reckon entirely, all of it,"
+    },
+    {
+      "section": 2886,
+      "chapter": 47,
+      "line": 75,
+      "core_english": "the way-leaders. They are the movers of the entire creation,"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 2827,
+      "chapter": 47,
+      "line": 16,
+      "proposed_english": "preparations",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "ⲛ̄ⲥⲃⲧⲉⲩⲉ 'preparations/equipment', the parallel item to 'strongholds' that follows; together they name the third register of the self — the settled disorders ringing the natural mind."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 2833,
+      "chapter": 47,
+      "line": 22,
+      "proposed_english": "lies",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "Qualitative of ⲕⲁ 'be set/lie'; the sphere of stars 'lies' in great shame — the fourth register at rest in its bound state."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 2833,
+      "chapter": 47,
+      "line": 22,
+      "proposed_english": "great",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "ⲛⲁⲟ̄ ⲙ- in ⲟⲩⲛⲁⲟ̄ ⲙⲙⲛⲧⲁϣⲓⲡⲉ 'a great shame'; the wheel's heaviness is one of the teaching's central images."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 2834,
+      "chapter": 47,
+      "line": 23,
+      "proposed_english": "concupiscence",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "low",
+      "basis": "Best fit by the reading's explicit naming of 'shame and concupiscence' as the wheel's burden, and matching ⲟⲩⲁⲍⲓⲏⲧ 'concupiscence' in line 26. The Coptic underlying form is not certain (Lyc -ⲉ ending unusual for this lexeme); 'great' in this English clause has been folded forward from ⲛⲁϣⲱⲥ in the next segment."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 2835,
+      "chapter": 47,
+      "line": 24,
+      "proposed_english": "with the Mother of",
+      "coptic_gap_refs": [
+        6
+      ],
+      "confidence": "high",
+      "basis": "Standard Manichaean conjunction Father-of-Life with Mother-of-Life; the title 'of the Living Ones' completes at the start of the next segment."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 2836,
+      "chapter": 47,
+      "line": 25,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "unrestorable",
+      "basis": "The 3-char Coptic gap between 'her lash' and 'ⲁⲓⲧ ⲧⲟⲛⲱ' could be a copula, particle, or short verb prefix; without constraint, the English verbal element here cannot be supplied."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 2837,
+      "chapter": 47,
+      "line": 26,
+      "proposed_english": "that are",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "Relative ⲉⲧⲟ links 'shamelessnesses' to 'in her' in the next line — 'shamelessnesses that are in her'."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 2842,
+      "chapter": 47,
+      "line": 31,
+      "proposed_english": "intermingled",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "high",
+      "basis": "ⲁⲩⲝⲁⲗⲝⲟⲩ from ⲝⲁⲗⲝ = ϫⲱⲗϫ̄ 'mingle, fashion together'; the wheel-binding sequence: spread, intermingle, hang."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 2843,
+      "chapter": 47,
+      "line": 32,
+      "proposed_english": "Wheel",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "Completes ⲡⲡⲣⲟⲭⲟⲥ 'the Wheel', the recurring image of cyclic regeneration in the teaching."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 2844,
+      "chapter": 47,
+      "line": 33,
+      "proposed_english": "powers",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "high",
+      "basis": "Completes ⲛⲟⲁⲙ 'powers' (cf. lines 4, 7, 20, 26, 39, 41) — 'in the powers of the Enmity bound in him'."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 2845,
+      "chapter": 47,
+      "line": 34,
+      "proposed_english": "also",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "high",
+      "basis": "ⲣⲱ enclitic 'also/too' — paralleling the binding of these powers with the others already mentioned."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 2845,
+      "chapter": 47,
+      "line": 34,
+      "proposed_english": "the Wheel",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲡⲣⲟⲭⲟⲥ 'the Wheel' — the noun's first syllables here, with -ⲭⲟⲥ continuing at line 35."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 2846,
+      "chapter": 47,
+      "line": 35,
+      "proposed_english": "because of",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "high",
+      "basis": "Completes ⲉⲧⲃⲉ 'because of', introducing the reason for the wheel's revolving — the Spirit and fire turning in him."
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 2864,
+      "chapter": 47,
+      "line": 53,
+      "proposed_english": "property",
+      "coptic_gap_refs": [
+        18
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲭⲣⲏⲙⲁ 'property/wealth' in the catalogue of the king's possessions; recurs in line 55 and 74."
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 2865,
+      "chapter": 47,
+      "line": 54,
+      "proposed_english": "women",
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "high",
+      "basis": "ⲛ̄ⲥⲍⲓⲁⲙⲉ 'of women' (Lyc); the king-simile lists 'desire of women' among the self's appropriations."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 2866,
+      "chapter": 47,
+      "line": 55,
+      "proposed_english": "his",
+      "coptic_gap_refs": [
+        21
+      ],
+      "confidence": "low",
+      "basis": "Lyc 3sg.m possessive ⲙⲡⲉϥ-, paralleling ⲡⲉϩⲕⲟⲙⲓⲧⲁⲧⲟⲛ / ⲡⲉϩⲙⲛⲧⲣⲣⲟ 'his comitatus / his kingship' that govern the surrounding simile. Length and grammar plausible but not strictly fixed."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 2866,
+      "chapter": 47,
+      "line": 55,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "unrestorable",
+      "basis": "The 6-char Coptic continuation after ⲭⲣⲏⲙⲁ ending in -ⲉ has no fixed parallel; could be plural ending, qualifying noun, or participial phrase, but is not constrained."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 2867,
+      "chapter": 47,
+      "line": 56,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        23,
+        24
+      ],
+      "confidence": "unrestorable",
+      "basis": "The 13+2 char compound gap forming a predicate noun phrase qualifying the king's animals/property as 'being [...] which were spread forth from his hunger'. The reading suggests it names the desires or affections issuing from his hunger to possess, but the precise noun phrase is unrecoverable."
+    }
+  ]
+}

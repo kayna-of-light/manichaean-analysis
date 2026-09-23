@@ -1,6 +1,96 @@
 # Artifact Storage
 
-Generated artifacts belong in Google Drive, not Git history. Source data also gets a Drive mirror so oversized OCR dumps and recovered source material have an external safety copy.
+Storage follows provenance, not the directory name. An `output/` file may be an
+expensive model response, a human correction, or a cheap deterministic derivative.
+Git retains the first two and excludes known rebuildable products. The Drive mirror
+is an additional safety copy of both retained and ignored data, not evidence that a
+particular local file has already been backed up.
+
+## What Git Keeps
+
+- Source OCR JSON and captured source text, including `data/*.pdf.json` and
+	`output/texts/`. A new OCR service call or a new download need not reproduce them.
+- Original Coptic model transcriptions, including both pass texts and two-pass JSON
+	under `output/projects/kephalaia_v2/coptic/transcriptions/`.
+- LLM-cleaned chapters, discovered corpus metadata, extractions, restorations,
+	readings, proposed terms, reviews, corrected text, and model checkpoints.
+- Manual and trusted corrections, editorial fingerprints, glyph overrides,
+	subcluster labels, and the saved cluster assignments those labels address.
+- Existing OCR geometry JSON, reviewer baseline snapshots, crop metadata, and
+	provenance summaries. These retain the coordinates and identifiers used by
+	reviewed decisions; do not replace them with a fresh clustering/segmentation run
+	merely because a producer script exists.
+
+The three `_assignments.json` cluster maps are currently about 66-71 MiB each.
+They exceed GitHub's 50 MiB warning threshold but not its 100 MiB rejection limit.
+They are retained deliberately: regenerating cluster IDs without migrating their
+reviewed labels could silently misapply the labels. The smaller projected maps,
+subassignments, and overrides are retained alongside them.
+
+## What Git Excludes
+
+The root `.gitignore` uses product-specific patterns, not a blanket `output/`,
+`*.json`, or image exclusion. New or unclassified output remains eligible for Git
+until its provenance is established.
+
+| Rebuildable product | Retained inputs / producer |
+|---|---|
+| `output/pdfs/*.pdf` | Saved text and JSON; PDF generators in `scripts/tools/` |
+| `kephalaia/analysis/chapters/*.json` | Cleaned chapters and corpus metadata; `scripts/projects/kephalaia/stage_3_score.py` |
+| `kephalaia_v2/scores/*.json` | Saved chapters and corpus metadata; `scripts/projects/kephalaia_v2/stage_3b_score.py` |
+| `kephalaia_v2/coptic/images/*.jpg` | Source PDFs restored from Drive; `scripts/projects/kephalaia_v2/stage_0_extract.py` |
+| OCR PNG previews, cluster/context montages, and body-crop JPGs | Saved source/geometry/cluster data; OCR pipeline and sheet builders in `scripts/projects/kephalaia_ocr/` |
+| Contextual-review streams and reports | Saved cluster mappings, overrides, split geometry; `build_contextual_review.py` |
+| LLM-witness streams, derived review JSON, recommendations, and reports | Saved original transcriptions and contextual-review data; `build_llm_witness.py` |
+| v2 deskewed JPGs | Saved Kraken geometry and source images; `deskew_and_crop.py` |
+| v2 line/body split JPGs and review images | Deskewed pages; `split_line_numbers_body.py` |
+| v2 body-geometry page JSON, masks, and review images | Body crops and retained settings; `polygonize_body_crops.py` |
+
+Project-relative names in the table live under `output/projects/`. The last three
+builders are in `scripts/projects/kephalaia_ocr_v2/`. Crop metadata and summaries
+remain tracked even where their neighboring images are ignored.
+
+Despite its name, `build_llm_witness.py` makes no model calls. It aligns the
+already-saved transcriptions to reviewed OCR data. Its large
+`composite_line_sequences.jsonl` and `review_llm_witness.json` can be rebuilt; the
+original model transcriptions must stay in Git.
+
+For example, rebuild a specific cluster's contextual and witness products from
+the repository root, after restoring any required source PDFs and rebuilding
+source/crop images:
+
+```powershell
+python scripts/projects/kephalaia_ocr/build_contextual_review.py --clusters-dir output/projects/kephalaia_ocr/clusters_shape_padded_k120
+python scripts/projects/kephalaia_ocr/build_llm_witness.py --context-dir output/projects/kephalaia_ocr/contextual_review/clusters_shape_padded_k120 --out-dir output/projects/kephalaia_ocr/llm_witness/clusters_shape_padded_k120
+```
+
+Use the matching saved cluster name and split geometry for other cluster families.
+Do not rerun LLM stages to rebuild these derivatives. Required Python dependencies,
+source PDFs, and (for fresh Kraken segmentation) the WSL Kraken runtime are still
+needed; a clean clone alone does not contain every source asset.
+
+## Before Pushing
+
+Check the entire unpublished history, not just the current working tree:
+
+```powershell
+python scripts/check_git_artifact_sizes.py
+```
+
+The default range is `origin/main..HEAD`. Use `--base <published-ref>` and
+`--head <local-ref>` when checking another branch. The check exits nonzero for any
+blob over 100 MiB, including a blob added in one commit and deleted in a later
+one. Blobs over 50 MiB produce warnings. The total shown is uncompressed blob
+size, not the pack size sent to GitHub. This is an explicit check, not an installed
+Git hook; run it before each push.
+
+Adding an ignore rule does not remove already-committed files. If unpublished
+history contains an ignored generated file, rewrite the introducing commit (and
+its local descendants) rather than adding a deletion-only commit. Preserve local
+files, uncommitted work, and recovery refs before rewriting. Never rewrite
+published history or push recovery refs as part of routine artifact cleanup.
+
+## Drive Mirror and Recovery
 
 The default repository sync mirrors `output/`, `data/`, and `manual_reviewer/data/` to:
 
@@ -99,6 +189,9 @@ conda run -n literary-compilation python scripts/sync_artifacts_to_drive.py --re
 
 When `--prune-local` finds local files missing from Drive, it requires typing `DELETE_LOCAL` before deleting them. Use `--dry-run` first to preview restore or cleanup actions.
 
-Git should keep source code, scripts, findings, documentation, and normal-sized source data. Large generated output should be restored from Drive when needed.
+Git keeps source code, scripts, findings, documentation, and the research data
+listed above. Rebuild excluded deterministic products from retained inputs or
+restore their saved copies from Drive when needed. Keep the complete Drive mirror
+for source PDFs and live reviewer state that are not in Git.
 
 Large source artifacts that exceed GitHub's warning threshold should also be stored in Drive rather than committed directly. Use `--archive` for one-off preservation when a source OCR dump is too large for normal Git history.

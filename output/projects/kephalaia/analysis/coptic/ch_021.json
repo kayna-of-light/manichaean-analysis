@@ -1,0 +1,82 @@
+{
+  "chapter_number": 21,
+  "manuscript_pages": "64,13 - 65,13",
+  "coptic_tokens": 272,
+  "greek_loanwords": {
+    "total_density_pct": 1.84,
+    "cosmological_density_pct": 1.1,
+    "ecclesiastical_density_pct": 0.74,
+    "cosmological_ratio": 0.6,
+    "cosmological_count": 3,
+    "ecclesiastical_count": 2,
+    "general_count": 0,
+    "total_greek": 5,
+    "cosmological_words": {
+      "ⲛⲟⲩⲥ": 2,
+      "ⲁⲓⲱⲛ": 1
+    },
+    "ecclesiastical_words": {
+      "ⲉⲕⲕⲗⲏⲥⲓⲁ": 1,
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 15,
+    "sahidic_count": 4,
+    "total_dialect_markers": 19,
+    "subachmimic_ratio": 0.789,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×2",
+      "ⲍⲛ×1",
+      "ⲍⲛ̄×1",
+      "ⲁⲍ×5",
+      "ⲍⲏⲧ×2",
+      "ⲍⲉ×4"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲛ×1",
+      "ⲁϩ×2",
+      "ϩⲁ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 73,
+    "damaged_lines": 6,
+    "lacunae_density": 0.082,
+    "dot_sequences": 66,
+    "bracketed_restorations": 78,
+    "empty_brackets": 15,
+    "leer_markers": 7
+  },
+  "english_classification": {
+    "chapter_number": 21,
+    "chapter_title": "[C]oncerning the Father of Gr[eat]ness: [ho]w he is established and determined.",
+    "total_paragraphs": 8,
+    "core_paragraphs": 7,
+    "core_percentage": 90,
+    "chapter_note": "This chapter is almost entirely oldest-layer substrate. It presents a systematic five-fold emanation teaching: the Father of Greatness established in his five light limbs (mind, thought, insight, counsel, consideration = the storehouses), his twelve wisdoms, and the five great springs that gush forth from him (light, perfume, living voice, [lacuna], glory). Both sides of every mapping remain within the cosmic system. There is zero editorial bridge, institutional, or exhortation vocabulary. The only non-substrate material is the formulaic dialogue opening (¶1) and a minor audience reference in ¶2. Heavy lacunae throughout, especially in ¶¶7-8, but the five-fold enumeration structure is clear. Teaching purity 1.000 confirms the dominance of the oldest layer.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "mixed": 1,
+      "substrate": 6
+    }
+  },
+  "concordance": {
+    "concordance_signals": [
+      "CONCORDANT: High substrate (90%) with high cosmological Greek ratio (0.60)"
+    ],
+    "discordance_flags": [],
+    "signal_count": 1,
+    "flag_count": 0
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "teaching": 93,
+  "total_gaps_in_core": 13,
+  "gaps_restored": 13,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching describes how the new bud (a forming perception) is shaped, warmed, and adorned through the five elements of the natural mind under the Lord's ordering, but is also inundated by the shadow of Hyle (the self's energeia) where the soul has not laid off what it claimed. Most gaps are tightly constrained line-end/line-start splits of well-known compound words (ⲡⲍⲙⲁⲙ 'heat,' ϩⲓⲧⲟⲟⲧⲟⲩ 'through them,' ⲥⲕⲁⲛⲁⲁⲗⲓⲍⲉ 'stumble' in Lyc., ⲉⲧⲟⲩⲛⲏϩ 'which dwells,' ⲧⲉⲥϩⲁⲓⲃⲉⲥ 'her shadow,' ⲡϣⲏⲛ 'the tree,' ⲍⲙⲱϩ 'warms,' ⲛⲧⲉ 'of'). The decorative ⲣⲏ marker pattern handles {0}/{1}. Only {2} is genuinely uncertain — a 3-letter verb in the molding/adorning sequence, which I propose as ⲣⲱⲧ 'cause to grow' but with low confidence.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 5120,
+      "chapter": 108,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor proposal: connector ⲛ between the molding-clause and the destroying-clause that follows in 5121 (ⲥⲉⲧⲉⲕⲁⲥ ⲁⲛ ⲍⲓⲧⲟⲟⲧⲟⲩ). Standard Lyc. coordinator.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 1,
+      "section": 5120,
+      "chapter": 108,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣⲏ",
+      "basis": "Editor proposal: decorative ⲣⲏ marker (✦) matching the same ornamental marker at the head of this line and parallel placements in nearby lines. Non-lexical.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 2,
+      "section": 5122,
+      "chapter": 108,
+      "line": 6,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲣⲱⲧ",
+      "basis": "3-char verb in the sequence 'they are molded and they {2} … and they adorn it in the five elements.' ⲣⲱⲧ ('grow / cause to sprout') fits the agricultural register of the new-bud parable and the molding–growing–adorning triad. Trace pattern '.[..]' is compatible. Low certainty.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 3,
+      "section": 5123,
+      "chapter": 108,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲁ",
+      "basis": "Editor proposal: completes ⲡⲍⲙⲁⲙ 'the heat' across the line break (ⲡⲍ- | -ⲙ becomes ⲡⲍ[ⲙⲁ]ⲙ). The heat–cold (ⲡⲍⲙⲁⲙ ... ⲡⲁⲣⲁϣ) elemental dyad is the structural pair of the section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 5124,
+      "chapter": 108,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍ",
+      "basis": "Single letter restoring ⲍⲙⲱϩ 'warms,' the verb paired antithetically with ⲡⲁⲣⲁϣ 'cold.' Same root as ⲡⲍⲙⲁⲙ in the previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 5125,
+      "chapter": 108,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "Single letter completing ⲡϣⲏⲛ 'the tree' (followed by ⲧⲏⲣϥ̄ 'whole'). Lexicon: ⲡϣⲏⲛ = tree (perception/knowledge), the central image of the parable.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 5129,
+      "chapter": 108,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲟ",
+      "basis": "Editor proposal: completes ϩⲓⲧⲟⲟⲧⲟⲩ 'through them' (ϩⲓ- | [ⲧⲟ]ⲟⲧⲟⲩ), the same compound preposition used at line 2 (ⲍⲓⲧⲟⲟⲧⲟⲩ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 5129,
+      "chapter": 108,
+      "line": 21,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Editor proposal: line-end ⲛ of ⲥⲕⲁⲛ-, beginning the Lyc. orthography ⲥⲕⲁⲛⲁⲁⲗⲓⲍⲉ (Greek σκανδαλίζειν 'stumble'). Continues into next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 5130,
+      "chapter": 108,
+      "line": 22,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲁ",
+      "basis": "Editor proposal: continues ⲥⲕⲁⲛⲁⲁⲗⲓⲍⲉ from previous line; Lyc. -ⲁⲁ- for Greek -δα-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 5131,
+      "chapter": 108,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲟ",
+      "basis": "Editor proposal: relative-qualitative ⲉⲧⲟⲩⲛⲏϩ 'which dwells' modifying ⲧϩⲩⲗⲏ — the energeia of the Hyle 'which dwells in them.' Standard Lyc. relative form of ⲟⲩⲱϩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 5132,
+      "chapter": 108,
+      "line": 24,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉⲥ",
+      "basis": "Editor proposal: feminine possessive ⲧⲉⲥ- on ϩⲁⲓⲃⲉⲥ 'her shadow' (i.e. Hyle's shadow). Confirmed by ⲛ̄ⲧⲉⲥ- in the next line referring to the same shadow.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 5133,
+      "chapter": 108,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩⲁⲓⲃ",
+      "basis": "Editor proposal: completes ϩⲁⲓⲃⲉⲥ 'shadow' split across the line (ⲛ̄ⲧⲉⲥ-|[ϩⲁⲓⲃ]ⲉⲥ). Same word as previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 5134,
+      "chapter": 108,
+      "line": 26,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲉ",
+      "basis": "Editor proposal: standard genitive ⲛⲧⲉ binding ⲛ̄ⲕⲁⲣⲡⲟⲥ to ⲛϣⲏⲛ ⲧⲏⲣⲟⲩ — 'the fruits of all the trees.'",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 5120,
+      "chapter": 108,
+      "line": 2,
+      "core_english": "✦ mold in the elements{0}{1}"
+    },
+    {
+      "section": 5122,
+      "chapter": 108,
+      "line": 6,
+      "core_english": "barley which you see — they are habitually molded and they {2} it"
+    },
+    {
+      "section": 5123,
+      "chapter": 108,
+      "line": 7,
+      "core_english": "adorn it in the five elements; the heat"
+    },
+    {
+      "section": 5124,
+      "chapter": 108,
+      "line": 8,
+      "core_english": "warms, and the cold nourishes the new grain and the"
+    },
+    {
+      "section": 5125,
+      "chapter": 108,
+      "line": 9,
+      "core_english": "whole tree."
+    },
+    {
+      "section": 5129,
+      "chapter": 108,
+      "line": 21,
+      "core_english": "thro{3}those. The men also habitually stum-"
+    },
+    {
+      "section": 5130,
+      "chapter": 108,
+      "line": 22,
+      "core_english": "ble and become mad through the energeia of Hyle"
+    },
+    {
+      "section": 5131,
+      "chapter": 108,
+      "line": 23,
+      "core_english": "which dwells in them, who has inundated upon them with"
+    },
+    {
+      "section": 5132,
+      "chapter": 108,
+      "line": 24,
+      "core_english": "her shadow. The manner also in which she habitually inundates her"
+    },
+    {
+      "section": 5133,
+      "chapter": 108,
+      "line": 25,
+      "core_english": "shadow upon the elements and destroys the fruits"
+    },
+    {
+      "section": 5134,
+      "chapter": 108,
+      "line": 26,
+      "core_english": "{4} all the trees : —"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 5120,
+      "chapter": 108,
+      "line": 2,
+      "proposed_english": ", and",
+      "coptic_gap_refs": [
+        0
+      ],
+      "basis": "Coptic ⲛ functions as a coordinating particle between the two clauses; rendered as 'and' joining the molding-clause to what follows.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 5120,
+      "chapter": 108,
+      "line": 2,
+      "proposed_english": " ✦",
+      "coptic_gap_refs": [
+        1
+      ],
+      "basis": "Decorative ⲣⲏ marker, conventionally rendered ✦ in the editor's English.",
+      "confidence": "moderate"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 5122,
+      "chapter": 108,
+      "line": 6,
+      "proposed_english": "cause to grow",
+      "coptic_gap_refs": [
+        2
+      ],
+      "basis": "English fill for the proposed Coptic verb ⲣⲱⲐ in the molding–growing–adorning triad of the new-bud formation.",
+      "confidence": "low"
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 5129,
+      "chapter": 108,
+      "line": 21,
+      "proposed_english": "ugh ",
+      "coptic_gap_refs": [
+        6
+      ],
+      "basis": "Completes 'thro-ugh those' — the editor's split rendering of ϩⲓⲧⲟⲟⲧⲟⲩ across the line break.",
+      "confidence": "high"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 5134,
+      "chapter": 108,
+      "line": 26,
+      "proposed_english": "of",
+      "coptic_gap_refs": [
+        12
+      ],
+      "basis": "Standard genitive ⲛⲧⲉ rendered as 'of': 'fruits of all the trees.'",
+      "confidence": "high"
+    }
+  ]
+}

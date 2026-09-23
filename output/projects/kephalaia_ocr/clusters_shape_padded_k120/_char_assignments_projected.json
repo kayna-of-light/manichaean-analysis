@@ -1,0 +1,1018 @@
+{
+  "_metadata": {
+    "source": "Projected from old 60-cluster labels by blob identity; review required before final use.",
+    "purity_threshold": 0.95,
+    "excluded_source_labels": [
+      "?",
+      "_mixed_character"
+    ],
+    "n_review_clusters": 24,
+    "manual_seeded_from_new_montages": [
+      {
+        "cluster": "043",
+        "label": "ⲑ",
+        "evidence": "c_043_n0827.png shows compact theta forms with horizontal crossbar"
+      },
+      {
+        "cluster": "066",
+        "label": "ⲫ",
+        "evidence": "c_066_n0539.png shows closed oval phi forms with vertical stem"
+      },
+      {
+        "cluster": "021",
+        "label": "ϫ",
+        "evidence": "Manual review of p010 indexes 1084, 1126, and 1137: this coherent X-shaped cluster is gangia, not plain chi"
+      }
+    ],
+    "manual_connected_readings": [
+      {
+        "cluster": "027",
+        "label": "ⲧⲏ",
+        "evidence": "context_027_112.png shows connected tau-eta in words such as ⲧⲏⲣⲟⲩ"
+      },
+      {
+        "cluster": "040",
+        "label": "ⲙⲁ",
+        "evidence": "context_027_112.png shows connected mu-alpha readings"
+      },
+      {
+        "cluster": "097",
+        "label": "ⲧⲡ",
+        "evidence": "context_027_112.png shows connected tau-pi in readings such as ⲥⲱⲧⲡ"
+      },
+      {
+        "cluster": "112",
+        "label": "ⲍ",
+        "evidence": "context_027_112.png shows this projected multi cluster is actually zeta"
+      },
+      {
+        "cluster": "036",
+        "label": "ⲁⲗ",
+        "evidence": "context_001_119.png shows connected alpha-lambda in readings such as ⲁⲃⲁⲗ and ⲭⲁⲗ"
+      }
+    ]
+  },
+  "assignments": {
+    "ⲁ": [
+      "006",
+      "048",
+      "050",
+      "088",
+      "115"
+    ],
+    "ⲁⲗ": [
+      "036"
+    ],
+    "ⲃ": [
+      "020",
+      "041"
+    ],
+    "ⲅ": [],
+    "ⲇ": [
+      "051"
+    ],
+    "ⲉ": [
+      "004",
+      "026",
+      "028",
+      "045",
+      "049",
+      "073",
+      "079",
+      "098",
+      "102",
+      "118"
+    ],
+    "ⲍ": [
+      "112"
+    ],
+    "ⲏ": [
+      "034",
+      "052",
+      "108"
+    ],
+    "ⲑ": [
+      "043"
+    ],
+    "ⲓ": [],
+    "ⲕ": [
+      "016",
+      "032"
+    ],
+    "ⲗ": [
+      "023"
+    ],
+    "ⲙ": [
+      "011",
+      "031",
+      "106",
+      "113"
+    ],
+    "ⲙⲁ": [
+      "040"
+    ],
+    "ⲛ": [
+      "000",
+      "018",
+      "039",
+      "044",
+      "070",
+      "087",
+      "093",
+      "110"
+    ],
+    "ⲝ": [],
+    "ⲟ": [
+      "009",
+      "053",
+      "091"
+    ],
+    "ⲡ": [
+      "007",
+      "077",
+      "078",
+      "080",
+      "083",
+      "103"
+    ],
+    "ⲣ": [
+      "012",
+      "042",
+      "100",
+      "107"
+    ],
+    "ⲥ": [
+      "013",
+      "059",
+      "089"
+    ],
+    "ⲧ": [
+      "002",
+      "037",
+      "067",
+      "072",
+      "082",
+      "086",
+      "092"
+    ],
+    "ⲧⲏ": [
+      "027"
+    ],
+    "ⲧⲡ": [
+      "097"
+    ],
+    "ⲩ": [
+      "010",
+      "047",
+      "085",
+      "116"
+    ],
+    "ⲫ": [
+      "066"
+    ],
+    "ⲭ": [
+      "084"
+    ],
+    "ⲯ": [],
+    "ⲱ": [
+      "017",
+      "090"
+    ],
+    "ϣ": [
+      "033",
+      "095"
+    ],
+    "ϥ": [
+      "014",
+      "062",
+      "096"
+    ],
+    "ϩ": [
+      "015",
+      "056",
+      "064",
+      "105"
+    ],
+    "ϫ": [
+      "021"
+    ],
+    "ϭ": [
+      "035",
+      "061"
+    ],
+    "ϯ": [
+      "076"
+    ],
+    "_left_square_bracket": [
+      "003",
+      "030",
+      "057"
+    ],
+    "_right_square_bracket": [
+      "005",
+      "022",
+      "114"
+    ],
+    "_lacuna_dot": [
+      "055",
+      "071",
+      "081"
+    ],
+    "_mixed_character": [],
+    "_multi_char_connected": [],
+    "_marks": [],
+    "_unknown": [
+      "069"
+    ]
+  },
+  "review_clusters": [
+    {
+      "cluster": "001",
+      "total": 1264,
+      "top": [
+        [
+          "_multi_char_connected",
+          1090
+        ],
+        [
+          "_left_square_bracket",
+          49
+        ],
+        [
+          "ⲟ",
+          25
+        ],
+        [
+          "ⲥ",
+          23
+        ],
+        [
+          "ⲏ",
+          16
+        ],
+        [
+          "ⲓ",
+          13
+        ],
+        [
+          "ⲗ",
+          12
+        ],
+        [
+          "ⲣ",
+          11
+        ]
+      ],
+      "purity": 0.8623
+    },
+    {
+      "cluster": "008",
+      "total": 4635,
+      "top": [
+        [
+          "_lacuna_dot",
+          3931
+        ],
+        [
+          "_unknown",
+          701
+        ],
+        [
+          "ⲟ",
+          3
+        ]
+      ],
+      "purity": 0.8481
+    },
+    {
+      "cluster": "019",
+      "total": 1746,
+      "top": [
+        [
+          "_multi_char_connected",
+          1002
+        ],
+        [
+          "ⲟ",
+          178
+        ],
+        [
+          "ⲉ",
+          111
+        ],
+        [
+          "ⲛ",
+          104
+        ],
+        [
+          "ⲡ",
+          99
+        ],
+        [
+          "ⲃ",
+          79
+        ],
+        [
+          "ⲙ",
+          52
+        ],
+        [
+          "ⲥ",
+          36
+        ]
+      ],
+      "purity": 0.5739
+    },
+    {
+      "cluster": "024",
+      "total": 3660,
+      "top": [
+        [
+          "ⲓ",
+          3381
+        ],
+        [
+          "_right_square_bracket",
+          278
+        ],
+        [
+          "ⲧ",
+          1
+        ]
+      ],
+      "purity": 0.9238
+    },
+    {
+      "cluster": "025",
+      "total": 1102,
+      "top": [
+        [
+          "_multi_char_connected",
+          900
+        ],
+        [
+          "_lacuna_dot",
+          126
+        ],
+        [
+          "_unknown",
+          46
+        ],
+        [
+          "ⲛ",
+          6
+        ],
+        [
+          "ⲱ",
+          5
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲓ",
+          3
+        ]
+      ],
+      "purity": 0.8167
+    },
+    {
+      "cluster": "029",
+      "total": 2681,
+      "top": [
+        [
+          "_unknown",
+          1372
+        ],
+        [
+          "_lacuna_dot",
+          1238
+        ],
+        [
+          "_multi_char_connected",
+          33
+        ],
+        [
+          "ⲓ",
+          18
+        ],
+        [
+          "ⲟ",
+          13
+        ],
+        [
+          "_left_square_bracket",
+          3
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ]
+      ],
+      "purity": 0.5117
+    },
+    {
+      "cluster": "038",
+      "total": 3290,
+      "top": [
+        [
+          "ⲓ",
+          3080
+        ],
+        [
+          "_unknown",
+          192
+        ],
+        [
+          "_lacuna_dot",
+          15
+        ],
+        [
+          "_mixed_character",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ]
+      ],
+      "purity": 0.9362
+    },
+    {
+      "cluster": "046",
+      "total": 1785,
+      "top": [
+        [
+          "_lacuna_dot",
+          1035
+        ],
+        [
+          "_unknown",
+          695
+        ],
+        [
+          "ⲓ",
+          38
+        ],
+        [
+          "_multi_char_connected",
+          10
+        ],
+        [
+          "_right_square_bracket",
+          3
+        ],
+        [
+          "ⲗ",
+          1
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ]
+      ],
+      "purity": 0.5798
+    },
+    {
+      "cluster": "054",
+      "total": 3750,
+      "top": [
+        [
+          "ⲓ",
+          3312
+        ],
+        [
+          "_left_square_bracket",
+          278
+        ],
+        [
+          "_unknown",
+          141
+        ],
+        [
+          "_lacuna_dot",
+          11
+        ],
+        [
+          "ϯ",
+          6
+        ],
+        [
+          "ⲇ",
+          1
+        ],
+        [
+          "_mixed_character",
+          1
+        ]
+      ],
+      "purity": 0.8832
+    },
+    {
+      "cluster": "058",
+      "total": 2360,
+      "top": [
+        [
+          "ⲥ",
+          1475
+        ],
+        [
+          "ⲟ",
+          388
+        ],
+        [
+          "_multi_char_connected",
+          313
+        ],
+        [
+          "ⲣ",
+          182
+        ],
+        [
+          "ⲃ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ]
+      ],
+      "purity": 0.625
+    },
+    {
+      "cluster": "060",
+      "total": 180,
+      "top": [
+        [
+          "ⲡ",
+          152
+        ],
+        [
+          "_multi_char_connected",
+          21
+        ],
+        [
+          "ⲥ",
+          5
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ]
+      ],
+      "purity": 0.8444
+    },
+    {
+      "cluster": "063",
+      "total": 1102,
+      "top": [
+        [
+          "_left_square_bracket",
+          404
+        ],
+        [
+          "ⲓ",
+          168
+        ],
+        [
+          "ⲭ",
+          108
+        ],
+        [
+          "_lacuna_dot",
+          107
+        ],
+        [
+          "_multi_char_connected",
+          100
+        ],
+        [
+          "ⲉ",
+          92
+        ],
+        [
+          "_unknown",
+          59
+        ],
+        [
+          "ⲥ",
+          19
+        ]
+      ],
+      "purity": 0.3666
+    },
+    {
+      "cluster": "065",
+      "total": 1008,
+      "top": [
+        [
+          "_left_square_bracket",
+          909
+        ],
+        [
+          "ⲓ",
+          31
+        ],
+        [
+          "ⲩ",
+          24
+        ],
+        [
+          "_multi_char_connected",
+          16
+        ],
+        [
+          "ⲣ",
+          14
+        ],
+        [
+          "ⲧ",
+          10
+        ],
+        [
+          "_unknown",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ]
+      ],
+      "purity": 0.9018
+    },
+    {
+      "cluster": "068",
+      "total": 455,
+      "top": [
+        [
+          "_unknown",
+          252
+        ],
+        [
+          "_lacuna_dot",
+          171
+        ],
+        [
+          "_multi_char_connected",
+          26
+        ],
+        [
+          "_mixed_character",
+          5
+        ],
+        [
+          "ⲓ",
+          1
+        ]
+      ],
+      "purity": 0.5538
+    },
+    {
+      "cluster": "074",
+      "total": 1579,
+      "top": [
+        [
+          "ⲓ",
+          1485
+        ],
+        [
+          "_left_square_bracket",
+          57
+        ],
+        [
+          "_lacuna_dot",
+          11
+        ],
+        [
+          "_unknown",
+          9
+        ],
+        [
+          "ⲭ",
+          9
+        ],
+        [
+          "ⲧ",
+          3
+        ],
+        [
+          "_mixed_character",
+          3
+        ],
+        [
+          "ⲥ",
+          2
+        ]
+      ],
+      "purity": 0.9405
+    },
+    {
+      "cluster": "075",
+      "total": 6447,
+      "top": [
+        [
+          "_lacuna_dot",
+          5472
+        ],
+        [
+          "_unknown",
+          969
+        ],
+        [
+          "ⲓ",
+          5
+        ],
+        [
+          "_multi_char_connected",
+          1
+        ]
+      ],
+      "purity": 0.8488
+    },
+    {
+      "cluster": "094",
+      "total": 1704,
+      "top": [
+        [
+          "ⲓ",
+          1006
+        ],
+        [
+          "_right_square_bracket",
+          383
+        ],
+        [
+          "_mixed_character",
+          110
+        ],
+        [
+          "ⲧ",
+          91
+        ],
+        [
+          "_lacuna_dot",
+          63
+        ],
+        [
+          "_unknown",
+          20
+        ],
+        [
+          "_multi_char_connected",
+          13
+        ],
+        [
+          "ⲭ",
+          10
+        ]
+      ],
+      "purity": 0.5904
+    },
+    {
+      "cluster": "099",
+      "total": 1622,
+      "top": [
+        [
+          "_right_square_bracket",
+          1354
+        ],
+        [
+          "ⲓ",
+          161
+        ],
+        [
+          "_left_square_bracket",
+          63
+        ],
+        [
+          "_unknown",
+          26
+        ],
+        [
+          "_lacuna_dot",
+          7
+        ],
+        [
+          "_mixed_character",
+          6
+        ],
+        [
+          "ϯ",
+          4
+        ],
+        [
+          "ⲇ",
+          1
+        ]
+      ],
+      "purity": 0.8348
+    },
+    {
+      "cluster": "101",
+      "total": 1303,
+      "top": [
+        [
+          "_multi_char_connected",
+          1163
+        ],
+        [
+          "ⲓ",
+          56
+        ],
+        [
+          "ⲟ",
+          30
+        ],
+        [
+          "_right_square_bracket",
+          29
+        ],
+        [
+          "ⲭ",
+          11
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "_lacuna_dot",
+          3
+        ],
+        [
+          "ⲃ",
+          2
+        ]
+      ],
+      "purity": 0.8926
+    },
+    {
+      "cluster": "104",
+      "total": 795,
+      "top": [
+        [
+          "ⲣ",
+          559
+        ],
+        [
+          "ⲡ",
+          236
+        ]
+      ],
+      "purity": 0.7031
+    },
+    {
+      "cluster": "109",
+      "total": 660,
+      "top": [
+        [
+          "ⲡ",
+          599
+        ],
+        [
+          "_multi_char_connected",
+          42
+        ],
+        [
+          "ⲏ",
+          19
+        ]
+      ],
+      "purity": 0.9076
+    },
+    {
+      "cluster": "111",
+      "total": 2075,
+      "top": [
+        [
+          "ⲉ",
+          1518
+        ],
+        [
+          "_multi_char_connected",
+          357
+        ],
+        [
+          "ⲟ",
+          108
+        ],
+        [
+          "ⲓ",
+          44
+        ],
+        [
+          "_unknown",
+          12
+        ],
+        [
+          "_lacuna_dot",
+          12
+        ],
+        [
+          "ⲁ",
+          10
+        ],
+        [
+          "ⲥ",
+          9
+        ]
+      ],
+      "purity": 0.7316
+    },
+    {
+      "cluster": "117",
+      "total": 4761,
+      "top": [
+        [
+          "_lacuna_dot",
+          4330
+        ],
+        [
+          "_unknown",
+          417
+        ],
+        [
+          "ⲓ",
+          6
+        ],
+        [
+          "_multi_char_connected",
+          3
+        ],
+        [
+          "_right_square_bracket",
+          3
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ⲱ",
+          1
+        ]
+      ],
+      "purity": 0.9095
+    },
+    {
+      "cluster": "119",
+      "total": 299,
+      "top": [
+        [
+          "ⲡ",
+          182
+        ],
+        [
+          "_multi_char_connected",
+          75
+        ],
+        [
+          "ⲉ",
+          23
+        ],
+        [
+          "_unknown",
+          13
+        ],
+        [
+          "ⲏ",
+          2
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "_mixed_character",
+          1
+        ]
+      ],
+      "purity": 0.6087
+    }
+  ]
+}

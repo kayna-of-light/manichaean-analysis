@@ -1,0 +1,119 @@
+{
+  "page": "235",
+  "source": "output/projects/kephalaia_ocr_v2/pages_cropped/keph_p235.jpg",
+  "source_size": [
+    1057,
+    1848
+  ],
+  "body_gap": {
+    "split_x": 107,
+    "confidence": "strong",
+    "method": "line_number_ruler_gap",
+    "line_number_col_right": 81,
+    "body_left": 133,
+    "gap_width": 52
+  },
+  "common_y": {
+    "y0": 207,
+    "y1": 1499,
+    "method": "line_number_ruler",
+    "line_numbers": {
+      "available": true,
+      "candidate_count": 158,
+      "row_count": 27,
+      "all_row_count": 28,
+      "line_step": 41.458,
+      "y_top": 229,
+      "y_bottom": 1477,
+      "col_left": 57,
+      "col_right": 81,
+      "ruler_band": [
+        35,
+        95
+      ],
+      "first_row_center": 236.475,
+      "last_row_center": 1467.944,
+      "discarded_row_centers": [
+        62.673
+      ],
+      "gap_start": 83,
+      "body_left": 133,
+      "confidence": "strong"
+    }
+  },
+  "common_crop": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/common/p235_common.jpg",
+    "x_range": [
+      39,
+      998
+    ],
+    "size": [
+      959,
+      1292
+    ]
+  },
+  "line_numbers": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/line_numbers/p235_line_numbers.jpg",
+    "x_range": [
+      39,
+      99
+    ],
+    "size": [
+      60,
+      1292
+    ]
+  },
+  "text_body": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/text_body/p235_text_body.jpg",
+    "x_range": [
+      115,
+      998
+    ],
+    "size": [
+      883,
+      1292
+    ],
+    "right_edge_preservation": {
+      "method": "row_aligned_sparse_right_ink",
+      "original_x_range": [
+        115,
+        988
+      ],
+      "adjusted_x_range": [
+        115,
+        998
+      ],
+      "raw_right_before_margin": 970,
+      "raw_right_after_preservation": 980,
+      "candidate_count": 1,
+      "kept_count": 1,
+      "max_gap_from_trim": 73,
+      "sample_kept_components": [
+        {
+          "bbox": [
+            975,
+            486,
+            980,
+            491
+          ],
+          "area": 18,
+          "support_mode": "local",
+          "gap_from_trim": 5,
+          "row_support_count": 31,
+          "row_support_area": 4070
+        }
+      ]
+    }
+  },
+  "review": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/reviews/p235_review.jpg",
+    "size": [
+      1397,
+      1938
+    ]
+  },
+  "margins": {
+    "x": 18,
+    "y": 22
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "chapter_number": 57,
+  "manuscript_pages": "144,13 - 147,20",
+  "coptic_tokens": 940,
+  "greek_loanwords": {
+    "total_density_pct": 3.72,
+    "cosmological_density_pct": 1.7,
+    "ecclesiastical_density_pct": 0.21,
+    "cosmological_ratio": 0.889,
+    "cosmological_count": 16,
+    "ecclesiastical_count": 2,
+    "general_count": 17,
+    "total_greek": 35,
+    "cosmological_words": {
+      "ⲥⲱⲙⲁ": 1,
+      "ⲕⲟⲥⲙⲟⲥ": 5,
+      "ⲅⲉⲛⲉⲁ": 5,
+      "ⲧⲩⲡⲟⲥ": 1,
+      "ⲥⲫⲁⲓⲣⲁ": 2,
+      "ⲁⲣⲭⲏ": 2
+    },
+    "ecclesiastical_words": {
+      "ⲫⲱⲥⲧⲏⲣ": 2
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.21,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 2,
+    "exhortation_markers": 0,
+    "total_formulaic": 2,
+    "details": [
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲣⲉⲧⲉ"
+      },
+      {
+        "type": "blessing_closure",
+        "match": "ⲛⲁⲙⲉⲗⲟⲥ"
+      }
+    ]
+  },
+  "dialect": {
+    "subachmimic_count": 89,
+    "sahidic_count": 68,
+    "total_dialect_markers": 157,
+    "subachmimic_ratio": 0.567,
+    "subachmimic_forms": [
+      "ⲍⲙ̄×4",
+      "ⲍⲛ×18",
+      "ⲍⲛ̄×14",
+      "ⲁⲍ×17",
+      "ⲍⲓ×2",
+      "ⲍⲁ×8",
+      "ⲍⲏⲧ×4",
+      "ⲍⲱⲃ×2",
+      "ⲍⲉ×17",
+      "ⲍⲁⲉ×2",
+      "ⲍⲁⲏ×1"
+    ],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×2",
+      "ϩⲛ×16",
+      "ϩⲛ̄×12",
+      "ⲁϩ×19",
+      "ϩⲓ×1",
+      "ϩⲁ×8",
+      "ϩⲏⲧ×5",
+      "ϩⲉ×4",
+      "ϩⲁⲉ×1"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 139,
+    "damaged_lines": 0,
+    "lacunae_density": 0.0,
+    "dot_sequences": 4,
+    "bracketed_restorations": 50,
+    "empty_brackets": 2,
+    "leer_markers": 7
+  },
+  "english_classification": {
+    "chapter_number": 57,
+    "chapter_title": "Concerning the Generation of Adam",
+    "total_paragraphs": 12,
+    "core_paragraphs": 10,
+    "core_percentage": 68,
+    "chapter_note": "The oldest teaching layer is the five-fold powers succession (year, month, day, hour, moment) in ¶3-6 — a systematic enumerated teaching mapping cosmic temporal authorities to generational lifespan, classic substrate. The problem statement (¶2) with its zodiac observation is also clearly old. The second half introduces a complementary light-withdrawal explanation (¶7) and a birth-mechanism teaching (¶10) whose substrate status is less certain — the editorial fatigue score (0.74) and substrate vocabulary dropping to 0.00 in the second half suggest editorial extension. Gardner confirms the two-section structure: powers explanation (144.15-146.8) followed by a 'more immediate lesson' (146.8-147.17). The chapter's low teaching purity score (0.133) reflects the absence of canonical substrate markers (zoomorphic forms, metals) rather than absence of old teaching — the five-fold powers nomenclature is differently structured.",
+    "classification_distribution": {
+      "mixed": 6,
+      "substrate": 4,
+      "dialogue_frame": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "NOTABLE: Coptic has 2 blessing formula(s) and 0 exhortation marker(s), but English classified 0 paragraphs as exhortation"
+    ],
+    "signal_count": 0,
+    "flag_count": 1
+  }
+}

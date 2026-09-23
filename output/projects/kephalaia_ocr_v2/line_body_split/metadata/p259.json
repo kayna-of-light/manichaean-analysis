@@ -1,0 +1,119 @@
+{
+  "page": "259",
+  "source": "output/projects/kephalaia_ocr_v2/pages_cropped/keph_p259.jpg",
+  "source_size": [
+    1085,
+    1897
+  ],
+  "body_gap": {
+    "split_x": 100,
+    "confidence": "strong",
+    "method": "line_number_ruler_gap",
+    "line_number_col_right": 77,
+    "body_left": 123,
+    "gap_width": 46
+  },
+  "common_y": {
+    "y0": 212,
+    "y1": 1595,
+    "method": "line_number_ruler",
+    "line_numbers": {
+      "available": true,
+      "candidate_count": 112,
+      "row_count": 28,
+      "all_row_count": 29,
+      "line_step": 41.82,
+      "y_top": 234,
+      "y_bottom": 1573,
+      "col_left": 49,
+      "col_right": 77,
+      "ruler_band": [
+        35,
+        95
+      ],
+      "first_row_center": 243.171,
+      "last_row_center": 1563.957,
+      "discarded_row_centers": [
+        59.21
+      ],
+      "gap_start": 79,
+      "body_left": 123,
+      "confidence": "strong"
+    }
+  },
+  "common_crop": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/common/p259_common.jpg",
+    "x_range": [
+      31,
+      1045
+    ],
+    "size": [
+      1014,
+      1383
+    ]
+  },
+  "line_numbers": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/line_numbers/p259_line_numbers.jpg",
+    "x_range": [
+      31,
+      95
+    ],
+    "size": [
+      64,
+      1383
+    ]
+  },
+  "text_body": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/text_body/p259_text_body.jpg",
+    "x_range": [
+      105,
+      1045
+    ],
+    "size": [
+      940,
+      1383
+    ],
+    "right_edge_preservation": {
+      "method": "row_aligned_sparse_right_ink",
+      "original_x_range": [
+        105,
+        1044
+      ],
+      "adjusted_x_range": [
+        105,
+        1045
+      ],
+      "raw_right_before_margin": 1026,
+      "raw_right_after_preservation": 1027,
+      "candidate_count": 1,
+      "kept_count": 1,
+      "max_gap_from_trim": 73,
+      "sample_kept_components": [
+        {
+          "bbox": [
+            1010,
+            626,
+            1027,
+            644
+          ],
+          "area": 123,
+          "support_mode": "local",
+          "gap_from_trim": 0,
+          "row_support_count": 41,
+          "row_support_area": 5547
+        }
+      ]
+    }
+  },
+  "review": {
+    "path": "output/projects/kephalaia_ocr_v2/line_body_split/reviews/p259_review.jpg",
+    "size": [
+      1386,
+      1938
+    ]
+  },
+  "margins": {
+    "x": 18,
+    "y": 22
+  }
+}

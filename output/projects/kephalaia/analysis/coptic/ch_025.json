@@ -1,0 +1,77 @@
+{
+  "chapter_number": 25,
+  "manuscript_pages": "76,15 - 76,25",
+  "coptic_tokens": 193,
+  "greek_loanwords": {
+    "total_density_pct": 2.59,
+    "cosmological_density_pct": 0.0,
+    "ecclesiastical_density_pct": 2.07,
+    "cosmological_ratio": 0.0,
+    "cosmological_count": 0,
+    "ecclesiastical_count": 4,
+    "general_count": 1,
+    "total_greek": 5,
+    "cosmological_words": {},
+    "ecclesiastical_words": {
+      "ⲁⲡⲟⲥⲧⲟⲗⲟⲥ": 2,
+      "ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ": 1,
+      "ⲡⲁⲣⲑⲉⲛⲟⲥ": 1
+    }
+  },
+  "formulaic_patterns": {
+    "density_per_100_tokens": 0.0,
+    "dialogue_openings": 0,
+    "disciple_questions": 0,
+    "response_formulas": 0,
+    "blessing_closures": 0,
+    "exhortation_markers": 0,
+    "total_formulaic": 0,
+    "details": []
+  },
+  "dialect": {
+    "subachmimic_count": 0,
+    "sahidic_count": 29,
+    "total_dialect_markers": 29,
+    "subachmimic_ratio": 0.0,
+    "subachmimic_forms": [],
+    "sahidic_intrusions": [
+      "ϩⲙ̄×4",
+      "ϩⲛ×3",
+      "ϩⲛ̄×1",
+      "ⲁϩ×8",
+      "ϩⲓ×3",
+      "ϩⲁ×3",
+      "ϩⲉ×7"
+    ]
+  },
+  "lacunae": {
+    "total_lines": 39,
+    "damaged_lines": 1,
+    "lacunae_density": 0.026,
+    "dot_sequences": 21,
+    "bracketed_restorations": 40,
+    "empty_brackets": 5,
+    "leer_markers": 4
+  },
+  "english_classification": {
+    "chapter_number": 25,
+    "chapter_title": "Concerning the Advent of Five Fathers from the Five Limbs of the Father",
+    "total_paragraphs": 3,
+    "core_paragraphs": 2,
+    "core_percentage": 76,
+    "chapter_note": "Very short, remarkably clean chapter. The oldest teaching layer dominates — a compact five-fold emanation-to-faculty mapping (P2) plus a process summary (P3), wrapped in a thin dialogue frame (P1). No editorial bridge, no institutional content, no exhortation. The substrate shift score (+17.19 in second half) reflects the teaching content concentrated in P2-P3. The five emanation figures (Ambassador, Beloved of the Lights, Mother of Life, Jesus the Beloved, Virgin of Light) are mapped to the Father's five limbs (mind, thought, insight, counsel, consideration) — a classic Persian-tradition correspondential enumeration.",
+    "classification_distribution": {
+      "dialogue_frame": 1,
+      "substrate": 2
+    }
+  },
+  "concordance": {
+    "concordance_signals": [],
+    "discordance_flags": [
+      "DISCORDANT: High substrate (76%) but low cosmological Greek (0.00) — Coptic suggests more institutional register than English classification indicates",
+      "DIALECT FLAG: Sub-Achmimic ratio is only 0.00 — substantial Sahidic intrusion suggests later editorial hand"
+    ],
+    "signal_count": 0,
+    "flag_count": 2
+  }
+}

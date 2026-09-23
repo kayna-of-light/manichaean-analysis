@@ -1,0 +1,5306 @@
+{
+  "_metadata": {
+    "source": "Projected from prior reviewed cluster labels after body-crop reclustering.",
+    "old_clusters": "output/projects/kephalaia_ocr/clusters_shape_padded_k120",
+    "new_clusters": "output/projects/kephalaia_ocr/clusters_shape_padded_k120_bodycrop_test",
+    "old_metadata": {
+      "source": "Projected from old 60-cluster labels by blob identity; review required before final use.",
+      "purity_threshold": 0.95,
+      "excluded_source_labels": [
+        "?",
+        "_mixed_character"
+      ],
+      "n_review_clusters": 24,
+      "manual_seeded_from_new_montages": [
+        {
+          "cluster": "043",
+          "label": "ⲑ",
+          "evidence": "c_043_n0827.png shows compact theta forms with horizontal crossbar"
+        },
+        {
+          "cluster": "066",
+          "label": "ⲫ",
+          "evidence": "c_066_n0539.png shows closed oval phi forms with vertical stem"
+        },
+        {
+          "cluster": "021",
+          "label": "ϫ",
+          "evidence": "Manual review of p010 indexes 1084, 1126, and 1137: this coherent X-shaped cluster is gangia, not plain chi"
+        }
+      ],
+      "manual_connected_readings": [
+        {
+          "cluster": "027",
+          "label": "ⲧⲏ",
+          "evidence": "context_027_112.png shows connected tau-eta in words such as ⲧⲏⲣⲟⲩ"
+        },
+        {
+          "cluster": "040",
+          "label": "ⲙⲁ",
+          "evidence": "context_027_112.png shows connected mu-alpha readings"
+        },
+        {
+          "cluster": "097",
+          "label": "ⲧⲡ",
+          "evidence": "context_027_112.png shows connected tau-pi in readings such as ⲥⲱⲧⲡ"
+        },
+        {
+          "cluster": "112",
+          "label": "ⲍ",
+          "evidence": "context_027_112.png shows this projected multi cluster is actually zeta"
+        },
+        {
+          "cluster": "036",
+          "label": "ⲁⲗ",
+          "evidence": "context_001_119.png shows connected alpha-lambda in readings such as ⲁⲃⲁⲗ and ⲭⲁⲗ"
+        }
+      ]
+    },
+    "parameters": {
+      "purity": 0.9,
+      "min_evidence": 20,
+      "weak_purity": 0.75,
+      "weak_min_evidence": 8,
+      "include_weak": true
+    },
+    "stable_key_matches": 281856,
+    "stable_review_key_matches": 304514,
+    "n_review_clusters": 16
+  },
+  "assignments": {
+    "_lacuna_dot": [
+      "001",
+      "006",
+      "042",
+      "085",
+      "113",
+      "114"
+    ],
+    "_left_square_bracket": [
+      "004",
+      "038",
+      "074",
+      "087",
+      "103",
+      "107"
+    ],
+    "_right_square_bracket": [
+      "005",
+      "025",
+      "080"
+    ],
+    "_unknown": [
+      "027"
+    ],
+    "ϣ": [
+      "016",
+      "039"
+    ],
+    "ϥ": [
+      "015",
+      "055",
+      "060",
+      "105",
+      "119"
+    ],
+    "ϩ": [
+      "017",
+      "043",
+      "069",
+      "076"
+    ],
+    "ϫ": [
+      "032"
+    ],
+    "ϭ": [
+      "030"
+    ],
+    "ϯ": [
+      "050"
+    ],
+    "ⲁ": [
+      "010",
+      "021",
+      "049",
+      "059",
+      "092",
+      "111"
+    ],
+    "ⲁⲗ": [
+      "053"
+    ],
+    "ⲃ": [
+      "020",
+      "077",
+      "082"
+    ],
+    "ⲇ": [
+      "091"
+    ],
+    "ⲉ": [
+      "002",
+      "034",
+      "054",
+      "065",
+      "071",
+      "099",
+      "101",
+      "102",
+      "110"
+    ],
+    "ⲍ": [
+      "066"
+    ],
+    "ⲏ": [
+      "024",
+      "097",
+      "116"
+    ],
+    "ⲑ": [
+      "036"
+    ],
+    "ⲕ": [
+      "019",
+      "067"
+    ],
+    "ⲗ": [
+      "023",
+      "108"
+    ],
+    "ⲙ": [
+      "009",
+      "056",
+      "064"
+    ],
+    "ⲛ": [
+      "003",
+      "028",
+      "033",
+      "063",
+      "088",
+      "100",
+      "104",
+      "106",
+      "109"
+    ],
+    "ⲟ": [
+      "012",
+      "035",
+      "046",
+      "096",
+      "098"
+    ],
+    "ⲡ": [
+      "013",
+      "018",
+      "070",
+      "079",
+      "089"
+    ],
+    "ⲣ": [
+      "000",
+      "048",
+      "094"
+    ],
+    "ⲥ": [
+      "007",
+      "037",
+      "072",
+      "093"
+    ],
+    "ⲧ": [
+      "008",
+      "026",
+      "040",
+      "045",
+      "057",
+      "062",
+      "090",
+      "115"
+    ],
+    "ⲧⲏ": [
+      "061"
+    ],
+    "ⲧⲡ": [
+      "044"
+    ],
+    "ⲩ": [
+      "011",
+      "047",
+      "083"
+    ],
+    "ⲫ": [
+      "075"
+    ],
+    "ⲭ": [
+      "031"
+    ],
+    "ⲱ": [
+      "014"
+    ]
+  },
+  "review_clusters": [
+    {
+      "cluster": "022",
+      "total": 6022713,
+      "top": [
+        [
+          "ⲓ",
+          5542005
+        ],
+        [
+          "_unknown",
+          283685
+        ],
+        [
+          "_left_square_bracket",
+          99877
+        ],
+        [
+          "_right_square_bracket",
+          65715
+        ],
+        [
+          "_lacuna_dot",
+          22216
+        ],
+        [
+          "_multi_char_connected",
+          3489
+        ],
+        [
+          "ϯ",
+          2182
+        ],
+        [
+          "_mixed_character",
+          1631
+        ],
+        [
+          "ⲧ",
+          1398
+        ],
+        [
+          "ⲇ",
+          367
+        ],
+        [
+          "ⲟ",
+          90
+        ],
+        [
+          "ⲭ",
+          33
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "029",
+      "total": 32440617,
+      "top": [
+        [
+          "_lacuna_dot",
+          28587585
+        ],
+        [
+          "_unknown",
+          3788772
+        ],
+        [
+          "ⲓ",
+          23332
+        ],
+        [
+          "_multi_char_connected",
+          12677
+        ],
+        [
+          "_right_square_bracket",
+          11253
+        ],
+        [
+          "ⲟ",
+          9382
+        ],
+        [
+          "ⲛ",
+          3761
+        ],
+        [
+          "ⲱ",
+          3746
+        ],
+        [
+          "_left_square_bracket",
+          47
+        ],
+        [
+          "ⲣ",
+          12
+        ],
+        [
+          "ⲗ",
+          11
+        ],
+        [
+          "ⲕ",
+          11
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "041",
+      "total": 486831,
+      "top": [
+        [
+          "_multi_char_connected",
+          400500
+        ],
+        [
+          "_lacuna_dot",
+          56070
+        ],
+        [
+          "_unknown",
+          20470
+        ],
+        [
+          "ⲛ",
+          2670
+        ],
+        [
+          "ⲱ",
+          2225
+        ],
+        [
+          "ⲡ",
+          2225
+        ],
+        [
+          "ⲏ",
+          1335
+        ],
+        [
+          "ⲓ",
+          1335
+        ],
+        [
+          "ⲁ",
+          1
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "051",
+      "total": 182455,
+      "top": [
+        [
+          "_unknown",
+          101052
+        ],
+        [
+          "_lacuna_dot",
+          68571
+        ],
+        [
+          "_multi_char_connected",
+          10426
+        ],
+        [
+          "_mixed_character",
+          2005
+        ],
+        [
+          "ⲓ",
+          401
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "052",
+      "total": 42930323,
+      "top": [
+        [
+          "_lacuna_dot",
+          35721324
+        ],
+        [
+          "_unknown",
+          7087976
+        ],
+        [
+          "ⲓ",
+          88649
+        ],
+        [
+          "_multi_char_connected",
+          21708
+        ],
+        [
+          "_right_square_bracket",
+          4614
+        ],
+        [
+          "_left_square_bracket",
+          2327
+        ],
+        [
+          "ⲗ",
+          1501
+        ],
+        [
+          "ⲕ",
+          1501
+        ],
+        [
+          "ⲭ",
+          216
+        ],
+        [
+          "ⲉ",
+          186
+        ],
+        [
+          "ⲟ",
+          182
+        ],
+        [
+          "ⲛ",
+          46
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "058",
+      "total": 3323249,
+      "top": [
+        [
+          "ⲥ",
+          1873077
+        ],
+        [
+          "_multi_char_connected",
+          596361
+        ],
+        [
+          "ⲟ",
+          526425
+        ],
+        [
+          "ⲣ",
+          230244
+        ],
+        [
+          "ⲉ",
+          23465
+        ],
+        [
+          "ⲛ",
+          20801
+        ],
+        [
+          "ⲡ",
+          19801
+        ],
+        [
+          "ⲃ",
+          17066
+        ],
+        [
+          "ⲙ",
+          10400
+        ],
+        [
+          "_lacuna_dot",
+          3931
+        ],
+        [
+          "_left_square_bracket",
+          909
+        ],
+        [
+          "_unknown",
+          703
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "068",
+      "total": 627261,
+      "top": [
+        [
+          "ⲣ",
+          441051
+        ],
+        [
+          "ⲡ",
+          186204
+        ],
+        [
+          "ⲇ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲟ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "073",
+      "total": 2534601,
+      "top": [
+        [
+          "ⲥ",
+          1565490
+        ],
+        [
+          "ⲟ",
+          412421
+        ],
+        [
+          "_multi_char_connected",
+          357221
+        ],
+        [
+          "ⲣ",
+          193323
+        ],
+        [
+          "ⲓ",
+          1857
+        ],
+        [
+          "ⲉ",
+          1172
+        ],
+        [
+          "ⲃ",
+          1144
+        ],
+        [
+          "_left_square_bracket",
+          1037
+        ],
+        [
+          "ⲏ",
+          320
+        ],
+        [
+          "ⲗ",
+          240
+        ],
+        [
+          "ⲛ",
+          104
+        ],
+        [
+          "ⲡ",
+          99
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "078",
+      "total": 3110647,
+      "top": [
+        [
+          "_lacuna_dot",
+          2640012
+        ],
+        [
+          "_unknown",
+          460087
+        ],
+        [
+          "_multi_char_connected",
+          2717
+        ],
+        [
+          "ⲓ",
+          2684
+        ],
+        [
+          "ⲟ",
+          2044
+        ],
+        [
+          "_left_square_bracket",
+          949
+        ],
+        [
+          "_right_square_bracket",
+          704
+        ],
+        [
+          "ⲛ",
+          296
+        ],
+        [
+          "ⲉ",
+          222
+        ],
+        [
+          "ⲡ",
+          198
+        ],
+        [
+          "ⲃ",
+          158
+        ],
+        [
+          "_mixed_character",
+          110
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "081",
+      "total": 6983544,
+      "top": [
+        [
+          "ⲓ",
+          6525940
+        ],
+        [
+          "_unknown",
+          386296
+        ],
+        [
+          "_lacuna_dot",
+          33313
+        ],
+        [
+          "_right_square_bracket",
+          14943
+        ],
+        [
+          "_left_square_bracket",
+          11379
+        ],
+        [
+          "_mixed_character",
+          4757
+        ],
+        [
+          "ⲧ",
+          4393
+        ],
+        [
+          "ⲭ",
+          1865
+        ],
+        [
+          "ⲥ",
+          370
+        ],
+        [
+          "_multi_char_connected",
+          260
+        ],
+        [
+          "ϯ",
+          20
+        ],
+        [
+          "ⲇ",
+          3
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "084",
+      "total": 12951453,
+      "top": [
+        [
+          "ⲓ",
+          11865052
+        ],
+        [
+          "_right_square_bracket",
+          1017685
+        ],
+        [
+          "ⲧ",
+          19027
+        ],
+        [
+          "_mixed_character",
+          18872
+        ],
+        [
+          "_unknown",
+          12454
+        ],
+        [
+          "_lacuna_dot",
+          11505
+        ],
+        [
+          "_multi_char_connected",
+          4549
+        ],
+        [
+          "ⲭ",
+          1741
+        ],
+        [
+          "_left_square_bracket",
+          462
+        ],
+        [
+          "ⲟ",
+          60
+        ],
+        [
+          "ϯ",
+          14
+        ],
+        [
+          "ⲥ",
+          10
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "086",
+      "total": 516559,
+      "top": [
+        [
+          "ⲡ",
+          446237
+        ],
+        [
+          "_multi_char_connected",
+          47559
+        ],
+        [
+          "ⲏ",
+          12641
+        ],
+        [
+          "ⲉ",
+          5384
+        ],
+        [
+          "_unknown",
+          3042
+        ],
+        [
+          "ⲥ",
+          1059
+        ],
+        [
+          "ⲣ",
+          399
+        ],
+        [
+          "_mixed_character",
+          234
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ϩ",
+          1
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "095",
+      "total": 791700,
+      "top": [
+        [
+          "_multi_char_connected",
+          594732
+        ],
+        [
+          "_lacuna_dot",
+          98523
+        ],
+        [
+          "_unknown",
+          53248
+        ],
+        [
+          "ⲡ",
+          27393
+        ],
+        [
+          "ⲛ",
+          4065
+        ],
+        [
+          "ⲓ",
+          3691
+        ],
+        [
+          "ⲱ",
+          3235
+        ],
+        [
+          "ⲏ",
+          2575
+        ],
+        [
+          "ⲉ",
+          1626
+        ],
+        [
+          "ⲟ",
+          647
+        ],
+        [
+          "_left_square_bracket",
+          470
+        ],
+        [
+          "ⲥ",
+          330
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "112",
+      "total": 10368893,
+      "top": [
+        [
+          "ⲓ",
+          9148928
+        ],
+        [
+          "_left_square_bracket",
+          766098
+        ],
+        [
+          "_unknown",
+          389543
+        ],
+        [
+          "_lacuna_dot",
+          30648
+        ],
+        [
+          "ϯ",
+          16534
+        ],
+        [
+          "_right_square_bracket",
+          6285
+        ],
+        [
+          "_multi_char_connected",
+          4255
+        ],
+        [
+          "_mixed_character",
+          2786
+        ],
+        [
+          "ⲇ",
+          2757
+        ],
+        [
+          "ⲟ",
+          233
+        ],
+        [
+          "ⲉ",
+          204
+        ],
+        [
+          "ⲭ",
+          128
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "117",
+      "total": 2532641,
+      "top": [
+        [
+          "_multi_char_connected",
+          1521959
+        ],
+        [
+          "ⲟ",
+          266775
+        ],
+        [
+          "ⲉ",
+          164489
+        ],
+        [
+          "ⲛ",
+          154027
+        ],
+        [
+          "ⲡ",
+          146622
+        ],
+        [
+          "ⲃ",
+          117005
+        ],
+        [
+          "ⲙ",
+          77020
+        ],
+        [
+          "ⲥ",
+          62945
+        ],
+        [
+          "_lacuna_dot",
+          11935
+        ],
+        [
+          "_unknown",
+          2999
+        ],
+        [
+          "_left_square_bracket",
+          2024
+        ],
+        [
+          "ⲓ",
+          1729
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    },
+    {
+      "cluster": "118",
+      "total": 1252200,
+      "top": [
+        [
+          "_left_square_bracket",
+          978753
+        ],
+        [
+          "_multi_char_connected",
+          82438
+        ],
+        [
+          "ⲓ",
+          63314
+        ],
+        [
+          "ⲩ",
+          23981
+        ],
+        [
+          "_lacuna_dot",
+          19141
+        ],
+        [
+          "ⲭ",
+          18252
+        ],
+        [
+          "ⲉ",
+          17294
+        ],
+        [
+          "ⲣ",
+          14641
+        ],
+        [
+          "_unknown",
+          12817
+        ],
+        [
+          "ⲧ",
+          9990
+        ],
+        [
+          "ⲥ",
+          7754
+        ],
+        [
+          "ⲟ",
+          1927
+        ]
+      ],
+      "source": "projected_from_prior_assigned_and_review_cluster_evidence"
+    }
+  ],
+  "cluster_labels": {
+    "000": {
+      "label": "ⲣ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2173,
+      "purity": 0.9926,
+      "top": [
+        [
+          "ⲣ",
+          2157
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ϣ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲁⲗ",
+          1
+        ]
+      ]
+    },
+    "001": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1802,
+      "purity": 0.9933,
+      "top": [
+        [
+          "_lacuna_dot",
+          1790
+        ],
+        [
+          "ⲣ",
+          2
+        ],
+        [
+          "_unknown",
+          2
+        ],
+        [
+          "ⲱ",
+          2
+        ],
+        [
+          "ϩ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ϣ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ]
+      ]
+    },
+    "002": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5169,
+      "purity": 0.9946,
+      "top": [
+        [
+          "ⲉ",
+          5141
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲧ",
+          3
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲏ",
+          2
+        ]
+      ]
+    },
+    "003": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3061,
+      "purity": 0.9846,
+      "top": [
+        [
+          "ⲛ",
+          3014
+        ],
+        [
+          "ⲁ",
+          7
+        ],
+        [
+          "ⲟ",
+          7
+        ],
+        [
+          "ⲙ",
+          5
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ϥ",
+          4
+        ],
+        [
+          "ⲩ",
+          4
+        ],
+        [
+          "ⲉ",
+          3
+        ]
+      ]
+    },
+    "004": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 957,
+      "purity": 0.9958,
+      "top": [
+        [
+          "_left_square_bracket",
+          953
+        ],
+        [
+          "_right_square_bracket",
+          3
+        ],
+        [
+          "ⲃ",
+          1
+        ]
+      ]
+    },
+    "005": {
+      "label": "_right_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1800,
+      "purity": 0.9994,
+      "top": [
+        [
+          "_right_square_bracket",
+          1799
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ]
+      ]
+    },
+    "006": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2026,
+      "purity": 0.9457,
+      "top": [
+        [
+          "_lacuna_dot",
+          1916
+        ],
+        [
+          "_unknown",
+          97
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲟ",
+          1
+        ],
+        [
+          "ϣ",
+          1
+        ],
+        [
+          "ⲇ",
+          1
+        ],
+        [
+          "ⲡ",
+          1
+        ]
+      ]
+    },
+    "007": {
+      "label": "ⲥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5211,
+      "purity": 0.981,
+      "top": [
+        [
+          "ⲥ",
+          5112
+        ],
+        [
+          "ⲛ",
+          18
+        ],
+        [
+          "ⲁ",
+          16
+        ],
+        [
+          "ⲙ",
+          9
+        ],
+        [
+          "ⲟ",
+          9
+        ],
+        [
+          "ⲉ",
+          8
+        ],
+        [
+          "ⲧ",
+          6
+        ],
+        [
+          "ϥ",
+          5
+        ]
+      ]
+    },
+    "008": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3658,
+      "purity": 0.9866,
+      "top": [
+        [
+          "ⲧ",
+          3609
+        ],
+        [
+          "ⲁ",
+          12
+        ],
+        [
+          "ⲉ",
+          12
+        ],
+        [
+          "ⲛ",
+          10
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ϥ",
+          2
+        ]
+      ]
+    },
+    "009": {
+      "label": "ⲙ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4749,
+      "purity": 0.9933,
+      "top": [
+        [
+          "ⲙ",
+          4717
+        ],
+        [
+          "ⲧ",
+          6
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "ⲡ",
+          4
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲟ",
+          2
+        ]
+      ]
+    },
+    "010": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 6797,
+      "purity": 0.9873,
+      "top": [
+        [
+          "ⲁ",
+          6711
+        ],
+        [
+          "ⲛ",
+          16
+        ],
+        [
+          "ⲣ",
+          9
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ⲡ",
+          7
+        ],
+        [
+          "ⲥ",
+          6
+        ],
+        [
+          "ⲟ",
+          6
+        ]
+      ]
+    },
+    "011": {
+      "label": "ⲩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4619,
+      "purity": 0.9892,
+      "top": [
+        [
+          "ⲩ",
+          4569
+        ],
+        [
+          "ⲁ",
+          10
+        ],
+        [
+          "ⲛ",
+          8
+        ],
+        [
+          "ⲉ",
+          6
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ϩ",
+          3
+        ],
+        [
+          "ⲥ",
+          3
+        ]
+      ]
+    },
+    "012": {
+      "label": "ⲟ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4186,
+      "purity": 0.989,
+      "top": [
+        [
+          "ⲟ",
+          4140
+        ],
+        [
+          "ⲥ",
+          7
+        ],
+        [
+          "ⲛ",
+          6
+        ],
+        [
+          "ⲩ",
+          5
+        ],
+        [
+          "ⲣ",
+          4
+        ],
+        [
+          "ϫ",
+          3
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲧ",
+          3
+        ]
+      ]
+    },
+    "013": {
+      "label": "ⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5295,
+      "purity": 0.9885,
+      "top": [
+        [
+          "ⲡ",
+          5234
+        ],
+        [
+          "ⲛ",
+          8
+        ],
+        [
+          "ⲥ",
+          7
+        ],
+        [
+          "ⲁ",
+          7
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲏ",
+          5
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲣ",
+          3
+        ]
+      ]
+    },
+    "014": {
+      "label": "ⲱ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 7059,
+      "purity": 0.9904,
+      "top": [
+        [
+          "ⲱ",
+          6991
+        ],
+        [
+          "ϥ",
+          10
+        ],
+        [
+          "ⲛ",
+          9
+        ],
+        [
+          "ⲁ",
+          9
+        ],
+        [
+          "ⲉ",
+          7
+        ],
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ϩ",
+          5
+        ],
+        [
+          "ⲙ",
+          4
+        ]
+      ]
+    },
+    "015": {
+      "label": "ϥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 935,
+      "purity": 0.9786,
+      "top": [
+        [
+          "ϥ",
+          915
+        ],
+        [
+          "ⲱ",
+          4
+        ],
+        [
+          "ϩ",
+          4
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ]
+      ]
+    },
+    "016": {
+      "label": "ϣ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2179,
+      "purity": 0.9844,
+      "top": [
+        [
+          "ϣ",
+          2145
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ⲟ",
+          3
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ϫ",
+          2
+        ]
+      ]
+    },
+    "017": {
+      "label": "ϩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2437,
+      "purity": 0.986,
+      "top": [
+        [
+          "ϩ",
+          2403
+        ],
+        [
+          "ⲛ",
+          8
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲧ",
+          3
+        ],
+        [
+          "ⲩ",
+          3
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲏ",
+          3
+        ]
+      ]
+    },
+    "018": {
+      "label": "ⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1700,
+      "purity": 0.9912,
+      "top": [
+        [
+          "ⲡ",
+          1685
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲏ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ϥ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ]
+      ]
+    },
+    "019": {
+      "label": "ⲕ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3427,
+      "purity": 0.998,
+      "top": [
+        [
+          "ⲕ",
+          3420
+        ],
+        [
+          "_left_square_bracket",
+          4
+        ],
+        [
+          "ⲃ",
+          2
+        ],
+        [
+          "ϭ",
+          1
+        ]
+      ]
+    },
+    "020": {
+      "label": "ⲃ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 883,
+      "purity": 0.9966,
+      "top": [
+        [
+          "ⲃ",
+          880
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ]
+      ]
+    },
+    "021": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3110,
+      "purity": 0.9887,
+      "top": [
+        [
+          "ⲁ",
+          3075
+        ],
+        [
+          "ⲛ",
+          9
+        ],
+        [
+          "ⲥ",
+          7
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲏ",
+          2
+        ],
+        [
+          "ⲩ",
+          2
+        ]
+      ]
+    },
+    "022": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 9,
+      "review_evidence_total": 6022704,
+      "top": [
+        [
+          "ⲓ",
+          5542005
+        ],
+        [
+          "_unknown",
+          283685
+        ],
+        [
+          "_left_square_bracket",
+          99877
+        ],
+        [
+          "_right_square_bracket",
+          65715
+        ],
+        [
+          "_lacuna_dot",
+          22216
+        ],
+        [
+          "_multi_char_connected",
+          3489
+        ],
+        [
+          "ϯ",
+          2182
+        ],
+        [
+          "_mixed_character",
+          1631
+        ]
+      ]
+    },
+    "023": {
+      "label": "ⲗ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1777,
+      "purity": 0.9955,
+      "top": [
+        [
+          "ⲗ",
+          1769
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ],
+        [
+          "ⲁⲗ",
+          1
+        ],
+        [
+          "ϭ",
+          1
+        ]
+      ]
+    },
+    "024": {
+      "label": "ⲏ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2611,
+      "purity": 0.992,
+      "top": [
+        [
+          "ⲏ",
+          2590
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ϩ",
+          3
+        ],
+        [
+          "ϣ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲩ",
+          2
+        ],
+        [
+          "ϥ",
+          1
+        ]
+      ]
+    },
+    "025": {
+      "label": "_right_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4927,
+      "purity": 0.9955,
+      "top": [
+        [
+          "_right_square_bracket",
+          4905
+        ],
+        [
+          "_left_square_bracket",
+          16
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲃ",
+          1
+        ],
+        [
+          "ⲫ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ]
+      ]
+    },
+    "026": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2635,
+      "purity": 0.9985,
+      "top": [
+        [
+          "ⲧ",
+          2631
+        ],
+        [
+          "ⲩ",
+          2
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲥ",
+          1
+        ]
+      ]
+    },
+    "027": {
+      "label": "_unknown",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3848,
+      "purity": 0.9867,
+      "top": [
+        [
+          "_unknown",
+          3797
+        ],
+        [
+          "_lacuna_dot",
+          33
+        ],
+        [
+          "ⲟ",
+          4
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲱ",
+          2
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ϥ",
+          1
+        ]
+      ]
+    },
+    "028": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1312,
+      "purity": 0.9962,
+      "top": [
+        [
+          "ⲛ",
+          1307
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲏ",
+          1
+        ]
+      ]
+    },
+    "029": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 189,
+      "review_evidence_total": 32440428,
+      "top": [
+        [
+          "_lacuna_dot",
+          28587585
+        ],
+        [
+          "_unknown",
+          3788772
+        ],
+        [
+          "ⲓ",
+          23332
+        ],
+        [
+          "_multi_char_connected",
+          12677
+        ],
+        [
+          "_right_square_bracket",
+          11253
+        ],
+        [
+          "ⲟ",
+          9382
+        ],
+        [
+          "ⲛ",
+          3761
+        ],
+        [
+          "ⲱ",
+          3746
+        ]
+      ]
+    },
+    "030": {
+      "label": "ϭ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1805,
+      "purity": 0.9967,
+      "top": [
+        [
+          "ϭ",
+          1799
+        ],
+        [
+          "_left_square_bracket",
+          2
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ],
+        [
+          "ⲃ",
+          1
+        ]
+      ]
+    },
+    "031": {
+      "label": "ⲭ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 806,
+      "purity": 0.9963,
+      "top": [
+        [
+          "ⲭ",
+          803
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ],
+        [
+          "ϭ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ]
+      ]
+    },
+    "032": {
+      "label": "ϫ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3616,
+      "purity": 0.9853,
+      "top": [
+        [
+          "ϫ",
+          3563
+        ],
+        [
+          "ⲛ",
+          10
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲟ",
+          6
+        ],
+        [
+          "ⲣ",
+          5
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲩ",
+          3
+        ]
+      ]
+    },
+    "033": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4380,
+      "purity": 0.9966,
+      "top": [
+        [
+          "ⲛ",
+          4365
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲩ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲟ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ]
+      ]
+    },
+    "034": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3564,
+      "purity": 0.9933,
+      "top": [
+        [
+          "ⲉ",
+          3540
+        ],
+        [
+          "ⲩ",
+          4
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ]
+      ]
+    },
+    "035": {
+      "label": "ⲟ",
+      "confidence": "weak_projected_from_prior_reviewed_clusters",
+      "evidence_total": 80,
+      "purity": 0.75,
+      "top": [
+        [
+          "ⲟ",
+          60
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲃ",
+          4
+        ],
+        [
+          "ϥ",
+          4
+        ],
+        [
+          "ⲣ",
+          2
+        ],
+        [
+          "ⲁ",
+          1
+        ]
+      ]
+    },
+    "036": {
+      "label": "ⲑ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 811,
+      "purity": 0.9901,
+      "top": [
+        [
+          "ⲑ",
+          803
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲧⲏ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ]
+      ]
+    },
+    "037": {
+      "label": "ⲥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1834,
+      "purity": 0.9749,
+      "top": [
+        [
+          "ⲥ",
+          1788
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲁ",
+          8
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲟ",
+          4
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ⲡ",
+          3
+        ]
+      ]
+    },
+    "038": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2534,
+      "purity": 0.9964,
+      "top": [
+        [
+          "_left_square_bracket",
+          2525
+        ],
+        [
+          "_right_square_bracket",
+          6
+        ],
+        [
+          "ⲡ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ],
+        [
+          "ⲃ",
+          1
+        ]
+      ]
+    },
+    "039": {
+      "label": "ϣ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2266,
+      "purity": 0.9916,
+      "top": [
+        [
+          "ϣ",
+          2247
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ⲏ",
+          2
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲱ",
+          1
+        ],
+        [
+          "ϥ",
+          1
+        ]
+      ]
+    },
+    "040": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3028,
+      "purity": 0.9888,
+      "top": [
+        [
+          "ⲧ",
+          2994
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲁ",
+          6
+        ],
+        [
+          "ⲛ",
+          5
+        ],
+        [
+          "ⲏ",
+          4
+        ],
+        [
+          "ⲩ",
+          3
+        ],
+        [
+          "ϩ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ]
+      ]
+    },
+    "041": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 1,
+      "review_evidence_total": 486830,
+      "top": [
+        [
+          "_multi_char_connected",
+          400500
+        ],
+        [
+          "_lacuna_dot",
+          56070
+        ],
+        [
+          "_unknown",
+          20470
+        ],
+        [
+          "ⲛ",
+          2670
+        ],
+        [
+          "ⲱ",
+          2225
+        ],
+        [
+          "ⲡ",
+          2225
+        ],
+        [
+          "ⲏ",
+          1335
+        ],
+        [
+          "ⲓ",
+          1335
+        ]
+      ]
+    },
+    "042": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1223,
+      "purity": 0.9836,
+      "top": [
+        [
+          "_lacuna_dot",
+          1203
+        ],
+        [
+          "_unknown",
+          8
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ϥ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ]
+      ]
+    },
+    "043": {
+      "label": "ϩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2735,
+      "purity": 0.9887,
+      "top": [
+        [
+          "ϩ",
+          2704
+        ],
+        [
+          "ⲛ",
+          6
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲩ",
+          2
+        ],
+        [
+          "ⲣ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲱ",
+          2
+        ]
+      ]
+    },
+    "044": {
+      "label": "ⲧⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 546,
+      "purity": 0.9835,
+      "top": [
+        [
+          "ⲧⲡ",
+          537
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲉ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ϩ",
+          1
+        ]
+      ]
+    },
+    "045": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2508,
+      "purity": 0.996,
+      "top": [
+        [
+          "ⲧ",
+          2498
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ⲉ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ]
+      ]
+    },
+    "046": {
+      "label": "ⲟ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3138,
+      "purity": 0.9895,
+      "top": [
+        [
+          "ⲟ",
+          3105
+        ],
+        [
+          "ⲩ",
+          7
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ⲥ",
+          5
+        ],
+        [
+          "ⲙ",
+          3
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ϥ",
+          2
+        ]
+      ]
+    },
+    "047": {
+      "label": "ⲩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4556,
+      "purity": 0.9928,
+      "top": [
+        [
+          "ⲩ",
+          4523
+        ],
+        [
+          "ⲁ",
+          8
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲧ",
+          5
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "ϫ",
+          3
+        ],
+        [
+          "ⲏ",
+          2
+        ],
+        [
+          "ⲉ",
+          2
+        ]
+      ]
+    },
+    "048": {
+      "label": "ⲣ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5908,
+      "purity": 0.9882,
+      "top": [
+        [
+          "ⲣ",
+          5838
+        ],
+        [
+          "ⲁ",
+          15
+        ],
+        [
+          "ⲉ",
+          10
+        ],
+        [
+          "ⲙ",
+          8
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲥ",
+          5
+        ],
+        [
+          "ⲩ",
+          4
+        ],
+        [
+          "ϥ",
+          3
+        ]
+      ]
+    },
+    "049": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 6470,
+      "purity": 0.9887,
+      "top": [
+        [
+          "ⲁ",
+          6397
+        ],
+        [
+          "ⲉ",
+          9
+        ],
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ⲟ",
+          7
+        ],
+        [
+          "ϩ",
+          6
+        ],
+        [
+          "ⲙ",
+          6
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ϣ",
+          5
+        ]
+      ]
+    },
+    "050": {
+      "label": "ϯ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1163,
+      "purity": 0.9983,
+      "top": [
+        [
+          "ϯ",
+          1161
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "ⲃ",
+          1
+        ]
+      ]
+    },
+    "051": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 0,
+      "review_evidence_total": 182455,
+      "top": [
+        [
+          "_unknown",
+          101052
+        ],
+        [
+          "_lacuna_dot",
+          68571
+        ],
+        [
+          "_multi_char_connected",
+          10426
+        ],
+        [
+          "_mixed_character",
+          2005
+        ],
+        [
+          "ⲓ",
+          401
+        ]
+      ]
+    },
+    "052": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 121,
+      "review_evidence_total": 42930202,
+      "top": [
+        [
+          "_lacuna_dot",
+          35721324
+        ],
+        [
+          "_unknown",
+          7087976
+        ],
+        [
+          "ⲓ",
+          88649
+        ],
+        [
+          "_multi_char_connected",
+          21708
+        ],
+        [
+          "_right_square_bracket",
+          4614
+        ],
+        [
+          "_left_square_bracket",
+          2327
+        ],
+        [
+          "ⲗ",
+          1501
+        ],
+        [
+          "ⲕ",
+          1501
+        ]
+      ]
+    },
+    "053": {
+      "label": "ⲁⲗ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 618,
+      "purity": 0.9951,
+      "top": [
+        [
+          "ⲁⲗ",
+          615
+        ],
+        [
+          "ⲗ",
+          2
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ]
+      ]
+    },
+    "054": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4349,
+      "purity": 0.9848,
+      "top": [
+        [
+          "ⲉ",
+          4283
+        ],
+        [
+          "ⲧ",
+          12
+        ],
+        [
+          "ⲁ",
+          10
+        ],
+        [
+          "ⲛ",
+          8
+        ],
+        [
+          "ⲣ",
+          6
+        ],
+        [
+          "ⲙ",
+          5
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ⲥ",
+          4
+        ]
+      ]
+    },
+    "055": {
+      "label": "ϥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1177,
+      "purity": 0.9839,
+      "top": [
+        [
+          "ϥ",
+          1158
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲙ",
+          3
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ϣ",
+          1
+        ],
+        [
+          "ϫ",
+          1
+        ],
+        [
+          "ⲟ",
+          1
+        ]
+      ]
+    },
+    "056": {
+      "label": "ⲙ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5985,
+      "purity": 0.9923,
+      "top": [
+        [
+          "ⲙ",
+          5939
+        ],
+        [
+          "ⲁ",
+          11
+        ],
+        [
+          "ⲉ",
+          7
+        ],
+        [
+          "ⲛ",
+          6
+        ],
+        [
+          "ϥ",
+          4
+        ],
+        [
+          "ⲧ",
+          2
+        ],
+        [
+          "ⲣ",
+          2
+        ],
+        [
+          "ϩ",
+          2
+        ]
+      ]
+    },
+    "057": {
+      "label": "ⲧ",
+      "confidence": "weak_projected_from_prior_reviewed_clusters",
+      "evidence_total": 9,
+      "purity": 0.7778,
+      "top": [
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "_right_square_bracket",
+          1
+        ]
+      ]
+    },
+    "058": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 6,
+      "review_evidence_total": 3323243,
+      "top": [
+        [
+          "ⲥ",
+          1873077
+        ],
+        [
+          "_multi_char_connected",
+          596361
+        ],
+        [
+          "ⲟ",
+          526425
+        ],
+        [
+          "ⲣ",
+          230244
+        ],
+        [
+          "ⲉ",
+          23465
+        ],
+        [
+          "ⲛ",
+          20801
+        ],
+        [
+          "ⲡ",
+          19801
+        ],
+        [
+          "ⲃ",
+          17066
+        ]
+      ]
+    },
+    "059": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4748,
+      "purity": 0.9971,
+      "top": [
+        [
+          "ⲁ",
+          4734
+        ],
+        [
+          "ⲛ",
+          5
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ],
+        [
+          "ⲍ",
+          1
+        ],
+        [
+          "ⲇ",
+          1
+        ]
+      ]
+    },
+    "060": {
+      "label": "ϥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2248,
+      "purity": 0.9956,
+      "top": [
+        [
+          "ϥ",
+          2238
+        ],
+        [
+          "ⲧ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ϩ",
+          1
+        ],
+        [
+          "ⲱ",
+          1
+        ],
+        [
+          "ⲗ",
+          1
+        ],
+        [
+          "ⲩ",
+          1
+        ]
+      ]
+    },
+    "061": {
+      "label": "ⲧⲏ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 599,
+      "purity": 0.9933,
+      "top": [
+        [
+          "ⲧⲏ",
+          595
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ϩ",
+          1
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ]
+      ]
+    },
+    "062": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3035,
+      "purity": 0.9881,
+      "top": [
+        [
+          "ⲧ",
+          2999
+        ],
+        [
+          "ⲁ",
+          7
+        ],
+        [
+          "ⲉ",
+          7
+        ],
+        [
+          "ⲣ",
+          4
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ]
+      ]
+    },
+    "063": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3240,
+      "purity": 0.9877,
+      "top": [
+        [
+          "ⲛ",
+          3200
+        ],
+        [
+          "ⲁ",
+          8
+        ],
+        [
+          "ϥ",
+          5
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲙ",
+          3
+        ],
+        [
+          "ⲩ",
+          3
+        ]
+      ]
+    },
+    "064": {
+      "label": "ⲙ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4451,
+      "purity": 0.9854,
+      "top": [
+        [
+          "ⲙ",
+          4386
+        ],
+        [
+          "ⲁ",
+          12
+        ],
+        [
+          "ⲛ",
+          9
+        ],
+        [
+          "ⲉ",
+          7
+        ],
+        [
+          "ⲟ",
+          7
+        ],
+        [
+          "ⲱ",
+          6
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ⲥ",
+          4
+        ]
+      ]
+    },
+    "065": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4119,
+      "purity": 0.9927,
+      "top": [
+        [
+          "ⲉ",
+          4089
+        ],
+        [
+          "ⲁ",
+          6
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ϥ",
+          3
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ]
+      ]
+    },
+    "066": {
+      "label": "ⲍ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 209,
+      "purity": 0.9809,
+      "top": [
+        [
+          "ⲍ",
+          205
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ]
+      ]
+    },
+    "067": {
+      "label": "ⲕ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1964,
+      "purity": 0.9975,
+      "top": [
+        [
+          "ⲕ",
+          1959
+        ],
+        [
+          "_right_square_bracket",
+          3
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ]
+      ]
+    },
+    "068": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 6,
+      "review_evidence_total": 627255,
+      "top": [
+        [
+          "ⲣ",
+          441051
+        ],
+        [
+          "ⲡ",
+          186204
+        ],
+        [
+          "ⲇ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲟ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ]
+      ]
+    },
+    "069": {
+      "label": "ϩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2519,
+      "purity": 0.9849,
+      "top": [
+        [
+          "ϩ",
+          2481
+        ],
+        [
+          "ⲛ",
+          7
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲡ",
+          3
+        ],
+        [
+          "ϣ",
+          3
+        ],
+        [
+          "ⲣ",
+          3
+        ],
+        [
+          "ⲩ",
+          3
+        ]
+      ]
+    },
+    "070": {
+      "label": "ⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3068,
+      "purity": 0.9941,
+      "top": [
+        [
+          "ⲡ",
+          3050
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲧ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲣ",
+          2
+        ],
+        [
+          "ⲟ",
+          1
+        ],
+        [
+          "ⲩ",
+          1
+        ]
+      ]
+    },
+    "071": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 5674,
+      "purity": 0.9931,
+      "top": [
+        [
+          "ⲉ",
+          5635
+        ],
+        [
+          "ⲁ",
+          6
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ⲙ",
+          5
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ⲩ",
+          4
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ϫ",
+          2
+        ]
+      ]
+    },
+    "072": {
+      "label": "ⲥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2155,
+      "purity": 0.9921,
+      "top": [
+        [
+          "ⲥ",
+          2138
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ϩ",
+          3
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲩ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ]
+      ]
+    },
+    "073": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 25,
+      "review_evidence_total": 2534576,
+      "top": [
+        [
+          "ⲥ",
+          1565490
+        ],
+        [
+          "ⲟ",
+          412421
+        ],
+        [
+          "_multi_char_connected",
+          357221
+        ],
+        [
+          "ⲣ",
+          193323
+        ],
+        [
+          "ⲓ",
+          1857
+        ],
+        [
+          "ⲉ",
+          1172
+        ],
+        [
+          "ⲃ",
+          1144
+        ],
+        [
+          "_left_square_bracket",
+          1037
+        ]
+      ]
+    },
+    "074": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1576,
+      "purity": 0.9987,
+      "top": [
+        [
+          "_left_square_bracket",
+          1574
+        ],
+        [
+          "ⲃ",
+          2
+        ]
+      ]
+    },
+    "075": {
+      "label": "ⲫ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 535,
+      "purity": 0.9963,
+      "top": [
+        [
+          "ⲫ",
+          533
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ],
+        [
+          "ϯ",
+          1
+        ]
+      ]
+    },
+    "076": {
+      "label": "ϩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2696,
+      "purity": 0.997,
+      "top": [
+        [
+          "ϩ",
+          2688
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ],
+        [
+          "ⲩ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ϫ",
+          1
+        ]
+      ]
+    },
+    "077": {
+      "label": "ⲃ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1821,
+      "purity": 0.9989,
+      "top": [
+        [
+          "ⲃ",
+          1819
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "ⲛ",
+          1
+        ]
+      ]
+    },
+    "078": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 408,
+      "review_evidence_total": 3110239,
+      "top": [
+        [
+          "_lacuna_dot",
+          2640012
+        ],
+        [
+          "_unknown",
+          460087
+        ],
+        [
+          "_multi_char_connected",
+          2717
+        ],
+        [
+          "ⲓ",
+          2684
+        ],
+        [
+          "ⲟ",
+          2044
+        ],
+        [
+          "_left_square_bracket",
+          949
+        ],
+        [
+          "_right_square_bracket",
+          704
+        ],
+        [
+          "ⲛ",
+          296
+        ]
+      ]
+    },
+    "079": {
+      "label": "ⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3213,
+      "purity": 0.9882,
+      "top": [
+        [
+          "ⲡ",
+          3175
+        ],
+        [
+          "ⲁ",
+          11
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲧ",
+          5
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲙ",
+          3
+        ],
+        [
+          "ϩ",
+          2
+        ]
+      ]
+    },
+    "080": {
+      "label": "_right_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 370,
+      "purity": 0.9892,
+      "top": [
+        [
+          "_right_square_bracket",
+          366
+        ],
+        [
+          "_left_square_bracket",
+          4
+        ]
+      ]
+    },
+    "081": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 9,
+      "review_evidence_total": 6983535,
+      "top": [
+        [
+          "ⲓ",
+          6525940
+        ],
+        [
+          "_unknown",
+          386296
+        ],
+        [
+          "_lacuna_dot",
+          33313
+        ],
+        [
+          "_right_square_bracket",
+          14943
+        ],
+        [
+          "_left_square_bracket",
+          11379
+        ],
+        [
+          "_mixed_character",
+          4757
+        ],
+        [
+          "ⲧ",
+          4393
+        ],
+        [
+          "ⲭ",
+          1865
+        ]
+      ]
+    },
+    "082": {
+      "label": "ⲃ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1690,
+      "purity": 0.9994,
+      "top": [
+        [
+          "ⲃ",
+          1689
+        ],
+        [
+          "ⲣ",
+          1
+        ]
+      ]
+    },
+    "083": {
+      "label": "ⲩ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4731,
+      "purity": 0.9905,
+      "top": [
+        [
+          "ⲩ",
+          4686
+        ],
+        [
+          "ⲛ",
+          7
+        ],
+        [
+          "ⲟ",
+          6
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ϩ",
+          5
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ϥ",
+          3
+        ]
+      ]
+    },
+    "084": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 28,
+      "review_evidence_total": 12951425,
+      "top": [
+        [
+          "ⲓ",
+          11865052
+        ],
+        [
+          "_right_square_bracket",
+          1017685
+        ],
+        [
+          "ⲧ",
+          19027
+        ],
+        [
+          "_mixed_character",
+          18872
+        ],
+        [
+          "_unknown",
+          12454
+        ],
+        [
+          "_lacuna_dot",
+          11505
+        ],
+        [
+          "_multi_char_connected",
+          4549
+        ],
+        [
+          "ⲭ",
+          1741
+        ]
+      ]
+    },
+    "085": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2408,
+      "purity": 0.9784,
+      "top": [
+        [
+          "_lacuna_dot",
+          2356
+        ],
+        [
+          "_unknown",
+          50
+        ],
+        [
+          "ⲏ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ]
+      ]
+    },
+    "086": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 7,
+      "review_evidence_total": 516552,
+      "top": [
+        [
+          "ⲡ",
+          446237
+        ],
+        [
+          "_multi_char_connected",
+          47559
+        ],
+        [
+          "ⲏ",
+          12641
+        ],
+        [
+          "ⲉ",
+          5384
+        ],
+        [
+          "_unknown",
+          3042
+        ],
+        [
+          "ⲥ",
+          1059
+        ],
+        [
+          "ⲣ",
+          399
+        ],
+        [
+          "_mixed_character",
+          234
+        ]
+      ]
+    },
+    "087": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 30,
+      "purity": 1.0,
+      "top": [
+        [
+          "_left_square_bracket",
+          30
+        ]
+      ]
+    },
+    "088": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2760,
+      "purity": 0.9888,
+      "top": [
+        [
+          "ⲛ",
+          2729
+        ],
+        [
+          "ⲁ",
+          9
+        ],
+        [
+          "ϥ",
+          3
+        ],
+        [
+          "ⲧ",
+          3
+        ],
+        [
+          "ⲩ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲉ",
+          2
+        ]
+      ]
+    },
+    "089": {
+      "label": "ⲡ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 414,
+      "purity": 1.0,
+      "top": [
+        [
+          "ⲡ",
+          414
+        ]
+      ]
+    },
+    "090": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2405,
+      "purity": 0.9871,
+      "top": [
+        [
+          "ⲧ",
+          2374
+        ],
+        [
+          "ⲁ",
+          7
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ϩ",
+          3
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ϣ",
+          2
+        ]
+      ]
+    },
+    "091": {
+      "label": "ⲇ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 812,
+      "purity": 0.9815,
+      "top": [
+        [
+          "ⲇ",
+          797
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲟ",
+          2
+        ],
+        [
+          "ⲧⲡ",
+          1
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ],
+        [
+          "ϫ",
+          1
+        ],
+        [
+          "ⲙⲁ",
+          1
+        ]
+      ]
+    },
+    "092": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 6130,
+      "purity": 0.9876,
+      "top": [
+        [
+          "ⲁ",
+          6054
+        ],
+        [
+          "ⲣ",
+          11
+        ],
+        [
+          "ⲧ",
+          9
+        ],
+        [
+          "ⲡ",
+          7
+        ],
+        [
+          "ϥ",
+          6
+        ],
+        [
+          "ⲛ",
+          6
+        ],
+        [
+          "ⲟ",
+          5
+        ],
+        [
+          "ⲥ",
+          5
+        ]
+      ]
+    },
+    "093": {
+      "label": "ⲥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3117,
+      "purity": 0.9904,
+      "top": [
+        [
+          "ⲥ",
+          3087
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲛ",
+          4
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲟ",
+          3
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ϫ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ]
+      ]
+    },
+    "094": {
+      "label": "ⲣ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1692,
+      "purity": 0.9835,
+      "top": [
+        [
+          "ⲣ",
+          1664
+        ],
+        [
+          "ⲥ",
+          6
+        ],
+        [
+          "ⲟ",
+          4
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲛ",
+          2
+        ],
+        [
+          "ϫ",
+          2
+        ]
+      ]
+    },
+    "095": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 367,
+      "review_evidence_total": 791333,
+      "top": [
+        [
+          "_multi_char_connected",
+          594732
+        ],
+        [
+          "_lacuna_dot",
+          98523
+        ],
+        [
+          "_unknown",
+          53248
+        ],
+        [
+          "ⲡ",
+          27393
+        ],
+        [
+          "ⲛ",
+          4065
+        ],
+        [
+          "ⲓ",
+          3691
+        ],
+        [
+          "ⲱ",
+          3235
+        ],
+        [
+          "ⲏ",
+          2575
+        ]
+      ]
+    },
+    "096": {
+      "label": "ⲟ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4677,
+      "purity": 0.9891,
+      "top": [
+        [
+          "ⲟ",
+          4626
+        ],
+        [
+          "ⲉ",
+          7
+        ],
+        [
+          "ⲛ",
+          7
+        ],
+        [
+          "ⲥ",
+          6
+        ],
+        [
+          "ⲩ",
+          6
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ⲡ",
+          4
+        ],
+        [
+          "ⲙ",
+          3
+        ]
+      ]
+    },
+    "097": {
+      "label": "ⲏ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1485,
+      "purity": 0.9825,
+      "top": [
+        [
+          "ⲏ",
+          1459
+        ],
+        [
+          "ⲧ",
+          5
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲁ",
+          3
+        ],
+        [
+          "ⲩ",
+          3
+        ],
+        [
+          "ϥ",
+          2
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲣ",
+          2
+        ]
+      ]
+    },
+    "098": {
+      "label": "ⲟ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3231,
+      "purity": 0.9913,
+      "top": [
+        [
+          "ⲟ",
+          3203
+        ],
+        [
+          "ⲩ",
+          6
+        ],
+        [
+          "ⲛ",
+          5
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "ⲧ",
+          3
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲡ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ]
+      ]
+    },
+    "099": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 594,
+      "purity": 0.9966,
+      "top": [
+        [
+          "ⲉ",
+          592
+        ],
+        [
+          "ⲛ",
+          1
+        ],
+        [
+          "_lacuna_dot",
+          1
+        ]
+      ]
+    },
+    "100": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3367,
+      "purity": 0.9914,
+      "top": [
+        [
+          "ⲛ",
+          3338
+        ],
+        [
+          "ⲁ",
+          6
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲱ",
+          3
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ϩ",
+          3
+        ],
+        [
+          "ⲟ",
+          3
+        ],
+        [
+          "ⲣ",
+          1
+        ]
+      ]
+    },
+    "101": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3914,
+      "purity": 0.9987,
+      "top": [
+        [
+          "ⲉ",
+          3909
+        ],
+        [
+          "ⲡ",
+          2
+        ],
+        [
+          "ⲩ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲙ",
+          1
+        ]
+      ]
+    },
+    "102": {
+      "label": "ⲉ",
+      "confidence": "weak_projected_from_prior_reviewed_clusters",
+      "evidence_total": 15,
+      "purity": 0.8,
+      "top": [
+        [
+          "ⲉ",
+          12
+        ],
+        [
+          "ϩ",
+          2
+        ],
+        [
+          "ϫ",
+          1
+        ]
+      ]
+    },
+    "103": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 50,
+      "purity": 0.96,
+      "top": [
+        [
+          "_left_square_bracket",
+          48
+        ],
+        [
+          "ⲙ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ]
+      ]
+    },
+    "104": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3256,
+      "purity": 0.9788,
+      "top": [
+        [
+          "ⲛ",
+          3187
+        ],
+        [
+          "ⲉ",
+          11
+        ],
+        [
+          "ⲁ",
+          8
+        ],
+        [
+          "ⲟ",
+          6
+        ],
+        [
+          "ϥ",
+          5
+        ],
+        [
+          "ⲥ",
+          5
+        ],
+        [
+          "ⲧ",
+          5
+        ],
+        [
+          "ⲣ",
+          4
+        ]
+      ]
+    },
+    "105": {
+      "label": "ϥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1318,
+      "purity": 0.9681,
+      "top": [
+        [
+          "ϥ",
+          1276
+        ],
+        [
+          "ⲛ",
+          7
+        ],
+        [
+          "ⲁ",
+          7
+        ],
+        [
+          "ϩ",
+          5
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ⲥ",
+          4
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲧ",
+          3
+        ]
+      ]
+    },
+    "106": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1892,
+      "purity": 0.9979,
+      "top": [
+        [
+          "ⲛ",
+          1888
+        ],
+        [
+          "ⲭ",
+          1
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ],
+        [
+          "ⲏ",
+          1
+        ]
+      ]
+    },
+    "107": {
+      "label": "_left_square_bracket",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3707,
+      "purity": 0.9951,
+      "top": [
+        [
+          "_left_square_bracket",
+          3689
+        ],
+        [
+          "_right_square_bracket",
+          7
+        ],
+        [
+          "ⲕ",
+          6
+        ],
+        [
+          "ϯ",
+          2
+        ],
+        [
+          "ϩ",
+          1
+        ],
+        [
+          "ϫ",
+          1
+        ],
+        [
+          "ϭ",
+          1
+        ]
+      ]
+    },
+    "108": {
+      "label": "ⲗ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1783,
+      "purity": 0.9961,
+      "top": [
+        [
+          "ⲗ",
+          1776
+        ],
+        [
+          "ⲁⲗ",
+          2
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "_left_square_bracket",
+          1
+        ],
+        [
+          "ⲕ",
+          1
+        ],
+        [
+          "ⲃ",
+          1
+        ],
+        [
+          "ϭ",
+          1
+        ]
+      ]
+    },
+    "109": {
+      "label": "ⲛ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 4905,
+      "purity": 0.9898,
+      "top": [
+        [
+          "ⲛ",
+          4855
+        ],
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ⲉ",
+          4
+        ],
+        [
+          "ϫ",
+          4
+        ],
+        [
+          "ⲙ",
+          4
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲥ",
+          3
+        ],
+        [
+          "ⲣ",
+          3
+        ]
+      ]
+    },
+    "110": {
+      "label": "ⲉ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 3892,
+      "purity": 0.9872,
+      "top": [
+        [
+          "ⲉ",
+          3842
+        ],
+        [
+          "ⲧ",
+          9
+        ],
+        [
+          "ⲛ",
+          8
+        ],
+        [
+          "ⲡ",
+          5
+        ],
+        [
+          "ⲩ",
+          5
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲏ",
+          3
+        ],
+        [
+          "ⲟ",
+          3
+        ]
+      ]
+    },
+    "111": {
+      "label": "ⲁ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2505,
+      "purity": 0.9808,
+      "top": [
+        [
+          "ⲁ",
+          2457
+        ],
+        [
+          "ⲧ",
+          7
+        ],
+        [
+          "ⲥ",
+          6
+        ],
+        [
+          "ⲙ",
+          5
+        ],
+        [
+          "ⲛ",
+          5
+        ],
+        [
+          "ϣ",
+          5
+        ],
+        [
+          "ⲟ",
+          4
+        ],
+        [
+          "ⲩ",
+          3
+        ]
+      ]
+    },
+    "112": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 7,
+      "review_evidence_total": 10368886,
+      "top": [
+        [
+          "ⲓ",
+          9148928
+        ],
+        [
+          "_left_square_bracket",
+          766098
+        ],
+        [
+          "_unknown",
+          389543
+        ],
+        [
+          "_lacuna_dot",
+          30648
+        ],
+        [
+          "ϯ",
+          16534
+        ],
+        [
+          "_right_square_bracket",
+          6285
+        ],
+        [
+          "_multi_char_connected",
+          4255
+        ],
+        [
+          "_mixed_character",
+          2786
+        ]
+      ]
+    },
+    "113": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2206,
+      "purity": 0.9932,
+      "top": [
+        [
+          "_lacuna_dot",
+          2191
+        ],
+        [
+          "_unknown",
+          7
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲉ",
+          2
+        ],
+        [
+          "ⲁ",
+          1
+        ],
+        [
+          "ⲥ",
+          1
+        ],
+        [
+          "ⲩ",
+          1
+        ]
+      ]
+    },
+    "114": {
+      "label": "_lacuna_dot",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1494,
+      "purity": 0.9946,
+      "top": [
+        [
+          "_lacuna_dot",
+          1486
+        ],
+        [
+          "_unknown",
+          3
+        ],
+        [
+          "ⲁ",
+          2
+        ],
+        [
+          "ϥ",
+          1
+        ],
+        [
+          "ⲧ",
+          1
+        ],
+        [
+          "ⲉ",
+          1
+        ]
+      ]
+    },
+    "115": {
+      "label": "ⲧ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2334,
+      "purity": 0.9914,
+      "top": [
+        [
+          "ⲧ",
+          2314
+        ],
+        [
+          "ⲉ",
+          5
+        ],
+        [
+          "ⲛ",
+          5
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲥ",
+          2
+        ],
+        [
+          "ⲡ",
+          1
+        ],
+        [
+          "ⲣ",
+          1
+        ],
+        [
+          "ⲟ",
+          1
+        ]
+      ]
+    },
+    "116": {
+      "label": "ⲏ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 2236,
+      "purity": 0.9852,
+      "top": [
+        [
+          "ⲏ",
+          2203
+        ],
+        [
+          "ⲁ",
+          5
+        ],
+        [
+          "ϩ",
+          5
+        ],
+        [
+          "ⲧ",
+          4
+        ],
+        [
+          "ⲟ",
+          4
+        ],
+        [
+          "ⲣ",
+          4
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲉ",
+          2
+        ]
+      ]
+    },
+    "117": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 26,
+      "review_evidence_total": 2532615,
+      "top": [
+        [
+          "_multi_char_connected",
+          1521959
+        ],
+        [
+          "ⲟ",
+          266775
+        ],
+        [
+          "ⲉ",
+          164489
+        ],
+        [
+          "ⲛ",
+          154027
+        ],
+        [
+          "ⲡ",
+          146622
+        ],
+        [
+          "ⲃ",
+          117005
+        ],
+        [
+          "ⲙ",
+          77020
+        ],
+        [
+          "ⲥ",
+          62945
+        ]
+      ]
+    },
+    "118": {
+      "label": null,
+      "confidence": "projected_review_cluster",
+      "assigned_evidence_total": 12,
+      "review_evidence_total": 1252188,
+      "top": [
+        [
+          "_left_square_bracket",
+          978753
+        ],
+        [
+          "_multi_char_connected",
+          82438
+        ],
+        [
+          "ⲓ",
+          63314
+        ],
+        [
+          "ⲩ",
+          23981
+        ],
+        [
+          "_lacuna_dot",
+          19141
+        ],
+        [
+          "ⲭ",
+          18252
+        ],
+        [
+          "ⲉ",
+          17294
+        ],
+        [
+          "ⲣ",
+          14641
+        ]
+      ]
+    },
+    "119": {
+      "label": "ϥ",
+      "confidence": "strong_projected_from_prior_reviewed_clusters",
+      "evidence_total": 1893,
+      "purity": 0.9878,
+      "top": [
+        [
+          "ϥ",
+          1870
+        ],
+        [
+          "ϩ",
+          4
+        ],
+        [
+          "ⲁ",
+          4
+        ],
+        [
+          "ⲛ",
+          3
+        ],
+        [
+          "ⲉ",
+          3
+        ],
+        [
+          "ⲱ",
+          2
+        ],
+        [
+          "ⲙ",
+          2
+        ],
+        [
+          "ⲧ",
+          2
+        ]
+      ]
+    }
+  }
+}

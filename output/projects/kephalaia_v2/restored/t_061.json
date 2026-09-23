@@ -1,0 +1,740 @@
+{
+  "teaching": 61,
+  "total_gaps_in_core": 42,
+  "gaps_restored": 42,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching builds an extended correspondence between body and Father: hidden organs ↔ Father in his kingship; two eyes ↔ two ships of light (sun/moon as Radiances); tongue ↔ Jesus the Radiance who reveals every hidden and manifest matter. Most gaps are tightly constrained by recurrent formulae (ⲭⲓ ϣⲟⲁ ⲍⲓ ⲡⲗⲏⲣⲏ 'receive honor in fullness'; ⲟⲩⲱⲛⲍ ⲁⲃⲁⲗ 'manifest forth'; the existential ⲟⲩⲛ̄ pattern; the ⲡⲡⲣⲓⲉ title). Internal-letter restorations and short structural fills are high confidence. Two genuinely uncertain points: the heading's 'four -ⲱⲧ' (kept tentatively as 'fathers' per editor, low confidence — four fathers is irregular; could be a different -ⲱⲧ word), and the 8-char gap {3} after ⲛ̄ⲉⲩ- which I tentatively read as 'each other' (the body and Father being likeness of one another). The substantial gap {22} continues the soul-affliction parallel ('they afflicting her, she being…').",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 3713,
+      "chapter": 60,
+      "line": 1,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲃⲉ",
+      "basis": "Standard chapter heading formula ⲉⲧⲃⲉ + topic; final ⲉ visible.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 3713,
+      "chapter": 60,
+      "line": 1,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Editor reads ⲛⲓⲱⲧ 'fathers' completing ⲡϩⲧⲁⲩ ⲛⲓⲱⲧ 'the four fathers.' Only -ⲱⲧ preserved; the four-fathers grouping is anomalous (canonical Manichaean is five Fathers/Greatnesses), so confidence is low — could be a different -ⲱⲧ noun.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 2,
+      "section": 3714,
+      "chapter": 60,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲉ",
+      "basis": "Lyc. ⲭⲉ for ϫⲉ; standard clausal complementizer following the heading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 3714,
+      "chapter": 60,
+      "line": 2,
+      "gap_type": "lacuna",
+      "proposed_coptic": "ⲉⲣⲏⲩ",
+      "basis": "ⲛ̄ⲉⲩⲉⲣⲏⲩ 'of one another' fits the heading's correspondence-claim (the four [members?] being a likeness of each other, body↔Father). Length plausible at ~7 chars including the visible ⲛ̄ⲉⲩ. Alternative could be a noun like ⲡⲓⲱⲧ but the ⲛ̄ⲉⲩ- suggests possessive 'their X.'",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 4,
+      "section": 3715,
+      "chapter": 60,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲏ",
+      "basis": "ⲡⲣⲏⲧⲉ 'manner' — recurrent in the chapter (lines 12, 19, 23, 30).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 3715,
+      "chapter": 60,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡ",
+      "basis": "Genitive ⲙ̄ⲡⲥⲱⲙⲁ 'of the body'; standard construction with ⲡⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ following.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 3716,
+      "chapter": 60,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "ⲟⲩⲱⲗⲡ̄ ⲁⲃⲁⲗ 'reveal forth'; final ⲡ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 3716,
+      "chapter": 60,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩ",
+      "basis": "Circumstantial ⲉⲩ- introducing the next clause that resumes with ⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ on the next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 3717,
+      "chapter": 60,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲛⲍ ⲁⲃⲁⲗ",
+      "basis": "ⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ 'manifest forth' — the chapter's standard revelation-verb pairing with the preceding ⲟⲩⲱⲗⲡ̄ ⲁⲃⲁⲗ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 3718,
+      "chapter": 60,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "ⲡⲗⲏⲣⲏ split across line break ⲡⲗⲏ-ⲣⲏ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 3718,
+      "chapter": 60,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲛⲕ",
+      "basis": "ⲍⲛ̄ⲕⲉⲕⲁⲩⲉ 'some others' (Lyc. ⲍ for ϩ); parallel with line 5.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 3718,
+      "chapter": 60,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Greek loan οὔτε ⲟⲩⲧⲉ 'nor'; only final ⲉ lost.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 3719,
+      "chapter": 60,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲓ",
+      "basis": "ⲭⲓ ϣⲟⲁ 'receive honor' is the formula (lines 6, 11, 17). Continues from ⲙⲁⲩ- 'they do not' on previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 3720,
+      "chapter": 60,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Existential ⲟⲩⲛ̄ 'there is' opening the parallel-list of clauses.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 3721,
+      "chapter": 60,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Existential ⲟⲩⲛ̄ in parallel with previous and following clauses.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 3722,
+      "chapter": 60,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭ",
+      "basis": "ⲡⲭⲥⲉ 'the Height' (Lyc. ⲭ for ϫ in ⲡϫⲓⲥⲉ); 'far from the honor of the Height' fits the hidden-from-the-exalted schema.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 16,
+      "section": 3722,
+      "chapter": 60,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Final ⲛ of existential ⲟⲩⲛ̄.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 3724,
+      "chapter": 60,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲙⲓ",
+      "basis": "ⲛ̄ⲧⲁⲙⲓⲟⲛ 'storehouses' (lexicon entry); the inner organs of the body correspond to the storehouses where the Father's teaching is hidden.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 3731,
+      "chapter": 60,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Definite article ⲡ- before ⲭⲁⲓ̈ 'ship.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 3731,
+      "chapter": 60,
+      "line": 20,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ̈",
+      "basis": "ⲛⲉⲡⲡⲣⲓ̈ⲉ 'the Radiances' (plural of ⲡⲡⲣⲓ̈ⲉ, lexicon entry) — the two ships of light identified as sun and moon.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 20,
+      "section": 3734,
+      "chapter": 60,
+      "line": 23,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Definite article ⲡ- in ⲙ̄ⲡⲣⲏⲧⲉ 'in the manner.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 3736,
+      "chapter": 60,
+      "line": 25,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲕ",
+      "basis": "ⲕⲁⲣⲁⲓ̈ⲧϥ̄ 'stillness' (lexicon entry ⲡⲕⲁⲣⲁⲓⲧϥ); echoes the immediately preceding ⲍⲛ̄ ⲟⲩⲕⲁⲣⲁⲓ̈ⲧϩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 3738,
+      "chapter": 60,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲉ ⲙ̄ⲙⲁⲥ ⲉⲥ",
+      "basis": "Continues ⲉⲩϣⲱ- from end of previous line: ⲉⲩϣⲱⲟⲉ ⲙ̄ⲙⲁⲥ 'they afflicting her,' parallel to ⲛⲉⲧⲧⲉⲕⲟ ⲙ̄ⲙⲁⲥ 'those destroying her'; ⲉⲥ- introduces feminine circumstantial referring to the soul (ⲧⲯⲩⲭⲏ).",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 23,
+      "section": 3738,
+      "chapter": 60,
+      "line": 27,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲓ",
+      "basis": "Greek loan ⲙⲩⲥⲧⲏⲣⲓⲟⲛ split at line break.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 3739,
+      "chapter": 60,
+      "line": 28,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄",
+      "basis": "ⲡⲥⲱⲙⲁ ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ 'body of the flesh' — the chapter's standard term-pair (lines 4, 23-24, 31).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 3746,
+      "chapter": 60,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϣ",
+      "basis": "ϣⲱⲛⲉ 'sickness'; pairs with ⲡⲙ̄ⲕⲁⲍ 'pain' in the bodily-affliction series.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 3746,
+      "chapter": 60,
+      "line": 35,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲙ̄",
+      "basis": "Preposition ⲍⲙ̄ (Lyc. = ϩⲙ̄) 'in', introducing 'his stripe' as locus.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 27,
+      "section": 3748,
+      "chapter": 60,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲓⲏⲥ",
+      "basis": "Relative ⲉⲧⲉⲣⲉ + ⲓⲏⲥ; the full title ⲓⲏⲥ ⲡⲡⲣⲓⲉ 'Jesus the Radiance' is the chapter's identification of the revealing tongue.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 28,
+      "section": 3748,
+      "chapter": 60,
+      "line": 37,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Final ⲉ of ⲡⲡⲣⲓⲉ 'the Radiance.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 3749,
+      "chapter": 60,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧ",
+      "basis": "Internal ⲧ of ⲧⲛ̄ⲧⲁⲛⲧ 'be likened/compared.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 30,
+      "section": 3749,
+      "chapter": 60,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Internal ⲁ of ⲁⲃⲁⲗ 'forth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 3749,
+      "chapter": 60,
+      "line": 38,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Initial ⲛ of ⲛ̄ⲧⲙⲛⲧⲛⲁ6 'from the Greatness.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 32,
+      "section": 3751,
+      "chapter": 60,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲡⲥⲁ",
+      "basis": "Completes ⲡⲉⲧⲙ̄ⲡⲥⲁⲙⲡⲓⲧⲛⲉ 'that which is upon the lower side'; pair-partner with the preceding ⲡⲥⲁⲛⲧⲡⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 3751,
+      "chapter": 60,
+      "line": 40,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡ",
+      "basis": "Initial ⲡ of ⲡⲓⲧⲛ̄ 'lower.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 3752,
+      "chapter": 60,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩⲁⲛ",
+      "basis": "Completes ⲉⲧⲟⲩⲁⲛⲍ̄ 'which are manifest' (the standard revelation-verb).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 3752,
+      "chapter": 60,
+      "line": 41,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲃⲁⲗ ⲉⲛ",
+      "basis": "Negation required: 'the hidden ones (which are NOT manifest forth)' is contrasted with the immediately following ships-of-light 'which ARE manifest forth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 3753,
+      "chapter": 60,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲍ ⲁ",
+      "basis": "Completes ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ 'which are manifest forth.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 3753,
+      "chapter": 60,
+      "line": 42,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁϩ ⲡⲉ",
+      "basis": "ⲛ̄ⲧⲁϩ ⲡⲉ 'he it is' — pivot phrase introducing Jesus as the revealer (echoed in next line ⲛ̄ⲧⲁϩ ⲁⲛ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 38,
+      "section": 3754,
+      "chapter": 60,
+      "line": 43,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲁ ⲡ",
+      "basis": "ⲍⲁ ⲡⲉⲁⲩ 'concerning the glory'; standard prepositional phrase repeated through the section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 39,
+      "section": 3756,
+      "chapter": 60,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲏ",
+      "basis": "ⲯⲩⲭⲏ ⲉⲧⲁⲛⲍ̄ 'living soul' (lexicon: ⲧⲩⲭⲏ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 40,
+      "section": 3756,
+      "chapter": 60,
+      "line": 45,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Initial ⲁ of ⲁⲃⲁⲗ continuing on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 41,
+      "section": 3757,
+      "chapter": 60,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "Internal ⲣ of ⲍⲁⲣⲁⲥ 'concerning her.'",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 3713,
+      "chapter": 60,
+      "line": 1,
+      "core_english": "Concerning the four {0}."
+    },
+    {
+      "section": 3714,
+      "chapter": 60,
+      "line": 2,
+      "core_english": "That they are a likeness of {1}."
+    },
+    {
+      "section": 3715,
+      "chapter": 60,
+      "line": 4,
+      "core_english": "In the manner of the body of the flesh, that there are members"
+    },
+    {
+      "section": 3716,
+      "chapter": 60,
+      "line": 5,
+      "core_english": "in it which are hidden, and there are others in it which are revealed forth, they being"
+    },
+    {
+      "section": 3717,
+      "chapter": 60,
+      "line": 6,
+      "core_english": "{2} in it, being touched, receiving honor in ful-"
+    },
+    {
+      "section": 3718,
+      "chapter": 60,
+      "line": 7,
+      "core_english": "-lness. There are also others in it which are not touched, nor do they"
+    },
+    {
+      "section": 3719,
+      "chapter": 60,
+      "line": 8,
+      "core_english": "{3} honor — thus also is this, in which the entire Greatness"
+    },
+    {
+      "section": 3720,
+      "chapter": 60,
+      "line": 9,
+      "core_english": "we liken her: there is one in her hidden,"
+    },
+    {
+      "section": 3721,
+      "chapter": 60,
+      "line": 10,
+      "core_english": "there is also one revealed forth, there is one in her be-"
+    },
+    {
+      "section": 3722,
+      "chapter": 60,
+      "line": 11,
+      "core_english": "-ing far forth from the honor of the Height; there is also one in her re-"
+    },
+    {
+      "section": 3724,
+      "chapter": 60,
+      "line": 13,
+      "core_english": "-dy is set within, being hidden in the {4} which are within"
+    },
+    {
+      "section": 3731,
+      "chapter": 60,
+      "line": 20,
+      "core_english": "this — the two ships of light, the Radiances which are manifested"
+    },
+    {
+      "section": 3734,
+      "chapter": 60,
+      "line": 23,
+      "core_english": "-dy, while the soul also lives, being likened in the manner"
+    },
+    {
+      "section": 3736,
+      "chapter": 60,
+      "line": 25,
+      "core_english": "stillness, being manifested forth, they touching her, she receiving ho-"
+    },
+    {
+      "section": 3738,
+      "chapter": 60,
+      "line": 27,
+      "core_english": "{5} being likened according to the mystery of the body"
+    },
+    {
+      "section": 3739,
+      "chapter": 60,
+      "line": 28,
+      "core_english": "{6}, they touching it, they grasping it"
+    },
+    {
+      "section": 3746,
+      "chapter": 60,
+      "line": 35,
+      "core_english": "revealing forth concerning the pain of the body, or {7} {8}"
+    },
+    {
+      "section": 3748,
+      "chapter": 60,
+      "line": 37,
+      "core_english": "Likewise also is this, whom {9} the Radiance"
+    },
+    {
+      "section": 3749,
+      "chapter": 60,
+      "line": 38,
+      "core_english": "is compared to: he whom they send forth from the Greatness"
+    },
+    {
+      "section": 3751,
+      "chapter": 60,
+      "line": 40,
+      "core_english": "that which is within, that which is upon the upper side and that which is upon the lower side,"
+    },
+    {
+      "section": 3752,
+      "chapter": 60,
+      "line": 41,
+      "core_english": "either concerning the aeons that are outside, the hidden ones, which {10},"
+    },
+    {
+      "section": 3753,
+      "chapter": 60,
+      "line": 42,
+      "core_english": "or also concerning the ships of the Light which are manifested forth — {11}"
+    },
+    {
+      "section": 3754,
+      "chapter": 60,
+      "line": 43,
+      "core_english": "who reveals forth concerning them; he also is the one who manifests forth concerning the glo-"
+    },
+    {
+      "section": 3756,
+      "chapter": 60,
+      "line": 45,
+      "core_english": "and the plague of the living {12} — Jesus is the one who manifests it for-"
+    },
+    {
+      "section": 3757,
+      "chapter": 60,
+      "line": 46,
+      "core_english": "-th and proclaims concerning her also, and concerning the rest, manifesting"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 3713,
+      "chapter": 60,
+      "line": 1,
+      "proposed_english": "fathers",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "low",
+      "basis": "Editor's reading ⲛⲓⲱⲧ 'fathers'; the four-fathers grouping is anomalous in this corpus, so confidence is low."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 3714,
+      "chapter": 60,
+      "line": 2,
+      "proposed_english": "one another",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "low",
+      "basis": "Tentative ⲛ̄ⲉⲩⲉⲣⲏⲩ 'of one another' — fits the heading's correspondence-claim that body and Father are likenesses of each other; could alternatively be a possessed noun."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 3717,
+      "chapter": 60,
+      "line": 6,
+      "proposed_english": "manifested forth",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲟⲩⲁⲛⲍ ⲁⲃⲁⲗ — the chapter's standard revelation-verb, paired with the preceding ⲟⲩⲱⲗⲡ̄ ⲁⲃⲁⲗ."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 3719,
+      "chapter": 60,
+      "line": 8,
+      "proposed_english": "receive",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲭⲓ continuing the formula 'receive honor' from the parallel structure (ⲭⲓ ϣⲟⲁ ⲍⲓ ⲡⲗⲏⲣⲏ)."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 3724,
+      "chapter": 60,
+      "line": 13,
+      "proposed_english": "storehouses",
+      "coptic_gap_refs": [
+        17
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲛ̄ⲧⲁⲙⲓⲟⲛ — lexicon term for the inner reservoirs where the Father keeps his teaching hidden."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 3738,
+      "chapter": 60,
+      "line": 27,
+      "proposed_english": "afflicting her, she",
+      "coptic_gap_refs": [
+        22
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲉⲩϣⲱⲟⲉ ⲙ̄ⲙⲁⲥ ⲉⲥ- continues the soul-affliction parallel: 'they afflicting her, she being likened…'"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 3739,
+      "chapter": 60,
+      "line": 28,
+      "proposed_english": "of the flesh",
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲛ̄ⲧⲉ ⲧⲥⲁⲣⲝ̄ — the chapter's standard 'body of the flesh' phrase."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 3746,
+      "chapter": 60,
+      "line": 35,
+      "proposed_english": "sickness",
+      "coptic_gap_refs": [
+        25
+      ],
+      "confidence": "high",
+      "basis": "Coptic ϣⲱⲛⲉ — completes the bodily-affliction triplet pain/sickness/stripe."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 3746,
+      "chapter": 60,
+      "line": 35,
+      "proposed_english": "in",
+      "coptic_gap_refs": [
+        26
+      ],
+      "confidence": "moderate",
+      "basis": "Coptic ⲍⲙ̄ — preposition introducing 'his stripe.'"
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 3748,
+      "chapter": 60,
+      "line": 37,
+      "proposed_english": "Jesus",
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲓⲏⲥ — the Christological identification: Jesus the Radiance as the revealing tongue."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 3752,
+      "chapter": 60,
+      "line": 41,
+      "proposed_english": "are not manifested forth",
+      "coptic_gap_refs": [
+        34,
+        35
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲉⲧⲟⲩⲁⲛⲍ̄ ⲁⲃⲁⲗ ⲉⲛ — the negation is required to distinguish the hidden aeons from the manifest ships of light in the next clause."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 3753,
+      "chapter": 60,
+      "line": 42,
+      "proposed_english": "he it is",
+      "coptic_gap_refs": [
+        37
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲛ̄ⲧⲁϩ ⲡⲉ — pivot phrase introducing Jesus as the revealer of all matters, echoed in the next line."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 3756,
+      "chapter": 60,
+      "line": 45,
+      "proposed_english": "soul",
+      "coptic_gap_refs": [
+        39
+      ],
+      "confidence": "high",
+      "basis": "Coptic ⲯⲩⲭⲏ — 'living soul' as the object of Jesus's revealing speech."
+    }
+  ]
+}

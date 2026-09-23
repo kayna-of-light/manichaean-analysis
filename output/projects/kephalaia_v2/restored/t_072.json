@@ -1,0 +1,381 @@
+{
+  "teaching": 72,
+  "total_gaps_in_core": 14,
+  "gaps_restored": 14,
+  "gaps_unrestorable": 0,
+  "restoration_note": "The teaching describes the chain of inward-gathering (ⲥⲱⲩϩ ⲁϩⲟⲩⲛ) by which each degree of the rational/natural is drawn up into the one above it: light → fire → water → wind → [winds/all] → Tamr → Answer (ⲡⲟⲩⲱϣⲃⲉ) → Call (ⲡⲧⲱϩⲙⲉ) → chosen Mind/Noeric → Pillar of Glory → First Man → Ambassador → Aeons of the Greatness, all rising together into the upper place of rest. Most gaps are tightly constrained: single-letter completions of standard technical terms (ⲥⲧⲟⲓⲭⲉⲓⲟⲛ, ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ, ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ, ⲁⲛⲁⲓⲱⲛ, ⲡⲥⲁⲛⲧⲡⲉ), iterative formula-fills for the elements (water clause), and grammatical particles (ⲁ-, ⲛ̄ⲧⲉ, ⲉⲩ-). The only weakly constrained gap is {5}: editor reads [ⲧⲏ]ⲩ but the position in the chain (between water/wind and Tamr) and plural verb ⲥⲱⲩϩ suggest this is the plural 'winds' or 'spirits' (ⲡⲛⲁ̄ⲩ), one register above wind in the cosmic ladder. I retain the editor's ⲧⲏ.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 4330,
+      "chapter": 71,
+      "line": 2,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Single letter completing ⲛ̄ⲥⲧⲟⲓⲭⲉⲓⲟⲛ 'of the elements'; the heading of the teaching.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 4332,
+      "chapter": 71,
+      "line": 4,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ",
+      "basis": "Definite-article/genitive ⲛ̄- prefixed to ⲥⲧⲟⲓⲭⲉⲓⲟⲛ 'the elements,' subject of ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 2,
+      "section": 4333,
+      "chapter": 71,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲓⲛ",
+      "basis": "Completes ⲡⲟⲩⲁⲓⲛⲉ 'the light' across the line break; light is the lowest element in the chain, gathering to fire. Lexicon: ⲡⲟⲩⲁⲓ̈ⲛⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 4333,
+      "chapter": 71,
+      "line": 5,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Directional preposition ⲁ- 'to' before ⲧⲥⲉⲧⲉ; standard pattern X ⲥⲱⲩⲍ ⲁⲍⲟⲩⲛ ⲁ-Y.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 4334,
+      "chapter": 71,
+      "line": 6,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲍⲟⲩⲛ ⲁⲡⲙⲁⲩ ⲛ̄ⲧⲉ ⲡⲙⲁⲩ ⲡⲙⲁⲩ ϩⲱⲱϥ",
+      "basis": "Editor's iterative formula-fill: 'fire gathers in[ward to the water of the water; the water itself] gathers inward to the wind of the [wind].' Reproduces the parallel structure of the surrounding lines (light→fire, fire→water, water→wind).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 4335,
+      "chapter": 71,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲏ",
+      "basis": "Editor reads [ⲧⲏ]ⲩ; in the cosmic ladder this register (after wind, before Tamr) is the plural 'winds/spirits' or 'all,' subject of plural verb ⲥⲱⲩϩ. Position in the chain weakly constrains the exact term; the editor's letters are retained.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 6,
+      "section": 4336,
+      "chapter": 71,
+      "line": 8,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛ̄ⲧ",
+      "basis": "Genitive linker ⲛ̄ⲧⲉ joining the previous segment ('Tamr') to ⲡⲟⲩⲱϣⲃⲉ; standard formula X ⲛ̄ⲧⲉ X.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 4337,
+      "chapter": 71,
+      "line": 9,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲡ",
+      "basis": "Directional ⲁ- + masculine article ⲡ- before ⲛⲟⲩⲥ ⲉⲧⲥⲁⲧϥ̄ 'the chosen Mind'; standard 'gathered to the X.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 8,
+      "section": 4338,
+      "chapter": 71,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥ",
+      "basis": "Definite article ⲡ- + ⲥ initial of ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ 'the Pillar of Glory'; lexicon ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 4338,
+      "chapter": 71,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲥ",
+      "basis": "Repetition: 'the Pillar of Glory [gathers] to the First [Man]'; same restoration as {8}.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 4339,
+      "chapter": 71,
+      "line": 11,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲣ",
+      "basis": "Completes ⲡⲣⲱⲙⲉ in ⲡϣⲁⲣⲡ ⲛ̄ⲣⲱⲙⲉ 'the First Man' across the line break; standard Manichaean cosmogonic figure.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 4340,
+      "chapter": 71,
+      "line": 12,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Initial alpha of ⲁⲛⲁⲓⲱⲛ 'Aeons' (preceded by directional ⲁ- assimilated); ⲁⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ̄ = the Aeons of the Greatness, the highest term of the chain.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 4341,
+      "chapter": 71,
+      "line": 13,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩ",
+      "basis": "Future III converter ⲉⲩⲛⲁⲥⲱⲩϩ 'they shall gather'; matches the parallel future ⲛ̄ⲥⲉⲃⲱⲕ ⲁϩⲣⲏⲓ̈ 'they shall go up' that follows.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 4342,
+      "chapter": 71,
+      "line": 14,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥ",
+      "basis": "Initial ⲥ- of ⲡⲥⲁⲛⲧⲡⲉ 'the upper place' (lexicon ⲡⲥⲁⲛⲧⲡⲉ/ⲡⲭⲓⲥⲉ); standard cosmological designation paired with ⲡⲙⲁⲛⲙ̄ⲧⲁⲛ 'place of rest.'",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 4330,
+      "chapter": 71,
+      "line": 2,
+      "core_english": "⟨71⟩ of the {0}lements ⟨71⟩"
+    },
+    {
+      "section": 4332,
+      "chapter": 71,
+      "line": 4,
+      "core_english": "the {1}lements gather inward, one to another? Each li-"
+    },
+    {
+      "section": 4333,
+      "chapter": 71,
+      "line": 5,
+      "core_english": "{2} gathers inward {3} the fire of the fire; the fire itself gathers in-"
+    },
+    {
+      "section": 4334,
+      "chapter": 71,
+      "line": 6,
+      "core_english": "{4} gathers inward to the wind of the"
+    },
+    {
+      "section": 4335,
+      "chapter": 71,
+      "line": 7,
+      "core_english": "{5} are gathered to the Tamr; and the Tamr is gathered to the Answer,"
+    },
+    {
+      "section": 4336,
+      "chapter": 71,
+      "line": 8,
+      "core_english": "and the Answer is gathered to the Call; the Call itself"
+    },
+    {
+      "section": 4337,
+      "chapter": 71,
+      "line": 9,
+      "core_english": "{6} the chosen Mind, which is the Noeric; the Noeric to"
+    },
+    {
+      "section": 4338,
+      "chapter": 71,
+      "line": 10,
+      "core_english": "the {7}illar of Glory; the {8}illar of Glory to the First"
+    },
+    {
+      "section": 4339,
+      "chapter": 71,
+      "line": 11,
+      "core_english": "{9}n; the Man to the Ambassador; the Ambassador"
+    },
+    {
+      "section": 4340,
+      "chapter": 71,
+      "line": 12,
+      "core_english": "to the {10}eons of the Greatness — they are gathered together in this manner."
+    },
+    {
+      "section": 4341,
+      "chapter": 71,
+      "line": 13,
+      "core_english": "And {11} gather at one and the same moment, and they shall go up to the"
+    },
+    {
+      "section": 4342,
+      "chapter": 71,
+      "line": 14,
+      "core_english": "{12}pper place, to the place of rest, forever and ever."
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 4330,
+      "chapter": 71,
+      "line": 2,
+      "proposed_english": "e",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "Letter-mirror of ⲥ in ⲥⲧⲟⲓⲭⲉⲓⲟⲛ; produces 'elements.'"
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 4332,
+      "chapter": 71,
+      "line": 4,
+      "proposed_english": "e",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "high",
+      "basis": "Letter-mirror of ⲛ̄ before ⲥⲧⲟⲓⲭⲉⲓⲟⲛ; produces 'the elements.'"
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 4333,
+      "chapter": 71,
+      "line": 5,
+      "proposed_english": "the light",
+      "coptic_gap_refs": [
+        2
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲟⲩⲁⲓⲛⲉ = 'the light'; lexicon use_in_reading."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 4333,
+      "chapter": 71,
+      "line": 5,
+      "proposed_english": "to",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "Directional ⲁ- = 'to.'"
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 4334,
+      "chapter": 71,
+      "line": 6,
+      "proposed_english": "ward to the water of the water; the water itself",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "high",
+      "basis": "Iterative formula completing the elemental ladder: fire→water→wind."
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 4335,
+      "chapter": 71,
+      "line": 7,
+      "proposed_english": "the winds",
+      "coptic_gap_refs": [
+        5
+      ],
+      "confidence": "low",
+      "basis": "Plural verb ⲥⲱⲩϩ; ⲧⲏⲩ as plural 'winds/spirits' is the next register above wind in the chain. Editor's tentative gloss is 'all'; rendered here as 'the winds' to match the elemental series."
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 4337,
+      "chapter": 71,
+      "line": 9,
+      "proposed_english": "to",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "high",
+      "basis": "Directional ⲁ- = 'to'; the Call gathers to the chosen Mind."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 4338,
+      "chapter": 71,
+      "line": 10,
+      "proposed_english": "P",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "Initial of 'Pillar' in ⲡⲥⲧⲩⲗⲟⲥ ⲙ̄ⲡⲉⲁⲩ."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 4338,
+      "chapter": 71,
+      "line": 10,
+      "proposed_english": "P",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "high",
+      "basis": "Initial of 'Pillar' (repetition)."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 4339,
+      "chapter": 71,
+      "line": 11,
+      "proposed_english": "Ma",
+      "coptic_gap_refs": [
+        10
+      ],
+      "confidence": "high",
+      "basis": "Letter-mirror of ⲣⲱⲙⲉ across the line break; produces 'Man.'"
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 4340,
+      "chapter": 71,
+      "line": 12,
+      "proposed_english": "A",
+      "coptic_gap_refs": [
+        11
+      ],
+      "confidence": "high",
+      "basis": "Initial of 'Aeons' in ⲁⲛⲁⲓⲱⲛ ⲛ̄ⲧⲙ̄ⲛ̄ⲧⲛⲁⲟ̄."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 4341,
+      "chapter": 71,
+      "line": 13,
+      "proposed_english": "they shall",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "high",
+      "basis": "Future III converter ⲉⲩⲛⲁⲥⲱⲩϩ; matches the following parallel future ⲛ̄ⲥⲉⲃⲱⲕ."
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 4342,
+      "chapter": 71,
+      "line": 14,
+      "proposed_english": "u",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "high",
+      "basis": "Letter-mirror of ⲥ- in ⲡⲥⲁⲛⲧⲡⲉ; produces 'upper place.'"
+    }
+  ]
+}

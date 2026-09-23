@@ -1,0 +1,905 @@
+{
+  "teaching": 58,
+  "total_gaps_in_core": 38,
+  "gaps_restored": 34,
+  "gaps_unrestorable": 4,
+  "restoration_note": "Teaching describes the five descending orders (year-lord, month-lord, day-lord, hour-lord, moment-lord) governing what the natural mind brings forth, and explains the diminishment of stature/lifespan in successive generations as authority moves from wider to narrower temporal rule. Most gaps are short editor completions of standard formulae (ⲁⲗⲗⲁ, ⲉⲧⲃⲉ, ordinal series, copular ⲧⲉ, line-break splits) or letter-level completions of words straddling section breaks; these are highly constrained. The medium lacunae at {7} (after ⲕⲉ-, ~14 chars), {27} (~4 chars after ⲭⲣⲟⲛⲟⲥ), {29} (~13 chars before ⲱ exclamation), and {31} (uncertain reading ⲛⲉⲩϩⲁ) are marked unrestorable: structural context narrows the sense but no formula or strict parallel constrains the letters.",
+  "coptic_restorations": [
+    {
+      "gap_id": 0,
+      "section": 3572,
+      "chapter": 57,
+      "line": 7,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲗⲗⲁ",
+      "basis": "Standard adversative ἀλλά opening the Illuminator's response after the disciple's question; editor proposal fits the discourse turn.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 1,
+      "section": 3575,
+      "chapter": 57,
+      "line": 10,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲕⲓⲁ",
+      "basis": "Editor's reading of partially preserved ⲉⲕ + ⲓⲁ as an emphatic particle continuing the protasis 'since...'; sense uncertain but accept as letter-level restoration.",
+      "confidence": "low"
+    },
+    {
+      "gap_id": 2,
+      "section": 3581,
+      "chapter": 57,
+      "line": 16,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲙⲁ",
+      "basis": "Completes ⲧⲟⲩⲁⲙⲁⲓ̈ⲏⲏⲥ 'their support' across the line break; same lexeme as accumulated ⲁⲙⲁⲓ̈ⲏⲏⲥ at line 23.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 3,
+      "section": 3582,
+      "chapter": 57,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁ",
+      "basis": "Single-letter completion of ⲧⲟⲩⲟ̄ⲁⲙ 'their might/power' (= ϫⲟⲙ); cognate with ⲛⲟⲁⲙ used through the section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 4,
+      "section": 3582,
+      "chapter": 57,
+      "line": 17,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲃⲉ",
+      "basis": "Standard idiom ⲉⲧⲃⲉ ⲉⲩ 'concerning what?' = 'why?', joining with ⲉⲩ at start of next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 5,
+      "section": 3583,
+      "chapter": 57,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲉ",
+      "basis": "Relative-plural genitive ⲛ̄ⲛⲉⲧ- 'of those whom'; required by following ⲧⲟⲩⲭⲧⲟ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 6,
+      "section": 3583,
+      "chapter": 57,
+      "line": 18,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "3pl object suffix completing ⲙ̄ⲙⲁⲩ 'them' on relative verb.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 7,
+      "section": 3584,
+      "chapter": 57,
+      "line": 19,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Lacuna of ~14 characters after partial ⲕⲉ-; the next segment begins ⲙ̄ⲡⲉϩⲙⲁ ⲡⲉϩⲙⲁ 'each in his place,' but no formula or strict parallel constrains the missing 14 letters. Possible candidates (ⲅⲉⲛⲉⲁ ⲡⲟⲩⲁ ⲡⲟⲩⲁ, ⲣⲡⲡⲧⲉⲩⲉ ⲡⲟⲩⲁ, etc.) are speculative; honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 8,
+      "section": 3592,
+      "chapter": 57,
+      "line": 29,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙⲟⲩⲧⲉ",
+      "basis": "Completes ⲉⲩⲙⲟⲩⲧⲉ 'they being called' — circumstantial introducing the names listed in the following lines (year, month, day, hour, moment).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 9,
+      "section": 3593,
+      "chapter": 57,
+      "line": 30,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲁⲣⲁⲩ",
+      "basis": "ⲙⲟⲩⲧⲉ ⲁⲣⲁⲩ 'call upon them / call them by these names' completes the verbal idiom from the previous line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 10,
+      "section": 3594,
+      "chapter": 57,
+      "line": 31,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲥⲛⲉⲩ",
+      "basis": "Ordinal completing ⲡⲙⲁⲍⲥⲛⲉⲩ 'the second' in the enumeration year/month/day/hour/moment.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 11,
+      "section": 3595,
+      "chapter": 57,
+      "line": 32,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϩⲧⲁⲩ",
+      "basis": "Ordinal ⲡⲙⲁⲍϩⲧⲁⲩ 'the fourth' in the time-enumeration; placed between third (day) and fifth (moment) and naming the hour.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 12,
+      "section": 3596,
+      "chapter": 57,
+      "line": 33,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲟⲡⲟⲥ",
+      "basis": "Paired locative term: ⲡⲡⲓⲧⲟⲩ ⲛⲧⲟⲡⲟⲥ ⲙⲛ ⲡⲓⲧⲟⲩ ⲛⲟⲓⲕⲟⲥ 'the five places and the five houses' — the formula referenced again in line 34 (ⲛⲓⲙⲁ).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 13,
+      "section": 3602,
+      "chapter": 57,
+      "line": 39,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲧⲃ",
+      "basis": "Inner letters of ⲧⲁⲛⲧⲃⲛⲁⲩⲉ 'the cattle' which spans the line break (line 20 ends ⲧⲁ-, line 21 begins ⲛⲁⲩⲉ); standard pairing of ⲣⲱⲙⲉ + ⲧⲃⲛⲏ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 14,
+      "section": 3607,
+      "chapter": 57,
+      "line": 44,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲭⲡⲁⲥ",
+      "basis": "Onset ⲭⲡⲁⲥ 'begot it' (3sg.f object) referring to the offspring (ⲧⲙⲏⲥⲉ) of line 24; relative-perfect continued from previous line ending ⲉⲧⲁⲩ-.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 15,
+      "section": 3609,
+      "chapter": 57,
+      "line": 46,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲁⲥⲏⲑⲏⲗ",
+      "basis": "'That of Sethel' — Sethel as son of Adam, the standard Manichaean ancestor figure; the genitive feminine ⲧⲁ- agrees with ⲧⲅⲉⲛⲉⲁ implied from preceding line.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 16,
+      "section": 3612,
+      "chapter": 57,
+      "line": 49,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲛⲉⲃⲉⲧⲉ",
+      "basis": "Comparison sentence requires 'the months' as subject — paralleling line 29 ⲁⲭⲛ ⲛⲉⲃⲉⲧⲉ 'over the months' and the rule that months are smaller than years.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 17,
+      "section": 3613,
+      "chapter": 57,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲉ",
+      "basis": "Feminine copula ⲧⲉ completing ⲧⲍⲉ ⲍⲱϩ ⲁⲛ ⲧⲉ 'so also is'; standard predicative formula.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 18,
+      "section": 3613,
+      "chapter": 57,
+      "line": 50,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲧⲁⲩⲭⲡⲁⲥ",
+      "basis": "Relative-perfect with 3sg.f object referring to ⲧⲙⲏⲥⲉ 'offspring'; the verbal ⲭⲡⲁⲥ recurs throughout the section.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 19,
+      "section": 3614,
+      "chapter": 57,
+      "line": 51,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲁⲣⲁ ⲡⲁⲍⲉ ⲛⲛⲉⲧⲁⲩⲭⲡⲁⲩ",
+      "basis": "Comparative clause structurally parallel to lines 30-31 (ⲡⲁⲣⲁ ⲛⲣⲙⲡⲉⲩⲉ) and to the explicit formulation later in lines 56-57 contrasting month-offspring with year-offspring.",
+      "confidence": "moderate"
+    },
+    {
+      "gap_id": 20,
+      "section": 3621,
+      "chapter": 57,
+      "line": 58,
+      "gap_type": "restoration",
+      "proposed_coptic": "ϯⲍⲉ",
+      "basis": "Visible ϯⲍ requires completion to ϯⲍⲉ 'in this manner,' standard parallel construction with preceding ⲛϯⲍⲉ.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 21,
+      "section": 3624,
+      "chapter": 57,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ̄",
+      "basis": "Genitive marker before ⲡⲕⲟⲥⲙⲟⲥ; standard idiom ⲧⲍⲁⲏ ⲙ̄ⲡⲕⲟⲥⲙⲟⲥ 'end of the world.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 22,
+      "section": 3624,
+      "chapter": 57,
+      "line": 63,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲱ",
+      "basis": "Single letter ⲱ completing ⲣⲱⲙⲉ 'men/humanity,' which continues with -ⲙⲉ on next line.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 23,
+      "section": 3625,
+      "chapter": 57,
+      "line": 64,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲧⲉⲩⲉ",
+      "basis": "Completes ⲣⲙ̄ⲡⲧⲉⲩⲉ 'years' (per accumulated dialectal vocabulary); confirmed by parallel ⲣⲡ̄ⲡⲧⲉⲩⲉ at lines 1, 18 and full form at line 19.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 24,
+      "section": 3626,
+      "chapter": 57,
+      "line": 65,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ ⲉⲧ",
+      "basis": "Final ⲉ of ⲡⲟⲩⲁⲓ̈ⲛⲉ 'the light' + relative ⲉⲧ; line 13 begins with ⲟ continuing ⲉⲧⲟ 'which are.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 25,
+      "section": 3640,
+      "chapter": 57,
+      "line": 83,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Final ⲉ completing copular ⲧⲉ 'is/it is.'",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 26,
+      "section": 3641,
+      "chapter": 57,
+      "line": 84,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲩ",
+      "basis": "Final ⲩ of ⲡⲓⲥⲏⲩ 'this time' (per accumulated vocabulary).",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 27,
+      "section": 3642,
+      "chapter": 57,
+      "line": 85,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Small ~4-character lacuna between ⲭⲣⲟⲛⲟⲥ and ⲙ̄ⲙⲁⲩ; sense suggests a circumstantial like ⲉⲩⲱⲡ or ⲉⲩⲟ̄ⲛϩ ('being / dwelling') but no parallel constrains the letters.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 28,
+      "section": 3642,
+      "chapter": 57,
+      "line": 85,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲧⲕⲁ",
+      "basis": "Start of ⲧⲕⲁⲗⲁⲍⲏ 'the womb' (Coptic ⲕⲁⲗⲁϩⲏ); continued by ⲗⲁⲍⲏ at start of line 32 with ⲛⲧⲟⲩⲙⲉⲩ 'of their mother' confirming the reading.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 29,
+      "section": 3643,
+      "chapter": 57,
+      "line": 86,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Medium ~13-character lacuna after ⲙ̄ⲛⲛⲥⲱⲥ ⲉⲩ-, ending in a vowel that ⲱ continues. The following exclamation 'O what a multitude in one womb!' constrains sense (perhaps ⲉⲩⲭⲱ ⲙ̄ⲙⲁⲥ ϫⲉ 'they saying that') but no parallel fixes the letters.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 30,
+      "section": 3645,
+      "chapter": 57,
+      "line": 88,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟⲩ",
+      "basis": "Indefinite article required by ⲟⲩⲕⲁⲗⲁϩⲏ ⲛⲟⲩⲱⲧ 'in one (single) womb' parallel to lines 87-89.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 31,
+      "section": 3647,
+      "chapter": 57,
+      "line": 90,
+      "gap_type": "lacuna",
+      "proposed_coptic": null,
+      "basis": "Apparatus marks reading uncertain (ⲛⲉⲩϩⲁ — possibly 'their husbands' ⲛⲉⲩ-ϩⲁⲓ or 'their multitude'); est_chars=0 indicates no consensus on the missing element. Honest non-restoration.",
+      "confidence": "unrestorable"
+    },
+    {
+      "gap_id": 32,
+      "section": 3650,
+      "chapter": 57,
+      "line": 93,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉ",
+      "basis": "Circumstantial converter ⲉⲣⲉ continuing onto next line as ⲉⲣⲉ ⲧⲟⲩⲟⲓⲛⲱ 'while their conception (is)...'.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 33,
+      "section": 3652,
+      "chapter": 57,
+      "line": 95,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲙ",
+      "basis": "Single letter ⲙ completing ⲧⲥϩⲙⲉ 'the woman'; only ⲙ is missing in the dotted gap.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 34,
+      "section": 3653,
+      "chapter": 57,
+      "line": 96,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲉⲩⲉ",
+      "basis": "Completes ⲛ̄ϩⲁⲉⲩⲉ 'latter ones' from parallel formulation at line 9.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 35,
+      "section": 3654,
+      "chapter": 57,
+      "line": 97,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲡⲟ ⲙ̄",
+      "basis": "Completes ⲛⲉⲧⲟⲩⲭⲡⲟ ⲙ̄ⲙⲁⲩ 'those whom they beget' continuing into next line where ⲙⲁⲩ 'them' begins line 98.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 36,
+      "section": 3655,
+      "chapter": 57,
+      "line": 98,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲟ̄",
+      "basis": "Letter ⲟ̄ completing ⲡⲟ̄ⲱⲭⲃⲉ. The lexeme ⲱⲭⲃⲉ recurs from line 3 (ⲙ̄ⲡⲟⲩⲭⲃⲉ 'they did not exceed/diminish'); in 'two parts, or X, or more' a quantitative term is expected.",
+      "confidence": "high"
+    },
+    {
+      "gap_id": 37,
+      "section": 3657,
+      "chapter": 57,
+      "line": 100,
+      "gap_type": "restoration",
+      "proposed_coptic": "ⲛⲟⲩ",
+      "basis": "Possessive ⲛⲟⲩⲥⲁⲭⲛⲉ 'their counsel' continuing onto next line where ⲥⲁⲭⲛⲉ 'counsel' begins line 101.",
+      "confidence": "high"
+    }
+  ],
+  "english_segments": [
+    {
+      "section": 3572,
+      "chapter": 57,
+      "line": 7,
+      "core_english": "{0} indeed his begett-"
+    },
+    {
+      "section": 3575,
+      "chapter": 57,
+      "line": 10,
+      "core_english": "-ing and the one they beget today? Since {1} A-"
+    },
+    {
+      "section": 3581,
+      "chapter": 57,
+      "line": 16,
+      "core_english": "-kind. The men whom they beget today — their"
+    },
+    {
+      "section": 3582,
+      "chapter": 57,
+      "line": 17,
+      "core_english": "support has shrunk, their {2} of their other years is diminished — {3}"
+    },
+    {
+      "section": 3583,
+      "chapter": 57,
+      "line": 18,
+      "core_english": "what is it? And the begetting today of {4} they beget —"
+    },
+    {
+      "section": 3584,
+      "chapter": 57,
+      "line": 19,
+      "core_english": "is altered from those of the first {5}"
+    },
+    {
+      "section": 3592,
+      "chapter": 57,
+      "line": 29,
+      "core_english": "-ens which are above her: they have names there, being {6}"
+    },
+    {
+      "section": 3593,
+      "chapter": 57,
+      "line": 30,
+      "core_english": "{7}: among them, the first name is the year, the second"
+    },
+    {
+      "section": 3594,
+      "chapter": 57,
+      "line": 31,
+      "core_english": "is the month, the third is the day, the"
+    },
+    {
+      "section": 3595,
+      "chapter": 57,
+      "line": 32,
+      "core_english": "fourth is the hour, the fifth is the moment. The five then,"
+    },
+    {
+      "section": 3596,
+      "chapter": 57,
+      "line": 33,
+      "core_english": "{8} and the five houses, exist in the sphere and"
+    },
+    {
+      "section": 3602,
+      "chapter": 57,
+      "line": 39,
+      "core_english": "even unto humanity itself which is begotten, and the {9}"
+    },
+    {
+      "section": 3607,
+      "chapter": 57,
+      "line": 44,
+      "core_english": "{10} in their generations and their times became people of long"
+    },
+    {
+      "section": 3609,
+      "chapter": 57,
+      "line": 46,
+      "core_english": "that of {11}, his son, and that of those who came after him, and"
+    },
+    {
+      "section": 3612,
+      "chapter": 57,
+      "line": 49,
+      "core_english": "{12}, since they are smaller than the years, in the same way also"
+    },
+    {
+      "section": 3613,
+      "chapter": 57,
+      "line": 50,
+      "core_english": "is this offspring {13} among them — their lifespan is smaller"
+    },
+    {
+      "section": 3614,
+      "chapter": 57,
+      "line": 51,
+      "core_english": "{14} in the generation of the powers being lord."
+    },
+    {
+      "section": 3621,
+      "chapter": 57,
+      "line": 58,
+      "core_english": "over the months. In this manner, {15} also, is the offspring whom they begot in their"
+    },
+    {
+      "section": 3624,
+      "chapter": 57,
+      "line": 63,
+      "core_english": "or the end of the world has come near, by how much the lifetime of"
+    },
+    {
+      "section": 3625,
+      "chapter": 57,
+      "line": 64,
+      "core_english": "men has come down to nothing, how their days have grown short and their {16}"
+    },
+    {
+      "section": 3626,
+      "chapter": 57,
+      "line": 65,
+      "core_english": "have diminished? For the life and the light {17}"
+    },
+    {
+      "section": 3640,
+      "chapter": 57,
+      "line": 83,
+      "core_english": "are pure in their support, their other years are great. Thus also is"
+    },
+    {
+      "section": 3641,
+      "chapter": 57,
+      "line": 84,
+      "core_english": "this of their other offspring — they are exceedingly many beyond the offspring of this time."
+    },
+    {
+      "section": 3642,
+      "chapter": 57,
+      "line": 85,
+      "core_english": "They were spending a great chronos {18} there in {19}"
+    },
+    {
+      "section": 3643,
+      "chapter": 57,
+      "line": 86,
+      "core_english": "-womb of their mother; afterwards, {20}"
+    },
+    {
+      "section": 3645,
+      "chapter": 57,
+      "line": 88,
+      "core_english": "five in one womb. There is a time when they beget seven in {21} wo-"
+    },
+    {
+      "section": 3647,
+      "chapter": 57,
+      "line": 90,
+      "core_english": "in turn, who are of more than these. For this reason, indeed, the bearing of their {22} has multipl-"
+    },
+    {
+      "section": 3650,
+      "chapter": 57,
+      "line": 93,
+      "core_english": "begotten in the cosmos is altered, much in comparison to today, whi-"
+    },
+    {
+      "section": 3652,
+      "chapter": 57,
+      "line": 95,
+      "core_english": "of the latter ones whom they have begotten today in the womb of the woman."
+    },
+    {
+      "section": 3653,
+      "chapter": 57,
+      "line": 96,
+      "core_english": "For those whom they beget today in the {23} generations are"
+    },
+    {
+      "section": 3654,
+      "chapter": 57,
+      "line": 97,
+      "core_english": "standing small and diminished, and indeed one by one those whom they {24}"
+    },
+    {
+      "section": 3655,
+      "chapter": 57,
+      "line": 98,
+      "core_english": "are not in one womb, but in two parts, or more,"
+    },
+    {
+      "section": 3657,
+      "chapter": 57,
+      "line": 100,
+      "core_english": "their stature, being feeble in their members, their teachings, and {25}"
+    }
+  ],
+  "english_restorations": [
+    {
+      "eng_gap_id": 0,
+      "section": 3572,
+      "chapter": 57,
+      "line": 7,
+      "proposed_english": "But",
+      "coptic_gap_refs": [
+        0
+      ],
+      "confidence": "high",
+      "basis": "ⲁⲗⲗⲁ as standard adversative opening the response."
+    },
+    {
+      "eng_gap_id": 1,
+      "section": 3575,
+      "chapter": 57,
+      "line": 10,
+      "proposed_english": "indeed",
+      "coptic_gap_refs": [
+        1
+      ],
+      "confidence": "low",
+      "basis": "Editor's ⲉⲕⲓⲁ as emphatic particle continuing 'since...'; English rendering uncertain."
+    },
+    {
+      "eng_gap_id": 2,
+      "section": 3582,
+      "chapter": 57,
+      "line": 17,
+      "proposed_english": "might",
+      "coptic_gap_refs": [
+        3
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲟⲩⲟ̄ⲁⲙ 'their might/strength' (= ϫⲟⲙ); the rational's vigor that has shrunk in the latter generations."
+    },
+    {
+      "eng_gap_id": 3,
+      "section": 3582,
+      "chapter": 57,
+      "line": 17,
+      "proposed_english": "for what reason",
+      "coptic_gap_refs": [
+        4
+      ],
+      "confidence": "high",
+      "basis": "ⲉⲧⲃⲉ ⲉⲩ 'concerning what?' = the disciple's interrogative bridge into the next clause."
+    },
+    {
+      "eng_gap_id": 4,
+      "section": 3583,
+      "chapter": 57,
+      "line": 18,
+      "proposed_english": "those whom",
+      "coptic_gap_refs": [
+        5,
+        6
+      ],
+      "confidence": "high",
+      "basis": "Relative ⲛ̄ⲛⲉⲧ- with 3pl object suffix forming 'of those whom they beget.'"
+    },
+    {
+      "eng_gap_id": 5,
+      "section": 3584,
+      "chapter": 57,
+      "line": 19,
+      "proposed_english": "generations",
+      "coptic_gap_refs": [
+        7
+      ],
+      "confidence": "low",
+      "basis": "Sense from teaching arc: contrast is between the 'first' and 'today's' generations; exact Coptic letters unrestorable but English thrust is 'first generations.'"
+    },
+    {
+      "eng_gap_id": 6,
+      "section": 3592,
+      "chapter": 57,
+      "line": 29,
+      "proposed_english": "called",
+      "coptic_gap_refs": [
+        8
+      ],
+      "confidence": "high",
+      "basis": "ⲉⲩⲙⲟⲩⲧⲉ 'they being called' introducing the name-list."
+    },
+    {
+      "eng_gap_id": 7,
+      "section": 3593,
+      "chapter": 57,
+      "line": 30,
+      "proposed_english": "by these names",
+      "coptic_gap_refs": [
+        9
+      ],
+      "confidence": "high",
+      "basis": "ⲙⲟⲩⲧⲉ ⲁⲣⲁⲩ 'call upon them / by them' completing the verbal idiom."
+    },
+    {
+      "eng_gap_id": 8,
+      "section": 3596,
+      "chapter": 57,
+      "line": 33,
+      "proposed_english": "The five places",
+      "coptic_gap_refs": [
+        12
+      ],
+      "confidence": "high",
+      "basis": "ⲡⲡⲓⲧⲟⲩ ⲛⲧⲟⲡⲟⲥ 'the five places' paired with the five houses; the structural belt of time-rulers in the sphere."
+    },
+    {
+      "eng_gap_id": 9,
+      "section": 3602,
+      "chapter": 57,
+      "line": 39,
+      "proposed_english": "cattle",
+      "coptic_gap_refs": [
+        13
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲁⲛⲧⲃⲛⲁⲩⲉ 'the cattle' across the line break — the standard pairing of begotten ⲣⲱⲙⲉ + ⲧⲃⲛⲏ."
+    },
+    {
+      "eng_gap_id": 10,
+      "section": 3607,
+      "chapter": 57,
+      "line": 44,
+      "proposed_english": "begot",
+      "coptic_gap_refs": [
+        14
+      ],
+      "confidence": "high",
+      "basis": "ⲉⲧⲁⲩⲭⲡⲁⲥ 'whom they begot' (3sg.f object referring to ⲧⲙⲏⲥⲉ 'offspring')."
+    },
+    {
+      "eng_gap_id": 11,
+      "section": 3609,
+      "chapter": 57,
+      "line": 46,
+      "proposed_english": "Sethel",
+      "coptic_gap_refs": [
+        15
+      ],
+      "confidence": "moderate",
+      "basis": "ⲧⲁⲥⲏⲑⲏⲗ 'that of Sethel' — Sethel as son of Adam, standard Manichaean ancestor; the next clause begins 'his son, and that of those who came after him.'"
+    },
+    {
+      "eng_gap_id": 12,
+      "section": 3612,
+      "chapter": 57,
+      "line": 49,
+      "proposed_english": "the months",
+      "coptic_gap_refs": [
+        16
+      ],
+      "confidence": "high",
+      "basis": "ⲛⲛⲉⲃⲉⲧⲉ 'the months' — the comparison clause requires the months as subject of 'are smaller than the years.'"
+    },
+    {
+      "eng_gap_id": 13,
+      "section": 3613,
+      "chapter": 57,
+      "line": 50,
+      "proposed_english": "which they begot",
+      "coptic_gap_refs": [
+        17,
+        18
+      ],
+      "confidence": "high",
+      "basis": "Copula ⲧⲉ + relative-perfect ⲉⲧⲁⲩⲭⲡⲁⲥ; 'is the case of this offspring which they begot among them.'"
+    },
+    {
+      "eng_gap_id": 14,
+      "section": 3614,
+      "chapter": 57,
+      "line": 51,
+      "proposed_english": "is shorter than the lifespan of those whom they begot",
+      "coptic_gap_refs": [
+        19
+      ],
+      "confidence": "moderate",
+      "basis": "Comparative formula parallel to lines 30-31 and the explicit lines 56-57; the offspring of the month-lords is shorter-lived than the offspring of the year-lords."
+    },
+    {
+      "eng_gap_id": 15,
+      "section": 3621,
+      "chapter": 57,
+      "line": 58,
+      "proposed_english": "thus",
+      "coptic_gap_refs": [
+        20
+      ],
+      "confidence": "high",
+      "basis": "ϯⲍⲉ 'in this manner / thus' resuming the parallel construction."
+    },
+    {
+      "eng_gap_id": 16,
+      "section": 3625,
+      "chapter": 57,
+      "line": 64,
+      "proposed_english": "years",
+      "coptic_gap_refs": [
+        23
+      ],
+      "confidence": "high",
+      "basis": "ⲣⲙ̄ⲡⲧⲉⲩⲉ 'years' — the lifespan-vocabulary pervading the section."
+    },
+    {
+      "eng_gap_id": 17,
+      "section": 3626,
+      "chapter": 57,
+      "line": 65,
+      "proposed_english": "which",
+      "coptic_gap_refs": [
+        24
+      ],
+      "confidence": "high",
+      "basis": "Final ⲉ of ⲡⲟⲩⲁⲓ̈ⲛⲉ + relative ⲉⲧ → 'the life and the light which (are in the world).'"
+    },
+    {
+      "eng_gap_id": 18,
+      "section": 3642,
+      "chapter": 57,
+      "line": 85,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        27
+      ],
+      "confidence": "unrestorable",
+      "basis": "~4-character circumstantial unrestorable; English would be a participial phrase like 'being there' or 'while there' but cannot be confirmed."
+    },
+    {
+      "eng_gap_id": 19,
+      "section": 3642,
+      "chapter": 57,
+      "line": 85,
+      "proposed_english": "the",
+      "coptic_gap_refs": [
+        28
+      ],
+      "confidence": "high",
+      "basis": "ⲧⲕⲁⲗⲁⲍⲏ 'the womb' begins here and continues across line break; the article 'the' carries the start of the word; 'womb' itself surfaces in next segment."
+    },
+    {
+      "eng_gap_id": 20,
+      "section": 3643,
+      "chapter": 57,
+      "line": 86,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        29
+      ],
+      "confidence": "unrestorable",
+      "basis": "~13-character lacuna ending in vowel; sense bridges to following exclamation 'O what a multitude in one womb!' but cannot be filled with confidence."
+    },
+    {
+      "eng_gap_id": 21,
+      "section": 3645,
+      "chapter": 57,
+      "line": 88,
+      "proposed_english": "one",
+      "coptic_gap_refs": [
+        30
+      ],
+      "confidence": "high",
+      "basis": "Indefinite article ⲟⲩ joined with ⲟⲩⲱⲧ 'single' = 'one (single) womb,' the formula for fecund multi-bearing in the first generations."
+    },
+    {
+      "eng_gap_id": 22,
+      "section": 3647,
+      "chapter": 57,
+      "line": 90,
+      "proposed_english": null,
+      "coptic_gap_refs": [
+        31
+      ],
+      "confidence": "unrestorable",
+      "basis": "Apparatus marks ⲛⲉⲩϩⲁ as uncertain reading with no consensus; possible 'husbands,' 'wives,' or 'multitude' but cannot be settled."
+    },
+    {
+      "eng_gap_id": 23,
+      "section": 3653,
+      "chapter": 57,
+      "line": 96,
+      "proposed_english": "latter",
+      "coptic_gap_refs": [
+        34
+      ],
+      "confidence": "high",
+      "basis": "ⲛ̄ϩⲁⲉⲩⲉ 'latter ones / latter-day' as opposed to ⲁⲣⲭⲁⲓⲟⲥ 'ancient'; the same contrast as line 9."
+    },
+    {
+      "eng_gap_id": 24,
+      "section": 3654,
+      "chapter": 57,
+      "line": 97,
+      "proposed_english": "beget",
+      "coptic_gap_refs": [
+        35
+      ],
+      "confidence": "high",
+      "basis": "ⲛⲉⲧⲟⲩⲭⲡⲟ ⲙ̄ⲙⲁⲩ 'those whom they beget' — 'them' continuing in next line completes the relative."
+    },
+    {
+      "eng_gap_id": 25,
+      "section": 3657,
+      "chapter": 57,
+      "line": 100,
+      "proposed_english": "their",
+      "coptic_gap_refs": [
+        37
+      ],
+      "confidence": "high",
+      "basis": "Possessive ⲛⲟⲩ- joining 'their counsel' across the line break; 'counsel' itself surfaces in the next segment."
+    }
+  ]
+}

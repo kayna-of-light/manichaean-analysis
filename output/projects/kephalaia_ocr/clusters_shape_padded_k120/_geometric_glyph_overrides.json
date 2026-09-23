@@ -1,0 +1,35 @@
+{
+  "description": "Deterministic recurring-shape labels generated from refined subcluster assignments and geometry. These are not per-glyph manual overrides; each rule must be recurrence-first, visually reviewed, and constrained enough to exclude mixed subcluster contaminants.",
+  "rules": [
+    {
+      "id": "c117_k64_s09_raised_middle_dot",
+      "label": "_middle_dot",
+      "confidence": "strong_geometry_reviewed",
+      "cluster": "117",
+      "subcluster": "09",
+      "subassignments": "subclusters/c117_all_k64_shape_padded/_subassignments.json",
+      "geometry": {
+        "width": [6, 8],
+        "height": [8, 10],
+        "center_y": [29, 33]
+      },
+      "evidence": "Cluster 117 k64/s09 isolates the raised/midline point family to 12 items; the width/height/center-y rule selects the 9 visually coherent raised points and excludes the low dot plus letter/noise contaminants. Target evidence includes p010 l33 b46.",
+      "reviewed_candidates": [
+        "p010 l33 b46",
+        "p052 l11 b41",
+        "p165 l10 b39",
+        "p248 l1 b18",
+        "p250 l1 b17",
+        "p267 l1 b12",
+        "p268 l0 b19",
+        "p274 l1 b19",
+        "p279 l1 b14"
+      ],
+      "excluded_contaminants": [
+        "p159 l32 b30: cy=34, near German leer",
+        "p263 l30 b29: 18x24 connected/noise contaminant",
+        "p284 l3 b18: 10x13 German-text contaminant"
+      ]
+    }
+  ]
+}
