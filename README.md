@@ -1,6 +1,6 @@
 # Manichaean Analysis — Correspondential Reading Project
 
-Reading the Manichaean texts through the correspondential lens — the same methodology applied to the [Nag Hammadi Library](https://github.com/kayna-of-light/NagHammadiLibrary).
+Reading the Manichaean texts through the correspondential lens — the same methodology applied to the [Nag Hammadi Library](https://github.com/kayna-of-light/nag-hammadi-analysis).
 
 ## Companion Repositories
 
@@ -10,8 +10,8 @@ This project is part of a multi-repository research framework:
 |---|---|
 | **[literary-compilation](https://github.com/kayna-of-light/literary-compilation)** | The Divine Bricolage — research collection and synthesis across multiple channels, documenting what the data shows and how it connects |
 | **[structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis)** | Empirical data analysis — NDE phenomenology, past-life memory, MallWorld dream data |
-| **[nag-hammadi-analysis](https://github.com/kayna-of-light/NagHammadiLibrary)** | Correspondential reading of the complete Nag Hammadi Library |
-| **[proto-luke-reconstruction](https://github.com/kayna-of-light/ProtoLuke)** | Proto-Luke reconstruction — the Jamesian Protograph |
+| **[nag-hammadi-analysis](https://github.com/kayna-of-light/nag-hammadi-analysis)** | Correspondential reading of the complete Nag Hammadi Library |
+| **[proto-luke-reconstruction](https://github.com/kayna-of-light/proto-luke-reconstruction)** | Proto-Luke reconstruction — the Jamesian Protograph |
 
 ## Artifact Storage
 
@@ -587,5 +587,5 @@ See [docs/COPTIC_TRANSCRIPTION.md](docs/COPTIC_TRANSCRIPTION.md) for detailed te
 |---|---|
 | [literary-compilation](https://github.com/kayna-of-light/literary-compilation) | The Divine Bricolage framework — knowledge graph, source documents |
 | [structured-data-analysis](https://github.com/kayna-of-light/structured-data-analysis) | Empirical data analysis — NDE, past-life memory, MallWorld |
-| [NagHammadiLibrary](https://github.com/kayna-of-light/NagHammadiLibrary) | NHL correspondential reading project |
-| [ProtoLuke](https://github.com/kayna-of-light/ProtoLuke) | Proto-Luke reconstruction — the Jamesian Protograph |
+| [nag-hammadi-analysis](https://github.com/kayna-of-light/nag-hammadi-analysis) | NHL correspondential reading project |
+| [proto-luke-reconstruction](https://github.com/kayna-of-light/proto-luke-reconstruction) | Proto-Luke reconstruction — the Jamesian Protograph |
