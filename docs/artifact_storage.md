@@ -8,6 +8,10 @@ particular local file has already been backed up.
 
 ## What Git Keeps
 
+- Final Ancient Word publication PDFs in `output/pdfs/`, including
+	`The_Ancient_Word.pdf` and versioned `The_Ancient_Word_v*.pdf` editions. These are
+	published deliverables even though the PDF generators can rebuild them.
+	Temporary `*_tmp.pdf` builds remain ignored.
 - Source OCR JSON and captured source text, including `data/*.pdf.json` and
 	`output/texts/`. A new OCR service call or a new download need not reproduce them.
 - Original Coptic model transcriptions, including both pass texts and two-pass JSON
@@ -35,7 +39,7 @@ until its provenance is established.
 
 | Rebuildable product | Retained inputs / producer |
 |---|---|
-| `output/pdfs/*.pdf` | Saved text and JSON; PDF generators in `scripts/tools/` |
+| Other `output/pdfs/*.pdf` and temporary `*_tmp.pdf` builds | Saved text and JSON; PDF generators in `scripts/tools/`; final Ancient Word editions are explicitly retained |
 | `kephalaia/analysis/chapters/*.json` | Cleaned chapters and corpus metadata; `scripts/projects/kephalaia/stage_3_score.py` |
 | `kephalaia_v2/scores/*.json` | Saved chapters and corpus metadata; `scripts/projects/kephalaia_v2/stage_3b_score.py` |
 | `kephalaia_v2/coptic/images/*.jpg` | Source PDFs restored from Drive; `scripts/projects/kephalaia_v2/stage_0_extract.py` |

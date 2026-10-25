@@ -31,6 +31,9 @@ data/*.pdf
 # Keep LLM responses, corrected text, labels, overrides, and review snapshots.
 # Exclude only known rebuildable products; see docs/artifact_storage.md.
 /output/pdfs/*.pdf
+!/output/pdfs/The_Ancient_Word.pdf
+!/output/pdfs/The_Ancient_Word_v*.pdf
+/output/pdfs/*_tmp.pdf
 /output/projects/kephalaia/analysis/chapters/*.json
 /output/projects/kephalaia_v2/scores/*.json
 /output/projects/kephalaia_v2/coptic/images/*.jpg
