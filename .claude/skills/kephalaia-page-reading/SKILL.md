@@ -10,11 +10,12 @@ transcriptions, review exports, page JSON, glyph libraries, translations or any 
 
 | What | Where |
 |---|---|
-| Page images (edition pp. 10–291) | `output/projects/kephalaia_v2/coptic/images/keph_pNNN.jpg` (1553×2258) |
+| Page images (edition pp. 10–291) | `output/projects/kephalaia_v2/coptic/images/keph_pNNN.jpg` (1553×2258, git-ignored). If missing, download the same file names from the Google Drive folder https://drive.google.com/drive/folders/1OIO3H2-nzmgHsSnNAEXyrDRmsL7BaEwi into that directory |
 | Tools | `scripts/projects/kephalaia_reading/` (`model.py` is shared by all of them) |
 | Drafts, crops (working files) | `temp/kephalaia_reading/drafts/keph_pNNN.txt`, `temp/kephalaia_reading/crops/` |
 | **Canonical record** | `data/kephalaia/epidoc/keph_pNNN.xml` (EpiDoc TEI, tracked) |
 | Analysis layers (rebuildable) | `output/projects/kephalaia_reading/layers/` |
+| Review images (tracked) | `data/kephalaia/review/keph_pNNN.jpg`, from `review_images.py` |
 | Print (rebuildable) | `output/projects/kephalaia_reading/print/` |
 
 Run every tool from `scripts/projects/kephalaia_reading/`.
@@ -65,6 +66,11 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 8. **Layers and print.** `python layers.py` and `python render_print.py NNN ...`. Then look at
    `print/preview_N.png` side by side with the scan. The aligned view catches what line-by-line reading misses
    (ekthesis, a missing dot, a misplaced heading).
+9. **Review images.** `python review_images.py NNN` renders `data/kephalaia/review/keph_pNNN.jpg` from the layers
+   JSON. It shows the scan on the left and the reading line for line on the right, with kephalaion, counts, apparatus
+   and notes. It is meant for the user's direct visual inspection: commit it with the page. In a report, link it as
+   `https://raw.githubusercontent.com/kayna-of-light/manichaean-analysis/<commit-sha>/data/kephalaia/review/keph_pNNN.jpg`
+   (the repo is public; pin the SHA so the image never changes under the link).
 
 ## Draft markup → Leiden → EpiDoc
 
