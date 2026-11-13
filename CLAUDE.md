@@ -213,7 +213,7 @@ python scripts/scrape_gnosis.py
 | Skill | Purpose |
 |---|---|
 | [kephalaia-editorial-fingerprint-mapping](.claude/skills/kephalaia-editorial-fingerprint-mapping/SKILL.md) | Manual content-first mapping of German editorial sentences to cluster-array fingerprints in `temp/editorial_sentences.json`; use for Manual Reviewer editorial overlay work. |
-| [kephalaia-page-audit](.claude/skills/kephalaia-page-audit/SKILL.md) | Per-page visual audit of `output/projects/kephalaia_v2/pages/p_NNN.json` against manuscript image and Gardner translation. Use when working through `temp/page_audit_chores.md`. |
+| [kephalaia-page-reading](.claude/skills/kephalaia-page-reading/SKILL.md) | Read a page image of the printed Kephalaia edition by eye, verify dots and strokes by measurement, and record it as EpiDoc TEI (`data/kephalaia/epidoc/`) with analysis layers and a line-aligned print. |
 | [kephalaia-ocr-correction](.claude/skills/kephalaia-ocr-correction/SKILL.md) | Manuscript-first OCR correction workflow for `output/projects/kephalaia_ocr`: review sheets, mixed shape clusters, subcluster labels, lacuna dots, connected Coptic blobs, rebuilds, and verification. |
 | [manual-reviewer-ui-component](.claude/skills/manual-reviewer-ui-component/SKILL.md) | Build UI components for the Manual Reviewer: MUI 9 + Tailwind 4 glass morphism theme, design tokens, dark mode, component composition. |
 | [manual-reviewer-api-route](.claude/skills/manual-reviewer-api-route/SKILL.md) | Add Next.js API route handlers: route patterns, Zod validation, SQLite repo access, dynamic params, error handling. |

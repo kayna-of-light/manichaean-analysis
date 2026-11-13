@@ -1,0 +1,39 @@
+@page { size: 297mm 210mm; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Cop, 'Segoe UI Historic', serif; color: #111; }
+.sheet { position: relative; width: 297mm; height: 210mm; page-break-after: always; overflow: hidden; }
+.scan { position: absolute; left: 8mm; top: 10mm; height: 190mm; border: 0.2mm solid #bbb; }
+.col { position: absolute; top: 0; width: 148mm; height: 210mm; }
+.row { position: absolute; left: 0; right: 0; transform: translateY(-50%); white-space: nowrap; font-size: 10.2pt; line-height: 1; }
+.row .no { display: inline-block; width: 7mm; color: #888; font: 7pt Georgia, serif; }
+.row .tx { display: inline-block; }
+.row.ek .tx { margin-left: -2.6mm; }
+.row.ctr { text-align: center; padding-right: 7mm; }
+.row.ctr .no { position: absolute; left: 0; }
+.row.hd .tx { margin-left: 30mm; }
+.marg { padding-left: 7mm; }
+.marg .ml { display: inline-block; width: 30mm; text-align: center; }
+.marg .ghost { visibility: hidden; }
+.marg .mr { margin-left: 6mm; }
+.head { font: 8pt Georgia, serif; color: #555; padding-left: 7mm; }
+.pno { text-align: right; padding-right: 12mm; }
+.frame { border-top: 0.3mm solid #111; border-bottom: 0.3mm solid #111; padding: 0.3mm 0.6mm; }
+.run { text-align: center; padding-right: 12mm; }
+.foot { font: 7.6pt Georgia, Cop, serif; white-space: normal; color: #333; padding-left: 7mm; }
+.guide { position: absolute; left: -6mm; width: 4.5mm; border-top: 0.2mm dotted #c33; }
+.big { font-size: 140%; line-height: 0.8; }
+.gap { display: inline-block; width: 7mm; }
+.vac { font: italic 8.5pt Georgia, serif; color: #444; }
+.legend { padding: 12mm 14mm; font: 9pt Georgia, Cop, serif; line-height: 1.35; }
+.legend h1 { font-size: 15pt; margin: 0 0 2mm; }
+.legend h2 { font-size: 10.5pt; margin: 4mm 0 1.5mm; }
+.legend h3 { font-size: 9pt; margin: 2mm 0 0.5mm; }
+.legend .sub { margin: 0 0 3mm; color: #333; }
+.legend .cols { display: grid; grid-template-columns: 1.15fr 1fr; gap: 8mm; }
+.legend table { border-collapse: collapse; }
+.legend th { text-align: left; font-size: 8pt; color: #555; padding-bottom: 1mm; }
+.legend table td { padding: 0.45mm 2mm 0.45mm 0; vertical-align: top; }
+.legend table td:first-child { font-family: Cop, serif; white-space: nowrap; font-size: 10pt; }
+.legend table td:nth-child(2) { font: 7.4pt Consolas, monospace; color: #333; }
+.legend ul { margin: 0; padding-left: 4.5mm; }
+.legend code { font-size: 8pt; }
