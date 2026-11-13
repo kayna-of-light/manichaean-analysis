@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kephalaia of the Teacher, edition page 12: diplomatic and Leiden transcription</title>
+      </titleStmt>
+      <publicationStmt><p>manichaean-analysis working transcription.</p></publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="edition">Kephalaia (Manichäische Handschriften der Staatlichen Museen Berlin), ed. H. J. Polotsky and
+          A. Böhlig, Stuttgart: Kohlhammer, <biblScope unit="page">12</biblScope>. Restorations, sublinear dots,
+          gap counts and corrections are the editors'.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
+        measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
+        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+      <tagsDecl>
+        <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
+      </tagsDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-11-13">Compiled from reading draft.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="surface" ulx="0" uly="0" lrx="1553" lry="2258">
+      <graphic url="output/projects/kephalaia_v2/coptic/images/keph_p012.jpg"/>
+      <zone xml:id="z-pagenum" ulx="1150" uly="216" lrx="1430" lry="258"/>
+      <zone xml:id="z-header" ulx="700" uly="253" lrx="1150" lry="295"/>
+      <zone xml:id="z1" ulx="440" uly="314" lrx="1430" lry="356"/>
+      <zone xml:id="z2" ulx="440" uly="353" lrx="1430" lry="395"/>
+      <zone xml:id="z3" ulx="440" uly="395" lrx="1430" lry="437"/>
+      <zone xml:id="z4" ulx="440" uly="436" lrx="1430" lry="478"/>
+      <zone xml:id="z5" ulx="440" uly="478" lrx="1430" lry="520"/>
+      <zone xml:id="z6" ulx="440" uly="521" lrx="1430" lry="563"/>
+      <zone xml:id="z7" ulx="440" uly="562" lrx="1430" lry="604"/>
+      <zone xml:id="z8" ulx="440" uly="601" lrx="1430" lry="643"/>
+      <zone xml:id="z9" ulx="440" uly="641" lrx="1430" lry="683"/>
+      <zone xml:id="z10" ulx="440" uly="683" lrx="1430" lry="725"/>
+      <zone xml:id="z11" ulx="440" uly="724" lrx="1430" lry="766"/>
+      <zone xml:id="z12" ulx="440" uly="765" lrx="1430" lry="807"/>
+      <zone xml:id="z13" ulx="440" uly="802" lrx="1430" lry="844"/>
+      <zone xml:id="z14" ulx="440" uly="846" lrx="1430" lry="888"/>
+      <zone xml:id="z15" ulx="440" uly="889" lrx="1430" lry="931"/>
+      <zone xml:id="z16" ulx="440" uly="929" lrx="1430" lry="971"/>
+      <zone xml:id="z17" ulx="440" uly="970" lrx="1430" lry="1012"/>
+      <zone xml:id="z18" ulx="440" uly="1014" lrx="1430" lry="1056"/>
+      <zone xml:id="z19" ulx="440" uly="1054" lrx="1430" lry="1096"/>
+      <zone xml:id="z20" ulx="440" uly="1100" lrx="1430" lry="1142"/>
+      <zone xml:id="z21" ulx="440" uly="1146" lrx="1430" lry="1188"/>
+      <zone xml:id="z22" ulx="440" uly="1192" lrx="1430" lry="1234"/>
+      <zone xml:id="z23" ulx="440" uly="1236" lrx="1430" lry="1278"/>
+      <zone xml:id="z24" ulx="440" uly="1278" lrx="1430" lry="1320"/>
+      <zone xml:id="z25" ulx="440" uly="1318" lrx="1430" lry="1360"/>
+      <zone xml:id="z26" ulx="440" uly="1357" lrx="1430" lry="1399"/>
+      <zone xml:id="z27" ulx="440" uly="1400" lrx="1430" lry="1442"/>
+      <zone xml:id="z28" ulx="440" uly="1440" lrx="1430" lry="1482"/>
+      <zone xml:id="z29" ulx="440" uly="1484" lrx="1430" lry="1526"/>
+      <zone xml:id="z30" ulx="440" uly="1522" lrx="1430" lry="1564"/>
+      <zone xml:id="z31" ulx="440" uly="1564" lrx="1430" lry="1606"/>
+      <zone xml:id="z32" ulx="440" uly="1611" lrx="1430" lry="1653"/>
+      <zone xml:id="z33" ulx="440" uly="1652" lrx="1430" lry="1694"/>
+      <zone xml:id="z34" ulx="440" uly="1693" lrx="1430" lry="1735"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="edition" xml:lang="cop" xml:space="preserve">
+      <ab>
+        <pb n="12" facs="#surface"/>
+        <milestone unit="kephalaion" n="1" type="continued"/>
+        <fw type="pageNum" rend="framed" facs="#z-pagenum"><num value="12"><supplied reason="lost">ⲓⲃ</supplied></num></fw>
+        <fw type="header" facs="#z-header"><hi rend="supraline">ⲛ</hi>ⲕⲉⲫⲁⲗⲁⲓⲟⲛ</fw>
+        <lb n="1" facs="#z1"/><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><unclear>ⲡ</unclear>ⲛⲉⲩ ⲉⲧⲉⲣⲉ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲛⲁϫⲉⲥ<hi rend="supraline">ⲧϥ</hi> ⲁⲡϫⲓⲥⲉ ⲛⲧⲁϥ
+        <lb n="2" facs="#z2"/><unclear>ⲙⲛ</unclear> <unclear>ⲧ</unclear>ⲉϥ<unclear>ⲉⲕⲕⲗ</unclear>ⲏⲥⲓⲁ <hi rend="supraline">ⲛ</hi>ⲥⲉⲗⲟ ϩ<hi rend="supraline">ⲙ</hi> ⲡⲕⲟⲥⲙⲟⲥ ⲛⲧⲟⲩⲛⲟⲩ ⲉ
+        <lb n="3" facs="#z3"/><supplied reason="lost">ⲧ</supplied><unclear>ⲙⲙⲉⲩ</unclear> <unclear>ϣⲁⲩ</unclear>ⲧⲛⲛⲁⲩ ⲕⲉⲁⲡⲟⲥⲧⲟⲗⲟⲥ ϩⲓⲣⲉⲧϥ ⲛⲧⲕⲉⲉⲕ
+        <lb n="4" facs="#z4"/><unclear>ⲕ</unclear><supplied reason="lost">ⲗⲏⲥⲓⲁ </supplied><gap reason="lost" quantity="5" unit="character"/> ⲩⲉ <hi rend="supraline">ⲙ</hi>ⲙⲁ<unclear>ⲥ</unclear> <gap reason="illegible" quantity="5" unit="character"/> ⲛⲏ ⲁⲗⲗⲁ <hi rend="supraline">ⲛ</hi>ϣⲁⲣ<hi rend="supraline">ⲡ</hi>
+        <lb n="5" facs="#z5"/>ϣⲁϥ<hi rend="supraline">ⲣ</hi> ⲙⲙⲟⲣⲫⲁⲩⲉ <hi rend="supraline">ⲛ</hi>ⲧⲉϥⲉⲕⲕ<unclear>ⲗ</unclear>ⲏ<unclear>ⲥⲓⲁ</unclear> <hi rend="supraline"><unclear>ⲛ</unclear></hi>ⲣⲙϩⲉ ϩⲙ ⲡϫⲓ<unclear>ⲥⲉ</unclear>
+        <lb n="6" facs="#z6"/>ⲛⲧϩⲉ ⲉⲧⲁ<hi rend="diaeresis">ⲓ</hi>ϫⲟⲟⲥ ⲁⲣⲱⲧ<hi rend="supraline">ⲛ</hi> ⲡⲛⲉⲩ ⲉ<unclear>ⲧ</unclear> <gap reason="illegible" quantity="11" unit="character"/>
+        <lb n="7" facs="#z7"/>ϣⲁϥⲉⲓ ⲁⲡⲓⲧⲛⲉ ϩⲱϥ ⲁⲛ ⲛϥⲟⲩⲱⲛϩ <gap reason="illegible" quantity="10" unit="character"/>
+        <lb n="8" facs="#z8"/><gap reason="illegible" quantity="1" unit="character"/> ⲛϥϯⲟⲩⲱ ⲛⲧ<hi rend="supraline">ϥ</hi>ⲉⲕⲕⲗⲏⲥⲓⲁ ⲛϥⲛⲁϩⲙ<unclear>ⲉⲥ</unclear> ⲛⲧⲛ <unclear>ⲧⲥⲁⲣⲝ</unclear> <hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡ</supplied>
+        <lb n="9" facs="#z9"/><supplied reason="lost">ⲛⲁⲃⲉ</supplied> <gap reason="illegible" quantity="6" unit="character"/> <supplied reason="lost">ⲁ</supplied> ⲧϭⲓⲛⲉⲓ ⲙⲡⲁⲡⲟⲥⲧⲟⲗ<unclear>ⲟⲥ</unclear> ϣⲱⲡⲉ ⲁⲡⲥⲁⲡ
+        <lb n="10" facs="#z10"/><gap reason="illegible" quantity="12" unit="character"/> <supplied reason="lost">ⲛⲧ</supplied>ϩⲉ ⲉⲧⲁ<hi rend="diaeresis">ⲓ</hi>ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ <unclear>ϫ</unclear>ⲛ <hi rend="supraline">ⲛ</hi><unclear>ⲥ</unclear>ⲏⲑⲏ<unclear>ⲗ</unclear>
+        <lb n="11" facs="#z11"/><supplied reason="lost">ⲡϣⲁ</supplied><unclear>ⲙⲓⲥⲉ</unclear> ⲛ<unclear>ϣⲏ</unclear>ⲣⲉ <hi rend="supraline">ⲛ</hi>ⲁⲇⲁⲙ ϣⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲉⲛⲱϣ ⲁϩⲁⲛ
+        <lb n="12" facs="#z12"/><supplied reason="lost">ⲉⲛⲱⲭ</supplied> ϫ<supplied reason="lost">ⲛ ⲛ</supplied>ⲉⲛⲱⲭ <unclear>ϣ</unclear><supplied reason="lost">ⲁ</supplied><unclear>ϩ</unclear>ⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲥⲏ<unclear>ⲙ</unclear> <supplied reason="lost">ⲡ</supplied>ϣⲏⲣⲉ ⲛ <gap reason="illegible" quantity="2" unit="character"/>
+        <lb n="13" facs="#z13"/><note type="transcriber">not read by the editors</note>
+        <lb n="14" facs="#z14"/><gap reason="illegible" quantity="11" unit="character"/> ⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲛⲛ<unclear>ⲥ</unclear>ⲱⲥ ⲁⲛ <gap reason="illegible" quantity="7" unit="character"/>
+        <lb n="15" facs="#z15"/><gap reason="lost" quantity="5" unit="character"/><supplied reason="lost">ⲃⲟⲩ</supplied><unclear>ⲇⲇⲁⲥ</unclear> ⲁⲧⲁⲛⲁⲧⲟⲗⲏ ⲙⲛ ⲁⲩⲣⲉⲛⲧⲏⲥ ⲙⲛ ⲡⲕⲉ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="16" facs="#z16"/><gap reason="lost" quantity="7" unit="character"/><unclear>ⲧⲉ</unclear> <unclear>ⲉⲧ</unclear>ⲁⲩⲧⲛⲛⲁⲩⲥⲟⲩ ⲁⲡⲥⲁ<unclear>ⲛⲙ</unclear>ⲡⲣ<hi rend="diaeresis">ⲓ</hi>ⲉ ϫⲛ ⲛ<unclear>ⲧϭⲓⲛ</unclear><supplied reason="lost">ⲉⲓ</supplied>
+        <lb n="17" facs="#z17"/><hi rend="supraline"><unclear>ⲛ</unclear></hi><unclear>ⲃⲟ</unclear>ⲩⲇⲇⲁ<unclear>ⲥ</unclear> <unclear>ⲙ</unclear><hi rend="supraline"><unclear>ⲛ</unclear></hi> ⲁⲩⲣⲉⲛⲧⲏⲥ ϣⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲧϭⲓⲛⲉⲓ <unclear>ⲛⲍ</unclear><supplied reason="lost">ⲁ</supplied>
+        <lb n="18" facs="#z18"/><supplied reason="lost">ⲣⲁ</supplied><unclear>ⲇⲏ</unclear>ⲥ ⲁⲧⲡⲉⲣⲥⲓⲥ ⲡⲥ<unclear>ⲁⲡ</unclear> ⲉⲧⲁϥⲉⲓ ϣⲁ ϩⲩⲥⲧⲁⲥⲡⲏ<unclear>ⲥ</unclear>
+        <lb n="19" facs="#z19"/><supplied reason="lost">ⲡⲣ</supplied><unclear>ⲣⲟ</unclear> ϫ<hi rend="supraline">ⲛ</hi> ⲛⲧϭⲓⲛⲉⲓ ⲛⲍⲁⲣⲁⲇⲏⲥ ϣⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲧϭⲓⲛⲉⲓ ⲛⲓ<hi rend="supraline">ⲏⲥ</hi>
+        <lb n="20" facs="#z20"/><supplied reason="lost">ⲡ</supplied><hi rend="supraline"><supplied reason="lost">ⲭⲣⲥ</supplied></hi> ⲡϣⲏⲣⲉ ⲛⲧⲙⲛⲧⲛⲁϭ <space extent="unknown" unit="character"/>
+        <lb n="21" facs="#z21"/><gap reason="illegible" quantity="6" unit="character"/> ⲛ<hi rend="supraline">ⲓⲏⲥ</hi> ⲡ<hi rend="supraline">ⲭⲣⲥ</hi> ⲡ<hi rend="supraline">ⲛ</hi>ϫⲁ<hi rend="diaeresis">ⲓ</hi>ⲥ ⲁ<unclear>ϥ</unclear>ⲉⲓ <gap reason="illegible" quantity="9" unit="character"/>
+        <lb n="22" facs="#z22"/><gap reason="illegible" quantity="2" unit="character"/> ϩ<hi rend="supraline">ⲛ</hi> ⲟⲩⲡ<hi rend="supraline">ⲛⲓⲕ</hi>ⲟⲛ ϩ<hi rend="supraline">ⲛ</hi> ⲟⲩⲥⲱⲙⲁ <gap reason="illegible" quantity="14" unit="character"/>
+        <lb n="23" facs="#z23"/>ⲧⲉ ⲛⲧϩⲉ ⲉⲧⲁ<hi rend="diaeresis">ⲓ</hi>ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ ⲉⲧⲃⲏⲧϥ ⲁⲓ<unclear>ⲥ</unclear> <gap reason="illegible" quantity="5" unit="character"/> <unclear>ⲁⲣⲁϥ</unclear>
+        <lb n="24" facs="#z24"/>ϫⲉ ⲛⲧⲁϥⲉⲓ ⲭⲱⲣⲓⲥ ⲥⲱⲙⲁ ⲁ ⲛⲉϥⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲁⲛ ⲧⲁϣⲉ<unclear>ⲁ<hi rend="diaeresis">ⲓ</hi>ϣ</unclear>
+        <lb n="25" facs="#z25"/>ϩⲁⲣⲁϥ ϫⲉ ⲁϥϫⲓ ⲟⲩⲙⲟⲣⲫⲏ ⲛϭⲁⲟⲩⲁⲛ ⲟⲩⲥⲭⲏⲙⲁ ⲛⲑⲉ ⲛ
+        <lb n="26" facs="#z26"/>ⲛ<supplied reason="lost">ⲓ</supplied>ⲣⲱⲙⲉ ⲁϥⲉⲓ ⲁⲡⲓⲧ<hi rend="supraline">ⲛ</hi> ⲁϥϭⲱⲗⲡ ⲁⲃⲁⲗ ϩⲙ ⲡⲕⲟⲥⲙⲟⲥ ϩ<hi rend="supraline">ⲙ</hi>
+        <lb n="27" facs="#z27"/><unclear>ⲡ</unclear><supplied reason="lost">ⲇ</supplied>ⲟⲅⲙⲁ ⲛⲛ<hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓⲟⲥ ⲁϥⲥⲱⲧⲡ ⲙⲡⲉ<unclear>ϥ</unclear>ⲙⲛⲧⲥⲛⲁⲩⲥ
+        <lb n="28" facs="#z28"/><hi rend="supraline"><supplied reason="lost">ⲙⲛ</supplied></hi> ⲡⲉϥϣⲃⲉⲥⲛⲁⲩⲥ ⲁϥ<hi rend="supraline">ⲣ</hi> ⲡⲱⲕ ⲛϩⲏⲧ ⲙⲡⲉϥ<hi rend="diaeresis">ⲓ</hi>ⲱⲧ ⲉⲧⲁ<unclear>ϥ</unclear>
+        <lb n="29" facs="#z29"/>ⲧ<hi rend="supraline">ⲛ</hi>ⲛⲁⲩϥ ⲁⲡⲕⲟⲥⲙⲟⲥ ⲙ<hi rend="supraline">ⲛⲛ</hi>ⲥⲱⲥ ⲁ ⲡ<unclear>ⲡ</unclear>ⲟⲛⲏⲣⲟⲥ ⲛⲉϩ<supplied reason="omitted">ⲥ</supplied>ⲉ
+        <lb n="30" facs="#z30"/><hi rend="supraline">ⲛ</hi><unclear>ⲟⲩ</unclear>ⲫⲑⲟⲛⲟⲥ ⲁⲡⲇⲟⲅⲙⲁ <hi rend="supraline">ⲛⲛ</hi><hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓⲟⲥ ⲁ ⲡ<unclear>ⲥⲁ</unclear>ⲧ<unclear>ⲁ</unclear>ⲛⲁⲥ ⲃⲱ<unclear>ⲕ</unclear>
+        <lb n="31" facs="#z31"/><unclear>ⲁϩⲟ</unclear>ⲩⲛ ⲁ<hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲥ ⲡⲓⲥⲕⲁⲣⲓⲱⲧⲏⲥ ⲟⲩ<unclear>ⲉ</unclear> <unclear>ϩ</unclear><supplied reason="lost">ⲙ ⲡⲙⲛⲧⲥ</supplied><unclear>ⲛ</unclear>ⲁⲩⲥ
+        <lb n="32" facs="#z32"/><unclear>ⲛ</unclear><hi rend="supraline"><unclear>ⲓ</unclear>ⲏⲥ</hi> ⲁϥⲕⲁⲧⲏⲅⲟⲣⲉ ⲙⲙⲁϥ ⲛⲁϩⲣ<hi rend="supraline">ⲛ</hi> ⲡⲇⲟ<unclear>ⲅⲙ</unclear><supplied reason="lost">ⲁ ⲛⲛⲓⲟ</supplied>ⲩⲇⲁⲓ
+        <lb n="33" facs="#z33"/>ⲟⲥ ϩ<hi rend="supraline">ⲙ</hi> ⲡⲉϥⲁⲥⲡⲁⲥⲙⲟⲥ ⲁϥⲡⲁⲣⲁⲇⲓⲇⲟⲩ <hi rend="supraline">ⲙ</hi><supplied reason="lost">ⲙⲁϥ ⲁⲧⲟⲟ</supplied>
+        <lb n="34" facs="#z34"/>ⲧⲟⲩ <hi rend="supraline">ⲛⲛ</hi><hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓⲟⲥ ⲙⲛ ⲧⲥⲡⲉⲓⲣⲁ ⲛⲛⲙⲁⲧ<unclear>ⲁ</unclear><supplied reason="lost">ⲓ</supplied> <space type="unmarked" extent="unknown" unit="character"/> <supplied reason="lost">ⲁ </supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><supplied reason="lost"><hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓ</supplied>
+      </ab>
+      </div>
+      <div type="commentary">
+        <p n="1">The framed manuscript page number [ⲓⲃ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="4">The edition prints an opening bracket before ⲗⲏⲥⲓⲁ and no closing bracket; the restoration and the five lost letters after it are taken to end before ⲩⲉ.</p>
+        <p n="12">The editors expect [ⲛⲱϩⲉ] at the end of the line (apparatus).</p>
+        <p n="13">The editors print that this line was not read; no text is given.</p>
+        <p n="15">The line ends with an opening bracket and nothing after it; the bracket is closed only in l. 16, after seven dots. Here it is kept as a transcriber note at its place; l. 16 reopens the bracket.</p>
+        <p n="16">The edition prints the closing bracket after seven dots with no opening bracket on this line (it was opened at the end of l. 15).</p>
+        <p n="19">The overline over ⲓⲏⲥ is printed high, between ll. 18 and 19; measured, it covers ⲏⲥ and only a third of ⲓ (bar 1175–1209, ⲓ 1171–1176).</p>
+        <p n="20">The overline of [ⲡⲭⲣⲥ] covers ⲭⲣⲥ and not ⲡ (measured), as in l. 21.</p>
+        <p n="22">Measured overline 621–667: it covers ⲛ and ⲓ fully, ⲕ by 57 % and ⲡ by 46 %, so it is encoded on ⲛⲓⲕ. In ϩⲛ̄ at the start of the line the stroke covers ⲛ (56 %) but not ϩ (43 %).</p>
+        <p n="25">The final ⲛ is printed blurred (heavy ink) in the scan.</p>
+        <p n="29">⟨ⲥ⟩ is the editors' correction (apparatus: at the end read ⲛⲉϩ⟨ⲥ⟩ⲉ).</p>
+        <p n="32">The overline over ⲓⲏⲥ starts at ⲓ (measured); ⲓ also carries a sublinear dot.</p>
+        <p n="34">The edition opens a bracket before ⲓ and does not close it; a wide unmarked blank follows, then the bracketed [ⲁ ⲛ̄ⲓ̈ⲟⲩⲇⲁⲓ]. The first restoration is closed after ⲓ here.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
