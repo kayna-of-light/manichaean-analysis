@@ -15,13 +15,20 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.added-above-later-hand"><catDesc>written above the line by a later hand</catDesc></category><category xml:id="app.confirmation"><catDesc>the printed reading is the manuscript's (editors confirm)</catDesc></category><category xml:id="app.conjecture"><catDesc>editors' conjecture (not printed in the text, or an alternative to it)</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category><category xml:id="tr.reading"><catDesc>a letter-identification decision taken on the zoom</catDesc></category><category xml:id="tr.source"><catDesc>about the source images or the page's context</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -109,21 +116,25 @@
         <lb n="34" facs="#z34"/>ⲥ <gap reason="illegible" quantity="2" unit="character"/> <unclear>ⲣ</unclear>ⲙϩⲉ <supplied reason="lost">ⲙ</supplied><unclear>ⲡ</unclear>ⲥⲁⲛⲧⲡⲉ ⲛϣⲁⲣ<hi rend="supraline">ⲡ</hi> <g type="middot">·</g> <hi rend="large">ϩ</hi><hi rend="supraline">ⲙ</hi> ⲡⲥⲏⲩ ⲇⲉ <supplied reason="lost">ⲉⲧⲟⲩⲛⲁ</supplied>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="3" ana="#app.added-above-later-hand"><lem>ϩⲉⲥⲧϥ</lem><note>the ⲥ is written above the line by a later hand</note></app>
+        <app loc="5" ana="#app.conjecture"><rdg resp="#edition">ⲡⲕⲉⲡⲁ<supplied reason="lost">ⲧϣⲏⲛ</supplied></rdg><note>perhaps</note></app>
+        <app loc="19" ana="#app.confirmation"><lem>ⲁⲥϩϥ</lem><note>so</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">No page image before p. 10 is available; the chapter in progress is taken from the running head (Kap. I), and no Coptic chapter numeral is visible on this page.</p>
-        <p n="1">The framed manuscript page number [ⲓ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="2">The edition prints an opening bracket before ⲧϥ and no closing bracket; the four lost letters are taken to end the restoration before ϣⲃⲱⲛ.</p>
-        <p n="3">The ⲥ of ϩⲉⲥⲧϥ is added above the line by a later hand (editor's apparatus).</p>
-        <p n="5">The editors suggest ⲡⲕⲉⲡⲁ[ⲧϣⲏⲛ] (apparatus, marked as possible).</p>
-        <p n="10">ⲝ (here and in ll. 16, 25) is printed with its detached wavy top bar; this is read as part of the letter, not as a supralinear stroke.</p>
-        <p n="15">The edition prints an opening bracket before ⲉ ⲛ̄ⲣⲙ̄ϩⲉ and no closing bracket; the restoration and the eight lost letters are taken to run to the end of the line.</p>
-        <p n="19">The editors confirm ⲁⲥϩϥ as the manuscript reading (apparatus: "so").</p>
-        <p n="24">The stroke over the restored ⲣ is printed as a peaked (caret-like) stroke, as over ⲣ in l. 25. The space before ⲛ̄ⲧⲉϥⲉⲕⲕⲗⲏⲥⲓⲁ is about twice a normal word space; the editors do not mark it.</p>
-        <p n="27">The edition prints a closing bracket after ⲥ with no opening bracket; the eight dots before it are therefore encoded as illegible.</p>
-        <p n="30">The bracket opened before ⲟⲥ is closed only in l. 31, after four dots; it is closed here at the line end and reopened in l. 31.</p>
-        <p n="31">The bracket before the last five dots is not closed in the edition (l. 32 begins with illegible dots); it is closed here at the line end.</p>
-        <p n="32">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
-        <p n="33">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
+        <p n="1" ana="#tr.source">No page image before p. 10 is available; the chapter in progress is taken from the running head (Kap. I), and no Coptic chapter numeral is visible on this page.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="2" ana="#tr.bracket">The edition prints an opening bracket before ⲧϥ and no closing bracket; the four lost letters are taken to end the restoration before ϣⲃⲱⲛ.</p>
+        <p n="10" ana="#tr.reading">ⲝ (here and in ll. 16, 25) is printed with its detached wavy top bar; this is read as part of the letter, not as a supralinear stroke.</p>
+        <p n="15" ana="#tr.bracket">The edition prints an opening bracket before ⲉ ⲛ̄ⲣⲙ̄ϩⲉ and no closing bracket; the restoration and the eight lost letters are taken to run to the end of the line.</p>
+        <p n="24" ana="#tr.print">The stroke over the restored ⲣ is printed as a peaked (caret-like) stroke, as over ⲣ in l. 25. The space before ⲛ̄ⲧⲉϥⲉⲕⲕⲗⲏⲥⲓⲁ is about twice a normal word space; the editors do not mark it.</p>
+        <p n="27" ana="#tr.bracket">The edition prints a closing bracket after ⲥ with no opening bracket; the eight dots before it are therefore encoded as illegible.</p>
+        <p n="30" ana="#tr.bracket">The bracket opened before ⲟⲥ is closed only in l. 31, after four dots; it is closed here at the line end and reopened in l. 31.</p>
+        <p n="31" ana="#tr.bracket">The bracket before the last five dots is not closed in the edition (l. 32 begins with illegible dots); it is closed here at the line end.</p>
+        <p n="32" ana="#tr.bracket">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
+        <p n="33" ana="#tr.bracket">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
       </div>
     </body>
   </text>

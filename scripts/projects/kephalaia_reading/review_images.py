@@ -21,7 +21,8 @@ REVIEW = REPO / "data" / "kephalaia" / "review"
 Y0, Y1, X0, X1 = 105, 1915, 330, 1480
 SCAN_H = 1300
 K = SCAN_H / (Y1 - Y0)
-APPARATUS = {"surplus": "{%s} surplus", "omitted": "⟨%s⟩ omitted", "added-above": "\\%s/ above the line", "sic": "%s sic"}
+APPARATUS = {"surplus": "{%s} surplus", "omitted": "⟨%s⟩ omitted", "added-above": "\\%s/ above the line", "sic": "%s sic",
+             "expunged": "⟦%s⟧ expunged by the scribe"}
 
 CSS = """
 body { margin: 0; background: #fff; font-family: Cop, 'Segoe UI Historic', serif; color: #111; }
@@ -42,6 +43,8 @@ body { margin: 0; background: #fff; font-family: Cop, 'Segoe UI Historic', serif
 .frame { border-top: 2px solid #111; border-bottom: 2px solid #111; padding: 1px 3px; }
 .notes { margin: 6px 16px 0; font: 14px Georgia, Cop, serif; line-height: 1.45; }
 .notes b { font-weight: normal; color: #777; }
+.notes i { font-style: normal; color: #2a5d8f; }
+.ed { font: italic 13px Georgia, serif; color: #2a5d8f; margin-left: 6px; }
 """
 
 
@@ -68,8 +71,10 @@ def page_html(lay: dict) -> str:
         cls += " ek" if line["ekthesis"] else ""
         side = (f' <span class="side">&nbsp; ‖ margin: {" · ".join(margins[line["n"]])}</span>'
                 if line["n"] in margins else "")
+        ed = "".join(f'<span class="ed">{esc(e["en"])}</span>' for e in lay["editorial"]
+                     if e["line"] == line["n"] and e["id"] != "vacat")
         rows.append(f'<div class="row{cls}" style="top:{y:.0f}px"><span class="no">{line["n"]}</span>'
-                    f'<span class="tx">{esc(line["leiden"])}</span>{side}</div>'
+                    f'<span class="tx">{esc(line["leiden"])}</span>{ed}{side}</div>'
                     f'<div class="guide" style="top:{y:.0f}px"></div>')
     keph = " → ".join(str(k["n"]) for k in lay["kephalaia"])
     stats = (f'{len(lay["lines"])} lines · {len(lay["letters"])} letters · '
@@ -77,7 +82,12 @@ def page_html(lay: dict) -> str:
              f'{sum(l["status"] == "restored" for l in lay["letters"])} restored · {len(lay["gaps"])} gaps · '
              f'{len(lay["strokes"])} strokes')
     notes = [f"<b>l. {c['line']}</b> " + esc(APPARATUS[c["type"]] % c["text"]) for c in lay["corrections"]]
-    notes += [f"<b>l. {n['line']}</b> {esc(n['text'])}" for n in lay["notes"]]
+    for a in lay["apparatus"]:
+        where = {"header": "title", "bottom": "below"}.get(a["loc"], f"l. {a['loc']}")
+        where += f" (printed {a['printed_loc']})" if a["printed_loc"] else ""
+        body = " · ".join(filter(None, [esc(a["lem"]), " ¦ ".join(esc(x) for x in a["readings"]), esc(a["note"])]))
+        notes.append(f"<b>{where}</b> <i>{esc(a['en'])}</i> {body}")
+    notes += [f"<b>l. {n['line']}</b> <b>[{esc(n['category'] or '')}]</b> {esc(n['text'])}" for n in lay["notes"]]
     return f"""<section class="sheet">
 <div class="bar"><b>Kephalaia, edition p. {lay['page']}</b> &nbsp;·&nbsp; kephalaion {keph} &nbsp;·&nbsp; {stats}</div>
 <div class="body"><img class="scan" src="{crop.as_uri()}" style="width:{scan_w}px">

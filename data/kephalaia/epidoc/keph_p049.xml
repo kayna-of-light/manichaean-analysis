@@ -15,13 +15,20 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.added-above"><catDesc>written above the line</catDesc></category><category xml:id="app.correction"><catDesc>editors' correction ('read')</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -114,11 +121,16 @@
         <lb n="35" facs="#z35"/><gap reason="lost" quantity="21" unit="character"/>ϫⲱⲕ ϩ<unclear>ⲛ</unclear> <unclear>ⲧ</unclear>ⲙⲛ
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="24" n="23" ana="#app.correction"><rdg resp="#edition"><supplied reason="omitted">ⲡ</supplied><hi rend="supraline">ⲡⲛⲁ</hi></rdg><note>read; the footnote is numbered 23, the word stands in l. 24 by the margin numerals</note></app>
+        <app loc="25" n="24" ana="#app.correction"><rdg resp="#edition"><supplied reason="omitted">ⲡ</supplied><hi rend="supraline">ⲡⲛⲁ</hi></rdg><note>likewise (footnote numbered 24)</note></app>
+        <app loc="25" n="24" ana="#app.added-above"><lem>ⲧⲙⲁϩϣⲁⲙⲧⲉ</lem><note>ⲙⲁϩ above the line</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="4">Wide blank before the enlarged ⲛ̣; the editor does not mark it as a vacat.</p>
-        <p n="13">Wide blank before the enlarged ϫ; the editor does not mark it as a vacat.</p>
-        <p n="24">⟨ⲡ⟩ is the editor's correction. The editor's apparatus numbers it l. 23, but the word stands in l. 24 by the printed margin numerals.</p>
-        <p n="25">⟨ⲡ⟩ as in l. 24. ⲙⲁϩ is written above the line (editor's apparatus, numbered l. 24 there).</p>
+        <p n="4" ana="#tr.layout">Wide blank before the enlarged ⲛ̣; the editor does not mark it as a vacat.</p>
+        <p n="13" ana="#tr.layout">Wide blank before the enlarged ϫ; the editor does not mark it as a vacat.</p>
       </div>
     </body>
   </text>

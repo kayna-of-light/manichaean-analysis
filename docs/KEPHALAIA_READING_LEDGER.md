@@ -26,18 +26,26 @@ re-checked).
 | 017 | 2 | 35 | needs audit | 95e59f0 | |
 | 018 | 2 | 37 | audited | ea5025b | ~95 % lacuna; corrected 2026-11-14 (runs, dots, l.13 stroke, ll.19/21/22 letters) |
 | 019 | 2 | 35 | audited | 67f95ca | corrected 2026-11-14 (runs, dots, all strokes, ll.1/29 letters) |
+| 020 | 2 | 35 | audited | 86b2dfa | read + audited 2026-11-14; audit added ϣ̣ l.32 |
+| 021 | 2 | 36 | audited | e1dc18a | ll.5–11 no text (zerstört / unlesbar); audit added ϣ̣ l.23 |
+| 022 | 2 | 35 | audited | 86cea54 | ll.1–8 no text; audit added ϣ̣ ll.28, 31 |
+| 023 | 2 → 3 | 33 | audited | 52793b2 | kephalaion 3 opens l. 14, title ll. 15–16; audit added ϣ̣ ll.20, 22, 24 |
+| 024 | 3 | 33 | audited | 8c518f2 | running title ⲙⲡⲥⲁϩ (apparatus); audit: no reading changes |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **020**.
+Next unread page: **025**.
 
 ---
 
 ## 2. Open items
 
-- Corrections to 018 and 019 are on branch `claude/optimistic-galileo-sykil7` (pushed, no PR yet).
+- Pages 020–024 (read and audited) are on branch `reading/2026-11-14`, PR #4. The editorial-vocabulary migration of
+  all 19 pages builds on it (branch `claude/optimistic-galileo-iqh4x9`).
+- The skill (`kephalaia-page-reading`) lists "a ϣ tail" as a known harmless reconcile flag. Taken as a rule that is wrong:
+  see §3 item 7. The skill should be corrected (user's decision; routine runs may not edit it).
 - Audit 010–017 and the pilot pages (049, 111, 159, 183) with the strict method in §3.
 - The p. 019 footnote on ⲥⲏⲣ is read in our note as "ⲥ̄ⲏ̄ⲣ̄ no overline"; confirm the footnote wording on the scan
   if p. 019 is touched again.
@@ -73,8 +81,16 @@ Strict method:
    ≥ half-a-letter rule by eye. Bars from the previous line's ϩ/ϣ/ϥ descenders show up as false strokes;
    curved strokes can be missed by the detector.
 7. **Sublinear dots:** ϥ/ϩ/ⲣ dot sits left of the descender. A dotted ϣ has a separate dot in the lower bowl;
-   compare with an undotted ϣ on the same page before accepting it.
-8. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
+   compare with an undotted ϣ on the same page before accepting it. Look at every ϣ at 8×: the dotted ones show a
+   small round dot sitting in the lower loop, apart from the stroke; the tail of ϣ is a curve joined to the letter.
+   On 020–023 six real dots were first written off as "the tail of ϣ" because a tool flag was taken as the answer
+   instead of looking (2026-11-14). A blob scan (small components inside a letter's box) can point to places worth
+   a look, but it neither proves nor rules out a dot — the decision is made on the zoom.
+8. **Audit sheet:** 4× strips of five lines in three overlapping x-ranges (370/440–780, 760–1100, 1080–1430);
+   compare each against the draft rows printed alongside.
+9. **German statements:** look each formula up in the vocabulary and encode its id; never paraphrase it in a note.
+   Check where printed brackets stand around a statement (a bare `[` at the line start is a separate loss).
+10. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
 
 ---
 
@@ -82,23 +98,30 @@ Strict method:
 
 - Orphan `]` (opener not on the line, none at end of previous line): preceding dots illegible, `]` → `‡`, note.
 - Cross-line bracket (`[` at end of line N, `]` on line N+1): close at the end of N if N has dots inside;
-  reopen on N+1 as a lost gap; note on both lines. A bare `[` at the very end with nothing after → inline
-  note `⁅opening bracket; the rest of the line is lost⁆`.
-- Unclosed `[` followed by dots to the line end → close at the line end, note.
-- Empty printed brackets (lost, extent not counted) → inline note, no gap.
-- German: `leer` → `vac.`; `nicht gelesen`, `verwischt`, `abgerieben`, `geringe Spuren`, `einstweilen unlesbar`,
-  `stark abgerieben`, `Rest abgerieben` → English inline note on the line(s) + note row; brace over several
-  lines → one note per line ("See l. N"). Footnotes → English note rows ("apparatus").
+  reopen on N+1 as a lost gap; note (category `bracket`) on both lines.
+- Unclosed `[` followed by dots to the line end → close at the line end, note (`bracket`).
+- **Editors' German (since 2026-11-14): structure, not prose.** Every formula is looked up in
+  `data/kephalaia/editorial_vocabulary.json` (new formula → add an entry with meaning and judgement first).
+  In the text: `⁅=ID⁆` / `⁅=ID:line⁆`, one per line even under a brace → `<gap … ana="#ed.ID">`. Bare `[` →
+  `[⁅=open-bracket⁆]`, `[ ]` → `[⁅=uncounted⁆]`, `[?` → `[⁅=open-bracket-query⁆]`. Footnotes → `app` rows
+  (`<listApp>`), typed by the vocabulary. Commentary rows carry a category (bracket · print · layout · reading · source).
+  `validate.py` refuses free-text inline notes, unknown ids and uncategorised commentary.
+- Judgements fixed in the vocabulary: abrasion or destruction named → lost; smearing, illegible, traces, not read →
+  illegible; inside printed brackets → lost (the bracket wins over the word, e.g. 21.4 traces in brackets).
+  A bare `[` at a line start beside a braced statement (21.8–11) = lost beginning + the statement for the rest.
+- `[[x]]` with "auspunktiert" (15.16) is the scribe's deletion → `⟦x⟧` (del rend=expunction), not `{x}`.
 - Parenthesised letters inside a restoration (e.g. [ⲟⲥ ⲁⲧ(ⲣ)ⲟⲩ]) → restoration without parentheses + note.
 - Framed page number: bar above and below is the frame, not a stroke (note on l. 1). The tool always places
   its zone at the right, also on even pages where it is printed at the left.
-- `ⲱ über der Zeile` (019 l. 29) → `\ⲱ/`.
+- `ⲱ über der Zeile` (019 l. 29) → `\ⲱ/` + apparatus `added-above`.
 
 ---
 
 ## 5. Environment notes
 
-- Python with the needed packages: `/usr/local/bin/python3.13` (plain `python` is 3.11 without lxml).
+- Python with the needed packages: `/usr/local/bin/python3.13` (plain `python` is 3.11 without lxml). Alternative
+  used on 2026-11-14: `python -m pip install lxml numpy scipy pillow playwright==1.63.0` for 3.11 — 1.63.0 matches
+  the preinstalled `/opt/pw-browsers` Chromium build (1243), so no symlinks are needed.
 - Playwright's bundled Chromium build differs from the installed one: create a directory with symlinks
   `chromium-<expected>` and `chromium_headless_shell-<expected>` pointing at `/opt/pw-browsers/*-<installed>`
   and export `PLAYWRIGHT_BROWSERS_PATH` to it (expected build is printed by
@@ -116,3 +139,13 @@ Strict method:
   dot-placement, stroke and letter errors (see §3).
 - **2026-11-14** — Audited and corrected 019 (`67f95ca`) and 018 (`ea5025b`) on
   `claude/optimistic-galileo-sykil7`. Created this ledger.
+- **2026-11-14** — Routine run: read 020–024 (PR #4). Same day, after the ledger was introduced, re-read all five
+  pages line by line at 4× (three overlapping strips per line). Letters, gap counts and strokes held; six dotted ϣ
+  had been dismissed as ϣ tails and were corrected (020 l.32, 021 l.23, 022 ll.28/31, 023 ll.20/22/24). German
+  brace notes now carry one note row per line. All five pages marked audited.
+- **2026-11-14** — Editorial layer: built `data/kephalaia/editorial_vocabulary.json` (German formula → id, meaning,
+  judgement), `decompile.py` (TEI → draft, exact round trip on all 19 pages), gap tokens `⁅=ID⁆`, apparatus rows,
+  commentary categories, `⟦ ⟧`, and `editorial` / `apparatus` layer tables. Migrated all 19 pages from the page images'
+  footnotes: 139 statements, 46 apparatus entries; 88 free-text inline notes and the brace/"See l." rows removed.
+  Two encoding errors fixed on the way: 15.16 expunction (was surplus), 19.7 uncounted loss inside brackets (was
+  missing).

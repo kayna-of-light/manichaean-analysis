@@ -15,10 +15,18 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="ed"><category xml:id="ed.abraded-heavily"><catDesc>badly rubbed off</catDesc></category><category xml:id="ed.illegible-provisional"><catDesc>illegible for now</catDesc></category><category xml:id="ed.not-read"><catDesc>not read by the editors</catDesc></category><category xml:id="ed.open-bracket"><catDesc>lost, extent not counted (opening bracket only)</catDesc></category><category xml:id="ed.uncounted"><catDesc>lost, extent not counted</catDesc></category></taxonomy>
+        <taxonomy xml:id="app"><category xml:id="app.margin-line"><catDesc>one line written in the bottom margin, not given</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
       <change when="2026-11-14">Compiled from reading draft.</change>
@@ -76,69 +84,61 @@
         <milestone unit="kephalaion" n="2" type="continued"/>
         <fw type="pageNum" rend="framed" facs="#z-pagenum"><num value="18"><supplied reason="lost">ⲓⲏ</supplied></num></fw>
         <fw type="header" facs="#z-header"><hi rend="supraline">ⲛ</hi>ⲕⲉⲫⲁⲗⲁⲓⲟⲛ</fw>
-        <lb n="1" facs="#z1"/><unclear>ⲉⲩ</unclear> ⲉⲓ<unclear>ⲟ</unclear> <gap reason="lost" quantity="1" unit="character"/> <unclear>ⲡ</unclear>ⲟⲩ<unclear>ϣⲏ</unclear>ⲣⲉ ⲉⲥϣⲱϭ<unclear>ⲉ</unclear> <unclear>ⲉ</unclear><gap reason="lost" quantity="5" unit="character"/> <gap reason="illegible" quantity="6" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="2" facs="#z2"/><unclear>ⲕⲙ</unclear>ⲡ<unclear>ⲓ</unclear> <gap reason="illegible" quantity="1" unit="character"/> ⲁ <gap reason="illegible" quantity="1" unit="character"/> ⲛϣⲁⲣⲡ ⲙⲉⲛ ⲟⲩ <gap reason="illegible" quantity="2" unit="character"/> <note type="transcriber">lost section, extent not counted, between brackets</note> <gap reason="illegible" quantity="2" unit="character"/> ⲧ <hi rend="supraline">ⲛ</hi>ϩⲏⲧⲟⲩ
+        <lb n="1" facs="#z1"/><unclear>ⲉⲩ</unclear> ⲉⲓ<unclear>ⲟ</unclear> <gap reason="lost" quantity="1" unit="character"/> <unclear>ⲡ</unclear>ⲟⲩ<unclear>ϣⲏ</unclear>ⲣⲉ ⲉⲥϣⲱϭ<unclear>ⲉ</unclear> <unclear>ⲉ</unclear><gap reason="lost" quantity="5" unit="character"/> <gap reason="illegible" quantity="6" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="2" facs="#z2"/><unclear>ⲕⲙ</unclear>ⲡ<unclear>ⲓ</unclear> <gap reason="illegible" quantity="1" unit="character"/> ⲁ <gap reason="illegible" quantity="1" unit="character"/> ⲛϣⲁⲣⲡ ⲙⲉⲛ ⲟⲩ <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.uncounted"/> <gap reason="illegible" quantity="2" unit="character"/> ⲧ <hi rend="supraline">ⲛ</hi>ϩⲏⲧⲟⲩ
         <lb n="3" facs="#z3"/><gap reason="illegible" quantity="1" unit="character"/> <hi rend="supraline">ⲛ</hi><unclear>ϩ</unclear> <gap reason="illegible" quantity="3" unit="character"/> <unclear>ϣ</unclear>ⲁⲩϩ <gap reason="illegible" quantity="2" unit="character"/> ϭ ⲁⲧϩⲁⲏ ⲟⲩ<hi rend="supraline">ⲛ</hi> ⲟⲩ<gap reason="lost" quantity="6" unit="character"/> ⲛ<unclear>ⲉϥ</unclear>ϣⲟⲟⲡ
         <lb n="4" facs="#z4"/><hi rend="supraline">ϩⲛ</hi> ⲛ<unclear>ⲉ</unclear>ⲥϭⲁⲡⲉⲧ <unclear>ⲙⲛ</unclear> ⲛⲉⲥⲃⲁⲉ <gap reason="illegible" quantity="4" unit="character"/> <gap reason="lost" quantity="7" unit="character"/> <gap reason="illegible" quantity="3" unit="character"/> ϥⲙ <gap reason="illegible" quantity="3" unit="character"/>
-        <lb n="5" facs="#z5"/>ⲟⲩ<hi rend="supraline">ⲛ</hi> <unclear>ⲟⲩ</unclear>ⲕⲣⲙⲉⲥ <gap reason="illegible" quantity="1" unit="character"/> <hi rend="supraline">ⲛ</hi>ϩⲏⲧⲟⲩ ⲉϥϩⲁ<unclear>ⲩ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="7" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲉⲩⲛ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="6" facs="#z6"/>ⲃⲛⲛⲉ <gap reason="illegible" quantity="2" unit="character"/> ⲏ <gap reason="illegible" quantity="3" unit="character"/> ⲛⲁϩⲣ<hi rend="supraline">ⲛ</hi> ⲡϣⲏⲛ ⲉ<unclear>ⲧ</unclear><gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="5" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="5" facs="#z5"/>ⲟⲩ<hi rend="supraline">ⲛ</hi> <unclear>ⲟⲩ</unclear>ⲕⲣⲙⲉⲥ <gap reason="illegible" quantity="1" unit="character"/> <hi rend="supraline">ⲛ</hi>ϩⲏⲧⲟⲩ ⲉϥϩⲁ<unclear>ⲩ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="7" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲉⲩⲛ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="6" facs="#z6"/>ⲃⲛⲛⲉ <gap reason="illegible" quantity="2" unit="character"/> ⲏ <gap reason="illegible" quantity="3" unit="character"/> ⲛⲁϩⲣ<hi rend="supraline">ⲛ</hi> ⲡϣⲏⲛ ⲉ<unclear>ⲧ</unclear><gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="5" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
         <lb n="7" facs="#z7"/>ⲉϥ<unclear>ϩⲁⲩ</unclear> ⲉⲡⲉⲓⲇ<unclear>ⲏ</unclear> ⲥ<unclear>ⲉ</unclear>ϯ ⲧⲁⲡ<unclear>ⲟ</unclear>ⲫⲁⲥⲓⲥ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" quantity="11" unit="character"/>
         <lb n="8" facs="#z8"/>ⲁⲃ <gap reason="illegible" quantity="12" unit="character"/> ⲏ ⲛⲉⲧ <gap reason="illegible" quantity="3" unit="character"/> <gap reason="lost" quantity="11" unit="character"/>
         <lb n="9" facs="#z9"/><gap reason="lost" quantity="7" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> ⲛⲉ ⲧⲉ<unclear>ⲧⲟ</unclear>ⲩϯⲣⲉⲛ <gap reason="lost" quantity="9" unit="character"/> ⲁ<unclear>ⲁ</unclear>ⲛ <gap reason="illegible" quantity="2" unit="character"/>
-        <lb n="10" facs="#z10"/><gap reason="lost" quantity="22" unit="character"/>ⲡⲧⲩⲡ<unclear>ⲟ</unclear>ⲥ <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="11" facs="#z11"/><gap reason="illegible" quantity="10" unit="character"/> ϯⲣⲉⲛ ⲁⲣⲁ<unclear>ⲩ</unclear> ϫⲉ ϣ<unclear>ⲏⲛ</unclear> <gap reason="illegible" quantity="5" unit="character"/> ⲡⲟⲩϯ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="12" facs="#z12"/><gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="9" unit="character"/> ϩⲁⲗϭ <gap reason="illegible" quantity="12" unit="character"/><g type="unpaired-bracket">]</g> ⲥ<unclear>ⲁ</unclear>ⲡⲉⲧ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="13" facs="#z13"/><gap reason="lost" quantity="25" unit="character"/><unclear>ϩ</unclear><hi rend="supraline"><unclear>ⲛ</unclear></hi> ⲉ <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="10" facs="#z10"/><gap reason="lost" quantity="22" unit="character"/>ⲡⲧⲩⲡ<unclear>ⲟ</unclear>ⲥ <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="11" facs="#z11"/><gap reason="illegible" quantity="10" unit="character"/> ϯⲣⲉⲛ ⲁⲣⲁ<unclear>ⲩ</unclear> ϫⲉ ϣ<unclear>ⲏⲛ</unclear> <gap reason="illegible" quantity="5" unit="character"/> ⲡⲟⲩϯ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="12" facs="#z12"/><gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" quantity="9" unit="character"/> ϩⲁⲗϭ <gap reason="illegible" quantity="12" unit="character"/><g type="unpaired-bracket">]</g> ⲥ<unclear>ⲁ</unclear>ⲡⲉⲧ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="13" facs="#z13"/><gap reason="lost" quantity="25" unit="character"/><unclear>ϩ</unclear><hi rend="supraline"><unclear>ⲛ</unclear></hi> ⲉ <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
         <lb n="14" facs="#z14"/><gap reason="illegible" quantity="10" unit="character"/> ⲉ ⲁϣⲏ <gap reason="illegible" quantity="16" unit="character"/>
-        <lb n="15" facs="#z15"/><note type="transcriber">illegible for now</note>
-        <lb n="16" facs="#z16"/><note type="transcriber">illegible for now</note>
-        <lb n="17" facs="#z17"/><gap reason="illegible" quantity="8" unit="character"/> ⲙⲡϫ<unclear>ⲱ</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>ⲥ</unclear> <unclear>ⲁ</unclear> <gap reason="illegible" quantity="6" unit="character"/> ⲅⲣⲁⲫ<unclear>ⲏ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="15" facs="#z15"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="16" facs="#z16"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="17" facs="#z17"/><gap reason="illegible" quantity="8" unit="character"/> ⲙⲡϫ<unclear>ⲱ</unclear><gap reason="lost" quantity="2" unit="character"/><unclear>ⲥ</unclear> <unclear>ⲁ</unclear> <gap reason="illegible" quantity="6" unit="character"/> ⲅⲣⲁⲫ<unclear>ⲏ</unclear> <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
         <lb n="18" facs="#z18"/><gap reason="illegible" quantity="20" unit="character"/> ⲉⲓ ⲥⲛⲧ <gap reason="illegible" quantity="4" unit="character"/>
         <lb n="19" facs="#z19"/><gap reason="illegible" quantity="9" unit="character"/> <unclear>ⲉ</unclear>ϥⲥⲱ <gap reason="illegible" quantity="8" unit="character"/> ϣⲁⲩⲥⲙ<unclear>ⲓⲛ</unclear><supplied reason="lost">ⲉ</supplied><gap reason="lost" quantity="3" unit="character"/>
         <lb n="20" facs="#z20"/><gap reason="illegible" quantity="2" unit="character"/> <unclear>ⲙ</unclear>ⲁⲣⲉ <hi rend="supraline">ⲛ</hi> <gap reason="illegible" quantity="3" unit="character"/> ⲣⲱⲙⲉ ϣ <gap reason="illegible" quantity="3" unit="character"/> ϩ<unclear>ⲉ</unclear> <gap reason="illegible" quantity="5" unit="character"/> <unclear>ⲙ</unclear>ⲡ <gap reason="illegible" quantity="4" unit="character"/>
         <lb n="21" facs="#z21"/><gap reason="illegible" quantity="4" unit="character"/> ⲉⲧϩ<unclear>ⲓ</unclear>ϩ<unclear>ⲟ</unclear> <gap reason="illegible" quantity="1" unit="character"/> ϥϩⲁⲗⲉϭ <gap reason="illegible" quantity="8" unit="character"/> ⲣⲁ ⲉϣ<unclear>ⲁ</unclear> <gap reason="illegible" quantity="4" unit="character"/>
         <lb n="22" facs="#z22"/>ϫ<unclear>ⲉ</unclear> <gap reason="illegible" quantity="7" unit="character"/> <unclear>ⲃⲣ</unclear>ⲉ <hi rend="supraline">ⲙ</hi>ⲡ <gap reason="illegible" quantity="3" unit="character"/> <hi rend="supraline">ⲛ</hi><unclear>ⲉ</unclear> <gap reason="illegible" quantity="7" unit="character"/> ⲛ<unclear>ϥ</unclear><hi rend="supraline">ⲣ</hi>ⲱ<supplied reason="lost">ⲉⲩ</supplied>
         <lb n="23" facs="#z23"/>ⲁⲧ<unclear>ⲟⲩ</unclear>ⲧⲣⲟⲫⲏ <gap reason="illegible" quantity="22" unit="character"/>
-        <lb n="24" facs="#z24"/><note type="transcriber">illegible for now</note>
-        <lb n="25" facs="#z25"/><note type="transcriber">illegible for now</note>
-        <lb n="26" facs="#z26"/><note type="transcriber">illegible for now</note>
-        <lb n="27" facs="#z27"/><note type="transcriber">illegible for now</note>
-        <lb n="28" facs="#z28"/><note type="transcriber">illegible for now</note>
-        <lb n="29" facs="#z29"/><note type="transcriber">illegible for now</note>
-        <lb n="30" facs="#z30"/><note type="transcriber">illegible for now</note>
+        <lb n="24" facs="#z24"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="25" facs="#z25"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="26" facs="#z26"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="27" facs="#z27"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="28" facs="#z28"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="29" facs="#z29"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
+        <lb n="30" facs="#z30"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible-provisional"/>
         <lb n="31" facs="#z31"/><gap reason="illegible" quantity="3" unit="character"/> ⲛⲁϩⲉⲣ<unclear>ⲙ</unclear>ⲏⲛⲉⲩⲉ <unclear>ⲁⲃ</unclear>ⲁⲗ ⲛ <gap reason="illegible" quantity="12" unit="character"/>
         <lb n="32" facs="#z32"/>ϩ <gap reason="illegible" quantity="7" unit="character"/> <unclear>ⲁ</unclear>ⲧⲱⲙⲉ <unclear>ⲉⲛ</unclear> ⲁⲧⲡ<gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="6" unit="character"/> <gap reason="lost" quantity="2" unit="character"/>
         <lb n="33" facs="#z33"/>ϩ <gap reason="illegible" quantity="2" unit="character"/> ϩⲛⲣⲱ<unclear>ⲙ</unclear><supplied reason="lost">ⲉ</supplied> ⲉⲩϯⲣⲉⲛ ⲁⲣⲁⲩ <unclear>ϫ</unclear><supplied reason="lost">ⲉ</supplied><gap reason="lost" quantity="12" unit="character"/>
-        <lb n="34" facs="#z34"/><note type="transcriber">not read</note>
-        <lb n="35" facs="#z35"/><note type="transcriber">badly rubbed off</note>
-        <lb n="36" facs="#z36"/><note type="transcriber">badly rubbed off</note>
+        <lb n="34" facs="#z34"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.not-read"/>
+        <lb n="35" facs="#z35"/><gap reason="lost" quantity="1" unit="line" ana="#ed.abraded-heavily"/>
+        <lb n="36" facs="#z36"/><gap reason="lost" quantity="1" unit="line" ana="#ed.abraded-heavily"/>
         <lb n="37" facs="#z37"/><gap reason="illegible" quantity="6" unit="character"/> ϫⲉ ⲉⲩ <gap reason="illegible" quantity="17" unit="character"/> <supplied reason="lost">ⲁⲡⲟ</supplied>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="bottom" ana="#app.margin-line"><note>one line is written in the bottom margin; the editors give no text</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲓⲏ] stands at the left on this page and is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="7">The bracket is not closed in the edition; it is closed here at the line end.</p>
-        <p n="8">The bracket is not closed in the edition; it is closed here at the line end.</p>
-        <p n="9">The edition opens a bracket at the end of the line; the lost letters and its closing bracket are in l. 10.</p>
-        <p n="10">The lost section at the start of the line is opened by a bracket at the end of l. 9; it is closed here after the dots.</p>
-        <p n="12">After ϩⲁⲗϭ the edition prints a closing bracket with no opening bracket on this line; the dots before it are encoded as illegible. At the line end the edition opens a bracket; its closing bracket is in l. 13.</p>
-        <p n="13">The lost section at the start of the line is opened by a bracket at the end of l. 12; it is closed here after the dots.</p>
-        <p n="15">Lines 15–16: the editors print, with a brace over both lines, "einstweilen unlesbar" (illegible for now); no text is given.</p>
-        <p n="16">See l. 15.</p>
-        <p n="19">The bracket before the last letters is not closed in the edition; it is closed here at the line end.</p>
-        <p n="24">Lines 24–30: the editors print, with a brace over all seven lines, "einstweilen unlesbar" (illegible for now); no text is given.</p>
-        <p n="25">See l. 24.</p>
-        <p n="26">See l. 24.</p>
-        <p n="27">See l. 24.</p>
-        <p n="28">See l. 24.</p>
-        <p n="29">See l. 24.</p>
-        <p n="30">See l. 24.</p>
-        <p n="32">At the line end the edition opens a bracket; it is not closed and is closed here at the line end.</p>
-        <p n="33">The bracket after ϫ is not closed in the edition; it is closed here at the line end.</p>
-        <p n="34">The editors print "nicht gelesen" (not read); no text is given.</p>
-        <p n="35">Lines 35–36: the editors print, with a brace over both lines, "stark abgerieben" (badly rubbed off); no text is given.</p>
-        <p n="36">See l. 35.</p>
-        <p n="37">Below the last line the editors remark "Am unteren Rande eine Zeile" (one line in the bottom margin); it is not transcribed here.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓⲏ] stands at the left on this page and is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="7" ana="#tr.bracket">The bracket is not closed in the edition; it is closed here at the line end.</p>
+        <p n="8" ana="#tr.bracket">The bracket is not closed in the edition; it is closed here at the line end.</p>
+        <p n="9" ana="#tr.bracket">The edition opens a bracket at the end of the line; the lost letters and its closing bracket are in l. 10.</p>
+        <p n="10" ana="#tr.bracket">The lost section at the start of the line is opened by a bracket at the end of l. 9; it is closed here after the dots.</p>
+        <p n="12" ana="#tr.bracket">After ϩⲁⲗϭ the edition prints a closing bracket with no opening bracket on this line; the dots before it are encoded as illegible. At the line end the edition opens a bracket; its closing bracket is in l. 13.</p>
+        <p n="13" ana="#tr.bracket">The lost section at the start of the line is opened by a bracket at the end of l. 12; it is closed here after the dots.</p>
+        <p n="19" ana="#tr.bracket">The bracket before the last letters is not closed in the edition; it is closed here at the line end.</p>
+        <p n="32" ana="#tr.bracket">At the line end the edition opens a bracket; it is not closed and is closed here at the line end.</p>
+        <p n="33" ana="#tr.bracket">The bracket after ϫ is not closed in the edition; it is closed here at the line end.</p>
       </div>
     </body>
   </text>

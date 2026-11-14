@@ -1,0 +1,190 @@
+{
+  "about": "Controlled vocabulary for the editors' (Polotsky/Böhlig) German statements in the printed Kephalaia edition, and for the transcriber's own commentary. Each German formula is mapped to one id; the id is what the EpiDoc pages carry (@ana=\"#ed.ID\" on gaps, #app.ID on apparatus entries, #tr.ID on commentary paragraphs). The German is kept here as the key to the printed formula; it is never transcribed into the pages. 'reason' is the EpiDoc gap reason the statement implies when it stands outside printed brackets; inside printed brackets the reason is always 'lost'. 'judgement' records how an ambiguous or inconsistent formula was decided, so that every page is encoded alike.",
+  "ed": {
+    "destroyed": {
+      "de": ["zerstört"],
+      "en": "destroyed",
+      "reason": "lost",
+      "judgement": "Physical loss of the writing surface."
+    },
+    "destroyed-almost": {
+      "de": ["fast ganz zerstört", "fast völlig zerstört"],
+      "en": "almost completely destroyed",
+      "reason": "lost",
+      "judgement": "The editors use both wordings (13.14–15 'völlig', 22.4–8 'ganz') for the same statement; one id. Encoded as a loss: the editors give no letters."
+    },
+    "destroyed-abraded": {
+      "de": ["zerstört und abgerieben"],
+      "en": "destroyed and rubbed off",
+      "reason": "lost",
+      "judgement": "Combination of destruction and abrasion: a loss."
+    },
+    "abraded": {
+      "de": ["abgerieben", "Rest abgerieben"],
+      "en": "rubbed off",
+      "reason": "lost",
+      "judgement": "Abrasion removes the ink, so the writing is gone rather than merely unreadable: encoded as lost. 'Rest abgerieben' (19.6, 19.13) is the same statement placed after surviving letters; the position in the line carries the 'rest'."
+    },
+    "abraded-heavily": {
+      "de": ["stark abgerieben"],
+      "en": "badly rubbed off",
+      "reason": "lost",
+      "judgement": "Degree of abrasion; a loss, as 'abgerieben'."
+    },
+    "smeared": {
+      "de": ["verwischt"],
+      "en": "smeared",
+      "reason": "illegible",
+      "judgement": "Ink is present but blurred: illegible, not lost."
+    },
+    "smeared-abraded": {
+      "de": ["verwischt und abgerieben"],
+      "en": "smeared and rubbed off",
+      "reason": "lost",
+      "judgement": "Where abrasion is named the writing counts as lost (rule shared with 'zerstört und abgerieben')."
+    },
+    "illegible": {
+      "de": ["unlesbar"],
+      "en": "illegible",
+      "reason": "illegible",
+      "judgement": "Writing present, not read."
+    },
+    "illegible-provisional": {
+      "de": ["einstweilen unlesbar"],
+      "en": "illegible for now",
+      "reason": "illegible",
+      "judgement": "As 'unlesbar'; the editors expected a later reading. Kept apart because it marks passages they meant to revisit."
+    },
+    "not-read": {
+      "de": ["nicht gelesen", "Nicht gelesen"],
+      "en": "not read by the editors",
+      "reason": "illegible",
+      "judgement": "A statement about the editors' work, not about the manuscript: the writing may be legible. Encoded as illegible (nothing given), with the id preserving the difference from 'unlesbar'."
+    },
+    "traces": {
+      "de": ["geringe Spuren"],
+      "en": "slight traces",
+      "reason": "illegible",
+      "judgement": "Ink traces visible but no letters identifiable."
+    },
+    "traces-faint": {
+      "de": ["ganz geringe Spuren"],
+      "en": "very slight traces",
+      "reason": "illegible",
+      "judgement": "As 'geringe Spuren', lower degree. Inside printed brackets (21.4) the brackets decide: lost."
+    },
+    "uncounted": {
+      "de": ["[ ]"],
+      "en": "lost, extent not counted",
+      "reason": "lost",
+      "judgement": "The editors print brackets with blank space and no dots: a loss of unknown extent. The width of the blank is typographic and is not converted into a letter count."
+    },
+    "open-bracket": {
+      "de": ["["],
+      "en": "lost, extent not counted (opening bracket only)",
+      "reason": "lost",
+      "judgement": "An opening bracket that is never closed and has nothing restored after it marks a loss of unknown extent: at the line end it runs to the end of the line; at the line start (21.6–11) it marks the lost beginning, and a braced statement beside it describes the rest of the line, which is encoded as a second statement."
+    },
+    "open-bracket-query": {
+      "de": ["[?"],
+      "en": "lost, extent not counted, doubtful",
+      "reason": "lost",
+      "cert": "low",
+      "judgement": "Opening bracket followed by a question mark (14.15): a loss to the line end whose existence or extent the editors doubt; encoded with cert=low."
+    }
+  },
+  "app": {
+    "conjecture": {
+      "de": ["viell.", "vielleicht", "wohl", "man erwartet", "etwa … o. ä.", "… oder …"],
+      "en": "editors' conjecture (not printed in the text, or an alternative to it)",
+      "judgement": "All forms of proposal are one type; the strength ('man erwartet' vs 'viell.') is kept in the English note."
+    },
+    "correction": {
+      "de": ["Lies", "lies", "Desgleichen"],
+      "en": "editors' correction ('read')",
+      "judgement": "The correction itself is encoded in the text (⟨⟩ supplied-omitted, or the corrected spelling); the apparatus entry records the editors' reading."
+    },
+    "confirmation": {
+      "de": ["so", "scheint sicher", "anscheinend so"],
+      "en": "the printed reading is the manuscript's (editors confirm)",
+      "judgement": "Covers the plain 'so' and the softer 'scheint sicher' / 'anscheinend so'; the degree is kept in the note."
+    },
+    "uncertain": {
+      "de": ["unsicher"],
+      "en": "reading uncertain",
+      "judgement": "Applies to the lemma words; their letters keep whatever sublinear dots the edition prints."
+    },
+    "uncertain-strongly": {
+      "de": ["ganz unsicher", "sehr unsicher", "ganz zweifelhaft"],
+      "en": "reading very uncertain",
+      "judgement": "The three wordings are used interchangeably; one id."
+    },
+    "rejected": {
+      "de": ["Nicht", "nicht"],
+      "en": "a reading the editors exclude",
+      "judgement": ""
+    },
+    "traces-report": {
+      "de": ["Spuren von"],
+      "en": "editors report traces of particular letters",
+      "judgement": "The possible readings derived from the traces are given as readings."
+    },
+    "restoration-source": {
+      "de": ["erg. nach", "s. z. St."],
+      "en": "restoration taken from another passage",
+      "judgement": ""
+    },
+    "parallel": {
+      "de": ["siehe auch", "="],
+      "en": "parallel or equivalent form elsewhere",
+      "judgement": ""
+    },
+    "stroke-absent": {
+      "de": ["kein übergesetzter Strich zu sehen"],
+      "en": "expected supralinear stroke not visible",
+      "judgement": "The text is encoded without the stroke."
+    },
+    "added-above": {
+      "de": ["über der Zeile", "über der Zeile nachgetragen", "Über der Zeile ist etwas nachgetragen"],
+      "en": "written above the line",
+      "judgement": "Where the editors give the letters, the text carries \\x/ (add place=above); 20.25 gives none."
+    },
+    "added-above-later-hand": {
+      "de": ["von spät. Hd. ü. d. Z."],
+      "en": "written above the line by a later hand",
+      "judgement": "As 'added-above', with the hand distinguished."
+    },
+    "dittography": {
+      "de": ["Dittographie"],
+      "en": "dittography",
+      "judgement": "The text carries {x} (surplus, reason repeated)."
+    },
+    "expunged": {
+      "de": ["auspunktiert"],
+      "en": "expunged by the scribe with dots",
+      "judgement": "The scribe's own deletion: the edition prints double brackets [[ ]]; encoded ⟦x⟧ (del rend=expunction), not as an editorial surplus. 15.16 adds the cause (dittography from l. 18 by homoioteleuton) in the note."
+    },
+    "sic": {
+      "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler"],
+      "en": "kept as transmitted, not understood or a scribal error",
+      "judgement": "The text carries «x» (sic)."
+    },
+    "running-title": {
+      "de": ["Überschrift … statt …"],
+      "en": "the running title differs from the usual one",
+      "judgement": "Located at loc='header'."
+    },
+    "margin-line": {
+      "de": ["Am unteren Rande eine Zeile"],
+      "en": "one line written in the bottom margin, not given",
+      "judgement": "Printed below the last line in the text block; located at loc='bottom'."
+    }
+  },
+  "tr": {
+    "bracket": {"en": "how an unbalanced or cross-line bracket of the edition is encoded"},
+    "print": {"en": "a printing observation: stroke shape or extent (measured), blur, specks, rules"},
+    "layout": {"en": "layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening"},
+    "reading": {"en": "a letter-identification decision taken on the zoom"},
+    "source": {"en": "about the source images or the page's context"}
+  }
+}

@@ -15,13 +15,21 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="ed"><category xml:id="ed.not-read"><catDesc>not read by the editors</catDesc></category><category xml:id="ed.open-bracket"><catDesc>lost, extent not counted (opening bracket only)</catDesc></category></taxonomy>
+        <taxonomy xml:id="app"><category xml:id="app.conjecture"><catDesc>editors' conjecture (not printed in the text, or an alternative to it)</catDesc></category><category xml:id="app.correction"><catDesc>editors' correction ('read')</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -85,9 +93,9 @@
         <lb n="10" facs="#z10"/><gap reason="illegible" quantity="12" unit="character"/> <supplied reason="lost">ⲛⲧ</supplied>ϩⲉ ⲉⲧⲁ<hi rend="diaeresis">ⲓ</hi>ϫⲟⲟⲥ ⲁⲣⲱⲧⲛ <unclear>ϫ</unclear>ⲛ <hi rend="supraline">ⲛ</hi><unclear>ⲥ</unclear>ⲏⲑⲏ<unclear>ⲗ</unclear>
         <lb n="11" facs="#z11"/><supplied reason="lost">ⲡϣⲁ</supplied><unclear>ⲙⲓⲥⲉ</unclear> ⲛ<unclear>ϣⲏ</unclear>ⲣⲉ <hi rend="supraline">ⲛ</hi>ⲁⲇⲁⲙ ϣⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲉⲛⲱϣ ⲁϩⲁⲛ
         <lb n="12" facs="#z12"/><supplied reason="lost">ⲉⲛⲱⲭ</supplied> ϫ<supplied reason="lost">ⲛ ⲛ</supplied>ⲉⲛⲱⲭ <unclear>ϣ</unclear><supplied reason="lost">ⲁ</supplied><unclear>ϩ</unclear>ⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲥⲏ<unclear>ⲙ</unclear> <supplied reason="lost">ⲡ</supplied>ϣⲏⲣⲉ ⲛ <gap reason="illegible" quantity="2" unit="character"/>
-        <lb n="13" facs="#z13"/><note type="transcriber">not read by the editors</note>
+        <lb n="13" facs="#z13"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.not-read"/>
         <lb n="14" facs="#z14"/><gap reason="illegible" quantity="11" unit="character"/> ⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲛⲛ<unclear>ⲥ</unclear>ⲱⲥ ⲁⲛ <gap reason="illegible" quantity="7" unit="character"/>
-        <lb n="15" facs="#z15"/><gap reason="lost" quantity="5" unit="character"/><supplied reason="lost">ⲃⲟⲩ</supplied><unclear>ⲇⲇⲁⲥ</unclear> ⲁⲧⲁⲛⲁⲧⲟⲗⲏ ⲙⲛ ⲁⲩⲣⲉⲛⲧⲏⲥ ⲙⲛ ⲡⲕⲉ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="15" facs="#z15"/><gap reason="lost" quantity="5" unit="character"/><supplied reason="lost">ⲃⲟⲩ</supplied><unclear>ⲇⲇⲁⲥ</unclear> ⲁⲧⲁⲛⲁⲧⲟⲗⲏ ⲙⲛ ⲁⲩⲣⲉⲛⲧⲏⲥ ⲙⲛ ⲡⲕⲉ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
         <lb n="16" facs="#z16"/><gap reason="lost" quantity="7" unit="character"/><unclear>ⲧⲉ</unclear> <unclear>ⲉⲧ</unclear>ⲁⲩⲧⲛⲛⲁⲩⲥⲟⲩ ⲁⲡⲥⲁ<unclear>ⲛⲙ</unclear>ⲡⲣ<hi rend="diaeresis">ⲓ</hi>ⲉ ϫⲛ ⲛ<unclear>ⲧϭⲓⲛ</unclear><supplied reason="lost">ⲉⲓ</supplied>
         <lb n="17" facs="#z17"/><hi rend="supraline"><unclear>ⲛ</unclear></hi><unclear>ⲃⲟ</unclear>ⲩⲇⲇⲁ<unclear>ⲥ</unclear> <unclear>ⲙ</unclear><hi rend="supraline"><unclear>ⲛ</unclear></hi> ⲁⲩⲣⲉⲛⲧⲏⲥ ϣⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲧϭⲓⲛⲉⲓ <unclear>ⲛⲍ</unclear><supplied reason="lost">ⲁ</supplied>
         <lb n="18" facs="#z18"/><supplied reason="lost">ⲣⲁ</supplied><unclear>ⲇⲏ</unclear>ⲥ ⲁⲧⲡⲉⲣⲥⲓⲥ ⲡⲥ<unclear>ⲁⲡ</unclear> ⲉⲧⲁϥⲉⲓ ϣⲁ ϩⲩⲥⲧⲁⲥⲡⲏ<unclear>ⲥ</unclear>
@@ -109,20 +117,23 @@
         <lb n="34" facs="#z34"/>ⲧⲟⲩ <hi rend="supraline">ⲛⲛ</hi><hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓⲟⲥ ⲙⲛ ⲧⲥⲡⲉⲓⲣⲁ ⲛⲛⲙⲁⲧ<unclear>ⲁ</unclear><supplied reason="lost">ⲓ</supplied> <space type="unmarked" extent="unknown" unit="character"/> <supplied reason="lost">ⲁ </supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><supplied reason="lost"><hi rend="diaeresis">ⲓ</hi>ⲟⲩⲇⲁⲓ</supplied>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="12" ana="#app.conjecture"><rdg resp="#edition"><supplied reason="lost">ⲛⲱϩⲉ</supplied></rdg><note>at the end of the line one expects</note></app>
+        <app loc="29" ana="#app.correction"><rdg resp="#edition">ⲛⲉϩ<supplied reason="omitted">ⲥ</supplied>ⲉ</rdg><note>at the end of the line read</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲓⲃ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="4">The edition prints an opening bracket before ⲗⲏⲥⲓⲁ and no closing bracket; the restoration and the five lost letters after it are taken to end before ⲩⲉ.</p>
-        <p n="12">The editors expect [ⲛⲱϩⲉ] at the end of the line (apparatus).</p>
-        <p n="13">The editors print that this line was not read; no text is given.</p>
-        <p n="15">The line ends with an opening bracket and nothing after it; the bracket is closed only in l. 16, after seven dots. Here it is kept as a transcriber note at its place; l. 16 reopens the bracket.</p>
-        <p n="16">The edition prints the closing bracket after seven dots with no opening bracket on this line (it was opened at the end of l. 15).</p>
-        <p n="19">The overline over ⲓⲏⲥ is printed high, between ll. 18 and 19; measured, it covers ⲏⲥ and only a third of ⲓ (bar 1175–1209, ⲓ 1171–1176).</p>
-        <p n="20">The overline of [ⲡⲭⲣⲥ] covers ⲭⲣⲥ and not ⲡ (measured), as in l. 21.</p>
-        <p n="22">Measured overline 621–667: it covers ⲛ and ⲓ fully, ⲕ by 57 % and ⲡ by 46 %, so it is encoded on ⲛⲓⲕ. In ϩⲛ̄ at the start of the line the stroke covers ⲛ (56 %) but not ϩ (43 %).</p>
-        <p n="25">The final ⲛ is printed blurred (heavy ink) in the scan.</p>
-        <p n="29">⟨ⲥ⟩ is the editors' correction (apparatus: at the end read ⲛⲉϩ⟨ⲥ⟩ⲉ).</p>
-        <p n="32">The overline over ⲓⲏⲥ starts at ⲓ (measured); ⲓ also carries a sublinear dot.</p>
-        <p n="34">The edition opens a bracket before ⲓ and does not close it; a wide unmarked blank follows, then the bracketed [ⲁ ⲛ̄ⲓ̈ⲟⲩⲇⲁⲓ]. The first restoration is closed after ⲓ here.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓⲃ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="4" ana="#tr.bracket">The edition prints an opening bracket before ⲗⲏⲥⲓⲁ and no closing bracket; the restoration and the five lost letters after it are taken to end before ⲩⲉ.</p>
+        <p n="15" ana="#tr.bracket">The line ends with an opening bracket that the edition closes only in l. 16, after seven dots.</p>
+        <p n="16" ana="#tr.bracket">The edition prints the closing bracket after seven dots with no opening bracket on this line (it was opened at the end of l. 15).</p>
+        <p n="19" ana="#tr.print">The overline over ⲓⲏⲥ is printed high, between ll. 18 and 19; measured, it covers ⲏⲥ and only a third of ⲓ (bar 1175–1209, ⲓ 1171–1176).</p>
+        <p n="20" ana="#tr.print">The overline of [ⲡⲭⲣⲥ] covers ⲭⲣⲥ and not ⲡ (measured), as in l. 21.</p>
+        <p n="22" ana="#tr.print">Measured overline 621–667: it covers ⲛ and ⲓ fully, ⲕ by 57 % and ⲡ by 46 %, so it is encoded on ⲛⲓⲕ. In ϩⲛ̄ at the start of the line the stroke covers ⲛ (56 %) but not ϩ (43 %).</p>
+        <p n="25" ana="#tr.print">The final ⲛ is printed blurred (heavy ink) in the scan.</p>
+        <p n="32" ana="#tr.print">The overline over ⲓⲏⲥ starts at ⲓ (measured); ⲓ also carries a sublinear dot.</p>
+        <p n="34" ana="#tr.bracket">The edition opens a bracket before ⲓ and does not close it; a wide unmarked blank follows, then the bracketed [ⲁ ⲛ̄ⲓ̈ⲟⲩⲇⲁⲓ]. The first restoration is closed after ⲓ here.</p>
       </div>
     </body>
   </text>

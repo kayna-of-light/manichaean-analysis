@@ -21,7 +21,7 @@ Y0, Y1, X0, X1 = 105, 1915, 330, 1480
 K = 190 / (Y1 - Y0)
 TOP = 10
 APPARATUS = {"surplus": "{%s} surplus (dittography)", "omitted": "⟨%s⟩ omitted by the scribe",
-             "added-above": "\\%s/ written above the line", "sic": "%s sic"}
+             "added-above": "\\%s/ written above the line", "sic": "%s sic", "expunged": "⟦%s⟧ expunged by the scribe"}
 
 
 def ymm(y: float) -> float:
@@ -80,9 +80,13 @@ def legend_html(files: list[Path]) -> str:
     notes = ""
     for f in files:
         lay = page_layers(f)
-        if lay["notes"]:
-            notes += f"<h3>p. {lay['page']}</h3><ul>" + "".join(
-                f"<li>l. {n['line']}: {html.escape(n['text'])}</li>" for n in lay["notes"]) + "</ul>"
+        items = [f"<li>{html.escape(a['loc'])}: <i>{html.escape(a['en'])}</i> "
+                 + html.escape(" · ".join(filter(None, [a["lem"], " ¦ ".join(a["readings"]), a["note"]]))) + "</li>"
+                 for a in lay["apparatus"]]
+        items += [f"<li>l. {n['line']} [{html.escape(n['category'] or '')}]: {html.escape(n['text'])}</li>"
+                  for n in lay["notes"]]
+        if items:
+            notes += f"<h3>p. {lay['page']}</h3><ul>" + "".join(items) + "</ul>"
     pages = ", ".join(str(page_layers(f)["page"]) for f in files)
     return f"""
 <section class="sheet legend">
@@ -104,6 +108,9 @@ def legend_html(files: list[Path]) -> str:
     <tr><td>\\ⲁ/</td><td>&lt;add place="above"&gt;</td><td>written above the line</td></tr>
     <tr><td>ⲁ</td><td>&lt;sic&gt;</td><td>kept although judged an error (apparatus)</td></tr>
     <tr><td>(?)</td><td>@cert="low"</td><td>uncertain restoration</td></tr>
+    <tr><td>⟦ⲁ⟧</td><td>&lt;del rend="expunction"&gt;</td><td>expunged by the scribe</td></tr>
+    <tr><td>[---] · ---</td><td>&lt;gap extent="unknown" ana="#ed.…"&gt;</td><td>editors' statement (destroyed, illegible, traces …), extent not counted</td></tr>
+    <tr><td>[------]</td><td>&lt;gap quantity="1" unit="line"&gt;</td><td>the whole line</td></tr>
     <tr><td><span class="vac">vac.</span></td><td>&lt;space/&gt;</td><td>blank in the manuscript</td></tr>
     <tr><td>ⲛ̄ · ⲙ̅ⲛ̅</td><td>&lt;hi rend="supraline"&gt;</td><td>stroke over one letter · over several (≥ half a letter's width)</td></tr>
     <tr><td>ⲥ̀</td><td>@rendition="#oblique"</td><td>stroke printed obliquely</td></tr>
@@ -114,7 +121,7 @@ def legend_html(files: list[Path]) -> str:
   </table>
   </div>
   <div>
-  <h2>Transcriber's notes</h2>{notes}
+  <h2>Apparatus and transcriber's notes</h2>{notes}
   <h2>Verification</h2>
   <p>Letters read by eye from 1.6–8× zooms. Gap counts, every sublinear dot and every stroke extent measured on the image;
   undotted ϩ/ϥ/ϣ/ⲣ used as controls for descender ends. The EpiDoc round trip is checked against the reading drafts.

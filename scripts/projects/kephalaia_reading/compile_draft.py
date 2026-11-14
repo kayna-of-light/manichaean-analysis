@@ -9,12 +9,19 @@ Draft rows:
   header 250 | >· ⲙ-ⲡⲥⲁϩ ·<     y-centre | markup   (running title)
   18 1008 number kephalaion=43 | ⲙ+ⲅ+     line y-centre flags | markup
   margin 19 1053 left | ⲙ+ⲅ+    marginal chapter number beside a line
-  note 9 | text                 transcriber commentary for a line (plain text)
+  note 9 bracket | text         transcriber commentary for a line; category from the vocabulary's "tr" list
+  app 13 conjecture | lem | rdg ¦ rdg | note
+                                an editors' footnote: line (as fixed by the margin numerals; or header, bottom),
+                                type from the vocabulary's "app" list, optional printed=N when the footnote
+                                number differs; lemma and readings in reading markup; English note
 Flags: ekthesis, number, title, kephalaion=N.
+Editors' statements inside a line are written ⁅=ID⁆ (or ⁅=ID:line⁆ for the whole line), ID from the vocabulary's
+"ed" list (data/kephalaia/editorial_vocabulary.json).
 """
 from __future__ import annotations
 
 import argparse
+import re
 import sys
 from datetime import date
 from pathlib import Path
@@ -22,7 +29,7 @@ from xml.sax.saxutils import escape
 
 from lxml import etree
 
-from model import IMAGES, REPO, TEI_DIR, StrokeIds, atoms_to_tei, numeral_value, parse_markup
+from model import IMAGES, REPO, TEI_DIR, VOCAB_PATH, StrokeIds, atoms_to_tei, numeral_value, parse_markup, vocab
 
 X0, X1, HALF = 440, 1430, 21
 
@@ -32,7 +39,7 @@ def zone(zid: str, y: int, x0: int = X0, x1: int = X1) -> str:
 
 
 def parse_draft(path: Path) -> dict:
-    d = {"lines": [], "margins": [], "notes": []}
+    d = {"lines": [], "margins": [], "notes": [], "apps": []}
     for raw in path.read_text(encoding="utf-8").splitlines():
         if not raw.strip() or raw.startswith("#"):
             continue
@@ -47,7 +54,12 @@ def parse_draft(path: Path) -> dict:
         elif parts[0] == "margin":
             d["margins"].append((int(parts[1]), int(parts[2]), parts[3], body))
         elif parts[0] == "note":
-            d["notes"].append((int(parts[1]), body))
+            d["notes"].append((int(parts[1]), parts[2] if len(parts) > 2 else None, body))
+        elif parts[0] == "app":
+            printed = next((p.split("=")[1] for p in parts[3:] if p.startswith("printed=")), None)
+            _, lem, rdgs, note = (raw.split("|", 3) + ["", "", ""])[:4]
+            d["apps"].append({"loc": parts[1], "type": parts[2], "printed": printed, "lem": lem.strip(),
+                              "rdgs": [x.strip() for x in rdgs.split(" ¦ ") if x.strip()], "note": note.strip()})
         else:
             flags = dict((f.split("=") + [True])[:2] for f in parts[2:])
             d["lines"].append((int(parts[0]), int(parts[1]), flags, body))
@@ -96,9 +108,34 @@ def compile_draft(d: dict) -> str:
         else:
             row += tei(m)
         body.append(row)
-    notes = "".join(f'\n        <p n="{n}">{escape(t)}</p>' for n, t in d["notes"])
-    image = IMAGES / f"keph_p{page}.jpg"
     edition = "\n        ".join(body)
+    notes = "".join(f'\n        <p n="{n}"' + (f' ana="#tr.{c}"' if c else "") + f'>{escape(t)}</p>'
+                    for n, c, t in d["notes"])
+    apps = []
+    for a in d["apps"]:
+        head = f'<app loc="{a["loc"]}"' + (f' n="{a["printed"]}"' if a["printed"] else "") + f' ana="#app.{a["type"]}">'
+        inner = (f"<lem>{tei(a['lem'])}</lem>" if a["lem"] else "") + "".join(
+            f'<rdg resp="#edition">{tei(x)}</rdg>' for x in a["rdgs"]) + (
+            f"<note>{escape(a['note'])}</note>" if a["note"] else "")
+        apps.append(head + inner + "</app>")
+    apparatus = ("\n      <div type=\"apparatus\">\n      <listApp>\n        " + "\n        ".join(apps)
+                 + "\n      </listApp>\n      </div>") if apps else ""
+    used = {"ed": sorted(set(re.findall(r'ana="#ed\.([\w-]+)"', edition))),
+            "app": sorted({a["type"] for a in d["apps"]}), "tr": sorted({c for _, c, _ in d["notes"] if c})}
+    voc = vocab()
+    taxa = "".join(f'\n        <taxonomy xml:id="{k}">' + "".join(
+        f'<category xml:id="{k}.{i}"><catDesc>{escape(voc[k][i]["en"])}</catDesc></category>' for i in ids)
+        + "</taxonomy>" for k, ids in used.items() if ids)
+    class_decl = ("\n      <classDecl>" + taxa + "\n      </classDecl>") if taxa else ""
+    image = IMAGES / f"keph_p{page}.jpg"
+    for a in d["apps"]:
+        for key, ids in (("app", [a["type"]]),):
+            for i in ids:
+                if i not in vocab()[key]:
+                    raise ValueError(f"unknown apparatus type {i!r}")
+    for _, c, _ in d["notes"]:
+        if c and c not in vocab()["tr"]:
+            raise ValueError(f"unknown note category {c!r}")
     return f"""<?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
   <teiHeader>
@@ -116,10 +153,13 @@ def compile_draft(d: dict) -> str:
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        {VOCAB_PATH.relative_to(REPO).as_posix()} and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
-      </tagsDecl>
+      </tagsDecl>{class_decl}
     </encodingDesc>
     <revisionDesc>
       <change when="{date.today().isoformat()}">Compiled from reading draft.</change>
@@ -137,7 +177,7 @@ def compile_draft(d: dict) -> str:
       <ab>
         {edition}
       </ab>
-      </div>
+      </div>{apparatus}
       <div type="commentary">{notes}
       </div>
     </body>

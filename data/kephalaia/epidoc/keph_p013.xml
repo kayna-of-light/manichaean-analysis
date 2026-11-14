@@ -15,13 +15,21 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="ed"><category xml:id="ed.destroyed-abraded"><catDesc>destroyed and rubbed off</catDesc></category><category xml:id="ed.destroyed-almost"><catDesc>almost completely destroyed</catDesc></category></taxonomy>
+        <taxonomy xml:id="app"><category xml:id="app.conjecture"><catDesc>editors' conjecture (not printed in the text, or an alternative to it)</catDesc></category><category xml:id="app.correction"><catDesc>editors' correction ('read')</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -87,8 +95,8 @@
         <lb n="11" facs="#z11"/><gap reason="illegible" quantity="4" unit="character"/> ⲓⲏⲥ <supplied reason="lost">ⲡ</supplied>ⲉϥⲙⲛⲧⲥⲛ<unclear>ⲁ</unclear>ⲩⲥ <hi rend="supraline">ⲛ</hi><supplied reason="lost">ⲙⲁⲑⲏⲧⲏⲥ </supplied><gap reason="lost" quantity="5" unit="character"/>
         <lb n="12" facs="#z12"/><gap reason="illegible" quantity="9" unit="character"/> ⲛⲭⲱⲣⲁ <gap reason="illegible" quantity="14" unit="character"/>
         <lb n="13" facs="#z13"/><gap reason="illegible" quantity="9" unit="character"/> ϫⲁ<hi rend="diaeresis">ⲓ</hi>ⲥ <gap reason="illegible" quantity="16" unit="character"/>
-        <lb n="14" facs="#z14"/><note type="transcriber">almost completely destroyed</note>
-        <lb n="15" facs="#z15"/><note type="transcriber">almost completely destroyed</note>
+        <lb n="14" facs="#z14"/><gap reason="lost" quantity="1" unit="line" ana="#ed.destroyed-almost"/>
+        <lb n="15" facs="#z15"/><gap reason="lost" quantity="1" unit="line" ana="#ed.destroyed-almost"/>
         <lb n="16" facs="#z16"/><gap reason="illegible" quantity="2" unit="character"/> ⲙⲙⲁⲩ <hi rend="supraline">ⲙ</hi>ⲡⲟⲩ<hi rend="supraline">ⲣ</hi>ϩⲏⲧ ⲛϭⲱⲃ ⲟⲩⲧⲉ <gap reason="illegible" quantity="11" unit="character"/>
         <lb n="17" facs="#z17"/><gap reason="illegible" quantity="4" unit="character"/> ⲁⲩⲣ<hi rend="supraline">ⲙⲛ</hi>ⲧⲁ<unclear>ϣⲓ</unclear>ⲣ<unclear>ⲉ</unclear> ⲧⲏⲣⲟⲩ <gap reason="illegible" quantity="9" unit="character"/> ⲁⲩϫⲉⲥⲧⲟⲩ<g type="unpaired-bracket">]</g>
         <lb n="18" facs="#z18"/>ⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲁⲩⲙⲧⲁⲛ ⲙⲙⲁⲩ ϩⲛ ⲧⲙⲛⲧⲛⲁ<unclear>ϭ</unclear> <gap reason="illegible" quantity="11" unit="character"/>
@@ -96,7 +104,7 @@
         <lb n="20" facs="#z20"/>ⲗⲟⲥ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲁϥⲉⲓ ⲁⲃⲁⲗ ϩⲱϥ ⲁϥⲧⲁϣⲉⲁⲓ<unclear>ϣ</unclear> <gap reason="lost" quantity="8" unit="character"/>
         <lb n="21" facs="#z21"/><gap reason="lost" quantity="10" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> ⲁϥϯ ϭⲁⲙ <hi rend="supraline">ⲛⲛ</hi>ⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲁϥⲧⲁϫ<supplied reason="lost">ⲣⲁⲩ </supplied><gap reason="lost" quantity="4" unit="character"/>
         <lb n="22" facs="#z22"/><gap reason="illegible" quantity="14" unit="character"/> <supplied reason="lost">ⲧ</supplied>ⲉⲕⲕⲗⲏⲥⲓⲁ ⲙⲡ<hi rend="supraline">ⲥⲱⲣ</hi> <gap reason="illegible" quantity="7" unit="character"/>
-        <lb n="23" facs="#z23"/><note type="transcriber">destroyed and rubbed off</note> <gap reason="illegible" quantity="15" unit="character"/>
+        <lb n="23" facs="#z23"/><gap reason="lost" extent="unknown" unit="character" ana="#ed.destroyed-abraded"/> <gap reason="illegible" quantity="15" unit="character"/>
         <lb n="24" facs="#z24"/><gap reason="illegible" quantity="9" unit="character"/><g type="unpaired-bracket">]</g>ϥⲧⲁϣⲉⲁ<hi rend="diaeresis">ⲓ</hi>ϣ ⲛⲟⲩ <gap reason="illegible" quantity="12" unit="character"/>
         <lb n="25" facs="#z25"/>ⲙⲉ ⲁϥⲃⲱⲕ ⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ϩⲱϥ ⲁϥⲙⲧⲁⲛ ⲙⲙⲁϥ ϩⲛ <unclear>ⲛ</unclear> <gap reason="illegible" quantity="8" unit="character"/>
         <lb n="26" facs="#z26"/><hi rend="supraline"><unclear>ⲙ</unclear>ⲛ</hi><hi rend="supraline">ⲛ</hi>ⲥ<unclear>ⲁ</unclear> ⲡⲁⲩⲗⲟⲥ ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲕⲁⲧⲁ ⲕⲟⲩ<hi rend="diaeresis">ⲓ</hi> ⲕⲟⲩ<hi rend="diaeresis">ⲓ</hi> ⲟⲩϩⲟⲟⲩ<unclear>ⲉ</unclear> <gap reason="illegible" quantity="2" unit="character"/> ⲛ
@@ -111,21 +119,23 @@
         <lb n="35" facs="#z35"/><supplied reason="lost">ⲕⲗⲏⲥⲓⲁ</supplied> <unclear>ⲱ</unclear>ϫⲛⲉ ⲁ ⲡⲕⲟⲥⲙⲟⲥ ⲥⲱϫ<hi rend="supraline">ⲡ</hi> ⲁⲡⲁϩⲟⲩ ⲭⲱⲣⲓⲥ
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="6" ana="#app.correction"><lem>ⲟⲩ</lem><rdg resp="#edition">ⲟⲩ<supplied reason="omitted">ⲧⲉ</supplied></rdg><note>read</note></app>
+        <app loc="11" ana="#app.conjecture"><rdg resp="#edition"><supplied reason="lost">ⲙⲁⲑⲏⲧⲏⲥ</supplied></rdg><rdg resp="#edition"><supplied reason="lost">ⲁⲡⲟⲥⲧⲟⲗⲟⲥ</supplied></rdg><note>alternatives for the restoration</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲓⲅ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="2">Measured strokes: in the first ϩⲛ̄ the stroke covers ϩ by 50 % and ⲛ by 60 % (encoded on both); in the second it covers ϩ by 43 % and ⲛ by 53 % (encoded on ⲛ only).</p>
-        <p n="6">⟨ⲧⲉ⟩ is the editors' correction (apparatus: read ⲟⲩ⟨ⲧⲉ⟩).</p>
-        <p n="11">The editors offer [ⲙⲁⲑⲏⲧⲏⲥ] or [ⲁⲡⲟⲥⲧⲟⲗⲟⲥ] (apparatus). The edition prints the opening bracket after ⲛ̄ and no closing bracket; the restoration and the five lost letters after it are taken to run to the end of the line. ⲓⲏⲥ is printed without an overline here.</p>
-        <p n="14">Lines 14–15: the editors print, with a brace over both lines, that they are almost completely destroyed; no text is given.</p>
-        <p n="15">See l. 14.</p>
-        <p n="17">The edition prints a closing bracket after ⲁⲩϫⲉⲥⲧⲟⲩ with no opening bracket.</p>
-        <p n="20">The bracket opened before the last eight dots is closed only in l. 21, after ten dots. It is closed here at the line end and reopened in l. 21.</p>
-        <p n="21">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
-        <p n="22">The overline of ⲥⲱⲣ (measured) covers ⲥⲱⲣ and not the preceding ⲡ.</p>
-        <p n="23">The editors print that the beginning of the line is destroyed and rubbed off; the fifteen dots that follow are their count of illegible letters.</p>
-        <p n="24">The edition prints a closing bracket after the nine dots with no opening bracket; the dots are therefore encoded as illegible.</p>
-        <p n="30">Line in ekthesis with an enlarged ϩ inside the restoration.</p>
-        <p n="32">The edition prints a closing bracket after the eight dots with no opening bracket; the dots are therefore encoded as illegible.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓⲅ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="2" ana="#tr.print">Measured strokes: in the first ϩⲛ̄ the stroke covers ϩ by 50 % and ⲛ by 60 % (encoded on both); in the second it covers ϩ by 43 % and ⲛ by 53 % (encoded on ⲛ only).</p>
+        <p n="11" ana="#tr.bracket">The edition prints the opening bracket after ⲛ̄ and no closing bracket; the restoration and the five lost letters after it are taken to run to the end of the line. ⲓⲏⲥ is printed without an overline here.</p>
+        <p n="17" ana="#tr.bracket">The edition prints a closing bracket after ⲁⲩϫⲉⲥⲧⲟⲩ with no opening bracket.</p>
+        <p n="20" ana="#tr.bracket">The bracket opened before the last eight dots is closed only in l. 21, after ten dots. It is closed here at the line end and reopened in l. 21.</p>
+        <p n="21" ana="#tr.bracket">The bracket before the last four dots is not closed in the edition; it is closed here at the line end.</p>
+        <p n="22" ana="#tr.print">The overline of ⲥⲱⲣ (measured) covers ⲥⲱⲣ and not the preceding ⲡ.</p>
+        <p n="24" ana="#tr.bracket">The edition prints a closing bracket after the nine dots with no opening bracket; the dots are therefore encoded as illegible.</p>
+        <p n="30" ana="#tr.layout">Line in ekthesis with an enlarged ϩ inside the restoration.</p>
+        <p n="32" ana="#tr.bracket">The edition prints a closing bracket after the eight dots with no opening bracket; the dots are therefore encoded as illegible.</p>
       </div>
     </body>
   </text>

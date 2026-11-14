@@ -16,6 +16,7 @@ transcriptions, review exports, page JSON, glyph libraries, translations or any 
 | **Canonical record** | `data/kephalaia/epidoc/keph_pNNN.xml` (EpiDoc TEI, tracked) |
 | Analysis layers (rebuildable) | `output/projects/kephalaia_reading/layers/` |
 | Review images (tracked) | `data/kephalaia/review/keph_pNNN.jpg`, from `review_images.py` |
+| Editorial vocabulary (tracked) | `data/kephalaia/editorial_vocabulary.json`: every German formula of the editors → one id |
 | Print (rebuildable) | `output/projects/kephalaia_reading/print/` |
 
 Run every tool from `scripts/projects/kephalaia_reading/`.
@@ -31,9 +32,9 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
   numerals and the framed manuscript page number. Diaereses on ⲓ. In this font the stroke over ⲥ and ϩ is printed obliquely.
 - Enlarged initials, lines in ekthesis (outdented), page-head ornaments `>·` `·<`, end mark `:—`.
 - Chapter openings: a centred numeral (ⲙ̅ⲅ̅ = 43), a title line or two, and the numeral again in both margins.
-- German in the edition (running head `Kap. XLIII: …`, the word `leer`, footnotes) is **never transcribed**.
-  Its content is encoded as structure (table below). Footnote line numbers can be wrong: the printed margin
-  numerals decide which line is meant.
+- German in the edition (running head `Kap. XLIII: …`, the word `leer`, the statements in the text block,
+  footnotes) is **never transcribed**. Its meaning is encoded as structure through the editorial vocabulary
+  (section below). Footnote line numbers can be wrong: the printed margin numerals decide which line is meant.
 
 ## Workflow
 
@@ -56,8 +57,8 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
    - Diaeresis: two dots above ⲓ; look at 4× when a dot list shows paired blobs above the line.
    - Ekthesis and enlarged letters: compare line starts in a margin strip.
 5. **Compile.** `python compile_draft.py ../../../temp/kephalaia_reading/drafts/keph_pNNN.txt` writes the TEI.
-   Once compiled, the **TEI is canonical**: later corrections go into the XML. `--force` recompiles from the draft
-   and discards XML edits.
+   Once compiled, the **TEI is canonical**. To correct a page later, `python decompile.py NNN` writes its draft back
+   from the TEI (exact round trip), edit the draft, and recompile with `--force`; or edit the XML directly.
 6. **Validate.** `python validate.py NNN --drafts ../../../temp/kephalaia_reading/drafts` checks the element profile,
    numeral values, facsimile zones, contiguous lines, and that draft → TEI → Leiden is identical character for character.
 7. **Reconcile.** `python measure.py reconcile NNN` compares dots per line (sublinear + gap dots) on the image
@@ -90,6 +91,9 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 | `{ⲧⲉ}` | {ⲧⲉ} | `<surplus reason="repeated">` |
 | `\ⲙⲁϩ/` | \ⲙⲁϩ/ | `<add place="above">` |
 | `«ϫⲱⲩ»` | ϫⲱⲩ | `<sic>` |
+| `⟦ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ⟧` | ⟦…⟧ | `<del rend="expunction">` (deleted by the scribe; the edition prints [[ ]]) |
+| `⁅=destroyed⁆` | [---] / --- | `<gap reason=… extent="unknown" unit="character" ana="#ed.destroyed"/>` (editors' statement) |
+| `⁅=illegible:line⁆` | ------ | `<gap reason="illegible" quantity="1" unit="line" ana="#ed.illegible"/>` (the whole line) |
 | `vac.` | vac. | `<space extent="unknown" unit="character"/>` |
 | `%` | wide blank | `<space type="unmarked" …/>` (blank the editors do not mark) |
 | `>` `<` `·` `§` `‡` | >  <  ·  :—  ] | `<g type="diple">`, `diple-reversed`, `middot`, `dicolon-dash`, `unpaired-bracket` |
@@ -109,27 +113,40 @@ header 250 | [> ·]ⲙ-ⲡⲥⲁϩ · <
 19 1053 title | >· ⲉⲧⲃⲉ ⲙ-ⲙⲁⲛϫⲓⲟⲟⲣⲉ ·<
 margin 19 1053 left | ⲙ+ⲅ+
 20 1098 ekthesis | [^ⲡⲁ]ⲗ_ⲓⲛ ⲁⲛ ⲁ ⲙⲙⲁⲑⲏⲧⲏⲥ ...
-note 9 | English note on an editorial or printing fact.
+note 9 print | English note on a printing fact (category from the vocabulary's "tr" list).
+app 13 conjecture | | [ⲡ]ⲁⲛⲉⲥ | for the beginning of the line, perhaps
+app 24 correction printed=23 | | ⟨ⲡ⟩ⲡ+ⲛ+ⲁ+ | read
 ```
 
 ## The editors' German, as structure
+
+`data/kephalaia/editorial_vocabulary.json` maps every German formula the editors use to one id and records the
+judgement behind it (the editors are not consistent: e.g. "fast ganz zerstört" and "fast völlig zerstört" are one id).
+Look the formula up there; if it is new, add an entry with its meaning and judgement before encoding it, and apply the
+same id everywhere. `compile_draft.py` writes the ids used on a page into the header taxonomy, and `validate.py` refuses
+an id that is not in the vocabulary, a free-text note inside the edition, and an uncategorised commentary row.
 
 | On the page | Encode as |
 |---|---|
 | running head `Kap. N: title` | nothing; `<milestone unit="kephalaion" n="N"/>` from the Coptic numeral, `continues N` for the chapter in progress |
 | `leer` | `vac.` → `<space/>` |
-| footnote `Lies ⟨x⟩y` / `Lies <word>` with letters missing | `⟨x⟩` → `<supplied reason="omitted">` |
-| `Dittographie` | `{x}` → `<surplus reason="repeated">` |
-| `über der Zeile (nachgetragen)` | `\x/` → `<add place="above">` |
-| `sinnlos`, `Schreibfehler` with no correction | `«x»` → `<sic>` |
+| a statement in the text block (`zerstört`, `abgerieben`, `unlesbar`, `nicht gelesen`, `geringe Spuren`, `verwischt` …), with or without a brace over several lines | `⁅=ID⁆` at its place, or `⁅=ID:line⁆` when it is all the line has, **one per line** → `<gap … ana="#ed.ID">`. Outside printed brackets the vocabulary's reason applies (abrasion and destruction = lost; smearing, illegibility, traces, not read = illegible); inside printed brackets the reason is lost |
+| printed brackets without dots: `[ ]`, a bare `[` (never closed, nothing restored), `[?` | `[⁅=uncounted⁆]`, `[⁅=open-bracket⁆]`, `[⁅=open-bracket-query⁆]` |
+| `[[x]]` with footnote `auspunktiert` | `⟦x⟧` → `<del rend="expunction">` + apparatus entry `expunged` |
+| footnote `Lies ⟨x⟩y` / `Lies <word>` with letters missing | `⟨x⟩` → `<supplied reason="omitted">` + apparatus `correction` |
+| `Dittographie` | `{x}` → `<surplus reason="repeated">` + apparatus `dittography` |
+| `über der Zeile (nachgetragen)` | `\x/` → `<add place="above">` + apparatus `added-above` |
+| `sinnlos`, `Schreibfehler`, `sic` with no correction | `«x»` → `<sic>` + apparatus `sic` |
 | `[x?]` | `[x(?)]` → `@cert="low"` |
-| anything else worth keeping | `note N |` in English → `<div type="commentary">` |
+| every other footnote (`viell.`, `man erwartet`, `oder`, `so`, `unsicher`, `ganz zweifelhaft`, `Nicht`, `Spuren von`, `erg. nach`, `siehe`, `kein … Strich`, `Überschrift … statt`) and `Am unteren Rande eine Zeile` | `app LINE TYPE [printed=N] | lemma | reading ¦ reading | English note` → `<app loc ana="#app.TYPE"><lem/><rdg resp="#edition"/><note/></app>` in `<div type="apparatus">`; LINE by the margin numerals (or `header`, `bottom`) |
+| the transcriber's own observations | `note N CATEGORY | English` with CATEGORY bracket · print · layout · reading · source → `<p n ana="#tr.CATEGORY">` |
 
 ## Analysis layers
 
 `layers.py` writes `layers/pages/keph_pNNN.json` and corpus tables `lines`, `words`, `letters`, `strokes`, `gaps`,
-`blanks`, `signs`, `corrections`, `notes` (`.csv`). Every row carries `page` and `line`. Letters carry `i` (index in
-the line), `status` (certain · unclear · restored · omitted · surplus · added-above), `cert`, `word`, `stroke`,
+`blanks`, `signs`, `corrections`, `notes`, `editorial` (every editors' statement in the text: id, meaning, reason,
+whole line or in line) and `apparatus` (every footnote entry: type, lemma, readings, note) (`.csv`). Every row carries `page` and `line`. Letters carry `i` (index in
+the line), `status` (certain · unclear · restored · omitted · surplus · added-above · expunged), `cert`, `word`, `stroke`,
 `stroke_kind`, `diaeresis`, `large`, `sic`, `kephalaion`. Gaps, blanks and signs carry `before_letter`. Lines carry
 `leiden`, `diplomatic` (what the manuscript shows: no spaces, `·` per lost or illegible letter), `reading` (all
 letters incl. restorations, no diacritics, word spaces), `ekthesis`, `zone`, `type`, `kephalaion`.

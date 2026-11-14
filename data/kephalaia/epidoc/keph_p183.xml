@@ -15,13 +15,20 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.correction"><catDesc>editors' correction ('read')</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -110,12 +117,16 @@
         <lb n="33" facs="#z33"/><supplied reason="lost">ϩⲏⲧ ⲉϥⲧⲉⲟⲩⲁϥ</supplied> ⲁⲣⲁϥ <space extent="unknown" unit="character"/>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="30" ana="#app.correction"><rdg resp="#edition">ⲟⲩⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ</rdg><note>read</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="13">The printed overline covers ⲡⲙⲛⲭ and stops before ⲥ (measured).</p>
-        <p n="22">The edition prints a closing bracket after ⲁϥⲥⲉϫⲉ with no opening bracket.</p>
-        <p n="24">ⲡⲣⲣⲟ is printed without a stroke here; ll. 15, 17, 20, 22 and 32 have ⲡⲣ̄ⲣⲟ.</p>
-        <p n="28">The printed overline over [ⲙⲛⲭ]ⲥ starts at ⲛ (measured).</p>
-        <p n="30">⟨ⲕⲁⲓ⟩ is the editor's correction to ⲟⲩⲇⲓⲕⲁⲓⲟⲥⲩⲛⲏ.</p>
+        <p n="13" ana="#tr.print">The printed overline covers ⲡⲙⲛⲭ and stops before ⲥ (measured).</p>
+        <p n="22" ana="#tr.bracket">The edition prints a closing bracket after ⲁϥⲥⲉϫⲉ with no opening bracket.</p>
+        <p n="24" ana="#tr.print">ⲡⲣⲣⲟ is printed without a stroke here; ll. 15, 17, 20, 22 and 32 have ⲡⲣ̄ⲣⲟ.</p>
+        <p n="28" ana="#tr.print">The printed overline over [ⲙⲛⲭ]ⲥ starts at ⲛ (measured).</p>
       </div>
     </body>
   </text>
