@@ -43,7 +43,7 @@ Next unread page: **025**.
 ## 2. Open items
 
 - Pages 020–024 (read and audited) are on branch `reading/2026-11-14`, PR #4 — not yet merged.
-- The skill (`kephalaia-page-reading`) lists "a ϣ tail" as a known harmless reconcile flag. That is wrong for this edition:
+- The skill (`kephalaia-page-reading`) lists "a ϣ tail" as a known harmless reconcile flag. Taken as a rule that is wrong:
   see §3 item 7. The skill should be corrected (user's decision; routine runs may not edit it).
 - Audit 010–017 and the pilot pages (049, 111, 159, 183) with the strict method in §3.
 - The p. 019 footnote on ⲥⲏⲣ is read in our note as "ⲥ̄ⲏ̄ⲣ̄ no overline"; confirm the footnote wording on the scan
@@ -80,11 +80,11 @@ Strict method:
    ≥ half-a-letter rule by eye. Bars from the previous line's ϩ/ϣ/ϥ descenders show up as false strokes;
    curved strokes can be missed by the detector.
 7. **Sublinear dots:** ϥ/ϩ/ⲣ dot sits left of the descender. A dotted ϣ has a separate dot in the lower bowl;
-   compare with an undotted ϣ on the same page before accepting it. **Undotted ϣ produce no separate blob at all**
-   (connected-component check: one component of ~170 px). So any 6–12 px component inside the ϣ bowl IS a dot —
-   never write it off as "the tail of ϣ". On 020–023 six real dots were first dismissed this way (2026-11-14).
-   Systematic check: label components in each line band and list 5–16 px blobs lying inside a large glyph's
-   bounding box below its vertical centre; every hit must be a dotted letter in the reading.
+   compare with an undotted ϣ on the same page before accepting it. Look at every ϣ at 8×: the dotted ones show a
+   small round dot sitting in the lower loop, apart from the stroke; the tail of ϣ is a curve joined to the letter.
+   On 020–023 six real dots were first written off as "the tail of ϣ" because a tool flag was taken as the answer
+   instead of looking (2026-11-14). A blob scan (small components inside a letter's box) can point to places worth
+   a look, but it neither proves nor rules out a dot — the decision is made on the zoom.
 8. **Audit sheet:** 4× strips of five lines in three overlapping x-ranges (370/440–780, 760–1100, 1080–1430);
    compare each against the draft rows printed alongside.
 9. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
