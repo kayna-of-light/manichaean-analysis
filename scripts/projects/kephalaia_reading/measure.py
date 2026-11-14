@@ -118,7 +118,7 @@ def reconcile(page):
                     and y - 22 + sl[0].start >= y + 2:
                 blobs.append((470 + sl[1].start, y - 22 + sl[0].start))
         want = sum(1 for l in lay["letters"] if l["line"] == line["n"] and l["status"] == "unclear") + sum(
-            gp["quantity"] for gp in lay["gaps"] if gp["line"] == line["n"])
+            (gp["quantity"] or 0) for gp in lay["gaps"] if gp["line"] == line["n"])
         flag = "" if len(blobs) == want else "  <<< check: " + " ".join(f"{x}/{yy}" for x, yy in sorted(blobs))
         print(f"l.{line['n']:2} reading={want:2} image={len(blobs):2}{flag}")
 
