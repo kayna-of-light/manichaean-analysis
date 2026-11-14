@@ -10,7 +10,7 @@ import csv
 import json
 import sys
 
-from model import OUT, TEI, TEI_DIR, XML, leiden, lines_of, read_tei
+from model import OUT, TEI, TEI_DIR, XML, leiden, lines_of, read_atoms, read_tei, vocab
 
 DOT = "·"
 
@@ -21,6 +21,8 @@ def status(a) -> tuple[str, str | None]:
         return "surplus", None
     if "add" in tags:
         return "added-above", None
+    if "del" in tags:
+        return "expunged", None
     if "supplied" in tags:
         s = tags["supplied"]
         if s["reason"] == "omitted":
@@ -38,7 +40,7 @@ def page_layers(path):
     lb = {int(e.get("n")): e for e in root.iter(f"{{{TEI}}}lb")}
     out = {"page": page, "image": root.find(f".//{{{TEI}}}graphic").get("url"), "lines": [], "words": [],
            "letters": [], "strokes": [], "gaps": [], "blanks": [], "signs": [], "corrections": [],
-           "kephalaia": [], "margin_numbers": [], "notes": []}
+           "kephalaia": [], "margin_numbers": [], "notes": [], "editorial": [], "apparatus": []}
 
     for role, key in (("page-number", "page_number"), ("running-head", "running_head")):
         part = [a for a in atoms if a.role == role]
@@ -71,9 +73,10 @@ def page_layers(path):
             if word:
                 w = [letters[i] for i in word]
                 words.append({"page": page, "line": n, "i": len(words),
-                              "reading": "".join(l["char"] for l in w if l["status"] != "surplus"),
+                              "reading": "".join(l["char"] for l in w if l["status"] not in ("surplus", "expunged")),
                               "diplomatic": "".join(l["char"] if l["status"] in ("certain", "unclear", "surplus",
-                                                                                 "added-above") else DOT for l in w),
+                                                                                 "added-above", "expunged") else DOT
+                                                    for l in w),
                               "complete": all(l["status"] in ("certain", "unclear") for l in w),
                               "first_letter": word[0], "last_letter": word[-1]})
                 word.clear()
@@ -92,23 +95,39 @@ def page_layers(path):
                 if a.stroke is not None:
                     strokes.setdefault(a.stroke, {"page": page, "line": n, "kind": a.stroke_kind, "letters": []})[
                         "letters"].append(at)
-                diplo.append(a.text if st in ("certain", "unclear", "surplus", "added-above") else DOT)
-                if st != "surplus":
+                diplo.append(a.text if st in ("certain", "unclear", "surplus", "added-above", "expunged") else DOT)
+                if st not in ("surplus", "expunged"):
                     reading.append(a.text)
             elif a.kind == "ws":
                 close_word()
                 reading.append(" ")
             elif a.kind == "gap":
-                out["gaps"].append({"page": page, "line": n, "before_letter": at, **a.attrs})
-                diplo.append(DOT * a.attrs["quantity"])
-                reading.append(DOT * a.attrs["quantity"])
+                g = {k: v for k, v in a.attrs.items() if k != "default_reason"}
+                out["gaps"].append({"page": page, "line": n, "before_letter": at, "quantity": None, "unit": "character",
+                                    "extent": None, "ana": None, **g})
+                if a.attrs.get("ana"):
+                    out["gaps"][-1]["extent"] = None if a.attrs["unit"] == "line" else "unknown"
+                    out["gaps"][-1]["quantity"] = 1 if a.attrs["unit"] == "line" else None
+                    e = vocab()["ed"][a.attrs["ana"]]
+                    out["editorial"].append({"page": page, "line": n, "before_letter": at, "id": a.attrs["ana"],
+                                             "en": e["en"], "de": " / ".join(e["de"]), "reason": a.attrs["reason"],
+                                             "scope": "whole line" if a.attrs["unit"] == "line" else "in line"})
+                    diplo.append("…")
+                    reading.append("…")
+                else:
+                    diplo.append(DOT * a.attrs["quantity"])
+                    reading.append(DOT * a.attrs["quantity"])
             elif a.kind == "space":
                 close_word()
                 out["blanks"].append({"page": page, "line": n, "before_letter": at, "type": a.attrs["type"]})
+                if a.attrs["type"] == "vacat":
+                    out["editorial"].append({"page": page, "line": n, "before_letter": at, "id": "vacat",
+                                             "en": "blank (vacat)", "de": "leer", "reason": None, "scope": "in line"})
             elif a.kind == "g":
                 out["signs"].append({"page": page, "line": n, "before_letter": at, **a.attrs, "text": a.text})
         close_word()
-        for st, typ in (("surplus", "surplus"), ("omitted", "omitted"), ("added-above", "added-above")):
+        for st, typ in (("surplus", "surplus"), ("omitted", "omitted"), ("added-above", "added-above"),
+                        ("expunged", "expunged")):
             run = [l for l in letters if l["status"] == st]
             if run:
                 out["corrections"].append({"page": page, "line": n, "type": typ,
@@ -131,12 +150,22 @@ def page_layers(path):
                 k["title_lines"].append(n)
                 k["title"] = " ".join(filter(None, [k["title"], "".join(reading).strip()]))
     out["strokes"] = [{"id": i, **s} for i, s in sorted(strokes.items())]
-    out["notes"] = [{"page": page, "line": int(p.get("n")), "text": p.text}
-                    for p in root.iterfind(f".//{{{TEI}}}div[@type='commentary']/{{{TEI}}}p")]
+    out["notes"] = [{"page": page, "line": int(p.get("n")), "category": (p.get("ana") or "#tr.")[4:] or None,
+                     "text": p.text} for p in root.iterfind(f".//{{{TEI}}}div[@type='commentary']/{{{TEI}}}p")]
+    voc = vocab()["app"]
+    for app in root.iterfind(f".//{{{TEI}}}app"):
+        typ = app.get("ana")[5:]
+        lem = app.find(f"{{{TEI}}}lem")
+        note = app.find(f"{{{TEI}}}note")
+        out["apparatus"].append({"page": page, "loc": app.get("loc"), "printed_loc": app.get("n"), "type": typ,
+                                 "en": voc[typ]["en"], "lem": leiden(read_atoms(lem)) if lem is not None else "",
+                                 "readings": [leiden(read_atoms(x)) for x in app.findall(f"{{{TEI}}}rdg")],
+                                 "note": note.text if note is not None else ""})
     return out
 
 
-TABLES = ("lines", "words", "letters", "strokes", "gaps", "blanks", "signs", "corrections", "notes")
+TABLES = ("lines", "words", "letters", "strokes", "gaps", "blanks", "signs", "corrections", "notes", "editorial",
+          "apparatus")
 
 
 def main() -> None:
@@ -158,7 +187,7 @@ def main() -> None:
         with open(OUT / "layers" / f"{t}.csv", "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, cols)
             w.writeheader()
-            w.writerows({k: (json.dumps(v) if isinstance(v, list) else v) for k, v in r.items()} for r in rows)
+            w.writerows({k: (json.dumps(v, ensure_ascii=False) if isinstance(v, list) else v) for k, v in r.items()} for r in rows)
     print(OUT / "layers")
 
 
