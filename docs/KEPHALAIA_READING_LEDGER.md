@@ -36,12 +36,17 @@ re-checked).
 | 027 | 4 | 31 | read | d44719e | ll. 21–23 all dots; printed apostrophe after ⲧ l. 1 kept only in a note |
 | 028 | 4 → 5 | 36 | read | c2f0e39 | kephalaion 5 opens l. 1, title ll. 2–3; l. 24 "vollständig zerstört" (see §2); correction ⟨ϭ⟩ l. 29 |
 | 029 | 5 | 35 | read | 7609e62 | footnote "12" belongs to l. 13; "Kaum" footnote encoded as conjecture (see §2); \ⲡⲓⲑⲩ/ l. 30 |
+| 030 | 5 → 6 | 36 | read | a15d578 | kephalaion 6 opens l. 12, title ll. 13–16; correction ⟨ⲙ⟩ l. 2; colon after ⲛⲁⲛⲏϩⲉ l. 11 in a note only |
+| 031 | 6 | 33 | read | 993ad88 | dotted ϣ l. 8; «ⲡⲉⲓϣ» sic l. 7 ("unbekannt"); correction ⟨ⲡ⟩ l. 8 |
+| 032 | 6 | 34 | read | 06bd1ea | bare `[` l. 23; «ϭⲓⲣⲁϥ ϭⲓⲣⲉ» sic l. 22; no dotted ϣ |
+| 033 | 6 | 35 | read | 46373f3 | dotted ϣ l. 23; deletion point over ⲧ l. 12 → ⟦ⲧ⟧; corrections ⟨ⲛ⟩ ll. 15, 27 |
+| 034 | 6 → 7 | 33 | read | 9ca08cb | kephalaion 7 opens l. 13, title ll. 14–15; "korrigiert; gemeint ist" l. 8 (see §2); point after ϣⲁⲁⲛⲏϩⲉ l. 12 in a note only |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **030**.
+Next unread page: **035**.
 
 ---
 
@@ -65,6 +70,14 @@ Next unread page: **030**.
   `⁅=open-bracket⁆`, quantity None). On 026 and 029 it was run through a scratch wrapper that counts such gaps as 0
   (tool unchanged). The tool should treat `quantity` None as 0.
 - Pages 025–029 (read 2026-11-14, second routine run) are on branch `reading/2026-11-14`; audit them with the strict method.
+- Pages 030–034 (read 2026-11-14, third routine run) are on branch `reading/2026-11-14` (new PR); audit them with the strict method.
+- Vocabulary gap met on 034 (routine runs may not edit the vocabulary): footnote 34.8 "ⲧⲉ̣ⲩ̈ⲉ̣ⲧⲏⲛⲉ korrigiert; gemeint ist ⲧⲟⲩⲓ̈ⲉⲧⲏⲛⲉ" (the manuscript corrects; the editors state the intended form) was encoded as
+  `app.conjecture` with the wording in the note — consider an id for "korrigiert / gemeint ist". 33.22 "das erste ⲙ anscheinend
+  getilgt" was encoded as `app.expunged` with the letter kept in the text (no double brackets printed) — consider an id for
+  "apparently deleted" without `⟦ ⟧`.
+- End-of-chapter punctuation without a dash: 30.11 prints a colon, 34.12 a single point after the last word. The draft markup
+  has only `§` (:—), so both are in notes only; consider a sign for them.
+- The page images sometimes show a small solid rectangle at a line end (31.28, 33.20) — a printing mark, not encoded.
 
 ## 3. Method lessons (hard-won; apply every session)
 
@@ -111,6 +124,14 @@ Strict method:
    belongs to l. 13). Use `printed=N` on the app row.
 12. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
 
+13. **Pixel-row check for every two-letter stroke.** The `strokes` percentages put a stroke over ⲙⲛ/ϩⲛ/ϩⲙ at ≥ 50 % on
+   both letters more often than the pixel row does: on 030–034, 7 pairs fell below half on one letter by pixel row
+   (30.1 ϩⲛ 43 %, 30.2 ϩⲙ 40 %, 31.26 ⲛϥ 46 %, 31.28 ⲙⲛ 47 %, 32.18 ⲗⲗ 16 %, 34.5/34.6 ⲙⲛ 47 %). Read the bar row (densest row of grey < 130 above the letters) and
+   each letter's ink extent in the x-height band; encode on both letters only when each is ≥ 50 %.
+14. **Lower-zone sheets for ϣ.** A sheet of the band y−12…y+14 of every line at 2.4–2.6× shows each ϣ's lower bowl well
+   enough to pick out dotted ϣ (031 l. 8 and 033 l. 23 were seen this way and confirmed at 8× against an undotted ϣ). A blob scan
+   of that band is too noisy (letter feet) to be useful.
+
 ---
 
 ## 4. Encoding conventions decided so far
@@ -139,6 +160,11 @@ Strict method:
   its zone at the right, also on even pages where it is printed at the left.
 - `ⲱ über der Zeile` (019 l. 29) → `\ⲱ/` + apparatus `added-above`.
 
+- Editors' deletion point over a letter, explained in a footnote as "Tilgungspunkt" (33.12) → `⟦x⟧` + apparatus `expunged`,
+  although no double brackets are printed; note `print` gives the dot position.
+- Chapter-opening marginal numerals are attached to the line their glyph stands level with (34: l. 15), not to the line of
+  their overline.
+
 ---
 
 ## 5. Environment notes
@@ -154,6 +180,9 @@ Strict method:
   `1OIO3H2-nzmgHsSnNAEXyrDRmsL7BaEwi`. `download_file_content` results are too large for context and are saved
   to a tool-results file; decode the base64 `content` field from that file. Check 1553×2258.
 - `gh` is restricted to search; open PRs with the GitHub MCP tool.
+
+- Pillow: if `from PIL import Image` fails with "cannot import name '_imaging'", the Debian copy in
+  /usr/lib/python3/dist-packages is shadowing pip's; `python -m pip install --ignore-installed pillow` fixes it (2026-11-14).
 
 ---
 
@@ -178,3 +207,10 @@ Strict method:
   on uncounted gaps (wrapper used, see §2); `measure.py` strokes overstates coverage when a bar touches the line above
   — 025 l. 4 corrected by pixel measure in a separate commit (`aa56f9c`). Dotted ϣ accepted after zoom: 026 ll. 3, 5;
   027 l. 9; 028 ll. 12, 23, 29; 029 l. 28. No pages skipped; images downloaded from Drive (1553×2258).
+- **2026-11-14** — Routine run (third): read 030–034 on `reading/2026-11-14` (branched from main after PR #6). All five
+  validate "ok". Reconcile flags explained: dots of area < 6 (031 l. 33, 034 l. 4), a dot inside a letter's box (030 l. 13 ⲃ̣,
+  031 l. 8 dotted ϣ), restored dotted letters (030 l. 18 [ⲉ̣]), printed punctuation (030 l. 11 colon, 034 l. 12 point) and letter
+  feet below the zone centre in a title line (034 l. 15). `reconcile` still crashes on uncounted gaps (032); run through the
+  same scratch wrapper (quantity None → 0). Dotted ϣ accepted after 8× comparison: 031 l. 8, 033 l. 23. Images downloaded from
+  Drive (1553×2258). Environment: Pillow had to be reinstalled with `pip install --ignore-installed pillow` (the Debian copy in
+  /usr/lib/python3/dist-packages shadowed it and failed to import `_imaging`). No pages skipped.
