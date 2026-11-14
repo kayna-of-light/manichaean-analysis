@@ -15,10 +15,17 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.confirmation"><catDesc>the printed reading is the manuscript's (editors confirm)</catDesc></category><category xml:id="app.running-title"><catDesc>the running title differs from the usual one</catDesc></category><category xml:id="app.uncertain-strongly"><catDesc>reading very uncertain</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
       <change when="2026-11-14">Compiled from reading draft.</change>
@@ -107,21 +114,26 @@
         <lb n="33" facs="#z33"/><unclear>ⲛ</unclear>ⲧ<unclear>ⲥⲟ</unclear>ⲫⲓⲁ ⲙⲛ ⲧⲙⲏⲉ <space extent="unknown" unit="character"/> ⲧⲛⲁϭ <supplied reason="lost">ⲛϭⲁⲙ </supplied><gap reason="lost" quantity="9" unit="character"/>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="header" ana="#app.running-title"><lem><hi rend="supraline">ⲙⲡ</hi>ⲥⲁϩ</lem><rdg resp="#edition"><hi rend="supraline">ⲛ</hi>ⲕⲉⲫⲁⲗⲁⲓⲟⲛ</rdg><note>the running title here is ⲙⲡⲥⲁϩ instead of ⲛⲕⲉⲫⲁⲗⲁⲓⲟⲛ</note></app>
+        <app loc="27" ana="#app.confirmation"><lem>ⲉϥⲃⲓ</lem><note>ϥ seems certain (not ⲩ)</note></app>
+        <app loc="32" ana="#app.uncertain-strongly"><lem><supplied reason="lost">ⲙ</supplied>ⲛ ⲛⲥⲁϩ</lem></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲕⲇ] is printed with a bar above and below as the frame, not as a supralinear stroke. The editors note that the running title here is ⲙⲡⲥⲁϩ instead of ⲛⲕⲉⲫⲁⲗⲁⲓⲟⲛ (apparatus). Line 1 is in ekthesis with an enlarged ⲧ. Measured overline over ⲡⲛⲁ (1105–1150): ⲡ 84 %, ⲛ 100 %, ⲁ 58 %; not over ⲙ.</p>
-        <p n="9">The bracket before the last dots is not closed in the edition; it is closed here at the line end. So also ll. 12, 13, 17, 26 and 33.</p>
-        <p n="12">Measured overline over ⲡⲛⲁ of ⲡⲡⲛⲁ (924–970): it covers the second ⲡ, ⲛ and ⲁ, not the first ⲡ.</p>
-        <p n="15">Measured stroke in [ⲣⲙⲙ] (563–576): over the first ⲙ only.</p>
-        <p n="16">Line in ekthesis with an enlarged ⲧ inside the restoration.</p>
-        <p n="18">An enlarged ⲧ begins ⲧⲥⲟⲫⲓⲁ after the blank. The dot under ⲡ of ⲙⲡⲓⲱⲧ is faint (below the detector's area threshold) but visible at 5×.</p>
-        <p n="19">A wide blank, not marked by the editors, stands before the enlarged ⲧ of ⲧϭⲁⲙ.</p>
-        <p n="21">Line in ekthesis with an enlarged ⲡ.</p>
-        <p n="22">An enlarged ⲧ begins ⲧⲉⲩⲇⲁⲓⲙⲟⲛⲓⲁ. Measured stroke over ⲙⲛ (635–655): ⲙ 52 %, ⲛ 57 %, encoded on both.</p>
-        <p n="27">The editors note that ϥ in ⲉϥⲃⲓ seems certain (not ⲩ) (apparatus).</p>
-        <p n="28">Line in ekthesis with an enlarged ⲡ. The edition opens a bracket after ⲟⲩⲥⲟⲫ and closes it at the line end.</p>
-        <p n="31">An enlarged ⲧ begins ⲧⲥⲟⲫⲓⲁ after the blank.</p>
-        <p n="32">The editors mark [ⲙ]ⲛ ⲛⲥⲁϩ as very uncertain (apparatus).</p>
-        <p n="24">ⲡⲛⲁ is printed without an overline here (measured: no stroke over 539–594), unlike ll. 1 and 12.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲕⲇ] is printed with a bar above and below as the frame, not as a supralinear stroke. Line 1 is in ekthesis with an enlarged ⲧ. Measured overline over ⲡⲛⲁ (1105–1150): ⲡ 84 %, ⲛ 100 %, ⲁ 58 %; not over ⲙ.</p>
+        <p n="9" ana="#tr.bracket">The bracket before the last dots is not closed in the edition; it is closed here at the line end. So also ll. 12, 13, 17, 26 and 33.</p>
+        <p n="12" ana="#tr.print">Measured overline over ⲡⲛⲁ of ⲡⲡⲛⲁ (924–970): it covers the second ⲡ, ⲛ and ⲁ, not the first ⲡ.</p>
+        <p n="15" ana="#tr.print">Measured stroke in [ⲣⲙⲙ] (563–576): over the first ⲙ only.</p>
+        <p n="16" ana="#tr.layout">Line in ekthesis with an enlarged ⲧ inside the restoration.</p>
+        <p n="18" ana="#tr.layout">An enlarged ⲧ begins ⲧⲥⲟⲫⲓⲁ after the blank. The dot under ⲡ of ⲙⲡⲓⲱⲧ is faint (below the detector's area threshold) but visible at 5×.</p>
+        <p n="19" ana="#tr.layout">A wide blank, not marked by the editors, stands before the enlarged ⲧ of ⲧϭⲁⲙ.</p>
+        <p n="21" ana="#tr.layout">Line in ekthesis with an enlarged ⲡ.</p>
+        <p n="22" ana="#tr.layout">An enlarged ⲧ begins ⲧⲉⲩⲇⲁⲓⲙⲟⲛⲓⲁ. Measured stroke over ⲙⲛ (635–655): ⲙ 52 %, ⲛ 57 %, encoded on both.</p>
+        <p n="24" ana="#tr.print">ⲡⲛⲁ is printed without an overline here (measured: no stroke over 539–594), unlike ll. 1 and 12.</p>
+        <p n="28" ana="#tr.layout">Line in ekthesis with an enlarged ⲡ. The edition opens a bracket after ⲟⲩⲥⲟⲫ and closes it at the line end.</p>
+        <p n="31" ana="#tr.layout">An enlarged ⲧ begins ⲧⲥⲟⲫⲓⲁ after the blank.</p>
       </div>
     </body>
   </text>

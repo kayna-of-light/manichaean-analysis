@@ -15,13 +15,19 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.dittography"><catDesc>dittography</catDesc></category><category xml:id="app.sic"><catDesc>kept as transmitted, not understood or a scribal error</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -114,8 +120,13 @@
         <lb n="35" facs="#z35"/><gap reason="lost" quantity="10" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> <hi rend="supraline">ⲛⲛ</hi> <gap reason="illegible" quantity="5" unit="character"/> ⲁⲩ<unclear>ⲕ</unclear> <gap reason="illegible" quantity="3" unit="character"/> ⲗⲁⲩⲉ ⲥⲱ<unclear>ϫⲡ</unclear>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="9" ana="#app.dittography"><lem>ⲧⲉ</lem><note>repeats ⲛ̄ⲧⲉ̣ at the end of l. 8</note></app>
+        <app loc="9" ana="#app.sic"><lem>ϫⲱⲩ</lem><note>'their heads': senseless, probably a scribal error; no correction offered</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="9">ⲧⲉ repeats ⲛ̄ⲧⲉ̣ at the end of l. 8 (dittography). The editor marks ϫⲱⲩ as a scribal error and offers no correction.</p>
       </div>
     </body>
   </text>

@@ -15,10 +15,17 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="ed"><category xml:id="ed.open-bracket"><catDesc>lost, extent not counted (opening bracket only)</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category><category xml:id="tr.reading"><catDesc>a letter-identification decision taken on the zoom</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
       <change when="2026-11-14">Compiled from reading draft.</change>
@@ -81,8 +88,8 @@
         <lb n="5" facs="#z5"/><gap reason="illegible" quantity="3" unit="character"/> ⲡ <gap reason="illegible" quantity="10" unit="character"/> <unclear>ⲟ</unclear>ⲩⲁⲛϩϥ ⲛⲏⲧ<hi rend="supraline">ⲛ</hi> ⲁⲃⲁⲗ <hi rend="supraline"><unclear>ⲛϥ</unclear></hi>ⲛⲉⲩ ⲁ
         <lb n="6" facs="#z6"/><gap reason="lost" quantity="8" unit="character"/> <hi rend="supraline">ⲙ</hi>ⲡ<supplied reason="lost">ⲉ</supplied> <unclear>ⲕ</unclear>ⲁⲣⲡⲟⲥ ⲉϥϩⲁⲩ ϣⲱⲡ<unclear>ⲉ</unclear> ⲁ<unclear>ⲃ</unclear>ⲁⲗ
         <lb n="7" facs="#z7"/>ⲙⲙⲁ<unclear>ⲥ</unclear> <gap reason="illegible" quantity="6" unit="character"/> <unclear>ⲡ</unclear>ⲉⲧⲛ<unclear>ⲁ</unclear>ⲡⲱⲣϫ ⲛⲧⲁϥ ⲉⲛ ⲁⲃⲁⲗ <gap reason="illegible" quantity="5" unit="character"/>
-        <lb n="8" facs="#z8"/><gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲩ ⲁⲃⲁⲗ <hi rend="supraline">ⲛ</hi><supplied reason="lost">ⲛ</supplied>ⲟⲩⲉⲣⲏⲩ ϥⲁϩⲉ<hi rend="diaeresis">ⲓ</hi>ⲉ <unclear>ⲁⲡ</unclear>ⲕⲁϩ <gap reason="illegible" quantity="1" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
-        <lb n="9" facs="#z9"/><gap reason="lost" quantity="10" unit="character"/> <gap reason="illegible" quantity="9" unit="character"/> ϣⲁⲛⲧⲉϥⲡⲱϩ ⲁⲡ <gap reason="illegible" quantity="2" unit="character"/> <note type="transcriber">opening bracket; the rest of the line is lost</note>
+        <lb n="8" facs="#z8"/><gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲩ ⲁⲃⲁⲗ <hi rend="supraline">ⲛ</hi><supplied reason="lost">ⲛ</supplied>ⲟⲩⲉⲣⲏⲩ ϥⲁϩⲉ<hi rend="diaeresis">ⲓ</hi>ⲉ <unclear>ⲁⲡ</unclear>ⲕⲁϩ <gap reason="illegible" quantity="1" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
+        <lb n="9" facs="#z9"/><gap reason="lost" quantity="10" unit="character"/> <gap reason="illegible" quantity="9" unit="character"/> ϣⲁⲛⲧⲉϥⲡⲱϩ ⲁⲡ <gap reason="illegible" quantity="2" unit="character"/> <gap reason="lost" extent="unknown" unit="character" ana="#ed.open-bracket"/>
         <lb n="10" facs="#z10"/><gap reason="lost" quantity="11" unit="character"/> <gap reason="illegible" quantity="7" unit="character"/> <unclear>ⲛⲉⲩ</unclear> <hi rend="large">ⲧ</hi> <gap reason="illegible" quantity="10" unit="character"/>
         <lb n="11" facs="#z11"/><gap reason="lost" quantity="10" unit="character"/> <hi rend="large">ⲛ</hi>ⲉ<supplied reason="lost">ⲓ</supplied>ⲉⲧϥ <hi rend="supraline">ⲙ</hi>ⲡⲉⲧⲁⲛⲁϩⲧ<unclear>ⲉ</unclear> <unclear>ⲛϥ</unclear> <gap reason="illegible" quantity="6" unit="character"/>
         <lb n="12" facs="#z12"/><gap reason="lost" quantity="11" unit="character"/><unclear>ⲕⲉ</unclear>ⲕⲉ ⲡ<unclear>ⲉ</unclear>ⲧ<unclear>ⲣ</unclear>ⲱⲧ ⲁⲃⲁⲗ <hi rend="supraline">ⲙ</hi>ⲡ <gap reason="illegible" quantity="6" unit="character"/>
@@ -111,19 +118,18 @@
       </ab>
       </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲕⲅ] is printed with a bar above and below as the frame, not as a supralinear stroke. In ⲛϥⲩⲡⲁⲣⲭⲟⲩ the measured stroke (909–927) is centred over the junction of ⲛ and ϥ and covers each by 53 %, so it is encoded on both; so also ⲛϥ in l. 2 (57 %, 58 %) and l. 5 (57 %, 58 %).</p>
-        <p n="2">Two separate strokes: one over ⲛϥ and one over the first ⲙ of ⲛϥⲙⲙⲉ (measured 526–544 and 555–568); all four letters ⲛϥⲙⲙ carry a sublinear dot.</p>
-        <p n="8">The line ends with an opening bracket and nothing after it (lost to the end of the line); so also l. 9.</p>
-        <p n="10">An enlarged ⲧ stands after ⲛⲉⲩ; the ten dots after it are printed more closely spaced than elsewhere.</p>
-        <p n="11">An enlarged ⲛ begins ⲛⲉ[ⲓ]ⲉⲧϥ after the closing bracket.</p>
-        <p n="14">Chapter opening: the numeral ⲅ (3) centred with an overline; the title follows in ll. 15–16.</p>
-        <p n="15">The marginal numerals ([ⲅ] left, ⲅ right, both with overline) stand between the two title lines (y ≈ 952); they are attached to l. 15.</p>
-        <p n="17">Line in ekthesis with an enlarged ⲡ inside the restoration. The edition opens a bracket before ⲡ at the line end and does not close it; it is closed here.</p>
-        <p n="18">Measured stroke over ϩⲛ (699–718): ϩ 50 %, ⲛ 57 %, encoded on both. The stroke over the final ⲥ of ⲧⲥⲁⲩϩⲥ is printed obliquely.</p>
-        <p n="20">The second ϣ of ϣⲟⲩϣ[ⲟ]ⲩ has a sublinear dot in its lower bowl (8× zoom; the first ϣ, undotted, has none); so also ϣ in ll. 22 and 24.</p>
-        <p n="22">Measured stroke over ϩⲙ (862–886): ϩ 56 %, ⲙ 70 %, encoded on both.</p>
-        <p n="32">Line in ekthesis with an enlarged ⲧ inside the restoration.</p>
-        <p n="33">The restored [ⲡⲟⲩⲁⲓⲛⲉ] is printed with sublinear dots under ⲟⲩⲁⲓⲛ inside the brackets.</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲕⲅ] is printed with a bar above and below as the frame, not as a supralinear stroke. In ⲛϥⲩⲡⲁⲣⲭⲟⲩ the measured stroke (909–927) is centred over the junction of ⲛ and ϥ and covers each by 53 %, so it is encoded on both; so also ⲛϥ in l. 2 (57 %, 58 %) and l. 5 (57 %, 58 %).</p>
+        <p n="2" ana="#tr.print">Two separate strokes: one over ⲛϥ and one over the first ⲙ of ⲛϥⲙⲙⲉ (measured 526–544 and 555–568); all four letters ⲛϥⲙⲙ carry a sublinear dot.</p>
+        <p n="10" ana="#tr.layout">An enlarged ⲧ stands after ⲛⲉⲩ; the ten dots after it are printed more closely spaced than elsewhere.</p>
+        <p n="11" ana="#tr.layout">An enlarged ⲛ begins ⲛⲉ[ⲓ]ⲉⲧϥ after the closing bracket.</p>
+        <p n="14" ana="#tr.layout">Chapter opening: the numeral ⲅ (3) centred with an overline; the title follows in ll. 15–16.</p>
+        <p n="15" ana="#tr.layout">The marginal numerals ([ⲅ] left, ⲅ right, both with overline) stand between the two title lines (y ≈ 952); they are attached to l. 15.</p>
+        <p n="17" ana="#tr.bracket">Line in ekthesis with an enlarged ⲡ inside the restoration. The edition opens a bracket before ⲡ at the line end and does not close it; it is closed here.</p>
+        <p n="18" ana="#tr.print">Measured stroke over ϩⲛ (699–718): ϩ 50 %, ⲛ 57 %, encoded on both. The stroke over the final ⲥ of ⲧⲥⲁⲩϩⲥ is printed obliquely.</p>
+        <p n="20" ana="#tr.reading">The second ϣ of ϣⲟⲩϣ[ⲟ]ⲩ has a sublinear dot in its lower bowl (8× zoom; the first ϣ, undotted, has none); so also ϣ in ll. 22 and 24.</p>
+        <p n="22" ana="#tr.print">Measured stroke over ϩⲙ (862–886): ϩ 56 %, ⲙ 70 %, encoded on both.</p>
+        <p n="32" ana="#tr.layout">Line in ekthesis with an enlarged ⲧ inside the restoration.</p>
+        <p n="33" ana="#tr.print">The restored [ⲡⲟⲩⲁⲓⲛⲉ] is printed with sublinear dots under ⲟⲩⲁⲓⲛ inside the brackets.</p>
       </div>
     </body>
   </text>

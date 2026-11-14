@@ -15,13 +15,20 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.confirmation"><catDesc>the printed reading is the manuscript's (editors confirm)</catDesc></category><category xml:id="app.expunged"><catDesc>expunged by the scribe with dots</catDesc></category><category xml:id="app.rejected"><catDesc>a reading the editors exclude</catDesc></category><category xml:id="app.traces-report"><catDesc>editors report traces of particular letters</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -88,7 +95,7 @@
         <lb n="13" facs="#z13"/>ⲧ<unclear>ⲁ</unclear> ⲁⲇⲁⲙ ⲟⲩⲱⲙ ⲁⲃⲁⲗ <hi rend="supraline">ⲛ</hi>ϩⲏⲧ<supplied reason="lost">ϥ</supplied> <unclear>ⲁ</unclear> ⲛⲉϥⲃⲉⲗ ⲛⲉⲩ ⲁⲃⲁ<unclear>ⲗ</unclear> ⲡⲙ<unclear>ⲩ</unclear>ⲥⲧⲏ
         <lb n="14" facs="#z14"/>ⲣⲓⲟⲛ <supplied reason="lost">ⲁⲛ</supplied> ⲛⲛⲁⲡⲟⲥⲧⲟⲗⲟⲥ ⲉⲧⲟ<unclear>ⲩ</unclear>ⲧⲛⲛⲁⲩ ⲙⲙⲁⲩ ⲁⲡⲕⲟⲥⲙ<supplied reason="lost">ⲟⲥ ⲁⲧⲣⲟⲩ</supplied>
         <lb n="15" facs="#z15"/>ⲥⲱⲧⲡ <hi rend="supraline">ⲛⲛ</hi>ⲉⲕⲕⲗⲏⲥⲓⲁ ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ <hi rend="supraline">ⲛⲛ</hi>ⲉⲕⲗⲉⲕⲧⲟⲥ <hi rend="supraline"><supplied reason="lost">ⲙⲛ</supplied></hi><supplied reason="lost"> ⲛⲟⲩ</supplied>
-        <lb n="16" facs="#z16"/>ⲉⲛⲧⲟⲗⲁⲩⲉ <surplus reason="repeated">ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲣⲉϥ</surplus><hi rend="supraline"><surplus reason="repeated">ⲣ</surplus></hi><surplus reason="repeated">ⲛⲁⲃⲉ ⲙⲛ ⲛⲟⲩ<unclear>ϩⲃ</unclear><supplied reason="lost">ⲏⲩⲉ</supplied></surplus>
+        <lb n="16" facs="#z16"/>ⲉⲛⲧⲟⲗⲁⲩⲉ <del rend="expunction">ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲣⲉϥ</del><hi rend="supraline"><del rend="expunction">ⲣ</del></hi><del rend="expunction">ⲛⲁⲃⲉ ⲙⲛ ⲛⲟⲩ<unclear>ϩⲃ</unclear><supplied reason="lost">ⲏⲩⲉ</supplied></del>
         <lb n="17" facs="#z17"/><supplied reason="lost">ⲡ</supplied>ⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲕⲁⲧⲏⲭⲟⲩⲙⲉⲛⲟⲥ ⲛⲟⲩⲃⲟⲏⲑⲟⲥ <hi rend="supraline">ⲙⲛ</hi> <supplied reason="lost">ⲛⲟⲩ</supplied>
         <lb n="18" facs="#z18"/>ⲉⲛⲧⲟⲗⲁⲩⲉ ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ ⲛⲛⲣⲉϥ<hi rend="supraline">ⲣ</hi>ⲛⲁⲃⲉ <hi rend="supraline">ⲙⲛ</hi> ⲛⲟⲩϩⲃⲏⲩⲉ
         <lb n="19" facs="#z19"/><hi rend="supraline">ⲙⲛ</hi> ⲧⲕⲟⲗⲁⲥⲓⲥ ⲉⲧⲗⲏϭ ⲛⲉⲩ <hi rend="large">ⲧ</hi>ϩⲉ ⲧⲉ ⲧⲉ<hi rend="diaeresis">ⲓ</hi> ⲉⲧⲁ ϩⲱϥ ⲛⲓⲙ ⲉ<supplied reason="lost">ⲧ</supplied>ⲁϥ<unclear>ϣ</unclear><supplied reason="lost">ⲱ</supplied>
@@ -109,13 +116,19 @@
         <lb n="34" facs="#z34"/><gap reason="lost" quantity="9" unit="character"/>ⲉϥ <hi rend="supraline">ϩⲙ</hi> ⲡⲕⲟⲙ<unclear>ⲓⲧ</unclear>ⲁⲧⲟⲛ ϩⲛⲣⲙⲡⲉⲩⲉ ⲉⲛⲁϣⲱⲟⲩ ϩ<hi rend="supraline">ⲛ</hi>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="16" ana="#app.expunged"><lem>ⲡⲙⲩⲥⲧⲏ <gap reason="illegible" quantity="4" unit="character"/></lem><note>expunged with dots: a dittography from l. 18 caused by homoioteleuton</note></app>
+        <app loc="28" ana="#app.confirmation"><lem><supplied reason="lost">ⲁⲣⲧⲁ</supplied>ⲝⲟⲟⲥ</lem><note>at the beginning of the line, apparently so</note></app>
+        <app loc="28" ana="#app.rejected"><rdg resp="#edition">ⲁⲣⲧⲁⲝⲁⲣⲏⲥ</rdg><note>in any case not the expected form</note></app>
+        <app loc="34" ana="#app.traces-report"><lem>ⲉϥ</lem><rdg resp="#edition">ⲛⲉϥ</rdg><rdg resp="#edition"><supplied reason="lost">ⲛⲉ</supplied>ⲙⲉϥ</rdg><note>before ⲉϥ traces of ⲛ̣ or ⲙ̣</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲓⲉ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="14">The edition prints [ⲟⲥ ⲁⲧ(ⲣ)ⲟⲩ]: the ⲣ stands in parentheses inside the restoration. The parentheses cannot be encoded; the restoration is recorded as [ⲟⲥ ⲁⲧⲣⲟⲩ].</p>
-        <p n="16">The edition prints the words from ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ to the line end in double square brackets; the apparatus says they are expunged by dots in the manuscript, a dittography from l. 18 caused by homoioteleuton. Encoded as surplus.</p>
-        <p n="20">Measured overline 1127–1198: it covers ⲣⲕⲗⲥ and not the preceding ⲡ.</p>
-        <p n="28">The editors note that [ⲁⲣⲧⲁ]ⲝⲟⲟⲥ (ll. 27–28) is apparently what stands, and in any case not the expected ⲁⲣⲧⲁⲝⲁⲣⲏⲥ (apparatus).</p>
-        <p n="34">Before ⲉϥ the editors report traces of ⲛ or ⲙ, so ⲛⲉϥ or [ⲛⲉ]ⲙⲉϥ (apparatus).</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓⲉ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="14" ana="#tr.bracket">The edition prints [ⲟⲥ ⲁⲧ(ⲣ)ⲟⲩ]: the ⲣ stands in parentheses inside the restoration. The parentheses cannot be encoded; the restoration is recorded as [ⲟⲥ ⲁⲧⲣⲟⲩ].</p>
+        <p n="16" ana="#tr.bracket">The edition prints the words from ⲡⲙⲩⲥⲧⲏⲣⲓⲟⲛ to the line end in double square brackets (deletion by the scribe); encoded as ⟦ ⟧ (del rend=expunction).</p>
+        <p n="20" ana="#tr.print">Measured overline 1127–1198: it covers ⲣⲕⲗⲥ and not the preceding ⲡ.</p>
       </div>
     </body>
   </text>

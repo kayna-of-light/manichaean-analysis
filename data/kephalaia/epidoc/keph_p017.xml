@@ -15,13 +15,21 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="ed"><category xml:id="ed.abraded"><catDesc>rubbed off</catDesc></category><category xml:id="ed.traces"><catDesc>slight traces</catDesc></category></taxonomy>
+        <taxonomy xml:id="app"><category xml:id="app.rejected"><catDesc>a reading the editors exclude</catDesc></category><category xml:id="app.uncertain-strongly"><catDesc>reading very uncertain</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -96,13 +104,13 @@
         <lb n="20" facs="#z20"/>ϩ<hi rend="supraline">ⲛ</hi> ⲟⲩϩⲉⲣⲙⲏⲛⲓⲁ ⲛⲟⲩⲱⲧ <space extent="unknown" unit="character"/>
         <lb n="21" facs="#z21" rend="ekthesis"/><unclear><hi rend="large">ⲧ</hi>ⲟⲧⲉ</unclear> ⲡⲁϫⲉ ⲡ<hi rend="supraline">ⲛ</hi>ϫⲁ<hi rend="diaeresis">ⲓ</hi>ⲥ ⲡⲙⲛ<hi rend="supraline">ⲭⲥ</hi> ⲡⲁⲡⲟⲥⲧⲟⲗⲟⲥ <supplied reason="lost">ⲛⲧⲉ ⲧⲙⲛ</supplied>
         <lb n="22" facs="#z22"/>ⲧⲛⲁϭ ⲁⲛⲉϥⲙⲁⲑⲏⲧⲏⲥ ⲟⲩⲛⲁϭ ⲡⲉ <gap reason="illegible" quantity="11" unit="character"/>
-        <lb n="23" facs="#z23"/><note type="transcriber">slight traces</note>
-        <lb n="24" facs="#z24"/><note type="transcriber">rubbed off</note>
-        <lb n="25" facs="#z25"/><note type="transcriber">rubbed off</note>
+        <lb n="23" facs="#z23"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.traces"/>
+        <lb n="24" facs="#z24"/><gap reason="lost" quantity="1" unit="line" ana="#ed.abraded"/>
+        <lb n="25" facs="#z25"/><gap reason="lost" quantity="1" unit="line" ana="#ed.abraded"/>
         <lb n="26" facs="#z26"/><hi rend="supraline">ϩⲛ</hi> ⲧⲉϥⲧⲁⲡⲣⲟ ⲟⲩⲁⲉ<unclear>ⲉ</unclear>ϥ <gap reason="illegible" quantity="16" unit="character"/>
         <lb n="27" facs="#z27"/><unclear>ⲉ</unclear>ⲧϩⲁⲩ <hi rend="supraline">ⲛ</hi>ⲇⲟ<unclear>ⲅ</unclear><supplied reason="lost">ⲙⲁ</supplied> <gap reason="illegible" quantity="20" unit="character"/>
-        <lb n="28" facs="#z28"/><note type="transcriber">slight traces</note>
-        <lb n="29" facs="#z29"/><note type="transcriber">slight traces</note>
+        <lb n="28" facs="#z28"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.traces"/>
+        <lb n="29" facs="#z29"/><gap reason="illegible" quantity="1" unit="line" ana="#ed.traces"/>
         <lb n="30" facs="#z30"/><supplied reason="lost">ⲡ</supplied>ⲉⲓ ⲇ<unclear>ⲉ</unclear> ϫⲉ <unclear>ⲥⲉ</unclear><supplied reason="lost">ϩⲉⲣⲙⲏⲛ</supplied>ⲉⲩⲉ ⲙⲡϣⲏⲛ ⲥⲛⲉⲩ <unclear>ⲉ</unclear>ⲩⲱⲡ ⲙⲙⲁ<supplied reason="lost">ⲩ</supplied>
         <lb n="31" facs="#z31"/><gap reason="lost" quantity="1" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲙⲏ <unclear>ⲁ</unclear>ⲛϣⲏ<unclear>ⲛ</unclear> <gap reason="lost" quantity="5" unit="character"/>ϩⲛ ⲟⲩϩⲉⲣⲙⲏⲛ<unclear>ⲓⲁ</unclear> <gap reason="illegible" quantity="8" unit="character"/>
         <lb n="32" facs="#z32"/><gap reason="illegible" quantity="13" unit="character"/> ⲉⲡⲉⲓⲇⲏ <gap reason="illegible" quantity="15" unit="character"/>
@@ -111,19 +119,19 @@
         <lb n="35" facs="#z35"/><gap reason="lost" quantity="4" unit="character"/><supplied reason="lost">ⲧⲱ</supplied><unclear>ⲕ</unclear> <unclear>ⲁⲣⲉⲧⲟⲩ</unclear> ϫⲉ ⲧⲃ<unclear>ⲛ</unclear>ⲛⲉ <hi rend="supraline">ⲣ</hi>ϣⲉⲩ ⲉⲛ ϩⲟⲗⲟⲧⲉⲗⲱ<unclear>ⲥ</unclear>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="3" ana="#app.rejected"><rdg resp="#edition">ⲉⲕⲁⲧⲥⲉⲃⲁⲛ</rdg><note>not this reading</note></app>
+        <app loc="35" ana="#app.uncertain-strongly"><lem><supplied reason="lost">ⲧⲱ</supplied>ⲕ ⲁⲣⲉⲧⲟⲩ</lem></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="1">The framed manuscript page number [ⲓⲍ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
-        <p n="3">The editors note: not ⲉⲕⲁⲧⲥⲉⲃⲁⲛ (apparatus).</p>
-        <p n="7">Measured stroke 778–798 over ⲙⲛ (in the restoration): it covers ⲛ 57 % and ⲙ 47 %, so it is encoded on ⲛ only.</p>
-        <p n="12">The last bracket is not closed in the edition; it is closed here at the line end.</p>
-        <p n="13">A raised ink blot between the second and third dot is a printing speck and is not encoded.</p>
-        <p n="21">Measured overline 846–905: it covers ⲭⲥ and not ⲛ (40 %).</p>
-        <p n="23">The editors print "geringe Spuren" (slight traces); no text is given.</p>
-        <p n="24">Lines 24–25: the editors print, with a brace over both lines, "abgerieben" (rubbed off); no text is given.</p>
-        <p n="25">See l. 24.</p>
-        <p n="28">Lines 28–29: the editors print, with a brace over both lines, "geringe Spuren" (slight traces); no text is given.</p>
-        <p n="29">See l. 28.</p>
-        <p n="35">The editors print the end of the word, ⲗⲱⲥ̣, below the line end (turnover); it is part of this line. They call [ⲧⲱ]ⲕ ⲁⲣⲉⲧⲟⲩ quite uncertain (apparatus).</p>
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲓⲍ] is printed with a bar above and below as the frame, not as a supralinear stroke.</p>
+        <p n="7" ana="#tr.print">Measured stroke 778–798 over ⲙⲛ (in the restoration): it covers ⲛ 57 % and ⲙ 47 %, so it is encoded on ⲛ only.</p>
+        <p n="12" ana="#tr.bracket">The last bracket is not closed in the edition; it is closed here at the line end.</p>
+        <p n="13" ana="#tr.print">A raised ink blot between the second and third dot is a printing speck and is not encoded.</p>
+        <p n="21" ana="#tr.print">Measured overline 846–905: it covers ⲭⲥ and not ⲛ (40 %).</p>
+        <p n="35" ana="#tr.layout">The editors print the end of the word, ⲗⲱⲥ̣, below the line end (turnover); it is part of this line.</p>
       </div>
     </body>
   </text>

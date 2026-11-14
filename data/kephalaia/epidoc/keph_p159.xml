@@ -15,13 +15,19 @@
     <encodingDesc>
       <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
         measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
-        Spaces are the edition's word division. Facsimile zones are measured line centres.</p>
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
       <tagsDecl>
         <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
       </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.added-above"><catDesc>written above the line</catDesc></category></taxonomy>
+      </classDecl>
     </encodingDesc>
     <revisionDesc>
-      <change when="2026-11-13">Compiled from reading draft.</change>
+      <change when="2026-11-14">Compiled from reading draft.</change>
     </revisionDesc>
   </teiHeader>
   <facsimile>
@@ -107,8 +113,12 @@
         <lb n="33" facs="#z33"/><supplied reason="lost">ⲁϫⲱⲩ ϩⲙ ⲡⲕ</supplied>ⲟⲥⲙⲟⲥ <g type="middot">·</g> <space extent="unknown" unit="character"/>
       </ab>
       </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="21" ana="#app.added-above"><lem><hi rend="supraline">ⲛ</hi>ⲧⲙ<hi rend="supraline">ⲛ</hi>ⲧⲃⲗⲗⲉ</lem><note>the second ⲛ is added above the line</note></app>
+      </listApp>
+      </div>
       <div type="commentary">
-        <p n="21">The second ⲛ of ⲛ̄ⲧⲙⲛ̄ⲧⲃⲗⲗⲉ is written above the line (editor's apparatus).</p>
       </div>
     </body>
   </text>
