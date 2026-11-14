@@ -223,7 +223,7 @@ python scripts/scrape_gnosis.py
 
 ## Standing Rules
 
-- **No git commits** — the user manages git operations directly
+- **Git** — work on a branch, commit in small focused commits (never `git add -A`), push and open a PR to main; never commit to main or force-push
 - **Honesty above all** — report what the data shows
 - **Correspondences are ontological, not symbolic** — A IS B at the natural degree
 - **The direction is inside→outside** — influx flows from spiritual to natural
