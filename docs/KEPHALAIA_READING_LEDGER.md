@@ -26,18 +26,25 @@ re-checked).
 | 017 | 2 | 35 | needs audit | 95e59f0 | |
 | 018 | 2 | 37 | audited | ea5025b | ~95 % lacuna; corrected 2026-11-14 (runs, dots, l.13 stroke, ll.19/21/22 letters) |
 | 019 | 2 | 35 | audited | 67f95ca | corrected 2026-11-14 (runs, dots, all strokes, ll.1/29 letters) |
+| 020 | 2 | 35 | audited | 86b2dfa | read + audited 2026-11-14; audit added ϣ̣ l.32 |
+| 021 | 2 | 36 | audited | e1dc18a | ll.5–11 no text (zerstört / unlesbar); audit added ϣ̣ l.23 |
+| 022 | 2 | 35 | audited | 86cea54 | ll.1–8 no text; audit added ϣ̣ ll.28, 31 |
+| 023 | 2 → 3 | 33 | audited | 52793b2 | kephalaion 3 opens l. 14, title ll. 15–16; audit added ϣ̣ ll.20, 22, 24 |
+| 024 | 3 | 33 | audited | 8c518f2 | running title ⲙⲡⲥⲁϩ (apparatus); audit: no reading changes |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **020**.
+Next unread page: **025**.
 
 ---
 
 ## 2. Open items
 
-- Corrections to 018 and 019 are on branch `claude/optimistic-galileo-sykil7` (pushed, no PR yet).
+- Pages 020–024 (read and audited) are on branch `reading/2026-11-14`, PR #4 — not yet merged.
+- The skill (`kephalaia-page-reading`) lists "a ϣ tail" as a known harmless reconcile flag. That is wrong for this edition:
+  see §3 item 7. The skill should be corrected (user's decision; routine runs may not edit it).
 - Audit 010–017 and the pilot pages (049, 111, 159, 183) with the strict method in §3.
 - The p. 019 footnote on ⲥⲏⲣ is read in our note as "ⲥ̄ⲏ̄ⲣ̄ no overline"; confirm the footnote wording on the scan
   if p. 019 is touched again.
@@ -73,8 +80,14 @@ Strict method:
    ≥ half-a-letter rule by eye. Bars from the previous line's ϩ/ϣ/ϥ descenders show up as false strokes;
    curved strokes can be missed by the detector.
 7. **Sublinear dots:** ϥ/ϩ/ⲣ dot sits left of the descender. A dotted ϣ has a separate dot in the lower bowl;
-   compare with an undotted ϣ on the same page before accepting it.
-8. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
+   compare with an undotted ϣ on the same page before accepting it. **Undotted ϣ produce no separate blob at all**
+   (connected-component check: one component of ~170 px). So any 6–12 px component inside the ϣ bowl IS a dot —
+   never write it off as "the tail of ϣ". On 020–023 six real dots were first dismissed this way (2026-11-14).
+   Systematic check: label components in each line band and list 5–16 px blobs lying inside a large glyph's
+   bounding box below its vertical centre; every hit must be a dotted letter in the reading.
+8. **Audit sheet:** 4× strips of five lines in three overlapping x-ranges (370/440–780, 760–1100, 1080–1430);
+   compare each against the draft rows printed alongside.
+9. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
 
 ---
 
@@ -98,7 +111,9 @@ Strict method:
 
 ## 5. Environment notes
 
-- Python with the needed packages: `/usr/local/bin/python3.13` (plain `python` is 3.11 without lxml).
+- Python with the needed packages: `/usr/local/bin/python3.13` (plain `python` is 3.11 without lxml). Alternative
+  used on 2026-11-14: `python -m pip install lxml numpy scipy pillow playwright==1.63.0` for 3.11 — 1.63.0 matches
+  the preinstalled `/opt/pw-browsers` Chromium build (1243), so no symlinks are needed.
 - Playwright's bundled Chromium build differs from the installed one: create a directory with symlinks
   `chromium-<expected>` and `chromium_headless_shell-<expected>` pointing at `/opt/pw-browsers/*-<installed>`
   and export `PLAYWRIGHT_BROWSERS_PATH` to it (expected build is printed by
@@ -116,3 +131,7 @@ Strict method:
   dot-placement, stroke and letter errors (see §3).
 - **2026-11-14** — Audited and corrected 019 (`67f95ca`) and 018 (`ea5025b`) on
   `claude/optimistic-galileo-sykil7`. Created this ledger.
+- **2026-11-14** — Routine run: read 020–024 (PR #4). Same day, after the ledger was introduced, re-read all five
+  pages line by line at 4× (three overlapping strips per line). Letters, gap counts and strokes held; six dotted ϣ
+  had been dismissed as ϣ tails and were corrected (020 l.32, 021 l.23, 022 ll.28/31, 023 ll.20/22/24). German
+  brace notes now carry one note row per line. All five pages marked audited.
