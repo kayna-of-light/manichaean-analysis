@@ -1,10 +1,18 @@
 # Kephalaia reading — project ledger
 
 Read this file in full at the start of every reading session. Update it at the end of every session
-(page table, open items, lessons, session log) and commit it together with the pages.
+(page table, open items, lessons, decisions, session log) and commit it together with the pages.
 
 Method: `.claude/skills/kephalaia-page-reading/SKILL.md`. Records: `data/kephalaia/epidoc/keph_pNNN.xml`,
 review images `data/kephalaia/review/keph_pNNN.jpg`.
+
+**How decisions are made.** This ledger has the final word: where it and the skill differ, the ledger wins. A session
+that meets a case not covered here **decides it and writes the decision down** (§3 for method, §4 for encoding), with
+the page and line where it first came up; it never leaves a "consider …" for someone else. The goal is stable results:
+the same printed case is encoded the same way on every page. A session may also update the skill, the editorial
+vocabulary and the reading tools when that makes the results more stable — in a separate commit, explained in the PR
+and in §6. Already-read pages are changed only by an audit or by a decision that has to be applied retroactively, in
+their own commit, listed in §6. §2 holds only work that is still to be done.
 
 ---
 
@@ -52,32 +60,11 @@ Next unread page: **035**.
 
 ## 2. Open items
 
-- Pages 020–024 (read and audited) are on branch `reading/2026-11-14`, PR #4. The editorial-vocabulary migration of
-  all 19 pages builds on it (branch `claude/optimistic-galileo-iqh4x9`).
-- The skill (`kephalaia-page-reading`) lists "a ϣ tail" as a known harmless reconcile flag. Taken as a rule that is wrong:
-  see §3 item 7. The skill should be corrected (user's decision; routine runs may not edit it).
-- Audit 010–017 and the pilot pages (049, 111, 159, 183) with the strict method in §3.
-- The p. 019 footnote on ⲥⲏⲣ is read in our note as "ⲥ̄ⲏ̄ⲣ̄ no overline"; confirm the footnote wording on the scan
-  if p. 019 is touched again.
+- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–034 (status "read").
+- p. 019: our note reads the footnote on ⲥⲏⲣ as "ⲥ̄ⲏ̄ⲣ̄ no overline"; check the footnote wording on the scan during its next
+  audit.
 
 ---
-
-- Vocabulary gaps met on 028–029 (routine runs may not edit the vocabulary): "vollständig zerstört" (28.24) was
-  encoded with `destroyed` and a `source` note — consider an id `destroyed-completely`; "Kaum …" (29.13, "hardly")
-  was encoded as `app.conjecture` with the doubt stated in the note — consider an id for rejected-but-mentioned
-  restorations. 027 l. 1 prints an apostrophe after ⲧ; the draft markup has no sign for it (note only).
-- `measure.py reconcile` crashes with a TypeError on any page that has an uncounted gap (`⁅=uncounted⁆`,
-  `⁅=open-bracket⁆`, quantity None). On 026 and 029 it was run through a scratch wrapper that counts such gaps as 0
-  (tool unchanged). The tool should treat `quantity` None as 0.
-- Pages 025–029 (read 2026-11-14, second routine run) are on branch `reading/2026-11-14`; audit them with the strict method.
-- Pages 030–034 (read 2026-11-14, third routine run) are on branch `reading/2026-11-14` (new PR); audit them with the strict method.
-- Vocabulary gap met on 034 (routine runs may not edit the vocabulary): footnote 34.8 "ⲧⲉ̣ⲩ̈ⲉ̣ⲧⲏⲛⲉ korrigiert; gemeint ist ⲧⲟⲩⲓ̈ⲉⲧⲏⲛⲉ" (the manuscript corrects; the editors state the intended form) was encoded as
-  `app.conjecture` with the wording in the note — consider an id for "korrigiert / gemeint ist". 33.22 "das erste ⲙ anscheinend
-  getilgt" was encoded as `app.expunged` with the letter kept in the text (no double brackets printed) — consider an id for
-  "apparently deleted" without `⟦ ⟧`.
-- End-of-chapter punctuation without a dash: 30.11 prints a colon, 34.12 a single point after the last word. The draft markup
-  has only `§` (:—), so both are in notes only; consider a sign for them.
-- The page images sometimes show a small solid rectangle at a line end (31.28, 33.20) — a printing mark, not encoded.
 
 ## 3. Method lessons (hard-won; apply every session)
 
@@ -101,12 +88,15 @@ Strict method:
    next. Convert strip pixels back to page x (x0 + px/scale) before adding counts.
 4. **Faint dots exist** (area 4, e.g. p. 018 l. 10 x 609) and **specks exist** (blobs from the line above, the
    top hook of a bracket, German text). Every disputed blob gets a 6× zoom.
-5. **`reconcile` is a check, not a target.** It only counts blobs whose top lies ≥ 2 px below the band centre,
-   so it undercounts dots printed at line-centre height (all-dot lines) and it skips dots of area < 6. A
-   remaining flag must be explained by one of those, verified by exact positions; otherwise the reading is wrong.
-6. **Measure strokes on every line** (`measure.py strokes`), then crop each stroke at 4× and apply the
-   ≥ half-a-letter rule by eye. Bars from the previous line's ϩ/ϣ/ϥ descenders show up as false strokes;
-   curved strokes can be missed by the detector.
+5. **`reconcile` is a check, not a target.** It only counts blobs of area ≥ 6 whose top lies ≥ 2 px below the zone
+   centre. It therefore flags, without an error in the reading: dots of area < 6; dots at line-centre height (all-dot
+   lines); a dot inside a letter's box (dotted ϣ, a dot joined to the letter, 30.13 ⲃ̣); a dotted letter inside a
+   restoration (30.18 [ⲉ̣]); printed punctuation (30.11 colon, 34.12 point); "leer"; letter feet in title lines (34.15).
+   Every remaining flag is explained by one of these with exact positions; otherwise the reading is wrong. Since
+   2026-11-14 the tool counts uncounted gaps as 0 (it used to crash on them).
+6. **Measure strokes on every line** (`measure.py strokes`), then crop each stroke at 4×. Bars from the previous
+   line's ϩ/ϣ/ϥ descenders and the top serif of a bracket (31.27) show up as false strokes; curved strokes can be
+   missed by the detector. The ≥ half-a-letter rule is decided on the pixel rows (item 10), not on the tool's %.
 7. **Sublinear dots:** ϥ/ϩ/ⲣ dot sits left of the descender. A dotted ϣ has a separate dot in the lower bowl;
    compare with an undotted ϣ on the same page before accepting it. Look at every ϣ at 8×: the dotted ones show a
    small round dot sitting in the lower loop, apart from the stroke; the tail of ϣ is a curve joined to the letter.
@@ -117,20 +107,17 @@ Strict method:
    compare each against the draft rows printed alongside.
 9. **German statements:** look each formula up in the vocabulary and encode its id; never paraphrase it in a note.
    Check where printed brackets stand around a statement (a bare `[` at the line start is a separate loss).
-10. **`strokes` percentages are not the extent.** The detector merges a stroke with neighbouring ink and also
-   reports descenders of the line above. Print the pixel rows (grey < 130 / < 170) over the letter pair and read the
-   bar's x-extent there; on 025 l. 4 the tool said ϩ 50 % but the pixel row gave 38 % (corrected before the PR).
+10. **`strokes` percentages are not the extent.** The detector merges a stroke with neighbouring ink. For every
+   stroke over two letters, take the bar's x-extent on its densest pixel row (grey < 130, a few rows above the
+   letters) and each letter's ink extent in the x-height band; the stroke goes on a letter only if it covers ≥ 50 % of
+   it. Examples where the tool said both and the pixel row said one: 25.4 ϩ 38 %; 30.1 ϩⲛ (ϩ 43 %), 30.2 ϩⲙ (40 %),
+   31.26 ⲛϥ (46 %), 31.28 ⲙⲛ (47 %), 32.18 ⲗⲗ (16 %), 34.5 and 34.6 ⲙⲛ (47 %). State the measured % in a `print` note.
 11. **Footnote numbering:** check each footnote lemma against the line by the margin numerals (029: footnote "12"
    belongs to l. 13). Use `printed=N` on the app row.
 12. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
-
-13. **Pixel-row check for every two-letter stroke.** The `strokes` percentages put a stroke over ⲙⲛ/ϩⲛ/ϩⲙ at ≥ 50 % on
-   both letters more often than the pixel row does: on 030–034, 7 pairs fell below half on one letter by pixel row
-   (30.1 ϩⲛ 43 %, 30.2 ϩⲙ 40 %, 31.26 ⲛϥ 46 %, 31.28 ⲙⲛ 47 %, 32.18 ⲗⲗ 16 %, 34.5/34.6 ⲙⲛ 47 %). Read the bar row (densest row of grey < 130 above the letters) and
-   each letter's ink extent in the x-height band; encode on both letters only when each is ≥ 50 %.
-14. **Lower-zone sheets for ϣ.** A sheet of the band y−12…y+14 of every line at 2.4–2.6× shows each ϣ's lower bowl well
-   enough to pick out dotted ϣ (031 l. 8 and 033 l. 23 were seen this way and confirmed at 8× against an undotted ϣ). A blob scan
-   of that band is too noisy (letter feet) to be useful.
+13. **Lower-zone sheets for ϣ.** A sheet of the band y−12…y+14 of every line at 2.4–2.6× shows each ϣ's lower bowl
+   well enough to pick out dotted ϣ (31.8 and 33.23 were found this way and confirmed at 8× against an undotted ϣ).
+   A blob scan of that band is too noisy (letter feet) to be useful.
 
 ---
 
@@ -160,10 +147,19 @@ Strict method:
   its zone at the right, also on even pages where it is printed at the left.
 - `ⲱ über der Zeile` (019 l. 29) → `\ⲱ/` + apparatus `added-above`.
 
-- Editors' deletion point over a letter, explained in a footnote as "Tilgungspunkt" (33.12) → `⟦x⟧` + apparatus `expunged`,
-  although no double brackets are printed; note `print` gives the dot position.
-- Chapter-opening marginal numerals are attached to the line their glyph stands level with (34: l. 15), not to the line of
-  their overline.
+- Deletion point named in a footnote ("Tilgungspunkt", 33.12) → `⟦x⟧` + apparatus `expunged`, although no double
+  brackets are printed; a `print` note gives the dot's position. "anscheinend getilgt" (33.22) → the letter stays as
+  printed; apparatus `expunged` only, the doubt in the note.
+- Footnote formulas decided 2026-11-14 (now in the vocabulary as German variants of existing ids, so no page changes):
+  "vollständig zerstört" (28.24) → `destroyed`; "Kaum …" (29.13) and "korrigiert; gemeint ist …" (34.8) →
+  `app.conjecture` with the wording and its strength in the note.
+- Printed punctuation that is not `:—` — a colon (30.11) or a point (34.12) after the last word of a kephalaion, an
+  apostrophe after a letter (27.1) — is not encoded in the text (a `.` would read as an illegible letter); it gets a
+  `layout` note with its position. Reconcile flags it; that is expected.
+- Small solid rectangles at a line end on the scan (31.28, 33.20) are printing marks, not text: not encoded; `print`
+  note with position.
+- Chapter-opening marginal numerals are attached to the line their glyph stands level with (34.15), or, when they stand
+  between two lines, to the upper one (30.14).
 
 ---
 
@@ -180,7 +176,6 @@ Strict method:
   `1OIO3H2-nzmgHsSnNAEXyrDRmsL7BaEwi`. `download_file_content` results are too large for context and are saved
   to a tool-results file; decode the base64 `content` field from that file. Check 1553×2258.
 - `gh` is restricted to search; open PRs with the GitHub MCP tool.
-
 - Pillow: if `from PIL import Image` fails with "cannot import name '_imaging'", the Debian copy in
   /usr/lib/python3/dist-packages is shadowing pip's; `python -m pip install --ignore-installed pillow` fixes it (2026-11-14).
 
@@ -214,3 +209,8 @@ Strict method:
   same scratch wrapper (quantity None → 0). Dotted ϣ accepted after 8× comparison: 031 l. 8, 033 l. 23. Images downloaded from
   Drive (1553×2258). Environment: Pillow had to be reinstalled with `pip install --ignore-installed pillow` (the Debian copy in
   /usr/lib/python3/dist-packages shadowed it and failed to import `_imaging`). No pages skipped.
+- **2026-11-14** — Governance cleanup (with the user): the ledger decides and records decisions instead of leaving
+  suggestions. §2 emptied of "consider …" items; their decisions moved to §3/§4. `measure.py reconcile` fixed (uncounted
+  gaps count as 0; output on 032 identical to the scratch wrapper). Vocabulary: German variants added to `destroyed`,
+  `app.conjecture`, `app.expunged` (ids unchanged; all 29 pages validate "ok"). Skill: ledger precedence, pixel-row
+  stroke rule, dotted-ϣ sheet, reconcile flag list (the "ϣ tail" excuse removed).
