@@ -2,10 +2,10 @@
   "about": "Controlled vocabulary for the editors' (Polotsky/Böhlig) German statements in the printed Kephalaia edition, and for the transcriber's own commentary. Each German formula is mapped to one id; the id is what the EpiDoc pages carry (@ana=\"#ed.ID\" on gaps, #app.ID on apparatus entries, #tr.ID on commentary paragraphs). The German is kept here as the key to the printed formula; it is never transcribed into the pages. 'reason' is the EpiDoc gap reason the statement implies when it stands outside printed brackets; inside printed brackets the reason is always 'lost'. 'judgement' records how an ambiguous or inconsistent formula was decided, so that every page is encoded alike.",
   "ed": {
     "destroyed": {
-      "de": ["zerstört"],
+      "de": ["zerstört", "vollständig zerstört"],
       "en": "destroyed",
       "reason": "lost",
-      "judgement": "Physical loss of the writing surface."
+      "judgement": "Physical loss of the writing surface. 'vollständig zerstört' (28.24) is the same statement, intensified; one id."
     },
     "destroyed-almost": {
       "de": ["fast ganz zerstört", "fast völlig zerstört"],
@@ -95,9 +95,9 @@
   },
   "app": {
     "conjecture": {
-      "de": ["viell.", "vielleicht", "wohl", "man erwartet", "etwa … o. ä.", "… oder …"],
+      "de": ["viell.", "vielleicht", "wohl", "man erwartet", "etwa … o. ä.", "… oder …", "kaum", "Kaum", "korrigiert; gemeint ist"],
       "en": "editors' conjecture (not printed in the text, or an alternative to it)",
-      "judgement": "All forms of proposal are one type; the strength ('man erwartet' vs 'viell.') is kept in the English note."
+      "judgement": "All forms of proposal are one type; the strength ('man erwartet' vs 'viell.') is kept in the English note. 'Kaum …' (29.13) is a restoration the editors mention and doubt; 'korrigiert; gemeint ist …' (34.8) reports a correction in the manuscript and gives the intended form. Both are proposals not printed in the text: the wording and its strength go in the English note."
     },
     "correction": {
       "de": ["Lies", "lies", "Desgleichen"],
@@ -160,9 +160,9 @@
       "judgement": "The text carries {x} (surplus, reason repeated)."
     },
     "expunged": {
-      "de": ["auspunktiert"],
+      "de": ["auspunktiert", "Tilgungspunkt", "anscheinend getilgt"],
       "en": "expunged by the scribe with dots",
-      "judgement": "The scribe's own deletion: the edition prints double brackets [[ ]]; encoded ⟦x⟧ (del rend=expunction), not as an editorial surplus. 15.16 adds the cause (dittography from l. 18 by homoioteleuton) in the note."
+      "judgement": "The scribe's own deletion: the edition prints double brackets [[ ]]; encoded ⟦x⟧ (del rend=expunction), not as an editorial surplus. 15.16 adds the cause (dittography from l. 18 by homoioteleuton) in the note. A footnote naming a deletion point ('Tilgungspunkt', 33.12) without printed double brackets is encoded the same way (⟦x⟧). When the editors only think a letter is deleted ('anscheinend getilgt', 33.22) the letter stays in the text as printed and only the apparatus entry records it."
     },
     "sic": {
       "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler"],
