@@ -31,12 +31,17 @@ re-checked).
 | 022 | 2 | 35 | audited | 86cea54 | ll.1–8 no text; audit added ϣ̣ ll.28, 31 |
 | 023 | 2 → 3 | 33 | audited | 52793b2 | kephalaion 3 opens l. 14, title ll. 15–16; audit added ϣ̣ ll.20, 22, 24 |
 | 024 | 3 | 33 | audited | 8c518f2 | running title ⲙⲡⲥⲁϩ (apparatus); audit: no reading changes |
+| 025 | 3 → 4 | 36 | read | aa56f9c | kephalaion 4 opens l. 7, title ll. 8–10; footnote correction ⟨ⲛ⟩ l. 26; l. 4 stroke corrected after pixel measure |
+| 026 | 4 | 34 | read | 9cba172 | dotted ϣ ll. 3, 5; bare `[` l. 7; two `rejected` footnotes |
+| 027 | 4 | 31 | read | d44719e | ll. 21–23 all dots; printed apostrophe after ⲧ l. 1 kept only in a note |
+| 028 | 4 → 5 | 36 | read | c2f0e39 | kephalaion 5 opens l. 1, title ll. 2–3; l. 24 "vollständig zerstört" (see §2); correction ⟨ϭ⟩ l. 29 |
+| 029 | 5 | 35 | read | 7609e62 | footnote "12" belongs to l. 13; "Kaum" footnote encoded as conjecture (see §2); \ⲡⲓⲑⲩ/ l. 30 |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **025**.
+Next unread page: **030**.
 
 ---
 
@@ -51,6 +56,15 @@ Next unread page: **025**.
   if p. 019 is touched again.
 
 ---
+
+- Vocabulary gaps met on 028–029 (routine runs may not edit the vocabulary): "vollständig zerstört" (28.24) was
+  encoded with `destroyed` and a `source` note — consider an id `destroyed-completely`; "Kaum …" (29.13, "hardly")
+  was encoded as `app.conjecture` with the doubt stated in the note — consider an id for rejected-but-mentioned
+  restorations. 027 l. 1 prints an apostrophe after ⲧ; the draft markup has no sign for it (note only).
+- `measure.py reconcile` crashes with a TypeError on any page that has an uncounted gap (`⁅=uncounted⁆`,
+  `⁅=open-bracket⁆`, quantity None). On 026 and 029 it was run through a scratch wrapper that counts such gaps as 0
+  (tool unchanged). The tool should treat `quantity` None as 0.
+- Pages 025–029 (read 2026-11-14, second routine run) are on branch `reading/2026-11-14`; audit them with the strict method.
 
 ## 3. Method lessons (hard-won; apply every session)
 
@@ -90,7 +104,12 @@ Strict method:
    compare each against the draft rows printed alongside.
 9. **German statements:** look each formula up in the vocabulary and encode its id; never paraphrase it in a note.
    Check where printed brackets stand around a statement (a bare `[` at the line start is a separate loss).
-10. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
+10. **`strokes` percentages are not the extent.** The detector merges a stroke with neighbouring ink and also
+   reports descenders of the line above. Print the pixel rows (grey < 130 / < 170) over the letter pair and read the
+   bar's x-extent there; on 025 l. 4 the tool said ϩ 50 % but the pixel row gave 38 % (corrected before the PR).
+11. **Footnote numbering:** check each footnote lemma against the line by the margin numerals (029: footnote "12"
+   belongs to l. 13). Use `printed=N` on the app row.
+12. **Final check:** `render_print.py` preview beside the scan, line for line, then `review_images.py`.
 
 ---
 
@@ -109,6 +128,11 @@ Strict method:
 - Judgements fixed in the vocabulary: abrasion or destruction named → lost; smearing, illegible, traces, not read →
   illegible; inside printed brackets → lost (the bracket wins over the word, e.g. 21.4 traces in brackets).
   A bare `[` at a line start beside a braced statement (21.8–11) = lost beginning + the statement for the rest.
+- Large middle dot printed in the text (29.26 "ⲁⲧⲡⲉ • ⲉϥⲙⲟⲩⲣ") → `·` (g type middot) + layout note.
+- Bracket printed after a letter with no opener (28.22 dots, 29.28 "ⲡ]") → `‡` after the dots/letter, note `bracket`;
+  the letter before it is encoded as read.
+- Unclosed `[` followed by letters and dots (28.31, 28.33) → the letters go into the restoration, closed at line end.
+- `[x?]` inside a longer restoration (27.12 "[ⲥⲙⲟⲥ ⲉⲧⲧⲏⲧ? ⲡⲥⲁ]") → split into `[…(?)][…]`, note `bracket`.
 - `[[x]]` with "auspunktiert" (15.16) is the scribe's deletion → `⟦x⟧` (del rend=expunction), not `{x}`.
 - Parenthesised letters inside a restoration (e.g. [ⲟⲥ ⲁⲧ(ⲣ)ⲟⲩ]) → restoration without parentheses + note.
 - Framed page number: bar above and below is the frame, not a stroke (note on l. 1). The tool always places
@@ -149,3 +173,8 @@ Strict method:
   footnotes: 139 statements, 46 apparatus entries; 88 free-text inline notes and the brace/"See l." rows removed.
   Two encoding errors fixed on the way: 15.16 expunction (was surplus), 19.7 uncounted loss inside brackets (was
   missing).
+- **2026-11-14** — Routine run (second): read 025–029 on `reading/2026-11-14`. All five validate "ok"; reconcile flags
+  explained by dots at line-centre height or of area < 6 (positions in the page notes). Problems: `reconcile` crashes
+  on uncounted gaps (wrapper used, see §2); `measure.py` strokes overstates coverage when a bar touches the line above
+  — 025 l. 4 corrected by pixel measure in a separate commit (`aa56f9c`). Dotted ϣ accepted after zoom: 026 ll. 3, 5;
+  027 l. 9; 028 ll. 12, 23, 29; 029 l. 28. No pages skipped; images downloaded from Drive (1553×2258).
