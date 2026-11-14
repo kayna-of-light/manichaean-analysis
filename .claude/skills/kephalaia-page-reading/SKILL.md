@@ -8,6 +8,13 @@ description: Read a page image of the printed Kephalaia edition (Polotsky/Böhli
 You read the page yourself. The page image is the only authority. Do not consult the OCR pipelines, model
 transcriptions, review exports, page JSON, glyph libraries, translations or any older skill output in this repo.
 
+**The ledger comes first.** `docs/KEPHALAIA_READING_LEDGER.md` is the project's running record: page status, method
+lessons (§3) and encoding decisions (§4). Read it in full before any page. Where the ledger and this skill differ, the
+ledger wins. When a session meets a case neither covers, it decides it and writes the decision into the ledger, so the
+next session encodes it the same way; a "we should consider …" with no decision is not allowed. A lesson that holds for
+every page belongs in this skill as well, and a session may update the skill, the vocabulary and the tools when that makes
+the results more stable (separate commit, logged in ledger §6).
+
 | What | Where |
 |---|---|
 | Page images (edition pp. 10–291) | `output/projects/kephalaia_v2/coptic/images/keph_pNNN.jpg` (1553×2258, git-ignored). If missing, download the same file names from the Google Drive folder https://drive.google.com/drive/folders/1OIO3H2-nzmgHsSnNAEXyrDRmsL7BaEwi into that directory |
@@ -50,9 +57,14 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
    - Sublinear dots: `measure.py assign …` puts `*` on every glyph with a blob under it. Real dots are about 7–15 px
      in area; 1–2 px specks are noise. The dot under ϥ, ϩ (and ϣ, ⲣ) sits just **left of the descender**:
      undotted ϥ/ϩ produce no blob at all (checked against controls), so a blob there is a real dot.
-   - Strokes: `measure.py strokes …` gives each glyph the percentage covered. A stroke belongs to every letter it
-     covers by **at least half** that letter's width (single letter → `-`, two or more → `+`). The detector misses
-     strokes touching a letter (ⲃ̄) and can mistake the top hook of ϥ for a stroke: zoom on both cases.
+   - Strokes: `measure.py strokes …` finds the bars. A stroke belongs to every letter it covers by **at least half**
+     that letter's width (single letter → `-`, two or more → `+`). The `strokes` percentages overstate coverage (the
+     detector merges a bar with neighbouring ink): for every stroke over two letters, read the bar's x-extent on its
+     densest pixel row (grey < 130) and each letter's ink extent in the x-height band, and decide on those numbers. The
+     detector misses strokes touching a letter (ⲃ̄), reports descenders of the line above, and can mistake the top hook
+     of ϥ for a stroke: zoom on all three cases.
+   - Dotted ϣ: some ϣ carry a separate dot in the lower bowl. Look at every ϣ (a sheet of the band y−12…y+14 of each
+     line at 2.4–2.6× shows them all) and confirm each dotted one at 8× beside an undotted ϣ on the same page.
    - Overlines over numerals and nomina sacra: measure them too. The printed extent can stop short (p. 183 l. 13).
    - Diaeresis: two dots above ⲓ; look at 4× when a dot list shows paired blobs above the line.
    - Ekthesis and enlarged letters: compare line starts in a margin strip.
@@ -62,8 +74,11 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 6. **Validate.** `python validate.py NNN --drafts ../../../temp/kephalaia_reading/drafts` checks the element profile,
    numeral values, facsimile zones, contiguous lines, and that draft → TEI → Leiden is identical character for character.
 7. **Reconcile.** `python measure.py reconcile NNN` compares dots per line (sublinear + gap dots) on the image
-   with the reading. Explain every flagged line. Known harmless flags: the word "leer", the colon of `:—`, dots under the
-   area threshold, a ϣ tail.
+   with the reading. Every flagged line must be explained by exact positions or the reading corrected; never pad a run.
+   It counts only blobs of area ≥ 6 whose top lies ≥ 2 px below the zone centre, so these flag without an error: dots
+   of area < 6, dots at line-centre height, a dot inside a letter's box (a dotted ϣ's bowl dot, a dot joined to the
+   letter), a dotted letter inside a restoration, printed punctuation (`:`, `.`, the colon of `:—`), the word "leer",
+   and letter feet in title lines. A flag is never explained by "a ϣ tail": look at the ϣ at 8×.
 8. **Layers and print.** `python layers.py` and `python render_print.py NNN ...`. Then look at
    `print/preview_N.png` side by side with the scan. The aligned view catches what line-by-line reading misses
    (ekthesis, a missing dot, a misplaced heading).
