@@ -87,6 +87,9 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 8. **Layers and print.** `python layers.py` and `python render_print.py NNN ...`. Then look at
    `print/preview_N.png` side by side with the scan. The aligned view catches what line-by-line reading misses
    (ekthesis, a missing dot, a misplaced heading).
+8a. **Signs.** Every printed mark that is not a letter is encoded as a sign where it stands (table above), never in a
+   note only. A new shape gets a new type in `model.SIGNS` and `decompile.SIGNS` and a row in ledger §7. After the
+   pages are done, run `python signs.py` and update the counts and patterns in ledger §7.
 9. **Review images.** `python review_images.py NNN` renders `data/kephalaia/review/keph_pNNN.jpg` from the layers
    JSON. It shows the scan on the left and the reading line for line on the right, with kephalaion, counts, apparatus
    and notes. It is meant for the user's direct visual inspection: commit it with the page. In a report, link it as
@@ -117,6 +120,7 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 | `vac.` | vac. | `<space extent="unknown" unit="character"/>` |
 | `%` | wide blank | `<space type="unmarked" …/>` (blank the editors do not mark) |
 | `>` `<` `·` `§` `‡` | >  <  ·  :—  ] | `<g type="diple">`, `diple-reversed`, `middot`, `dicolon-dash`, `unpaired-bracket` |
+| `⁚` `∙` `ʼ` `†` `▪` | : . ’ + ■ | `<g type="colon">`, `point`, `apostrophe`, `cross` (not the letter ϯ), `block` |
 
 Combine marks in this order after a letter: `_` then `*` then `-`/`+`/`'` (e.g. `ⲣ_-`, `ⲥ_+`).
 Spaces are the edition's word division (Coptic is scriptio continua); keep them exactly as printed.
