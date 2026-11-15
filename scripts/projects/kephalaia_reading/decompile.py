@@ -15,7 +15,8 @@ from model import REPO, TEI, TEI_DIR, XML, read_tei
 HALF = 21
 MARKS = {"supplied-lost": ("[", "]"), "supplied-omitted": ("⟨", "⟩"), "surplus": ("{", "}"), "add": ("\\", "/"),
          "sic": ("«", "»"), "del": ("⟦", "⟧")}
-SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡"}
+SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡",
+         "colon": "⁚", "point": "∙", "apostrophe": "ʼ", "cross": "†", "block": "▪"}
 
 
 def _key(c) -> str:
@@ -79,8 +80,10 @@ def markup(atoms) -> str:
         cert = dict(c[1]).get("cert") == "low"
         out.append(("(?)" if cert else "") + MARKS[_key(c)][1])
     s = "".join(out)
+    # adjacent elements of the same kind were written as one in the draft; rejoin them — except after "(?)",
+    # where the draft splits a restoration into an uncertain and a certain part (27.12 "[…(?)][…]")
     for pair in ("][", "⟩⟨", "}{", "/\\", "»«", "⟧⟦"):
-        s = s.replace(pair, "")
+        s = s.replace("(?)" + pair, "\0").replace(pair, "").replace("\0", "(?)" + pair)
     return s
 
 

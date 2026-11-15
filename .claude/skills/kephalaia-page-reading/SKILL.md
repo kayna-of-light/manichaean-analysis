@@ -79,9 +79,17 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
    of area < 6, dots at line-centre height, a dot inside a letter's box (a dotted ϣ's bowl dot, a dot joined to the
    letter), a dotted letter inside a restoration, printed punctuation (`:`, `.`, the colon of `:—`), the word "leer",
    and letter feet in title lines. A flag is never explained by "a ϣ tail": look at the ϣ at 8×.
+7a. **Word division and strip joins.** `python measure.py spaces NNN` compares blank runs (≥ 14 px) with the
+   spaces of each line; every difference must be one of the cases in its docstring (enlarged-letter legs, dot runs,
+   unmarked blanks, bracket-narrowed spaces, margin numerals). `python measure.py joins NNN` writes one sheet of the
+   x 880–1020 strip of every line: the letters where the two 4× halves meet are read twice or dropped unless
+   checked here (037.26, 038.4). Widths of unmarked blanks in notes are measured, never estimated.
 8. **Layers and print.** `python layers.py` and `python render_print.py NNN ...`. Then look at
    `print/preview_N.png` side by side with the scan. The aligned view catches what line-by-line reading misses
    (ekthesis, a missing dot, a misplaced heading).
+8a. **Signs.** Every printed mark that is not a letter is encoded as a sign where it stands (table above), never in a
+   note only. A new shape gets a new type in `model.SIGNS` and `decompile.SIGNS` and a row in ledger §7. After the
+   pages are done, run `python signs.py` and update the counts and patterns in ledger §7.
 9. **Review images.** `python review_images.py NNN` renders `data/kephalaia/review/keph_pNNN.jpg` from the layers
    JSON. It shows the scan on the left and the reading line for line on the right, with kephalaion, counts, apparatus
    and notes. It is meant for the user's direct visual inspection: commit it with the page. In a report, link it as
@@ -112,6 +120,7 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 | `vac.` | vac. | `<space extent="unknown" unit="character"/>` |
 | `%` | wide blank | `<space type="unmarked" …/>` (blank the editors do not mark) |
 | `>` `<` `·` `§` `‡` | >  <  ·  :—  ] | `<g type="diple">`, `diple-reversed`, `middot`, `dicolon-dash`, `unpaired-bracket` |
+| `⁚` `∙` `ʼ` `†` `▪` | : . ’ + ■ | `<g type="colon">`, `point`, `apostrophe`, `cross` (not the letter ϯ), `block` |
 
 Combine marks in this order after a letter: `_` then `*` then `-`/`+`/`'` (e.g. `ⲣ_-`, `ⲥ_+`).
 Spaces are the edition's word division (Coptic is scriptio continua); keep them exactly as printed.

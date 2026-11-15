@@ -95,14 +95,14 @@
   },
   "app": {
     "conjecture": {
-      "de": ["viell.", "vielleicht", "wohl", "man erwartet", "etwa … o. ä.", "… oder …", "kaum", "Kaum", "korrigiert; gemeint ist"],
+      "de": ["viell.", "vielleicht", "wohl", "man erwartet", "etwa … o. ä.", "… oder …", "kaum", "Kaum", "korrigiert; gemeint ist", "lies …?"],
       "en": "editors' conjecture (not printed in the text, or an alternative to it)",
-      "judgement": "All forms of proposal are one type; the strength ('man erwartet' vs 'viell.') is kept in the English note. 'Kaum …' (29.13) is a restoration the editors mention and doubt; 'korrigiert; gemeint ist …' (34.8) reports a correction in the manuscript and gives the intended form. Both are proposals not printed in the text: the wording and its strength go in the English note."
+      "judgement": "All forms of proposal are one type; the strength ('man erwartet' vs 'viell.') is kept in the English note. 'Kaum …' (29.13) is a restoration the editors mention and doubt; 'korrigiert; gemeint ist …' (34.8) reports a correction in the manuscript and gives the intended form. Both are proposals not printed in the text: the wording and its strength go in the English note. 'lies …?' with a question mark (39.24, there with '… oder …?') is a queried correction: it is not encoded in the text; every proposed form is an apparatus reading."
     },
     "correction": {
-      "de": ["Lies", "lies", "Desgleichen"],
+      "de": ["Lies", "lies", "Desgleichen", "sic, lies"],
       "en": "editors' correction ('read')",
-      "judgement": "The correction itself is encoded in the text (⟨⟩ supplied-omitted, or the corrected spelling); the apparatus entry records the editors' reading."
+      "judgement": "The correction itself is encoded in the text (⟨⟩ supplied-omitted, or the corrected spelling); the apparatus entry records the editors' reading. 'x sic, lies y' (39.7) confirms the manuscript form and then corrects it: encoded as a correction; the 'sic' is kept in the note."
     },
     "confirmation": {
       "de": ["so", "scheint sicher", "anscheinend so"],
@@ -165,9 +165,9 @@
       "judgement": "The scribe's own deletion: the edition prints double brackets [[ ]]; encoded ⟦x⟧ (del rend=expunction), not as an editorial surplus. 15.16 adds the cause (dittography from l. 18 by homoioteleuton) in the note. A footnote naming a deletion point ('Tilgungspunkt', 33.12) without printed double brackets is encoded the same way (⟦x⟧). When the editors only think a letter is deleted ('anscheinend getilgt', 33.22) the letter stays in the text as printed and only the apparatus entry records it."
     },
     "sic": {
-      "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler"],
+      "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler", "sic für"],
       "en": "kept as transmitted, not understood or a scribal error",
-      "judgement": "The text carries «x» (sic)."
+      "judgement": "The text carries «x» (sic). 'x sic für y' (39.5) names the intended form without telling the reader to change the text: «x» in the text, y as the apparatus reading."
     },
     "running-title": {
       "de": ["Überschrift … statt …"],
