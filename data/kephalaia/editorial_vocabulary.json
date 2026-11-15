@@ -2,10 +2,10 @@
   "about": "Controlled vocabulary for the editors' (Polotsky/Böhlig) German statements in the printed Kephalaia edition, and for the transcriber's own commentary. Each German formula is mapped to one id; the id is what the EpiDoc pages carry (@ana=\"#ed.ID\" on gaps, #app.ID on apparatus entries, #tr.ID on commentary paragraphs). The German is kept here as the key to the printed formula; it is never transcribed into the pages. 'reason' is the EpiDoc gap reason the statement implies when it stands outside printed brackets; inside printed brackets the reason is always 'lost'. 'judgement' records how an ambiguous or inconsistent formula was decided, so that every page is encoded alike.",
   "ed": {
     "destroyed": {
-      "de": ["zerstört", "vollständig zerstört"],
+      "de": ["zerstört", "vollständig zerstört", "Rest zerstört"],
       "en": "destroyed",
       "reason": "lost",
-      "judgement": "Physical loss of the writing surface. 'vollständig zerstört' (28.24) is the same statement, intensified; one id."
+      "judgement": "Physical loss of the writing surface. 'vollständig zerstört' (28.24) is the same statement, intensified; one id. 'Rest zerstört' (44.5) is the same statement after surviving letters, as 'Rest abgerieben'."
     },
     "destroyed-almost": {
       "de": ["fast ganz zerstört", "fast völlig zerstört"],
