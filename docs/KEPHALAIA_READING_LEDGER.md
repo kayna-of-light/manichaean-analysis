@@ -49,18 +49,23 @@ re-checked).
 | 032 | 6 | 34 | read | 06bd1ea | bare `[` l. 23; «ϭⲓⲣⲁϥ ϭⲓⲣⲉ» sic l. 22; no dotted ϣ |
 | 033 | 6 | 35 | read | 46373f3 | dotted ϣ l. 23; deletion point over ⲧ l. 12 → ⟦ⲧ⟧; corrections ⟨ⲛ⟩ ll. 15, 27 |
 | 034 | 6 → 7 | 33 | read | 9ca08cb | kephalaion 7 opens l. 13, title ll. 14–15; "korrigiert; gemeint ist" l. 8 (see §2); point after ϣⲁⲁⲛⲏϩⲉ l. 12 in a note only |
+| 035 | 7 | 34 | read | b12393c | nomen-sacrum overline printed over ⲡⲉ, not ⲓⲏⲥ (l. 13); unclosed `[` + dots + extant text l. 31 |
+| 036 | 7 → 8 | 35 | read | b12393c | kephalaion 8 opens l. 27, title ll. 28–29; colon end of kephalaion 7 l. 26 (note only) |
+| 037 | 8 → 9 | 36 | read | b12393c | kephalaion 9 opens l. 28, title ll. 29–30; correction ⟨ⲉ⟩ l. 17; 26 ⲉϥⲛⲁⲱⲡ fixed before commit (join) |
+| 038 | 9 | 33 | read | 32b37be | \ⲛⲉ/ l. 9; correction ⟨ⲟⲩ⟩ l. 1; conjecture l. 32; ⲧⲙⲡⲥⲁⲙⲡⲓⲧⲛⲉ one word l. 32 |
+| 039 | 9 | 34 | read | f2755ae | dotted ϣ ll. 26, 31; free-standing cross l. 19 (note only); «ⲁⲡⲛⲗⲁϩ» sic l. 5; ⟨ⲛ⟩ l. 7, ⟨ⲛⲏ⟩ l. 18; queried correction l. 24 |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **035**.
+Next unread page: **040**.
 
 ---
 
 ## 2. Open items
 
-- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–034 (status "read").
+- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–039 (status "read").
 - p. 019: our note reads the footnote on ⲥⲏⲣ as "ⲥ̄ⲏ̄ⲣ̄ no overline"; check the footnote wording on the scan during its next
   audit.
 
@@ -118,6 +123,15 @@ Strict method:
 13. **Lower-zone sheets for ϣ.** A sheet of the band y−12…y+14 of every line at 2.4–2.6× shows each ϣ's lower bowl
    well enough to pick out dotted ϣ (31.8 and 33.23 were found this way and confirmed at 8× against an undotted ϣ).
    A blob scan of that band is too noisy (letter feet) to be useful.
+14. **Strip joins (2026-11-15).** The left and right 4× halves overlap at x 940–960; a letter at the edge is easily
+   written twice or one invented: 037.26 ⲉϥⲛⲁⲱⲱⲡ for ⲉϥⲛⲁⲱⲡ, 038.4 a ϯ before ⲡⲁϫⲉϥ that is the ⲡ itself. Both were
+   caught only on the print preview / a join strip. Run `measure.py joins NNN` and compare every line before compiling.
+15. **Word division (2026-11-15).** 038.32 ⲧⲙ̄ⲡⲥⲁⲙⲡⲓⲧⲛⲉ had been split into two words by eye. `measure.py spaces NNN`
+   compares blank runs with the reading; every difference is explained (enlarged-letter legs, dot runs, unmarked blank,
+   bracket-narrowed space, margin numerals) or the reading is corrected.
+16. **Measure blank widths (2026-11-15).** Estimated widths of unmarked blanks were wrong by up to 120 px (035.13: 165
+   written, 43 measured). Take the width from the x-height band (`spaces` prints it) and an ordinary 20 px space before an
+   enlarged letter is no `%` (039.34).
 
 ---
 
@@ -158,6 +172,17 @@ Strict method:
   `layout` note with its position. Reconcile flags it; that is expected.
 - Small solid rectangles at a line end on the scan (31.28, 33.20) are printing marks, not text: not encoded; `print`
   note with position.
+- Unclosed `[` followed by a dot run and then extant text (letters with their own sublinear dots, or the line's ordinary
+  text; 35.31, 39.32) → the gap is closed after the last dot, note `bracket`. (Contrast 28.31/28.33, where the letters
+  after the bracket are restorations.)
+- A nomen-sacrum overline printed displaced onto the preceding word (35.13: bar over ⲡⲉ, ⲓⲏⲥ bare) is encoded as printed,
+  with a `print` note giving the measured extent.
+- A free-standing printed cross (39.19: equal arms, 23 px wide against 17 px for ϯ, after a 64 px blank at the line end)
+  is a sign, not the letter ϯ: not encoded in the text; `layout` note with its position.
+- Footnote formulas decided 2026-11-15 (vocabulary variants, ids unchanged): "x sic für y" (39.5) → «x» in the text +
+  `app.sic` with y as reading; "x sic, lies y" (39.7) → `app.correction`, the correction in the text, "sic" in the note;
+  "lies …? oder …?" with a question mark (39.24) → `app.conjecture`, nothing changed in the text, every form a reading.
+- "leer" inside a line (39.7, 39.24) → `vac.` at its place, like "leer" at a line end.
 - Chapter-opening marginal numerals are attached to the line their glyph stands level with (34.15), or, when they stand
   between two lines, to the upper one (30.14).
 
@@ -214,3 +239,11 @@ Strict method:
   gaps count as 0; output on 032 identical to the scratch wrapper). Vocabulary: German variants added to `destroyed`,
   `app.conjecture`, `app.expunged` (ids unchanged; all 29 pages validate "ok"). Skill: ledger precedence, pixel-row
   stroke rule, dotted-ϣ sheet, reconcile flag list (the "ϣ tail" excuse removed).
+- **2026-11-15** — Routine run: read 035–039 on `reading/2026-11-15`. All five validate "ok". Reconcile flags explained:
+  a fragment of "leer" (035.24), cut marginal numerals in title lines (036.28, 037.29), a dot below the zone (037.14), a
+  dot joined to ϥ (038.23), a dot of area 3 (039.32). Dotted ϣ accepted after 8× comparison: 039 ll. 26, 31; none on
+  035–038. Errors caught before commit by the print preview and new checks: 037.26 doubled letter at the strip join,
+  038.4 invented ϯ at the strip join, 038.32 false word division; 035–037 blank-width notes corrected to measured values
+  in a separate commit (`b12393c`, notes only). Tool: `measure.py spaces` and `joins` (`4f320c5`); skill step 7a
+  (`9a66f59`); vocabulary: "sic für", "sic, lies", "lies …?" (ids unchanged). All 33 pages re-validated "ok" after each
+  change. Images downloaded from Drive (1553×2258); Pillow again needed `--ignore-installed`. No pages skipped.
