@@ -54,18 +54,23 @@ re-checked).
 | 037 | 8 → 9 | 36 | read | b12393c | kephalaion 9 opens l. 28, title ll. 29–30; correction ⟨ⲉ⟩ l. 17; 26 ⲉϥⲛⲁⲱⲡ fixed before commit (join) |
 | 038 | 9 | 33 | read | 32b37be | \ⲛⲉ/ l. 9; correction ⟨ⲟⲩ⟩ l. 1; conjecture l. 32; ⲧⲙⲡⲥⲁⲙⲡⲓⲧⲛⲉ one word l. 32 |
 | 039 | 9 | 34 | read | f2755ae | dotted ϣ ll. 26, 31; free-standing cross l. 19 (note only); «ⲁⲡⲛⲗⲁϩ» sic l. 5; ⟨ⲛ⟩ l. 7, ⟨ⲛⲏ⟩ l. 18; queried correction l. 24 |
+| 040 | 9 | 34 | read | fdb64cd | middle dot l. 26; correction ⟨ⲙ⟩ l. 13; no dotted ϣ |
+| 041 | 9 | 34 | read | 6a8b999 | dotted ϣ l. 13; \ⲛ/ l. 19, ⲛ\ⲉ/ l. 28; split bracket "[ blank ϣⲱ]" l. 31 |
+| 042 | 9 → 10 | 35 | read | 67e8a8e | kephalaion 10 opens l. 24, title ll. 25–26; dotted ϣ l. 29; «ⲙⲙϣⲙϣⲉⲧⲉ» sic l. 4; stroke over ⲙⲛ covering neither by half l. 1 |
+| 043 | 10 → 11 | 35 | read | 12d1ea7 | kephalaion 11 opens l. 22, title ll. 23–24; dotted ϣ l. 2; ⟨ⲡ⟩ l. 5, ⟨ⲓ⟩ l. 24; blank inside one restoration l. 34 |
+| 044 | 11 → 12 | 35 | read | 529cb7e | kephalaion 12 opens l. 19, title ll. 20–22; l. 31 "unlesbar (abgerieben)" (new id); «ⲡⲁⲣⲁⲡⲉϩⲟⲩⲧ» sic l. 21; ⟨ⲉ⟩ l. 16 |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **040**.
+Next unread page: **045**.
 
 ---
 
 ## 2. Open items
 
-- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–039 (status "read").
+- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–044 (status "read").
   033 first: 33.20 had two letters the page does not print (ⲉⲧϩⲁⲥϫⲏϥ for ⲉⲧϫⲏϥ, found 2026-11-15). Every audit now
   includes `measure.py joins` and `spaces` (skill step 7a), which the pages before 035 never had.
 - p. 019: our note reads the footnote on ⲥⲏⲣ as "ⲥ̄ⲏ̄ⲣ̄ no overline"; check the footnote wording on the scan during its next
@@ -134,6 +139,15 @@ Strict method:
 16. **Measure blank widths (2026-11-15).** Estimated widths of unmarked blanks were wrong by up to 120 px (035.13: 165
    written, 43 measured). Take the width from the x-height band (`spaces` prints it) and an ordinary 20 px space before an
    enlarged letter is no `%` (039.34).
+17. **A stroke over two letters that covers neither by half (2026-11-15, 42.1).** The ≥ 50 % rule assumes the bar lies
+   mostly over one letter. When the bar is centred on the join and covers both letters below 50 % (42.1 ⲙⲛ: 47 % / 46 %),
+   it is encoded on both, so that a printed stroke is never dropped; the measured % goes in the `print` note.
+18. **Dots that a tool does not see (2026-11-15).** A sublinear dot joined to the foot of ⲓ (the "!" shape, 43.17, 44.2) or
+   of ϩ (44.22) is a real dot: encode the letter as dotted and say in the note that reconcile misses it. The dot of ⲣ is
+   sometimes printed right of the descender, at its foot (41.11, 41.20, 42.5); it belongs to the ⲣ. Decide both on an
+   8–10× zoom.
+19. **Footnotes are read in full before the notes are written (2026-11-15).** On 041–044 every page had a footnote that
+   changed the text (added-above letters, corrections, sic); read the footnote block at 2× together with the last lines.
 
 ---
 
@@ -188,6 +202,23 @@ Strict method:
 - "leer" inside a line (39.7, 39.24) → `vac.` at its place, like "leer" at a line end.
 - Chapter-opening marginal numerals are attached to the line their glyph stands level with (34.15), or, when they stand
   between two lines, to the upper one (30.14).
+- Decided 2026-11-15 (pages 040–044):
+  - The framed page number printed inside restoration brackets ([ⲙⲅ] 43, [ⲙⲇ] 44) is encoded as a restoration without
+    strokes; the bars are the frame.
+  - One printed bracket pair that holds more than the encoder can express in one restoration is split, with a `bracket`
+    note: an empty stretch followed by restored letters "[ blank ϣⲱ]" (41.31) → `[⁅=uncounted⁆][ϣⲱ]`; restored letters
+    followed by an empty stretch "[ⲣⲱⲙⲉ blank]" (43.35) → `[ⲣⲱⲙⲉ ⁅=uncounted⁆]`; an unmarked blank inside one restoration
+    (43.34) → `[ⲓ̈ⲧ] % [ⲧⲁⲣⲭⲏ …]`.
+  - An unclosed `[` with restored letters followed by an editors' statement (44.5 "ⲧ[ⲛⲁϭ Rest zerstört") → the restoration
+    and the statement both inside the bracket, closed at the line end; the bracket makes the reason lost.
+  - A footnote correction whose supplied letter carries a diaeresis the printed letters lack (43.24 "Lies ϣⲃⲓ̈ⲁ⟨ⲓ̈⟩ⲧ") → the
+    supplied letter takes the footnote's form, the printed letters stay as printed; the difference goes in the app note.
+  - A footnote that confirms a reading and calls it unintelligible ("scheint so dazustehen (unverständlich)", 44.21) is a
+    `sic`: «x» around the lemma letters only, even inside a longer word (ⲙⲙⲛ̄ⲧ«ⲡⲁⲣⲁⲡⲉϩⲟⲩⲧ»).
+  - Vocabulary variants added (ids unchanged): "klein über der Zeile" and "anscheinend über der Zeile" → `added-above`;
+    "für … ist der Raum zu knapp" and "Die Spuren passen nicht zu" → `rejected`; "sic mit …" and "scheint so dazustehen
+    (unverständlich)" → `sic`; "Rest zerstört" → `destroyed`. New id `illegible-abraded` for "unlesbar (abgerieben)"
+    (44.31): abrasion named, so lost.
 
 
 ---
@@ -205,6 +236,9 @@ Strict method:
   `1OIO3H2-nzmgHsSnNAEXyrDRmsL7BaEwi`. `download_file_content` results are too large for context and are saved
   to a tool-results file; decode the base64 `content` field from that file. Check 1553×2258.
 - `gh` is restricted to search; open PRs with the GitHub MCP tool.
+- 2026-11-15 (second run): the worker process restarted in the middle of p. 044; drafts, images, scratch scripts and
+  installed packages survived, and work went on from the draft. Write each line to the draft right after viewing it, so a
+  restart loses nothing.
 - Pillow: if `from PIL import Image` fails with "cannot import name '_imaging'", the Debian copy in
   /usr/lib/python3/dist-packages is shadowing pip's; `python -m pip install --ignore-installed pillow` fixes it (2026-11-14).
 
@@ -258,6 +292,15 @@ Strict method:
   merged into one restoration; decompile → compile is now identical on all 34 pages. While measuring 33.20 a reading
   error was found and corrected (`116d554`): ⲉⲧϫⲏϥ, not ⲉⲧϩⲁⲥϫⲏϥ; 033 moves to the front of the audit queue (§2).
   Images 027, 030, 031, 033, 034 downloaded from Drive (1553×2258). All pages validate "ok".
+- **2026-11-15** — Routine run (second): read 040–044 on `reading/2026-11-15`. All five validate "ok"; all 39 pages
+  re-validated after each vocabulary change. Reconcile flags explained: dots at line-centre height (042.12–18, 043.21,
+  044.15/29/30/32/34), dots of area < 6 (042.3, 043.18), dots joined to ⲓ or ϩ (043.17, 044.22), dots at the foot of the
+  zone (041.14/30, 043.1/23), margin and line numerals (042.25, 043.23, 044.12/19), German umlauts (044.5). Dotted ϣ
+  accepted after 8–10× comparison: 041.13, 042.29, 043.2; none on 040, 044. Caught before commit: 040.10 a dot written
+  under ⲉ that belongs to ⲥ (14×); 043 page number had been given strokes (frame bars; fixed in `12d1ea7`). Vocabulary:
+  six German variants and one new id (`illegible-abraded`), each in its own commit (`da8be69`, `d07f18b`, `9775ee6`,
+  `d6ba4f4`, `c01ac36`, `c237d59`). Method: §3 items 17–19; encoding decisions in §4 (2026-11-15). Images downloaded from
+  Drive (1553×2258). No pages skipped. The worker restarted once during 044 (see §5).
 
 
 ---
@@ -271,12 +314,15 @@ shows, with the occurrences that support it.
 
 | Type | Draft | Occurrences (2026-11-15) | What the occurrences show so far |
 |---|---|---|---|
-| middot | `·` | 10.34, 29.26, 32.9, 159.33 | mid-line between words (3×); once at a line and kephalaion end (159.33) |
+| middot | `·` | 10.34, 29.26, 32.9, 40.26, 159.33 | mid-line between words (4×; 40.26 a large round dot, area 44, between ⲛⲧⲉϥⲉⲕⲕⲗⲏⲥⲓⲁ and ⲛϣⲁⲣⲡ); once at a line and kephalaion end (159.33) |
 | colon | `⁚` | 30.11, 36.26 | both at the end of a kephalaion, after the last word, no dash (contrast the end mark `:—`) |
 | point | `∙` | 34.12 | end of a kephalaion, after a word space |
 | block | `▪` | 31.28, 33.20 | line end, mid-kephalaion; may be a printing mark, not the manuscript's |
 | cross | `†` | 39.19 | line end after a 64 px blank, mid-kephalaion (9) |
 | apostrophe | `ʼ` | 27.1 | after ⲧ at the start of a line |
+
+Kephalaia 9, 10 and 11 end on 042.23, 043.21 and 044.18 with no printed end sign (two of the three end lines are
+damaged), so far the colon/point at a chapter end is the exception, not the rule (30.11, 34.12, 36.26 against 042–044).
 
 Open questions: Are colon and point two forms of one chapter-end sign? Does the cross recur at section breaks? Are the
 blocks the printer's or the editors'? Do the middle dots separate units of sense?
