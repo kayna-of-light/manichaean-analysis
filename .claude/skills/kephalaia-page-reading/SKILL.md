@@ -79,6 +79,11 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
    of area < 6, dots at line-centre height, a dot inside a letter's box (a dotted ϣ's bowl dot, a dot joined to the
    letter), a dotted letter inside a restoration, printed punctuation (`:`, `.`, the colon of `:—`), the word "leer",
    and letter feet in title lines. A flag is never explained by "a ϣ tail": look at the ϣ at 8×.
+7a. **Word division and strip joins.** `python measure.py spaces NNN` compares blank runs (≥ 14 px) with the
+   spaces of each line; every difference must be one of the cases in its docstring (enlarged-letter legs, dot runs,
+   unmarked blanks, bracket-narrowed spaces, margin numerals). `python measure.py joins NNN` writes one sheet of the
+   x 880–1020 strip of every line: the letters where the two 4× halves meet are read twice or dropped unless
+   checked here (037.26, 038.4). Widths of unmarked blanks in notes are measured, never estimated.
 8. **Layers and print.** `python layers.py` and `python render_print.py NNN ...`. Then look at
    `print/preview_N.png` side by side with the scan. The aligned view catches what line-by-line reading misses
    (ekthesis, a missing dot, a misplaced heading).
