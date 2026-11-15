@@ -71,7 +71,14 @@ def gap_leiden(attrs: dict) -> str:
         return f"[{dots}]" if attrs["reason"] == "lost" else dots
     core = (LINE_GAP if attrs.get("unit") == "line" else GAP_LOST) + ("(?)" if attrs.get("cert") == "low" else "")
     return f"[{core}]" if attrs["reason"] == "lost" else core
-SIGNS = {">": "diple", "<": "diple-reversed", "·": "middot"}
+# Printed signs that are not letters. Each is encoded where it stands, so every occurrence lands in the `signs`
+# layer and repeated patterns can be studied across pages (ledger §7). Draft character -> <g type>.
+SIGNS = {">": "diple", "<": "diple-reversed", "·": "middot",
+         "⁚": "colon",       # a colon that is not the end mark :— (30.11, 36.26)
+         "∙": "point",       # a single point at or below line centre, smaller than the middle dot (34.12)
+         "ʼ": "apostrophe",  # an apostrophe-like mark after a letter (27.1)
+         "†": "cross",       # a free-standing cross with equal arms, not the letter ϯ (39.19)
+         "▪": "block"}       # a small solid rectangle at a line end (31.28, 33.20)
 
 
 def is_coptic(ch: str) -> bool:

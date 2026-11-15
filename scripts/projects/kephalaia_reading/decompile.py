@@ -15,7 +15,8 @@ from model import REPO, TEI, TEI_DIR, XML, read_tei
 HALF = 21
 MARKS = {"supplied-lost": ("[", "]"), "supplied-omitted": ("⟨", "⟩"), "surplus": ("{", "}"), "add": ("\\", "/"),
          "sic": ("«", "»"), "del": ("⟦", "⟧")}
-SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡"}
+SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡",
+         "colon": "⁚", "point": "∙", "apostrophe": "ʼ", "cross": "†", "block": "▪"}
 
 
 def _key(c) -> str:
