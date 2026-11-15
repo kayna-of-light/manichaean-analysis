@@ -7,6 +7,8 @@ usage:
   python measure.py assign PAGE y0 y1 x0 x1                    glyph boxes, '*' = blob below the glyph
   python measure.py strokes PAGE y0 y1 x0 x1                   glyph boxes with % covered by a supralinear stroke
   python measure.py reconcile PAGE                             dots per line on the image vs the EpiDoc reading
+  python measure.py spaces PAGE                                blank runs >= 14 px per line vs spaces in the reading
+  python measure.py joins  PAGE                                every line's x 880-1020 strip (where 4x halves meet)
 """
 from __future__ import annotations
 
@@ -123,7 +125,49 @@ def reconcile(page):
         print(f"l.{line['n']:2} reading={want:2} image={len(blobs):2}{flag}")
 
 
+def spaces(page):
+    """Word division check. Blank runs >= 14 px in the x-height band (y-10..y+8) against the spaces of the
+    Leiden line. Expected, explained differences: the legs of an enlarged letter (ⲡ, ⲙ) give one extra run;
+    each dot of a dot run is separated by a run; an unmarked wide blank counts once; brackets can narrow a space below 14 px; margin numerals in title lines."""
+    from layers import page_layers
+    lay = page_layers(TEI_DIR / f"keph_p{page}.xml")
+    g = gray(page)
+    for line in lay["lines"]:
+        y = (line["zone"][1] + line["zone"][3]) // 2
+        ink = (g[y - 10:y + 8, 480:1440] < INK).any(axis=0)
+        xs = np.where(ink)[0]
+        runs = [(480 + a, int(b - a)) for a, b in zip(xs[:-1], xs[1:]) if b - a >= 14]
+        want = len(line["leiden"].split()) - 1  # an unmarked blank (em space) counts as one separator
+        flag = "" if len(runs) == want else "  <<< " + " ".join(f"{x}/{w}" for x, w in runs)
+        print(f"l.{line['n']:2} reading={want:2} image={len(runs):2}{flag}")
+
+
+def joins(page):
+    """One sheet with each line's x 880-1020 strip at 2.2x, two columns. Letters at the edge of the left and
+    right 4x halves are easily read twice or dropped; compare this sheet with the draft."""
+    from layers import page_layers
+    lay = page_layers(TEI_DIR / f"keph_p{page}.xml")
+    im = Image.open(IMAGES / f"keph_p{page}.jpg").convert("L")
+    strips = []
+    for line in lay["lines"]:
+        y = (line["zone"][1] + line["zone"][3]) // 2
+        c = im.crop((880, y - 20, 1020, y + 16))
+        strips.append((line["n"], c.resize((int(c.width * 2.2), int(c.height * 2.2)), Image.LANCZOS)))
+    w, h = strips[0][1].width, strips[0][1].height + 16
+    half = (len(strips) + 1) // 2
+    sheet = Image.new("L", (2 * w + 20, half * h), 255)
+    d = ImageDraw.Draw(sheet)
+    for i, (n, c) in enumerate(strips):
+        x0, y0 = (i // half) * (w + 20), (i % half) * h
+        d.text((x0 + 2, y0), f"l.{n}", fill=0)
+        sheet.paste(c, (x0, y0 + 14))
+    CROPS.mkdir(parents=True, exist_ok=True)
+    sheet.save(CROPS / f"joins_{page}.png")
+    print(CROPS / f"joins_{page}.png", sheet.size)
+
+
 if __name__ == "__main__":
     cmd, *args = sys.argv[1:]
-    fn = {"zoom": zoom, "bands": bands, "dots": dots, "assign": assign, "strokes": strokes, "reconcile": reconcile}[cmd]
+    fn = {"zoom": zoom, "bands": bands, "dots": dots, "assign": assign, "strokes": strokes, "reconcile": reconcile,
+          "spaces": spaces, "joins": joins}[cmd]
     fn(args[0], *(args[1:] if cmd in ("zoom",) else map(int, args[1:])))
