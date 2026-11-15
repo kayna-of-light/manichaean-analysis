@@ -47,7 +47,7 @@ re-checked).
 | 030 | 5 → 6 | 36 | read | a15d578 | kephalaion 6 opens l. 12, title ll. 13–16; correction ⟨ⲙ⟩ l. 2; colon after ⲛⲁⲛⲏϩⲉ l. 11 in a note only |
 | 031 | 6 | 33 | read | 993ad88 | dotted ϣ l. 8; «ⲡⲉⲓϣ» sic l. 7 ("unbekannt"); correction ⟨ⲡ⟩ l. 8 |
 | 032 | 6 | 34 | read | 06bd1ea | bare `[` l. 23; «ϭⲓⲣⲁϥ ϭⲓⲣⲉ» sic l. 22; no dotted ϣ |
-| 033 | 6 | 35 | read | 46373f3 | dotted ϣ l. 23; deletion point over ⲧ l. 12 → ⟦ⲧ⟧; corrections ⟨ⲛ⟩ ll. 15, 27 |
+| 033 | 6 | 35 | read | 116d554 | dotted ϣ l. 23; deletion point over ⲧ l. 12 → ⟦ⲧ⟧; corrections ⟨ⲛ⟩ ll. 15, 27; l. 20 ⲉⲧϫⲏϥ corrected 2026-11-15 |
 | 034 | 6 → 7 | 33 | read | 9ca08cb | kephalaion 7 opens l. 13, title ll. 14–15; "korrigiert; gemeint ist" l. 8 (see §2); point after ϣⲁⲁⲛⲏϩⲉ l. 12 in a note only |
 | 035 | 7 | 34 | read | b12393c | nomen-sacrum overline printed over ⲡⲉ, not ⲓⲏⲥ (l. 13); unclosed `[` + dots + extant text l. 31 |
 | 036 | 7 → 8 | 35 | read | b12393c | kephalaion 8 opens l. 27, title ll. 28–29; colon end of kephalaion 7 l. 26 (note only) |
@@ -66,6 +66,8 @@ Next unread page: **040**.
 ## 2. Open items
 
 - **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–039 (status "read").
+  033 first: 33.20 had two letters the page does not print (ⲉⲧϩⲁⲥϫⲏϥ for ⲉⲧϫⲏϥ, found 2026-11-15). Every audit now
+  includes `measure.py joins` and `spaces` (skill step 7a), which the pages before 035 never had.
 - p. 019: our note reads the footnote on ⲥⲏⲣ as "ⲥ̄ⲏ̄ⲣ̄ no overline"; check the footnote wording on the scan during its next
   audit.
 
@@ -150,7 +152,7 @@ Strict method:
 - Judgements fixed in the vocabulary: abrasion or destruction named → lost; smearing, illegible, traces, not read →
   illegible; inside printed brackets → lost (the bracket wins over the word, e.g. 21.4 traces in brackets).
   A bare `[` at a line start beside a braced statement (21.8–11) = lost beginning + the statement for the rest.
-- Large middle dot printed in the text (29.26 "ⲁⲧⲡⲉ • ⲉϥⲙⲟⲩⲣ") → `·` (g type middot) + layout note.
+- Large middle dot printed in the text (29.26 "ⲁⲧⲡⲉ • ⲉϥⲙⲟⲩⲣ") → `·` (g type middot) + layout note (see §7).
 - Bracket printed after a letter with no opener (28.22 dots, 29.28 "ⲡ]") → `‡` after the dots/letter, note `bracket`;
   the letter before it is encoded as read.
 - Unclosed `[` followed by letters and dots (28.31, 28.33) → the letters go into the restoration, closed at line end.
@@ -167,11 +169,12 @@ Strict method:
 - Footnote formulas decided 2026-11-14 (now in the vocabulary as German variants of existing ids, so no page changes):
   "vollständig zerstört" (28.24) → `destroyed`; "Kaum …" (29.13) and "korrigiert; gemeint ist …" (34.8) →
   `app.conjecture` with the wording and its strength in the note.
-- Printed punctuation that is not `:—` — a colon (30.11) or a point (34.12) after the last word of a kephalaion, an
-  apostrophe after a letter (27.1) — is not encoded in the text (a `.` would read as an illegible letter); it gets a
-  `layout` note with its position. Reconcile flags it; that is expected.
-- Small solid rectangles at a line end on the scan (31.28, 33.20) are printing marks, not text: not encoded; `print`
-  note with position.
+- **Every printed mark that is not a letter is encoded where it stands as a sign** (decided 2026-11-15, replacing the
+  earlier "note only" rule): colon `⁚` (30.11, 36.26), point `∙` (34.12), apostrophe `ʼ` (27.1), cross `†` (39.19),
+  block `▪` (31.28, 33.20), large middle dot `·` (29.26). Spacing as printed (a colon closer than a word space is written
+  without a space). A shape that fits none of these gets a new type in `model.SIGNS` and `decompile.SIGNS` and a row in
+  §7 — never a note only, so that `signs.py` finds every occurrence. The note keeps the position and measurements.
+  Reconcile may flag a sign below line centre; that is expected.
 - Unclosed `[` followed by a dot run and then extant text (letters with their own sublinear dots, or the line's ordinary
   text; 35.31, 39.32) → the gap is closed after the last dot, note `bracket`. (Contrast 28.31/28.33, where the letters
   after the bracket are restorations.)
@@ -185,6 +188,7 @@ Strict method:
 - "leer" inside a line (39.7, 39.24) → `vac.` at its place, like "leer" at a line end.
 - Chapter-opening marginal numerals are attached to the line their glyph stands level with (34.15), or, when they stand
   between two lines, to the upper one (30.14).
+
 
 ---
 
@@ -247,3 +251,39 @@ Strict method:
   in a separate commit (`b12393c`, notes only). Tool: `measure.py spaces` and `joins` (`4f320c5`); skill step 7a
   (`9a66f59`); vocabulary: "sic für", "sic, lies", "lies …?" (ids unchanged). All 33 pages re-validated "ok" after each
   change. Images downloaded from Drive (1553×2258); Pillow again needed `--ignore-installed`. No pages skipped.
+- **2026-11-15** — With the user, after PR #8: printed signs that were in notes only (apostrophe 27.1, colons 30.11/36.26,
+  blocks 31.28/33.20, point 34.12, cross 39.19) are now encoded as `<g>` signs (`b5dbb19` tool, `bd28e3f` pages; no
+  letter changes) and listed by `signs.py`; new §7 register with open questions; the user's observation that the Coptic
+  was drawn by hand with templates is recorded there. `decompile.py` fix (`f0787af`): "[x(?)][y]" (27.12) had been
+  merged into one restoration; decompile → compile is now identical on all 34 pages. While measuring 33.20 a reading
+  error was found and corrected (`116d554`): ⲉⲧϫⲏϥ, not ⲉⲧϩⲁⲥϫⲏϥ; 033 moves to the front of the audit queue (§2).
+  Images 027, 030, 031, 033, 034 downloaded from Drive (1553×2258). All pages validate "ok".
+
+
+---
+
+## 7. Signs and patterns to study
+
+Marks the reading encodes but does not yet understand. The aim is to collect occurrences until a pattern shows; do not
+guess a meaning before then. `python signs.py` lists every occurrence (page.line, neighbouring words, line end, end of
+kephalaion, preceding blank). After each session, update the counts below and write down any pattern the list now
+shows, with the occurrences that support it.
+
+| Type | Draft | Occurrences (2026-11-15) | What the occurrences show so far |
+|---|---|---|---|
+| middot | `·` | 10.34, 29.26, 32.9, 159.33 | mid-line between words (3×); once at a line and kephalaion end (159.33) |
+| colon | `⁚` | 30.11, 36.26 | both at the end of a kephalaion, after the last word, no dash (contrast the end mark `:—`) |
+| point | `∙` | 34.12 | end of a kephalaion, after a word space |
+| block | `▪` | 31.28, 33.20 | line end, mid-kephalaion; may be a printing mark, not the manuscript's |
+| cross | `†` | 39.19 | line end after a 64 px blank, mid-kephalaion (9) |
+| apostrophe | `ʼ` | 27.1 | after ⲧ at the start of a line |
+
+Open questions: Are colon and point two forms of one chapter-end sign? Does the cross recur at section breaks? Are the
+blocks the printer's or the editors'? Do the middle dots separate units of sense?
+
+**About the printed Coptic (user observation, 2026-11-15).** The Coptic of this edition appears to be hand-drawn with
+letter templates (stencils), not set in metal type. This explains why overlines vary in length and position (35.13 bar
+displaced onto ⲡⲉ; strokes near the 50 % mark on ⲙⲛ, ϩⲛ, ⲛⲛ) and why some strokes and dots look blurred. Decision:
+the ≥ 50 % rule stays, because it keeps the encoding the same on every page, and every measured percentage stays in
+the `print` notes so that the borderline cases (45–55 %) can be re-judged together later. Shapes that vary between
+copies of one letter (ϯ 17 px wide, the 39.19 cross 23 px) are compared on the same page.
