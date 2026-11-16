@@ -59,18 +59,23 @@ re-checked).
 | 042 | 9 → 10 | 35 | read | 67e8a8e | kephalaion 10 opens l. 24, title ll. 25–26; dotted ϣ l. 29; «ⲙⲙϣⲙϣⲉⲧⲉ» sic l. 4; stroke over ⲙⲛ covering neither by half l. 1 |
 | 043 | 10 → 11 | 35 | read | 12d1ea7 | kephalaion 11 opens l. 22, title ll. 23–24; dotted ϣ l. 2; ⟨ⲡ⟩ l. 5, ⟨ⲓ⟩ l. 24; blank inside one restoration l. 34 |
 | 044 | 11 → 12 | 35 | read | 529cb7e | kephalaion 12 opens l. 19, title ll. 20–22; l. 31 "unlesbar (abgerieben)" (new id); «ⲡⲁⲣⲁⲡⲉϩⲟⲩⲧ» sic l. 21; ⟨ⲉ⟩ l. 16 |
+| 045 | 12 → 13 | 33 | read | d8dae6f | kephalaion 13 opens l. 16, title ll. 17–18; ll. 20–24 "bis auf geringe Spuren zerstört" (new id); unpaired `]` ll. 9, 10, 13; rejected footnote l. 28 |
+| 046 | 13 → 14 | 33 | read | c35d7c0 | kephalaion 14 opens l. 13, title ll. 14–15; ll. 21–24 "bis auf ganz geringe Spuren zerstört" (new id); dotted ϣ l. 16; very faint dots ll. 1–12 |
+| 047 | 14 → 15 | 35 | read | e1d2c42 | kephalaion 15 opens l. 22, title ll. 23–25; l. 6 "nur geringe Spuren"; ll. 34–35 "nicht gelesen"; stroke touching ⲃ l. 31 |
+| 048 | 15 | 35 | read | 7e6a64b | \ⲡⲙⲟⲩ/ l. 20 (footnote "über der Zeile"); l. 30 "unlesbar" + unpaired `]`; ll. 11, 22, 23 dots below the ink threshold |
 | 049 | 15 → 16 | 35 | needs audit | 1e28143 | pilot page |
+| 050 | 16 | 33 | read | 2b06aa0 | correction ⟨ⲓ⟩ l. 25; dotted ϣ l. 25; two ⲡⲛⲁ bars beginning on the second ⲡ (ll. 23, 26) |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **045**.
+Next unread page: **051**.
 
 ---
 
 ## 2. Open items
 
-- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–044 (status "read").
+- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–048, 050 (status "read").
   033 first: 33.20 had two letters the page does not print (ⲉⲧϩⲁⲥϫⲏϥ for ⲉⲧϫⲏϥ, found 2026-11-15). Every audit now
   includes `measure.py joins` and `spaces` (skill step 7a), which the pages before 035 never had.
 - p. 019: our note reads the footnote on ⲥⲏⲣ as "ⲥ̄ⲏ̄ⲣ̄ no overline"; check the footnote wording on the scan during its next
@@ -148,6 +153,13 @@ Strict method:
    8–10× zoom.
 19. **Footnotes are read in full before the notes are written (2026-11-15).** On 041–044 every page had a footnote that
    changed the text (added-above letters, corrections, sic); read the footnote block at 2× together with the last lines.
+20. **Dots below the ink threshold (2026-11-15, 048).** On some pages whole dot rows are printed so pale that `measure.py dots`
+   finds only a few blobs or none (048.11, 22, 23; 046.1–12); one dot can also fall apart into 1-px pieces (050.11 x 973).
+   Count such rows only on 4× sheets in two overlapping halves, converting strip x to page x, and say in the `print` note that
+   the count rests on the zoom. Never take the tool count.
+21. **The print preview catches what the strips miss (2026-11-15).** On 050 the preview showed a letter written that the page
+   does not print (050.2 ⲁⲣⲱⲟⲩ for ⲁⲣⲱⲩ) and a dot run one short (050.11). Compare every line of the preview with the scan
+   before the review image, and re-zoom at 6–8× wherever the two differ.
 
 ---
 
@@ -219,6 +231,21 @@ Strict method:
     "für … ist der Raum zu knapp" and "Die Spuren passen nicht zu" → `rejected`; "sic mit …" and "scheint so dazustehen
     (unverständlich)" → `sic`; "Rest zerstört" → `destroyed`. New id `illegible-abraded` for "unlesbar (abgerieben)"
     (44.31): abrasion named, so lost.
+- Decided 2026-11-15 (pages 045–050):
+  - Braced "bis auf geringe Spuren zerstört" (45.20–24) → `⁅=destroyed-traces:line⁆` on every line; "bis auf ganz geringe
+    Spuren zerstört" (46.21–24) → `destroyed-traces-faint`. Destruction is named, so both are lost (new vocabulary ids).
+    "nur geringe Spuren" (47.6) → `traces`. "die Spuren scheinen nicht recht zu x zu passen" (45.28) → `app.rejected`.
+  - A restored letter printed after a braced statement on the same line (45.24 "[ⲙ̄]") → the statement, then the restoration.
+  - An opening bracket before an enlarged letter with no closing bracket, followed by an extant dotted letter and a second
+    opening bracket (45.26 "[Ⲡⲙ̣ⲁϩ[ⲥⲛⲉⲩ") → the first bracket is closed after the enlarged letter (`[^ⲡ]ⲙ_ⲁϩ[…]`), `bracket` note.
+  - An editors' statement at a line start followed by an unpaired `]` and extant text (48.30 "unlesbar ]ⲙ̣ⲡⲕⲉⲕⲉ") →
+    `⁅=ID⁆ ‡text`: the statement covers what precedes the bracket.
+  - A single dot on the baseline after the last word, spaced like the illegible dots of the same line (45.33 "ⲡⲉ .") → one
+    illegible letter, not a `point` sign.
+  - A single-letter stroke that covers just under half of its only letter (46.15 ⲙ 48 %) is encoded on that letter, like
+    §3.17: a printed stroke is never dropped; the % goes in the `print` note.
+  - A nomen-sacrum bar over ⲡⲛⲁ that starts on the second ⲡ of ⲙⲡⲡⲛⲁ (50.23, 50.26: first ⲡ 0 %) → encoded on ⲡⲛⲁ only.
+  - A footnote "x über der Zeile" where the edition prints x in the line (48.20 ⲡⲙⲟⲩ) → `\x/` + `app.added-above`, as 019.29.
 
 
 ---
@@ -301,6 +328,14 @@ Strict method:
   six German variants and one new id (`illegible-abraded`), each in its own commit (`da8be69`, `d07f18b`, `9775ee6`,
   `d6ba4f4`, `c01ac36`, `c237d59`). Method: §3 items 17–19; encoding decisions in §4 (2026-11-15). Images downloaded from
   Drive (1553×2258). No pages skipped. The worker restarted once during 044 (see §5).
+- **2026-11-15** — Routine run (third): read 045, 046, 047, 048, 050 on `reading/2026-11-15` (049 was read before as a pilot
+  page). All five validate "ok"; all 44 pages re-validated after the vocabulary change. Reconcile flags explained: dots of area
+  < 6 or below the ink threshold (most of 046–048, 050), dot rows at the zone centre, umlauts of German statements (046.22,
+  046.26, 047.34), feet of marginal numerals (046.14), a dotted restored letter (046.17). Dotted ϣ accepted after 8× comparison:
+  046.16, 050.25; none on 045, 047, 048. Caught before commit by the print preview: 050.2 ⲁⲣⲱⲟⲩ → ⲁⲣⲱⲩ, 050.11 a dot run one
+  short. Vocabulary (`8b33497`): new ids `destroyed-traces`, `destroyed-traces-faint`; German variants "nur geringe Spuren"
+  (traces) and "die Spuren scheinen nicht recht zu … zu passen" (rejected). Method §3 items 20–21; encoding decisions in §4.
+  No new sign types. Images downloaded from Drive (1553×2258); Pillow again needed `--ignore-installed`. No pages skipped.
 
 
 ---
@@ -323,6 +358,7 @@ shows, with the occurrences that support it.
 
 Kephalaia 9, 10 and 11 end on 042.23, 043.21 and 044.18 with no printed end sign (two of the three end lines are
 damaged), so far the colon/point at a chapter end is the exception, not the rule (30.11, 34.12, 36.26 against 042–044).
+Kephalaia 12, 13 and 14 end on 045.15, 046.12 and 047.21 with no end sign either (045.15 and 047.21 end in "leer").
 
 Open questions: Are colon and point two forms of one chapter-end sign? Does the cross recur at section breaks? Are the
 blocks the printer's or the editors'? Do the middle dots separate units of sense?

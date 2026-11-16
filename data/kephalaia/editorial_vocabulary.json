@@ -13,6 +13,18 @@
       "reason": "lost",
       "judgement": "The editors use both wordings (13.14–15 'völlig', 22.4–8 'ganz') for the same statement; one id. Encoded as a loss: the editors give no letters."
     },
+    "destroyed-traces": {
+      "de": ["bis auf geringe Spuren zerstört"],
+      "en": "destroyed except for slight traces",
+      "reason": "lost",
+      "judgement": "First met at 45.20–24 under a brace. The editors name destruction and say that only traces remain, without giving letters: a loss (destruction named). Kept apart from 'destroyed-almost' because the editors name the traces, as 'traces' is kept apart from 'illegible'."
+    },
+    "destroyed-traces-faint": {
+      "de": ["bis auf ganz geringe Spuren zerstört"],
+      "en": "destroyed except for very slight traces",
+      "reason": "lost",
+      "judgement": "First met at 46.21–24 under a brace. As 'destroyed-traces', lower degree of the traces; kept apart on the model of 'traces' / 'traces-faint'."
+    },
     "destroyed-abraded": {
       "de": ["zerstört und abgerieben"],
       "en": "destroyed and rubbed off",
@@ -68,10 +80,10 @@
       "judgement": "A statement about the editors' work, not about the manuscript: the writing may be legible. Encoded as illegible (nothing given), with the id preserving the difference from 'unlesbar'."
     },
     "traces": {
-      "de": ["geringe Spuren"],
+      "de": ["geringe Spuren", "nur geringe Spuren"],
       "en": "slight traces",
       "reason": "illegible",
-      "judgement": "Ink traces visible but no letters identifiable."
+      "judgement": "Ink traces visible but no letters identifiable. 'nur geringe Spuren' (47.6, a whole line) is the same statement."
     },
     "traces-faint": {
       "de": ["ganz geringe Spuren"],
@@ -126,9 +138,9 @@
       "judgement": "The three wordings are used interchangeably; one id."
     },
     "rejected": {
-      "de": ["Nicht", "nicht", "für … ist der Raum zu knapp", "Die Spuren passen nicht zu"],
+      "de": ["Nicht", "nicht", "für … ist der Raum zu knapp", "Die Spuren passen nicht zu", "die Spuren scheinen nicht recht zu … zu passen"],
       "en": "a reading the editors exclude",
-      "judgement": "'für x ist der Raum zu knapp' (41.18) excludes the restoration x because the gap is too short: x is the apparatus reading, the reason goes in the note; the text keeps the printed gap. 'Die Spuren passen nicht zu x' (43.5) excludes x on the evidence of the traces: x is the apparatus reading; the text keeps what is printed."
+      "judgement": "'für x ist der Raum zu knapp' (41.18) excludes the restoration x because the gap is too short: x is the apparatus reading, the reason goes in the note; the text keeps the printed gap. 'Die Spuren passen nicht zu x' (43.5) excludes x on the evidence of the traces: x is the apparatus reading; the text keeps what is printed. 'die Spuren scheinen nicht recht zu x zu passen' (45.28) is the same exclusion, softened; the softening goes in the note."
     },
     "traces-report": {
       "de": ["Spuren von"],
