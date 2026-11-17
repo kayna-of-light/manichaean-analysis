@@ -16,7 +16,8 @@ HALF = 21
 MARKS = {"supplied-lost": ("[", "]"), "supplied-omitted": ("⟨", "⟩"), "surplus": ("{", "}"), "add": ("\\", "/"),
          "sic": ("«", "»"), "del": ("⟦", "⟧")}
 SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡",
-         "colon": "⁚", "point": "∙", "apostrophe": "ʼ", "cross": "†", "block": "▪"}
+         "colon": "⁚", "point": "∙", "apostrophe": "ʼ", "cross": "†", "block": "▪",
+         "high-point": "˙"}
 
 
 def _key(c) -> str:
