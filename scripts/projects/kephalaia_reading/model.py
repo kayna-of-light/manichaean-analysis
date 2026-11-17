@@ -78,7 +78,8 @@ SIGNS = {">": "diple", "<": "diple-reversed", "·": "middot",
          "∙": "point",       # a single point at or below line centre, smaller than the middle dot (34.12)
          "ʼ": "apostrophe",  # an apostrophe-like mark after a letter (27.1)
          "†": "cross",       # a free-standing cross with equal arms, not the letter ϯ (39.19)
-         "▪": "block"}       # a small solid rectangle at a line end (31.28, 33.20)
+         "▪": "block",       # a small solid rectangle at a line end (31.28, 33.20)
+         "˙": "high-point"}  # a small round point at the top of the x-height, right after a letter (58.29)
 
 
 def is_coptic(ch: str) -> bool:
