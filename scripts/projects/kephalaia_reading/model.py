@@ -79,7 +79,8 @@ SIGNS = {">": "diple", "<": "diple-reversed", "·": "middot",
          "ʼ": "apostrophe",  # an apostrophe-like mark after a letter (27.1)
          "†": "cross",       # a free-standing cross with equal arms, not the letter ϯ (39.19)
          "▪": "block",       # a small solid rectangle at a line end (31.28, 33.20)
-         "˙": "high-point"}  # a small round point at the top of the x-height, right after a letter (58.29)
+         "˙": "high-point",  # a small round point at the top of the x-height, right after a letter (58.29)
+         "∾": "loop-mark"}   # two ascending loops joined at the foot under a bar, after the last word (62.27)
 
 
 def is_coptic(ch: str) -> bool:

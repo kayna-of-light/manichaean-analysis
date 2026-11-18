@@ -17,7 +17,7 @@ MARKS = {"supplied-lost": ("[", "]"), "supplied-omitted": ("⟨", "⟩"), "surpl
          "sic": ("«", "»"), "del": ("⟦", "⟧")}
 SIGNS = {"diple": ">", "diple-reversed": "<", "middot": "·", "dicolon-dash": "§", "unpaired-bracket": "‡",
          "colon": "⁚", "point": "∙", "apostrophe": "ʼ", "cross": "†", "block": "▪",
-         "high-point": "˙"}
+         "high-point": "˙", "loop-mark": "∾"}
 
 
 def _key(c) -> str:
