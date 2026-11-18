@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kephalaia of the Teacher, edition page 61: diplomatic and Leiden transcription</title>
+      </titleStmt>
+      <publicationStmt><p>manichaean-analysis working transcription.</p></publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="edition">Kephalaia (Manichäische Handschriften der Staatlichen Museen Berlin), ed. H. J. Polotsky and
+          A. Böhlig, Stuttgart: Kohlhammer, <biblScope unit="page">61</biblScope>. Restorations, sublinear dots,
+          gap counts and corrections are the editors'.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
+        measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
+      <tagsDecl>
+        <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
+      </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.correction"><catDesc>editors' correction ('read')</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category><category xml:id="tr.reading"><catDesc>a letter-identification decision taken on the zoom</catDesc></category></taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-11-18">Compiled from reading draft.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="surface" ulx="0" uly="0" lrx="1553" lry="2258">
+      <graphic url="output/projects/kephalaia_v2/coptic/images/keph_p061.jpg"/>
+      <zone xml:id="z-pagenum" ulx="1150" uly="192" lrx="1430" lry="234"/>
+      <zone xml:id="z-header" ulx="700" uly="249" lrx="1150" lry="291"/>
+      <zone xml:id="z1" ulx="440" uly="304" lrx="1430" lry="346"/>
+      <zone xml:id="z2" ulx="440" uly="347" lrx="1430" lry="389"/>
+      <zone xml:id="z3" ulx="440" uly="392" lrx="1430" lry="434"/>
+      <zone xml:id="z4" ulx="440" uly="429" lrx="1430" lry="471"/>
+      <zone xml:id="z5" ulx="440" uly="472" lrx="1430" lry="514"/>
+      <zone xml:id="z6" ulx="440" uly="510" lrx="1430" lry="552"/>
+      <zone xml:id="z7" ulx="440" uly="556" lrx="1430" lry="598"/>
+      <zone xml:id="z8" ulx="440" uly="594" lrx="1430" lry="636"/>
+      <zone xml:id="z9" ulx="440" uly="635" lrx="1430" lry="677"/>
+      <zone xml:id="z10" ulx="440" uly="677" lrx="1430" lry="719"/>
+      <zone xml:id="z11" ulx="440" uly="719" lrx="1430" lry="761"/>
+      <zone xml:id="z12" ulx="440" uly="757" lrx="1430" lry="799"/>
+      <zone xml:id="z13" ulx="440" uly="798" lrx="1430" lry="840"/>
+      <zone xml:id="z14" ulx="440" uly="842" lrx="1430" lry="884"/>
+      <zone xml:id="z15" ulx="440" uly="883" lrx="1430" lry="925"/>
+      <zone xml:id="z16" ulx="440" uly="923" lrx="1430" lry="965"/>
+      <zone xml:id="z17" ulx="440" uly="971" lrx="1430" lry="1013"/>
+      <zone xml:id="z18" ulx="440" uly="1012" lrx="1430" lry="1054"/>
+      <zone xml:id="z19" ulx="440" uly="1054" lrx="1430" lry="1096"/>
+      <zone xml:id="z20" ulx="440" uly="1094" lrx="1430" lry="1136"/>
+      <zone xml:id="z21" ulx="440" uly="1134" lrx="1430" lry="1176"/>
+      <zone xml:id="z22" ulx="440" uly="1178" lrx="1430" lry="1220"/>
+      <zone xml:id="z23" ulx="440" uly="1221" lrx="1430" lry="1263"/>
+      <zone xml:id="z24" ulx="440" uly="1259" lrx="1430" lry="1301"/>
+      <zone xml:id="z25" ulx="440" uly="1302" lrx="1430" lry="1344"/>
+      <zone xml:id="z26" ulx="440" uly="1340" lrx="1430" lry="1382"/>
+      <zone xml:id="z27" ulx="440" uly="1382" lrx="1430" lry="1424"/>
+      <zone xml:id="z28" ulx="440" uly="1422" lrx="1430" lry="1464"/>
+      <zone xml:id="z29" ulx="440" uly="1469" lrx="1430" lry="1511"/>
+      <zone xml:id="z30" ulx="440" uly="1511" lrx="1430" lry="1553"/>
+      <zone xml:id="z31" ulx="440" uly="1553" lrx="1430" lry="1595"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="edition" xml:lang="cop" xml:space="preserve">
+      <ab>
+        <pb n="61" facs="#surface"/>
+        <milestone unit="kephalaion" n="19" type="continued"/>
+        <fw type="pageNum" rend="framed" facs="#z-pagenum"><num value="61"><supplied reason="lost">ⲝⲁ</supplied></num></fw>
+        <fw type="header" facs="#z-header"><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡⲥⲁϩ</supplied></fw>
+        <lb n="1" facs="#z1"/><gap reason="illegible" quantity="29" unit="character"/>
+        <lb n="2" facs="#z2"/><gap reason="lost" quantity="3" unit="character"/><supplied reason="lost">ϣⲁ</supplied>ⲙⲧ <hi rend="supraline">ⲙ</hi>ⲡⲟⲗⲉⲙ<unclear>ⲟⲥ</unclear> <gap reason="illegible" quantity="14" unit="character"/>
+        <lb n="3" facs="#z3"/><gap reason="lost" quantity="3" unit="character"/>ⲁⲡⲥⲏⲩ ⲉⲧⲁϥ <gap reason="illegible" quantity="17" unit="character"/>
+        <lb n="4" facs="#z4"/><gap reason="lost" quantity="3" unit="character"/> <gap reason="illegible" quantity="1" unit="character"/> ⲉⲧ<hi rend="supraline">ⲛ</hi>ⲧⲡⲉ <gap reason="illegible" quantity="18" unit="character"/>
+        <lb n="5" facs="#z5"/><gap reason="lost" quantity="8" unit="character"/> ⲟⲩ ⲁϫ<hi rend="supraline">ⲛ</hi> ⲧ<gap reason="lost" quantity="14" unit="character"/>
+        <lb n="6" facs="#z6"/><gap reason="lost" quantity="7" unit="character"/> <gap reason="illegible" quantity="3" unit="character"/> ⲕⲟⲥⲙⲟ<unclear>ⲥ</unclear> <space extent="unknown" unit="character"/>
+        <lb n="7" facs="#z7"/><gap reason="lost" quantity="12" unit="character"/><supplied reason="lost"> ⲧⲙⲁϩ</supplied>ⲥ<hi rend="supraline">ⲛ</hi>ⲧⲉ ⲧⲉ ⲧⲁⲡⲙⲁϩ<supplied reason="lost">ϣⲁⲙⲧ</supplied>
+        <lb n="8" facs="#z8"/><supplied reason="lost">ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ </supplied><gap reason="lost" quantity="8" unit="character"/><supplied reason="lost"> ⲁϥ</supplied>ⲟⲩⲱⲛ<hi rend="supraline" rendition="#oblique">ϩ</hi> <unclear>ⲁ</unclear><supplied reason="lost">ⲃⲁⲗ</supplied> <hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><supplied reason="lost">ⲧⲉϥ</supplied>
+        <lb n="9" facs="#z9"/><supplied reason="lost">ϩⲓⲕⲱⲛ</supplied> <gap reason="illegible" quantity="13" unit="character"/> ⲁϥ<gap reason="lost" quantity="6" unit="character"/>
+        <lb n="10" facs="#z10"/><gap reason="lost" quantity="10" unit="character"/><supplied reason="lost"> ⲁ</supplied><unclear>ⲣ</unclear>ⲭⲟⲛⲧⲓⲕⲏ ⲁϥⲣ<gap reason="lost" quantity="7" unit="character"/>
+        <lb n="11" facs="#z11"/><gap reason="lost" quantity="8" unit="character"/> <gap reason="illegible" quantity="2" unit="character"/> ⲏⲙⲁ ⲉⲧⲁⲙ <gap reason="illegible" quantity="9" unit="character"/>
+        <lb n="12" facs="#z12"/><gap reason="illegible" quantity="25" unit="character"/>
+        <lb n="13" facs="#z13"/><gap reason="illegible" quantity="13" unit="character"/> <unclear>ⲁ</unclear>ⲃⲁⲗ <hi rend="supraline">ⲛ</hi>ⲧⲟⲟ<unclear>ⲧⲟⲩ</unclear> <gap reason="lost" quantity="5" unit="character"/>
+        <lb n="14" facs="#z14"/><gap reason="illegible" quantity="12" unit="character"/> ⲟⲩⲛ ⲧⲉ ⲧⲉ<hi rend="diaeresis">ⲓ</hi> ⲉⲧⲁ ⲡ <gap reason="illegible" quantity="5" unit="character"/>
+        <lb n="15" facs="#z15"/><gap reason="illegible" quantity="11" unit="character"/> <supplied reason="lost">ⲧⲉϥ</supplied><unclear>ϩⲓ</unclear>ⲕⲱⲛ ⲉⲧ<hi rend="supraline"><unclear>ⲣ</unclear></hi><supplied reason="lost" cert="low">ⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ</supplied><supplied reason="lost"> ϩ</supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost"> ⲡⲙⲁϩ</supplied>
+        <lb n="16" facs="#z16"/><supplied reason="lost">ϣⲁ</supplied><unclear>ⲙⲧ</unclear> <unclear>ⲙ</unclear>ⲡⲣⲉ<unclear>ⲥⲃⲉⲩⲧⲏⲥ</unclear> <space extent="unknown" unit="character"/>
+        <lb n="17" facs="#z17" rend="ekthesis"/><supplied reason="lost"><hi rend="large">ⲧ</hi>ⲙ</supplied><unclear>ⲁ</unclear>ϩϥⲧⲟⲉ ⲛϭ<supplied reason="lost">ⲓⲛ</supplied><unclear>ⲛⲟ</unclear>ⲩϩⲙⲉ ⲧⲉ ⲧⲁⲓ<hi rend="supraline">ⲏⲥ</hi> <supplied reason="lost">ⲡⲡ</supplied><hi rend="supraline"><supplied reason="lost">ⲣ</supplied></hi><supplied reason="lost"><hi rend="diaeresis">ⲓ</hi>ⲉ ⲉⲡⲉⲓⲇⲏ ⲛⲧⲁ</supplied>
+        <lb n="18" facs="#z18"/><supplied reason="lost">ⲣⲉϥ</supplied><unclear>ⲟⲩ</unclear><supplied reason="lost">ⲱ</supplied><hi rend="supraline">ⲛ</hi>ϩ ⲁⲃⲁⲗ ϩ<hi rend="supraline">ⲛ</hi> ⲧⲍⲱⲛⲏ ⲁϥⲟⲩⲱ<unclear>ⲛϩ</unclear> <supplied reason="lost">ⲧⲉϥϩⲓ</supplied>
+        <lb n="19" facs="#z19"/>ⲕⲱⲛ ⲁⲃⲁⲗ ⲛⲁϩⲣ<hi rend="supraline">ⲛ</hi> ⲛⲥⲧⲉⲣⲉⲱⲙⲁ ⲁϥⲥⲱⲧϥ <hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ</supplied>
+        <lb n="20" facs="#z20"/><unclear>ⲉⲧ</unclear><hi rend="supraline">ⲙ</hi>ⲡⲥⲁⲛⲧⲡⲉ <g type="middot">·</g> ⲁϥⲥⲙⲓⲛⲉ ⲙⲡⲁⲣⲭⲓⲇⲓⲕ <gap reason="illegible" quantity="6" unit="character"/>
+        <lb n="21" facs="#z21"/><unclear>ⲭⲏ</unclear> <hi rend="supraline">ⲛⲛ</hi>ⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ ⲁϥϫⲓ ⲡⲉⲓⲛⲉ <gap reason="illegible" quantity="7" unit="character"/>
+        <lb n="22" facs="#z22"/><gap reason="lost" quantity="4" unit="character"/><unclear>ⲧⲉ</unclear> ⲁϥⲧⲛⲧⲱ<hi rend="supraline">ⲛϥ</hi> ⲁⲛⲁⲅⲅⲉⲗⲟⲥ ϩ<hi rend="supraline">ⲛ</hi> ⲛ <gap reason="illegible" quantity="5" unit="character"/> ϣ<unclear>ⲁⲛ</unclear>
+        <lb n="23" facs="#z23"/>ⲧⲉϥⲙⲁϩⲉ ⲛϥⲉⲓ ⲁⲡⲓⲧⲛⲉ ⲁ<supplied reason="omitted">ⲡ</supplied>ⲡⲗⲁⲥⲙⲁ ⲛⲧⲥⲁⲣⲝ ⲛϥⲥⲙⲓⲛⲉ
+        <lb n="24" facs="#z24"/><supplied reason="lost">ⲛ</supplied><hi rend="supraline">ⲛ</hi>ⲕⲁϩ ⲙ<hi rend="supraline">ⲛ</hi> ⲛⲧⲱϭⲥ ⲧⲏⲣⲟⲩ ⲁϥϯⲟⲩ<supplied reason="lost">ⲱ</supplied> ϩⲱϥ ⲁⲛ
+        <lb n="25" facs="#z25"/><gap reason="illegible" quantity="3" unit="character"/> ⲙⲡⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ ⲛⲁⲧϯϣⲓ ⲁⲣⲁϥ ϩ<hi rend="supraline">ⲙ</hi> ⲡⲕⲱⲧ ⲧⲏⲣϥ ⲁϥϯ
+        <lb n="26" facs="#z26"/><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡⲧ</supplied>ⲱϩⲙⲉ <hi rend="supraline">ⲙⲛ</hi> ⲡⲥⲱⲧⲙⲉ <hi rend="supraline">ⲛⲛ</hi>ⲥⲧⲟⲓⲭⲉⲓⲱⲛ ⲁϥⲙⲟⲩ<hi rend="supraline">ⲛ</hi>ⲕ <hi rend="supraline">ⲛ</hi>
+        <lb n="27" facs="#z27"/><supplied reason="lost">ⲓ</supplied><hi rend="supraline">ⲏⲥ</hi> ⲡⲗⲓⲗⲟⲩ ⲁϥ<unclear>ⲃ</unclear><supplied reason="lost">ⲱ</supplied><unclear>ⲕ</unclear> <supplied reason="lost">ⲁϩ</supplied><unclear>ⲣⲏ</unclear><hi rend="diaeresis">ⲓ</hi> ⲁϥ<hi rend="supraline">ⲙ</hi>ⲧⲁⲛ <hi rend="supraline">ⲙ</hi>ⲙⲁϥ ϩⲙ <unclear>ⲡ</unclear>
+        <lb n="28" facs="#z28"/><supplied reason="lost">ⲕⲁϩ </supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><unclear>ⲟⲩⲁ</unclear><hi rend="diaeresis">ⲓ</hi>ⲛⲉ <space extent="unknown" unit="character"/> <hi rend="large">ⲧ</hi>ⲙⲁϩϯⲉ ⲛϭⲓⲛ<hi rend="supraline">ⲣ</hi>ⲃⲁⲗ
+        <lb n="29" facs="#z29"/><supplied reason="lost">ⲁⲃⲁ</supplied>ⲗ <unclear>ⲙ</unclear><supplied reason="lost">ⲛ ⲧ</supplied><unclear>ϭⲓ</unclear>ⲛⲛⲟⲩϩⲙⲉ <hi rend="supraline">ⲛ</hi>ⲧⲁⲥ ⲧⲉ ⲧⲁⲡⲡⲛⲁϭ <hi rend="supraline">ⲛ</hi>ⲥⲁϫⲛⲉ ⲉ
+        <lb n="30" facs="#z30"/><supplied reason="lost">ⲧⲉ ⲡⲧ</supplied>ⲱϩ<unclear>ⲙ</unclear><supplied reason="lost">ⲉ ⲡⲉ ⲙ</supplied><hi rend="supraline"><unclear>ⲛ</unclear></hi> <unclear>ⲡ</unclear>ⲥ<unclear>ⲱ</unclear>ⲧⲙⲉ ⲉⲡⲉⲓⲇⲏ ⲛⲧⲁϥ ϩⲱϥ ⲁⲛ
+        <lb n="31" facs="#z31"/><gap reason="lost" quantity="11" unit="character"/><supplied reason="lost"> ⲧ</supplied>ϯⲩⲭⲏ ⲁⲃⲁⲗ ϩ<hi rend="supraline">ⲙ</hi> <unclear>ⲡ</unclear><supplied reason="lost" cert="low">ⲕⲁϩ</supplied> <hi rend="supraline"><unclear>ⲛ</unclear></hi><unclear>ⲧ</unclear>ⲙ<hi rend="supraline"><unclear>ⲛ</unclear></hi><unclear>ⲧⲛ</unclear>ⲁϭ
+      </ab>
+      </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="23" ana="#app.correction"><rdg resp="#edition">ⲁ<supplied reason="omitted">ⲡ</supplied>ⲡⲗⲁⲥⲙⲁ</rdg><note>read ⲁ⟨ⲡ⟩ⲡⲗⲁⲥⲙⲁ ("Lies"): the article ⲡ is missing before ⲡⲗⲁⲥⲙⲁ</note></app>
+      </listApp>
+      </div>
+      <div type="commentary">
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲝⲁ] (top right) is printed in restoration brackets with a bar above and below as the frame (no strokes); the running title [ⲙⲡⲥⲁϩ] is restored in brackets, with a stroke over the restored ⲙ. Line 1 is a row of 29 illegible dots (556–1298, one of area 2 at 609) at the zone centre; `bands` does not list it and its y comes from `dots`. Every dot run on the page was counted from the `dots` x-positions between the bracket positions and checked on the 4× halves. Reconcile flags explained: l. 1 the dot at 609 has area 2; ll. 3, 5 (722, 748, 921, 948), 7, 22 (the four bracket dots) and 25 (the three opening dots) have dots at the zone centre (y ≤ centre + 1), which reconcile does not count; ll. 2 and 12 count a piece of the margin numeral (470); l. 15 counts the point of the printed "(?)" (1182/907); l. 16 counts a fragment of "leer" (912/946); l. 31 misses the first dot (565), which touches the bracket.</p>
+        <p n="2" ana="#tr.bracket">"[. . . ϣⲁ]": three dots and restored letters inside one bracket pair; encoded as one restoration (58.14).</p>
+        <p n="2" ana="#tr.print">Three dots in the bracket (564–617). Stroke over ⲙ of ⲙⲡⲟⲗⲉⲙⲟⲥ (751–763), dots under its ⲟ and ⲥ (862, 875). Fourteen illegible dots to the line end (904–1248).</p>
+        <p n="3" ana="#tr.print">Three dots in the bracket (563–616); seventeen illegible dots after ⲉⲧⲁϥ (822–1246). No strokes.</p>
+        <p n="4" ana="#tr.print">Three dots in the bracket (565–617), one illegible dot (653). Stroke over ⲛ of ⲉⲧⲛⲧⲡⲉ (710–722). Eighteen illegible dots (796–1248).</p>
+        <p n="5" ana="#tr.bracket">"[. . . . . . . . ⲟⲩ": the bracket is never closed; eight dots then extant text, so the gap is closed after the last dot (35.31). "ⲧ[" + fourteen dots to the line end, closed at the line end.</p>
+        <p n="5" ana="#tr.print">Eight dots (563–748), stroke over ⲛ of ⲁϫⲛ (865–876), fourteen dots after ⲧ[ (921–1266).</p>
+        <p n="6" ana="#tr.layout">"leer" after ⲕⲟⲥⲙⲟⲥ → vac.</p>
+        <p n="6" ana="#tr.print">Seven dots in the bracket (562–721), three illegible dots (757–809), dot under the final ⲥ of ⲕⲟⲥⲙⲟⲥ (917).</p>
+        <p n="7" ana="#tr.bracket">"[. . . ⲧⲙⲁϩ]": twelve dots and restored letters in one bracket pair, one restoration (58.14). "ⲧⲁⲡⲙⲁϩ[ϣⲁⲙⲧ" is not closed on the page; closed at the line end.</p>
+        <p n="7" ana="#tr.print">Twelve dots (563–854). Measured stroke over ⲥⲛ of ⲥⲛⲧⲉ (981–993, pixel row 561): ⲥ (967–977) 0 %, ⲛ (981–994) 100 %.</p>
+        <p n="8" ana="#tr.bracket">"[ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ . . . . . . . . ⲁϥ]": restored words and eight dots in one bracket pair, one restoration (58.14).</p>
+        <p n="8" ana="#tr.print">Eight dots (759–945). Oblique stroke over ϩ of ⲟⲩⲱⲛϩ (1084–1097), dot under ⲁ of ⲁ[ⲃⲁⲗ] (1126). Stroke over the restored ⲛ of [ⲛⲧⲉϥ] (1237–1248); the other bars found by `strokes` (1197–1205, 1223–1234) are bracket serifs.</p>
+        <p n="9" ana="#tr.print">Thirteen illegible dots (676–993); six dots after ⲁϥ[ (1064–1195), closed at the line end. The bar `strokes` reports at 1088–1098 is the descender of ϩ in l. 8.</p>
+        <p n="10" ana="#tr.bracket">"[. . . ⲁ]": ten dots and a restored letter in one bracket pair, one restoration (58.14). "ⲁϥⲣ[" + seven dots, closed at the line end.</p>
+        <p n="10" ana="#tr.print">Ten dots (563–803); dot under ⲣ of ]ⲣⲭⲟⲛⲧⲓⲕⲏ (862); seven dots after ⲁϥⲣ[ (1066–1224). No strokes.</p>
+        <p n="11" ana="#tr.print">Eight dots in the bracket (563–749), two illegible dots (784, 810), nine after ⲉⲧⲁⲙ (1000–1212). No strokes.</p>
+        <p n="12" ana="#tr.print">The whole line is 25 illegible dots (554–1191) at the zone centre; `bands` does not list it.</p>
+        <p n="13" ana="#tr.print">Thirteen illegible dots (553–871). Dot under ⲁ of ⲁⲃⲁⲗ (901); stroke over ⲛ of ⲛⲧⲟⲟⲧⲟⲩ (993–1004), dots under its second ⲧ, ⲟ and ⲩ (1058, 1075, 1088). Five dots after the open bracket (1130–1235), closed at the line end.</p>
+        <p n="14" ana="#tr.print">Twelve illegible dots (553–844); diaeresis over ⲓ of ⲧⲉⲓ; five illegible dots after ⲡ (1146–1253). No strokes.</p>
+        <p n="15" ana="#tr.bracket">"ⲉⲧⲣ̣̄[ⲟⲩⲁⲓ̈ⲛⲉ (?) ϩⲙ̄ ⲡⲙⲁϩ]": the query stands inside a longer restoration after its first word, so the restoration is split at it (27.12).</p>
+        <p n="15" ana="#tr.print">Eleven illegible dots (553–817). Dots under ϩ (912) and ⲓ (926, joined to its foot) of ]ϩⲓⲕⲱⲛ. Stroke over ⲣ of ⲉⲧⲣ (1041–1052) with a dot under it (1047); stroke over the restored ⲙ of ϩⲙ (1241–1253).</p>
+        <p n="16" ana="#tr.layout">"leer" after ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ → vac.</p>
+        <p n="16" ana="#tr.print">Dots under ⲙ and ⲧ of ]ⲙⲧ (616, 637), and under ⲙ, ⲥ, ⲃ, ⲉ, ⲩ, ⲧ, ⲏ, ⲥ of ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ (674, 739–836); the ⲉ after ⲣ carries none (8× zoom). No strokes; the bars `strokes` reports belong to l. 15.</p>
+        <p n="17" ana="#tr.layout">Line in ekthesis; the enlarged ⲧ of [ⲧⲙ]ⲁϩϥⲧⲟⲉ is restored in brackets.</p>
+        <p n="17" ana="#tr.print">Dot under ⲁ of ]ⲁϩϥⲧⲟⲉ; dots under ⲛ and ⲟ of ]ⲛⲟⲩϩⲙⲉ. Measured nomen-sacrum bar over ⲓⲏⲥ (984–1018, pixel row 970): ⲓ (981–985) only its right edge (about 25 %, 10× zoom), ⲏ (989–1003) 100 %, ⲥ (1006–1016) 100 %; encoded on ⲏⲥ (as 35.13, as printed). Stroke over the restored ⲣ (1088–1099) and diaeresis over the restored ⲓ of [ⲡⲡⲣⲓⲉ. ⲇ of ⲉⲡⲉⲓⲇⲏ is the triangle form.</p>
+        <p n="18" ana="#tr.print">Dots under ⲟ and ⲩ of ]ⲟⲩ[ⲱ]; stroke over ⲛ of ]ⲛϩ (684–694); stroke over ⲛ of ϩⲛ (852–863; ϩ 0 %); dots under ⲛ and ϩ of ⲁϥⲟⲩⲱⲛϩ.</p>
+        <p n="19" ana="#tr.print">Stroke over ⲛ of ⲛⲁϩⲣⲛ (796–807; ⲣ 0 %); stroke over the restored ⲙ (1130–1144) and diaeresis over the restored ⲓ of [ⲙⲡⲟⲩⲁⲓⲛⲉ].</p>
+        <p n="20" ana="#tr.print">Dots under ⲉ and ⲧ of ⲉⲧⲙⲡⲥⲁⲛⲧⲡⲉ (554, 569); stroke over its ⲙ (585–598). A large round point (area 40, 742/1111) at mid-height between ⲉⲧⲙⲡⲥⲁⲛⲧⲡⲉ and ⲁϥⲥⲙⲓⲛⲉ → middle dot (51.14). ⲇ of ⲙⲡⲁⲣⲭⲓⲇⲓⲕ is the triangle form (8×). Six illegible dots (1077–1209).</p>
+        <p n="21" ana="#tr.print">Dots under ⲭ and ⲏ (561, 582). Measured stroke over ⲛⲛ of ⲛⲛⲉⲕⲕⲗⲏⲥⲓⲁ (617–635, pixel row 1142): first ⲛ (610–624) 53 %, second ⲛ (628–641) 57 %; encoded on both. Seven illegible dots (1065–1224).</p>
+        <p n="22" ana="#tr.print">Four dots in the bracket (564–643), dots under ⲧ and ⲉ of ]ⲧⲉ (666, 681). Measured stroke over ⲛϥ of ⲁϥⲧⲛⲧⲱⲛϥ (826–842, pixel row 1183): ⲛ (819–832) 50 %, ϥ (836–848) 54 %; encoded on both. Measured stroke over ϩⲛ (1041–1061, row 1185): ϩ (1034–1046) 46 %, ⲛ (1053–1066) 64 %; encoded on ⲛ only. Five illegible dots (1125–1231); dots under ⲁ and ⲛ of ϣⲁⲛ (1282, 1301); the ϣ is undotted (8×).</p>
+        <p n="23" ana="#tr.print">No strokes and no dots (the bar `strokes` reports at 1259–1269 is the ϣ of l. 22).</p>
+        <p n="24" ana="#tr.print">Stroke over ⲛ of [ⲛ]ⲛⲕⲁϩ (589–602). Measured stroke over ⲙⲛ (703–714, pixel row 1266): ⲙ (682–699) 0 %, ⲛ (702–715) 100 %. ϯ of ⲁϥϯⲟⲩ[ⲱ] (its cross-bar is the 1105–1121 "stroke").</p>
+        <p n="25" ana="#tr.print">Three illegible dots at the line start. Diaeresis over ⲓ of ⲙⲡⲟⲩⲁⲓⲛⲉ; ϯ and an undotted ϣ (8×) in ⲛⲁⲧϯϣⲓ; stroke over ⲙ of ϩⲙ (1004–1016); ϯ at the line end.</p>
+        <p n="26" ana="#tr.print">Stroke over the restored ⲙ of [ⲙⲡⲧ] (564–577). Measured stroke over ⲙⲛ (731–751, pixel row 1348): ⲙ (724–740) 59 %, ⲛ (743–757) 60 %; both. Measured stroke over ⲛⲛ of ⲛⲛⲥⲧⲟⲓⲭⲉⲓⲱⲛ (909–927, row 1349): ⲛ (902–915) 50 %, ⲛ (920–933) 57 %; both. Stroke over ⲛ of ⲁϥⲙⲟⲩⲛⲕ (1180–1193) and over the final ⲛ (1235–1248). The other bars `strokes` reports (854–865, 985–998, 1071–1079) are descenders of l. 25.</p>
+        <p n="27" ana="#tr.print">Measured nomen-sacrum bar over ⲏⲥ (582–608, pixel row 1388): restored ⲓ (575–577) 0 %, ⲏ (581–594) and ⲥ (599–608) covered; encoded on ⲏⲥ (as printed, cf. l. 17). Dots under ⲃ of ⲁϥⲃ[ⲱ]ⲕ and under ⲕ; dots under ⲣ and ⲏ of [ⲁϩ]ⲣⲏⲓ, diaeresis over ⲓ. Stroke over ⲙ of ⲁϥⲙⲧⲁⲛ (1033–1046) and over the first ⲙ of ⲙⲙⲁϥ (1128–1140); no stroke over ⲙ of ϩⲙ. Dot under the final ⲡ.</p>
+        <p n="28" ana="#tr.layout">"leer" after ⲟⲩⲁⲓⲛⲉ → vac.; a new section then begins in mid-line with an enlarged ⲧ (ⲧⲙⲁϩϯⲉ).</p>
+        <p n="28" ana="#tr.print">Stroke over the restored ⲛ (637–649). Dots under ⲟ, ⲩ and ⲁ of ]ⲟⲩⲁⲓⲛⲉ (665, 679, 699; the dot under ⲩ was missed in the first draft and found from the reconcile flag, confirmed at 8×), diaeresis over ⲓ. ϯ in ⲧⲙⲁϩϯⲉ. Stroke over ⲣ of ⲛϭⲓⲛⲣⲃⲁⲗ (1223–1234).</p>
+        <p n="29" ana="#tr.print">Dot under ⲙ of ⲙ[ⲛ; dots under ϭ and ⲓ (joined to its foot) of ]ϭⲓⲛⲛⲟⲩϩⲙⲉ. Stroke over ⲛ of ⲛⲧⲁⲥ (925–937) and of ⲛⲥⲁϫⲛⲉ (1191–1201). No nomen-sacrum bar over ⲡⲛⲁ of ⲧⲁⲡⲡⲛⲁϭ (it is ⲡ-ⲛⲁϭ, not ⲡⲛⲁ).</p>
+        <p n="30" ana="#tr.print">Dot under ⲙ of ⲱϩⲙ[ (706); stroke over ⲛ of ⲙ]ⲛ (841–853) with a dot under it (845); dots under ⲡ and ⲱ of ⲡⲥⲱⲧⲙⲉ (881, 916).</p>
+        <p n="31" ana="#tr.bracket">"[. . . ⲧ]": eleven dots and a restored letter in one bracket pair, one restoration (58.14). "ⲡ[ⲕⲁϩ?]" → the whole restoration uncertain.</p>
+        <p n="31" ana="#tr.print">Eleven dots (565–831). ϯ in ]ϯⲩⲭⲏ. Stroke over ⲙ of ϩⲙ (1097–1109). Dot under ⲡ (1140). In ⲛⲧⲙⲛⲧⲛⲁϭ: strokes over the first ⲛ (1257–1269) and the second ⲛ (1315–1328), dots under ⲛ, ⲧ, ⲛ, ⲧ, ⲛ (1261, 1279, 1319, 1336, 1355); ⲙ undotted (8×). The bar at 1205–1218 is the descender of ϥ in l. 30.</p>
+        <p n="31" ana="#tr.reading">All extant ϣ on the page (ll. 22, 25) were checked at 8×; neither is dotted.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

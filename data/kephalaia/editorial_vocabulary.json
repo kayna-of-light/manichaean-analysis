@@ -109,6 +109,12 @@
       "reason": "lost",
       "cert": "low",
       "judgement": "Opening bracket followed by a question mark (14.15): a loss to the line end whose existence or extent the editors doubt; encoded with cert=low."
+    },
+    "blank-probable": {
+      "de": ["wohl leer"],
+      "en": "lost; probably left blank",
+      "reason": "lost",
+      "judgement": "First met at 64.32, printed inside brackets after the last word of a section ('[ wohl leer ]'). The surface is lost (the brackets win, as for 'traces' at 21.4); the editors judge that it was probably blank, as at a section end before a new enlarged initial. Encoded inside the brackets as a statement with reason lost; not as vac., because the blank is not seen. Kept apart from 'uncounted' because the editors say what they think stood there."
     }
   },
   "app": {
@@ -153,9 +159,9 @@
       "judgement": ""
     },
     "parallel": {
-      "de": ["siehe auch", "="],
+      "de": ["siehe auch", "=", "wie im Boh."],
       "en": "parallel or equivalent form elsewhere",
-      "judgement": ""
+      "judgement": "'x wie im Boh.' (64.22: ϣⲓ ⲙⲛ̄ ⲙⲉⲧⲣⲟⲛ) points to the same expression in Bohairic: a parallel; the lemma is the printed words, no reading, the language named in the note. The text is unchanged."
     },
     "stroke-absent": {
       "de": ["kein übergesetzter Strich zu sehen"],
@@ -176,6 +182,11 @@
       "de": ["klein"],
       "en": "written small in the line",
       "judgement": "'x klein' with no 'über der Zeile' (51.14 ⲁⲛ) reports letters written smaller than the rest of the line, in the line itself. The text carries them as printed; apparatus entry only. 'klein über der Zeile' stays added-above."
+    },
+    "page-condition": {
+      "de": ["Die linke Hälfte der Seite stark abgerieben"],
+      "en": "state of a part of the page (e.g. its left half heavily abraded)",
+      "judgement": "First met at 62.1 (footnote '1'): a statement about the state of a region of the page, not about one reading. The text keeps what the edition prints (brackets, dots and letters already encode the losses line by line); the statement is an apparatus entry at the line the footnote is attached to, with no lemma and no reading, the region and the degree in the note. It is not turned into gaps, because the editors still print letters in the region."
     },
     "added-above-later-hand": {
       "de": ["von spät. Hd. ü. d. Z."],

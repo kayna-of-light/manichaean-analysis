@@ -120,7 +120,7 @@ The scan is of the printed edition, not of the manuscript. Its sigla are the edi
 | `vac.` | vac. | `<space extent="unknown" unit="character"/>` |
 | `%` | wide blank | `<space type="unmarked" …/>` (blank the editors do not mark) |
 | `>` `<` `·` `§` `‡` | >  <  ·  :—  ] | `<g type="diple">`, `diple-reversed`, `middot`, `dicolon-dash`, `unpaired-bracket` |
-| `⁚` `∙` `ʼ` `†` `▪` `˙` | : . ’ + ■ ˙ | `<g type="colon">`, `point`, `apostrophe`, `cross` (not the letter ϯ), `block`, `high-point` (a small point at the top of the x-height, 58.29) |
+| `⁚` `∙` `ʼ` `†` `▪` `˙` `∾` | : . ’ + ■ ˙ ∾ | `<g type="colon">`, `point`, `apostrophe`, `cross` (not the letter ϯ), `block`, `high-point` (a small point at the top of the x-height, 58.29), `loop-mark` (two ascending loops joined at the foot under a bar, after the last word, 62.27) |
 
 Combine marks in this order after a letter: `_` then `*` then `-`/`+`/`'` (e.g. `ⲣ_-`, `ⲥ_+`).
 Spaces are the edition's word division (Coptic is scriptio continua); keep them exactly as printed.
