@@ -109,6 +109,12 @@
       "reason": "lost",
       "cert": "low",
       "judgement": "Opening bracket followed by a question mark (14.15): a loss to the line end whose existence or extent the editors doubt; encoded with cert=low."
+    },
+    "blank-probable": {
+      "de": ["wohl leer"],
+      "en": "lost; probably left blank",
+      "reason": "lost",
+      "judgement": "First met at 64.32, printed inside brackets after the last word of a section ('[ wohl leer ]'). The surface is lost (the brackets win, as for 'traces' at 21.4); the editors judge that it was probably blank, as at a section end before a new enlarged initial. Encoded inside the brackets as a statement with reason lost; not as vac., because the blank is not seen. Kept apart from 'uncounted' because the editors say what they think stood there."
     }
   },
   "app": {
@@ -153,9 +159,9 @@
       "judgement": ""
     },
     "parallel": {
-      "de": ["siehe auch", "="],
+      "de": ["siehe auch", "=", "wie im Boh."],
       "en": "parallel or equivalent form elsewhere",
-      "judgement": ""
+      "judgement": "'x wie im Boh.' (64.22: ϣⲓ ⲙⲛ̄ ⲙⲉⲧⲣⲟⲛ) points to the same expression in Bohairic: a parallel; the lemma is the printed words, no reading, the language named in the note. The text is unchanged."
     },
     "stroke-absent": {
       "de": ["kein übergesetzter Strich zu sehen"],
