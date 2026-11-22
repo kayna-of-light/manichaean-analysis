@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="en">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Kephalaia of the Teacher, edition page 82: diplomatic and Leiden transcription</title>
+      </titleStmt>
+      <publicationStmt><p>manichaean-analysis working transcription.</p></publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="edition">Kephalaia (Manichäische Handschriften der Staatlichen Museen Berlin), ed. H. J. Polotsky and
+          A. Böhlig, Stuttgart: Kohlhammer, <biblScope unit="page">82</biblScope>. Restorations, sublinear dots,
+          gap counts and corrections are the editors'.</bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>EpiDoc. Read by eye from the page image; gap counts, sublinear dots and supralinear stroke extents verified by
+        measurement on the image. A supralinear stroke is marked on every letter it covers by at least half its width.
+        Spaces are the edition's word division. Facsimile zones are measured line centres. The editors' German
+        statements are not transcribed: each is mapped to an id of the controlled vocabulary
+        data/kephalaia/editorial_vocabulary.json and carried as @ana (ed: statements in the text, app: apparatus
+        footnotes, tr: categories of the transcriber's commentary).</p>
+      <tagsDecl>
+        <rendition xml:id="oblique">supralinear stroke printed obliquely (over ⲥ and ϩ)</rendition>
+      </tagsDecl>
+      <classDecl>
+        <taxonomy xml:id="app"><category xml:id="app.added-above"><catDesc>written above the line</catDesc></category></taxonomy>
+        <taxonomy xml:id="tr"><category xml:id="tr.bracket"><catDesc>how an unbalanced or cross-line bracket of the edition is encoded</catDesc></category><category xml:id="tr.layout"><catDesc>layout: ekthesis, enlarged letters, unmarked blanks, marginal numerals, turnover, chapter opening</catDesc></category><category xml:id="tr.print"><catDesc>a printing observation: stroke shape or extent (measured), blur, specks, rules</catDesc></category><category xml:id="tr.reading"><catDesc>a letter-identification decision taken on the zoom</catDesc></category></taxonomy>
+      </classDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-11-22">Compiled from reading draft.</change>
+    </revisionDesc>
+  </teiHeader>
+  <facsimile>
+    <surface xml:id="surface" ulx="0" uly="0" lrx="1553" lry="2258">
+      <graphic url="output/projects/kephalaia_v2/coptic/images/keph_p082.jpg"/>
+      <zone xml:id="z-pagenum" ulx="1150" uly="188" lrx="1430" lry="230"/>
+      <zone xml:id="z-header" ulx="700" uly="234" lrx="1150" lry="276"/>
+      <zone xml:id="z1" ulx="440" uly="299" lrx="1430" lry="341"/>
+      <zone xml:id="z2" ulx="440" uly="342" lrx="1430" lry="384"/>
+      <zone xml:id="z3" ulx="440" uly="382" lrx="1430" lry="424"/>
+      <zone xml:id="z4" ulx="440" uly="428" lrx="1430" lry="470"/>
+      <zone xml:id="z5" ulx="440" uly="465" lrx="1430" lry="507"/>
+      <zone xml:id="z6" ulx="440" uly="506" lrx="1430" lry="548"/>
+      <zone xml:id="z7" ulx="440" uly="548" lrx="1430" lry="590"/>
+      <zone xml:id="z8" ulx="440" uly="588" lrx="1430" lry="630"/>
+      <zone xml:id="z9" ulx="440" uly="630" lrx="1430" lry="672"/>
+      <zone xml:id="z10" ulx="440" uly="673" lrx="1430" lry="715"/>
+      <zone xml:id="z11" ulx="440" uly="713" lrx="1430" lry="755"/>
+      <zone xml:id="z12" ulx="440" uly="755" lrx="1430" lry="797"/>
+      <zone xml:id="z13" ulx="440" uly="796" lrx="1430" lry="838"/>
+      <zone xml:id="z14" ulx="440" uly="837" lrx="1430" lry="879"/>
+      <zone xml:id="z15" ulx="440" uly="878" lrx="1430" lry="920"/>
+      <zone xml:id="z16" ulx="440" uly="920" lrx="1430" lry="962"/>
+      <zone xml:id="z17" ulx="440" uly="961" lrx="1430" lry="1003"/>
+      <zone xml:id="z18" ulx="440" uly="1002" lrx="1430" lry="1044"/>
+      <zone xml:id="z19" ulx="440" uly="1040" lrx="1430" lry="1082"/>
+      <zone xml:id="z20" ulx="440" uly="1084" lrx="1430" lry="1126"/>
+      <zone xml:id="z21" ulx="440" uly="1126" lrx="1430" lry="1168"/>
+      <zone xml:id="z22" ulx="440" uly="1165" lrx="1430" lry="1207"/>
+      <zone xml:id="z23" ulx="440" uly="1208" lrx="1430" lry="1250"/>
+      <zone xml:id="z24" ulx="440" uly="1249" lrx="1430" lry="1291"/>
+      <zone xml:id="z25" ulx="440" uly="1289" lrx="1430" lry="1331"/>
+      <zone xml:id="z26" ulx="440" uly="1333" lrx="1430" lry="1375"/>
+      <zone xml:id="z27" ulx="440" uly="1371" lrx="1430" lry="1413"/>
+      <zone xml:id="z28" ulx="440" uly="1412" lrx="1430" lry="1454"/>
+      <zone xml:id="z29" ulx="440" uly="1457" lrx="1430" lry="1499"/>
+      <zone xml:id="z30" ulx="440" uly="1495" lrx="1430" lry="1537"/>
+      <zone xml:id="z31" ulx="440" uly="1539" lrx="1430" lry="1581"/>
+      <zone xml:id="z32" ulx="440" uly="1578" lrx="1430" lry="1620"/>
+      <zone xml:id="z33" ulx="440" uly="1621" lrx="1430" lry="1663"/>
+      <zone xml:id="z34" ulx="440" uly="1664" lrx="1430" lry="1706"/>
+    </surface>
+  </facsimile>
+  <text>
+    <body>
+      <div type="edition" xml:lang="cop" xml:space="preserve">
+      <ab>
+        <pb n="82" facs="#surface"/>
+        <milestone unit="kephalaion" n="29" type="continued"/>
+        <fw type="pageNum" rend="framed" facs="#z-pagenum"><num value="82"><supplied reason="lost">ⲡ</supplied>ⲃ</num></fw>
+        <fw type="header" facs="#z-header"><g type="diple">&gt;</g> <g type="middot">·</g> ⲛⲕⲉⲫⲁⲗ<supplied reason="lost">ⲁⲓⲟ</supplied>ⲛ <g type="middot">·</g> <g type="diple-reversed">&lt;</g></fw>
+        <lb n="1" facs="#z1" rend="ekthesis"/><hi rend="large">ⲡ</hi>ⲙⲁϩⲥⲛⲉⲩ <hi rend="supraline">ⲛ</hi><unclear>ⲑⲣ</unclear>ⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲧⲙⲉⲩ <hi rend="supraline">ⲛ</hi>ⲧⲉ ⲡⲱⲛϩ ⲉⲧⲟ<hi rend="diaeresis">ⲓ</hi> <hi rend="supraline"><unclear>ⲛ</unclear></hi><supplied reason="lost">ⲉ</supplied>
+        <lb n="2" facs="#z2"/>ⲁⲩ ⲉⲧⲉ ⲛⲧⲁⲥ ⲡⲉ ⲧⲁⲣⲭⲏ ⲛ<hi rend="supraline">ⲙ</hi>ⲡⲣⲟⲃⲟⲗⲁⲩⲉ ⲧⲏⲣⲟⲩ ⲉⲧⲁⲩⲉⲓ
+        <lb n="3" facs="#z3"/>ⲁⲡⲓⲕⲟⲥⲙⲟⲥ <space extent="unknown" unit="character"/> <hi rend="large">ⲡ</hi>ⲙⲁϩϣⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲉ
+        <lb n="4" facs="#z4"/>ⲧⲥⲙⲁⲛⲧ <hi rend="supraline">ⲙ</hi>ⲡⲓⲱⲧ ⲡϣⲁⲣⲡ ⲛⲣⲱⲙⲉ ⲉⲧⲉ ⲛⲧⲁϥ ⲡⲉⲧⲁϥ
+        <lb n="5" facs="#z5"/>ⲑ<hi rend="supraline">ⲃ</hi>ⲓⲟ <hi rend="supraline">ⲛ</hi>ⲧϣⲁⲣⲡ <hi rend="supraline">ⲛ</hi>ⲙⲛⲧϫⲁϫⲉ ⲧⲏⲣ<hi rend="supraline" rendition="#oblique">ⲥ</hi> ⲉⲧⲁⲥϣⲱⲡⲉ ϩ<hi rend="supraline">ⲛ</hi> <hi rend="supraline">ⲛ</hi>
+        <lb n="6" facs="#z6"/>ⲕⲟⲥⲙⲟⲥ ⲙⲡⲕⲉⲕⲉ <space extent="unknown" unit="character"/> <hi rend="large">ⲡ</hi>ⲙⲁϩϥⲧⲁⲩ <hi rend="supraline">ⲛ</hi>ⲑⲣⲟⲛⲟⲥ ⲡⲉ
+        <lb n="7" facs="#z7"/><unclear>ⲡⲁ</unclear>ⲡⲙⲉⲣⲓⲧ <hi rend="supraline">ⲛⲛ</hi>ⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ ⲡⲛ<unclear>ⲁϭ</unclear> ⲙⲙⲉⲣⲓⲧ ⲉⲧⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲁ<hi rend="diaeresis">ⲓ</hi>ⲧ <hi rend="supraline">ⲛ</hi>
+        <lb n="8" facs="#z8"/><unclear>ⲧⲉ</unclear> <unclear>ⲛ</unclear>ⲁⲓⲱⲛ <hi rend="supraline">ⲛ</hi>ⲧ<hi rend="supraline">ⲙⲛ</hi>ⲧⲛⲁϭ <space extent="unknown" unit="character"/> <hi rend="large">ⲡ</hi>ⲙⲁϩϯⲟⲩ ⲛⲑⲣⲟⲛⲟⲥ
+        <lb n="9" facs="#z9"/>ⲡ<unclear>ⲉ</unclear> ⲡⲁⲡⲛⲁϭ <hi rend="supraline">ⲛ</hi>ⲉⲕⲱⲧ ⲉⲧⲟ<hi rend="diaeresis">ⲓ</hi> ⲛⲉ<unclear>ⲁⲩ</unclear> ⲡⲛⲁϭ ⲛⲁⲣⲭⲓⲧⲉⲕⲧⲱⲛ
+        <lb n="10" facs="#z10"/>ⲡ<unclear>ⲉ</unclear>ⲧⲁϥⲕⲱⲧ <hi rend="supraline">ⲙ</hi>ⲡⲁⲓⲱⲛ ⲛⲃ<hi rend="supraline">ⲣ</hi>ⲣⲉ ⲁⲩⲙⲛⲧⲃ<supplied reason="lost">ⲣⲣⲉ</supplied> ⲁ<supplied reason="lost">ⲩ</supplied><gap reason="lost" quantity="3" unit="character"/>ⲧⲁⲗ <gap reason="illegible" quantity="2" unit="character"/>
+        <lb n="11" facs="#z11"/><hi rend="supraline">ⲛ</hi><supplied reason="lost">ⲛ</supplied><hi rend="diaeresis">ⲓ</hi>ⲁⲧ<unclear>ⲉ</unclear> ⲙⲡⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ ⲁⲩⲙⲁⲙⲙⲟⲩⲣ ϩⲱ<unclear>ⲱ</unclear>ϥ <supplied reason="lost">ⲙⲛ ⲟ</supplied>ⲩⲫⲩ
+        <lb n="12" facs="#z12"/><unclear>ⲗ</unclear><hi rend="supraline" rendition="#oblique"><unclear>ⲁ</unclear></hi><unclear>ⲕ</unclear>ⲏ ⲙⲡϫⲁϫⲉ <hi rend="supraline">ⲙⲛ</hi> ⲛⲉϥϭⲁⲙ <space extent="unknown" unit="character"/> <supplied reason="lost"><hi rend="large">ⲡ</hi>ⲙⲁϩⲥⲁⲩ ⲛⲑⲣⲟ</supplied>ⲛⲟ<supplied reason="lost">ⲥ</supplied>
+        <lb n="13" facs="#z13"/>ⲡⲉ ⲡⲁⲡ<hi rend="supraline">ⲡⲛⲁ</hi> ⲉⲧⲁⲛ<hi rend="supraline" rendition="#oblique">ϩ</hi> ⲡϫⲱⲣ<unclear>ⲉ</unclear> <supplied reason="lost">ⲉⲧⲟ<hi rend="diaeresis">ⲓ</hi> </supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><supplied reason="lost">ⲉⲁⲩ</supplied> ⲡⲉⲧⲁϥⲉⲓⲛⲉ<g type="unpaired-bracket">]</g>
+        <lb n="14" facs="#z14"/>ⲁϩⲣⲏ<hi rend="diaeresis">ⲓ</hi> ⲙⲡϣⲁⲣⲡ <hi rend="supraline">ⲛ</hi>ⲣⲱ<unclear>ⲙ</unclear>ⲉ ⲁⲃⲁⲗ ϩⲙ ⲡ<supplied reason="lost">ⲕⲁϩ </supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡⲕⲉⲕⲉ</supplied>
+        <lb n="15" facs="#z15"/>ⲉ<unclear>ⲧⲁ</unclear>ϥϩⲱⲣϭ ϩⲱⲱϥ ⲁϥⲥⲙⲓⲛⲉ ⲛⲛⲕⲟⲥⲙⲟ<supplied reason="lost">ⲥ</supplied><gap reason="lost" quantity="9" unit="character"/>
+        <lb n="16" facs="#z16"/>ⲁⲩⲕⲁⲑⲁⲣⲓⲥⲙⲟⲥ ⲙⲉⲛ <hi rend="supraline">ⲙ</hi>ⲡⲟⲩⲁ<hi rend="diaeresis">ⲓ</hi>ⲛⲉ ⲁⲩⲙ<hi rend="supraline">ⲣ</hi>ⲣ<unclear>ⲉ</unclear> <supplied reason="lost">ⲇⲉ ⲛⲛ</supplied>
+        <lb n="17" facs="#z17"/>ϭⲁⲙ ⲛⲧⲙⲛⲧϫⲁϫⲉ <space extent="unknown" unit="character"/> <hi rend="large">ⲡ</hi>ⲙⲁϩⲥⲁϣ<hi rend="supraline">ϥ</hi> ⲛⲑ<supplied reason="lost">ⲣⲟⲛⲟⲥ ⲡⲉ</supplied>
+        <lb n="18" facs="#z18"/>ⲡⲁⲡⲙⲁϩϣⲁⲙⲧ <hi rend="supraline">ⲙ</hi>ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡ<hi rend="supraline">ⲣ</hi>ⲣⲟ <hi rend="supraline">ⲛ</hi>ⲧⲍⲱⲛⲏ <unclear>ⲡ</unclear>
+        <lb n="19" facs="#z19"/>ϫⲁⲓⲥ ϩⲱⲱϥ ⲛⲛⲥⲩⲙⲃⲟⲩⲗⲓⲁ ⲧⲏⲣⲟⲩ <space extent="unknown" unit="character"/>
+        <lb n="20" facs="#z20" rend="ekthesis"/><hi rend="large">ⲡ</hi>ⲙⲁϩϣⲙⲟⲩⲛ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲁⲓ<hi rend="supraline">ⲏⲥ</hi> ⲡⲡ<hi rend="supraline">ⲣ</hi><hi rend="diaeresis">ⲓ</hi>ⲉ <unclear>ⲉⲧⲉ</unclear> ⲛⲧ<unclear>ⲁϥ</unclear> <supplied reason="lost">ⲡⲉ</supplied>
+        <lb n="21" facs="#z21"/>ⲡⲣⲉϥⲃⲱⲗ ⲁⲃⲁⲗ <hi rend="supraline">ⲙⲛ</hi> ⲡⲣⲉ<unclear>ϥ</unclear>ⲥⲱⲧⲉ <supplied reason="lost">ⲛ</supplied><hi rend="supraline">ⲙ</hi>ⲯⲩⲭⲁⲩⲉ <unclear>ⲧⲏⲣ</unclear>ⲟⲩ
+        <lb n="22" facs="#z22" rend="ekthesis"/><hi rend="large">ⲡ</hi>ⲙⲁϩⲯ<unclear>ⲓ</unclear>ⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ ⲙⲡⲛⲁϭ ⲛ<unclear>ⲛ</unclear><supplied reason="lost">ⲟⲩⲥ ⲡⲉⲧⲉ</supplied>
+        <lb n="23" facs="#z23"/>ϣⲁⲣⲉ ⲛⲉⲕⲕⲗⲏⲥⲓⲁ ⲧⲏⲣⲟⲩ ⲥⲱⲩϩ ⲁⲣⲁϥ ⲛⲧⲉ ⲡ<supplied reason="lost">ⲱⲛϩ</supplied>
+        <lb n="24" facs="#z24"/>ⲧⲏⲣϥ ⲉⲧⲛⲁⲥⲱⲧϥ ⲁⲃⲁⲗ ⲙⲡⲕⲟⲥⲙⲟⲥ ⲕⲱⲗ ⲁⲣ<unclear>ⲁϥ</unclear> <space extent="unknown" unit="character"/>
+        <lb n="25" facs="#z25" rend="ekthesis"/><hi rend="large">ⲛ</hi>ⲉⲓ ⲛⲉ ⲡⲯⲓⲥ ⲛⲑⲣⲟⲛⲟⲥ ⲛⲧⲉ ⲡⲧ<supplied reason="lost">ⲁ</supplied><hi rend="diaeresis">ⲓ</hi><supplied reason="lost">ⲟ</supplied> ⲛⲉⲧⲕⲁⲁⲧ ϩⲛ ⲛⲁⲓ<unclear>ⲱ</unclear><supplied reason="lost">ⲛ</supplied>
+        <lb n="26" facs="#z26"/>ⲉⲧϩⲓⲃⲁⲗ <hi rend="supraline">ⲛⲛ</hi><hi rend="diaeresis">ⲓ</hi>ⲁⲧⲉ <hi rend="supraline">ⲙ</hi>ⲡⲁⲡⲉⲁ<unclear>ⲩ</unclear> <supplied reason="lost">ϩ</supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi><supplied reason="lost"> ⲧⲙⲛⲧ</supplied><hi rend="supraline"><supplied reason="lost">ⲣ</supplied></hi><supplied reason="lost">ⲣⲟ </supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡ</supplied><hi rend="supraline"><supplied reason="lost">ⲣ</supplied></hi><supplied reason="lost">ⲣⲟ </supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi><supplied reason="lost">ⲡ</supplied>
+        <lb n="27" facs="#z27"/>ⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲟ ϣⲁ ⲁⲛⲏϩⲉ <hi rend="supraline">ⲛⲛ</hi>ⲁⲛⲏϩⲉ ϩⲁⲙⲏⲛ <space extent="unknown" unit="character"/>
+        <lb n="28" facs="#z28" rend="ekthesis"/><hi rend="large">ⲡ</hi>ⲕⲉⲯⲓⲥ ϩⲱⲱϥ ⲛⲑⲣⲟⲛⲟⲥ ⲉⲧⲕⲁⲁⲧ ϩⲙ ⲡⲓⲕⲟ<unclear>ⲥⲙⲟ</unclear>ⲥ <hi rend="supraline"><unclear>ⲛ</unclear></hi><supplied reason="lost">ⲧⲉ</supplied>
+        <lb n="29" facs="#z29"/>ⲧⲍⲱⲛⲏ ⲛⲉ<hi rend="diaeresis">ⲓ</hi> ⲛⲉ <hi rend="large">ϣ</hi>ⲁⲙⲧ ⲛⲑⲣⲟⲛⲟⲥ ϩⲙ ⲡϫⲁ<hi rend="diaeresis">ⲓ</hi> <unclear>ⲙ</unclear><supplied reason="lost">ⲫⲟ</supplied>
+        <lb n="30" facs="#z30"/>ⲟⲩⲉ ⲟⲩⲉ ⲡⲉ ⲡⲁ<hi rend="supraline">ⲡ</hi>ⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ ⲡⲙⲁϩⲥⲛⲉⲩ <unclear>ⲡ</unclear><supplied reason="lost">ⲉ ⲡⲁ</supplied>
+        <lb n="31" facs="#z31"/>ⲡⲛⲁϭ ⲙ<hi rend="supraline">ⲡⲛⲁ</hi> ⲡⲙⲁϩϣⲁⲙⲧ ⲡⲉ ⲡⲁⲡ<hi rend="supraline">ⲡⲛⲁ</hi> ⲉⲧⲁⲛ<unclear>ϩ</unclear>
+        <lb n="32" facs="#z32" rend="ekthesis"/><hi rend="large">ⲡ</hi>ⲁⲗⲓⲛ ⲁⲛ ⲟⲩ<hi rend="supraline">ⲛ</hi> <unclear>ⲕ</unclear>ⲉϣⲁⲙⲧ ϩⲙ ⲡϫⲁ<hi rend="diaeresis">ⲓ</hi> ⲉⲧ<supplied reason="lost">ⲏⲡ ⲁⲧⲟⲩϣⲏ</supplied>
+        <lb n="33" facs="#z33"/>ⲡϣⲁⲣⲡ ⲡⲉ ⲡⲑⲣⲟⲛⲟⲥ <hi rend="supraline">ⲛ</hi>ⲓ<hi rend="supraline">ⲏⲥ</hi> ⲡ<hi rend="supraline">ⲣ</hi><hi rend="diaeresis">ⲓ</hi>ⲉ <supplied reason="lost">ⲡⲙⲁϩⲥⲛⲉⲩ ⲡⲉ ⲡⲁ</supplied>
+        <lb n="34" facs="#z34"/>ⲡϣⲁⲣ<hi rend="supraline">ⲡ</hi> <hi rend="supraline">ⲛ</hi>ⲣⲱⲙⲉ ⲡⲙⲁϩϣⲁⲙⲧ <unclear>ⲡⲉ</unclear> <unclear>ⲡ</unclear><supplied reason="lost">ⲁⲧⲡⲁⲣⲑⲉⲛⲟⲥ </supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi>
+      </ab>
+      </div>
+      <div type="apparatus">
+      <listApp>
+        <app loc="25" ana="#app.added-above"><lem>ϩⲛ ⲛⲁⲓ<unclear>ⲱ</unclear><supplied reason="lost">ⲛ</supplied></lem><rdg resp="#edition">ⲉⲧⲥⲙⲁⲛⲧ</rdg><note>"Über … zwischen den Zeilen": ⲉⲧⲥⲙⲁⲛⲧ written between the lines above ϩⲛ ⲛⲁⲓⲱⲛ; the footnote does not say where it enters the text, so the text stays as printed (75.9).</note></app>
+      </listApp>
+      </div>
+      <div type="commentary">
+        <p n="1" ana="#tr.print">The framed manuscript page number [ⲡ]ⲃ (top left, even page) with a bar above and below as the frame (no strokes). Running title &gt; · ⲛⲕⲉⲫⲁⲗ[ⲁⲓⲟ]ⲛ · &lt; with its ornaments as printed. Every dot run was counted from the `dots` x-positions. Every ϣ on the page (ll. 3, 4, 5, 14, 17, 18, 20, 23, 27, 29, 31–34) is undotted (lower-zone sheet at 2.6×).</p>
+        <p n="1" ana="#tr.layout">Line in ekthesis (496) with an enlarged Ⲡ (Ⲡⲙⲁϩⲥⲛⲉⲩ): the second father's throne opens the page.</p>
+        <p n="1" ana="#tr.print">Strokes over ⲛ of ⲛⲑⲣⲟⲛⲟⲥ (676–688), ⲛ of ⲛⲧⲉ (980–992) and the final ⲛ (1211–1224); dots under ⲑ, ⲣ of ⲛⲑⲣⲟⲛⲟⲥ (699, 720) and under the final ⲛ (1215); diaeresis over ⲓ of ⲉⲧⲟⲓ (1182, 1188).</p>
+        <p n="2" ana="#tr.print">Stroke over ⲙ of ⲛⲙⲡⲣⲟⲃⲟⲗⲁⲩⲉ (920–933).</p>
+        <p n="3" ana="#tr.layout">"leer" after ⲁⲡⲓⲕⲟⲥⲙⲟⲥ → vac.; a new section opens on the same line with an enlarged Ⲡ (Ⲡⲙⲁϩϣⲁⲙⲧ, 824), not in ekthesis. ⲛⲑⲣⲟⲛⲟⲥ without stroke.</p>
+        <p n="4" ana="#tr.print">Stroke over ⲙ of ⲙⲡⲓⲱⲧ (668–681).</p>
+        <p n="5" ana="#tr.print">Stroke over ⲃ of ⲑⲃⲓⲟ (561–574); strokes over ⲛ of ⲛⲧϣⲁⲣⲡ (619–631) and ⲛ of ⲛⲙⲛⲧϫⲁϫⲉ (746–759; ⲙ 0 %); oblique stroke over the final ⲥ of ⲧⲏⲣⲥ (961–972). Measured stroke over ϩⲛ (1155–1174, row 472): ϩ (1147–1160) 38 %, ⲛ (1166–1180) 57 % → on ⲛ only. Stroke over the final ⲛ (1203–1215).</p>
+        <p n="6" ana="#tr.layout">"leer" after ⲙⲡⲕⲉⲕⲉ → vac.; a new section opens on the same line with an enlarged Ⲡ (Ⲡⲙⲁϩϥⲧⲁⲩ), not in ekthesis.</p>
+        <p n="6" ana="#tr.print">Stroke over ⲛ of ⲛⲑⲣⲟⲛⲟⲥ (1090–1102).</p>
+        <p n="7" ana="#tr.print">Dots under ⲡ, ⲁ of ⲡⲁⲡⲙⲉⲣⲓⲧ (544, 564) and ⲁ, ϭ of ⲡⲛⲁϭ (873, 891). Measured stroke over ⲛⲛ of ⲛⲛⲟⲩⲁⲓⲛⲉ (696–715, row 555): ⲛ (689–704) 53 %, ⲛ (707–721) 57 % → both. Diaereses over ⲓ of ⲛⲛⲟⲩⲁⲓⲛⲉ (773, 779) and both ⲓ of ⲉⲧⲧⲁⲓⲁⲓⲧ (1104/1109, 1131/1137); stroke over the final ⲛ (1179–1191).</p>
+        <p n="8" ana="#tr.print">Dots under ⲧ, ⲉ of ⲧⲉ (543, 559) and ⲛ of ⲛⲁⲓⲱⲛ (592); stroke over ⲛ of ⲛⲧⲙⲛⲧⲛⲁϭ (690–702). Measured stroke over its ⲙⲛ (734–755, row 596): ⲙ (727–744, the ⲧ's crossbar excluded) 59 %, ⲛ (747–760) 62 % → both.</p>
+        <p n="8" ana="#tr.layout">"leer" after ⲛⲧⲙⲛⲧⲛⲁϭ → vac.; a new section opens on the same line with an enlarged Ⲡ (Ⲡⲙⲁϩϯⲟⲩ, 875), not in ekthesis.</p>
+        <p n="9" ana="#tr.print">Dot under ⲉ of ⲡⲉ (560); stroke over ⲛ of ⲛⲉⲕⲱⲧ (722–735); diaeresis over ⲓ of ⲉⲧⲟⲓ (870, 875); dots under ⲁ, ⲩ of ⲛⲉⲁⲩ (932, 950).</p>
+        <p n="10" ana="#tr.print">Dot under ⲉ of ⲡⲉⲧⲁϥⲕⲱⲧ (560); strokes over ⲙ of ⲙⲡⲁⲓⲱⲛ (703–716) and the first ⲣ of ⲛⲃⲣⲣⲉ (862–874). Three dots in the bracket (1175–1228) and two illegible dots at the line end (1342, 1369).</p>
+        <p n="10" ana="#tr.bracket">"ⲁ[ⲩ . . . ]ⲧⲁⲗ": a restored letter and three dots in one bracket pair → one restoration holding the dots (58.14).</p>
+        <p n="11" ana="#tr.print">Stroke over ⲛ before the bracket (540–552); diaeresis over ⲓ of ]ⲓⲁⲧⲉ (592, 597) and ⲙⲡⲟⲩⲁⲓⲛⲉ (759, 764); dots under ⲉ of ]ⲓⲁⲧⲉ (641) and the second ⲱ of ϩⲱⲱϥ (1046).</p>
+        <p n="12" ana="#tr.print">Dots under ⲗ, ⲁ, ⲕ of ⲗⲁⲕⲏ (545, 566, 583). A short oblique tick stands over the ⲁ (8×, at the top right of the letter) → oblique stroke on ⲁ (`ⲁ'`), as on ϥ (81.15); decided here. Measured stroke over ⲙⲛ (776–797, row 761): ⲙ (766–787) 52 %, ⲛ (788–803) 60 % → both.</p>
+        <p n="12" ana="#tr.layout">"leer" after ⲛⲉϥϭⲁⲙ → vac.; a new section opens on the same line with an enlarged Ⲡ restored by the editors inside the bracket ([Ⲡⲙⲁϩⲥⲁⲩ …], 1077), not in ekthesis.</p>
+        <p n="13" ana="#tr.print">Stroke over ⲡⲛⲁ of ⲡⲁⲡⲡⲛⲁ (648–693): second ⲡ 88 %, ⲛ 100 %, ⲁ 62 %, first ⲡ 0 %. Oblique stroke over ϩ of ⲉⲧⲁⲛϩ (788–800); dot under ⲉ of ⲡϫⲱⲣⲉ (903); diaeresis over the restored ⲓ (981, 987); stroke over the restored ⲛ (1010–1022).</p>
+        <p n="13" ana="#tr.bracket">"ⲡⲉⲧⲁϥⲉⲓⲛⲉ]": a closing bracket at the line end with no opener on the line (8×: no `[` before ⲡⲉⲧⲁϥⲉⲓⲛⲉ) and none at the end of l. 12 → `‡` after the letters, which are encoded as read (29.28, 60.9).</p>
+        <p n="14" ana="#tr.print">Diaeresis over ⲓ of ⲁϩⲣⲏⲓ (603, 608); ⲙⲡϣⲁⲣⲡ without stroke; stroke over ⲛ of ⲛⲣⲱⲙⲉ (765–778); a small dot under its ⲙ (821, area 2 at grey &lt; 130, 8×); ϩⲙ without stroke; stroke over the restored ⲙ (1129–1142).</p>
+        <p n="15" ana="#tr.print">Dots under ⲧ, ⲁ of ⲉⲧⲁϥϩⲱⲣϭ (553, 572); ⲛⲛⲕⲟⲥⲙⲟ without stroke; nine dots in the restoration (1070–1283, pitch 26 px).</p>
+        <p n="15" ana="#tr.bracket">"ⲛⲛⲕⲟⲥⲙⲟ[ⲥ . . . . . . . . .]": a restored letter and dots in one bracket pair → one restoration (58.14).</p>
+        <p n="16" ana="#tr.print">Strokes over ⲙ of ⲙⲡⲟⲩⲁⲓⲛⲉ (826–840) and the first ⲣ of ⲁⲩⲙⲣⲣⲉ (1031–1043); diaeresis over ⲓ (915, 920); dot under ⲉ of ⲁⲩⲙⲣⲣⲉ (1062). The restored ⲇ has the triangular form (6×).</p>
+        <p n="16" ana="#tr.bracket">"ⲁⲩⲙⲣ̄ⲣⲉ̣[ ⲇⲉ ⲛⲛ]": the bracket is printed against ⲉ and the word space stands inside it; encoded as a word space before the restoration.</p>
+        <p n="17" ana="#tr.layout">"leer" after ⲛⲧⲙⲛⲧϫⲁϫⲉ → vac.; a new section opens on the same line with an enlarged Ⲡ (Ⲡⲙⲁϩⲥⲁϣϥ), not in ekthesis.</p>
+        <p n="17" ana="#tr.print">A bar over the final ϥ of ⲡⲙⲁϩⲥⲁϣϥ (1081–1093) → `ϥ-` (76.35); ⲛⲧⲙⲛⲧϫⲁϫⲉ and ⲛⲑ[ without stroke.</p>
+        <p n="18" ana="#tr.print">Strokes over ⲙ of ⲙⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ (752–766), the first ⲣ of ⲡⲣⲣⲟ (966–978) and ⲛ of ⲛⲧⲍⲱⲛⲏ (1026–1039); dot under the final ⲡ (1161).</p>
+        <p n="19" ana="#tr.print">ⲛⲛⲥⲩⲙⲃⲟⲩⲗⲓⲁ without stroke.</p>
+        <p n="19" ana="#tr.layout">"leer" after ⲧⲏⲣⲟⲩ → vac.; a section ends here.</p>
+        <p n="20" ana="#tr.layout">Line in ekthesis (490) with an enlarged Ⲡ (Ⲡⲙⲁϩϣⲙⲟⲩⲛ): a new section opens.</p>
+        <p n="20" ana="#tr.print">The nomen-sacrum bar of ⲡⲁⲓⲏⲥ stands over ⲏⲥ only (923–951; ⲓ 915–919 0 %, no diaeresis on that ⲓ, 8×), encoded as printed (61.17). Stroke over ⲣ of ⲡⲡⲣⲓⲉ (1012–1024) and diaeresis over its ⲓ (1025, 1031); dots under ⲉ, ⲧ, ⲉ of ⲉⲧⲉ (1066, 1081, 1097) and ⲁ, ϥ of ⲛⲧⲁϥ (1165, 1183 left of the descender).</p>
+        <p n="21" ana="#tr.print">Measured stroke over ⲙⲛ (780–801, row 1132): ⲙ (770–790) 50 %, ⲛ (792–807) 60 % → both. Dot under ϥ of ⲡⲣⲉϥⲥⲱⲧⲉ (878, left of the descender); stroke over ⲙ of ]ⲙⲯⲩⲭⲁⲩⲉ (1012–1025); dots under ⲧ, ⲏ, ⲣ of ⲧⲏⲣⲟⲩ (1170, 1188, 1205 at the foot of the descender).</p>
+        <p n="21" ana="#tr.reading">ⲯⲩⲭⲁⲩⲉ: the first letter has arms curving upwards and a stem below the baseline (8×), the ⲯ of this font, not ϯ.</p>
+        <p n="22" ana="#tr.layout">Line in ekthesis (489) with an enlarged Ⲡ (Ⲡⲙⲁϩⲯⲓⲥ): a new section opens.</p>
+        <p n="22" ana="#tr.print">ⲯ of ⲡⲙⲁϩⲯⲓⲥ (curved arms, 8×) with a dot under its ⲓ (614, the "!" shape); dot under the second ⲛ of ⲛⲛ[ (1101).</p>
+        <p n="24" ana="#tr.print">Dots under ⲁ, ϥ of ⲁⲣⲁϥ (1137, 1155 left of the descender).</p>
+        <p n="24" ana="#tr.layout">"leer" after ⲁⲣⲁϥ → vac.; a section ends here.</p>
+        <p n="25" ana="#tr.layout">Line in ekthesis (504) with an enlarged Ⲛ (Ⲛⲉⲓ): a new section opens. ⲯ of ⲡⲯⲓⲥ as on l. 22.</p>
+        <p n="25" ana="#tr.print">Diaeresis over ⲓ of ⲡⲧ[ⲁ]ⲓ[ⲟ] (972, 977); dot under ⲱ of ⲛⲁⲓⲱ[ⲛ] (1280). See the apparatus.</p>
+        <p n="26" ana="#tr.print">Measured stroke over ⲛⲛ of ⲛⲛⲓⲁⲧⲉ (673–692, row 1336): ⲛ (667–681) 57 %, ⲛ (684–698) 57 % → both; diaeresis over ⲓ (700, 706). Stroke over ⲙ of ⲙⲡⲁⲡⲉⲁⲩ (780–793); dot under its ⲩ (894); strokes over the restored ⲛ (956–968), ⲣ (1066–1078), ⲙ (1126–1140), ⲣ (1166–1178) and ⲙ (1227–1240).</p>
+        <p n="27" ana="#tr.print">Diaeresis over ⲓ of ⲧⲁⲓⲟ (569, 574). Measured stroke over ⲛⲛ of ⲛⲛⲁⲛⲏϩⲉ (774–793, row 1379): ⲛ (767–781) 50 %, ⲛ (785–799) 57 % → both.</p>
+        <p n="27" ana="#tr.layout">"leer" after ϩⲁⲙⲏⲛ → vac.; a section ends here.</p>
+        <p n="28" ana="#tr.layout">Line in ekthesis (489) with an enlarged Ⲡ (Ⲡⲕⲉⲯⲓⲥ): a new section opens.</p>
+        <p n="28" ana="#tr.print">Dots under ⲥ, ⲙ, ⲟ of ⲡⲓⲕⲟⲥⲙⲟⲥ (1098, 1115, 1132; 8×, the ⲙ printed damaged) and ⲛ of ⲛ[ (1177); a stroke over that ⲛ (1173–1186, pale, 8×) stands close above the letter, so `strokes` misses it.</p>
+        <p n="29" ana="#tr.layout">An enlarged Ϣ (Ϣⲁⲙⲧ, 763–797) begins a new section in the line after a blank of 34 px (measured over the full letter height): below 40 px, an ordinary space (76.31).</p>
+        <p n="29" ana="#tr.print">Diaereses over ⲓ of ⲛⲉⲓ (673, 678) and ⲡϫⲁⲓ (1122, 1127); dot under ⲙ of ⲙ[ (1157).</p>
+        <p n="30" ana="#tr.print">Stroke over the first ⲡ of ⲡⲡⲣⲉⲥⲃⲉⲩⲧⲏⲥ (743–759, second ⲡ 0 %); dot under ⲡ of ⲡ[ (1105).</p>
+        <p n="31" ana="#tr.print">Bar over ⲡⲛⲁ of ⲙⲡⲛⲁ (650–695): ⲡ 100 %, ⲛ 100 %, ⲁ 58 %; ⲙ 0 %. Bar over ⲡⲛⲁ of ⲡⲁⲡⲡⲛⲁ (1012–1058): second ⲡ 85 %, ⲛ 100 %, ⲁ 76 %; first ⲡ 0 %. Dot under ϩ of ⲉⲧⲁⲛϩ (1158, at the foot of the descender).</p>
+        <p n="32" ana="#tr.layout">Line in ekthesis (487) with an enlarged Ⲡ (Ⲡⲁⲗⲓⲛ): a new section opens.</p>
+        <p n="32" ana="#tr.print">Stroke over ⲛ of ⲟⲩⲛ (699–712); dot under ⲕ of ⲕⲉϣⲁⲙⲧ (737); diaeresis over ⲓ of ⲡϫⲁⲓ (980, 985).</p>
+        <p n="33" ana="#tr.print">Two bars over ⲛⲓⲏⲥ: one over ⲛ (825–838) and one over ⲏⲥ (850–878), ⲓ (842–846) bare and without diaeresis → ⲛ̄ⲓⲏ̅ⲥ̅ as printed. Stroke over ⲣ of ⲡⲣⲓⲉ (918–930) and diaeresis over its ⲓ (932, 937).</p>
+        <p n="34" ana="#tr.print">Strokes over the final ⲡ of ⲡϣⲁⲣⲡ (605–621) and ⲛ of ⲛⲣⲱⲙⲉ (643–656); dots under ⲡ, ⲉ of ⲡⲉ (945, 961) and ⲡ of ⲡ[ (995); stroke over the restored ⲙ (1207–1220).</p>
+        <p n="34" ana="#tr.layout">The blank between ⲛⲣⲱⲙⲉ and ⲡⲙⲁϩϣⲁⲙⲧ measures 37 px (full letter height): below 40 px, an ordinary space.</p>
+        <p n="1" ana="#tr.print">Reconcile flags explained by position: dots at the lower edge of the zone window, cut by it (l. 1 the ⲣ dot 720; l. 20 the ϥ dot 1183; l. 21 the ⲣ dot 1205; l. 24 the ϥ dot 1155; l. 31 the ϩ dot 1158); dots of area &lt; 6 (l. 14 the ⲙ dot 821, area 2; l. 15 the dot 1124, area 5; l. 28 the ⲟ dot 1132, area 3); a piece of "leer" (l. 27, 1048). `spaces` differs only by the legs of the enlarged Ⲡ (ll. 1, 3, 6, 8, 12, 17, 20, 22, 28, 32), the blanks around "leer" and dot runs (ll. 10, 15).</p>
+      </div>
+    </body>
+  </text>
+</TEI>
