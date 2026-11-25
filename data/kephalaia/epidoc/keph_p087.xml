@@ -70,8 +70,8 @@
       <zone xml:id="z30" ulx="440" uly="1536" lrx="1430" lry="1578"/>
       <zone xml:id="z31" ulx="440" uly="1585" lrx="1430" lry="1627"/>
       <zone xml:id="z31-left" ulx="300" uly="1599" lrx="480" lry="1641"/>
+      <zone xml:id="z31-right" ulx="1100" uly="1601" lrx="1300" lry="1643"/>
       <zone xml:id="z32" ulx="440" uly="1624" lrx="1430" lry="1666"/>
-      <zone xml:id="z32-right" ulx="1100" uly="1619" lrx="1300" lry="1661"/>
       <zone xml:id="z33" ulx="440" uly="1668" lrx="1430" lry="1710"/>
       <zone xml:id="z34" ulx="440" uly="1710" lrx="1430" lry="1752"/>
       <zone xml:id="z35" ulx="440" uly="1752" lrx="1430" lry="1794"/>
@@ -117,8 +117,8 @@
         <lb n="29" facs="#z29"/><supplied reason="lost"><hi rend="diaeresis">ⲓ</hi>ⲉ ϩ</supplied><hi rend="supraline"><supplied reason="lost">ⲛ</supplied></hi> ⲟⲩϫⲱⲕ ⲙⲛ <supplied reason="lost">ⲟ</supplied>ⲩⲙⲁϩⲁ<hi rend="diaeresis">ⲓ</hi>ⲡⲉ ⲁϫⲛ ⲛⲕⲟⲥⲙⲟⲥ ⲛⲧⲙⲛⲧϫⲁϫⲉ
         <milestone unit="kephalaion" n="36"/>
         <lb n="30" facs="#z30"/><seg type="kephalaion-number"><num value="36"><hi rend="supraline">ⲗⲋ</hi></num></seg>
-        <lb n="31" facs="#z31"/><note type="kephalaion-number" place="margin-left" facs="#z31-left"><num value="36"><hi rend="supraline">ⲗⲋ</hi></num></note><seg type="kephalaion-title"><g type="diple">&gt;</g> <g type="middot">·</g> ⲉⲧⲃⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲉⲧϣⲟⲟⲡ <g type="middot">·</g> <g type="diple-reversed">&lt;</g></seg>
-        <lb n="32" facs="#z32"/><note type="kephalaion-number" place="margin-right" facs="#z32-right"><num value="36"><hi rend="supraline">ⲗⲋ</hi></num></note><seg type="kephalaion-title"><g type="diple">&gt;</g> <g type="middot">·</g> ϩ<supplied reason="lost">ⲓⲧⲉϩ</supplied>ⲏ ⲙⲡⲣ<unclear>ⲣ</unclear>ⲟ ⲙⲡⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲟ <g type="middot">·</g> <g type="diple-reversed">&lt;</g></seg>
+        <lb n="31" facs="#z31"/><note type="kephalaion-number" place="margin-left" facs="#z31-left"><num value="36"><hi rend="supraline">ⲗⲋ</hi></num></note><note type="kephalaion-number" place="margin-right" facs="#z31-right"><num value="36"><hi rend="supraline">ⲗⲋ</hi></num></note><seg type="kephalaion-title"><g type="diple">&gt;</g> <g type="middot">·</g> ⲉⲧⲃⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲉⲧϣⲟⲟⲡ <g type="middot">·</g> <g type="diple-reversed">&lt;</g></seg>
+        <lb n="32" facs="#z32"/><seg type="kephalaion-title"><g type="diple">&gt;</g> <g type="middot">·</g> ϩ<supplied reason="lost">ⲓⲧⲉϩ</supplied>ⲏ ⲙⲡⲣ<unclear>ⲣ</unclear>ⲟ ⲙⲡⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲟ <g type="middot">·</g> <g type="diple-reversed">&lt;</g></seg>
         <lb n="33" facs="#z33" rend="ekthesis"/><supplied reason="lost"><hi rend="large">ⲡ</hi>ⲁⲗⲓ</supplied><unclear>ⲛ</unclear> ⲡⲁϫ<unclear>ⲉ</unclear> <supplied reason="lost">ⲡⲁⲡⲟⲥⲧⲟⲗⲟ</supplied>ⲥ ⲉⲧⲃⲉ ⲡⲧⲣⲟⲭⲟⲥ ⲉⲧϣⲟⲟⲡ ϩⲓⲧⲉϩⲏ
         <lb n="34" facs="#z34"/><supplied reason="lost">ⲙⲡ</supplied><hi rend="supraline"><supplied reason="lost">ⲣ</supplied></hi><supplied reason="lost">ⲣⲟ ⲙⲡⲧⲁ<hi rend="diaeresis">ⲓ</hi>ⲟ ⲉⲧⲟⲩⲏϩ ϩ</supplied><hi rend="supraline"><supplied reason="lost">ⲙ</supplied></hi> ⲡⲙⲁϩⲥⲁϣϥ <hi rend="supraline">ⲛ</hi>ⲥⲧⲉⲣⲉⲱ
         <lb n="35" facs="#z35"/><supplied reason="lost">ⲙⲁ</supplied> <gap reason="illegible" quantity="7" unit="character"/> <unclear>ⲛ</unclear>ⲧⲛⲟⲩⲛⲉ <hi rend="supraline">ⲛⲛ</hi>ⲁⲣⲭⲱⲛ ⲛⲁⲧⲡⲉ <hi rend="supraline">ⲙⲛ</hi>
@@ -183,7 +183,7 @@
         <p n="29" ana="#tr.print">Stroke over the restored ⲛ of [ⲓ̈ⲉ ϩⲛ̄] (591–603) and diaeresis over the restored ⲓ; ⲙⲛ without stroke; diaeresis over ⲓ of [ⲟ]ⲩⲙⲁϩⲁⲓⲡⲉ.</p>
         <p n="29" ana="#tr.layout">The line ends after ⲛⲧⲙⲛⲧϫⲁϫⲉ with no "leer"; kephalaion 35 ends here with no end sign.</p>
         <p n="30" ana="#tr.layout">Chapter opening: the numeral ⲗⲋ (36) stands centred (glyphs y 1548–1566) with a bar over both letters (852–905).</p>
-        <p n="31" ana="#tr.layout">Title ll. 31–32, each framed by the ornaments &gt; · … · &lt;; the blanks before the closing ornaments are ordinary spaces (l. 31: 32 px, l. 32: 21 px). The margin numerals ⲗⲋ stand at different heights: the left one (glyphs y 1607–1633) is attached to l. 31, the right one (glyphs y 1629–1650) stands level with l. 32 and is attached to it; each has a bar over both letters.</p>
+        <p n="31" ana="#tr.layout">Title ll. 31–32, each framed by the ornaments &gt; · … · &lt;; the blanks before the closing ornaments are ordinary spaces (l. 31: 32 px, l. 32: 21 px). The margin numerals ⲗⲋ stand between ll. 31 and 32, both at the same height (left 1600–1645, right 1605–1638 incl. their bars), each with a bar over both letters; attached to l. 31 (30.14).</p>
         <p n="32" ana="#tr.print">A dot at the foot of the descender of the second ⲣ of ⲙⲡⲣⲣⲟ (910, right of the stem, 8×; 41.11); diaeresis over ⲓ of ⲙⲡⲧⲁⲓⲟ.</p>
         <p n="33" ana="#tr.layout">Line in ekthesis: the bracket stands left of the text column and holds the enlarged Ⲡ restored by the editors ([Ⲡⲁⲗⲓ]ⲛ, 75.13).</p>
         <p n="33" ana="#tr.print">Dots under ⲛ of ]ⲛ (589) and ⲉ of ⲡⲁϫⲉ (682).</p>
