@@ -101,7 +101,7 @@ re-checked).
 | 084 | 30 → 31 | 34 | read | 8ff9aed | kephalaion 31 opens l. 5, title ll. 6–8; \ⲟⲩ/ l. 4; double opening bracket l. 17; enlarged Ⲛ̄ at the line end l. 9; ⲯ (not ϯ) in ⲧⲯⲩⲭⲏ; no dotted ϣ |
 | 085 | 31 → 32 | 35 | read | 371acbf | kephalaion 32 opens l. 19, title ll. 20–21; ⟨ⲩ⟩ l. 17; \ⲡ/ l. 8; l. 35 a turned-over word (ⲙ̄ⲡⲣⲓⲉ); dotted ϣ ll. 16, 22, 33 |
 | 086 | 32 → 33 → 34 | 35 | read | ccdff96 | kephalaion 33 opens l. 18, title ll. 19–21; 34 opens l. 31, title ll. 32–33; ⟨ⲛ⟩ l. 12, ⟨ⲡ⟩ l. 32; oblique stroke on ϥ l. 7; l. 2 ⲙⲛ stroke fixed before commit (preview); no dotted ϣ |
-| 087 | 34 → 35 → 36 | 35 | read | d4479fd | kephalaion 35 opens l. 14, title ll. 15–16; 36 opens l. 30, title ll. 31–32 (margin numerals on different lines); "Am Rande … nicht lesbar" l. 4 (new id `margin-addition`); orphan ] l. 23; no dotted ϣ |
+| 087 | 34 → 35 → 36 | 35 | read | 5861df0 | kephalaion 35 opens l. 14, title ll. 15–16; 36 opens l. 30, title ll. 31–32 (margin numerals on l. 31, corrected after review); "Am Rande … nicht lesbar" l. 4 (new id `margin-addition`); orphan ] l. 23; no dotted ϣ |
 | 088 | 36 | 34 | read | b62d977 | l. 34 a lone numeral ⲗⲋ inside kephalaion 36 (number line, no milestone); block ▪ at the line end l. 21; dotted ϣ l. 9; page number ⲡ̣ⲏ̣ |
 | 089 | 36 → 37 → 38 | 36 | read | 896c261 | kephalaion 37 opens l. 1 (numeral below the running title; "Die Zahl steht über", new id `number-position`), title l. 2; 38 opens l. 18, title ll. 19–20; "Lies ⲧϣⲁⲣⲡ" l. 5 (text as printed); dotted ϣ l. 23 ("ganz unsicher") |
 | 090 | 38 | 33 | read | c761219 | \ⲱ/ l. 3; apostrophe l. 4; added-above words l. 17; conjecture/dittography l. 27; bare `[` ll. 15, 30; 4 ⲉⲕⲁϫⲟⲟⲥ fixed before commit (preview); no dotted ϣ |
@@ -476,8 +476,10 @@ Strict method:
   - A kephalaion numeral printed as line 1 right below the running title (89.1) is the chapter opening; a footnote "Die Zahl steht über x"
     → `app.number-position` (new id): lemma the numeral, reading x, text unchanged.
   - "Am Rande klein nachgetragen ein Satz …, aber nicht lesbar" (87.4) → `app.margin-addition` (new id), no lemma and no reading.
-  - Left and right margin numerals of one chapter opening standing level with different title lines (87.31 left, 87.32 right) → each is
-    attached to the line it stands level with (34.15); `render_print.py` now draws a line that carries only one side (`970e4ef`).
+  - Margin numerals of a chapter opening are compared with each other and with the title lines on a 2× zoom of the whole opening, not from
+    per-side column extents. 87.31/32 was first encoded with the left numeral on l. 31 and the right one on l. 32; the user pointed out that
+    both stand between the two title lines at the same height, as everywhere else, so both go on l. 31 (30.14; corrected in `5861df0`).
+    `render_print.py` keeps the guard for a line with one side only (`970e4ef`), which that misreading had exposed.
   - A "(?)" printed after a word whose restoration holds dots and letters (89.12 "[. . . ⲥⲱ]ⲧⲙⲉ (?)") → the doubt goes on that restoration,
     `[.........ⲥⲱ(?)]ⲧⲙⲉ` (79.1 with 58.14).
   - "Lies x" where x replaces a printed letter (89.5 ⲛϣⲁⲣⲡ → ⲧϣⲁⲣⲡ) → text as printed, `app.correction` (73.29).
@@ -675,7 +677,7 @@ Strict method:
   skipped.
 
 - **2026-11-25** — Routine run: read 086–090 on `reading/2026-11-25`. All five validate "ok"; all 90 pages re-validated after each tool and
-  vocabulary change. Tool (`970e4ef`): `render_print.py` crashed on a line carrying only a right margin numeral (87.32); fixed. Vocabulary:
+  vocabulary change. Tool (`970e4ef`): `render_print.py` crashed on a line carrying only a right margin numeral (87.32, itself a misreading: corrected after review in `5861df0`, both numerals on l. 31); the guard stays. Vocabulary:
   new ids `app.margin-addition` (`6aadda7`, 87.4) and `app.number-position` (`32af5da`, 89.1); variants for `added-above`, `uncertain`,
   `uncertain-strongly` (`05bc744`). Reconcile flags explained: dot rows at the zone centre (most flags), dots of area < 6, letter pieces in
   the x-height band (086.2–5, 086.22, 086.30), ϥ/ⲣ dots below the zone window, margin numerals, the "(?)" point (089.12). Caught before commit:
