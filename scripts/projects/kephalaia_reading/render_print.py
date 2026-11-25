@@ -63,7 +63,8 @@ def page_html(path: Path) -> str:
     for z in {m["line"]: m for m in lay["margin_numbers"]}:
         left = leiden([a for a in atoms if a.role == "margin-left" and a.line == z], html=True)
         right = leiden([a for a in atoms if a.role == "margin-right" and a.line == z], html=True)
-        y = ymm(centre(zones[f"z{z}-left"]))
+        zl = zones.get(f"z{z}-left")
+        y = ymm(centre(zl if zl is not None else zones[f"z{z}-right"]))  # a line may carry one side only (87.31/32)
         rows.append(f'<div class="row marg" style="top:{y:.2f}mm"><span class="ml">{left}</span>'
                     f'<span class="ghost">{widest}</span><span class="mr">{right}</span></div>')
     app = [f"{c['line']} " + APPARATUS[c["type"]] % c["text"] for c in lay["corrections"]]
