@@ -215,9 +215,9 @@
       "judgement": "The scribe's own deletion: the edition prints double brackets [[ ]]; encoded ⟦x⟧ (del rend=expunction), not as an editorial surplus. 15.16 adds the cause (dittography from l. 18 by homoioteleuton) in the note. A footnote naming a deletion point ('Tilgungspunkt', 33.12) without printed double brackets is encoded the same way (⟦x⟧). When the editors only think a letter is deleted ('anscheinend getilgt', 33.22) the letter stays in the text as printed and only the apparatus entry records it. 'x, lies y, z durch Punkt oben getilgt' (92.5: ⲕⲱⲛ, lies ⲕⲱ, the ⲛ deleted by a point above) names the deletion point like 'Tilgungspunkt': the deleted letter is encoded ⟦x⟧ where the edition prints it, although neither the point nor double brackets are printed."
     },
     "sic": {
-      "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler", "sic für", "sic mit …", "scheint so dazustehen (unverständlich)", "unbekannt", "Bedeutung von … unbekannt"],
+      "de": ["sic (unverständlich)", "sinnlos", "wohl Schreibfehler", "sic für", "sic mit …", "scheint so dazustehen (unverständlich)", "unbekannt", "Bedeutung von … unbekannt", "x statt y"],
       "en": "kept as transmitted, not understood or a scribal error",
-      "judgement": "The text carries «x» (sic). 'x sic für y' (39.5) names the intended form without telling the reader to change the text: «x» in the text, y as the apparatus reading. 'x sic mit …' (42.4: 'sic mit Artikel ⲙ') confirms a form as transmitted and names what is odd about it: «x» in the text, the remark in the note. 'x scheint so dazustehen (unverständlich)' (44.21) confirms the printed letters and calls them unintelligible: «x» in the text, as 'sic (unverständlich)'. 'x unbekannt' (31.7) and 'Bedeutung von x unbekannt' (76.9) keep an unknown word as transmitted: «x» in the text, no reading."
+      "judgement": "The text carries «x» (sic). 'x sic für y' (39.5) names the intended form without telling the reader to change the text: «x» in the text, y as the apparatus reading. 'x sic mit …' (42.4: 'sic mit Artikel ⲙ') confirms a form as transmitted and names what is odd about it: «x» in the text, the remark in the note. 'x scheint so dazustehen (unverständlich)' (44.21) confirms the printed letters and calls them unintelligible: «x» in the text, as 'sic (unverständlich)'. 'x unbekannt' (31.7) and 'Bedeutung von x unbekannt' (76.9) keep an unknown word as transmitted: «x» in the text, no reading. 'x statt y' without 'Lies' (94.12: ⲛ̄ⲛ̣ⲉⲩ statt ⲁⲛⲉⲩ) states that the manuscript writes x where y is expected, without correcting it: the same judgement as 'x sic für y' (39.5): «x» in the text, y as the apparatus reading."
     },
     "running-title": {
       "de": ["Überschrift … statt …"],
@@ -238,6 +238,11 @@
       "de": ["Die Zahl steht über …"],
       "en": "the chapter numeral stands (in the manuscript) above the named words",
       "judgement": "First met at 89.1 (footnote 1): the editors say where the kephalaion numeral stands, here above the running title ⲙ̄ⲡⲥⲁϩ at the page top. A statement about layout, not about a reading: the numeral is encoded as printed on its own line; apparatus entry at that line with the numeral as lemma, the named words as reading, no change to the text."
+    },
+    "original-reading": {
+      "de": ["Ende ursprünglich …", "ursprünglich …"],
+      "en": "the manuscript first had another form (corrected by the scribe)",
+      "judgement": "First met at 94.10 ('Ende ursprünglich ⲁⲡϥ̄': the line end first read ⲁⲡϥ̄, now ⲁⲡⲉϥ). The editors report the scribe's earlier form under the printed one; they do not doubt the printed text. Text as printed; apparatus entry with the printed words as lemma and the original form as reading."
     }
   },
   "tr": {
