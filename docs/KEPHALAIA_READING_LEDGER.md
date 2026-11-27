@@ -110,17 +110,22 @@ re-checked).
 | 093 | 38 | 34 | read | 497fafc | dotted ϣ ll. 10, 24; \ⲁ/ l. 33; enlarged Ⲡ mid-line l. 10; block ▪ at the line end l. 30; ⲓⲏⲥ bar over ⲏⲥ only l. 31 |
 | 094 | 38 | 33 | read | 136ae03 | ⟨ⲟⲩ⟩ l. 3; "Ende ursprünglich" l. 10 (new id `app.original-reading`); «ⲛ̄ⲛ̣ⲉⲩ» sic l. 12 ("statt"); oblique tick over ⲕ l. 18; orphan ] l. 15; no dotted ϣ |
 | 095 | 38 | 32 | read | ee96e6e | [ⲣⲁ(?)] split l. 14; two "[ blank ]" lines 31–32; "(?)" after ϣⲁⲩⲣ̄ϭⲁϫⲏ l. 32 (footnote "sehr unsicher"); smudged line-end ⲛ l. 23 fixed before commit (preview); no dotted ϣ |
+| 096 | 38 | 33 | read | 94c7b88 | dotted ϣ l. 17; \ⲩ/ l. 5; ⲛ̄ϥ bars over the join measured on every line (both ≥ 50 % except 27); middot l. 25; correction "Lies ϣⲁϥϫⲡⲟ" l. 28 (text as printed) |
+| 097 | 38 | 34 | read | 8cea4d5 | "Es müßte lauten" l. 2 (conjecture, `ec6ed70`); dotted ϣ ll. 6, 10, 26; orphan ] ll. 6, 30; oblique stroke on ϫ l. 29; mid-line "leer" l. 19; scan blemish between ll. 26/27 |
+| 098 | 38 | 31 | read | 4abeaf1 | "Über ⲁⲃⲁⲗ etwas übergeschrieben" l. 8 (`82f0548`); ⟨ⲛ⟩ l. 2; block ▪ at the line start l. 23; bare `[` l. 11; oblique stroke on ϫ l. 18; no dotted ϣ |
+| 099 | 38 | 33 | read | 0cfcb00 | ⟨ⲛ⟩ l. 2; "Lies ϣⲁⲣⲉ statt ϣⲁⲧⲉ" l. 9 (text as printed); ⲍ in ⲧⲍⲱⲛⲏ ll. 19, 23, 30; dotted ϣ ll. 10, 12; four sections after unmarked blanks with enlarged Ⲉ/Ⲧ |
+| 100 | 38 | 33 | read | 29d478c | \ⲱ/ l. 18, \ⲛ/ l. 25 (footnote lemma with one ⲛ); [ⲃⲁ(?)] l. 25; separate bars over ⲃ ll. 26, 27, 31, 33; ϯ in ekthesis not enlarged l. 23; ⲙⲡⲟⲩⲑⲃⲓⲟ (no ⲧ, 6×) l. 31; no dotted ϣ |
 | 111 | 42 → 43 | 35 | needs audit | 1e28143 | pilot page |
 | 159 | 65 | 33 | needs audit | 1e28143 | pilot page |
 | 183 | 75 → 76 | 33 | needs audit | 1e28143 | pilot page |
 
-Next unread page: **096**.
+Next unread page: **101**.
 
 ---
 
 ## 2. Open items
 
-- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–048, 050–095 (status "read").
+- **Audits** with the strict method (§3): 010–017, the pilot pages 049, 111, 159, 183, and 025–048, 050–100 (status "read").
   033 first: 33.20 had two letters the page does not print (ⲉⲧϩⲁⲥϫⲏϥ for ⲉⲧϫⲏϥ, found 2026-11-15). Every audit now
   includes `measure.py joins` and `spaces` (skill step 7a), which the pages before 035 never had.
 - **ϯ or ⲯ in ⲯⲩⲭⲏ.** On 084–085 the first letter of ⲧⲯⲩⲭⲏ / ⲧⲉϥⲯⲩⲭⲏ has arms curving upwards and a stem through the baseline (8×),
@@ -272,6 +277,15 @@ Strict method:
    for a letter it could begin. (93.30 passes: a tapering solid mark 8 px wide with no strokes.)
 40. **A broken letter is not two letters (2026-11-26, 091.28).** The right leg of ⲡ in ⲧⲁⲡⲧⲏⲩ is broken at its top and looked like ⲓ under a point at 4×.
    Decided: a "ⲓ" that stands where a two-legged letter's leg would be is checked on the pixel rows (bar continuity) before it is written.
+41. **A letter seen only on the orientation sheet (2026-11-27, 100.31).** The 0.8× orientation sheet suggested ⲙⲡⲧⲟⲩⲑⲃⲓⲟ; the 4× strip and a 6× zoom show
+   ⲙⲡⲟⲩⲑⲃⲓⲟ with no ⲧ. Decided: nothing is written from the orientation sheet; a word whose letter count differs between the orientation sheet and the 4×
+   strip is zoomed at 6–8× and counted against its glyph columns.
+42. **The top of ⲃ is not a stroke, a bar above it is (2026-11-27, 100.26).** The flat top of ⲃ is reported by `strokes` on almost every line; on 096–100
+   these were all checked on the 4× strips and written off as "top of ⲃ". On 100.26, 27, 31, 33 a separate bar stands above ⲃ with a gap between (8×). Decided:
+   a bar over ⲃ is encoded only when the 8× zoom shows it apart from the letter; the top of ⲃ alone is never a stroke.
+43. **A pale round spot is not a printed mark (2026-11-27, 97.26/27).** A grey round spot between two lines (darkest grey 136 against about 70 for print) is a
+   blemish of the scan. Decided: a spot whose darkest pixel is above grey 120 and that has no counterpart in the line's dot rhythm is not encoded; the note gives
+   its position and grey value.
 ---
 
 ## 4. Encoding conventions decided so far
@@ -516,6 +530,16 @@ Strict method:
   - "der 2. Buchst. ganz unsicher; sonst x" (95.18) → one `app.uncertain-strongly` row with x as reading.
   - An enlarged initial in mid-line after an ordinary word space (93.10 Ⲡⲉⲧⲟ, 30 px) opens a section with no `%` (76.31).
 
+- Decided 2026-11-27 (pages 096–100):
+  - "Es müßte lauten: x" (97.2, a rewording over three lines) → `app.conjecture` with x as reading, text unchanged (vocabulary variant `ec6ed70`).
+  - "Über x etwas übergeschrieben" (98.8) → `app.added-above` with x as lemma and no reading, text unchanged (as 20.25; vocabulary variant `82f0548`).
+  - A footnote "x, y über der Zeile" whose lemma x is shorter than the printed word and holds one y (100.25 "ⲛϩⲁⲙⲧ, ⲛ" for ⲉⲩⲛⲛϩⲁⲙⲧ) → `\y/` on the y that
+    the lemma begins or contains (here the second ⲛ, before ϩ).
+  - A short oblique stroke over ϫ (97.29 [ⲣ]ϫ̣̀, 98.18 ⲛϥⲡⲱⲣϫ̀) → oblique stroke `ϫ'`, like ⲥ, ϩ, ⲗ, ⲡ, ϥ, ⲁ, ⲕ.
+  - ⲍ is read where the letter has a flat top bar and a zigzag body with a tail (99.19, 23, 30 ⲧⲍⲱⲛⲏ), decided at 8× against ϩ on the same line.
+  - A bar over ⲛϥ / ⲙⲛ / ⲛⲛ / ⲧϥ printed over the join (096 throughout): each letter is measured on the pixel row; both ≥ 50 % → both (96.20, 99.9);
+    one below 50 % → the other only (96.27 ϥ, 96.2 ⲛ). No change to §3.17.
+
 ---
 
 ## 5. Environment notes
@@ -568,6 +592,9 @@ Strict method:
   downloaded from Drive (1553×2258; saved by the connector to tool-results files and copied into place). The worker restarted once (during p. 095,
   after its first compile); drafts, images and packages survived and work went on from the draft. Scratch helpers (not in the repository): per-line
   glyph columns / dots / bar extents with per-letter coverage, and per-row ink runs at a chosen grey threshold.
+- 2026-11-27: as before, `lxml`, `scipy` and `playwright==1.63.0` installed for `python` (3.11) and Pillow with `--ignore-installed`. Images 096–100 downloaded
+  from Drive (1553×2258; saved by the connector to tool-results files and copied into place). No restart. Scratch helpers (not in the repository): per-line glyph
+  columns / dots / bar extents with per-letter coverage, per-x ink counts and per-row ink runs for the ≥ 50 % rule, and a three-strip 4× zoom wrapper.
 ---
 
 ## 6. Session log
@@ -727,6 +754,15 @@ Strict method:
   on 094, 095. Kephalaion 38 (opened 89.18) runs through all five pages; sections open in ekthesis or after "leer" with enlarged letters. Method §3
   items 38–40; decisions §4 (2026-11-26). No new sign types (one more block, 93.30). No pages skipped.
 
+- **2026-11-27** — Routine run: read 096–100 on `reading/2026-11-27`. All five validate "ok"; all 100 pages re-validated after each vocabulary change (`ec6ed70`
+  "Es müßte lauten" → `conjecture`; `82f0548` "Über … etwas übergeschrieben" → `added-above`; ids unchanged). Reconcile flags explained: dot rows at the zone
+  centre (096.11, 097.11, 098.12/22, 099.33), dots of area < 6 (096.6, 097.10), dots cut by the lower edge of the window (099.18, 100.23), a dotted ϣ's bowl dot
+  (099.12), a broken letter foot counted as a dot (099.28), dots under restored or bracket-adjacent letters (097.7/9/15/16/33/34). Caught before commit: 100.31
+  a ⲧ read from the orientation sheet that the page does not print (6×; §3.41), 097.4 a stroke first put on the wrong ⲙⲡⲥⲉϫⲉ (pixel rows). Dotted ϣ accepted after
+  8× comparison: 096.17, 097.6, 097.10, 097.26, 099.10, 099.12; none on 098, 100. Kephalaion 38 (opened 89.18) runs through all five pages; sections open in ekthesis,
+  after "leer" or after unmarked blanks with enlarged letters. Method §3 items 41–43; decisions §4 (2026-11-27). No new sign types (one more block, 98.23; one more
+  middle dot, 96.25). No pages skipped.
+
 ---
 
 ## 7. Signs and patterns to study
@@ -738,10 +774,10 @@ shows, with the occurrences that support it.
 
 | Type | Draft | Occurrences (2026-11-21) | What the occurrences show so far |
 |---|---|---|---|
-| middot | `·` | 10.34, 29.26, 32.9, 40.26, 51.14, 52.12, 52.19, 61.20, 63.25, 71.9, 77.31, 159.33 | mid-line between words (10×; 77.31 a small point, area 6, between ⲛⲛϣⲏⲣⲉ and ⲙ̄ⲡⲧⲏⲩ, "the sons of the wind"; 71.9 a large round point between ⲉϥ and ⲡ̣ on a damaged line; 61.20 and 63.25 large round dots between clauses; 40.26, 51.14, 52.12 large round dots, area 32–44); 52.19 after ϣⲁⲁⲛⲏϩⲉ before "leer", mid-kephalaion; once at a line and kephalaion end (159.33) |
+| middot | `·` | 10.34, 29.26, 32.9, 40.26, 51.14, 52.12, 52.19, 61.20, 63.25, 71.9, 77.31, 96.25, 159.33 | mid-line between words (11×; 96.25 a large round point between two parallel clauses ϣⲁϥⲙⲁⲣⲟⲩ · ϣⲁϥⲥⲙⲛ̄, 20 px spaces on both sides; 77.31 a small point, area 6, between ⲛⲛϣⲏⲣⲉ and ⲙ̄ⲡⲧⲏⲩ, "the sons of the wind"; 71.9 a large round point between ⲉϥ and ⲡ̣ on a damaged line; 61.20 and 63.25 large round dots between clauses; 40.26, 51.14, 52.12 large round dots, area 32–44); 52.19 after ϣⲁⲁⲛⲏϩⲉ before "leer", mid-kephalaion; once at a line and kephalaion end (159.33) |
 | colon | `⁚` | 30.11, 36.26 | both at the end of a kephalaion, after the last word, no dash (contrast the end mark `:—`) |
 | point | `∙` | 34.12 | end of a kephalaion, after a word space |
-| block | `▪` | 31.28, 33.20, 68.4, 73.3, 75.8, 83.5, 88.21, 93.30 | 31.28, 33.20, 83.5 (after ⲁϫⲱϥ, a 22 px blank), 88.21 (after ⲧϩⲣⲧⲉ, a 30 px blank), 93.30 (after ⲉⲧⲙ̄ⲙⲉⲩ, a 20 px space, at a section end inside kephalaion 38) at a line end, mid-kephalaion; 68.4 and 75.8 inside a row of illegible dots where a dot would stand, before a word (ⲙⲙⲁϥ, ⲡⲣⲱⲙⲉ); 73.3 at a line start before [ⲙ]ⲡⲥⲏⲩ, after a section-ending line; three of five stand on damaged lines next to lost text; may be a printing mark, not the manuscript's |
+| block | `▪` | 31.28, 33.20, 68.4, 73.3, 75.8, 83.5, 88.21, 93.30, 98.23 | 31.28, 33.20, 83.5 (after ⲁϫⲱϥ, a 22 px blank), 88.21 (after ⲧϩⲣⲧⲉ, a 30 px blank), 93.30 (after ⲉⲧⲙ̄ⲙⲉⲩ, a 20 px space, at a section end inside kephalaion 38) at a line end, mid-kephalaion; 68.4 and 75.8 inside a row of illegible dots where a dot would stand, before a word (ⲙⲙⲁϥ, ⲡⲣⲱⲙⲉ); 73.3 at a line start before [ⲙ]ⲡⲥⲏⲩ, after a section-ending line; 98.23 at a line start before ⲁⲛ (frame darker than the centre, 13 px), mid-sentence; three of five stand on damaged lines next to lost text; may be a printing mark, not the manuscript's |
 | cross | `†` | 39.19 | line end after a 64 px blank, mid-kephalaion (9) |
 | high-point | `˙` | 58.29 | once, right after ⲩ of ⲛⲉⲩ before ⲁⲃⲁⲗ, mid-kephalaion, at the top of the x-height |
 | apostrophe | `ʼ` | 27.1, 52.20, 54.10, 62.28, 76.9, 90.4 | 90.4 after the final ⲧ of ⲛ̄ⲕⲧⲟⲩⲛⲟⲩⲓ̈ⲉⲧ before ⲁⲃⲁⲗ, a raised comma; after a letter at a word end or inside a word: after ⲧ (27.1, 52.20 ⲙⲡⲙⲁϩϣⲁⲙⲧʼ), after ϩ inside a restoration (54.10 [ϩʼⲣⲉⲧⲟⲩ], a thick raised stroke), after ⲡ before a restoration (62.28 ⲡ[ʼⲣⲏⲧⲉ]) — twice before ⲣ; 76.9 inside a run of lost dots after ⲉⲧⲁ[, so the letter before it is lost |
@@ -787,6 +823,10 @@ Kephalaion 38 (opened 89.18) runs through 090–095 without an end. Its sections
 93.9, 93.16, 93.20, 93.29, 94.1, 94.17, 94.28), in the line after "leer" with an enlarged letter (94.6, 94.11, 94.22, 92.32 Ⲡⲁⲇⲁⲙⲁⲥ), after an unmarked
 blank (94.33, 95.7), once in mid-line after an ordinary space (93.10) and once after "leer" without an enlarged letter (93.23). One break carries a block
 (93.30, at a line end before [ⲧⲁϥ]ϣⲱⲡⲉ); the rest carry no sign.
+
+Kephalaion 38 runs on through 096–100. Its sections open in ekthesis with an enlarged letter (96.22, 100.1, 100.15, 100.19, 99.30 restored Ⲛ̄), with an
+ordinary ϯ in ekthesis (100.23), after "leer" with an enlarged letter on the same line (97.26, 98.15, 100.6) and after an unmarked blank of 49–77 px with an enlarged
+Ⲉ, Ⲧ or restored Ⲡ (97.8, 99.2, 99.22, 99.23, 99.27, 100.11), twice in mid-line after an ordinary space (97.7, 97.21); none carries a sign.
 
 Open questions: Are colon and point two forms of one chapter-end sign? Does the cross recur at section breaks? Are the
 blocks the printer's or the editors'? Do the middle dots separate units of sense?
